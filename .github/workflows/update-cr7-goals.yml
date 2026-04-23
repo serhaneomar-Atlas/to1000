@@ -6,7 +6,7 @@ on:
   # Adjust cron times based on when Al Nassr / Portugal play
   schedule:
     # Every 5 min, 16:00–23:00 UTC  (Saudi matches ~19:00–22:00 AST)
-    - cron: '*/5 16-23 * * 2-0'
+    - cron: '*/5 16-23 * * 0,2-6'
     # Every 5 min, 17:00–22:00 UTC  (Portugal / European nights)
     - cron: '*/5 17-22 * * 1-4'
     # Nightly full stats refresh at 02:00 UTC
