@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- Google Analytics GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4V8Y6C38VN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4V8Y6C38VN');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UTM Generator — To1000.com</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #0a0a0a; color: #e0e0e0; min-height: 100vh; padding: 24px; }
+    h1 { color: #D4AF37; font-size: 1.5rem; margin-bottom: 4px; }
+    p.sub { color: #888; font-size: .85rem; margin-bottom: 28px; }
+    .card { background: #161616; border: 1px solid #2a2a2a; border-radius: 12px; padding: 24px; margin-bottom: 20px; }
+    .card h2 { font-size: 1rem; color: #D4AF37; margin-bottom: 16px; }
+    label { display: block; font-size: .78rem; color: #aaa; margin-bottom: 4px; margin-top: 12px; }
+    input, select { width: 100%; background: #0d0d0d; border: 1px solid #333; border-radius: 6px; color: #e0e0e0; padding: 8px 10px; font-size: .9rem; }
+    input:focus, select:focus { outline: none; border-color: #D4AF37; }
+    .presets { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0; }
+    .preset-btn { padding: 6px 14px; border-radius: 20px; border: 1px solid #333; background: #1a1a1a; color: #bbb; cursor: pointer; font-size: .8rem; transition: all .2s; }
+    .preset-btn:hover, .preset-btn.active { background: #D4AF37; color: #000; border-color: #D4AF37; }
+    .result-box { background: #0d0d0d; border: 1px solid #2a2a2a; border-radius: 8px; padding: 14px; margin-top: 20px; position: relative; }
+    .result-url { word-break: break-all; font-size: .85rem; color: #4af; line-height: 1.5; }
+    .copy-btn { position: absolute; top: 10px; right: 10px; background: #D4AF37; color: #000; border: none; border-radius: 6px; padding: 5px 12px; cursor: pointer; font-size: .78rem; font-weight: 700; }
+    .copy-btn:active { background: #b89a20; }
+    .links-table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: .82rem; }
+    .links-table th { text-align: left; color: #888; font-weight: 600; padding: 8px 10px; border-bottom: 1px solid #2a2a2a; }
+    .links-table td { padding: 8px 10px; border-bottom: 1px solid #1a1a1a; vertical-align: middle; }
+    .links-table td a { color: #4af; text-decoration: none; word-break: break-all; font-size: .78rem; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: .7rem; font-weight: 700; }
+    .badge-fb   { background: #1877f2; color: #fff; }
+    .badge-ig   { background: #c13584; color: #fff; }
+    .badge-tw   { background: #1da1f2; color: #fff; }
+    .badge-yt   { background: #ff0000; color: #fff; }
+    .badge-tk   { background: #010101; color: #fff; border: 1px solid #333; }
+    .badge-wa   { background: #25d366; color: #fff; }
+    .copy-cell-btn { background: #222; border: 1px solid #444; color: #D4AF37; border-radius: 4px; padding: 2px 8px; cursor: pointer; font-size: .72rem; }
+    .toast { position: fixed; bottom: 24px; right: 24px; background: #D4AF37; color: #000; padding: 10px 20px; border-radius: 8px; font-weight: 700; opacity: 0; transition: opacity .3s; pointer-events: none; }
+    .toast.show { opacity: 1; }
+  </style>
+</head>
+<body>
+
+<h1>🔗 UTM Generator — To1000.com</h1>
+<p class="sub">Génère des liens trackés pour mesurer l'impact de chaque publication sur GA4</p>
+
+<!-- Quick Presets -->
+<div class="card">
+  <h2>⚡ Liens prêts à l'emploi</h2>
+  <p style="font-size:.8rem;color:#888;margin-bottom:12px">Clique pour copier directement le lien UTM pour chaque réseau :</p>
+
+  <div id="quick-links">
+    <!-- Populated by JS -->
+  </div>
+</div>
+
+<!-- Custom Generator -->
+<div class="card">
+  <h2>🛠️ Générateur personnalisé</h2>
+
+  <label>Page de destination</label>
+  <select id="dest">
+    <option value="https://to1000.com/">Accueil (compteur)</option>
+    <option value="https://to1000.com/goals.html">Base de données buts</option>
+    <option value="https://to1000.com/analytics.html">Dashboard stats</option>
+  </select>
+
+  <label>Source (réseau social)</label>
+  <div class="presets" id="source-presets">
+    <button class="preset-btn active" data-val="facebook">Facebook</button>
+    <button class="preset-btn" data-val="instagram">Instagram</button>
+    <button class="preset-btn" data-val="twitter">Twitter/X</button>
+    <button class="preset-btn" data-val="youtube">YouTube</button>
+    <button class="preset-btn" data-val="tiktok">TikTok</button>
+    <button class="preset-btn" data-val="whatsapp">WhatsApp</button>
+    <button class="preset-btn" data-val="reddit">Reddit</button>
+    <button class="preset-btn" data-val="autre">Autre</button>
+  </div>
+
+  <label>Type de média</label>
+  <div class="presets" id="medium-presets">
+    <button class="preset-btn active" data-val="social">social</button>
+    <button class="preset-btn" data-val="post">post</button>
+    <button class="preset-btn" data-val="story">story</button>
+    <button class="preset-btn" data-val="reel">reel</button>
+    <button class="preset-btn" data-val="comment">comment</button>
+    <button class="preset-btn" data-val="bio">bio</button>
+  </div>
+
+  <label>Nom de campagne (identifie le contenu / moment)</label>
+  <input type="text" id="campaign" placeholder="ex: goal968_alnassr, viral_wc2026_post, cr7_1000_promo" value="goal968_alnassr">
+
+  <label>Contenu (optionnel — distinguer plusieurs posts similaires)</label>
+  <input type="text" id="content" placeholder="ex: post1, ar_version, video">
+
+  <div class="result-box" id="result-box">
+    <div class="result-url" id="result-url">—</div>
+    <button class="copy-btn" onclick="copyResult()">Copier</button>
+  </div>
+</div>
+
+<!-- All pre-built links table -->
+<div class="card">
+  <h2>📋 Kit de liens complet — Campagne But #968</h2>
+  <table class="links-table">
+    <thead>
+      <tr>
+        <th>Réseau</th>
+        <th>Campagne</th>
+        <th>Lien UTM</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="links-tbody">
+    </tbody>
+  </table>
+</div>
+
+<div class="toast" id="toast">✅ Copié !</div>
+
+<script>
+const BASE = "https://to1000.com/";
+
+const PREBUILT = [
+  { src:"facebook",  med:"social",  cam:"goal968_alnassr",      badge:"badge-fb", label:"Facebook" },
+  { src:"facebook",  med:"comment", cam:"goal968_alnassr_cmt",   badge:"badge-fb", label:"Facebook Comment" },
+  { src:"instagram", med:"post",    cam:"goal968_alnassr",       badge:"badge-ig", label:"Instagram Post" },
+  { src:"instagram", med:"story",   cam:"goal968_story",         badge:"badge-ig", label:"Instagram Story" },
+  { src:"twitter",   med:"social",  cam:"goal968_alnassr",       badge:"badge-tw", label:"Twitter/X" },
+  { src:"youtube",   med:"social",  cam:"goal968_alnassr",       badge:"badge-yt", label:"YouTube" },
+  { src:"tiktok",    med:"social",  cam:"goal968_alnassr",       badge:"badge-tk", label:"TikTok" },
+  { src:"whatsapp",  med:"social",  cam:"goal968_share",         badge:"badge-wa", label:"WhatsApp" },
+  { src:"facebook",  med:"social",  cam:"viral_wc2026_bait",     badge:"badge-fb", label:"FB — Post viral WC" },
+  { src:"instagram", med:"post",    cam:"viral_wc2026_bait",     badge:"badge-ig", label:"IG — Post viral WC" },
+  { src:"twitter",   med:"social",  cam:"viral_wc2026_bait",     badge:"badge-tw", label:"Twitter — Post viral WC" },
+];
+
+function buildUrl(dest, src, med, cam, content) {
+  let url = dest + "?utm_source=" + src + "&utm_medium=" + med + "&utm_campaign=" + encodeURIComponent(cam);
+  if (content) url += "&utm_content=" + encodeURIComponent(content);
+  return url;
+}
+
+// Quick links
+const ql = document.getElementById("quick-links");
+const sources = [
+  { src:"facebook", med:"social", badge:"badge-fb", label:"Facebook" },
+  { src:"instagram", med:"post", badge:"badge-ig", label:"Instagram" },
+  { src:"twitter", med:"social", badge:"badge-tw", label:"Twitter/X" },
+  { src:"youtube", med:"social", badge:"badge-yt", label:"YouTube" },
+  { src:"tiktok", med:"social", badge:"badge-tk", label:"TikTok" },
+  { src:"whatsapp", med:"social", badge:"badge-wa", label:"WhatsApp" },
+];
+const qGrid = document.createElement("div");
+qGrid.style = "display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;";
+sources.forEach(s => {
+  const url = buildUrl(BASE, s.src, s.med, "goal968_alnassr");
+  const div = document.createElement("div");
+  div.style = "background:#0d0d0d;border:1px solid #2a2a2a;border-radius:8px;padding:10px 12px;display:flex;align-items:center;justify-content:space-between;gap:10px;";
+  div.innerHTML = `<span><span class="badge ${s.badge}" style="margin-right:8px">${s.label}</span><span style="font-size:.72rem;color:#666">/goal968</span></span><button class="copy-cell-btn" onclick="copyText('${url}')">Copier</button>`;
+  qGrid.appendChild(div);
+});
+ql.appendChild(qGrid);
+
+// Links table
+const tbody = document.getElementById("links-tbody");
+PREBUILT.forEach(p => {
+  const url = buildUrl(BASE, p.src, p.med, p.cam);
+  const tr = document.createElement("tr");
+  tr.innerHTML = `
+    <td><span class="badge ${p.badge}">${p.label}</span></td>
+    <td style="color:#888;font-size:.78rem">${p.cam}</td>
+    <td><a href="${url}" target="_blank">${url}</a></td>
+    <td><button class="copy-cell-btn" onclick="copyText('${url}')">Copier</button></td>
+  `;
+  tbody.appendChild(tr);
+});
+
+// Custom generator
+let selSource = "facebook", selMedium = "social";
+
+document.querySelectorAll("#source-presets .preset-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll("#source-presets .preset-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    selSource = btn.dataset.val;
+    updateResult();
+  });
+});
+document.querySelectorAll("#medium-presets .preset-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    document.querySelectorAll("#medium-presets .preset-btn").forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    selMedium = btn.dataset.val;
+    updateResult();
+  });
+});
+document.getElementById("dest").addEventListener("change", updateResult);
+document.getElementById("campaign").addEventListener("input", updateResult);
+document.getElementById("content").addEventListener("input", updateResult);
+
+function updateResult() {
+  const dest = document.getElementById("dest").value;
+  const cam  = document.getElementById("campaign").value.trim().replace(/\s+/g,"-") || "campagne";
+  const cont = document.getElementById("content").value.trim();
+  const url  = buildUrl(dest, selSource, selMedium, cam, cont);
+  document.getElementById("result-url").textContent = url;
+}
+updateResult();
+
+function copyResult() {
+  copyText(document.getElementById("result-url").textContent);
+}
+
+function copyText(txt) {
+  navigator.clipboard.writeText(txt).then(() => showToast()).catch(() => {
+    const ta = document.createElement("textarea");
+    ta.value = txt; document.body.appendChild(ta); ta.select();
+    document.execCommand("copy"); document.body.removeChild(ta);
+    showToast();
+  });
+}
+
+function showToast() {
+  const t = document.getElementById("toast");
+  t.classList.add("show");
+  setTimeout(() => t.classList.remove("show"), 1800);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — To1000.com</title>
+  <!-- Noindex: ne pas indexer cette page -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #060606; color: #f0f0f0;
+      min-height: 100vh; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 2rem 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+    .logo { color: #D4AF37; font-weight: 800; font-size: 1rem; letter-spacing: 0.1em; margin-bottom: 2rem; }
+    .logo span { color: white; }
+    .card {
+      background: #0d0d0d; border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 20px; padding: 2.5rem 2rem;
+      width: 100%; max-width: 420px;
+    }
+    h2 { font-size: 1.1rem; margin-bottom: 0.3rem; }
+    p.sub { font-size: 0.8rem; color: rgba(255,255,255,0.3); margin-bottom: 1.8rem; }
+    label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255,255,255,0.4); display: block; margin-bottom: 0.4rem; }
+    input[type=password], input[type=number], input[type=text] {
+      width: 100%; background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08); border-radius: 10px;
+      padding: 0.75rem 1rem; color: white; font-size: 0.9rem;
+      font-family: inherit; outline: none; margin-bottom: 1rem;
+      transition: border-color 0.2s;
+    }
+    input:focus { border-color: rgba(212,175,55,0.4); }
+    .btn {
+      width: 100%; padding: 0.85rem; border: none; border-radius: 12px;
+      font-size: 0.9rem; font-weight: 700; font-family: inherit;
+      cursor: pointer; transition: all 0.2s; margin-top: 0.4rem;
+    }
+    .btn-gold { background: #D4AF37; color: #000; }
+    .btn-gold:hover { background: #E8C84A; }
+    .btn-danger { background: rgba(239,68,68,0.15); border: 1px solid rgba(239,68,68,0.3); color: #f87171; }
+    .btn-danger:hover { background: rgba(239,68,68,0.25); }
+    .status {
+      margin-top: 1rem; padding: 0.85rem 1rem;
+      border-radius: 10px; font-size: 0.82rem; text-align: center;
+      display: none;
+    }
+    .status.ok  { background: rgba(34,197,94,0.1);  border: 1px solid rgba(34,197,94,0.2);  color: #4ade80; display: block; }
+    .status.err { background: rgba(239,68,68,0.1);  border: 1px solid rgba(239,68,68,0.2);  color: #f87171; display: block; }
+    .stats-display {
+      background: rgba(212,175,55,0.05); border: 1px solid rgba(212,175,55,0.12);
+      border-radius: 12px; padding: 1.2rem; margin-bottom: 1.5rem; display: none;
+    }
+    .stats-display.visible { display: block; }
+    .stat-row { display: flex; justify-content: space-between; margin-bottom: 0.5rem; }
+    .stat-row:last-child { margin-bottom: 0; }
+    .stat-key { font-size: 0.75rem; color: rgba(255,255,255,0.35); }
+    .stat-val { font-size: 0.82rem; font-weight: 700; color: #D4AF37; }
+    .divider { height: 1px; background: rgba(255,255,255,0.05); margin: 1.5rem 0; }
+    #login-section { display: block; }
+    #update-section { display: none; }
+    .big-num {
+      font-size: 3.5rem; font-weight: 900; color: #D4AF37;
+      text-align: center; line-height: 1; margin: 1rem 0 0.3rem;
+    }
+    .big-num-sub { text-align: center; font-size: 0.75rem; color: rgba(255,255,255,0.2); margin-bottom: 1.5rem; }
+    .increment-row { display: flex; gap: 0.5rem; margin-top: 0.4rem; }
+    .increment-row .btn { flex: 1; }
+    .btn-inc { background: rgba(212,175,55,0.15); border: 1px solid rgba(212,175,55,0.3); color: #D4AF37; font-size: 1.2rem; }
+    .btn-inc:hover { background: rgba(212,175,55,0.25); }
+    footer-link { display: block; text-align: center; margin-top: 1.5rem; font-size: 0.72rem; }
+    a { color: rgba(212,175,55,0.5); text-decoration: none; }
+    a:hover { color: #D4AF37; }
+  </style>
+</head>
+<body>
+
+  <div class="logo">TO<span>1000</span>.com</div>
+
+  <div class="card">
+    <!-- LOGIN -->
+    <div id="login-section">
+      <h2>Admin</h2>
+      <p class="sub">Mise à jour manuelle du compteur de buts</p>
+      <label for="pwd">Mot de passe</label>
+      <input type="password" id="pwd" placeholder="••••••••" autofocus>
+      <button class="btn btn-gold" onclick="login()">Accéder →</button>
+      <div class="status" id="login-status"></div>
+    </div>
+
+    <!-- UPDATE PANEL -->
+    <div id="update-section">
+      <h2>Mise à jour en direct</h2>
+      <p class="sub">Modifie <code>stats.json</code> — le site se met à jour en 60 secondes</p>
+
+      <div class="stats-display visible" id="current-stats">
+        <div class="big-num" id="disp-goals">—</div>
+        <div class="big-num-sub">buts actuels / 1 000</div>
+        <div class="stat-row"><span class="stat-key">Restants</span><span class="stat-val" id="disp-rem">—</span></div>
+        <div class="stat-row"><span class="stat-key">Dernière mise à jour</span><span class="stat-val" id="disp-updated">—</span></div>
+        <div class="stat-row"><span class="stat-key">Dernier adversaire</span><span class="stat-val" id="disp-opp">—</span></div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Quick +1 -->
+      <label>Nouveau but marqué</label>
+      <input type="text" id="new-opponent" placeholder="Adversaire (ex: Al Hilal)">
+      <input type="text" id="new-comp" placeholder="Compétition (ex: Saudi Pro League)">
+      <div class="increment-row">
+        <button class="btn btn-inc" onclick="incrementGoal()">⚽ +1 But</button>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Manual set -->
+      <label>Ou définir manuellement</label>
+      <input type="number" id="manual-goals" placeholder="Nombre de buts (ex: 968)" min="967" max="1000">
+      <button class="btn btn-gold" onclick="setGoals()">Mettre à jour</button>
+
+      <div class="status" id="update-status"></div>
+
+      <div style="margin-top: 1.5rem; text-align:center">
+        <a href="javascript:logout()">← Déconnexion</a>
+        &nbsp;·&nbsp;
+        <a href="./index.html" target="_blank">Voir le site →</a>
+      </div>
+    </div>
+  </div>
+
+  <p style="margin-top:1.5rem;font-size:0.65rem;color:rgba(255,255,255,0.1);text-align:center">
+    ⚠️ Cette page n'est pas destinée au public. Ne pas partager l'URL.
+  </p>
+
+  <script>
+  // ── Simple client-side password (for local/preview use)
+  // For production: use Vercel's password protection or a proper auth
+  const ADMIN_PASS = 'to1000admin';   // ← Change this before deploying!
+
+  let currentStats = null;
+
+  function login() {
+    const pwd = document.getElementById('pwd').value;
+    if (pwd === ADMIN_PASS) {
+      document.getElementById('login-section').style.display = 'none';
+      document.getElementById('update-section').style.display = 'block';
+      loadStats();
+    } else {
+      showStatus('login-status', 'Mot de passe incorrect', 'err');
+    }
+  }
+
+  function logout() {
+    document.getElementById('login-section').style.display = 'block';
+    document.getElementById('update-section').style.display = 'none';
+    document.getElementById('pwd').value = '';
+  }
+
+  document.getElementById('pwd').addEventListener('keydown', e => {
+    if (e.key === 'Enter') login();
+  });
+
+  async function loadStats() {
+    try {
+      const r = await fetch('/stats.json?_=' + Date.now(), { cache: 'no-store' });
+      currentStats = await r.json();
+      document.getElementById('disp-goals').textContent = currentStats.goals;
+      document.getElementById('disp-rem').textContent = currentStats.remaining;
+      document.getElementById('disp-updated').textContent = currentStats.last_updated
+        ? new Date(currentStats.last_updated).toLocaleString('fr-CA')
+        : '—';
+      document.getElementById('disp-opp').textContent =
+        currentStats.last_goal_opponent || '—';
+    } catch (e) {
+      showStatus('update-status', 'Erreur de chargement: ' + e.message, 'err');
+    }
+  }
+
+  async function incrementGoal() {
+    if (!currentStats) return;
+    const opponent   = document.getElementById('new-opponent').value.trim() || '—';
+    const comp       = document.getElementById('new-comp').value.trim() || '—';
+    const newGoals   = currentStats.goals + 1;
+    await saveStats(newGoals, opponent, comp);
+  }
+
+  async function setGoals() {
+    const val = parseInt(document.getElementById('manual-goals').value);
+    if (isNaN(val) || val < 967 || val > 1000) {
+      showStatus('update-status', 'Valeur invalide (doit être entre 967 et 1000)', 'err');
+      return;
+    }
+    await saveStats(val);
+  }
+
+  async function saveStats(newGoals, opponent, comp) {
+    // Build the updated stats object
+    const now = new Date().toISOString();
+    const updated = {
+      ...currentStats,
+      goals: newGoals,
+      remaining: 1000 - newGoals,
+      last_updated: now,
+      version: (currentStats.version || 1) + 1,
+    };
+    if (opponent) updated.last_goal_opponent    = opponent;
+    if (comp)     updated.last_goal_competition = comp;
+
+    // ─────────────────────────────────────────────────────────────────────
+    // NOTE: In a static Vercel deployment you cannot write files directly.
+    // This admin page works in two ways:
+    //
+    // 1. LOCALLY (file://): downloads stats.json — copy it to public/ and redeploy
+    // 2. WITH A VERCEL API ROUTE: uncomment the fetch('/api/update-stats') block below
+    //    and create /api/update-stats.ts (see README for setup)
+    // ─────────────────────────────────────────────────────────────────────
+
+    // Option 1: Download updated stats.json (always works, no backend needed)
+    const blob = new Blob([JSON.stringify(updated, null, 2)], { type: 'application/json' });
+    const url  = URL.createObjectURL(blob);
+    const a    = document.createElement('a');
+    a.href = url; a.download = 'stats.json'; a.click();
+    URL.revokeObjectURL(url);
+
+    currentStats = updated;
+    document.getElementById('disp-goals').textContent   = newGoals;
+    document.getElementById('disp-rem').textContent     = updated.remaining;
+    document.getElementById('disp-updated').textContent = new Date(now).toLocaleString('fr-CA');
+    if (opponent) document.getElementById('disp-opp').textContent = opponent;
+    document.getElementById('new-opponent').value = '';
+    document.getElementById('new-comp').value     = '';
+
+    showStatus('update-status',
+      `✅ stats.json téléchargé (${newGoals} buts). Remplace le fichier dans public/ et redéploie sur Vercel.`,
+      'ok');
+
+    // Option 2: API Route (uncomment if you have /api/update-stats set up)
+    /*
+    try {
+      const res = await fetch('/api/update-stats', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'x-admin-key': ADMIN_PASS },
+        body: JSON.stringify(updated),
+      });
+      if (res.ok) {
+        showStatus('update-status', `✅ Mis à jour! CR7 à ${newGoals} buts. Le site se met à jour dans 60s.`, 'ok');
+      } else {
+        showStatus('update-status', 'Erreur API: ' + res.status, 'err');
+      }
+    } catch (e) {
+      showStatus('update-status', 'Erreur réseau: ' + e.message, 'err');
+    }
+    */
+  }
+
+  function showStatus(id, msg, type) {
+    const el = document.getElementById(id);
+    el.textContent = msg;
+    el.className = 'status ' + type;
+    setTimeout(() => { el.className = 'status'; }, 8000);
+  }
+  </script>
+</body>
+</html>

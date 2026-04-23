@@ -1,0 +1,75 @@
+name: 🔄 Update CR7 Goal Count
+
+# ─── TRIGGERS ──────────────────────────────────────────────────────────────
+on:
+  # During match windows: every 5 minutes on match days (Tue–Sun)
+  # Adjust cron times based on when Al Nassr / Portugal play
+  schedule:
+    # Every 5 min, 16:00–23:00 UTC  (Saudi matches ~19:00–22:00 AST)
+    - cron: '*/5 16-23 * * 2-0'
+    # Every 5 min, 17:00–22:00 UTC  (Portugal / European nights)
+    - cron: '*/5 17-22 * * 1-4'
+    # Nightly full stats refresh at 02:00 UTC
+    - cron: '0 2 * * *'
+
+  # Manual trigger from GitHub Actions UI
+  workflow_dispatch:
+    inputs:
+      force_goals:
+        description: 'Override goal count manually (leave empty for API)'
+        required: false
+        default: ''
+
+# ─── PERMISSIONS ───────────────────────────────────────────────────────────
+permissions:
+  contents: write
+
+# ─── JOB ───────────────────────────────────────────────────────────────────
+jobs:
+  update-goals:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch CR7 stats & update stats.json
+        env:
+          # Add your API-Football key as a GitHub Secret: Settings → Secrets → APIFOOTBALL_KEY
+          APIFOOTBALL_KEY: ${{ secrets.APIFOOTBALL_KEY }}
+          FORCE_GOALS: ${{ github.event.inputs.force_goals }}
+        run: python scripts/update_stats.py
+
+      - name: Commit if stats changed
+        id: commit
+        run: |
+          git config user.name  "CR7 Stats Bot 🤖"
+          git config user.email "bot@to1000.com"
+          git add public/stats.json
+          # Only commit if something actually changed
+          if git diff --staged --quiet; then
+            echo "No change in goal count — skipping commit"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            GOALS=$(python -c "import json; d=json.load(open('public/stats.json')); print(d['goals'])")
+            git commit -m "⚽ CR7 at ${GOALS} goals — auto-update $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+            echo "✅ Pushed updated stats.json — CR7 now at ${GOALS} goals"
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Deploy to Cloudflare Pages
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx wrangler pages deploy public/ --project-name to1000 --branch main

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Analytics GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4V8Y6C38VN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4V8Y6C38VN');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>to1000.com — Analytics Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root {
+    --gold: #D4AF37;
+    --gold-dim: #a8882a;
+    --bg: #0a0a0a;
+    --card: #141414;
+    --card2: #1a1a1a;
+    --border: #2a2a2a;
+    --text: #f0f0f0;
+    --muted: #888;
+    --green: #22c55e;
+    --red: #ef4444;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Inter', -apple-system, sans-serif; min-height: 100vh; }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1400 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 1.2rem 2rem;
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.8rem;
+  }
+  .header-left { display: flex; align-items: center; gap: 1rem; }
+  .header-logo { font-size: 1.3rem; font-weight: 800; color: var(--gold); letter-spacing: -0.5px; }
+  .header-sub { font-size: 0.78rem; color: var(--muted); }
+  .header-right { display: flex; align-items: center; gap: 1rem; }
+  .live-badge { background: #1a0000; border: 1px solid #ef4444; color: #ef4444; font-size: 0.7rem; font-weight: 700; padding: 0.25rem 0.6rem; border-radius: 20px; letter-spacing: 1px; display: flex; align-items: center; gap: 0.4rem; }
+  .live-dot { width: 6px; height: 6px; background: #ef4444; border-radius: 50%; animation: pulse 1.2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  .last-updated { font-size: 0.72rem; color: var(--muted); }
+
+  /* LAYOUT */
+  .dashboard { max-width: 1400px; margin: 0 auto; padding: 1.5rem 1.5rem 3rem; }
+
+  /* HERO STATS */
+  .hero-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 1.5rem; }
+  .stat-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 1.2rem 1.4rem; position: relative; overflow: hidden;
+  }
+  .stat-card.gold { border-color: var(--gold-dim); background: linear-gradient(135deg, #141400, #1a1a00); }
+  .stat-card::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background: var(--border); }
+  .stat-card.gold::before { background: linear-gradient(90deg, var(--gold), transparent); }
+  .stat-label { font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 0.4rem; }
+  .stat-value { font-size: 2.4rem; font-weight: 900; line-height: 1; color: var(--text); }
+  .stat-card.gold .stat-value { color: var(--gold); }
+  .stat-sub { font-size: 0.72rem; color: var(--muted); margin-top: 0.3rem; }
+  .stat-change { font-size: 0.72rem; font-weight: 600; color: var(--green); margin-top: 0.2rem; }
+
+  /* PROGRESS BAR */
+  .progress-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.2rem 1.4rem; margin-bottom: 1.5rem; }
+  .progress-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.8rem; }
+  .progress-title { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
+  .progress-count { font-size: 0.9rem; font-weight: 700; color: var(--gold); }
+  .progress-track { height: 12px; background: #222; border-radius: 6px; overflow: hidden; }
+  .progress-fill { height: 100%; border-radius: 6px; background: linear-gradient(90deg, #b8860b, var(--gold), #ffe066); transition: width 1s ease; position: relative; }
+  .progress-fill::after { content:''; position:absolute; top:0; right:0; bottom:0; left:0; background:linear-gradient(90deg,transparent 70%,rgba(255,255,255,0.3)); }
+  .progress-labels { display: flex; justify-content: space-between; margin-top: 0.4rem; font-size: 0.68rem; color: var(--muted); }
+  .progress-milestone { position: absolute; top: -16px; font-size: 0.6rem; color: var(--muted); transform: translateX(-50%); }
+
+  /* GRID */
+  .charts-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1rem; }
+  .col-8 { grid-column: span 8; }
+  .col-4 { grid-column: span 4; }
+  .col-6 { grid-column: span 6; }
+  .col-12 { grid-column: span 12; }
+
+  .chart-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+    padding: 1.2rem 1.4rem; display: flex; flex-direction: column;
+  }
+  .chart-title { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 1rem; display: flex; justify-content: space-between; align-items: center; }
+  .chart-wrap { flex: 1; position: relative; min-height: 0; }
+  canvas { max-width: 100%; }
+
+  /* RECENT GOALS TABLE */
+  .recent-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.2rem 1.4rem; margin-top: 1rem; }
+  .recent-title { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 1rem; }
+  .goal-row { display: flex; align-items: center; gap: 0.8rem; padding: 0.6rem 0; border-bottom: 1px solid var(--border); }
+  .goal-row:last-child { border-bottom: none; }
+  .goal-num { font-size: 0.72rem; font-weight: 700; color: var(--gold); min-width: 38px; }
+  .goal-date { font-size: 0.7rem; color: var(--muted); min-width: 80px; }
+  .goal-match { font-size: 0.78rem; flex: 1; }
+  .goal-club-badge { font-size: 0.65rem; padding: 0.15rem 0.5rem; border-radius: 20px; font-weight: 600; white-space: nowrap; }
+  .badge-rm  { background:#11003a; color:#c6a200; }
+  .badge-manu{ background:#200008; color:#e00000; }
+  .badge-pt  { background:#001400; color:#009a00; }
+  .badge-an  { background:#1a1400; color:#d4af37; }
+  .badge-juv { background:#111; color:#fff; }
+  .badge-sc  { background:#001a18; color:#00bfa5; }
+  .goal-type { font-size: 0.7rem; color: var(--muted); min-width: 70px; text-align: right; }
+  .goal-min  { font-size: 0.72rem; color: var(--muted); min-width: 40px; text-align: right; }
+  .goal-result { font-size: 0.65rem; font-weight: 700; padding: 0.15rem 0.4rem; border-radius: 4px; min-width: 30px; text-align: center; }
+  .res-w { background: #0a2a0a; color: var(--green); }
+  .res-l { background: #2a0a0a; color: var(--red); }
+  .res-d { background: #1a1a1a; color: #999; }
+
+  /* TAG */
+  .tag-mvp { background: linear-gradient(135deg, var(--gold-dim), var(--gold)); color: #000; font-size: 0.6rem; font-weight: 800; padding: 0.1rem 0.4rem; border-radius: 4px; letter-spacing: 0.5px; }
+
+  /* FOOTER */
+  .footer { text-align: center; padding: 2rem; font-size: 0.72rem; color: var(--muted); border-top: 1px solid var(--border); margin-top: 2rem; }
+  .footer a { color: var(--gold); text-decoration: none; }
+
+  @media (max-width: 900px) {
+    .col-8, .col-4, .col-6 { grid-column: span 12; }
+    .header { padding: 1rem; }
+    .dashboard { padding: 1rem 0.8rem 3rem; }
+    .goal-date, .goal-min { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <span class="header-logo">to1000.com</span>
+    <span class="header-sub">Analytics Dashboard</span>
+  </div>
+  <div class="header-right">
+    <span class="live-badge"><span class="live-dot"></span>LIVE</span>
+    <span class="last-updated" id="lastUpdated">Refreshing…</span>
+  </div>
+</div>
+
+<div class="dashboard">
+
+  <!-- HERO STATS -->
+  <div class="hero-stats">
+    <div class="stat-card gold">
+      <div class="stat-label">Goals Scored</div>
+      <div class="stat-value" id="statGoals">968</div>
+      <div class="stat-sub">Career total</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Goals to 1000</div>
+      <div class="stat-value" id="statRemaining" style="color:#ef4444">32</div>
+      <div class="stat-sub" id="statRemSub">History awaits</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">This Season</div>
+      <div class="stat-value" id="statSeason">—</div>
+      <div class="stat-sub">Goals 2025/26</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Goals per 90'</div>
+      <div class="stat-value" id="statPer90">—</div>
+      <div class="stat-sub">Current season</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Last Goal</div>
+      <div class="stat-value" style="font-size:1.1rem;padding-top:0.4rem" id="statLastOpponent">—</div>
+      <div class="stat-sub" id="statLastDate">—</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Est. 1000th goal</div>
+      <div class="stat-value" style="font-size:1.1rem;padding-top:0.4rem" id="statETA">~2026</div>
+      <div class="stat-sub" id="statETASub">Based on current rate</div>
+    </div>
+  </div>
+
+  <!-- PROGRESS BAR -->
+  <div class="progress-card">
+    <div class="progress-header">
+      <span class="progress-title">🎯 Road to 1000</span>
+      <span class="progress-count" id="progressCount">968 / 1000</span>
+    </div>
+    <div style="position:relative; padding-top: 20px;">
+      <span class="progress-milestone" style="left:75%">750</span>
+      <span class="progress-milestone" style="left:90%">900</span>
+      <span class="progress-milestone" style="left:96.8%">968</span>
+      <div class="progress-track">
+        <div class="progress-fill" id="progressFill" style="width:96.8%"></div>
+      </div>
+    </div>
+    <div class="progress-labels">
+      <span>0</span>
+      <span style="color:var(--gold);font-weight:700">96.8% complete</span>
+      <span style="color:var(--gold)">1000 🎯</span>
+    </div>
+  </div>
+
+  <!-- CHARTS ROW 1 -->
+  <div class="charts-grid">
+    <div class="chart-card col-8" style="min-height:280px">
+      <div class="chart-title">
+        <span>Goals by Year</span>
+        <span style="font-size:0.68rem;color:var(--muted);text-transform:none;letter-spacing:0">2002 — 2026</span>
+      </div>
+      <div class="chart-wrap" style="height:220px">
+        <canvas id="yearChart"></canvas>
+      </div>
+    </div>
+    <div class="chart-card col-4" style="min-height:280px">
+      <div class="chart-title"><span>Goals by Club</span></div>
+      <div class="chart-wrap" style="height:220px">
+        <canvas id="clubChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHARTS ROW 2 -->
+  <div class="charts-grid" style="margin-top:1rem">
+    <div class="chart-card col-4" style="min-height:260px">
+      <div class="chart-title"><span>Goal Type</span></div>
+      <div class="chart-wrap" style="height:200px">
+        <canvas id="typeChart"></canvas>
+      </div>
+    </div>
+    <div class="chart-card col-4" style="min-height:260px">
+      <div class="chart-title"><span>Minute of Goal</span></div>
+      <div class="chart-wrap" style="height:200px">
+        <canvas id="minuteChart"></canvas>
+      </div>
+    </div>
+    <div class="chart-card col-4" style="min-height:260px">
+      <div class="chart-title"><span>Top Competitions</span></div>
+      <div class="chart-wrap" style="height:200px">
+        <canvas id="compChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- RECENT GOALS -->
+  <div class="recent-card">
+    <div class="recent-title">⚡ Most Recent Goals</div>
+    <div id="recentGoals">
+      <div class="goal-row">
+        <span class="goal-num">#968</span>
+        <span class="goal-date">2026-04-11</span>
+        <span class="goal-match">Al Akhdoud <small style="color:var(--muted)">vs</small> <b>Al Nassr</b> &nbsp;<span class="tag-mvp">MVP</span></span>
+        <span class="goal-club-badge badge-an">Al Nassr</span>
+        <span class="goal-type">Right foot</span>
+        <span class="goal-min">15'</span>
+        <span class="goal-result res-w">W</span>
+      </div>
+      <div class="goal-row">
+        <span class="goal-num">#967</span>
+        <span class="goal-date">2026-04-03</span>
+        <span class="goal-match"><b>Al Nassr</b> vs Al Najma</span>
+        <span class="goal-club-badge badge-an">Al Nassr</span>
+        <span class="goal-type">Header</span>
+        <span class="goal-min">83'</span>
+        <span class="goal-result res-w">W</span>
+      </div>
+      <div class="goal-row">
+        <span class="goal-num">#966</span>
+        <span class="goal-date">2026-04-03</span>
+        <span class="goal-match"><b>Al Nassr</b> vs Al Najma</span>
+        <span class="goal-club-badge badge-an">Al Nassr</span>
+        <span class="goal-type">Left foot</span>
+        <span class="goal-min">83'</span>
+        <span class="goal-result res-w">W</span>
+      </div>
+      <div class="goal-row">
+        <span class="goal-num">#965</span>
+        <span class="goal-date">2026-02-25</span>
+        <span class="goal-match"><b>Al Nassr</b> vs Al Najma</span>
+        <span class="goal-club-badge badge-an">Al Nassr</span>
+        <span class="goal-type">Right foot</span>
+        <span class="goal-min">57'</span>
+        <span class="goal-result res-w">W</span>
+      </div>
+      <div class="goal-row">
+        <span class="goal-num">#964</span>
+        <span class="goal-date">2026-02-21</span>
+        <span class="goal-match"><b>Al Nassr</b> vs Al Hazem</span>
+        <span class="goal-club-badge badge-an">Al Nassr</span>
+        <span class="goal-type">Free kick</span>
+        <span class="goal-min">90'</span>
+        <span class="goal-result res-w">W</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <a href="/">← Back to to1000.com</a> &nbsp;·&nbsp;
+  Data updated in real-time &nbsp;·&nbsp;
+  <span id="footerTime"></span>
+</div>
+
+<script>
+// ─── DATA ────────────────────────────────────────────────────────────────────
+const DATA = {
+  years: {
+    '2002':5,'2003':1,'2004':13,'2005':15,'2006':25,'2007':34,'2008':35,
+    '2009':30,'2010':48,'2011':60,'2012':63,'2013':69,'2014':61,'2015':57,
+    '2016':55,'2017':53,'2018':49,'2019':39,'2020':44,'2021':47,'2022':16,
+    '2023':54,'2024':43,'2025':41,'2026':11
+  },
+  clubs: {
+    'Real Madrid':450,'Man United':145,'Portugal':143,
+    'Al Nassr':124,'Juventus':101,'Sporting CP':5
+  },
+  types: {
+    'Right foot':362,'Penalty':184,'Left foot':170,'Header':158,
+    'Free kick':64,'Tap-in':15,'Long range':9,'Other':5
+  },
+  minutes: {
+    "1'–15'":113,"16'–30'":127,"31'–45'":145,
+    "46'–60'":134,"61'–75'":139,"76'–90+'":310
+  },
+  comps: {
+    'LaLiga':311,'Champions League':140,'Premier League':103,
+    'Saudi Pro League':98,'Serie A':81,'WC Qualifying':41,
+    'Euro Qualifying':41,'Friendly':22
+  }
+};
+
+// ─── CHART DEFAULTS ──────────────────────────────────────────────────────────
+Chart.defaults.color = '#888';
+Chart.defaults.font.family = "'Inter', sans-serif";
+Chart.defaults.font.size = 11;
+
+const GOLD = '#D4AF37';
+const CLUB_COLORS = ['#c9a227','#e00000','#009a00','#f5c518','#fff','#00bfa5'];
+
+// Year Chart (area)
+new Chart(document.getElementById('yearChart'), {
+  type: 'bar',
+  data: {
+    labels: Object.keys(DATA.years),
+    datasets: [{
+      label: 'Goals',
+      data: Object.values(DATA.years),
+      backgroundColor: Object.keys(DATA.years).map(y =>
+        parseInt(y) >= 2026 ? GOLD : 'rgba(212,175,55,0.5)'
+      ),
+      borderColor: GOLD,
+      borderWidth: 1,
+      borderRadius: 3,
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false }, tooltip: {
+      callbacks: { label: ctx => ` ${ctx.raw} goals` }
+    }},
+    scales: {
+      x: { grid: { color: '#1a1a1a' }, ticks: { maxRotation: 45, font: { size: 9 } } },
+      y: { grid: { color: '#1a1a1a' }, beginAtZero: true }
+    }
+  }
+});
+
+// Club Chart (horizontal bar)
+new Chart(document.getElementById('clubChart'), {
+  type: 'doughnut',
+  data: {
+    labels: Object.keys(DATA.clubs),
+    datasets: [{
+      data: Object.values(DATA.clubs),
+      backgroundColor: CLUB_COLORS,
+      borderColor: '#0a0a0a',
+      borderWidth: 3,
+      hoverOffset: 8
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    cutout: '60%',
+    plugins: {
+      legend: {
+        position: 'bottom',
+        labels: { boxWidth: 10, padding: 8, font: { size: 10 } }
+      },
+      tooltip: {
+        callbacks: {
+          label: ctx => ` ${ctx.label}: ${ctx.raw} goals (${(ctx.raw/968*100).toFixed(1)}%)`
+        }
+      }
+    }
+  }
+});
+
+// Type Chart (pie)
+const typeColors = ['#D4AF37','#3b82f6','#22c55e','#ef4444','#a855f7','#f97316','#06b6d4','#6b7280'];
+new Chart(document.getElementById('typeChart'), {
+  type: 'doughnut',
+  data: {
+    labels: Object.keys(DATA.types),
+    datasets: [{
+      data: Object.values(DATA.types),
+      backgroundColor: typeColors,
+      borderColor: '#0a0a0a',
+      borderWidth: 2,
+      hoverOffset: 6
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    cutout: '55%',
+    plugins: {
+      legend: { position: 'bottom', labels: { boxWidth: 8, padding: 6, font: { size: 9 } } },
+      tooltip: { callbacks: { label: ctx => ` ${ctx.raw} (${(ctx.raw/968*100).toFixed(1)}%)` } }
+    }
+  }
+});
+
+// Minute Chart (bar)
+new Chart(document.getElementById('minuteChart'), {
+  type: 'bar',
+  data: {
+    labels: Object.keys(DATA.minutes),
+    datasets: [{
+      label: 'Goals',
+      data: Object.values(DATA.minutes),
+      backgroundColor: ['rgba(212,175,55,0.4)','rgba(212,175,55,0.5)','rgba(212,175,55,0.6)',
+                        'rgba(212,175,55,0.6)','rgba(212,175,55,0.7)','rgba(212,175,55,1)'],
+      borderColor: GOLD,
+      borderWidth: 1,
+      borderRadius: 4
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { grid: { color: '#1a1a1a' }, ticks: { font: { size: 9 } } },
+      y: { grid: { color: '#1a1a1a' }, beginAtZero: true }
+    }
+  }
+});
+
+// Competition Chart (horizontal bar)
+new Chart(document.getElementById('compChart'), {
+  type: 'bar',
+  data: {
+    labels: Object.keys(DATA.comps),
+    datasets: [{
+      label: 'Goals',
+      data: Object.values(DATA.comps),
+      backgroundColor: 'rgba(212,175,55,0.6)',
+      borderColor: GOLD, borderWidth: 1, borderRadius: 3
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: false,
+    indexAxis: 'y',
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { grid: { color: '#1a1a1a' }, beginAtZero: true },
+      y: { grid: { color: '#1a1a1a' }, ticks: { font: { size: 9 } } }
+    }
+  }
+});
+
+// ─── LIVE STATS ──────────────────────────────────────────────────────────────
+async function refreshStats() {
+  try {
+    const r = await fetch('/stats.json?_=' + Date.now(), { cache: 'no-store' });
+    const d = await r.json();
+
+    document.getElementById('statGoals').textContent = d.goals || 968;
+    document.getElementById('statRemaining').textContent = d.remaining || 32;
+    document.getElementById('statSeason').textContent = d.season_goals || '—';
+    document.getElementById('statPer90').textContent = d.goals_per_90?.toFixed(2) || '—';
+    document.getElementById('statLastOpponent').textContent = d.last_goal_opponent || '—';
+    document.getElementById('statLastDate').textContent = d.last_goal_date || '—';
+
+    // Progress
+    const pct = ((d.goals || 968) / 1000 * 100).toFixed(1);
+    document.getElementById('progressFill').style.width = pct + '%';
+    document.getElementById('progressCount').textContent = `${d.goals || 968} / 1000`;
+
+    // ETA
+    const goalsPerDay = (d.goals_per_90 || 1) / 90 * 75; // rough games/year
+    const daysLeft = Math.round((d.remaining || 32) / (goalsPerDay * 40 / 365));
+    const eta = new Date();
+    eta.setDate(eta.getDate() + daysLeft);
+    document.getElementById('statETA').textContent = eta.toLocaleDateString('en-GB', { month: 'short', year: 'numeric' });
+
+    const now = new Date();
+    document.getElementById('lastUpdated').textContent = 'Updated ' + now.toLocaleTimeString();
+    document.getElementById('footerTime').textContent = 'Last refresh: ' + now.toLocaleString();
+  } catch(e) {
+    document.getElementById('lastUpdated').textContent = 'Live update failed';
+  }
+}
+
+refreshStats();
+setInterval(refreshStats, 60000);
+</script>
+</body>
+</html>
