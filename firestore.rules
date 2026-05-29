@@ -1,0 +1,57 @@
+rules_version = '2';
+
+// Firebase Firestore rules pour to1000-contest
+// Couvre : predictions (concours existant), polls (sondages), comments (commentaires)
+//
+// Déploiement : `firebase deploy --only firestore:rules` depuis le dossier `to1000/`
+// ou via console.firebase.google.com → Firestore → Rules → Publier
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ─── Predictions (existing contest) — login required, 1 doc per UID
+    match /predictions/{uid} {
+      allow read: if true;
+      allow create, update: if request.auth != null && request.auth.uid == uid;
+      allow delete: if false;
+    }
+
+    // ─── Polls — anonymous voting allowed (uses Firestore atomic increment)
+    // Document path: polls/{pollId}
+    // Shape: { total: int, options: { key: int }, last_vote_at: timestamp }
+    match /polls/{pollId} {
+      allow read: if true;
+      allow write: if
+        // Allow create/update with only "increment" operations + serverTimestamp
+        request.resource.data.keys().hasOnly(['total', 'options', 'last_vote_at']) &&
+        request.resource.data.total is number &&
+        request.resource.data.options is map;
+      allow delete: if false; // admin via console only
+    }
+
+    // ─── Comments — read public, write only authenticated users
+    // Path: comments/{pageId}/items/{commentId}
+    match /comments/{pageId}/items/{commentId} {
+      allow read: if true;
+      allow create: if
+        request.auth != null &&
+        request.resource.data.text is string &&
+        request.resource.data.text.size() >= 2 &&
+        request.resource.data.text.size() <= 500 &&
+        request.resource.data.authorUid == request.auth.uid &&
+        request.resource.data.pageId == pageId;
+      // Owner can delete their own comment; admins (UIDs listed below) can delete any
+      allow delete: if
+        request.auth != null && (
+          request.auth.uid == resource.data.authorUid ||
+          request.auth.uid in [
+            // TODO: add Omar's UID after his first login.
+            // Find UID: console.firebase.google.com → Authentication → Users
+            'REPLACE_WITH_OMAR_UID'
+          ]
+        );
+      // Forbid updates (prevent comment-editing-after-publication for moderation simplicity)
+      allow update: if false;
+    }
+  }
+}

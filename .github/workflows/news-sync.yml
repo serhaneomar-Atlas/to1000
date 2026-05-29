@@ -1,0 +1,117 @@
+name: News sync (every 30 min)
+
+# Why: aggregate football + CR7 news from 25 RSS sources, refresh news.json,
+# and trigger a Cloudflare Pages deploy when content actually changed.
+# Quota check: 48 runs/day × ~60s/run ≈ 1440 min/month, well under the
+# 2000 min free tier on private repos.
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # every 30 minutes
+  workflow_dispatch:          # allow manual trigger from the Actions tab
+
+# Allow the workflow to push the regenerated news.json back to the repo
+permissions:
+  contents: write
+
+concurrency:
+  group: news-sync
+  cancel-in-progress: false   # don't kill a run mid-deploy
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install feedparser
+
+      - name: Snapshot existing news.json hash
+        id: pre
+        run: |
+          if [ -f public/news.json ]; then
+            echo "hash=$(sha256sum public/news.json | cut -d' ' -f1)" >> $GITHUB_OUTPUT
+          else
+            echo "hash=none" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run news aggregator (with translation if GEMINI_API_KEY set)
+        env:
+          # Optional: get a free key at https://aistudio.google.com/app/apikey
+          # Without it, translations are skipped (items shown in source language).
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/news_aggregator.py
+
+      - name: Generate SEO HTML pages for each news item
+        run: python scripts/news_to_html.py
+
+      - name: Update WC countdown JSON (morocco_next, portugal_next)
+        run: python scripts/wc_countdown_update.py
+
+      - name: Regenerate sitemap.xml
+        run: python scripts/sitemap_generator.py
+
+      - name: Detect content change
+        id: diff
+        run: |
+          NEW_HASH=$(sha256sum public/news.json | cut -d' ' -f1)
+          echo "hash=$NEW_HASH" >> $GITHUB_OUTPUT
+          if [ "${{ steps.pre.outputs.hash }}" = "$NEW_HASH" ]; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "::notice::news.json unchanged — skipping commit and deploy"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            # Show a short diff snippet for the action log
+            python -c "
+            import json
+            d = json.load(open('public/news.json'))
+            s = d.get('stats', {})
+            print(f'Generated {s.get(\"published\",0)} items ({s.get(\"cr7_count\",0)} CR7) from {s.get(\"feeds_fetched\",0)} feeds')
+            "
+          fi
+
+      - name: Commit and push news.json + translation cache
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "to1000-news-bot"
+          git config user.email "to1000-news-bot@users.noreply.github.com"
+          git add public/news.json public/translations_cache.json public/news/ public/wc.json public/sitemap.xml 2>/dev/null || true
+          # Only commit if there are actually staged changes
+          if git diff --cached --quiet; then
+            echo "::notice::No staged changes to commit"
+          else
+            git commit -m "chore(news): refresh feed [$(date -u +%Y-%m-%dT%H:%M)Z]"
+            git push
+          fi
+
+      # Optional deploy step — runs only when both:
+      #   (a) news.json actually changed
+      #   (b) the CLOUDFLARE_API_TOKEN secret is set in the repo
+      # If your repo is already connected to Cloudflare Pages via Git integration,
+      # the previous commit push will trigger the deploy automatically and this
+      # step becomes a redundant no-op (still cheap, ~2s skip).
+      - name: Deploy to Cloudflare Pages
+        if: steps.diff.outputs.changed == 'true' && env.CLOUDFLARE_API_TOKEN != ''
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npx wrangler@latest pages deploy public/ \
+            --project-name to1000 \
+            --branch main \
+            --commit-dirty=true

@@ -1,0 +1,64 @@
+name: CR7 stats sync (daily)
+
+# Why: refresh public/stats.json with latest CR7 stats from ESPN (compteur buts,
+# last_match, next_match). Runs once a day in early UTC morning. The intra-match
+# real-time updates are handled separately by goal_watcher_v2 when activated.
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # 06:00 UTC daily (~07:00 Paris hiver, 08:00 été)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stats-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Snapshot existing stats.json hash
+        id: pre
+        run: |
+          if [ -f public/stats.json ]; then
+            echo "hash=$(sha256sum public/stats.json | cut -d' ' -f1)" >> $GITHUB_OUTPUT
+          else
+            echo "hash=none" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Sync stats from ESPN
+        run: python scripts/update_stats_v2.py
+
+      - name: Regenerate sitemap (in case news changed too)
+        run: python scripts/sitemap_generator.py
+
+      - name: Detect change & commit
+        run: |
+          NEW_HASH=$(sha256sum public/stats.json | cut -d' ' -f1)
+          if [ "${{ steps.pre.outputs.hash }}" = "$NEW_HASH" ]; then
+            echo "::notice::stats.json unchanged — skipping commit"
+            exit 0
+          fi
+          git config user.name "to1000-stats-bot"
+          git config user.email "to1000-stats-bot@users.noreply.github.com"
+          git add public/stats.json public/sitemap.xml public/index.html public/goals.html 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "::notice::No staged changes"
+          else
+            git commit -m "chore(stats): daily CR7 sync [$(date -u +%Y-%m-%dT%H:%M)Z]"
+            git push
+          fi

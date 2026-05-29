@@ -1,0 +1,130 @@
+name: AI Editorial (3×/jour)
+
+# Pourquoi : un "journaliste IA" rédige 1-2 articles originaux par run en se
+# basant sur les news fraîches non encore couvertes. Tourne 3× par jour en cron
+# cloud → autonomie complète, indépendante du PC d'Omar.
+#
+# AUTHENTIFICATION : utilise le secret CLAUDE_CODE_OAUTH_TOKEN généré via
+#   `claude setup-token` sur la machine d'Omar (cf. DEPLOY_INSTRUCTIONS.md §11).
+# Le plan Max couvre les appels (inclus dans l'allocation Agent SDK ~200$/mois).
+# AUCUN crédit API Anthropic supplémentaire requis.
+
+on:
+  schedule:
+    - cron: "0 7,13,19 * * *"   # 07h, 13h, 19h UTC ≈ 08h/14h/20h Paris (hiver)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: read
+  id-token: write   # pour OIDC si besoin
+
+concurrency:
+  group: ai-editorial
+  cancel-in-progress: false
+
+jobs:
+  write:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - name: Pick news topic à couvrir
+        id: pick
+        run: |
+          python3 << 'PY'
+          import json, os
+          from pathlib import Path
+          news = json.load(open("public/news.json"))
+          log_path = Path("EDITORIAL/state/published_log.jsonl")
+          covered = set()
+          if log_path.exists():
+              for line in log_path.read_text().splitlines():
+                  try:
+                      e = json.loads(line)
+                      if e.get("source_news_id"):
+                          covered.add(e["source_news_id"])
+                  except Exception:
+                      pass
+          cands = [i for i in news.get("items",[])
+                   if i.get("id") not in covered
+                   and (i.get("score") or 0) >= 70]
+          cands.sort(key=lambda x: x.get("score",0), reverse=True)
+          if not cands:
+              print("::warning::Aucun item score ≥ 70 non couvert — skip ce run")
+              with open(os.environ['GITHUB_OUTPUT'],'a') as f:
+                  f.write("topic=\n")
+              exit(0)
+          top = cands[0]
+          # Sérialise le topic dans une var GH (1 ligne)
+          serialized = json.dumps({
+              "id": top.get("id"),
+              "title": top.get("title_fr") or top.get("title"),
+              "summary": top.get("summary_fr") or top.get("summary",""),
+              "url": top.get("url",""),
+              "source": top.get("primary_source") or top.get("source") or "source",
+              "score": top.get("score"),
+              "image_url": top.get("image_url",""),
+          }, ensure_ascii=False).replace('\n',' ')
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:
+              f.write(f"topic={serialized}\n")
+          print("Topic choisi :", top.get("title_fr") or top.get("title"))
+          PY
+
+      - name: Run Claude Code (auth via plan Max OAuth)
+        if: steps.pick.outputs.topic != ''
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            Tu es journaliste sportif pour to1000.com. Tu DOIS produire UN article HTML complet.
+
+            ## Données du topic
+            ${{ steps.pick.outputs.topic }}
+
+            ## Mission
+            1. Lis EDITORIAL/STYLE_GUIDE.md pour la charte (ton, longueur, marque CR7, etc.).
+            2. Lis EDITORIAL/roles/JOURNALISTE_CR7.md, JOURNALISTE_MAROC.md ou JOURNALISTE_PORTUGAL.md selon le sujet.
+            3. Rédige un article ORIGINAL en français (600-900 mots) :
+               - H1 percutant avec mot-clé en tête
+               - Lead 50-80 mots qui répond à qui-quoi-quand-où
+               - 3-4 sections H2
+               - Conclusion + lien vers source
+               - PAS d'invention de chiffres, citations, scores
+            4. Génère un fichier HTML COMPLET dans `public/blog/$(date +%Y%m%d)-{slug}.html`
+               - Slug basé sur le titre, kebab-case
+               - SEO complet : <title>, meta description, OG, Twitter Card, JSON-LD NewsArticle, canonical
+               - Style identique à `public/blog/portugal-world-cup-squad-cr7-confirmed.html`
+               - Disclaimer "Article rédigé par notre IA éditoriale" en bas
+            5. Ajoute l'entrée dans `public/blog/posts.json` (insert en première position)
+            6. Append une ligne dans `EDITORIAL/state/published_log.jsonl` :
+               ```
+               {"ts":"<now ISO>", "role":"claude_journalist", "slug":"<slug>", "url":"/blog/<slug>.html", "source_news_id":"<from topic>", "source_url":"<from topic>", "score":<from topic>, "words":<count>}
+               ```
+            7. Lance `python scripts/sitemap_generator.py` pour rebuild le sitemap.
+
+            ## Règles absolues
+            - Pas de plagiat. Reformule, contextualise, analyse.
+            - Si tu n'as pas une donnée → tu ne l'écris pas.
+            - Respecte la charte (pas de "GOAT", pas de "CR7™", pas de prise position politique).
+            - Si sujet Maroc → conclus par un encouragement type "Dima Maghrib".
+            - Si sujet CR7 → mentionne le compteur 973/1000 si pertinent.
+          claude_args: '--allowedTools Read,Write,Edit,Bash,Glob,Grep'
+
+      - name: Commit & push si changement
+        if: steps.pick.outputs.topic != ''
+        run: |
+          git config user.name "to1000-ai-editor"
+          git config user.email "to1000-ai-editor@users.noreply.github.com"
+          git add public/blog/ public/sitemap.xml EDITORIAL/state/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "::warning::Claude n'a rien produit ce run — vérifier les logs"
+          else
+            git commit -m "feat(blog): article IA $(date -u +%Y-%m-%d-%H%M)"
+            git push
+          fi

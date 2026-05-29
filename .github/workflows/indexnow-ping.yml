@@ -1,0 +1,37 @@
+name: IndexNow ping (after deploy)
+
+# Pings IndexNow API with the top WC pages + latest news pages so Bing/Yandex
+# crawl them within minutes (Google ignores IndexNow but is faster via Search
+# Console — see EDITORIAL/roles/SEO_OPTIMISEUR.md).
+
+on:
+  workflow_run:
+    workflows: ["News sync (every 30 min)", "CR7 stats sync (daily)"]
+    types: [completed]
+  workflow_dispatch:
+
+jobs:
+  ping:
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Ping IndexNow
+        run: |
+          curl -sS -X POST 'https://api.indexnow.org/IndexNow' \
+            -H 'Content-Type: application/json' \
+            -d '{
+              "host": "to1000.com",
+              "key": "a7f3b91c4d8e4f2a9b6c1d5e8f0a3b7c",
+              "keyLocation": "https://to1000.com/a7f3b91c4d8e4f2a9b6c1d5e8f0a3b7c.txt",
+              "urlList": [
+                "https://to1000.com/",
+                "https://to1000.com/world-cup/",
+                "https://to1000.com/world-cup/maroc/",
+                "https://to1000.com/world-cup/maroc/ar/",
+                "https://to1000.com/world-cup/portugal/",
+                "https://to1000.com/goals.html",
+                "https://to1000.com/news/",
+                "https://to1000.com/blog/"
+              ]
+            }' && echo "" && echo "✅ IndexNow pinged"

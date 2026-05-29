@@ -1,0 +1,335 @@
+{
+  "_comment": "Données Coupe du Monde 2026. Régénéré quotidiennement par scripts/wc_countdown_update.py",
+  "last_updated": "2026-05-28T22:56:21.761877Z",
+  "tournament": {
+    "name": "FIFA World Cup 2026",
+    "hosts": [
+      "USA",
+      "Canada",
+      "Mexico"
+    ],
+    "start_date": "2026-06-11",
+    "final_date": "2026-07-19",
+    "format": "48 équipes, 12 groupes de 4, top 2 de chaque groupe + 8 meilleurs 3èmes → 1/16",
+    "stadiums_count": 16,
+    "matches_count": 104
+  },
+  "opening_match": {
+    "kickoff_utc": "2026-06-11T19:00:00Z",
+    "kickoff_local": "2026-06-11T15:00:00-04:00",
+    "home_team": "Mexique",
+    "away_team": "Afrique du Sud",
+    "venue": "Estadio Azteca, Mexico City",
+    "group": "A"
+  },
+  "final_match": {
+    "kickoff_utc": "2026-07-19T19:00:00Z",
+    "venue": "MetLife Stadium, East Rutherford, NJ"
+  },
+  "groups": {
+    "A": {
+      "teams": [
+        "Mexique",
+        "Afrique du Sud",
+        "Norvège",
+        "Égypte"
+      ]
+    },
+    "B": {
+      "teams": [
+        "Canada",
+        "Équateur",
+        "Tunisie",
+        "Iran"
+      ]
+    },
+    "C": {
+      "teams": [
+        "Maroc",
+        "Brésil",
+        "Écosse",
+        "Haïti"
+      ],
+      "highlight": "maroc"
+    },
+    "D": {
+      "teams": [
+        "USA",
+        "Cap-Vert",
+        "Pays-Bas",
+        "Australie"
+      ]
+    },
+    "E": {
+      "teams": [
+        "Argentine",
+        "Côte d'Ivoire",
+        "Sénégal",
+        "Pays-Bas (qualifié play-off)"
+      ]
+    },
+    "F": {
+      "teams": [
+        "Allemagne",
+        "Japon",
+        "Suisse",
+        "Jamaïque"
+      ]
+    },
+    "G": {
+      "teams": [
+        "Belgique",
+        "Corée du Sud",
+        "Pologne",
+        "Algérie"
+      ]
+    },
+    "H": {
+      "teams": [
+        "Croatie",
+        "Mexique (à confirmer)",
+        "Ouzbékistan (placeholder)",
+        "Qatar"
+      ]
+    },
+    "I": {
+      "teams": [
+        "Angleterre",
+        "France (placeholder)",
+        "Espagne (placeholder)",
+        "Italie (placeholder)"
+      ]
+    },
+    "J": {
+      "teams": [
+        "Pays-Bas",
+        "Turquie",
+        "Autriche",
+        "Curaçao"
+      ]
+    },
+    "K": {
+      "teams": [
+        "Portugal",
+        "RD Congo",
+        "Ouzbékistan",
+        "Colombie"
+      ],
+      "highlight": "portugal"
+    },
+    "L": {
+      "teams": [
+        "Espagne",
+        "Suède",
+        "Jordanie",
+        "Nouvelle-Zélande"
+      ]
+    },
+    "_disclaimer": "Composition exacte des groupes I/J à vérifier sur fifa.com — tirage Dec 2025 + qualifs avril/mai 2026 inter-confédérations. Liste mise à jour automatiquement par scripts/wc_countdown_update.py."
+  },
+  "morocco_fixtures": [
+    {
+      "date_utc": "2026-06-12T22:00:00Z",
+      "date_local_ma": "2026-06-12T23:00:00+01:00",
+      "opponent": "Brésil",
+      "venue": "MetLife Stadium, East Rutherford, NJ",
+      "kickoff_local_ma": "23h00"
+    },
+    {
+      "date_utc": "2026-06-18T22:00:00Z",
+      "date_local_ma": "2026-06-18T23:00:00+01:00",
+      "opponent": "Écosse",
+      "venue": "Gillette Stadium, Foxborough, MA",
+      "kickoff_local_ma": "23h00"
+    },
+    {
+      "date_utc": "2026-06-23T22:00:00Z",
+      "date_local_ma": "2026-06-23T23:00:00+01:00",
+      "opponent": "Haïti",
+      "venue": "Mercedes-Benz Stadium, Atlanta, GA",
+      "kickoff_local_ma": "23h00"
+    }
+  ],
+  "portugal_fixtures": [
+    {
+      "date_utc": "2026-06-17T17:00:00Z",
+      "date_local_pt": "2026-06-17T18:00:00+01:00",
+      "opponent": "RD Congo",
+      "venue": "NRG Stadium, Houston, TX",
+      "kickoff_local_pt": "18h00"
+    },
+    {
+      "date_utc": "2026-06-23T17:00:00Z",
+      "date_local_pt": "2026-06-23T18:00:00+01:00",
+      "opponent": "Ouzbékistan",
+      "venue": "NRG Stadium, Houston, TX",
+      "kickoff_local_pt": "18h00"
+    },
+    {
+      "date_utc": "2026-06-27T23:30:00Z",
+      "date_local_pt": "2026-06-28T00:30:00+01:00",
+      "opponent": "Colombie",
+      "venue": "Hard Rock Stadium, Miami, FL",
+      "kickoff_local_pt": "00h30 (28 juin)"
+    }
+  ],
+  "portugal_friendlies": [
+    {
+      "date_utc": "2026-06-06T19:00:00Z",
+      "opponent": "Chili",
+      "venue": "Estádio Nacional do Jamor, Oeiras"
+    },
+    {
+      "date_utc": "2026-06-10T19:00:00Z",
+      "opponent": "Nigéria",
+      "venue": "Estádio Municipal de Leiria"
+    }
+  ],
+  "stadiums": [
+    {
+      "name": "MetLife Stadium",
+      "city": "East Rutherford, NJ",
+      "country": "USA",
+      "capacity": 82500,
+      "matches": [
+        "Maroc-Brésil 12/6",
+        "Final 19/7"
+      ]
+    },
+    {
+      "name": "Estadio Azteca",
+      "city": "Mexico City",
+      "country": "Mexique",
+      "capacity": 87000,
+      "matches": [
+        "Opening 11/6 Mexique-Afrique du Sud"
+      ]
+    },
+    {
+      "name": "SoFi Stadium",
+      "city": "Inglewood, CA",
+      "country": "USA",
+      "capacity": 70000,
+      "matches": [
+        "Cérémonie LA 12/6"
+      ]
+    },
+    {
+      "name": "AT&T Stadium",
+      "city": "Arlington, TX",
+      "country": "USA",
+      "capacity": 80000,
+      "matches": []
+    },
+    {
+      "name": "Hard Rock Stadium",
+      "city": "Miami Gardens, FL",
+      "country": "USA",
+      "capacity": 65000,
+      "matches": [
+        "Colombie-Portugal 27/6"
+      ]
+    },
+    {
+      "name": "Mercedes-Benz Stadium",
+      "city": "Atlanta, GA",
+      "country": "USA",
+      "capacity": 71000,
+      "matches": [
+        "Maroc-Haïti 23/6"
+      ]
+    },
+    {
+      "name": "Gillette Stadium",
+      "city": "Foxborough, MA",
+      "country": "USA",
+      "capacity": 65878,
+      "matches": [
+        "Maroc-Écosse 18/6"
+      ]
+    },
+    {
+      "name": "NRG Stadium",
+      "city": "Houston, TX",
+      "country": "USA",
+      "capacity": 72220,
+      "matches": [
+        "Portugal-RD Congo 17/6",
+        "Portugal-Ouzbékistan 23/6"
+      ]
+    },
+    {
+      "name": "Lincoln Financial Field",
+      "city": "Philadelphia, PA",
+      "country": "USA",
+      "capacity": 69596,
+      "matches": []
+    },
+    {
+      "name": "Lumen Field",
+      "city": "Seattle, WA",
+      "country": "USA",
+      "capacity": 68740,
+      "matches": []
+    },
+    {
+      "name": "Levi's Stadium",
+      "city": "Santa Clara, CA",
+      "country": "USA",
+      "capacity": 68500,
+      "matches": []
+    },
+    {
+      "name": "Arrowhead Stadium",
+      "city": "Kansas City, MO",
+      "country": "USA",
+      "capacity": 76416,
+      "matches": []
+    },
+    {
+      "name": "BC Place",
+      "city": "Vancouver, BC",
+      "country": "Canada",
+      "capacity": 54500,
+      "matches": []
+    },
+    {
+      "name": "BMO Field",
+      "city": "Toronto, ON",
+      "country": "Canada",
+      "capacity": 45000,
+      "matches": [
+        "Cérémonie Canada 12/6"
+      ]
+    },
+    {
+      "name": "Estadio Akron",
+      "city": "Guadalajara",
+      "country": "Mexique",
+      "capacity": 48071,
+      "matches": []
+    },
+    {
+      "name": "Estadio BBVA",
+      "city": "Monterrey",
+      "country": "Mexique",
+      "capacity": 53500,
+      "matches": []
+    }
+  ],
+  "morocco_next": {
+    "date_utc": "2026-06-12T22:00:00Z",
+    "date_local_ma": "2026-06-12T23:00:00+01:00",
+    "opponent": "Brésil",
+    "venue": "MetLife Stadium, East Rutherford, NJ",
+    "kickoff_local_ma": "23h00"
+  },
+  "portugal_next": {
+    "date_utc": "2026-06-17T17:00:00Z",
+    "date_local_pt": "2026-06-17T18:00:00+01:00",
+    "opponent": "RD Congo",
+    "venue": "NRG Stadium, Houston, TX",
+    "kickoff_local_pt": "18h00"
+  },
+  "days_to_opening": 13
+}
