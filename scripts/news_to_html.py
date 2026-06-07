@@ -439,14 +439,3 @@ footer{{border-top:1px solid #222;padding:2rem;text-align:center;font-size:0.85r
 if __name__ == "__main__":
     sys.exit(main())
 # end of file
-
-"__main__":
-    sys.exit(main())
- non officiel. <a href="/world-cup/" style="color:#aaa">CDM 2026</a></p></footer>
-</body>
-</html>
-"""
-
-
-if __name__ == "__main__":
-    sys.exit(main())
