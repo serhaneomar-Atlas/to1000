@@ -75,13 +75,7 @@ jobs:
             echo "::notice::news.json unchanged — skipping commit and deploy"
           else
             echo "changed=true" >> $GITHUB_OUTPUT
-            # Show a short diff snippet for the action log
-            python -c "
-            import json
-            d = json.load(open('public/news.json'))
-            s = d.get('stats', {})
-            print(f'Generated {s.get(\"published\",0)} items ({s.get(\"cr7_count\",0)} CR7) from {s.get(\"feeds_fetched\",0)} feeds')
-            "
+            echo "::notice::news.json changed — will commit and deploy"
           fi
 
       - name: Commit and push news.json + translation cache
