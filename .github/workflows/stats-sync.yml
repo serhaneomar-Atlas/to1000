@@ -42,22 +42,42 @@ jobs:
       - name: Sync stats from ESPN
         run: python scripts/update_stats_v2.py
 
+      - name: Sync hardcoded counts in HTML (meta, JSON-LD, i18n, spans)
+        run: python scripts/update_html_counts.py
+
       - name: Regenerate sitemap (in case news changed too)
         run: python scripts/sitemap_generator.py
 
       - name: Detect change & commit
+        id: diff
         run: |
           NEW_HASH=$(sha256sum public/stats.json | cut -d' ' -f1)
           if [ "${{ steps.pre.outputs.hash }}" = "$NEW_HASH" ]; then
+            echo "changed=false" >> $GITHUB_OUTPUT
             echo "::notice::stats.json unchanged — skipping commit"
             exit 0
           fi
+          echo "changed=true" >> $GITHUB_OUTPUT
           git config user.name "to1000-stats-bot"
           git config user.email "to1000-stats-bot@users.noreply.github.com"
-          git add public/stats.json public/sitemap.xml public/index.html public/goals.html 2>/dev/null || true
+          git add public/stats.json public/sitemap.xml public/index.html public/goals.html public/blog/ 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "::notice::No staged changes"
           else
             git commit -m "chore(stats): daily CR7 sync [$(date -u +%Y-%m-%dT%H:%M)Z]"
             git push
           fi
+
+      # Deploy to Cloudflare Pages — only when stats changed AND the token is set.
+      # If the repo is connected to Cloudflare Pages via Git integration, the push
+      # above already triggers a deploy and this step is a cheap no-op.
+      - name: Deploy to Cloudflare Pages
+        if: steps.diff.outputs.changed == 'true' && env.CLOUDFLARE_API_TOKEN != ''
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npx wrangler@latest pages deploy public/ \
+            --project-name to1000 \
+            --branch main \
+            --commit-dirty=true
