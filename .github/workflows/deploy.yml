@@ -1,0 +1,54 @@
+name: Deploy to Cloudflare Pages (on push)
+
+# Why: any code/content push to main (e.g. a fix committed from a dev machine
+# or an agent) should reach production WITHOUT a manual `wrangler` run.
+# Data bots (news-sync / stats-sync / update-cr7-goals) already deploy themselves
+# right after they push, so we skip their commits here to avoid a redundant
+# double-deploy. This workflow exists for human/code commits.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'public/**'
+  workflow_dispatch:   # allow manual "Deploy now" from the Actions tab
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true   # if two pushes land, only deploy the latest
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    # Skip commits authored by the data bots — they deploy themselves.
+    if: >-
+      github.actor != 'to1000-news-bot' &&
+      github.actor != 'to1000-stats-bot' &&
+      !contains(github.event.head_commit.message, 'chore(news)') &&
+      !contains(github.event.head_commit.message, 'chore(stats)') &&
+      !contains(github.event.head_commit.message, 'auto-update')
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Deploy to Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "::error::CLOUDFLARE_API_TOKEN secret is not set — cannot deploy."
+            echo "Add it under: repo Settings -> Secrets and variables -> Actions."
+            exit 1
+          fi
+          npx wrangler@latest pages deploy public/ \
+            --project-name to1000 \
+            --branch main \
+            --commit-dirty=true
