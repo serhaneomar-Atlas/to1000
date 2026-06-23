@@ -25,12 +25,13 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 8
     # Skip commits authored by the data bots — they deploy themselves.
+    # Skip ONLY when the push actor is a data bot (they deploy themselves).
+    # We deliberately do NOT filter on commit messages: merge commits and mixed
+    # pushes were silently skipping real code deploys. A redundant deploy is
+    # cheap; a missed one is not.
     if: >-
       github.actor != 'to1000-news-bot' &&
-      github.actor != 'to1000-stats-bot' &&
-      !contains(github.event.head_commit.message, 'chore(news)') &&
-      !contains(github.event.head_commit.message, 'chore(stats)') &&
-      !contains(github.event.head_commit.message, 'auto-update')
+      github.actor != 'to1000-stats-bot'
 
     steps:
       - name: Checkout repository
