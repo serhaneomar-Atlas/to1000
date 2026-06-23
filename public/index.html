@@ -1569,6 +1569,8 @@
       transition: color 0.3s;
     }
     .mobile-nav a:hover { color: var(--gold); }
+    .lang-switcher-mobile { margin-left: 0; margin-top: 0.5rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); justify-content: center; gap: 8px; }
+    .lang-switcher-mobile .lang-btn { font-size: 0.85rem; padding: 6px 12px; }
 
     /* ===== FOOTER ===== */
     footer {
@@ -2302,6 +2304,12 @@
     <a href="./news/" data-i18n="nav_news">⚡ News</a>
     <a href="./blog/" data-i18n="nav_blog">📰 Blog</a>
     <a href="./goals.html" class="nav-goals-btn-mobile"><span data-i18n="nav_all_goals">🎬 975 Goals · Watch Each One</span> →</a>
+    <div class="lang-switcher lang-switcher-mobile">
+      <button class="lang-btn active" data-lang="en" onclick="setLang('en')">🇬🇧 EN</button>
+      <button class="lang-btn" data-lang="fr" onclick="setLang('fr')">🇫🇷 FR</button>
+      <button class="lang-btn" data-lang="es" onclick="setLang('es')">🇪🇸 ES</button>
+      <button class="lang-btn" data-lang="ar" onclick="setLang('ar')">AR عربي</button>
+    </div>
   </div>
 
   <!-- HERO -->
