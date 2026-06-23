@@ -58,13 +58,14 @@ Les 3 fichiers de relai (committés dans git) :
 
 ## 5. ❓ Décisions / actions en attente d'Omar
 
+- [ ] 🔴 **BOMBE DEPLOY — `_engage.js` absent du repo.** Prod sert `/_engage.js` (~200 Ko, contient `setLang` + i18n/engagement) mais le fichier n'est **ni dans `public/` ni dans git**. Un redeploy depuis le repo **casserait le sélecteur de langue + RTL de l'accueil**. → récupérer le fichier depuis prod et le committer AVANT tout `deploy_now.bat`. Détails `DESIGN_AUDIT.md` §2bis. — *ajouté 2026-06-23, Claude Code*
 - [ ] **Déployer le but live #975** : `to1000\scripts\deploy_now.bat` (stats.json + news.json + _headers CORS mis à jour en local, pas encore en prod). — *maj 2026-06-23 18:11*
 - [ ] **Confirmer le 2e but du doublé** vs Ouzbékistan (minute + passeur) pour le créditer précisément. — *ajouté 2026-06-23*
 - [ ] **Choisir la direction visuelle** : **A** (`design/mockups/direction-A-evolution.html`, évolution or/noir) vs **B** (`direction-B-rupture.html`, rupture scoreboard) vs **hybride**. Détails dans `DESIGN_AUDIT.md` §10-12. — *prêt 2026-06-23, Claude Code*
 - [ ] Trancher : on **garde ou supprime le code Next.js parallèle** (`app/`, `components/`, `lib/`) non déployé ? (reco Claude Code : supprimer si on reste en statique pur)
 - [ ] **Canvas particules** : garder l'effet (coût perf mobile) ou alléger en fond CSS ?
 - [ ] Supprimer `public/to1000-preview.html` (3492 l., mort probable) + fichiers parasites (`__persist_test.txt`, `_mount_probe.txt`, `_mtest.txt`, `news_before_*.json`) servis publiquement ?
-- [ ] **Feu vert pour installer les skills** recommandés (GSAP / Vercel web-design-guidelines / theme-factory / claude-seo) — voir `DESIGN_AUDIT.md` §11 + alerte sécurité Snyk. Install = action Omar (accès + risque supply-chain).
+- [ ] **Feu vert pour installer 3 skills first-party** (GSAP / Vercel web-design-guidelines / theme-factory) via `/plugin` — voir `DESIGN_AUDIT.md` §11. claude-seo **retiré** (profil Snyk + redondant). Install = action Omar.
 
 ---
 
