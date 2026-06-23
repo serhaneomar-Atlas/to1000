@@ -50,6 +50,20 @@
 
 ---
 
+## 2bis. Bugs & intégrité repo (vérifiés en prod, pas seulement dans le code)
+
+> ⚠️ Un agent avait conclu « sélecteur de langue mort en prod ». **Vérification : faux.** La réalité est plus subtile (et plus dangereuse pour le déploiement). Faits confirmés :
+
+1. **`_engage.js` est ABSENT du repo (CRITIQUE — intégrité).** Prod sert `/_engage.js` (HTTP 200, **~200 Ko**, contient `setLang` + la logique i18n/engagement). Mais ce fichier **n'est ni dans `public/` ni suivi par git.** Conséquence : `setLang()` est appelé dans `index.html` (l.2281-2284) sans être défini localement ; **en prod ça marche** grâce à `_engage.js`, mais **un redeploy depuis le repo casserait le sélecteur de langue + tout le RTL de l'accueil.** → Bombe à retardement. **Action : récupérer `_engage.js` depuis prod et le committer** (ou réintégrer proprement sa logique dans la refonte) avant tout redeploy.
+2. **Prod est périmé de 2 buts.** `to1000.com/stats.json` (live) = **973**, alors que le local = **975**. Le déploiement #974/#975 n'a jamais eu lieu (cf. HANDOFF §5). Le site public affiche donc 973. → action Omar : `deploy_now.bat`.
+3. **`973` codé en dur à 7 endroits** d'`index.html` (nav l.2279/2305, hero l.2329, journey l.2403, CTA l.2719/2721, toast l.2973) + dict i18n. Fallback statique périmé ; c'est `_engage.js` (live) qui les réécrit — d'où la dépendance critique au point 1.
+4. **`FAQPage` JSON-LD désormais inerte** : Google a retiré les rich results FAQ pour la plupart des sites (mai 2026). Pas nuisible, mais poids mort → à reconsidérer.
+5. **RTL en propriétés physiques** : ~46 règles `margin-left`/`left`/`float`, zéro propriété logique → fragile. À migrer en `margin-inline`/`inset-inline` dans la refonte.
+
+> **Bon point confirmé** : les pages `news/*.html` ont un excellent structured-data (`NewsArticle` + `ImageObject` + `Organization` + OG/Twitter + hreflang) ; la page arabe `world-cup/maroc/ar/` est correcte (`<html lang="ar" dir="rtl">` + hreflang réciproque). → le skill `claude-seo` serait **redondant** ici (raison de plus de le skipper, cf. §11).
+
+---
+
 ## 3. Performance (analyse du chemin de rendu)
 
 **Points positifs :**
@@ -163,11 +177,12 @@ Registre commun retenu avec Omar : **broadcast premium / live** · hero **hybrid
 
 > Signal majeur de la recherche : étude **Snyk *ToxicSkills* (fév. 2026)** — ~36 % des skills communautaires contiennent des techniques d'injection de prompt, 76 payloads malveillants confirmés en marketplace. **Règle : privilégier le first-party (Anthropic, Vercel, GreenSock) et les skills « instructions seules » ; lire tout `SKILL.md` + scripts `.py`/`.sh`/`install.sh` avant d'activer un skill communautaire. Ne jamais pointer un MCP qui pilote un navigateur vers une URL non fiable.** Décision d'installation = Omar (accès + risque supply-chain).
 
-**À installer (priorité) :**
-1. **GSAP Official AI Skills** (greensock/gsap-skills) — motion/ScrollTrigger pour le compteur et les reveals. Instructions seules, **confiance maximale**, marche en CDN (no build). ✅ idéal pour la stack statique.
-2. **Vercel `web-design-guidelines`** (vercel-labs/agent-skills) — audit a11y/UX (ARIA, focus, contraste, reduced-motion) framework-agnostic. First-party, **risque faible**. (Ignorer les skills `react-*` du même repo.)
-3. **Anthropic `theme-factory`** — le plus proche d'un helper **design-tokens** first-party (palettes + pairings, variante high-contrast). Instructions seules, **risque nul**.
-4. **claude-seo** (AgriciDaniel) — suite SEO (NewsArticle schema, hreflang, OG, sitemap, audit images) **quasi taillée pour le hub news multilingue**. ⚠️ **Medium** : mono-mainteneur, lance Python+Playwright local + `install.sh` → **vetter l'installer, rester sur le tier offline**, MCP externes (DataForSEO/Ahrefs) off.
+**À installer — 3 skills first-party, vérifiés sûrs (via `/plugin`, PAS `npx skills add` qui est un CLI tiers Vercel) :**
+1. **GSAP Official AI Skills** — `/plugin marketplace add greensock/gsap-skills` puis `/plugin`. Motion/ScrollTrigger pour le compteur et les reveals. Instructions seules, **confiance maximale**, CDN (no build). ✅ idéal stack statique.
+2. **Vercel `web-design-guidelines`** — `/plugin marketplace add vercel-labs/agent-skills` puis `/plugin` (sélectionner uniquement `web-design-guidelines`, pas les `react-*`). Audit a11y/UX framework-agnostic. First-party MIT. *Caveat : fetch un ruleset live (URL GitHub Vercel, source fiable mais non pinnée).*
+3. **Anthropic `theme-factory`** — `/plugin marketplace add anthropics/skills` puis `/plugin`. Le plus proche d'un helper **design-tokens** first-party. Instructions seules, **risque nul** (Apache-2.0, audits Snyk/Socket OK).
+
+**❌ Désormais déconseillé — claude-seo** (AgriciDaniel) : après vérif, mono-mainteneur, `install.sh` lance `pip install`, télécharge Chromium en silence et copie hooks/scripts dans `~/.claude/` ; réputation tracée au blog de l'auteur (pas de revue indépendante) = profil exact flaggé par Snyk. **Et** redondant : le SEO `NewsArticle`/hreflang du site est déjà excellent (cf. §2bis). Le risque n'achète plus rien → **skip**.
 
 **À utiliser en code direct (pas de MCP) :**
 - **sharp** (npm) pour les images : le site **ship déjà du WebP** (vérifié par l'agent), donc le gain restant = **générer l'AVIF** (hero/era/banner) + **les WebP manquants** (`cr7-alnassr.jpg`, `cr7-alnassr-alt.jpg`). Script one-off ; ⚠️ ajoute `sharp` en dép. dev (la prod n'a pas de build).
