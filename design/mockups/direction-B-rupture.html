@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Direction B — Rupture · to1000.com (maquette hero)</title>
+<!--
+  MAQUETTE / EXPLORATION — Phase 1 AUDIT (DESIGN_BRIEF §4). NON déployée.
+  Direction B = "Rupture" : nouvelle identité. On quitte l'or/noir pour une
+  identité BROADCAST / SCOREBOARD nocturne : encre profonde + platine + accent
+  rouge "signal". Le compteur est un tableau d'affichage LED. Hero HYBRIDE :
+  scoreboard dominant + CR7 en panneau duotone maîtrisé.
+  Valeurs codées en dur (975/25) = snapshot ; le vrai site lit stats.json.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700;800&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --ink:#0a0d12;
+    --ink-2:#0f141b;
+    --panel:#12181f;
+    --platinum:#eef2f5;
+    --silver:#aab4bd;
+    --muted:#6b7681;
+    --signal:#ff2e4c;       /* rouge broadcast — accent "signal" */
+    --signal-2:#ff6178;
+    --line:rgba(255,255,255,.09);
+    --led:#ff3b58;
+  }
+  html{scroll-behavior:smooth}
+  body{font-family:'Hanken Grotesk',system-ui,sans-serif;background:var(--ink);color:var(--platinum);
+    min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+  ::selection{background:rgba(255,46,76,.35)}
+
+  .stage{position:relative;min-height:100vh;display:flex;flex-direction:column;overflow:hidden}
+  /* floodlight + scanlines */
+  .stage::before{content:"";position:absolute;inset:0;z-index:0;
+    background:
+      radial-gradient(80% 60% at 50% -10%, rgba(255,46,76,.16), transparent 55%),
+      radial-gradient(70% 50% at 85% 110%, rgba(80,120,255,.07), transparent 60%),
+      linear-gradient(180deg,#0a0d12,#0c1118 60%,#0a0e14)}
+  .scan{position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.5;
+    background:repeating-linear-gradient(0deg,rgba(255,255,255,.025) 0 1px,transparent 1px 3px)}
+
+  /* diagonal accent */
+  .slash{position:absolute;top:0;bottom:0;left:58%;width:2px;z-index:1;transform:skewX(-12deg);
+    background:linear-gradient(180deg,transparent,rgba(255,46,76,.5),transparent);opacity:.6}
+
+  nav{position:relative;z-index:5;display:flex;align-items:center;justify-content:space-between;
+    padding:1.25rem clamp(1.2rem,4vw,3rem)}
+  .brand{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.4rem;letter-spacing:-.02em}
+  .brand b{color:var(--signal)}
+  .nav-r{display:flex;align-items:center;gap:1.5rem}
+  .nav-links{display:flex;gap:1.4rem}
+  .nav-links a{color:var(--silver);text-decoration:none;font-size:.74rem;letter-spacing:.16em;
+    text-transform:uppercase;font-weight:600;transition:.2s}
+  .nav-links a:hover{color:var(--signal)}
+  .langs{display:flex;gap:.15rem}
+  .langs button{background:transparent;border:1px solid var(--line);color:var(--silver);
+    font:600 .68rem/1 'Hanken Grotesk';padding:.3rem .5rem;border-radius:5px;cursor:pointer}
+  .langs button.on{color:var(--signal);border-color:var(--signal);background:rgba(255,46,76,.12)}
+
+  .hero{position:relative;z-index:5;flex:1;display:grid;grid-template-columns:1.3fr .7fr;
+    gap:clamp(1.4rem,4vw,3rem);align-items:center;
+    padding:clamp(.6rem,2vw,1.4rem) clamp(1.2rem,4vw,3rem) 0;max-width:1320px;margin:0 auto;width:100%}
+
+  .tagrow{display:flex;align-items:center;gap:.8rem;opacity:0;animation:up .7s .1s forwards}
+  .onair{display:inline-flex;align-items:center;gap:.5rem;background:var(--signal);color:#fff;
+    font:800 .66rem/1 'Hanken Grotesk';letter-spacing:.2em;text-transform:uppercase;padding:.4rem .7rem;border-radius:4px}
+  .onair .dot{width:7px;height:7px;border-radius:50%;background:#fff;animation:blink 1.4s steps(1) infinite}
+  .tagrow .lbl{font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--muted);font-weight:600}
+
+  .head{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;letter-spacing:-.025em;
+    font-size:clamp(2rem,5vw,3.5rem);line-height:.98;margin-top:1.1rem;opacity:0;animation:up .8s .2s forwards}
+  .head em{font-style:normal;color:var(--signal)}
+
+  /* ===== SCOREBOARD LED ===== */
+  .board{margin-top:1.7rem;opacity:0;animation:up .9s .3s forwards}
+  .board-top{display:flex;align-items:center;gap:.6rem;margin-bottom:.7rem}
+  .board-top span{font:600 .68rem/1 'Hanken Grotesk';letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+  .board-top hr{flex:1;border:0;border-top:1px solid var(--line)}
+  .digits{display:flex;gap:.5rem;align-items:stretch}
+  .cell{position:relative;background:linear-gradient(180deg,#11161d,#0b0f14);border:1px solid var(--line);
+    border-radius:12px;min-width:clamp(58px,11vw,108px);padding:clamp(.4rem,1.5vw,1rem) 0;text-align:center;
+    box-shadow:0 14px 40px rgba(0,0,0,.5),0 0 0 1px rgba(255,255,255,.02) inset}
+  .cell .d{font-family:'DM Mono',monospace;font-weight:500;font-variant-numeric:tabular-nums;
+    font-size:clamp(3rem,9vw,6.4rem);line-height:1;color:var(--led);
+    text-shadow:0 0 22px rgba(255,59,88,.55),0 0 4px rgba(255,59,88,.9)}
+  .cell::before{content:"";position:absolute;left:8px;right:8px;top:50%;height:1px;background:rgba(0,0,0,.55);z-index:2}
+  .of-cell{display:flex;flex-direction:column;justify-content:center;padding:0 .3rem}
+  .of-cell .slash2{font-family:'Bricolage Grotesque';font-weight:800;font-size:clamp(2rem,5vw,3.4rem);color:var(--muted)}
+  .of-cell .tgt{font-family:'DM Mono',monospace;font-size:clamp(1.4rem,3.4vw,2.2rem);color:var(--silver)}
+  .of-cell .lab{font:600 .6rem/1 'Hanken Grotesk';letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:.3rem}
+
+  .readout{display:flex;flex-wrap:wrap;gap:1.6rem;margin-top:1.4rem;opacity:0;animation:up .9s .45s forwards}
+  .stat .n{font-family:'Bricolage Grotesque';font-weight:800;font-size:1.7rem;color:var(--platinum);font-variant-numeric:tabular-nums}
+  .stat .n.sig{color:var(--signal)}
+  .stat .l{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:.15rem}
+
+  /* records ticker */
+  .ticker{margin-top:1.5rem;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    padding:.55rem 0;opacity:0;animation:up .9s .55s forwards;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+    mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+  .ticker ul{display:flex;gap:2.2rem;white-space:nowrap;animation:slide 22s linear infinite;list-style:none}
+  .ticker li{font-size:.78rem;letter-spacing:.08em;color:var(--silver);display:flex;align-items:center;gap:.55rem}
+  .ticker li::before{content:"●";color:var(--signal);font-size:.5rem}
+  @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* — CR7 panneau duotone — */
+  .figure{position:relative;border-radius:18px;overflow:hidden;align-self:stretch;min-height:460px;
+    border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.6);opacity:0;animation:up 1s .35s forwards}
+  .figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;
+    filter:grayscale(1) contrast(1.15) brightness(.85)}
+  .figure::after{content:"";position:absolute;inset:0;mix-blend-mode:multiply;
+    background:linear-gradient(180deg,rgba(255,46,76,.0) 30%,rgba(255,46,76,.55) 100%)}
+  .figure::before{content:"";position:absolute;inset:0;z-index:2;
+    background:linear-gradient(180deg,transparent 45%,rgba(10,13,18,.9))}
+  .fig-cap{position:absolute;left:1.2rem;right:1.2rem;bottom:1.1rem;z-index:3}
+  .fig-cap .nm{font-family:'Bricolage Grotesque';font-weight:800;font-size:1.4rem;letter-spacing:-.02em}
+  .fig-cap .sub{font-size:.72rem;color:var(--silver);letter-spacing:.05em;margin-top:.2rem}
+
+  /* next match */
+  .next{position:relative;z-index:5;max-width:1320px;margin:1.4rem auto 0;width:100%;
+    padding:0 clamp(1.2rem,4vw,3rem) clamp(1.3rem,4vw,2.2rem)}
+  .next-in{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;border:1px solid var(--line);border-radius:12px;
+    padding:.8rem 1.1rem;background:var(--ink-2);opacity:0;animation:up .9s .65s forwards}
+  .next-tag{font:800 .64rem/1 'Hanken Grotesk';letter-spacing:.2em;text-transform:uppercase;color:var(--signal);
+    border-right:1px solid var(--line);padding-right:1rem}
+  .next-teams{font-family:'Bricolage Grotesque';font-weight:800;font-size:1.05rem;letter-spacing:-.01em}
+  .next-meta{margin-left:auto;font-family:'DM Mono',monospace;font-size:.8rem;color:var(--silver)}
+  .next-meta b{color:var(--platinum)}
+
+  @keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+  @keyframes blink{50%{opacity:.25}}
+
+  @media (max-width:880px){
+    .nav-links{display:none}.slash{display:none}
+    .hero{grid-template-columns:1fr}
+    .figure{min-height:260px;order:-1}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+  <div class="stage">
+    <div class="scan"></div>
+    <div class="slash"></div>
+
+    <nav>
+      <div class="brand">to<b>1000</b></div>
+      <div class="nav-r">
+        <div class="nav-links"><a href="#">Live</a><a href="#">Goals</a><a href="#">News</a><a href="#">Predict</a></div>
+        <div class="langs"><button class="on">EN</button><button>FR</button><button>ES</button><button>AR</button></div>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-l">
+        <div class="tagrow">
+          <span class="onair"><span class="dot"></span> On air</span>
+          <span class="lbl">Cristiano Ronaldo · live goal count</span>
+        </div>
+
+        <h1 class="head">The first <em>1000</em><br>goals in football.</h1>
+
+        <div class="board">
+          <div class="board-top"><span>Career goals</span><hr></div>
+          <div class="digits">
+            <div class="cell"><span class="d">9</span></div>
+            <div class="cell"><span class="d">7</span></div>
+            <div class="cell"><span class="d">5</span></div>
+            <div class="of-cell">
+              <span class="slash2">/</span>
+              <span class="tgt">1000</span>
+              <span class="lab">target</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="readout">
+          <div class="stat"><div class="n sig">25</div><div class="l">Goals to go</div></div>
+          <div class="stat"><div class="n">27</div><div class="l">This season</div></div>
+          <div class="stat"><div class="n">1.03</div><div class="l">Goals / 90</div></div>
+          <div class="stat"><div class="n">97.5<span style="font-size:.6em">%</span></div><div class="l">To 1000</div></div>
+        </div>
+
+        <div class="ticker">
+          <ul>
+            <li>All-time top scorer</li><li>5× Ballon d'Or</li><li>5× Champions League</li>
+            <li>Euro 2016</li><li>5× European Golden Shoe</li><li>Most international goals</li>
+            <li>All-time top scorer</li><li>5× Ballon d'Or</li><li>5× Champions League</li>
+            <li>Euro 2016</li><li>5× European Golden Shoe</li><li>Most international goals</li>
+          </ul>
+        </div>
+      </div>
+
+      <figure class="figure">
+        <img src="../../public/images/cr7-hero-banner.jpg" alt="Cristiano Ronaldo">
+        <figcaption class="fig-cap">
+          <div class="nm">CR7</div>
+          <div class="sub">Sporting · United · Real · Juventus · Al Nassr · Portugal</div>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="next">
+      <div class="next-in">
+        <span class="next-tag">Next ▸</span>
+        <span class="next-teams">Portugal&nbsp;<span style="color:var(--muted)">v</span>&nbsp;Uzbekistan</span>
+        <span class="next-meta">FIFA World Cup · NRG Stadium · <b>17:00</b></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
