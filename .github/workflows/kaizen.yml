@@ -1,0 +1,78 @@
+name: Kaizen audit (weekly, read-only)
+
+# Why: continuous improvement loop. Probes the LIVE site, measures objective
+# metrics (data freshness, counter coherence, SEO, perf, broken pages), writes
+# KAIZEN.md + a dated archive, and opens a GitHub issue with the summary.
+# It NEVER edits or deploys the site — it PROPOSES. Omar reviews the issue.
+
+on:
+  schedule:
+    - cron: "0 7 * * 1"   # Monday 07:00 UTC
+  workflow_dispatch:        # run on demand from the Actions tab
+
+permissions:
+  contents: write          # to commit KAIZEN.md + audit_logs/
+  issues: write            # to open the weekly audit issue
+
+concurrency:
+  group: kaizen
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run kaizen audit (read-only)
+        run: python scripts/kaizen_audit.py
+
+      - name: Commit report
+        run: |
+          git config user.name "to1000-kaizen-bot"
+          git config user.email "to1000-kaizen-bot@users.noreply.github.com"
+          git add KAIZEN.md scripts/audit_logs/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "::notice::No change in report"
+          else
+            git commit -m "chore(kaizen): weekly audit [$(date -u +%Y-%m-%d)]"
+            git push
+          fi
+
+      - name: Build issue body
+        id: body
+        run: |
+          {
+            echo 'summary<<KAIZEN_EOF'
+            python scripts/kaizen_audit.py --summary
+            echo ''
+            echo '---'
+            echo 'Rapport complet: [`KAIZEN.md`](../blob/main/KAIZEN.md). Audit read-only — aucune modif appliquée.'
+            echo 'KAIZEN_EOF'
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Open weekly issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const today = new Date().toISOString().slice(0,10);
+            const body = process.env.SUMMARY;
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🔧 Kaizen audit — ${today}`,
+              body,
+              labels: ['kaizen']
+            });
+        env:
+          SUMMARY: ${{ steps.body.outputs.summary }}
