@@ -1,16 +1,60 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  Headers de sécurité globaux (appliqués à toutes les pages)
+# ─────────────────────────────────────────────────────────────────────────────
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  X-XSS-Protection: 1; mode=block
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  Content-Security-Policy : ne bloque que les sources non-attendues.
+#  GA4 + GTM autorisés, Firebase (contest) autorisé, fonts Google autorisés,
+#  YouTube embeds autorisés (pour les videos buts).
+# ─────────────────────────────────────────────────────────────────────────────
+/*.html
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://*.gstatic.com https://*.firebaseio.com https://*.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; media-src 'self' https://www.youtube.com https://*.ytimg.com; connect-src 'self' https://www.google-analytics.com https://*.googleapis.com https://*.firebaseio.com https://firestore.googleapis.com wss://*.firebaseio.com; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; form-action 'self'
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  Cache : stats.json doit toujours etre frais
+# ─────────────────────────────────────────────────────────────────────────────
 /stats.json
   Cache-Control: no-cache, no-store, must-revalidate
   Pragma: no-cache
   Expires: 0
+  Access-Control-Allow-Origin: *
+
+/news.json
+  Cache-Control: no-cache, no-store, must-revalidate
+  Access-Control-Allow-Origin: *
+
+/goals-data.json
+  Cache-Control: public, max-age=300
+  Access-Control-Allow-Origin: *
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  Cache : HTML pages
+# ─────────────────────────────────────────────────────────────────────────────
+/index.html
+  Cache-Control: public, max-age=3600
 
 /goals.html
   Cache-Control: public, max-age=3600
 
-/index.html
-  Cache-Control: public, max-age=3600
+/blog/*.html
+  Cache-Control: public, max-age=7200
 
+# ─────────────────────────────────────────────────────────────────────────────
+#  Cache : assets statiques (long term)
+# ─────────────────────────────────────────────────────────────────────────────
 /images/*
   Cache-Control: public, max-age=2592000, immutable
+
+/images/*.avif
+  Cache-Control: public, max-age=2592000, immutable
+  Vary: Accept
 
 /images/*.webp
   Cache-Control: public, max-age=2592000, immutable
@@ -24,3 +68,14 @@
 
 /*.js
   Cache-Control: public, max-age=2592000, immutable
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  Admin : pas de cache + pas d'indexation
+# ─────────────────────────────────────────────────────────────────────────────
+/admin.html
+  Cache-Control: no-cache, no-store, must-revalidate
+  X-Robots-Tag: noindex, nofollow
+
+/admin/*
+  Cache-Control: no-cache, no-store, must-revalidate
+  X-Robots-Tag: noindex, nofollow
