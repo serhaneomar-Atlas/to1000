@@ -116,6 +116,40 @@ def build_patterns(goals, remaining, month, year):
         # Date "As of"
         (re.compile(r"As of (January|February|March|April|May|June|July|August|September|October|November|December) 2026"),
             f"As of {me} {year}", "as-of-en"),
+
+        # ── goals.html (database page) ──────────────────────────────────────
+        # NOTE: ne PAS toucher aux references "964 ... compilation" — elles
+        # decrivent une video YouTube externe figee a 964 buts, pas le total.
+        (re.compile(r"All \d{3,4} Goals — Complete Career Goal Database"),
+            f"All {g} Goals — Complete Career Goal Database", "goals-title"),
+        (re.compile(r"career goal \(\d{3,4} total\)"),
+            f"career goal ({g} total)", "goals-meta-total"),
+        (re.compile(r"All \d{3,4} CR7 Goals — Watch Every Single One"),
+            f"All {g} CR7 Goals — Watch Every Single One", "goals-og-title"),
+        (re.compile(r"Full stats for all \d{3,4} goals\."),
+            f"Full stats for all {g} goals.", "goals-og-desc"),
+        (re.compile(r"Complete database of all \d{3,4} career goals scored by"),
+            f"Complete database of all {g} career goals scored by", "goals-jsonld"),
+        # hero_p / loading_text dans les 4 langues (texte visible + bundles i18n)
+        (re.compile(r"Ronaldo's \d{3,4} career goals"),
+            f"Ronaldo's {g} career goals", "goals-hero-en"),
+        (re.compile(r"Loading \d{3,4} goals…"),
+            f"Loading {g} goals…", "goals-loading-en"),
+        (re.compile(r"des \d{3,4} buts de la carrière"),
+            f"des {g} buts de la carrière", "goals-hero-fr"),
+        (re.compile(r"Chargement des \d{3,4} buts…"),
+            f"Chargement des {g} buts…", "goals-loading-fr"),
+        (re.compile(r"de los \d{3,4} goles de la carrera"),
+            f"de los {g} goles de la carrera", "goals-hero-es"),
+        (re.compile(r"Cargando \d{3,4} goles…"),
+            f"Cargando {g} goles…", "goals-loading-es"),
+        (re.compile(r"السجل الكامل لـ \d{3,4} هدفاً"),
+            f"السجل الكامل لـ {g} هدفاً", "goals-hero-ar"),
+        (re.compile(r"جارٍ تحميل \d{3,4} هدفاً…"),
+            f"جارٍ تحميل {g} هدفاً…", "goals-loading-ar"),
+        # variable JS injectee dans la page database
+        (re.compile(r"const LIVE_GOALS\s*=\s*\d{3,4}"),
+            f"const LIVE_GOALS = {g}", "goals-live-var"),
     ]
 
 
@@ -172,7 +206,7 @@ def main():
 
     patterns = build_patterns(goals, remaining, month, year)
 
-    targets = [PUBLIC_DIR / "index.html"]
+    targets = [PUBLIC_DIR / "index.html", PUBLIC_DIR / "goals.html"]
     blog_dir = PUBLIC_DIR / "blog"
     if blog_dir.exists():
         targets.extend(sorted(blog_dir.glob("*.html")))
