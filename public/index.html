@@ -16,7 +16,7 @@
   <meta name="keywords" content="Cristiano Ronaldo 1000 goals, CR7 goal tracker, Ronaldo road to 1000, Ronaldo goal countdown, CR7 career goals, Ronaldo total goals, how many goals has Ronaldo scored, when will Ronaldo score 1000, Ronaldo goal counter, CR7 stats, Ronaldo all time goals, Ronaldo vs Messi goals, CR7 1000th goal, Ronaldo World Cup 2026 goals">
   <meta name="author" content="To1000.com">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#060606">
+  <meta name="theme-color" content="#0B1A2E">
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Cristiano Ronaldo Goal Tracker — 973/1000 Goals | Live Countdown">
@@ -239,7 +239,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,500;8..30,600;8..30,700;8..30,900&family=Archivo:wght@300;400;500;600;700;800;900&family=DM+Mono:wght@400;500&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -258,20 +258,34 @@
     }
 
     :root {
-      --gold: #D4AF37;
-      --gold-dark: #B8941E;
-      --gold-light: #E8C84A;
-      --gold-pale: #F5E6B8;
-      --bg: #060606;
-      --bg-card: #0D0D0D;
-      --white: #F0F0F0;
+      /* — Brass patiné (remplace l'or brillant générique) — */
+      --gold: #B08D4F;
+      --gold-dark: #8A6D38;
+      --gold-light: #CDAE74;
+      --gold-pale: #E6D6AE;
+      /* — Cobalt azulejo (couleur structurelle primaire) — */
+      --cobalt: #1B4D8C;
+      --cobalt-light: #3D6FB5;
+      --cobalt-glow: #5C8FD6;
+      /* — Vert-vin / grenat (accent émotionnel) — */
+      --vin: #6B2030;
+      --vin-light: #9A3346;
+      /* — Nocturne (hub news, bas de page) — */
+      --bg: #0B1A2E;
+      --bg-card: #102A45;
+      --white: #E9F0F6;
+      /* — Céramique (hero / zone légende) — base FROIDE bleutée, pas crème chaude — */
+      --ceramic: #E6EBED;
+      --ceramic-deep: #D4DCDF;
+      --ceramic-ink: #0B1A2E;
+      --ceramic-line: #B8C6CC;
       color-scheme: dark;
     }
 
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'Inter', -apple-system, sans-serif;
+      font-family: 'Archivo', -apple-system, sans-serif;
       background: var(--bg);
       color: var(--white);
       min-height: 100vh;
@@ -279,10 +293,10 @@
       overflow-x: hidden;
     }
 
-    ::selection { background: rgba(212,175,55,0.3); color: white; }
+    ::selection { background: rgba(176,141,79,0.3); color: white; }
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: transparent; }
-    ::-webkit-scrollbar-thumb { background: rgba(212,175,55,0.2); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb { background: rgba(176,141,79,0.2); border-radius: 3px; }
 
     /* ===== PARTICLE CANVAS ===== */
     #particles {
@@ -306,7 +320,7 @@
       background: linear-gradient(180deg, rgba(6,6,6,0.82) 0%, rgba(6,6,6,0.62) 100%);
       backdrop-filter: blur(22px) saturate(1.2);
       -webkit-backdrop-filter: blur(22px) saturate(1.2);
-      border-bottom: 1px solid rgba(212,175,55,0.1);
+      border-bottom: 1px solid rgba(176,141,79,0.1);
       box-shadow: 0 1px 0 rgba(255,255,255,0.03) inset;
       transition: background 0.3s, border-color 0.3s, box-shadow 0.3s;
     }
@@ -318,7 +332,7 @@
       text-decoration: none;
       transition: text-shadow 0.3s;
     }
-    .nav-logo:hover { text-shadow: 0 0 18px rgba(212,175,55,0.5); }
+    .nav-logo:hover { text-shadow: 0 0 18px rgba(176,141,79,0.5); }
     .nav-logo span { color: white; }
     .nav-links { display: flex; gap: 2rem; align-items: center; }
     .nav-links a {
@@ -353,11 +367,11 @@
       font-weight: 700;
       font-size: 0.85rem;
       letter-spacing: 0.02em;
-      box-shadow: 0 2px 14px rgba(212,175,55,0.22), inset 0 1px 0 rgba(255,255,255,0.35);
+      box-shadow: 0 2px 14px rgba(176,141,79,0.22), inset 0 1px 0 rgba(255,255,255,0.35);
       transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
       white-space: nowrap;
     }
-    .nav-goals-btn:hover { filter: brightness(1.08); transform: translateY(-1px) scale(1.04); box-shadow: 0 6px 22px rgba(212,175,55,0.34), inset 0 1px 0 rgba(255,255,255,0.45); }
+    .nav-goals-btn:hover { filter: brightness(1.08); transform: translateY(-1px) scale(1.04); box-shadow: 0 6px 22px rgba(176,141,79,0.34), inset 0 1px 0 rgba(255,255,255,0.45); }
     .nav-goals-btn-mobile {
       background: var(--gold);
       color: #000 !important;
@@ -374,7 +388,7 @@
     .lang-switcher { display:flex; gap:3px; align-items:center; margin-inline-start:8px; padding:3px; border-radius:8px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.06); }
     .lang-btn { background:transparent; border:1px solid transparent; color:rgba(255,255,255,0.45); font-size:0.7rem; font-weight:600; letter-spacing:.03em; padding:3px 8px; border-radius:5px; cursor:pointer; transition:color .2s, background .2s, border-color .2s; }
     .lang-btn:hover { color:rgba(255,255,255,0.85); background:rgba(255,255,255,0.05); }
-    .lang-btn.active { background:rgba(212,175,55,0.16); border-color:rgba(212,175,55,0.55); color:var(--gold-pale); box-shadow:0 0 12px rgba(212,175,55,0.12); }
+    .lang-btn.active { background:rgba(176,141,79,0.16); border-color:rgba(176,141,79,0.55); color:var(--gold-pale); box-shadow:0 0 12px rgba(176,141,79,0.12); }
 
     /* ===== HERO SECTION ===== */
     .hero {
@@ -443,7 +457,7 @@
       left: 50%; top: 50%;
       transform: translate(-50%, -50%);
       width: 700px; height: 500px;
-      background: radial-gradient(ellipse, rgba(212,175,55,0.10) 0%, transparent 65%);
+      background: radial-gradient(ellipse, rgba(176,141,79,0.10) 0%, transparent 65%);
       z-index: 2;
       pointer-events: none;
     }
@@ -454,16 +468,16 @@
       max-width: 660px; width: 90%;
       padding: 2.4rem 3rem 2rem;
       /* Verre dépoli — assez sombre pour lire, assez transparent pour les figures */
-      background: rgba(4, 4, 7, 0.58);
+      background: rgba(9, 20, 35, 0.58);
       backdrop-filter: blur(9px) saturate(1.35);
       -webkit-backdrop-filter: blur(9px) saturate(1.35);
-      border: 1px solid rgba(212,175,55,0.28);
+      border: 1px solid rgba(176,141,79,0.28);
       border-radius: 28px;
       box-shadow:
-        0 0 0 1px rgba(212,175,55,0.08),
+        0 0 0 1px rgba(176,141,79,0.08),
         0 24px 90px rgba(0,0,0,0.62),
         inset 0 1px 0 rgba(255,255,255,0.06),
-        0 0 60px rgba(212,175,55,0.06) inset;
+        0 0 60px rgba(176,141,79,0.06) inset;
     }
     /* Filet doré en haut de la card, façon habillage broadcast */
     .hero-content::after {
@@ -471,7 +485,7 @@
       position: absolute;
       inset-inline: 14%;
       top: 0; height: 1px;
-      background: linear-gradient(to right, transparent, rgba(212,175,55,0.6), transparent);
+      background: linear-gradient(to right, transparent, rgba(176,141,79,0.6), transparent);
       pointer-events: none;
     }
 
@@ -481,7 +495,7 @@
       position: absolute; inset: -1px;
       border-radius: 29px;
       background: transparent;
-      box-shadow: 0 0 50px rgba(212,175,55,0.15);
+      box-shadow: 0 0 50px rgba(176,141,79,0.15);
       z-index: -1;
     }
 
@@ -497,8 +511,8 @@
       display: inline-flex;
       align-items: center;
       gap: 0.55rem;
-      background: linear-gradient(135deg, rgba(212,175,55,0.14), rgba(212,175,55,0.05));
-      border: 1px solid rgba(212,175,55,0.3);
+      background: linear-gradient(135deg, rgba(176,141,79,0.14), rgba(176,141,79,0.05));
+      border: 1px solid rgba(176,141,79,0.3);
       border-radius: 9999px;
       padding: 0.42rem 1.1rem;
       margin-bottom: 1.3rem;
@@ -509,7 +523,7 @@
       width: 6px; height: 6px;
       border-radius: 50%;
       background: var(--gold);
-      box-shadow: 0 0 8px rgba(212,175,55,0.8);
+      box-shadow: 0 0 8px rgba(176,141,79,0.8);
       animation: pulse 2s ease-in-out infinite;
     }
     .hero-badge span {
@@ -521,7 +535,7 @@
     }
 
     .hero h1 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Piazzolla', serif;
       font-size: clamp(2.2rem, 5.5vw, 4.6rem);
       font-weight: 900;
       line-height: 1.04;
@@ -538,7 +552,7 @@
       -webkit-text-fill-color: transparent;
     }
     .hero h1 .thin {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Archivo', sans-serif;
       font-weight: 300;
       font-size: 0.42em;
       color: rgba(255,255,255,0.55);
@@ -570,7 +584,7 @@
       margin-bottom: 1rem;
     }
     .hero-score-current {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Piazzolla', serif;
       font-size: clamp(3.8rem, 9.5vw, 7rem);
       font-weight: 900;
       line-height: 0.92;
@@ -578,11 +592,11 @@
       font-variant-numeric: tabular-nums;
       font-feature-settings: "tnum" 1, "lnum" 1;
       color: var(--gold);
-      background: linear-gradient(177deg, #FBEFC0 0%, var(--gold-light) 32%, var(--gold) 62%, var(--gold-dark) 100%);
+      background: linear-gradient(177deg, #F0E6C8 0%, var(--gold-light) 32%, var(--gold) 62%, var(--gold-dark) 100%);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      filter: drop-shadow(0 0 48px rgba(212,175,55,0.42)) drop-shadow(0 2px 10px rgba(0,0,0,0.45));
+      filter: drop-shadow(0 0 48px rgba(176,141,79,0.42)) drop-shadow(0 2px 10px rgba(0,0,0,0.45));
     }
     .hero-score-sep {
       font-size: clamp(1.5rem, 4vw, 2.8rem);
@@ -610,9 +624,9 @@
     .hero-goal-bar-fill {
       height: 100%;
       width: 96.8%;
-      background: linear-gradient(to right, #B8941E, #D4AF37, #F0D060);
+      background: linear-gradient(to right, #8A6D38, #B08D4F, #D8BE7A);
       border-radius: 3px;
-      box-shadow: 0 0 16px rgba(212,175,55,0.5), 0 0 6px rgba(212,175,55,0.8);
+      box-shadow: 0 0 16px rgba(176,141,79,0.5), 0 0 6px rgba(176,141,79,0.8);
       animation: barGrow 2.2s cubic-bezier(0.25,1,0.5,1) 0.8s both;
       position: relative;
     }
@@ -633,7 +647,7 @@
       background: rgba(255,255,255,0.03);
       border: 1px solid rgba(255,255,255,0.06);
     }
-    .hero-goal-remaining .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 8px rgba(212,175,55,0.7); animation: pulse 2s infinite; }
+    .hero-goal-remaining .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 8px rgba(176,141,79,0.7); animation: pulse 2s infinite; }
     .hero-remain-num { color: var(--gold); font-weight: 900; font-size: 1.6rem; font-variant-numeric: tabular-nums; line-height: 1; }
     .hero-remain-txt { color: rgba(255,255,255,0.5); font-size: 0.9rem; letter-spacing: 0.06em; text-transform: uppercase; }
 
@@ -659,20 +673,20 @@
     .lm-w { color: #4ade80; font-weight: 700; }
     .lm-d { color: #fbbf24; font-weight: 700; }
     .lm-l { color: #f87171; font-weight: 700; }
-    .lm-goal { color: #D4AF37; font-weight: 600; }
-    .lm-link { color: rgba(212,175,55,0.55); text-decoration: none; font-size: 0.78rem; }
-    .lm-link:hover { color: #D4AF37; }
+    .lm-goal { color: #B08D4F; font-weight: 600; }
+    .lm-link { color: rgba(176,141,79,0.55); text-decoration: none; font-size: 0.78rem; }
+    .lm-link:hover { color: #B08D4F; }
 
     /* ===== NEXT MATCH STRIP (standalone, below hero) ===== */
     .nm-strip-outer {
       position: relative; z-index: 5;
-      background: linear-gradient(135deg, rgba(12,10,6,0.98) 0%, rgba(6,5,3,0.99) 100%);
-      border-top: 1px solid rgba(212,175,55,0.14);
-      border-bottom: 1px solid rgba(212,175,55,0.08);
+      background: linear-gradient(135deg, rgba(12,26,44,0.98) 0%, rgba(9,20,35,0.99) 100%);
+      border-top: 1px solid rgba(176,141,79,0.14);
+      border-bottom: 1px solid rgba(176,141,79,0.08);
       padding: 1.8rem 1.5rem 2rem;
       display: flex; flex-direction: column; align-items: center;
       /* Subtle gold shimmer on the strip */
-      box-shadow: 0 -8px 32px rgba(212,175,55,0.07) inset;
+      box-shadow: 0 -8px 32px rgba(176,141,79,0.07) inset;
     }
 
     /* ===== NEXT MATCH CARD ===== */
@@ -691,8 +705,8 @@
     }
     .next-match-card {
       display: inline-flex; align-items: center;
-      background: linear-gradient(135deg, rgba(212,175,55,0.06) 0%, rgba(255,255,255,0.03) 100%);
-      border: 1px solid rgba(212,175,55,0.25);
+      background: linear-gradient(135deg, rgba(176,141,79,0.06) 0%, rgba(255,255,255,0.03) 100%);
+      border: 1px solid rgba(176,141,79,0.25);
       border-radius: 20px;
       padding: 1.1rem 1.8rem;
       gap: 1.6rem;
@@ -700,15 +714,15 @@
       position: relative;
       overflow: hidden;
       transition: border-color 0.3s, box-shadow 0.3s;
-      box-shadow: 0 4px 32px rgba(212,175,55,0.08), inset 0 1px 0 rgba(255,255,255,0.06);
+      box-shadow: 0 4px 32px rgba(176,141,79,0.08), inset 0 1px 0 rgba(255,255,255,0.06);
     }
     .next-match-card::before {
       content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
-      background: linear-gradient(to right, transparent, rgba(212,175,55,0.5), transparent);
+      background: linear-gradient(to right, transparent, rgba(176,141,79,0.5), transparent);
     }
     .next-match-card:hover {
-      border-color: rgba(212,175,55,0.45);
-      box-shadow: 0 8px 40px rgba(212,175,55,0.14), inset 0 1px 0 rgba(255,255,255,0.08);
+      border-color: rgba(176,141,79,0.45);
+      box-shadow: 0 8px 40px rgba(176,141,79,0.14), inset 0 1px 0 rgba(255,255,255,0.08);
     }
     /* Team block */
     .nm-team {
@@ -744,14 +758,14 @@
       display: flex; align-items: center; justify-content: center;
       font-size: 1.05rem; font-weight: 900;
       color: #fff;
-      background: linear-gradient(135deg, rgba(212,175,55,0.4), rgba(90,70,20,0.6));
+      background: linear-gradient(135deg, rgba(176,141,79,0.4), rgba(90,70,20,0.6));
       letter-spacing: 0.03em;
       text-shadow: 0 1px 3px rgba(0,0,0,0.5);
       box-shadow: inset 0 2px 6px rgba(255,255,255,0.2), inset 0 -2px 6px rgba(0,0,0,0.3);
     }
     .nm-team.cr7-team .nm-logo-wrap {
-      border-color: rgba(212,175,55,0.45);
-      box-shadow: 0 0 18px rgba(212,175,55,0.25), 0 2px 12px rgba(0,0,0,0.3);
+      border-color: rgba(176,141,79,0.45);
+      box-shadow: 0 0 18px rgba(176,141,79,0.25), 0 2px 12px rgba(0,0,0,0.3);
     }
     .nm-team-name {
       font-size: 0.75rem; font-weight: 700; color: rgba(255,255,255,0.7);
@@ -759,7 +773,7 @@
       overflow: hidden; text-overflow: ellipsis; text-align: center;
       letter-spacing: 0.02em;
     }
-    .nm-team.cr7-team .nm-team-name { color: #F5D06B; }
+    .nm-team.cr7-team .nm-team-name { color: #D8C089; }
     /* VS block */
     .nm-center { text-align: center; min-width: 80px; }
     .nm-vs {
@@ -767,14 +781,14 @@
       letter-spacing: 0.12em; margin-bottom: 0.4rem; display: block;
     }
     .nm-comp {
-      font-size: 0.6rem; color: rgba(212,175,55,0.5);
+      font-size: 0.6rem; color: rgba(176,141,79,0.5);
       white-space: nowrap; letter-spacing: 0.05em; font-weight: 600;
       text-transform: uppercase;
     }
     /* Right info */
     .nm-info {
       text-align: left;
-      border-left: 1px solid rgba(212,175,55,0.15);
+      border-left: 1px solid rgba(176,141,79,0.15);
       padding-left: 1.4rem;
     }
     .nm-date {
@@ -786,14 +800,14 @@
       white-space: nowrap; margin-bottom: 0.15rem;
     }
     .nm-time-local {
-      font-size: 0.7rem; color: rgba(212,175,55,0.7);
+      font-size: 0.7rem; color: rgba(176,141,79,0.7);
       white-space: nowrap; margin-bottom: 0.5rem; font-weight: 600;
     }
     .nm-kickoff {
       display: inline-flex; align-items: center; gap: 0.4rem;
-      background: rgba(212,175,55,0.15); border: 1px solid rgba(212,175,55,0.35);
+      background: rgba(176,141,79,0.15); border: 1px solid rgba(176,141,79,0.35);
       border-radius: 20px; padding: 0.25rem 0.8rem;
-      font-size: 0.68rem; font-weight: 700; color: #F5D06B;
+      font-size: 0.68rem; font-weight: 700; color: #D8C089;
       white-space: nowrap; letter-spacing: 0.03em;
     }
     .nm-kickoff.live {
@@ -830,7 +844,7 @@
     .nm-empty { color: rgba(255,255,255,0.6); font-size: 0.78rem; padding: 0.5rem 0; }
     @media (max-width: 600px) {
       .next-match-card { flex-direction: column; gap: 1rem; padding: 1.1rem; }
-      .nm-info { border-left: none; border-top: 1px solid rgba(212,175,55,0.12); padding-left: 0; padding-top: 0.9rem; text-align: center; width: 100%; }
+      .nm-info { border-left: none; border-top: 1px solid rgba(176,141,79,0.12); padding-left: 0; padding-top: 0.9rem; text-align: center; width: 100%; }
       .nm-time-local { display: none; }
       .nm-team { min-width: 60px; }
       .nm-logo-wrap { width: 50px; height: 50px; }
@@ -857,7 +871,7 @@
     .scroll-line {
       width: 1px;
       height: 40px;
-      background: linear-gradient(to bottom, rgba(212,175,55,0.4), transparent);
+      background: linear-gradient(to bottom, rgba(176,141,79,0.4), transparent);
       animation: scrollBounce 2s ease-in-out infinite;
     }
 
@@ -867,7 +881,7 @@
       z-index: 1;
       padding: 6rem 1.5rem;
       text-align: center;
-      background: linear-gradient(to bottom, var(--bg), rgba(13,13,13,1));
+      background: linear-gradient(to bottom, var(--bg), rgba(16,42,69,1));
     }
     .progress-ring-wrap {
       position: relative;
@@ -893,7 +907,7 @@
       stroke-dasharray: 691;
       stroke-dashoffset: 691;
       transition: stroke-dashoffset 2.5s ease-out;
-      filter: drop-shadow(0 0 6px rgba(212,175,55,0.3));
+      filter: drop-shadow(0 0 6px rgba(176,141,79,0.3));
     }
     .progress-ring-center {
       position: absolute;
@@ -904,7 +918,7 @@
       justify-content: center;
     }
     .ring-number {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Piazzolla', serif;
       font-size: 3.6rem;
       font-weight: 900;
       color: white;
@@ -940,7 +954,7 @@
     .section-label {
       text-align: center;
       font-size: 0.7rem;
-      color: rgba(212,175,55,0.65);
+      color: rgba(176,141,79,0.65);
       letter-spacing: 0.4em;
       text-transform: uppercase;
       font-weight: 600;
@@ -952,16 +966,16 @@
       display: inline-block;
       width: 26px; height: 1px;
       vertical-align: middle;
-      background: linear-gradient(to right, transparent, rgba(212,175,55,0.5));
+      background: linear-gradient(to right, transparent, rgba(176,141,79,0.5));
       margin: 0 0.7em 0.18em 0;
     }
     .section-label::after {
-      background: linear-gradient(to left, transparent, rgba(212,175,55,0.5));
+      background: linear-gradient(to left, transparent, rgba(176,141,79,0.5));
       margin: 0 0 0.18em 0.7em;
     }
     .section-title {
       text-align: center;
-      font-family: 'Playfair Display', serif;
+      font-family: 'Piazzolla', serif;
       font-size: clamp(2rem, 5vw, 3.2rem);
       font-weight: 800;
       letter-spacing: -0.01em;
@@ -982,7 +996,7 @@
       top: 0;
       bottom: 0;
       width: 1px;
-      background: linear-gradient(to bottom, transparent, rgba(212,175,55,0.3), transparent);
+      background: linear-gradient(to bottom, transparent, rgba(176,141,79,0.3), transparent);
     }
     .tl-item {
       display: flex;
@@ -1021,7 +1035,7 @@
       position: absolute;
       inset: -4px;
       border-radius: 50%;
-      background: rgba(212,175,55,0.15);
+      background: rgba(176,141,79,0.15);
     }
 
     .tl-card {
@@ -1037,8 +1051,8 @@
     }
     .tl-card:hover {
       transform: translateY(-4px) scale(1.02);
-      border-color: rgba(212,175,55,0.25);
-      box-shadow: 0 20px 56px rgba(0,0,0,0.62), 0 0 30px rgba(212,175,55,0.06);
+      border-color: rgba(176,141,79,0.25);
+      box-shadow: 0 20px 56px rgba(0,0,0,0.62), 0 0 30px rgba(176,141,79,0.06);
     }
     @keyframes kenBurns { from { transform: scale(1); } to { transform: scale(1.08); } }
     .art-photo {
@@ -1093,13 +1107,13 @@
 
     .tl-year {
       font-size: 0.7rem;
-      color: rgba(212,175,55,0.5);
+      color: rgba(176,141,79,0.5);
       letter-spacing: 0.1em;
       font-weight: 500;
       margin-bottom: 0.3rem;
     }
     .tl-name {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Piazzolla', serif;
       font-size: 1.4rem;
       font-weight: 800;
       color: white;
@@ -1147,16 +1161,16 @@
       transition: opacity 0.4s;
     }
     .stat-card:hover {
-      border-color: rgba(212,175,55,0.3);
+      border-color: rgba(176,141,79,0.3);
       transform: translateY(-5px);
-      box-shadow: 0 16px 44px rgba(0,0,0,0.4), 0 0 0 1px rgba(212,175,55,0.06), 0 8px 30px rgba(212,175,55,0.05);
-      background: linear-gradient(160deg, rgba(212,175,55,0.05), rgba(255,255,255,0.012));
+      box-shadow: 0 16px 44px rgba(0,0,0,0.4), 0 0 0 1px rgba(176,141,79,0.06), 0 8px 30px rgba(176,141,79,0.05);
+      background: linear-gradient(160deg, rgba(176,141,79,0.05), rgba(255,255,255,0.012));
     }
     .stat-card:hover::before { opacity: 1; }
-    .stat-card:hover .stat-icon { transform: translateY(-2px); box-shadow: 0 0 18px rgba(212,175,55,0.18); }
+    .stat-card:hover .stat-icon { transform: translateY(-2px); box-shadow: 0 0 18px rgba(176,141,79,0.18); }
     .stat-card--gold {
-      border-color: rgba(212,175,55,0.55) !important;
-      background: linear-gradient(135deg, rgba(212,175,55,0.07), rgba(0,0,0,0)) !important;
+      border-color: rgba(176,141,79,0.55) !important;
+      background: linear-gradient(135deg, rgba(176,141,79,0.07), rgba(0,0,0,0)) !important;
     }
     .stat-card--gold .stat-value { color: var(--gold); }
     .stat-card--live { position: relative; }
@@ -1172,8 +1186,8 @@
       width: 38px; height: 38px;
       margin: 0 auto 0.85rem;
       display: flex; align-items: center; justify-content: center;
-      background: linear-gradient(135deg, rgba(212,175,55,0.16), rgba(212,175,55,0.06));
-      border: 1px solid rgba(212,175,55,0.12);
+      background: linear-gradient(135deg, rgba(176,141,79,0.16), rgba(176,141,79,0.06));
+      border: 1px solid rgba(176,141,79,0.12);
       border-radius: 10px;
       color: var(--gold);
       transition: transform 0.4s, box-shadow 0.4s;
@@ -1204,9 +1218,9 @@
     /* ===== GOALS DATABASE CTA BANNER ===== */
     .goals-cta-banner {
       padding: 2rem 2rem;
-      background: linear-gradient(135deg, rgba(212,175,55,0.12) 0%, rgba(212,175,55,0.04) 100%);
-      border-top: 1px solid rgba(212,175,55,0.2);
-      border-bottom: 1px solid rgba(212,175,55,0.2);
+      background: linear-gradient(135deg, rgba(176,141,79,0.12) 0%, rgba(176,141,79,0.04) 100%);
+      border-top: 1px solid rgba(176,141,79,0.2);
+      border-bottom: 1px solid rgba(176,141,79,0.2);
     }
     .goals-cta-inner {
       max-width: 900px;
@@ -1223,7 +1237,7 @@
       gap: 1.5rem;
     }
     .goals-cta-num {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Piazzolla', serif;
       font-size: 3.6rem;
       font-weight: 900;
       color: var(--gold);
@@ -1234,7 +1248,7 @@
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      filter: drop-shadow(0 0 24px rgba(212,175,55,0.28));
+      filter: drop-shadow(0 0 24px rgba(176,141,79,0.28));
     }
     .goals-cta-text strong {
       display: block;
@@ -1264,11 +1278,11 @@
     }
     .goals-cta-link {
       background: linear-gradient(135deg, var(--gold-light), var(--gold) 60%, var(--gold-dark));
-      box-shadow: 0 4px 18px rgba(212,175,55,0.22), inset 0 1px 0 rgba(255,255,255,0.35);
+      box-shadow: 0 4px 18px rgba(176,141,79,0.22), inset 0 1px 0 rgba(255,255,255,0.35);
       transition: transform 0.2s, box-shadow 0.2s, filter 0.2s;
     }
     .goals-cta-link span { font-size: 1.1rem; transition: transform 0.2s; }
-    .goals-cta-link:hover { filter: brightness(1.07); transform: translateY(-1px) scale(1.03); box-shadow: 0 8px 26px rgba(212,175,55,0.32), inset 0 1px 0 rgba(255,255,255,0.45); }
+    .goals-cta-link:hover { filter: brightness(1.07); transform: translateY(-1px) scale(1.03); box-shadow: 0 8px 26px rgba(176,141,79,0.32), inset 0 1px 0 rgba(255,255,255,0.45); }
     .goals-cta-link:hover span { transform: translateX(4px); }
     @media (max-width: 600px) {
       .goals-cta-inner { flex-direction: column; text-align: center; }
@@ -1284,7 +1298,7 @@
       background: linear-gradient(to bottom, var(--bg-card), var(--bg));
     }
     .quote-section blockquote {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Piazzolla', serif;
       font-size: clamp(1.5rem, 4vw, 2.5rem);
       font-weight: 700;
       color: white;
@@ -1357,19 +1371,19 @@
       z-index: 1;
       text-align: center;
       padding: 4rem 1.5rem;
-      background: radial-gradient(ellipse 50% 60% at 50% 0%, rgba(212,175,55,0.04), transparent);
+      background: radial-gradient(ellipse 50% 60% at 50% 0%, rgba(176,141,79,0.04), transparent);
     }
     .quiz-card {
       max-width: 520px;
       margin: 2rem auto 0;
       background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(212,175,55,0.1);
+      border: 1px solid rgba(176,141,79,0.1);
       border-radius: 20px;
       padding: 2.5rem 2rem;
       backdrop-filter: blur(10px);
     }
     .quiz-question {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Piazzolla', serif;
       font-size: 1.25rem;
       font-weight: 700;
       color: white;
@@ -1389,19 +1403,19 @@
       text-align: left;
     }
     .quiz-opt:hover {
-      background: rgba(212,175,55,0.08);
-      border-color: rgba(212,175,55,0.6);
+      background: rgba(176,141,79,0.08);
+      border-color: rgba(176,141,79,0.6);
       color: white;
     }
     .quiz-opt.selected {
-      background: rgba(212,175,55,0.15);
+      background: rgba(176,141,79,0.15);
       border-color: var(--gold);
       color: var(--gold);
     }
     .quiz-result {
       margin-top: 1.5rem;
       padding: 1.2rem;
-      background: rgba(212,175,55,0.08);
+      background: rgba(176,141,79,0.08);
       border-radius: 12px;
       color: var(--gold);
       font-size: 0.9rem;
@@ -1416,10 +1430,10 @@
       z-index: 1;
       text-align: center;
       padding: 5rem 1.5rem;
-      background: radial-gradient(ellipse 50% 60% at 50% 100%, rgba(212,175,55,0.06), transparent);
+      background: radial-gradient(ellipse 50% 60% at 50% 100%, rgba(176,141,79,0.06), transparent);
     }
     .cta-title {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Piazzolla', serif;
       font-size: clamp(1.5rem, 4vw, 2.2rem);
       font-weight: 800;
       color: white;
@@ -1459,9 +1473,9 @@
       color: white; border: none;
     }
     .cta-btn-tg:hover { opacity: 0.9; transform: translateY(-2px); }
-    .cta-btn-copy { background: transparent; color: var(--gold); border: 1px solid rgba(212,175,55,0.3); }
-    .cta-btn-copy:hover { background: rgba(212,175,55,0.1); border-color: rgba(212,175,55,0.5); }
-    .cta-btn-copy.copied { background: rgba(212,175,55,0.15); border-color: var(--gold); }
+    .cta-btn-copy { background: transparent; color: var(--gold); border: 1px solid rgba(176,141,79,0.3); }
+    .cta-btn-copy:hover { background: rgba(176,141,79,0.1); border-color: rgba(176,141,79,0.5); }
+    .cta-btn-copy.copied { background: rgba(176,141,79,0.15); border-color: var(--gold); }
     .cta-btn-copy.copied svg { display: none; }
 
     /* ===== EMAIL SUBSCRIBE ===== */
@@ -1474,8 +1488,8 @@
     .subscribe-card {
       max-width: 520px;
       margin: 0 auto;
-      background: linear-gradient(135deg, rgba(212,175,55,0.08) 0%, rgba(212,175,55,0.02) 100%);
-      border: 1px solid rgba(212,175,55,0.18);
+      background: linear-gradient(135deg, rgba(176,141,79,0.08) 0%, rgba(176,141,79,0.02) 100%);
+      border: 1px solid rgba(176,141,79,0.18);
       border-radius: 24px;
       padding: 2.5rem 2.5rem;
       position: relative;
@@ -1484,18 +1498,18 @@
     .subscribe-card::before {
       content: '';
       position: absolute; top: 0; left: 0; right: 0; height: 1px;
-      background: linear-gradient(to right, transparent, rgba(212,175,55,0.5), transparent);
+      background: linear-gradient(to right, transparent, rgba(176,141,79,0.5), transparent);
     }
     .subscribe-icon {
       width: 44px; height: 44px;
-      background: rgba(212,175,55,0.12);
+      background: rgba(176,141,79,0.12);
       border-radius: 12px;
       display: flex; align-items: center; justify-content: center;
       margin: 0 auto 1rem;
       color: var(--gold);
     }
     .subscribe-card h3 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Piazzolla', serif;
       font-size: 1.35rem;
       font-weight: 800;
       color: white;
@@ -1528,7 +1542,7 @@
       transition: border-color 0.3s;
     }
     .subscribe-form input:focus {
-      border-color: rgba(212,175,55,0.5);
+      border-color: rgba(176,141,79,0.5);
     }
     .subscribe-form input::placeholder { color: rgba(255,255,255,0.55); }
     .subscribe-form button {
@@ -1547,7 +1561,7 @@
     .subscribe-form button:hover {
       filter: brightness(1.08);
       transform: translateY(-1px);
-      box-shadow: 0 6px 18px rgba(212,175,55,0.28), inset 0 1px 0 rgba(255,255,255,0.45);
+      box-shadow: 0 6px 18px rgba(176,141,79,0.28), inset 0 1px 0 rgba(255,255,255,0.45);
     }
     .subscribe-success {
       display: none;
@@ -1583,17 +1597,17 @@
     }
     .notif-btn:hover {
       background: rgba(255,255,255,0.07);
-      border-color: rgba(212,175,55,0.6);
+      border-color: rgba(176,141,79,0.6);
       color: #fff;
       transform: translateY(-1px);
     }
     .notif-btn.granted {
-      background: rgba(212,175,55,0.08);
-      border-color: rgba(212,175,55,0.65);
+      background: rgba(176,141,79,0.08);
+      border-color: rgba(176,141,79,0.65);
       color: var(--gold);
     }
     .notif-btn.granted:hover {
-      background: rgba(212,175,55,0.04);
+      background: rgba(176,141,79,0.04);
       border-color: rgba(255,80,80,0.4);
       color: rgba(255,130,130,0.9);
     }
@@ -1666,7 +1680,7 @@
       backdrop-filter: blur(20px);
       padding: 1.5rem;
       z-index: 99;
-      border-bottom: 1px solid rgba(212,175,55,0.1);
+      border-bottom: 1px solid rgba(176,141,79,0.1);
     }
     .mobile-nav.open { display: flex; flex-direction: column; gap: 1rem; }
     .mobile-nav a {
@@ -1711,7 +1725,7 @@
       border-radius: 16px;
       padding: 1rem 1.8rem;
       display: flex; align-items: center; gap: 1rem;
-      box-shadow: 0 8px 40px rgba(212,175,55,0.3), 0 0 0 1px rgba(212,175,55,0.15);
+      box-shadow: 0 8px 40px rgba(176,141,79,0.3), 0 0 0 1px rgba(176,141,79,0.15);
       opacity: 0; pointer-events: none;
       transition: opacity 0.4s, transform 0.4s;
       max-width: 480px; width: 90%;
@@ -1901,12 +1915,12 @@
       overflow: hidden;
     }
     .wc-card:hover {
-      border-color: rgba(212,175,55,0.65);
-      background: rgba(212,175,55,0.05);
+      border-color: rgba(176,141,79,0.65);
+      background: rgba(176,141,79,0.05);
     }
     .wc-card.future {
-      border-color: rgba(212,175,55,0.6);
-      background: linear-gradient(135deg, rgba(212,175,55,0.08), rgba(212,175,55,0.03));
+      border-color: rgba(176,141,79,0.6);
+      background: linear-gradient(135deg, rgba(176,141,79,0.08), rgba(176,141,79,0.03));
     }
     .wc-card.future::before {
       content: '2026';
@@ -1915,7 +1929,7 @@
       font-size: 0.62rem;
       font-weight: 700;
       color: var(--gold);
-      background: rgba(212,175,55,0.15);
+      background: rgba(176,141,79,0.15);
       padding: 2px 7px;
       border-radius: 20px;
       letter-spacing: 0.05em;
@@ -1957,14 +1971,14 @@
     .wc-card.future .wc-goals-big { color: var(--gold); }
     .wc-notable {
       font-size: 0.66rem;
-      color: rgba(212,175,55,0.7);
+      color: rgba(176,141,79,0.7);
       margin-top: 0.5rem;
       font-style: italic;
     }
     /* 2026 Fixtures */
     .wc26-wrap {
       background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(212,175,55,0.2);
+      border: 1px solid rgba(176,141,79,0.2);
       border-radius: 20px;
       padding: 2rem 2rem 1.5rem;
     }
@@ -2015,8 +2029,8 @@
       color: rgba(255,255,255,0.7);
     }
     .wc26-team-pill.cr7 {
-      background: rgba(212,175,55,0.15);
-      border-color: rgba(212,175,55,0.65);
+      background: rgba(176,141,79,0.15);
+      border-color: rgba(176,141,79,0.65);
       color: var(--gold);
       font-weight: 700;
     }
@@ -2037,8 +2051,8 @@
       transition: border-color 0.3s;
     }
     .wc26-fixture.cr7-match {
-      border-color: rgba(212,175,55,0.55);
-      background: rgba(212,175,55,0.04);
+      border-color: rgba(176,141,79,0.55);
+      background: rgba(176,141,79,0.04);
     }
     .wc26-fix-date {
       font-size: 0.75rem;
@@ -2069,7 +2083,7 @@
       letter-spacing: 0.05em;
       white-space: nowrap;
     }
-    .wc26-fix-tag.cr7 { background: rgba(212,175,55,0.2); color: var(--gold); }
+    .wc26-fix-tag.cr7 { background: rgba(176,141,79,0.2); color: var(--gold); }
     .wc26-fix-tag.other { background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.4); }
     @media (max-width: 600px) {
       .wc-grid { grid-template-columns: repeat(3, 1fr); }
@@ -2102,18 +2116,18 @@
       transition: border-color 0.3s, background 0.3s, transform 0.3s;
     }
     .record-card:hover {
-      border-color: rgba(212,175,55,0.6);
-      background: rgba(212,175,55,0.04);
+      border-color: rgba(176,141,79,0.6);
+      background: rgba(176,141,79,0.04);
       transform: translateY(-2px);
     }
     .record-card.gold-card {
-      border-color: rgba(212,175,55,0.6);
-      background: linear-gradient(135deg, rgba(212,175,55,0.08), rgba(0,0,0,0));
+      border-color: rgba(176,141,79,0.6);
+      background: linear-gradient(135deg, rgba(176,141,79,0.08), rgba(0,0,0,0));
     }
     .rec-icon {
       width: 44px; height: 44px;
       min-width: 44px;
-      background: rgba(212,175,55,0.12);
+      background: rgba(176,141,79,0.12);
       border-radius: 12px;
       display: flex;
       align-items: center;
@@ -2161,7 +2175,7 @@
     .era-gallery-label::before,
     .era-gallery-label::after {
       content: ''; flex: 1; max-width: 80px;
-      height: 1px; background: rgba(212,175,55,0.25);
+      height: 1px; background: rgba(176,141,79,0.25);
     }
     .era-strip {
       display: flex;
@@ -2197,7 +2211,7 @@
     .era-panel::before {
       content: ''; position: absolute;
       top: 0; left: 0; right: 0; height: 3px; z-index: 4;
-      background: var(--accent-color, rgba(212,175,55,0.5));
+      background: var(--accent-color, rgba(176,141,79,0.5));
       transform: scaleX(0); transform-origin: left;
       transition: transform 0.4s cubic-bezier(0.4,0,0.2,1) 0.1s;
     }
@@ -2233,7 +2247,7 @@
     .era-panel:hover .era-club { opacity: 1; }
     .era-years {
       font-size: 0.68rem; font-weight: 600;
-      color: rgba(212,175,55,0.9); letter-spacing: 0.06em;
+      color: rgba(176,141,79,0.9); letter-spacing: 0.06em;
       white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
       opacity: 0; transition: opacity 0.3s 0.15s;
     }
@@ -2241,11 +2255,11 @@
     .era-goals-badge {
       display: inline-block;
       margin-top: 0.5rem;
-      background: rgba(212,175,55,0.2);
-      border: 1px solid rgba(212,175,55,0.4);
+      background: rgba(176,141,79,0.2);
+      border: 1px solid rgba(176,141,79,0.4);
       border-radius: 20px; padding: 0.2rem 0.7rem;
       font-size: 0.7rem; font-weight: 700;
-      color: #F5D06B; letter-spacing: 0.04em;
+      color: #D8C089; letter-spacing: 0.04em;
       opacity: 0; transform: translateY(6px);
       transition: opacity 0.3s 0.2s, transform 0.3s 0.2s;
     }
@@ -2270,7 +2284,7 @@
 
     /* ===== ARABIC / RTL SUPPORT ===== */
     html[dir="rtl"] {
-      font-family: 'Cairo', 'Inter', sans-serif;
+      font-family: 'Cairo', 'Archivo', sans-serif;
     }
     html[dir="rtl"] body {
       direction: rtl;
@@ -2366,6 +2380,181 @@
       }
       .hero-goal-bar-fill { width: 96.8% !important; }
     }
+
+    /* ════════════════════════════════════════════════════════════════
+       AZULEJO — identité « De Madère vers la légende »
+       Bichromie : HERO céramique claire → HUB news azulejo nocturne.
+       Bloc d'override en fin de <style> : gagne la cascade.
+       ════════════════════════════════════════════════════════════════ */
+
+    /* ---- Texture azulejo nocturne, fond global du hub ---- */
+    .azulejo-nuit {
+      position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      opacity: 0.10;
+    }
+    body { background: var(--bg); }
+    body::before {
+      content: ''; position: fixed; inset: 0; z-index: 0; pointer-events: none;
+      background:
+        radial-gradient(1200px 700px at 50% -10%, rgba(27,77,140,0.30), transparent 60%),
+        radial-gradient(900px 600px at 90% 110%, rgba(107,32,48,0.22), transparent 55%);
+    }
+    nav, .hero, section, footer, .nm-strip-outer, .home-news { position: relative; z-index: 1; }
+
+    /* ─────────────── HERO : céramique claire (JOUR) ─────────────── */
+    .hero {
+      justify-content: center;
+      padding-bottom: 9vh;
+      background: linear-gradient(180deg, var(--ceramic) 0%, var(--ceramic) 62%, var(--ceramic-deep) 100%);
+    }
+    .hero-bg { background: var(--ceramic); }
+    /* CR7 traité en estampe bleue d'azulejo (duotone cobalt) */
+    .hero-bg img {
+      opacity: 0.30;
+      mix-blend-mode: multiply;
+      filter: grayscale(1) brightness(1.06) contrast(1.04) sepia(1) hue-rotate(165deg) saturate(2.6);
+      object-position: center 32%;
+    }
+    .hero-bg::before {
+      background:
+        linear-gradient(180deg, rgba(230,235,237,0.96) 0%, rgba(230,235,237,0.35) 12%, transparent 30%),
+        linear-gradient(0deg,   var(--ceramic) 0%, rgba(230,235,237,0.55) 14%, transparent 34%);
+    }
+    .hero-bg::after { display: none; }
+    .hero-azulejo {
+      position: absolute; inset: 0; z-index: 1; pointer-events: none;
+      opacity: 0.42;
+      -webkit-mask-image: radial-gradient(120% 90% at 50% 42%, #000 38%, transparent 78%);
+      mask-image: radial-gradient(120% 90% at 50% 42%, #000 38%, transparent 78%);
+    }
+
+    /* ─────────────── La PLAQUE commémorative (signature) ─────────────── */
+    .hero-content.hero-plaque {
+      background: linear-gradient(180deg, rgba(255,255,255,0.86) 0%, rgba(230,235,237,0.80) 100%);
+      -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px);
+      border: 1px solid var(--ceramic-line);
+      border-radius: 6px;
+      padding: 2.8rem 3rem 2.4rem;
+      box-shadow:
+        0 1px 0 rgba(255,255,255,0.9) inset,
+        0 0 0 1px rgba(27,77,140,0.10),
+        0 30px 80px -30px rgba(11,26,46,0.45);
+    }
+    /* Double filet cobalt interne, façon cadre d'azulejo peint */
+    .hero-content.hero-plaque::before {
+      content: ''; position: absolute; inset: 9px;
+      border: 1.5px solid var(--cobalt);
+      border-radius: 2px; opacity: 0.55;
+      box-shadow: none; background: transparent; z-index: 0;
+    }
+    .hero-content.hero-plaque::after {
+      inset-inline: 22%; top: 9px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+      opacity: 0.9;
+    }
+    .hero-plaque > * { position: relative; z-index: 2; }
+    /* Coins en équerre laiton — ornement de carreau */
+    .plaque-corner {
+      position: absolute; width: 18px; height: 18px; z-index: 3;
+      border: 2px solid var(--gold); opacity: 0.8;
+    }
+    .plaque-corner.tl { top: 14px; left: 14px; border-right: 0; border-bottom: 0; }
+    .plaque-corner.tr { top: 14px; right: 14px; border-left: 0; border-bottom: 0; }
+    .plaque-corner.bl { bottom: 14px; left: 14px; border-right: 0; border-top: 0; }
+    .plaque-corner.br { bottom: 14px; right: 14px; border-left: 0; border-top: 0; }
+
+    /* Texte du hero sur céramique : encre + cobalt + laiton */
+    .hero-plaque .hero-badge {
+      background: rgba(27,77,140,0.07);
+      border: 1px solid rgba(27,77,140,0.28);
+      box-shadow: none;
+    }
+    .hero-plaque .hero-badge .dot { background: var(--vin-light); box-shadow: 0 0 8px rgba(154,51,70,0.6); }
+    .hero-plaque .hero-badge span { color: var(--cobalt); }
+    .hero-plaque h1 { color: var(--ceramic-ink); text-shadow: none; }
+    .hero-plaque h1 .thin { color: var(--cobalt); opacity: 0.85; }
+    .hero-plaque h1 .gold {
+      background: linear-gradient(180deg, #C9A968 0%, var(--gold) 52%, var(--gold-dark) 100%);
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .hero-plaque .hero-score-current {
+      background: linear-gradient(177deg, #C9A968 0%, var(--gold) 46%, var(--gold-dark) 100%);
+      -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 1px 0 rgba(255,255,255,0.7)) drop-shadow(0 6px 18px rgba(27,77,140,0.18));
+    }
+    .hero-plaque .hero-score-sep  { color: rgba(11,26,46,0.30); }
+    .hero-plaque .hero-score-target { color: rgba(11,26,46,0.42); }
+    .hero-plaque .hero-goal-bar-wrap { background: rgba(27,77,140,0.14); }
+    .hero-plaque .hero-goal-bar-fill {
+      background: linear-gradient(to right, var(--gold-dark), var(--gold), #D8BE7A);
+      box-shadow: 0 0 12px rgba(176,141,79,0.45);
+    }
+    .hero-plaque .hero-goal-remaining {
+      background: rgba(27,77,140,0.06);
+      border: 1px solid rgba(27,77,140,0.16);
+    }
+    .hero-plaque .hero-goal-remaining .dot { background: var(--vin-light); box-shadow: 0 0 8px rgba(154,51,70,0.6); }
+    .hero-plaque .hero-remain-num { color: var(--vin-light); }
+    .hero-plaque .hero-remain-txt { color: rgba(11,26,46,0.55); }
+    .hero .scroll-hint { z-index: 4; }
+    .hero .scroll-hint span { color: rgba(11,26,46,0.5); }
+    .hero .scroll-line { background: linear-gradient(to bottom, var(--cobalt), transparent); }
+
+    /* Labels utilitaires en DM Mono — texture « fiche / data » discrète */
+    .section-label, .hero-badge span, .lm-label, .hero-remain-txt {
+      font-family: 'DM Mono', ui-monospace, monospace;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+    }
+
+    /* Transition scénographique JOUR → NUIT */
+    .hero-fade-nuit {
+      position: absolute; left: 0; right: 0; bottom: 0; height: 32vh; z-index: 3;
+      pointer-events: none;
+      background: linear-gradient(180deg, transparent 0%, rgba(212,220,223,0.4) 40%, var(--bg) 100%);
+    }
+
+    /* ─────────────── NAV : barre céramique frostée ─────────────── */
+    nav {
+      background: rgba(230,235,237,0.82);
+      -webkit-backdrop-filter: blur(14px) saturate(1.2); backdrop-filter: blur(14px) saturate(1.2);
+      border-bottom: 1px solid var(--ceramic-line);
+    }
+    .nav-logo { color: var(--ceramic-ink); }
+    .nav-logo span { color: var(--cobalt); }
+    .nav-links a { color: rgba(11,26,46,0.72); }
+    .nav-links a:hover { color: var(--cobalt); }
+    .lang-btn { color: rgba(11,26,46,0.6); }
+    .lang-btn.active { background: rgba(27,77,140,0.12); border-color: rgba(27,77,140,0.4); color: var(--cobalt); box-shadow: none; }
+    .nav-goals-btn {
+      background: linear-gradient(135deg, var(--cobalt-light), var(--cobalt));
+      color: #fff;
+    }
+    .nav-hamburger span { background: var(--ceramic-ink); }
+    .mobile-nav { background: rgba(230,235,237,0.97); }
+    .mobile-nav a { color: var(--ceramic-ink); }
+
+    /* ─────────────── HUB NOCTURNE : titres & labels azulejo ─────────────── */
+    .section-label { color: var(--cobalt-glow); }
+    .section-title .gold,
+    h2 .gold { color: var(--gold); }
+    /* séparateur de section : filet cobalt→laiton */
+    .clubs-section .section-title::after { background: linear-gradient(to right, transparent, var(--cobalt), transparent); }
+
+    /* Cartes news : cadre azulejo discret */
+    #homeNewsGrid > a, #homeNewsGrid > article,
+    .home-news a[href] {
+      border-color: rgba(27,77,140,0.22) !important;
+    }
+
+    /* Réduction de mouvement déjà gérée plus haut ; on garde le motif fixe */
+    @media (prefers-reduced-motion: reduce) {
+      .azulejo-nuit, .hero-azulejo { opacity: 0.08; }
+    }
+    @media (max-width: 640px) {
+      .hero-content.hero-plaque { padding: 2rem 1.4rem 1.8rem; }
+      .plaque-corner { width: 13px; height: 13px; }
+    }
   </style>
 <!-- PWA -->
   <link rel="manifest" href="/manifest.json">
@@ -2378,8 +2567,11 @@
   </script>
 </head>
 <body>
+  <!-- Azulejo nocturne : carrelage de marque en filigrane sur tout le hub -->
+  <svg class="azulejo-nuit" aria-hidden="true" width="100%" height="100%"><rect width="100%" height="100%" fill="url(#azu)"/></svg>
+
   <!-- ─── WC 2026 BANNER (injected 2026-05-28) ──────────────────────── -->
-  <div id="wc-banner" style="background:linear-gradient(90deg,#C1272D 0%,#D4AF37 50%,#006600 100%);color:#fff;padding:0.7rem 1rem;text-align:center;font-weight:600;font-size:0.95rem;position:relative;z-index:200;border-bottom:1px solid #000">
+  <div id="wc-banner" style="background:linear-gradient(90deg,#C1272D 0%,#B08D4F 50%,#006600 100%);color:#fff;padding:0.7rem 1rem;text-align:center;font-weight:600;font-size:0.95rem;position:relative;z-index:200;border-bottom:1px solid #000">
     🌍 <strong>Coupe du Monde 2026 — J-<span id="wc-banner-days">14</span></strong> ·
     <a href="/world-cup/" style="color:#fff;text-decoration:underline;font-weight:800">Le hub complet</a> ·
     <a href="/world-cup/maroc/" style="color:#fff;text-decoration:underline">🇲🇦 Maroc</a> ·
@@ -2457,14 +2649,38 @@
         <source srcset="./images/cr7-hero-banner.webp" type="image/webp">
         <img src="./images/cr7-hero-banner.jpg" alt="Cristiano Ronaldo — Every Era" loading="eager" fetchpriority="high">
       </picture>
+      <!-- Azulejo : motif céramique fait main, signature de la marque -->
+      <div class="hero-azulejo" aria-hidden="true">
+        <svg width="100%" height="100%" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <defs>
+            <pattern id="azu" width="92" height="92" patternUnits="userSpaceOnUse">
+              <g fill="none" stroke="#1B4D8C" stroke-width="1.4" opacity="0.5">
+                <circle cx="0" cy="0" r="32"/><circle cx="92" cy="0" r="32"/>
+                <circle cx="0" cy="92" r="32"/><circle cx="92" cy="92" r="32"/>
+                <rect x="25" y="25" width="42" height="42" transform="rotate(45 46 46)"/>
+                <circle cx="46" cy="46" r="8.5"/>
+              </g>
+              <g fill="#B08D4F" opacity="0.55">
+                <circle cx="46" cy="30" r="2.4"/><circle cx="46" cy="62" r="2.4"/>
+                <circle cx="30" cy="46" r="2.4"/><circle cx="62" cy="46" r="2.4"/>
+                <circle cx="46" cy="46" r="2.6"/>
+              </g>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#azu)"/>
+        </svg>
+      </div>
     </div>
-    <div class="hero-content">
+    <!-- Plaque commémorative façon ex-voto céramique -->
+    <div class="hero-content hero-plaque">
+      <span class="plaque-corner tl" aria-hidden="true"></span><span class="plaque-corner tr" aria-hidden="true"></span>
+      <span class="plaque-corner bl" aria-hidden="true"></span><span class="plaque-corner br" aria-hidden="true"></span>
       <div class="hero-badge">
         <span class="dot"></span>
         <span data-i18n="hero_badge">Live Countdown</span>
       </div>
       <h1>
-        <span class="thin">Cristiano Ronaldo</span>
+        <span class="thin">Cristiano Ronaldo · de Madère</span>
         <span data-i18n="hero_goal_text">Road to <span class="gold">1000</span> Goals</span>
       </h1>
 
@@ -2487,6 +2703,9 @@
 
     </div><!-- /.hero-content -->
 
+    <!-- Transition scénographique jour -> nuit vers le hub news -->
+    <div class="hero-fade-nuit" aria-hidden="true"></div>
+
     <div class="scroll-hint">
       <span data-i18n="scroll_hint">Scroll</span>
       <div class="scroll-line"></div>
@@ -2497,10 +2716,10 @@
   <section class="home-news" id="homeNews" style="max-width:1100px;margin:1.5rem auto 2rem;padding:0 1.2rem">
     <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1rem">
       <div>
-        <p style="color:#d4af37;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.2rem;font-weight:700">⚡ Dernières news · Live</p>
+        <p style="color:#b08d4f;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.2rem;font-weight:700">⚡ Dernières news · Live</p>
         <h2 style="font-size:1.3rem;font-weight:800;color:#fff;margin:0">Le foot, droit au but.</h2>
       </div>
-      <a href="./news/" style="color:#d4af37;font-size:0.85rem;font-weight:600;text-decoration:none;border:1px solid rgba(212,175,55,0.4);padding:0.4rem 0.9rem;border-radius:999px;white-space:nowrap">📰 Toutes les news →</a>
+      <a href="./news/" style="color:#b08d4f;font-size:0.85rem;font-weight:600;text-decoration:none;border:1px solid rgba(176,141,79,0.4);padding:0.4rem 0.9rem;border-radius:999px;white-space:nowrap">📰 Toutes les news →</a>
     </div>
     <div id="homeNewsGrid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0.9rem">
       <div style="grid-column:1/-1;text-align:center;color:rgba(255,255,255,0.4);font-size:0.85rem;padding:1.5rem">Chargement…</div>
@@ -2527,9 +2746,9 @@
       <svg viewBox="0 0 240 240">
         <defs>
           <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style="stop-color:#B8941E"/>
-            <stop offset="50%" style="stop-color:#D4AF37"/>
-            <stop offset="100%" style="stop-color:#E8C84A"/>
+            <stop offset="0%" style="stop-color:#8A6D38"/>
+            <stop offset="50%" style="stop-color:#B08D4F"/>
+            <stop offset="100%" style="stop-color:#C9A968"/>
           </linearGradient>
         </defs>
         <circle class="progress-ring-bg" cx="120" cy="120" r="110"/>
@@ -2568,7 +2787,7 @@
           <span class="era-goals-badge">⚽ 118 goals</span>
         </div>
       </div>
-      <div class="era-panel" style="--accent-color:#d4af3780">
+      <div class="era-panel" style="--accent-color:#b08d4f80">
         <span class="era-num">03</span>
         <picture><source srcset="./images/cr7-era-03.avif" type="image/avif"><source srcset="./images/cr7-era-03.webp" type="image/webp"><img src="./images/cr7-era-03.jpg" alt="CR7 — Real Madrid" loading="lazy"></picture>
         <div class="era-info">
@@ -2595,7 +2814,7 @@
           <span class="era-goals-badge">⚽ 27 goals</span>
         </div>
       </div>
-      <div class="era-panel" style="--accent-color:#f5d06b80">
+      <div class="era-panel" style="--accent-color:#d8c08980">
         <span class="era-num">06</span>
         <picture><source srcset="./images/cr7-era-06.avif" type="image/avif"><source srcset="./images/cr7-era-06.webp" type="image/webp"><img src="./images/cr7-era-06.jpg" alt="CR7 — Al Nassr" loading="lazy"></picture>
         <div class="era-info">
@@ -3003,7 +3222,7 @@
     <p data-i18n="predict_sub" style="color:rgba(255,255,255,0.6);font-size:0.85rem;margin-bottom:1.2rem;">At his current rate of ~35 goals/year, the model estimates mid-2026. What do you think?</p>
 
     <!-- Prize Banner -->
-    <div style="background:linear-gradient(135deg,rgba(212,175,55,0.15),rgba(212,175,55,0.05));border:1px solid rgba(212,175,55,0.3);border-radius:12px;padding:1.2rem 1.5rem;margin-bottom:1.5rem;text-align:center;">
+    <div style="background:linear-gradient(135deg,rgba(176,141,79,0.15),rgba(176,141,79,0.05));border:1px solid rgba(176,141,79,0.3);border-radius:12px;padding:1.2rem 1.5rem;margin-bottom:1.5rem;text-align:center;">
       <div style="font-size:1.8rem;margin-bottom:0.4rem;">🏆👕</div>
       <p style="color:var(--gold);font-weight:700;font-size:1rem;margin:0 0 0.3rem;" data-i18n="contest_prize_title">Win an original CR7 jersey!</p>
       <p style="color:rgba(255,255,255,0.5);font-size:0.78rem;margin:0;line-height:1.5;" data-i18n="contest_prize_desc">Guess the exact week of the 1000th goal. If multiple winners, a random draw decides. One entry per person.</p>
@@ -3025,9 +3244,9 @@
         <p style="color:rgba(255,255,255,0.6);font-size:0.85rem;margin:0 0 0.8rem;">
           <span id="contestUserName"></span> — <span data-i18n="contest_pick_week">pick the week of the 1000th goal:</span>
         </p>
-        <select id="weekPicker" style="width:100%;max-width:360px;padding:0.7rem 1rem;border-radius:8px;border:1px solid rgba(212,175,55,0.3);background:#1a1a2e;color:#fff;font-size:0.9rem;cursor:pointer;margin-bottom:0.8rem;">
+        <select id="weekPicker" style="width:100%;max-width:360px;padding:0.7rem 1rem;border-radius:8px;border:1px solid rgba(176,141,79,0.3);background:#102A45;color:#fff;font-size:0.9rem;cursor:pointer;margin-bottom:0.8rem;">
         </select>
-        <style>#weekPicker option{background:#1a1a2e;color:#fff;}</style>
+        <style>#weekPicker option{background:#102A45;color:#fff;}</style>
         <br>
         <button id="submitPrediction" onclick="contestSubmit()" style="background:var(--gold);color:#000;border:none;border-radius:8px;padding:0.7rem 2rem;font-size:0.9rem;font-weight:700;cursor:pointer;transition:transform 0.2s;">
           <span data-i18n="contest_submit">Lock in my prediction 🔒</span>
@@ -3124,46 +3343,46 @@
   <section class="faq-section animate-on-scroll" id="faq" style="max-width:800px;margin:0 auto 3rem;padding:0 1.5rem">
     <h2 class="section-title" data-i18n="faq_title" style="margin-bottom:1.5rem">Frequently Asked Questions</h2>
 
-    <details class="faq-item" style="margin-bottom:0.8rem;border:1px solid rgba(212,175,55,0.15);border-radius:12px;background:rgba(13,13,13,0.6);overflow:hidden">
-      <summary style="cursor:pointer;padding:1rem 1.2rem;font-weight:600;font-size:0.95rem;color:#F0F0F0;list-style:none;display:flex;justify-content:space-between;align-items:center">How many goals has Cristiano Ronaldo scored in total?<span style="color:#D4AF37;font-size:1.2rem;transition:transform .3s">+</span></summary>
+    <details class="faq-item" style="margin-bottom:0.8rem;border:1px solid rgba(176,141,79,0.15);border-radius:12px;background:rgba(16,42,69,0.6);overflow:hidden">
+      <summary style="cursor:pointer;padding:1rem 1.2rem;font-weight:600;font-size:0.95rem;color:#E9F0F6;list-style:none;display:flex;justify-content:space-between;align-items:center">How many goals has Cristiano Ronaldo scored in total?<span style="color:#B08D4F;font-size:1.2rem;transition:transform .3s">+</span></summary>
       <div style="padding:0 1.2rem 1rem;color:rgba(240,240,240,0.7);font-size:0.88rem;line-height:1.7">As of June 2026, Cristiano Ronaldo has scored <strong>973 official career goals</strong> across all competitions. This includes goals for Sporting CP (5), Manchester United (145), Real Madrid (450), Juventus (101), Al Nassr (130+), and the Portuguese national team (135+). He is the all-time top scorer in football history.</div>
     </details>
 
-    <details class="faq-item" style="margin-bottom:0.8rem;border:1px solid rgba(212,175,55,0.15);border-radius:12px;background:rgba(13,13,13,0.6);overflow:hidden">
-      <summary style="cursor:pointer;padding:1rem 1.2rem;font-weight:600;font-size:0.95rem;color:#F0F0F0;list-style:none;display:flex;justify-content:space-between;align-items:center">When will Ronaldo reach 1000 career goals?<span style="color:#D4AF37;font-size:1.2rem;transition:transform .3s">+</span></summary>
+    <details class="faq-item" style="margin-bottom:0.8rem;border:1px solid rgba(176,141,79,0.15);border-radius:12px;background:rgba(16,42,69,0.6);overflow:hidden">
+      <summary style="cursor:pointer;padding:1rem 1.2rem;font-weight:600;font-size:0.95rem;color:#E9F0F6;list-style:none;display:flex;justify-content:space-between;align-items:center">When will Ronaldo reach 1000 career goals?<span style="color:#B08D4F;font-size:1.2rem;transition:transform .3s">+</span></summary>
       <div style="padding:0 1.2rem 1rem;color:rgba(240,240,240,0.7);font-size:0.88rem;line-height:1.7">At his current scoring rate of approximately <strong>0.74 goals per game</strong>, projections suggest Ronaldo could reach 1000 goals around late 2026. With the <strong>2026 FIFA World Cup</strong> in USA, Canada and Mexico, there is a possibility he could score this historic milestone on the world's biggest stage.</div>
     </details>
 
-    <details class="faq-item" style="margin-bottom:0.8rem;border:1px solid rgba(212,175,55,0.15);border-radius:12px;background:rgba(13,13,13,0.6);overflow:hidden">
-      <summary style="cursor:pointer;padding:1rem 1.2rem;font-weight:600;font-size:0.95rem;color:#F0F0F0;list-style:none;display:flex;justify-content:space-between;align-items:center">How does Ronaldo compare to Messi in career goals?<span style="color:#D4AF37;font-size:1.2rem;transition:transform .3s">+</span></summary>
+    <details class="faq-item" style="margin-bottom:0.8rem;border:1px solid rgba(176,141,79,0.15);border-radius:12px;background:rgba(16,42,69,0.6);overflow:hidden">
+      <summary style="cursor:pointer;padding:1rem 1.2rem;font-weight:600;font-size:0.95rem;color:#E9F0F6;list-style:none;display:flex;justify-content:space-between;align-items:center">How does Ronaldo compare to Messi in career goals?<span style="color:#B08D4F;font-size:1.2rem;transition:transform .3s">+</span></summary>
       <div style="padding:0 1.2rem 1rem;color:rgba(240,240,240,0.7);font-size:0.88rem;line-height:1.7">Cristiano Ronaldo leads Lionel Messi in total career goals. As of June 2026, Ronaldo has <strong>973 goals</strong> compared to Messi's ~850. Ronaldo is also the <strong>all-time top international scorer</strong> with 135+ goals for Portugal, while Messi has 100+ for Argentina. Ronaldo is on track to be the first modern player to reach 1000.</div>
     </details>
 
-    <details class="faq-item" style="margin-bottom:0.8rem;border:1px solid rgba(212,175,55,0.15);border-radius:12px;background:rgba(13,13,13,0.6);overflow:hidden">
-      <summary style="cursor:pointer;padding:1rem 1.2rem;font-weight:600;font-size:0.95rem;color:#F0F0F0;list-style:none;display:flex;justify-content:space-between;align-items:center">Which club did Ronaldo score the most goals for?<span style="color:#D4AF37;font-size:1.2rem;transition:transform .3s">+</span></summary>
+    <details class="faq-item" style="margin-bottom:0.8rem;border:1px solid rgba(176,141,79,0.15);border-radius:12px;background:rgba(16,42,69,0.6);overflow:hidden">
+      <summary style="cursor:pointer;padding:1rem 1.2rem;font-weight:600;font-size:0.95rem;color:#E9F0F6;list-style:none;display:flex;justify-content:space-between;align-items:center">Which club did Ronaldo score the most goals for?<span style="color:#B08D4F;font-size:1.2rem;transition:transform .3s">+</span></summary>
       <div style="padding:0 1.2rem 1rem;color:rgba(240,240,240,0.7);font-size:0.88rem;line-height:1.7"><strong>Real Madrid</strong> — 450 goals in 438 appearances between 2009 and 2018. He is the club's all-time top scorer. His next highest tally is at Al Nassr (130+ goals since January 2023), followed by Manchester United (145 goals across two spells), and Juventus (101 goals).</div>
     </details>
 
-    <details class="faq-item" style="margin-bottom:0.8rem;border:1px solid rgba(212,175,55,0.15);border-radius:12px;background:rgba(13,13,13,0.6);overflow:hidden">
-      <summary style="cursor:pointer;padding:1rem 1.2rem;font-weight:600;font-size:0.95rem;color:#F0F0F0;list-style:none;display:flex;justify-content:space-between;align-items:center">Will Ronaldo play in the 2026 World Cup?<span style="color:#D4AF37;font-size:1.2rem;transition:transform .3s">+</span></summary>
+    <details class="faq-item" style="margin-bottom:0.8rem;border:1px solid rgba(176,141,79,0.15);border-radius:12px;background:rgba(16,42,69,0.6);overflow:hidden">
+      <summary style="cursor:pointer;padding:1rem 1.2rem;font-weight:600;font-size:0.95rem;color:#E9F0F6;list-style:none;display:flex;justify-content:space-between;align-items:center">Will Ronaldo play in the 2026 World Cup?<span style="color:#B08D4F;font-size:1.2rem;transition:transform .3s">+</span></summary>
       <div style="padding:0 1.2rem 1rem;color:rgba(240,240,240,0.7);font-size:0.88rem;line-height:1.7">Yes, Cristiano Ronaldo is expected to be part of <strong>Portugal's squad for the 2026 FIFA World Cup</strong> in USA, Canada, and Mexico. At 41, he would be participating in his <strong>6th consecutive World Cup</strong> — a record for a European outfield player. He has scored in every World Cup since 2006.</div>
     </details>
 
-    <details class="faq-item" style="margin-bottom:0.8rem;border:1px solid rgba(212,175,55,0.15);border-radius:12px;background:rgba(13,13,13,0.6);overflow:hidden">
-      <summary style="cursor:pointer;padding:1rem 1.2rem;font-weight:600;font-size:0.95rem;color:#F0F0F0;list-style:none;display:flex;justify-content:space-between;align-items:center">How many hat-tricks has Ronaldo scored?<span style="color:#D4AF37;font-size:1.2rem;transition:transform .3s">+</span></summary>
+    <details class="faq-item" style="margin-bottom:0.8rem;border:1px solid rgba(176,141,79,0.15);border-radius:12px;background:rgba(16,42,69,0.6);overflow:hidden">
+      <summary style="cursor:pointer;padding:1rem 1.2rem;font-weight:600;font-size:0.95rem;color:#E9F0F6;list-style:none;display:flex;justify-content:space-between;align-items:center">How many hat-tricks has Ronaldo scored?<span style="color:#B08D4F;font-size:1.2rem;transition:transform .3s">+</span></summary>
       <div style="padding:0 1.2rem 1rem;color:rgba(240,240,240,0.7);font-size:0.88rem;line-height:1.7">Ronaldo has scored <strong>60+ hat-tricks</strong> in his career — the most by any player in football history. This includes hat-tricks across the Champions League, La Liga, Premier League, Serie A, Saudi Pro League, and international football. His hat-trick record at Real Madrid alone (44) is unmatched.</div>
     </details>
 
-    <details class="faq-item" style="margin-bottom:0.8rem;border:1px solid rgba(212,175,55,0.15);border-radius:12px;background:rgba(13,13,13,0.6);overflow:hidden">
-      <summary style="cursor:pointer;padding:1rem 1.2rem;font-weight:600;font-size:0.95rem;color:#F0F0F0;list-style:none;display:flex;justify-content:space-between;align-items:center">What is the best site to track Ronaldo's goals to 1000?<span style="color:#D4AF37;font-size:1.2rem;transition:transform .3s">+</span></summary>
-      <div style="padding:0 1.2rem 1rem;color:rgba(240,240,240,0.7);font-size:0.88rem;line-height:1.7"><strong><a href="https://to1000.com" style="color:#D4AF37">To1000.com</a></strong> is a free, comprehensive goal tracker for CR7's journey to 1000. It features a live countdown, <a href="./goals.html" style="color:#D4AF37">complete database of all 973 goals</a>, stats by club and competition, a prediction contest, and is available in <strong>4 languages</strong> (English, French, Spanish, Arabic).</div>
+    <details class="faq-item" style="margin-bottom:0.8rem;border:1px solid rgba(176,141,79,0.15);border-radius:12px;background:rgba(16,42,69,0.6);overflow:hidden">
+      <summary style="cursor:pointer;padding:1rem 1.2rem;font-weight:600;font-size:0.95rem;color:#E9F0F6;list-style:none;display:flex;justify-content:space-between;align-items:center">What is the best site to track Ronaldo's goals to 1000?<span style="color:#B08D4F;font-size:1.2rem;transition:transform .3s">+</span></summary>
+      <div style="padding:0 1.2rem 1rem;color:rgba(240,240,240,0.7);font-size:0.88rem;line-height:1.7"><strong><a href="https://to1000.com" style="color:#B08D4F">To1000.com</a></strong> is a free, comprehensive goal tracker for CR7's journey to 1000. It features a live countdown, <a href="./goals.html" style="color:#B08D4F">complete database of all 973 goals</a>, stats by club and competition, a prediction contest, and is available in <strong>4 languages</strong> (English, French, Spanish, Arabic).</div>
     </details>
   </section>
 
   <!-- LATEST FROM THE BLOG — auto-populated from /blog/posts.json -->
   <section class="latest-blog animate-on-scroll" id="news" style="max-width:1100px;margin:4rem auto 3rem;padding:0 1.5rem">
     <div style="text-align:center;margin-bottom:2rem">
-      <p class="section-label" style="color:#D4AF37;font-size:0.78rem;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.5rem" data-i18n="lb_label">News &amp; Analysis</p>
+      <p class="section-label" style="color:#B08D4F;font-size:0.78rem;letter-spacing:0.15em;text-transform:uppercase;margin-bottom:0.5rem" data-i18n="lb_label">News &amp; Analysis</p>
       <h2 class="section-title" style="font-size:clamp(1.6rem,3.5vw,2.2rem);font-weight:800;color:#fff;margin-bottom:0.4rem" data-i18n="lb_title">Latest from the blog</h2>
       <p style="color:rgba(255,255,255,0.55);font-size:0.95rem;max-width:620px;margin:0 auto" data-i18n="lb_sub">News, analysis and milestone projections from the road to 1,000.</p>
     </div>
@@ -3171,7 +3390,7 @@
       <div style="grid-column:1/-1;text-align:center;color:rgba(255,255,255,0.4);font-size:0.9rem;padding:2rem" data-i18n="lb_loading">Loading latest articles…</div>
     </div>
     <div style="text-align:center;margin-top:2rem">
-      <a href="./blog/" style="display:inline-block;color:#D4AF37;text-decoration:none;font-weight:600;font-size:0.92rem;border:1px solid rgba(212,175,55,0.4);padding:0.7rem 1.6rem;border-radius:999px;transition:all 0.2s" data-i18n="lb_all" onmouseover="this.style.background='rgba(212,175,55,0.1)';this.style.borderColor='#D4AF37'" onmouseout="this.style.background='transparent';this.style.borderColor='rgba(212,175,55,0.4)'">📖 All articles →</a>
+      <a href="./blog/" style="display:inline-block;color:#B08D4F;text-decoration:none;font-weight:600;font-size:0.92rem;border:1px solid rgba(176,141,79,0.4);padding:0.7rem 1.6rem;border-radius:999px;transition:all 0.2s" data-i18n="lb_all" onmouseover="this.style.background='rgba(176,141,79,0.1)';this.style.borderColor='#B08D4F'" onmouseout="this.style.background='transparent';this.style.borderColor='rgba(176,141,79,0.4)'">📖 All articles →</a>
     </div>
   </section>
 
@@ -3182,8 +3401,8 @@
     <meta itemprop="datePublished" content="2026-04-14">
     <h2 class="section-title" style="margin-bottom:1rem">About This Tracker</h2>
     <div style="color:rgba(240,240,240,0.65);font-size:0.88rem;line-height:1.8">
-      <p style="margin-bottom:1rem"><strong style="color:#D4AF37">To1000.com</strong> is the ultimate free tracker dedicated to Cristiano Ronaldo's historic journey to <strong>1000 career goals</strong>. No footballer has ever reached this milestone in the modern era, and CR7 — at 973 goals and counting — is closer than anyone has ever been.</p>
-      <p style="margin-bottom:1rem">This site provides a <strong>live countdown</strong> updated after every match, a <a href="./goals.html" style="color:#D4AF37">complete searchable database of all 973 goals</a> with dates, opponents, competitions and goal types, and detailed statistics broken down by club (Sporting CP, Manchester United, Real Madrid, Juventus, Al Nassr) and national team (Portugal). Fans can also enter our <strong>prediction contest</strong> to guess the exact date of the 1000th goal.</p>
+      <p style="margin-bottom:1rem"><strong style="color:#B08D4F">To1000.com</strong> is the ultimate free tracker dedicated to Cristiano Ronaldo's historic journey to <strong>1000 career goals</strong>. No footballer has ever reached this milestone in the modern era, and CR7 — at 973 goals and counting — is closer than anyone has ever been.</p>
+      <p style="margin-bottom:1rem">This site provides a <strong>live countdown</strong> updated after every match, a <a href="./goals.html" style="color:#B08D4F">complete searchable database of all 973 goals</a> with dates, opponents, competitions and goal types, and detailed statistics broken down by club (Sporting CP, Manchester United, Real Madrid, Juventus, Al Nassr) and national team (Portugal). Fans can also enter our <strong>prediction contest</strong> to guess the exact date of the 1000th goal.</p>
       <p style="margin-bottom:1rem">Available in <strong>English, French, Spanish, and Arabic</strong>, To1000.com serves the global community of CR7 fans who want to be part of this once-in-a-generation moment. Whether you follow Ronaldo at Al Nassr in the Saudi Pro League, with Portugal at the 2026 FIFA World Cup, or have been following him since his days at Sporting Lisbon — this is your home for the countdown.</p>
       <p>Follow the journey: <strong>973 goals scored. 27 to go. History awaits.</strong></p>
     </div>
@@ -3197,17 +3416,17 @@
       <a href="#countdown" style="color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.72rem;letter-spacing:0.05em">COUNTDOWN</a>
       <a href="#journey" style="color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.72rem;letter-spacing:0.05em">JOURNEY</a>
       <a href="#stats" style="color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.72rem;letter-spacing:0.05em">STATS</a>
-      <a href="./goals.html" style="color:rgba(212,175,55,0.5);text-decoration:none;font-size:0.72rem;letter-spacing:0.05em">ALL 973 GOALS</a>
+      <a href="./goals.html" style="color:rgba(176,141,79,0.5);text-decoration:none;font-size:0.72rem;letter-spacing:0.05em">ALL 973 GOALS</a>
       <a href="#faq" style="color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.72rem;letter-spacing:0.05em">FAQ</a>
     </div>
     <div id="footerBlogLinks" style="display:flex;justify-content:center;gap:1.5rem;margin:0 0 1rem;flex-wrap:wrap">
-      <a href="./blog/" style="color:rgba(212,175,55,0.85);text-decoration:none;font-size:0.72rem;font-weight:600">📖 All articles</a>
+      <a href="./blog/" style="color:rgba(176,141,79,0.85);text-decoration:none;font-size:0.72rem;font-weight:600">📖 All articles</a>
     </div>
     <p id="footer-data-updated">Data updated regularly &nbsp;·&nbsp; Sources: ESPN, Transfermarkt, FIFA, Wikipedia</p>
     <p style="max-width:720px;margin:0 auto;line-height:1.6;font-size:0.66rem;color:rgba(255,255,255,0.16)">
       <strong style="color:rgba(255,255,255,0.28)">Independent fan site.</strong> Not affiliated with, endorsed by, or sponsored by Cristiano Ronaldo, CR7&trade; Brand Management, Al Nassr FC, the Portuguese Football Federation, or any other club, league, or organization. &ldquo;Cristiano Ronaldo&rdquo; and &ldquo;CR7&rdquo; are trademarks of their respective owners. All player names, club crests, photographs, and trademarks are the property of their respective owners and are used here strictly for editorial commentary, statistics, and news under the principles of fair use. Goal videos remain hosted by their original publishers (YouTube and others); we link to them without re-hosting.
     </p>
-    <p style="margin-top:0.6rem">&copy; 2026 <a href="https://to1000.com" style="color:rgba(212,175,55,0.65);text-decoration:none">To1000.com</a> &mdash; Cristiano Ronaldo Goal Tracker &mdash; The countdown to history</p>
+    <p style="margin-top:0.6rem">&copy; 2026 <a href="https://to1000.com" style="color:rgba(176,141,79,0.65);text-decoration:none">To1000.com</a> &mdash; Cristiano Ronaldo Goal Tracker &mdash; The countdown to history</p>
   </footer>
 
   <script>
@@ -4009,7 +4228,7 @@
       const container = document.createElement('div');
       container.className = 'confetti-container';
       document.body.appendChild(container);
-      const colors = ['#D4AF37', '#E8C84A', '#F5E6B8', '#FFFFFF', '#B8941E'];
+      const colors = ['#B08D4F', '#C9A968', '#E6D6AE', '#FFFFFF', '#8A6D38'];
       for (let i = 0; i < 50; i++) {
         const piece = document.createElement('div');
         piece.className = 'confetti-piece';
@@ -4512,7 +4731,7 @@
       const isRTL = lang === 'ar';
       document.documentElement.dir  = isRTL ? 'rtl' : 'ltr';
       document.documentElement.lang = lang;
-      document.body.style.fontFamily = isRTL ? "'Cairo', 'Inter', sans-serif" : "'Inter', sans-serif";
+      document.body.style.fontFamily = isRTL ? "'Cairo', 'Archivo', sans-serif" : "'Archivo', sans-serif";
       document.querySelectorAll('.lang-btn').forEach(b => {
         b.classList.toggle('active', b.dataset.lang === lang);
       });
