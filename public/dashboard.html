@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Dashboard marketing — To1000.com</title>
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <style>
+  :root{--ink:#05070b;--panel:#0d1118;--steel:#161c26;--gold:#f2c14e;--gold-hot:#ffd66b;
+        --chalk:#eef2f6;--mute:#9aa6b4;--line:rgba(247,231,163,.16);--ok:#34e07a;--bad:#ff6178;--maxw:1280px;}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Hanken Grotesk',system-ui,sans-serif;background:var(--ink);color:var(--chalk);-webkit-font-smoothing:antialiased;padding:0 0 60px}
+  .impact{font-family:'Anton',sans-serif;font-weight:400}
+  a{color:var(--gold)}
+  header{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:14px;
+    padding:16px 26px;background:rgba(5,7,11,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  header .logo{font-family:'Anton',sans-serif;font-size:22px}.logo b{color:var(--gold)}
+  header .sub{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+  header .upd{font-family:'Oswald',sans-serif;font-size:12px;color:var(--mute)}
+  main{max-width:var(--maxw);margin:0 auto;padding:24px 26px;display:flex;flex-direction:column;gap:22px}
+  h2{font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
+  .kpi{background:linear-gradient(180deg,var(--panel),#0a0d13);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px}
+  .kpi .n{font-family:'Anton',sans-serif;font-size:clamp(34px,5vw,52px);line-height:1;color:var(--chalk)}
+  .kpi .n small{font-size:.42em;color:var(--mute)}
+  .kpi .l{font-family:'Oswald',sans-serif;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin-top:8px}
+  .kpi .d{font-size:12px;margin-top:6px;color:var(--mute)} .kpi .d.up{color:var(--ok)} .kpi .d.down{color:var(--bad)}
+  .kpi.hero{background:linear-gradient(135deg,rgba(242,193,78,.12),rgba(13,17,24,.9));border-color:rgba(242,193,78,.35)}
+  .kpi.hero .n{color:var(--gold)}
+  .grid2{display:grid;grid-template-columns:1fr;gap:22px}
+  @media(min-width:900px){.grid2{grid-template-columns:3fr 2fr}}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .panel canvas{max-height:280px}
+  .chk{display:flex;flex-direction:column;gap:9px}
+  .chk div{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--chalk)}
+  .chk .s{width:20px;height:20px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:700;flex:0 0 auto}
+  .chk .s.ok{background:rgba(52,224,122,.16);color:var(--ok)} .chk .s.no{background:rgba(255,97,120,.16);color:var(--bad)}
+  .chk small{color:var(--mute);font-size:12px}
+  .connect{border:1px dashed rgba(242,193,78,.4);border-radius:12px;padding:18px;background:rgba(242,193,78,.04)}
+  .connect h3{font-family:'Oswald',sans-serif;font-size:15px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;color:var(--gold)}
+  .connect ol{margin:8px 0 0 18px;font-size:13.5px;line-height:1.7;color:var(--chalk)}
+  .connect code{background:#000;padding:1px 6px;border-radius:4px;font-size:12px;color:var(--gold-hot)}
+  .log{display:flex;flex-direction:column;gap:0}
+  .log .row{display:flex;gap:14px;padding:12px 0;border-bottom:1px solid var(--line)}
+  .log .row:last-child{border-bottom:0}
+  .log .dt{font-family:'Oswald',sans-serif;font-size:12px;color:var(--gold);white-space:nowrap;min-width:86px}
+  .log .ch{font-family:'Oswald',sans-serif;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);background:var(--gold);padding:2px 8px;border-radius:5px;height:fit-content;white-space:nowrap}
+  .log .tx{font-size:14px;line-height:1.45}
+  .srclist{display:flex;flex-wrap:wrap;gap:8px}
+  .srclist span{font-family:'Oswald',sans-serif;font-size:12px;background:#0a0d13;border:1px solid var(--line);border-radius:999px;padding:5px 11px;color:var(--mute)}
+  .note{font-size:12px;color:var(--mute);margin-top:10px}
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <div class="logo">TO<b>1000</b> · <span class="sub">Dashboard marketing</span></div>
+    </div>
+    <div class="upd" id="updated">…</div>
+  </header>
+  <main>
+    <section>
+      <div class="kpis" id="kpis"></div>
+    </section>
+
+    <section class="grid2">
+      <div class="panel"><h2 id="trafficTitle">Trafic (30 jours)</h2><div id="trafficBody"><canvas id="trafficChart"></canvas></div></div>
+      <div class="panel"><h2>Vers le 1000ᵉ but</h2><canvas id="goalChart"></canvas></div>
+    </section>
+
+    <section class="grid2">
+      <div class="panel"><h2>Contenu publié (évolution)</h2><canvas id="contentChart"></canvas>
+        <p class="note">Les courbes se remplissent à chaque mise à jour quotidienne (snapshot/jour).</p></div>
+      <div class="panel"><h2>Santé SEO</h2><div class="chk" id="seo"></div></div>
+    </section>
+
+    <section class="grid2">
+      <div class="panel"><h2>Efforts marketing &amp; impact</h2><div class="log" id="log"></div>
+        <p class="note">Édite <code>public/marketing_log.json</code> pour ajouter une action ; elle apparaît ici et sert de repère sur les courbes.</p></div>
+      <div class="panel"><h2>Sources d'actu actives</h2><div class="srclist" id="sources"></div>
+        <p class="note" id="sourcesNote"></p></div>
+    </section>
+  </main>
+
+  <script>
+  const GOLD="#f2c14e", MUTE="#9aa6b4", LINE="rgba(247,231,163,.14)", CHALK="#eef2f6";
+  Chart.defaults.color=MUTE; Chart.defaults.font.family="'Hanken Grotesk',sans-serif"; Chart.defaults.borderColor=LINE;
+  const fmt=n=>(n==null?"—":Number(n).toLocaleString('fr-FR'));
+
+  fetch('/dashboard-data.json?_='+Math.floor(Date.now()/60000)).then(r=>r.json()).then(render)
+    .catch(e=>{document.getElementById('kpis').innerHTML='<p style="color:var(--bad)">dashboard-data.json introuvable — lance scripts/collect_metrics.py</p>';});
+
+  function render(d){
+    const s=d.snapshot||{}, t=d.traffic||{}, h=d.history||[];
+    document.getElementById('updated').textContent='MÀJ : '+(d.generated_at||'').slice(0,10);
+
+    // KPIs
+    const kpi=(n,l,extra='',cls='')=>`<div class="kpi ${cls}"><div class="n">${n}</div><div class="l">${l}</div>${extra?`<div class="d">${extra}</div>`:''}</div>`;
+    let kpis='';
+    kpis+=kpi(`${fmt(s.goals)}<small>/1000</small>`,'Buts CR7 (le hook)',`${s.remaining} avant l'histoire · ${s.pct_to_1000}%`,'hero');
+    kpis+=t.connected
+      ? kpi(fmt(t.users_30d),'Visiteurs (30 j)',`${fmt(t.sessions_30d)} sessions · ${fmt(t.views_30d)} pages vues`)
+      : kpi('—','Visiteurs (30 j)','GA4 à connecter ↓');
+    kpis+=kpi(fmt(s.news_items),'News en ligne',`${s.cr7_items} CR7 · ${s.news_sources} sources`);
+    kpis+=kpi(fmt(s.article_pages),'Pages article',`${fmt(s.sitemap_urls)} URLs au sitemap`);
+    document.getElementById('kpis').innerHTML=kpis;
+
+    // Traffic chart or connect-CTA
+    if(t.connected && (t.series||[]).length){
+      new Chart(document.getElementById('trafficChart'),{type:'line',
+        data:{labels:t.series.map(x=>x.date.slice(4)),datasets:[
+          {label:'Visiteurs',data:t.series.map(x=>x.users),borderColor:GOLD,backgroundColor:'rgba(242,193,78,.12)',fill:true,tension:.35,pointRadius:0},
+          {label:'Pages vues',data:t.series.map(x=>x.views),borderColor:'#5c8fd6',tension:.35,pointRadius:0}]},
+        options:{plugins:{legend:{labels:{boxWidth:12}}},scales:{x:{grid:{display:false}}}}});
+    } else {
+      document.getElementById('trafficTitle').textContent='Trafic — à connecter';
+      document.getElementById('trafficBody').innerHTML=
+       `<div class="connect"><h3>Brancher GA4 pour le trafic réel</h3>
+        <p style="font-size:13.5px;color:var(--mute)">${(t.note||'')}</p>
+        <ol>
+          <li>Crée un <b>service-account</b> Google Cloud avec l'API <i>Google Analytics Data</i>.</li>
+          <li>Ajoute son e-mail comme <b>lecteur</b> dans GA4 (propriété G-4V8Y6C38VN).</li>
+          <li>Mets en secrets GitHub : <code>GA4_PROPERTY_ID</code> + le JSON dans <code>GOOGLE_APPLICATION_CREDENTIALS</code>.</li>
+        </ol>
+        <p class="note">Le collecteur (scripts/collect_metrics.py) remplira alors visiteurs, top pages, sources et pays automatiquement. Alternative zéro-code : <a href="https://lookerstudio.google.com" target="_blank" rel="noopener">Looker Studio</a> connecté à GA4.</p></div>`;
+    }
+
+    // Goal doughnut
+    new Chart(document.getElementById('goalChart'),{type:'doughnut',
+      data:{labels:['Marqués','Restants'],datasets:[{data:[s.goals,s.remaining],backgroundColor:[GOLD,'#1d2530'],borderWidth:0}]},
+      options:{cutout:'72%',plugins:{legend:{position:'bottom',labels:{boxWidth:12}},
+        tooltip:{callbacks:{label:c=>c.label+' : '+fmt(c.raw)}}}}});
+
+    // Content velocity
+    new Chart(document.getElementById('contentChart'),{type:'line',
+      data:{labels:h.map(x=>x.date.slice(5)),datasets:[
+        {label:'News en ligne',data:h.map(x=>x.news_items),borderColor:GOLD,tension:.3,pointRadius:2},
+        {label:'Pages article',data:h.map(x=>x.article_pages),borderColor:'#5c8fd6',yAxisID:'y2',tension:.3,pointRadius:2}]},
+      options:{plugins:{legend:{labels:{boxWidth:12}}},scales:{x:{grid:{display:false}},
+        y:{position:'left'},y2:{position:'right',grid:{display:false}}}}});
+
+    // SEO health
+    const seo=d.seo||{};
+    const row=(ok,txt,hint)=>`<div><span class="s ${ok?'ok':'no'}">${ok?'✓':'!'}</span><span>${txt}${hint?` <small>${hint}</small>`:''}</span></div>`;
+    document.getElementById('seo').innerHTML=
+      row(seo.ga4,'Google Analytics 4 actif')+
+      row(seo.search_console,'Google Search Console', seo.search_console?'':'à vérifier/poser la balise — clé n°1 pour le SEO')+
+      row(seo.news_prerendered,'News prérendues (crawlable)')+
+      row(seo.canonical_clean_urls,'Canonical en URLs propres', seo.canonical_clean_urls?'':'/news déclare encore .html — à corriger')+
+      row(seo.robots_has_sitemap,'robots.txt référence le sitemap', seo.robots_has_sitemap?'':'ajouter la ligne Sitemap:')+
+      row(seo.sitemap_urls>0,`Sitemap (${fmt(seo.sitemap_urls)} URLs)`);
+
+    // Marketing log
+    const log=d.marketing_log||[];
+    document.getElementById('log').innerHTML = log.length ? log.slice().reverse().map(x=>
+      `<div class="row"><span class="dt">${x.date||''}</span><span class="ch">${x.channel||'—'}</span>
+       <span class="tx">${x.effort||''}${x.impact?` <b style="color:var(--ok)">→ ${x.impact}</b>`:''}</span></div>`).join('')
+      : '<p class="note">Aucune action loggée — édite public/marketing_log.json.</p>';
+
+    // Sources
+    const meta=d.news_meta||{};
+    document.getElementById('sourcesNote').textContent =
+      (meta.filtered_offtopic!=null?`${meta.filtered_offtopic} hors-sujet filtrés au dernier run · `:'')+
+      (meta.tagline||'');
+  }
+  </script>
+</body>
+</html>
