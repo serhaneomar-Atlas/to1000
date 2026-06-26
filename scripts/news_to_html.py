@@ -118,7 +118,35 @@ def parse_date(s: str | None) -> datetime | None:
 
 # ─── Page generation ─────────────────────────────────────────────────
 
-def render_article(item: dict) -> str:
+_STOP = set("le la les un une des de du et à au aux pour avec sur dans par the of in on for and to vs his her into over after".split())
+def _kw(it):
+    t = (best_title(it, "fr") + " " + best_title(it, "en")).lower()
+    return set(w for w in re.findall(r"[a-zà-ÿ0-9]{4,}", t) if w not in _STOP)
+
+def find_related(item: dict, all_items: list, n: int = 4) -> list:
+    """Other articles on OUR site sharing keywords (same topic boosted)."""
+    mid = item.get("id"); mine = _kw(item); k0 = classify_kind(item)
+    scored = []
+    for o in all_items or []:
+        if o.get("id") == mid:
+            continue
+        s = len(mine & _kw(o))
+        if classify_kind(o) == k0:
+            s += 1
+        if s > 0:
+            scored.append((s, o))
+    scored.sort(key=lambda x: -x[0])
+    return [o for _, o in scored[:n]]
+
+GENERIC_RELATED = {
+    "cr7":  '<a href="/goals.html">📊 Compteur CR7 (975/1000)</a> · <a href="/news.html">📰 Toute l\'actu foot</a> · <a href="/world-cup/portugal/">🇵🇹 Portugal WC 2026</a>',
+    "wc":   '<a href="/world-cup/">🌍 Hub Coupe du Monde 2026</a> · <a href="/news.html">📰 News</a> · <a href="/world-cup/maroc/">🇲🇦 Maroc</a>',
+    "maroc":'<a href="/world-cup/maroc/">🇲🇦 Page Maroc WC</a> · <a href="/news.html">📰 News</a> · <a href="/world-cup/">Hub WC</a>',
+    "portugal":'<a href="/world-cup/portugal/">🇵🇹 Page Portugal WC</a> · <a href="/goals.html">Compteur CR7</a> · <a href="/news.html">📰 News</a>',
+    "foot": '<a href="/news.html">📰 Toute l\'actu foot</a> · <a href="/world-cup/">🌍 Hub WC 2026</a> · <a href="/goals.html">Compteur CR7</a>',
+}
+
+def render_article(item: dict, all_items: list | None = None) -> str:
     kind = classify_kind(item)
     title_fr = best_title(item, "fr")
     summary_fr = best_summary(item, "fr")
@@ -199,14 +227,18 @@ def render_article(item: dict) -> str:
             f'</figure>'
         )
 
-    # Related links (kind-aware)
-    related = {
-        "cr7":  '<a href="/goals.html">📊 Compteur CR7 (973/1000)</a> · <a href="/world-cup/portugal/">🇵🇹 Portugal WC 2026</a> · <a href="/blog/">Blog</a>',
-        "wc":   '<a href="/world-cup/">🌍 Hub Coupe du Monde 2026</a> · <a href="/world-cup/maroc/">🇲🇦 Maroc</a> · <a href="/world-cup/portugal/">🇵🇹 Portugal</a>',
-        "maroc":'<a href="/world-cup/maroc/">🇲🇦 Page Maroc WC</a> · <a href="/world-cup/maroc/ar/">العربية</a> · <a href="/world-cup/">Hub WC</a>',
-        "portugal":'<a href="/world-cup/portugal/">🇵🇹 Page Portugal WC</a> · <a href="/goals.html">Compteur CR7</a> · <a href="/world-cup/">Hub WC</a>',
-        "foot": '<a href="/world-cup/">🌍 Hub WC 2026</a> · <a href="/goals.html">Compteur CR7</a> · <a href="/blog/">Blog</a>',
-    }[kind]
+    # Related ARTICLES on our site (keyword overlap) + generic nav fallback
+    _rel = find_related(item, all_items or [], 4)
+    if _rel:
+        _cards = "".join(
+            f'<a class="rel-card" href="/news/{(ri.get("slug") or ri.get("id"))}.html">'
+            f'<span class="rel-t">{h(best_title(ri, "fr"))}</span>'
+            f'<span class="rel-s">{h((ri.get("primary_source") or {}).get("name", "") if isinstance(ri.get("primary_source"), dict) else "")}</span>'
+            f'</a>' for ri in _rel
+        )
+        related = f'<div class="rel-grid">{_cards}</div>'
+    else:
+        related = GENERIC_RELATED[kind]
 
     return f"""<!DOCTYPE html>
 <html lang="fr">
@@ -286,6 +318,12 @@ h1 {{ font-size: clamp(1.6rem, 4.5vw, 2.6rem); font-weight: 900; line-height: 1.
 .related h2 {{ font-size: 1rem; color: #D4AF37; margin-bottom: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; }}
 .related a {{ color: #ddd; text-decoration: none; }}
 .related a:hover {{ color: #D4AF37; }}
+.rel-grid {{ display:grid; grid-template-columns:1fr; gap:0.6rem; margin-top:0.5rem; }}
+@media(min-width:560px){{ .rel-grid {{ grid-template-columns:1fr 1fr; }} }}
+.rel-card {{ display:flex; flex-direction:column; gap:0.3rem; padding:0.7rem 0.85rem; border:1px solid #222; border-radius:10px; background:#0d0d0d; text-decoration:none; transition:border-color .2s; }}
+.rel-card:hover {{ border-color:#D4AF37; }}
+.rel-t {{ color:#eaeaea; font-size:0.9rem; line-height:1.3; }}
+.rel-s {{ color:#888; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.05em; }}
 .footer {{ border-top: 1px solid #222; padding: 2rem 1.5rem; text-align: center; font-size: 0.85rem; color: #777; margin-top: 4rem; }}
 .footer a {{ color: #aaa; }}
 </style>
@@ -352,7 +390,7 @@ def main():
         slug = item.get("slug") or item.get("id") or slugify(title)
         valid_slugs.add(slug)
         out = NEWS_DIR / f"{slug}.html"
-        html = render_article(item)
+        html = render_article(item, items)
         if args.dry_run:
             print(f"  [dry] {out.name} ({len(html)} bytes)")
             continue

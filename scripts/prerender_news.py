@@ -45,13 +45,13 @@ def card(it):
     img = it.get("image_url") if safe_url(it.get("image_url")) != "#" else PLACEHOLDER
     kind = '<span class="kindtag">CR7</span>' if it.get("kind") == "cr7" else ""
     return (
-        f'<a class="card" href="{esc(safe_url(it.get("url")))}" target="_blank" rel="noopener">'
+        f'<a class="card" href="/news/{esc(it.get("id"))}.html">'
         f'<span class="thumb" style="background-image:url(\'{css_url(img)}\')" aria-hidden="true">{kind}</span>'
         f'<span class="body"><span class="cat">{esc(sname)}</span><h4>{esc(title)}</h4>'
         + (f'<span class="sum">{esc(summ)}</span>' if summ else "")
         + f'<span class="meta"><span class="src">{cred}</span>'
         f'<time datetime="{esc(it.get("published_at"))}">{rel_time_fr(it.get("published_at"))}</time></span>'
-        f'<span class="orig">Lire l\'original →</span></span></a>'
+        f'<span class="orig">Lire l\'article →</span></span></a>'
     )
 
 def main():
