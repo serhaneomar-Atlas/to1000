@@ -252,12 +252,13 @@ def render_article(item: dict, all_items: list | None = None) -> str:
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
 <title>{h(title_fr)} | To1000.com</title>
 <meta name="description" content="{meta_desc}">
 <meta name="keywords" content="{keywords}">
 <meta name="author" content="To1000.com">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#060606">
+<meta name="theme-color" content="#05070b">
 <meta property="og:type" content="article">
 <meta property="og:title" content="{h(title_fr)}">
 <meta property="og:description" content="{meta_desc}">
@@ -284,47 +285,47 @@ def render_article(item: dict, all_items: list | None = None) -> str:
 <style>
 * {{ box-sizing: border-box; margin: 0; padding: 0; }}
 body {{
-  background: #060606; color: #f5f5f5;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #05070b; color: #eef2f6;
+  font-family: 'Hanken Grotesk', -apple-system, sans-serif;
   line-height: 1.7;
 }}
 .nav {{
-  padding: 1rem 1.5rem; border-bottom: 1px solid #222;
+  padding: 1rem 1.5rem; border-bottom: 1px solid #1d2530;
   display: flex; justify-content: space-between; align-items: center;
   position: sticky; top: 0; background: rgba(6,6,6,0.95); backdrop-filter: blur(10px); z-index: 100;
   flex-wrap: wrap; gap: 0.5rem;
 }}
-.nav .logo {{ font-weight: 900; font-size: 1.2rem; letter-spacing: -0.02em; color: #fff; text-decoration: none; }}
-.nav .logo .accent {{ color: #D4AF37; }}
+.nav .logo {{font-family:'Anton',sans-serif; font-weight: 900; font-size: 1.2rem; letter-spacing: -0.02em; color: #fff; text-decoration: none; }}
+.nav .logo .accent {{ color: #f2c14e; }}
 .nav .links {{ display: flex; gap: 1rem; flex-wrap: wrap; }}
 .nav .links a {{ color: #aaa; text-decoration: none; font-size: 0.9rem; font-weight: 600; }}
-.nav .links a:hover {{ color: #D4AF37; }}
+.nav .links a:hover {{ color: #f2c14e; }}
 article {{ max-width: 760px; margin: 2rem auto; padding: 0 1.5rem; }}
-.kind {{ display: inline-block; padding: 0.2rem 0.7rem; background: rgba(212,175,55,0.15); color: #D4AF37; border-radius: 4px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; }}
+.kind {{ display: inline-block; padding: 0.2rem 0.7rem; background: rgba(242,193,78,0.15); color: #f2c14e; border-radius: 4px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; }}
 .kind.maroc {{ background: rgba(193,39,45,0.15); color: #ff6b6b; }}
 .kind.portugal {{ background: rgba(0,102,0,0.15); color: #4caf50; }}
 .kind.wc {{ background: rgba(0,153,255,0.15); color: #4eb3ff; }}
 h1 {{ font-size: clamp(1.6rem, 4.5vw, 2.6rem); font-weight: 900; line-height: 1.2; margin: 1rem 0; letter-spacing: -0.02em; }}
-.meta {{ color: #888; font-size: 0.85rem; margin-bottom: 1.5rem; display: flex; gap: 0.8rem; align-items: center; flex-wrap: wrap; }}
+.meta {{ color: #9aa6b4; font-size: 0.85rem; margin-bottom: 1.5rem; display: flex; gap: 0.8rem; align-items: center; flex-wrap: wrap; }}
 .hero-img {{ margin: 0 0 1.5rem; }}
 .hero-img img {{ width: 100%; height: auto; border-radius: 10px; }}
 .lead {{ font-size: 1.1rem; color: #ddd; margin-bottom: 1rem; }}
-.original {{ background: #111; border: 1px solid #222; border-radius: 8px; padding: 1rem; margin: 1.5rem 0; }}
-.original summary {{ cursor: pointer; color: #D4AF37; font-weight: 700; }}
+.original {{ background: #0d1118; border: 1px solid #1d2530; border-radius: 8px; padding: 1rem; margin: 1.5rem 0; }}
+.original summary {{ cursor: pointer; color: #f2c14e; font-weight: 700; }}
 .original p {{ margin-top: 0.6rem; color: #bbb; }}
-.source-link {{ color: #888; font-size: 0.9rem; margin: 1.5rem 0; padding-top: 1rem; border-top: 1px solid #222; }}
-.source-link a {{ color: #D4AF37; }}
-.related {{ background: linear-gradient(180deg, #111 0%, #0a0a0a 100%); border: 1px solid #222; border-radius: 12px; padding: 1.2rem; margin: 2rem 0; }}
-.related h2 {{ font-size: 1rem; color: #D4AF37; margin-bottom: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; }}
+.source-link {{ color: #9aa6b4; font-size: 0.9rem; margin: 1.5rem 0; padding-top: 1rem; border-top: 1px solid #1d2530; }}
+.source-link a {{ color: #f2c14e; }}
+.related {{ background: linear-gradient(180deg, #0d1118 0%, #0a0d13 100%); border: 1px solid #1d2530; border-radius: 12px; padding: 1.2rem; margin: 2rem 0; }}
+.related h2 {{ font-size: 1rem; color: #f2c14e; margin-bottom: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; }}
 .related a {{ color: #ddd; text-decoration: none; }}
-.related a:hover {{ color: #D4AF37; }}
+.related a:hover {{ color: #f2c14e; }}
 .rel-grid {{ display:grid; grid-template-columns:1fr; gap:0.6rem; margin-top:0.5rem; }}
 @media(min-width:560px){{ .rel-grid {{ grid-template-columns:1fr 1fr; }} }}
-.rel-card {{ display:flex; flex-direction:column; gap:0.3rem; padding:0.7rem 0.85rem; border:1px solid #222; border-radius:10px; background:#0d0d0d; text-decoration:none; transition:border-color .2s; }}
-.rel-card:hover {{ border-color:#D4AF37; }}
+.rel-card {{ display:flex; flex-direction:column; gap:0.3rem; padding:0.7rem 0.85rem; border:1px solid #1d2530; border-radius:10px; background:#0d1118; text-decoration:none; transition:border-color .2s; }}
+.rel-card:hover {{ border-color:#f2c14e; }}
 .rel-t {{ color:#eaeaea; font-size:0.9rem; line-height:1.3; }}
-.rel-s {{ color:#888; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.05em; }}
-.footer {{ border-top: 1px solid #222; padding: 2rem 1.5rem; text-align: center; font-size: 0.85rem; color: #777; margin-top: 4rem; }}
+.rel-s {{ color:#9aa6b4; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.05em; }}
+.footer {{ border-top: 1px solid #1d2530; padding: 2rem 1.5rem; text-align: center; font-size: 0.85rem; color: #8a93a0; margin-top: 4rem; }}
 .footer a {{ color: #aaa; }}
 </style>
 </head>
@@ -431,6 +432,7 @@ def render_index(items: list[dict]) -> str:
 <script async src="https://www.googletagmanager.com/gtag/js?id={GA}"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}};gtag('js',new Date());gtag('config','{GA}');</script>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
 <title>News · Toutes les actus foot, CR7, Coupe du Monde 2026 | To1000.com</title>
 <meta name="description" content="Les dernières actualités foot agrégées 24h/24 : CR7, Coupe du Monde 2026, Maroc, Portugal, transferts, Champions League. Mises à jour toutes les 30 minutes.">
 <link rel="canonical" href="{SITE}/news/">
@@ -440,20 +442,20 @@ def render_index(items: list[dict]) -> str:
 <meta property="og:image" content="{SITE}/og-image.png">
 <style>
 *{{box-sizing:border-box;margin:0;padding:0}}
-body{{background:#060606;color:#f5f5f5;font-family:-apple-system,BlinkMacSystemFont,sans-serif;line-height:1.6}}
-.nav{{padding:1rem 1.5rem;border-bottom:1px solid #222;display:flex;gap:1rem;align-items:center;position:sticky;top:0;background:rgba(6,6,6,0.95);backdrop-filter:blur(10px);z-index:100}}
+body{{background:#05070b;color:#eef2f6;font-family:'Hanken Grotesk',-apple-system,sans-serif;line-height:1.6}}
+.nav{{padding:1rem 1.5rem;border-bottom:1px solid #1d2530;display:flex;gap:1rem;align-items:center;position:sticky;top:0;background:rgba(6,6,6,0.95);backdrop-filter:blur(10px);z-index:100}}
 .nav a{{color:#aaa;text-decoration:none;font-weight:600}}
-.nav .logo{{color:#fff;font-weight:900;font-size:1.2rem}}.nav .logo span{{color:#D4AF37}}
+.nav .logo{{font-family:'Anton',sans-serif;color:#fff;font-weight:400;font-size:1.2rem}}.nav .logo span{{color:#f2c14e}}
 header{{padding:3rem 1.5rem 1rem;text-align:center;max-width:800px;margin:0 auto}}
-h1{{font-size:clamp(2rem,5vw,3rem);font-weight:900;margin-bottom:1rem;background:linear-gradient(135deg,#fff 0%,#D4AF37 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}}
+h1{{font-family:'Anton',sans-serif;font-size:clamp(2rem,5vw,3.4rem);font-weight:400;margin-bottom:1rem;background:linear-gradient(135deg,#fff 0%,#f2c14e 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}}
 .grid{{max-width:1100px;margin:2rem auto 4rem;padding:0 1.5rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem}}
-.card{{background:linear-gradient(180deg,#111 0%,#0a0a0a 100%);border:1px solid #222;border-radius:10px;padding:1rem;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:all 0.2s}}
-.card:hover{{border-color:#D4AF37;transform:translateY(-2px)}}
-.k{{display:inline-block;background:rgba(212,175,55,0.15);color:#D4AF37;padding:0.15rem 0.5rem;border-radius:4px;font-size:0.7rem;font-weight:800;letter-spacing:0.05em;align-self:flex-start;margin-bottom:0.6rem}}
+.card{{background:linear-gradient(180deg,#0d1118 0%,#0a0d13 100%);border:1px solid #1d2530;border-radius:10px;padding:1rem;text-decoration:none;color:inherit;display:flex;flex-direction:column;transition:all 0.2s}}
+.card:hover{{border-color:#f2c14e;transform:translateY(-2px)}}
+.k{{display:inline-block;background:rgba(242,193,78,0.15);color:#f2c14e;padding:0.15rem 0.5rem;border-radius:4px;font-size:0.7rem;font-weight:800;letter-spacing:0.05em;align-self:flex-start;margin-bottom:0.6rem}}
 .k.maroc{{background:rgba(193,39,45,0.15);color:#ff6b6b}}.k.portugal{{background:rgba(0,102,0,0.15);color:#4caf50}}.k.wc{{background:rgba(0,153,255,0.15);color:#4eb3ff}}
 h3{{font-size:0.95rem;font-weight:700;line-height:1.35;flex:1}}
-time{{color:#777;font-size:0.75rem;margin-top:0.6rem}}
-footer{{border-top:1px solid #222;padding:2rem;text-align:center;font-size:0.85rem;color:#777}}
+time{{color:#8a93a0;font-size:0.75rem;margin-top:0.6rem}}
+footer{{border-top:1px solid #1d2530;padding:2rem;text-align:center;font-size:0.85rem;color:#8a93a0}}
 </style>
 </head>
 <body>
