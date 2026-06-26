@@ -301,9 +301,34 @@ def fetch_feed(url: str) -> Optional[object]:
         return None
 
 
+# Non-football sports — if the TITLE leads with one of these, drop the item.
+# (Le Figaro & co. prefix the discipline: "Surf : …", "Tennis : …".)
+NON_FOOTBALL = [
+    "surf", "tennis", "rugby", "basket", "basketball", "nba", "golf", "cyclisme",
+    "natation", "handball", "volley", "volleyball", "ski", "snowboard", "boxe",
+    "mma", "ufc", "athlétisme", "athletisme", "padel", "escrime", "aviron",
+    "triathlon", "nfl", "baseball", "hockey", "cricket", "badminton", "motogp",
+    "biathlon", "formule 1", "formula 1", "f1", "jeux olympiques", "skateboard",
+    "water-polo", "judo", "karaté", "taekwondo", "haltérophilie",
+]
+
+# Word-boundary keyword matching (cached compiled regex per list).
+# Substring matching wrongly kept "Osaka" (saka), "Homburg" (om), "interruption"
+# (inter) — word boundaries kill those false positives.
+_kw_re_cache: dict = {}
+
+def _kw_regex(keywords: list[str]):
+    key = id(keywords)
+    rx = _kw_re_cache.get(key)
+    if rx is None:
+        parts = sorted((re.escape(k.lower()) for k in keywords if k), key=len, reverse=True)
+        rx = re.compile(r"(?<!\w)(?:" + "|".join(parts) + r")(?!\w)", re.UNICODE) if parts else None
+        _kw_re_cache[key] = rx
+    return rx
+
 def match_any(text: str, keywords: list[str]) -> bool:
-    t = text.lower()
-    return any(k.lower() in t for k in keywords)
+    rx = _kw_regex(keywords)
+    return bool(rx and rx.search(text.lower()))
 
 
 def classify(title: str, summary: str, kw_cr7_high: list,
@@ -315,15 +340,20 @@ def classify(title: str, summary: str, kw_cr7_high: list,
     Random local news (3rd-division transfers, lower-league gossip, irrelevant figures)
     is dropped — keeps the feed focused on what readers actually click on.
     """
+    # Hard drop: the title clearly belongs to another sport.
+    if match_any(title, NON_FOOTBALL):
+        return None
     blob = f"{title} {summary}"
     if match_any(blob, kw_cr7_high):
         return "cr7"
     if match_any(blob, kw_cr7_ctx) and ("ronaldo" in blob.lower() or "cr7" in blob.lower()):
         return "cr7"
-    # Must mention a big club OR a star player, AND have football context
+    # Keep real football: a big club / star player, OR a named football
+    # competition (World Cup, Champions League, Ligue 1, CAN…). Generic context
+    # alone (goal/final/transfer) is NOT enough — a tennis "finale" must not pass.
     has_protagonist = match_any(blob, kw_clubs) or match_any(blob, kw_players)
-    has_context = match_any(blob, kw_comps) or match_any(blob, kw_ctx)
-    if has_protagonist and has_context:
+    has_competition = match_any(blob, kw_comps)
+    if has_protagonist or has_competition:
         return "football"
     return None
 
