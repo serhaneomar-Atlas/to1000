@@ -65,6 +65,9 @@ jobs:
       - name: Generate SEO HTML pages for each news item
         run: python scripts/news_to_html.py
 
+      - name: Prerender news cards into news.html (SEO — crawlable content)
+        run: python scripts/prerender_news.py
+
       - name: Update WC countdown JSON (morocco_next, portugal_next)
         run: python scripts/wc_countdown_update.py
 
@@ -89,7 +92,7 @@ jobs:
         run: |
           git config user.name "to1000-news-bot"
           git config user.email "to1000-news-bot@users.noreply.github.com"
-          git add public/news.json public/translations_cache.json public/news/ public/wc.json public/sitemap.xml 2>/dev/null || true
+          git add public/news.json public/news.html public/translations_cache.json public/news/ public/wc.json public/sitemap.xml 2>/dev/null || true
           # Only commit if there are actually staged changes
           if git diff --cached --quiet; then
             echo "::notice::No staged changes to commit"
