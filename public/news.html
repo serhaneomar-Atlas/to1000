@@ -114,7 +114,17 @@
   html[dir="rtl"] .card,html[dir="rtl"] .head .inner{text-align:right}
   html[dir="rtl"] .eyebrow::before{margin-left:10px}
   @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-  </style>
+    .hamb{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:0;cursor:pointer;padding:8px 4px}
+  .hamb span{display:block;width:22px;height:2px;background:var(--chalk);border-radius:2px;transition:transform .25s,opacity .25s}
+  .hamb[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .hamb[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .hamb[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .mobile-menu{position:fixed;top:58px;left:0;right:0;z-index:99;background:rgba(5,7,11,.98);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);display:flex;flex-direction:column;padding:6px 18px;box-shadow:0 18px 40px rgba(0,0,0,.5)}
+  .mobile-menu[hidden]{display:none}
+  .mobile-menu a{font-family:'Oswald',sans-serif;font-size:15px;letter-spacing:.05em;text-transform:uppercase;color:var(--chalk);text-decoration:none;padding:14px 4px;border-bottom:1px solid rgba(255,255,255,.07)}
+  .mobile-menu a:last-child{border-bottom:0}
+  @media(max-width:1079px){ .hamb{display:flex} }
+</style>
 </head>
 <body>
   <header class="topbar">
@@ -124,6 +134,7 @@
     </div>
     <nav class="main" aria-label="Navigation principale">
       <a href="/#hero" data-i18n="nav_counter">Compteur</a>
+      <a href="/goals.html" data-i18n="nav_goals">Tous les buts</a>
       <a href="/#parcours" data-i18n="nav_journey">Parcours</a>
       <a href="/#match" data-i18n="nav_wc">Coupe du Monde</a>
       <a href="/#data" data-i18n="nav_stats">Stats</a>
@@ -135,8 +146,17 @@
         <button type="button" data-l="es" aria-pressed="false">ES</button><button type="button" data-l="ar" aria-pressed="false">AR</button>
       </div>
       <a class="livepill" href="/#hero"><span class="dot" aria-hidden="true"></span><span id="pill">Live · 975</span></a>
+      <button class="hamb" id="hamb" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
     </div>
   </header>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Menu" hidden>
+    <a href="/#hero" data-i18n="nav_counter">Compteur</a>
+    <a href="/goals.html" data-i18n="nav_goals">Tous les buts</a>
+    <a href="/#parcours" data-i18n="nav_journey">Parcours</a>
+    <a href="/#match" data-i18n="nav_wc">Coupe du Monde</a>
+    <a href="/#data" data-i18n="nav_stats">Stats</a>
+    <a href="/news.html" data-i18n="nav_news">News</a>
+  </nav>
 
   <section class="head">
     <div class="bg" aria-hidden="true"></div><div class="scrim" aria-hidden="true"></div>
@@ -218,25 +238,25 @@
   <script>
   (function(){
     var I18N={
-      fr:{brand_tag:"Le hub du football · compte à rebours du 1000e but de CR7",nav_counter:"Compteur",nav_journey:"Parcours",nav_wc:"Coupe du Monde",nav_stats:"Stats",nav_news:"News",
+      fr:{brand_tag:"Le hub du football · compte à rebours du 1000e but de CR7",nav_counter:"Compteur",nav_goals:"Tous les buts",nav_journey:"Parcours",nav_wc:"Coupe du Monde",nav_stats:"Stats",nav_news:"News",
         news_eyebrow:"To1000 · News",news_title_a:"L'actu foot,",news_title_b:"droit au but.",
         news_promise:"On lit la presse pour vous — l'essentiel de chaque info, sourcé et vérifié, avec le lien vers l'article original. Pas de blabla, pas de clickbait.",
         filter_all:"Tout",filter_cr7:"CR7 · Ronaldo",search_ph:"Rechercher…",loading:"Chargement des actus…",
         news_verified:"Vérifié",news_orig:"Lire l'article →",all_sources:"Toutes les sources",results:"actus",updated:"mis à jour",sources_word:"sources",
         disclaimer:'Site de fans non officiel · Cristiano Ronaldo est une marque de Cristiano Ronaldo. Ce site n\'est ni affilié, ni approuvé par le joueur, ses clubs ou la FIFA. Contenu éditorial à titre informatif. Photos : <a href="https://unsplash.com" rel="noopener">Unsplash</a>.'},
-      en:{brand_tag:"The football hub · countdown to CR7's 1000th goal",nav_counter:"Counter",nav_journey:"Journey",nav_wc:"World Cup",nav_stats:"Stats",nav_news:"News",
+      en:{brand_tag:"The football hub · countdown to CR7's 1000th goal",nav_counter:"Counter",nav_goals:"All goals",nav_journey:"Journey",nav_wc:"World Cup",nav_stats:"Stats",nav_news:"News",
         news_eyebrow:"To1000 · News",news_title_a:"Football news,",news_title_b:"straight to the point.",
         news_promise:"We read the press for you — the essentials of every story, sourced and verified, with a link to the original article. No fluff, no clickbait.",
         filter_all:"All",filter_cr7:"CR7 · Ronaldo",search_ph:"Search…",loading:"Loading news…",
         news_verified:"Verified",news_orig:"Read article →",all_sources:"All sources",results:"stories",updated:"updated",sources_word:"sources",
         disclaimer:'Unofficial fan site · Cristiano Ronaldo is a trademark of Cristiano Ronaldo. This site is not affiliated with or endorsed by the player, his clubs or FIFA. Editorial content for informational purposes. Photos: <a href="https://unsplash.com" rel="noopener">Unsplash</a>.'},
-      es:{brand_tag:"El hub del fútbol · cuenta atrás hacia el gol 1000 de CR7",nav_counter:"Contador",nav_journey:"Trayectoria",nav_wc:"Mundial",nav_stats:"Estadísticas",nav_news:"Noticias",
+      es:{brand_tag:"El hub del fútbol · cuenta atrás hacia el gol 1000 de CR7",nav_counter:"Contador",nav_goals:"Todos los goles",nav_journey:"Trayectoria",nav_wc:"Mundial",nav_stats:"Estadísticas",nav_news:"Noticias",
         news_eyebrow:"To1000 · Noticias",news_title_a:"Fútbol,",news_title_b:"al grano.",
         news_promise:"Leemos la prensa por ti — lo esencial de cada noticia, con fuentes y verificado, con el enlace al artículo original. Sin relleno, sin clickbait.",
         filter_all:"Todo",filter_cr7:"CR7 · Ronaldo",search_ph:"Buscar…",loading:"Cargando noticias…",
         news_verified:"Verificado",news_orig:"Leer artículo →",all_sources:"Todas las fuentes",results:"noticias",updated:"actualizado",sources_word:"fuentes",
         disclaimer:'Sitio de fans no oficial · Cristiano Ronaldo es una marca de Cristiano Ronaldo. Este sitio no está afiliado ni respaldado por el jugador, sus clubes o la FIFA. Contenido editorial con fines informativos. Fotos: <a href="https://unsplash.com" rel="noopener">Unsplash</a>.'},
-      ar:{brand_tag:"مركز كرة القدم · العد التنازلي نحو هدف رونالدو الألف",nav_counter:"العدّاد",nav_journey:"المسيرة",nav_wc:"كأس العالم",nav_stats:"إحصائيات",nav_news:"الأخبار",
+      ar:{brand_tag:"مركز كرة القدم · العد التنازلي نحو هدف رونالدو الألف",nav_counter:"العدّاد",nav_goals:"كل الأهداف",nav_journey:"المسيرة",nav_wc:"كأس العالم",nav_stats:"إحصائيات",nav_news:"الأخبار",
         news_eyebrow:"To1000 · الأخبار",news_title_a:"أخبار الكرة،",news_title_b:"مباشرةً إلى المهم.",
         news_promise:"نقرأ الصحافة نيابةً عنك — جوهر كل خبر، موثّق ومُتحقَّق منه، مع رابط المقال الأصلي. بلا حشو وبلا إثارة.",
         filter_all:"الكل",filter_cr7:"CR7 · رونالدو",search_ph:"بحث…",loading:"جارٍ تحميل الأخبار…",
@@ -305,6 +325,7 @@
     function applyAll(){applyStatic();if(NEWS){buildSources();credline();render();}}
     function setLang(l){if(SUP.indexOf(l)<0)return;LANG=l;try{localStorage.setItem('to1000_lang',l);}catch(e){}applyAll();}
 
+    (function(){var hb=document.getElementById('hamb'),mm=document.getElementById('mobileMenu');if(hb&&mm){function so(open){if(open){mm.removeAttribute('hidden');hb.setAttribute('aria-expanded','true');}else{mm.setAttribute('hidden','');hb.setAttribute('aria-expanded','false');}}hb.addEventListener('click',function(){so(mm.hasAttribute('hidden'));});mm.addEventListener('click',function(e){if(e.target.closest('a'))so(false);});}})();
     document.addEventListener('click',function(e){
       var b=e.target.closest&&e.target.closest('.lang-sw button');if(b){setLang(b.getAttribute('data-l'));return;}
       var c=e.target.closest&&e.target.closest('.chip');if(c){document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('active');});c.classList.add('active');FILTER=c.getAttribute('data-filter');render();}

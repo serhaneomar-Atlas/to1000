@@ -590,6 +590,22 @@
   html[dir="rtl"] .news-head{flex-direction:row-reverse}
   html[dir="rtl"] .eras .era{direction:rtl}
   @media(max-width:1079px){.lang-sw{padding:2px}.lang-sw button{padding:4px 7px;font-size:10.5px}}
+  /* mobile nav + flags + GOAT */
+  .topbar-right{display:flex;align-items:center;gap:10px}
+  .hamb{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:0;cursor:pointer;padding:8px 4px}
+  .hamb span{display:block;width:22px;height:2px;background:var(--chalk);border-radius:2px;transition:transform .25s,opacity .25s}
+  .hamb[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .hamb[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .hamb[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .mobile-menu{position:fixed;top:58px;left:0;right:0;z-index:99;background:rgba(5,7,11,.98);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);display:flex;flex-direction:column;padding:6px 18px;box-shadow:0 18px 40px rgba(0,0,0,.5)}
+  .mobile-menu[hidden]{display:none}
+  .mobile-menu a{font-family:'Oswald',sans-serif;font-size:15px;letter-spacing:.05em;text-transform:uppercase;color:var(--chalk);text-decoration:none;padding:14px 4px;border-bottom:1px solid rgba(255,255,255,.07)}
+  .mobile-menu a:last-child{border-bottom:0}
+  .crest-flag{background-size:cover;background-position:center;border:2px solid rgba(255,255,255,.18)}
+  .goat-line{margin-top:9px;font-family:'Oswald',sans-serif;font-size:clamp(12px,1.5vw,15px);letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+  .goat-line b{font-family:'Anton',sans-serif;font-weight:400;color:var(--gold);letter-spacing:.12em;margin-left:6px}
+  .goat-line b i{font-style:normal;color:var(--gold-hot);text-shadow:0 0 14px var(--gold-hot);animation:blink 1.6s steps(1) infinite}
+  @media(max-width:1079px){ .hamb{display:flex} }
 </style>
 <!-- PWA -->
   <link rel="manifest" href="/manifest.json">
@@ -605,16 +621,26 @@
   </div>
   <nav class="main" aria-label="Navigation principale">
     <a href="#hero" class="active" data-i18n="nav_counter">Compteur</a>
+    <a href="/goals.html" data-i18n="nav_goals">Tous les buts</a>
     <a href="#parcours" data-i18n="nav_journey">Parcours</a>
     <a href="#match" data-i18n="nav_wc">Coupe du Monde</a>
     <a href="#data" data-i18n="nav_stats">Stats</a>
-    <a href="#parcours" data-i18n="nav_records">Records</a>
     <a href="/news.html" data-i18n="nav_news">News</a>
-    <a href="#data" data-i18n="nav_blog">Blog</a>
   </nav>
-  <div class="lang-sw" role="group" aria-label="Language"><button type="button" data-l="fr" aria-pressed="false">FR</button><button type="button" data-l="en" aria-pressed="false">EN</button><button type="button" data-l="es" aria-pressed="false">ES</button><button type="button" data-l="ar" aria-pressed="false">AR</button></div>
-  <span class="livepill"><span class="dot" aria-hidden="true"></span>Live · 975</span>
+  <div class="topbar-right">
+    <div class="lang-sw" role="group" aria-label="Language"><button type="button" data-l="fr" aria-pressed="false">FR</button><button type="button" data-l="en" aria-pressed="false">EN</button><button type="button" data-l="es" aria-pressed="false">ES</button><button type="button" data-l="ar" aria-pressed="false">AR</button></div>
+    <span class="livepill"><span class="dot" aria-hidden="true"></span>Live · 975</span>
+    <button class="hamb" id="hamb" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+  </div>
 </header>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Menu" hidden>
+  <a href="#hero" data-i18n="nav_counter">Compteur</a>
+  <a href="/goals.html" data-i18n="nav_goals">Tous les buts</a>
+  <a href="#parcours" data-i18n="nav_journey">Parcours</a>
+  <a href="#match" data-i18n="nav_wc">Coupe du Monde</a>
+  <a href="#data" data-i18n="nav_stats">Stats</a>
+  <a href="/news.html" data-i18n="nav_news">News</a>
+</nav>
 
 <main class="scroller" id="top">
 
@@ -625,7 +651,7 @@
 
     <div class="hero-stack">
       <h1 id="hero-title" class="sr-only" data-i18n="hero_h1">Compte à rebours vers le 1000e but de Cristiano Ronaldo</h1>
-      <p class="hero-eyebrow" data-i18n="hero_eyebrow">Cristiano Ronaldo · Portugal · vers l'histoire</p>
+      <p class="hero-eyebrow" data-i18n="hero_eyebrow">Cristiano Ronaldo · vers l'histoire</p>
 
       <!-- CÉLÉBRATION — SIUU détouré (fond supprimé), incrusté sur le stade -->
       <figure class="celebration">
@@ -643,6 +669,7 @@
         <p class="ch-meta"><b>25 buts</b> avant l'histoire</p>
         <div class="ch-bar" role="progressbar" aria-valuenow="975" aria-valuemin="0" aria-valuemax="1000" aria-label="Progression vers 1000 buts : 97,5 pour cent"><i></i></div>
         <p class="ch-foot">Progression 97,5 % · Dernier but vs <b>Ouzbékistan</b> · Coupe du Monde</p>
+        <p class="goat-line" aria-label="The GOAT debate">THE <b>G.O.A.T.<i>?</i></b></p>
       </div>
     </div>
 
@@ -663,12 +690,12 @@
         </div>
         <div class="vs">
           <div class="team">
-            <span class="crest col" aria-hidden="true">CO</span>
+            <span class="crest crest-flag" style="background-image:url('https://flagcdn.com/w160/co.png')" role="img" aria-label="Colombie"></span>
             <span class="name">Colombie</span>
           </div>
           <span class="mid impact">VS</span>
           <div class="team">
-            <span class="crest por" aria-hidden="true">PT</span>
+            <span class="crest crest-flag" style="background-image:url('https://flagcdn.com/w160/pt.png')" role="img" aria-label="Portugal"></span>
             <span class="name">Portugal</span>
           </div>
         </div>
@@ -838,7 +865,7 @@
   var I18N = {
     fr:{brand_tag:"Le hub du football · le compte à rebours du 1000e but de Cristiano Ronaldo",
       nav_counter:"Compteur",nav_journey:"Parcours",nav_wc:"Coupe du Monde",nav_stats:"Stats",nav_records:"Records",nav_news:"News",nav_blog:"Blog",
-      hero_eyebrow:"Cristiano Ronaldo · Portugal · vers l’histoire",hero_live:"Live · Buts carrière",
+      hero_eyebrow:"Cristiano Ronaldo · vers l’histoire",nav_goals:"Tous les buts",hero_live:"Live · Buts carrière",
       hero_h1:"Compte à rebours vers le 1000e but de Cristiano Ronaldo",scroll:"Défiler",
       goals_unit:"buts",rem_rest:"avant l’histoire",foot_prog:"Progression",foot_last:"Dernier but vs",live:"Live",
       m_comp:"Coupe du Monde 2026",m_foot:"Phase à élimination directe · Cristiano Ronaldo titulaire attendu",
@@ -854,7 +881,7 @@
       disclaimer:'Site de fans non officiel · Cristiano Ronaldo est une marque de Cristiano Ronaldo. Ce site n’est ni affilié, ni approuvé par le joueur, ses clubs ou la FIFA. Contenu éditorial à titre informatif.<br>Photos : <a href="https://unsplash.com" rel="noopener">Unsplash</a> · Wikimedia Commons.'},
     en:{brand_tag:"The football hub · the countdown to Cristiano Ronaldo’s 1000th goal",
       nav_counter:"Counter",nav_journey:"Journey",nav_wc:"World Cup",nav_stats:"Stats",nav_records:"Records",nav_news:"News",nav_blog:"Blog",
-      hero_eyebrow:"Cristiano Ronaldo · Portugal · toward history",hero_live:"Live · Career goals",
+      hero_eyebrow:"Cristiano Ronaldo · toward history",nav_goals:"All goals",hero_live:"Live · Career goals",
       hero_h1:"Countdown to Cristiano Ronaldo’s 1000th goal",scroll:"Scroll",
       goals_unit:"goals",rem_rest:"from history",foot_prog:"Progress",foot_last:"Last goal vs",live:"Live",
       m_comp:"World Cup 2026",m_foot:"Knockout stage · Cristiano Ronaldo expected to start",
@@ -870,7 +897,7 @@
       disclaimer:'Unofficial fan site · Cristiano Ronaldo is a trademark of Cristiano Ronaldo. This site is not affiliated with or endorsed by the player, his clubs or FIFA. Editorial content for informational purposes.<br>Photos: <a href="https://unsplash.com" rel="noopener">Unsplash</a> · Wikimedia Commons.'},
     es:{brand_tag:"El hub del fútbol · la cuenta atrás hacia el gol 1000 de Cristiano Ronaldo",
       nav_counter:"Contador",nav_journey:"Trayectoria",nav_wc:"Mundial",nav_stats:"Estadísticas",nav_records:"Récords",nav_news:"Noticias",nav_blog:"Blog",
-      hero_eyebrow:"Cristiano Ronaldo · Portugal · hacia la historia",hero_live:"En vivo · Goles de carrera",
+      hero_eyebrow:"Cristiano Ronaldo · hacia la historia",nav_goals:"Todos los goles",hero_live:"En vivo · Goles de carrera",
       hero_h1:"Cuenta atrás hacia el gol 1000 de Cristiano Ronaldo",scroll:"Desplázate",
       goals_unit:"goles",rem_rest:"para la historia",foot_prog:"Progreso",foot_last:"Último gol vs",live:"En vivo",
       m_comp:"Mundial 2026",m_foot:"Fase eliminatoria · Cristiano Ronaldo titular previsto",
@@ -886,7 +913,7 @@
       disclaimer:'Sitio de fans no oficial · Cristiano Ronaldo es una marca de Cristiano Ronaldo. Este sitio no está afiliado ni respaldado por el jugador, sus clubes o la FIFA. Contenido editorial con fines informativos.<br>Fotos: <a href="https://unsplash.com" rel="noopener">Unsplash</a> · Wikimedia Commons.'},
     ar:{brand_tag:"مركز كرة القدم · العد التنازلي نحو الهدف الألف لكريستيانو رونالدو",
       nav_counter:"العدّاد",nav_journey:"المسيرة",nav_wc:"كأس العالم",nav_stats:"إحصائيات",nav_records:"الأرقام القياسية",nav_news:"الأخبار",nav_blog:"المدونة",
-      hero_eyebrow:"كريستيانو رونالدو · البرتغال · نحو التاريخ",hero_live:"مباشر · أهداف المسيرة",
+      hero_eyebrow:"كريستيانو رونالدو · نحو التاريخ",nav_goals:"كل الأهداف",hero_live:"مباشر · أهداف المسيرة",
       hero_h1:"العد التنازلي نحو الهدف الألف لكريستيانو رونالدو",scroll:"مرّر",
       goals_unit:"هدف",rem_rest:"تفصله عن التاريخ",foot_prog:"التقدّم",foot_last:"آخر هدف ضد",live:"مباشر",
       m_comp:"كأس العالم 2026",m_foot:"دور خروج المغلوب · كريستيانو رونالدو أساسي متوقع",
@@ -911,6 +938,13 @@
   function t(k){var d=I18N[LANG]||I18N.en; return d[k]!=null?d[k]:(I18N.en[k]!=null?I18N.en[k]:k);}
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 
+  var TEAM_FLAGS={portugal:'pt',colombie:'co',colombia:'co',france:'fr','brésil':'br',bresil:'br',brazil:'br',argentine:'ar',argentina:'ar',espagne:'es',spain:'es','españa':'es',allemagne:'de',germany:'de',angleterre:'gb-eng',england:'gb-eng',maroc:'ma',morocco:'ma','états-unis':'us','etats-unis':'us',usa:'us','united states':'us','pays-bas':'nl',netherlands:'nl',belgique:'be',belgium:'be',uruguay:'uy',suisse:'ch',switzerland:'ch',croatie:'hr',croatia:'hr',italie:'it',italy:'it',mexique:'mx',mexico:'mx',canada:'ca',japon:'jp',japan:'jp',"corée du sud":'kr','south korea':'kr','sénégal':'sn',senegal:'sn',"côte d'ivoire":'ci','ivory coast':'ci','ouzbékistan':'uz',uzbekistan:'uz','rd congo':'cd','dr congo':'cd',ghana:'gh',nigeria:'ng',cameroun:'cm',cameroon:'cm','arabie saoudite':'sa','saudi arabia':'sa',qatar:'qa',australie:'au',australia:'au'};
+  function setFlag(el,team){if(!el)return;var iso=TEAM_FLAGS[(team||'').toLowerCase().trim()];if(iso){el.style.backgroundImage="url('https://flagcdn.com/w160/"+iso+".png')";el.textContent='';el.classList.add('crest-flag');el.setAttribute('role','img');el.setAttribute('aria-label',team);}else{el.classList.remove('crest-flag');el.style.backgroundImage='';el.textContent=(team||'').slice(0,2).toUpperCase();}}
+  (function(){var hb=document.getElementById('hamb'),mm=document.getElementById('mobileMenu');if(!hb||!mm)return;
+    function setOpen(open){if(open){mm.removeAttribute('hidden');hb.setAttribute('aria-expanded','true');}else{mm.setAttribute('hidden','');hb.setAttribute('aria-expanded','false');}}
+    hb.addEventListener('click',function(){setOpen(mm.hasAttribute('hidden'));});
+    mm.addEventListener('click',function(e){if(e.target.closest('a'))setOpen(false);});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape')setOpen(false);});})();
   function applyStatic(){
     var H=document.documentElement; H.lang=LANG; H.dir=(LANG==='ar')?'rtl':'ltr';
     document.querySelectorAll('[data-i18n]').forEach(function(e){var v=t(e.getAttribute('data-i18n')); if(v!=null)e.textContent=v;});
@@ -931,7 +965,7 @@
     var m=s.next_match;
     if(m){
       var names=document.querySelectorAll('#match .vs .team .name'), crests=document.querySelectorAll('#match .vs .team .crest');
-      if(names.length===2){names[0].textContent=m.home_team;names[1].textContent=m.away_team;crests[0].textContent=(m.home_team||'').slice(0,2).toUpperCase();crests[1].textContent=(m.away_team||'').slice(0,2).toUpperCase();}
+      if(names.length===2){names[0].textContent=m.home_team;names[1].textContent=m.away_team;setFlag(crests[0],m.home_team);setFlag(crests[1],m.away_team);}
       var when=document.querySelector('#match .head .when');
       if(when&&m.kickoff_utc){try{var d=new Date(m.kickoff_utc); when.textContent=d.toLocaleDateString(LANG,{day:'numeric',month:'long'})+' · '+d.toLocaleTimeString(LANG,{hour:'2-digit',minute:'2-digit'});}catch(e){}}
     }
