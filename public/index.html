@@ -478,18 +478,29 @@
   .news-head h3{font-size:clamp(22px,3.4vw,32px)}
   .news-head a{font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);border-bottom:1px solid transparent;transition:border-color .2s}
   .news-head a:hover{border-color:var(--gold)}
-  .news-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:22px}
+  .news-promise{font-family:'Oswald',sans-serif;font-size:13px;color:var(--mute);margin-top:6px;letter-spacing:.01em}
+  .news-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:22px}
+  @media(min-width:680px){.news-grid{grid-template-columns:1fr 1fr}}
+  @media(min-width:1080px){.news-grid{grid-template-columns:1fr 1fr 1fr}}
   .card{
-    display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:center;
-    border:1px solid var(--line);border-radius:12px;overflow:hidden;padding:10px;
-    background:linear-gradient(180deg,rgba(13,17,24,.65),rgba(5,7,11,.6));transition:border-color .3s,transform .3s}
-  .card:hover{border-color:var(--gold);transform:translateY(-3px)}
-  .card .thumb{width:96px;height:74px;border-radius:8px;background-size:cover;background-position:center;position:relative;overflow:hidden}
-  .card .thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(5,7,11,.4))}
-  .card .body .cat{font-family:'Oswald',sans-serif;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:5px}
-  .card .body h4{font-family:'Oswald',sans-serif;font-weight:500;font-size:15.5px;line-height:1.2;text-transform:none;letter-spacing:0;color:var(--chalk)}
-  .card .body time{font-size:12px;color:var(--mute)}
-  @media(min-width:760px){.news-grid{grid-template-columns:1fr 1fr}}
+    display:flex;flex-direction:column;text-decoration:none;
+    border:1px solid var(--line);border-radius:14px;overflow:hidden;
+    background:linear-gradient(180deg,rgba(13,17,24,.72),rgba(5,7,11,.66));transition:border-color .3s,transform .3s}
+  .card:hover{border-color:var(--gold);transform:translateY(-4px)}
+  .card:hover .orig{color:var(--gold-hot)}
+  .card .thumb{width:100%;height:168px;background-size:cover;background-position:center;position:relative}
+  .card .thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(5,7,11,.8))}
+  .card .kindtag{position:absolute;left:11px;top:11px;z-index:2;font-family:'Oswald',sans-serif;font-weight:700;font-size:10px;letter-spacing:.12em;text-transform:uppercase;background:var(--gold);color:var(--ink);padding:3px 8px;border-radius:5px}
+  .card .body{display:flex;flex-direction:column;gap:9px;padding:14px 16px 13px;flex:1}
+  .card .body .cat{font-family:'Oswald',sans-serif;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+  .card .body h4{font-family:'Oswald',sans-serif;font-weight:600;font-size:17px;line-height:1.22;text-transform:none;letter-spacing:0;color:var(--chalk)}
+  .card .body .sum{font-size:13.5px;line-height:1.5;color:#aeb8c4;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .card .meta{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:9px;border-top:1px solid var(--line)}
+  .card .src{display:inline-flex;align-items:center;gap:5px;font-family:'Oswald',sans-serif;font-size:11.5px;letter-spacing:.03em;color:var(--mute)}
+  .card .src .verif{color:#5fd38a;font-weight:700}
+  .card .body time{font-family:'Oswald',sans-serif;font-size:11.5px;color:var(--mute);white-space:nowrap}
+  .card .orig{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);transition:color .2s}
+  html[dir="rtl"] .card{text-align:right}
 
   /* ---------- FOOTER ---------- */
   footer{position:relative;z-index:2;border-top:1px solid var(--line);background:var(--charcoal);padding:48px clamp(20px,5vw,64px)}
@@ -711,11 +722,12 @@
         <div class="stat reveal d1"><div class="n impact">975</div><div class="t" data-i18n="stat_career">Buts en carrière</div></div>
         <div class="stat reveal d2"><div class="n impact">5</div><div class="t" data-i18n="stat_ballon">Ballons d'Or</div></div>
         <div class="stat reveal d3"><div class="n impact">1000</div><div class="t" data-i18n="stat_goal">L'objectif</div></div>
-        <div class="stat reveal d4"><div class="n impact">0,67</div><div class="t" data-i18n="stat_ratio">Ratio buts / match</div></div>
+        <div class="stat reveal d4"><div class="n impact">0,74</div><div class="t" data-i18n="stat_ratio">Ratio buts / match</div></div>
       </div>
 
       <div class="news-head reveal d1">
-        <h3 data-i18n="news_h3">Dernières news football</h3>
+        <div><h3 data-i18n="news_h3">Dernières news football</h3>
+        <p class="news-promise" data-i18n="news_promise">On lit la presse pour vous — l’essentiel, sourcé, sans blabla.</p></div>
         <a href="#top" data-i18n="news_all">Toutes les news →</a>
       </div>
       <div class="news-grid">
@@ -843,7 +855,7 @@
       era_sporting:"Lisbonne · les débuts",era_manu:"Premier League · le sacre",era_real:"Liga · l’ère galactique",era_juve:"Serie A · l’Italie",era_nassr:"Saudi Pro League · aujourd’hui",era_por:"Sélection · record mondial",
       d_kicker:"Les chiffres & l’actu",d_title:'Tout le football, <span style="color:var(--gold)">une obsession</span>',
       stat_career:"Buts en carrière",stat_ballon:"Ballons d’Or",stat_goal:"L’objectif",stat_ratio:"Ratio buts / match",
-      news_h3:"Dernières news football",news_all:"Toutes les news →",
+      news_h3:"Dernières news football",news_all:"Toutes les news →",news_promise:"On lit la presse pour vous — l’essentiel, sourcé, sans blabla.",news_orig:"Lire l’original →",news_verified:"Vérifié",
       foot_brand:"Le hub du football mondial et le compte à rebours live vers le 1000e but de Cristiano Ronaldo.",
       disclaimer:'Site de fans non officiel · Cristiano Ronaldo est une marque de Cristiano Ronaldo. Ce site n’est ni affilié, ni approuvé par le joueur, ses clubs ou la FIFA. Contenu éditorial à titre informatif.<br>Photos : <a href="https://unsplash.com" rel="noopener">Unsplash</a> · Wikimedia Commons.'},
     en:{brand_tag:"The football hub · the countdown to Cristiano Ronaldo’s 1000th goal",
@@ -859,7 +871,7 @@
       era_sporting:"Lisbon · the beginning",era_manu:"Premier League · the rise",era_real:"La Liga · the galactic era",era_juve:"Serie A · Italy",era_nassr:"Saudi Pro League · today",era_por:"National team · world record",
       d_kicker:"Numbers & news",d_title:'All of football, <span style="color:var(--gold)">one obsession</span>',
       stat_career:"Career goals",stat_ballon:"Ballon d’Or awards",stat_goal:"The target",stat_ratio:"Goals per match",
-      news_h3:"Latest football news",news_all:"All news →",
+      news_h3:"Latest football news",news_all:"All news →",news_promise:"We read the press for you — the essentials, sourced, no fluff.",news_orig:"Read original →",news_verified:"Verified",
       foot_brand:"The global football hub and the live countdown to Cristiano Ronaldo’s 1000th goal.",
       disclaimer:'Unofficial fan site · Cristiano Ronaldo is a trademark of Cristiano Ronaldo. This site is not affiliated with or endorsed by the player, his clubs or FIFA. Editorial content for informational purposes.<br>Photos: <a href="https://unsplash.com" rel="noopener">Unsplash</a> · Wikimedia Commons.'},
     es:{brand_tag:"El hub del fútbol · la cuenta atrás hacia el gol 1000 de Cristiano Ronaldo",
@@ -875,7 +887,7 @@
       era_sporting:"Lisboa · los inicios",era_manu:"Premier League · la consagración",era_real:"La Liga · la era galáctica",era_juve:"Serie A · Italia",era_nassr:"Saudi Pro League · hoy",era_por:"Selección · récord mundial",
       d_kicker:"Cifras y noticias",d_title:'Todo el fútbol, <span style="color:var(--gold)">una obsesión</span>',
       stat_career:"Goles de carrera",stat_ballon:"Balones de Oro",stat_goal:"El objetivo",stat_ratio:"Goles por partido",
-      news_h3:"Últimas noticias de fútbol",news_all:"Todas las noticias →",
+      news_h3:"Últimas noticias de fútbol",news_all:"Todas las noticias →",news_promise:"Leemos la prensa por ti — lo esencial, con fuentes, sin relleno.",news_orig:"Leer original →",news_verified:"Verificado",
       foot_brand:"El hub del fútbol mundial y la cuenta atrás en vivo hacia el gol 1000 de Cristiano Ronaldo.",
       disclaimer:'Sitio de fans no oficial · Cristiano Ronaldo es una marca de Cristiano Ronaldo. Este sitio no está afiliado ni respaldado por el jugador, sus clubes o la FIFA. Contenido editorial con fines informativos.<br>Fotos: <a href="https://unsplash.com" rel="noopener">Unsplash</a> · Wikimedia Commons.'},
     ar:{brand_tag:"مركز كرة القدم · العد التنازلي نحو الهدف الألف لكريستيانو رونالدو",
@@ -891,7 +903,7 @@
       era_sporting:"لشبونة · البداية",era_manu:"البريمييرليغ · التتويج",era_real:"الليغا · حقبة الغالاكتيكوس",era_juve:"الدوري الإيطالي · إيطاليا",era_nassr:"الدوري السعودي · الحاضر",era_por:"المنتخب · رقم قياسي عالمي",
       d_kicker:"الأرقام والأخبار",d_title:'كل كرة القدم، <span style="color:var(--gold)">هوسٌ واحد</span>',
       stat_career:"أهداف المسيرة",stat_ballon:"الكرات الذهبية",stat_goal:"الهدف",stat_ratio:"معدّل الأهداف لكل مباراة",
-      news_h3:"آخر أخبار كرة القدم",news_all:"كل الأخبار →",
+      news_h3:"آخر أخبار كرة القدم",news_all:"كل الأخبار →",news_promise:"نقرأ الصحافة نيابةً عنك — الأساسي، موثّق، بلا حشو.",news_orig:"اقرأ الأصل →",news_verified:"موثّق",
       foot_brand:"مركز كرة القدم العالمي والعد التنازلي المباشر نحو الهدف الألف لكريستيانو رونالدو.",
       disclaimer:'موقع جماهيري غير رسمي · كريستيانو رونالدو علامة تجارية تخص كريستيانو رونالدو. هذا الموقع غير مرتبط باللاعب أو أنديته أو الفيفا ولا يحظى بموافقتهم. محتوى تحريري لأغراض إعلامية.<br>الصور: <a href="https://unsplash.com" rel="noopener">Unsplash</a> · Wikimedia Commons.'}
   };
@@ -935,13 +947,26 @@
   function renderNews(){
     if(!NEWS)return; var items=(NEWS.items||[]).slice(0,6), grid=document.querySelector('.news-grid'); if(!grid||!items.length)return;
     grid.innerHTML=items.map(function(it){
-      var tr=(it.i18n&&it.i18n[LANG]&&it.i18n[LANG].title)||it.title||'';
-      var ps=it.primary_source||{}, cat=((ps.flag?ps.flag+' ':'')+(ps.name||'Football'));
+      var L=(it.i18n&&it.i18n[LANG])||{};
+      var tr=L.title||it.title||'';
+      var sum=L.summary||it.summary||'';
+      var ps=it.primary_source||{}, sname=(ps.flag?ps.flag+' ':'')+(ps.name||'Football');
+      var sc=parseInt(it.source_count||(it.sources?it.sources.length:1),10)||1;
+      var more=sc>1?(' +'+(sc-1)):'';
       var img=it.image_url||'/images/mockups/stadium-night.jpg';
+      var kind=it.kind==='cr7'?'<span class="kindtag">CR7</span>':'';
       return '<a class="card in" href="'+esc(it.url)+'" target="_blank" rel="noopener">'
-        +'<span class="thumb" style="background-image:url(\''+String(img).replace(/\x27/g,'%27')+'\')" aria-hidden="true"></span>'
-        +'<span class="body"><span class="cat">'+esc(cat)+'</span><h4>'+esc(tr)+'</h4>'
-        +'<time datetime="'+esc(it.published_at)+'">'+relTime(it.published_at)+'</time></span></a>';
+        +'<span class="thumb" style="background-image:url(\''+String(img).replace(/\x27/g,'%27')+'\')" aria-hidden="true">'+kind+'</span>'
+        +'<span class="body">'
+          +'<span class="cat">'+esc(sname)+'</span>'
+          +'<h4>'+esc(tr)+'</h4>'
+          +(sum?'<span class="sum">'+esc(sum)+'</span>':'')
+          +'<span class="meta">'
+            +'<span class="src"><span class="verif">✓</span>'+t('news_verified')+esc(more)+'</span>'
+            +'<time datetime="'+esc(it.published_at)+'">'+relTime(it.published_at)+'</time>'
+          +'</span>'
+          +'<span class="orig">'+t('news_orig')+'</span>'
+        +'</span></a>';
     }).join('');
   }
   function applyAll(){applyStatic();renderStats();renderNews();}
