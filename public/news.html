@@ -93,7 +93,7 @@
   .card .kindtag{position:absolute;left:11px;top:11px;z-index:2;font-family:'Oswald',sans-serif;font-weight:700;font-size:10px;letter-spacing:.12em;text-transform:uppercase;background:var(--gold);color:var(--ink);padding:3px 8px;border-radius:5px}
   .card .body{display:flex;flex-direction:column;gap:9px;padding:14px 16px 13px;flex:1}
   .card .cat{font-family:'Oswald',sans-serif;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
-  .card h4{font-family:'Oswald',sans-serif;font-weight:600;font-size:17px;line-height:1.22;color:var(--chalk)}
+  .card h4{font-family:'Oswald',sans-serif;font-weight:600;font-size:17px;line-height:1.22;color:var(--chalk);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
   .card .sum{font-size:13.5px;line-height:1.5;color:#aeb8c4;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
   .card .meta{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:9px;border-top:1px solid var(--line)}
   .card .src{display:inline-flex;align-items:center;gap:5px;font-family:'Oswald',sans-serif;font-size:11.5px;color:var(--mute)}
@@ -131,8 +131,8 @@
     </nav>
     <div class="right">
       <div class="lang-sw" role="group" aria-label="Language">
-        <button type="button" data-l="fr">FR</button><button type="button" data-l="en">EN</button>
-        <button type="button" data-l="es">ES</button><button type="button" data-l="ar">AR</button>
+        <button type="button" data-l="fr" aria-pressed="false">FR</button><button type="button" data-l="en" aria-pressed="false">EN</button>
+        <button type="button" data-l="es" aria-pressed="false">ES</button><button type="button" data-l="ar" aria-pressed="false">AR</button>
       </div>
       <a class="livepill" href="/#hero"><span class="dot" aria-hidden="true"></span><span id="pill">Live · 975</span></a>
     </div>
@@ -215,18 +215,24 @@
       document.querySelectorAll('[data-i18n]').forEach(function(e){var v=t(e.getAttribute('data-i18n'));if(v!=null)e.textContent=v;});
       document.querySelectorAll('[data-i18n-html]').forEach(function(e){var v=t(e.getAttribute('data-i18n-html'));if(v!=null)e.innerHTML=v;});
       document.querySelectorAll('[data-i18n-ph]').forEach(function(e){e.setAttribute('placeholder',t(e.getAttribute('data-i18n-ph')));});
-      document.querySelectorAll('.lang-sw button').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-l')===LANG);});
+      document.querySelectorAll('.lang-sw button').forEach(function(b){var on=b.getAttribute('data-l')===LANG;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on?'true':'false');});
+      var sb=document.getElementById('search');if(sb)sb.setAttribute('aria-label',t('search_ph'));
     }
+    function safeUrl(u){ return /^https?:\/\//i.test(u||'')?u:'#'; }
+    function cssUrl(u){ return String(u||'').replace(/['"()\s]/g, encodeURIComponent); }
     function card(it){
       var L=(it.i18n&&it.i18n[LANG])||{},tr=L.title||it.title||'',sum=L.summary||it.summary||'';
       var ps=it.primary_source||{},sname=(ps.flag?ps.flag+' ':'')+(ps.name||'Football');
-      var sc=parseInt(it.source_count||(it.sources?it.sources.length:1),10)||1,more=sc>1?(' +'+(sc-1)):'';
-      var img=it.image_url||'/images/mockups/stadium-night.jpg',kind=it.kind==='cr7'?'<span class="kindtag">CR7</span>':'';
-      return '<a class="card" href="'+esc(it.url)+'" target="_blank" rel="noopener">'
-        +'<span class="thumb" style="background-image:url(\''+String(img).replace(/\x27/g,'%27')+'\')" aria-hidden="true">'+kind+'</span>'
+      var sc=parseInt(it.source_count||(it.sources?it.sources.length:1),10)||1;
+      // crédibilité honnête : on met la source en avant ; ✓ multi-sources seulement si réellement recoupé
+      var cred=sc>1?('<span class="verif">✓</span>'+t('news_verified')+' · '+sc+' '+t('sources_word')):esc(sname);
+      var img=safeUrl(it.image_url)!=='#'?it.image_url:'/images/mockups/stadium-night.jpg';
+      var kind=it.kind==='cr7'?'<span class="kindtag">CR7</span>':'';
+      return '<a class="card" href="'+esc(safeUrl(it.url))+'" target="_blank" rel="noopener">'
+        +'<span class="thumb" style="background-image:url(\''+cssUrl(img)+'\')" aria-hidden="true">'+kind+'</span>'
         +'<span class="body"><span class="cat">'+esc(sname)+'</span><h4>'+esc(tr)+'</h4>'
         +(sum?'<span class="sum">'+esc(sum)+'</span>':'')
-        +'<span class="meta"><span class="src"><span class="verif">✓</span>'+t('news_verified')+esc(more)+'</span>'
+        +'<span class="meta"><span class="src">'+cred+'</span>'
         +'<time datetime="'+esc(it.published_at)+'">'+relTime(it.published_at)+'</time></span>'
         +'<span class="orig">'+t('news_orig')+'</span></span></a>';
     }
@@ -263,7 +269,7 @@
       var b=e.target.closest&&e.target.closest('.lang-sw button');if(b){setLang(b.getAttribute('data-l'));return;}
       var c=e.target.closest&&e.target.closest('.chip');if(c){document.querySelectorAll('.chip').forEach(function(x){x.classList.remove('active');});c.classList.add('active');FILTER=c.getAttribute('data-filter');render();}
     });
-    document.getElementById('search').addEventListener('input',function(e){Q=e.target.value;render();});
+    var _sd;document.getElementById('search').addEventListener('input',function(e){Q=e.target.value;clearTimeout(_sd);_sd=setTimeout(render,150);});
     document.getElementById('srcsel').addEventListener('change',function(e){SRC=e.target.value;render();});
 
     applyStatic();

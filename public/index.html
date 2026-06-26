@@ -157,7 +157,7 @@
         "name": "How many goals does Ronaldo need to reach 1000?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ronaldo needs 27 more goals to reach the historic milestone of 1000 career goals. He is currently at 975 goals scored since his professional debut in 2002."
+          "text": "Ronaldo needs 25 more goals to reach the historic milestone of 1000 career goals. He is currently at 975 goals scored since his professional debut in 2002."
         }
       },
       {
@@ -239,7 +239,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,500;8..30,600;8..30,700;8..30,900&family=Archivo:wght@300;400;500;600;700;800;900&family=DM+Mono:wght@400;500&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
   <style>
   :root{
     /* ESTÁDIO — cinematic broadcast palette */
@@ -585,20 +585,14 @@
   .lang-sw button:hover{color:var(--chalk)}
   .lang-sw button.active{background:var(--gold);color:var(--ink)}
   .lang-sw button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  html[dir="rtl"] body{font-family:'Cairo',system-ui,sans-serif}
   html[dir="rtl"] .match-copy,html[dir="rtl"] .news-head,html[dir="rtl"] .foot-brand,html[dir="rtl"] .inner>p.kicker{text-align:right}
   html[dir="rtl"] .news-head{flex-direction:row-reverse}
   html[dir="rtl"] .eras .era{direction:rtl}
-  @media(max-width:1079px){.lang-sw{display:none}}
+  @media(max-width:1079px){.lang-sw{padding:2px}.lang-sw button{padding:4px 7px;font-size:10.5px}}
 </style>
 <!-- PWA -->
   <link rel="manifest" href="/manifest.json">
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').catch(() => {});
-      });
-    }
-  </script>
 </head>
 <body>
 
@@ -639,7 +633,7 @@
       </figure>
 
       <!-- GRAND COMPTEUR — centerpiece, sous la célébration, visible en premier -->
-      <div class="counter-hero" role="group" aria-label="Compteur live des buts en carrière de Cristiano Ronaldo">
+      <div class="counter-hero" role="group" aria-live="polite" aria-label="Compteur live des buts en carrière de Cristiano Ronaldo">
         <span class="live"><span class="dot" aria-hidden="true"></span><span data-i18n="hero_live">Live · Buts carrière</span></span>
         <div class="ch-count">
           <span class="ch-num impact" aria-label="975 buts">975</span>

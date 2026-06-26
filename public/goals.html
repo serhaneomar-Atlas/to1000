@@ -11,14 +11,14 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cristiano Ronaldo All 973 Goals — Complete Career Goal Database | To1000.com</title>
-  <meta name="description" content="Complete database of every Cristiano Ronaldo career goal (973 total). Search and filter by club, competition, goal type. Stats for Sporting, Man Utd, Real Madrid, Juventus, Al Nassr, Portugal.">
+  <title>Cristiano Ronaldo All 975 Goals — Complete Career Goal Database | To1000.com</title>
+  <meta name="description" content="Complete database of every Cristiano Ronaldo career goal (975 total). Search and filter by club, competition, goal type. Stats for Sporting, Man Utd, Real Madrid, Juventus, Al Nassr, Portugal.">
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://to1000.com/goals.html">
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="All 973 CR7 Goals — Watch Every Single One | To1000.com">
-  <meta property="og:description" content="Browse and watch every career goal by Cristiano Ronaldo. Filter by club, foot, header, free kick. Full stats for all 973 goals.">
+  <meta property="og:title" content="All 975 CR7 Goals — Watch Every Single One | To1000.com">
+  <meta property="og:description" content="Browse and watch every career goal by Cristiano Ronaldo. Filter by club, foot, header, free kick. Full stats for all 975 goals.">
   <meta property="og:url" content="https://to1000.com/goals.html">
   <meta property="og:image" content="https://to1000.com/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -26,8 +26,8 @@
   <meta property="og:site_name" content="To1000.com">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="All 973 CR7 Goals — Watch Every Single One | To1000.com">
-  <meta name="twitter:description" content="Browse and watch every career goal by Cristiano Ronaldo. Filter by club, foot, header, free kick. Full stats for all 973 goals.">
+  <meta name="twitter:title" content="All 975 CR7 Goals — Watch Every Single One | To1000.com">
+  <meta name="twitter:description" content="Browse and watch every career goal by Cristiano Ronaldo. Filter by club, foot, header, free kick. Full stats for all 975 goals.">
   <meta name="twitter:image" content="https://to1000.com/og-image.png">
   <!-- SEO -->
   <meta name="keywords" content="Cristiano Ronaldo goals list, CR7 all goals, Ronaldo goal database, every Ronaldo goal, CR7 career goals video, Ronaldo goals by club">
@@ -45,7 +45,7 @@
     "@context": "https://schema.org",
     "@type": "Dataset",
     "name": "Cristiano Ronaldo Complete Career Goals Database",
-    "description": "Complete database of all 973 career goals scored by Cristiano Ronaldo, with date, opponent, competition, goal type, and video links.",
+    "description": "Complete database of all 975 career goals scored by Cristiano Ronaldo, with date, opponent, competition, goal type, and video links.",
     "url": "https://to1000.com/goals.html",
     "creator": {"@type": "Organization", "name": "To1000.com", "url": "https://to1000.com"},
     "about": {"@type": "Person", "name": "Cristiano Ronaldo", "alternateName": "CR7"}
@@ -518,7 +518,7 @@
       <button class="filter-btn" data-filter="club" data-value="Manchester United">Man Utd <span style="opacity:0.45;font-size:0.72em">145</span></button>
       <button class="filter-btn" data-filter="club" data-value="Real Madrid">Real Madrid <span style="opacity:0.45;font-size:0.72em">450</span></button>
       <button class="filter-btn" data-filter="club" data-value="Juventus FC">Juventus <span style="opacity:0.45;font-size:0.72em">101</span></button>
-      <button class="filter-btn" data-filter="club" data-value="Al Nassr">Al Nassr <span style="opacity:0.45;font-size:0.72em">123</span></button>
+      <button class="filter-btn" data-filter="club" data-value="Al Nassr">Al Nassr <span style="opacity:0.45;font-size:0.72em">124</span></button>
       <button class="filter-btn" data-filter="club" data-value="Portugal">🇵🇹 Portugal <span style="opacity:0.45;font-size:0.72em">143</span></button>
     </div>
     <!-- Row 2: Type buttons — scrollable, always fully visible -->
@@ -637,6 +637,7 @@
     'Manchester United (Return)': './images/logo-manutd.svg',
     'Real Madrid': './images/logo-realmadrid.svg',
     'Juventus': './images/logo-juventus.svg',
+    'Juventus FC': './images/logo-juventus.svg',
     'Al Nassr': './images/logo-alnassr.svg',
     'Portugal': './images/logo-portugal.svg',
   };
@@ -646,6 +647,7 @@
     'Manchester United':'Man United',
     'Real Madrid':'Real Madrid',
     'Juventus':'Juventus',
+    'Juventus FC':'Juventus',
     'Al Nassr':'Al Nassr',
     'Portugal':'Portugal',
   };
@@ -738,7 +740,7 @@
     set('sumHead', g.filter(x => x.type === 'header').length);
     set('sumPenalty', g.filter(x => x.type === 'penalty').length);
     set('sumFK', g.filter(x => x.type === 'fk').length);
-    set('sumBicycle', g.filter(x => x.type === 'bicycle').length);
+    set('sumBicycle', g.filter(x => (x.tags||[]).includes('bicycle-kick')).length);
   }
 
   function updateResultsBar() {
