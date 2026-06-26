@@ -32,7 +32,7 @@
   <!-- SEO -->
   <meta name="keywords" content="Cristiano Ronaldo goals list, CR7 all goals, Ronaldo goal database, every Ronaldo goal, CR7 career goals video, Ronaldo goals by club">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#060606">
+  <meta name="theme-color" content="#05070b">
   <!-- Hreflang -->
   <link rel="alternate" hreflang="en" href="https://to1000.com/goals">
   <link rel="alternate" hreflang="fr" href="https://to1000.com/goals?lang=fr">
@@ -53,18 +53,18 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
     :root {
-      --gold: #D4AF37;
-      --gold-dim: rgba(212,175,55,0.15);
-      --gold-border: rgba(212,175,55,0.25);
-      --bg: #060606;
-      --bg-card: #0D0D0D;
-      --bg-row: #080808;
-      --bg-row-alt: #0C0C0C;
-      --white: #F0F0F0;
+      --gold: #f2c14e;
+      --gold-dim: rgba(242,193,78,0.15);
+      --gold-border: rgba(242,193,78,0.25);
+      --bg: #05070b;
+      --bg-card: #0d1118;
+      --bg-row: #0a0d13;
+      --bg-row-alt: #0e131b;
+      --white: #eef2f6;
       --dim: rgba(255,255,255,0.35);
       --faint: rgba(255,255,255,0.08);
       --border: rgba(255,255,255,0.05);
@@ -72,13 +72,13 @@
     }
     html { scroll-behavior: smooth; }
     body {
-      font-family: 'Inter', -apple-system, sans-serif;
+      font-family: 'Hanken Grotesk', -apple-system, sans-serif;
       background: var(--bg);
       color: var(--white);
       min-height: 100vh;
       -webkit-font-smoothing: antialiased;
     }
-    ::selection { background: rgba(212,175,55,0.25); }
+    ::selection { background: rgba(242,193,78,0.25); }
 
     /* ─── NAV ─────────────────────────────────────────────────────── */
     nav {
@@ -89,7 +89,7 @@
       backdrop-filter: blur(24px);
       border-bottom: 1px solid var(--border);
     }
-    .nav-logo { color: var(--gold); font-weight: 800; font-size: 1.05rem; letter-spacing: 0.1em; text-decoration: none; }
+    .nav-logo { font-family:'Anton',sans-serif; color: var(--gold); font-weight: 800; font-size: 1.05rem; letter-spacing: 0.1em; text-decoration: none; }
     .nav-logo span { color: white; }
     .nav-right { display: flex; align-items: center; gap: 1.5rem; }
     .nav-back {
@@ -109,7 +109,7 @@
     .page-hero::before {
       content: '';
       position: absolute; inset: 0;
-      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(212,175,55,0.07) 0%, transparent 70%);
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(242,193,78,0.07) 0%, transparent 70%);
       pointer-events: none;
     }
     .hero-eyebrow {
@@ -120,7 +120,7 @@
       text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem;
     }
     .page-hero h1 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Anton', sans-serif;
       font-size: clamp(2rem, 6vw, 3.8rem);
       font-weight: 900;
       line-height: 1.05;
@@ -136,7 +136,7 @@
       gap: 0;
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
-      background: rgba(212,175,55,0.02);
+      background: rgba(242,193,78,0.02);
     }
     .summary-item {
       text-align: center;
@@ -145,13 +145,13 @@
       transition: background 0.2s;
     }
     .summary-item:last-child { border-right: none; }
-    .summary-item:hover { background: rgba(212,175,55,0.04); }
+    .summary-item:hover { background: rgba(242,193,78,0.04); }
     .summary-num {
       font-size: 1.6rem; font-weight: 900;
       color: var(--gold); line-height: 1;
       font-variant-numeric: tabular-nums;
     }
-    .summary-num.loading { color: rgba(212,175,55,0.3); animation: pulse 1.2s infinite; }
+    .summary-num.loading { color: rgba(242,193,78,0.3); animation: pulse 1.2s infinite; }
     .summary-label { font-size: 0.65rem; color: rgba(255,255,255,0.25); text-transform: uppercase; letter-spacing: 0.1em; margin-top: 4px; }
     @keyframes pulse { 0%,100%{opacity:0.4} 50%{opacity:1} }
 
@@ -190,8 +190,8 @@
       font-size: 0.73rem; font-weight: 500; font-family: inherit;
       cursor: pointer; transition: all 0.15s; white-space: nowrap; flex-shrink: 0;
     }
-    .filter-btn:hover { background: rgba(212,175,55,0.07); border-color: rgba(212,175,55,0.2); color: rgba(255,255,255,0.8); }
-    .filter-btn.active { background: rgba(212,175,55,0.12); border-color: var(--gold); color: var(--gold); }
+    .filter-btn:hover { background: rgba(242,193,78,0.07); border-color: rgba(242,193,78,0.2); color: rgba(255,255,255,0.8); }
+    .filter-btn.active { background: rgba(242,193,78,0.12); border-color: var(--gold); color: var(--gold); }
     .filter-sep { width: 1px; height: 18px; background: var(--border); flex-shrink: 0; margin: 0 0.15rem; }
     .filter-right { display: flex; align-items: center; gap: 0.5rem; margin-left: auto; }
     .filter-search {
@@ -203,7 +203,7 @@
       outline: none; width: 200px; transition: border-color 0.2s;
     }
     .filter-search::placeholder { color: rgba(255,255,255,0.18); }
-    .filter-search:focus { border-color: rgba(212,175,55,0.35); }
+    .filter-search:focus { border-color: rgba(242,193,78,0.35); }
     .filter-clear {
       font-size: 0.7rem; color: rgba(255,255,255,0.2);
       cursor: pointer; font-family: inherit; background: none; border: none;
@@ -226,7 +226,7 @@
       left: 0; right: 0;
       z-index: 80;
       background: #151515;
-      border-bottom: 2px solid rgba(212,175,55,0.25);
+      border-bottom: 2px solid rgba(242,193,78,0.25);
       box-shadow: 0 4px 16px rgba(0,0,0,0.6);
     }
     .thead-float.visible { display: block; }
@@ -252,8 +252,8 @@
     /* ─── RESULTS BAR ─────────────────────────────────────────────── */
     .db-gap-banner {
       max-width: 1180px; margin: 0 auto 0.6rem; padding: 0.6rem 0.9rem;
-      border: 1px solid rgba(212,175,55,0.28); border-radius: 10px;
-      background: rgba(212,175,55,0.06); color: rgba(255,255,255,0.7);
+      border: 1px solid rgba(242,193,78,0.28); border-radius: 10px;
+      background: rgba(242,193,78,0.06); color: rgba(255,255,255,0.7);
       font-size: 0.8rem; line-height: 1.45;
     }
     .results-bar {
@@ -273,7 +273,7 @@
     }
     .spinner {
       width: 36px; height: 36px;
-      border: 2px solid rgba(212,175,55,0.1);
+      border: 2px solid rgba(242,193,78,0.1);
       border-top-color: var(--gold);
       border-radius: 50%;
       animation: spin 0.8s linear infinite;
@@ -296,7 +296,7 @@
       font-size: 0.63rem; font-weight: 700;
       text-transform: uppercase; letter-spacing: 0.12em;
       color: rgba(255,255,255,0.6);
-      border-bottom: 2px solid rgba(212,175,55,0.25);
+      border-bottom: 2px solid rgba(242,193,78,0.25);
       white-space: nowrap; cursor: pointer;
       transition: color 0.2s; user-select: none;
     }
@@ -312,11 +312,11 @@
     .goals-table tbody tr.goal-row:nth-child(4n+2) { background: var(--bg-row); }
     .goals-table tbody tr.goal-row:nth-child(4n+3),
     .goals-table tbody tr.goal-row:nth-child(4n+4) { background: var(--bg-row-alt); }
-    .goals-table tbody tr.goal-row:hover { background: rgba(212,175,55,0.04); }
+    .goals-table tbody tr.goal-row:hover { background: rgba(242,193,78,0.04); }
     .goals-table tbody tr.goal-row.is-milestone { border-left: 2px solid var(--gold); }
     .goals-table td { padding: 0.7rem 1.1rem; color: rgba(255,255,255,0.65); white-space: nowrap; }
     .goal-num { font-weight: 800; color: var(--gold); font-size: 0.88rem; min-width: 52px; }
-    .goal-num.is-big { font-size: 1rem; text-shadow: 0 0 10px rgba(212,175,55,0.4); }
+    .goal-num.is-big { font-size: 1rem; text-shadow: 0 0 10px rgba(242,193,78,0.4); }
     .goal-club { display: flex; align-items: center; gap: 7px; }
     .club-logo { width: 18px; height: 18px; object-fit: contain; background: rgba(255,255,255,0.9); border-radius: 3px; padding: 1px; flex-shrink: 0; }
     .goal-type {
@@ -342,9 +342,9 @@
     .goal-detail.open { display: table-row; }
     .goal-detail td {
       padding: 1rem 1.5rem 1.2rem 3rem;
-      background: rgba(212,175,55,0.025);
+      background: rgba(242,193,78,0.025);
       border-left: 2px solid var(--gold);
-      border-bottom: 1px solid rgba(212,175,55,0.1);
+      border-bottom: 1px solid rgba(242,193,78,0.1);
       white-space: normal; font-size: 0.8rem;
       color: rgba(255,255,255,0.5); line-height: 1.65;
     }
@@ -372,7 +372,7 @@
     .detail-btn-share:hover { background: rgba(255,255,255,0.09); color: white; }
     .milestone-badge {
       display: inline-flex; align-items: center; gap: 0.3rem;
-      background: rgba(212,175,55,0.15); border: 1px solid rgba(212,175,55,0.3);
+      background: rgba(242,193,78,0.15); border: 1px solid rgba(242,193,78,0.3);
       color: var(--gold); font-size: 0.65rem; font-weight: 700;
       padding: 2px 8px; border-radius: 10px; text-transform: uppercase;
       letter-spacing: 0.08em; margin-bottom: 0.5rem;
@@ -397,8 +397,8 @@
       color: rgba(255,255,255,0.35); font-size: 0.78rem; font-family: inherit;
       cursor: pointer; transition: all 0.15s; white-space: nowrap;
     }
-    .page-btn:hover:not(:disabled) { background: rgba(212,175,55,0.07); border-color: rgba(212,175,55,0.3); color: white; }
-    .page-btn.active { background: rgba(212,175,55,0.13); border-color: var(--gold); color: var(--gold); font-weight: 700; }
+    .page-btn:hover:not(:disabled) { background: rgba(242,193,78,0.07); border-color: rgba(242,193,78,0.3); color: white; }
+    .page-btn.active { background: rgba(242,193,78,0.13); border-color: var(--gold); color: var(--gold); font-weight: 700; }
     .page-btn:disabled { opacity: 0.25; cursor: not-allowed; }
     .page-ellipsis { color: rgba(255,255,255,0.15); padding: 0.45rem 0.3rem; font-size: 0.8rem; }
 
@@ -422,7 +422,7 @@
     .video-modal.open { display: flex; }
     .video-modal-inner {
       width: 90%; max-width: 860px;
-      background: #0d0d0d; border: 1px solid rgba(212,175,55,0.2);
+      background: #0d0d0d; border: 1px solid rgba(242,193,78,0.2);
       border-radius: 12px; overflow: hidden;
     }
     .video-modal-header {
@@ -476,7 +476,7 @@
   .lang-switcher { display:flex; gap:2px; align-items:center; }
   .lang-btn { background:transparent; border:1px solid rgba(255,255,255,0.15); color:rgba(255,255,255,0.4); font-size:0.7rem; font-weight:600; letter-spacing:.03em; padding:3px 8px; border-radius:4px; cursor:pointer; transition:all .15s; }
   .lang-btn:hover { color:rgba(255,255,255,0.8); border-color:rgba(255,255,255,0.4); }
-  .lang-btn.active { background:rgba(212,175,55,0.15); border-color:var(--gold); color:var(--gold); }
+  .lang-btn.active { background:rgba(242,193,78,0.15); border-color:var(--gold); color:var(--gold); }
   </style>
 </head>
 <body>
@@ -1261,7 +1261,7 @@
     const isAr = lang === 'ar';
     document.documentElement.setAttribute('dir', isAr ? 'rtl' : 'ltr');
     document.documentElement.setAttribute('lang', lang);
-    document.body.style.fontFamily = isAr ? "'Cairo', 'Inter', sans-serif" : "'Inter', sans-serif";
+    document.body.style.fontFamily = isAr ? "'Cairo', 'Hanken Grotesk', sans-serif" : "'Hanken Grotesk', sans-serif";
     // Update nav buttons
     document.querySelectorAll('.lang-btn').forEach(b => {
       b.classList.toggle('active', b.dataset.lang === lang);
