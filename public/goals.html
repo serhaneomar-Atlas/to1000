@@ -250,6 +250,12 @@
     .thead-float-cell.sorted { color: var(--gold); }
 
     /* ─── RESULTS BAR ─────────────────────────────────────────────── */
+    .db-gap-banner {
+      max-width: 1180px; margin: 0 auto 0.6rem; padding: 0.6rem 0.9rem;
+      border: 1px solid rgba(212,175,55,0.28); border-radius: 10px;
+      background: rgba(212,175,55,0.06); color: rgba(255,255,255,0.7);
+      font-size: 0.8rem; line-height: 1.45;
+    }
     .results-bar {
       display: flex; align-items: center; justify-content: space-between;
       padding: 0.6rem 2rem;
@@ -558,11 +564,12 @@
     <span id="resultsCount">Loading…</span>
     <span id="resultsPage"></span>
   </div>
+  <div class="db-gap-banner" id="dbGapBanner" role="status" hidden></div>
 
   <!-- TABLE / LOADING -->
   <div id="loadingState" class="loading-state">
     <div class="spinner"></div>
-    <div class="loading-text" data-i18n="loading_text">Loading 973 goals…</div>
+    <div class="loading-text" data-i18n="loading_text">Loading 975 goals…</div>
   </div>
   <div class="goals-table-wrap" id="tableWrap" style="display:none">
     <table class="goals-table">
@@ -624,11 +631,15 @@
 
   const TYPE_LABELS = {
     right:'Right Foot', left:'Left Foot', header:'Header',
-    penalty:'Penalty', fk:'Free Kick', bicycle:'Bicycle Kick'
+    penalty:'Penalty', fk:'Free Kick', bicycle:'Bicycle Kick',
+    'long-range':'Long Range', 'tap-in':'Tap-in', 'penalty-rebound':'Penalty (rebound)',
+    deflection:'Deflection', other:'Other'
   };
   const TYPE_CLASS = {
     right:'type-right', left:'type-left', header:'type-header',
-    penalty:'type-penalty', fk:'type-fk', bicycle:'type-bicycle'
+    penalty:'type-penalty', fk:'type-fk', bicycle:'type-bicycle',
+    'long-range':'type-fk', 'tap-in':'type-right', 'penalty-rebound':'type-penalty',
+    deflection:'type-header', other:''
   };
 
   const LOGOS = {
@@ -823,21 +834,27 @@
         </div>
       </td>`;
 
-      tr.addEventListener('click', () => {
+      tr.tabIndex = 0;
+      tr.setAttribute('role', 'button');
+      tr.setAttribute('aria-expanded', 'false');
+      const toggleRow = () => {
         const isOpen = detailTr.classList.contains('open');
         if (expandedRow && expandedRow !== detailTr) {
           expandedRow.classList.remove('open');
-          expandedRow.previousElementSibling.classList.remove('expanded');
+          const prev = expandedRow.previousElementSibling;
+          if (prev) { prev.classList.remove('expanded'); prev.setAttribute('aria-expanded','false'); }
         }
         if (isOpen) {
-          detailTr.classList.remove('open');
-          tr.classList.remove('expanded');
-          expandedRow = null;
+          detailTr.classList.remove('open'); tr.classList.remove('expanded');
+          tr.setAttribute('aria-expanded','false'); expandedRow = null;
         } else {
-          detailTr.classList.add('open');
-          tr.classList.add('expanded');
-          expandedRow = detailTr;
+          detailTr.classList.add('open'); tr.classList.add('expanded');
+          tr.setAttribute('aria-expanded','true'); expandedRow = detailTr;
         }
+      };
+      tr.addEventListener('click', toggleRow);
+      tr.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleRow(); }
       });
 
       body.appendChild(tr);
@@ -1010,6 +1027,7 @@
 
   // ─── VIDEO MODAL ───────────────────────────────────────────────────────────
   function openVideoModal(title, goalNum, searchUrl, videoSec) {
+    window.__modalTrigger = document.activeElement;
     // Use exact timestamp extracted from the video, or null if goal is post-video
     const approxSec = (videoSec != null) ? videoSec : null;
     const ytCompUrl = approxSec != null
@@ -1065,11 +1083,14 @@
             ${approxSec != null ? t('modal_ts_ok') : t('modal_ts_after')}
           </p>
         </div>`;
-    document.getElementById('videoModal').classList.add('open');
+    var _vm = document.getElementById('videoModal');
+    _vm.classList.add('open');
+    _vm.setAttribute('tabindex','-1'); _vm.focus();
   }
   function closeVideoModal() {
     document.getElementById('videoModal').classList.remove('open');
     document.getElementById('modalContent').innerHTML = '';
+    if (window.__modalTrigger && window.__modalTrigger.focus) { window.__modalTrigger.focus(); window.__modalTrigger = null; }
   }
   function closeModal(e) {
     if (e.target === document.getElementById('videoModal')) closeVideoModal();
@@ -1091,7 +1112,7 @@
       btn_milestones:'★ Milestones', btn_clear:'Clear all',
       search_ph:'🔍  Search opponent, cup…',
       per25:'25 / page', per50:'50 / page', per100:'100 / page',
-      loading_text:'Loading 973 goals…',
+      loading_text:'Loading 975 goals…',
       th_date:'Date', th_club:'Club', th_opponent:'Opponent', th_type:'Type',
       th_min:'Min', th_result:'Result', th_comp:'Competition',
       lbl_season:'Season', lbl_venue:'Venue', lbl_assist:'Assist', lbl_type:'Type',
@@ -1112,7 +1133,8 @@
       modal_coming_soon_title:'🎬 Video Coming Soon',
       modal_coming_soon_desc:'This goal was scored after goal #964 — individual clips for these recent goals will be added as they become available on YouTube.',
       modal_search_hint:'Scored after the 964-goal compilation — find the clip on YouTube:',
-      modal_search_btn:'Search on YouTube'
+      modal_search_btn:'Search on YouTube',
+      db_gap:'ℹ️ Goals #{from}–{to} were scored recently — their full match cards are coming soon. Live career total: {n}.'
     },
     fr: {
       nav_loading: 'Chargement…', nav_back: 'Retour au Compte à rebours',
@@ -1148,7 +1170,8 @@
       modal_coming_soon_title:'🎬 Vidéo à Venir',
       modal_coming_soon_desc:'Ce but a été marqué après le but #964 — les clips individuels seront ajoutés au fur et à mesure qu\'ils seront disponibles sur YouTube.',
       modal_search_hint:'Marqué après la compilation des 964 buts — trouve le clip sur YouTube :',
-      modal_search_btn:'Chercher sur YouTube'
+      modal_search_btn:'Chercher sur YouTube',
+      db_gap:'ℹ️ Les buts #{from}–{to} ont été marqués récemment — leurs fiches détaillées arrivent. Total live en carrière : {n}.'
     },
     es: {
       nav_loading: 'Cargando…', nav_back: 'Volver a la Cuenta atrás',
@@ -1184,7 +1207,8 @@
       modal_coming_soon_title:'🎬 Vídeo Próximamente',
       modal_coming_soon_desc:'Este gol fue marcado después del gol #964 — los clips individuales se añadirán a medida que estén disponibles en YouTube.',
       modal_search_hint:'Marcado tras la compilación de 964 goles — encuentra el clip en YouTube:',
-      modal_search_btn:'Buscar en YouTube'
+      modal_search_btn:'Buscar en YouTube',
+      db_gap:'ℹ️ Los goles #{from}–{to} se marcaron recientemente — sus fichas llegan pronto. Total live de carrera: {n}.'
     },
     ar: {
       nav_loading: 'جارٍ التحميل…', nav_back: 'العودة إلى العدّ التنازلي',
@@ -1220,7 +1244,8 @@
       modal_coming_soon_title:'🎬 الفيديو قريباً',
       modal_coming_soon_desc:'سُجِّل هذا الهدف بعد الهدف #964 — ستُضاف مقاطع الفيديو الفردية فور توفّرها على يوتيوب.',
       modal_search_hint:'سُجِّل بعد تجميعة الـ964 هدفاً — جد المقطع على يوتيوب:',
-      modal_search_btn:'ابحث على يوتيوب'
+      modal_search_btn:'ابحث على يوتيوب',
+      db_gap:'ℹ️ سُجّلت الأهداف #{from}–{to} مؤخراً — بطاقاتها التفصيلية قريباً. الإجمالي المباشر للمسيرة: {n}.'
     }
   };
 
@@ -1273,6 +1298,16 @@
   // dans GOALS_INLINE_DATA) ni aux references "964 ... compilation" (video YT).
   let _liveGoalsCount = LIVE_GOALS;
 
+  function updateDbGap() {
+    var el = document.getElementById('dbGapBanner');
+    if (!el || typeof ALL_GOALS === 'undefined') return;
+    var dbN = ALL_GOALS.length, liveN = _liveGoalsCount;
+    if (liveN > dbN) {
+      el.innerHTML = (t('db_gap') || '').replace('{from}', dbN + 1).replace('{to}', liveN).replace('{n}', liveN);
+      el.hidden = false;
+    } else { el.hidden = true; }
+  }
+  window.addEventListener('DOMContentLoaded', function(){ setTimeout(updateDbGap, 60); });
   function patchLiveCount(n) {
     if (!n || isNaN(n)) return;
     _liveGoalsCount = n;
@@ -1285,6 +1320,7 @@
     // valeur live comme reference headline.
     const navCount = document.getElementById('navCount');
     if (navCount) navCount.textContent = n + ' goals';
+    updateDbGap();
   }
 
   async function fetchLiveGoals() {
