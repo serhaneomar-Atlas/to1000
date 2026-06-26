@@ -664,7 +664,7 @@
   // scripts/update_html_counts.py (pattern "const LIVE_GOALS = N").
   // La base inline ci-dessous (GOALS_INLINE_DATA) peut contenir moins
   // d'entrees que LIVE_GOALS si les derniers buts n'ont pas encore de fiche.
-  const LIVE_GOALS = 973;
+  const LIVE_GOALS = 975;
   let ALL_GOALS = [];
   let filteredGoals = [];
   let currentPage = 1;
@@ -1030,10 +1030,16 @@
     const isPostVideo = (goalNum > 964 && approxSec === null);
 
     document.getElementById('modalContent').innerHTML = isPostVideo
-      ? `<div style="text-align:center; padding:1.5rem 1rem 1rem">
-          <div style="font-size:2.5rem; margin-bottom:0.75rem">🎬</div>
-          <p style="font-size:1rem; font-weight:700; color:#fff; margin:0 0 0.5rem">${t('modal_coming_soon_title').replace('🎬','').trim()}</p>
-          <p style="font-size:0.78rem; color:rgba(255,255,255,0.45); line-height:1.5; margin:0">${t('modal_coming_soon_desc')}</p>
+      ? `<div style="border-top:1px solid rgba(255,255,255,0.08); padding-top:0.75rem">
+          <p style="margin:0 0 0.6rem; font-size:0.72rem; color:rgba(255,255,255,0.4); text-align:center">${t('modal_search_hint')}</p>
+          <a href="${searchUrl}" target="_blank" rel="noopener" style="display:block; position:relative; border-radius:8px; overflow:hidden; background:#0b0f16; aspect-ratio:16/9; border:1px solid rgba(255,255,255,0.1)">
+            <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px">
+              <div style="width:62px;height:62px;background:rgba(255,0,0,0.92);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 16px rgba(0,0,0,0.6)">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <span style="font-family:'Oswald',sans-serif;font-size:0.82rem;color:#fff;font-weight:600;letter-spacing:.04em;text-transform:uppercase">${t('modal_search_btn')}</span>
+            </div>
+          </a>
         </div>`
       : `<div style="border-top:1px solid rgba(255,255,255,0.08); padding-top:0.75rem">
           <p style="margin:0 0 0.6rem; font-size:0.72rem; color:rgba(255,255,255,0.35); text-align:center">
@@ -1102,7 +1108,9 @@
       modal_ts_ok:'✅ Timestamp extracted directly from the video',
       modal_ts_after:'⚠ This goal is after the video (after goal 964)',
       modal_coming_soon_title:'🎬 Video Coming Soon',
-      modal_coming_soon_desc:'This goal was scored after goal #964 — individual clips for these recent goals will be added as they become available on YouTube.'
+      modal_coming_soon_desc:'This goal was scored after goal #964 — individual clips for these recent goals will be added as they become available on YouTube.',
+      modal_search_hint:'Scored after the 964-goal compilation — find the clip on YouTube:',
+      modal_search_btn:'Search on YouTube'
     },
     fr: {
       nav_loading: 'Chargement…', nav_back: 'Retour au Compte à rebours',
@@ -1136,7 +1144,9 @@
       modal_ts_ok:'✅ Timestamp extrait directement de la vidéo',
       modal_ts_after:'⚠ Ce but est postérieur à la vidéo (après le but 964)',
       modal_coming_soon_title:'🎬 Vidéo à Venir',
-      modal_coming_soon_desc:'Ce but a été marqué après le but #964 — les clips individuels seront ajoutés au fur et à mesure qu\'ils seront disponibles sur YouTube.'
+      modal_coming_soon_desc:'Ce but a été marqué après le but #964 — les clips individuels seront ajoutés au fur et à mesure qu\'ils seront disponibles sur YouTube.',
+      modal_search_hint:'Marqué après la compilation des 964 buts — trouve le clip sur YouTube :',
+      modal_search_btn:'Chercher sur YouTube'
     },
     es: {
       nav_loading: 'Cargando…', nav_back: 'Volver a la Cuenta atrás',
@@ -1170,7 +1180,9 @@
       modal_ts_ok:'✅ Timestamp extraído directamente del vídeo',
       modal_ts_after:'⚠ Este gol es posterior al vídeo (después del gol 964)',
       modal_coming_soon_title:'🎬 Vídeo Próximamente',
-      modal_coming_soon_desc:'Este gol fue marcado después del gol #964 — los clips individuales se añadirán a medida que estén disponibles en YouTube.'
+      modal_coming_soon_desc:'Este gol fue marcado después del gol #964 — los clips individuales se añadirán a medida que estén disponibles en YouTube.',
+      modal_search_hint:'Marcado tras la compilación de 964 goles — encuentra el clip en YouTube:',
+      modal_search_btn:'Buscar en YouTube'
     },
     ar: {
       nav_loading: 'جارٍ التحميل…', nav_back: 'العودة إلى العدّ التنازلي',
@@ -1204,7 +1216,9 @@
       modal_ts_ok:'✅ الطابع الزمني مأخوذ مباشرةً من الفيديو',
       modal_ts_after:'⚠ هذا الهدف لم يُدرج في التجميعة بعد (بعد الهدف 964)',
       modal_coming_soon_title:'🎬 الفيديو قريباً',
-      modal_coming_soon_desc:'سُجِّل هذا الهدف بعد الهدف #964 — ستُضاف مقاطع الفيديو الفردية فور توفّرها على يوتيوب.'
+      modal_coming_soon_desc:'سُجِّل هذا الهدف بعد الهدف #964 — ستُضاف مقاطع الفيديو الفردية فور توفّرها على يوتيوب.',
+      modal_search_hint:'سُجِّل بعد تجميعة الـ964 هدفاً — جد المقطع على يوتيوب:',
+      modal_search_btn:'ابحث على يوتيوب'
     }
   };
 
