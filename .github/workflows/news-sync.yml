@@ -49,11 +49,17 @@ jobs:
             echo "hash=none" >> $GITHUB_OUTPUT
           fi
 
-      - name: Run news aggregator (with translation if GEMINI_API_KEY set)
+      - name: Run news aggregator (editorial summaries if GEMINI_API_KEY set)
         env:
-          # Optional: get a free key at https://aistudio.google.com/app/apikey
-          # Without it, translations are skipped (items shown in source language).
+          # Get a free key at https://aistudio.google.com/app/apikey
+          # With it: one Gemini call per new item rewrites a concise, neutral
+          # "essential" summary (no clickbait) + title in FR/EN/ES/AR.
+          # Without it: graceful fallback to literal translation, then to the
+          # source-language excerpt — the pipeline never breaks.
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Skip the slow MyMemory fallback in CI (it can exceed the job timeout
+          # on a Gemini outage); untranslated items degrade to source language.
+          DISABLE_MYMEMORY: "1"
         run: python scripts/news_aggregator.py
 
       - name: Generate SEO HTML pages for each news item

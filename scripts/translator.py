@@ -106,7 +106,7 @@ class Translator:
             "gemini_enabled": self.gemini_enabled,
         }
 
-    def _call_gemini(self, system: str, user: str) -> Optional[str]:
+    def _call_gemini(self, system: str, user: str, max_tokens: int = 500) -> Optional[str]:
         if not self.gemini_enabled:
             return None
         url = GEMINI_URL_TMPL.format(model=GEMINI_MODEL, key=self.api_key)
@@ -114,7 +114,7 @@ class Translator:
             "systemInstruction": {"parts": [{"text": system}]},
             "contents": [{"role": "user", "parts": [{"text": user}]}],
             "generationConfig": {
-                "temperature": 0.3, "maxOutputTokens": 500,
+                "temperature": 0.3, "maxOutputTokens": max_tokens,
                 "responseMimeType": "application/json",
             },
         }).encode("utf-8")
@@ -206,6 +206,62 @@ class Translator:
             return json.loads(text[start:end])
         except json.JSONDecodeError:
             return None
+
+    def editorialize_pair(self, title: str, summary: str, src: str,
+                          targets: list) -> Optional[dict]:
+        """One Gemini call → {lang: {title, summary, ...}} for src + targets.
+
+        `summary` is a concise, NEUTRAL 'essential' rewrite (the key facts to
+        retain), not a literal translation — this is the editorial digest the
+        reader gets so they don't need to open the article. Returns None if
+        Gemini is disabled, fails, or comes back incomplete, so the caller can
+        fall back to literal translate_pair().
+        """
+        if not self.gemini_enabled:
+            return None
+        title = (title or "").strip()
+        summary = (summary or "").strip()
+        if not title:
+            return None
+        langs = list(dict.fromkeys([src] + [t for t in targets if t != src]))
+        cache_key = "edi:" + hash_key(title + "|" + summary[:200], src, ",".join(langs))
+        if self.cache:
+            cached = self.cache.get(cache_key)
+            if cached:
+                self._cache_hits += 1
+                return cached
+        names = ", ".join(f'"{l}" ({LANG_NAMES.get(l, l)})' for l in langs)
+        system = (
+            "You are a senior multilingual football news editor. From the source "
+            "title and text, output a JSON object with ONE key per language code "
+            f"({names}). For each language provide: \"title\" = a faithful, natural "
+            "translation of the title; \"summary\" = the ESSENTIAL information to "
+            "retain, rewritten concisely. Summary rules: 1 to 2 sentences, ~35 words "
+            "max, neutral and factual, straight to the point — the reader should not "
+            "need to open the article. Forbidden: clickbait, hype adjectives, "
+            "exclamation marks, rhetorical questions, 'read more' calls, filler. "
+            "Keep only key facts (who, what, numbers, stakes). Preserve proper nouns. "
+            'Respond with valid JSON only: {"fr":{"title":"...","summary":"..."}, ...}'
+        )
+        user = json.dumps({"source_lang": src, "title": title,
+                           "text": (summary or title)[:800]}, ensure_ascii=False)
+        raw = self._call_gemini(system, user, max_tokens=1100)
+        parsed = self._parse_json_block(raw) if raw else None
+        if not parsed:
+            return None
+        out: dict = {}
+        for l in langs:
+            e = parsed.get(l) or {}
+            t = str(e.get("title", "")).strip()[:300]
+            s = str(e.get("summary", "")).strip()[:600]
+            if t or s:
+                out[l] = {"title": t or title, "summary": s or summary,
+                          "needs_translation": False, "engine": "gemini-edi"}
+        if len(out) < len(langs):   # incomplete → let caller fall back
+            return None
+        if self.cache:
+            self.cache.set(cache_key, out)
+        return out
 
     def translate_pair(self, title: str, summary: str, src: str,
                        targets: list) -> dict:

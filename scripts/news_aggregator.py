@@ -552,7 +552,19 @@ def main() -> int:
 
         # i18n payload: {lang: {title, summary, needs_translation}}
         # Always includes the source lang as authoritative original.
-        if translator:
+        # Preferred path (Gemini): editorialize_pair rewrites a concise NEUTRAL
+        # "essential" summary in every language in one call (no clickbait, the
+        # facts to retain) and translates the title. Falls back to literal
+        # translation, then to source-language passthrough.
+        if translator and getattr(translator, "gemini_enabled", False):
+            i18n = translator.editorialize_pair(title, summary, src=src_lang, targets=targets)
+            if i18n:
+                essential = (i18n.get(src_lang) or {}).get("summary")
+                if essential:
+                    summary = essential   # canonical summary = the essential digest
+            else:
+                i18n = translator.translate_pair(title, summary, src=src_lang, targets=targets)
+        elif translator:
             i18n = translator.translate_pair(title, summary, src=src_lang, targets=targets)
         else:
             i18n = {l: {"title": title, "summary": summary, "needs_translation": (l != src_lang)}
