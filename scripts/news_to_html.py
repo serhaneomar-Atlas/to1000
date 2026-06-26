@@ -157,7 +157,7 @@ def render_article(item: dict, all_items: list | None = None) -> str:
     pub_iso = pub.isoformat() if pub else datetime.now(timezone.utc).isoformat()
     pub_human = pub.strftime("%-d %B %Y") if pub and sys.platform != "win32" else (pub.strftime("%d %B %Y") if pub else "")
     slug = item.get("slug") or item.get("id") or slugify(title_fr)
-    url = f"{SITE}/news/{slug}.html"
+    url = f"{SITE}/news/{slug}"  # URL propre (Cloudflare sert {slug}.html)
     original_url = item.get("url") or ""
     _src = item.get("primary_source") or item.get("source") or "Source"
     if isinstance(_src, dict):
