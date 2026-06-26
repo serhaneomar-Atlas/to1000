@@ -567,6 +567,17 @@
     .bug-progress i{width:97.5%}
     .scroll-hint{display:none}
   }
+
+  /* ---------- i18n : sélecteur de langue + RTL ---------- */
+  .lang-sw{display:inline-flex;gap:2px;border:1px solid var(--line);border-radius:999px;padding:3px;background:rgba(0,0,0,.35)}
+  .lang-sw button{font-family:'Oswald',sans-serif;font-weight:600;font-size:11px;letter-spacing:.06em;color:var(--mute);background:none;border:0;cursor:pointer;padding:4px 9px;border-radius:999px;line-height:1}
+  .lang-sw button:hover{color:var(--chalk)}
+  .lang-sw button.active{background:var(--gold);color:var(--ink)}
+  .lang-sw button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  html[dir="rtl"] .match-copy,html[dir="rtl"] .news-head,html[dir="rtl"] .foot-brand,html[dir="rtl"] .inner>p.kicker{text-align:right}
+  html[dir="rtl"] .news-head{flex-direction:row-reverse}
+  html[dir="rtl"] .eras .era{direction:rtl}
+  @media(max-width:1079px){.lang-sw{display:none}}
 </style>
 <!-- PWA -->
   <link rel="manifest" href="/manifest.json">
@@ -585,17 +596,18 @@
 <header class="topbar">
   <div class="brand">
     <a href="#hero" class="logo" aria-label="TO1000.com accueil">TO<b>1000</b></a>
-    <span class="tag">Le hub du football · le compte à rebours du 1000e but de Cristiano Ronaldo</span>
+    <span class="tag" data-i18n="brand_tag">Le hub du football · le compte à rebours du 1000e but de Cristiano Ronaldo</span>
   </div>
   <nav class="main" aria-label="Navigation principale">
-    <a href="#hero" class="active">Compteur</a>
-    <a href="#parcours">Parcours</a>
-    <a href="#match">Coupe du Monde</a>
-    <a href="#data">Stats</a>
-    <a href="#parcours">Records</a>
-    <a href="#data">News</a>
-    <a href="#data">Blog</a>
+    <a href="#hero" class="active" data-i18n="nav_counter">Compteur</a>
+    <a href="#parcours" data-i18n="nav_journey">Parcours</a>
+    <a href="#match" data-i18n="nav_wc">Coupe du Monde</a>
+    <a href="#data" data-i18n="nav_stats">Stats</a>
+    <a href="#parcours" data-i18n="nav_records">Records</a>
+    <a href="#data" data-i18n="nav_news">News</a>
+    <a href="#data" data-i18n="nav_blog">Blog</a>
   </nav>
+  <div class="lang-sw" role="group" aria-label="Language"><button type="button" data-l="fr" aria-pressed="false">FR</button><button type="button" data-l="en" aria-pressed="false">EN</button><button type="button" data-l="es" aria-pressed="false">ES</button><button type="button" data-l="ar" aria-pressed="false">AR</button></div>
   <span class="livepill"><span class="dot" aria-hidden="true"></span>Live · 975</span>
 </header>
 
@@ -607,8 +619,8 @@
     <div class="scrim" aria-hidden="true"></div>
 
     <div class="hero-stack">
-      <h1 id="hero-title" class="sr-only">Compte à rebours vers le 1000e but de Cristiano Ronaldo</h1>
-      <p class="hero-eyebrow">Cristiano Ronaldo · Portugal · vers l'histoire</p>
+      <h1 id="hero-title" class="sr-only" data-i18n="hero_h1">Compte à rebours vers le 1000e but de Cristiano Ronaldo</h1>
+      <p class="hero-eyebrow" data-i18n="hero_eyebrow">Cristiano Ronaldo · Portugal · vers l'histoire</p>
 
       <!-- CÉLÉBRATION — SIUU détouré (fond supprimé), incrusté sur le stade -->
       <figure class="celebration">
@@ -617,7 +629,7 @@
 
       <!-- GRAND COMPTEUR — centerpiece, sous la célébration, visible en premier -->
       <div class="counter-hero" role="group" aria-label="Compteur live des buts en carrière de Cristiano Ronaldo">
-        <span class="live"><span class="dot" aria-hidden="true"></span>Live · Buts carrière</span>
+        <span class="live"><span class="dot" aria-hidden="true"></span><span data-i18n="hero_live">Live · Buts carrière</span></span>
         <div class="ch-count">
           <span class="ch-num impact" aria-label="975 buts">975</span>
           <span class="ch-slash">/</span>
@@ -630,7 +642,7 @@
     </div>
 
     <a href="#match" class="scroll-hint" aria-label="Faire défiler vers le prochain match">
-      <em style="font-style:normal">Défiler</em><span aria-hidden="true"></span>
+      <em style="font-style:normal" data-i18n="scroll">Défiler</em><span aria-hidden="true"></span>
     </a>
   </section>
 
@@ -641,7 +653,7 @@
     <div class="inner match-grid">
       <div class="fixture reveal">
         <div class="head">
-          <span class="comp">Coupe du Monde 2026</span>
+          <span class="comp" data-i18n="m_comp">Coupe du Monde 2026</span>
           <span class="when">27 juin · 21:00</span>
         </div>
         <div class="vs">
@@ -655,15 +667,15 @@
             <span class="name">Portugal</span>
           </div>
         </div>
-        <div class="foot">Phase à élimination directe · Cristiano Ronaldo titulaire attendu</div>
+        <div class="foot" data-i18n="m_foot">Phase à élimination directe · Cristiano Ronaldo titulaire attendu</div>
       </div>
       <div class="match-copy">
-        <p class="kicker reveal">Prochain rendez-vous</p>
-        <h2 class="reveal d1">La route passe par <span class="gold">le Mondial</span></h2>
-        <p class="reveal d2">Le Portugal défie la Colombie pour une place au tour suivant. Chaque match du Mondial 2026 peut rapprocher Cristiano Ronaldo du cap mythique des 1000 buts — et nous le couvrons but par but, minute par minute.</p>
+        <p class="kicker reveal" data-i18n="m_kicker">Prochain rendez-vous</p>
+        <h2 class="reveal d1" data-i18n-html="m_title">La route passe par <span class="gold">le Mondial</span></h2>
+        <p class="reveal d2" data-i18n="m_desc">Le Portugal défie la Colombie pour une place au tour suivant. Chaque match du Mondial 2026 peut rapprocher Cristiano Ronaldo du cap mythique des 1000 buts — et nous le couvrons but par but, minute par minute.</p>
         <div class="cta-row reveal d3">
-          <a href="#hero" class="btn gold">Suivre le compteur</a>
-          <a href="#data" class="btn ghost">Toute l'actu Mondial</a>
+          <a href="#hero" class="btn gold" data-i18n="m_btn1">Suivre le compteur</a>
+          <a href="#data" class="btn ghost" data-i18n="m_btn2">Toute l'actu Mondial</a>
         </div>
       </div>
     </div>
@@ -674,15 +686,15 @@
     <div class="bg" role="img" aria-label="Montage photo de Cristiano Ronaldo"></div>
     <div class="scrim" aria-hidden="true"></div>
     <div class="inner">
-      <p class="kicker reveal">Le parcours</p>
-      <h2 class="reveal d1" id="parcours-title" style="font-size:clamp(34px,6vw,72px)">Six clubs. <span style="color:var(--gold)">Une légende.</span></h2>
+      <p class="kicker reveal" data-i18n="p_kicker">Le parcours</p>
+      <h2 class="reveal d1" id="parcours-title" style="font-size:clamp(34px,6vw,72px)" data-i18n-html="p_title">Six clubs. <span style="color:var(--gold)">Une légende.</span></h2>
       <div class="eras">
-        <div class="era reveal d1"><span class="yr">2002</span><span class="club">Sporting<small>Lisbonne · les débuts</small></span><span class="goals">5<span>buts</span></span></div>
-        <div class="era reveal d1"><span class="yr">2003</span><span class="club">Man United<small>Premier League · le sacre</small></span><span class="goals">145<span>buts</span></span></div>
-        <div class="era reveal d2"><span class="yr">2009</span><span class="club">Real Madrid<small>Liga · l'ère galactique</small></span><span class="goals">450<span>buts</span></span></div>
-        <div class="era reveal d2"><span class="yr">2018</span><span class="club">Juventus<small>Serie A · l'Italie</small></span><span class="goals">101<span>buts</span></span></div>
-        <div class="era reveal d3"><span class="yr">2023</span><span class="club">Al Nassr<small>Saudi Pro League · aujourd'hui</small></span><span class="goals">99<span>buts</span></span></div>
-        <div class="era reveal d3"><span class="yr">2003</span><span class="club">Portugal<small>Sélection · record mondial</small></span><span class="goals">141<span>buts</span></span></div>
+        <div class="era reveal d1"><span class="yr">2002</span><span class="club">Sporting<small data-i18n="era_sporting">Lisbonne · les débuts</small></span><span class="goals">5<span data-i18n="goals_unit">buts</span></span></div>
+        <div class="era reveal d1"><span class="yr">2003</span><span class="club">Man United<small data-i18n="era_manu">Premier League · le sacre</small></span><span class="goals">145<span data-i18n="goals_unit">buts</span></span></div>
+        <div class="era reveal d2"><span class="yr">2009</span><span class="club">Real Madrid<small data-i18n="era_real">Liga · l'ère galactique</small></span><span class="goals">450<span data-i18n="goals_unit">buts</span></span></div>
+        <div class="era reveal d2"><span class="yr">2018</span><span class="club">Juventus<small data-i18n="era_juve">Serie A · l'Italie</small></span><span class="goals">101<span data-i18n="goals_unit">buts</span></span></div>
+        <div class="era reveal d3"><span class="yr">2023</span><span class="club">Al Nassr<small data-i18n="era_nassr">Saudi Pro League · aujourd'hui</small></span><span class="goals">99<span data-i18n="goals_unit">buts</span></span></div>
+        <div class="era reveal d3"><span class="yr">2003</span><span class="club">Portugal<small data-i18n="era_por">Sélection · record mondial</small></span><span class="goals">141<span data-i18n="goals_unit">buts</span></span></div>
       </div>
     </div>
   </section>
@@ -692,19 +704,19 @@
     <div class="bg" role="img" aria-label="Foule de supporters dans les tribunes"></div>
     <div class="scrim" aria-hidden="true"></div>
     <div class="inner">
-      <p class="kicker reveal">Les chiffres & l'actu</p>
-      <h2 class="reveal d1" id="data-title" style="font-size:clamp(30px,5vw,58px)">Tout le football, <span style="color:var(--gold)">une obsession</span></h2>
+      <p class="kicker reveal" data-i18n="d_kicker">Les chiffres & l'actu</p>
+      <h2 class="reveal d1" id="data-title" style="font-size:clamp(30px,5vw,58px)" data-i18n-html="d_title">Tout le football, <span style="color:var(--gold)">une obsession</span></h2>
 
       <div class="stats-row">
-        <div class="stat reveal d1"><div class="n impact">975</div><div class="t">Buts en carrière</div></div>
-        <div class="stat reveal d2"><div class="n impact">5</div><div class="t">Ballons d'Or</div></div>
-        <div class="stat reveal d3"><div class="n impact">1000</div><div class="t">L'objectif</div></div>
-        <div class="stat reveal d4"><div class="n impact">0,67</div><div class="t">Ratio buts / match</div></div>
+        <div class="stat reveal d1"><div class="n impact">975</div><div class="t" data-i18n="stat_career">Buts en carrière</div></div>
+        <div class="stat reveal d2"><div class="n impact">5</div><div class="t" data-i18n="stat_ballon">Ballons d'Or</div></div>
+        <div class="stat reveal d3"><div class="n impact">1000</div><div class="t" data-i18n="stat_goal">L'objectif</div></div>
+        <div class="stat reveal d4"><div class="n impact">0,67</div><div class="t" data-i18n="stat_ratio">Ratio buts / match</div></div>
       </div>
 
       <div class="news-head reveal d1">
-        <h3>Dernières news football</h3>
-        <a href="#top">Toutes les news →</a>
+        <h3 data-i18n="news_h3">Dernières news football</h3>
+        <a href="#top" data-i18n="news_all">Toutes les news →</a>
       </div>
       <div class="news-grid">
         <a class="card reveal d1" href="#top">
@@ -748,20 +760,20 @@
     <div class="foot-inner">
       <div class="foot-brand">
         <div class="logo">TO<b>1000</b>.com</div>
-        <p>Le hub du football mondial et le compte à rebours live vers le 1000e but de Cristiano Ronaldo.</p>
+        <p data-i18n="foot_brand">Le hub du football mondial et le compte à rebours live vers le 1000e but de Cristiano Ronaldo.</p>
       </div>
       <nav class="foot-nav" aria-label="Liens de pied de page">
-        <a href="#hero">Compteur</a>
-        <a href="#parcours">Parcours</a>
-        <a href="#match">Coupe du Monde</a>
-        <a href="#data">Stats</a>
-        <a href="#parcours">Records</a>
-        <a href="#data">News</a>
-        <a href="#data">Blog</a>
+        <a href="#hero" data-i18n="nav_counter">Compteur</a>
+        <a href="#parcours" data-i18n="nav_journey">Parcours</a>
+        <a href="#match" data-i18n="nav_wc">Coupe du Monde</a>
+        <a href="#data" data-i18n="nav_stats">Stats</a>
+        <a href="#parcours" data-i18n="nav_records">Records</a>
+        <a href="#data" data-i18n="nav_news">News</a>
+        <a href="#data" data-i18n="nav_blog">Blog</a>
       </nav>
     </div>
     <div class="foot-inner">
-      <p class="disclaimer">
+      <p class="disclaimer" data-i18n-html="disclaimer">
         Site de fans non officiel · Cristiano Ronaldo est une marque de Cristiano Ronaldo. Ce site n'est ni affilié, ni approuvé par le joueur, ses clubs ou la FIFA. Contenu éditorial à titre informatif.
         <br>Photos : <a href="https://unsplash.com" rel="noopener">Unsplash</a>.
       </p>
@@ -815,54 +827,131 @@
 </script>
 
 <script>
-/* ===== LIVE WIRING — compteur depuis /stats.json, news depuis /news.json ===== */
+/* ===== i18n (FR/EN/ES/AR) + LIVE WIRING ===== */
 (function(){
-  var bust = '?_=' + Math.floor(Date.now()/60000);
-  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
-  function timeAgo(iso){
-    try{ var d=(Date.now()-new Date(iso).getTime())/1000;
-      if(d<3600) return 'Il y a '+Math.max(1,Math.round(d/60))+' min';
-      if(d<86400) return 'Il y a '+Math.round(d/3600)+' h';
-      return 'Il y a '+Math.round(d/86400)+' j';
-    }catch(e){ return ''; }
+  var I18N = {
+    fr:{brand_tag:"Le hub du football · le compte à rebours du 1000e but de Cristiano Ronaldo",
+      nav_counter:"Compteur",nav_journey:"Parcours",nav_wc:"Coupe du Monde",nav_stats:"Stats",nav_records:"Records",nav_news:"News",nav_blog:"Blog",
+      hero_eyebrow:"Cristiano Ronaldo · Portugal · vers l’histoire",hero_live:"Live · Buts carrière",
+      hero_h1:"Compte à rebours vers le 1000e but de Cristiano Ronaldo",scroll:"Défiler",
+      goals_unit:"buts",rem_rest:"avant l’histoire",foot_prog:"Progression",foot_last:"Dernier but vs",live:"Live",
+      m_comp:"Coupe du Monde 2026",m_foot:"Phase à élimination directe · Cristiano Ronaldo titulaire attendu",
+      m_kicker:"Prochain rendez-vous",m_title:'La route passe par <span class="gold">le Mondial</span>',
+      m_desc:"Le Portugal défie la Colombie pour une place au tour suivant. Chaque match du Mondial 2026 peut rapprocher Cristiano Ronaldo du cap mythique des 1000 buts — et nous le couvrons but par but, minute par minute.",
+      m_btn1:"Suivre le compteur",m_btn2:"Toute l’actu Mondial",
+      p_kicker:"Le parcours",p_title:'Six clubs. <span style="color:var(--gold)">Une légende.</span>',
+      era_sporting:"Lisbonne · les débuts",era_manu:"Premier League · le sacre",era_real:"Liga · l’ère galactique",era_juve:"Serie A · l’Italie",era_nassr:"Saudi Pro League · aujourd’hui",era_por:"Sélection · record mondial",
+      d_kicker:"Les chiffres & l’actu",d_title:'Tout le football, <span style="color:var(--gold)">une obsession</span>',
+      stat_career:"Buts en carrière",stat_ballon:"Ballons d’Or",stat_goal:"L’objectif",stat_ratio:"Ratio buts / match",
+      news_h3:"Dernières news football",news_all:"Toutes les news →",
+      foot_brand:"Le hub du football mondial et le compte à rebours live vers le 1000e but de Cristiano Ronaldo.",
+      disclaimer:'Site de fans non officiel · Cristiano Ronaldo est une marque de Cristiano Ronaldo. Ce site n’est ni affilié, ni approuvé par le joueur, ses clubs ou la FIFA. Contenu éditorial à titre informatif.<br>Photos : <a href="https://unsplash.com" rel="noopener">Unsplash</a> · Wikimedia Commons.'},
+    en:{brand_tag:"The football hub · the countdown to Cristiano Ronaldo’s 1000th goal",
+      nav_counter:"Counter",nav_journey:"Journey",nav_wc:"World Cup",nav_stats:"Stats",nav_records:"Records",nav_news:"News",nav_blog:"Blog",
+      hero_eyebrow:"Cristiano Ronaldo · Portugal · toward history",hero_live:"Live · Career goals",
+      hero_h1:"Countdown to Cristiano Ronaldo’s 1000th goal",scroll:"Scroll",
+      goals_unit:"goals",rem_rest:"from history",foot_prog:"Progress",foot_last:"Last goal vs",live:"Live",
+      m_comp:"World Cup 2026",m_foot:"Knockout stage · Cristiano Ronaldo expected to start",
+      m_kicker:"Next fixture",m_title:'The road runs through <span class="gold">the World Cup</span>',
+      m_desc:"Portugal face Colombia for a place in the next round. Every 2026 World Cup match can bring Cristiano Ronaldo closer to the mythical 1000-goal mark — and we cover it goal by goal, minute by minute.",
+      m_btn1:"Follow the counter",m_btn2:"All World Cup news",
+      p_kicker:"The journey",p_title:'Six clubs. <span style="color:var(--gold)">One legend.</span>',
+      era_sporting:"Lisbon · the beginning",era_manu:"Premier League · the rise",era_real:"La Liga · the galactic era",era_juve:"Serie A · Italy",era_nassr:"Saudi Pro League · today",era_por:"National team · world record",
+      d_kicker:"Numbers & news",d_title:'All of football, <span style="color:var(--gold)">one obsession</span>',
+      stat_career:"Career goals",stat_ballon:"Ballon d’Or awards",stat_goal:"The target",stat_ratio:"Goals per match",
+      news_h3:"Latest football news",news_all:"All news →",
+      foot_brand:"The global football hub and the live countdown to Cristiano Ronaldo’s 1000th goal.",
+      disclaimer:'Unofficial fan site · Cristiano Ronaldo is a trademark of Cristiano Ronaldo. This site is not affiliated with or endorsed by the player, his clubs or FIFA. Editorial content for informational purposes.<br>Photos: <a href="https://unsplash.com" rel="noopener">Unsplash</a> · Wikimedia Commons.'},
+    es:{brand_tag:"El hub del fútbol · la cuenta atrás hacia el gol 1000 de Cristiano Ronaldo",
+      nav_counter:"Contador",nav_journey:"Trayectoria",nav_wc:"Mundial",nav_stats:"Estadísticas",nav_records:"Récords",nav_news:"Noticias",nav_blog:"Blog",
+      hero_eyebrow:"Cristiano Ronaldo · Portugal · hacia la historia",hero_live:"En vivo · Goles de carrera",
+      hero_h1:"Cuenta atrás hacia el gol 1000 de Cristiano Ronaldo",scroll:"Desplázate",
+      goals_unit:"goles",rem_rest:"para la historia",foot_prog:"Progreso",foot_last:"Último gol vs",live:"En vivo",
+      m_comp:"Mundial 2026",m_foot:"Fase eliminatoria · Cristiano Ronaldo titular previsto",
+      m_kicker:"Próxima cita",m_title:'El camino pasa por <span class="gold">el Mundial</span>',
+      m_desc:"Portugal se enfrenta a Colombia por un lugar en la siguiente ronda. Cada partido del Mundial 2026 puede acercar a Cristiano Ronaldo a la mítica cifra de 1000 goles — y lo cubrimos gol a gol, minuto a minuto.",
+      m_btn1:"Seguir el contador",m_btn2:"Toda la actualidad del Mundial",
+      p_kicker:"La trayectoria",p_title:'Seis clubes. <span style="color:var(--gold)">Una leyenda.</span>',
+      era_sporting:"Lisboa · los inicios",era_manu:"Premier League · la consagración",era_real:"La Liga · la era galáctica",era_juve:"Serie A · Italia",era_nassr:"Saudi Pro League · hoy",era_por:"Selección · récord mundial",
+      d_kicker:"Cifras y noticias",d_title:'Todo el fútbol, <span style="color:var(--gold)">una obsesión</span>',
+      stat_career:"Goles de carrera",stat_ballon:"Balones de Oro",stat_goal:"El objetivo",stat_ratio:"Goles por partido",
+      news_h3:"Últimas noticias de fútbol",news_all:"Todas las noticias →",
+      foot_brand:"El hub del fútbol mundial y la cuenta atrás en vivo hacia el gol 1000 de Cristiano Ronaldo.",
+      disclaimer:'Sitio de fans no oficial · Cristiano Ronaldo es una marca de Cristiano Ronaldo. Este sitio no está afiliado ni respaldado por el jugador, sus clubes o la FIFA. Contenido editorial con fines informativos.<br>Fotos: <a href="https://unsplash.com" rel="noopener">Unsplash</a> · Wikimedia Commons.'},
+    ar:{brand_tag:"مركز كرة القدم · العد التنازلي نحو الهدف الألف لكريستيانو رونالدو",
+      nav_counter:"العدّاد",nav_journey:"المسيرة",nav_wc:"كأس العالم",nav_stats:"إحصائيات",nav_records:"الأرقام القياسية",nav_news:"الأخبار",nav_blog:"المدونة",
+      hero_eyebrow:"كريستيانو رونالدو · البرتغال · نحو التاريخ",hero_live:"مباشر · أهداف المسيرة",
+      hero_h1:"العد التنازلي نحو الهدف الألف لكريستيانو رونالدو",scroll:"مرّر",
+      goals_unit:"هدف",rem_rest:"تفصله عن التاريخ",foot_prog:"التقدّم",foot_last:"آخر هدف ضد",live:"مباشر",
+      m_comp:"كأس العالم 2026",m_foot:"دور خروج المغلوب · كريستيانو رونالدو أساسي متوقع",
+      m_kicker:"الموعد القادم",m_title:'الطريق يمرّ عبر <span class="gold">كأس العالم</span>',
+      m_desc:"البرتغال تواجه كولومبيا للتأهل إلى الدور التالي. كل مباراة في مونديال 2026 قد تقرّب كريستيانو رونالدو من حاجز الألف هدف الأسطوري — ونحن نغطّيها هدفاً بهدف، دقيقةً بدقيقة.",
+      m_btn1:"تابع العدّاد",m_btn2:"كل أخبار المونديال",
+      p_kicker:"المسيرة",p_title:'ستة أندية. <span style="color:var(--gold)">أسطورة واحدة.</span>',
+      era_sporting:"لشبونة · البداية",era_manu:"البريمييرليغ · التتويج",era_real:"الليغا · حقبة الغالاكتيكوس",era_juve:"الدوري الإيطالي · إيطاليا",era_nassr:"الدوري السعودي · الحاضر",era_por:"المنتخب · رقم قياسي عالمي",
+      d_kicker:"الأرقام والأخبار",d_title:'كل كرة القدم، <span style="color:var(--gold)">هوسٌ واحد</span>',
+      stat_career:"أهداف المسيرة",stat_ballon:"الكرات الذهبية",stat_goal:"الهدف",stat_ratio:"معدّل الأهداف لكل مباراة",
+      news_h3:"آخر أخبار كرة القدم",news_all:"كل الأخبار →",
+      foot_brand:"مركز كرة القدم العالمي والعد التنازلي المباشر نحو الهدف الألف لكريستيانو رونالدو.",
+      disclaimer:'موقع جماهيري غير رسمي · كريستيانو رونالدو علامة تجارية تخص كريستيانو رونالدو. هذا الموقع غير مرتبط باللاعب أو أنديته أو الفيفا ولا يحظى بموافقتهم. محتوى تحريري لأغراض إعلامية.<br>الصور: <a href="https://unsplash.com" rel="noopener">Unsplash</a> · Wikimedia Commons.'}
+  };
+  var SUP=['fr','en','es','ar'];
+  function detect(){
+    var u=new URLSearchParams(location.search).get('lang'); if(u&&SUP.indexOf(u)>=0)return u;
+    try{var s=localStorage.getItem('to1000_lang'); if(s&&SUP.indexOf(s)>=0)return s;}catch(e){}
+    var n=(navigator.language||'en').slice(0,2).toLowerCase(); return SUP.indexOf(n)>=0?n:'en';
   }
-  // ---- STATS ----
-  fetch('/stats.json'+bust).then(function(r){return r.json();}).then(function(s){
-    var goals=s.goals, target=s.target||1000, rem=(s.remaining!=null?s.remaining:target-goals);
-    var pct=goals/target*100, pctfr=pct.toFixed(1).replace('.',',');
-    document.querySelectorAll('.ch-num').forEach(function(e){e.textContent=goals; e.setAttribute('aria-label',goals+' buts');});
-    var meta=document.querySelector('.ch-meta'); if(meta) meta.innerHTML='<b>'+rem+' buts</b> avant l\'histoire';
+  var LANG=detect(), STATS=null, NEWS=null;
+  function t(k){var d=I18N[LANG]||I18N.en; return d[k]!=null?d[k]:(I18N.en[k]!=null?I18N.en[k]:k);}
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+
+  function applyStatic(){
+    var H=document.documentElement; H.lang=LANG; H.dir=(LANG==='ar')?'rtl':'ltr';
+    document.querySelectorAll('[data-i18n]').forEach(function(e){var v=t(e.getAttribute('data-i18n')); if(v!=null)e.textContent=v;});
+    document.querySelectorAll('[data-i18n-html]').forEach(function(e){var v=t(e.getAttribute('data-i18n-html')); if(v!=null)e.innerHTML=v;});
+    document.querySelectorAll('.lang-sw button').forEach(function(b){var on=b.getAttribute('data-l')===LANG; b.classList.toggle('active',on); b.setAttribute('aria-pressed',on?'true':'false');});
+  }
+  function renderStats(){
+    if(!STATS)return; var s=STATS, goals=s.goals, target=s.target||1000, rem=(s.remaining!=null?s.remaining:target-goals);
+    var pct=goals/target*100, sep=(LANG==='en'?'.':','), pctstr=pct.toFixed(1).replace('.',sep);
+    document.querySelectorAll('.ch-num').forEach(function(e){e.textContent=goals;e.setAttribute('aria-label',goals+' '+t('goals_unit'));});
+    var meta=document.querySelector('.ch-meta'); if(meta)meta.innerHTML='<b>'+rem+' '+t('goals_unit')+'</b> '+t('rem_rest');
     document.querySelectorAll('.ch-bar i').forEach(function(e){e.style.width=pct.toFixed(1)+'%';});
-    var bar=document.querySelector('.ch-bar'); if(bar) bar.setAttribute('aria-valuenow',goals);
+    var bar=document.querySelector('.ch-bar'); if(bar)bar.setAttribute('aria-valuenow',goals);
     var foot=document.querySelector('.ch-foot');
-    if(foot){ var opp=s.last_goal_opponent?(' · Dernier but vs <b>'+esc(s.last_goal_opponent)+'</b>'+(s.last_goal_competition?' · '+esc(s.last_goal_competition):'')):''; foot.innerHTML='Progression '+pctfr+' %'+opp; }
-    var st=document.querySelector('#data .stats-row .stat .n'); if(st) st.textContent=goals;
-    // next match
+    if(foot){var opp=s.last_goal_opponent?' · '+t('foot_last')+' <b>'+esc(s.last_goal_opponent)+'</b>'+(s.last_goal_competition?' · '+esc(s.last_goal_competition):''):''; foot.innerHTML=t('foot_prog')+' '+pctstr+' %'+opp;}
+    var st=document.querySelector('#data .stats-row .stat .n'); if(st)st.textContent=goals;
+    var pill=document.querySelector('.livepill'); if(pill)pill.innerHTML='<span class="dot" aria-hidden="true"></span>'+t('live')+' · '+goals;
     var m=s.next_match;
     if(m){
-      var names=document.querySelectorAll('#match .vs .team .name');
-      var crests=document.querySelectorAll('#match .vs .team .crest');
-      if(names.length===2){ names[0].textContent=m.home_team; names[1].textContent=m.away_team;
-        crests[0].textContent=(m.home_team||'').slice(0,2).toUpperCase(); crests[1].textContent=(m.away_team||'').slice(0,2).toUpperCase(); }
+      var names=document.querySelectorAll('#match .vs .team .name'), crests=document.querySelectorAll('#match .vs .team .crest');
+      if(names.length===2){names[0].textContent=m.home_team;names[1].textContent=m.away_team;crests[0].textContent=(m.home_team||'').slice(0,2).toUpperCase();crests[1].textContent=(m.away_team||'').slice(0,2).toUpperCase();}
       var when=document.querySelector('#match .head .when');
-      if(when && m.kickoff_utc){ try{ var d=new Date(m.kickoff_utc);
-        when.textContent=d.toLocaleDateString('fr-FR',{day:'numeric',month:'long'})+' · '+d.toLocaleTimeString('fr-FR',{hour:'2-digit',minute:'2-digit'}); }catch(e){} }
+      if(when&&m.kickoff_utc){try{var d=new Date(m.kickoff_utc); when.textContent=d.toLocaleDateString(LANG,{day:'numeric',month:'long'})+' · '+d.toLocaleTimeString(LANG,{hour:'2-digit',minute:'2-digit'});}catch(e){}}
     }
-  }).catch(function(e){console.warn('stats',e);});
-  // ---- NEWS ----
-  fetch('/news.json'+bust).then(function(r){return r.json();}).then(function(n){
-    var items=(n.items||[]).slice(0,6), grid=document.querySelector('.news-grid');
-    if(!grid||!items.length) return;
+  }
+  function relTime(iso){try{var diff=(new Date(iso).getTime()-Date.now())/1000,a=Math.abs(diff),rtf=new Intl.RelativeTimeFormat(LANG,{numeric:'auto'});
+    if(a<3600)return rtf.format(Math.round(diff/60),'minute'); if(a<86400)return rtf.format(Math.round(diff/3600),'hour'); return rtf.format(Math.round(diff/86400),'day');}catch(e){return'';}}
+  function renderNews(){
+    if(!NEWS)return; var items=(NEWS.items||[]).slice(0,6), grid=document.querySelector('.news-grid'); if(!grid||!items.length)return;
     grid.innerHTML=items.map(function(it){
-      var t=(it.i18n&&it.i18n.fr&&it.i18n.fr.title)||it.title||'';
-      var ps=it.primary_source||{}; var cat=((ps.flag?ps.flag+' ':'')+(ps.name||'Football'));
+      var tr=(it.i18n&&it.i18n[LANG]&&it.i18n[LANG].title)||it.title||'';
+      var ps=it.primary_source||{}, cat=((ps.flag?ps.flag+' ':'')+(ps.name||'Football'));
       var img=it.image_url||'/images/mockups/stadium-night.jpg';
       return '<a class="card in" href="'+esc(it.url)+'" target="_blank" rel="noopener">'
-        +'<span class="thumb" style="background-image:url(\''+String(img).replace(/'/g,'%27')+'\')" aria-hidden="true"></span>'
-        +'<span class="body"><span class="cat">'+esc(cat)+'</span><h4>'+esc(t)+'</h4>'
-        +'<time datetime="'+esc(it.published_at)+'">'+timeAgo(it.published_at)+'</time></span></a>';
+        +'<span class="thumb" style="background-image:url(\''+String(img).replace(/\x27/g,'%27')+'\')" aria-hidden="true"></span>'
+        +'<span class="body"><span class="cat">'+esc(cat)+'</span><h4>'+esc(tr)+'</h4>'
+        +'<time datetime="'+esc(it.published_at)+'">'+relTime(it.published_at)+'</time></span></a>';
     }).join('');
-  }).catch(function(e){console.warn('news',e);});
+  }
+  function applyAll(){applyStatic();renderStats();renderNews();}
+  function setLang(l){if(SUP.indexOf(l)<0)return; LANG=l; try{localStorage.setItem('to1000_lang',l);}catch(e){} applyAll();}
+  document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.lang-sw button'); if(b)setLang(b.getAttribute('data-l'));});
+
+  applyStatic();
+  var bust='?_='+Math.floor(Date.now()/60000);
+  fetch('/stats.json'+bust).then(function(r){return r.json();}).then(function(s){STATS=s;renderStats();}).catch(function(e){console.warn('stats',e);});
+  fetch('/news.json'+bust).then(function(r){return r.json();}).then(function(n){NEWS=n;renderNews();}).catch(function(e){console.warn('news',e);});
 })();
 </script>
 
