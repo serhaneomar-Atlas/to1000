@@ -7,7 +7,7 @@ name: News sync (toutes les 2 h)
 
 on:
   schedule:
-    - cron: "0 */2 * * *"   # toutes les 2 h (économie minutes Actions — voir RELIABILITY.md)
+    - cron: "0 * * * *"   # toutes les heures (repo public = minutes illimitées)
   workflow_dispatch:          # allow manual trigger from the Actions tab
 
 # Allow the workflow to push the regenerated news.json back to the repo

@@ -1,68 +1,52 @@
-# Pourquoi le site devenait périmé — et la solution définitive
+# Fiabilité des workflows — diagnostic & solution
 
-## Le vrai problème (diagnostic)
-Tout ce qui « n'était pas à jour » (compteur, dernier/prochain match, stats, news,
-langues) avait **une seule cause de fond** : **les workflows GitHub Actions
-s'arrêtaient en milieu de mois** parce qu'ils **épuisaient les 2000 minutes
-gratuites** (repo privé).
+> Note : un premier diagnostic (minutes Actions épuisées) était **faux**. Le repo
+> est **déjà public** → minutes illimitées. La vraie cause était un **bug de code
+> dans un workflow** (dépendance manquante). Corrigé par CD + CC ci-dessous.
 
-Coupables (avant correction) :
-- `update-cr7-goals` : **toutes les 5 min**, ~8 h/jour, ~6 j/sem → **~3000+ min/mois à lui seul**.
-- `news-sync` : **toutes les 30 min** → **~3600 min/mois**.
-- Total très au-dessus de 2000 → **plus de minutes → tous les crons stoppent → le site fige**.
+## La vraie cause des échecs
+`stats-sync.yml` lançait `update_stats_v2.py` (qui importe `requests` via
+`espn_client`) **sans `pip install requests`** → **`ModuleNotFoundError: requests`**
+→ le workflow **échouait chaque jour** → `stats.json` jamais rafraîchi → compteur,
+dernier/prochain match figés. **C'était un bug de code, pas un quota.**
 
-Quand les workflows ne tournent plus : la news ne se rafraîchit plus, stats.json
-ne se met plus à jour (compteur/match figés), rien ne se redéploie → tu vois du
-vieux, et tu dois intervenir à la main.
+## Corrigé ✅
+1. **`stats-sync.yml`** : `pip install requests` ajouté (CD) — maintenant **commité**
+   (il n'était qu'en local, donc GitHub re-échouait à chaque run).
+2. **`stats.json` v29** (prochain match **Portugal–Croatie**) commité — le live
+   montrait encore l'ancien match.
+3. **Robustesse `news-sync`** : les étapes non-critiques sont en `continue-on-error`
+   → une news fraîche est **toujours déployée** même si une sous-étape échoue.
+   (Vrai garde-fou : avant, une seule erreur tuait tout le run.)
+4. **Traduction** : `DISABLE_MYMEMORY` retiré → fallback réactivé.
+5. **Fréquences** (repo public = minutes illimitées, on privilégie la fraîcheur) :
+   news **toutes les heures**, goals **toutes les 10 min** en fenêtre de match.
 
-## Corrections appliquées (code) ✅
-1. **Fréquences réduites pour rester sous 2000 min/mois :**
-   - `news-sync` : 30 min → **2 h** (`0 */2 * * *`).
-   - `update-cr7-goals` : 5 min → **20 min** pendant les fenêtres de match.
-2. **Robustesse** : les étapes non-critiques de `news-sync` (génération HTML,
-   prérendu, sitemap, dashboard, GA4) sont en **`continue-on-error`** → une news
-   fraîche est **toujours déployée** même si une sous-étape échoue (avant : une
-   seule erreur tuait tout le run → news figée).
-3. **Traduction réactivée** : `DISABLE_MYMEMORY` retiré → fallback MyMemory si
-   Gemini indisponible (au lieu de zéro traduction).
+## Audit : tous les workflows ont-ils leurs dépendances ?
+Vérifié — chaque script lancé par un workflow a bien son `pip install` (ou n'a
+besoin que de la lib standard) :
+- `news-sync` → feedparser ✅ · `stats-sync` → requests ✅ (corrigé)
+- `update-cr7-goals` → requests ✅ · `kaizen` → stdlib seulement ✅
 
-## La solution DÉFINITIVE (1 action, à toi) — au choix
+## Ce qu'il reste (indépendant du code)
+1. **Clé `GEMINI_API_KEY` valide** (gratuit, https://aistudio.google.com/app/apikey)
+   → traduction complète des news EN/ES↔FR/AR. *(L'actuelle renvoie « API key not valid ».)*
+   Sans elle, MyMemory ne traduit que ~9 items/jour (plafond gratuit).
+2. **Secrets `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID`** → `news-sync` et
+   `stats-sync` se **redéploient seuls** sur Cloudflare (sans `publish.bat`).
+3. **Index git côté Windows/Cowork** : si `git` se bloque (mount), réparer avec
+   `del .git\index` puis `git reset` (rebuild de l'index depuis HEAD). N'affecte
+   pas l'historique. (Côté WSL l'index est sain.)
 
-### Option A — **Rendre le repo PUBLIC** (recommandé, le plus définitif)
-GitHub Actions est **illimité et gratuit sur les repos publics**. Plus jamais de
-minutes épuisées, quelle que soit la fréquence.
-- GitHub → repo `to1000` → **Settings → General → Danger Zone → Change visibility → Public**.
-- Sans risque : aucun secret n'est dans le code (ils restent dans *Settings → Secrets*).
-- C'est un site de fans, le code n'a rien de confidentiel.
+## Vérifier l'état en 30 s
+- Runs : https://github.com/serhaneomar-Atlas/to1000/actions
+  (un run **rouge** = me copier l'erreur ; ça vient quasi toujours d'une dépendance
+  manquante ou d'un script qui change de signature).
+- Le code lui-même tourne illimité (repo public).
 
-### Option B — Garder privé
-Les fréquences réduites ci-dessus suffisent à rester sous 2000 min/mois. Mais
-si tu rajoutes des workflows ou des matchs fréquents, surveille la conso.
-- Les minutes se **réinitialisent le 1er du mois** → si elles sont épuisées ce
-  mois-ci, les crons reprennent tout seuls au prochain mois (avec les fréquences réduites).
-
-## Pour que la traduction marche (indispensable)
-La traduction des news EN/ES vers FR (et inversement) **exige une clé Gemini
-valide** (MyMemory seul plafonne à ~9 items/jour). Gratuit, 2 min :
-- https://aistudio.google.com/app/apikey → crée une clé.
-- GitHub → repo → Settings → Secrets and variables → Actions → `GEMINI_API_KEY` = ta clé.
-- Vérifie qu'elle est **valide** (celle posée semble invalide : « API key not valid »).
-
-## Pour que le déploiement soit 100% auto (sans toi)
-`news-sync` se **redéploie tout seul** sur Cloudflare **si** ces secrets sont posés :
-- `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` (Settings → Secrets → Actions).
-- Si présents : à chaque rafraîchissement, le site se met à jour **sans `publish.bat`**.
-
-## Comment vérifier l'état (diagnostic en 30 s)
-- **Runs des workflows** : https://github.com/serhaneomar-Atlas/to1000/actions
-  - Des runs **rouges** = une étape échoue (me l'envoyer).
-  - **Aucun run récent** = minutes épuisées → Option A (public).
-- **Minutes restantes** : https://github.com/settings/billing
-
-## En résumé — ce qu'il te reste à faire UNE fois
-1. **Repo en Public** (Option A) → workflows illimités, plus jamais de gel.
-2. **`GEMINI_API_KEY` valide** → news traduites automatiquement.
-3. Vérifier `CLOUDFLARE_API_TOKEN`/`ACCOUNT_ID` → déploiement 100% auto.
-
-Après ça : compteur, matchs, stats, news, traductions se mettent à jour **seuls**,
-sans intervention.
+## En résumé
+La fiabilité ne dépend **pas** de la visibilité (déjà publique) mais de :
+**(a)** chaque workflow a ses dépendances, **(b)** les étapes non-critiques ne
+bloquent pas le deploy (`continue-on-error`), **(c)** les clés/secrets sont valides.
+Les trois sont désormais en place côté code ; restent la clé Gemini + les secrets
+Cloudflare (ton ressort).
