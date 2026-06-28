@@ -68,9 +68,22 @@ jobs:
       - name: Prerender news cards into news.html (SEO — crawlable content)
         run: python scripts/prerender_news.py
 
+      - name: GA4 credentials (optionnel — actif seulement si les secrets sont posés)
+        env:
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
+          GA4_SA_JSON: ${{ secrets.GA4_SA_JSON }}
+        run: |
+          if [ -n "$GA4_PROPERTY_ID" ] && [ -n "$GA4_SA_JSON" ]; then
+            pip install --quiet google-analytics-data
+            printf '%s' "$GA4_SA_JSON" > "$RUNNER_TEMP/ga4-sa.json"
+            echo "GOOGLE_APPLICATION_CREDENTIALS=$RUNNER_TEMP/ga4-sa.json" >> "$GITHUB_ENV"
+            echo "::notice::GA4 configuré — le dashboard affichera le trafic réel."
+          else
+            echo "::notice::GA4 non configuré — dashboard en mode 'à connecter' (voir CONNECT_ANALYTICS.md)."
+          fi
+
       - name: Collect dashboard metrics (auto-updating marketing dashboard)
         env:
-          # Optionnel : décommente/pose ces secrets pour le trafic GA4 réel
           GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
         run: python scripts/collect_metrics.py
 
