@@ -1,13 +1,13 @@
-name: News sync (every 30 min)
+name: News sync (toutes les 2 h)
 
-# Why: aggregate football + CR7 news from 25 RSS sources, refresh news.json,
-# and trigger a Cloudflare Pages deploy when content actually changed.
-# Quota check: 48 runs/day × ~60s/run ≈ 1440 min/month, well under the
-# 2000 min free tier on private repos.
+# Why: aggrège les news foot/CR7, rafraîchit news.json, et déploie sur Cloudflare
+# quand le contenu change. Fréquence réduite à 2 h pour rester sous les 2000 min
+# Actions gratuites (repo privé). Les étapes non-critiques sont continue-on-error :
+# une news fraîche est TOUJOURS déployée même si une sous-étape échoue.
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # every 30 minutes
+    - cron: "0 */2 * * *"   # toutes les 2 h (économie minutes Actions — voir RELIABILITY.md)
   workflow_dispatch:          # allow manual trigger from the Actions tab
 
 # Allow the workflow to push the regenerated news.json back to the repo
@@ -57,18 +57,18 @@ jobs:
           # Without it: graceful fallback to literal translation, then to the
           # source-language excerpt — the pipeline never breaks.
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          # Skip the slow MyMemory fallback in CI (it can exceed the job timeout
-          # on a Gemini outage); untranslated items degrade to source language.
-          DISABLE_MYMEMORY: "1"
         run: python scripts/news_aggregator.py
 
       - name: Generate SEO HTML pages for each news item
+        continue-on-error: true
         run: python scripts/news_to_html.py
 
       - name: Prerender news cards into news.html (SEO — crawlable content)
+        continue-on-error: true
         run: python scripts/prerender_news.py
 
       - name: GA4 credentials (optionnel — actif seulement si les secrets sont posés)
+        continue-on-error: true
         env:
           GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
           GA4_SA_JSON: ${{ secrets.GA4_SA_JSON }}
@@ -83,14 +83,17 @@ jobs:
           fi
 
       - name: Collect dashboard metrics (auto-updating marketing dashboard)
+        continue-on-error: true
         env:
           GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
         run: python scripts/collect_metrics.py
 
       - name: Update WC countdown JSON (morocco_next, portugal_next)
+        continue-on-error: true
         run: python scripts/wc_countdown_update.py
 
       - name: Regenerate sitemap.xml
+        continue-on-error: true
         run: python scripts/sitemap_generator.py
 
       - name: Detect content change
