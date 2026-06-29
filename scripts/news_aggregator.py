@@ -58,6 +58,14 @@ try:
 except ImportError:
     Translator = None  # type: ignore
 
+# Comité éditorial (recherchiste heuristique + rédacteur en chef Gemini)
+try:
+    from editorial import is_non_editorial, chief_editor_review  # type: ignore
+except ImportError:
+    def is_non_editorial(_t):  # type: ignore
+        return False
+    chief_editor_review = None  # type: ignore
+
 # Tunables
 MAX_ITEMS = 50                    # Hard cap on rendered items
 MAX_AGE_HOURS = 72                # Drop items older than 3 days
@@ -461,6 +469,10 @@ def main() -> int:
                            kw_clubs, kw_players, kw_comps, kw_ctx)
             if kind is None:
                 continue
+            # Recherchiste éditorial (sans API) : écarte les articles utilitaires
+            # (how to watch / livestream / paris / compo probable) — pas de la news.
+            if is_non_editorial(title):
+                continue
 
             normalized_title = normalize_title(title)
             raw_items.append({
@@ -586,7 +598,22 @@ def main() -> int:
         # "essential" summary in every language in one call (no clickbait, the
         # facts to retain) and translates the title. Falls back to literal
         # translation, then to source-language passthrough.
-        if translator and getattr(translator, "gemini_enabled", False):
+        # ── RÉDACTEUR EN CHEF (Gemini) : vérifie fidélité/valeur/positionnement,
+        #    décide PUBLIER/REJETER, fournit titre+résumé essentiel en 4 langues.
+        review = None
+        if translator and getattr(translator, "gemini_enabled", False) and chief_editor_review:
+            review = chief_editor_review(translator, title, summary, src_lang, targets)
+        if review is not None:
+            if not review["publish"]:
+                continue   # rejeté par le rédacteur en chef (non-news, divergence, périmé…)
+            if review["i18n"]:
+                i18n = review["i18n"]
+                essential = (i18n.get(src_lang) or {}).get("summary")
+                if essential:
+                    summary = essential
+            else:
+                i18n = translator.translate_pair(title, summary, src=src_lang, targets=targets)
+        elif translator and getattr(translator, "gemini_enabled", False):
             i18n = translator.editorialize_pair(title, summary, src=src_lang, targets=targets)
             if i18n:
                 essential = (i18n.get(src_lang) or {}).get("summary")
