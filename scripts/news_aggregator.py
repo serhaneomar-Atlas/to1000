@@ -24,6 +24,7 @@ import argparse
 import hashlib
 import html
 import json
+import os
 import re
 import sys
 import time
@@ -582,6 +583,14 @@ def main() -> int:
     translator = Translator(cache_path=TRANSLATIONS_CACHE) if Translator else None
 
     # Build final items with multilingual title+summary
+    # Budget d'appels éditoriaux Gemini PAR RUN. Free tier ~15 req/min + ~50
+    # articles = passe > 20 min → timeout GitHub (run tué, news figée). On traite
+    # ~25 NOUVEAUX articles/run au rédacteur en chef ; le reste passe en MyMemory.
+    # Le cache (clé edt:) accumule → tous couverts en ~2 runs, et chaque run finit
+    # en ~5 min. Configurable via EDITORIAL_BUDGET.
+    editorial_budget = int(os.environ.get("EDITORIAL_BUDGET", "25"))
+    editorial_calls = 0
+
     final_items = []
     for c in clusters:
         title = pick_canonical_title(c["_titles"])
@@ -601,8 +610,14 @@ def main() -> int:
         # ── RÉDACTEUR EN CHEF (Gemini) : vérifie fidélité/valeur/positionnement,
         #    décide PUBLIER/REJETER, fournit titre+résumé essentiel en 4 langues.
         review = None
-        if translator and getattr(translator, "gemini_enabled", False) and chief_editor_review:
+        if (translator and getattr(translator, "gemini_enabled", False)
+                and chief_editor_review and editorial_calls < editorial_budget):
+            before = translator._calls_gemini
             review = chief_editor_review(translator, title, summary, src_lang, targets)
+            editorial_calls += translator._calls_gemini - before   # ne compte que les vrais appels (pas les hits cache)
+            if editorial_calls >= editorial_budget and translator.gemini_enabled:
+                translator.gemini_enabled = False   # reste du run en MyMemory (rapide, sous le timeout)
+                print(f"[news] budget éditorial {editorial_budget} atteint → MyMemory pour le reste du run")
         if review is not None:
             if not review["publish"]:
                 continue   # rejeté par le rédacteur en chef (non-news, divergence, périmé…)
