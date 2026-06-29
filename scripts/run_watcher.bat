@@ -1,4 +1,6 @@
 @echo off
-REM Lance par Windows Task Scheduler toutes les 5 minutes
-set APIFOOTBALL_KEY=aa61f27b1f241c5b2ce6a8a0098fc57f
-python "C:\Users\serha\Desktop\To1000.com\to1000\scripts\goal_watcher.py" >> "C:\Users\serha\Desktop\To1000.com\to1000\scripts\watcher.log" 2>&1
+REM Lance par Windows Task Scheduler — fréquence recommandée: 1 minute.
+REM Le script Python décide lui-même s'il agit (smart polling): action chaque
+REM minute pendant la fenêtre match (-30min à +2h30 du kickoff), sinon refresh
+REM léger 1x/h. Plus besoin de clé API-Football depuis la migration ESPN du 07/05/2026.
+python "C:\Users\serha\Desktop\To1000.com\to1000\scripts\goal_watcher_v2.py" >> "C:\Users\serha\Desktop\To1000.com\to1000\scripts\watcher.log" 2>&1

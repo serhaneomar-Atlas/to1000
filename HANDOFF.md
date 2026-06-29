@@ -49,20 +49,24 @@ Les 3 fichiers de relai (committés dans git) :
 
 ## 4. 🎯 Bâton actuel
 
-> **Détenteur : Omar** — décision attendue : **choisir la direction visuelle** (A évolution / B rupture / hybride) suite à la **Phase 1 AUDIT livrée** par Claude Code.
-> Livrables prêts : `DESIGN_AUDIT.md` + `design/mockups/direction-A-evolution.html` + `direction-B-rupture.html` (ouvrir au double-clic).
-> Dès l'arbitrage → bâton à **Claude Code** pour la Phase 2 (`DESIGN_SYSTEM.md`, design tokens).
-> Mis à jour le : 2026-06-23 par Claude Code (WSL).
+> **Détenteurs : Omar + Claude Code.** 2 correctifs CD prêts en local, **à déployer/commiter** :
+> - 🔴 **`stats.json` (v31) + `update_stats_v2.py` (guards anti-régression)** : le live affichait `off_season` à tort (bug fetch ESPN du run GH 22:05) ; restauré next = Portugal–Croatie 02/07, last = Colombie–Portugal 27/06. → **CC** : `git add scripts/update_stats_v2.py public/stats.json && commit && push` (redeploy auto GH Actions), OU **Omar** `publish.bat`.
+> - 🟠 **`/news/` (avec slash) sert l'ancienne liste sans photos** (`news/index.html`) alors que `/news` (sans slash) a le bon design ESTÁDIO avec photos. → **CC** : aligner `news/index.html` sur les cartes-photo de `news.html` (regénérer via `news_to_html.py` avec `image_url`/`.thumb`) **ou** rediriger `/news/` → `/news`.
+> - Restes ouverts CD : QA visuelle mobile ≤390px + `/goals` + `/news/{id}` + `/dashboard.html`.
+> Mis à jour le : 2026-06-29 par Cowork (CD).
 
 ---
 
 ## 5. ❓ Décisions / actions en attente d'Omar
 
-- [ ] 🔴 **BOMBE DEPLOY — `index.html` est TRONQUÉ (repo + prod).** Vérifié : `to1000.com/` se termine en plein dict arabe, sans `</script></body></html>` ni `setLang` inline. La home « marche » seulement parce que **`_engage.js` (~200 Ko, load-bearing, NON committé)** fournit l'i18n. → un redeploy depuis le repo **casserait la home**. Options : (a) récupérer `_engage.js` depuis prod + le committer, OU (b) reviewer/tester le **correctif candidat** dans `design/review/index.html.candidate-fix` (réparé mais supprime `_engage.js` + traductions arabes machine → à valider en navigateur). Détails `DESIGN_AUDIT.md` §2bis. **Ne PAS lancer `deploy_now.bat` avant d'avoir tranché.** — *ajouté 2026-06-23, Claude Code*
-  - ⚠️ Un agent autonome a aussi créé une branche **`fix/homepage-i18n-counter-restore`** (2 commits non revus : fix index.html + modif du workflow `.github/workflows/stats-sync.yml`). **Non mergée, non pushée.** Le working tree a été ramené sur `main` (donc pas de risque de deploy accidentel). **Ne pas merger cette branche sans revue** — elle supprime `_engage.js` et touche un workflow CI.
-- [ ] **Déployer le but live #975** : `to1000\scripts\deploy_now.bat` (stats.json + news.json + _headers CORS mis à jour en local, pas encore en prod). — *maj 2026-06-23 18:11*
+- [x] ~~🔴 BOMBE DEPLOY — `index.html` tronqué (repo + prod)~~ **RÉSOLU par la refonte ESTÁDIO du 26/06** : `index.html` a été remplacé et shippé via `publish.bat`, live vérifié sain (footer/disclaimer présents, compteur 975, 0 erreur console — QA CD 26/06). La branche non revue `fix/homepage-i18n-counter-restore` est désormais **caduque** (peut être supprimée sans risque). — *clôturé 2026-06-26, CD*
+- [x] ~~Déployer le but live #975~~ **FAIT** : prod sert goals 975 / version 28, vérifié live le 26/06. — *clôturé 2026-06-26, CD*
+- [x] ~~Choisir la direction visuelle~~ **FAIT** : Omar a choisi **ESTÁDIO**, en prod. — *clôturé 2026-06-26*
+- [ ] 🔴 **Déployer le fix `next_match` (off_season → Mondial)** : `public/stats.json` v31 + `scripts/update_stats_v2.py` (guards anti-régression) corrigés en local par CD, **pas en prod**. Le live affiche encore « Saison SPL terminée » à tort. → commit+push (CC) ou `publish.bat` (Omar). — *ajouté 2026-06-29, CD*
+- [ ] 🟠 **`/news/` (slash) sans photos → CC** : `news/index.html` sert l'ancienne liste nue ; `news.html` (=`/news`) a le bon design ESTÁDIO avec photos. Aligner les deux (regénérer `news/index.html` avec `image_url`/`.thumb` via `news_to_html.py`) ou rediriger `/news/`→`/news`. — *ajouté 2026-06-29, CD*
+- [ ] 🟠 **Déployer le fix « Parcours »** : `public/index.html` corrigé en local (Al Nassr 99→**129**, Portugal 141→**145**, somme = 975) mais **pas encore en prod**. → `publish.bat`. — *ajouté 2026-06-26, CD*
 - [ ] **Confirmer le 2e but du doublé** vs Ouzbékistan (minute + passeur) pour le créditer précisément. — *ajouté 2026-06-23*
-- [ ] **Choisir la direction visuelle** : **A** (`design/mockups/direction-A-evolution.html`, évolution or/noir) vs **B** (`direction-B-rupture.html`, rupture scoreboard) vs **hybride**. Détails dans `DESIGN_AUDIT.md` §10-12. — *prêt 2026-06-23, Claude Code*
+- [ ] **Correctifs QA visuelle (→ CC)** : contraste faible sur sections sombres (bloc « Prochain rendez-vous » + intitulés eyebrow, a11y) ; JSON-LD `index.html` ~l.168 « Al Nassr 80+ goals » à actualiser ; « Ratio buts/match 0,74 » à vérifier (hardcodé ?). — *ajouté 2026-06-26, CD*
 - [ ] Trancher : on **garde ou supprime le code Next.js parallèle** (`app/`, `components/`, `lib/`) non déployé ? (reco Claude Code : supprimer si on reste en statique pur)
 - [ ] **Canvas particules** : garder l'effet (coût perf mobile) ou alléger en fond CSS ?
 - [ ] Supprimer `public/to1000-preview.html` (3492 l., mort probable) + fichiers parasites (`__persist_test.txt`, `_mount_probe.txt`, `_mtest.txt`, `news_before_*.json`) servis publiquement ?

@@ -41,6 +41,15 @@ AL_NASSR_ID = 817
 CR7_ATHLETE_ID = 22774
 TARGET_GOALS = 1000
 
+# Fix 2026-06-05 : suivi de la sélection du Portugal (amicaux + Coupe du Monde 2026).
+# Le but 974+ peut tomber avec le Portugal (Chili 6/6, Nigéria 10/6, puis WC dès le 11/6).
+# ATTENTION : l'endpoint /teams/{id}/schedule d'ESPN est INCOMPLET pour les sélections
+# (les amicaux de juin n'y figurent pas) → on passe par /scoreboard?dates=YYYYMMDD-YYYYMMDD.
+PORTUGAL_ID = 482
+PORTUGAL_LEAGUES = ["fifa.friendly", "fifa.world", "uefa.nations", "fifa.worldq.uefa"]
+# IDs (str) des équipes de CR7 — pour les checks is_home côté consommateurs.
+CR7_TEAM_IDS = {str(AL_NASSR_ID), str(PORTUGAL_ID)}
+
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
@@ -311,6 +320,113 @@ def find_team_match_today(team_id: int = AL_NASSR_ID, league: str | None = None)
                 # Charger le détail complet (avec buteurs) sur la bonne ligue
                 detail = get_match_summary(m.event_id, lg)
                 if detail:
+                    return detail
+    return None
+
+
+# ─── PORTUGAL / MULTI-ÉQUIPE CR7 ───────────────────────────────────────────
+# Fix 2026-06-05 : le site ne suivait qu'Al Nassr. Avec les amicaux du Portugal
+# (Chili 6/6, Nigéria 10/6) et la Coupe du Monde 2026 (dès le 11/6), les buts
+# 974+ peuvent tomber en sélection. Les fonctions *_cr7() combinent les deux.
+
+def get_scoreboard_range(league: str, start_yyyymmdd: str, end_yyyymmdd: str) -> list[MatchSummary]:
+    """Matchs d'une ligue sur une plage de dates via /scoreboard?dates=A-B.
+    Nécessaire pour les sélections : /teams/{id}/schedule est incomplet
+    (les amicaux de juin 2026 du Portugal n'y apparaissent pas)."""
+    data = _get(f"{ESPN_BASE}/{league}/scoreboard?dates={start_yyyymmdd}-{end_yyyymmdd}&limit=300")
+    league_name = (data.get("leagues") or [{}])[0].get("name", league)
+    out: list[MatchSummary] = []
+    for ev in data.get("events", []):
+        comp = (ev.get("competitions") or [{}])[0]
+        m = _competition_to_summary(comp, ev.get("status", {}), ev.get("date", ""), league_name)
+        if not m.event_id:
+            m.event_id = str(ev.get("id", ""))
+        m.league_slug = league
+        out.append(m)
+    return out
+
+
+def _portugal_matches(days_back: int = 14, days_fwd: int = 60) -> list[MatchSummary]:
+    """Matchs du Portugal (passés récents + futurs) toutes compétitions, dédupliqués."""
+    from datetime import timedelta
+    now = datetime.now(timezone.utc)
+    start = (now - timedelta(days=days_back)).strftime("%Y%m%d")
+    end = (now + timedelta(days=days_fwd)).strftime("%Y%m%d")
+    seen: set[str] = set()
+    out: list[MatchSummary] = []
+    for lg in PORTUGAL_LEAGUES:
+        try:
+            for m in get_scoreboard_range(lg, start, end):
+                if str(PORTUGAL_ID) not in (m.home_team_id, m.away_team_id):
+                    continue
+                key = str(m.event_id or "")
+                if key and key in seen:
+                    continue
+                seen.add(key)
+                out.append(m)
+        except Exception:
+            # Ligue hors-saison / indisponible : on continue.
+            continue
+    return out
+
+
+def find_next_match_cr7() -> MatchSummary | None:
+    """Prochain match de CR7, club (Al Nassr) OU sélection (Portugal) — le plus proche."""
+    now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+    candidates: list[MatchSummary] = []
+    nm = find_next_match(AL_NASSR_ID)
+    if nm:
+        candidates.append(nm)
+    candidates.extend(m for m in _portugal_matches() if m.date_iso and m.date_iso >= now)
+    if not candidates:
+        return None
+    candidates.sort(key=lambda m: m.date_iso)
+    return candidates[0]
+
+
+def find_last_match_cr7() -> MatchSummary | None:
+    """Dernier match joué par CR7, club OU sélection — le plus récent."""
+    now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+    candidates: list[MatchSummary] = []
+    lm = find_last_match(AL_NASSR_ID)
+    if lm:
+        candidates.append(lm)
+    candidates.extend(m for m in _portugal_matches() if m.date_iso and m.date_iso < now)
+    if not candidates:
+        return None
+    candidates.sort(key=lambda m: m.date_iso)
+    return candidates[-1]
+
+
+def find_team_match_today_cr7() -> MatchSummary | None:
+    """Match du jour de CR7 : Al Nassr d'abord, sinon Portugal."""
+    m = find_team_match_today(AL_NASSR_ID)
+    if m is not None:
+        return m
+    return _portugal_match_today()
+
+
+def _portugal_match_today() -> MatchSummary | None:
+    """Match du Portugal aujourd'hui (détaillé, avec buteurs), sinon None."""
+    today = datetime.now(timezone.utc).date()
+    for lg in PORTUGAL_LEAGUES:
+        try:
+            sb = get_today_scoreboard(lg)
+        except Exception:
+            continue
+        for m in sb:
+            if not m.date_iso:
+                continue
+            try:
+                d = datetime.fromisoformat(m.date_iso.replace("Z", "+00:00")).date()
+            except ValueError:
+                continue
+            if d != today:
+                continue
+            if str(PORTUGAL_ID) in (m.home_team_id, m.away_team_id):
+                detail = get_match_summary(m.event_id, lg)
+                if detail:
+                    detail.league_slug = lg
                     return detail
     return None
 

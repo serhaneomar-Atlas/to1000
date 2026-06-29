@@ -45,45 +45,29 @@ if ($reqCheck -eq "ok") {
     Write-Host "  [OK] requests installe" -ForegroundColor Green
 }
 
-# --- Cle API ---
+# --- Source de donnees ---
 Write-Host ""
-Write-Host "-> Configuration de la cle API-Football" -ForegroundColor Yellow
-Write-Host "  (Gratuit sur https://dashboard.api-football.com/profile?access)" -ForegroundColor Gray
+Write-Host "-> Source de donnees : ESPN (gratuit, aucune cle requise)" -ForegroundColor Yellow
+Write-Host "  Migration v2 du 2026-05-07 : abandon d'API-Football" -ForegroundColor Gray
 Write-Host ""
 
+# Nettoyage : si une ancienne cle APIFOOTBALL_KEY traine, on la retire
 $existingKey = [System.Environment]::GetEnvironmentVariable("APIFOOTBALL_KEY", "Machine")
 if ($existingKey) {
-    Write-Host "  Cle existante trouvee : $($existingKey.Substring(0, [Math]::Min(8, $existingKey.Length)))..." -ForegroundColor Gray
-    $change = Read-Host "  Veux-tu la remplacer ? (o/N)"
-    if ($change -eq "o" -or $change -eq "O") {
-        $apiKey = Read-Host "  Entre ta nouvelle cle API"
-    } else {
-        $apiKey = $existingKey
-        Write-Host "  -> Cle existante conservee" -ForegroundColor Green
-    }
-} else {
-    $apiKey = Read-Host "  Entre ta cle API-Football"
+    Write-Host "  Ancienne APIFOOTBALL_KEY detectee, suppression..." -ForegroundColor Gray
+    [System.Environment]::SetEnvironmentVariable("APIFOOTBALL_KEY", $null, "Machine")
+    Write-Host "  [OK] Cle obsolete retiree des variables systeme" -ForegroundColor Green
 }
 
-if (-not $apiKey -or $apiKey.Trim() -eq "") {
-    Write-Host "  [ERREUR] Cle API vide -- setup annule" -ForegroundColor Red
-    exit 1
-}
-$apiKey = $apiKey.Trim()
-
-# Stocker comme variable systeme persistante
-[System.Environment]::SetEnvironmentVariable("APIFOOTBALL_KEY", $apiKey, "Machine")
-Write-Host "  [OK] Cle API enregistree comme variable systeme" -ForegroundColor Green
-
-# --- Creer le fichier .bat ---
+# --- Creer le fichier .bat (sans cle API) ---
 $batLines = @(
     "@echo off",
-    "REM Lance par Windows Task Scheduler toutes les 5 minutes",
-    "set APIFOOTBALL_KEY=$apiKey",
+    "REM Lance par Windows Task Scheduler chaque minute (smart polling).",
+    "REM Le script Python decide d'agir ou non selon la fenetre match.",
     "python `"$WatcherScript`" >> `"$LogFile`" 2>&1"
 )
 Set-Content -Path $BatchFile -Value $batLines -Encoding ASCII
-Write-Host "  [OK] Fichier run_watcher.bat cree" -ForegroundColor Green
+Write-Host "  [OK] Fichier run_watcher.bat cree (sans cle API)" -ForegroundColor Green
 
 # --- Creer la tache Task Scheduler ---
 Write-Host ""
@@ -91,7 +75,8 @@ Write-Host "-> Enregistrement de la tache Windows Task Scheduler..." -Foreground
 
 Unregister-ScheduledTask -TaskName $TaskName -Confirm:$false -ErrorAction SilentlyContinue
 
-$trigger  = New-ScheduledTaskTrigger -RepetitionInterval (New-TimeSpan -Minutes 5) -Once -At (Get-Date)
+# Frequence : 1 minute. Le smart polling cote Python evite la charge inutile.
+$trigger  = New-ScheduledTaskTrigger -RepetitionInterval (New-TimeSpan -Minutes 1) -Once -At (Get-Date)
 $action   = New-ScheduledTaskAction -Execute "cmd.exe" -Argument "/c `"$BatchFile`""
 $settings = New-ScheduledTaskSettingsSet `
     -ExecutionTimeLimit (New-TimeSpan -Minutes 3) `
@@ -113,21 +98,21 @@ Register-ScheduledTask `
 
 Write-Host "  [OK] Tache '$TaskName' creee -- s'execute toutes les 5 minutes" -ForegroundColor Green
 
-# --- Test immediat ---
+# --- Test immediat (smoke test ESPN + Wikipedia) ---
 Write-Host ""
-Write-Host "-> Test de connexion API..." -ForegroundColor Yellow
-$env:APIFOOTBALL_KEY = $apiKey
-& python $WatcherScript 2>&1 | Select-Object -First 25 | ForEach-Object { Write-Host "  $_" -ForegroundColor Gray }
+Write-Host "-> Smoke test des sources de donnees..." -ForegroundColor Yellow
+& python $WatcherScript --smoke 2>&1 | Select-Object -First 25 | ForEach-Object { Write-Host "  $_" -ForegroundColor Gray }
 Write-Host "  [OK] Voir watcher.log pour les details complets" -ForegroundColor Green
 
 # --- Resume ---
 Write-Host ""
 Write-Host "======================================" -ForegroundColor Cyan
-Write-Host "[OK] CR7 Goal Watcher installe avec succes !" -ForegroundColor Green
+Write-Host "[OK] CR7 Goal Watcher v2 installe avec succes !" -ForegroundColor Green
 Write-Host ""
-Write-Host "  - Verifie les buts toutes les 5 min pendant les matchs"
-Write-Host "  - Deploie automatiquement sur to1000.com"
-Write-Host "  - T'envoie une notification Windows sur ton PC"
+Write-Host "  - Verifie chaque minute, agit en fenetre match (smart polling)"
+Write-Host "  - Source ESPN (gratuit) + cross-check Wikipedia hebdo"
+Write-Host "  - Deploie automatiquement sur to1000.com via wrangler"
+Write-Host "  - Notification Windows sur ton PC en cas de but"
 Write-Host ""
 Write-Host "  Logs      : $LogFile"
 Write-Host "  Tache     : Gestionnaire de taches Windows -> '$TaskName'"

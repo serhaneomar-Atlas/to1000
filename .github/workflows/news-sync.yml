@@ -63,6 +63,10 @@ jobs:
         continue-on-error: true
         run: python scripts/news_to_html.py
 
+      - name: Archiver les vieux articles (>7j) — page /news/archive (SEO-safe)
+        continue-on-error: true
+        run: python scripts/archive_old_news.py
+
       - name: Prerender news cards into news.html (SEO — crawlable content)
         continue-on-error: true
         run: python scripts/prerender_news.py
