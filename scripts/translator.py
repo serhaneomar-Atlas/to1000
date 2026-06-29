@@ -125,28 +125,35 @@ class Translator:
             "Content-Type": "application/json",
             "User-Agent": "to1000-translator/1.0",
         })
-        try:
-            with urlopen(req, timeout=REQUEST_TIMEOUT) as resp:
-                payload = json.loads(resp.read().decode("utf-8"))
-        except HTTPError as e:
-            self._failures += 1
-            if e.code == 429:
-                time.sleep(3.0)
-            log(f"  → Gemini HTTPError {e.code}")
-            return None
-        except (URLError, TimeoutError, json.JSONDecodeError):
-            self._failures += 1
-            return None
-        self._calls_gemini += 1
-        time.sleep(RATE_LIMIT_SLEEP)
-        try:
-            candidates = payload.get("candidates") or []
-            if not candidates:
+        # Retry sur 429 : le free tier Gemini ≈ 15 req/min ; avec ~50 articles à
+        # reviewer, on dépasse la fenêtre → backoff + retry au lieu d'abandonner
+        # (sinon la plupart des items perdent le rédacteur en chef et retombent
+        # sur MyMemory). Le backoff cale aussi le débit sous la limite.
+        for attempt in range(4):
+            try:
+                with urlopen(req, timeout=REQUEST_TIMEOUT) as resp:
+                    payload = json.loads(resp.read().decode("utf-8"))
+            except HTTPError as e:
+                if e.code == 429 and attempt < 3:
+                    time.sleep(8.0 * (attempt + 1))   # 8s, 16s, 24s
+                    continue
+                self._failures += 1
+                log(f"  → Gemini HTTPError {e.code}")
                 return None
-            parts = candidates[0].get("content", {}).get("parts", [])
-            return parts[0].get("text", "").strip() if parts else None
-        except (KeyError, IndexError, AttributeError):
-            return None
+            except (URLError, TimeoutError, json.JSONDecodeError):
+                self._failures += 1
+                return None
+            self._calls_gemini += 1
+            time.sleep(RATE_LIMIT_SLEEP)
+            try:
+                candidates = payload.get("candidates") or []
+                if not candidates:
+                    return None
+                parts = candidates[0].get("content", {}).get("parts", [])
+                return parts[0].get("text", "").strip() if parts else None
+            except (KeyError, IndexError, AttributeError):
+                return None
+        return None
 
     def _call_mymemory(self, text: str, src: str, dst: str) -> Optional[str]:
         if not text:
