@@ -590,8 +590,8 @@ def main() -> int:
     # en ~5 min. Configurable via EDITORIAL_BUDGET.
     # Garde-fous anti-timeout (le run plantait à 20 min dans la passe Gemini) :
     # budget de NOUVEAUX appels + PLAFOND wall-clock dur. Au-delà → MyMemory.
-    editorial_budget = int(os.environ.get("EDITORIAL_BUDGET", "18"))
-    editorial_max_s = int(os.environ.get("EDITORIAL_MAX_SECONDS", "540"))  # 9 min « mur » < timeout 20
+    editorial_budget = int(os.environ.get("EDITORIAL_BUDGET", "15"))
+    editorial_max_s = int(os.environ.get("EDITORIAL_MAX_SECONDS", "420"))  # 7 min « mur » (+ MyMemory) < timeout 20
     editorial_calls = 0
     editorial_t0 = time.monotonic()
 
@@ -613,20 +613,25 @@ def main() -> int:
         # translation, then to source-language passthrough.
         # ── RÉDACTEUR EN CHEF (Gemini) : vérifie fidélité/valeur/positionnement,
         #    décide PUBLIER/REJETER, fournit titre+résumé essentiel en 4 langues.
-        review = None
-        editorial_elapsed = time.monotonic() - editorial_t0
+        # ── COUPE-CIRCUIT éditorial (AVANT toute logique par-item) : dès que le
+        #    budget OU le mur de temps est franchi, on coupe TOUT Gemini — chief
+        #    ET le fallback editorialize_pair — pour le reste du run. C'était LE
+        #    bug : avant, le cutoff ne coupait que chief, editorialize_pair
+        #    continuait d'appeler Gemini → le run timeoutait quand même.
         if (translator and getattr(translator, "gemini_enabled", False)
-                and chief_editor_review and editorial_calls < editorial_budget
-                and editorial_elapsed < editorial_max_s):
+                and (editorial_calls >= editorial_budget
+                     or (time.monotonic() - editorial_t0) >= editorial_max_s)):
+            translator.gemini_enabled = False
+            print(f"[news] cap éditorial atteint ({editorial_calls} appels / "
+                  f"{int(time.monotonic() - editorial_t0)}s) → MyMemory pour le reste du run")
+
+        # ── RÉDACTEUR EN CHEF (Gemini) tant que le coupe-circuit n'a pas sauté.
+        review = None
+        if (translator and getattr(translator, "gemini_enabled", False)
+                and chief_editor_review):
             before = translator._calls_gemini
             review = chief_editor_review(translator, title, summary, src_lang, targets)
-            editorial_calls += translator._calls_gemini - before   # ne compte que les vrais appels (pas les hits cache)
-            if ((editorial_calls >= editorial_budget
-                 or (time.monotonic() - editorial_t0) >= editorial_max_s)
-                    and translator.gemini_enabled):
-                translator.gemini_enabled = False   # reste du run en MyMemory (rapide) → JAMAIS de timeout
-                print(f"[news] cap éditorial atteint ({editorial_calls} appels / "
-                      f"{int(time.monotonic()-editorial_t0)}s) → MyMemory pour le reste du run")
+            editorial_calls += translator._calls_gemini - before   # compte les vrais appels (pas les hits cache)
         if review is not None:
             if not review["publish"]:
                 continue   # rejeté par le rédacteur en chef (non-news, divergence, périmé…)
