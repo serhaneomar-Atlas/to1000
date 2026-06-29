@@ -27,8 +27,8 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).parent
 sys.path.insert(0, str(SCRIPT_DIR))
 from lib.espn_client import (
-    AL_NASSR_ID, TARGET_GOALS,
-    find_last_match, find_next_match, get_match_summary,
+    AL_NASSR_ID, CR7_TEAM_IDS, TARGET_GOALS,
+    find_last_match_cr7, find_next_match_cr7, get_match_summary,
 )
 
 PROJECT_DIR = SCRIPT_DIR.parent
@@ -48,17 +48,18 @@ def save_stats(stats: dict) -> None:
 
 
 def refresh_last_match(stats: dict) -> bool:
-    """Si le dernier match terminé d'Al Nassr a un cr7_minute, on rafraîchit le bloc last_match.
+    """Si le dernier match terminé de CR7 (Al Nassr OU Portugal) a un cr7_minute, on rafraîchit last_match.
     Fix 2026-05-17 : passer le league_slug à get_match_summary pour les matchs continentaux
-    (sans ça, la finale ACL Two du 16/05 n'était pas re-fetchée et last_match restait stale)."""
-    last = find_last_match(AL_NASSR_ID)
+    (sans ça, la finale ACL Two du 16/05 n'était pas re-fetchée et last_match restait stale).
+    Fix 2026-06-05 : suit aussi le Portugal (amicaux + Coupe du Monde 2026) via find_last_match_cr7."""
+    last = find_last_match_cr7()
     if not last or not last.event_id:
         return False
     league = getattr(last, "league_slug", None) or "ksa.1"
     detail = get_match_summary(last.event_id, league)
     if not detail or not detail.is_finished:
         return False
-    is_home = str(detail.home_team_id) == str(AL_NASSR_ID)
+    is_home = str(detail.home_team_id) in CR7_TEAM_IDS
     opp = detail.away_team if is_home else detail.home_team
     cr7_goals = [g for g in detail.goals if g.is_cr7]
     cr7_scored = bool(cr7_goals)
@@ -90,8 +91,17 @@ def refresh_last_match(stats: dict) -> bool:
         "cr7_goal_num": stats.get("goals", 0) if cr7_scored else None,
         "cr7_minute": cr7_minute,
         "fotmob_url": stats.get("last_match", {}).get("fotmob_url", ""),
+        "date_iso": detail.date_iso,
     }
     if stats.get("last_match") == new_block:
+        return False
+    # Fix 2026-06-29 : garde-fou anti-régression. Ne jamais reculer dans le temps.
+    # Si find_last_match_cr7() échoue à fetch le Portugal (runner GH Actions),
+    # il retombe sur le dernier Al Nassr (intersaison, déjà ancien). On refuse
+    # alors d'écraser un last_match plus récent (ex. Colombie–Portugal du Mondial).
+    prev_iso = (stats.get("last_match") or {}).get("date_iso")
+    if prev_iso and detail.date_iso and detail.date_iso < prev_iso:
+        print(f"  last_match: conservé ({prev_iso} plus récent que {detail.date_iso}) — fetch probablement échoué")
         return False
     stats["last_match"] = new_block
     if cr7_scored:
@@ -102,7 +112,8 @@ def refresh_last_match(stats: dict) -> bool:
 
 
 def refresh_next_match(stats: dict) -> bool:
-    nm = find_next_match(AL_NASSR_ID)
+    # Fix 2026-06-05 : cherche le prochain match club OU sélection (Portugal).
+    nm = find_next_match_cr7()
     if not nm:
         # Fix 2026-05-16 : avant d'écrire off_season, vérifier si l'ancien
         # next_match correspond à un match probablement EN COURS. Un match qui
@@ -118,6 +129,15 @@ def refresh_next_match(stats: dict) -> bool:
                 # Match en cours : kickoff dans les 3h passées (couvre 90' + prolongations + tirs au but)
                 if timedelta(0) <= (now - ko) <= timedelta(hours=3):
                     print("  next_match: match probablement en cours, préservation")
+                    return False
+                # Fix 2026-06-29 : garde-fou anti-régression. Si le next_match
+                # actuel est encore DANS LE FUTUR, c'est qu'on connaît déjà un vrai
+                # match à venir et que find_next_match_cr7() vient probablement
+                # d'échouer (fetch ESPN Portugal KO sur le runner GH Actions →
+                # fallback Al Nassr intersaison). On NE doit PAS écraser un match
+                # futur connu (ex. Portugal–Croatie, Coupe du Monde) par off_season.
+                if ko > now:
+                    print(f"  next_match: futur connu préservé ({cur_nm.get('home_team')} vs {cur_nm.get('away_team')}, {cur_kickoff}) — fetch probablement échoué")
                     return False
             except (ValueError, AttributeError):
                 pass
@@ -143,7 +163,7 @@ def refresh_next_match(stats: dict) -> bool:
             return False
         stats["next_match"] = sentinel
         return True
-    is_home = str(nm.home_team_id) == str(AL_NASSR_ID)
+    is_home = str(nm.home_team_id) in CR7_TEAM_IDS
     new_block = {
         "home_team": nm.home_team,
         "away_team": nm.away_team,
