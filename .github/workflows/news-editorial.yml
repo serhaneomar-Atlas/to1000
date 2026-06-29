@@ -1,0 +1,85 @@
+name: News editorial (enrichissement Gemini, découplé)
+
+# Le « cerveau » éditorial, séparé de la publication. news-sync publie vite
+# (cache-only, zéro Gemini live → jamais de timeout). Ce workflow enrichit un
+# petit lot d'articles via Gemini (rythmé, borné) et alimente le cache que
+# news-sync réutilise (préservation par id). → publication fiable + qualité qui
+# monte. Même groupe de concurrence que news-sync : ils ne tournent jamais
+# en même temps (pas de course sur news.json).
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # toutes les 30 min (repo public = minutes illimitées)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news-pipeline
+  cancel-in-progress: false
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps (pour la régénération HTML)
+        run: pip install feedparser
+
+      - name: Snapshot news.json hash
+        id: pre
+        run: echo "hash=$(sha256sum public/news.json 2>/dev/null | cut -d' ' -f1)" >> $GITHUB_OUTPUT
+
+      - name: Enrichir un lot d'articles (rédacteur en chef Gemini, borné)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/enrich_news.py
+
+      - name: Régénérer les pages article + cartes (refléter l'enrichissement)
+        continue-on-error: true
+        run: |
+          python scripts/news_to_html.py
+          python scripts/prerender_news.py
+
+      - name: Détecter un changement
+        id: diff
+        run: |
+          NEW=$(sha256sum public/news.json | cut -d' ' -f1)
+          if [ "${{ steps.pre.outputs.hash }}" = "$NEW" ]; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "::notice::Aucun enrichissement ce run — skip commit/deploy"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit & push
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "to1000-editorial-bot"
+          git config user.email "to1000-editorial-bot@users.noreply.github.com"
+          git add public/news.json public/news.html public/translations_cache.json public/news/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "::notice::Rien à committer"
+          else
+            git commit -m "chore(editorial): enrichissement Gemini [$(date -u +%Y-%m-%dT%H:%M)Z]"
+            git push
+          fi
+
+      - name: Deploy to Cloudflare Pages
+        if: steps.diff.outputs.changed == 'true' && env.CLOUDFLARE_API_TOKEN != ''
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx wrangler@latest pages deploy public/ --project-name to1000 --branch main --commit-dirty=true

@@ -36,18 +36,21 @@ def chief_editor_review(translator, title: str, summary: str, src: str, targets:
     Retourne dict {publish, reason, quality, i18n:{lang:{title,summary,engine}}}
     ou None si Gemini indisponible/échec (→ le caller retombe sur le pipeline normal).
     """
-    if not getattr(translator, "gemini_enabled", False):
-        return None
     title = (title or "").strip()
     summary = (summary or "").strip()
     if not title:
         return None
     langs = list(dict.fromkeys([src] + [t for t in targets if t != src]))
-    cache_key = "edt:" + translator_hash(title, summary, src, langs) if hasattr(translator, "cache") else None
+    # CACHE D'ABORD (gratuit) — marche même si Gemini est coupé (mode cache-only de
+    # news-sync). Le cache est alimenté par news-editorial (le « cerveau » éditorial).
+    cache_key = "edt:" + translator_hash(title, summary, src, langs) if getattr(translator, "cache", None) else None
     if cache_key and translator.cache:
         cached = translator.cache.get(cache_key)
         if cached:
             return cached
+    # Pas de hit → appel Gemini SEULEMENT s'il est actif (news-sync le coupe).
+    if not getattr(translator, "gemini_enabled", False):
+        return None
     names = ", ".join(f'"{l}" ({LANG_NAMES.get(l, l)})' for l in langs)
     system = (
         "Tu es le COMITÉ ÉDITORIAL d'un média de football (soccer) haut de gamme, "

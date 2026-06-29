@@ -22,7 +22,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: news-sync
+  group: news-pipeline   # partagé avec news-editorial → jamais en même temps (pas de course sur news.json)
   cancel-in-progress: false   # don't kill a run mid-deploy
 
 jobs:
@@ -64,6 +64,7 @@ jobs:
           # Without it: graceful fallback to literal translation, then to the
           # source-language excerpt — the pipeline never breaks.
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          EDITORIAL_CACHE_ONLY: "1"   # publication rapide : zéro Gemini live (news-editorial enrichit à part)
         run: python scripts/news_aggregator.py
 
       - name: Generate SEO HTML pages for each news item

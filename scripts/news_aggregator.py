@@ -594,6 +594,12 @@ def main() -> int:
     editorial_max_s = int(os.environ.get("EDITORIAL_MAX_SECONDS", "420"))  # 7 min « mur » (+ MyMemory) < timeout 20
     editorial_calls = 0
     editorial_t0 = time.monotonic()
+    # Mode CACHE-ONLY (news-sync) : ZÉRO appel Gemini live → publication toujours
+    # rapide, jamais de timeout. Les hits de cache (alimentés par news-editorial,
+    # le « cerveau » éditorial) restent servis. C'est l'archi découplée recommandée.
+    if os.environ.get("EDITORIAL_CACHE_ONLY") == "1" and translator:
+        translator.gemini_enabled = False
+        print("[news] cache-only : éditorial Gemini live OFF (news-editorial enrichit à part)")
 
     final_items = []
     for c in clusters:
@@ -625,10 +631,12 @@ def main() -> int:
             print(f"[news] cap éditorial atteint ({editorial_calls} appels / "
                   f"{int(time.monotonic() - editorial_t0)}s) → MyMemory pour le reste du run")
 
-        # ── RÉDACTEUR EN CHEF (Gemini) tant que le coupe-circuit n'a pas sauté.
+        # ── RÉDACTEUR EN CHEF : appelé si Gemini live actif OU si un cache existe
+        #    (les hits de cache sont servis même en mode cache-only, Gemini OFF).
         review = None
-        if (translator and getattr(translator, "gemini_enabled", False)
-                and chief_editor_review):
+        if (translator and chief_editor_review
+                and (getattr(translator, "gemini_enabled", False)
+                     or getattr(translator, "cache", None))):
             before = translator._calls_gemini
             review = chief_editor_review(translator, title, summary, src_lang, targets)
             editorial_calls += translator._calls_gemini - before   # compte les vrais appels (pas les hits cache)
@@ -694,6 +702,25 @@ def main() -> int:
         reverse=True,
     )
     final_items = final_items[:MAX_ITEMS]
+
+    # Persistance de l'enrichissement : réutilise l'i18n « gemini-editor » déjà
+    # produit (par news-editorial) pour un article au même id — sinon news-sync
+    # (cache-only) le perdrait au refetch. → la qualité éditoriale ne régresse pas.
+    try:
+        _prev = json.load(open(OUTPUT_FILE, encoding="utf-8"))
+        _enriched = {it.get("id"): it.get("i18n")
+                     for it in _prev.get("items", [])
+                     if ((it.get("i18n", {}) or {}).get("fr", {}) or {}).get("engine") == "gemini-editor"}
+        _kept = 0
+        for it in final_items:
+            cur = ((it.get("i18n", {}) or {}).get("fr", {}) or {}).get("engine")
+            if cur != "gemini-editor" and it.get("id") in _enriched:
+                it["i18n"] = _enriched[it["id"]]
+                _kept += 1
+        if _kept:
+            log(f"Enrichissement éditorial préservé pour {_kept} articles (par id)", verbose)
+    except (OSError, json.JSONDecodeError):
+        pass
 
     payload = {
         "generated_at": now_iso(),
