@@ -27,7 +27,10 @@ from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
 
-GEMINI_MODEL = "gemini-2.0-flash"
+# Alias "latest" maintenu par Google → pointe toujours sur le dernier flash,
+# ne déprécie jamais (gemini-2.0-flash a disparu et cassait le pipeline).
+# Surchargeable par variable d'env GEMINI_MODEL si besoin de figer une version.
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-flash-latest")
 GEMINI_URL_TMPL = (
     "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
 )
