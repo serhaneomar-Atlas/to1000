@@ -588,8 +588,12 @@ def main() -> int:
     # ~25 NOUVEAUX articles/run au rédacteur en chef ; le reste passe en MyMemory.
     # Le cache (clé edt:) accumule → tous couverts en ~2 runs, et chaque run finit
     # en ~5 min. Configurable via EDITORIAL_BUDGET.
-    editorial_budget = int(os.environ.get("EDITORIAL_BUDGET", "25"))
+    # Garde-fous anti-timeout (le run plantait à 20 min dans la passe Gemini) :
+    # budget de NOUVEAUX appels + PLAFOND wall-clock dur. Au-delà → MyMemory.
+    editorial_budget = int(os.environ.get("EDITORIAL_BUDGET", "18"))
+    editorial_max_s = int(os.environ.get("EDITORIAL_MAX_SECONDS", "540"))  # 9 min « mur » < timeout 20
     editorial_calls = 0
+    editorial_t0 = time.monotonic()
 
     final_items = []
     for c in clusters:
@@ -610,14 +614,19 @@ def main() -> int:
         # ── RÉDACTEUR EN CHEF (Gemini) : vérifie fidélité/valeur/positionnement,
         #    décide PUBLIER/REJETER, fournit titre+résumé essentiel en 4 langues.
         review = None
+        editorial_elapsed = time.monotonic() - editorial_t0
         if (translator and getattr(translator, "gemini_enabled", False)
-                and chief_editor_review and editorial_calls < editorial_budget):
+                and chief_editor_review and editorial_calls < editorial_budget
+                and editorial_elapsed < editorial_max_s):
             before = translator._calls_gemini
             review = chief_editor_review(translator, title, summary, src_lang, targets)
             editorial_calls += translator._calls_gemini - before   # ne compte que les vrais appels (pas les hits cache)
-            if editorial_calls >= editorial_budget and translator.gemini_enabled:
-                translator.gemini_enabled = False   # reste du run en MyMemory (rapide, sous le timeout)
-                print(f"[news] budget éditorial {editorial_budget} atteint → MyMemory pour le reste du run")
+            if ((editorial_calls >= editorial_budget
+                 or (time.monotonic() - editorial_t0) >= editorial_max_s)
+                    and translator.gemini_enabled):
+                translator.gemini_enabled = False   # reste du run en MyMemory (rapide) → JAMAIS de timeout
+                print(f"[news] cap éditorial atteint ({editorial_calls} appels / "
+                      f"{int(time.monotonic()-editorial_t0)}s) → MyMemory pour le reste du run")
         if review is not None:
             if not review["publish"]:
                 continue   # rejeté par le rédacteur en chef (non-news, divergence, périmé…)

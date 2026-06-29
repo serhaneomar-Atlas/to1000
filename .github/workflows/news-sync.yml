@@ -9,6 +9,13 @@ on:
   schedule:
     - cron: "0 * * * *"   # toutes les heures (repo public = minutes illimitées)
   workflow_dispatch:          # allow manual trigger from the Actions tab
+  push:                       # re-run + republish quand le pipeline news change
+    branches: [main]
+    paths:
+      - 'scripts/news_aggregator.py'
+      - 'scripts/translator.py'
+      - 'scripts/editorial.py'
+      - '.github/workflows/news-sync.yml'
 
 # Allow the workflow to push the regenerated news.json back to the repo
 permissions:
