@@ -12,7 +12,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <style>
   :root{--ink:#05070b;--panel:#0d1118;--steel:#161c26;--gold:#f2c14e;--gold-hot:#ffd66b;
-        --chalk:#eef2f6;--mute:#9aa6b4;--line:rgba(247,231,163,.16);--ok:#34e07a;--bad:#ff6178;--maxw:1280px;}
+        --chalk:#eef2f6;--mute:#9aa6b4;--line:rgba(247,231,163,.16);--ok:#34e07a;--bad:#ff6178;--warn:#f2c14e;--maxw:1280px;}
   *{margin:0;padding:0;box-sizing:border-box}
   body{font-family:'Hanken Grotesk',system-ui,sans-serif;background:var(--ink);color:var(--chalk);-webkit-font-smoothing:antialiased;padding:0 0 60px}
   .impact{font-family:'Anton',sans-serif;font-weight:400}
@@ -21,19 +21,37 @@
     padding:16px 26px;background:rgba(5,7,11,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
   header .logo{font-family:'Anton',sans-serif;font-size:22px}.logo b{color:var(--gold)}
   header .sub{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+  header .right{display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:flex-end}
   header .upd{font-family:'Oswald',sans-serif;font-size:12px;color:var(--mute)}
+  header .upd b{color:var(--ok);font-weight:600}
+  .seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:#0a0d13}
+  .seg button{font-family:'Oswald',sans-serif;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;
+    background:transparent;color:var(--mute);border:0;padding:7px 13px;cursor:pointer;transition:.15s}
+  .seg button.on{background:var(--gold);color:var(--ink);font-weight:600}
+  .seg button:not(.on):hover{color:var(--chalk)}
   main{max-width:var(--maxw);margin:0 auto;padding:24px 26px;display:flex;flex-direction:column;gap:22px}
   h2{font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+  .alerts{display:flex;flex-direction:column;gap:8px}
+  .alert{display:flex;gap:12px;align-items:flex-start;border-radius:12px;padding:12px 14px;border:1px solid var(--line);background:var(--panel)}
+  .alert.info{border-color:rgba(52,224,122,.35);background:linear-gradient(90deg,rgba(52,224,122,.08),transparent)}
+  .alert.warn{border-color:rgba(242,193,78,.4);background:linear-gradient(90deg,rgba(242,193,78,.1),transparent)}
+  .alert.error{border-color:rgba(255,97,120,.45);background:linear-gradient(90deg,rgba(255,97,120,.1),transparent)}
+  .alert .at{font-family:'Oswald',sans-serif;font-size:14px;font-weight:600;color:var(--chalk)}
+  .alert .am{font-size:13px;color:var(--mute);margin-top:2px}
   .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px}
   .kpi{background:linear-gradient(180deg,var(--panel),#0a0d13);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px}
   .kpi .n{font-family:'Anton',sans-serif;font-size:clamp(34px,5vw,52px);line-height:1;color:var(--chalk)}
   .kpi .n small{font-size:.42em;color:var(--mute)}
   .kpi .l{font-family:'Oswald',sans-serif;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin-top:8px}
   .kpi .d{font-size:12px;margin-top:6px;color:var(--mute)} .kpi .d.up{color:var(--ok)} .kpi .d.down{color:var(--bad)}
+  .kpi .d .arrow{font-weight:700}
   .kpi.hero{background:linear-gradient(135deg,rgba(242,193,78,.12),rgba(13,17,24,.9));border-color:rgba(242,193,78,.35)}
   .kpi.hero .n{color:var(--gold)}
   .grid2{display:grid;grid-template-columns:1fr;gap:22px}
   @media(min-width:900px){.grid2{grid-template-columns:3fr 2fr}}
+  .grid3{display:grid;grid-template-columns:1fr;gap:22px}
+  @media(min-width:760px){.grid3{grid-template-columns:1fr 1fr}}
+  @media(min-width:1080px){.grid3{grid-template-columns:1fr 1fr 1fr}}
   .panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
   .panel canvas{max-height:280px}
   .chk{display:flex;flex-direction:column;gap:9px}
@@ -54,6 +72,8 @@
   .srclist{display:flex;flex-wrap:wrap;gap:8px}
   .srclist span{font-family:'Oswald',sans-serif;font-size:12px;background:#0a0d13;border:1px solid var(--line);border-radius:999px;padding:5px 11px;color:var(--mute)}
   .note{font-size:12px;color:var(--mute);margin-top:10px}
+  .live{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 rgba(52,224,122,.6);animation:pulse 2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(52,224,122,.5)}70%{box-shadow:0 0 0 7px rgba(52,224,122,0)}100%{box-shadow:0 0 0 0 rgba(52,224,122,0)}}
   </style>
 </head>
 <body>
@@ -61,21 +81,41 @@
     <div>
       <div class="logo">TO<b>1000</b> · <span class="sub">Dashboard marketing</span></div>
     </div>
-    <div class="upd" id="updated">…</div>
+    <div class="right">
+      <div class="seg" id="period" role="tablist" aria-label="Période">
+        <button data-d="7">7 j</button>
+        <button data-d="30" class="on">30 j</button>
+        <button data-d="90">90 j</button>
+        <button data-d="0">Tout</button>
+      </div>
+      <div class="upd" id="updated"><span class="live"></span> <span id="updTxt">…</span></div>
+    </div>
   </header>
   <main>
+    <section id="alertsWrap" hidden>
+      <h2>Alertes</h2>
+      <div class="alerts" id="alerts"></div>
+    </section>
+
     <section>
       <div class="kpis" id="kpis"></div>
     </section>
 
     <section class="grid2">
-      <div class="panel"><h2 id="trafficTitle">Trafic (30 jours)</h2><div id="trafficBody"><canvas id="trafficChart"></canvas></div></div>
+      <div class="panel"><h2 id="trafficTitle">Trafic</h2><div id="trafficBody"><canvas id="trafficChart"></canvas></div></div>
       <div class="panel"><h2>Vers le 1000ᵉ but</h2><canvas id="goalChart"></canvas></div>
     </section>
 
     <section class="grid2">
       <div class="panel"><h2>Contenu publié (évolution)</h2><canvas id="contentChart"></canvas>
         <p class="note">Les courbes se remplissent à chaque mise à jour quotidienne (snapshot/jour).</p></div>
+      <div class="panel"><h2>News publiées / jour</h2><canvas id="velocityChart"></canvas>
+        <p class="note">Variation jour-à-jour des news en ligne (pression éditoriale).</p></div>
+    </section>
+
+    <section class="grid3">
+      <div class="panel"><h2>Répartition par source</h2><canvas id="sourceChart"></canvas></div>
+      <div class="panel"><h2>Répartition par langue</h2><canvas id="langChart"></canvas></div>
       <div class="panel"><h2>Santé SEO</h2><div class="chk" id="seo"></div></div>
     </section>
 
@@ -88,86 +128,153 @@
   </main>
 
   <script>
-  const GOLD="#f2c14e", MUTE="#9aa6b4", LINE="rgba(247,231,163,.14)", CHALK="#eef2f6";
+  const GOLD="#f2c14e", GOLD2="#ffd66b", BLUE="#5c8fd6", MUTE="#9aa6b4",
+        LINE="rgba(247,231,163,.14)", CHALK="#eef2f6", OK="#34e07a", BAD="#ff6178";
+  const PALETTE=[GOLD,BLUE,"#34e07a","#c77dff","#ff8e72","#4dd0e1","#f06292","#a3e635","#ffb74d","#7986cb"];
   Chart.defaults.color=MUTE; Chart.defaults.font.family="'Hanken Grotesk',sans-serif"; Chart.defaults.borderColor=LINE;
   const fmt=n=>(n==null?"—":Number(n).toLocaleString('fr-FR'));
 
-  fetch('/dashboard-data.json?_='+Math.floor(Date.now()/60000)).then(r=>r.json()).then(render)
-    .catch(e=>{document.getElementById('kpis').innerHTML='<p style="color:var(--bad)">dashboard-data.json introuvable — lance scripts/collect_metrics.py</p>';});
+  const REFRESH_MS=120000;
+  let PERIOD=30;
+  let DATA=null;
+  const CH={};
+
+  function deltaHtml(dl){
+    if(!dl || dl.pct==null) return '';
+    const up = dl.dir==='up', flat = dl.dir==='flat';
+    const cls = flat?'':(up?'up':'down');
+    const arrow = flat?'→':(up?'▲':'▼');
+    const sign = dl.abs>0?'+':'';
+    return `<div class="d ${cls}"><span class="arrow">${arrow}</span> ${sign}${fmt(dl.abs)} (${sign}${dl.pct}%) <small style="color:var(--mute)">vs run préc.</small></div>`;
+  }
+
+  function sliceHist(h){ if(!PERIOD || PERIOD<=0) return h; return h.slice(-PERIOD); }
+  function sliceSeries(s){ if(!PERIOD || PERIOD<=0) return s; return s.slice(-PERIOD); }
+  function destroyAll(){ Object.keys(CH).forEach(k=>{try{CH[k].destroy()}catch(e){}; delete CH[k];}); }
+
+  async function load(){
+    try{
+      const r = await fetch('/dashboard-data.json?_='+Math.floor(Date.now()/30000));
+      DATA = await r.json();
+      render(DATA);
+    }catch(e){
+      document.getElementById('kpis').innerHTML='<p style="color:var(--bad)">dashboard-data.json introuvable — lance scripts/collect_metrics.py</p>';
+    }
+  }
 
   function render(d){
-    const s=d.snapshot||{}, t=d.traffic||{}, h=d.history||[];
-    document.getElementById('updated').textContent='MÀJ : '+(d.generated_at||'').slice(0,10);
+    destroyAll();
+    const s=d.snapshot||{}, t=d.traffic||{}, h=d.history||[], dl=d.deltas||{};
+    document.getElementById('updTxt').textContent='MÀJ : '+(d.generated_at||'').slice(0,10);
 
-    // KPIs
-    const kpi=(n,l,extra='',cls='')=>`<div class="kpi ${cls}"><div class="n">${n}</div><div class="l">${l}</div>${extra?`<div class="d">${extra}</div>`:''}</div>`;
+    const aw=document.getElementById('alertsWrap'), ab=document.getElementById('alerts');
+    const alerts=d.alerts||[];
+    if(alerts.length){
+      aw.hidden=false;
+      ab.innerHTML=alerts.map(a=>`<div class="alert ${a.level||'info'}">
+        <div><div class="at">${a.title||''}</div><div class="am">${a.message||''}</div></div></div>`).join('');
+    } else { aw.hidden=true; ab.innerHTML=''; }
+
+    const kpi=(n,l,extra='',cls='',delta='')=>`<div class="kpi ${cls}"><div class="n">${n}</div><div class="l">${l}</div>${extra?`<div class="d">${extra}</div>`:''}${delta}</div>`;
     let kpis='';
-    kpis+=kpi(`${fmt(s.goals)}<small>/1000</small>`,'Buts CR7 (le hook)',`${s.remaining} avant l'histoire · ${s.pct_to_1000}%`,'hero');
+    kpis+=kpi(`${fmt(s.goals)}<small>/1000</small>`,'Buts CR7 (le hook)',`${s.remaining} avant l'histoire · ${s.pct_to_1000}%`,'hero',deltaHtml(dl.goals));
     kpis+=t.connected
-      ? kpi(fmt(t.users_30d),'Visiteurs (30 j)',`${fmt(t.sessions_30d)} sessions · ${fmt(t.views_30d)} pages vues`)
+      ? kpi(fmt(t.users_30d),'Visiteurs (30 j)',`${fmt(t.sessions_30d)} sessions · ${fmt(t.views_30d)} pages vues`,'',deltaHtml(d.traffic_delta))
       : kpi('—','Visiteurs (30 j)','GA4 à connecter ↓');
-    kpis+=kpi(fmt(s.news_items),'News en ligne',`${s.cr7_items} CR7 · ${s.news_sources} sources`);
-    kpis+=kpi(fmt(s.article_pages),'Pages article',`${fmt(s.sitemap_urls)} URLs au sitemap`);
+    kpis+=kpi(fmt(s.news_items),'News en ligne',`${s.cr7_items} CR7 · ${s.news_sources} sources`,'',deltaHtml(dl.news_items));
+    kpis+=kpi(fmt(s.article_pages),'Pages article',`${fmt(s.sitemap_urls)} URLs au sitemap`,'',deltaHtml(dl.article_pages));
     document.getElementById('kpis').innerHTML=kpis;
 
-    // Traffic chart or connect-CTA
+    document.getElementById('trafficTitle').textContent = t.connected
+      ? `Trafic (${PERIOD?PERIOD+' j':'tout'})` : 'Trafic — à connecter';
     if(t.connected && (t.series||[]).length){
-      new Chart(document.getElementById('trafficChart'),{type:'line',
-        data:{labels:t.series.map(x=>x.date.slice(4)),datasets:[
-          {label:'Visiteurs',data:t.series.map(x=>x.users),borderColor:GOLD,backgroundColor:'rgba(242,193,78,.12)',fill:true,tension:.35,pointRadius:0},
-          {label:'Pages vues',data:t.series.map(x=>x.views),borderColor:'#5c8fd6',tension:.35,pointRadius:0}]},
-        options:{plugins:{legend:{labels:{boxWidth:12}}},scales:{x:{grid:{display:false}}}}});
+      const ser=sliceSeries(t.series);
+      CH.traffic=new Chart(document.getElementById('trafficChart'),{type:'line',
+        data:{labels:ser.map(x=>x.date.slice(4)),datasets:[
+          {label:'Visiteurs',data:ser.map(x=>x.users),borderColor:GOLD,backgroundColor:'rgba(242,193,78,.12)',fill:true,tension:.35,pointRadius:0},
+          {label:'Pages vues',data:ser.map(x=>x.views),borderColor:BLUE,tension:.35,pointRadius:0}]},
+        options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{boxWidth:12}}},scales:{x:{grid:{display:false}}}}});
     } else {
-      document.getElementById('trafficTitle').textContent='Trafic — à connecter';
       document.getElementById('trafficBody').innerHTML=
        `<div class="connect"><h3>Brancher GA4 pour le trafic réel</h3>
         <p style="font-size:13.5px;color:var(--mute)">${(t.note||'')}</p>
         <ol>
           <li>Crée un <b>service-account</b> Google Cloud avec l'API <i>Google Analytics Data</i>.</li>
           <li>Ajoute son e-mail comme <b>lecteur</b> dans GA4 (propriété G-4V8Y6C38VN).</li>
-          <li>Mets en secrets GitHub : <code>GA4_PROPERTY_ID</code> + le JSON dans <code>GOOGLE_APPLICATION_CREDENTIALS</code>.</li>
+          <li>Mets en secrets GitHub : <code>GA4_PROPERTY_ID</code> + le JSON dans <code>GA4_SA_JSON</code>.</li>
         </ol>
-        <p class="note">Le collecteur (scripts/collect_metrics.py) remplira alors visiteurs, top pages, sources et pays automatiquement. Alternative zéro-code : <a href="https://lookerstudio.google.com" target="_blank" rel="noopener">Looker Studio</a> connecté à GA4.</p></div>`;
+        <p class="note">Le collecteur (scripts/collect_metrics.py) remplira alors visiteurs, top pages, sources et pays automatiquement.</p></div>`;
     }
 
-    // Goal doughnut
-    new Chart(document.getElementById('goalChart'),{type:'doughnut',
+    CH.goal=new Chart(document.getElementById('goalChart'),{type:'doughnut',
       data:{labels:['Marqués','Restants'],datasets:[{data:[s.goals,s.remaining],backgroundColor:[GOLD,'#1d2530'],borderWidth:0}]},
-      options:{cutout:'72%',plugins:{legend:{position:'bottom',labels:{boxWidth:12}},
+      options:{responsive:true,maintainAspectRatio:false,cutout:'72%',plugins:{legend:{position:'bottom',labels:{boxWidth:12}},
         tooltip:{callbacks:{label:c=>c.label+' : '+fmt(c.raw)}}}}});
 
-    // Content velocity
-    new Chart(document.getElementById('contentChart'),{type:'line',
-      data:{labels:h.map(x=>x.date.slice(5)),datasets:[
-        {label:'News en ligne',data:h.map(x=>x.news_items),borderColor:GOLD,tension:.3,pointRadius:2},
-        {label:'Pages article',data:h.map(x=>x.article_pages),borderColor:'#5c8fd6',yAxisID:'y2',tension:.3,pointRadius:2}]},
-      options:{plugins:{legend:{labels:{boxWidth:12}}},scales:{x:{grid:{display:false}},
+    const hh=sliceHist(h);
+    CH.content=new Chart(document.getElementById('contentChart'),{type:'line',
+      data:{labels:hh.map(x=>x.date.slice(5)),datasets:[
+        {label:'News en ligne',data:hh.map(x=>x.news_items),borderColor:GOLD,tension:.3,pointRadius:2},
+        {label:'Pages article',data:hh.map(x=>x.article_pages),borderColor:BLUE,yAxisID:'y2',tension:.3,pointRadius:2}]},
+      options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{boxWidth:12}}},scales:{x:{grid:{display:false}},
         y:{position:'left'},y2:{position:'right',grid:{display:false}}}}});
 
-    // SEO health
+    const vlabels=[], vvals=[];
+    for(let i=1;i<hh.length;i++){vlabels.push(hh[i].date.slice(5)); vvals.push((hh[i].news_items||0)-(hh[i-1].news_items||0));}
+    CH.velocity=new Chart(document.getElementById('velocityChart'),{type:'bar',
+      data:{labels:vlabels,datasets:[{label:'Δ news / jour',data:vvals,
+        backgroundColor:vvals.map(v=>v>=0?'rgba(242,193,78,.7)':'rgba(255,97,120,.7)'),borderRadius:4}]},
+      options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{display:false}}}}});
+
+    const sb=(d.source_breakdown||[]).slice(0,10);
+    CH.source=new Chart(document.getElementById('sourceChart'),{type:'doughnut',
+      data:{labels:sb.map(x=>x.label),datasets:[{data:sb.map(x=>x.value),backgroundColor:PALETTE,borderWidth:0}]},
+      options:{responsive:true,maintainAspectRatio:false,cutout:'60%',plugins:{legend:{position:'bottom',labels:{boxWidth:10,font:{size:11}}}}}});
+
+    const lb=d.lang_breakdown||[];
+    CH.lang=new Chart(document.getElementById('langChart'),{type:'bar',
+      data:{labels:lb.map(x=>x.label.toUpperCase()),datasets:[{data:lb.map(x=>x.value),backgroundColor:GOLD2,borderRadius:5}]},
+      options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{display:false}}}}});
+
     const seo=d.seo||{};
     const row=(ok,txt,hint)=>`<div><span class="s ${ok?'ok':'no'}">${ok?'✓':'!'}</span><span>${txt}${hint?` <small>${hint}</small>`:''}</span></div>`;
     document.getElementById('seo').innerHTML=
       row(seo.ga4,'Google Analytics 4 actif')+
-      row(seo.search_console,'Google Search Console', seo.search_console?'':'à vérifier/poser la balise — clé n°1 pour le SEO')+
+      row(seo.search_console,'Google Search Console', seo.search_console?'':'à vérifier/poser la balise')+
       row(seo.news_prerendered,'News prérendues (crawlable)')+
-      row(seo.canonical_clean_urls,'Canonical en URLs propres', seo.canonical_clean_urls?'':'/news déclare encore .html — à corriger')+
-      row(seo.robots_has_sitemap,'robots.txt référence le sitemap', seo.robots_has_sitemap?'':'ajouter la ligne Sitemap:')+
+      row(seo.canonical_clean_urls,'Canonical en URLs propres')+
+      row(seo.robots_has_sitemap,'robots.txt référence le sitemap')+
       row(seo.sitemap_urls>0,`Sitemap (${fmt(seo.sitemap_urls)} URLs)`);
 
-    // Marketing log
     const log=d.marketing_log||[];
     document.getElementById('log').innerHTML = log.length ? log.slice().reverse().map(x=>
       `<div class="row"><span class="dt">${x.date||''}</span><span class="ch">${x.channel||'—'}</span>
        <span class="tx">${x.effort||''}${x.impact?` <b style="color:var(--ok)">→ ${x.impact}</b>`:''}</span></div>`).join('')
       : '<p class="note">Aucune action loggée — édite public/marketing_log.json.</p>';
 
-    // Sources
+    const sources=(d.source_breakdown||[]).map(x=>x.label);
+    document.getElementById('sources').innerHTML = sources.length
+      ? sources.map(n=>`<span>${n}</span>`).join('') : '<span>—</span>';
     const meta=d.news_meta||{};
+    const failNote = (meta.feeds_failed!=null && meta.feeds_fetched!=null)
+      ? `${meta.feeds_fetched} flux OK · ${meta.feeds_failed} en échec · ` : '';
     document.getElementById('sourcesNote').textContent =
-      (meta.filtered_offtopic!=null?`${meta.filtered_offtopic} hors-sujet filtrés au dernier run · `:'')+
+      failNote +
+      (meta.filtered_offtopic!=null?`${meta.filtered_offtopic} hors-sujet filtrés · `:'')+
       (meta.tagline||'');
   }
+
+  document.getElementById('period').addEventListener('click',e=>{
+    const b=e.target.closest('button'); if(!b) return;
+    [...e.currentTarget.children].forEach(x=>x.classList.remove('on'));
+    b.classList.add('on');
+    PERIOD=parseInt(b.dataset.d,10);
+    if(DATA) render(DATA);
+  });
+
+  load();
+  setInterval(load, REFRESH_MS);
+  document.addEventListener('visibilitychange',()=>{ if(!document.hidden) load(); });
   </script>
 </body>
 </html>

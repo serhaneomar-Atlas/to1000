@@ -92,6 +92,14 @@ jobs:
           GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
         run: python scripts/collect_metrics.py
 
+      - name: Notifier — alertes dérivées (but CR7, pic trafic, pipeline KO)
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_ALERT_CHAT: ${{ secrets.TELEGRAM_ALERT_CHAT }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: python scripts/notify.py --from-dashboard
+
       - name: Update WC countdown JSON (morocco_next, portugal_next)
         continue-on-error: true
         run: python scripts/wc_countdown_update.py
@@ -118,7 +126,7 @@ jobs:
         run: |
           git config user.name "to1000-news-bot"
           git config user.email "to1000-news-bot@users.noreply.github.com"
-          git add public/news.json public/news.html public/translations_cache.json public/news/ public/wc.json public/sitemap.xml public/dashboard-data.json public/marketing_log.json scripts/metrics_history.json 2>/dev/null || true
+          git add public/news.json public/news.html public/translations_cache.json public/news/ public/wc.json public/sitemap.xml public/dashboard-data.json public/marketing_log.json scripts/metrics_history.json scripts/notify_sent.json 2>/dev/null || true
           # Only commit if there are actually staged changes
           if git diff --cached --quiet; then
             echo "::notice::No staged changes to commit"

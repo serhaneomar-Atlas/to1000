@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T05:51:34.111410+00:00",
+  "generated_at": "2026-06-29",
   "snapshot": {
     "date": "2026-06-29",
     "goals": 975,
@@ -9,8 +9,37 @@
     "news_sources": 10,
     "cr7_items": 2,
     "article_pages": 2021,
-    "sitemap_urls": 2024
+    "sitemap_urls": 1953
   },
+  "deltas": {
+    "goals": {
+      "abs": 0,
+      "pct": 0.0,
+      "dir": "flat"
+    },
+    "news_items": {
+      "abs": -3,
+      "pct": -6.2,
+      "dir": "down"
+    },
+    "news_sources": {
+      "abs": -1,
+      "pct": -9.1,
+      "dir": "down"
+    },
+    "article_pages": {
+      "abs": 33,
+      "pct": 1.7,
+      "dir": "up"
+    },
+    "sitemap_urls": {
+      "abs": 0,
+      "pct": 0.0,
+      "dir": "flat"
+    }
+  },
+  "traffic_delta": null,
+  "alerts": [],
   "history": [
     {
       "date": "2026-06-26",
@@ -34,7 +63,7 @@
       "news_items": 45,
       "news_sources": 10,
       "article_pages": 2021,
-      "sitemap_urls": 2024
+      "sitemap_urls": 1953
     }
   ],
   "traffic": {
@@ -44,11 +73,71 @@
   "seo": {
     "ga4": true,
     "search_console": false,
-    "sitemap_urls": 2024,
+    "sitemap_urls": 1953,
     "news_prerendered": true,
     "canonical_clean_urls": true,
     "robots_has_sitemap": true
   },
+  "source_breakdown": [
+    {
+      "label": "L'Équipe",
+      "value": 14
+    },
+    {
+      "label": "Le Figaro Sport",
+      "value": 6
+    },
+    {
+      "label": "BBC Sport",
+      "value": 5
+    },
+    {
+      "label": "Mundo Deportivo",
+      "value": 4
+    },
+    {
+      "label": "Africa Top Sports",
+      "value": 4
+    },
+    {
+      "label": "Hespress Sport",
+      "value": 3
+    },
+    {
+      "label": "Kicker",
+      "value": 3
+    },
+    {
+      "label": "Le Monde — Sport",
+      "value": 3
+    },
+    {
+      "label": "FourFourTwo",
+      "value": 2
+    },
+    {
+      "label": "Calciomio",
+      "value": 1
+    }
+  ],
+  "lang_breakdown": [
+    {
+      "label": "fr",
+      "value": 31
+    },
+    {
+      "label": "en",
+      "value": 7
+    },
+    {
+      "label": "es",
+      "value": 4
+    },
+    {
+      "label": "de",
+      "value": 3
+    }
+  ],
   "marketing_log": [
     {
       "date": "2026-06-26",
@@ -66,6 +155,9 @@
   "news_meta": {
     "generated_at": "2026-06-29T05:51:33.885971Z",
     "tagline": "Le foot, droit au but.",
+    "feeds_fetched": 19,
+    "feeds_failed": 12,
+    "published": 45,
     "filtered_offtopic": null
   }
 }

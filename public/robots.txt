@@ -1,10 +1,21 @@
+# robots.txt — to1000.com
 User-agent: *
 Allow: /
+
+# Pages utilitaires / privées
 Disallow: /admin.html
 Disallow: /admin/
 Disallow: /analytics.html
 Disallow: /utm-generator.html
 Disallow: /to1000-preview.html
 Disallow: /_masters/
+
+# Évite le crawl des variantes de langue côté client (contenu dupliqué)
+Disallow: /*?lang=
+
+# Autorise explicitement les ressources de rendu
+Allow: /*.css$
+Allow: /*.js$
+Allow: /images/
 
 Sitemap: https://to1000.com/sitemap.xml
