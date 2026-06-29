@@ -146,6 +146,17 @@ GENERIC_RELATED = {
     "foot": '<a href="/news.html">📰 Toute l\'actu foot</a> · <a href="/world-cup/">🌍 Hub WC 2026</a> · <a href="/goals.html">Compteur CR7</a>',
 }
 
+NEWS_INDEX_REDIRECT = (
+    '<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8">'
+    '<meta http-equiv="refresh" content="0; url=/news">'
+    '<link rel="canonical" href="https://to1000.com/news">'
+    '<meta name="robots" content="noindex"><title>News — To1000.com</title>'
+    '<script>location.replace("/news")</script></head>'
+    '<body style="background:#05070b;color:#eef2f6;font-family:sans-serif;padding:2rem">'
+    'Redirection vers <a href="/news" style="color:#f2c14e">/news</a>…</body></html>'
+)
+
+
 def render_article(item: dict, all_items: list | None = None) -> str:
     kind = classify_kind(item)
     title_fr = best_title(item, "fr")
@@ -406,10 +417,10 @@ def main():
     # Conservative : only delete files older than 60 days
     # ... For now, just leave them. SEO-wise, having old indexed pages is fine.
 
-    # Generate news/index.html (the list)
+    # news/index.html = redirection vers /news (la page liste ESTÁDIO avec photos).
+    # On évite une 2e liste concurrente sans photos (contenu dupliqué = mauvais SEO).
     if not args.dry_run:
-        idx_html = render_index(items)
-        (NEWS_DIR / "index.html").write_text(idx_html, encoding="utf-8")
+        (NEWS_DIR / "index.html").write_text(NEWS_INDEX_REDIRECT, encoding="utf-8")
 
     print(f"✅ {written} written, {skipped} unchanged, {len(items)} total")
     return 0
