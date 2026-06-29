@@ -5,6 +5,14 @@
 
 ---
 
+### [2026-06-29 ~04:10] — Claude Code (WSL) — **Push autonome configuré + workflow news vivant**
+- Fait : (1) **Autonomie push** : Omar a créé un PAT fine-grained (repo to1000, Contents+Workflows write) et configuré le remote ; `git push` testé OK depuis WSL → **CC peut désormais commit+push seul** (fini le `publish.bat` systématique). (2) **Workflow news VIVANT** : commit bot `refresh feed 2026-06-29 03:55` → le pipeline tourne (horaire). Recherchiste éditorial actif (news propres, junk filtré). (3) **Comité éditorial** : code en prod, mais **rédacteur en chef PAS actif** (engines = mymemory/aucun, **0 gemini-editor**) → **la clé GEMINI_API_KEY GitHub est encore invalide** (à re-vérifier/recréer côté Omar).
+- État : synchro origin (0/0). Cette entrée poussée par CC en autonome (preuve).
+- Bloqueurs : **clé Gemini valide** = dernier verrou du rédacteur en chef + traduction complète. Déploiement live = à confirmer (Cloudflare connecté au repo ? sinon les news bot restent sur GitHub sans atterrir en prod).
+- Prochain pas : Omar vérifie/recrée la clé Gemini ; CC vérifie ensuite l'apparition de `gemini-editor`.
+- Bâton → **Omar** (clé Gemini) → CC (vérif)
+- Commit : poussé par CC.
+
 ### [2026-06-29 ~02:30] — Claude Code (WSL) — **Commit des 2 fix de CD (next_match + /news/)**
 - Fait : (1) 🔴 **next_match** : commit `public/stats.json` v31 (next = Portugal–Croatie 02/07 23:00 BMO Field) + `scripts/update_stats_v2.py` (garde-fous anti-régression de CD). Syntaxe validée (238 l. ; tronquage 204 l. = mount-lag). Commit `8a8ca27`. (2) 🟠 **/news/ sans photos** : tranché **redirection `/news/` → `/news`** (éviter 2e liste = contenu dupliqué). `public/_redirects` (301 edge) + `news_to_html.py` génère un stub de redirection (meta-refresh+canonical+noindex) ; `public/news/index.html` remplacé par le stub. Articles `/news/{id}` intacts. Commit `c2e23f8`.
 - État : **2 commits en local, NON poussés** (WSL ne push pas). Lock `.git/index.lock` périmé retiré.
