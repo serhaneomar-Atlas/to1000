@@ -157,6 +157,27 @@ def jaccard(a: set, b: set) -> float:
     return len(a & b) / len(a | b)
 
 
+# Noms propres distinctifs (mots capitalisés ≥4 lettres) + scores. Invariants
+# par langue → repèrent le MÊME événement même quand les titres diffèrent ou
+# sont en langues différentes (Eustaquio, Canada, 2-1…).
+_ENTITY_RE = re.compile(r"[A-ZÀ-Ý][\wÀ-ÿ'’\-]{3,}")
+_SCORE_RE = re.compile(r"\b(\d{1,2})\s*[-–]\s*(\d{1,2})\b")
+_ENTITY_STOP = {
+    "coupe", "monde", "mondial", "world", "league", "champions", "video", "vidéo",
+    "photos", "info", "breaking", "alerte", "selon", "après", "avant", "cette",
+    "leur", "dans", "avec", "pour", "lundi", "mardi", "mercredi", "jeudi",
+    "vendredi", "samedi", "dimanche", "this", "with", "from", "what", "when",
+}
+
+
+def entities(text: str) -> set:
+    if not text:
+        return set()
+    ents = {w.lower() for w in _ENTITY_RE.findall(text) if w.lower() not in _ENTITY_STOP}
+    ents |= {f"{a}-{b}" for a, b in _SCORE_RE.findall(text)}
+    return ents
+
+
 def parse_date(entry) -> Optional[datetime]:
     """Try several date fields, return UTC datetime or None."""
     for field in ("published_parsed", "updated_parsed", "created_parsed"):
@@ -561,6 +582,57 @@ def main() -> int:
             })
 
     log(f"Clustered into {len(clusters)} unique stories", verbose)
+
+    # ── 2e passe : fusionne les quasi-doublons du MÊME ÉVÉNEMENT (titres
+    #    différents mais mêmes noms propres). Un seul article, toutes ses sources.
+    #    Critère : ≥3 entités communes + forte proximité d'entités + un minimum de
+    #    chevauchement de mots (évite de fusionner deux histoires distinctes qui
+    #    partagent juste un club). Réglable via ENTITY_* .
+    ent_min_shared = int(os.environ.get("ENTITY_MIN_SHARED", "3"))
+    ent_jacc = float(os.environ.get("ENTITY_JACCARD", "0.5"))
+    tok_floor = float(os.environ.get("ENTITY_TOKEN_FLOOR", "0.12"))
+
+    def _cluster_entities(c):
+        e = set()
+        for t in c["_titles"]:
+            e |= entities(t)
+        return e
+
+    i = 0
+    while i < len(clusters):
+        ci = clusters[i]
+        ents_i = _cluster_entities(ci)
+        j = i + 1
+        while j < len(clusters):
+            cj = clusters[j]
+            ents_j = _cluster_entities(cj)
+            shared = ents_i & ents_j
+            union = ents_i | ents_j
+            ej = len(shared) / len(union) if union else 0.0
+            tj = jaccard(ci["_tokens"], cj["_tokens"])
+            if len(shared) >= ent_min_shared and ej >= ent_jacc and tj >= tok_floor:
+                seen = {s["url"] for s in ci["sources"]}
+                for s in cj["sources"]:
+                    if s["url"] not in seen:
+                        ci["sources"].append(s)
+                        seen.add(s["url"])
+                ci["_titles"].extend(cj["_titles"])
+                ci["_summaries"].extend(cj["_summaries"])
+                ci["_tokens"] |= cj["_tokens"]
+                ci["score"] = max(ci.get("score", 0), cj.get("score", 0))
+                if cj["kind"] == "cr7":
+                    ci["kind"] = "cr7"
+                if not ci.get("image_url") and cj.get("image_url"):
+                    ci["image_url"] = cj["image_url"]
+                if cj["latest_at"] > ci.get("latest_at", ci["published_at"]):
+                    ci["latest_at"] = cj["latest_at"]
+                ents_i = _cluster_entities(ci)
+                del clusters[j]
+            else:
+                j += 1
+        i += 1
+
+    log(f"After entity-merge: {len(clusters)} unique stories", verbose)
 
     # Pre-translation cap: sort clusters by the same key used for final sort,
     # then drop everything beyond MAX_ITEMS. This avoids paying the translation
