@@ -38,7 +38,7 @@ MYMEMORY_URL = "https://api.mymemory.translated.net/get"
 MYMEMORY_EMAIL = os.environ.get("MYMEMORY_EMAIL", "").strip()
 
 REQUEST_TIMEOUT = 30
-RATE_LIMIT_SLEEP = float(os.environ.get("GEMINI_RATE_SLEEP", "5.0"))  # ~12 req/min, sous le free tier 15 RPM → évite les 429
+RATE_LIMIT_SLEEP = float(os.environ.get("GEMINI_RATE_SLEEP", "0.4"))  # palier PAYANT (haut débit) : plus besoin de brider
 MYMEMORY_RATE_SLEEP = 0.3
 
 LANG_NAMES = {

@@ -27,7 +27,7 @@ SITE_LANGS = ["fr", "en", "es", "ar"]
 from translator import Translator  # noqa: E402
 from editorial import chief_editor_review  # noqa: E402
 
-BATCH = int(os.environ.get("ENRICH_BATCH", "12"))        # nb d'articles enrichis / run
+BATCH = int(os.environ.get("ENRICH_BATCH", "50"))        # palier payant : on enrichit TOUS les articles d'un run
 MAX_S = int(os.environ.get("ENRICH_MAX_SECONDS", "600"))  # plafond temps (sous timeout 15min)
 
 
