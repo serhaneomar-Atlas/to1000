@@ -11,6 +11,13 @@ on:
   schedule:
     - cron: "*/30 * * * *"   # toutes les 30 min (repo public = minutes illimitées)
   workflow_dispatch:
+  push:                       # re-enrichit dès qu'on change le prompt/le cerveau
+    branches: [main]
+    paths:
+      - 'scripts/editorial.py'
+      - 'scripts/enrich_news.py'
+      - 'scripts/translator.py'
+      - '.github/workflows/news-editorial.yml'
 
 permissions:
   contents: write
@@ -69,12 +76,14 @@ jobs:
         run: |
           git config user.name "to1000-editorial-bot"
           git config user.email "to1000-editorial-bot@users.noreply.github.com"
-          git add public/news.json public/news.html public/translations_cache.json public/news/ 2>/dev/null || true
+          for f in public/news.json public/news.html public/translations_cache.json public/news/; do
+            git add "$f" 2>/dev/null || true
+          done
           if git diff --cached --quiet; then
             echo "::notice::Rien à committer"
           else
             git commit -m "chore(editorial): enrichissement Gemini [$(date -u +%Y-%m-%dT%H:%M)Z]"
-            git push
+            git push origin HEAD:main 2>/dev/null || git push 2>/dev/null || true
           fi
 
       - name: Deploy to Cloudflare Pages

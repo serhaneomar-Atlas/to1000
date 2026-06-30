@@ -43,7 +43,9 @@ def chief_editor_review(translator, title: str, summary: str, src: str, targets:
     langs = list(dict.fromkeys([src] + [t for t in targets if t != src]))
     # CACHE D'ABORD (gratuit) — marche même si Gemini est coupé (mode cache-only de
     # news-sync). Le cache est alimenté par news-editorial (le « cerveau » éditorial).
-    cache_key = "edt:" + translator_hash(title, summary, src, langs) if getattr(translator, "cache", None) else None
+    # v2 = nouveau prompt « flash info » (brèves TV/radio). Bump la clé pour
+    # ré-enrichir tous les articles au lieu de servir les anciens résumés cachés.
+    cache_key = "edtv2:" + translator_hash(title, summary, src, langs) if getattr(translator, "cache", None) else None
     if cache_key and translator.cache:
         cached = translator.cache.get(cache_key)
         if cached:
@@ -53,25 +55,35 @@ def chief_editor_review(translator, title: str, summary: str, src: str, targets:
         return None
     names = ", ".join(f'"{l}" ({LANG_NAMES.get(l, l)})' for l in langs)
     system = (
-        "Tu es le COMITÉ ÉDITORIAL d'un média de football (soccer) haut de gamme, "
-        "branché actu, dont l'image est : l'essentiel, sourcé, sans clickbait. "
-        "Trois rôles réunis : un RECHERCHISTE vérifie la fidélité au source, un "
-        "JOURNALISTE rédige, un RÉDACTEUR EN CHEF tranche. À partir du titre et du "
-        "texte source, renvoie UNIQUEMENT ce JSON :\n"
+        "Tu es la RÉDACTION d'un FLASH INFO football (soccer), façon présentateur "
+        "TV/radio. Trois expertises en une : un RÉDACTEUR EN CHEF qui tranche, un "
+        "PROMPT ENGINEER qui structure la sortie, un TRADUCTEUR POLYGLOTTE qui écrit "
+        "dans chaque langue comme un présentateur NATIF. Tu transformes une dépêche en "
+        "BRÈVE DE FLASH INFO. Réponds UNIQUEMENT en JSON :\n"
         '{ "publish": true|false, "reason": "1 phrase", "quality": 0-10, '
         '"i18n": { ' + names + ': {"title":"...","summary":"..."} } }\n\n'
-        "publish=false si UNE règle échoue :\n"
-        "- VRAIE NEWS : un fait/événement/déclaration/transfert/résultat. PAS de "
-        "guide « comment regarder », streaming, paris/cotes, compo probable, preview "
-        "creux, listicle SEO, ni pub.\n"
-        "- FIDÉLITÉ : le résumé doit refléter fidèlement le source, sans inventer ni "
-        "diverger. Doute sur le contenu réel → publish=false.\n"
-        "- FOOT PERTINENT : football/soccer uniquement, sujet d'intérêt (grands "
-        "clubs/joueurs/compétitions, ou Cristiano Ronaldo).\n"
-        "- PAS PÉRIMÉ : un match déjà joué annoncé comme à venir → publish=false.\n\n"
-        "Si publish=true : pour CHAQUE langue, « title » = traduction fidèle du titre ; "
-        "« summary » = l'essentiel à retenir, 1-2 phrases, ~35 mots, neutre, faits clés "
-        "(qui/quoi/chiffres/enjeu), zéro clickbait."
+        "publish=false si : pas une vraie news (guide « comment regarder », streaming, "
+        "paris/cotes, compo probable, preview creux, listicle SEO, pub) ; hors "
+        "football ; périmé (match déjà joué annoncé à venir) ; ou doute sur le contenu.\n\n"
+        "Le « summary » est une BRÈVE DE FLASH INFO, PAS un résumé d'article :\n"
+        "• UNE phrase (deux max), 15-28 mots, le FAIT LE PLUS FORT EN PREMIER "
+        "(résultat, décision, chiffre, transfert).\n"
+        "• Voix active, ton direct d'un présentateur qui lit l'info en 10 secondes.\n"
+        "• INTERDIT de recopier ou traduire la 1re phrase du source : RÉÉCRIS de zéro. "
+        "Pas d'ouverture molle (« X a annoncé que », « selon »). Droit au fait.\n"
+        "• Coupe le contexte, les détails secondaires, les formules de remplissage — "
+        "garde uniquement ce qu'un téléspectateur doit retenir.\n"
+        "• Chaque langue = phrasé NATUREL d'un présentateur de ce pays, pas une "
+        "traduction mot-à-mot. « title » : court, percutant, fidèle.\n\n"
+        "EXEMPLES (source → brève attendue) :\n"
+        "Source : « Le FC Barcelone a annoncé ce mardi le départ de son attaquante "
+        "Salma Paralluelo, qui a remporté trois Ligue des champions sous le maillot. »\n"
+        "→ « Salma Paralluelo quitte le Barça après quatre saisons et trois Ligues des "
+        "champions. »\n"
+        "Source : « Le Brésil s'est qualifié pour les huitièmes de la Coupe du monde "
+        "2026 en battant péniblement le Japon (2-1) à Houston, porté par Vinicius Jr. »\n"
+        "→ « Le Brésil file en huitièmes : 2-1 sur le Japon à Houston, Vinicius Jr "
+        "décisif. »"
     )
     user = json.dumps({"source_lang": src, "title": title, "text": (summary or title)[:1000]},
                       ensure_ascii=False)

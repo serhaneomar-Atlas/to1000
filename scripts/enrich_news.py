@@ -47,13 +47,16 @@ def main():
         print("[enrich] GEMINI_API_KEY absente — pas d'enrichissement (news-sync publie quand même)")
         return 0
 
-    todo = [it for it in items if _engine(it) != "gemini-editor"]
-    print(f"[enrich] {len(todo)}/{len(items)} articles à enrichir · lot={BATCH} · plafond={MAX_S}s")
-
+    # On parcourt TOUS les articles : le cache (edtv2:) dédoublonne — un hit est
+    # gratuit (idempotent), un miss = 1 appel Gemini. Le budget porte sur les VRAIS
+    # appels → ré-enrichit aussi les anciens résumés (v1) vers le style v2, sur
+    # plusieurs runs, sans jamais dépasser le free tier ni le timeout.
+    print(f"[enrich] {len(items)} articles · budget {BATCH} appels Gemini · plafond {MAX_S}s")
     t0 = time.monotonic()
-    done = 0
-    for it in todo:
-        if done >= BATCH or (time.monotonic() - t0) >= MAX_S:
+    new_calls = 0
+    touched = 0
+    for it in items:
+        if new_calls >= BATCH or (time.monotonic() - t0) >= MAX_S:
             break
         src = (it.get("primary_source") or {}).get("lang", "en")
         src_i18n = (it.get("i18n", {}) or {}).get(src, {}) or {}
@@ -62,17 +65,23 @@ def main():
         if not title:
             continue
         targets = [l for l in SITE_LANGS if l != src]
+        before = tr._calls_gemini
         review = chief_editor_review(tr, title, summary, src, targets)
+        made_call = tr._calls_gemini > before
         if review and review.get("i18n"):
-            it["i18n"] = {**(it.get("i18n") or {}), **review["i18n"]}
-            done += 1
+            merged = {**(it.get("i18n") or {}), **review["i18n"]}
+            if merged != it.get("i18n"):
+                it["i18n"] = merged
+                touched += 1
+        if made_call:
+            new_calls += 1
 
-    if done:
+    if touched:
         tr.cache.save()
         data["items"] = items
         NEWS.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    print(f"[enrich] {done} enrichis en {int(time.monotonic() - t0)}s · {tr.stats()}")
+    print(f"[enrich] {touched} maj / {new_calls} appels Gemini en {int(time.monotonic() - t0)}s · {tr.stats()}")
     return 0
 
 
