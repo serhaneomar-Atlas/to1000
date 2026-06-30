@@ -5,6 +5,20 @@
 
 ---
 
+### [2026-06-30] — Claude Code (WSL) — **Pipeline news fiabilisé + flash info + dedup + palier payant**
+- Fait (gros débogage + kaizen, autonome push/deploy via PAT + gh) :
+  1. **Bug `git add` (cause racine « plus d'articles publiés »)** : `notify_sent.json` (absent sauf si alerte) dans le `git add` de news-sync → git atomique → « No staged changes » → 0 commit/deploy depuis 05:51. Fix : stage par-fichier + `push HEAD:main` (detached HEAD des runs push). Le site republie + commite à nouveau.
+  2. **Timeout 20 min** : code (cascade d'appels Gemini/article), pas le quota. Fix : coupe-circuit éditorial. Archi **découplée** : news-sync publie vite (cache-only), **news-editorial** (nouveau workflow, */30) enrichit via Gemini, préservation par id. + `enrich_news.py`.
+  3. **Prompt « flash info »** (rédacteur en chef + prompt engineer + traducteur polyglotte, few-shot) : brèves TV/radio 15-28 mots, plus de recopie du source. Cache bumpé edtv2:.
+  4. **Fusion des doublons d'événement** (2e passe clustering par noms propres, invariants langue) → 1 article multi-sources.
+  5. **Palier PAYANT confirmé** (screenshot AI Studio : « Payant 1 », ~12$/mois) → le « quota » n'a JAMAIS été le souci. Bridage retiré : pacing 5s→0.4s, batch 12→50 → 50 articles enrichis/run, 0 échec/429.
+  6. GA4 déjà installé live (G-4V8Y6C38VN). Dashboard live : https://to1000.com/dashboard.html
+- État : tout déployé + vérifié live. ~31/50 articles en flash-info, converge à chaque run.
+- Bloqueurs / à la main d'Omar : GA4→dashboard custom (service account, optionnel) ; accès social (FB/IG/Twitter) pour auto-post ; SEO avancé (livrables agent SEO prêts : OG/Twitter cards, JSON-LD, hreflang) à intégrer.
+- Autonomie CC : peut désormais commit+push+deploy+lire les logs Actions seul (PAT Contents+Workflows+Actions, gh authentifié). Manque Actions:Write pour déclencher/annuler des runs.
+- Bâton → Omar (décisions GA/social/SEO) ; CC dispo pour exécuter.
+- Commit : poussé (série de fix sur main).
+
 ### [2026-06-29 ~04:10] — Claude Code (WSL) — **Push autonome configuré + workflow news vivant**
 - Fait : (1) **Autonomie push** : Omar a créé un PAT fine-grained (repo to1000, Contents+Workflows write) et configuré le remote ; `git push` testé OK depuis WSL → **CC peut désormais commit+push seul** (fini le `publish.bat` systématique). (2) **Workflow news VIVANT** : commit bot `refresh feed 2026-06-29 03:55` → le pipeline tourne (horaire). Recherchiste éditorial actif (news propres, junk filtré). (3) **Comité éditorial** : code en prod, mais **rédacteur en chef PAS actif** (engines = mymemory/aucun, **0 gemini-editor**) → **la clé GEMINI_API_KEY GitHub est encore invalide** (à re-vérifier/recréer côté Omar).
 - État : synchro origin (0/0). Cette entrée poussée par CC en autonome (preuve).
