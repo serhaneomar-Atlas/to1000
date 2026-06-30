@@ -12,7 +12,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cristiano Ronaldo Goal Tracker — Road to 1000 Goals | Live Countdown | To1000.com</title>
-  <meta name="description" content="Track Cristiano Ronaldo's journey to 1000 career goals — 975 scored, 25 to go. Live goal counter, complete database of all goals, stats by club, prediction contest. Free in 4 languages.">
+  <meta name="description" content="Track Cristiano Ronaldo's journey to 1000 career goals with a live counter. Complete database of all his goals, stats by club, and a 1000th-goal prediction contest. Free in 4 languages (EN/FR/ES/AR).">
   <meta name="keywords" content="Cristiano Ronaldo 1000 goals, CR7 goal tracker, Ronaldo road to 1000, Ronaldo goal countdown, CR7 career goals, Ronaldo total goals, how many goals has Ronaldo scored, when will Ronaldo score 1000, Ronaldo goal counter, CR7 stats, Ronaldo all time goals, Ronaldo vs Messi goals, CR7 1000th goal, Ronaldo World Cup 2026 goals">
   <meta name="author" content="To1000.com">
   <meta name="robots" content="index, follow">
@@ -21,25 +21,28 @@
   <meta name="theme-color" content="#0B1A2E">
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Cristiano Ronaldo Goal Tracker — 975/1000 Goals | Live Countdown">
-  <meta property="og:description" content="Track CR7's journey to 1000 career goals. 975 scored, 25 to go. Complete goal database, stats by club, prediction contest. Free in EN/FR/ES/AR.">
+  <meta property="og:title" content="Cristiano Ronaldo Goal Tracker — Road to 1000 Goals | Live Countdown">
+  <meta property="og:description" content="Track CR7's journey to 1000 career goals. Live counter, complete goal database, stats by club, prediction contest. Free in EN/FR/ES/AR.">
   <meta property="og:url" content="https://to1000.com">
   <meta property="og:image" content="https://to1000.com/og-image.png">
+  <meta property="og:image:secure_url" content="https://to1000.com/og-image.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Cristiano Ronaldo 975 out of 1000 career goals — live countdown tracker">
+  <meta property="og:image:alt" content="Cristiano Ronaldo — live countdown to 1000 career goals">
   <meta property="og:site_name" content="To1000.com">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:locale:alternate" content="fr_FR">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
   <meta property="og:locale:alternate" content="es_ES">
-  <meta property="og:locale:alternate" content="ar_SA">
+  <meta property="og:locale:alternate" content="ar_AR">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Cristiano Ronaldo Goal Tracker — 975/1000 | Road to 1000">
-  <meta name="twitter:description" content="Live countdown to Cristiano Ronaldo's 1000th career goal. Complete database of all 975 goals. Free tracker in 4 languages.">
+  <meta name="twitter:site" content="@to1000com">
+  <meta name="twitter:title" content="Cristiano Ronaldo Goal Tracker — Road to 1000 | Live Countdown">
+  <meta name="twitter:description" content="Live countdown to Cristiano Ronaldo's 1000th career goal. Complete goal database, stats by club, prediction contest. Free in 4 languages.">
   <meta name="twitter:image" content="https://to1000.com/og-image.png">
-  <meta name="twitter:image:alt" content="CR7 goal tracker showing 975 out of 1000 goals">
+  <meta name="twitter:image:alt" content="Cristiano Ronaldo goal tracker — live countdown to 1000 goals">
 
   <!-- Favicons -->
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -47,12 +50,10 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://to1000.com">
-  <link rel="alternate" hreflang="en" href="https://to1000.com">
-  <link rel="alternate" hreflang="fr" href="https://to1000.com?lang=fr">
-  <link rel="alternate" hreflang="es" href="https://to1000.com?lang=es">
-  <link rel="alternate" hreflang="ar" href="https://to1000.com?lang=ar">
-  <link rel="alternate" hreflang="x-default" href="https://to1000.com">
+  <link rel="canonical" href="https://to1000.com/">
+  <!-- Le contenu (FR/EN/ES/AR) est servi depuis CETTE SEULE URL via JS — on déclare donc fr + x-default vers la même URL, sans inventer d'URLs /en/ /es/ inexistantes -->
+  <link rel="alternate" hreflang="fr" href="https://to1000.com/">
+  <link rel="alternate" hreflang="x-default" href="https://to1000.com/">
 
   <!-- Schema.org: WebSite + SearchAction -->
   <script type="application/ld+json">
@@ -69,6 +70,27 @@
       "target": "https://to1000.com/goals.html?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
+  }
+  </script>
+
+  <!-- Schema.org: Organization (publisher) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "To1000.com",
+    "url": "https://to1000.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://to1000.com/favicon.png",
+      "width": 512,
+      "height": 512
+    },
+    "description": "Hub football multilingue (FR/EN/ES/AR) et compte à rebours en direct vers le 1000e but en carrière de Cristiano Ronaldo.",
+    "sameAs": [
+      "https://x.com/to1000com",
+      "https://www.instagram.com/to1000com/"
+    ]
   }
   </script>
 
@@ -125,7 +147,7 @@
     "applicationCategory": "SportsApplication",
     "operatingSystem": "All",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-    "description": "Free live tracker counting down to Cristiano Ronaldo's historic 1000th career goal. Complete database of all 975 goals with stats, charts, and predictions.",
+    "description": "Free live tracker counting down to Cristiano Ronaldo's historic 1000th career goal. Complete goal database with stats, charts, and predictions.",
     "featureList": ["Live goal countdown", "Complete goal database", "Stats by club and competition", "1000th goal prediction contest", "4 languages (EN/FR/ES/AR)"],
     "screenshot": "https://to1000.com/og-image.png",
     "author": { "@type": "Organization", "name": "To1000.com", "url": "https://to1000.com" }
@@ -143,7 +165,7 @@
         "name": "How many goals has Cristiano Ronaldo scored in his career?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "As of June 2026, Cristiano Ronaldo has scored 975 official career goals across all competitions, including clubs (Sporting CP, Manchester United, Real Madrid, Juventus, Al Nassr) and the Portuguese national team. He is the all-time top scorer in football history."
+          "text": "Cristiano Ronaldo's official career goal tally is updated live on To1000.com across all competitions — clubs (Sporting CP, Manchester United, Real Madrid, Juventus, Al Nassr) and the Portuguese national team. He is the all-time top scorer in football history and closing in on 1000 career goals."
         }
       },
       {
@@ -159,7 +181,7 @@
         "name": "How many goals does Ronaldo need to reach 1000?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ronaldo needs 25 more goals to reach the historic milestone of 1000 career goals. He is currently at 975 goals scored since his professional debut in 2002."
+          "text": "The exact number of goals Ronaldo still needs to reach the historic 1000-goal milestone is tracked live on To1000.com. He has scored close to 1000 official career goals since his professional debut in 2002 and is the closest player in history to the milestone."
         }
       },
       {
@@ -207,7 +229,7 @@
         "name": "What is the best website to track Ronaldo's goals to 1000?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "To1000.com is the most comprehensive free goal tracker for Cristiano Ronaldo's journey to 1000 goals. It features a live countdown, complete database of all 975 goals, stats by club and competition, prediction contest, and is available in 4 languages (English, French, Spanish, Arabic)."
+          "text": "To1000.com is the most comprehensive free goal tracker for Cristiano Ronaldo's journey to 1000 goals. It features a live countdown, a complete goal database, stats by club and competition, a prediction contest, and is available in 4 languages (English, French, Spanish, Arabic)."
         }
       },
       {
@@ -215,7 +237,7 @@
         "name": "How does Ronaldo compare to Messi in total career goals?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "As of June 2026, Cristiano Ronaldo (975 goals) leads Lionel Messi (~850 goals) in total career goals. Ronaldo is on track to become the first player in modern football history to score 975 official career goals."
+          "text": "Cristiano Ronaldo leads Lionel Messi in total career goals and remains the all-time top scorer in football history. Ronaldo is on track to become the first player in modern football history to reach 1000 official career goals — follow the live gap on To1000.com."
         }
       }
     ]
@@ -239,8 +261,13 @@
   }
   </script>
 
+  <!-- Resource hints: fonts + flag CDN -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://flagcdn.com">
+  <link rel="dns-prefetch" href="https://flagcdn.com">
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
   <style>
   :root{

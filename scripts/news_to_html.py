@@ -166,6 +166,8 @@ def render_article(item: dict, all_items: list | None = None) -> str:
     img = best_image(item)
     pub = parse_date(item.get("published_at") or item.get("published"))
     pub_iso = pub.isoformat() if pub else datetime.now(timezone.utc).isoformat()
+    mod = parse_date(item.get("updated_at") or item.get("fetched_at"))
+    mod_iso = mod.isoformat() if mod else pub_iso
     pub_human = pub.strftime("%-d %B %Y") if pub and sys.platform != "win32" else (pub.strftime("%d %B %Y") if pub else "")
     slug = item.get("slug") or item.get("id") or slugify(title_fr)
     url = f"{SITE}/news/{slug}"  # URL propre (Cloudflare sert {slug}.html)
@@ -176,9 +178,18 @@ def render_article(item: dict, all_items: list | None = None) -> str:
     else:
         source = str(_src)
 
-    # Truncate description for meta
-    meta_desc = (summary_fr or title_fr)[:155]
-    meta_desc = h(re.sub(r"\s+", " ", meta_desc).strip())
+    # Truncate description for meta — cut on a word boundary (~155 chars) + "…"
+    _raw_desc = re.sub(r"\s+", " ", (summary_fr or title_fr)).strip()
+    if len(_raw_desc) > 155:
+        _cut = _raw_desc[:155]
+        _sp = _cut.rfind(" ")
+        if _sp > 60:  # avoid an absurdly short cut if no early space is found
+            _cut = _cut[:_sp]
+        meta_desc = h(_cut.rstrip(" ,.;:—-") + "…")
+    else:
+        meta_desc = h(_raw_desc)
+    # headline ≤ 110 chars (Google NewsArticle guideline)
+    _headline = title_fr if len(title_fr) <= 110 else title_fr[:109].rstrip() + "…"
 
     # Keywords from kind + title words
     kw_base = {
@@ -199,20 +210,20 @@ def render_article(item: dict, all_items: list | None = None) -> str:
     if summary_en and summary_en != summary_fr:
         body_html += f"<details class=\"original\"><summary>Voir le texte original (anglais)</summary><p>{h(summary_en)}</p></details>"
 
-    # JSON-LD NewsArticle
+    # JSON-LD NewsArticle (enriched)
     ld = {
         "@context": "https://schema.org",
         "@type": "NewsArticle",
-        "headline": title_fr,
+        "headline": _headline,
         "description": meta_desc,
-        "image": img or f"{SITE}/og-image.png",
-        "author": {"@type": "Organization", "name": "To1000.com"},
+        "image": [img] if img else [f"{SITE}/og-image.png"],
+        "author": {"@type": "Organization", "name": "To1000.com", "url": SITE},
         "publisher": {
-            "@type": "Organization", "name": "To1000.com",
-            "logo": {"@type": "ImageObject", "url": f"{SITE}/favicon.png"}
+            "@type": "Organization", "name": "To1000.com", "url": SITE,
+            "logo": {"@type": "ImageObject", "url": f"{SITE}/favicon.png", "width": 512, "height": 512}
         },
         "datePublished": pub_iso,
-        "dateModified": pub_iso,
+        "dateModified": mod_iso,
         "mainEntityOfPage": {"@type": "WebPage", "@id": url},
         "articleSection": kind_label,
         "inLanguage": "fr-FR",
@@ -220,6 +231,18 @@ def render_article(item: dict, all_items: list | None = None) -> str:
     if original_url:
         ld["isBasedOn"] = original_url
     ld_json = json.dumps(ld, ensure_ascii=False, indent=2)
+
+    # JSON-LD BreadcrumbList (Accueil > News > article)
+    breadcrumb = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Accueil", "item": SITE + "/"},
+            {"@type": "ListItem", "position": 2, "name": "News", "item": SITE + "/news"},
+            {"@type": "ListItem", "position": 3, "name": title_fr, "item": url},
+        ],
+    }
+    breadcrumb_json = json.dumps(breadcrumb, ensure_ascii=False, indent=2)
 
     # Source link section
     source_html = ""
@@ -229,12 +252,13 @@ def render_article(item: dict, all_items: list | None = None) -> str:
             f'<a href="{h(original_url)}" rel="noopener nofollow" target="_blank">{h(source)} →</a></p>'
         )
 
-    # Image hero
+    # Image hero (anti-CLS: dimensions + aspect-ratio, prioritised LCP)
     hero_html = ""
     if img:
         hero_html = (
             f'<figure class="hero-img">'
-            f'<img src="{h(img)}" alt="{h(title_fr)}" loading="eager">'
+            f'<img src="{h(img)}" alt="{h(title_fr)}" width="1200" height="630" '
+            f'style="aspect-ratio:1200/630" loading="eager" fetchpriority="high" decoding="async">'
             f'</figure>'
         )
 
@@ -263,6 +287,10 @@ def render_article(item: dict, all_items: list | None = None) -> str:
 </script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
 <title>{h(title_fr)} | To1000.com</title>
 <meta name="description" content="{meta_desc}">
@@ -275,16 +303,21 @@ def render_article(item: dict, all_items: list | None = None) -> str:
 <meta property="og:description" content="{meta_desc}">
 <meta property="og:url" content="{url}">
 <meta property="og:image" content="{h(img or SITE + '/og-image.png')}">
+<meta property="og:image:secure_url" content="{h(img or SITE + '/og-image.png')}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{h(title_fr)}">
 <meta property="og:site_name" content="To1000.com">
 <meta property="og:locale" content="fr_FR">
 <meta property="article:published_time" content="{pub_iso}">
+<meta property="article:modified_time" content="{mod_iso}">
 <meta property="article:section" content="{kind_label}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@to1000com">
 <meta name="twitter:title" content="{h(title_fr)}">
 <meta name="twitter:description" content="{meta_desc}">
 <meta name="twitter:image" content="{h(img or SITE + '/og-image.png')}">
+<meta name="twitter:image:alt" content="{h(title_fr)}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32">
 <link rel="canonical" href="{url}">
@@ -292,6 +325,9 @@ def render_article(item: dict, all_items: list | None = None) -> str:
 <link rel="alternate" hreflang="x-default" href="{url}">
 <script type="application/ld+json">
 {ld_json}
+</script>
+<script type="application/ld+json">
+{breadcrumb_json}
 </script>
 <style>
 * {{ box-sizing: border-box; margin: 0; padding: 0; }}
