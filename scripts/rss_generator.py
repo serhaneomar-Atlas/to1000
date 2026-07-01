@@ -8,6 +8,8 @@ chaque nouvel article automatiquement. Le flux utilise les titres/résumés FR
 """
 import html
 import json
+import re
+import unicodedata
 from datetime import datetime, timezone
 from email.utils import format_datetime
 from pathlib import Path
@@ -28,6 +30,59 @@ def rfc822(iso: str) -> str:
         return format_datetime(dt)
     except (ValueError, AttributeError):
         return format_datetime(datetime.now(timezone.utc))
+
+
+# Mots capitalisés (accents retirés, minuscule) à NE PAS transformer en hashtag
+# — génériques, pas des entités. Le filtre compare _tag(mot).lower() à ce set.
+_TAG_STOP = {
+    "coupe", "monde", "mondial", "world", "cup", "ligue", "ligues", "league",
+    "champions", "direct", "video", "info", "breaking", "selon", "apres", "avant",
+    "cette", "face", "grace", "avec", "pour", "dans", "the", "with", "this",
+    "cristiano", "titre", "titres", "saison", "saisons", "victoire", "defaite",
+    "match", "but", "buts", "million", "millions", "dollars", "euros", "livres",
+    "record", "blesse", "blessure", "confederation", "attaquant", "attaquante",
+    "gardien", "milieu", "defenseur", "provenance", "montant", "double", "ballor",
+    "ballon", "finale", "finales", "huitiemes", "quarts", "groupe",
+}
+_ENTITY_RE = re.compile(r"[A-ZÀ-Ý][\wÀ-ÿ'’-]{3,}")
+
+
+def _tag(word: str) -> str:
+    """Nom propre -> hashtag propre (sans accents ni apostrophes)."""
+    w = unicodedata.normalize("NFKD", word).encode("ascii", "ignore").decode()
+    w = re.sub(r"[^A-Za-z0-9]", "", w)
+    return (w[:1].upper() + w[1:]) if w else ""
+
+
+def hashtags(item: dict) -> str:
+    fr = (item.get("i18n", {}).get("fr", {}) or {})
+    title = fr.get("title") or item.get("title", "")
+    low = title.lower()
+    tags, seen = [], set()
+
+    def add(t):
+        if t and t.lower() not in seen and len(tags) < 5:
+            seen.add(t.lower())
+            tags.append(t)
+
+    if item.get("kind") == "cr7" or "ronaldo" in low:
+        add("CR7"); add("Ronaldo")
+    if any(k in low for k in ("coupe du monde", "mondial", "world cup", "wm 2026")):
+        add("WorldCup2026")
+    for e in _ENTITY_RE.findall(title):
+        t = _tag(e)
+        if t and t.lower() not in _TAG_STOP:
+            add(t)
+    add("Football"); add("To1000")
+    return " ".join("#" + t for t in tags)
+
+
+def social_caption(item: dict) -> str:
+    """Légende prête à poster : hook emoji + brève flash-info + hashtags."""
+    fr = (item.get("i18n", {}).get("fr", {}) or {})
+    summary = fr.get("summary") or item.get("summary", "")
+    emoji = "🔥" if item.get("kind") == "cr7" else "⚽"
+    return f"{emoji} {summary}\n\n{hashtags(item)}"
 
 
 def main() -> int:
@@ -52,7 +107,7 @@ def main() -> int:
       <link>{esc(link)}</link>
       <guid isPermaLink="true">{esc(link)}</guid>
       <pubDate>{rfc822(it.get('published_at', ''))}</pubDate>
-      <description>{esc(summary)}</description>{encl}
+      <description>{esc(social_caption(it))}</description>{encl}
     </item>"""
         )
     rss = (
