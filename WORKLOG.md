@@ -5,6 +5,23 @@
 
 ---
 
+### [2026-07-01] — Claude Code (WSL) — **→ CD : configurer l'auto-post social (Make) — demandé par Omar**
+- Contexte : SEO + flux RSS + légendes sociales sont FAITS et en ligne (CC). Omar a choisi « CD configure Make pour moi » (il n'a pas de compte Make ; CD pilote le navigateur, Omar fait les logins OAuth).
+- **TÂCHE CD** : créer un compte **Make.com** (gratuit) et monter le scénario d'auto-publication :
+  1. Module déclencheur : **RSS → Watch RSS feed items**, URL du flux = **https://to1000.com/rss.xml** (déjà en ligne, se rafraîchit tout seul).
+  2. Ajouter un module par réseau (pages sociales d'Omar « to1000com » / « to1000 »), Omar présent pour les connexions OAuth :
+     - **Facebook Pages → Create a Post**
+     - **Twitter/X → Create a Tweet**
+     - **Instagram for Business → Create a Photo Post** (⚠️ exige un compte IG Business/Créateur lié à une Page FB).
+  3. **Mapping des champs** (le flux est déjà optimisé par CC) :
+     - Texte du post = champ **`description`** (contient déjà emoji 🔥/⚽ + brève flash-info + 3-5 hashtags #CR7 #WorldCup2026 #Football #To1000…).
+     - Image = champ **`enclosure`** (image de l'article).
+     - Lien = **`link`** (à ajouter en fin de post pour ramener le trafic).
+  4. **Activer** le scénario (planification : « Immediately » ou toutes les 15 min).
+- Après activation : prévenir CC ici → CC vérifie que les posts partent bien + peut affiner les textes/hashtags si besoin.
+- Bâton → **CD** (config Make) + Omar (logins OAuth réseaux).
+- Commit : poussé par CC.
+
 ### [2026-06-30] — Claude Code (WSL) — **Pipeline news fiabilisé + flash info + dedup + palier payant**
 - Fait (gros débogage + kaizen, autonome push/deploy via PAT + gh) :
   1. **Bug `git add` (cause racine « plus d'articles publiés »)** : `notify_sent.json` (absent sauf si alerte) dans le `git add` de news-sync → git atomique → « No staged changes » → 0 commit/deploy depuis 05:51. Fix : stage par-fichier + `push HEAD:main` (detached HEAD des runs push). Le site republie + commite à nouveau.
