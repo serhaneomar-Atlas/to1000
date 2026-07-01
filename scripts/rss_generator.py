@@ -17,6 +17,47 @@ from pathlib import Path
 PUB = Path(__file__).resolve().parent.parent / "public"
 SITE = "https://to1000.com"
 
+# Cartes de marque par article (Pillow) — dégrade proprement si indispo.
+CARDS_DIR = PUB / "social" / "cards"
+_MANIFEST = CARDS_DIR / "manifest.json"
+try:
+    import hashlib
+    from social_card import make_card  # noqa: E402
+    _CARDS_OK = True
+except Exception:
+    _CARDS_OK = False
+
+_KIND_LABEL = {"cr7": "CR7", "wc": "MONDIAL 2026", "maroc": "MAROC",
+               "portugal": "PORTUGAL", "foot": "FOOTBALL"}
+
+
+def _load_stats_counter():
+    try:
+        s = json.loads((PUB / "stats.json").read_text(encoding="utf-8"))
+        return f"{s.get('goals', 975)}/{s.get('target', 1000)}"
+    except Exception:
+        return "975/1000"
+
+
+def card_url_for(item, counter, manifest):
+    """Génère/réutilise la carte de marque de l'article ; retourne son URL (ou None)."""
+    if not _CARDS_OK:
+        return None
+    fr = (item.get("i18n", {}).get("fr", {}) or {})
+    title = fr.get("title") or item.get("title", "")
+    iid = item.get("id")
+    if not title or not iid:
+        return None
+    h = hashlib.sha256(f"{title}|{counter}".encode("utf-8")).hexdigest()[:10]
+    if manifest.get(iid) != h or not (CARDS_DIR / f"{iid}.png").exists():
+        try:
+            make_card(title, _KIND_LABEL.get(item.get("kind"), "FOOTBALL"),
+                      counter, CARDS_DIR / f"{iid}.png")
+            manifest[iid] = h
+        except Exception:
+            return None
+    return f"{SITE}/social/cards/{iid}.png"
+
 
 def esc(s: str) -> str:
     return html.escape(s or "", quote=False)
@@ -93,14 +134,24 @@ def main() -> int:
         return 0
     items = d.get("items", [])[:30]
     now = format_datetime(datetime.now(timezone.utc))
+    counter = _load_stats_counter()
+    manifest = {}
+    if _MANIFEST.exists():
+        try:
+            manifest = json.loads(_MANIFEST.read_text(encoding="utf-8"))
+        except Exception:
+            manifest = {}
     parts = []
     for it in items:
         fr = (it.get("i18n", {}).get("fr", {}) or {})
         title = fr.get("title") or it.get("title", "")
         summary = fr.get("summary") or it.get("summary", "")
         link = f"{SITE}/news/{it.get('id')}"
-        img = it.get("image_url", "")
-        encl = f'\n      <enclosure url="{esc(img)}" type="image/jpeg"/>' if img else ""
+        # Image du post = NOTRE carte de marque (fallback : image source)
+        card = card_url_for(it, counter, manifest)
+        img = card or it.get("image_url", "")
+        itype = "image/png" if card else "image/jpeg"
+        encl = f'\n      <enclosure url="{esc(img)}" type="{itype}"/>' if img else ""
         parts.append(
             f"""    <item>
       <title>{esc(title)}</title>
@@ -125,7 +176,10 @@ def main() -> int:
         + "\n  </channel>\n</rss>\n"
     )
     (PUB / "rss.xml").write_text(rss, encoding="utf-8")
-    print(f"[rss] rss.xml écrit ({len(items)} items)")
+    if _CARDS_OK and manifest:
+        CARDS_DIR.mkdir(parents=True, exist_ok=True)
+        _MANIFEST.write_text(json.dumps(manifest), encoding="utf-8")
+    print(f"[rss] rss.xml écrit ({len(items)} items · cartes de marque: {'oui' if _CARDS_OK else 'non'})")
     return 0
 
 

@@ -45,7 +45,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install feedparser
+          pip install feedparser Pillow
 
       - name: Snapshot existing news.json hash
         id: pre
@@ -142,7 +142,7 @@ jobs:
           # notify_sent.json, créé seulement si une alerte part) ne doit PAS
           # annuler tout le git add (git est atomique sur un pathspec manquant
           # → sinon 'No staged changes' et la news fraîche n'est jamais commitée).
-          for f in public/news.json public/news.html public/rss.xml public/translations_cache.json public/news/ public/wc.json public/sitemap.xml public/dashboard-data.json public/marketing_log.json scripts/metrics_history.json scripts/notify_sent.json; do
+          for f in public/news.json public/news.html public/rss.xml public/social/ public/translations_cache.json public/news/ public/wc.json public/sitemap.xml public/dashboard-data.json public/marketing_log.json scripts/metrics_history.json scripts/notify_sent.json; do
             git add "$f" 2>/dev/null || true
           done
           # Only commit if there are actually staged changes
