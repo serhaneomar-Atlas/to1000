@@ -178,6 +178,16 @@ def render_article(item: dict, all_items: list | None = None) -> str:
     else:
         source = str(_src)
 
+    # OG/Twitter image : carte brandée (social_card.py, 1200x630) si elle existe,
+    # pour que les auto-posts du LIEN (Make.com → Facebook) affichent NOTRE carte
+    # et pas l'image du journal source. Fallback : image de l'article, puis og-image.
+    item_id = item.get("id") or ""
+    card_file = PROJECT_DIR / "public" / "social" / "cards" / f"{item_id}.png"
+    if item_id and card_file.exists():
+        og_img = f"{SITE}/social/cards/{item_id}.png"
+    else:
+        og_img = img or f"{SITE}/og-image.png"
+
     # Truncate description for meta — cut on a word boundary (~155 chars) + "…"
     _raw_desc = re.sub(r"\s+", " ", (summary_fr or title_fr)).strip()
     if len(_raw_desc) > 155:
@@ -302,8 +312,8 @@ def render_article(item: dict, all_items: list | None = None) -> str:
 <meta property="og:title" content="{h(title_fr)}">
 <meta property="og:description" content="{meta_desc}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{h(img or SITE + '/og-image.png')}">
-<meta property="og:image:secure_url" content="{h(img or SITE + '/og-image.png')}">
+<meta property="og:image" content="{h(og_img)}">
+<meta property="og:image:secure_url" content="{h(og_img)}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="{h(title_fr)}">
@@ -316,7 +326,7 @@ def render_article(item: dict, all_items: list | None = None) -> str:
 <meta name="twitter:site" content="@to1000com">
 <meta name="twitter:title" content="{h(title_fr)}">
 <meta name="twitter:description" content="{meta_desc}">
-<meta name="twitter:image" content="{h(img or SITE + '/og-image.png')}">
+<meta name="twitter:image" content="{h(og_img)}">
 <meta name="twitter:image:alt" content="{h(title_fr)}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32">
