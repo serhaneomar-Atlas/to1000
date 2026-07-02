@@ -33,8 +33,9 @@ HIGH_PRIORITY = [
     ("/goals.html",                0.9, "daily"),
     ("/blog/",                     0.8, "weekly"),
     ("/news/",                     0.85, "hourly"),
-    ("/promise/",                  0.7, "weekly"),
-    ("/analytics.html",            0.4, "monthly"),
+    ("/about.html",                0.4, "monthly"),
+    ("/contact.html",              0.3, "monthly"),
+    ("/privacy.html",              0.3, "monthly"),
 ]
 
 

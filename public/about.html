@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4V8Y6C38VN"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4V8Y6C38VN');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos | To1000.com</title>
+  <meta name="description" content="To1000.com : média fan indépendant qui suit le compte à rebours vers le 1000e but de Cristiano Ronaldo et l'actu football. Qui nous sommes, notre méthodologie et notre disclaimer.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#05070b">
+  <link rel="canonical" href="https://to1000.com/about.html">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+  :root{
+    --ink:#05070b;--charcoal:#0d1118;--steel:#161c26;--floodlight:#f7e7a3;
+    --gold:#f2c14e;--gold-hot:#ffd66b;--chalk:#eef2f6;--mute:#9aa6b4;
+    --line:rgba(247,231,163,.16);--live:#ff3b30;--maxw:1180px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Hanken Grotesk',system-ui,sans-serif;background:var(--ink);color:var(--chalk);-webkit-font-smoothing:antialiased;min-height:100vh}
+  a{color:inherit}
+  .impact{font-family:'Anton',sans-serif;font-weight:400;letter-spacing:.01em}
+  :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:3px}
+
+  /* topbar (repris de news.html) */
+  .topbar{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;gap:14px;
+    padding:14px 22px;background:linear-gradient(180deg,rgba(5,7,11,.94),rgba(5,7,11,.7));backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand .logo{font-family:'Anton',sans-serif;font-size:24px;letter-spacing:.02em;text-decoration:none;color:var(--chalk)}
+  .brand .logo b{color:var(--gold)}
+  .brand .tag{display:none;font-size:11px;color:var(--mute);max-width:240px;border-left:1px solid var(--line);padding-left:12px;line-height:1.3}
+  nav.main{display:none;gap:5px}
+  nav.main a{font-family:'Oswald',sans-serif;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);text-decoration:none;padding:7px 11px;border-radius:8px}
+  nav.main a:hover{color:var(--chalk);background:rgba(247,231,163,.07)}
+  .right{display:flex;align-items:center;gap:10px}
+  .livepill{display:inline-flex;align-items:center;gap:8px;font-family:'Oswald',sans-serif;font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--chalk);padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(0,0,0,.35);text-decoration:none}
+  .livepill .dot{width:7px;height:7px;border-radius:50%;background:var(--live);box-shadow:0 0 10px var(--live);animation:blink 1.4s steps(1) infinite}
+  @keyframes blink{50%{opacity:.25}}
+  @media(min-width:760px){.brand .tag{display:block}}
+  @media(min-width:1080px){nav.main{display:flex}}
+  .hamb{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:0;cursor:pointer;padding:8px 4px}
+  .hamb span{display:block;width:22px;height:2px;background:var(--chalk);border-radius:2px;transition:transform .25s,opacity .25s}
+  .hamb[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .hamb[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .hamb[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .mobile-menu{position:fixed;top:58px;left:0;right:0;z-index:99;background:rgba(5,7,11,.98);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);display:flex;flex-direction:column;padding:6px 18px;box-shadow:0 18px 40px rgba(0,0,0,.5)}
+  .mobile-menu[hidden]{display:none}
+  .mobile-menu a{font-family:'Oswald',sans-serif;font-size:15px;letter-spacing:.05em;text-transform:uppercase;color:var(--chalk);text-decoration:none;padding:14px 4px;border-bottom:1px solid rgba(255,255,255,.07)}
+  .mobile-menu a:last-child{border-bottom:0}
+  @media(max-width:1079px){ .hamb{display:flex} }
+
+  /* contenu de page légale */
+  main.page{max-width:820px;margin:0 auto;padding:118px 22px 70px}
+  .eyebrow{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--floodlight);display:inline-flex;align-items:center;gap:10px}
+  .eyebrow::before{content:"";width:28px;height:1px;background:var(--gold)}
+  main.page h1{font-size:clamp(34px,6vw,58px);line-height:1;margin:10px 0 8px}
+  main.page h1 .gold{color:var(--gold)}
+  .updated{font-family:'Oswald',sans-serif;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin-bottom:26px}
+  main.page h2{font-family:'Oswald',sans-serif;font-weight:600;font-size:20px;letter-spacing:.03em;color:var(--gold);margin:32px 0 10px}
+  main.page p{font-size:15px;line-height:1.75;color:#c2ccd8;margin:0 0 12px}
+  main.page ul{margin:0 0 12px 20px}
+  main.page li{font-size:15px;line-height:1.75;color:#c2ccd8;margin-bottom:6px}
+  main.page a{color:var(--gold);text-decoration:underline;text-decoration-color:rgba(242,193,78,.4);text-underline-offset:3px}
+  main.page a:hover{color:var(--gold-hot)}
+  .box{border:1px solid var(--line);background:linear-gradient(180deg,rgba(13,17,24,.72),rgba(5,7,11,.66));border-radius:14px;padding:18px 20px;margin:0 0 26px}
+  .box .box-tag{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--floodlight);margin-bottom:8px}
+  .box p{margin-bottom:8px}
+  .box p:last-child{margin-bottom:0}
+
+  footer{border-top:1px solid var(--line);background:var(--charcoal);padding:34px 22px;margin-top:40px}
+  .foot-inner{max-width:var(--maxw);margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px}
+  .foot-inner .logo{font-family:'Anton',sans-serif;font-size:22px}.foot-inner .logo b{color:var(--gold)}
+  .foot-nav{display:flex;flex-wrap:wrap;gap:6px 16px}
+  .foot-nav a{font-family:'Oswald',sans-serif;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);text-decoration:none}
+  .foot-nav a:hover{color:var(--gold)}
+  .disclaimer{max-width:var(--maxw);margin:18px auto 0;color:var(--mute);font-size:12px;line-height:1.7;border-top:1px solid var(--line);padding-top:16px}
+  .disclaimer a{color:var(--mute)}
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <a href="/" class="logo" aria-label="TO1000.com">TO<b>1000</b></a>
+      <span class="tag">Le hub du football · compte à rebours du 1000e but de CR7</span>
+    </div>
+    <nav class="main" aria-label="Navigation principale">
+      <a href="/#hero">Compteur</a>
+      <a href="/goals.html">Tous les buts</a>
+      <a href="/#parcours">Parcours</a>
+      <a href="/#match">Coupe du Monde</a>
+      <a href="/#data">Stats</a>
+      <a href="/news.html">News</a>
+    </nav>
+    <div class="right">
+      <a class="livepill" href="/#hero"><span class="dot" aria-hidden="true"></span><span id="pill">Live</span></a>
+      <button class="hamb" id="hamb" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Menu" hidden>
+    <a href="/#hero">Compteur</a>
+    <a href="/goals.html">Tous les buts</a>
+    <a href="/news.html">News</a>
+    <a href="/privacy.html">Confidentialité</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+
+  <main class="page">
+    <p class="eyebrow">To1000 · À propos</p>
+    <h1 class="impact">Qui sommes-<span class="gold">nous</span></h1>
+    <p class="updated">Dernière mise à jour : 1er juillet 2026</p>
+
+    <div class="box" lang="en">
+      <p class="box-tag">English summary</p>
+      <p>To1000.com is an independent fan-run football media. We follow the live countdown to Cristiano Ronaldo's 1000th career goal and aggregate football news from trusted sources, always linking back to the original article. We are not affiliated with Cristiano Ronaldo, his clubs or FIFA.</p>
+    </div>
+
+    <h2>Le projet</h2>
+    <p>To1000.com est un média de fans indépendant, né d'une obsession simple : suivre en direct le compte à rebours vers le <strong>1000e but en carrière de Cristiano Ronaldo</strong>. Autour de ce compteur, nous couvrons l'actualité du football mondial — grandes équipes européennes, joueurs stars, compétitions internationales, football du Maghreb, d'Afrique et d'Amérique du Sud.</p>
+    <p>Le site est gratuit, disponible en quatre langues (français, anglais, espagnol, arabe), et mis à jour en continu.</p>
+
+    <h2>Méthodologie news</h2>
+    <p>Notre fil d'actualité est construit avec rigueur :</p>
+    <ul>
+      <li><strong>Agrégation de sources fiables</strong> : nous suivons une trentaine de flux de médias sportifs reconnus (L'Équipe, BBC Sport, Marca, Kicker, Hespress, Olé, etc.).</li>
+      <li><strong>L'essentiel, sans clickbait</strong> : chaque info est résumée à l'essentiel et traduite (FR/EN/ES/AR).</li>
+      <li><strong>Vérification</strong> : quand une information est recoupée par plusieurs sources indépendantes, elle est marquée « Vérifié ». Sinon, la source unique est affichée clairement.</li>
+      <li><strong>Lien vers l'original</strong> : chaque actu renvoie toujours vers l'article original. Nous ne nous approprions pas le travail des rédactions.</li>
+    </ul>
+    <p>Les statistiques du compteur (buts, matchs, prochain rendez-vous) s'appuient sur des données publiques de référence (ESPN, Transfermarkt, FIFA, Wikipedia) et sont rapprochées à chaque match. Les décomptes officiels peuvent légèrement varier selon les sources.</p>
+
+    <h2>Disclaimer — site non officiel</h2>
+    <p>To1000.com est un <strong>site de fans indépendant et non officiel</strong>. Il n'est ni affilié à, ni approuvé, ni sponsorisé par Cristiano Ronaldo, ses clubs présents ou passés, la fédération portugaise de football, la FIFA, ou toute autre ligue ou organisation. « CR7 » et « Cristiano Ronaldo » sont des marques de leurs propriétaires respectifs ; elles ne sont mentionnées ici qu'à des fins éditoriales (commentaire, statistiques, actualité), dans le cadre de l'usage loyal. Les noms de joueurs, logos de clubs, photographies et marques cités appartiennent à leurs propriétaires respectifs.</p>
+
+    <h2>Nous contacter</h2>
+    <p>Une correction à signaler, une question, une proposition ? Rendez-vous sur la <a href="/contact.html">page contact</a>. Voir aussi notre <a href="/privacy.html">politique de confidentialité</a>.</p>
+  </main>
+
+  <footer>
+    <div class="foot-inner">
+      <div><div class="logo">TO<b>1000</b>.com</div></div>
+      <nav class="foot-nav" aria-label="Pied de page">
+        <a href="/#hero">Compteur</a>
+        <a href="/news.html">News</a>
+        <a href="/privacy.html">Confidentialité</a>
+        <a href="/about.html">À propos</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+    <p class="disclaimer">Site de fans non officiel · Cristiano Ronaldo est une marque de Cristiano Ronaldo. Ce site n'est ni affilié, ni approuvé par le joueur, ses clubs ou la FIFA. Contenu éditorial à titre informatif.</p>
+  </footer>
+
+  <script>
+  (function(){
+    var hb=document.getElementById('hamb'),mm=document.getElementById('mobileMenu');
+    if(hb&&mm){function so(open){if(open){mm.removeAttribute('hidden');hb.setAttribute('aria-expanded','true');}else{mm.setAttribute('hidden','');hb.setAttribute('aria-expanded','false');}}
+      hb.addEventListener('click',function(){so(mm.hasAttribute('hidden'));});
+      mm.addEventListener('click',function(e){if(e.target.closest('a'))so(false);});}
+    fetch('/stats.json?_='+Math.floor(Date.now()/60000)).then(function(r){return r.json();}).then(function(s){var p=document.getElementById('pill');if(p&&s.goals)p.textContent='Live · '+s.goals;}).catch(function(){});
+  })();
+  </script>
+</body>
+</html>

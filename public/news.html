@@ -39,6 +39,7 @@
   <link rel="canonical" href="https://to1000.com/news">
   <link rel="alternate" hreflang="fr" href="https://to1000.com/news">
   <link rel="alternate" hreflang="x-default" href="https://to1000.com/news">
+  <link rel="alternate" type="application/rss+xml" title="To1000 — Football News" href="/rss.xml">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32">
 
@@ -190,6 +191,19 @@
   .mobile-menu a{font-family:'Oswald',sans-serif;font-size:15px;letter-spacing:.05em;text-transform:uppercase;color:var(--chalk);text-decoration:none;padding:14px 4px;border-bottom:1px solid rgba(255,255,255,.07)}
   .mobile-menu a:last-child{border-bottom:0}
   @media(max-width:1079px){ .hamb{display:flex} }
+
+  /* newsletter (masquée tant que NEWSLETTER_FORM_ACTION n'est pas configurée — voir newsletter.js) */
+  .nl-section{border-top:1px solid var(--line);background:linear-gradient(180deg,rgba(13,17,24,.72),rgba(5,7,11,.66))}
+  .nl-section[hidden]{display:none}
+  .nl-inner{max-width:var(--maxw);margin:0 auto;padding:38px 22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px}
+  .nl-copy h3{font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(22px,3.4vw,30px);letter-spacing:.01em;color:var(--chalk)}
+  .nl-copy p{color:var(--mute);font-size:14px;line-height:1.6;margin-top:6px;max-width:52ch}
+  .nl-form{display:flex;flex-wrap:wrap;gap:10px}
+  .nl-form input[type=email]{font-family:'Hanken Grotesk',system-ui,sans-serif;font-size:15px;color:var(--chalk);background:rgba(0,0,0,.4);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:240px}
+  .nl-form input[type=email]::placeholder{color:var(--mute)}
+  .nl-form button{font-family:'Oswald',sans-serif;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);background:var(--gold);border:0;border-radius:10px;padding:12px 20px;cursor:pointer}
+  .nl-form button:hover{background:var(--gold-hot)}
+  .nl-ok{display:none;color:#5fd38a;font-family:'Oswald',sans-serif;font-size:14px}
 </style>
 </head>
 <body>
@@ -295,6 +309,21 @@
 </div>
   </main>
 
+  <!-- NEWSLETTER — masquée tant que window.NEWSLETTER_FORM_ACTION n'est pas configurée (voir newsletter.js) -->
+  <section class="nl-section" id="newsletter" hidden aria-labelledby="nl-title">
+    <div class="nl-inner">
+      <div class="nl-copy">
+        <h3 id="nl-title" data-i18n="nl_title">⚽ Sois averti pour le 1000e but</h3>
+        <p data-i18n="nl_sub">Une alerte e-mail le jour J — et rien d'autre. Pas de spam, désinscription en un clic.</p>
+      </div>
+      <form class="nl-form">
+        <input type="email" required autocomplete="email" placeholder="Ton adresse e-mail" data-i18n-ph="nl_ph" aria-label="E-mail">
+        <button type="submit" data-i18n="nl_btn">Me prévenir</button>
+      </form>
+      <p class="nl-ok" role="status" data-i18n="nl_ok">Merci ! Vérifie ta boîte mail pour confirmer.</p>
+    </div>
+  </section>
+
   <footer>
     <div class="foot-inner">
       <div><div class="logo">TO<b>1000</b>.com</div></div>
@@ -303,6 +332,9 @@
         <a href="/#parcours" data-i18n="nav_journey">Parcours</a>
         <a href="/#data" data-i18n="nav_stats">Stats</a>
         <a href="/news.html" data-i18n="nav_news">News</a>
+        <a href="/about.html" data-i18n="nav_about">À propos</a>
+        <a href="/privacy.html" data-i18n="nav_privacy">Confidentialité</a>
+        <a href="/contact.html" data-i18n="nav_contact">Contact</a>
       </nav>
     </div>
     <p class="disclaimer" data-i18n-html="disclaimer">Site de fans non officiel · Cristiano Ronaldo est une marque de Cristiano Ronaldo. Ce site n'est ni affilié, ni approuvé par le joueur, ses clubs ou la FIFA. Contenu éditorial à titre informatif.</p>
@@ -316,24 +348,32 @@
         news_promise:"On lit la presse pour vous — l'essentiel de chaque info, sourcé et vérifié, avec le lien vers l'article original. Pas de blabla, pas de clickbait.",
         filter_all:"Tout",filter_cr7:"CR7 · Ronaldo",search_ph:"Rechercher…",loading:"Chargement des actus…",
         news_verified:"Vérifié",news_orig:"Lire l'article →",all_sources:"Toutes les sources",results:"actus",updated:"mis à jour",sources_word:"sources",
+        nav_about:"À propos",nav_privacy:"Confidentialité",nav_contact:"Contact",
+        nl_title:"⚽ Sois averti pour le 1000e but",nl_sub:"Une alerte e-mail le jour J — et rien d'autre. Pas de spam, désinscription en un clic.",nl_ph:"Ton adresse e-mail",nl_btn:"Me prévenir",nl_ok:"Merci ! Vérifie ta boîte mail pour confirmer.",
         disclaimer:'Site de fans non officiel · Cristiano Ronaldo est une marque de Cristiano Ronaldo. Ce site n\'est ni affilié, ni approuvé par le joueur, ses clubs ou la FIFA. Contenu éditorial à titre informatif. Photos : <a href="https://unsplash.com" rel="noopener">Unsplash</a>.'},
       en:{brand_tag:"The football hub · countdown to CR7's 1000th goal",nav_counter:"Counter",nav_goals:"All goals",nav_journey:"Journey",nav_wc:"World Cup",nav_stats:"Stats",nav_news:"News",
         news_eyebrow:"To1000 · News",news_title_a:"Football news,",news_title_b:"straight to the point.",
         news_promise:"We read the press for you — the essentials of every story, sourced and verified, with a link to the original article. No fluff, no clickbait.",
         filter_all:"All",filter_cr7:"CR7 · Ronaldo",search_ph:"Search…",loading:"Loading news…",
         news_verified:"Verified",news_orig:"Read article →",all_sources:"All sources",results:"stories",updated:"updated",sources_word:"sources",
+        nav_about:"About",nav_privacy:"Privacy",nav_contact:"Contact",
+        nl_title:"⚽ Get alerted for the 1000th goal",nl_sub:"One email alert on the big day — nothing else. No spam, one-click unsubscribe.",nl_ph:"Your email address",nl_btn:"Notify me",nl_ok:"Thanks! Check your inbox to confirm.",
         disclaimer:'Unofficial fan site · Cristiano Ronaldo is a trademark of Cristiano Ronaldo. This site is not affiliated with or endorsed by the player, his clubs or FIFA. Editorial content for informational purposes. Photos: <a href="https://unsplash.com" rel="noopener">Unsplash</a>.'},
       es:{brand_tag:"El hub del fútbol · cuenta atrás hacia el gol 1000 de CR7",nav_counter:"Contador",nav_goals:"Todos los goles",nav_journey:"Trayectoria",nav_wc:"Mundial",nav_stats:"Estadísticas",nav_news:"Noticias",
         news_eyebrow:"To1000 · Noticias",news_title_a:"Fútbol,",news_title_b:"al grano.",
         news_promise:"Leemos la prensa por ti — lo esencial de cada noticia, con fuentes y verificado, con el enlace al artículo original. Sin relleno, sin clickbait.",
         filter_all:"Todo",filter_cr7:"CR7 · Ronaldo",search_ph:"Buscar…",loading:"Cargando noticias…",
         news_verified:"Verificado",news_orig:"Leer artículo →",all_sources:"Todas las fuentes",results:"noticias",updated:"actualizado",sources_word:"fuentes",
+        nav_about:"Quiénes somos",nav_privacy:"Privacidad",nav_contact:"Contacto",
+        nl_title:"⚽ Recibe la alerta del gol 1000",nl_sub:"Un solo aviso por e-mail el gran día — nada más. Sin spam, baja en un clic.",nl_ph:"Tu correo electrónico",nl_btn:"Avísame",nl_ok:"¡Gracias! Revisa tu correo para confirmar.",
         disclaimer:'Sitio de fans no oficial · Cristiano Ronaldo es una marca de Cristiano Ronaldo. Este sitio no está afiliado ni respaldado por el jugador, sus clubes o la FIFA. Contenido editorial con fines informativos. Fotos: <a href="https://unsplash.com" rel="noopener">Unsplash</a>.'},
       ar:{brand_tag:"مركز كرة القدم · العد التنازلي نحو هدف رونالدو الألف",nav_counter:"العدّاد",nav_goals:"كل الأهداف",nav_journey:"المسيرة",nav_wc:"كأس العالم",nav_stats:"إحصائيات",nav_news:"الأخبار",
         news_eyebrow:"To1000 · الأخبار",news_title_a:"أخبار الكرة،",news_title_b:"مباشرةً إلى المهم.",
         news_promise:"نقرأ الصحافة نيابةً عنك — جوهر كل خبر، موثّق ومُتحقَّق منه، مع رابط المقال الأصلي. بلا حشو وبلا إثارة.",
         filter_all:"الكل",filter_cr7:"CR7 · رونالدو",search_ph:"بحث…",loading:"جارٍ تحميل الأخبار…",
         news_verified:"موثّق",news_orig:"اقرأ المقال →",all_sources:"كل المصادر",results:"خبر",updated:"آخر تحديث",sources_word:"مصادر",
+        nav_about:"من نحن",nav_privacy:"الخصوصية",nav_contact:"اتصل بنا",
+        nl_title:"⚽ كن أول من يعلم بالهدف الألف",nl_sub:"تنبيه واحد عبر البريد الإلكتروني يوم الحدث — لا أكثر. بلا إزعاج، وإلغاء الاشتراك بنقرة واحدة.",nl_ph:"بريدك الإلكتروني",nl_btn:"أعلمني",nl_ok:"شكراً! تحقق من بريدك لتأكيد الاشتراك.",
         disclaimer:'موقع جماهيري غير رسمي · كريستيانو رونالدو علامة تجارية تخصه. هذا الموقع غير مرتبط باللاعب أو أنديته أو الفيفا. محتوى تحريري لأغراض إعلامية. الصور: <a href="https://unsplash.com" rel="noopener">Unsplash</a>.'}
     };
     var SUP=['fr','en','es','ar'];
@@ -412,5 +452,11 @@
     fetch('/stats.json'+bust).then(function(r){return r.json();}).then(function(s){var p=document.getElementById('pill');if(p)p.textContent='Live · '+s.goals;}).catch(function(){});
   })();
   </script>
+  <script>
+    /* Newsletter — décommenter ces 2 lignes pour activer la capture e-mail (voir newsletter.js) */
+    // window.NEWSLETTER_FORM_ACTION = 'https://buttondown.com/api/emails/embed-subscribe/TON_COMPTE';
+    // window.NEWSLETTER_EMAIL_FIELD = 'email';
+  </script>
+  <script src="/newsletter.js" defer></script>
 </body>
 </html>
