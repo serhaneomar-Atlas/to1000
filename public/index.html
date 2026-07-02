@@ -1042,6 +1042,15 @@
       if(names.length===2){names[0].textContent=m.home_team;names[1].textContent=m.away_team;setFlag(crests[0],m.home_team);setFlag(crests[1],m.away_team);}
       var when=document.querySelector('#match .head .when');
       if(when&&m.kickoff_utc){try{var d=new Date(m.kickoff_utc); when.textContent=d.toLocaleDateString(LANG,{day:'numeric',month:'long'})+' · '+d.toLocaleTimeString(LANG,{hour:'2-digit',minute:'2-digit'});}catch(e){}}
+      var fm=document.getElementById('fotmoblink');
+      if(m.fotmob_url){
+        if(!fm){fm=document.createElement('a');fm.id='fotmoblink';fm.target='_blank';fm.rel='noopener nofollow';
+          fm.style.cssText='display:inline-block;margin-top:12px;color:#f2c14e;border:1px solid #f2c14e;border-radius:6px;padding:7px 16px;text-decoration:none;font-weight:600;font-size:14px';
+          var host=document.querySelector('#match .vs');
+          if(host&&host.parentNode)host.parentNode.insertBefore(fm,host.nextSibling);}
+        if(fm){fm.href=m.fotmob_url;
+          fm.textContent='📊 '+(LANG==='ar'?'تابع المباراة مباشرة (FotMob)':LANG==='en'?'Follow the match live (FotMob)':LANG==='es'?'Sigue el partido en directo (FotMob)':'Suivre le match en direct (FotMob)');}
+      }else if(fm){fm.remove();}
     }
   }
   function relTime(iso){try{var diff=(new Date(iso).getTime()-Date.now())/1000,a=Math.abs(diff),rtf=new Intl.RelativeTimeFormat(LANG,{numeric:'auto'});

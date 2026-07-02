@@ -178,6 +178,13 @@ def entities(text: str) -> set:
     return ents
 
 
+def recency_sort_key(it: dict) -> tuple:
+    """Clé de tri du feed : fraîcheur d'abord (ISO 8601 trie lexicographiquement),
+    score d'importance en départage. Fix 2026-07-02 (demande Omar) — l'ancien
+    tri CR7/score/sources faisait passer du J-2 devant les news du jour."""
+    return (it.get("published_at") or "", it.get("score", 0))
+
+
 def parse_date(entry) -> Optional[datetime]:
     """Try several date fields, return UTC datetime or None."""
     for field in ("published_parsed", "updated_parsed", "created_parsed"):
@@ -639,12 +646,8 @@ def main() -> int:
     # cost (MyMemory ~0.5-1s/call × 3 langs × 2 fields) on items that will be
     # discarded at the cap. Cut from 233 → 50 typical = 4-5× fewer API calls.
     clusters.sort(
-        key=lambda c: (
-            1 if c["kind"] == "cr7" else 0,
-            c.get("score", 0),
-            min(len(c["sources"]), 3),
-            c["latest_at"],
-        ),
+        key=lambda c: recency_sort_key({"published_at": c.get("latest_at", ""),
+                                        "score": c.get("score", 0)}),
         reverse=True,
     )
     if len(clusters) > MAX_ITEMS:
@@ -763,16 +766,9 @@ def main() -> int:
         translator.cache.save()
         log(f"Translator stats: {translator.stats()}", verbose)
 
-    # Sort: CR7 first, then multi-source confirmation, then recency
-    final_items.sort(
-        key=lambda it: (
-            1 if it["kind"] == "cr7" else 0,
-            it.get("score", 0),                  # importance score (champion, signs for, scores...)
-            min(it["source_count"], 3),
-            it["published_at"],
-        ),
-        reverse=True,
-    )
+    # Tri : les plus RÉCENTS d'abord (fix 2026-07-02, demande Omar — « ça
+    # s'appelle des nouvelles »). L'ancien tri CR7/score reléguait le frais.
+    final_items.sort(key=recency_sort_key, reverse=True)
     final_items = final_items[:MAX_ITEMS]
 
     # Persistance de l'enrichissement : réutilise l'i18n « gemini-editor » déjà

@@ -43,9 +43,9 @@ def chief_editor_review(translator, title: str, summary: str, src: str, targets:
     langs = list(dict.fromkeys([src] + [t for t in targets if t != src]))
     # CACHE D'ABORD (gratuit) — marche même si Gemini est coupé (mode cache-only de
     # news-sync). Le cache est alimenté par news-editorial (le « cerveau » éditorial).
-    # v2 = nouveau prompt « flash info » (brèves TV/radio). Bump la clé pour
-    # ré-enrichir tous les articles au lieu de servir les anciens résumés cachés.
-    cache_key = "edtv2:" + translator_hash(title, summary, src, langs) if getattr(translator, "cache", None) else None
+    # v3 (bump 2026-07-02) : garde factuelle format CdM 2026 dans le prompt +
+    # purge des brèves au mauvais tour (« quarts » au lieu de « huitièmes »).
+    cache_key = "edtv3:" + translator_hash(title, summary, src, langs) if getattr(translator, "cache", None) else None
     if cache_key and translator.cache:
         cached = translator.cache.get(cache_key)
         if cached:
@@ -74,7 +74,13 @@ def chief_editor_review(translator, title: str, summary: str, src: str, targets:
         "• Coupe le contexte, les détails secondaires, les formules de remplissage — "
         "garde uniquement ce qu'un téléspectateur doit retenir.\n"
         "• Chaque langue = phrasé NATUREL d'un présentateur de ce pays, pas une "
-        "traduction mot-à-mot. « title » : court, percutant, fidèle.\n\n"
+        "traduction mot-à-mot. « title » : court, percutant, fidèle.\n"
+        "• EXACTITUDE FACTUELLE : n'AJOUTE aucun fait absent du source. La Coupe du "
+        "monde 2026 (48 équipes) a un tour de PLUS que les anciennes : phase de "
+        "groupes → SEIZIÈMES de finale (32 équipes) → HUITIÈMES (16) → quarts (8) → "
+        "demies → finale. Gagner en seizièmes qualifie pour les HUITIÈMES, pas les "
+        "quarts. Si le source ne nomme pas le tour, écris « pour la suite du "
+        "tournoi » — ne devine JAMAIS.\n\n"
         "EXEMPLES (source → brève attendue) :\n"
         "Source : « Le FC Barcelone a annoncé ce mardi le départ de son attaquante "
         "Salma Paralluelo, qui a remporté trois Ligue des champions sous le maillot. »\n"
