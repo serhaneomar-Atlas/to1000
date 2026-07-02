@@ -34,6 +34,22 @@
   Cache-Control: public, max-age=300
   Access-Control-Allow-Origin: *
 
+# Flux RSS : jamais de cache CDN long — Make/agrégateurs doivent voir les
+# nouveaux articles en ~15 min (fix 2026-07-02 : un s-maxage 7 j + vieux 404
+# edge bloquaient l'auto-post AR). "!" détache toute valeur héritée.
+/rss.xml
+  ! Cache-Control
+  Cache-Control: public, max-age=0, must-revalidate
+/rss-ar.xml
+  ! Cache-Control
+  Cache-Control: public, max-age=0, must-revalidate
+/rss-en.xml
+  ! Cache-Control
+  Cache-Control: public, max-age=0, must-revalidate
+/rss-es.xml
+  ! Cache-Control
+  Cache-Control: public, max-age=0, must-revalidate
+
 # ─────────────────────────────────────────────────────────────────────────────
 #  Cache : HTML pages
 # ─────────────────────────────────────────────────────────────────────────────

@@ -71,3 +71,34 @@ class TestFiltreArabe(unittest.TestCase):
         self.assertTrue(has_arabic("رونالدو يسجل من جديد"))
         self.assertFalse(has_arabic("Croacia avisa: Ronaldo no está acabado"))
         self.assertFalse(has_arabic(""))
+
+
+class TestFiltreLangue(unittest.TestCase):
+    """EN/ES : le passthrough laisse le texte source → n'inclure un item que si
+    sa traduction existe ET diffère du source (l'écriture latine ne permet pas
+    de distinguer EN d'ES, contrairement au filtre arabe)."""
+
+    def test_en_traduit_inclus(self):
+        from rss_generator import lang_ok
+        item = {"title": "Ronaldo marca de nuevo",
+                "i18n": {"en": {"title": "Ronaldo scores again"}}}
+        self.assertTrue(lang_ok(item, "en"))
+
+    def test_en_passthrough_espagnol_exclu(self):
+        from rss_generator import lang_ok
+        item = {"title": "Croacia avisa: no está acabado",
+                "i18n": {"en": {"title": "Croacia avisa: no está acabado"}}}
+        self.assertFalse(lang_ok(item, "en"))
+
+    def test_en_absent_exclu(self):
+        from rss_generator import lang_ok
+        self.assertFalse(lang_ok({"title": "x", "i18n": {"fr": {"title": "y"}}}, "en"))
+
+    def test_fr_toujours_inclus(self):
+        from rss_generator import lang_ok
+        self.assertTrue(lang_ok({"title": "x"}, "fr"))
+
+    def test_ar_reste_sur_le_filtre_ecriture(self):
+        from rss_generator import lang_ok
+        self.assertTrue(lang_ok({"i18n": {"ar": {"title": "رونالدو يسجل"}}}, "ar"))
+        self.assertFalse(lang_ok({"i18n": {"ar": {"title": "No está acabado"}}}, "ar"))

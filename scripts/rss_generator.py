@@ -163,6 +163,22 @@ def has_arabic(text: str) -> bool:
     return bool(_ARABIC_RE.search(text or ""))
 
 
+def lang_ok(item: dict, lang: str) -> bool:
+    """Un item n'entre dans un flux traduit que si sa traduction est réelle.
+    Le pipeline stocke le texte SOURCE en passthrough tant que Gemini n'a pas
+    enrichi : sans ce filtre, rss-en/es publieraient de l'espagnol, etc.
+      - fr : flux historique, toujours inclus (fallback assumé)
+      - ar : détection d'écriture arabe (fiable)
+      - en/es : la traduction existe ET diffère du titre source (l'écriture
+        latine ne distingue pas les langues entre elles)"""
+    if lang == "fr":
+        return True
+    title = ((item.get("i18n") or {}).get(lang) or {}).get("title") or ""
+    if lang == "ar":
+        return has_arabic(title)
+    return bool(title) and title != (item.get("title") or "")
+
+
 def tr(item: dict, lang: str, field: str) -> str:
     """Champ traduit avec cascade : langue demandée → FR → texte source."""
     i18n = item.get("i18n", {}) or {}
@@ -205,9 +221,7 @@ def main() -> int:
     for lang, feed in FEEDS.items():
         parts = []
         for it in items:
-            # AR : n'inclure que les items réellement traduits (le passthrough
-            # laisse le texte source — poster de l'espagnol sur une page arabe, non).
-            if lang == "ar" and not has_arabic(tr(it, "ar", "title")):
+            if not lang_ok(it, lang):
                 continue
             link = f"{SITE}/news/{it.get('id')}"
             img = cards.get(it.get("id")) or it.get("image_url", "")
