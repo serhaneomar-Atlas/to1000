@@ -5,6 +5,13 @@
 
 ---
 
+### [2026-07-02 ~12:45 UTC] — Claude Code (WSL) — **Marketing AR : kit complet + flux rss-ar.xml LIVE (bâton CD exécuté)**
+- **`MARKETING_AR.md`** (racine repo) : bios FB/IG en arabe, post épinglé, posts prêts (Maroc qualifié aux TAB → Canada–Maroc 4/07, Algérie–Suisse cette nuit, Égypte demain, CR7/Portugal ce soir), gabarits jour de match/but CR7/compteur hebdo, banque de hashtags AR, conseils MSA/horaires Maghreb/RTL.
+- **Flux multilingues** : `rss_generator.py` paramétré → `rss.xml` (FR, URL inchangée — Make branché dessus) + **`rss-ar.xml`** + `rss-en.xml` + `rss-es.xml`, déclarés dans les head, cartes JPEG partagées. **⚠️ Filtre AR important** : le flux ne contient que les items RÉELLEMENT en arabe (le pipeline stocke le texte source en passthrough avant enrichissement Gemini → sans filtre, on aurait posté de l'espagnol sur Pchaaakh TV). Aujourd'hui 4 items, grossit à chaque passe éditoriale (*/30 min). 9 tests.
+- 🏳️ **Bâton → CD** : `https://to1000.com/rss-ar.xml` est LIVE → monter le 2e scénario Make **RSS-ar → Facebook Pages (Pchaaakh TV - بشاخ تيفي)**, caption = Description du flux (résumé AR + hashtags AR déjà inclus), « From now on », filtre image présente. NB : flux parfois court (filtre arabe) → régler Make pour tolérer 0 nouvel item.
+- **→ Omar** : le kit MARKETING_AR.md est prêt à copier-coller (post épinglé + bios en priorité). Les 2 slots Make gratuits seront pleins après Pchaaakh TV — EN/ES nécessiteraient un plan payant ou un router.
+- Commit : `f1db9ae` (kit), + flux (voir git log), poussés + déployés.
+
 ### [2026-07-02 ~03:40 UTC] — Claude Code (WSL) — **CdM Phase 2 LIVE : sync auto + bascule 301 (validée par Omar)**
 - **Omar a validé la Phase 1 + mes 2 recommandations** → exécutées : (a) **301 `/world-cup/*` → `/coupe-du-monde/*`** actifs et vérifiés (maroc/portugal → pages équipe) ; anciens fichiers retirés (récupérables via git) car **Pages sert un asset existant AVANT `_redirects`** (même cause que le stub /news/ de juin). (b) ESPN reste la source jusqu'à ce qu'Omar crée la clé football-data.org (`FOOTBALL_DATA_TOKEN` → bascule auto).
 - **Workflow `wc-sync.yml`** : 3 syncs complets/jour (04:10 UTC = minuit ET pour régénérer /matchs-du-jour/, 08:10, 13:10) + **toutes les 5 min en fenêtre de match** (15:00Z→04:00Z) avec early-exit `--live-only` hors fenêtre (économise les minutes Actions). Scores live sur les pages match par régénération. Deploy direct wrangler (les pushs GITHUB_TOKEN ne déclenchent pas « Deploy on push »). Premier run scheduled attendu ~04:10 UTC (moniteur posé).
