@@ -5,6 +5,16 @@
 
 ---
 
+### [2026-07-02 ~03:40 UTC] — Claude Code (WSL) — **CdM Phase 2 LIVE : sync auto + bascule 301 (validée par Omar)**
+- **Omar a validé la Phase 1 + mes 2 recommandations** → exécutées : (a) **301 `/world-cup/*` → `/coupe-du-monde/*`** actifs et vérifiés (maroc/portugal → pages équipe) ; anciens fichiers retirés (récupérables via git) car **Pages sert un asset existant AVANT `_redirects`** (même cause que le stub /news/ de juin). (b) ESPN reste la source jusqu'à ce qu'Omar crée la clé football-data.org (`FOOTBALL_DATA_TOKEN` → bascule auto).
+- **Workflow `wc-sync.yml`** : 3 syncs complets/jour (04:10 UTC = minuit ET pour régénérer /matchs-du-jour/, 08:10, 13:10) + **toutes les 5 min en fenêtre de match** (15:00Z→04:00Z) avec early-exit `--live-only` hors fenêtre (économise les minutes Actions). Scores live sur les pages match par régénération. Deploy direct wrangler (les pushs GITHUB_TOKEN ne déclenchent pas « Deploy on push »). Premier run scheduled attendu ~04:10 UTC (moniteur posé).
+- **Sitemap** : les 143 pages CdM ajoutées, les URLs /world-cup/ redirigées retirées (2 535 URLs). Liens internes des templates news migrés vers /coupe-du-monde/.
+- 🎁 **Bonus découvert en route : le site renvoyait la HOME en 200 pour TOUT chemin inexistant** (fallback SPA de Pages, soft-404 généralisé, mauvais pour l'indexation) → `public/404.html` ESTÁDIO créé, **vrais 404 vérifiés en prod**.
+- 38 tests unitaires verts. Commits `eabd7c2`→`0d723a5` (~4), tout déployé.
+- Reste Phases 3-4 (validation Omar entre chaque) : FAQ+FAQPage+diffuseurs officiels+maillage complet (P3) ; widget home+événements GA4+OG images par match (P4). Puis GSC : soumettre le sitemap, tester les données structurées, surveiller l'indexation 7 j.
+- Bâton → **Omar** (valider P2 → CC enchaîne P3) ; rappel Omar : ESP newsletter, GSC token, clé football-data (optionnelle).
+- Commit : poussés par CC.
+
 ### [2026-07-02 ~03:00 UTC] — Claude Code (WSL) — **Section /coupe-du-monde/ Phase 1 LIVE (143 pages SEO)**
 - Nouvelle section (demande Omar, plan en 4 phases avec validation) : hub `/coupe-du-monde/` (calendrier par tour + grille 48 équipes), `/matchs-du-jour/` (page « habitude »), **93 pages match** (`/match/portugal-vs-croatie-2-juillet-2026/`…, JSON-LD SportsEvent, heure locale visiteur en JS progressif, fallback heure de l'Est), **48 pages équipe** (SportsTeam). Style ESTÁDIO, consent+GA4, OG/Twitter/canonical/hreflang partout. Design doc : `docs/superpowers/specs/2026-07-02-coupe-du-monde-design.md`.
 - Données : adaptateur `scripts/lib/wc_data.py` — ESPN (déjà utilisée par le compteur, sans clé) par défaut ; **football-data.org devient prioritaire dès qu'Omar crée la clé gratuite** (secret `FOOTBALL_DATA_TOKEN`). Cache `public/coupe-du-monde/data.json` (jamais de page vide). Interdits respectés : aucun scraping, aucun lien stream.
