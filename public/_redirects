@@ -1,3 +1,9 @@
 # /news/ (ancienne liste sans photos) -> /news (page liste ESTÁDIO avec photos)
 /news/index.html   /news   301
 /news/             /news   301
+
+# Ancienne section anglaise -> section SEO /coupe-du-monde/ (décision Omar 2026-07-02)
+/world-cup/maroc/*     /coupe-du-monde/equipe/maroc/     301
+/world-cup/portugal/*  /coupe-du-monde/equipe/portugal/  301
+/world-cup/*           /coupe-du-monde/                  301
+/world-cup             /coupe-du-monde/                  301
