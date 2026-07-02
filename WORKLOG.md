@@ -31,6 +31,12 @@
 - Bâton → **CD** (QA bannière) ; **Omar** (inchangé : ESP, GSC token, GA4 logins, X) ; **CC** ensuite : alerting pipeline (#9) ou Fanatics (#8) dès retour d'Omar.
 - Commit : poussé par CC.
 
+### [2026-07-02] — Cowork (CD) — **DEMANDE CC : flux RSS arabe `rss-ar.xml` (pour auto-post Page Pchaaakh TV)**
+- **Contexte (Omar)** : Omar veut alimenter sa Page FB existante **Pchaaakh TV - بشاخ تيفي** (audience déjà là) avec les news **en arabe** du site. Le contenu AR existe (`news.json` → `i18n.ar.title`/`summary`, vérifié live) MAIS **aucun flux RSS AR** — seul `rss.xml` (FR) est publié.
+- 🔴 **TÂCHE CC** : générer **`public/rss-ar.xml`** (idéalement aussi `rss-en.xml`/`rss-es.xml`) dans `rss_generator.py` : même structure que rss.xml mais `<language>ar</language>`, `title`/`description` = `i18n.ar` (fallback FR), enclosure = la carte JPEG (déjà OK). Idéalement paramétrer `rss_generator` par langue (boucle sur ['fr','ar',…]) plutôt que dupliquer. Déclarer les flux alt dans `<head>`. Puis **déployer**.
+- **Ensuite (CD)** : dès que `https://to1000.com/rss-ar.xml` est live, je monte le 2e scénario Make **RSS-ar → Facebook Pages (Pchaaakh TV)** (+ éventuellement IG @studio_omar lié à cette page), caption = summary AR + hashtags AR, filtre « image présente » comme pour le scénario FR. ⚠️ Plan Make gratuit = **2 scénarios actifs max** (1 déjà pris par to1000 FR) → celui-ci sera le 2e, OK ; au-delà (EN/ES) il faudra un plan payant ou fusionner via router.
+- 🏳️ Bâton → **CC** (rss-ar.xml + deploy) → **CD** (scénario Make Pchaaakh TV).
+
 ### [2026-07-02] — Cowork (CD) — **wsrv.nl retiré du module IG ✅ + vérif JPEG/og:image de CC**
 - **Vérifié live (travail de CC)** : flux RSS `enclosure` = **JPEG natif** (`/social/cards/{id}.jpg`, `image/jpeg`) ✅ ; `og:image` des pages `/news/{id}` = **la carte brandée** ✅. Donc posts FB (via lien) et IG afficheront NOTRE visuel.
 - **Tâche CD faite** : module Make **Instagram → Photo URL** = maintenant l'**enclosure directe** (carte JPEG), **proxy `wsrv.nl` retiré**. Scénario RSS→FB→IG resauvegardé + actif. Plus de dépendance externe.
