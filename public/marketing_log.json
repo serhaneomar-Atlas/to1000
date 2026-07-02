@@ -1,4 +1,9 @@
 [
   { "date": "2026-06-26", "channel": "Refonte", "effort": "Mise en ligne de la refonte ESTÁDIO (hero, news, buts, menu mobile, drapeaux).", "impact": "" },
-  { "date": "2026-06-26", "channel": "SEO", "effort": "Prérendu des cartes news (contenu crawlable) + filtre football-only.", "impact": "" }
+  { "date": "2026-06-26", "channel": "SEO", "effort": "Prérendu des cartes news (contenu crawlable) + filtre football-only.", "impact": "" },
+  { "date": "2026-06-30", "channel": "Pipeline", "effort": "News fiabilisées : workflows découplés (publication rapide + enrichissement Gemini), flash-info 4 langues, fusion des doublons. Gemini en palier payant : 50 articles enrichis/run.", "impact": "Le site republie toutes les ~30 min sans échec" },
+  { "date": "2026-07-01", "channel": "Social", "effort": "Auto-post Make.com LIVE : RSS → Page Facebook To1000.com + Instagram @to1000com (pro), toutes les 15 min. Page FB créée avec avatar et bannière de marque.", "impact": "Chaque article part seul sur FB + IG" },
+  { "date": "2026-07-02", "channel": "Social", "effort": "Posts avec NOTRE visuel : og:image des pages articles = carte brandée, cartes générées en JPEG natif (exigence Instagram).", "impact": "Identité To1000 sur chaque post FB/IG" },
+  { "date": "2026-07-02", "channel": "Produit", "effort": "Compteur de buts réparé : détection automatique des buts CR7 via ESPN toutes les 5 min en fenêtre de match (le watcher était mort, compteur manuel). Alertes 1000e but réactivées. Page /goals réparée (script tronqué).", "impact": "Le cœur du site est enfin automatique — prêt pour Portugal–Croatie" },
+  { "date": "2026-07-02", "channel": "Monétisation", "effort": "Pages légales en prod (privacy / about / contact — prérequis AdSense), capture email « 1000e but » prête (dormante, attend le compte ESP), manifest PWA + RSS déclaré + sitemap nettoyé.", "impact": "Bloqueur AdSense n°1 levé ; reste la bannière cookies (CMP)" }
 ]

@@ -5,6 +5,25 @@
 
 ---
 
+### [2026-07-02 ~02:15 UTC] — Claude Code (WSL) — **PLAN P1/P2 (validé sur l'audit) + dashboard à jour**
+- Dashboard : `marketing_log.json` complété (7 jalons dont social auto-post, compteur réparé, pages légales) + `dashboard-data.json` régénéré. Rappel stratégique : **1000e but ≈ printemps 2027** → la CdM sert à CONSTRUIRE l'audience, la monétisation lourde vient au spike.
+- **P1 — CETTE SEMAINE (fenêtre CdM)**
+  1. 🔴 **CMP consentement cookies** (CC) : dernier bloqueur AdSense UE + GA4 tourne sans consentement (RGPD). CMP certifié IAB TCF requis pour AdSense — candidats gratuits à trancher : consentmanager free tier / CookieYes / Cookiebot (limite pages à vérifier). CC propose, Omar valide le bandeau.
+  2. **Compte ESP newsletter** (Omar, ~15 min — reco Buttondown ou MailerLite gratuit) → CC active la section « 1000e but » (2 lignes). Chaque jour de CdM sans capture = des emails perdus.
+  3. **Vérifier le 1er test réel du compteur** (CC) : Portugal–Croatie 02/07 23:00 UTC — le workflow */5 min doit créditer tout but CR7 seul. Moniteur posé.
+  4. **Posts FB/IG réels** (CD) : vérifier que les posts affichent la carte brandée ; retirer le proxy wsrv.nl du module IG (enclosure = JPEG natif désormais).
+  5. **GA4 → dashboard** (CD + Omar) : service account + 2 secrets GitHub (procédure déjà écrite, entrée du 01/07). Sans trafic réel, impossible de dimensionner la pub.
+  6. **Search Console** (Omar + CC) : récupérer le token de vérification (placeholder `REMPLACER_PAR_TON_TOKEN_GSC` dans index.html:20) — 2 396 URLs sans suivi d'indexation pendant la CdM.
+- **P1 — CE MOIS (juillet)**
+  7. **Candidature AdSense** dès le CMP posé (Omar crée le compte ; `ads.js` est prêt, activation = 2 variables). Approbation 2-4 sem → OK bien avant le 1000e.
+  8. **Affiliation Fanatics via Impact** (Omar postule, CC intègre) : partenaire retail officiel CdM, ~10 % maillots — seul revenu réaliste pendant le Mondial.
+  9. **Alerting pipeline** (CC) : notify si échec massif Gemini (dégradation silencieuse actuelle) ou 0 match Portugal détecté en fenêtre Mondial (slug fifa.world).
+  10. **Décisions Omar** : X/Twitter (API payante / Buffer / abandon) ; **concours Firebase** — l'implémenter ou le retirer des meta (il est annoncé mais n'existe pas = mensonger) ; sort du code Next.js non déployé (`app/`).
+  11. **Newsletter** : séquence de bienvenue + compte à rebours 1000 (CC, après l'ESP).
+- **P2 — POST-CdM → 1000e but (printemps 2027)** : SEO longue traîne (pages jalons CR7), self-host des polices (LCP), Mediavine Journey si ≥10k sessions/mois, média kit sponsors vers le but ~990, drop produit commémoratif au 1000e.
+- Bâton → **Omar** (ESP, GSC token, décisions #10, tâche Windows CR7GoalWatcher à désactiver) ; **CD** (wsrv.nl, GA4) ; **CC** (CMP en premier, puis #9/#11).
+- Commit : poussé par CC.
+
 ### [2026-07-02 ~02:00 UTC] — Claude Code (WSL) — **AUDIT COMPLET + P0 rentabilisation SHIPPÉS (6 commits, tout déployé)**
 - **Audit triple** (pipeline / site / stratégie, 3 agents) → verdict clé : **le 1000e but ≈ printemps 2027** (975 + ~0,9 but/match = ~28 matchs), PAS cette CdM. Donc CdM = fenêtre de **collecte d'audience**, monétisation lourde au moment du spike. Roadmap P0/P1/P2 en mémoire (`to1000-audit-monetisation-2026-07`).
 - 🔴 **Bug majeur corrigé — la chaîne de comptage des buts était 100 % morte** : `goal_watcher_v2.py` n'a JAMAIS été commité (stub + .bat + tâche Windows plantaient chaque minute → watcher.log 13 Mo d'erreurs) ET `update-cr7-goals.yml` lançait encore l'ANCIEN `update_stats.py` (API-Football). Aucun chemin d'incrément automatique de `goals` — le compteur ne bougeait que à la main. **Fix** : `update_stats_v2.sync_goals()` crédite les buts CR7 depuis ESPN (ledger `processed_goal_event_ids` + `goal_sync_baseline` DANS stats.json, exclusions tirs au but/CSC, garde FORCE_GOALS) ; workflow → v2, **toutes les 5 min** en fenêtre de match, concurrency ; statuts ESPN élargis (STATUS_FINAL_PEN etc. — crucial pour les matchs à élimination directe) ; 19 tests unitaires (`scripts/tests/`). Testé dry-run réel ESPN OK. **Portugal–Croatie ce soir 23:00 UTC = premier test live.**

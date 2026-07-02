@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T00:14:03.770337+00:00",
+  "generated_at": "2026-07-02T02:11:32.568632+00:00",
   "snapshot": {
     "date": "2026-07-02",
     "goals": 975,
@@ -9,7 +9,7 @@
     "news_sources": 13,
     "cr7_items": 1,
     "article_pages": 2383,
-    "sitemap_urls": 2382
+    "sitemap_urls": 2396
   },
   "deltas": {
     "goals": {
@@ -33,8 +33,8 @@
       "dir": "up"
     },
     "sitemap_urls": {
-      "abs": 3,
-      "pct": 0.1,
+      "abs": 17,
+      "pct": 0.7,
       "dir": "up"
     }
   },
@@ -87,7 +87,7 @@
       "news_items": 46,
       "news_sources": 13,
       "article_pages": 2383,
-      "sitemap_urls": 2382
+      "sitemap_urls": 2396
     }
   ],
   "traffic": {
@@ -97,7 +97,7 @@
   "seo": {
     "ga4": true,
     "search_console": false,
-    "sitemap_urls": 2382,
+    "sitemap_urls": 2396,
     "news_prerendered": true,
     "canonical_clean_urls": true,
     "robots_has_sitemap": true
@@ -108,19 +108,19 @@
       "value": 10
     },
     {
-      "label": "Le Monde — Sport",
-      "value": 7
-    },
-    {
       "label": "Africa Top Sports",
-      "value": 7
+      "value": 8
     },
     {
-      "label": "Hespress Sport",
-      "value": 5
+      "label": "Le Monde — Sport",
+      "value": 6
     },
     {
       "label": "Le Figaro Sport",
+      "value": 5
+    },
+    {
+      "label": "Hespress Sport",
       "value": 4
     },
     {
@@ -186,10 +186,40 @@
       "channel": "SEO",
       "effort": "Prérendu des cartes news (contenu crawlable) + filtre football-only.",
       "impact": ""
+    },
+    {
+      "date": "2026-06-30",
+      "channel": "Pipeline",
+      "effort": "News fiabilisées : workflows découplés (publication rapide + enrichissement Gemini), flash-info 4 langues, fusion des doublons. Gemini en palier payant : 50 articles enrichis/run.",
+      "impact": "Le site republie toutes les ~30 min sans échec"
+    },
+    {
+      "date": "2026-07-01",
+      "channel": "Social",
+      "effort": "Auto-post Make.com LIVE : RSS → Page Facebook To1000.com + Instagram @to1000com (pro), toutes les 15 min. Page FB créée avec avatar et bannière de marque.",
+      "impact": "Chaque article part seul sur FB + IG"
+    },
+    {
+      "date": "2026-07-02",
+      "channel": "Social",
+      "effort": "Posts avec NOTRE visuel : og:image des pages articles = carte brandée, cartes générées en JPEG natif (exigence Instagram).",
+      "impact": "Identité To1000 sur chaque post FB/IG"
+    },
+    {
+      "date": "2026-07-02",
+      "channel": "Produit",
+      "effort": "Compteur de buts réparé : détection automatique des buts CR7 via ESPN toutes les 5 min en fenêtre de match (le watcher était mort, compteur manuel). Alertes 1000e but réactivées. Page /goals réparée (script tronqué).",
+      "impact": "Le cœur du site est enfin automatique — prêt pour Portugal–Croatie"
+    },
+    {
+      "date": "2026-07-02",
+      "channel": "Monétisation",
+      "effort": "Pages légales en prod (privacy / about / contact — prérequis AdSense), capture email « 1000e but » prête (dormante, attend le compte ESP), manifest PWA + RSS déclaré + sitemap nettoyé.",
+      "impact": "Bloqueur AdSense n°1 levé ; reste la bannière cookies (CMP)"
     }
   ],
   "news_meta": {
-    "generated_at": "2026-07-02T00:14:01.109282Z",
+    "generated_at": "2026-07-02T02:06:43.727719Z",
     "tagline": "Le foot, droit au but.",
     "feeds_fetched": 19,
     "feeds_failed": 12,
