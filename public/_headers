@@ -70,8 +70,10 @@
   Cache-Control: public, max-age=2592000, immutable
 
 # consent.js : cache court — les règles de consentement doivent pouvoir être
-# corrigées sans attendre 30 jours (conformité RGPD/CNIL)
+# corrigées sans attendre 30 jours (conformité RGPD/CNIL). Le "!" détache la
+# valeur héritée de /*.js (Pages ADDITIONNE les règles, il ne les remplace pas).
 /consent.js
+  ! Cache-Control
   Cache-Control: public, max-age=3600
 
 # ─────────────────────────────────────────────────────────────────────────────
