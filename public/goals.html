@@ -612,6 +612,7 @@
   <footer>
     <p>Data: Transfermarkt · ESPN · FIFA · Wikipedia · Marca. Updated April 2026. Stats are representative — official records may vary slightly.</p>
     <p style="margin-top:0.6rem"><a href="./index.html">← Back to Countdown</a> &nbsp;|&nbsp; &copy; 2026 <a href="https://to1000.com">To1000.com</a></p>
+    <p style="margin-top:0.6rem"><a href="/about.html">About</a> &nbsp;|&nbsp; <a href="/privacy.html">Privacy</a> &nbsp;|&nbsp; <a href="/contact.html">Contact</a></p>
       <!-- TRADEMARK / FAIR USE DISCLAIMER -->
     <p style="max-width:720px;margin:1rem auto 0;padding:0 1rem;line-height:1.6;font-size:0.62rem;color:rgba(255,255,255,0.18);text-align:center">
       <strong style="color:rgba(255,255,255,0.28)">Independent fan site.</strong> Not affiliated with, endorsed by, or sponsored by Cristiano Ronaldo, CR7&trade; Brand Management, Al Nassr FC, the Portuguese Football Federation, or any other club, league, or organization. &ldquo;Cristiano Ronaldo&rdquo; and &ldquo;CR7&rdquo; are trademarks of their respective owners. All player names, club crests, photographs, and trademarks are the property of their respective owners and are used here strictly for editorial commentary, statistics, and news under the principles of fair use. Goal videos remain hosted by their original publishers; we link to them without re-hosting.
@@ -1260,4 +1261,90 @@
     // RTL support for Arabic
     const isAr = lang === 'ar';
     document.documentElement.setAttribute('dir', isAr ? 'rtl' : 'ltr');
-    document.documentEl
+    document.documentElement.setAttribute('lang', lang);
+    document.body.style.fontFamily = isAr ? "'Cairo', 'Hanken Grotesk', sans-serif" : "'Hanken Grotesk', sans-serif";
+    // Update nav buttons
+    document.querySelectorAll('.lang-btn').forEach(b => {
+      b.classList.toggle('active', b.dataset.lang === lang);
+    });
+    // Update all data-i18n elements
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      const val = t(key);
+      if (val) el.innerHTML = val;
+    });
+    // Update placeholders
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+      const key = el.getAttribute('data-i18n-placeholder');
+      const val = t(key);
+      if (val) el.placeholder = val;
+    });
+    // Update option texts
+    document.querySelectorAll('[data-i18n] option, option[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (key) el.textContent = t(key);
+    });
+    // Re-render table and stats (language-sensitive strings in JS templates)
+    applyFilters();
+    // setLang vient de reinjecter les chaines i18n (qui contiennent un nombre
+    // fige) — re-appliquer le total live par-dessus.
+    patchLiveCount(_liveGoalsCount);
+    // Save preference
+    try { localStorage.setItem('to1000_lang', lang); } catch(e) {}
+  }
+
+  // ─── LIVE GOAL COUNT ───────────────────────────────────────────────────────
+  // Met a jour les nombres "headline" visibles (titre, hero, nav) avec le total
+  // live. Ne touche PAS au tableau (qui reflete les fiches reellement presentes
+  // dans GOALS_INLINE_DATA) ni aux references "964 ... compilation" (video YT).
+  let _liveGoalsCount = LIVE_GOALS;
+
+  function updateDbGap() {
+    var el = document.getElementById('dbGapBanner');
+    if (!el || typeof ALL_GOALS === 'undefined') return;
+    var dbN = ALL_GOALS.length, liveN = _liveGoalsCount;
+    if (liveN > dbN) {
+      el.innerHTML = (t('db_gap') || '').replace('{from}', dbN + 1).replace('{to}', liveN).replace('{n}', liveN);
+      el.hidden = false;
+    } else { el.hidden = true; }
+  }
+  window.addEventListener('DOMContentLoaded', function(){ setTimeout(updateDbGap, 60); });
+  function patchLiveCount(n) {
+    if (!n || isNaN(n)) return;
+    _liveGoalsCount = n;
+    // <title>
+    document.title = document.title.replace(/All \d{3,4} Goals/, 'All ' + n + ' Goals');
+    // Paragraphe hero (data-i18n="hero_p") — remplace le 1er nombre 3-4 chiffres
+    const heroP = document.querySelector('[data-i18n="hero_p"]');
+    if (heroP) heroP.innerHTML = heroP.innerHTML.replace(/\d{3,4}/, n);
+    // Compteur nav ("968 goals") — si le tableau est deja charge, garder la
+    // valeur live comme reference headline.
+    const navCount = document.getElementById('navCount');
+    if (navCount) navCount.textContent = n + ' goals';
+    updateDbGap();
+  }
+
+  async function fetchLiveGoals() {
+    try {
+      const res = await fetch('/stats.json?_=' + Date.now(), { cache: 'no-store' });
+      if (!res.ok) return;
+      const data = await res.json();
+      const g = parseInt(data.goals, 10);
+      if (!isNaN(g)) patchLiveCount(g);
+    } catch (_) { /* silent — fallback statique LIVE_GOALS deja affiche */ }
+  }
+
+  // Load saved lang preference — setLang() updates buttons + data-i18n + applyFilters()
+  try {
+    const saved = localStorage.getItem('to1000_lang');
+    if (saved && TRANSLATIONS[saved]) { setLang(saved); } else { applyFilters(); }
+  } catch(e) { applyFilters(); }
+
+  // Applique le fallback statique immediatement (cas branche "else" sans
+  // setLang), puis va chercher le total live dans /stats.json.
+  patchLiveCount(LIVE_GOALS);
+  fetchLiveGoals();
+
+  </script>
+</body>
+</html>
