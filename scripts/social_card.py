@@ -92,9 +92,19 @@ def make_card(title, label="FOOTBALL", counter="975/1000", out_path="card.png",
     d.text((W - pad - d.textlength("to1000.com", font=f_lab), cy + 9),
            "to1000.com", font=f_lab, fill=MUTE)
 
-    Path(out_path).parent.mkdir(parents=True, exist_ok=True)
-    img.save(out_path, "PNG")
+    _save(img, out_path)
     return out_path
+
+
+def _save(img, out_path):
+    """Format selon l'extension. JPEG requis pour les cartes : Instagram
+    (auto-post Make) refuse le PNG — avant, un proxy wsrv.nl convertissait."""
+    out = Path(out_path)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    if out.suffix.lower() in (".jpg", ".jpeg"):
+        img.save(out, "JPEG", quality=88, optimize=True)
+    else:
+        img.save(out, "PNG")
 
 
 def make_banner(kind="twitter", out_path="banner.png"):
@@ -119,8 +129,7 @@ def make_banner(kind="twitter", out_path="banner.png"):
         d.text((W / 2, H * 0.72), "L'ACTU FOOT, DROIT AU BUT · CR7 VERS 1000 BUTS",
                font=f_sub, fill=MUTE, anchor="mm")
         d.rectangle([W / 2 - 120, H * 0.60, W / 2 + 120, H * 0.60 + 4], fill=GOLD)
-    Path(out_path).parent.mkdir(parents=True, exist_ok=True)
-    img.save(out_path, "PNG")
+    _save(img, out_path)
     return out_path
 
 

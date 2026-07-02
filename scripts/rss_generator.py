@@ -48,15 +48,18 @@ def card_url_for(item, counter, manifest):
     iid = item.get("id")
     if not title or not iid:
         return None
+    # JPEG natif depuis 2026-07-01 : Instagram (auto-post Make) refuse le PNG ;
+    # avant, la conversion passait par un proxy wsrv.nl. Les anciens .png restent
+    # en place pour les og:image déjà publiés.
     h = hashlib.sha256(f"{title}|{counter}".encode("utf-8")).hexdigest()[:10]
-    if manifest.get(iid) != h or not (CARDS_DIR / f"{iid}.png").exists():
+    if manifest.get(iid) != h or not (CARDS_DIR / f"{iid}.jpg").exists():
         try:
             make_card(title, _KIND_LABEL.get(item.get("kind"), "FOOTBALL"),
-                      counter, CARDS_DIR / f"{iid}.png")
+                      counter, CARDS_DIR / f"{iid}.jpg")
             manifest[iid] = h
         except Exception:
             return None
-    return f"{SITE}/social/cards/{iid}.png"
+    return f"{SITE}/social/cards/{iid}.jpg"
 
 
 def esc(s: str) -> str:
@@ -150,8 +153,7 @@ def main() -> int:
         # Image du post = NOTRE carte de marque (fallback : image source)
         card = card_url_for(it, counter, manifest)
         img = card or it.get("image_url", "")
-        itype = "image/png" if card else "image/jpeg"
-        encl = f'\n      <enclosure url="{esc(img)}" type="{itype}"/>' if img else ""
+        encl = f'\n      <enclosure url="{esc(img)}" type="image/jpeg"/>' if img else ""
         parts.append(
             f"""    <item>
       <title>{esc(title)}</title>

@@ -180,10 +180,13 @@ def render_article(item: dict, all_items: list | None = None) -> str:
 
     # OG/Twitter image : carte brandée (social_card.py, 1200x630) si elle existe,
     # pour que les auto-posts du LIEN (Make.com → Facebook) affichent NOTRE carte
-    # et pas l'image du journal source. Fallback : image de l'article, puis og-image.
+    # et pas l'image du journal source. JPEG d'abord (natif depuis 2026-07-01,
+    # exigence Instagram), .png legacy sinon. Fallback : image de l'article.
     item_id = item.get("id") or ""
-    card_file = PROJECT_DIR / "public" / "social" / "cards" / f"{item_id}.png"
-    if item_id and card_file.exists():
+    cards_dir = PROJECT_DIR / "public" / "social" / "cards"
+    if item_id and (cards_dir / f"{item_id}.jpg").exists():
+        og_img = f"{SITE}/social/cards/{item_id}.jpg"
+    elif item_id and (cards_dir / f"{item_id}.png").exists():
         og_img = f"{SITE}/social/cards/{item_id}.png"
     else:
         og_img = img or f"{SITE}/og-image.png"
