@@ -1,0 +1,82 @@
+name: ⚽ WC sync (Coupe du Monde 2026)
+
+# Synchronise /coupe-du-monde/ : 3 runs complets par jour (dont 04:10 UTC,
+# juste après minuit heure de l'Est, pour rafraîchir /matchs-du-jour/) +
+# toutes les 5 min pendant les fenêtres de matchs (early-exit --live-only si
+# aucun match en cours : coûte ~20 s de runner). Source : ESPN par défaut,
+# football-data.org prioritaire si le secret FOOTBALL_DATA_TOKEN existe.
+# Fallback : cache public/coupe-du-monde/data.json (jamais de page vide).
+
+on:
+  schedule:
+    - cron: '10 4 * * *'    # après minuit ET → nouveau « matchs du jour »
+    - cron: '10 8 * * *'
+    - cron: '10 13 * * *'
+    # Fenêtres live (matchs CdM 2026 : 15:00Z à ~04:00Z)
+    - cron: '*/5 15-23 * * *'
+    - cron: '*/5 0-3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wc-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Generate pages
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          # Les crons */5 passent en --live-only (early-exit hors fenêtre match)
+          case "$SCHEDULE" in
+            "*/5"*) python scripts/wc_pages.py --live-only ;;
+            *)      python scripts/wc_pages.py ;;
+          esac
+
+      - name: Regenerate sitemap
+        run: python scripts/sitemap_generator.py
+
+      - name: Commit & push if changed
+        id: commit
+        run: |
+          git config user.name  "wc-sync-bot"
+          git config user.email "wc-sync-bot@users.noreply.github.com"
+          git add public/coupe-du-monde/ public/sitemap.xml 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No change"
+          else
+            git commit -m "chore(cdm): sync matchs [$(date -u +%Y-%m-%dT%H:%M)Z]"
+            git pull --rebase origin main || true
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Les pushs faits avec GITHUB_TOKEN ne déclenchent pas le workflow
+      # « Deploy on push » → déploiement direct, comme stats-sync.
+      - name: Deploy to Cloudflare Pages
+        if: steps.commit.outputs.changed == 'true' && env.CLOUDFLARE_API_TOKEN != ''
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npx wrangler@latest pages deploy public/ \
+            --project-name to1000 \
+            --branch main \
+            --commit-dirty=true

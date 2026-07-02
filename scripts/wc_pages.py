@@ -11,7 +11,10 @@ Chaque page : title/description uniques, canonical, OG + Twitter Card, hreflang,
 JSON-LD (SportsEvent / SportsTeam), consent.js + GA4, heure de l'Est rendue
 serveur + conversion fuseau visiteur en JS progressif (pas de CSR).
 
-Usage :  python wc_pages.py [--offline]   (--offline = cache data.json seulement)
+Usage :  python wc_pages.py [--offline] [--live-only]
+  --offline    : régénère depuis le cache data.json sans appel API
+  --live-only  : sort immédiatement (code 0) si aucun match n'est dans sa
+                 fenêtre live (kickoff-20min → +3h30) — utilisé par le cron */5
 """
 from __future__ import annotations
 
@@ -23,8 +26,8 @@ from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent
 sys.path.insert(0, str(SCRIPT_DIR))
-from lib.wc_data import (ET, ROUND_ORDER, date_fr_et, fetch_matches, load_cache,
-                         round_label, time_fr_et)
+from lib.wc_data import (ET, ROUND_ORDER, date_fr_et, fetch_matches,
+                         is_live_window, load_cache, round_label, time_fr_et)
 from lib.wc_teams import TEAMS
 
 PROJECT_DIR = SCRIPT_DIR.parent
@@ -367,6 +370,11 @@ details{margin:8px 0}summary{cursor:pointer;font-family:Oswald,sans-serif;color:
 
 def main() -> int:
     offline = "--offline" in sys.argv
+    if "--live-only" in sys.argv:
+        cached = load_cache() or []
+        if not is_live_window(cached, datetime.now(timezone.utc)):
+            print("[wc] aucun match en fenêtre live — rien à faire")
+            return 0
     matches = (load_cache() if offline else None) or fetch_matches()
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "wc.css").write_text(CSS, encoding="utf-8")

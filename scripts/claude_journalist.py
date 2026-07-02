@@ -228,7 +228,7 @@ h1{{font-size:clamp(1.6rem,4.5vw,2.6rem);font-weight:900;line-height:1.2;margin:
 <body>
 <nav class="nav">
   <a class="logo" href="/">To<span>1000</span>.com</a>
-  <a href="/">Accueil</a><a href="/world-cup/">CDM 2026</a><a href="/world-cup/maroc/">🇲🇦 Maroc</a><a href="/world-cup/portugal/">🇵🇹 Portugal</a><a href="/goals.html">Compteur CR7</a><a href="/blog/">Blog</a>
+  <a href="/">Accueil</a><a href="/coupe-du-monde/">CDM 2026</a><a href="/coupe-du-monde/equipe/maroc/">🇲🇦 Maroc</a><a href="/coupe-du-monde/equipe/portugal/">🇵🇹 Portugal</a><a href="/goals.html">Compteur CR7</a><a href="/blog/">Blog</a>
 </nav>
 <article>
   <span class="kicker">{emoji} {h(kicker)}</span>
@@ -246,7 +246,7 @@ h1{{font-size:clamp(1.6rem,4.5vw,2.6rem);font-weight:900;line-height:1.2;margin:
     <strong>À propos de cette analyse</strong> — Cet article a été rédigé par notre système éditorial automatisé (Claude API) sur la base d'une dépêche externe sourcée ci-dessus. Toute information factuelle est susceptible d'évoluer. Pas d'affiliation officielle.
   </div>
 </article>
-<footer class="footer"><p>© 2026 To1000.com · <a href="/" style="color:#aaa">Accueil</a> · <a href="/world-cup/" style="color:#aaa">Hub CDM 2026</a></p></footer>
+<footer class="footer"><p>© 2026 To1000.com · <a href="/" style="color:#aaa">Accueil</a> · <a href="/coupe-du-monde/" style="color:#aaa">Hub CDM 2026</a></p></footer>
 </body>
 </html>
 """

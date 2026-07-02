@@ -165,6 +165,23 @@ def _enrich(matches: list[dict]) -> list[dict]:
     return matches
 
 
+def is_live_window(matches: list[dict], now: datetime) -> bool:
+    """Vrai si un match non terminé est entre kickoff-20 min et kickoff+3 h 30
+    (90' + prolongations + tirs au but). Le cron */5 n'agit que dans ce cas
+    pour économiser les minutes GitHub Actions hors matchs."""
+    from datetime import timedelta
+    for m in matches:
+        if m.get("state") == "finished" or not m.get("date_iso"):
+            continue
+        try:
+            ko = datetime.fromisoformat(m["date_iso"].replace("Z", "+00:00"))
+        except ValueError:
+            continue
+        if ko - timedelta(minutes=20) <= now <= ko + timedelta(hours=3, minutes=30):
+            return True
+    return False
+
+
 def load_cache() -> list[dict] | None:
     try:
         return json.loads(DATA_JSON.read_text(encoding="utf-8"))["matches"]

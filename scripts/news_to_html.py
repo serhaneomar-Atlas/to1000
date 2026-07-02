@@ -14,7 +14,7 @@ Format SEO complet :
 - OG + Twitter card
 - JSON-LD NewsArticle
 - Image hero si dispo dans l'item
-- Lien retour vers /world-cup/, /goals.html
+- Lien retour vers /coupe-du-monde/, /goals.html
 - Disclaimer fan site
 
 Usage:
@@ -139,11 +139,11 @@ def find_related(item: dict, all_items: list, n: int = 4) -> list:
     return [o for _, o in scored[:n]]
 
 GENERIC_RELATED = {
-    "cr7":  '<a href="/goals.html">📊 Compteur CR7 (975/1000)</a> · <a href="/news.html">📰 Toute l\'actu foot</a> · <a href="/world-cup/portugal/">🇵🇹 Portugal WC 2026</a>',
-    "wc":   '<a href="/world-cup/">🌍 Hub Coupe du Monde 2026</a> · <a href="/news.html">📰 News</a> · <a href="/world-cup/maroc/">🇲🇦 Maroc</a>',
-    "maroc":'<a href="/world-cup/maroc/">🇲🇦 Page Maroc WC</a> · <a href="/news.html">📰 News</a> · <a href="/world-cup/">Hub WC</a>',
-    "portugal":'<a href="/world-cup/portugal/">🇵🇹 Page Portugal WC</a> · <a href="/goals.html">Compteur CR7</a> · <a href="/news.html">📰 News</a>',
-    "foot": '<a href="/news.html">📰 Toute l\'actu foot</a> · <a href="/world-cup/">🌍 Hub WC 2026</a> · <a href="/goals.html">Compteur CR7</a>',
+    "cr7":  '<a href="/goals.html">📊 Compteur CR7 (975/1000)</a> · <a href="/news.html">📰 Toute l\'actu foot</a> · <a href="/coupe-du-monde/equipe/portugal/">🇵🇹 Portugal WC 2026</a>',
+    "wc":   '<a href="/coupe-du-monde/">🌍 Hub Coupe du Monde 2026</a> · <a href="/news.html">📰 News</a> · <a href="/coupe-du-monde/equipe/maroc/">🇲🇦 Maroc</a>',
+    "maroc":'<a href="/coupe-du-monde/equipe/maroc/">🇲🇦 Page Maroc WC</a> · <a href="/news.html">📰 News</a> · <a href="/coupe-du-monde/">Hub WC</a>',
+    "portugal":'<a href="/coupe-du-monde/equipe/portugal/">🇵🇹 Page Portugal WC</a> · <a href="/goals.html">Compteur CR7</a> · <a href="/news.html">📰 News</a>',
+    "foot": '<a href="/news.html">📰 Toute l\'actu foot</a> · <a href="/coupe-du-monde/">🌍 Hub WC 2026</a> · <a href="/goals.html">Compteur CR7</a>',
 }
 
 NEWS_INDEX_REDIRECT = (
@@ -395,9 +395,9 @@ h1 {{ font-size: clamp(1.6rem, 4.5vw, 2.6rem); font-weight: 900; line-height: 1.
   <a class="logo" href="/">To<span class="accent">1000</span>.com</a>
   <div class="links">
     <a href="/">Accueil</a>
-    <a href="/world-cup/">CDM 2026</a>
-    <a href="/world-cup/maroc/">🇲🇦 Maroc</a>
-    <a href="/world-cup/portugal/">🇵🇹 Portugal</a>
+    <a href="/coupe-du-monde/">CDM 2026</a>
+    <a href="/coupe-du-monde/equipe/maroc/">🇲🇦 Maroc</a>
+    <a href="/coupe-du-monde/equipe/portugal/">🇵🇹 Portugal</a>
     <a href="/goals.html">Compteur CR7</a>
   </div>
 </nav>
@@ -418,7 +418,7 @@ h1 {{ font-size: clamp(1.6rem, 4.5vw, 2.6rem); font-weight: 900; line-height: 1.
 </article>
 <footer class="footer">
   <p>To1000.com est un site de fans <strong>non officiel</strong>. Cet article est un résumé automatique d'une source externe, traduit et structuré pour l'indexation. Pour le contenu original, suivre le lien source ci-dessus.</p>
-  <p>© 2026 · <a href="/">Accueil</a> · <a href="/world-cup/">Hub WC</a> · <a href="/goals.html">Compteur CR7</a></p>
+  <p>© 2026 · <a href="/">Accueil</a> · <a href="/coupe-du-monde/">Hub WC</a> · <a href="/goals.html">Compteur CR7</a></p>
 </footer>
 </body>
 </html>
@@ -523,7 +523,7 @@ footer{{border-top:1px solid #1d2530;padding:2rem;text-align:center;font-size:0.
 <body>
 <nav class="nav">
   <a class="logo" href="/">To<span>1000</span>.com</a>
-  <a href="/">Accueil</a><a href="/world-cup/">CDM 2026</a><a href="/world-cup/maroc/">🇲🇦 Maroc</a><a href="/world-cup/portugal/">🇵🇹 Portugal</a><a href="/goals.html">Compteur CR7</a>
+  <a href="/">Accueil</a><a href="/coupe-du-monde/">CDM 2026</a><a href="/coupe-du-monde/equipe/maroc/">🇲🇦 Maroc</a><a href="/coupe-du-monde/equipe/portugal/">🇵🇹 Portugal</a><a href="/goals.html">Compteur CR7</a>
 </nav>
 <header>
   <h1>📰 Toutes les actus foot</h1>
@@ -532,7 +532,7 @@ footer{{border-top:1px solid #1d2530;padding:2rem;text-align:center;font-size:0.
 <div class="grid">
 {cards_html}
 </div>
-<footer><p>© 2026 To1000.com · Site de fans non officiel. <a href="/world-cup/" style="color:#aaa">CDM 2026</a></p></footer>
+<footer><p>© 2026 To1000.com · Site de fans non officiel. <a href="/coupe-du-monde/" style="color:#aaa">CDM 2026</a></p></footer>
 </body>
 </html>
 """

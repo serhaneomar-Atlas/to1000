@@ -26,10 +26,9 @@ SITE = "https://to1000.com"
 # Pages statiques principales — priorité 1.0 / 0.9
 HIGH_PRIORITY = [
     ("/",                          1.0, "daily"),
-    ("/world-cup/",                1.0, "hourly"),
-    ("/world-cup/maroc/",          0.95, "hourly"),
-    ("/world-cup/maroc/ar/",       0.95, "hourly"),
-    ("/world-cup/portugal/",       0.95, "hourly"),
+    # /world-cup/* : 301 vers /coupe-du-monde/ depuis 2026-07-02 (ne plus lister)
+    ("/coupe-du-monde/",           1.0, "hourly"),
+    ("/coupe-du-monde/matchs-du-jour/", 0.95, "hourly"),
     ("/goals.html",                0.9, "daily"),
     ("/blog/",                     0.8, "weekly"),
     ("/news/",                     0.85, "hourly"),
@@ -77,28 +76,31 @@ def collect_news() -> list[tuple[str, str]]:
     return out
 
 
+def collect_wc() -> list[tuple[str, str, float]]:
+    """Pages match (0.8) et équipe (0.7) de /coupe-du-monde/ (URLs répertoire)."""
+    out = []
+    for sub, prio in (("match", 0.8), ("equipe", 0.7)):
+        base = PUBLIC / "coupe-du-monde" / sub
+        if not base.exists():
+            continue
+        for p in sorted(base.glob("*/index.html")):
+            rel = "/" + p.parent.relative_to(PUBLIC).as_posix() + "/"
+            mtime = datetime.fromtimestamp(p.stat().st_mtime).strftime("%Y-%m-%d")
+            out.append((SITE + rel, mtime, prio))
+    return out
+
+
 def main():
     today = datetime.now().strftime("%Y-%m-%d")
     urls = []
 
     # 1. High-priority static pages
     for loc, prio, freq in HIGH_PRIORITY:
-        url = SITE + loc
-        alts = None
-        # Add hreflang for maroc pages
-        if loc == "/world-cup/maroc/":
-            alts = {
-                "fr": SITE + "/world-cup/maroc/",
-                "ar": SITE + "/world-cup/maroc/ar/",
-                "x-default": SITE + "/world-cup/maroc/",
-            }
-        elif loc == "/world-cup/maroc/ar/":
-            alts = {
-                "fr": SITE + "/world-cup/maroc/",
-                "ar": SITE + "/world-cup/maroc/ar/",
-                "x-default": SITE + "/world-cup/maroc/",
-            }
-        urls.append(fmt_url(url, today, freq, prio, alts))
+        urls.append(fmt_url(SITE + loc, today, freq, prio, None))
+
+    # 1bis. Section Coupe du Monde (pages match + équipe générées par wc_pages.py)
+    for url, mtime, prio in collect_wc():
+        urls.append(fmt_url(url, mtime, "daily", prio))
 
     # 2. Blog posts
     for url, mtime in collect_blog():

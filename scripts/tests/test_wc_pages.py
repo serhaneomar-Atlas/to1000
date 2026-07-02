@@ -69,3 +69,34 @@ class TestRounds(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestLiveWindow(unittest.TestCase):
+    """Fenêtre live : un match entre kickoff-20min et kickoff+3h30 → le cron */5 doit agir."""
+
+    def _m(self, date_iso, state="scheduled"):
+        return {"date_iso": date_iso, "state": state}
+
+    def test_pendant_un_match(self):
+        from datetime import datetime, timezone
+        from lib.wc_data import is_live_window
+        now = datetime(2026, 7, 2, 23, 40, tzinfo=timezone.utc)  # 40 min après kickoff
+        self.assertTrue(is_live_window([self._m("2026-07-02T23:00Z")], now))
+
+    def test_juste_avant_kickoff(self):
+        from datetime import datetime, timezone
+        from lib.wc_data import is_live_window
+        now = datetime(2026, 7, 2, 22, 45, tzinfo=timezone.utc)
+        self.assertTrue(is_live_window([self._m("2026-07-02T23:00Z")], now))
+
+    def test_hors_fenetre(self):
+        from datetime import datetime, timezone
+        from lib.wc_data import is_live_window
+        now = datetime(2026, 7, 2, 10, 0, tzinfo=timezone.utc)
+        self.assertFalse(is_live_window([self._m("2026-07-02T23:00Z")], now))
+
+    def test_match_deja_fini_ignore(self):
+        from datetime import datetime, timezone
+        from lib.wc_data import is_live_window
+        now = datetime(2026, 7, 2, 23, 40, tzinfo=timezone.utc)
+        self.assertFalse(is_live_window([self._m("2026-07-02T23:00Z", state="finished")], now))
