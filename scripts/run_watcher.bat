@@ -1,6 +1,10 @@
 @echo off
-REM Lance par Windows Task Scheduler — fréquence recommandée: 1 minute.
-REM Le script Python décide lui-même s'il agit (smart polling): action chaque
-REM minute pendant la fenêtre match (-30min à +2h30 du kickoff), sinon refresh
-REM léger 1x/h. Plus besoin de clé API-Football depuis la migration ESPN du 07/05/2026.
-python "C:\Users\serha\Desktop\To1000.com\to1000\scripts\goal_watcher_v2.py" >> "C:\Users\serha\Desktop\To1000.com\to1000\scripts\watcher.log" 2>&1
+REM [2026-07-01] OBSOLETE — la detection des buts tourne sur GitHub Actions
+REM (workflow update-cr7-goals.yml, toutes les 5 min en fenetre de match, via
+REM update_stats_v2.sync_goals). Ce .bat ne fait plus rien pour eviter que la
+REM tache planifiee "CR7GoalWatcher" ecrive un stats.json local divergent du
+REM remote (et remplisse watcher.log — 13 Mo d'erreurs avant ce fix).
+REM A FAIRE (Omar) : desactiver la tache planifiee, par ex. dans un cmd admin :
+REM   schtasks /Change /TN "CR7GoalWatcher" /DISABLE
+REM Pour un run manuel local : python scripts\goal_watcher.py
+exit /b 0

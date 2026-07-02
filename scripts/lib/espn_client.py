@@ -175,6 +175,18 @@ def _competition_to_summary(comp: dict[str, Any], status_obj: dict[str, Any], da
             return None
 
     state = (status_obj.get("type") or {}).get("name", "")
+    # Fix 2026-07-01 : phases à élimination directe de la Coupe du Monde.
+    # Un match décidé après prolongations/tirs au but porte un statut du type
+    # STATUS_FINAL_PEN / STATUS_FINAL_AET — l'égalité stricte sur FULL_TIME/FINAL
+    # laissait ces matchs "non terminés" et last_match ne se mettait jamais à jour.
+    finished = ("FULL_TIME" in state) or ("FINAL" in state)
+    in_progress = (not finished) and (
+        state in ("STATUS_IN_PROGRESS", "STATUS_END_PERIOD")
+        or "HALF" in state        # FIRST_HALF, SECOND_HALF, HALFTIME(_ET)
+        or "EXTRA" in state       # EXTRA_TIME
+        or "OVERTIME" in state
+        or "SHOOTOUT" in state
+    )
     return MatchSummary(
         event_id=str(comp.get("id", "")),
         date_iso=date_iso,
@@ -187,8 +199,8 @@ def _competition_to_summary(comp: dict[str, Any], status_obj: dict[str, Any], da
         score_away=_score(away),
         venue=(comp.get("venue") or {}).get("fullName", ""),
         status=state,
-        is_finished=(state in ("STATUS_FULL_TIME", "STATUS_FINAL")),
-        is_in_progress=state in ("STATUS_IN_PROGRESS", "STATUS_HALFTIME", "STATUS_FIRST_HALF", "STATUS_SECOND_HALF"),
+        is_finished=finished,
+        is_in_progress=in_progress,
         goals=[],
     )
 

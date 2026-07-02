@@ -9,10 +9,12 @@ UTILISATION
   FORCE_GOALS=972 python update_stats_v2.py    # override manuel du compteur
   python update_stats_v2.py --dry-run          # n'écrit pas
 
-Note : la mise à jour incrémentale du compteur 'goals' à chaque but est gérée
-par goal_watcher_v2.py (smart polling). Ce script-ci sert pour :
-  1. les sync manuelles (override FORCE_GOALS)
-  2. les workflows GitHub Actions périodiques pour rafraîchir last_match/next_match
+Depuis 2026-07-01, ce script gère AUSSI l'incrément automatique du compteur
+'goals' (sync_goals) : goal_watcher_v2.py, censé le faire, n'a jamais été
+commité — le compteur ne bougeait que par FORCE_GOALS manuel. Le workflow
+update-cr7-goals.yml (*/5 min en fenêtre de match) fournit le quasi temps réel,
+stats-sync.yml (quotidien) sert de filet. Le ledger anti-double-comptage
+(processed_goal_event_ids + goal_sync_baseline) vit dans stats.json.
 """
 
 from __future__ import annotations
@@ -28,7 +30,8 @@ SCRIPT_DIR = Path(__file__).parent
 sys.path.insert(0, str(SCRIPT_DIR))
 from lib.espn_client import (
     AL_NASSR_ID, CR7_TEAM_IDS, TARGET_GOALS,
-    find_last_match_cr7, find_next_match_cr7, get_match_summary,
+    find_last_match_cr7, find_next_match_cr7, find_team_match_today_cr7,
+    get_match_summary,
 )
 
 PROJECT_DIR = SCRIPT_DIR.parent
@@ -45,6 +48,79 @@ def load_stats() -> dict:
 def save_stats(stats: dict) -> None:
     with open(STATS_FILE, "w", encoding="utf-8") as f:
         json.dump(stats, f, indent=2, ensure_ascii=False)
+
+
+def select_new_cr7_goals(goals, processed_ids: set, match_date_iso: str, baseline_iso: str) -> list:
+    """Filtre les buts d'un match à créditer au compteur.
+
+    Garde-fous (fix 2026-07-01, remplace le goal_watcher_v2 jamais commité) :
+      - anti-doublon par event_id ESPN (ledger processed_goal_event_ids)
+      - baseline : un match antérieur à goal_sync_baseline est ignoré en bloc
+        (ses buts ont été comptés à la main avant l'activation de la sync)
+      - séance de tirs au but (period >= 5) : ne compte pas comme but officiel
+      - but contre son camp : exclu
+    """
+    if not match_date_iso or not baseline_iso or match_date_iso < baseline_iso:
+        return []
+    out = []
+    for g in goals:
+        if not g.is_cr7 or not g.event_id:
+            continue
+        if g.event_id in processed_ids:
+            continue
+        if g.period >= 5:
+            continue
+        if "own goal" in (g.raw_text or "").lower():
+            continue
+        out.append(g)
+    return out
+
+
+def sync_goals(stats: dict) -> bool:
+    """Crédite au compteur les nouveaux buts de CR7 détectés sur ESPN.
+
+    Regarde d'abord le match du jour (live ou fini) pour l'incrément quasi
+    temps réel via le workflow */10 min, sinon le dernier match terminé
+    (filet de sécurité du run quotidien). Le ledger vit DANS stats.json pour
+    être commité/déployé atomiquement avec le compteur.
+    """
+    baseline = stats.get("goal_sync_baseline")
+    if not baseline:
+        print("  ⚠ sync_goals désactivé : goal_sync_baseline absent de stats.json")
+        return False
+    detail = None
+    try:
+        detail = find_team_match_today_cr7()
+    except Exception as e:
+        print(f"  ⚠ sync_goals: fetch match du jour échoué: {e}")
+    if detail is None:
+        try:
+            last = find_last_match_cr7()
+            if last and last.event_id:
+                detail = get_match_summary(last.event_id, getattr(last, "league_slug", None) or "ksa.1")
+        except Exception as e:
+            print(f"  ⚠ sync_goals: fetch dernier match échoué: {e}")
+    if not detail or not (detail.is_finished or detail.is_in_progress):
+        return False
+
+    processed = list(stats.get("processed_goal_event_ids") or [])
+    new_goals = select_new_cr7_goals(detail.goals, set(processed), detail.date_iso, baseline)
+    if not new_goals:
+        return False
+
+    for g in new_goals:
+        stats["goals"] = stats.get("goals", 0) + 1
+        processed.append(g.event_id)
+        print(f"  ⚽ BUT CR7 #{stats['goals']} crédité ! {g.minute} vs "
+              f"{detail.away_team if str(detail.home_team_id) in CR7_TEAM_IDS else detail.home_team} "
+              f"(event {g.event_id})")
+    stats["remaining"] = TARGET_GOALS - stats["goals"]
+    stats["processed_goal_event_ids"] = processed[-100:]
+    is_home = str(detail.home_team_id) in CR7_TEAM_IDS
+    stats["last_goal_date"] = (detail.date_iso or "")[:10]
+    stats["last_goal_opponent"] = detail.away_team if is_home else detail.home_team
+    stats["last_goal_competition"] = detail.competition
+    return True
 
 
 def refresh_last_match(stats: dict) -> bool:
@@ -199,6 +275,25 @@ def main() -> int:
                 changed = True
         except ValueError:
             print(f"  ⚠ FORCE_GOALS invalide: {fg}")
+        else:
+            # Un override manuel intègre déjà les buts du match en cours/du jour :
+            # on marque leurs event_ids comme traités pour que sync_goals ne les
+            # recompte pas au passage suivant (double-comptage).
+            try:
+                today = find_team_match_today_cr7()
+                if today:
+                    processed = list(stats.get("processed_goal_event_ids") or [])
+                    for g in today.goals:
+                        if g.is_cr7 and g.event_id and g.event_id not in processed:
+                            processed.append(g.event_id)
+                    stats["processed_goal_event_ids"] = processed[-100:]
+            except Exception as e:
+                print(f"  ⚠ FORCE_GOALS: marquage des buts du jour échoué: {e}")
+
+    # Crédit automatique des nouveaux buts CR7 (remplace goal_watcher_v2, jamais commité)
+    if sync_goals(stats):
+        print("  goals synced from ESPN")
+        changed = True
 
     # Refresh last_match (peut surfacer un but loupé pour info)
     if refresh_last_match(stats):
