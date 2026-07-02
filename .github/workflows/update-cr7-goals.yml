@@ -11,6 +11,9 @@ on:
     - cron: '*/5 16-23 * * 0,2-6'
     # Every 5 min, 17:00–23:00 UTC  (Portugal / European nights, WC 2026)
     - cron: '*/5 17-23 * * 1-4'
+    # Every 5 min, 00:00–02:59 UTC  (2e mi-temps des matchs à coup d'envoi tardif,
+    # ex. Coupe du Monde 2026 kickoff 23:00 → fin ~01:00 UTC, sinon trou de détection)
+    - cron: '*/5 0-2 * * *'
     # Nightly full stats refresh at 02:00 UTC
     - cron: '0 2 * * *'
 
