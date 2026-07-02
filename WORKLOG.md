@@ -5,6 +5,44 @@
 
 ---
 
+### [2026-07-01] — Claude Code (WSL) — **→ CD : connecter GA4 au dashboard custom (service account) — demandé par Omar**
+- Contexte : Omar veut voir le TRAFIC dans son dashboard custom (to1000.com/dashboard.html). GA4 (mesure G-4V8Y6C38VN) est déjà installé + collecte. Il manque juste la « clé d'accès » (service account) pour que collect_metrics.py lise les données via l'API. Omar n'est pas à l'aise avec le technique → il a choisi « CD le fait pour moi ». collect_metrics.py supporte DÉJÀ GA4 (fetch_ga4) dès que les 2 secrets GitHub sont posés.
+- Diagnostic CC (runs 20:57 + 21:45) : le secret **`GA4_PROPERTY_ID` est VIDE** (log : « GA4_PROPERTY_ID: » sans valeur) → étape « GA4 non configuré ». C'est LE point bloquant.
+- **TÂCHE CD** (browser, Omar présent pour logins Google) :
+  1. **ID numérique de la propriété** : GA4 → Admin (roue) → *Paramètres de la propriété* → copier l'« ID de propriété » (un NOMBRE, ex. 123456789 — PAS le G-4V8Y6C38VN).
+  2. **Google Cloud Console** (même compte Google) : créer/choisir un projet → *API et services* → activer **Google Analytics Data API**.
+  3. **Service account** : IAM → Comptes de service → Créer → puis *Clés* → Ajouter une clé → **JSON** → télécharger le fichier.
+  4. **Accès** : GA4 → Admin → *Gestion de l'accès à la propriété* → ajouter l'e-mail du service account (…@….iam.gserviceaccount.com) en **Lecteur**.
+  5. **2 secrets GitHub** (repo to1000 → Settings → Secrets and variables → Actions → New repository secret) :
+     - `GA4_PROPERTY_ID` = le NOMBRE de l'étape 1.
+     - `GA4_SA_JSON` = TOUT le contenu du fichier JSON de l'étape 3.
+  ⚠️ Le JSON est un secret sensible → le poser directement dans GitHub Secrets, ne PAS le mettre dans ce bus ni ailleurs.
+- Après : relancer News sync (Actions → Run workflow) OU attendre le cron, puis prévenir CC → CC vérifie que dashboard-data.json passe en `traffic.connected: true` avec les vrais visiteurs.
+- Bâton → **CD** (setup GA4) + Omar (logins Google).
+- Commit : poussé par CC.
+
+### [2026-07-01] — Cowork (CD) — **Auto-post social Make : Facebook LIVE ✅ ; X bloqué ; IG à finir**
+- Fait (avec Omar présent pour les logins) :
+  1. **Compte Make.com créé** (gratuit, Google to1000com@gmail.com… en fait login via profil connecté ; org us2 `8238034`, plan Free : 1000 crédits/mois, 2 scénarios actifs max).
+  2. **Scénario « Integration RSS, Facebook Pages »** (`us2.make.com/2515198/scenarios/5548672`) :
+     - Trigger **RSS → Watch RSS feed items**, URL `https://to1000.com/rss.xml`, max 3 items/cycle, **« From now on »** (ne re-poste pas les 50 anciens articles).
+     - **Facebook Pages → Create a Post** : Page **To1000.com**, `Post caption` = champ **Description** du flux (emoji + résumé + hashtags), `Link` = **URL** de l'article (FB génère l'aperçu avec l'image OG).
+     - Planning **toutes les 15 min**, **scénario ACTIVÉ** (toggle ON).
+  3. **Page Facebook To1000.com CRÉÉE** : elle n'existait pas. Le profil FB connecté = **Omar Serhane (perso)**, qui ne gérait aucune page to1000 (seulement XYZ, Pchaaakh TV, + désactivées ozfoot/Un Marocain parle/Krimi). Créé la Page **To1000.com** (catégorie « Site Web d'actualités et de médias », bio + site web). C'est ce profil perso qui l'administre → connexion Make OK.
+- ⚠️ **Bloqueurs / à finir** :
+  - **X (Twitter)** : le connecteur natif Make est **DÉSACTIVÉ** (« DEACTIVATED » — X a fermé/rendu payante son API). Pas d'auto-post X via Make sans plan X payant + module HTTP/API custom. À trancher par Omar (payer X API, ou outil tiers type Buffer/IFTTT, ou laisser tomber X).
+  - **Instagram** : module Make « Instagram for Business » exige un **compte IG professionnel (Business/Créateur) lié à une Page FB**. L'IG d'Omar n'est **pas encore pro**. TODO Omar : passer @to1000com en pro + le lier à la Page **To1000.com** (qui existe maintenant), puis CD/Omar ajoute le module IG au même scénario.
+  - **Vérif post réel** : « From now on » ne poste pas d'ancien article → le **1er post partira au prochain nouvel item RSS** (pipeline GH Actions ~30 min). **CC : vérifier que le post apparaît bien sur la Page FB To1000.com** et affiner texte/hashtags si besoin.
+  - 🔴 **TODO CC (image des posts)** : le flux RSS `enclosure` = déjà **notre carte brandée** (`/social/cards/{id}.png`, vérifié live 20:57). MAIS Make poste le **lien** de l'article → Facebook prend le `og:image` de la page article, qui est **encore l'image source** (lemonde/lequipe). Résultat : posts FB avec image du journal, pas notre carte. **Fix (décidé avec Omar) : mettre `og:image` / `twitter:image` des pages `/news/{id}` = la carte `/social/cards/{id}.png`** (dans `news_to_html.py` / prerender), puis déployer. Ainsi l'aperçu de lien reste cliquable (trafic) ET affiche notre visuel. Config Make à garder telle quelle.
+  - ✅ **Assets de marque posés sur la Page FB** (avatar + couverture) par CD via navigateur. Astuce technique : la fenêtre Windows d'upload est impilotable, contournée en **injectant le fichier directement dans le `<input type=file>`** (find → file_upload sur le ref). Fiable, à réutiliser pour tout upload FB/IG.
+  - ➕ **Finitions marketing restantes (UI nouvelle Page FB trop instable pour l'auto ce jour — clics mal placés, contenu non chargé)** — à faire en 2 clics chacun par Omar (ou CD à réessayer) : (a) **URL de Page** `facebook.com/to1000com` (Paramètres → Nom d'utilisateur) ; (b) **bouton d'action** « Voir le site web » → to1000.com ; (c) **post d'accueil épinglé** (composer → texte + carte de marque → Publier → Épingler).
+- Friction notée : l'OAuth Facebook passe par une **fenêtre popup séparée** (hors onglet piloté) → plusieurs essais avant succès ; a fini par marcher, Page + connexion OK.
+- 🏳️ **BÂTON → Claude Code (CC)** :
+  1. 🔴 **og:image des posts** : mettre `og:image`/`twitter:image` des pages `/news/{id}` = la carte `/social/cards/{id}.png` (dans `news_to_html.py`/prerender), puis **déployer**. But : que les posts FB affichent NOTRE carte brandée tout en gardant le lien cliquable. Config Make à ne PAS toucher.
+  2. **Vérifier le 1er post FB réel** sur la Page To1000.com (part au prochain item RSS) + affiner texte/hashtags si besoin.
+- 🏳️ **BÂTON → Omar** : passer **Instagram @to1000com en pro** + le lier à la Page To1000.com (créée ce jour) → ensuite CD ajoute le module IG à Make ; **décision X** (API payante / Buffer / abandon, connecteur Make X désactivé).
+- Commit : rien à committer côté repo (config vit sur Make.com + réglages Page FB).
+
 ### [2026-07-01] — Claude Code (WSL) — **→ CD : configurer l'auto-post social (Make) — demandé par Omar**
 - Contexte : SEO + flux RSS + légendes sociales sont FAITS et en ligne (CC). Omar a choisi « CD configure Make pour moi » (il n'a pas de compte Make ; CD pilote le navigateur, Omar fait les logins OAuth).
 - **TÂCHE CD** : créer un compte **Make.com** (gratuit) et monter le scénario d'auto-publication :
