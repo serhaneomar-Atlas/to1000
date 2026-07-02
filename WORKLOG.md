@@ -5,6 +5,21 @@
 
 ---
 
+### [2026-07-02 ~02:45 UTC] — Claude Code (WSL) — **CMP LIVE : bannière cookies + Consent Mode v2 sur les 2 398 pages**
+- **P1-1 fait.** `public/consent.js` first-party : bannière FR/EN/ES/AR (RTL ar, style ESTÁDIO, Accepter/Refuser à poids égal + lien /privacy), **Google Consent Mode v2** — défauts `denied` poussés dans dataLayer AVANT le loader gtag → **GA4 ne dépose plus AUCUN cookie sans consentement** (pings cookieless seulement). Choix stocké 13 mois (CNIL), bouton « 🍪 Cookies » permanent pour changer d'avis (`window.to1000Consent.open()`).
+- **Injection en masse** : `scripts/add_consent_snippet.py` (idempotent, testé) → 2 398 pages, y compris les archives news. Templates `news_to_html.py` génèrent le tag nativement. `_headers` : cache court (1 h) pour consent.js. `privacy.html` §3 mise à jour (bannière + retrait). 23 tests unitaires verts au total.
+- **Conformité** : RGPD/CNIL OK pour GA4. Les signaux ad_storage/ad_user_data/ad_personalization sont posés → prêts pour AdSense. **À la création du compte AdSense : basculer vers le CMP certifié Google (« Privacy & messaging »)** — obligatoire pour SERVIR des pubs en UE (certification IAB TCF) ; consent.js reste le fallback/les défauts.
+- **→ CD : QA visuelle de la bannière** (desktop+mobile ≤390px, les 4 langues dont AR/RTL, accepter → recharger → bouton 🍪, refuser → vérifier dans DevTools qu'AUCUN cookie `_ga*` n'apparaît, accepter → `_ga` apparaît).
+- Bâton → **CD** (QA bannière) ; **Omar** (inchangé : ESP, GSC token, GA4 logins, X) ; **CC** ensuite : alerting pipeline (#9) ou Fanatics (#8) dès retour d'Omar.
+- Commit : poussé par CC.
+
+### [2026-07-02] — Cowork (CD) — **wsrv.nl retiré du module IG ✅ + vérif JPEG/og:image de CC**
+- **Vérifié live (travail de CC)** : flux RSS `enclosure` = **JPEG natif** (`/social/cards/{id}.jpg`, `image/jpeg`) ✅ ; `og:image` des pages `/news/{id}` = **la carte brandée** ✅. Donc posts FB (via lien) et IG afficheront NOTRE visuel.
+- **Tâche CD faite** : module Make **Instagram → Photo URL** = maintenant l'**enclosure directe** (carte JPEG), **proxy `wsrv.nl` retiré**. Scénario RSS→FB→IG resauvegardé + actif. Plus de dépendance externe.
+- **Reste CD (en attente Omar)** : **GA4 service account + 2 secrets GitHub** — nécessite les logins Google d'Omar + Omar colle lui-même la clé JSON (je ne saisis pas de secret). À faire en session dédiée quand Omar dispo.
+- **Vérif post réel FB/IG** : config OK ; le 1er post réel part au prochain item RSS — à confirmer visuellement (CC a un moniteur).
+- 🏳️ Bâton → **CC** (P1 : CMP, etc.) ; **Omar** (GA4 logins, X, finitions Page FB, ESP, GSC token).
+
 ### [2026-07-02 ~02:15 UTC] — Claude Code (WSL) — **PLAN P1/P2 (validé sur l'audit) + dashboard à jour**
 - Dashboard : `marketing_log.json` complété (7 jalons dont social auto-post, compteur réparé, pages légales) + `dashboard-data.json` régénéré. Rappel stratégique : **1000e but ≈ printemps 2027** → la CdM sert à CONSTRUIRE l'audience, la monétisation lourde vient au spike.
 - **P1 — CETTE SEMAINE (fenêtre CdM)**

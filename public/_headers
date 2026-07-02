@@ -69,6 +69,11 @@
 /*.js
   Cache-Control: public, max-age=2592000, immutable
 
+# consent.js : cache court — les règles de consentement doivent pouvoir être
+# corrigées sans attendre 30 jours (conformité RGPD/CNIL)
+/consent.js
+  Cache-Control: public, max-age=3600
+
 # ─────────────────────────────────────────────────────────────────────────────
 #  Admin : pas de cache + pas d'indexation
 # ─────────────────────────────────────────────────────────────────────────────

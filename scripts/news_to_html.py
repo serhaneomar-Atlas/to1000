@@ -291,6 +291,7 @@ def render_article(item: dict, all_items: list | None = None) -> str:
     return f"""<!DOCTYPE html>
 <html lang="fr">
 <head>
+<script src="/consent.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id={GA}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -489,6 +490,7 @@ def render_index(items: list[dict]) -> str:
     return f"""<!DOCTYPE html>
 <html lang="fr">
 <head>
+<script src="/consent.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id={GA}"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}};gtag('js',new Date());gtag('config','{GA}');</script>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
