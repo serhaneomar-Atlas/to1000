@@ -121,12 +121,66 @@ def hashtags(item: dict) -> str:
     return " ".join("#" + t for t in tags)
 
 
-def social_caption(item: dict) -> str:
+# ─── Multilingue (fix 2026-07-02, demande WORKLOG : Page FB arabe Pchaaakh TV) ──
+# rss.xml (FR) garde son URL historique — le scénario Make to1000 y est branché.
+FEEDS = {
+    "fr": {"file": "rss.xml",    "language": "fr",
+           "title": "To1000.com — Actu football",
+           "desc": "L'actu foot, droit au but. Le compteur de CR7 vers 1000 buts "
+                   "+ l'actu des grands clubs, en bref."},
+    "ar": {"file": "rss-ar.xml", "language": "ar",
+           "title": "To1000.com — أخبار كرة القدم",
+           "desc": "أخبار الكرة مباشرة إلى الهدف: عدّاد رونالدو نحو الهدف 1000 "
+                   "وأهم أخبار الأندية الكبرى، باختصار."},
+    "en": {"file": "rss-en.xml", "language": "en",
+           "title": "To1000.com — Football News",
+           "desc": "Football news, straight to the goal: CR7's countdown to 1000 "
+                   "career goals + top clubs news, in brief."},
+    "es": {"file": "rss-es.xml", "language": "es",
+           "title": "To1000.com — Noticias de fútbol",
+           "desc": "El fútbol, directo al gol: la cuenta atrás de CR7 hacia los 1000 "
+                   "goles + la actualidad de los grandes clubes, en breve."},
+}
+
+# Hashtags arabes par thème (banque du kit MARKETING_AR.md) — l'extraction
+# d'entités de hashtags() est latine, inutilisable sur un titre arabe.
+_AR_TAGS = {
+    "cr7":      "#رونالدو #CR7 #هدف_1000",
+    "wc":       "#كأس_العالم_2026 #مونديال_2026",
+    "maroc":    "#المغرب #أسود_الأطلس #كأس_العالم_2026",
+    "portugal": "#البرتغال #رونالدو #كأس_العالم_2026",
+    "foot":     "#كرة_القدم #أخبار_الكرة",
+}
+
+
+_ARABIC_RE = re.compile(r"[؀-ۿ]")
+
+
+def has_arabic(text: str) -> bool:
+    """Vrai si le texte contient de l'écriture arabe. Nécessaire car le pipeline
+    stocke le texte SOURCE en passthrough dans i18n.ar tant que l'enrichissement
+    Gemini n'est pas passé — le flux AR ne doit publier que du vrai arabe."""
+    return bool(_ARABIC_RE.search(text or ""))
+
+
+def tr(item: dict, lang: str, field: str) -> str:
+    """Champ traduit avec cascade : langue demandée → FR → texte source."""
+    i18n = item.get("i18n", {}) or {}
+    v = (i18n.get(lang) or {}).get(field)
+    if not v and lang != "fr":
+        v = (i18n.get("fr") or {}).get(field)
+    return v or item.get(f"{field}_fr") or item.get(field, "")
+
+
+def social_caption(item: dict, lang: str = "fr") -> str:
     """Légende prête à poster : hook emoji + brève flash-info + hashtags."""
-    fr = (item.get("i18n", {}).get("fr", {}) or {})
-    summary = fr.get("summary") or item.get("summary", "")
+    summary = tr(item, lang, "summary")
     emoji = "🔥" if item.get("kind") == "cr7" else "⚽"
-    return f"{emoji} {summary}\n\n{hashtags(item)}"
+    if lang == "ar":
+        tags = _AR_TAGS.get(item.get("kind"), _AR_TAGS["foot"]) + " #To1000"
+    else:
+        tags = hashtags(item)
+    return f"{emoji} {summary}\n\n{tags}"
 
 
 def main() -> int:
@@ -144,44 +198,49 @@ def main() -> int:
             manifest = json.loads(_MANIFEST.read_text(encoding="utf-8"))
         except Exception:
             manifest = {}
-    parts = []
-    for it in items:
-        fr = (it.get("i18n", {}).get("fr", {}) or {})
-        title = fr.get("title") or it.get("title", "")
-        summary = fr.get("summary") or it.get("summary", "")
-        link = f"{SITE}/news/{it.get('id')}"
-        # Image du post = NOTRE carte de marque (fallback : image source)
-        card = card_url_for(it, counter, manifest)
-        img = card or it.get("image_url", "")
-        encl = f'\n      <enclosure url="{esc(img)}" type="image/jpeg"/>' if img else ""
-        parts.append(
-            f"""    <item>
-      <title>{esc(title)}</title>
+    # La carte de marque est générée une fois (manifest partagé) et réutilisée
+    # par les 4 flux — image identique quelle que soit la langue du post.
+    cards = {it.get("id"): card_url_for(it, counter, manifest) for it in items}
+
+    for lang, feed in FEEDS.items():
+        parts = []
+        for it in items:
+            # AR : n'inclure que les items réellement traduits (le passthrough
+            # laisse le texte source — poster de l'espagnol sur une page arabe, non).
+            if lang == "ar" and not has_arabic(tr(it, "ar", "title")):
+                continue
+            link = f"{SITE}/news/{it.get('id')}"
+            img = cards.get(it.get("id")) or it.get("image_url", "")
+            encl = f'\n      <enclosure url="{esc(img)}" type="image/jpeg"/>' if img else ""
+            parts.append(
+                f"""    <item>
+      <title>{esc(tr(it, lang, "title"))}</title>
       <link>{esc(link)}</link>
       <guid isPermaLink="true">{esc(link)}</guid>
       <pubDate>{rfc822(it.get('published_at', ''))}</pubDate>
-      <description>{esc(social_caption(it))}</description>{encl}
+      <description>{esc(social_caption(it, lang))}</description>{encl}
     </item>"""
+            )
+        rss = (
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n'
+            "  <channel>\n"
+            f"    <title>{esc(feed['title'])}</title>\n"
+            f"    <link>{SITE}</link>\n"
+            f'    <atom:link href="{SITE}/{feed["file"]}" rel="self" type="application/rss+xml"/>\n'
+            f"    <description>{esc(feed['desc'])}</description>\n"
+            f"    <language>{feed['language']}</language>\n"
+            f"    <lastBuildDate>{now}</lastBuildDate>\n"
+            + "\n".join(parts)
+            + "\n  </channel>\n</rss>\n"
         )
-    rss = (
-        '<?xml version="1.0" encoding="UTF-8"?>\n'
-        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n'
-        "  <channel>\n"
-        "    <title>To1000.com — Actu football</title>\n"
-        f"    <link>{SITE}</link>\n"
-        f'    <atom:link href="{SITE}/rss.xml" rel="self" type="application/rss+xml"/>\n'
-        "    <description>L'actu foot, droit au but. Le compteur de CR7 vers 1000 buts "
-        "+ l'actu des grands clubs, en bref.</description>\n"
-        "    <language>fr</language>\n"
-        f"    <lastBuildDate>{now}</lastBuildDate>\n"
-        + "\n".join(parts)
-        + "\n  </channel>\n</rss>\n"
-    )
-    (PUB / "rss.xml").write_text(rss, encoding="utf-8")
+        (PUB / feed["file"]).write_text(rss, encoding="utf-8")
+
     if _CARDS_OK and manifest:
         CARDS_DIR.mkdir(parents=True, exist_ok=True)
         _MANIFEST.write_text(json.dumps(manifest), encoding="utf-8")
-    print(f"[rss] rss.xml écrit ({len(items)} items · cartes de marque: {'oui' if _CARDS_OK else 'non'})")
+    print(f"[rss] {len(FEEDS)} flux écrits (rss.xml + ar/en/es · {len(items)} items · "
+          f"cartes de marque: {'oui' if _CARDS_OK else 'non'})")
     return 0
 
 
