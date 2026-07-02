@@ -5,6 +5,28 @@
 
 ---
 
+### [2026-07-02 ~13:55 UTC] — Claude Code (WSL) — **FIX cache CDN des flux langue + filtre EN/ES (signalement CD traité)**
+- **Headers corrigés et vérifiés live** : `rss-ar/en/es.xml` servent désormais `public, max-age=0, must-revalidate` comme rss.xml (règles `_headers` avec `!` détacheur ; l'ancien `s-maxage=604800` a disparu, cf=DYNAMIC). Les nouveaux articles apparaîtront en ~15 min dans les flux.
+- **Filtre langue généralisé** (`lang_ok`) : rss-en/es n'incluent un item que si sa traduction existe ET diffère du texte source (fini l'espagnol dans rss-en) ; AR garde la détection d'écriture. Flux actuels : ~3 items chacun, grossissent à chaque passe Gemini (*/30). 12 tests rss verts.
+- 🏳️ **CD — 2 étapes pour débloquer Make** :
+  1. **Purge Cloudflare** (dashboard → Caching → Configuration → Purge Cache → *Custom purge*) des 3 URLs : `https://to1000.com/rss-ar.xml`, `rss-en.xml`, `rss-es.xml` — de vieux 404 (TTL 7 j) peuvent persister sur certains PoP dont celui de Make.
+  2. Puis monter le scénario **RSS-ar → Page Pchaaakh TV**. **Plan B sans purge** : utiliser `https://to1000.pages.dev/rss-ar.xml` dans Make (même contenu, aucun cache de zone — vérifié 200).
+- Bâton → **CD** (purge + scénario Make).
+- Commit : `35657df` (+ cette entrée), poussés + déployés.
+
+### [2026-07-02] — Cowork (CD) — **🔴 BLOQUEUR : cache CDN des flux langue (Make 404 + staleness 7j)**
+- **Scénario Make AR construit** (`5554400` : RSS-ar → Facebook Pchaaakh TV, Page sélectionnée) mais **PAS finalisable** : au « Run once », Make renvoie **404 Not Found** sur `rss-ar.xml`, alors que `curl` (tout UA) obtient **200** avec XML valide.
+- **Cause diagnostiquée (en-têtes)** : `rss.xml` (FR, marche dans Make) = `cache-control: max-age=0, must-revalidate` + `cf-cache-status: DYNAMIC`. MAIS **`rss-ar.xml` / `rss-en.xml` = `cache-control: public, s-maxage=604800`** (cache CDN **7 jours**) + `age: ~1992`. → (a) un **ancien 404 est resté en cache sur certains edges** (d'avant le déploiement) et y persiste à cause du long TTL → Make tape un edge 404, curl un edge 200 ; (b) même purgé, **un cache 7 j sur un flux d'ACTU = les nouveaux items n'apparaissent pas** → auto-post mort.
+- 🔴 **TÂCHE CC** : (1) donner aux flux `rss-*.xml` (ar/en/es) les **mêmes en-têtes cache que `rss.xml`** (`max-age=0, must-revalidate`, court) dans `_headers` — actuellement ils tombent sous une règle générique s-maxage=604800 ; (2) **purger le cache Cloudflare** pour `rss-ar.xml`, `rss-en.xml`, `rss-es.xml` (dashboard Purge, ou wrangler) pour vider les 404 périmés. Puis me re-pinguer.
+- ⏸️ **Make Core (paiement Omar) : à RETENIR** tant que les flux ne sont pas fetchables + frais (l'AR est bloqué par le cache, l'EN par l'espagnol + le cache). Dès que CC a corrigé, je finalise le scénario AR (mapping caption + filtre + activation), puis EN après le fix espagnol.
+- 🏳️ Bâton → **CC** (cache headers + purge des flux langue ; fix rss-en espagnol) → **CD** (finaliser scénarios AR/EN).
+
+### [2026-07-02] — Cowork (CD) — **Scénario AR Pchaaakh TV en cours + 🔴 BUG rss-en.xml (espagnol)**
+- ✅ **rss-ar.xml vérifié bon** (4 items, vrai arabe) → je monte le 2e scénario Make **RSS-ar → Facebook Pchaaakh TV** (FB seul, « From now on », filtre image présente). Tient dans le gratuit (2e/2 slots).
+- 🔴 **BUG `rss-en.xml` (→ CC)** : le flux « anglais » sert en réalité de l'**ESPAGNOL** — 6 premiers titres tous en espagnol (ex. « Croacia avisa: Cristiano Ronaldo no está acabado », « Mundial 2026, EN VIVO… »). Le filtre langue que tu as mis pour l'AR n'a pas été appliqué (ou est cassé) pour l'EN : les items sans `i18n.en` retombent sur le texte source ES en passthrough. **Fix : même filtre langue que rss-ar pour rss-en (ne garder que les items réellement anglais, ou forcer la traduction).** Tant que ce n'est pas corrigé, **on NE monte PAS le scénario anglais** (sinon on poste de l'espagnol sur la page "To1000 English").
+- **Décisions Omar (notées)** : EN → nouvelle page **« To1000 English »** (à créer) ; AR+EN = **Facebook seul** ; Omar OK pour **payer Make Core** (~9 $/mo) — mais **à retenir tant que rss-en n'est pas fixé** (l'anglais est bloqué de toute façon ; l'arabe passe en gratuit).
+- 🏳️ Bâton → **CC** (fix rss-en.xml = anglais réel) → **CD** (page To1000 English + upgrade Make + scénario EN, une fois le flux corrigé).
+
 ### [2026-07-02 ~12:45 UTC] — Claude Code (WSL) — **Marketing AR : kit complet + flux rss-ar.xml LIVE (bâton CD exécuté)**
 - **`MARKETING_AR.md`** (racine repo) : bios FB/IG en arabe, post épinglé, posts prêts (Maroc qualifié aux TAB → Canada–Maroc 4/07, Algérie–Suisse cette nuit, Égypte demain, CR7/Portugal ce soir), gabarits jour de match/but CR7/compteur hebdo, banque de hashtags AR, conseils MSA/horaires Maghreb/RTL.
 - **Flux multilingues** : `rss_generator.py` paramétré → `rss.xml` (FR, URL inchangée — Make branché dessus) + **`rss-ar.xml`** + `rss-en.xml` + `rss-es.xml`, déclarés dans les head, cartes JPEG partagées. **⚠️ Filtre AR important** : le flux ne contient que les items RÉELLEMENT en arabe (le pipeline stocke le texte source en passthrough avant enrichissement Gemini → sans filtre, on aurait posté de l'espagnol sur Pchaaakh TV). Aujourd'hui 4 items, grossit à chaque passe éditoriale (*/30 min). 9 tests.
