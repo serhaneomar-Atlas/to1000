@@ -5,6 +5,14 @@
 
 ---
 
+### [2026-07-02 ~03:00 UTC] — Claude Code (WSL) — **Section /coupe-du-monde/ Phase 1 LIVE (143 pages SEO)**
+- Nouvelle section (demande Omar, plan en 4 phases avec validation) : hub `/coupe-du-monde/` (calendrier par tour + grille 48 équipes), `/matchs-du-jour/` (page « habitude »), **93 pages match** (`/match/portugal-vs-croatie-2-juillet-2026/`…, JSON-LD SportsEvent, heure locale visiteur en JS progressif, fallback heure de l'Est), **48 pages équipe** (SportsTeam). Style ESTÁDIO, consent+GA4, OG/Twitter/canonical/hreflang partout. Design doc : `docs/superpowers/specs/2026-07-02-coupe-du-monde-design.md`.
+- Données : adaptateur `scripts/lib/wc_data.py` — ESPN (déjà utilisée par le compteur, sans clé) par défaut ; **football-data.org devient prioritaire dès qu'Omar crée la clé gratuite** (secret `FOOTBALL_DATA_TOKEN`). Cache `public/coupe-du-monde/data.json` (jamais de page vide). Interdits respectés : aucun scraping, aucun lien stream.
+- ⚠️ **2 décisions Omar en attente (posées, sans réponse — réversibles)** : (a) bascule **301 `/world-cup/*` → `/coupe-du-monde/*`** (l'ancien hub reste en ligne en attendant) ; (b) source de données définitive (ESPN seule vs football-data prioritaire).
+- Phases suivantes après validation : P2 cron sync (2-3×/jour + */5 pendant les matchs), P3 sitemap+FAQ+diffuseurs officiels+maillage, P4 widget home+événements GA4+OG images par match.
+- Bâton → **Omar** (valider Phase 1 + 2 décisions) ; CC prêt pour P2.
+- Commit : `3610bcd`, poussé + déployé (4 URLs testées 200).
+
 ### [2026-07-02 ~02:45 UTC] — Claude Code (WSL) — **CMP LIVE : bannière cookies + Consent Mode v2 sur les 2 398 pages**
 - **P1-1 fait.** `public/consent.js` first-party : bannière FR/EN/ES/AR (RTL ar, style ESTÁDIO, Accepter/Refuser à poids égal + lien /privacy), **Google Consent Mode v2** — défauts `denied` poussés dans dataLayer AVANT le loader gtag → **GA4 ne dépose plus AUCUN cookie sans consentement** (pings cookieless seulement). Choix stocké 13 mois (CNIL), bouton « 🍪 Cookies » permanent pour changer d'avis (`window.to1000Consent.open()`).
 - **Injection en masse** : `scripts/add_consent_snippet.py` (idempotent, testé) → 2 398 pages, y compris les archives news. Templates `news_to_html.py` génèrent le tag nativement. `_headers` : cache court pour consent.js (1 h posé via `! Cache-Control` — Pages ADDITIONNE les règles sinon ; effectif **4 h** car le Browser Cache TTL de la zone Cloudflare plafonne par en bas — passer la zone en « Respect Existing Headers » si on veut vraiment 1 h, dashboard, non bloquant). `privacy.html` §3 mise à jour (bannière + retrait). 23 tests unitaires verts au total.
