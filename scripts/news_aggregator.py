@@ -178,6 +178,25 @@ def entities(text: str) -> set:
     return ents
 
 
+def load_custom_items(path=None) -> list:
+    """Items éditoriaux MAISON (rédaction To1000) injectés dans le feed à chaque
+    build — scripts/custom_news.json. Même schéma que les items news.json
+    (id, kind, published_at, i18n 4 langues…) + champ 'expires_at' (ISO, UTC)
+    après lequel l'item sort du feed. Survit aux régénérations du pipeline,
+    alimente pages articles, cartes sociales, flux RSS → auto-post Make FB/IG.
+    Cas d'usage : duels/avant-matchs de la rédaction, annonce du 1000e but."""
+    import json as _json
+    from pathlib import Path as _P
+    p = _P(path) if path else _P(__file__).parent / "custom_news.json"
+    try:
+        raw = _json.loads(p.read_text(encoding="utf-8"))
+    except Exception:
+        return []
+    now = datetime.now(timezone.utc).isoformat()
+    return [it for it in raw
+            if it.get("id") and (it.get("expires_at") or "9999") > now]
+
+
 def recency_sort_key(it: dict) -> tuple:
     """Clé de tri du feed : fraîcheur d'abord (ISO 8601 trie lexicographiquement),
     score d'importance en départage. Fix 2026-07-02 (demande Omar) — l'ancien
@@ -768,6 +787,12 @@ def main() -> int:
 
     # Tri : les plus RÉCENTS d'abord (fix 2026-07-02, demande Omar — « ça
     # s'appelle des nouvelles »). L'ancien tri CR7/score reléguait le frais.
+    # Items éditoriaux maison (rédaction) — injectés avant tri/cap
+    seen_ids = {it.get("id") for it in final_items}
+    customs = [c for c in load_custom_items() if c["id"] not in seen_ids]
+    if customs:
+        final_items.extend(customs)
+        log(f"Custom items injectés: {len(customs)}", verbose)
     final_items.sort(key=recency_sort_key, reverse=True)
     final_items = final_items[:MAX_ITEMS]
 

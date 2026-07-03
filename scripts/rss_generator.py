@@ -145,6 +145,7 @@ FEEDS = {
 # Hashtags arabes par thème (banque du kit MARKETING_AR.md) — l'extraction
 # d'entités de hashtags() est latine, inutilisable sur un titre arabe.
 _AR_TAGS = {
+    "algerie":  "#الجزائر #محاربو_الصحراء #كأس_العالم_2026",
     "cr7":      "#رونالدو #CR7 #هدف_1000",
     "wc":       "#كأس_العالم_2026 #مونديال_2026",
     "maroc":    "#المغرب #أسود_الأطلس #كأس_العالم_2026",

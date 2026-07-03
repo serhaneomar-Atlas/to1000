@@ -38,3 +38,21 @@ class TestTriFraicheur(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestCustomItems(unittest.TestCase):
+    """Items éditoriaux maison (scripts/custom_news.json) injectés dans le feed."""
+
+    def test_expiration_et_id_requis(self):
+        import json, tempfile
+        from news_aggregator import load_custom_items
+        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as f:
+            json.dump([{"id": "vieux", "expires_at": "2020-01-01T00:00:00Z"},
+                       {"id": "valide", "expires_at": "2999-01-01T00:00:00Z"},
+                       {"expires_at": "2999-01-01T00:00:00Z"}], f)
+            p = f.name
+        self.assertEqual([i["id"] for i in load_custom_items(p)], ["valide"])
+
+    def test_fichier_absent_ne_casse_rien(self):
+        from news_aggregator import load_custom_items
+        self.assertEqual(load_custom_items("/chemin/inexistant.json"), [])
