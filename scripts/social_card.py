@@ -107,6 +107,48 @@ def _save(img, out_path):
         img.save(out, "PNG")
 
 
+def make_photo_card(photo_path, headline, subtitle, counter, out_path,
+                    size=(1200, 630)):
+    """Carte sociale avec PHOTO en fond (événements : but marquant, le 1000e…).
+    Cover-crop de la photo + dégradé sombre en bas pour la lisibilité +
+    habillage ESTÁDIO (barre or, eyebrow marque, gros titre Anton, chip compteur).
+    NB : dans cards/manifest.json, poser la valeur \"lock\" pour l'id afin que
+    card_url_for ne l'écrase pas avec une carte typographique."""
+    W, H = size
+    photo = Image.open(photo_path).convert("RGB")
+    scale = max(W / photo.width, H / photo.height)
+    photo = photo.resize((round(photo.width * scale), round(photo.height * scale)))
+    x = (photo.width - W) // 2
+    img = photo.crop((x, 0, x + W, H))
+
+    # dégradé sombre bas (lisibilité) + voile léger global
+    grad = Image.new("L", (1, H))
+    for y in range(H):
+        grad.putpixel((0, y), min(230, int(30 + 200 * max(0, (y / H - 0.45)) / 0.55)))
+    overlay = Image.new("RGB", size, INK)
+    img = Image.composite(overlay, img, grad.resize(size))
+    d = ImageDraw.Draw(img)
+    d.rectangle([0, 0, 10, H], fill=GOLD)
+
+    f_eye = _font("HankenGrotesk-Bold.ttf", 30)
+    d.text((70, 46), "TO1000.COM", font=f_eye, fill=GOLD)
+    f_head = _font("Anton-Regular.ttf", 150)
+    d.text((70, H - 330), headline, font=f_head, fill=GOLD_HOT)
+    # NB : Oswald-SemiBold.ttf des assets est corrompu (page HTML) → Hanken Bold
+    f_sub = _font("HankenGrotesk-Bold.ttf", 38)
+    d.text((70, H - 165), subtitle, font=f_sub, fill=CHALK)
+    f_lab = _font("HankenGrotesk.ttf", 30)
+    cw = d.textlength(counter, font=f_lab)
+    cx, cy = 70, H - 92
+    d.rounded_rectangle([cx, cy, cx + cw + 44, cy + 48], radius=24, fill=GOLD)
+    d.ellipse([cx + 16, cy + 18, cx + 28, cy + 30], fill=INK)
+    d.text((cx + 40, cy + 9), counter, font=f_lab, fill=INK)
+    d.text((W - 70 - d.textlength("to1000.com", font=f_lab), cy + 9),
+           "to1000.com", font=f_lab, fill=CHALK)
+    _save(img, out_path)
+    return out_path
+
+
 def make_banner(kind="twitter", out_path="banner.png"):
     sizes = {"twitter": (1500, 500), "facebook": (1640, 624), "avatar": (500, 500)}
     W, H = sizes[kind]

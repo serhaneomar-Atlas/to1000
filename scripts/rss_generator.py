@@ -51,6 +51,10 @@ def card_url_for(item, counter, manifest):
     # JPEG natif depuis 2026-07-01 : Instagram (auto-post Make) refuse le PNG ;
     # avant, la conversion passait par un proxy wsrv.nl. Les anciens .png restent
     # en place pour les og:image déjà publiés.
+    # "lock" dans le manifest = carte faite main (photo, make_photo_card) —
+    # ne jamais l'écraser par la carte typographique automatique.
+    if manifest.get(iid) == "lock" and (CARDS_DIR / f"{iid}.jpg").exists():
+        return f"{SITE}/social/cards/{iid}.jpg"
     h = hashlib.sha256(f"{title}|{counter}".encode("utf-8")).hexdigest()[:10]
     if manifest.get(iid) != h or not (CARDS_DIR / f"{iid}.jpg").exists():
         try:
