@@ -5,6 +5,14 @@
 
 ---
 
+### [2026-07-03 ~05:15 UTC] — Claude Code (WSL) — **NUIT DU 976 : but crédité live, bug penalty tué, 5 publications rédaction (4 langues)**
+- ⚽ **BUT #976 (penalty 68e vs Croatie)** crédité en direct. 🔴 **Bug critique découvert et corrigé dans la foulée : ESPN type les penaltys `Penalty - Scored` (sans « Goal ») → AUCUN penalty n'était détectable par le compteur.** Fix + 3 tests poussés (`7a8c632f`). La chaîne auto a ensuite fait son premier tour complet seule : `last_match` Portugal 2-1 Croatie, `cr7_scored: true`, deploy — zéro intervention.
+- 📰 **Système d'items éditoriaux maison** (`scripts/custom_news.json` + `load_custom_items()`) : la rédaction publie dans le feed (expiration auto, survit aux régénérations) → pages articles + cartes + 4 flux + auto-post Make FB/IG. **5 publications cette nuit, toutes 4 langues** : duel Ronaldo–Modric, avant-match Algérie (AR fort), **événement 976 avec carte-photo célébration** (`make_photo_card()`, photo fournie par Omar, verrou `lock` dans le manifest — réutilisable pour le 1000e), rapport FT Portugal 2-1 Croatie (Ramos 90e+4), rapport FT Suisse 2-0 Algérie (« merci les Verts », AR digne).
+- 🛠 **Leçon d'infra** : pendant les matchs, les bots poussent toutes les ~5 min et le FS /mnt/c rend git local impraticable (timeouts, locks, courses perdues). **Solution adoptée : commits via l'API Git de GitHub** (blobs→tree→commit→ref avec retry) — fiable, atomique, insensible aux courses. À privilégier pour tout hotfix en fenêtre de match.
+- Repo local WSL : en retard/divergent (à resynchroniser à froid, rien d'urgent — main fait foi).
+- Bâton → **CD** (inchangé : purge cache 3 flux + scénario Make Pchaaakh TV — le contenu AR est prêt et riche) ; **Omar** (matin : vérifier les posts FB/IG de la nuit, ESP, GSC).
+- Commits : `a0a25aa6`, `2e5e5dd7`, `13c2f458`, `7a8c632f` + stats v34-35, via API.
+
 ### [2026-07-02 ~13:55 UTC] — Claude Code (WSL) — **FIX cache CDN des flux langue + filtre EN/ES (signalement CD traité)**
 - **Headers corrigés et vérifiés live** : `rss-ar/en/es.xml` servent désormais `public, max-age=0, must-revalidate` comme rss.xml (règles `_headers` avec `!` détacheur ; l'ancien `s-maxage=604800` a disparu, cf=DYNAMIC). Les nouveaux articles apparaîtront en ~15 min dans les flux.
 - **Filtre langue généralisé** (`lang_ok`) : rss-en/es n'incluent un item que si sa traduction existe ET diffère du texte source (fini l'espagnol dans rss-en) ; AR garde la détection d'écriture. Flux actuels : ~3 items chacun, grossissent à chaque passe Gemini (*/30). 12 tests rss verts.
