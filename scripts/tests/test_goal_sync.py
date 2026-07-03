@@ -163,3 +163,28 @@ class TestEspnStatuses(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestPenaltyScored(unittest.TestCase):
+    """Fix 2026-07-03 : un but sur penalty a le type ESPN 'Penalty - Scored'
+    (sans le mot 'Goal') — le but #976 de CR7 vs Croatie n'était pas détecté."""
+
+    def _ev(self, type_text, scorer_id="22774"):
+        return {"id": "9", "type": {"text": type_text}, "period": {"number": 2},
+                "clock": {"displayValue": "68'"},
+                "participants": [{"athlete": {"id": scorer_id, "displayName": "Cristiano Ronaldo"}}],
+                "team": {"displayName": "Portugal"}, "text": "Goal! ..."}
+
+    def test_penalty_marque_detecte(self):
+        from lib.espn_client import _key_event_to_goal
+        g = _key_event_to_goal(self._ev("Penalty - Scored"), "m1")
+        self.assertIsNotNone(g)
+        self.assertTrue(g.is_cr7)
+
+    def test_penalty_rate_ignore(self):
+        from lib.espn_client import _key_event_to_goal
+        self.assertIsNone(_key_event_to_goal(self._ev("Penalty - Missed"), "m1"))
+
+    def test_but_normal_toujours_detecte(self):
+        from lib.espn_client import _key_event_to_goal
+        self.assertIsNotNone(_key_event_to_goal(self._ev("Goal"), "m1"))

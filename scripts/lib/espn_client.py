@@ -130,9 +130,12 @@ def _parse_minute(display_value: str) -> int:
 
 
 def _key_event_to_goal(ev: dict[str, Any], match_id: str) -> GoalEvent | None:
-    """Convertit un keyEvent ESPN en GoalEvent si c'est bien un but."""
+    """Convertit un keyEvent ESPN en GoalEvent si c'est bien un but.
+    Fix 2026-07-03 (découvert sur le penalty de CR7 vs Croatie) : un but sur
+    penalty a le type 'Penalty - Scored' — SANS le mot 'Goal' — et n'était
+    donc JAMAIS détecté. 'Penalty - Missed'/'Shootout' restent exclus."""
     type_text = ev.get("type", {}).get("text", "")
-    if "Goal" not in type_text:
+    if "Goal" not in type_text and type_text != "Penalty - Scored":
         return None
     parts = ev.get("participants", [])
     if not parts:
