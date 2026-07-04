@@ -70,6 +70,14 @@ def build_patterns(goals, remaining, month, year):
         (re.compile(r"<strong>\d{3,4} official career goals</strong>"), f"<strong>{g} official career goals</strong>", "strong-official"),
         (re.compile(r"Ronaldo needs \d{1,3} more goals"), f"Ronaldo needs {r} more goals", "needs-more"),
 
+        # Spans ESTÁDIO (fix 2026-07-04 : le hero/stat tiles de la refonte
+        # n'étaient couverts par aucun motif → la home affichait 975 en dur)
+        (re.compile(r'aria-label="\d{3,4} buts">\d{3,4}'), f'aria-label="{g} buts">{g}', "hero-ch-num"),
+        (re.compile(r'aria-valuenow="\d{3,4}"'), f'aria-valuenow="{g}"', "progressbar"),
+        (re.compile(r'class="n impact">\d{3,4}<'), f'class="n impact">{g}<', "stat-tile"),
+        (re.compile(r"<b>\d{1,3} buts</b> avant l"), f"<b>{r} buts</b> avant l", "meta-remaining-fr"),
+        (re.compile(r"Ronaldo à \d{1,3} buts du cap"), f"Ronaldo à {r} buts du cap", "faq-remaining-fr"),
+
         # i18n bundles 4 langues
         (re.compile(r"\U0001F3AC \d{3,4} Goals \xb7 Watch Each One".encode().decode()), f"\U0001F3AC {g} Goals \xb7 Watch Each One", "nav-en"),
         (re.compile(r"\U0001F3AC \d{3,4} Buts \xb7 Voir Chacun"), f"\U0001F3AC {g} Buts \xb7 Voir Chacun", "nav-fr"),

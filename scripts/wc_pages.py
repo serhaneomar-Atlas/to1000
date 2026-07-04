@@ -372,8 +372,19 @@ def main() -> int:
     offline = "--offline" in sys.argv
     if "--live-only" in sys.argv:
         cached = load_cache() or []
-        if not is_live_window(cached, datetime.now(timezone.utc)):
-            print("[wc] aucun match en fenêtre live — rien à faire")
+        # Self-heal (fix 2026-07-04) : si le cron quotidien de 04:10 a été sauté
+        # par GitHub, /matchs-du-jour/ reste sur la veille — on force alors un
+        # run complet même hors fenêtre live.
+        today_et = datetime.now(timezone.utc).astimezone(ET)
+        stale_today = True
+        try:
+            html = (OUT / "matchs-du-jour" / "index.html").read_text(encoding="utf-8")
+            from lib.wc_data import MONTHS_FR
+            stale_today = f"{today_et.day} {MONTHS_FR[today_et.month]}" not in html
+        except Exception:
+            pass
+        if not is_live_window(cached, datetime.now(timezone.utc)) and not stale_today:
+            print("[wc] aucun match en fenêtre live et matchs-du-jour à jour — rien à faire")
             return 0
     matches = (load_cache() if offline else None) or fetch_matches()
     OUT.mkdir(parents=True, exist_ok=True)

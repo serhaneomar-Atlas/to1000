@@ -10,6 +10,7 @@ name: ⚽ WC sync (Coupe du Monde 2026)
 on:
   schedule:
     - cron: '10 4 * * *'    # après minuit ET → nouveau « matchs du jour »
+    - cron: '10 6 * * *'
     - cron: '10 8 * * *'
     - cron: '10 13 * * *'
     # Fenêtres live (matchs CdM 2026 : 15:00Z à ~04:00Z)

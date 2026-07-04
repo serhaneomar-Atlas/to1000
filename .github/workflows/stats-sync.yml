@@ -56,12 +56,9 @@ jobs:
       - name: Detect change & commit
         id: diff
         run: |
-          NEW_HASH=$(sha256sum public/stats.json | cut -d' ' -f1)
-          if [ "${{ steps.pre.outputs.hash }}" = "$NEW_HASH" ]; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-            echo "::notice::stats.json unchanged — skipping commit"
-            exit 0
-          fi
+          # Fix 2026-07-04 : ne pas se limiter au hash de stats.json — un crédit
+          # manuel via l'API laisse les compteurs HTML en retard ; on committe
+          # dès que le staging a un diff (stats OU html counts).
           echo "changed=true" >> $GITHUB_OUTPUT
           git config user.name "to1000-stats-bot"
           git config user.email "to1000-stats-bot@users.noreply.github.com"

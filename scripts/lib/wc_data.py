@@ -39,11 +39,12 @@ ROUNDS_FR = {
     "semifinals": "Demi-finales",
     "third-place-playoff": "Match pour la 3e place",
     "third-place": "Match pour la 3e place",
+    "3rd-place-match": "Match pour la 3e place",
     "final": "Finale",
 }
 # Ordre chronologique des tours pour trier le hub.
 ROUND_ORDER = ["group-stage", "round-of-32", "round-of-16", "quarterfinals",
-               "semifinals", "third-place-playoff", "third-place", "final"]
+               "semifinals", "third-place-playoff", "third-place", "3rd-place-match", "final"]
 
 
 def _dt_et(date_iso: str) -> datetime:
