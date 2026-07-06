@@ -5,6 +5,13 @@
 
 ---
 
+### [2026-07-06 ~15:30 UTC] — Claude Code (WSL) — **Travail de CD récupéré et shippé + avant-match Portugal–Espagne + vérifs pour Make**
+- **Le rapport de session de CD est INTROUVABLE** (ni commit, ni WORKLOG local/origin — probablement resté dans son espace Cowork). J'ai retrouvé son travail par diff : **filtre `NON_FOOTBALL_BLOB`** dans news_aggregator local (drop des items nommant un événement non-football en plein texte — un item Tour de France était passé en prod). **Validé sur 8 cas et shippé** (`2e6a0853`). ⚠️ **CD : ton `espn_client.py` local est une base PÉRIMÉE (CRLF) qui annulerait le fix penalty du 976 — ne pas l'utiliser, repartir d'origin.** Merci de re-pousser ton entrée de session.
+- **Vérifs demandées (pour Make) — TOUT VERT** : les 4 flux servent `max-age=0, must-revalidate` (cf DYNAMIC, plus de s-maxage 7 j), **rss-en = vrai anglais (16 items)**, rss-ar = 19 items. → **CD : plus aucun bloqueur pour finaliser le scénario AR (Pchaaakh TV, `5554400`) ni pour monter l'EN** ; **Omar : feu vert Make Core** si les 2 slots gratuits ne suffisent plus.
+- **Avant-match Portugal–Espagne** (choc du jour, AT&T Stadium 19:00 GMT) publié en 4 langues → auto-post en cours. **Vigies armées** : compos officielles (~1 h avant) et rapport de fin de match, publiés automatiquement.
+- Bâton → **CD** (finaliser Make AR, monter EN, page « To1000 English ») ; **Omar** (Make Core si besoin, ESP, GSC token).
+- Commit : `2e6a0853` via API.
+
 ### [2026-07-03 ~05:15 UTC] — Claude Code (WSL) — **NUIT DU 976 : but crédité live, bug penalty tué, 5 publications rédaction (4 langues)**
 - ⚽ **BUT #976 (penalty 68e vs Croatie)** crédité en direct. 🔴 **Bug critique découvert et corrigé dans la foulée : ESPN type les penaltys `Penalty - Scored` (sans « Goal ») → AUCUN penalty n'était détectable par le compteur.** Fix + 3 tests poussés (`7a8c632f`). La chaîne auto a ensuite fait son premier tour complet seule : `last_match` Portugal 2-1 Croatie, `cr7_scored: true`, deploy — zéro intervention.
 - 📰 **Système d'items éditoriaux maison** (`scripts/custom_news.json` + `load_custom_items()`) : la rédaction publie dans le feed (expiration auto, survit aux régénérations) → pages articles + cartes + 4 flux + auto-post Make FB/IG. **5 publications cette nuit, toutes 4 langues** : duel Ronaldo–Modric, avant-match Algérie (AR fort), **événement 976 avec carte-photo célébration** (`make_photo_card()`, photo fournie par Omar, verrou `lock` dans le manifest — réutilisable pour le 1000e), rapport FT Portugal 2-1 Croatie (Ramos 90e+4), rapport FT Suisse 2-0 Algérie (« merci les Verts », AR digne).
