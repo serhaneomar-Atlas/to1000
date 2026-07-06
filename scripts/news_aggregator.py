@@ -368,6 +368,39 @@ NON_FOOTBALL = [
     "water-polo", "judo", "karaté", "taekwondo", "haltérophilie",
 ]
 
+# Unambiguous non-football markers checked against the WHOLE blob (title+summary),
+# not just the leading discipline word. Catches items where the sport is only
+# named mid-text ("Tour de France : dernière étape…" has no "cyclisme" prefix).
+# Keep every entry unambiguous — must NEVER appear in a real football story.
+NON_FOOTBALL_BLOB = [
+    "tour de france", "vingegaard", "pogacar", "pogačar", "maillot jaune",
+    "roland-garros", "roland garros", "wimbledon", "us open", "australian open",
+    "vuelta a espana", "vuelta a españa", "giro d'italia",
+    "grand prix", "moto gp", "super bowl", "wnba", "nascar", "formule 1", "formula 1",
+    "six nations", "tournoi des six nations", "coupe davis", "davis cup",
+    "diamond league",
+]
+
+# Player surnames that collide with common FR/ES/PT/EN words. Only count them as a
+# real match when they appear Capitalized/UPPERCASE in the ORIGINAL text
+# ("Son marque" = the player; "son maillot jaune" = French possessive pronoun).
+AMBIGUOUS_PLAYERS = {"son", "mane", "mané", "musa"}
+
+
+def has_player(blob_lower: str, blob_orig: str, kw_players: list) -> bool:
+    """Whitelist player match with case-guard for ambiguous short surnames."""
+    normal = [p for p in kw_players if p.lower() not in AMBIGUOUS_PLAYERS]
+    if match_any(blob_lower, normal):
+        return True
+    for p in kw_players:
+        if p.lower() not in AMBIGUOUS_PLAYERS:
+            continue
+        cap = re.escape(p[:1].upper() + p[1:].lower())
+        up = re.escape(p.upper())
+        if re.search(r"(?<!\w)(?:" + cap + "|" + up + r")(?!\w)", blob_orig):
+            return True
+    return False
+
 # Word-boundary keyword matching (cached compiled regex per list).
 # Substring matching wrongly kept "Osaka" (saka), "Homburg" (om), "interruption"
 # (inter) — word boundaries kill those false positives.
@@ -396,18 +429,23 @@ def classify(title: str, summary: str, kw_cr7_high: list,
     Random local news (3rd-division transfers, lower-league gossip, irrelevant figures)
     is dropped — keeps the feed focused on what readers actually click on.
     """
-    # Hard drop: the title clearly belongs to another sport.
-    if match_any(title, NON_FOOTBALL):
-        return None
     blob = f"{title} {summary}"
+    blob_lower = blob.lower()
+    # Hard drop: the title leads with another sport, OR the text clearly names a
+    # non-football event anywhere ("Tour de France", "Roland-Garros"…). The blob
+    # check runs first so a cycling item can't sneak in via an ambiguous match.
+    if match_any(title, NON_FOOTBALL) or match_any(blob, NON_FOOTBALL_BLOB):
+        return None
     if match_any(blob, kw_cr7_high):
         return "cr7"
-    if match_any(blob, kw_cr7_ctx) and ("ronaldo" in blob.lower() or "cr7" in blob.lower()):
+    if match_any(blob, kw_cr7_ctx) and ("ronaldo" in blob_lower or "cr7" in blob_lower):
         return "cr7"
     # Keep real football: a big club / star player, OR a named football
     # competition (World Cup, Champions League, Ligue 1, CAN…). Generic context
     # alone (goal/final/transfer) is NOT enough — a tennis "finale" must not pass.
-    has_protagonist = match_any(blob, kw_clubs) or match_any(blob, kw_players)
+    # Ambiguous short surnames (Son, Mané, Musa) require a capitalized match so the
+    # French possessive "son" doesn't drag in "son maillot jaune".
+    has_protagonist = match_any(blob, kw_clubs) or has_player(blob_lower, blob, kw_players)
     has_competition = match_any(blob, kw_comps)
     if has_protagonist or has_competition:
         return "football"
@@ -484,9 +522,21 @@ def main() -> int:
     stats_failed = 0
     cutoff = datetime.now(timezone.utc).timestamp() - MAX_AGE_HOURS * 3600
 
+    # Prefetch concurrent (ajout Cowork 2026-07-03) — les fetch RSS sequentiels
+    # depassaient le cap 45s du sandbox. ThreadPool = temps ~= le flux le plus lent.
+    from concurrent.futures import ThreadPoolExecutor as _TPE
+    _prefetched: dict = {}
+    with _TPE(max_workers=8) as _ex:
+        _futs = {_ex.submit(fetch_feed, s["rss"]): s["rss"] for s in sources}
+        for _f in _futs:
+            try:
+                _prefetched[_futs[_f]] = _f.result()
+            except Exception:
+                _prefetched[_futs[_f]] = None
+
     for src in sources:
         log(f"Fetching {src['name']} ({src['rss']})", verbose)
-        feed = fetch_feed(src["rss"])
+        feed = _prefetched.get(src["rss"])
         if not feed or not getattr(feed, "entries", None):
             stats_failed += 1
             continue
