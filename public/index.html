@@ -935,7 +935,7 @@
       goals_unit:"buts",rem_rest:"avant l’histoire",foot_prog:"Progression",foot_last:"Dernier but vs",live:"Live",
       m_comp:"Coupe du Monde 2026",m_foot:"Phase à élimination directe · Cristiano Ronaldo titulaire attendu",
       m_kicker:"Prochain rendez-vous",m_title:'La route passe par <span class="gold">le Mondial</span>',
-      m_desc:"Le Portugal défie la Colombie pour une place au tour suivant. Chaque match du Mondial 2026 peut rapprocher Cristiano Ronaldo du cap mythique des 1000 buts — et nous le couvrons but par but, minute par minute.",
+      m_desc:"La Coupe du monde 2026 bat son plein — et chaque but de Cristiano Ronaldo, en club comme en sélection, le rapproche du cap mythique des 1000. On suit tout, match par match, minute par minute.",
       m_btn1:"Suivre le compteur",m_btn2:"Toute l’actu Mondial",
       p_kicker:"Le parcours",p_title:'Six clubs. <span style="color:var(--gold)">Une légende.</span>',
       era_sporting:"Lisbonne · les débuts",era_manu:"Premier League · le sacre",era_real:"Liga · l’ère galactique",era_juve:"Serie A · l’Italie",era_nassr:"Saudi Pro League · aujourd’hui",era_por:"Sélection · record mondial",
@@ -953,7 +953,7 @@
       goals_unit:"goals",rem_rest:"from history",foot_prog:"Progress",foot_last:"Last goal vs",live:"Live",
       m_comp:"World Cup 2026",m_foot:"Knockout stage · Cristiano Ronaldo expected to start",
       m_kicker:"Next fixture",m_title:'The road runs through <span class="gold">the World Cup</span>',
-      m_desc:"Portugal face Colombia for a place in the next round. Every 2026 World Cup match can bring Cristiano Ronaldo closer to the mythical 1000-goal mark — and we cover it goal by goal, minute by minute.",
+      m_desc:"The 2026 World Cup is in full swing — and every Cristiano Ronaldo goal, for club or country, brings him closer to the mythical 1000 mark. We track it all, match by match, minute by minute.",
       m_btn1:"Follow the counter",m_btn2:"All World Cup news",
       p_kicker:"The journey",p_title:'Six clubs. <span style="color:var(--gold)">One legend.</span>',
       era_sporting:"Lisbon · the beginning",era_manu:"Premier League · the rise",era_real:"La Liga · the galactic era",era_juve:"Serie A · Italy",era_nassr:"Saudi Pro League · today",era_por:"National team · world record",
@@ -971,7 +971,7 @@
       goals_unit:"goles",rem_rest:"para la historia",foot_prog:"Progreso",foot_last:"Último gol vs",live:"En vivo",
       m_comp:"Mundial 2026",m_foot:"Fase eliminatoria · Cristiano Ronaldo titular previsto",
       m_kicker:"Próxima cita",m_title:'El camino pasa por <span class="gold">el Mundial</span>',
-      m_desc:"Portugal se enfrenta a Colombia por un lugar en la siguiente ronda. Cada partido del Mundial 2026 puede acercar a Cristiano Ronaldo a la mítica cifra de 1000 goles — y lo cubrimos gol a gol, minuto a minuto.",
+      m_desc:"El Mundial 2026 está en marcha — y cada gol de Cristiano Ronaldo, con su club o su selección, lo acerca a la mítica cifra de 1000. Lo seguimos todo, partido a partido.",
       m_btn1:"Seguir el contador",m_btn2:"Toda la actualidad del Mundial",
       p_kicker:"La trayectoria",p_title:'Seis clubes. <span style="color:var(--gold)">Una leyenda.</span>',
       era_sporting:"Lisboa · los inicios",era_manu:"Premier League · la consagración",era_real:"La Liga · la era galáctica",era_juve:"Serie A · Italia",era_nassr:"Saudi Pro League · hoy",era_por:"Selección · récord mundial",
@@ -989,7 +989,7 @@
       goals_unit:"هدف",rem_rest:"تفصله عن التاريخ",foot_prog:"التقدّم",foot_last:"آخر هدف ضد",live:"مباشر",
       m_comp:"كأس العالم 2026",m_foot:"دور خروج المغلوب · كريستيانو رونالدو أساسي متوقع",
       m_kicker:"الموعد القادم",m_title:'الطريق يمرّ عبر <span class="gold">كأس العالم</span>',
-      m_desc:"البرتغال تواجه كولومبيا للتأهل إلى الدور التالي. كل مباراة في مونديال 2026 قد تقرّب كريستيانو رونالدو من حاجز الألف هدف الأسطوري — ونحن نغطّيها هدفاً بهدف، دقيقةً بدقيقة.",
+      m_desc:"كأس العالم 2026 في أوجها — وكل هدف لكريستيانو رونالدو، مع ناديه أو منتخبه، يقرّبه من رقم الألف الأسطوري. نتابع كل شيء، مباراة بمباراة.",
       m_btn1:"تابع العدّاد",m_btn2:"كل أخبار المونديال",
       p_kicker:"المسيرة",p_title:'ستة أندية. <span style="color:var(--gold)">أسطورة واحدة.</span>',
       era_sporting:"لشبونة · البداية",era_manu:"البريمييرليغ · التتويج",era_real:"الليغا · حقبة الغالاكتيكوس",era_juve:"الدوري الإيطالي · إيطاليا",era_nassr:"الدوري السعودي · الحاضر",era_por:"المنتخب · رقم قياسي عالمي",
@@ -1037,7 +1037,25 @@
     var st=document.querySelector('#data .stats-row .stat .n'); if(st)st.textContent=goals;
     var pill=document.querySelector('.livepill'); if(pill)pill.innerHTML='<span class="dot" aria-hidden="true"></span>'+t('live')+' · '+goals;
     var m=s.next_match;
-    if(m){
+    if(m&&m.status==='off_season'){
+      // Intersaison CR7 (fix 2026-07-06, élimination du Portugal) : le bloc
+      // bascule sur le prochain match de la Coupe du monde au lieu d'afficher vide.
+      fetch('/coupe-du-monde/data.json').then(function(r){return r.json()}).then(function(w){
+        var nm=(w.matches||[]).find(function(x){return x.state!=='finished'&&x.slug;});
+        if(!nm)return;
+        var names=document.querySelectorAll('#match .vs .team .name'), crests=document.querySelectorAll('#match .vs .team .crest');
+        if(names.length===2){names[0].textContent=nm.home.fr;names[1].textContent=nm.away.fr;
+          try{setFlag(crests[0],nm.home.en||nm.home.fr);setFlag(crests[1],nm.away.en||nm.away.fr);}catch(e){}}
+        var when=document.querySelector('#match .head .when');
+        if(when&&nm.date_iso){try{var d2=new Date(nm.date_iso); when.textContent=d2.toLocaleDateString(LANG,{day:'numeric',month:'long'})+' · '+d2.toLocaleTimeString(LANG,{hour:'2-digit',minute:'2-digit'});}catch(e){}}
+        var fm=document.getElementById('fotmoblink');
+        if(!fm){fm=document.createElement('a');fm.id='fotmoblink';fm.rel='noopener';
+          fm.style.cssText='display:inline-block;margin-top:12px;color:#f2c14e;border:1px solid #f2c14e;border-radius:6px;padding:7px 16px;text-decoration:none;font-weight:600;font-size:14px';
+          var host=document.querySelector('#match .vs'); if(host&&host.parentNode)host.parentNode.insertBefore(fm,host.nextSibling);}
+        fm.href='/coupe-du-monde/match/'+nm.slug+'/';
+        fm.textContent=(LANG==='ar'?'⚽ مباراة كأس العالم — التفاصيل':LANG==='en'?'⚽ World Cup match — details':LANG==='es'?'⚽ Partido del Mundial — detalles':'⚽ Match de Coupe du monde — le détail');
+      }).catch(function(){});
+    }else if(m){
       var names=document.querySelectorAll('#match .vs .team .name'), crests=document.querySelectorAll('#match .vs .team .crest');
       if(names.length===2){names[0].textContent=m.home_team;names[1].textContent=m.away_team;setFlag(crests[0],m.home_team);setFlag(crests[1],m.away_team);}
       var when=document.querySelector('#match .head .when');
