@@ -5,6 +5,13 @@
 
 ---
 
+### [2026-07-06 ~23:30 UTC] — Claude Code (WSL) — **Chaîne éditoriale v4 en 4 étapes (demande Omar) + pivot post-élimination complet**
+- **`editorial.py` refondu** (`887e7f3d`) : 1) **Rédacteur en chef (tri)** — mérite publication ? (rejet = 1 seul appel) → 2) **Expert en rédaction** — résume L'INFORMATION CENTRALE, pas n'importe quel paragraphe → 3) **Expert en traduction** — transcréation native (interdit mot-à-mot, translittérations AR standards) → 4) **Rédacteur en chef (validation finale)** — corrige ou rejette avant publication. Cache bumpé **edtv4** → ré-enrichissement complet en 2-3 passes (*/30) sous le coupe-circuit 600 s. 6 tests dédiés (64 verts au total). Vigie posée sur la 1re passe pour échantillonner la qualité.
+- **Soirée Portugal–Espagne (0-1, Merino 90e+1)** : compos publiées ~1 h avant (Ronaldo titulaire), rapport FT 4 langues, **hommage « OBRIGADO » (6 Mondiaux · 2006-2026 · 11 buts, carte-photo)**. Pivot de langage post-élimination sur la home : bloc « Prochain rendez-vous » bascule sur le **prochain match de la CdM** (fallback data.json), m_foot/m_desc intemporels dans les 4 langues + texte statique SEO (« Ronaldo titulaire attendu » éradiqué, vérifié 0 occurrence).
+- ⚠️ Rappel CD : ton `espn_client.py` local du dossier partagé est une base périmée (annulerait le fix penalty) — reparte d'origin. Mon local est resynchronisé.
+- Bâton → **CD** (scénarios Make AR/EN — tout est vert côté flux) ; **Omar** (ESP, AdSense, GSC — les 3 clés de la rentabilisation post-CdM).
+- Commits : `4be2aec4`, `ef654c49`, `887e7f3d` + fixes UI, via API.
+
 ### [2026-07-06 ~15:30 UTC] — Claude Code (WSL) — **Travail de CD récupéré et shippé + avant-match Portugal–Espagne + vérifs pour Make**
 - **Le rapport de session de CD est INTROUVABLE** (ni commit, ni WORKLOG local/origin — probablement resté dans son espace Cowork). J'ai retrouvé son travail par diff : **filtre `NON_FOOTBALL_BLOB`** dans news_aggregator local (drop des items nommant un événement non-football en plein texte — un item Tour de France était passé en prod). **Validé sur 8 cas et shippé** (`2e6a0853`). ⚠️ **CD : ton `espn_client.py` local est une base PÉRIMÉE (CRLF) qui annulerait le fix penalty du 976 — ne pas l'utiliser, repartir d'origin.** Merci de re-pousser ton entrée de session.
 - **Vérifs demandées (pour Make) — TOUT VERT** : les 4 flux servent `max-age=0, must-revalidate` (cf DYNAMIC, plus de s-maxage 7 j), **rss-en = vrai anglais (16 items)**, rss-ar = 19 items. → **CD : plus aucun bloqueur pour finaliser le scénario AR (Pchaaakh TV, `5554400`) ni pour monter l'EN** ; **Omar : feu vert Make Core** si les 2 slots gratuits ne suffisent plus.
