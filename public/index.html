@@ -1045,7 +1045,12 @@
         if(!nm)return;
         var names=document.querySelectorAll('#match .vs .team .name'), crests=document.querySelectorAll('#match .vs .team .crest');
         if(names.length===2){names[0].textContent=nm.home.fr;names[1].textContent=nm.away.fr;
-          try{setFlag(crests[0],nm.home.en||nm.home.fr);setFlag(crests[1],nm.away.en||nm.away.fr);}catch(e){}}
+          // Drapeau depuis l'iso2 de data.json (fix 2026-07-07 : TEAM_FLAGS ne
+          // connaît pas toutes les équipes de la CdM, ex. Égypte)
+          var wcFlag=function(el,t){if(!el)return;
+            if(t&&t.iso2){el.style.backgroundImage="url('https://flagcdn.com/w160/"+t.iso2+".png')";el.textContent='';el.classList.add('crest-flag');el.setAttribute('role','img');el.setAttribute('aria-label',t.fr||'');}
+            else{try{setFlag(el,(t&&(t.en||t.fr))||'');}catch(e){}}};
+          wcFlag(crests[0],nm.home);wcFlag(crests[1],nm.away);}
         var when=document.querySelector('#match .head .when');
         if(when&&nm.date_iso){try{var d2=new Date(nm.date_iso); when.textContent=d2.toLocaleDateString(LANG,{day:'numeric',month:'long'})+' · '+d2.toLocaleTimeString(LANG,{hour:'2-digit',minute:'2-digit'});}catch(e){}}
         var fm=document.getElementById('fotmoblink');
