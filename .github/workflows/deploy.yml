@@ -49,6 +49,7 @@ jobs:
             echo "Add it under: repo Settings -> Secrets and variables -> Actions."
             exit 1
           fi
+          bash scripts/prune_deploy_assets.sh
           npx wrangler@latest pages deploy public/ \
             --project-name to1000 \
             --branch main \
