@@ -152,7 +152,7 @@ jobs:
             git commit -m "chore(news): refresh feed [$(date -u +%Y-%m-%dT%H:%M)Z]"
             # HEAD:main marche aussi en detached HEAD (runs push-triggered) ;
             # tolérant pour ne JAMAIS bloquer le deploy qui suit.
-            git push origin HEAD:main 2>/dev/null || git push 2>/dev/null || true
+            bash scripts/ci_push.sh main
           fi
 
       # Optional deploy step — runs only when both:

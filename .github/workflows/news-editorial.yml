@@ -83,7 +83,7 @@ jobs:
             echo "::notice::Rien à committer"
           else
             git commit -m "chore(editorial): enrichissement Gemini [$(date -u +%Y-%m-%dT%H:%M)Z]"
-            git push origin HEAD:main 2>/dev/null || git push 2>/dev/null || true
+            bash scripts/ci_push.sh main
           fi
 
       - name: Deploy to Cloudflare Pages

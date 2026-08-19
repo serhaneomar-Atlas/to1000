@@ -67,7 +67,7 @@ jobs:
             echo "::notice::No staged changes"
           else
             git commit -m "chore(stats): daily CR7 sync [$(date -u +%Y-%m-%dT%H:%M)Z]"
-            git push
+            bash scripts/ci_push.sh main
           fi
 
       # Deploy to Cloudflare Pages — only when stats changed AND the token is set.
