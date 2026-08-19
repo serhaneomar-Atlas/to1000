@@ -1,0 +1,26 @@
+{
+  "genere_le": "2026-08-19T20:01:41+00:00",
+  "pages_verifiees": 33,
+  "erreurs": 3,
+  "alertes": 0,
+  "entrees": [
+    {
+      "niveau": "erreur",
+      "famille": "fraicheur",
+      "ou": "stats.json",
+      "quoi": "donnée vieille de 24j (max 3 days, 0:00:00) — la synchro ne tourne probablement plus"
+    },
+    {
+      "niveau": "erreur",
+      "famille": "coherence",
+      "ou": "goals-data.json",
+      "quoi": "967 buts en base, le plus haut est n°967, mais le compteur affiche 976 — 9 but(s) sans fiche"
+    },
+    {
+      "niveau": "erreur",
+      "famille": "placeholder",
+      "ou": "index.html",
+      "quoi": "jeton de configuration jamais remplacé : « REMPLACER_PAR_TON_TOKEN_GSC »"
+    }
+  ]
+}
