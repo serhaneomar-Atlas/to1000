@@ -71,10 +71,17 @@ jobs:
           # sans jamais lever l'alerte. Exactement la panne silencieuse que ce
           # workflow existe pour éliminer.
           set -o pipefail
+          # `|| status=$?` neutralise le `set -e` implicite du shell d'Actions :
+          # sans lui, un score sous le seuil coupait l'étape AVANT l'écriture de
+          # l'output, et le score arrivait vide dans le titre de l'issue et le
+          # message de commit (vu en prod : « rapport qualité News [score ] »).
+          # On collecte le code, on publie l'output, puis on ressort avec.
+          status=0
           python scripts/audit_editorial.py \
             --json EDITORIAL/state/audit_latest.json \
-            --seuil "${{ github.event.inputs.seuil || '70' }}" | tee audit.txt
+            --seuil "${{ github.event.inputs.seuil || '70' }}" | tee audit.txt || status=$?
           echo "score=$(python -c "import json;print(json.load(open('EDITORIAL/state/audit_latest.json'))['score'])")" >> $GITHUB_OUTPUT
+          exit $status
 
       - name: Auditer le site (coquilles, données périmées, liens, SEO)
         id: qa

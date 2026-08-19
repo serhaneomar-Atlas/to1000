@@ -53,3 +53,23 @@ def test_le_seuil_d_alerte_est_explicite():
     assert "steps.audit.outcome == 'failure'" in contenu, (
         "l'alerte doit se déclencher sur l'échec de l'étape d'audit"
     )
+
+
+def test_le_score_est_publie_meme_quand_l_audit_echoue():
+    """Le shell d'Actions tourne en `bash -e` : un pipeline en échec coupe
+    l'étape. Si l'écriture de l'output suit le pipe sans garde, le score
+    n'atteint jamais le titre de l'issue ni le message de commit — constaté en
+    prod : « rapport qualité News [score ] ».
+    """
+    contenu = (WORKFLOWS / "editorial-audit.yml").read_text(encoding="utf-8")
+    etape = contenu.split("- name: Auditer le fil publié", 1)[1] \
+                   .split("\n      - name: ", 1)[0]
+    assert "score=" in etape and "GITHUB_OUTPUT" in etape
+    assert "|| status=" in etape, (
+        "le code de sortie doit être collecté sans interrompre l'étape"
+    )
+    assert "exit $status" in etape, (
+        "l'étape doit ressortir avec le vrai code une fois l'output publié"
+    )
+    # L'output doit être écrit AVANT le exit final, sinon il est perdu.
+    assert etape.index("GITHUB_OUTPUT") < etape.index("exit $status")
