@@ -96,8 +96,21 @@ class MatchSummary:
 
 # ─── HTTP HELPER ───────────────────────────────────────────────────────────
 def _get(url: str, *, timeout: int = DEFAULT_TIMEOUT, retries: int = DEFAULT_RETRIES) -> dict[str, Any]:
-    """GET JSON avec User-Agent et retry simple."""
-    headers = {"User-Agent": USER_AGENT, "Accept": "application/json"}
+    """GET JSON avec User-Agent et retry simple.
+
+    ESPN a commencé à répondre 403 aux appels depuis les runners GitHub en août
+    2026. Un jeu d'en-têtes complet (Referer + Accept-Language + Origin) passe
+    là où le seul User-Agent ne suffit plus : l'API filtre sur la cohérence de
+    la requête, pas sur l'UA seul.
+    """
+    headers = {
+        "User-Agent": USER_AGENT,
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Referer": "https://www.espn.com/",
+        "Origin": "https://www.espn.com",
+        "Cache-Control": "no-cache",
+    }
     last_err = None
     for attempt in range(retries + 1):
         try:
@@ -240,7 +253,12 @@ def get_team_schedule(team_id: int = AL_NASSR_ID, league: str = SAUDI_PL) -> lis
 
 def get_match_summary(event_id: str | int, league: str = SAUDI_PL) -> MatchSummary | None:
     """Détail d'un match, avec liste des buteurs et minutes."""
-    data = _get(f"{ESPN_BASE}/{league}/summary?event={event_id}")
+    # Deux hôtes servent le même endpoint. Quand l'un filtre (403), l'autre
+    # répond souvent encore : on essaie le second avant d'abandonner.
+    try:
+        data = _get(f"{ESPN_BASE}/{league}/summary?event={event_id}")
+    except RuntimeError:
+        data = _get(f"{ESPN_BASE_ALT}/{league}/summary?event={event_id}")
     hdr = data.get("header") or {}
     if not hdr:
         return None

@@ -51,16 +51,33 @@ jobs:
                           covered.add(e["source_news_id"])
                   except Exception:
                       pass
-          cands = [i for i in news.get("items",[])
-                   if i.get("id") not in covered
-                   and (i.get("score") or 0) >= 70]
-          cands.sort(key=lambda x: x.get("score",0), reverse=True)
+          # Le seuil historique était `score >= 70`. Or score_importance()
+          # plafonne autour de 15 : AUCUN article n'a jamais pu le franchir, et
+          # le blog est resté muet du 21/05 au 19/08 avec 249 runs « success »
+          # qui ne produisaient rien. On sélectionne désormais sur le verdict du
+          # conseil de rédaction (editorial.quality, 0-10), avec le score
+          # heuristique en secours tant que l'enrichissement n'a pas tourné.
+          def rank(i):
+              ed = i.get("editorial") or {}
+              return (int(ed.get("quality") or 0), int(i.get("score") or 0),
+                      i.get("published_at") or "")
+
+          fresh = [i for i in news.get("items", []) if i.get("id") not in covered]
+          # 1er choix : validé par le rédacteur en chef.
+          cands = [i for i in fresh if (i.get("editorial") or {}).get("publish")]
+          # 2e choix : pas encore d'avis éditorial → on retombe sur l'heuristique.
           if not cands:
-              print("::warning::Aucun item score ≥ 70 non couvert — skip ce run")
+              cands = [i for i in fresh
+                       if not i.get("editorial") and (i.get("score") or 0) >= 6]
+          cands.sort(key=rank, reverse=True)
+          if not cands:
+              print(f"::warning::Aucun candidat publiable parmi {len(fresh)} items frais — skip ce run")
               with open(os.environ['GITHUB_OUTPUT'],'a') as f:
                   f.write("topic=\n")
               exit(0)
           top = cands[0]
+          print(f"{len(cands)} candidats · retenu quality="
+                f"{(top.get('editorial') or {}).get('quality')} score={top.get('score')}")
           # Sérialise le topic dans une var GH (1 ligne)
           serialized = json.dumps({
               "id": top.get("id"),
@@ -71,8 +88,16 @@ jobs:
               "score": top.get("score"),
               "image_url": top.get("image_url",""),
           }, ensure_ascii=False).replace('\n',' ')
+          # Compteur réel — il était figé à « 973/1000 » dans le prompt, donc faux
+          # dès le but suivant. Un chiffre faux sur un site de compteur, c'est le
+          # seul chiffre que le lecteur vient vérifier.
+          try:
+              goals = json.load(open("public/stats.json")).get("goals")
+          except Exception:
+              goals = None
           with open(os.environ['GITHUB_OUTPUT'],'a') as f:
               f.write(f"topic={serialized}\n")
+              f.write(f"goals={goals or ''}\n")
           print("Topic choisi :", top.get("title_fr") or top.get("title"))
           PY
 
@@ -88,6 +113,12 @@ jobs:
             ${{ steps.pick.outputs.topic }}
 
             ## Mission
+            0. LIS LA SOURCE EN ENTIER avant d'écrire : ouvre l'URL du topic avec
+               `python3 -c "import sys; sys.path.insert(0,'scripts'); from lib.article_fetch import article_text; print(article_text('<url>')[0])"`.
+               Le résumé du topic est une amorce, pas l'article. L'information la
+               plus forte est rarement dans le premier paragraphe. Si la
+               récupération échoue, écris à partir du seul résumé — et n'invente
+               strictement rien de plus.
             1. Lis EDITORIAL/STYLE_GUIDE.md pour la charte (ton, longueur, marque CR7, etc.).
             2. Lis EDITORIAL/roles/JOURNALISTE_CR7.md, JOURNALISTE_MAROC.md ou JOURNALISTE_PORTUGAL.md selon le sujet.
             3. Rédige un article ORIGINAL en français (600-900 mots) :
@@ -113,7 +144,16 @@ jobs:
             - Si tu n'as pas une donnée → tu ne l'écris pas.
             - Respecte la charte (pas de "GOAT", pas de "CR7™", pas de prise position politique).
             - Si sujet Maroc → conclus par un encouragement type "Dima Maghrib".
-            - Si sujet CR7 → mentionne le compteur 973/1000 si pertinent.
+            - Si sujet CR7 → mentionne le compteur ${{ steps.pick.outputs.goals }}/1000 si pertinent.
+              N'écris JAMAIS un autre chiffre de compteur : celui-ci vient de stats.json.
+            - NOMS PROPRES : un club ne se traduit pas. "Real Madrid" n'est jamais
+              "Royal Madrid", "Córdoba" n'est jamais "Cordoue", "Girona" jamais "Gérone".
+            - HUMANISATION — on nous prend pour une IA, corrige ça. Interdits :
+              "il convient de noter", "il est important de souligner", "force est de
+              constater", "en effet" en tête de phrase, "véritable", "incontournable",
+              "dans un contexte où", les triades d'adjectifs, les conclusions qui
+              ouvrent sur l'avenir ("reste à savoir si...", "l'avenir nous dira...").
+              Alterne phrases courtes et longues. Nomme les gens et les chiffres.
           claude_args: '--allowedTools Read,Write,Edit,Bash,Glob,Grep'
 
       - name: Commit & push si changement

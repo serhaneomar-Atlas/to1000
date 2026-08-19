@@ -74,6 +74,11 @@ def build_patterns(goals, remaining, month, year):
         # n'étaient couverts par aucun motif → la home affichait 975 en dur)
         (re.compile(r'aria-label="\d{3,4} buts">\d{3,4}'), f'aria-label="{g} buts">{g}', "hero-ch-num"),
         (re.compile(r'aria-valuenow="\d{3,4}"'), f'aria-valuenow="{g}"', "progressbar"),
+        # La pastille « Live · NNN » du hero échappait à la synchro : elle est
+        # restée à 975 alors que le compteur affichait 976 juste au-dessus.
+        # C'est le premier chiffre que voit un visiteur, et deux valeurs
+        # différentes sur le même écran suffisent à faire douter du reste.
+        (re.compile(r"(Live\s*·\s*)\d{3,4}"), lambda m: f"{m.group(1)}{g}", "live-pill"),
         (re.compile(r'class="n impact">\d{3,4}<'), f'class="n impact">{g}<', "stat-tile"),
         (re.compile(r"<b>\d{1,3} buts</b> avant l"), f"<b>{r} buts</b> avant l", "meta-remaining-fr"),
         (re.compile(r"Ronaldo à \d{1,3} buts du cap"), f"Ronaldo à {r} buts du cap", "faq-remaining-fr"),

@@ -95,6 +95,36 @@ def best_title(item: dict, lang: str = "fr") -> str:
     return item.get("title") or "Untitled"
 
 
+# Le fil agrège de l'espagnol, de l'anglais, de l'arabe, de l'allemand, du
+# portugais… Écrire « texte original (anglais) » en dur était faux dans la
+# majorité des cas — et un lecteur qui déplie un texte espagnol sous un label
+# « anglais » n'a plus de raison de nous croire sur le reste.
+SOURCE_LANG_LABELS = {
+    "en": "anglais", "es": "espagnol", "fr": "français", "ar": "arabe",
+    "de": "allemand", "it": "italien", "pt": "portugais", "nl": "néerlandais",
+}
+
+
+def source_lang_label(item: dict) -> str:
+    """« espagnol », « arabe »… ou chaîne vide si la langue est inconnue."""
+    lang = ((item.get("primary_source") or {}).get("lang")
+            or item.get("source_lang") or "").lower()[:2]
+    return SOURCE_LANG_LABELS.get(lang, "")
+
+
+def body_parts(item: dict, lang: str = "fr") -> tuple[str, list]:
+    """(format, éléments) du développement rédigé par le conseil de rédaction.
+
+    Format vaut "brief" / "deep" (paragraphes) ou "bullets" (puces). Un article
+    non encore enrichi renvoie une liste vide — la page se rend alors comme
+    avant, avec le seul lead.
+    """
+    entry = (item.get("i18n", {}) or {}).get(lang) or {}
+    parts = [str(p).strip() for p in (entry.get("body") or []) if str(p).strip()]
+    fmt = entry.get("format") or "brief"
+    return (fmt if fmt in ("brief", "deep", "bullets") else "brief"), parts
+
+
 def best_summary(item: dict, lang: str = "fr") -> str:
     if lang == "fr":
         return (item.get("summary_fr")
@@ -220,8 +250,21 @@ def render_article(item: dict, all_items: list | None = None) -> str:
     body_html = ""
     if summary_fr:
         body_html += f"<p class=\"lead\">{h(summary_fr)}</p>"
+
+    # Développement rédigé (2-3 paragraphes ou puces) quand le conseil de
+    # rédaction l'a produit — c'est ce qui distingue une brève d'un article.
+    _fmt, _parts = body_parts(item, "fr")
+    if _parts:
+        if _fmt == "bullets":
+            _lis = "".join(f"<li>{h(p)}</li>" for p in _parts)
+            body_html += f"<ul class=\"essentiel\">{_lis}</ul>"
+        else:
+            body_html += "".join(f"<p>{h(p)}</p>" for p in _parts)
+
     if summary_en and summary_en != summary_fr:
-        body_html += f"<details class=\"original\"><summary>Voir le texte original (anglais)</summary><p>{h(summary_en)}</p></details>"
+        _lang = source_lang_label(item)
+        _label = f"Voir le texte original ({_lang})" if _lang else "Voir le texte original"
+        body_html += f"<details class=\"original\"><summary>{h(_label)}</summary><p>{h(summary_en)}</p></details>"
 
     # JSON-LD NewsArticle (enriched)
     ld = {
@@ -371,6 +414,9 @@ h1 {{ font-size: clamp(1.6rem, 4.5vw, 2.6rem); font-weight: 900; line-height: 1.
 .hero-img {{ margin: 0 0 1.5rem; }}
 .hero-img img {{ width: 100%; height: auto; border-radius: 10px; }}
 .lead {{ font-size: 1.1rem; color: #ddd; margin-bottom: 1rem; }}
+.essentiel {{ margin: 1.2rem 0; padding-left: 1.15rem; color: #d6dde5; }}
+.essentiel li {{ margin-bottom: 0.55rem; line-height: 1.6; }}
+.essentiel li::marker {{ color: #f2c14e; }}
 .original {{ background: #0d1118; border: 1px solid #1d2530; border-radius: 8px; padding: 1rem; margin: 1.5rem 0; }}
 .original summary {{ cursor: pointer; color: #f2c14e; font-weight: 700; }}
 .original p {{ margin-top: 0.6rem; color: #bbb; }}
