@@ -142,3 +142,29 @@ def test_le_rapport_compte_la_lecture_du_source_et_le_developpement():
 def test_similarite_reconnait_la_paraphrase_et_ignore_le_vrai_apport():
     assert similarite("Le Real gagne 2-0", "Le Real gagne 2-0") == 1.0
     assert similarite("Le Real gagne", "Mbappé absent trois semaines") < 0.2
+
+
+# ── Latin resté dans un texte arabe ─────────────────────────────────────────
+def test_detecte_un_nom_propre_latin_dans_un_titre_arabe():
+    """« Arsenal يؤكد أن تجديد عقد Mikel Arteta » — vu en prod sur 25 articles.
+
+    La presse arabe translittère : un mot latin dans un titre arabe est une
+    traduction inachevée, aussi visible qu'un « Royal Madrid » en français.
+    """
+    item = _item()
+    item["i18n"]["ar"]["title"] = "Arsenal يؤكد أن تجديد عقد Mikel Arteta"
+    defauts = [d for d in audite_item(item) if d["type"] == "latin_en_arabe"]
+    assert len(defauts) == 1
+    assert "Arsenal" in defauts[0]["detail"]
+
+
+def test_un_arabe_entierement_translittere_ne_declenche_rien():
+    item = _item()
+    item["i18n"]["ar"]["title"] = "أرسنال يؤكد تجديد عقد ميكيل أرتيتا"
+    item["i18n"]["ar"]["summary"] = "أعلن النادي اللندني أن التجديد بات وشيكاً."
+    assert not [d for d in audite_item(item) if d["type"] == "latin_en_arabe"]
+
+
+def test_le_controle_latin_ne_vise_que_l_arabe():
+    """Un titre français contient évidemment des mots latins."""
+    assert not [d for d in audite_item(_item()) if d["type"] == "latin_en_arabe"]
