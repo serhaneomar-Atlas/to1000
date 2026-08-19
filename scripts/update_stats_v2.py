@@ -290,19 +290,32 @@ def main() -> int:
             except Exception as e:
                 print(f"  ⚠ FORCE_GOALS: marquage des buts du jour échoué: {e}")
 
-    # Crédit automatique des nouveaux buts CR7 (remplace goal_watcher_v2, jamais commité)
-    if sync_goals(stats):
-        print("  goals synced from ESPN")
-        changed = True
+    # Chaque source est isolée. Avant, une erreur ESPN sur le DERNIER match
+    # (403 quotidien depuis le 12/08) remontait et tuait tout le script : ni
+    # next_match rafraîchi, ni stats.json écrit — donc les buts déjà
+    # synchronisés avec succès étaient perdus eux aussi, et stats.json est resté
+    # figé au 26/07 pendant trois semaines. Une panne partielle ne doit jamais
+    # annuler le travail qui a réussi.
+    etapes = (
+        ("goals synced from ESPN", sync_goals),
+        ("last_match refreshed from ESPN", refresh_last_match),
+        ("next_match refreshed from ESPN", refresh_next_match),
+    )
+    echecs = []
+    for libelle, etape in etapes:
+        try:
+            if etape(stats):
+                print(f"  {libelle}")
+                changed = True
+        except Exception as e:
+            echecs.append(etape.__name__)
+            print(f"  ⚠ {etape.__name__} a échoué (source conservée) : {e}")
 
-    # Refresh last_match (peut surfacer un but loupé pour info)
-    if refresh_last_match(stats):
-        print("  last_match refreshed from ESPN")
-        changed = True
-    # Refresh next_match
-    if refresh_next_match(stats):
-        print("  next_match refreshed from ESPN")
-        changed = True
+    if echecs:
+        # Visible dans l'onglet Actions sans faire échouer le run : une panne
+        # côté ESPN n'est pas une régression de notre code, et un workflow
+        # rouge en permanence finit par ne plus être lu.
+        print(f"::warning::stats partiellement rafraîchies — échecs : {', '.join(echecs)}")
 
     if changed:
         stats["version"] = stats.get("version", 1) + 1
@@ -326,6 +339,11 @@ def main() -> int:
                 print(f"  ⚠ update_html_counts a échoué: {e}")
     else:
         print("  no change")
+    # Échec seulement si TOUTES les sources sont tombées : là, c'est une vraie
+    # panne qui mérite une alerte.
+    if len(echecs) == len(etapes):
+        print("::error::toutes les sources ESPN ont échoué")
+        return 1
     return 0
 
 

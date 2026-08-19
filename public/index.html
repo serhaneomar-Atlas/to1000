@@ -448,6 +448,18 @@
   #match .bg{background-image:url('/images/mockups/floodlights.jpg')}
   #match .scrim{background:linear-gradient(180deg,var(--ink) 0%,rgba(5,7,11,.55) 22%,rgba(5,7,11,.55) 70%,var(--ink) 100%),linear-gradient(90deg,rgba(5,7,11,.85),transparent 70%)}
   .match-grid{display:grid;grid-template-columns:1fr;gap:30px;align-items:center}
+  /* Dernier match — le pendant du « prochain rendez-vous ». Un visiteur qui
+     arrive après une rencontre cherche le résultat avant la date suivante ;
+     la donnée existait dans stats.json sans être affichée nulle part. */
+  .lastmatch{margin:18px 0 6px;padding:14px 16px;border:1px solid rgba(242,193,78,.28);
+    border-radius:10px;background:rgba(255,255,255,.05);max-width:520px}
+  .lastmatch[hidden]{display:none}
+  .lm-kicker{margin:0 0 6px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+    color:#f2c14e;font-weight:700}
+  .lm-line{margin:0;font-size:17px;font-weight:600;color:#f3f6f9}
+  .lm-score{font-variant-numeric:tabular-nums}
+  .lm-score.win{color:#6fd79b}.lm-score.loss{color:#f0897b}.lm-score.draw{color:#eed07a}
+  .lm-meta{margin:5px 0 0;font-size:13px;color:#b6c0ca}
   .fixture{
     border:1px solid var(--line);border-radius:16px;overflow:hidden;
     background:linear-gradient(180deg,rgba(13,17,24,.85),rgba(5,7,11,.9));
@@ -676,7 +688,7 @@
   </nav>
   <div class="topbar-right">
     <div class="lang-sw" role="group" aria-label="Language"><button type="button" data-l="fr" aria-pressed="false">FR</button><button type="button" data-l="en" aria-pressed="false">EN</button><button type="button" data-l="es" aria-pressed="false">ES</button><button type="button" data-l="ar" aria-pressed="false">AR</button></div>
-    <span class="livepill"><span class="dot" aria-hidden="true"></span>Live · 975</span>
+    <span class="livepill"><span class="dot" aria-hidden="true"></span>Live · 976</span>
     <button class="hamb" id="hamb" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
   </div>
 </header>
@@ -746,12 +758,17 @@
             <span class="name">Portugal</span>
           </div>
         </div>
-        <div class="foot" data-i18n="m_foot">Le Mondial 2026 continue — quarts, demies, finale : tous les matchs, heure par heure, sur To1000</div>
+        <div class="foot" data-i18n="m_foot">Club et sélection : chaque rencontre de Cristiano Ronaldo, heure par heure, sur To1000</div>
       </div>
       <div class="match-copy">
         <p class="kicker reveal" data-i18n="m_kicker">Prochain rendez-vous</p>
-        <h2 class="reveal d1" data-i18n-html="m_title">La route passe par <span class="gold">le Mondial</span></h2>
+        <h2 class="reveal d1" data-i18n-html="m_title">Chaque match <span class="gold">compte double</span></h2>
         <p class="reveal d2" data-i18n="m_desc">Le Portugal défie la Colombie pour une place au tour suivant. Chaque match du Mondial 2026 peut rapprocher Cristiano Ronaldo du cap mythique des 1000 buts — et nous le couvrons but par but, minute par minute.</p>
+        <div class="lastmatch reveal d2" id="lastmatch" hidden>
+          <p class="lm-kicker" data-i18n="lm_kicker">Dernier match</p>
+          <p class="lm-line"><span class="lm-teams"></span> <span class="lm-score"></span></p>
+          <p class="lm-meta"></p>
+        </div>
         <div class="cta-row reveal d3">
           <a href="#hero" class="btn gold" data-i18n="m_btn1">Suivre le compteur</a>
           <a href="/coupe-du-monde/" class="btn ghost" data-i18n="m_btn2">Toute l'actu Mondial</a>
@@ -933,9 +950,9 @@
       hero_eyebrow:"Cristiano Ronaldo · vers l’histoire",nav_goals:"Tous les buts",hero_live:"Live · Buts carrière",
       hero_h1:"Compte à rebours vers le 1000e but de Cristiano Ronaldo",scroll:"Défiler",
       goals_unit:"buts",rem_rest:"avant l’histoire",foot_prog:"Progression",foot_last:"Dernier but vs",live:"Live",
-      m_comp:"Coupe du Monde 2026",m_foot:"Le Mondial 2026 continue — quarts, demies, finale : tous les matchs, heure par heure, sur To1000",
-      m_kicker:"Prochain rendez-vous",m_title:'La route passe par <span class="gold">le Mondial</span>',
-      m_desc:"La Coupe du monde 2026 bat son plein — et chaque but de Cristiano Ronaldo, en club comme en sélection, le rapproche du cap mythique des 1000. On suit tout, match par match, minute par minute.",
+      m_comp:"Coupe du Monde 2026",m_foot:"Club et sélection : chaque rencontre de Cristiano Ronaldo, heure par heure, sur To1000",
+      m_kicker:"Prochain rendez-vous",lm_kicker:"Dernier match",lm_scored:"Ronaldo a marqué",m_title:'Chaque match <span class="gold">compte double</span>',
+      m_desc:"Chaque rencontre peut rapprocher Cristiano Ronaldo du cap des 1000 buts — avec son club comme avec sa sélection. Résultat du dernier match, date du prochain : nous suivons les deux, but par but, minute par minute.",
       m_btn1:"Suivre le compteur",m_btn2:"Toute l’actu Mondial",
       p_kicker:"Le parcours",p_title:'Six clubs. <span style="color:var(--gold)">Une légende.</span>',
       era_sporting:"Lisbonne · les débuts",era_manu:"Premier League · le sacre",era_real:"Liga · l’ère galactique",era_juve:"Serie A · l’Italie",era_nassr:"Saudi Pro League · aujourd’hui",era_por:"Sélection · record mondial",
@@ -951,9 +968,9 @@
       hero_eyebrow:"Cristiano Ronaldo · toward history",nav_goals:"All goals",hero_live:"Live · Career goals",
       hero_h1:"Countdown to Cristiano Ronaldo’s 1000th goal",scroll:"Scroll",
       goals_unit:"goals",rem_rest:"from history",foot_prog:"Progress",foot_last:"Last goal vs",live:"Live",
-      m_comp:"World Cup 2026",m_foot:"The 2026 World Cup rolls on — quarter-finals to the final: every match, hour by hour, on To1000",
-      m_kicker:"Next fixture",m_title:'The road runs through <span class="gold">the World Cup</span>',
-      m_desc:"The 2026 World Cup is in full swing — and every Cristiano Ronaldo goal, for club or country, brings him closer to the mythical 1000 mark. We track it all, match by match, minute by minute.",
+      m_comp:"World Cup 2026",m_foot:"Club and country: every Cristiano Ronaldo fixture, hour by hour, on To1000",
+      m_kicker:"Next fixture",lm_kicker:"Last match",lm_scored:"Ronaldo scored",m_title:'Every match <span class="gold">counts twice</span>',
+      m_desc:"Every fixture can move Cristiano Ronaldo closer to 1000 career goals — for club and for country. Last result, next kick-off: we track both, goal by goal, minute by minute.",
       m_btn1:"Follow the counter",m_btn2:"All World Cup news",
       p_kicker:"The journey",p_title:'Six clubs. <span style="color:var(--gold)">One legend.</span>',
       era_sporting:"Lisbon · the beginning",era_manu:"Premier League · the rise",era_real:"La Liga · the galactic era",era_juve:"Serie A · Italy",era_nassr:"Saudi Pro League · today",era_por:"National team · world record",
@@ -969,9 +986,9 @@
       hero_eyebrow:"Cristiano Ronaldo · hacia la historia",nav_goals:"Todos los goles",hero_live:"En vivo · Goles de carrera",
       hero_h1:"Cuenta atrás hacia el gol 1000 de Cristiano Ronaldo",scroll:"Desplázate",
       goals_unit:"goles",rem_rest:"para la historia",foot_prog:"Progreso",foot_last:"Último gol vs",live:"En vivo",
-      m_comp:"Mundial 2026",m_foot:"El Mundial 2026 sigue — de cuartos a la final: todos los partidos, hora a hora, en To1000",
-      m_kicker:"Próxima cita",m_title:'El camino pasa por <span class="gold">el Mundial</span>',
-      m_desc:"El Mundial 2026 está en marcha — y cada gol de Cristiano Ronaldo, con su club o su selección, lo acerca a la mítica cifra de 1000. Lo seguimos todo, partido a partido.",
+      m_comp:"Mundial 2026",m_foot:"Club y selección: cada partido de Cristiano Ronaldo, hora a hora, en To1000",
+      m_kicker:"Próxima cita",lm_kicker:"Último partido",lm_scored:"Ronaldo marcó",m_title:'Cada partido <span class="gold">cuenta doble</span>',
+      m_desc:"Cada partido puede acercar a Cristiano Ronaldo a los 1000 goles — con su club y con su selección. Resultado del último, fecha del próximo: seguimos ambos, gol a gol, minuto a minuto.",
       m_btn1:"Seguir el contador",m_btn2:"Toda la actualidad del Mundial",
       p_kicker:"La trayectoria",p_title:'Seis clubes. <span style="color:var(--gold)">Una leyenda.</span>',
       era_sporting:"Lisboa · los inicios",era_manu:"Premier League · la consagración",era_real:"La Liga · la era galáctica",era_juve:"Serie A · Italia",era_nassr:"Saudi Pro League · hoy",era_por:"Selección · récord mundial",
@@ -987,9 +1004,9 @@
       hero_eyebrow:"كريستيانو رونالدو · نحو التاريخ",nav_goals:"كل الأهداف",hero_live:"مباشر · أهداف المسيرة",
       hero_h1:"العد التنازلي نحو الهدف الألف لكريستيانو رونالدو",scroll:"مرّر",
       goals_unit:"هدف",rem_rest:"تفصله عن التاريخ",foot_prog:"التقدّم",foot_last:"آخر هدف ضد",live:"مباشر",
-      m_comp:"كأس العالم 2026",m_foot:"مونديال 2026 مستمر — من ربع النهائي إلى النهائي: كل المباريات، ساعة بساعة، على To1000",
-      m_kicker:"الموعد القادم",m_title:'الطريق يمرّ عبر <span class="gold">كأس العالم</span>',
-      m_desc:"كأس العالم 2026 في أوجها — وكل هدف لكريستيانو رونالدو، مع ناديه أو منتخبه، يقرّبه من رقم الألف الأسطوري. نتابع كل شيء، مباراة بمباراة.",
+      m_comp:"كأس العالم 2026",m_foot:"النادي والمنتخب: كل مباراة لكريستيانو رونالدو، ساعة بساعة، على To1000",
+      m_kicker:"الموعد القادم",lm_kicker:"المباراة الأخيرة",lm_scored:"رونالدو سجّل",m_title:'كل مباراة <span class="gold">تُحتسب مرّتين</span>',
+      m_desc:"كل مباراة قد تقرّب كريستيانو رونالدو من حاجز الألف هدف — مع ناديه ومع منتخبه. نتيجة المباراة الأخيرة وموعد القادمة: نتابع الاثنتين، هدفاً بهدف، دقيقة بدقيقة.",
       m_btn1:"تابع العدّاد",m_btn2:"كل أخبار المونديال",
       p_kicker:"المسيرة",p_title:'ستة أندية. <span style="color:var(--gold)">أسطورة واحدة.</span>',
       era_sporting:"لشبونة · البداية",era_manu:"البريمييرليغ · التتويج",era_real:"الليغا · حقبة الغالاكتيكوس",era_juve:"الدوري الإيطالي · إيطاليا",era_nassr:"الدوري السعودي · الحاضر",era_por:"المنتخب · رقم قياسي عالمي",
@@ -1066,6 +1083,28 @@
       var when=document.querySelector('#match .head .when');
       if(when&&m.kickoff_utc){try{var d=new Date(m.kickoff_utc); when.textContent=d.toLocaleDateString(LANG,{day:'numeric',month:'long'})+' · '+d.toLocaleTimeString(LANG,{hour:'2-digit',minute:'2-digit'});}catch(e){}}
     }
+    renderLastMatch(s.last_match);
+  }
+  // Le dernier résultat : présent dans stats.json depuis toujours, affiché
+  // nulle part. On ne montre le bloc que si le score est réellement connu —
+  // un cadre vide vaut moins que pas de cadre.
+  function renderLastMatch(lm){
+    var box=document.getElementById('lastmatch'); if(!box)return;
+    if(!lm||!lm.home_team||lm.score_home===null||lm.score_home===undefined){box.hidden=true;return;}
+    var teams=box.querySelector('.lm-teams'), score=box.querySelector('.lm-score'), meta=box.querySelector('.lm-meta');
+    if(teams)teams.textContent=lm.home_team+' – '+lm.away_team;
+    if(score){
+      score.textContent=lm.score_home+'–'+lm.score_away;
+      score.className='lm-score '+(lm.result==='W'?'win':lm.result==='L'?'loss':'draw');
+    }
+    if(meta){
+      var bits=[];
+      if(lm.competition)bits.push(esc(lm.competition));
+      if(lm.date_iso){try{bits.push(new Date(lm.date_iso).toLocaleDateString(LANG,{day:'numeric',month:'long',year:'numeric'}));}catch(e){}}
+      if(lm.cr7_scored)bits.push(t('lm_scored')+(lm.cr7_minute?" ("+lm.cr7_minute+"')":''));
+      meta.textContent=bits.join(' · ');
+    }
+    box.hidden=false;
   }
   function relTime(iso){try{var diff=(new Date(iso).getTime()-Date.now())/1000,a=Math.abs(diff),rtf=new Intl.RelativeTimeFormat(LANG,{numeric:'auto'});
     if(a<3600)return rtf.format(Math.round(diff/60),'minute'); if(a<86400)return rtf.format(Math.round(diff/3600),'hour'); return rtf.format(Math.round(diff/86400),'day');}catch(e){return'';}}
