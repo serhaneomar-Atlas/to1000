@@ -108,9 +108,13 @@ _CALQUES_C = {
 }
 
 # Un nom propre = suite de mots capitalisés, éventuellement liés par de/du/of…
+# Bornée à 4 mots : sans limite, la regex enchaînait les groupes capitalisés
+# séparés par de la ponctuation et produisait des chimères du genre
+# « LaLiga Hypermotion El Córdoba CF », inutilisables comme terme protégé.
 _PROPER_RE = re.compile(
-    r"\b[A-ZÀ-ÝÄÖÜ][\w'’\-]+(?:\s+(?:de|del|da|do|of|van|von|el|al|le|la)\s+)?"
-    r"(?:\s+[A-ZÀ-ÝÄÖÜ][\w'’\-]+)*"
+    r"\b[A-ZÀ-ÝÄÖÜ][\w'’\-]+(?:\s+(?:de|del|da|do|of|van|von|el|al|le|la)\s+"
+    r"[A-ZÀ-ÝÄÖÜ][\w'’\-]+)?"
+    r"(?:\s+[A-ZÀ-ÝÄÖÜ][\w'’\-]+){0,2}"
 )
 
 # Mots capitalisés en début de phrase qui ne sont pas des noms propres.
@@ -148,6 +152,12 @@ def protected_terms(*texts: str, limit: int = 25) -> list[str]:
 
     for m in _PROPER_RE.finditer(blob):
         term = _norm(m.group(0)).strip(".,;:!?")
+        # Un article en tête de phrase est capitalisé sans être un nom propre :
+        # « El Córdoba CF » doit se réduire à « Córdoba CF ».
+        head = term.split(" ", 1)
+        while len(head) == 2 and head[0].lower() in _NOT_PROPER:
+            term = head[1]
+            head = term.split(" ", 1)
         if len(term) < 4 or term.lower() in _NOT_PROPER:
             continue
         # Un mot unique tout en majuscules est probablement un sigle bruyant.

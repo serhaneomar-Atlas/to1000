@@ -1,0 +1,181 @@
+name: Conseil d'audit (qualité du fil News)
+
+# Le conseil de rédaction produit ; ce workflow relit ce qui est publié.
+#
+# Sans lui, une régression de qualité — retour de la traduction mot-à-mot,
+# résumés qui paraphrasent le titre, ton robotique — reste invisible jusqu'à ce
+# qu'un lecteur cesse de revenir. C'est exactement ce qui s'est produit entre
+# mai et août 2026 : trois workflows au vert, un fil dégradé, personne d'alerté.
+#
+# L'audit est déterministe (aucun appel API, quelques secondes) : il peut donc
+# tourner souvent et sans coût. Il publie un rapport horodaté, tient une série
+# historique pour voir la tendance, et ouvre une alerte quand le score décroche.
+
+on:
+  schedule:
+    - cron: "0 6 * * *"       # une fois par jour, 06h UTC
+  workflow_dispatch:
+    inputs:
+      seuil:
+        description: "Score minimal accepté (0-100)"
+        required: false
+        default: "70"
+  push:                       # re-auditer dès qu'on touche à la chaîne éditoriale
+    branches: [main]
+    paths:
+      - 'scripts/editorial.py'
+      - 'scripts/translator.py'
+      - 'scripts/enrich_news.py'
+      - 'scripts/audit_editorial.py'
+      - 'scripts/lib/glossary.py'
+      - 'scripts/lib/article_fetch.py'
+      - '.github/workflows/editorial-audit.yml'
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: editorial-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Lancer les tests de la chaîne éditoriale
+        # Un audit qui tourne sur du code cassé ne vaut rien : on vérifie
+        # d'abord que la chaîne elle-même tient.
+        run: |
+          pip install --quiet pytest
+          python -m pytest scripts/tests/test_editorial_pipeline.py \
+                           scripts/tests/test_audit_editorial.py \
+                           scripts/tests/test_article_fetch.py -q
+
+      - name: Auditer le fil publié
+        id: audit
+        continue-on-error: true     # on veut le rapport commité même si le score est bas
+        run: |
+          python scripts/audit_editorial.py \
+            --json EDITORIAL/state/audit_latest.json \
+            --seuil "${{ github.event.inputs.seuil || '70' }}" | tee audit.txt
+          echo "score=$(python -c "import json;print(json.load(open('EDITORIAL/state/audit_latest.json'))['score'])")" >> $GITHUB_OUTPUT
+
+      - name: Tenir la série historique (tendance, pas photo)
+        run: |
+          python3 << 'PY'
+          import json
+          from pathlib import Path
+          rapport = json.loads(Path("EDITORIAL/state/audit_latest.json").read_text())
+          hist_path = Path("EDITORIAL/state/audit_history.jsonl")
+          # Une ligne par run, sans le détail des défauts : le fichier reste
+          # lisible et diffable après des centaines d'audits.
+          ligne = {
+              "ts": rapport["genere_le"],
+              "score": rapport["score"],
+              "articles": rapport["articles"],
+              "defauts": rapport["defauts_total"],
+              "par_type": rapport["par_type"],
+              "enrichis_pct": rapport["couverture"]["enrichis_pct"],
+          }
+          with hist_path.open("a", encoding="utf-8") as f:
+              f.write(json.dumps(ligne, ensure_ascii=False) + "\n")
+          print("historique :", ligne)
+          PY
+
+      - name: Commit du rapport
+        run: |
+          git config user.name "to1000-audit-bot"
+          git config user.email "to1000-audit-bot@users.noreply.github.com"
+          git add EDITORIAL/state/audit_latest.json EDITORIAL/state/audit_history.jsonl
+          if git diff --cached --quiet; then
+            echo "::notice::Rapport inchangé"
+          else
+            git commit -m "chore(audit): rapport qualité News [score ${{ steps.audit.outputs.score }}]"
+            git push origin HEAD:main 2>/dev/null || git push 2>/dev/null || true
+          fi
+
+      - name: Alerter si le score décroche
+        if: steps.audit.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const rapport = JSON.parse(fs.readFileSync('EDITORIAL/state/audit_latest.json', 'utf8'));
+            const seuil = '${{ github.event.inputs.seuil || '70' }}';
+            const titre = `Qualité du fil News : ${rapport.score}/100 (seuil ${seuil})`;
+
+            // Une seule issue ouverte à la fois : on met à jour l'existante au
+            // lieu d'en empiler une par jour, sinon l'alerte devient du bruit
+            // et plus personne ne la lit.
+            const ouvertes = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'audit-editorial',
+            });
+
+            const types = Object.entries(rapport.par_type)
+              .map(([t, n]) => `| \`${t}\` | ${n} |`).join('\n');
+            const exemples = rapport.defauts.slice(0, 10)
+              .map(d => `- \`${d.id}\` [${d.lang}] **${d.type}** — ${d.detail}`).join('\n');
+
+            const corps = [
+              `Le conseil d'audit place le fil à **${rapport.score}/100**, sous le seuil de ${seuil}.`,
+              ``,
+              `- Articles audités : ${rapport.articles}`,
+              `- Défauts relevés : ${rapport.defauts_total}`,
+              `- Enrichis par le conseil de rédaction : ${rapport.couverture.enrichis}/${rapport.articles} (${rapport.couverture.enrichis_pct} %)`,
+              `- Source lue en entier : ${rapport.couverture.source_lu_en_entier}`,
+              ``,
+              `| Défaut | Occurrences |`,
+              `|---|---|`,
+              types,
+              ``,
+              `### Exemples`,
+              exemples,
+              ``,
+              `<sub>Rapport complet : \`EDITORIAL/state/audit_latest.json\` · tendance : \`audit_history.jsonl\`</sub>`,
+            ].join('\n');
+
+            if (ouvertes.data.length > 0) {
+              await github.rest.issues.update({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: ouvertes.data[0].number,
+                title: titre, body: corps,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner, repo: context.repo.repo,
+                title: titre, body: corps, labels: ['audit-editorial'],
+              });
+            }
+
+      - name: Fermer l'alerte quand la qualité est revenue
+        if: steps.audit.outcome == 'success'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const ouvertes = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: 'open', labels: 'audit-editorial',
+            });
+            for (const issue of ouvertes.data) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: issue.number,
+                body: `Score revenu à **${{ steps.audit.outputs.score }}/100**, au-dessus du seuil. Fermeture automatique.`,
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: issue.number, state: 'closed', state_reason: 'completed',
+              });
+            }
