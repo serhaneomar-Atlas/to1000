@@ -65,6 +65,12 @@ jobs:
         id: audit
         continue-on-error: true     # on veut le rapport commité même si le score est bas
         run: |
+          # pipefail est INDISPENSABLE ici : sans lui, le code de sortie du
+          # pipeline est celui de `tee`, qui réussit toujours. L'audit pouvait
+          # sortir 1 sur un score sous le seuil sans que l'étape échoue — donc
+          # sans jamais lever l'alerte. Exactement la panne silencieuse que ce
+          # workflow existe pour éliminer.
+          set -o pipefail
           python scripts/audit_editorial.py \
             --json EDITORIAL/state/audit_latest.json \
             --seuil "${{ github.event.inputs.seuil || '70' }}" | tee audit.txt
@@ -74,6 +80,7 @@ jobs:
         id: qa
         continue-on-error: true     # informatif : ne bloque pas la publication du rapport
         run: |
+          set -o pipefail
           python scripts/qa_site.py --json EDITORIAL/state/qa_latest.json | tee qa.txt
 
       - name: Vérifier la cohérence des compteurs de buts
@@ -114,6 +121,17 @@ jobs:
             git commit -m "chore(audit): rapport qualité News [score ${{ steps.audit.outputs.score }}]"
             git push origin HEAD:main 2>/dev/null || git push 2>/dev/null || true
           fi
+
+      - name: Résumé du run
+        if: always()
+        run: |
+          {
+            echo "## Audit qualité"
+            echo
+            [ -f audit.txt ] && sed -n '/CONSEIL/,$p' audit.txt
+            echo
+            [ -f qa.txt ] && sed -n '/QA SITE/,$p' qa.txt
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Alerter si le score décroche
         if: steps.audit.outcome == 'failure'
