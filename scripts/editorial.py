@@ -22,7 +22,7 @@ try:
     from lib.glossary import prompt_block, protected_terms, repair_pack
 except ImportError:  # exécution isolée → dégradation douce
     def article_text(_url, fallback=""): return (fallback or ""), "rss"
-    def prompt_block(_terms): return ""
+    def prompt_block(_terms, _langs=None): return ""
     def protected_terms(*_t, **_k): return []
     def repair_pack(pack): return pack
 
@@ -86,7 +86,11 @@ def chief_editor_review(translator, title: str, summary: str, src: str,
     langs = list(dict.fromkeys([src] + [t for t in targets if t != src]))
     # CACHE D'ABORD (gratuit) — marche même si Gemini est coupé (mode cache-only
     # de news-sync). v5 = chaîne 5 étapes avec lecture du source + formats.
-    cache_key = "edtv5:" + translator_hash(title, summary, src, langs) if getattr(translator, "cache", None) else None
+    # v6 : la consigne arabe a changé (translittération au lieu de « reproduis à
+    # l'identique »). Sans nouvelle version de clé, les verdicts déjà en cache
+    # rejoueraient les titres mi-arabes mi-latins et le correctif n'aurait aucun
+    # effet visible.
+    cache_key = "edtv6:" + translator_hash(title, summary, src, langs) if getattr(translator, "cache", None) else None
     if cache_key and translator.cache:
         cached = translator.cache.get(cache_key)
         if cached:
@@ -185,7 +189,7 @@ def chief_editor_review(translator, title: str, summary: str, src: str,
         "phrasé naturel d'un journaliste sportif natif, idiomes du pays, registre "
         "flash info. Garde les chiffres et scores exacts. Conserve le MÊME nombre "
         "d'éléments dans body, dans le même ordre.\n"
-        "Langues cibles : " + names + "\n" + prompt_block(terms) + "\n" + ANTI_IA + "\n"
+        "Langues cibles : " + names + "\n" + prompt_block(terms, langs) + "\n" + ANTI_IA + "\n"
         'JSON : {"fr": {"title": "...", "lead": "...", "body": ["..."]}, ...} '
         "(une entrée par langue cible)",
         json.dumps({"source_lang": src, "title": redac.get("title") or title,
@@ -203,9 +207,12 @@ def chief_editor_review(translator, title: str, summary: str, src: str,
         "(rappel CdM 2026 : seizièmes AVANT huitièmes) ;\n"
         "• le lead porte bien L'INFORMATION CENTRALE, pas une paraphrase du titre ;\n"
         "• body apporte du neuf par rapport au lead, sans redite ;\n"
-        "• NOMS PROPRES intacts : un club ne se traduit jamais (« Real Madrid » "
-        "n'est pas « Royal Madrid », « Córdoba » n'est pas « Cordoue »). En "
-        "arabe, translittération usuelle ;\n"
+        "• NOMS PROPRES intacts dans les langues latines : un club ne se traduit "
+        "jamais (« Real Madrid » n'est pas « Royal Madrid », « Córdoba » n'est "
+        "pas « Cordoue »). En ARABE c'est l'inverse : AUCUN mot en alphabet "
+        "latin ne doit subsister — tout nom propre est translittéré "
+        "(Arsenal → أرسنال, Mikel Arteta → ميكيل أرتيتا). Un titre arabe "
+        "contenant un mot latin est à réécrire ;\n"
         "• chaque version sonne comme un flash info NATIF, écrit par un humain ;\n"
         "• titres ≤ 80 caractères, lead 15-28 mots.\n"
         "Corrige DIRECTEMENT ce qui doit l'être et renvoie le paquet final. "

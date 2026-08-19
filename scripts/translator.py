@@ -30,7 +30,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 try:
     from lib.glossary import prompt_block, protected_terms, repair_calques
 except ImportError:  # exécution hors arborescence scripts/ → dégradation douce
-    def prompt_block(_terms): return ""
+    def prompt_block(_terms, _langs=None): return ""
     def protected_terms(*_t, **_k): return []
     def repair_calques(text, _lang): return text
 
@@ -242,7 +242,9 @@ class Translator:
         if not title:
             return None
         langs = list(dict.fromkeys([src] + [t for t in targets if t != src]))
-        cache_key = "edi:" + hash_key(title + "|" + summary[:200], src, ",".join(langs))
+        # v2 : même raison que edtv6 — la consigne de translittération arabe a
+        # changé, les paquets en cache doivent être refaits.
+        cache_key = "edi2:" + hash_key(title + "|" + summary[:200], src, ",".join(langs))
         if self.cache:
             cached = self.cache.get(cache_key)
             if cached:
@@ -260,7 +262,7 @@ class Translator:
             "exclamation marks, rhetorical questions, 'read more' calls, filler. "
             "Keep only key facts (who, what, numbers, stakes). Preserve proper nouns. "
             'Respond with valid JSON only: {"fr":{"title":"...","summary":"..."}, ...}'
-            + prompt_block(protected_terms(title, summary))
+            + prompt_block(protected_terms(title, summary), [dst])
         )
         user = json.dumps({"source_lang": src, "title": title,
                            "text": (summary or title)[:800]}, ensure_ascii=False)
@@ -315,7 +317,7 @@ class Translator:
                     f"idiomatic prose with zero clickbait. Translate the meaning, not "
                     f"word-for-word. Preserve all proper nouns. Respond with valid JSON "
                     f'only: {{"title": "...", "summary": "..."}}'
-                    + prompt_block(protected_terms(title, summary))
+                    + prompt_block(protected_terms(title, summary), langs)
                 )
                 user = json.dumps({"title": title, "summary": summary[:600]}, ensure_ascii=False)
                 raw = self._call_gemini(system, user)

@@ -233,3 +233,29 @@ class TestConsignesInjectees(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestConsigneArabe(unittest.TestCase):
+    """La consigne « reproduis à l'identique » est toxique pour l'arabe."""
+
+    def _prompt_traduction(self, langs):
+        tr = FakeTranslator(FULL_CHAIN)
+        with _no_network(body="Arsenal confirme la prolongation de Mikel Arteta."):
+            chief_editor_review(tr, "Arsenal et Mikel Arteta", "Prolongation.",
+                                "fr", langs)
+        return tr.prompts[2]
+
+    def test_l_arabe_recoit_la_consigne_de_translitteration(self):
+        prompt = self._prompt_traduction(["fr", "en", "es", "ar"])
+        self.assertIn("INVERSE", prompt)
+        self.assertIn("ريال مدريد", prompt)
+
+    def test_sans_arabe_la_consigne_de_translitteration_est_absente(self):
+        """Elle n'aurait aucun sens et gaspillerait des tokens."""
+        self.assertNotIn("INVERSE", self._prompt_traduction(["fr", "en", "es"]))
+
+    def test_la_validation_finale_refuse_un_arabe_mi_latin(self):
+        tr = FakeTranslator(FULL_CHAIN)
+        with _no_network():
+            chief_editor_review(tr, "t", "s", "fr", LANGS)
+        self.assertIn("AUCUN mot en alphabet latin", tr.prompts[3])

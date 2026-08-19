@@ -206,16 +206,65 @@ def missing_terms(src_text: str, out_text: str, lang: str,
     return [t for t in terms if t.lower() not in low]
 
 
-def prompt_block(terms: list[str]) -> str:
-    """Bloc d'instruction à coller dans un prompt de traduction."""
+# Translittérations de référence pour l'arabe. La consigne « reproduis à
+# l'identique » y est TOXIQUE : elle produit des titres mi-arabes mi-latins
+# (« Arsenal يؤكد أن تجديد عقد Mikel Arteta ») — observé sur 25 articles sur 44.
+# Pour un lecteur arabophone, c'est aussi décrédibilisant que « Royal Madrid »
+# pour un francophone.
+TRANSLITTERATIONS_AR = {
+    "Real Madrid": "ريال مدريد", "Barcelona": "برشلونة", "Barça": "برشلونة",
+    "Arsenal": "أرسنال", "Manchester United": "مانشستر يونايتد",
+    "Manchester City": "مانشستر سيتي", "Liverpool": "ليفربول",
+    "Chelsea": "تشيلسي", "Bayern Munich": "بايرن ميونخ",
+    "Juventus": "يوفنتوس", "AC Milan": "ميلان", "Inter": "إنتر",
+    "Paris Saint-Germain": "باريس سان جيرمان", "PSG": "باريس سان جيرمان",
+    "Al Nassr": "النصر", "Al Hilal": "الهلال", "Al Ittihad": "الاتحاد",
+    "Al-Ahly": "الأهلي", "Benfica": "بنفيكا", "FC Porto": "بورتو",
+    "Sporting CP": "سبورتينغ لشبونة", "Atlético Madrid": "أتلتيكو مدريد",
+    "Ligue 1": "الدوري الفرنسي", "Premier League": "الدوري الإنجليزي",
+    "LaLiga": "الدوري الإسباني", "Serie A": "الدوري الإيطالي",
+    "Bundesliga": "الدوري الألماني", "Champions League": "دوري أبطال أوروبا",
+}
+
+
+def prompt_block(terms: list[str], langs: list[str] | None = None) -> str:
+    """Bloc d'instruction à coller dans un prompt de traduction.
+
+    `langs` sert à savoir s'il faut ajouter la consigne arabe : « reproduis à
+    l'identique » ne doit JAMAIS s'appliquer à une langue qui translittère.
+    """
     if not terms:
         return ""
     listed = " · ".join(terms)
-    return (
-        "\nNOMS PROPRES — reproduis ces chaînes CARACTÈRE POUR CARACTÈRE, sans "
-        "les traduire, sans les franciser/hispaniser, accents compris "
-        "(en arabe : translittération usuelle) :\n" + listed + "\n"
+    bloc = (
+        "\nNOMS PROPRES — dans les langues à alphabet latin (français, anglais, "
+        "espagnol, portugais…), reproduis ces chaînes CARACTÈRE POUR CARACTÈRE, "
+        "sans les traduire, sans les franciser/hispaniser, accents compris :\n"
+        + listed + "\n"
         "Un nom de club est une marque : « Real Madrid » ne devient jamais "
         "« Royal Madrid », « Córdoba » jamais « Cordoue », « Girona » jamais "
         "« Gérone »."
     )
+    if langs is None or "ar" in langs:
+        exemples = " · ".join(
+            f"{lat} → {ar}" for lat, ar in list(TRANSLITTERATIONS_AR.items())[:6])
+        bloc += (
+            "\nEN ARABE, la règle est INVERSE : ne laisse AUCUN mot en alphabet "
+            "latin. Translittère chaque nom propre selon l'usage de la presse "
+            "arabe — noms de clubs, de joueurs, de compétitions, de villes. "
+            "Exemples : " + exemples + ". Un titre arabe où subsiste un mot "
+            "latin est à réécrire."
+        )
+    return bloc
+
+
+_LATIN = re.compile(r"[A-Za-zÀ-ÿ]{3,}")
+
+
+def latin_dans_arabe(text: str) -> list[str]:
+    """Mots en alphabet latin restés dans un texte arabe.
+
+    La presse arabe translittère les noms propres : un mot latin dans un titre
+    arabe est une traduction inachevée, pas un choix éditorial.
+    """
+    return _LATIN.findall(text or "")

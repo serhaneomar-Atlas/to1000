@@ -16,6 +16,7 @@ secondes) :
   5. tic_ia        — tournures qui font « texte généré »
   6. non_enrichi   — article resté en traduction automatique brute
   7. langue_absente — une des 4 langues du site manque
+  8. latin_en_arabe — nom propre laissé en alphabet latin dans un texte arabe
 
 Sortie : rapport JSON (machine) + résumé lisible (humain), et un code de sortie
 non nul quand le score passe sous le seuil — de quoi faire échouer un run et
@@ -40,7 +41,8 @@ sys.path.insert(0, str(SCRIPT_DIR))
 ROOT = SCRIPT_DIR.parent
 NEWS = ROOT / "public" / "news.json"
 
-from lib.glossary import CALQUES, missing_terms, protected_terms  # noqa: E402
+from lib.glossary import (CALQUES, latin_dans_arabe, missing_terms,  # noqa: E402
+                          protected_terms)
 
 SITE_LANGS = ("fr", "en", "es", "ar")
 
@@ -79,6 +81,10 @@ POIDS = {
     "tic_ia": 20.0,
     "non_enrichi": 30.0,
     "langue_absente": 100.0,
+    # Aussi grave qu'un calque, à l'envers : la presse arabe translittère les
+    # noms propres. « Arsenal يؤكد أن تجديد عقد Mikel Arteta » est une
+    # traduction inachevée, et un lecteur arabophone le voit immédiatement.
+    "latin_en_arabe": 40.0,
 }
 
 MIN_RESUME_MOTS = 8
@@ -155,6 +161,13 @@ def audite_item(item: dict) -> list[dict]:
                 defauts.append({"id": item_id, "lang": lang, "type": "tic_ia",
                                 "detail": f"tournure « {m.group(0)} »"})
                 break
+
+        if lang == "ar":
+            latins = latin_dans_arabe(blob)
+            if latins:
+                defauts.append({"id": item_id, "lang": lang, "type": "latin_en_arabe",
+                                "detail": "mots restés en alphabet latin : "
+                                          + ", ".join(dict.fromkeys(latins))[:80]})
 
         if entry.get("engine") not in ENGINES_OK or entry.get("needs_translation"):
             defauts.append({"id": item_id, "lang": lang, "type": "non_enrichi",
