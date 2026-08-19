@@ -55,6 +55,7 @@ def main():
     t0 = time.monotonic()
     new_calls = 0
     touched = 0
+    rejected = 0
     for it in items:
         if new_calls >= BATCH or (time.monotonic() - t0) >= MAX_S:
             break
@@ -66,22 +67,52 @@ def main():
             continue
         targets = [l for l in SITE_LANGS if l != src]
         before = tr._calls_gemini
-        review = chief_editor_review(tr, title, summary, src, targets)
+        review = chief_editor_review(tr, title, summary, src, targets,
+                                     url=it.get("url", ""))
         made_call = tr._calls_gemini > before
+
         if review and review.get("i18n"):
             merged = {**(it.get("i18n") or {}), **review["i18n"]}
             if merged != it.get("i18n"):
                 it["i18n"] = merged
                 touched += 1
+        elif review is not None and not review.get("publish"):
+            # Le rédacteur en chef écarte l'article de la Une — mais il reste
+            # dans le fil. Le laisser en traduction MyMemory mot-à-mot, c'est
+            # publier « Royal Madrid » : on lui donne au moins une traduction
+            # Gemini propre (un appel, pas la chaîne complète).
+            rejected += 1
+            if _engine(it) not in ("gemini-edi", "gemini-editor"):
+                pack = tr.editorialize_pair(title, summary, src, targets)
+                if pack:
+                    merged = {**(it.get("i18n") or {}), **pack}
+                    if merged != it.get("i18n"):
+                        it["i18n"] = merged
+                        touched += 1
+
+        if review is not None:
+            ed = {"publish": bool(review.get("publish")),
+                  "quality": review.get("quality", 0),
+                  "source_read": review.get("source_read", "rss")}
+            if it.get("editorial") != ed:
+                it["editorial"] = ed
+                touched += 1
+
         if made_call:
             new_calls += 1
 
-    if touched:
+    # Le cache se sauve DÈS QU'UN APPEL A ÉTÉ FAIT, pas seulement quand un
+    # article change. Sinon un run où tout est rejeté jette ses décisions et le
+    # run suivant repaie les mêmes appels — boucle stérile observée en prod
+    # (48 appels, 0 cache_hit, à chaque run pendant des semaines).
+    if new_calls or touched:
         tr.cache.save()
+    if touched:
         data["items"] = items
         NEWS.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    print(f"[enrich] {touched} maj / {new_calls} appels Gemini en {int(time.monotonic() - t0)}s · {tr.stats()}")
+    print(f"[enrich] {touched} maj / {rejected} écartés / {new_calls} appels Gemini "
+          f"en {int(time.monotonic() - t0)}s · {tr.stats()}")
     return 0
 
 

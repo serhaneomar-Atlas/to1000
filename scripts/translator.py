@@ -26,6 +26,14 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    from lib.glossary import prompt_block, protected_terms, repair_calques
+except ImportError:  # exécution hors arborescence scripts/ → dégradation douce
+    def prompt_block(_terms): return ""
+    def protected_terms(*_t, **_k): return []
+    def repair_calques(text, _lang): return text
+
 
 # Alias "latest" maintenu par Google → pointe toujours sur le dernier flash,
 # ne déprécie jamais (gemini-2.0-flash a disparu et cassait le pipeline).
@@ -252,6 +260,7 @@ class Translator:
             "exclamation marks, rhetorical questions, 'read more' calls, filler. "
             "Keep only key facts (who, what, numbers, stakes). Preserve proper nouns. "
             'Respond with valid JSON only: {"fr":{"title":"...","summary":"..."}, ...}'
+            + prompt_block(protected_terms(title, summary))
         )
         user = json.dumps({"source_lang": src, "title": title,
                            "text": (summary or title)[:800]}, ensure_ascii=False)
@@ -265,7 +274,8 @@ class Translator:
             t = str(e.get("title", "")).strip()[:300]
             s = str(e.get("summary", "")).strip()[:600]
             if t or s:
-                out[l] = {"title": t or title, "summary": s or summary,
+                out[l] = {"title": repair_calques(t or title, l),
+                          "summary": repair_calques(s or summary, l),
                           "needs_translation": False, "engine": "gemini-edi"}
         if len(out) < len(langs):   # incomplete → let caller fall back
             return None
@@ -305,6 +315,7 @@ class Translator:
                     f"idiomatic prose with zero clickbait. Translate the meaning, not "
                     f"word-for-word. Preserve all proper nouns. Respond with valid JSON "
                     f'only: {{"title": "...", "summary": "..."}}'
+                    + prompt_block(protected_terms(title, summary))
                 )
                 user = json.dumps({"title": title, "summary": summary[:600]}, ensure_ascii=False)
                 raw = self._call_gemini(system, user)
@@ -336,6 +347,12 @@ class Translator:
                     "summary": summary,
                     "needs_translation": True,
                 }
+
+            # Filet déterministe : même une traduction MyMemory mot-à-mot ne
+            # doit pas laisser passer « Royal Madrid » ou « Cordoue CF ».
+            for _f in ("title", "summary"):
+                if translated.get(_f):
+                    translated[_f] = repair_calques(translated[_f], dst)
 
             out[dst] = translated
             if self.cache and not translated.get("needs_translation"):
