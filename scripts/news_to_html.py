@@ -86,12 +86,33 @@ def best_image(item: dict) -> str | None:
     return item.get("image_url") or item.get("image") or None
 
 
+# Moteurs dont la sortie est montrable : la chaîne éditoriale complète, son
+# raccourci, et la traduction Gemini avec glossaire. MyMemory traduit mot à
+# mot (« أول قبطان لبرجة », « première capitaine … et Aitana et Graham
+# entrent ») : ce brouillon sert de matière première, jamais d'affichage.
+ENGINES_AFFICHABLES = {"gemini-editor", "gemini-edi", "gemini"}
+
+
+def publishable(item: dict, lang: str) -> bool:
+    """La version `lang` peut-elle être montrée à un lecteur ?"""
+    e = (item.get("i18n") or {}).get(lang) or {}
+    if not (e.get("title") or e.get("summary")):
+        return False
+    src = ((item.get("primary_source") or {}).get("lang") or "")[:2].lower()
+    if lang == src:
+        return True                      # texte original de la source
+    return (not e.get("needs_translation")
+            and e.get("engine") in ENGINES_AFFICHABLES)
+
+
 def best_title(item: dict, lang: str = "fr") -> str:
     if lang == "fr":
-        return (item.get("title_fr")
-                or (item.get("i18n", {}).get("fr") or {}).get("title")
-                or item.get("title")
-                or "Sans titre")
+        if publishable(item, "fr"):
+            return (item.get("title_fr")
+                    or (item.get("i18n", {}).get("fr") or {}).get("title")
+                    or item.get("title") or "Sans titre")
+        # Brouillon machine → texte original de la source, jamais le mot-à-mot.
+        return item.get("title") or "Sans titre"
     return item.get("title") or "Untitled"
 
 
@@ -127,10 +148,11 @@ def body_parts(item: dict, lang: str = "fr") -> tuple[str, list]:
 
 def best_summary(item: dict, lang: str = "fr") -> str:
     if lang == "fr":
-        return (item.get("summary_fr")
-                or (item.get("i18n", {}).get("fr") or {}).get("summary")
-                or item.get("summary")
-                or "")
+        if publishable(item, "fr"):
+            return (item.get("summary_fr")
+                    or (item.get("i18n", {}).get("fr") or {}).get("summary")
+                    or item.get("summary") or "")
+        return item.get("summary") or ""
     return item.get("summary") or ""
 
 
@@ -254,13 +276,21 @@ def render_article(item: dict, all_items: list | None = None) -> str:
     _i18n_payload = {}
     for _l in ("fr", "en", "es", "ar"):
         _e = (item.get("i18n") or {}).get(_l) or {}
-        if _e.get("title") or _e.get("summary"):
+        if not publishable(item, _l):
+            # Jamais de brouillon machine à l'écran : la langue non prête
+            # affiche le texte ORIGINAL de la source (dir=auto côté client).
             _i18n_payload[_l] = {
-                "title": _e.get("title") or "",
-                "summary": _e.get("summary") or "",
-                "body": [str(x) for x in (_e.get("body") or [])],
-                "format": _e.get("format") or "brief",
+                "title": item.get("title") or "",
+                "summary": item.get("summary") or "",
+                "body": [], "format": "brief", "fallback": True,
             }
+            continue
+        _i18n_payload[_l] = {
+            "title": _e.get("title") or "",
+            "summary": _e.get("summary") or "",
+            "body": [str(x) for x in (_e.get("body") or [])],
+            "format": _e.get("format") or "brief",
+        }
     _src_l = ((item.get("primary_source") or {}).get("lang") or "")[:2].lower()
     _ui = {
         "fr": {"orig": "Voir le texte original", "related": "À lire aussi", "src": "Source",
@@ -512,8 +542,9 @@ h1 {{ font-size: clamp(1.6rem, 4.5vw, 2.6rem); font-weight: 900; line-height: 1.
   function apply(l){{
     var e=D.i18n[l];if(!e)return;
     var H=document.documentElement;H.lang=l;H.dir=(l==='ar')?'rtl':'ltr';
-    var t=document.getElementById('art-title');if(t&&e.title)t.textContent=e.title;
-    var ld=document.getElementById('art-lead');if(ld&&e.summary)ld.textContent=e.summary;
+    if(e.fallback)H.dir='ltr';
+    var t=document.getElementById('art-title');if(t&&e.title){{t.textContent=e.title;t.setAttribute('dir','auto');}}
+    var ld=document.getElementById('art-lead');if(ld&&e.summary){{ld.textContent=e.summary;ld.setAttribute('dir','auto');}}
     var dev=document.getElementById('art-dev');
     if(dev){{
       if(e.body&&e.body.length){{

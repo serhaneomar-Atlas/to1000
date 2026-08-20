@@ -35,9 +35,16 @@ def rel_time_fr(iso):
         return ""
 
 def card(it):
-    L = (it.get("i18n") or {}).get("fr") or {}
-    title = L.get("title") or it.get("title") or ""
-    summ = L.get("summary") or it.get("summary") or ""
+    # Même garde-fou que news_to_html : pas de brouillon machine dans le
+    # prérendu SEO — Google indexe ce texte.
+    from news_to_html import publishable
+    if publishable(it, "fr"):
+        L = (it.get("i18n") or {}).get("fr") or {}
+        title = L.get("title") or it.get("title") or ""
+        summ = L.get("summary") or it.get("summary") or ""
+    else:
+        title = it.get("title") or ""
+        summ = it.get("summary") or ""
     ps = it.get("primary_source") or {}
     sname = (ps.get("flag", "") + " " if ps.get("flag") else "") + (ps.get("name") or "Football")
     sc = int(it.get("source_count") or len(it.get("sources") or []) or 1)

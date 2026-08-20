@@ -86,12 +86,13 @@ def chief_editor_review(translator, title: str, summary: str, src: str,
     langs = list(dict.fromkeys([src] + [t for t in targets if t != src]))
     # CACHE D'ABORD (gratuit) — marche même si Gemini est coupé (mode cache-only
     # de news-sync). v5 = chaîne 5 étapes avec lecture du source + formats.
+    # v8 : surnoms de clubs + hiérarchie des capitaines + féminin renforcé.
     # v7 : lexique sportif arabe ajouté au prompt (قبطان → قائد, féminin du
     # foot féminin). v6 : la consigne arabe a changé (translittération au lieu de « reproduis à
     # l'identique »). Sans nouvelle version de clé, les verdicts déjà en cache
     # rejoueraient les titres mi-arabes mi-latins et le correctif n'aurait aucun
     # effet visible.
-    cache_key = "edtv7:" + translator_hash(title, summary, src, langs) if getattr(translator, "cache", None) else None
+    cache_key = "edtv8:" + translator_hash(title, summary, src, langs) if getattr(translator, "cache", None) else None
     if cache_key and translator.cache:
         cached = translator.cache.get(cache_key)
         if cached:
@@ -169,7 +170,11 @@ def chief_editor_review(translator, title: str, summary: str, src: str,
         "ou liste de puces). Il apporte ce que le lead ne dit pas : contexte, "
         "chiffres, conséquences, réactions. JAMAIS une répétition du lead.\n\n"
         "EXACTITUDE : n'ajoute AUCUN fait absent du source. Ne recopie pas de "
-        "phrase du source — réécris. Coupe du monde 2026 (48 équipes) : "
+        "phrase du source — réécris. « primer capitán / primera capitana » "
+        "désigne le RANG dans la hiérarchie des capitaines (capitaine n°1), "
+        "jamais une première historique sauf mention explicite. Si le sujet "
+        "est une joueuse ou une équipe féminine, accorde tout au féminin. "
+        "Coupe du monde 2026 (48 équipes) : "
         "seizièmes (32) → huitièmes (16) → quarts → demies → finale ; gagner en "
         "seizièmes qualifie pour les HUITIÈMES. Si le tour n'est pas nommé, "
         "écris « pour la suite du tournoi ».\n" + ANTI_IA + "\n"
@@ -201,11 +206,24 @@ def chief_editor_review(translator, title: str, summary: str, src: str,
         return None
 
     # ── Étape 5 : RÉDACTEUR EN CHEF — validation finale ────────────────────
+    # Le validateur reçoit l'article COMPLET (comme le rédacteur), pas un
+    # extrait : on ne peut pas juger la complétude d'un résumé contre 1 500
+    # caractères. C'est ce qui a laissé passer un lead qui ratait le fait
+    # central (« le quatuor de capitaines devient un quintette mené par
+    # Patri Guijarro » — absent du résumé publié).
     valid = _stage(
-        "Tu es le RÉDACTEUR EN CHEF. Contrôle FINAL avant publication du paquet "
-        "multilingue ci-dessous (source + versions) :\n"
+        "Tu es le RÉDACTEUR EN CHEF. Tu as l'ARTICLE SOURCE COMPLET et la "
+        "proposition multilingue. Contrôle FINAL avant publication :\n"
+        "• COMPLÉTUDE — relis l'article source EN ENTIER puis demande-toi : "
+        "un lecteur qui ne lit que notre lead + body connaît-il le fait "
+        "central ET les faits majeurs (qui exactement, combien, quel rang, "
+        "quelle conséquence) ? Si un fait majeur du source manque, RÉÉCRIS le "
+        "lead ou le body pour l'inclure — c'est ta responsabilité, pas celle "
+        "d'une étape précédente ;\n"
         "• fidélité aux faits du source, aucune invention, scores/tours exacts "
-        "(rappel CdM 2026 : seizièmes AVANT huitièmes) ;\n"
+        "(rappel CdM 2026 : seizièmes AVANT huitièmes) ; « primera capitana » "
+        "= rang n°1, pas une première historique ; sujet féminin → féminin "
+        "partout ;\n"
         "• le lead porte bien L'INFORMATION CENTRALE, pas une paraphrase du titre ;\n"
         "• body apporte du neuf par rapport au lead, sans redite ;\n"
         "• NOMS PROPRES intacts dans les langues latines : un club ne se traduit "
@@ -219,7 +237,8 @@ def chief_editor_review(translator, title: str, summary: str, src: str,
         "Corrige DIRECTEMENT ce qui doit l'être et renvoie le paquet final. "
         "publish=false seulement si le fond est irrécupérable.\n" + ANTI_IA + "\n"
         'JSON : {"publish": true|false, "i18n": {lang: {"title","lead","body":[...]}}}',
-        json.dumps({"source": {"title": title, "text": body[:1500]},
+        json.dumps({"source": {"title": title, "text": body[:6000],
+                                "lu": origin},
                     "proposition": trad}, ensure_ascii=False),
         max_tokens=2400)
     if not valid or "publish" not in valid:

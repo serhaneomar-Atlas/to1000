@@ -85,6 +85,11 @@ POIDS = {
     # noms propres. « Arsenal يؤكد أن تجديد عقد Mikel Arteta » est une
     # traduction inachevée, et un lecteur arabophone le voit immédiatement.
     "latin_en_arabe": 40.0,
+    # Verdict du juge de fond (audit_semantique) : l'article publié ratait le
+    # fait central, déformait un fait, ou omettait des faits majeurs. C'est le
+    # défaut le plus grave après une langue absente : le lecteur est mal
+    # informé en croyant l'être.
+    "infidele": 60.0,
 }
 
 MIN_RESUME_MOTS = 8
@@ -169,6 +174,15 @@ def audite_item(item: dict) -> list[dict]:
                                 "detail": "mots restés en alphabet latin : "
                                           + ", ".join(dict.fromkeys(latins))[:80]})
 
+        if entry.get("engine") == "retire-par-audit":
+            sem = (item.get("editorial") or {}).get("semantique") or {}
+            defauts.append({"id": item_id, "lang": lang, "type": "infidele",
+                            "detail": "retiré par le juge de fond (note "
+                                      f"{sem.get('note', '?')}) — "
+                                      + "; ".join(sem.get("manque") or
+                                                  sem.get("erreurs") or
+                                                  ["fond insuffisant"])[:120]})
+            continue
         if entry.get("engine") not in ENGINES_OK or entry.get("needs_translation"):
             defauts.append({"id": item_id, "lang": lang, "type": "non_enrichi",
                             "detail": f"moteur « {entry.get('engine') or 'aucun'} » — "
@@ -209,6 +223,9 @@ def audite(news: dict) -> dict:
     avec_developpement = sum(
         1 for it in items if ((it.get("i18n") or {}).get("fr") or {}).get("body")
     )
+    sem_notes = [(it.get("editorial") or {}).get("semantique", {}).get("note")
+                 for it in items]
+    sem_notes = [n for n in sem_notes if n is not None]
 
     return {
         "genere_le": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -222,6 +239,9 @@ def audite(news: dict) -> dict:
             "enrichis_pct": round(100 * enrichis / len(items), 1) if items else 0.0,
             "source_lu_en_entier": lus_en_entier,
             "avec_developpement": avec_developpement,
+            "juges_fond": len(sem_notes),
+            "note_fond_moyenne": round(sum(sem_notes) / len(sem_notes), 1)
+                                 if sem_notes else None,
         },
         "defauts": defauts,
     }

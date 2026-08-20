@@ -112,6 +112,10 @@ CALQUES = {
         (r"القبطان", "القائد"),
         (r"حارس البوابة", "حارس المرمى"),
         (r"حارسة البوابة", "حارسة المرمى"),
+        # Translittérations machine ratées de noms de clubs — vues en prod.
+        # « Barça » → برجة (illisible) au lieu de برشلونة.
+        (r"برجة", "برشلونة"),
+        (r"البرجة", "برشلونة"),
     ],
 }
 
@@ -256,8 +260,38 @@ LEXIQUE_SPORT_AR = (
     "prolongation de contrat → تجديد العقد ; prolongations (match) → "
     "الوقت الإضافي ; derby → ديربي ; montée → الصعود ; relégation → الهبوط ; "
     "match nul → تعادل ; blessure → إصابة ; suspension → إيقاف.\n"
-    "FOOTBALL FÉMININ : accorde au féminin — قائدة، لاعبة، حارسة، مدرِّبة. "
-    "« Première capitaine » se dit أول قائدة, jamais أول قائد ni أول قبطان."
+    "FOOTBALL FÉMININ : dès que le sujet est une joueuse ou une équipe "
+    "féminine, TOUT s'accorde au féminin — قائدة، لاعبة، حارسة، مدرِّبة، "
+    "هدّافة. Vérifie le genre AVANT d'écrire : Putellas, Bonmatí, Guijarro, "
+    "Graham Hansen sont des joueuses. « primera capitana » = القائدة الأولى "
+    "(rang), jamais أول قائد ni أول قبطان."
+)
+
+
+# Surnoms et diminutifs de la presse sportive. Un traducteur qui ne sait pas
+# que « culés » désigne les supporters du Barça, ou que « Barça » EST le FC
+# Barcelone, produit des phrases absurdes. On donne la table au modèle avec la
+# consigne : comprendre le surnom, choisir l'appellation naturelle de la
+# langue cible (pas forcément traduire le surnom lui-même).
+SURNOMS_CLUBS = (
+    "\nSURNOMS ET DIMINUTIFS — comprends-les et rends-les naturellement dans la "
+    "langue cible :\n"
+    "Barça = FC Barcelone (ar: برشلونة، ou البارسا en registre familier) ; "
+    "culés / culers = joueurs-supporters du Barça (ar: جماهير برشلونة) ; "
+    "blaugrana = du Barça (ar: البلوغرانا) ; "
+    "Merengues / Los Blancos = Real Madrid (ar: الملكي / الميرينغي) ; "
+    "Colchoneros = Atlético Madrid ; Red Devils = Manchester United "
+    "(ar: الشياطين الحمر) ; Citizens = Manchester City ; Reds = Liverpool ; "
+    "Gunners = Arsenal (ar: المدفعجية) ; Bianconeri / Vecchia Signora = "
+    "Juventus (ar: السيدة العجوز) ; Nerazzurri = Inter ; Rossoneri = AC Milan ; "
+    "Les Bleus = équipe de France ; A Seleção = Portugal ; "
+    "Lions de l'Atlas / أسود الأطلس = Maroc ; Les Verts / الخضر = Algérie ; "
+    "La Roja = Espagne ; Albiceleste = Argentine ; Seleção = Brésil.\n"
+    "HIÉRARCHIE DES CAPITAINES : « primer capitán / primera capitana / first "
+    "captain » désigne le RANG (capitaine n°1 dans l'ordre), pas une première "
+    "historique. es « primera capitana » → fr « capitaine n°1 » / ar "
+    "« القائدة الأولى » — jamais « première capitaine de l'histoire » sauf si "
+    "le source le dit explicitement."
 )
 
 
@@ -278,6 +312,7 @@ def prompt_block(terms: list[str], langs: list[str] | None = None) -> str:
         "Un nom de club est une marque : « Real Madrid » ne devient jamais "
         "« Royal Madrid », « Córdoba » jamais « Cordoue », « Girona » jamais "
         "« Gérone »."
+        + SURNOMS_CLUBS
     )
     if langs is None or "ar" in langs:
         exemples = " · ".join(
