@@ -100,6 +100,19 @@ CALQUES = {
         (r"\bManchester Unido\b", "Manchester United"),
         (r"\bNiños de la Ciudad\b", "Manchester City"),
     ],
+    # Faux sens certains en arabe — erreurs de REGISTRE, pas d'orthographe.
+    # « قبطان » est un capitaine de NAVIRE : la presse sportive arabe écrit
+    # قائد الفريق (fém. قائدة). Vu en prod : « أول قبطان لبرجة » pour la
+    # première capitaine du Barça féminin. Même logique que « Royal Madrid » :
+    # un seul mot suffit à trahir la traduction automatique.
+    "ar": [
+        (r"قبطانة", "قائدة"),
+        (r"القبطانة", "القائدة"),
+        (r"قبطان", "قائد"),
+        (r"القبطان", "القائد"),
+        (r"حارس البوابة", "حارس المرمى"),
+        (r"حارسة البوابة", "حارسة المرمى"),
+    ],
 }
 
 _CALQUES_C = {
@@ -227,6 +240,27 @@ TRANSLITTERATIONS_AR = {
 }
 
 
+# Registre de la presse sportive arabe. Le problème n'est pas l'orthographe
+# mais le SENS : un traducteur générique prend « capitaine » au sens maritime
+# (قبطان) là où tout journaliste sportif écrit قائد الفريق. Ces équivalences
+# vont dans le prompt arabe ; les cas certains ont en plus une réparation
+# déterministe dans CALQUES["ar"].
+LEXIQUE_SPORT_AR = (
+    "\nREGISTRE SPORTIF ARABE — écris comme la presse sportive arabe "
+    "(بي إن سبورتس، الجزيرة الرياضية، كووورة), jamais en calque de l'anglais ou "
+    "de l'espagnol. Équivalences obligatoires :\n"
+    "capitaine → قائد الفريق (JAMAIS قبطان — c'est un capitaine de navire) ; "
+    "gardien → حارس المرمى ; entraîneur → مدرب / المدير الفني ; "
+    "transfert → انتقال / صفقة ; mercato → الميركاتو / سوق الانتقالات ; "
+    "doublé → ثنائية ; triplé → هاتريك ; clean sheet → شباك نظيفة ; "
+    "prolongation de contrat → تجديد العقد ; prolongations (match) → "
+    "الوقت الإضافي ; derby → ديربي ; montée → الصعود ; relégation → الهبوط ; "
+    "match nul → تعادل ; blessure → إصابة ; suspension → إيقاف.\n"
+    "FOOTBALL FÉMININ : accorde au féminin — قائدة، لاعبة، حارسة، مدرِّبة. "
+    "« Première capitaine » se dit أول قائدة, jamais أول قائد ni أول قبطان."
+)
+
+
 def prompt_block(terms: list[str], langs: list[str] | None = None) -> str:
     """Bloc d'instruction à coller dans un prompt de traduction.
 
@@ -254,6 +288,7 @@ def prompt_block(terms: list[str], langs: list[str] | None = None) -> str:
             "arabe — noms de clubs, de joueurs, de compétitions, de villes. "
             "Exemples : " + exemples + ". Un titre arabe où subsiste un mot "
             "latin est à réécrire."
+            + LEXIQUE_SPORT_AR
         )
     return bloc
 

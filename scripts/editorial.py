@@ -86,11 +86,12 @@ def chief_editor_review(translator, title: str, summary: str, src: str,
     langs = list(dict.fromkeys([src] + [t for t in targets if t != src]))
     # CACHE D'ABORD (gratuit) — marche même si Gemini est coupé (mode cache-only
     # de news-sync). v5 = chaîne 5 étapes avec lecture du source + formats.
-    # v6 : la consigne arabe a changé (translittération au lieu de « reproduis à
+    # v7 : lexique sportif arabe ajouté au prompt (قبطان → قائد, féminin du
+    # foot féminin). v6 : la consigne arabe a changé (translittération au lieu de « reproduis à
     # l'identique »). Sans nouvelle version de clé, les verdicts déjà en cache
     # rejoueraient les titres mi-arabes mi-latins et le correctif n'aurait aucun
     # effet visible.
-    cache_key = "edtv6:" + translator_hash(title, summary, src, langs) if getattr(translator, "cache", None) else None
+    cache_key = "edtv7:" + translator_hash(title, summary, src, langs) if getattr(translator, "cache", None) else None
     if cache_key and translator.cache:
         cached = translator.cache.get(cache_key)
         if cached:

@@ -138,6 +138,8 @@ h1 { font-size: clamp(1.6rem, 4.5vw, 2.6rem); font-weight: 900; line-height: 1.2
 .hero-img img { width: 100%; height: auto; border-radius: 10px; }
 .lead { font-size: 1.1rem; color: #ddd; margin-bottom: 1rem; }
 .essentiel { margin: 1.2rem 0; padding-left: 1.15rem; color: #d6dde5; }
+[dir="rtl"] body, [dir="rtl"] article { font-family: 'Cairo', 'Hanken Grotesk', sans-serif; }
+[dir="rtl"] .essentiel { padding-left: 0; padding-right: 1.15rem; }
 .essentiel li { margin-bottom: 0.55rem; line-height: 1.6; }
 .essentiel li::marker { color: #f2c14e; }
 .original { background: #0d1118; border: 1px solid #1d2530; border-radius: 8px; padding: 1rem; margin: 1.5rem 0; }
@@ -172,19 +174,58 @@ h1 { font-size: clamp(1.6rem, 4.5vw, 2.6rem); font-weight: 900; line-height: 1.2
 </nav>
 <article>
   <span class="kind wc">WC 2026</span>
-  <h1>Coupe du monde féminine 2027 : Les affiches des matchs de barrages, après le tirage au sort</h1>
+  <h1 id="art-title">Coupe du monde féminine 2027 : Les affiches des matchs de barrages, après le tirage au sort</h1>
   <div class="meta">
     <span>📅 20 August 2026</span>
     <span>· Source : Africa Top Sports</span>
   </div>
   <figure class="hero-img"><img src="https://africatopsports.com/wp-content/uploads/2026/07/BANYANA.webp" alt="Coupe du monde féminine 2027 : Les affiches des matchs de barrages, après le tirage au sort" width="1200" height="630" style="aspect-ratio:1200/630" loading="eager" fetchpriority="high" decoding="async"></figure>
-  <p class="lead">Le tableau des barrages pour la Coupe du monde féminine 2027 est connu. Le Ghana et l’Afrique du sud connaissent leurs adversaires.</p>
+  <p class="lead" id="art-lead">Le tableau des barrages pour la Coupe du monde féminine 2027 est connu. Le Ghana et l’Afrique du sud connaissent leurs adversaires.</p><div id="art-dev"></div>
   <p class="source-link">📎 Source originale : <a href="https://africatopsports.com/football-feminin/coupe-du-monde-feminine-2027-les-affiches-des-matchs-de-barrages-apres-le-tirage-au-sort/" rel="noopener nofollow" target="_blank">Africa Top Sports →</a></p>
   <div class="related">
     <h2>À lire aussi</h2>
     <p><div class="rel-grid"><a class="rel-card" href="/news/4bd40344aaf7.html"><span class="rel-t">Coupe du monde féminine 2027 : Suivre en direct le tirage au sort des barrages</span><span class="rel-s">Africa Top Sports</span></a><a class="rel-card" href="/news/2166b6822719.html"><span class="rel-t">Coupe du monde féminine 2027 : Dates, format, tout savoir sur les barrages</span><span class="rel-s">Africa Top Sports</span></a><a class="rel-card" href="/news/1ba4209a260a.html"><span class="rel-t">Coupe du monde féminine 2027 : La FIFA dévoile les villes hôtes dont Rio Janeiro et le mythique Maracana</span><span class="rel-s">Africa Top Sports</span></a><a class="rel-card" href="/news/0ad757775670.html"><span class="rel-t">Foot : le Maracana accueillera le match d&#x27;ouverture et la finale du Mondial féminin en 2027</span><span class="rel-s">Le Figaro Sport</span></a></div></p>
   </div>
 </article>
+<script>
+(function(){
+  var D={"i18n": {"fr": {"title": "Coupe du monde féminine 2027 : Les affiches des matchs de barrages, après le tirage au sort", "summary": "Le tableau des barrages pour la Coupe du monde féminine 2027 est connu. Le Ghana et l’Afrique du sud connaissent leurs adversaires.", "body": [], "format": "brief"}, "en": {"title": "2027 Women's World Cup: Posters of playoff matches, after the draw", "summary": "The table of dams for the 2027 Women's World Cup is known. Ghana and South Africa know their opponents.", "body": [], "format": "brief"}, "es": {"title": "Copa del Mundo Femenina 2027: Los carteles de los partidos de play-off, después del sorteo", "summary": "Se conoce la tabla de play-offs para la Copa Mundial Femenina 2027. Ghana y Sudáfrica conocen a sus adversarios.", "body": [], "format": "brief"}, "ar": {"title": "كأس العالم للسيدات 2027: ملصقات مباريات التصفيات، بعد القرعة", "summary": "جدول السدود لكأس العالم للسيدات 2027 معروف. غانا وجنوب أفريقيا تعرفان خصومهما.", "body": [], "format": "brief"}}, "src_lang": "fr", "ui": {"fr": {"orig": "Voir le texte original", "related": "À lire aussi", "src": "Source", "ln": {"en": "anglais", "es": "espagnol", "fr": "français", "ar": "arabe", "de": "allemand", "it": "italien", "pt": "portugais"}}, "en": {"orig": "View the original text", "related": "Also read", "src": "Source", "ln": {"en": "English", "es": "Spanish", "fr": "French", "ar": "Arabic", "de": "German", "it": "Italian", "pt": "Portuguese"}}, "es": {"orig": "Ver el texto original", "related": "Leer también", "src": "Fuente", "ln": {"en": "inglés", "es": "español", "fr": "francés", "ar": "árabe", "de": "alemán", "it": "italiano", "pt": "portugués"}}, "ar": {"orig": "عرض النص الأصلي", "related": "اقرأ أيضاً", "src": "المصدر", "ln": {"en": "الإنجليزية", "es": "الإسبانية", "fr": "الفرنسية", "ar": "العربية", "de": "الألمانية", "it": "الإيطالية", "pt": "البرتغالية"}}}};
+  var SUP=['fr','en','es','ar'];
+  function detect(){var u=new URLSearchParams(location.search).get('lang');if(u&&SUP.indexOf(u)>=0)return u;try{var s=localStorage.getItem('to1000_lang');if(s&&SUP.indexOf(s)>=0)return s;}catch(e){}var n=(navigator.language||'fr').slice(0,2).toLowerCase();return SUP.indexOf(n)>=0?n:'fr';}
+  function esc(t){var d=document.createElement('div');d.textContent=t==null?'':t;return d.innerHTML;}
+  function apply(l){
+    var e=D.i18n[l];if(!e)return;
+    var H=document.documentElement;H.lang=l;H.dir=(l==='ar')?'rtl':'ltr';
+    var t=document.getElementById('art-title');if(t&&e.title)t.textContent=e.title;
+    var ld=document.getElementById('art-lead');if(ld&&e.summary)ld.textContent=e.summary;
+    var dev=document.getElementById('art-dev');
+    if(dev){
+      if(e.body&&e.body.length){
+        dev.innerHTML=(e.format==='bullets')
+          ?'<ul class="essentiel">'+e.body.map(function(p){return '<li>'+esc(p)+'</li>';}).join('')+'</ul>'
+          :e.body.map(function(p){return '<p>'+esc(p)+'</p>';}).join('');
+      }else if(l!=='fr'){dev.innerHTML='';}
+    }
+    var ui=D.ui[l]||D.ui.fr;
+    var ol=document.getElementById('art-orig-label');
+    if(ol){var n=ui.ln[D.src_lang];ol.textContent=ui.orig+(n?' ('+n+')':'');}
+    var rel=document.querySelector('.related h2');if(rel)rel.textContent=ui.related;
+    document.title=(e.title||document.title.split(' | ')[0])+' | To1000.com';
+  }
+  var LANG=detect();
+  if(LANG!=='fr')apply(LANG);
+  // Mini-sélecteur : changer de langue sans repasser par /news.
+  var nav=document.querySelector('.nav .links');
+  if(nav){SUP.forEach(function(l){
+    var a=document.createElement('a');a.href='#';a.textContent=l.toUpperCase();a.setAttribute('data-lang',l);
+    a.style.cssText='font-size:0.8rem'+(l===LANG?';color:#f2c14e':'');
+    a.onclick=function(ev){ev.preventDefault();try{localStorage.setItem('to1000_lang',l);}catch(e){}
+      if(l==='fr'){location.reload();}else{LANG=l;apply(l);
+        nav.querySelectorAll('a[data-lang]').forEach(function(x){x.style.color=x.getAttribute('data-lang')===l?'#f2c14e':'';});}
+    };nav.appendChild(a);
+  });}
+})();
+</script>
 <footer class="footer">
   <p>To1000.com est un site de fans <strong>non officiel</strong>. Cet article est un résumé automatique d'une source externe, traduit et structuré pour l'indexation. Pour le contenu original, suivre le lien source ci-dessus.</p>
   <p>© 2026 · <a href="/">Accueil</a> · <a href="/coupe-du-monde/">Hub WC</a> · <a href="/goals.html">Compteur CR7</a></p>

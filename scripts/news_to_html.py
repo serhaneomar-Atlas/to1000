@@ -246,25 +246,64 @@ def render_article(item: dict, all_items: list | None = None) -> str:
 
     kind_label = {"cr7":"CR7","wc":"WC 2026","maroc":"MAROC","portugal":"PORTUGAL","foot":"FOOT"}[kind]
 
+    # La page est rendue en français (canonique SEO), mais le lecteur qui
+    # arrive depuis /news en arabe, espagnol ou anglais doit la lire dans SA
+    # langue : on embarque les 4 versions et un script les permute côté client
+    # (même clé localStorage `to1000_lang` que news.html). Avant ça, un titre
+    # arabe cliqué ouvrait une page française — rupture immédiate.
+    _i18n_payload = {}
+    for _l in ("fr", "en", "es", "ar"):
+        _e = (item.get("i18n") or {}).get(_l) or {}
+        if _e.get("title") or _e.get("summary"):
+            _i18n_payload[_l] = {
+                "title": _e.get("title") or "",
+                "summary": _e.get("summary") or "",
+                "body": [str(x) for x in (_e.get("body") or [])],
+                "format": _e.get("format") or "brief",
+            }
+    _src_l = ((item.get("primary_source") or {}).get("lang") or "")[:2].lower()
+    _ui = {
+        "fr": {"orig": "Voir le texte original", "related": "À lire aussi", "src": "Source",
+               "ln": {"en": "anglais", "es": "espagnol", "fr": "français", "ar": "arabe",
+                       "de": "allemand", "it": "italien", "pt": "portugais"}},
+        "en": {"orig": "View the original text", "related": "Also read", "src": "Source",
+               "ln": {"en": "English", "es": "Spanish", "fr": "French", "ar": "Arabic",
+                       "de": "German", "it": "Italian", "pt": "Portuguese"}},
+        "es": {"orig": "Ver el texto original", "related": "Leer también", "src": "Fuente",
+               "ln": {"en": "inglés", "es": "español", "fr": "francés", "ar": "árabe",
+                       "de": "alemán", "it": "italiano", "pt": "portugués"}},
+        "ar": {"orig": "عرض النص الأصلي", "related": "اقرأ أيضاً", "src": "المصدر",
+               "ln": {"en": "الإنجليزية", "es": "الإسبانية", "fr": "الفرنسية", "ar": "العربية",
+                       "de": "الألمانية", "it": "الإيطالية", "pt": "البرتغالية"}},
+    }
+    # json.dumps puis neutralisation de </script> — un titre contenant cette
+    # séquence casserait la page entière.
+    _payload_js = json.dumps({"i18n": _i18n_payload, "src_lang": _src_l, "ui": _ui},
+                             ensure_ascii=False).replace("</", "<\\/")
+
     # Body (use English summary too if available, like a richer page)
     body_html = ""
     if summary_fr:
-        body_html += f"<p class=\"lead\">{h(summary_fr)}</p>"
+        body_html += f"<p class=\"lead\" id=\"art-lead\">{h(summary_fr)}</p>"
 
     # Développement rédigé (2-3 paragraphes ou puces) quand le conseil de
-    # rédaction l'a produit — c'est ce qui distingue une brève d'un article.
+    # rédaction l'a produit — c'est ce qui distingue une brève d'une carte.
+    # Le conteneur a un id : le script de langue le re-rend dans la langue
+    # choisie par le lecteur.
     _fmt, _parts = body_parts(item, "fr")
+    body_html += "<div id=\"art-dev\">"
     if _parts:
         if _fmt == "bullets":
             _lis = "".join(f"<li>{h(p)}</li>" for p in _parts)
             body_html += f"<ul class=\"essentiel\">{_lis}</ul>"
         else:
             body_html += "".join(f"<p>{h(p)}</p>" for p in _parts)
+    body_html += "</div>"
 
     if summary_en and summary_en != summary_fr:
         _lang = source_lang_label(item)
         _label = f"Voir le texte original ({_lang})" if _lang else "Voir le texte original"
-        body_html += f"<details class=\"original\"><summary>{h(_label)}</summary><p>{h(summary_en)}</p></details>"
+        body_html += f"<details class=\"original\"><summary id=\"art-orig-label\">{h(_label)}</summary><p>{h(summary_en)}</p></details>"
 
     # JSON-LD NewsArticle (enriched)
     ld = {
@@ -415,6 +454,8 @@ h1 {{ font-size: clamp(1.6rem, 4.5vw, 2.6rem); font-weight: 900; line-height: 1.
 .hero-img img {{ width: 100%; height: auto; border-radius: 10px; }}
 .lead {{ font-size: 1.1rem; color: #ddd; margin-bottom: 1rem; }}
 .essentiel {{ margin: 1.2rem 0; padding-left: 1.15rem; color: #d6dde5; }}
+[dir="rtl"] body, [dir="rtl"] article {{ font-family: 'Cairo', 'Hanken Grotesk', sans-serif; }}
+[dir="rtl"] .essentiel {{ padding-left: 0; padding-right: 1.15rem; }}
 .essentiel li {{ margin-bottom: 0.55rem; line-height: 1.6; }}
 .essentiel li::marker {{ color: #f2c14e; }}
 .original {{ background: #0d1118; border: 1px solid #1d2530; border-radius: 8px; padding: 1rem; margin: 1.5rem 0; }}
@@ -449,7 +490,7 @@ h1 {{ font-size: clamp(1.6rem, 4.5vw, 2.6rem); font-weight: 900; line-height: 1.
 </nav>
 <article>
   <span class="kind {kind}">{kind_label}</span>
-  <h1>{h(title_fr)}</h1>
+  <h1 id="art-title">{h(title_fr)}</h1>
   <div class="meta">
     <span>📅 {h(pub_human or 'Récent')}</span>
     <span>· Source : {h(source)}</span>
@@ -462,6 +503,45 @@ h1 {{ font-size: clamp(1.6rem, 4.5vw, 2.6rem); font-weight: 900; line-height: 1.
     <p>{related}</p>
   </div>
 </article>
+<script>
+(function(){{
+  var D={_payload_js};
+  var SUP=['fr','en','es','ar'];
+  function detect(){{var u=new URLSearchParams(location.search).get('lang');if(u&&SUP.indexOf(u)>=0)return u;try{{var s=localStorage.getItem('to1000_lang');if(s&&SUP.indexOf(s)>=0)return s;}}catch(e){{}}var n=(navigator.language||'fr').slice(0,2).toLowerCase();return SUP.indexOf(n)>=0?n:'fr';}}
+  function esc(t){{var d=document.createElement('div');d.textContent=t==null?'':t;return d.innerHTML;}}
+  function apply(l){{
+    var e=D.i18n[l];if(!e)return;
+    var H=document.documentElement;H.lang=l;H.dir=(l==='ar')?'rtl':'ltr';
+    var t=document.getElementById('art-title');if(t&&e.title)t.textContent=e.title;
+    var ld=document.getElementById('art-lead');if(ld&&e.summary)ld.textContent=e.summary;
+    var dev=document.getElementById('art-dev');
+    if(dev){{
+      if(e.body&&e.body.length){{
+        dev.innerHTML=(e.format==='bullets')
+          ?'<ul class="essentiel">'+e.body.map(function(p){{return '<li>'+esc(p)+'</li>';}}).join('')+'</ul>'
+          :e.body.map(function(p){{return '<p>'+esc(p)+'</p>';}}).join('');
+      }}else if(l!=='fr'){{dev.innerHTML='';}}
+    }}
+    var ui=D.ui[l]||D.ui.fr;
+    var ol=document.getElementById('art-orig-label');
+    if(ol){{var n=ui.ln[D.src_lang];ol.textContent=ui.orig+(n?' ('+n+')':'');}}
+    var rel=document.querySelector('.related h2');if(rel)rel.textContent=ui.related;
+    document.title=(e.title||document.title.split(' | ')[0])+' | To1000.com';
+  }}
+  var LANG=detect();
+  if(LANG!=='fr')apply(LANG);
+  // Mini-sélecteur : changer de langue sans repasser par /news.
+  var nav=document.querySelector('.nav .links');
+  if(nav){{SUP.forEach(function(l){{
+    var a=document.createElement('a');a.href='#';a.textContent=l.toUpperCase();a.setAttribute('data-lang',l);
+    a.style.cssText='font-size:0.8rem'+(l===LANG?';color:#f2c14e':'');
+    a.onclick=function(ev){{ev.preventDefault();try{{localStorage.setItem('to1000_lang',l);}}catch(e){{}}
+      if(l==='fr'){{location.reload();}}else{{LANG=l;apply(l);
+        nav.querySelectorAll('a[data-lang]').forEach(function(x){{x.style.color=x.getAttribute('data-lang')===l?'#f2c14e':'';}});}}
+    }};nav.appendChild(a);
+  }});}}
+}})();
+</script>
 <footer class="footer">
   <p>To1000.com est un site de fans <strong>non officiel</strong>. Cet article est un résumé automatique d'une source externe, traduit et structuré pour l'indexation. Pour le contenu original, suivre le lien source ci-dessus.</p>
   <p>© 2026 · <a href="/">Accueil</a> · <a href="/coupe-du-monde/">Hub WC</a> · <a href="/goals.html">Compteur CR7</a></p>

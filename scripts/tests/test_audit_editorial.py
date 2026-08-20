@@ -168,3 +168,26 @@ def test_un_arabe_entierement_translittere_ne_declenche_rien():
 def test_le_controle_latin_ne_vise_que_l_arabe():
     """Un titre français contient évidemment des mots latins."""
     assert not [d for d in audite_item(_item()) if d["type"] == "latin_en_arabe"]
+
+
+# ── Registre sportif arabe ──────────────────────────────────────────────────
+def test_detecte_le_capitaine_de_navire_dans_un_texte_arabe():
+    """« أول قبطان لبرشلونة » vu en prod : قبطان est un capitaine de NAVIRE.
+
+    La presse sportive écrit قائد الفريق. Un seul mot de ce registre suffit à
+    trahir la traduction automatique auprès d'un lecteur arabophone.
+    """
+    item = _item()
+    item["i18n"]["ar"]["title"] = "باتري، أول قبطان لبرشلونة"
+    defauts = [d for d in audite_item(item)
+               if d["type"] == "calque" and d["lang"] == "ar"]
+    assert len(defauts) == 1
+    assert "قائد" in defauts[0]["detail"]
+
+
+def test_le_registre_sportif_arabe_correct_ne_declenche_rien():
+    item = _item()
+    item["i18n"]["ar"]["title"] = "باتري، أول قائدة لبرشلونة"
+    item["i18n"]["ar"]["summary"] = "حارسة المرمى الجديدة تقود الفريق بثنائية."
+    assert not [d for d in audite_item(item)
+                if d["type"] == "calque" and d["lang"] == "ar"]
