@@ -302,6 +302,14 @@ class Translator:
                 cached = self.cache.get(cache_key)
                 if cached:
                     self._cache_hits += 1
+                    # Les entrées mises en cache AVANT une nouvelle règle de
+                    # réparation resserviraient l'erreur à chaque refresh
+                    # (un « قبطان » MyMemory de juillet reviendrait sans fin).
+                    # On répare aussi à la lecture — idempotent sur une entrée
+                    # déjà propre.
+                    for _f in ("title", "summary"):
+                        if cached.get(_f):
+                            cached[_f] = repair_calques(cached[_f], dst)
                     out[dst] = cached
                     continue
 
