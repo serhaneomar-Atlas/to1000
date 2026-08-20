@@ -244,7 +244,7 @@ class Translator:
         langs = list(dict.fromkeys([src] + [t for t in targets if t != src]))
         # v2 : même raison que edtv6 — la consigne de translittération arabe a
         # changé, les paquets en cache doivent être refaits.
-        cache_key = "edi2:" + hash_key(title + "|" + summary[:200], src, ",".join(langs))
+        cache_key = "edi3:" + hash_key(title + "|" + summary[:200], src, ",".join(langs))
         if self.cache:
             cached = self.cache.get(cache_key)
             if cached:

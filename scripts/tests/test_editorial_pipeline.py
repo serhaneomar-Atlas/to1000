@@ -254,6 +254,22 @@ class TestConsigneArabe(unittest.TestCase):
         """Elle n'aurait aucun sens et gaspillerait des tokens."""
         self.assertNotIn("INVERSE", self._prompt_traduction(["fr", "en", "es"]))
 
+    def test_le_lexique_sportif_arabe_atteint_le_traducteur(self):
+        """« capitaine » ne doit jamais devenir قبطان (capitaine de navire)."""
+        prompt = self._prompt_traduction(["fr", "en", "es", "ar"])
+        self.assertIn("قبطان", prompt)      # l'interdit est nommé
+        self.assertIn("قائدة", prompt)      # le féminin (foot féminin) aussi
+
+    def test_un_qobtan_produit_par_le_modele_est_repare(self):
+        """Filet déterministe : même si le modèle sort le mauvais registre."""
+        bad = json.loads(json.dumps(TRANSLATION))
+        bad["ar"]["title"] = "باتري، أول قبطان لبرشلونة"
+        tr = FakeTranslator([JUDGE_OK, WRITE, TRANSLATION, {"publish": True, "i18n": bad}])
+        with _no_network():
+            out = chief_editor_review(tr, "t", "s", "fr", LANGS)
+        self.assertIn("قائد", out["i18n"]["ar"]["title"])
+        self.assertNotIn("قبطان", out["i18n"]["ar"]["title"])
+
     def test_la_validation_finale_refuse_un_arabe_mi_latin(self):
         tr = FakeTranslator(FULL_CHAIN)
         with _no_network():

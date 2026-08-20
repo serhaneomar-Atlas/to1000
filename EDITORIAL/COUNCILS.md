@@ -79,6 +79,16 @@ irrécupérable.
 `repair_calques()` corrige les calques connus sur toutes les sorties — y compris
 celles de MyMemory. Même si un modèle dérape, « Royal Madrid » ne sort pas.
 
+### Le registre, pas seulement l'orthographe
+Le même mécanisme couvre les erreurs de SENS : « capitaine » traduit قبطان
+(capitaine de navire) au lieu de قائد الفريق, « gardien » traduit حارس البوابة
+(portier d'immeuble) au lieu de حارس المرمى. Trois couches :
+`LEXIQUE_SPORT_AR` impose le registre de la presse sportive arabe dans le
+prompt (avec l'accord au féminin pour le football féminin — أول قائدة, jamais
+أول قبطان), `CALQUES["ar"]` répare les cas certains après coup, et l'audit les
+détecte comme `calque`. Chaque erreur récurrente trouvée par l'audit doit
+rejoindre ces trois couches — c'est le point 1 du backlog de veille.
+
 ### Humanisation
 Consigne injectée aux étapes 3, 4 et 5. Interdits : « il convient de noter »,
 « force est de constater », « en effet » en tête, « véritable »,
@@ -120,6 +130,16 @@ mois.
 - Une **issue GitHub** (label `audit-editorial`) quand le score passe sous le
   seuil, **mise à jour** au lieu d'être dupliquée, et fermée automatiquement
   quand la qualité revient.
+
+### Veille stratégique et technologique
+Le workflow `veille.yml` (lundi 05h UTC) complète la boucle : l'audit dit OÙ on
+perd des points, la veille cherche COMMENT en gagner. Chaque semaine, un agent
+part des défauts mesurés, compare notre production aux standards des grandes
+rédactions sportives (L'Équipe, Marca, The Athletic, بي إن سبورتس، كووورة),
+cherche les outils qui répondent à nos défauts dominants, et écrit un rapport
+daté dans `EDITORIAL/VEILLE/` plus un backlog priorisé (`VEILLE/BACKLOG.md`).
+La veille PROPOSE ; une PR relue APPLIQUE — l'agent de veille n'a pas le droit
+de toucher aux scripts.
 
 ### Boucle d'amélioration
 Le rapport n'est pas un bulletin, c'est une liste de travail :

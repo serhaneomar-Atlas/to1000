@@ -1,0 +1,113 @@
+name: Veille stratégique et technologique (hebdo)
+
+# Le conseil d'audit MESURE la qualité ; ce workflow cherche comment la FAIRE
+# MONTER. Chaque semaine, un agent :
+#
+#   1. lit la tendance des audits (audit_history.jsonl) et les défauts dominants ;
+#   2. VEILLE STRATÉGIQUE — compare nos brèves aux standards des meilleures
+#      rédactions sportives (L'Équipe, Marca, The Athletic, بي إن سبورتس، كووورة) :
+#      angle, titraille, registre par langue ;
+#   3. VEILLE TECHNOLOGIQUE — cherche outils et techniques qui répondent à NOS
+#      défauts mesurés (qualité de traduction sportive multilingue, contrôle
+#      terminologique, détection de texte artificiel…) ;
+#   4. écrit un rapport daté dans EDITORIAL/VEILLE/ + tient un backlog priorisé.
+#
+# Le rapport propose, il n'applique pas : les changements de chaîne passent par
+# une PR relue. AUTHENTIFICATION : même secret CLAUDE_CODE_OAUTH_TOKEN que
+# ai-editorial ; sans lui, le run se termine proprement sans rien faire.
+
+on:
+  schedule:
+    - cron: "0 5 * * 1"     # lundi 05h UTC — avant l'audit quotidien de 06h
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: veille
+  cancel-in-progress: false
+
+jobs:
+  veille:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - name: Vérifier le secret d'authentification
+        id: gate
+        env:
+          TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          if [ -n "$TOKEN" ]; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+            echo "::warning::CLAUDE_CODE_OAUTH_TOKEN absent — veille sautée (voir DEPLOY_INSTRUCTIONS.md §11)"
+          fi
+
+      - name: Agent de veille
+        if: steps.gate.outputs.ok == 'true'
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: |
+            Tu es l'analyste VEILLE du conseil d'audit de to1000.com (hub football
+            multilingue fr/en/es/ar + compte à rebours des 1000 buts de Ronaldo).
+            Ta mission hebdomadaire : produire UN rapport de veille actionnable.
+
+            ## 1. Partir de nos défauts MESURÉS (pas de généralités)
+            - Lis `EDITORIAL/state/audit_history.jsonl` (tendance du score) et
+              `EDITORIAL/state/audit_latest.json` (défauts par type, exemples).
+            - Lis `EDITORIAL/COUNCILS.md` pour comprendre la chaîne actuelle.
+            - Identifie les 2-3 types de défauts qui coûtent le plus de points.
+
+            ## 2. Veille STRATÉGIQUE (WebSearch)
+            Compare notre production aux standards des meilleures rédactions
+            sportives — L'Équipe, Marca, The Athletic, ESPN, بي إن سبورتس، كووورة :
+            titraille, angle éditorial, registre par langue, formats qui
+            retiennent le lecteur. Cherche ce qu'ils font que nous ne faisons pas.
+
+            ## 3. Veille TECHNOLOGIQUE (WebSearch)
+            Cherche outils, modèles ou techniques récents qui répondent à NOS
+            défauts dominants : qualité de traduction sportive (surtout arabe —
+            registre, translittération), contrôle terminologique automatique,
+            évaluation de traduction (COMET, MetricX…), humanisation de texte.
+            Pour chaque piste : coût, effort d'intégration dans notre pipeline
+            Python/Gemini/GitHub Actions, et gain attendu sur le score d'audit.
+
+            ## 4. Livrables (et RIEN d'autre)
+            - Écris `EDITORIAL/VEILLE/$(date -u +%Y-%m-%d).md` :
+              état des lieux chiffré → 3 recommandations MAX priorisées
+              (impact/effort) → pistes outils évaluées → ce qu'on a écarté et
+              pourquoi. Concis : une page, pas un mémoire.
+            - Mets à jour `EDITORIAL/VEILLE/BACKLOG.md` : ajoute les nouvelles
+              recommandations, marque celles réalisées (compare avec la chaîne
+              actuelle), retire les périmées.
+            - NE MODIFIE AUCUN script ni workflow : la veille propose, une PR
+              relue applique.
+
+            ## Règles
+            - Chaque recommandation cite le défaut d'audit qu'elle attaque.
+            - Pas de recommandation « faire plus attention » : uniquement des
+              actions concrètes (un outil, un changement de prompt, une règle).
+            - Si le score monte et qu'aucune amélioration ne s'impose, dis-le :
+              un rapport honnêtement vide vaut mieux qu'un remplissage.
+          claude_args: '--allowedTools Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Bash(date:*)'
+
+      - name: Commit du rapport
+        if: steps.gate.outputs.ok == 'true'
+        run: |
+          git config user.name "to1000-veille-bot"
+          git config user.email "to1000-veille-bot@users.noreply.github.com"
+          git add EDITORIAL/VEILLE/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "::notice::Aucun rapport produit ce run"
+          else
+            git commit -m "chore(veille): rapport hebdomadaire [$(date -u +%Y-%m-%d)]"
+            bash scripts/ci_push.sh main
+          fi
