@@ -131,6 +131,26 @@ mois.
   seuil, **mise à jour** au lieu d'être dupliquée, et fermée automatiquement
   quand la qualité revient.
 
+### Le juge de FOND (audit sémantique)
+L'audit déterministe ne voit que la forme. `scripts/audit_semantique.py`
+(dans news-editorial, budget borné) relit pour un échantillon d'articles
+enrichis **le source complet re-récupéré** contre **ce que nous avons
+publié**, et vérifie : le fait central est-il restitué ? les faits majeurs y
+sont-ils ? y a-t-il un contresens (genre, rang, score) ? Un article jugé
+infidèle est **retiré de l'affichage** (le garde-fou montre alors le texte
+original de la source) et **son cache est purgé** : le conseil de rédaction le
+refait au run suivant. Verdicts dans `EDITORIAL/state/semantic_audit.jsonl` ;
+l'audit déterministe compte chaque retrait comme défaut `infidele` (60 pts).
+
+### Garde-fou d'affichage
+Une traduction n'atteint le lecteur QUE si elle sort de Gemini (chaîne
+complète, raccourci, ou traduction glossaire). Le mot-à-mot MyMemory sert de
+matière première interne, jamais d'affichage : en attendant l'enrichissement,
+les trois surfaces (cartes /news, pages article, prérendu SEO) montrent le
+texte ORIGINAL de la source. C'est ce qui a éliminé « أول قبطان لبرجة » de
+l'écran : le lecteur voit du journalisme réel ou du travail validé, rien
+entre les deux.
+
 ### Veille stratégique et technologique
 Le workflow `veille.yml` (lundi 05h UTC) complète la boucle : l'audit dit OÙ on
 perd des points, la veille cherche COMMENT en gagner. Chaque semaine, un agent

@@ -54,6 +54,12 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scripts/enrich_news.py
 
+      - name: Audit sémantique — le juge de fond relit source complet vs publié
+        continue-on-error: true     # un juge en panne ne bloque pas la publication
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/audit_semantique.py
+
       - name: Régénérer les pages article + cartes (refléter l'enrichissement)
         continue-on-error: true
         run: |
@@ -76,7 +82,7 @@ jobs:
         run: |
           git config user.name "to1000-editorial-bot"
           git config user.email "to1000-editorial-bot@users.noreply.github.com"
-          for f in public/news.json public/news.html public/translations_cache.json public/news/; do
+          for f in public/news.json public/news.html public/translations_cache.json public/news/ EDITORIAL/state/semantic_audit.jsonl; do
             git add "$f" 2>/dev/null || true
           done
           if git diff --cached --quiet; then
