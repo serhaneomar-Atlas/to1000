@@ -33,10 +33,12 @@ class FakeTranslator:
         self.responses = list(responses)
         self.calls = []          # [(system_extrait, user)]
         self.prompts = []        # systèmes complets, pour inspecter les consignes
+        self.users = []          # payloads utilisateur, pour inspecter les données
 
     def _call_gemini(self, system, user, max_tokens=0):
         self.calls.append(system[:60])
         self.prompts.append(system)
+        self.users.append(user)
         if not self.responses:
             return None
         r = self.responses.pop(0)
@@ -298,3 +300,35 @@ class TestConsigneArabe(unittest.TestCase):
         with _no_network():
             chief_editor_review(tr, "t", "s", "fr", LANGS)
         self.assertIn("AUCUN mot en alphabet latin", tr.prompts[3])
+
+
+class TestValidationContreSourceComplet(unittest.TestCase):
+    """L'étape 5 doit pouvoir juger la complétude — donc voir tout l'article."""
+
+    CORPS = ("Sale Alexia Putellas y entran Aitana Bonmatí y Caroline Graham "
+             "Hansen. El cuarteto de capitanas del Barça pasará a ser un "
+             "quinteto liderado por Patri Guijarro. ") * 40   # > 1500 chars
+
+    def test_le_validateur_recoit_l_article_complet(self):
+        tr = FakeTranslator(FULL_CHAIN)
+        with _no_network(body=self.CORPS):
+            chief_editor_review(tr, "t", "s", "es", LANGS,
+                                url="https://exemple.test/a")
+        import json as _json
+        payload = _json.loads(tr_user_payload(tr, 3))
+        # l'ancien plafond de 1 500 caractères tronquait le corps
+        self.assertGreater(len(payload["source"]["text"]), 3000)
+        self.assertEqual(payload["source"]["lu"], "full")
+
+    def test_le_validateur_a_la_consigne_de_completude(self):
+        tr = FakeTranslator(FULL_CHAIN)
+        with _no_network(body=self.CORPS):
+            chief_editor_review(tr, "t", "s", "es", LANGS)
+        self.assertIn("COMPLÉTUDE", tr.prompts[3])
+        self.assertIn("RÉÉCRIS", tr.prompts[3])
+
+
+def tr_user_payload(tr, index):
+    """Le FakeTranslator ne journalise que les prompts système ; on rejoue
+    l'appel pour capturer le payload utilisateur du bon rang."""
+    return tr.users[index]

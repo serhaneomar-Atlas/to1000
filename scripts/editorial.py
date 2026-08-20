@@ -206,11 +206,24 @@ def chief_editor_review(translator, title: str, summary: str, src: str,
         return None
 
     # ── Étape 5 : RÉDACTEUR EN CHEF — validation finale ────────────────────
+    # Le validateur reçoit l'article COMPLET (comme le rédacteur), pas un
+    # extrait : on ne peut pas juger la complétude d'un résumé contre 1 500
+    # caractères. C'est ce qui a laissé passer un lead qui ratait le fait
+    # central (« le quatuor de capitaines devient un quintette mené par
+    # Patri Guijarro » — absent du résumé publié).
     valid = _stage(
-        "Tu es le RÉDACTEUR EN CHEF. Contrôle FINAL avant publication du paquet "
-        "multilingue ci-dessous (source + versions) :\n"
+        "Tu es le RÉDACTEUR EN CHEF. Tu as l'ARTICLE SOURCE COMPLET et la "
+        "proposition multilingue. Contrôle FINAL avant publication :\n"
+        "• COMPLÉTUDE — relis l'article source EN ENTIER puis demande-toi : "
+        "un lecteur qui ne lit que notre lead + body connaît-il le fait "
+        "central ET les faits majeurs (qui exactement, combien, quel rang, "
+        "quelle conséquence) ? Si un fait majeur du source manque, RÉÉCRIS le "
+        "lead ou le body pour l'inclure — c'est ta responsabilité, pas celle "
+        "d'une étape précédente ;\n"
         "• fidélité aux faits du source, aucune invention, scores/tours exacts "
-        "(rappel CdM 2026 : seizièmes AVANT huitièmes) ;\n"
+        "(rappel CdM 2026 : seizièmes AVANT huitièmes) ; « primera capitana » "
+        "= rang n°1, pas une première historique ; sujet féminin → féminin "
+        "partout ;\n"
         "• le lead porte bien L'INFORMATION CENTRALE, pas une paraphrase du titre ;\n"
         "• body apporte du neuf par rapport au lead, sans redite ;\n"
         "• NOMS PROPRES intacts dans les langues latines : un club ne se traduit "
@@ -224,7 +237,8 @@ def chief_editor_review(translator, title: str, summary: str, src: str,
         "Corrige DIRECTEMENT ce qui doit l'être et renvoie le paquet final. "
         "publish=false seulement si le fond est irrécupérable.\n" + ANTI_IA + "\n"
         'JSON : {"publish": true|false, "i18n": {lang: {"title","lead","body":[...]}}}',
-        json.dumps({"source": {"title": title, "text": body[:1500]},
+        json.dumps({"source": {"title": title, "text": body[:6000],
+                                "lu": origin},
                     "proposition": trad}, ensure_ascii=False),
         max_tokens=2400)
     if not valid or "publish" not in valid:
