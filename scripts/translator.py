@@ -262,7 +262,7 @@ class Translator:
             "exclamation marks, rhetorical questions, 'read more' calls, filler. "
             "Keep only key facts (who, what, numbers, stakes). Preserve proper nouns. "
             'Respond with valid JSON only: {"fr":{"title":"...","summary":"..."}, ...}'
-            + prompt_block(protected_terms(title, summary), [dst])
+            + prompt_block(protected_terms(title, summary), langs)
         )
         user = json.dumps({"source_lang": src, "title": title,
                            "text": (summary or title)[:800]}, ensure_ascii=False)
@@ -325,7 +325,7 @@ class Translator:
                     f"idiomatic prose with zero clickbait. Translate the meaning, not "
                     f"word-for-word. Preserve all proper nouns. Respond with valid JSON "
                     f'only: {{"title": "...", "summary": "..."}}'
-                    + prompt_block(protected_terms(title, summary), langs)
+                    + prompt_block(protected_terms(title, summary), [dst])
                 )
                 user = json.dumps({"title": title, "summary": summary[:600]}, ensure_ascii=False)
                 raw = self._call_gemini(system, user)
