@@ -191,3 +191,12 @@ def test_le_registre_sportif_arabe_correct_ne_declenche_rien():
     item["i18n"]["ar"]["summary"] = "حارسة المرمى الجديدة تقود الفريق بثنائية."
     assert not [d for d in audite_item(item)
                 if d["type"] == "calque" and d["lang"] == "ar"]
+
+
+def test_detecte_barca_massacre_en_barja():
+    """« لبرجة » vu en prod : translittération machine illisible de « Barça »."""
+    item = _item()
+    item["i18n"]["ar"]["title"] = "باتري، أول قائدة لبرجة"
+    defauts = [d for d in audite_item(item)
+               if d["type"] == "calque" and d["lang"] == "ar"]
+    assert any("برشلونة" in d["detail"] for d in defauts)

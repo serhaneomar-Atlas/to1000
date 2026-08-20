@@ -270,6 +270,29 @@ class TestConsigneArabe(unittest.TestCase):
         self.assertIn("قائد", out["i18n"]["ar"]["title"])
         self.assertNotIn("قبطان", out["i18n"]["ar"]["title"])
 
+    def test_les_surnoms_de_clubs_atteignent_le_traducteur(self):
+        """« culés » = supporters du Barça ; « Barça » = FC Barcelone."""
+        prompt = self._prompt_traduction(["fr", "en", "es", "ar"])
+        self.assertIn("SURNOMS", prompt)
+        self.assertIn("culés", prompt)
+
+    def test_la_hierarchie_des_capitaines_atteint_redaction_et_traduction(self):
+        """« primera capitana » = rang n°1, pas une première historique."""
+        tr = FakeTranslator(FULL_CHAIN)
+        with _no_network(body="Patri, primera capitana del Barça."):
+            chief_editor_review(tr, "Patri, primera capitana", "Sale Alexia.",
+                                "es", LANGS, url="https://exemple.test/a")
+        self.assertIn("primera capitana", tr.prompts[1])   # rédaction
+        self.assertIn("القائدة الأولى", tr.prompts[2])      # traduction
+
+    def test_un_barja_produit_par_le_modele_est_repare(self):
+        bad = json.loads(json.dumps(TRANSLATION))
+        bad["ar"]["title"] = "باتري قائدة لبرجة"
+        tr = FakeTranslator([JUDGE_OK, WRITE, TRANSLATION, {"publish": True, "i18n": bad}])
+        with _no_network():
+            out = chief_editor_review(tr, "t", "s", "fr", LANGS)
+        self.assertIn("برشلونة", out["i18n"]["ar"]["title"])
+
     def test_la_validation_finale_refuse_un_arabe_mi_latin(self):
         tr = FakeTranslator(FULL_CHAIN)
         with _no_network():

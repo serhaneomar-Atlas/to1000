@@ -86,12 +86,13 @@ def chief_editor_review(translator, title: str, summary: str, src: str,
     langs = list(dict.fromkeys([src] + [t for t in targets if t != src]))
     # CACHE D'ABORD (gratuit) — marche même si Gemini est coupé (mode cache-only
     # de news-sync). v5 = chaîne 5 étapes avec lecture du source + formats.
+    # v8 : surnoms de clubs + hiérarchie des capitaines + féminin renforcé.
     # v7 : lexique sportif arabe ajouté au prompt (قبطان → قائد, féminin du
     # foot féminin). v6 : la consigne arabe a changé (translittération au lieu de « reproduis à
     # l'identique »). Sans nouvelle version de clé, les verdicts déjà en cache
     # rejoueraient les titres mi-arabes mi-latins et le correctif n'aurait aucun
     # effet visible.
-    cache_key = "edtv7:" + translator_hash(title, summary, src, langs) if getattr(translator, "cache", None) else None
+    cache_key = "edtv8:" + translator_hash(title, summary, src, langs) if getattr(translator, "cache", None) else None
     if cache_key and translator.cache:
         cached = translator.cache.get(cache_key)
         if cached:
@@ -169,7 +170,11 @@ def chief_editor_review(translator, title: str, summary: str, src: str,
         "ou liste de puces). Il apporte ce que le lead ne dit pas : contexte, "
         "chiffres, conséquences, réactions. JAMAIS une répétition du lead.\n\n"
         "EXACTITUDE : n'ajoute AUCUN fait absent du source. Ne recopie pas de "
-        "phrase du source — réécris. Coupe du monde 2026 (48 équipes) : "
+        "phrase du source — réécris. « primer capitán / primera capitana » "
+        "désigne le RANG dans la hiérarchie des capitaines (capitaine n°1), "
+        "jamais une première historique sauf mention explicite. Si le sujet "
+        "est une joueuse ou une équipe féminine, accorde tout au féminin. "
+        "Coupe du monde 2026 (48 équipes) : "
         "seizièmes (32) → huitièmes (16) → quarts → demies → finale ; gagner en "
         "seizièmes qualifie pour les HUITIÈMES. Si le tour n'est pas nommé, "
         "écris « pour la suite du tournoi ».\n" + ANTI_IA + "\n"
