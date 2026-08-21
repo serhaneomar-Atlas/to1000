@@ -90,7 +90,9 @@ def best_image(item: dict) -> str | None:
 # raccourci, et la traduction Gemini avec glossaire. MyMemory traduit mot à
 # mot (« أول قبطان لبرجة », « première capitaine … et Aitana et Graham
 # entrent ») : ce brouillon sert de matière première, jamais d'affichage.
-ENGINES_AFFICHABLES = {"gemini-editor", "gemini-edi", "gemini"}
+# `redaction` = articles écrits par la rédaction To1000 (custom_news.json) —
+# du travail humain validé, jamais à masquer.
+ENGINES_AFFICHABLES = {"gemini-editor", "gemini-edi", "gemini", "redaction"}
 
 
 def publishable(item: dict, lang: str) -> bool:

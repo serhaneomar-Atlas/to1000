@@ -48,7 +48,7 @@ SITE_LANGS = ("fr", "en", "es", "ar")
 
 # Moteurs considérés comme « travail éditorial fait ». MyMemory et le repli en
 # langue source ne comptent pas : c'est de la traduction brute.
-ENGINES_OK = {"gemini-editor", "gemini-edi"}
+ENGINES_OK = {"gemini-editor", "gemini-edi", "redaction"}
 
 # Tournures qui trahissent un texte généré. Volontairement resserré : on ne
 # chasse que ce qui ne s'écrit quasiment jamais dans une brève de presse.
