@@ -79,6 +79,10 @@ jobs:
 
       - name: Commit & push
         if: steps.diff.outputs.changed == 'true'
+        env:
+          # Le rejeu post-conflit relance enrich_news : sans la clé il
+          # sortirait « rien à faire » et le run serait vert sans travail.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           git config user.name "to1000-editorial-bot"
           git config user.email "to1000-editorial-bot@users.noreply.github.com"
@@ -87,10 +91,33 @@ jobs:
           done
           if git diff --cached --quiet; then
             echo "::notice::Rien à committer"
-          else
-            git commit -m "chore(editorial): enrichissement Gemini [$(date -u +%Y-%m-%dT%H:%M)Z]"
-            bash scripts/ci_push.sh main
+            exit 0
           fi
+          git commit -m "chore(editorial): enrichissement Gemini [$(date -u +%Y-%m-%dT%H:%M)Z]"
+          if bash scripts/ci_push.sh main; then
+            exit 0
+          fi
+          # Course structurelle observée le 21/08 : l'enrichissement dure 10-20
+          # min et news-sync rafraîchit le fil pendant ce temps → rebase en
+          # conflit sur news.json, travail perdu. Le remède est de repartir du
+          # fil FRAIS et de rejouer l'enrichissement : toutes les décisions
+          # sont dans le cache de traduction, la seconde passe coûte zéro
+          # appel Gemini et quelques secondes.
+          echo "::warning::conflit avec un refresh du fil — rejeu de l'enrichissement sur le fil frais (cache)"
+          git fetch origin main && git reset --hard origin/main
+          python scripts/enrich_news.py
+          python scripts/audit_semantique.py || true
+          python scripts/news_to_html.py || true
+          python scripts/prerender_news.py || true
+          for f in public/news.json public/news.html public/translations_cache.json public/news/ EDITORIAL/state/semantic_audit.jsonl; do
+            git add "$f" 2>/dev/null || true
+          done
+          if git diff --cached --quiet; then
+            echo "::notice::Rien à committer après rejeu"
+            exit 0
+          fi
+          git commit -m "chore(editorial): enrichissement Gemini [$(date -u +%Y-%m-%dT%H:%M)Z] (rejeu post-refresh)"
+          bash scripts/ci_push.sh main
 
       - name: Deploy to Cloudflare Pages
         if: steps.diff.outputs.changed == 'true' && env.CLOUDFLARE_API_TOKEN != ''

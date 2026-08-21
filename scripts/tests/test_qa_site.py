@@ -245,3 +245,14 @@ def test_libelle_neutre_est_accepte(site):
     r = Rapport()
     qa_site.controle_langue(r)
     assert r.entrees == []
+
+
+def test_un_match_en_cours_n_est_pas_un_match_deja_joue(site):
+    """Coup d'envoi il y a 20 min = match live, pas une donnée périmée."""
+    import json as _json
+    data = _json.loads((site / "stats.json").read_text())
+    data["next_match"]["kickoff_utc"] = (MAINTENANT - timedelta(minutes=20)).isoformat()
+    (site / "stats.json").write_text(_json.dumps(data), encoding="utf-8")
+    r = Rapport()
+    qa_site.controle_fraicheur(r, MAINTENANT)
+    assert r.entrees == []

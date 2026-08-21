@@ -129,7 +129,10 @@ def controle_fraicheur(r: Rapport, maintenant: datetime) -> None:
     if not stats:
         return
     prochain = _iso((stats.get("next_match") or {}).get("kickoff_utc"))
-    if prochain and prochain < maintenant:
+    # Fenêtre de grâce de 3 h : un coup d'envoi récent = match EN COURS
+    # (mi-temps comprises), pas une donnée périmée. Sans elle, afficher le
+    # match live d'Al Nassr déclenchait l'audit à la 15e minute de jeu.
+    if prochain and (maintenant - prochain) > timedelta(hours=3):
         r.erreur("fraicheur", "stats.json",
                  f"le « prochain match » est daté du {prochain:%d/%m/%Y}, "
                  "donc déjà joué")
