@@ -79,26 +79,27 @@
       "i18n": {
         "fr": {
           "title": "Zinédine Zidane, le fils préféré de Marseille qui n'a jamais porté le maillot de l'OM",
-          "summary": "À Marseille, des quartiers nord au Vélodrome, du Vieux-Port à la Corniche, Zinédine Zidane a toujours été chez lui, même s'il n'a jamais porté les couleurs de l'OM durant sa carrière.",
-          "needs_translation": false
+          "summary": "Originaire de Marseille, Zinédine Zidane conserve une place à part dans sa ville natale, bien qu'il n'ait jamais joué sous les couleurs de l'OM au cours de sa carrière professionnelle.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Zinedine Zidane, Marseille's favourite son who never wore the OM jersey",
-          "summary": "In Marseille, from the northern districts to the Velodrome, from the Old Port to the Corniche, Zinedine Zidane has always been at home, even if he has never worn the colours of OM during his career.",
+          "title": "Zinédine Zidane, Marseille's favorite son who never wore the OM jersey",
+          "summary": "Despite his deep connection to Marseille and his iconic status in the city, Zinédine Zidane never played for OM during his professional career.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Zinedine Zidane, el hijo favorito de Marsella que nunca vistió la camiseta del OM",
-          "summary": "En Marsella, de los barrios del norte al Velódromo, del Puerto Viejo a la Cornisa, Zinedine Zidane siempre ha estado en su casa, aunque nunca haya llevado los colores del OM durante su carrera.",
+          "title": "Zinédine Zidane, el hijo predilecto de Marseille que nunca vistió la camiseta del OM",
+          "summary": "A pesar de su fuerte vínculo y su estatus icónico en Marseille, Zinédine Zidane nunca llegó a jugar en el OM durante su carrera profesional.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "زين الدين زيدان، ابن مارسيليا المفضل الذي لم يرتدي قميص OM",
-          "summary": "في مرسيليا، من المناطق الشمالية إلى Velodrome، من الميناء القديم إلى الكورنيش، كان زين الدين زيدان دائمًا في المنزل، حتى لو لم يرتدي ألوان OM خلال حياته المهنية.",
+          "title": "زين الدين زيدان، ابن مارسيليا المفضل الذي لم يرتدِ قميص أولمبيك مارسيليا قط",
+          "summary": "يحظى زين الدين زيدان بمكانة رمزية خاصة في مسقط رأسه مارسيليا، رغم أنه لم يلعب بقميص نادي أولمبيك مارسيليا طوال مسيرته الاحترافية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Zinedine-zidane-le-fils-prefere-de-marseille-qui-n-a-jamais-porte-le-maillot-de-l-om/1710475#at_medium=RSS_feeds",
@@ -120,7 +121,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Zinedine-zidane-le-fils-prefere-de-marseille-qui-n-a-jamais-porte-le-maillot-de-l-om/1710475#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "cc514ace676d",
@@ -285,26 +291,27 @@
       "i18n": {
         "fr": {
           "title": "Le journal du mercato : Benzema scelle son avenir, nouveau transfert à 100 millions d’euros en Angleterre",
-          "summary": "Benzema qui continue en Arabie saoudite, Savinho vers Tottenham ou Arsenal qui courtise Alvarez : toutes les infos du mercato football de ce vendredi 21 août 2026.",
-          "needs_translation": false
+          "summary": "Benzema reste en Arabie saoudite, tandis que Savinho intéresse Tottenham et qu'Arsenal suit de près Alvarez.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The market newspaper: Benzema seals its future, new transfer to 100 million euros in England",
-          "summary": "Benzema continuing in Saudi Arabia, Savinho to Tottenham or Arsenal courting Alvarez: all the information from the football transfer window on Friday, August 21, 2026.",
+          "title": "Transfer round-up: Benzema seals his future, new €100m transfer in England",
+          "summary": "Benzema will continue his career in Saudi Arabia, while Tottenham targets Savinho and Arsenal pursues Alvarez.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El diario del mercado: Benzema sella su futuro, nueva transferencia de 100 millones de euros a Inglaterra",
-          "summary": "Benzema que continúa en Arabia Saudita, Savinho hacia Tottenham o Arsenal que corteja a Álvarez: toda la información del mercado de fichajes de este viernes 21 de agosto de 2026.",
+          "title": "El diario del mercado: Benzema sella su futuro, nuevo fichaje de 100 millones de euros en Inglaterra",
+          "summary": "Benzema seguirá en Arabia Saudí, mientras que Tottenham apunta a Savinho y Arsenal se interesa por Alvarez.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "صحيفة السوق: بنزيمة تختم مستقبلها، تحويل جديد إلى 100 مليون يورو في إنجلترا",
-          "summary": "بنزيما مستمر في المملكة العربية السعودية، سافينيو إلى توتنهام أو أرسنال يغازل الفاريز: جميع المعلومات من نافذة انتقال كرة القدم يوم الجمعة 21 أغسطس 2026.",
+          "title": "نشرة الميركاتو: بنزيما يحسم مستقبله، وصفقة جديدة بقيمة 100 مليون يورو في إنجلترا",
+          "summary": "بنزيما يواصل مسيرته في السعودية، في حين يستهدف توتنهام التعاقد مع سافينيو ويسعى أرسنال لضم ألفاريز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/transferts/le-journal-du-mercato-benzema-scelle-son-avenir-nouveau-transfert-a-100-millions-d-euros-en-angleterre-20260821",
@@ -326,7 +333,12 @@
           "url": "https://www.lefigaro.fr/sports/football/transferts/le-journal-du-mercato-benzema-scelle-son-avenir-nouveau-transfert-a-100-millions-d-euros-en-angleterre-20260821"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "839a8631c1d8",
@@ -391,26 +403,27 @@
       "i18n": {
         "es": {
           "title": "Partidos de HOY, viernes 21 de agosto: agenda, horario y por dónde ver fútbol EN VIVO",
-          "summary": "Una guía completa con horarios y televisión para no perderte nada: desde el partido de San Lorenzo por el Torneo Clausura hasta el regreso de la Premier League con la presentación del último campeón, el Arsenal.",
-          "needs_translation": false
+          "summary": "Horarios y canales de transmisión para los partidos de este viernes 21 de agosto, que incluyen la presentación de San Lorenzo en el Torneo Clausura y el regreso de la Premier League con Arsenal.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Matches TODAY, Friday 21 August: agenda, schedule and where TO watch LIVE FOOTBALL",
-          "summary": "A complete guide with schedules and television so you don't miss anything: from San Lorenzo's match for the Clausura Tournament to the return of the Premier League with the presentation of the latest champion, Arsenal.",
+          "title": "TODAY'S matches, Friday, August 21: schedule, kickoff times and where to watch football LIVE",
+          "summary": "Schedule and broadcast details for matches on Friday, August 21, featuring San Lorenzo in the Torneo Clausura alongside the return of the Premier League with Arsenal.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Matchs d'AUJOURD' HUI, vendredi 21 août : agenda, horaires et où regarder DU football EN DIRECT",
-          "summary": "Un guide complet avec les horaires et la télévision pour ne rien manquer : du match de San Lorenzo pour le tournoi de clôture au retour de la Premier League avec la présentation du dernier champion, Arsenal.",
+          "title": "Matchs d'AUJOURD'HUI, vendredi 21 août : programme, horaires et chaînes pour voir le football EN DIRECT",
+          "summary": "Programme et diffusion TV des rencontres du vendredi 21 août, marquées notamment par le match de San Lorenzo en Torneo Clausura et la Premier League avec Arsenal.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباريات اليوم الجمعة 21 أغسطس: جدول الأعمال والجدول الزمني ومكان مشاهدة كرة القدم الحية",
-          "summary": "دليل كامل مع الجداول الزمنية والتلفزيون حتى لا يفوتك أي شيء: من مباراة سان لورينزو لبطولة كلوسورا إلى عودة الدوري الممتاز مع تقديم آخر بطل، آرسنال.",
+          "title": "مباريات اليوم الجمعة 21 أغسطس: المواعيد والقنوات الناقلة للبث المباشر",
+          "summary": "جدول مواعيد مباريات اليوم الجمعة 21 أغسطس والقنوات الناقلة، متضمناً مواجهة سان لورينزو في تورنيو كلاوسورا وعودة الدوري الإنجليزي الممتاز بمشاركة أرسنال.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/agenda-deportiva/partidos-hoy-viernes-21-agosto-2026-agenda-ole-horario-ver-futbol-vivo_0_of4NCBEFJ7.html",
@@ -432,7 +445,12 @@
           "url": "https://www.ole.com.ar/agenda-deportiva/partidos-hoy-viernes-21-agosto-2026-agenda-ole-horario-ver-futbol-vivo_0_of4NCBEFJ7.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0019a668deb2",
@@ -441,26 +459,27 @@
       "i18n": {
         "es": {
           "title": "El exdeportivista Iván Barbero, goleador de un Arouca líder de la liga portuguesa",
-          "summary": "Fue uno de los referentes de la temporada del ascenso del Deportivo al fútbol profesional, a pesar de que se pasó la primera mitad del año de baja por una lesión de rodilla.",
-          "needs_translation": false
+          "summary": "Iván Barbero, figura en el ascenso del Deportivo pese a su lesión de rodilla, destaca como goleador en Arouca, líder de la liga portuguesa.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Former sportsman Iván Barbero, goalscorer for Arouca, leader of the Portuguese league",
-          "summary": "He was one of the references of the season of Deportivo's promotion to professional football, despite spending the first half of the year out with a knee injury.",
+          "title": "Former Deportivo player Iván Barbero shines as goalscorer for Portuguese league leaders Arouca",
+          "summary": "Iván Barbero, a key figure in Deportivo's promotion despite a long knee injury, is now starring as a goalscorer for Portuguese league leaders Arouca.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "L'ancien sportif Ivan Barbero, buteur d'un Arouca leader de la ligue portugaise",
-          "summary": "Il a été l'une des références de la saison de l'ascension du Deportivo dans le football professionnel, même s'il a passé la première moitié de l'année en arrêt maladie en raison d'une blessure au genou.",
+          "title": "L'ancien joueur du Deportivo Iván Barbero, buteur d'un Arouca leader de la ligue portugaise",
+          "summary": "Artisan de la montée du Deportivo malgré une grave blessure au genou, Iván Barbero s'illustre désormais comme buteur avec Arouca, leader du championnat portugais.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الرياضي السابق إيفان باربيرو، هداف أروكا، قائد الدوري البرتغالي",
-          "summary": "كان أحد المراجع لموسم ترقية ديبورتيفو لكرة القدم الاحترافية، على الرغم من قضاء النصف الأول من العام مع إصابة في الركبة.",
+          "title": "لاعب ديبورتيفو السابق إيفان باربيرو يتألق كهدّاف مع أروكا متصدر الدوري البرتغالي",
+          "summary": "يتألق إيفان باربيرو، أحد أبرز عناصر صعود ديبورتيفو السابقين رغم إصابته بالركبة، كهدّاف مع فريق أروكا متصدر الدوري البرتغالي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/exdeportivista-ivan-barbero-goleador-arouca-133538007?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -482,7 +501,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/exdeportivista-ivan-barbero-goleador-arouca-133538007?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "27114bf68e50",
@@ -532,7 +556,12 @@
           "url": "https://www.lequipe.fr/Football/Article/-ce-n-est-pas-un-bon-souvenir-c-est-un-tres-bon-souvenir-malgre-une-8e-place-et-un-depart-plus-vite-que-prevu-will-still-a-laisse-une-bonne-impression-a-lens/1712391#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e472680f144f",
@@ -591,26 +620,27 @@
       "i18n": {
         "es": {
           "title": "Dos rivales de peso por Lilian Brassier, central pretendido por el Deportivo: Torino y Eintracht, al acecho",
-          "summary": "El Deportivo se mueve de manera sigilosa para lograr dos incorporaciones más antes del mercado de fichajes, un central zurdo y un extremo diestro que redondeen la plantilla del regreso a Primera que ya cuenta con siete fichajes.",
-          "needs_translation": false
+          "summary": "El Deportivo busca cerrar dos fichajes más para su regreso a Primera, entre ellos el central zurdo Lilian Brassier, quien también interesa a Torino y Eintracht.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Two heavyweight rivals for Lilian Brassier, a centre-back wanted by Deportivo: Torino and Eintracht, on the prowl",
-          "summary": "El Deportivo moves stealthily to achieve two more additions before the signing market, a left-handed centre-back and a right-handed winger that round out the squad for the return to Primera, which already has seven signings.",
+          "title": "Two major rivals for Lilian Brassier, the centre-back targeted by Deportivo: Torino and Eintracht on the prowl",
+          "summary": "Deportivo aims to secure two more signings for its return to Primera, including centre-back Lilian Brassier, who is also pursued by Torino and Eintracht.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Deux rivaux de poids pour Lilian Brassier, prétendu défenseur central du Deportivo : Torino et Eintracht, à l'affût",
-          "summary": "Le Deportivo se déplace furtivement pour obtenir deux nouvelles recrues avant le marché des transferts, un central gaucher et un extrême droit qui complètent l'effectif du retour à Primera qui compte déjà sept recrues.",
+          "title": "Deux rivaux de taille pour Lilian Brassier, défenseur central ciblé par le Deportivo : Torino et Eintracht à l'affût",
+          "summary": "Le Deportivo vise deux recrues supplémentaires pour son retour en Primera, dont le défenseur Lilian Brassier, également courtisé par Torino et Eintracht.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "منافسان للوزن الثقيل لليليان براسير، ظهير مركزي مطلوب من قبل ديبورتيفو: تورينو وآينتراخت، على الطريق",
-          "summary": "يتحرك الديبورتيفو خلسة لتحقيق إضافتين أخريين قبل سوق التوقيع، ظهير مركزي أعسر وجناح أيمن يدور حول الفريق للعودة إلى بريميرا، التي لديها بالفعل سبع توقيعات.",
+          "title": "منافسان قويان على ضم ليليان براسييه، المدافع المطلوب في ديبورتيفو: تورينو وآينتراخت يترقبان",
+          "summary": "يسعى ديبورتيفو لإبرام صفقتين إضافيتين استعداداً لعودته إلى الدوري الإسباني، من بينهما المدافع ليليان براسييه الذي يحظى أيضاً باهتمام تورينو وآينتراخت.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/rivales-peso-lilian-brassier-central-133537078?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -632,7 +662,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/rivales-peso-lilian-brassier-central-133537078?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f9d27f259886",
@@ -641,26 +676,27 @@
       "i18n": {
         "en": {
           "title": "Quiz! Can you answer 15 questions on Premier League in 1996-97?",
-          "summary": "How much do you know about the Premier League 30 years ago?",
-          "needs_translation": false
+          "summary": "Test your knowledge of the 1996-97 Premier League season with a 15-question quiz on the campaign's key events and statistics.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Quiz ! Pouvez-vous répondre à 15 questions sur la Premier League en 1996-1997 ?",
-          "summary": "Que savez-vous de la Premier League il y a 30 ans ?",
+          "title": "Quiz ! Pouvez-vous répondre à 15 questions sur la Premier League en 1996-97 ?",
+          "summary": "Un quiz de 15 questions met à l'épreuve les connaissances sur les moments forts et les statistiques de la saison 1996-97 de Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "¡Cuestionario! ¿Puedes responder 15 preguntas sobre la Premier League en 1996-97?",
-          "summary": "¿Cuánto sabes sobre la Premier League hace 30 años?",
+          "title": "¡Quiz! ¿Puedes responder 15 preguntas sobre la Premier League en 1996-97?",
+          "summary": "Un quiz de 15 preguntas pone a prueba los conocimientos sobre los eventos y datos clave de la temporada 1996-97 de la Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "اختبار! هل يمكنك الإجابة على 15 سؤالًا حول الدوري الإنجليزي الممتاز في 1996-1997 ؟",
-          "summary": "ما مدى معرفتك بالدوري الممتاز قبل 30 عامًا ؟",
+          "title": "اختبار! هل يمكنك الإجابة على 15 سؤالاً عن الدوري الإنجليزي الممتاز لموسم 1996-1997؟",
+          "summary": "اختبار معلومات يضم 15 سؤالاً لتقييم المعرفة بأبرز أحداث وإحصائيات موسم 1996-1997 في الدوري الإنجليزي الممتاز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.fourfourtwo.com/quiz/football-quiz-the-premier-league-in-1996-97",
@@ -682,7 +718,12 @@
           "url": "https://www.fourfourtwo.com/quiz/football-quiz-the-premier-league-in-1996-97"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d0873056c042",
@@ -691,26 +732,27 @@
       "i18n": {
         "es": {
           "title": "Mourinho admite que Rodri habría sido \"la guinda\" de su Madrid",
-          "summary": "José Mourinho , entrenador del Real Madrid , reconoció que el fichaje de Rodri Hernández (30 años) hubiera sido \"la guinda\" para la plantilla merengue.",
-          "needs_translation": false
+          "summary": "José Mourinho reconoció que el fichaje de Rodri Hernández habría sido el complemento ideal para su plantilla en el Real Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mourinho admits that Rodri would have been \"the icing on the cake\" of his Madrid",
-          "summary": "José Mourinho , coach of Real Madrid , acknowledged that the signing of Rodri Hernández (30 years old) would have been \"the icing on the cake\" for the Merengue squad.",
+          "title": "Mourinho admits Rodri would have been the \"icing on the cake\" for his Real Madrid",
+          "summary": "José Mourinho acknowledged that signing Rodri Hernández would have been the ideal addition to complete his Real Madrid squad.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Mourinho admet que Rodri aurait été « la cerise sur le gâteau » de son Madrid",
-          "summary": "José Mourinho , entraîneur du Real Madrid , a reconnu que l'arrivée de Rodri Hernández (30 ans) aurait été « la cerise sur le gâteau » pour l'équipe merengue.",
+          "title": "Mourinho admet que Rodri aurait été « la cerise sur le gâteau » de son Real Madrid",
+          "summary": "José Mourinho a déclaré que le recrutement de Rodri Hernández aurait été le renfort idéal pour compléter son effectif au Real Madrid.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يعترف مورينيو بأن رودري كان سيكون \"الجليد على الكعكة\" في مدريد",
-          "summary": "اعترف خوسيه مورينيو ، مدرب ريال مدريد ، بأن توقيع رودري هيرنانديز (30 عاما) كان سيكون \"الجليد على الكعكة\" لفريق ميرينغي.",
+          "title": "مورينيو يعترف بأن رودري كان ليكون \"اللمسة المثالية\" في ريال مدريد",
+          "summary": "صرّح المدرب جوزيه مورينيو بأن التعاقد مع رودري هيرنانديز كان ليكون الإضافة المثالية لاكتمال تشكيلة ريال مدريد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260821/1004218198/mourinho-admite-rodri-habria-sido-guinda-madrid.html",
@@ -732,7 +774,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260821/1004218198/mourinho-admite-rodri-habria-sido-guinda-madrid.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6b2470b9b21a",
@@ -897,26 +944,27 @@
       "i18n": {
         "es": {
           "title": "Así amanece la ciudad deportiva del Atlético: \"Julián fuera\"",
-          "summary": "El asunto de Julián Alvare z sigue dando que hablar.",
-          "needs_translation": false
+          "summary": "Aparecen pintadas con el mensaje \"Julián fuera\" en la ciudad deportiva del Atlético en relación con la situación de Julián Alvare.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "This is how Atletico's sports city dawns: \"Julian out\"",
-          "summary": "The matter of Julián Álvare z continues to speak for itself.",
+          "title": "Atlético training ground wakes up to message: \"Julián out\"",
+          "summary": "Messages reading \"Julián out\" appeared at the Atlético training ground as debate continues over the situation of Julián Alvare.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Voici comment se lève la ville sportive de l'Atlético : « Julian dehors »",
-          "summary": "L'affaire Julián Alvare z continue de faire parler d'elle.",
+          "title": "Le centre d'entraînement de l'Atlético se réveille avec le message : « Julián dehors »",
+          "summary": "Des messages réclamant le départ de Julián ont été constatés au centre d'entraînement de l'Atlético alors que le cas de Julián Alvare continue de faire réagir.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هذه هي الطريقة التي تشرق بها مدينة أتلتيكو الرياضية: \"جوليان يخرج\"",
-          "summary": "لا تزال مسألة جوليان ألفاريز تتحدث عن نفسها.",
+          "title": "عبارة \"جوليان ارحل\" تظهر في مركز تدريبات أتلتيكو مدريد",
+          "summary": "ظهرت عبارات تطالب برحيل جوليان في مركز تدريبات أتلتيكو مدريد، وسط استمرار الجدل المثار حول وضع المهاجم الأرجنتيني جوليان ألفاريز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260821/1004218191/asi-amanece-ciudad-deportiva-atletico-julian-fuera.html",
@@ -938,7 +986,12 @@
           "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260821/1004218191/asi-amanece-ciudad-deportiva-atletico-julian-fuera.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b3fe3a4f4bc1",
@@ -997,32 +1050,33 @@
       "i18n": {
         "de": {
           "title": "Im DBB-Kader, aber ohne Klub: Deutschlands arbeitslose Nationalspieler",
-          "summary": "Nelson Weidemann und Kostja Mushidi stehen im aktuellen Aufgebot der deutschen Basketball-Nationalmannschaft für den Super Cup. Einen festen Vertrag bei einem Klub haben beide aktuell allerdings nicht.",
-          "needs_translation": false
+          "summary": "Nelson Weidemann und Kostja Mushidi stehen im Aufgebot der deutschen Basketball-Nationalmannschaft für den Super Cup, besitzen derzeit jedoch keinen festen Vertrag bei einem Klub.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "In the DBB squad, but without a club: Germany's unemployed national team players",
-          "summary": "Nelson Weidemann and Kostja Mushidi are in the current line-up of the German national basketball team for the Super Cup. However, neither of them currently have a permanent contract with a club.",
+          "title": "In the DBB squad, but without a club: Germany's free-agent internationals",
+          "summary": "Nelson Weidemann and Kostja Mushidi have been included in the German national basketball team roster for the Super Cup, despite currently having no club contract.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Dans l'équipe DBB, mais sans club : les joueurs nationaux allemands au chômage",
-          "summary": "Nelson Weidemann et Kostja Mushidi font partie de la sélection actuelle de l'équipe nationale allemande de basket-ball pour la Super Coupe. Cependant, les deux n'ont actuellement pas de contrat ferme avec un club.",
+          "title": "Dans la sélection DBB mais sans club : les internationaux allemands sans contrat",
+          "summary": "Nelson Weidemann et Kostja Mushidi figurent dans l'effectif de l'équipe d'Allemagne de basket-ball pour la Super Cup, bien que tous deux soient actuellement sans club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "En el equipo de DBB, pero sin club: jugadores nacionales desempleados de Alemania",
-          "summary": "Nelson Weidemann y Kostja Mushidi están en la lista actual de la selección alemana de baloncesto para la Supercopa. Sin embargo, ninguno de los dos tiene actualmente un contrato fijo con un club.",
+          "title": "En la convocatoria de la DBB pero sin club: los internacionales alemanes sin equipo",
+          "summary": "Nelson Weidemann y Kostja Mushidi forman parte de la lista de la selección alemana de baloncesto para la Super Cup, a pesar de no tener contrato con ningún club actualmente.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "في تشكيلة DBB، ولكن بدون نادٍ: لاعبي المنتخب الوطني العاطلين عن العمل في ألمانيا",
-          "summary": "نيلسون فايدمان وكوستيا موشيدي في التشكيلة الحالية للفريق الوطني الألماني لكرة السلة لكأس السوبر. ومع ذلك، لا يوجد لدى أي منهما حاليًا عقد دائم مع نادٍ.",
+          "title": "في قائمة المنتخب وبلا نادٍ: لاعبان دوليان ألمانيان بلا عقود",
+          "summary": "استُدعي نيلسون فايدمان وكوستيا موشيدي إلى قائمة منتخب ألمانيا لكرة السلة لخوض كأس السوبر، على الرغم من عدم ارتباط أي منهما بأي نادٍ حالياً.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/im-dbb-kader-aber-ohne-klub-deutschlands-arbeitslose-nationalspieler-1245311/artikel#omrss",
@@ -1044,7 +1098,12 @@
           "url": "https://www.kicker.de/im-dbb-kader-aber-ohne-klub-deutschlands-arbeitslose-nationalspieler-1245311/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "70f1477ca2b3",
@@ -1102,27 +1161,48 @@
       "summary": "El futuro de Héctor Fort (20 años) apunta al Borussia Dortmund . Después de saber que no entraba en los planes de Flick , el lateral ha recibido varias propuestas para cambiar de aires este verano y la opción de recalar en la Bundesliga va tomando forma.",
       "i18n": {
         "es": {
-          "title": "Héctor Fort, decidido por el Dortmund",
-          "summary": "El futuro de Héctor Fort (20 años) apunta al Borussia Dortmund . Después de saber que no entraba en los planes de Flick , el lateral ha recibido varias propuestas para cambiar de aires este verano y la opción de recalar en la Bundesliga va tomando forma.",
-          "needs_translation": false
+          "title": "Héctor Fort da el sí al Borussia Dortmund",
+          "summary": "Héctor Fort ha elegido fichar por el Borussia Dortmund tras rechazar las propuestas formales de la Real Sociedad y la Roma.",
+          "body": [
+            "Las conversaciones entre ambas entidades ya están en marcha. El Barça aspira a ingresar entre 15 y 20 millones de euros por el traspaso del lateral de 20 años, un importe que podría ajustarse si el club catalán se asegura un porcentaje de una futura venta o una cláusula de recompra.",
+            "Sin hueco en los planes de Hansi Flick, el canterano se ejercita en solitario desde hace semanas para prevenir contratiempos físicos. El técnico alemán impuso esta medida de precaución para evitar un escenario similar al de Roony Bardghji, quien se lesionó de gravedad de la rodilla justo antes de salir traspasado."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Hector Fort, decided by Dortmund",
-          "summary": "The future of Hector Fort (20 years old) points to Borussia Dortmund . After learning that he was not part of Flick's plans, the forward has received several proposals to change the air this summer and the option of landing in the Bundesliga is taking shape.",
+          "title": "Héctor Fort gives green light to Borussia Dortmund move",
+          "summary": "Héctor Fort has chosen to sign for Borussia Dortmund after turning down concrete bids from Real Sociedad and Roma.",
+          "body": [
+            "Negotiations between both clubs are already underway. Barça are targeting a fee between €15m and €20m for the 20-year-old full-back, a figure that could come down if the Catalan side secure a future sell-on percentage or a buy-back clause.",
+            "Deemed surplus to requirements by Hansi Flick, the academy graduate has spent weeks training away from the main group to avoid any injury risks. The German manager enforced the measure to prevent a repeat of the Roony Bardghji situation, when the winger suffered a serious knee injury right before his proposed exit."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Hector Fort, décidé par Dortmund",
-          "summary": "L'avenir d'Hector Fort (20 ans) vise le Borussia Dortmund . Après avoir appris qu'il n'entrait pas dans les plans de Flick , le latéral a reçu plusieurs propositions pour changer d'air cet été et l'option de rejoindre la Bundesliga prend forme.",
+          "title": "Héctor Fort donne son feu vert au Borussia Dortmund",
+          "summary": "Héctor Fort a choisi de s'engager avec le Borussia Dortmund après avoir repoussé les offres fermes de la Real Sociedad et de la Roma.",
+          "body": [
+            "Les négociations entre les deux clubs sont déjà ouvertes. Le Barça espère récupérer entre 15 et 20 millions d'euros pour le transfert de son latéral de 20 ans, un montant modulable si la formation catalane conserve un pourcentage sur une future revente ou une clause de rachat.",
+            "Hors des plans de Hansi Flick, le joueur issu du centre de formation s'entraîne à l'écart depuis plusieurs semaines pour parer à tout pépin physique. Le technicien allemand a imposé ce principe de précaution afin d'éviter une mésaventure à la Roony Bardghji, gravement touché au genou au moment de finaliser son départ."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "هيكتور فورت، قررته دورتموند",
-          "summary": "يشير مستقبل هيكتور فورت (20 عامًا) إلى بوروسيا دورتموند . بعد أن علم أنه لم يكن جزءًا من خطط فليك ، تلقى المهاجم العديد من المقترحات لتغيير الأجواء هذا الصيف وخيار الهبوط في الدوري الألماني آخذ في التبلور.",
+          "title": "هيكتور فورت يمنح موافقته للانتقال إلى بوروسيا دورتموند",
+          "summary": "اختار هيكتور فورت التوقيع لصالح بوروسيا دورتموند بعد رفضه للعروض الرسمية المقدمة من ريال سوسيداد وروما.",
+          "body": [
+            "انطلقت المفاوضات بالفعل بين الناديين، حيث يسعى برشلونة للحصول على مبلغ يتراوح بين 15 و20 مليون يورو مقابل بيع الظهير البالغ 20 عاماً، وهو رقم قابل للتعديل في حال ضمن النادي الكتالوني نسبة من عائدات بيعه مستقبلاً أو بنداً يتيح إعادة شرائه.",
+            "وبات اللاعب الشاب يتدرب منفرداً منذ أسابيع لتفادي أي إصابات بعد خروجه من حسابات المدرب هانزي فليك. وفرض المدرب الألماني هذا الإجراء الاحترازي خشية تكرار سيناريو روني باردغجي، الذي تعرض لإصابة خطيرة في الركبة قبل إتمام صفقة رحيله مباشرة."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260821/1004218189/hector-fort-decidido-dortmund.html",
@@ -1144,7 +1224,20 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260821/1004218189/hector-fort-decidido-dortmund.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-21T10:05:31+00:00"
+        }
+      }
     },
     {
       "id": "8409b8a1bb64",
@@ -1194,7 +1287,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/rodri-hernandez-estudios-aprendi-hablar-ingles-estados-unidos-133527453?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e52fb14fcc4e",
@@ -1253,26 +1351,27 @@
       "i18n": {
         "es": {
           "title": "Por qué el Real Madrid protege el Bernabéu de las televisiones",
-          "summary": "Ayer contó nuestro compañero Juan Sánchez en MD que el Santiago Bernabéu es el único estadio donde no hablarán los árbitros.",
-          "needs_translation": false
+          "summary": "El Santiago Bernabéu es el único estadio de la competición donde los árbitros no hablarán para las retransmisiones televisivas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Why Real Madrid protects the Bernabéu from televisions",
-          "summary": "Yesterday our colleague Juan Sánchez told MD that the Santiago Bernabéu is the only stadium where the referees will not speak.",
+          "title": "Why Real Madrid protects the Bernabéu from television broadcasters",
+          "summary": "The Santiago Bernabéu is the only stadium where referees will not speak on television broadcasts.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Pourquoi le Real Madrid protège le Bernabéu des télévisions",
-          "summary": "Hier, notre collègue Juan Sánchez à MD a déclaré que le Santiago Bernabéu est le seul stade où les arbitres ne parleront pas.",
+          "summary": "Le Santiago Bernabéu est le seul stade où les arbitres ne s'exprimeront pas au micro des diffuseurs télévisés.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "لماذا يحمي ريال مدريد البرنابيو من أجهزة التلفزيون",
-          "summary": "بالأمس أخبر زميلنا خوان سانشيز MD أن سانتياغو برنابيو هو الملعب الوحيد الذي لن يتحدث فيه الحكام.",
+          "title": "لماذا يحمي ريال مدريد ملعب برنابيو من كاميرات التلفزيون؟",
+          "summary": "يعد ملعب سانتياغو برنابيو الملعب الوحيد الذي لن يدلي فيه الحكام بأي تصريحات للقنوات التلفزيونية الناقلة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260821/1004218183/real-madrid-protege-bernabeu-televisiones.html",
@@ -1294,7 +1393,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260821/1004218183/real-madrid-protege-bernabeu-televisiones.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f024240b7b86",
@@ -1403,26 +1507,27 @@
       "i18n": {
         "fr": {
           "title": "Plus de 100 millions dépensés et toujours aucune vente depuis 2021 : la Juve tente un dernier coup fou, avec un champion d’Italie libre qui pousse pour venir",
-          "summary": "La Juventus veut boucler son mercato en beauté. Après avoir déjà recruté six joueurs cet […] Source",
-          "needs_translation": false
+          "summary": "Après avoir recruté six joueurs et dépensé plus de 100 millions d'euros lors de ce mercato, la Juventus tente de finaliser l'arrivée d'un champion d'Italie actuellement libre de tout contrat.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "More than 100 million spent and still no sales since 2021: Juve tries one last crazy shot, with a free Italian champion pushing to come",
-          "summary": "Juventus wants to close its transfer window in style. After having already recruited six players this […] Source",
+          "title": "Over 100 million spent and still no sales since 2021: Juve attempts a final crazy move, with a free Italian champion pushing to join",
+          "summary": "After signing six players and spending over €100 million this transfer window, Juventus is aiming to complete the signing of a free-agent Serie A champion who is eager to join.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Más de 100 millones gastados y ninguna venta desde 2021: la Juve intenta una última jugada loca, con un campeón de Italia libre empujando para venir",
-          "summary": "La Juventus quiere cerrar su mercado de fichajes con estilo. Después de haber reclutado a seis jugadores este […] Fuente",
+          "title": "Más de 100 millones gastados y aún sin ventas desde 2021: la Juve intenta un último golpe de efecto con un campeón de Italia libre que presiona para llegar",
+          "summary": "Tras incorporar a seis jugadores y gastar más de 100 millones de euros en este mercado, la Juventus busca cerrar el fichaje de un campeón de Italia que se encuentra actualmente libre.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أكثر من 100 مليون تم إنفاقها ولم يتم بيعها حتى الآن منذ عام 2021: يحاول يوفنتوس تسديدة أخيرة مجنونة، مع وجود بطل إيطالي حر يضغط من أجل المجيء",
-          "summary": "يريد يوفنتوس إغلاق نافذة انتقاله بأناقة. بعد أن جندت بالفعل ستة لاعبين هذا [...] المصدر",
+          "title": "أكثر من 100 مليون أنفقت وبلا أي مبيعات منذ 2021: يوفنتوس يحاول إبرام صفقة أخيرة بضم بطل إيطاليا حر يضغط للانتقال",
+          "summary": "بعد ضم ستة لاعبين وإنفاق أكثر من 100 مليون يورو خلال الميركاتو الحالي، يسعى يوفنتوس لحسم التعاقد مع لاعب متوج بالدوري الإيطالي ومتاح مجاناً يرغب في الانضمام لصفوف الفريق.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.calciomio.fr/plus-de-100-millions-depenses-et-toujours-aucune-vente-depuis-2021-la-juve-tente-un-dernier-coup-fou-avec-un-champion-ditalie-libre-qui-pousse-pour-venir-id-179241",
@@ -1444,7 +1549,12 @@
           "url": "https://www.calciomio.fr/plus-de-100-millions-depenses-et-toujours-aucune-vente-depuis-2021-la-juve-tente-un-dernier-coup-fou-avec-un-champion-ditalie-libre-qui-pousse-pour-venir-id-179241"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d39cb2c1e495",
@@ -1453,26 +1563,27 @@
       "i18n": {
         "es": {
           "title": "Lo de Mariano es tremendo: el Ave Fénix que nadie vio venir",
-          "summary": "Había muchas ganas de que empezara a rodar la pelota en el fútbol español.",
-          "needs_translation": false
+          "summary": "El fútbol español retoma la competición oficial con gran expectación en torno al desempeño de Mariano.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The thing about Mariano is tremendous: the Phoenix that no one saw coming",
-          "summary": "There was a great desire for the ball to start rolling in Spanish football.",
+          "title": "The situation of Lo de Mariano: the Ave Fénix nobody saw coming",
+          "summary": "Spanish football has officially resumed action amid high anticipation surrounding the return of Mariano.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "L'histoire de Mariano est terrible : l'Oiseau Phénix que personne n'a vu venir",
-          "summary": "J'avais très envie que le ballon commence à rouler dans le football espagnol.",
+          "title": "La situation de Lo de Mariano : l'Ave Fénix que personne n'a vu venir",
+          "summary": "Le football espagnol a repris la compétition avec une forte attente autour du retour et des performances de Mariano.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الشيء حول ماريانو هائل: العنقاء التي لم يتوقعها أحد",
-          "summary": "كانت هناك رغبة كبيرة في أن تبدأ الكرة في التدحرج في كرة القدم الإسبانية.",
+          "title": "حالة ماريانو المذهلة: طائر الفينيق الذي لم يتوقعه أحد",
+          "summary": "عادت منافسات كرة القدم الإسبانية إلى الدوران وسط ترقب كبير لأداء وظهور المهاجم ماريانو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/alaves/20260821/1004218181/mariano-tremendo-ave-fenix-nadie-vio-venir.html",
@@ -1494,7 +1605,12 @@
           "url": "https://www.mundodeportivo.com/futbol/alaves/20260821/1004218181/mariano-tremendo-ave-fenix-nadie-vio-venir.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "88af2c0e0c38",
@@ -1571,7 +1687,17 @@
           "url": "https://www.kicker.de/joao-palhinha-vor-wechsel-zu-benfica-1245423/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-21T10:05:34+00:00"
+        }
+      }
     },
     {
       "id": "843382090823",
@@ -1580,26 +1706,27 @@
       "i18n": {
         "es": {
           "title": "Cara y cruz del Sevilla en San Mamés",
-          "summary": "El Sevilla solo ha logrado 21 triunfos en 90 visitas oficiales a San Mamés pero más de la mitad de esas victorias, once, se ha acumulado en el primer cuarto del siglo XXI.",
-          "needs_translation": false
+          "summary": "El Sevilla solo ha logrado 21 victorias en 90 visitas oficiales a San Mamés, aunque más de la mitad (11) se han registrado en el siglo XXI.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Cara y cruz del Sevilla in San Mamés",
-          "summary": "Sevilla have only achieved 21 wins in 90 official visits to San Mamés but more than half of those victories, eleven, have accumulated in the first quarter of the 21st century.",
+          "title": "Mixed fortunes for Sevilla at San Mamés",
+          "summary": "Sevilla have won just 21 of their 90 official visits to San Mamés, though more than half of those victories (11) have come in the 21st century.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Visage et croix de Séville à San Mamés",
-          "summary": "Séville n'a remporté que 21 victoires en 90 visites officielles à San Mamés, mais plus de la moitié de ces victoires, onze, se sont accumulées au cours du premier quart du XXIe siècle.",
+          "title": "Bilan contrasté pour le Sevilla à San Mamés",
+          "summary": "Le Sevilla ne compte que 21 victoires en 90 déplacements officiels à San Mamés, mais plus de la moitié (11) ont été obtenues au XXIe siècle.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "شاطئ Cara y cruz del Sevilla فى سان ماميس",
-          "summary": "لم تحقق إشبيلية سوى 21 فوزًا في 90 زيارة رسمية إلى سان ماميس ولكن أكثر من نصف تلك الانتصارات، أحد عشر، تراكمت في الربع الأول من القرن الحادي والعشرين.",
+          "title": "سجل متباين لنادي إشبيلية في سان ماميس",
+          "summary": "حقق إشبيلية 21 فوزاً فقط في 90 زيارة رسمية إلى سان ماميس، علماً أن أكثر من نصف تلك الانتصارات (11 فوزاً) جاءت في القرن الحادي والعشرين.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260821/1004218086/cara-cruz-sevilla-san-mames.html",
@@ -1621,7 +1748,12 @@
           "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260821/1004218086/cara-cruz-sevilla-san-mames.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a2a7459aacd3",
@@ -1679,27 +1811,28 @@
       "summary": "Kevin De Bruyne s’est livré comme jamais dans le documentaire « A Beautiful Obsession », disponible sur […] Source",
       "i18n": {
         "fr": {
-          "title": "« Mes enfants ne veulent pas partir » : les larmes de De Bruyne avant de signer au Napoli et l’aveu bouleversant de Guardiola sur son départ de Manchester City",
-          "summary": "Kevin De Bruyne s’est livré comme jamais dans le documentaire « A Beautiful Obsession », disponible sur […] Source",
-          "needs_translation": false
+          "title": "« Mes enfants ne veulent pas partir » : les larmes de De Bruyne avant de signer au Napoli et l'aveu de Guardiola sur son départ de Manchester City",
+          "summary": "Dans le documentaire « Beautiful Obsession », Kevin De Bruyne et Pep Guardiola sont revenus avec émotion sur le départ du milieu belge de Manchester City vers Napoli et son impact familial.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "'My children don't want to leave': De Bruyne's tears before signing for Napoli and Guardiola's shocking admission about leaving Manchester City",
-          "summary": "Kevin De Bruyne indulged like never before in the documentary \"A Beautiful Obsession\", available on […] Source",
+          "title": "\"My children don't want to leave\": De Bruyne's tears before signing for Napoli and Guardiola's confession on his Manchester City exit",
+          "summary": "In the documentary \"Beautiful Obsession\", Kevin De Bruyne and Pep Guardiola opened up about the Belgian midfielder's emotional departure from Manchester City to Napoli and its family impact.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "\"Mis hijos no quieren irse\": las lágrimas de De Bruyne antes de firmar con el Nápoles y la conmovedora confesión de Guardiola sobre su salida del Manchester City",
-          "summary": "Kevin De Bruyne se entregó como nunca en el documental \"A Beautiful Obsession\", disponible en […] Source",
+          "title": "«Mis hijos no quieren irse»: las lágrimas de De Bruyne antes de fichar por el Napoli y la confesión de Guardiola sobre su salida del Manchester City",
+          "summary": "En el documental «Beautiful Obsession», Kevin De Bruyne y Pep Guardiola abordaron la emotiva salida del centrocampista belga del Manchester City rumbo al Napoli y su impacto a nivel familiar.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"أطفالي لا يريدون المغادرة \": دموع دي بروين قبل التوقيع على اعتراف نابولي وغوارديولا الصادم بمغادرة مانشستر سيتي",
-          "summary": "انغمس كيفن دي بروين بشكل لم يسبق له مثيل في الفيلم الوثائقي \"هاجس جميل\"، المتاح على [...] Source",
+          "title": "\"أطفالي لا يريدون الرحيل\": دموع دي بروين قبل الانتقال إلى نابولي واعتراف غوارديولا بشأن رحيله عن مانشستر سيتي",
+          "summary": "تحدث كيفين دي بروين والمدير الفني بيب غوارديولا في فيلم وثائقي عن كواليس رحيل صانع الألعاب البلجيكي عن مانشستر سيتي إلى نابولي وتأثير القرار الصعب على عائلته.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.calciomio.fr/mes-enfants-ne-veulent-pas-partir-les-larmes-de-de-bruyne-avant-de-signer-au-napoli-et-laveu-bouleversant-de-guardiola-sur-son-depart-de-manchester-city-id-179244",
@@ -1721,7 +1854,12 @@
           "url": "https://www.calciomio.fr/mes-enfants-ne-veulent-pas-partir-les-larmes-de-de-bruyne-avant-de-signer-au-napoli-et-laveu-bouleversant-de-guardiola-sur-son-depart-de-manchester-city-id-179244"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "37ea87eacfa5",
@@ -1730,26 +1868,27 @@
       "i18n": {
         "fr": {
           "title": "OM : un départ annoncé dans l’organigramme du club",
-          "summary": "Arrivé sous la présidence de Pablo Longoria, Alessandro Antonello quitte son poste de directeur général à l’Olympique de Marseille.",
-          "needs_translation": false
+          "summary": "Alessandro Antonello quitte son poste de directeur général de l’Olympique de Marseille, où il était arrivé sous la présidence de Pablo Longoria.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "OM: a departure announced in the club's organisational chart",
-          "summary": "Arriving under the presidency of Pablo Longoria, Alessandro Antonello leaves his position as General Manager at Olympique de Marseille.",
+          "title": "OM: Departure announced in the club's management",
+          "summary": "Alessandro Antonello is stepping down as general director of Olympique de Marseille, having arrived under the presidency of Pablo Longoria.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "OM: una salida anunciada en el organigrama del club",
-          "summary": "Llegado bajo la presidencia de Pablo Longoria, Alessandro Antonello deja su puesto de director general en el Olympique de Marsella.",
+          "title": "OM: Se anuncia una salida en el organigrama del club",
+          "summary": "Alessandro Antonello deja su cargo como director general del Olympique de Marseille, al que se había incorporado bajo la presidencia de Pablo Longoria.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "OM: تم الإعلان عن المغادرة في الهيكل التنظيمي للنادي",
-          "summary": "عند وصوله تحت رئاسة بابلو لونغوريا، يترك أليساندرو أنطونيلو منصبه كمدير عام في أولمبيك مرسيليا.",
+          "title": "أولمبيك مارسيليا: إعلان رحيل مسؤول في الهيكل الإداري للنادي",
+          "summary": "أليساندرو أنتونيلو يغادر منصبه مديراً عاماً لنادي أولمبيك مارسيليا، بعد أن تولى المنصب خلال فترة رئاسة بابلو لونغوريا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-1/om-un-depart-annonce-dans-l-organigramme-du-club-20260821",
@@ -1771,7 +1910,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-1/om-un-depart-annonce-dans-l-organigramme-du-club-20260821"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5a4076da9253",
@@ -1780,32 +1924,33 @@
       "i18n": {
         "de": {
           "title": "Geertruida samt Kaufoption nach Eindhoven - Tottenham und ManCity wegen Savinho einig - Hohes FCN-Preisschild für Zoma",
-          "summary": "Wer wechselt wohin? Wer ist wo im Gespräch?",
-          "needs_translation": false
+          "summary": "Geertruida wechselt mit Kaufoption nach Eindhoven, während sich Tottenham und ManCity über Savinho einig sind. Zudem fordert der FCN eine hohe Ablöse für Zoma.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Geertruida including purchase option to Eindhoven - Tottenham and ManCity agree on Savinho - High FCN price tag for Zoma",
-          "summary": "Who is moving to where? Who is in conversation where?",
+          "title": "Geertruida to Eindhoven with buy option - Tottenham and ManCity agree on Savinho - High FCN price tag for Zoma",
+          "summary": "Geertruida is moving to Eindhoven with a purchase option, while Tottenham and ManCity have reached an agreement for Savinho. Meanwhile, FCN demands a high fee for Zoma.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Geertruida avec option d'achat à Eindhoven - Tottenham et ManCity d'accord sur Savinho - Étiquette de prix FCN élevée pour Zoma",
-          "summary": "Qui va où ? Qui est où dans la conversation ?",
+          "title": "Geertruida avec option d'achat à Eindhoven - Tottenham et ManCity d'accord pour Savinho - Prix élevé fixé par le FCN pour Zoma",
+          "summary": "Geertruida rejoint Eindhoven avec une option d'achat, tandis que Tottenham et ManCity ont trouvé un accord pour Savinho. De son côté, le FCN réclame une indemnité élevée pour Zoma.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Geertruida y la opción de compra a Eindhoven - Tottenham y ManCity están de acuerdo debido a Savinho - Alta etiqueta de precio FCN para Zoma",
-          "summary": "¿Quién se muda a dónde? ¿Quién está hablando dónde?",
+          "title": "Geertruida con opción de compra a Eindhoven - Tottenham y ManCity de acuerdo por Savinho - Alto precio del FCN por Zoma",
+          "summary": "Geertruida se marcha a Eindhoven con opción de compra, mientras que Tottenham y ManCity han alcanzado un acuerdo por Savinho. Además, el FCN exige un precio elevado por Zoma.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "جيرترويدا بما في ذلك خيار الشراء إلى أيندهوفن - توتنهام ومانسيتي يتفقان على سافينهو - ارتفاع سعر FCN لزوما",
-          "summary": "من ينتقل إلى أين ؟ من يتحدث إلى أين ؟",
+          "title": "خيرترويدا إلى أيندهوفن مع خيار الشراء - توتنهام ومانشستر سيتي يتفقان بشأن سافينيو - نورنبرغ يحدد سعرا مرتفعا لزوما",
+          "summary": "انتقل خيرترويدا إلى أيندهوفن مع خيار الشراء، وتوصل توتنهام ومانشستر سيتي لاتفاق حول سافينيو، بينما يطلب نورنبرغ مبلغا كبيرا للتخلي عن زوما.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/transferticker-953155/artikel#omrss",
@@ -1827,7 +1972,12 @@
           "url": "https://www.kicker.de/transferticker-953155/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "21be1fa587cc",
@@ -1836,32 +1986,33 @@
       "i18n": {
         "de": {
           "title": "\"Es liegt am Ball\": Wemby über mäßiges Comeback für Frankreich",
-          "summary": "Victor Wembanyama erwischte bei seinem Comeback für Frankreich in Belgrad einen schwachen Abend. Der Superstar der San Antonio Spurs hatte nach dem Spiel eine Erklärung dafür",
-          "needs_translation": false
+          "summary": "Victor Wembanyama zeigte bei seiner Rückkehr für Frankreich in Belgrad eine schwache Leistung. Der Superstar der San Antonio Spurs machte nach der Partie den Ball dafür verantwortlich.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "\"It's on the ball\": Wemby on moderate comeback for France",
-          "summary": "Victor Wembanyama had a weak evening during his comeback for France in Belgrade. The San Antonio Spurs superstar had an explanation for this after the game",
+          "title": "\"It's because of the ball\": Wemby on mediocre comeback for France",
+          "summary": "In his comeback for France in Belgrad, San Antonio Spurs star Victor Wembanyama had an underwhelming performance, blaming the ball after the game for his struggles.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "« C'est sur le ballon » : Wemby sur un retour modéré pour la France",
-          "summary": "Victor Wembanyama a eu une soirée faible lors de son retour pour la France à Belgrade. La superstar des San Antonio Spurs avait une explication après le match",
+          "title": "« C'est à cause du ballon » : Wemby revient sur son retour mitigé avec la France",
+          "summary": "De retour avec la France à Belgrad, le joueur des San Antonio Spurs Victor Wembanyama a livré une prestation décevante et a mis en cause le ballon après la rencontre.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "\"Es la pelota\": Wemby sobre el moderado regreso de Francia",
-          "summary": "Victor Wembanyama tuvo una noche débil en su regreso a Francia en Belgrado. La superestrella de los San Antonio Spurs tuvo una explicación tras el partido",
+          "title": "\"Es por el balón\": Wemby sobre su discreto regreso con Francia",
+          "summary": "En su regreso con Francia en Belgrad, el jugador de San Antonio Spurs Victor Wembanyama tuvo una actuación floja y responsabilizó al balón tras el partido.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"It's on the ball \": ويمبي في عودة معتدلة لفرنسا",
-          "summary": "عانى فيكتور ويمبانياما من أمسية ضعيفة خلال عودته إلى فرنسا في بلغراد. كان لدى نجم سان أنطونيو سبيرز تفسير لهذا بعد المباراة",
+          "title": "\"السبب يعود إلى الكرة\": ويمبي يفسر عودته المتواضعة مع منتخب فرنسا",
+          "summary": "قدّم نجم سان أنطونيو سبيرز فيكتور ويمبانياما أداءً باهتاً في مباراة عودته مع منتخب فرنسا في بلغراد، مبرراً تراجع مستواه بعد المواجهة بنوعية الكرة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/es-liegt-am-ball-wemby-ueber-maessiges-comeback-fuer-frankreich-1245417/artikel#omrss",
@@ -1883,7 +2034,12 @@
           "url": "https://www.kicker.de/es-liegt-am-ball-wemby-ueber-maessiges-comeback-fuer-frankreich-1245417/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     }
   ]
 }
