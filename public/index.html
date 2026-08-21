@@ -1108,10 +1108,19 @@
   }
   function relTime(iso){try{var diff=(new Date(iso).getTime()-Date.now())/1000,a=Math.abs(diff),rtf=new Intl.RelativeTimeFormat(LANG,{numeric:'auto'});
     if(a<3600)return rtf.format(Math.round(diff/60),'minute'); if(a<86400)return rtf.format(Math.round(diff/3600),'hour'); return rtf.format(Math.round(diff/86400),'day');}catch(e){return'';}}
+  // Même garde-fou qualité que /news : une traduction machine mot-à-mot ne
+  // doit JAMAIS atteindre le lecteur — la grille de la home était la fuite
+  // qui montrait encore « أول قبطان » après la correction de /news.
+  var NEWS_ENGINES_OK={'gemini-editor':1,'gemini-edi':1,'gemini':1};
+  function pickNewsL(it,l){
+    var e=(it.i18n||{})[l]||null,src=(((it.primary_source||{}).lang)||'').slice(0,2);
+    if(e&&(e.title||e.summary)&&(l===src||(!e.needs_translation&&NEWS_ENGINES_OK[e.engine])))return e;
+    return null;
+  }
   function renderNews(){
     if(!NEWS)return; var items=(NEWS.items||[]).slice(0,6), grid=document.querySelector('.news-grid'); if(!grid||!items.length)return;
     grid.innerHTML=items.map(function(it){
-      var L=(it.i18n&&it.i18n[LANG])||{};
+      var L=pickNewsL(it,LANG)||{};
       var tr=L.title||it.title||'';
       var sum=L.summary||it.summary||'';
       var ps=it.primary_source||{}, sname=(ps.flag?ps.flag+' ':'')+(ps.name||'Football');
