@@ -67,32 +67,33 @@
       "i18n": {
         "de": {
           "title": "Wie Havertz Arsenals Problem löst - und warum Wirtz jetzt liefern muss",
-          "summary": "Die neue Folge kicker Daily!",
-          "needs_translation": false
+          "summary": "Die neue Ausgabe von kicker Daily analysiert die Rolle von Kai Havertz bei Arsenal und die aktuellen Erwartungen an Florian Wirtz.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "How Havertz solves Arsenal's problem - and why Wirtz needs to deliver now",
-          "summary": "The new episode kicker daily!",
+          "title": "How Havertz solves Arsenal's problem - and why Wirtz must deliver now",
+          "summary": "The new episode of kicker Daily analyzes Kai Havertz's impact at Arsenal and the expectations surrounding Florian Wirtz.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Comment Havertz résout le problème d'Arsenal - et pourquoi Wirtz doit livrer maintenant",
-          "summary": "Le nouvel épisode de kicker Daily !",
+          "title": "Comment Havertz résout le problème d'Arsenal - et pourquoi Wirtz doit maintenant assurer",
+          "summary": "Le nouvel épisode de kicker Daily analyse l'impact de Kai Havertz à Arsenal et les attentes actuelles autour de Florian Wirtz.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Cómo resuelve Havertz el problema del Arsenal y por qué Wirtz tiene que entregarlo ahora",
-          "summary": "¡El nuevo episodio de kicker Daily!",
+          "title": "Cómo Havertz resuelve el problema de Arsenal - y por qué Wirtz debe responder ahora",
+          "summary": "El nuevo episodio de kicker Daily analiza el papel de Kai Havertz en Arsenal y las expectativas actuales sobre Florian Wirtz.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كيف يحل هافرتز مشكلة آرسنال - ولماذا تحتاج ويرتز إلى التسليم الآن",
-          "summary": "الحلقة الجديدة تبدأ كل يوم!",
+          "title": "كيف يحل هافيرتز مشكلة أرسنال - ولماذا يتعين على فيرتز التألق الآن",
+          "summary": "تتناول الحلقة الجديدة من كيكر ديلي دور كاي هافيرتز مع أرسنال والضغوط المفروضة على فلوريان فيرتز لتقديم المستوى المطلوب.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/wie-havertz-arsenals-problem-loest-und-warum-wirtz-jetzt-liefern-muss-1239495/artikel#omrss",
@@ -114,7 +115,12 @@
           "url": "https://www.kicker.de/wie-havertz-arsenals-problem-loest-und-warum-wirtz-jetzt-liefern-muss-1239495/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b7b6cd12a0c7",
@@ -172,27 +178,28 @@
       "summary": "Au moment d'entrer en lice en Ligue 1 vendredi à Marseille (20 h 45, en direct sur Ligue 1+, disponible sur L'Équipe), le RC Strasbourg, cette fois davantage contraint de vendre, a déjà modifié son effectif en profondeur.",
       "i18n": {
         "fr": {
-          "title": "Mercato : avant le premier match de la saison contre l'OM, l'impressionnant chamboule-tout habituel de l'effectif de Strasbourg n'est pas terminé",
-          "summary": "Au moment d'entrer en lice en Ligue 1 vendredi à Marseille (20 h 45, en direct sur Ligue 1+, disponible sur L'Équipe), le RC Strasbourg, cette fois davantage contraint de vendre, a déjà modifié son effectif en profondeur.",
-          "needs_translation": false
+          "title": "Mercato : avant le match d'ouverture contre l'OM, l'important remaniement de l'effectif de Strasbourg n'est pas terminé",
+          "summary": "Avant d'entamer sa saison de Ligue 1 vendredi contre Marseille, le RC Strasbourg a déjà profondément remodelé son effectif, contraint de vendre davantage avant la fin du Mercato.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mercato: before the first match of the season against OM, the usual impressive turmoil of the Strasbourg squad is not over",
-          "summary": "At the time of entering Ligue 1 on Friday in Marseille (20:45, live on Ligue 1+, available on L 'Équipe), RC Strasbourg, this time more forced to sell, has already changed its squad in depth.",
+          "title": "Mercato: Ahead of season opener against Marseille, Strasbourg squad overhaul is not over",
+          "summary": "Ahead of its Ligue 1 opener on Friday against Marseille, RC Strasbourg has extensively remodeled its squad, under pressure to make further sales before the Mercato closes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Mercado: antes del primer partido de la temporada contra el OM, el impresionante cambio habitual de la plantilla de Estrasburgo no ha terminado",
-          "summary": "En el momento de entrar en liza en la Ligue 1 el viernes en Marsella (20:45, en directo por Ligue 1+, disponible en L 'Équipe), el RC Strasbourg, esta vez más obligado a vender, ya ha modificado su plantilla en profundidad.",
+          "title": "Mercato: antes del estreno contra el Marseille, la profunda remodelación de la plantilla de Strasbourg no ha terminado",
+          "summary": "Antes de iniciar la Ligue 1 este viernes frente al Marseille, el RC Strasbourg ha reestructurado notablemente su plantilla, con la obligación de vender antes del cierre del Mercato.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ميركاتو: قبل المباراة الأولى من الموسم ضد أوم، لم تنته الاضطرابات المثيرة للإعجاب المعتادة في تشكيلة ستراسبورغ",
-          "summary": "في وقت دخول دوري الدرجة الأولى يوم الجمعة في مرسيليا (20:45، مباشرة على دوري الدرجة الأولى+، متاح على L 'Équipe)، قام نادي ستراسبورغ، هذه المرة أكثر إجبارًا على البيع، بتغيير فريقه بالفعل بعمق.",
+          "title": "سوق الانتقالات: قبل افتتاح الموسم أمام مارسيليا، إعادة هيكلة تشكيلة ستراسبورغ لم تنتهِ بعد",
+          "summary": "يفتتح نادي ستراسبورغ موسمه في الدوري الفرنسي يوم الجمعة بمواجهة أولمبيك مارسيليا بعد تعديلات جذرية على تشكيلته، وسط حاجته لبيع المزيد من اللاعبين قبل نهاية الميركاتو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Article/Ligue-1-le-chamboule-tout-habituel-au-mercato-de-l-effectif-de-strasbourg-n-est-pas-termine/1712321#at_medium=RSS_feeds",
@@ -214,7 +221,12 @@
           "url": "https://www.lequipe.fr/Football/Article/Ligue-1-le-chamboule-tout-habituel-au-mercato-de-l-effectif-de-strasbourg-n-est-pas-termine/1712321#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f7b14b400160",
@@ -323,26 +335,27 @@
       "i18n": {
         "es": {
           "title": "¿Cómo es el camino de Estudiantes y de Platense en la Copa Libertadores 2026?",
-          "summary": "Tras dejar en el camino a Universidad Católica, el equipo del Cacique Medina se medirá ante el Timao por un lugar entre los cuatro mejores de América. Todos los detalles de la llave.",
-          "needs_translation": false
+          "summary": "Tras superar a Universidad Católica, el equipo de Cacique Medina jugará contra el Timao en busca de un boleto a las semifinales de la Copa Libertadores.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "What is the path of Estudiantes and Platense in the 2026 Copa Libertadores?",
-          "summary": "After leaving the Catholic University on the way, Cacique Medina's team will face Timao for a place among the four best in America. All the details of the key.",
+          "title": "What is the path for Estudiantes and Platense in the 2026 Copa Libertadores?",
+          "summary": "After eliminating Universidad Católica, Cacique Medina's team will face Timao for a place in the semi-finals of the Copa Libertadores.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Comment est le chemin des étudiants et de Platense dans la Copa Libertadores 2026 ?",
-          "summary": "Après avoir quitté sur le chemin de l'Université Catholique, l'équipe du Cacique Medina se mesurera au Timao pour une place parmi les quatre meilleures d'Amérique. Tous les détails de la clé.",
+          "title": "Quel est le parcours d'Estudiantes et de Platense en Copa Libertadores 2026 ?",
+          "summary": "Après avoir écarté Universidad Católica, la formation de Cacique Medina affrontera le Timao pour tenter d'atteindre le dernier carré de la Copa Libertadores.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ما هو مسار Estudiantes و Platense في كأس ليبرتادوريس 2026 ؟",
-          "summary": "بعد مغادرته الجامعة الكاثوليكية في الطريق، سيواجه فريق كاسيك ميدينا تيماو للحصول على مكان من بين الأفضل أربعة في أمريكا. جميع تفاصيل المفتاح.",
+          "title": "كيف يبدو مسار إستوديانتيس وبلاتينسي في كوبا ليبرتادوريس 2026؟",
+          "summary": "بعد إقصاء يونيفرسيداد كاتوليكا، يواجه فريق المدرب كاسيكي ميدينا نظيره كورينثيانز لحجز مقعد في نصف نهائي كوبا ليبرتادوريس.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/libertadores/estudiantes-vs-corinthians-partido-cuartos-final-copa-libertadores-2026-dias-sedes_0_cZ477bIv9q.html",
@@ -370,7 +383,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/libertadores/camino-equipos-argentinos-copa-libertadores_0_AiwAbWijwz.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "aee78232d2b6",
@@ -429,26 +447,27 @@
       "i18n": {
         "es": {
           "title": "A la plantilla de Flick le falta la guinda del 'nueve'",
-          "summary": "El FC Barcelona, aunque está todavía lejos de una puesta a punto óptima, exhibió en el Gamper un gran poderío en cuanto a profundidad de plantilla.",
-          "needs_translation": false
+          "summary": "Aunque todavía lejos de su mejor nivel físico, el FC Barcelona mostró una notable profundidad de plantilla en el trofeo Gamper, mientras espera la llegada de un delantero centro.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Flick's template is missing the cherry on the 'nine'",
-          "summary": "FC Barcelona, although still far from an optimal set-up, showed great power in terms of squad depth in the Gamper.",
+          "title": "Flick's squad lacks the finishing touch of a number nine",
+          "summary": "Although still far from peak form, FC Barcelona showcased strong squad depth in the Gamper match, while still lacking an established central striker.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le personnel de Flick manque la cerise sur le gâteau du « neuf »",
-          "summary": "Le FC Barcelone, bien qu'il soit encore loin d'une mise au point optimale, a montré au Gamper une grande puissance en termes de profondeur d'effectif.",
+          "title": "Il manque la cerise du numéro neuf à l'effectif de Flick",
+          "summary": "Encore en phase de rodage, le FC Barcelona a montré une grande profondeur d'effectif lors du Gamper, mais l'équipe attend toujours le renfort d'un avant-centre.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "قالب فليك يفتقد الكرز على \"تسعة\"",
-          "summary": "أظهر نادي برشلونة، على الرغم من أنه لا يزال بعيدًا عن الإعداد الأمثل، قوة كبيرة من حيث عمق التشكيلة في غامبر.",
+          "title": "تشكيلة فليك تفتقد إلى مهاجم صريح",
+          "summary": "أظهر نادي برشلونة عمقاً كبيراً في تشكيلته خلال كأس غامبر رغم عدم اكتمال جاهزيته الفنية، وسط حاجته إلى التعاقد مع رأس حربة حاسم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260821/1004218100/plantilla-flick-le-falta-guinda-nueve.html",
@@ -470,7 +489,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260821/1004218100/plantilla-flick-le-falta-guinda-nueve.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "1000de354229",
@@ -479,26 +503,27 @@
       "i18n": {
         "es": {
           "title": "La prioridad de Flick era el '9' y han fichado a tres extremos",
-          "summary": "Cuando empezó el mercado de verano, Mundo Deportivo publicó en portada los cuatro fichajes que iba a acometer el Barça. Un central y un delantero centro, además de recuperar a Cancelo y a Rashford .",
-          "needs_translation": false
+          "summary": "Aunque la prioridad de Flick era un delantero centro, el Barça acabó incorporando a tres extremos, tras planear inicialmente el fichaje de un central, un '9', Cancelo y Rashford.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Flick's priority was' 9 'and they have signed three ends",
-          "summary": "When the summer market began, Mundo Deportivo published on the front page the four signings that Barça was going to undertake. A centre-back and a centre-forward, in addition to recovering Cancelo and Rashford .",
+          "title": "Flick's priority was a '9' and they signed three wingers",
+          "summary": "Although Flick's priority was signing a striker, Barça ended up recruiting three wingers, having initially targeted a center-back, a number nine, Cancelo, and Rashford.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La priorité de Flick était le '9' et ils ont signé à trois extrémités",
-          "summary": "Lorsque le mercato estival a commencé, Mundo Deportivo a publié en couverture les quatre transferts que le Barça allait effectuer. Un défenseur central et un attaquant central, en plus de récupérer Cancelo et Rashford .",
+          "title": "La priorité de Flick était le n°9 et ils ont recruté trois ailiers",
+          "summary": "Alors que la priorité de Flick était un avant-centre, le Barça a recruté trois ailiers, après avoir initialement ciblé un défenseur central, un attaquant, Cancelo et Rashford selon Mundo Deportivo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كانت أولوية فليك هي \"9\" وقد وقعوا ثلاثة أطراف",
-          "summary": "عندما بدأ السوق الصيفي، نشرت موندو ديبورتيفو على الصفحة الأولى التوقيعات الأربعة التي كان برشلونة على وشك القيام بها. ظهير مركزي ومهاجم مركزي، بالإضافة إلى استعادة كانكلو وراشفورد .",
+          "title": "أولوية فليك كانت التعاقد مع رأس حربة والنادي ضم ثلاثة أجنحة",
+          "summary": "رغم أن أولوية المدرب فليك كانت ضم مهاجم صريح، تعاقد برشلونة مع ثلاثة أجنحة بعدما خطط في البداية لضم مدافع ومهاجم بالإضافة إلى كانسيلو وراشفورد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260821/1004218077/prioridad-flick-9-han-fichado-tres-extremos.html",
@@ -520,7 +545,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260821/1004218077/prioridad-flick-9-han-fichado-tres-extremos.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d8b1461899de",
@@ -528,27 +558,28 @@
       "summary": "Arruabarena insiste por un central y el defensor de Independiente sonó como opción en estas horas. ¿Por qué?",
       "i18n": {
         "es": {
-          "title": "La verdad de la versión que vinculó a Kevin Lomónaco con Boca",
-          "summary": "Arruabarena insiste por un central y el defensor de Independiente sonó como opción en estas horas. ¿Por qué?",
-          "needs_translation": false
+          "title": "La verdad tras los rumores que vinculan a Kevin Lomónaco con Boca",
+          "summary": "Arruabarena busca incorporar a un defensor central y Kevin Lomónaco, zaguero de Independiente, surgió en las últimas horas como opción para Boca.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The truth of the version that linked Kevin Lomónaco with Boca",
-          "summary": "Arruabarena insists on a central defender and the defender of Independiente sounded as an option at this time. Why?",
+          "title": "The truth behind rumors linking Kevin Lomónaco to Boca",
+          "summary": "Arruabarena is seeking to sign a central defender, and Independiente player Kevin Lomónaco has emerged as an option for Boca.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La vérité de la version qui a lié Kevin Lomónaco à Boca",
-          "summary": "Arruabarena insiste pour un défenseur central et le défenseur d'Independiente a sonné comme une option à cette heure-ci. Pourquoi ?",
+          "title": "La vérité sur la rumeur liant Kevin Lomónaco à Boca",
+          "summary": "Arruabarena insiste pour recruter un défenseur central et le joueur de Independiente Kevin Lomónaco est apparu comme une option pour Boca.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "حقيقة النسخة التي ربطت كيفن لوموناكو مع بوكا",
-          "summary": "يصر أروابارينا على وجود مدافع مركزي وبدا المدافع عن إنديبندينتي كخيار في هذا الوقت. لماذا ؟",
+          "title": "حقيقة الأنباء التي ربطت كيفين لوموناكو ببوكا",
+          "summary": "يصر أروابارينا على التعاقد مع مدافع مركزي، وبرز اسم مدافع إنديبندينتي كيفين لوموناكو كأحد الخيارات المطروحة للانتقال إلى بوكا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/verdad-ofrecimiento-lomonaco-boca_0_zI58QUrttO.html",
@@ -570,7 +601,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/verdad-ofrecimiento-lomonaco-boca_0_zI58QUrttO.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "eab9b59f799b",
@@ -579,26 +615,27 @@
       "i18n": {
         "es": {
           "title": "Con técnico argentino, Liga de Quito avanzó a los cuartos de final de la Copa Libertadores",
-          "summary": "El elenco dirigido por Gustavo Alvarez, ex DT de San Lorenzo, pasó por penales ante Mirassol.",
-          "needs_translation": false
+          "summary": "Liga de Quito, dirigida por el técnico argentino Gustavo Alvarez, se clasificó a los cuartos de final de la Copa Libertadores tras superar a Mirassol en la tanda de penales.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "With Argentine coach, Liga de Quito advanced to the quarterfinals of the Copa Libertadores",
-          "summary": "The cast directed by Gustavo Alvarez, former coach of San Lorenzo, took penalties against Mirassol.",
+          "title": "With an Argentine coach, Liga de Quito advanced to the Copa Libertadores quarter-finals",
+          "summary": "Liga de Quito, managed by Argentine coach Gustavo Alvarez, qualified for the Copa Libertadores quarter-finals after overcoming Mirassol in a penalty shootout.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Avec l'entraîneur argentin, la Liga de Quito s'est qualifiée pour les quarts de finale de la Copa Libertadores",
-          "summary": "Le casting dirigé par Gustavo Alvarez, ancien DT de San Lorenzo, a été pénalisé par Mirassol.",
+          "title": "Avec un entraîneur argentin, Liga de Quito se qualifie pour les quarts de finale de la Copa Libertadores",
+          "summary": "Liga de Quito, entraînée par l'Argentin Gustavo Alvarez, s'est qualifiée pour les quarts de finale de la Copa Libertadores après avoir éliminé Mirassol aux tirs au but.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مع المدرب الأرجنتيني، تأهل الدوري الإسباني إلى ربع نهائي كأس ليبرتادوريس",
-          "summary": "المدلى بها من قبل غوستافو ألفاريز، المدرب السابق لسان لورينزو، تلقت عقوبات ضد ميراسول.",
+          "title": "بمدرب أرجنتيني، ليغا دي كيتو يتأهل إلى ربع نهائي كوبا ليبرتادوريس",
+          "summary": "تأهل فريق ليغا دي كيتو الإكوادوري، بقيادة مدربه الأرجنتيني غوستافو ألفاريز، إلى ربع نهائي بطولة كوبا ليبرتادوريس بعد تغلبه على ميراسول بركلات الترجيح.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/libertadores/tecnico-argentino-liga-quito-cuartos-final-copa-libertadores_0_9LECxUPsUx.html",
@@ -620,7 +657,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/libertadores/tecnico-argentino-liga-quito-cuartos-final-copa-libertadores_0_9LECxUPsUx.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "611aa8e4a77a",
@@ -629,32 +671,33 @@
       "i18n": {
         "de": {
           "title": "Ginter über \"ewigen\" VAR-Check: \"Gibt ja anscheinend eine schnelle Technik\"",
-          "summary": "Der erste Schritt in Richtung Conference League ist für den SC Freiburg gegangen. Gegen den schottischen FC Motherwell trifft Matthias Ginter erstmals doppelt in seiner Profi-Karriere in einem Spiel.",
-          "needs_translation": false
+          "summary": "Der SC Freiburg hat gegen den FC Motherwell den ersten Schritt Richtung Conference League gemacht. Dabei erzielte Matthias Ginter den ersten Doppelpack seiner Profi-Karriere.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Ginter about \"eternal\" var check: \"Apparently there is a fast technique\"",
-          "summary": "The first step towards the Conference League has been taken for SC Freiburg. Matthias Ginter scored twice in a game against Scottish FC Motherwell for the first time in his professional career.",
+          "title": "Ginter on \"eternal\" VAR-Check: \"There is apparently fast technology\"",
+          "summary": "SC Freiburg took a first step towards the Conference League against FC Motherwell. Matthias Ginter scored the first brace of his professional career.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Ginter sur le contrôle « éternel » de la VAR : « Apparemment, il y a une technique rapide »",
-          "summary": "La première étape vers la Conference League a été franchie pour le SC Freiburg. Contre le FC Motherwell écossais, Matthias Ginter marque deux fois dans sa carrière professionnelle en un match.",
+          "title": "Ginter sur le \"très long\" VAR-Check : \"Il existe apparemment une technologie rapide\"",
+          "summary": "Le SC Freiburg a fait un premier pas vers la Conference League contre le FC Motherwell. Matthias Ginter a inscrit à cette occasion le premier doublé de sa carrière professionnelle.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ginter sobre el chequeo \"eterno\" del VAR: \"Parece que hay una tecnología rápida\"",
-          "summary": "El primer paso hacia la Conference League ha sido dado por el SC Friburgo. Contra el escocés FC Motherwell, Matthias Ginter marca por primera vez dos veces en su carrera profesional en un partido.",
+          "title": "Ginter sobre el \"eterno\" VAR-Check: \"Aparentemente hay una tecnología rápida\"",
+          "summary": "El SC Freiburg dio el primer paso hacia la Conference League ante el FC Motherwell. Matthias Ginter logró el primer doblete de su carrera profesional.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "جنتر حول التحقق من الفيديو \"الأبدي \":\" على ما يبدو هناك تقنية سريعة \"",
-          "summary": "تم اتخاذ الخطوة الأولى نحو دوري المؤتمر لصالح نادي فرايبورغ. سجل ماتياس جينتر هدفين في مباراة ضد مذرويل الاسكتلندي لأول مرة في مسيرته المهنية.",
+          "title": "غينتر عن مراجعة تقنية الفيديو \"الأبدية\": \"يبدو أن هناك تقنية سريعة\"",
+          "summary": "خطا فرايبورغ خطوته الأولى نحو دوري المؤتمر الأوروبي أمام مذرويل، في مباراة شهدت تسجيل ماتياس غينتر أول ثنائية في مسيرته الاحترافية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/ginter-ueber-ewigen-var-check-gibt-ja-anscheinend-eine-schnelle-technik-1245400/video#omrss",
@@ -676,7 +719,12 @@
           "url": "https://www.kicker.de/ginter-ueber-ewigen-var-check-gibt-ja-anscheinend-eine-schnelle-technik-1245400/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0df393014634",
@@ -685,32 +733,33 @@
       "i18n": {
         "de": {
           "title": "Schuster schwärmt von Goto: \"Dieses Bild müssen wir in unserer Akademie aufhängen\"",
-          "summary": "Der SC Freiburg nimmt die erste Hürde in Richtung Conference League und gewinnt mit 3:1 gegen den FC Motherwell. Insbesondere Neuzugang Keisuke Goto punktet erst auf dem Feld als Torschütze und anschließend nach Abpfiff.",
-          "needs_translation": false
+          "summary": "Der SC Freiburg hat das Hinspiel gegen den FC Motherwell mit 3:1 gewonnen. Neuzugang Keisuke Goto überzeugte dabei als Torschütze und nach dem Abpfiff.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Schuster raves about Goto: \"We have to hang this picture in our academy\"",
-          "summary": "SC Freiburg takes the first hurdle towards the Conference League and wins 3-1 against FC Motherwell. In particular, newcomer Keisuke Goto scores first on the field as a goal scorer and then after the final whistle.",
+          "title": "Schuster raves about Goto: \"We must hang this picture in our academy\"",
+          "summary": "SC Freiburg defeated FC Motherwell 3-1 in the Conference League. New signing Keisuke Goto stood out as a goalscorer on the pitch and after the final whistle.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Schuster s'enthousiasme pour Goto : « Nous devons accrocher ce tableau dans notre académie »",
-          "summary": "Le SC Freiburg franchit le premier obstacle en direction de la Conference League et gagne 3:1 contre le FC Motherwell. Keisuke Goto, en particulier, marque des points sur le terrain en tant que buteur, puis après le coup de sifflet final.",
+          "title": "Schuster s'enthousiasme pour Goto : « Nous devons accrocher cette photo dans notre académie »",
+          "summary": "Le SC Freiburg a battu le FC Motherwell 3-1 en Conference League. La recrue Keisuke Goto s'est illustrée comme buteur puis après le coup de sifflet final.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Schuster elogia a Goto: \"Tenemos que colgar este cuadro en nuestra academia\"",
-          "summary": "El SC Friburgo toma el primer obstáculo hacia la Conference League y gana por 3-1 al FC Motherwell. En particular, la nueva incorporación Keisuke Goto puntúa primero en el campo como goleador y luego después del pitido final.",
+          "title": "Schuster se rinde ante Goto: \"Tenemos que colgar esta foto en nuestra academia\"",
+          "summary": "El SC Freiburg venció 3-1 al FC Motherwell en la Conference League. El nuevo fichaje Keisuke Goto brilló como goleador y tras el pitido final.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هائج شوستر حول غوتو: \"علينا أن نعلق هذه الصورة في أكاديميتنا\"",
-          "summary": "يأخذ نادي فرايبورغ العقبة الأولى نحو دوري المؤتمر ويفوز 3-1 على نادي مذرويل. على وجه الخصوص، يسجل الوافد الجديد كيسوكي غوتو أولاً في الملعب كهدّاف ثم بعد الصافرة النهائية.",
+          "title": "شوستر يشيد بغوتو: \"علينا تعليق هذه الصورة في أكاديميتنا\"",
+          "summary": "فاز فرايبورغ على ماذرويل بنتيجة 3-1 في دوري المؤتمر الأوروبي، حيث تألق الوافد الجديد كيسوكي غوتو بتسجيل هدف ولفت الأنظار بعد صافرة النهاية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/schuster-schwaermt-von-goto-dieses-bild-muessen-wir-in-unserer-akademie-aufhaengen-1245398/video#omrss",
@@ -732,7 +781,12 @@
           "url": "https://www.kicker.de/schuster-schwaermt-von-goto-dieses-bild-muessen-wir-in-unserer-akademie-aufhaengen-1245398/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e4c7e46ff4af",
@@ -791,26 +845,27 @@
       "i18n": {
         "es": {
           "title": "Bordalás: \"La vuelta será tremendamente difícil\"",
-          "summary": "José Bordalás , entrenador del Getafe , aseguró este jueves, después de la victoria de su equipo ante el Partizán (3-1) en la ida de la ronda previa de la Liga Conferencia, que siente una \"alegría contenida\" porque el encuentro de vuelta en Belgrado será \"tremendamente difícil\".",
-          "needs_translation": false
+          "summary": "Tras vencer 3-1 al Partizán en la ida previa de la Liga Conferencia, el entrenador del Getafe, José Bordalás, mostró cautela y advirtió que el partido de vuelta en Belgrado será sumamente complicado.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Bordalás: \"The turn will be tremendously difficult\"",
-          "summary": "José Bordalás , Getafe coach, said on Thursday, after his team's victory against Partizán (3-1) in the first leg of the previous round of the Conference League, that he feels a \"contained joy\" because the return match in Belgrade will be \"tremendously difficult\".",
+          "title": "Bordalás: \"The return leg will be tremendously difficult\"",
+          "summary": "Following Getafe's 3-1 victory over Partizán in the Liga Conferencia play-off first leg, manager José Bordalás voiced caution, warning that the return fixture in Belgrado will be extremely demanding.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Bordalás : « Le tour sera extrêmement difficile »",
-          "summary": "José Bordalás , entraîneur de Getafe , a assuré jeudi, après la victoire de son équipe contre Partizan (3-1) à l'aller du tour précédent de la Liga Conference, qu'il ressentait une « joie contenue » car le match retour à Belgrade sera « extrêmement difficile ».",
+          "title": "Bordalás : « Le retour sera extrêmement difficile »",
+          "summary": "Après la victoire de Getafe face à Partizán (3-1) en barrages aller de la Liga Conferencia, l'entraîneur José Bordalás a tempéré les ardeurs en rappelant que le match retour à Belgrado sera très difficile.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "بوردالاس: \"سيكون الدور صعبًا للغاية\"",
-          "summary": "قال خوسيه بوردالاس، مدرب خيتافي، يوم الخميس، بعد فوز فريقه على بارتيزان (3-1) في مباراة الذهاب من الجولة السابقة من دوري المؤتمرات، إنه يشعر بـ \"فرحة محتواة\" لأن مباراة العودة في بلغراد ستكون \"صعبة للغاية\".",
+          "title": "بوردالاس: \"مباراة الإياب ستكون صعبة للغاية\"",
+          "summary": "أبدى خوسيه بوردالاس، مدرب خيتافي، حذراً شديداً بعد الفوز على بارتيزان (3-1) في ذهاب الدور التمهيدي لدوري المؤتمر الأوروبي، مؤكداً أن مواجهة الإياب في بلغراد ستكون في غاية الصعوبة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/getafe/20260821/1004218138/bordalas-vuelta-sera-tremendamente-dificil.html",
@@ -832,7 +887,12 @@
           "url": "https://www.mundodeportivo.com/futbol/getafe/20260821/1004218138/bordalas-vuelta-sera-tremendamente-dificil.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c43768d265c7",
@@ -841,26 +901,27 @@
       "i18n": {
         "es": {
           "title": "2-4: El Ajax de Michel y Ter Stegen remonta y se acerca a la fase liga",
-          "summary": "El Ajax de Michel y Marc-André ter Stegen empezó perdiendo este jueves en casa del Sion en la ida del playoff de acceso a la Conference Leauge, pero logró remontar y venció por 2-4. Fue el debut del portero cedido por el Barcelona en Europa con los 'ajacied'.",
-          "needs_translation": false
+          "summary": "El Ajax remontó y venció 2-4 al Sion en la ida del playoff de la Conference Leauge. Marc-André Ter Stegen, cedido por el Barcelona, debutó en Europa con el conjunto neerlandés.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "2-4: Michel and Ter Stegen's Ajax go back and approach the league phase",
-          "summary": "Michel and Marc-André ter Stegen's Ajax started this Thursday losing at Sion's house in the first leg of the playoff to access the Conference Leauge, but managed to come back and beat them 2-4. It was the debut of the goalkeeper loaned by Barcelona in Europe with the 'ajacied'.",
+          "title": "2-4: Michel and Ter Stegen's Ajax come from behind to move closer to league phase",
+          "summary": "Ajax came from behind to win 2-4 at Sion in their Conference Leauge play-off first leg. Barcelona loanee Marc-André Ter Stegen made his European debut for the club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "2-4 : L'Ajax de Michel et Ter Stegen remonte et se rapproche de la phase de championnat",
-          "summary": "L'Ajax de Michel et Marc-André ter Stegen a commencé à perdre ce jeudi à domicile de Sion à l'aller des éliminatoires d'accès à la Conférence Leauge, mais il a réussi à remonter et à gagner 2-4. C'était les débuts du gardien prêté par Barcelone en Europe avec les « ajacied ».",
+          "title": "2-4 : L'Ajax de Michel et Ter Stegen renverse la situation et se rapproche de la phase de ligue",
+          "summary": "Mené au score, l'Ajax s'est imposé 2-4 à Sion en barrage aller de Conference Leauge. Prêté par Barcelona, Marc-André Ter Stegen a fait ses débuts européens avec le club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "2-4: أياكس ميشيل وتير ستيجن يعودان ويقتربان من مرحلة الدوري",
-          "summary": "بدأ ميشيل ومارك أندريه تير شتيغن أياكس يوم الخميس بالخسارة في منزل سيون في المرحلة الأولى من التصفيات للوصول إلى مقياس المؤتمر، لكنه تمكن من العودة والتغلب عليهم 2-4. كان أول ظهور لحارس المرمى الذي أعاره برشلونة في أوروبا مع \"الجهاد\".",
+          "title": "2-4: أياكس بقيادة ميشيل وتير شتيغن يقلب الطاولة ويقترب من مرحلة الدوري",
+          "summary": "قلب أياكس تأخره ليفوز بنتيجة 2-4 على مضيفه سيون في ذهاب الدور الفاصل لدوري المؤتمر الأوروبي، في أول ظهور أوروبي للحارس مارك-أندريه تير شتيغن المعار من برشلونة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/conference-league/20260820/1004218121/2-4-ajax-michel-ter-stegen-remonta-acerca-fase-liga.html",
@@ -882,7 +943,12 @@
           "url": "https://www.mundodeportivo.com/futbol/conference-league/20260820/1004218121/2-4-ajax-michel-ter-stegen-remonta-acerca-fase-liga.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "98596b1659cd",
@@ -991,32 +1057,33 @@
       "i18n": {
         "de": {
           "title": "Carrick über Titelchancen: \"Würde niemals sagen, dass wir es nicht können\"",
-          "summary": "Michael Carrick ist gespannt, ob sein Team den nächsten Schritt machen kann. Er würde niemals sagen, der Titel sei nicht möglich.",
-          "needs_translation": false
+          "summary": "Michael Carrick schließt einen Titelgewinn nicht aus. Der Trainer hofft nun darauf, dass sein Team den nächsten Schritt in der Entwicklung vollzieht.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Carrick on title chances: “Would never say we can't”",
-          "summary": "Michael Carrick is eager to see if his team can take the next step. He would never say that the title was not possible.",
+          "title": "Carrick on title chances: \"I would never say we can't\"",
+          "summary": "Michael Carrick refuses to rule out a title triumph, stating he is eager to see if his team can take the next step.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Carrick sur les opportunités de titre : « Je ne dirais jamais que nous ne pouvons pas »",
-          "summary": "Michael Carrick est impatient de voir si son équipe peut passer à l'étape suivante. Il ne dirait jamais que le titre n'est pas possible.",
+          "title": "Carrick sur les chances de titre : « Je ne dirais jamais que nous n'en sommes pas capables »",
+          "summary": "Michael Carrick refuse d'exclure la conquête d'un titre et attend désormais de voir si son équipe est capable de franchir un cap.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Carrick sobre las oportunidades de título: \"Nunca diría que no podemos\"",
-          "summary": "Michael Carrick tiene curiosidad por ver si su equipo puede dar el siguiente paso. Nunca diría que el título no es posible.",
+          "title": "Carrick sobre las opciones de título: \"Nunca diría que no podemos\"",
+          "summary": "Michael Carrick no descarta la consecución del título y espera comprobar si su equipo es capaz de dar el siguiente paso.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كاريك على فرص اللقب: \"لن نقول أبدًا أننا لا نستطيع\"",
-          "summary": "مايكل كاريك حريص على معرفة ما إذا كان فريقه يمكنه اتخاذ الخطوة التالية. لن يقول أبدًا إن اللقب غير ممكن.",
+          "title": "كاريك عن حظوظ التتويج باللقب: \"لن أقول أبدًا إننا عاجزون عن ذلك\"",
+          "summary": "أكد مايكل كاريك أنه لا يستبعد التتويج باللقب، معربًا عن تطلعه لمعرفة ما إذا كان فريقه قادرًا على اتخاذ الخطوة التالية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/carrick-ueber-titelchancen-wuerde-niemals-sagen-dass-wir-es-nicht-koennen-1245390/video#omrss",
@@ -1038,7 +1105,12 @@
           "url": "https://www.kicker.de/carrick-ueber-titelchancen-wuerde-niemals-sagen-dass-wir-es-nicht-koennen-1245390/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "bbb2a0dbc131",
@@ -1047,26 +1119,27 @@
       "i18n": {
         "es": {
           "title": "3-1: El Getafe encarrila su pase a la Conference tras vencer al Partizán en un partido loco",
-          "summary": "El Getafe dejó encarrilada su clasificación para la fase final de la Conference League tras ganar 3-1 al Partizán de Belgrado en el Coliseum , escenario de una montaña rusa de emociones en un partido resuelto en el tramo final.",
-          "needs_translation": false
+          "summary": "El Getafe encarriló su clasificación para la fase final de la Conference League tras superar 3-1 al Partizán de Belgrado en el Coliseum con un desenlace resuelto al final.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "3-1: Getafe get their way to the Conference after beating Partizan in a crazy match",
-          "summary": "Getafe left their qualification for the Conference League finals on track after beating Partizan Belgrade 3-1 at the Coliseum , the scene of a rollercoaster of emotions in a match resolved in the final stretch.",
+          "title": "3-1: Getafe on track for Conference qualification after beating Partizán in a wild match",
+          "summary": "Getafe put their qualification for the Conference League final phase on track after securing a 3-1 victory over Partizán de Belgrado at the Coliseum.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "3-1 : Getafe enchaîne son passage à la Conférence après avoir battu le Partizan dans un match fou",
-          "summary": "Getafe a mis sur les rails sa qualification pour la phase finale de la Conference League après avoir remporté 3-1 le Partizan de Belgrade au Coliseum , théâtre d'une montagne russe d'émotions lors d'un match résolu dans la dernière étape.",
+          "title": "3-1 : Getafe sur la voie de la Conference après avoir battu Partizán dans un match fou",
+          "summary": "Getafe a pris une option sur sa qualification pour la phase finale de la Conference League en battant Partizán de Belgrado 3-1 au Coliseum.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "3-1: ختاف يشقون طريقهم إلى المؤتمر بعد هزيمة بارتيزان في مباراة مجنونة",
-          "summary": "تركت خيتافي تأهلها لنهائيات دوري المؤتمر على المسار الصحيح بعد فوزها على بارتيزان بلغراد 3-1 في المدرج ، مشهد الأفعوانية من العواطف في مباراة تم حلها في المرحلة النهائية.",
+          "title": "3-1: خيتافي يمهد طريقه للتأهل في دوري المؤتمر بعد فوزه على بارتيزان في مباراة مثيرة",
+          "summary": "وضع خيتافي قدماً في الأدوار النهائية من دوري المؤتمر الأوروبي بعد فوزه على ضيفه بارتيزان بلغراد بنتيجة 3-1 على ملعب كوليسيوم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/getafe/20260820/1004218108/3-1-getafe-encarrila-pase-conference-vencer-partizan-partido-loco.html",
@@ -1088,7 +1161,12 @@
           "url": "https://www.mundodeportivo.com/futbol/getafe/20260820/1004218108/3-1-getafe-encarrila-pase-conference-vencer-partizan-partido-loco.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e41510095706",
@@ -1097,32 +1175,33 @@
       "i18n": {
         "de": {
           "title": "Playoff-Hinspiele: Besiktas, Roter Stern und Benfica mit einem Bein in der EL-Endrunde",
-          "summary": "Am Donnerstagabend haben sich die Favoriten in den Playoffs um die Europa-League-Endrunde keine Blöße gegeben. Besiktas, Roter Stern, Benfica sowie RB Salzburg gewannen ihre Hinspiele allesamt.",
-          "needs_translation": false
+          "summary": "In den Playoffs zur Europa-League-Endrunde haben sich die Favoriten durchgesetzt: Besiktas, Roter Stern, Benfica und RB Salzburg gewannen am Donnerstagabend allesamt ihre Hinspiele.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Playoff games: Besiktas, Red Star and Benfica with one leg in the EL finals",
-          "summary": "On Thursday evening, the favourites in the playoffs for the Europa League finals gave themselves no credit. Besiktas, Red Star, Benfica and RB Salzburg all won their first leg.",
+          "title": "Playoff first legs: Besiktas, Roter Stern and Benfica with one foot in the Europa League final stage",
+          "summary": "The favorites delivered on Thursday night in the Europa League playoffs, with Besiktas, Roter Stern, Benfica, and RB Salzburg all winning their first-leg matches.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Matches aller des séries éliminatoires : Besiktas, Étoile rouge et Benfica avec une jambe dans le tour final des EL",
-          "summary": "Jeudi soir, les favoris des séries éliminatoires de la finale de l'Europa League ne se sont pas montrés nus. Besiktas, Red Star, Benfica et RB Salzburg ont tous remporté leurs matchs aller.",
+          "title": "Barrages allers : Besiktas, Roter Stern et Benfica ont un pied dans la phase finale de Ligue Europa",
+          "summary": "Lors des barrages allers de la Ligue Europa disputés jeudi soir, les favoris Besiktas, Roter Stern, Benfica et RB Salzburg ont tous remporté leur match.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Partidos de ida de los playoffs: Besiktas, Estrella Roja y Benfica con una pierna en la fase final del EL",
-          "summary": "El jueves por la noche, los favoritos no se dieron por vencidos en los playoffs de la fase final de la Europa League. Besiktas, Estrella Roja, Benfica y RB Salzburg ganaron todos sus partidos de ida.",
+          "title": "Ida del playoff: Besiktas, Roter Stern y Benfica con un pie en la fase final de la Europa League",
+          "summary": "En la ida del playoff de la Europa League disputada el jueves, los favoritos Besiktas, Roter Stern, Benfica y RB Salzburg cumplieron y ganaron sus respectivos partidos.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباريات البلاي أوف: بشكتاش، ريد ستار وبنفيكا بساق واحدة في نهائيات EL",
-          "summary": "مساء الخميس، لم يمنح المرشحون في التصفيات النهائية لنهائيات الدوري الأوروبي أي فضل لأنفسهم. فاز كل من بشيكتاش، النجم الأحمر، بنفيكا و آر بي سالزبورغ في مباراة الذهاب.",
+          "title": "ذهاب الملحق: بشكتاش والنجم الأحمر وبنفيكا يضعون قدماً في الأدوار النهائية للدوري الأوروبي",
+          "summary": "حسمت الأندية المرشحة مباريات ذهاب ملحق الدوري الأوروبي مساء الخميس، حيث حقق كل من بشكتاش والنجم الأحمر وبنفيكا وريد بول سالزبورغ الفوز في مواجهاتهم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/playoff-hinspiele-besiktas-roter-stern-und-benfica-mit-einem-bein-in-der-el-endrunde-1245330/artikel#omrss",
@@ -1144,7 +1223,12 @@
           "url": "https://www.kicker.de/playoff-hinspiele-besiktas-roter-stern-und-benfica-mit-einem-bein-in-der-el-endrunde-1245330/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3e40834d814c",
@@ -1153,26 +1237,27 @@
       "i18n": {
         "es": {
           "title": "Golpe para Salah en su debut europeo con el Trabzonspor",
-          "summary": "A Mohamed Salah le ilusiona mucho poder jugar en Europa esta temporada con el Trabzonspor, su nuevo equipo, por eso la derrota sufrida ante el Ferencvaros en la ida del playoff de acceso a la Europa League supuso este jueves un duro golpe para el astro egipcio, que jugó los 90…",
-          "needs_translation": false
+          "summary": "Mohamed Salah y el Trabzonspor cayeron ante el Ferencvaros en el partido de ida del playoff de la Europa League. El delantero egipcio disputó los 90 minutos.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Strike for Salah in his European debut with Trabzonspor",
-          "summary": "Mohamed Salah is very excited to be able to play in Europe this season with Trabzonspor, his new team, so the defeat suffered against Ferencvaros in the first leg of the Europa League playoff was a hard blow for the Egyptian star, who played in the 90s...",
+          "title": "Blow for Salah in European debut with Trabzonspor",
+          "summary": "Mohamed Salah and Trabzonspor suffered a defeat against Ferencvaros in the first leg of the Europa League playoffs. The Egyptian forward played the full 90 minutes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Coup dur pour Salah lors de ses débuts européens avec Trabzonspor",
-          "summary": "Mohamed Salah est très excité de pouvoir jouer en Europe cette saison avec Trabzonspor, sa nouvelle équipe, c'est pourquoi la défaite subie contre Ferencvaros lors des éliminatoires aller de l'Europa League a été un coup dur pour la star égyptienne, qui a joué les années 90...",
+          "summary": "Mohamed Salah et Trabzonspor se sont inclinés face à Ferencvaros lors du barrage aller de Europa League. L'attaquant égyptien a joué l'intégralité de la rencontre.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ضربة لصالح صلاح في أول ظهور له في أوروبا مع طرابزونسبور",
-          "summary": "محمد صلاح متحمس جدًا للعب في أوروبا هذا الموسم مع فريقه الجديد طرابزونسبور، لذا فإن الهزيمة التي عانى منها فيرنكفاروس في مباراة الذهاب من تصفيات الدوري الأوروبي كانت ضربة قاسية للنجم المصري، الذي لعب في التسعينيات...",
+          "title": "صدمة لصلاح في ظهوره الأوروبي الأول مع طرابزون سبور",
+          "summary": "تعرض محمد صلاح وفريقه طرابزون سبور للهزيمة أمام فيرينتسفاروش في ذهاب ملحق الدوري الأوروبي، في لقاء خاض فيه المهاجم المصري الدقائق التسعين كاملة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/europa-league/20260820/1004218117/golpe-salah-debut-europeo-trabzonspor.html",
@@ -1194,7 +1279,12 @@
           "url": "https://www.mundodeportivo.com/futbol/europa-league/20260820/1004218117/golpe-salah-debut-europeo-trabzonspor.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d56a42a85f4c",
@@ -1203,32 +1293,33 @@
       "i18n": {
         "de": {
           "title": "Supercup: BVB gegen FC Bayern - Augenhöhe (bisher) nicht in Sicht",
-          "summary": "Im Franz Beckenbauer Supercup kommt es zum ersten Kräftemessen der beiden Bundesliga-Großmächte Borussia Dortmund und Bayern München. Die Verhältnisse scheinen aber eindeutig zu bleiben.",
-          "needs_translation": false
+          "summary": "Im Franz Beckenbauer Supercup treffen Borussia Dortmund und Bayern München aufeinander. Das Duell der beiden Bundesliga-Klubs verspricht jedoch vorerst kein Aufeinandertreffen auf Augenhöhe zu werden.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Supercup: BVB vs FC Bayern - eye level (so far) not in sight",
-          "summary": "The Franz Beckenbauer Supercup will be the first showdown between the two major Bundesliga powers Borussia Dortmund and Bayern Munich. However, the circumstances seem to remain clear.",
+          "title": "Supercup: BVB against FC Bayern - Parity (so far) not in sight",
+          "summary": "Borussia Dortmund face Bayern München in the Franz Beckenbauer Supercup. The first clash of the Bundesliga giants is not expected to be a balanced contest, with the hierarchy remaining unchanged.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Supercoupe : BVB contre FC Bayern - pas (jusqu'à présent) d'égal à égal en vue",
-          "summary": "La Supercoupe Franz Beckenbauer est la première épreuve de force des deux grandes puissances de la Bundesliga, le Borussia Dortmund et le Bayern Munich. Cependant, les conditions semblent rester claires.",
+          "title": "Supercup : BVB contre FC Bayern - Pas d'égalité de niveau en vue pour l'instant",
+          "summary": "Borussia Dortmund et Bayern München s'affrontent lors du Franz Beckenbauer Supercup. La hiérarchie entre les deux géants de la Bundesliga semble toutefois rester nettement en faveur des Bavarois.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Supercopa: BVB contra FC Bayern - nivel de los ojos (hasta ahora) no está a la vista",
-          "summary": "En la Supercopa Franz Beckenbauer se celebra la primera prueba de fuerza de las dos grandes potencias de la Bundesliga, el Borussia Dortmund y el Bayern de Múnich. Sin embargo, las condiciones parecen seguir siendo claras.",
+          "title": "Supercup: BVB contra FC Bayern - No se vislumbra igualdad de nivel (por ahora)",
+          "summary": "Borussia Dortmund y Bayern München disputan la Franz Beckenbauer Supercup. No obstante, la relación de fuerzas entre ambos clubes de la Bundesliga parece inclinarse claramente hacia el equipo bávaro.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كأس السوبر: BVB مقابل FC Bayern - مستوى العين (حتى الآن) ليس في الأفق",
-          "summary": "سيكون كأس السوبر الألماني فرانز بيكنباور أول مواجهة بين القوتين الرئيسيتين في البوندسليغا بوروسيا دورتموند وبايرن ميونيخ. ومع ذلك، يبدو أن الظروف لا تزال واضحة.",
+          "title": "كأس السوبر: بوروسيا دورتموند ضد بايرن ميونخ - التكافؤ ليس في الأفق (حتى الآن)",
+          "summary": "يلتقي بوروسيا دورتموند وبايرن ميونخ في كأس السوبر باسم فرانتس بيكنباور في أول مواجهة بين عملاقي الدوري الألماني، مع استمرار المؤشرات التي ترجح تفوق النادي البافاري.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga/bvb-gegen-bayern-augenhoehe-bisher-nicht-in-sicht,super-cup-bvb-bayern-100.html",
@@ -1256,7 +1347,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/bvb-gegen-bayern-augenhoehe-bisher-nicht-in-sicht,super-cup-bvb-bayern-100.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5de83555e447",
@@ -1315,32 +1411,33 @@
       "i18n": {
         "de": {
           "title": "Brandt-Traumtor und Comeback-Sieg: Ajax erarbeitet sich in Sion gute Ausgangslage",
-          "summary": "Ajax Amsterdam hat das Hinspiel der Conference-League-Playoffs beim FC Sion gewonnen - auch dank Julian Brandt. Der Ex-Dortmunder erzielte ein Traumtor und leitete so das Comeback der Niederländer ein.",
-          "needs_translation": false
+          "summary": "Ajax Amsterdam hat das Hinspiel der Conference-League-Playoffs beim FC Sion gewonnen. Ein sehenswerter Treffer von Julian Brandt leitete die Wende für die Niederländer ein.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Brandt dream goal and comeback victory: Ajax works out good starting position in Sion",
-          "summary": "Ajax Amsterdam won the first leg of the Conference League playoffs at FC Sion - also thanks to Julian Brandt. The ex-Dortmunder scored a dream goal and thus initiated the comeback of the Dutch.",
+          "title": "Julian Brandt wonder goal and comeback win: Ajax secure strong position in Sion",
+          "summary": "Ajax Amsterdam won the first leg of their Conference League play-off tie away at FC Sion. A brilliant goal from Julian Brandt sparked the Dutch side's comeback.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "But de rêve Brandt et victoire de retour : l'Ajax se construit une bonne situation de départ à Sion",
-          "summary": "L'Ajax Amsterdam a remporté le match aller des playoffs de la Conference League au FC Sion - également grâce à Julian Brandt. L'ex-Dortmunder a marqué un but de rêve et a ainsi initié le retour des Néerlandais.",
+          "title": "Superbe but de Julian Brandt et victoire renversante : Ajax prend une option à Sion",
+          "summary": "Ajax Amsterdam s'est imposé sur la pelouse du FC Sion lors du match aller des barrages de Conference League. Un magnifique but de Julian Brandt a lancé la remontée néerlandaise.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Puerta de ensueño de Brandt y victoria de regreso: el Ajax está ganando una buena posición de partida en Sion",
-          "summary": "El Ajax de Ámsterdam ha ganado el partido de ida de los playoffs de la Conference League ante el FC Sion, también gracias a Julian Brandt. El ex-Dortmunder marcó un gol de ensueño y así inició el regreso de los holandeses.",
+          "title": "Golazo de Julian Brandt y remontada: Ajax toma ventaja en Sion",
+          "summary": "Ajax Amsterdam se impuso a domicilio al FC Sion en la ida del play-off de la Conference League. Un gran gol de Julian Brandt inició la remontada del equipo neerlandés.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هدف حلم براندت والفوز بالعودة: أياكس يحقق مركز انطلاق جيد في سيون",
-          "summary": "فاز أياكس أمستردام بالمرحلة الأولى من تصفيات دوري المؤتمرات في نادي سيون - أيضا بفضل جوليان براندت. سجل دورتمندر السابق هدف حلم وبالتالي بدأ عودة الهولنديين.",
+          "title": "هدف رائع من يوليان براندت وريمونتادا: أياكس يحقق أفضلية جيدة في سيون",
+          "summary": "فاز أياكس أمستردام على مضيفه إف سي سيون في ذهاب الملحق المؤهل إلى دوري المؤتمر الأوروبي. وقاد يوليان براندت عودة الفريق الهولندي بتسجيله هدفاً رائعاً.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/sion-gegen-ajax-2026-uefa-conference-league-qualifikation-5254356/spielbericht#omrss",
@@ -1362,7 +1459,12 @@
           "url": "https://www.kicker.de/sion-gegen-ajax-2026-uefa-conference-league-qualifikation-5254356/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b12d34b4d5b7",
@@ -1477,26 +1579,27 @@
       "i18n": {
         "es": {
           "title": "El Atlético acepta traspasar a Julián al Arsenal, pero el jugador dice 'no'",
-          "summary": "El Atlético de Madrid ha efectuado un giro en su postura en el caso Julián Álvarez , según una información difundida por la cuenta ‘@AtleticoPlay’ y que Mundo Deportivo pudo confirmar.",
-          "needs_translation": false
+          "summary": "El Atlético de Madrid ha cambiado de postura y aceptaría traspasar a Julián Álvarez al Arsenal, según Mundo Deportivo, aunque el delantero argentino se niega a marcharse.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Atlético agrees to transfer Julian to Arsenal, but the player says' no '",
-          "summary": "Atlético de Madrid has made a change in its position in the Julián Álvarez case, according to information released by the ‘@ AtleticoPlay‘ account and which Mundo Deportivo was able to confirm.",
+          "title": "Atlético de Madrid agree to transfer Julián Álvarez to Arsenal, but player says 'no'",
+          "summary": "Atlético de Madrid have shifted their stance and are open to selling Julián Álvarez to Arsenal, but the Argentine forward has rejected the move.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "L'Atlético accepte de transférer Julian à Arsenal, mais le joueur dit « non »",
-          "summary": "L'Atlético de Madrid a changé de position dans l'affaire Julián Álvarez , selon une information diffusée par le compte « @ AtleticoPlay » et que Mundo Deportivo a pu confirmer.",
+          "title": "L'Atlético de Madrid accepte de transférer Julián Álvarez à Arsenal, mais le joueur dit « non »",
+          "summary": "L'Atlético de Madrid a infléchi sa position et accepterait de vendre Julián Álvarez à Arsenal, mais l'attaquant argentin refuse de quitter le club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يوافق أتلتيكو على نقل جوليان إلى آرسنال، لكن اللاعب يقول \"لا\"",
-          "summary": "أجرى أتلتيكو مدريد تغييرًا في موقفه في قضية جوليان ألفاريز ، وفقًا للمعلومات الصادرة عن حساب \"@ AtleticoPlay \"والتي تمكن موندو ديبورتيفو من تأكيدها.",
+          "title": "أتلتيكو مدريد يوافق على انتقال خوليان ألفاريز إلى أرسنال واللاعب يرفض",
+          "summary": "غيّر أتلتيكو مدريد موقفه وبات منفتحاً على بيع خوليان ألفاريز إلى أرسنال، غير أن المهاجم الأرجنتيني يرفض الرحيل عن صفوف الفريق.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260820/1004218109/atletico-acepta-traspasar-julian-arsenal-jugador-dice-no.html",
@@ -1518,7 +1621,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260820/1004218109/atletico-acepta-traspasar-julian-arsenal-jugador-dice-no.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9716952cca6e",
@@ -1589,7 +1697,17 @@
           "url": "https://www.mundodeportivo.com/futbol/mundial/20260820/1004218110/mundial-2027-arrancara-acabara-maracana.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-21T05:08:10+00:00"
+        }
+      }
     },
     {
       "id": "4139b76146e2",
@@ -1598,26 +1716,27 @@
       "i18n": {
         "es": {
           "title": "El trofeo de la Copa del Mundo llegará a Anoeta para homenajear a Oyarzabal",
-          "summary": "La RFEF ya ha comenzado el ‘tour’ del trofeo de la Copa del Mundo obtenida por España este verano. Se inició con el homenaje a los cuatro campeones del Atlético el pasado miércoles en el Metropolitano: Pubill, Grimaldo, Llorente y Baena.",
-          "needs_translation": false
+          "summary": "La RFEF inició la gira del trofeo de la Copa del Mundo tras homenajear a Pubill, Grimaldo, Llorente y Baena en el Metropolitano, y continuará en Anoeta con Oyarzabal.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The World Cup trophy will arrive in Anoeta to pay tribute to Oyarzabal",
-          "summary": "The RFEF has already started the ‘tour’ of the World Cup trophy won by Spain this summer. It began with the tribute to the four Atletico champions last Wednesday at the Metropolitano: Pubill, Grimaldo, Llorente and Baena.",
+          "title": "The Copa del Mundo trophy will arrive at Anoeta to honor Oyarzabal",
+          "summary": "La RFEF has started the Copa del Mundo trophy tour, honoring Pubill, Grimaldo, Llorente, and Baena at the Metropolitano before heading to Anoeta to recognize Oyarzabal.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le trophée de la Coupe du Monde arrivera à Anoeta pour rendre hommage à Oyarzabal",
-          "summary": "La RFEF a déjà commencé la « tournée » du trophée de la Coupe du Monde obtenue par l'Espagne cet été. Il a commencé par rendre hommage aux quatre champions de l'Atlético mercredi dernier au Metropolitano : Pubill, Grimaldo, Llorente et Baena.",
+          "title": "Le trophée de la Copa del Mundo arrivera à Anoeta pour rendre hommage à Oyarzabal",
+          "summary": "La RFEF a débuté la tournée du trophée de la Copa del Mundo au Metropolitano pour honorer Pubill, Grimaldo, Llorente et Baena, avant une étape à Anoeta pour Oyarzabal.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ستصل كأس العالم إلى أنويتا لتكريم أويارزابال",
-          "summary": "بدأ الاتحاد الاسباني لكرة القدم بالفعل \"جولة\" كأس العالم التي فازت بها اسبانيا هذا الصيف. بدأ الأمر بتكريم أبطال أتلتيكو الأربعة يوم الأربعاء الماضي في متروبوليتانو: بوبيل، غريمالدو، يورينتي وباينا.",
+          "title": "كأس العالم تصل إلى أنويتا لتكريم أويارزابال",
+          "summary": "بدأ الاتحاد الإسباني جولة كأس العالم بتكريم بوبيل وغريمالدو ويورينتي وباينا في ملعب ميتروبوليتانو، وستصل الجولة إلى أنويتا لتكريم أويارزابال.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260820/1004218101/trofeo-copa-mundo-llegara-anoeta-homenajear-oyarzabal.html",
@@ -1639,7 +1758,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260820/1004218101/trofeo-copa-mundo-llegara-anoeta-homenajear-oyarzabal.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "77d3e593469e",
@@ -1647,27 +1771,28 @@
       "summary": "Pierre-Emerick Aubameyang ha sido una de las grandes sorpresas de este mercado de fichajes (con el permiso de Rodri Hernández).",
       "i18n": {
         "es": {
-          "title": "'Aurameyang' se toma en serio su nuevo mote: ¡miren lo que ha hecho en pleno A Coruña!",
-          "summary": "Pierre-Emerick Aubameyang ha sido una de las grandes sorpresas de este mercado de fichajes (con el permiso de Rodri Hernández).",
-          "needs_translation": false
+          "title": "'Aurameyang' se toma en serio su nuevo mote en Coruña",
+          "summary": "Pierre-Emerick Aubameyang destaca como uno de los movimientos notables del mercado de fichajes, junto a Rodri Hernández.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "'Aurameyang' takes its new nickname seriously: look what it has done in the heart of A Coruña!",
-          "summary": "Pierre-Emerick Aubameyang has been one of the great surprises of this transfer market (with the permission of Rodri Hernández).",
+          "title": "'Aurameyang' takes his new nickname seriously in Coruña",
+          "summary": "Pierre-Emerick Aubameyang stands out as one of the major moves of the transfer window, alongside Rodri Hernández.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "'Aurameyang' prend son nouveau surnom au sérieux : regardez ce qu'il a fait en plein A Coruña !",
-          "summary": "Pierre-Emerick Aubameyang a été l'une des grandes surprises de ce marché des transferts (avec la permission de Rodri Hernández).",
+          "title": "« Aurameyang' » prend son nouveau surnom au sérieux à Coruña",
+          "summary": "Pierre-Emerick Aubameyang constitue l'un des mouvements marquants du mercato, aux côtés de Rodri Hernández.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يأخذ \"أوراميانغ\" لقبه الجديد على محمل الجد: انظروا إلى ما فعله في قلب لاكورونيا!",
-          "summary": "كان بيير إيمريك أوباميانغ أحد المفاجآت الكبرى في سوق الانتقالات هذا (بإذن من رودري هيرنانديز).",
+          "title": "«أوراميانغ» يتعامل بجدية مع لقبه الجديد في كورونيا",
+          "summary": "يعد بيير-إيميريك أوباميانغ أحد أبرز تحركات سوق الانتقالات الحالي إلى جانب رودري هيرنانديز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/deportivo-coruna/20260820/1004218102/aurameyang-toma-serio-nuevo-mote-miren-hecho-pleno-coruna.html",
@@ -1689,7 +1814,12 @@
           "url": "https://www.mundodeportivo.com/futbol/deportivo-coruna/20260820/1004218102/aurameyang-toma-serio-nuevo-mote-miren-hecho-pleno-coruna.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a6b017235c73",
@@ -1810,7 +1940,17 @@
           "url": "https://www.lequipe.fr/Football/Actualites/La-finale-de-la-coupe-du-monde-feminine-2027-au-bresil-se-tiendra-dans-le-mythique-stade-maracana/1712388#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-21T05:08:12+00:00"
+        }
+      }
     },
     {
       "id": "13eff2495883",
@@ -1869,26 +2009,27 @@
       "i18n": {
         "es": {
           "title": "Diomande: \"Estoy preparado para morir por Mou\"",
-          "summary": "El atacante marfileño del Real Madrid Yan Diomande aseguró este jueves que se siente preparado para \"morir\" por Jose Mourinho , entrenador del equipo, tras cumplir su \"sueño\" de fichar por el club blanco y dejó claro que uno de sus objetivos es \"convertirse en uno de los…",
-          "needs_translation": false
+          "summary": "El atacante marfileño del Real Madrid Yan Diomande afirmó estar listo para darlo todo por Jose Mourinho tras cumplir su sueño de fichar por el club blanco.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Diomande: \"I am prepared to die for Mou\"",
-          "summary": "Real Madrid's Ivorian striker Yan Diomande said on Thursday that he feels prepared to \"die\" for Jose Mourinho , the team's coach, after fulfilling his \"dream\" of signing for the white club and made it clear that one of his objectives is \"to become one of the...",
+          "title": "Diomande: \"I am ready to die for Mou\"",
+          "summary": "Real Madrid Ivorian forward Yan Diomande stated he is ready to give everything for manager Jose Mourinho after fulfilling his dream of joining the club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Diomande : « Je suis prêt à mourir pour Mou »",
-          "summary": "L'attaquant ivoirien du Real Madrid Yan Diomande a assuré jeudi qu'il se sentait prêt à \"mourir\" pour Jose Mourinho , l'entraîneur de l'équipe, après avoir réalisé son \"rêve\" de rejoindre le club blanc et précisé que l'un de ses objectifs était de \"devenir l'un des...",
+          "title": "Diomande : « Je suis prêt à mourir pour Mou »",
+          "summary": "L'attaquant ivoirien du Real Madrid Yan Diomande a affirmé être prêt à tout donner pour Jose Mourinho après avoir réalisé son rêve de rejoindre le club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ديوماندي: \"أنا مستعد للموت من أجل مو\"",
-          "summary": "قال مهاجم ريال مدريد الإيفواري يان ديوماندي يوم الخميس إنه يشعر بأنه مستعد \"للموت\" من أجل جوزيه مورينيو ، مدرب الفريق، بعد تحقيق \"حلمه\" بالتوقيع للنادي الأبيض وأوضح أن أحد أهدافه هو \"أن يصبح أحد...",
+          "title": "ديوماندي: «مستعد للموت من أجل مورينيو»",
+          "summary": "أكد المهاجم الإيفواري لريال مدريد يان ديوماندي استعداده لتقديم كل شيء من أجل المدرب جوزيه مورينيو، بعد تحقيق حلمه بالانتقال إلى صفوف النادي الملكي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260820/1004218092/diomande-preparado-morir-mou.html",
@@ -1910,7 +2051,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260820/1004218092/diomande-preparado-morir-mou.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     }
   ]
 }
