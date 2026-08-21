@@ -1042,6 +1042,79 @@
     document.querySelectorAll('[data-i18n-ph]').forEach(function(e){var v=t(e.getAttribute('data-i18n-ph')); if(v!=null)e.setAttribute('placeholder',v);});
     document.querySelectorAll('.lang-sw button').forEach(function(b){var on=b.getAttribute('data-l')===LANG; b.classList.toggle('active',on); b.setAttribute('aria-pressed',on?'true':'false');});
   }
+  // Noms d'équipes tels qu'ESPN les livre (anglais) → localisation.
+  // en = tel quel ; toute équipe absente de la table s'affiche telle quelle,
+  // donc un adversaire inconnu ne casse jamais l'affichage. Les clubs
+  // saoudiens gardent leur forme latine en fr/en/es et prennent leur nom
+  // officiel en arabe.
+  var TEAM_I18N={
+    'Portugal':{ar:'البرتغال'},
+    'Wales':{fr:'Pays de Galles',es:'Gales',ar:'ويلز'},
+    'Spain':{fr:'Espagne',es:'España',ar:'إسبانيا'},
+    'France':{es:'Francia',ar:'فرنسا'},
+    'Germany':{fr:'Allemagne',es:'Alemania',ar:'ألمانيا'},
+    'England':{fr:'Angleterre',es:'Inglaterra',ar:'إنجلترا'},
+    'Italy':{fr:'Italie',es:'Italia',ar:'إيطاليا'},
+    'Netherlands':{fr:'Pays-Bas',es:'Países Bajos',ar:'هولندا'},
+    'Belgium':{fr:'Belgique',es:'Bélgica',ar:'بلجيكا'},
+    'Croatia':{fr:'Croatie',es:'Croacia',ar:'كرواتيا'},
+    'Denmark':{fr:'Danemark',es:'Dinamarca',ar:'الدنمارك'},
+    'Switzerland':{fr:'Suisse',es:'Suiza',ar:'سويسرا'},
+    'Austria':{fr:'Autriche',es:'Austria',ar:'النمسا'},
+    'Poland':{fr:'Pologne',es:'Polonia',ar:'بولندا'},
+    'Sweden':{fr:'Suède',es:'Suecia',ar:'السويد'},
+    'Norway':{fr:'Norvège',es:'Noruega',ar:'النرويج'},
+    'Czechia':{fr:'Tchéquie',es:'Chequia',ar:'التشيك'},
+    'Scotland':{fr:'Écosse',es:'Escocia',ar:'اسكتلندا'},
+    'Republic of Ireland':{fr:'Irlande',es:'Irlanda',ar:'أيرلندا'},
+    'Ireland':{fr:'Irlande',es:'Irlanda',ar:'أيرلندا'},
+    'Turkey':{fr:'Turquie',es:'Turquía',ar:'تركيا'},
+    'Türkiye':{fr:'Turquie',es:'Turquía',ar:'تركيا'},
+    'Ukraine':{fr:'Ukraine',es:'Ucrania',ar:'أوكرانيا'},
+    'Serbia':{fr:'Serbie',es:'Serbia',ar:'صربيا'},
+    'Hungary':{fr:'Hongrie',es:'Hungría',ar:'المجر'},
+    'Greece':{fr:'Grèce',es:'Grecia',ar:'اليونان'},
+    'Slovakia':{fr:'Slovaquie',es:'Eslovaquia',ar:'سلوفاكيا'},
+    'Slovenia':{fr:'Slovénie',es:'Eslovenia',ar:'سلوفينيا'},
+    'Bosnia and Herzegovina':{fr:'Bosnie-Herzégovine',es:'Bosnia',ar:'البوسنة والهرسك'},
+    'Iceland':{fr:'Islande',es:'Islandia',ar:'آيسلندا'},
+    'Finland':{fr:'Finlande',es:'Finlandia',ar:'فنلندا'},
+    'Morocco':{fr:'Maroc',es:'Marruecos',ar:'المغرب'},
+    'Colombia':{fr:'Colombie',ar:'كولومبيا'},
+    'Armenia':{fr:'Arménie',es:'Armenia',ar:'أرمينيا'},
+    'Georgia':{fr:'Géorgie',es:'Georgia',ar:'جورجيا'},
+    'Luxembourg':{es:'Luxemburgo',ar:'لوكسمبورغ'},
+    'Al Nassr':{ar:'النصر'},
+    'Al Hilal':{ar:'الهلال'},
+    'Al Ittihad':{ar:'الاتحاد'},
+    'Al Ahli':{ar:'الأهلي'},
+    'Al Riyadh':{ar:'الرياض'},
+    'Al Fateh':{ar:'الفتح'},
+    'Al Shabab':{ar:'الشباب'},
+    'Al Taawoun':{ar:'التعاون'},
+    'Al Fayha':{ar:'الفيحاء'},
+    'Al Khaleej':{ar:'الخليج'},
+    'Al Ettifaq':{ar:'الاتفاق'},
+    'Al Qadsiah':{ar:'القادسية'},
+    'Al Okhdood':{ar:'الأخدود'},
+    'Al Raed':{ar:'الرائد'},
+    'Damac':{ar:'ضمك'},
+    'Al Kholood':{ar:'الخلود'},
+    'Al Hazem':{ar:'الحزم'},
+    'Al Wehda':{ar:'الوحدة'},
+    'Al Najma':{ar:'النجمة'},
+    'Neom':{ar:'نيوم'},
+    'NEOM':{ar:'نيوم'}
+  };
+  function teamName(n){if(!n)return n;var e=TEAM_I18N[n];return (e&&e[LANG])||n;}
+  // Compétitions : fr/en/es gardent le nom officiel (convention du site) ;
+  // l'arabe prend l'usage de la presse sportive arabe.
+  var COMP_AR={'Saudi Pro League':'الدوري السعودي للمحترفين',
+    'UEFA Nations League':'دوري الأمم الأوروبية',
+    'FIFA World Cup':'كأس العالم','Friendly':'مباراة ودية',
+    "King's Cup":'كأس الملك','Saudi Super Cup':'كأس السوبر السعودي',
+    'AFC Champions League Elite':'دوري أبطال آسيا للنخبة'};
+  function compName(c){if(!c)return c;return (LANG==='ar'&&COMP_AR[c])||c;}
   function renderStats(){
     if(!STATS)return; var s=STATS, goals=s.goals, target=s.target||1000, rem=(s.remaining!=null?s.remaining:target-goals);
     var pct=goals/target*100, sep=(LANG==='en'?'.':','), pctstr=pct.toFixed(1).replace('.',sep);
@@ -1050,7 +1123,7 @@
     document.querySelectorAll('.ch-bar i').forEach(function(e){e.style.width=pct.toFixed(1)+'%';});
     var bar=document.querySelector('.ch-bar'); if(bar)bar.setAttribute('aria-valuenow',goals);
     var foot=document.querySelector('.ch-foot');
-    if(foot){var opp=s.last_goal_opponent?' · '+t('foot_last')+' <b>'+esc(s.last_goal_opponent)+'</b>'+(s.last_goal_competition?' · '+esc(s.last_goal_competition):''):''; foot.innerHTML=t('foot_prog')+' '+pctstr+' %'+opp;}
+    if(foot){var opp=s.last_goal_opponent?' · '+t('foot_last')+' <b>'+esc(teamName(s.last_goal_opponent))+'</b>'+(s.last_goal_competition?' · '+esc(compName(s.last_goal_competition)):''):''; foot.innerHTML=t('foot_prog')+' '+pctstr+' %'+opp;}
     var st=document.querySelector('#data .stats-row .stat .n'); if(st)st.textContent=goals;
     var pill=document.querySelector('.livepill'); if(pill)pill.innerHTML='<span class="dot" aria-hidden="true"></span>'+t('live')+' · '+goals;
     var m=s.next_match;
@@ -1060,9 +1133,9 @@
     // de juin. C'est ce bloc qui affichait encore Colombie–Portugal en août.
     if(m&&m.home_team){
       var names=document.querySelectorAll('#match .vs .team .name'), crests=document.querySelectorAll('#match .vs .team .crest');
-      if(names.length===2){names[0].textContent=m.home_team;names[1].textContent=m.away_team;setFlag(crests[0],m.home_team);setFlag(crests[1],m.away_team);}
+      if(names.length===2){names[0].textContent=teamName(m.home_team);names[1].textContent=teamName(m.away_team);setFlag(crests[0],m.home_team);setFlag(crests[1],m.away_team);}
       var comp=document.querySelector('#match .head .comp');
-      if(comp&&m.competition)comp.textContent=m.competition;
+      if(comp&&m.competition)comp.textContent=compName(m.competition);
       var when=document.querySelector('#match .head .when');
       if(when&&m.kickoff_utc){try{var d=new Date(m.kickoff_utc); when.textContent=d.toLocaleDateString(LANG,{day:'numeric',month:'long'})+' · '+d.toLocaleTimeString(LANG,{hour:'2-digit',minute:'2-digit'});}catch(e){}}
       var fm=document.getElementById('fotmoblink');
@@ -1082,14 +1155,14 @@
     var box=document.getElementById('lastmatch'); if(!box)return;
     if(!lm||!lm.home_team||lm.score_home===null||lm.score_home===undefined){box.hidden=true;return;}
     var teams=box.querySelector('.lm-teams'), score=box.querySelector('.lm-score'), meta=box.querySelector('.lm-meta');
-    if(teams)teams.textContent=lm.home_team+' – '+lm.away_team;
+    if(teams)teams.textContent=teamName(lm.home_team)+' – '+teamName(lm.away_team);
     if(score){
       score.textContent=lm.score_home+'–'+lm.score_away;
       score.className='lm-score '+(lm.result==='W'?'win':lm.result==='L'?'loss':'draw');
     }
     if(meta){
       var bits=[];
-      if(lm.competition)bits.push(esc(lm.competition));
+      if(lm.competition)bits.push(esc(compName(lm.competition)));
       if(lm.date_iso){try{bits.push(new Date(lm.date_iso).toLocaleDateString(LANG,{day:'numeric',month:'long',year:'numeric'}));}catch(e){}}
       if(lm.cr7_scored)bits.push(t('lm_scored')+(lm.cr7_minute?" ("+lm.cr7_minute+"')":''));
       meta.textContent=bits.join(' · ');
