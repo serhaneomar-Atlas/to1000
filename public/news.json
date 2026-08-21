@@ -166,27 +166,28 @@
       "summary": "L’Olympique de Marseille ouvre la première journée de Ligue 1 ce vendredi (20h45) au stade Vélodrome avec la réception du RC Strasbourg.",
       "i18n": {
         "fr": {
-          "title": "EN DIRECT – Marseille-Strasbourg : pour la reprise de la Ligue 1, l’OM et le Racing se répondent coup pour coup dans un Vélodrome bouillant",
-          "summary": "L’Olympique de Marseille ouvre la première journée de Ligue 1 ce vendredi (20h45) au stade Vélodrome avec la réception du RC Strasbourg.",
-          "needs_translation": false
+          "title": "DIRECT – Marseille-Strasbourg : pour la reprise de la Ligue 1, l’OM et le Racing se répondent coup pour coup dans un Vélodrome bouillant",
+          "summary": "L’Olympique de Marseille accueille le RC Strasbourg au stade Vélodrome ce vendredi à 20h45 pour le match d'ouverture de la première journée de Ligue 1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "LIVE – Marseille-Strasbourg: for the resumption of Ligue 1, OM and Racing answer each other blow for blow in a boiling Velodrome",
-          "summary": "Olympique de Marseille opens the first day of Ligue 1 this Friday (20:45) at the Vélodrome stadium with the reception of RC Strasbourg.",
+          "title": "LIVE – Marseille-Strasbourg: for the restart of Ligue 1, OM and Racing go blow for blow in a boiling Vélodrome",
+          "summary": "Olympique de Marseille host RC Strasbourg at the Vélodrome stadium this Friday at 8:45 pm in the opening match of the Ligue 1 season.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "EN DIRECTO – Marsella-Estrasburgo: para la reanudación de la Ligue 1, OM y Racing se enfrentan en un velódromo en ebullición",
-          "summary": "El Olympique de Marsella abre la primera jornada de la Ligue 1 este viernes (20:45) en el estadio Vélodrome con la recepción del RC Strasbourg.",
+          "title": "EN DIRECTO – Marseille-Strasbourg: en el regreso de la Ligue 1, el OM y el Racing responden golpe por golpe en un Vélodrome al rojo vivo",
+          "summary": "L’Olympique de Marseille recibe al RC Strasbourg este viernes (20:45) en el estadio Vélodrome para abrir la primera jornada de la Ligue 1.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباشر – مرسيليا – ستراسبورغ: لاستئناف Ligue 1، يجيب OM و Racing على بعضهما البعض بضربة للضربة في مضمار Velodrome المغلي",
-          "summary": "يفتتح أولمبيك مرسيليا اليوم الأول من دوري الدرجة الأولى يوم الجمعة (20:45) في ملعب فيلودروم مع استقبال نادي ستراسبورغ.",
+          "title": "مباشر – مارسيليا ضد ستراسبورغ: مع عودة منافسات الدوري الفرنسي، إثارة وندية في ملعب فيلودروم",
+          "summary": "يستضيف أولمبيك مارسيليا فريق آر سي ستراسبورغ على ملعب فيلودروم هذا الجمعة في تمام الساعة 20:45، في افتتاح الجولة الأولى من الدوري الفرنسي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/live/ligue-1/2026/2640563/marseille-strasbourg",
@@ -208,7 +209,12 @@
           "url": "https://www.lefigaro.fr/sports/football/live/ligue-1/2026/2640563/marseille-strasbourg"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f0fa8ccde7e4",
@@ -308,7 +314,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Mercato-curtis-jones-quitte-liverpool-et-s-engage-officiellement-avec-l-inter-milan/1712642#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2e91a294a6ad",
@@ -317,26 +328,27 @@
       "i18n": {
         "fr": {
           "title": "Une minute d'applaudissements en hommage à Éric Roy observée avant OM-Strasbourg",
-          "summary": "Juste avant le coup d'envoi de Marseille-Strasbourg, ce vendredi soir, les joueurs et le public du Vélodrome ont tous applaudi en la mémoire d'Éric Roy, décédé il y a deux mois.",
-          "needs_translation": false
+          "summary": "Avant le coup d'envoi de Marseille-Strasbourg au Vélodrome ce vendredi, joueurs et supporters ont rendu hommage à Éric Roy, décédé il y a deux mois, par une minute d'applaudissements.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "A minute of applause in tribute to Eric Roy observed before OM-Strasbourg",
-          "summary": "Just before the kick-off of Marseille-Strasbourg, this Friday evening, the players and the public of the Velodrome all applauded in memory of Eric Roy, who died two months ago.",
+          "title": "A minute of applause in tribute to Éric Roy observed before OM-Strasbourg",
+          "summary": "Before kickoff in Marseille-Strasbourg at the Vélodrome on Friday, players and fans paid tribute to Éric Roy, who passed away two months ago, with a minute of applause.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Un minuto de aplausos en homenaje a Eric Roy observado antes de OM-Estrasburgo",
-          "summary": "Justo antes del inicio del Marsella-Estrasburgo, este viernes por la noche, los jugadores y el público del Velódromo aplaudieron en memoria de Eric Roy, fallecido hace dos meses.",
+          "title": "Un minuto de aplausos en homenaje a Éric Roy antes del OM-Strasbourg",
+          "summary": "Antes del inicio del Marseille-Strasbourg este viernes en el Vélodrome, los jugadores y el público rindieron homenaje a Éric Roy, fallecido hace dos meses, con un minuto de aplausos.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "دقيقة من التصفيق تكريما لإيريك روي أمام OM - Strasbourg",
-          "summary": "قبل انطلاق مرسيليا- ستراسبورغ مباشرة، مساء الجمعة، أشاد اللاعبون والجمهور في فيلودروم بذكرى إريك روي، الذي توفي قبل شهرين.",
+          "title": "دقيقة تصفيق تكريماً لإريك روي قبل مباراة أولمبيك مارسيليا وستراسبورغ",
+          "summary": "شهد ملعب فيلودروم، قبيل انطلاق مباراة مارسيليا وستراسبورغ مساء الجمعة، دقيقة تصفيق من اللاعبين والجماهير تكريماً لذكرى إريك روي الذي توفي قبل شهرين.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Une-minute-d-applaudissements-en-hommage-a-eric-roy-observee-avant-om-strasbourg/1712641#at_medium=RSS_feeds",
@@ -358,7 +370,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Une-minute-d-applaudissements-en-hommage-a-eric-roy-observee-avant-om-strasbourg/1712641#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "83cce2bff1f2",
@@ -579,32 +596,33 @@
       "i18n": {
         "de": {
           "title": "Aussetzer von Danneberg: Deutschland schenkt Spanien den Sieg",
-          "summary": "Gegen Spanien kassierte Deutschland die erste Niederlage bei der Hockey-WM 2026. Am Ende setzte es trotz Führung eine 1:2-Pleite.",
-          "needs_translation": false
+          "summary": "Deutschland hat bei der Hockey-WM 2026 seine erste Niederlage kassiert. Trotz Führung unterlag das Team Spanien mit 1:2.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Danneberg misses: Germany gives Spain victory",
-          "summary": "Germany conceded its first defeat at the 2026 World Hockey Championships against Spain. In the end, it was a 1: 2 defeat despite the lead.",
+          "title": "Danneberg lapse: Germany gifts victory to Spain",
+          "summary": "Germany suffered their first defeat at the 2026 Hockey World Cup, losing 1-2 to Spain despite having initially taken the lead.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Échec de Danneberg : l'Allemagne donne la victoire à l'Espagne",
-          "summary": "Contre l'Espagne, l'Allemagne a subi sa première défaite lors de la Coupe du monde de hockey 2026. En fin de compte, il a fait faillite 1: 2 malgré le leadership.",
+          "title": "Erreur de Danneberg : l'Allemagne offre la victoire à l'Espagne",
+          "summary": "L'Allemagne a concédé sa première défaite à la Coupe du monde de hockey 2026 face à l'Espagne (1-2), malgré l'ouverture du score.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Falta de Danneberg: Alemania da la victoria a España",
-          "summary": "Contra España, Alemania sufrió su primera derrota en el Mundial de Hockey de 2026. Al final, a pesar del liderazgo, puso una derrota de 1:2.",
+          "title": "Fallo de Danneberg: Alemania regala la victoria a España",
+          "summary": "Alemania encajó su primera derrota en el Mundial de Hockey 2026 tras caer 1-2 ante España, a pesar de haberse adelantado en el marcador.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "دانبيرغ يخطئ: ألمانيا تمنح إسبانيا النصر",
-          "summary": "اعترفت ألمانيا بأول هزيمة لها في بطولة العالم للهوكي 2026 ضد إسبانيا. في النهاية، كانت هزيمة 1: 2 على الرغم من الصدارة.",
+          "title": "هفوة من دانيبيرغ: ألمانيا تهدي الفوز لإسبانيا",
+          "summary": "تلقى المنتخب الألماني هزيمته الأولى في كأس العالم للهوكي 2026 بالخسارة أمام إسبانيا بنتيجة 1-2، رغم تقدمه في البداية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/aussetzer-von-danneberg-deutschland-schenkt-spanien-den-sieg-1245621/video#omrss",
@@ -626,7 +644,12 @@
           "url": "https://www.kicker.de/aussetzer-von-danneberg-deutschland-schenkt-spanien-den-sieg-1245621/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "faf5592db0cf",
@@ -685,26 +708,27 @@
       "i18n": {
         "es": {
           "title": "El Dépor Abanca le gana 1-2 al Río Ave tras remontar el duelo",
-          "summary": "El Dépor Abanca cerró la pretemporada con un amistoso ante el Río Ave en el estadio de Os Arcos de Vila do Conde en el que acabó imponiéndose 1-2 con dos tantos en los minutos finales.",
-          "needs_translation": false
+          "summary": "El Dépor Abanca cerró su pretemporada con una victoria por 1-2 ante el Río Ave en el estadio de Os Arcos (Vila do Conde), gracias a dos goles en los minutos finales.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Dépor Abanca beats Rio Ave 1-2 after overcoming the duel",
-          "summary": "Dépor Abanca closed the preseason with a friendly against the Ave River at the Os Arcos stadium in Vila do Conde in which they ended up winning 1-2 with two goals in the final minutes.",
+          "title": "Dépor Abanca beat Río Ave 1-2 after a comeback",
+          "summary": "Dépor Abanca closed their pre-season with a 1-2 friendly victory over Río Ave at Os Arcos in Vila do Conde, thanks to two late goals.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le Dépor Abanca gagne 1-2 à la rivière Ave après avoir remonté le duel",
-          "summary": "Le Dépor Abanca a clôturé la pré-saison par un match amical face à la rivière Ave au stade Os Arcos de Vila do Conde où il a fini par s'imposer 1-2 avec deux buts dans les dernières minutes.",
+          "title": "Le Dépor Abanca s'impose 1-2 face au Río Ave après avoir renversé la rencontre",
+          "summary": "Le Dépor Abanca a conclu sa pré-saison par une victoire 1-2 contre le Río Ave à Os Arcos (Vila do Conde), en inscrivant deux buts dans les dernières minutes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ديبور أبانكا يهزم ريو أفي 1-2 بعد التغلب على المبارزة",
-          "summary": "أنهى ديبور أبانكا فترة ما قبل الموسم بمباراة ودية ضد أفي ريفر في ملعب أوس أركوس في فيلا دو كوندي الذي انتهى بالفوز 1-2 مع هدفين في الدقائق الأخيرة.",
+          "title": "ديبور أبانكا يفوز 1-2 على ريو أفي بعد قلب النتيجة",
+          "summary": "اختتمت سيدات ديبور أبانكا الفترة التحضيرية بالفوز ودياً 1-2 على ريو أفي في ملعب أوس أركوس بمدينة فيلا دو كوند، بفضل هدفين في الدقائق الأخيرة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/depor-abanca-le-gana-1-133555700?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -726,7 +750,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/depor-abanca-le-gana-1-133555700?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7289ab2f541a",
@@ -785,26 +814,27 @@
       "i18n": {
         "es": {
           "title": "Linda Caicedo: \"Esta temporada quiero dar un gran salto\"",
-          "summary": "Linda Caicedo está ante una de las temporadas más importantes de su carrera.",
-          "needs_translation": false
+          "summary": "Linda Caicedo afronta una de las temporadas más importantes de su carrera deportiva con la ambición de dar un gran salto cualitativo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Linda Caicedo: \"This season I want to take a big leap\"",
-          "summary": "Linda Caicedo is facing one of the most important seasons of her career.",
+          "title": "Linda Caicedo: \"This season I want to take a big step forward\"",
+          "summary": "Linda Caicedo faces one of the most important seasons of her career, aiming to take a major step forward.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Linda Caicedo : « Cette saison, je veux faire un grand saut »",
-          "summary": "Linda Caicedo est confrontée à l'une des saisons les plus importantes de sa carrière.",
+          "title": "Linda Caicedo : « Cette saison, je veux franchir un grand cap »",
+          "summary": "Linda Caicedo aborde l'une des saisons les plus importantes de sa carrière, avec l'ambition de franchir un grand cap.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ليندا كايسيدو: \"هذا الموسم أريد أن أقفز قفزة كبيرة\"",
-          "summary": "تواجه ليندا كايسيدو أحد أهم المواسم في حياتها المهنية.",
+          "title": "ليندا كايسيدو: \"أريد تحقيق قفزة كبيرة هذا الموسم\"",
+          "summary": "تخوض ليندا كايسيدو أحد أهم مواسم مسيرتها الكروية، معربة عن طموحها في تحقيق قفزة نوعية وتطوير مستواها بشكل كبير.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260821/1004218386/linda-caicedo-temporada-quiero-dar-gran-salto.html",
@@ -826,7 +856,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260821/1004218386/linda-caicedo-temporada-quiero-dar-gran-salto.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ed65c58d728a",
@@ -835,26 +870,27 @@
       "i18n": {
         "es": {
           "title": "Cambio de localía: por la guerra Ucrania-Rusia, Shakhtar jugará sus partidos de Champions League en Inglaterra",
-          "summary": "El cuadro de la ciudad de Donetsk movió su localía al Stamford Bridge, del Chelsea, por el enfrentamiento bélico en curso.",
-          "needs_translation": false
+          "summary": "Debido a la guerra en curso, Shakhtar Donetsk disputará sus partidos como local en la Champions League en Stamford Bridge, estadio de Chelsea en Inglaterra.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Change of venue: due to the Ukraine-Russia war, Shakhtar will play his Champions League matches in England",
-          "summary": "The picture of the city of Donetsk moved its locality to Stamford Bridge, of Chelsea, for the ongoing war confrontation.",
+          "title": "Change of venue: due to the Ukraine-Russia war, Shakhtar will play their Champions League matches in England",
+          "summary": "Due to the ongoing war, Shakhtar Donetsk will host their Champions League home matches at Stamford Bridge, Chelsea's stadium in England.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Changement de lieu : à cause de la guerre Ukraine-Russie, Shakhtar jouera ses matchs de Ligue des Champions en Angleterre",
-          "summary": "Le cadre de la ville de Donetsk a déplacé son emplacement à Stamford Bridge, Chelsea, en raison de l'affrontement en cours.",
+          "title": "Changement de stade : en raison de la guerre Ukraine-Russie, Shakhtar jouera ses matches de Champions League en Angleterre",
+          "summary": "En raison du conflit armé en cours, Shakhtar Donetsk disputera ses matches à domicile de Champions League à Stamford Bridge, le stade de Chelsea en Angleterre.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تغيير المكان: بسبب الحرب الأوكرانية الروسية، سيلعب شاختار مبارياته في دوري أبطال أوروبا في إنجلترا",
-          "summary": "نقلت صورة مدينة دونيتسك موقعها إلى ستامفورد بريدج، تشيلسي، لمواجهة الحرب المستمرة.",
+          "title": "تغيير الملعب: بسبب الحرب بين أوكرانيا وروسيا، شاختار سيخوض مبارياته في دوري أبطال أوروبا في إنجلترا",
+          "summary": "بسبب النزاع المسلح المستمر، قرر نادي شاختار دونيتسك خوض مبارياته البيتية في دوري أبطال أوروبا على ملعب ستامفورد بريدج الخاص بنادي تشيلسي في إنجلترا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/cambio-localia-shakhtar-donetsk-inglaterra-chelsea-champions-league_0_y3TVkN8C3q.html",
@@ -876,7 +912,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/cambio-localia-shakhtar-donetsk-inglaterra-chelsea-champions-league_0_y3TVkN8C3q.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a0ef9bc71b05",
@@ -996,27 +1037,48 @@
       "summary": "Malgré l'énième fiasco européen de ses clubs et de sa sélection en qualifications de la Coupe du monde, le football italien peine à se remettre en question alors que la Serie A, toujours aussi populaire auprès des tifosi, reprend ce week-end.",
       "i18n": {
         "fr": {
-          "title": "Crise des résultats de la Nazionale et des clubs italiens, combats à la Fédération : le football transalpin sans repère alors que la nouvelle saison de la Serie A démarre",
-          "summary": "Malgré l'énième fiasco européen de ses clubs et de sa sélection en qualifications de la Coupe du monde, le football italien peine à se remettre en question alors que la Serie A, toujours aussi populaire auprès des tifosi, reprend ce week-end.",
-          "needs_translation": false
+          "title": "Serie A : reprise sur fond de crise historique pour le football italien",
+          "summary": "La Serie A reprend ce week-end dans un climat morose, plombée par les fiascos répétés de la Nazionale et des clubs transalpins.",
+          "body": [
+            "Le football italien traverse une période noire après la troisième non-qualification consécutive de la sélection pour la Coupe du monde, éliminée aux tirs au but par la Bosnie (1-1, 1-4 t.a.b.).",
+            "Sur la scène continentale, aucun club transalpin n'a atteint les huitièmes de finale de la Ligue des champions, prolongeant une disette de seize saisons sans trophée dans l'épreuve reine."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Crisis of the results of the Nazionale and Italian clubs, fights at the Federation: transalpine football without a benchmark as the new Serie A season starts",
-          "summary": "Despite the umpteenth European fiasco of its clubs and its selection in World Cup qualifiers, Italian football is struggling to question itself as Serie A, still as popular with the fans, resumes this weekend.",
+          "title": "Serie A restarts amid historic crisis for Italian football",
+          "summary": "Serie A kicks off this weekend in a gloomy atmosphere, weighed down by repeated setbacks for the national team and domestic clubs.",
+          "body": [
+            "Italian football faces a deep crisis after the national team missed out on the World Cup for a third consecutive time, falling to Bosnia on penalties (1-1, 1-4 on pens).",
+            "In continental competition, no Italian club reached the Champions League round of 16 this season, extending a 16-year title drought in Europe's top tournament."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Crisis de los resultados de la Nazionale y de los clubes italianos, combates en la Federación: el fútbol transalpino sin puntos de referencia mientras comienza la nueva temporada de la Serie A",
-          "summary": "A pesar del enésimo fiasco europeo de sus clubes y de su selección en la fase de clasificación de la Copa del Mundo, el fútbol italiano lucha por cuestionarse mientras la Serie A, tan popular entre los aficionados, se reanuda este fin de semana.",
+          "title": "Serie A: regreso en plena crisis histórica para el fútbol italiano",
+          "summary": "La Serie A arranca este fin de semana en un ambiente sombrío, lastrada por los repetidos fracasos de la selección y de sus clubes.",
+          "body": [
+            "El fútbol italiano vive horas bajas tras perderse la Copa del Mundo por tercera edición consecutiva, eliminado en la repesca por Bosnia en los penaltis (1-1, 1-4).",
+            "En Europa, ningún club del país logró meterse en los octavos de final de la Liga de Campeones, alargando una sequía de dieciséis temporadas sin títulos en el torneo continental."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "أزمة نتائج الأندية الوطنية والإيطالية، معارك في الاتحاد: كرة القدم عبر جبال الألب دون معيار مع بدء موسم دوري الدرجة الأولى الإيطالي الجديد",
-          "summary": "على الرغم من الفشل الأوروبي الكبير لأنديتها واختيارها في تصفيات كأس العالم، إلا أن كرة القدم الإيطالية تكافح من أجل التشكيك في نفسها كدوري الدرجة الأولى الإيطالي، الذي لا يزال يحظى بشعبية كبيرة بين المشجعين، ويستأنف في نهاية هذا الأسبوع.",
+          "title": "الدوري الإيطالي ينطلق وسط أزمة تاريخية تعصف بالكرة الإيطالية",
+          "summary": "يستأنف الدوري الإيطالي نشاطه هذا الأسبوع وسط أجواء محبطة، بعد الإخفاقات المتتالية للمنتخب الوطني وأندية البلاد قارياً.",
+          "body": [
+            "تعيش كرة القدم الإيطالية أزمة حادة بعد الغياب عن كأس العالم للمرة الثالثة توالياً إثر الخسارة أمام البوسنة بركلات الترجيح (1-1، 1-4).",
+            "وعلى الصعيد الأوروبي، ودعت جميع الأندية الإيطالية دوري أبطال أوروبا قبل ثمن النهائي، ليتواصل غيابها عن التتويج باللقب القاري للموسم السادس عشر توالياً."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Article/Crise-des-resultats-de-la-nazionale-et-des-clubs-italiens-combats-a-la-federation-le-football-transalpin-sans-repere-alors-que-la-nouvelle-saison-de-la-serie-a-demarre/1712589#at_medium=RSS_feeds",
@@ -1038,7 +1100,20 @@
           "url": "https://www.lequipe.fr/Football/Article/Crise-des-resultats-de-la-nazionale-et-des-clubs-italiens-combats-a-la-federation-le-football-transalpin-sans-repere-alors-que-la-nouvelle-saison-de-la-serie-a-demarre/1712589#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-21T19:39:21+00:00"
+        }
+      }
     },
     {
       "id": "62043d4284ae",
@@ -1047,26 +1122,27 @@
       "i18n": {
         "es": {
           "title": "El ex Boca que sueña con ganar esta Copa Libertadores: \"Me sedujo que...\"",
-          "summary": "Uno de los futbolistas que no iba a ser tenido en cuenta por Arruabarrena, ya llegó a su nuevo equipo, que sigue en el torneo de la Conmebol.",
-          "needs_translation": false
+          "summary": "Un futbolista descartado por Arruabarrena en Boca se incorporó a su nuevo equipo, que continúa compitiendo en la Copa Libertadores de la Conmebol.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The former Boca who dreams of winning this Copa Libertadores: \"It seduced me that...\"",
-          "summary": "One of the players who was not going to be taken into account by Arruabarrena, has already arrived at his new team, which is still in the CONMEBOL tournament.",
+          "title": "The former Boca player who dreams of winning this Copa Libertadores: \"I was enticed by...\"",
+          "summary": "A player discarded by Arruabarrena at Boca has joined a new club that remains in contention in Conmebol's Copa Libertadores.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "L'ex-Boca qui rêve de remporter cette Copa Libertadores : \"J'ai été séduit que...\"",
-          "summary": "L'un des footballeurs qui n'allait pas être pris en compte par Arruabarrena, est déjà arrivé dans sa nouvelle équipe, qui est toujours dans le tournoi de la Conmebol.",
+          "title": "L'ancien joueur de Boca qui rêve de remporter cette Copa Libertadores : « J'ai été séduit par le fait que... »",
+          "summary": "Écarté par Arruabarrena à Boca, un joueur a rejoint sa nouvelle équipe, toujours en lice dans la Copa Libertadores organisée par la Conmebol.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "بوكا السابق الذي يحلم بالفوز بكأس ليبرتادوريس: \"لقد أغراني ذلك...\"",
-          "summary": "أحد اللاعبين الذين لم يتم أخذهم في الاعتبار من قبل Arruabarrena، وصل بالفعل إلى فريقه الجديد، الذي لا يزال في بطولة CONMEBOL.",
+          "title": "لاعب بوكا السابق الذي يحلم بالتتويج بلقب كوبا ليبرتادوريس: \"أغراني أن...\"",
+          "summary": "انضم لاعب خرج من حسابات المدرب أروابارينا في بوكا إلى ناديه الجديد، الذي يواصل المنافسة في بطولة كوبا ليبرتادوريس التابعة لاتحاد كونميبول.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/libertadores/ex-boca-suena-ganar-copa-libertadores-2026_0_MuAwWCOEtH.html",
@@ -1088,7 +1164,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/libertadores/ex-boca-suena-ganar-copa-libertadores-2026_0_MuAwWCOEtH.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "18727718eb28",
@@ -1097,26 +1178,27 @@
       "i18n": {
         "es": {
           "title": "Guillermo Barros Schelotto volvió a hablar de la pelea con Vaccari antes del partido contra River",
-          "summary": "La pelea entre los dos técnicos se dio en el final del cruce entre Vélez y Defensa y Justicia durante la fecha 5 del Torneo Clausura.",
-          "needs_translation": false
+          "summary": "Guillermo Barros Schelotto se refirió a su altercado con Vaccari, ocurrido al final del partido entre Vélez y Defensa y Justicia por la fecha 5 del Torneo Clausura, antes del encuentro frente a River.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Guillermo Barros Schelotto again talked about the fight with Vaccari before the game against River",
-          "summary": "The fight between the two technicians took place at the end of the cross between Vélez and Defensa y Justicia during date 5 of the Closing Tournament.",
+          "title": "Guillermo Barros Schelotto addressed his altercation with Vaccari again ahead of the match against River",
+          "summary": "Guillermo Barros Schelotto commented on his clash with Vaccari that occurred at the end of the Vélez against Defensa y Justicia fixture in matchday 5 of the Torneo Clausura, ahead of facing River.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Guillermo Barros Schelotto a de nouveau parlé de la bagarre avec Vaccari avant le match contre River",
-          "summary": "La bagarre entre les deux techniciens a eu lieu à la fin du croisement entre Vélez et Defensa y Justicia lors de la 5e journée du tournoi de clôture.",
+          "title": "Guillermo Barros Schelotto est revenu sur son altercation avec Vaccari avant le match contre River",
+          "summary": "Guillermo Barros Schelotto s'est exprimé sur son accrochage avec Vaccari survenu à la fin de Vélez - Defensa y Justicia lors de la 5e journée du Torneo Clausura, avant d'affronter River.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تحدث غييرمو باروس شيلوتو مرة أخرى عن القتال مع فاكاري قبل المباراة ضد ريفر",
-          "summary": "وقع الشجار بين الفنيين في نهاية الصليب بين فيليز وديفينسا إي جوستيسيا خلال التاريخ 5 من البطولة الختامية.",
+          "title": "غييرمو باروس سكيلوتو يعود للحديث عن شجاره مع فاكاري قبل مواجهة ريفر بليت",
+          "summary": "تحدث المدرب غييرمو باروس سكيلوتو مجدداً عن شجاره مع فاكاري في نهاية لقاء فيليز وديفينسا إي خوستيسيا بالجولة الخامسة من بطولة كلاوسورا، وذلك قبل مواجهة ريفر بليت.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-primera/velez-defensa-justicia-barros-schelotto-vaccari-pelea_0_3E4fgu6qtI.html",
@@ -1138,7 +1220,12 @@
           "url": "https://www.ole.com.ar/futbol-primera/velez-defensa-justicia-barros-schelotto-vaccari-pelea_0_3E4fgu6qtI.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7cc857c01e2f",
@@ -1147,32 +1234,33 @@
       "i18n": {
         "de": {
           "title": "Fort will zum BVB - Atletico wird wegen Alvarez wieder deutlich",
-          "summary": "Wer wechselt wohin? Wer ist wo im Gespräch?",
-          "needs_translation": false
+          "summary": "Fort strebt einen Wechsel zu Borussia Dortmund an, während Atletico seine Haltung im Fall Alvarez erneut klarstellt.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Moving on to BVB - Atletico becomes clear again because of Alvarez",
-          "summary": "Who is moving to where? Who is in conversation where?",
+          "title": "Fort wants BVB move - Atletico clarify stance on Alvarez again",
+          "summary": "Fort is keen on joining Borussia Dortmund, while Atletico have reiterated their firm position regarding Alvarez.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Fort will zum BVB - L'Atlético redevient visible à cause d'Alvarez",
-          "summary": "Qui va où ? Qui est où dans la conversation ?",
+          "title": "Fort veut rejoindre le BVB - Atletico réaffirme sa position pour Alvarez",
+          "summary": "Fort souhaite s'engager avec Borussia Dortmund, tandis qu'Atletico a de nouveau clarifié ses intentions concernant Alvarez.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Fort will zum BVB - El Atlético vuelve a ser claro debido a Álvarez",
-          "summary": "¿Quién se muda a dónde? ¿Quién está hablando dónde?",
+          "title": "Fort quiere ir al BVB - Atletico vuelve a ser claro sobre Alvarez",
+          "summary": "Fort desea incorporarse al Borussia Dortmund, al tiempo que Atletico reitera con firmeza su postura sobre Alvarez.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الانتقال إلى BVB - أصبح أتلتيكو واضحًا مرة أخرى بسبب ألفاريز",
-          "summary": "من ينتقل إلى أين ؟ من يتحدث إلى أين ؟",
+          "title": "فورت يرغب في الانتقال إلى بوروسيا دورتموند وأتلتيكو مدريد يوضح موقفه بشأن ألفاريز",
+          "summary": "يبدي فورت رغبته في الانضمام إلى بوروسيا دورتموند، بينما يجدد أتلتيكو مدريد توضيح موقفه الحاسم بشأن ألفاريز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/transferticker-953155/artikel#omrss",
@@ -1194,7 +1282,12 @@
           "url": "https://www.kicker.de/transferticker-953155/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d99bccff6e74",
@@ -1203,26 +1296,27 @@
       "i18n": {
         "fr": {
           "title": "Les compositions d'OM-Strasbourg : Egan-Riley titulaire, Giovanni Reyna remplaçant",
-          "summary": "En l'absence de Leonardo Balerdi, CJ Egan-Riley est titulaire avec l'OM face à Strasbourg, ce vendredi soir (20 h 45, à suivre sur Ligue 1+, disponible sur L'Équipe), en ouverture de la première journée de Ligue 1. Du côté du Racing, Giovanni Reyna est remplaçant.",
-          "needs_translation": false
+          "summary": "Pour le match d'ouverture de la Ligue 1 entre l'OM et Strasbourg, CJ Egan-Riley est titulaire en défense en l'absence de Leonardo Balerdi. Côté Racing, Giovanni Reyna débute sur le banc.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "OM-Strasbourg's compositions: Egan-Riley titular, Giovanni Reyna replacing",
-          "summary": "In the absence of Leonardo Balerdi, CJ Egan-Riley starts with OM against Strasbourg, this Friday evening (20:45, to follow on Ligue 1+, available on L 'Équipe), opening the first day of Ligue 1. On the Racing side, Giovanni Reyna is a substitute.",
+          "title": "OM-Strasbourg lineups: Egan-Riley starts, Giovanni Reyna on the bench",
+          "summary": "In the Ligue 1 opener between OM and Strasbourg, CJ Egan-Riley starts in place of the absent Leonardo Balerdi. Meanwhile, Giovanni Reyna begins on the bench for Racing.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Las composiciones de OM-Estrasburgo: Egan-Riley titular, Giovanni Reyna sustituto",
-          "summary": "En ausencia de Leonardo Balerdi, CJ Egan-Riley es titular con el OM frente al Estrasburgo, este viernes por la noche (20:45, a seguir en Ligue 1+, disponible en L 'Équipe), en la apertura de la primera jornada de Ligue 1. En el lado de Racing, Giovanni Reyna es el sustituto.",
+          "title": "Alineaciones del OM-Strasbourg: Egan-Riley titular, Giovanni Reyna suplente",
+          "summary": "En el partido inaugural de la Ligue 1 entre el OM y Strasbourg, CJ Egan-Riley es titular ante la ausencia de Leonardo Balerdi. En el Racing, Giovanni Reyna comienza como suplente.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مؤلفات OM - Strasbourg: Egan - Riley titular، استبدال Giovanni Reyna",
-          "summary": "في غياب ليوناردو باليردي، يبدأ CJ Egan - Riley مع OM ضد ستراسبورغ، مساء الجمعة (20:45، لمتابعة Ligue 1+، متاح على L 'Équipe)، ويفتتح اليوم الأول من Ligue 1. على جانب السباق، جيوفاني رينا هو بديل.",
+          "title": "تشكيلتا مباراة مارسيليا وستراسبورغ: إيغان-رايلي أساسي وجيوفاني رينا بديل",
+          "summary": "في افتتاح الدوري الفرنسي بين مارسيليا وستراسبورغ، يبدأ سي جيه إيغان-رايلي أساسياً لتعويض غياب ليوناردو باليردي، بينما يجلس جيوفاني رينا على مقاعد بدلاء راسينغ.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Les-compositions-d-om-strasbourg-egan-riley-titulaire-giovanni-reyna-remplacant/1712636#at_medium=RSS_feeds",
@@ -1244,7 +1338,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Les-compositions-d-om-strasbourg-egan-riley-titulaire-giovanni-reyna-remplacant/1712636#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2f5c4f1d8a72",
@@ -1300,7 +1399,12 @@
           "url": "https://www.kicker.de/kroatien-gegen-tuerkei-2026-basketball-supercup-5202541/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "fe5d06a4a028",
@@ -1359,26 +1463,27 @@
       "i18n": {
         "es": {
           "title": "Arsenal - Coventry City, en directo | Premier League",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Premier League que enfrenta al Arsenal contra el Coventry City correspondiente a Jornada 1.",
-          "needs_translation": false
+          "summary": "Arsenal y Coventry City se enfrentan en directo en el partido correspondiente a la primera jornada de la Premier League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Arsenal - Coventry City, live | Premier League",
-          "summary": "Good afternoon and welcome to the live narration of the Premier League football match between Arsenal and Coventry City on Matchday 1.",
+          "title": "Arsenal vs Coventry City Live | Premier League",
+          "summary": "Arsenal face Coventry City live in the opening matchday of the Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Arsenal - Coventry City, en direct | Premier League",
-          "summary": "Bonsoir et bienvenue au récit, en direct, du match de football de Premier League qui oppose Arsenal à Coventry City correspondant à la Journée 1.",
+          "title": "Arsenal - Coventry City en direct | Premier League",
+          "summary": "Arsenal affronte Coventry City en direct à l'occasion de la 1re journée de Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أرسنال - كوفنتري سيتي، مباشر | الدوري الإنجليزي الممتاز",
-          "summary": "مساء الخير ومرحبا بكم في السرد المباشر لمباراة كرة القدم في الدوري الممتاز بين أرسنال وكوفنتري سيتي يوم المباراة 1.",
+          "title": "أرسنال - كوفنتري سيتي، البث المباشر | الدوري الإنجليزي الممتاز",
+          "summary": "يلتقي أرسنال مع كوفنتري سيتي في بث مباشر ضمن منافسات الجولة الأولى من الدوري الإنجليزي الممتاز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260821/1004216757/arsenal-coventry-city-directo-premier-league.html",
@@ -1406,7 +1511,12 @@
           "url": "https://www.mundodeportivo.com/futbol/ligue-1/20260821/1004216751/marsella-strasbourg-directo-ligue-1.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d8abe24e0e90",
@@ -1470,26 +1580,27 @@
       "i18n": {
         "es": {
           "title": "El Milan homenajeará a Baresi con el parche '6 per sempre' en sus camisetas",
-          "summary": "El Milan homenajeará a su histórico capitán Franco Baresi, que falleció el pasado 31 de julio a los 66 años, con un parche conmemorativo con el mensaje \"6 per sempre\" (6 para siempre), que lucirán todos los equipos del club durante la temporada 2026-27. Leer la noticia completa",
-          "needs_translation": false
+          "summary": "El Milan rendirá homenaje a su histórico capitán Franco Baresi incorporando un parche conmemorativo con el lema \"6 per sempre\" en las camisetas de todos sus equipos durante la temporada 2026-27.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Milan will pay tribute to Baresi with the '6 per sempre' patch on their shirts",
-          "summary": "Milan will pay tribute to its historic captain Franco Baresi, who died on July 31 at the age of 66, with a commemorative patch with the message \"6 per sempre\" (6 forever), which all the club's teams will wear during the 2026-27 season. Read the full story",
+          "title": "Milan to honour Baresi with '6 per sempre' patch on their shirts",
+          "summary": "Milan will pay tribute to their legendary captain Franco Baresi by wearing a commemorative \"6 per sempre\" patch on all club shirts throughout the 2026-27 season.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le Milan rendra hommage à Baresi avec le patch '6 per siempre' sur ses maillots",
-          "summary": "Le Milan rendra hommage à son capitaine historique Franco Baresi, décédé le 31 juillet dernier à l'âge de 66 ans, avec un patch commémoratif portant le message « 6 per sempre » (6 pour toujours), que porteront toutes les équipes du club pendant la saison 2026-27. Lire l'article complet",
+          "title": "L'AC Milan rendra hommage à Baresi avec le badge « 6 per sempre » sur ses maillots",
+          "summary": "L'AC Milan rendra hommage à son capitaine historique Franco Baresi en arborant un badge commémoratif « 6 per sempre » sur les maillots de toutes ses équipes durant la saison 2026-2027.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ستشيد ميلانو بباريزي من خلال رقعة \"6 per sempre\" على قمصانهم",
-          "summary": "سيحيي ميلان قائده التاريخي فرانكو باريزي، الذي توفي في 31 يوليو عن عمر يناهز 66 عامًا، برقعة تذكارية تحمل رسالة \"6 لكل sempre\" (6 إلى الأبد)، والتي سترتديها جميع فرق النادي خلال موسم 2026-2027. قراءة القصة كاملة",
+          "title": "ميلان يكرم باريزي بوضع شارة \"6 للأبد\" على قمصانه",
+          "summary": "سيكرم نادي ميلان قائده التاريخي الراحل فرانكو باريزي بوضع شارة تذكارية تحمل عبارة \"6 للأبد\" على قمصان جميع فرق النادي خلال موسم 2026-2027.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/milan-homenajeara-baresi-parche-6-133549723?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -1511,7 +1622,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/milan-homenajeara-baresi-parche-6-133549723?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6e3e4429c811",
@@ -1520,26 +1636,27 @@
       "i18n": {
         "es": {
           "title": "Romeu: \"Vamos a por los cinco títulos\"",
-          "summary": "El entrenador del Barça Femenino, Pere Romeu , aseguró, en su discurso inaugural de la nueva temporada, antes de la disputa del Gamper femenino, en el Estadi Johan Cruyff , que \"este año vamos a por los cinco títulos, comno ha dicho Patri \", en referencia al discurso de la…",
-          "needs_translation": false
+          "summary": "Antes de disputar el Gamper en el Estadi Johan Cruyff, el entrenador del Barça Femenino, Pere Romeu, declaró que el equipo aspira a conquistar los cinco títulos en juego esta temporada.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Romeu: \"Let's go for the five titles\"",
-          "summary": "The coach of Barça Women, Pere Romeu , said, in his inaugural speech of the new season, before the dispute of the women's Gamper, at the Johan Cruyff Stadium, that \"this year we are going for the five titles, as Patri has said\", in reference to the speech of the...",
+          "title": "Romeu: \"We are going for all five titles\"",
+          "summary": "Ahead of the Gamper match at the Estadi Johan Cruyff, Barça Femenino head coach Pere Romeu announced that the team aims to win all five available titles this season.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Romeu : « Allons chercher les cinq titres »",
-          "summary": "L'entraîneur du Barça féminin, Pere Romeu , a assuré, dans son discours d'ouverture de la nouvelle saison, avant le match du Gamper féminin, à l'Estadi Johan Cruyff , que « cette année, nous allons chercher les cinq titres, comme l'a dit Patri », en référence au discours de la…",
+          "title": "Romeu : « Nous visons les cinq titres »",
+          "summary": "Avant le match du Gamper à l'Estadi Johan Cruyff, l'entraîneur du Barça Femenino, Pere Romeu, a affirmé que l'équipe vise à remporter les cinq titres en jeu cette saison.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "روميو: \"دعنا نذهب للألقاب الخمسة\"",
-          "summary": "قال مدرب نادي برشلونة النسائي، بير روميو، في خطابه الافتتاحي للموسم الجديد، قبل نزاع غامبر النسائي، في ملعب يوهان كرويف ، إنه \"هذا العام سنختار الألقاب الخمسة، كما قال باتري \"، في إشارة إلى خطاب...",
+          "title": "روميو: \"سننافس على الألقاب الخمسة\"",
+          "summary": "أكد بيري روميو، مدرب فريق سيدات برشلونة، قبل انطلاق كأس غامبر على ملعب يوهان كرويف، أن فريقه يستهدف التتويج بجميع الألقاب الخمسة الممكنة هذا الموسم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260821/1004218374/romeu-cinco-titulos.html",
@@ -1561,7 +1678,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260821/1004218374/romeu-cinco-titulos.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "97feea5b9d05",
@@ -1570,26 +1692,27 @@
       "i18n": {
         "es": {
           "title": "Oficial: esta pieza clave de Unai Emery ya es del Arsenal",
-          "summary": "A Unai Emery , entrenador del Aston Villa , le están desmantelando el equipo con el que ganó la Europa League. Es oficial: su defensa internacional inglés Ezri Konsa , de 28 años, ya es jugador del Arsenal .",
-          "needs_translation": false
+          "summary": "El defensa internacional inglés de 28 años, Ezri Konsa, deja el Aston Villa de Unai Emery y ficha oficialmente por el Arsenal.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Officer: this key piece of Unai Emery is already from Arsenal",
-          "summary": "Unai Emery , coach of Aston Villa , is being dismantled by the team with which he won the Europa League. It's official: his 28-year-old English international defender Ezri Konsa is already an Arsenal player.",
+          "title": "Official: Key Unai Emery player joins Arsenal",
+          "summary": "Aston Villa's 28-year-old English international defender Ezri Konsa has officially completed a transfer to Arsenal.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Officiel : cette pièce maîtresse d'Unai Emery vient d'Arsenal",
-          "summary": "Unai Emery , entraîneur d'Aston Villa , est en train de démanteler l'équipe avec laquelle il a remporté la Ligue Europa. C'est officiel : son défenseur international anglais Ezri Konsa , 28 ans, est déjà joueur d'Arsenal .",
+          "title": "Officiel : ce joueur clé d'Unai Emery rejoint Arsenal",
+          "summary": "Le défenseur international anglais d'Aston Villa, Ezri Konsa (28 ans), s'est officiellement engagé avec Arsenal.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الضابط: هذه القطعة الرئيسية من أوناي إيمري هي بالفعل من أرسنال",
-          "summary": "A Unai Emery , entrenador del Aston Villa , le están desmantelando el equipo con el que ganó la Europa League. Es oficial: su defensa internacional inglés Ezri Konsa , de 28 años, ya es jugador del Arsenal .",
+          "title": "رسمياً: لاعب أوناي إيمري البارز ينتقل إلى أرسنال",
+          "summary": "أعلن نادي أرسنال رسمياً تعاقده مع المدافع الدولي الإنجليزي إزري كونسا (28 عاماً) قادماً من صفوف أستون فيلا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fichajes/oficial/20260821/1004218371/oficial-pieza-clave-unai-emery-arsenal.html",
@@ -1611,7 +1734,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fichajes/oficial/20260821/1004218371/oficial-pieza-clave-unai-emery-arsenal.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7082ad46d186",
@@ -1811,26 +1939,27 @@
       "i18n": {
         "es": {
           "title": "Jean-Luc Dompé, Cyriaque Irié y Sofiane Boufal, alternativas del Deportivo para reforzar la banda derecha",
-          "summary": "Al Deportivo le quedan dos semanas para cerrar el mercado de fichajes y acelera ante las piezas que aún le quedan por sumar para redondear una plantilla que ya cuenta con siete incorporaciones.",
-          "needs_translation": false
+          "summary": "A dos semanas del cierre del mercado, el Deportivo busca reforzar su banda derecha con Jean-Luc Dompé, Cyriaque Irié o Sofiane Boufal, tras haber sumado ya siete fichajes.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Jean-Luc Dompé, Cyriaque Irié and Sofiane Boufal, Deportivo alternatives to reinforce the right wing",
-          "summary": "Deportivo has two weeks left to close the transfer market and accelerates before the pieces that still have to be added to round out a template that already has seven additions.",
+          "title": "Jean-Luc Dompé, Cyriaque Irié, and Sofiane Boufal, Deportivo targets to bolster the right wing",
+          "summary": "With two weeks left in the transfer window, Deportivo is targeting Jean-Luc Dompé, Cyriaque Irié, and Sofiane Boufal to strengthen its right wing after completing seven signings.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Jean-Luc Dompé, Cyriaque Irié et Sofiane Boufal, alternatives au Deportivo pour renforcer l'aile droite",
-          "summary": "Le Deportivo a deux semaines pour clôturer le marché des transferts et accélère face aux pièces qu'il lui reste à ajouter pour compléter un effectif qui compte déjà sept recrues.",
+          "title": "Jean-Luc Dompé, Cyriaque Irié et Sofiane Boufal, pistes du Deportivo pour renforcer l'aile droite",
+          "summary": "À deux semaines de la fin du mercato, le Deportivo cible Jean-Luc Dompé, Cyriaque Irié et Sofiane Boufal pour renforcer son aile droite, après avoir déjà enregistré sept recrues.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "جان لوك دومبي، سيرياك إيريه وسفيان بوفال، بدائل ديبورتيفو لتعزيز الجناح اليميني",
-          "summary": "لدى ديبورتيفو أسبوعين متبقيين لإغلاق سوق الانتقالات ويتسارع قبل القطع التي لا يزال يتعين إضافتها لإكمال قالب يحتوي بالفعل على سبع إضافات.",
+          "title": "جان لوك دومبي وسيرياك إريي وسفيان بوفال خيارات ديبورتيفو لتعزيز الجناح الأيمن",
+          "summary": "يسعى ديبورتيفو لتعزيز الجناح الأيمن قبل أسبوعين من إغلاق سوق الانتقالات، واضعاً جان لوك دومبي وسيرياك إريي وسفيان بوفال ضمن خياراته بعد إبرام سبع صفقات.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/jean-luc-dompe-cyriaque-irie-133553421?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -1852,7 +1981,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/jean-luc-dompe-cyriaque-irie-133553421?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "fef914b6542b",
@@ -1911,26 +2045,27 @@
       "i18n": {
         "es": {
           "title": "El Mallorca anuncia que su partido ante el Granada está 'OK'",
-          "summary": "El Real Mallorca ha informado este viernes en un comunicado que el partido correspondiente a la segunda jornada de la Liga Hypermotion que debe jugar el lunes ante el Granada CF en el Nuevo Estadio Los Cármenes , \"se mantiene, tal y como estaba previsto\".",
-          "needs_translation": false
+          "summary": "El Real Mallorca confirmó que su partido de la segunda jornada de Liga Hypermotion frente al Granada CF se disputará el lunes en el Nuevo Estadio Los Cármenes como estaba previsto.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mallorca announce that their match against Granada is' OK '",
-          "summary": "Real Mallorca said in a statement on Friday that the match corresponding to the second round of the Hypermotion League to be played on Monday against Granada CF at the New Los Cármenes Stadium \"remains as planned\".",
+          "title": "Mallorca announces match against Granada is 'OK'",
+          "summary": "Real Mallorca confirmed that their Liga Hypermotion matchday 2 fixture against Granada CF will be played as scheduled on Monday at the Nuevo Estadio Los Cármenes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Majorque annonce que son match contre Grenade est « OK »",
-          "summary": "Le Real Mallorca a informé vendredi dans un communiqué que le match correspondant à la deuxième journée de la Liga Hypermotion qui doit se jouer lundi contre le Granada CF au Nouveau Stade Los Cármenes , « est maintenu, comme prévu ».",
+          "title": "Le Mallorca annonce que son match face au Granada est « OK »",
+          "summary": "Le Real Mallorca a confirmé que sa rencontre de la 2e journée de Liga Hypermotion face au Granada CF aura bien lieu lundi au Nuevo Estadio Los Cármenes comme prévu.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مايوركا تعلن أن مباراتها ضد غرناطة \"على ما يرام\"",
-          "summary": "وقال ريال مايوركا في بيان يوم الجمعة إن المباراة المقابلة للجولة الثانية من دوري هايبرموشن التي ستقام يوم الاثنين ضد غرناطة في ملعب لوس كارمينيس الجديد \"لا تزال كما هو مخطط لها\".",
+          "title": "مايوركا يؤكد إقامة مباراته أمام غرناطة في موعدها",
+          "summary": "أعلن نادي ريال مايوركا أن مباراته أمام غرناطة ضمن الجولة الثانية من دوري الدرجة الثانية الإسباني ستُقام كما هو مقرر يوم الإثنين على ملعب نويفو لوس كارمينيس.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/liga-segunda-division/20260821/1004218360/mallorca-anuncia-partido-granada-ok.html",
@@ -1952,7 +2087,12 @@
           "url": "https://www.mundodeportivo.com/futbol/liga-segunda-division/20260821/1004218360/mallorca-anuncia-partido-granada-ok.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2056fab10336",
@@ -1961,26 +2101,27 @@
       "i18n": {
         "es": {
           "title": "Gil Marín aclara que Julián no se mueve del Atlético y pide a la afición que le ayude",
-          "summary": "El Atlético de Madrid acomete el último tramo del mercado de fichajes de este verano, de cara a la recién iniciada temporada 26/27. Lo hace una certeza en el caso de Julián Álvarez.",
-          "needs_translation": false
+          "summary": "Gil Marín confirmó que Julián Álvarez continuará en el Atlético de Madrid y pidió el apoyo de la afición para el delantero de cara a la nueva temporada.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Gil Marín clarifies that Julian does not move from Atletico and asks the fans to help him",
-          "summary": "Atlético de Madrid is embarking on the last leg of this summer's transfer market, ahead of the newly launched 26/27 season. This is a certainty in the case of Julián Álvarez.",
+          "title": "Gil Marín clarifies that Julián is not leaving Atlético and asks fans for support",
+          "summary": "Gil Marín confirmed that Julián Álvarez will stay at Atlético de Madrid and called on the fans to support the forward for the upcoming season.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Gil Marín précise que Julián ne bouge pas de l'Atlético et demande aux supporters de l'aider",
-          "summary": "L'Atlético de Madrid entame la dernière partie du marché des transferts cet été, dans la perspective de la nouvelle saison 26/27. C'est une certitude dans le cas de Julián Álvarez.",
+          "title": "Gil Marín précise que Julián ne quittera pas l'Atlético et demande le soutien des supporters",
+          "summary": "Gil Marín a confirmé que Julián Álvarez restera à l'Atlético de Madrid et a sollicité le soutien des supporters pour l'attaquant pour la saison à venir.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يوضح جيل مارين أن جوليان لا ينتقل من أتلتيكو ويطلب من المشجعين مساعدته",
-          "summary": "يشرع أتلتيكو مدريد في المرحلة الأخيرة من سوق الانتقالات هذا الصيف، قبل موسم 26/27 الذي تم إطلاقه حديثًا. هذا أمر مؤكد في حالة جوليان ألفاريز.",
+          "title": "خيل مارين يؤكد بقاء جوليان في أتلتيكو مدريد ويطلب دعم الجماهير",
+          "summary": "أكد خيل مارين استمرار جوليان ألفاريز في صفوف أتلتيكو مدريد خلال سوق الانتقالات، داعياً الجماهير إلى تقديم الدعم الكامل للمهاجم في الموسم الجديد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260821/1004218358/gil-marin-aclara-julian-no-mueve-atletico-pide-aficion-le-ayude-buscan-dividirnos.html",
@@ -2002,7 +2143,12 @@
           "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260821/1004218358/gil-marin-aclara-julian-no-mueve-atletico-pide-aficion-le-ayude-buscan-dividirnos.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0cbdfb4904d9",
@@ -2052,7 +2198,12 @@
           "url": "https://www.mundodeportivo.com/futbol/20260821/1004218355/toni-kroos-sorprende-favorito-balon-oro-mi-numero.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9d43114307d1",
@@ -2061,26 +2212,27 @@
       "i18n": {
         "fr": {
           "title": "Mercato : le PSG réclame 70M€ pour Ibrahim Mbaye, Liverpool bloque sur le prix",
-          "summary": "Tension maximale dans les dernières heures du mercato entre le Paris Saint-Germain et Liverpool.",
-          "needs_translation": false
+          "summary": "Le Paris Saint-Germain réclame 70 millions d'euros pour céder Ibrahim Mbaye. Liverpool refuse d'aligner ce montant, provoquant de fortes tensions entre les deux clubs en fin de Mercato.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mercato: PSG claims €70M for Ibrahim Mbaye, Liverpool blocks on the price",
-          "summary": "Maximum tension in the last hours of the transfer window between Paris Saint-Germain and Liverpool.",
+          "title": "Mercato: PSG demand €70M for Ibrahim Mbaye, Liverpool stall over price",
+          "summary": "Paris Saint-Germain are demanding €70 million for Ibrahim Mbaye. Liverpool consider the valuation too high, creating tension between the clubs in the final hours of the Mercato.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Mercado: el PSG reclama 70millones de € por Ibrahim Mbaye, Liverpool bloquea el precio",
-          "summary": "Tensión máxima en las últimas horas del mercado entre el Paris Saint-Germain y el Liverpool.",
+          "title": "Mercato: el PSG exige 70M€ por Ibrahim Mbaye, Liverpool frena ante el precio",
+          "summary": "El Paris Saint-Germain solicita 70 millones de euros por el traspaso de Ibrahim Mbaye. Liverpool considera excesivo el precio, lo que genera tensión entre ambos clubes en el cierre del Mercato.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ميركاتو: باريس سان جيرمان تطالب بمبلغ 70 مليونيورو لإبراهيم مباي، ليفربول يحجب السعر",
-          "summary": "أقصى توتر في الساعات الأخيرة من فترة الانتقالات بين باريس سان جيرمان وليفربول.",
+          "title": "سوق الانتقالات: باريس سان جيرمان يطلب 70 مليون يورو للتخلي عن إبراهيم مباي وليفربول يعترض على السعر",
+          "summary": "يطالب باريس سان جيرمان بمبلغ 70 مليون يورو للموافقة على رحيل إبراهيم مباي، بينما يعترض ليفربول على التقييم المالي، مما يثير توتراً كبيراً بين الناديين في الساعات الأخيرة من سوق الانتقالات.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football/mercato-le-psg-reclame-70me-pour-ibrahim-mbaye-liverpool-bloque-sur-le-prix/",
@@ -2102,7 +2254,12 @@
           "url": "https://africatopsports.com/football/mercato-le-psg-reclame-70me-pour-ibrahim-mbaye-liverpool-bloque-sur-le-prix/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "dae69e2f973f",
@@ -2171,44 +2328,57 @@
       "summary": "Al Nassr lance sa saison de championnat sur la pelouse d'Al Riyadh. Cristiano Ronaldo, à 976 buts, commence la rencontre parmi les remplaçants.",
       "i18n": {
         "fr": {
-          "title": "Al Riyadh – Al Nassr : Ronaldo débute sur le banc pour la reprise",
-          "summary": "Al Nassr lance sa saison de championnat chez Al Riyadh. Cristiano Ronaldo, à 976 buts en carrière, commence la rencontre parmi les remplaçants.",
+          "title": "Saudi Pro League : Al-Nassr balaie Al-Riyadh avec Ronaldo et João Félix",
+          "summary": "Al-Nassr a largement dominé Al-Riyadh sur le score de 4-0 grâce notamment à des réalisations de Cristiano Ronaldo et João Félix.",
           "body": [
-            "Le capitaine portugais, 41 ans, pourrait entrer en cours de match. Chacune de ses apparitions compte désormais : il reste 24 buts avant le cap historique des 1000.",
-            "Suivez le compteur en direct sur To1000 — chaque but est crédité dès validation."
+            "Remplaçant au coup d'envoi dans un onze comptant Kingsley Coman et Sadio Mané, Cristiano Ronaldo a participé au festival offensif après son entrée en jeu. Cette victoire permet au club de prolonger son sans-faute en championnat et d'étirer à six rencontres sa série d'invincibilité face à Al-Riyadh."
           ],
-          "format": "deep",
-          "engine": "redaction"
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Al Riyadh vs Al Nassr: Ronaldo starts on the bench for the league opener",
-          "summary": "Al Nassr open their league season away at Al Riyadh. Cristiano Ronaldo, on 976 career goals, starts the match among the substitutes.",
+          "title": "Saudi Pro League: Al-Nassr cruise past Al-Riyadh with Ronaldo and Félix",
+          "summary": "Al-Nassr cruised to a 4-0 victory over Al-Riyadh, powered by goals from Cristiano Ronaldo and João Félix.",
           "body": [
-            "The 41-year-old Portuguese captain could come on during the game. Every appearance matters now: 24 goals remain before the historic 1,000 mark.",
-            "Follow the live counter on To1000 — every goal is credited as soon as it is confirmed."
+            "Starting on the bench while Kingsley Coman and Sadio Mané featured in the lineup, Cristiano Ronaldo added to the rout after coming on. The win preserves Al-Nassr's perfect start to the league campaign and stretches their unbeaten head-to-head run against Al-Riyadh to six matches."
           ],
-          "format": "deep",
-          "engine": "redaction"
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Al Riyadh – Al Nassr: Ronaldo comienza en el banquillo en el estreno liguero",
-          "summary": "Al Nassr abre su temporada de liga en campo del Al Riyadh. Cristiano Ronaldo, con 976 goles en su carrera, comienza el partido entre los suplentes.",
+          "title": "Saudi Pro League: Al-Nassr arrolla a Al-Riyadh con Ronaldo y João Félix",
+          "summary": "Al-Nassr se impuso con autoridad por 4-0 a Al-Riyadh gracias a los tantos de Cristiano Ronaldo y João Félix.",
           "body": [
-            "El capitán portugués, de 41 años, podría entrar durante el encuentro. Cada aparición cuenta: quedan 24 goles para la histórica cifra de 1000.",
-            "Sigue el contador en directo en To1000 — cada gol se acredita en cuanto se confirma."
+            "Suplente al inicio en un once con Kingsley Coman y Sadio Mané, Cristiano Ronaldo aportó su diana a la goleada tras ingresar de recambio. El triunfo sostiene el paso perfecto del equipo en el torneo y alarga a seis duelos su racha invicta frente a Al-Riyadh."
           ],
-          "format": "deep",
-          "engine": "redaction"
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "الرياض ضد النصر: رونالدو يبدأ على مقاعد البدلاء في افتتاح الموسم",
-          "summary": "النصر يفتتح موسمه في الدوري على ملعب الرياض. كريستيانو رونالدو، برصيد 976 هدفاً في مسيرته، يبدأ المباراة ضمن البدلاء.",
+          "title": "دوري روشن: النصر يكتسح الرياض برباعية رونالدو وجواو فيليكس",
+          "summary": "حقق النصر فوزاً كبيراً على الرياض برباعية نظيفة، حملت توقيع الثنائي البرتغالي كريستيانو رونالدو وجواو فيليكس.",
           "body": [
-            "القائد البرتغالي، 41 عاماً، قد يشارك خلال اللقاء. كل ظهور له بات مهماً: تبقى 24 هدفاً قبل حاجز الألف التاريخي.",
-            "تابعوا العداد مباشرة على To1000 — كل هدف يُحتسب فور تأكيده."
+            "بدأ كريستيانو رونالدو المواجهة على مقاعد البدلاء بينما شارك كينغسلي كومان وساديو ماني أساسيين، قبل أن يسجل بعد نزوله. وبهذا الفوز واصل النصر انطلاقته المثالية في الدوري معززاً سجله الخالي من الهزائم أمام الرياض إلى ست مباريات متتالية."
           ],
-          "format": "deep",
-          "engine": "redaction"
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
+        }
+      },
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-21T19:39:23+00:00"
         }
       }
     }
