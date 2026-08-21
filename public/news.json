@@ -17,26 +17,27 @@
       "i18n": {
         "en": {
           "title": "Tzolis shines on Premier League debut - Arsenal v Coventry player ratings",
-          "summary": "How Arsenal and Coventry's players rated following their Premier League match.",
-          "needs_translation": false
+          "summary": "Player ratings following the Premier League match between Arsenal and Coventry, highlighted by the debut performance of Tzolis.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Tzolis brille lors de ses débuts en Premier League - Notes des joueurs d'Arsenal vs Coventry",
-          "summary": "Comment les joueurs d'Arsenal et de Coventry se sont classés après leur match de Premier League.",
+          "title": "Tzolis brille pour ses débuts en Premier League - Notes des joueurs d'Arsenal - Coventry",
+          "summary": "Notes et évaluations des joueurs d'Arsenal et de Coventry à l'issue de leur match de Premier League, marqué par les débuts de Tzolis.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Tzolis brilla en su debut en la Premier League - Clasificaciones de jugadores Arsenal v Coventry",
-          "summary": "Cómo calificaron los jugadores del Arsenal y el Coventry después de su partido de la Premier League.",
+          "title": "Tzolis brilla en su debut en Premier League - Puntuaciones de los jugadores del Arsenal - Coventry",
+          "summary": "Calificaciones de los jugadores de Arsenal y Coventry tras su partido de Premier League, donde destacó el debut de Tzolis.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تسوليس يتألق في أول ظهور له في الدوري الإنجليزي الممتاز - أرسنال ضد تصنيفات لاعبي كوفنتري",
-          "summary": "كيف صنف لاعبو آرسنال وكوفنتري بعد مباراتهم في الدوري الممتاز.",
+          "title": "تزوليس يتألق في ظهوره الأول في الدوري الإنجليزي الممتاز - تقييمات لاعبي مباراة أرسنال وكوفنتري",
+          "summary": "تقييم أداء لاعبي أرسنال وكوفنتري عقب مباراتهما في الدوري الإنجليزي الممتاز، والتي شهدت تألق تزوليس في أول ظهور له.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/crl7g4e4pdno?at_medium=RSS&at_campaign=rss",
@@ -64,7 +65,12 @@
           "url": "https://www.sportschau.de/fussball/premier-league/gegen-coventry-meister-arsenal-schon-wieder-in-der-spur,spielbericht-arsenal-coventry-100.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f5f13389d0c1",
@@ -179,32 +185,33 @@
       "i18n": {
         "de": {
           "title": "Havertz eröffnet: Arsenal lässt Aufsteiger Coventry keine Chance",
-          "summary": "Der amtierende Meister FC Arsenal startet erfolgreich in die neue Premier-League-Saison. Gegen den chancenlosen Aufsteiger Coventry City dominieren die Gunners nach Belieben, Kai Havertz erzielt das erste Tor der neuen Spielzeit.",
-          "needs_translation": false
+          "summary": "Der FC Arsenal ist mit einem souveränen Sieg gegen Aufsteiger Coventry City in die Premier-League-Saison gestartet. Kai Havertz erzielte dabei das erste Tor der Spielzeit.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Havertz opens: Arsenal leaves no chance for Coventry promotion",
-          "summary": "The reigning champion FC Arsenal is successfully starting the new Premier League season. Against the hopeless climber Coventry City, the Gunners dominate at will, Kai Havertz scoring the first goal of the new season.",
+          "title": "Havertz opens the scoring: Arsenal leave promoted Coventry no chance",
+          "summary": "Arsenal started their Premier-League campaign with a commanding win over newly promoted Coventry City. Kai Havertz scored the first goal of the new season.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Havertz a ouvert : Arsenal ne laisse aucune chance à Coventry",
-          "summary": "Le champion en titre FC Arsenal entame avec succès la nouvelle saison de Premier League. Contre Coventry City, les Gunners dominent à volonté, Kai Havertz marque le premier but de la nouvelle saison.",
+          "title": "Havertz ouvre le score : Arsenal ne laisse aucune chance au promu Coventry",
+          "summary": "Arsenal a idéalement lancé sa saison de Premier-League en s'imposant largement face au promu Coventry City. Kai Havertz a inscrit le premier but du championnat.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Havertz abre: el Arsenal no deja ninguna posibilidad al recién ascendido Coventry",
-          "summary": "El actual campeón FC Arsenal comienza con éxito la nueva temporada de la Premier League. Contra el recién ascendido Coventry City, los Gunners dominan a voluntad, Kai Havertz marca el primer gol de la nueva temporada.",
+          "title": "Havertz abre el marcador: Arsenal no da opciones al recién ascendido Coventry",
+          "summary": "El Arsenal inició con paso firme la nueva temporada de la Premier-League tras dominar al recién ascendido Coventry City. Kai Havertz anotó el primer tanto del curso.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هافرتز يفتتح: أرسنال لا يترك أي فرصة لتعزيز كوفنتري",
-          "summary": "يبدأ البطل الحائز على جائزة الأرسنال موسم الدوري الممتاز الجديد بنجاح. ضد المتسلق اليائس كوفنتري سيتي، يهيمن المدفعون حسب الرغبة، ويسجل كاي هافرتز الهدف الأول في الموسم الجديد.",
+          "title": "هافيرتز يفتتح التسجيل: أرسنال لا يترك أي فرصة للصاعد كوفنتري",
+          "summary": "استهل أرسنال مشواره في الدوري الإنجليزي الممتاز بفوز عريض ومستحق على الصاعد حديثاً كوفنتري سيتي، حيث سجل كاي هافيرتز أول أهداف الموسم الجديد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/arsenal-gegen-coventry-2026-premier-league-5213270/spielbericht#omrss",
@@ -226,7 +233,12 @@
           "url": "https://www.kicker.de/arsenal-gegen-coventry-2026-premier-league-5213270/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "144254cacb4d",
@@ -400,7 +412,17 @@
           "url": "https://www.lefigaro.fr/sports/football/pas-de-titres-pas-d-ambition-le-virage-sud-s-en-prend-frontalement-a-mccourt-20260821"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-21T21:37:48+00:00"
+        }
+      }
     },
     {
       "id": "d404d1effe9f",
@@ -459,26 +481,27 @@
       "i18n": {
         "fr": {
           "title": "Porté notamment par un doublé de Gouiri, l'OM débute idéalement le Championnat par une large victoire contre Strasbourg",
-          "summary": "Accroché à la pause, Marseille a ensuite pris le dessus sur Strasbourg, avec notamment un doublé d'Amine Gouiri (4-0). Avec cette victoire lors du premier match de la saison 2026-2027, l'OM prend provisoirement la tête du classement.",
-          "needs_translation": false
+          "summary": "Pour l'ouverture de la saison 2026-2027, Marseille s'est largement imposé 4-0 face à Strasbourg grâce notamment à un doublé d'Amine Gouiri, prenant provisoirement la tête du classement.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Driven in particular by a double from Gouiri, OM ideally starts the Championship with a big victory against Strasbourg",
-          "summary": "Holding on to the break, Marseille then took over Strasbourg, with a double from Amine Gouiri (4-0). With this victory in the first game of the 2026-2027 season, OM temporarily takes the lead in the ranking.",
+          "title": "Led by a Gouiri brace, Marseille kick off the season in ideal fashion with a big win over Strasbourg",
+          "summary": "Marseille claimed a 4-0 victory over Strasbourg in their 2026-2027 season opener, led by an Amine Gouiri brace to move provisionally top of the table.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Liderado en particular por un doblete de Gouiri, el OM comienza idealmente el Campeonato con una gran victoria contra Estrasburgo",
-          "summary": "Aferrado al descanso, Marsella superó a Estrasburgo, con un doblete de Amine Gouiri (4-0). Con esta victoria en el primer partido de la temporada 2026-2027, el OM se pone provisionalmente a la cabeza de la clasificación.",
+          "title": "Liderado por un doblete de Gouiri, el Marseille inicia la liga de forma ideal con una amplia victoria ante el Strasbourg",
+          "summary": "El Marseille se impuso 4-0 al Strasbourg en la primera jornada de la temporada 2026-2027 gracias a un doblete de Amine Gouiri, colocándose provisionalmente líder de la tabla.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مدفوعة على وجه الخصوص بمضاعفة من Gouiri، تبدأ OM بشكل مثالي البطولة بفوز كبير على ستراسبورغ",
-          "summary": "تمسك مارسيليا بالاستراحة، ثم استولى على ستراسبورغ، مع ضعف من أمين قويري (4-0). مع هذا الانتصار في المباراة الأولى من موسم 2026-2027، يأخذ أوم زمام المبادرة مؤقتًا في الترتيب.",
+          "title": "بفضل ثنائية غويري، مارسيليا يستهل الدوري بفوز عريض على ستراسبورغ",
+          "summary": "تغلب مارسيليا على ستراسبورغ بنتيجة 4-0 في افتتاح موسم 2026-2027 بفضل ثنائية لأمين غويري، ليعتلي صدارة الترتيب مؤقتاً.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Porte-notamment-par-un-double-de-gouri-l-om-debute-idealement-le-championnat-par-une-large-victoire-contre-strasbourg/1712666#at_medium=RSS_feeds",
@@ -500,7 +523,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Porte-notamment-par-un-double-de-gouri-l-om-debute-idealement-le-championnat-par-une-large-victoire-contre-strasbourg/1712666#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "37fb7fe01fc1",
@@ -509,26 +537,27 @@
       "i18n": {
         "es": {
           "title": "FC Barcelona - Brighton: las imágenes del Trofeo Joan Gamper",
-          "summary": "El Barça superó a un meritorio Brighton, que hizo lo que pudo para contener la fuerte presión del equipo de Pere Romeu, con Patri Guijarro y Graham Hansen en plan estelar.",
-          "needs_translation": false
+          "summary": "El FC Barcelona de Pere Romeu superó al Brighton en el Trofeo Joan Gamper, guiado por destacadas actuaciones de Patri Guijarro y Graham Hansen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "FC Barcelona - Brighton: the images of the Joan Gamper Trophy",
-          "summary": "Barça beat a deserving Brighton, who did what he could to contain the strong pressure from Pere Romeu's team, with Patri Pebble and Graham Hansen on a stellar plan.",
+          "title": "FC Barcelona vs Brighton: images from the Trofeo Joan Gamper",
+          "summary": "Pere Romeu's FC Barcelona defeated Brighton in the Trofeo Joan Gamper, led by standout performances from Patri Guijarro and Graham Hansen.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "FC Barcelone - Brighton : les images du Trophée Joan Gamper",
-          "summary": "Le Barça a dépassé un Brighton méritant, qui a fait de son mieux pour contenir la forte pression de l'équipe de Pere Romeu, avec Patri Guijarro et Graham Hansen sur un plan stellaire.",
+          "title": "FC Barcelona - Brighton : les images du Trofeo Joan Gamper",
+          "summary": "Le FC Barcelona de Pere Romeu a dominé Brighton lors du Trofeo Joan Gamper, notamment grâce aux performances de Patri Guijarro et Graham Hansen.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "برشلونة - برايتون: صور كأس جوان غامبر",
-          "summary": "فاز برشلونة على برايتون المستحق، الذي فعل ما في وسعه لاحتواء الضغط القوي من فريق بير روميو، مع باتري بيبل وغراهام هانسن على خطة ممتازة.",
+          "title": "برشلونة ضد برايتون: صور كأس جوان غامبر",
+          "summary": "فاز فريق سيدات برشلونة بقيادة المدرب بيري روميو على برايتون في كأس جوان غامبر، بعد تألق لافت من باتري غيخارو وغراهام هانسن.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/femenino/20260821/1004218377/fc-barcelona-brighton-imagenes-trofeo-joan-gamper.html",
@@ -550,7 +579,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/femenino/20260821/1004218377/fc-barcelona-brighton-imagenes-trofeo-joan-gamper.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "78382ae7fe9a",
@@ -559,32 +593,33 @@
       "i18n": {
         "de": {
           "title": "Eine gute Halbzeit genügt: Deutschland nimmt Halbfinal-Hürde Tschechien problemlos",
-          "summary": "Erfolgreicher Auftakt in den Supercup 2026! Die deutschen Basketballer trotzen im Halbfinale einem brandheißen Richard Balint und besiegen Tschechien nach starker zweiter Hälfte am Ende klar (115:82).",
-          "needs_translation": false
+          "summary": "Die deutsche Basketball-Nationalmannschaft hat Tschechien im Halbfinale des Supercup 2026 nach einer dominanten zweiten Hälfte deutlich mit 115:82 geschlagen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "A good half-time is enough: Germany easily takes the Czech Republic's semi-final hurdle",
-          "summary": "Successful start to the Supercup 2026! The German basketball players defy a hot Richard Balint in the semi-finals and clearly defeat the Czech Republic in the end after a strong second half (115:82).",
+          "title": "One good half is enough: Germany breezes past Czechia in semi-final",
+          "summary": "Germany's basketball team defeated Czechia 115-82 in the Supercup 2026 semi-finals, securing a decisive victory thanks to a commanding second-half performance.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Une bonne mi-temps suffit : l'Allemagne franchit sans problème l'obstacle des demi-finales de la République tchèque",
-          "summary": "Coup d'envoi réussi de la Supercoupe 2026 ! Les basketteurs allemands défient Richard Balint en demi-finale et battent clairement la République tchèque après une deuxième mi-temps solide à la fin (115:82).",
+          "title": "Une bonne mi-temps suffit : l'Allemagne passe l'obstacle tchèque sans problème en demi-finale",
+          "summary": "L'Allemagne a largement dominé la République tchèque (115-82) en demi-finale du Supercup 2026 grâce à une excellente deuxième mi-temps, malgré la belle prestation de Richard Balint.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Un buen descanso es suficiente: Alemania supera fácilmente el obstáculo de las semifinales de la República Checa",
-          "summary": "¡Éxito en el inicio de la Supercopa 2026! Los jugadores de baloncesto alemanes desafían a un ardiente Richard Balint en las semifinales y derrotan claramente a la República Checa al final después de una fuerte segunda mitad (115:82).",
+          "title": "Una buena mitad es suficiente: Alemania supera el obstáculo de Chequia en semifinales sin problemas",
+          "summary": "Alemania venció con claridad a la República Checa por 115-82 en las semifinales de la Supercup 2026 tras una gran segunda mitad, frenando la destacada actuación de Richard Balint.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الشوط الأول الجيد يكفي: ألمانيا تتغلب بسهولة على عقبة نصف النهائي في جمهورية التشيك",
-          "summary": "بداية ناجحة لكأس السوبر 2026! يتحدى لاعبو كرة السلة الألمان ريتشارد بالينت الساخن في نصف النهائي ويهزمون جمهورية التشيك بوضوح في النهاية بعد شوط ثان قوي (115:82).",
+          "title": "شوط واحد جيد يكفي: ألمانيا تتجاوز عقبة التشيك في نصف النهائي بسهولة",
+          "summary": "تأهل منتخب ألمانيا لكرة السلة إلى نهائي كأس السوبر 2026 بعد فوزه العريض على التشيك بنتيجة 115-82، بفضل تفوقه الكبير في الشوط الثاني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/deutschland-gegen-tschechien-2026-basketball-supercup-5202540/spielbericht#omrss",
@@ -606,7 +641,12 @@
           "url": "https://www.kicker.de/deutschland-gegen-tschechien-2026-basketball-supercup-5202540/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "cdd3e0bd7887",
@@ -715,26 +755,27 @@
       "i18n": {
         "es": {
           "title": "Buena noticia en River: Driussi recibió el alta",
-          "summary": "El regreso del Gordo se da antes de una semana clave para el CARP.",
-          "needs_translation": false
+          "summary": "Driussi recibió el alta médica y concreta su regreso a River antes de una semana clave para el CARP.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Good news in River: Driussi was discharged",
-          "summary": "The Gordo's return comes before a key week for the CARP.",
+          "title": "Good news at River: Driussi receives medical clearance",
+          "summary": "Driussi has been cleared by medical staff and returns to River ahead of a crucial week for CARP.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Bonne nouvelle à River : Driussi a été libéré",
-          "summary": "Le retour du Gordo intervient avant une semaine clé pour le CARP.",
+          "title": "Bonne nouvelle à River : Driussi reçoit le feu vert médical",
+          "summary": "Driussi a reçu le feu vert médical et fait son retour avec River avant une semaine décisive pour le CARP.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أخبار جيدة في النهر: تم تسريح دريوسي",
-          "summary": "وتأتي عودة جوردو قبل أسبوع رئيسي لسمك الشبوط.",
+          "title": "أخبار سارة في ريفر بليت: دريوسي يحصل على التصريح الطبي",
+          "summary": "حصل المهاجم دريوسي على التصريح الطبي ليعود إلى صفوف ريفر بليت قبل أسبوع حاسم للفريق.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-plate-sebastian-driussi_0_uTz6tWP9wD.html",
@@ -756,7 +797,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-plate-sebastian-driussi_0_uTz6tWP9wD.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "141df2412b9a",
@@ -765,26 +811,27 @@
       "i18n": {
         "es": {
           "title": "La Ley Anti Tiktoker que anunció Boca para los partidos en la Bombonera",
-          "summary": "El club presentó su nuevo reglamento para los abonados y sorprendió con una particular disposición que ya genera repercusiones entre los hinchas.",
-          "needs_translation": false
+          "summary": "Boca presentó un nuevo reglamento para abonados en La Bombonera que incluye restricciones a la grabación y creación de contenido para redes sociales durante los partidos.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The Anti-Tiktoker Law announced by Boca for the matches in the Bombonera",
-          "summary": "The club presented its new regulations for subscribers and surprised with a particular disposition that already generates repercussions among fans.",
+          "title": "The Ley Anti Tiktoker announced by Boca for matches at La Bombonera",
+          "summary": "Boca has introduced a new regulation for season ticket holders at La Bombonera, imposing restrictions on recording social media content during matches.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La Loi Anti-Tiktoker qui a annoncé Boca pour les matchs à la Bombonera",
-          "summary": "Le club a présenté son nouveau règlement pour les abonnés et a surpris avec une disposition particulière qui génère déjà des répercussions parmi les fans.",
+          "title": "La Ley Anti Tiktoker annoncée par Boca pour les matches à La Bombonera",
+          "summary": "Boca a dévoilé un nouveau règlement pour les abonnés de La Bombonera, imposant des restrictions sur la création de contenu pour les réseaux sociaux pendant les matches.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "قانون مكافحة التوكتوك الذي أعلنت عنه شركة بوكا لمباريات البومبونيرا",
-          "summary": "قدم النادي لوائحه الجديدة للمشتركين وفوجئ بتصرف معين يولد بالفعل تداعيات بين المشجعين.",
+          "title": "قانون مكافحة التيك توكرز الذي أعلنه بوكا لمباريات لا بومبونيرا",
+          "summary": "أصدر نادي بوكا جونيورز لائحة تنظيمية جديدة للمشتركين في ملعب لا بومبونيرا، تتضمن قيوداً على تصوير مقاطع الفيديو لمنصات التواصل الاجتماعي أثناء المباريات.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/ley-anti-tiktoker-boca-partidos-bombonera_0_9FqMBJpoPr.html",
@@ -806,7 +853,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/ley-anti-tiktoker-boca-partidos-bombonera_0_9FqMBJpoPr.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4d7cd1f75047",
@@ -815,32 +867,33 @@
       "i18n": {
         "de": {
           "title": "Wann findet das Supercup-Finale mit Deutschland morgen statt?",
-          "summary": "Infolge des ungefährdeten Sieges gegen Kroatien steht die deutsche Basketball-Nationalmannschaft erneut im Finale des Supercups. Zum Endspiel kommt es bereits am Samstag.",
-          "needs_translation": false
+          "summary": "Nach einem souveränen Sieg gegen Kroatien steht die deutsche Basketball-Nationalmannschaft erneut im Finale des Supercups. Das Endspiel findet am Samstag statt.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "When will the Supercup final with Germany take place tomorrow?",
-          "summary": "As a result of the safe victory against Croatia, the German national basketball team is once again in the final of the Supercup. The final will take place on Saturday.",
+          "title": "When does the Supercup final with Germany take place tomorrow?",
+          "summary": "Following a comfortable victory over Croatia, the German national basketball team has reached the Supercup final, scheduled to take place this Saturday.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Quand aura lieu la finale de la Supercoupe avec l'Allemagne demain ?",
-          "summary": "Suite à la victoire sans danger contre la Croatie, l'équipe nationale allemande de basket-ball est à nouveau en finale de la Supercoupe. La finale aura lieu dès samedi.",
+          "title": "Quand a lieu la finale de la Supercup avec l'Allemagne demain ?",
+          "summary": "Après sa nette victoire contre la Croatie, l'équipe d'Allemagne de basket-ball s'est qualifiée pour la finale de la Supercup, qui se déroulera ce samedi.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "¿Cuándo tendrá lugar la final de la Supercopa con Alemania mañana?",
-          "summary": "Como resultado de la victoria sobre Croacia, la selección alemana de baloncesto vuelve a estar en la final de la Supercopa. La final tendrá lugar el sábado.",
+          "title": "¿Cuándo se juega mañana la final de la Supercup con Alemania?",
+          "summary": "Tras imponerse con claridad a Croacia, la selección de baloncesto de Alemania disputará este sábado la final de la Supercup.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "متى سيقام نهائي كأس السوبر مع ألمانيا غدًا ؟",
-          "summary": "نتيجة للفوز الآمن على كرواتيا، وصل المنتخب الوطني الألماني لكرة السلة مرة أخرى إلى نهائي كأس السوبر. وستقام المباراة النهائية يوم السبت.",
+          "title": "متى يُقام نهائي كأس السوبر بمشاركة ألمانيا غداً؟",
+          "summary": "تأهل المنتخب الألماني لكرة السلة إلى نهائي كأس السوبر بعد فوز مريح على كرواتيا، وستُقام المباراة النهائية يوم السبت.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/wann-findet-das-supercup-finale-mit-deutschland-morgen-statt-1245642/artikel#omrss",
@@ -862,7 +915,12 @@
           "url": "https://www.kicker.de/wann-findet-das-supercup-finale-mit-deutschland-morgen-statt-1245642/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0f26400d5270",
@@ -918,7 +976,12 @@
           "url": "https://www.kicker.de/dhb-pokal-essen-schockt-bundesliga-absteiger-leipzig-1245603/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6f41023abeb1",
@@ -926,27 +989,28 @@
       "summary": "En trouvant la faille à la 46e minute de Marseille - Strasbourg, ce vendredi soir en ouverture de Championnat, Amine Gouiri a inscrit le premier but de la saison 2026-2027.",
       "i18n": {
         "fr": {
-          "title": "Retrouvez en vidéo la reprise tout en toucher d'Amine Gouiri, premier buteur de la saison de Ligue 1 lors d'OM-Strasbourg",
-          "summary": "En trouvant la faille à la 46e minute de Marseille - Strasbourg, ce vendredi soir en ouverture de Championnat, Amine Gouiri a inscrit le premier but de la saison 2026-2027.",
-          "needs_translation": false
+          "title": "La reprise d'Amine Gouiri, premier buteur de la saison de Ligue 1 lors d'OM-Strasbourg",
+          "summary": "Amine Gouiri a inscrit le premier but de la saison de Ligue 1 à la 46e minute du match d'ouverture entre Marseille et Strasbourg.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Find on video the recovery while touching of Amine Gouiri, first goalscorer of the Ligue 1 season during OM-Strasbourg",
-          "summary": "By finding the flaw in the 46th minute of Marseille - Strasbourg, this Friday evening at the opening of the Championship, Amine Gouiri scored the first goal of the 2026-2027 season.",
+          "title": "Amine Gouiri's deft finish, first goalscorer of the Ligue 1 season in OM-Strasbourg",
+          "summary": "Amine Gouiri scored the first goal of the Ligue 1 season in the 46th minute of the opening match between Marseille and Strasbourg.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Vea en vídeo la recuperación mientras toca a Amine Gouiri, primer goleador de la temporada de la Ligue 1 en el OM-Estrasburgo",
-          "summary": "Al encontrar la falla en el minuto 46 de Marsella - Estrasburgo, este viernes por la noche en la apertura del Campeonato, Amine Gouiri anotó el primer gol de la temporada 2026-2027.",
+          "title": "El remate sutil de Amine Gouiri, primer goleador de la temporada de Ligue 1 en el OM-Strasbourg",
+          "summary": "Amine Gouiri anotó el primer gol de la temporada de Ligue 1 en el minuto 46 del partido inaugural entre Marseille y Strasbourg.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "اعثر على مقطع فيديو للتعافي أثناء لمس أمين غويري، أول هداف لموسم دوري الدرجة الأولى خلال OM - Strasbourg",
-          "summary": "من خلال العثور على الخلل في الدقيقة 46 من مرسيليا - ستراسبورغ، مساء الجمعة في افتتاح البطولة، سجل أمين قويري الهدف الأول لموسم 2026-2027.",
+          "title": "شاهد هدف أمين غويري، أول هداف في موسم الدوري الفرنسي خلال مواجهة مارسيليا وستراسبورغ",
+          "summary": "سجل أمين غويري أول أهداف موسم الدوري الفرنسي في الدقيقة 46 من المباراة الافتتاحية بين مارسيليا وستراسبورغ.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Retrouvez-en-video-la-reprise-tout-en-toucher-d-amine-gouiri-premier-buteur-de-la-saison-de-ligue-1-lors-d-om-strasbourg/1712655#at_medium=RSS_feeds",
@@ -968,7 +1032,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Retrouvez-en-video-la-reprise-tout-en-toucher-d-amine-gouiri-premier-buteur-de-la-saison-de-ligue-1-lors-d-om-strasbourg/1712655#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5d21b858f531",
@@ -1076,27 +1145,28 @@
       "summary": "El Corinthians está en los cuartos de final de la Copa Libertadores después de imponerse por la mínima a Rosario Central (1-0) en una eliminatoria igualadísima de principio a fin. Memphis Depay, que volvía tras una turbulenta renovación fue protagonista.",
       "i18n": {
         "es": {
-          "title": "Memphis deja a todos atónitos con lo que hace en plena entrevista: ¡menos de 10 segundos duró!",
-          "summary": "El Corinthians está en los cuartos de final de la Copa Libertadores después de imponerse por la mínima a Rosario Central (1-0) en una eliminatoria igualadísima de principio a fin. Memphis Depay, que volvía tras una turbulenta renovación fue protagonista.",
-          "needs_translation": false
+          "title": "Memphis sorprende en una entrevista tras la clasificación de Corinthians",
+          "summary": "Corinthians avanzó a los cuartos de final de la Copa Libertadores tras vencer 1-0 a Rosario Central. Memphis Depay fue protagonista en su regreso al equipo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Memphis leaves everyone stunned with what he does in the middle of the interview: less than 10 seconds lasted!",
-          "summary": "Corinthians are in the quarterfinals of the Copa Libertadores after beating Rosario Central (1-0) by the minimum in a very equal tie from start to finish. Memphis Depay, which was returning after a turbulent renovation, was the protagonist.",
+          "title": "Memphis surprises in interview following Corinthians qualification",
+          "summary": "Corinthians reached the Copa Libertadores quarter-finals after beating Rosario Central 1-0. Memphis Depay took center stage in his return to the team.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Memphis laisse tout le monde stupéfait par ce qu'il fait en plein entretien : moins de 10 secondes ont duré !",
-          "summary": "Les Corinthians sont en quarts de finale de la Copa Libertadores après s'être imposés au minimum à Rosario Central (1-0) dans une élimination très égale du début à la fin. Memphis Depay, qui revenait après une rénovation turbulente, était le protagoniste.",
+          "title": "Memphis surprend lors d'une interview express après la qualification de Corinthians",
+          "summary": "Corinthians s'est qualifié pour les quarts de finale de la Copa Libertadores en battant Rosario Central 1-0. Memphis Depay était au centre de l'attention pour son retour.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يترك ممفيس الجميع مذهولين بما يفعله في منتصف المقابلة: أقل من 10 ثوانٍ استمرت!",
-          "summary": "كورنثيانز في ربع نهائي كأس ليبرتادوريس بعد التغلب على روزاريو سنترال (1-0) بالحد الأدنى في تعادل متساو جدا من البداية إلى النهاية. كان ممفيس ديباي، الذي كان يعود بعد تجديد مضطرب، هو بطل الرواية.",
+          "title": "ممفيس يثير الانتباه في مقابلة مقتضبة بعد تأهل كورينثيانز",
+          "summary": "تأهل كورينثيانز إلى ربع نهائي كوبا ليبرتادوريس بعد فوزه على روزاريو سنترال بهدف دون رد. وشهدت المباراة عودة ممفيس ديباي إلى المشاركة مع الفريق.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/internacional/20260821/1004218413/excule-memphis-depay-deja-todos-atonitos-plena-entrevista-10-segundos-duro.html",
@@ -1118,7 +1188,12 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20260821/1004218413/excule-memphis-depay-deja-todos-atonitos-plena-entrevista-10-segundos-duro.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "bceb532c2e4c",
@@ -1289,26 +1364,27 @@
       "i18n": {
         "es": {
           "title": "Ya es definitivo: Antonio Casas ficha por el Sporting, por lo que se enfrentará al Córdoba CF",
-          "summary": "El futbolista cordobés Antonio Casas ya es nuevo jugador del Sporting de Gijón. Así lo ha anunciado la radio de su nuevo club a través de las redes sociales.",
-          "needs_translation": false
+          "summary": "Antonio Casas es oficialmente nuevo jugador del Sporting de Gijón tras anunciarse su fichaje, por lo que se enfrentará al Córdoba CF.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "It's final: Antonio Casas signs for Sporting, so he will face Córdoba CF",
-          "summary": "The Cordovan footballer Antonio Casas is already a new player for Sporting de Gijón. This has been announced by the radio of his new club through social networks.",
+          "title": "It's official: Antonio Casas signs for Sporting and will face Córdoba CF",
+          "summary": "Antonio Casas has officially joined Sporting de Gijón following an announcement by the club, setting him up to face Córdoba CF.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "C'est désormais définitif : Antonio Casas signe au Sporting, il affrontera donc le Córdoba CF",
-          "summary": "Le footballeur cordouan Antonio Casas est déjà un nouveau joueur du Sporting de Gijón. C'est ce qu'a annoncé la radio de son nouveau club via les réseaux sociaux.",
+          "title": "C'est officiel : Antonio Casas s'engage avec le Sporting et affrontera le Córdoba CF",
+          "summary": "Antonio Casas a officiellement rejoint le Sporting de Gijón, un transfert officialisé par le club asturien qui verra le joueur affronter le Córdoba CF.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "إنه نهائي: أنطونيو كاساس يوقع على سبورتنج، لذلك سيواجه نادي قرطبة",
-          "summary": "لاعب كرة القدم كوردوفان أنطونيو كاساس هو بالفعل لاعب جديد لسبورتنج دي خيخون. وقد أعلنت ذلك إذاعة ناديه الجديد عبر الشبكات الاجتماعية.",
+          "title": "رسميًا: أنتونيو كاساس ينضم إلى سبورتينغ خيخون وسيواجه نادي قرطبة",
+          "summary": "أعلن نادي سبورتينغ خيخون رسميًا تعاقده مع اللاعب أنتونيو كاساس، ليضرب موعدًا لمواجهة نادي قرطبة في منافسات الدوري.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/definitivo-antonio-casas-ficha-sporting-133556436?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -1330,7 +1406,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/definitivo-antonio-casas-ficha-sporting-133556436?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f0fa8ccde7e4",
@@ -1401,7 +1482,17 @@
           "url": "https://fr.hespress.com/485777-mondial-2030-lespagne-maintient-la-pression-pour-accueillir-la-finale.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-21T21:37:50+00:00"
+        }
+      }
     },
     {
       "id": "83cce2bff1f2",
@@ -1410,32 +1501,33 @@
       "i18n": {
         "de": {
           "title": "Dortmund empfängt Bayern im Supercup: Kannst du das Memory lösen?",
-          "summary": "Die Bayern gastieren am Samstag in Dortmund. Es geht um den ersten Titel der Saison 2026/27, den Franz Beckenbauer Supercup.",
-          "needs_translation": false
+          "summary": "Bayern gastiert am Samstag in Dortmund. Beide Teams spielen um den ersten Titel der Saison 2026/27, den Franz Beckenbauer Supercup.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Dortmund receives Bayern in the Supercup: Can you solve the memory?",
-          "summary": "Bayern will be making a guest appearance in Dortmund on Saturday. It's about the first title of the 2026/27 season, the Franz Beckenbauer Supercup.",
+          "title": "Dortmund host Bayern in the Supercup: Can you solve the memory game?",
+          "summary": "Bayern visit Dortmund on Saturday to compete for the first trophy of the 2026/27 season, the Franz Beckenbauer Supercup.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Dortmund reçoit le Bayern dans la Supercoupe : pouvez-vous résoudre la mémoire ?",
-          "summary": "Le Bayern se produira samedi à Dortmund. Il s'agit du premier titre de la saison 2026/27, la Franz Beckenbauer Supercup.",
+          "title": "Dortmund reçoit Bayern en Supercup : peux-tu résoudre le memory ?",
+          "summary": "Bayern se déplace samedi à Dortmund pour disputer le premier titre de la saison 2026/27, le Franz Beckenbauer Supercup.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Dortmund recibe al Bayern en la Supercopa: ¿puedes resolver la memoria?",
-          "summary": "El Bayern visitará Dortmund el sábado. Se trata del primer título de la temporada 2026/27, la Supercopa Franz Beckenbauer.",
+          "title": "Dortmund recibe al Bayern en la Supercup: ¿puedes resolver el memory?",
+          "summary": "Bayern visita este sábado a Dortmund para disputar el primer título de la temporada 2026/27, la Franz Beckenbauer Supercup.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "دورتموند يستقبل بايرن في كأس السوبر: هل يمكنك حل الذاكرة ؟",
-          "summary": "سيظهر بايرن كضيف في دورتموند يوم السبت. يتعلق الأمر باللقب الأول لموسم 2026/27، كأس السوبر الفرنسي فرانز بيكنباور.",
+          "title": "دورتموند يستضيف بايرن في كأس السوبر: هل يمكنك حل لعبة الذاكرة؟",
+          "summary": "يحل بايرن ضيفاً على دورتموند يوم السبت للمنافسة على أول ألقاب موسم 2026/27 في كأس السوبر فرانز بيكنباور.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/dortmund-empfaengt-bayern-im-supercup-kannst-du-das-memory-loesen-1243763/artikel#omrss",
@@ -1457,7 +1549,12 @@
           "url": "https://www.kicker.de/dortmund-empfaengt-bayern-im-supercup-kannst-du-das-memory-loesen-1243763/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a06e2a3deab7",
@@ -1466,32 +1563,33 @@
       "i18n": {
         "de": {
           "title": "Kracher-Freistoß von Bühl eröffnet: Bayern dominiert das Auftaktspiel",
-          "summary": "Im Auftaktspiel der Frauen-Bundesliga sorgten die Frauen des FC Bayern München an der alten Försterei schnell für klare Verhältnisse. Die Highlights der Partie gibt es hier.",
-          "needs_translation": false
+          "summary": "Im Auftaktspiel der Frauen-Bundesliga sorgte der FC Bayern München an der Försterei nach einem Freistoßtreffer von Bühl früh für klare Verhältnisse.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Crashing free kick from Bühl opens: Bavaria dominates the opening game",
-          "summary": "In the opening match of the Women's Bundesliga, the women of FC Bayern Munich quickly ensured clear conditions at the old forestery. The highlights of the game can be found here.",
+          "title": "Stunning Bühl free kick opens scoring: Bayern München dominate opener",
+          "summary": "In the Frauen-Bundesliga opening match at the Försterei, FC Bayern München quickly took control following an opening free-kick goal by Bühl.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Coup franc Kracher de Bühl ouvert : le Bayern domine le match d'ouverture",
-          "summary": "Lors du match d'ouverture de la Bundesliga féminine, les femmes du FC Bayern Munich ont rapidement assuré des conditions claires à l'ancienne garde forestière. Les points forts de la partie se trouvent ici.",
+          "title": "Un coup franc puissant de Bühl pour ouvrir le score : Bayern München domine le match d'ouverture",
+          "summary": "Lors du match d'ouverture de la Frauen-Bundesliga à la Försterei, l'équipe féminine du FC Bayern München a rapidement pris l'ascendant après l'ouverture du score sur coup franc de Bühl.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Comienza el tiro libre de Bühl: el Bayern domina el partido inaugural",
-          "summary": "En el partido inaugural de la Bundesliga femenina, las mujeres del FC Bayern München establecieron rápidamente unas condiciones claras en la antigua silvicultura. Los aspectos más destacados del partido se pueden encontrar aquí.",
+          "title": "Golazo de falta de Bühl para abrir el marcador: Bayern München domina el partido inaugural",
+          "summary": "En el partido inaugural de la Frauen-Bundesliga disputado en la Försterei, el FC Bayern München femenino impuso su dominio tras adelantarse con un tanto de falta de Bühl.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "فتح ركلة حرة من بول: بافاريا تهيمن على المباراة الافتتاحية",
-          "summary": "في المباراة الافتتاحية للدوري الألماني للسيدات، سرعان ما ضمنت نساء بايرن ميونيخ ظروفًا واضحة في الغابة القديمة. يمكن العثور على أبرز معالم اللعبة هنا.",
+          "title": "ركلة حرة رائعة من بوهل تفتتح التسجيل: بايرن ميونخ يهيمن على المباراة الافتتاحية",
+          "summary": "فرضت سيدات بايرن ميونخ سيطرتهن في افتتاحية الدوري الألماني للسيدات، بعدما ح حسمن اللقاء سريعاً إثر هدف مبكر سجلته بوهل من ركلة حرة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/kracher-freistoss-von-buehl-eroeffnet-bayern-dominiert-das-auftaktspiel-1245622/video#omrss",
@@ -1513,7 +1611,12 @@
           "url": "https://www.kicker.de/kracher-freistoss-von-buehl-eroeffnet-bayern-dominiert-das-auftaktspiel-1245622/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "51e00fa57101",
@@ -1522,32 +1625,33 @@
       "i18n": {
         "de": {
           "title": "Aussetzer von Danneberg: Deutschland schenkt Spanien den Sieg",
-          "summary": "Gegen Spanien kassierte Deutschland die erste Niederlage bei der Hockey-WM 2026. Am Ende setzte es trotz Führung eine 1:2-Pleite.",
-          "needs_translation": false
+          "summary": "Deutschland hat bei der Hockey-WM 2026 seine erste Niederlage kassiert. Trotz Führung unterlag das Team Spanien mit 1:2.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Danneberg misses: Germany gives Spain victory",
-          "summary": "Germany conceded its first defeat at the 2026 World Hockey Championships against Spain. In the end, it was a 1: 2 defeat despite the lead.",
+          "title": "Danneberg lapse: Germany gifts victory to Spain",
+          "summary": "Germany suffered their first defeat at the 2026 Hockey World Cup, losing 1-2 to Spain despite having initially taken the lead.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Échec de Danneberg : l'Allemagne donne la victoire à l'Espagne",
-          "summary": "Contre l'Espagne, l'Allemagne a subi sa première défaite lors de la Coupe du monde de hockey 2026. En fin de compte, il a fait faillite 1: 2 malgré le leadership.",
+          "title": "Erreur de Danneberg : l'Allemagne offre la victoire à l'Espagne",
+          "summary": "L'Allemagne a concédé sa première défaite à la Coupe du monde de hockey 2026 face à l'Espagne (1-2), malgré l'ouverture du score.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Falta de Danneberg: Alemania da la victoria a España",
-          "summary": "Contra España, Alemania sufrió su primera derrota en el Mundial de Hockey de 2026. Al final, a pesar del liderazgo, puso una derrota de 1:2.",
+          "title": "Fallo de Danneberg: Alemania regala la victoria a España",
+          "summary": "Alemania encajó su primera derrota en el Mundial de Hockey 2026 tras caer 1-2 ante España, a pesar de haberse adelantado en el marcador.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "دانبيرغ يخطئ: ألمانيا تمنح إسبانيا النصر",
-          "summary": "اعترفت ألمانيا بأول هزيمة لها في بطولة العالم للهوكي 2026 ضد إسبانيا. في النهاية، كانت هزيمة 1: 2 على الرغم من الصدارة.",
+          "title": "هفوة من دانيبيرغ: ألمانيا تهدي الفوز لإسبانيا",
+          "summary": "تلقى المنتخب الألماني هزيمته الأولى في كأس العالم للهوكي 2026 بالخسارة أمام إسبانيا بنتيجة 1-2، رغم تقدمه في البداية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/aussetzer-von-danneberg-deutschland-schenkt-spanien-den-sieg-1245621/video#omrss",
@@ -1569,7 +1673,12 @@
           "url": "https://www.kicker.de/aussetzer-von-danneberg-deutschland-schenkt-spanien-den-sieg-1245621/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "faf5592db0cf",
@@ -1577,27 +1686,48 @@
       "summary": "En parachevant le succès d'Al-Nassr contre Al-Riyadh (4-0) ce vendredi en 2e journée de la Saudi Pro League, Cristiano Ronaldo a inscrit un but pour la vingt-cinquième saison consécutive. Il dépasse ainsi le Suédois Zlatan Ibrahimovic.",
       "i18n": {
         "fr": {
-          "title": "Cristiano Ronaldo buteur avec Al-Nassr, marque pour la vingt-cinquième saison consécutive",
-          "summary": "En parachevant le succès d'Al-Nassr contre Al-Riyadh (4-0) ce vendredi en 2e journée de la Saudi Pro League, Cristiano Ronaldo a inscrit un but pour la vingt-cinquième saison consécutive. Il dépasse ainsi le Suédois Zlatan Ibrahimovic.",
-          "needs_translation": false
+          "title": "Cristiano Ronaldo marque pour une 25e saison consécutive",
+          "summary": "Cristiano Ronaldo a trouvé le chemin des filets pour la 25e saison d'affilée lors de la large victoire d'Al-Nassr contre Al-Riyadh.",
+          "body": [
+            "En clôturant le score lors de la 2e journée de Saudi Pro League, l'attaquant portugais de 41 ans a effacé des tablettes Zlatan Ibrahimovic, resté à 24 exercices consécutifs avec au moins un but. La série record du quintuple Ballon d'Or avait débuté lors de la saison 2002-2003 sous les couleurs du Sporting Portugal.",
+            "Cette réalisation, venue sceller le succès 4-0 des siens, porte son total en carrière à 977 buts. Dans ce qui devrait être sa dernière saison professionnelle, Cristiano Ronaldo se rapproche encore un peu plus du cap mythique des 1 000 buts."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Cristiano Ronaldo goalscorer with Al-Nassr, mark for the twenty-fifth consecutive season",
-          "summary": "By completing Al-Nassr's success against Al-Riyadh (4-0) on Friday in the second day of the Saudi Pro League, Cristiano Ronaldo scored a goal for the twenty-fifth consecutive season. He thus overtook the Swede Zlatan Ibrahimovic.",
+          "title": "Cristiano Ronaldo scores in 25th consecutive season",
+          "summary": "Cristiano Ronaldo found the back of the net for a 25th straight season during Al-Nassr's commanding win over Al-Riyadh.",
+          "body": [
+            "Capping off his side's victory on matchday 2 of the Saudi Pro League, the 41-year-old Portuguese forward broke the record held by Zlatan Ibrahimovic, who scored in 24 consecutive campaigns. The five-time Ballon d'Or winner began his scoring run back in the 2002-2003 season with Sporting Portugal.",
+            "His goal to seal the 4-0 win took his career tally to 977 goals. In what is widely expected to be his final professional campaign, Cristiano Ronaldo edges closer to the 1,000-goal milestone."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Cristiano Ronaldo goleador con Al-Nassr, marca por vigésima quinta temporada consecutiva",
-          "summary": "Al completar el triunfo de Al-Nassr contra Al-Riyadh (4-0) este viernes en la segunda jornada de la Saudi Pro League, Cristiano Ronaldo marcó un gol por vigésima quinta temporada consecutiva. Así, supera al sueco Zlatan Ibrahimovic.",
+          "title": "Cristiano Ronaldo marca por 25.ª temporada consecutiva",
+          "summary": "Cristiano Ronaldo vio portería por 25.ª temporada consecutiva en la contundente victoria de Al-Nassr frente a Al-Riyadh.",
+          "body": [
+            "Al cerrar la cuenta en la segunda jornada de la Saudi Pro League, el astro portugués de 41 años superó el registro de Zlatan Ibrahimovic, quien encadenó 24 cursos anotando. La histórica racha del cinco veces ganador del Ballon d'Or arrancó en la temporada 2002-2003 con la camiseta del Sporting Portugal.",
+            "Este tanto, que selló el 4-0 definitivo de su equipo, eleva su cuenta profesional a 977 goles. En la que apunta a ser su última campaña en activo, Cristiano Ronaldo se sitúa a un paso más de alcanzar los 1.000 goles."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "هداف كريستيانو رونالدو مع النصر، بمناسبة الموسم الخامس والعشرين على التوالي",
-          "summary": "من خلال استكمال نجاح النصر أمام الرياض (4-0) يوم الجمعة في اليوم الثاني من الدوري السعودي للمحترفين، سجل كريستيانو رونالدو هدفًا للموسم الخامس والعشرين على التوالي. وهكذا تفوق على السويدي زلاتان إبراهيموفيتش.",
+          "title": "كريستيانو رونالدو يسجل للموسم الـ 25 على التوالي",
+          "summary": "واصل كريستيانو رونالدو كتابة التاريخ بعدما هز الشباك للموسم الخامس والعشرين على التوالي خلال فوز النصر العريض على الرياض.",
+          "body": [
+            "واختتم المهاجم البرتغالي البالغ من العمر 41 عاماً رباعية فريقه في الجولة الثانية من دوري روشن السعودي، ليتجاوز رقم السويدي زلاتان إبراهيموفيتش الذي توقف عند التسجيل في 24 موسماً متتالياً. وكانت السلسلة القياسية للمتوج بالكرة الذهبية خمس مرات قد انطلقت في موسم 2002-2003 بقميص سبورتينغ لشبونة.",
+            "ورفع هذا الهدف، الذي حسم انتصار النصر بنتيجة 4-0، رصيد رونالدو إلى 977 هدفاً في مسيرته الاحترافية. وفي ما يُتوقع أن يكون موسمه الأخير بالملاعب، يقترب خطوة إضافية من بلوغ حاجز الألف هدف."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Cristiano-ronaldo-buteur-avec-al-nassr-marque-pour-la-vingt-cinquieme-saison-consecutive/1712639#at_medium=RSS_feeds",
@@ -1619,7 +1749,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Cristiano-ronaldo-buteur-avec-al-nassr-marque-pour-la-vingt-cinquieme-saison-consecutive/1712639#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 8,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-21T21:37:52+00:00"
+        }
+      }
     },
     {
       "id": "572b7010e9bc",
@@ -1628,26 +1771,27 @@
       "i18n": {
         "es": {
           "title": "El Dépor Abanca le gana 1-2 al Río Ave tras remontar el duelo",
-          "summary": "El Dépor Abanca cerró la pretemporada con un amistoso ante el Río Ave en el estadio de Os Arcos de Vila do Conde en el que acabó imponiéndose 1-2 con dos tantos en los minutos finales.",
-          "needs_translation": false
+          "summary": "El Dépor Abanca cerró su pretemporada con una victoria por 1-2 ante el Río Ave en el estadio de Os Arcos (Vila do Conde), gracias a dos goles en los minutos finales.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Dépor Abanca beats Rio Ave 1-2 after overcoming the duel",
-          "summary": "Dépor Abanca closed the preseason with a friendly against the Ave River at the Os Arcos stadium in Vila do Conde in which they ended up winning 1-2 with two goals in the final minutes.",
+          "title": "Dépor Abanca beat Río Ave 1-2 after a comeback",
+          "summary": "Dépor Abanca closed their pre-season with a 1-2 friendly victory over Río Ave at Os Arcos in Vila do Conde, thanks to two late goals.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le Dépor Abanca gagne 1-2 à la rivière Ave après avoir remonté le duel",
-          "summary": "Le Dépor Abanca a clôturé la pré-saison par un match amical face à la rivière Ave au stade Os Arcos de Vila do Conde où il a fini par s'imposer 1-2 avec deux buts dans les dernières minutes.",
+          "title": "Le Dépor Abanca s'impose 1-2 face au Río Ave après avoir renversé la rencontre",
+          "summary": "Le Dépor Abanca a conclu sa pré-saison par une victoire 1-2 contre le Río Ave à Os Arcos (Vila do Conde), en inscrivant deux buts dans les dernières minutes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ديبور أبانكا يهزم ريو أفي 1-2 بعد التغلب على المبارزة",
-          "summary": "أنهى ديبور أبانكا فترة ما قبل الموسم بمباراة ودية ضد أفي ريفر في ملعب أوس أركوس في فيلا دو كوندي الذي انتهى بالفوز 1-2 مع هدفين في الدقائق الأخيرة.",
+          "title": "ديبور أبانكا يفوز 1-2 على ريو أفي بعد قلب النتيجة",
+          "summary": "اختتمت سيدات ديبور أبانكا الفترة التحضيرية بالفوز ودياً 1-2 على ريو أفي في ملعب أوس أركوس بمدينة فيلا دو كوند، بفضل هدفين في الدقائق الأخيرة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/depor-abanca-le-gana-1-133555700?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -1669,7 +1813,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/depor-abanca-le-gana-1-133555700?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7289ab2f541a",
@@ -1728,26 +1877,27 @@
       "i18n": {
         "es": {
           "title": "Linda Caicedo: \"Esta temporada quiero dar un gran salto\"",
-          "summary": "Linda Caicedo está ante una de las temporadas más importantes de su carrera.",
-          "needs_translation": false
+          "summary": "Linda Caicedo afronta una de las temporadas más importantes de su carrera deportiva con la ambición de dar un gran salto cualitativo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Linda Caicedo: \"This season I want to take a big leap\"",
-          "summary": "Linda Caicedo is facing one of the most important seasons of her career.",
+          "title": "Linda Caicedo: \"This season I want to take a big step forward\"",
+          "summary": "Linda Caicedo faces one of the most important seasons of her career, aiming to take a major step forward.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Linda Caicedo : « Cette saison, je veux faire un grand saut »",
-          "summary": "Linda Caicedo est confrontée à l'une des saisons les plus importantes de sa carrière.",
+          "title": "Linda Caicedo : « Cette saison, je veux franchir un grand cap »",
+          "summary": "Linda Caicedo aborde l'une des saisons les plus importantes de sa carrière, avec l'ambition de franchir un grand cap.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ليندا كايسيدو: \"هذا الموسم أريد أن أقفز قفزة كبيرة\"",
-          "summary": "تواجه ليندا كايسيدو أحد أهم المواسم في حياتها المهنية.",
+          "title": "ليندا كايسيدو: \"أريد تحقيق قفزة كبيرة هذا الموسم\"",
+          "summary": "تخوض ليندا كايسيدو أحد أهم مواسم مسيرتها الكروية، معربة عن طموحها في تحقيق قفزة نوعية وتطوير مستواها بشكل كبير.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260821/1004218386/linda-caicedo-temporada-quiero-dar-gran-salto.html",
@@ -1769,7 +1919,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260821/1004218386/linda-caicedo-temporada-quiero-dar-gran-salto.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a0ef9bc71b05",
@@ -1827,44 +1982,40 @@
       "summary": "La Serie A reprend ce week-end dans un climat morose, plombée par les fiascos répétés de la Nazionale et des clubs transalpins.",
       "i18n": {
         "fr": {
-          "title": "Serie A : reprise sur fond de crise historique pour le football italien",
-          "summary": "La Serie A reprend ce week-end dans un climat morose, plombée par les fiascos répétés de la Nazionale et des clubs transalpins.",
+          "title": "Serie A : la reprise du championnat dans l'ombre d'une crise historique",
+          "summary": "La Serie A reprend ses droits ce week-end après un printemps désastreux marqué par de nouveaux fiascos de la sélection et des clubs italiens.",
           "body": [
-            "Le football italien traverse une période noire après la troisième non-qualification consécutive de la sélection pour la Coupe du monde, éliminée aux tirs au but par la Bosnie (1-1, 1-4 t.a.b.).",
-            "Sur la scène continentale, aucun club transalpin n'a atteint les huitièmes de finale de la Ligue des champions, prolongeant une disette de seize saisons sans trophée dans l'épreuve reine."
+            "Le football transalpin peine à se remettre en question malgré l'élimination de la Nazionale face à la Bosnie en barrages du Mondial (1-1, 1-4 aux t.a.b.), actant sa troisième absence consécutive. En Ligue des champions, aucun représentant italien n'a atteint les huitièmes de finale, prolongeant une disette continentale de seize années."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "en": {
-          "title": "Serie A restarts amid historic crisis for Italian football",
-          "summary": "Serie A kicks off this weekend in a gloomy atmosphere, weighed down by repeated setbacks for the national team and domestic clubs.",
+          "title": "Serie A returns in the shadow of a historic crisis",
+          "summary": "Serie A kicks off this weekend following a disastrous spring that saw Italian clubs and the national team hit rock bottom.",
           "body": [
-            "Italian football faces a deep crisis after the national team missed out on the World Cup for a third consecutive time, falling to Bosnia on penalties (1-1, 1-4 on pens).",
-            "In continental competition, no Italian club reached the Champions League round of 16 this season, extending a 16-year title drought in Europe's top tournament."
+            "Italian football is struggling for answers after the Nazionale fell to Bosnia in the World Cup play-offs (1-1, 1-4 on penalties), sealing a third straight tournament absence. In the Champions League, no Italian side reached the round of 16, stretching a continental title drought to sixteen years."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "es": {
-          "title": "Serie A: regreso en plena crisis histórica para el fútbol italiano",
-          "summary": "La Serie A arranca este fin de semana en un ambiente sombrío, lastrada por los repetidos fracasos de la selección y de sus clubes.",
+          "title": "Serie A: el torneo regresa a la sombra de una crisis histórica",
+          "summary": "La Serie A se reanuda este fin de semana tras una primavera nefasta marcada por los fiascos de la selección y de los clubes italianos.",
           "body": [
-            "El fútbol italiano vive horas bajas tras perderse la Copa del Mundo por tercera edición consecutiva, eliminado en la repesca por Bosnia en los penaltis (1-1, 1-4).",
-            "En Europa, ningún club del país logró meterse en los octavos de final de la Liga de Campeones, alargando una sequía de dieciséis temporadas sin títulos en el torneo continental."
+            "El fútbol transalpino no levanta cabeza tras la eliminación de la Nazionale ante Bosnia en la repesca del Mundial (1-1, 1-4 en la tanda de penaltis), certificando su tercera ausencia consecutiva. En la Liga de Campeones, ningún club italiano alcanzó los octavos de final, extendiendo la sequía continental a dieciséis años."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "ar": {
-          "title": "الدوري الإيطالي ينطلق وسط أزمة تاريخية تعصف بالكرة الإيطالية",
-          "summary": "يستأنف الدوري الإيطالي نشاطه هذا الأسبوع وسط أجواء محبطة، بعد الإخفاقات المتتالية للمنتخب الوطني وأندية البلاد قارياً.",
+          "title": "الدوري الإيطالي ينطلق مجدداً في ظل أزمة تاريخية",
+          "summary": "تستأنف منافسات الدوري الإيطالي نهاية هذا الأسبوع بعد ربيع كارثي شهد نكسات متتالية للمنتخب والأندية الإيطالية.",
           "body": [
-            "تعيش كرة القدم الإيطالية أزمة حادة بعد الغياب عن كأس العالم للمرة الثالثة توالياً إثر الخسارة أمام البوسنة بركلات الترجيح (1-1، 1-4).",
-            "وعلى الصعيد الأوروبي، ودعت جميع الأندية الإيطالية دوري أبطال أوروبا قبل ثمن النهائي، ليتواصل غيابها عن التتويج باللقب القاري للموسم السادس عشر توالياً."
+            "تتواصل أزمة الكرة الإيطالية بعد إقصاء المنتخب أمام البوسنة في الملحق المؤهل إلى كأس العالم (1-1، 1-4 بركلات الترجيح)، ليغيب عن المحفل العالمي للمرة الثالثة توالياً. كما ودعت جميع الأندية الإيطالية مسابقة دوري أبطال أوروبا قبل بلوغ ثمن النهائي، ليمتد صيامها القاري إلى ستة عشر عاماً."
           ],
           "format": "brief",
           "needs_translation": false,
@@ -1890,7 +2041,20 @@
           "url": "https://www.lequipe.fr/Football/Article/Crise-des-resultats-de-la-nazionale-et-des-clubs-italiens-combats-a-la-federation-le-football-transalpin-sans-repere-alors-que-la-nouvelle-saison-de-la-serie-a-demarre/1712589#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-21T21:37:55+00:00"
+        }
+      }
     },
     {
       "id": "7cc857c01e2f",
@@ -1899,32 +2063,33 @@
       "i18n": {
         "de": {
           "title": "Fort will zum BVB - Atletico wird wegen Alvarez wieder deutlich",
-          "summary": "Wer wechselt wohin? Wer ist wo im Gespräch?",
-          "needs_translation": false
+          "summary": "Fort strebt einen Wechsel zu Borussia Dortmund an, während Atletico seine Haltung im Fall Alvarez erneut klarstellt.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Moving on to BVB - Atletico becomes clear again because of Alvarez",
-          "summary": "Who is moving to where? Who is in conversation where?",
+          "title": "Fort wants BVB move - Atletico clarify stance on Alvarez again",
+          "summary": "Fort is keen on joining Borussia Dortmund, while Atletico have reiterated their firm position regarding Alvarez.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Fort will zum BVB - L'Atlético redevient visible à cause d'Alvarez",
-          "summary": "Qui va où ? Qui est où dans la conversation ?",
+          "title": "Fort veut rejoindre le BVB - Atletico réaffirme sa position pour Alvarez",
+          "summary": "Fort souhaite s'engager avec Borussia Dortmund, tandis qu'Atletico a de nouveau clarifié ses intentions concernant Alvarez.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Fort will zum BVB - El Atlético vuelve a ser claro debido a Álvarez",
-          "summary": "¿Quién se muda a dónde? ¿Quién está hablando dónde?",
+          "title": "Fort quiere ir al BVB - Atletico vuelve a ser claro sobre Alvarez",
+          "summary": "Fort desea incorporarse al Borussia Dortmund, al tiempo que Atletico reitera con firmeza su postura sobre Alvarez.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الانتقال إلى BVB - أصبح أتلتيكو واضحًا مرة أخرى بسبب ألفاريز",
-          "summary": "من ينتقل إلى أين ؟ من يتحدث إلى أين ؟",
+          "title": "فورت يرغب في الانتقال إلى بوروسيا دورتموند وأتلتيكو مدريد يوضح موقفه بشأن ألفاريز",
+          "summary": "يبدي فورت رغبته في الانضمام إلى بوروسيا دورتموند، بينما يجدد أتلتيكو مدريد توضيح موقفه الحاسم بشأن ألفاريز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/transferticker-953155/artikel#omrss",
@@ -1946,7 +2111,12 @@
           "url": "https://www.kicker.de/transferticker-953155/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2f5c4f1d8a72",
@@ -2002,7 +2172,12 @@
           "url": "https://www.kicker.de/kroatien-gegen-tuerkei-2026-basketball-supercup-5202541/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "fe5d06a4a028",
@@ -2061,26 +2236,27 @@
       "i18n": {
         "es": {
           "title": "Arsenal - Coventry City, en directo | Premier League",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Premier League que enfrenta al Arsenal contra el Coventry City correspondiente a Jornada 1.",
-          "needs_translation": false
+          "summary": "Arsenal y Coventry City se enfrentan en directo en el partido correspondiente a la primera jornada de la Premier League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Arsenal - Coventry City, live | Premier League",
-          "summary": "Good afternoon and welcome to the live narration of the Premier League football match between Arsenal and Coventry City on Matchday 1.",
+          "title": "Arsenal vs Coventry City Live | Premier League",
+          "summary": "Arsenal face Coventry City live in the opening matchday of the Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Arsenal - Coventry City, en direct | Premier League",
-          "summary": "Bonsoir et bienvenue au récit, en direct, du match de football de Premier League qui oppose Arsenal à Coventry City correspondant à la Journée 1.",
+          "title": "Arsenal - Coventry City en direct | Premier League",
+          "summary": "Arsenal affronte Coventry City en direct à l'occasion de la 1re journée de Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أرسنال - كوفنتري سيتي، مباشر | الدوري الإنجليزي الممتاز",
-          "summary": "مساء الخير ومرحبا بكم في السرد المباشر لمباراة كرة القدم في الدوري الممتاز بين أرسنال وكوفنتري سيتي يوم المباراة 1.",
+          "title": "أرسنال - كوفنتري سيتي، البث المباشر | الدوري الإنجليزي الممتاز",
+          "summary": "يلتقي أرسنال مع كوفنتري سيتي في بث مباشر ضمن منافسات الجولة الأولى من الدوري الإنجليزي الممتاز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260821/1004216757/arsenal-coventry-city-directo-premier-league.html",
@@ -2108,7 +2284,12 @@
           "url": "https://www.mundodeportivo.com/futbol/ligue-1/20260821/1004216751/marsella-strasbourg-directo-ligue-1.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5ffbf6508c15",
@@ -2117,26 +2298,27 @@
       "i18n": {
         "es": {
           "title": "El Milan homenajeará a Baresi con el parche '6 per sempre' en sus camisetas",
-          "summary": "El Milan homenajeará a su histórico capitán Franco Baresi, que falleció el pasado 31 de julio a los 66 años, con un parche conmemorativo con el mensaje \"6 per sempre\" (6 para siempre), que lucirán todos los equipos del club durante la temporada 2026-27. Leer la noticia completa",
-          "needs_translation": false
+          "summary": "El Milan rendirá homenaje a su histórico capitán Franco Baresi incorporando un parche conmemorativo con el lema \"6 per sempre\" en las camisetas de todos sus equipos durante la temporada 2026-27.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Milan will pay tribute to Baresi with the '6 per sempre' patch on their shirts",
-          "summary": "Milan will pay tribute to its historic captain Franco Baresi, who died on July 31 at the age of 66, with a commemorative patch with the message \"6 per sempre\" (6 forever), which all the club's teams will wear during the 2026-27 season. Read the full story",
+          "title": "Milan to honour Baresi with '6 per sempre' patch on their shirts",
+          "summary": "Milan will pay tribute to their legendary captain Franco Baresi by wearing a commemorative \"6 per sempre\" patch on all club shirts throughout the 2026-27 season.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le Milan rendra hommage à Baresi avec le patch '6 per siempre' sur ses maillots",
-          "summary": "Le Milan rendra hommage à son capitaine historique Franco Baresi, décédé le 31 juillet dernier à l'âge de 66 ans, avec un patch commémoratif portant le message « 6 per sempre » (6 pour toujours), que porteront toutes les équipes du club pendant la saison 2026-27. Lire l'article complet",
+          "title": "L'AC Milan rendra hommage à Baresi avec le badge « 6 per sempre » sur ses maillots",
+          "summary": "L'AC Milan rendra hommage à son capitaine historique Franco Baresi en arborant un badge commémoratif « 6 per sempre » sur les maillots de toutes ses équipes durant la saison 2026-2027.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ستشيد ميلانو بباريزي من خلال رقعة \"6 per sempre\" على قمصانهم",
-          "summary": "سيحيي ميلان قائده التاريخي فرانكو باريزي، الذي توفي في 31 يوليو عن عمر يناهز 66 عامًا، برقعة تذكارية تحمل رسالة \"6 لكل sempre\" (6 إلى الأبد)، والتي سترتديها جميع فرق النادي خلال موسم 2026-2027. قراءة القصة كاملة",
+          "title": "ميلان يكرم باريزي بوضع شارة \"6 للأبد\" على قمصانه",
+          "summary": "سيكرم نادي ميلان قائده التاريخي الراحل فرانكو باريزي بوضع شارة تذكارية تحمل عبارة \"6 للأبد\" على قمصان جميع فرق النادي خلال موسم 2026-2027.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/milan-homenajeara-baresi-parche-6-133549723?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -2158,7 +2340,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/milan-homenajeara-baresi-parche-6-133549723?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6e3e4429c811",
@@ -2167,26 +2354,27 @@
       "i18n": {
         "es": {
           "title": "Romeu: \"Vamos a por los cinco títulos\"",
-          "summary": "El entrenador del Barça Femenino, Pere Romeu , aseguró, en su discurso inaugural de la nueva temporada, antes de la disputa del Gamper femenino, en el Estadi Johan Cruyff , que \"este año vamos a por los cinco títulos, comno ha dicho Patri \", en referencia al discurso de la…",
-          "needs_translation": false
+          "summary": "Antes de disputar el Gamper en el Estadi Johan Cruyff, el entrenador del Barça Femenino, Pere Romeu, declaró que el equipo aspira a conquistar los cinco títulos en juego esta temporada.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Romeu: \"Let's go for the five titles\"",
-          "summary": "The coach of Barça Women, Pere Romeu , said, in his inaugural speech of the new season, before the dispute of the women's Gamper, at the Johan Cruyff Stadium, that \"this year we are going for the five titles, as Patri has said\", in reference to the speech of the...",
+          "title": "Romeu: \"We are going for all five titles\"",
+          "summary": "Ahead of the Gamper match at the Estadi Johan Cruyff, Barça Femenino head coach Pere Romeu announced that the team aims to win all five available titles this season.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Romeu : « Allons chercher les cinq titres »",
-          "summary": "L'entraîneur du Barça féminin, Pere Romeu , a assuré, dans son discours d'ouverture de la nouvelle saison, avant le match du Gamper féminin, à l'Estadi Johan Cruyff , que « cette année, nous allons chercher les cinq titres, comme l'a dit Patri », en référence au discours de la…",
+          "title": "Romeu : « Nous visons les cinq titres »",
+          "summary": "Avant le match du Gamper à l'Estadi Johan Cruyff, l'entraîneur du Barça Femenino, Pere Romeu, a affirmé que l'équipe vise à remporter les cinq titres en jeu cette saison.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "روميو: \"دعنا نذهب للألقاب الخمسة\"",
-          "summary": "قال مدرب نادي برشلونة النسائي، بير روميو، في خطابه الافتتاحي للموسم الجديد، قبل نزاع غامبر النسائي، في ملعب يوهان كرويف ، إنه \"هذا العام سنختار الألقاب الخمسة، كما قال باتري \"، في إشارة إلى خطاب...",
+          "title": "روميو: \"سننافس على الألقاب الخمسة\"",
+          "summary": "أكد بيري روميو، مدرب فريق سيدات برشلونة، قبل انطلاق كأس غامبر على ملعب يوهان كرويف، أن فريقه يستهدف التتويج بجميع الألقاب الخمسة الممكنة هذا الموسم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260821/1004218374/romeu-cinco-titulos.html",
@@ -2208,7 +2396,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260821/1004218374/romeu-cinco-titulos.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "redac-alnassr-alriyadh-0821",
@@ -2265,6 +2458,19 @@
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
+        }
+      },
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-21T21:37:58+00:00"
         }
       }
     }
