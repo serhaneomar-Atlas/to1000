@@ -73,26 +73,27 @@
       "i18n": {
         "en": {
           "title": "Swaggering Arsenal want title attack, not defence",
-          "summary": "Arsenal started last season as nearly men but their title win has given them a swagger - as Coventry discovered on the Premier League's opening night.",
-          "needs_translation": false
+          "summary": "Following their title victory last season, Arsenal opened the Premier League campaign with a confident performance against Coventry, showing their intent to actively pursue another championship.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Swaggering Arsenal veut une attaque de titre, pas une défense",
-          "summary": "Arsenal a débuté la saison dernière presque comme des hommes, mais leur victoire au titre leur a donné un coup de fouet - comme Coventry l'a découvert lors de la soirée d'ouverture de la Premier League.",
+          "title": "Un Swaggering Arsenal veut attaquer le titre plutôt que le défendre",
+          "summary": "Couronné champion la saison dernière, Arsenal a lancé sa nouvelle campagne de Premier League avec assurance face à Coventry, affichant son ambition de conquérir à nouveau le trophée.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El fanfarrón Arsenal quiere ataque por el título, no defensa",
-          "summary": "El Arsenal comenzó la temporada pasada casi como hombres, pero su victoria por el título les ha dado una arrogancia, como descubrió el Coventry en la noche de apertura de la Premier League.",
+          "title": "Un Swaggering Arsenal quiere atacar el título en lugar de defenderlo",
+          "summary": "Tras ganar el campeonato la temporada pasada, Arsenal comenzó la Premier League con una actuación dominante frente a Coventry, decidido a revalidar su corona desde el ataque.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "التباهي بآرسنال يريد الهجوم على اللقب، وليس الدفاع",
-          "summary": "بدأ آرسنال الموسم الماضي مع ما يقرب من الرجال ولكن فوزهم باللقب منحهم تبختر - كما اكتشف كوفنتري في ليلة افتتاح الدوري الإنجليزي الممتاز.",
+          "title": "أرسنال الواثق يسعى لمهاجمة اللقب لا مجرد الدفاع عنه",
+          "summary": "استهل أرسنال، حامل اللقب، موسمه في الدوري الإنجليزي الممتاز بأداء قوي أمام كوفنتري في الجولة الافتتاحية، مؤكداً رغبته في المنافسة الهجومية لحصد البطولة مجدداً.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cpw94evj1q7o?at_medium=RSS&at_campaign=rss",
@@ -114,7 +115,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cpw94evj1q7o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c4ac8b3b8aaa",
@@ -458,7 +464,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 2,
+        "quality": 1,
         "source_read": "skipped"
       }
     },
@@ -1124,7 +1130,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 3,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -1186,7 +1192,7 @@
       "source_count": 2,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 0,
         "source_read": "skipped"
       }
     },
@@ -1550,7 +1556,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 2,
+        "quality": 1,
         "source_read": "skipped"
       }
     },
@@ -2047,7 +2053,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 2,
+        "quality": 3,
         "source_read": "skipped"
       }
     },
