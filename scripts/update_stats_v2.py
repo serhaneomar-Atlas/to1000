@@ -233,7 +233,7 @@ def refresh_next_match(stats: dict) -> bool:
             "venue": None,
             "is_cr7_team_home": None,
             "fotmob_url": "",
-            "note": "Saison SPL terminée — prochain match TBD",
+            "note": "Prochain match à confirmer",
         }
         if stats.get("next_match", {}).get("status") == "off_season":
             return False
