@@ -17,26 +17,27 @@
       "i18n": {
         "es": {
           "title": "Racing, la mala racha de visitante más larga de Boca contra los grandes: desde cuándo no gana en el Cilindro",
-          "summary": "El Xeneize visita el domingo a la Academia en Avellaneda por la fecha 6 del Torneo Clausura.",
-          "needs_translation": false
+          "summary": "Boca visita este domingo a Racing en Avellaneda por la fecha 6 del Torneo Clausura, con el desafío de cortar su racha más extensa sin ganar en el Cilindro.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Racing, Boca's longest visiting bad streak against the big boys: since when does he not win in the Cylinder",
-          "summary": "Xeneize visits the Academy in Avellaneda on Sunday for the 6th date of the Closing Tournament.",
+          "title": "Racing, Boca's longest away drought against the big clubs: when they last won at the Cilindro",
+          "summary": "Boca visit Racing in Avellaneda this Sunday for matchday 6 of the Torneo Clausura, aiming to end their longest winless away streak at the Cilindro.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Racing, la plus longue série de visiteurs de Boca contre les grands : depuis quand ne gagne-t-elle pas au Cylindre",
-          "summary": "Le Xeneize rend visite dimanche à l'Académie à Avellaneda pour la date 6 du tournoi de clôture.",
+          "title": "Racing, la pire série de Boca à l'extérieur face aux cadors : depuis quand il ne gagne plus au Cilindro",
+          "summary": "Boca se déplace ce dimanche sur le terrain de Racing à Avellaneda pour la 6e journée du Torneo Clausura, où il tentera de mettre fin à sa disette au Cilindro.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "السباق، أطول سلسلة سيئة يزورها بوكا ضد الأولاد الكبار: منذ متى لم يفز في الأسطوانة",
-          "summary": "يزور Xeneize الأكاديمية في Avellaneda يوم الأحد للتاريخ السادس للبطولة الختامية.",
+          "title": "راسينغ، أطول سلسلة مباريات لبوكا دون فوز خارج ملعبه أمام الكبار: متى انتصر آخر مرة في السيليندرو",
+          "summary": "يحل بوكا جونيورز ضيفاً على راسينغ في أفيلانيدا يوم الأحد ضمن الجولة السادسة من بطولة كلاوسورا، ساعياً لإنهاء أطول سلسلة تعثر له خارج دياره في ملعب سيليندرو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/mala-racha-boca-racing-cortar-clasico_0_BahiLuwomz.html",
@@ -58,7 +59,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/mala-racha-boca-racing-cortar-clasico_0_BahiLuwomz.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e2ca89918cef",
@@ -222,27 +228,48 @@
       "summary": "L’Espagne affiche clairement ses ambitions concernant la finale de la Coupe du monde 2030. Rafael Louzán, président de la Fédération espagnole de football, a affirmé que son pays entendait accueillir le match ultime du tournoi, coorganisé par l’Espagne, le Portugal et le Maroc.",
       "i18n": {
         "fr": {
-          "title": "Mondial 2030 : l’Espagne maintient la pression pour accueillir la finale",
-          "summary": "L’Espagne affiche clairement ses ambitions concernant la finale de la Coupe du monde 2030. Rafael Louzán, président de la Fédération espagnole de football, a affirmé que son pays entendait accueillir le match ultime du tournoi, coorganisé par l’Espagne, le Portugal et le Maroc.",
-          "needs_translation": false
+          "title": "Mondial 2030 : l'Espagne réclame la finale et veut blinder Luis de la Fuente",
+          "summary": "Le président de la Fédération espagnole, Rafael Louzán, exige que la finale du Mondial 2030 se joue en Espagne et négocie la prolongation de Luis de la Fuente.",
+          "body": [
+            "Au micro de Radio Nacional de España, le patron de la RFEF a jugé impensable que le match ultime se dispute ailleurs que sur le sol espagnol. Rafael Louzán appuie sa revendication sur le fait que le duo ibérique avec le Portugal représente selon lui 55 % du poids de l'organisation conjointe avec le Maroc, alors que le choix définitif du stade reste en suspens face aux ambitions marocaines.",
+            "En parallèle, la Fédération a lancé des pourparlers pour étendre le bail du sélectionneur national jusqu'au Mondial 2030. Actuellement sous contrat jusqu'en 2028, Luis de la Fuente est conforté par ses dirigeants après le titre mondial décroché par la Roja en 2026."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "2030 World Cup: Spain keeps up the pressure to host the final",
-          "summary": "Spain is clearly showing its ambitions for the 2030 World Cup final. Rafael Louzán, President of the Spanish Football Federation, affirmed that his country intended to host the final match of the tournament, co-organized by Spain, Portugal and Morocco.",
+          "title": "2030 World Cup: Spain demands final and looks to extend Luis de la Fuente",
+          "summary": "Spanish Football Federation president Rafael Louzán demands that the 2030 World Cup final take place in Spain while opening extension talks with Luis de la Fuente.",
+          "body": [
+            "Speaking on Radio Nacional de España, the RFEF chief insisted it makes no sense for the final to be staged anywhere other than Spain. Rafael Louzán argued that the Iberian partnership with Portugal accounts for 55% of the joint bid with Morocco, as the final venue remains undecided amid strong Moroccan ambitions.",
+            "At the same time, the Federation has started negotiations to extend the national coach's contract through the 2030 tournament. Currently tied to the bench until 2028, Luis de la Fuente has full board backing following La Roja's 2026 World Cup title."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Mundial 2030: España mantiene la presión para albergar la final",
-          "summary": "España muestra claramente sus ambiciones con respecto a la final de la Copa del Mundo 2030. Rafael Louzán, presidente de la Federación Española de Fútbol, afirmó que su país tiene la intención de acoger el último partido del torneo, coorganizado por España, Portugal y Marruecos.",
+          "title": "Mundial 2030: España exige la final y negocia blindar a Luis de la Fuente",
+          "summary": "El presidente de la Federación, Rafael Louzán, reclama que la final del torneo se celebre en suelo español e inicia la renovación de Luis de la Fuente.",
+          "body": [
+            "En declaraciones a Radio Nacional de España, el máximo mandatario de la RFEF consideró que no tiene sentido que el partido decisivo se dispute fuera de España. Rafael Louzán defendió que la alianza ibérica con Portugal representa el 55 % del peso organizativo frente a la candidatura conjunta con Marruecos, mientras la sede definitiva sigue en discusión.",
+            "Paralelamente, la Federación ha iniciado contactos para extender el contrato del seleccionador hasta el Mundial 2030. Actualmente vinculado hasta 2028, De la Fuente cuenta con el respaldo absoluto federativo tras el título mundial conquistado por la Roja en 2026."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "كأس العالم 2030: إسبانيا تواصل الضغط لاستضافة المباراة النهائية",
-          "summary": "تظهر إسبانيا بوضوح طموحاتها لنهائي كأس العالم 2030. أكد رافائيل لوزان، رئيس الاتحاد الإسباني لكرة القدم، أن بلاده تعتزم استضافة المباراة النهائية للبطولة، التي تشارك في تنظيمها إسبانيا والبرتغال والمغرب.",
+          "title": "مونديال 2030: إسبانيا تطالب باحتضان النهائي وتتحرك لتمديد عقد دي لا فوينتي",
+          "summary": "طالب رئيس الاتحاد الإسباني لكرة القدم رافاييل لوزان بحزم بإقامة نهائي كأس العالم 2030 في إسبانيا، كاشفاً عن مفاوضات جارية لتمديد عقد المدرب لويس دي لا فوينتي.",
+          "body": [
+            "وفي تصريحات عبر الإذاعة الوطنية الإسبانية، اعتبر رئيس الاتحاد أنه من غير المنطقي إقامة المباراة النهائية خارج الأراضي الإسبانية. واستند رافاييل لوزان في مطلبه إلى أن الملف الإيبيري المشترك مع البرتغال يمثل 55% من ثقل التنظيم المشترك مع المغرب، في وقت لم يُحسم فيه بعد اختيار الملعب المستضيف للنهائي أمام الطموحات المغربية.",
+            "وبالتوازي مع ذلك، فتح الاتحاد مفاوضات رسمية لتمديد عقد المدير الفني للمنتخب حتى مونديال 2030. ويرتبط المدرب حالياً بعقد يمتد حتى 2028، مدعوماً بثقة مطلقة من إدارته بعد تتويج لاروخا باللقب العالمي عام 2026."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://fr.hespress.com/485777-mondial-2030-lespagne-maintient-la-pression-pour-accueillir-la-finale.html",
@@ -264,7 +291,20 @@
           "url": "https://fr.hespress.com/485777-mondial-2030-lespagne-maintient-la-pression-pour-accueillir-la-finale.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-21T19:56:14+00:00"
+        }
+      }
     },
     {
       "id": "7b797ac26065",
@@ -273,26 +313,27 @@
       "i18n": {
         "fr": {
           "title": "Mercato : Curtis Jones quitte Liverpool et s'engage officiellement avec l'Inter Milan",
-          "summary": "L'Inter Milan a confirmé son visage britannique : après avoir recruté John Stones et Djed Spence cet été, le club lombard a annoncé ce vendredi l'arrivée du milieu de terrain de Liverpool Curtis Jones, contre environ 35 M€ et pour une durée de cinq ans.",
-          "needs_translation": false
+          "summary": "L'Inter Milan a officialisé le transfert du milieu de terrain de Liverpool Curtis Jones. Le joueur s'est engagé pour cinq ans pour un montant d'environ 35 millions d'euros.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mercato: Curtis Jones leaves Liverpool and officially commits to Inter Milan",
-          "summary": "Inter Milan has confirmed its British face: after signing John Stones and Djed Spence this summer, the Lombard club announced on Friday the arrival of Liverpool midfielder Curtis Jones, for around €35m and for a period of five years.",
+          "title": "Transfer Window: Curtis Jones leaves Liverpool and officially signs for Inter Milan",
+          "summary": "Inter Milan have officially signed Liverpool midfielder Curtis Jones for around €35m on a five-year contract.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Mercado: Curtis Jones abandona Liverpool y se compromete oficialmente con el Inter de Milán",
-          "summary": "El Inter de Milán confirmó su imagen británica: tras fichar a John Stones y Djed Spence este verano, el club lombardo anunció este viernes la llegada del centrocampista del Liverpool Curtis Jones, contra unos 35 millones de € y por un periodo de cinco años.",
+          "title": "Mercado: Curtis Jones deja el Liverpool y ficha oficialmente por el Inter Milan",
+          "summary": "El Inter Milan ha anunciado el fichaje del centrocampista del Liverpool Curtis Jones. El futbolista inglés se ha comprometido por cinco temporadas por cerca de 35 millones de euros.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ميركاتو: كورتيس جونز يغادر ليفربول ويلتزم رسميًا بإنتر ميلان",
-          "summary": "أكد إنتر ميلان وجهه البريطاني: بعد تجنيد جون ستونز وجيد سبينس هذا الصيف، أعلن نادي لومبارد هذا الجمعة وصول لاعب خط وسط ليفربول كورتيس جونز، مقابل حوالي 35 مليونيورو ولمدة خمس سنوات.",
+          "title": "سوق الانتقالات: كورتيس جونز يغادر ليفربول وينتقل رسمياً إلى إنتر ميلان",
+          "summary": "أعلن نادي إنتر ميلان رسمياً تعاقده مع لاعب وسط ليفربول كورتيس جونز بعقد يمتد لخمسة مواسم، في صفقة بلغت قيمتها نحو 35 مليون يورو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Mercato-curtis-jones-quitte-liverpool-et-s-engage-officiellement-avec-l-inter-milan/1712642#at_medium=RSS_feeds",
@@ -384,32 +425,33 @@
       "i18n": {
         "de": {
           "title": "Dortmund empfängt Bayern im Supercup: Kannst du das Memory lösen?",
-          "summary": "Die Bayern gastieren am Samstag in Dortmund. Es geht um den ersten Titel der Saison 2026/27, den Franz Beckenbauer Supercup.",
-          "needs_translation": false
+          "summary": "Bayern gastiert am Samstag in Dortmund. Beide Teams spielen um den ersten Titel der Saison 2026/27, den Franz Beckenbauer Supercup.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Dortmund receives Bayern in the Supercup: Can you solve the memory?",
-          "summary": "Bayern will be making a guest appearance in Dortmund on Saturday. It's about the first title of the 2026/27 season, the Franz Beckenbauer Supercup.",
+          "title": "Dortmund host Bayern in the Supercup: Can you solve the memory game?",
+          "summary": "Bayern visit Dortmund on Saturday to compete for the first trophy of the 2026/27 season, the Franz Beckenbauer Supercup.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Dortmund reçoit le Bayern dans la Supercoupe : pouvez-vous résoudre la mémoire ?",
-          "summary": "Le Bayern se produira samedi à Dortmund. Il s'agit du premier titre de la saison 2026/27, la Franz Beckenbauer Supercup.",
+          "title": "Dortmund reçoit Bayern en Supercup : peux-tu résoudre le memory ?",
+          "summary": "Bayern se déplace samedi à Dortmund pour disputer le premier titre de la saison 2026/27, le Franz Beckenbauer Supercup.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Dortmund recibe al Bayern en la Supercopa: ¿puedes resolver la memoria?",
-          "summary": "El Bayern visitará Dortmund el sábado. Se trata del primer título de la temporada 2026/27, la Supercopa Franz Beckenbauer.",
+          "title": "Dortmund recibe al Bayern en la Supercup: ¿puedes resolver el memory?",
+          "summary": "Bayern visita este sábado a Dortmund para disputar el primer título de la temporada 2026/27, la Franz Beckenbauer Supercup.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "دورتموند يستقبل بايرن في كأس السوبر: هل يمكنك حل الذاكرة ؟",
-          "summary": "سيظهر بايرن كضيف في دورتموند يوم السبت. يتعلق الأمر باللقب الأول لموسم 2026/27، كأس السوبر الفرنسي فرانز بيكنباور.",
+          "title": "دورتموند يستضيف بايرن في كأس السوبر: هل يمكنك حل لعبة الذاكرة؟",
+          "summary": "يحل بايرن ضيفاً على دورتموند يوم السبت للمنافسة على أول ألقاب موسم 2026/27 في كأس السوبر فرانز بيكنباور.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/dortmund-empfaengt-bayern-im-supercup-kannst-du-das-memory-loesen-1243763/artikel#omrss",
@@ -431,7 +473,12 @@
           "url": "https://www.kicker.de/dortmund-empfaengt-bayern-im-supercup-kannst-du-das-memory-loesen-1243763/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "caa54a9c81b1",
@@ -440,26 +487,27 @@
       "i18n": {
         "en": {
           "title": "Inter complete £30m deal for Liverpool's Jones",
-          "summary": "Inter Milan sign midfielder Curtis Jones from Liverpool in a deal worth £30m.",
-          "needs_translation": false
+          "summary": "Inter Milan have completed the signing of midfielder Curtis Jones from Liverpool in a deal worth £30m.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Offre inter complète de 30 M £ pour le Jones de Liverpool",
-          "summary": "Le milieu de terrain de l'Inter Milan Curtis Jones de Liverpool signe une offre d'une valeur de 30 M £ .",
+          "title": "L'Inter boucle le transfert de Jones en provenance de Liverpool pour 30 M£",
+          "summary": "L'Inter Milan a finalisé le recrutement du milieu de terrain Curtis Jones en provenance de Liverpool pour un montant de 30 millions de livres sterling.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El Inter completa un acuerdo de 30 millones de £ para el Jones del Liverpool",
-          "summary": "El Inter de Milán ficha al mediocampista Curtis Jones del Liverpool en un acuerdo por valor de £ 30 millones.",
+          "title": "El Inter cierra el fichaje de Jones procedente del Liverpool por 30 millones de libras",
+          "summary": "El Inter Milan ha completado la incorporación del centrocampista Curtis Jones procedente del Liverpool por 30 millones de libras.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "إنتر يكمل صفقة بقيمة 30 مليون £ لجونز",
-          "summary": "إنتر ميلان يوقع مع لاعب خط الوسط كورتيس جونز من في صفقة بقيمة 30 مليون £.",
+          "title": "إنتر يكمل التعاقد مع جونز من ليفربول مقابل 30 مليون جنيه إسترليني",
+          "summary": "أتم نادي إنتر ميلان تعاقده مع لاعب الوسط كورتيس جونز قادماً من ليفربول في صفقة بلغت قيمتها 30 مليون جنيه إسترليني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/czdm9pjd0ero?at_medium=RSS&at_campaign=rss",
@@ -481,7 +529,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/czdm9pjd0ero?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a06e2a3deab7",
@@ -647,7 +700,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 0,
+        "quality": 1,
         "source_read": "skipped"
       }
     },
@@ -753,7 +806,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 2,
+        "quality": 3,
         "source_read": "skipped"
       }
     },
@@ -1037,44 +1090,40 @@
       "summary": "Malgré l'énième fiasco européen de ses clubs et de sa sélection en qualifications de la Coupe du monde, le football italien peine à se remettre en question alors que la Serie A, toujours aussi populaire auprès des tifosi, reprend ce week-end.",
       "i18n": {
         "fr": {
-          "title": "Serie A : reprise sur fond de crise historique pour le football italien",
-          "summary": "La Serie A reprend ce week-end dans un climat morose, plombée par les fiascos répétés de la Nazionale et des clubs transalpins.",
+          "title": "Serie A : la reprise du championnat dans l'ombre d'une crise historique",
+          "summary": "La Serie A reprend ses droits ce week-end après un printemps désastreux marqué par de nouveaux fiascos de la sélection et des clubs italiens.",
           "body": [
-            "Le football italien traverse une période noire après la troisième non-qualification consécutive de la sélection pour la Coupe du monde, éliminée aux tirs au but par la Bosnie (1-1, 1-4 t.a.b.).",
-            "Sur la scène continentale, aucun club transalpin n'a atteint les huitièmes de finale de la Ligue des champions, prolongeant une disette de seize saisons sans trophée dans l'épreuve reine."
+            "Le football transalpin peine à se remettre en question malgré l'élimination de la Nazionale face à la Bosnie en barrages du Mondial (1-1, 1-4 aux t.a.b.), actant sa troisième absence consécutive. En Ligue des champions, aucun représentant italien n'a atteint les huitièmes de finale, prolongeant une disette continentale de seize années."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "en": {
-          "title": "Serie A restarts amid historic crisis for Italian football",
-          "summary": "Serie A kicks off this weekend in a gloomy atmosphere, weighed down by repeated setbacks for the national team and domestic clubs.",
+          "title": "Serie A returns in the shadow of a historic crisis",
+          "summary": "Serie A kicks off this weekend following a disastrous spring that saw Italian clubs and the national team hit rock bottom.",
           "body": [
-            "Italian football faces a deep crisis after the national team missed out on the World Cup for a third consecutive time, falling to Bosnia on penalties (1-1, 1-4 on pens).",
-            "In continental competition, no Italian club reached the Champions League round of 16 this season, extending a 16-year title drought in Europe's top tournament."
+            "Italian football is struggling for answers after the Nazionale fell to Bosnia in the World Cup play-offs (1-1, 1-4 on penalties), sealing a third straight tournament absence. In the Champions League, no Italian side reached the round of 16, stretching a continental title drought to sixteen years."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "es": {
-          "title": "Serie A: regreso en plena crisis histórica para el fútbol italiano",
-          "summary": "La Serie A arranca este fin de semana en un ambiente sombrío, lastrada por los repetidos fracasos de la selección y de sus clubes.",
+          "title": "Serie A: el torneo regresa a la sombra de una crisis histórica",
+          "summary": "La Serie A se reanuda este fin de semana tras una primavera nefasta marcada por los fiascos de la selección y de los clubes italianos.",
           "body": [
-            "El fútbol italiano vive horas bajas tras perderse la Copa del Mundo por tercera edición consecutiva, eliminado en la repesca por Bosnia en los penaltis (1-1, 1-4).",
-            "En Europa, ningún club del país logró meterse en los octavos de final de la Liga de Campeones, alargando una sequía de dieciséis temporadas sin títulos en el torneo continental."
+            "El fútbol transalpino no levanta cabeza tras la eliminación de la Nazionale ante Bosnia en la repesca del Mundial (1-1, 1-4 en la tanda de penaltis), certificando su tercera ausencia consecutiva. En la Liga de Campeones, ningún club italiano alcanzó los octavos de final, extendiendo la sequía continental a dieciséis años."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "ar": {
-          "title": "الدوري الإيطالي ينطلق وسط أزمة تاريخية تعصف بالكرة الإيطالية",
-          "summary": "يستأنف الدوري الإيطالي نشاطه هذا الأسبوع وسط أجواء محبطة، بعد الإخفاقات المتتالية للمنتخب الوطني وأندية البلاد قارياً.",
+          "title": "الدوري الإيطالي ينطلق مجدداً في ظل أزمة تاريخية",
+          "summary": "تستأنف منافسات الدوري الإيطالي نهاية هذا الأسبوع بعد ربيع كارثي شهد نكسات متتالية للمنتخب والأندية الإيطالية.",
           "body": [
-            "تعيش كرة القدم الإيطالية أزمة حادة بعد الغياب عن كأس العالم للمرة الثالثة توالياً إثر الخسارة أمام البوسنة بركلات الترجيح (1-1، 1-4).",
-            "وعلى الصعيد الأوروبي، ودعت جميع الأندية الإيطالية دوري أبطال أوروبا قبل ثمن النهائي، ليتواصل غيابها عن التتويج باللقب القاري للموسم السادس عشر توالياً."
+            "تتواصل أزمة الكرة الإيطالية بعد إقصاء المنتخب أمام البوسنة في الملحق المؤهل إلى كأس العالم (1-1، 1-4 بركلات الترجيح)، ليغيب عن المحفل العالمي للمرة الثالثة توالياً. كما ودعت جميع الأندية الإيطالية مسابقة دوري أبطال أوروبا قبل بلوغ ثمن النهائي، ليمتد صيامها القاري إلى ستة عشر عاماً."
           ],
           "format": "brief",
           "needs_translation": false,
@@ -1103,7 +1152,7 @@
       "source_count": 1,
       "editorial": {
         "publish": true,
-        "quality": 7,
+        "quality": 6,
         "source_read": "full",
         "semantique": {
           "note": 10.0,
@@ -1223,7 +1272,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 3,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -1737,7 +1786,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 0,
+        "quality": 1,
         "source_read": "skipped"
       }
     },
@@ -1841,27 +1890,48 @@
       "summary": "Liverpool have an improved bid of £60m for winger Yankuba Minteh rejected by Brighton but talks between the clubs continue.",
       "i18n": {
         "en": {
-          "title": "Brighton reject Liverpool's new £60m Minteh bid",
-          "summary": "Liverpool have an improved bid of £60m for winger Yankuba Minteh rejected by Brighton but talks between the clubs continue.",
-          "needs_translation": false
+          "title": "Brighton turn down improved £60m Liverpool bid for Yankuba Minteh",
+          "summary": "Brighton have rejected Liverpool's improved £60m offer for Yankuba Minteh as the Seagulls hold out for a fee closer to £70m.",
+          "body": [
+            "Negotiations remain open for the 22-year-old Gambia international after an initial £50m approach was turned down earlier in the week. Liverpool are actively scouring the market for wide attackers, with Paris St-Germain duo Bradley Barcola and Ibrahim Mbaye also on their shortlist.",
+            "Reds boss Andoni Iraola admitted his squad lacks depth on the flanks following the departures of Mohamed Salah, Andy Robertson and Ibrahima Konate. Midfielder Curtis Jones is also on the verge of completing a £30m transfer to Inter Milan."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Brighton rejette la nouvelle offre de Minteh de 60 millions de £ de Liverpool",
-          "summary": "Liverpool a une offre améliorée de 60 millions de £ pour l'ailier Yankuba Minteh rejetée par Brighton, mais les pourparlers entre les clubs se poursuivent.",
+          "title": "Brighton refuse une offre de 60 M£ de Liverpool pour Yankuba Minteh",
+          "summary": "Brighton a repoussé l'offre bonifiée de Liverpool à hauteur de 60 M£ pour Yankuba Minteh, réclamant un montant plus proche des 70 M£.",
+          "body": [
+            "Les discussions se poursuivent pour l'ailier international gambien de 22 ans après le rejet d'une première offre de 50 M£. Liverpool cherche à se renforcer sur les ailes, Bradley Barcola et Ibrahim Mbaye du Paris St-Germain figurant également sur ses tablettes.",
+            "L'entraîneur des Reds Andoni Iraola a admis manquer de profondeur offensive après les départs estivaux de Mohamed Salah, Andy Robertson et Ibrahima Konate. Le milieu Curtis Jones finalise par ailleurs son transfert à l'Inter Milan pour 30 M£."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Brighton rechaza la nueva oferta de Minteh de 60 millones de £ del Liverpool",
-          "summary": "El Liverpool tiene una oferta mejorada de £ 60 millones por el extremo Yankuba Minteh rechazada por el Brighton, pero las conversaciones entre los clubes continúan.",
+          "title": "Brighton rechaza oferta de 60 millones de Liverpool por Minteh",
+          "summary": "Brighton ha desestimado la propuesta de 60 millones de libras de Liverpool por Yankuba Minteh al exigir una cifra cercana a 70 millones.",
+          "body": [
+            "Las negociaciones siguen abiertas por el internacional gambiano de 22 años tras el rechazo de un primer intento de 50 millones. Liverpool rastrea el mercado en busca de extremos, con Bradley Barcola e Ibrahim Mbaye del Paris St-Germain también en cartera.",
+            "El técnico Andoni Iraola reconoció la falta de efectivos en banda tras las salidas de Mohamed Salah, Andy Robertson e Ibrahima Konate. Además, el centrocampista Curtis Jones ultima su traspaso al Inter Milan por 30 millones de libras."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Brighton reject Liverpool's new £ 60m Minteh bid",
-          "summary": "لدى عرض محسن بقيمة 60 مليون £ لجناح يانكوبا مينتيه الذي رفضه ولكن بين الأندية مستمرة.",
+          "title": "برايتون يرفض عرضاً ثانياً من ليفربول لضم مينتيه مقابل 60 مليون إسترليني",
+          "summary": "رفض برايتون عرضاً جديداً من ليفربول بقيمة 60 مليون جنيه إسترليني لضم يانكوبا مينتيه، متمسكاً بالحصول على نحو 70 مليون جنيه.",
+          "body": [
+            "وتتواصل المفاوضات بشأن الجناح الدولي الغامبي البالغ 22 عاماً بعد رفض عرض أولي بقيمة 50 مليون جنيه إسترليني. ويسعى ليفربول لتعزيز أجنحته الهجومية، واضعاً ثنائي باريس سان جيرمان برادلي باركولا وإبراهيم مباي ضمن اهتماماته.",
+            "وأقر المدرب أندوني إيراولا بنقص الخيارات الهجومية على الأطراف إثر رحيل محمد صلاح وأندي روبرتسون وإبراهيما كوناتي، في حين يقترب لاعب الوسط كورتيس جونز من الانتقال إلى إنتر ميلان مقابل 30 مليون جنيه إسترليني."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/ce97ky3vkx4o?at_medium=RSS&at_campaign=rss",
@@ -1883,7 +1953,20 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/ce97ky3vkx4o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-21T19:56:17+00:00"
+        }
+      }
     },
     {
       "id": "0df078c968be",
@@ -1930,7 +2013,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/-il-va-falloir-etre-patient-encore-en-rodage-au-mans-djibril-sidibe-ne-devrait-pas-debuter-la-rencontre-de-ligue-1-contre-brest/1712620#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6523759714b3",
@@ -2157,26 +2245,27 @@
       "i18n": {
         "es": {
           "title": "Kroos sorprende con su favorito para el Balón de Oro: \"Para mí es el número uno\"",
-          "summary": "El Balón de Oro no está nada claro para quien va a ser. Muchos colocan ahora a Rodri con cierta ventaja por ser el líder de España , campeona de un Mundial en el que fue escogido el MVP, pero es cierto que hay muchas dudas de quien lo va a ganar.",
-          "needs_translation": false
+          "summary": "Ante la incertidumbre sobre quién ganará el Balón de Oro, Rodri se posiciona entre los favoritos tras liderar a España y ser elegido MVP del torneo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Kroos surprises with his favorite for the Ballon d 'Or: \"For me he is number one\"",
-          "summary": "The Ballon d 'Or is not at all clear for who it is going to be. Many now place Rodri with a certain advantage for being the leader of Spain , champion of a World Cup in which the MVP was chosen, but it is true that there are many doubts about who will win it.",
+          "title": "Kroos surprises with his favorite for the Balón de Oro: \"For me, he is number one\"",
+          "summary": "Amid uncertainty over the Balón de Oro outcome, Rodri stands among the leading contenders after being named tournament MVP and leading España.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Kroos surprend avec son favori pour le Ballon d'Or : « Pour moi, c'est le numéro un »",
-          "summary": "Le Ballon d'Or n'est pas du tout clair pour qui il va être. Beaucoup placent maintenant Rodri avec un certain avantage pour être le leader de l'Espagne , championne d'une Coupe du Monde dans laquelle le MVP a été choisi, mais il est vrai qu'il y a beaucoup de doutes sur qui va le gagner.",
+          "title": "Kroos surprend avec son favori pour le Balón de Oro : « Pour moi, c'est le numéro un »",
+          "summary": "Alors que l'attribution du Balón de Oro reste ouverte, Rodri figure parmi les favoris après avoir été élu MVP et guidé España.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يفاجأ كروس بمفضلته للكرة الذهبية: \"بالنسبة لي هو رقم واحد\"",
-          "summary": "الكرة الذهبية ليست واضحة على الإطلاق لمن ستكون. يضع الكثيرون الآن رودري مع ميزة معينة لكونه زعيم إسبانيا ، بطل كأس العالم الذي تم فيه اختيار أفضل لاعب، ولكن صحيح أن هناك العديد من الشكوك حول من سيفوز بها.",
+          "title": "كروس يفاجئ الجميع بمرشحه المفضل للكرة الذهبية: \"بالنسبة لي هو الرقم واحد\"",
+          "summary": "وسط غموض حول الفائز بجائزة الكرة الذهبية، يبرز رودري كأحد أبرز المرشحين بعد قيادته لمنتخب إسبانيا وتتويجه بجائزة أفضل لاعب.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/20260821/1004218355/toni-kroos-sorprende-favorito-balon-oro-mi-numero.html",
@@ -2268,26 +2357,27 @@
       "i18n": {
         "fr": {
           "title": "L'AC Milan va porter un patch en hommage à Franco Baresi sur son maillot",
-          "summary": "Pour rendre hommage à sa légende Franco Baresi, décédé le 31 juillet dernier à 66 ans, l'AC Milan portera durant toute la saison un patch « 6 per sempre », un message au double sens que l'on peut traduire par « 6 pour toujours » et « tu es pour toujours ».",
-          "needs_translation": false
+          "summary": "L'AC Milan arborera toute la saison un patch « 6 per sempre » sur son maillot en hommage à Franco Baresi, légende du club disparue le 31 juillet à 66 ans.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "AC Milan will wear a patch in tribute to Franco Baresi on his jersey",
-          "summary": "To pay tribute to its legend Franco Baresi, who died on 31 July at the age of 66, AC Milan will wear a \"6 per sempre\" patch throughout the season, a message in both senses that can be translated as \"6 forever\" and \"you are forever\".",
+          "title": "AC Milan to wear patch honoring Franco Baresi on their shirt",
+          "summary": "AC Milan will wear a \"6 per sempre\" patch on their shirts throughout the season in tribute to club legend Franco Baresi, who died on July 31 at age 66.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
           "title": "El AC Milan lucirá un parche en homenaje a Franco Baresi en su camiseta",
-          "summary": "Para rendir homenaje a su leyenda Franco Baresi, fallecido el pasado 31 de julio a los 66 años, el AC Milan llevará durante toda la temporada un parche \"6 per sempre\", un mensaje en el doble sentido que se puede traducir como \"6 para siempre\" y \"tú eres para siempre\".",
+          "summary": "El AC Milan portará durante toda la temporada un parche con el lema «6 per sempre» en su camiseta en homenaje a su leyenda Franco Baresi, fallecido a los 66 años.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "سيرتدي إيه سي ميلان رقعة تكريماً لفرانكو باريزي على قميصه",
-          "summary": "تكريماً لأسطورته فرانكو باريزي، الذي توفي في 31 يوليو عن عمر يناهز 66 عامًا، سيرتدي إيه سي ميلان رقعة \"6 لكل سمبر\" طوال الموسم، وهي رسالة في كلا الحالتين يمكن ترجمتها على أنها \"6 إلى الأبد\" و \"أنت إلى الأبد\".",
+          "title": "ميلان يضع شارة خاصة على قميصه تكريماً لفرانكو باريزي",
+          "summary": "سيرتدي ميلان شارة خاصة على قمصانه طوال الموسم تكريماً لأسطورته فرانكو باريزي، الذي توفي في 31 يوليو الماضي عن عمر يناهز 66 عاماً.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/L-ac-milan-va-porter-un-patch-en-hommage-a-franco-baresi-sur-son-maillot/1712608#at_medium=RSS_feeds",
@@ -2309,7 +2399,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/L-ac-milan-va-porter-un-patch-en-hommage-a-franco-baresi-sur-son-maillot/1712608#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "redac-alnassr-alriyadh-0821",
