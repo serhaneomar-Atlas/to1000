@@ -72,27 +72,28 @@
       "summary": "Le Real Madrid se déplace sur la pelouse de l’Espanyol Barcelone, ce samedi (21h30), pour un match comptant pour la deuxième journée de Liga.",
       "i18n": {
         "fr": {
-          "title": "EN DIRECT - Espanyol Barcelone-Real Madrid : Mbappé et Mourinho lancent leur saison et un nouveau cycle",
-          "summary": "Le Real Madrid se déplace sur la pelouse de l’Espanyol Barcelone, ce samedi (21h30), pour un match comptant pour la deuxième journée de Liga.",
-          "needs_translation": false
+          "title": "DIRECT - Espanyol Barcelone-Real Madrid : Mbappé et Mourinho lancent leur saison et un nouveau cycle",
+          "summary": "Le Real Madrid se déplace sur le terrain de l'Espanyol ce samedi à 21h30, dans le cadre de la deuxième journée de Liga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "LIVE - Espanyol Barcelona-Real Madrid: Mbappé and Mourinho launch their season and a new cycle",
-          "summary": "Real Madrid are moving to the lawn of Espanyol Barcelona, this Saturday (9:30 pm), for a match counting for the second day of La Liga.",
+          "title": "LIVE - Espanyol-Real Madrid: Mbappé and Mourinho launch their season and a new cycle",
+          "summary": "Real Madrid travel to face Espanyol this Saturday at 21:30 in their matchday 2 Liga fixture.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "EN DIRECTO - Espanyol Barcelona-Real Madrid: Mbappé y Mourinho lanzan su temporada y un nuevo ciclo",
-          "summary": "El Real Madrid se desplaza al césped del Espanyol Barcelona, este sábado (21:30), para un partido relevante para la segunda jornada de Liga.",
+          "title": "EN DIRECTO - Espanyol-Real Madrid: Mbappé y Mourinho arrancan la temporada y un nuevo ciclo",
+          "summary": "El Real Madrid visita el campo del Espanyol este sábado a las 21:30, en partido correspondiente a la segunda jornada de Liga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباشر - إسبانيول برشلونة ريال مدريد: مبابي ومورينيو يطلقان موسمهما ودورة جديدة",
-          "summary": "ينتقل ريال مدريد إلى حديقة إسبانيول برشلونة، يوم السبت (9:30 مساءً)، لخوض مباراة العد لليوم الثاني من الدوري الإسباني.",
+          "title": "بث مباشر - إسبانيول ضد ريال مدريد: مبابي ومورينيو يفتتحان موسمهما وحقبة جديدة",
+          "summary": "يحل ريال مدريد ضيفاً على إسبانيول هذا السبت في تمام الساعة 21:30، لحساب الجولة الثانية من الدوري الإسباني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/live/liga/2026/2650776/espanyol-real-madrid",
@@ -114,7 +115,12 @@
           "url": "https://www.lefigaro.fr/sports/football/live/liga/2026/2650776/espanyol-real-madrid"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6129606561ee",
@@ -301,33 +307,34 @@
       "summary": "Die Füchse Berlin mussten sich beim Supercup gegen den SC Magdeburg eingestehen, aktuell nicht auf Augenhöhe mit dem deutschen Meister zu sein. Laut Mathias Gidsel sei dies aber \"okay\".",
       "i18n": {
         "de": {
-          "title": "Gidsel: \"Sind nicht so weit, dass wir Magdeburg schlagen können\"",
-          "summary": "Die Füchse Berlin mussten sich beim Supercup gegen den SC Magdeburg eingestehen, aktuell nicht auf Augenhöhe mit dem deutschen Meister zu sein. Laut Mathias Gidsel sei dies aber \"okay\".",
-          "needs_translation": false
+          "title": "Gidsel: „Sind nicht so weit, dass wir Magdeburg schlagen können“",
+          "summary": "Nach der Niederlage im Supercup gegen den SC Magdeburg räumte Mathias Gidsel ein, dass Füchse Berlin aktuell noch nicht auf Augenhöhe mit dem deutschen Meister sei.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "Gidsel: \"We are not ready to beat Magdeburg\"",
-          "summary": "The Füchse Berlin had to admit at the Supercup against SC Magdeburg that they are currently not on par with the German champions. According to Mathias Gidsel, this is \"okay\".",
+          "summary": "Following their Supercup defeat against SC Magdeburg, Mathias Gidsel admitted that Füchse Berlin are currently not at the same level as the German champions.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Gidsel : « Nous ne sommes pas prêts à battre Magdebourg »",
-          "summary": "Les renards de Berlin ont dû admettre lors de la Supercup contre le SC Magdeburg qu'ils n'étaient actuellement pas sur un pied d'égalité avec le champion allemand. Selon Mathias Gidsel, c'est « bien ».",
+          "title": "Gidsel : « Nous ne sommes pas encore au niveau pour battre Magdeburg »",
+          "summary": "Après la défaite en Supercup face au SC Magdeburg, Mathias Gidsel a reconnu que Füchse Berlin n'était actuellement pas au même niveau que le champion d'Allemagne.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Gidsel: \"No estamos listos para vencer a Magdeburgo\"",
-          "summary": "Los Fuchs Berlin tuvieron que admitir en la Supercopa contra el SC Magdeburg que actualmente no están a la par con el campeón alemán. Según Mathias Gidsel, sin embargo, esto está \"bien\".",
+          "title": "Gidsel: \"No estamos en un nivel para vencer a Magdeburg\"",
+          "summary": "Tras la derrota en la Supercup ante el SC Magdeburg, Mathias Gidsel reconoció que Füchse Berlin todavía no está a la altura del campeón alemán.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "جيدسل: \"لسنا مستعدين لهزيمة ماغديبرغ\"",
-          "summary": "كان على نادي فوتشي برلين أن يعترف في كأس السوبر ضد نادي ماغديبرغ أنه ليس على قدم المساواة مع البطل الألماني في الوقت الحالي. وفقًا لماتياس جيدسل، هذا \"جيد\".",
+          "title": "غيدسيل: «لسنا في مستوى يسمح لنا بهزيمة ماغديبورغ»",
+          "summary": "اعترف ماتياس غيدسيل بعد الهزيمة في كأس السوبر أمام إس سي ماغديبورغ بأن نادي فوكس برلين ليس في نفس مستوى بطل الدوري الألماني حالياً.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/gidsel-sind-nicht-so-weit-dass-wir-magdeburg-schlagen-koennen-1245886/artikel#omrss",
@@ -349,7 +356,12 @@
           "url": "https://www.kicker.de/gidsel-sind-nicht-so-weit-dass-wir-magdeburg-schlagen-koennen-1245886/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "91b98e3d82d0",
@@ -403,7 +415,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 2,
+        "quality": 3,
         "source_read": "skipped"
       }
     },
@@ -414,26 +426,27 @@
       "i18n": {
         "en": {
           "title": "Brentford beat lacklustre Spurs in comfortable opening day win",
-          "summary": "Tottenham Hotspur's Premier League season under Roberto De Zerbi gets off to a dismal start as they lose 3-0 to a dominant Brentford side at the Gtech Community Stadium.",
-          "needs_translation": false
+          "summary": "Brentford defeated Tottenham Hotspur 3-0 at the Gtech Community Stadium on the opening day of the Premier League season, handing Roberto De Zerbi a losing start.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Brentford a battu les Spurs ternes dans une victoire confortable le jour de l'ouverture",
-          "summary": "La saison de Premier League de Tottenham Hotspur sous Roberto De Zerbi commence mal alors qu'ils perdent 3-0 face à une équipe dominante de Brentford au Gtech Community Stadium.",
+          "title": "Brentford s'impose aisément face à des Spurs ternes lors de la première journée",
+          "summary": "Brentford a battu Tottenham Hotspur 3-0 au Gtech Community Stadium lors de la première journée de Premier League, gâchant les débuts de Roberto De Zerbi.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El Brentford venció al deslucido Spurs en la cómoda victoria del día inaugural",
-          "summary": "La temporada de la Premier League del Tottenham Hotspur bajo el mando de Roberto De Zerbi tiene un comienzo sombrío al perder 3-0 ante un equipo dominante del Brentford en el Gtech Community Stadium.",
+          "title": "Brentford supera a unos flojos Spurs en una cómoda victoria en la primera jornada",
+          "summary": "Brentford se impuso por 3-0 a Tottenham Hotspur en el Gtech Community Stadium en la primera jornada de la Premier League, en un mal inicio para Roberto De Zerbi.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "فاز برينتفورد على توتنهام الباهت في فوز مريح في يوم الافتتاح",
-          "summary": "بدأ موسم توتنهام هوتسبير في الدوري الممتاز تحت قيادة روبرتو دي زيربي بداية كئيبة حيث خسر 3-0 أمام فريق برنتفورد المهيمن في استاد Gtech Community Stadium.",
+          "title": "برينتفورد يهزم توتنهام بسهولة في افتتاح الدوري",
+          "summary": "تغلب برينتفورد على توتنهام هوتسبير بثلاثية نظيفة على ملعب جي تك كوميونيتي في الجولة الافتتاحية من الدوري الإنجليزي الممتاز، لتبدأ مسيرة المدرب روبرتو دي زيربي بهزيمة قاسية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/videos/cqx75yq28rwo?at_medium=RSS&at_campaign=rss",
@@ -455,7 +468,12 @@
           "url": "https://www.bbc.co.uk/sport/football/videos/cqx75yq28rwo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9c44f81262aa",
@@ -514,26 +532,27 @@
       "i18n": {
         "en": {
           "title": "Leeds score late winner to silence Forest fans",
-          "summary": "Anton Stach scores in the 88th minute to give Leeds United a win in Oliver Glasner's first game in charge of Nottingham Forest in the Premier League.",
-          "needs_translation": false
+          "summary": "Anton Stach scored in the 88th minute to secure a Premier League victory for Leeds United against Nottingham Forest in Oliver Glasner's first match in charge.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Leeds marque le but gagnant tardif pour faire taire les fans de Forest",
-          "summary": "Anton Stach marque à la 88e minute pour donner une victoire à Leeds United lors du premier match d'Oliver Glasner en charge de Nottingham Forest en Premier League.",
+          "title": "Leeds s'impose en fin de match et fait taire les supporters de Nottingham Forest",
+          "summary": "Anton Stach a marqué à la 88e minute pour offrir la victoire à Leeds United face à Nottingham Forest, lors du premier match d'Oliver Glasner en Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Leeds anota el gol del ganador tardío para silenciar a los fanáticos del",
-          "summary": "Anton Stach anota en el minuto 88 para darle a Leeds United una victoria en el primer partido de Oliver Glasner a cargo del Nottingham Forest en la Premier League.",
+          "title": "Leeds anota en el tramo final para silenciar a la afición de Nottingham Forest",
+          "summary": "Anton Stach marcó en el minuto 88 para darle la victoria a Leeds United ante Nottingham Forest en el debut de Oliver Glasner en la Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يسجل ليدز فائزًا متأخرًا لإسكات مشجعي الغابة",
-          "summary": "يسجل أنطون ستاخ في الدقيقة 88 لمنح ليدز يونايتد الفوز في أول مباراة لأوليفر غلاسنر المسؤول عن نوتنغهام فورست في الدوري الممتاز.",
+          "title": "ليدز يسجل هدفاً متأخراً ويسكت جماهير فورست",
+          "summary": "سجل أنتون ستاخ هدفاً في الدقيقة 88 ليمنح ليدز يونايتد الفوز على نوتنغهام فورست في الدوري الإنجليزي الممتاز، وذلك في المباراة الأولى للمدرب أوليفر غلاسنر.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/videos/cwyr0n7vyrgo?at_medium=RSS&at_campaign=rss",
@@ -555,7 +574,12 @@
           "url": "https://www.bbc.co.uk/sport/football/videos/cwyr0n7vyrgo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "eda1889568c7",
@@ -620,26 +644,27 @@
       "i18n": {
         "en": {
           "title": "Hull shock Man Utd with dream Premier League return",
-          "summary": "Watch highlights as Hull City make a dream start to their return to the Premier League, beating Manchester United 2-0 on the opening weekend at the MKM Stadium.",
-          "needs_translation": false
+          "summary": "Hull City defeated Manchester United 2-0 at the MKM Stadium on the opening weekend of their return to the Premier League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Hull Shock Man Utd avec retour de rêve en Premier League",
-          "summary": "Regardez les faits saillants alors que Hull City fait un début de rêve pour son retour en Premier League, battant Manchester United 2-0 le week-end d'ouverture au MKM Stadium.",
+          "title": "Hull surprend Man Utd pour son retour de rêve en Premier League",
+          "summary": "Pour son retour en Premier League, Hull City s'est imposé 2-0 face à Manchester United au MKM Stadium lors de la journée d'ouverture.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Hull Shock Man Utd con el regreso de Dream Premier League",
-          "summary": "Mira lo más destacado mientras el Hull City hace un comienzo de ensueño para su regreso a la Premier League, venciendo al Manchester United 2-0 en el primer fin de semana en el MKM Stadium.",
+          "title": "Hull sorprende a Man Utd en su soñado regreso a la Premier League",
+          "summary": "Hull City venció 2-0 a Manchester United en el MKM Stadium durante la jornada inaugural de su regreso a la Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هال شوك مانشستر يونايتد مع عودة دريم بريميير ليج",
-          "summary": "شاهد أبرز الأحداث بينما يبدأ هال سيتي حلمه بالعودة إلى الدوري الإنجليزي الممتاز، بفوزه على مانشستر يونايتد 2-0 في عطلة نهاية الأسبوع الافتتاحية في ملعب MKM.",
+          "title": "هال سيتي يفاجئ مانشستر يونايتد في عودته المثالية إلى الدوري الإنجليزي الممتاز",
+          "summary": "تغلب هال سيتي على مانشستر يونايتد بنتيجة 2-0 في ملعب إم كيه إم، ضمن الجولة الافتتاحية بعد عودته إلى الدوري الإنجليزي الممتاز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/videos/clyl5ejxj2wo?at_medium=RSS&at_campaign=rss",
@@ -661,7 +686,12 @@
           "url": "https://www.bbc.co.uk/sport/football/videos/clyl5ejxj2wo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "cc3bbd4c8a3b",
@@ -731,34 +761,54 @@
       "summary": "Inter erwischte einen Traumstart in die Liga und traf dabei gleich mehrfach sehenswert. Das 4:1 gegen Monza gibt es hier im Video.",
       "i18n": {
         "de": {
-          "title": "Zwei Traumtore und ein Bisseck-Ausflug: Inter glänzt zum Auftakt",
-          "summary": "Inter ist mit einem 4:1-Erfolg gegen Monza in die Liga gestartet und überzeugte dabei mit mehreren sehenswerten Toren.",
+          "title": "Inter schlägt Monza zum Ligaauftakt souverän mit 4:1",
+          "summary": "Inter Mailand ist mit einem deutlichen 4:1-Erfolg gegen Monza in die neue Saison gestartet und glänzte dabei mit spektakulären Treffern.",
+          "body": [
+            "Die Mailänder zeigten beim ersten Spieltag eine dominante Leistung und ließen Monza keine Chance. Neben zwei sehenswerten Traumtoren sorgte auch eine auffällige Aktion von Bisseck für Aufsehen bei diesem rundum überzeugenden Einstand in die Spielzeit."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-edi"
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Two wonder goals and a Bisseck foray: Inter shine in opener",
-          "summary": "Inter started their league season with a 4-1 victory over Monza, highlighted by several impressive goals.",
+          "title": "Inter cruise past Monza 4-1 in dominant season opener",
+          "summary": "Inter kicked off their campaign in style with an emphatic 4-1 victory over Monza, capped by a series of spectacular goals.",
+          "body": [
+            "The Nerazzurri delivered a commanding display on matchday one, leaving Monza with no answers. Alongside two stunning strikes, an eye-catching moment from Bisseck also stood out in a thoroughly convincing opening performance."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-edi"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Deux superbes buts et une montée de Bisseck : Inter brille d'entrée",
-          "summary": "Inter a réussi ses débuts en championnat en s'imposant 4-1 face à Monza, grâce notamment à plusieurs buts remarquables.",
+          "title": "L'Inter surclasse Monza 4-1 pour lancer sa saison",
+          "summary": "L'Inter a réussi ses débuts en championnat en s'imposant nettement 4-1 face à Monza, signant au passage des buts spectaculaires.",
+          "body": [
+            "Les Nerazzurri ont livré une prestation très aboutie lors de cette 1ère journée, sans laisser la moindre chance à Monza. En plus de deux superbes réalisations, une action remarquable de Bisseck a marqué les esprits dans ce premier match parfaitement maîtrisé."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-edi"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Dos golazos y una incursión de Bisseck: Inter brilla en el debut",
-          "summary": "Inter inició el campeonato liguero con una victoria por 4-1 frente a Monza, destacando con varios goles de gran factura.",
+          "title": "El Inter arrolla 4-1 a Monza en su estreno liguero",
+          "summary": "El Inter arrancó la nueva temporada con un contundente triunfo por 4-1 frente a Monza, dejando varios golazos para el recuerdo.",
+          "body": [
+            "Los Nerazzurri firmaron una actuación dominante en la primera jornada y no dieron opción a Monza. Además de dos tantos espectaculares, una gran acción de Bisseck acaparó miradas en un debut impecable del conjunto interista."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-edi"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "هدفان رائعان وانطلاقة لبيسيك: إنتر يتألق في الجولة الافتتاحية",
-          "summary": "استهل إنتر مشواره في الدوري بفوز كبير على مونزا بنتيجة 4-1، في مباراة شهدت تسجيل عدة أهداف مميزة.",
+          "title": "إنتر يكتسح مونزا بنتيجة 4-1 في افتتاح الدوري",
+          "summary": "استهل إنتر ميلان موسمه الجديد بانتصار عريض على مونزا بنتيجة 4-1، في لقاء تميز بتسجيل أهداف رائعة.",
+          "body": [
+            "قدم النيراتزوري أداءً مهيمناً في الجولة الأولى ولم يترك أي فرصة لمونزا للعودة في النتيجة. وإلى جانب تسجيل هدفين رائعين، خطفت لقطة مميزة من بيسيك الأنظار في انطلاقة مثالية ومقنعة للموسم."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-edi"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.kicker.de/zwei-traumtore-und-ein-bisseck-ausflug-inter-glaenzt-zum-auftakt-1245888/video#omrss",
@@ -782,9 +832,17 @@
       ],
       "source_count": 1,
       "editorial": {
-        "publish": false,
-        "quality": 2,
-        "source_read": "skipped"
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-22T19:52:03+00:00"
+        }
       }
     },
     {
@@ -794,32 +852,33 @@
       "i18n": {
         "de": {
           "title": "Musche nach Supercup: \"Titel, der unserer Generation gefehlt hat\"",
-          "summary": "Der SC Magdeburg ist neuer amtierender Supercup-Sieger. Die Elbstädter beendeten so eine Durststrecke, die ein Vierteljahrhundert andauerte.",
-          "needs_translation": false
+          "summary": "Der SC Magdeburg hat den Supercup gewonnen. Damit beendete der Verein eine 25 Jahre andauernde Durststrecke in diesem Wettbewerb.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Musche after Supercup: \"Title that our generation has lacked\"",
-          "summary": "SC Magdeburg is the new reigning Supercup winner. The Elbe cities thus ended a dry spell that lasted a quarter of a century.",
+          "title": "Musche after the Supercup: \"Title that our generation was missing\"",
+          "summary": "SC Magdeburg won the Supercup, ending a 25-year title drought in the competition.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Mouche pour la Supercoupe : « Un titre qui a manqué à notre génération »",
-          "summary": "Le SC Magdeburg est le nouveau vainqueur de la Supercoupe en titre. Les Elbstädter ont ainsi mis fin à une période de famine qui a duré un quart de siècle.",
+          "title": "Musche après la Supercup : « Le titre qui manquait à notre génération »",
+          "summary": "Le SC Magdeburg a remporté la Supercup. Le club met ainsi un terme à une disette de 25 ans dans cette compétition.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Musche después de la Supercopa: \"Título que le faltaba a nuestra generación\"",
-          "summary": "El SC Magdeburg es el nuevo ganador actual de la Supercopa. Los habitantes de Elba terminaron así un periodo de sequía que duró un cuarto de siglo.",
+          "title": "Musche tras la Supercup: «El título que le faltaba a nuestra generación»",
+          "summary": "El SC Magdeburg se proclamó campeón de la Supercup. Con esta victoria, el club puso fin a una sequía de 25 años en el torneo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Musche after Supercup: \"اللقب الذي افتقر إليه جيلنا\"",
-          "summary": "SC Magdeburg هو الفائز الجديد بكأس السوبر. وهكذا أنهت مدن إلبه موجة جفاف استمرت ربع قرن.",
+          "title": "موشه بعد السوبر كاب: \"لقب كان ينقص جيلنا\"",
+          "summary": "توج نادي إس سي ماغديبورغ بلقب كأس السوبر، لينهي بذلك فترة غياب عن التتويج بالبطولة استمرت ربع قرن.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/musche-nach-supercup-titel-der-unserer-generation-gefehlt-hat-1245883/artikel#omrss",
@@ -841,7 +900,12 @@
           "url": "https://www.kicker.de/musche-nach-supercup-titel-der-unserer-generation-gefehlt-hat-1245883/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "bc3e354a7773",
@@ -1116,26 +1180,27 @@
       "i18n": {
         "es": {
           "title": "Espanyol vs Real Madrid, EN VIVO, por la Liga: comienza el segundo ciclo de Mourinho",
-          "summary": "Con Mbappé como titular, el Real Madrid arranca a competir en la segunda fecha del torneo. El Espanyol viene de sumar los tres puntos en el inicio.",
-          "needs_translation": false
+          "summary": "Con Mbappé como titular, el Real Madrid disputa la segunda jornada de la Liga frente al Espanyol, que llega tras haber sumado tres puntos en su debut.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Espanyol vs Real Madrid, LIVE, for La Liga: Mourinho's second cycle begins",
-          "summary": "With Mbappé as a starter, Real Madrid starts to compete in the second round of the tournament. Espanyol comes from adding the three points at the beginning.",
+          "title": "Espanyol vs Real Madrid, LIVE in Liga: Mourinho's second spell begins",
+          "summary": "With Mbappé in the starting lineup, Real Madrid face Espanyol on matchday two of Liga. Espanyol enter the match after winning their opening fixture.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Espanyol vs Real Madrid, EN DIRECT, pour LA Liga : le deuxième cycle de Mourinho commence",
-          "summary": "Avec Mbappé comme titulaire, le Real Madrid commence à participer à la deuxième journée du tournoi. L'Espagnol vient de marquer les trois points au départ.",
+          "title": "Espanyol vs Real Madrid, EN DIRECT en Liga : début du second mandat de Mourinho",
+          "summary": "Avec Mbappé titulaire, le Real Madrid affronte l'Espanyol pour la deuxième journée de Liga. Le club catalan reste sur une victoire lors du match d'ouverture.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Espanyol vs Real Madrid, live, for La Liga: Mourinho's second cycle begins",
-          "summary": "مع مبابي كبداية، يبدأ ريال مدريد في المنافسة في الجولة الثانية من البطولة. تأتي إسبانيول من إضافة النقاط الثلاث في البداية.",
+          "title": "إسبانيول ضد ريال مدريد، مباشر في الدوري الإسباني: بداية الحقبة الثانية لمورينيو",
+          "summary": "يخوض ريال مدريد مواجهة الجولة الثانية من الدوري الإسباني أمام إسبانيول بمشاركة مبابي أساسياً، بعد فوز النادي الكتالوني في أولى مبارياته.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/espana/real-madrid-espanyol-barcelona-liga-espana_0_W7VW0dWMhM.html",
@@ -1157,7 +1222,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/espana/real-madrid-espanyol-barcelona-liga-espana_0_W7VW0dWMhM.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "37480e41a3a0",
@@ -1272,26 +1342,27 @@
       "i18n": {
         "fr": {
           "title": "Liga : Mbappé et Konaté titulaires avec le Real",
-          "summary": "José Mourinho aligne deux de ses internationaux tricolores ce samedi, pour affronter l’Espanyol lors de la première journée de Liga.",
-          "needs_translation": false
+          "summary": "José Mourinho titularise Mbappé et Konaté avec le Real ce samedi face à l'Espanyol, lors de la première journée de Liga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Liga: Mbappé and Konaté start with Real",
-          "summary": "José Mourinho will line up two of his French internationals this Saturday to face Espanyol on the first day of La Liga.",
+          "title": "Liga: Mbappé and Konaté start for Real",
+          "summary": "José Mourinho starts French internationals Mbappé and Konaté for Real against Espanyol on the opening matchday of Liga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
           "title": "Liga: Mbappé y Konaté titulares con el Real",
-          "summary": "José Mourinho alineará a dos de sus internacionales tricolores este sábado, para enfrentarse al Espanyol en la primera jornada de Liga.",
+          "summary": "José Mourinho alinea de inicio a Mbappé y Konaté con el Real este sábado frente al Espanyol, en la primera jornada de Liga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الدوري الإسباني: مبابي وكوناتي يبدأان بالريال",
-          "summary": "سينضم خوسيه مورينيو إلى اثنين من منتخباته الدولية الفرنسية يوم السبت لمواجهة إسبانيول في اليوم الأول من الدوري الإسباني.",
+          "title": "الدوري الإسباني: مبابي وكوناتي أساسيان مع ريال مدريد",
+          "summary": "يدفع المدرب جوزيه مورينيو بالثنائي الفرنسي مبابي وكوناتي أساسيين مع ريال مدريد لمواجهة إسبانيول في الجولة الأولى من الدوري الإسباني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/espagne/liga-mbappe-et-konate-titulaires-avec-le-real-20260822",
@@ -1313,7 +1384,12 @@
           "url": "https://www.lefigaro.fr/sports/football/espagne/liga-mbappe-et-konate-titulaires-avec-le-real-20260822"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e24f2381f3cc",
@@ -1535,7 +1611,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 0,
         "source_read": "skipped"
       }
     },
@@ -1637,7 +1713,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-1/lens-auxerre-thauvin-en-maitre-a-jouer-ambiance-de-folie-a-bollaert-makosso-a-la-faute-les-tops-et-flops-20260822"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5edabcb5582c",
@@ -1645,27 +1726,28 @@
       "summary": "Newly promoted Sunderland claimed a European spot last season",
       "i18n": {
         "en": {
-          "title": "“You can smell success in the air” Peter Reid managed Sunderland to two 7th-place at the Stadium of Light. The Black Cats’ joint-highest finish for 71 year last season has them reaching for the passports for the first time since 1973",
-          "summary": "Newly promoted Sunderland claimed a European spot last season",
-          "needs_translation": false
+          "title": "\"You can smell success in the air\": Peter Reid managed Sunderland to two 7th-place finishes at the Stadium of Light as the Black Cats qualify for Europe for the first time since 1973",
+          "summary": "Newly promoted Sunderland secured European qualification last season. The achievement represents their joint-highest league finish in 71 years and their first continental campaign since 1973.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "« Vous pouvez sentir le succès dans l'air. » Peter Reid a dirigé Sunderland à deux 7e place au Stade de Lumière. L'arrivée commune la plus élevée des Black Cats depuis 71 ans la saison dernière les a amenés à obtenir les passeports pour la première fois depuis 1973",
-          "summary": "Sunderland, récemment promu, a remporté une place européenne la saison dernière",
+          "title": "« Le succès est dans l'air » : Peter Reid a mené Sunderland à deux 7es places au Stadium of Light, les Black Cats retrouvent l'Europe pour la première fois depuis 1973",
+          "summary": "Tout juste promu, Sunderland s'est qualifié pour une compétition européenne la saison dernière, décrochant son meilleur classement en 71 ans et un premier billet continental depuis 1973.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "\"Puedes oler el éxito en el aire\" Peter Reid logró que Sunderland obtuviera dos séptimos lugares en el Estadio de la Luz. El final más alto de los Black Cats en 71 años la temporada pasada los llevó a alcanzar los pasaportes por primera vez desde 1973",
-          "summary": "El recién ascendido Sunderland consiguió un puesto en Europa la temporada pasada",
+          "title": "«Se respira el éxito»: Peter Reid llevó a Sunderland a dos séptimos puestos en el Stadium of Light y los Black Cats regresan a Europa por primera vez desde 1973",
+          "summary": "El recién ascendido Sunderland consiguió la clasificación europea la temporada pasada, firmando su mejor posición en 71 años y su regreso a las competiciones continentales por primera vez desde 1973.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"يمكنك أن تشم النجاح في الهواء\" أدار بيتر ريد سندرلاند إلى المركز السابع في ملعب النور. أعلى إنجاز مشترك للقطط السوداء لمدة 71 عامًا في الموسم الماضي جعلهم يصلون إلى جوازات السفر لأول مرة منذ عام 1973",
-          "summary": "حصلت سندرلاند التي تمت ترقيتها حديثًا على مكان أوروبي الموسم الماضي",
+          "title": "\"يمكنك أن تشم رائحة النجاح\": بيتر ريد قاد سندرلاند للمركز السابع مرتين في ستاديوم أوف لايت والقطط السوداء تعود لأوروبا لأول مرة منذ 1973",
+          "summary": "ضمن سندرلاند الصاعد حديثاً مقعداً أوروبياً بعد تحقيقه أفضل مركز في الدوري منذ 71 عاماً، ليحجز بطاقة المشاركة القارية الأولى له منذ عام 1973.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.fourfourtwo.com/team/you-can-smell-success-in-the-air-peter-reid-managed-sunderland-to-two-7th-place-at-the-stadium-of-light-the-black-cats-joint-highest-finish-for-71-year-last-season-has-them-reaching-for-the-passports-for-the-first-time-since-1973",
@@ -1987,7 +2069,7 @@
       "source_count": 6,
       "editorial": {
         "publish": false,
-        "quality": 0,
+        "quality": 1,
         "source_read": "skipped"
       }
     },
