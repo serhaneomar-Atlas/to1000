@@ -62,7 +62,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 0,
+        "quality": 1,
         "source_read": "skipped"
       }
     },
@@ -408,33 +408,54 @@
       "summary": "Manchester United hat erstmals am 1. Spieltag gegen einen Aufsteiger verloren.",
       "i18n": {
         "de": {
-          "title": "Offensiv harmlos und bei Standards anfällig: ManUnited legt einen Fehlstart hin",
-          "summary": "Manchester United hat erstmals am 1. Spieltag gegen einen Aufsteiger verloren.",
-          "needs_translation": false
+          "title": "Historischer Fehlstart: Manchester United unterliegt Aufsteiger",
+          "summary": "Manchester United hat seinen Saisonauftakt verpatzt und erstmals am ersten Spieltag eine Niederlage gegen einen Aufsteiger kassiert.",
+          "body": [
+            "Die Mannschaft zeigte zum Ligastart eine enttäuschende Leistung. Neben anhaltender Harmlosigkeit im Angriff offenbarten die Red Devils vor allem bei gegnerischen Standardsituationen gravierende Schwächen, die letztlich zur historischen Auftaktpleite führten."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Offensively harmless and vulnerable to standards: ManUnited makes a false start",
-          "summary": "Manchester United lost to a newcomer for the first time on matchday 1.",
+          "title": "Historic false start: Manchester United stunned by newly promoted side",
+          "summary": "Manchester United endured a nightmare start to their campaign, suffering a historic opening-day defeat against a newly promoted team.",
+          "body": [
+            "The Red Devils put in a thoroughly disappointing display to kick off their league season. Plagued by toothless attacking play and glaring vulnerabilities defending set pieces, they were condemned to an unprecedented opening-weekend upset."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Offensivement inoffensif et vulnérable aux normes : ManUnited prend un mauvais départ",
-          "summary": "Manchester United a perdu pour la première fois contre un joueur promu lors de la 1ère journée.",
+          "title": "Faux départ historique : Manchester United chute face au promu",
+          "summary": "Manchester United a totalement manqué son entame de saison en s'inclinant d'entrée face à un promu, une première historique lors d'une journée inaugurale.",
+          "body": [
+            "Pour leurs débuts en championnat, les Red Devils ont livré une prestation très décevante. Minée par un cruel manque d'impact offensif et de lourdes défaillances sur les coups de pied arrêtés adverses, l'équipe a logiquement concédé ce revers inédit."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Ofensivamente inofensivo y vulnerable a los estándares: ManUnited hace un mal comienzo",
-          "summary": "El Manchester United perdió por primera vez en la primera jornada contra un jugador en ascenso.",
+          "title": "Tropiezo histórico: Manchester United cae ante un recién ascendido",
+          "summary": "Manchester United firmó un pésimo arranque de temporada al sufrir su primera derrota de la historia en la jornada inaugural frente a un recién ascendido.",
+          "body": [
+            "El conjunto mancuniano ofreció una imagen muy pobre en su estreno liguero. Condenados por una alarmante falta de pegada en ataque y graves desajustes en las jugadas a balón parado del rival, los Red Devils no pudieron evitar un revés histórico."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "غير مؤذية على نحو هجومي وعرضة للمعايير: مان يونايتد تبدأ بداية خاطئة",
-          "summary": "خسر مانشستر يونايتد أمام وافد جديد لأول مرة في المباراة الأولى.",
+          "title": "تعثر تاريخي: مانشستر يونايتد يسقط أمام الصاعد حديثاً",
+          "summary": "تعرض مانشستر يونايتد لبداية مخيبة للآمال في مستهل مشواره، ليتلقى أول هزيمة له في الجولة الافتتاحية أمام فريق صاعد حديثاً على مدار تاريخه.",
+          "body": [
+            "قدم الفريق أداءً باهتاً في انطلاق الدوري؛ حيث عانى الشياطين الحمر من عقم هجومي واضح، إلى جانب ثغرات دفاعية قاتلة في التعامل مع الكرات الثابتة للخصم، مما كبدهم هذه الهزيمة التاريخية في مستهل الموسم."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.kicker.de/hull-gegen-manunited-2026-premier-league-5213271/spielbericht#omrss",
@@ -456,7 +477,20 @@
           "url": "https://www.kicker.de/hull-gegen-manunited-2026-premier-league-5213271/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-22T14:54:44+00:00"
+        }
+      }
     },
     {
       "id": "253e31055653",
@@ -572,7 +606,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 3,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -1079,7 +1113,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -1770,7 +1804,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -2352,7 +2386,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 0,
         "source_read": "skipped"
       }
     },
@@ -2464,7 +2498,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 2,
+        "quality": 3,
         "source_read": "skipped"
       }
     },
