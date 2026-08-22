@@ -16,27 +16,28 @@
       "summary": "Le RC Lens accueille Auxerre, ce samedi (17h15) à Bollaert, pour le compte de la première journée de Ligue 1.",
       "i18n": {
         "fr": {
-          "title": "EN DIRECT - Lens-Auxerre : après le Trophée des champions face au PSG, les Lensois lancent leur saison en Ligue 1",
-          "summary": "Le RC Lens accueille Auxerre, ce samedi (17h15) à Bollaert, pour le compte de la première journée de Ligue 1.",
-          "needs_translation": false
+          "title": "DIRECT - Lens-Auxerre : après le Trophée des champions face au PSG, les Lensois lancent leur saison en Ligue 1",
+          "summary": "Le RC Lens accueille Auxerre ce samedi à Bollaert pour la première journée de Ligue 1, débutant son championnat après avoir disputé le Trophée des champions face au PSG.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "LIVE - Lens-Auxerre: after the Champions Trophy against PSG, the Lensois launch their season in Ligue 1",
-          "summary": "RC Lens welcomes Auxerre, this Saturday (17:15) in Bollaert, on behalf of the first day of Ligue 1.",
+          "title": "DIRECT - Lens-Auxerre: after the Trophée des champions against PSG, the Lensois launch their Ligue 1 season",
+          "summary": "RC Lens host Auxerre this Saturday at Bollaert for the opening round of Ligue 1, kicking off their league campaign following their Trophée des champions clash with PSG.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "EN DIRECTO - Lens-Auxerre: después del Trofeo de Campeones contra el PSG, los Lensois lanzan su temporada en la Ligue 1",
-          "summary": "El RC Lens da la bienvenida a Auxerre, este sábado (17:15) en Bollaert, en nombre de la primera jornada de la Ligue 1.",
+          "title": "DIRECT - Lens-Auxerre: tras el Trophée des champions ante el PSG, los Lensois inician su temporada en la Ligue 1",
+          "summary": "El RC Lens recibe a Auxerre este sábado en Bollaert en la primera jornada de la Ligue 1, arrancando la temporada liguera tras disputar el Trophée des champions frente al PSG.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباشر - Lens - Auxerre: بعد كأس الأبطال ضد PSG، تطلق Lensois موسمها في Ligue 1",
-          "summary": "ترحب RC Lens بـ Auxerre، هذا السبت (17:15) في Bollaert، نيابة عن اليوم الأول من Ligue 1.",
+          "title": "مباشر - لانس ضد أوكسير: بعد كأس الأبطال أمام باريس سان جيرمان، لانس يفتتح موسمه في الدوري الفرنسي",
+          "summary": "يستضيف لانس نظيره أوكسير هذا السبت على ملعب بولار لحساب الجولة الأولى من الدوري الفرنسي، ليبدأ مشواره في المسابقة بعد خوضه مباراة كأس الأبطال أمام باريس سان جيرمان.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/live/ligue-1/2026/2640562/lens-auxerre",
@@ -58,7 +59,12 @@
           "url": "https://www.lefigaro.fr/sports/football/live/ligue-1/2026/2640562/lens-auxerre"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6e82c471b16f",
@@ -112,7 +118,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -218,7 +224,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 3,
         "source_read": "skipped"
       }
     },
@@ -274,7 +280,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -341,26 +347,27 @@
       "i18n": {
         "es": {
           "title": "Racing vs. Boca, por el Torneo Clausura: día, horario y por dónde ver",
-          "summary": "Necesitados de sumar de a tres en el torneo local, la Academia y el Xeneize chocan en el Cilindro tras haber ganado en la semana sus respectivos cruces.",
-          "needs_translation": false
+          "summary": "Racing y Boca se enfrentan en el Cilindro en el marco del Torneo Clausura. Ambos equipos buscan sumar de a tres tras ganar sus compromisos entre semana.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Racing vs. Boca, for the Closing Tournament: day, schedule and where to see",
-          "summary": "Needed to add three in the local tournament, the Academy and the Xeneize clash in the Cylinder after having won their respective crosses in the week.",
+          "title": "Racing vs Boca in Torneo Clausura: date, time, and how to watch",
+          "summary": "Racing host Boca at the Cilindro in the Torneo Clausura. Both teams are looking for three points in the league following midweek victories.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Racing vs. Boca, pour le tournoi de clôture : jour, horaire et où voir",
-          "summary": "Besoin d'additionner par trois dans le tournoi local, l'Académie et le Xeneize entrent en collision dans le Cylindre après avoir remporté dans la semaine leurs croisements respectifs.",
+          "title": "Racing - Boca en Torneo Clausura : date, heure et diffusion",
+          "summary": "Racing et Boca s'affrontent au Cilindro lors du Torneo Clausura. Les deux clubs cherchent à enchaîner en championnat après leurs victoires en milieu de semaine.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "سباق ضد بوكا، لبطولة الختام: اليوم والجدول الزمني وأين ترى",
-          "summary": "تحتاج إلى إضافة ثلاثة في البطولة المحلية، والأكاديمية و Xeneize اشتباك في اسطوانة بعد أن فاز كل منهما الصلبان في الأسبوع.",
+          "title": "راسينغ ضد بوكا في تورنيو كلاوسورا: الموعد، التوقيت والقنوات الناقلة",
+          "summary": "يلتقي راسينغ مع بوكا جونيورز على ملعب السيليندرو ضمن منافسات تورنيو كلاوسورا، حيث يسعى الفريقان لحصد النقاط الثلاث بعد تحقيقهما الفوز في منتصف الأسبوع.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-primera/racing-club-vs-boca-juniors-partido-torneo-clausura-2026-dia-horario-ver-tv_0_LJiKdKzxFO.html",
@@ -382,7 +389,12 @@
           "url": "https://www.ole.com.ar/futbol-primera/racing-club-vs-boca-juniors-partido-torneo-clausura-2026-dia-horario-ver-tv_0_LJiKdKzxFO.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f8d5770a303c",
@@ -453,26 +465,27 @@
       "i18n": {
         "en": {
           "title": "'We didn't click' - Carrick on Man Utd's loss",
-          "summary": "Manchester United head coach Michael Carrick says his side 'didn't click' as they suffered a 2-0 defeat at newly promoted Hull City in their first game of the 2026-27 Premier League season.",
-          "needs_translation": false
+          "summary": "Manchester United suffered a 2-0 defeat at newly promoted Hull City in their 2026-27 Premier League opener, with head coach Michael Carrick admitting his team failed to click.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "« Nous n'avons pas cliqué » - Carrick sur la perte de Man Utd",
-          "summary": "L'entraîneur-chef de Manchester United, Michael Carrick, a déclaré que son équipe n'avait pas cliqué car elle avait subi une défaite 2-0 à Hull City, récemment promue, lors de son premier match de la saison 2026-2027 de Premier League.",
+          "title": "« Nous n'avons pas eu le déclic » - Carrick sur la défaite de Manchester United",
+          "summary": "Manchester United s'est incliné 2-0 sur la pelouse du promu Hull City lors de la première journée de Premier League 2026-2027, une prestation décevante reconnue par l'entraîneur Michael Carrick.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "'No hicimos clic' - Carrick sobre la pérdida de Man Utd",
-          "summary": "El entrenador del Manchester United, Michael Carrick, dice que su equipo \"no hizo clic\" cuando sufrió una derrota por 2-0 en el recién ascendido Hull City en su primer partido de la temporada 2026-27 de la Premier League.",
+          "title": "«No conectamos» - Carrick sobre la derrota de Manchester United",
+          "summary": "Manchester United perdió 2-0 ante el recién ascendido Hull City en la primera jornada de la Premier League 2026-27, un tropiezo admitido por el entrenador Michael Carrick.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"لم نضغط\" - كاريك على خسارة مانشستر يونايتد",
-          "summary": "قال مدرب مانشستر يونايتد مايكل كاريك إن فريقه \"لم ينقر\" لأنه عانى من هزيمة 2-0 في هال سيتي الذي تمت ترقيته حديثًا في مباراته الأولى من موسم الدوري الممتاز 2026-2027.",
+          "title": "\"لم ننسجم\" - كاريك يعلق على خسارة مانشستر يونايتد",
+          "summary": "خسر مانشستر يونايتد بنتيجة 2-0 أمام الصاعد حديثاً هال سيتي في افتتاح موسم 2026-2027 من الدوري الإنجليزي الممتاز، حيث أقر المدرب مايكل كاريك بغياب التناغم عن فريقه.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/videos/cr5956led9lo?at_medium=RSS&at_campaign=rss",
@@ -494,7 +507,12 @@
           "url": "https://www.bbc.co.uk/sport/football/videos/cr5956led9lo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "337e0662153f",
@@ -503,26 +521,27 @@
       "i18n": {
         "en": {
           "title": "Villa close to signing Germany midfielder Goretzka",
-          "summary": "Aston Villa are close to signing free agent Leon Goretzka, who left Bayern Munich in the summer after eight years.",
-          "needs_translation": false
+          "summary": "Aston Villa are close to signing free agent Leon Goretzka, who left Bayern Munich this summer following an eight-year spell.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Villa proche de la signature du milieu de terrain allemand Goretzka",
-          "summary": "Aston Villa est sur le point de signer l'agent libre Leon Goretzka, qui a quitté le Bayern Munich l'été dernier après huit ans.",
+          "title": "Aston Villa proche de recruter le milieu de Germany Leon Goretzka",
+          "summary": "Aston Villa est sur le point d'engager le joueur libre Leon Goretzka, parti de Bayern Munich cet été après huit saisons passées au club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Villa cerca de fichar al mediocampista alemán Goretzka",
-          "summary": "El Aston Villa está cerca de firmar al agente libre Leon Goretzka, quien dejó el Bayern Munich en el verano después de ocho años.",
+          "title": "Aston Villa, cerca de fichar al centrocampista de Germany Leon Goretzka",
+          "summary": "Aston Villa está cerca de incorporar como agente libre a Leon Goretzka, quien dejó Bayern Munich este verano tras ocho años en el club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "فيلا قريبة من توقيع لاعب خط الوسط الألماني غوريتزكا",
-          "summary": "أستون فيلا على وشك التعاقد مع وكيل الأعمال الحرة ليون غوريتزكا، الذي غادر بايرن ميونيخ في الصيف بعد ثماني سنوات.",
+          "title": "أستون فيلا يقترب من التعاقد مع لاعب الوسط الألماني ليون غوريتسكا",
+          "summary": "يقترب نادي أستون فيلا من حسم التعاقد مع ليون غوريتسكا في صفقة انتقال حر، بعد رحيله عن بايرن ميونخ هذا الصيف إثر مسيرة استمرت ثماني سنوات.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cnvnvjer47mo?at_medium=RSS&at_campaign=rss",
@@ -703,7 +722,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 2,
+        "quality": 1,
         "source_read": "skipped"
       }
     },
@@ -863,26 +882,27 @@
       "i18n": {
         "en": {
           "title": "'We showed we can compete' - Jakirovic",
-          "summary": "Hull City head coach Sergej Jakirovic praises his side for their approach and sticking to the tactical plan to gain a 2-0 win against Manchester United on the opening weekend of the Premier League season.",
-          "needs_translation": false
+          "summary": "Hull City head coach Sergej Jakirovic praised his team's tactical discipline following their 2-0 victory over Manchester United on the opening weekend of the Premier League season.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "« Nous avons montré que nous pouvions rivaliser » - Jakirovic",
-          "summary": "L'entraîneur-chef de Hull City, Sergej Jakirovic, fait l'éloge de son équipe pour son approche et son plan tactique visant à remporter une victoire 2-0 contre Manchester United lors du week-end d'ouverture de la saison de Premier League.",
+          "title": "« Nous avons montré que nous pouvons rivaliser » - Jakirovic",
+          "summary": "L'entraîneur de Hull City, Sergej Jakirovic, a salué le respect du plan tactique de ses joueurs après leur victoire 2-0 contre Manchester United en ouverture de la Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "'Demostramos que podemos competir' - Jakirovic",
-          "summary": "El entrenador del Hull City, Sergej Jakirovic, elogia a su equipo por su enfoque y por apegarse al plan táctico para ganar 2-0 al Manchester United en el primer fin de semana de la temporada de la Premier League.",
+          "title": "«Demostramos que podemos competir» - Jakirovic",
+          "summary": "El entrenador de Hull City, Sergej Jakirovic, elogió la disciplina táctica de su equipo tras vencer 2-0 a Manchester United en la primera jornada de la Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"لقد أظهرنا أننا قادرون على المنافسة\" - جاكروفيتش",
-          "summary": "مدرب هال سيتي سيرج جاكروفيتش يشيد بفريقه على نهجهم والالتزام بالخطة التكتيكية لتحقيق الفوز 2-0 على مانشستر يونايتد في عطلة نهاية الأسبوع الافتتاحية لموسم الدوري الممتاز.",
+          "title": "ياكيروفيتش: «أظهرنا قدرتنا على المنافسة»",
+          "summary": "أشاد سيرغي ياكيروفيتش، مدرب هال سيتي، بالتزام فريقه بالخطة التكتيكية عقب الفوز على مانشستر يونايتد بنتيجة 2-0 في الجولة الافتتاحية للدوري الإنجليزي الممتاز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/videos/cgmkm9xgv1zo?at_medium=RSS&at_campaign=rss",
@@ -904,7 +924,12 @@
           "url": "https://www.bbc.co.uk/sport/football/videos/cgmkm9xgv1zo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "78d78b14c415",
@@ -913,26 +938,27 @@
       "i18n": {
         "es": {
           "title": "Ipswich Town - Sunderland, en directo | Premier League",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Ligue 1 que enfrenta al Lens contra el Auxerre correspondiente a Jornada 1.",
-          "needs_translation": false
+          "summary": "Seguimiento en directo del partido de la Jornada 1 de la Ligue 1 entre Lens y Auxerre.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "Ipswich Town - Sunderland, live | Premier League",
-          "summary": "Good afternoon and welcome to the live narration of the Ligue 1 football match between Lens and Auxerre for Matchday 1.",
+          "summary": "Live coverage of the Ligue 1 matchday 1 fixture between Lens and Auxerre.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Ipswich Town - Sunderland, en direct | Premier League",
-          "summary": "Bonsoir et bienvenue dans le récit, en direct, du match de football de Ligue 1 opposant le Lens à l'Auxerre correspondant à la Journée 1.",
+          "summary": "Suivi en direct du match de la 1ère journée de Ligue 1 opposant Lens à Auxerre.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "إيبسويتش تاون - سندرلاند، مباشر | الدوري الإنجليزي الممتاز",
-          "summary": "مساء الخير ومرحبا بكم في السرد المباشر لمباراة دوري الدرجة الأولى لكرة القدم بين لنس وأوكسير ليوم المباراة 1.",
+          "title": "إيبسويتش تاون - سندرلاند، البث المباشر | الدوري الإنجليزي الممتاز",
+          "summary": "متابعة مباشرة لمباراة الجولة الأولى من الدوري الفرنسي بين لانس وأوكسير.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/ligue-1/20260822/1004217049/lens-auxerre-directo-ligue-1.html",
@@ -966,7 +992,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260822/1004216927/everton-crystal-palace-directo-premier-league.html"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6f4b4b96062e",
@@ -1182,7 +1213,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 4,
+        "quality": 3,
         "source_read": "skipped"
       }
     },
@@ -1248,50 +1279,50 @@
       "summary": "Manchester United hat erstmals am 1. Spieltag gegen einen Aufsteiger verloren.",
       "i18n": {
         "de": {
-          "title": "Manchester United patzt historisch gegen Aufsteiger",
-          "summary": "Manchester United hat zum Saisonstart historisch gepatzt und erstmals am ersten Spieltag gegen einen Aufsteiger verloren.",
+          "title": "Historischer Fehlstart für Manchester United gegen Aufsteiger",
+          "summary": "Manchester United hat zum Auftakt der neuen Saison eine historische Niederlage gegen einen Aufsteiger kassiert.",
           "body": [
-            "Der Traditionsklub erwischte einen denkbar schlechten Beginn in die neue Spielzeit. Mit dieser Premiere gegen einen Liganeuling zum Auftakt muss die Mannschaft direkt am ersten Spieltag einen herben Rückschlag hinnehmen und steht nach dem verpatzten Start bereits früh unter Druck."
+            "Die Red Devils erlebten einen denkbar schlechten Saisonbeginn: Erstmals in der Vereinsgeschichte gab der englische Traditionsklub ein Auftaktspiel gegen ein frisch aufgestiegenes Team ab. Dieser unerwartete Fehltritt am ersten Spieltag markiert damit direkt zum Start einen negativen Meilenstein."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "en": {
-          "title": "Manchester United suffer historic opening defeat to promoted side",
-          "summary": "Manchester United suffered a historic setback to start the season, falling to a newly promoted side on the opening day for the first time.",
+          "title": "Historic Opening-Day Defeat for Manchester United Against Promoted Side",
+          "summary": "Manchester United suffered a historic defeat against a newly promoted side on the opening day of the new season.",
           "body": [
-            "The Red Devils endured a nightmare start to the new campaign. This unprecedented defeat against a top-flight newcomer deals an immediate blow to the squad, putting them under heavy pressure right from matchday one."
+            "The Red Devils endured a nightmare start to the campaign: for the first time in the club's history, the English giants lost an opening fixture against a newly promoted team. This unexpected slip-up on matchday one immediately sets an unwanted milestone."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Faux départ historique pour Manchester United face à un promu",
-          "summary": "Manchester United a complètement manqué son entame de saison en s'inclinant face à un promu dès la première journée, une première historique.",
+          "title": "Manchester United : revers historique face à un promu d'entrée",
+          "summary": "Manchester United a concédé une défaite historique face à un promu pour entamer sa nouvelle saison.",
           "body": [
-            "Les Red Devils ont vécu le pire départ possible dans ce nouvel exercice. Ce revers inédit d'entrée face à un promu représente un coup dur immédiat pour l'équipe, déjà sous pression dès la première journée."
+            "Les Red Devils ont vécu la pire entame possible : pour la toute première fois de son histoire, le club mancunien s'est incliné lors d'un match d'ouverture face à une équipe fraîchement promue. Un faux pas d'entrée qui pose d'emblée un triste record."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "es": {
-          "title": "Histórico tropiezo de Manchester United ante un recién ascendido",
-          "summary": "Manchester United protagonizó un inicio liguero para el olvido tras caer en la primera jornada ante un recién ascendido por primera vez en su historia.",
+          "title": "Tropiezo histórico de Manchester United ante un recién ascendido",
+          "summary": "Manchester United encajó una histórica derrota ante un recién ascendido en el estreno de la nueva temporada.",
           "body": [
-            "El emblemático club inglés firmó el peor arranque posible en la nueva temporada. Este revés inédito en el debut ante un recién llegado a la categoría supone un duro golpe y coloca al equipo bajo presión desde el primer día."
+            "Los Red Devils arrancaron el curso de la peor manera: por primera vez en su historia, el histórico club inglés cayó en la primera jornada frente a un equipo recién ascendido. Un inesperado tropiezo inicial que firma un registro negativo nada más empezar."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "ar": {
-          "title": "سقوط تاريخي لمانشستر يونايتد أمام صاعد حديثاً",
-          "summary": "استهل مانشستر يونايتد موسمه بكبوة تاريخية بعدما انقاد للخسارة في الجولة الافتتاحية أمام فريق صاعد حديثاً للمرة الأولى في تاريخه.",
+          "title": "مانشستر يونايتد يتعثر تاريخياً أمام فريق صاعد حديثاً",
+          "summary": "تجرع نادي مانشستر يونايتد هزيمة تاريخية أمام فريق صاعد حديثاً في افتتاح منافسات الموسم الجديد من الدوري.",
           "body": [
-            "عاش الشياطين الحمر بداية كارثية للموسم الجديد، ليتلقى الفريق صفعة قوية وغير مسبوقة أمام وافد جديد في ضربة البداية، ويجد نفسه مبكراً تحت وطأة ضغوط شديدة."
+            "عاش الشياطين الحمر أسوأ بداية ممكنة للموسم؛ فللمرة الأولى في تاريخه العريق، يسقط النادي الإنجليزي في مباراته الافتتاحية أمام فريق صاعد حديثاً. ويمثل هذا التعثر غير المتوقع في الجولة الأولى انتكاسة قياسية مبكرة مع ضربة البداية."
           ],
           "format": "brief",
           "needs_translation": false,
@@ -1320,7 +1351,7 @@
       "source_count": 1,
       "editorial": {
         "publish": true,
-        "quality": 7,
+        "quality": 6,
         "source_read": "rss",
         "semantique": {
           "note": 10.0,
@@ -1446,7 +1477,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 3,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -1506,44 +1537,44 @@
       "summary": "Luis Enrique réclame l'inversion du match retour face à Rennes au nom de l'équité sportive, après la délocalisation forcée de la manche aller en Bretagne.",
       "i18n": {
         "fr": {
-          "title": "Luis Enrique réclame l'équité sportive après l'inversion de PSG-Rennes",
-          "summary": "Luis Enrique réclame l'inversion du match retour face à Rennes au nom de l'équité sportive, après la délocalisation forcée de la manche aller en Bretagne.",
+          "title": "Luis Enrique réclame l'équité pour le match retour face à Rennes",
+          "summary": "Luis Enrique demande la reprogrammation au Parc des Princes du match retour contre Rennes, après l'inversion de la première journée en Bretagne.",
           "body": [
-            "Le déplacement imposé au PSG dès la première journée de Ligue 1, provoqué par l'état impraticable de la pelouse du Parc des Princes, crée un litige pour la manche retour. Alors que le Stade rennais refuse de céder la réception programmée début mars, l'entraîneur parisien martèle qu'affronter deux fois un même adversaire à l'extérieur rompt le principe fondamental d'égalité du championnat.",
-            "Si le calendrier restait en l'état lors de la 23e journée, Paris disputerait 18 matchs à l'extérieur contre 16 à domicile sur l'ensemble de la saison. La Commission des compétitions de la LFP se réunira vendredi prochain avec les deux clubs pour trancher si des « circonstances exceptionnelles » justifient l'inversion du match retour."
+            "Contraint de se déplacer au Roazhon Park pour la reprise de la Ligue 1 en raison de l'état impraticable de sa pelouse, le Paris Saint-Germain souhaite inverser la manche retour de début mars. En conférence de presse, Luis Enrique a rappelé que chaque formation doit disputer un match à domicile et un à l'extérieur face au même adversaire pour garantir l'égalité de la compétition.",
+            "La Commission des compétitions de la LFP tranchera ce vendredi sur ce dossier. Si l'instance ne retient pas les « circonstances exceptionnelles » plaidées par le club parisien, le calendrier restera inchangé, obligeant le PSG à disputer 18 rencontres hors de ses bases sur l'ensemble de la saison contre seulement 16 au Parc."
           ],
           "format": "deep",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "en": {
-          "title": "Luis Enrique calls for fairness after PSG-Rennes fixture swap",
-          "summary": "Luis Enrique demands that the return fixture against Rennes be played in Paris for sporting equity, following the forced relocation of their Ligue 1 opener.",
+          "title": "Luis Enrique demands fairness for Rennes return fixture",
+          "summary": "Luis Enrique is calling for the return clash with Rennes to be played at the Parc des Princes, following the venue swap in Bretagne on matchday one.",
           "body": [
-            "An unplayable pitch at the Parc des Princes forced PSG to travel to Rennes for their opening league match. With Stade rennais reluctant to give up hosting rights for the return match in early March, the Spanish manager insisted that playing twice away against the same opponent breaks the fundamental balance of the competition.",
-            "Unless modified for matchday 23, the schedule would leave Paris with 18 away games and only 16 at home this season. The LFP Competitions Commission will meet next Friday with both clubs to determine whether \"exceptional circumstances\" justify reversing the return leg."
+            "Forced to head to Roazhon Park for the Ligue 1 restart due to an unplayable pitch, Paris Saint-Germain want to flip the return leg scheduled for early March. In his press conference, Luis Enrique insisted that every team must play home and away against each opponent to guarantee a level playing field.",
+            "The LFP Competitions Commission will rule on the matter this Friday. If the league rejects the \"exceptional circumstances\" put forward by the capital club, the calendar will remain unchanged, leaving PSG with 18 away games across the season compared to just 16 at the Parc."
           ],
           "format": "deep",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "es": {
-          "title": "Luis Enrique exige equidad deportiva tras la inversión del PSG-Rennes",
-          "summary": "Luis Enrique reclama invertir la sede del partido de vuelta frente al Rennes por equidad deportiva, tras el traslado forzoso del duelo inaugural a Bretaña.",
+          "title": "Luis Enrique exige equidad para la vuelta contra el Rennes",
+          "summary": "Luis Enrique pide que la vuelta ante el Rennes se dispute en el Parc des Princes, tras haberse invertido el choque de la primera jornada en Bretagne.",
           "body": [
-            "El mal estado del césped en el Parc des Princes obligó al PSG a disputar fuera de casa la primera jornada de Ligue 1. Mientras el Stade rennais rechaza ceder la localía fijada para inicios de marzo, el técnico parisino sostiene que medirse dos veces a domicilio ante un mismo rival vulnera el principio de igualdad del torneo.",
-            "De no haber cambios en la 23.ª fecha, Paris completaría la liga con 18 salidas y apenas 16 partidos en casa. La Commission des compétitions de la LFP se reunirá el próximo viernes con ambos clubes para decidir si existen «circunstancias excepcionales» que motiven la inversión de la vuelta."
+            "Obligado a acudir al Roazhon Park en la reanudación de la Ligue 1 por el mal estado de su césped, el Paris Saint-Germain pretende invertir ahora la vuelta prevista a primeros de marzo. En rueda de prensa, Luis Enrique recordó que todos los equipos deben jugar un partido en casa y otro a domicilio contra el mismo rival para garantizar la equidad competitiva.",
+            "La Comisión de Competiciones de la LFP fallará este viernes sobre el asunto. Si el organismo desestima las «circunstancias excepcionales» alegadas por el club parisino, el calendario no sufrirá modificaciones y el PSG tendrá que disputar 18 choques fuera de casa a lo largo del curso frente a solo 16 en el Parc."
           ],
           "format": "deep",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "ar": {
-          "title": "لويس إنريكي يطالب بالعدالة التنافسية بعد تبديل ملعب مواجهة باريس ورين",
-          "summary": "طالب لويس إنريكي بتبديل ملعب لقاء الإياب ضد رين باسم العدالة الرياضية، إثر نقل مواجهة الجولة الأولى اضطرارياً إلى أرض منافسه.",
+          "title": "لويس إنريكي يطالب بالعدالة قبل لقاء الإياب أمام رين",
+          "summary": "طالب لويس إنريكي ببرمجة مباراة الإياب ضد رين على ملعب بارك دي برانس، بعد عكس مواجهة الجولة الأولى لتقام في بريتاني.",
           "body": [
-            "تسبب سوء أرضية ملعب بارك دي برانس في إجبار باريس سان جيرمان على خوض الجولة الافتتاحية من الدوري الفرنسي في رين. ومع تمسك ستاد رين باستضافة لقاء الإياب مطلع مارس، شدد المدرب الإسباني على أن مواجهة الخصم ذاته مرتين خارج الديار ينسف مبدأ تكافؤ الفرص في البطولة.",
-            "وإذا استمر جدول الجولة الثالثة والعشرين دون تعديل، فسيخوض الفريق الباريسي 18 مباراة خارج ملعبه مقابل 16 فقط على أرضه هذا الموسم. وستعقد لجنة المسابقات في الرابطة اجتماعاً الجمعة المقبل مع ممثلي الناديين لحسم توفر «ظروف استثنائية» تبرر نقل لقاء العودة إلى العاصمة."
+            "بعدما اضطر للتنقل إلى ملعب روازون بارك في افتتاح الدوري الفرنسي نتيجة عدم صلاحية أرضية ميدانه، يرغب باريس سان جيرمان في عكس لقاء الإياب المقرر مطلع مارس. وأكد لويس إنريكي في المؤتمر الصحفي أن كل فريق يجب أن يخوض مباراة داخل قواعده وأخرى خارجها أمام المنافس نفسه لضمان تكافؤ الفرص في البطولة.",
+            "وتحسم لجنة المسابقات في رابطة الدوري الفرنسي هذا الملف يوم الجمعة. وفي حال رفضت الهيئة \"الظروف الاستثنائية\" التي دفع بها النادي الباريسي، فسيظل جدول المباريات دون تعديل، ما يلزم باريس سان جيرمان بلعب 18 مباراة خارج أرضه طوال الموسم مقابل 16 مواجهة فقط على ملعبه."
           ],
           "format": "deep",
           "needs_translation": false,
@@ -1578,7 +1609,10 @@
           "erreurs": [],
           "retire": false,
           "ts": "2026-08-22T15:32:29+00:00"
-        }
+        },
+        "publish": true,
+        "quality": 7,
+        "source_read": "full"
       }
     },
     {
@@ -1683,7 +1717,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -2161,7 +2195,7 @@
       "source_count": 2,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -2267,7 +2301,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -2541,7 +2575,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 0,
+        "quality": 1,
         "source_read": "skipped"
       }
     },
