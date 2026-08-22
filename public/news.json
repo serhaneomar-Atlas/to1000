@@ -64,23 +64,27 @@
       "i18n": {
         "fr": {
           "title": "Ligue 1 : début de saison parfait pour Lens, facile vainqueur d’Auxerre après le Trophée des champions face au PSG",
-          "summary": "Les Sang et Or ont disposé de l’AJA ce samedi, à Bollaert, lors de la première journée du championnat de France.",
-          "needs_translation": false
+          "summary": "Après son succès au Trophée des champions contre le PSG, Lens s'est facilement imposé face à Auxerre à Bollaert lors de la première journée de Ligue 1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Ligue 1 : début de saison parfait pour Lens, facile vainqueur d’Auxerre après le Trophée des champions face au PSG",
-          "summary": "Les Sang et Or ont disposé de l’AJA ce samedi, à Bollaert, lors de la première journée du championnat de France.",
-          "needs_translation": true
+          "title": "Ligue 1: Perfect start to the season for Lens, easy winners over Auxerre after the Trophée des champions against PSG",
+          "summary": "Following their Trophée des champions victory over PSG, Lens comfortably defeated Auxerre at Bollaert on the opening matchday of Ligue 1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ligue 1 : début de saison parfait pour Lens, facile vainqueur d’Auxerre après le Trophée des champions face au PSG",
-          "summary": "Les Sang et Or ont disposé de l’AJA ce samedi, à Bollaert, lors de la première journée du championnat de France.",
-          "needs_translation": true
+          "title": "Ligue 1: inicio de temporada perfecto para Lens, fácil vencedor de Auxerre tras el Trophée de Campeones ante el PSG",
+          "summary": "Tras vencer al PSG en el Trophée de Campeones, Lens se impuso con facilidad a Auxerre en Bollaert durante la primera jornada de la Ligue 1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Ligue 1 : début de saison parfait pour Lens, facile vainqueur d’Auxerre après le Trophée des champions face au PSG",
-          "summary": "Les Sang et Or ont disposé de l’AJA ce samedi, à Bollaert, lors de la première journée du championnat de France.",
-          "needs_translation": true
+          "title": "الدوري الفرنسي: بداية مثالية لنادي لانس بفوز سهل على أوكسير بعد كأس الأبطال ضد باريس سان جيرمان",
+          "summary": "بعد تتويجه بكأس الأبطال أمام باريس سان جيرمان، حقق لانس فوزاً سهلاً على أوكسير في ملعب بولار ضمن الجولة الأولى من الدوري الفرنسي.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-1/ligue-1-debut-de-saison-parfait-pour-lens-facile-vainqueur-d-auxerre-apres-le-trophee-des-champions-face-au-psg-20260822",
@@ -102,7 +106,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-1/ligue-1-debut-de-saison-parfait-pour-lens-facile-vainqueur-d-auxerre-apres-le-trophee-des-champions-face-au-psg-20260822"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3776a476f07f",
@@ -897,23 +906,27 @@
       "i18n": {
         "es": {
           "title": "El Barça no pincha en Elche desde 2014, partido en el que se le escapó media Liga",
-          "summary": "El Barça disputará este domingo su primer partido de liga de la temporada 2026/27 (21.30 horas/Movistar LaLiga) .",
-          "needs_translation": false
+          "summary": "El Barça debuta este domingo en LaLiga frente al Elche, un campo donde no tropieza desde 2014.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Barça no pincha en Elche desde 2014, partido en el que se le escapó media Liga",
-          "summary": "El Barça disputará este domingo su primer partido de liga de la temporada 2026/27 (21.30 horas/Movistar LaLiga) .",
-          "needs_translation": true
+          "title": "Barça have not slipped up at Elche since 2014, when they let the league title slip away",
+          "summary": "Barça play their opening league match against Elche this Sunday, a ground where they have not dropped points since 2014.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El Barça no pincha en Elche desde 2014, partido en el que se le escapó media Liga",
-          "summary": "El Barça disputará este domingo su primer partido de liga de la temporada 2026/27 (21.30 horas/Movistar LaLiga) .",
-          "needs_translation": true
+          "title": "Le Barça n'a plus trébuché à Elche depuis 2014, match où il avait laissé filer le titre",
+          "summary": "Le Barça dispute son premier match de championnat face à Elche ce dimanche, un terrain où il n'a plus perdu de points depuis 2014.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Barça no pincha en Elche desde 2014, partido en el que se le escapó media Liga",
-          "summary": "El Barça disputará este domingo su primer partido de liga de la temporada 2026/27 (21.30 horas/Movistar LaLiga) .",
-          "needs_translation": true
+          "title": "برشلونة لم يتعثر في إلتشي منذ 2014 حين أهدر فرصة حسم لقب الدوري",
+          "summary": "يخوض برشلونة مباراته الافتتاحية في الدوري الإسباني هذا الأحد أمام إلتشي، وهو الملعب الذي لم يفقد فيه أي نقطة منذ عام 2014.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260822/1004218629/barca-no-pincha-elche-des-2014-partido-le-escapo-media-liga.html",
@@ -935,7 +948,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260822/1004218629/barca-no-pincha-elche-des-2014-partido-le-escapo-media-liga.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "53565178588a",
@@ -989,7 +1007,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -1111,11 +1129,11 @@
       "summary": "El futbolista luso Quévin Castro, exjugador del West Bromwich inglés, falleció este sábado a los 25 años mientras disputaba un partido de preparación entre su club, el Real Sport Clube, de las categorías amateurs de Portugal, y el Estrela da Amadora.",
       "i18n": {
         "es": {
-          "title": "Fallece a los 25 años el futbolista portugués Quévin Castro",
-          "summary": "El futbolista portugués Quévin Castro ha fallecido este sábado a los 25 años tras desplomarse durante un partido amistoso con el Real Sport Clube.",
+          "title": "Fallece el futbolista portugués Quévin Castro a los 25 años",
+          "summary": "El futbolista portugués Quévin Castro murió este sábado a los 25 años tras sufrir una indisposición mientras disputaba un partido amistoso con el Real Sport Clube.",
           "body": [
-            "El centrocampista se sintió indispuesto en los primeros compases del encuentro de preparación frente al Estrela da Amadora. Aunque recibió maniobras de reanimación con un desfibrilador sobre el mismo césped y fue trasladado de inmediato al hospital, los servicios médicos confirmaron allí su fallecimiento.",
-            "Castro había regresado recientemente a su país para jugar en el Real Sport Clube tras desarrollar gran parte de su carrera en Inglaterra, donde militó en la cantera del Chelsea, el Notts County y el primer equipo del West Bromwich Albion."
+            "Durante los primeros compases del duelo de preparación frente al Estrela da Amadora, el centrocampista requirió atención médica de urgencia sobre el césped. Los sanitarios intentaron reanimarlo con un desfibrilador antes de evacuarlo al hospital, donde los médicos certificaron su muerte.",
+            "Castro había regresado este curso a Portugal para enrolarse en el club aficionado de Massamá tras completar gran parte de su trayectoria formativa y profesional en Inglaterra, donde militó en las categorías inferiores del Chelsea, el Notts County y el West Bromwich Albion."
           ],
           "format": "deep",
           "needs_translation": false,
@@ -1123,21 +1141,21 @@
         },
         "en": {
           "title": "Portuguese footballer Quévin Castro dies aged 25",
-          "summary": "Portuguese midfielder Quévin Castro died on Saturday at the age of 25 after collapsing during a friendly match for Real Sport Clube.",
+          "summary": "Portuguese footballer Quévin Castro passed away on Saturday at the age of 25 after collapsing during a friendly match for Real Sport Clube.",
           "body": [
-            "The midfielder took ill in the early stages of the pre-season fixture against Estrela da Amadora. Despite pitchside CPR efforts with a defibrillator and an immediate transfer to hospital, medical staff were unable to save him.",
-            "Castro had recently returned to his homeland to sign for Real Sport Clube after spending much of his career in England, where he spent time in the Chelsea academy, at Notts County, and with the West Bromwich Albion first team."
+            "During the early stages of the warm-up fixture against Estrela da Amadora, the midfielder required urgent on-pitch medical attention. Paramedics attempted resuscitation with a defibrillator before rushing him to hospital, where doctors confirmed his death.",
+            "Castro had returned to Portugal this season to join the Massamá amateur outfit after spending much of his development and early career in England, featuring in the youth ranks of Chelsea, Notts County and West Bromwich Albion."
           ],
           "format": "deep",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Le footballeur portugais Quévin Castro est mort à 25 ans",
-          "summary": "Le joueur portugais Quévin Castro est décédé ce samedi à 25 ans après s'être effondré en plein match amical sous les couleurs du Real Sport Clube.",
+          "title": "Le joueur portugais Quévin Castro est mort à l'âge de 25 ans",
+          "summary": "Le footballeur portugais Quévin Castro est décédé ce samedi à l'âge de 25 ans après avoir fait un malaise en plein match amical sous les couleurs du Real Sport Clube.",
           "body": [
-            "Le milieu de terrain a été victime d'un malaise dès les premières minutes de cette rencontre de préparation face à l'Estrela da Amadora. Malgré des tentatives de réanimation au défibrillateur sur la pelouse et son évacuation d'urgence à l'hôpital, l'équipe médicale n'a pu que constater son décès.",
-            "Castro venait de rentrer au Portugal pour évoluer au Real Sport Clube après avoir effectué l'essentiel de son parcours en Angleterre, où il est passé par le centre de formation de Chelsea, Notts County et l'équipe première de West Bromwich Albion."
+            "Dès l'entame de cette rencontre de préparation face à Estrela da Amadora, le milieu de terrain a été pris en charge en urgence sur la pelouse. Les secours ont tenté de le réanimer à l'aide d'un défibrillateur avant de le transporter à l'hôpital, où son décès a été prononcé.",
+            "Castro était retourné cette saison au Portugal pour s'engager avec le club amateur de Massamá, après avoir réalisé la majeure partie de sa formation et de son parcours professionnel en Angleterre, notamment dans les rangs des équipes de jeunes de Chelsea, de Notts County et de West Bromwich Albion."
           ],
           "format": "deep",
           "needs_translation": false,
@@ -1145,10 +1163,10 @@
         },
         "ar": {
           "title": "وفاة لاعب كرة القدم البرتغالي كيفين كاسترو عن 25 عاماً",
-          "summary": "توفي لاعب الوسط البرتغالي كيفين كاسترو، اليوم السبت، عن عمر يناهز 25 عاماً، بعد سقوطه مغشياً عليه خلال مباراة ودية مع فريقه ريال سبورت كلوب.",
+          "summary": "توفي لاعب كرة القدم البرتغالي كيفين كاسترو، اليوم السبت، عن عمر يناهز 25 عاماً إثر تعرضه لوعكة صحية مفاجئة أثناء خوضه مباراة ودية مع فريق ريال سبورت كلوب.",
           "body": [
-            "وشعر اللاعب بوعكة مفاجئة في الدقائق الأولى من اللقاء الودي أمام إستريلا دا أمادورا. ورغم محاولات إنعاشه فوق عشب الملعب بجهاز الصدمات الكهربائية ونقله الفوري إلى المستشفى، أعلنت الطواقم الطبية هناك وفاته رسمياً.",
-            "وكان كاسترو قد عاد مؤخراً إلى البرتغال لتمثيل ريال سبورت كلوب بعد مسيرة طويلة في الملاعب الإنجليزية، ارتدى خلالها قمصان الفئات السنية لنادي تشيلسي، ونادي نوتس كاونتي، إلى جانب الفريق الأول لنادي وست بروميتش ألبيون."
+            "وخلال الدقائق الأولى من اللقاء الودي أمام إستريلا دا أمادورا، احتاج لاعب خط الوسط إلى تدخل طبي عاجل فوق أرضية الميدان. وحاولت فرق الإسعاف إنعاشه باستخدام جهاز مزيل الرجفان قبل نقله على وجه السرعة إلى المستشفى، حيث أعلن الأطباء وفاته.",
+            "وكان كاسترو قد عاد هذا الموسم إلى البرتغال للانضمام إلى النادي الهاوي في ماساما، بعدما قضى جزءاً كبيراً من مسيرته التكوينية والاحترافية في إنجلترا، إذ تدرج في الفئات السنية لنادي تشيلسي ولعب لكل من نوتس كاونتي ووست بروميتش ألبيون."
           ],
           "format": "deep",
           "needs_translation": false,
@@ -1421,7 +1439,7 @@
       "source_count": 3,
       "editorial": {
         "publish": false,
-        "quality": 0,
+        "quality": 1,
         "source_read": "skipped"
       }
     },
@@ -1539,7 +1557,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 3,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -1774,26 +1792,27 @@
       "i18n": {
         "es": {
           "title": "El recién ascendido Hull City desnuda al United de un buen Rashford",
-          "summary": "El Manchester United se estrelló en su estreno liguero ante un Hull City que castigó sus errores (2-0). Los de Carrick estuvieron mal y sucumbieron ante la intensidad y verticalidad del recién ascendido.",
-          "needs_translation": false
+          "summary": "El Manchester United de Carrick cayó derrotado 2-0 ante el recién ascendido Hull City en su estreno liguero tras pagar caros sus errores.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The newly promoted Hull City undresses the United of a good Rashford",
-          "summary": "Manchester United crashed in their league debut against Hull City who punished their mistakes (2-0). Carrick's were bad and succumbed to the intensity and verticality of the newly promoted.",
+          "title": "Newly promoted Hull City expose Manchester United despite a good Rashford",
+          "summary": "Manchester United suffered a 2-0 defeat against newly promoted Hull City in their league opener after being punished for costly mistakes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le nouveau promu Hull City déshabille United d'un bon Rashford",
-          "summary": "Manchester United s'est écrasé lors de son premier match de championnat face à Hull City qui a puni ses erreurs (2-0). Ceux de Carrick ont eu tort et ont succombé à l'intensité et à la verticalité du nouveau promu.",
+          "title": "Le promu Hull City met à nu le Manchester United d'un bon Rashford",
+          "summary": "Manchester United s'est incliné 2-0 face au promu Hull City lors de ses débuts en championnat, dominé par l'intensité et puni pour ses erreurs.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يخلع هال سيتي الذي تمت ترقيته حديثًا ملابس يونايتد من راشفورد الجيد",
-          "summary": "سقط مانشستر يونايتد في أول مباراة له في الدوري ضد هال سيتي الذي عاقب على أخطائه (2-0). كان مرض كاريك سيئًا واستسلم لشدة ورأسية الشخص الذي تمت ترقيته حديثًا.",
+          "title": "الصاعد حديثاً هال سيتي يعري مانشستر يونايتد رغم أداء راشفورد الجيد",
+          "summary": "خسر مانشستر يونايتد بقيادة كاريك أمام الصاعد حديثاً هال سيتي بنتيجة 2-0 في افتتاح الدوري بعد استغلال الأخير لأخطاء الشياطين الحمر.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260822/1004218581/united.html",
@@ -1815,7 +1834,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260822/1004218581/united.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "redac-alnassr-alriyadh-0821",
