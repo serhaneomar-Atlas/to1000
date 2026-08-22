@@ -18,25 +18,26 @@
         "en": {
           "title": "Watch Match of the Day",
           "summary": "Highlights of the opening weekend of the 2026/27 Premier League season.",
-          "needs_translation": false
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Regarder le match du jour",
-          "summary": "Faits saillants du week-end d'ouverture de la saison 2026/27 de Premier League.",
+          "title": "Regarder Match of the Day",
+          "summary": "Les résumés des rencontres de la première journée de la saison 2026/27 de Premier League sont disponibles.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ver partido del día",
-          "summary": "Aspectos destacados del primer fin de semana de la temporada 2026/27 de la Premier League.",
+          "title": "Ver Match of the Day",
+          "summary": "Resúmenes de los partidos correspondientes a la primera jornada de la temporada 2026/27 de la Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مشاهدة مباراة اليوم",
-          "summary": "أبرز أحداث الأسبوع الافتتاحي لموسم الدوري الممتاز 2026/27.",
+          "title": "شاهد برنامج ماتش أوف ذا داي",
+          "summary": "ملخصات مباريات الجولة الافتتاحية لموسم 2026/2027 من الدوري الإنجليزي الممتاز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/iplayer/live/bbcone?at_medium=RSS&at_campaign=rss",
@@ -58,7 +59,12 @@
           "url": "https://www.bbc.co.uk/iplayer/live/bbcone?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "489d97162603",
@@ -67,26 +73,27 @@
       "i18n": {
         "fr": {
           "title": "EN DIRECT - Espanyol-Real Madrid : Mbappé et les Madrilènes accrochés à Barcelone",
-          "summary": "Le Real Madrid se déplace sur la pelouse de l’Espanyol Barcelone, ce samedi (21h30), pour un match comptant pour la deuxième journée de Liga.",
-          "needs_translation": false
+          "summary": "Le Real Madrid se déplace sur le terrain de l'Espanyol Barcelone ce samedi à 21h30, dans le cadre de la deuxième journée de Liga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "LIVE - Espanyol-Real Madrid: Mbappé and the Madrilenes hanging in Barcelona",
-          "summary": "Real Madrid are moving to the lawn of Espanyol Barcelona, this Saturday (9:30 pm), for a match counting for the second day of La Liga.",
+          "title": "LIVE - Espanyol-Real Madrid: Mbappé and Madrid held in Barcelona",
+          "summary": "Real Madrid travel to face Espanyol Barcelona this Saturday at 21:30 in the second matchday of Liga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "EN DIRECTO - Espanyol-Real Madrid: Mbappé y los madrileños enganchados en Barcelona",
-          "summary": "El Real Madrid se desplaza al césped del Espanyol Barcelona, este sábado (21:30), para un partido relevante para la segunda jornada de Liga.",
+          "title": "EN DIRECTO - Espanyol-Real Madrid: Mbappé y los madridistas frenados en Barcelona",
+          "summary": "El Real Madrid visita el campo del Espanyol Barcelona este sábado a las 21:30, en partido correspondiente a la segunda jornada de Liga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباشر - إسبانيول ريال مدريد: مبابي و Madrilenes معلقة في برشلونة",
-          "summary": "ينتقل ريال مدريد إلى حديقة إسبانيول برشلونة، يوم السبت (9:30 مساءً)، لخوض مباراة العد لليوم الثاني من الدوري الإسباني.",
+          "title": "مباشر - إسبانيول ضد ريال مدريد: مبابي والملكي يتعثران في برشلونة",
+          "summary": "يحل ريال مدريد ضيفاً على إسبانيول برشلونة، هذا السبت عند الساعة 21:30، ضمن منافسات الجولة الثانية من الدوري الإسباني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/live/liga/2026/2650776/espanyol-real-madrid",
@@ -108,7 +115,12 @@
           "url": "https://www.lefigaro.fr/sports/football/live/liga/2026/2650776/espanyol-real-madrid"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2766d420e97a",
@@ -435,26 +447,27 @@
       "i18n": {
         "fr": {
           "title": "Avec un doublé de Greenwood, Fenerbahçe domine Konyaspor avant le barrage retour de Ligue des champions face à l'OL",
-          "summary": "Quatre jours avant son déplacement à Lyon en barrages retour de la Ligue des champions, Fenerbahçe s'est imposé à Konyaspor (4-2) lors de la 2e journée du Championnat de Turquie.",
-          "needs_translation": false
+          "summary": "Porté par un doublé de Greenwood, Fenerbahçe s'est imposé 4-2 contre Konyaspor en Championnat de Turquie, à quatre jours de son barrage retour de Ligue des champions à Lyon.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "With a double from Greenwood, Fenerbahçe dominates Konyaspor before the return play-off of the Champions League against OL",
-          "summary": "Four days before his trip to Lyon in the return play-offs of the Champions League, Fenerbahçe won in Konyaspor (4-2) on the second day of the Turkish Championship.",
+          "title": "With a brace from Greenwood, Fenerbahçe defeat Konyaspor before Champions League play-off second leg against OL",
+          "summary": "Fenerbahçe won 4-2 away at Konyaspor in the Turkish league thanks to a Greenwood brace, four days before their Champions League play-off second leg in Lyon.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Con un doblete de Greenwood, el Fenerbahçe domina a Konyaspor antes de la repesca de la Liga de Campeones contra el OL",
-          "summary": "Cuatro días antes de su desplazamiento a Lyon para el repechaje de vuelta de la Liga de Campeones, el Fenerbahçe se impuso al Konyaspor (4-2) en la segunda jornada del Campeonato de Turquía.",
+          "title": "Con un doblete de Greenwood, Fenerbahçe supera a Konyaspor antes de la vuelta del playoff de Champions League ante OL",
+          "summary": "Fenerbahçe venció 4-2 a Konyaspor en la liga turca con un doblete de Greenwood, cuatro días antes de disputar en Lyon la vuelta del playoff de la Champions League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مع ضعف من غرينوود، تهيمن فنربخشه على كونيسبور قبل مباراة العودة لدوري أبطال أوروبا ضد OL",
-          "summary": "قبل أربعة أيام من رحلته إلى ليون في المباريات الفاصلة في دوري أبطال أوروبا، فاز فنربخشه في كونيسبور (4-2) في اليوم الثاني من البطولة التركية.",
+          "title": "بثنائية غرينوود، فنربخشة يهزم قونية سبور قبل إياب ملحق دوري أبطال أوروبا أمام ليون",
+          "summary": "فاز فنربخشة على قونية سبور بنتيجة 4-2 في الدوري التركي بفضل ثنائية غرينوود، وذلك قبل أربعة أيام من مواجهة أولمبيك ليون في إياب ملحق دوري أبطال أوروبا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Avec-un-double-de-greenwood-fenerbahce-domine-konyaspor-avant-le-barrage-retour-de-ligue-des-champions-face-a-l-ol/1712892#at_medium=RSS_feeds",
@@ -476,7 +489,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Avec-un-double-de-greenwood-fenerbahce-domine-konyaspor-avant-le-barrage-retour-de-ligue-des-champions-face-a-l-ol/1712892#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "42b61dd0adfa",
@@ -485,26 +503,27 @@
       "i18n": {
         "es": {
           "title": "La tenaz decisión que habría tomado Georgina Rodríguez luego de casarse con Cristiano Ronaldo",
-          "summary": "La modelo hispano-argentina habría dado un paso más tras haber formalizado su matrimonio con el portugués.",
-          "needs_translation": false
+          "summary": "Georgina Rodríguez habría tomado una importante decisión personal tras haber formalizado su matrimonio con Cristiano Ronaldo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The tenacious decision that Georgina Rodríguez would have made after marrying Cristiano Ronaldo",
-          "summary": "The Spanish-Argentine model reportedly took another step after having formalized her marriage with the Portuguese.",
+          "title": "The firm decision Georgina Rodríguez reportedly made after marrying Cristiano Ronaldo",
+          "summary": "Spanish-Argentine model Georgina Rodríguez has reportedly taken a new step in her life following her formal marriage to Cristiano Ronaldo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La décision tenace qu'aurait prise Georgina Rodriguez après son mariage avec Cristiano Ronaldo",
-          "summary": "Le mannequin hispano-argentin aurait fait un pas de plus après avoir officialisé son mariage avec le Portugais.",
+          "title": "La décision ferme qu'aurait prise Georgina Rodríguez après son mariage avec Cristiano Ronaldo",
+          "summary": "La mannequin hispano-argentine Georgina Rodríguez aurait franchi une nouvelle étape personnelle après avoir officialisé son mariage avec Cristiano Ronaldo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "القرار العنيد الذي كانت ستتخذه جورجينا رودريغيز بعد الزواج من كريستيانو رونالدو",
-          "summary": "وبحسب ما ورد اتخذت العارضة الإسبانية الأرجنتينية خطوة أخرى بعد إضفاء الطابع الرسمي على زواجها من البرتغاليين.",
+          "title": "القرار الحاسم الذي اتخذته جورجينا رودريغيز بعد زواجها من كريستيانو رونالدو",
+          "summary": "اتخذت عارضة الأزياء الإسبانية الأرجنتينية جورجينا رودريغيز خطوة جديدة وقراراً مهماً عقب إتمام زواجها رسمياً من كريستيانو رونالدو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/fuera-de-juego/tenaz-decision-tomo-georgina-rodriguez-luego-casarse-cristiano-ronaldo_0_GD74PNg8UC.html",
@@ -526,7 +545,12 @@
           "url": "https://www.ole.com.ar/fuera-de-juego/tenaz-decision-tomo-georgina-rodriguez-luego-casarse-cristiano-ronaldo_0_GD74PNg8UC.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7e724735d167",
@@ -535,26 +559,27 @@
       "i18n": {
         "es": {
           "title": "Kevin De Bruyne reaparece para darle la victoria al Nápoles",
-          "summary": "Kevin De Bruyne (35 años) se convirtió en el gran héroe del conjunto ‘azurri’ en esta primera jornada de la Serie A .",
-          "needs_translation": false
+          "summary": "Kevin De Bruyne, de 35 años, dio la victoria al Nápoles en la primera jornada de la Serie A.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Kevin De Bruyne reappears to give Napoli victory",
-          "summary": "Kevin De Bruyne (35 years old) became the great hero of the ‘azurri’ team on this first day of Serie A.",
+          "title": "Kevin De Bruyne returns to give Nápoles the victory",
+          "summary": "Kevin De Bruyne, 35, secured the victory for Nápoles on the opening matchday of Serie A.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Kevin De Bruyne réapparaît pour donner la victoire à Naples",
-          "summary": "Kevin De Bruyne (35 ans) est devenu le grand héros de l'équipe ‘azurri’ lors de cette première journée de Serie A .",
+          "title": "Kevin De Bruyne réapparaît pour offrir la victoire à Nápoles",
+          "summary": "Âgé de 35 ans, Kevin De Bruyne a offert la victoire à Nápoles lors de la première journée de Serie A.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كيفن دي بروين يعود للظهور ليعطي نابولي النصر",
-          "summary": "أصبح كيفن دي بروين (35 عامًا) البطل العظيم لفريق \"أزوري\" في هذا اليوم الأول من دوري الدرجة الأولى الإيطالي .",
+          "title": "كيفن دي بروين يعود ليقود نابولي إلى الفوز",
+          "summary": "قاد كيفن دي بروين (35 عاماً) فريق نابولي لتحقيق الفوز في الجولة الأولى من الدوري الإيطالي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/serie-a/20260822/1004218715/kevin-bruyne-reaparece-darle-victoria-napoles.html",
@@ -576,7 +601,12 @@
           "url": "https://www.mundodeportivo.com/futbol/serie-a/20260822/1004218715/kevin-bruyne-reaparece-darle-victoria-napoles.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "56a99ebdfef9",
@@ -638,7 +668,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-1/ligue-1-le-bon-coup-de-lyon-faux-depart-pour-le-paris-fc-du-spectacle-et-des-buts-entre-le-mans-et-brest-20260822"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0e593493f6ff",
@@ -894,7 +929,12 @@
           "url": "https://www.kicker.de/deutschland-gegen-kroatien-2026-basketball-supercup-5262146/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2f80f8401805",
@@ -1164,27 +1204,28 @@
       "summary": "El Espanyol está plantando cara al Real Madrid de Mourinho, en el primer partido de los merengues en LaLiga.",
       "i18n": {
         "es": {
-          "title": "'Cala' empata para el Espanyol ante el Madrid y estalla Cornellà-El Prat",
-          "summary": "El Espanyol está plantando cara al Real Madrid de Mourinho, en el primer partido de los merengues en LaLiga.",
-          "needs_translation": false
+          "title": "'Cala' empata para el Espanyol ante el Real Madrid y estalla Cornellà-El Prat",
+          "summary": "Cala' anotó el gol del empate para el Espanyol frente al Real Madrid de Mourinho en Cornellà-El Prat, durante el primer partido liguero de los blancos.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "'Cala' draws for Espanyol against Madrid and Cornellà-El Prat explodes",
-          "summary": "Espanyol are facing Mourinho's Real Madrid in the merengues' first game in LaLiga.",
+          "title": "'Cala' equalises for Espanyol against Real Madrid as Cornellà-El Prat erupts",
+          "summary": "Cala' scored the equaliser for Espanyol against Mourinho's Real Madrid at Cornellà-El Prat in the visitors' opening match of LaLiga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "'Cala' égalise pour l'Espanyol face à Madrid et Cornellà-El Prat éclate",
-          "summary": "L'Espagnol affronte le Real Madrid de Mourinho, lors du premier match des Merengues en Liga.",
+          "title": "'Cala' égalise pour l'Espanyol face au Real Madrid et fait chavirer Cornellà-El Prat",
+          "summary": "Cala' a égalisé pour l'Espanyol contre le Real Madrid de Mourinho au stade Cornellà-El Prat, lors de la première journée de LaLiga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تتعادل \"كالا\" مع إسبانيول ضد مدريد وينفجر كورنيلا- إل- برات",
-          "summary": "يواجه إسبانيول ريال مدريد مورينيو في أول مباراة له في الدوري الإسباني.",
+          "title": "كالا يعادل النتيجة لإسبانيول أمام ريال مدريد ويشعل مدرجات كورنيلا إل برات",
+          "summary": "سجل كالا هدف التعادل لإسبانيول في شباك ريال مدريد بقيادة مورينيو على ملعب كورنيلا إل برات، في المباراة الأولى للملكي في الدوري الإسباني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/rcd-espanyol/20260822/1004218705/cala-empata-espanyol-madrid-estalla-cornella-prat.html",
@@ -1206,7 +1247,12 @@
           "url": "https://www.mundodeportivo.com/futbol/rcd-espanyol/20260822/1004218705/cala-empata-espanyol-madrid-estalla-cornella-prat.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "fd4bbe2df53e",
@@ -1263,23 +1309,27 @@
       "i18n": {
         "fr": {
           "title": "Deux courses sans élan sur penalty et un échec : Florian Thauvin a pris le goût du risque contre Auxerre",
-          "summary": "Florian Thauvin, le capitaine lensois, a pris l'habitude de frapper les penalties en marchant et quasi sans élan. C'est osé et cela aurait pu se retourner contre lui, samedi lors de la victoire de Lens contre Auxerre (5-2) dans le cadre de la 1re journée de Ligue 1.",
-          "needs_translation": false
+          "summary": "Lors de la victoire de Lens contre Auxerre (5-2) en Ligue 1, le capitaine Florian Thauvin a frappé ses penalties quasiment sans élan, manquant l'une de ses tentatives.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Deux courses sans élan sur penalty et un échec : Florian Thauvin a pris le goût du risque contre Auxerre",
-          "summary": "Florian Thauvin, le capitaine lensois, a pris l'habitude de frapper les penalties en marchant et quasi sans élan. C'est osé et cela aurait pu se retourner contre lui, samedi lors de la victoire de Lens contre Auxerre (5-2) dans le cadre de la 1re journée de Ligue 1.",
-          "needs_translation": true
+          "title": "Two run-up-free penalties and one miss: Florian Thauvin took risks against Auxerre",
+          "summary": "During Lens's 5-2 victory over Auxerre in Ligue 1, captain Florian Thauvin took his penalties with virtually no run-up, missing one of his attempts.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Deux courses sans élan sur penalty et un échec : Florian Thauvin a pris le goût du risque contre Auxerre",
-          "summary": "Florian Thauvin, le capitaine lensois, a pris l'habitude de frapper les penalties en marchant et quasi sans élan. C'est osé et cela aurait pu se retourner contre lui, samedi lors de la victoire de Lens contre Auxerre (5-2) dans le cadre de la 1re journée de Ligue 1.",
-          "needs_translation": true
+          "title": "Dos penaltis sin carrerilla y un fallo: Florian Thauvin asumió riesgos contra Auxerre",
+          "summary": "En la victoria de Lens por 5-2 ante Auxerre en la Ligue 1, el capitán Florian Thauvin lanzó sus penaltis prácticamente sin carrerilla y falló uno de sus intentos.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Deux courses sans élan sur penalty et un échec : Florian Thauvin a pris le goût du risque contre Auxerre",
-          "summary": "Florian Thauvin, le capitaine lensois, a pris l'habitude de frapper les penalties en marchant et quasi sans élan. C'est osé et cela aurait pu se retourner contre lui, samedi lors de la victoire de Lens contre Auxerre (5-2) dans le cadre de la 1re journée de Ligue 1.",
-          "needs_translation": true
+          "title": "ركلتا جزاء دون اندفاع وإخفاق واحد: فلوريان توفان يخاطر أمام أوكسير",
+          "summary": "خلال فوز لانس على أوكسير بنتيجة (5-2) في الدوري الفرنسي، سدد قائد الفريق فلوريان توفان ركلات الجزاء دون اندفاع تقريبًا وأهدر إحداها.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Deux-courses-sans-elan-sur-penalty-et-un-echec-florian-thauvin-a-pris-le-gout-du-risque-contre-auxerre/1712884#at_medium=RSS_feeds",
@@ -1301,7 +1351,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Deux-courses-sans-elan-sur-penalty-et-un-echec-florian-thauvin-a-pris-le-gout-du-risque-contre-auxerre/1712884#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2b39106b0add",
@@ -1310,26 +1365,27 @@
       "i18n": {
         "es": {
           "title": "Ni tres minutos tardó Vinicius en tenérselas con un jugador del Espanyol",
-          "summary": "Vinicius no tardó ni tres minutos en tenérselas con un rival, concretamente con Cala .",
-          "needs_translation": false
+          "summary": "Vinicius protagonizó un enfrentamiento con Cala, jugador del Espanyol, antes de cumplirse los primeros tres minutos de partido.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "It didn't take Vinicius three minutes to deal with a Espanyol player",
-          "summary": "Vinicius did not take three minutes to deal with a rival, specifically with Cala .",
+          "title": "Vinicius took less than three minutes to clash with an Espanyol player",
+          "summary": "Vinicius was involved in an altercation with Espanyol player Cala less than three minutes into the match.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Il n'a pas fallu trois minutes à Vinicius pour s'en prendre à un joueur de l'Espanyol",
-          "summary": "Vinicius n'a pas mis trois minutes à s'en prendre à un rival, Cala .",
+          "title": "Vinicius s'est accroché avec un joueur de l'Espanyol en moins de trois minutes",
+          "summary": "Moins de trois minutes après le coup d'envoi, Vinicius a eu une altercation avec Cala, joueur de l'Espanyol.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "لم يستغرق فينيسيوس ثلاث دقائق للتعامل مع لاعب إسبانيول",
-          "summary": "لم يستغرق فينيسيوس ثلاث دقائق للتعامل مع منافس، وتحديدا مع كالا .",
+          "title": "فينيسيوس يدخل في مشادة مع لاعب إسبانيول في أقل من ثلاث دقائق",
+          "summary": "دخل فينيسيوس في مشادة مع كالا، لاعب إسبانيول، بعد مرور أقل من ثلاث دقائق على انطلاق المباراة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260822/1004218702/tres-minutos-tardo-vinicius-tenerselas-jugador-espanyol.html",
@@ -1351,7 +1407,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260822/1004218702/tres-minutos-tardo-vinicius-tenerselas-jugador-espanyol.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "07c82c0ec13f",
@@ -1360,26 +1421,27 @@
       "i18n": {
         "es": {
           "title": "Bellingham marca el primer gol oficial de la temporada en el Real Madrid",
-          "summary": "El Real Madrid se adelantó en el marcador en el duelo ante el Espanyol. El autor del primer gol oficial de la temporada del Real Madrid fue Jude Bellingham e n el minuto nueve del encuentro.",
-          "needs_translation": false
+          "summary": "Jude Bellingham adelantó al Real Madrid en el minuto nueve frente al Espanyol, firmando el primer gol oficial del equipo en la temporada.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Bellingham scores first official goal of the season at Real Madrid",
-          "summary": "Real Madrid advanced on the scoreboard in the match against Espanyol. The author of Real Madrid's first official goal of the season was Jude Bellingham in the ninth minute of the match.",
+          "title": "Bellingham scores Real Madrid's first official goal of the season",
+          "summary": "Jude Bellingham gave Real Madrid the lead in the ninth minute against Espanyol, scoring the club's first official goal of the season.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Bellingham marque le premier but officiel de la saison au Real Madrid",
-          "summary": "Le Real Madrid a pris de l'avance sur le score lors du duel contre l'Espanyol. L'auteur du premier but officiel de la saison du Real Madrid était Jude Bellingham à la neuvième minute de la rencontre.",
+          "title": "Bellingham inscrit le premier but officiel de la saison du Real Madrid",
+          "summary": "Jude Bellingham a ouvert le score pour le Real Madrid dès la 9e minute contre l'Espanyol, marquant ainsi le premier but officiel du club cette saison.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "بيلينغهام يسجل أول هدف رسمي لهذا الموسم في ريال مدريد",
-          "summary": "تقدم ريال مدريد على لوحة النتائج في المباراة ضد إسبانيول. صاحب أول هدف رسمي لريال مدريد هذا الموسم هو جود بيلينجهام في الدقيقة التاسعة من المباراة.",
+          "title": "بيلينغهام يسجل أول أهداف ريال مدريد الرسمية هذا الموسم",
+          "summary": "افتتح جود بيلينغهام التسجيل لصالح ريال مدريد في الدقيقة التاسعة أمام إسبانيول، محرزاً أول أهداف الفريق الرسمية في الموسم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260822/1004218701/bellingham-marca-primer-gol-oficial-temporada-real-madrid.html",
@@ -1401,7 +1463,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260822/1004218701/bellingham-marca-primer-gol-oficial-temporada-real-madrid.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "25b84a6ac7ff",
@@ -1459,33 +1526,34 @@
       "summary": "Edin Terzic hat mit Bilbao einen Fehlstart in die neue Saison hingelegt. Nach der Partie sprach der Ex-BVB-Coach über die Gründe für die Niederlage.",
       "i18n": {
         "de": {
-          "title": "Terzic kritisch nach Fehlstart: \"Einfache, schlampige Fehler\"",
-          "summary": "Edin Terzic hat mit Bilbao einen Fehlstart in die neue Saison hingelegt. Nach der Partie sprach der Ex-BVB-Coach über die Gründe für die Niederlage.",
-          "needs_translation": false
+          "title": "Terzic kritisch nach Fehlstart: „Einfache, schlampige Fehler“",
+          "summary": "Nach dem Fehlstart von Bilbao in die neue Saison analysierte Edin Terzic die Niederlage und führte einfache sowie schlampige Fehler als Gründe an.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Terzic critical after false start: \"Simple, sloppy mistakes\"",
-          "summary": "Edin Terzic made a false start to the new season with Bilbao. After the game, the former BVB coach spoke about the reasons for the defeat.",
+          "title": "Terzic critical after poor start: \"Simple, sloppy mistakes\"",
+          "summary": "Following Bilbao's losing start to the new Saison, Edin Terzic explained the defeat by pointing out simple and sloppy mistakes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Terzic critique après un faux départ : « Erreurs simples et bâclées »",
-          "summary": "Edin Terzic a pris un mauvais départ dans la nouvelle saison avec Bilbao. Après la partie, l'ancien entraîneur du BVB a parlé des raisons de la défaite.",
+          "title": "Terzic critique après un faux départ : « Des erreurs simples et négligentes »",
+          "summary": "Après la défaite inaugurale de Bilbao dans la nouvelle Saison, Edin Terzic a analysé le revers en déplorant des erreurs simples et évitables.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Terzic crítico después del inicio incorrecto: \"Errores simples y descuidados\"",
-          "summary": "Edin Terzic ha dado un mal comienzo a la nueva temporada con Bilbao. Después del partido, el ex entrenador del BVB habló sobre las razones de la derrota.",
+          "title": "Terzic, crítico tras un mal arranque: \"Errores simples y descuidados\"",
+          "summary": "Tras el tropiezo de Bilbao en el inicio de la nueva Saison, Edin Terzic analizó la derrota y señaló varios errores simples e inexplicables.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تيرزيتش حرج بعد بداية خاطئة: \"أخطاء بسيطة ومهملة\"",
-          "summary": "بدأ إدين تيرزيتش بداية خاطئة للموسم الجديد مع بلباو. بعد المباراة، تحدث مدرب BVB السابق عن أسباب الهزيمة.",
+          "title": "تيرزيتش ينتقد فريقه بعد البداية السيئة: \"أخطاء بسيطة وغير مقبولة\"",
+          "summary": "عقب بداية بيلباو المتعثرة في الموسم الجديد، حلل المدرب إدين تيرزيتش أسباب الهزيمة منتقداً ارتكاب فريقه أخطاء بسيطة كلفته النتيجة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/terzic-kritisch-nach-fehlstart-einfache-schlampige-fehler-1245901/video#omrss",
@@ -1507,7 +1575,12 @@
           "url": "https://www.kicker.de/terzic-kritisch-nach-fehlstart-einfache-schlampige-fehler-1245901/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8c916351da96",
@@ -1516,32 +1589,33 @@
       "i18n": {
         "de": {
           "title": "Eberl bestätigt Kane-Gespräche - Fabinho soll Salah folgen",
-          "summary": "Wer wechselt wohin? Wer ist wo im Gespräch?",
-          "needs_translation": false
+          "summary": "Eberl hat Gespräche bezüglich Harry Kane bestätigt. Zudem könnte Fabinho den Weg von Salah einschlagen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Eberl confirms Kane talks - Fabinho to follow Salah",
-          "summary": "Who is moving to where? Who is in conversation where?",
+          "title": "Eberl confirms Kane talks - Fabinho could follow Salah",
+          "summary": "Eberl has confirmed negotiations regarding Harry Kane, while Fabinho could potentially follow Salah.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Eberl confirme les discussions de Kane - Fabinho devrait suivre Salah",
-          "summary": "Qui va où ? Qui est où dans la conversation ?",
+          "title": "Eberl confirme des discussions pour Kane - Fabinho pourrait suivre Salah",
+          "summary": "Eberl a confirmé des négociations concernant Harry Kane, tandis que Fabinho pourrait emboîter le pas à Salah.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Eberl confirma las conversaciones de Kane - Fabinho debe seguir a Salah",
-          "summary": "¿Quién se muda a dónde? ¿Quién está hablando dónde?",
+          "title": "Eberl confirma conversaciones por Kane - Fabinho podría seguir a Salah",
+          "summary": "Eberl confirmó negociaciones en torno a Harry Kane, mientras que Fabinho podría seguir los pasos de Salah.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "إيبرل يؤكد محادثات كين - فابينيو لمتابعة صلاح",
-          "summary": "من ينتقل إلى أين ؟ من يتحدث إلى أين ؟",
+          "title": "إيبرل يؤكد محادثات كين - فابينيو قد يلحق بصلاح",
+          "summary": "أكد إيبرل وجود محادثات بخصوص هاري كين، وسط أنباء ترجح إمكانية لحاق فابينيو بزميله صلاح في سوق الانتقالات.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/transferticker-953155/artikel#omrss",
@@ -1563,7 +1637,12 @@
           "url": "https://www.kicker.de/transferticker-953155/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0356235ad7f3",
@@ -1571,24 +1650,28 @@
       "summary": "Nueva victoria en la pretemporada del Barça de fútbol sala .",
       "i18n": {
         "es": {
-          "title": "4-1: Un Barça intratable tumba a Peñíscola",
-          "summary": "Nueva victoria en la pretemporada del Barça de fútbol sala .",
-          "needs_translation": false
+          "title": "4-1: El Barça supera a Peñíscola",
+          "summary": "El equipo de fútbol sala del Barça sumó una nueva victoria de pretemporada al imponerse por 4-1 a Peñíscola.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "4-1: Un Barça intratable tumba a Peñíscola",
-          "summary": "Nueva victoria en la pretemporada del Barça de fútbol sala .",
-          "needs_translation": true
+          "title": "4-1: Barça defeat Peñíscola",
+          "summary": "Barça's futsal team secured another pre-season victory with a 4-1 win over Peñíscola.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "4-1: Un Barça intratable tumba a Peñíscola",
-          "summary": "Nueva victoria en la pretemporada del Barça de fútbol sala .",
-          "needs_translation": true
+          "title": "4-1 : Le Barça s'impose face à Peñíscola",
+          "summary": "L'équipe de futsal du Barça a enchaîné un nouveau succès de pré-saison en battant Peñíscola 4-1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "4-1: Un Barça intratable tumba a Peñíscola",
-          "summary": "Nueva victoria en la pretemporada del Barça de fútbol sala .",
-          "needs_translation": true
+          "title": "4-1: برشلونة يفوز على بينيسكولا",
+          "summary": "حقق فريق برشلونة لكرة الصالات فوزاً جديداً خلال تحضيرات الموسم الجديد بتغلبه على بينيسكولا بنتيجة 4-1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260822/1004218686/4-1-barca-intratable-tumba-peniscola.html",
@@ -1610,7 +1693,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260822/1004218686/4-1-barca-intratable-tumba-peniscola.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ba089fae668f",
@@ -1618,33 +1706,34 @@
       "summary": "Die Füchse Berlin mussten sich beim Supercup gegen den SC Magdeburg eingestehen, aktuell nicht auf Augenhöhe mit dem deutschen Meister zu sein. Laut Mathias Gidsel sei dies aber \"okay\".",
       "i18n": {
         "de": {
-          "title": "Gidsel: \"Sind nicht so weit, dass wir Magdeburg schlagen können\"",
-          "summary": "Die Füchse Berlin mussten sich beim Supercup gegen den SC Magdeburg eingestehen, aktuell nicht auf Augenhöhe mit dem deutschen Meister zu sein. Laut Mathias Gidsel sei dies aber \"okay\".",
-          "needs_translation": false
+          "title": "Gidsel: „Sind nicht so weit, dass wir Magdeburg schlagen können“",
+          "summary": "Nach der Niederlage im Supercup gegen den SC Magdeburg räumte Mathias Gidsel ein, dass Füchse Berlin aktuell noch nicht auf Augenhöhe mit dem deutschen Meister sei.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "Gidsel: \"We are not ready to beat Magdeburg\"",
-          "summary": "The Füchse Berlin had to admit at the Supercup against SC Magdeburg that they are currently not on par with the German champions. According to Mathias Gidsel, this is \"okay\".",
+          "summary": "Following their Supercup defeat against SC Magdeburg, Mathias Gidsel admitted that Füchse Berlin are currently not at the same level as the German champions.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Gidsel : « Nous ne sommes pas prêts à battre Magdebourg »",
-          "summary": "Les renards de Berlin ont dû admettre lors de la Supercup contre le SC Magdeburg qu'ils n'étaient actuellement pas sur un pied d'égalité avec le champion allemand. Selon Mathias Gidsel, c'est « bien ».",
+          "title": "Gidsel : « Nous ne sommes pas encore au niveau pour battre Magdeburg »",
+          "summary": "Après la défaite en Supercup face au SC Magdeburg, Mathias Gidsel a reconnu que Füchse Berlin n'était actuellement pas au même niveau que le champion d'Allemagne.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Gidsel: \"No estamos listos para vencer a Magdeburgo\"",
-          "summary": "Los Fuchs Berlin tuvieron que admitir en la Supercopa contra el SC Magdeburg que actualmente no están a la par con el campeón alemán. Según Mathias Gidsel, sin embargo, esto está \"bien\".",
+          "title": "Gidsel: \"No estamos en un nivel para vencer a Magdeburg\"",
+          "summary": "Tras la derrota en la Supercup ante el SC Magdeburg, Mathias Gidsel reconoció que Füchse Berlin todavía no está a la altura del campeón alemán.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "جيدسل: \"لسنا مستعدين لهزيمة ماغديبرغ\"",
-          "summary": "كان على نادي فوتشي برلين أن يعترف في كأس السوبر ضد نادي ماغديبرغ أنه ليس على قدم المساواة مع البطل الألماني في الوقت الحالي. وفقًا لماتياس جيدسل، هذا \"جيد\".",
+          "title": "غيدسيل: «لسنا في مستوى يسمح لنا بهزيمة ماغديبورغ»",
+          "summary": "اعترف ماتياس غيدسيل بعد الهزيمة في كأس السوبر أمام إس سي ماغديبورغ بأن نادي فوكس برلين ليس في نفس مستوى بطل الدوري الألماني حالياً.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/gidsel-sind-nicht-so-weit-dass-wir-magdeburg-schlagen-koennen-1245886/artikel#omrss",
@@ -1666,7 +1755,12 @@
           "url": "https://www.kicker.de/gidsel-sind-nicht-so-weit-dass-wir-magdeburg-schlagen-koennen-1245886/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3c7321749a84",
@@ -1675,23 +1769,27 @@
       "i18n": {
         "es": {
           "title": "Mourinho deja en el banquillo al fichaje más caro de la historia del Real Madrid",
-          "summary": "Diomande h a sido el fichaje estrella del Real Madrid este verano. El de Costa de Marfil, de 19 años, llegó al equipo blanco por 125 millones de euros, que pueden llegar a ser 140, que le pagó el Real Madrid al Leipzig.",
-          "needs_translation": false
+          "summary": "Mourinho dejó como suplente a Diomande, el fichaje estrella de 19 años llegado este verano al Real Madrid procedente del Leipzig por 125 millones de euros.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mourinho deja en el banquillo al fichaje más caro de la historia del Real Madrid",
-          "summary": "Diomande h a sido el fichaje estrella del Real Madrid este verano. El de Costa de Marfil, de 19 años, llegó al equipo blanco por 125 millones de euros, que pueden llegar a ser 140, que le pagó el Real Madrid al Leipzig.",
-          "needs_translation": true
+          "title": "Mourinho benches the most expensive signing in Real Madrid history",
+          "summary": "Mourinho benched 19-year-old Diomande, signed this summer by Real Madrid from Leipzig for 125 million Euro, a fee that could rise to 140 million.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Mourinho deja en el banquillo al fichaje más caro de la historia del Real Madrid",
-          "summary": "Diomande h a sido el fichaje estrella del Real Madrid este verano. El de Costa de Marfil, de 19 años, llegó al equipo blanco por 125 millones de euros, que pueden llegar a ser 140, que le pagó el Real Madrid al Leipzig.",
-          "needs_translation": true
+          "title": "Mourinho laisse sur le banc la recrue la plus chère de l'histoire du Real Madrid",
+          "summary": "Mourinho a laissé sur le banc Diomande, recruté cet été par le Real Madrid auprès du Leipzig pour 125 millions d'Euro pouvant atteindre 140 millions.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Mourinho deja en el banquillo al fichaje más caro de la historia del Real Madrid",
-          "summary": "Diomande h a sido el fichaje estrella del Real Madrid este verano. El de Costa de Marfil, de 19 años, llegó al equipo blanco por 125 millones de euros, que pueden llegar a ser 140, que le pagó el Real Madrid al Leipzig.",
-          "needs_translation": true
+          "title": "مورينيو يترك أغلى صفقة في تاريخ ريال مدريد على مقاعد البدلاء",
+          "summary": "أبقى المدرب مورينيو اللاعب ديوماندي على دكة البدلاء، بعد انتقاله هذا الصيف إلى ريال مدريد قادماً من لايبزيغ في صفقة بلغت 125 مليون يورو.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260822/1004218689/mourinho-deja-banquillo-fichaje-caro-historia-real-madrid.html",
@@ -1713,7 +1811,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260822/1004218689/mourinho-deja-banquillo-fichaje-caro-historia-real-madrid.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d187234d8ba5",
@@ -1867,6 +1970,19 @@
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
+        }
+      },
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-22T21:33:13+00:00"
         }
       }
     }
