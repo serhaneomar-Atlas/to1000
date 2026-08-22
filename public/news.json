@@ -229,32 +229,33 @@
       "i18n": {
         "de": {
           "title": "Jetzt live - Bayern führen weiter knapp, Bensebaini fliegt vom Platz",
-          "summary": "Der FC Bayern liegt kurz vor Schluss noch knapp in Führung und will das 2:1 über die Zeit bringen. Dortmund arbeitet am Ausgleich, spielt aber in Unterzahl.",
-          "needs_translation": false
+          "summary": "Der FC Bayern führt kurz vor Schluss mit 2:1 gegen Dortmund. Nach dem Platzverweis gegen Bensebaini spielt Dortmund in Unterzahl und drängt auf den Ausgleich.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Live now - Bavaria continues to lead narrowly, Bensebaini flies off the pitch",
-          "summary": "Shortly before the end, FC Bayern are still in the lead and want to win 2-1 over time. Dortmund are working on the equaliser, but are outnumbered.",
+          "title": "Live: Bayern hold narrow lead, Bensebaini sent off",
+          "summary": "FC Bayern lead Dortmund 2-1 in the closing stages of the match. Dortmund are pushing for an equalizer despite playing with ten men following Bensebaini's dismissal.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Maintenant en direct - la Bavière continue à mener de justesse, Bensebaini quitte le terrain",
-          "summary": "Le FC Bayern est encore en tête juste avant la fin et veut faire passer le score de 2:1 dans le temps. Dortmund travaille sur l'équilibre, mais joue en infériorité numérique.",
+          "title": "En direct : Bayern mène toujours de justesse, Bensebaini expulsé",
+          "summary": "Le FC Bayern mène 2-1 face à Dortmund en toute fin de rencontre. Réduit à dix après l'expulsion de Bensebaini, Dortmund tente d'égaliser.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ahora en vivo: Baviera sigue liderando por poco, Bensebaini vuela fuera de la cancha",
-          "summary": "El FC Bayern está cerca del final y quiere llevar el 2-1 a lo largo del tiempo. Dortmund está trabajando en la igualación, pero juega en inferioridad numérica.",
+          "title": "En directo: Bayern mantiene una ventaja mínima, Bensebaini expulsado",
+          "summary": "El FC Bayern lidera 2-1 ante Dortmund en los minutos finales. Pese a quedarse con diez jugadores por la expulsión de Bensebaini, Dortmund busca empatar.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباشر الآن - تستمر بافاريا في القيادة بفارق ضئيل، ويطير بنسبيني خارج الملعب",
-          "summary": "قبل وقت قصير من النهاية، لا يزال بايرن ميونيخ في الصدارة ويريد الفوز 2-1 مع مرور الوقت. يعمل دورتموند على التعادل، لكنه يفوقه عدداً.",
+          "title": "مباشر: بايرن ميونخ يواصل تقدمه الصعب وطرد بن سبعيني",
+          "summary": "يتقدم بايرن ميونخ بنتيجة 2-1 على بوروسيا دورتموند في الدقائق الأخيرة. ويلعب دورتموند بنقص عددي بعد طرد بن سبعيني ويسعى لتسجيل هدف التعادل.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/deutschland-supercup/ma12025496/borussia-dortmund_bayern-muenchen/liveticker",
@@ -276,7 +277,12 @@
           "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/deutschland-supercup/ma12025496/borussia-dortmund_bayern-muenchen/liveticker"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "aa097ea7e51e",
@@ -335,26 +341,27 @@
       "i18n": {
         "en": {
           "title": "De Zerbi learns cash alone cannot fix Spurs' losing mentality",
-          "summary": "Spurs head coach Roberto De Zerbi discovers cash is no cure for a losing mentality as they crash to a heavy defeat at Brentford, says chief football writer Phil McNulty.",
-          "needs_translation": false
+          "summary": "Roberto De Zerbi suffered a heavy defeat with Spurs at Brentford, highlighting persistent mentality issues despite heavy financial investment.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "De Zerbi apprend que l'argent seul ne peut pas réparer la mentalité perdante des Spurs",
-          "summary": "L'entraîneur-chef des Spurs, Roberto De Zerbi, découvre que l'argent n'est pas un remède à une mentalité perdante alors qu'ils subissent une lourde défaite à Brentford, a déclaré le rédacteur en chef du football, Phil McNulty.",
+          "title": "De Zerbi apprend que l'argent seul ne peut pas corriger la mentalité perdante des Spurs",
+          "summary": "Roberto De Zerbi et les Spurs ont subi une lourde défaite face à Brentford, démontrant que les investissements financiers ne suffisent pas à surmonter la mentalité perdante du club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "De Zerbi aprende que el efectivo por sí solo no puede arreglar la mentalidad perdedora de los Spurs",
-          "summary": "El entrenador en jefe de los Spurs, Roberto De Zerbi, descubre que el efectivo no es una cura para una mentalidad perdedora, ya que se estrellan contra una fuerte derrota en Brentford, dice el escritor jefe de fútbol Phil McNulty.",
+          "title": "De Zerbi aprende que el dinero por sí solo no puede arreglar la mentalidad perdedora de los Spurs",
+          "summary": "Roberto De Zerbi sufrió una dura derrota con los Spurs ante Brentford, confirmando que la inversión económica no basta para cambiar la mentalidad perdedora del equipo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يتعلم دي زيربي أن النقد وحده لا يمكنه إصلاح عقلية خسارة توتنهام",
-          "summary": "يكتشف روبرتو دي زيربي، مدرب توتنهام، أن النقد ليس علاجًا لعقلية خاسرة حيث يصطدم بهزيمة ثقيلة في برينتفورد، كما يقول كبير كتاب كرة القدم فيل ماكنولتي.",
+          "title": "دي زيربي يدرك أن المال وحده لا يكفي لتغيير عقلية توتنهام الانهزامية",
+          "summary": "تلقى توتنهام بقيادة مدربه روبرتو دي زيربي هزيمة ثقيلة أمام برينتفورد، مما أظهر أن الإنفاق المالي وحده لا يكفي لعلاج العقلية الانهزامية للفريق.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cd696j44jqyo?at_medium=RSS&at_campaign=rss",
@@ -376,7 +383,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cd696j44jqyo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9ca66748f7b9",
@@ -435,26 +447,27 @@
       "i18n": {
         "fr": {
           "title": "PSG : surprendre et changer, le défi de Luis Enrique pour rester au top en France et sur la scène européenne",
-          "summary": "DÉCRYPTAGE – Le Paris-SG débute ce dimanche soir (20h45), à Rennes, sa campagne de Ligue 1, la quatrième du coach espagnol sur le banc du club de la capitale.",
-          "needs_translation": false
+          "summary": "Le Paris-SG débute sa saison de Ligue 1 ce dimanche à Rennes (20h45). Luis Enrique entame une nouvelle campagne avec l'objectif de maintenir le club au sommet en France et en Europe.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "PSG: surprising and changing, Luis Enrique's challenge to stay on top in France and on the European scene",
-          "summary": "DECODING – Paris-SG starts this Sunday evening (20:45), in Rennes, its Ligue 1 campaign, the fourth of the Spanish coach on the bench of the capital's club.",
+          "title": "PSG: surprising and changing, Luis Enrique's challenge to stay at the top in France and in Europe",
+          "summary": "Paris-SG kick off their Ligue 1 campaign this Sunday at Rennes (20:45). Manager Luis Enrique aims to reinvent his team to keep them at the top in France and Europe.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "PSG: sorprender y cambiar, el desafío de Luis Enrique para mantenerse en la cima en Francia y en la escena europea",
-          "summary": "DESCIFRAMIENTO – El París SG comienza este domingo por la noche (20:45), en Rennes, su campaña de Ligue 1, la cuarta del entrenador español en el banquillo del club de la capital.",
+          "title": "PSG: sorprender y cambiar, el desafío de Luis Enrique para mantenerse en la cima en France y en Europa",
+          "summary": "El Paris-SG debuta este domingo en Ligue 1 visitando a Rennes (20:45). Luis Enrique afronta una nueva campaña con el reto de mantener al equipo en lo más alto en France y Europa.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "باريس سان جيرمان: من المستغرب والمتغير، تحدي لويس إنريكي للبقاء على القمة في فرنسا وعلى الساحة الأوروبية",
-          "summary": "فك التشفير – يبدأ باريس إس جي مساء الأحد (20:45)، في رين، حملة دوري الدرجة الأولى، رابع مدرب إسباني على مقاعد البدلاء في نادي العاصمة.",
+          "title": "باريس سان جيرمان: التجديد والمفاجأة، تحدي لويس إنريكي للبقاء في القمة محلياً وأوروبياً",
+          "summary": "يبدأ باريس سان جيرمان مشواره في الدوري الفرنسي مساء الأحد أمام رين، حيث يسعى المدرب لويس إنريكي للحفاظ على تفوق فريقه محلياً وقارياً.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-1/psg-surprendre-et-changer-le-defi-de-luis-enrique-pour-rester-au-top-en-france-et-sur-la-scene-europeenne-20260822",
@@ -476,7 +489,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-1/psg-surprendre-et-changer-le-defi-de-luis-enrique-pour-rester-au-top-en-france-et-sur-la-scene-europeenne-20260822"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2b39106b0add",
@@ -485,26 +503,27 @@
       "i18n": {
         "es": {
           "title": "Ni tres minutos tardó Vinicius en tenérselas con un jugador del Espanyol",
-          "summary": "Vinicius no tardó ni tres minutos en tenérselas con un rival, concretamente con Cala .",
-          "needs_translation": false
+          "summary": "Vinicius protagonizó un enfrentamiento con Cala, jugador del Espanyol, antes de cumplirse los primeros tres minutos de partido.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "It didn't take Vinicius three minutes to deal with a Espanyol player",
-          "summary": "Vinicius did not take three minutes to deal with a rival, specifically with Cala .",
+          "title": "Vinicius took less than three minutes to clash with an Espanyol player",
+          "summary": "Vinicius was involved in an altercation with Espanyol player Cala less than three minutes into the match.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Il n'a pas fallu trois minutes à Vinicius pour s'en prendre à un joueur de l'Espanyol",
-          "summary": "Vinicius n'a pas mis trois minutes à s'en prendre à un rival, Cala .",
+          "title": "Vinicius s'est accroché avec un joueur de l'Espanyol en moins de trois minutes",
+          "summary": "Moins de trois minutes après le coup d'envoi, Vinicius a eu une altercation avec Cala, joueur de l'Espanyol.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "لم يستغرق فينيسيوس ثلاث دقائق للتعامل مع لاعب إسبانيول",
-          "summary": "لم يستغرق فينيسيوس ثلاث دقائق للتعامل مع منافس، وتحديدا مع كالا .",
+          "title": "فينيسيوس يدخل في مشادة مع لاعب إسبانيول في أقل من ثلاث دقائق",
+          "summary": "دخل فينيسيوس في مشادة مع كالا، لاعب إسبانيول، بعد مرور أقل من ثلاث دقائق على انطلاق المباراة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260822/1004218702/tres-minutos-tardo-vinicius-tenerselas-jugador-espanyol.html",
@@ -526,7 +545,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260822/1004218702/tres-minutos-tardo-vinicius-tenerselas-jugador-espanyol.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c9c5d2a7667d",
@@ -634,27 +658,28 @@
       "summary": "Sigue la cobertura del partido de fútbol, que enfrenta al Espanyol de Manolo González contra el Real Madrid de José Mourinho.",
       "i18n": {
         "es": {
-          "title": "¡Gol de Bellingham!",
-          "summary": "Sigue la cobertura del partido de fútbol, que enfrenta al Espanyol de Manolo González contra el Real Madrid de José Mourinho.",
-          "needs_translation": false
+          "title": "Gol de Bellingham",
+          "summary": "Jude Bellingham marca para el Real Madrid de José Mourinho en su enfrentamiento contra el Espanyol de Manolo González.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Bellingham Goal!",
-          "summary": "Follow the coverage of the football match, which pits Manolo González's Espanyol against José Mourinho's Real Madrid.",
+          "title": "Bellingham goal",
+          "summary": "Jude Bellingham scored for José Mourinho's Real Madrid against Manolo González's Espanyol.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "But de Bellingham !",
-          "summary": "Suit la couverture du match de football, qui oppose l'Espanyol de Manolo González au Real Madrid de José Mourinho.",
+          "title": "But de Bellingham",
+          "summary": "Jude Bellingham a marqué pour le Real Madrid de José Mourinho face au Espanyol de Manolo González.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هدف بيلينغهام!",
-          "summary": "تابع تغطية مباراة كرة القدم، التي تضم إسبانيول مانولو غونزاليس ضد ريال مدريد خوسيه مورينيو.",
+          "title": "هدف بيلينغهام",
+          "summary": "سجل جود بيلينغهام هدفاً لريال مدريد بقيادة جوزيه مورينيو في شباك إسبانيول بقيادة مانولو غونزاليس.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260822/1004218601/espanyol-real-madrid-partido-futbol-hoy-en-directo-laliga-ea-sports-ext-pau.html",
@@ -676,7 +701,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260822/1004218601/espanyol-real-madrid-partido-futbol-hoy-en-directo-laliga-ea-sports-ext-pau.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2ee4a5e5d694",
@@ -685,26 +715,27 @@
       "i18n": {
         "es": {
           "title": "El distendido encuentro de Martínez Quarta con un ex River y un famoso actor",
-          "summary": "En la previa del partido frente a Vélez, el defensor compartió un momento especial.",
-          "needs_translation": false
+          "summary": "Antes del partido contra Vélez, el defensor Martínez Quarta compartió un momento distendido junto a un exjugador de River y un reconocido actor.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Martínez Quarta's relaxed encounter with a former River and a famous actor",
-          "summary": "In the run-up to the match against Vélez, the defender shared a special moment.",
+          "title": "Martínez Quarta's relaxed meeting with an ex-River player and a famous actor",
+          "summary": "Ahead of the match against Vélez, defender Martínez Quarta spent some relaxed time with a former River player and a famous actor.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La rencontre détendue de Martínez Quarta avec un ancien River et un célèbre acteur",
-          "summary": "Avant le match contre Vélez, le défenseur a partagé un moment spécial.",
+          "title": "La rencontre détendue de Martínez Quarta avec un ancien de River et un acteur célèbre",
+          "summary": "Avant le match face à Vélez, le défenseur Martínez Quarta a partagé un moment convivial avec un ancien joueur de River et un acteur renommé.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "لقاء مارتينيز كوارتا المريح مع نهر سابق وممثل مشهور",
-          "summary": "في الفترة التي سبقت المباراة ضد فيليز، شارك المدافع لحظة خاصة.",
+          "title": "لقاء ودي يجمع مارتينيز كوارتا بلاعب سابق في ريفر وممثل شهير",
+          "summary": "التقى المدافع مارتينيز كوارتا بلاعب سابق في صفوف ريفر وممثل شهير في أجواء ودية، وذلك قبل مواجهة نادي فيليز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-plate-pity-martinez-lucas-martinez-quarta-encuentro_0_cpk5ve8dvg.html",
@@ -726,7 +757,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-plate-pity-martinez-lucas-martinez-quarta-encuentro_0_cpk5ve8dvg.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "25b84a6ac7ff",
@@ -784,33 +820,34 @@
       "summary": "Edin Terzic hat mit Bilbao einen Fehlstart in die neue Saison hingelegt. Nach der Partie sprach der Ex-BVB-Coach über die Gründe für die Niederlage.",
       "i18n": {
         "de": {
-          "title": "Terzic kritisch nach Fehlstart: \"Einfache, schlampige Fehler\"",
-          "summary": "Edin Terzic hat mit Bilbao einen Fehlstart in die neue Saison hingelegt. Nach der Partie sprach der Ex-BVB-Coach über die Gründe für die Niederlage.",
-          "needs_translation": false
+          "title": "Terzic kritisch nach Fehlstart: „Einfache, schlampige Fehler“",
+          "summary": "Nach dem Fehlstart von Bilbao in die neue Saison analysierte Edin Terzic die Niederlage und führte einfache sowie schlampige Fehler als Gründe an.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Terzic critical after false start: \"Simple, sloppy mistakes\"",
-          "summary": "Edin Terzic made a false start to the new season with Bilbao. After the game, the former BVB coach spoke about the reasons for the defeat.",
+          "title": "Terzic critical after poor start: \"Simple, sloppy mistakes\"",
+          "summary": "Following Bilbao's losing start to the new Saison, Edin Terzic explained the defeat by pointing out simple and sloppy mistakes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Terzic critique après un faux départ : « Erreurs simples et bâclées »",
-          "summary": "Edin Terzic a pris un mauvais départ dans la nouvelle saison avec Bilbao. Après la partie, l'ancien entraîneur du BVB a parlé des raisons de la défaite.",
+          "title": "Terzic critique après un faux départ : « Des erreurs simples et négligentes »",
+          "summary": "Après la défaite inaugurale de Bilbao dans la nouvelle Saison, Edin Terzic a analysé le revers en déplorant des erreurs simples et évitables.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Terzic crítico después del inicio incorrecto: \"Errores simples y descuidados\"",
-          "summary": "Edin Terzic ha dado un mal comienzo a la nueva temporada con Bilbao. Después del partido, el ex entrenador del BVB habló sobre las razones de la derrota.",
+          "title": "Terzic, crítico tras un mal arranque: \"Errores simples y descuidados\"",
+          "summary": "Tras el tropiezo de Bilbao en el inicio de la nueva Saison, Edin Terzic analizó la derrota y señaló varios errores simples e inexplicables.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تيرزيتش حرج بعد بداية خاطئة: \"أخطاء بسيطة ومهملة\"",
-          "summary": "بدأ إدين تيرزيتش بداية خاطئة للموسم الجديد مع بلباو. بعد المباراة، تحدث مدرب BVB السابق عن أسباب الهزيمة.",
+          "title": "تيرزيتش ينتقد فريقه بعد البداية السيئة: \"أخطاء بسيطة وغير مقبولة\"",
+          "summary": "عقب بداية بيلباو المتعثرة في الموسم الجديد، حلل المدرب إدين تيرزيتش أسباب الهزيمة منتقداً ارتكاب فريقه أخطاء بسيطة كلفته النتيجة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/terzic-kritisch-nach-fehlstart-einfache-schlampige-fehler-1245901/video#omrss",
@@ -832,7 +869,12 @@
           "url": "https://www.kicker.de/terzic-kritisch-nach-fehlstart-einfache-schlampige-fehler-1245901/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ba73a7a001d7",
@@ -841,26 +883,27 @@
       "i18n": {
         "fr": {
           "title": "Liga : Mbappé et Konaté titulaires avec le Real",
-          "summary": "José Mourinho aligne deux de ses internationaux tricolores ce samedi, pour affronter l’Espanyol lors de la deuxième journée de Liga.",
-          "needs_translation": false
+          "summary": "José Mourinho titularise Mbappé et Konaté avec le Real pour affronter l'Espanyol lors de la deuxième journée de Liga ce samedi.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Liga: Mbappé and Konaté start with Real",
-          "summary": "José Mourinho will line up two of his French internationals this Saturday to face Espanyol on the second day of La Liga.",
+          "title": "Liga: Mbappé and Konaté start for Real",
+          "summary": "José Mourinho starts Mbappé and Konaté for Real to face Espanyol on matchday 2 of Liga this Saturday.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
           "title": "Liga: Mbappé y Konaté titulares con el Real",
-          "summary": "José Mourinho alineará a dos de sus internacionales tricolores este sábado, para enfrentarse al Espanyol en la segunda jornada de Liga.",
+          "summary": "José Mourinho alinea como titulares a Mbappé y Konaté en el Real para enfrentarse al Espanyol en la segunda jornada de Liga este sábado.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الدوري الإسباني: مبابي وكوناتي يبدأان بالريال",
-          "summary": "سينضم خوسيه مورينيو إلى اثنين من منتخباته الدولية الفرنسية يوم السبت لمواجهة إسبانيول في اليوم الثاني من الدوري الإسباني.",
+          "title": "الدوري الإسباني: مبابي وكوناتي أساسيان مع ريال مدريد",
+          "summary": "يدفع المدرب جوزيه مورينيو بالثنائي كيليان مبابي وكوناتي أساسيين في تشكيلة ريال مدريد أمام إسبانيول، ضمن الجولة الثانية من الدوري الإسباني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/espagne/liga-mbappe-et-konate-titulaires-avec-le-real-20260822",
@@ -882,7 +925,12 @@
           "url": "https://www.lefigaro.fr/sports/football/espagne/liga-mbappe-et-konate-titulaires-avec-le-real-20260822"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8c916351da96",
@@ -891,32 +939,33 @@
       "i18n": {
         "de": {
           "title": "Eberl bestätigt Kane-Gespräche - Fabinho soll Salah folgen",
-          "summary": "Wer wechselt wohin? Wer ist wo im Gespräch?",
-          "needs_translation": false
+          "summary": "Eberl hat Gespräche bezüglich Harry Kane bestätigt. Zudem könnte Fabinho den Weg von Salah einschlagen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Eberl confirms Kane talks - Fabinho to follow Salah",
-          "summary": "Who is moving to where? Who is in conversation where?",
+          "title": "Eberl confirms Kane talks - Fabinho could follow Salah",
+          "summary": "Eberl has confirmed negotiations regarding Harry Kane, while Fabinho could potentially follow Salah.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Eberl confirme les discussions de Kane - Fabinho devrait suivre Salah",
-          "summary": "Qui va où ? Qui est où dans la conversation ?",
+          "title": "Eberl confirme des discussions pour Kane - Fabinho pourrait suivre Salah",
+          "summary": "Eberl a confirmé des négociations concernant Harry Kane, tandis que Fabinho pourrait emboîter le pas à Salah.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Eberl confirma las conversaciones de Kane - Fabinho debe seguir a Salah",
-          "summary": "¿Quién se muda a dónde? ¿Quién está hablando dónde?",
+          "title": "Eberl confirma conversaciones por Kane - Fabinho podría seguir a Salah",
+          "summary": "Eberl confirmó negociaciones en torno a Harry Kane, mientras que Fabinho podría seguir los pasos de Salah.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "إيبرل يؤكد محادثات كين - فابينيو لمتابعة صلاح",
-          "summary": "من ينتقل إلى أين ؟ من يتحدث إلى أين ؟",
+          "title": "إيبرل يؤكد محادثات كين - فابينيو قد يلحق بصلاح",
+          "summary": "أكد إيبرل وجود محادثات بخصوص هاري كين، وسط أنباء ترجح إمكانية لحاق فابينيو بزميله صلاح في سوق الانتقالات.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/transferticker-953155/artikel#omrss",
@@ -938,7 +987,12 @@
           "url": "https://www.kicker.de/transferticker-953155/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ceda65132080",
@@ -947,26 +1001,27 @@
       "i18n": {
         "es": {
           "title": "La verdad de Traverso sobre un histórico triunfo de Boca en Libertadores: \"No se coman la galletita...\"",
-          "summary": "El ex futbolista xeneize publicó un video para que \"la historia se respete\" y apuntó contra quienes la cuentan cambiada.",
-          "needs_translation": false
+          "summary": "El exfutbolista de Boca, Traverso, publicó un video para aclarar los hechos de una histórica victoria en la Copa Libertadores y pedir que se respete la historia del club.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Traverso's truth about a historic triumph of Boca in Libertadores: \"Don't eat the cookie...\"",
-          "summary": "The former footballer xeneize published a video so that \"the story is respected\" and took aim at those who tell it changed.",
+          "title": "Traverso's truth about a historic Boca victory in the Libertadores: \"Don't be fooled...\"",
+          "summary": "Former Boca player Traverso released a video to set the record straight about a historic Copa Libertadores victory, calling for respect toward the club's history.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La vérité de Traverso sur un triomphe historique de Boca en Libertadores : \"Ne mangez pas le biscuit...\"",
-          "summary": "L'ancien footballeur xeneize a publié une vidéo pour que « l'histoire soit respectée » et a ciblé ceux qui la racontent changée.",
+          "title": "La vérité de Traverso sur une victoire historique de Boca en Libertadores : « Ne vous faites pas avoir... »",
+          "summary": "L'ancien joueur de Boca, Traverso, a publié une vidéo afin de rétablir la vérité sur une victoire historique en Copa Libertadores face aux récits déformés.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "حقيقة ترافيرسو حول انتصار تاريخي لبوكا في ليبرتادوريس: \"لا تأكل الكعكة...\"",
-          "summary": "نشر لاعب كرة القدم السابق xeneize مقطع فيديو حتى \"يتم احترام القصة\" واستهدف أولئك الذين يروونها تغيرت.",
+          "title": "ترافيرسو يكشف الحقيقة وراء فوز تاريخي لبوكا في الليبرتادوريس: \"لا تنخدعوا...\"",
+          "summary": "نشر لاعب بوكا جونيورز السابق، ترافيرسو، مقطع فيديو لتوضيح الحقائق حول فوز تاريخي في بطولة كوبا ليبرتادوريس والتصدي للروايات المغلوطة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/verdad-traverso-historico-triunfo-boca-libertadores-coman-galletita_0_4BFz0OWKZX.html",
@@ -988,7 +1043,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/verdad-traverso-historico-triunfo-boca-libertadores-coman-galletita_0_4BFz0OWKZX.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b7f040ac5ecf",
@@ -997,25 +1057,27 @@
       "i18n": {
         "en": {
           "title": "Spurs 'didn't fight in the right way' - De Zerbi",
-          "summary": "Tottenham Hotspur head coach Roberto Di Zerbi believes his side \"didn't fight in the right way\" in their 3-0 loss to Brentford in the opening match of the 2026-27 Premier League season.",
-          "needs_translation": false
+          "summary": "Tottenham Hotspur head coach Roberto Di Zerbi stated his team \"didn't fight in the right way\" following their 3-0 defeat to Brentford in their 2026-27 Premier League opener.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Les éperons « ne se sont pas battus dans le bon sens » - De Zerbi",
-          "summary": "L'entraîneur-chef de Tottenham Hotspur, Roberto Di Zerbi, estime que son équipe « ne s'est pas battue de la bonne manière » lors de sa défaite 3-0 contre Brentford lors du match d'ouverture de la saison 2026-2027 de Premier League.",
+          "title": "Les Spurs « ne se sont pas battus de la bonne manière » selon De Zerbi",
+          "summary": "L'entraîneur de Tottenham Hotspur, Roberto Di Zerbi, a estimé que son équipe « ne s'est pas battue de la bonne manière » lors de sa défaite 3-0 face à Brentford en ouverture de Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Los Spurs 'no lucharon de la manera correcta' - De Zerbi",
-          "summary": "Tottenham Hotspur head coach Roberto Di Zerbi believes his side \"didn't fight in the right way\" in their 3-0 loss to Brentford in the opening match of the 2026-27 Premier League season.",
+          "title": "Los Spurs 'no lucharon de la manera correcta', según De Zerbi",
+          "summary": "El entrenador de Tottenham Hotspur, Roberto Di Zerbi, afirmó que su equipo «no luchó de la manera correcta» tras caer 3-0 ante Brentford en el inicio de la Premier League 2026-27.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Spurs 'didn't fight in the right way' - De Zerbi",
-          "summary": "Tottenham Hotspur head coach Roberto Di Zerbi believes his side \"didn't fight in the right way\" in their 3-0 loss to Brentford in the opening match of the 2026-27 Premier League season.",
-          "needs_translation": true
+          "title": "دي زيربي: توتنهام «لم يقاتل بالطريقة الصحيحة»",
+          "summary": "صرح روبرتو دي زيربي، مدرب توتنهام هوتسبير، بأن فريقه «لم يقاتل بالطريقة الصحيحة» بعد الخسارة بنتيجة 3-0 أمام برينتفورد في افتتاح موسم 2026-2027 من الدوري الإنجليزي الممتاز.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/videos/cp8x8jl4yj2o?at_medium=RSS&at_campaign=rss",
@@ -1037,7 +1099,12 @@
           "url": "https://www.bbc.co.uk/sport/football/videos/cp8x8jl4yj2o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f6daa99a7a60",
@@ -1046,23 +1113,27 @@
       "i18n": {
         "fr": {
           "title": "Fabien Barthez, entraîneur des gardiens de l'équipe de France, présent au Stadium pour Toulouse-OL",
-          "summary": "Le nouvel entraîneur des gardiens de l'équipe de France, Fabien Barthez, est présent dans les tribunes du Stadium pour le match de Ligue 1 entre Toulouse et l'OL, ce samedi.",
-          "needs_translation": false
+          "summary": "Le nouvel entraîneur des gardiens de l'équipe de France, Fabien Barthez, a assisté ce samedi au match de Ligue 1 opposant Toulouse à l'OL depuis les tribunes du Stadium.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Fabien Barthez, entraîneur des gardiens de l'équipe de France, présent au Stadium pour Toulouse-OL",
-          "summary": "Le nouvel entraîneur des gardiens de l'équipe de France, Fabien Barthez, est présent dans les tribunes du Stadium pour le match de Ligue 1 entre Toulouse et l'OL, ce samedi.",
-          "needs_translation": true
+          "title": "Fabien Barthez, France goalkeeper coach, present at the Stadium for Toulouse-OL",
+          "summary": "The new France goalkeeper coach, Fabien Barthez, was in the stands at the Stadium on Saturday to watch the Ligue 1 match between Toulouse and OL.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Fabien Barthez, entraîneur des gardiens de l'équipe de France, présent au Stadium pour Toulouse-OL",
-          "summary": "Le nouvel entraîneur des gardiens de l'équipe de France, Fabien Barthez, est présent dans les tribunes du Stadium pour le match de Ligue 1 entre Toulouse et l'OL, ce samedi.",
-          "needs_translation": true
+          "title": "Fabien Barthez, entrenador de porteros de France, presente en el Stadium para el Toulouse-OL",
+          "summary": "El nuevo entrenador de porteros de France, Fabien Barthez, presenció este sábado desde las gradas del Stadium el partido de Ligue 1 entre Toulouse y el OL.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Fabien Barthez, entraîneur des gardiens de l'équipe de France, présent au Stadium pour Toulouse-OL",
-          "summary": "Le nouvel entraîneur des gardiens de l'équipe de France, Fabien Barthez, est présent dans les tribunes du Stadium pour le match de Ligue 1 entre Toulouse et l'OL, ce samedi.",
-          "needs_translation": true
+          "title": "فابيان بارتيز مدرب حراس مرمى منتخب فرنسا حاضر في الملعب لمتابعة مواجهة تولوز وليون",
+          "summary": "حضر فابيان بارتيز، مدرب حراس مرمى منتخب فرنسا الجديد، في المدرجات لمتابعة مباراة تولوز وأولمبيك ليون يوم السبت ضمن منافسات الدوري الفرنسي.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Fabien-barthez-entraineur-des-gardiens-de-l-equipe-de-france-present-au-stadium-pour-toulouse-ol/1712863#at_medium=RSS_feeds",
@@ -1084,7 +1155,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Fabien-barthez-entraineur-des-gardiens-de-l-equipe-de-france-present-au-stadium-pour-toulouse-ol/1712863#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0356235ad7f3",
@@ -1139,33 +1215,34 @@
       "summary": "Die Füchse Berlin mussten sich beim Supercup gegen den SC Magdeburg eingestehen, aktuell nicht auf Augenhöhe mit dem deutschen Meister zu sein. Laut Mathias Gidsel sei dies aber \"okay\".",
       "i18n": {
         "de": {
-          "title": "Gidsel: \"Sind nicht so weit, dass wir Magdeburg schlagen können\"",
-          "summary": "Die Füchse Berlin mussten sich beim Supercup gegen den SC Magdeburg eingestehen, aktuell nicht auf Augenhöhe mit dem deutschen Meister zu sein. Laut Mathias Gidsel sei dies aber \"okay\".",
-          "needs_translation": false
+          "title": "Gidsel: „Sind nicht so weit, dass wir Magdeburg schlagen können“",
+          "summary": "Nach der Niederlage im Supercup gegen den SC Magdeburg räumte Mathias Gidsel ein, dass Füchse Berlin aktuell noch nicht auf Augenhöhe mit dem deutschen Meister sei.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "Gidsel: \"We are not ready to beat Magdeburg\"",
-          "summary": "The Füchse Berlin had to admit at the Supercup against SC Magdeburg that they are currently not on par with the German champions. According to Mathias Gidsel, this is \"okay\".",
+          "summary": "Following their Supercup defeat against SC Magdeburg, Mathias Gidsel admitted that Füchse Berlin are currently not at the same level as the German champions.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Gidsel : « Nous ne sommes pas prêts à battre Magdebourg »",
-          "summary": "Les renards de Berlin ont dû admettre lors de la Supercup contre le SC Magdeburg qu'ils n'étaient actuellement pas sur un pied d'égalité avec le champion allemand. Selon Mathias Gidsel, c'est « bien ».",
+          "title": "Gidsel : « Nous ne sommes pas encore au niveau pour battre Magdeburg »",
+          "summary": "Après la défaite en Supercup face au SC Magdeburg, Mathias Gidsel a reconnu que Füchse Berlin n'était actuellement pas au même niveau que le champion d'Allemagne.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Gidsel: \"No estamos listos para vencer a Magdeburgo\"",
-          "summary": "Los Fuchs Berlin tuvieron que admitir en la Supercopa contra el SC Magdeburg que actualmente no están a la par con el campeón alemán. Según Mathias Gidsel, sin embargo, esto está \"bien\".",
+          "title": "Gidsel: \"No estamos en un nivel para vencer a Magdeburg\"",
+          "summary": "Tras la derrota en la Supercup ante el SC Magdeburg, Mathias Gidsel reconoció que Füchse Berlin todavía no está a la altura del campeón alemán.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "جيدسل: \"لسنا مستعدين لهزيمة ماغديبرغ\"",
-          "summary": "كان على نادي فوتشي برلين أن يعترف في كأس السوبر ضد نادي ماغديبرغ أنه ليس على قدم المساواة مع البطل الألماني في الوقت الحالي. وفقًا لماتياس جيدسل، هذا \"جيد\".",
+          "title": "غيدسيل: «لسنا في مستوى يسمح لنا بهزيمة ماغديبورغ»",
+          "summary": "اعترف ماتياس غيدسيل بعد الهزيمة في كأس السوبر أمام إس سي ماغديبورغ بأن نادي فوكس برلين ليس في نفس مستوى بطل الدوري الألماني حالياً.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/gidsel-sind-nicht-so-weit-dass-wir-magdeburg-schlagen-koennen-1245886/artikel#omrss",
@@ -1187,7 +1264,12 @@
           "url": "https://www.kicker.de/gidsel-sind-nicht-so-weit-dass-wir-magdeburg-schlagen-koennen-1245886/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "91b98e3d82d0",
@@ -1196,26 +1278,27 @@
       "i18n": {
         "es": {
           "title": "La estrategia de Vélez para \"salir a ganar\" en el Monumental ante River",
-          "summary": "De la mano de los pibes, Guillermo Barros Schelotto dejó en claro que Vélez buscará el resultado en Núñez con el experiencia de los ex jugadores del Millonario y el entusiasmo de los juveniles.",
-          "needs_translation": false
+          "summary": "Guillermo Barros Schelotto afirmó que Vélez buscará el triunfo ante River en el Monumental, combinando la experiencia de exjugadores de Núñez con el impulso de los juveniles.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Vélez's strategy to \"go out to win\" in the Monumental against River",
-          "summary": "Hand in hand with the kids, Guillermo Barros Schelotto made it clear that Vélez will look for the result in Núñez with the experience of the former Millionaire players and the enthusiasm of the youths.",
+          "title": "Vélez's strategy to go for the win at the Monumental against River",
+          "summary": "Guillermo Barros Schelotto stated that Vélez will aim for a win at the Monumental against River, combining the experience of former Millonario players with youth enthusiasm.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La stratégie de Vélez pour « sortir pour gagner » au Monumental ante River",
-          "summary": "De la main des pibes, Guillermo Barros Schelotto a clairement indiqué que Vélez cherchera le résultat à Nuñez avec l'expérience des anciens joueurs du Millionnaire et l'enthousiasme des jeunes.",
+          "title": "La stratégie de Vélez pour aller chercher la victoire au Monumental face à River",
+          "summary": "Guillermo Barros Schelotto a affirmé que Vélez visera la victoire au Monumental contre River, en combinant l'expérience d'anciens joueurs du club et l'enthousiasme de ses jeunes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "استراتيجية فيليز \"للخروج للفوز\" في مونومنتال ضد ريفر",
-          "summary": "جنبا إلى جنب مع الأطفال، أوضح غييرمو باروس شيلوتو أن فيليز سيبحث عن النتيجة في نونيز مع تجربة لاعبي المليونير السابقين وحماس الشباب.",
+          "title": "خطة فيليز لتحقيق الفوز في المونومنتال أمام ريفر بليت",
+          "summary": "أكد غييرمو باروس سكيلوتو أن فيليز سيسعى لتحقيق الفوز أمام ريفر بليت في ملعب المونومنتال، معتمدًا على خبرة لاعبي الخصم السابقين وحماس الشباب.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/velez/velez-river-guillermo-barros-schelotto-monumental_0_UzV035UIJf.html",
@@ -1237,7 +1320,12 @@
           "url": "https://www.ole.com.ar/velez/velez-river-guillermo-barros-schelotto-monumental_0_UzV035UIJf.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3c7321749a84",
@@ -1458,7 +1546,17 @@
           "url": "https://www.kicker.de/zwei-traumtore-und-ein-bisseck-ausflug-inter-glaenzt-zum-auftakt-1245888/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-22T20:35:29+00:00"
+        }
+      }
     },
     {
       "id": "1cf4b712ac66",
@@ -1467,32 +1565,33 @@
       "i18n": {
         "de": {
           "title": "Musche nach Supercup: \"Titel, der unserer Generation gefehlt hat\"",
-          "summary": "Der SC Magdeburg ist neuer amtierender Supercup-Sieger. Die Elbstädter beendeten so eine Durststrecke, die ein Vierteljahrhundert andauerte.",
-          "needs_translation": false
+          "summary": "Der SC Magdeburg hat den Supercup gewonnen. Damit beendete der Verein eine 25 Jahre andauernde Durststrecke in diesem Wettbewerb.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Musche after Supercup: \"Title that our generation has lacked\"",
-          "summary": "SC Magdeburg is the new reigning Supercup winner. The Elbe cities thus ended a dry spell that lasted a quarter of a century.",
+          "title": "Musche after the Supercup: \"Title that our generation was missing\"",
+          "summary": "SC Magdeburg won the Supercup, ending a 25-year title drought in the competition.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Mouche pour la Supercoupe : « Un titre qui a manqué à notre génération »",
-          "summary": "Le SC Magdeburg est le nouveau vainqueur de la Supercoupe en titre. Les Elbstädter ont ainsi mis fin à une période de famine qui a duré un quart de siècle.",
+          "title": "Musche après la Supercup : « Le titre qui manquait à notre génération »",
+          "summary": "Le SC Magdeburg a remporté la Supercup. Le club met ainsi un terme à une disette de 25 ans dans cette compétition.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Musche después de la Supercopa: \"Título que le faltaba a nuestra generación\"",
-          "summary": "El SC Magdeburg es el nuevo ganador actual de la Supercopa. Los habitantes de Elba terminaron así un periodo de sequía que duró un cuarto de siglo.",
+          "title": "Musche tras la Supercup: «El título que le faltaba a nuestra generación»",
+          "summary": "El SC Magdeburg se proclamó campeón de la Supercup. Con esta victoria, el club puso fin a una sequía de 25 años en el torneo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Musche after Supercup: \"اللقب الذي افتقر إليه جيلنا\"",
-          "summary": "SC Magdeburg هو الفائز الجديد بكأس السوبر. وهكذا أنهت مدن إلبه موجة جفاف استمرت ربع قرن.",
+          "title": "موشه بعد السوبر كاب: \"لقب كان ينقص جيلنا\"",
+          "summary": "توج نادي إس سي ماغديبورغ بلقب كأس السوبر، لينهي بذلك فترة غياب عن التتويج بالبطولة استمرت ربع قرن.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/musche-nach-supercup-titel-der-unserer-generation-gefehlt-hat-1245883/artikel#omrss",
@@ -1514,7 +1613,12 @@
           "url": "https://www.kicker.de/musche-nach-supercup-titel-der-unserer-generation-gefehlt-hat-1245883/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e3fcfc300d8f",
@@ -1572,33 +1676,54 @@
       "summary": "Mit großen Hoffnungen in die neue Saison gestartet, verliert Tottenham zum Auftakt mit 0:3 beim FC Brentford. Gegen eingespielte Bees waren die für teures Geld neu zusammengestellten Spurs chancenlos.",
       "i18n": {
         "de": {
-          "title": "Ernüchterung zum Saisonstart: Spurs kommen bei Brentford unter die Räder",
-          "summary": "Mit großen Hoffnungen in die neue Saison gestartet, verliert Tottenham zum Auftakt mit 0:3 beim FC Brentford. Gegen eingespielte Bees waren die für teures Geld neu zusammengestellten Spurs chancenlos.",
-          "needs_translation": false
+          "title": "Tottenham geht zum Saisonauftakt mit 0:3 in Brentford unter",
+          "summary": "Tottenham Hotspur hat das Auftaktspiel der neuen Saison mit einer deutlichen 0:3-Niederlage beim FC Brentford verloren.",
+          "body": [
+            "Trotz hoher Erwartungen und teurer Transfers präsentierte sich die neu zusammengestellte Mannschaft der Spurs völlig überfordert. Gegen die eingespielten Gastgeber fand Tottenham über die gesamte Spielzeit keine Mittel und erlebte einen denkbar ernüchternden Start in die Spielzeit."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Disillusionment at the start of the season: Spurs go under the wheels at Brentford",
-          "summary": "Started into the new season with high hopes, Tottenham lost 3-0 to FC Brentford at the start. Against well-rehearsed Bees, the newly assembled Spurs were without a chance for expensive money.",
+          "title": "Tottenham slump to 3-0 defeat at Brentford in season opener",
+          "summary": "Tottenham Hotspur got their new campaign off to a miserable start with a heavy 3-0 defeat at FC Brentford.",
+          "body": [
+            "Despite high expectations and hefty transfer spending, the newly assembled Spurs side looked completely overwhelmed. Tottenham failed to find any answers against a well-drilled home team, suffering a thoroughly sobering opening-day defeat."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Désenchantement au début de la saison : les Spurs sous les roues à Brentford",
-          "summary": "Commencé avec de grands espoirs dans la nouvelle saison, Tottenham perd en ouverture avec 0:3 au FC Brentford. Contre les Bees bien rodés, les Spurs nouvellement assemblés pour de l'argent cher n'avaient aucune chance.",
+          "title": "Tottenham sombre à Brentford d'entrée (3-0)",
+          "summary": "Tottenham Hotspur a manqué ses débuts cette saison en s'inclinant lourdement 3-0 sur la pelouse du FC Brentford.",
+          "body": [
+            "Malgré de fortes attentes et des investissements conséquents, la nouvelle équipe des Spurs est apparue totalement dépassée. Sans solution face à des locaux bien en place, Tottenham encaisse une défaite cinglante d'entrée de jeu."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Desilusión al comienzo de la temporada: los Spurs se suben a las ruedas en Brentford",
-          "summary": "Comenzando la nueva temporada con grandes esperanzas, Tottenham pierde por 3-0 ante el FC Brentford. Contra las abejas bien entrenadas, los Spurs, reorganizados por dinero caro, no tenían ninguna posibilidad.",
+          "title": "Tottenham cae goleado 3-0 en Brentford en su estreno",
+          "summary": "Tottenham Hotspur arrancó la nueva temporada con un duro tropiezo al perder 3-0 en el campo del FC Brentford.",
+          "body": [
+            "Pese a las altas expectativas y a los costosos fichajes, el renovado plantel de los Spurs se vio completamente superado. Tottenham no halló soluciones ante unos anfitriones muy rodados y firmó un debut liguero sumamente frustrante."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "خيبة الأمل في بداية الموسم: توتنهام تحت العجلات في برينتفورد",
-          "summary": "بدأ توتنهام الموسم الجديد بآمال كبيرة، وخسر 3-0 أمام نادي برينتفورد في البداية. ضد النحل الذي تدرب جيدًا، كان توتنهام الذي تم تجميعه حديثًا بدون فرصة للحصول على أموال باهظة الثمن.",
+          "title": "توتنهام يسقط بثلاثية نظيفة أمام برينتفورد في افتتاح موسمه",
+          "summary": "استهل توتنهام هوتسبير مشواره في الموسم الجديد بخسارة قاسية بنتيجة 3-0 أمام مضيفه برينتفورد.",
+          "body": [
+            "ورغم سقف التوقعات المرتفع والإنفاق الكبير في سوق الانتقالات، ظهرت تشكيلة السبيرز الجديدة عاجزة تماماً طوال اللقاء. وفشل الفريق في إيجاد الحلول أمام أصحاب الأرض الأكثر انسجاماً، ليدشن موسمه بانتكاسة مخيبة للآمال."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.kicker.de/brentford-gegen-tottenham-2026-premier-league-5213275/spielbericht#omrss",
@@ -1620,7 +1745,20 @@
           "url": "https://www.kicker.de/brentford-gegen-tottenham-2026-premier-league-5213275/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-22T20:35:30+00:00"
+        }
+      }
     },
     {
       "id": "0adac3741c30",
@@ -1677,26 +1815,27 @@
       "i18n": {
         "en": {
           "title": "Tonali nightmare as Sangare stars - Brentford v Spurs player ratings",
-          "summary": "How Brentford and Tottenham's players rated following their Premier League match.",
-          "needs_translation": false
+          "summary": "Player ratings for Brentford and Tottenham's squads following their Premier League fixture.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Cauchemar de Tonali en tant que stars de Sangare - Notes des joueurs de Brentford vs Spurs",
-          "summary": "Comment les joueurs de Brentford et de Tottenham se sont classés après leur match de Premier League.",
+          "title": "Cauchemar pour Tonali et éclat pour Sangare : les notes de Brentford - Spurs",
+          "summary": "Évaluation des performances des joueurs de Brentford et Tottenham's après leur rencontre de Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Pesadilla de Tonali como estrellas de Sangare - Clasificaciones de jugadores de Brentford v Spurs",
-          "summary": "Cómo calificaron los jugadores de Brentford y Tottenham después de su partido de la Premier League.",
+          "title": "Pesadilla para Tonali y brillo de Sangare: notas del Brentford - Spurs",
+          "summary": "Calificaciones de los jugadores de Brentford y Tottenham's tras su enfrentamiento en la Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كابوس تونالي كنجوم سانغاري - تقييمات لاعب برنتفورد ضد توتنهام",
-          "summary": "كيف تم تقييم لاعبي برينتفورد وتوتنهام بعد مباراتهم في الدوري الممتاز.",
+          "title": "كابوس لتونالي وتألق لسانغاري: تقييمات لاعبي مواجهة برينتفورد وتوتنهام",
+          "summary": "تقييم أداء لاعبي برينتفورد وتوتنهام بعد مباراتهم في الدوري الإنجليزي الممتاز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cp878q13v72o?at_medium=RSS&at_campaign=rss",
@@ -1718,7 +1857,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cp878q13v72o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e24f2381f3cc",
@@ -1727,26 +1871,27 @@
       "i18n": {
         "es": {
           "title": "El Inter impone su condición de vigente campeón en el inicio de la Serie A",
-          "summary": "L a Serie A ha dado el pistoletazo de salida esta misma tarde del sábado a las 18.30 hora española.",
-          "needs_translation": false
+          "summary": "La Serie A arrancó este sábado con el Inter iniciando la defensa de su título de liga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Inter impose their status as reigning champions at the start of Serie A",
-          "summary": "The Serie A has kicked off this same Saturday afternoon at 18.30 Spanish time.",
+          "title": "Inter assert defending champion status as Serie A kicks off",
+          "summary": "The Serie A season kicked off this Saturday with defending champions Inter launching their title defense.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "L'Inter impose son statut de champion en titre au début de la Serie A",
-          "summary": "L a Serie A a donné le coup d'envoi cet après-midi même de samedi à 18h30 heure espagnole.",
+          "title": "L'Inter fait respecter son statut de champion en titre au coup d'envoi de la Serie A",
+          "summary": "La nouvelle saison de Serie A a débuté ce samedi avec l'Inter, champion en titre, entamant la défense de sa couronne.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "إنتر يفرض مكانته كأبطال حاملين في بداية دوري الدرجة الأولى الإيطالي",
-          "summary": "انطلق الدوري الإيطالي بعد ظهر يوم السبت نفسه في الساعة 18.30 بالتوقيت الإسباني.",
+          "title": "إنتر يفرض مكانته كحامل للقب مع انطلاق الدوري الإيطالي",
+          "summary": "انطلقت منافسات الدوري الإيطالي مساء السبت، حيث يبدأ حامل اللقب إنتر مشواره للدفاع عن تاجه.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/serie-a/20260822/1004218672/inter-impone-condicion-vigente-campeon-inicio-serie.html",
@@ -1768,7 +1913,12 @@
           "url": "https://www.mundodeportivo.com/futbol/serie-a/20260822/1004218672/inter-impone-condicion-vigente-campeon-inicio-serie.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c8515e0e11ac",
@@ -1777,26 +1927,27 @@
       "i18n": {
         "es": {
           "title": "3-0: Esperpento del Tottenham para empezar",
-          "summary": "Peor inicio, imposible.",
-          "needs_translation": false
+          "summary": "El Tottenham comenzó la temporada con una contundente derrota por 3-0.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "3-0: Tottenham spit to begin with",
-          "summary": "Worst start, impossible.",
+          "title": "3-0: Dreadful start for Tottenham",
+          "summary": "Tottenham suffered a heavy 3-0 defeat in their opening match.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "3-0 : Attentat de Tottenham pour commencer",
-          "summary": "Pire début, impossible.",
+          "title": "3-0 : Débuts catastrophiques pour Tottenham",
+          "summary": "Tottenham a débuté par une lourde défaite 3-0.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "3-0: بصق توتنهام في البداية",
-          "summary": "أسوأ بداية، مستحيل.",
+          "title": "3-0: بداية كارثية لتوتنهام",
+          "summary": "استهل توتنهام مشواره بهزيمة ثقيلة بثلاثية نظيفة (3-0).",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260822/1004218674/esperpento-tottenham-empezar.html",
@@ -1818,7 +1969,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260822/1004218674/esperpento-tottenham-empezar.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "bff57893ffda",
@@ -1827,26 +1983,27 @@
       "i18n": {
         "es": {
           "title": "Manolo González, sin sorpresas para recibir al Real Madrid",
-          "summary": "Ya es oficial la alineación que pondrá en liza esta noche Manolo González , entrenador de un RCD Espanyol que recibirá, a partir de las 21:30 horas, al nuevo Real Madrid de José Mourinho , quien redebutará al frente del conjunto blanco 4.830 días después.",
-          "needs_translation": false
+          "summary": "Manolo González ha confirmado la alineación del RCD Espanyol para recibir al Real Madrid, en un duelo marcado por el redebut de José Mourinho con el conjunto blanco.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Manolo González, no surprises to welcome Real Madrid",
-          "summary": "The line-up that Manolo González , coach of an RCD Espanyol that will receive, from 21:30 hours, the new Real Madrid of José Mourinho, who will redebut at the head of the white team 4,830 days later, is now official.",
+          "title": "Manolo González with no surprises to host Real Madrid",
+          "summary": "Manolo González has named RCD Espanyol's starting lineup to host Real Madrid, in a match highlighting José Mourinho's return to the Madrid bench.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Manolo González, pas de surprises pour accueillir le Real Madrid",
-          "summary": "L'alignement qui mettra en lice ce soir Manolo González , entraîneur d'un RCD Espanyol qui recevra, à partir de 21h30, le nouveau Real Madrid de José Mourinho , qui reprendra la tête de l'équipe blanche 4 830 jours plus tard, est désormais officiel.",
+          "title": "Manolo González sans surprise pour recevoir le Real Madrid",
+          "summary": "Manolo González a dévoilé le onze du RCD Espanyol pour affronter le Real Madrid, dans une rencontre marquée par le retour de José Mourinho sur le banc madrilène.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مانولو غونزاليس، لا مفاجآت للترحيب بريال مدريد",
-          "summary": "التشكيلة التي سيحصل عليها مانولو غونزاليس ، مدرب التجمع الكونغولي من أجل الديمقراطية إسبانيول، من الساعة 21:30، ريال مدريد الجديد خوسيه مورينيو، الذي سيعيد ترشيحه على رأس الفريق الأبيض بعد 4830 يوما، أصبحت الآن رسمية.",
+          "title": "مانولو غونزاليس دون مفاجآت لمواجهة ريال مدريد",
+          "summary": "أعلن مانولو غونزاليس عن تشكيلة آر سي دي إسبانيول الرسمية لمواجهة ريال مدريد الليلة، في مباراة تشهد عودة المدرب جوزيه مورينيو إلى دكة بدلاء النادي الملكي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/rcd-espanyol/20260822/1004218632/once-espanyol-real-madrid.html",
@@ -1868,7 +2025,12 @@
           "url": "https://www.mundodeportivo.com/futbol/rcd-espanyol/20260822/1004218632/once-espanyol-real-madrid.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c6f72cdebc9e",
@@ -1924,23 +2086,27 @@
       "i18n": {
         "fr": {
           "title": "Lionel Messi sanctionné financièrement après son geste envers un adversaire",
-          "summary": "… L’article Lionel Messi sanctionné financièrement après son geste envers un adversaire est apparu en premier sur 100% Sport .",
-          "needs_translation": false
+          "summary": "Lionel Messi a écopé d'une sanction financière à la suite d'un geste envers un joueur adverse.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Lionel Messi sanctionné financièrement après son geste envers un adversaire",
-          "summary": "… L’article Lionel Messi sanctionné financièrement après son geste envers un adversaire est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "Lionel Messi fined after gesture towards opponent",
+          "summary": "Lionel Messi has received a financial fine following a gesture directed at an opposing player.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Lionel Messi sanctionné financièrement après son geste envers un adversaire",
-          "summary": "… L’article Lionel Messi sanctionné financièrement après son geste envers un adversaire est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "Lionel Messi sancionado económicamente tras su gesto hacia un rival",
+          "summary": "Lionel Messi ha recibido una sanción económica tras un gesto realizado hacia un jugador rival.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Lionel Messi sanctionné financièrement après son geste envers un adversaire",
-          "summary": "… L’article Lionel Messi sanctionné financièrement après son geste envers un adversaire est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "تغريم ليونيل ميسي مالياً بعد تصرفه تجاه أحد المنافسين",
+          "summary": "فُرضت غرامة مالية على ليونيل ميسي إثر تصرف قام به تجاه لاعب من الفريق المنافس.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequotidiendusport.fr/lionel-messi-amende-gifle-adversaire-mls/",
@@ -1962,7 +2128,12 @@
           "url": "https://www.lequotidiendusport.fr/lionel-messi-amende-gifle-adversaire-mls/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "763e0c66c01e",
@@ -1971,23 +2142,27 @@
       "i18n": {
         "fr": {
           "title": "Cristiano Ronaldo continue d’affoler les compteurs",
-          "summary": "… L’article Cristiano Ronaldo continue d’affoler les compteurs est apparu en premier sur 100% Sport .",
-          "needs_translation": false
+          "summary": "Cristiano Ronaldo poursuit ses performances de haut niveau et continue d'enrichir ses statistiques offensives.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Cristiano Ronaldo continue d’affoler les compteurs",
-          "summary": "… L’article Cristiano Ronaldo continue d’affoler les compteurs est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "Cristiano Ronaldo continues to shatter records",
+          "summary": "Cristiano Ronaldo continues his prolific goalscoring form and keeps adding to his career milestones.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Cristiano Ronaldo continue d’affoler les compteurs",
-          "summary": "… L’article Cristiano Ronaldo continue d’affoler les compteurs est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "Cristiano Ronaldo sigue rompiendo récords",
+          "summary": "Cristiano Ronaldo mantiene un gran nivel competitivo y continúa sumando cifras destacadas a su registro goleador.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Cristiano Ronaldo continue d’affoler les compteurs",
-          "summary": "… L’article Cristiano Ronaldo continue d’affoler les compteurs est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "كريستيانو رونالدو يواصل تحطيم الأرقام القياسية",
+          "summary": "يواصل كريستيانو رونالدو تألقه التهديفي وتعزيز أرقامه وإحصائياته القياسية في مسيرته الكروية.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequotidiendusport.fr/cristiano-ronaldo-record-1000-buts/",
@@ -2009,7 +2184,12 @@
           "url": "https://www.lequotidiendusport.fr/cristiano-ronaldo-record-1000-buts/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d7acabc22032",
@@ -2113,6 +2293,19 @@
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
+        }
+      },
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-22T20:35:34+00:00"
         }
       }
     }
