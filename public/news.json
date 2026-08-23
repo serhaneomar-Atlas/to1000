@@ -17,26 +17,27 @@
       "i18n": {
         "fr": {
           "title": "EN DIRECT - Rennes-PSG : Ferran Torres relance les Parisiens, suspense total au Roazhon Park",
-          "summary": "Initialement prévue au Parc des Princes, la rencontre entre le Paris Saint-Germain et Rennes se disputera finalement en Bretagne, ce dimanche (20h45), pour le compte de la première journée de Ligue 1.",
-          "needs_translation": false
+          "summary": "Initialement prévue au Parc des Princes, la rencontre de la première journée de Ligue 1 entre le Paris Saint-Germain et Rennes se dispute finalement en Bretagne au Roazhon Park ce dimanche.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "LIVE - Rennes-PSG: Ferran Torres relaunches the Parisians, total suspense at Roazhon Park",
-          "summary": "Initially scheduled at the Parc des Princes, the meeting between Paris Saint-Germain and Rennes will finally take place in Brittany, this Sunday (20:45), on behalf of the first day of Ligue 1.",
+          "title": "LIVE - Rennes-PSG: Ferran Torres revives the Parisiens, total suspense at Roazhon Park",
+          "summary": "Initially scheduled at the Parc des Princes, the opening Ligue 1 match between Paris Saint-Germain and Rennes will take place this Sunday in Bretagne at Roazhon Park.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "EN DIRECTO - Rennes-PSG: Ferran Torres relanza a los parisinos, suspenso total en el Roazhon Park",
-          "summary": "Inicialmente previsto en el Parque de los Príncipes, el encuentro entre el Paris Saint-Germain y el Rennes se disputará finalmente en Bretaña, este domingo (20:45), en nombre de la primera jornada de la Ligue 1.",
+          "title": "EN DIRECTO - Rennes-PSG: Ferran Torres relanza a los Parisiens, suspense total en el Roazhon Park",
+          "summary": "Inicialmente programado en el Parc des Princes, el encuentro de la primera jornada de Ligue 1 entre Paris Saint-Germain y Rennes se jugará este domingo en Bretagne, en el Roazhon Park.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباشر - Rennes - PSG: يعيد Ferran Torres إطلاق الباريسيين، التشويق التام في Roazhon Park",
-          "summary": "كان من المقرر في البداية في بارك دي برينس، الاجتماع بين باريس سان جيرمان ورين سيعقد أخيرا في بريتاني، يوم الأحد (20:45)، نيابة عن اليوم الأول من دوري الدرجة الأولى.",
+          "title": "مباشر - رين ضد باريس سان جيرمان: فيران توريس يعيد الباريسيين، إثارة تامة في روازون بارك",
+          "summary": "تُقام مباراة الجولة الأولى من الدوري الفرنسي بين باريس سان جيرمان ورين مساء الأحد في بريتاني على ملعب روازون بارك، بعد أن كان مقررًا خوضها في حديقة الأمراء.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/live/ligue-1/2026/2640565/rennes-paris-sg",
@@ -58,7 +59,12 @@
           "url": "https://www.lefigaro.fr/sports/football/live/ligue-1/2026/2640565/rennes-paris-sg"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "662d8265bbcb",
@@ -67,32 +73,33 @@
       "i18n": {
         "de": {
           "title": "LIVE! Tor beim Barca-Debüt: Adeyemi erhöht kurz vor der Pause",
-          "summary": "Mit Verspätung steigt der FC Barcelona in die neue La-Liga-Saison ein. Der amtierende Meister gastiert am Sonntagabend beim FC Elche.",
-          "needs_translation": false
+          "summary": "Der FC Barcelona startet mit Verspätung bei FC Elche in die neue La-Liga-Saison. Adeyemi erzielte kurz vor der Pause bei seinem Vereinsdebüt ein Tor.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "LIVE! Barca debut goal: Adeyemi raises just before the break",
-          "summary": "FC Barcelona is delayed in entering the new La Liga season. The reigning champion makes a guest appearance at FC Elche on Sunday evening.",
+          "title": "LIVE! Goal on Barca debut: Adeyemi extends the lead shortly before the break",
+          "summary": "Defending champions FC Barcelona kick off their La Liga campaign on Sunday evening away at FC Elche. Adeyemi scored on his club debut just before half-time.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "LIVE ! But au début du Barça : Adeyemi augmente juste avant la pause",
-          "summary": "Avec du retard, le FC Barcelone entre dans la nouvelle saison de La Ligue. Le champion en titre se produira dimanche soir au FC Elche.",
+          "title": "EN DIRECT : But pour ses débuts avec le Barça, Adeyemi fait le break avant la pause",
+          "summary": "Le champion en titre, le FC Barcelona, lance sa saison de La Liga sur le terrain de FC Elche ce dimanche soir. Adeyemi a marqué juste avant la pause pour ses débuts.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "¡EN DIRECTO! Gol en el debut del Barça: Adeyemi sube justo antes del descanso",
-          "summary": "Con retraso, el FC Barcelona entra en la nueva temporada de La Liga. El vigente campeón visitará el FC Elche el domingo por la noche.",
+          "title": "EN DIRECTO: Gol en su debut con el Barça, Adeyemi amplía la ventaja antes del descanso",
+          "summary": "El vigente campeón, el FC Barcelona, inicia con retraso su temporada de La Liga como visitante frente a FC Elche este domingo. Adeyemi anotó en su debut justo antes del descanso.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباشر! هدف برشلونة الأول: يرفع أدييمي قبل الاستراحة مباشرة",
-          "summary": "يتأخر نادي برشلونة في دخول موسم الدوري الإسباني الجديد. يظهر البطل الحاكم كضيف في نادي إلتشي مساء الأحد.",
+          "title": "مباشر: هدف في ظهوره الأول مع برشلونة.. أديمي يعزز التقدم قبل نهاية الشوط الأول",
+          "summary": "يبدأ حامل اللقب برشلونة موسمه في الدوري الإسباني متأخراً بمواجهة مضيفه إلتشي مساء الأحد. ونجح أديمي في التسجيل قبل الاستراحة في مباراته الأولى.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/elche-gegen-barcelona-2026-la-liga-5223806/spielbericht#omrss",
@@ -114,7 +121,12 @@
           "url": "https://www.kicker.de/elche-gegen-barcelona-2026-la-liga-5223806/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "bf668fa101cc",
@@ -179,26 +191,27 @@
       "i18n": {
         "en": {
           "title": "Pre-season optimism quickly fades for some fans",
-          "summary": "Pre-season optimism is already fading for Manchester United, Tottenham, West Ham and Rangers fans.",
-          "needs_translation": false
+          "summary": "Supporters of Manchester United, Tottenham, West Ham, and Rangers are already seeing their Pre-season optimism fade ahead of the new campaign.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "L'optimisme de pré-saison s'estompe rapidement pour certains fans",
-          "summary": "L'optimisme de la pré-saison s'estompe déjà pour les fans de Manchester United, Tottenham, West Ham et les Rangers.",
+          "title": "L'optimisme de la Pre-season s'estompe rapidement pour certains supporters",
+          "summary": "L'optimisme suscité par la Pre-season commence déjà à faiblir chez les supporters de Manchester United, Tottenham, West Ham et Rangers.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El optimismo de pretemporada se desvanece rápidamente para algunos aficionados",
-          "summary": "El optimismo de pretemporada ya se está desvaneciendo para los fanáticos del Manchester United, Tottenham, West Ham y Rangers.",
+          "title": "El optimismo de la Pre-season se desvanece rápidamente para algunos aficionados",
+          "summary": "El optimismo de la Pre-season ya empieza a disiparse entre los aficionados de Manchester United, Tottenham, West Ham y Rangers.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يتلاشى تفاؤل ما قبل الموسم بسرعة بالنسبة لبعض المعجبين",
-          "summary": "التفاؤل قبل الموسم يتلاشى بالفعل بالنسبة لمشجعي مانشستر يونايتد وتوتنهام وويست هام ورينجرز.",
+          "title": "تراجع سريع للتفاؤل قبل انطلاق الموسم لدى بعض الجماهير",
+          "summary": "بدأ التفاؤل بالموسم الجديد يتلاشى مبكراً لدى جماهير مانشستر يونايتد وتوتنهام ووست هام ورينجرز خلال الاستعدادات للموسم الجديد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cy0j0651ee6o?at_medium=RSS&at_campaign=rss",
@@ -220,7 +233,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cy0j0651ee6o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b039209f3d6b",
@@ -385,26 +403,27 @@
       "i18n": {
         "fr": {
           "title": "Talonnade, centre parfait et Estéban Lepaul à la conclusion : le deuxième but de Rennes face au PSG en vidéo",
-          "summary": "Déjà devant au score face à Paris, ce dimanche soir au Roazhon Park, le Stade Rennais a ajouté un deuxième but de toute beauté avec son buteur Estéban Lepaul à la finition. À découvrir en vidéo.",
-          "needs_translation": false
+          "summary": "Au Roazhon Park, le Stade Rennais a doublé son avantage face à Paris grâce à un but inscrit par Estéban Lepaul.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Talonnade, perfect centre and Estéban Lepaul at the end: Rennes' second goal against PSG on video",
-          "summary": "Already ahead of the score against Paris, this Sunday evening at Roazhon Park, the Stade Rennais added a beautiful second goal with its striker Estéban Lepaul at the finish. To discover on video.",
+          "title": "Backheel, perfect cross and Estéban Lepaul finishing: the video of Rennes' second goal against PSG",
+          "summary": "At Roazhon Park, Stade Rennais extended their lead against Paris through a goal scored by Estéban Lepaul.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Talonnade, centro perfecto y Esteban Lepaul a la conclusión: el segundo gol del Rennes contra el PSG en vídeo",
-          "summary": "Ya por delante del marcador ante París, este domingo por la noche en el Roazhon Park, el Stade Rennais añadió un segundo gol de gran belleza con su goleador Estéban Lepaul al final. Descubrir en vídeo.",
+          "title": "Taconazo, centro perfecto y definición de Estéban Lepaul: el segundo gol de Rennes ante el PSG en vídeo",
+          "summary": "En el Roazhon Park, el Stade Rennais amplió su ventaja frente a Paris con un gol anotado por Estéban Lepaul.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Talonnade، مركز مثالي و Estéban Lepaul في النهاية: هدف رين الثاني ضد PSG على الفيديو",
-          "summary": "قبل النتيجة ضد باريس، مساء الأحد في Roazhon Park، أضاف ملعب Rennais هدفًا ثانيًا جميلًا مع مهاجمه Estéban Lepaul في النهاية. للاستكشاف بالفيديو.",
+          "title": "تمريرة بالكعب وعرضية متقنة وإنهاء من إستيبان لوبول: هدف رين الثاني أمام باريس سان جيرمان بالفيديو",
+          "summary": "ضاعف نادي رين تقدمه أمام باريس سان جيرمان على ملعب روازون بارك بفضل هدف أحرزه المهاجم إستيبان لوبول.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Talonnade-centre-parfait-et-esteban-lepaul-a-la-conclusion-le-deuxieme-but-de-rennes-face-au-psg-en-video/1713107#at_medium=RSS_feeds",
@@ -426,7 +445,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Talonnade-centre-parfait-et-esteban-lepaul-a-la-conclusion-le-deuxieme-but-de-rennes-face-au-psg-en-video/1713107#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f7d5c671b2d3",
@@ -435,26 +459,27 @@
       "i18n": {
         "es": {
           "title": "El Castellón habló con la Liga sobre la posibilidad de aplazar el partido contra el Sabadell por el mal estado del césped: \"Estaba injugable\"",
-          "summary": "El empate con el CE Sabadell dejó al CD Castellón con una preocupación que trasciende al resultado: el mal estado del césped del SkyFi Castalia.",
-          "needs_translation": false
+          "summary": "Tras empatar contra el Sabadell, el CD Castellón consultó a la Liga la opción de aplazar el encuentro debido al mal estado del césped en SkyFi Castalia.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Castellón spoke to La Liga about the possibility of postponing the match against Sabadell due to the poor condition of the grass: \"It was unplayable\"",
-          "summary": "The tie with CE Sabadell left CD Castellón with a concern that transcends the result: the poor condition of SkyFi Castalia's turf.",
+          "title": "Castellón spoke with La Liga about potentially postponing the match against Sabadell due to poor pitch conditions: \"It was unplayable\"",
+          "summary": "Following a draw against Sabadell, CD Castellón consulted La Liga regarding a potential postponement due to the poor pitch conditions at SkyFi Castalia.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Castellón a discuté avec la Liga de la possibilité de reporter le match contre Sabadell en raison du mauvais état de la pelouse : « C'était injouable »",
-          "summary": "Le match nul avec le CE Sabadell a laissé le CD Castellón avec une préoccupation qui transcende le résultat : le mauvais état de la pelouse du SkyFi Castalia.",
+          "title": "Castellón a discuté avec la Liga d'un possible report du match contre Sabadell en raison de l'état de la pelouse : « C'était injouable »",
+          "summary": "Après son match nul face à Sabadell, le CD Castellón a consulté la Liga pour envisager un report en raison du mauvais état de la pelouse du SkyFi Castalia.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تحدث كاستيلون إلى الدوري الإسباني حول إمكانية تأجيل المباراة ضد ساباديل بسبب سوء حالة العشب: \"كان غير قابل للعب\"",
-          "summary": "غادر التعادل مع CE Sabadell CD Castellón بقلق يتجاوز النتيجة: الحالة السيئة لعشب SkyFi Castalia.",
+          "title": "كاستيون ناقش مع رابطة الدوري إمكانية تأجيل مباراته ضد ساباديل لسوء حالة العشب: «اللعب كان مستحيلاً»",
+          "summary": "عقب تعادله مع ساباديل، تواصل نادي كاستيون مع رابطة الدوري الإسباني لبحث تأجيل اللقاء بسبب سوء أرضية ملعب سكاي فاي كاستاليا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/castellon-hablo-liga-posibilidad-aplazar-133596448?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -476,7 +501,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/castellon-hablo-liga-posibilidad-aplazar-133596448?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "72c76f54186c",
@@ -485,32 +515,33 @@
       "i18n": {
         "de": {
           "title": "Kompanys Trick mit Brown war gut vorbereitet",
-          "summary": "Nathaniel Brown sollte beim FC Bayern eigentlich die linke Seite verstärken. Gegen Borussia Dortmund rückte er überraschend auf die Zehn und traf bei seinem Pflichtspieldebüt direkt zum Supercup-Sieg.",
-          "needs_translation": false
+          "summary": "Nathaniel Brown rückte für den FC Bayern gegen Borussia Dortmund überraschend auf die Zehn vor und erzielte bei seinem Pflichtspieldebüt direkt das Siegtor im Supercup.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Company's trick with Brown was well prepared",
-          "summary": "Nathaniel Brown was supposed to strengthen the left side of FC Bayern. Against Borussia Dortmund, he surprisingly moved up to ten and scored directly to win the Supercup on his competitive debut.",
+          "title": "Kompany's trick with Brown was well prepared",
+          "summary": "Deployed unexpectedly as a number ten for FC Bayern against Borussia Dortmund, Nathaniel Brown scored on his competitive debut to secure the Supercup victory.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "L'astuce de Kompany avec Brown était bien préparée",
-          "summary": "Nathaniel Brown était censé renforcer le côté gauche du Bayern. Contre le Borussia Dortmund, il a pris par surprise la dixième place et a marqué directement pour la victoire en Supercoupe lors de ses débuts en match officiel.",
+          "summary": "Surprenant numéro dix du FC Bayern face au Borussia Dortmund, Nathaniel Brown a marqué lors de son premier match officiel pour sceller la victoire en Supercup.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El truco de la compañía con Brown estaba bien preparado",
-          "summary": "Nathaniel Brown debería reforzar el lado izquierdo en el FC Bayern. Contra el Borussia Dortmund llegó sorprendentemente a los diez y anotó en su debut en el partido oficial directamente a la victoria en la Supercopa.",
+          "title": "El truco de Kompany con Brown estaba bien preparado",
+          "summary": "Alineado por sorpresa como número diez con el FC Bayern ante el Borussia Dortmund, Nathaniel Brown marcó en su debut oficial para dar el triunfo en la Supercup.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تم إعداد خدعة الشركة مع براون بشكل جيد",
-          "summary": "كان من المفترض أن يقوي ناثانيل براون الجانب الأيسر من بايرن. ضد بوروسيا دورتموند، انتقل بشكل مفاجئ إلى عشرة وسجل مباشرة للفوز بكأس السوبر في أول مباراة تنافسية له.",
+          "title": "خطة كومباني مع براون كانت مدروسة بعناية",
+          "summary": "شارك ناثانيال براون بشكل مفاجئ في مركز صانع الألعاب مع بايرن ميونخ ضد بوروسيا دورتموند، وسجل في أول ظهور رسمي له ليقود فريقه للتتويج بكأس السوبر.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/regional/br/br-von-links-auf-die-zehn-warum-kompany-auf-brown-setzt-102.html",
@@ -532,7 +563,12 @@
           "url": "https://www.sportschau.de/regional/br/br-von-links-auf-die-zehn-warum-kompany-auf-brown-setzt-102.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2daffd654c46",
@@ -690,27 +726,28 @@
       "summary": "Tras el triunfo del Inter frente al Monza, un grupo de fanáticos sorprendió al delantero con un inesperado festejo desde su auto.",
       "i18n": {
         "es": {
-          "title": "Lautaro Martínez y un insólito momento: se encontró con unos argentinos que le cantaron el feliz cumpleaños",
-          "summary": "Tras el triunfo del Inter frente al Monza, un grupo de fanáticos sorprendió al delantero con un inesperado festejo desde su auto.",
-          "needs_translation": false
+          "title": "Lautaro Martínez y un insólito momento: unos argentinos le cantaron el feliz cumpleaños",
+          "summary": "Tras la victoria de Inter ante Monza, un grupo de hinchas argentinos sorprendió a Lautaro Martínez cantándole el feliz cumpleaños desde su coche.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Lautaro Martínez and an unusual moment: he met some Argentines who sang his happy birthday",
-          "summary": "After Inter's triumph against Monza, a group of fans surprised the striker with an unexpected celebration from their car.",
+          "title": "Lautaro Martínez surprised by Argentine fans singing happy birthday to him",
+          "summary": "Following Inter's victory over Monza, a group of Argentine fans surprised striker Lautaro Martínez by singing him happy birthday from their car.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Lautaro Martínez et un moment insolite : il a rencontré des Argentins qui lui ont chanté un joyeux anniversaire",
-          "summary": "Après la victoire de l'Inter face à Monza, un groupe de fans a surpris l'attaquant avec une célébration inattendue depuis sa voiture.",
+          "title": "Lautaro Martínez surpris par des supporters argentins qui lui ont chanté un joyeux anniversaire",
+          "summary": "Après la victoire de Inter face à Monza, des supporters argentins ont surpris l'attaquant Lautaro Martínez en lui chantant un joyeux anniversaire depuis leur voiture.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "لوتارو مارتينيز ولحظة غير عادية: التقى ببعض الأرجنتينيين الذين غنوا عيد ميلاده السعيد",
-          "summary": "بعد انتصار إنتر على مونزا، فاجأت مجموعة من المشجعين المهاجم باحتفال غير متوقع من سيارتهم.",
+          "title": "لاوتارو مارتينيز في موقف طريف: مشجعون أرجنتينيون يحتفلون بعيد ميلاده",
+          "summary": "عقب فوز إنتر ميلان على مونزا، فاجأت مجموعة من المشجعين الأرجنتينيين المهاجم لاوتارو مارتينيز بالغناء له بمناسبة عيد ميلاده من داخل سيارتهم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/fuera-de-juego/lautaro-martinez-inter-feliz-cumpleanos-hinchas-video-particular-insolito_0_sLYLc4oCdK.html",
@@ -732,7 +769,12 @@
           "url": "https://www.ole.com.ar/fuera-de-juego/lautaro-martinez-inter-feliz-cumpleanos-hinchas-video-particular-insolito_0_sLYLc4oCdK.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4e979963a5d8",
@@ -741,32 +783,33 @@
       "i18n": {
         "de": {
           "title": "DFB-Pokal: Freiburg gewinnt souverän bei Fortuna Düsseldorf",
-          "summary": "In der Qualifikation zur Europa League hatte der SC Freiburg den ersten Schritt gemacht - im DFB-Pokal ist der Bundesligist nach einem Sieg bei Fortuna Düsseldorf schon eine Runde weiter.",
-          "needs_translation": false
+          "summary": "Nach dem Erfolg in der Qualifikation zur Europa League hat der SC Freiburg mit einem Auswärtssieg bei Fortuna Düsseldorf die nächste Runde im DFB-Pokal erreicht.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "DFB Cup: Freiburg wins confidently at Fortuna Düsseldorf",
-          "summary": "In qualifying for the Europa League, SC Freiburg had taken the first step - in the DFB Cup, the Bundesliga team is already one round further after a victory at Fortuna Düsseldorf.",
+          "title": "DFB-Pokal: Freiburg win comfortably at Fortuna Düsseldorf",
+          "summary": "Following its start in Europa League qualification, SC Freiburg secured a place in the next round of the DFB-Pokal with an away victory against Fortuna Düsseldorf.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Coupe d'Allemagne : Fribourg gagne souverainement au Fortuna Düsseldorf",
-          "summary": "Dans les qualifications pour l'Europa League, le SC Freiburg avait fait le premier pas - en Coupe d'Allemagne, la Bundesliga est déjà un tour de plus après une victoire au Fortuna Düsseldorf.",
+          "title": "DFB-Pokal : Freiburg s'impose avec autorité face à Fortuna Düsseldorf",
+          "summary": "Après ses débuts en qualification de l'Europa League, le SC Freiburg s'est qualifié pour le tour suivant de la DFB-Pokal grâce à sa victoire sur le terrain de Fortuna Düsseldorf.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Copa DFB: Friburgo gana con confianza al Fortuna Düsseldorf",
-          "summary": "En la clasificación para la Europa League, el SC Freiburg había dado el primer paso: en la Copa DFB, el equipo de la Bundesliga ya ha pasado una ronda después de ganar al Fortuna Düsseldorf.",
+          "title": "DFB-Pokal: Freiburg gana con solvencia ante Fortuna Düsseldorf",
+          "summary": "Tras su inicio en la fase previa de la Europa League, el SC Freiburg avanzó a la siguiente ronda de la DFB-Pokal tras vencer a domicilio al Fortuna Düsseldorf.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كأس الاتحاد الألماني لكرة القدم: فرايبورغ يفوز بثقة في فورتونا دوسلدورف",
-          "summary": "في التصفيات المؤهلة للدوري الأوروبي، اتخذ نادي فرايبورغ الخطوة الأولى - في كأس الاتحاد الألماني، فريق البوندسليغا هو بالفعل جولة أخرى بعد فوزه في فورتونا دوسلدورف.",
+          "title": "كأس ألمانيا: فرايبورغ يفوز بثقة أمام فورتونا دوسلدورف",
+          "summary": "تأهل فرايبورغ إلى الدور التالي من كأس ألمانيا بعد فوزه خارج أرضه على فورتونا دوسلدورف، ليواصل نجاحه بعد تصفيات الدوري الأوروبي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/dfbpokal/freiburgs-vier-tage-trip-wird-zum-vollen-erfolg,spielbericht-dfb-pokal-duesseldorf-freiburg-100.html",
@@ -794,7 +837,12 @@
           "url": "https://www.sportschau.de/fussball/dfbpokal/freiburgs-vier-tage-trip-wird-zum-vollen-erfolg,spielbericht-dfb-pokal-duesseldorf-freiburg-100.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "789bb7a879a0",
@@ -803,32 +851,33 @@
       "i18n": {
         "de": {
           "title": "Saibari wird verabschiedet und bejubelt Perisic-Doppelpack zu PSV-Sieg",
-          "summary": "Hier gibt's die Highlights der Partie PSV Eindhoven - FC Groningen im Video.",
-          "needs_translation": false
+          "summary": "Die Highlights des Sieges von PSV Eindhoven gegen den FC Groningen mit einem Doppelpack von Perisic im Video.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Saibari is said goodbye and cheers Perisic double pack to PSV victory",
-          "summary": "Here are the highlights of the match between PSV Eindhoven and FC Groningen in the video.",
+          "title": "Saibari cheered off and celebrates Perisic brace in PSV win",
+          "summary": "Watch the video highlights of PSV Eindhoven's victory against FC Groningen, featuring a brace from Perisic.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Saibari est adopté et salue le double pack Perisic pour la victoire du PSV",
-          "summary": "Voici les temps forts du match PSV Eindhoven - FC Groningen en vidéo.",
+          "title": "Saibari ovationné et ravi du doublé de Perisic lors de la victoire du PSV",
+          "summary": "Les moments forts en vidéo de la victoire du PSV Eindhoven contre le FC Groningen, portée par un doublé de Perisic.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Saibari se despide y celebra el doblete de Perisic en la victoria del PSV",
-          "summary": "Aquí están los aspectos más destacados del partido PSV Eindhoven - FC Groningen en vídeo.",
+          "title": "Saibari ovacionado celebra el doblete de Perisic en la victoria del PSV",
+          "summary": "El resumen en vídeo de la victoria del PSV Eindhoven frente al FC Groningen, sellada con un doblete de Perisic.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يُقال لسايباري وداعًا ويهتف لحزمة Perisic المزدوجة لفوز PSV",
-          "summary": "فيما يلي النقاط البارزة في المباراة بين PSV Eindhoven و FC Groningen في الفيديو.",
+          "title": "صيباري يودع الجماهير ويحتفل بثنائية بيريشيتش في فوز آيندهوفن",
+          "summary": "ملخص بالفيديو لأبرز لقطات فوز بي إس في آيندهوفن على إف سي غرونينغن، والذي شهد تسجيل بيريشيتش لثنائية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/saibari-wird-verabschiedet-und-bejubelt-perisic-doppelpack-zu-psv-sieg-1246195/video#omrss",
@@ -850,7 +899,12 @@
           "url": "https://www.kicker.de/saibari-wird-verabschiedet-und-bejubelt-perisic-doppelpack-zu-psv-sieg-1246195/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "1dadac7a718d",
@@ -1021,7 +1075,17 @@
           "url": "https://www.lequipe.fr/Football/Actualites/La-juventus-l-emporte-en-frissonnant-pour-ses-debuts-en-serie-a/1713091#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-23T20:35:54+00:00"
+        }
+      }
     },
     {
       "id": "0cc3755dc0fe",
@@ -1030,32 +1094,33 @@
       "i18n": {
         "de": {
           "title": "Traumtor mit dem Außenrist: PSG gerät bei Rennes in Rückstand",
-          "summary": "Hier gibt's das 1:0 aus dem Spiel Stade Rennes - Paris St. Germain im Video.",
-          "needs_translation": false
+          "summary": "Stade Rennes ging im Spiel gegen Paris St. Germain durch einen Treffer mit dem Außenrist mit 1:0 in Führung.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Dream goal with the outsider: PSG falls behind at Rennes",
-          "summary": "Here's the 1:0 from the game Stade Rennes - Paris St. Germain in the video.",
+          "title": "Superb outside-of-the-boot goal: PSG fall behind at Rennes",
+          "summary": "Stade Rennes took a 1-0 lead against Paris St. Germain courtesy of a strike with the outside of the boot.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Porte de rêve avec le bord extérieur : le PSG est à la traîne à Rennes",
-          "summary": "Voici le 1:0 du match Stade Rennes - Paris St. Germain en vidéo.",
+          "title": "But spectaculaire de l'extérieur du pied : le PSG mené à Rennes",
+          "summary": "Le Stade Rennes a ouvert le score 1-0 face au Paris St. Germain grâce à une frappe de l'extérieur du pied.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Puerta de ensueño con el cristal exterior: el PSG se queda atrás en Rennes",
-          "summary": "Aquí está el vídeo del 1-0 del partido Stade Rennes - Paris St. Germain.",
+          "title": "Golazo con el exterior: el PSG por detrás en Rennes",
+          "summary": "El Stade Rennes se adelantó 1-0 frente al Paris St. Germain tras una definición con el exterior del pie.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هدف الأحلام مع الدخيل: يتخلف باريس سان جيرمان في رين",
-          "summary": "هنا 1:0 من لعبة ستاد رين - باريس سان جيرمان في الفيديو.",
+          "title": "هدف رائع بوجه القدم الخارجي: باريس سان جيرمان يتأخر أمام رين",
+          "summary": "تقدم فريق ستاد رين بنتيجة 1-0 أمام باريس سان جيرمان بفضل هدف سُجل بوجه القدم الخارجي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/traumtor-mit-dem-aussenrist-psg-geraet-bei-rennes-in-rueckstand-1246193/video#omrss",
@@ -1077,7 +1142,12 @@
           "url": "https://www.kicker.de/traumtor-mit-dem-aussenrist-psg-geraet-bei-rennes-in-rueckstand-1246193/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8619e3735ebc",
@@ -1242,26 +1312,27 @@
       "i18n": {
         "es": {
           "title": "El 1x1 del Atlético ante el Villarreal",
-          "summary": "El Atlético de Madrid no pasó del empate ante el Villarreal , en un partido que estuvo muy condicionado por el factor Julián Álvarez y por el colegiado. Así jugaron los rojijblancos.",
-          "needs_translation": false
+          "summary": "El Atlético de Madrid no pasó del empate ante el Villarreal en un encuentro marcado por la actuación arbitral y el desempeño de Julián Álvarez.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Atletico's 1x1 against Villarreal",
-          "summary": "Atlético de Madrid did not pass the draw against Villarreal , in a match that was very conditioned by the Julián Álvarez factor and by the collegiate. This is how the Rojijblancos played.",
+          "title": "Atlético de Madrid player ratings against Villarreal",
+          "summary": "Atlético de Madrid were held to a draw against Villarreal in a match heavily influenced by the referee and Julián Álvarez.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le 1x1 de l'Atlético face à Villarreal",
-          "summary": "L'Atlético de Madrid n'est pas passé de l'égalité contre Villarreal , dans un match qui a été très conditionné par le facteur Julián Álvarez et par le collège. C'est ainsi que les rojijblancs ont joué.",
+          "title": "Les notes de l'Atlético de Madrid face à Villarreal",
+          "summary": "L'Atlético de Madrid a concédé le match nul contre Villarreal lors d'une rencontre marquée par les décisions arbitrales et la performance de Julián Álvarez.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أتلتيكو 1 × 1 ضد فياريال",
-          "summary": "لم ينجح أتلتيكو مدريد في التعادل ضد فياريال ، في مباراة كانت مشروطة للغاية بعامل جوليان ألفاريز والجماعي. هذه هي الطريقة التي لعب بها روجيجبلانكوس.",
+          "title": "تقييم لاعبي أتلتيكو مدريد أمام فياريال",
+          "summary": "تعادل أتلتيكو مدريد مع فياريال في مواجهة تأثرت بشكل كبير بالقرارات التحكيمية وبمردود خوليان ألفاريز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260823/1004218974/1x1-atletico-villarreal.html",
@@ -1283,7 +1354,12 @@
           "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260823/1004218974/1x1-atletico-villarreal.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "592c5af5dc4c",
@@ -1339,7 +1415,12 @@
           "url": "https://www.kicker.de/wirtz-gluecklos-woltemade-nicht-gefragt-am-ende-leiden-vier-deutsche-1246171/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "15b3215c98b5",
@@ -1448,32 +1529,33 @@
       "i18n": {
         "de": {
           "title": "Es braucht \"einen anderen FCH\": Schmidt vor seiner herausforderndsten Phase",
-          "summary": "Nach sieben Gegentoren in den ersten beiden Ligaspielen schien der Bundesliga-Absteiger mit dem respektablen Test gegen den FC Bayern auf dem richtigen Weg zu sein - und wird nun von einem Viertligisten in seine Einzelteile zerlegt. Ein peinlicher Auftritt, der nachwirkt.",
-          "needs_translation": false
+          "summary": "Nach sieben Gegentoren in den ersten zwei Ligaspielen und einer herben Niederlage gegen einen Viertligisten steht Schmidt beim Bundesliga-Absteiger vor seiner bisher schwersten Phase.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "It needs \"another FCH\": Schmidt before his most challenging phase",
-          "summary": "After seven goals conceded in the first two league games, the Bundesliga relegated player seemed to be on the right track with the respectable test against FC Bayern - and is now being dismantled into his individual parts by a fourth division team. An embarrassing appearance that has an aftereffect.",
+          "title": "\"A different FCH\" needed: Schmidt facing his most challenging phase",
+          "summary": "After conceding seven goals in their first two league games and suffering a heavy defeat against a fourth-tier side, Schmidt faces a critical period at the relegated club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Il faut « un autre FCH » : Schmidt avant sa phase la plus difficile",
-          "summary": "Après sept buts encaissés lors des deux premiers matches de championnat, le relégué de la Bundesliga semblait être sur la bonne voie avec le test respectable contre le FC Bayern - et il est maintenant décomposé en ses différentes parties par une équipe de quatrième division. Une apparence embarrassante qui a des répercussions.",
+          "title": "Il faut « un autre FCH » : Schmidt face à sa période la plus difficile",
+          "summary": "Après sept buts encaissés en deux matches de championnat et une lourde défaite contre un club de quatrième division, Schmidt traverse une phase critique à la tête du club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Se necesita \"otro FCH\": Schmidt antes de su fase más desafiante",
-          "summary": "Después de siete goles en contra en los dos primeros partidos de liga, el relegado de la Bundesliga parecía estar en el camino correcto con la respetable prueba contra el FC Bayern, y ahora está siendo dividido en sus partes por un equipo de cuarta división. Una apariencia vergonzosa que repercute.",
+          "title": "Se necesita «un FCH diferente»: Schmidt ante su fase más desafiante",
+          "summary": "Tras encajar siete goles en dos partidos de liga y sufrir una dura derrota contra un equipo de cuarta división, Schmidt afronta una etapa crítica en el club recién descendido.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يحتاج إلى \"FCH آخر \": شميدت قبل مرحلته الأكثر تحديًا",
-          "summary": "بعد تلقي سبعة أهداف في أول مباراتين في الدوري، بدا أن لاعب الهبوط في الدوري الألماني يسير على الطريق الصحيح مع الاختبار المحترم ضد بايرن - ويتم الآن تفكيكه إلى أجزائه الفردية من قبل فريق الدرجة الرابعة. مظهر محرج له تأثير لاحق.",
+          "title": "الحاجة إلى \"هايدنهايم مختلف\": شميدت أمام أصعب فتراته",
+          "summary": "يواجه المدرب شميدت مرحلة معقدة بعد استقبال فريقه سبعة أهداف في أول جولتين من الدوري، وتلقيه خسارة قاسية أمام نادٍ من الدرجة الرابعة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/es-braucht-einen-anderen-fch-schmidt-vor-seiner-herausforderndsten-phase-1246169/artikel#omrss",
@@ -1495,7 +1577,12 @@
           "url": "https://www.kicker.de/es-braucht-einen-anderen-fch-schmidt-vor-seiner-herausforderndsten-phase-1246169/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "fab532facf0a",
@@ -1566,7 +1653,17 @@
           "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260823/1004218966/simeone-sobre-julian-julian-ugadores-esten-atletico-muerte.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-23T20:35:56+00:00"
+        }
+      }
     },
     {
       "id": "63e95c93a7fb",
@@ -1575,26 +1672,27 @@
       "i18n": {
         "es": {
           "title": "Primer once liguero de Flick, con sorpresa",
-          "summary": "Hansi Flick ya ha anunciado el primer once del Barça en laLiga 26-27, un once con la base con la que ha trabajado durante la pretemporada, con cuatro mundialistas españoles, y con alguna sorpresa.",
-          "needs_translation": false
+          "summary": "Hansi Flick anunció la primera alineación del Barça en LaLiga, manteniendo la base de la pretemporada con cuatro mundialistas españoles y alguna novedad.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "First eleven leagues of Flick, with surprise",
-          "summary": "Hansi Flick has already announced Barça's first eleven in LaLiga 26-27, an eleven with the base with which he has worked during the preseason, with four Spanish World Cup players, and with some surprise.",
+          "title": "Flick's first league starting XI, with a surprise",
+          "summary": "Hansi Flick announced Barça's first starting lineup in LaLiga, relying on his pre-season core with four Spanish World Cup players and a few surprises.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Premier onze de Flick, avec surprise",
-          "summary": "Hansi Flick a déjà annoncé le premier onze du Barça en Liga 26-27, un onze avec la base avec laquelle il a travaillé pendant la pré-saison, avec quatre champions du monde espagnols, et avec une certaine surprise.",
+          "title": "Premier onze de Flick en championnat, avec une surprise",
+          "summary": "Hansi Flick a dévoilé le premier onze de départ du Barça en LaLiga, s'appuyant sur les bases de la pré-saison avec quatre mondialistes espagnols et quelques surprises.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أول أحد عشر دوريًا من فليك، بمفاجأة",
-          "summary": "أعلن هانسي فليك بالفعل عن أول أحد عشر لاعبا لبرشلونة في الدوري الاسباني 26-27، أحد عشر مع القاعدة التي عمل معها خلال فترة ما قبل الموسم، مع أربعة لاعبي كأس العالم الاسباني، ومع بعض المفاجأة.",
+          "title": "التشكيلة الأساسية الأولى لفليك في الدوري تشهد مفاجأة",
+          "summary": "أعلن هانزي فليك عن التشكيلة الأساسية الأولى لنادي برشلونة في الدوري الإسباني، معتمداً على قوام الفترة التحضيرية وأربعة دوليين إسبان مع بعض المفاجآت.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218965/primer-once-liguero-flick-sorpresa.html",
@@ -1616,7 +1714,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218965/primer-once-liguero-flick-sorpresa.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "652047b26a0c",
@@ -1675,32 +1778,33 @@
       "i18n": {
         "de": {
           "title": "Simeone spät, Pubill traumhaft: Atletico spielt nur remis",
-          "summary": "Hier gibt's die Highlights der Partie Atletico Madrid - Villarreal im Video.",
-          "needs_translation": false
+          "summary": "Atletico Madrid und Villarreal trennen sich mit einem Unentschieden nach Toren von Simeone und Pubill. Die Highlights des Spiels sind im Video abrufbar.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Simeone late, pubill dreamlike: Atletico only plays draw",
-          "summary": "Here are the highlights of the game Atletico Madrid - Villarreal in the video.",
+          "title": "Simeone late, Pubill sublime: Atletico held to a draw",
+          "summary": "Atletico Madrid and Villarreal played out a draw featuring goals from Simeone and Pubill. Match video highlights are available.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Simeone tardive, Pubill fantastique : l'Atlético ne joue que nul",
-          "summary": "Voici les temps forts du match Atletico Madrid - Villarreal en vidéo.",
+          "title": "Simeone tardif, Pubill superbe : Atletico concède le nul",
+          "summary": "L'Atletico Madrid et Villarreal se sont quittés sur un match nul après des buts de Simeone et Pubill. Le résumé vidéo de la rencontre est disponible.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Simeone tarde, Pubill fantástico: el Atlético solo juega tablas",
-          "summary": "Aquí están los aspectos más destacados del partido Atlético de Madrid - Villarreal en vídeo.",
+          "title": "Simeone tarde, Pubill genial: Atletico solo empata",
+          "summary": "El Atletico Madrid empató frente al Villarreal en un duelo marcado por los goles de Simeone y Pubill. El resumen de la jugadas destacadas está disponible en vídeo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Simeone late, pubill dreamlike: Atletico plays only draw",
-          "summary": "فيما يلي النقاط البارزة في لعبة أتلتيكو مدريد - فياريال في الفيديو.",
+          "title": "سيميوني في الوقت القاتل وبوبيل بهدف رائع: أتلتيكو مدريد يكتفي بالتعادل",
+          "summary": "تعادل أتلتيكو مدريد مع فياريال بعد هدفي سيميوني وبوبيل. ملخص وأبرز لقطات المباراة متاح بالفيديو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/simeone-spaet-pubill-traumhaft-atletico-spielt-nur-remis-1246180/video#omrss",
@@ -1722,7 +1826,12 @@
           "url": "https://www.kicker.de/simeone-spaet-pubill-traumhaft-atletico-spielt-nur-remis-1246180/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3d9ee472d163",
@@ -1831,26 +1940,27 @@
       "i18n": {
         "es": {
           "title": "Bellingham se reencuentra con su mejor versión de la mano de Mourinho",
-          "summary": "Jude Bellingham mostró ante el Espanyol que se ha reencontrado con su pasado, con su mejor versión. Marcó el primer tanto del Real Madrid y envió un balón al larguero.",
-          "needs_translation": false
+          "summary": "Jude Bellingham recuperó su mejor nivel frente al Espanyol al marcar el primer gol del Real Madrid y estrellar un balón en el larguero.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Bellingham reunites with his best version of Mourinho's hand",
-          "summary": "Jude Bellingham showed against Espanyol that he has rediscovered his past, with his best version. He scored Real Madrid's first goal and sent a ball to the stringer.",
+          "title": "Bellingham rediscovering his best version under Mourinho",
+          "summary": "Jude Bellingham returned to top form against Espanyol, scoring the opening goal for Real Madrid and hitting the crossbar.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Bellingham retrouve sa meilleure version de la main de Mourinho",
-          "summary": "Jude Bellingham a montré à l'Espanyol qu'il a retrouvé son passé, sa meilleure version. Il a marqué le premier but du Real Madrid et a envoyé un ballon sur la lisse.",
+          "title": "Bellingham retrouve sa meilleure version sous la houlette de Mourinho",
+          "summary": "Jude Bellingham a retrouvé son meilleur niveau face à l'Espanyol en inscrivant le premier but du Real Madrid et en touchant la barre transversale.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "لم شمل بيلينجهام مع أفضل نسخة من يد مورينيو",
-          "summary": "أظهر جود بيلينجهام ضد إسبانيول أنه أعاد اكتشاف ماضيه، مع أفضل نسخة له. وسجل هدف ريال مدريد الأول وأرسل كرة إلى اللاعب.",
+          "title": "بيلينغهام يستعيد أفضل مستوياته رفقة مورينيو",
+          "summary": "استعاد جود بيلينغهام أفضل مستوياته أمام إسبانيول، حيث سجل الهدف الأول لصالح ريال مدريد وسدد كرة اصطدمت بالعارضة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218954/bellingham-reencuentra-mejor-version-mano-mourinho.html",
@@ -1872,7 +1982,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218954/bellingham-reencuentra-mejor-version-mano-mourinho.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2cc650793ed3",
@@ -1881,32 +1996,33 @@
       "i18n": {
         "de": {
           "title": "FC Liverpool spielt remis in der Premier League-Partie bei Newcastle United",
-          "summary": "Der FC Liverpool mit einem schwachen Flo Wirtz erlebte fast eine Pleite zum Saisonstart. In Newcastle rettete Dominik Szoboszlai sein Team erst in der Nachspielzeit.",
-          "needs_translation": false
+          "summary": "Der FC Liverpool hat bei Newcastle United ein Unentschieden geholt. Dominik Szoboszlai sicherte seinem Team mit einem Tor in der Nachspielzeit den Punktgewinn.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Liverpool draw in Premier League match at Newcastle United",
-          "summary": "Liverpool FC with a weak Flo Wirtz almost went bankrupt at the start of the season. In Newcastle, Dominik Szoboszlai saved his team only in stoppage time.",
+          "title": "FC Liverpool draw in Premier League match at Newcastle United",
+          "summary": "FC Liverpool avoided defeat at Newcastle United thanks to a stoppage-time equalizer from Dominik Szoboszlai.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le FC Liverpool joue nul en Premier League à Newcastle United",
-          "summary": "Le FC Liverpool avec un faible Flo Wirtz a presque fait faillite au début de la saison. À Newcastle, Dominik Szoboszlai n'a sauvé son équipe que dans le temps additionnel.",
+          "title": "Le FC Liverpool fait match nul lors du match de Premier League à Newcastle United",
+          "summary": "Le FC Liverpool a obtenu le match nul sur la pelouse de Newcastle United grâce à un but salvateur de Dominik Szoboszlai dans le temps additionnel.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "FC Liverpool empata en el partido de la Premier League con el Newcastle United",
-          "summary": "El Liverpool FC, con un Flo Wirtz débil, casi sufrió una quiebra al comienzo de la temporada. En Newcastle, Dominik Szoboszlai salvó a su equipo solo en el tiempo de descuento.",
+          "title": "El FC Liverpool empata en su partido de Premier League ante el Newcastle United",
+          "summary": "El FC Liverpool empató en el campo del Newcastle United gracias a un gol agónico de Dominik Szoboszlai en el tiempo añadido.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تعادل ليفربول في مباراة الدوري الممتاز في نيوكاسل يونايتد",
-          "summary": "نادي ليفربول مع فلو ويرتز الضعيف كاد أن يفلس في بداية الموسم. في نيوكاسل، أنقذ دومينيك زوبوشلاي فريقه فقط في وقت التوقف.",
+          "title": "ليفربول يتعادل أمام نيوكاسل يونايتد في الدوري الإنجليزي الممتاز",
+          "summary": "أنقذ دومينيك سوبوسلاي فريقه ليفربول من الهزيمة أمام نيوكاسل يونايتد بتسجيله هدف التعادل في الوقت بدل الضائع.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/premier-league/szoboszlai-laesst-liverpool-in-newcastle-aufatmen,spielbericht-newcastle-liverpool-100.html",
@@ -1940,7 +2056,12 @@
           "url": "https://www.lefigaro.fr/sports/football/angleterre/premier-league-dans-le-dur-a-newcastle-liverpool-obtient-le-match-nul-a-la-derniere-seconde-20260823"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "638baa8d0362",
@@ -1949,26 +2070,27 @@
       "i18n": {
         "es": {
           "title": "Rennes - Paris Saint-Germain, en directo | Ligue 1",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Serie A que enfrenta al Torino contra el AC Milan correspondiente a Jornada 1.",
-          "needs_translation": false
+          "summary": "Seguimiento en directo del partido de la Serie A entre Torino y AC Milan, correspondiente a la jornada 1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Rennes - Paris Saint-Germain, live | Ligue 1",
-          "summary": "Good afternoon and welcome to the live narration of the Serie A football match between Torino and AC Milan corresponding to Matchday 1.",
+          "title": "Rennes - Paris Saint-Germain Live | Ligue 1",
+          "summary": "Live coverage of the Serie A matchday 1 clash between Torino and AC Milan.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Rennes - Paris Saint-Germain, en direct | Ligue 1",
-          "summary": "Bonsoir et bienvenue au récit, en direct, du match de football de Serie A qui oppose le Torino à l'AC Milan correspondant à la Journée 1.",
+          "title": "Rennes - Paris Saint-Germain en direct | Ligue 1",
+          "summary": "Suivi en direct de la rencontre de Serie A opposant Torino et AC Milan dans le cadre de la 1re journée.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "رين - باريس سان جيرمان، مباشر | دوري الدرجة الأولى",
-          "summary": "مساء الخير ومرحبا بكم في السرد المباشر لمباراة دوري الدرجة الأولى الايطالي لكرة القدم بين تورينو وميلانو المقابلة ليوم المباراة 1.",
+          "title": "رين - باريس سان جيرمان مباشر | الدوري الفرنسي",
+          "summary": "متابعة مباشرة لمباراة الدوري الإيطالي بين تورينو وإيه سي ميلان لحساب الجولة الأولى.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/serie-a/20260823/1004217447/torino-ac-milan-directo-serie.html",
@@ -2008,7 +2130,12 @@
           "url": "https://www.mundodeportivo.com/futbol/serie-a/20260823/1004217441/venezia-lecce-directo-serie.html"
         }
       ],
-      "source_count": 4
+      "source_count": 4,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f141a15fb71c",
@@ -2017,32 +2144,33 @@
       "i18n": {
         "de": {
           "title": "Bayerns Plan mit Karl und Gnabry",
-          "summary": "Keiner von Bayerns Zehnern ist aktuell fit, weshalb Nathaniel Brown diesen Posten im Supercup gegen den BVB übernahm. Lennart Karl, Serge Gnabry, Ismael Saibari und Jamal Musiala kommen jedoch in absehbarer Zeit zurück.",
-          "needs_translation": false
+          "summary": "Da kein etatmäßiger Spielmacher fit war, übernahm Nathaniel Brown diese Rolle im Supercup. Lennart Karl, Serge Gnabry, Ismael Saibari und Jamal Musiala kehren jedoch zeitnah zurück.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Bavaria's Plan with Karl and Gnabry",
-          "summary": "None of Bayern's tens are currently fit, which is why Nathaniel Brown took over this position in the Supercup against BVB. However, Lennart Karl, Serge Gnabry, Ismael Saibari and Jamal Musiala will return in the foreseeable future.",
+          "title": "Bayern's plan with Karl and Gnabry",
+          "summary": "With no playmaker fit, Nathaniel Brown took on the number 10 role in the Supercup. Lennart Karl, Serge Gnabry, Ismael Saibari, and Jamal Musiala are expected to return soon.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le plan de la Bavière avec Karl et Gnabry",
-          "summary": "Aucun des dix de Bavière n'est actuellement en forme, c'est pourquoi Nathaniel Brown a pris ce poste en Supercoupe contre le BVB. Cependant, Lennart Karl, Serge Gnabry, Ismael Saibari et Jamal Musiala reviendront bientôt.",
+          "title": "Le plan du Bayern avec Karl et Gnabry",
+          "summary": "Faute de meneur disponible, Nathaniel Brown a occupé ce poste lors de la Supercup. Lennart Karl, Serge Gnabry, Ismael Saibari et Jamal Musiala devraient revenir prochainement.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El plan de Baviera con Karl y Gnabry",
-          "summary": "Ninguno de los diez del Bayern está actualmente en forma, por lo que Nathaniel Brown asumió este puesto en la Supercopa contra el BVB. Sin embargo, Lennart Karl, Serge Gnabry, Ismael Saibari y Jamal Musiala volverán en un futuro próximo.",
+          "title": "El plan del Bayern con Karl y Gnabry",
+          "summary": "Sin mediapuntas disponibles, Nathaniel Brown asumió esa posición en la Supercup. Lennart Karl, Serge Gnabry, Ismael Saibari y Jamal Musiala regresarán en un futuro cercano.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "خطة بافاريا مع كارل وغنابري",
-          "summary": "Keiner von Bayerns Zehnern ist aktuell fit, weshalb Nathaniel Brown diesen Posten im Supercup gegen den BVB übernahm. Lennart Karl, Serge Gnabry, Ismael Saibari und Jamal Musiala kommen jedoch in absehbarer Zeit zurück.",
+          "title": "خطة بايرن ميونخ مع كارل وغنابري",
+          "summary": "شارك ناثانيال براون في مركز صانع الألعاب خلال كأس السوبر لغياب البدلاء الجاهزين، بينما يُنتظر عودة لينارت كارل وسيرج غنابري وإسماعيل صيباري وجمال موسيالا قريباً.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/bayerns-plan-mit-karl-und-gnabry-1246164/artikel#omrss",
@@ -2064,7 +2192,12 @@
           "url": "https://www.kicker.de/bayerns-plan-mit-karl-und-gnabry-1246164/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     }
   ]
 }
