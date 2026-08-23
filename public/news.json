@@ -118,7 +118,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 0,
         "source_read": "skipped"
       }
     },
@@ -309,26 +309,27 @@
       "i18n": {
         "fr": {
           "title": "Les notes de Rennes-PSG : Torres en sauveur, Dembélé décevant",
-          "summary": "Face à Rennes, les Parisiens ont longtemps peiné à se montrer dangereux, à l'image d'Ousmane Dembélé, en manque de réussite. Il est remplacé, à la pause, par Ferran Torres.",
-          "needs_translation": false
+          "summary": "Face à Rennes, les Parisiens ont peiné offensivement avec un Ousmane Dembélé en manque de réussite, remplacé à la pause par Ferran Torres.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Rennes-PSG's notes: Torres as a saviour, Dembélé as a disappointment",
-          "summary": "Faced with Rennes, Parisians have long struggled to prove themselves dangerous, like Ousmane Dembélé, who lacked success. He was replaced, at the break, by Ferran Torres.",
+          "title": "Rennes-PSG player ratings: Torres the savior, Dembélé disappointing",
+          "summary": "Against Rennes, the Parisians struggled offensively, notably with an ineffective Ousmane Dembélé, who was replaced at halftime by Ferran Torres.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Las notas de Rennes-PSG: Torres como salvador, Dembélé decepcionante",
-          "summary": "Frente a Rennes, los parisinos han luchado durante mucho tiempo para mostrarse peligrosos, como Ousmane Dembélé, a falta de éxito. Al descanso es sustituido por Ferran Torres.",
+          "title": "Las notas del Rennes-PSG: Torres salvador, Dembélé decepcionante",
+          "summary": "Frente a Rennes, los Parisiens tuvieron dificultades ofensivas con un desacertado Ousmane Dembélé, quien fue sustituido al descanso por Ferran Torres.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ملاحظات رين- بي إس جي: توريس كمنقذ، ديمبيلي كخيبة أمل",
-          "summary": "في مواجهة رين، كافح الباريسيون لفترة طويلة لإثبات أنهم خطرون، مثل عثمان ديمبيلي، الذي افتقر إلى النجاح. تم استبداله، في الاستراحة، بفيران توريس.",
+          "title": "تقييمات مباراة رين وباريس سان جيرمان: توريس المنقذ وديمبيلي مخيب للآمال",
+          "summary": "واجه باريس سان جيرمان صعوبات هجومية أمام رين في ظل عدم توفيق عثمان ديمبيلي، الذي استُبدل في استراحة الشوطين بفيران توريس.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Article/Les-notes-de-rennes-psg-ferran-torres-en-sauveur-dembele-decevant/1713148#at_medium=RSS_feeds",
@@ -356,7 +357,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-1/rennes-psg-les-debuts-sensationnels-de-ferran-torres-la-sale-soiree-de-dembele-les-tops-et-flops-20260823"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "cec2b0de7441",
@@ -365,26 +371,27 @@
       "i18n": {
         "es": {
           "title": "Fermín no va de farol",
-          "summary": "Fermín López pasó el peor verano de su vida después de quedarse sin Mundial por una inoportuna lesión que le impidió participar del éxito de España en la conquista de su segunda estrella.",
-          "needs_translation": false
+          "summary": "Una inoportuna lesión privó a Fermín López de disputar el Mundial y participar en la conquista de la segunda estrella de España.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Fermin does not bluff",
-          "summary": "Fermín López spent the worst summer of his life after missing the World Cup due to an untimely injury that prevented him from participating in Spain's success in winning its second star.",
+          "title": "Fermín is not bluffing",
+          "summary": "An untimely injury prevented Fermín López from playing in the Mundial and sharing in España's triumph for their second star.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Fermín ne bluffe pas",
-          "summary": "Fermín López a passé le pire été de sa vie après avoir été privé de Coupe du Monde par une blessure inopportune qui l'a empêché de participer au succès de l'Espagne dans la conquête de sa deuxième étoile.",
+          "summary": "Une blessure inopportune a privé Fermín López de disputer le Mundial et de participer au sacre d'España pour sa deuxième étoile.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
           "title": "فيرمين لا يخادع",
-          "summary": "قضى فيرمين لوبيز أسوأ صيف في حياته بعد غيابه عن كأس العالم بسبب إصابة مبكرة منعته من المشاركة في نجاح إسبانيا في الفوز بنجمها الثاني.",
+          "summary": "حرمت إصابة غير مواتية فيرمين لوبيز من المشاركة في كأس العالم والتتويج بالنجمة الثانية مع منتخب إسبانيا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004219023/fermin-no-farol.html",
@@ -406,7 +413,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004219023/fermin-no-farol.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d827d04ac045",
@@ -415,26 +427,27 @@
       "i18n": {
         "es": {
           "title": "Y sin nueve ni Rodri",
-          "summary": "El Barça empezó arrasando con una manita en Elche en el primer partido de LaLiga . El campeón dejó claro que tiene un fondo de armario sensacional en la plantilla y muchos recursos.",
-          "needs_translation": false
+          "summary": "El Barça comenzó LaLiga con una goleada por 5-0 ante Elche. El vigente campeón exhibió la gran profundidad y recursos de su plantilla pese a no contar con un nueve de referencia ni con Rodri.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "And without nine or Rodri",
-          "summary": "Barça started with a sweeping hand in Elche in the first game of LaLiga . The champion made it clear that he has a sensational wardrobe background on the roster and plenty of resources.",
+          "title": "And without a number nine or Rodri",
+          "summary": "Barça opened their LaLiga campaign with a 5-0 victory over Elche. The defending champions demonstrated their impressive squad depth despite playing without a traditional striker or Rodri.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Et sans neuf ni Rodri",
-          "summary": "Le Barça a commencé par balayer avec une petite main à Elche lors du premier match de LaLiga . Le champion a clairement indiqué qu'il avait un fond de placard sensationnel dans le personnel et de nombreuses ressources.",
+          "title": "Et sans numéro neuf ni Rodri",
+          "summary": "Le Barça a largement dominé Elche 5-0 lors de la première journée de LaLiga. Le champion a démontré la grande profondeur de son effectif malgré les absences.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "وبدون تسعة أو رودري",
-          "summary": "بدأ برشلونة بيد كاسحة في إلتشي في المباراة الأولى من لاليغا . أوضح البطل أن لديه خلفية مثيرة في خزانة الملابس في القائمة والكثير من الموارد.",
+          "title": "ودون مهاجم صريح أو رودري",
+          "summary": "استهل برشلونة مشواره في الدوري الإسباني بفوز عريض على إلتشي بخماسية نظيفة، مبرزاً عمق تشكيلته وتنوع حلوله الهجومية رغم الغيابات.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004219021/nueve-rodri.html",
@@ -456,7 +469,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004219021/nueve-rodri.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d0e366af3892",
@@ -465,26 +483,27 @@
       "i18n": {
         "fr": {
           "title": "Angleterre : une première récompense pour Yoane Wissa",
-          "summary": "Pour sa première sortie o cette saison Newcastle, Yoane Wissa a crevé l’écran face aux Reds de Liverpool lors d’un choc spectaculaire achevé sur le score de 2-2.",
-          "needs_translation": false
+          "summary": "Pour son premier match de la saison, Yoane Wissa s'est illustré face à Liverpool lors d'un match nul 2-2 contre Newcastle.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "England: a first reward for Yoane Wissa",
-          "summary": "For his first outing o this Newcastle season, Yoane Wissa burst the screen against the Liverpool Reds in a spectacular shock completed on the score of 2-2.",
+          "title": "England: A first reward for Yoane Wissa",
+          "summary": "In his first appearance of the season, Yoane Wissa stood out against Liverpool in a 2-2 draw with Newcastle.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
           "title": "Inglaterra: una primera recompensa para Yoane Wissa",
-          "summary": "En su primera salida o esta temporada del Newcastle, Yoane Wissa reventó la pantalla ante los Reds del Liverpool en un espectacular choque completado con el marcador de 2-2.",
+          "summary": "En su primer partido de la temporada, Yoane Wissa destacó frente a Liverpool en un empate 2-2 con Newcastle.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "إنجلترا: مكافأة أولى ليوان ويسا",
-          "summary": "في أول ظهور له في موسم نيوكاسل هذا، فجر يوان ويسا الشاشة ضد ليفربول ريدز في صدمة مذهلة اكتملت بنتيجة 2-2.",
+          "title": "إنجلترا: أول مكافأة ليوان ويسا",
+          "summary": "تألق يوان ويسا في أول ظهور له هذا الموسم أمام ليفربول، في مباراة انتهت بالتعادل 2-2 مع نيوكاسل.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football-europe/angleterre-une-premiere-recompense-pour-yoane-wissa/",
@@ -506,7 +525,12 @@
           "url": "https://africatopsports.com/football-europe/angleterre-une-premiere-recompense-pour-yoane-wissa/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "cf09b1cfa31b",
@@ -571,32 +595,33 @@
       "i18n": {
         "de": {
           "title": "Der FC Barcelona gewinnt in Elche und feiert Karim Adeyemi",
-          "summary": "Der spanische Meister FC Barcelona ist mit einem lockeren Auswärtssieg in die Spielzeit gestartet. Gefeiert wurde bei den Katalanen auch Karim Adeyemi, der Neue vom BVB.",
-          "needs_translation": false
+          "summary": "Der FC Barcelona ist mit einem Auswärtssieg bei Elche in die neue Spielzeit gestartet. Dabei feierten die Katalanen auch ihren Neuzugang Karim Adeyemi.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "FC Barcelona wins in Elche and celebrates Karim Adeyemi",
-          "summary": "The Spanish champion FC Barcelona started the season with a relaxed away win. The Catalans also celebrated Karim Adeyemi, the new BVB player.",
+          "title": "FC Barcelona win at Elche and celebrate Karim Adeyemi",
+          "summary": "FC Barcelona kicked off their season with an away win against Elche. The Catalans also celebrated their new signing from BVB, Karim Adeyemi.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le FC Barcelone gagne à Elche et célèbre Karim Adeyemi",
-          "summary": "Le champion d'Espagne FC Barcelone a débuté la saison avec une victoire lâche à l'extérieur. Karim Adeyemi, le nouveau du BVB, a également été célébré chez les Catalans.",
+          "title": "Le FC Barcelona s'impose à Elche et célèbre Karim Adeyemi",
+          "summary": "Le FC Barcelona a entamé sa saison par une victoire à l'extérieur contre Elche. Les Catalans ont également célébré leur recrue Karim Adeyemi, arrivé du BVB.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
           "title": "El FC Barcelona gana en Elche y celebra a Karim Adeyemi",
-          "summary": "El campeón de España, el FC Barcelona, ha empezado la temporada con una ligera victoria fuera de casa. Los catalanes también celebraron a Karim Adeyemi, el nuevo del BVB.",
+          "summary": "El FC Barcelona comenzó la temporada con una victoria a domicilio frente al Elche. El conjunto catalán celebró además a su nuevo fichaje procedente del BVB, Karim Adeyemi.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "نادي برشلونة يفوز في إلتشي ويحتفل بكريم أدييمي",
-          "summary": "بدأ بطل إسبانيا برشلونة الموسم بفوز مريح خارج أرضه. كما احتفل الكاتالونيون بكريم أدييمي، لاعب BVB الجديد.",
+          "title": "برشلونة يفوز على إلتشي ويحتفي بكريم أديمي",
+          "summary": "استهل نادي برشلونة موسمه بفوز مريح خارج دياره أمام إلتشي. كما احتفى الفريق الكتالوني بالوافد الجديد من بوروسيا دورتموند، كريم أديمي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/la-liga-primera-division/adeyemi-trifft-barcelona-startet-souveraen-in-elche,spielbericht-elche-fc-barcelona-100.html",
@@ -618,7 +643,12 @@
           "url": "https://www.sportschau.de/fussball/la-liga-primera-division/adeyemi-trifft-barcelona-startet-souveraen-in-elche,spielbericht-elche-fc-barcelona-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f0cc4891101a",
@@ -676,27 +706,44 @@
       "summary": "Alors que le MC Alger continue de contester la situation de Youcef Belaïli, l’international algérien a envoyé un signal fort en débutant la saison avec l’Espérance de Tunis.",
       "i18n": {
         "fr": {
-          "title": "Espérance de Tunis : Malgré le bras de fer avec le MCA, Belaïli démarre la saison avec le brassard",
-          "summary": "Alors que le MC Alger continue de contester la situation de Youcef Belaïli, l’international algérien a envoyé un signal fort en débutant la saison avec l’Espérance de Tunis.",
-          "needs_translation": false
+          "title": "Espérance de Tunis : Youcef Belaïli promu capitaine en plein litige",
+          "summary": "Youcef Belaïli a lancé sa saison avec l'Espérance de Tunis en portant le brassard de capitaine, faisant fi des contestations du MC Alger.",
+          "body": [
+            "L'international algérien a matérialisé son retour chez les Sang et Or dès la reprise de la compétition. Malgré les réclamations persistantes de la direction mouloudéenne concernant sa situation, le joueur s'impose d'entrée comme le patron du vestiaire tunisois."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Esperance de Tunis: Despite the standoff with the MCA, Belaïli starts the season with the armband",
-          "summary": "While MC Algiers continues to challenge the situation of Youcef Belaïli, the Algerian international has sent a strong signal by starting the season with Esperance de Tunis.",
+          "title": "Espérance de Tunis: Youcef Belaïli named captain amid dispute with MC Alger",
+          "summary": "Youcef Belaïli kicked off his campaign with Espérance de Tunis wearing the captain's armband, shrugging off ongoing protests from MC Alger.",
+          "body": [
+            "The Algerian international hit the ground running upon his return to the Tunis outfit. Despite persistent complaints from MC Alger regarding his registration, the playmaker immediately established himself as the team's key leader on the pitch."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Esperanza de Túnez: A pesar del pulso con el MCA, Belaïli comienza la temporada con el brazalete",
-          "summary": "Mientras que el MC Argel sigue cuestionando la situación de Youcef Belaïli, el internacional argelino ha enviado una fuerte señal al comenzar la temporada con el Esperance de Túnez.",
+          "title": "Espérance de Tunis: Youcef Belaïli asume la capitanía en medio del litigio",
+          "summary": "Youcef Belaïli inició el curso con el Espérance de Tunis portando el brazalete de capitán, ajeno a las protestas del MC Alger.",
+          "body": [
+            "El internacional argelino ratificó su regreso al club tunecino desde el arranque oficial de la competición. Pese a los constantes reclamos de la directiva del MC Alger sobre su situación contractual, el atacante se consolidó de inmediato como el líder del vestuario."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Esperance de Tunis: على الرغم من المواجهة مع MCA، يبدأ بيلي الموسم بشارة الذراع",
-          "summary": "بينما يواصل نادي الجزائر العاصمة تحدي وضع يوسف بليلي، أرسل اللاعب الدولي الجزائري إشارة قوية من خلال بدء الموسم مع إسبيرانس دي تونس.",
+          "title": "الترجي التونسي: يوسف بلايلي يحمل شارة القيادة وسط أزمة مع مولودية الجزائر",
+          "summary": "استهل يوسف بلايلي موسمه مع الترجي التونسي بارتداء شارة قيادة الفريق، متجاهلاً احتجاجات إدارة مولودية الجزائر.",
+          "body": [
+            "رسّخ الدولي الجزائري عودته إلى نادي باب سويقة مع انطلاق المنافسات الرسمية. ورغم الشكاوى المستمرة من إدارة المولودية بشأن وضعيته، فرض نجم الخضر نفسه مباشرة كأبرز ركائز التشكيلة التونسية."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/afrique-football/esperance-de-tunis-malgre-le-bras-de-fer-avec-le-mca-belaili-demarre-la-saison-avec-le-brassard/",
@@ -718,7 +765,20 @@
           "url": "https://africatopsports.com/afrique-football/esperance-de-tunis-malgre-le-bras-de-fer-avec-le-mca-belaili-demarre-la-saison-avec-le-brassard/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-23T22:54:51+00:00"
+        }
+      }
     },
     {
       "id": "ce11f3ab2f11",
@@ -828,7 +888,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -889,26 +949,27 @@
       "i18n": {
         "es": {
           "title": "El 1x1 del Barça en la primera parte ante el Elche",
-          "summary": "Así hemos visto a los jugadores del Barça en su primer partido de LaLiga, en Elche.",
-          "needs_translation": false
+          "summary": "Evaluación del rendimiento individual de los jugadores del Barça durante la primera parte de su partido de LaLiga frente al Elche.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Barça's 1x1 in the first half against Elche",
-          "summary": "This is how we saw the Barça players in their first LaLiga match, in Elche.",
+          "title": "Barça player ratings in the first half against Elche",
+          "summary": "Individual player ratings for Barça during the first half of their LaLiga match against Elche.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le 1x1 du Barça en première période face à Elche",
-          "summary": "C'est ainsi que nous avons vu les joueurs du Barça lors de leur premier match de LaLiga, à Elche.",
+          "title": "Le 1 contre 1 du Barça en première période face à Elche",
+          "summary": "Évaluation individuelle des performances des joueurs du Barça au cours de la première mi-temps de leur match de LaLiga contre Elche.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "برشلونة 1 × 1 في الشوط الأول ضد إلتشي",
-          "summary": "هذه هي الطريقة التي رأينا بها لاعبي برشلونة في مباراتهم الأولى في الدوري الإسباني، في إلتشي.",
+          "title": "تقييم لاعبي برشلونة في الشوط الأول أمام إلتشي",
+          "summary": "تقييم الأداء الفردي للاعبي برشلونة خلال الشوط الأول من مباراتهم أمام إلتشي في الدوري الإسباني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218943/1x1-fc-barcelona-elche-cf.html",
@@ -936,7 +997,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218997/1x1-barca-primera-parte-elche.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8d5be89bc008",
@@ -990,7 +1056,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -1102,7 +1168,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -1293,26 +1359,27 @@
       "i18n": {
         "fr": {
           "title": "Mory Diaw : le portier sénégalais va quitter Le Havre pour Al-Shabab",
-          "summary": "Mory Diaw ne devrait pas poursuivre la saison au Havre.",
-          "needs_translation": false
+          "summary": "Le gardien sénégalais Mory Diaw s'apprête à quitter Le Havre pour rejoindre le club saoudien d'Al-Shabab.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mory Diaw: the Senegalese doorman will leave Le Havre for Al-Shabab",
-          "summary": "Mory Diaw is not expected to continue the season in Le Havre.",
+          "title": "Mory Diaw: Senegalese goalkeeper to leave Le Havre for Al-Shabab",
+          "summary": "Senegalese goalkeeper Mory Diaw is set to leave Le Havre to join Saudi side Al-Shabab.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Mory Diaw: el portero senegalés dejará Le Havre por Al-Shabab",
-          "summary": "Mory Diaw no debería continuar la temporada en Le Havre.",
+          "title": "Mory Diaw: el guardameta senegalés dejará Le Havre por Al-Shabab",
+          "summary": "El portero senegalés Mory Diaw se prepara para abandonar Le Havre y fichar por el club saudí Al-Shabab.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "موري دياو: البواب السنغالي سيغادر لو هافر إلى حركة الشباب",
-          "summary": "من غير المتوقع أن يواصل موري دياو الموسم في لو هافر.",
+          "title": "موري دياو: الحارس السنغالي يغادر لوهافر نحو الشباب",
+          "summary": "يستعد حارس المرمى السنغالي موري دياو للرحيل عن نادي لوهافر الفرنسي والانضمام إلى صفوف الشباب السعودي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football-europe/mory-diaw-le-portier-senegalais-va-quitter-le-havre-pour-al-shabab/",
@@ -1334,7 +1401,12 @@
           "url": "https://africatopsports.com/football-europe/mory-diaw-le-portier-senegalais-va-quitter-le-havre-pour-al-shabab/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "79ee0941f483",
@@ -1343,32 +1415,33 @@
       "i18n": {
         "de": {
           "title": "Azzurri-Trainer Mancini darf sich freuen: Esposito und Vergara glänzen",
-          "summary": "Hier WM-Frust weggespielt, dort Zukunftshoffnungen genährt - für ihre Klubs sowie für das ganze Land. Und eine deutliche Absage an den FC Barcelona.",
-          "needs_translation": false
+          "summary": "Esposito und Vergara überzeugen mit starken Leistungen für ihre Klubs und machen Azzurri-Trainer Mancini Hoffnung für die Nationalmannschaft. Zudem gab es eine Absage an den FC Barcelona.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Azzurri coach Mancini can be happy: Esposito and Vergara shine",
-          "summary": "Here World Cup frustration is played away, there hopes for the future are nurtured - for their clubs as well as for the whole country. And a clear rejection of FC Barcelona.",
+          "title": "Azzurri-Trainer Mancini can rejoice: Esposito and Vergara shine",
+          "summary": "Strong performances from Esposito and Vergara bring hope to their clubs and to Azzurri-Trainer Mancini for the national team, alongside a clear rejection of FC Barcelona.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "L'entraîneur d'Azzurri Mancini peut se réjouir : Esposito et Vergara brillent",
-          "summary": "Ici, la frustration de la Coupe du Monde a disparu, là, les espoirs d'avenir sont nourris - pour leurs clubs ainsi que pour l'ensemble du pays. Et un net refus du FC Barcelone.",
+          "title": "Azzurri-Trainer Mancini peut se réjouir : Esposito et Vergara brillent",
+          "summary": "Les prestations remarquées de Esposito et Vergara redonnent de l'espoir à leurs clubs et à Azzurri-Trainer Mancini pour la sélection, parallèlement à un refus opposé à FC Barcelona.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El entrenador de Azzurri Mancini puede alegrarse: Esposito y Vergara brillan",
-          "summary": "Aquí la frustración de la Copa del Mundo se ha esfumado, allí se alimentan las esperanzas de futuro, tanto para sus clubes como para todo el país. Y un rechazo rotundo al FC Barcelona.",
+          "title": "Azzurri-Trainer Mancini puede sonreír: Esposito y Vergara brillan",
+          "summary": "El gran rendimiento de Esposito y Vergara ilusiona a sus clubes y a Azzurri-Trainer Mancini de cara a la selección, en medio de una negativa a FC Barcelona.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يمكن أن يكون مدرب أزوري مانسيني سعيدًا: إسبوزيتو وفيرجارا يتألقان",
-          "summary": "هنا يتم التخلص من الإحباط من كأس العالم، وهناك يتم رعاية الآمال في المستقبل - لأنديتهم وكذلك للبلد بأكمله. ورفض واضح لنادي برشلونة.",
+          "title": "مدرب إيطاليا مانشيني يسعد بتألق إسبوسيتو وفيرغارا",
+          "summary": "يبعث تألق إسبوسيتو وفيرغارا مع أنديتهما الأمل لدى مدرب منتخب إيطاليا مانشيني، بالتزامن مع توجيه رفض قاطع لنادي برشلونة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/azzurri-trainer-mancini-darf-sich-freuen-esposito-und-vergara-glaenzen-1246042/artikel#omrss",
@@ -1390,7 +1463,12 @@
           "url": "https://www.kicker.de/azzurri-trainer-mancini-darf-sich-freuen-esposito-und-vergara-glaenzen-1246042/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ea4b09af53d5",
@@ -1528,7 +1606,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 0,
+        "quality": 1,
         "source_read": "skipped"
       }
     },
@@ -1912,23 +1990,27 @@
       "i18n": {
         "es": {
           "title": "El Barça Atlètic, sin gol y derrotado en los penaltis en Vilanova i la Geltrú",
-          "summary": "El IV Trofeu Ciutat de Vilanova se quedó en casa después de que el Barça Atlètic cayera en la tanda de penaltis (3-0) tras el empate previo sin goles ante el conjunto de Tercera Federación .",
-          "needs_translation": false
+          "summary": "El Barça Atlètic cayó en la tanda de penaltis (3-0) frente al conjunto de Tercera Federación tras un empate 0-0, cediendo el IV Trofeu Ciutat de Vilanova.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Barça Atlètic, sin gol y derrotado en los penaltis en Vilanova i la Geltrú",
-          "summary": "El IV Trofeu Ciutat de Vilanova se quedó en casa después de que el Barça Atlètic cayera en la tanda de penaltis (3-0) tras el empate previo sin goles ante el conjunto de Tercera Federación .",
-          "needs_translation": true
+          "title": "Barça Atlètic, goalless and defeated on penalties in Vilanova i la Geltrú",
+          "summary": "Barça Atlètic lost on penalties (3-0) against the Tercera Federación side after a 0-0 draw, conceding the IV Trofeu Ciutat de Vilanova.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El Barça Atlètic, sin gol y derrotado en los penaltis en Vilanova i la Geltrú",
-          "summary": "El IV Trofeu Ciutat de Vilanova se quedó en casa después de que el Barça Atlètic cayera en la tanda de penaltis (3-0) tras el empate previo sin goles ante el conjunto de Tercera Federación .",
-          "needs_translation": true
+          "title": "Le Barça Atlètic, sans but et battu aux tirs au but à Vilanova i la Geltrú",
+          "summary": "Après un match nul 0-0, le Barça Atlètic s'est incliné aux tirs au but (3-0) face au club de Tercera Federación lors du IV Trofeu Ciutat de Vilanova.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Barça Atlètic, sin gol y derrotado en los penaltis en Vilanova i la Geltrú",
-          "summary": "El IV Trofeu Ciutat de Vilanova se quedó en casa después de que el Barça Atlètic cayera en la tanda de penaltis (3-0) tras el empate previo sin goles ante el conjunto de Tercera Federación .",
-          "needs_translation": true
+          "title": "برشلونة أتلتيك يعجز عن التسجيل ويخسر بركلات الترجيح في فيلانوفا إي لا غيلترو",
+          "summary": "خسر برشلونة أتلتيك كأس مدينة فيلانوفا بعد هزيمته بركلات الترجيح (3-0) أمام فريق الدرجة الخامسة إثر انتهاء اللقاء بالتعادل السلبي دون أهداف.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218998/barca-atletic-gol-derrotado-penaltis-vilanova-i-geltru.html",
@@ -1964,23 +2046,27 @@
       "i18n": {
         "es": {
           "title": "Raphinha estrena capitanía con doblete y hace el gesto de la Araña",
-          "summary": "Raphinha estrenó la capitanía en partido oficial y lo hizo a lo grande.",
-          "needs_translation": false
+          "summary": "Raphinha debutó como capitán en partido oficial marcando un doblete y celebrándolo con el gesto de la Araña.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Raphinha estrena capitanía con doblete y hace el gesto de la Araña",
-          "summary": "Raphinha estrenó la capitanía en partido oficial y lo hizo a lo grande.",
-          "needs_translation": true
+          "title": "Raphinha marks captaincy debut with a brace and Spider celebration",
+          "summary": "Raphinha made his debut as captain in an official match, scoring a brace and celebrating with the Spider gesture.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Raphinha estrena capitanía con doblete y hace el gesto de la Araña",
-          "summary": "Raphinha estrenó la capitanía en partido oficial y lo hizo a lo grande.",
-          "needs_translation": true
+          "title": "Raphinha fête son premier capitanat avec un doublé et la célébration de l'Araignée",
+          "summary": "Pour son premier match officiel en tant que capitaine, Raphinha a inscrit un doublé et célébré avec le geste de l'Araignée.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Raphinha estrena capitanía con doblete y hace el gesto de la Araña",
-          "summary": "Raphinha estrenó la capitanía en partido oficial y lo hizo a lo grande.",
-          "needs_translation": true
+          "title": "رافينيا يدشن شارة القيادة بثنائية واحتفال العنكبوت",
+          "summary": "دشن رافينيا ارتداء شارة قيادة فريقه في مباراة رسمية بتسجيل ثنائية، واحتفل بحركته الشهيرة على طريقة العنكبوت.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218996/raphina-estrena-capitania-gol-guino-julian-alvarez.html",
@@ -2002,7 +2088,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218996/raphina-estrena-capitania-gol-guino-julian-alvarez.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b039209f3d6b",
@@ -2211,7 +2302,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 3,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
