@@ -17,32 +17,33 @@
       "i18n": {
         "de": {
           "title": "Jetzt live - Hamburg trifft auf Freiburg",
-          "summary": "Der Neuafsteiger Hamburg trifft am ersten Spieltag der Frauen-Bundesliga auf den letztjährigen fünften Freiburg.",
-          "needs_translation": false
+          "summary": "Der Aufsteiger Hamburg trifft am ersten Spieltag der Frauen-Bundesliga auf den letztjährigen Fünften Freiburg.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Live now - Hamburg meets Freiburg",
-          "summary": "Newcomer Hamburg will face last year's fifth Freiburg on the first matchday of the Women's Bundesliga.",
+          "title": "Live now - Hamburg face Freiburg",
+          "summary": "Newly promoted Hamburg face Freiburg, who finished fifth last season, on the opening matchday of the Frauen-Bundesliga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Maintenant en direct - Hambourg rencontre Fribourg",
-          "summary": "Le Neuafsteiger de Hambourg affrontera le cinquième Fribourg de l'année dernière lors de la première journée de la Bundesliga féminine.",
+          "title": "En direct - Hamburg affronte Freiburg",
+          "summary": "Le promu Hamburg affronte Freiburg, cinquième de la saison passée, lors de la première journée de Frauen-Bundesliga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ahora en directo: Hamburgo se encuentra con Friburgo",
-          "summary": "El recién ascendido Hamburgo se enfrentará en la primera jornada de la Bundesliga femenina al quinto Friburgo del año pasado.",
+          "title": "En directo - Hamburg se enfrenta a Freiburg",
+          "summary": "El recién ascendido Hamburg se mide a Freiburg, quinto la temporada pasada, en la primera jornada de la Frauen-Bundesliga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباشر الآن - هامبورغ تلتقي بفرايبورغ",
-          "summary": "ستواجه الوافدة الجديدة هامبورغ مباراة فرايبورغ الخامسة العام الماضي في أول مباراة للبوندسليغا النسائية.",
+          "title": "مباشر الآن - هامبورغ يواجه فرايبورغ",
+          "summary": "يواجه هامبورغ الصاعد حديثاً نظيره فرايبورغ، صاحب المركز الخامس في الموسم الماضي، ضمن الجولة الأولى من الدوري الألماني للسيدات.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/deutschland-bundesliga-frauen/ma12306061/hamburger-sv_sc-freiburg/liveticker",
@@ -64,7 +65,12 @@
           "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/deutschland-bundesliga-frauen/ma12306061/hamburger-sv_sc-freiburg/liveticker"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8983945edf59",
@@ -123,26 +129,27 @@
       "i18n": {
         "en": {
           "title": "'Up front next week?' Guehi proves Maresca's midfield masterstroke",
-          "summary": "Rather than playing safe in selecting his Manchester City side for the first time in the Premier League, Enzo Maresca made a bold choice in midfield. Ultimately, it pays off.",
-          "needs_translation": false
+          "summary": "In the Premier League, Enzo Maresca opted for a bold midfield decision with Manchester City featuring Guehi, a tactical gamble that Ultimately paid off.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "À l'avant la semaine prochaine ? « Guehi prouve le coup de maître de milieu de terrain de Maresca",
-          "summary": "Plutôt que de jouer prudemment en sélectionnant son équipe de Manchester City pour la première fois en Premier League, Enzo Maresca a fait un choix audacieux au milieu de terrain. En fin de compte, cela porte ses fruits.",
+          "title": "« En pointe la prochaine semaine ? » Guehi valide le coup de maître d'Enzo Maresca au milieu",
+          "summary": "Pour son premier choix en Premier League avec Manchester City, Enzo Maresca a aligné Guehi dans un rôle audacieux au milieu de terrain, un pari qui s'est avéré payant.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "'¿Por adelantado la próxima semana?' Guehi demuestra el golpe maestro del mediocampo de Maresca",
-          "summary": "En lugar de jugar con seguridad en la selección de su equipo del Manchester City por primera vez en la Premier League, Enzo Maresca tomó una decisión audaz en el mediocampo. En última instancia, vale la pena.",
+          "title": "«¿En punta la próxima semana?» Guehi valida la jugada maestra de Enzo Maresca en el centro del campo",
+          "summary": "Enzo Maresca realizó una audaz apuesta táctica en el centro del campo de Manchester City con Guehi en la Premier League, una decisión que terminó dando frutos.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"مقدمًا الأسبوع المقبل ؟\" يثبت غويهي ضربة وسط ماريسكا",
-          "summary": "بدلا من اللعب بأمان في اختيار فريقه مانشستر سيتي لأول مرة في الدوري الممتاز، اتخذ إنزو ماريسكا خيارا جريئا في خط الوسط. في نهاية المطاف، فإنه يؤتي ثماره.",
+          "title": "\"في الهجوم الأسبوع المقبل؟\" غويهي يثبت نجاح رهان إنزو ماريسكا في خط الوسط",
+          "summary": "اعتمد المدرب إنزو ماريسكا على خيار جريء في خط وسط مانشستر سيتي بالدوري الإنجليزي الممتاز بإشراك غويهي، وهو رهان تكتيكي أثبت نجاحه في النهاية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cqx7x1wpz20o?at_medium=RSS&at_campaign=rss",
@@ -164,7 +171,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cqx7x1wpz20o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "eecab429a974",
@@ -173,26 +185,27 @@
       "i18n": {
         "fr": {
           "title": "Julian Alvarez conspué par le Metropolitano pour sa première apparition depuis sa demande de départ de l'Atlético de Madrid",
-          "summary": "Présent dans le groupe de l'Atlético de Madrid pour affronter Villarreal en Liga ce dimanche, Julian Alvarez a été largement hué par le public du Metropolitano. L'Argentin souhaite quitter le club depuis plusieurs semaines.",
-          "needs_translation": false
+          "summary": "Présent pour affronter Villarreal en Liga, Julian Alvarez a été hué par les supporters au Metropolitano. L'attaquant argentin souhaite quitter l'Atlético de Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Julian Alvarez lambasted by Metropolitano for his first appearance since his request to leave Atlético de Madrid",
-          "summary": "Present in the group of Atlético de Madrid to face Villarreal in La Liga this Sunday, Julian Alvarez was widely booed by the public of the Metropolitano. The Argentine has been wanting to leave the club for several weeks.",
+          "title": "Julian Alvarez jeered at the Metropolitano in first appearance since asking to leave Atlético de Madrid",
+          "summary": "Included in the squad to face Villarreal in Liga, Julian Alvarez was booed by fans at the Metropolitano. The Argentine forward has requested to leave Atlético de Madrid.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Julian Álvarez abucheado por el Metropolitano en su primera aparición desde su solicitud de salida del Atlético de Madrid",
-          "summary": "Presente en el grupo del Atlético de Madrid para enfrentarse al Villarreal en Liga este domingo, Julian Álvarez fue abucheado por el público del Metropolitano. El argentino quiere dejar el club desde hace varias semanas.",
+          "title": "Julian Alvarez abucheado por el Metropolitano en su primera aparición tras pedir salir del Atlético de Madrid",
+          "summary": "Presente para enfrentarse al Villarreal en Liga, Julian Alvarez fue abucheado por la afición en el Metropolitano. El delantero argentino desea abandonar el Atlético de Madrid.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "انتقد جوليان ألفاريز من قبل متروبوليتانو لأول ظهور له منذ طلبه مغادرة أتلتيكو مدريد",
-          "summary": "حاضر في مجموعة أتلتيكو مدريد لمواجهة فياريال في الدوري الإسباني يوم الأحد، تلقى جوليان ألفاريز صيحات استهجان على نطاق واسع من قبل جمهور متروبوليتانو. كان الأرجنتيني يرغب في مغادرة النادي لعدة أسابيع.",
+          "title": "صافرات استهجان ضد خوليان ألفاريز في المتروبوليتانو بعد طلبه الرحيل عن أتلتيكو مدريد",
+          "summary": "تعرض خوليان ألفاريز لصافرات استهجان من جماهير المتروبوليتانو خلال مواجهة فياريال في الدوري الإسباني، بعدما أبدى المهاجم الأرجنتيني رغبته في مغادرة أتلتيكو مدريد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Julian-alvarez-conspue-par-le-metropolitano-pour-sa-premiere-apparition-depuis-sa-demande-de-depart-de-l-atletico-de-madrid/1713032#at_medium=RSS_feeds",
@@ -214,7 +227,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Julian-alvarez-conspue-par-le-metropolitano-pour-sa-premiere-apparition-depuis-sa-demande-de-depart-de-l-atletico-de-madrid/1713032#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "1a741e1e5ce7",
@@ -323,26 +341,27 @@
       "i18n": {
         "fr": {
           "title": "Manchester City : Omar Marmoush va rejoindre Tottenham en prêt",
-          "summary": "Omar Marmoush devrait quitter Manchester City cet été pour rejoindre Tottenham. Selon Fabrizio Romano, les deux clubs anglais ont trouvé un accord verbal pour le prêt de l’attaquant égyptien.",
-          "needs_translation": false
+          "summary": "Selon Fabrizio Romano, Manchester City et Tottenham ont conclu un accord verbal pour le prêt de l'attaquant égyptien Omar Marmoush cet été.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "Manchester City: Omar Marmoush to join Tottenham on loan",
-          "summary": "Omar Marmoush is expected to leave Manchester City this summer to join Tottenham. According to Fabrizio Romano, the two English clubs have reached a verbal agreement for the loan of the Egyptian striker.",
+          "summary": "According to Fabrizio Romano, Manchester City and Tottenham have reached a verbal agreement for the loan of Egyptian forward Omar Marmoush this summer.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Manchester City: Omar Marmoush se unirá al Tottenham en préstamo",
-          "summary": "Se espera que Omar Marmoush abandone el Manchester City este verano para unirse al Tottenham. Según Fabrizio Romano, los dos clubes ingleses han llegado a un acuerdo verbal para la cesión del delantero egipcio.",
+          "title": "Manchester City: Omar Marmoush se marchará cedido a Tottenham",
+          "summary": "Según Fabrizio Romano, Manchester City y Tottenham han alcanzado un acuerdo verbal para la cesión del delantero egipcio Omar Marmoush este verano.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
           "title": "مانشستر سيتي: عمر مرموش سينضم إلى توتنهام على سبيل الإعارة",
-          "summary": "من المتوقع أن يغادر عمر مرموش مانشستر سيتي هذا الصيف للانضمام إلى توتنهام. وفقًا لفابريزيو رومانو، توصل الناديان الإنجليزيان إلى اتفاق شفهي لإعارة المهاجم المصري.",
+          "summary": "توصل مانشستر سيتي وتوتنهام إلى اتفاق شفهي لإعارة المهاجم المصري عمر مرموش هذا الصيف، وفقاً لما أكده فابريزيو رومانو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football-europe/manchester-city-omar-marmoush-va-rejoindre-tottenham-en-pret/",
@@ -364,7 +383,12 @@
           "url": "https://africatopsports.com/football-europe/manchester-city-omar-marmoush-va-rejoindre-tottenham-en-pret/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "11188a175563",
@@ -372,27 +396,44 @@
       "summary": "Dans une vidéo publiée par la FIFA ce dimanche, son président Gianni Infantino a détaillé son projet de Coupe du monde U15 ouverte à l'ensemble des Fédérations et prévue dès cette année.",
       "i18n": {
         "fr": {
-          "title": "Gianni Infantino confirme le lancement de la Coupe du monde U15 à 211 équipes",
-          "summary": "Dans une vidéo publiée par la FIFA ce dimanche, son président Gianni Infantino a détaillé son projet de Coupe du monde U15 ouverte à l'ensemble des Fédérations et prévue dès cette année.",
-          "needs_translation": false
+          "title": "Infantino officialise une Coupe du monde U15 à 211 équipes dès cette année",
+          "summary": "Le président de la FIFA Gianni Infantino a confirmé le lancement dès cette année d'une Coupe du monde U15 ouverte aux 211 fédérations membres.",
+          "body": [
+            "Révélée lors d'un déplacement aux Caraïbes, cette compétition inédite rassemblera plus de 4 000 jeunes footballeurs. Face aux interrogations relayées par les médias ces derniers jours, le dirigeant affirme avancer avec la conscience tranquille et salue l'accueil très favorable des fédérations."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Gianni Infantino confirms the launch of the 211-team U15 World Cup",
-          "summary": "In a video published by FIFA on Sunday, FIFA President Gianni Infantino detailed his plans for a U15 World Cup open to all Federations and scheduled for this year.",
+          "title": "Infantino confirms 211-team U15 World Cup launching this year",
+          "summary": "FIFA president Gianni Infantino has confirmed the launch of a 211-team U15 World Cup scheduled to take place this year.",
+          "body": [
+            "Unveiled during a visit to the Caribbean, the new tournament will bring together more than 4,000 young players. Despite media scrutiny in recent days, the FIFA chief highlighted strong support from member associations and insisted he is moving forward with a clear conscience."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Gianni Infantino confirma el lanzamiento de la Copa Mundial Sub-15 con 211 equipos",
-          "summary": "En un vídeo publicado por la FIFA este domingo, su presidente Gianni Infantino detalló su proyecto de Copa del Mundo Sub-15 abierta al conjunto de las Federaciones y prevista para este año.",
+          "title": "Infantino confirma un Mundial Sub-15 con 211 selecciones este año",
+          "summary": "El presidente de la FIFA Gianni Infantino confirmó la creación de una Copa del Mundo Sub-15 abierta a las 211 federaciones miembro desde este mismo año.",
+          "body": [
+            "Anunciada durante un viaje al Caribe, la nueva cita reunirá a más de 4.000 jóvenes futbolistas. Ante las dudas surgidas en la prensa en los últimos días, el mandatario asegura avanzar con la conciencia tranquila y destaca el respaldo cosechado entre las federaciones locales."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "يؤكد جياني إنفانتينو إطلاق كأس العالم تحت 15 سنة 211 فريقًا",
-          "summary": "في مقطع فيديو نشره FIFA يوم الأحد، قام رئيس FIFA جياني إنفانتينو بتفصيل خططه لكأس العالم تحت 15 سنة المفتوحة لجميع الاتحادات والمقرر إقامتها هذا العام.",
+          "title": "إنفانتينو يؤكد إطلاق كأس العالم لتحت 15 عاماً بمشاركة 211 منتخباً",
+          "summary": "أكد رئيس الاتحاد الدولي لكرة القدم (فيفا) جياني إنفانتينو إطلاق كأس العالم تحت 15 سنة بمشاركة 211 اتحاداً كروياً، بدءاً من هذا العام.",
+          "body": [
+            "وكشف إنفانتينو عن البطولة خلال زيارة إلى الكاريبي، مؤكداً أنها ستجمع أكثر من 4000 فتى. ورداً على التساؤلات المتداولة إعلامياً، شدد رئيس فيفا على أنه يتقدم بضمير مرتاح وسط دعم واسع تلقاه من الاتحادات المحلية."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Gianni-infantino-confirme-le-lancement-de-la-coupe-du-monde-u15-a-211-equipes/1713024#at_medium=RSS_feeds",
@@ -414,7 +455,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Gianni-infantino-confirme-le-lancement-de-la-coupe-du-monde-u15-a-211-equipes/1713024#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-23T16:40:11+00:00"
+        }
+      }
     },
     {
       "id": "79ce546b196e",
@@ -541,26 +595,27 @@
       "i18n": {
         "es": {
           "title": "Málaga CF- RC Deportivo: Este es el posible once del Dépor en la jornada 2 de la Liga EA Sports",
-          "summary": "El Deportivo hace por primera vez las maletas en ocho años como equipo de Primera División y le toca visitar un estadio que ha formado parte de su vida en los escalones secundarios del fútbol español en la última década.",
-          "needs_translation": false
+          "summary": "El Deportivo disputa ante el Málaga CF en la segunda jornada su primer partido como visitante en Primera División tras ocho años.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Málaga CF- RC Deportivo: This is the possible eleven of Dépor on matchday 2 of the EA Sports League",
-          "summary": "Deportivo is packing its bags for the first time in eight years as a First Division team and is due to visit a stadium that has been part of its life in the secondary echelons of Spanish football over the last decade.",
+          "title": "Málaga CF- RC Deportivo: This is Dépor's predicted lineup for Matchday 2 of Liga EA Sports",
+          "summary": "Deportivo play their first away match in Primera División in eight years as they visit Málaga CF in Matchday 2.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Málaga CF-RC Deportivo : C'est le onze possible du Dépor lors de la 2ème journée de la Ligue EA Sports",
-          "summary": "Le Deportivo fait ses valises pour la première fois en huit ans en tant qu'équipe de première division et c'est à son tour de visiter un stade qui a fait partie de sa vie sur les marches secondaires du football espagnol au cours de la dernière décennie.",
+          "title": "Málaga CF- RC Deportivo : Voici le onze probable du Dépor pour la 2e journée de Liga EA Sports",
+          "summary": "Le Deportivo dispute face à Málaga CF son premier match à l'extérieur en Primera División depuis huit ans lors de la 2e journée.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مالقة CF - RC ديبورتيفو: هذا هو أحد عشر لاعبًا محتملًا من ديبور في يوم المباراة 2 من دوري EA الرياضي",
-          "summary": "يحزم ديبورتيفو حقائبه لأول مرة منذ ثماني سنوات كفريق الدرجة الأولى ومن المقرر أن يزور ملعبًا كان جزءًا من حياته في المستويات الثانوية لكرة القدم الإسبانية على مدى العقد الماضي.",
+          "title": "مالاغا ضد ديبورتيفو لاكورونيا: التشكيلة المحتملة لديبورتيفو في الجولة الثانية من الدوري الإسباني",
+          "summary": "يخوض ديبورتيفو لاكورونيا أول مباراة له خارج ملعبه في الدوري الإسباني الممتاز منذ ثماني سنوات، عندما يحل ضيفاً على مالاغا في الجولة الثانية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/malaga-cf-rc-deportivo-posible-133591444?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -582,7 +637,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/malaga-cf-rc-deportivo-posible-133591444?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f1b71d3da908",
@@ -691,26 +751,27 @@
       "i18n": {
         "en": {
           "title": "Newcastle and Liverpool united in tribute to legend Keegan",
-          "summary": "Both Newcastle and Liverpool pay tribute to their legendary player on the opening weekend of the Premier League season.",
-          "needs_translation": false
+          "summary": "Newcastle and Liverpool will jointly pay tribute to their legendary former player Keegan during the opening weekend of the Premier League season.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Newcastle et Liverpool unis en hommage à la légende Keegan",
-          "summary": "Newcastle et Liverpool rendent hommage à leur joueur légendaire lors du week-end d'ouverture de la saison de Premier League.",
+          "title": "Newcastle et Liverpool unis pour rendre hommage à la légende Keegan",
+          "summary": "Newcastle et Liverpool rendront hommage à leur ancien joueur de légende Keegan lors de la première journée de la saison de Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
           "title": "Newcastle y Liverpool unidos en homenaje a la leyenda Keegan",
-          "summary": "Tanto el Newcastle como el Liverpool rinden homenaje a su legendario jugador en el primer fin de semana de la temporada de la Premier League.",
+          "summary": "Newcastle y Liverpool rendirán homenaje a su legendario exfutbolista Keegan durante la primera jornada de la temporada de la Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "اتحد نيوكاسل وليفربول تكريما للأسطورة كيجان",
-          "summary": "يشيد كل من نيوكاسل وليفربول بلاعبهما الأسطوري في عطلة نهاية الأسبوع الافتتاحية لموسم الدوري الممتاز.",
+          "title": "نيوكاسل وليفربول يتحدان لتكريم الأسطورة كيغان",
+          "summary": "يُكرم ناديا نيوكاسل وليفربول لاعبهما الأسطوري السابق كيغان خلال الجولة الافتتاحية من موسم الدوري الإنجليزي الممتاز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/ckgdgplejxzo?at_medium=RSS&at_campaign=rss",
@@ -732,7 +793,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/ckgdgplejxzo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a754775d7946",
@@ -782,7 +848,12 @@
           "url": "https://www.bbc.co.uk/sport/football/videos/c4gkgy8ljqvo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "cad7d97f3667",
@@ -953,26 +1024,27 @@
       "i18n": {
         "fr": {
           "title": "PSG : Ibrahim Mbaye écarté pour Rennes, son départ se précise",
-          "summary": "L’absence d’Ibrahim Mbaye pour le déplacement du PSG à Rennes pourrait être un nouveau signe concernant son avenir.",
-          "needs_translation": false
+          "summary": "Non retenu pour le déplacement du PSG à Rennes, Ibrahim Mbaye voit les spéculations autour de son potentiel départ se renforcer.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "PSG: Ibrahim Mbaye sidelined for Rennes, his departure is becoming clearer",
-          "summary": "The absence of Ibrahim Mbaye for the PSG move to Rennes could be a new sign regarding his future.",
+          "title": "PSG: Ibrahim Mbaye left out for Rennes as departure looms",
+          "summary": "Ibrahim Mbaye has been left out of the PSG squad to face Rennes, reinforcing indications of his potential departure.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "PSG: Ibrahim Mbaye descartado para el Rennes, se precisa su salida",
-          "summary": "La ausencia de Ibrahim Mbaye para el viaje del PSG a Rennes podría ser una nueva señal sobre su futuro.",
+          "title": "PSG: Ibrahim Mbaye, descartado ante el Rennes; su salida toma forma",
+          "summary": "Ibrahim Mbaye no fue convocado por el PSG para visitar al Rennes, alimentando las especulaciones sobre su posible salida.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "PSG: تهميش إبراهيم مباي لرين، أصبح رحيله أكثر وضوحًا",
-          "summary": "قد يكون غياب إبراهيم مباي عن انتقال باريس سان جيرمان إلى رين علامة جديدة فيما يتعلق بمستقبله.",
+          "title": "باريس سان جيرمان: استبعاد إبراهيم مباي أمام رين واقتراب رحيله",
+          "summary": "عزز استبعاد إبراهيم مباي من قائمة باريس سان جيرمان لمواجهة رين التكهنات حول اقتراب رحيله عن الفريق.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football-europe/psg-ibrahim-mbaye-ecarte-pour-rennes-son-depart-se-precise/",
@@ -994,7 +1066,12 @@
           "url": "https://africatopsports.com/football-europe/psg-ibrahim-mbaye-ecarte-pour-rennes-son-depart-se-precise/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9b24b8f2a341",
@@ -1150,23 +1227,27 @@
       "i18n": {
         "fr": {
           "title": "Manchester City renverse Bournemouth pour démarrer la Premier League, Rayan Cherki double passeur décisif",
-          "summary": "Pour son premier match de la saison en Premier League, Manchester City a réussi à renverser Bournemouth (2-1). Entré en cours de jeu, Rayan Cherki a distillé deux passes décisives pour Marc Guéhi et Josko Gvardiol.",
-          "needs_translation": false
+          "summary": "Manchester City a débuté sa saison de Premier League par une victoire 2-1 face à Bournemouth. Entré en jeu, Rayan Cherki a délivré deux passes décisives pour Marc Guéhi et Josko Gvardiol.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Manchester City renverse Bournemouth pour démarrer la Premier League, Rayan Cherki double passeur décisif",
-          "summary": "Pour son premier match de la saison en Premier League, Manchester City a réussi à renverser Bournemouth (2-1). Entré en cours de jeu, Rayan Cherki a distillé deux passes décisives pour Marc Guéhi et Josko Gvardiol.",
-          "needs_translation": true
+          "title": "Manchester City come from behind against Bournemouth to kick off Premier League, Rayan Cherki provides two assists",
+          "summary": "Manchester City opened their Premier League season with a 2-1 comeback win over Bournemouth. Coming off the bench, Rayan Cherki delivered two assists for Marc Guéhi and Josko Gvardiol.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Manchester City renverse Bournemouth pour démarrer la Premier League, Rayan Cherki double passeur décisif",
-          "summary": "Pour son premier match de la saison en Premier League, Manchester City a réussi à renverser Bournemouth (2-1). Entré en cours de jeu, Rayan Cherki a distillé deux passes décisives pour Marc Guéhi et Josko Gvardiol.",
-          "needs_translation": true
+          "title": "Manchester City remonta ante Bournemouth para arrancar la Premier League, Rayan Cherki da dos asistencias",
+          "summary": "Manchester City inició su temporada de Premier League con una victoria 2-1 ante Bournemouth. Entrando desde el banquillo, Rayan Cherki repartió dos asistencias para Marc Guéhi y Josko Gvardiol.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Manchester City renverse Bournemouth pour démarrer la Premier League, Rayan Cherki double passeur décisif",
-          "summary": "Pour son premier match de la saison en Premier League, Manchester City a réussi à renverser Bournemouth (2-1). Entré en cours de jeu, Rayan Cherki a distillé deux passes décisives pour Marc Guéhi et Josko Gvardiol.",
-          "needs_translation": true
+          "title": "مانشستر سيتي يقلب تأخره أمام بورنموث في افتتاح الدوري الإنجليزي الممتاز وريان شرقي يقدم تمريرتين حاسمتين",
+          "summary": "افتتح مانشستر سيتي مشواره في الدوري الإنجليزي الممتاز بالفوز 2-1 على بورنموث. وقدم البديل ريان شرقي تمريرتين حاسمتين لكل من مارك غويهي ويوشكو غفارديول.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Manchester-city-renverse-bournemouth-pour-demarrer-la-premier-league-rayan-cherki-double-passeur-decisif/1713006#at_medium=RSS_feeds",
@@ -1194,7 +1275,12 @@
           "url": "https://www.lefigaro.fr/sports/football/angleterre/premier-league-grace-a-un-grand-rayan-cherki-le-manchester-city-d-enzo-maresca-arrache-une-premiere-victoire-20260823"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8d725b3f8f55",
@@ -1203,23 +1289,27 @@
       "i18n": {
         "es": {
           "title": "Frosinone - Juventus, en directo | Serie A",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Serie A que enfrenta al Venezia contra el Lecce correspondiente a Jornada 1.",
-          "needs_translation": false
+          "summary": "Seguimiento en directo del partido correspondiente a la Jornada 1 de la Serie A.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Frosinone - Juventus, en directo | Serie A",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Serie A que enfrenta al Venezia contra el Lecce correspondiente a Jornada 1.",
-          "needs_translation": true
+          "title": "Frosinone - Juventus, live | Serie A",
+          "summary": "Live coverage of the match corresponding to Jornada 1 of Serie A.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Frosinone - Juventus, en directo | Serie A",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Serie A que enfrenta al Venezia contra el Lecce correspondiente a Jornada 1.",
-          "needs_translation": true
+          "title": "Frosinone - Juventus, en direct | Serie A",
+          "summary": "Suivi en direct de la rencontre disputée dans le cadre de la Jornada 1 de Serie A.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Frosinone - Juventus, en directo | Serie A",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Serie A que enfrenta al Venezia contra el Lecce correspondiente a Jornada 1.",
-          "needs_translation": true
+          "title": "مباشر | فروسينوني - يوفنتوس في الدوري الإيطالي",
+          "summary": "تغطية مباشرة لمباراة الجولة الأولى من منافسات الدوري الإيطالي.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/serie-a/20260823/1004217441/venezia-lecce-directo-serie.html",
@@ -1259,7 +1349,12 @@
           "url": "https://www.mundodeportivo.com/futbol/ligue-1/20260823/1004217270/angers-lille-directo-ligue-1.html"
         }
       ],
-      "source_count": 4
+      "source_count": 4,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8168a5be0e07",
@@ -1267,24 +1362,44 @@
       "summary": "Le jeune latéral parisien Yoram Zague va être prêté un an avec option d'achat au club chypriote de Paphos, qui avait fait parler de lui la saison passée en Ligue des champions.",
       "i18n": {
         "fr": {
-          "title": "Mercato : le latéral droit du PSG Yoram Zague prêté à Paphos",
-          "summary": "Le jeune latéral parisien Yoram Zague va être prêté un an avec option d'achat au club chypriote de Paphos, qui avait fait parler de lui la saison passée en Ligue des champions.",
-          "needs_translation": false
+          "title": "PSG : Yoram Zague prêté avec option d'achat à Paphos",
+          "summary": "Le PSG prête son jeune latéral droit Yoram Zague pour une saison avec option d'achat au club chypriote de Paphos.",
+          "body": [
+            "Âgé de 20 ans et sous contrat jusqu'en 2028 avec Paris, le défenseur a passé sa visite médicale ce week-end à Chypre. Il sort d'un exercice partagé entre le FC Copenhague et Eupen, où il a cumulé 23 rencontres, 4 buts et 2 passes décisives."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Mercato : le latéral droit du PSG Yoram Zague prêté à Paphos",
-          "summary": "Le jeune latéral parisien Yoram Zague va être prêté un an avec option d'achat au club chypriote de Paphos, qui avait fait parler de lui la saison passée en Ligue des champions.",
-          "needs_translation": true
+          "title": "PSG: Yoram Zague loaned to Paphos with option to buy",
+          "summary": "PSG have loaned young right-back Yoram Zague for one season with an option to buy to Cypriot club Paphos.",
+          "body": [
+            "Under contract with Paris until 2028, the 20-year-old defender traveled for his medical this weekend in Cyprus. He spent last season on loan between FC Copenhagen and Eupen, tallying 23 appearances, four goals and two assists."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Mercato : le latéral droit du PSG Yoram Zague prêté à Paphos",
-          "summary": "Le jeune latéral parisien Yoram Zague va être prêté un an avec option d'achat au club chypriote de Paphos, qui avait fait parler de lui la saison passée en Ligue des champions.",
-          "needs_translation": true
+          "title": "PSG: Yoram Zague, cedido con opción de compra al Paphos",
+          "summary": "El PSG cede a su joven lateral derecho Yoram Zague por una temporada con opción de compra al Paphos chipriota.",
+          "body": [
+            "Con contrato con París hasta 2028, el defensa de 20 años viajó este fin de semana a Chipre para pasar el reconocimiento médico. Viene de militar cedido en el FC Copenhague y el Eupen, acumulando 23 partidos, 4 goles y 2 asistencias."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Mercato : le latéral droit du PSG Yoram Zague prêté à Paphos",
-          "summary": "Le jeune latéral parisien Yoram Zague va être prêté un an avec option d'achat au club chypriote de Paphos, qui avait fait parler de lui la saison passée en Ligue des champions.",
-          "needs_translation": true
+          "title": "باريس سان جيرمان يعير يورام زاغي إلى بافوس مع خيار الشراء",
+          "summary": "أعار نادي باريس سان جيرمان ظهيره الأيمن الشاب يورام زاغي لمدة موسم واحد مع خيار الشراء إلى نادي بافوس القبرصي.",
+          "body": [
+            "وسافر المدافع البالغ 20 عاماً، والمرتبط بعقد مع باريس حتى 2028، لإجراء الفحص الطبي في قبرص نهاية هذا الأسبوع. وخاض زاغي الموسم الماضي معاراً بين إف سي كوبنهاغن ويوبين، حيث شارك في 23 مباراة مسجلاً 4 أهداف وصانعاً هدفين."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Mercato-le-lateral-droit-du-psg-yoram-zague-prete-a-paphos/1713011#at_medium=RSS_feeds",
@@ -1306,7 +1421,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Mercato-le-lateral-droit-du-psg-yoram-zague-prete-a-paphos/1713011#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-23T16:40:13+00:00"
+        }
+      }
     },
     {
       "id": "4f2247f99d76",
@@ -1418,24 +1546,28 @@
       "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Premier League que enfrenta al Brighton and Hove Albion contra el Aston Villa correspondiente a Jornada 1.",
       "i18n": {
         "es": {
-          "title": "Premier League : Aston Villa foudroyé par Brighton, un cauchemar en 45 minutes",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Premier League que enfrenta al Brighton and Hove Albion contra el Aston Villa correspondiente a Jornada 1.",
-          "needs_translation": false
+          "title": "Premier League: Aston Villa fulminado por el Brighton, una pesadilla en 45 minutos",
+          "summary": "El Aston Villa se enfrentó al Brighton and Hove Albion en la Jornada 1 de la Premier League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Premier League : Aston Villa foudroyé par Brighton, un cauchemar en 45 minutes",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Premier League que enfrenta al Brighton and Hove Albion contra el Aston Villa correspondiente a Jornada 1.",
-          "needs_translation": true
+          "title": "Premier League: Aston Villa struck down by Brighton, a 45-minute nightmare",
+          "summary": "Aston Villa faced Brighton and Hove Albion in Jornada 1 of the Premier League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Premier League : Aston Villa foudroyé par Brighton, un cauchemar en 45 minutes",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Premier League que enfrenta al Brighton and Hove Albion contra el Aston Villa correspondiente a Jornada 1.",
-          "needs_translation": true
+          "summary": "Aston Villa affrontait Brighton and Hove Albion lors de la Jornada 1 de la Premier League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Premier League : Aston Villa foudroyé par Brighton, un cauchemar en 45 minutes",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Premier League que enfrenta al Brighton and Hove Albion contra el Aston Villa correspondiente a Jornada 1.",
-          "needs_translation": true
+          "title": "الدوري الإنجليزي الممتاز: برايتون يصعق أستون فيلا في 45 دقيقة كارثية",
+          "summary": "التقى أستون فيلا بنظيره برايتون أند هوف ألبيون لحساب الجولة الأولى من الدوري الإنجليزي الممتاز.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260823/1004217273/brighton-and-hove-albion-aston-villa-directo-premier-league.html",
@@ -1463,7 +1595,12 @@
           "url": "https://www.lefigaro.fr/sports/football/angleterre/premier-league-aston-villa-foudroye-par-brighton-un-cauchemar-en-45-minutes-20260823"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "97ed75b5fe53",
@@ -1519,26 +1656,27 @@
       "i18n": {
         "es": {
           "title": "El radical cambio de look de Erling Haaland y la divertida reacción de Pep Guardiola al verlo",
-          "summary": "El noruego sorprendió con su nuevo corte de pelo antes de la victoria del Manchester City ante el Bournemouth, y llamó a su ex DT para mostrárselo.",
-          "needs_translation": false
+          "summary": "Erling Haaland sorprendió con un nuevo corte de pelo antes de la victoria de Manchester City ante Bournemouth, provocando la divertida reacción de Pep Guardiola.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Erling Haaland's radical makeover and Pep Guardiola's hilarious reaction to seeing him",
-          "summary": "The Norwegian surprised with his new haircut before Manchester City's win against Bournemouth, and called his former manager to show him.",
+          "title": "Erling Haaland's radical new look and Pep Guardiola's funny reaction",
+          "summary": "Erling Haaland revealed a new haircut ahead of Manchester City's victory against Bournemouth, sparking an amusing reaction from Pep Guardiola.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le changement radical de look d'Erling Haaland et la réaction amusante de Pep Guardiola en le voyant",
-          "summary": "Le Norvégien a surpris avec sa nouvelle coupe de cheveux avant la victoire de Manchester City contre Bournemouth, et a appelé son ancien entraîneur pour le lui montrer.",
+          "title": "Le changement de look radical d'Erling Haaland et la réaction amusée de Pep Guardiola",
+          "summary": "Erling Haaland s'est présenté avec une nouvelle coupe de cheveux avant la victoire de Manchester City face à Bournemouth, suscitant la réaction amusée de Pep Guardiola.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تحول إرلينج هالاند الجذري ورد فعل بيب جوارديولا المضحك لرؤيته",
-          "summary": "فاجأ النرويجي بقصة شعره الجديدة قبل فوز مانشستر سيتي على بورنموث، واتصل بمدربه السابق ليريه إياها.",
+          "title": "تغيير جذري في مظهر إيرلينغ هالاند ورد فعل طريف من بيب غوارديولا",
+          "summary": "فاجأ النرويجي إيرلينغ هالاند الجميع بقصة شعر جديدة قبل فوز مانشستر سيتي أمام بورنموث، مما أثار رد فعل طريفاً من مدربه بيب غوارديولا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/inglaterra/erlinghaaland-cambiodelook-manchestercity-pepguardiola-premierleague_0_Rck58s9h6e.html",
@@ -1560,7 +1698,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/inglaterra/erlinghaaland-cambiodelook-manchestercity-pepguardiola-premierleague_0_Rck58s9h6e.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "85900962cca9",
@@ -1569,23 +1712,27 @@
       "i18n": {
         "es": {
           "title": "Mateu Alemany: \"Que Julián esté convocado lo dice todo y pone a cada uno en su sitio\"",
-          "summary": "Mateu Alemany , director de fútbol del Atlético de Madrid , volvió a hablar sobre el futuro de Julián Álvarez en la previa del partido contra el Villarreal .",
-          "needs_translation": false
+          "summary": "En la previa del partido contra el Villarreal, Mateu Alemany, director de fútbol del Atlético de Madrid, abordó el futuro de Julián Álvarez tras su inclusión en la convocatoria.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mateu Alemany: \"Que Julián esté convocado lo dice todo y pone a cada uno en su sitio\"",
-          "summary": "Mateu Alemany , director de fútbol del Atlético de Madrid , volvió a hablar sobre el futuro de Julián Álvarez en la previa del partido contra el Villarreal .",
-          "needs_translation": true
+          "title": "Mateu Alemany: \"Julián being called up says it all and puts everyone in their place\"",
+          "summary": "Ahead of the match against Villarreal, Atlético de Madrid football director Mateu Alemany addressed the future of Julián Álvarez, stating that his inclusion in the squad clarifies his situation.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Mateu Alemany: \"Que Julián esté convocado lo dice todo y pone a cada uno en su sitio\"",
-          "summary": "Mateu Alemany , director de fútbol del Atlético de Madrid , volvió a hablar sobre el futuro de Julián Álvarez en la previa del partido contra el Villarreal .",
-          "needs_translation": true
+          "title": "Mateu Alemany : « Que Julián soit convoqué veut tout dire et remet chacun à sa place »",
+          "summary": "Avant la rencontre face à Villarreal, Mateu Alemany, directeur du football de l'Atlético de Madrid, a évoqué l'avenir de Julián Álvarez en affirmant que sa présence dans le groupe clarifiait la situation.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Mateu Alemany: \"Que Julián esté convocado lo dice todo y pone a cada uno en su sitio\"",
-          "summary": "Mateu Alemany , director de fútbol del Atlético de Madrid , volvió a hablar sobre el futuro de Julián Álvarez en la previa del partido contra el Villarreal .",
-          "needs_translation": true
+          "title": "ماتيو أليماني: \"استدعاء خوليان يوضح كل شيء ويضع الجميع في مكانهم\"",
+          "summary": "قبل مواجهة فياريال، تحدث ماتيو أليماني، مدير كرة القدم في أتلتيكو مدريد، عن مستقبل خوليان ألفاريز، مؤكداً أن تواجده في القائمة يحسم الجدل الدائر حوله.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218902/mateu-alemany-julian-convocado-dice-pone-sitio.html",
@@ -1607,7 +1754,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218902/mateu-alemany-julian-convocado-dice-pone-sitio.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ddaeec61eb3c",
@@ -1616,32 +1768,33 @@
       "i18n": {
         "de": {
           "title": "Verzögerter Jubel: ManCity schlägt Roses Bournemouth in der Nachspielzeit",
-          "summary": "Manchester City hat beim Premier-League-Debüt seines neuen Trainers Enzo Maresca einen Fehlstart abwenden können. Zwei nominelle Verteidiger drehten das Heimspiel gegen Marco Roses AFC Bournemouth spät.",
-          "needs_translation": false
+          "summary": "Beim Premier-League-Debüt von Trainer Enzo Maresca hat Manchester City einen Fehlstart vermieden. Zwei Verteidiger drehten das Heimspiel gegen Marco Roses AFC Bournemouth in der Nachspielzeit.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Delayed cheers: ManCity beats Roses Bournemouth in injury time",
-          "summary": "Manchester City have been able to avoid a false start at the Premier League debut of their new coach Enzo Maresca. Two nominal defenders turned the home game against Marco Rose's AFC Bournemouth late.",
+          "title": "Late drama: ManCity beat Rose's Bournemouth in stoppage time",
+          "summary": "Manchester City avoided a false start in manager Enzo Maresca's Premier League debut, as two defenders scored late to secure a home win against Marco Rose's AFC Bournemouth.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Acclamation retardée : ManCity bat Roses Bournemouth dans le temps additionnel",
-          "summary": "Manchester City a pu éviter un faux départ lors des débuts en Premier League de son nouvel entraîneur Enzo Maresca. Deux défenseurs nominaux ont tourné le match à domicile contre Marco Roses AFC Bournemouth tardivement.",
+          "title": "Joie tardive : ManCity bat le Bournemouth de Rose dans le temps additionnel",
+          "summary": "Pour les débuts d'Enzo Maresca en Premier League, Manchester City s'est imposé à domicile contre l'AFC Bournemouth de Marco Rose grâce aux buts tardifs de deux défenseurs.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Alegría retrasada: ManCity vence a Roses Bournemouth en el tiempo de descuento",
-          "summary": "El Manchester City ha podido evitar un mal comienzo en el debut en la Premier League de su nuevo entrenador Enzo Maresca. Dos defensores nominales rodaron tarde el partido en casa contra el AFC Bournemouth de Marco Rose.",
+          "title": "Celebración tardía: ManCity vence al Bournemouth de Rose en el tiempo añadido",
+          "summary": "En el debut de Enzo Maresca en Premier League, Manchester City remontó en casa ante el AFC Bournemouth de Marco Rose gracias a los goles tardíos de dos defensas.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هتافات متأخرة: مان سيتي يهزم روز بورنموث في وقت الإصابة",
-          "summary": "تمكن مانشستر سيتي من تجنب بداية خاطئة في أول مباراة له في الدوري الممتاز مع مدربه الجديد إنزو ماريسكا. قلب اثنان من المدافعين الاسميين المباراة على أرضهم ضد نادي بورنموث الآسيوي لماركو روز في وقت متأخر.",
+          "title": "فرحة متأخرة: مانشستر سيتي يهزم بورنموث بقيادة روزه في الوقت بدل الضائع",
+          "summary": "تفادى مانشستر سيتي التعثر في الظهور الأول لمدربه إنزو ماريسكا في الدوري الإنجليزي، بعدما قلب مدافعان النتيجة في الوقت القاتل أمام بورنموث بقيادة ماركو روزه.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/mancity-gegen-bournemouth-2026-premier-league-5213277/spielbericht#omrss",
@@ -1663,7 +1816,12 @@
           "url": "https://www.kicker.de/mancity-gegen-bournemouth-2026-premier-league-5213277/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "bce24481d5cb",
@@ -1819,26 +1977,27 @@
       "i18n": {
         "es": {
           "title": "Inicio para olvidar del Aston Villa de Emery",
-          "summary": "Mazazo para el Aston Villa de Unai Emery en su debut en esta nueva Premier League . Tras la derrota ante el Paris Saint-Germain en la Supercopa de Europa , los ‘villans’ deseaban empezar con buen pie el campeonato doméstico, pero el Brighton & Hove Albion tenía otros planes.",
-          "needs_translation": false
+          "summary": "El Aston Villa de Unai Emery sufrió una derrota ante el Brighton & Hove Albion en su debut en la Premier League, tras haber perdido previamente la Supercopa de Europa ante el Paris Saint-Germain.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Aston Villa de Emery start to forget",
-          "summary": "Mace for the Aston Villa of Unai Emery in his debut in this new Premier League . After the defeat against Paris Saint-Germain in the European Super Cup, the ‘villains‘ wanted to start the domestic championship on the right foot, but Brighton & Hove Albion had other plans.",
+          "title": "A start to forget for Emery's Aston Villa",
+          "summary": "Unai Emery's Aston Villa suffered a defeat against Brighton & Hove Albion in their Premier League opener, following their loss to Paris Saint-Germain in the Supercopa de Europa.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Début pour oublier l'Aston Villa d'Emery",
-          "summary": "Coup de massue pour l'Aston Villa d'Unai Emery lors de ses débuts dans cette nouvelle Premier League . Après la défaite contre le Paris Saint-Germain en Supercoupe d'Europe , les « villans » souhaitaient commencer du bon pied le championnat national, mais Brighton & Hove Albion avait d'autres plans.",
+          "title": "Des débuts à oublier pour l'Aston Villa d'Emery",
+          "summary": "L'Aston Villa d'Unai Emery s'est incliné face à Brighton & Hove Albion lors de son entrée en lice en Premier League, après sa défaite contre le Paris Saint-Germain en Supercopa de Europa.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "بدأت أستون فيلا دي إيمري في النسيان",
-          "summary": "صولجان لفيلا أستون أوناي إيمري في أول ظهور له في هذا الدوري الممتاز الجديد. بعد الهزيمة ضد باريس سان جيرمان في كأس السوبر الأوروبي ، أراد \"الأشرار\" بدء البطولة المحلية بالقدم اليمنى، لكن برايتون وهوف ألبيون كان لديهما خطط أخرى.",
+          "title": "بداية للنسيان لأستون فيلا بقيادة إيمري",
+          "summary": "تلقى أستون فيلا بقيادة أوناي إيمري خسارة أمام برايتون أند هوف ألبيون في افتتاح مشواره بالدوري الإنجليزي الممتاز، عقب هزيمته أمام باريس سان جيرمان في كأس السوبر الأوروبي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260823/1004218891/inicio-olvidar-aston-villa-emery.html",
@@ -1860,7 +2019,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260823/1004218891/inicio-olvidar-aston-villa-emery.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "722cb28393a8",
@@ -1916,7 +2080,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-1/ligue-1-premiere-reussie-pour-davide-ancelotti-et-le-losc-a-angers-olivier-giroud-buteur-20260823"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "636be1730b01",
@@ -1975,32 +2144,33 @@
       "i18n": {
         "de": {
           "title": "Jeddeloh-Keeper Onken nach Pokal-Sensation: \"Das wird eine lange Nacht\"",
-          "summary": "Der SSV Jeddeloh II sorgte in der 1. Pokalrunde gleich für eine Sensation: Der Nord-Regionalligist kegelte den Bundesliga-Absteiger 1.",
-          "needs_translation": false
+          "summary": "In der 1. Pokalrunde sorgte der Nord-Regionalligist SSV Jeddeloh II für eine Pokal-Sensation und warf einen Bundesliga-Absteiger aus dem Wettbewerb.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Jeddeloh-Keeper Onken after cup sensation: \"This will be a long night\"",
-          "summary": "The SSV Jeddeloh II caused a sensation in the first round of the cup: The Northern Regionalligist bowled the Bundesliga relegated 1st",
+          "title": "Jeddeloh-Keeper Onken after Pokal-Sensation: \"It's going to be a long night\"",
+          "summary": "In the first Pokalrunde, Nord-Regionalligist side SSV Jeddeloh II caused a major upset by knocking out a Bundesliga-Absteiger.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Jeddeloh-Keeper Onken après la sensation de la coupe : \"Ça va être une longue nuit\"",
-          "summary": "Le SSV Jeddeloh II a fait sensation lors du premier tour de coupe : le Nord-Regionalligist a battu le relégué de Bundesliga 1.",
+          "title": "Le Jeddeloh-Keeper Onken après la Pokal-Sensation : « La nuit sera longue »",
+          "summary": "Lors de la première Pokalrunde, le Nord-Regionalligist SSV Jeddeloh II a créé l'exploit en éliminant un Bundesliga-Absteiger.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Jeddeloh-Keeper Onken después de la sensación de la copa: \"Esta será una noche larga\"",
-          "summary": "El SSV Jeddeloh II causó sensación en la primera ronda de la Copa: el Nord-Regionalligist le dio al relegado de la Bundesliga 1.",
+          "title": "El Jeddeloh-Keeper Onken tras la Pokal-Sensation: «Va a ser una larga Nacht»",
+          "summary": "En la primera Pokalrunde, el Nord-Regionalligist SSV Jeddeloh II dio la gran sorpresa al eliminar a un Bundesliga-Absteiger.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Jeddeloh - Keeper Onken بعد إحساس الكأس: \"ستكون هذه ليلة طويلة\"",
-          "summary": "تسبب SSV Jeddeloh II في ضجة كبيرة في الجولة الأولى من الكأس: هبط لاعبو المنطقة الشمالية الدوري الألماني في المركز الأول",
+          "title": "حارس ييديلو أونكن بعد مفاجأة الكأس: \"ستكون ليلة طويلة\"",
+          "summary": "فجر نادي إس إس في ييديلو المنافس في دوري المناطق الشمالي مفاجأة مدوية في الدور الأول من كأس ألمانيا بعدما أطاح بفريق هابط من الدوري الألماني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/jeddeloh-keeper-onken-nach-pokal-sensation-das-wird-eine-lange-nacht-1246093/artikel#omrss",
@@ -2022,7 +2192,12 @@
           "url": "https://www.kicker.de/jeddeloh-keeper-onken-nach-pokal-sensation-das-wird-eine-lange-nacht-1246093/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a652985df679",
@@ -2031,26 +2206,27 @@
       "i18n": {
         "es": {
           "title": "Manchester City - Bournemouth, en directo | Premier League",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Premier League que enfrenta al Newcastle United contra el Liverpool correspondiente a Jornada 1.",
-          "needs_translation": false
+          "summary": "Seguimiento en directo del partido de la Premier League entre Manchester City y Bournemouth.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Manchester City - Bournemouth, live | Premier League",
-          "summary": "Good afternoon and welcome to the live narration of the Premier League football match between Newcastle United and Liverpool on Matchday 1.",
+          "title": "Manchester City - Bournemouth live | Premier League",
+          "summary": "Live coverage of the Premier League match between Manchester City and Bournemouth.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Manchester City - Bournemouth, en direct | Premier League",
-          "summary": "Bonsoir et bienvenue au récit, en direct, du match de football de Premier League qui oppose Newcastle United à Liverpool correspondant à la Journée 1.",
+          "summary": "Suivi en direct du match de Premier League opposant Manchester City à Bournemouth.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مانشستر سيتي - بورنموث، مباشر | الدوري الإنجليزي الممتاز",
-          "summary": "مساء الخير ومرحبا بكم في السرد المباشر لمباراة الدوري الممتاز لكرة القدم بين نيوكاسل يونايتد وليفربول في يوم المباراة 1.",
+          "title": "مانشستر سيتي - بورنموث، البث المباشر | الدوري الإنجليزي الممتاز",
+          "summary": "متابعة حية ومباشرة لمباراة الدوري الإنجليزي الممتاز بين مانشستر سيتي وبورنموث.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260823/1004217435/newcastle-united-liverpool-directo-premier-league.html",
@@ -2078,7 +2254,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260823/1004217276/manchester-city-bournemouth-directo-premier-league.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e276825090e5",
@@ -2086,44 +2267,44 @@
       "summary": "Libre de tout contrat après son passage au Havre, Sofiane Boufal suscite l'intérêt du Deportivo La Coruña pour renforcer son secteur offensif.",
       "i18n": {
         "fr": {
-          "title": "Sofiane Boufal ciblé par le Deportivo La Coruña",
-          "summary": "Libre de tout contrat après son passage au Havre, Sofiane Boufal suscite l'intérêt du Deportivo La Coruña pour renforcer son secteur offensif.",
+          "title": "Sofiane Boufal sur les tablettes du Deportivo La Coruña",
+          "summary": "Le Deportivo La Coruña cible l'international marocain Sofiane Boufal, libre de tout contrat, pour étoffer son attaque cet été.",
           "body": [
-            "Le club galicien, qui a déjà attiré Pierre-Emerick Aubameyang cet été, envisage de passer à l'action dans les prochains jours selon La Opinión A Coruña. Une seconde formation espagnole suit également la situation de l'international marocain de 32 ans, disponible sans indemnité de transfert.",
-            "Auteur d'un but et de quatre passes décisives en 17 matches de Ligue 1 la saison dernière sous le maillot havrais, l'ailier pourrait ainsi retrouver un championnat découvert lors de son prêt au Celta Vigo entre 2018 et 2019."
+            "Sans club à 32 ans après son passage au Havre, où il a compilé un but et quatre passes décisives en 17 rencontres de Ligue 1, le milieu offensif figure sur la liste des priorités du club galicien. Une autre formation espagnole suit également sa situation.",
+            "Le club galicien affiche ses ambitions offensives après avoir notamment recruté Pierre-Emerick Aubameyang cet été. Une arrivée à La Corogne marquerait le retour du Marocain en Espagne, lui qui a déjà évolué au Celta Vigo lors de la saison 2018-2019."
           ],
           "format": "deep",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "en": {
-          "title": "Sofiane Boufal targeted by Deportivo La Coruña",
-          "summary": "A free agent after his spell at Le Havre, Sofiane Boufal is attracting strong interest from Deportivo La Coruña to strengthen their frontline.",
+          "title": "Sofiane Boufal on Deportivo La Coruña radar",
+          "summary": "Deportivo La Coruña are targeting Moroccan international Sofiane Boufal, currently a free agent, to bolster their attack this summer.",
           "body": [
-            "The Galician side, having already landed Pierre-Emerick Aubameyang this summer, are planning to step up their pursuit in the coming days according to La Opinión A Coruña. Another Spanish club is also tracking the 32-year-old Moroccan international, available on a free transfer.",
-            "With one goal and four assists in 17 Ligue 1 appearances last season, the winger could make his return to a league where he previously featured on loan at Celta Vigo between 2018 and 2019."
+            "Without a club at 32 after playing 17 Ligue 1 matches with Le Havre (one goal, four assists), the attacking midfielder is on the Galician club's shortlist. Another Spanish side is also monitoring his availability.",
+            "Deportivo are showing strong ambition this window after already bringing in Pierre-Emerick Aubameyang. A move would see the Moroccan return to Spain, having previously played on loan for Celta Vigo during the 2018-2019 season."
           ],
           "format": "deep",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "es": {
-          "title": "Sofiane Boufal, en el punto de mira del Deportivo La Coruña",
-          "summary": "Libre de contrato tras su etapa en Le Havre, Sofiane Boufal despierta el interés del Deportivo La Coruña para reforzar su ataque.",
+          "title": "El Deportivo La Coruña se fija en Sofiane Boufal",
+          "summary": "El Deportivo La Coruña busca incorporar al internacional marroquí Sofiane Boufal, actualmente libre de contrato, para reforzar su ataque este verano.",
           "body": [
-            "El conjunto gallego, que ya incorporó a Pierre-Emerick Aubameyang este verano, planea pasar a la acción en los próximos días según informa La Opinión A Coruña. Otro equipo español también sigue de cerca la situación del internacional marroquí de 32 años, disponible a coste cero.",
-            "Autor de un gol y cuatro asistencias en 17 partidos de Ligue 1 la pasada campaña, el extremo podría volver a un campeonato en el que ya militó como cedido en el Celta de Vigo entre 2018 y 2019."
+            "A sus 32 años y sin equipo tras disputar 17 partidos de Ligue 1 con Le Havre (un gol y cuatro asistencias), el atacante figura entre los objetivos del cuadro gallego. Otro conjunto español también sigue de cerca su situación.",
+            "El club blanquiazul muestra ambición ofensiva tras haber firmado a Pierre-Emerick Aubameyang este verano. La operación supondría la vuelta del marroquí a España, donde ya militó cedido en el Celta de Vigo durante la campaña 2018-2019."
           ],
           "format": "deep",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "ar": {
-          "title": "سفيان بوفال مطلوب في ديبورتيفو لا كورونيا",
-          "summary": "بعد نهاية عقده مع لوهافر، يحظى الدولي المغربي سفيان بوفال باهتمام قوي من ديبورتيفو لا كورونيا لتعزيز خط هجومه.",
+          "title": "سفيان بوفال على رادار ديبورتيفو لا كورونيا",
+          "summary": "يستهدف نادي ديبورتيفو لا كورونيا التعاقد مع الدولي المغربي سفيان بوفال، في صفقة انتقال حر، لتعزيز خط هجومه هذا الصيف.",
           "body": [
-            "ويخطط النادي الغاليسي، الذي تعاقد هذا الصيف مع بيير إيميريك أوباميانغ، للتحرك رسمياً لحسم الصفقة خلال الأيام المقبلة وفقاً لصحيفة لا أوبينيون آ كورونيا، بينما يراقب نادٍ إسباني آخر وضع اللاعب البالغ 32 عاماً والمتاح مجاناً.",
-            "وسجل الجناح المغربي هدفاً وقدم أربع تمريرات حاسمة في 17 مباراة بالدوري الفرنسي الموسم الماضي، وقد يعود إلى البطولة الإسبانية التي خاض غمارها سابقاً معاراً إلى سيلتا فيغو بين عامي 2018 و2019."
+            "بات صانع الألعاب المغربي، البالغ 32 عاماً، ضمن أولويات النادي الغاليسي بعد انتهاء تجربته مع لوهافر الفرنسي، حيث سجل هدفاً وصنع 4 أهداف في 17 مباراة. كما يلقى اللاعب اهتماماً من نادٍ إسباني آخر.",
+            "ويواصل لا كورونيا تدعيم خطه الأمامي بعد ضمه الغابوني بيير إيميريك أوباميانغ هذا الصيف. وستمثل الصفقة عودة بوفال إلى الدوري الإسباني، بعد تجربة سابقة بقميص سيلتا فيغو في موسم 2018-2019."
           ],
           "format": "deep",
           "needs_translation": false,
@@ -2149,7 +2330,20 @@
           "url": "https://fr.hespress.com/485902-sofiane-boufal-se-rapproche-dun-retour-en-espagne.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-23T16:40:15+00:00"
+        }
+      }
     },
     {
       "id": "95108c724808",
@@ -2270,26 +2464,27 @@
       "i18n": {
         "es": {
           "title": "La respuesta de Vinicius a un vídeo sobre la patada de Cala",
-          "summary": "Vinicius se las tuvo con Cala, jugador del Espanyol, en el encuentro que el Real Madrid jugó ante el equipo blanquiazul (1-2).",
-          "needs_translation": false
+          "summary": "Vinicius tuvo un altercado con Cala, jugador del Espanyol, durante el encuentro disputado frente al Real Madrid (1-2).",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Vinicius' response to a video about Cala's kick",
-          "summary": "Vinicius clashed with Cala, a player from Espanyol, in the match that Real Madrid played against the blue and white team (1-2).",
+          "title": "Vinicius' response to a video of Cala's kick",
+          "summary": "Vinicius clashed with Espanyol player Cala during Real Madrid's match against the Catalan side (1-2).",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "La réponse de Vinicius à une vidéo sur le coup de pied de Cala",
-          "summary": "Vinicius s'en est pris à Cala, joueur de l'Espanyol, lors du match que le Real Madrid a joué contre l'équipe blanquiazul (1-2).",
+          "summary": "Vinicius a eu une altercation avec Cala, joueur de l'Espanyol, lors du match disputé contre le Real Madrid (1-2).",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "رد فينيسيوس على مقطع فيديو حول ركلة كالا",
-          "summary": "اشتبك فينيسيوس مع كالا، لاعب من إسبانيول، في المباراة التي خاضها ريال مدريد ضد الفريق الأزرق والأبيض (1-2).",
+          "title": "رد فينيسيوس على مقطع فيديو لركلة كالا",
+          "summary": "دخل فينيسيوس في مشادة مع كالا لاعب إسبانيول خلال المباراة التي جمعت فريقه ريال مدريد بالنادي الكتالوني (1-2).",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218860/respuesta-vinicius-video-sobre-patada-cala.html",
@@ -2311,7 +2506,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218860/respuesta-vinicius-video-sobre-patada-cala.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b0363a10d504",
@@ -2320,26 +2520,27 @@
       "i18n": {
         "es": {
           "title": "Ya hay once del Atlético: la decisión de Simeone respecto a Julián Álvarez",
-          "summary": "Diego Pablo Simeone , entrenador del Atlético de Madrid , dio a conocer el once inicial de su equipo para medirse al Villarreal , en el Metropolitano . Con varias novedades.",
-          "needs_translation": false
+          "summary": "Diego Pablo Simeone confirmó la alineación titular del Atlético de Madrid para enfrentarse al Villarreal en el Metropolitano, presentando varias novedades.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "There are already eleven of Atletico: Simeone's decision regarding Julián Álvarez",
-          "summary": "Diego Pablo Simeone , coach of Atlético de Madrid , announced the starting eleven of his team to face Villarreal , in the Metropolitan . With several new features.",
+          "title": "Atlético's starting eleven is out: Simeone's decision regarding Julián Álvarez",
+          "summary": "Diego Pablo Simeone has announced Atlético de Madrid's starting lineup to face Villarreal at the Metropolitano, featuring several tactical changes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Il y en a déjà onze de l'Atlético : la décision de Simeone concernant Julián Álvarez",
-          "summary": "Diego Pablo Simeone , entraîneur de l'Atlético de Madrid , a dévoilé le onze de départ de son équipe pour affronter Villarreal , au Metropolitano . Avec plusieurs nouveautés.",
+          "title": "Le onze de l'Atlético est connu : la décision de Simeone concernant Julián Álvarez",
+          "summary": "Diego Pablo Simeone a dévoilé le onze de départ de l'Atlético de Madrid pour affronter Villarreal au Metropolitano, avec plusieurs nouveautés dans sa composition.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هناك بالفعل أحد عشر من أتلتيكو: قرار سيميوني بشأن جوليان ألفاريز",
-          "summary": "أعلن دييغو بابلو سيميوني ، مدرب أتلتيكو مدريد ، عن بدء أحد عشر لاعبًا من فريقه لمواجهة فياريال ، في المتروبوليتان . مع العديد من الميزات الجديدة.",
+          "title": "الإعلان عن تشكيلة أتلتيكو: قرار سيميوني بشأن خوليان ألفاريز",
+          "summary": "أعلن دييغو بابلو سيميوني عن التشكيلة الأساسية لنادي أتلتيكو مدريد لمواجهة فياريال على ملعب ميتروبوليتانو، والتي شهدت عدة تغييرات.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260823/1004218886/hay-once-atletico-decision-simeone-respecto-julian-alvarez.html",
@@ -2361,7 +2562,12 @@
           "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260823/1004218886/hay-once-atletico-decision-simeone-respecto-julian-alvarez.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a051fcf69960",
@@ -2370,32 +2576,33 @@
       "i18n": {
         "de": {
           "title": "Veni, vidi, Espi! Der Traumeinstand des \"Joselu Junior\"",
-          "summary": "Top-Talent Carlos Espi rettete zum Saisonstart Real Madrid. Die Stars hingegen enttäuschten zumeist beim Debüt des alten und neuen Trainers José Mourinho - oder sahen gar nur zu.",
-          "needs_translation": false
+          "summary": "Carlos Espi rettete Real Madrid zum Saisonstart. Beim Debüt von Trainer José Mourinho enttäuschten die etablierten Stars oder blieben ohne Einsatz.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Veni, vidi, Espi! The dream birth of \"Joselu Junior\"",
-          "summary": "Top talent Carlos Espi saved Real Madrid at the start of the season. The stars, on the other hand, mostly disappointed on the debut of old and new coach José Mourinho - or just watched.",
+          "title": "Veni, vidi, Espi! The dream debut of \"Joselu Junior\"",
+          "summary": "Carlos Espi rescued Real Madrid in their season opener. In coach José Mourinho's debut, most stars disappointed or did not play at all.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Veni, vidi, Espi ! L'insert de rêve du « Joselu Junior »",
-          "summary": "Le talentueux Carlos Espi a sauvé le Real Madrid au début de la saison. Les stars, en revanche, ont généralement déçu lors des débuts de l'ancien et du nouvel entraîneur José Mourinho - ou ont simplement regardé.",
+          "title": "Veni, vidi, Espi ! Les débuts rêvés de « Joselu Junior »",
+          "summary": "Carlos Espi a sauvé Real Madrid pour l'ouverture de la saison. Lors des débuts de l'entraîneur José Mourinho, la plupart des cadres ont déçu ou sont restés spectateurs.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Veni, vidi, Espi! La entrada de ensueño del \"Joselu Junior\"",
-          "summary": "El mejor talento Carlos Espi salvó al Real Madrid en el inicio de la temporada. Las estrellas, por otro lado, en su mayoría decepcionaron en el debut del antiguo y nuevo entrenador José Mourinho, o simplemente lo vieron.",
+          "title": "¡Veni, vidi, Espi! El debut soñado de «Joselu Junior»",
+          "summary": "Carlos Espi salvó a Real Madrid en el arranque de la temporada. En el debut del entrenador José Mourinho, la mayoría de las estrellas decepcionaron o no jugaron.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "فيني، فيدي، إسبي! ولادة حلم \"جوسيلو جونيور\"",
-          "summary": "أفضل المواهب كارلوس إيسبى أنقذ ريال مدريد في بداية الموسم. من ناحية أخرى، خاب أمل النجوم في الغالب من ظهور المدرب القديم والجديد خوسيه مورينيو - أو شاهدوه فقط.",
+          "title": "بداية مثالية لـ \"خوسيلو جونيور\" مع ريال مدريد",
+          "summary": "أنقذ الموهوب كارلوس إسبي فريق ريال مدريد في انطلاق الموسم، في حين خيب أغلب النجوم التوقعات أو اكتفوا بالمشاهدة في الظهور الأول للمدرب جوزيه مورينيو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/veni-vidi-espi-der-traumeinstand-des-joselu-junior-1246077/artikel#omrss",
@@ -2417,7 +2624,12 @@
           "url": "https://www.kicker.de/veni-vidi-espi-der-traumeinstand-des-joselu-junior-1246077/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     }
   ]
 }
