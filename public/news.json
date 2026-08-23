@@ -172,27 +172,28 @@
       "summary": "El equipo del Vasco Arruabarrena jugará este domingo por la noche en Avellaneda, por la sexta fecha del torneo Clausura. El Xeneize se juega mucho en el Cilindro.",
       "i18n": {
         "es": {
-          "title": "La buena chance en las tablas que tendrá Boca ante Racing tras los resultados del sábado",
-          "summary": "El equipo del Vasco Arruabarrena jugará este domingo por la noche en Avellaneda, por la sexta fecha del torneo Clausura. El Xeneize se juega mucho en el Cilindro.",
-          "needs_translation": false
+          "title": "La buena oportunidad en la tabla que tendrá Boca ante Racing tras los resultados del sábado",
+          "summary": "El equipo de Vasco Arruabarrena visita este domingo a Racing en Avellaneda por la sexta fecha del torneo Clausura, con la opción de avanzar puestos clave en la clasificación.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The good chance in the tables that Boca will have against Racing after the results on Saturday",
-          "summary": "The Vasco Arruabarrena team will play this Sunday night in Avellaneda, for the sixth date of the Clausura tournament. Xeneize is played a lot on the Cylinder.",
+          "title": "The great opportunity in the standings for Boca against Racing after Saturday's results",
+          "summary": "Vasco Arruabarrena's team visits Racing in Avellaneda this Sunday night for matchday 6 of the Clausura tournament, aiming to capitalize on recent results.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La bonne chance sur les planches que Boca aura contre le Racing après les résultats de samedi",
-          "summary": "L'équipe du Vasco Arruabarrena jouera ce dimanche soir à Avellaneda, pour la sixième journée du tournoi de clôture. Le Xeneize se joue beaucoup dans le Cylindre.",
+          "title": "La belle opportunité au classement pour Boca face à Racing après les résultats de samedi",
+          "summary": "L'équipe de Vasco Arruabarrena affronte Racing ce dimanche soir à Avellaneda lors de la sixième journée du tournoi Clausura, avec d'importants points en jeu au Cilindro.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الفرصة الجيدة في الجداول التي ستحظى بها بوكا ضد راسينغ بعد النتائج يوم السبت",
-          "summary": "سيلعب فريق فاسكو أروبارينا ليلة الأحد في أفيليانيدا، للموعد السادس لبطولة كلوسورا. يتم تشغيل Xeneize كثيرًا على الأسطوانة.",
+          "title": "فرصة مواتية لبوكا جونيورز في جدول الترتيب أمام راسينغ بعد نتائج السبت",
+          "summary": "يحل فريق المدرب فاسكو أروبارينا ضيفاً على راسينغ في أفيلانيدا مساء الأحد ضمن الجولة السادسة من بطولة كلاوسورا، في مواجهة حاسمة على ملعب سيليندرو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/partido-boca-racing-tablas-racha-ganar_0_SdWKkBVZ8O.html",
@@ -214,7 +215,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/partido-boca-racing-tablas-racha-ganar_0_SdWKkBVZ8O.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ed36a0e98d86",
@@ -384,33 +390,54 @@
       "summary": "Ramy Bensebaini erlebte beim nationalen Supercup am Samstag einen Abend zum Vergessen. Spät sah der Dortmunder gegen den FC Bayern glatt Rot.",
       "i18n": {
         "de": {
-          "title": "Erinnerungen an Terrier: Was die Rote Karte für Bensebaini bedeutet",
-          "summary": "Ramy Bensebaini erlebte beim nationalen Supercup am Samstag einen Abend zum Vergessen. Spät sah der Dortmunder gegen den FC Bayern glatt Rot.",
-          "needs_translation": false
+          "title": "Supercup: Bensebaini sieht glatt Rot gegen Bayern",
+          "summary": "Ramy Bensebaini hat beim nationalen Supercup am Samstag im Duell gegen den FC Bayern spät einen glatten Platzverweis kassiert.",
+          "body": [
+            "Für den Dortmunder Abwehrspieler endete das Aufeinandertreffen mit den Münchnern vorzeitig. In der späten Phase der Partie sah der BVB-Profi die Rote Karte und besiegelte damit einen bitteren Abend im Kampf um den ersten nationalen Titel der Saison."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Terrier Memories: What the Red Card Means for Bensebaini",
-          "summary": "Ramy Bensebaini had a night to forget at the national Supercup on Saturday. Later, the Dortmund player saw smooth red against FC Bayern.",
+          "title": "Supercup: Bensebaini shown straight red against FC Bayern",
+          "summary": "Ramy Bensebaini was shown a straight red card late on Saturday during the Supercup clash against FC Bayern.",
+          "body": [
+            "The Dortmund defender's night ended early against the Munich side. Sent off in the closing stages, the BVB player capped a bitter evening in the fight for the season's first piece of domestic silverware."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Souvenirs de Terrier : ce que le carton rouge signifie pour Bensebaini",
-          "summary": "Ramy Bensebaini a vécu une soirée à oublier lors de la Supercoupe nationale samedi. Tard, le Dortmundois a vu rouge lisse contre le FC Bayern.",
+          "title": "Supercup : Bensebaini exclu directement face au FC Bayern",
+          "summary": "Ramy Bensebaini a écopé d'un carton rouge direct en fin de match, samedi, lors du choc de Supercup face au FC Bayern.",
+          "body": [
+            "La soirée a tourné court pour le défenseur de Dortmund face aux Munichois. Exclu en toute fin de rencontre, le joueur du BVB a scellé une issue amère dans la quête du premier trophée de la saison."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Recuerdos de terriers: lo que significa la tarjeta roja para Bensebaini",
-          "summary": "Ramy Bensebaini vivió una noche para olvidar en la Supercopa Nacional el sábado. Tarde, el Dortmund vio el rojo resbaladizo contra el Bayern.",
+          "title": "Supercup: Bensebaini ve la roja directa ante el FC Bayern",
+          "summary": "Ramy Bensebaini fue expulsado con roja directa en los minutos finales del duelo de la Supercup de este sábado ante el FC Bayern.",
+          "body": [
+            "El defensa del Dortmund terminó antes de tiempo su actuación frente al cuadro muniqués. Su expulsión en el tramo final del partido rubricó una noche amarga en la pugna por el primer título de la temporada."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ذكريات الكلب: ماذا تعني البطاقة الحمراء لبنسبياني",
-          "summary": "كان لدى رامي بنسبيني ليلة لينساها في كأس السوبر الوطني يوم السبت. في وقت لاحق، رأى لاعب دورتموند الأحمر السلس ضد بايرن ميونيخ.",
+          "title": "كأس السوبر: طرد مباشر للجزائري بن سبعيني أمام بايرن ميونخ",
+          "summary": "تلقى رامي بن سبعيني بطاقة حمراء مباشرة في الدقائق الأخيرة من مواجهة كأس السوبر يوم السبت أمام بايرن ميونخ.",
+          "body": [
+            "وانتهت المباراة مبكراً لمدافع بوروسيا دورتموند أمام الفريق البافاري؛ إذ غادر الميدان مطروداً في الأنفاس الأخيرة من اللقاء، ليعيش أمسية مريرة في الصراع على أول ألقاب الموسم."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.kicker.de/erinnerungen-an-terrier-was-die-rote-karte-fuer-bensebaini-bedeutet-1245935/artikel#omrss",
@@ -432,7 +459,20 @@
           "url": "https://www.kicker.de/erinnerungen-an-terrier-was-die-rote-karte-fuer-bensebaini-bedeutet-1245935/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-23T04:12:28+00:00"
+        }
+      }
     },
     {
       "id": "f3c62459edcc",
@@ -755,26 +795,27 @@
       "i18n": {
         "fr": {
           "title": "Promu en Ligue 1, Troyes s'est rassuré pour la suite en accrochant le Paris FC en ouverture de la saison",
-          "summary": "Dans la lignée de sa bonne préparation, le très encourageant match nul obtenu par l'ESTAC, promu en L1, samedi contre le Paris FC (0-0) lui ouvre des perspectives intéressantes dans l'optique de l'âpre lutte pour le maintien.",
-          "needs_translation": false
+          "summary": "Promu en Ligue 1, Troyes a débuté sa saison par un match nul encourageant (0-0) face au Paris FC dans l'optique de la course au maintien.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Promoted to Ligue 1, Troyes reassured himself for the rest by hitting Paris FC at the opening of the season",
-          "summary": "In line with his good preparation, the very encouraging draw obtained by ESTAC, promoted to L1, Saturday against Paris FC (0-0) opens up interesting prospects for him in the perspective of the bitter fight for maintenance.",
+          "title": "Promoted to Ligue 1, Troyes Reassured After Holding Paris FC in Season Opener",
+          "summary": "Newly promoted Troyes opened their Ligue 1 campaign with an encouraging 0-0 draw against Paris FC, securing a positive result in their bid for top-flight survival.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Promovido a la Ligue 1, Troyes se tranquilizó para lo siguiente al enganchar al Paris FC en la apertura de la temporada",
-          "summary": "En la línea de su buena preparación, el muy alentador empate obtenido por el estac, promovido a la Ligue 1, el sábado contra el Paris FC (0-0) le abre perspectivas interesantes desde la perspectiva de la dura lucha por la permanencia.",
+          "title": "Ascendido a la Ligue 1, Troyes gana confianza tras empatar ante Paris FC en el inicio de temporada",
+          "summary": "Troyes, recién ascendido a la Ligue 1, inició su temporada con un alentador empate 0-0 frente a Paris FC en su lucha por la permanencia.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تمت ترقيته إلى الدرجة الأولى، وطمأن تروا نفسه للبقية من خلال ضرب نادي باريس في افتتاح الموسم",
-          "summary": "تماشيا مع استعداده الجيد، فإن التعادل المشجع للغاية الذي حصل عليه ESTAC، الذي تمت ترقيته إلى L1، يوم السبت ضد نادي باريس (0-0) يفتح آفاقًا مثيرة للاهتمام بالنسبة له في منظور المعركة المريرة من أجل الصيانة.",
+          "title": "بعد صعوده إلى الدوري الفرنسي، تروا يطمئن جماهيره بتعادله أمام باريس إف سي في افتتاح الموسم",
+          "summary": "استهل نادي تروا، الصاعد حديثاً إلى الدوري الفرنسي، مشواره في البطولة بتعادل مشجع (0-0) أمام باريس إف سي، محققاً نقطة إيجابية في صراعه من أجل البقاء.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Promu-en-ligue-1-troyes-s-est-rassure-pour-la-suite-en-accrochant-le-paris-fc-en-ouverture-de-la-saison/1712925#at_medium=RSS_feeds",
@@ -796,7 +837,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Promu-en-ligue-1-troyes-s-est-rassure-pour-la-suite-en-accrochant-le-paris-fc-en-ouverture-de-la-saison/1712925#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f2c7ee636f11",
@@ -956,7 +1002,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 2,
+        "quality": 1,
         "source_read": "skipped"
       }
     },
@@ -1298,7 +1344,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -1454,7 +1500,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 0,
         "source_read": "skipped"
       }
     },
