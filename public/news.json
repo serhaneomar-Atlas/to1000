@@ -168,7 +168,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 0,
+        "quality": 1,
         "source_read": "skipped"
       }
     },
@@ -274,7 +274,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 3,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -285,26 +285,27 @@
       "i18n": {
         "es": {
           "title": "El ex canterano del Barça que se llevó la camiseta de Vinicius",
-          "summary": "Vinicius f ue protagonista en el partido que el Real Madrid jugó ante el Espanyol (1-2). Lo fue más por sus líos con los rivales y la grada que por lo que hizo en el terreno de juego.",
-          "needs_translation": false
+          "summary": "Vinicius fue protagonista en el partido entre el Real Madrid y el Espanyol (1-2), marcado más por sus enfrentamientos con los rivales y la grada que por su rendimiento deportivo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The former Barça quarterback who took Vinicius' shirt",
-          "summary": "Vinicius was the protagonist in the game that Real Madrid played against Espanyol (1-2). It was more because of his messes with rivals and the stand than because of what he did on the pitch.",
+          "title": "The former Barça youth player who took Vinicius's shirt",
+          "summary": "Vinicius drew attention during the match between Real Madrid and Espanyol (1-2), largely due to clashes with opponents and the crowd rather than his on-pitch display.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "L'ancien chanteur du Barça qui a pris le maillot de Vinicius",
-          "summary": "Vinicius a été le protagoniste du match que le Real Madrid a joué contre l'Espanyol (1-2). Il l'a été plus pour ses problèmes avec ses rivaux et la tribune que pour ce qu'il a fait sur le terrain.",
+          "title": "L'ancien joueur formé au Barça qui est reparti avec le maillot de Vinicius",
+          "summary": "Vinicius a été au centre de l'attention lors du match opposant le Real Madrid à l'Espanyol (1-2), davantage en raison d'accrochages avec les adversaires et les tribunes que par son jeu.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الظهير الربعي السابق لبرشلونة الذي أخذ قميص فينيسيوس",
-          "summary": "كان فينيسيوس بطل الرواية في المباراة التي لعبها ريال مدريد ضد إسبانيول (1-2). كان ذلك بسبب عبثه مع المنافسين والموقف أكثر مما كان بسبب ما فعله على أرض الملعب.",
+          "title": "خريج أكاديمية برشلونة السابق الذي حصل على قميص فينيسيوس",
+          "summary": "تصدر فينيسيوس المشهد في مباراة ريال مدريد وإسبانيول (1-2)، وذلك بسبب مشاحناته مع لاعبي الخصم والجماهير أكثر من مردوده الكروي داخل الملعب.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218880/ex-canterano-barca-llevo-camiseta-vinicius.html",
@@ -326,7 +327,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218880/ex-canterano-barca-llevo-camiseta-vinicius.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "195edc6b97d1",
@@ -756,7 +762,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -930,7 +936,7 @@
       "source_count": 2,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 0,
         "source_read": "skipped"
       }
     },
@@ -1292,26 +1298,27 @@
       "i18n": {
         "es": {
           "title": "Alerta Boca: la decisión forzosa del Vasco para visitar a Racing",
-          "summary": "El Xeneize enfrenta este domingo a la Academia en Avellaneda.",
-          "needs_translation": false
+          "summary": "Boca se enfrenta este domingo a Racing en Avellaneda, donde el Vasco se ve obligado a realizar ajustes forzosos en el equipo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Boca Alert: Basque's forced decision to visit Racing",
-          "summary": "Xeneize faces the Academy in Avellaneda this Sunday.",
+          "title": "Boca alert: Vasco's forced decision ahead of visit to Racing",
+          "summary": "Boca face Racing this Sunday in Avellaneda, forcing Vasco into an unavoidable selection change.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Alerte bouche : la décision forcée du Vasco de rendre visite au Racing",
-          "summary": "Le Xeneize affronte l'Académie ce dimanche à Avellaneda.",
+          "title": "Alerte Boca : la décision forcée de Vasco avant de se déplacer sur le terrain de Racing",
+          "summary": "Boca affronte Racing ce dimanche à Avellaneda, contraignant Vasco à un choix forcé dans sa composition d'équipe.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تنبيه بوكا: قرار الباسك القسري لزيارة السباق",
-          "summary": "يواجه Xeneize الأكاديمية في Avellaneda هذا الأحد.",
+          "title": "تحذير في بوكا: قرار اضطراري من فاسكو قبل مواجهة راسينغ",
+          "summary": "يواجه بوكا جونيورز نظيره راسينغ هذا الأحد في أفيلانيدا، حيث يضطر المدرب فاسكو لاتخاذ قرار إجباري بشأن التشكيلة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/decision-forzada-lista-convocados-boca-racing-rodolfo-arruabarrena_0_ZpGqCjc5tW.html",
@@ -1333,7 +1340,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/decision-forzada-lista-convocados-boca-racing-rodolfo-arruabarrena_0_ZpGqCjc5tW.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "cad7d97f3667",
@@ -1604,26 +1616,27 @@
       "i18n": {
         "fr": {
           "title": "Ayyoub Bouaddi devrait signer à Manchester City pour 100 millions d’euros",
-          "summary": "Ayyoub Bouaddi est tout proche de devenir un nouveau joueur de Manchester City. Le milieu de terrain marocain de Lille a trouvé un accord avec le club anglais, qui aurait également obtenu le feu vert du LOSC pour finaliser l’opération.",
-          "needs_translation": false
+          "summary": "Le milieu de terrain de Lille Ayyoub Bouaddi est tout proche de s'engager avec Manchester City. Le club anglais a trouvé un accord avec le joueur et le LOSC pour un transfert de 100 millions d'euros.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Ayyoub Bouaddi is expected to sign with Manchester City for €100 million",
-          "summary": "Ayyoub Bouaddi is close to becoming a new Manchester City player. The Moroccan midfielder from Lille has reached an agreement with the English club, which would also have obtained the green light from the LOSC to finalize the operation.",
+          "title": "Ayyoub Bouaddi set to sign for Manchester City for 100 million euros",
+          "summary": "Lille midfielder Ayyoub Bouaddi is close to joining Manchester City. The English club has reached an agreement with the player and LOSC for a 100 million euro transfer.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ayyoub Bouaddi firmará con el Manchester City por 100 millones de euros",
-          "summary": "Ayyoub Bouaddi está a punto de convertirse en un nuevo jugador del Manchester City. El centrocampista marroquí del Lille ha llegado a un acuerdo con el club inglés, que también habría obtenido la luz verde del Lille para finalizar la operación.",
+          "title": "Ayyoub Bouaddi fichará por Manchester City por 100 millones de euros",
+          "summary": "El centrocampista de Lille Ayyoub Bouaddi está muy cerca de fichar por Manchester City. El club inglés ha alcanzado un acuerdo con el jugador y el LOSC por 100 millones de euros.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "من المتوقع أن يوقع أيوب بوعدي مع مانشستر سيتي مقابل 100 مليون يورو",
-          "summary": "أيوب بوعدي على وشك أن يصبح لاعبًا جديدًا في مانشستر سيتي. توصل لاعب الوسط المغربي من ليل إلى اتفاق مع النادي الإنجليزي، والذي كان سيحصل أيضًا على الضوء الأخضر من LOSC لإنهاء العملية.",
+          "title": "أيوب بوعدي يقترب من الانتقال إلى مانشستر سيتي مقابل 100 مليون يورو",
+          "summary": "بات لاعب وسط ليل أيوب بوعدي على وشك الانضمام إلى مانشستر سيتي، بعد توصل النادي الإنجليزي إلى اتفاق مع اللاعب وناديه الفرنسي لإتمام الصفقة مقابل 100 مليون يورو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://fr.hespress.com/485913-ayyoub-bouaddi-devrait-signer-manchester-city-pour-100-millions-deuros.html",
@@ -1645,7 +1658,12 @@
           "url": "https://fr.hespress.com/485913-ayyoub-bouaddi-devrait-signer-manchester-city-pour-100-millions-deuros.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8d725b3f8f55",
@@ -1853,7 +1871,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 0,
+        "quality": 1,
         "source_read": "skipped"
       }
     },
