@@ -17,26 +17,27 @@
       "i18n": {
         "en": {
           "title": "Watch Match of the Day",
-          "summary": "Highlights of the day's three matches in the Premier League.",
-          "needs_translation": false
+          "summary": "Highlights of the day's three matches in the Premier League are now available.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Regarder le match du jour",
-          "summary": "Faits saillants des trois matches de la journée en Premier League.",
+          "title": "Regarder Match of the Day",
+          "summary": "Retrouvez le résumé des trois matchs du jour disputés en Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ver partido del día",
-          "summary": "Lo más destacado de los tres partidos del día en la Premier League.",
+          "title": "Ver Match of the Day",
+          "summary": "Resumen de las mejores jugadas de los tres partidos del día en la Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مشاهدة مباراة اليوم",
-          "summary": "أبرز مباريات اليوم الثلاث في الدوري الممتاز.",
+          "title": "مشاهدة برنامج ماتش أوف ذا داي",
+          "summary": "ملخصات المباريات الثلاث التي أقيمت اليوم ضمن منافسات الدوري الإنجليزي الممتاز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/iplayer/live/bbcone?at_medium=RSS&at_campaign=rss",
@@ -58,7 +59,12 @@
           "url": "https://www.bbc.co.uk/iplayer/live/bbcone?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "be15e29917d7",
@@ -67,26 +73,27 @@
       "i18n": {
         "fr": {
           "title": "PSG : Ferran Torres suit les traces de Patrick Mboma",
-          "summary": "En s'offrant un doublé mémorable lors de son tout premier match officiel avec le Paris Saint-Germain contre Rennes, Ferran Torres vient de s'installer à une table prestigieuse. The post PSG : Ferran Torres suit les traces de Patrick Mboma appeared first on Africa Top Sports .",
-          "needs_translation": false
+          "summary": "Ferran Torres a inscrit un doublé lors de son tout premier match officiel avec le Paris Saint-Germain contre Rennes, rééditant une performance réalisée par Patrick Mboma.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "PSG: Ferran Torres follows in the footsteps of Patrick Mboma",
-          "summary": "By giving himself a memorable double in his very first official match with Paris Saint-Germain against Rennes, Ferran Torres has just settled at a prestigious table. The post PSG: Ferran Torres follows in the footsteps of Patrick Mboma appeared first on Africa Top Sports .",
+          "summary": "Ferran Torres scored a brace on his official debut for Paris Saint-Germain against Rennes, matching a feat achieved by Patrick Mboma.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
           "title": "PSG: Ferran Torres sigue los pasos de Patrick Mboma",
-          "summary": "Con un doblete memorable en su primer partido oficial con el Paris Saint-Germain contra el Rennes, Ferran Torres acaba de instalarse en una prestigiosa mesa. The post PSG: Ferran Torres sigue los pasos de Patrick Mboma appeared first on Africa Top Sports .",
+          "summary": "Ferran Torres marcó un doblete en su debut oficial con el Paris Saint-Germain ante Rennes, emulando la marca lograda por Patrick Mboma.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "سان جيرمان: يسير فيران توريس على خطى باتريك مبوما",
-          "summary": "من خلال منح نفسه ثنائية لا تنسى في أول مباراة رسمية له مع باريس سان جيرمان ضد رين، استقر فيران توريس للتو على طاولة مرموقة. ظهر المنشور PSG: Ferran Torres على خطى Patrick Mboma لأول مرة في Africa Top Sports .",
+          "title": "باريس سان جيرمان: فيران توريس يسير على خطى باتريك مبوما",
+          "summary": "سجل فيران توريس ثنائية في أول مباراة رسمية له مع باريس سان جيرمان ضد رين، مكرراً إنجازاً حققه باتريك مبوما سابقاً.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football/psg-ferran-torres-suit-les-traces-de-patrick-mboma/",
@@ -108,7 +115,12 @@
           "url": "https://africatopsports.com/football/psg-ferran-torres-suit-les-traces-de-patrick-mboma/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0d9e5f7caa62",
@@ -116,27 +128,28 @@
       "summary": "El Vasco Arruabarrena definió un equipo inédito para visitar a Racing.",
       "i18n": {
         "es": {
-          "title": "El 11 confirmado de Boca con dos cambios y una sorpresa inesperada",
-          "summary": "El Vasco Arruabarrena definió un equipo inédito para visitar a Racing.",
-          "needs_translation": false
+          "title": "El once confirmado de Boca con dos cambios y una sorpresa inesperada",
+          "summary": "El entrenador Vasco Arruabarrena definió la alineación titular de Boca para visitar a Racing, introduciendo dos modificaciones y una sorpresa en un equipo inédito.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The 11th confirmed Boca with two changes and an unexpected surprise",
-          "summary": "Vasco Arruabarrena defined an unprecedented team to visit Racing.",
+          "title": "Boca's confirmed starting XI with two changes and an unexpected surprise",
+          "summary": "Manager Vasco Arruabarrena has selected an unprecedented Boca lineup to visit Racing, introducing two changes and an unexpected surprise.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le 11 confirmé de Boca avec deux changements et une surprise inattendue",
-          "summary": "Le Vasco Arruabarrena a défini une équipe inédite pour visiter Racing.",
+          "title": "Le onze confirmé de Boca avec deux changements et une surprise inattendue",
+          "summary": "L'entraîneur Vasco Arruabarrena a fixé une équipe inédite pour le déplacement de Boca sur le terrain de Racing, comprenant deux changements et une surprise.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أكد الحادي عشر بوكا بتغييرين ومفاجأة غير متوقعة",
-          "summary": "حدد فاسكو أروبارينا فريقًا غير مسبوق لزيارة السباق.",
+          "title": "تشكيلة بوكا المؤكدة تشهد تغييرين ومفاجأة غير متوقعة",
+          "summary": "استقر المدرب فاسكو أروبارينا على تشكيلة غير مسبوقة لنادي بوكا لمواجهة راسينغ خارج ملعبه، متضمنةً تغييرين ومفاجأة في التشكيل الأساسي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/boca-equipo-racing-novedad-camilo-rey_0_YgIIIeBzk6.html",
@@ -158,7 +171,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/boca-equipo-racing-novedad-camilo-rey_0_YgIIIeBzk6.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a627cbb62b04",
@@ -166,27 +184,28 @@
       "summary": "Luis Enrique, l'entraîneur du PSG, s'est félicité de ses recrues, au premier rang desquels Ferran Torres, double buteur lors du match nul (2-2) à Rennes, dimanche.",
       "i18n": {
         "fr": {
-          "title": "PSG : «Il faut améliorer toute l’équipe», pest Luis Enrique après le match nul à Rennes",
-          "summary": "Luis Enrique, l'entraîneur du PSG, s'est félicité de ses recrues, au premier rang desquels Ferran Torres, double buteur lors du match nul (2-2) à Rennes, dimanche.",
-          "needs_translation": false
+          "title": "PSG : « Il faut améliorer toute l'équipe », peste Luis Enrique après le match nul à Rennes",
+          "summary": "Après le match nul (2-2) du PSG à Rennes dimanche, l'entraîneur Luis Enrique a salué ses recrues, notamment Ferran Torres, auteur d'un doublé, tout en appelant à des améliorations collectives.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "PSG: \"We have to improve the whole team\", pest Luis Enrique after the draw in Rennes",
-          "summary": "Luis Enrique, PSG's coach, welcomed his recruits, first among them Ferran Torres, double goalscorer in the draw (2-2) in Rennes on Sunday.",
+          "title": "PSG: 'We need to improve the whole team', laments Luis Enrique after draw at Rennes",
+          "summary": "Following PSG's 2-2 draw at Rennes on Sunday, manager Luis Enrique praised his new signings, particularly Ferran Torres after his brace, while stressing the need for overall team improvement.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "PSG: \"Hay que mejorar a todo el equipo\", dice Luis Enrique tras el empate en Rennes",
-          "summary": "Luis Enrique, el entrenador del PSG, dio la bienvenida a sus reclutas, en primer lugar Ferran Torres, doble goleador en el empate (2-2) en Rennes el domingo.",
+          "title": "PSG: «Hay que mejorar a todo el equipo», lamenta Luis Enrique tras el empate en Rennes",
+          "summary": "Tras el empate 2-2 de PSG en Rennes este domingo, el entrenador Luis Enrique elogió a sus fichajes, en especial a Ferran Torres por su doblete, señalando la necesidad de mejorar en conjunto.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "سان جيرمان: \"علينا تحسين الفريق بأكمله\"، آفة لويس إنريكي بعد القرعة في رين",
-          "summary": "استقبل لويس إنريكي، مدرب باريس سان جيرمان، مجنديه، أولهم فيران توريس، الهداف المزدوج في التعادل (2-2) في رين يوم الأحد.",
+          "title": "باريس سان جيرمان: «يجب تحسين الفريق بأكمله»، لويس إنريكي يعلق بعد التعادل مع رين",
+          "summary": "أشاد لويس إنريكي مدرب باريس سان جيرمان بالصفقات الجديدة، لا سيما فيران توريس صاحب الثنائية، عقب التعادل 2-2 أمام رين يوم الأحد، مع التأكيد على ضرورة تحسين أداء المجموعة ككل.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/-on-a-fait-un-tres-bon-mercato-estime-luis-enrique-l-entraineur-du-psg-apres-le-match-a-rennes/1713150#at_medium=RSS_feeds",
@@ -214,7 +233,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-1/psg-il-faut-ameliorer-toute-l-equipe-pest-luis-enrique-apres-le-match-nul-a-rennes-20260824"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c0127788d068",
@@ -222,33 +246,34 @@
       "summary": "Der FC Barcelona gewinnt seinen Saisonauftakt in La Liga deutlich mit 5:0 beim FC Elche. Neuzugang Karim Adeyemi traf direkt bei seinem Debüt.",
       "i18n": {
         "de": {
-          "title": "Adeyemi eiskalt beim Debüt: Barca-Kantersieg zum Auftakt",
-          "summary": "Der FC Barcelona gewinnt seinen Saisonauftakt in La Liga deutlich mit 5:0 beim FC Elche. Neuzugang Karim Adeyemi traf direkt bei seinem Debüt.",
-          "needs_translation": false
+          "title": "Adeyemi trifft beim Debüt: Barcelona feiert Kantersieg zum Auftakt",
+          "summary": "Der FC Barcelona hat den Saisonauftakt in La Liga mit 5:0 beim FC Elche gewonnen. Neuzugang Karim Adeyemi erzielte bei seinem Debüt direkt ein Tor.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Adeyemi ice-cold on debut: Barca canyon victory at the start",
-          "summary": "FC Barcelona wins their season opener in La Liga clearly with 5:0 at FC Elche. Newcomer Karim Adeyemi met right on his debut.",
+          "title": "Adeyemi scores on debut as FC Barcelona cruise to opening win",
+          "summary": "FC Barcelona started their La Liga campaign with a comprehensive 5-0 away victory over FC Elche. New signing Karim Adeyemi scored on his debut.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Adeyemi glacée à ses débuts : victoire du canoë du Barça en ouverture",
-          "summary": "Le FC Barcelone remporte clairement son début de saison en Liga avec un score de 5:0 au FC Elche. Le nouvel arrivant Karim Adeyemi a rencontré directement lors de ses débuts.",
+          "title": "Adeyemi buteur pour ses débuts : large victoire du FC Barcelona en ouverture",
+          "summary": "Le FC Barcelona a remporté son premier match de La Liga en s'imposant 5-0 sur le terrain du FC Elche. La recrue Karim Adeyemi a marqué dès ses débuts.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Adeyemi helada en el debut: la victoria del Barça al comienzo",
-          "summary": "El FC Barcelona gana claramente su primera temporada en La Liga por 5-0 ante el FC Elche. El nuevo fichaje Karim Adeyemi marcó directamente en su debut.",
+          "title": "Adeyemi marca en su debut: goleada del FC Barcelona en el inicio liguero",
+          "summary": "El FC Barcelona goleó 5-0 al FC Elche a domicilio en su estreno en La Liga. El nuevo fichaje Karim Adeyemi anotó en su primer partido oficial.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Adeyemi ice - cold on debut: Barca canyon victory at the start",
-          "summary": "نادي برشلونة يفوز بافتتاحية الموسم في الدوري الإسباني بشكل واضح مع 5:0 في نادي إلتشي. التقى الوافد الجديد كريم أدييمي مباشرة في أول ظهور له.",
+          "title": "أديمي يسجل في ظهوره الأول وبرشلونة يكتسح في افتتاح الدوري",
+          "summary": "استهل نادي برشلونة مشواره في الدوري الإسباني بالفوز خارج أرضه على إلتشي بنتيجة 5-0. وسجل الوافد الجديد كريم أديمي هدفاً في أول مباراة له.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/adeyemi-eiskalt-beim-debuet-barca-kantersieg-zum-auftakt-1246246/video#omrss",
@@ -270,7 +295,12 @@
           "url": "https://www.kicker.de/adeyemi-eiskalt-beim-debuet-barca-kantersieg-zum-auftakt-1246246/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "cc31eaf054e3",
@@ -753,26 +783,27 @@
       "i18n": {
         "es": {
           "title": "Julián Álvarez y el juego en el que todos pierden",
-          "summary": "Se va a necesitar grandeza e inteligencia para cortar este macabro juego en Madrid en el se tiran tiros en los pies todos: Atlético Madrid, Simeone, el jugador, el plantel y los hinchas.",
-          "needs_translation": false
+          "summary": "La compleja situación de Julián Álvarez en el Atlético Madrid perjudica a todas las partes: al club, a Simeone, a la plantilla y a los aficionados.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Julián Álvarez and the game in which everyone loses",
-          "summary": "It is going to take greatness and intelligence to cut this macabre game in Madrid in which shots are shot in the feet all: Atlético Madrid, Simeone, the player, the squad and the fans.",
+          "title": "Julián Álvarez and the game where everyone loses",
+          "summary": "The complicated situation surrounding Julián Álvarez at Atlético Madrid is negatively impacting everyone involved, including Simeone, the squad, and the fans.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Julián Álvarez et le jeu où tout le monde perd",
-          "summary": "Il faudra de la grandeur et de l'intelligence pour couper ce jeu macabre à Madrid dans lequel tout le monde se tire une balle dans le pied : l'Atlético Madrid, Simeone, le joueur, l'équipe et les fans.",
+          "title": "Julián Álvarez et le jeu où tout le monde est perdant",
+          "summary": "La situation délicate de Julián Álvarez à l'Atlético Madrid nuit à l'ensemble du club, touchant aussi bien Simeone et le vestiaire que les supporters.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
           "title": "جوليان ألفاريز واللعبة التي يخسر فيها الجميع",
-          "summary": "سيتطلب الأمر عظمة وذكاء لقطع هذه اللعبة المروعة في مدريد التي يتم فيها إطلاق النار في القدمين: أتلتيكو مدريد وسيميوني واللاعب والفريق والمشجعين.",
+          "summary": "تؤثر الوضعية المعقدة للأرجنتيني جوليان ألفاريز في أتلتيكو مدريد سلبًا على جميع الأطراف، بما في ذلك المدرب سيميوني وتشكيلة الفريق والجماهير.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/opinion/atleticomadrid-julian-alvarez-simeone-silbidos_0_7qiYvDLFii.html",
@@ -794,7 +825,12 @@
           "url": "https://www.ole.com.ar/opinion/atleticomadrid-julian-alvarez-simeone-silbidos_0_7qiYvDLFii.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0e0d8bd6c022",
@@ -909,26 +945,27 @@
       "i18n": {
         "es": {
           "title": "Así queda la clasificación de LaLiga tras el primer triunfo del campeón Barça",
-          "summary": "Como ya hizo en sus dos primeras temporadas al frente del Barça , Hansi Flick celebró el inicio liguero con una victoria.",
-          "needs_translation": false
+          "summary": "El Barça de Hansi Flick inició la temporada de LaLiga con una victoria, sumando sus primeros puntos en la tabla de clasificación.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "This is how the LaLiga classification looks like after the first triumph of the Barça champion",
-          "summary": "As he did in his first two seasons at Barça , Hansi Flick celebrated the league start with a victory.",
+          "title": "LaLiga standings after champion Barça's first victory",
+          "summary": "Hansi Flick's Barça kicked off their LaLiga campaign with an opening win to claim their first points in the standings.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Voici le classement de LaLiga après la première victoire du champion du Barça",
-          "summary": "Comme il l'a déjà fait lors de ses deux premières saisons à la tête du Barça , Hansi Flick a célébré le début de la Liga avec une victoire.",
+          "title": "Le classement de LaLiga après la première victoire du Barça",
+          "summary": "Le Barça entraîné par Hansi Flick a entamé sa saison de LaLiga par une victoire pour s'adjuger ses premiers points au classement.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هكذا يبدو تصنيف لاليغا بعد الانتصار الأول لبطل برشلونة",
-          "summary": "كما فعل في أول موسمين له في برشلونة ، احتفل هانسي فليك بالدوري بداية بفوزه.",
+          "title": "ترتيب الدوري الإسباني بعد أول فوز لبرشلونة",
+          "summary": "استهل برشلونة بقيادة المدرب هانزي فليك مشواره في الدوري الإسباني بتحقيق الفوز وحصد أول ثلاث نقاط في جدول الترتيب.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004219011/asi-queda-clasificacion-laliga-primer-triunfo-campeon-barca.html",
@@ -950,7 +987,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004219011/asi-queda-clasificacion-laliga-primer-triunfo-campeon-barca.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d497653a6d51",
@@ -1009,32 +1051,33 @@
       "i18n": {
         "de": {
           "title": "Unglaubliches Tor reicht Turin nicht: Milan-Sieg zum Auftakt",
-          "summary": "Hier gibt's die Highlights der Partie FC Turin - Milan im Video.",
-          "needs_translation": false
+          "summary": "Der AC Milan hat das Auftaktspiel gegen den FC Turin trotz eines Traumtors der Hausherren gewonnen. Die Video-Highlights der Partie stehen bereit.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Unbelievable goal not enough for Turin: Milan victory at the start",
-          "summary": "Here are the highlights of the game FC Turin - Milan in the video.",
+          "title": "Incredible goal not enough for Turin: Milan win season opener",
+          "summary": "AC Milan secured a victory against FC Turin in their opening match despite a spectacular goal from the hosts. Video highlights are available.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Un but incroyable ne suffit pas à Turin : victoire à Milan en ouverture",
-          "summary": "Voici les temps forts du match FC Turin - Milan en vidéo.",
+          "title": "Un but incroyable ne suffit pas à Turin : victoire de Milan pour commencer",
+          "summary": "L'AC Milan s'est imposé face au FC Turin lors de la journée inaugurale, malgré un but spectaculaire des Turinois. Le résumé vidéo est disponible.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Un gol increíble no es suficiente para Turín: la victoria del Milan en el primer partido",
-          "summary": "Aquí están los aspectos más destacados del partido FC Turín - Milán en vídeo.",
+          "title": "Un gol increíble no le basta al Turin: victoria de Milan en el estreno",
+          "summary": "El AC Milan se impuso al FC Turin en la primera jornada a pesar de un gol espectacular del cuadro turinés. El vídeo resumen está disponible.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هدف لا يصدق لا يكفي لتورينو: فوز ميلان في البداية",
-          "summary": "فيما يلي النقاط الرئيسية للعبة FC Turin - Milan في الفيديو.",
+          "title": "هدف لا يصدق لا يكفي تورينو: فوز ميلان في الجولة الافتتاحية",
+          "summary": "فاز إي سي ميلان على تورينو في الجولة الافتتاحية، على الرغم من هدف مذهل أحرزه الفريق المضيف. ملخص المباراة متاح بالفيديو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/unglaubliches-tor-reicht-turin-nicht-milan-sieg-zum-auftakt-1246234/video#omrss",
@@ -1056,7 +1099,12 @@
           "url": "https://www.kicker.de/unglaubliches-tor-reicht-turin-nicht-milan-sieg-zum-auftakt-1246234/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a52375ca8a56",
@@ -1064,25 +1112,28 @@
       "summary": "El extremo de PSV sería el refuerzo de ataque Leer",
       "i18n": {
         "es": {
-          "title": "Après les Rangers, Couhaib Driouech se rapproche du Celta Vigo",
-          "summary": "El extremo de PSV sería el refuerzo de ataque Leer",
-          "needs_translation": false
+          "title": "Tras los Rangers, Couhaib Driouech se acerca al Celta Vigo",
+          "summary": "El extremo del PSV Couhaib Driouech está cerca de incorporarse al Celta Vigo como refuerzo ofensivo tras el interés de los Rangers.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Après les Rangers, Couhaib Driouech se rapproche du Celta Vigo",
-          "summary": "El extremo de PSV sería el refuerzo de ataque Leer",
-          "needs_translation": true
+          "title": "After Rangers, Couhaib Driouech closes in on Celta Vigo",
+          "summary": "PSV winger Couhaib Driouech is nearing a move to Celta Vigo as an attacking reinforcement following interest from Rangers.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Après les Rangers, Couhaib Driouech se rapproche du Celta Vigo",
-          "summary": "El extremo de PSV sería el refuerzo de ataque Leer",
-          "needs_translation": true
+          "summary": "L'ailier du PSV, Couhaib Driouech, se rapproche du Celta Vigo pour renforcer son attaque, après avoir suscité l'intérêt des Rangers.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أبريس لي رينجرز، كوهيب دريوتش سي رابروش دو سيلتا فيغو",
-          "summary": "ستكون نقطة نهاية صمام أمان الضغط هي تعزيز الهجوم قراءة",
+          "title": "بعد رينجرز، صهيب دريوش يقترب من سيلتا فيغو",
+          "summary": "يقترب جناح آيندهوفن صهيب دريوش من الانضمام إلى سيلتا فيغو لتدعيم خط الهجوم، وذلك بعد اهتمام سابق من نادي رينجرز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.marca.com/futbol/celta/2026/08/23/celta-cerca-cerrar-fichaje-couhaib-driouech.html",
@@ -1116,7 +1167,12 @@
           "url": "https://africatopsports.com/football-europe/apres-les-rangers-couhaib-driouech-se-rapproche-du-celta-vigo/"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d8361ed2fcfe",
@@ -1125,26 +1181,27 @@
       "i18n": {
         "fr": {
           "title": "Porté par un Rabiot doublement décisif, l'AC Milan réussit ses débuts sous Amorim",
-          "summary": "La formation de l'entraîneur portugais a réalisé une jolie prestation sur le terrain du Torino (2-1). Adrien Rabiot a été doublement décisif, avec un but et une passe décisive en dix minutes.",
-          "needs_translation": false
+          "summary": "L'AC Milan s'est imposé 2-1 sur le terrain du Torino pour les débuts de son entraîneur. Adrien Rabiot a été décisif avec un but et une passe décisive en dix minutes.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Carried by a doubly decisive Rabiot, AC Milan made its debut under Amorim",
-          "summary": "The training of the Portuguese coach made a nice performance on the field of Torino (2-1). Adrien Rabiot was doubly decisive, with a goal and a decisive pass in ten minutes.",
+          "title": "Led by a decisive Rabiot, AC Milan make a successful start under Amorim",
+          "summary": "AC Milan claimed a 2-1 victory away at Torino in their manager's debut. Adrien Rabiot played a decisive role, recording a goal and an assist in ten minutes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Liderado por un Rabiot doblemente decisivo, el AC Milan hace su debut con Amorim",
-          "summary": "La formación del entrenador portugués ha realizado una buena actuación en el campo del Torino (2-1). Adrien Rabiot fue doblemente decisivo, con un gol y una asistencia en diez minutos.",
+          "title": "Liderado por un Rabiot decisivo, el AC Milan debuta con victoria con Amorim",
+          "summary": "El AC Milan se impuso 2-1 en el campo del Torino en el estreno de su técnico. Adrien Rabiot fue determinante con un gol y una asistencia en diez minutos.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ظهر إيه سي ميلان لأول مرة تحت قيادة أموريم، وكان يحمله رابيو حاسمًا بشكل مضاعف",
-          "summary": "قدم تدريب المدرب البرتغالي أداءً لطيفاً في ملعب تورينو (2-1). كان أدريان رابيو حاسما بشكل مضاعف، مع هدف وتمريرة حاسمة في عشر دقائق.",
+          "title": "بقيادة رابيو المتألق، إيه سي ميلان يستهل مشواره بنجاح مع أموريم",
+          "summary": "فاز إيه سي ميلان على مضيفه تورينو بنتيجة 2-1 في أول ظهور لمدربه البرتغالي، حيث تألق أدريان رابيو بتسجيل هدف وصناعة آخر في غضون عشر دقائق.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Porte-par-un-rabiot-doublement-decisif-l-ac-milan-reussit-ses-debuts-sous-amorim/1713137#at_medium=RSS_feeds",
@@ -1166,7 +1223,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Porte-par-un-rabiot-doublement-decisif-l-ac-milan-reussit-ses-debuts-sous-amorim/1713137#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "788b60649749",
@@ -1399,7 +1461,20 @@
           "url": "https://www.lefigaro.fr/sports/football/live/ligue-1/2026/2640565/rennes-paris-sg"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-23T22:35:12+00:00"
+        }
+      }
     },
     {
       "id": "3c0a83ad44af",
@@ -1407,27 +1482,28 @@
       "summary": "Ferran Torres ya es clave para el Paris Saint-Germain . El flamante fichaje español ya despierta pasiones entre el campeón de la Champions League después de tener un debut soñado pese a no lograr la victoria.",
       "i18n": {
         "es": {
-          "title": "2-2: Ferran Torres resucita al PSG frente al Rennes",
-          "summary": "Ferran Torres ya es clave para el Paris Saint-Germain . El flamante fichaje español ya despierta pasiones entre el campeón de la Champions League después de tener un debut soñado pese a no lograr la victoria.",
-          "needs_translation": false
+          "title": "2-2: Ferran Torres resucita al Paris Saint-Germain frente al Rennes",
+          "summary": "Ferran Torres firmó un debut destacado con el Paris Saint-Germain al rescatar un empate 2-2 frente al Rennes.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "2-2: Ferran Torres resurrects PSG against Rennes",
-          "summary": "Ferran Torres is already key to Paris Saint-Germain . The brand new Spanish signing already arouses passions among the Champions League champion after having a dream debut despite not achieving victory.",
+          "title": "2-2: Ferran Torres rescues Paris Saint-Germain against Rennes",
+          "summary": "Ferran Torres made an impactful debut for Paris Saint-Germain, helping the team secure a 2-2 draw against Rennes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "2-2 : Ferran Torres ressuscite le PSG face à Rennes",
-          "summary": "Ferran Torres est déjà la clé du Paris Saint-Germain . La nouvelle signature espagnole suscite déjà des passions chez le champion de la Ligue des champions après avoir fait ses débuts de rêve malgré le fait qu'il n'ait pas remporté la victoire.",
+          "title": "2-2 : Ferran Torres relance le Paris Saint-Germain face à Rennes",
+          "summary": "Pour ses débuts avec le Paris Saint-Germain, Ferran Torres a permis aux siens d'arracher un match nul 2-2 contre Rennes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "2-2: فيران توريس يحيي باريس سان جيرمان ضد رين",
-          "summary": "فيران توريس هو بالفعل مفتاح باريس سان جيرمان . التوقيع الإسباني الجديد يثير بالفعل المشاعر بين بطل دوري أبطال أوروبا بعد ظهوره لأول مرة في الحلم على الرغم من عدم تحقيق النصر.",
+          "title": "2-2: فيران توريس ينقذ باريس سان جيرمان أمام رين",
+          "summary": "بصم فيران توريس على بداية مميزة مع باريس سان جيرمان بعدما قاد فريقه لاقتناص تعادل بنتيجة 2-2 أمام رين.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/ligue-1/20260823/1004219010/ferran-torres-resucita-psg-frente-rennes.html",
@@ -1449,7 +1525,12 @@
           "url": "https://www.mundodeportivo.com/futbol/ligue-1/20260823/1004219010/ferran-torres-resucita-psg-frente-rennes.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3300b9cc1ecc",
@@ -1458,26 +1539,27 @@
       "i18n": {
         "es": {
           "title": "Adeyemi le devuelve la confianza a Flick con su primer gol oficial con el Barça",
-          "summary": "Karim Adeyemi recordará para siempre su primer partido oficial con el FC Barcelona . Y no solo por su debut.",
-          "needs_translation": false
+          "summary": "Karim Adeyemi marcó su primer gol oficial con el FC Barcelona durante su debut bajo la dirección de Flick.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Adeyemi returns Flick's confidence with his first official goal for Barça",
-          "summary": "Karim Adeyemi will forever remember his first official match with FC Barcelona . And not just for her debut.",
+          "title": "Adeyemi repays Flick's trust with his first official goal for Barça",
+          "summary": "Karim Adeyemi scored his first official goal for FC Barcelona on his debut under manager Flick.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Adeyemi redonne confiance à Flick avec son premier but officiel avec le Barça",
-          "summary": "Karim Adeyemi se souviendra pour toujours de son premier match officiel avec le FC Barcelone . Et pas seulement pour ses débuts.",
+          "title": "Adeyemi rend la confiance à Flick avec son premier but officiel avec le Barça",
+          "summary": "Karim Adeyemi a inscrit son premier but officiel avec le FC Barcelona à l'occasion de ses débuts sous les ordres de Flick.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أدييمي يعيد ثقة فليك بهدفه الرسمي الأول لبرشلونة",
-          "summary": "سيتذكر كريم أدييمي إلى الأبد أول مباراة رسمية له مع برشلونة . وليس فقط لأول ظهور لها.",
+          "title": "أديمي يرد ثقة فليك بتسجيل هدفه الرسمي الأول مع برشلونة",
+          "summary": "سجل كريم أديمي هدفه الرسمي الأول مع نادي برشلونة خلال مباراته الرسمية الأولى تحت قيادة المدرب فليك.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004219008/adeyemi-le-devuelve-confianza-flick-primer-gol-oficial-barca.html",
@@ -1499,7 +1581,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004219008/adeyemi-le-devuelve-confianza-flick-primer-gol-oficial-barca.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9bec8f4ee0fa",
@@ -1558,26 +1645,27 @@
       "i18n": {
         "es": {
           "title": "José Alberto, muy claro sobre Sergio Martínez y el interés del Madrid",
-          "summary": "José Alberto López, entrenador del Racing, aseguró este domingo que ve a su jugador Sergio Martínez “muy centrado” y con ganas de acumlar partidos en el conjunto cántabro, pese al posible interés de equipos como el Real Madrid por el joven futbolista de 19 años.",
-          "needs_translation": false
+          "summary": "José Alberto López, entrenador del Racing, afirmó que ve a Sergio Martínez, de 19 años, totalmente centrado en el equipo cántabro pese al interés de clubes como el Real Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "José Alberto, very clear about Sergio Martínez and the interest of Madrid",
-          "summary": "José Alberto López, Racing coach, said on Sunday that he sees his player Sergio Martínez \"very focused\" and eager to accumulate matches in the Cantabrian team, despite the possible interest of teams such as Real Madrid for the young 19-year-old footballer.",
+          "title": "José Alberto clear on Sergio Martínez and Real Madrid interest",
+          "summary": "Racing manager José Alberto López stated that 19-year-old Sergio Martínez remains fully focused on the team, despite reported transfer interest from clubs like Real Madrid.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "José Alberto, très clair sur Sergio Martínez et l'intérêt de Madrid",
-          "summary": "José Alberto López, entraîneur du Racing, a déclaré dimanche qu'il voyait son joueur Sergio Martínez « très concentré » et désireux d'accumuler des matchs dans l'équipe cantabrique, malgré l'intérêt possible d'équipes comme le Real Madrid pour le jeune footballeur de 19 ans.",
+          "title": "José Alberto très clair sur Sergio Martínez et l'intérêt du Real Madrid",
+          "summary": "L'entraîneur du Racing, José Alberto López, a affirmé que Sergio Martínez (19 ans) restait pleinement concentré sur son équipe, malgré l'intérêt de clubs comme le Real Madrid.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "خوسيه ألبرتو، واضح جدًا بشأن سيرجيو مارتينيز ومصلحة مدريد",
-          "summary": "قال خوسيه ألبرتو لوبيز، مدرب السباقات، يوم الأحد إنه يرى لاعبه سيرجيو مارتينيز \"مركزًا للغاية\" وحريصًا على تجميع المباريات في فريق كانتابريا، على الرغم من الاهتمام المحتمل لفرق مثل ريال مدريد للاعب كرة القدم الشاب البالغ من العمر 19 عامًا.",
+          "title": "خوسيه ألبيرتو يتحدث بوضوح عن سيرخيو مارتينيز واهتمام ريال مدريد",
+          "summary": "أكد خوسيه ألبيرتو لوبيز، مدرب راسينغ، أن لاعبه سيرخيو مارتينيز (19 عاماً) يركز تماماً مع الفريق، رغم اهتمام أندية مثل ريال مدريد بضمه.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/20260823/1004219005/jose-alberto-claro-sobre-sergio-martinez-interes-madrid.html",
@@ -1599,7 +1687,12 @@
           "url": "https://www.mundodeportivo.com/futbol/20260823/1004219005/jose-alberto-claro-sobre-sergio-martinez-interes-madrid.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "de56bdc26e6a",
@@ -1657,27 +1750,28 @@
       "summary": "Llegar y besar el santo. Ferran Torres disputó sus primeros minutos como jugador del Paris Saint-Germain y demostró porque el club se ha gastado 50 millones de euros en él al anotar a los pocos minutos frente al Rennes .",
       "i18n": {
         "es": {
-          "title": "¡Oh Ferran! Doblete en su debut con el Paris Saint-Germain",
-          "summary": "Llegar y besar el santo. Ferran Torres disputó sus primeros minutos como jugador del Paris Saint-Germain y demostró porque el club se ha gastado 50 millones de euros en él al anotar a los pocos minutos frente al Rennes .",
-          "needs_translation": false
+          "title": "Doblete de Ferran Torres en su debut con el Paris Saint-Germain",
+          "summary": "Ferran Torres debutó con el Paris Saint-Germain marcando un doblete frente al Rennes tras su fichaje por 50 millones de euros.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Oh Ferran! Double on his debut with Paris Saint-Germain",
-          "summary": "Arriving and kissing the saint. Ferran Torres played his first minutes as a Paris Saint-Germain player and showed why the club has spent 50 million euros on him by scoring a few minutes against Rennes .",
+          "title": "Ferran Torres scores brace on Paris Saint-Germain debut",
+          "summary": "Ferran Torres scored a brace against Rennes in his debut match for Paris Saint-Germain following his 50 million Euro transfer.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Oh Ferran ! Doublé à ses débuts avec le Paris Saint-Germain",
-          "summary": "Arriver et embrasser le saint. Ferran Torres a disputé ses premières minutes en tant que joueur du Paris Saint-Germain et a démontré pourquoi le club a dépensé 50 millions d'euros pour lui en marquant en quelques minutes face à Rennes .",
+          "title": "Doublé de Ferran Torres pour ses débuts avec le Paris Saint-Germain",
+          "summary": "Recruté pour 50 millions d'euros, Ferran Torres a inscrit un doublé face à Rennes lors de ses premières minutes avec le Paris Saint-Germain.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أوه فيران! ضاعف ظهوره لأول مرة مع باريس سان جيرمان",
-          "summary": "وصول وتقبيل القديس. لعب فيران توريس دقائقه الأولى كلاعب في باريس سان جيرمان وأظهر لماذا أنفق النادي 50 مليون يورو عليه من خلال تسجيله بضع دقائق ضد رين .",
+          "title": "ثنائية لفيران توريس في ظهوره الأول مع باريس سان جيرمان",
+          "summary": "سجل فيران توريس ثنائية في مباراته الأولى مع باريس سان جيرمان أمام رين، عقب انتقاله إلى النادي الباريسي في صفقة بلغت 50 مليون يورو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/ligue-1/20260823/1004219000/oh-ferran-estrena-goleador-debut-paris-saint-germain.html",
@@ -1699,7 +1793,12 @@
           "url": "https://www.mundodeportivo.com/futbol/ligue-1/20260823/1004219000/oh-ferran-estrena-goleador-debut-paris-saint-germain.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0590399bc1fe",
@@ -1757,23 +1856,27 @@
       "i18n": {
         "es": {
           "title": "Ovación a los campeones del mundo del Barça en Elche",
-          "summary": "El Martínez Valero quiso poner en valor el éxito de la selección española en el último Mundial y brindó un homenaje a los jugadores del Barça que se proclamaron campeones del mundo este verano en Nueva York tras derrotar en la gran final a la selección de Argentina.",
-          "needs_translation": false
+          "summary": "El estadio Martínez Valero rindió homenaje a los futbolistas del Barça campeones del Mundial con la selección española, tras imponerse a Argentina en la final de Nueva York.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Ovación a los campeones del mundo del Barça en Elche",
-          "summary": "El Martínez Valero quiso poner en valor el éxito de la selección española en el último Mundial y brindó un homenaje a los jugadores del Barça que se proclamaron campeones del mundo este verano en Nueva York tras derrotar en la gran final a la selección de Argentina.",
-          "needs_translation": true
+          "title": "Ovation for Barça's world champions in Elche",
+          "summary": "The Martínez Valero stadium paid tribute to the Barça players who won the Mundial with the Spanish national team after defeating Argentina in the final in Nueva York.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Ovación a los campeones del mundo del Barça en Elche",
-          "summary": "El Martínez Valero quiso poner en valor el éxito de la selección española en el último Mundial y brindó un homenaje a los jugadores del Barça que se proclamaron campeones del mundo este verano en Nueva York tras derrotar en la gran final a la selección de Argentina.",
-          "needs_translation": true
+          "title": "Ovation pour les champions du monde du Barça à Elche",
+          "summary": "Le stade Martínez Valero a rendu hommage aux joueurs du Barça sacrés vainqueurs du Mundial avec l'Espagne, après leur victoire contre l'Argentina en finale à Nueva York.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Ovación a los campeones del mundo del Barça en Elche",
-          "summary": "El Martínez Valero quiso poner en valor el éxito de la selección española en el último Mundial y brindó un homenaje a los jugadores del Barça que se proclamaron campeones del mundo este verano en Nueva York tras derrotar en la gran final a la selección de Argentina.",
-          "needs_translation": true
+          "title": "تحية لأبطال العالم من لاعبي برشلونة في إلتشي",
+          "summary": "كرّم ملعب مارتينيز فاليرو لاعبي برشلونة المتوجين بكأس العالم مع منتخب إسبانيا، عقب فوزهم على الأرجنتين في المباراة النهائية بنيويورك.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218994/ovacion-campeones-mundo-barca-elche.html",
@@ -1795,7 +1898,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218994/ovacion-campeones-mundo-barca-elche.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "77d436507506",
@@ -1842,7 +1950,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218998/barca-atletic-gol-derrotado-penaltis-vilanova-i-geltru.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b0b71689c3ac",
@@ -2053,26 +2166,27 @@
       "i18n": {
         "es": {
           "title": "El Castellón habló con la Liga sobre la posibilidad de aplazar el partido contra el Sabadell por el mal estado del césped: \"Estaba injugable\"",
-          "summary": "El empate con el CE Sabadell dejó al CD Castellón con una preocupación que trasciende al resultado: el mal estado del césped del SkyFi Castalia.",
-          "needs_translation": false
+          "summary": "Tras empatar contra el Sabadell, el CD Castellón consultó a la Liga la opción de aplazar el encuentro debido al mal estado del césped en SkyFi Castalia.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Castellón spoke to La Liga about the possibility of postponing the match against Sabadell due to the poor condition of the grass: \"It was unplayable\"",
-          "summary": "The tie with CE Sabadell left CD Castellón with a concern that transcends the result: the poor condition of SkyFi Castalia's turf.",
+          "title": "Castellón spoke with La Liga about potentially postponing the match against Sabadell due to poor pitch conditions: \"It was unplayable\"",
+          "summary": "Following a draw against Sabadell, CD Castellón consulted La Liga regarding a potential postponement due to the poor pitch conditions at SkyFi Castalia.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Castellón a discuté avec la Liga de la possibilité de reporter le match contre Sabadell en raison du mauvais état de la pelouse : « C'était injouable »",
-          "summary": "Le match nul avec le CE Sabadell a laissé le CD Castellón avec une préoccupation qui transcende le résultat : le mauvais état de la pelouse du SkyFi Castalia.",
+          "title": "Castellón a discuté avec la Liga d'un possible report du match contre Sabadell en raison de l'état de la pelouse : « C'était injouable »",
+          "summary": "Après son match nul face à Sabadell, le CD Castellón a consulté la Liga pour envisager un report en raison du mauvais état de la pelouse du SkyFi Castalia.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تحدث كاستيلون إلى الدوري الإسباني حول إمكانية تأجيل المباراة ضد ساباديل بسبب سوء حالة العشب: \"كان غير قابل للعب\"",
-          "summary": "غادر التعادل مع CE Sabadell CD Castellón بقلق يتجاوز النتيجة: الحالة السيئة لعشب SkyFi Castalia.",
+          "title": "كاستيون ناقش مع رابطة الدوري إمكانية تأجيل مباراته ضد ساباديل لسوء حالة العشب: «اللعب كان مستحيلاً»",
+          "summary": "عقب تعادله مع ساباديل، تواصل نادي كاستيون مع رابطة الدوري الإسباني لبحث تأجيل اللقاء بسبب سوء أرضية ملعب سكاي فاي كاستاليا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/castellon-hablo-liga-posibilidad-aplazar-133596448?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -2094,7 +2208,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/castellon-hablo-liga-posibilidad-aplazar-133596448?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "72c76f54186c",
@@ -2103,32 +2222,33 @@
       "i18n": {
         "de": {
           "title": "Kompanys Trick mit Brown war gut vorbereitet",
-          "summary": "Nathaniel Brown sollte beim FC Bayern eigentlich die linke Seite verstärken. Gegen Borussia Dortmund rückte er überraschend auf die Zehn und traf bei seinem Pflichtspieldebüt direkt zum Supercup-Sieg.",
-          "needs_translation": false
+          "summary": "Nathaniel Brown rückte für den FC Bayern gegen Borussia Dortmund überraschend auf die Zehn vor und erzielte bei seinem Pflichtspieldebüt direkt das Siegtor im Supercup.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Company's trick with Brown was well prepared",
-          "summary": "Nathaniel Brown was supposed to strengthen the left side of FC Bayern. Against Borussia Dortmund, he surprisingly moved up to ten and scored directly to win the Supercup on his competitive debut.",
+          "title": "Kompany's trick with Brown was well prepared",
+          "summary": "Deployed unexpectedly as a number ten for FC Bayern against Borussia Dortmund, Nathaniel Brown scored on his competitive debut to secure the Supercup victory.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "L'astuce de Kompany avec Brown était bien préparée",
-          "summary": "Nathaniel Brown était censé renforcer le côté gauche du Bayern. Contre le Borussia Dortmund, il a pris par surprise la dixième place et a marqué directement pour la victoire en Supercoupe lors de ses débuts en match officiel.",
+          "summary": "Surprenant numéro dix du FC Bayern face au Borussia Dortmund, Nathaniel Brown a marqué lors de son premier match officiel pour sceller la victoire en Supercup.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El truco de la compañía con Brown estaba bien preparado",
-          "summary": "Nathaniel Brown debería reforzar el lado izquierdo en el FC Bayern. Contra el Borussia Dortmund llegó sorprendentemente a los diez y anotó en su debut en el partido oficial directamente a la victoria en la Supercopa.",
+          "title": "El truco de Kompany con Brown estaba bien preparado",
+          "summary": "Alineado por sorpresa como número diez con el FC Bayern ante el Borussia Dortmund, Nathaniel Brown marcó en su debut oficial para dar el triunfo en la Supercup.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تم إعداد خدعة الشركة مع براون بشكل جيد",
-          "summary": "كان من المفترض أن يقوي ناثانيل براون الجانب الأيسر من بايرن. ضد بوروسيا دورتموند، انتقل بشكل مفاجئ إلى عشرة وسجل مباشرة للفوز بكأس السوبر في أول مباراة تنافسية له.",
+          "title": "خطة كومباني مع براون كانت مدروسة بعناية",
+          "summary": "شارك ناثانيال براون بشكل مفاجئ في مركز صانع الألعاب مع بايرن ميونخ ضد بوروسيا دورتموند، وسجل في أول ظهور رسمي له ليقود فريقه للتتويج بكأس السوبر.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/regional/br/br-von-links-auf-die-zehn-warum-kompany-auf-brown-setzt-102.html",
@@ -2150,7 +2270,12 @@
           "url": "https://www.sportschau.de/regional/br/br-von-links-auf-die-zehn-warum-kompany-auf-brown-setzt-102.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     }
   ]
 }
