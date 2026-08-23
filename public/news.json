@@ -174,7 +174,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 0,
+        "quality": 1,
         "source_read": "skipped"
       }
     },
@@ -185,32 +185,33 @@
       "i18n": {
         "de": {
           "title": "Harry Kane: Traumtore, Grätschen und eine ganz besondere Kabinen-Rede",
-          "summary": "Harry Kane ist der Fußballer des Jahres 2026. Die Argumente sind unschlagbar: 73 Tore für Klub und Land.",
-          "needs_translation": false
+          "summary": "Harry Kane wurde zum Fußballer des Jahres 2026 gewählt. Ausschlaggebend waren unter anderem seine 73 Tore für Klub und Nationalmannschaft.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Harry Kane: dream goals, darts and a very special cabin speech",
-          "summary": "Harry Kane is the footballer of the year 2026. The arguments are unbeatable: 73 goals for club and country.",
+          "title": "Harry Kane: Dream goals, tackles and a very special dressing room speech",
+          "summary": "Harry Kane has been named Footballer of the Year for 2026 after scoring 73 goals for club and country.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Harry Kane : des portes de rêve, des grincements et un discours de cabine très spécial",
-          "summary": "Harry Kane est le footballeur de l'année 2026. Les arguments sont imbattables : 73 buts pour le club et le pays.",
+          "title": "Harry Kane : buts de rêve, tacles et un discours très spécial dans le vestiaire",
+          "summary": "Harry Kane a été élu joueur de l'année 2026 après avoir totalisé 73 buts inscrits en club et en sélection.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Harry Kane: puertas de ensueño, muletas y un discurso muy especial en la cabina",
-          "summary": "Harry Kane es el futbolista del año 2026. Los argumentos son inmejorables: 73 goles para el club y el país.",
+          "title": "Harry Kane: golazos, entradas y una charla muy especial en el vestuario",
+          "summary": "Harry Kane ha sido elegido futbolista del año 2026 tras registrar 73 goles entre su club y su selección.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هاري كين: أهداف الأحلام والسهام وخطاب المقصورة المميز للغاية",
-          "summary": "هاري كين هو لاعب كرة القدم لعام 2026. الحجج لا تقبل المنافسة: 73 هدفًا للنادي والبلد.",
+          "title": "هاري كين: أهداف رائعة وتدخلات قوية وخطاب مميز في غرفة الملابس",
+          "summary": "توج هاري كين بجائزة أفضل لاعب لعام 2026 بعد تسجيله 73 هدفاً مع ناديه ومنتخب بلاده.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/harry-kane-traumtore-graetschen-und-eine-ganz-besondere-kabinen-rede-1245541/video#omrss",
@@ -232,7 +233,12 @@
           "url": "https://www.kicker.de/harry-kane-traumtore-graetschen-und-eine-ganz-besondere-kabinen-rede-1245541/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "81963c37d28f",
@@ -409,26 +415,27 @@
       "i18n": {
         "es": {
           "title": "Momento Ferran Torres",
-          "summary": "Ferran Torres (26 años) podría dar este domingo sus primeros pasos como jugador del PSG .",
-          "needs_translation": false
+          "summary": "Ferran Torres (26 años) podría disputar este domingo sus primeros minutos como futbolista del PSG.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Ferran Torres Moment",
-          "summary": "Ferran Torres (26) could take his first steps as a PSG player this Sunday.",
+          "title": "Ferran Torres' moment",
+          "summary": "Ferran Torres (26) could make his first appearance as a PSG player this Sunday.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Moment Ferran Torres",
-          "summary": "Ferran Torres (26 ans) pourrait faire ses premiers pas en tant que joueur du PSG ce dimanche.",
+          "title": "Le moment Ferran Torres",
+          "summary": "Ferran Torres (26 ans) pourrait faire ses débuts sous le maillot du PSG ce dimanche.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "فيران توريس مومنت",
-          "summary": "يمكن لفيران توريس (26 عاما) أن يخطو خطواته الأولى كلاعب في باريس سان جيرمان يوم الأحد.",
+          "title": "لحظة فيران توريس",
+          "summary": "قد يخوض فيران توريس (26 عاماً) أولى مبارياته بقميص باريس سان جيرمان هذا الأحد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/internacional/20260823/1004218812/momento-ferran-torres.html",
@@ -450,7 +457,12 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20260823/1004218812/momento-ferran-torres.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "59d7f026bd11",
@@ -1294,7 +1306,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -1367,26 +1379,27 @@
       "i18n": {
         "es": {
           "title": "Almada quiere a Deossa en el América",
-          "summary": "El Club América de México se ha dirigido al Real Betis para interesarse por las condiciones del fichaje de Nelson Deossa, por el que el club verdiblanco pide 15 millones de dólares (12,85M€), según informa Fox Sports y replican diversos medios mexicanos .",
-          "needs_translation": false
+          "summary": "El Club América de México ha consultado al Real Betis sobre el fichaje de Nelson Deossa. El conjunto verdiblanco solicita 15 millones de dólares por su traspaso.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Almada wants Deossa in the Americas",
-          "summary": "Club América de México has approached Real Betis to inquire about the conditions of the signing of Nelson Deossa, for which the Verdiblanco club is asking 15 million dollars (€12.85M), according to Fox Sports and various Mexican media.",
+          "title": "Almada wants Deossa at Club América",
+          "summary": "Club América de México have approached Real Betis regarding the transfer of Nelson Deossa. The Spanish side are demanding $15 million (€12.85m) to let him go.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Almada veut Deossa en Amérique",
-          "summary": "Le Club América de México s'est adressé au Real Betis pour s'intéresser aux conditions du transfert de Nelson Deossa, pour lequel le club verdiblanco demande 15 millions de dollars (12,85 millions d' € ), selon Fox Sports et plusieurs médias mexicains .",
+          "title": "Almada veut Deossa au Club América",
+          "summary": "Le Club América de México s'est renseigné auprès du Real Betis pour le transfert de Nelson Deossa. Le club espagnol réclame 15 millions de dollars pour le libérer.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ألمادا تريد ديوسا في الأمريكتين",
-          "summary": "اتصل نادي أمريكا دي مكسيكو بريال بيتيس ليسأل عن شروط توقيع نيلسون ديوسا، والتي يطلب نادي فيرديبلانكو منها 15 مليون دولار (12.85 مليون يورو)، كما ذكرت فوكس سبورتس وكررتها وسائل الإعلام المكسيكية المختلفة.",
+          "title": "ألمادا يريد ديوسا في كلوب أمريكا",
+          "summary": "استفسر نادي كلوب أمريكا المكسيكي من ريال بيتيس عن شروط ضم نيلسون ديوسا، حيث يطلب النادي الإسباني 15 مليون دولار للتخلي عن خدماته.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/betis/20260823/1004218796/almada-quiere-deossa-america.html",
@@ -1408,7 +1421,12 @@
           "url": "https://www.mundodeportivo.com/futbol/betis/20260823/1004218796/almada-quiere-deossa-america.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "74d2862e5c1d",
@@ -1473,26 +1491,27 @@
       "i18n": {
         "en": {
           "title": "What does Savinho's £75m move reveal about Man City's multi-club model?",
-          "summary": "Does Savinho's £75m move from Manchester City to Tottenham represent a sporting success for the Abu Dhabi-owned club?",
-          "needs_translation": false
+          "summary": "Savinho has moved from Manchester City to Tottenham for £75m, putting the sporting and financial strategy of the Abu Dhabi-owned multi-club system in focus.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Que révèle le déménagement de 75 millions de £ de Savinho sur le modèle multi-clubs de Man City ?",
-          "summary": "Le déménagement de 75 millions de £ de Savinho de Manchester City à Tottenham représente-t-il un succès sportif pour le club appartenant à Abu Dhabi ?",
+          "title": "Que révèle le transfert de Savinho à 75 M£ sur le modèle multi-clubs de Man City ?",
+          "summary": "Le transfert de Savinho de Manchester City vers Tottenham pour 75 millions de livres met en lumière la réussite sportive et le modèle multi-clubs du club détenu par Abu Dhabi.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "¿Qué revela el movimiento de £ 75 millones de Savinho sobre el modelo de clubes múltiples de Man City?",
-          "summary": "¿El traslado de £ 75 millones de Savinho del Manchester City al Tottenham representa un éxito deportivo para el club de Abu Dhabi?",
+          "title": "¿Qué revela el traspaso de Savinho por 75 millones de libras sobre el modelo multiclub de Man City?",
+          "summary": "El traspaso de Savinho de Manchester City a Tottenham por 75 millones de libras pone a examen el éxito deportivo de la estructura multiclub del equipo propiedad de Abu Dhabi.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ما الذي تكشفه خطوة Savinho التي تبلغ تكلفتها 75 مليون £ عن مانشستر سيتي متعدد النوادي ؟",
-          "summary": "هل يمثل انتقال بقيمة 75 مليون £ من سيتي إلى نجاحًا رياضيًا للنادي المملوك لأبو ظبي ؟",
+          "title": "ماذا تكشف صفقة انتقال سافينيو مقابل 75 مليون استرليني عن نموذج تعدد الأندية في مانشستر سيتي؟",
+          "summary": "انتقل سافينيو من مانشستر سيتي إلى توتنهام في صفقة بلغت 75 مليون جنيه إسترليني، ما يسلّط الضوء على النجاح الرياضي لنموذج تعدد الأندية المملوك لأبوظبي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/c3w0wpy86z7o?at_medium=RSS&at_campaign=rss",
@@ -1514,7 +1533,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/c3w0wpy86z7o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b383e0486c74",
@@ -1568,7 +1592,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 2,
+        "quality": 1,
         "source_read": "skipped"
       }
     },
