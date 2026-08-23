@@ -16,27 +16,48 @@
       "summary": "Manchester City have agreed a deal in principle with Lille to sign midfielder Ayyoub Bouaddi - what makes him such a highly rated talent?",
       "i18n": {
         "en": {
-          "title": "The maths whizz turned £86m teenage star heading to Man City",
-          "summary": "Manchester City have agreed a deal in principle with Lille to sign midfielder Ayyoub Bouaddi - what makes him such a highly rated talent?",
-          "needs_translation": false
+          "title": "Manchester City agree £86m deal for Lille prodigy Ayyoub Bouaddi",
+          "summary": "Manchester City have agreed a €100m (£86m) deal in principle to sign 18-year-old midfielder Ayyoub Bouaddi from Lille.",
+          "body": [
+            "The Moroccan international became Lille's youngest debutant at 16 before breaking Eden Hazard's record by reaching 50 Ligue 1 appearances at 18. He also starred at the World Cup, helping Morocco reach consecutive quarter-finals.",
+            "Born in northern France, Bouaddi represented French youth teams before declaring for Morocco. Alongside his football career, the teenager studies for a mathematics degree and previously won a public speaking contest at the Élysée Palace."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Le génie des maths a transformé une star adolescente de 86 millions de £ en direction de Man City",
-          "summary": "Manchester City a conclu un accord de principe avec Lille pour signer le milieu de terrain Ayyoub Bouaddi - qu'est-ce qui fait de lui un talent si bien coté ?",
+          "title": "Manchester City boucle un accord de 100 M€ pour le Lillois Ayyoub Bouaddi",
+          "summary": "Manchester City a trouvé un accord de principe de 100 millions d'euros pour s'offrir le milieu de terrain de 18 ans de Lille, Ayyoub Bouaddi.",
+          "body": [
+            "L'international marocain a battu des records de précocité dans le Nord, devenant le plus jeune joueur de l'histoire du LOSC à 16 ans avant d'effacer la marque d'Eden Hazard avec 50 matches de Ligue 1 à 18 ans. Il s'est aussi illustré lors de la Coupe du monde en hissant le Maroc en quarts de finale.",
+            "Né dans l'Oise, le joueur formé chez les Bleus en jeunes a finalement choisi les Lions de l'Atlas. En parallèle du football, ce perfectionniste prépare une licence de mathématiques et a remporté un concours d'éloquence au palais de l'Élysée."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "El genio de las matemáticas convirtió a £ 86 millones en una estrella adolescente que se dirigía a Man City",
-          "summary": "El Manchester City ha llegado a un acuerdo en principio con el Lille para fichar al mediocampista Ayyoub Bouaddi, ¿qué lo convierte en un talento tan valorado?",
+          "title": "El Manchester City acuerda el fichaje de Ayyoub Bouaddi por 100 millones",
+          "summary": "El Manchester City ha alcanzado un principio de acuerdo de 100 millones de euros para fichar al centrocampista de 18 años del Lille, Ayyoub Bouaddi.",
+          "body": [
+            "El internacional marroquí debutó con el Lille con apenas 16 años y batió el récord de precocidad de Eden Hazard al sumar 50 partidos en la Ligue 1 con 18. Su jerarquía brilló en el Mundial, donde lideró a Marruecos hasta los cuartos de final.",
+            "Nacido en el norte de Francia, Bouaddi pasó por las categorías inferiores de la selección gala antes de elegir a Marruecos. Fuera del campo, estudia la carrera de Matemáticas y ganó un certamen de oratoria en el Palacio del Elíseo."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "تحولت الرياضيات إلى نجمة مراهقة بقيمة 86 مليون £ متجهة إلى مانشستر سيتي",
-          "summary": "وافق مانشستر سيتي على صفقة من حيث المبدأ مع ليل للتعاقد مع لاعب الوسط أيوب بوادي - ما الذي يجعله موهبة عالية التصنيف ؟",
+          "title": "مانشستر سيتي يتفق على ضم موهبة ليل أيوب بوعدي مقابل 100 مليون يورو",
+          "summary": "توصل مانشستر سيتي إلى اتفاق مبدئي لضم لاعب وسط ليل الفرنسي، أيوب بوعدي، البالغ 18 عاماً، في صفقة تناهز قيمتها 100 مليون يورو.",
+          "body": [
+            "وحقق الدولي المغربي أرقاماً قياسية مبكرة، إذ بات أصغر لاعب في تاريخ ليل بسن 16 عاماً، وتجاوز رقم إيدين هازارد بخوض 50 مباراة في الدوري الفرنسي بعمر 18 عاماً، وتألق مع منتخب المغرب في بلوغ ربع نهائي كأس العالم.",
+            "ولد بوعدي في شمال فرنسا ومثل منتخباتها للفئات السنية قبل اختيار المغرب، ويجمع بين مسيرته الكروية ودراسة الرياضيات جامعياً، ونال سابقاً جائزة في الخطابة داخل قصر الإليزيه."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cwylg0kp5lwo?at_medium=RSS&at_campaign=rss",
@@ -58,7 +79,20 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cwylg0kp5lwo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 8,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-23T12:55:38+00:00"
+        }
+      }
     },
     {
       "id": "02b3dafa986c",
@@ -117,26 +151,27 @@
       "i18n": {
         "fr": {
           "title": "Man City : Ayyoub Bouaddi débarque, officialisation imminente",
-          "summary": "Manchester City finalise un transfert record et débourse 100 millions d'euros pour le successeur de Rodri. The post Man City : Ayyoub Bouaddi débarque, officialisation imminente appeared first on Africa Top Sports .",
-          "needs_translation": false
+          "summary": "Manchester City est sur le point d'officialiser l'arrivée d'Ayyoub Bouaddi pour un montant record de 100 millions d'euros afin de succéder à Rodri.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Man City: Ayyoub Bouaddi arrives, officialization imminent",
-          "summary": "Manchester City finalizes a record transfer and pays 100 million euros for Rodri's successor. The post Man City: Ayyoub Bouaddi arrives, officialization imminent appeared first on Africa Top Sports .",
+          "title": "Man City: Ayyoub Bouaddi arrives, official announcement imminent",
+          "summary": "Manchester City is finalizing the signing of Ayyoub Bouaddi for a record €100 million fee to succeed Rodri, with an official announcement expected soon.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Man City: desembarca Ayyoub Bouaddi, inminente formalización",
-          "summary": "El Manchester City cierra un traspaso récord y paga 100 millones de euros por el sucesor de Rodri. The post Man City: Ayyoub Bouaddi aterriza, formalización inminente appeared first on Africa Top Sports .",
+          "title": "Man City: Ayyoub Bouaddi llega, oficialización inminente",
+          "summary": "Manchester City está a punto de hacer oficial el fichaje de Ayyoub Bouaddi por 100 millones de euros para suceder a Rodri.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مانشستر سيتي: وصول أيوب بوعدي، وإضفاء الطابع الرسمي وشيك",
-          "summary": "مانشستر سيتي ينهي صفقة انتقال قياسية ويدفع 100 مليون يورو لخلف رودري. بعد مانشستر سيتي: وصول أيوب بوعدي، ظهرت الصفة الرسمية الوشيكة لأول مرة على موقع Africa Top Sports .",
+          "title": "مانشستر سيتي: وصول أيوب بوعدي والإعلان الرسمي وشيك",
+          "summary": "يقترب مانشستر سيتي من حسم صفقة قياسية بالتعاقد مع أيوب بوعدي مقابل 100 مليون يورو ليكون خليفة رودري، وسط ترقب للإعلان الرسمي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/maghreb/man-city-ayyoub-bouaddi-debarque-officialisation-imminente/",
@@ -158,7 +193,12 @@
           "url": "https://africatopsports.com/maghreb/man-city-ayyoub-bouaddi-debarque-officialisation-imminente/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f21ba7960328",
@@ -167,26 +207,27 @@
       "i18n": {
         "en": {
           "title": "'New season, new trim' - Haaland reveals buzzcut",
-          "summary": "Manchester City striker Erling Haaland reveals his new buzz cut on social media.",
-          "needs_translation": false
+          "summary": "Manchester City striker Erling Haaland has unveiled a new buzzcut hairstyle on social media ahead of the upcoming season.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "« Nouvelle saison, nouvelle coupe » - Haaland révèle le buzzcut",
-          "summary": "L'attaquant de Manchester City Erling Haaland révèle son nouveau buzz cut sur les réseaux sociaux.",
+          "title": "« Nouvelle saison, nouvelle coupe » : Haaland dévoile sa coupe rasée",
+          "summary": "L'attaquant de Manchester City Erling Haaland a dévoilé sa nouvelle coupe de cheveux rasée sur les réseaux sociaux.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "'Nueva temporada, nuevo corte' - Haaland revela buzzcut",
-          "summary": "El delantero del Manchester City, Erling Haaland, revela su nuevo corte de rumores en las redes sociales.",
+          "title": "'Nueva temporada, nuevo corte': Haaland estrena rapado",
+          "summary": "El delantero de Manchester City Erling Haaland ha mostrado su nuevo corte de pelo rapado a través de las redes sociales.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"موسم جديد، تقليم جديد\" - هالاند تكشف عن قصة رائعة",
-          "summary": "يكشف مهاجم مانشستر سيتي إيرلينغ هالاند عن قصته الجديدة على وسائل التواصل الاجتماعي.",
+          "title": "«موسم جديد، قَصّة جديدة» - هالاند يكشف عن قصة شعر قصيرة",
+          "summary": "كشف مهاجم مانشستر سيتي إرلينغ هالاند عن قَصّة شعر جديدة حليقة الرأس عبر حساباته على وسائل التواصل الاجتماعي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cr4941zkgevo?at_medium=RSS&at_campaign=rss",
@@ -208,7 +249,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cr4941zkgevo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "69a01db8184a",
@@ -258,7 +304,12 @@
           "url": "https://www.lefigaro.fr/sports/autres-sports/bravo-a-nos-deux-champions-emmanuel-macron-felicite-delphine-delrue-et-thom-gicquel-apres-leur-sacre-mondial-20260823"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "bbd6042a16e1",
@@ -267,26 +318,27 @@
       "i18n": {
         "es": {
           "title": "El Madrid recibirá a la Real tras una victoria agónica gracias a uno de sus fichajes",
-          "summary": "La Real Sociedad tendrá un reto importante en el segundo partido de Liga, correspondiente a la primera jornada aplazada, contra el Real Madrid.",
-          "needs_translation": false
+          "summary": "El Real Madrid se enfrentará a la Real Sociedad en el partido aplazado de la primera jornada de Liga, tras haber logrado un triunfo ajustado gracias a una de sus nuevas incorporaciones.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Madrid will receive Real after an agonizing victory thanks to one of their signings",
-          "summary": "Real Sociedad will have an important challenge in the second league match, corresponding to the first postponed matchday, against Real Madrid.",
+          "title": "Real Madrid to host Real Sociedad following a hard-fought win sealed by a new signing",
+          "summary": "Real Madrid will host Real Sociedad in their postponed match from the opening round of Liga, coming off a narrow victory secured by a new signing.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Madrid recevra le Real après une victoire agonisante grâce à l'un de ses transferts",
-          "summary": "La Real Sociedad aura un défi important dans le deuxième match de Liga, correspondant à la première journée reportée, contre le Real Madrid.",
+          "title": "Le Real Madrid recevra la Real Sociedad après une victoire arrachée grâce à l'une de ses recrues",
+          "summary": "Le Real Madrid affrontera la Real Sociedad lors du match en retard de la première journée de Liga, après s'être imposé sur le fil grâce à l'une de ses nouvelles recrues.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "سيحصل ريال مدريد على ريال مدريد بعد فوز مؤلم بفضل أحد تعاقداته",
-          "summary": "سيواجه ريال سوسيداد تحديًا مهمًا في مباراة الدوري الثانية، المقابلة ليوم المباراة الأولى المؤجلة، ضد ريال مدريد.",
+          "title": "ريال مدريد يستضيف ريال سوسيداد بعد فوز صعب بفضل إحدى صفقاته الجديدة",
+          "summary": "يواجه ريال مدريد نظيره ريال سوسيداد في المباراة المؤجلة من الجولة الأولى للدوري الإسباني، بعد تحقيقه فوزاً شاقاً في مباراته السابقة بفضل إحدى صفقاته الجديدة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260823/1004218859/madrid-recibira-real-victoria-agonica-gracias-fichajes.html",
@@ -308,7 +360,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260823/1004218859/madrid-recibira-real-victoria-agonica-gracias-fichajes.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7362def45f13",
@@ -317,26 +374,27 @@
       "i18n": {
         "fr": {
           "title": "Joao Pedro prolonge avec Chelsea jusqu'en 2034",
-          "summary": "L'attaquant brésilien de Chelsea Joao Pedro s'est engagé sur le très long terme avec le club londonien puisque son contrat court désormais sur les huit saisons à venir.",
-          "needs_translation": false
+          "summary": "L'attaquant brésilien Joao Pedro a prolongé son contrat avec Chelsea. Il est désormais lié au club londonien pour les huit prochaines saisons, jusqu'en 2034.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "Joao Pedro extends with Chelsea until 2034",
-          "summary": "Chelsea Brazilian striker Joao Pedro has made a very long term commitment to the London club as his contract now runs for the next eight seasons.",
+          "summary": "Brazilian forward Joao Pedro has signed a contract extension with Chelsea, committing to the London club for the next eight seasons until 2034.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Joao Pedro renueva con el Chelsea hasta 2034",
-          "summary": "El delantero brasileño del Chelsea Joao Pedro se ha comprometido a largo plazo con el club londinense ya que su contrato ahora se extiende por las próximas ocho temporadas.",
+          "title": "Joao Pedro renueva con Chelsea hasta 2034",
+          "summary": "El delantero brasileño Joao Pedro ha renovado su contrato con Chelsea. El jugador queda vinculado al club londinense para las próximas ocho temporadas, hasta 2034.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "جواو بيدرو يمتد مع تشيلسي حتى عام 2034",
-          "summary": "قدم مهاجم تشيلسي البرازيلي جواو بيدرو التزامًا طويل الأمد للنادي اللندني حيث يستمر عقده الآن للمواسم الثمانية المقبلة.",
+          "title": "جواو بيدرو يمدد عقده مع تشيلسي حتى عام 2034",
+          "summary": "مدد المهاجم البرازيلي جواو بيدرو عقده مع نادي تشيلسي، ليبقى في صفوف الفريق اللندني للمواسم الثمانية المقبلة حتى عام 2034.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Joao-pedro-prolonge-avec-chelsea-jusqu-en-2034/1712983#at_medium=RSS_feeds",
@@ -358,7 +416,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Joao-pedro-prolonge-avec-chelsea-jusqu-en-2034/1712983#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "13bdfd377500",
@@ -529,26 +592,27 @@
       "i18n": {
         "es": {
           "title": "Vinícius, día uno en el foco",
-          "summary": "Vinícius Junior volvió a ser protagonista sobre un terreno de juego, no por marcar ni asistir. En el minuto tres del partido contra el Espanyol, ya se vio envuelto en la polémica.",
-          "needs_translation": false
+          "summary": "Vinícius Junior volvió a situarse en el centro de la atención durante el partido frente al Espanyol al verse envuelto en una polémica en el minuto tres.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Vinícius, day one in the spotlight",
-          "summary": "Vinícius Junior was once again the protagonist on a pitch, not for scoring or attending. In minute three of the game against Espanyol, he was already involved in the controversy.",
+          "title": "Vinícius, Day One in the Spotlight",
+          "summary": "Vinícius Junior returned to the spotlight during the match against Espanyol after being involved in controversy just three minutes into the game.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Vinícius, un jour au centre",
-          "summary": "Vinícius Junior est redevenu protagoniste sur un terrain de jeu, non pas pour marquer ou assister. À la troisième minute du match contre l'Espanyol, il a déjà été impliqué dans la polémique.",
+          "title": "Vinícius, premier jour sous les projecteurs",
+          "summary": "Vinícius Junior a de nouveau été au cœur de l'attention lors du match contre Espanyol, se retrouvant impliqué dans une polémique dès la troisième minute.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "فينيسيوس، اليوم الأول في دائرة الضوء",
-          "summary": "كان فينيسيوس جونيور مرة أخرى بطل الرواية في الملعب، وليس للتسجيل أو الحضور. في الدقيقة الثالثة من المباراة ضد إسبانيول، شارك بالفعل في الجدل.",
+          "title": "فينيسيوس تحت الأضواء مجدداً",
+          "summary": "عاد فينيسيوس جونيور ليكون محط الاهتمام في مواجهة إسبانيول بعدما دخل في لقطة جدلية عند الدقيقة الثالثة من انطلاق المباراة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218841/vinicius-dia-foco.html",
@@ -570,7 +634,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218841/vinicius-dia-foco.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "42cd57b818a3",
@@ -635,26 +704,27 @@
       "i18n": {
         "es": {
           "title": "Angers - Lille, en directo | Ligue 1",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Ligue 1 que enfrenta al Angers contra el Lille correspondiente a Jornada 1.",
-          "needs_translation": false
+          "summary": "Siga la narración en directo del partido entre Angers y Lille, correspondiente a la jornada 1 de la Ligue 1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Angers - Lille, live | Ligue 1",
-          "summary": "Good afternoon and welcome to the live narration of the Ligue 1 football match between Angers and Lille for Matchday 1.",
+          "title": "Angers vs Lille live | Ligue 1",
+          "summary": "Live coverage of the Ligue 1 matchday 1 clash between Angers and Lille.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Angers - Lille, en direct | Ligue 1",
-          "summary": "Bonsoir et bienvenue au récit, en direct, du match de football de Ligue 1 opposant Angers à Lille correspondant à la Journée 1.",
+          "title": "Angers - Lille en direct | Ligue 1",
+          "summary": "Suivez en direct la rencontre opposant Angers à Lille dans le cadre de la 1ère journée de Ligue 1.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أنجيه - ليل، مباشر | دوري الدرجة الأولى",
-          "summary": "مساء الخير ومرحبا بكم في السرد المباشر لمباراة دوري الدرجة الأولى لكرة القدم بين أنجيه وليل ليوم المباراة 1.",
+          "title": "أنجيه ضد ليل، البث المباشر | الدوري الفرنسي",
+          "summary": "تغطية حية ومباشرة للمباراة التي تجمع بين أنجيه وليل ضمن منافسات الجولة الأولى من الدوري الفرنسي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/ligue-1/20260823/1004217270/angers-lille-directo-ligue-1.html",
@@ -676,7 +746,12 @@
           "url": "https://www.mundodeportivo.com/futbol/ligue-1/20260823/1004217270/angers-lille-directo-ligue-1.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "bf94d30c1ceb",
@@ -685,26 +760,27 @@
       "i18n": {
         "es": {
           "title": "A qué hora juega River vs. Vélez y cómo ver hoy EN VIVO el Torneo Clausura",
-          "summary": "El Millonario de Coudet recibe al Fortín de Guillermo, único invicto del campeonato, en un duelo interzonal por la sexta fecha del campeonato. Seguilo en Olé.",
-          "needs_translation": false
+          "summary": "River recibe a Vélez, único equipo invicto del certamen, en un cruce interzonal correspondiente a la sexta fecha del Torneo Clausura.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "What time does River vs. Vélez and how TO watch the Clausura tournament LIVE TODAY",
-          "summary": "Coudet's Millionaire receives Fortín de Guillermo, the only undefeated player in the championship, in an interzonal duel for the sixth round of the championship. Follow him in Olé.",
+          "title": "River vs. Vélez: Kick-off time and how to watch EN VIVO in the Torneo Clausura",
+          "summary": "River host Vélez, the league's only unbeaten side, in an interzonal match for the sixth round of the Torneo Clausura.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "À quelle heure joue River vs. Velez et comment regarder EN DIRECT LE tournoi DE clôture aujourd'hui",
-          "summary": "Le Millionnaire de Coudet reçoit le Fort de Guillaume, seul invaincu du championnat, dans un duel interzonal pour la sixième journée du championnat. Suivez-le sur Olé.",
+          "title": "À quelle heure et sur quelle chaîne voir River - Vélez EN VIVO lors du Torneo Clausura",
+          "summary": "River accueille Vélez, seule équipe encore invaincue de la compétition, lors d'un duel interzonal comptant pour la 6e journée du Torneo Clausura.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ما الوقت الذي يقضيه ريفر ضد Vélez وكيفية مشاهدة بطولة Clausura مباشرة اليوم",
-          "summary": "المليونير كوديه يستقبل فورتين دي غييرمو، اللاعب الوحيد الذي لم يهزم في البطولة، في مبارزة بين المناطق للجولة السادسة من البطولة. اتبعه في أولي.",
+          "title": "موعد مباراة ريفر بليت وفيليز سارسفيلد والقنوات الناقلة في الدوري الأرجنتيني",
+          "summary": "يستضيف ريفر بليت نظيره فيليز سارسفيلد، الفريق الوحيد الذي لم يتلقَ أي هزيمة في المسابقة، ضمن منافسات الجولة السادسة من البطولة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-primera/river-vs-velez-vivo-hora-juegan-ver-torneo-clausura-tv-online-formaciones_0_hpktYeEeAD.html",
@@ -726,7 +802,12 @@
           "url": "https://www.ole.com.ar/futbol-primera/river-vs-velez-vivo-hora-juegan-ver-torneo-clausura-tv-online-formaciones_0_hpktYeEeAD.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "96b4148f1c6f",
@@ -785,26 +866,27 @@
       "i18n": {
         "fr": {
           "title": "Ayoni Santos : le crack capverdien de 21 ans va bouger cet été",
-          "summary": "La pépite du Sparta Rotterdam, Ayoni Santos, est dans le viseur du PSV Eindhoven. C'est ce que rapporte le Eindhovens Dagblad dimanche matin.",
-          "needs_translation": false
+          "summary": "Le joueur de Sparta Rotterdam, Ayoni Santos, est suivi de près par PSV Eindhoven en vue d'un transfert cet été, selon les informations de Eindhovens Dagblad.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Ayoni Santos: 21-year-old Cape Verdean crack will move this summer",
-          "summary": "The nugget of Sparta Rotterdam, Ayoni Santos, is in the sights of PSV Eindhoven. This is what the Eindhovens Dagblad reports on Sunday morning.",
+          "title": "Ayoni Santos: 21-year-old Cape Verdean talent set to move this summer",
+          "summary": "Sparta Rotterdam prospect Ayoni Santos is targeted by PSV Eindhoven for a potential transfer this summer, according to Eindhovens Dagblad.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ayoni Santos: el crack caboverdiano de 21 años se moverá este verano",
-          "summary": "La pepita del Sparta Rotterdam, Ayoni Santos, está en la mira del PSV Eindhoven. Así lo informa el Eindhovens Dagblad el domingo por la mañana.",
+          "title": "Ayoni Santos: la perla caboverdiana de 21 años cambiará de equipo este verano",
+          "summary": "El jugador de Sparta Rotterdam, Ayoni Santos, está en el radar de PSV Eindhoven para un traspaso este verano, según informa Eindhovens Dagblad.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أيوني سانتوس: صدع الرأس الأخضر البالغ من العمر 21 عامًا سينتقل هذا الصيف",
-          "summary": "تقع كتلة سبارتا روتردام، أيوني سانتوس، في مشاهد PSV أيندهوفن. هذا ما ذكرته صحيفة Eindhovens Dagblad صباح يوم الأحد.",
+          "title": "أيوني سانتوس: الموهبة الرأس أخضرية صاحب الـ21 عاماً يقترب من الانتقال هذا الصيف",
+          "summary": "يتواجد موهبة سبارتا روتردام أيوني سانتوس ضمن اهتمامات نادي بي إس في آيندهوفن للتعاقد معه هذا الصيف، وفقاً لصحيفة أيندهوفنز داغبلاد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football/ayoni-santos-le-crack-capverdien-de-21-ans-va-bouger-cet-ete/",
@@ -826,7 +908,12 @@
           "url": "https://africatopsports.com/football/ayoni-santos-le-crack-capverdien-de-21-ans-va-bouger-cet-ete/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6252684efff2",
@@ -1091,23 +1178,27 @@
       "i18n": {
         "es": {
           "title": "Sánchez Martínez y las nuevas normas de arbitraje: \"Teníamos que poner de nuestra parte para tener más continuidad\"",
-          "summary": "José María Sánchez Martínez fue el colegiado del encuentro entre Espanyol y Real Madrid (1-2). Antes del duelo, el colegiado habló en DAZN sobre las nuevas normas del arbitraje para esta temporada.",
-          "needs_translation": false
+          "summary": "Antes del partido entre Espanyol y Real Madrid (1-2), el árbitro José María Sánchez Martínez explicó en DAZN las nuevas directrices arbitrales orientadas a favorecer la continuidad del juego.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Sánchez Martínez y las nuevas normas de arbitraje: \"Teníamos que poner de nuestra parte para tener más continuidad\"",
-          "summary": "José María Sánchez Martínez fue el colegiado del encuentro entre Espanyol y Real Madrid (1-2). Antes del duelo, el colegiado habló en DAZN sobre las nuevas normas del arbitraje para esta temporada.",
-          "needs_translation": true
+          "title": "Sánchez Martínez and the new refereeing rules: \"We had to do our part to have more continuity\"",
+          "summary": "Ahead of the match between Espanyol and Real Madrid (1-2), referee José María Sánchez Martínez discussed the new guidelines aimed at increasing game continuity on DAZN.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Sánchez Martínez y las nuevas normas de arbitraje: \"Teníamos que poner de nuestra parte para tener más continuidad\"",
-          "summary": "José María Sánchez Martínez fue el colegiado del encuentro entre Espanyol y Real Madrid (1-2). Antes del duelo, el colegiado habló en DAZN sobre las nuevas normas del arbitraje para esta temporada.",
-          "needs_translation": true
+          "title": "Sánchez Martínez et les nouvelles règles d'arbitrage : « Nous devions faire notre part pour avoir plus de continuité »",
+          "summary": "Avant le match entre Espanyol et Real Madrid (1-2), l'arbitre José María Sánchez Martínez a abordé sur DAZN les nouvelles consignes destinées à fluidifier le jeu cette saison.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Sánchez Martínez y las nuevas normas de arbitraje: \"Teníamos que poner de nuestra parte para tener más continuidad\"",
-          "summary": "José María Sánchez Martínez fue el colegiado del encuentro entre Espanyol y Real Madrid (1-2). Antes del duelo, el colegiado habló en DAZN sobre las nuevas normas del arbitraje para esta temporada.",
-          "needs_translation": true
+          "title": "سانشيز مارتينيز والقواعد التحكيمية الجديدة: \"كان علينا المساهمة لضمان استمرارية اللعب\"",
+          "summary": "قبل مباراة إسبانيول وريال مدريد (1-2)، تحدث الحكم خوسيه ماريا سانشيز مارتينيز عبر منصة دازن عن القواعد التحكيمية الجديدة الهادفة لتعزيز استمرارية اللعب هذا الموسم.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218839/sanchez-martinez-nuevas-normas-arbitraje-teniamos-poner-nuestra-parte-continuidad.html",
@@ -1129,7 +1220,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218839/sanchez-martinez-nuevas-normas-arbitraje-teniamos-poner-nuestra-parte-continuidad.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "cc89de3612ae",
@@ -1242,23 +1338,27 @@
       "i18n": {
         "es": {
           "title": "Pasión por el Barça a su llegada a Elche",
-          "summary": "Con Joan Laporta, Rafa Yuste, Bojan Krkic y Alejandro Echevarría pero no Deco en pleno mercado de fichajes, el FC Barcelona ya descansa en el Hotel Port Elche , reservado para la ocasión en su totalidad por el club azulgrana y ubicado en un polígono comercial e industrial a 6,5…",
-          "needs_translation": false
+          "summary": "El FC Barcelona ya se encuentra en Elche, alojado en el Hotel Port Elche. La expedición incluye a Joan Laporta, Rafa Yuste, Bojan Krkic y Alejandro Echevarría, mientras que Deco no viajó.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Pasión por el Barça a su llegada a Elche",
-          "summary": "Con Joan Laporta, Rafa Yuste, Bojan Krkic y Alejandro Echevarría pero no Deco en pleno mercado de fichajes, el FC Barcelona ya descansa en el Hotel Port Elche , reservado para la ocasión en su totalidad por el club azulgrana y ubicado en un polígono comercial e industrial a 6,5…",
-          "needs_translation": true
+          "title": "Passion for Barça upon arrival in Elche",
+          "summary": "FC Barcelona arrived in Elche and is staying at Hotel Port Elche. The traveling party includes Joan Laporta, Rafa Yuste, Bojan Krkic, and Alejandro Echevarría, while Deco remained absent.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Pasión por el Barça a su llegada a Elche",
-          "summary": "Con Joan Laporta, Rafa Yuste, Bojan Krkic y Alejandro Echevarría pero no Deco en pleno mercado de fichajes, el FC Barcelona ya descansa en el Hotel Port Elche , reservado para la ocasión en su totalidad por el club azulgrana y ubicado en un polígono comercial e industrial a 6,5…",
-          "needs_translation": true
+          "title": "Passion pour le Barça à son arrivée à Elche",
+          "summary": "Le FC Barcelona est arrivé à Elche et séjourne à l'Hotel Port Elche. La délégation comprend Joan Laporta, Rafa Yuste, Bojan Krkic et Alejandro Echevarría, alors que Deco est absent.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Pasión por el Barça a su llegada a Elche",
-          "summary": "Con Joan Laporta, Rafa Yuste, Bojan Krkic y Alejandro Echevarría pero no Deco en pleno mercado de fichajes, el FC Barcelona ya descansa en el Hotel Port Elche , reservado para la ocasión en su totalidad por el club azulgrana y ubicado en un polígono comercial e industrial a 6,5…",
-          "needs_translation": true
+          "title": "حفاوة جماهيرية تستقبل برشلونة لدى وصوله إلى إلتشي",
+          "summary": "وصل فريق برشلونة إلى إلتشي للإقامة في فندق بورت إلتشي. وضمت البعثة جوان لابورتا، ورافا يوستي، وبويان كركيتش، وأليخاندرو إتشيفاريا، في حين غاب ديكو بسبب انشغاله بسوق الانتقالات.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218815/barca-elche.html",
@@ -1280,7 +1380,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218815/barca-elche.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "916a6cf0c0a3",
@@ -1347,7 +1452,17 @@
           "url": "https://africatopsports.com/maghreb/couhaib-driouech-le-marocain-annonce-dans-un-grand-club-de-liga/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-23T12:55:40+00:00"
+        }
+      }
     },
     {
       "id": "f73483b13b49",
@@ -1356,23 +1471,27 @@
       "i18n": {
         "es": {
           "title": "Hasta cinco jugadores del Barça podrían debutar hoy ante el Elche",
-          "summary": "El Barça disputará hoy su primer partido de la Liga 2026/27 en el Martínez Valero . Lo hará ante el Elche (21.30 horas/Movistar LaLiga), que ya debutó el pasado lunes frente al Deportivo de A Coruña con un empate (1-1).",
-          "needs_translation": false
+          "summary": "El Barça disputa su primer partido de LaLiga visitando al Elche en el Martínez Valero, en un encuentro donde hasta cinco jugadores podrían debutar.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Hasta cinco jugadores del Barça podrían debutar hoy ante el Elche",
-          "summary": "El Barça disputará hoy su primer partido de la Liga 2026/27 en el Martínez Valero . Lo hará ante el Elche (21.30 horas/Movistar LaLiga), que ya debutó el pasado lunes frente al Deportivo de A Coruña con un empate (1-1).",
-          "needs_translation": true
+          "title": "Up to five Barça players could make their debut today against Elche",
+          "summary": "Barça kick off their LaLiga campaign against Elche at the Martínez Valero, in a match where up to five players could make their debut.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Hasta cinco jugadores del Barça podrían debutar hoy ante el Elche",
-          "summary": "El Barça disputará hoy su primer partido de la Liga 2026/27 en el Martínez Valero . Lo hará ante el Elche (21.30 horas/Movistar LaLiga), que ya debutó el pasado lunes frente al Deportivo de A Coruña con un empate (1-1).",
-          "needs_translation": true
+          "title": "Jusqu'à cinq joueurs du Barça pourraient faire leurs débuts aujourd'hui contre Elche",
+          "summary": "Le Barça dispute son premier match de LaLiga au Martínez Valero face à Elche, une rencontre où jusqu'à cinq joueurs pourraient débuter.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Hasta cinco jugadores del Barça podrían debutar hoy ante el Elche",
-          "summary": "El Barça disputará hoy su primer partido de la Liga 2026/27 en el Martínez Valero . Lo hará ante el Elche (21.30 horas/Movistar LaLiga), que ya debutó el pasado lunes frente al Deportivo de A Coruña con un empate (1-1).",
-          "needs_translation": true
+          "title": "ما يصل إلى خمسة لاعبين من برشلونة قد يسجلون ظهورهم الأول اليوم أمام إلتشي",
+          "summary": "يستهل برشلونة مشواره في الدوري الإسباني بمواجهة إلتشي على ملعب مارتينيز فاليرو، في مباراة قد تشهد مشاركة خمسة لاعبين لأول مرة.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218836/cinco-jugadores-barca-debutar-hoy-elche.html",
@@ -1394,7 +1513,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218836/cinco-jugadores-barca-debutar-hoy-elche.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7ed53af98621",
@@ -1403,32 +1527,33 @@
       "i18n": {
         "de": {
           "title": "Eberl bestätigt Kane-Gespräche - Paderborn lockt Pieringer",
-          "summary": "Wer wechselt wohin? Wer ist wo im Gespräch?",
-          "needs_translation": false
+          "summary": "Eberl hat Gespräche bezüglich Kane bestätigt. Zudem zeigt Paderborn Interesse an einer Verpflichtung von Pieringer.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Eberl confirms Kane talks - Paderborn lures Pieringer",
-          "summary": "Who is moving to where? Who is in conversation where?",
+          "title": "Eberl confirms Kane talks - Paderborn targets Pieringer",
+          "summary": "Eberl has confirmed discussions regarding Kane, while Paderborn is showing interest in signing Pieringer.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Eberl confirme les discussions de Kane - Paderborn attire Pieringer",
-          "summary": "Qui va où ? Qui est où dans la conversation ?",
+          "title": "Eberl confirme des discussions pour Kane - Paderborn s'intéresse à Pieringer",
+          "summary": "Eberl a confirmé la tenue de discussions concernant Kane, tandis que Paderborn manifeste son intérêt pour recruter Pieringer.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Eberl confirma las conversaciones de Kane - Paderborn atrae a Pieringer",
-          "summary": "¿Quién se muda a dónde? ¿Quién está hablando dónde?",
+          "title": "Eberl confirma conversaciones por Kane - Paderborn tienta a Pieringer",
+          "summary": "Eberl confirmó la existencia de conversaciones por Kane, mientras que Paderborn busca la incorporación de Pieringer.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "إيبرل يؤكد محادثات كين - بادربورن يغري بيرينجر",
-          "summary": "من ينتقل إلى أين ؟ من يتحدث إلى أين ؟",
+          "title": "إيبرل يؤكد المحادثات بشأن كين - بادربورن يسعى لضم بيرينغر",
+          "summary": "أكد إيبرل وجود مفاوضات بشأن هاري كين، في حين يسعى نادي بادربورن للتعاقد مع مارفين بيرينغر.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/transferticker-953155/artikel#omrss",
@@ -1450,7 +1575,12 @@
           "url": "https://www.kicker.de/transferticker-953155/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c4a06dcfe2c7",
@@ -1459,23 +1589,27 @@
       "i18n": {
         "es": {
           "title": "Cucurella, aclamado por la afición del Espanyol",
-          "summary": "Cucurella debutó con el Real Madrid de manera oficial. Fue ante el Espanyol, cuando el lateral entró en el minuto 64 por Carreras.",
-          "needs_translation": false
+          "summary": "Cucurella debutó oficialmente con el Real Madrid frente al Espanyol tras entrar en el minuto 64 en sustitución de Carreras.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Cucurella, aclamado por la afición del Espanyol",
-          "summary": "Cucurella debutó con el Real Madrid de manera oficial. Fue ante el Espanyol, cuando el lateral entró en el minuto 64 por Carreras.",
-          "needs_translation": true
+          "title": "Cucurella acclaimed by the Espanyol fans",
+          "summary": "Cucurella made his official debut for Real Madrid against Espanyol, coming on as a substitute for Carreras in the 64th minute.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Cucurella, aclamado por la afición del Espanyol",
-          "summary": "Cucurella debutó con el Real Madrid de manera oficial. Fue ante el Espanyol, cuando el lateral entró en el minuto 64 por Carreras.",
-          "needs_translation": true
+          "title": "Cucurella acclamé par les supporters de l'Espanyol",
+          "summary": "Cucurella a fait ses débuts officiels avec le Real Madrid face à l'Espanyol en remplaçant Carreras à la 64e minute.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Cucurella, aclamado por la afición del Espanyol",
-          "summary": "Cucurella debutó con el Real Madrid de manera oficial. Fue ante el Espanyol, cuando el lateral entró en el minuto 64 por Carreras.",
-          "needs_translation": true
+          "title": "كوكوريلا يتلقى تحية جماهير إسبانيول",
+          "summary": "خاض كوكوريلا مباراته الرسمية الأولى مع ريال مدريد أمام إسبانيول، حيث دخل بديلاً للاعب كاريراس في الدقيقة 64.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218835/cucurella-aclamado-aficion-espanyol.html",
@@ -1497,7 +1631,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218835/cucurella-aclamado-aficion-espanyol.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6bb5bb2da76b",
@@ -1562,26 +1701,27 @@
       "i18n": {
         "es": {
           "title": "La imagen viral tras el Espanyol-Real Madrid",
-          "summary": "Tras el partido entre el Espanyol y el Real Madrid (1-2) se vivieron muchas y curiosas imágenes en el césped. Una de esas imágenes las protagonizaron Diomande y Dmitrovic.",
-          "needs_translation": false
+          "summary": "Tras la victoria por 1-2 del Real Madrid ante el Espanyol, una escena sobre el césped protagonizada por Diomande y Dmitrovic se hizo viral.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The viral image behind Espanyol-Real Madrid",
-          "summary": "After the match between Espanyol and Real Madrid (1-2) there were many curious images on the pitch. One of those images starred Diomande and Dmitrovic.",
+          "title": "The viral image after Espanyol-Real Madrid",
+          "summary": "Following Real Madrid's 1-2 victory over Espanyol, an on-pitch moment involving Diomande and Dmitrovic went viral.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "L'image virale derrière l'Espanyol-Real Madrid",
-          "summary": "Après le match entre l'Espanyol et le Real Madrid (1-2), de nombreuses images curieuses ont été vécues sur la pelouse. L'une de ces images a été réalisée par Diomande et Dmitrovic.",
+          "title": "L'image virale après Espanyol-Real Madrid",
+          "summary": "Après la victoire 1-2 du Real Madrid contre l'Espanyol, une scène sur la pelouse entre Diomande et Dmitrovic est devenue virale.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الصورة الفيروسية وراء Espanyol - Real Madrid",
-          "summary": "بعد المباراة بين إسبانيول وريال مدريد (1-2) كان هناك العديد من الصور الغريبة على أرض الملعب. إحدى تلك الصور قام ببطولتها ديوماندي وديمتروفيتش.",
+          "title": "اللقطة الأكثر تداولا بعد مباراة إسبانيول وريال مدريد",
+          "summary": "عقب فوز ريال مدريد على إسبانيول بنتيجة 1-2، أثارت لقطة جمعت بين ديوماندي ودميتروفيتش على أرضية الملعب تفاعلا واسعا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218831/imagen-viral-espanyol-real-madrid.html",
@@ -1603,7 +1743,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218831/imagen-viral-espanyol-real-madrid.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f49268bd5294",
@@ -1611,40 +1756,40 @@
       "summary": "Le LOSC a conclu un accord avec San Lorenzo pour recruter le gardien paraguayen Orlando Gill pour une durée de cinq ans.",
       "i18n": {
         "fr": {
-          "title": "Lille s'offre le gardien paraguayen Orlando Gill",
-          "summary": "Le LOSC a conclu un accord avec San Lorenzo pour recruter le gardien paraguayen Orlando Gill pour une durée de cinq ans.",
+          "title": "Mercato : Lille s'offre le gardien paraguayen Orlando Gill",
+          "summary": "Le LOSC a trouvé un accord avec San Lorenzo pour s'attacher les services du gardien international paraguayen Orlando Gill pour cinq saisons.",
           "body": [
-            "Le portier de 26 ans, qui compte 11 sélections avec son pays, a notamment affronté l'équipe de France en huitièmes de finale de la Coupe du monde le 4 juillet dernier. L'opération conclue avec le club argentin s'élève à environ 4 millions d'euros pour renforcer les cages lilloises."
+            "Le portier de 26 ans, qui compte 11 sélections et a affronté les Bleus en huitièmes de finale du Mondial, quitte l'Argentine contre une indemnité estimée à 4 millions d'euros. Cette arrivée sécurise les cages lilloises, alors que le club espère toujours finaliser la venue d'un quatrième avant-centre avant la clôture du mercato."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "en": {
-          "title": "Lille sign Paraguayan goalkeeper Orlando Gill",
-          "summary": "LOSC have reached an agreement with San Lorenzo to sign Paraguayan goalkeeper Orlando Gill on a five-year contract.",
+          "title": "Transfer window: Lille sign Paraguayan goalkeeper Orlando Gill",
+          "summary": "LOSC have reached an agreement with San Lorenzo to sign Paraguayan international goalkeeper Orlando Gill on a five-year contract.",
           "body": [
-            "The 26-year-old shot-stopper, who has 11 caps for Paraguay, notably faced France in the World Cup round of 16 on July 4. The transfer from the Argentine club is worth around €4 million to strengthen the Lille goal."
+            "The 26-year-old goalkeeper, who has 11 caps and faced France in the World Cup round of 16, leaves Argentine football for a fee estimated at 4 million euros. The move strengthens Lille's options in goal, while the club still aims to sign a fourth centre-forward before the summer deadline."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "es": {
-          "title": "Lille ficha al portero paraguayo Orlando Gill",
-          "summary": "El LOSC ha cerrado un acuerdo con San Lorenzo para fichar al guardameta paraguayo Orlando Gill por cinco temporadas.",
+          "title": "Mercado: El Lille ficha al portero paraguayo Orlando Gill",
+          "summary": "El LOSC ha alcanzado un acuerdo con San Lorenzo para fichar al guardameta internacional paraguayo Orlando Gill por cinco temporadas.",
           "body": [
-            "El arquero de 26 años, internacional en 11 ocasiones con su selección, se midió a Francia en los octavos de final de la Copa del Mundo el pasado 4 de julio. El traspaso acordado con el club argentino ronda los 4 millones de euros para reforzar la portería del conjunto francés."
+            "El arquero de 26 años, con 11 internacionalidades y que se midió a Francia en los octavos de final del Mundial, abandona el fútbol argentino por unos 4 millones de euros. Su fichaje refuerza la portería del conjunto francés, que todavía busca incorporar a un cuarto delantero centro antes del cierre del mercado."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ليل يتعاقد مع الحارس الباراغواياني أورلاندو خيل",
-          "summary": "توصل نادي ليل إلى اتفاق مع سان لورينزو لضم حارس المرمى الباراغواياني أورلاندو خيل بعقد يمتد لخمس سنوات.",
+          "title": "الميركاتو: ليل يتعاقد مع الحارس الباراغواياني أورلاندو خيل",
+          "summary": "توصل نادي ليل إلى اتفاق مع سان لورينزو لضم حارس المرمى الدولي الباراغواياني أورلاندو خيل بعقد يمتد لخمسة مواسم.",
           "body": [
-            "وخاض الحارس البالغ من العمر 26 عاماً 11 مباراة دولية مع منتخب بلاده، وواجه منتخب فرنسا في ثمن نهائي كأس العالم في 4 يوليو الماضي. وبلغت قيمة الصفقة المبرمة مع النادي الأرجنتيني نحو 4 ملايين يورو لتعزيز حراسة مرمى الفريق الفرنسي."
+            "يغادر الحارس البالغ من العمر 26 عاماً، والذي خاض 11 مباراة دولية وواجه منتخب فرنسا في ثمن نهائي كأس العالم، الدوري الأرجنتيني في صفقة قُدرت قيمتها بنحو 4 ملايين يورو. وتؤمّن هذه الخطوة مركز حراسة المرمى للفريق الفرنسي، الذي يواصل مساعيه لضم مهاجم رابع قبل غلق سوق الانتقالات الصيفية."
           ],
           "format": "brief",
           "needs_translation": false,
@@ -1670,7 +1815,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Mercato-lille-recrute-le-gardien-du-paraguay-orlando-gill-qui-a-croise-les-bleus-a-la-coupe-du-monde/1712973#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-23T12:55:43+00:00"
+        }
+      }
     },
     {
       "id": "33b185c76e7e",
@@ -1729,26 +1887,27 @@
       "i18n": {
         "es": {
           "title": "El abrazo más viral de Mourinho",
-          "summary": "El Real Madrid ganó 1-2 al Espanyol en el estreno oficial de la temporada. Fue un triunfo agónico de los blancos con un gol de Espí en el minuto 90 y todo el Real Madrid celebró por todo lo alto ese tanto.",
-          "needs_translation": false
+          "summary": "El Real Madrid venció 1-2 al Espanyol en su debut oficial de la temporada, gracias a un gol decisivo de Espí en el minuto 90.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mourinho's Most Viral Hug",
-          "summary": "Real Madrid beat Espanyol 1-2 in the official season premiere. It was an agonizing victory for the Whites with a goal from Espí in the 90th minute and the whole of Real Madrid celebrated that goal in style.",
+          "title": "Mourinho's most viral hug",
+          "summary": "Real Madrid secured a 1-2 victory over Espanyol in their official season opener, thanks to a 90th-minute winning goal from Espí.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "L'étreinte la plus virale de Mourinho",
-          "summary": "Le Real Madrid a gagné 1-2 contre l'Espanyol lors de la première officielle de la saison. Ce fut un triomphe agonisant des Blancs avec un but d'Espí à la 90e minute et tout le Real Madrid a célébré ce moment.",
+          "summary": "Le Real Madrid s'est imposé 1-2 face à l'Espanyol lors de son premier match de la saison, grâce à un but décisif d'Espí à la 90e minute.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "عناق مورينيو الأكثر انتشارًا",
-          "summary": "فاز ريال مدريد على إسبانيول 1-2 في العرض الأول للموسم الرسمي. لقد كان انتصارا مؤلما للبيض مع هدف من إسبى في الدقيقة 90 واحتفل ريال مدريد بأكمله بهذا الهدف بأناقة.",
+          "title": "العناق الأكثر تداولاً لمورينيو",
+          "summary": "فاز ريال مدريد بنتيجة 1-2 على إسبانيول في افتتاح موسمه الرسمي، بفضل هدف حاسم سجله إسبي في الدقيقة 90.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218827/abrazo-viral-mourinho.html",
@@ -1770,7 +1929,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218827/abrazo-viral-mourinho.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6bf1e49bd088",
@@ -1779,26 +1943,27 @@
       "i18n": {
         "es": {
           "title": "Los últimos diez debuts del Barça en Liga",
-          "summary": "El Barça dará hoy el pistoletazo de salida a la Liga 2026/27 en el Martínez Valero ante el Elche (21:30 horas, Movistar LaLiga) . Hansi Flick afronta así su tercera temporada al frente del conjunto blaugrana con el objetivo de conquistar su tercer título liguero consecutivo.",
-          "needs_translation": false
+          "summary": "El Barça debuta hoy en LaLiga 2026/27 visitando al Elche en el Martínez Valero. Hansi Flick inicia su tercera temporada al frente del equipo en busca de su tercer título consecutivo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Barça's last ten debuts in La Liga",
-          "summary": "Barça will kick off La Liga 2026/27 today at Martínez Valero against Elche (9:30 pm, Movistar LaLiga) . Hansi Flick thus faces his third season at the head of the Blaugrana team with the aim of winning his third consecutive league title.",
+          "title": "Barça's last ten LaLiga debuts",
+          "summary": "Barça kick off their 2026/27 LaLiga campaign away against Elche at the Martínez Valero. Hansi Flick begins his third season targeting a third consecutive league title.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Les dix derniers débuts du Barça en Liga",
-          "summary": "Le Barça donnera aujourd'hui le coup d'envoi de la Liga 2026/27 à Martínez Valero contre Elche (21h30, Movistar LaLiga) . Hansi Flick affronte ainsi sa troisième saison à la tête de l'équipe blaugrana avec l'objectif de remporter son troisième titre de champion consécutif.",
+          "summary": "Le Barça lance sa saison de LaLiga 2026/27 sur le terrain d'Elche au Martínez Valero. Hansi Flick y entame sa troisième saison avec l'objectif de décrocher un troisième titre consécutif.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "آخر عشر مشاركات لبرشلونة في الدوري الإسباني",
-          "summary": "سيبدأ برشلونة الدوري الإسباني 2026/27 اليوم في مارتينيز فاليرو ضد إلتشي (9:30 مساءً، موفيستار لاليغا) . وهكذا يواجه هانسي فليك موسمه الثالث على رأس فريق بلوجرانا بهدف الفوز بلقبه الثالث على التوالي في الدوري.",
+          "title": "آخر عشر مباريات افتتاحية لبرشلونة في الدوري الإسباني",
+          "summary": "يستهل برشلونة مشواره في الدوري الإسباني لموسم 2026/27 بمواجهة إلتشي على ملعب مارتينيز فاليرو. ويبدأ المدرب هانزي فليك موسمه الثالث مع الفريق بهدف حصد لقبه الثالث توالياً.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218816/ultimos-diez-debuts-barca-liga.html",
@@ -1820,7 +1985,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218816/ultimos-diez-debuts-barca-liga.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a130a26314ec",
@@ -1829,26 +1999,27 @@
       "i18n": {
         "es": {
           "title": "El Celta, cerca de cerrar el fichaje de Couhaib Driouech",
-          "summary": "El extremo de PSV sería el refuerzo de ataque Leer",
-          "needs_translation": false
+          "summary": "El Celta está a punto de concretar la llegada del extremo del PSV Couhaib Driouech para reforzar su delantera.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Celta close to signing Couhaib Driouech",
-          "summary": "The PSV endpoint would be the attack reinforcement Read",
+          "title": "Celta close to completing the signing of Couhaib Driouech",
+          "summary": "Celta are close to finalizing the signing of PSV winger Couhaib Driouech to bolster their attack.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le Celta, proche de boucler le transfert de Couhaib Driouech",
-          "summary": "L'extrémité du PSV serait le renfort d'attaque Lire",
+          "title": "Le Celta proche de boucler la signature de Couhaib Driouech",
+          "summary": "Le Celta est sur le point de finaliser le transfert de l'ailier du PSV Couhaib Driouech pour renforcer son attaque.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "سيلتا تقترب من التوقيع مع كهيب دريوش",
-          "summary": "ستكون نقطة نهاية صمام أمان الضغط هي تعزيز الهجوم قراءة",
+          "title": "سيلتا يقترب من حسم التعاقد مع صهيب دريوش",
+          "summary": "يقترب نادي سيلتا من إتمام صفقة التعاقد مع جناح بي إس في آيندهوفن صهيب دريوش لتعزيز خط هجومه.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.marca.com/futbol/celta/2026/08/23/celta-cerca-cerrar-fichaje-couhaib-driouech.html",
@@ -1870,7 +2041,12 @@
           "url": "https://www.marca.com/futbol/celta/2026/08/23/celta-cerca-cerrar-fichaje-couhaib-driouech.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2f893e760e8b",
@@ -1929,26 +2105,27 @@
       "i18n": {
         "es": {
           "title": "Haaland se rapa y dice adiós a su mítica melena rubia",
-          "summary": "Erling Haaland (26 años) ha sorprendido a todos con un cambio de look radical. El delantero del Manchester City ha decidido dejar atrás su característica melena y se ha rapado, mostrando una imagen completamente diferente a la habitual.",
-          "needs_translation": false
+          "summary": "El delantero del Manchester City, Erling Haaland, ha cambiado radicalmente de imagen al raparse la cabeza y dejar atrás su característica melena rubia.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Haaland shaves and says goodbye to her mythical blonde hair",
-          "summary": "Erling Haaland (26) has surprised everyone with a radical makeover. The Manchester City striker has decided to leave behind his characteristic mane and has shaved, showing a completely different image than usual.",
+          "title": "Haaland shaves his head and says goodbye to his iconic blonde hair",
+          "summary": "Manchester City striker Erling Haaland has revealed a radical new look after shaving his head, leaving behind his signature long blonde hairstyle.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Haaland se rase et dit adieu à sa mythique crinière blonde",
-          "summary": "Erling Haaland (26 ans) a surpris tout le monde avec un changement de look radical. L'attaquant de Manchester City a décidé de laisser derrière lui sa crinière caractéristique et s'est rasé, montrant une image complètement différente de celle habituelle.",
+          "title": "Haaland se rase le crâne et dit adieu à sa mythique chevelure blonde",
+          "summary": "L'attaquant de Manchester City Erling Haaland a radicalement changé d'apparence en se rasant la tête, abandonnant ainsi sa longue chevelure blonde emblématique.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تحلق هالاند وتودع شعرها الأشقر الأسطوري",
-          "summary": "فاجأ إيرلينغ هالاند (26 عامًا) الجميع بتحول جذري. قرر مهاجم مانشستر سيتي أن يترك وراءه بدة شعره المميزة وحلقها، مما يظهر صورة مختلفة تماما عن المعتاد.",
+          "title": "هالاند يحلق شعره تماماً ويودع تسريحته الشقراء الشهيرة",
+          "summary": "فاجأ مهاجم مانشستر سيتي إيرلينغ هالاند الجماهير بتغيير جذري في مظهره، بعد أن قرر حلق شعره بالكامل والتخلي عن خصلاته الشقراء الطويلة المعتادة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/internacional/20260823/1004218824/haaland-rapa-dice-adios-mitica-melena-rubia.html",
@@ -1970,7 +2147,12 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20260823/1004218824/haaland-rapa-dice-adios-mitica-melena-rubia.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "14b25aa34aa2",
@@ -1979,26 +2161,27 @@
       "i18n": {
         "es": {
           "title": "Carlos Espí, rentabilidad inmediata para 'Joselu Junior'",
-          "summary": "El delantero valenciano Carlos Espí salvó el estreno de José Mourinho en su segunda etapa en el Real Madrid. Un fichaje de ‘Mou’ que se activó en 24 horas y que es pura rentabilidad.",
-          "needs_translation": false
+          "summary": "El delantero Carlos Espí salvó el estreno de José Mourinho en su segunda etapa en el Real Madrid. Fichado en apenas 24 horas, el valenciano aportó un impacto inmediato.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Carlos Espí, immediate profitability for 'Joselu Junior'",
-          "summary": "Valencia striker Carlos Espí saved José Mourinho's debut in his second stint at Real Madrid. A signing of ‘Mou’ that was activated in 24 hours and that is pure profitability.",
+          "title": "Carlos Espí, immediate return for 'Joselu Junior'",
+          "summary": "Striker Carlos Espí rescued José Mourinho's debut in his second spell at Real Madrid. Signed in just 24 hours at the manager's request, he delivered immediate impact.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Carlos Espí, rentabilité immédiate pour 'Joselu Junior'",
-          "summary": "L'attaquant valencien Carlos Espí a sauvé la première de José Mourinho lors de sa deuxième étape au Real Madrid. Un transfert de ‘Mou’ qui a été activé en 24 heures et qui est une pure rentabilité.",
+          "title": "Carlos Espí, rentabilité immédiate pour « Joselu Junior »",
+          "summary": "L'attaquant Carlos Espí a sauvé les débuts de José Mourinho lors de sa seconde étape au Real Madrid. Recruté en 24 heures par « Mou », il offre un impact immédiat.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كارلوس إسبي، الربحية الفورية لـ \"جوزيلو جونيور\"",
-          "summary": "أنقذ مهاجم فالنسيا كارلوس إسباي ظهور خوسيه مورينيو لأول مرة في فترته الثانية في ريال مدريد. توقيع \"MOU\" تم تفعيله في 24 ساعة وهذا هو الربح الخالص.",
+          "title": "كارلوس إسبي، مردود فوري لـ \"خوسيلو جونيور\"",
+          "summary": "أنقذ المهاجم كارلوس إسبي بداية جوزيه مورينيو في فترته الثانية مع ريال مدريد، بعد حسم صفقته في غضون 24 ساعة فقط ليقدم تأثيراً فورياً.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218822/carlos-espi-rentabilidad-inmediata-joselu-junior.html",
@@ -2020,7 +2203,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218822/carlos-espi-rentabilidad-inmediata-joselu-junior.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d454f9d70e84",
@@ -2029,26 +2217,27 @@
       "i18n": {
         "es": {
           "title": "Partidos de HOY, domingo 23 de agosto: agenda, horario y por dónde ver fútbol EN VIVO",
-          "summary": "River vs.",
-          "needs_translation": false
+          "summary": "Guía con la programación, los horarios y las opciones de transmisión para seguir los partidos de fútbol en vivo de este domingo 23 de agosto, incluyendo a River.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Matches TODAY, Sunday, August 23: agenda, schedule and where TO watch LIVE FOOTBALL",
-          "summary": "River vs.",
+          "title": "TODAY'S matches, Sunday, August 23: Schedule, kick-off times, and TV channels to watch LIVE football",
+          "summary": "Broadcast schedule, kick-off times, and TV details for live football matches on Sunday, August 23, including the River fixture.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Matchs d'AUJOURD' HUI, dimanche 23 août : agenda, horaires et où regarder DU football EN DIRECT",
-          "summary": "River",
+          "title": "Matchs d'AUJOURD'HUI, dimanche 23 août : programme, horaires et chaînes pour regarder le football EN DIRECT",
+          "summary": "Programme, horaires et chaînes de diffusion pour suivre les rencontres de football en direct de ce dimanche 23 août, incluant le match de River.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباريات اليوم والأحد 23 أغسطس: جدول الأعمال والجدول الزمني وأين تشاهد كرة القدم المباشرة",
-          "summary": "النهر مقابل",
+          "title": "مباريات اليوم الأحد 23 أغسطس: جدول المواعيد والقنوات الناقلة للبث المباشر",
+          "summary": "جدول مباريات كرة القدم ومواعيدها والقنوات الناقلة لمواجهات اليوم الأحد 23 أغسطس في البث المباشر، بما في ذلك مباراة ريفر بليت.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/agenda-deportiva/partidos-hoy-domingo-23-agosto-2026-agenda-ole-horario-ver-futbol-vivo-online_0_tVt5QVe9gm.html",
@@ -2070,7 +2259,12 @@
           "url": "https://www.ole.com.ar/agenda-deportiva/partidos-hoy-domingo-23-agosto-2026-agenda-ole-horario-ver-futbol-vivo-online_0_tVt5QVe9gm.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c8694a8be3a4",
@@ -2079,32 +2273,33 @@
       "i18n": {
         "de": {
           "title": "Harry Kane: Traumtore, Grätschen und eine ganz besondere Kabinen-Rede",
-          "summary": "Harry Kane ist der Fußballer des Jahres 2026. Die Argumente sind unschlagbar: 73 Tore für Klub und Land.",
-          "needs_translation": false
+          "summary": "Harry Kane wurde zum Fußballer des Jahres 2026 gewählt. Ausschlaggebend waren unter anderem seine 73 Tore für Klub und Nationalmannschaft.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Harry Kane: dream goals, darts and a very special cabin speech",
-          "summary": "Harry Kane is the footballer of the year 2026. The arguments are unbeatable: 73 goals for club and country.",
+          "title": "Harry Kane: Dream goals, tackles and a very special dressing room speech",
+          "summary": "Harry Kane has been named Footballer of the Year for 2026 after scoring 73 goals for club and country.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Harry Kane : des portes de rêve, des grincements et un discours de cabine très spécial",
-          "summary": "Harry Kane est le footballeur de l'année 2026. Les arguments sont imbattables : 73 buts pour le club et le pays.",
+          "title": "Harry Kane : buts de rêve, tacles et un discours très spécial dans le vestiaire",
+          "summary": "Harry Kane a été élu joueur de l'année 2026 après avoir totalisé 73 buts inscrits en club et en sélection.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Harry Kane: puertas de ensueño, muletas y un discurso muy especial en la cabina",
-          "summary": "Harry Kane es el futbolista del año 2026. Los argumentos son inmejorables: 73 goles para el club y el país.",
+          "title": "Harry Kane: golazos, entradas y una charla muy especial en el vestuario",
+          "summary": "Harry Kane ha sido elegido futbolista del año 2026 tras registrar 73 goles entre su club y su selección.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هاري كين: أهداف الأحلام والسهام وخطاب المقصورة المميز للغاية",
-          "summary": "هاري كين هو لاعب كرة القدم لعام 2026. الحجج لا تقبل المنافسة: 73 هدفًا للنادي والبلد.",
+          "title": "هاري كين: أهداف رائعة وتدخلات قوية وخطاب مميز في غرفة الملابس",
+          "summary": "توج هاري كين بجائزة أفضل لاعب لعام 2026 بعد تسجيله 73 هدفاً مع ناديه ومنتخب بلاده.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/harry-kane-traumtore-graetschen-und-eine-ganz-besondere-kabinen-rede-1245541/video#omrss",
@@ -2126,7 +2321,12 @@
           "url": "https://www.kicker.de/harry-kane-traumtore-graetschen-und-eine-ganz-besondere-kabinen-rede-1245541/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "81963c37d28f",
