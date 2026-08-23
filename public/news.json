@@ -67,32 +67,33 @@
       "i18n": {
         "de": {
           "title": "Eberl bestätigt Kane-Gespräche - Paderborn lockt Pieringer",
-          "summary": "Wer wechselt wohin? Wer ist wo im Gespräch?",
-          "needs_translation": false
+          "summary": "Eberl hat Gespräche bezüglich Kane bestätigt. Zudem zeigt Paderborn Interesse an einer Verpflichtung von Pieringer.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Eberl confirms Kane talks - Paderborn lures Pieringer",
-          "summary": "Who is moving to where? Who is in conversation where?",
+          "title": "Eberl confirms Kane talks - Paderborn targets Pieringer",
+          "summary": "Eberl has confirmed discussions regarding Kane, while Paderborn is showing interest in signing Pieringer.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Eberl confirme les discussions de Kane - Paderborn attire Pieringer",
-          "summary": "Qui va où ? Qui est où dans la conversation ?",
+          "title": "Eberl confirme des discussions pour Kane - Paderborn s'intéresse à Pieringer",
+          "summary": "Eberl a confirmé la tenue de discussions concernant Kane, tandis que Paderborn manifeste son intérêt pour recruter Pieringer.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Eberl confirma las conversaciones de Kane - Paderborn atrae a Pieringer",
-          "summary": "¿Quién se muda a dónde? ¿Quién está hablando dónde?",
+          "title": "Eberl confirma conversaciones por Kane - Paderborn tienta a Pieringer",
+          "summary": "Eberl confirmó la existencia de conversaciones por Kane, mientras que Paderborn busca la incorporación de Pieringer.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "إيبرل يؤكد محادثات كين - بادربورن يغري بيرينجر",
-          "summary": "من ينتقل إلى أين ؟ من يتحدث إلى أين ؟",
+          "title": "إيبرل يؤكد المحادثات بشأن كين - بادربورن يسعى لضم بيرينغر",
+          "summary": "أكد إيبرل وجود مفاوضات بشأن هاري كين، في حين يسعى نادي بادربورن للتعاقد مع مارفين بيرينغر.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/transferticker-953155/artikel#omrss",
@@ -114,7 +115,12 @@
           "url": "https://www.kicker.de/transferticker-953155/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "cbc2b4062207",
@@ -123,26 +129,27 @@
       "i18n": {
         "fr": {
           "title": "Mercato : l'international français Christopher Nkunku fait son retour à Leipzig, sous forme de prêt avec option d'achat",
-          "summary": "En difficulté à l'AC Milan, Christopher Nkunku va faire son retour à Leipzig sous forme d'un prêt payant de 3 M€. L'international français (18 sélections) possède une option d'achat à 30 M€.",
-          "needs_translation": false
+          "summary": "En difficulté à l'AC Milan, Christopher Nkunku retourne à Leipzig sous la forme d'un prêt payant de 3 M€, assorti d'une option d'achat de 30 M€.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mercato: French international Christopher Nkunku returns to Leipzig, in the form of a loan with an option to buy",
-          "summary": "In trouble at AC Milan, Christopher Nkunku will return to Leipzig in the form of a €3 million paid loan. The French international (18 selections) has a purchase option of €30 million.",
+          "title": "Mercato: French international Christopher Nkunku returns to Leipzig on loan with buy option",
+          "summary": "Struggling at AC Milan, Christopher Nkunku is returning to Leipzig on a €3m loan deal that includes a €30m option to buy.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Mercado: el internacional francés Christopher Nkunku regresa a Leipzig, en forma de préstamo con opción de compra",
-          "summary": "Christopher Nkunku, con problemas en el AC Milan, regresará a Leipzig en forma de préstamo de 3 millones de €. El internacional francés (18 selecciones) tiene una opción de compra de 30 millones de €.",
+          "title": "Mercato: el internacional francés Christopher Nkunku regresa a Leipzig cedido con opción de compra",
+          "summary": "En dificultades en el AC Milan, Christopher Nkunku regresa a Leipzig como cedido por 3 M€ y con una opción de compra de 30 M€.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ميركاتو: الدولي الفرنسي كريستوفر نكونكو يعود إلى لايبزيغ، في شكل قرض مع خيار الشراء",
-          "summary": "في صعوبة في ميلانو، سيعود كريستوفر نكونكو إلى لايبزيغ في شكل قرض مدفوع بقيمة 3 ملايينيورو. الدولي الفرنسي (18 مجموعة) لديه خيار شراء بقيمة 30 مليونيورو.",
+          "title": "الميركاتو: الدولي الفرنسي كريستوفر نكونكو يعود إلى لايبزيغ معاراً مع خيار الشراء",
+          "summary": "يعود كريستوفر نكونكو إلى لايبزيغ قادماً من إيه سي ميلان على سبيل الإعارة مقابل 3 ملايين يورو، مع خيار شراء بقيمة 30 مليون يورو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Mercato-l-international-francais-christopher-nkunku-fait-son-retour-a-leipzig-sous-forme-de-pret-avec-option-d-achat/1712977#at_medium=RSS_feeds",
@@ -164,7 +171,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Mercato-l-international-francais-christopher-nkunku-fait-son-retour-a-leipzig-sous-forme-de-pret-avec-option-d-achat/1712977#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6bb5bb2da76b",
@@ -229,26 +241,27 @@
       "i18n": {
         "es": {
           "title": "La imagen viral tras el Espanyol-Real Madrid",
-          "summary": "Tras el partido entre el Espanyol y el Real Madrid (1-2) se vivieron muchas y curiosas imágenes en el césped. Una de esas imágenes las protagonizaron Diomande y Dmitrovic.",
-          "needs_translation": false
+          "summary": "Tras la victoria por 1-2 del Real Madrid ante el Espanyol, una escena sobre el césped protagonizada por Diomande y Dmitrovic se hizo viral.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The viral image behind Espanyol-Real Madrid",
-          "summary": "After the match between Espanyol and Real Madrid (1-2) there were many curious images on the pitch. One of those images starred Diomande and Dmitrovic.",
+          "title": "The viral image after Espanyol-Real Madrid",
+          "summary": "Following Real Madrid's 1-2 victory over Espanyol, an on-pitch moment involving Diomande and Dmitrovic went viral.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "L'image virale derrière l'Espanyol-Real Madrid",
-          "summary": "Après le match entre l'Espanyol et le Real Madrid (1-2), de nombreuses images curieuses ont été vécues sur la pelouse. L'une de ces images a été réalisée par Diomande et Dmitrovic.",
+          "title": "L'image virale après Espanyol-Real Madrid",
+          "summary": "Après la victoire 1-2 du Real Madrid contre l'Espanyol, une scène sur la pelouse entre Diomande et Dmitrovic est devenue virale.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الصورة الفيروسية وراء Espanyol - Real Madrid",
-          "summary": "بعد المباراة بين إسبانيول وريال مدريد (1-2) كان هناك العديد من الصور الغريبة على أرض الملعب. إحدى تلك الصور قام ببطولتها ديوماندي وديمتروفيتش.",
+          "title": "اللقطة الأكثر تداولا بعد مباراة إسبانيول وريال مدريد",
+          "summary": "عقب فوز ريال مدريد على إسبانيول بنتيجة 1-2، أثارت لقطة جمعت بين ديوماندي ودميتروفيتش على أرضية الملعب تفاعلا واسعا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218831/imagen-viral-espanyol-real-madrid.html",
@@ -270,7 +283,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218831/imagen-viral-espanyol-real-madrid.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f49268bd5294",
@@ -278,27 +296,44 @@
       "summary": "Le LOSC a trouvé un accord avec le club de San Lorenzo pour s'attacher les services du gardien du Paraguay, Orlando Gill (26 ans), pour un contrat de cinq ans.",
       "i18n": {
         "fr": {
-          "title": "Mercato : Lille recrute le gardien du Paraguay Orlando Gill, qui a croisé les Bleus à la Coupe du monde",
-          "summary": "Le LOSC a trouvé un accord avec le club de San Lorenzo pour s'attacher les services du gardien du Paraguay, Orlando Gill (26 ans), pour un contrat de cinq ans.",
-          "needs_translation": false
+          "title": "Lille s'offre le gardien paraguayen Orlando Gill",
+          "summary": "Le LOSC a conclu un accord avec San Lorenzo pour recruter le gardien paraguayen Orlando Gill pour une durée de cinq ans.",
+          "body": [
+            "Le portier de 26 ans, qui compte 11 sélections avec son pays, a notamment affronté l'équipe de France en huitièmes de finale de la Coupe du monde le 4 juillet dernier. L'opération conclue avec le club argentin s'élève à environ 4 millions d'euros pour renforcer les cages lilloises."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Mercato: Lille recruits Paraguay goalkeeper Orlando Gill, who crossed paths with the Blues at the World Cup",
-          "summary": "LOSC has reached an agreement with the San Lorenzo club to retain the services of Paraguay's goalkeeper, Orlando Gill (26), for a five-year contract.",
+          "title": "Lille sign Paraguayan goalkeeper Orlando Gill",
+          "summary": "LOSC have reached an agreement with San Lorenzo to sign Paraguayan goalkeeper Orlando Gill on a five-year contract.",
+          "body": [
+            "The 26-year-old shot-stopper, who has 11 caps for Paraguay, notably faced France in the World Cup round of 16 on July 4. The transfer from the Argentine club is worth around €4 million to strengthen the Lille goal."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Mercado: Lille recluta al portero paraguayo Orlando Gill, que se cruzó con los Bleus en la Copa del Mundo",
-          "summary": "El Lille ha llegado a un acuerdo con el club de San Lorenzo para contratar los servicios del portero paraguayo Orlando Gill (26 años) por un contrato de cinco años.",
+          "title": "Lille ficha al portero paraguayo Orlando Gill",
+          "summary": "El LOSC ha cerrado un acuerdo con San Lorenzo para fichar al guardameta paraguayo Orlando Gill por cinco temporadas.",
+          "body": [
+            "El arquero de 26 años, internacional en 11 ocasiones con su selección, se midió a Francia en los octavos de final de la Copa del Mundo el pasado 4 de julio. El traspaso acordado con el club argentino ronda los 4 millones de euros para reforzar la portería del conjunto francés."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ميركاتو: ليل تجند حارس مرمى باراغواي أورلاندو جيل، الذي تقاطع مع البلوز في كأس العالم",
-          "summary": "توصلت LOSC إلى اتفاق مع نادي سان لورينزو للاحتفاظ بخدمات حارس مرمى باراغواي، أورلاندو جيل (26)، لعقد مدته خمس سنوات.",
+          "title": "ليل يتعاقد مع الحارس الباراغواياني أورلاندو خيل",
+          "summary": "توصل نادي ليل إلى اتفاق مع سان لورينزو لضم حارس المرمى الباراغواياني أورلاندو خيل بعقد يمتد لخمس سنوات.",
+          "body": [
+            "وخاض الحارس البالغ من العمر 26 عاماً 11 مباراة دولية مع منتخب بلاده، وواجه منتخب فرنسا في ثمن نهائي كأس العالم في 4 يوليو الماضي. وبلغت قيمة الصفقة المبرمة مع النادي الأرجنتيني نحو 4 ملايين يورو لتعزيز حراسة مرمى الفريق الفرنسي."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Mercato-lille-recrute-le-gardien-du-paraguay-orlando-gill-qui-a-croise-les-bleus-a-la-coupe-du-monde/1712973#at_medium=RSS_feeds",
@@ -320,7 +355,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Mercato-lille-recrute-le-gardien-du-paraguay-orlando-gill-qui-a-croise-les-bleus-a-la-coupe-du-monde/1712973#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-23T11:30:45+00:00"
+        }
+      }
     },
     {
       "id": "bdf9ff3b1928",
@@ -329,26 +377,27 @@
       "i18n": {
         "fr": {
           "title": "Thomas Jörgensen, une première prometteuse avec Toulouse",
-          "summary": "Attendu pour ses débuts, le nouveau milieu de terrain du TFC, Thomas Jörgensen, n'a pas tout réussi mais a quand même marqué les esprits, malgré la défaite contre l'OL (0-2), samedi, lors de la 1re journée de Ligue 1.",
-          "needs_translation": false
+          "summary": "Malgré la défaite de Toulouse face à l'OL (0-2) lors de la 1re journée de Ligue 1, le nouveau milieu de terrain Thomas Jörgensen a réalisé des débuts prometteurs.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Thomas Jörgensen, a promising first with Toulouse",
-          "summary": "Expected for his debut, the new TFC midfielder, Thomas Jörgensen, did not succeed everything but still made his mark, despite the defeat against OL (0-2) on Saturday, during the first day of Ligue 1.",
+          "title": "Thomas Jörgensen, a promising debut with Toulouse",
+          "summary": "Despite Toulouse's 0-2 defeat against OL in the opening matchday of Ligue 1, new midfielder Thomas Jörgensen delivered a promising performance on his debut.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Thomas Jörgensen, una primera promesa con Toulouse",
-          "summary": "Esperado para su debut, el nuevo centrocampista del TFc, Thomas Jörgensen, no lo logró todo, pero aún así marcó las mentes, a pesar de la derrota contra el OL (0-2), el sábado, en la primera jornada de la Ligue 1.",
+          "title": "Thomas Jörgensen, un debut prometedor con Toulouse",
+          "summary": "A pesar de la derrota de Toulouse frente al OL (0-2) en la primera jornada de Ligue 1, el nuevo centrocampista Thomas Jörgensen firmó un prometedor debut.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "توماس يورغنسن، الأول الواعد مع تولوز",
-          "summary": "من المتوقع أن يكون أول ظهور له، لاعب خط وسط TFC الجديد، توماس يورغنسن، لم ينجح في كل شيء لكنه ترك بصمته، على الرغم من الهزيمة ضد OL (0-2) يوم السبت، خلال اليوم الأول من دوري الدرجة الأولى.",
+          "title": "توماس يورغنسن، بداية واعدة مع تولوز",
+          "summary": "رغم هزيمة تولوز أمام أولمبيك ليون بنتيجة (0-2) في الجولة الأولى من الدوري الفرنسي، قدم لاعب الوسط الجديد توماس يورغنسن أداءً واعداً في ظهوره الأول.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Thomas-jorgensen-une-premiere-prometteuse-avec-toulouse/1712971#at_medium=RSS_feeds",
@@ -370,7 +419,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Thomas-jorgensen-une-premiere-prometteuse-avec-toulouse/1712971#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "477cc8db194d",
@@ -379,26 +433,27 @@
       "i18n": {
         "es": {
           "title": "El curioso mensaje del Real Madrid sobre Espí",
-          "summary": "Carlos Espí es el nuevo héroe del Real Madrid y, por lo tanto, del madridismo. El delantero marcó en el minuto 90 el tanto que le dio al equipo blanco el triunfo ante el Espanyol por 1-2.",
-          "needs_translation": false
+          "summary": "Carlos Espí dio la victoria 1-2 al Real Madrid frente al Espanyol al marcar el gol decisivo en el minuto 90.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "Real Madrid's curious message about Espí",
-          "summary": "Carlos Espí is the new hero of Real Madrid and, therefore, of Madridismo. The striker scored in the 90th minute the goal that gave the white team a 1-2 win against Espanyol.",
+          "summary": "Carlos Espí secured a 2-1 victory for Real Madrid against Espanyol by scoring the winning goal in the 90th minute.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Le curieux message du Real Madrid sur Espí",
-          "summary": "Carlos Espí est le nouveau héros du Real Madrid et, par conséquent, du Madridismo. L'attaquant a marqué à la 90e minute le but qui a donné à l'équipe blanche la victoire contre l'Espanyol par 1-2.",
+          "summary": "Carlos Espí a offert la victoire 1-2 au Real Madrid face à l'Espanyol en inscrivant le but décisif à la 90e minute.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "رسالة ريال مدريد الغريبة حول إسبي",
-          "summary": "كارلوس إسبي هو البطل الجديد لريال مدريد، وبالتالي، مدريد. سجل المهاجم في الدقيقة 90 الهدف الذي منح الفريق الأبيض فوزا 1-2 على إسبانيول.",
+          "title": "رسالة غريبة من ريال مدريد بشأن إسبي",
+          "summary": "منح كارلوس إسبي الفوز لريال مدريد بنتيجة 2-1 أمام إسبانيول بتسجيله هدف الحسم في الدقيقة 90.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218829/curioso-mensaje-real-madrid-sobre-espi.html",
@@ -420,7 +475,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218829/curioso-mensaje-real-madrid-sobre-espi.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "33b185c76e7e",
@@ -520,7 +580,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Le-groupe-du-psg-contre-rennes-premiere-pour-ferran-torres-et-mika-godts-mayulu-barcola-et-mbaye-absents/1712967#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "fc7030ef8a2b",
@@ -579,26 +644,27 @@
       "i18n": {
         "es": {
           "title": "Los últimos diez debuts del Barça en Liga",
-          "summary": "El Barça dará hoy el pistoletazo de salida a la Liga 2026/27 en el Martínez Valero ante el Elche (21:30 horas, Movistar LaLiga) . Hansi Flick afronta así su tercera temporada al frente del conjunto blaugrana con el objetivo de conquistar su tercer título liguero consecutivo.",
-          "needs_translation": false
+          "summary": "El Barça debuta hoy en LaLiga 2026/27 visitando al Elche en el Martínez Valero. Hansi Flick inicia su tercera temporada al frente del equipo en busca de su tercer título consecutivo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Barça's last ten debuts in La Liga",
-          "summary": "Barça will kick off La Liga 2026/27 today at Martínez Valero against Elche (9:30 pm, Movistar LaLiga) . Hansi Flick thus faces his third season at the head of the Blaugrana team with the aim of winning his third consecutive league title.",
+          "title": "Barça's last ten LaLiga debuts",
+          "summary": "Barça kick off their 2026/27 LaLiga campaign away against Elche at the Martínez Valero. Hansi Flick begins his third season targeting a third consecutive league title.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Les dix derniers débuts du Barça en Liga",
-          "summary": "Le Barça donnera aujourd'hui le coup d'envoi de la Liga 2026/27 à Martínez Valero contre Elche (21h30, Movistar LaLiga) . Hansi Flick affronte ainsi sa troisième saison à la tête de l'équipe blaugrana avec l'objectif de remporter son troisième titre de champion consécutif.",
+          "summary": "Le Barça lance sa saison de LaLiga 2026/27 sur le terrain d'Elche au Martínez Valero. Hansi Flick y entame sa troisième saison avec l'objectif de décrocher un troisième titre consécutif.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "آخر عشر مشاركات لبرشلونة في الدوري الإسباني",
-          "summary": "سيبدأ برشلونة الدوري الإسباني 2026/27 اليوم في مارتينيز فاليرو ضد إلتشي (9:30 مساءً، موفيستار لاليغا) . وهكذا يواجه هانسي فليك موسمه الثالث على رأس فريق بلوجرانا بهدف الفوز بلقبه الثالث على التوالي في الدوري.",
+          "title": "آخر عشر مباريات افتتاحية لبرشلونة في الدوري الإسباني",
+          "summary": "يستهل برشلونة مشواره في الدوري الإسباني لموسم 2026/27 بمواجهة إلتشي على ملعب مارتينيز فاليرو. ويبدأ المدرب هانزي فليك موسمه الثالث مع الفريق بهدف حصد لقبه الثالث توالياً.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218816/ultimos-diez-debuts-barca-liga.html",
@@ -620,7 +686,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218816/ultimos-diez-debuts-barca-liga.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a130a26314ec",
@@ -629,26 +700,27 @@
       "i18n": {
         "es": {
           "title": "El Celta, cerca de cerrar el fichaje de Couhaib Driouech",
-          "summary": "El extremo de PSV sería el refuerzo de ataque Leer",
-          "needs_translation": false
+          "summary": "El Celta está a punto de concretar la llegada del extremo del PSV Couhaib Driouech para reforzar su delantera.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Celta close to signing Couhaib Driouech",
-          "summary": "The PSV endpoint would be the attack reinforcement Read",
+          "title": "Celta close to completing the signing of Couhaib Driouech",
+          "summary": "Celta are close to finalizing the signing of PSV winger Couhaib Driouech to bolster their attack.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le Celta, proche de boucler le transfert de Couhaib Driouech",
-          "summary": "L'extrémité du PSV serait le renfort d'attaque Lire",
+          "title": "Le Celta proche de boucler la signature de Couhaib Driouech",
+          "summary": "Le Celta est sur le point de finaliser le transfert de l'ailier du PSV Couhaib Driouech pour renforcer son attaque.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "سيلتا تقترب من التوقيع مع كهيب دريوش",
-          "summary": "ستكون نقطة نهاية صمام أمان الضغط هي تعزيز الهجوم قراءة",
+          "title": "سيلتا يقترب من حسم التعاقد مع صهيب دريوش",
+          "summary": "يقترب نادي سيلتا من إتمام صفقة التعاقد مع جناح بي إس في آيندهوفن صهيب دريوش لتعزيز خط هجومه.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.marca.com/futbol/celta/2026/08/23/celta-cerca-cerrar-fichaje-couhaib-driouech.html",
@@ -670,7 +742,12 @@
           "url": "https://www.marca.com/futbol/celta/2026/08/23/celta-cerca-cerrar-fichaje-couhaib-driouech.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2f893e760e8b",
@@ -779,26 +856,27 @@
       "i18n": {
         "es": {
           "title": "Carlos Espí, rentabilidad inmediata para 'Joselu Junior'",
-          "summary": "El delantero valenciano Carlos Espí salvó el estreno de José Mourinho en su segunda etapa en el Real Madrid. Un fichaje de ‘Mou’ que se activó en 24 horas y que es pura rentabilidad.",
-          "needs_translation": false
+          "summary": "El delantero Carlos Espí salvó el estreno de José Mourinho en su segunda etapa en el Real Madrid. Fichado en apenas 24 horas, el valenciano aportó un impacto inmediato.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Carlos Espí, immediate profitability for 'Joselu Junior'",
-          "summary": "Valencia striker Carlos Espí saved José Mourinho's debut in his second stint at Real Madrid. A signing of ‘Mou’ that was activated in 24 hours and that is pure profitability.",
+          "title": "Carlos Espí, immediate return for 'Joselu Junior'",
+          "summary": "Striker Carlos Espí rescued José Mourinho's debut in his second spell at Real Madrid. Signed in just 24 hours at the manager's request, he delivered immediate impact.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Carlos Espí, rentabilité immédiate pour 'Joselu Junior'",
-          "summary": "L'attaquant valencien Carlos Espí a sauvé la première de José Mourinho lors de sa deuxième étape au Real Madrid. Un transfert de ‘Mou’ qui a été activé en 24 heures et qui est une pure rentabilité.",
+          "title": "Carlos Espí, rentabilité immédiate pour « Joselu Junior »",
+          "summary": "L'attaquant Carlos Espí a sauvé les débuts de José Mourinho lors de sa seconde étape au Real Madrid. Recruté en 24 heures par « Mou », il offre un impact immédiat.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كارلوس إسبي، الربحية الفورية لـ \"جوزيلو جونيور\"",
-          "summary": "أنقذ مهاجم فالنسيا كارلوس إسباي ظهور خوسيه مورينيو لأول مرة في فترته الثانية في ريال مدريد. توقيع \"MOU\" تم تفعيله في 24 ساعة وهذا هو الربح الخالص.",
+          "title": "كارلوس إسبي، مردود فوري لـ \"خوسيلو جونيور\"",
+          "summary": "أنقذ المهاجم كارلوس إسبي بداية جوزيه مورينيو في فترته الثانية مع ريال مدريد، بعد حسم صفقته في غضون 24 ساعة فقط ليقدم تأثيراً فورياً.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218822/carlos-espi-rentabilidad-inmediata-joselu-junior.html",
@@ -820,7 +898,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260823/1004218822/carlos-espi-rentabilidad-inmediata-joselu-junior.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d454f9d70e84",
@@ -829,26 +912,27 @@
       "i18n": {
         "es": {
           "title": "Partidos de HOY, domingo 23 de agosto: agenda, horario y por dónde ver fútbol EN VIVO",
-          "summary": "River vs.",
-          "needs_translation": false
+          "summary": "Guía con la programación, los horarios y las opciones de transmisión para seguir los partidos de fútbol en vivo de este domingo 23 de agosto, incluyendo a River.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Matches TODAY, Sunday, August 23: agenda, schedule and where TO watch LIVE FOOTBALL",
-          "summary": "River vs.",
+          "title": "TODAY'S matches, Sunday, August 23: Schedule, kick-off times, and TV channels to watch LIVE football",
+          "summary": "Broadcast schedule, kick-off times, and TV details for live football matches on Sunday, August 23, including the River fixture.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Matchs d'AUJOURD' HUI, dimanche 23 août : agenda, horaires et où regarder DU football EN DIRECT",
-          "summary": "River",
+          "title": "Matchs d'AUJOURD'HUI, dimanche 23 août : programme, horaires et chaînes pour regarder le football EN DIRECT",
+          "summary": "Programme, horaires et chaînes de diffusion pour suivre les rencontres de football en direct de ce dimanche 23 août, incluant le match de River.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباريات اليوم والأحد 23 أغسطس: جدول الأعمال والجدول الزمني وأين تشاهد كرة القدم المباشرة",
-          "summary": "النهر مقابل",
+          "title": "مباريات اليوم الأحد 23 أغسطس: جدول المواعيد والقنوات الناقلة للبث المباشر",
+          "summary": "جدول مباريات كرة القدم ومواعيدها والقنوات الناقلة لمواجهات اليوم الأحد 23 أغسطس في البث المباشر، بما في ذلك مباراة ريفر بليت.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/agenda-deportiva/partidos-hoy-domingo-23-agosto-2026-agenda-ole-horario-ver-futbol-vivo-online_0_tVt5QVe9gm.html",
@@ -870,7 +954,12 @@
           "url": "https://www.ole.com.ar/agenda-deportiva/partidos-hoy-domingo-23-agosto-2026-agenda-ole-horario-ver-futbol-vivo-online_0_tVt5QVe9gm.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c8694a8be3a4",
@@ -879,32 +968,33 @@
       "i18n": {
         "de": {
           "title": "Harry Kane: Traumtore, Grätschen und eine ganz besondere Kabinen-Rede",
-          "summary": "Harry Kane ist der Fußballer des Jahres 2026. Die Argumente sind unschlagbar: 73 Tore für Klub und Land.",
-          "needs_translation": false
+          "summary": "Harry Kane wurde zum Fußballer des Jahres 2026 gewählt. Ausschlaggebend waren unter anderem seine 73 Tore für Klub und Nationalmannschaft.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Harry Kane: dream goals, darts and a very special cabin speech",
-          "summary": "Harry Kane is the footballer of the year 2026. The arguments are unbeatable: 73 goals for club and country.",
+          "title": "Harry Kane: Dream goals, tackles and a very special dressing room speech",
+          "summary": "Harry Kane has been named Footballer of the Year for 2026 after scoring 73 goals for club and country.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Harry Kane : des portes de rêve, des grincements et un discours de cabine très spécial",
-          "summary": "Harry Kane est le footballeur de l'année 2026. Les arguments sont imbattables : 73 buts pour le club et le pays.",
+          "title": "Harry Kane : buts de rêve, tacles et un discours très spécial dans le vestiaire",
+          "summary": "Harry Kane a été élu joueur de l'année 2026 après avoir totalisé 73 buts inscrits en club et en sélection.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Harry Kane: puertas de ensueño, muletas y un discurso muy especial en la cabina",
-          "summary": "Harry Kane es el futbolista del año 2026. Los argumentos son inmejorables: 73 goles para el club y el país.",
+          "title": "Harry Kane: golazos, entradas y una charla muy especial en el vestuario",
+          "summary": "Harry Kane ha sido elegido futbolista del año 2026 tras registrar 73 goles entre su club y su selección.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هاري كين: أهداف الأحلام والسهام وخطاب المقصورة المميز للغاية",
-          "summary": "هاري كين هو لاعب كرة القدم لعام 2026. الحجج لا تقبل المنافسة: 73 هدفًا للنادي والبلد.",
+          "title": "هاري كين: أهداف رائعة وتدخلات قوية وخطاب مميز في غرفة الملابس",
+          "summary": "توج هاري كين بجائزة أفضل لاعب لعام 2026 بعد تسجيله 73 هدفاً مع ناديه ومنتخب بلاده.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/harry-kane-traumtore-graetschen-und-eine-ganz-besondere-kabinen-rede-1245541/video#omrss",
@@ -926,7 +1016,12 @@
           "url": "https://www.kicker.de/harry-kane-traumtore-graetschen-und-eine-ganz-besondere-kabinen-rede-1245541/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "81963c37d28f",
@@ -1103,26 +1198,27 @@
       "i18n": {
         "es": {
           "title": "Momento Ferran Torres",
-          "summary": "Ferran Torres (26 años) podría dar este domingo sus primeros pasos como jugador del PSG .",
-          "needs_translation": false
+          "summary": "Ferran Torres (26 años) podría disputar este domingo sus primeros minutos como futbolista del PSG.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Ferran Torres Moment",
-          "summary": "Ferran Torres (26) could take his first steps as a PSG player this Sunday.",
+          "title": "Ferran Torres' moment",
+          "summary": "Ferran Torres (26) could make his first appearance as a PSG player this Sunday.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Moment Ferran Torres",
-          "summary": "Ferran Torres (26 ans) pourrait faire ses premiers pas en tant que joueur du PSG ce dimanche.",
+          "title": "Le moment Ferran Torres",
+          "summary": "Ferran Torres (26 ans) pourrait faire ses débuts sous le maillot du PSG ce dimanche.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "فيران توريس مومنت",
-          "summary": "يمكن لفيران توريس (26 عاما) أن يخطو خطواته الأولى كلاعب في باريس سان جيرمان يوم الأحد.",
+          "title": "لحظة فيران توريس",
+          "summary": "قد يخوض فيران توريس (26 عاماً) أولى مبارياته بقميص باريس سان جيرمان هذا الأحد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/internacional/20260823/1004218812/momento-ferran-torres.html",
@@ -1144,7 +1240,12 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20260823/1004218812/momento-ferran-torres.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "59d7f026bd11",
@@ -1153,32 +1254,33 @@
       "i18n": {
         "de": {
           "title": "Mourinho will Bellingham in Tornähe: \"Mag diese Version von Jude\"",
-          "summary": "Real-Coach José Mourinho weiß nach dem späten 2:1 bei Espanyol, wo Jude Bellingham seine Stärken am besten ausspielen kann. Der Portugiese sieht den Engländer vor allem in Tornähe.",
-          "needs_translation": false
+          "summary": "Nach dem 2:1-Sieg bei Espanyol betonte José Mourinho, dass Jude Bellingham seine Stärken am besten in Tornähe ausspielen kann.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mourinho wants Bellingham near the goal: \"Like this version of Jude\"",
-          "summary": "Real coach José Mourinho knows where Jude Bellingham can best play his strengths after the late 2:1 at Espanyol. The Portuguese sees the Englishman above all in the vicinity of the goal.",
+          "title": "Mourinho wants Bellingham close to goal: \"Like this version of Jude\"",
+          "summary": "Following a late 2-1 win at Espanyol, José Mourinho stated that Jude Bellingham's strengths are best utilized when playing close to the goal.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Mourinho veut Bellingham près de la porte : « Aime cette version de Jude »",
-          "summary": "L'entraîneur du Real José Mourinho sait, après la fin du 2:1 à l'Espanyol, où Jude Bellingham peut le mieux montrer ses points forts. Le Portugais voit l'Anglais surtout près de la porte.",
+          "title": "Mourinho veut Bellingham près du but : « J'aime cette version de Jude »",
+          "summary": "Après la victoire 2-1 face à Espanyol, José Mourinho a souligné que Jude Bellingham exploite au mieux ses qualités en évoluant près du but adverse.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Mourinho quiere a Bellingham cerca de la torre: \"Me gusta esta versión de Jude\"",
-          "summary": "El entrenador del Real Madrid, José Mourinho, sabe dónde Jude Bellingham puede jugar mejor sus puntos fuertes después del último 2-1 en el Espanyol. El portugués ve al inglés sobre todo cerca de la puerta.",
+          "title": "Mourinho quiere a Bellingham cerca de la portería: \"Me gusta esta versión de Jude\"",
+          "summary": "Tras la victoria por 2-1 ante Espanyol, José Mourinho afirmó que Jude Bellingham rinde al máximo cuando juega cerca del área rival.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مورينيو يريد بيلينجهام بالقرب من الهدف: \"مثل هذه النسخة من جود\"",
-          "summary": "يعرف مدرب ريال مدريد خوسيه مورينيو أين يمكن لجود بيلينجهام أن يلعب بشكل أفضل نقاط قوته بعد المباراة المتأخرة 2:1 في إسبانيول. يرى البرتغاليون الإنجليزي قبل كل شيء بالقرب من المرمى.",
+          "title": "مورينيو يريد بيلينغهام قريباً من المرمى: \"أحب هذه النسخة من جود\"",
+          "summary": "أكد المدرب جوزيه مورينيو بعد الفوز بنتيجة 2-1 على إسبانيول أن جود بيلينغهام يبرز أفضل إمكاناته عندما يلعب قريباً من المرمى.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/mourinho-will-bellingham-in-tornaehe-mag-diese-version-von-jude-1246021/video#omrss",
@@ -1200,7 +1302,12 @@
           "url": "https://www.kicker.de/mourinho-will-bellingham-in-tornaehe-mag-diese-version-von-jude-1246021/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "998a7bfdc48c",
@@ -1209,26 +1316,27 @@
       "i18n": {
         "es": {
           "title": "La primera gran decisión de Terzic pasa por decidir el sustituto de Yuri",
-          "summary": "El Athletic visitará al Barça con varias opciones: Berenguer, Adama o un plan de tres centrales Leer",
-          "needs_translation": false
+          "summary": "Ante la visita del Athletic al Barça, Terzic debe definir el sustituto de Yuri, barajando opciones como Berenguer, Adama o una línea de tres centrales.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Terzic's first big decision involves deciding on Yuri's replacement",
-          "summary": "Athletic will visit Barça with several options: Berenguer, Adama or a three centre-back plan Read",
+          "title": "Terzic's first big decision is choosing Yuri's replacement",
+          "summary": "Ahead of Athletic's visit to Barça, Terzic must resolve how to replace Yuri, weighing options including Berenguer, Adama, or a three-centre-back setup.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La première grande décision de Terzic est de décider du remplaçant de Yuri",
-          "summary": "L'Athletic visitera le Barça avec plusieurs options : Berenguer, Adama ou un plan à trois centrales Lire",
+          "title": "La première grande décision de Terzic passe par le choix du remplaçant de Yuri",
+          "summary": "Pour le déplacement de l'Athletic au Barça, Terzic doit choisir le remplaçant de Yuri entre Berenguer, Adama ou un système à trois défenseurs centraux.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يتضمن أول قرار كبير يتخذه تيرزيتش اتخاذ قرار بشأن استبدال يوري",
-          "summary": "سيزور أتلتيك برشلونة مع عدة خيارات: Berenguer أو Adama أو خطة الظهير المركزي الثلاثة Read",
+          "title": "أول قرار كبير لتيرزيتش يكمن في اختيار بديل يوري",
+          "summary": "قبل مواجهة برشلونة، يفاضل تيرزيتش مدرب أتلتيك بيلباو بين إشراك بيرينغير أو أداما أو الاعتماد على ثلاثة قلوب دفاع لتعويض غياب يوري.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.marca.com/futbol/athletic/2026/08/23/primera-gran-decision-terzic-pasa-decidir-sustituto-yuri.html",
@@ -1250,7 +1358,12 @@
           "url": "https://www.marca.com/futbol/athletic/2026/08/23/primera-gran-decision-terzic-pasa-decidir-sustituto-yuri.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b45eb090f163",
@@ -1314,27 +1427,28 @@
       "summary": "Notición en la primera convocatoria del Barça en LaLiga 2026-27. Hansi Flick no se lleva a Alejandro Balde, con su futuro en el aire, a Elche , donde esta noche (21.30 h/Movistar LaLiga), el vigente campeón iniciará la carrera hacia tercer título consecutivo.",
       "i18n": {
         "es": {
-          "title": "¡Balde, fuera de la lista de convocados del Barça para Elche!",
-          "summary": "Notición en la primera convocatoria del Barça en LaLiga 2026-27. Hansi Flick no se lleva a Alejandro Balde, con su futuro en el aire, a Elche , donde esta noche (21.30 h/Movistar LaLiga), el vigente campeón iniciará la carrera hacia tercer título consecutivo.",
-          "needs_translation": false
+          "title": "Balde, fuera de la lista de convocados del Barça para Elche",
+          "summary": "Hansi Flick ha dejado fuera a Alejandro Balde de la convocatoria del Barça para el estreno en LaLiga frente al Elche, en medio de la incertidumbre sobre su futuro.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Bucket, off the Barça squad list for Elche!",
-          "summary": "Notification in the first call-up of Barça in LaLiga 2026-27. Hansi Flick does not take Alejandro Balde, with his future in the air, to Elche , where tonight (9.30 pm/Movistar LaLiga), the reigning champion will start the race for the third consecutive title.",
+          "title": "Balde left out of Barça squad for Elche clash",
+          "summary": "Hansi Flick has omitted Alejandro Balde from the Barça squad for their LaLiga opener against Elche, amid uncertainty surrounding the defender's future.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Balde, hors de la liste des convoqués du Barça pour Elche !",
-          "summary": "Nouvelle lors de la première convocation du Barça à LaLiga 2026-27. Hansi Flick n'emmène pas Alejandro Balde, avec son avenir en l'air, à Elche , où ce soir (21h30/Movistar LaLiga), le champion en titre commencera la course vers le troisième titre consécutif.",
+          "title": "Balde absent du groupe du Barça pour affronter Elche",
+          "summary": "Hansi Flick a écarté Alejandro Balde du groupe du Barça pour la première journée de LaLiga face à Elche, alors que l'avenir du joueur reste incertain.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "دلو، خارج قائمة فرقة برشلونة من أجل إلتشي!",
-          "summary": "الإخطار في أول استدعاء لبرشلونة في الدوري الإسباني 2026-2027. هانسي فليك لا يأخذ أليخاندرو بالدي، مع مستقبله في الهواء، إلى إلتشي ، حيث الليلة (9.30 مساء/موفيستار لاليغا)، سيبدأ البطل الحاكم السباق على اللقب الثالث على التوالي.",
+          "title": "استبعاد بالدي من قائمة برشلونة لمواجهة إلتشي",
+          "summary": "استبعد المدرب هانزي فليك الظهير أليخاندرو بالدي من قائمة برشلونة لمواجهة إلتشي في افتتاح الدوري الإسباني، وسط غموض يحيط بمستقبل اللاعب.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218781/lista-convocados-barca-elche-tres-fichajes-seis-filial.html",
@@ -1356,7 +1470,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218781/lista-convocados-barca-elche-tres-fichajes-seis-filial.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5ab30672cd0c",
@@ -1365,26 +1484,27 @@
       "i18n": {
         "es": {
           "title": "Informan del viaje sin éxito de Aperribay y Bretos a Brasil para fichar a Jonathan Jesús",
-          "summary": "La Real Sociedad sigue buscando central, y los días van pasando, con el cierre de mercado acercándose. Tras rechazar la opción de incorporar a Aguerd , la búsqueda continúa y el club txuri urdin parece que hizo un viaje a Brasil para intentar cerrar una operación.",
-          "needs_translation": false
+          "summary": "La Real Sociedad sigue buscando un defensa central antes del cierre del mercado. Tras descartar la opción de Aguerd, los dirigentes del club viajaron sin éxito a Brasil para intentar fichar a Jonathan Jesús.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "They report the unsuccessful trip of Aperribay and Bretos to Brazil to sign Jonathan Jesús",
-          "summary": "The Royal Society continues to look for headquarters, and the days are passing, with the closing of the market approaching. After rejecting the option of incorporating Aguerd , the search continues and the Txuri Urdin club seems to have made a trip to Brazil to try to close a deal.",
+          "title": "Aperribay and Bretos reported to have made an unsuccessful trip to Brasil to sign Jonathan Jesús",
+          "summary": "Real Sociedad continue searching for a center-back before the transfer deadline. After ruling out the option of signing Aguerd, club directors made an unsuccessful trip to Brasil for Jonathan Jesús.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Ils rapportent le voyage infructueux d'Aperribay et de Bretos au Brésil pour signer Jonathan Jesús",
-          "summary": "La Real Sociedad continue de chercher central, et les jours passent, avec la fermeture du marché qui approche. Après avoir refusé l'option d'incorporer Aguerd , les recherches se poursuivent et le club txuri urdin semble avoir fait un voyage au Brésil pour tenter de clore une opération.",
+          "title": "Aperribay et Bretos auraient voyagé sans succès au Brasil pour recruter Jonathan Jesús",
+          "summary": "À la recherche d'un défenseur central avant la fin du mercato et après avoir écarté la piste Aguerd, la Real Sociedad a effectué un voyage infructueux au Brasil pour recruter Jonathan Jesús.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أبلغوا عن الرحلة غير الناجحة لأبيريباي وبريتوس إلى البرازيل للتوقيع مع جوناثان جيسوس",
-          "summary": "تواصل الجمعية الملكية البحث عن المقر، والأيام تمر، مع اقتراب إغلاق السوق. بعد رفض خيار دمج Aguerd ، يستمر البحث ويبدو أن نادي Txuri Urdin قام برحلة إلى البرازيل لمحاولة إبرام صفقة.",
+          "title": "تقارير تفيد بفشل سفر أبيريباي وبريتوس إلى البرازيل للتعاقد مع جوناثان جيسوس",
+          "summary": "يواصل ريال سوسيداد مساعيه لضم مدافع مركزي قبل إغلاق سوق الانتقالات، وذلك بعد صرف النظر عن خيار أكرد وفشل رحلة مسؤوليه إلى البرازيل لحسم صفقة جوناثان جيسوس.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260823/1004218810/informan-viaje-exito-aperribay-bretos-brasil-fichar-jonathan-jesus.html",
@@ -1406,7 +1526,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260823/1004218810/informan-viaje-exito-aperribay-bretos-brasil-fichar-jonathan-jesus.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6fd656dcaa9d",
@@ -1415,26 +1540,27 @@
       "i18n": {
         "es": {
           "title": "Los posibles onces del Atlético-Villarreal",
-          "summary": "El Atlético de Madrid, de Diego Pablo Simeon e, se mide, este domingo 23 agosto, al Villarreal , en la segunda jornada de LaLiga . Lo hace en un Metropolitano que dictará sentencia respecto a Julián Álvarez , convocado por primera vez, y quien podría tener algunos minutos.",
-          "needs_translation": false
+          "summary": "El Atlético de Madrid de Diego Pablo Simeone recibe al Villarreal en la segunda jornada de LaLiga en el Metropolitano, donde Julián Álvarez podría debutar tras su primera convocatoria.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The possible ounces of Atlético-Villarreal",
-          "summary": "Diego Pablo Simeon's Atlético de Madrid will face Villarreal on Sunday, August 23, in the second round of LaLiga . He does it in a Metropolitan who will issue a sentence regarding Julián Álvarez , summoned for the first time, and who could have a few minutes.",
+          "title": "Probable line-ups for Atlético-Villarreal",
+          "summary": "Atlético de Madrid host Villarreal at the Metropolitano on matchday two of LaLiga. Included in Diego Pablo Simeone's squad for the first time, Julián Álvarez could make his debut.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Les onces possibles de l'Atlético-Villarreal",
-          "summary": "L'Atlético de Madrid, de Diego Pablo Simeon et, se mesure, ce dimanche 23 août, à Villarreal , lors de la deuxième journée de LaLiga . Il le fait dans un Metropolitano qui prononcera une sentence à l'encontre de Julián Álvarez , convoqué pour la première fois, et qui pourrait avoir quelques minutes.",
+          "title": "Les compositions probables d'Atlético-Villarreal",
+          "summary": "L'Atlético de Madrid affronte Villarreal au Metropolitano lors de la 2e journée de LaLiga. Convoqué pour la première fois par Diego Pablo Simeone, Julián Álvarez pourrait disputer ses premières minutes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أوقية أتلتيكو فيلاريال المحتملة",
-          "summary": "سيواجه أتلتيكو مدريد دييغو بابلو سيميون فياريال يوم الأحد 23 أغسطس، في الجولة الثانية من الدوري الإسباني . يفعل ذلك في متروبوليتان سيصدر حكمًا بشأن جوليان ألفاريز ، الذي تم استدعاؤه لأول مرة، والذي يمكن أن يكون لديه بضع دقائق.",
+          "title": "التشكيلتان المحتملتان لمباراة أتلتيكو مدريد وفياريال",
+          "summary": "يستضيف أتلتيكو مدريد بقيادة دييغو بابلو سيميوني فريق فياريال في الجولة الثانية من الدوري الإسباني على ملعب ميتروبوليتانو، حيث قد يسجل خوليان ألفاريز ظهوره الأول بعد استدعائه.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260823/1004218809/posibles-onces-atletico-villarreal.html",
@@ -1456,7 +1582,12 @@
           "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260823/1004218809/posibles-onces-atletico-villarreal.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "427560bb7ac9",
@@ -1465,26 +1596,27 @@
       "i18n": {
         "es": {
           "title": "Cala explica la patada a Vinicius cuando estaba en el suelo",
-          "summary": "Álex Calatrava Torrado , de 26 años ha escalado dos divisiones en apenas dos años. De ser una pieza muy destacada en el filial del Atlético de Madrid a irse gratis al Castellón , rozar el ascenso, y finalmente fichar por el Espanyol .",
-          "needs_translation": false
+          "summary": "Álex Calatrava Torrado, conocido como Cala, fichó por el Espanyol tras destacar en el filial del Atlético de Madrid y pasar por el Castellón, subiendo dos divisiones en dos años.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Cala explains the kick to Vinicius when he was on the ground",
-          "summary": "Álex Calatrava Torrado , 26, has scaled two divisions in just two years. From being a very prominent piece in the subsidiary of Atlético de Madrid to going for free to Castellón , touching the promotion, and finally signing for Espanyol .",
+          "title": "Cala explains the kick to Vinicius while on the ground",
+          "summary": "Álex Calatrava Torrado, known as Cala, joined Espanyol after standing out in Atlético de Madrid's reserve team and playing for Castellón, rising two divisions in two years.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Cala explique le coup de pied à Vinicius quand il était au sol",
-          "summary": "Álex Calatrava Torrado , 26 ans, a escaladé deux divisions en à peine deux ans. D'être une pièce très importante dans la filiale de l'Atlético de Madrid à aller gratuitement à Castellón , frôler la montée, et finalement signer à l'Espanyol .",
+          "title": "Cala explique son coup de pied à Vinicius alors qu'il était au sol",
+          "summary": "Álex Calatrava Torrado, surnommé Cala, a signé à l'Espanyol après s'être illustré avec la réserve de l'Atlético de Madrid puis à Castellón, grimpant deux divisions en deux ans.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يشرح كالا الركلة لفينيكوس عندما كان على الأرض",
-          "summary": "أليكس كالاترافا ترادو ، 26 عاما، تسلق قسمين في عامين فقط. من كونها قطعة بارزة جدا في شركة تابعة لأتلتيكو دي مدريد للذهاب مجانا إلى كاستيلون ، لمس الترويج، وأخيرا التوقيع على إسبانيول .",
+          "title": "كالا يوضح ركلته لفينيسيوس وهو على الأرض",
+          "summary": "انتقل أليكس كالاترافا تورادو الملقب بـ كالا إلى إسبانيول بعد تألقه مع رديف أتلتيكو مدريد ولعبه في كاستيلون، ليرتقي درجتين خلال عامين فقط.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/rcd-espanyol/20260823/1004218804/cala-explica-patada-vinicius-suelo.html",
@@ -1506,7 +1638,12 @@
           "url": "https://www.mundodeportivo.com/futbol/rcd-espanyol/20260823/1004218804/cala-explica-patada-vinicius-suelo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6c9b55c185c1",
@@ -1571,32 +1708,33 @@
       "i18n": {
         "de": {
           "title": "Kompanys Trick mit Brown war gut vorbereitet",
-          "summary": "Nathaniel Brown sollte beim FC Bayern eigentlich die linke Seite verstärken. Gegen Borussia Dortmund rückte er überraschend auf die Zehn und traf bei seinem Pflichtspieldebüt direkt zum Supercup-Sieg.",
-          "needs_translation": false
+          "summary": "Nathaniel Brown rückte für den FC Bayern gegen Borussia Dortmund überraschend auf die Zehn vor und erzielte bei seinem Pflichtspieldebüt direkt das Siegtor im Supercup.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Company's trick with Brown was well prepared",
-          "summary": "Nathaniel Brown was supposed to strengthen the left side of FC Bayern. Against Borussia Dortmund, he surprisingly moved up to ten and scored directly to win the Supercup on his competitive debut.",
+          "title": "Kompany's trick with Brown was well prepared",
+          "summary": "Deployed unexpectedly as a number ten for FC Bayern against Borussia Dortmund, Nathaniel Brown scored on his competitive debut to secure the Supercup victory.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "L'astuce de Kompany avec Brown était bien préparée",
-          "summary": "Nathaniel Brown était censé renforcer le côté gauche du Bayern. Contre le Borussia Dortmund, il a pris par surprise la dixième place et a marqué directement pour la victoire en Supercoupe lors de ses débuts en match officiel.",
+          "summary": "Surprenant numéro dix du FC Bayern face au Borussia Dortmund, Nathaniel Brown a marqué lors de son premier match officiel pour sceller la victoire en Supercup.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El truco de la compañía con Brown estaba bien preparado",
-          "summary": "Nathaniel Brown debería reforzar el lado izquierdo en el FC Bayern. Contra el Borussia Dortmund llegó sorprendentemente a los diez y anotó en su debut en el partido oficial directamente a la victoria en la Supercopa.",
+          "title": "El truco de Kompany con Brown estaba bien preparado",
+          "summary": "Alineado por sorpresa como número diez con el FC Bayern ante el Borussia Dortmund, Nathaniel Brown marcó en su debut oficial para dar el triunfo en la Supercup.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تم إعداد خدعة الشركة مع براون بشكل جيد",
-          "summary": "كان من المفترض أن يقوي ناثانيل براون الجانب الأيسر من بايرن. ضد بوروسيا دورتموند، انتقل بشكل مفاجئ إلى عشرة وسجل مباشرة للفوز بكأس السوبر في أول مباراة تنافسية له.",
+          "title": "خطة كومباني مع براون كانت مدروسة بعناية",
+          "summary": "شارك ناثانيال براون بشكل مفاجئ في مركز صانع الألعاب مع بايرن ميونخ ضد بوروسيا دورتموند، وسجل في أول ظهور رسمي له ليقود فريقه للتتويج بكأس السوبر.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/regional/br/br-von-links-auf-die-zehn-warum-kompany-auf-brown-setzt-102.html",
@@ -1624,7 +1762,12 @@
           "url": "https://www.sportschau.de/regional/br/br-von-links-auf-die-zehn-warum-kompany-auf-brown-setzt-102.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3069956a9769",
@@ -1733,26 +1876,27 @@
       "i18n": {
         "es": {
           "title": "El Deportivo no piensa vender a Yeremay: \"Cuento con él, nuestra idea es que esté\"",
-          "summary": "Yeremay Hernández vuelve a estar en boca de todos.",
-          "needs_translation": false
+          "summary": "El Deportivo descarta la venta de Yeremay Hernández y ratifica su intención de mantener al jugador en la plantilla.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Deportivo does not plan to sell Yeremay: \"I'm counting on him, our idea is that he is\"",
-          "summary": "Yeremay Hernández is once again on everyone's lips.",
+          "title": "Deportivo does not plan to sell Yeremay: \"I'm counting on him, our idea is for him to stay\"",
+          "summary": "Deportivo has ruled out selling Yeremay Hernández and intends to keep the forward in its squad.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le Deportivo n'a pas l'intention de vendre Yeremay : « Je compte sur lui, notre idée est qu'il soit là »",
-          "summary": "Yeremay Hernández est à nouveau sur toutes les lèvres.",
+          "title": "Le Deportivo n'envisage pas de vendre Yeremay : « Je compte sur lui, notre idée est qu'il reste »",
+          "summary": "Le Deportivo exclut tout départ de Yeremay Hernández et confirme son intention de conserver le joueur dans son effectif.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "لا يخطط الديبورتيفو لبيع يريماي: \"أنا أعتمد عليه، فكرتنا هي أنه كذلك\"",
-          "summary": "يريماي هيرنانديز مرة أخرى على شفاه الجميع.",
+          "title": "ديبورتيفو لا يفكر في بيع ييريماي: \"أعتمد عليه، وفكرتنا هي بقاؤه\"",
+          "summary": "استبعد نادي ديبورتيفو بيع لاعبه ييريماي هيرنانديز، مؤكداً رغبته في استمراره والاعتماد عليه ضمن صفوف الفريق.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/deportivo-piensa-vender-yeremay-cuento-133581979?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -1774,7 +1918,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/deportivo-piensa-vender-yeremay-cuento-133581979?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "30863a42aed8",
@@ -1783,26 +1932,27 @@
       "i18n": {
         "es": {
           "title": "Athenea del Castillo comienza su recuperación tras ser operada de la clavícula",
-          "summary": "Athenea del Castillo ya ha comenzado a trabajar en su recuperación.",
-          "needs_translation": false
+          "summary": "Athenea del Castillo ha iniciado su proceso de recuperación tras someterse a una operación quirúrgica de clavícula.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Athenea del Castillo begins her recovery after having surgery on her collarbone",
-          "summary": "Athenea del Castillo has already begun work on her recovery.",
+          "title": "Athenea del Castillo begins recovery following clavicle surgery",
+          "summary": "Athenea del Castillo has started her recovery process after undergoing surgery on her clavicle.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Athenea del Castillo commence sa récupération après avoir été opérée de la clavicule",
-          "summary": "Athenea del Castillo a déjà commencé à travailler sur sa récupération.",
+          "title": "Athenea del Castillo commence sa rééducation après son opération de la clavicule",
+          "summary": "Athenea del Castillo a entamé son processus de rééducation après avoir subi une intervention chirurgicale à la clavicule.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تبدأ أثينا ديل كاستيلو شفائها بعد إجراء عملية جراحية على عظم الترقوة",
-          "summary": "بدأت أثينا ديل كاستيلو بالفعل العمل على شفائها.",
+          "title": "أثينيا ديل كاستيو تبدأ مرحلة التعافي بعد خضوعها لجراحة في الترقوة",
+          "summary": "بدأت اللاعبة أثينيا ديل كاستيو مرحلة التأهيل والتعافي بعد خضوعها لعملية جراحية في عظم الترقوة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/femenino/20260823/1004218802/athenea-castillo-comienza-recuperacion-operada-clavicula.html",
@@ -1824,7 +1974,12 @@
           "url": "https://www.mundodeportivo.com/futbol/femenino/20260823/1004218802/athenea-castillo-comienza-recuperacion-operada-clavicula.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "01f5e1fd00f3",
@@ -1833,26 +1988,27 @@
       "i18n": {
         "es": {
           "title": "Almada quiere a Deossa en el América",
-          "summary": "El Club América de México se ha dirigido al Real Betis para interesarse por las condiciones del fichaje de Nelson Deossa, por el que el club verdiblanco pide 15 millones de dólares (12,85M€), según informa Fox Sports y replican diversos medios mexicanos .",
-          "needs_translation": false
+          "summary": "El Club América de México ha consultado al Real Betis sobre el fichaje de Nelson Deossa. El conjunto verdiblanco solicita 15 millones de dólares por su traspaso.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Almada wants Deossa in the Americas",
-          "summary": "Club América de México has approached Real Betis to inquire about the conditions of the signing of Nelson Deossa, for which the Verdiblanco club is asking 15 million dollars (€12.85M), according to Fox Sports and various Mexican media.",
+          "title": "Almada wants Deossa at Club América",
+          "summary": "Club América de México have approached Real Betis regarding the transfer of Nelson Deossa. The Spanish side are demanding $15 million (€12.85m) to let him go.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Almada veut Deossa en Amérique",
-          "summary": "Le Club América de México s'est adressé au Real Betis pour s'intéresser aux conditions du transfert de Nelson Deossa, pour lequel le club verdiblanco demande 15 millions de dollars (12,85 millions d' € ), selon Fox Sports et plusieurs médias mexicains .",
+          "title": "Almada veut Deossa au Club América",
+          "summary": "Le Club América de México s'est renseigné auprès du Real Betis pour le transfert de Nelson Deossa. Le club espagnol réclame 15 millions de dollars pour le libérer.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ألمادا تريد ديوسا في الأمريكتين",
-          "summary": "اتصل نادي أمريكا دي مكسيكو بريال بيتيس ليسأل عن شروط توقيع نيلسون ديوسا، والتي يطلب نادي فيرديبلانكو منها 15 مليون دولار (12.85 مليون يورو)، كما ذكرت فوكس سبورتس وكررتها وسائل الإعلام المكسيكية المختلفة.",
+          "title": "ألمادا يريد ديوسا في كلوب أمريكا",
+          "summary": "استفسر نادي كلوب أمريكا المكسيكي من ريال بيتيس عن شروط ضم نيلسون ديوسا، حيث يطلب النادي الإسباني 15 مليون دولار للتخلي عن خدماته.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/betis/20260823/1004218796/almada-quiere-deossa-america.html",
@@ -1874,7 +2030,12 @@
           "url": "https://www.mundodeportivo.com/futbol/betis/20260823/1004218796/almada-quiere-deossa-america.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "74d2862e5c1d",
@@ -1883,26 +2044,27 @@
       "i18n": {
         "es": {
           "title": "Vinculan al central zurdo Gonçalo Inácio con el Barça",
-          "summary": "El canal portugués Now Canal vinculó anoche a Gonçalo Inácio, central del Sporting Club de Portugal, con el FC Barcelona.",
-          "needs_translation": false
+          "summary": "El canal portugués Now Canal ha vinculado a Gonçalo Inácio, defensa central zurdo del Sporting Club de Portugal, con el FC Barcelona.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "They link left-handed centre-back Gonçalo Inácio with Barça",
-          "summary": "Last night, the Portuguese channel Now Canal linked Gonçalo Inácio, central defender of Sporting Club de Portugal, with FC Barcelona.",
+          "title": "Left-footed centre-back Gonçalo Inácio linked with Barça",
+          "summary": "Portuguese broadcaster Now Canal has linked Sporting Club de Portugal left-footed centre-back Gonçalo Inácio with a move to FC Barcelona.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le défenseur central gaucher Gonçalo Inácio est lié au Barça",
-          "summary": "La chaîne portugaise Now Canal a lié hier soir Gonçalo Inácio, central du Sporting Club de Portugal, au FC Barcelone.",
+          "title": "Le défenseur central gaucher Gonçalo Inácio associé au Barça",
+          "summary": "Selon la chaîne portugaise Now Canal, le défenseur central gaucher du Sporting Club de Portugal, Gonçalo Inácio, est associé au FC Barcelona.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يربطون الظهير الأيسر غونسالو إيناسيو ببرشلونة",
-          "summary": "الليلة الماضية، ربطت قناة Now Canal البرتغالية غونسالو إيناسيو، المدافع المركزي لنادي سبورتنغ دي البرتغال، مع نادي برشلونة.",
+          "title": "ربط المدافع الأيسر غونزالو إيناسيو بالانتقال إلى برشلونة",
+          "summary": "ربطت قناة ناو البرتغالية مدافع سبورتينغ لشبونة غونزالو إيناسيو بالانتقال إلى نادي برشلونة الإسباني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218795/vinculan-central-goncalo-inacio-barca.html",
@@ -1924,7 +2086,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260823/1004218795/vinculan-central-goncalo-inacio-barca.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     }
   ]
 }
