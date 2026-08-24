@@ -62,7 +62,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 2,
+        "quality": 3,
         "source_read": "skipped"
       }
     },
@@ -73,26 +73,27 @@
       "i18n": {
         "es": {
           "title": "Tres jugadores de River entrenaron más para llegar bien a la Copa",
-          "summary": "Coudet utilizó la práctica de este lunes para poner a punto a dos campeones del mundo y al goleador de River en la temporada.",
-          "needs_translation": false
+          "summary": "Coudet utilizó el entrenamiento del lunes para poner a punto a dos campeones del mundo y al máximo goleador de River de cara a la Copa.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Three River players trained more to make it to the Cup",
-          "summary": "Coudet used Monday's practice to fine-tune two world champions and River's scorer for the season.",
+          "title": "Three River players trained extra to be ready for the Copa",
+          "summary": "Coudet used Monday's training session to prepare two World Cup winners and River's top scorer of the season ahead of the Copa.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Trois joueurs de River se sont entraînés plus pour bien atteindre la Coupe",
-          "summary": "Coudet a utilisé la pratique de ce lundi pour mettre au point deux champions du monde et le buteur de River cette saison.",
+          "title": "Trois joueurs de River se sont entraînés davantage pour être prêts pour la Copa",
+          "summary": "Coudet a profité de la séance de lundi pour remettre en forme deux champions du monde et le meilleur buteur de River en vue de la Copa.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تدرب ثلاثة لاعبين ريفيين أكثر للوصول إلى الكأس",
-          "summary": "استخدم كوديه تدريب يوم الاثنين لضبط اثنين من أبطال العالم وهداف ريفر لهذا الموسم.",
+          "title": "ثلاثة لاعبين من ريفر بليت يتدربون بشكل مكثف استعدادا للمسابقة القارية",
+          "summary": "استغل المدرب كوديت الحصة التدريبية ليوم الاثنين لتجهيز لاعبين متوجين بكأس العالم بالإضافة إلى هداف ريفر بليت هذا الموسم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-coudet-driussi-acuna-montiel-santa-fe-sudamericana_0_sokJLIZ3nP.html",
@@ -114,7 +115,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-coudet-driussi-acuna-montiel-santa-fe-sudamericana_0_sokJLIZ3nP.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "cba532d3313a",
@@ -123,26 +129,27 @@
       "i18n": {
         "en": {
           "title": "Who has made Troy's Premier League team of the week?",
-          "summary": "After every round of Premier League matches this season, Troy Deeney gives us his team of the week. Do you agree with his choices?",
-          "needs_translation": false
+          "summary": "Troy Deeney has selected his Premier League team of the week following the latest round of matches.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Qui a fait l'équipe de la semaine de Troy en Premier League ?",
-          "summary": "Après chaque tour de matches de Premier League cette saison, Troy Deeney nous donne son équipe de la semaine. Êtes-vous d'accord avec ses choix ?",
+          "title": "Qui figure dans l'équipe de la semaine de Premier League selon Troy ?",
+          "summary": "Troy Deeney a composé son équipe type de la semaine à l'issue de la dernière journée de Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "¿Quién ha formado parte del equipo de la semana de la Premier League de Troy?",
-          "summary": "Después de cada ronda de partidos de la Premier League esta temporada, Troy Deeney nos regala su equipo de la semana. ¿Está de acuerdo con sus elecciones?",
+          "title": "¿Quién figura en el equipo de la semana de Troy en la Premier League?",
+          "summary": "Troy Deeney ha elegido su once ideal de la semana tras completarse la última jornada de la Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "من الذي جعل فريق تروي في الدوري الممتاز لهذا الأسبوع ؟",
-          "summary": "بعد كل جولة من مباريات الدوري الممتاز هذا الموسم، يعطينا تروي دينى فريقه لهذا الأسبوع. هل تتفق مع خياراته ؟",
+          "title": "من انضم إلى تشكيلة الأسبوع في الدوري الإنجليزي الممتاز باختيار تروي؟",
+          "summary": "اختار تروي ديني تشكيلة الأسبوع المثالية لمباريات الدوري الإنجليزي الممتاز بعد ختام مواجهات الجولة الأخيرة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cg59814gvj9o?at_medium=RSS&at_campaign=rss",
@@ -787,28 +794,48 @@
       "summary": "Héctor Fort (20 años) es otro de los jugadores del FC Barcelona que debe encontrar una salida en este tramo final de mercado veraniego.",
       "i18n": {
         "es": {
-          "title": "La Real Sociedad busca la fórmula para llevarse a Héctor Fort",
-          "summary": "La Real Sociedad trabaja en la fórmula para incorporar a Héctor Fort (20 años), quien busca una salida del FC Barcelona en la recta final del mercado estival.",
+          "title": "La Real Sociedad pugna con el Borussia Dortmund por Héctor Fort",
+          "summary": "La Real Sociedad busca una fórmula económica viable para fichar a Héctor Fort, lateral descartado por Hansi Flick en el FC Barcelona.",
+          "body": [
+            "El defensa de 20 años se ejercita al margen del grupo y necesita encontrar equipo antes del cierre del mercado. Aunque el Borussia Dortmund marcha en cabeza para cerrar su llegada a la Bundesliga, el conjunto donostiarra intensifica los contactos para convencer al canterano azulgrana.",
+            "El FC Barcelona tasa la salida de Fort entre 15 y 20 millones de euros. La cifra definitiva podría rebajarse si la entidad culé conserva el 50 % de sus derechos económicos o se asegura una opción de recompra de cara al futuro."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "gemini-edi"
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Real Sociedad seek formula to sign Héctor Fort",
-          "summary": "Real Sociedad are exploring ways to sign Héctor Fort (20), who is looking to leave FC Barcelona in the closing stages of the summer transfer window.",
+          "title": "Real Sociedad move for Héctor Fort amid Borussia Dortmund interest",
+          "summary": "Real Sociedad are exploring an affordable deal to sign Héctor Fort, who has been deemed surplus to requirements by Hansi Flick at FC Barcelona.",
+          "body": [
+            "The 20-year-old full-back is currently training away from the first-team group and needs to find a new club before the transfer window shuts. While Borussia Dortmund lead the race to take him to the Bundesliga, the Basque side are stepping up talks to convince the academy graduate.",
+            "FC Barcelona value Fort between €15m and €20m. That price tag could drop if the Catalan club retain a 50% sell-on cut or insert a buy-back clause for the future."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "gemini-edi"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "La Real Sociedad cherche la formule pour s'offrir Héctor Fort",
-          "summary": "La Real Sociedad étudie une formule pour s'attacher les services d'Héctor Fort (20 ans), qui doit quitter le FC Barcelona avant la clôture du mercato estival.",
+          "title": "La Real Sociedad défie le Borussia Dortmund pour Héctor Fort",
+          "summary": "La Real Sociedad cherche un montage financier pour recruter Héctor Fort, latéral écarté par Hansi Flick au FC Barcelona.",
+          "body": [
+            "Le défenseur de 20 ans s'entraîne en marge du groupe et doit trouver un point de chute avant la clôture du mercato. Si le Borussia Dortmund fait la course en tête pour l'attirer en Bundesliga, le club basque multiplie les contacts pour convaincre le joueur formé au FC Barcelona.",
+            "Le FC Barcelona réclame entre 15 et 20 millions d'euros pour le transfert de Fort. La note pourrait baisser si le club catalan conserve 50 % des droits économiques du joueur ou assortit l'accord d'une clause de rachat pour l'avenir."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "gemini-edi"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ريال سوسيداد يبحث عن صيغة للتعاقد مع هيكتور فورت",
-          "summary": "يسعى نادي ريال سوسيداد لإيجاد صيغة لضم اللاعب هيكتور فورت (20 عاماً)، الذي يبحث عن مخرج من برشلونة قبل نهاية سوق الانتقالات الصيفية.",
+          "title": "ريال سوسيداد ينافس بوروسيا دورتموند على ضم هيكتور فورت",
+          "summary": "يسعى ريال سوسيداد لإيجاد صيغة مالية مناسبة للتعاقد مع هيكتور فورت، بعد خروجه من حسابات المدرب هانزي فليك في برشلونة.",
+          "body": [
+            "يتدرب المدافع البالغ من العمر 20 عاماً منفرداً عن المجموعة، وبات بحاجة لحسم وجهته قبل إغلاق سوق الانتقالات. ورغم أن بوروسيا دورتموند يتصدر سباق نقله إلى الدوري الألماني، إلا أن النادي الباسكي كثف اتصالاته لإقناع خريج أكاديمية البلوغرانا.",
+            "يحدد برشلونة قيمة بيع فورت بين 15 و20 مليون يورو. وقد ينخفض هذا المبلغ إذا احتفظ النادي الكتالوني بنصف حقوقه الاقتصادية، أو أدرج بنداً يتيح له إعادة شراء اللاعب مستقبلاً."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "gemini-edi"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260824/1004219384/real-sociedad-busca-formula-llevarse-hector-fort.html",
@@ -832,9 +859,17 @@
       ],
       "source_count": 1,
       "editorial": {
-        "publish": false,
-        "quality": 2,
-        "source_read": "skipped"
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-24T23:53:34+00:00"
+        }
       }
     },
     {
@@ -1603,44 +1638,44 @@
       "summary": "Gianni Infantino a officialisé la création d’une Coupe du monde des moins de 15 ans regroupant l’intégralité des 211 fédérations de la Fifa dès cette année.",
       "i18n": {
         "fr": {
-          "title": "La Fifa lance un Mondial U15 géant réunissant 211 sélections",
-          "summary": "Gianni Infantino a officialisé la création d’une Coupe du monde des moins de 15 ans regroupant l’intégralité des 211 fédérations de la Fifa dès cette année.",
+          "title": "La Fifa crée une Coupe du Monde U15 réunissant 211 sélections",
+          "summary": "Gianni Infantino a annoncé le lancement dès cette année d’une Coupe du Monde masculine des moins de 15 ans rassemblant les 211 fédérations membres de la Fifa.",
           "body": [
-            "Présenté dans une vidéo tournée lors d'un déplacement aux Caraïbes, ce tournoi inédit rassemblera plus de 4 000 jeunes joueurs. Si la formule exacte de la compétition reste à préciser, la Fifa prévoit déjà d'organiser la première édition féminine en 2027.",
-            "Le patron de l'instance internationale compte sur les retombées auprès des diffuseurs et des sponsors pour financer le projet, promettant de réinvestir l'intégralité des revenus dans le football. Cette annonce intervient alors que le dirigeant italo-suisse sort d'une polémique liée à son projet avorté d'ouverture du Mondial à des investisseurs privés."
+            "Dévoilée lors d'un déplacement dans les Caraïbes, cette compétition inédite doit mobiliser plus de 4 000 jeunes joueurs. Si le format exact du tournoi reste à préciser, une déclinaison féminine est déjà programmée pour 2027.",
+            "Le président de l'instance internationale a affirmé vouloir mobiliser sponsors et diffuseurs pour réinvestir l'intégralité des recettes dans le football, tout en défendant sa ligne face aux récentes critiques sur ses projets financiers."
           ],
           "format": "deep",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "en": {
-          "title": "FIFA launches massive U15 World Cup featuring 211 teams",
-          "summary": "Gianni Infantino has confirmed the launch of an Under-15 World Cup bringing together all 211 FIFA member associations starting this year.",
+          "title": "Fifa launches U15 World Cup featuring 211 national teams",
+          "summary": "Gianni Infantino has announced the launch of a boys' under-15 World Cup later this year, bringing together all 211 member associations of Fifa.",
           "body": [
-            "Unveiled in a video filmed during a visit to the Caribbean, this tournament will bring together over 4,000 young players. While the exact format remains undecided, FIFA is already planning to stage the inaugural women's edition in 2027.",
-            "The head of world football's governing body is counting on broadcast and sponsorship revenue to fund the initiative, pledging to reinvest all income straight back into the sport. The move comes shortly after a controversy surrounding his abandoned plan to open the World Cup to private investors."
+            "Unveiled during a trip to the Caribbean, this unprecedented tournament is set to involve more than 4,000 young players. While the exact competition format is yet to be confirmed, a girls' edition is already scheduled for 2027.",
+            "The head of the governing body stated his intention to bring in sponsors and broadcasters in order to reinvest all proceeds directly into football, while defending his record against recent criticism over his financial plans."
           ],
           "format": "deep",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "es": {
-          "title": "La FIFA lanza un Mundial sub-15 con 211 selecciones",
-          "summary": "Gianni Infantino ha oficializado la creación de un Mundial sub-15 que reunirá a las 211 federaciones miembro de la FIFA este mismo año.",
+          "title": "La Fifa crea un Mundial U15 con 211 selecciones",
+          "summary": "Gianni Infantino ha anunciado el lanzamiento este mismo año de una Copa del Mundo masculina sub-15 que reunirá a las 211 federaciones miembro de la Fifa.",
           "body": [
-            "Presentado a través de un vídeo grabado durante una gira por el Caribe, este torneo inédito reunirá a más de 4.000 jóvenes futbolistas. Aunque el formato definitivo aún no está definido, la FIFA ya proyecta la primera edición femenina para 2027.",
-            "El presidente del organismo confía en los ingresos por derechos televisivos y patrocinadores para financiar la iniciativa, prometiendo reinvertir la totalidad de lo recaudado en el fútbol. El anuncio llega tras la polémica en torno a su fallido plan de abrir el Mundial a inversores privados."
+            "Presentada durante una visita al Caribe, esta inédita competición movilizará a más de 4.000 jóvenes futbolistas. Aunque el formato exacto queda por definir, la versión femenina ya está programada para 2027.",
+            "El presidente del organismo aseguró que buscará implicar a patrocinadores y televisiones para reinvertir la totalidad de los ingresos en el deporte, defendiendo a su vez su postura frente a las críticas recientes sobre sus proyectos de financiación."
           ],
           "format": "deep",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "ar": {
-          "title": "الفيفا يطلق مونديالاً للناشئين تحت 15 عاماً بمشاركة 211 منتخباً",
-          "summary": "أعلن جاني إنفانتينو رسمياً إطلاق بطولة كأس العالم للناشئين تحت 15 عاماً، بمشاركة جميع الاتحادات الأعضاء البالغ عددها 211 اتحاداً، بدءاً من هذا العام.",
+          "title": "فيفا يطلق كأس العالم تحت 15 عاماً بمشاركة 211 منتخباً",
+          "summary": "أعلن جياني إنفانتينو عن إطلاق بطولة كأس العالم للناشئين تحت 15 عاماً هذا العام، بمشاركة جميع الاتحادات الأعضاء الـ211 في الاتحاد الدولي لكرة القدم.",
           "body": [
-            "كُشف عن هذا الحدث غير المسبوق عبر مقطع فيديو صُوِّر خلال جولة في منطقة الكاريبي، حيث سيجمع أكثر من 4000 لاعب واعد. ورغم أن نظام المنافسة لم يُحسم بعد، يخطط الفيفا بالفعل لإقامة النسخة الأولى للفتيات عام 2027.",
-            "ويعوّل رئيس الاتحاد الدولي على عوائد البث التلفزيوني والرعاية لتمويل المشروع، متعهداً بإعادة استثمار كافة الأرباح في تطوير كرة القدم. ويأتي الإعلان بعد جدل واسع رافق مشروعه الملغى لفتح الباب أمام استثمارات خاصة في كأس العالم."
+            "وكُشف عن هذه المسابقة غير المسبوقة خلال زيارة إلى منطقة الكاريبي، حيث يُنتظر أن تشهد مشاركة أكثر من 4000 لاعب شاب، في حين حُدد عام 2027 لإطلاق النسخة النسائية رغم أن التفاصيل الدقيقة لنظام البطولة لم تُحسم بعد.",
+            "وأكد رئيس الهيئة الكروية الدولية رغبته في جذب الرعاة وشبكات البث لإعادة استثمار كامل العائدات في تطوير اللعبة، مدافعاً في الوقت ذاته عن سياسته إزاء الانتقادات الأخيرة الموجهة لخططه التمويلية."
           ],
           "format": "deep",
           "needs_translation": false,
@@ -1675,7 +1710,10 @@
           "erreurs": [],
           "retire": false,
           "ts": "2026-08-24T23:38:33+00:00"
-        }
+        },
+        "publish": true,
+        "quality": 8,
+        "source_read": "full"
       }
     },
     {
@@ -1963,25 +2001,28 @@
       "summary": "Un peu moins de deux ans après son arrivée, le milieu de terrain espagnol de Manchester City Nico Gonzalez devrait rejoindre Newcastle United contre près de 60 millions d'euros.",
       "i18n": {
         "fr": {
-          "title": "El coruñés Nico González, cerca de cambiar el Manchester City por el Newcastle",
-          "summary": "Un peu moins de deux ans après son arrivée, le milieu de terrain espagnol de Manchester City Nico Gonzalez devrait rejoindre Newcastle United contre près de 60 millions d'euros.",
-          "needs_translation": false
+          "title": "Nico González proche de quitter Manchester City pour Newcastle United",
+          "summary": "Moins de deux ans après son arrivée, le milieu espagnol de Manchester City Nico González devrait rejoindre Newcastle United pour environ 60 millions d'euros.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El coruñés Nico González, cerca de cambiar el Manchester City por el Newcastle",
-          "summary": "Un peu moins de deux ans après son arrivée, le milieu de terrain espagnol de Manchester City Nico Gonzalez devrait rejoindre Newcastle United contre près de 60 millions d'euros.",
-          "needs_translation": true
+          "title": "Nico González close to swapping Manchester City for Newcastle United",
+          "summary": "Less than two years after his arrival, Manchester City midfielder Nico González is set to join Newcastle United for around 60 million euros.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El coruñés Nico González, cerca de cambiar el Manchester City por el Newcastle",
-          "summary": "Un peu moins de deux ans après son arrivée, le milieu de terrain espagnol de Manchester City Nico Gonzalez devrait rejoindre Newcastle United contre près de 60 millions d'euros.",
-          "needs_translation": true
+          "title": "El coruñés Nico González, cerca de cambiar el Manchester City por el Newcastle United",
+          "summary": "Menos de dos años después de su llegada, el centrocampista español del Manchester City Nico González está cerca de fichar por el Newcastle United por unos 60 millones de euros.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "شاطئ El coruñés Nico González, cerca de cambiar el Manchester City por el Newcastle",
-          "summary": "بعد أقل من عامين بقليل من وصوله، من المتوقع أن ينضم لاعب وسط مانشستر سيتي نيكو غونزاليس إلى نيوكاسل يونايتد مقابل ما يقرب من 60 مليون يورو.",
+          "title": "نيكو غونزاليس يقترب من الانتقال من مانشستر سيتي إلى نيوكاسل يونايتد",
+          "summary": "يقترب لاعب الوسط الإسباني نيكو غونزاليس من مغادرة مانشستر سيتي للانتقال إلى نيوكاسل يونايتد في صفقة تقارب قيمتها 60 مليون يورو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Mercato-nico-gonzalez-devrait-etre-transfere-de-manchester-city-a-newcastle-pour-pres-de-60-millions/1713334#at_medium=RSS_feeds",
@@ -2015,7 +2056,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fichajes/20260824/1004219317/acuerdo-newcastle-manchester-city-ex-azulgrana-nico-gonzalez.html"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3cd223480dd0",
