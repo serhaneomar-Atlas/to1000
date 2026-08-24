@@ -17,26 +17,27 @@
       "i18n": {
         "fr": {
           "title": "Man City : Omar Marmoush a passé sa visite médicale",
-          "summary": "L'international égyptien, Omar Marmoush, est sur le point de quitter Manchester City une nouvelle fois. The post Man City : Omar Marmoush a passé sa visite médicale appeared first on Africa Top Sports .",
-          "needs_translation": false
+          "summary": "Omar Marmoush a passé sa visite médicale avant de finaliser son départ imminent de Manchester City.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Man City: Omar Marmoush passed his medical",
-          "summary": "Egyptian international Omar Marmoush is about to leave Manchester City once again. The post Man City: Omar Marmoush passed his medical appeared first on Africa Top Sports .",
+          "title": "Man City: Omar Marmoush has completed his medical",
+          "summary": "Omar Marmoush has completed his medical examination ahead of an imminent departure from Manchester City.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Man City: Omar Marmoush ha pasado su revisión médica",
-          "summary": "El internacional egipcio Omar Marmoush está a punto de abandonar el Manchester City una vez más. The post Man City: Omar Marmoush ha pasado su examen médico appeared first on Africa Top Sports .",
+          "title": "Man City: Omar Marmoush pasa el reconocimiento médico",
+          "summary": "Omar Marmoush ha completado el reconocimiento médico previo a su inminente salida de Manchester City.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مانشستر سيتي: اجتاز عمر مرموش اختباره الطبي",
-          "summary": "الدولي المصري عمر مرموش على وشك مغادرة مانشستر سيتي مرة أخرى. ما بعد مانشستر سيتي: اجتاز عمر مرموش اختباره الطبي الذي ظهر لأول مرة في أفريقيا توب سبورتس .",
+          "title": "مانشستر سيتي: عمر مرموش يجتاز الفحص الطبي",
+          "summary": "اجتاز الدولي المصري عمر مرموش الفحص الطبي تمهيداً لرحيله الوشيك عن صفوف مانشستر سيتي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football/man-city-omar-marmoush-a-passe-sa-visite-medicale/",
@@ -58,7 +59,12 @@
           "url": "https://africatopsports.com/football/man-city-omar-marmoush-a-passe-sa-visite-medicale/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "fde684df70f5",
@@ -122,25 +128,48 @@
       "summary": "Manchester City agree to sign winger Allan Elias from Palmeiras in a deal worth up to £34.2m.",
       "i18n": {
         "en": {
-          "title": "El Manchester City se lleva a un extremo del Palmeiras en 40 millones de euros",
-          "summary": "Manchester City agree to sign winger Allan Elias from Palmeiras in a deal worth up to £34.2m.",
-          "needs_translation": false
+          "title": "Man City agree £34.2m deal for Palmeiras winger Allan Elias",
+          "summary": "Manchester City have agreed a deal worth up to £34.2m to sign Brazilian winger Allan Elias from Palmeiras ahead of the transfer deadline.",
+          "body": [
+            "The Premier League champions will pay an initial £32m plus £2.2m in add-ons for the 22-year-old, who is scheduled to undergo a medical in the coming days. Allan Elias arrives as a direct replacement for compatriot Savinho, whose £75m move to Tottenham is nearing completion.",
+            "City could see further departures before September 1. Discussions remain advanced with Spurs over forward Omar Marmoush, while midfielder Nico Gonzalez is also drawing strong interest from Newcastle."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "El Manchester City se lleva a un extremo del Palmeiras en 40 millones de euros",
-          "summary": "Manchester City agree to sign winger Allan Elias from Palmeiras in a deal worth up to £34.2m.",
-          "needs_translation": true
+          "title": "Manchester City s'offre l'ailier de Palmeiras Allan Elias pour 40 M€",
+          "summary": "Manchester City a trouvé un accord pouvant atteindre 40 millions d'euros pour recruter l'ailier brésilien Allan Elias en provenance de Palmeiras.",
+          "body": [
+            "Le club anglais va débourser un montant fixe de 32 millions de livres (environ 37,5 M€), assorti de 2,2 millions de livres de bonus pour le joueur de 22 ans, attendu prochainement pour sa visite médicale. Allan Elias compense le départ imminent de Savinho, dont le transfert vers Tottenham pour 75 millions de livres est sur le point d'aboutir.",
+            "L'effectif des Citizens pourrait encore évoluer d'ici le 1er septembre. Les négociations restent très avancées avec les Spurs pour l'attaquant Omar Marmoush, tandis que le milieu Nico Gonzalez suscite un vif intérêt de Newcastle."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "El Manchester City se lleva a un extremo del Palmeiras en 40 millones de euros",
-          "summary": "Manchester City agree to sign winger Allan Elias from Palmeiras in a deal worth up to £34.2m.",
-          "needs_translation": true
+          "title": "El City ficha al extremo brasileño Allan Elias por 34,2 millones de libras",
+          "summary": "El Manchester City ha cerrado un acuerdo de hasta 34,2 millones de libras para fichar al extremo brasileño Allan Elias, procedente de Palmeiras.",
+          "body": [
+            "El club pagará una cantidad fija de 32 millones de libras más 2,2 millones en variables por el futbolista de 22 años, que pasará el reconocimiento médico en los próximos días. Allan Elias llega para cubrir la salida de Savinho, cuyo traspaso al Tottenham por 75 millones de libras está a punto de concretarse.",
+            "El City podría registrar más movimientos antes del 1 de septiembre. Las conversaciones siguen muy avanzadas con los Spurs por el delantero Omar Marmoush, mientras que el centrocampista Nico Gonzalez atrae un fuerte interés de Newcastle."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "شاطئ El Manchester City se lleva a un extremo del Palmeiras en 40 millones de euro",
-          "summary": "وافق سيتي على التعاقد مع الجناح آلان الياس من بالميراس في صفقة تصل قيمتها إلى 34.2 مليون £.",
+          "title": "مانشستر سيتي يضم ألان إلياس من بالميراس مقابل 34.2 مليون إسترليني",
+          "summary": "حسم مانشستر سيتي صفقة التعاقد مع الجناح البرازيلي ألان إلياس قادماً من بالميراس، في عملية قد تصل قيمتها إلى 34.2 مليون جنيه إسترليني.",
+          "body": [
+            "وسيدفع النادي الإنجليزي مبلغاً ثابتاً قدره 32 مليون جنيه إسترليني بالإضافة إلى 2.2 مليون كحوافز لضم اللاعب البالغ 22 عاماً، والمقرر أن يخضع للفحص الطبي خلال الأيام المقبلة. ويأتي ألان إلياس لتعويض رحيل مواطنه سافينيو، الذي بات انتقاله إلى توتنهام مقابل 75 مليون جنيه إسترليني وشيكاً.",
+            "وقد تشهد تشكيلة مانشستر سيتي مزيداً من الراحلين قبل الأول من سبتمبر؛ إذ بلغت المفاوضات مراحل متقدمة مع توتنهام بشأن المهاجم عمر مرموش، في حين يحظى لاعب الوسط نيكو غونزاليس باهتمام قوي من نيوكاسل."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cpveylz0n8go?at_medium=RSS&at_campaign=rss",
@@ -174,7 +203,20 @@
           "url": "https://www.ole.com.ar/futbol-internacional/manchestercity-palmeiras-allan-enzofernandez-copalibertadores-abelferreira_0_QIYsr36YRI.html"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-24T21:42:45+00:00"
+        }
+      }
     },
     {
       "id": "236ecb4a6d78",
@@ -183,26 +225,27 @@
       "i18n": {
         "es": {
           "title": "Armá tu 11 de River para recibir a Independiente Santa Fe por la Sudamericana",
-          "summary": "En Olé te invitamos a que seas Eduardo Coudet por un rato. ¿Cuál sería tu equipo para buscar el pase a cuartos de final?",
-          "needs_translation": false
+          "summary": "River recibe a Independiente Santa Fe en la Copa Sudamericana en busca del pase a los cuartos de final del torneo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Arm your River 11 to welcome Independiente Santa Fe for the South American",
-          "summary": "At Olé we invite you to be Eduardo Coudet for a while. What would be your team to seek passage to the quarterfinals?",
+          "title": "Build your River starting 11 to host Independiente Santa Fe in the Sudamericana",
+          "summary": "River host Independiente Santa Fe in the Copa Sudamericana aiming to secure qualification for the quarter-finals.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Armez votre 11 de River pour recevoir Independiente Santa Fe pour l'Amérique du Sud",
-          "summary": "Chez Olé, nous vous invitons à être Eduardo Coudet pendant un moment. Quelle serait votre équipe pour chercher le laissez-passer pour les quarts de finale ?",
+          "title": "Composez votre 11 de River pour recevoir Independiente Santa Fe en Sudamericana",
+          "summary": "River accueille Independiente Santa Fe en Copa Sudamericana avec pour objectif de décrocher sa qualification pour les quarts de finale.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "قم بتسليح نهرك 11 للترحيب باستقلال سانتا في لأمريكا الجنوبية",
-          "summary": "في أولي، ندعوك لتكون إدواردو كوديه لفترة من الوقت. ماذا سيكون فريقك الذي سيسعى للعبور إلى ربع النهائي ؟",
+          "title": "اختر تشكيلة ريفر بليت الأساسية لمواجهة إنديبندينتي سانتا في في كوبا سود أمريكانا",
+          "summary": "يستضيف ريفر بليت فريق إنديبندينتي سانتا في ضمن بطولة كوبا سود أمريكانا سعياً لحسم بطاقة التأهل إلى الدور ربع النهائي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/arma-equipo-river-independiente-santa-fe_0_cnrM2p7q9S.html",
@@ -224,7 +267,12 @@
           "url": "https://www.ole.com.ar/river-plate/arma-equipo-river-independiente-santa-fe_0_cnrM2p7q9S.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c1c3b7ec5db1",
@@ -233,26 +281,27 @@
       "i18n": {
         "es": {
           "title": "Seba Domínguez vuelve a Victoria: Tigre recibe a Central Córdoba",
-          "summary": "El Ferroviario, con un viejo conocido de la casa como técnico, se mide ante un Matador que viene de quedar eliminado en la Copa Sudamericana.",
-          "needs_translation": false
+          "summary": "Tigre, recientemente eliminado de la Copa Sudamericana, recibe en Victoria a Central Córdoba, equipo dirigido por su extécnico Seba Domínguez.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Seba Domínguez returns to Victoria: Tigre receives Central Córdoba",
-          "summary": "The Railwayman, with an old acquaintance of the house as a technician, is measured against a Matador who comes from being eliminated in the South American Cup.",
+          "title": "Seba Domínguez returns to Victoria: Tigre host Central Córdoba",
+          "summary": "Tigre, recently eliminated from the Copa Sudamericana, host Central Córdoba in Victoria, who are managed by former coach Seba Domínguez.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Seba Domínguez revient à Victoria : Tigre reçoit Central Córdoba",
-          "summary": "Le cheminot, avec une vieille connaissance de la maison en tant que technicien, se mesure face à un matador qui vient d'être éliminé de la Copa Sudamericana.",
+          "title": "Seba Domínguez de retour à Victoria : Tigre reçoit Central Córdoba",
+          "summary": "Tigre, éliminé de la Copa Sudamericana, affronte à Victoria le club de Central Córdoba, désormais entraîné par son ancien technicien Seba Domínguez.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "سيبا دومينغيز يعود إلى فيكتوريا: تيغري يتلقى وسط قرطبة",
-          "summary": "يتم قياس عامل السكة الحديد، مع أحد معارفه القدامى من المنزل كفني، ضد مصارع الماتادور الذي يأتي من القضاء عليه في كأس أمريكا الجنوبية.",
+          "title": "سيبا دومينغيز يعود إلى فيكتوريا: تيجري يستضيف سنترال كوردوبا",
+          "summary": "يستضيف تيجري في فيكتوريا فريق سنترال كوردوبا بقيادة مدربه السابق سيبا دومينغيز، وذلك عقب توديع أصحاب الأرض لبطولة كوبا سودأمريكانا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/tigre/tigre-central-cordoba-clausura-seba-dominguez_0_MN0OP0tF41.html",
@@ -274,7 +323,12 @@
           "url": "https://www.ole.com.ar/tigre/tigre-central-cordoba-clausura-seba-dominguez_0_MN0OP0tF41.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f6e4eefbe18e",
@@ -283,26 +337,27 @@
       "i18n": {
         "es": {
           "title": "Xabi Alonso supera a Álvaro Arbeloa en el duelo del morbo entre ex del Real Madrid",
-          "summary": "En un duelo con inevitable aroma a todo lo que envuelve al Real Madrid , el Chelsea se impuso este lunes al Fulham (2-3).",
-          "needs_translation": false
+          "summary": "El Chelsea se impuso este lunes al Fulham por 2-3 en un duelo marcado por el protagonismo de exfutbolistas del Real Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Xabi Alonso beats Álvaro Arbeloa in the duel of the disease between former Real Madrid",
-          "summary": "In a duel with an inevitable aroma of everything that surrounds Real Madrid , Chelsea beat Fulham (2-3) on Monday.",
+          "title": "Xabi Alonso beats Álvaro Arbeloa in clash between former Real Madrid figures",
+          "summary": "Chelsea defeated Fulham 2-3 on Monday in a match featuring former Real Madrid figures.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Xabi Alonso dépasse Álvaro Arbeloa dans le duel de la maladie entre l'ancien du Real Madrid",
-          "summary": "Dans un duel avec un arôme inévitable à tout ce qui entoure le Real Madrid , Chelsea s'est imposé ce lundi contre Fulham (2-3).",
+          "title": "Xabi Alonso prend le dessus sur Álvaro Arbeloa dans le duel entre anciens du Real Madrid",
+          "summary": "Chelsea s'est imposé ce lundi face à Fulham (2-3) lors d'une rencontre marquée par d'anciens membres du Real Madrid.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "خابي ألونسو يهزم ألفارو أربيلوا في مبارزة المرض بين ريال مدريد السابق",
-          "summary": "في مبارزة مع رائحة لا مفر منها من كل ما يحيط بريال مدريد ، فاز تشيلسي على فولهام (2-3) يوم الاثنين.",
+          "title": "تشابي ألونسو يتفوق على ألفارو أربيلوا في مواجهة خاصة بين ثنائي ريال مدريد السابق",
+          "summary": "تغلب تشيلسي على مضيفه فولهام بنتيجة 2-3 يوم الإثنين في مباراة شهدت حضوراً لافتاً لعناصر سابقة من ريال مدريد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260824/1004219391/xabi-alonso-supera-alvaro-arbeloa-duelo-morbo-ex-real-madrid.html",
@@ -324,7 +379,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260824/1004219391/xabi-alonso-supera-alvaro-arbeloa-duelo-morbo-ex-real-madrid.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ba371f0af354",
@@ -333,26 +393,27 @@
       "i18n": {
         "en": {
           "title": "Rogers & Palmer star but Sanchez struggles - Fulham v Chelsea player ratings",
-          "summary": "Morgan Rogers scores on his Chelsea debut as Xabi Alonso's side beat Fulham at Craven Cottage - here are BBC Sport's player ratings.",
-          "needs_translation": false
+          "summary": "Morgan Rogers scored on his Chelsea debut as Xabi Alonso's side defeated Fulham at Craven Cottage, while Palmer impressed and Sanchez struggled.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La star de Rogers & Palmer, mais Sanchez a du mal - Fulham vs Chelsea notes des joueurs",
-          "summary": "Morgan Rogers marque lors de ses débuts à Chelsea alors que l'équipe de Xabi Alonso bat Fulham au Craven Cottage - voici les notes des joueurs de BBC Sport.",
+          "title": "Rogers et Palmer brillent mais Sanchez peine - notes des joueurs de Fulham - Chelsea",
+          "summary": "Morgan Rogers a marqué pour ses débuts avec Chelsea lors de la victoire de l'équipe de Xabi Alonso face à Fulham à Craven Cottage.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "La estrella de Rogers & Palmer, pero Sánchez tiene problemas - Clasificaciones de jugadores de Fulham v Chelsea",
-          "summary": "Morgan Rogers anota en su debut en el Chelsea cuando el equipo de Xabi Alonso venció al Fulham en Craven Cottage: aquí están los ratings de los jugadores de BBC Sport.",
+          "title": "Rogers y Palmer brillan pero Sanchez sufre - valoraciones del Fulham - Chelsea",
+          "summary": "Morgan Rogers marcó en su debut con el Chelsea en la victoria del conjunto de Xabi Alonso frente al Fulham en Craven Cottage.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "نجم روجرز وبالمر لكن سانشيز يكافح - تصنيفات فولهام ضد تشيلسي للاعبين",
-          "summary": "يسجل مورغان روجرز في أول ظهور له في تشيلسي حيث فاز فريق تشابي ألونسو على فولهام في كرافن كوتاج - وهنا تصنيفات لاعب بي بي سي سبورت.",
+          "title": "روجرز وبالمر يتألقان وسانشيز يعاني - تقييمات لاعبي مباراة فولهام ضد تشيلسي",
+          "summary": "سجل مورغان روجرز في أول ظهور له مع تشيلسي ليقود فريق المدرب تشابي ألونسو للفوز على فولهام في كرافن كوتيج.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cx2d2w7z190o?at_medium=RSS&at_campaign=rss",
@@ -380,7 +441,12 @@
           "url": "https://www.kicker.de/fulham-gegen-chelsea-2026-premier-league-5213279/spielbericht#omrss"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3e2125820147",
@@ -389,26 +455,27 @@
       "i18n": {
         "es": {
           "title": "La Real Sociedad busca la fórmula para llevarse a Héctor Fort",
-          "summary": "Héctor Fort (20 años) es otro de los jugadores del FC Barcelona que debe encontrar una salida en este tramo final de mercado veraniego.",
-          "needs_translation": false
+          "summary": "La Real Sociedad trabaja en la fórmula para incorporar a Héctor Fort (20 años), quien busca una salida del FC Barcelona en la recta final del mercado estival.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Real Sociedad looks for the formula to take Héctor Fort",
-          "summary": "Héctor Fort (20 years old) is another FC Barcelona player who must find a way out in this final stretch of the summer market.",
+          "title": "Real Sociedad seek formula to sign Héctor Fort",
+          "summary": "Real Sociedad are exploring ways to sign Héctor Fort (20), who is looking to leave FC Barcelona in the closing stages of the summer transfer window.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La Real Sociedad cherche la formule pour emmener Héctor Fort",
-          "summary": "Héctor Fort (20 ans) est un autre joueur du FC Barcelone qui doit trouver une issue dans cette dernière partie du marché estival.",
+          "title": "La Real Sociedad cherche la formule pour s'offrir Héctor Fort",
+          "summary": "La Real Sociedad étudie une formule pour s'attacher les services d'Héctor Fort (20 ans), qui doit quitter le FC Barcelona avant la clôture du mercato estival.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ريال سوسيداد يبحث عن صيغة لاتخاذ هيكتور فورت",
-          "summary": "هيكتور فورت (20 عاما) هو لاعب آخر في نادي برشلونة الذي يجب أن يجد مخرجا في هذه المرحلة الأخيرة من السوق الصيفية.",
+          "title": "ريال سوسيداد يبحث عن صيغة للتعاقد مع هيكتور فورت",
+          "summary": "يسعى نادي ريال سوسيداد لإيجاد صيغة لضم اللاعب هيكتور فورت (20 عاماً)، الذي يبحث عن مخرج من برشلونة قبل نهاية سوق الانتقالات الصيفية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260824/1004219384/real-sociedad-busca-formula-llevarse-hector-fort.html",
@@ -430,7 +497,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260824/1004219384/real-sociedad-busca-formula-llevarse-hector-fort.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5ee6a86836c0",
@@ -539,26 +611,27 @@
       "i18n": {
         "fr": {
           "title": "Bien aidé par ses recrues dont Maxence Lacroix, Chelsea lance l'ère Xabi Alonso par une victoire contre Fulham en Premier League",
-          "summary": "Plus en difficulté en seconde période, les Blues débutent leur saison de Premier League par un succès spectaculaire sur la pelouse de Fulham (3-2). Une entame plutôt satisfaisante tout de même pour Xabi Alonso, en dehors de la prestation peu rassurante de Robert Sanchez.",
-          "needs_translation": false
+          "summary": "Chelsea a débuté sa saison de Premier League par une victoire 3-2 sur le terrain de Fulham pour le premier match officiel de Xabi Alonso à la tête de l'équipe.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Well helped by his recruits including Maxence Lacroix, Chelsea launched the Xabi Alonso era with a victory against Fulham in the Premier League",
-          "summary": "More struggling in the second half, the Blues began their Premier League season with a spectacular success on the Fulham pitch (3-2). A rather satisfactory start all the same for Xabi Alonso, apart from Robert Sanchez's unassuring performance.",
+          "title": "Well aided by signings including Maxence Lacroix, Chelsea kick off the Xabi Alonso era with a victory against Fulham in the Premier League",
+          "summary": "Chelsea started their Premier League campaign with a 3-2 away win against Fulham in Xabi Alonso's first match in charge of the Blues.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Bien ayudado por sus fichajes, entre ellos Maxence Lacroix, el Chelsea inicia la era Xabi Alonso con una victoria sobre el Fulham en la Premier League",
-          "summary": "Más en dificultades en la segunda parte, los Blues comienzan su temporada de Premier League con un éxito espectacular en el césped del Fulham (3-2). Un comienzo bastante satisfactorio para Xabi Alonso, aparte de la actuación poco tranquilizadora de Robert Sánchez.",
+          "title": "Bien ayudado por sus fichajes, incluido Maxence Lacroix, Chelsea inicia la era Xabi Alonso con una victoria ante Fulham en la Premier League",
+          "summary": "Chelsea comenzó su temporada en la Premier League con una victoria por 3-2 en el campo de Fulham, sellando un debut exitoso para Xabi Alonso en el banquillo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "بمساعدة مجنديه بما في ذلك ماكسينس لاكروا، أطلق تشيلسي عصر تشابي ألونسو بفوزه على فولهام في الدوري الممتاز",
-          "summary": "أكثر صعوبة في الشوط الثاني، بدأ البلوز موسمهم في الدوري الممتاز بنجاح مذهل في ملعب فولهام (3-2). بداية مرضية إلى حد ما بالنسبة لشابي ألونسو، بصرف النظر عن أداء روبرت سانشيز غير المطمئن.",
+          "title": "بدعم من صفقاته الجديدة ومنهم ماكسينس لاكروا، تشيلسي يدشن حقبة تشابي ألونسو بالفوز على فولهام في الدوري الإنجليزي الممتاز",
+          "summary": "استهل تشيلسي موسمه في الدوري الإنجليزي الممتاز بالفوز بنتيجة 3-2 خارج أرضه أمام فولهام، محققاً بداية ناجحة لمدربه الجديد تشابي ألونسو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Bien-aide-par-ses-recrues-dont-maxence-lacroix-chelsea-lance-l-ere-xabi-alonso-par-une-victoire-contre-fulham-en-premier-league/1713378#at_medium=RSS_feeds",
@@ -580,7 +653,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Bien-aide-par-ses-recrues-dont-maxence-lacroix-chelsea-lance-l-ere-xabi-alonso-par-une-victoire-contre-fulham-en-premier-league/1713378#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a520fe02219f",
@@ -688,27 +766,28 @@
       "summary": "Las populares superan los $100.000. Se espera alrededor de 5.000 localidades para hinchas del CARP.",
       "i18n": {
         "es": {
-          "title": "Banfield-River con visitantes: ¿cuánto valen las entradas?",
-          "summary": "Las populares superan los $100.000. Se espera alrededor de 5.000 localidades para hinchas del CARP.",
-          "needs_translation": false
+          "title": "Banfield-River con hinchas visitantes: precio de las entradas",
+          "summary": "Las entradas populares para el partido Banfield-River superan los $100.000. Se dispondrán alrededor de 5.000 localidades para los hinchas del CARP.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Banfield-River with visitors: how much are the tickets worth?",
-          "summary": "Popular ones exceed $100,000. Around 5,000 seats are expected for CARP fans.",
+          "title": "Banfield-River with away fans: ticket prices",
+          "summary": "General admission tickets for Banfield-River exceed 100,000 pesos. Around 5,000 seats will be allocated to CARP supporters.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Banfield-River avec des visiteurs : combien valent les billets ?",
-          "summary": "Les populaires dépassent les 100 000 $ . Environ 5 000 places sont attendues pour les supporters du CARP.",
+          "title": "Banfield-River avec supporters visiteurs : prix des billets",
+          "summary": "Les places populaires pour le match Banfield-River dépassent les 100 000 pesos. Environ 5 000 billets seront réservés aux supporters du CARP.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "بانفيلد ريفر مع الزوار: كم تبلغ قيمة التذاكر ؟",
-          "summary": "المشهورة أكثر من 100,000 $. من المتوقع وجود حوالي 5000 مقعد لمراوح الشبوط.",
+          "title": "بانفيلد ضد ريفر بليت بحضور الجماهير الزائرة: أسعار التذاكر",
+          "summary": "تتجاوز أسعار التذاكر الشعبية لمباراة بانفيلد وريفر بليت 100 ألف بيزو، وسط توقعات بتخصيص نحو 5 آلاف مقعد لجماهير ريفر بليت.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-plate-banfield-entradas-visitantes_0_1fOzQo9qNs.html",
@@ -730,7 +809,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-plate-banfield-entradas-visitantes_0_1fOzQo9qNs.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "32ccb36550ea",
@@ -739,26 +823,27 @@
       "i18n": {
         "fr": {
           "title": "Mercato : le milieu de l'OM Quinten Timber plaît à Crystal Palace",
-          "summary": "Crystal Palace, le club de Pierre Sage, a pris des renseignements sur l'international néerlandais de l'OM Quinten Timber (25 ans) et pourrait passer à l'action.",
-          "needs_translation": false
+          "summary": "Crystal Palace s'intéresse au milieu de l'OM Quinten Timber. Le club de Pierre Sage a pris des renseignements sur l'international néerlandais de 25 ans et pourrait passer à l'offensive.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mercato: the middle of OM Quinten Timber pleases Crystal Palace",
-          "summary": "Crystal Palace, Pierre Sage's club, has taken information on the Dutch international of OM Quinten Timber (25 years old) and could take action.",
+          "title": "Mercato: OM midfielder Quinten Timber attracts Crystal Palace interest",
+          "summary": "Crystal Palace have made enquiries regarding 25-year-old OM midfielder Quinten Timber. The English side could soon make a move for the Dutch international.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Mercado: el mediocampista del OM Quinten Timber le gusta al Crystal Palace",
-          "summary": "Crystal Palace, el club de Pierre Sage, ha tomado información sobre el internacional holandés del OM Quinten Timber (25 años) y podría pasar a la acción.",
+          "title": "Mercato: el centrocampista del OM Quinten Timber gusta a Crystal Palace",
+          "summary": "Crystal Palace ha pedido información sobre el centrocampista del OM Quinten Timber. El club inglés se plantea realizar una oferta por el internacional neerlandés de 25 años.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ميركاتو: وسط أوم كوينتن تيمبر يرضي كريستال بالاس",
-          "summary": "أخذ كريستال بالاس، نادي بيير سيج، معلومات عن الدولي الهولندي OM Quinten Timber (25 عامًا) ويمكنه اتخاذ إجراء.",
+          "title": "سوق الانتقالات: لاعب وسط أولمبيك مارسيليا كوينتن تيمبر يثير اهتمام كريستال بالاس",
+          "summary": "استفسر نادي كريستال بالاس عن كوينتن تيمبر، لاعب وسط أولمبيك مارسيليا. ويفكر النادي الإنجليزي في تقديم عرض رسمي لضم الدولي الهولندي صاحب الـ25 عامًا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Mercato-le-milieu-de-l-om-quinten-timber-plait-a-crystal-palace/1713362#at_medium=RSS_feeds",
@@ -780,7 +865,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Mercato-le-milieu-de-l-om-quinten-timber-plait-a-crystal-palace/1713362#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9c71c235edcd",
@@ -1100,27 +1190,48 @@
       "summary": "Alors que beaucoup d'acteurs majeurs du football mondial réclament un changement à la tête de la FIFA, Samuel Eto'o, président de la fédération camerounaise, a pris la défense de Gianni Infantino dans un entretien accordé à CNN.",
       "i18n": {
         "fr": {
-          "title": "Samuel Eto'o apporte son soutien à Gianni Infantino, président de la FIFA contesté : « Il a changé le football »",
-          "summary": "Alors que beaucoup d'acteurs majeurs du football mondial réclament un changement à la tête de la FIFA, Samuel Eto'o, président de la fédération camerounaise, a pris la défense de Gianni Infantino dans un entretien accordé à CNN.",
-          "needs_translation": false
+          "title": "FIFA : Samuel Eto'o prend la défense de Gianni Infantino",
+          "summary": "Samuel Eto'o a fermement défendu Gianni Infantino, ciblé par les critiques de plusieurs anciens joueurs internationaux.",
+          "body": [
+            "Interrogé sur CNN, le président de la Fédération camerounaise a riposté à la charge menée notamment par Emmanuel Petit, Robert Pirès et Mikaël Silvestre contre la gouvernance de la FIFA. L'ancien attaquant affirme que le dirigeant italo-suisse a transformé le football mondial en offrant davantage d'accès à la Coupe du monde et en accélérant le développement des fédérations africaines.",
+            "Pour Samuel Eto'o, cette contestation découle directement du calendrier politique et de la future élection présidentielle de l'instance, prévue en mars 2027, où Gianni Infantino est pour l'instant le seul candidat en lice."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Samuel Eto'o lends his support to contested FIFA President Gianni Infantino: “He changed football”",
-          "summary": "While many major players in world football are calling for a change in the head of FIFA, Samuel Eto'o, president of the Cameroonian federation, defended Gianni Infantino in an interview with CNN.",
+          "title": "FIFA: Samuel Eto'o leaps to Gianni Infantino's defence",
+          "summary": "Samuel Eto'o has mounted a staunch defence of Gianni Infantino following recent criticism from several former internationals.",
+          "body": [
+            "Speaking to CNN, the president of the Cameroonian Football Federation hit back at attacks led by Emmanuel Petit, Robert Pirès and Mikaël Silvestre over FIFA governance. The former forward argued that the Swiss-Italian administrator has reshaped world football by expanding access to the World Cup and driving the development of African federations.",
+            "For Samuel Eto'o, the backlash is directly linked to the political calendar and the upcoming presidential election set for March 2027, where Gianni Infantino is currently the sole candidate."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Samuel Eto 'o apoya a Gianni Infantino, el controvertido presidente de la FIFA: \"Ha cambiado el fútbol\"",
-          "summary": "Mientras que muchos jugadores importantes del fútbol mundial reclaman un cambio al frente de la FIFA, Samuel Eto 'o, presidente de la federación camerunesa, defendió a Gianni Infantino en una entrevista con CNN.",
+          "title": "FIFA: Samuel Eto'o sale en defensa de Gianni Infantino",
+          "summary": "Samuel Eto'o defendió firmemente a Gianni Infantino ante las críticas vertidas por varios exfutbolistas internacionales.",
+          "body": [
+            "En declaraciones a CNN, el presidente de la Federación camerunesa respondió a los ataques encabezados por Emmanuel Petit, Robert Pirès y Mikaël Silvestre contra la gestión de la FIFA. El exdelantero sostuvo que el dirigente italo-suizo ha transformado el fútbol mundial al facilitar el acceso a la Copa del Mundo y acelerar el desarrollo de las federaciones africanas.",
+            "Para Samuel Eto'o, estos cuestionamientos responden directamente a los tiempos políticos y a las elecciones presidenciales del organismo, previstas para marzo de 2027, en las que Gianni Infantino es por ahora el único candidato en liza."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "صموئيل إيتو يقدم دعمه لرئيس الفيفا المتنافس جياني إنفانتينو: \"لقد غير كرة القدم\"",
-          "summary": "في حين أن العديد من اللاعبين الرئيسيين في كرة القدم العالمية يدعون إلى تغيير رئيس الفيفا، دافع صموئيل إيتو، رئيس الاتحاد الكاميروني، عن جياني إنفانتينو في مقابلة مع شبكة سي إن إن.",
+          "title": "صامويل إيتو يدافع بقوة عن جياني إنفانتينو",
+          "summary": "دافع صامويل إيتو بحزم عن جياني إنفانتينو، إثر الانتقادات اللاذعة التي وجهها إليه عدد من اللاعبين الدوليين السابقين.",
+          "body": [
+            "وفي تصريحات لشبكة سي إن إن، رد رئيس الاتحاد الكاميروني على الهجوم الذي قاده إيمانويل بيتي وروبرت بيريز وميكائيل سيلفيستر ضد طريقة إدارة الفيفا. وأكد المهاجم السابق أن المسؤول السويسري الإيطالي غيّر معالم كرة القدم العالمية عبر توسيع فرص المشاركة في كأس العالم وتسريع وتيرة تطوير الاتحادات الإفريقية.",
+            "ويرى إيتو أن هذا الهجوم تحركه الأجندة السياسية مع اقتراب الانتخابات الرئاسية للاتحاد الدولي المقررة في مارس 2027، والتي يُعد فيها جياني إنفانتينو المرشح الوحيد حتى الآن."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Samuel-eto-o-apporte-son-soutien-a-gianni-infantino-president-de-la-fifa-conteste-il-a-change-le-football/1713346#at_medium=RSS_feeds",
@@ -1142,7 +1253,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Samuel-eto-o-apporte-son-soutien-a-gianni-infantino-president-de-la-fifa-conteste-il-a-change-le-football/1713346#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-24T21:42:48+00:00"
+        }
+      }
     },
     {
       "id": "8617dac05dd9",
@@ -1207,26 +1331,27 @@
       "i18n": {
         "es": {
           "title": "Barça Team: \"El Barça agotará todas las vías por Julián\"",
-          "summary": "El futuro de Julián Álvarez sigue siendo uno de los grandes focos del mercado del FC Barcelona .",
-          "needs_translation": false
+          "summary": "El FC Barcelona explorará todas las opciones posibles para intentar concretar el fichaje de Julián Álvarez en el mercado.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Barça Team: \"Barça will exhaust all avenues for Julian\"",
-          "summary": "The future of Julián Álvarez remains one of the main focuses of the FC Barcelona market.",
+          "title": "Barça Team: \"Barça will exhaust every avenue for Julián\"",
+          "summary": "FC Barcelona plans to explore all possible options to secure the signing of Julián Álvarez in the transfer market.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Barça Team : « Le Barça épuisera toutes les possibilités pour Julián »",
-          "summary": "L'avenir de Julián Álvarez reste l'un des grands centres du marché du FC Barcelone .",
+          "title": "Barça Team : « Le Barça épuisera toutes les pistes pour Julián »",
+          "summary": "Le FC Barcelona prévoit d'explorer toutes les options possibles afin de recruter Julián Álvarez lors du mercato.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "فريق برشلونة: \"سوف يستنفد برشلونة جميع السبل لجوليان\"",
-          "summary": "لا يزال مستقبل جوليان ألفاريز أحد المحاور الرئيسية لسوق برشلونة .",
+          "title": "فريق برشلونة: \"برشلونة سيستنفد كل السبل من أجل خوليان\"",
+          "summary": "يسعى نادي برشلونة لاستكشاف كافة الخيارات المتاحة من أجل محاولة حسم صفقة ضم الأرجنتيني خوليان ألفاريز خلال سوق الانتقالات.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260824/1004219345/barca-team-barca-agotara-todas-vias-julian.html",
@@ -1248,7 +1373,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260824/1004219345/barca-team-barca-agotara-todas-vias-julian.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0b9dc63dc0f3",
@@ -1256,27 +1386,48 @@
       "summary": "Le président de la Fifa a annoncé le lancement d’une Coupe du monde des moins de 15 ans dès cette année. Un évènement de grande ampleur qui doit réunir 211 pays.",
       "i18n": {
         "fr": {
-          "title": "Foot : Gianni Infantino annonce la création d’un Mondial des moins de 15 ans avec... 211 pays",
-          "summary": "Le président de la Fifa a annoncé le lancement d’une Coupe du monde des moins de 15 ans dès cette année. Un évènement de grande ampleur qui doit réunir 211 pays.",
-          "needs_translation": false
+          "title": "La Fifa lance un Mondial U15 géant réunissant 211 sélections",
+          "summary": "Gianni Infantino a officialisé la création d’une Coupe du monde des moins de 15 ans regroupant l’intégralité des 211 fédérations de la Fifa dès cette année.",
+          "body": [
+            "Présenté dans une vidéo tournée lors d'un déplacement aux Caraïbes, ce tournoi inédit rassemblera plus de 4 000 jeunes joueurs. Si la formule exacte de la compétition reste à préciser, la Fifa prévoit déjà d'organiser la première édition féminine en 2027.",
+            "Le patron de l'instance internationale compte sur les retombées auprès des diffuseurs et des sponsors pour financer le projet, promettant de réinvestir l'intégralité des revenus dans le football. Cette annonce intervient alors que le dirigeant italo-suisse sort d'une polémique liée à son projet avorté d'ouverture du Mondial à des investisseurs privés."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Football: Gianni Infantino announces the creation of an Under-15 World Cup with... 211 countries",
-          "summary": "The FIFA President has announced the launch of an Under-15 World Cup this year. A large-scale event that will bring together 211 countries.",
+          "title": "FIFA launches massive U15 World Cup featuring 211 teams",
+          "summary": "Gianni Infantino has confirmed the launch of an Under-15 World Cup bringing together all 211 FIFA member associations starting this year.",
+          "body": [
+            "Unveiled in a video filmed during a visit to the Caribbean, this tournament will bring together over 4,000 young players. While the exact format remains undecided, FIFA is already planning to stage the inaugural women's edition in 2027.",
+            "The head of world football's governing body is counting on broadcast and sponsorship revenue to fund the initiative, pledging to reinvest all income straight back into the sport. The move comes shortly after a controversy surrounding his abandoned plan to open the World Cup to private investors."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Fútbol: Gianni Infantino anuncia la creación de un Mundial Sub-15 con... 211 países",
-          "summary": "El presidente de la FIFA anunció el lanzamiento de una Copa Mundial Sub-15 este año. Un evento de gran envergadura que reunirá a 211 países.",
+          "title": "La FIFA lanza un Mundial sub-15 con 211 selecciones",
+          "summary": "Gianni Infantino ha oficializado la creación de un Mundial sub-15 que reunirá a las 211 federaciones miembro de la FIFA este mismo año.",
+          "body": [
+            "Presentado a través de un vídeo grabado durante una gira por el Caribe, este torneo inédito reunirá a más de 4.000 jóvenes futbolistas. Aunque el formato definitivo aún no está definido, la FIFA ya proyecta la primera edición femenina para 2027.",
+            "El presidente del organismo confía en los ingresos por derechos televisivos y patrocinadores para financiar la iniciativa, prometiendo reinvertir la totalidad de lo recaudado en el fútbol. El anuncio llega tras la polémica en torno a su fallido plan de abrir el Mundial a inversores privados."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "كرة القدم: جياني إنفانتينو يعلن عن إنشاء كأس العالم تحت 15 سنة مع... 211 دولة",
-          "summary": "أعلن رئيس FIFA عن إطلاق كأس العالم تحت 15 عامًا هذا العام. حدث واسع النطاق سيجمع 211 دولة.",
+          "title": "الفيفا يطلق مونديالاً للناشئين تحت 15 عاماً بمشاركة 211 منتخباً",
+          "summary": "أعلن جاني إنفانتينو رسمياً إطلاق بطولة كأس العالم للناشئين تحت 15 عاماً، بمشاركة جميع الاتحادات الأعضاء البالغ عددها 211 اتحاداً، بدءاً من هذا العام.",
+          "body": [
+            "كُشف عن هذا الحدث غير المسبوق عبر مقطع فيديو صُوِّر خلال جولة في منطقة الكاريبي، حيث سيجمع أكثر من 4000 لاعب واعد. ورغم أن نظام المنافسة لم يُحسم بعد، يخطط الفيفا بالفعل لإقامة النسخة الأولى للفتيات عام 2027.",
+            "ويعوّل رئيس الاتحاد الدولي على عوائد البث التلفزيوني والرعاية لتمويل المشروع، متعهداً بإعادة استثمار كافة الأرباح في تطوير كرة القدم. ويأتي الإعلان بعد جدل واسع رافق مشروعه الملغى لفتح الباب أمام استثمارات خاصة في كأس العالم."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/foot-gianni-infantino-annonce-la-creation-d-un-mondial-des-moins-de-15-ans-avec-211-pays-20260824",
@@ -1298,7 +1449,20 @@
           "url": "https://www.lefigaro.fr/sports/football/foot-gianni-infantino-annonce-la-creation-d-un-mondial-des-moins-de-15-ans-avec-211-pays-20260824"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-24T21:42:50+00:00"
+        }
+      }
     },
     {
       "id": "f97211f259fd",
@@ -1313,7 +1477,7 @@
           ],
           "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-editor"
+          "engine": "retire-par-audit"
         },
         "en": {
           "title": "FIFA to launch 211-nation U15 World Cup this year",
@@ -1323,7 +1487,7 @@
           ],
           "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-editor"
+          "engine": "retire-par-audit"
         },
         "es": {
           "title": "La FIFA lanzará un Mundial sub-15 con 211 países este año",
@@ -1333,7 +1497,7 @@
           ],
           "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-editor"
+          "engine": "retire-par-audit"
         },
         "ar": {
           "title": "الفيفا يطلق كأس العالم تحت 15 عاما بمشاركة 211 دولة",
@@ -1343,7 +1507,7 @@
           ],
           "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-editor"
+          "engine": "retire-par-audit"
         }
       },
       "url": "https://video.lefigaro.fr/figaro/sports/football/football-gianni-infantino-annonce-un-mondial-u15-reunissant-211-pays-20260824",
@@ -1365,7 +1529,19 @@
           "url": "https://video.lefigaro.fr/figaro/sports/football/football-gianni-infantino-annonce-un-mondial-u15-reunissant-211-pays-20260824"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 9.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [
+            "Mention non sourcée d'un lancement 'dès cette année' absente du texte d'origine"
+          ],
+          "retire": true,
+          "ts": "2026-08-24T21:42:53+00:00"
+        }
+      }
     },
     {
       "id": "3c2981dc7a85",
@@ -1474,32 +1650,33 @@
       "i18n": {
         "de": {
           "title": "Starke Elfmeter-Parade ohne Wert: Mainz verliert Auftakt gegen Werder",
-          "summary": "Werder Bremen legte einen guten Start in die neue Bundesliga-Saison hin und setzte sich in Mainz mit 2:1 durch. Die Highlights der Partie gibt es hier im Video.",
-          "needs_translation": false
+          "summary": "Werder Bremen ist mit einem 2:1-Auswärtssieg bei Mainz erfolgreich in die neue Bundesliga-Saison gestartet. Eine Parade bei einem Elfmeter konnte die Niederlage der Hausherren nicht abwenden.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Strong penalty parade without value: Mainz loses kick-off against Werder",
-          "summary": "Werder Bremen made a good start to the new Bundesliga season and prevailed 2-1 in Mainz. The highlights of the game can be found here in the video.",
+          "title": "Strong penalty save in vain: Mainz lose opener against Werder",
+          "summary": "Werder Bremen kicked off the new Bundesliga season with a 2-1 away win against Mainz, despite the hosts saving a penalty.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Fort défilé de penalties sans valeur : Mayence perd l'ouverture contre le Werder",
-          "summary": "Le Werder Brême a pris un bon départ dans la nouvelle saison de Bundesliga et s'est imposé 2:1 à Mayence. Les temps forts de la partie se trouvent ici dans la vidéo.",
+          "title": "Arrêt sur penalty sans valeur : Mainz s'incline en ouverture face à Werder",
+          "summary": "Werder Bremen a débuté sa saison de Bundesliga par une victoire 2-1 sur le terrain de Mainz, malgré un penalty arrêté par les locaux.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Fuerte desfile de penaltis sin valor: el Mainz pierde el primer partido contra el Werder",
-          "summary": "El Werder Bremen dio un buen comienzo a la nueva temporada de la Bundesliga y se impuso por 2-1 en Maguncia. Los aspectos más destacados del partido se pueden ver aquí en el vídeo.",
+          "title": "Gran parada de penalti sin valor: Mainz pierde el debut ante Werder",
+          "summary": "Werder Bremen inició la temporada de la Bundesliga con un triunfo por 2-1 a domicilio frente a Mainz, a pesar de que los locales detuvieron un penalti.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "موكب جزائي قوي بلا قيمة: ماينز يخسر انطلاق المباراة ضد فيردر",
-          "summary": "بدأ فيردر بريمن بداية جيدة لموسم الدوري الألماني الجديد وفاز 2-1 في ماينز. يمكن العثور على النقاط البارزة في اللعبة هنا في الفيديو.",
+          "title": "تصدٍ رائع لركلة جزاء بلا جدوى: ماينتس يخسر مباراته الافتتاحية أمام فيردر بريمن",
+          "summary": "استهل فيردر بريمن مشواره في الدوري الألماني بالفوز خارج أرضه على ماينتس بنتيجة 2-1، رغم تصدي حارس أصحاب الأرض لركلة جزاء.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/starke-elfmeter-parade-ohne-wert-mainz-verliert-auftakt-gegen-werder-1246493/video#omrss",
@@ -1521,7 +1698,12 @@
           "url": "https://www.kicker.de/starke-elfmeter-parade-ohne-wert-mainz-verliert-auftakt-gegen-werder-1246493/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0df2a2554065",
@@ -1530,26 +1712,27 @@
       "i18n": {
         "fr": {
           "title": "Ayyoub Bouaddi va devenir le joueur le plus cher vendu par un club de Ligue 1",
-          "summary": "Ayyoub Bouaddi est sur le point d’entrer dans l’histoire du football français.",
-          "needs_translation": false
+          "summary": "Ayyoub Bouaddi s'apprête à devenir la vente la plus chère de l'histoire réalisée par un club de Ligue 1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Ayyoub Bouaddi will become the most expensive player sold by a Ligue 1 club",
-          "summary": "Ayyoub Bouaddi is about to enter the history of French football.",
+          "title": "Ayyoub Bouaddi to become the most expensive player sold by a Ligue 1 club",
+          "summary": "Ayyoub Bouaddi is set to become the most expensive departure in Ligue 1 history.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ayyoub Bouaddi se convertirá en el jugador más caro vendido por un club de la Ligue 1",
-          "summary": "Ayyoub Bouaddi está a punto de entrar en la historia del fútbol francés.",
+          "title": "Ayyoub Bouaddi se convertirá en el jugador más caro vendido por un club de Ligue 1",
+          "summary": "Ayyoub Bouaddi está a punto de convertirse en la venta más cara en la historia de un club de Ligue 1.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أيوب بوعدي سيصبح أغلى لاعب يباع من قبل نادي دوري الدرجة الأولى",
-          "summary": "أيوب بوعدي على وشك الدخول في تاريخ كرة القدم الفرنسية.",
+          "title": "أيوب بوعدي يقترب من أن يصبح أغلى لاعب يباع من نادٍ في الدوري الفرنسي",
+          "summary": "يستعد أيوب بوعدي ليصبح أغلى صفقة بيع في تاريخ أندية الدوري الفرنسي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://fr.hespress.com/486016-ayyoub-bouaddi-va-devenir-le-joueur-le-plus-cher-vendu-par-un-club-de-ligue-1.html",
@@ -1571,7 +1754,12 @@
           "url": "https://fr.hespress.com/486016-ayyoub-bouaddi-va-devenir-le-joueur-le-plus-cher-vendu-par-un-club-de-ligue-1.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "19e6b0d99075",
@@ -1640,26 +1828,27 @@
       "i18n": {
         "es": {
           "title": "Fulham - Chelsea, en directo | Premier League",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Premier League que enfrenta al Fulham contra el Chelsea correspondiente a Jornada 1.",
-          "needs_translation": false
+          "summary": "Fulham y Chelsea se enfrentan en directo en el partido correspondiente a la primera jornada de la Premier League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Fulham - Chelsea, live | Premier League",
-          "summary": "Good afternoon and welcome to the live narration of the Premier League football match between Fulham and Chelsea on Matchday 1.",
+          "title": "Fulham vs Chelsea, Live | Premier League",
+          "summary": "Fulham face Chelsea in the opening matchday fixture of the Premier League season.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Fulham - Chelsea, en direct | Premier League",
-          "summary": "Bonsoir et bienvenue au récit, en direct, du match de football de Premier League qui oppose Fulham à Chelsea correspondant à la Journée 1.",
+          "summary": "Fulham et Chelsea s'affrontent dans le cadre de la 1re journée de Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "فولهام - تشيلسي، مباشر | الدوري الإنجليزي الممتاز",
-          "summary": "مساء الخير ومرحبا بكم في السرد المباشر لمباراة كرة القدم في الدوري الممتاز بين فولهام وتشيلسي يوم المباراة 1.",
+          "title": "مباشر: فولهام ضد تشيلسي | الدوري الإنجليزي الممتاز",
+          "summary": "يلتقي فولهام مع تشيلسي ضمن منافسات الجولة الأولى من الدوري الإنجليزي الممتاز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260824/1004217822/fulham-chelsea-directo-premier-league.html",
@@ -1693,7 +1882,12 @@
           "url": "https://www.mundodeportivo.com/futbol/serie-a/20260824/1004217825/bologna-lazio-directo-serie.html"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "26fe99e4367d",
@@ -1802,26 +1996,27 @@
       "i18n": {
         "es": {
           "title": "Emegha podría dejar el Chelsea de Xabi Alonso semanas después de su llegada",
-          "summary": "Emanuel Emegha (23) podría volver a cambiar de aires este verano.",
-          "needs_translation": false
+          "summary": "Emanuel Emegha (23) podría marcharse este verano y cambiar de club pocas semanas después de su llegada al Chelsea de Xabi Alonso.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Emegha could leave Xabi Alonso's Chelsea weeks after arrival",
-          "summary": "Emanuel Emegha (23) could change his mind again this summer.",
+          "title": "Emegha could leave Xabi Alonso's Chelsea weeks after his arrival",
+          "summary": "Emanuel Emegha (23) could leave Xabi Alonso's Chelsea this summer, just a few weeks after his arrival.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Emegha pourrait quitter le Chelsea de Xabi Alonso quelques semaines après son arrivée",
-          "summary": "Emanuel Emegha (23 ans) pourrait à nouveau changer d'air cet été.",
+          "summary": "Emanuel Emegha (23 ans) pourrait déjà quitter le Chelsea de Xabi Alonso cet été, seulement quelques semaines après son arrivée.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يمكن أن تغادر إيميغا تشيلسي تشابي ألونسو بعد أسابيع من وصولها",
-          "summary": "يمكن لإيمانويل إيميغا (23 عامًا) أن يغير رأيه مرة أخرى هذا الصيف.",
+          "title": "إيميغا قد يغادر تشيلسي تشابي ألونسو بعد أسابيع من وصوله",
+          "summary": "قد يغادر إيمانويل إيميغا (23 عاماً) صفوف نادي تشيلسي بقيادة تشابي ألونسو هذا الصيف، بعد أسابيع قليلة فقط من انضمامه إلى الفريق.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fichajes/20260824/1004219331/emegha-dejar-chelsea-xabi-alonso-semanas-llegada.html",
@@ -1843,7 +2038,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fichajes/20260824/1004219331/emegha-dejar-chelsea-xabi-alonso-semanas-llegada.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4023d74735b9",
@@ -1852,26 +2052,27 @@
       "i18n": {
         "es": {
           "title": "Gordon: \"Ha sido el inicio perfecto\"",
-          "summary": "Anthony Gordon (25 años) tuvo un debut para el recuerdo en el triunfo en Elche (0-5).",
-          "needs_translation": false
+          "summary": "Anthony Gordon, de 25 años, firmó un gran debut en la contundente victoria por 0-5 en el campo de Elche.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Gordon: \"It was the perfect start\"",
-          "summary": "Anthony Gordon (25 years old) made a debut for the memory in the win in Elche (0-5).",
+          "title": "Gordon: \"It has been the perfect start\"",
+          "summary": "Anthony Gordon (25) enjoyed a memorable debut in a comprehensive 0-5 victory away at Elche.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Gordon : « C'était le début parfait »",
-          "summary": "Anthony Gordon (25 ans) a fait ses débuts pour la mémoire lors de la victoire à Elche (0-5).",
+          "title": "Gordon : « C'était le début parfait »",
+          "summary": "Anthony Gordon (25 ans) a réussi ses débuts lors de la large victoire 0-5 sur le terrain d'Elche.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "جوردون: \"كانت البداية المثالية\"",
-          "summary": "ظهر أنتوني جوردون (25 عامًا) لأول مرة للذاكرة في الفوز في إلتشي (0-5).",
+          "title": "غوردون: \"كانت البداية المثالية\"",
+          "summary": "خاض أنتوني غوردون (25 عاماً) ظهوراً أول لا يُنسى خلال الفوز العريض بنتيجة 0-5 على ملعب إلتشي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260824/1004219328/gordon-sido-inicio-perfecto.html",
@@ -1893,7 +2094,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260824/1004219328/gordon-sido-inicio-perfecto.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "94f7aefb35d5",
@@ -1902,26 +2108,27 @@
       "i18n": {
         "es": {
           "title": "Así ha celebrado Espí en la intimidad su fichaje por el Madrid",
-          "summary": "Carlos Espí es la mejor definición de aquello de caer de pie en un sitio. Ya en pretemporada, el joven delantero hizo dos tantos con la camiseta blanca.",
-          "needs_translation": false
+          "summary": "Tras concretar su fichaje por el Real Madrid, el joven delantero Carlos Espí comenzó de forma positiva al marcar dos goles durante la pretemporada.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "This is how Espí celebrated his signing for Madrid in privacy",
-          "summary": "Carlos Espí is the best definition of falling standing in a place. Already in pre-season, the young striker scored two goals with the white jersey.",
+          "title": "How Espí celebrated his signing for Madrid in private",
+          "summary": "Following his signing for Real Madrid, young forward Carlos Espí made a strong start by scoring two goals in pre-season.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "C'est ainsi qu'Espí a célébré dans l'intimité son transfert à Madrid",
-          "summary": "Carlos Espí est la meilleure définition de ce qui est de tomber debout dans un endroit. Déjà en pré-saison, le jeune attaquant a marqué deux buts avec le maillot blanc.",
+          "title": "Comment Espí a célébré en privé sa signature au Madrid",
+          "summary": "Nouvellement recruté par le Real Madrid, le jeune attaquant Carlos Espí a réussi ses débuts en inscrivant deux buts durant la pré-saison.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هذه هي الطريقة التي احتفل بها إسبي بتوقيعه لمدريد في خصوصية",
-          "summary": "كارلوس إسبي هو أفضل تعريف للوقوف في مكان ما. بالفعل في فترة ما قبل الموسم، سجل المهاجم الشاب هدفين مع القميص الأبيض.",
+          "title": "هكذا احتفل إسبي في أجواء خاصة بانتقاله إلى ريال مدريد",
+          "summary": "بدأ المهاجم الشاب كارلوس إسبي مسيرته مع ريال مدريد بشكل إيجابي، مسجلاً هدفين مع الفريق خلال الفترة التحضيرية للموسم الجديد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260824/1004219327/asi-celebrado-espi-intimidad-fichaje-madrid.html",
@@ -1943,7 +2150,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260824/1004219327/asi-celebrado-espi-intimidad-fichaje-madrid.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "344cd7e5d7b4",
@@ -2008,26 +2220,27 @@
       "i18n": {
         "es": {
           "title": "Furtado: “Sabía que el Girona era un gran club que da oportunidades”",
-          "summary": "Mauro Furtado ya tuvo su puesta de largo como nuevo jugador del Girona.",
-          "needs_translation": false
+          "summary": "Mauro Furtado ha sido presentado oficialmente como nuevo jugador del Girona.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Furtado: \"I knew that Girona was a great club that gives opportunities\"",
-          "summary": "Mauro Furtado has already made his debut as a new Girona player.",
+          "title": "Furtado: \"I knew Girona was a great club that gives opportunities\"",
+          "summary": "Mauro Furtado has been officially presented as a new Girona player.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Furtado : « Je savais que Girona était un grand club qui offre des opportunités »",
-          "summary": "Mauro Furtado a déjà fait ses débuts en tant que nouveau joueur de Girona.",
+          "title": "Furtado : « Je savais que Girona était un grand club qui donne des opportunités »",
+          "summary": "Mauro Furtado a été officiellement présenté comme nouveau joueur de Girona.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "فورتادو: \"كنت أعرف أن جيرونا كان ناديًا رائعًا يمنح الفرص\"",
-          "summary": "ظهر ماورو فورتادو بالفعل لأول مرة كلاعب جديد في جيرونا.",
+          "title": "فورتادو: «كنت أعلم أن جيرونا نادٍ كبير يمنح الفرص»",
+          "summary": "تم تقديم ماورو فورتادو رسميًا لاعبًا جديدًا في صفوف نادي جيرونا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/girona-fc/20260824/1004219321/furtado-sabia-girona-gran-club-da-oportunidades.html",
@@ -2049,7 +2262,12 @@
           "url": "https://www.mundodeportivo.com/futbol/girona-fc/20260824/1004219321/furtado-sabia-girona-gran-club-da-oportunidades.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c0c6ef06aafd",
