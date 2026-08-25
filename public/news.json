@@ -167,32 +167,33 @@
       "i18n": {
         "de": {
           "title": "\"Wollen Mailand dominieren\" - VfL-Frauen vor Duell mit Inter selbstbewusst",
-          "summary": "Die Wolfsburger Fußballerinnen wollen am Mittwoch im Hinspiel der dritten Qualifikationsrunde zur Champions League den Grundstein fürs Weiterkommen legen.",
-          "needs_translation": false
+          "summary": "Die Wolfsburger Fußballerinnen wollen am Mittwoch im Hinspiel der dritten Qualifikationsrunde zur Champions League gegen Inter den Grundstein fürs Weiterkommen legen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "\"Want to dominate Milan\" - VfL women confident ahead of duel with Inter",
-          "summary": "The Wolfsburg footballers want to lay the foundation for progress in the first leg of the third qualifying round for the Champions League on Wednesday.",
+          "title": "\"Want to dominate Milan\" - VfL-Frauen confident ahead of clash with Inter",
+          "summary": "The Wolfsburger Fußballerinnen aim to lay the foundation for advancement on Wednesday in the Champions League third qualifying round first leg against Inter.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "« Vouloir dominer Milan » - Les femmes du VfL avant un duel avec l'Inter",
-          "summary": "Les footballeuses de Wolfsburg veulent poser la première pierre de leur progression mercredi lors du match aller du troisième tour de qualification pour la Ligue des champions.",
+          "title": "« Dominer Milan » : les VfL-Frauen confiantes avant le duel face à Inter",
+          "summary": "Les Wolfsburger Fußballerinnen veulent poser les bases de la qualification mercredi lors du match aller du troisième tour qualificatif de la Champions League face à Inter.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "\"Querer dominar Milán\": las mujeres del VfL antes del duelo con el Inter confían en sí mismas",
-          "summary": "Las futbolistas del Wolfsburgo quieren sentar las bases para avanzar en el partido de ida de la tercera ronda de clasificación de la Liga de Campeones el miércoles.",
+          "title": "\"Queremos dominar en Milán\": las VfL-Frauen, confiadas antes del duelo ante el Inter",
+          "summary": "Las Wolfsburger Fußballerinnen buscan encarrilar su pase este miércoles en el partido de ida de la tercera ronda previa de la Champions League ante el Inter.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"أريد أن أهيمن على ميلانو\" - نساء VfL واثقات قبل المبارزة مع إنتر",
-          "summary": "يريد لاعبو فولفسبورغ وضع الأساس للتقدم في المرحلة الأولى من الجولة التأهيلية الثالثة لدوري أبطال أوروبا يوم الأربعاء.",
+          "title": "\"نريد فرض سيطرتنا في ميلانو\" - ثقة كبيرة لدى سيدات فولفسبورغ قبل مواجهة إنتر",
+          "summary": "تسعى لاعبات فولفسبورغ لوضع أساس التأهل يوم الأربعاء في ذهاب الدور التأهيلي الثالث من دوري أبطال أوروبا للسيدات أمام إنتر ميلان.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/regional/ndr/VfL-Wolfsburg-Frauen,wolfsburg-1592.html",
@@ -214,7 +215,12 @@
           "url": "https://www.sportschau.de/regional/ndr/VfL-Wolfsburg-Frauen,wolfsburg-1592.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0885269bea72",
@@ -223,26 +229,27 @@
       "i18n": {
         "es": {
           "title": "El trabajo de final de mercado se multiplica en el Fabril: a la caza de dos fichajes y diez futbolistas en la sala de espera",
-          "summary": "El Deportivo está a la espera de cerrar el fichaje de Adama Traoré y se seguirá moviendo por el central zurdo, aunque existen serias opciones de que no venga por limitaciones de fichas y de cupo salarial.",
-          "needs_translation": false
+          "summary": "El Deportivo espera concretar el fichaje de Adama Traoré y busca un central zurdo, aunque las restricciones salariales y el límite de fichas complican la operación.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The end-of-market job multiplies in the Factory: on the hunt for two signings and ten players in the waiting room",
-          "summary": "Deportivo is waiting to close the signing of Adama Traoré and will continue to move for the left-handed centre-back, although there are serious options for him not to come due to limitations of tokens and salary quota.",
+          "title": "Late transfer window activity intensifies at Fabril: targeting two signings and ten players on standby",
+          "summary": "Deportivo hopes to complete the signing of Adama Traoré and continues searching for a left-footed center-back, though salary cap and squad license limits could prevent the move.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le travail de fin de mercato se multiplie au Fabril : à la poursuite de deux recrues et dix footballeurs dans la salle d'attente",
-          "summary": "Le Deportivo attend de conclure le transfert d'Adama Traoré et continuera à se déplacer dans le centre gauche, bien qu'il existe de sérieuses options pour qu'il ne vienne pas en raison de limitations de jetons et de quotas salariaux.",
+          "title": "La fin de mercato s'accélère au Fabril : deux recrues ciblées et dix joueurs en salle d'attente",
+          "summary": "Le Deportivo espère finaliser la signature d'Adama Traoré et cherche un défenseur central gaucher, bien que le plafond salarial et la limite de licences puissent empêcher l'opération.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تتضاعف وظيفة نهاية السوق في المصنع: في البحث عن توقيعين وعشرة لاعبين في غرفة الانتظار",
-          "summary": "ينتظر ديبورتيفو إغلاق توقيع أداما تراوري وسيستمر في الانتقال إلى الظهير الأيسر، على الرغم من وجود خيارات جادة لعدم حضوره بسبب قيود الرموز وحصة الراتب.",
+          "title": "تسارع وتيرة الميركاتو في فابريل: استهداف صفقتين وعشرة لاعبين في قائمة الانتظار",
+          "summary": "ينتظر ديبورتيفو حسم صفقة أداما تراوري ويواصل مساعيه لضم مدافع أيسر، رغم أن قيود سقف الرواتب والعدد المتاح لتسجيل اللاعبين قد تعرقل انضمامه.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/trabajo-final-mercado-multiplica-fabril-133646439?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -264,7 +271,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/trabajo-final-mercado-multiplica-fabril-133646439?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e2d3b42e3c54",
@@ -273,32 +285,33 @@
       "i18n": {
         "de": {
           "title": "Defensiv-Engpass verschärft sich: Ballisager fehlt Bayern vorerst",
-          "summary": "Dem FC Bayern gehen rechts hinten so langsam die Alternativen aus. Jetzt fällt auch noch Stine Ballisager aus unbestimmte Zeit aus.",
-          "needs_translation": false
+          "summary": "Stine Ballisager fällt beim FC Bayern für unbestimmte Zeit aus. Damit verschärfen sich die personellen Probleme auf der rechten Abwehrseite des Klubs weiter.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Defensive bottleneck worsens: Ballisager is missing from Bavaria for the time being",
-          "summary": "FC Bayern are slowly running out of alternatives in the right back. Now Stine Ballisager is also out for an indefinite period of time.",
+          "title": "Defensive shortage worsens: Ballisager sidelined for Bayern",
+          "summary": "Stine Ballisager is ruled out for an indefinite period, further worsening FC Bayern's defensive options at right-back.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le goulot d'étranglement défensif s'aggrave : la Bavière manque de balisage pour le moment",
-          "summary": "Le FC Bayern manque lentement d'alternatives à l'arrière droit. Maintenant, Stine Ballisager est également absent pour une durée indéterminée.",
+          "title": "Pénurie défensive aggravée : Ballisager absente pour le moment avec le Bayern",
+          "summary": "Stine Ballisager est indisponible pour une durée indéterminée. Son absence aggrave les problèmes d'effectif du FC Bayern au poste de latérale droite.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El cuello de botella defensivo se agrava: Ballisager carece de Baviera por el momento",
-          "summary": "El FC Bayern se está quedando sin alternativas en la parte trasera derecha. Ahora Stine Ballisager también cae de forma indefinida.",
+          "title": "Se agrava la crisis defensiva: Ballisager causa baja por ahora en el Bayern",
+          "summary": "Stine Ballisager es baja por tiempo indefinido en el FC Bayern, lo que reduce aún más las alternativas del equipo en el lateral derecho.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يزداد عنق الزجاجة الدفاعي سوءًا: Ballisager مفقود من بافاريا في الوقت الحالي",
-          "summary": "بايرن ميونيخ ينفد ببطء من البدائل في الظهير الأيمن. الآن Stine Ballisager هو أيضا خارج لفترة غير محددة من الزمن.",
+          "title": "تفاقم أزمة الدفاع: باليساغر تغيب عن بايرن ميونخ مؤقتاً",
+          "summary": "تغيب المدافعة ستين باليساغر عن صفوف بايرن ميونخ لفترة غير محددة، ما يزيد من حدة النقص العددي في مركز الظهير الأيمن للفريق.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/defensiv-engpass-verschaerft-sich-ballisager-fehlt-bayern-vorerst-1246671/artikel#omrss",
@@ -320,7 +333,12 @@
           "url": "https://www.kicker.de/defensiv-engpass-verschaerft-sich-ballisager-fehlt-bayern-vorerst-1246671/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "31b860317b85",
@@ -379,26 +397,27 @@
       "i18n": {
         "es": {
           "title": "Con regresos clave, el probable 11 de River para el duelo decisivo ante Santa Fe",
-          "summary": "Eduardo Coudet se juega su futuro en los octavos de la Copa Sudamericana y pondrá en cancha un 11 que se acerca al ideal.",
-          "needs_translation": false
+          "summary": "Eduardo Coudet alineará un once cercano a su equipo ideal con River para disputar los octavos de final de la Copa Sudamericana frente a Santa Fe.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "With key returns, River's likely 11 for the decisive match against Santa Fe",
-          "summary": "Eduardo Coudet is playing his future in the round of 16 of the South American Cup and will put on the field an 11 that is close to ideal.",
+          "title": "With key returns, River's probable starting XI for the decisive clash against Santa Fe",
+          "summary": "Eduardo Coudet will field a near-ideal starting lineup for River in their Copa Sudamericana round of 16 clash against Santa Fe.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Avec des retours clés, le probable 11 de River pour le duel décisif contre Santa Fe",
-          "summary": "Eduardo Coudet joue son avenir dans les huitièmes de finale de la Copa Sudamericana et mettra sur le terrain un 11 qui se rapproche de l'idéal.",
+          "title": "Avec des retours clés, le onze probable de River pour le match décisif contre Santa Fe",
+          "summary": "Eduardo Coudet alignera une équipe proche de son onze type avec River pour disputer les huitièmes de finale de la Copa Sudamericana face à Santa Fe.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مع العوائد الرئيسية، من المحتمل أن يكون ريفر 11 للمباراة الحاسمة ضد سانتا في",
-          "summary": "يلعب إدواردو كوديه مستقبله في دور الـ 16 من كأس أمريكا الجنوبية وسيضع في الملعب رقم 11 وهو قريب من المثالية.",
+          "title": "بعودة لاعبين بارزين، التشكيل المتوقع لريفر بليت في المواجهة الحاسمة أمام سانتا في",
+          "summary": "يعتزم المدرب إدواردو كوديه الدفع بالتشكيل المثالي لفريق ريفر بليت في مواجهة سانتا في ضمن ثمن نهائي بطولة كوبا سودأمريكانا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-plate-probable-equipo-11-copa-sudamericana-santa-fe-coudet_0_7BT1PJuB5B.html",
@@ -420,7 +439,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-plate-probable-equipo-11-copa-sudamericana-santa-fe-coudet_0_7BT1PJuB5B.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a98e63e85338",
@@ -479,26 +503,27 @@
       "i18n": {
         "fr": {
           "title": "Manchester City s’offre Bouaddi et signe le plus gros transfert de l’histoire du football arabe",
-          "summary": "Manchester City s’apprête à enregistrer l’une des recrues les plus marquantes de son histoire récente.",
-          "needs_translation": false
+          "summary": "Manchester City s’apprête à recruter Bouaddi. Cette opération représente le transfert le plus cher de l’histoire du football arabe.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Manchester City acquires Bouaddi and signs the biggest transfer in the history of Arab football",
-          "summary": "Manchester City is about to register one of the most significant recruits in its recent history.",
+          "title": "Manchester City secure Bouaddi in record-breaking transfer for Arab football",
+          "summary": "Manchester City are set to sign Bouaddi, completing the most expensive transfer in the history of Arab football.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Manchester City compra Bouaddi y firma el traspaso más grande de la historia del fútbol árabe",
-          "summary": "El Manchester City está a punto de registrar a uno de los fichajes más destacados de su historia reciente.",
+          "title": "Manchester City ficha a Bouaddi y firma el mayor traspaso de la historia del fútbol árabe",
+          "summary": "Manchester City se prepara para fichar a Bouaddi, cerrando el traspaso más caro en la historia del fútbol árabe.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مانشستر سيتي يستحوذ على بوعدي ويوقع أكبر صفقة انتقال في تاريخ كرة القدم العربية",
-          "summary": "مانشستر سيتي على وشك تسجيل واحد من أهم المجندين في تاريخه الحديث.",
+          "title": "مانشستر سيتي يتعاقد مع بوعادي في أغلى صفقة في تاريخ كرة القدم العربية",
+          "summary": "يستعد نادي مانشستر سيتي لإتمام تعاقده مع بوعادي، ليسجل بذلك أغلى صفقة انتقال في تاريخ كرة القدم العربية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://fr.hespress.com/486071-manchester-city-soffre-bouaddi-et-signe-le-plus-gros-transfert-de-lhistoire-du-football-arabe.html",
@@ -520,7 +545,12 @@
           "url": "https://fr.hespress.com/486071-manchester-city-soffre-bouaddi-et-signe-le-plus-gros-transfert-de-lhistoire-du-football-arabe.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f8d98a38b8d7",
@@ -685,32 +715,33 @@
       "i18n": {
         "de": {
           "title": "Bayern-Coach Gavel gesteht \"Fehler\" um Wechselposse ein",
-          "summary": "Anton Gavel ist neuer Trainer der Münchner Basketballer. Der ehemalige Profi steckt mit seiner Leidenschaft an.",
-          "needs_translation": false
+          "summary": "Anton Gavel hat das Amt als neuer Trainer der Basketballer des FC Bayern München übernommen. Der ehemalige Profi will das Team mit Leidenschaft anführen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Bayern coach Gavel admits \"error\" around switching poses",
-          "summary": "Anton Gavel is the new coach of the Munich basketball player. The former professional infects with his passion.",
+          "title": "Bayern coach Gavel admits \"mistakes\" in transfer saga",
+          "summary": "Anton Gavel is the new head coach of Bayern Munich's basketball team. The former professional takes charge of the Munich side.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "L'entraîneur du Bayern Gavel admet des « erreurs » pour changer de position",
-          "summary": "Anton Gavel est le nouvel entraîneur des basketteurs munichois. L'ancien professionnel contamine par sa passion.",
+          "title": "L'entraîneur du Bayern Gavel admet des « erreurs » dans le feuilleton de son transfert",
+          "summary": "Anton Gavel est le nouvel entraîneur de l'équipe de basket-ball du Bayern Munich. L'ancien joueur professionnel prend la tête de la formation bavaroise.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El entrenador del Bayern, Gavel, admite un \"error\" en torno a la permuta",
-          "summary": "Anton Gavel es el nuevo entrenador de los jugadores de baloncesto de Múnich. El ex profesional contagia su pasión.",
+          "title": "El entrenador del Bayern Gavel admite \"errores\" en el culebrón de su fichaje",
+          "summary": "Anton Gavel es el nuevo entrenador del equipo de baloncesto del Bayern Múnich. El exjugador profesional toma las riendas del conjunto bávaro.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يعترف مدرب بايرن غافل بوجود \"خطأ\" حول وضعيات التبديل",
-          "summary": "أنطون جافيل هو المدرب الجديد للاعب كرة السلة في ميونيخ. يصاب المحترف السابق بشغفه.",
+          "title": "مدرب بايرن جافيل يعترف بارتكاب \"أخطاء\" في قضية انتقاله",
+          "summary": "تولى أنتون جافيل منصب المدير الفني الجديد لفريق كرة السلة في بايرن ميونخ، ليبدأ اللاعب المحترف السابق مهمته على رأس الفريق البافاري.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/bayern-coach-gavel-gesteht-fehler-um-wechselposse-ein-1246650/artikel#omrss",
@@ -732,7 +763,12 @@
           "url": "https://www.kicker.de/bayern-coach-gavel-gesteht-fehler-um-wechselposse-ein-1246650/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f54e9bbefae9",
@@ -741,26 +777,27 @@
       "i18n": {
         "es": {
           "title": "Cómo está la situación del quinto refuerzo en Boca: ¿llega o no un central?",
-          "summary": "El Xeneize tiene cada vez más cupos para incorporar y Arruabarrena reconoció la necesidad. Qué piensan Riquelme y Delgado.",
-          "needs_translation": false
+          "summary": "Boca dispone de cupos para incorporar jugadores y Arruabarrena reconoció la necesidad de fichar un central. Riquelme y Delgado analizan las opciones en el mercado.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "How is the situation of the fifth reinforcement in Boca: does a central station arrive or not?",
-          "summary": "The Xeneize has more and more seats to incorporate and Arruabarrena recognized the need. What Riquelme and Delgado think.",
+          "title": "The situation of Boca's fifth signing: will a centre-back arrive?",
+          "summary": "Boca have roster spots available and Arruabarrena has acknowledged the need to sign a centre-back. Riquelme and Delgado are currently assessing their options.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Comment est la situation du cinquième renfort à Boca : un central arrive-t-il ou non ?",
-          "summary": "Le Xeneize a de plus en plus de quotas à intégrer et Arruabarrena en a reconnu la nécessité. Ce que pensent Riquelme et Delgado.",
+          "title": "La situation du cinquième renfort à Boca : un défenseur central va-t-il arriver ?",
+          "summary": "Boca dispose de places pour recruter et Arruabarrena a reconnu le besoin d'engager un défenseur central. Riquelme et Delgado évaluent la faisabilité du dossier.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كيف هو وضع التعزيز الخامس في بوكا: هل تصل محطة مركزية أم لا ؟",
-          "summary": "لدى Xeneize المزيد والمزيد من المقاعد لدمجها وأدركت Arruabarrena الحاجة. ما يعتقده ريكيلمي وديلغادو.",
+          "title": "موقف الصفقة الخامسة في بوكا جونيورز: هل ينضم مدافع جديد؟",
+          "summary": "يمتلك بوكا جونيورز أماكن شاغرة لضم لاعبين جدد، وقد أقر أروابارينا بالحاجة للتعاقد مع مدافع، بينما يدرس ريكيلمي وديلغادو الخيارات المتاحة في سوق الانتقالات.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/bocajuniors-rodolfoarruabarrena-nicolasfigal-juanromanriquelme-facundojaggerherrera-santiagonunez-franciscoalvarez-matiassatas_0_37nfoIFaEc.html",
@@ -782,7 +819,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/bocajuniors-rodolfoarruabarrena-nicolasfigal-juanromanriquelme-facundojaggerherrera-santiagonunez-franciscoalvarez-matiassatas_0_37nfoIFaEc.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "835e6a5059e5",
@@ -841,26 +883,27 @@
       "i18n": {
         "en": {
           "title": "Liverpool close to full agreement with Yankuba Minteh, with price revealed: report",
-          "summary": "Liverpool are looking to sign Yankuba Minteh, and could raise their bid today",
-          "needs_translation": false
+          "summary": "Liverpool are looking to sign Yankuba Minteh and could raise their offer today as they close in on an agreement.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Liverpool proche de l'accord total avec Yankuba Minteh, avec le prix révélé : rapport",
-          "summary": "Liverpool cherche à signer Yankuba Minteh, et pourrait augmenter son offre aujourd'hui",
+          "title": "Liverpool proche d'un accord total avec Yankuba Minteh, le prix dévoilé selon la presse",
+          "summary": "Liverpool cherche à recruter Yankuba Minteh et pourrait augmenter son offre aujourd'hui afin de finaliser un accord.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Liverpool cerca de un acuerdo total con Yankuba Minteh, con precio revelado: informe",
-          "summary": "El Liverpool quiere fichar a Yankuba Minteh y podría aumentar su oferta hoy",
+          "title": "Liverpool, cerca de un acuerdo total con Yankuba Minteh y con el precio desvelado, según la prensa",
+          "summary": "Liverpool busca fichar a Yankuba Minteh y podría aumentar su oferta hoy mismo para cerrar el traspaso.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ليفربول تقترب من الاتفاق الكامل مع يانكوبا مينتيه، مع الكشف عن السعر: تقرير",
-          "summary": "ليفربول يتطلع للتوقيع مع يانكوبا مينتيه، ويمكن أن يرفع عرضه اليوم",
+          "title": "ليفربول يقترب من اتفاق كامل مع يانكوبا مينتيه والكشف عن قيمة الصفقة وفق تقارير",
+          "summary": "يسعى ليفربول للتعاقد مع يانكوبا مينتيه، وقد يرفع عرضه المالي اليوم مع اقترابه من التوصل إلى اتفاق نهائي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.fourfourtwo.com/transfer/liverpool-pressing-for-bizarre-deal-for-yankuba-minteh-report",
@@ -888,7 +931,12 @@
           "url": "https://www.fourfourtwo.com/transfer/liverpool-close-to-full-agreement-with-yankuba-minteh-with-price-revealed-report"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "501aeebbda5b",
@@ -896,46 +944,42 @@
       "summary": "Le responsable des South Winners balaie toute polémique après le tifo célébrant le sacre mondial espagnol déployé lors d'OM-Strasbourg.",
       "i18n": {
         "fr": {
-          "title": "OM : Rachid Zeroual justifie le tifo « Viva Roja » des South Winners",
-          "summary": "Le responsable des South Winners balaie toute polémique après le tifo célébrant le sacre mondial espagnol déployé lors d'OM-Strasbourg.",
+          "title": "OM : Rachid Zeroual dément toute provocation avec le tifo espagnol",
+          "summary": "Rachid Zeroual a balayé toute controverse après le déploiement d'un tifo célébrant le sacre mondial de l'Espagne lors de Marseille-Strasbourg.",
           "body": [
-            "Interrogé par Football Club de Marseille, Rachid Zeroual a réfuté toute volonté de provocation envers les Bleus ou Didier Deschamps. Le leader du virage Sud vante la qualité du jeu espagnol et rappelle la présence de supporters d'origine espagnole au sein de ses rangs.",
-            "L'association marseillaise, revendiquée comme cosmopolite depuis sa création en 1987, avait déjà rendu des hommages similaires par le passé lors des victoires de l'Algérie et du Sénégal à la Coupe d'Afrique des nations."
+            "Le responsable des South Winners a justifié cet hommage à La Roja par la qualité de son jeu et la diversité de son groupe, qui compte de nombreux supporters espagnols. Il a réfuté toute animosité envers Didier Deschamps ou l'équipe de France, rappelant que le virage sud avait déjà célébré les sacres du Sénégal et de l'Algérie."
           ],
-          "format": "deep",
+          "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "en": {
-          "title": "OM: Rachid Zeroual explains South Winners' 'Viva Roja' tifo",
-          "summary": "The South Winners chief brushed aside any controversy following the tifo celebrating Spain's World Cup title during OM-Strasbourg.",
+          "title": "OM: Rachid Zeroual denies provocation over Spanish tifo",
+          "summary": "Rachid Zeroual dismissed any controversy after a tifo celebrating Spain's world title was displayed during Marseille's match against Strasbourg.",
           "body": [
-            "Speaking to Football Club de Marseille, Rachid Zeroual denied any intention to provoke Les Bleus or Didier Deschamps. The South Stand leader praised the Spanish style of play and highlighted the group's many fans of Spanish descent.",
-            "Proudly cosmopolitan since its foundation in 1987, the Marseille supporters' group has previously staged similar tributes after Africa Cup of Nations victories by Algeria and Senegal."
+            "The leader of the South Winners justified the tribute to La Roja by praising their style of play and highlighting his group's diversity, which includes Spanish supporters. He denied any animosity toward Didier Deschamps or France, noting that the South Stand had previously celebrated titles won by Senegal and Algeria."
           ],
-          "format": "deep",
+          "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "es": {
-          "title": "OM: Rachid Zeroual defiende el tifo «Viva Roja» de los South Winners",
-          "summary": "El líder de los South Winners zanja la polémica tras el tifo en homenaje al título mundial de España mostrado en el OM-Strasbourg.",
+          "title": "OM: Rachid Zeroual niega cualquier provocación con el tifo español",
+          "summary": "Rachid Zeroual zanjó la polémica tras el despliegue de un tifo que celebraba el título mundial de España ante el Strasbourg.",
           "body": [
-            "En declaraciones a Football Club de Marseille, Rachid Zeroual negó cualquier ánimo de provocar a Les Bleus o a Didier Deschamps. El referente de la grada sur elogió el fútbol español y recordó el peso de los aficionados de origen español entre sus miembros.",
-            "El colectivo marsellés, con un marcado carácter cosmopolita desde su fundación en 1987, ya realizó homenajes similares en el pasado tras las victorias de Argelia y Senegal en la Copa África."
+            "El líder de los South Winners justificó el homenaje a La Roja por la calidad de su juego y la diversidad de su grupo, que cuenta con aficionados españoles. Rechazó cualquier animadversión hacia Didier Deschamps o Francia, recordando que la grada sur ya celebró los triunfos de Senegal y Argelia."
           ],
-          "format": "deep",
+          "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "ar": {
-          "title": "أولمبيك مارسيليا: رشيد زروال يوضح حقيقة تيفو «فيفا روخا» لمجموعة «ساوث وينرز»",
-          "summary": "نفى رئيس رابطة «ساوث وينرز» وجود أي جدل بشأن التيفو الذي احتفى بتتويج إسبانيا باللقب العالمي خلال مواجهة مارسيليا وستراسبورغ.",
+          "title": "أولمبيك مارسيليا: رشيد زروال ينفي أي استفزاز في «تيفو» إسبانيا",
+          "summary": "نفى رشيد زروال وجود أي استفزاز بعد رفع «تيفو» يحتفل بتتويج إسبانيا بكأس العالم خلال مواجهة أولمبيك مارسيليا وستراسبورغ.",
           "body": [
-            "وفي تصريحات لموقع «فوتبول كلوب دو مارسيليا»، نفى رشيد زروال أي نية لاستفزاز المنتخب الفرنسي أو المدرب ديدييه ديشان، مشيداً بجمالية الكرة الإسبانية ومؤكداً حضور جماهير من أصول إسبانية داخل مدرجات الرابطة.",
-            "وكانت الرابطة، التي تعتز بتنوعها الثقافي منذ تأسيسها عام 1987، قد قدمت مبادرات تكريمية مماثلة في أوقات سابقة احتفالاً بتتويج منتخبي الجزائر والسنغال بلقب كأس الأمم الإفريقية."
+            "وبرر رئيس رابطة «ساوث وينرز» تكريم المنتخب الإسباني بجمالية لعبه وتنوع أعضاء مجموعته التي تضم مشجعين إسباناً. كما نفى وجود أي عداء ضد ديدييه ديشان أو فرنسا، مذكراً باحتفال المدرج الجنوبي سابقاً بتتويج السنغال والجزائر."
           ],
-          "format": "deep",
+          "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         }
@@ -959,7 +1003,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/-viva-roja-rachid-zeroual-patron-des-south-winners-s-explique-sur-le-tifo-en-hommage-a-la-victoire-de-l-espagne-a-la-coupe-du-monde/1713457#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-25T15:29:00+00:00"
+        }
+      }
     },
     {
       "id": "bcb48e8937df",
@@ -1024,32 +1081,33 @@
       "i18n": {
         "de": {
           "title": "Castanedas Tor auf dem Weg zum großen Traum",
-          "summary": "Sein Trainer hält ihn für einen Top-Spieler. Als solcher könnte der 21-jährige US-Amerikaner Santiago Castaneda den typischen \"Paderborner Weg\" gehen.",
-          "needs_translation": false
+          "summary": "Der 21-jährige US-Amerikaner Santiago Castaneda wird von seinem Trainer als Top-Spieler eingestuft und könnte den typischen Paderborner Weg einschlagen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Castaneda's Gateway to the Big Dream",
-          "summary": "His coach considers him a top player. As such, the 21-year-old American Santiago Castaneda could go the typical \"Paderborn way\".",
+          "title": "Castaneda's goal on the path to a big dream",
+          "summary": "Regarded as a top player by his coach, 21-year-old American Santiago Castaneda could follow the typical Paderborn development path.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La porte de Castaneda sur le chemin du grand rêve",
-          "summary": "Son entraîneur le considère comme un joueur de haut niveau. En tant que tel, l'Américain Santiago Castaneda, âgé de 21 ans, pourrait suivre la « voie de Paderborn » typique.",
+          "title": "Le but de Castaneda sur la route d'un grand rêve",
+          "summary": "Considéré comme un joueur de premier plan par son entraîneur, l'Américain Santiago Castaneda (21 ans) pourrait suivre le traditionnel parcours de progression à Paderborn.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "La puerta de Castaneda de camino al gran sueño",
-          "summary": "Su entrenador lo considera un jugador de primera. Como tal, el estadounidense de 21 años Santiago Castaneda podría seguir el típico \"Camino de Paderborn\".",
+          "title": "El gol de Castaneda en el camino hacia un gran sueño",
+          "summary": "Considerado un jugador de primer nivel por su entrenador, el estadounidense Santiago Castaneda (21 años) podría seguir la clásica trayectoria de desarrollo en Paderborn.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "بوابة كاستانيدا إلى الحلم الكبير",
-          "summary": "يعتبره مدربه لاعبًا بارزًا. على هذا النحو، يمكن لسانتياغو كاستانيدا الأمريكي البالغ من العمر 21 عامًا أن يسير على \"طريقة بادربورن\" النموذجية.",
+          "title": "هدف كاستانيدا في طريق تحقيق الحلم الكبير",
+          "summary": "يحظى الأمريكي سانتياغو كاستانيدا، البالغ من العمر 21 عاماً، بإشادة مدربه الذي يعتبره لاعباً مميزاً قادراً على مواصلة مسار التطور المعتاد في بادربورن.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/castanedas-tor-auf-dem-weg-zum-grossen-traum-1246654/artikel#omrss",
@@ -1071,7 +1129,12 @@
           "url": "https://www.kicker.de/castanedas-tor-auf-dem-weg-zum-grossen-traum-1246654/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e4ba804d0b31",
@@ -1130,26 +1193,27 @@
       "i18n": {
         "es": {
           "title": "Ruptura total: Enzo Fernández, como Julián, pero en Inglaterra",
-          "summary": "El Chelsea ganó al Fulham, Cole Palmer y Joao Pedro hicieron un partidazo y Xabi Alonso se estrenó con victoria. Pero la imagen del partido la dejó Enzo Fernández.",
-          "needs_translation": false
+          "summary": "Chelsea venció a Fulham en el victorioso estreno de Xabi Alonso, con destacadas actuaciones de Cole Palmer y Joao Pedro, y protagonismo de Enzo Fernández.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Total rupture: Enzo Fernández, as Julián, but in England",
-          "summary": "Chelsea beat Fulham, Cole Palmer and Joao Pedro made a game and Xabi Alonso made his debut with a victory. But the image of the party was left by Enzo Fernández.",
+          "title": "Total breakdown: Enzo Fernández, like Julián, but in England",
+          "summary": "Chelsea defeated Fulham in a winning start for Xabi Alonso, featuring strong performances from Cole Palmer and Joao Pedro alongside key moments from Enzo Fernández.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Rupture totale : Enzo Fernández, comme Julián, mais en Angleterre",
-          "summary": "Chelsea a battu Fulham, Cole Palmer et Joao Pedro ont fait un match nul et Xabi Alonso a fait ses débuts avec une victoire. Mais l'image du parti a été laissée par Enzo Fernández.",
+          "title": "Rupture totale : Enzo Fernández, comme Julián, mais en Angleterre",
+          "summary": "Chelsea s'est imposé face à Fulham lors de la première victoire de Xabi Alonso, marquée par Cole Palmer, Joao Pedro et l'image forte d'Enzo Fernández.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "التمزق الكلي: إنزو فرنانديز، باسم جوليان، ولكن في إنجلترا",
-          "summary": "فاز تشيلسي على فولهام وكول بالمر وجواو بيدرو في مباراة وخاض تشابي ألونسو مباراته الأولى بفوزه. لكن صورة الحزب تركها إنزو فرنانديز.",
+          "title": "قطيعة تامة: إنزو فرنانديز، مثل جوليان، لكن في إنجلترا",
+          "summary": "فاز تشيلسي على فولهام في أول ظهور ناجح للمدرب تشابي ألونسو، وسط تألق كول بالمر وجواو بيدرو ولقطة بارزة من إنزو فرنانديز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/20260825/1004219619/ruptura-total-enzo-fernandez-julian-inglaterra.html",
@@ -1171,7 +1235,12 @@
           "url": "https://www.mundodeportivo.com/futbol/20260825/1004219619/ruptura-total-enzo-fernandez-julian-inglaterra.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9e16eeb2a647",
@@ -1180,26 +1249,27 @@
       "i18n": {
         "es": {
           "title": "La Champions League femenina del Barça da 650.000 euros a la Liga F Moeve",
-          "summary": "La Champions League femenina lograda por el FC Barcelona el pasado mes de mayo ante el OL Lyonnes le va a suponer un buen pellizco económico a 13 de los 16 clubes de la Liga F Moeve .",
-          "needs_translation": false
+          "summary": "El título de Champions League femenina conseguido por el FC Barcelona ante el OL Lyonnes reportará 650.000 euros a 13 de los 16 clubes de la Liga F Moeve.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Barça's Women's Champions League gives 650,000 euros to Liga F Moeve",
-          "summary": "The women's Champions League won by FC Barcelona last May against OL Lyonnes is going to be a good economic pinch for 13 of the 16 clubs in Liga F Moeve .",
+          "title": "Barça's Women's Champions League title brings 650,000 euros to Liga F Moeve",
+          "summary": "FC Barcelona's Women's Champions League victory against OL Lyonnes will grant 650,000 euros to 13 of the 16 Liga F Moeve clubs.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La Ligue des Champions féminine du Barça offre 650 000 euros à la Liga F Moeve",
-          "summary": "La Ligue des champions féminine remportée par le FC Barcelone en mai dernier contre l'OL Lyon va apporter un bon coup de pouce économique à 13 des 16 clubs de la Ligue F Moeve .",
+          "title": "La Champions League féminine du Barça rapporte 650 000 euros à la Liga F Moeve",
+          "summary": "Le titre de Champions League féminine remporté par le FC Barcelona contre l'OL Lyonnes va rapporter 650 000 euros à 13 des 16 clubs de la Liga F Moeve.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "دوري أبطال أوروبا للسيدات في برشلونة يمنح 650 ألف يورو لدوري الدرجة الأولى الفرنسي",
-          "summary": "سيكون دوري أبطال أوروبا للسيدات الذي فاز به نادي برشلونة في مايو الماضي ضد أول ليون قرصة اقتصادية جيدة لـ 13 ناديًا من أصل 16 ناديًا في الدوري الإسباني .",
+          "title": "تتويج سيدات برشلونة بدوري أبطال أوروبا يمنح 650 ألف يورو للدوري الإسباني مويف",
+          "summary": "سيوزع مبلغ 650 ألف يورو على 13 نادياً من أصل 16 في الدوري الإسباني للسيدات، إثر فوز فريق برشلونة بلقب دوري أبطال أوروبا أمام أولمبيك ليون.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219614/champions-league-femenina-barca-da-650-000-euros-liga-f-moeve.html",
@@ -1221,7 +1291,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219614/champions-league-femenina-barca-da-650-000-euros-liga-f-moeve.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "141d44e404eb",
@@ -1230,26 +1305,27 @@
       "i18n": {
         "es": {
           "title": "El Milan tiene un nuevo objetivo que disputó el pasado Mundial",
-          "summary": "El Milan afronta una temporada en la que Rúben Amorim tiene por delante el reto de devolver al conjunto ‘rossonero’ a la zona noble del fútbol italiano. No se conforma su afición con otra cosa que no sea luchar por los títulos.",
-          "needs_translation": false
+          "summary": "El Milan busca reforzarse con un futbolista que disputó el último Mundial para ayudar a Rúben Amorim a devolver al equipo a la élite italiana.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Milan have a new goal that they played in the past World Cup",
-          "summary": "Milan faces a season in which Rúben Amorim has the challenge of returning the Rossoneri team to the noble zone of Italian football. His hobby is not satisfied with anything other than fighting for titles.",
+          "title": "Milan targets a new signing who played in the last World Cup",
+          "summary": "Milan is targeting a player from the last World Cup as Rúben Amorim seeks to return the team to the top of Italian football.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le Milan a un nouvel objectif qu'il a disputé lors du dernier Mondial",
-          "summary": "Le Milan fait face à une saison au cours de laquelle Rúben Amorim doit relever le défi de ramener l'équipe « rossonero » dans la zone noble du football italien. Son passe-temps ne se contente pas d'autre chose que de se battre pour les titres.",
+          "title": "Milan cible un joueur ayant disputé la dernière Coupe du monde",
+          "summary": "Milan vise un joueur ayant participé au dernier Mondial afin d'aider Rúben Amorim à ramener le club au sommet du football italien cette saison.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ميلان لديه هدف جديد لعبه في كأس العالم الماضي",
-          "summary": "يواجه ميلان موسم يواجه فيه روبن أموريم تحدي إعادة فريق روسونيري إلى المنطقة النبيلة لكرة القدم الإيطالية. هوايته ليست راضية عن أي شيء آخر غير القتال من أجل الألقاب.",
+          "title": "ميلان يستهدف لاعباً شارك في كأس العالم الأخيرة",
+          "summary": "يسعى ميلان لضم لاعب شارك في المونديال الأخير، لمساعدة المدرب روبين أموريم في إعادة الفريق إلى قمة كرة القدم الإيطالية والمنافسة على الألقاب.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fichajes/20260825/1004219620/milan-nuevo-objetivo-disputo-pasado-mundial.html",
@@ -1271,7 +1347,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fichajes/20260825/1004219620/milan-nuevo-objetivo-disputo-pasado-mundial.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d8b12a656959",
@@ -1280,26 +1361,27 @@
       "i18n": {
         "es": {
           "title": "Tchouaméni, baja en el Real Madrid ante la Real Sociedad",
-          "summary": "El Real Madrid se estrena mañana, miércoles, en el Bernabéu esta temporada. Lo hace en un encuentro ante la Real Sociedad (21.00 horas/Movistar LaLiga) que significará el regreso de Mourinho al estadio del Real Madrid, del que se fue en 2013.",
-          "needs_translation": false
+          "summary": "Tchouaméni se perderá el estreno del Real Madrid en el Bernabéu ante la Real Sociedad, un encuentro que supondrá el regreso de Mourinho al feudo blanco.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Tchouaméni, leaves Real Madrid against Real Sociedad",
-          "summary": "Real Madrid opens tomorrow, Wednesday, at the Bernabeu this season. He does so in a match against Real Sociedad (9.00 pm/Movistar LaLiga) that will mean the return of Mourinho to the Real Madrid stadium, from which he left in 2013.",
+          "title": "Tchouaméni ruled out for Real Madrid against Real Sociedad",
+          "summary": "Tchouaméni will miss Real Madrid's home opener against Real Sociedad at the Bernabéu, a match that marks Mourinho's return to the stadium.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Tchouaméni, forfait au Real Madrid face à la Real Sociedad",
-          "summary": "Le Real Madrid débute demain, mercredi, au Bernabéu cette saison. Il le fait lors d'un match face à la Real Sociedad (21h00/Movistar LaLiga) qui signifiera le retour de Mourinho au stade du Real Madrid, dont il est parti en 2013.",
+          "title": "Tchouaméni forfait avec le Real Madrid face à la Real Sociedad",
+          "summary": "Tchouaméni est absent pour la réception de la Real Sociedad par le Real Madrid au Bernabéu, une rencontre qui marquera le retour de Mourinho dans l'enceinte madrilène.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تشواميني، يغادر ريال مدريد ضد ريال سوسيداد",
-          "summary": "يفتتح ريال مدريد غدا، الأربعاء، في البرنابيو هذا الموسم. يفعل ذلك في مباراة ضد ريال سوسيداد (9:00 مساء/موفيستار لاليغا) وهذا يعني عودة مورينيو إلى ملعب ريال مدريد، الذي غادر منه في عام 2013.",
+          "title": "تشواميني يغيب عن ريال مدريد أمام ريال سوسيداد",
+          "summary": "يغيب تشواميني عن صفوف ريال مدريد أمام ريال سوسيداد على ملعب برنابيو، في مواجهة تشهد عودة مورينيو إلى معقل النادي الملكي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260825/1004219612/convocatoria-real-madrid-real-sociedad.html",
@@ -1327,7 +1409,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260825/1004219560/tchouameni-baja-real-madrid-real-sociedad.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "dc6f45d28a2a",
@@ -1386,26 +1473,27 @@
       "i18n": {
         "es": {
           "title": "Guedes y Barrenetxea entran en una lista de 25 sin Mikel Goti",
-          "summary": "Pellegrino Matarazzo se lleva a 25 futbolistas mañana a Madrid para afrontar el importante reto ante el Real Madrid en el Bernabéu.",
-          "needs_translation": false
+          "summary": "Pellegrino Matarazzo ha convocado a 25 jugadores, incluyendo a Guedes y Barrenetxea pero sin Mikel Goti, para enfrentarse al Real Madrid en el Bernabéu.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Guedes and Barrenetxea enter a list of 25 without Mikel Goti",
-          "summary": "Pellegrino Matarazzo takes 25 footballers to Madrid tomorrow to face the important challenge against Real Madrid at the Bernabéu.",
+          "title": "Guedes and Barrenetxea named in 25-man squad without Mikel Goti",
+          "summary": "Pellegrino Matarazzo has included Guedes and Barrenetxea in a 25-man squad, omitting Mikel Goti, to face Real Madrid at the Bernabéu.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Guedes et Barrenetxea entrent dans une liste de 25 sans Mikel Goti",
-          "summary": "Pellegrino Matarazzo emmène 25 footballeurs demain à Madrid pour relever l'important défi face au Real Madrid au Bernabéu.",
+          "title": "Guedes et Barrenetxea retenus dans un groupe de 25 sans Mikel Goti",
+          "summary": "Pellegrino Matarazzo a convoqué 25 joueurs, dont Guedes et Barrenetxea mais sans Mikel Goti, pour affronter le Real Madrid au Bernabéu.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يدخل Guedes و Barrenetxea قائمة من 25 بدون Mikel Goti",
-          "summary": "سيأخذ بيليغرينو ماتارازو 25 لاعب كرة قدم إلى مدريد غدا لمواجهة التحدي المهم ضد ريال مدريد في البرنابيو.",
+          "title": "غيديش وبارينيتشيا ضمن قائمة من 25 لاعباً في غياب ميكيل غوتي",
+          "summary": "استدعى المدرب بيليغرينو ماتاراتزو 25 لاعباً، من بينهم غيديش وبارينيتشيا ودون ميكيل غوتي، لمواجهة ريال مدريد في ملعب برنابيو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260825/1004219607/guedes-barrenetxea-entran-lista-25-mikel-goti.html",
@@ -1427,7 +1515,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260825/1004219607/guedes-barrenetxea-entran-lista-25-mikel-goti.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "925be02d4b55",
@@ -1436,26 +1529,27 @@
       "i18n": {
         "es": {
           "title": "Cucurella: \"Vivir la magia del Bernabéu desde dentro va a ser muy bonito\"",
-          "summary": "Marc Cucurella fue presentado ayer, lunes, como jugador del Real Madrid.",
-          "needs_translation": false
+          "summary": "Marc Cucurella fue presentado este lunes como nuevo jugador del Real Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Cucurella: \"Living the magic of the Bernabéu from the inside is going to be very nice\"",
-          "summary": "Marc Cucurella was introduced yesterday, Monday, as a Real Madrid player.",
+          "title": "Cucurella: \"Experiencing the magic of the Bernabéu from the inside is going to be very special\"",
+          "summary": "Marc Cucurella was officially presented on Monday as a new Real Madrid player.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Cucurella : « Vivre la magie du Bernabéu de l'intérieur sera très agréable »",
-          "summary": "Marc Cucurella a été présenté hier, lundi, en tant que joueur du Real Madrid.",
+          "title": "Cucurella : « Vivre la magie du Bernabéu de l'intérieur va être très beau »",
+          "summary": "Marc Cucurella a été officiellement présenté ce lundi en tant que nouveau joueur du Real Madrid.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كوكوريلا: \"العيش بسحر البرنابيو من الداخل سيكون لطيفًا جدًا\"",
-          "summary": "تم تقديم مارك كوكوريلا يوم أمس، الاثنين، كلاعب في ريال مدريد.",
+          "title": "كوكوريلا: \"عيش سحر البرنابيو من الداخل سيكون رائعًا للغاية\"",
+          "summary": "تم تقديم مارك كوكوريلا رسميًا يوم الإثنين لاعبًا جديدًا في صفوف ريال مدريد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260825/1004219588/cucurella-vivir-magia-bernabeu-bonito.html",
@@ -1477,7 +1571,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260825/1004219588/cucurella-vivir-magia-bernabeu-bonito.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "627a2154eb67",
@@ -1486,32 +1585,33 @@
       "i18n": {
         "de": {
           "title": "297 Reisekilometer im Schnitt: Wer profitiert, wen es am härtesten trifft",
-          "summary": "In der kommenden Bundesliga-Saison schrumpft die durchschnittliche Reisedistanz, wobei es für ein Team trotzdem wieder besonders anstrengend wird. Der Ausblick aus logistischer Sicht.",
-          "needs_translation": false
+          "summary": "In der kommenden Bundesliga-Saison sinkt die durchschnittliche Reisedistanz auf 297 Kilometer. Dennoch bleibt die logistische Belastung für einzelne Vereine weiterhin besonders hoch.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "297 kilometres of travel on average: who benefits, who gets hit the hardest",
-          "summary": "In the coming Bundesliga season, the average travel distance will shrink, but it will still be particularly strenuous for a team. The outlook from a logistical point of view.",
+          "title": "297 Travel Kilometers on Average: Who Benefits and Who Is Hit Hardest",
+          "summary": "The average travel distance will drop to 297 kilometers in the upcoming Bundesliga season. However, the logistical burden will remain exceptionally demanding for certain clubs.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "297 kilomètres de voyage en moyenne : qui en profite, qui est le plus durement touché",
-          "summary": "Au cours de la prochaine saison de Bundesliga, la distance moyenne parcourue diminuera, bien que cela devienne à nouveau particulièrement stressant pour une équipe. La perspective d'un point de vue logistique.",
+          "title": "297 kilomètres de trajet en moyenne : qui en profite, qui est le plus touché",
+          "summary": "La distance moyenne de déplacement diminuera à 297 kilomètres lors de la prochaine saison de Bundesliga. Les contraintes logistiques restent néanmoins particulièrement lourdes pour certains clubs.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "297 kilómetros de viaje en promedio: quién se beneficia, quién es el más afectado",
-          "summary": "En la próxima temporada de la Bundesliga, la distancia media de viaje se reducirá, aunque será especialmente agotador para un equipo. La perspectiva desde el punto de vista logístico.",
+          "title": "297 kilómetros de viaje en promedio: quién se beneficia y a quién le afecta más",
+          "summary": "La distancia media de desplazamiento se reducirá a 297 kilómetros en la próxima temporada de la Bundesliga. No obstante, la exigencia logística seguirá siendo muy alta para algunos clubes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "297 كيلومتراً من السفر في المتوسط: من المستفيد، ومن الأكثر تضرراً",
-          "summary": "في موسم الدوري الألماني المقبل، سيتقلص متوسط مسافة السفر، لكنه سيظل شاقًا بشكل خاص للفريق. النظرة من وجهة نظر لوجستية.",
+          "title": "297 كيلومتراً في المتوسط: من المستفيد ومن الأكثر تضرراً",
+          "summary": "سينخفض متوسط مسافات السفر إلى 297 كيلومتراً في الموسم المقبل من الدوري الألماني. ورغم هذا التراجع، ستظل الأعباء اللوجستية شاقة ومرهقة لبعض الأندية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/297-reisekilometer-im-schnitt-wer-profitiert-wen-es-am-haertesten-trifft-1225158/artikel#omrss",
@@ -1533,7 +1633,12 @@
           "url": "https://www.kicker.de/297-reisekilometer-im-schnitt-wer-profitiert-wen-es-am-haertesten-trifft-1225158/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8b34d2e1328c",
@@ -1642,26 +1747,27 @@
       "i18n": {
         "es": {
           "title": "Tras Munir, más pólvora para el Albacete en ataque",
-          "summary": "El Cagliari italiano, que milita en la Serie A, ha cedido al atacante uruguayo Agustín Albarracín al Albacete, hasta final de temporada, según ha anunciado el propio club albaceteño en su página web y redes sociales.",
-          "needs_translation": false
+          "summary": "El Cagliari de la Serie A ha cedido al delantero uruguayo Agustín Albarracín al Albacete hasta el final de la presente temporada.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "After Munir, more gunpowder for Albacete under attack",
-          "summary": "Italian Cagliari, which plays in Serie A, has loaned Uruguayan striker Agustín Albarracín to Albacete, until the end of the season, as announced by the Albacete club on its website and social networks.",
+          "title": "After Munir, Albacete add more attacking firepower",
+          "summary": "Serie A club Cagliari has loaned Uruguayan forward Agustín Albarracín to Albacete until the end of the season.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Après Munir, plus de poudre pour l'Albacete en attaque",
-          "summary": "Le Cagliari italien, qui joue en Serie A, a prêté l'attaquant uruguayen Agustín Albarracín à Albacete, jusqu'à la fin de la saison, comme l'a annoncé le club d'Albacete lui-même sur son site Web et ses réseaux sociaux.",
+          "title": "Après Munir, Albacete s'offre une nouvelle arme offensive",
+          "summary": "Le club italien de Cagliari a prêté l'attaquant uruguayen Agustín Albarracín à Albacete jusqu'à la fin de la saison.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "بعد منير، يتعرض المزيد من البارود للبسيتي للهجوم",
-          "summary": "قام الإيطالي كالياري، الذي يلعب في دوري الدرجة الأولى الإيطالي، بإعارة المهاجم الأوروغوايي أغوستين الباراسين إلى الباسيتي، حتى نهاية الموسم، كما أعلن نادي الباسيتي على موقعه الإلكتروني وشبكاته الاجتماعية.",
+          "title": "بعد منير، تعزيز هجومي جديد لنادي ألباسيتي",
+          "summary": "أعلن نادي ألباسيتي تعاقده مع المهاجم الأوروغوياني أغوستين ألباراسين على سبيل الإعارة قادماً من كالياري الإيطالي حتى نهاية الموسم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fichajes/oficial/20260825/1004219596/munir-polvora-albacete-ataque.html",
@@ -1683,7 +1789,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fichajes/oficial/20260825/1004219596/munir-polvora-albacete-ataque.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 4,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f9044fc4e7eb",
@@ -1692,26 +1803,27 @@
       "i18n": {
         "fr": {
           "title": "Paulo Fonseca, avant OL-Fenerbahçe en barrage retour de Ligue des champions : « Envie de marquer l'histoire »",
-          "summary": "L'entraîneur de l'OL Paulo Fonseca assure que son groupe est très motivé à 24 heures du barrage retour décisif de Ligue des champions contre Fenerbahçe, qui peut envoyer l'OL en C1 pour la première fois depuis six ans.",
-          "needs_translation": false
+          "summary": "Avant le barrage retour de Ligue des champions contre Fenerbahçe, l'entraîneur de l'OL Paulo Fonseca a affirmé la forte motivation de son groupe pour qualifier le club en C1 pour la première fois en six ans.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Paulo Fonseca, before OL-Fenerbahçe in the Champions League return play-off: \"Want to make history\"",
-          "summary": "OL coach Paulo Fonseca ensures that his group is very motivated 24 hours before the decisive return play-off of the Champions League against Fenerbahçe, who can send OL to C1 for the first time in six years.",
+          "title": "Paulo Fonseca, before OL-Fenerbahçe in Champions League playoff second leg: \"Desire to make history\"",
+          "summary": "Ahead of the Champions League playoff second leg against Fenerbahçe, OL coach Paulo Fonseca highlighted his team's strong motivation to reach the competition for the first time in six years.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Paulo Fonseca, delantero del OL-Fenerbahçe en la repesca de la Liga de Campeones: \"Quiero hacer historia\"",
-          "summary": "El entrenador del OL Paulo Fonseca asegura que su grupo está muy motivado a 24 horas del repechaje decisivo de la Liga de Campeones contra el Fenerbahçe, que puede enviar al OL a la Liga de Campeones por primera vez en seis años.",
+          "title": "Paulo Fonseca, antes del OL-Fenerbahçe en la vuelta del playoff de la Champions League: «Ganas de hacer historia»",
+          "summary": "Antes de la vuelta del playoff de la Champions League ante Fenerbahçe, el entrenador del OL Paulo Fonseca destacó la motivación de su equipo para devolver al club a la máxima competición seis años después.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "باولو فونسيكا، قبل OL - Finerbahçe في مباراة العودة لدوري أبطال أوروبا: \"أريد أن أصنع التاريخ\"",
-          "summary": "يضمن مدرب OL باولو فونسيكا أن مجموعته متحمسة للغاية قبل 24 ساعة من مباراة العودة الحاسمة لدوري أبطال أوروبا ضد فناربخشه، الذي يمكنه إرسال OL إلى C1 لأول مرة منذ ست سنوات.",
+          "title": "باولو فونسيكا قبل إياب ملحق دوري أبطال أوروبا بين ليون وفنربخشة: \"لدينا الرغبة في صناعة التاريخ\"",
+          "summary": "أكد باولو فونسيكا مدرب ليون جاهزية فريقه وحماسه لخوض إياب ملحق دوري أبطال أوروبا أمام فنربخشة، بهدف قيادة النادي للتأهل إلى المسابقة لأول مرة منذ ست سنوات.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Paulo-fonseca-avant-ol-fenerbahce-en-barrage-retour-de-ligue-des-champions-envie-de-marquer-l-histoire/1713444#at_medium=RSS_feeds",
@@ -1733,7 +1845,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Paulo-fonseca-avant-ol-fenerbahce-en-barrage-retour-de-ligue-des-champions-envie-de-marquer-l-histoire/1713444#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "be16d8992a0f",
@@ -1742,26 +1859,27 @@
       "i18n": {
         "es": {
           "title": "Cucurella celebró su presentación en el Bernabéu",
-          "summary": "Cucurella fue presentado ayer, lunes, como jugador del Real Madrid. Fue a puerta cerrada, pero para medios porque en el acto de presentación, el lateral estuvo acompañado por su familia y por sus agentes.",
-          "needs_translation": false
+          "summary": "Cucurella fue presentado oficialmente como nuevo jugador del Real Madrid en el Bernabéu, en un acto a puerta cerrada acompañado por su familia y sus agentes.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Cucurella celebrated its presentation at the Bernabéu",
-          "summary": "Cucurella was presented yesterday, Monday, as a Real Madrid player. He went behind closed doors, but for means because in the act of presentation, the side was accompanied by his family and his agents.",
+          "title": "Cucurella celebrated his presentation at the Bernabéu",
+          "summary": "Cucurella was officially presented as a Real Madrid player at the Bernabéu during a closed-door event attended by his family, agents, and the media.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Cucurella a célébré sa présentation au Bernabéu",
-          "summary": "Cucurella a été présenté hier, lundi, en tant que joueur du Real Madrid. C'était à huis clos, mais pour les médias car lors de l'acte de présentation, le latéral était accompagné de sa famille et de ses agents.",
+          "summary": "Cucurella a été officiellement présenté comme joueur du Real Madrid au Bernabéu, lors d'un événement à huis clos en présence de sa famille et de ses agents.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "احتفلت كوكوريلا بعرضها في برنابيو",
-          "summary": "تم تقديم كوكوريلا أمس، الاثنين، كلاعب في ريال مدريد. ذهب خلف أبواب مغلقة، ولكن من أجل الوسائل لأنه في فعل التقديم، كان الجانب مصحوبًا بأسرته ووكلائه.",
+          "title": "كوكوريلا يحتفل بتقديمه في البرنابيو",
+          "summary": "قُدم كوكوريلا رسمياً كلاعب جديد في صفوف ريال مدريد في سانتياغو برنابيو، خلال حفل مغلق أقيم بحضور عائلته ووكلائه ووسائل الإعلام.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260825/1004219585/cucurella-celebro-presentacion-bernabeu.html",
@@ -1783,7 +1901,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260825/1004219585/cucurella-celebro-presentacion-bernabeu.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "97e5dcbe26b5",
@@ -1792,26 +1915,27 @@
       "i18n": {
         "es": {
           "title": "El aviso de Mourinho a la prensa: \"El día que metan mierda…\"",
-          "summary": "El Mourinho q ue ha regresado al Real Madrid no es el de la primera época. Al menos, por el momento.",
-          "needs_translation": false
+          "summary": "Mourinho muestra una actitud distinta en su regreso al Real Madrid, aunque ya ha lanzado una clara advertencia a los medios de comunicación.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mourinho's announcement to the press: \"The day they fuck up...\"",
-          "summary": "Mourinho, who has returned to Real Madrid, is not the same as in the first era. At least for the time being.",
+          "title": "Mourinho's warning to the press: \"The day you stir up shit…\"",
+          "summary": "Mourinho displays a changed demeanor upon his return to Real Madrid, while issuing a clear warning to the media.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "L'annonce de Mourinho à la presse : \"Le jour où ils mettront de la merde...\"",
-          "summary": "Le retour de Mourinho au Real Madrid n'est pas celui de la première période. Du moins, pour le moment.",
+          "title": "L'avertissement de Mourinho à la presse : « Le jour où vous foutrez la merde… »",
+          "summary": "De retour au Real Madrid, Mourinho affiche une attitude différente de son premier passage, tout en adressant une mise en garde aux médias.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "إعلان مورينيو للصحافة: \"اليوم الذي يفسدون فيه...\"",
-          "summary": "مورينيو، الذي عاد إلى ريال مدريد، ليس هو نفسه كما في الحقبة الأولى. على الأقل في الوقت الحالي.",
+          "title": "تحذير مورينيو لوسائل الإعلام: \"في اليوم الذي تثيرون فيه المشاكل...\"",
+          "summary": "يظهر مورينيو بنهج مختلف عقب عودته إلى ريال مدريد، موجهاً في الوقت نفسه تحذيراً صريحاً لوسائل الإعلام.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260825/1004219591/aviso-mourinho-prensa-dia-metan-mierda.html",
@@ -1833,7 +1957,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260825/1004219591/aviso-mourinho-prensa-dia-metan-mierda.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b19c78a150d9",
@@ -1941,44 +2070,44 @@
       "summary": "Le Paris Saint-Germain officialise le prêt pour une saison avec option d'achat de son jeune latéral gauche Yoram Zague au club chypriote de Paphos.",
       "i18n": {
         "fr": {
-          "title": "Mercato : le PSG prête Yoram Zague au Paphos FC",
-          "summary": "Le Paris Saint-Germain officialise le prêt pour une saison avec option d'achat de son jeune latéral gauche Yoram Zague au club chypriote de Paphos.",
+          "title": "Mercato : Yoram Zague quitte le PSG pour Paphos",
+          "summary": "Le Paris Saint-Germain prête son jeune latéral gauche Yoram Zague au club chypriote du Paphos FC pour l'ensemble de la saison.",
           "body": [
-            "Sous contrat avec Paris jusqu'en 2028, le défenseur de 20 ans compte 11 apparitions et un but sous le maillot parisien. Il sort déjà de deux prêts consécutifs la saison passée, effectués au FC Copenhague puis à Eupen.",
-            "Ce départ s'ajoute à un été particulièrement actif au PSG. Le club de la capitale a enregistré les arrivées d'Alessandro Langoni, Maghnes Akliouche, Lucas Digne, Mika Godts et Ferran Torres, tout en cédant Gonçalo Ramos, Randal Kolo Muani et Kang-in Lee."
+            "L'accord conclu entre les deux formations comprend une option d'achat pour le défenseur de 20 ans, sous contrat avec Paris jusqu'en 2028. Formé au club, Zague compte 11 apparitions et un but avec l'équipe première, après avoir enchaîné des prêts au FC Copenhague et à Eupen lors du dernier exercice.",
+            "Ce mouvement s'inscrit dans un été particulièrement agité dans la capitale. Alors que Gonçalo Ramos, Randal Kolo Muani et Kang-in Lee ont été vendus, le PSG a notamment recruté Maghnes Akliouche, Lucas Digne et Ferran Torres, auteur d'un doublé à Rennes dimanche."
           ],
           "format": "deep",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "en": {
-          "title": "Mercato: PSG loan Yoram Zague to Paphos FC",
-          "summary": "Paris Saint-Germain have confirmed the season-long loan of young left-back Yoram Zague to Cypriot side Paphos, in a deal featuring a purchase option.",
+          "title": "Transfer window: Yoram Zague leaves PSG for Paphos FC",
+          "summary": "Paris Saint-Germain have loaned young left-back Yoram Zague to Cypriot outfit Paphos FC for the entire season.",
           "body": [
-            "Under contract with Paris until 2028, the 20-year-old defender has made 11 appearances and scored once for the club. Last season, he had back-to-back loan spells at FC Copenhagen and Eupen.",
-            "His departure comes during a busy summer window for PSG. The French capital side have brought in Alessandro Langoni, Maghnes Akliouche, Lucas Digne, Mika Godts and Ferran Torres, while parting ways with Gonçalo Ramos, Randal Kolo Muani and Kang-in Lee."
+            "The agreement reached between the two clubs includes a purchase option for the 20-year-old defender, who is contracted to Paris until 2028. A product of the academy, Zague has made 11 first-team appearances and scored one goal, having spent last season out on loan at FC Copenhague and Eupen.",
+            "The move comes amid a frantic summer in the French capital. While Gonçalo Ramos, Randal Kolo Muani and Kang-in Lee have departed, PSG brought in Maghnes Akliouche, Lucas Digne and Ferran Torres, who scored a brace at Rennes on Sunday."
           ],
           "format": "deep",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "es": {
-          "title": "Mercato: el PSG cede a Yoram Zague al Paphos FC",
-          "summary": "El Paris Saint-Germain ha hecho oficial la cesión por una temporada con opción de compra de su joven lateral izquierdo Yoram Zague al club chipriota de Paphos.",
+          "title": "Mercato: Yoram Zague deja el PSG y se marcha a Paphos FC",
+          "summary": "El Paris Saint-Germain cede a su joven lateral izquierdo Yoram Zague al Paphos FC chipriota para toda la temporada.",
           "body": [
-            "Con contrato con el conjunto parisino hasta 2028, el defensa de 20 años acumula 11 partidos y un gol con el primer equipo. La temporada pasada ya encadenó dos préstamos consecutivos, primero en el FC Copenhague y después en el Eupen.",
-            "Esta salida se enmarca en un verano especialmente agitado en el PSG. El club de la capital ha cerrado las llegadas de Alessandro Langoni, Maghnes Akliouche, Lucas Digne, Mika Godts y Ferran Torres, dando salida a la vez a Gonçalo Ramos, Randal Kolo Muani y Kang-in Lee."
+            "El acuerdo alcanzado entre ambos clubes incluye una opción de compra por el defensa de 20 años, con contrato en París hasta 2028. Formado en la cantera parisina, Zague acumula 11 partidos y un gol con el primer equipo, tras haber encadenado cesiones en el FC Copenhague y el Eupen durante el curso pasado.",
+            "Esta salida se suma a un verano muy movido en la capital francesa. Mientras Gonçalo Ramos, Randal Kolo Muani y Kang-in Lee han sido traspasados, el PSG ha incorporado a Maghnes Akliouche, Lucas Digne y Ferran Torres, autor de un doblete el domingo en Rennes."
           ],
           "format": "deep",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "ar": {
-          "title": "سوق الانتقالات: باريس سان جيرمان يعير يورام زاغي إلى بافوس",
-          "summary": "أعلن نادي باريس سان جيرمان رسميًا إعارة ظهيره الأيسر الشاب يورام زاغي إلى نادي بافوس القبرصي لموسم واحد مع خيار الشراء.",
+          "title": "سوق الانتقالات: يورام زاغي يغادر باريس سان جيرمان إلى بافوس",
+          "summary": "أعار نادي باريس سان جيرمان ظهيره الأيسر الشاب يورام زاغي إلى نادي بافوس القبرصي حتى نهاية الموسم الحالي.",
           "body": [
-            "خاض المدافع البالغ 20 عامًا، والمرتبط بعقد مع النادي الباريسي حتى 2028، 11 مباراة وسجل هدفًا وحيدًا بقميص الفريق. وكان اللاعب قد قضى الموسم الماضي معارًا في تجربتين متتاليتين مع كوبنهاغن ثم أوبين.",
-            "ويأتي هذا الرحيل وسط صيف صاخب في باريس سان جيرمان، بعدما حسم نادي العاصمة تعاقدات أليساندرو لانغوني ومغناس أكليوش ولوكاس ديني وميكا غودتس وفيران توريس، مقابل التخلي عن غونسالو راموس وراندال كولو مواني وكانغ إن لي."
+            "يتضمن الاتفاق المبرم بين الناديين خياراً للشراء لصالح المدافع البالغ من العمر 20 عاماً، والذي يمتد عقده مع النادي الباريسي حتى عام 2028. وخاض خريج أكاديمية النادي 11 مباراة بقميص الفريق الأول مسجلاً هدفاً واحداً، بعدما قضى الموسم الماضي معاراً إلى كوبنهاغن ثم أوبين.",
+            "وتأتي هذه الخطوة في ظل صيف ساخن للغاية داخل العاصمة الفرنسية؛ فبعد بيع كل من غونسالو راموس وراندال كولو مواني ولي كانغ إن، تعاقد باريس سان جيرمان مع مغناس أكليوش ولوكاس ديني وفيران توريس، الذي وقّع على ثنائية أمام رين يوم الأحد."
           ],
           "format": "deep",
           "needs_translation": false,
@@ -2004,7 +2133,20 @@
           "url": "https://www.lefigaro.fr/sports/football/transferts/mercato-le-psg-prete-l-un-de-ses-titis-a-chypre-20260825"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-25T15:29:08+00:00"
+        }
+      }
     },
     {
       "id": "a7550bdde03b",
@@ -2063,26 +2205,27 @@
       "i18n": {
         "es": {
           "title": "Mourinho y el recibimiento del Bernabéu",
-          "summary": "José Mourinho, entrenador del Real Madrid, quiso rebajar la importancia de su vuelta al Santiago Bernabéu, 13 años después desde su último partido, y deseó que no se le reciba \"de un modo particular”.",
-          "needs_translation": false
+          "summary": "José Mourinho restó importancia a su regreso al Santiago Bernabéu 13 años después de su último partido y deseó no tener un recibimiento especial.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mourinho and the Bernabeu reception",
-          "summary": "José Mourinho, coach of Real Madrid, wanted to downplay the importance of his return to the Santiago Bernabéu, 13 years after his last game, and wished that he was not received \"in a particular way\".",
+          "title": "Mourinho and the Bernabéu reception",
+          "summary": "José Mourinho played down the significance of his return to the Santiago Bernabéu 13 years after his last match, hoping not to receive any special reception.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Mourinho et l'accueil du Bernabéu",
-          "summary": "José Mourinho, entraîneur du Real Madrid, a voulu minimiser l'importance de son retour à Santiago Bernabéu, 13 ans après son dernier match, et a souhaité qu'il ne soit pas reçu « d'une manière particulière ».",
+          "summary": "José Mourinho a minimisé l'importance de son retour au Santiago Bernabéu, 13 ans après son dernier match, espérant ne pas recevoir d'accueil particulier.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مورينيو وحفل استقبال بيرنابيو",
-          "summary": "أراد خوسيه مورينيو، مدرب ريال مدريد، التقليل من أهمية عودته إلى سانتياغو برنابيو، بعد 13 عامًا من مباراته الأخيرة، وتمنى ألا يتم استقباله \"بطريقة معينة\".",
+          "title": "مورينيو واستقبال البرنابيو",
+          "summary": "قلل جوزيه مورينيو من أهمية عودته إلى ملعب سانتياغو برنابيو بعد 13 عاماً من آخر مباراة له هناك، متمنياً ألا يحظى باستقبال خاص.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260825/1004219582/mourinho-recibimiento-bernabeu.html",
@@ -2104,7 +2247,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260825/1004219582/mourinho-recibimiento-bernabeu.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9e09259a5ff1",
@@ -2113,26 +2261,27 @@
       "i18n": {
         "es": {
           "title": "Livakovic llega hoy a Barcelona para fichar por el Barça",
-          "summary": "Dominik Livakovic (31 años), guardameta del Fenerbahçe y de la selección de Croacia , llegará esta tarde a Barcelona para oficializar su fichaje por el FC Barcelona .",
-          "needs_translation": false
+          "summary": "Dominik Livakovic, guardameta croata de 31 años del Fenerbahçe, llega este martes a Barcelona para cerrar su fichaje por el FC Barcelona.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "Livakovic arrives in Barcelona today to sign for Barça",
-          "summary": "Dominik Livakovic (31), goalkeeper for Fenerbahçe and the Croatia national team, will arrive in Barcelona this afternoon to make his signing for FC Barcelona official.",
+          "summary": "Croacia international goalkeeper Dominik Livakovic (31) from Fenerbahçe arrives in Barcelona this afternoon to complete his transfer to FC Barcelona.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Livakovic arrive aujourd'hui à Barcelone pour signer au Barça",
-          "summary": "Dominik Livakovic (31 ans), gardien de but de Fenerbahçe et de l'équipe de Croatie , arrivera cet après-midi à Barcelone pour officialiser son transfert au FC Barcelone .",
+          "title": "Livakovic arrive aujourd'hui à Barcelona pour s'engager avec le Barça",
+          "summary": "Le gardien international de Croacia Dominik Livakovic (31 ans, Fenerbahçe) arrive ce mardi à Barcelona pour officialiser son transfert au FC Barcelona.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يصل ليفاكوفيتش إلى برشلونة اليوم للتوقيع لبرشلونة",
-          "summary": "سيصل دومينيك ليفاكوفيتش (31 عاما)، حارس مرمى فنربخشه والمنتخب الكرواتي ، إلى برشلونة بعد ظهر اليوم للتوقيع مع نادي برشلونة رسميا.",
+          "title": "ليفاكوفيتش يصل اليوم إلى برشلونة لإتمام انتقاله إلى النادي",
+          "summary": "يصل حارس مرمى منتخب كرواتيا ونادي فنربخشة، دومينيك ليفاكوفيتش (31 عاماً)، اليوم إلى برشلونة لإتمام صفقة انضمامه رسمياً إلى نادي برشلونة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219583/livakovic-llega-hoy-barcelona-fichar-barca.html",
@@ -2154,7 +2303,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219583/livakovic-llega-hoy-barcelona-fichar-barca.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     }
   ]
 }
