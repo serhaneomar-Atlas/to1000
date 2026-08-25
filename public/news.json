@@ -16,27 +16,28 @@
       "summary": "BBC Sport takes a look at what each of the Premier League clubs still need before the summer transfer window shuts in seven days.",
       "i18n": {
         "en": {
-          "title": "What does your Premier League club still need in the transfer window?",
-          "summary": "BBC Sport takes a look at what each of the Premier League clubs still need before the summer transfer window shuts in seven days.",
-          "needs_translation": false
+          "title": "What Premier League clubs still need before the transfer window closes",
+          "summary": "BBC Sport analyzes the remaining transfer needs of each Premier League club with seven days remaining before the summer window shuts.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "De quoi votre club de Premier League a-t-il encore besoin dans la fenêtre de transfert ?",
-          "summary": "BBC Sport examine ce dont chacun des clubs de Premier League a encore besoin avant la fermeture de la fenêtre de transfert estivale dans sept jours.",
+          "title": "Ce dont les clubs de Premier League ont encore besoin sur le mercato",
+          "summary": "BBC Sport fait le point sur les besoins de chaque club de Premier League à sept jours de la fermeture du mercato estival.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "¿Qué necesita tu club de la Premier League en la ventana de traspasos?",
-          "summary": "BBC Sport echa un vistazo a lo que cada uno de los clubes de la Premier League aún necesita antes de que se cierre la ventana de transferencia de verano en siete días.",
+          "title": "Lo que aún necesita cada club de la Premier League en el mercado de fichajes",
+          "summary": "BBC Sport analiza las necesidades pendientes de cada club de la Premier League a siete días del cierre del mercado estival.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ما الذي لا يزال يحتاجه ناديك في الدوري الإنجليزي الممتاز في فترة الانتقالات ؟",
-          "summary": "بي بي سي سبورت تلقي نظرة على ما لا يزال يحتاجه كل من أندية الدوري الممتاز قبل إغلاق نافذة الانتقالات الصيفية في سبعة أيام.",
+          "title": "ماذا تحتاج أندية الدوري الإنجليزي الممتاز قبل إغلاق سوق الانتقالات؟",
+          "summary": "استعرضت بي بي سي سبورت احتياجات كل فريق في الدوري الإنجليزي الممتاز قبل سبعة أيام من إغلاق نافذة الانتقالات الصيفية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/c4gql9p0qn2o?at_medium=RSS&at_campaign=rss",
@@ -58,7 +59,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/c4gql9p0qn2o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6542462a1aad",
@@ -158,7 +164,12 @@
           "url": "https://africatopsports.com/afrique-de-louest/ligue-des-champions-caf-qualif-zone-ouest-b-lasec-chute-face-a-ampem-darkoa-ladies/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4ef5121a42d3",
@@ -272,33 +283,34 @@
       "summary": "Am Freitag erwacht die Bundesliga und damit auch das Managerspiel aus der Sommerpause. Wer im DFB-Pokal genau hingeschaut hat, konnte den ein oder anderen Startelf-Spieler entdecken, der für wenig Geld noch ins Team geholt werden kann.",
       "i18n": {
         "de": {
-          "title": "Geheimtipps fürs Managerspiel? Günstige Starter im DFB-Pokal",
-          "summary": "Am Freitag erwacht die Bundesliga und damit auch das Managerspiel aus der Sommerpause. Wer im DFB-Pokal genau hingeschaut hat, konnte den ein oder anderen Startelf-Spieler entdecken, der für wenig Geld noch ins Team geholt werden kann.",
-          "needs_translation": false
+          "title": "Geheimtipps fürs Managerspiel: Günstige Starter im DFB-Pokal",
+          "summary": "Vor dem Saisonstart der Bundesliga nach der Sommerpause bot der DFB-Pokal Optionen für günstige Startelf-Spieler im Managerspiel.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Insider tips for managerial play? Affordable starters in the DFB Cup",
-          "summary": "On Friday, the Bundesliga awakens and with it the managerial game from the summer break. Anyone who has looked closely in the DFB Cup has been able to discover one or the other starting eleven player who can still be brought into the team for little money.",
+          "title": "Fantasy manager tips: Affordable starters in the DFB-Pokal",
+          "summary": "Ahead of the Bundesliga return after the summer break, the DFB-Pokal revealed several affordable starting players for fantasy manager squads.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Conseils d'initiés pour le jeu managérial ? Démarreur pas cher en Coupe d'Allemagne",
-          "summary": "Vendredi, la Bundesliga et donc le jeu des managers se réveillent de la pause estivale. Ceux qui ont regardé de près la coupe de la DFB ont pu découvrir l'un ou l'autre des onze de départ, qui peut encore être intégré à l'équipe pour peu d'argent.",
+          "title": "Bons plans pour le jeu d'entraîneur : des titulaires abordables en DFB-Pokal",
+          "summary": "Avant la reprise de la Bundesliga après la trêve estivale, la DFB-Pokal a mis en lumière plusieurs titulaires accessibles à faible coût pour le jeu d'entraîneur.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "¿Consejos secretos para el partido de mánager? Iniciadores baratos en la Copa DFB",
-          "summary": "El viernes se despierta la Bundesliga y, con ella, el partido de mánager de las vacaciones de verano. Cualquiera que haya mirado de cerca en la Copa DFB ha podido descubrir a uno u otro jugador titular que todavía se puede traer al equipo por poco dinero.",
+          "title": "Consejos para el juego de mánager: titulares económicos en la DFB-Pokal",
+          "summary": "Antes del inicio de la Bundesliga tras el receso estival, la DFB-Pokal dejó ver a varios titulares asequibles para completar las plantillas de mánager.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "نصائح من الداخل للعب الإداري ؟ مبتدئين بأسعار معقولة في كأس الاتحاد الألماني لكرة القدم",
-          "summary": "يوم الجمعة، يستيقظ الدوري الألماني ومعه المباراة الإدارية من العطلة الصيفية. أي شخص نظر عن كثب في كأس الاتحاد الألماني لكرة القدم كان قادرا على اكتشاف واحد أو آخر من اللاعبين الأحد عشر الذين لا يزال من الممكن جلبهم إلى الفريق مقابل القليل من المال.",
+          "title": "نصائح للعبة الفانتازي: لاعبون أساسيون بأسعار منخفضة في كأس ألمانيا",
+          "summary": "كشفت مباريات كأس ألمانيا قبيل انطلاق البوندسليغا عن خيارات اقتصادية للاعبين أساسيين متاحين لفرق ألعاب الفانتازي الرياضية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/geheimtipps-fuers-managerspiel-guenstige-starter-im-dfb-pokal-1139265/artikel#omrss",
@@ -320,7 +332,12 @@
           "url": "https://www.kicker.de/geheimtipps-fuers-managerspiel-guenstige-starter-im-dfb-pokal-1139265/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8900cbc4124a",
@@ -329,26 +346,27 @@
       "i18n": {
         "es": {
           "title": "El canterano del Real Zaragoza que entrenó con Pep Guardiola y ahora jugará en Turquía: siete países con 28 años",
-          "summary": "La Ciudad Deportiva del Real Zaragoza ha sido durante muchos años un vivero de prometedores futbolistas que han llamado desde muy jóvenes la atención de los grandes equipos del fútbol europeo.",
-          "needs_translation": false
+          "summary": "Un futbolista formado en la Ciudad Deportiva del Real Zaragoza, que llegó a entrenar bajo las órdenes de Pep Guardiola, jugará en Turquía y suma ya experiencias en siete países con 28 años.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The Real Zaragoza striker who trained with Pep Guardiola and will now play in Turkey: seven countries at the age of 28",
-          "summary": "Real Zaragoza's Ciudad Deportiva has for many years been a hotbed of promising footballers who have attracted the attention of the great teams of European football from a very young age.",
+          "title": "The Real Zaragoza youth product who trained with Pep Guardiola and will now play in Turkey: seven countries at 28",
+          "summary": "A footballer developed at Real Zaragoza's Ciudad Deportiva who once trained under Pep Guardiola will now play in Turkey, marking his seventh different country at age 28.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le chanteur du Real Zaragoza qui s'est entraîné avec Pep Guardiola et va maintenant jouer en Turquie : sept pays à 28 ans",
-          "summary": "La Ciudad Deportiva del Real Zaragoza a été pendant de nombreuses années une pépinière de footballeurs prometteurs qui ont attiré dès leur plus jeune âge l'attention des grandes équipes du football européen.",
+          "title": "Le joueur formé au Real Zaragoza qui s'est entraîné avec Pep Guardiola et jouera en Turquie : sept pays à 28 ans",
+          "summary": "Issu de la Ciudad Deportiva du Real Zaragoza et passé sous les ordres de Pep Guardiola, ce footballeur de 28 ans rejoint la Turquie, découvrant ainsi un septième pays dans sa carrière.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مهاجم ريال سرقسطة الذي تدرب مع بيب غوارديولا وسيلعب الآن في تركيا: سبع دول في سن 28",
-          "summary": "سيوداد ديبورتيفا من ريال سرقسطة كان لسنوات عديدة مرتعا للاعبي كرة القدم الواعدين الذين جذبوا انتباه الفرق العظيمة لكرة القدم الأوروبية منذ سن مبكرة جدا.",
+          "title": "خريج أكاديمية ريال سرقسطة الذي تدرب مع بيب غوارديولا سيلعب الآن في تركيا: سبع دول في سن 28 عاماً",
+          "summary": "يستعد لاعب تخرج من أكاديمية ريال سرقسطة وتدرب سابقاً تحت قيادة بيب غوارديولا لخوض تجربة جديدة في تركيا، لتكون سابع دولة يلعب فيها وهو في سن الثامنة والعشرين.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/canterano-real-zaragoza-entreno-pep-133632467?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -370,7 +388,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/canterano-real-zaragoza-entreno-pep-133632467?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "475d840cb890",
@@ -379,26 +402,27 @@
       "i18n": {
         "es": {
           "title": "Julián encuentra apoyo en un expresidente de River: \"Sé cómo eres\"",
-          "summary": "El asunto de Julián Álvarez va a marcar, irremediablemente, el final del mercado de verano para el Atlético de Madrid. Máxime, cuando el tema, hace mucho ya que traspasó los límites de lo doméstico, pera convertirse en una cuestión global.",
-          "needs_translation": false
+          "summary": "El futuro de Julián Álvarez marca el cierre del mercado de fichajes de verano para el Atlético de Madrid, mientras el delantero recibe el respaldo de un expresidente de River.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Julian finds support in a former River president: “I know how you are”",
-          "summary": "The affair of Julián Álvarez will inevitably mark the end of the summer market for Atlético de Madrid. Above all, when the issue has long since crossed the boundaries of the domestic, but to become a global issue.",
+          "title": "Julián finds support from a former River president: \"I know what you're like\"",
+          "summary": "The future of Julián Álvarez dominates the close of the summer transfer window for Atlético de Madrid, with the forward receiving support from a former River president.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Julián trouve un soutien auprès d'un ancien président de River : « Je sais comment tu es »",
-          "summary": "L'affaire Julián Álvarez marquera irrémédiablement la fin du mercato estival pour l'Atlético de Madrid. Tout au plus, lorsque le sujet, il y a longtemps qu'il a dépassé les limites du domestique, pour devenir une question globale.",
+          "title": "Julián trouve du soutien auprès d'un ancien président de River : « Je sais qui tu es »",
+          "summary": "La situation de Julián Álvarez concentre l'attention sur la fin du mercato estival de l'Atlético de Madrid, alors que le joueur reçoit le soutien d'un ancien président de River.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يجد جوليان الدعم في رئيس ريفر السابق: \"أنا أعرف كيف أنت\"",
-          "summary": "ستمثل قضية جوليان ألفاريز حتما نهاية السوق الصيفية لأتلتيكو مدريد. قبل كل شيء، عندما تجاوزت القضية منذ فترة طويلة حدود المحلية، ولكن لتصبح قضية عالمية.",
+          "title": "خوليان يحظى بدعم رئيس سابق لنادي ريفر: \"أعرف معدنك\"",
+          "summary": "يهيمن ملف خوليان ألفاريز على ختام سوق الانتقالات الصيفية لنادي أتلتيكو مدريد، بالتزامن مع تلقي المهاجم الدعم من رئيس سابق لنادي ريفر بليت.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260825/1004219510/julian-encuentra-apoyo-expresidente-river.html",
@@ -420,7 +444,12 @@
           "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260825/1004219510/julian-encuentra-apoyo-expresidente-river.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d8b7d5fc2fc0",
@@ -429,26 +458,27 @@
       "i18n": {
         "fr": {
           "title": "Un club de D1 féminine lituanienne propose à Jason Sudeikis, héros de la série Ted Lasso, de venir coacher un match",
-          "summary": "Deuxième du classement de Ligue 1 féminine lituanienne, le Zalgiris FC fait un appel de pied au coach médiatique le plus populaire du monde.",
-          "needs_translation": false
+          "summary": "Deuxième de Ligue 1 féminine lituanienne, le Zalgiris FC a proposé à l'acteur Jason Sudeikis, star de la série Ted Lasso, de venir diriger l'équipe lors d'un match.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "A Lithuanian women's D1 club offers Jason Sudeikis, hero of the Ted Lasso series, to coach a match",
-          "summary": "Second in the Lithuanian Women's League 1 rankings, Zalgiris FC makes a foot appeal to the world's most popular media coach.",
+          "title": "A Lithuanian women's top-flight club invites Ted Lasso star Jason Sudeikis to coach a match",
+          "summary": "Currently second in the Lithuanian women's league, Zalgiris FC has invited actor Jason Sudeikis, star of the series Ted Lasso, to coach the team for a match.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Un club de D1 femenino lituano ofrece a Jason Sudeikis, héroe de la serie Ted Lasso, venir a entrenar un partido",
-          "summary": "Segundo en la clasificación de la Ligue 1 femenina lituana, el Zalgiris FC apela al entrenador mediático más popular del mundo.",
+          "title": "Un club de la primera división femenina lituana propone a Jason Sudeikis, estrella de Ted Lasso, dirigir un partido",
+          "summary": "Segundo en la liga femenina lituana, Zalgiris FC ha invitado al actor Jason Sudeikis, protagonista de la serie Ted Lasso, a dirigir al equipo durante un partido.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يقدم نادي D1 للسيدات الليتوانيات جيسون سوديكيس، بطل سلسلة تيد لاسو، لتدريب مباراة",
-          "summary": "ثانيًا في تصنيفات الدوري النسائي الليتواني 1، تقدم Zalgiris FC نداءً إلى المدرب الإعلامي الأكثر شعبية في العالم.",
+          "title": "نادٍ في الدوري الليتواني للسيدات يدعو جيسون سوديكيس بطل مسلسل تيد لاسو لتدريب مباراة",
+          "summary": "وجّه نادي زالغيريس، صاحب المركز الثاني في الدوري الليتواني للسيدات، دعوة للممثل جيسون سوديكيس بطل مسلسل تيد لاسو لتولي تدريب الفريق النسائي خلال إحدى المباريات.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Respire/Tendances/Actualites/Un-club-de-d1-feminine-lituanienne-propose-a-jason-sudeikis-heros-de-la-serie-ted-lasso-de-venir-coacher-un-match/1713408#at_medium=RSS_feeds",
@@ -470,7 +500,12 @@
           "url": "https://www.lequipe.fr/Respire/Tendances/Actualites/Un-club-de-d1-feminine-lituanienne-propose-a-jason-sudeikis-heros-de-la-serie-ted-lasso-de-venir-coacher-un-match/1713408#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5088ccc77706",
@@ -479,32 +514,33 @@
       "i18n": {
         "de": {
           "title": "Aus Plauen nach Madrid: 15-jähriges Toptalent wechselt zu Real",
-          "summary": "Im Vogtland spielt Basketball eigentlich eine untergeordnete Rolle. Ein 15-Jähriger hat nun aber dennoch den Durchbruch geschafft.",
-          "needs_translation": false
+          "summary": "Ein 15-jähriges Basketball-Talent aus Plauen im Vogtland hat den Durchbruch geschafft und wechselt zu Real Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "From Plauen to Madrid: 15-year-old top talent moves to Real",
-          "summary": "In the Vogtland, basketball actually plays a subordinate role. However, a 15-year-old has now made a breakthrough.",
+          "title": "From Plauen to Madrid: 15-year-old top talent joins Real",
+          "summary": "A 15-year-old basketball talent from Plauen in Vogtland has secured a breakthrough move to Real Madrid.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "De Plauen à Madrid : un talent de 15 ans passe au Real",
-          "summary": "Dans le Vogtland, le basket-ball joue en fait un rôle secondaire. Cependant, un jeune de 15 ans a tout de même réussi à percer.",
+          "title": "De Plauen à Madrid : un jeune talent de 15 ans rejoint le Real",
+          "summary": "Un espoir du basketball âgé de 15 ans, originaire de Plauen dans le Vogtland, s'est engagé avec le Real Madrid.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "De Plauen a Madrid: el mejor talento de 15 años se traslada al Real",
-          "summary": "En Vogtland, el baloncesto juega un papel subordinado. Sin embargo, un joven de 15 años ha logrado el gran avance.",
+          "title": "De Plauen a Madrid: una joven promesa de 15 años ficha por el Real",
+          "summary": "Un talento del baloncesto de 15 años, oriundo de Plauen en el Vogtland, ha fichado por el Real Madrid.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "من بلاون إلى مدريد: أفضل المواهب البالغة من العمر 15 عامًا تنتقل إلى ريال مدريد",
-          "summary": "في فوجتلاند، تلعب كرة السلة في الواقع دورًا ثانويًا. ومع ذلك، حقق شاب يبلغ من العمر 15 عامًا الآن تقدمًا كبيرًا.",
+          "title": "من بلاوين إلى مدريد: موهبة واعدة في سن الـ15 تنتقل إلى ريال مدريد",
+          "summary": "انتقل لاعب كرة سلة موهوب يبلغ من العمر 15 عاماً من مدينة بلاوين بمنطقة فوغتلاند إلى صفوف نادي ريال مدريد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/aus-plauen-nach-madrid-15-jaehriges-toptalent-wechselt-zu-real-1246569/artikel#omrss",
@@ -526,7 +562,12 @@
           "url": "https://www.kicker.de/aus-plauen-nach-madrid-15-jaehriges-toptalent-wechselt-zu-real-1246569/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "03c82c2cbf1f",
@@ -640,27 +681,44 @@
       "summary": "L'attaquant polyvalent Omari Kellyman a signé pour cinq ans à Strasbourg. Il arrive de Chelsea.",
       "i18n": {
         "fr": {
-          "title": "Mercato : Strasbourg achète Omari Kellyman à Chelsea",
-          "summary": "L'attaquant polyvalent Omari Kellyman a signé pour cinq ans à Strasbourg. Il arrive de Chelsea.",
-          "needs_translation": false
+          "title": "Strasbourg s'offre Omari Kellyman en provenance de Chelsea",
+          "summary": "Le Racing Club de Strasbourg a officialisé le transfert de l'attaquant Omari Kellyman, acheté à Chelsea pour environ six millions d'euros.",
+          "body": [
+            "Le joueur polyvalent de 20 ans s'est engagé jusqu'en 2031 avec le club alsacien, l'opération incluant une clause de rachat au profit des Blues. Recruté par Chelsea en 2024 en provenance d'Aston Villa pour 22,5 millions d'euros, Kellyman avait inscrit 11 buts en 36 matches de D3 anglaise lors de son prêt à Cardiff City."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Mercato: Strasbourg buys Omari Kellyman from Chelsea",
-          "summary": "Versatile striker Omari Kellyman signed for five years in Strasbourg. He comes from Chelsea.",
+          "title": "Strasbourg sign Omari Kellyman from Chelsea",
+          "summary": "Racing Club de Strasbourg have finalised the transfer of forward Omari Kellyman from Chelsea for a fee around six million euros.",
+          "body": [
+            "The versatile 20-year-old has committed to the French side until 2031, with the deal including a buy-back clause in favour of the Blues. Signed by Chelsea in 2024 from Aston Villa for 22.5 million euros, Kellyman scored 11 goals in 36 League One appearances during his loan spell at Cardiff City."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Mercado: Estrasburgo compra Omari Kellyman al Chelsea",
-          "summary": "El delantero polivalente Omari Kellyman ha firmado por cinco años en Estrasburgo. Viene de Chelsea.",
+          "title": "El Strasbourg ficha a Omari Kellyman procedente del Chelsea",
+          "summary": "El Racing Club de Strasbourg ha hecho oficial el fichaje del delantero Omari Kellyman, traspasado desde el Chelsea por unos seis millones de euros.",
+          "body": [
+            "El polivalente atacante de 20 años firma hasta 2031 con el conjunto alsaciano, en una operación que incluye una opción de recompra para los Blues. Fichado por el Chelsea en 2024 procedente del Aston Villa por 22,5 millones de euros, Kellyman marcó 11 goles en 36 partidos de tercera división inglesa durante su cesión en el Cardiff City."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ميركاتو: ستراسبورغ تشتري أوماري كيليمان من تشيلسي",
-          "summary": "وقع المهاجم متعدد المواهب عمري كيليمان لمدة خمس سنوات في ستراسبورغ. إنه من تشيلسي.",
+          "title": "ستراسبورغ يتعاقد مع أوماري كيليمان قادماً من تشيلسي",
+          "summary": "أعلن نادي راسينغ كلوب دي ستراسبورغ رسمياً ضم المهاجم أوماري كيليمان من تشيلسي في صفقة بلغت قيمتها نحو ستة ملايين يورو.",
+          "body": [
+            "وقع اللاعب متعدد المراكز البالغ من العمر 20 عاماً عقداً يمتد حتى عام 2031 مع النادي الفرنسي، وتتضمن الصفقة بند إعادة شراء لصالح البلوز. وكان تشيلسي قد تعاقد مع كيليمان عام 2024 قادماً من أستون فيلا مقابل 22.5 مليون يورو، حيث سجل 11 هدفاً في 36 مباراة بدوري الدرجة الثالثة الإنجليزي أثناء فترة إعارته إلى كارديف سيتي."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Mercato-strasbourg-achete-omari-kellyman-a-chelsea/1713403#at_medium=RSS_feeds",
@@ -682,7 +740,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Mercato-strasbourg-achete-omari-kellyman-a-chelsea/1713403#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-25T09:13:11+00:00"
+        }
+      }
     },
     {
       "id": "19cf6f7cd167",
@@ -747,26 +818,27 @@
       "i18n": {
         "es": {
           "title": "Xavi, aclamado en su primer día con Países Bajos y recibido por un viejo conocido",
-          "summary": "La era de Xavi Hernández al frente de la selección de Países Bajos echó a andar formalmente este lunes con la llegada del técnico español a la sede de la Real Federación Neerlandesa de Fútbol (KNVB) en el campus de Zeist .",
-          "needs_translation": false
+          "summary": "Xavi Hernández inició formalmente este lunes su etapa como seleccionador de Países Bajos tras llegar a la sede de la KNVB en Zeist.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Xavi, acclaimed on his first day with the Netherlands and greeted by an old acquaintance",
-          "summary": "The era of Xavi Hernández at the head of the Netherlands national team formally kicked off on Monday with the arrival of the Spanish coach at the headquarters of the Royal Dutch Football Federation (KNVB) on the Zeist campus.",
+          "title": "Xavi acclaimed on his first day with Países Bajos and welcomed by an old acquaintance",
+          "summary": "Xavi Hernández officially began his tenure in charge of Países Bajos on Monday upon arriving at the KNVB headquarters in Zeist.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Xavi, acclamé lors de son premier jour avec les Pays-Bas et reçu par une vieille connaissance",
-          "summary": "L'ère de Xavi Hernandez à la tête de l'équipe des Pays-Bas a officiellement commencé ce lundi avec l'arrivée du technicien espagnol au siège de la Fédération royale néerlandaise de football (KNVB) sur le campus de Zeist .",
+          "title": "Xavi acclamé lors de son premier jour avec Países Bajos et accueilli par une vieille connaissance",
+          "summary": "L'ère Xavi Hernández à la tête de Países Bajos a officiellement débuté ce lundi avec son arrivée au siège de la KNVB à Zeist.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تشافي، المشهود له في يومه الأول مع هولندا واستقبله أحد معارفه القدامى",
-          "summary": "بدأ عهد تشافي هيرنانديز على رأس المنتخب الوطني الهولندي رسميًا يوم الاثنين بوصول المدرب الإسباني إلى مقر الاتحاد الملكي الهولندي لكرة القدم (KNVB) في حرم زيست .",
+          "title": "استقبال حافل لتشافي في يومه الأول مع منتخب هولندا",
+          "summary": "بدأ المدرب الإسباني تشافي هيرنانديز مشواره رسمياً مع منتخب هولندا، يوم الإثنين، بوصوله إلى مقر الاتحاد الهولندي لكرة القدم في زايست.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219500/xavi-aclamado-primer-dia-paises-bajos-recibido-viejo-conocido.html",
@@ -788,7 +860,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219500/xavi-aclamado-primer-dia-paises-bajos-recibido-viejo-conocido.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "420fa7c4795d",
@@ -797,26 +874,27 @@
       "i18n": {
         "es": {
           "title": "Johaneko se queda solo en el Athletic",
-          "summary": "Cinco cachorros empezaron la pretemporada con el primer equipo a las órdenes de Edin Terzic.",
-          "needs_translation": false
+          "summary": "De los cinco canteranos que iniciaron la pretemporada con el primer equipo a las órdenes de Edin Terzic, Johaneko es el único que permanece.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "Johaneko is left alone at Athletic",
-          "summary": "Five puppies started the preseason with the first team under the command of Edin Terzic.",
+          "summary": "Out of the five youth players who started pre-season with the first team under Edin Terzic, Johaneko is the only one remaining.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Johaneko reste seul à l'Athletic",
-          "summary": "Cinq chiots ont commencé la pré-saison avec l'équipe première sous les ordres d'Edin Terzic.",
+          "title": "Johaneko se retrouve seul à l'Athletic",
+          "summary": "Sur les cinq jeunes ayant débuté la pré-saison avec l'équipe première sous les ordres d'Edin Terzic, Johaneko est le seul à rester.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يُترك يوهانيكو بمفرده في Athletic",
-          "summary": "بدأ خمسة كلاب مرحلة ما قبل الموسم مع الفريق الأول تحت قيادة إدين تيرزيتش.",
+          "title": "يوهانيكو يبقى وحيداً في أتلتيك",
+          "summary": "من بين خمسة لاعبين شباب خاضوا التحضيرات الصيفية مع الفريق الأول تحت قيادة المدرب إدين تيرزيتش، بات يوهانيكو الوحيد المستمر مع المجموعة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260825/1004219365/johaneko-queda-athletic.html",
@@ -838,7 +916,12 @@
           "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260825/1004219365/johaneko-queda-athletic.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9d31cedb3491",
@@ -846,27 +929,28 @@
       "summary": "El enfrentamiento entre la UEFA y la FIFA actual es evidente y ya no se oculta a ojos de nadie.",
       "i18n": {
         "es": {
-          "title": "¡Nuevo desafío de la UEFA a la FIFA!",
-          "summary": "El enfrentamiento entre la UEFA y la FIFA actual es evidente y ya no se oculta a ojos de nadie.",
-          "needs_translation": false
+          "title": "Nuevo desafío de la UEFA a la FIFA",
+          "summary": "El enfrentamiento directo y las tensiones entre la UEFA y la FIFA se han hecho plenamente evidentes en el panorama del fútbol internacional.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "New UEFA Challenge to FIFA!",
-          "summary": "The clash between UEFA and FIFA today is obvious and no longer hidden from anyone's eyes.",
+          "title": "New challenge from UEFA to FIFA",
+          "summary": "The ongoing confrontation and tension between UEFA and FIFA have become clearly visible and open within international football.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Nouveau défi de l'UEFA à la FIFA !",
-          "summary": "La confrontation entre l'UEFA et la FIFA actuelle est évidente et n'est plus cachée aux yeux de personne.",
+          "title": "Nouveau défi de l'UEFA envers la FIFA",
+          "summary": "Les tensions et la confrontation directe entre l'UEFA et la FIFA sont désormais évidentes et ouvertement affichées dans le football mondial.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تحدي جديد للاتحاد الأوروبي لكرة القدم للفيفا!",
-          "summary": "الاشتباك بين الاتحاد الأوروبي لكرة القدم والفيفا اليوم واضح ولم يعد مخفيا عن أعين أي شخص.",
+          "title": "تحدٍ جديد من اليويفا للاتحاد الدولي لكرة القدم",
+          "summary": "أصبحت الخلافات والمواجهة المباشرة بين الاتحاد الأوروبي لكرة القدم والاتحاد الدولي واضحة ومعلنة بشكل كامل أمام الجميع.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/internacional/20260825/1004219495/nuevo-desafio-uefa-fifa.html",
@@ -888,7 +972,12 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20260825/1004219495/nuevo-desafio-uefa-fifa.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b1a2ab790451",
@@ -997,26 +1086,27 @@
       "i18n": {
         "fr": {
           "title": "En quelques jours, la Juve a vidé ses cages : deux gardiens poussés vers la sortie, un successeur venu d’Allemagne et le rôle inattendu d’un ancien portier bianconero",
-          "summary": "La Juventus a complètement réorganisé son secteur des gardiens de but ces derniers jours. Après […] Source",
-          "needs_translation": false
+          "summary": "La Juventus a totalement restructuré son effectif de gardiens de but en poussant deux joueurs vers la sortie et en recrutant un nouveau portier venu d'Allemagne.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "In a few days, Juve emptied its cages: two guards pushed towards the exit, a successor from Germany and the unexpected role of a former bianconero doorman",
-          "summary": "Juventus have completely revamped their goaltending sector in recent days. After […] Source",
+          "title": "In just a few days, Juve cleared out its goal: two goalkeepers pushed out, a successor from Germany, and the unexpected role of a former Bianconero shot-stopper",
+          "summary": "Juventus has completely overhauled its goalkeeping department by parting ways with two keepers and bringing in a new successor from Germany.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "En pocos días, la Juve vació sus jaulas: dos porteros empujados hacia la salida, un sucesor de Alemania y el inesperado papel de un ex portero bianconero",
-          "summary": "La Juventus ha reorganizado por completo su sector de porteros en los últimos días. Después de […] Fuente",
+          "title": "En pocos días, la Juve vació su portería: dos porteros empujados a la salida, un sucesor llegado de Alemania y el papel inesperado de un exportero bianconero",
+          "summary": "La Juventus ha reestructurado por completo su portería tras dar salida a dos guardametas y fichar a un nuevo relevo procedente de Alemania.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "في غضون أيام قليلة، أفرغ يوفنتوس أقفاصه: دفع حارسان نحو المخرج، وخلف من ألمانيا والدور غير المتوقع لبواب بيانكونيرو سابق",
-          "summary": "قام يوفنتوس بتجديد قطاعه الهادف بالكامل في الأيام الأخيرة. بعد [...] المصدر",
+          "title": "في غضون أيام قليلة، يوفنتوس يفرغ حراسة مرماه: رحيل حارسين، وخليفة قادم من ألمانيا، ودور غير متوقع لحارس سابق في البيانكونيري",
+          "summary": "أعاد نادي يوفنتوس ترتيب مركز حراسة المرمى بالكامل بعد الاستغناء عن حارسين والتعاقد مع بديل جديد قادم من الدوري الألماني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.calciomio.fr/en-quelques-jours-la-juve-a-vide-ses-cages-deux-gardiens-pousses-vers-la-sortie-un-successeur-venu-dallemagne-et-le-role-inattendu-dun-ancien-portier-bianconero-id-179364",
@@ -1038,7 +1128,12 @@
           "url": "https://www.calciomio.fr/en-quelques-jours-la-juve-a-vide-ses-cages-deux-gardiens-pousses-vers-la-sortie-un-successeur-venu-dallemagne-et-le-role-inattendu-dun-ancien-portier-bianconero-id-179364"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b43e32607a34",
@@ -1197,26 +1292,27 @@
       "i18n": {
         "es": {
           "title": "Objetivo, proteger a Julián Álvarez, con un gran 'pero'",
-          "summary": "Si le preguntan al Atlético de Madrid, la respuesta viene siendo la misma desde hace semanas. Julián Álvarez no se moverá del equipo colchonero.",
-          "needs_translation": false
+          "summary": "El Atlético de Madrid mantiene una postura firme desde hace semanas y asegura que Julián Álvarez no saldrá del club.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Objective, to protect Julián Álvarez, with a big 'but'",
-          "summary": "If you ask Atletico Madrid, the answer has been the same for weeks. Julian Alvarez will not move from the mattress team.",
+          "title": "Objective: protect Julián Álvarez, with a big 'but'",
+          "summary": "Atlético de Madrid has firmly maintained its stance for weeks that Julián Álvarez will not leave the club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Objectif, protéger Julián Álvarez, avec un grand « mais »",
-          "summary": "Si vous demandez à l'Atlético de Madrid, la réponse est la même depuis des semaines. Julián Álvarez ne quittera pas l'équipe de Colchonero.",
+          "title": "Objectif, protéger Julián Álvarez, avec un grand « mais »",
+          "summary": "L'Atlético de Madrid réaffirme sa position depuis plusieurs semaines : Julián Álvarez ne quittera pas le club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الهدف، لحماية جوليان ألفاريز، مع \"لكن\" كبيرة",
-          "summary": "إذا سألت أتلتيكو مدريد، فإن الإجابة هي نفسها منذ أسابيع. جوليان ألفاريز لن ينتقل من فريق المراتب.",
+          "title": "الهدف حماية خوليان ألفاريز، ولكن مع عقبة كبيرة",
+          "summary": "يتمسك أتلتيكو مدريد بموقفه الثابت منذ عدة أسابيع، مؤكداً أن خوليان ألفاريز لن يغادر صفوف الفريق.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260825/1004219375/objetivo-proteger-julian-alvarez.html",
@@ -1238,7 +1334,12 @@
           "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260825/1004219375/objetivo-proteger-julian-alvarez.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "517c3e930ba2",
@@ -1247,26 +1348,27 @@
       "i18n": {
         "es": {
           "title": "Fichajes, maletas y sensaciones",
-          "summary": "La última imagen que nos dejó el Atlético de Madrid en la pasada Liga fue una derrota por 5-1 en el campo del Villarreal . Tres meses después, el mismo rival se presentó en el Metropolitano y empatamos 2-2 jugando el tramo decisivo con diez futbolistas.",
-          "needs_translation": false
+          "summary": "Tras haber caído 5-1 ante el Villarreal en la pasada Liga, el Atlético de Madrid empató 2-2 frente al mismo rival en el Metropolitano jugando la fase final con diez futbolistas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Fichajes, suitcases and sensations",
-          "summary": "The last image that Atletico Madrid left us in the last League was a 5-1 defeat on Villarreal's pitch. Three months later, the same opponent appeared at the Metropolitano and we drew 2-2 playing the decisive stretch with ten players.",
+          "title": "Signings, suitcases, and feelings",
+          "summary": "After losing 5-1 to Villarreal in the previous Liga, Atlético de Madrid drew 2-2 against the same opponent at the Metropolitano, playing the decisive final stretch with ten men.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Pointages, valises et sensations",
-          "summary": "La dernière image que nous a laissée l'Atlético de Madrid dans la dernière Liga a été une défaite 5-1 sur le terrain de Villarreal . Trois mois plus tard, le même adversaire s'est présenté au Metropolitano et nous avons égalisé 2-2 en jouant la section décisive avec dix joueurs.",
+          "title": "Recrues, valises et sensations",
+          "summary": "Après une défaite 5-1 face à Villarreal lors de la dernière Liga, Atlético de Madrid a fait match nul 2-2 contre ce même adversaire au Metropolitano, en jouant la fin à dix.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الفيشاجات والحقائب والأحاسيس",
-          "summary": "الصورة الأخيرة التي تركها لنا أتلتيكو مدريد في الدوري الأخير كانت هزيمة 5-1 على ملعب فياريال . بعد ثلاثة أشهر، ظهر نفس الخصم في متروبوليتانو وتعادلنا 2-2 ولعبنا المباراة الحاسمة بعشرة لاعبين.",
+          "title": "تعاقدات وحقائب وانطباعات",
+          "summary": "بعد الهزيمة 5-1 أمام فياريال في الموسم الماضي من الدوري الإسباني، تعادل أتلتيكو مدريد 2-2 أمام المنافس ذاته على ملعب ميتروبوليتانو رغم لعبه الدقائق الحاسمة بعشرة لاعبين.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260825/1004219370/fichajes-maletas-sensaciones.html",
@@ -1288,7 +1390,12 @@
           "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260825/1004219370/fichajes-maletas-sensaciones.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6bd6c33f6637",
@@ -1347,26 +1454,27 @@
       "i18n": {
         "es": {
           "title": "El Athletic trabaja ya con la vista puesta en el Barça",
-          "summary": "El Athletic empezó a preparar ayer una semana que incluye dos partidos de Liga a domicilio. Los leones visitan pasado mañana al Barça y el domingo al Celta.",
-          "needs_translation": false
+          "summary": "El Athletic comenzó a preparar una semana con dos desplazamientos de Liga: visitará al Barça y cerrará el domingo ante el Celta.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Athletic are already working with their sights set on Barça",
-          "summary": "Athletic started preparing yesterday for a week that includes two La Liga away games. The lions visit Barça the day after tomorrow and Celta on Sunday.",
+          "title": "Athletic already focused on Barça",
+          "summary": "Athletic have begun preparations for a week featuring two away Liga matches, visiting Barça before facing Celta on Sunday.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "L'Athletic travaille déjà avec les yeux rivés sur le Barça",
-          "summary": "L'Athletic a commencé à préparer hier une semaine qui comprend deux matchs de Liga à domicile. Les lions visitent après-demain le Barça et dimanche le Celta.",
+          "title": "L'Athletic déjà tourné vers le Barça",
+          "summary": "L'Athletic a entamé la préparation d'une semaine comprenant deux déplacements en Liga, d'abord face au Barça puis contre le Celta dimanche.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تعمل Athletic بالفعل مع معالمها في برشلونة",
-          "summary": "بدأ أتلتيك الاستعداد يوم أمس لمدة أسبوع يتضمن مباراتين خارج أرضه في الدوري الإسباني. يزور الأسود برشلونة بعد غد و سيلتا يوم الأحد.",
+          "title": "أتلتيك بيلباو يبدأ استعداداته لمواجهة برشلونة",
+          "summary": "بدأ أتلتيك بيلباو التحضير لأسبوع يخوض خلاله مباراتين خارج أرضه في الدوري الإسباني، حيث يحل ضيفاً على برشلونة ثم يلتقي سيلتا فيغو الأحد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260825/1004219360/athletic-trabaja-vista-puesta-barca.html",
@@ -1388,7 +1496,12 @@
           "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260825/1004219360/athletic-trabaja-vista-puesta-barca.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "66092283e17c",
@@ -1396,27 +1509,28 @@
       "summary": "Pese al que el entrenador del Arsenal , Mikel Arteta , dejó claro el otro día que no tiene intención alguna de desprenderse de Martín Zubimendi , de 27 años, pese a que ha comenzado como suplente en lo 'gunners', y que el Real Madrid también ha dado por cerrado el capítulo de…",
       "i18n": {
         "es": {
-          "title": "\"¿Fichar a Zubimendi? ¿Por qué no? Pero el problema del Madrid es este otro\"",
-          "summary": "Pese al que el entrenador del Arsenal , Mikel Arteta , dejó claro el otro día que no tiene intención alguna de desprenderse de Martín Zubimendi , de 27 años, pese a que ha comenzado como suplente en lo 'gunners', y que el Real Madrid también ha dado por cerrado el capítulo de…",
-          "needs_translation": false
+          "title": "¿Fichar a Zubimendi? ¿Por qué no? Pero el problema del Madrid es este otro",
+          "summary": "Mikel Arteta dejó claro que el Arsenal no contempla la salida de Martín Zubimendi. Asimismo, el Real Madrid da por cerrada la opción de incorporar al centrocampista.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "\"Sign Zubimendi? Why not? But Madrid's problem is this other one\"",
-          "summary": "Despite the fact that Arsenal coach Mikel Arteta made it clear the other day that he has no intention of getting rid of Martín Zubimendi , 27, despite the fact that he has started as a substitute in the 'gunners', and that Real Madrid has also closed the chapter of...",
+          "title": "Sign Zubimendi? Why not? But Madrid's problem is something else",
+          "summary": "Mikel Arteta clarified that Arsenal have no intention of letting Martín Zubimendi leave. Meanwhile, Real Madrid have also closed the door on signing the midfielder.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "\"Ficher Zubimendi ? Pourquoi pas ? Mais le problème de Madrid, c'est cet autre\"",
-          "summary": "Malgré le fait que l'entraîneur d'Arsenal , Mikel Arteta , ait clairement indiqué l'autre jour qu'il n'avait aucune intention de se séparer de Martin Zubimendi , 27 ans, bien qu'il ait commencé comme remplaçant dans les « gunners », et que le Real Madrid ait également considéré que le chapitre de…",
+          "title": "Recruter Zubimendi ? Pourquoi pas ? Mais le problème du Madrid est tout autre",
+          "summary": "Mikel Arteta a affirmé qu'Arsenal ne prévoit pas de se séparer de Martín Zubimendi. De son côté, le Real Madrid a également refermé le dossier du milieu de terrain.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"وقع زوبيمندي ؟ لم لا ؟ لكن مشكلة مدريد هي هذه الأخرى\"",
-          "summary": "على الرغم من حقيقة أن مدرب آرسنال ميكيل أرتيتا أوضح في اليوم الآخر أنه ليس لديه نية للتخلص من مارتن زوبيمندي ، 27 عامًا، على الرغم من حقيقة أنه بدأ كبديل في \"المدفعية\"، وأن ريال مدريد قد أغلق أيضًا فصل...",
+          "title": "التعاقد مع زوبيميندي؟ لم لا؟ لكن مشكلة ريال مدريد تكمن في أمر آخر",
+          "summary": "أكد ميكل أرتيتا تمسك أرسنال بلاعبه مارتن زوبيميندي وعدم نيته التخلي عنه، في حين أغلق ريال مدريد ملف التفاوض لضم لاعب الوسط.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260825/1004219469/zubimendi.html",
@@ -1438,7 +1552,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260825/1004219469/zubimendi.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9d89f2bdd272",
@@ -1447,32 +1566,33 @@
       "i18n": {
         "de": {
           "title": "\"Habe mir den Sommer sportlich anders vorgestellt\": Rubin kehrt in die Schweiz zurück",
-          "summary": "Acht Jahre lang spielte Lenny Rubin in der Handball-Bundesliga. Nach seinem Abschied vom TVB Stuttgart war der 30-Jährige zuletzt vereinslos.",
-          "needs_translation": false
+          "summary": "Nach acht Jahren in der Handball-Bundesliga und seinem Abschied vom TVB Stuttgart kehrt der zuletzt vereinslose 30-jährige Lenny Rubin in die Schweiz zurück.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "\"I imagined a different sporting summer\": Rubin returns to Switzerland",
-          "summary": "Lenny Rubin played in the handball Bundesliga for eight years. After leaving TVB Stuttgart, the 30-year-old was most recently without a club.",
+          "title": "\"Had imagined the summer differently in sporting terms\": Rubin returns to Schweiz",
+          "summary": "After eight years in the Handball-Bundesliga and leaving TVB Stuttgart, the recently unattached 30-year-old Lenny Rubin is returning to Schweiz.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "\"J'ai imaginé l'été différemment sur le plan sportif\" : le rubis revient en Suisse",
-          "summary": "Pendant huit ans, Lenny Rubin a joué dans la Bundesliga de handball. Après avoir fait ses adieux au TVB Stuttgart, le trentenaire était sans club pour la dernière fois.",
+          "title": "« J'avais imaginé l'été sportivement différent » : Rubin retourne en Schweiz",
+          "summary": "Après huit ans en Handball-Bundesliga et son départ du TVB Stuttgart, Lenny Rubin, 30 ans et récemment sans club, retourne en Schweiz.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "\"Me imaginé el verano de forma diferente en términos deportivos\": Rubin regresa a Suiza",
-          "summary": "Lenny Rubin jugó durante ocho años en la Bundesliga de balonmano. Después de su despedida de TVB Stuttgart, el joven de 30 años se quedó sin club.",
+          "title": "\"Me imaginaba el verano diferente en lo deportivo\": Rubin regresa a Schweiz",
+          "summary": "Tras ocho años en la Handball-Bundesliga y su salida del TVB Stuttgart, Lenny Rubin, de 30 años y recientemente sin equipo, regresa a Schweiz.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"تخيلت صيفًا رياضيًا مختلفًا \": يعود روبن إلى سويسرا",
-          "summary": "لعب ليني روبن في الدوري الألماني لكرة اليد لمدة ثماني سنوات. بعد مغادرته تي في بي شتوتغارت، كان اللاعب البالغ من العمر 30 عاما في الآونة الأخيرة بدون ناد.",
+          "title": "\"تخيلت الصيف بشكل مختلف رياضياً\": روبين يعود إلى سويسرا",
+          "summary": "بعد ثماني سنوات في الدوري الألماني لكرة اليد ورحيله عن تي في بي شتوتغارت، يعود ليني روبين (30 عاماً) إلى سويسرا بعد فترة قضاها دون نادٍ.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/habe-mir-den-sommer-sportlich-anders-vorgestellt-rubin-kehrt-in-die-schweiz-zurueck-1246536/artikel#omrss",
@@ -1494,7 +1614,12 @@
           "url": "https://www.kicker.de/habe-mir-den-sommer-sportlich-anders-vorgestellt-rubin-kehrt-in-die-schweiz-zurueck-1246536/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f66215a7be83",
@@ -1503,26 +1628,27 @@
       "i18n": {
         "es": {
           "title": "El Athletic iguala un registro negativo a las primeras de cambio",
-          "summary": "LaLiga comenzó para el Athletic recogiendo tres balones de sus redes y con derrota frente al Sevilla (1-3). El curso pasado solo recibió tres impactos como local en el torneo de la regularidad en una ocasión, ante el Real Madrid (0-3) .",
-          "needs_translation": false
+          "summary": "El Athletic arrancó LaLiga con una derrota en casa por 1-3 ante el Sevilla. El equipo encajó tres goles como local, registro negativo que el curso pasado solo sufrió una vez, ante el Real Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Athletic matches a negative record to the first exchange",
-          "summary": "LaLiga started for Athletic by picking up three balls from their nets and losing to Sevilla (1-3). Last year he only received three hits at home in the tournament of regularity on one occasion, against Real Madrid (0-3) .",
+          "title": "Athletic match a negative record at the first hurdle",
+          "summary": "Athletic kicked off LaLiga with a 1-3 home defeat against Sevilla. Conceding three goals at home is a negative feat they only suffered once last season, against Real Madrid.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "L'Athletic égale un enregistrement négatif aux premiers échanges",
-          "summary": "La Liga a commencé pour l'Athletic en ramassant trois ballons de ses filets et avec une défaite face à Séville (1-3). La saison dernière, il n'a reçu que trois impacts à domicile dans le tournoi de la régularité à une occasion, contre le Real Madrid (0-3) .",
+          "title": "L'Athletic égale un record négatif d'entrée de jeu",
+          "summary": "L'Athletic a commencé LaLiga par une défaite à domicile (1-3) contre le Sevilla. La saison passée, le club n'avait concédé trois buts chez lui qu'à une seule reprise, face au Real Madrid.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "رياضي يطابق سجلًا سلبيًا مع التبادل الأول",
-          "summary": "بدأت لاليغا لأتلتيك بالتقاط ثلاث كرات من شباكها وخسرت أمام إشبيلية (1-3). في العام الماضي تلقى ثلاث ضربات فقط على أرضه في بطولة الانتظام في مناسبة واحدة، ضد ريال مدريد (0-3) .",
+          "title": "أتلتيك يعادل رقماً سلبياً منذ الجولة الأولى",
+          "summary": "استهل أتلتيك مشواره في الدوري الإسباني بالهزيمة على أرضه بنتيجة 1-3 أمام إشبيلية. واستقبلت شباكه ثلاثة أهداف، وهو رقم سلبي لم يحدث له كصاحب أرض الموسم الماضي سوى ضد ريال مدريد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260825/1004219332/athletic-iguala-registro-negativo-primeras-cambio.html",
@@ -1544,7 +1670,12 @@
           "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260825/1004219332/athletic-iguala-registro-negativo-primeras-cambio.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "275574166269",
@@ -1553,26 +1684,27 @@
       "i18n": {
         "es": {
           "title": "¿Y si lo de Gordon lo llegan a hacer Mastantuono o Diomandé?",
-          "summary": "¿Hace un año, el Real fichó a Franco Mastantuono . Florentino Pérez pagó 63 millones de euros por un jugador que tenía un valor de mercado de 30.",
-          "needs_translation": false
+          "summary": "Hace un año, el Real Madrid presidido por Florentino Pérez fichó a Franco Mastantuono por 63 millones de euros, el doble de su valor de mercado de 30 millones.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "What if Gordon is Mastantuono or Diomandé?",
-          "summary": "A year ago, Real signed Franco Mastantuono . Florentino Perez paid 63 million euros for a player who had a market value of 30.",
+          "title": "What if what Gordon did was done by Mastantuono or Diomandé?",
+          "summary": "A year ago, Florentino Pérez and Real Madrid signed Franco Mastantuono for 63 million euros, despite his market valuation being 30 million.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Et si Gordon était fait par Mastantuono ou Diomandé ?",
-          "summary": "Il y a un an, le Real a recruté Franco Mastantuono . Florentino Pérez a payé 63 millions d'euros pour un joueur qui avait une valeur marchande de 30.",
+          "title": "Et si ce qu'a fait Gordon avait été fait par Mastantuono ou Diomandé ?",
+          "summary": "Il y a un an, le Real Madrid et Florentino Pérez ont recruté Franco Mastantuono pour 63 millions d'euros, alors que sa valeur marchande était de 30 millions.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ماذا لو كان غوردون ماستانتونو أو ديوماندي ؟",
-          "summary": "قبل عام، وقع ريال مدريد مع فرانكو ماستانتونو . دفع فلورنتينو بيريز 63 مليون يورو للاعب تبلغ قيمته السوقية 30.",
+          "title": "ماذا لو فعل ماستانتونو أو ديوماندي ما فعله غوردون؟",
+          "summary": "تعاقد ريال مدريد برئاسة فلورنتينو بيريز قبل عام مع فرانكو ماستانتونو مقابل 63 مليون يورو، في حين كانت قيمته السوقية تبلغ 30 مليون يورو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219456/gordon-llegan-mastantuono-diomande.html",
@@ -1594,7 +1726,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219456/gordon-llegan-mastantuono-diomande.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "bee267b4fc8c",
@@ -1603,26 +1740,27 @@
       "i18n": {
         "es": {
           "title": "Verdadero o falso",
-          "summary": "Mientras el Barça no desencalla la situación del delantero centro en esta última semana de mercado, Flick continúa reflexionando sobre las posibles soluciones en la plantilla.",
-          "needs_translation": false
+          "summary": "Mientras el Barça sigue sin resolver la situación del delantero centro en la última semana de mercado, Flick estudia posibles soluciones dentro de su plantilla.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "True or False",
-          "summary": "While Barça does not unleash the situation of the centre forward in this last week of the market, Flick continues to reflect on the possible solutions in the squad.",
+          "summary": "As Barça have yet to resolve their centre-forward situation in the final week of the transfer window, Flick is considering solutions from within his current squad.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Vrai ou faux ?",
-          "summary": "Alors que le Barça ne déchaîne pas la situation de l'attaquant central au cours de cette dernière semaine de marché, Flick continue de réfléchir aux solutions possibles dans l'effectif.",
+          "title": "Vrai ou faux",
+          "summary": "Alors que le FC Barcelone n'a pas encore réglé le dossier de l'avant-centre en cette fin de mercato, Flick réfléchit aux options internes au sein de l'effectif.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "صح أم خطأ",
-          "summary": "في حين أن برشلونة لا يطلق العنان لوضع المركز إلى الأمام في الأسبوع الأخير من السوق، تواصل فليك التفكير في الحلول الممكنة في الفريق.",
+          "title": "صحيح أم خطأ",
+          "summary": "في ظل عدم حسم برشلونة لملف المهاجم الصريح في الأسبوع الأخير من الميركاتو، يواصل فليك دراسة الخيارات والحلول البديلة المتاحة داخل تشكيلة الفريق.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219378/verdadero-falso.html",
@@ -1644,7 +1782,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219378/verdadero-falso.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b520dee86d55",
@@ -1653,26 +1796,27 @@
       "i18n": {
         "es": {
           "title": "Un inicio demoledor sin '9'",
-          "summary": "Estuve en Elche y disfruté de un gran espectáculo con la goleada del Barça. Empezar la Liga así es una fuerte declaración de intenciones para la temporada.",
-          "needs_translation": false
+          "summary": "El Barça arrancó su temporada en LaLiga con una contundente goleada frente al Elche, dominando el encuentro sin alinear a un delantero centro clásico.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "A wrecking start without '9'",
-          "summary": "I was in Elche and enjoyed a great show with Barça's thrashing. Starting the League like this is a strong statement of intent for the season.",
+          "title": "A crushing start without a '9'",
+          "summary": "Barça opened their La Liga campaign with a dominant rout against Elche, delivering a strong performance without a traditional number nine.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Un début de démolition sans '9'",
-          "summary": "J'étais à Elche et j'ai profité d'un grand spectacle avec la victoire du Barça. Démarrer la Liga comme ça est une forte déclaration d'intention pour la saison.",
+          "title": "Un début dévastateur sans '9'",
+          "summary": "Le Barça a lancé sa saison en Liga par une large victoire contre Elche, s'imposant nettement sans utiliser d'attaquant de pointe traditionnel.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "بداية تحطيم بدون \"9\"",
-          "summary": "كنت في إلتشي واستمتعت بعرض رائع مع سحق برشلونة. إن بدء الدوري على هذا النحو هو بيان نوايا قوي للموسم.",
+          "title": "بداية كاسحة بدون 'رقم 9'",
+          "summary": "استهل برشلونة مشواره في الدوري الإسباني بفوز عريض على إلتشي، محققاً بداية قوية للموسم دون الاعتماد على مهاجم صريح.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219342/inicio-demoledor-9.html",
@@ -1694,7 +1838,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219342/inicio-demoledor-9.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "21e953c4c22c",
@@ -1703,26 +1852,27 @@
       "i18n": {
         "es": {
           "title": "Julián Alvarez, Barça y Atlético: todos pierden",
-          "summary": "A una semana para el cierre del mercado, la situación es la siguiente: todos pierden. Lo han hecho todos tan mal que ninguna de las tres partes ha logrado su objetivo.",
-          "needs_translation": false
+          "summary": "A una semana del cierre del mercado de fichajes, ninguna de las partes implicadas (Julián Alvarez, Barça y Atlético) ha logrado cumplir sus objetivos.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Julián Alvarez, Barça and Atlético: everyone loses",
-          "summary": "With a week to go until the market closes, the situation is as follows: everyone loses. They have all done so badly that none of the three parties have achieved their goal.",
+          "title": "Julián Alvarez, Barça and Atlético: Everyone loses",
+          "summary": "With one week remaining before the transfer window closes, none of the three parties (Julián Alvarez, Barça, and Atlético) have achieved their objectives.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Julián Alvarez, Barça et Atlético : tout le monde perd",
-          "summary": "À une semaine de la clôture du marché, la situation est la suivante : tout le monde perd. Ils l'ont tous fait si mal qu'aucune des trois parties n'a atteint son objectif.",
+          "title": "Julián Alvarez, Barça et Atlético : tout le monde perd",
+          "summary": "À une semaine de la fermeture du mercato, aucune des trois parties concernées (Julián Alvarez, Barça et Atlético) n'est parvenue à atteindre ses objectifs.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "جوليان الفاريز، برشلونة وأتلتيكو: الجميع يخسر",
-          "summary": "مع بقاء أسبوع حتى إغلاق السوق، يكون الوضع على النحو التالي: الجميع يخسر. لقد قاموا جميعًا بعمل سيء لدرجة أن أيًا من الأطراف الثلاثة لم يحقق هدفه.",
+          "title": "جوليان ألفاريز، برشلونة وأتلتيكو مدريد: الجميع خاسر",
+          "summary": "قبل أسبوع من إغلاق سوق الانتقالات، لم ينجح أي من الأطراف الثلاثة (جوليان ألفاريز، برشلونة، وأتلتيكو مدريد) في تحقيق أهدافه.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219462/julian-alvarez-barca-atletico-todos-pierden.html",
@@ -1744,7 +1894,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219462/julian-alvarez-barca-atletico-todos-pierden.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e4093ee5f91f",
@@ -1753,26 +1908,27 @@
       "i18n": {
         "es": {
           "title": "El Athletic busca un anti Lamine Yamal",
-          "summary": "Edin Terzic debe afrontar la segunda consecuencia de la expulsión de Yuri . La primera y más inmediata fue buscarle reemplazo en el lateral izquierdo en el mismo partido con el Sevilla y hacer frente a 80 minutos en inferioridad.",
-          "needs_translation": false
+          "summary": "Tras la expulsión de Yuri ante el Sevilla, Edin Terzic debe encontrar un sustituto en el lateral izquierdo para frenar a Lamine Yamal.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Athletic is looking for an anti Lamine Yamal",
-          "summary": "Edin Terzic must face the second consequence of Yuri's expulsion. The first and most immediate was to look for a replacement on the left back in the same game with Sevilla and face 80 minutes in inferiority.",
+          "title": "Athletic looks for an anti-Lamine Yamal plan",
+          "summary": "Following Yuri's red card against Sevilla, Edin Terzic must find a replacement at left-back to stop Lamine Yamal.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "L'Athletic cherche un anti Lamine Yamal",
-          "summary": "Edin Terzic doit faire face à la deuxième conséquence de l'expulsion de Yuri . La première et la plus immédiate a été de le remplacer sur le côté gauche dans le même match avec Séville et de faire face à 80 minutes d'infériorité.",
+          "title": "L'Athletic cherche un plan anti-Lamine Yamal",
+          "summary": "Après l'expulsion de Yuri face à Sevilla, Edin Terzic doit trouver un remplaçant au poste de latéral gauche pour contrer Lamine Yamal.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "رياضي يبحث عن مضاد لامين يامال",
-          "summary": "يجب أن يواجه إيدين تيرزيتش النتيجة الثانية لطرد يوري . الأول والأكثر إلحاحا هو البحث عن بديل في الظهير الأيسر في نفس المباراة مع إشبيلية ومواجهة 80 دقيقة في الدونية.",
+          "title": "أتلتيك يبحث عن خطة لإيقاف لامين يامال",
+          "summary": "بعد طرد يوري أمام إشبيلية، يتعين على إيدين تيرزيتش إيجاد بديل في مركز الظهير الأيسر للحد من خطورة لامين يامال.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260825/1004219325/athletic-busca-anti-lamine-yamal.html",
@@ -1794,7 +1950,12 @@
           "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260825/1004219325/athletic-busca-anti-lamine-yamal.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a3734ad806a4",
@@ -1803,26 +1964,27 @@
       "i18n": {
         "es": {
           "title": "El plan del Real Madrid y Mourinho con Vinicius",
-          "summary": "El Real Madrid y Mourinho tienen un plan con Vinicius. Un plan que no es otro que defender a capa y espada al brasileño cada vez que exista lío con él.",
-          "needs_translation": false
+          "summary": "El Real Madrid y Mourinho han determinado defender incondicionalmente al delantero brasileño Vinicius ante cualquier polémica que surja a su alrededor.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The plan of Real Madrid and Mourinho with Vinicius",
-          "summary": "Real Madrid and Mourinho have a plan with Vinicius. A plan that is none other than to defend the Brazilian swordsman every time there is an affair with him.",
+          "title": "Real Madrid and Mourinho's plan for Vinicius",
+          "summary": "Real Madrid and Mourinho plan to steadfastly defend Brazilian forward Vinicius whenever controversies or disputes arise around him.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le plan du Real Madrid et de Mourinho avec Vinicius",
-          "summary": "Le Real Madrid et Mourinho ont un plan avec Vinicius. Un plan qui n'est autre que de défendre cape et épée le Brésilien chaque fois qu'il y a un désordre avec lui.",
+          "title": "Le plan du Real Madrid et de Mourinho pour Vinicius",
+          "summary": "Le Real Madrid et Mourinho ont pour stratégie de défendre fermement l'attaquant brésilien Vinicius lors de chaque polémique le concernant.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "خطة ريال مدريد ومورينيو مع فينيسيوس",
-          "summary": "لدى ريال مدريد ومورينيو خطة مع فينيسيوس. خطة ليست سوى الدفاع عن المبارز البرازيلي في كل مرة تكون هناك علاقة غرامية معه.",
+          "title": "خطة ريال مدريد ومورينيو بشأن فينيسيوس",
+          "summary": "يعتزم ريال مدريد والمدرب مورينيو الدفاع بحزم ودون تردد عن المهاجم البرازيلي فينيسيوس في مواجهة أي جدل أو أزمات يتعرض لها.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260825/1004219320/plan-real-madrid-mourinho-vinicius.html",
@@ -1850,7 +2012,12 @@
           "url": "https://www.calciomio.fr/combien-de-plongeons-faut-il-pour-un-deuxieme-carton-jaune-lespanyol-allume-vinicius-apres-le-scenario-fou-qui-lance-lere-mourinho-au-real-madrid-id-179294"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f968a8d05d03",
@@ -1859,26 +2026,27 @@
       "i18n": {
         "es": {
           "title": "Darlo todo por el Barça: futbolistas que entraron en rebeldía para vestir la azulgrana",
-          "summary": "Parece que la relación entre Julián Alvarez y el Atlético de Madrid es totalmente irreconducible. La reacción de la afición y el propio club rojiblanco en el primer partido del conjunto colchonero en el Metropolitano dejaron claro el divorcio con el jugador.",
-          "needs_translation": false
+          "summary": "La relación entre Julián Alvarez y el Atlético de Madrid parece totalmente rota tras la tensa reacción de la afición y el club en el Metropolitano.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Give everything for Barça: footballers who went into rebellion to wear the Barça",
-          "summary": "It seems that the relationship between Julian Alvarez and Atletico Madrid is totally irretrievable. The reaction of the fans and the rojiblanco club itself in the first match of the mattress set at the Metropolitano made clear the divorce with the player.",
+          "title": "Giving everything for Barça: footballers who rebelled to wear the blaugrana shirt",
+          "summary": "The relationship between Julián Alvarez and Atlético de Madrid appears broken following tensions with fans and the club at the Metropolitano.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Tout donner pour le Barça : des footballeurs qui se sont rebellés pour porter le Blaugrana",
-          "summary": "Il semble que la relation entre Julián Alvarez et l'Atlético de Madrid soit totalement irréductible. La réaction des supporters et du club rouge et blanc lui-même lors du premier match de l'équipe colchonero au Metropolitano a clairement indiqué le divorce avec le joueur.",
+          "title": "Tout donner pour le Barça : ces footballeurs qui sont allés au bras de fer pour porter le maillot blaugrana",
+          "summary": "La relation entre Julián Alvarez et l'Atlético de Madrid semble rompue suite aux tensions observées avec le club et les supporters au Metropolitano.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "قدم كل شيء لبرشلونة: لاعبو كرة القدم الذين ذهبوا إلى التمرد لارتداء برشلونة",
-          "summary": "يبدو أن العلاقة بين جوليان ألفاريز وأتلتيكو مدريد لا يمكن استعادتها تماما. رد فعل المشجعين ونادي روجيبلانكو نفسه في المباراة الأولى من مجموعة المراتب في متروبوليتانو أوضح الطلاق مع اللاعب.",
+          "title": "التضحية من أجل برشلونة: لاعبون تمردوا لارتداء قميص البلوغرانا",
+          "summary": "تبدو العلاقة بين جوليان ألفاريز ونادي أتلتيكو مدريد منتهية تماماً، إثر ردود الفعل السلبية من إدارة النادي وجماهيره في ملعب ميتروبوليتانو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219290/darlo-barca-futbolistas-entraron-rebeldia-vestir-azulgrana.html",
@@ -1900,7 +2068,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219290/darlo-barca-futbolistas-entraron-rebeldia-vestir-azulgrana.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7c488192ae78",
@@ -1908,27 +2081,28 @@
       "summary": "La Real afronta mañana un reto mayúsculo tras caer en el primer partido, que no jornada, liguero ante el Betis. Sin demasiado tiempo ni para descansar ni para entrenar ni para lamentarse, le toca visitar al renovado Real Madrid en el Santiago Bernabéu.",
       "i18n": {
         "es": {
-          "title": "El doble enorme reto de la Real: no ha ganado a Mou nunca y el Bernabéu pesa",
-          "summary": "La Real afronta mañana un reto mayúsculo tras caer en el primer partido, que no jornada, liguero ante el Betis. Sin demasiado tiempo ni para descansar ni para entrenar ni para lamentarse, le toca visitar al renovado Real Madrid en el Santiago Bernabéu.",
-          "needs_translation": false
+          "title": "El doble reto de la Real Sociedad: nunca ha ganado a Mourinho y visita el Santiago Bernabéu",
+          "summary": "Tras caer ante el Betis, la Real Sociedad visita al Real Madrid en el Santiago Bernabéu con el desafío añadido de nunca haber derrotado a un equipo de José Mourinho.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The double enormous challenge of the Real: it has never beaten Mou and the Bernabéu weighs",
-          "summary": "La Real faces a major challenge tomorrow after falling in the first match, which was not a matchday, against Betis. Without too much time to rest, train or complain, it's time to visit the renovated Real Madrid at the Santiago Bernabéu.",
+          "title": "Real Sociedad's double challenge: winless against Mourinho and facing the Santiago Bernabéu",
+          "summary": "Following a defeat to Betis, Real Sociedad visit Real Madrid at the Santiago Bernabéu, aiming for their first-ever victory against a team managed by José Mourinho.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le double énorme défi de la Real : elle n'a jamais gagné Mou et le Bernabéu pèse lourd",
-          "summary": "La Real affronte demain un défi majeur après avoir chuté lors du premier match, qui n'a pas duré une journée, face au Betis. Sans trop de temps ni pour se reposer, ni pour s'entraîner, ni pour se lamenter, c'est au tour de visiter le Real Madrid rénové au Santiago Bernabéu.",
+          "title": "Le double défi de la Real Sociedad : jamais victorieuse contre Mourinho et le déplacement au Santiago Bernabéu",
+          "summary": "Après sa défaite face au Betis, la Real Sociedad se déplace sur le terrain du Real Madrid au Santiago Bernabéu, où elle tentera de battre pour la première fois José Mourinho.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "التحدي الهائل المزدوج للريال: لم يسبق له أن هزم مو ويزن البرنابيو",
-          "summary": "يواجه لا ريال تحديا كبيرا غدا بعد سقوطه في المباراة الأولى، التي لم تكن مباراة، ضد بيتيس. بدون الكثير من الوقت للراحة أو التدريب أو الشكوى، حان الوقت لزيارة ريال مدريد الذي تم تجديده في سانتياغو برنابيو.",
+          "title": "تحدٍّ مزدوج لريال سوسيداد: لم يهزم مورينيو أبداً ومواجهة صعبة في سانتياغو برنابيو",
+          "summary": "بعد خسارته أمام ريال بيتيس، يحل ريال سوسيداد ضيفاً على ريال مدريد في ملعب سانتياغو برنابيو، ساعياً لتحقيق فوزه الأول تاريخياً أمام فرق المدرب جوزيه مورينيو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260825/1004219383/doble-enorme-reto-real-madrid-no-ganado-mourinho-nunca-bernabeu-pesa.html",
@@ -1950,7 +2124,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260825/1004219383/doble-enorme-reto-real-madrid-no-ganado-mourinho-nunca-bernabeu-pesa.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     }
   ]
 }
