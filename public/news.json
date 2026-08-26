@@ -264,23 +264,27 @@
       "i18n": {
         "es": {
           "title": "El Leeds echa al Nottingham tras ganarle también en la Premier",
-          "summary": "El Leeds le tiene tomada la medida al Nottingham en este inicio de temporada. Dos partidos, dos triunfos.",
-          "needs_translation": false
+          "summary": "El Leeds firmó su segundo triunfo de la temporada ante el Nottingham tras volver a superarlo, esta vez en la Premier.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Leeds echa al Nottingham tras ganarle también en la Premier",
-          "summary": "El Leeds le tiene tomada la medida al Nottingham en este inicio de temporada. Dos partidos, dos triunfos.",
-          "needs_translation": true
+          "title": "Leeds knock out Nottingham after beating them again in the Premier League",
+          "summary": "Leeds secured their second win of the season against Nottingham by defeating them once again, this time in the Premier League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El Leeds echa al Nottingham tras ganarle también en la Premier",
-          "summary": "El Leeds le tiene tomada la medida al Nottingham en este inicio de temporada. Dos partidos, dos triunfos.",
-          "needs_translation": true
+          "title": "Leeds élimine Nottingham après l'avoir également battu en Premier League",
+          "summary": "Leeds a battu Nottingham pour la deuxième fois de la saison en s'imposant de nouveau, cette fois en Premier League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Leeds echa al Nottingham tras ganarle también en la Premier",
-          "summary": "El Leeds le tiene tomada la medida al Nottingham en este inicio de temporada. Dos partidos, dos triunfos.",
-          "needs_translation": true
+          "title": "ليدز يقصي نوتنغهام بعد الفوز عليه مجدداً في الدوري الإنجليزي الممتاز",
+          "summary": "حقق ليدز انتصاره الثاني هذا الموسم على نوتنغهام بعدما كرر الفوز عليه في منافسات الدوري الإنجليزي الممتاز.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260826/1004219849/leeds.html",
@@ -302,7 +306,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260826/1004219849/leeds.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5188e5de6432",
@@ -366,40 +375,40 @@
       "summary": "Manchester City forward Khadija Shaw reacts to winning her second PFA player of the year award in three seasons.",
       "i18n": {
         "en": {
-          "title": "Khadija Shaw named PFA Player of the Year for second time",
-          "summary": "Manchester City striker Khadija Shaw has been crowned PFA Player of the Year for the second time in three seasons.",
+          "title": "Khadija Shaw wins second PFA Player of the Year award",
+          "summary": "Manchester City forward Khadija Shaw has been named PFA Player of the Year for the second time in three seasons.",
           "body": [
-            "The Manchester City forward expressed her gratitude after collecting the individual accolade once again. Shaw described herself as truly honoured to earn the peer-voted recognition for the second time across a three-year span, highlighting her consistent impact leading the club's attack."
+            "The striker claims the prestigious individual honour once again, cementing her consistency and dominant status at the highest level of English football."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Khadija Shaw élue Joueuse de l'année PFA pour la deuxième fois",
-          "summary": "L'attaquante de Manchester City Khadija Shaw a été sacrée Joueuse de l'année par la PFA pour la deuxième fois en trois saisons.",
+          "title": "Khadija Shaw désignée joueuse de l'année PFA pour la deuxième fois",
+          "summary": "L'attaquante de Manchester City Khadija Shaw a été désignée joueuse de l'année PFA pour la deuxième fois en trois saisons.",
           "body": [
-            "L'attaquante de Manchester City a exprimé toute sa fierté après avoir décroché cette prestigieuse récompense individuelle. Shaw s'est dite particulièrement honorée par ce plébiscite de ses pairs pour la deuxième fois en trois ans, couronnant son impact régulier à la pointe de l'attaque mancunienne."
+            "La buteuse de Manchester City décroche à nouveau cette distinction individuelle majeure, confirmant sa régularité et sa domination au sommet du football anglais."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "es": {
-          "title": "Khadija Shaw, elegida Jugadora del Año de la PFA por segunda vez",
-          "summary": "La delantera de Manchester City Khadija Shaw ha sido galardonada como Jugadora del Año de la PFA por segunda vez en tres temporadas.",
+          "title": "Khadija Shaw, elegida jugadora del año de la PFA por segunda vez",
+          "summary": "La delantera de Manchester City Khadija Shaw ha sido elegida jugadora del año de la PFA por segunda vez en tres temporadas.",
           "body": [
-            "La atacante de Manchester City mostró su agradecimiento tras alzarse de nuevo con este prestigioso premio individual. Shaw aseguró sentirse sumamente honrada por recibir el reconocimiento de sus compañeras de profesión por segunda ocasión en tres años, ratificando su enorme peso ofensivo en el equipo."
+            "La atacante de Manchester City vuelve a llevarse este prestigioso galardón individual, ratificando su regularidad y dominio en la élite del fútbol inglés."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "ar": {
-          "title": "خديجة شو تتوج بجائزة أفضل لاعبة من رابطة المحترفين للمرة الثانية",
-          "summary": "تُوجت مهاجمة مانشستر سيتي خديجة شو بجائزة أفضل لاعبة في العام من رابطة اللاعبين المحترفين للمرة الثانية خلال ثلاثة مواسم.",
+          "title": "خديجة شو تتوج بجائزة أفضل لاعبة في إنجلترا للمرة الثانية",
+          "summary": "نالت مهاجمة مانشستر سيتي، خديجة شو، جائزة أفضل لاعبة في العام من رابطة اللاعبين المحترفين الإنجليزية للمرة الثانية خلال ثلاثة مواسم.",
           "body": [
-            "وعبرت مهاجمة مانشستر سيتي عن سعادتها البالغة بعد حصد هذه الجائزة الفردية المرموقة من جديد، مؤكدة أنها تشعر بشرف كبير لنيلها ثقة زميلاتها بتصويتهن لها للمرة الثانية في غضون ثلاثة أعوام، ما يعكس تأثيرها التهديفي المستمر في قيادة هجوم الفريق."
+            "تضيف هدافة مانشستر سيتي هذا التكريم الفردي المرموق إلى مسيرتها، مؤكدة استمرار تألقها وهيمنتها على قمة المنافسات في كرة القدم الإنجليزية."
           ],
           "format": "brief",
           "needs_translation": false,
@@ -497,26 +506,27 @@
       "i18n": {
         "fr": {
           "title": "Carlos Baleba quitte Brighton et s'engage officiellement avec Manchester United contre 80 millions d'euros",
-          "summary": "La vente de Carlos Baleba à Manchester United contre 80 millions va rapporter 10 millions au LOSC, Olivier Letang, le président, ayant glissé une clause d'intéressement à la revente du Camerounais.",
-          "needs_translation": false
+          "summary": "Carlos Baleba rejoint Manchester United depuis Brighton pour 80 millions d'euros. Grâce à une clause de revente, le LOSC va percevoir 10 millions d'euros sur ce transfert.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Carlos Baleba leaves Brighton and officially commits to Manchester United for €80 million",
-          "summary": "The sale of Carlos Baleba to Manchester United against 80 million will bring 10 million to the LOSC, Olivier Letang, the president, having slipped an incentive clause to the resale of the Cameroonian.",
+          "title": "Carlos Baleba leaves Brighton and officially joins Manchester United for 80 million euros",
+          "summary": "Carlos Baleba has joined Manchester United from Brighton for 80 million euros. Thanks to a sell-on clause negotiated by Olivier Letang, LOSC will receive 10 million euros.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Carlos Baleba deja Brighton y se compromete oficialmente con el Manchester United por 80 millones de euros",
-          "summary": "La venta de Carlos Baleba al Manchester United por 80 millones le reportará 10 millones al Lille, ya que Olivier Letang, el presidente, deslizó una cláusula de participación en la reventa del camerunés.",
+          "title": "Carlos Baleba deja el Brighton y ficha oficialmente por el Manchester United por 80 millones de euros",
+          "summary": "Carlos Baleba deja el Brighton y se une al Manchester United por 80 millones de euros. El LOSC recibirá 10 millones de euros gracias a una cláusula de reventa.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يغادر كارلوس بالبا برايتون ويلتزم رسميًا بمانشستر يونايتد مقابل 80 مليون يورو",
-          "summary": "بيع كارلوس بالبا إلى مانشستر يونايتد مقابل 80 مليون سيجلب 10 ملايين إلى LOSC، أوليفييه ليتانغ، الرئيس، بعد أن تراجع عن شرط حافز لإعادة بيع الكاميروني.",
+          "title": "كارلوس باليبا يغادر برايتون وينضم رسمياً إلى مانشستر يونايتد مقابل 80 مليون يورو",
+          "summary": "انتقل الكاميروني كارلوس باليبا من برايتون إلى مانشستر يونايتد مقابل 80 مليون يورو. وسيجني نادي ليل 10 ملايين يورو بفضل بند نسبة إعادة البيع.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/En-attendant-les-100-millions-de-city-pour-bouaddi-lille-va-empocher-10-m-et-8364-grace-au-transfert-de-carlos-baleba-a-manchester-united/1713578#at_medium=RSS_feeds",
@@ -607,27 +617,44 @@
       "summary": "Le PSV est toujours à la recherche de renforts, et le nom d'Azzedine Ounahi a été évoqué. Selon nos informations, il figure sur la liste des joueurs ciblés par Eindhoven, tout comme Quinten Timber, ancien joueur du Feyenoord, l'avait été auparavant.",
       "i18n": {
         "fr": {
-          "title": "Azzedine Ounahi : le PSV revient à la charge pour le Marocain",
-          "summary": "Le PSV est toujours à la recherche de renforts, et le nom d'Azzedine Ounahi a été évoqué. Selon nos informations, il figure sur la liste des joueurs ciblés par Eindhoven, tout comme Quinten Timber, ancien joueur du Feyenoord, l'avait été auparavant.",
-          "needs_translation": false
+          "title": "Mercato : le PSV Eindhoven s'intéresse à Azzedine Ounahi",
+          "summary": "Le PSV Eindhoven cible activement le milieu international marocain Azzedine Ounahi pour renforcer son entrejeu cet été.",
+          "body": [
+            "Toujours en quête de nouvelles recrues pour étoffer son effectif, le club néerlandais a placé le joueur de l'Olympique de Marseille sur sa liste de priorités. La formation d'Eindhoven suit ce dossier de près, après s'être notamment penchée par le passé sur le profil de l'ancien joueur de Feyenoord Quinten Timber."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Azzedine Ounahi: the PSV is back in charge for the Moroccan",
-          "summary": "The PSV is still looking for reinforcements, and the name of Azzedine Ounahi has been mentioned. According to our information, he is on the list of players targeted by Eindhoven, just like Quinten Timber, a former Feyenoord player, had been before.",
+          "title": "Transfer window: PSV Eindhoven target Azzedine Ounahi",
+          "summary": "PSV Eindhoven are actively targeting Moroccan international midfielder Azzedine Ounahi to strengthen their engine room this summer.",
+          "body": [
+            "Looking to bolster their squad, the Dutch champions have placed the Olympique de Marseille playmaker high on their shortlist. Eindhoven are keeping close tabs on his situation, having previously explored a move for former Feyenoord standout Quinten Timber."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Azzedine Ounahi: el PSV vuelve a la carga para el marroquí",
-          "summary": "El PSV sigue buscando refuerzos, y se ha mencionado el nombre de Azzedine Ounahi. Según nuestra información, está en la lista de jugadores objetivo de Eindhoven, al igual que Quinten Timber, ex jugador del Feyenoord, lo había estado antes.",
+          "title": "Mercado: el PSV Eindhoven pone sus ojos en Azzedine Ounahi",
+          "summary": "El PSV Eindhoven tiene en el punto de mira al centrocampista internacional marroquí Azzedine Ounahi para reforzar su medular este verano.",
+          "body": [
+            "Decidido a sumar piezas a su plantilla, el conjunto neerlandés ha situado al futbolista del Olympique de Marseille entre sus prioridades. El club de Eindhoven sigue muy de cerca el caso, después de haber sondeado en el pasado el perfil del exjugador de Feyenoord Quinten Timber."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "عز الدين أوناهي: PSV عاد مسؤولا عن المغربي",
-          "summary": "لا تزال PSV تبحث عن تعزيزات، وقد تم ذكر اسم عز الدين أوناهي. وفقًا لمعلوماتنا، فهو على قائمة اللاعبين المستهدفين من قبل أيندهوفن، تمامًا مثل كوينتن تيمبر، لاعب فينورد السابق، من قبل.",
+          "title": "الميركاتو: بي إس في آيندهوفن يضع عينه على عز الدين أوناحي",
+          "summary": "يسعى نادي بي إس في آيندهوفن الهولندي للتعاقد مع الدولي المغربي عز الدين أوناحي لتعزيز خط وسطه خلال سوق الانتقالات الصيفية.",
+          "body": [
+            "في إطار تحركاته لتدعيم صفوفه، وضع النادي الهولندي نجم أولمبيك مارسيليا على رأس أولوياته. وتتابع إدارة آيندهوفن الصفقة عن كثب، بعدما أبدت اهتماماً في وقت سابق بضم لاعب فينورد السابق كوينتن تيمبر."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/maghreb/azzedine-ounahi-le-psv-revient-a-la-charge-pour-le-marocain/",
@@ -649,7 +676,20 @@
           "url": "https://africatopsports.com/maghreb/azzedine-ounahi-le-psv-revient-a-la-charge-pour-le-marocain/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-26T00:02:51+00:00"
+        }
+      }
     },
     {
       "id": "97eb2b507b06",
@@ -708,32 +748,33 @@
       "i18n": {
         "de": {
           "title": "Das Wunder von Linz: LASK feiert Einzug in Königsklasse",
-          "summary": "Der LASK macht das Unmögliche möglich und gewinnt das Rückspiel gegen Celtic mit 5:1 nach Verlängerung. Damit stehen die Linzer in der Champions League.",
-          "needs_translation": false
+          "summary": "Der LASK hat sich durch einen 5:1-Sieg nach Verlängerung im Rückspiel gegen Celtic für die Champions League qualifiziert.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The wonder of Linz: LASK enters the premier class",
-          "summary": "The LASK makes the impossible possible and wins the second leg against Celtic 5-1 after extra time. This puts the Linz team in the Champions League.",
+          "title": "The miracle of Linz: LASK celebrates reaching the Champions League",
+          "summary": "LASK qualified for the Champions League following a 5-1 victory after extra time against Celtic in the second leg.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le miracle de Linz : LASK célèbre son entrée dans la catégorie reine",
-          "summary": "Le LASK rend l'impossible possible et remporte le match retour contre le Celtic 5:1 après prolongation. Ainsi, les Linzois sont en Ligue des Champions.",
+          "title": "Le miracle de Linz : LASK célèbre son accession en Champions League",
+          "summary": "LASK s'est qualifié pour la Champions League après sa victoire 5-1 après prolongation face à Celtic lors du match retour.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El milagro de Linz: LASK celebra su entrada en la categoría reina",
-          "summary": "El Lask hace posible lo imposible y gana el partido de vuelta contra el Celtic por 5-1 tras la prórroga. Por lo tanto, los Linz están en la Liga de Campeones.",
+          "title": "El milagro de Linz: LASK celebra su clasificación a la Champions League",
+          "summary": "LASK selló su clasificación a la Champions League tras imponerse por 5-1 a Celtic en la prórroga del partido de vuelta.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أعجوبة لينز: LASK تدخل الطبقة الأولى",
-          "summary": "LASK يجعل المستحيل ممكنا ويفوز في مباراة الذهاب ضد سلتيك 5-1 بعد وقت إضافي. هذا يضع فريق لينز في دوري أبطال أوروبا.",
+          "title": "معجزة لينتس: لاسك يحتفل بالتأهل إلى دوري أبطال أوروبا",
+          "summary": "تأهل لاسك النمساوي إلى دوري أبطال أوروبا بعد فوزه على سلتيك بنتيجة 5-1 بعد الوقت الإضافي في مباراة الإياب.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/lask-gegen-celtic-2026-champions-league-qualifikation-5254291/spielbericht#omrss",
@@ -755,7 +796,12 @@
           "url": "https://www.kicker.de/lask-gegen-celtic-2026-champions-league-qualifikation-5254291/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "aebf52de7c01",
@@ -763,25 +809,28 @@
       "summary": "El extremo de PSV sería el refuerzo de ataque Leer",
       "i18n": {
         "es": {
-          "title": "Couhaib Driouech : le Marocain rejoint le Celta Vigo (Officiel)",
-          "summary": "El extremo de PSV sería el refuerzo de ataque Leer",
-          "needs_translation": false
+          "title": "Couhaib Driouech: el marroquí se une al Celta Vigo (Oficial)",
+          "summary": "El extremo marroquí Couhaib Driouech se incorpora oficialmente al Celta Vigo procedente del PSV para reforzar su ataque.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Couhaib Driouech : le Marocain rejoint le Celta Vigo (Officiel)",
-          "summary": "El extremo de PSV sería el refuerzo de ataque Leer",
-          "needs_translation": true
+          "title": "Couhaib Driouech: Moroccan joins Celta Vigo (Official)",
+          "summary": "Moroccan winger Couhaib Driouech has officially joined Celta Vigo from PSV to reinforce the team's attack.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Couhaib Driouech : le Marocain rejoint le Celta Vigo (Officiel)",
-          "summary": "L'extrémité du PSV serait le renfort d'attaque Lire",
+          "title": "Couhaib Driouech : le Marocain rejoint le Celta Vigo (Officiel)",
+          "summary": "L'ailier marocain Couhaib Driouech quitte le PSV pour s'engager officiellement avec le Celta Vigo afin de renforcer son secteur offensif.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Couhaib Driouech : le Marocain rejoint le Celta Vigo (Officiel)",
-          "summary": "El extremo de PSV sería el refuerzo de ataque Leer",
-          "needs_translation": true
+          "title": "صهيب دريوش: المغربي ينضم إلى سيلتا فيغو (رسمياً)",
+          "summary": "انضم الجناح المغربي صهيب دريوش رسمياً إلى صفوف سيلتا فيغو قادماً من بي إس في آيندهوفن لتعزيز خط الهجوم.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.marca.com/futbol/celta/2026/08/23/celta-cerca-cerrar-fichaje-couhaib-driouech.html",
@@ -809,7 +858,12 @@
           "url": "https://africatopsports.com/maghreb/couhaib-driouech-le-marocain-rejoint-le-celta-vigo-officiel/"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c3ef39396840",
@@ -1237,7 +1291,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 2,
+        "quality": 1,
         "source_read": "skipped"
       }
     },
@@ -1248,26 +1302,27 @@
       "i18n": {
         "en": {
           "title": "'A huge award' - O'Reilly named PFA young player of the year",
-          "summary": "Manchester City and England full-back Nico O'Reilly says \"it feels amazing\" after receiving the 2026 PFA young player of the year award.",
-          "needs_translation": false
+          "summary": "Manchester City and England full-back Nico O'Reilly has been named the 2026 PFA Young Player of the Year.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "« Un énorme prix » - O'Reilly nommé jeune joueur de l'année de la PFA",
-          "summary": "L'arrière de Manchester City et de l'Angleterre Nico O'Reilly dit que « c'est incroyable » après avoir reçu le prix du jeune joueur de l'année 2026 de la PFA.",
+          "title": "« Une immense récompense » : O'Reilly élu jeune joueur de l'année par la PFA",
+          "summary": "Le latéral de Manchester City et de l'England Nico O'Reilly a été désigné jeune joueur de l'année 2026 par le syndicat des joueurs professionnels (PFA).",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "'Un gran premio' - O'Reilly nombrado Jugador Joven del Año de la PFA",
-          "summary": "El defensa del Manchester City e Inglaterra, Nico O'Reilly, dice que \"se siente increíble\" después de recibir el premio al jugador joven del año de la PFA de 2026.",
+          "title": "«Un gran premio»: O'Reilly, elegido jugador joven del año por la PFA",
+          "summary": "El lateral de Manchester City y de England Nico O'Reilly ha sido galardonado con el premio al mejor jugador joven del año 2026 por la PFA.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"جائزة ضخمة\" - حصل أورايلي على جائزة أفضل لاعب شاب في PFA لهذا العام",
-          "summary": "يقول الظهير الكامل لمانشستر سيتي وإنجلترا نيكو أورايلي \"إنه شعور رائع\" بعد حصوله على جائزة أفضل لاعب شاب لعام 2026.",
+          "title": "«جائزة كبرى».. أورايلي ينال جائزة أفضل لاعب شاب من رابطة اللاعبين المحترفين",
+          "summary": "توج ظهير مانشستر سيتي ومنتخب إنجلترا نيكو أورايلي بجائزة أفضل لاعب شاب لعام 2026، المقدمة من رابطة اللاعبين المحترفين الإنجليزية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/videos/cn74yyepggmo?at_medium=RSS&at_campaign=rss",
@@ -1289,7 +1344,12 @@
           "url": "https://www.bbc.co.uk/sport/football/videos/cn74yyepggmo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c0d6fbb1006b",
@@ -1343,7 +1403,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 2,
+        "quality": 3,
         "source_read": "skipped"
       }
     },
@@ -2409,44 +2469,44 @@
       "summary": "RCD Espanyol y Bayern ultiman detalles por Bryan Zaragoza (24 años), al que incluso se esperaba este martes en Barcelona para pasar el pertinente reconocimiento médico y convertirse en nuevo jugador perico.",
       "i18n": {
         "es": {
-          "title": "Bryan Zaragoza ultima su fichaje por el Espanyol",
-          "summary": "El Espanyol y el Bayern perfilan los últimos detalles para la cesión de Bryan Zaragoza, que firmará hasta 2032 si se ejecuta su compra.",
+          "title": "Bryan Zaragoza ultima su fichaje por el Espanyol hasta 2032",
+          "summary": "El Espanyol y el Bayern ultiman la cesión de Bryan Zaragoza con una opción de compra que vinculará al extremo hasta 2032.",
           "body": [
-            "La operación se cerrará mediante un préstamo que incluye una opción de compra de ocho millones de euros. Dicha cláusula quedará supeditada a que el extremo malagueño dispute un número determinado de partidos para cumplir con el 'fair play' financiero.",
-            "El atacante de 24 años descartó propuestas de Oriente Medio para volver a la liga española. Con esta venta aplazada, el Bayern recuperará la mayor parte de los 13 millones de euros que invirtió en su fichaje a principios de 2024."
+            "El acuerdo contempla un préstamo inicial y una opción de compra tasada en ocho millones de euros. Dicha cláusula quedará supeditada a que el futbolista dispute un número determinado de encuentros, una fórmula diseñada para encajar en los límites del control económico.",
+            "El atacante malagueño de 24 años descartó propuestas de Oriente Medio para volver al fútbol español. Por su parte, el Bayern de Múnich recuperará gran parte de los 13 millones de euros que desembolsó por su traspaso en 2024."
           ],
           "format": "deep",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "en": {
-          "title": "Bryan Zaragoza on the verge of joining Espanyol",
-          "summary": "Espanyol and Bayern are finalising the loan deal for Bryan Zaragoza, who will sign through to 2032 if his purchase option is activated.",
+          "title": "Bryan Zaragoza closing in on Espanyol move until 2032",
+          "summary": "Espanyol and Bayern are finalizing a loan deal for Bryan Zaragoza with a buy option running until 2032.",
           "body": [
-            "The transfer will go through as a loan featuring an eight-million-euro buyout clause. That option hinges on the Malaga-born winger reaching a set number of appearances, allowing the Catalan club to stay within financial fair play limits.",
-            "The 24-year-old forward turned down lucrative approaches from the Middle East to secure a return to LaLiga. Through this deferred sale, Bayern will recoup most of the 13 million euros they paid for him in early 2024."
+            "The agreement includes an initial loan and an eight-million-euro purchase option. That clause will be triggered if the winger makes a specific number of appearances, a formula designed to comply with financial control limits.",
+            "The 24-year-old forward rejected offers from the Middle East to return to Spanish football. Meanwhile, Bayern Munich will recoup a significant part of the 13 million euros spent on his transfer in 2024."
           ],
           "format": "deep",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Bryan Zaragoza tout proche de s'engager avec l'Espanyol",
-          "summary": "L'Espanyol et le Bayern règlent les derniers détails du prêt de Bryan Zaragoza, qui s'engagera jusqu'en 2032 si l'option d'achat est levée.",
+          "title": "Bryan Zaragoza tout proche de signer à l'Espanyol jusqu'en 2032",
+          "summary": "L'Espanyol et le Bayern finalisent le prêt de Bryan Zaragoza, assorti d'une option d'achat pour lier l'ailier au club catalan jusqu'en 2032.",
           "body": [
-            "L'accord porte sur un prêt assorti d'une option d'achat fixée à huit millions d'euros. Cette clause deviendra effective si l'ailier andalou dispute un certain nombre de matches, une formule pensée pour respecter les règles du fair-play financier.",
-            "L'attaquant de 24 ans a repoussé des offres venues du Moyen-Orient pour retrouver la Liga. Grâce à cette vente différée, le Bayern amortira l'essentiel des 13 millions d'euros déboursés pour son transfert début 2024."
+            "L'accord prévoit un prêt initial et une option d'achat fixée à huit millions d'euros. Cette clause sera conditionnée au nombre de matches disputés par l'ailier, un montage pensé pour respecter les règles du contrôle financier.",
+            "L'attaquant de 24 ans a repoussé des offres du Moyen-Orient afin de revenir en Liga. De son côté, le Bayern Munich récupérera une grande partie des 13 millions d'euros investis lors de son transfert en 2024."
           ],
           "format": "deep",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "ar": {
-          "title": "برايان ساراغوسا يقترب من حسم انتقاله إلى إسبانيول",
-          "summary": "يضع إسبانيول وبايرن ميونخ اللمسات الأخيرة على صفقة إعارة برايان ساراغوسا، الذي سيرتبط بعقد يمتد حتى عام 2032 في حال تفعيل بند الشراء.",
+          "title": "برايان ساراغوسا يقترب من الانضمام إلى إسبانيول حتى 2032",
+          "summary": "يضع إسبانيول وبايرن ميونخ اللمسات الأخيرة على إعارة برايان ساراغوسا مع خيار شراء يربط الجناح الإسباني بالنادي حتى عام 2032.",
           "body": [
-            "ستُحسم الصفقة على سبيل الإعارة مع خيار شراء بقيمة ثمانية ملايين يورو. وسيرتبط تفعيل هذا البند بخوض الجناح الإسباني عدداً محدداً من المباريات، تفادياً لمخالفة قواعد اللعب المالي النظيف.",
-            "ورفض المهاجم البالغ 24 عاماً عروضاً مغرية من الشرق الأوسط مفضلاً العودة إلى الدوري الإسباني. وستتيح هذه الصيغة لبايرن ميونخ استرداد النسبة الأكبر من مبلغ 13 مليون يورو الذي دفعه لضمه مطلع عام 2024."
+            "ينص الاتفاق على إعارة مبدئية مع خيار شراء محدد بقيمة ثمانية ملايين يورو. وسيكون هذا البند مشروطاً بخوض اللاعب عدداً معيناً من المباريات، في صيغة تهدف إلى التماشي مع لوائح الرقابة المالية.",
+            "ورفض المهاجم البالغ 24 عاماً عروضاً من الشرق الأوسط ليعود إلى الدوري الإسباني، في حين سيستعيد بايرن ميونخ جزءاً كبيراً من مبلغ الـ 13 مليون يورو الذي دفعه لضمه في 2024."
           ],
           "format": "deep",
           "needs_translation": false,
@@ -2475,8 +2535,16 @@
       "source_count": 1,
       "editorial": {
         "publish": true,
-        "quality": 6,
-        "source_read": "full"
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-26T00:02:54+00:00"
+        }
       }
     },
     {
