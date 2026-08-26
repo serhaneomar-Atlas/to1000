@@ -67,26 +67,27 @@
       "i18n": {
         "es": {
           "title": "La última victoria del Athletic en campo culé llegó con un alemán",
-          "summary": "El Athletic no gana en el campo del Barça desde hace más de 24 años. Fue el 24 de noviembre de 2001 curiosamente con un entrenador alemán al frente.",
-          "needs_translation": false
+          "summary": "El Athletic no gana como visitante frente al Barça desde hace más de 24 años. Su último triunfo data del 24 de noviembre de 2001, con un entrenador alemán al mando.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Athletic's last victory on the culé field came with a German",
-          "summary": "Athletic have not won on the Barça pitch for more than 24 years. It was on November 24, 2001, curiously enough, with a German coach at the helm.",
+          "title": "Athletic's last away win against Barça came under a German coach",
+          "summary": "Athletic have not won away against Barça in over 24 years. Their last victory was on November 24, 2001, under the guidance of a German manager.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La dernière victoire de l'Athletic sur le terrain culé est arrivée avec un Allemand",
-          "summary": "L'Athletic n'a pas gagné sur le terrain du Barça depuis plus de 24 ans. C'était le 24 novembre 2001 curieusement avec un entraîneur allemand à sa tête.",
+          "title": "La dernière victoire de l'Athletic sur le terrain du Barça remonte à un entraîneur allemand",
+          "summary": "L'Athletic ne s'est plus imposé sur le terrain du Barça depuis plus de 24 ans. Sa dernière victoire remonte au 24 novembre 2001, sous la houlette d'un entraîneur allemand.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "جاء آخر انتصار لأتلتيك في ملعب كولي مع ألماني",
-          "summary": "لم يفز الرياضي على ملعب برشلونة لأكثر من 24 عامًا. كان ذلك في 24 نوفمبر 2001، ومن الغريب بما فيه الكفاية، مع مدرب ألماني على رأس الفريق.",
+          "title": "آخر فوز لأتلتيك بيلباو على أرض برشلونة تحقق بقيادة مدرب ألماني",
+          "summary": "لم يحقق أتلتيك بيلباو أي انتصار على أرض برشلونة منذ أكثر من 24 عاماً، حيث يعود فوزه الأخير هناك إلى 24 نوفمبر 2001 تحت قيادة مدرب ألماني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260826/1004219739/ultima-victoria-athletic-campo-cule-llego-aleman.html",
@@ -108,7 +109,12 @@
           "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260826/1004219739/ultima-victoria-athletic-campo-cule-llego-aleman.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ce754fa1e3a7",
@@ -223,26 +229,27 @@
       "i18n": {
         "es": {
           "title": "El icónico número de Álex Gomes en el Venezia y su espera para debutar en la Serie A",
-          "summary": "No debutó Álex Gomes en el estreno liguero del Venezia en el Pierlugi Penzo el pasado lunes con derrota ante el Lecce por 0-2.",
-          "needs_translation": false
+          "summary": "Álex Gomes no debutó con el Venezia en la jornada inaugural de la Serie A, donde su equipo cayó derrotado por 0-2 ante el Lecce en el Pierlugi Penzo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Álex Gomes' iconic number at Venezia and his wait to make his Serie A debut",
-          "summary": "Álex Gomes did not make his debut in Venezia's league debut at Pierlugi Penzo last Monday with a 0-2 defeat to Lecce.",
+          "title": "Álex Gomes' iconic number at Venezia and his wait to debut in Serie A",
+          "summary": "Álex Gomes did not make his debut for Venezia in their Serie A opener, as his team suffered a 0-2 home defeat against Lecce at the Pierlugi Penzo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le numéro emblématique d'Álex Gomes à Venise et son attente pour débuter en Serie A",
-          "summary": "Álex Gomes n'a pas fait ses débuts à la première ligue de Venise au Pierlugi Penzo lundi dernier avec une défaite contre Lecce 0-2.",
+          "title": "Le numéro emblématique d'Álex Gomes à Venezia et son attente pour débuter en Serie A",
+          "summary": "Álex Gomes n'a pas fait ses débuts avec Venezia lors de la première journée de Serie A, conclue par une défaite 0-2 à domicile face à Lecce au Pierlugi Penzo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "رقم أليكس غوميز الأيقوني في فينيسيا وانتظاره ليظهر لأول مرة في دوري الدرجة الأولى الإيطالي",
-          "summary": "لم يشارك أليكس غوميز لأول مرة في أول مباراة له في دوري فينيسيا في بييرلوجي بنزو يوم الاثنين الماضي مع هزيمة 0-2 أمام ليتشي.",
+          "title": "رقم أليكس غوميز المميز في فينيزيا وانتظاره للظهور الأول في الدوري الإيطالي",
+          "summary": "لم يسجل أليكس غوميز ظهوره الأول مع فينيزيا في افتتاح الدوري الإيطالي، حيث خسر فريقه بنتيجة 0-2 أمام ليتشي على ملعب بييرلوجي بينزو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/iconico-numero-alex-gomes-venezia-133659991?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -264,7 +271,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/iconico-numero-alex-gomes-venezia-133659991?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "61260118cd3e",
@@ -273,26 +285,27 @@
       "i18n": {
         "es": {
           "title": "El reto histórico de Lamine ante el Athletic: los 50 goles",
-          "summary": "Lamine Yamal (19 años) está escribiendo una trayectoria que, por edad, resulta excepcional.",
-          "needs_translation": false
+          "summary": "Lamine Yamal afronta el partido frente al Athletic con el objetivo de alcanzar los 50 goles en su carrera a una edad temprana.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Lamine's historic challenge against Athletic: the 50 goals",
-          "summary": "Lamine Yamal (19 years old) is writing a trajectory that, due to her age, is exceptional.",
+          "title": "Lamine's historic challenge against Athletic: 50 goals",
+          "summary": "Against Athletic, Lamine Yamal aims to reach the milestone of 50 career goals at an exceptionally young age.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le défi historique de Lamine face à l'Athletic : les 50 buts",
-          "summary": "Lamine Yamal (19 ans) est en train d'écrire une trajectoire qui, en raison de son âge, est exceptionnelle.",
+          "title": "Le défi historique de Lamine face à l'Athletic : les 50 buts",
+          "summary": "Face à l'Athletic, Lamine Yamal a l'opportunité d'atteindre le cap des 50 buts en carrière malgré son jeune âge.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "التحدي التاريخي للامين ضد الرياضيين: الأهداف الخمسين",
-          "summary": "تكتب لامين يامال (19 عامًا) مسارًا استثنائيًا بسبب عمرها.",
+          "title": "تحدٍ تاريخي للامين أمام أتلتيك: 50 هدفاً",
+          "summary": "يسعى لامين يامال للوصول إلى حاجز 50 هدفاً في مسيرته خلال مواجهة أتلتيك، مواصلاً أرقامه القياسية في سن مبكرة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219770/reto-historico-lamine-athletic-50-goles.html",
@@ -314,7 +327,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219770/reto-historico-lamine-athletic-50-goles.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "035c1616acd9",
@@ -323,26 +341,27 @@
       "i18n": {
         "en": {
           "title": "Quickfire Quiz 188: Can you answer 10 questions in 90 seconds?",
-          "summary": "Tackle these 10 football trivia questions about Neymar, Australia, eternal champions, and more!",
-          "needs_translation": false
+          "summary": "A football quiz featuring 10 trivia questions on topics including Neymar, Australia, and eternal champions, to be completed in 90 seconds.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Quickfire Quiz 188 : Pouvez-vous répondre à 10 questions en 90 secondes ?",
-          "summary": "Répondez à ces 10 questions de football sur Neymar, l'Australie, les champions éternels et plus encore !",
+          "title": "Quickfire Quiz 188 : Pouvez-vous répondre à 10 questions en 90 secondes ?",
+          "summary": "Un quiz de football propose 10 questions portant notamment sur Neymar, Australia et d'autres sujets, à résoudre en 90 secondes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Prueba de Quickfire 188: ¿Puedes responder 10 preguntas en 90 segundos?",
-          "summary": "¡Aborda estas 10 preguntas triviales de fútbol sobre Neymar, Australia, campeones eternos y más!",
+          "title": "Quickfire Quiz 188: ¿Puedes responder 10 preguntas en 90 segundos?",
+          "summary": "Un cuestionario de fútbol incluye 10 preguntas sobre Neymar, Australia y otros temas para responder en un límite de 90 segundos.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "اختبار Quickfire 188: هل يمكنك الإجابة على 10 أسئلة في 90 ثانية ؟",
-          "summary": "عالج هذه الأسئلة العشرة المتعلقة بكرة القدم حول نيمار وأستراليا والأبطال الأبديين والمزيد!",
+          "title": "اختبار سريع 188: هل يمكنك الإجابة عن 10 أسئلة في 90 ثانية؟",
+          "summary": "مسابقة معلومات كروية تتضمن 10 أسئلة حول نيمار ومنتخب أستراليا وأبطال تاريخيين للإجابة عنها في غضون 90 ثانية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-188",
@@ -364,7 +383,12 @@
           "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-188"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "42e2ceae2cbb",
@@ -373,26 +397,27 @@
       "i18n": {
         "es": {
           "title": "Esteladas: poca broma",
-          "summary": "Nueva Liga, viejos vicios. La Policía Nacional sigue requisando banderas independentistas a los aficionados del Barça que pretenden entrarlas en los estadios españoles.",
-          "needs_translation": false
+          "summary": "Con el inicio de la Nueva Liga, la Policía Nacional continúa confiscando banderas independentistas a los aficionados del Barça que intentan introducirlas en los estadios españoles.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Star-studded: little joke",
-          "summary": "New League, old vices. The National Police continues to seize pro-independence flags from Barça fans who intend to enter them in Spanish stadiums.",
+          "title": "Esteladas: no joke",
+          "summary": "At the start of the Nueva Liga, the Policía Nacional continues to confiscate Esteladas from Barça fans attempting to enter Spanish stadiums with them.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Étoilées : peu de plaisanterie",
-          "summary": "Nouvelle Ligue, vieux vices. La police nationale continue de réquisitionner des drapeaux indépendantistes aux supporters du Barça qui cherchent à les faire entrer dans les stades espagnols.",
+          "title": "Esteladas : pas de plaisanterie",
+          "summary": "Au début de la Nueva Liga, la Policía Nacional continue de confisquer les Esteladas aux supporters du Barça qui tentent de les introduire dans les stades espagnols.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مرصع بالنجوم: نكتة صغيرة",
-          "summary": "عصبة جديدة، رذائل قديمة. تواصل الشرطة الوطنية الاستيلاء على الأعلام المؤيدة للاستقلال من مشجعي برشلونة الذين يعتزمون دخولها في الملاعب الإسبانية.",
+          "title": "أعلام استقلال كتالونيا: الأمر ليس مزحة",
+          "summary": "مع انطلاق الموسم الجديد من الدوري الإسباني، تواصل الشرطة الوطنية مصادرة أعلام استقلال كتالونيا من جماهير برشلونة أثناء محاولتهم إدخالها إلى الملاعب.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219733/estaladas-poca-broma.html",
@@ -414,7 +439,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219733/estaladas-poca-broma.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "bc72918d80e7",
@@ -523,26 +553,27 @@
       "i18n": {
         "es": {
           "title": "Dos misiles en las bandas",
-          "summary": "Cuando se anunció el fichaje de Gordon más de uno – y me incluyo – se sorprendió por inesperado, pero también porque la banda izquierda del ataque del Barça parecía bien cubierta. A los pocos días, en el Mundial, Gordon fue detectado en un esprint a 37,92 km/h.",
-          "needs_translation": false
+          "summary": "Pese a las dudas iniciales sobre la necesidad de reforzar la banda izquierda del Barça, el recién fichado Gordon destacó en el Mundial al alcanzar una velocidad punta de 37,92 km/h.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Two missiles in the bands",
-          "summary": "When Gordon's signing was announced more than once – and I include myself – he was surprised by the unexpected, but also because the left wing of Barça's attack seemed well covered. A few days later, at the World Cup, Gordon was detected in a sprint at 37.92 km/h.",
+          "title": "Two missiles on the wings",
+          "summary": "Despite initial doubts regarding Barça's need for another left winger, new signing Gordon stood out at the Mundial by clocking a top sprint speed of 37.92 km/h.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Deux missiles sur les bandes",
-          "summary": "Lorsque la signature de Gordon a été annoncée, plus d'un – et je m'inclus – a été surpris par l'inattendu, mais aussi parce que la partie gauche de l'attaque du Barça semblait bien couverte. Quelques jours plus tard, lors de la Coupe du Monde, Gordon a été détecté lors d'un sprint à 37,92 km/h.",
+          "title": "Deux missiles sur les ailes",
+          "summary": "Malgré les doutes initiaux entourant son arrivée au Barça sur une aile gauche déjà fournie, Gordon a brillé au Mundial en atteignant une vitesse de 37,92 km/h en sprint.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "قذيفتان في العصابات",
-          "summary": "عندما تم الإعلان عن توقيع جوردون أكثر من مرة – وأنا أضم نفسي – فوجئ بما هو غير متوقع، ولكن أيضًا لأن الجناح الأيسر من هجوم برشلونة بدا مغطى جيدًا. بعد بضعة أيام، في كأس العالم، تم اكتشاف جوردون في سباق بسرعة 37.92 كم/ساعة.",
+          "title": "صاروخان على الأطراف",
+          "summary": "رغم الشكوك الأولية حول حاجة برشلونة لتعزيز الجناح الأيسر، أثبت الوافد الجديد جوردون جاهزيته بعدما سجل سرعة بلغت 37.92 كم/ساعة خلال انطلاقة سريعة في كأس العالم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219716/dos-misiles-bandas.html",
@@ -564,7 +595,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219716/dos-misiles-bandas.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "53017ad09f58",
@@ -573,26 +609,27 @@
       "i18n": {
         "es": {
           "title": "Noche de morbo en el Bernabéu",
-          "summary": "Esta noche es especial en el anteriormente conocido estadio Santiago Bernabéu y que ahora sólo se ha quedado con el apellido.",
-          "needs_translation": false
+          "summary": "El estadio Bernabéu, anteriormente conocido como Santiago Bernabéu, vive una noche especial cargada de expectación e interés.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Morbid night at the Bernabeu",
-          "summary": "Tonight is special at the previously well-known Santiago Bernabéu stadium, which has now only kept its last name.",
+          "title": "High-intrigue night at the Bernabéu",
+          "summary": "The Bernabéu stadium, formerly known as the Santiago Bernabéu, hosts a special night surrounded by immense anticipation.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Nuit morbide au Bernabéu",
-          "summary": "Ce soir, il est spécial dans l'ancien stade Santiago Bernabéu, qui n'a plus que son nom de famille.",
+          "title": "Soirée sous tension au Bernabéu",
+          "summary": "Le stade Bernabéu, anciennement connu sous le nom de Santiago Bernabéu, s'apprête à accueillir une soirée spéciale marquée par une forte attente.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ليلة مرضية في برنابيو",
-          "summary": "الليلة مميزة في ملعب سانتياغو برنابيو المعروف سابقًا، والذي احتفظ الآن باسمه الأخير فقط.",
+          "title": "ليلة مثيرة للجدل في البرنابيو",
+          "summary": "يشهد ملعب سانتياغو برنابيو، الذي بات يُعرف باسم البرنابيو فقط، ليلة خاصة وسط حالة كبيرة من الترقب والإثارة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260826/1004219674/noche-morbo-bernabeu.html",
@@ -614,7 +651,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260826/1004219674/noche-morbo-bernabeu.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "20ddff64987a",
@@ -673,26 +715,27 @@
       "i18n": {
         "es": {
           "title": "La historia del 'toffee' Andy Burnham",
-          "summary": "Algunas veces se producen gestos de los políticos que resultan más explícitos sobre su personalidad y empatía con los ciudadanos que sus simples declaraciones públicas.",
-          "needs_translation": false
+          "summary": "Los gestos de los políticos a menudo reflejan mejor su personalidad y empatía hacia los ciudadanos que sus declaraciones públicas, como ejemplifica el seguidor del Everton Andy Burnham.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The Story of Andy Burnham Toffee",
-          "summary": "Sometimes there are gestures from politicians that are more explicit about their personality and empathy with citizens than their simple public statements.",
+          "title": "The story of 'toffee' Andy Burnham",
+          "summary": "A politician's actions often reflect their personality and empathy toward citizens better than public statements, as shown by Everton supporter Andy Burnham.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "L'histoire du toffee Andy Burnham",
-          "summary": "Parfois, il y a des gestes des politiciens qui sont plus explicites sur leur personnalité et leur empathie envers les citoyens que leurs simples déclarations publiques.",
+          "title": "L'histoire du « toffee » Andy Burnham",
+          "summary": "Les actes des responsables politiques révèlent souvent mieux leur personnalité et leur empathie envers les citoyens que leurs discours officiels, à l'image du supporter d'Everton Andy Burnham.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "قصة أندي بورنهام توفي",
-          "summary": "في بعض الأحيان تكون هناك إيماءات من السياسيين أكثر وضوحًا بشأن شخصيتهم وتعاطفهم مع المواطنين من تصريحاتهم العامة البسيطة.",
+          "title": "قصة مشجع إيفرتون أندي بيرنهام",
+          "summary": "تعكس مواقف السياسيين شخصيتهم وتعاطفهم مع المواطنين بصورة أوضح من تصريحاتهم العلنية، كما يتجلى في قصة مشجع إيفرتون أندي بيرنهام.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260826/1004219611/historia-toffee-andy-burnham.html",
@@ -714,7 +757,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260826/1004219611/historia-toffee-andy-burnham.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a13b2ec7cd73",
@@ -773,26 +821,27 @@
       "i18n": {
         "es": {
           "title": "A dar la sorpresa ante Mourinho y el Bernabéu",
-          "summary": "La Real Sociedad se mete esta noche en la boca del lobo, la del Real Madrid. Tiene ante sí un reto mayúsculo sin estar en plenitud para afrontarlo, ni de confianza, ni de forma, pero con la ilusión intacta.",
-          "needs_translation": false
+          "summary": "La Real Sociedad visita esta noche al Real Madrid de Mourinho en el Bernabéu, con el objetivo de dar la sorpresa pese a no llegar en su mejor momento.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "To surprise Mourinho and the Bernabeu",
-          "summary": "The Real Sociedad gets into the mouth of the wolf tonight, that of Real Madrid. He faces a major challenge without being fully able to face it, neither in confidence, nor in form, but with the illusion intact.",
+          "title": "Looking to spring a surprise against Mourinho and the Bernabéu",
+          "summary": "Real Sociedad visit Mourinho's Real Madrid at the Bernabéu tonight, aiming to pull off an upset despite entering the match short of full confidence and form.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Surprise face à Mourinho et Bernabeu",
-          "summary": "La Real Sociedad se glisse ce soir dans la gueule du loup, celle du Real Madrid. Vous avez devant vous un défi majeur sans être en mesure d'y faire face, ni de confiance, ni de forme, mais avec l'illusion intacte.",
+          "title": "Créer la surprise face à Mourinho et au Bernabéu",
+          "summary": "La Real Sociedad affronte ce soir le Real Madrid de Mourinho au Bernabéu, cherchant à créer la surprise malgré une forme et une confiance fragiles.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "لمفاجأة مورينيو وبرنابيو",
-          "summary": "يدخل ريال سوسيداد في فم الذئب الليلة، فم ريال مدريد. إنه يواجه تحديًا كبيرًا دون أن يكون قادرًا تمامًا على مواجهته، لا في الثقة ولا في الشكل، ولكن مع الوهم السليم.",
+          "title": "ريال سوسيداد يبحث عن مفاجأة أمام مورينيو والبرنابيو",
+          "summary": "يحل ريال سوسيداد ضيفاً الليلة على ريال مدريد بقيادة مورينيو في البرنابيو، ساعياً لتحقيق المفاجأة رغم عدم مروره بأفضل فتراته الفنية والبدنية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260826/1004219723/dar-sorpresa-mourinho-bernabeu.html",
@@ -814,7 +863,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260826/1004219723/dar-sorpresa-mourinho-bernabeu.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3f510ee3404d",
@@ -873,26 +927,27 @@
       "i18n": {
         "es": {
           "title": "Espart modifica el 'mercato'",
-          "summary": "H ansi Flick acostumbra a abrir mucho los ojos cuando algo le sorprende o le maravilla. Es una respuesta innata a la emoción.",
-          "needs_translation": false
+          "summary": "La irrupción de Espart altera los planes de mercado tras captar la atención y sorprender al entrenador Hansi Flick.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Espart modifies the 'market'",
-          "summary": "H ansi Flick tends to open her eyes a lot when something surprises or amazes her. It is an innate response to emotion.",
+          "title": "Espart modifies the transfer window",
+          "summary": "Espart's emergence is reshaping transfer market plans, catching the attention and surprising manager Hansi Flick.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Espart modifie le « marché »",
-          "summary": "H ansi Flick a l'habitude d'ouvrir beaucoup les yeux quand quelque chose le surprend ou l'émerveille. C'est une réponse innée à l'émotion.",
+          "title": "Espart modifie le mercato",
+          "summary": "L'émergence d'Espart bouscule les plans du mercato et suscite l'étonnement de l'entraîneur Hansi Flick.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تقوم إسبارت بتعديل \"السوق\"",
-          "summary": "تميل هاني فليك إلى فتح عينيها كثيرًا عندما يفاجئها شيء ما أو يدهشها. إنها استجابة فطرية للعاطفة.",
+          "title": "إسبارت يغير خطط الميركاتو",
+          "summary": "غيّر بروز إسبارت خطط سوق الانتقالات بعدما لفت انتباه المدرب هانزي فليك وأثار دهشته.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219785/espart-modifica-mercato.html",
@@ -914,7 +969,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219785/espart-modifica-mercato.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0aa10fdb77cc",
@@ -964,7 +1024,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219783/verano-loco-porteria-barca-cinco-salidas-eder-e-iker-expectativa-livakovic.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "68dcf006c34d",
@@ -973,26 +1038,27 @@
       "i18n": {
         "es": {
           "title": "El Barça comienza siendo el mejor",
-          "summary": "Hemos vuelto a la vida cotidiana de La Liga, aunque con algunos cambios significativos.",
-          "needs_translation": false
+          "summary": "El Barça inicia la temporada de La Liga situándose en cabeza, en una reanudación del campeonato marcada por cambios significativos.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Barça starts by being the best",
-          "summary": "We have returned to the daily life of La Liga, albeit with some significant changes.",
+          "title": "Barça start as the best",
+          "summary": "Barça have started the La Liga campaign at the top, as the league returns to action with several notable changes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le Barça commence par être le meilleur",
-          "summary": "Nous sommes revenus à la vie quotidienne de La Liga, bien qu'avec quelques changements significatifs.",
+          "title": "Le Barça commence en tête",
+          "summary": "Le Barça entame la saison de Liga en occupant les devants, lors d'une reprise du championnat marquée par plusieurs changements notables.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يبدأ برشلونة بكونه الأفضل",
-          "summary": "لقد عدنا إلى الحياة اليومية للدوري الإسباني، وإن كان ذلك مع بعض التغييرات الهامة.",
+          "title": "برشلونة يستهل الموسم في الصدارة",
+          "summary": "بدأ نادي برشلونة منافسات الدوري الإسباني بأفضل طريقة ممكنة، مع استئناف البطولة وسط تغييرات بارزة هذا الموسم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219722/barca-comienza-siendo-mejor.html",
@@ -1014,7 +1080,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260826/1004219722/barca-comienza-siendo-mejor.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "aef9a5b1f651",
@@ -1023,26 +1094,27 @@
       "i18n": {
         "fr": {
           "title": "Très apprécié par José Mourinho et déjà bien intégré, Ibrahima Konaté est déterminé à se relancer au Real Madrid",
-          "summary": "Recruté libre cet été par le Real Madrid, qui reçoit la Real Sociedad ce mercredi en Liga (21 heures), Ibrahima Konaté veut rebondir après une saison difficile à Liverpool.",
-          "needs_translation": false
+          "summary": "Arrivé libre de Liverpool cet été, Ibrahima Konaté cherche à se relancer au Real Madrid, qui affronte la Real Sociedad ce mercredi en Liga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Much appreciated by José Mourinho and already well integrated, Ibrahima Konaté is determined to relaunch himself at Real Madrid",
-          "summary": "Recruited free this summer by Real Madrid, which hosts Real Sociedad this Wednesday in La Liga (9 p.m.), Ibrahima Konaté wants to bounce back after a difficult season in Liverpool.",
+          "title": "Highly rated by José Mourinho and already well integrated, Ibrahima Konaté is determined to bounce back at Real Madrid",
+          "summary": "Signed on a free transfer from Liverpool this summer, Ibrahima Konaté aims to revive his career at Real Madrid as the club hosts Real Sociedad in Liga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Muy apreciado por José Mourinho y ya bien integrado, Ibrahima Konaté está decidido a relanzarse en el Real Madrid",
-          "summary": "Reclutado libre este verano por el Real Madrid, que recibe a la Real Sociedad este miércoles en Liga (21:00), Ibrahima Konaté quiere recuperarse después de una temporada difícil en Liverpool.",
+          "title": "Muy valorado por José Mourinho y ya bien integrado, Ibrahima Konaté está decidido a relanzarse en el Real Madrid",
+          "summary": "Llegado libre procedente de Liverpool este verano, Ibrahima Konaté busca relanzar su carrera en el Real Madrid, que recibe a la Real Sociedad en Liga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يحظى بتقدير كبير من قبل خوسيه مورينيو ومتكامل بالفعل، إبراهيم كوناتي مصمم على إعادة إطلاق نفسه في ريال مدريد",
-          "summary": "تم تجنيده مجانًا هذا الصيف من قبل ريال مدريد، الذي يستضيف ريال سوسيداد هذا الأربعاء في الدوري الإسباني (الساعة 9 مساءً)، ويريد إبراهيما كوناتي العودة بعد موسم صعب في ليفربول.",
+          "title": "يحظى بتقدير جوزيه مورينيو وتأقلم سريعا.. إبراهيما كوناتي عازم على استعادة بريقه في ريال مدريد",
+          "summary": "يسعى إبراهيما كوناتي لإنعاش مسيرته مع ريال مدريد بعد انضمامه مجانا من ليفربول، وذلك قبل مواجهة ريال سوسيداد في الدوري الإسباني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Article/Tres-apprecie-par-mourinho-et-deja-bien-integre-ibrahima-konate-est-determine-a-se-relancer-au-real-madrid/1713482#at_medium=RSS_feeds",
@@ -1064,7 +1136,12 @@
           "url": "https://www.lequipe.fr/Football/Article/Tres-apprecie-par-mourinho-et-deja-bien-integre-ibrahima-konate-est-determine-a-se-relancer-au-real-madrid/1713482#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "156ba413c1da",
@@ -1073,26 +1150,27 @@
       "i18n": {
         "es": {
           "title": "Tic tac, tic tac... las horas nerviosas",
-          "summary": "Los clubes de la Liga han dispuesto de tres largos meses, desde que concluyó la pasada temporada, para realizar los movimientos que consideraran oportunos, a fin de apuntalar sus respectivos planteles.",
-          "needs_translation": false
+          "summary": "Tras tres meses de mercado desde la conclusión de la temporada pasada, los clubes de la Liga encaran las últimas horas para reforzar y completar sus plantillas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Tick tock, tick tock... the nervous hours",
-          "summary": "The La Liga clubs have had three long months, since the end of last season, to make the moves they consider appropriate, in order to shore up their respective teams.",
+          "title": "Tick-tock, tick-tock... the nervous hours",
+          "summary": "Following three months of the transfer window since last season concluded, Liga clubs face the final hours to finalize and reinforce their squads.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Tic tac, tic tac... les heures nerveuses",
-          "summary": "Les clubs de la Liga ont disposé de trois longs mois, depuis la fin de la saison dernière, pour effectuer les mouvements qu'ils jugent appropriés, afin de soutenir leurs installations respectives.",
+          "title": "Tic-tac, tic-tac... les heures d'angoisse",
+          "summary": "Après trois mois de mercato depuis la fin de la saison dernière, les clubs de Liga abordent les dernières heures pour finaliser et renforcer leurs effectifs.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تيك توك، تيك توك... الساعات العصبية",
-          "summary": "كان لدى أندية الدوري الإسباني ثلاثة أشهر طويلة، منذ نهاية الموسم الماضي، لاتخاذ الخطوات التي يرونها مناسبة، من أجل دعم فرقهم.",
+          "title": "تيك تاك، تيك تاك... الساعات الأخيرة الحاسمة",
+          "summary": "بعد ثلاثة أشهر من سوق الانتقالات منذ نهاية الموسم الماضي، تسابق أندية الدوري الإسباني الوقت في الساعات الأخيرة لإتمام تعاقداتها وتدعيم صفوفها.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260826/1004219655/tic-tac-tic-tac-horas-nerviosas.html",
@@ -1114,7 +1192,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260826/1004219655/tic-tac-tic-tac-horas-nerviosas.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5c8bb7ba6268",
@@ -1123,26 +1206,27 @@
       "i18n": {
         "es": {
           "title": "Portada de hoy de la Edición Bizkaia-Araba de Mundo Deportivo",
-          "summary": "El duelo que vivirán mañana los alemanes Hansi Flick y Edin Terzic al frente de Barça y Athletic protagoniza la portada de la Edición Bizkaia-Araba de Mundo Deportivo del miércoles 26 de agosto de 2026.",
-          "needs_translation": false
+          "summary": "El duelo entre los técnicos alemanes Hansi Flick y Edin Terzic al frente de Barça y Athletic protagoniza la portada de la Edición Bizkaia-Araba de Mundo Deportivo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Today's cover of the Bizkaia-Araba Edition of Mundo Deportivo",
-          "summary": "The duel that the Germans Hansi Flick and Edin Terzic will experience tomorrow at the head of Barça and Athletic stars on the cover of the Bizkaia-Araba Edition of Mundo Deportivo on Wednesday, August 26, 2026.",
+          "title": "Today's front page of the Edición Bizkaia-Araba of Mundo Deportivo",
+          "summary": "The clash between German managers Hansi Flick and Edin Terzic leading Barça and Athletic is featured on the front page of the Edición Bizkaia-Araba of Mundo Deportivo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Couverture d'aujourd' hui de l'édition Bizkaia-Araba de Mundo Deportivo",
-          "summary": "Le duel que vivront demain les Allemands Hansi Flick et Edin Terzic à la tête du Barça et de l'Athletic fait la une de l'édition Bizkaia-Araba de Mundo Deportivo du mercredi 26 août 2026.",
+          "title": "La une du jour de l'Edición Bizkaia-Araba de Mundo Deportivo",
+          "summary": "Le duel entre les entraîneurs allemands Hansi Flick et Edin Terzic sur les bancs de Barça et de Athletic fait la une de l'Edición Bizkaia-Araba de Mundo Deportivo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "غلاف اليوم لطبعة Bizkaia - Araba من Mundo Deportivo",
-          "summary": "المبارزة التي سيخوضها الألمانيان هانسي فليك وإدين تيرزيتش غدًا على رأس نجوم برشلونة وأتلتيك على غلاف نسخة بيزكايا- أرابا من موندو ديبورتيفو يوم الأربعاء 26 أغسطس 2026.",
+          "title": "غلاف اليوم لنسخة بيسكايا-أرابا من موندو ديبورتيفو",
+          "summary": "تصدّرت المواجهة بين المدربين الألمانيين هانزي فليك وإدين تيرزيتش على رأس برشلونة وأتلتيك بيلباو غلاف نسخة بيسكايا-أرابا من صحيفة موندو ديبورتيفو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260826/1004219724/portada-hoy-edicion-bizkaia-araba-mundo-deportivo.html",
@@ -1164,7 +1248,12 @@
           "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260826/1004219724/portada-hoy-edicion-bizkaia-araba-mundo-deportivo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "608e06fab7fa",
@@ -1335,7 +1424,17 @@
           "url": "https://fr.hespress.com/486103-ac-milan-a-15-ans-le-marocain-akram-jadid-sentraine-deja-avec-les-professionnels.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-26T06:04:34+00:00"
+        }
+      }
     },
     {
       "id": "c172339ba05a",
@@ -1344,26 +1443,27 @@
       "i18n": {
         "es": {
           "title": "Copa Libertadores: la llave completa de cuartos y los caminos de Estudiantes y Platense",
-          "summary": "Independiente del Valle fue el último en pasar de fase: cuatro brasileños, dos argentinos y dos ecuatorianos van por la Gloria Eterna.",
-          "needs_translation": false
+          "summary": "Independiente del Valle completó el cuadro de cuartos de final de la Copa Libertadores. La fase contará con cuatro clubes brasileños, dos argentinos y dos ecuatorianos.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Copa Libertadores: the complete key to the rooms and the paths of Estudiantes and Platense",
-          "summary": "Independiente del Valle was the last to pass through the phase: four Brazilians, two Argentines and two Ecuadorians are going for the Eternal Glory.",
+          "title": "Copa Libertadores: the complete quarter-final bracket and paths for Estudiantes and Platense",
+          "summary": "Independiente del Valle became the last team to qualify for the Copa Libertadores quarter-finals. The last eight features four Brazilian, two Argentine, and two Ecuadorian clubs.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Copa Libertadores : la clé complète des quartiers et les chemins des étudiants et de Platense",
-          "summary": "Independiente del Valle a été le dernier à passer de phase : quatre Brésiliens, deux Argentins et deux Équatoriens partent pour la Gloire Éternelle.",
+          "title": "Copa Libertadores : le tableau complet des quarts et les parcours d'Estudiantes et Platense",
+          "summary": "Independiente del Valle est le dernier qualifié pour les quarts de finale de la Copa Libertadores. Le tableau réunit quatre clubs brésiliens, deux argentins et deux équatoriens.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كأس ليبرتادوريس: المفتاح الكامل لغرف ومسارات استوديانتس وبلاتينس",
-          "summary": "كان إنديبندينتي ديل فالي آخر من اجتاز هذه المرحلة: أربعة برازيليين وأرجنتينيين واثنين من الإكوادوريين سيذهبون إلى المجد الأبدي.",
+          "title": "كوبا ليبرتادوريس: الجدول الكامل لربع النهائي ومسار إستوديانتيس وبلاتينسي",
+          "summary": "أكمل إنديبندينتي ديل فال عقد المتأهلين إلى ربع نهائي كأس كوبا ليبرتادوريس. وتضم المرحلة أربعة أندية برازيلية، وفريقين من الأرجنتين، وآخرين من الإكوادور.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/libertadores/copa-libertadores-llave-completa-cuartos-final-2026_0_uAfgFNx531.html",
@@ -1385,7 +1485,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/libertadores/copa-libertadores-llave-completa-cuartos-final-2026_0_uAfgFNx531.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "dcd636802d0e",
@@ -1394,26 +1499,27 @@
       "i18n": {
         "es": {
           "title": "Los cuartos de la Copa Brasil: tres clásicos y 19 millones de dólares al campeón",
-          "summary": "Cruzeiro empató con Atlético Mineiro en el arranque de los cuartos: se vienen Palmeiras-Santos e Inter Gremio. Los dos finalistas van a la Libertadores.",
-          "needs_translation": false
+          "summary": "Tras el empate entre Cruzeiro y Atlético Mineiro en cuartos de Copa Brasil, restan los cruces Palmeiras-Santos e Inter Gremio. El campeón recibirá 19 millones de dólares y los dos finalistas clasificarán a la Libertadores.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The quarters of the Brazil Cup: three classics and 19 million dollars to the champion",
-          "summary": "Cruzeiro tied with Atlético Mineiro at the start of the quarters: Palmeiras-Santos and Inter Gremio are coming. The two finalists go to the Libertadores.",
+          "title": "Copa Brasil quarter-finals: three derbies and $19 million for the champion",
+          "summary": "Following Cruzeiro's draw with Atlético Mineiro in the Copa Brasil quarter-finals, Palmeiras-Santos and Inter Gremio are up next. The champion will earn $19 million, with both finalists qualifying for the Libertadores.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Les quarts de la Coupe du Brésil : trois classiques et 19 millions de dollars au champion",
-          "summary": "Cruzeiro a égalisé avec l'Atlético Mineiro au début des quarts : Palmeiras-Santos et Inter Gremio arrivent. Les deux finalistes vont à la Libertadores.",
+          "title": "Les quarts de la Copa Brasil : trois derbys et 19 millions de dollars pour le vainqueur",
+          "summary": "Après le nul entre Cruzeiro et Atlético Mineiro en quarts de Copa Brasil, Palmeiras-Santos et Inter Gremio complètent le tableau. Le vainqueur touchera 19 millions de dollars et les finalistes iront en Libertadores.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أرباع كأس البرازيل: ثلاثة كلاسيكيات و 19 مليون دولار للبطل",
-          "summary": "تعادل كروزيرو مع أتلتيكو مينيرو في بداية الربع: بالميراس سانتوس وإنتر غريميو قادمان. المتسابقان النهائيان يذهبان إلى ليبرتادوريس.",
+          "title": "ربع نهائي كأس البرازيل: ثلاثة ديربيات و19 مليون دولار للبطل",
+          "summary": "افتُتح ربع نهائي كأس البرازيل بتعادل كروزيرو مع أتلتيكو مينيرو، وتتواصل المنافسات بمواجهتي بالميراس ضد سانتوس وإنتر ضد غريميو. سيحصل البطل على 19 مليون دولار، ويتأهل طرفا النهائي إلى كوبا ليبرتادوريس.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/america/copa-brasil-cuartos-llave-millonaria-libertadores_0_i8Ed22lnJF.html",
@@ -1435,7 +1541,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/america/copa-brasil-cuartos-llave-millonaria-libertadores_0_i8Ed22lnJF.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "617b749cf57f",
@@ -1444,26 +1555,27 @@
       "i18n": {
         "es": {
           "title": "El partido del año: todo lo que se juega River en 90' en la Sudamericana",
-          "summary": "Con poco margen en el torneo local, el Millo va a todo o nada ante Independiente Santa Fe: una eliminación podría derivar en la salida del DT y en meses pesados. Cueste lo que cueste...",
-          "needs_translation": false
+          "summary": "River se juega su futuro en la Copa Sudamericana ante Independiente Santa Fe. Una eliminación complicaría su temporada y podría sentenciar la salida del entrenador tras los malos resultados locales.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Match of the year: everything that River plays in 90' in the South American",
-          "summary": "With little margin in the local tournament, Millo goes all or nothing against Independiente Santa Fe: a elimination could lead to the departure of the coach and heavy months. Whatever it takes...",
+          "title": "The match of the year: everything River is playing for in 90' in the Sudamericana",
+          "summary": "River faces Independiente Santa Fe in a decisive Copa Sudamericana match. An elimination could deepen the club's crisis and lead to the manager's dismissal.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le match de l'année : tout ce qui se joue River en 90' en Amérique du Sud",
-          "summary": "Avec peu de marge dans le tournoi local, le Millo va tout ou rien face à Independiente Santa Fe : une élimination pourrait entraîner le départ du DT et des mois lourds. Quoi qu'il en coûte...",
+          "title": "Le match de l'année : tout ce que River joue en 90 minutes en Sudamericana",
+          "summary": "River joue son avenir en Copa Sudamericana face à Independiente Santa Fe. Une élimination aggraverait la crise du club et pourrait provoquer le départ de son entraîneur.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباراة العام: كل ما يلعبه ريفر في التسعينيات في أمريكا الجنوبية",
-          "summary": "مع هامش ضئيل في البطولة المحلية، ميلو يذهب كل شيء أو لا شيء ضد إنديبندينتي سانتا في: الإقصاء يمكن أن يؤدي إلى رحيل المدرب وأشهر ثقيلة. أياً كان ما يتطلبه الأمر...",
+          "title": "مباراة العام: كل ما يخاطر به ريفر بليت في 90 دقيقة بكوبا سودأمريكانا",
+          "summary": "يخوض ريفر بليت مواجهة حاسمة في كوبا سودأمريكانا أمام إنديبندينتي سانتا في. قد يؤدي الإقصاء إلى إقالة المدرب وتعميق أزمة الفريق بعد تراجعه محلياً.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-plate-independiente-santa-fe-copa-sudamericana-octavos-final-formaciones-partido-coudet-decisivo-futuro_0_vLRniXQmUd.html",
@@ -1485,7 +1597,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-plate-independiente-santa-fe-copa-sudamericana-octavos-final-formaciones-partido-coudet-decisivo-futuro_0_vLRniXQmUd.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a70a9068906f",
@@ -1494,26 +1611,27 @@
       "i18n": {
         "es": {
           "title": "La piel de gallina de Trezeguet por ver a su hijo entrar al campo de juego del Monumental con el 11 de River",
-          "summary": "El histórico goleador franco-argentino que cumplió su sueño de hincha cuando River logró el retorno a Primera compartió su emoción de padre en las redes.",
-          "needs_translation": false
+          "summary": "David Trezeguet expresó en redes sociales su emoción al ver a su hijo ingresar al campo de juego del Monumental vistiendo la camiseta número 11 de River.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Trezeguet's goosebumps for seeing his son enter the Monumental playing field with River 11",
-          "summary": "The historic Franco-Argentinean goalscorer who fulfilled his fan dream when River achieved a return to Primera shared his fatherly excitement on the nets.",
+          "title": "Trezeguet moved to tears seeing his son take the Monumental pitch in River's number 11",
+          "summary": "David Trezeguet shared his emotional reaction on social media after seeing his son step onto the pitch at the Monumental wearing River's number 11 shirt.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La chair de poule de Trezeguet pour avoir vu son fils entrer sur le terrain de jeu du Monumental avec le 11 de River",
-          "summary": "L'historique buteur franco-argentin qui a réalisé son rêve de supporter quand River a réussi le retour en Primera a partagé son émotion de père dans les filets.",
+          "title": "L'émotion de Trezeguet en voyant son fils entrer sur la pelouse du Monumental avec le 11 de River",
+          "summary": "David Trezeguet a partagé son émotion sur les réseaux sociaux après avoir vu son fils fouler la pelouse du Monumental avec le maillot numéro 11 de River.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "قشعريرة تريزيجيه لرؤية ابنه يدخل ميدان اللعب الضخم مع ريفر 11",
-          "summary": "شارك المهاجم الفرنسي الأرجنتيني التاريخي، الذي حقق حلمه كمشجع عندما عاد نادي ريفر بليت إلى الدرجة الأولى، مشاعره كأب على وسائل التواصل الاجتماعي.",
+          "title": "تريزيغيه يعبر عن تأثره البالغ برؤية نجله يدخل ملعب المونومنتال بالقميص رقم 11 مع ريفر بليت",
+          "summary": "شارك المهاجم السابق دافيد تريزيغيه مشاعر فخره وتأثره عبر منصات التواصل الاجتماعي بعد رؤية نجله يدخل أرضية ملعب المونومنتال مرتدياً القميص رقم 11 مع ريفر بليت.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-trazeguet-hijo-otamendi-monumental-instagram_0_cQnXNPnDp2.html",
@@ -1535,7 +1653,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-trazeguet-hijo-otamendi-monumental-instagram_0_cQnXNPnDp2.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "68fd19787e82",
@@ -1544,26 +1667,27 @@
       "i18n": {
         "es": {
           "title": "Pezzella rescindió y se despidió de River con un emotivo posteo",
-          "summary": "El marcador central, borrado en Cantilo, finalizó su contrato y subió un posteo en su cuenta de Instagram agredeciéndoles a los hinchas.",
-          "needs_translation": false
+          "summary": "El defensor central Pezzella rescindió su contrato con River y publicó un mensaje de despedida en Instagram para agradecer el apoyo de los hinchas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Pezzella resigned and said goodbye to River with an emotional post",
-          "summary": "The central marker, deleted in Cantilo, ended his contract and uploaded a post on his Instagram account attacking the fans.",
+          "title": "Pezzella terminated his contract and said goodbye to River with an emotional post",
+          "summary": "Center-back Pezzella has terminated his contract with River and posted a farewell message on Instagram to thank the fans.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Pezzella a résilié et a dit au revoir à River avec un message émouvant",
-          "summary": "Le marqueur central, supprimé de Cantilo, a mis fin à son contrat et a posté un message sur son compte Instagram en agressant les fans.",
+          "title": "Pezzella a résilié son contrat et a fait ses adieux à River avec un message émouvant",
+          "summary": "Le défenseur central Pezzella a résilié son contrat avec River et a publié un message d'adieu sur Instagram pour remercier les supporters.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "استقالت بيزيلا ودعت ريفر بمنشور عاطفي",
-          "summary": "العلامة المركزية، التي تم حذفها في كانتيلو، أنهت عقده ورفعت منشورًا على حسابه على إنستغرام يهاجم المعجبين.",
+          "title": "بيتزيلا يفسخ عقده ويودع ريفر بليت برسالة مؤثرة",
+          "summary": "فسخ المدافع بيتزيلا عقده مع نادي ريفر بليت، ونشر رسالة وداع عبر حسابه على إنستغرام وجه فيها الشكر للجماهير.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-german-pezzella-despedida-rescision-contrato-salida-borrado_0_gZOilv7t8J.html",
@@ -1585,7 +1709,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-german-pezzella-despedida-rescision-contrato-salida-borrado_0_gZOilv7t8J.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0d86d0af0a4f",
@@ -1644,26 +1773,27 @@
       "i18n": {
         "es": {
           "title": "El Leeds echa al Nottingham tras ganarle también en la Premier",
-          "summary": "El Leeds le tiene tomada la medida al Nottingham en este inicio de temporada. Dos partidos, dos triunfos.",
-          "needs_translation": false
+          "summary": "El Leeds firmó su segundo triunfo de la temporada ante el Nottingham tras volver a superarlo, esta vez en la Premier.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Leeds kick out Nottingham after beating them in the Premier League",
-          "summary": "Leeds have taken the measure of Nottingham at the start of the season. Two games, two wins.",
+          "title": "Leeds knock out Nottingham after beating them again in the Premier League",
+          "summary": "Leeds secured their second win of the season against Nottingham by defeating them once again, this time in the Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Leeds élimine Nottingham après les avoir également battus en Premier League.",
-          "summary": "Leeds a pris la mesure de Nottingham en ce début de saison. Deux matchs, deux victoires.",
+          "title": "Leeds élimine Nottingham après l'avoir également battu en Premier League",
+          "summary": "Leeds a battu Nottingham pour la deuxième fois de la saison en s'imposant de nouveau, cette fois en Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ليدز يطرد نوتنغهام بعد هزيمته في الدوري الممتاز",
-          "summary": "اتخذ ليدز مقياس نوتنغهام في بداية الموسم. مباراتان، فوزان.",
+          "title": "ليدز يقصي نوتنغهام بعد الفوز عليه مجدداً في الدوري الإنجليزي الممتاز",
+          "summary": "حقق ليدز انتصاره الثاني هذا الموسم على نوتنغهام بعدما كرر الفوز عليه في منافسات الدوري الإنجليزي الممتاز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260826/1004219849/leeds.html",
@@ -1685,7 +1815,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260826/1004219849/leeds.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "efea5fa7f799",
@@ -1693,40 +1828,40 @@
       "summary": "Manchester City striker Khadija Shaw has been crowned PFA Player of the Year for the second time in three seasons.",
       "i18n": {
         "en": {
-          "title": "Khadija Shaw named PFA Player of the Year for second time",
-          "summary": "Manchester City striker Khadija Shaw has been crowned PFA Player of the Year for the second time in three seasons.",
+          "title": "Khadija Shaw wins second PFA Player of the Year award",
+          "summary": "Manchester City forward Khadija Shaw has been named PFA Player of the Year for the second time in three seasons.",
           "body": [
-            "The Manchester City forward expressed her gratitude after collecting the individual accolade once again. Shaw described herself as truly honoured to earn the peer-voted recognition for the second time across a three-year span, highlighting her consistent impact leading the club's attack."
+            "The striker claims the prestigious individual honour once again, cementing her consistency and dominant status at the highest level of English football."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Khadija Shaw élue Joueuse de l'année PFA pour la deuxième fois",
-          "summary": "L'attaquante de Manchester City Khadija Shaw a été sacrée Joueuse de l'année par la PFA pour la deuxième fois en trois saisons.",
+          "title": "Khadija Shaw désignée joueuse de l'année PFA pour la deuxième fois",
+          "summary": "L'attaquante de Manchester City Khadija Shaw a été désignée joueuse de l'année PFA pour la deuxième fois en trois saisons.",
           "body": [
-            "L'attaquante de Manchester City a exprimé toute sa fierté après avoir décroché cette prestigieuse récompense individuelle. Shaw s'est dite particulièrement honorée par ce plébiscite de ses pairs pour la deuxième fois en trois ans, couronnant son impact régulier à la pointe de l'attaque mancunienne."
+            "La buteuse de Manchester City décroche à nouveau cette distinction individuelle majeure, confirmant sa régularité et sa domination au sommet du football anglais."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "es": {
-          "title": "Khadija Shaw, elegida Jugadora del Año de la PFA por segunda vez",
-          "summary": "La delantera de Manchester City Khadija Shaw ha sido galardonada como Jugadora del Año de la PFA por segunda vez en tres temporadas.",
+          "title": "Khadija Shaw, elegida jugadora del año de la PFA por segunda vez",
+          "summary": "La delantera de Manchester City Khadija Shaw ha sido elegida jugadora del año de la PFA por segunda vez en tres temporadas.",
           "body": [
-            "La atacante de Manchester City mostró su agradecimiento tras alzarse de nuevo con este prestigioso premio individual. Shaw aseguró sentirse sumamente honrada por recibir el reconocimiento de sus compañeras de profesión por segunda ocasión en tres años, ratificando su enorme peso ofensivo en el equipo."
+            "La atacante de Manchester City vuelve a llevarse este prestigioso galardón individual, ratificando su regularidad y dominio en la élite del fútbol inglés."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "ar": {
-          "title": "خديجة شو تتوج بجائزة أفضل لاعبة من رابطة المحترفين للمرة الثانية",
-          "summary": "تُوجت مهاجمة مانشستر سيتي خديجة شو بجائزة أفضل لاعبة في العام من رابطة اللاعبين المحترفين للمرة الثانية خلال ثلاثة مواسم.",
+          "title": "خديجة شو تتوج بجائزة أفضل لاعبة في إنجلترا للمرة الثانية",
+          "summary": "نالت مهاجمة مانشستر سيتي، خديجة شو، جائزة أفضل لاعبة في العام من رابطة اللاعبين المحترفين الإنجليزية للمرة الثانية خلال ثلاثة مواسم.",
           "body": [
-            "وعبرت مهاجمة مانشستر سيتي عن سعادتها البالغة بعد حصد هذه الجائزة الفردية المرموقة من جديد، مؤكدة أنها تشعر بشرف كبير لنيلها ثقة زميلاتها بتصويتهن لها للمرة الثانية في غضون ثلاثة أعوام، ما يعكس تأثيرها التهديفي المستمر في قيادة هجوم الفريق."
+            "تضيف هدافة مانشستر سيتي هذا التكريم الفردي المرموق إلى مسيرتها، مؤكدة استمرار تألقها وهيمنتها على قمة المنافسات في كرة القدم الإنجليزية."
           ],
           "format": "brief",
           "needs_translation": false,
@@ -1752,7 +1887,20 @@
           "url": "https://www.bbc.co.uk/sport/football/videos/cm27ymnk7jwo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-26T06:04:37+00:00"
+        }
+      }
     },
     {
       "id": "c575e6879f20",
@@ -1810,44 +1958,44 @@
       "summary": "A una semana del cierre del mercado -finaliza el próximo martes día 1 a las 00:00 horas-, la plana mayor de la comisión deportiva del FC Barcelona , con el presidente Joan Laporta a la cabeza, se reunió ayer en la Ciutat Esportiva de Sant Joan Despí para abordar los diferentes…",
       "i18n": {
         "es": {
-          "title": "El Barça mantendrá su ofensiva total por Julián Alvarez sin plan B",
-          "summary": "La cúpula deportiva del Barcelona acordó agotar todas las opciones para fichar a Julián Alvarez antes del cierre del mercado.",
+          "title": "El Barça irá con todo a por Julián Alvarez y descarta un plan B",
+          "summary": "La cúpula deportiva del Barcelona acordó apurar todas las opciones para fichar a Julián Alvarez antes del cierre del mercado, sin contemplar ninguna alternativa.",
           "body": [
-            "Reunidos en la Ciutat Esportiva con Joan Laporta a la cabeza, Deco y Hansi Flick ratificaron que el delantero argentino es la prioridad absoluta para el ataque. Pese a la postura inflexible del Atlético de Madrid tras la propuesta de 100 millones de euros presentada en junio, el club descarta buscar alternativas y prefiere esperar al mercado de enero si no se concreta la operación.",
-            "En el apartado de salidas, Casadó y Font tienen asumida su marcha y evalúan distintas ofertas para definir su destino. Por su parte, Alejandro Balde desea quedarse a competir por el puesto, por lo que la directiva únicamente reactivará la opción de fichar al central Castello Lukeba si el lateral zurdo solicita un traspaso."
+            "Tras reunirse en la Ciutat Esportiva con Hansi Flick y Deco, Joan Laporta ratificó que el atacante del Atlético de Madrid es la única prioridad para la delantera. Si el club rojiblanco mantiene su negativa tras la oferta de 100 millones de euros presentada a finales de junio, la entidad azulgrana descarta fichar a otro futbolista en su posición y volverá a la carga en el mercado de enero.",
+            "El cónclave también abordó la operación salida. Marc Casadó y Font tienen asumida su marcha a la espera de concretar destino, mientras que Alejandro Balde decidirá su futuro tras quedar fuera de la última convocatoria. Solo si el canterano pide salir y presenta una oferta, el Barça activará la opción de fichar al central zurdo Castello Lukeba, del Leipzig."
           ],
           "format": "deep",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "en": {
-          "title": "Barça go all-in on Julián Alvarez with no plan B",
-          "summary": "Barcelona's sporting hierarchy has agreed to exhaust every avenue to sign Julián Alvarez before the transfer window shuts.",
+          "title": "Barça go all-in for Julián Alvarez with no backup plan",
+          "summary": "Barcelona's sporting hierarchy has decided to exhaust every avenue to sign Julián Alvarez before the transfer window closes, ruling out any alternative targets.",
           "body": [
-            "Convening at the Ciutat Esportiva under Joan Laporta, Deco and Hansi Flick reiterated that the Argentine forward remains the top priority in attack. Even with Atlético de Madrid holding firm after a €100m bid tabled in June, the club refuses to consider alternatives, preferring to hold out until the January window if a deal cannot be struck now.",
-            "Regarding departures, Casadó and Font accept their time is up and are weighing options for their next move. Alejandro Balde wants to stay and fight for his spot, meaning the board will only pursue center-back Castello Lukeba if the left-back formally asks to leave."
+            "Following a meeting at the Ciutat Esportiva with Hansi Flick and Deco, Joan Laporta confirmed that the Atlético de Madrid striker remains the club's sole attacking priority. Should the Madrid side stand firm on their rejection of the €100 million bid tabled in late June, the Blaugrana will not pursue another forward and will try again in the January window.",
+            "The summit also addressed potential departures. Marc Casadó and Font have accepted that they will move on, pending final destinations, while Alejandro Balde will decide his future after being left out of the latest matchday squad. Only if the academy graduate asks to leave with a concrete offer will Barça move for Leipzig's left-footed centre-back Castello Lukeba."
           ],
           "format": "deep",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Le Barça fonce sur Julián Alvarez et refuse tout plan B",
-          "summary": "La direction sportive du FC Barcelone a tranché : elle tentera le tout pour le tout afin de recruter Julián Alvarez d'ici la clôture du mercato.",
+          "title": "Le Barça fonce sur Julián Alvarez et écarte tout plan B",
+          "summary": "La direction sportive du FC Barcelone a décidé d'épuiser toutes les pistes pour recruter Julián Alvarez avant la fin du mercato, sans envisager d'alternative.",
           "body": [
-            "Réunis à la Ciutat Esportiva autour de Joan Laporta, Deco et Hansi Flick ont confirmé que l'attaquant argentin constituait la priorité numéro un du secteur offensif. L'Atlético de Madrid reste intraitable malgré l'offre de 100 millions d'euros transmise en juin, mais les Catalans refusent d'activer une autre piste et préfèrent patienter jusqu'en janvier si l'opération capote.",
-            "Côté départs, Casadó et Font ont acté leur transfert et examinent les propositions sur la table. Alejandro Balde veut quant à lui rester pour gagner sa place ; la direction ne réactivera l'intérêt pour le défenseur central Castello Lukeba que si son latéral gauche réclame un bon de sortie."
+            "Après une réunion à la Ciutat Esportiva avec Hansi Flick et Deco, Joan Laporta a confirmé que l'attaquant d'Atlético de Madrid reste la priorité absolue en pointe. Si le club madrilène maintient son refus malgré l'offre de 100 millions d'euros transmise fin juin, les Blaugranas ne recruteront aucun autre avant-centre et retenteront leur chance en janvier.",
+            "Le sommet a également clarifié les départs. Marc Casadó et Font ont acté leur futur transfert et évaluent leurs offres. Alejandro Balde décidera pour sa part de son avenir après avoir été écarté de la dernière feuille de match. Le Barça n'activera la piste menant au défenseur central Castello Lukeba, joueur de Leipzig, que si son latéral gauche demande à partir avec une proposition ferme."
           ],
           "format": "deep",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "ar": {
-          "title": "برشلونة يرمي بكل ثقله لضم خوليان ألفاريز دون خطة بديلة",
-          "summary": "اتفقت الإدارة الرياضية في نادي برشلونة على استنفاد كافة الحلول الممكنة لحسم صفقة خوليان ألفاريز قبل إغلاق سوق الانتقالات.",
+          "title": "برشلونة يرمي بكل ثقله لضم خوليان ألفاريز ويستبعد أي خطة بديلة",
+          "summary": "استقرت الإدارة الرياضية لنادي برشلونة على استنفاد كافة الخيارات المتاحة للتعاقد مع خوليان ألفاريز قبل إغلاق سوق الانتقالات، مع استبعاد أي خيار بديل.",
           "body": [
-            "خلال اجتماع في المدينة الرياضية سيوتات إسبورتيفا بقيادة خوان لابورتا، أكد ديكو والمدرب هانزي فليك أن المهاجم الأرجنتيني يمثل الأولوية المطلقة لخط الهجوم. ورغم الموقف الصارم من أتلتيكو مدريد عقب العرض البالغ 100 مليون يورو المقدم في يونيو، يرفض النادي الكتالوني البحث عن بدائل، ويفضل الانتظار حتى ميركاتو يناير المقبل إذا تعثرت الصفقة حالياً.",
-            "وعلى صعيد الراحلين، استقر كاسادو وفونت على مغادرة الفريق ويدرسان العروض المتاحة لتحديد وجهتيهما. في المقابل، يتمسك أليخاندرو بالدي بالبقاء والمنافسة على مركزه، ولن تعيد الإدارة فتح ملف التعاقد مع المدافع كاستيلو لوكيبا إلا إذا طلب الظهير الأيسر الرحيل رسمياً."
+            "عقب اجتماع عُقد في المدينة الرياضية سيوتات إسبورتيفا مع هانزي فليك وديكو، أكد جوان لابورتا أن مهاجم أتلتيكو مدريد هو الهدف الوحيد لتعزيز خط الهجوم. وفي حال تمسك نادي العاصمة برفضه بعد العرض المقدم أواخر يونيو بقيمة 100 مليون يورو، سيصرف البلوغرانا النظر عن ضم أي مهاجم آخر على أن يعود للمحاولة في ميركاتو يناير.",
+            "وتطرق الاجتماع أيضاً إلى ملف الراحلين؛ حيث حسم مارك كاسادو وفونت موقفهما بالمغادرة في انتظار الاستقرار على وجهتيهما، بينما سيحسم أليخاندرو بالدي مستقبله بعد استبعاده من القائمة الأخيرة. ولن يتحرك برشلونة للتعاقد مع المدافع الأيسر كاستيلو لوكيبا، لاعب لايبزيغ، إلا إذا طلب خريج الأكاديمية الرحيل وجلب عرضاً رسمياً."
           ],
           "format": "deep",
           "needs_translation": false,
@@ -1873,7 +2021,20 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260825/1004219787/claves-cumbre-laporta-comision-deportiva.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-26T06:04:40+00:00"
+        }
+      }
     },
     {
       "id": "b842ad97ec33",
@@ -1881,40 +2042,40 @@
       "summary": "Le PSV Eindhoven cible activement le milieu international marocain Azzedine Ounahi pour renforcer son entrejeu cet été.",
       "i18n": {
         "fr": {
-          "title": "Mercato : le PSV Eindhoven s'intéresse à Azzedine Ounahi",
-          "summary": "Le PSV Eindhoven cible activement le milieu international marocain Azzedine Ounahi pour renforcer son entrejeu cet été.",
+          "title": "Le PSV Eindhoven cible le milieu marocain Azzedine Ounahi",
+          "summary": "Le PSV Eindhoven s'intéresse de près au milieu international marocain Azzedine Ounahi pour renforcer son entrejeu lors du mercato estival.",
           "body": [
-            "Toujours en quête de nouvelles recrues pour étoffer son effectif, le club néerlandais a placé le joueur de l'Olympique de Marseille sur sa liste de priorités. La formation d'Eindhoven suit ce dossier de près, après s'être notamment penchée par le passé sur le profil de l'ancien joueur de Feyenoord Quinten Timber."
+            "Le club néerlandais s'active pour attirer le joueur des Lions de l'Atlas avant la fin de la période des transferts."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "en": {
-          "title": "Transfer window: PSV Eindhoven target Azzedine Ounahi",
-          "summary": "PSV Eindhoven are actively targeting Moroccan international midfielder Azzedine Ounahi to strengthen their engine room this summer.",
+          "title": "PSV Eindhoven target Moroccan midfielder Azzedine Ounahi",
+          "summary": "PSV Eindhoven are actively targeting Moroccan international midfielder Azzedine Ounahi to reinforce their engine room during this summer transfer window.",
           "body": [
-            "Looking to bolster their squad, the Dutch champions have placed the Olympique de Marseille playmaker high on their shortlist. Eindhoven are keeping close tabs on his situation, having previously explored a move for former Feyenoord standout Quinten Timber."
+            "The Dutch side are working to secure a deal for the Atlas Lions midfielder before the window closes."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "es": {
-          "title": "Mercado: el PSV Eindhoven pone sus ojos en Azzedine Ounahi",
-          "summary": "El PSV Eindhoven tiene en el punto de mira al centrocampista internacional marroquí Azzedine Ounahi para reforzar su medular este verano.",
+          "title": "El PSV Eindhoven se interesa en el marroquí Azzedine Ounahi",
+          "summary": "El PSV Eindhoven busca activamente el fichaje del centrocampista internacional marroquí Azzedine Ounahi para reforzar su medular este verano.",
           "body": [
-            "Decidido a sumar piezas a su plantilla, el conjunto neerlandés ha situado al futbolista del Olympique de Marseille entre sus prioridades. El club de Eindhoven sigue muy de cerca el caso, después de haber sondeado en el pasado el perfil del exjugador de Feyenoord Quinten Timber."
+            "El club neerlandés intensifica sus gestiones para incorporar al jugador de los Leones del Atlas en este mercado estival."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "ar": {
-          "title": "الميركاتو: بي إس في آيندهوفن يضع عينه على عز الدين أوناحي",
-          "summary": "يسعى نادي بي إس في آيندهوفن الهولندي للتعاقد مع الدولي المغربي عز الدين أوناحي لتعزيز خط وسطه خلال سوق الانتقالات الصيفية.",
+          "title": "بي إس في آيندهوفن يستهدف ضم المغربي عز الدين أوناحي",
+          "summary": "يستهدف نادي بي إس في آيندهوفن الهولندي التعاقد مع الدولي المغربي عز الدين أوناحي لتعزيز خط وسطه خلال فترة الانتقالات الصيفية الحالية.",
           "body": [
-            "في إطار تحركاته لتدعيم صفوفه، وضع النادي الهولندي نجم أولمبيك مارسيليا على رأس أولوياته. وتتابع إدارة آيندهوفن الصفقة عن كثب، بعدما أبدت اهتماماً في وقت سابق بضم لاعب فينورد السابق كوينتن تيمبر."
+            "يسعى النادي الهولندي لحسم صفقة لاعب وسط أسود الأطلس وتدعيم صفوفه قبل نهاية سوق الانتقالات."
           ],
           "format": "brief",
           "needs_translation": false,
@@ -1940,7 +2101,20 @@
           "url": "https://africatopsports.com/maghreb/azzedine-ounahi-le-psv-revient-a-la-charge-pour-le-marocain/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-26T06:04:42+00:00"
+        }
+      }
     },
     {
       "id": "97eb2b507b06",
@@ -1999,32 +2173,33 @@
       "i18n": {
         "de": {
           "title": "Das Wunder von Linz: LASK feiert Einzug in Königsklasse",
-          "summary": "Der LASK macht das Unmögliche möglich und gewinnt das Rückspiel gegen Celtic mit 5:1 nach Verlängerung. Damit stehen die Linzer in der Champions League.",
-          "needs_translation": false
+          "summary": "Der LASK hat sich durch einen 5:1-Sieg nach Verlängerung im Rückspiel gegen Celtic für die Champions League qualifiziert.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The wonder of Linz: LASK enters the premier class",
-          "summary": "The LASK makes the impossible possible and wins the second leg against Celtic 5-1 after extra time. This puts the Linz team in the Champions League.",
+          "title": "The miracle of Linz: LASK celebrates reaching the Champions League",
+          "summary": "LASK qualified for the Champions League following a 5-1 victory after extra time against Celtic in the second leg.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le miracle de Linz : LASK célèbre son entrée dans la catégorie reine",
-          "summary": "Le LASK rend l'impossible possible et remporte le match retour contre le Celtic 5:1 après prolongation. Ainsi, les Linzois sont en Ligue des Champions.",
+          "title": "Le miracle de Linz : LASK célèbre son accession en Champions League",
+          "summary": "LASK s'est qualifié pour la Champions League après sa victoire 5-1 après prolongation face à Celtic lors du match retour.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El milagro de Linz: LASK celebra su entrada en la categoría reina",
-          "summary": "El Lask hace posible lo imposible y gana el partido de vuelta contra el Celtic por 5-1 tras la prórroga. Por lo tanto, los Linz están en la Liga de Campeones.",
+          "title": "El milagro de Linz: LASK celebra su clasificación a la Champions League",
+          "summary": "LASK selló su clasificación a la Champions League tras imponerse por 5-1 a Celtic en la prórroga del partido de vuelta.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أعجوبة لينز: LASK تدخل الطبقة الأولى",
-          "summary": "LASK يجعل المستحيل ممكنا ويفوز في مباراة الذهاب ضد سلتيك 5-1 بعد وقت إضافي. هذا يضع فريق لينز في دوري أبطال أوروبا.",
+          "title": "معجزة لينتس: لاسك يحتفل بالتأهل إلى دوري أبطال أوروبا",
+          "summary": "تأهل لاسك النمساوي إلى دوري أبطال أوروبا بعد فوزه على سلتيك بنتيجة 5-1 بعد الوقت الإضافي في مباراة الإياب.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/lask-gegen-celtic-2026-champions-league-qualifikation-5254291/spielbericht#omrss",
@@ -2046,7 +2221,12 @@
           "url": "https://www.kicker.de/lask-gegen-celtic-2026-champions-league-qualifikation-5254291/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "aebf52de7c01",
@@ -2054,25 +2234,28 @@
       "summary": "El extremo de PSV sería el refuerzo de ataque Leer",
       "i18n": {
         "es": {
-          "title": "Couhaib Driouech : le Marocain rejoint le Celta Vigo (Officiel)",
-          "summary": "El extremo de PSV sería el refuerzo de ataque Leer",
-          "needs_translation": false
+          "title": "Couhaib Driouech: el marroquí se une al Celta Vigo (Oficial)",
+          "summary": "El extremo marroquí Couhaib Driouech se incorpora oficialmente al Celta Vigo procedente del PSV para reforzar su ataque.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Couhaib Driouech : le Marocain rejoint le Celta Vigo (Officiel)",
-          "summary": "El extremo de PSV sería el refuerzo de ataque Leer",
-          "needs_translation": true
+          "title": "Couhaib Driouech: Moroccan joins Celta Vigo (Official)",
+          "summary": "Moroccan winger Couhaib Driouech has officially joined Celta Vigo from PSV to reinforce the team's attack.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Couhaib Driouech : le Marocain rejoint le Celta Vigo (Officiel)",
-          "summary": "L'extrémité du PSV serait le renfort d'attaque Lire",
+          "title": "Couhaib Driouech : le Marocain rejoint le Celta Vigo (Officiel)",
+          "summary": "L'ailier marocain Couhaib Driouech quitte le PSV pour s'engager officiellement avec le Celta Vigo afin de renforcer son secteur offensif.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Couhaib Driouech : le Marocain rejoint le Celta Vigo (Officiel)",
-          "summary": "El extremo de PSV sería el refuerzo de ataque Leer",
-          "needs_translation": true
+          "title": "صهيب دريوش: المغربي ينضم إلى سيلتا فيغو (رسمياً)",
+          "summary": "انضم الجناح المغربي صهيب دريوش رسمياً إلى صفوف سيلتا فيغو قادماً من بي إس في آيندهوفن لتعزيز خط الهجوم.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.marca.com/futbol/celta/2026/08/23/celta-cerca-cerrar-fichaje-couhaib-driouech.html",
@@ -2100,7 +2283,12 @@
           "url": "https://africatopsports.com/maghreb/couhaib-driouech-le-marocain-rejoint-le-celta-vigo-officiel/"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c3ef39396840",
@@ -2221,7 +2409,17 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Mercato-le-betis-seville-et-lens-s-activent-pour-l-attaquant-de-l-om-antoine-valero/1713576#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-26T06:04:44+00:00"
+        }
+      }
     },
     {
       "id": "4b9ce4da66b3",
