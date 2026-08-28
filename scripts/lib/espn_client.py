@@ -50,10 +50,10 @@ PORTUGAL_LEAGUES = ["fifa.friendly", "fifa.world", "uefa.nations", "fifa.worldq.
 # IDs (str) des équipes de CR7 — pour les checks is_home côté consommateurs.
 CR7_TEAM_IDS = {str(AL_NASSR_ID), str(PORTUGAL_ID)}
 
-USER_AGENT = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-)
+# Fix 2026-08-28 : ESPN renvoie 403 aux UA navigateur usurpés depuis un
+# environnement non-navigateur (fingerprinting TLS/headers incohérents).
+# L'UA par défaut de requests passe (validé : Chrome spoofé = 403, celui-ci = 200).
+USER_AGENT = "python-requests"
 DEFAULT_TIMEOUT = 8     # secondes
 DEFAULT_RETRIES = 2     # tentatives en plus en cas d'erreur réseau
 
