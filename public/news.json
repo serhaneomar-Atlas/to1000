@@ -135,32 +135,33 @@
       "i18n": {
         "de": {
           "title": "Live hören: Eintracht Braunschweig gegen Hertha BSC - 2. Bundesliga",
-          "summary": "3. Spieltag: Anpfiff des Spiels ist am 28.08.2026 um 18:30 Uhr.",
-          "needs_translation": false
+          "summary": "Das Spiel des 3. Spieltags der 2. Bundesliga zwischen Eintracht Braunschweig und Hertha BSC wird am 28. August 2026 um 18:30 Uhr angepfiffen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Listen live: Eintracht Braunschweig vs Hertha BSC - 2nd Bundesliga",
-          "summary": "Matchday 3: The match kicks off on 28.08.2026 at 18:30.",
+          "title": "Listen Live: Eintracht Braunschweig vs Hertha BSC - 2. Bundesliga",
+          "summary": "The 2. Bundesliga matchday 3 fixture between Eintracht Braunschweig and Hertha BSC kicks off on 28 August 2026 at 18:30.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Écouter en direct : Eintracht Braunschweig contre Hertha BSC - 2ème Bundesliga",
-          "summary": "3ème journée : le coup d'envoi du match est donné le 28/08/2026 à 18h30.",
+          "title": "Écouter en direct : Eintracht Braunschweig contre Hertha BSC - 2. Bundesliga",
+          "summary": "La rencontre de la 3e journée de 2. Bundesliga entre Eintracht Braunschweig et Hertha BSC débutera le 28 août 2026 à 18h30.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
           "title": "Escuchar en directo: Eintracht Braunschweig contra Hertha BSC - 2. Bundesliga",
-          "summary": "3ª jornada: El pitido inicial del partido será el 28/08/2026 a las 18:30 h.",
+          "summary": "El partido de la 3.ª jornada de la 2. Bundesliga entre Eintracht Braunschweig y Hertha BSC se jugará el 28 de agosto de 2026 a las 18:30.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "استمع مباشرة: اينتراخت براونشفايغ ضد هيرثا بي إس سي - الدوري الألماني الثاني",
-          "summary": "يوم المباراة 3: تنطلق المباراة في 28.08.2026 الساعة 18:30.",
+          "title": "استمع مباشرة: آينتراخت براونشفايغ ضد هيرتا برلين - دوري الدرجة الثانية الألماني",
+          "summary": "تنطلق مباراة الجولة الثالثة من دوري الدرجة الثانية الألماني بين آينتراخت براونشفايغ وهيرتا برلين يوم 28 أغسطس 2026 في تمام الساعة 18:30.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga2/eintracht-braunschweig-gegen-hertha-bsc,audiostream-eintracht-braunschweig-gegen-hertha-bsc-108.html",
@@ -182,7 +183,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga2/eintracht-braunschweig-gegen-hertha-bsc,audiostream-eintracht-braunschweig-gegen-hertha-bsc-108.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f56ceb67738b",
@@ -240,27 +246,28 @@
       "summary": "El entrenador del Chelsea, Xabi Alonso , ha defendido la decisión de dejar a Enzo Fernández fuera de la convocatoria para la victoria del jueves en la Copa de la Liga contra el Luton, en medio de los rumores sobre el interés del Manchester City.",
       "i18n": {
         "es": {
-          "title": "Xabi Alonso, sin pelos en la lengua tras cargarse a Enzo Fernández",
-          "summary": "El entrenador del Chelsea, Xabi Alonso , ha defendido la decisión de dejar a Enzo Fernández fuera de la convocatoria para la victoria del jueves en la Copa de la Liga contra el Luton, en medio de los rumores sobre el interés del Manchester City.",
-          "needs_translation": false
+          "title": "Xabi Alonso explica los motivos de la exclusión de Enzo Fernández",
+          "summary": "El entrenador del Chelsea, Xabi Alonso, defendió su decisión de dejar fuera de la convocatoria a Enzo Fernández ante el Luton en la Copa de la Liga, entre rumores sobre el Manchester City.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Xabi Alonso, without hair on his tongue after killing Enzo Fernández",
-          "summary": "Chelsea manager Xabi Alonso has defended the decision to leave Enzo Fernandez out of the squad for Thursday's League Cup win against Luton, amid rumours of Manchester City's interest.",
+          "title": "Xabi Alonso speaks out after dropping Enzo Fernández",
+          "summary": "Chelsea manager Xabi Alonso defended his decision to leave Enzo Fernández out of the squad against Luton in the League Cup, amid transfer links with Manchester City.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Xabi Alonso, sans poils sur la langue après avoir chargé Enzo Fernández",
-          "summary": "L'entraîneur de Chelsea, Xabi Alonso , a défendu la décision de laisser Enzo Fernández en dehors de la convocation pour la victoire jeudi en Coupe de la Ligue contre Luton, au milieu des rumeurs sur l'intérêt de Manchester City.",
+          "title": "Xabi Alonso s'exprime après avoir écarté Enzo Fernández",
+          "summary": "L'entraîneur de Chelsea, Xabi Alonso, a justifié la mise à l'écart d'Enzo Fernández face à Luton en Coupe de la Ligue, dans un contexte de rumeurs l'associant à Manchester City.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "خابي ألونسو، بدون شعر على لسانه بعد مقتل إنزو فرنانديز",
-          "summary": "دافع مدرب تشيلسي تشابي ألونسو عن قرار ترك إنزو فرنانديز خارج التشكيلة للفوز بكأس الدوري يوم الخميس ضد لوتون، وسط شائعات عن اهتمام مانشستر سيتي.",
+          "title": "تشابي ألونسو يوضح أسباب استبعاد إنزو فيرنانديز",
+          "summary": "دافع مدرب تشيلسي تشابي ألونسو عن قراره باستبعاد إنزو فيرنانديز أمام لوتون في كأس الرابطة، وسط أنباء عن اهتمام مانشستر سيتي بالتعاقد معه.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260828/1004220683/xabi-alonso.html",
@@ -282,7 +289,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260828/1004220683/xabi-alonso.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f895b8ff3428",
@@ -341,26 +353,27 @@
       "i18n": {
         "es": {
           "title": "Los números del Dibu Martínez ante el Chelsea, su nuevo club",
-          "summary": "Una vez superada la revisión médica, el arquero de la Selección Argentina firmará contrato con los Blues.",
-          "needs_translation": false
+          "summary": "Tras superar la revisión médica, el arquero de la Selección Argentina firmará su contrato con Chelsea.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The numbers of Dibu Martínez against Chelsea, his new club",
-          "summary": "Once the medical has been passed, the goalkeeper of the Argentine National Team will sign a contract with the Blues.",
+          "title": "Dibu Martínez's numbers against Chelsea, his new club",
+          "summary": "After completing his medical examination, the Selección Argentina goalkeeper will sign his contract with Chelsea.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Les chiffres du Dibu Martínez face à Chelsea, son nouveau club",
-          "summary": "Une fois l'examen médical passé, le gardien de but de la sélection argentine signera un contrat avec les Blues.",
+          "title": "Les chiffres de Dibu Martínez face à Chelsea, son nouveau club",
+          "summary": "Après avoir passé sa visite médicale, le gardien de la Selección Argentina signera son contrat avec Chelsea.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أعداد ديبو مارتينيز ضد تشيلسي، ناديه الجديد",
-          "summary": "بمجرد اجتياز الفحص الطبي، سيوقع حارس مرمى المنتخب الأرجنتيني عقدًا مع البلوز.",
+          "title": "أرقام ديبو مارتينيز أمام تشيلسي ناديه الجديد",
+          "summary": "عقب تجاوزه الفحص الطبي بنجاح، سيوقع حارس مرمى المنتخب الأرجنتيني ديبو مارتينيز عقده رسمياً مع نادي تشيلسي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/inglaterra/numeros-dibu-martinez-chelsea-nuevo-club_0_Cargc01ChL.html",
@@ -382,7 +395,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/inglaterra/numeros-dibu-martinez-chelsea-nuevo-club_0_Cargc01ChL.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4e72eddc293f",
@@ -441,26 +459,27 @@
       "i18n": {
         "fr": {
           "title": "Liam Rosenior avant la réception de Nice dimanche : « Pour faire une belle saison, il faut performer à la maison »",
-          "summary": "L'entraîneur du Paris FC, Liam Rosenior, débute sa saison à domicile dimanche (15 heures) face à Nice, dans le cadre de la 2e journée de Ligue 1. Un match à suivre en direct sur Ligue 1+, disponible sur L'Équipe.",
-          "needs_translation": false
+          "summary": "L'entraîneur du Paris FC, Liam Rosenior, prépare la réception de Nice ce dimanche pour la 2e journée de Ligue 1, soulignant l'importance de performer à domicile.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Liam Rosenior before the Nice reception on Sunday: \"To have a great season, you have to perform at home\"",
-          "summary": "Paris FC coach Liam Rosenior starts his home season Sunday (3pm) against Nice, as part of the second day of Ligue 1. A match to watch live on Ligue 1+, available on L'Equipe.",
+          "title": "Liam Rosenior ahead of hosting Nice on Sunday: \"To have a good season, you have to perform at home\"",
+          "summary": "Paris FC manager Liam Rosenior hosts Nice on Sunday for matchday 2 of Ligue 1, emphasizing the importance of strong home performances.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Liam Rosenior antes de la recepción del Niza el domingo: \"Para hacer una buena temporada, hay que actuar en casa\"",
-          "summary": "El entrenador del Paris FC, Liam Rosenior, comienza su temporada en casa el domingo (15:00) frente al Niza, en el marco de la segunda jornada de la Ligue 1. Un partido para seguir en directo en Ligue 1+, disponible en L 'Équipe.",
+          "title": "Liam Rosenior antes de recibir a Nice el domingo: «Para hacer una buena temporada, hay que rendir en casa»",
+          "summary": "El entrenador de Paris FC, Liam Rosenior, recibe a Nice este domingo en la 2.ª jornada de Ligue 1, destacando la necesidad de rendir como locales.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ليام روزينيور قبل حفل الاستقبال الجميل يوم الأحد: \"للحصول على موسم رائع، عليك أن تؤدي في المنزل\"",
-          "summary": "يبدأ مدرب نادي باريس ليام روزيني موسمه يوم الأحد (3 مساءً) ضد نيس، كجزء من اليوم الثاني من دوري الدرجة الأولى. مباراة لمشاهدتها مباشرة على Ligue 1+، متاحة على L'Equipe.",
+          "title": "ليام روزينيور قبل استضافة نيس يوم الأحد: «لتحقيق موسم جيد، يجب أن نتألق على أرضنا»",
+          "summary": "يستقبل باريس إف سي بقيادة مدربه ليام روزينيور فريق نيس يوم الأحد في الجولة الثانية من الدوري الفرنسي، مؤكداً أهمية تحقيق النتائج الإيجابية على أرضه.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Liam-rosenior-avant-la-reception-de-nice-dimanche-pour-faire-une-belle-saison-il-faut-performer-a-la-maison/1714190#at_medium=RSS_feeds",
@@ -482,7 +501,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Liam-rosenior-avant-la-reception-de-nice-dimanche-pour-faire-une-belle-saison-il-faut-performer-a-la-maison/1714190#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "1334aea1b008",
@@ -696,27 +720,28 @@
       "summary": "La presidenta del Celta, Marian Mouriño, afirmó este viernes que el reencuentro con el Juventus será “especial” y “muy emotivo” para ella porque hace 26 años, el 9 de marzo de 2000, tuvo su primera cita con su actual marido y consejero del Club, Miguel Álvarez , en el histórico…",
       "i18n": {
         "es": {
-          "title": "\"Mi primera cita con mi marido fue en un partido del Celta contra la Juventus\"",
-          "summary": "La presidenta del Celta, Marian Mouriño, afirmó este viernes que el reencuentro con el Juventus será “especial” y “muy emotivo” para ella porque hace 26 años, el 9 de marzo de 2000, tuvo su primera cita con su actual marido y consejero del Club, Miguel Álvarez , en el histórico…",
-          "needs_translation": false
+          "title": "«Mi primera cita con mi marido fue en un partido del Celta contra la Juventus»",
+          "summary": "La presidenta del Celta, Marian Mouriño, calificó de especial el reencuentro con la Juventus al recordar que su primera cita con su marido y directivo del Club, Miguel Álvarez, fue en su duelo del año 2000.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "\"My first date with my husband was at a Celta game against Juventus\"",
-          "summary": "The president of Celta, Marian Mouriño, said on Friday that the reunion with Juventus will be \"special\" and \"very emotional\" for her because 26 years ago, on March 9, 2000, she had her first date with her current husband and advisor of the Club, Miguel Álvarez , in the historic...",
+          "title": "\"My first date with my husband was at a Celta match against Juventus\"",
+          "summary": "Celta president Marian Mouriño stated that facing Juventus will be special and emotional, recalling that her first date with her husband and Club director Miguel Álvarez took place during their match in 2000.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "« Mon premier rendez-vous avec mon mari a été un match du Celta contre la Juventus »",
-          "summary": "La présidente du Celta, Marian Mouriño, a affirmé vendredi que la rencontre avec la Juventus serait « spéciale » et « très émouvante » pour elle car il y a 26 ans, le 9 mars 2000, elle avait eu son premier rendez-vous avec son mari actuel et conseiller du Club, Miguel Álvarez , dans l'historique...",
+          "title": "« Mon premier rendez-vous avec mon mari a eu lieu lors d'un match du Celta contre la Juventus »",
+          "summary": "La présidente du Celta, Marian Mouriño, a confié que retrouver la Juventus sera émouvant, son premier rendez-vous avec son mari et dirigeant du Club, Miguel Álvarez, s'étant déroulé lors de leur affrontement en 2000.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"موعدي الأول مع زوجي كان في مباراة سيلتا ضد يوفنتوس\"",
-          "summary": "قالت رئيسة سيلتا، ماريان مورينيو، يوم الجمعة إن لم الشمل مع يوفنتوس سيكون \"مميزًا\" و \"عاطفيًا للغاية\" بالنسبة لها لأنه قبل 26 عامًا، في 9 مارس 2000، كان لديها أول موعد لها مع زوجها الحالي ومستشار النادي، ميغيل ألفاريز ، في...",
+          "title": "\"أول موعد لي مع زوجي كان خلال مباراة لسيلتا ضد يوفنتوس\"",
+          "summary": "صرحت رئيسة نادي سيلتا، ماريان مورينيو، بأن مواجهة يوفنتوس ستكون عاطفية وخاصة، مسترجعة أن أول موعد جمعها بزوجها وعضو مجلس الإدارة، ميغيل ألفاريز، كان خلال لقاء الفريقين عام 2000.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/celta-vigo/20260828/1004220679/celta-juventus-partido-inolvidable-presidenta-celta.html",
@@ -738,7 +763,12 @@
           "url": "https://www.mundodeportivo.com/futbol/celta-vigo/20260828/1004220679/celta-juventus-partido-inolvidable-presidenta-celta.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "bf7648f48fb8",
@@ -746,27 +776,28 @@
       "summary": "El juvenil fue operado con éxito de la fractura de peroné y ya comienza su recuperación, que lo tendrá varios meses afuera.",
       "i18n": {
         "es": {
-          "title": "Ya tiene el alta: Tomás Aranda dejó la clínica después de la operación y Boca respira",
-          "summary": "El juvenil fue operado con éxito de la fractura de peroné y ya comienza su recuperación, que lo tendrá varios meses afuera.",
-          "needs_translation": false
+          "title": "Tomás Aranda recibió el alta tras su operación y Boca respira",
+          "summary": "El juvenil de Boca, Tomás Aranda, dejó la clínica tras ser operado con éxito de una fractura de peroné. Su recuperación le demandará varios meses fuera de las canchas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "You are now discharged: Tomás Aranda left the clinic after the operation and Boca is breathing",
-          "summary": "The juvenile was successfully operated on for the fibula fracture and is already beginning his recovery, which will take him several months outside.",
+          "title": "Tomás Aranda discharged after surgery as Boca breathe sigh of relief",
+          "summary": "Boca youngster Tomás Aranda has left the hospital following successful surgery for a fractured fibula. He now begins a recovery process that will keep him sidelined for several months.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Vous avez déjà la sortie : Tomás Aranda a quitté la clinique après l'opération et Boca respire",
-          "summary": "Le jeune homme a été opéré avec succès de la fracture du péroné et commence déjà sa récupération, qui l'aura plusieurs mois à l'extérieur.",
+          "title": "Tomás Aranda quitte la clinique après son opération et soulage Boca",
+          "summary": "Opéré avec succès d'une fracture du péroné, le jeune joueur de Boca, Tomás Aranda, a reçu son bon de sortie. Il entame une convalescence qui l'éloignera des terrains plusieurs mois.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "لقد خرجت الآن: غادر توماس أراندا العيادة بعد العملية وبوكا تتنفس",
-          "summary": "تم إجراء عملية جراحية للحدث بنجاح لكسر الشظية وبدأ بالفعل في شفائه، الأمر الذي سيستغرقه عدة أشهر في الخارج.",
+          "title": "توماس أراندا يغادر المستشفى بعد خضوعه لجراحة وبوكا يتنفس الصعداء",
+          "summary": "غادر لاعب بوكا الشاب توماس أراندا المستشفى بعد جراحة ناجحة إثر إصابته بكسر في الشظية. وسيبدأ اللاعب مرحلة التعافي التي ستبعده عن الملاعب لعدة أشهر.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/boca-tomas-aranda-alta-medica-clinica-operacion_0_rwI7eBZWkT.html",
@@ -788,7 +819,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/boca-tomas-aranda-alta-medica-clinica-operacion_0_rwI7eBZWkT.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c5c196d5c5f3",
@@ -896,26 +932,28 @@
       "summary": "Damián Musto se expresó a través de las redes tras la confirmación de la salida del Chacho y le agradeció al club: \"Esta racha cambiará...\".",
       "i18n": {
         "es": {
-          "title": "\"Sabemos bien todo lo que pasamos\": el mensaje de despedida de uno de los ayudante de Coudet en River",
-          "summary": "Damián Musto se expresó a través de las redes tras la confirmación de la salida del Chacho y le agradeció al club: \"Esta racha cambiará...\".",
-          "needs_translation": false
+          "title": "\"Sabemos bien todo lo que pasamos\": el mensaje de despedida de uno de los ayudantes de Coudet en River",
+          "summary": "Damián Musto, asistente de Chacho Coudet, publicó un mensaje de despedida en redes sociales para agradecer a River tras confirmarse la salida del cuerpo técnico.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "\"Sabemos bien todo lo que pasamos\": el mensaje de despedida de uno de los ayudante de Coudet en River",
-          "summary": "Damián Musto se expresó a través de las redes tras la confirmación de la salida del Chacho y le agradeció al club: \"Esta racha cambiará...\".",
-          "needs_translation": true
+          "title": "\"Sabemos bien todo lo que pasamos\": The farewell message from one of Coudet's assistants at River",
+          "summary": "Damián Musto, assistant to Chacho Coudet, posted a farewell message on social media to thank River following the coaching staff's confirmed departure.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "« Nous savons bien tout ce que nous traversons » : le message d'adieu d'un des assistants de Coudet à River",
-          "summary": "Damián Musto s'est exprimé sur les réseaux sociaux après la confirmation du départ du Chacho et a remercié le club : \"Cette série va changer...\".",
+          "title": "« Sabemos bien todo lo que pasamos » : le message d'adieu d'un adjoint de Coudet à River",
+          "summary": "Damián Musto, adjoint de Chacho Coudet, a adressé un message d'adieu sur les réseaux sociaux pour remercier River après l'officialisation de leur départ.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"نحن نعرف كل ما مررنا به \": رسالة الوداع من أحد مساعدي كوديه في ريفر",
-          "summary": "عبر داميان موستو عن نفسه عبر الشبكات بعد تأكيد رحيل تشاتشو وشكر النادي: \"هذه السلسلة ستتغير...\".",
+          "title": "\"نعلم جيداً كل ما مررنا به\": رسالة وداع من أحد مساعدي كوديت في ريفر بليت",
+          "summary": "وجّه داميان موستو، مساعد المدرب تشاتشو كوديت، رسالة وداع وشكر لنادي ريفر بليت عبر وسائل التواصل الاجتماعي عقب تأكيد رحيل الجهاز الفني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-plate-mensaje-despedida-ayudante-coudet-musto_0_3xQunGYsnz.html",
@@ -937,7 +975,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-plate-mensaje-despedida-ayudante-coudet-musto_0_3xQunGYsnz.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0e33b2e51b69",
@@ -1008,26 +1051,27 @@
       "i18n": {
         "es": {
           "title": "A qué hora juega Boca vs Lanús y cómo ver hoy EN VIVO el Torneo Clausura",
-          "summary": "El Xeneize vuelve a la Bombonera para medirse ante el Granate por la séptima fecha del campeonato local. Seguilo en Olé.",
-          "needs_translation": false
+          "summary": "Boca recibe a Lanús en la Bombonera en el marco de la séptima fecha del campeonato local.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "What time does Boca vs Lanús play and how to watch the Clausura tournament LIVE TODAY",
-          "summary": "The Xeneize returns to the Bombonera to face the Garnet for the seventh round of the local championship. Follow him in Olé.",
+          "title": "What time Boca vs Lanús kicks off and how to watch the Torneo Clausura live today",
+          "summary": "Boca hosts Lanús at the Bombonera for matchday seven of the local championship.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "À quelle heure joue Boca vs Lanús et comment regarder EN DIRECT LE tournoi DE clôture aujourd'hui",
-          "summary": "Le Xeneize revient à la Bombonera pour se mesurer au Grenat pour la septième journée du championnat local. Suivez-le sur Olé.",
+          "title": "À quelle heure se joue Boca vs Lanús et comment voir le Torneo Clausura EN VIVO aujourd'hui",
+          "summary": "Boca accueille Lanús à la Bombonera à l'occasion de la septième journée du championnat argentin.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "في أي وقت تلعب Boca vs Lanús وكيفية مشاهدة بطولة Clausura مباشرة اليوم",
-          "summary": "El Xeneize vuelve a la Bombonera para medirse ante el Granate por la séptima fecha del campeonato local. Seguilo en Olé.",
+          "title": "موعد مباراة بوكا جونيورز ولانوس والقنوات الناقلة اليوم في الدوري الأرجنتيني",
+          "summary": "يستضيف بوكا جونيورز نظيره لانوس على ملعب لا بومبونيرا ضمن منافسات الجولة السابعة من الدوري المحلي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-primera/boca-vs-lanus-vivo-torneo-clausura-hoy-hora-ver-tv-online-formaciones-minuto-minuto_0_tTEHFMJnQ3.html",
@@ -1049,7 +1093,12 @@
           "url": "https://www.ole.com.ar/futbol-primera/boca-vs-lanus-vivo-torneo-clausura-hoy-hora-ver-tv-online-formaciones-minuto-minuto_0_tTEHFMJnQ3.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b673b41a8baf",
@@ -1058,23 +1107,27 @@
       "i18n": {
         "es": {
           "title": "El reto del Cholo Simeone a los periodistas: \"Se olvidaron de mí\"",
-          "summary": "El entrenador argentino habló sobre lo sucedido en la última conferencia de prensa con el Atlético y le puso un poco de humor a la situación de Julián Álvarez.",
-          "needs_translation": false
+          "summary": "En rueda de prensa con el Atlético, Cholo Simeone comentó con humor el protagonismo mediático centrado en Julián Álvarez tras no recibir preguntas personales.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El reto del Cholo Simeone a los periodistas: \"Se olvidaron de mí\"",
-          "summary": "El entrenador argentino habló sobre lo sucedido en la última conferencia de prensa con el Atlético y le puso un poco de humor a la situación de Julián Álvarez.",
-          "needs_translation": true
+          "title": "Cholo Simeone's challenge to journalists: \"You forgot about me\"",
+          "summary": "During an Atlético press conference, Cholo Simeone humorously addressed the media after questions focused almost entirely on the situation of Julián Álvarez.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El reto del Cholo Simeone a los periodistas: \"Se olvidaron de mí\"",
-          "summary": "El entrenador argentino habló sobre lo sucedido en la última conferencia de prensa con el Atlético y le puso un poco de humor a la situación de Julián Álvarez.",
-          "needs_translation": true
+          "title": "Le reproche de Cholo Simeone aux journalistes : « Vous m'avez oublié »",
+          "summary": "En conférence de presse avec l'Atlético, Cholo Simeone a réagi avec humour à l'attention médiatique quasi exclusive portée sur Julián Álvarez.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El reto del Cholo Simeone a los periodistas: \"Se olvidaron de mí\"",
-          "summary": "El entrenador argentino habló sobre lo sucedido en la última conferencia de prensa con el Atlético y le puso un poco de humor a la situación de Julián Álvarez.",
-          "needs_translation": true
+          "title": "عتاب تشولو سيميوني للصحفيين: \"لقد نسيتموني\"",
+          "summary": "مازح مدرب أتلتيكو مدريد تشولو سيميوني وسائل الإعلام في المؤتمر الصحفي بعدما استحوذت وضعية خوليان ألفاريز على اهتمام وأسئلة الصحفيين.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/espana/diego-simeone-cholo-reto-julian-conferencia-prensa-olvidaron_0_YczDMxSrav.html",
@@ -1096,7 +1149,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/espana/diego-simeone-cholo-reto-julian-conferencia-prensa-olvidaron_0_YczDMxSrav.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c7e5205ca713",
@@ -1104,24 +1162,48 @@
       "summary": "La Juventus perderá durante los próximos meses a uno de sus futbolistas más importantes, el turco Kenan Yildiz , que deberá someterse a una operación en el pie izquierdo tras sufrir una lesión en el quinto metatarso y que podría permanecer alejado de los terrenos de juego…",
       "i18n": {
         "es": {
-          "title": "Duro golpe para la Juventus: Yildiz, KO varios meses",
-          "summary": "La Juventus perderá durante los próximos meses a uno de sus futbolistas más importantes, el turco Kenan Yildiz , que deberá someterse a una operación en el pie izquierdo tras sufrir una lesión en el quinto metatarso y que podría permanecer alejado de los terrenos de juego…",
-          "needs_translation": false
+          "title": "Kenan Yildiz pasará por el quirófano y será baja tres meses en la Juventus",
+          "summary": "Kenan Yildiz deberá operarse tras sufrir una lesión en el quinto metatarso del pie izquierdo que le apartará del césped cerca de tres meses.",
+          "body": [
+            "Giorgio Chiellini confirmó la noticia tras el sorteo de la Liga Europa, aunque aclaró que este percance físico no comprometerá la carrera del atacante turco. El tiempo definitivo de recuperación quedará fijado tras la intervención quirúrgica y el proceso posterior de rehabilitación.",
+            "La ausencia del número diez deja a Luciano Spalletti sin una pieza clave en el arranque de curso. El técnico italiano tendrá que buscar soluciones inmediatas en su plantilla, con futbolistas como Kerim Alajbegović o Jérémie Boga como principales alternativas para el ataque."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Duro golpe para la Juventus: Yildiz, KO varios meses",
-          "summary": "La Juventus perderá durante los próximos meses a uno de sus futbolistas más importantes, el turco Kenan Yildiz , que deberá someterse a una operación en el pie izquierdo tras sufrir una lesión en el quinto metatarso y que podría permanecer alejado de los terrenos de juego…",
-          "needs_translation": true
+          "title": "Juventus: Kenan Yildiz to undergo surgery, out for three months",
+          "summary": "Kenan Yildiz faces around three months on the sidelines as he is set to undergo surgery on a fifth metatarsal injury in his left foot.",
+          "body": [
+            "Giorgio Chiellini confirmed the update following the Europa League draw, reassuring fans that the setback will not jeopardize the Turkish forward's long-term career. A precise recovery timeline will be established after the operation and the initial rehabilitation phase.",
+            "The loss of their number 10 deprives Luciano Spalletti of a focal point early in the campaign. The Italian manager must now reshape his frontline, with Kerim Alajbegović and Jérémie Boga emerging as the primary alternatives in attack."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Duro golpe para la Juventus: Yildiz, KO varios meses",
-          "summary": "La Juventus perderá durante los próximos meses a uno de sus futbolistas más importantes, el turco Kenan Yildiz , que deberá someterse a una operación en el pie izquierdo tras sufrir una lesión en el quinto metatarso y que podría permanecer alejado de los terrenos de juego…",
-          "needs_translation": true
+          "title": "Juventus : Kenan Yildiz va se faire opérer et sera absent trois mois",
+          "summary": "Touché au cinquième métatarse du pied gauche, Kenan Yildiz va subir une opération qui l'éloignera des terrains environ trois mois avec la Juventus.",
+          "body": [
+            "Giorgio Chiellini a officialisé la nouvelle en marge du tirage au sort de la Ligue Europa, précisant toutefois que ce pépin physique ne menaçait pas la suite de la carrière de l'attaquant turc. La durée exacte de son indisponibilité sera précisée après l'opération et le protocole de rééducation.",
+            "L'absence du numéro dix prive Luciano Spalletti d'un élément central pour ce début de saison. Le technicien italien va devoir puiser dans son effectif, où Kerim Alajbegović et Jérémie Boga apparaissent comme les premières options pour animer l'attaque."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Duro golpe para la Juventus: Yildiz, KO varios meses",
-          "summary": "La Juventus perderá durante los próximos meses a uno de sus futbolistas más importantes, el turco Kenan Yildiz , que deberá someterse a una operación en el pie izquierdo tras sufrir una lesión en el quinto metatarso y que podría permanecer alejado de los terrenos de juego…",
-          "needs_translation": true
+          "title": "يوفنتوس: كينان يلدز يخضع لعملية جراحية ويغيب لثلاثة أشهر",
+          "summary": "سيخضع كينان يلدز لعملية جراحية إثر إصابته في مشط القدم الخامس بالقدم اليسرى، ما سيبعده عن الملاعب لنحو ثلاثة أشهر.",
+          "body": [
+            "أكد جورجيو كيليني هذا النبأ عقب قرعة الدوري الأوروبي، موضحاً أن هذه الإصابة لن تهدد مسيرة المهاجم التركي. وسيتحدد موعد عودته النهائي بدقة بعد إجراء الجراحة وبدء برنامج التأهيل.",
+            "غياب حامل الرقم عشرة يحرم لوتشانو سباليتي من ركيزة أساسية في مستهل الموسم، ما يفرض على المدرب الإيطالي إيجاد حلول سريعة داخل قائمته، يتقدمها الثنائي كريم ألايبيغوفيتش وجيريمي بوغا لتعويض النقص الهجومي."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/serie-a/20260828/1004220675/juventus-pierde-yildiz-meses.html",
@@ -1143,7 +1225,20 @@
           "url": "https://www.mundodeportivo.com/futbol/serie-a/20260828/1004220675/juventus-pierde-yildiz-meses.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 8,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-28T18:33:58+00:00"
+        }
+      }
     },
     {
       "id": "aa734e367648",
@@ -1351,24 +1446,28 @@
       "summary": "Touché par les critiques après l'élimination en barrages de la Ligue des champions contre Fenerbahçe (1-2) mercredi, Paulo Fonseca, entraîneur de l'OL, a rappelé le bilan comptable de Lyon depuis 2020.",
       "i18n": {
         "fr": {
-          "title": "Paulo Fonseca sur les critiques liées à l'élimination en barrages de la Ligue des champions : « Je suis le meilleur entraîneur de l'histoire récente de l'OL »",
-          "summary": "Touché par les critiques après l'élimination en barrages de la Ligue des champions contre Fenerbahçe (1-2) mercredi, Paulo Fonseca, entraîneur de l'OL, a rappelé le bilan comptable de Lyon depuis 2020.",
-          "needs_translation": false
+          "title": "Paulo Fonseca sur les critiques après l'élimination en Ligue des champions : « Je suis le meilleur entraîneur de l'histoire récente de l'OL »",
+          "summary": "Critiqué après l'élimination de Lyon contre Fenerbahçe (1-2) en barrages de la Ligue des champions, Paulo Fonseca a défendu son bilan comptable à la tête du club depuis 2020.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Paulo Fonseca sur les critiques liées à l'élimination en barrages de la Ligue des champions : « Je suis le meilleur entraîneur de l'histoire récente de l'OL »",
-          "summary": "Touché par les critiques après l'élimination en barrages de la Ligue des champions contre Fenerbahçe (1-2) mercredi, Paulo Fonseca, entraîneur de l'OL, a rappelé le bilan comptable de Lyon depuis 2020.",
-          "needs_translation": true
+          "title": "Paulo Fonseca on criticism after Champions League play-off elimination: \"I am the best manager in recent Lyon history\"",
+          "summary": "Following Lyon's 1-2 defeat to Fenerbahçe in the Champions League play-offs, manager Paulo Fonseca responded to criticism by defending his track record at the club since 2020.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Paulo Fonseca sur les critiques liées à l'élimination en barrages de la Ligue des champions : « Je suis le meilleur entraîneur de l'histoire récente de l'OL »",
-          "summary": "Touché par les critiques après l'élimination en barrages de la Ligue des champions contre Fenerbahçe (1-2) mercredi, Paulo Fonseca, entraîneur de l'OL, a rappelé le bilan comptable de Lyon depuis 2020.",
-          "needs_translation": true
+          "title": "Paulo Fonseca sobre las críticas tras la eliminación en la Champions League: «Soy el mejor entrenador de la historia reciente del Lyon»",
+          "summary": "Tras la eliminación del Lyon ante el Fenerbahçe (1-2) en la fase previa de la Champions League, Paulo Fonseca respondió a las críticas defendiendo su balance en el club desde 2020.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Paulo Fonseca sur les critiques liées à l'élimination en barrages de la Ligue des champions : « Je suis le meilleur entraîneur de l'histoire récente de l'OL »",
-          "summary": "Touché par les critiques après l'élimination en barrages de la Ligue des champions contre Fenerbahçe (1-2) mercredi, Paulo Fonseca, entraîneur de l'OL, a rappelé le bilan comptable de Lyon depuis 2020.",
-          "needs_translation": true
+          "title": "باولو فونسيكا رداً على الانتقادات بعد الإقصاء من دوري أبطال أوروبا: «أنا أفضل مدرب في تاريخ ليون الحديث»",
+          "summary": "رد باولو فونسيكا، مدرب أولمبيك ليون، على الانتقادات الموجهة إليه بعد الإقصاء أمام فنربخشة (1-2) في ملحق دوري أبطال أوروبا، مدافعاً عن حصيلته وأرقامه مع الفريق منذ 2020.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Paulo-fonseca-sur-les-critiques-liees-a-l-elimination-en-barrages-de-la-ligue-des-champions-je-suis-le-meilleur-entraineur-de-l-histoire-recente-de-l-ol/1714180#at_medium=RSS_feeds",
@@ -1390,7 +1489,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Paulo-fonseca-sur-les-critiques-liees-a-l-elimination-en-barrages-de-la-ligue-des-champions-je-suis-le-meilleur-entraineur-de-l-histoire-recente-de-l-ol/1714180#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "52b1adbf0da6",
@@ -1399,23 +1503,27 @@
       "i18n": {
         "es": {
           "title": "La tremenda confesión de uno de los verdugos de River en la Sudamericana: “Me subía al auto y a veces tenía ganas de darme contra algo”",
-          "summary": "Fue clave en la eliminación del Millonario en el Monumental y, después de la clasificación, recordó uno de los momentos más difíciles que atravesó en su vida.",
-          "needs_translation": false
+          "summary": "Tras ser clave en la eliminación de River en el Monumental por la Sudamericana, el futbolista reveló haber atravesado graves problemas personales y pensamientos autodestructivos en el pasado.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "La tremenda confesión de uno de los verdugos de River en la Sudamericana: “Me subía al auto y a veces tenía ganas de darme contra algo”",
-          "summary": "Fue clave en la eliminación del Millonario en el Monumental y, después de la clasificación, recordó uno de los momentos más difíciles que atravesó en su vida.",
-          "needs_translation": true
+          "title": "The shocking confession of one of River's executioners in the Sudamericana: “I would get in the car and sometimes feel like crashing into something”",
+          "summary": "After helping eliminate River at the Monumental in the Sudamericana, the player opened up about overcoming severe personal struggles and past self-destructive thoughts.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La tremenda confesión de uno de los verdugos de River en la Sudamericana: “Me subía al auto y a veces tenía ganas de darme contra algo”",
-          "summary": "Fue clave en la eliminación del Millonario en el Monumental y, después de la clasificación, recordó uno de los momentos más difíciles que atravesó en su vida.",
-          "needs_translation": true
+          "title": "La terrible confession d'un des bourreaux de River en Sudamericana : « Je montais en voiture et j'avais parfois envie de foncer dans le décor »",
+          "summary": "Décisif lors de l'élimination de River au Monumental en Sudamericana, le joueur a confié avoir surmonté une période sombre de sa vie marquée par des pensées autodestructrices.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "La tremenda confesión de uno de los verdugos de River en la Sudamericana: “Me subía al auto y a veces tenía ganas de darme contra algo”",
-          "summary": "Fue clave en la eliminación del Millonario en el Monumental y, después de la clasificación, recordó uno de los momentos más difíciles que atravesó en su vida.",
-          "needs_translation": true
+          "title": "اعتراف صادم لأحد متسببي إقصاء ريفر بليت في سودامريكانا: \"كنت أركب سيارتي وأرغب أحياناً في الاصطدام بشيء ما\"",
+          "summary": "عقب مساهمته في إقصاء ريفر بليت من بطولة سودامريكانا على ملعب مونومنتال، كشف اللاعب عن معاناته السابقة من أزمة نفسية حادة وأفكار انتحارية تجاوزها لاحقاً.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/franco-fagundez-uruguayo-clasificacion-depresion-penales-cuartosdefinal-problemasfamiliares-monumental-copasudamericana-ayuda-ansiedad_0_ol4CbKmmJW.html",
@@ -1437,7 +1545,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/franco-fagundez-uruguayo-clasificacion-depresion-penales-cuartosdefinal-problemasfamiliares-monumental-copasudamericana-ayuda-ansiedad_0_ol4CbKmmJW.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ebb65fa9e3a8",
@@ -1445,24 +1558,48 @@
       "summary": "Les deux clubs pourraient se disputer la signature de l'ailier marocain de Watford formé à Montpellier. Son transfert se jouera aux alentours de 10 millions d'euros.",
       "i18n": {
         "fr": {
-          "title": "Bologne et le FC Porto ciblent Othmane Maamma",
-          "summary": "Les deux clubs pourraient se disputer la signature de l'ailier marocain de Watford formé à Montpellier. Son transfert se jouera aux alentours de 10 millions d'euros.",
-          "needs_translation": false
+          "title": "Bologne et le FC Porto à la lutte pour Othmane Maamma",
+          "summary": "Bologne et le FC Porto ciblent l'ailier marocain de Watford Othmane Maamma, évalué à près de 10 millions d'euros.",
+          "body": [
+            "Venu aux renseignements, Bologne prépare une offre concrète pour l'attaquant de 20 ans, sous contrat avec Watford jusqu'en juin 2029. Le FC Porto suit également de très près l'ancien joueur de Montpellier, déjà surveillé plus tôt cet été par Benfica, Crystal Palace et Everton.",
+            "Désigné meilleur joueur du dernier Mondial U20 remporté avec le Maroc à l'automne, l'ailier pourrait ainsi quitter les Hornets un an seulement après son arrivée."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Bologne et le FC Porto ciblent Othmane Maamma",
-          "summary": "Les deux clubs pourraient se disputer la signature de l'ailier marocain de Watford formé à Montpellier. Son transfert se jouera aux alentours de 10 millions d'euros.",
-          "needs_translation": true
+          "title": "Bologna and FC Porto battle for Watford winger Othmane Maamma",
+          "summary": "Bologna and FC Porto are targeting Watford's Moroccan winger Othmane Maamma, who is valued at around €10 million.",
+          "body": [
+            "Having made initial enquiries, Bologna are considering a formal bid for the 20-year-old forward, who is under contract at Watford until June 2029. FC Porto are also tracking the former Montpellier player, previously targeted by Benfica, Crystal Palace and Everton.",
+            "Named best player at the recent U20 World Cup won by Morocco in the autumn, the winger could leave the Hornets just a year after his arrival."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Bologne et le FC Porto ciblent Othmane Maamma",
-          "summary": "Les deux clubs pourraient se disputer la signature de l'ailier marocain de Watford formé à Montpellier. Son transfert se jouera aux alentours de 10 millions d'euros.",
-          "needs_translation": true
+          "title": "El Bolonia y el FC Porto pujan por el fichaje de Othmane Maamma",
+          "summary": "El Bolonia y el FC Porto siguen de cerca al extremo marroquí del Watford Othmane Maamma, tasado en unos 10 millones de euros.",
+          "body": [
+            "Tras pedir informes, el Bolonia valora presentar una oferta formal por el atacante de 20 años, vinculado al club inglés hasta junio de 2029. El FC Porto también vigila al canterano del Montpellier, seguido a principios de verano por Benfica, Crystal Palace y Everton.",
+            "Elegido mejor jugador del último Mundial Sub-20 conquistado con Marruecos en otoño, el extremo podría dejar los Hornets apenas un año después de su llegada."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Bologne et le FC Porto ciblent Othmane Maamma",
-          "summary": "Les deux clubs pourraient se disputer la signature de l'ailier marocain de Watford formé à Montpellier. Son transfert se jouera aux alentours de 10 millions d'euros.",
-          "needs_translation": true
+          "title": "بولونيا وبورتو يتنافسان على ضم المغربي عثمان معما",
+          "summary": "يسعى ناديا بولونيا وبورتو للتعاقد مع الجناح المغربي لنادي واتفورد، عثمان معما، في صفقة تُقدر بنحو 10 ملايين يورو.",
+          "body": [
+            "استفسر بولونيا عن وضعية اللاعب ويدرس تقديم عرض رسمي لضم المهاجم البالغ 20 عاماً، والمرتبط بعقد مع واتفورد حتى يونيو 2029. كما يراقب بورتو عن كثب خريج مونبلييه، بعد اهتمام سابق من بنفيكا وكريستال بالاس وإيفرتون.",
+            "وقد يغادر أفضل لاعب في كأس العالم للشباب الأخيرة المتوج بها مع المغرب، صفوف واتفورد بعد موسم واحد فقط من انضمامه."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Bologne-et-le-fc-porto-ciblent-othmane-maamma/1714177#at_medium=RSS_feeds",
@@ -1484,7 +1621,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Bologne-et-le-fc-porto-ciblent-othmane-maamma/1714177#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-28T18:34:00+00:00"
+        }
+      }
     },
     {
       "id": "997fa4200ce4",
@@ -1493,23 +1643,27 @@
       "i18n": {
         "es": {
           "title": "Matarazzo: “Queríamos grandes equipos en Europa y los tenemos; quiero lo máximo”",
-          "summary": "Pellegrino Matarazzo compareció ante los medios de comunicación en la víspera del debut liguero de la Real Sociedad en Anoeta con un discurso ambicioso, analítico y directo.",
-          "needs_translation": false
+          "summary": "En la víspera del debut liguero de la Real Sociedad en Anoeta, el técnico Pellegrino Matarazzo expresó su máxima ambición de cara a la temporada y las competiciones europeas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Matarazzo: “Queríamos grandes equipos en Europa y los tenemos; quiero lo máximo”",
-          "summary": "Pellegrino Matarazzo compareció ante los medios de comunicación en la víspera del debut liguero de la Real Sociedad en Anoeta con un discurso ambicioso, analítico y directo.",
-          "needs_translation": true
+          "title": "Matarazzo: “We wanted big teams in Europe and we have them; I want the maximum”",
+          "summary": "Ahead of Real Sociedad's league opener at Anoeta, coach Pellegrino Matarazzo outlined his high ambitions for the new season and upcoming European fixtures.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Matarazzo: “Queríamos grandes equipos en Europa y los tenemos; quiero lo máximo”",
-          "summary": "Pellegrino Matarazzo compareció ante los medios de comunicación en la víspera del debut liguero de la Real Sociedad en Anoeta con un discurso ambicioso, analítico y directo.",
-          "needs_translation": true
+          "title": "Matarazzo : « Nous voulions de grandes équipes en Europe et nous les avons ; je veux le maximum »",
+          "summary": "À la veille des débuts de la Real Sociedad en championnat à Anoeta, l'entraîneur Pellegrino Matarazzo a affiché ses ambitions pour la saison et la compétition européenne.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Matarazzo: “Queríamos grandes equipos en Europa y los tenemos; quiero lo máximo”",
-          "summary": "Pellegrino Matarazzo compareció ante los medios de comunicación en la víspera del debut liguero de la Real Sociedad en Anoeta con un discurso ambicioso, analítico y directo.",
-          "needs_translation": true
+          "title": "ماتاراتزو: \"أردنا مواجهة فرق كبرى في أوروبا وهذا ما حدث، وأطمح للأفضل\"",
+          "summary": "أكد بيليغرينو ماتاراتزو، مدرب ريال سوسيداد، طموحاته الكبيرة قبل انطلاق مشوار فريقه في الدوري على ملعب أنويتا وخلال مشاركته في المسابقات الأوروبية.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260828/1004220669/matarazzo-queriamos-grandes-equipos-europa-quiero-maximo.html",
@@ -1531,7 +1685,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260828/1004220669/matarazzo-queriamos-grandes-equipos-europa-quiero-maximo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c1d9e65ed104",
@@ -1540,23 +1699,27 @@
       "i18n": {
         "en": {
           "title": "Who am I? Guess Bundesliga star No 1",
-          "summary": "Work out the identity of today's Bundesliga player in as few attempts as possible.",
-          "needs_translation": false
+          "summary": "Identify today's featured Bundesliga player in as few attempts as possible.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Who am I? Guess Bundesliga star No 1",
-          "summary": "Work out the identity of today's Bundesliga player in as few attempts as possible.",
-          "needs_translation": true
+          "title": "Qui suis-je ? Devinez la star n° 1 de Bundesliga",
+          "summary": "Déterminez l'identité du joueur de Bundesliga du jour en un minimum de tentatives.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Who am I? Guess Bundesliga star No 1",
-          "summary": "Work out the identity of today's Bundesliga player in as few attempts as possible.",
-          "needs_translation": true
+          "title": "¿Quién soy? Adivina la estrella n.º 1 de la Bundesliga",
+          "summary": "Averigua la identidad del jugador de la Bundesliga de hoy en el menor número de intentos posible.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Who am I? Guess Bundesliga star No 1",
-          "summary": "Work out the identity of today's Bundesliga player in as few attempts as possible.",
-          "needs_translation": true
+          "title": "من أنا؟ خمن نجم الدوري الألماني رقم 1",
+          "summary": "اكتشف هوية لاعب الدوري الألماني المختار لهذا اليوم في أقل عدد ممكن من المحاولات.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/crmr997drnvo?at_medium=RSS&at_campaign=rss",
@@ -1578,7 +1741,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/crmr997drnvo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f35cc38ad7b1",
@@ -1630,7 +1798,12 @@
           "url": "https://www.kicker.de/uebersteht-freiburg-die-ligaphase-in-der-conference-league-1247546/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "84d2b53b5968",
@@ -1639,23 +1812,27 @@
       "i18n": {
         "es": {
           "title": "En la Bombonera y con un lazo histórico, se presentó la nueva camiseta alternativa de Boca",
-          "summary": "La referencia a los inicios inspiró el modelo que el equipo usará durante la temporada 2026/27. Las imágenes del evento y de las figuras y los pibes del plantel.",
-          "needs_translation": false
+          "summary": "Boca presentó en la Bombonera su nueva camiseta alternativa para la temporada 2026/27, con un diseño inspirado en los orígenes históricos del club.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "En la Bombonera y con un lazo histórico, se presentó la nueva camiseta alternativa de Boca",
-          "summary": "La referencia a los inicios inspiró el modelo que el equipo usará durante la temporada 2026/27. Las imágenes del evento y de las figuras y los pibes del plantel.",
-          "needs_translation": true
+          "title": "At the Bombonera and with a historic link, Boca presented their new away shirt",
+          "summary": "Boca presented their new away kit for the 2026/27 season at the Bombonera, featuring a design inspired by the club's historic origins.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "En la Bombonera y con un lazo histórico, se presentó la nueva camiseta alternativa de Boca",
-          "summary": "La referencia a los inicios inspiró el modelo que el equipo usará durante la temporada 2026/27. Las imágenes del evento y de las figuras y los pibes del plantel.",
-          "needs_translation": true
+          "title": "À la Bombonera et avec un lien historique, le nouveau maillot extérieur de Boca a été présenté",
+          "summary": "Boca a dévoilé à la Bombonera son nouveau maillot extérieur pour la saison 2026/27, arborant un design inspiré des débuts historiques du club.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "En la Bombonera y con un lazo histórico, se presentó la nueva camiseta alternativa de Boca",
-          "summary": "La referencia a los inicios inspiró el modelo que el equipo usará durante la temporada 2026/27. Las imágenes del evento y de las figuras y los pibes del plantel.",
-          "needs_translation": true
+          "title": "في لا بومبونيرا وبرابط تاريخي، بوكا جونيورز يقدم قميصه الاحتياطي الجديد",
+          "summary": "كشف نادي بوكا جونيورز في ملعب لا بومبونيرا عن قميصه الاحتياطي الجديد لموسم 2026/27، بتصميم مستوحى من البدايات التاريخية للنادي.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/boca-camiseta-nueva-origenes-inicios-bombonera_0_wl7aWSF2Jz.html",
@@ -1677,7 +1854,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/boca-camiseta-nueva-origenes-inicios-bombonera_0_wl7aWSF2Jz.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9132d2a3d634",
@@ -1686,23 +1868,27 @@
       "i18n": {
         "es": {
           "title": "De la expo rural, el polo y la Secretaría Técnica a dirigir River: la vida de Ponzio tras el retiro",
-          "summary": "Propietario de 540 hectáreas destinadas al cultivo y apasionado por los caballos, aunque siempre mantuvo su vínculo con el fútbol.",
-          "needs_translation": false
+          "summary": "Tras su retiro, Leonardo Ponzio compagina sus actividades agrícolas y su afición al polo con sus responsabilidades en River y la Secretaría Técnica.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "De la expo rural, el polo y la Secretaría Técnica a dirigir River: la vida de Ponzio tras el retiro",
-          "summary": "Propietario de 540 hectáreas destinadas al cultivo y apasionado por los caballos, aunque siempre mantuvo su vínculo con el fútbol.",
-          "needs_translation": true
+          "title": "From the rural expo, polo and the Secretaría Técnica to managing River: Ponzio's life after retirement",
+          "summary": "Following his retirement, Leonardo Ponzio divides his time between agricultural ventures, polo, and his role within River's Secretaría Técnica.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "De la expo rural, el polo y la Secretaría Técnica a dirigir River: la vida de Ponzio tras el retiro",
-          "summary": "Propietario de 540 hectáreas destinadas al cultivo y apasionado por los caballos, aunque siempre mantuvo su vínculo con el fútbol.",
-          "needs_translation": true
+          "title": "Des foires rurales, du polo et de la Secretaría Técnica à la direction de River : la vie de Ponzio après sa retraite",
+          "summary": "Après sa retraite, Leonardo Ponzio partage son temps entre l'agriculture, le polo et ses responsabilités à River au sein de la Secretaría Técnica.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "De la expo rural, el polo y la Secretaría Técnica a dirigir River: la vida de Ponzio tras el retiro",
-          "summary": "Propietario de 540 hectáreas destinadas al cultivo y apasionado por los caballos, aunque siempre mantuvo su vínculo con el fútbol.",
-          "needs_translation": true
+          "title": "من المعارض الزراعية والبولو والأمانة الفنية إلى قيادة ريفر بليت: حياة بونزيو بعد الاعتزال",
+          "summary": "يوفق ليوناردو بونزيو بعد اعتزاله كرة القدم بين إدارة أراضيه الزراعية وشغفه برياضة البولو، ومواصلة مهامه الفنية والإدارية في نادي ريفر بليت.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-plate-leonardo-ponzio-expo-rural-secretaria-tecnica-campo-historia_0_uRv84gotgO.html",
@@ -1724,7 +1910,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-plate-leonardo-ponzio-expo-rural-secretaria-tecnica-campo-historia_0_uRv84gotgO.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "54e17505ebde",
@@ -1780,23 +1971,27 @@
       "i18n": {
         "fr": {
           "title": "CAN 2027 : Salim Mvurya reçoit une délégation de la CAF au Kenya",
-          "summary": "Le secrétaire d'État aux Sports, Salim Mvurya, a accueilli la délégation de la CAF au Kenya pour la deuxième inspection des préparatifs du pays en vue The post CAN 2027 : Salim Mvurya reçoit une délégation de la CAF au Kenya appeared first on Africa Top Sports .",
-          "needs_translation": false
+          "summary": "Le secrétaire d'État aux Sports, Salim Mvurya, a accueilli une délégation de la CAF au Kenya pour la deuxième visite d'inspection des préparatifs de la CAN 2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "CAN 2027 : Salim Mvurya reçoit une délégation de la CAF au Kenya",
-          "summary": "Le secrétaire d'État aux Sports, Salim Mvurya, a accueilli la délégation de la CAF au Kenya pour la deuxième inspection des préparatifs du pays en vue The post CAN 2027 : Salim Mvurya reçoit une délégation de la CAF au Kenya appeared first on Africa Top Sports .",
-          "needs_translation": true
+          "title": "CAN 2027: Salim Mvurya receives a CAF delegation in Kenya",
+          "summary": "Cabinet Secretary for Sports Salim Mvurya welcomed a CAF delegation to Kenya for the second inspection visit regarding the country's preparations for CAN 2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "CAN 2027 : Salim Mvurya reçoit une délégation de la CAF au Kenya",
-          "summary": "Le secrétaire d'État aux Sports, Salim Mvurya, a accueilli la délégation de la CAF au Kenya pour la deuxième inspection des préparatifs du pays en vue The post CAN 2027 : Salim Mvurya reçoit une délégation de la CAF au Kenya appeared first on Africa Top Sports .",
-          "needs_translation": true
+          "title": "CAN 2027: Salim Mvurya recibe a una delegación de la CAF en Kenya",
+          "summary": "El secretario de Estado de Deportes, Salim Mvurya, recibió a una delegación de la CAF en Kenya para la segunda visita de inspección de los preparativos de la CAN 2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "CAN 2027 : Salim Mvurya reçoit une délégation de la CAF au Kenya",
-          "summary": "Le secrétaire d'État aux Sports, Salim Mvurya, a accueilli la délégation de la CAF au Kenya pour la deuxième inspection des préparatifs du pays en vue The post CAN 2027 : Salim Mvurya reçoit une délégation de la CAF au Kenya appeared first on Africa Top Sports .",
-          "needs_translation": true
+          "title": "كأس أمم إفريقيا 2027: سالم مفوريا يستقبل وفداً من الكاف في كينيا",
+          "summary": "استقبل وزير الرياضة الكيني سالم مفوريا وفداً من الاتحاد الإفريقي لكرة القدم في زيارة تفتيشية ثانية لمتابعة جاهزية كينيا لاستضافة كأس أمم إفريقيا 2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football/can-2027-salim-mvurya-recoit-une-delegation-de-la-caf-au-kenya/",
@@ -1818,7 +2013,12 @@
           "url": "https://africatopsports.com/football/can-2027-salim-mvurya-recoit-une-delegation-de-la-caf-au-kenya/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "af3164bcb0db",
@@ -1926,28 +2126,33 @@
       "i18n": {
         "de": {
           "title": "SC Freiburg gegen Monaco - und Mo Salah",
-          "summary": "Auf den SC Freiburg warten in der Conference League einige namhafte Gegner - unter anderem Mo Salah.",
-          "needs_translation": false
+          "summary": "Auf den SC Freiburg warten in der Conference League namhafte Gegner, darunter Monaco und Mo Salah.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "SC Freiburg gegen Monaco - und Mo Salah",
-          "summary": "Auf den SC Freiburg warten in der Conference League einige namhafte Gegner - unter anderem Mo Salah.",
-          "needs_translation": true
+          "title": "SC Freiburg against Monaco - and Mo Salah",
+          "summary": "SC Freiburg are set to face notable opponents in the Conference League, including Monaco and Mo Salah.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "SC Freiburg gegen Monaco - und Mo Salah",
-          "summary": "Auf den SC Freiburg warten in der Conference League einige namhafte Gegner - unter anderem Mo Salah.",
-          "needs_translation": true
+          "title": "Le SC Freiburg face à Monaco - et Mo Salah",
+          "summary": "Le SC Freiburg affrontera plusieurs adversaires de renom en Conference League, notamment Monaco et Mo Salah.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "SC Freiburg gegen Monaco - und Mo Salah",
-          "summary": "Auf den SC Freiburg warten in der Conference League einige namhafte Gegner - unter anderem Mo Salah.",
-          "needs_translation": true
+          "title": "El SC Freiburg contra el Monaco - y Mo Salah",
+          "summary": "El SC Freiburg se enfrentará a rivales destacados en la Conference League, entre ellos el Monaco y Mo Salah.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "SC Freiburg gegen Monaco - und Mo Salah",
-          "summary": "Auf den SC Freiburg warten in der Conference League einige namhafte Gegner - unter anderem Mo Salah.",
-          "needs_translation": true
+          "title": "إس سي فرايبورغ ضد موناكو - ومحمد صلاح",
+          "summary": "ينتظر إس سي فرايبورغ مواجهة عدة منافسين بارزين في دوري المؤتمر الأوروبي، من بينهم موناكو ومحمد صلاح.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/europa-conference-league/sc-freiburg-gegen-monaco-und-athen,infos-conference-league-auslosung-100.html",
@@ -1975,7 +2180,12 @@
           "url": "https://www.sportschau.de/fussball/europa-conference-league/sc-freiburg-gegen-monaco-und-athen,infos-conference-league-auslosung-100.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "bf10ad4d8a2c",
@@ -2089,28 +2299,33 @@
       "i18n": {
         "de": {
           "title": "Von Europas Spitze in die zweite Reihe: Die vielen Baustellen der DBBL",
-          "summary": "Während die deutsche Nationalmannschaft vor der Heim-WM von einer Medaille träumt, kämpft die Bundesliga mit semiprofessionellen Bedingungen, fehlender internationaler Konkurrenzfähigkeit und der Abwanderung ihrer Spielerinnen.",
-          "needs_translation": false
+          "summary": "Während die deutsche Nationalmannschaft vor der Heim-WM auf eine Medaille hofft, kämpft die Bundesliga mit semiprofessionellen Bedingungen, fehlender internationaler Konkurrenzfähigkeit und der Abwanderung ihrer Spielerinnen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Von Europas Spitze in die zweite Reihe: Die vielen Baustellen der DBBL",
-          "summary": "Während die deutsche Nationalmannschaft vor der Heim-WM von einer Medaille träumt, kämpft die Bundesliga mit semiprofessionellen Bedingungen, fehlender internationaler Konkurrenzfähigkeit und der Abwanderung ihrer Spielerinnen.",
-          "needs_translation": true
+          "title": "From Europe's top to the second tier: The DBBL's many construction sites",
+          "summary": "While the German national team aims for a medal at the home World Cup, the Bundesliga struggles with semi-professional conditions, a lack of international competitiveness, and player departures.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Von Europas Spitze in die zweite Reihe: Die vielen Baustellen der DBBL",
-          "summary": "Während die deutsche Nationalmannschaft vor der Heim-WM von einer Medaille träumt, kämpft die Bundesliga mit semiprofessionellen Bedingungen, fehlender internationaler Konkurrenzfähigkeit und der Abwanderung ihrer Spielerinnen.",
-          "needs_translation": true
+          "title": "Du sommet européen au second plan : les nombreux chantiers de la DBBL",
+          "summary": "Tandis que la Nationalmannschaft vise une médaille à la Coupe du monde à domicile, la Bundesliga subit des conditions semi-professionnelles, un manque de compétitivité internationale et le départ de ses joueuses.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Von Europas Spitze in die zweite Reihe: Die vielen Baustellen der DBBL",
-          "summary": "Während die deutsche Nationalmannschaft vor der Heim-WM von einer Medaille träumt, kämpft die Bundesliga mit semiprofessionellen Bedingungen, fehlender internationaler Konkurrenzfähigkeit und der Abwanderung ihrer Spielerinnen.",
-          "needs_translation": true
+          "title": "De la cima europea a un segundo plano: los numerosos problemas de la DBBL",
+          "summary": "Mientras la selección alemana aspira a una medalla en el Mundial en casa, la Bundesliga afronta condiciones semiprofesionales, falta de competitividad internacional y la marcha de sus jugadoras.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Von Europas Spitze in die zweite Reihe: Die vielen Baustellen der DBBL",
-          "summary": "Während die deutsche Nationalmannschaft vor der Heim-WM von einer Medaille träumt, kämpft die Bundesliga mit semiprofessionellen Bedingungen, fehlender internationaler Konkurrenzfähigkeit und der Abwanderung ihrer Spielerinnen.",
-          "needs_translation": true
+          "title": "من قمة أوروبا إلى الصف الثاني: أزمات عديدة تواجه الدوري الألماني للسيدات",
+          "summary": "بينما يسعى المنتخب الألماني لحصد ميدالية في كأس العالم على أرضه، تعاني البطولة المحلية من ظروف شبه احترافية وضعف التنافسية القارية وتزايد هجرة اللاعبات.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/von-europas-spitze-in-die-zweite-reihe-die-vielen-baustellen-der-dbbl-1246965/artikel#omrss",
@@ -2132,7 +2347,12 @@
           "url": "https://www.kicker.de/von-europas-spitze-in-die-zweite-reihe-die-vielen-baustellen-der-dbbl-1246965/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e8f28e71df52",
@@ -2235,23 +2455,27 @@
       "i18n": {
         "en": {
           "title": "Sunderland and Bournemouth draw AC Milan in Europa League",
-          "summary": "Sunderland will mark their first European campaign since 1973 with a trip to the San Siro after drawing AC Milan in the Europa League league phase.",
-          "needs_translation": false
+          "summary": "Sunderland will face AC Milan at San Siro in the Europa League league phase, marking the club's first European campaign since 1973.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Sunderland and Bournemouth draw AC Milan in Europa League",
-          "summary": "Sunderland will mark their first European campaign since 1973 with a trip to the San Siro after drawing AC Milan in the Europa League league phase.",
-          "needs_translation": true
+          "title": "Sunderland et Bournemouth héritent de l'AC Milan en Europa League",
+          "summary": "Sunderland affrontera l'AC Milan à San Siro lors de la phase de ligue de l'Europa League, marquant sa première campagne européenne depuis 1973.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Sunderland and Bournemouth draw AC Milan in Europa League",
-          "summary": "Sunderland will mark their first European campaign since 1973 with a trip to the San Siro after drawing AC Milan in the Europa League league phase.",
-          "needs_translation": true
+          "title": "Sunderland y Bournemouth se medirán al AC Milan en la Europa League",
+          "summary": "Sunderland jugará contra el AC Milan en San Siro durante la fase de liga de la Europa League, en su primera participación europea desde 1973.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Sunderland and Bournemouth draw AC Milan in Europa League",
-          "summary": "Sunderland will mark their first European campaign since 1973 with a trip to the San Siro after drawing AC Milan in the Europa League league phase.",
-          "needs_translation": true
+          "title": "سندرلاند وبورنموث في مواجهة إيه سي ميلان في الدوري الأوروبي",
+          "summary": "يلتقي سندرلاند بنظيره إيه سي ميلان في ملعب سان سيرو ضمن مرحلة الدوري من مسابقة الدوري الأوروبي، في أول مشاركة قارية للنادي منذ عام 1973.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/c5ymr4dxz9mo?at_medium=RSS&at_campaign=rss",
@@ -2273,7 +2497,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/c5ymr4dxz9mo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "619a8cfbf446",
@@ -2329,23 +2558,27 @@
       "i18n": {
         "fr": {
           "title": "L’OL retrouve Pierre Sage avec Crystal Palace, le gros tirage de l’OM, Rennes face à la Juve et Monaco qui reçoit Fribourg... Revivez le tirage au sort des Coupes d’Europe",
-          "summary": "Le tirage au sort de la Ligue Europa se déroule ce vendredi à Monaco. Trois clubs français sont concernés.",
-          "needs_translation": false
+          "summary": "Le tirage au sort de la Ligue Europa se déroule ce vendredi à Monaco, avec trois clubs français concernés par la compétition.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "L’OL retrouve Pierre Sage avec Crystal Palace, le gros tirage de l’OM, Rennes face à la Juve et Monaco qui reçoit Fribourg... Revivez le tirage au sort des Coupes d’Europe",
-          "summary": "Le tirage au sort de la Ligue Europa se déroule ce vendredi à Monaco. Trois clubs français sont concernés.",
-          "needs_translation": true
+          "title": "L’OL faces Pierre Sage with Crystal Palace, tough draw for OM, Rennes against Juve and Monaco hosts Fribourg: Relive the European draw",
+          "summary": "The Ligue Europa draw takes place this Friday in Monaco, with three French clubs discovering their European matchups.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "L’OL retrouve Pierre Sage avec Crystal Palace, le gros tirage de l’OM, Rennes face à la Juve et Monaco qui reçoit Fribourg... Revivez le tirage au sort des Coupes d’Europe",
-          "summary": "Le tirage au sort de la Ligue Europa se déroule ce vendredi à Monaco. Trois clubs français sont concernés.",
-          "needs_translation": true
+          "title": "L’OL se reencuentra con Pierre Sage en el Crystal Palace, duro sorteo para el OM, Rennes ante la Juve y Monaco recibe al Fribourg... Revive el sorteo europeo",
+          "summary": "El sorteo de la Ligue Europa se celebra este viernes en Monaco, con tres clubes franceses en liza para la competición.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "L’OL retrouve Pierre Sage avec Crystal Palace, le gros tirage de l’OM, Rennes face à la Juve et Monaco qui reçoit Fribourg... Revivez le tirage au sort des Coupes d’Europe",
-          "summary": "Le tirage au sort de la Ligue Europa se déroule ce vendredi à Monaco. Trois clubs français sont concernés.",
-          "needs_translation": true
+          "title": "أولمبيك ليون يواجه بيير ساج مع كريستال بالاس، قرعة صعبة لمارسيليا، رين ضد يوفنتوس وموناكو يستضيف فرايبورغ... نتائج قرعة الكؤوس الأوروبية",
+          "summary": "أُجريت قرعة الدوري الأوروبي يوم الجمعة في موناكو، حيث تعرفت ثلاثة أندية فرنسية على منافسيها في البطولة.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-europa/en-direct-ligue-europa-marseille-rennes-et-lyon-vont-connaitre-leurs-adversaires-au-tirage-au-sort-20260828",
@@ -2367,7 +2600,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-europa/en-direct-ligue-europa-marseille-rennes-et-lyon-vont-connaitre-leurs-adversaires-au-tirage-au-sort-20260828"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8fb808b2fc35",
@@ -2414,7 +2652,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260828/1004220655/viejos-conocidos-aroma-premier-dos-campeones-jugaban-segunda-curiosidades-sorteo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d2c3bad3011e",
@@ -2423,23 +2666,27 @@
       "i18n": {
         "es": {
           "title": "Los nombres propios de la rueda de prensa de Funes: Mourinho, Ochoa, Larrubia, Huijsen…",
-          "summary": "La comparecencia de Funes en la previa del Real Madrid-Málaga CF dio para mucho.",
-          "needs_translation": false
+          "summary": "En la rueda de prensa previa al partido entre el Real Madrid y el Málaga CF, Funes repasó la actualidad del equipo y destacó nombres como Mourinho, Ochoa, Larrubia y Huijsen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Los nombres propios de la rueda de prensa de Funes: Mourinho, Ochoa, Larrubia, Huijsen…",
-          "summary": "La comparecencia de Funes en la previa del Real Madrid-Málaga CF dio para mucho.",
-          "needs_translation": true
+          "title": "Key names from Funes' press conference: Mourinho, Ochoa, Larrubia, Huijsen...",
+          "summary": "Ahead of the match between Real Madrid and Málaga CF, Funes held a press conference discussing several key figures, including Mourinho, Ochoa, Larrubia, and Huijsen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Los nombres propios de la rueda de prensa de Funes: Mourinho, Ochoa, Larrubia, Huijsen…",
-          "summary": "La comparecencia de Funes en la previa del Real Madrid-Málaga CF dio para mucho.",
-          "needs_translation": true
+          "title": "Les noms marquants de la conférence de presse de Funes : Mourinho, Ochoa, Larrubia, Huijsen…",
+          "summary": "Lors de sa conférence de presse avant la rencontre Real Madrid-Málaga CF, Funes a abordé l'actualité en évoquant notamment Mourinho, Ochoa, Larrubia et Huijsen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Los nombres propios de la rueda de prensa de Funes: Mourinho, Ochoa, Larrubia, Huijsen…",
-          "summary": "La comparecencia de Funes en la previa del Real Madrid-Málaga CF dio para mucho.",
-          "needs_translation": true
+          "title": "أبرز الأسماء في المؤتمر الصحفي لفونيس: مورينيو، أوتشوا، لاروبيا، هويسين...",
+          "summary": "تحدث فونيس في المؤتمر الصحفي الذي يسبق مباراة ريال مدريد وملقا عن عدة موضوعات بارزة، متطرقاً إلى أسماء مثل مورينيو، أوتشوا، لاروبيا وهويسين.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/nombres-propios-rueda-prensa-funes-133736655?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -2461,7 +2708,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/nombres-propios-rueda-prensa-funes-133736655?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     }
   ]
 }
