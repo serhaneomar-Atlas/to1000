@@ -48,11 +48,11 @@ def parse_month_year(iso_ts: str):
     return dt.month, dt.year
 
 
-def build_patterns(goals, remaining, month, year):
+def build_patterns(goals, remaining, month, year, stats=None):
     g, r = str(goals), str(remaining)
     me, mf, mes = MONTHS_EN[month-1], MONTHS_FR[month-1], MONTHS_ES[month-1]
 
-    return [
+    patterns = [
         # Meta English
         (re.compile(r"\b\d{3,4} scored, \d{1,3} to go"), f"{g} scored, {r} to go", "meta-en"),
         (re.compile(r"\xe2\x80\x94 \d{3,4}/1000 Goals".encode().decode()), f"— {g}/1000 Goals", "og-title-dash"),
@@ -79,7 +79,9 @@ def build_patterns(goals, remaining, month, year):
         # C'est le premier chiffre que voit un visiteur, et deux valeurs
         # différentes sur le même écran suffisent à faire douter du reste.
         (re.compile(r"(Live\s*·\s*)\d{3,4}"), lambda m: f"{m.group(1)}{g}", "live-pill"),
-        (re.compile(r'class="n impact">\d{3,4}<'), f'class="n impact">{g}<', "stat-tile"),
+        # (?!1000<) : ne jamais écraser la tuile « L'objectif » qui vaut 1000
+        # — bug constaté le 28/08 : la home affichait « 977 · L'objectif ».
+        (re.compile(r'class="n impact">(?!1000<)\d{3,4}<'), f'class="n impact">{g}<', "stat-tile"),
         (re.compile(r"<b>\d{1,3} buts</b> avant l"), f"<b>{r} buts</b> avant l", "meta-remaining-fr"),
         (re.compile(r"Ronaldo à \d{1,3} buts du cap"), f"Ronaldo à {r} buts du cap", "faq-remaining-fr"),
 
@@ -165,6 +167,31 @@ def build_patterns(goals, remaining, month, year):
             f"const LIVE_GOALS = {g}", "goals-live-var"),
     ]
 
+    # ── Dernier but (fallback statique du hero) ─────────────────────────────
+    # La ligne « Dernier but vs X · Compétition » de la home était en dur et
+    # jamais resynchronisée (restée sur « Ouzbékistan · Coupe du Monde » alors
+    # que stats.json disait Al Riyadh depuis le 21/08). On la régénère depuis
+    # stats.json à chaque build, avec le pourcentage de progression.
+    pct = f"{goals / 10:.1f}".replace(".", ",")
+    stats = stats or {}
+    opp = stats.get("last_goal_opponent")
+    comp = stats.get("last_goal_competition")
+    COMP_FR = {"FIFA World Cup": "Coupe du Monde", "UEFA Nations League": "Ligue des Nations",
+               "UEFA Euro": "Euro", "Friendly": "Amical"}
+    OPP_FR = {"Uzbekistan": "Ouzbékistan", "Spain": "Espagne", "Wales": "Pays de Galles",
+              "Colombia": "Colombie", "Croatia": "Croatie", "DR Congo": "RD Congo"}
+    if opp and comp:
+        patterns.append((
+            re.compile(r'<p class="ch-foot">Progression [\d,\.]+ % · Dernier but vs <b>[^<]+</b> · [^<]+</p>'),
+            f'<p class="ch-foot">Progression {pct} % · Dernier but vs <b>{OPP_FR.get(opp, opp)}</b> · {COMP_FR.get(comp, comp)}</p>',
+            "ch-foot-last-goal"))
+    patterns.append((
+        re.compile(r'aria-label="Progression vers 1000 buts : [\d,\.]+ pour cent"'),
+        f'aria-label="Progression vers 1000 buts : {pct} pour cent"',
+        "progressbar-aria-pct"))
+
+    return patterns
+
 
 def apply_patterns(text, patterns, verbose=False):
     counts = {}
@@ -217,7 +244,7 @@ def main():
     print(f"Stats source: goals={goals}, remaining={remaining}, date={MONTHS_EN[month-1]} {year}")
     print()
 
-    patterns = build_patterns(goals, remaining, month, year)
+    patterns = build_patterns(goals, remaining, month, year, stats)
 
     targets = [PUBLIC_DIR / "index.html", PUBLIC_DIR / "goals.html"]
     blog_dir = PUBLIC_DIR / "blog"
