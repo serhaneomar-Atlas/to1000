@@ -167,26 +167,27 @@
       "i18n": {
         "en": {
           "title": "Why Liverpool aren't getting the best out of Isak",
-          "summary": "BBC Sport pundit Joe Hart believes Alexander Isak dropping deep to receive the ball instead of staying forward is a sign the striker is low in confidence.",
-          "needs_translation": false
+          "summary": "BBC Sport pundit Joe Hart suggests Alexander Isak is lacking confidence, pointing to his tendency to drop deep rather than staying forward in attack.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Pourquoi Liverpool ne tire pas le meilleur parti d'Isak",
-          "summary": "Joe Hart, expert de BBC Sport, pense qu'Alexander Isak plonge profondément pour recevoir le ballon au lieu de rester en avant est un signe que l'attaquant a peu confiance en lui.",
+          "summary": "Le consultant de BBC Sport Joe Hart estime qu'Alexander Isak manque de confiance, soulignant sa tendance à décrocher plutôt qu'à rester en pointe de l'attaque.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
           "title": "Por qué Liverpool no está sacando lo mejor de Isak",
-          "summary": "El experto en deportes de la BBC Joe Hart cree que Alexander Isak cae profundamente para recibir el balón en lugar de mantenerse adelante es una señal de que el delantero tiene poca confianza.",
+          "summary": "El analista de BBC Sport Joe Hart señala que Alexander Isak carece de confianza, evidenciado por su tendencia a bajar a recibir el balón en lugar de mantenerse en ataque.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "لماذا لا يحصل ليفربول على أفضل النتائج من إسحاق",
-          "summary": "يعتقد الناقد في بي بي سي سبورت جو هارت أن إسقاط ألكسندر إسحاق بعمق لاستلام الكرة بدلاً من البقاء في المقدمة هو علامة على انخفاض ثقة المهاجم.",
+          "title": "لماذا لا يستفيد ليفربول بالشكل الأمثل من إيزاك",
+          "summary": "يرى محلل بي بي سي سبورت جو هارت أن ألكسندر إيزاك يعاني من نقص الثقة، مستشهداً بتراجعه لاستلام الكرة بدلاً من التمركز في الهجوم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/videos/cx2zwrwg5d4o?at_medium=RSS&at_campaign=rss",
@@ -208,7 +209,12 @@
           "url": "https://www.bbc.co.uk/sport/football/videos/cx2zwrwg5d4o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ae069920fa1e",
@@ -258,7 +264,12 @@
           "url": "https://www.bbc.co.uk/sport/football/videos/cde0k31731xo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8938eb3d653f",
@@ -266,27 +277,48 @@
       "summary": "Le FC Nantes et les Young Boys de Berne sont parvenus à un accord pour le transfert du jeune attaquant des Canaris Herba Guirassy (20 ans). Cette opération devrait s'élever à 5 millions d'euros.",
       "i18n": {
         "fr": {
-          "title": "Mercato : accord entre Nantes et les Young Boys pour Herba Guirassy",
-          "summary": "Le FC Nantes et les Young Boys de Berne sont parvenus à un accord pour le transfert du jeune attaquant des Canaris Herba Guirassy (20 ans). Cette opération devrait s'élever à 5 millions d'euros.",
-          "needs_translation": false
+          "title": "FC Nantes : accord à 5 M€ avec les Young Boys pour Herba Guirassy",
+          "summary": "Le FC Nantes s'est entendu avec les Young Boys de Berne pour céder son ailier Herba Guirassy contre cinq millions d'euros.",
+          "body": [
+            "Sous contrat jusqu'en juin 2028, l'international Espoirs de 20 ans s'apprête à rallier la première division suisse avant la fin du marché estival. Formé à Nantes et demi-finaliste de la Youth League en 2024, il compte sept buts et deux passes décisives en 46 rencontres sous le maillot jaune et vert.",
+            "L'attaquant s'illustrait particulièrement dans ce début de saison en Ligue 2, après avoir marqué à Laval puis délivré une passe décisive samedi dernier sur le terrain de Guingamp."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Mercato: agreement between Nantes and the Young Boys for Herba Guirassy",
-          "summary": "FC Nantes and the Bern Young Boys have reached an agreement for the transfer of the young Canaris striker Herba Guirassy (20 years old). This operation is expected to amount to 5 million euros.",
+          "title": "FC Nantes agree €5m deal with Young Boys for Herba Guirassy",
+          "summary": "FC Nantes have agreed to sell winger Herba Guirassy to Swiss side Young Boys for a fee of €5m.",
+          "body": [
+            "Under contract until June 2028, the 20-year-old France U21 international is poised to join the Swiss top flight before the transfer window closes. A product of the Nantes academy and Youth League semi-finalist in 2024, he scored seven goals and provided two assists in 46 senior appearances.",
+            "The forward had made a sharp start to the Ligue 2 campaign, scoring away to Laval before setting up a goal at Guingamp last weekend."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Mercado: acuerdo entre Nantes y los Young Boys por Herba Guirassy",
-          "summary": "El FC Nantes y los Young Boys de Berna han llegado a un acuerdo para el traspaso del joven delantero de los Canarios Herba Guirassy (20 años). Se espera que esta operación ascienda a 5 millones de euros.",
+          "title": "FC Nantes: acuerdo de 5 M€ con Young Boys por Herba Guirassy",
+          "summary": "El FC Nantes ha alcanzado un acuerdo con Young Boys para traspasar a su extremo Herba Guirassy por cinco millones de euros.",
+          "body": [
+            "Con contrato hasta junio de 2028, el internacional sub-21 de 20 años pondrá rumbo a la máxima categoría suiza antes del cierre del mercado. Formado en la cantera gala y semifinalista de la Youth League en 2024, acumula siete goles y dos asistencias en 46 partidos oficiales.",
+            "El atacante estaba destacando en este arranque de Ligue 2, tras marcar a domicilio ante Laval y repartir una asistencia el pasado fin de semana en el campo de Guingamp."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ميركاتو: اتفاق بين نانت والفتيان الصغار من أجل هيربا جيراسي",
-          "summary": "توصل نادي نانت وبرن يونغ بويز إلى اتفاق لنقل مهاجم الكناري الشاب هيربا غويراسي (20 سنة). ومن المتوقع أن تصل هذه العملية إلى 5 ملايين يورو.",
+          "title": "نانت يتوصل لاتفاق بقيمة 5 ملايين يورو مع يونغ بويز لبيع هيربا غيراسي",
+          "summary": "توصل نادي نانت الفرنسي لاتفاق مع يونغ بويز السويسري للتخلي عن جناحه هيربا غيراسي مقابل خمسة ملايين يورو.",
+          "body": [
+            "ويستعد الدولي مع منتخب الشباب البالغ 20 عاماً، والمرتبط بعقد حتى يونيو 2028، لخوض تجربة في الدوري السويسري الممتاز قبل إسدال الستار على سوق الانتقالات. وكان اللاعب، خريج مدرسة نانت ونصف نهائي دوري الشباب الأوروبي 2024، قد سجل 7 أهداف وقدم تمريرتين حاسمتين في 46 مباراة.",
+            "وبصم المهاجم الشاب على بداية قوية في دوري الدرجة الثانية الفرنسي هذا الموسم، بتسجيله أمام لافال وصناعته هدفاً السبت الماضي على ملعب غانغان."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Mercato-accord-entre-nantes-et-les-young-boys-pour-herba-guirassy/1714635#at_medium=RSS_feeds",
@@ -308,7 +340,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Mercato-accord-entre-nantes-et-les-young-boys-pour-herba-guirassy/1714635#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-29T23:16:36+00:00"
+        }
+      }
     },
     {
       "id": "bb57476a406f",
@@ -358,7 +403,12 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20260830/1004221144/ancelotti-coincide-hoy-xabi-alonso-stamford-bridge.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b8ea4d3e8264",
@@ -367,26 +417,27 @@
       "i18n": {
         "es": {
           "title": "Les bajaron el pulgar: silbidos e insultos de los hinchas de Central para Almirón y Copetti",
-          "summary": "Tras la eliminación en la Libertadores, el Canalla volvió a ser local: el DT y el delantero fueron los más resistidos. Mirá el video.",
-          "needs_translation": false
+          "summary": "Tras la eliminación en la Libertadores, los hinchas de Central manifestaron su descontento con silbidos e insultos hacia el entrenador Almirón y el delantero Copetti en su regreso a casa.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "They lowered their thumbs: whistles and insults from Central fans for Almirón and Copetti",
-          "summary": "After the elimination in the Libertadores, Canalla went home again: the coach and the striker were the most resisted. Watch the video.",
+          "title": "Thumbs down: Central fans whistle and insult Almirón and Copetti",
+          "summary": "Following their elimination from the Libertadores, Central supporters voiced their frustration by whistling and insulting manager Almirón and forward Copetti upon their return home.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Ils ont baissé le pouce : sifflements et insultes des supporters de Central pour Almirón et Copetti",
-          "summary": "Après l'élimination à Libertadores, le Canalla est redevenu local : le DT et l'attaquant ont été les plus résistants. Regardez la vidéo.",
+          "title": "Pouce baissé : sifflets et insultes des supporters de Central envers Almirón et Copetti",
+          "summary": "Après l'élimination en Libertadores, les supporters de Central ont manifesté leur mécontentement en ciblant l'entraîneur Almirón et l'attaquant Copetti par des sifflets et des insultes à domicile.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "خفضوا إبهامهم: صفارات وإهانات من المشجعين المركزيين لألميرون وكوبيتي",
-          "summary": "بعد الإقصاء في ليبرتادوريس، عاد كانالا إلى المنزل مرة أخرى: كان المدرب والمهاجم الأكثر مقاومة. شاهدوا الفيديو.",
+          "title": "استياء جماهيري: صافرات واستهجان من مشجعي سنترال ضد ألميرون وكوبيتي",
+          "summary": "عقب الإقصاء من بطولة ليبرتادوريس، واجهت جماهير سنترال المدير الفني ألميرون والمهاجم كوبيتي بصافرات الاستهجان والهتافات المعادية في أول مباراة للفريق على ملعبه.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/rosario-central/silbidos-insultos-almiron-copetti-rosario-central_0_jLB5kpE9Qr.html",
@@ -408,7 +459,12 @@
           "url": "https://www.ole.com.ar/rosario-central/silbidos-insultos-almiron-copetti-rosario-central_0_jLB5kpE9Qr.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "448dd708401b",
@@ -417,26 +473,27 @@
       "i18n": {
         "es": {
           "title": "La última visita de River a Banfield: cómo le fue y cuántos entrenadores pasaron",
-          "summary": "El Millonario enfrentará al Taladro en el Florencio Sola, un estadio donde no juega desde hace bastante tiempo.",
-          "needs_translation": false
+          "summary": "River se prepara para visitar a Banfield en el estadio Florencio Sola, escenario donde no disputa un partido desde hace un largo período.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "River's last visit to Banfield: how it went and how many coaches spent",
-          "summary": "The Millionaire will face the Drill in Florencio Sola, a stadium where he has not played for quite some time.",
+          "title": "River's last visit to Banfield: past results and managerial changes since",
+          "summary": "River is set to face Banfield at the Florencio Sola stadium, returning to the venue after an extended absence.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La dernière visite de River à Banfield : comment ça s'est passé et combien d'entraîneurs ont passé",
-          "summary": "Le Millionnaire affrontera le Perceur au Florencio Sola, un stade où il ne joue plus depuis un certain temps.",
+          "title": "La dernière visite de River à Banfield : bilan et entraîneurs passés depuis",
+          "summary": "River s'apprête à affronter Banfield au stade Florencio Sola, une enceinte où le club n'a plus joué depuis une longue période.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "زيارة ريفر الأخيرة إلى بانفيلد: كيف سارت الأمور وعدد المدربين الذين قضوا",
-          "summary": "سيواجه المليونير التدريب في فلورنسيو سولا، وهو ملعب لم يلعب فيه منذ بعض الوقت.",
+          "title": "آخر زيارة لريفر بليت إلى بانفيلد: النتائج وتغييرات المدربين منذ ذلك الحين",
+          "summary": "يستعد ريفر بليت لمواجهة بانفيلد على ملعب فلورينسيو سولا، في عودة للفريق إلى هذا الملعب بعد غياب دام لفترة طويلة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-ultima-vez-visito-banfield-2023-demichelis_0_gNWuXn01Q4.html",
@@ -458,7 +515,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-ultima-vez-visito-banfield-2023-demichelis_0_gNWuXn01Q4.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ca5aa061095b",
@@ -467,32 +529,33 @@
       "i18n": {
         "de": {
           "title": "Die Sportschau am Samstag in voller Länge",
-          "summary": "Sehen Sie hier die Sportschau am Samstag mit den Zusammenfassungen der Bundesliga, 2. Bundesliga und der 3.",
-          "needs_translation": false
+          "summary": "Die komplette Ausgabe der Sportschau vom Samstag bietet die Spielzusammenfassungen der Bundesliga, der 2. Bundesliga sowie der 3. Liga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Saturday's full-length sports show",
-          "summary": "Watch the sports show on Saturday with the summaries of the Bundesliga, 2. Bundesliga and 3.",
+          "title": "Saturday's Sportschau in full length",
+          "summary": "The full Saturday edition of Sportschau features comprehensive highlights from the Bundesliga, 2. Bundesliga, and 3. Liga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le spectacle sportif complet du samedi",
-          "summary": "Regardez ici l'émission sportive du samedi avec les résumés de la Bundesliga, de la 2e Bundesliga et de la 3e Bundesliga.",
+          "title": "La Sportschau du samedi en intégralité",
+          "summary": "L'émission complète de la Sportschau du samedi propose les résumés de toutes les rencontres de Bundesliga, de 2. Bundesliga et de 3. Liga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El espectáculo deportivo del sábado en toda su extensión",
-          "summary": "Vea aquí el espectáculo deportivo del sábado con los resúmenes de la Bundesliga, la 2ª Bundesliga y la 3ª",
+          "title": "La Sportschau del sábado al completo",
+          "summary": "El programa completo de Sportschau del sábado ofrece los resúmenes detallados de los partidos de la Bundesliga, la 2. Bundesliga y la 3. Liga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "العرض الرياضي الكامل يوم السبت",
-          "summary": "شاهد العرض الرياضي يوم السبت مع ملخصات الدوري الألماني، 2. الدوري الألماني و 3.",
+          "title": "برنامج سبورتسشاو يوم السبت كاملاً",
+          "summary": "يقدم برنامج سبورتسشاو ليوم السبت ملخصات كاملة لمباريات دوري الدرجة الأولى والثانية والثالثة في ألمانيا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/die-sportschau-am-samstag-in-voller-laenge,sportschau-am-samstag-re-live-2908-100.html",
@@ -520,7 +583,12 @@
           "url": "https://www.sportschau.de/fussball/die-sportschau-am-freitag-in-voller-laenge,sportschau-am-freitag-re-live-2808-100.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e67205f70e97",
@@ -579,26 +647,27 @@
       "i18n": {
         "es": {
           "title": "Los partidos amistosos de este sábado 29/08",
-          "summary": "Ángel Cárdenas- Goleada del Terrassa al Badalona en el último test de los dos equipos antes de iniciar la liga.",
-          "needs_translation": false
+          "summary": "El Terrassa goleó al Badalona en el último partido amistoso de preparación de ambos equipos antes de comenzar la liga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "This Saturday's friendly matches 29/08",
-          "summary": "Ángel Cárdenas- Scored from Terrassa to Badalona in the last test of the two teams before starting the league.",
+          "title": "Friendly matches of this Saturday 29/08",
+          "summary": "Terrassa secured a heavy victory over Badalona in the final pre-season friendly for both clubs ahead of the league start.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Les matches amicaux de ce samedi 29/08",
-          "summary": "Ángel Cárdenas- Goleada de Terrassa al Badalona dans le dernier test des deux équipes avant de commencer la ligue.",
+          "summary": "Terrassa a largement battu Badalona lors du dernier match amical de préparation des deux équipes avant le coup d'envoi du championnat.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباريات يوم السبت الودية 29/08",
-          "summary": "أنخيل كارديناس - سجل من تيراسا إلى بادالونا في الاختبار الأخير للفريقين قبل بدء الدوري.",
+          "title": "المباريات الودية لهذا السبت 29/08",
+          "summary": "حقق تيراسا فوزا عريضا على بادالونا في الاختبار الودي الأخير للفريقين قبل انطلاق منافسات الدوري.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/futbol-catala/20260829/1004221130/partidos-amistosos-sabado-29-08.html",
@@ -620,7 +689,12 @@
           "url": "https://www.mundodeportivo.com/futbol/futbol-catala/20260829/1004221130/partidos-amistosos-sabado-29-08.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "406c30049a73",
@@ -629,26 +703,27 @@
       "i18n": {
         "es": {
           "title": "Cómo escaló Boca en la tabla anual tras el empate de Vélez y la derrota de Central",
-          "summary": "El triunfo agónico sobre Lanús le dio al Xeneize la posibilidad de acomodarse en busca de los puestos de Libertadores y del título de 2026.",
-          "needs_translation": false
+          "summary": "Gracias a su victoria agónica sobre Lanús, Boca mejoró su posición en la tabla anual para acercarse a la clasificación a la Libertadores y la pelea por el título.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "How Boca climbed the annual table after Vélez's draw and Central's defeat",
-          "summary": "The agonizing triumph over Lanus gave the Xeneize the chance to settle down in search of the posts of Liberators and the 2026 title.",
+          "title": "How Boca climbed the annual standings after Vélez draw and Central defeat",
+          "summary": "A late victory over Lanús allowed Boca to climb the annual standings, boosting its push for Libertadores qualification and the title.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Comment Boca a grimpé dans le tableau annuel après le nul de Vélez et la défaite de Central",
-          "summary": "Le triomphe agonisant sur Lanús a donné au Xeneize la possibilité de s'accommoder à la recherche des postes de Libertadores et du titre 2026.",
+          "title": "Comment Boca a progressé au classement annuel après le nul de Vélez et la défaite de Central",
+          "summary": "Grâce à sa victoire arrachée face à Lanús, Boca grimpe au classement annuel et se replace dans la course à la Libertadores et au titre.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كيف تسلق بوكا الطاولة السنوية بعد تعادل فيليز وهزيمة سنترال",
-          "summary": "أعطى الانتصار المؤلم على لانوس Xeneize الفرصة للاستقرار بحثًا عن مناصب المحررين ولقب 2026.",
+          "title": "كيف تقدم بوكا في الترتيب السنوي بعد تعادل فيليز وهزيمة سينترال",
+          "summary": "عزز بوكا موقعه في جدول الترتيب السنوي بفضل فوزه القاتل على لانوس، ليعيد إحياء آماله في حجز مقعد مؤهل إلى كوبا ليبرتادوريس والمنافسة على اللقب.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/quedo-boca-tabla-anual-partidos-sabado_0_DSLgdMiUuD.html",
@@ -670,7 +745,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/quedo-boca-tabla-anual-partidos-sabado_0_DSLgdMiUuD.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "01845a9a836b",
@@ -829,26 +909,27 @@
       "i18n": {
         "fr": {
           "title": "« Nous avons cette nécessité de vendre des joueurs » : Paolo Fonseca évoque la fin du mercato de l'OL après le nul contre Le Havre en Ligue 1",
-          "summary": "Après le match nul de l'OL ce samedi en Ligue 1 contre Le Havre (1-1), Paulo Fonseca a évoqué la fin du mercato. L'entraîneur lyonnais n'a pas caché que le club était dans la « nécessité de vendre des joueurs ».",
-          "needs_translation": false
+          "summary": "Après le match nul de l'OL contre Le Havre (1-1) en Ligue 1, Paulo Fonseca a confirmé que le club avait la nécessité de vendre des joueurs avant la fin du mercato.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "\"We have this need to sell players\": Paolo Fonseca talks about the end of OL's transfer window after the draw against Le Havre in Ligue 1",
-          "summary": "After OL's draw this Saturday in Ligue 1 against Le Havre (1-1), Paulo Fonseca spoke of the end of the transfer window. The Lyon coach did not hide that the club was in the \"need to sell players\".",
+          "title": "\"We have this need to sell players\": Paolo Fonseca discusses the end of the transfer window for OL after the draw against Le Havre in Ligue 1",
+          "summary": "Following OL's 1-1 Ligue 1 draw against Le Havre, Paulo Fonseca stated that the club needs to sell players before the transfer window closes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "\"Tenemos esta necesidad de vender jugadores\": Paolo Fonseca evoca el final del mercado de fichajes del OL después del empate contra Le Havre en la Ligue 1",
-          "summary": "Tras el empate del Olympique de Lyon este sábado en Ligue 1 contra Le Havre (1-1), Paulo Fonseca habló del final del mercado de fichajes. El entrenador de Lyon no ocultó que el club estaba en la \"necesidad de vender jugadores\".",
+          "title": "«Tenemos la necesidad de vender jugadores»: Paolo Fonseca habla sobre el final del mercado del OL tras el empate ante Le Havre en Ligue 1",
+          "summary": "Tras el empate del OL (1-1) ante Le Havre en Ligue 1, Paulo Fonseca confirmó que el club necesita vender jugadores antes del cierre del mercado.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"لدينا هذه الحاجة لبيع اللاعبين \": يتحدث باولو فونسيكا عن نهاية فترة انتقال OL بعد التعادل ضد Le Havre في Ligue 1",
-          "summary": "بعد تعادل OL هذا السبت في دوري الدرجة الأولى ضد لو هافر (1-1)، تحدث باولو فونسيكا عن نهاية فترة الانتقالات. لم يخف مدرب ليون أن النادي كان في \"حاجة لبيع اللاعبين\".",
+          "title": "\"نحن بحاجة لبيع لاعبين\": باولو فونسيكا يتحدث عن نهاية الميركاتو في ليون بعد التعادل مع لوهافر في الدوري الفرنسي",
+          "summary": "أكد باولو فونسيكا، بعد تعادل أولمبيك ليون أمام لوهافر (1-1) في الدوري الفرنسي، أن النادي بحاجة ملحة لبيع لاعبين قبل إغلاق سوق الانتقالات.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/-nous-avons-cette-necessite-de-vendre-des-joueurs-paolo-fonseca-evoque-la-fin-du-mercato-de-l-ol-apres-le-nul-contre-le-havre-en-ligue-1/1714622#at_medium=RSS_feeds",
@@ -870,7 +951,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/-nous-avons-cette-necessite-de-vendre-des-joueurs-paolo-fonseca-evoque-la-fin-du-mercato-de-l-ol-apres-le-nul-contre-le-havre-en-ligue-1/1714622#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c9fe7e44169a",
@@ -929,26 +1015,27 @@
       "i18n": {
         "fr": {
           "title": "Les notes de Brest-Toulouse : Ajorque n'a pas renoncé, Casseres s'est démené",
-          "summary": "Grâce à un Ludovic Ajorque qui n'a jamais lâché, Brest a réussi à arracher un match nul mérité contre Toulouse (2-2), samedi, lors de la deuxième journée de Ligue 1.",
-          "needs_translation": false
+          "summary": "Porté par Ludovic Ajorque, Brest a décroché un match nul 2-2 face à Toulouse lors de la 2e journée de Ligue 1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The notes of Brest-Toulouse: Ajorque did not give up, Casseres scrambled",
-          "summary": "Thanks to a Ludovic Ajorque who never gave up, Brest managed to snatch a deserved draw against Toulouse (2-2) on Saturday, on the second day of Ligue 1.",
+          "title": "Brest-Toulouse player ratings: Ajorque never gave up, Casseres fought hard",
+          "summary": "Led by Ludovic Ajorque, Brest secured a 2-2 draw against Toulouse in the second round of Ligue 1.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Las notas de Brest-Toulouse: Ajorque no ha renunciado, Casseres se ha esforzado",
-          "summary": "Gracias a un Ludovic Ajorque que nunca se rindió, Brest logró arrebatar un merecido empate contra Toulouse (2-2), el sábado, en la segunda jornada de la Ligue 1.",
+          "title": "Las notas del Brest-Toulouse: Ajorque no se rindió, Casseres se multiplicó",
+          "summary": "Impulsado por Ludovic Ajorque, Brest rescató un empate 2-2 ante Toulouse en la segunda jornada de la Ligue 1.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ملاحظات بريست تولوز: أجوركي لم يستسلم، كاسيريس سارعت",
-          "summary": "بفضل لودوفيك أجوركي الذي لم يستسلم أبدًا، تمكن بريست من خطف تعادل مستحق ضد تولوز (2-2) يوم السبت، في اليوم الثاني من دوري الدرجة الأولى.",
+          "title": "تقييمات مباراة بريست وتولوز: أجورك لم يستسلم وكاسيريس بذل كل ما لديه",
+          "summary": "فرض بريست التعادل بنتيجة 2-2 أمام ضيفه تولوز بفضل لودوفيك أجورك، ضمن الجولة الثانية من الدوري الفرنسي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Article/Les-notes-de-brest-toulouse-ajorque-n-a-pas-renonce-casseres-s-est-demene/1714620#at_medium=RSS_feeds",
@@ -970,7 +1057,12 @@
           "url": "https://www.lequipe.fr/Football/Article/Les-notes-de-brest-toulouse-ajorque-n-a-pas-renonce-casseres-s-est-demene/1714620#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8d818032e353",
@@ -1028,26 +1120,48 @@
       "summary": "La Juve s’est installée à la 2e place du classement avec six points, comme son grand rival, l’AC Milan, vainqueur vendredi de Venise.",
       "i18n": {
         "fr": {
-          "title": "Serie A : victorieuse de Parme, la Juventus Turin enchaîne sans convaincre",
-          "summary": "La Juve s’est installée à la 2e place du classement avec six points, comme son grand rival, l’AC Milan, vainqueur vendredi de Venise.",
-          "needs_translation": false
+          "title": "Serie A : la Juventus domine Parme grâce à son banc",
+          "summary": "La Juventus Turin a décroché un deuxième succès en Serie A contre Parme (2-0) et partage la tête du classement avec l'AC Milan.",
+          "body": [
+            "Les remplaçants ont débloqué une rencontre longtemps indécise. Entré en jeu, Nico Gonzalez a ouvert la marque à la 62e minute en reprenant un ballon repoussé par le poteau. Teun Koopmeiners a ensuite assuré la victoire turinoise en doublant la mise à deux minutes du terme.",
+            "Ce résultat masque toutefois les difficultés offensives des Bianconeri. Alignés d'entrée, Jonathan David et Randal Kolo Muani sont restés muets, confirmant les doutes récents de Luciano Spalletti sur l'efficacité de l'attaquant français."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Serie A: winner of Parma, Juventus Turin goes on without convincing",
-          "summary": "Juve took second place in the standings with six points, like their great rival, AC Milan, who won Venice on Friday.",
+          "title": "Serie A: Juventus overcome Parma thanks to their bench",
+          "summary": "Juventus secured a second consecutive Serie A win against Parma (2-0) to move level on points with AC Milan at the top.",
+          "body": [
+            "Substitutes made the difference in a tightly contested fixture. Coming off the bench, Nico Gonzalez broke the deadlock in the 62nd minute by converting a rebound off the post. Teun Koopmeiners then sealed the victory for the Turin side, doubling the lead two minutes from time.",
+            "The scoreline, however, masks recurring attacking issues for the Bianconeri. Given the nod in the starting lineup, Jonathan David and Randal Kolo Muani failed to make an impact, backing up Luciano Spalletti's recent concerns over the French forward's efficiency."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Serie A: victoriosa del Parma, la Juventus de Turín encadena sin convencer",
-          "summary": "La Juve s’est installée à la 2e place du classement avec six points, comme son grand rival, l’AC Milan, vainqueur vendredi de Venise.",
+          "title": "Serie A: la Juventus tumba al Parma gracias a su banquillo",
+          "summary": "La Juventus sumó su segunda victoria en la Serie A ante el Parma (2-0) y comparte la cabeza de la tabla con el AC Milan.",
+          "body": [
+            "Los cambios desatascaron un partido trabado y sin brillo. Tras saltar al césped, Nico González abrió la lata en el minuto 62 al cazar un rechace tras un balón al poste. Teun Koopmeiners sentenció el choque para los turineses a dos minutos del final.",
+            "El triunfo maquilla las dudas en ataque de los Bianconeri. Titulares de inicio, Jonathan David y Randal Kolo Muani se quedaron sin marcar, confirmando las recientes reservas de Luciano Spalletti sobre la pegada del ariete francés."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Serie A : victorieuse de Parme, la Juventus Turin enchaîne sans convaincre",
-          "summary": "La Juve s’est installée à la 2e place du classement avec six points, comme son grand rival, l’AC Milan, vainqueur vendredi de Venise.",
-          "needs_translation": true
+          "title": "الدوري الإيطالي: بدلاء يوفنتوس يحسمون مواجهة بارما",
+          "summary": "حقق يوفنتوس فوزه الثاني في الدوري الإيطالي بتغلبه على بارما (2-0)، ليتقاسم صدارة الترتيب مع إيه سي ميلان.",
+          "body": [
+            "نجح البدلاء في فك شفرة مباراة ظلت معقدة لفترة طويلة. فبعد دخوله أرضية الملعب، افتتح نيكو غونزاليس باب التسجيل في الدقيقة 62 مستغلاً كرة ارتدت من القائم، قبل أن يحسم تيون كوبمينرس انتصار السيدة العجوز بمضاعفة النتيجة قبل دقيقتين من نهاية الوقت الأصلي.",
+            "غير أن هذه النتيجة تخفي الصعوبات الهجومية التي يعاني منها البيانكونيري. فرغم الدفع بهما أساسيين، عجز جوناثان ديفيد وراندال كولو مواني عن هز الشباك، ما يبرر الشكوك الأخيرة التي أثارها لوتشيانو سباليتي بشأن فاعلية المهاجم الفرنسي."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/italie/serie-a-victorieuse-de-parme-la-juventus-turin-enchaine-sans-convaincre-20260829",
@@ -1069,7 +1183,20 @@
           "url": "https://www.lefigaro.fr/sports/football/italie/serie-a-victorieuse-de-parme-la-juventus-turin-enchaine-sans-convaincre-20260829"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-29T23:16:38+00:00"
+        }
+      }
     },
     {
       "id": "f84df12ec520",
@@ -1125,23 +1252,27 @@
       "i18n": {
         "en": {
           "title": "Newcastle show there's plenty of life after Tonali",
-          "summary": "Newcastle United sold Sandro Tonali to Tottenham Hotspur, but the club look to have reinvested the money wisely following United's 2-0 win in north London.",
-          "needs_translation": false
+          "summary": "Following the sale of Sandro Tonali to Tottenham Hotspur, Newcastle United secured a 2-0 victory in north London, demonstrating effective squad reinvestment.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Newcastle show there's plenty of life after Tonali",
-          "summary": "Newcastle United sold Sandro Tonali to Tottenham Hotspur, but the club look to have reinvested the money wisely following United's 2-0 win in north London.",
-          "needs_translation": true
+          "title": "Newcastle montre qu'il y a une vie après Tonali",
+          "summary": "Après avoir vendu Sandro Tonali à Tottenham Hotspur, Newcastle United s'est imposé 2-0 à London, confirmant un réinvestissement efficace de ses fonds.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Newcastle show there's plenty of life after Tonali",
-          "summary": "Newcastle United sold Sandro Tonali to Tottenham Hotspur, but the club look to have reinvested the money wisely following United's 2-0 win in north London.",
-          "needs_translation": true
+          "title": "El Newcastle demuestra que hay vida después de Tonali",
+          "summary": "Tras vender a Sandro Tonali al Tottenham Hotspur, el Newcastle United logró una victoria por 2-0 en London, confirmando haber reinvertido bien el dinero del traspaso.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Newcastle show there's plenty of life after Tonali",
-          "summary": "Newcastle United sold Sandro Tonali to Tottenham Hotspur, but the club look to have reinvested the money wisely following United's 2-0 win in north London.",
-          "needs_translation": true
+          "title": "نيوكاسل يثبت قدرته على التألق بعد رحيل تونالي",
+          "summary": "بعد بيع ساندرو تونالي إلى توتنهام هوتسبير، حقق نيوكاسل يونايتد فوزاً بنتيجة 2-0 في شمال لندن، مؤكداً استثمار أموال الصفقة بنجاح.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/c14d0elejzdo?at_medium=RSS&at_campaign=rss",
@@ -1163,7 +1294,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/c14d0elejzdo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8d93463ba486",
@@ -1172,23 +1308,27 @@
       "i18n": {
         "fr": {
           "title": "La vidéo du but exceptionnel de Branco van den Boomen avec Angers contre Auxerre en Ligue 1",
-          "summary": "Le milieu de terrain néerlandais Branco Van den Boomen a inscrit un but exceptionnel avec Angers, ce samedi soir sur la pelouse d'Auxerre lors de la 2e journée de Ligue 1.",
-          "needs_translation": false
+          "summary": "Le milieu de terrain néerlandais d'Angers, Branco Van den Boomen, a marqué lors du match disputé contre Auxerre lors de la 2e journée de Ligue 1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "La vidéo du but exceptionnel de Branco van den Boomen avec Angers contre Auxerre en Ligue 1",
-          "summary": "Le milieu de terrain néerlandais Branco Van den Boomen a inscrit un but exceptionnel avec Angers, ce samedi soir sur la pelouse d'Auxerre lors de la 2e journée de Ligue 1.",
-          "needs_translation": true
+          "title": "Video of Branco van den Boomen's exceptional goal for Angers against Auxerre in Ligue 1",
+          "summary": "Angers' Dutch midfielder Branco Van den Boomen scored against Auxerre during the 2nd matchday of Ligue 1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "La vidéo du but exceptionnel de Branco van den Boomen avec Angers contre Auxerre en Ligue 1",
-          "summary": "Le milieu de terrain néerlandais Branco Van den Boomen a inscrit un but exceptionnel avec Angers, ce samedi soir sur la pelouse d'Auxerre lors de la 2e journée de Ligue 1.",
-          "needs_translation": true
+          "title": "El vídeo del golazo de Branco van den Boomen con Angers contra Auxerre en Ligue 1",
+          "summary": "El centrocampista neerlandés de Angers, Branco Van den Boomen, anotó ante Auxerre en la 2.ª jornada de la Ligue 1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "La vidéo du but exceptionnel de Branco van den Boomen avec Angers contre Auxerre en Ligue 1",
-          "summary": "Le milieu de terrain néerlandais Branco Van den Boomen a inscrit un but exceptionnel avec Angers, ce samedi soir sur la pelouse d'Auxerre lors de la 2e journée de Ligue 1.",
-          "needs_translation": true
+          "title": "فيديو الهدف الاستثنائي لبرانكو فان دن بومن مع أنجيه ضد أوكسير في الدوري الفرنسي",
+          "summary": "سجل لاعب الوسط الهولندي برانكو فان دن بومن هدفاً لفريقه أنجيه في مواجهة أوكسير ضمن الجولة الثانية من الدوري الفرنسي.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/La-video-du-but-exceptionnel-de-branco-van-den-boomen-avec-angers-contre-auxerre-en-ligue-1/1714560#at_medium=RSS_feeds",
@@ -1216,7 +1356,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-1/ligue-1-le-recital-d-angers-a-auxerre-ajorque-imperial-pour-sa-200e-les-gachis-de-l-ol-les-tops-et-flops-du-deuxieme-multiplex-20260829"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f754d670a129",
@@ -1321,7 +1466,12 @@
           "url": "https://www.kicker.de/fazit-nach-bvb-sieg-gegen-den-hsv-neue-spielfreude-und-offene-transfer-baustellen-1247983/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8a8d49242c5f",
@@ -1415,7 +1565,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Mercato-riyad-mahrez-libre-vers-corum-promu-en-d1-turque/1714611#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "1ff51c87783d",
@@ -1509,7 +1664,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/ckg8x1wwgn8o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "43f561e29f39",
@@ -1518,23 +1678,27 @@
       "i18n": {
         "en": {
           "title": "£300m spent, bottom of the table... but Spurs boss De Zerbi 'not angry'",
-          "summary": "Having spent more than £300m in the summer, Tottenham find themselves bottom of the Premier League, without a point or a goal, but boss Roberto de Zerbi remains optimistic.",
-          "needs_translation": false
+          "summary": "Despite spending over £300m in the summer, Tottenham are bottom of the Premier League without a point or a goal. However, manager Roberto de Zerbi remains optimistic.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "£300m spent, bottom of the table... but Spurs boss De Zerbi 'not angry'",
-          "summary": "Having spent more than £300m in the summer, Tottenham find themselves bottom of the Premier League, without a point or a goal, but boss Roberto de Zerbi remains optimistic.",
-          "needs_translation": true
+          "title": "300 M£ dépensés, derniers du classement... mais De Zerbi, coach des Spurs, « pas en colère »",
+          "summary": "Malgré plus de 300 M£ dépensés cet été, Tottenham est dernier de Premier League sans point ni but marqué, mais Roberto de Zerbi reste optimiste.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "£300m spent, bottom of the table... but Spurs boss De Zerbi 'not angry'",
-          "summary": "Having spent more than £300m in the summer, Tottenham find themselves bottom of the Premier League, without a point or a goal, but boss Roberto de Zerbi remains optimistic.",
-          "needs_translation": true
+          "title": "300 millones gastados, colistas... pero De Zerbi, técnico de los Spurs, «no está enfadado»",
+          "summary": "Pese a gastar más de 300 millones de libras este verano, Tottenham es colista de la Premier League sin puntos ni goles, aunque Roberto de Zerbi mantiene el optimismo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "£300m spent, bottom of the table... but Spurs boss De Zerbi 'not angry'",
-          "summary": "Having spent more than £300m in the summer, Tottenham find themselves bottom of the Premier League, without a point or a goal, but boss Roberto de Zerbi remains optimistic.",
-          "needs_translation": true
+          "title": "إنفاق 300 مليون وتذيل للترتيب... لكن دي زيربي مدرب توتنهام «ليس غاضباً»",
+          "summary": "رغم إنفاق أكثر من 300 مليون جنيه إسترليني هذا الصيف، يتذيل توتنهام ترتيب الدوري الإنجليزي الممتاز بلا نقاط أو أهداف، بينما يحافظ المدرب روبرتو دي زيربي على تفاؤله.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/clyqn158n5jo?at_medium=RSS&at_campaign=rss",
@@ -1556,7 +1720,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/clyqn158n5jo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2a2ba5a9d206",
@@ -1611,24 +1780,28 @@
       "summary": "En marge de la rencontre entre Tottenham et Newcastle (0-2), Roberto De Zerbi a évoqué les absences de Richarlison, Kevin Danso et Pape Matar Sarr. Ces joueurs ont été écartés du groupe après avoir exprimé leur souhait de partir.",
       "i18n": {
         "fr": {
-          "title": "« Il m'a dit qu'il voulait partir... » : Roberto De Zerbi révèle les envie d'ailleurs de Richarlison, Danso et Sarr aussi sur le départ de Tottenham",
-          "summary": "En marge de la rencontre entre Tottenham et Newcastle (0-2), Roberto De Zerbi a évoqué les absences de Richarlison, Kevin Danso et Pape Matar Sarr. Ces joueurs ont été écartés du groupe après avoir exprimé leur souhait de partir.",
-          "needs_translation": false
+          "title": "« Il m'a dit qu'il voulait partir... » : Roberto De Zerbi révèle les envies d'ailleurs de Richarlison, Danso et Sarr aussi sur le départ de Tottenham",
+          "summary": "Après la défaite contre Newcastle (0-2), Roberto De Zerbi a expliqué avoir écarté Richarlison, Kevin Danso et Pape Matar Sarr car ils ont exprimé leur souhait de quitter Tottenham.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "« Il m'a dit qu'il voulait partir... » : Roberto De Zerbi révèle les envie d'ailleurs de Richarlison, Danso et Sarr aussi sur le départ de Tottenham",
-          "summary": "En marge de la rencontre entre Tottenham et Newcastle (0-2), Roberto De Zerbi a évoqué les absences de Richarlison, Kevin Danso et Pape Matar Sarr. Ces joueurs ont été écartés du groupe après avoir exprimé leur souhait de partir.",
-          "needs_translation": true
+          "title": "\"He told me he wanted to leave...\": Roberto De Zerbi reveals Richarlison, Danso and Sarr also want to leave Tottenham",
+          "summary": "Following Tottenham's 2-0 defeat to Newcastle, Roberto De Zerbi explained that Richarlison, Kevin Danso, and Pape Matar Sarr were dropped after expressing their desire to leave the club.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "« Il m'a dit qu'il voulait partir... » : Roberto De Zerbi révèle les envie d'ailleurs de Richarlison, Danso et Sarr aussi sur le départ de Tottenham",
-          "summary": "En marge de la rencontre entre Tottenham et Newcastle (0-2), Roberto De Zerbi a évoqué les absences de Richarlison, Kevin Danso et Pape Matar Sarr. Ces joueurs ont été écartés du groupe après avoir exprimé leur souhait de partir.",
-          "needs_translation": true
+          "title": "«Me dijo que quería irse...»: Roberto De Zerbi revela el deseo de salir de Richarlison, con Danso y Sarr también cerca de dejar el Tottenham",
+          "summary": "Tras la derrota ante el Newcastle (0-2), Roberto De Zerbi explicó que Richarlison, Kevin Danso y Pape Matar Sarr fueron descartados por expresar su deseo de salir del Tottenham.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "« Il m'a dit qu'il voulait partir... » : Roberto De Zerbi révèle les envie d'ailleurs de Richarlison, Danso et Sarr aussi sur le départ de Tottenham",
-          "summary": "En marge de la rencontre entre Tottenham et Newcastle (0-2), Roberto De Zerbi a évoqué les absences de Richarlison, Kevin Danso et Pape Matar Sarr. Ces joueurs ont été écartés du groupe après avoir exprimé leur souhait de partir.",
-          "needs_translation": true
+          "title": "\"أخبرني أنه يريد الرحيل...\": روبرتو دي زيربي يكشف رغبة ريتشارليسون ودانسو وسار في مغادرة توتنهام",
+          "summary": "أوضح المدرب روبرتو دي زيربي بعد الخسارة أمام نيوكاسل (0-2) أن استبعاد ريتشارليسون وكيفين دانسو وبابي مطار سار جاء إثر إبداء رغبتهم في الرحيل عن توتنهام.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/-il-m-a-dit-qu-il-voulait-partir-roberto-de-zerbi-revele-les-envie-d-ailleurs-de-richarlison-danso-et-sarr-aussi-sur-le-depart-de-tottenham/1714605#at_medium=RSS_feeds",
@@ -1650,7 +1823,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/-il-m-a-dit-qu-il-voulait-partir-roberto-de-zerbi-revele-les-envie-d-ailleurs-de-richarlison-danso-et-sarr-aussi-sur-le-depart-de-tottenham/1714605#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7a6b0fc9bdc6",
@@ -1705,24 +1883,48 @@
       "summary": "La Juventus n'a pas brillé, mais s'en est sortie contre Parme ce samedi soir à l'Allianz Stadium (2-0), pour le compte de la 2e journée de Serie A, grâce à l'entrée tonitruante de Nico Gonzalez. Elle reste invaincue.",
       "i18n": {
         "fr": {
-          "title": "La Juventus s'en sort contre Parme et enchaîne un second succès en Serie A",
-          "summary": "La Juventus n'a pas brillé, mais s'en est sortie contre Parme ce samedi soir à l'Allianz Stadium (2-0), pour le compte de la 2e journée de Serie A, grâce à l'entrée tonitruante de Nico Gonzalez. Elle reste invaincue.",
-          "needs_translation": false
+          "title": "Serie A : la Juventus domine Parme et enchaîne une deuxième victoire",
+          "summary": "La Juventus s'est imposée face à Parme (2-0) lors de la deuxième journée de Serie A grâce à ses remplaçants.",
+          "body": [
+            "Longtemps tenue en échec par le bloc regroupé des Parmesans, l'équipe piémontaise a débloqué la situation après l'entrée en jeu de Nico Gonzalez à la place de Jonathan David. L'Argentin a trouvé le poteau d'un tir lointain avant de pousser un défenseur adverse au contre-son-camp (62e), puis Teun Koopmeiners a scellé le score en fin de match d'une frappe croisée (88e).",
+            "Rarement inquiétés, les Turinois ont tout de même pu compter sur leur nouveau gardien Guglielmo Vicario, décisif sur une tête de David Romero (66e). Titulaire en pointe, Randal Kolo Muani s'est procuré trois franches occasions sans parvenir à trouver la faille."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "La Juventus s'en sort contre Parme et enchaîne un second succès en Serie A",
-          "summary": "La Juventus n'a pas brillé, mais s'en est sortie contre Parme ce samedi soir à l'Allianz Stadium (2-0), pour le compte de la 2e journée de Serie A, grâce à l'entrée tonitruante de Nico Gonzalez. Elle reste invaincue.",
-          "needs_translation": true
+          "title": "Serie A: Juventus overpower Parma to make it two wins from two",
+          "summary": "Juventus defeated Parma 2-0 on matchday two of Serie A, with their substitutes making all the difference.",
+          "body": [
+            "Frustrated for long spells by a compact Parma backline, the Bianconeri finally broke the deadlock after Nico Gonzalez replaced Jonathan David. The Argentine winger hit the post from long range before the ball deflected in off a defender for an own goal (62'), and Teun Koopmeiners doubled the lead with a low angled finish (88').",
+            "Hardly troubled throughout, Juventus still relied on new goalkeeper Guglielmo Vicario to produce a crucial save against David Romero's header (66'). In attack, Randal Kolo Muani got into three dangerous positions but failed to find the net."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "La Juventus s'en sort contre Parme et enchaîne un second succès en Serie A",
-          "summary": "La Juventus n'a pas brillé, mais s'en est sortie contre Parme ce samedi soir à l'Allianz Stadium (2-0), pour le compte de la 2e journée de Serie A, grâce à l'entrée tonitruante de Nico Gonzalez. Elle reste invaincue.",
-          "needs_translation": true
+          "title": "Serie A: la Juventus supera al Parma y firma su segundo triunfo consecutivo",
+          "summary": "La Juventus se impuso por 2-0 al Parma en la segunda jornada de la Serie A gracias al impacto de su banquillo.",
+          "body": [
+            "Frenada durante más de una hora por el orden defensivo del Parma, la Vecchia Signora desatascó el duelo tras el ingreso de Nico Gonzalez por Jonathan David. El extremo argentino estrelló un disparo lejano en el poste que terminó rebotando en un zaguero hacia la red (62'), antes de que Teun Koopmeiners sentenciara en el tramo final con un tiro cruzado (88').",
+            "Poco exigidos en defensa, los locales contaron con la seguridad de su nuevo arquero Guglielmo Vicario, providencial al responder con una gran parada a un cabezazo de David Romero (66'). Titular en punta, Randal Kolo Muani gozó de tres ocasiones claras pero se marchó sin marcar."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "La Juventus s'en sort contre Parme et enchaîne un second succès en Serie A",
-          "summary": "La Juventus n'a pas brillé, mais s'en est sortie contre Parme ce samedi soir à l'Allianz Stadium (2-0), pour le compte de la 2e journée de Serie A, grâce à l'entrée tonitruante de Nico Gonzalez. Elle reste invaincue.",
-          "needs_translation": true
+          "title": "الدوري الإيطالي: يوفنتوس يتخطى بارما ويحقق فوزه الثاني توالياً",
+          "summary": "حسم يوفنتوس مواجهته أمام بارما بنتيجة 2-0 في الجولة الثانية من الدوري الإيطالي بفضل تألق بديليه.",
+          "body": [
+            "بعدما اصطدم طويلاً بصلابة دفاع بارما، نجح البيانكونيري في فك الشفرة عقب دخول نيكو غونزاليس بديلاً لجوناثان ديفيد؛ حيث أطلق الأرجنتيني تسديدة قوية ارتدت من القائم لتصطدم بأحد المدافعين وتسكن الشباك بالخطأ (62)، قبل أن يختتم تيون كوبماينرس الثنائية بتسديدة زاحفة في الدقيقة 88.",
+            "ورغم ندرة الخطورة على مرماه، تألق حارس يوفنتوس الجديد غولييلمو فيكاريو بتصدٍ حاسم لرأسية ديفيد روميرو (66). في المقابل، شارك راندال كولو مواني أساسياً في خط الهجوم وأتيحت له ثلاث فرص محققة دون أن يتمكن من هز الشباك."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/La-juventus-s-en-sort-contre-parme-et-enchaine-un-second-succes-en-serie-a/1714601#at_medium=RSS_feeds",
@@ -1744,7 +1946,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/La-juventus-s-en-sort-contre-parme-et-enchaine-un-second-succes-en-serie-a/1714601#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-29T23:16:40+00:00"
+        }
+      }
     },
     {
       "id": "b914e8001b8e",
@@ -1952,23 +2167,27 @@
       "i18n": {
         "es": {
           "title": "Agüero: \"Me llevé a Brahim conmigo de vacaciones a Mykonos y le hice conocer las locuras\"",
-          "summary": "Sergio, el 'Kun, Agüero es uno de los múltiples jugadores que han decidido dedicarse al mundo del 'streaming' tras colgar las botas.",
-          "needs_translation": false
+          "summary": "Sergio Agüero relató en una de sus transmisiones en directo una anécdota sobre las vacaciones que compartió con Brahim en Mykonos.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Agüero: \"Me llevé a Brahim conmigo de vacaciones a Mykonos y le hice conocer las locuras\"",
-          "summary": "Sergio, el 'Kun, Agüero es uno de los múltiples jugadores que han decidido dedicarse al mundo del 'streaming' tras colgar las botas.",
-          "needs_translation": true
+          "title": "Agüero: \"I took Brahim on holiday with me to Mykonos and showed him the crazy side\"",
+          "summary": "During a live stream, Sergio Agüero shared an anecdote about taking Brahim on vacation with him to Mykonos.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Agüero: \"Me llevé a Brahim conmigo de vacaciones a Mykonos y le hice conocer las locuras\"",
-          "summary": "Sergio, el 'Kun, Agüero es uno de los múltiples jugadores que han decidido dedicarse al mundo del 'streaming' tras colgar las botas.",
-          "needs_translation": true
+          "title": "Agüero : « J'ai emmené Brahim en vacances avec moi à Mykonos et je lui ai fait découvrir la folie »",
+          "summary": "Lors d'un direct en streaming, Sergio Agüero a raconté une anecdote sur les vacances qu'il a passées avec Brahim à Mykonos.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Agüero: \"Me llevé a Brahim conmigo de vacaciones a Mykonos y le hice conocer las locuras\"",
-          "summary": "Sergio, el 'Kun, Agüero es uno de los múltiples jugadores que han decidido dedicarse al mundo del 'streaming' tras colgar las botas.",
-          "needs_translation": true
+          "title": "أغويرو: \"أخذت براهيم معي في عطلة إلى ميكونوس وعرفته على الجنون\"",
+          "summary": "كشف سيرخيو أغويرو خلال بث مباشر عن كواليس عطلة قضاها برفقة براهيم في جزيرة ميكونوس اليونانية.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/20260829/1004221116/agueero-me-lleve-brahim-vacaciones-mykonos-le-hice-conocer-locuras.html",
@@ -1990,7 +2209,12 @@
           "url": "https://www.mundodeportivo.com/futbol/20260829/1004221116/agueero-me-lleve-brahim-vacaciones-mykonos-le-hice-conocer-locuras.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "17957ca25d4a",
@@ -1999,23 +2223,27 @@
       "i18n": {
         "en": {
           "title": "All done deals in August 2026",
-          "summary": "Check out the significant signings and departures in the Premier League, Scottish Premiership, EFL and Women's Super League.",
-          "needs_translation": false
+          "summary": "Overview of the major signings and departures completed during August 2026 across the Premier League, Scottish Premiership, EFL, and Women's Super League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "All done deals in August 2026",
-          "summary": "Check out the significant signings and departures in the Premier League, Scottish Premiership, EFL and Women's Super League.",
-          "needs_translation": true
+          "title": "Tous les transferts officialisés en August 2026",
+          "summary": "Le récapitulatif des arrivées et départs majeurs enregistrés en August 2026 en Premier League, Scottish Premiership, EFL et Women's Super League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "All done deals in August 2026",
-          "summary": "Check out the significant signings and departures in the Premier League, Scottish Premiership, EFL and Women's Super League.",
-          "needs_translation": true
+          "title": "Todos los fichajes oficiales en August de 2026",
+          "summary": "Resumen de las principales altas y bajas confirmadas durante August de 2026 en la Premier League, Scottish Premiership, EFL y Women's Super League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "All done deals in August 2026",
-          "summary": "Check out the significant signings and departures in the Premier League, Scottish Premiership, EFL and Women's Super League.",
-          "needs_translation": true
+          "title": "جميع الصفقات المكتملة في أغسطس 2026",
+          "summary": "رصد لأبرز صفقات الانتقال والراحلين المنجزة في أغسطس 2026 في الدوري الإنجليزي الممتاز، والدوري الإسكتلندي الممتاز، ودوري البطولة الإنجليزية، ودوري السوبر الإنجليزي للسيدات.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/c9v4d2z2p7yo?at_medium=RSS&at_campaign=rss",
@@ -2037,7 +2265,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/c9v4d2z2p7yo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a2842d00bfda",
@@ -2046,23 +2279,27 @@
       "i18n": {
         "es": {
           "title": "El Málaga CF, entre el Bernabéu y el mercado de fichajes",
-          "summary": "El Málaga tiene este domingo una cita marcada en rojo. El conjunto blanquiazul visita el Santiago Bernabéu para medirse al Real Madrid en la tercera jornada de LaLiga EA Sports, un escenario histórico para un equipo que acaba de regresar a la máxima categoría.",
-          "needs_translation": false
+          "summary": "El Málaga CF visita este domingo al Real Madrid en el Santiago Bernabéu en la tercera jornada de LaLiga EA Sports, tras su reciente regreso a la máxima categoría.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Málaga CF, entre el Bernabéu y el mercado de fichajes",
-          "summary": "El Málaga tiene este domingo una cita marcada en rojo. El conjunto blanquiazul visita el Santiago Bernabéu para medirse al Real Madrid en la tercera jornada de LaLiga EA Sports, un escenario histórico para un equipo que acaba de regresar a la máxima categoría.",
-          "needs_translation": true
+          "title": "Málaga CF, between the Bernabéu and the transfer window",
+          "summary": "Málaga CF visits Real Madrid at the Santiago Bernabéu this Sunday for matchday 3 of LaLiga EA Sports, following its recent return to the top flight.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El Málaga CF, entre el Bernabéu y el mercado de fichajes",
-          "summary": "El Málaga tiene este domingo una cita marcada en rojo. El conjunto blanquiazul visita el Santiago Bernabéu para medirse al Real Madrid en la tercera jornada de LaLiga EA Sports, un escenario histórico para un equipo que acaba de regresar a la máxima categoría.",
-          "needs_translation": true
+          "title": "Le Málaga CF, entre le Bernabéu et le mercato",
+          "summary": "Le Málaga CF se déplace ce dimanche au Santiago Bernabéu pour affronter le Real Madrid lors de la 3e journée de LaLiga EA Sports, après son retour dans l'élite.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Málaga CF, entre el Bernabéu y el mercado de fichajes",
-          "summary": "El Málaga tiene este domingo una cita marcada en rojo. El conjunto blanquiazul visita el Santiago Bernabéu para medirse al Real Madrid en la tercera jornada de LaLiga EA Sports, un escenario histórico para un equipo que acaba de regresar a la máxima categoría.",
-          "needs_translation": true
+          "title": "نادي مالاغا، بين البرنابيو وسوق الانتقالات",
+          "summary": "يحل نادي مالاغا ضيفاً على ريال مدريد في سانتياغو برنابيو هذا الأحد ضمن الجولة الثالثة من الدوري الإسباني، بعد عودته مؤخراً إلى دوري الأضواء.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/malaga-cf-bernabeu-mercado-fichajes-133769893?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -2084,7 +2321,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/malaga-cf-bernabeu-mercado-fichajes-133769893?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d2c830358b25",
@@ -2192,26 +2434,27 @@
       "i18n": {
         "es": {
           "title": "Este es el calendario de la Real Sociedad en la Fase Liga de la Europa League",
-          "summary": "La UEFA ha hecho público el calendario definitivo de la fase liga de la Europa League , despejando la hoja de ruta que deberá recorrer la Real Sociedad de Pellegrino Matarazzo .",
-          "needs_translation": false
+          "summary": "La UEFA ha hecho público el calendario definitivo de la Fase Liga de la Europa League para la Real Sociedad de Pellegrino Matarazzo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "This is the schedule of the Real Sociedad in the League Phase of the Europa League",
-          "summary": "UEFA has published the final schedule of the Europa League league phase, clearing the roadmap for Pellegrino Matarazzo's Real Sociedad.",
+          "title": "This is Real Sociedad's schedule in the Europa League Fase Liga",
+          "summary": "UEFA has released the definitive schedule for the Europa League Fase Liga, outlining the path for Pellegrino Matarazzo's Real Sociedad.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Voici le calendrier de la Real Sociedad en phase de Ligue de l'Europa League",
-          "summary": "L'UEFA a rendu public le calendrier définitif de la phase de ligue de l'Europa League , clarifiant la feuille de route que devra parcourir la Real Sociedad de Pellegrino Matarazzo .",
+          "title": "Voici le calendrier de la Real Sociedad en Fase Liga d'Europa League",
+          "summary": "L'UEFA a dévoilé le calendrier officiel de la Fase Liga de l'Europa League pour la Real Sociedad de Pellegrino Matarazzo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هذا هو الجدول الزمني لريال سوسييداد في مرحلة الدوري من الدوري الأوروبي",
-          "summary": "نشر الاتحاد الأوروبي لكرة القدم الجدول النهائي لمرحلة الدوري الأوروبي ، مما يمهد الطريق أمام ريال سوسيداد لبيلغرينو ماتارازو .",
+          "title": "هذا هو جدول مباريات ريال سوسيداد في مرحلة الدوري من الدوري الأوروبي",
+          "summary": "أعلن الاتحاد الأوروبي لكرة القدم عن الجدول الرسمي لمرحلة الدوري في الدوري الأوروبي، محدداً مسار ريال سوسيداد بقيادة بيليجرينو ماتاراتزو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260829/1004221109/calendario-real-sociedad-fase-liga-europa-league.html",
@@ -2233,7 +2476,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260829/1004221109/calendario-real-sociedad-fase-liga-europa-league.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f79dbe278359",
