@@ -16,27 +16,28 @@
       "summary": "Al final de la temporada perderán la categoría dos equipos: uno por la tabla de promedios y el otro por la anual. Mirá cómo viene la mano en cada caso.",
       "i18n": {
         "es": {
-          "title": "Así está la lucha por no descender en la Liga Profesional",
-          "summary": "Al final de la temporada perderán la categoría dos equipos: uno por la tabla de promedios y el otro por la anual. Mirá cómo viene la mano en cada caso.",
-          "needs_translation": false
+          "title": "Así está la lucha por el descenso en la Liga Profesional",
+          "summary": "Dos equipos perderán la categoría al final de la temporada en la Liga Profesional: uno a través de la tabla de promedios y otro por la tabla anual.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "This is the fight not to descend into the Professional League",
-          "summary": "At the end of the season, two teams will lose the category: one for the average table and the other for the annual table. See how the hand comes in each case.",
+          "title": "The relegation battle in the Liga Profesional",
+          "summary": "Two teams will be relegated at the end of the Liga Profesional season: one through the points average table and the other via the annual standings.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Telle est la lutte pour ne pas descendre dans la Ligue Professionnelle",
-          "summary": "À la fin de la saison, deux équipes perdront la catégorie : l'une pour le tableau des moyennes et l'autre pour l'annuelle. Regardez comment la main vient dans chaque cas.",
+          "title": "La lutte pour le maintien en Liga Profesional",
+          "summary": "Deux équipes seront reléguées à la fin de la saison de Liga Profesional : l'une via le classement des moyennes et l'autre via le classement annuel.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هذه هي المعركة لعدم النزول إلى دوري المحترفين",
-          "summary": "في نهاية الموسم، سيخسر فريقان الفئة: أحدهما للجدول المتوسط والآخر للجدول السنوي. انظر كيف تأتي اليد في كل حالة.",
+          "title": "صراع تفادي الهبوط في الدوري الأرجنتيني للمحترفين",
+          "summary": "سيهبط فريقان في نهاية موسم الدوري الأرجنتيني للمحترفين، أحدهما عبر جدول المعدلات التراكمية والآخر عبر جدول الترتيب السنوي العام.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-primera/lucha-descenso-clausura-apertura-liga-profesional-tabla-anual-promedios_0_CaNRicAYQj.html",
@@ -58,7 +59,12 @@
           "url": "https://www.ole.com.ar/futbol-primera/lucha-descenso-clausura-apertura-liga-profesional-tabla-anual-promedios_0_CaNRicAYQj.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3f0716a630b8",
@@ -67,26 +73,27 @@
       "i18n": {
         "es": {
           "title": "La pelea en la tabla anual: dos líderes, Boca en zona de Sudamericana y River afuera de todo",
-          "summary": "Con la clasificación a las copas, un título y un descenso en juego, los puntos de las 16 fechas de la fase regular del Clausura se suman a los cosechados en el Apertura.",
-          "needs_translation": false
+          "summary": "La tabla anual acumula los puntos del Clausura y del Apertura para definir plazas internacionales, el título y el descenso. Boca se ubica en puestos de Sudamericana y River queda fuera de clasificación.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The fight in the annual table: two leaders, Boca in the South American area and River out of everything",
-          "summary": "With the classification to the cups, a title and a relegation in play, the points of the 16 dates of the regular phase of the Closing are added to those harvested in the Opening.",
+          "title": "The battle in the annual standings: two leaders, Boca in Sudamericana spot and River out of everything",
+          "summary": "The annual standings combine points from the Clausura and Apertura to decide continental qualification, titles, and relegation. Boca holds a Sudamericana spot, while River is currently outside all qualification places.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le combat dans le tableau annuel : deux leaders, Boca en zone sud-américaine et River en dehors de tout",
-          "summary": "Avec le classement aux coupes, un titre et une descente en jeu, les points des 16 dates de la phase régulière de la Clôture s'ajoutent à ceux récoltés à l'Ouverture.",
+          "title": "La lutte au classement annuel : deux leaders, Boca en zone Sudamericana et River hors course",
+          "summary": "Le classement annuel cumule les points du Clausura et de l'Apertura pour décider des titres, relégations et qualifications continentales. Boca est en zone Sudamericana et River reste pour l'instant non qualifié.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "القتال في الطاولة السنوية: قائدان، بوكا في منطقة أمريكا الجنوبية ونهر من كل شيء",
-          "summary": "مع التصنيف إلى الكؤوس، واللقب والهبوط في اللعب، تضاف نقاط التواريخ الستة عشر للمرحلة العادية من الإغلاق إلى تلك التي تم حصادها في الافتتاح.",
+          "title": "الصراع في الترتيب السنوي: متصدران، بوكا في مقاعد سودأمريكانا وريفر خارج كل الحسابات",
+          "summary": "يحدد الترتيب السنوي، بجمع نقاط بطولتي كلاوسورا وأبيرتورا، حسم اللقب ومقاعد البطولات القارية والهبوط. يحتل بوكا جونيورز مركزاً مؤهلاً لسودأمريكانا، بينما يبتعد ريفر بليت عن جميع المراكز المؤهلة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-primera/pelea-tabla-anual-lideres-boca-sudamericana-river-clasificacion-copas-libertadores_0_NVR1uUFJIp.html",
@@ -108,7 +115,12 @@
           "url": "https://www.ole.com.ar/futbol-primera/pelea-tabla-anual-lideres-boca-sudamericana-river-clasificacion-copas-libertadores_0_NVR1uUFJIp.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3c718d4b5346",
@@ -167,26 +179,27 @@
       "i18n": {
         "es": {
           "title": "1-8: el Barça, a la final de la Copa de Catalunya ante Catgas Santa Coloma",
-          "summary": "Se disputa la gran final de la Copa Catalunya de fútbol sala 2026, entre Barça y Catgas Energia Santa Coloma , con el primer título en juego.",
-          "needs_translation": false
+          "summary": "El Barça se clasificó para la final de la Copa Catalunya de fútbol sala tras imponerse por 1-8 y disputará el título frente a Catgas Energia Santa Coloma.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "1-8: Barça, in the final of the Catalan Cup against Catgas Santa Coloma",
-          "summary": "The grand final of the 2026 Catalan Futsal Cup is played between Barça and Catgas Energia Santa Coloma , with the first title at stake.",
+          "title": "1-8: Barça reach Copa de Catalunya final against Catgas Santa Coloma",
+          "summary": "Barça qualified for the Copa Catalunya futsal final following a 1-8 victory and will face Catgas Energia Santa Coloma for the title.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "1-8 : le Barça, en finale de la Coupe de Catalogne face à Catgas Santa Coloma",
-          "summary": "La grande finale de la Coupe de Catalogne de futsal 2026 se dispute entre le Barça et Catgas Energia Santa Coloma , avec le premier titre en jeu.",
+          "title": "1-8 : le Barça en finale de la Copa de Catalunya face à Catgas Santa Coloma",
+          "summary": "Le Barça s'est qualifié pour la finale de la Copa Catalunya de futsal après une victoire 1-8 et disputera le titre face à Catgas Energia Santa Coloma.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "1-8: برشلونة، في نهائي كأس كاتالونيا ضد كاتغاس سانتا كولوما",
-          "summary": "يُقام النهائي الكبير لكأس كتالونيا لكرة الصالات 2026 بين برشلونة وكاتغاس إنيرجيا سانتا كولوما ، مع أول لقب على المحك.",
+          "title": "1-8: برشلونة إلى نهائي كأس كتالونيا أمام كاتغاس سانتا كولوما",
+          "summary": "تأهل برشلونة إلى نهائي كأس كتالونيا لكرة الصالات بعد فوزه العريض بنتيجة 1-8، ليواجه كاتغاس إنيرجيا سانتا كولوما على اللقب.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/sala/20260829/1004220826/horario-canal-ver-tv-barca-catgas-energia-santa-coloma-copa-catalunya-futbol-sala.html",
@@ -214,7 +227,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260828/1004220805/1-8-barca-final-copa-catalunya-catgas-santa-coloma.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3e11e57f7f6a",
@@ -273,26 +291,27 @@
       "i18n": {
         "es": {
           "title": "Espíritu Flick en un Barça que enamora",
-          "summary": "Al Barça le han bastado dos jornadas de la Liga 2026-27 para ser líder con pleno de seis puntos (superado de forma provisional este viernes por los siete del Alavés) y un balance de siete goles a favor y cero en contra.",
-          "needs_translation": false
+          "summary": "Con dos victorias en dos jornadas de Liga, siete goles a favor y ninguno en contra, el Barça suma seis puntos y solo es superado de forma provisional por el Alavés.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Flick spirit in a Barça that falls in love",
-          "summary": "Barça have only had two matches in the 2026-27 League to be the leader with a full six points (surpassed provisionally this Friday by the seven of Alaves) and a balance of seven goals in favor and zero against.",
+          "title": "Flick's spirit in a captivating Barça",
+          "summary": "With two wins from two Liga games, seven goals scored and none conceded, Barça sit on six points, temporarily trailing only Alavés.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Esprit Flick dans un Barça qui tombe amoureux",
-          "summary": "Il a suffi au Barça de deux journées de Liga 2026-27 pour être leader avec un total de six points (dépassé provisoirement ce vendredi par les sept de l'Alavés) et un bilan de sept buts pour et zéro contre.",
+          "title": "L'esprit Flick dans un Barça qui séduit",
+          "summary": "Avec deux victoires en deux journées de Liga, sept buts inscrits et aucun encaissé, le Barça compte six points, seulement devancé provisoirement par l'Alavés.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "فليك سبيريت في برشلونة الذي يقع في الحب",
-          "summary": "خاض برشلونة مباراتين فقط في دوري 2026-2027 ليكون متصدرًا بست نقاط كاملة (تجاوزها مؤقتًا يوم الجمعة سبعة من ألفيس) وتوازن سبعة أهداف لصالح وصفر ضد.",
+          "title": "روح فليك في أداء برشلونة الجذاب",
+          "summary": "حقق برشلونة العلامة الكاملة بست نقاط في أول جولتين من الدوري الإسباني بتسجيله سبعة أهداف ودون استقبال أي هدف، ليحتل الصدارة مؤقتاً خلف ألافيس.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260829/1004220779/espiritu-flick-barca-enamora.html",
@@ -314,7 +333,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260829/1004220779/espiritu-flick-barca-enamora.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2c40cc465605",
@@ -422,27 +446,48 @@
       "summary": "Benjamin André et Nabil Bentaleb estiment que les arrêts de jeu ont duré trop longtemps ce vendredi, face au PSG.",
       "i18n": {
         "fr": {
-          "title": "Lille-PSG : «Les 15 secondes de trop à la fin ont fait basculer le match», les Dogues remontés contre l’arbitre",
-          "summary": "Benjamin André et Nabil Bentaleb estiment que les arrêts de jeu ont duré trop longtemps ce vendredi, face au PSG.",
-          "needs_translation": false
+          "title": "Lille-PSG : les Dogues enragent contre le temps additionnel",
+          "summary": "Rejoint au bout des arrêts de jeu par le PSG (2-2), le Losc fustige les secondes supplémentaires accordées par l'arbitre Éric Wattellier.",
+          "body": [
+            "Alors qu'ils menaient encore à la 95e minute au stade Pierre-Mauroy, les Lillois ont vu Paris arracher l'égalisation au-delà des trois minutes de temps additionnel initialement prévues. Un dénouement cruel pour des Dogues qui tenaient l'exploit après avoir mené 2-0.",
+            "Au coup de sifflet final, Benjamin André et Nabil Bentaleb ont ouvertement pointé du doigt la prolongation excessive de la rencontre. Le capitaine lillois a fustigé ces « quinze secondes de trop » fatales à son équipe, tandis que Davide Ancelotti préférait retenir les enseignements d'une fin de match mal maîtrisée."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Lille-PSG: \"The 15 seconds too much at the end changed the game\", the Dogues raised against the referee",
-          "summary": "Benjamin André and Nabil Bentaleb believe that the stoppages lasted too long this Friday, against PSG.",
+          "title": "Lille-PSG: Dogues furious over stoppage time",
+          "summary": "Pegged back at the death by PSG (2-2), Losc hit out at the extra seconds added on by referee Éric Wattellier.",
+          "body": [
+            "Still ahead in the 95th minute at Stade Pierre-Mauroy, the Lillois saw Paris snatch a last-gasp equaliser well past the three minutes of stoppage time initially signalled. A bitter blow for the Dogues, who were on the verge of a huge win after leading 2-0.",
+            "At the final whistle, Benjamin André and Nabil Bentaleb voiced their frustration over the prolonged added time. The Lille captain lamented those fatal 'extra fifteen seconds', while Davide Ancelotti focused on the lessons to be learned from a poorly managed finale."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Lille-PSG: \"Los 15 segundos de más al final cambiaron el partido\", los Dogo se enfrentaron al árbitro",
-          "summary": "Benjamin André y Nabil Bentaleb estiman que las paradas de juego han durado demasiado este viernes, ante el PSG.",
+          "title": "Lille-PSG: los Dogues estallan contra el tiempo añadido",
+          "summary": "Empatado en el último suspiro por el PSG (2-2), el Losc clama contra los segundos de más concedidos por el colegiado Éric Wattellier.",
+          "body": [
+            "Cuando aún mandaban en el minuto 95 en el estadio Pierre-Mauroy, los Lillois vieron cómo Paris rascaba el empate más allá de los tres minutos de prolongación señalados en un principio. Un desenlace cruel para unos Dogues que acariciaban la gesta tras haberse puesto 2-0 arriba.",
+            "Tras el pitido final, Benjamin André y Nabil Bentaleb señalaron sin rodeos la excesiva prolongación del choque. El capitán lillois criticó esos «quince segundos de más» que resultaron letales para su equipo, mientras Davide Ancelotti prefirió centrarse en las lecciones que deja un tramo final mal gestionado."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ليل- PSG: \"15 ثانية أكثر من اللازم في النهاية غيرت اللعبة\"، رفعت الكلاب ضد الحكم",
-          "summary": "يعتقد بنيامين أندريه ونبيل بنتالب أن الإضرابات استمرت لفترة طويلة هذا الجمعة، ضد باريس سان جيرمان.",
+          "title": "ليل ضد باريس سان جيرمان: غضب في ليل بسبب الوقت بدل الضائع",
+          "summary": "بعد التعادل القاتل أمام باريس سان جيرمان (2-2) في الأنفاس الأخيرة، وجه نادي ليل انتقادات لاذعة للحكم إريك واتلييه بسبب الثواني الإضافية التي احتسبها.",
+          "body": [
+            "وبينما كان ليل متقدماً حتى الدقيقة 95 على ملعب بيير موروا، خطف النادي الباريسي هدف التعادل بعد انقضاء الدقائق الثلاث التي حُددت في البداية كوقت بدل ضائع. سيناريو قاسٍ على أصحاب الأرض الذين كانوا قاب قوسين أو أدنى من حسم اللقاء بعد تقدمهم بهدفين نظيفين.",
+            "وعقب صافرة النهاية، انتقد بنجامين أندريه ونبيل بن طالب علناً التمديد المبالغ فيه للمباراة؛ حيث تحسر قائد ليل على تلك «الخمس عشرة ثانية الإضافية» التي كانت قاضية على فريقه، في حين فضل دافيدي أنشيلوتي التركيز على الدروس المستفادة من سوء إدارة الدقائق الأخيرة."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-1/lille-psg-les-15-secondes-de-trop-a-la-fin-ont-fait-basculer-le-match-les-dogues-remontes-contre-l-arbitre-20260829",
@@ -464,7 +509,20 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-1/lille-psg-les-15-secondes-de-trop-a-la-fin-ont-fait-basculer-le-match-les-dogues-remontes-contre-l-arbitre-20260829"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-29T01:57:46+00:00"
+        }
+      }
     },
     {
       "id": "125142e0c817",
@@ -573,26 +631,27 @@
       "i18n": {
         "fr": {
           "title": "Lille-PSG : inspiration géniale de Giroud, bonbon de Bakwa, Marquinhos au buzzer… Les buts en vidéo",
-          "summary": "EN VIDÉO - Découvrez les quatre buts marqués lors de la rencontre à suspense entre le Losc et Paris vendredi, lors du premier match de la deuxième journée.",
-          "needs_translation": false
+          "summary": "Quatre buts ont été inscrits vendredi lors du match d'ouverture de la deuxième journée entre le Losc et Paris, avec des réalisations de Giroud, Bakwa et Marquinhos.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Lille-PSG: great inspiration from Giroud, Bakwa candy, Marquinhos with a buzzer... The goals on video",
-          "summary": "IN VIDEO - Discover the four goals scored during the suspenseful match between Losc and Paris on Friday, during the first match of the second day.",
+          "title": "Lille-PSG: brilliant inspiration from Giroud, Bakwa gem, Marquinhos at the buzzer… The goals on video",
+          "summary": "Four goals were scored on Friday in the matchday 2 clash between Losc and Paris, featuring strikes from Giroud, Bakwa, and Marquinhos.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Lille-PSG: inspiración genial de Giroud, caramelo de Bakwa, Marquinhos en el zumbador… Los goles en vídeo",
-          "summary": "EN VÍDEO - Descubre los cuatro goles marcados en el partido de suspenso entre el Lille y el París el viernes, en el primer partido de la segunda jornada.",
+          "title": "Lille-PSG: genial inspiración de Giroud, joya de Bakwa, Marquinhos sobre la bocina… Los goles en vídeo",
+          "summary": "Cuatro goles se marcaron el viernes en el partido de la segunda jornada entre el Losc y Paris, con tantos firmados por Giroud, Bakwa y Marquinhos.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ليل- بي إس جي: إلهام كبير من جيرو، حلوى بكوا، ماركينوس مع جرس... الأهداف على الفيديو",
-          "summary": "بالفيديو - اكتشف الأهداف الأربعة التي تم تسجيلها خلال المباراة المشوقة بين لوس أنجلوس وباريس يوم الجمعة، خلال المباراة الأولى من اليوم الثاني.",
+          "title": "ليل ضد باريس سان جيرمان: إبداع جيرو، هدف رائع لباكوا، وماركينيوس في اللحظات الأخيرة… الأهداف بالفيديو",
+          "summary": "شهدت مباراة افتتاح الجولة الثانية بين ليل وباريس سان جيرمان يوم الجمعة تسجيل أربعة أهداف، بتوقيع جيرو، باكوا وماركينيوس.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-1/lille-psg-deviation-geniale-de-giroud-petard-de-haraldsson-l-ouverture-du-score-en-video-20260828",
@@ -614,7 +673,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-1/lille-psg-deviation-geniale-de-giroud-petard-de-haraldsson-l-ouverture-du-score-en-video-20260828"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c68fb6bafede",
@@ -673,32 +737,33 @@
       "i18n": {
         "de": {
           "title": "Kane: \"Es sieht ziemlich gut aus\" - Diaby beim Medizincheck",
-          "summary": "Wer wechselt wohin? Wer ist wo im Gespräch?",
-          "needs_translation": false
+          "summary": "Aktuelle Entwicklungen auf dem Transfermarkt: Kane äußert sich optimistisch zu seiner Lage, während Diaby seinen Medizincheck absolviert.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Kane: \"It looks pretty good\" - Diaby at the medical check-up",
-          "summary": "Who is moving to where? Who is in conversation where?",
+          "title": "Kane: \"It looks pretty good\" - Diaby undergoing medical",
+          "summary": "Transfer market update: Kane expresses optimism regarding his situation, while Diaby undergoes his medical check.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Kane : « Ça a l'air plutôt bien » - Diaby à l'examen médical",
-          "summary": "Qui va où ? Qui est où dans la conversation ?",
+          "title": "Kane : « Ça se présente plutôt bien » - Diaby passe sa visite médicale",
+          "summary": "Dernières nouvelles du mercato : Kane s'exprime positivement sur sa situation, tandis que Diaby passe son examen médical.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Kane: \"Se ve bastante bien\" - Diaby en el chequeo médico",
-          "summary": "¿Quién se muda a dónde? ¿Quién está hablando dónde?",
+          "title": "Kane: \"Pinta bastante bien\" - Diaby pasa el reconocimiento médico",
+          "summary": "Última hora del mercado de fichajes: Kane se muestra optimista sobre su situación, mientras Diaby se somete al reconocimiento médico.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كين: \"يبدو جيدًا جدًا\" - ديابي في الفحص الطبي",
-          "summary": "من ينتقل إلى أين ؟ من يتحدث إلى أين ؟",
+          "title": "كين: \"الأمور تبدو جيدة للغاية\" - ديابي يخضع للفحص الطبي",
+          "summary": "آخر مستجدات سوق الانتقالات: كين يبدي تفاؤله بشأن وضعه، في حين يخضع ديابي للفحص الطبي تمهيداً لانتقاله.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/transferticker-953155/artikel#omrss",
@@ -720,7 +785,12 @@
           "url": "https://www.kicker.de/transferticker-953155/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f80edb3cbad5",
@@ -728,33 +798,54 @@
       "summary": "Der VfB Stuttgart ist zum Auftakt der neuen Bundesliga-Saison beim FC Bayern am Ende unter die Räder gekommen. Sebastian Hoeneß zeigte sich kritisch mit der eigenen Leistung - und mit der des Schiedsrichters.",
       "i18n": {
         "de": {
-          "title": "Stromausfall in der Pause - und nach dem Ausgleich: Hoeneß hadert mit der Auftaktpleite",
-          "summary": "Der VfB Stuttgart ist zum Auftakt der neuen Bundesliga-Saison beim FC Bayern am Ende unter die Räder gekommen. Sebastian Hoeneß zeigte sich kritisch mit der eigenen Leistung - und mit der des Schiedsrichters.",
-          "needs_translation": false
+          "title": "Stuttgart-Pleite bei Bayern: Hoeneß hadert mit Leistung und Schiedsrichter",
+          "summary": "Der VfB Stuttgart hat zum Bundesliga-Auftakt eine deutliche Niederlage beim FC Bayern kassiert und Trainer Sebastian Hoeneß übt deutliche Kritik.",
+          "body": [
+            "Nach dem Einbruch in München haderte der VfB-Coach nicht nur mit den Mängeln im eigenen Spiel, sondern zeigte sich auch mit den Entscheidungen des Unparteiischen unzufrieden. Neben dem sportlichen Dämpfer nach dem zwischenzeitlichen Ausgleich wurde die Partie der Schwaben beim Rekordmeister zudem von einem Stromausfall in der Halbzeitpause begleitet."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Power failure during the break - and after the balance: Hoeneß is struggling with the initial bankruptcy",
-          "summary": "At the beginning of the new Bundesliga season, VfB Stuttgart came under the wheels at FC Bayern at the end. Sebastian Hoeneß was critical with his own performance - and that of the referee.",
+          "title": "Stuttgart humbled at FC Bayern: Hoeneß laments display and officiating",
+          "summary": "VfB Stuttgart suffered a heavy defeat at FC Bayern in their Bundesliga opener, prompting sharp criticism from head coach Sebastian Hoeneß.",
+          "body": [
+            "Following the collapse in Munich, the VfB Stuttgart coach voiced frustration not only with his team's shortcomings but also with the referee's decisions. Beyond the sporting setback after having briefly equalized, the clash against the Rekordmeister was also disrupted by a half-time power outage."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Coupure de courant pendant la pause - et après la compensation : Hoeness se heurte à la panne initiale",
-          "summary": "Le VfB Stuttgart s'est finalement retrouvé sous les roues pour le coup d'envoi de la nouvelle saison de Bundesliga au FC Bayern. Sebastian Hoeness s'est montré critique à l'égard de sa propre performance - et de celle de l'arbitre.",
+          "title": "Revers de Stuttgart face au FC Bayern : Hoeneß fustige prestation et arbitrage",
+          "summary": "Le VfB Stuttgart a concédé une lourde défaite sur le terrain du FC Bayern pour l'ouverture de la Bundesliga, provoquant la vive réaction de son entraîneur Sebastian Hoeneß.",
+          "body": [
+            "Après le naufrage à Munich, l'entraîneur du VfB Stuttgart a pointé du doigt les errements de son équipe tout en contestant les décisions de l'arbitre. Outre ce coup d'arrêt sportif après avoir pourtant égalisé, le duel des Schwaben face au Rekordmeister a également été marqué par une panne de courant à la pause."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Apagón en la pausa y después de la compensación: Hoeness está en desacuerdo con la caída inicial",
-          "summary": "El VfB Stuttgart se ha puesto bajo las ruedas al comienzo de la nueva temporada de la Bundesliga con el FC Bayern al final. Sebastian Hoeneß se mostró crítico con su propio rendimiento y con el del árbitro.",
+          "title": "Revés de Stuttgart ante FC Bayern: Hoeneß critica el juego y el arbitraje",
+          "summary": "El VfB Stuttgart encajó una contundente derrota a domicilio frente al FC Bayern en el arranque de la Bundesliga, desatando las duras críticas del técnico Sebastian Hoeneß.",
+          "body": [
+            "Tras la debacle en Múnich, el preparador del VfB Stuttgart no solo lamentó los fallos de su equipo, sino que también mostró su disconformidad con las decisiones arbitrales. Al revés deportivo tras haber logrado el empate provisional se sumó un apagón eléctrico durante el descanso del choque frente al Rekordmeister."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "انقطاع التيار الكهربائي أثناء الكسر - وبعد الرصيد: يعاني هونيس من الإفلاس الأولي",
-          "summary": "في بداية موسم الدوري الألماني الجديد، تأثرت شتوتغارت في بايرن في نهاية المطاف. كان سيباستيان هونيس حاسما في أدائه - وأداء الحكم.",
+          "title": "سقوط شتوتغارت أمام بايرن ميونخ: هونيس ينتقد الأداء والتحكيم",
+          "summary": "تكبد نادي شتوتغارت خسارة قاسية أمام بايرن ميونخ في افتتاح الدوري الألماني، مما أثار انتقادات لاذعة من مدربه سيباستيان هونيس.",
+          "body": [
+            "وعقب الانهيار في ميونخ، أعرب مدرب شتوتغارت عن استيائه ليس فقط من الأخطاء في أداء فريقه، بل أيضاً من القرارات التحكيمية. وإلى جانب هذه النكسة الرياضية بعد إدراك التعادل المؤقت، شهدت مواجهة الفريق أمام حامل الرقم القياسي انقطاعاً في التيار الكهربائي خلال استراحة الشوطين."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.kicker.de/stromausfall-in-der-pause-und-nach-dem-ausgleich-hoeness-hadert-mit-der-auftaktpleite-1247658/artikel#omrss",
@@ -776,7 +867,20 @@
           "url": "https://www.kicker.de/stromausfall-in-der-pause-und-nach-dem-ausgleich-hoeness-hadert-mit-der-auftaktpleite-1247658/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-29T01:57:49+00:00"
+        }
+      }
     },
     {
       "id": "038c9a1d82f6",
@@ -785,32 +889,33 @@
       "i18n": {
         "de": {
           "title": "Pavlovic: \"Es ist oft gegen Stuttgart so, dass die ein bisschen einbrechen\"",
-          "summary": "Torreigen gegen den VfB Stuttgart? Für den FC Bayern seit längerer Zeit keine Seltenheit.",
-          "needs_translation": false
+          "summary": "Für den FC Bayern sind viele Tore und deutliche Siege gegen den VfB Stuttgart seit längerer Zeit keine Seltenheit mehr.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Pavlovic: \"It is often the case against Stuttgart that they break in a bit\"",
-          "summary": "Scoring goals against VfB Stuttgart? Not uncommon for FC Bayern for a long time.",
+          "title": "Pavlovic: \"It's often the case against Stuttgart that they collapse a bit\"",
+          "summary": "High-scoring performances against VfB Stuttgart have become a regular occurrence for FC Bayern for quite some time.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Pavlovic : « C'est souvent contre Stuttgart qu'ils s'effondrent un peu »",
-          "summary": "Jouer contre le VfB Stuttgart ? Ce n'est pas rare pour le FC Bayern depuis longtemps.",
+          "title": "Pavlovic : « C'est souvent comme ça contre Stuttgart, ils ont tendance à s'effondrer un peu »",
+          "summary": "Pour le FC Bayern, marquer de nombreux buts et dominer les débats face au VfB Stuttgart est devenu habituel depuis longtemps.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Pavlovic: \"A menudo es contra Stuttgart que se desploman un poco\"",
-          "summary": "¿Torreigen contra el VfB Stuttgart? No es raro para el FC Bayern desde hace mucho tiempo.",
+          "title": "Pavlovic: \"A menudo ocurre contra Stuttgart que se vienen un poco abajo\"",
+          "summary": "Para el FC Bayern, golear con frecuencia al VfB Stuttgart es una situación habitual desde hace tiempo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "بافلوفيتش: \"غالبًا ما تكون القضية ضد شتوتغارت هي التي يكسرون فيها قليلاً\"",
-          "summary": "تسجيل الأهداف ضد VfB Stuttgart ؟ ليس من غير المألوف بالنسبة لنادي بايرن لكرة القدم لفترة طويلة.",
+          "title": "بافلوفيتش: \"غالباً ما ينهار شتوتغارت قليلاً أمامنا\"",
+          "summary": "بات تسجيل العديد من الأهداف وتحقيق انتصارات عريضة أمام نادي شتوتغارت أمراً معتاداً بالنسبة لنادي بايرن ميونخ منذ فترة طويلة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/pavlovic-es-ist-oft-gegen-stuttgart-so-dass-die-ein-bisschen-einbrechen-1247662/artikel#omrss",
@@ -832,7 +937,12 @@
           "url": "https://www.kicker.de/pavlovic-es-ist-oft-gegen-stuttgart-so-dass-die-ein-bisschen-einbrechen-1247662/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2ddd7fdf9f07",
@@ -841,32 +951,33 @@
       "i18n": {
         "de": {
           "title": "Die Sportschau am Freitag in voller Länge",
-          "summary": "Sehen Sie hier die Sportschau am Freitag mit den Zusammenfassungen der Bundesliga, 2. Bundesliga und den Highlights der Frauen-Bundesliga.",
-          "needs_translation": false
+          "summary": "Die vollständige Ausgabe der Sportschau vom Freitag zeigt die Zusammenfassungen der Bundesliga, der 2. Bundesliga und die Highlights der Frauen-Bundesliga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The full-length sports show on Friday",
-          "summary": "Watch the sports show on Friday with the summaries of the Bundesliga, Bundesliga 2 and the highlights of the Women's Bundesliga.",
+          "title": "Sportschau on Freitag in Full",
+          "summary": "The full Friday edition of Sportschau features summaries from the Bundesliga, 2. Bundesliga, and Highlights from the Frauen-Bundesliga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le spectacle sportif complet du vendredi",
-          "summary": "Regardez ici le spectacle sportif du vendredi avec les résumés de la Bundesliga, de la 2e Bundesliga et les temps forts de la Bundesliga féminine.",
+          "title": "Sportschau du Freitag en intégralité",
+          "summary": "L'émission Sportschau du Freitag propose l'intégralité des résumés de la Bundesliga, de la 2. Bundesliga et les Highlights de la Frauen-Bundesliga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El espectáculo deportivo completo del viernes",
-          "summary": "Vea aquí el espectáculo deportivo del viernes con los resúmenes de la Bundesliga, la Bundesliga 2 y los aspectos más destacados de la Bundesliga femenina.",
+          "title": "Sportschau del Freitag completa",
+          "summary": "La edición de Sportschau del Freitag ofrece resúmenes completos de los partidos de la Bundesliga, la 2. Bundesliga y los Highlights de la Frauen-Bundesliga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "العرض الرياضي الكامل يوم الجمعة",
-          "summary": "شاهد العرض الرياضي يوم الجمعة مع ملخصات الدوري الألماني والدوري الألماني 2 وأبرز أحداث الدوري الألماني للسيدات.",
+          "title": "برنامج سبورتس شاو كاملاً ليوم الجمعة",
+          "summary": "تعرض حلقة الجمعة من برنامج سبورتس شاو ملخصات كاملة لمباريات الدوري الألماني للدرجتين الأولى والثانية، بالإضافة إلى أبرز أحداث الدوري الألماني للسيدات.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/die-sportschau-am-freitag-in-voller-laenge,sportschau-am-freitag-re-live-2808-100.html",
@@ -894,7 +1005,12 @@
           "url": "https://www.sportschau.de/fussball/die-sportschau-am-freitag-in-voller-laenge,sportschau-am-freitag-re-live-2808-100.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c1c615c7304b",
@@ -1002,33 +1118,59 @@
       "summary": "Der letzte Tabellenführer der alten Saison ist auch schon wieder der erste der neuen: Bayern München hat beim Bundesliga-Premierenspiel den mal wieder mutigen Stuttgartern letztlich klar die Grenzen aufgezeigt.",
       "i18n": {
         "de": {
-          "title": "Bundesliga: Bayern lassen VfB Stuttgart keine Chance",
-          "summary": "Der letzte Tabellenführer der alten Saison ist auch schon wieder der erste der neuen: Bayern München hat beim Bundesliga-Premierenspiel den mal wieder mutigen Stuttgartern letztlich klar die Grenzen aufgezeigt.",
-          "needs_translation": false
+          "title": "Bundesliga-Auftakt: FC Bayern schlägt VfB Stuttgart 5:1",
+          "summary": "Der FC Bayern München ist mit einem deutlichen 5:1-Erfolg gegen den VfB Stuttgart an die Tabellenspitze der neuen Bundesliga-Saison gestürmt.",
+          "body": [
+            "Dayot Upamecano eröffnete die Spielzeit in der 21. Minute per Kopf nach einer Ecke von Joshua Kimmich. Stuttgart hielt mutig dagegen, traf früh durch Tiago Tomás das Lattenkreuz und glich kurz nach dem Seitenwechsel durch Josha Vagnoman aus.",
+            "Die Antwort der Münchner folgte prompt: Michael Olise stellte binnen drei Minuten die Führung wieder her, ehe Vagnoman ein Eigentor unterlief. In der Schlussphase machten Aleksandar Pavlovic und Luis Diaz den Kantersieg perfekt."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Bundesliga: Bayern leave VfB Stuttgart no chance",
-          "summary": "The last league leader of the old season is also the first of the new: Bayern Munich finally clearly showed the limits to the brave Stuttgart players at the Bundesliga premiere game.",
+          "title": "Bundesliga opener: FC Bayern München cruise past VfB Stuttgart 5-1",
+          "summary": "FC Bayern München moved to the top of the Bundesliga table with an emphatic 5-1 victory over VfB Stuttgart in the season opener.",
+          "body": [
+            "Dayot Upamecano opened the scoring in the 21st minute with a header from a Joshua Kimmich corner. VfB Stuttgart responded aggressively, hitting the woodwork early on through Tiago Tomás before Josha Vagnoman leveled shortly after the restart.",
+            "The Bavarian reply came swiftly: Michael Olise restored the lead three minutes later, followed by an unfortunate Vagnoman own goal. Aleksandar Pavlovic and Luis Diaz added late goals to seal the rout."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Bundesliga : le Bayern ne laisse aucune chance au VfB Stuttgart",
-          "summary": "Le dernier leader de l'ancienne saison est encore une fois le premier des nouveaux : le Bayern Munich a finalement clairement montré les limites aux Stuttgartois courageux lors du premier match de Bundesliga.",
+          "title": "Bundesliga : le Bayern München surclasse le VfB Stuttgart 5-1",
+          "summary": "Le Bayern München a pris la tête de la Bundesliga grâce à une nette victoire 5-1 contre le VfB Stuttgart en ouverture du championnat.",
+          "body": [
+            "Dayot Upamecano a ouvert le score à la 21e minute d'une tête sur un corner de Joshua Kimmich. Le VfB Stuttgart a répliqué avec courage, touchant d'abord la transversale par Tiago Tomás avant d'égaliser au retour des vestiaires par Josha Vagnoman.",
+            "La réaction bavaroise ne s'est pas fait attendre : Michael Olise a redonné l'avantage aux siens trois minutes plus tard, avant qu'un but contre son camp de Vagnoman ne creuse l'écart. En fin de rencontre, Aleksandar Pavlovic et Luis Diaz ont scellé le festival offensif."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Bundesliga: el Bayern no deja ninguna posibilidad al VfB Stuttgart",
-          "summary": "El último líder de la antigua temporada es también el primero de los nuevos: en el partido inaugural de la Bundesliga, el Bayern de Múnich finalmente mostró claramente los límites a los valientes de Stuttgart.",
+          "title": "Arranque triunfal: el Bayern München golea 5-1 al VfB Stuttgart",
+          "summary": "El Bayern München se colocó líder de la Bundesliga al imponerse con claridad por 5-1 al VfB Stuttgart en la jornada inaugural.",
+          "body": [
+            "Dayot Upamecano inauguró el marcador en el minuto 21 al cabecear un saque de esquina de Joshua Kimmich. El VfB Stuttgart plantó cara, estrelló un remate en la cruceta por medio de Tiago Tomás e igualó tras el descanso gracias a Josha Vagnoman.",
+            "La réplica local fue contundente: Michael Olise recuperó la ventaja tres minutos después y un autogol de Vagnoman encarriló el choque. En el tramo final, Aleksandar Pavlovic y Luis Diaz completaron la goleada."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "الدوري الألماني: بايرن يغادر شتوتغارت بلا فرصة",
-          "summary": "آخر متصدر للدوري في الموسم القديم هو أيضا الأول من الجديد: أظهر بايرن ميونيخ أخيرا بوضوح حدود لاعبي شتوتغارت الشجعان في المباراة الأولى في الدوري الألماني.",
+          "title": "افتتاح الدوري الألماني: بايرن ميونخ يسحق شتوتغارت بنتيجة 5-1",
+          "summary": "اعتلى نادي بايرن ميونخ صدارة الدوري الألماني عقب فوزه العريض على شتوتغارت بنتيجة خمسة أهداف مقابل هدف في افتتاح الموسم الجديد.",
+          "body": [
+            "افتتح دايوت أوباميكانو التسجيل في الدقيقة 21 بضربة رأسية بعد ركنية من يوشوا كيميش. وقاتل شتوتغارت بجرأة وسدد تياغو توماس كرة في العارضة قبل أن يدرك يوشا فاغنومان التعادل مع مطلع الشوط الثاني.",
+            "وجاء رد أصحاب الأرض حاسماً، حيث أعاد مايكل أوليز التقدم سريعاً لبايرن ميونخ، قبل أن يسجل فاغنومان هدفاً عكسياً في شباك فريقه. وفي الدقائق الأخيرة، أضاف ألكسندر بافلوفيتش ولويس دياز الهدفين الرابع والخامس."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga/naechstes-schuetzenfest-zum-auftakt-bayern-schon-wieder-spitze,spielbericht-bayern-muenchen-vfb-stuttgart-106.html",
@@ -1056,7 +1198,20 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/naechstes-schuetzenfest-zum-auftakt-bayern-schon-wieder-spitze,spielbericht-bayern-muenchen-vfb-stuttgart-106.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-29T01:57:53+00:00"
+        }
+      }
     },
     {
       "id": "f690b81722aa",
@@ -1280,23 +1435,27 @@
       "i18n": {
         "fr": {
           "title": "Gonçalo Ramos débloque son compteur et libère l'AC Milan contre Venise en Serie A",
-          "summary": "Cinq jours après son succès à l'extérieur face au Torino (2-1) pour ses débuts en Serie A, l'AC Milan l'a emporté dans la douleur à San Siro contre Venise (2-0) vendredi.",
-          "needs_translation": false
+          "summary": "L'AC Milan s'est imposé 2-0 face à Venise à San Siro vendredi grâce au premier but de Gonçalo Ramos, enchaînant un deuxième succès de rang en Serie A.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Gonçalo Ramos débloque son compteur et libère l'AC Milan contre Venise en Serie A",
-          "summary": "Cinq jours après son succès à l'extérieur face au Torino (2-1) pour ses débuts en Serie A, l'AC Milan l'a emporté dans la douleur à San Siro contre Venise (2-0) vendredi.",
-          "needs_translation": true
+          "title": "Gonçalo Ramos opens his account and secures win for AC Milan against Venise in Serie A",
+          "summary": "AC Milan defeated Venise 2-0 at San Siro on Friday, with Gonçalo Ramos scoring his first goal to claim a second consecutive Serie A victory.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Gonçalo Ramos débloque son compteur et libère l'AC Milan contre Venise en Serie A",
-          "summary": "Cinq jours après son succès à l'extérieur face au Torino (2-1) pour ses débuts en Serie A, l'AC Milan l'a emporté dans la douleur à San Siro contre Venise (2-0) vendredi.",
-          "needs_translation": true
+          "title": "Gonçalo Ramos estrena su cuenta y da la victoria al AC Milan ante Venise en Serie A",
+          "summary": "El AC Milan se impuso 2-0 a Venise en San Siro con el primer gol de Gonçalo Ramos, sumando su segundo triunfo consecutivo en la Serie A.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Gonçalo Ramos débloque son compteur et libère l'AC Milan contre Venise en Serie A",
-          "summary": "Cinq jours après son succès à l'extérieur face au Torino (2-1) pour ses débuts en Serie A, l'AC Milan l'a emporté dans la douleur à San Siro contre Venise (2-0) vendredi.",
-          "needs_translation": true
+          "title": "غونسالو راموس يفتتح سجله التهديفي ويقود إيه سي ميلان للفوز على فينيزيا في الدوري الإيطالي",
+          "summary": "فاز إيه سي ميلان على فينيزيا بنتيجة 2-0 في سان سيرو يوم الجمعة، محققاً انتصاره الثاني توالياً في الدوري الإيطالي بفضل أول أهداف غونسالو راموس.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Goncalo-ramos-debloque-son-compteur-et-libere-l-ac-milan-contre-venise-en-serie-a/1714345#at_medium=RSS_feeds",
@@ -1330,7 +1489,12 @@
           "url": "https://www.lefigaro.fr/sports/football/italie/serie-a-l-ancien-parisien-goncalo-ramos-debloque-son-compteur-de-buts-avec-l-ac-milan-vainqueur-de-venise-20260828"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "53a12d80173b",
@@ -1732,23 +1896,27 @@
       "i18n": {
         "en": {
           "title": "Arsenal & Barca monitor Rashford - Saturday's gossip",
-          "summary": "Arsenal monitor Marcus Rashford, Chelsea eye Monaco's Lamine Camara and Valencia push for Liverpool midfielder Harvey Elliott, plus more.",
-          "needs_translation": false
+          "summary": "Arsenal and Barca are monitoring Marcus Rashford. Meanwhile, Chelsea are targeting Monaco's Lamine Camara, and Valencia are pushing to sign Liverpool midfielder Harvey Elliott.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Arsenal & Barca monitor Rashford - Saturday's gossip",
-          "summary": "Arsenal monitor Marcus Rashford, Chelsea eye Monaco's Lamine Camara and Valencia push for Liverpool midfielder Harvey Elliott, plus more.",
-          "needs_translation": true
+          "title": "Arsenal et le Barca surveillent Rashford - les rumeurs du samedi",
+          "summary": "Arsenal et le Barca suivent Marcus Rashford. De son côté, Chelsea s'intéresse à Monaco's Lamine Camara, tandis que Valencia tente d'attirer le milieu de Liverpool Harvey Elliott.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Arsenal & Barca monitor Rashford - Saturday's gossip",
-          "summary": "Arsenal monitor Marcus Rashford, Chelsea eye Monaco's Lamine Camara and Valencia push for Liverpool midfielder Harvey Elliott, plus more.",
-          "needs_translation": true
+          "title": "Arsenal y Barca siguen a Rashford - rumores del sábado",
+          "summary": "Arsenal y Barca siguen de cerca a Marcus Rashford. Paralelamente, Chelsea se fija en Monaco's Lamine Camara y Valencia insiste por el centrocampista de Liverpool Harvey Elliott.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Arsenal & Barca monitor Rashford - Saturday's gossip",
-          "summary": "Arsenal monitor Marcus Rashford, Chelsea eye Monaco's Lamine Camara and Valencia push for Liverpool midfielder Harvey Elliott, plus more.",
-          "needs_translation": true
+          "title": "أرسنال وبرشلونة يراقبان راشفورد - أبرز شائعات السبت",
+          "summary": "يراقب أرسنال وبرشلونة وضع ماركوس راشفورد، في حين يهتم تشيلسي بضم لامين كامارا من موناكو، ويسعى فالنسيا للتعاقد مع لاعب وسط ليفربول هارفي إليوت.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cp8416ll9yvo?at_medium=RSS&at_campaign=rss",
@@ -1770,7 +1938,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cp8416ll9yvo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0441b6fd8f6e",
@@ -1878,28 +2051,33 @@
       "i18n": {
         "de": {
           "title": "Simon Möller furios: Flensburg wendet Fehlstart gegen Eisenach ab",
-          "summary": "Großer Kraftakt der SG Flensburg-Handewitt: Am 1. Spieltag der Handball-Bundesliga haben die Fördestädter den ThSV Eisenach mit 33:31 (20:18) niedergerungen - auch dank des furiosen Simon Möller.",
-          "needs_translation": false
+          "summary": "Am 1. Spieltag der Handball-Bundesliga setzte sich die SG Flensburg-Handewitt mit 33:31 gegen den ThSV Eisenach durch. Ausschlaggebend für den Heimsieg war unter anderem die starke Leistung von Simon Möller.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Simon Möller furios: Flensburg wendet Fehlstart gegen Eisenach ab",
-          "summary": "Großer Kraftakt der SG Flensburg-Handewitt: Am 1. Spieltag der Handball-Bundesliga haben die Fördestädter den ThSV Eisenach mit 33:31 (20:18) niedergerungen - auch dank des furiosen Simon Möller.",
-          "needs_translation": true
+          "title": "Simon Möller furious: Flensburg averts false start against Eisenach",
+          "summary": "On matchday 1 of the Handball-Bundesliga, SG Flensburg-Handewitt secured a 33-31 victory against ThSV Eisenach, aided by a decisive performance from Simon Möller.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Simon Möller furios: Flensburg wendet Fehlstart gegen Eisenach ab",
-          "summary": "Großer Kraftakt der SG Flensburg-Handewitt: Am 1. Spieltag der Handball-Bundesliga haben die Fördestädter den ThSV Eisenach mit 33:31 (20:18) niedergerungen - auch dank des furiosen Simon Möller.",
-          "needs_translation": true
+          "title": "Simon Möller brillant : Flensburg évite le faux départ contre Eisenach",
+          "summary": "Lors de la 1re journée de Handball-Bundesliga, SG Flensburg-Handewitt s'est imposé 33-31 face à ThSV Eisenach. Le club a notamment pu compter sur une performance décisive de Simon Möller.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Simon Möller furios: Flensburg wendet Fehlstart gegen Eisenach ab",
-          "summary": "Großer Kraftakt der SG Flensburg-Handewitt: Am 1. Spieltag der Handball-Bundesliga haben die Fördestädter den ThSV Eisenach mit 33:31 (20:18) niedergerungen - auch dank des furiosen Simon Möller.",
-          "needs_translation": true
+          "title": "Simon Möller estelar: Flensburg evita un tropiezo inicial ante Eisenach",
+          "summary": "En la 1.ª jornada de la Handball-Bundesliga, SG Flensburg-Handewitt venció 33-31 a ThSV Eisenach, impulsado por una gran actuación de Simon Möller para evitar un mal inicio de temporada.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Simon Möller furios: Flensburg wendet Fehlstart gegen Eisenach ab",
-          "summary": "Großer Kraftakt der SG Flensburg-Handewitt: Am 1. Spieltag der Handball-Bundesliga haben die Fördestädter den ThSV Eisenach mit 33:31 (20:18) niedergerungen - auch dank des furiosen Simon Möller.",
-          "needs_translation": true
+          "title": "سيمون مولر يتألق: فلينسبورغ يتفادى التعثر أمام آيزناخ",
+          "summary": "تغلب إس جي فلينسبورغ-هاندفيت على تي إتش إس في آيزناخ بنتيجة 33-31 في الجولة الأولى من الدوري الألماني لكرة اليد، مدفوعاً بتألق حارس المرمى سيمون مولر.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/flensburg-gegen-eisenach-2026-handball-bundesliga-5213748/spielbericht#omrss",
@@ -1921,7 +2099,12 @@
           "url": "https://www.kicker.de/flensburg-gegen-eisenach-2026-handball-bundesliga-5213748/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "585a427a7de6",
@@ -2076,23 +2259,27 @@
       "i18n": {
         "es": {
           "title": "El portero del PSG choca en el calentamiento con un miembro del staff de Luis Enrique",
-          "summary": "Susto mayúsculo el que se ha llevado el PSG , con Luis Enrique a la cabeza, en el calentamiento previo al partido de la Ligue 1 de esta noche en Lille.",
-          "needs_translation": false
+          "summary": "El portero del PSG sufrió un choque con un miembro del cuerpo técnico de Luis Enrique durante el calentamiento previo al partido de Ligue 1 en Lille.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El portero del PSG choca en el calentamiento con un miembro del staff de Luis Enrique",
-          "summary": "Susto mayúsculo el que se ha llevado el PSG , con Luis Enrique a la cabeza, en el calentamiento previo al partido de la Ligue 1 de esta noche en Lille.",
-          "needs_translation": true
+          "title": "PSG goalkeeper collides with member of Luis Enrique's staff during warm-up",
+          "summary": "The PSG goalkeeper collided with a member of Luis Enrique's coaching staff during the warm-up prior to their Ligue 1 match in Lille.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El portero del PSG choca en el calentamiento con un miembro del staff de Luis Enrique",
-          "summary": "Susto mayúsculo el que se ha llevado el PSG , con Luis Enrique a la cabeza, en el calentamiento previo al partido de la Ligue 1 de esta noche en Lille.",
-          "needs_translation": true
+          "title": "Le gardien du PSG heurte un membre du staff de Luis Enrique à l'échauffement",
+          "summary": "Le gardien du PSG est entré en collision avec un membre du staff de Luis Enrique lors de l'échauffement précédant la rencontre de Ligue 1 à Lille.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El portero del PSG choca en el calentamiento con un miembro del staff de Luis Enrique",
-          "summary": "Susto mayúsculo el que se ha llevado el PSG , con Luis Enrique a la cabeza, en el calentamiento previo al partido de la Ligue 1 de esta noche en Lille.",
-          "needs_translation": true
+          "title": "حارس مرمى باريس سان جيرمان يصطدم بأحد أفراد طاقم لويس إنريكي أثناء الإحماء",
+          "summary": "تعرض حارس مرمى باريس سان جيرمان لاصطدام مع أحد أعضاء الجهاز الفني للمدرب لويس إنريكي خلال تدريبات الإحماء قبل مباراة الدوري الفرنسي في ليل.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/internacional/20260828/1004220780/safonov.html",
@@ -2114,7 +2301,12 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20260828/1004220780/safonov.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7d07b763d2bc",
@@ -2169,29 +2361,34 @@
       "summary": "\"Eine Situation, die man keinem wünscht.\" Unmittelbar vor dem Bundesliga-Saisonstart ging der in der Allianz-Arena anwesende Bundestrainer Jürgen Klopp auch auf die aktuelle Situation von Jamal Musiala ein.",
       "i18n": {
         "de": {
-          "title": "Klopp über Musiala: \"Ich kann ihm nur die eine Sorge nehmen\"",
-          "summary": "\"Eine Situation, die man keinem wünscht.\" Unmittelbar vor dem Bundesliga-Saisonstart ging der in der Allianz-Arena anwesende Bundestrainer Jürgen Klopp auch auf die aktuelle Situation von Jamal Musiala ein.",
-          "needs_translation": false
+          "title": "Klopp über Musiala: „Ich kann ihm nur die eine Sorge nehmen“",
+          "summary": "Vor dem Bundesliga-Saisonstart in der Allianz-Arena äußerte sich Bundestrainer Jürgen Klopp zur aktuellen Lage von Jamal Musiala und sprach von einer Situation, die man keinem wünscht.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Klopp über Musiala: \"Ich kann ihm nur die eine Sorge nehmen\"",
-          "summary": "\"Eine Situation, die man keinem wünscht.\" Unmittelbar vor dem Bundesliga-Saisonstart ging der in der Allianz-Arena anwesende Bundestrainer Jürgen Klopp auch auf die aktuelle Situation von Jamal Musiala ein.",
-          "needs_translation": true
+          "title": "Klopp on Musiala: \"I can only take away that one worry for him\"",
+          "summary": "Ahead of the Bundesliga season opener at the Allianz-Arena, national coach Jürgen Klopp addressed the current situation of Jamal Musiala, calling it a difficult position for anyone.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Klopp über Musiala: \"Ich kann ihm nur die eine Sorge nehmen\"",
-          "summary": "\"Eine Situation, die man keinem wünscht.\" Unmittelbar vor dem Bundesliga-Saisonstart ging der in der Allianz-Arena anwesende Bundestrainer Jürgen Klopp auch auf die aktuelle Situation von Jamal Musiala ein.",
-          "needs_translation": true
+          "title": "Klopp sur Musiala : « Je ne peux que lui ôter cette inquiétude »",
+          "summary": "Présent à l'Allianz-Arena avant le coup d'envoi de la saison de Bundesliga, le sélectionneur Jürgen Klopp s'est exprimé sur la situation délicate de Jamal Musiala.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Klopp über Musiala: \"Ich kann ihm nur die eine Sorge nehmen\"",
-          "summary": "\"Eine Situation, die man keinem wünscht.\" Unmittelbar vor dem Bundesliga-Saisonstart ging der in der Allianz-Arena anwesende Bundestrainer Jürgen Klopp auch auf die aktuelle Situation von Jamal Musiala ein.",
-          "needs_translation": true
+          "title": "Klopp sobre Musiala: «Solo puedo quitarle esa única preocupación»",
+          "summary": "Presente en el Allianz-Arena antes del inicio de la Bundesliga, el seleccionador Jürgen Klopp analizó la situación actual de Jamal Musiala, calificándola como un momento difícil para cualquiera.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Klopp über Musiala: \"Ich kann ihm nur die eine Sorge nehmen\"",
-          "summary": "\"Eine Situation, die man keinem wünscht.\" Unmittelbar vor dem Bundesliga-Saisonstart ging der in der Allianz-Arena anwesende Bundestrainer Jürgen Klopp auch auf die aktuelle Situation von Jamal Musiala ein.",
-          "needs_translation": true
+          "title": "كلوب عن موسيالا: \"يمكنني فقط أن أزيل عنه هذا القلق\"",
+          "summary": "تحدث مدرب المنتخب يورغن كلوب، من ملعب أليانز أرينا قبل انطلاق موسم الدوري الألماني، عن وضع جمال موسيالا، معتبراً إياه موقفاً صعباً لا يُتمناه لأحد.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/klopp-ueber-musiala-ich-kann-ihm-nur-die-eine-sorge-nehmen-1247624/artikel#omrss",
@@ -2213,7 +2410,12 @@
           "url": "https://www.kicker.de/klopp-ueber-musiala-ich-kann-ihm-nur-die-eine-sorge-nehmen-1247624/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ffd53b9d76bf",
@@ -2274,23 +2476,27 @@
       "i18n": {
         "fr": {
           "title": "Lille-PSG : grosse frayeur pour Safonov à l’échauffement (vidéo)",
-          "summary": "Le portier russe du Paris-SG est resté plusieurs minutes au sol après un choc à l’échauffement ce vendredi, à Lille.",
-          "needs_translation": false
+          "summary": "Le gardien du Paris-SG, Safonov, est resté plusieurs minutes au sol après un choc survenu lors de l'échauffement ce vendredi à Lille.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Lille-PSG : grosse frayeur pour Safonov à l’échauffement (vidéo)",
-          "summary": "Le portier russe du Paris-SG est resté plusieurs minutes au sol après un choc à l’échauffement ce vendredi, à Lille.",
-          "needs_translation": true
+          "title": "Lille-PSG: Big scare for Safonov during warm-up (video)",
+          "summary": "Paris-SG goalkeeper Safonov remained on the ground for several minutes after a collision during the warm-up this Friday in Lille.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Lille-PSG : grosse frayeur pour Safonov à l’échauffement (vidéo)",
-          "summary": "Le portier russe du Paris-SG est resté plusieurs minutes au sol après un choc à l’échauffement ce vendredi, à Lille.",
-          "needs_translation": true
+          "title": "Lille-PSG: Gran susto para Safonov en el calentamiento (vídeo)",
+          "summary": "El portero del Paris-SG, Safonov, permaneció varios minutos en el suelo tras recibir un golpe durante el calentamiento este viernes en Lille.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Lille-PSG : grosse frayeur pour Safonov à l’échauffement (vidéo)",
-          "summary": "Le portier russe du Paris-SG est resté plusieurs minutes au sol après un choc à l’échauffement ce vendredi, à Lille.",
-          "needs_translation": true
+          "title": "ليل ضد باريس سان جيرمان: قلق على سافونوف بعد إصابته في الإحماء (فيديو)",
+          "summary": "سقط حارس مرمى باريس سان جيرمان، سافونوف، لعدة دقائق على أرضية الملعب إثر اصطدام تعرض له خلال عمليات الإحماء يوم الجمعة في ليل.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-1/lille-psg-grosse-frayeur-pour-safonov-a-l-echauffement-video-20260828",
@@ -2312,7 +2518,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-1/lille-psg-grosse-frayeur-pour-safonov-a-l-echauffement-video-20260828"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     }
   ]
 }
