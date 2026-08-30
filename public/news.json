@@ -16,27 +16,28 @@
       "summary": "Après avoir disposé de Strasbourg au Vélodrome en ouverture de la saison, l’Olympique de Marseille se déplace sur la pelouse de l’ASM, ce dimanche soir (20h45), en clôture de la 2e journée de Ligue 1.",
       "i18n": {
         "fr": {
-          "title": "EN DIRECT – Monaco-Marseille : Brunner et l’ASM surprennent (déjà) l’OM de Genesio",
-          "summary": "Après avoir disposé de Strasbourg au Vélodrome en ouverture de la saison, l’Olympique de Marseille se déplace sur la pelouse de l’ASM, ce dimanche soir (20h45), en clôture de la 2e journée de Ligue 1.",
-          "needs_translation": false
+          "title": "DIRECT – Monaco-Marseille : Brunner et l’ASM surprennent l’OM de Genesio",
+          "summary": "Après sa victoire face à Strasbourg au Vélodrome, l’Olympique de Marseille affronte Monaco ce dimanche soir en clôture de la 2e journée de Ligue 1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "LIVE – Monaco-Marseille: Brunner and the ASM surprise (already) the OM of Genesio",
-          "summary": "After having played from Strasbourg to the Velodrome at the opening of the season, Olympique de Marseille is moving on the ASM lawn, this Sunday evening (20:45), at the end of the second day of Ligue 1.",
+          "title": "LIVE – Monaco-Marseille: Brunner and ASM surprise Genesio's OM",
+          "summary": "Following their win against Strasbourg at the Vélodrome, Olympique de Marseille face Monaco this Sunday night to close round 2 of Ligue 1.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "EN VIVO – Mónaco-Marsella: Brunner y ASM sorprenden (ya) al OM de Genesio",
-          "summary": "Después de haber dispuesto de Estrasburgo en el Velódromo en la apertura de la temporada, el Olympique de Marsella se desplaza al césped del ASM, este domingo por la noche (20:45), en la clausura de la segunda jornada de la Ligue 1.",
+          "title": "EN DIRECTO – Monaco-Marseille: Brunner y el ASM sorprenden al OM de Genesio",
+          "summary": "Tras superar a Strasbourg en el Vélodrome, el Olympique de Marseille visita a Monaco este domingo para cerrar la jornada 2 de la Ligue 1.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباشر – موناكو – مارسيليا: برونر و ASM يفاجئان (بالفعل) OM of Genesio",
-          "summary": "بعد أن لعب من ستراسبورغ إلى Velodrome في افتتاح الموسم، ينتقل Olympique de Marseille إلى حديقة ASM، مساء الأحد (20:45)، في نهاية اليوم الثاني من دوري الدرجة الأولى.",
+          "title": "مباشر – موناكو ضد مارسيليا: برونر وفريقه يفاجئان مارسيليا بقيادة جينيسيو",
+          "summary": "بعد فوزه على ستراسبورغ في فيلودروم بالجولة الافتتاحية، يحل أولمبيك مارسيليا ضيفاً على موناكو مساء الأحد في ختام الجولة الثانية من الدوري الفرنسي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/live/ligue-1/2026/2640573/monaco-marseille",
@@ -58,7 +59,12 @@
           "url": "https://www.lefigaro.fr/sports/football/live/ligue-1/2026/2640573/monaco-marseille"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b37f2fdeb74f",
@@ -67,26 +73,27 @@
       "i18n": {
         "es": {
           "title": "Por qué se repitió el penal de Almada, que luego anotó su primer gol en River",
-          "summary": "El Ruso Rodríguez le había adivinado la intención al 23 de River, que luego tuvo su revancha. ¿Qué pasó?",
-          "needs_translation": false
+          "summary": "Tras una primera atajada de El Ruso Rodríguez, el penal de Almada fue repetido y el futbolista anotó su primer gol con la camiseta de River.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Why the Almada penalty was repeated, who then scored his first goal in River",
-          "summary": "The Russian Rodriguez had guessed the intention of River 23, who then had his revenge. What happened?",
+          "title": "Why Almada's penalty was retaken before scoring his first goal for River",
+          "summary": "After El Ruso Rodríguez saved Almada's initial attempt, the penalty was retaken, allowing the player to score his first goal for River.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Pourquoi le penalty d'Almada a été répété, qui a ensuite marqué son premier but à River",
-          "summary": "Le Russe Rodriguez avait deviné l'intention du 23 de River, qui a ensuite pris sa revanche. Que s'est-il passé ?",
+          "title": "Pourquoi le penalty d'Almada a été retiré, avant qu'il n'inscrive son premier but avec River",
+          "summary": "Après un premier arrêt d'El Ruso Rodríguez, le penalty d'Almada a été rejoué, permettant au joueur d'inscrire son premier but sous les couleurs de River.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "لماذا تم تكرار ركلة الجزاء ألمادا، الذي سجل بعد ذلك هدفه الأول في ريفر",
-          "summary": "كان رودريغيز الروسي قد خمن نية ريفر 23، الذي انتقم بعد ذلك. ماذا حَدثَ ؟",
+          "title": "لماذا أُعيدت ركلة جزاء ألمادا التي سجل منها هدفه الأول مع ريفر بليت",
+          "summary": "بعدما تصدى الحارس إل روسو رودريغيز للمحاولة الأولى، أُعيد تنفيذ ركلة الجزاء ليسجل ألمادا أول أهدافه بقميص ريفر بليت.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-primera/almada-gol-river-banfield-penal-repeticion_0_GeYutipEsn.html",
@@ -108,7 +115,12 @@
           "url": "https://www.ole.com.ar/futbol-primera/almada-gol-river-banfield-penal-repeticion_0_GeYutipEsn.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "244977e6c8b7",
@@ -117,26 +129,27 @@
       "i18n": {
         "fr": {
           "title": "Bruno Genesio ovationné au stade Louis-II avant Monaco-Marseille",
-          "summary": "Si les groupes de supporters de l'OM n'ont pu faire le déplacement et garnir la zone visiteurs, de nombreux fans situés dans une autre tribune ont réservé un bel accueil au coach marseillais avant Monaco-Marseille ce dimanche (un match à suivre sur Ligue 1+, disponible sur…",
-          "needs_translation": false
+          "summary": "Malgré l'absence des groupes officiels de supporters de l'OM en parcage visiteurs, des fans marseillais présents en tribunes ont chaleureusement accueilli Bruno Genesio avant le match face à Monaco.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Bruno Genesio praised at the Louis-II stadium before Monaco-Marseille",
-          "summary": "If the groups of OM supporters were unable to make the trip and fill the visitors' area, many fans located in another stand reserved a nice welcome for the Marseille coach before Monaco-Marseille this Sunday (a match to follow on Ligue 1+, available on…",
+          "title": "Bruno Genesio given a standing ovation at Stade Louis-II before Monaco-Marseille",
+          "summary": "Despite OM fan groups being absent from the away section, Marseille supporters elsewhere in the stands warmly welcomed Bruno Genesio before the Ligue 1 clash against Monaco.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Bruno Genesio ovacionado en el estadio Louis-II antes de Mónaco-Marsella",
-          "summary": "Si los grupos de aficionados del OM no pudieron viajar y llenar la zona de visitantes, muchos aficionados ubicados en otra tribuna dieron una buena bienvenida al entrenador marsellés antes de Mónaco-Marsella este domingo (un partido a seguir en la Ligue 1+, disponible en…",
+          "title": "Bruno Genesio ovacionado en el estadio Louis-II antes del Monaco-Marseille",
+          "summary": "Pese a la ausencia de los grupos organizados del OM en la zona visitante, los hinchas marselleses en la grada recibieron calurosamente a Bruno Genesio antes de medirse al Monaco.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أشاد برونو جينيسيو في ملعب لويس الثاني قبل موناكو- مارسيليا",
-          "summary": "إذا لم تتمكن مجموعات مؤيدي OM من القيام بالرحلة وملء منطقة الزوار، فقد حجز العديد من المشجعين الموجودين في جناح آخر ترحيبًا لطيفًا لمدرب مرسيليا أمام موناكو- مرسيليا هذا الأحد (مباراة لمتابعة دوري الدرجة الأولى، متوفرة على...",
+          "title": "تحية حارة لبرونو جينيسيو في ملعب لويس الثاني قبل مواجهة موناكو ومارسيليا",
+          "summary": "رغم غياب روابط مشجعي مارسيليا عن مدرج الزوار، استقبلت جماهير الفريق الحاضرة في مدرجات أخرى بملعب لويس الثاني المدرب برونو جينيسيو بحفاوة قبل مواجهة موناكو في الدوري الفرنسي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Bruno-genesio-ovationne-au-stade-louis-ii-avant-monaco-marseille/1714813#at_medium=RSS_feeds",
@@ -158,7 +171,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Bruno-genesio-ovationne-au-stade-louis-ii-avant-monaco-marseille/1714813#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a7a1dfc8aaa6",
@@ -167,32 +185,33 @@
       "i18n": {
         "de": {
           "title": "Calhanoglu aus der Distanz: Inter führt auf Sardinien",
-          "summary": "Hakan Calhanoglu hat Inter Mailand mit einem Distanzschuss in Führung gebracht. Hier gibt es die Highlights im Video.",
-          "needs_translation": false
+          "summary": "Hakan Calhanoglu hat Inter Mailand mit einem Distanzschuss auf Sardinien in Führung gebracht.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Calhanoglu from a distance: Inter leads in Sardinia",
-          "summary": "Hakan Calhanoglu put Inter Milan in the lead with a long-range shot. Here are the highlights in the video.",
+          "title": "Calhanoglu from distance: Inter lead in Sardinia",
+          "summary": "Hakan Calhanoglu gave Inter Mailand the lead in Sardinia with a strike from distance.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Calhanoglu à distance : l'Inter mène en Sardaigne",
-          "summary": "Hakan Calhanoglu a pris la tête de l'Inter Milan avec un tir à distance. Voici les points forts de la vidéo.",
+          "title": "Calhanoglu de loin : Inter mène en Sardaigne",
+          "summary": "Hakan Calhanoglu a donné l'avantage à Inter Mailand grâce à un tir lointain réussi en Sardaigne.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Calhanoglu desde la distancia: el Inter conduce a Cerdeña",
-          "summary": "Hakan Calhanoglu lideró al Inter de Milán con un disparo a distancia. Aquí están los aspectos más destacados del vídeo.",
+          "title": "Calhanoglu desde fuera del área: Inter lidera en Cerdeña",
+          "summary": "Hakan Calhanoglu puso por delante a Inter Mailand con un disparo de larga distancia en Cerdeña.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كالهانوغلو عن بعد: إنتر يؤدي في سردينيا",
-          "summary": "وضع هاكان كالهان أوغلو إنتر ميلان في الصدارة بتسديدة بعيدة المدى. فيما يلي النقاط البارزة في الفيديو.",
+          "title": "تشالهان أوغلو من بعيد: إنتر يتقدم في سردينيا",
+          "summary": "منح هاكان تشالهان أوغلو التقدم لصالح إنتر ميلان بتسديدة من مسافة بعيدة في سردينيا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/calhanoglu-aus-der-distanz-inter-fuehrt-auf-sardinien-1248285/video#omrss",
@@ -214,7 +233,12 @@
           "url": "https://www.kicker.de/calhanoglu-aus-der-distanz-inter-fuehrt-auf-sardinien-1248285/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "448e9cb5dcea",
@@ -272,27 +296,28 @@
       "summary": "Talleres ha anunciado este domingo 30 de agosto la destitución de Jorge Sampaoli como entrenador. Ello, menos de tres meses después de haber asumido el cargo debido a los malos resultados del equipo de Córdoba en la liga argentina.",
       "i18n": {
         "es": {
-          "title": "Sampaoli, fulminado",
-          "summary": "Talleres ha anunciado este domingo 30 de agosto la destitución de Jorge Sampaoli como entrenador. Ello, menos de tres meses después de haber asumido el cargo debido a los malos resultados del equipo de Córdoba en la liga argentina.",
-          "needs_translation": false
+          "title": "Sampaoli, destituido",
+          "summary": "Talleres anunció la destitución de Jorge Sampaoli como entrenador menos de tres meses después de asumir el cargo, a causa de los malos resultados del club de Córdoba.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Sampaoli, fulminate",
-          "summary": "This Sunday, August 30, Talleres announced the dismissal of Jorge Sampaoli as coach. This, less than three months after taking office due to the poor results of Córdoba's team in the Argentine league.",
+          "title": "Sampaoli sacked",
+          "summary": "Talleres have announced the dismissal of manager Jorge Sampaoli less than three months after his appointment, following poor results for the Córdoba club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Sampaoli, foudroyé",
-          "summary": "Talleres a annoncé ce dimanche 30 août la destitution de Jorge Sampaoli en tant qu'entraîneur. Cela, moins de trois mois après son entrée en fonction en raison des mauvais résultats de l'équipe de Córdoba dans la ligue argentine.",
+          "title": "Sampaoli limogé",
+          "summary": "Talleres a officialisé le limogeage de Jorge Sampaoli moins de trois mois après sa nomination, en raison des mauvais résultats du club de Córdoba.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "سامباولي، فلمنات",
-          "summary": "هذا الأحد، 30 أغسطس، أعلن تاليريس إقالة خورخي سامباولي كمدرب. هذا، بعد أقل من ثلاثة أشهر من توليه منصبه بسبب النتائج السيئة لفريق قرطبة في الدوري الأرجنتيني.",
+          "title": "إقالة سامباولي",
+          "summary": "أعلن نادي تاليريس إقالة مدربه خورخي سامباولي بعد أقل من ثلاثة أشهر على تعيينه، وذلك بسبب سوء نتائج الفريق المنتمي إلى كوردوبا في الدوري الأرجنتيني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/internacional/20260830/1004221396/sampaoli-fulminado.html",
@@ -314,7 +339,12 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20260830/1004221396/sampaoli-fulminado.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "008ab4a9b3df",
@@ -373,26 +403,27 @@
       "i18n": {
         "es": {
           "title": "Funes, tras la derrota frente al Real Madrid: «No podemos buscar la excusa en la dificultad de los rivales»",
-          "summary": "Juanfran Funes habló tras el partido y achacó a su equipo falta de atrevimiento con balón para haber tenido alguna opción más de sacar algo positivo del Bernabéu. Tenemos que ser más agresivos en el último tercio, no podemos ser temerosos, explicó.",
-          "needs_translation": false
+          "summary": "Tras caer ante el Real Madrid en el Bernabéu, Juanfran Funes lamentó la falta de atrevimiento de su equipo y exigió mayor agresividad ofensiva, rechazando cualquier excusa por la entidad del rival.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Funes, after the defeat against Real Madrid: \"We cannot look for the excuse in the difficulty of the rivals\"",
-          "summary": "Juanfran Funes spoke after the game and blamed his team's lack of daring with a ball for having had any other option to get something positive out of the Bernabéu. We have to be more aggressive in the last third, we can't be fearful, he explained.",
+          "title": "Funes after the defeat against Real Madrid: \"We cannot make excuses about the difficulty of our opponents\"",
+          "summary": "Following the defeat at the Bernabéu against Real Madrid, Juanfran Funes lamented his team's lack of boldness and demanded more attacking aggression, refusing to make excuses based on the opponent's strength.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Funes, après la défaite face au Real Madrid : « Nous ne pouvons pas trouver d'excuse dans la difficulté des rivaux »",
-          "summary": "Juanfran Funes a parlé après le match et a reproché à son équipe son manque d'audace avec le ballon pour avoir eu une autre option de tirer quelque chose de positif du Bernabéu. Nous devons être plus agressifs dans le dernier tiers, nous ne pouvons pas être craintifs, a-t-il expliqué.",
+          "title": "Funes après la défaite face au Real Madrid : « Nous ne pouvons pas chercher d'excuses dans la difficulté des adversaires »",
+          "summary": "Après la défaite au Bernabéu face au Real Madrid, Juanfran Funes a regretté le manque d'audace de son équipe et réclamé plus d'agressivité offensive, refusant de se cacher derrière le niveau adverse.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "فونيس، بعد الهزيمة ضد ريال مدريد: \"لا يمكننا البحث عن العذر في صعوبة المنافسين\"",
-          "summary": "تحدث خوانفران فونيس بعد المباراة وألقى باللوم على افتقار فريقه للجرأة بالكرة لأنه كان لديه أي خيار آخر للحصول على شيء إيجابي من البرنابيو. وأوضح أنه يجب أن نكون أكثر عدوانية في الثلث الأخير، ولا يمكننا أن نكون خائفين.",
+          "title": "فونيس بعد الهزيمة أمام ريال مدريد: «لا يمكننا التماس الأعذار في صعوبة المنافسين»",
+          "summary": "عقب الخسارة أمام ريال مدريد في برنابيو، انتقد المدرب خوانفران فونيس افتقار فريقه للجرأة بالكرة، مطالباً بمزيد من الشراسة الهجومية ورافضاً تبرير الهزيمة بقوة الخصم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/funes-derrota-frente-real-madrid-133787617?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -414,7 +445,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/funes-derrota-frente-real-madrid-133787617?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c399da75c19e",
@@ -623,26 +659,27 @@
       "i18n": {
         "es": {
           "title": "El golazo con el que River abrió la era Ponzio",
-          "summary": "Con una volea de Driussi, el CARP comenzó el interinato del León en Banfield.",
-          "needs_translation": false
+          "summary": "Con una volea de Driussi frente a Banfield, River inició la etapa interina de Ponzio como entrenador.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The goal with which River opened the Ponzio era",
-          "summary": "With a Driussi volley, the CARP began the Lion's interim at Banfield.",
+          "title": "The great goal with which River opened the Ponzio era",
+          "summary": "River began Ponzio's interim spell as manager with a volley from Driussi against Banfield.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le but avec lequel River a ouvert l'ère Ponzio",
-          "summary": "Avec une volée de Driussi, le CARP a commencé l'intérim du Lion à Banfield.",
+          "title": "Le superbe but avec lequel River a ouvert l'ère Ponzio",
+          "summary": "River a entamé l'intérim de Ponzio sur le banc grâce à une volée de Driussi face à Banfield.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الهدف الذي افتتح به ريفر عصر بونزيو",
-          "summary": "مع وابل دريوسي، بدأ الكارب مرحلة الأسد المؤقتة في بانفيلد.",
+          "title": "هدف رائع يفتتح به ريفر بليت عهد بونزيو",
+          "summary": "استهل ريفر بليت فترة مدربه المؤقت بونزيو بهدف من تسديدة على الطاير أحرزه دريوسي أمام بانفيلد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-plate-leonardo-ponzio-sebastian-driussi_0_E0EdIiV6By.html",
@@ -664,7 +701,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-plate-leonardo-ponzio-sebastian-driussi_0_E0EdIiV6By.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7224469f2e45",
@@ -779,26 +821,27 @@
       "i18n": {
         "es": {
           "title": "Mourinho: \"Hemos organizado el equipo de otro modo para que Bellingham sepa perfectamente qué hacer\"",
-          "summary": "El entrenador del Real Madrid, José Mourinho, recalcó que el centrocampista inglés Jude Bellingham, protagonista este domingo en la victoria 4-0 ante el Málaga CF, \"es muy exigente consigo mismo\" y que considera que su buen arranque se debe a que han \"organizado el equipo de…",
-          "needs_translation": false
+          "summary": "Tras vencer 4-0 al Málaga CF, el entrenador del Real Madrid, José Mourinho, explicó que reorganizó tácticamente al equipo para definir con claridad el rol de Jude Bellingham.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mourinho: \"We have organized the team in another way so that Bellingham knows perfectly well what to do\"",
-          "summary": "The coach of Real Madrid, José Mourinho, stressed that the English midfielder Jude Bellingham, protagonist this Sunday in the 4-0 victory against Málaga CF, \"is very demanding with himself\" and that he considers that his good start is due to the fact that they have \"organized the team of...",
+          "title": "Mourinho: \"We have organized the team differently so Bellingham knows perfectly what to do\"",
+          "summary": "Following Real Madrid's 4-0 win over Málaga CF, manager José Mourinho explained that he reorganised the team's tactics to give English midfielder Jude Bellingham a clearly defined role.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Mourinho : « Nous avons organisé l'équipe autrement pour que Bellingham sache parfaitement quoi faire »",
-          "summary": "L'entraîneur du Real Madrid, José Mourinho, a souligné que le milieu de terrain anglais Jude Bellingham, protagoniste dimanche de la victoire 4-0 contre le Malaga CF, \"est très exigeant avec lui-même\" et qu'il considère que son bon départ est dû au fait qu'ils ont \"organisé l'équipe de...",
+          "title": "Mourinho : « Nous avons organisé l'équipe différemment pour que Bellingham sache parfaitement quoi faire »",
+          "summary": "Après la victoire 4-0 contre Málaga CF, l'entraîneur du Real Madrid José Mourinho a expliqué avoir adapté son système pour clarifier le rôle du milieu anglais Jude Bellingham.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مورينيو: \"لقد نظمنا الفريق بطريقة أخرى حتى يعرف بيلينغهام جيدًا ما يجب القيام به\"",
-          "summary": "أكد مدرب ريال مدريد، خوسيه مورينيو، أن لاعب الوسط الإنجليزي جود بيلينجهام، بطل الرواية هذا الأحد في الفوز 4-0 على مالقة، \"متطلب للغاية مع نفسه\" وأنه يعتبر أن بدايته الجيدة ترجع إلى حقيقة أنهم \"نظموا فريق...",
+          "title": "مورينيو: \"نظمنا الفريق بطريقة مختلفة ليعرف بيلينغهام دوره بدقة\"",
+          "summary": "عقب الفوز على نادي ملقا بنتيجة 4-0، أوضح مدرب ريال مدريد جوزيه مورينيو أنه أعاد تنظيم الفريق تكتيكياً لتحديد مهام لاعب الوسط الإنجليزي جود بيلينغهام بدقة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/mourinho-hemos-organizado-equipo-bellingham-133787351?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -820,7 +863,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/mourinho-hemos-organizado-equipo-bellingham-133787351?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "59e7a465437b",
@@ -879,26 +927,27 @@
       "i18n": {
         "es": {
           "title": "Con Longoria, Di Carlo, Enzo y compañía, la delegación de River que fue a Banfield",
-          "summary": "La cúpula dirigencial está acompañando al plantel que ahora encabeza Leonardo Ponzio.",
-          "needs_translation": false
+          "summary": "La directiva de River, con Longoria, Di Carlo y Enzo, acompañó al plantel encabezado por Leonardo Ponzio en su visita a Banfield.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "With Longoria, Di Carlo, Enzo and company, the River delegation that went to Banfield",
-          "summary": "The top management is accompanying the staff now headed by Leonardo Ponzio.",
+          "title": "With Longoria, Di Carlo, Enzo and company, the River delegation that traveled to Banfield",
+          "summary": "River's board, including Longoria, Di Carlo, and Enzo, accompanied the squad now led by Leonardo Ponzio for their trip to Banfield.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Avec Longoria, Di Carlo, Enzo et compagnie, la délégation de River qui s'est rendue à Banfield",
-          "summary": "La direction accompagne l'équipe actuellement dirigée par Leonardo Ponzio.",
+          "summary": "La direction de River, avec Longoria, Di Carlo et Enzo, a accompagné l'équipe désormais dirigée par Leonardo Ponzio lors de son déplacement à Banfield.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مع لونجوريا ودي كارلو وإنزو والشركة، وفد النهر الذي ذهب إلى بانفيلد",
-          "summary": "ترافق الإدارة العليا الموظفين الذين يرأسهم الآن ليوناردو بونزيو.",
+          "title": "بوجود لونغوريا ودي كارلو وإنزو، وفد ريفر بليت الذي توجه إلى بانفيلد",
+          "summary": "رافقت إدارة ريفر بليت، بحضور لونغوريا ودي كارلو وإنزو، تشكيلة الفريق التي يقودها حالياً ليوناردو بونزيو خلال تنقلها لمواجهة بانفيلد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-plate-pablo-longoria-stefano-di-carlo_0_FE5sBdgM1j.html",
@@ -920,7 +969,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-plate-pablo-longoria-stefano-di-carlo_0_FE5sBdgM1j.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "31f2e4ce555a",
@@ -929,26 +983,27 @@
       "i18n": {
         "es": {
           "title": "Los goles de Driussi y Almada y los mejores videos de Banfield - River",
-          "summary": "Tras la eliminación por Sudamericana, el Millo, con Ponzio como DT, juega ante el Taladro en el Florencio Sola con presencia de ambas hinchadas.",
-          "needs_translation": false
+          "summary": "Tras su eliminación en la Sudamericana, River, dirigido por Ponzio, visita a Banfield en el Florencio Sola con la presencia de ambas hinchadas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Driussi and Almada's goals and Banfield's best videos - River",
-          "summary": "After the elimination by Sudamericana, Millo, with Ponzio as coach, plays against the Drill in Florencio Sola with the presence of both fans.",
+          "title": "The goals by Driussi and Almada and the best videos from Banfield - River",
+          "summary": "Following their Sudamericana elimination, River, managed by Ponzio, visit Banfield at the Florencio Sola stadium in front of fans from both sides.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Les buts de Driussi et Almada et les meilleures vidéos de Banfield - River",
-          "summary": "Après l'élimination par l'Amérique du Sud, le Millo, avec Ponzio comme DT, joue contre le Perceur au Florencio Sola avec la présence des deux gonflées.",
+          "summary": "Après son élimination en Sudamericana, River, entraîné par Ponzio, affronte Banfield au Florencio Sola en présence des supporters des deux clubs.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أهداف دريوسي وألمادا وأفضل فيديوهات بانفيلد - ريفر",
-          "summary": "بعد الإقصاء من قبل سودامريكانا، يلعب ميلو، مع بونزيو كمدرب، ضد المثقاب في فلورينسيو سولا بحضور كلا المشجعين.",
+          "title": "أهداف دريوسي وألمادا وأبرز لقطات مباراة بانفيلد وريفر",
+          "summary": "بعد توديعه منافسات سودأمريكانا، يحل ريفر بليت بقيادة مدربه بونزيو ضيفاً على بانفيلد في ملعب فلورينسيو سولا بحضور جماهير الفريقين.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-primera/mejores-videos-banfield-river_0_FvdzWX7sDA.html",
@@ -970,7 +1025,12 @@
           "url": "https://www.ole.com.ar/futbol-primera/mejores-videos-banfield-river_0_FvdzWX7sDA.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "695787689709",
@@ -1024,7 +1084,12 @@
           "url": "https://www.sportschau.de/regional/rb/rb-shimada-trifft-und-trifft-werders-fussballerinnen-besiegen-leipzig-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 4,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a5c0038837d7",
@@ -1033,23 +1098,27 @@
       "i18n": {
         "es": {
           "title": "Las notas de los jugadores del Málaga CF en la derrota contra el Real Madrid",
-          "summary": "El Málaga CF se marchó de vacío de su visita al Bernabéu. Los de Funes intentaron ser fieles a su estilo, pero se vieron superados por un Real Madrid que resolvió con tres goles en poco más de 10 minutos en la primera mitad, del minuto 19 al 30 de juego.",
-          "needs_translation": false
+          "summary": "El Málaga CF cayó derrotado en el Bernabéu ante el Real Madrid, que sentenció el partido con tres goles en apenas diez minutos durante la primera mitad.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Las notas de los jugadores del Málaga CF en la derrota contra el Real Madrid",
-          "summary": "El Málaga CF se marchó de vacío de su visita al Bernabéu. Los de Funes intentaron ser fieles a su estilo, pero se vieron superados por un Real Madrid que resolvió con tres goles en poco más de 10 minutos en la primera mitad, del minuto 19 al 30 de juego.",
-          "needs_translation": true
+          "title": "Player ratings for Málaga CF in defeat against Real Madrid",
+          "summary": "Málaga CF left the Bernabéu empty-handed after Real Madrid secured the win with three first-half goals scored in just ten minutes.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Las notas de los jugadores del Málaga CF en la derrota contra el Real Madrid",
-          "summary": "El Málaga CF se marchó de vacío de su visita al Bernabéu. Los de Funes intentaron ser fieles a su estilo, pero se vieron superados por un Real Madrid que resolvió con tres goles en poco más de 10 minutos en la primera mitad, del minuto 19 al 30 de juego.",
-          "needs_translation": true
+          "title": "Les notes des joueurs de Málaga CF lors de la défaite contre Real Madrid",
+          "summary": "Málaga CF s'est incliné au Bernabéu face à Real Madrid, qui a plié la rencontre grâce à trois buts inscrits en dix minutes en première période.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Las notas de los jugadores del Málaga CF en la derrota contra el Real Madrid",
-          "summary": "El Málaga CF se marchó de vacío de su visita al Bernabéu. Los de Funes intentaron ser fieles a su estilo, pero se vieron superados por un Real Madrid que resolvió con tres goles en poco más de 10 minutos en la primera mitad, del minuto 19 al 30 de juego.",
-          "needs_translation": true
+          "title": "تقييم لاعبي مالقا بعد الهزيمة أمام ريال مدريد",
+          "summary": "تلقى مالقا خسارة على ملعب برنابيو أمام ريال مدريد، الذي حسم المواجهة بتسجيله ثلاثة أهداف في غضون عشر دقائق خلال الشوط الأول.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/notas-jugadores-malaga-cf-derrota-133787240?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -1083,7 +1152,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/alineaciones-confirmadas-real-madrid-malaga-133775710?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d4bcdbe8d725",
@@ -1092,23 +1166,27 @@
       "i18n": {
         "es": {
           "title": "El Athletic arranca sin Nico Williams en Vigo",
-          "summary": "Edin Terzic afronta la visita del Athletic a Balaídos con siete cambios significativos en su once titular, puesto que sólo repiten de salida Unai Simón, Laporte, Sancet e Iñaki Williams.",
-          "needs_translation": false
+          "summary": "Edin Terzic introduce siete cambios en el once titular del Athletic en Balaídos, dejando fuera a Nico Williams. Solo repiten de inicio Unai Simón, Laporte, Sancet e Iñaki Williams.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Athletic arranca sin Nico Williams en Vigo",
-          "summary": "Edin Terzic afronta la visita del Athletic a Balaídos con siete cambios significativos en su once titular, puesto que sólo repiten de salida Unai Simón, Laporte, Sancet e Iñaki Williams.",
-          "needs_translation": true
+          "title": "Athletic start without Nico Williams in Vigo",
+          "summary": "Edin Terzic made seven changes to Athletic's starting XI at Balaídos, leaving out Nico Williams. Only Unai Simón, Laporte, Sancet, and Iñaki Williams retain their spots.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El Athletic arranca sin Nico Williams en Vigo",
-          "summary": "Edin Terzic afronta la visita del Athletic a Balaídos con siete cambios significativos en su once titular, puesto que sólo repiten de salida Unai Simón, Laporte, Sancet e Iñaki Williams.",
-          "needs_translation": true
+          "title": "L'Athletic débute sans Nico Williams à Vigo",
+          "summary": "Edin Terzic opère sept changements dans le onze de l'Athletic à Balaídos, laissant Nico Williams sur le banc. Seuls Unai Simón, Laporte, Sancet et Iñaki Williams enchaînent.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Athletic arranca sin Nico Williams en Vigo",
-          "summary": "Edin Terzic afronta la visita del Athletic a Balaídos con siete cambios significativos en su once titular, puesto que sólo repiten de salida Unai Simón, Laporte, Sancet e Iñaki Williams.",
-          "needs_translation": true
+          "title": "أتلتيك بيلباو يبدأ مواجهة فيغو دون نيكو ويليامز",
+          "summary": "أجرى إدين ترزيتش سبعة تغييرات على تشكيلة أتلتيك بيلباو الأساسية في بالايدوس مع غياب نيكو ويليامز، واحتفظ فقط أوناي سيمون ولابورت وسانسيت وإينياكي ويليامز بمراكزهم.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260830/1004221382/as.html",
@@ -1130,7 +1208,12 @@
           "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260830/1004221382/as.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5accd8ce668b",
@@ -1139,23 +1222,27 @@
       "i18n": {
         "es": {
           "title": "Presión desde la torta: Ramón Díaz y otra indirecta a River",
-          "summary": "El Pelado está agazapado a la espera de un contacto. La relación con la CD actual no es buena: hace semanas hubo cruces de declaraciones que lo dejaron en evidencia.",
-          "needs_translation": false
+          "summary": "Ramón Díaz se mantiene a la espera de un contacto de River, pese a que su relación con la actual comisión directiva sigue siendo tensa tras recientes cruces verbales.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Presión desde la torta: Ramón Díaz y otra indirecta a River",
-          "summary": "El Pelado está agazapado a la espera de un contacto. La relación con la CD actual no es buena: hace semanas hubo cruces de declaraciones que lo dejaron en evidencia.",
-          "needs_translation": true
+          "title": "Pressure from the cake: Ramón Díaz drops another hint to River",
+          "summary": "Ramón Díaz is awaiting contact from River, despite strained relations with the current board following recent public exchanges.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Presión desde la torta: Ramón Díaz y otra indirecta a River",
-          "summary": "El Pelado está agazapado a la espera de un contacto. La relación con la CD actual no es buena: hace semanas hubo cruces de declaraciones que lo dejaron en evidencia.",
-          "needs_translation": true
+          "title": "Pression depuis le gâteau : Ramón Díaz et une nouvelle allusion envers River",
+          "summary": "Ramón Díaz attend un contact avec River, malgré des relations tendues avec la direction actuelle à la suite de récents échanges de déclarations.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Presión desde la torta: Ramón Díaz y otra indirecta a River",
-          "summary": "El Pelado está agazapado a la espera de un contacto. La relación con la CD actual no es buena: hace semanas hubo cruces de declaraciones que lo dejaron en evidencia.",
-          "needs_translation": true
+          "title": "ضغط من قالب الحلوى: رامون دياز يوجه تلميحاً جديداً إلى ريفر بليت",
+          "summary": "يترقب المدرب رامون دياز تواصلاً من ريفر بليت، على الرغم من توتر علاقته بالإدارة الحالية إثر سجالات وتصريحات متبادلة مؤخراً.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/presion-torta-ramon-diaz-indirecta-river_0_pxxPenuqGj.html",
@@ -1177,7 +1264,12 @@
           "url": "https://www.ole.com.ar/river-plate/presion-torta-ramon-diaz-indirecta-river_0_pxxPenuqGj.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "44d7db752909",
@@ -1186,23 +1278,27 @@
       "i18n": {
         "es": {
           "title": "La agenda prevista con Gabriel Jesus",
-          "summary": "Gabriel Jesus (29 años) se convertirá este lunes en el sexto fichaje de la primera plantilla del FC Barcelona tras Gordon, Adeyemi, Rodri, Cancelo y Livakovic , además de los jóvenes con ficha del filial Hamza Abdelkarim -el Barça ejerció la opción de compra tras su cesión de…",
-          "needs_translation": false
+          "summary": "Gabriel Jesus, de 29 años, se convertirá este lunes en el sexto fichaje del primer equipo del FC Barcelona, tras las incorporaciones de Gordon, Adeyemi, Rodri, Cancelo y Livakovic.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "La agenda prevista con Gabriel Jesus",
-          "summary": "Gabriel Jesus (29 años) se convertirá este lunes en el sexto fichaje de la primera plantilla del FC Barcelona tras Gordon, Adeyemi, Rodri, Cancelo y Livakovic , además de los jóvenes con ficha del filial Hamza Abdelkarim -el Barça ejerció la opción de compra tras su cesión de…",
-          "needs_translation": true
+          "title": "The planned schedule for Gabriel Jesus",
+          "summary": "Gabriel Jesus (29) will become FC Barcelona's sixth first-team signing this Monday, following Gordon, Adeyemi, Rodri, Cancelo, and Livakovic.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La agenda prevista con Gabriel Jesus",
-          "summary": "Gabriel Jesus (29 años) se convertirá este lunes en el sexto fichaje de la primera plantilla del FC Barcelona tras Gordon, Adeyemi, Rodri, Cancelo y Livakovic , además de los jóvenes con ficha del filial Hamza Abdelkarim -el Barça ejerció la opción de compra tras su cesión de…",
-          "needs_translation": true
+          "title": "Le programme prévu pour Gabriel Jesus",
+          "summary": "Gabriel Jesus (29 ans) deviendra ce lundi la sixième recrue de l'équipe première du FC Barcelona, après les arrivées de Gordon, Adeyemi, Rodri, Cancelo et Livakovic.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "La agenda prevista con Gabriel Jesus",
-          "summary": "Gabriel Jesus (29 años) se convertirá este lunes en el sexto fichaje de la primera plantilla del FC Barcelona tras Gordon, Adeyemi, Rodri, Cancelo y Livakovic , además de los jóvenes con ficha del filial Hamza Abdelkarim -el Barça ejerció la opción de compra tras su cesión de…",
-          "needs_translation": true
+          "title": "الجدول الزمني المرتقب لصفقة غابرييل جيسوس",
+          "summary": "يصبح غابرييل جيسوس (29 عاماً) هذا الإثنين سادس صفقات الفريق الأول لنادي برشلونة، بعد التعاقد مع غوردون وأديمي ورودري وكانسيلو وليفاكوفيتش.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260830/1004221387/agenda-prevista-gabriel-jesus.html",
@@ -1224,7 +1320,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260830/1004221387/agenda-prevista-gabriel-jesus.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d6a20a240de6",
@@ -1327,23 +1428,27 @@
       "i18n": {
         "es": {
           "title": "El Lookman más ambicioso: \"Grandes jugadores compenetrados, con la misma mentalidad\"",
-          "summary": "El partido del Atlético de Madrid contra el Sevilla fue positivo para Ademola Lookman , quien anotó un gol importante después de haber tenido dificultades en sus primeros partidos como delantero centro, una posición no natural para él.",
-          "needs_translation": false
+          "summary": "Ademola Lookman marcó un gol importante para el Atlético de Madrid frente al Sevilla, superando sus dificultades iniciales al jugar como delantero centro.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Lookman más ambicioso: \"Grandes jugadores compenetrados, con la misma mentalidad\"",
-          "summary": "El partido del Atlético de Madrid contra el Sevilla fue positivo para Ademola Lookman , quien anotó un gol importante después de haber tenido dificultades en sus primeros partidos como delantero centro, una posición no natural para él.",
-          "needs_translation": true
+          "title": "The most ambitious Lookman: \"Great players in sync, with the same mindset\"",
+          "summary": "Ademola Lookman scored an important goal for Atlético de Madrid against Sevilla, overcoming early struggles playing in an unnatural centre-forward role.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El Lookman más ambicioso: \"Grandes jugadores compenetrados, con la misma mentalidad\"",
-          "summary": "El partido del Atlético de Madrid contra el Sevilla fue positivo para Ademola Lookman , quien anotó un gol importante después de haber tenido dificultades en sus primeros partidos como delantero centro, una posición no natural para él.",
-          "needs_translation": true
+          "title": "Le Lookman le plus ambitieux : « De grands joueurs complices, avec le même état d'esprit »",
+          "summary": "Ademola Lookman a inscrit un but important pour l'Atlético de Madrid face au Sevilla, surmontant ses difficultés initiales au poste inhabituel d'avant-centre.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Lookman más ambicioso: \"Grandes jugadores compenetrados, con la misma mentalidad\"",
-          "summary": "El partido del Atlético de Madrid contra el Sevilla fue positivo para Ademola Lookman , quien anotó un gol importante después de haber tenido dificultades en sus primeros partidos como delantero centro, una posición no natural para él.",
-          "needs_translation": true
+          "title": "لوكمان الأكثر طموحاً: \"لاعبون كبار متفاهمون، بالعقلية نفسها\"",
+          "summary": "سجل أديمولا لوكمان هدفاً مهماً مع أتلتيكو مدريد أمام إشبيلية، متجاوزاً صعوباته الأولى في مركز قلب الهجوم غير المعتاد عليه.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260830/1004221364/lookman-ambicioso-grandes-jugadores-compenetrados-mentalidad.html",
@@ -1365,7 +1470,12 @@
           "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260830/1004221364/lookman-ambicioso-grandes-jugadores-compenetrados-mentalidad.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "345507e58ce7",
@@ -1515,23 +1625,27 @@
       "i18n": {
         "es": {
           "title": "La respuesta de Boca a las quejas de los socios por la Ley Anti Tiktoker",
-          "summary": "La polémica tuvo fuerte repercusión entre hinchas y creadores de contenido. El secretario Ricardo Rosica tomó la palabra y explicó la postura del club.",
-          "needs_translation": false
+          "summary": "Tras la polémica generada entre hinchas y creadores de contenido, el secretario de Boca, Ricardo Rosica, explicó la postura institucional del club sobre la Ley Anti Tiktoker.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "La respuesta de Boca a las quejas de los socios por la Ley Anti Tiktoker",
-          "summary": "La polémica tuvo fuerte repercusión entre hinchas y creadores de contenido. El secretario Ricardo Rosica tomó la palabra y explicó la postura del club.",
-          "needs_translation": true
+          "title": "Boca's response to member complaints over the Ley Anti Tiktoker",
+          "summary": "Following backlash from fans and content creators, Boca secretary Ricardo Rosica addressed the controversy to clarify the club's official stance on the Ley Anti Tiktoker.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La respuesta de Boca a las quejas de los socios por la Ley Anti Tiktoker",
-          "summary": "La polémica tuvo fuerte repercusión entre hinchas y creadores de contenido. El secretario Ricardo Rosica tomó la palabra y explicó la postura del club.",
-          "needs_translation": true
+          "title": "La réponse de Boca aux plaintes des socios concernant la Ley Anti Tiktoker",
+          "summary": "Face aux contestations des supporters et des créateurs de contenu, le secrétaire de Boca, Ricardo Rosica, a clarifié la position officielle du club sur la Ley Anti Tiktoker.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "La respuesta de Boca a las quejas de los socios por la Ley Anti Tiktoker",
-          "summary": "La polémica tuvo fuerte repercusión entre hinchas y creadores de contenido. El secretario Ricardo Rosica tomó la palabra y explicó la postura del club.",
-          "needs_translation": true
+          "title": "رد بوكا جونيورز على شكاوى الأعضاء بشأن قانون \"مكافحة التيك توكرز\"",
+          "summary": "أوضح ريكاردو روسيكا، أمين سر نادي بوكا جونيورز، موقف النادي بعد الجدل والشكاوى الصادرة عن المشجعين وصناع المحتوى بشأن قانون \"مكافحة التيك توكرز\".",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/respuesta-boca-medida-anti-tiktokter-filmar-bombonera-ricardo-rosica_0_A7KwB5oRTp.html",
@@ -1553,7 +1667,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/respuesta-boca-medida-anti-tiktokter-filmar-bombonera-ricardo-rosica_0_A7KwB5oRTp.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "18ae3b438a69",
@@ -1562,23 +1681,27 @@
       "i18n": {
         "es": {
           "title": "El audio del hijo de Griezmann a su padre en pleno partido del Atleti",
-          "summary": "Antoine Griezmann se ha convertido en una auténtica leyenda del Atlético de Madrid. El francés se marchó del conjunto rojiblanco este mismo verano.",
-          "needs_translation": false
+          "summary": "Antoine Griezmann, figura del Atlético de Madrid, recibió un mensaje de audio de su hijo durante la disputa de un partido del club rojiblanco.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El audio del hijo de Griezmann a su padre en pleno partido del Atleti",
-          "summary": "Antoine Griezmann se ha convertido en una auténtica leyenda del Atlético de Madrid. El francés se marchó del conjunto rojiblanco este mismo verano.",
-          "needs_translation": true
+          "title": "The audio from Griezmann's son to his father in the middle of an Atleti match",
+          "summary": "Antoine Griezmann, an iconic player for Atlético de Madrid, received a voice message from his son during one of the team's matches.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El audio del hijo de Griezmann a su padre en pleno partido del Atleti",
-          "summary": "Antoine Griezmann se ha convertido en una auténtica leyenda del Atlético de Madrid. El francés se marchó del conjunto rojiblanco este mismo verano.",
-          "needs_translation": true
+          "title": "L'audio du fils de Griezmann à son père en plein match de l'Atleti",
+          "summary": "Antoine Griezmann, joueur emblématique de l'Atlético de Madrid, a reçu un message vocal de son fils durant un match disputé par les Colchoneros.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El audio del hijo de Griezmann a su padre en pleno partido del Atleti",
-          "summary": "Antoine Griezmann se ha convertido en una auténtica leyenda del Atlético de Madrid. El francés se marchó del conjunto rojiblanco este mismo verano.",
-          "needs_translation": true
+          "title": "رسالة صوتية من نجل غريزمان لوالده أثناء مباراة لأتلتيكو مدريد",
+          "summary": "تلقى أنطوان غريزمان، أحد أبرز نجوم أتلتيكو مدريد، رسالة صوتية من ابنه خلال خوضه إحدى مباريات الفريق.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/internacional/20260830/1004221380/audio-hijo-griezmann-padre-pleno-partido-atleti-morir-amor-rojiblancos-vale-te-dejo.html",
@@ -1600,7 +1723,12 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20260830/1004221380/audio-hijo-griezmann-padre-pleno-partido-atleti-morir-amor-rojiblancos-vale-te-dejo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "238063edee64",
@@ -1647,7 +1775,12 @@
           "url": "https://www.fourfourtwo.com/team/the-1966-world-cup-was-never-really-on-my-radar-it-was-quite-a-surprise-when-i-received-a-letter-from-the-fa-in-december-65-saying-i-was-picked-for-a-game-in-february-sir-geoff-hurst-on-cutting-it-fine-for-the-tournament-that-defined-his-career"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4f842f12b9f4",
@@ -1656,23 +1789,27 @@
       "i18n": {
         "es": {
           "title": "El Real Madrid ya sabe las fechas y horas de sus tres próximos partidos",
-          "summary": "LaLiga dio a conocer las fechas y horas de las próximas tres jornadas del campeonato, las anteriores al parón de selecciones que comienza el 21 de septiembre. Estas tres jornadas son la quinta, la sexta y la séptima.",
-          "needs_translation": false
+          "summary": "LaLiga ha anunciado los horarios de las jornadas 5, 6 y 7 del campeonato, las tres previas al parón internacional que comenzará el 21 de septiembre.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Real Madrid ya sabe las fechas y horas de sus tres próximos partidos",
-          "summary": "LaLiga dio a conocer las fechas y horas de las próximas tres jornadas del campeonato, las anteriores al parón de selecciones que comienza el 21 de septiembre. Estas tres jornadas son la quinta, la sexta y la séptima.",
-          "needs_translation": true
+          "title": "Real Madrid now know the dates and times of their next three matches",
+          "summary": "LaLiga has confirmed the schedule for matchdays 5, 6, and 7, the final three rounds before the international break starting on September 21.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El Real Madrid ya sabe las fechas y horas de sus tres próximos partidos",
-          "summary": "LaLiga dio a conocer las fechas y horas de las próximas tres jornadas del campeonato, las anteriores al parón de selecciones que comienza el 21 de septiembre. Estas tres jornadas son la quinta, la sexta y la séptima.",
-          "needs_translation": true
+          "title": "Le Real Madrid connaît les dates et horaires de ses trois prochains matches",
+          "summary": "LaLiga a fixé les horaires des 5e, 6e et 7e journées de championnat, qui se disputeront avant la trêve internationale débutant le 21 septembre.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Real Madrid ya sabe las fechas y horas de sus tres próximos partidos",
-          "summary": "LaLiga dio a conocer las fechas y horas de las próximas tres jornadas del campeonato, las anteriores al parón de selecciones que comienza el 21 de septiembre. Estas tres jornadas son la quinta, la sexta y la séptima.",
-          "needs_translation": true
+          "title": "ريال مدريد يتعرف على مواعيد وتوقيت مبارياته الثلاث المقبلة",
+          "summary": "أعلنت رابطة الدوري الإسباني عن مواعيد وتوقيت الجولات الخامسة والسادسة والسابعة، المقررة قبل فترة التوقف الدولي التي تبدأ في 21 سبتمبر.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260830/1004221378/real-madrid-fechas-horas-tres-proximos-partidos.html",
@@ -1694,7 +1831,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260830/1004221378/real-madrid-fechas-horas-tres-proximos-partidos.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "37a304339608",
@@ -1747,7 +1889,12 @@
           "url": "https://www.lemonde.fr/sport/article/2026/08/28/victor-wembanyama-reussit-ses-retrouvailles-avec-le-public-parisien-en-guidant-les-bleus-vers-un-large-succes_6758670_3242.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d2612b467a5e",
@@ -1802,24 +1949,48 @@
       "summary": "Lille est sur le point de recruter l'attaquant international japonais Ayase Ueda (28 ans), qui appartient au Feyenoord Rotterdam. Un transfert aux alentours de 15 millions d'euros.",
       "i18n": {
         "fr": {
-          "title": "Mercato : le LOSC va s'offrir l'attaquant international japonais du Feyenoord Rotterdam Ayase Ueda",
-          "summary": "Lille est sur le point de recruter l'attaquant international japonais Ayase Ueda (28 ans), qui appartient au Feyenoord Rotterdam. Un transfert aux alentours de 15 millions d'euros.",
-          "needs_translation": false
+          "title": "Mercato : le LOSC va engager le buteur japonais Ayase Ueda pour 15 M€",
+          "summary": "Le LOSC a trouvé un accord avec Feyenoord pour le transfert de l'avant-centre international japonais Ayase Ueda contre environ 15 millions d'euros.",
+          "body": [
+            "Présent à Rotterdam pour finaliser l'opération, Olivier Létang a bouclé l'arrivée du meilleur buteur du dernier championnat néerlandais (25 réalisations). L'attaquant de 28 ans passera sa visite médicale ce lundi avant de signer à Luchin, où il viendra épauler Olivier Giroud en attendant le retour de blessure d'Hamza Igamane.",
+            "Cette signature imminente débloque le départ de Matias Fernandez-Pardo. L'international belge de 21 ans devrait s'engager en Premier League du côté de Newcastle pour un montant estimé à 65 millions d'euros."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Mercato : le LOSC va s'offrir l'attaquant international japonais du Feyenoord Rotterdam Ayase Ueda",
-          "summary": "Lille est sur le point de recruter l'attaquant international japonais Ayase Ueda (28 ans), qui appartient au Feyenoord Rotterdam. Un transfert aux alentours de 15 millions d'euros.",
-          "needs_translation": true
+          "title": "Mercato: LOSC set to sign Japanese striker Ayase Ueda for €15m",
+          "summary": "LOSC have reached an agreement with Feyenoord for the transfer of Japan international striker Ayase Ueda in a deal worth around €15 million.",
+          "body": [
+            "Olivier Létang travelled to Rotterdam to wrap up negotiations for the Dutch top flight's reigning top scorer (25 goals). The 28-year-old forward is scheduled for his medical this Monday before signing at Luchin, where he will support Olivier Giroud while Hamza Igamane recovers from injury.",
+            "The incoming move paves the way for Matias Fernandez-Pardo to leave. The 21-year-old Belgium international is expected to seal a switch to the Premier League with Newcastle for a fee around €65 million."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Mercato : le LOSC va s'offrir l'attaquant international japonais du Feyenoord Rotterdam Ayase Ueda",
-          "summary": "Lille est sur le point de recruter l'attaquant international japonais Ayase Ueda (28 ans), qui appartient au Feyenoord Rotterdam. Un transfert aux alentours de 15 millions d'euros.",
-          "needs_translation": true
+          "title": "Mercato: el LOSC fichará al delantero japonés Ayase Ueda por 15 M€",
+          "summary": "El LOSC ha alcanzado un acuerdo con el Feyenoord para el traspaso del delantero centro internacional japonés Ayase Ueda por unos 15 millones de euros.",
+          "body": [
+            "Desplazado a Rotterdam para cerrar la operación, Olivier Létang selló la llegada del máximo realizador de la última liga neerlandesa (25 tantos). El atacante de 28 años pasará el reconocimiento médico este lunes antes de firmar en Luchin, donde reforzará el ataque junto a Olivier Giroud mientras se recupera de su lesión Hamza Igamane.",
+            "Esta incorporación inminente desbloquea la salida de Matias Fernandez-Pardo. El internacional belga de 21 años apunta a la Premier League de la mano de Newcastle por una cifra cercana a los 65 millones de euros."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Mercato : le LOSC va s'offrir l'attaquant international japonais du Feyenoord Rotterdam Ayase Ueda",
-          "summary": "Lille est sur le point de recruter l'attaquant international japonais Ayase Ueda (28 ans), qui appartient au Feyenoord Rotterdam. Un transfert aux alentours de 15 millions d'euros.",
-          "needs_translation": true
+          "title": "سوق الانتقالات: ليل يحسم صفقة الهداف الياباني أياسي أويدا مقابل 15 مليون يورو",
+          "summary": "توصل نادي ليل الفرنسي إلى اتفاق مع فاينورد الهولندي لضم المهاجم الدولي الياباني أياسي أويدا مقابل نحو 15 مليون يورو.",
+          "body": [
+            "حسم رئيس النادي أوليفييه ليتانغ الصفقة بعد سفره إلى روتردام لإنهاء تفاصيل ضم هداف الدوري الهولندي في الموسم الماضي برصيد 25 هدفاً. وسيخضع المهاجم البالغ من العمر 28 عاماً للفحص الطبي يوم الإثنين قبل التوقيع في مركز لوشان، ليكون دعماً لزميله أوليفييه جيرو بانتظار تعافي حمزة إكمان من الإصابة.",
+            "يمهّد هذا التعاقد الوشيك طريق الرحيل أمام ماتياس فرنانديز-باردو، حيث يقترب الدولي البلجيكي صاحب الـ21 عاماً من الانتقال إلى الدوري الإنجليزي الممتاز عبر بوابة نيوكاسل في صفقة تُقدر بنحو 65 مليون يورو."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Mercato-le-losc-proche-d-accueillir-l-international-japonais-du-feyenoord-rotterdam-ayase-ueda/1714787#at_medium=RSS_feeds",
@@ -1841,7 +2012,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Mercato-le-losc-proche-d-accueillir-l-international-japonais-du-feyenoord-rotterdam-ayase-ueda/1714787#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-30T21:31:07+00:00"
+        }
+      }
     },
     {
       "id": "fde25af32ad9",
@@ -1897,23 +2081,27 @@
       "i18n": {
         "fr": {
           "title": "Mercato : Karim Benzema va quitter Al-Hilal, six mois après son arrivée",
-          "summary": "Comme annoncé par le quotidien espagnol AS et confirmé par nos soins, l'avant-centre français Karim Benzema (38 ans) s'apprête à quitter Al-Hilal, six mois seulement après son arrivée.",
-          "needs_translation": false
+          "summary": "Six mois seulement après son arrivée, l'attaquant français de 38 ans Karim Benzema s'apprête à quitter Al-Hilal.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mercato : Karim Benzema va quitter Al-Hilal, six mois après son arrivée",
-          "summary": "Comme annoncé par le quotidien espagnol AS et confirmé par nos soins, l'avant-centre français Karim Benzema (38 ans) s'apprête à quitter Al-Hilal, six mois seulement après son arrivée.",
-          "needs_translation": true
+          "title": "Mercato: Karim Benzema to leave Al-Hilal, six months after his arrival",
+          "summary": "French striker Karim Benzema (38) is set to leave Al-Hilal just six months after joining the club.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Mercato : Karim Benzema va quitter Al-Hilal, six mois après son arrivée",
-          "summary": "Comme annoncé par le quotidien espagnol AS et confirmé par nos soins, l'avant-centre français Karim Benzema (38 ans) s'apprête à quitter Al-Hilal, six mois seulement après son arrivée.",
-          "needs_translation": true
+          "title": "Mercato: Karim Benzema dejará Al-Hilal, seis meses después de su llegada",
+          "summary": "El delantero francés Karim Benzema (38 años) se prepara para dejar Al-Hilal apenas seis meses después de su llegada.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Mercato : Karim Benzema va quitter Al-Hilal, six mois après son arrivée",
-          "summary": "Comme annoncé par le quotidien espagnol AS et confirmé par nos soins, l'avant-centre français Karim Benzema (38 ans) s'apprête à quitter Al-Hilal, six mois seulement après son arrivée.",
-          "needs_translation": true
+          "title": "سوق الانتقالات: كريم بنزيما يستعد للرحيل عن الهلال بعد ستة أشهر من انضمامه",
+          "summary": "يستعد المهاجم الفرنسي كريم بنزيما (38 عاماً) لمغادرة نادي الهلال السعودي، وذلك بعد ستة أشهر فقط من انضمامه إلى صفوف الفريق.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Mercato-karim-benzema-va-quitter-al-hilal-six-mois-apres-son-arrivee/1714780#at_medium=RSS_feeds",
@@ -1941,7 +2129,12 @@
           "url": "https://www.lefigaro.fr/sports/football/mercato-karim-benzema-devrait-quitter-al-hilal-mais-rester-en-arabie-saoudite-20260830"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "114897d22cf6",
@@ -2048,24 +2241,48 @@
       "summary": "Le capitaine des Red Devils, Bruno Fernandez, triple la mise ce dimanche face et permet aux siens de mettre fin à une série de trois match sans victoires contre des équipes promues (5-2).",
       "i18n": {
         "fr": {
-          "title": "Premier League : Manchester United renverse Ipswich et se relance à Old Trafford",
-          "summary": "Le capitaine des Red Devils, Bruno Fernandez, triple la mise ce dimanche face et permet aux siens de mettre fin à une série de trois match sans victoires contre des équipes promues (5-2).",
-          "needs_translation": false
+          "title": "Manchester United cartonne Ipswich grâce à un grand Bruno Fernandes (5-2)",
+          "summary": "Manchester United a dominé Ipswich Town (5-2) à Old Trafford grâce à un triplé et une passe décisive de son capitaine Bruno Fernandes.",
+          "body": [
+            "Surpris par l'ouverture du score de Leif Davis à la 29e minute, les Red Devils ont rapidement inversé la tendance sous l'impulsion de leur milieu portugais. Auteur de trois buts (40e, 61e sur penalty, 68e), Fernandes a ensuite servi Bryan Mbeumo pour le cinquième but à la 82e minute.",
+            "Malgré une réduction du score tardive de Chuba Akpom dans le temps additionnel, les hommes de Michael Carrick effacent leur revers initial contre Hull et mettent fin à une série noire face aux promus, avant de défier Everton puis Manchester City."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Premier League : Manchester United renverse Ipswich et se relance à Old Trafford",
-          "summary": "Le capitaine des Red Devils, Bruno Fernandez, triple la mise ce dimanche face et permet aux siens de mettre fin à une série de trois match sans victoires contre des équipes promues (5-2).",
-          "needs_translation": true
+          "title": "Manchester United thrash Ipswich behind a stellar Bruno Fernandes (5-2)",
+          "summary": "Manchester United swept aside Ipswich Town 5-2 at Old Trafford, driven by a hat-trick and an assist from captain Bruno Fernandes.",
+          "body": [
+            "Stunned by Leif Davis's 29th-minute opener, the Red Devils swiftly turned things around behind their Portuguese playmaker. After bagging three goals (40', 61' pen, 68'), Fernandes set up Bryan Mbeumo for the fifth in the 82nd minute.",
+            "Despite Chuba Akpom pulling one back in stoppage time, Michael Carrick's side bounced back from the previous weekend's defeat against Hull, snapping their poor run against promoted sides before clashes with Everton and Manchester City."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Premier League : Manchester United renverse Ipswich et se relance à Old Trafford",
-          "summary": "Le capitaine des Red Devils, Bruno Fernandez, triple la mise ce dimanche face et permet aux siens de mettre fin à une série de trois match sans victoires contre des équipes promues (5-2).",
-          "needs_translation": true
+          "title": "Manchester United arrolla a Ipswich liderado por Bruno Fernandes (5-2)",
+          "summary": "Manchester United se impuso con autoridad a Ipswich Town (5-2) en Old Trafford gracias a un triplete y una asistencia de su capitán Bruno Fernandes.",
+          "body": [
+            "Sorprendidos por el tanto inicial de Leif Davis en el minuto 29, los Red Devils reaccionaron con rapidez impulsados por el centrocampista portugués. Autor de tres goles (40', 61' de penalti, 68'), Fernandes también asistió a Bryan Mbeumo para el quinto tanto en el 82'.",
+            "A pesar del tardío gol de Chuba Akpom en el tiempo añadido, los hombres de Michael Carrick pasan página tras su tropiezo del pasado fin de semana ante Hull y rompen su mala racha frente a los recién ascendidos, antes de medirse a Everton y Manchester City."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Premier League : Manchester United renverse Ipswich et se relance à Old Trafford",
-          "summary": "Le capitaine des Red Devils, Bruno Fernandez, triple la mise ce dimanche face et permet aux siens de mettre fin à une série de trois match sans victoires contre des équipes promues (5-2).",
-          "needs_translation": true
+          "title": "مانشستر يونايتد يكتسح إبسويتش بخماسية بفضل تألق برونو فيرنانديز (5-2)",
+          "summary": "اكتسح مانشستر يونايتد ضيفه إبسويتش تاون بنتيجة (5-2) على ملعب أولد ترافورد، بفضل ثلاثية وتمريرة حاسمة من قائده برونو فيرنانديز.",
+          "body": [
+            "وبعد أن باغت ليف ديفيس أصحاب الأرض بهدف التقدم في الدقيقة 29، سرعان ما قلب الشياطين الحمر الطاولة بقيادة نجم خط وسطهم البرتغالي؛ حيث أحرز فيرنانديز ثلاثية في الدقائق (40، و61 من ركلة جزاء، و68)، قبل أن يصنع الهدف الخامس لزميله برايان مبومو في الدقيقة 82.",
+            "ورغم تقليص تشوبا أكبوم الفارق في الوقت بدل الضائع، داوى رجال مايكل كاريك جراح هزيمة الجولة السابقة أمام هال، منهين سلسلتهم السلبية أمام الأندية الصاعدة، وذلك قبل مواجهتي إيفرتون ثم مانشستر سيتي."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/angleterre/premier-league-manchester-united-renverse-ipswich-et-se-relance-a-old-trafford-20260830",
@@ -2087,7 +2304,20 @@
           "url": "https://www.lefigaro.fr/sports/football/angleterre/premier-league-manchester-united-renverse-ipswich-et-se-relance-a-old-trafford-20260830"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-30T21:31:09+00:00"
+        }
+      }
     },
     {
       "id": "8c0d3af4dd7e",
@@ -2096,23 +2326,27 @@
       "i18n": {
         "es": {
           "title": "Cagliari - Inter de Milán, en directo | Serie A",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Serie A que enfrenta al Lazio contra el Genoa correspondiente a Jornada 2.",
-          "needs_translation": false
+          "summary": "Seguimiento en directo del partido correspondiente a la Jornada 2 de la Serie A.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Cagliari - Inter de Milán, en directo | Serie A",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Serie A que enfrenta al Lazio contra el Genoa correspondiente a Jornada 2.",
-          "needs_translation": true
+          "title": "Cagliari - Inter de Milán, live | Serie A",
+          "summary": "Live coverage of the Serie A matchday 2 fixture.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Cagliari - Inter de Milán, en directo | Serie A",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Serie A que enfrenta al Lazio contra el Genoa correspondiente a Jornada 2.",
-          "needs_translation": true
+          "title": "Cagliari - Inter de Milán, en direct | Serie A",
+          "summary": "Suivi en direct de la rencontre disputée dans le cadre de la 2e journée de Serie A.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Cagliari - Inter de Milán, en directo | Serie A",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Serie A que enfrenta al Lazio contra el Genoa correspondiente a Jornada 2.",
-          "needs_translation": true
+          "title": "كالياري - إنتر ميلان بث مباشر | الدوري الإيطالي",
+          "summary": "تغطية مباشرة لمباراة الجولة الثانية من منافسات الدوري الإيطالي.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/serie-a/20260830/1004219847/lazio-genoa-directo-serie.html",
@@ -2140,7 +2374,12 @@
           "url": "https://www.mundodeportivo.com/futbol/serie-a/20260830/1004219844/cagliari-inter-milan-directo-serie.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ac1ec2943834",
@@ -2149,23 +2388,27 @@
       "i18n": {
         "es": {
           "title": "AS Mónaco - Marsella, en directo | Ligue 1",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Ligue 1 que enfrenta al AS Mónaco contra el Marsella correspondiente a Jornada 2.",
-          "needs_translation": false
+          "summary": "El AS Mónaco y el Marsella se enfrentan en el partido correspondiente a la Jornada 2 de la Ligue 1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "AS Mónaco - Marsella, en directo | Ligue 1",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Ligue 1 que enfrenta al AS Mónaco contra el Marsella correspondiente a Jornada 2.",
-          "needs_translation": true
+          "title": "AS Mónaco vs Marsella live | Ligue 1",
+          "summary": "AS Mónaco take on Marsella in their Ligue 1 Jornada 2 fixture.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "AS Mónaco - Marsella, en directo | Ligue 1",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Ligue 1 que enfrenta al AS Mónaco contra el Marsella correspondiente a Jornada 2.",
-          "needs_translation": true
+          "title": "AS Mónaco - Marsella en direct | Ligue 1",
+          "summary": "L'AS Mónaco et Marsella s'affrontent dans le cadre de la Jornada 2 de Ligue 1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "AS Mónaco - Marsella, en directo | Ligue 1",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Ligue 1 que enfrenta al AS Mónaco contra el Marsella correspondiente a Jornada 2.",
-          "needs_translation": true
+          "title": "موناكو ضد مارسيليا مباشر | الدوري الفرنسي",
+          "summary": "يواجه نادي موناكو نظيره مارسيليا ضمن منافسات الجولة الثانية من بطولة الدوري الفرنسي.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/ligue-1/20260830/1004219805/as-monaco-marsella-directo-ligue-1.html",
@@ -2187,7 +2430,12 @@
           "url": "https://www.mundodeportivo.com/futbol/ligue-1/20260830/1004219805/as-monaco-marsella-directo-ligue-1.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2da190d58cee",
@@ -2195,29 +2443,34 @@
       "summary": "Drei Spiele, drei Siege: Neu-Trainer José Mourinho bleibt mit Real Madrid makellos und kann sich gegen Malaga auf seine Stars verlassen.",
       "i18n": {
         "de": {
-          "title": "Liga : Mbappé et Bellingham portent un grand Real Madrid face à Malaga",
-          "summary": "Drei Spiele, drei Siege: Neu-Trainer José Mourinho bleibt mit Real Madrid makellos und kann sich gegen Malaga auf seine Stars verlassen.",
-          "needs_translation": false
+          "title": "Liga: Mbappé und Bellingham führen Real Madrid zum Sieg gegen Malaga",
+          "summary": "Drei Spiele, drei Siege: Real Madrid bleibt unter dem neuen Trainer José Mourinho nach dem Erfolg gegen Malaga dank seiner Stars weiterhin makellos.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Liga : Mbappé et Bellingham portent un grand Real Madrid face à Malaga",
-          "summary": "Drei Spiele, drei Siege: Neu-Trainer José Mourinho bleibt mit Real Madrid makellos und kann sich gegen Malaga auf seine Stars verlassen.",
-          "needs_translation": true
+          "title": "Liga: Mbappé and Bellingham lead Real Madrid against Malaga",
+          "summary": "Three matches, three wins: Real Madrid maintain a perfect record under new coach José Mourinho following a victory over Malaga driven by their stars.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Liga : Mbappé et Bellingham portent un grand Real Madrid face à Malaga",
-          "summary": "Drei Spiele, drei Siege: Neu-Trainer José Mourinho bleibt mit Real Madrid makellos und kann sich gegen Malaga auf seine Stars verlassen.",
-          "needs_translation": true
+          "title": "Liga : Mbappé et Bellingham portent Real Madrid face à Malaga",
+          "summary": "Trois matchs et trois victoires : Real Madrid reste invaincu sous la direction de son nouvel entraîneur José Mourinho après son succès contre Malaga grâce à ses stars.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Liga : Mbappé et Bellingham portent un grand Real Madrid face à Malaga",
-          "summary": "Drei Spiele, drei Siege: Neu-Trainer José Mourinho bleibt mit Real Madrid makellos und kann sich gegen Malaga auf seine Stars verlassen.",
-          "needs_translation": true
+          "title": "Liga: Mbappé y Bellingham lideran a Real Madrid frente a Malaga",
+          "summary": "Tres partidos y tres victorias: Real Madrid mantiene un pleno impecable con su nuevo entrenador José Mourinho tras superar a Malaga gracias a sus estrellas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Liga : Mbappé et Bellingham portent un grand Real Madrid face à Malaga",
-          "summary": "Drei Spiele, drei Siege: Neu-Trainer José Mourinho bleibt mit Real Madrid makellos und kann sich gegen Malaga auf seine Stars verlassen.",
-          "needs_translation": true
+          "title": "الدوري الإسباني: مبابي وبيلينغهام يقودان ريال مدريد للفوز على مالاغا",
+          "summary": "حقق ريال مدريد فوزه الثالث في ثلاث مباريات ليحافظ على سجله المثالي مع مدربه الجديد جوزيه مورينيو، متغلباً على مالاغا بفضل تألق نجومه.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/la-liga-primera-division/bellingham-und-mbappe-sorgen-fuer-perfekten-real-start,spielbericht-real-madrid-fc-malaga-100.html",
@@ -2251,7 +2504,12 @@
           "url": "https://www.lefigaro.fr/sports/football/espagne/liga-mbappe-et-bellingham-portent-un-grand-real-madrid-face-a-malaga-20260830"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b73f47c299db",
@@ -2298,7 +2556,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/c5yl4lzp9gzo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "714fd78b43c5",
@@ -2365,23 +2628,27 @@
       "i18n": {
         "es": {
           "title": "Las imágenes de la vuelta de Julián a los entrenamientos",
-          "summary": "El delantero del Atlético de Madrid, Julián Álvarez , ha vuelto a entrenarse con sus compañeros este domingo tras recuperarse de una indisposición sufrida el miércoles anterior.",
-          "needs_translation": false
+          "summary": "El delantero del Atlético de Madrid, Julián Álvarez, regresó a los entrenamientos este domingo tras recuperarse de una indisposición sufrida el miércoles pasado.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Las imágenes de la vuelta de Julián a los entrenamientos",
-          "summary": "El delantero del Atlético de Madrid, Julián Álvarez , ha vuelto a entrenarse con sus compañeros este domingo tras recuperarse de una indisposición sufrida el miércoles anterior.",
-          "needs_translation": true
+          "title": "Images of Julián's return to training",
+          "summary": "Atlético de Madrid forward Julián Álvarez returned to team training on Sunday after recovering from an indisposition suffered the previous Wednesday.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Las imágenes de la vuelta de Julián a los entrenamientos",
-          "summary": "El delantero del Atlético de Madrid, Julián Álvarez , ha vuelto a entrenarse con sus compañeros este domingo tras recuperarse de una indisposición sufrida el miércoles anterior.",
-          "needs_translation": true
+          "title": "Les images du retour de Julián à l'entraînement",
+          "summary": "L'attaquant de l'Atlético de Madrid, Julián Álvarez, a repris l'entraînement ce dimanche après avoir récupéré d'une indisposition survenue mercredi dernier.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Las imágenes de la vuelta de Julián a los entrenamientos",
-          "summary": "El delantero del Atlético de Madrid, Julián Álvarez , ha vuelto a entrenarse con sus compañeros este domingo tras recuperarse de una indisposición sufrida el miércoles anterior.",
-          "needs_translation": true
+          "title": "صور عودة خوليان إلى التدريبات",
+          "summary": "استأنف مهاجم أتلتيكو مدريد خوليان ألفاريز تدريباته الجماعية يوم الأحد، بعد تعافيه من وعكة صحية تعرض لها يوم الأربعاء الماضي.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260830/1004221358/imagenes-vuelta-julian-entrenamientos.html",
@@ -2403,7 +2670,12 @@
           "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260830/1004221358/imagenes-vuelta-julian-entrenamientos.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b953e580c787",
