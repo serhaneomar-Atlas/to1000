@@ -17,32 +17,33 @@
       "i18n": {
         "de": {
           "title": "Live hören: SC Freiburg gegen Werder Bremen - Bundesliga",
-          "summary": "1. Spieltag: Anpfiff des Spiels ist am 30.08.2026 um 17:30 Uhr.",
-          "needs_translation": false
+          "summary": "Die Partie des 1. Spieltags der Bundesliga zwischen dem SC Freiburg und Werder Bremen wird am 30. August 2026 um 17:30 Uhr angepfiffen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "Listen live: SC Freiburg vs Werder Bremen - Bundesliga",
-          "summary": "Matchday 1: The match kicks off on 30/08/2026 at 5:30 pm.",
+          "summary": "SC Freiburg face Werder Bremen on Matchday 1 of the Bundesliga on 30 August 2026, with kick-off at 17:30.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Écouter en direct : SC Freiburg contre Werder Brême - Bundesliga",
-          "summary": "1er jour de match : le coup d'envoi du match est donné le 30/08/2026 à 17h30.",
+          "title": "Écouter en direct : SC Freiburg contre Werder Bremen - Bundesliga",
+          "summary": "Le SC Freiburg affronte Werder Bremen lors de la 1re journée de Bundesliga, avec un coup d'envoi prévu le 30 août 2026 à 17h30.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Escuchar en directo: SC Freiburg vs Werder Bremen - Bundesliga",
-          "summary": "1ª jornada: El pitido inicial del partido es el 30/08/2026 a las 17:30 h.",
+          "title": "Escuchar en directo: SC Freiburg contra Werder Bremen - Bundesliga",
+          "summary": "El SC Freiburg se enfrenta a Werder Bremen en la jornada 1 de la Bundesliga el 30 de agosto de 2026 a las 17:30.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "استمع مباشرة: SC Freiburg vs Werder Bremen - Bundesliga",
-          "summary": "يوم المباراة 1: تنطلق المباراة في 30/08/2026 الساعة 5:30 مساءً.",
+          "title": "استمع مباشرة: فرايبورغ ضد فيردر بريمن - الدوري الألماني",
+          "summary": "يلتقي فرايبورغ مع فيردر بريمن في الجولة الأولى من الدوري الألماني يوم 30 أغسطس 2026، وتنطلق المباراة عند الساعة 17:30.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga/fc-augsburg-gegen-fc-schalke-04,audiostream-fc-augsburg-gegen-fc-schalke-04-104.html",
@@ -94,7 +95,12 @@
           "url": "https://www.mundodeportivo.com/futbol/ligue-1/20260830/1004219643/paris-fc-nice-directo-ligue-1.html"
         }
       ],
-      "source_count": 6
+      "source_count": 6,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3dc48048fe08",
@@ -102,27 +108,28 @@
       "summary": "Placé dans la poule A aux côtés du Maroc, du Niger et du Lesotho, le Gabon aborde cette entame de campagne avec une ambition maximale. Les hommes du sélectionneur Sébastien Lire l'article The post Éliminatoires CAN 2027 : le programme du Gabon pour cette trêve de septembre !",
       "i18n": {
         "fr": {
-          "title": "Éliminatoires CAN 2027 : le programme du Gabon pour cette trêve de septembre !",
-          "summary": "Placé dans la poule A aux côtés du Maroc, du Niger et du Lesotho, le Gabon aborde cette entame de campagne avec une ambition maximale. Les hommes du sélectionneur Sébastien Lire l'article The post Éliminatoires CAN 2027 : le programme du Gabon pour cette trêve de septembre !",
-          "needs_translation": false
+          "title": "Éliminatoires CAN 2027 : le programme du Gabon pour cette trêve de septembre",
+          "summary": "Placé dans la poule A avec le Maroc, le Niger et le Lesotho, le Gabon débute les Éliminatoires CAN lors de la trêve internationale de septembre avec de fortes ambitions.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Can 2027 qualifiers: Gabon's program for this September truce!",
-          "summary": "Placed in Pool A alongside Morocco, Niger and Lesotho, Gabon is approaching this campaign with maximum ambition. The men of coach Sébastien Read the article The post 2027 can qualifiers: Gabon's programme for this September break!",
+          "title": "Éliminatoires CAN 2027: Gabon's schedule for the September break",
+          "summary": "Drawn into Group A alongside Maroc, Niger, and Lesotho, Gabon kicks off its Éliminatoires CAN campaign during the September international break.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Eliminatorias Can 2027: ¡el programa de Gabón para esta tregua de septiembre!",
-          "summary": "Colocado en el grupo A junto a Marruecos, Níger y Lesotho, Gabón aborda este inicio de campaña con la máxima ambición. Los hombres del seleccionador Sébastien Leer el artículo The post Eliminatorias Can 2027: ¡el programa de Gabón para esta tregua de septiembre!",
+          "title": "Éliminatoires CAN 2027: el programa de Gabon para el parón de septiembre",
+          "summary": "Encuadrado en el Grupo A junto a Maroc, Niger y Lesotho, Gabon afronta el inicio de los Éliminatoires CAN durante el parón internacional de septiembre.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تصفيات CAN 2027: برنامج الغابون لهدنة سبتمبر هذه!",
-          "summary": "وتقترب الغابون من هذه الحملة بأقصى طموح، حيث تم وضعها في المجمع أ إلى جانب المغرب والنيجر وليسوتو. رجال المدرب سيباستيان اقرأ المقال يمكن لمرحلة ما بعد عام 2027 التأهل: برنامج الغابون لعطلة سبتمبر هذه!",
+          "title": "تصفيات كأس أمم إفريقيا 2027: برنامج الغابون خلال فترة التوقف الدولي لشهر سبتمبر",
+          "summary": "يبدأ منتخب الغابون مشواره في تصفيات كأس أمم إفريقيا خلال فترة التوقف الدولي لشهر سبتمبر، بعدما أوقعته القرعة في المجموعة الأولى إلى جانب المغرب والنيجر وليسوتو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/afrique-football/eliminatoires-can-2027-le-programme-du-gabon-pour-cette-treve-de-septembre/",
@@ -144,7 +151,12 @@
           "url": "https://africatopsports.com/afrique-football/eliminatoires-can-2027-le-programme-du-gabon-pour-cette-treve-de-septembre/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "949748aaf997",
@@ -259,26 +271,27 @@
       "i18n": {
         "es": {
           "title": "El próximo rival de Boca en la Sudamericana volvió a ganar después de diez partidos",
-          "summary": "San Pablo, de floja temporada en el plano doméstico, se impuso 2-1 ante Bragantino en la fecha 24 del Brasileirao y cortó una extensa mala racha a días de enfrentar al Xeneize.",
-          "needs_translation": false
+          "summary": "San Pablo venció 2-1 a Bragantino en la fecha 24 del Brasileirao y cortó una racha de diez partidos sin ganar antes de enfrentar a Boca en la Sudamericana.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Boca's next South American opponent won again after ten matches",
-          "summary": "Sao Paulo, with a weak season at home, won 2-1 against Bragantino on the 24th of Brasileirao and ended an extensive bad streak days before facing Xeneize.",
+          "title": "Boca's next Sudamericana opponent wins again after ten matches",
+          "summary": "San Pablo defeated Bragantino 2-1 in round 24 of the Brasileirao, ending a ten-match winless streak ahead of their Sudamericana clash with Boca.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le prochain rival de Boca en Amérique du Sud a de nouveau gagné après dix matchs",
-          "summary": "San Pablo, de faible saison sur le plan national, s'est imposé 2-1 contre Bragantino le 24 du Brésil et a coupé une longue série de jours avant d'affronter le Xeneize.",
+          "title": "Le prochain adversaire de Boca en Sudamericana renoue avec la victoire après dix matches",
+          "summary": "San Pablo s'est imposé 2-1 contre Bragantino lors de la 24e journée du Brasileirao, mettant fin à une série de dix matches sans victoire avant d'affronter Boca en Sudamericana.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "فاز خصم بوكا القادم في أمريكا الجنوبية مرة أخرى بعد عشر مباريات",
-          "summary": "فازت ساو باولو، مع موسم ضعيف على أرضها، 2-1 على براغانتينو في 24 من برازيلييراو وأنهت سلسلة سيئة واسعة قبل أيام من مواجهة زينيز.",
+          "title": "منافس بوكا جونيورز القادم في سوداميريكانا يستعيد نغمة الانتصارات بعد عشر مباريات",
+          "summary": "تغلب ساو باولو على براغانتينو بنتيجة 2-1 في الجولة 24 من الدوري البرازيلي، لينهي سلسلة من عشر مباريات دون فوز قبل مواجهة بوكا جونيورز في سوداميريكانا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/america/boca-san-pablo-bragantino-brasileirao-copa-sudamericana-cuartos-final_0_ZEWBZkHhyG.html",
@@ -300,7 +313,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/america/boca-san-pablo-bragantino-brasileirao-copa-sudamericana-cuartos-final_0_ZEWBZkHhyG.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5b0c332a5670",
@@ -309,26 +327,27 @@
       "i18n": {
         "en": {
           "title": "Joao Pedro a central figure - player ratings for Chelsea v Brighton",
-          "summary": "Here's how the players rated as Chelsea and Brighton met in the Premier League on Sunday.",
-          "needs_translation": false
+          "summary": "Player ratings from the Sunday Premier League match between Chelsea and Brighton, highlighting the central role played by Joao Pedro.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Joao Pedro une figure centrale - évaluations des joueurs pour Chelsea vs Brighton",
-          "summary": "Voici comment les joueurs classés comme Chelsea et Brighton se sont rencontrés en Premier League dimanche.",
+          "title": "Joao Pedro au centre des débats - les notes des joueurs de Chelsea - Brighton",
+          "summary": "Les notes des joueurs lors de la rencontre de Premier League disputée dimanche entre Chelsea et Brighton, marquée par le rôle clé de Joao Pedro.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Joao Pedro una figura central - valoraciones de jugadores para Chelsea v Brighton",
-          "summary": "Así es como los jugadores clasificados como Chelsea y Brighton se enfrentaron en la Premier League el domingo.",
+          "title": "Joao Pedro, figura central: notas de los jugadores del Chelsea vs Brighton",
+          "summary": "Evaluación de los jugadores tras el partido de Premier League disputado el Sunday entre Chelsea y Brighton, con Joao Pedro como protagonista destacado.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "جواو بيدرو شخصية مركزية - تقييمات اللاعبين لتشيلسي ضد برايتون",
-          "summary": "إليك كيف تم تصنيف اللاعبين على أنهم تشيلسي وبرايتون التقيا في الدوري الممتاز يوم الأحد.",
+          "title": "جواو بيدرو يخطف الأضواء - تقييمات اللاعبين لمباراة تشيلسي ضد برايتون",
+          "summary": "تقييمات أداء اللاعبين خلال مواجهة الدوري الإنجليزي الممتاز يوم الأحد بين تشيلسي وبرايتون، والتي برز فيها جواو بيدرو بشكل لافت.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cdx5z7zk54po?at_medium=RSS&at_campaign=rss",
@@ -350,7 +369,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cdx5z7zk54po?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c23c35e15241",
@@ -358,27 +382,28 @@
       "summary": "The Manchester City cult hero turned down an eye-catching offer to sign up at Maine Road",
       "i18n": {
         "en": {
-          "title": "“There was interest from Italy, but Francis Lee was very determined. He flew to see me and convinced me that Manchester City was a place where I could be the main man” Georgi Kinkladze on turning down the opportunity to sign for AC Milan",
-          "summary": "The Manchester City cult hero turned down an eye-catching offer to sign up at Maine Road",
-          "needs_translation": false
+          "title": "“There was interest from Italy, but Francis Lee was very determined” – Georgi Kinkladze on turning down AC Milan for Manchester City",
+          "summary": "Georgi Kinkladze revealed he turned down interest from Italy, including AC Milan, after Manchester City chairman Francis Lee personally convinced him to move to Maine Road as the team's central figure.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "« Il y avait un intérêt de la part de l'Italie, mais Francis Lee était très déterminé. Il s'est envolé pour me voir et m'a convaincu que Manchester City était un endroit où je pouvais être l'homme principal. » Georgi Kinkladze en refusant l'opportunité de signer pour l'AC Milan",
-          "summary": "Le héros culte de Manchester City a refusé une offre accrocheuse de s'inscrire à Maine Road",
+          "title": "« Il y avait de l'intérêt en Italie, mais Francis Lee était très déterminé » : Georgi Kinkladze explique pourquoi il a refusé l'AC Milan pour Manchester City",
+          "summary": "Georgi Kinkladze a révélé avoir repoussé des offres venues d'Italie, notamment de l'AC Milan, convaincu par Francis Lee de rejoindre Manchester City à Maine Road pour devenir le joueur clé de l'équipe.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "\"Hubo interés de Italia, pero Francis Lee estaba muy decidido. Voló a verme y me convenció de que el Manchester City era un lugar donde podía ser el hombre principal\" Georgi Kinkladze sobre rechazar la oportunidad de fichar por el AC Milan",
-          "summary": "El héroe de culto del Manchester City rechazó una oferta llamativa para registrarse en Maine Road",
+          "title": "\"Había interés en Italia, pero Francis Lee estaba muy decidido\": Georgi Kinkladze explica por qué rechazó al AC Milan por el Manchester City",
+          "summary": "Georgi Kinkladze reveló que rechazó el interés de clubes de Italia, incluido el AC Milan, luego de que Francis Lee lo convenciera de fichar por el Manchester City en Maine Road para ser la figura del equipo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"كان هناك اهتمام من إيطاليا، لكن فرانسيس لي كان مصمماً للغاية. طار لرؤيتي وأقنعني أن مانشستر سيتي كان مكانًا يمكنني أن أكون فيه الرجل الرئيسي\" جورجي كينكلادزه على رفض فرصة التوقيع لصالح ميلانو",
-          "summary": "رفض بطل عبادة مانشستر سيتي عرضًا لافتًا للنظر للتسجيل في Maine Road",
+          "title": "\"كان هناك اهتمام من إيطاليا، لكن فرانسيس لي كان مصمماً للغاية\".. كينكلادزه يكشف سبب تفضيله مانشستر سيتي على ميلان",
+          "summary": "كشف جيورجي كينكلادزه أنه رفض عروضاً إيطالية أبرزها من ميلان، بعدما أقنعه فرانسيس لي شخصياً بالانتقال إلى مانشستر سيتي في ماين رود ليكون النجم الأول للفريق.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.fourfourtwo.com/team/there-was-interest-from-italy-but-francis-lee-was-very-determined-he-flew-to-see-me-and-convinced-me-that-manchester-city-was-a-place-where-i-could-be-the-main-man-georgi-kinkladze-on-turning-down-the-opportunity-to-sign-for-ac-milan",
@@ -400,7 +425,12 @@
           "url": "https://www.fourfourtwo.com/team/there-was-interest-from-italy-but-francis-lee-was-very-determined-he-flew-to-see-me-and-convinced-me-that-manchester-city-was-a-place-where-i-could-be-the-main-man-georgi-kinkladze-on-turning-down-the-opportunity-to-sign-for-ac-milan"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8515f49c4fb1",
@@ -409,26 +439,27 @@
       "i18n": {
         "es": {
           "title": "El Chelsea de Xabi Alonso progresa adecuadamente",
-          "summary": "La Premier League es una carrera de fondo y el Chelsea es más un equipo en construcción que un proyecto consolidado, pero el aterrizaje de Xabi Alonso en Stamford Bridge no ha podido ser mejor.",
-          "needs_translation": false
+          "summary": "Pese a encontrarse aún en construcción en la Premier League, el Chelsea muestra una evolución muy positiva tras la llegada de Xabi Alonso a Stamford Bridge.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Xabi Alonso's Chelsea is progressing well",
-          "summary": "The Premier League is a long-distance race and Chelsea is more of a construction team than a consolidated project, but Xabi Alonso's landing at Stamford Bridge couldn't have been better.",
+          "title": "Xabi Alonso's Chelsea makes good progress",
+          "summary": "Although still a team under construction in the Premier League, Chelsea has made a very positive start following the arrival of Xabi Alonso at Stamford Bridge.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Chelsea de Xabi Alonso progresse correctement",
-          "summary": "La Premier League est une course de fond et Chelsea est plus une équipe en construction qu'un projet consolidé, mais l'atterrissage de Xabi Alonso à Stamford Bridge n'a pas pu être meilleur.",
+          "title": "Le Chelsea de Xabi Alonso progresse bien",
+          "summary": "Bien qu'encore en phase de reconstruction en Premier League, Chelsea affiche des progrès probants depuis l'arrivée de Xabi Alonso à Stamford Bridge.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تشيلسي تشابي ألونسو يتقدم بشكل جيد",
-          "summary": "الدوري الممتاز هو سباق لمسافات طويلة وتشيلسي هو أكثر من فريق بناء من مشروع موحد، ولكن هبوط تشابي ألونسو في ستامفورد بريدج لا يمكن أن يكون أفضل.",
+          "title": "تشيلسي بقيادة تشابي ألونسو يحرز تقدماً ملحوظاً",
+          "summary": "رغم كونه فريقاً قيد البناء في الدوري الإنجليزي الممتاز، يحقق تشيلسي نتائج وتطوراً إيجابياً للغاية منذ تولي المدرب تشابي ألونسو القيادة في ستامفورد بريدج.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260830/1004221314/chelsea-xabi-alonso-progresa-adecuadamente.html",
@@ -450,7 +481,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260830/1004221314/chelsea-xabi-alonso-progresa-adecuadamente.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "efc135cc9914",
@@ -506,7 +542,12 @@
           "url": "https://www.kicker.de/gummersbach-gegen-magdeburg-2026-handball-bundesliga-5213752/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0a7652e4c465",
@@ -514,27 +555,28 @@
       "summary": "Le retour de Boulaye Dia en Ligue 1 prend forme.",
       "i18n": {
         "fr": {
-          "title": "Boulaye Dia : une retour en Ligue 1 se profile pour l’attaquant sénégalais",
-          "summary": "Le retour de Boulaye Dia en Ligue 1 prend forme.",
-          "needs_translation": false
+          "title": "Boulaye Dia : un retour en Ligue 1 se profile pour l’attaquant sénégalais",
+          "summary": "L'attaquant sénégalais Boulaye Dia se rapproche d'un retour en Ligue 1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Boulaye Dia: a return to Ligue 1 looms for the Senegalese striker",
-          "summary": "Boulaye Dia's return to Ligue 1 is taking shape.",
+          "title": "Boulaye Dia: A return to Ligue 1 looms for the Senegalese striker",
+          "summary": "Senegalese striker Boulaye Dia is edging closer to a return to Ligue 1.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Boulaye Dia: una vuelta a la Ligue 1 se perfila para el delantero senegalés",
-          "summary": "El regreso de Boulaye Dia a la Ligue 1 está tomando forma.",
+          "title": "Boulaye Dia: un regreso a la Ligue 1 se perfila para el delantero senegalés",
+          "summary": "El delantero senegalés Boulaye Dia se acerca a un posible regreso a la Ligue 1.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "بولاي ديا: العودة إلى دوري الدرجة الأولى تلوح في الأفق للمهاجم السنغالي",
-          "summary": "عودة بولاي ديا إلى دوري الدرجة الأولى تتشكل.",
+          "title": "بولاي ديا: عودة محتملة للمهاجم السنغالي إلى الدوري الفرنسي",
+          "summary": "يقترب المهاجم السنغالي بولاي ديا من العودة للعب في الدوري الفرنسي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football-europe/boulaye-dia-une-retour-en-ligue-1-se-profile-pour-lattaquant-senegalais/",
@@ -556,7 +598,12 @@
           "url": "https://africatopsports.com/football-europe/boulaye-dia-une-retour-en-ligue-1-se-profile-pour-lattaquant-senegalais/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "46bf0ff30d64",
@@ -564,27 +611,28 @@
       "summary": "En su presentación con el conjunto de Londres, el arquero argentino sacó un bochón y arengó a la tribuna.",
       "i18n": {
         "es": {
-          "title": "Levantó a la gente: el primer atajadón de Dibu Martínez en Chelsea",
-          "summary": "En su presentación con el conjunto de Londres, el arquero argentino sacó un bochón y arengó a la tribuna.",
-          "needs_translation": false
+          "title": "Levantó al público: la primera gran parada de Dibu Martínez con Chelsea",
+          "summary": "En su presentación con Chelsea en Londres, el arquero argentino Dibu Martínez realizó una notable atajada y arengó a los aficionados.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "He lifted people up: Dibu Martínez's first stop in Chelsea",
-          "summary": "In his presentation with the London team, the Argentine goalkeeper took out a bowl and harangued the rostrum.",
+          "title": "Chelsea: Dibu Martínez gets the crowd going with his first huge save",
+          "summary": "During his debut with Chelsea in Londres, Argentine goalkeeper Dibu Martínez pulled off an impressive save and rallied the home fans.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Il a soulevé les gens : le premier coup de frein de Dibu Martínez à Chelsea",
-          "summary": "Lors de sa présentation avec l'ensemble de Londres, le gardien argentin sortit une boule et harangua à la tribune.",
+          "title": "Chelsea : le premier arrêt décisif de Dibu Martínez enflamme le public",
+          "summary": "Lors de sa présentation avec Chelsea à Londres, le gardien de but argentin Dibu Martínez s'est illustré par un bel arrêt avant de haranguer les supporters.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "رفع الناس: محطة ديبو مارتينيز الأولى في تشيلسي",
-          "summary": "في عرضه التقديمي مع فريق لندن، أخرج حارس المرمى الأرجنتيني وعاء وألقى خطبة على المنصة.",
+          "title": "ديبو مارتينيز يشعل المدرجات بأول تصدٍ رائع مع تشيلسي",
+          "summary": "تألق حارس المرمى الأرجنتيني ديبو مارتينيز في ظهوره الأول مع تشيلسي في لندن، حيث قام بتصدٍ مميز وحمس الجماهير الحاضرة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/inglaterra/levanto-gente-primer-atajadon-dibu-martinez-chelsea-video-premier-league_0_Ghj19pOoUd.html",
@@ -606,7 +654,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/inglaterra/levanto-gente-primer-atajadon-dibu-martinez-chelsea-video-premier-league_0_Ghj19pOoUd.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a7b09c0afd4f",
@@ -665,32 +718,33 @@
       "i18n": {
         "de": {
           "title": "LIVE! Nach Dreierpack von Suzuki: Werder fängt sich und verkürzt",
-          "summary": "Zweites Heimspiel binnen vier Tagen: Nach dem Einzug in die Conference League gegen Motherwell wartet auf den SC Freiburg zum Ligastart Werder Bremen, das den langen Ausfall von Jens Stage verkraften muss.",
-          "needs_translation": false
+          "summary": "Vier Tage nach dem Einzug in die Conference League gegen Motherwell empfängt der SC Freiburg zum Bundesliga-Auftakt Werder Bremen, das lange auf den verletzten Jens Stage verzichten muss.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "LIVE! After a three-pack of Suzuki: Werder catches himself and shortens",
-          "summary": "Second home game within four days: After moving into the Conference League against Motherwell, SC Freiburg is waiting for league start Werder Bremen, who has to cope with the long absence of Jens Stage.",
+          "title": "LIVE! After Suzuki's hat-trick: Werder recovers and pulls one back",
+          "summary": "Four days after qualifying for the Conference League against Motherwell, SC Freiburg hosts Werder Bremen for the league opener, with the visitors missing the injured Jens Stage.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "LIVE ! Après un triplé de Suzuki : Werder se rattrape et se raccourcit",
-          "summary": "Deuxième match à domicile en quatre jours : après son entrée en Conference League contre Motherwell, le SC Freiburg attend le début de la ligue du Werder Brême, qui doit faire face à la longue absence de Jens Stage.",
+          "title": "LIVE ! Après un triplé de Suzuki : Werder se reprend et réduit l'écart",
+          "summary": "Quatre jours après sa qualification en Conference League face à Motherwell, le SC Freiburg reçoit Werder Bremen en ouverture de la saison, privé pour longtemps de Jens Stage.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "¡EN VIVO! Después del triplete de Suzuki: Werder atrapado y acortado",
-          "summary": "Segundo partido en casa en cuatro días: después de la entrada en la Conference League contra Motherwell, el SC Freiburg espera el comienzo de la liga Werder Bremen, que tendrá que hacer frente a la larga ausencia de Jens Stage.",
+          "title": "¡LIVE! Tras el triplete de Suzuki: Werder reacciona y recorta distancias",
+          "summary": "Cuatro días después de sellar su pase a la Conference League ante Motherwell, el SC Freiburg recibe a Werder Bremen en el inicio liguero, marcado por la baja de Jens Stage.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباشر! بعد ثلاث عبوات من سوزوكي: يمسك فيردر بنفسه ويقصر",
-          "summary": "ثاني مباراة على أرضه في غضون أربعة أيام: بعد الانتقال إلى دوري المؤتمر ضد مذرويل، ينتظر نادي فرايبورغ بداية الدوري فيردر بريمن، الذي يتعين عليه التعامل مع الغياب الطويل لجنس ستيج.",
+          "title": "مباشر: بعد هاتريك سوزوكي، فيردر بريمن يستعيد توازنه ويقلص الفارق",
+          "summary": "يستضيف فرايبورغ نادي فيردر بريمن في افتتاح الدوري بعد أربعة أيام من تأهله إلى دوري المؤتمر الأوروبي ضد مذرويل، بينما يفتقد الضيوف خدمات ينس ستيغ المصاب.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/live-nach-dreierpack-von-suzuki-werder-faengt-sich-und-verkuerzt-1247184/artikel#omrss",
@@ -712,7 +766,12 @@
           "url": "https://www.kicker.de/live-nach-dreierpack-von-suzuki-werder-faengt-sich-und-verkuerzt-1247184/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "10f6afdc7c80",
@@ -721,32 +780,33 @@
       "i18n": {
         "de": {
           "title": "Frankfurts Fußballerinnen stolpern gegen Nürnberg",
-          "summary": "Frankfurts Fußballerinnen versuchen es im Champions-League-Sandwich gegen Nürnberg mit einer B-Elf und kommen gerade so mit einem blauen Auge davon.",
-          "needs_translation": false
+          "summary": "Frankfurts Fußballerinnen traten zwischen ihren Europapokalspielen gegen Nürnberg mit einer B-Elf an und kamen nur knapp mit einem blauen Auge davon.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Frankfurt's female footballers stumble against Nuremberg",
-          "summary": "Frankfurt's female footballers try their luck in the Champions League sandwich against Nuremberg with a B-eleven and just manage to get away with a black eye.",
+          "title": "Frankfurts Fußballerinnen stumble against Nürnberg",
+          "summary": "Fielding a heavily rotated lineup between Champions League fixtures, Frankfurts Fußballerinnen narrowly escaped defeat against Nürnberg.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Les footballeuses de Francfort trébuchent contre Nuremberg",
-          "summary": "Les footballeuses de Francfort tentent le sandwich de la Ligue des champions contre Nuremberg avec un B-Elf et s'en sortent avec un œil bleu.",
+          "title": "Frankfurts Fußballerinnen trébuchent contre Nürnberg",
+          "summary": "Alignant une équipe remaniée entre deux rencontres européennes, Frankfurts Fußballerinnen ont évité de justesse la défaite face à Nürnberg.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Las futbolistas de Frankfurt tropiezan contra Núremberg",
-          "summary": "Las futbolistas del Frankfurt intentan con un once B en el sándwich de la Liga de Campeones contra el Núremberg y se escapan con un ojo morado.",
+          "title": "Frankfurts Fußballerinnen tropiezan ante Nürnberg",
+          "summary": "Con una alineación alternativa entre compromisos de Champions League, Frankfurts Fußballerinnen evitaron la derrota por la mínima ante Nürnberg.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "لاعبة كرة القدم في فرانكفورت تتعثر أمام نورمبرغ",
-          "summary": "جربت لاعبات كرة القدم في فرانكفورت حظهن في شطيرة دوري أبطال أوروبا ضد نورمبرغ مع B -11 وتمكنوا فقط من الابتعاد بعيون سوداء.",
+          "title": "سيدات فرانكفورت يتعثرن أمام نورنبرغ",
+          "summary": "خاضت لاعبات فرانكفورت مواجهة نورنبرغ بتشكيلة احتياطية وسط ضغط مباريات دوري أبطال أوروبا، ونجون بصعوبة من الخسارة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/regional/hr/hr-eintracht-frankfurt-frauen-stolpern-gegen-nuernberg-100.html",
@@ -768,7 +828,12 @@
           "url": "https://www.sportschau.de/regional/hr/hr-eintracht-frankfurt-frauen-stolpern-gegen-nuernberg-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "79a9bc774c96",
@@ -777,26 +842,27 @@
       "i18n": {
         "fr": {
           "title": "Mercato : le FC Barcelone aurait trouvé son numéro 9, Gabriel Jesus se rapproche",
-          "summary": "Alors que le dossier Julian Alvarez patine, le FC Barcelone aurait jeté son dévolu sur Gabriel Jesus. L'attaquant d'Arsenal serait proche de s'engager contre environ 11 millions d'euros, selon The Athletic .",
-          "needs_translation": false
+          "summary": "Alors que le dossier Julian Alvarez patine, le FC Barcelone cible Gabriel Jesus. L'attaquant d'Arsenal serait proche de s'engager pour environ 11 millions d'euros, selon The Athletic.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mercato: FC Barcelona would have found its number 9, Gabriel Jesus is getting closer",
-          "summary": "While the Julian Alvarez file skates, FC Barcelona would have set its sights on Gabriel Jesus. The Arsenal striker would be close to committing against about 11 million euros, according to The Athletic .",
+          "title": "Mercato: FC Barcelone reportedly finds its number 9, Gabriel Jesus closing in",
+          "summary": "With talks for Julian Alvarez stalling, FC Barcelone has set its sights on Arsenal striker Gabriel Jesus. A move is close for around 11 million euros, according to The Athletic.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Mercado: el FC Barcelona habría encontrado su número 9, Gabriel Jesus se acerca",
-          "summary": "Mientras el caso de Julian Álvarez patina, el FC Barcelona habría puesto sus ojos en Gabriel Jesús. El delantero del Arsenal estaría cerca de comprometerse por unos 11 millones de euros, según The Athletic .",
+          "title": "Mercato: el FC Barcelone habría encontrado a su número 9, Gabriel Jesus se acerca",
+          "summary": "Ante el estancamiento del caso Julian Alvarez, el FC Barcelone se interesa en Gabriel Jesus. El atacante de Arsenal llegaría por unos 11 millones de euros, según The Athletic.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ميركاتو: كان نادي برشلونة سيجد رقمه 9، غابرييل جيسوس يقترب",
-          "summary": "بينما يتزلج ملف جوليان ألفاريز، كان برشلونة قد وضع أنظاره على غابرييل جيسوس. سيكون مهاجم آرسنال قريبًا من الالتزام مقابل حوالي 11 مليون يورو، وفقًا لـ The Athletic .",
+          "title": "سوق الانتقالات: برشلونة يقترب من حسم صفقة المهاجم غابرييل جيسوس",
+          "summary": "مع تعثر مفاوضات خوليان ألفاريز، يقترب نادي برشلونة من التعاقد مع مهاجم أرسنال غابرييل جيسوس مقابل نحو 11 مليون يورو، وفقاً لصحيفة ذا أثلتيك.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Mercato-le-fc-barcelone-aurait-trouve-son-numero-9-gabriel-jesus-se-rapproche/1714715#at_medium=RSS_feeds",
@@ -818,7 +884,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Mercato-le-fc-barcelone-aurait-trouve-son-numero-9-gabriel-jesus-se-rapproche/1714715#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "34a93b655070",
@@ -877,32 +948,33 @@
       "i18n": {
         "de": {
           "title": "Ab 17.30 Uhr live - United empfängt Ipswich Town",
-          "summary": "Manchester United trifft am 2. Spieltag der Premier League auf Ipswich Town.",
-          "needs_translation": false
+          "summary": "Manchester United empfängt am 2. Spieltag der Premier League Ipswich Town. Der Anstoß erfolgt um 17:30 Uhr.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Live from 5.30 pm - United welcomes Ipswich Town",
-          "summary": "Manchester United face Ipswich Town on matchday 2 of the Premier League.",
+          "title": "Live from 5:30 PM - United host Ipswich Town",
+          "summary": "Manchester United host Ipswich Town in the 2nd round of the Premier League, with kick-off scheduled for 5:30 PM.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "En direct à partir de 17h30 - United reçoit Ipswich Town",
-          "summary": "Manchester United affrontera Ipswich Town lors de la 2e journée de Premier League.",
+          "title": "En direct dès 17h30 - United reçoit Ipswich Town",
+          "summary": "Manchester United affronte Ipswich Town lors de la 2e journée de Premier League. Le coup d'envoi est prévu à 17h30.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "A partir de las 17.30 h en directo - United recibe a Ipswich Town",
-          "summary": "El Manchester United se enfrentará al Ipswich Town en la segunda jornada de la Premier League.",
+          "title": "En directo a partir de las 17:30 - United recibe a Ipswich Town",
+          "summary": "Manchester United se enfrenta a Ipswich Town en la 2.ª jornada de la Premier League, con inicio fijado a las 17:30.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباشر من الساعة 5:30 مساءً - يونايتد ترحب بمدينة إبسويتش",
-          "summary": "يواجه مانشستر يونايتد إيبسويتش تاون في يوم المباراة 2 من الدوري الممتاز.",
+          "title": "مباشر ابتداءً من 17:30 - مانشستر يونايتد يستضيف إيبسويتش تاون",
+          "summary": "يواجه مانشستر يونايتد ضيفه إيبسويتش تاون ضمن منافسات الجولة الثانية من الدوري الإنجليزي الممتاز، حيث تنطلق المباراة في تمام الساعة 17:30.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/england-premier-league/ma12153199/manchester-united_ipswich-town/liveticker",
@@ -924,7 +996,12 @@
           "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/england-premier-league/ma12153199/manchester-united_ipswich-town/liveticker"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "16a482f6b0bc",
@@ -980,7 +1057,12 @@
           "url": "https://www.kicker.de/live-aufsteiger-schalke-mit-adamu-fuer-dina-ebimbe-brackelmann-beginnt-beim-fca-1247200/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5a8c6ea5be07",
@@ -989,26 +1071,27 @@
       "i18n": {
         "es": {
           "title": "Manchester United - Ipswich Town, en directo | Premier League",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Premier League que enfrenta al Manchester United contra el Ipswich Town correspondiente a Jornada 2.",
-          "needs_translation": false
+          "summary": "Manchester United e Ipswich Town se enfrentan en directo en el partido correspondiente a la jornada 2 de la Premier League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Manchester United - Ipswich Town, live | Premier League",
-          "summary": "Good afternoon and welcome to the live narration of the Premier League football match between Manchester United and Ipswich Town on Matchday 2.",
+          "title": "Manchester United vs Ipswich Town live | Premier League",
+          "summary": "Manchester United face Ipswich Town in Matchday 2 of the Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Manchester United - Ipswich Town, en direct | Premier League",
-          "summary": "Bonsoir et bienvenue au récit, en direct, du match de football de Premier League qui oppose Manchester United à Ipswich Town correspondant à la Journée 2.",
+          "title": "Manchester United - Ipswich Town en direct | Premier League",
+          "summary": "Manchester United affronte Ipswich Town dans le cadre de la 2e journée de Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مانشستر يونايتد - إبسويتش تاون، مباشر | الدوري الإنجليزي الممتاز",
-          "summary": "مساء الخير ومرحبا بكم في السرد المباشر لمباراة كرة القدم في الدوري الممتاز بين مانشستر يونايتد وإيبسويتش تاون في المباراة الثانية.",
+          "title": "مانشستر يونايتد - إيبسويتش تاون بث مباشر | الدوري الإنجليزي الممتاز",
+          "summary": "يواجه مانشستر يونايتد نظيره إيبسويتش تاون في إطار منافسات الجولة الثانية من الدوري الإنجليزي الممتاز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260830/1004219838/manchester-united-ipswich-town-directo-premier-league.html",
@@ -1042,7 +1125,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260830/1004219649/leeds-united-brentford-directo-premier-league.html"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "fab894e8ccae",
@@ -1198,23 +1286,27 @@
       "i18n": {
         "fr": {
           "title": "Congo : abonné aux buts, ce Diable Rouge tape à la porte de Claude Le Roy",
-          "summary": "Au cours de la saison 2025-2026, l’avant-centre congolais Beny Namboka s’est affirmé comme l’une des révélations offensives majeures de l’Illicocash Ligue 1.",
-          "needs_translation": false
+          "summary": "Durant la saison 2025-2026, l'attaquant congolais Beny Namboka s'est imposé comme une révélation offensive en Illicocash Ligue 1 et postule auprès du sélectionneur Claude Le Roy.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Congo : abonné aux buts, ce Diable Rouge tape à la porte de Claude Le Roy",
-          "summary": "Au cours de la saison 2025-2026, l’avant-centre congolais Beny Namboka s’est affirmé comme l’une des révélations offensives majeures de l’Illicocash Ligue 1.",
-          "needs_translation": true
+          "title": "Congo: Prolific goalscorer, this Diable Rouge knocks on Claude Le Roy's door",
+          "summary": "Congolese striker Beny Namboka has emerged as a top offensive revelation in Illicocash Ligue 1 during the 2025-2026 season, catching the attention of coach Claude Le Roy.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Congo : abonné aux buts, ce Diable Rouge tape à la porte de Claude Le Roy",
-          "summary": "Au cours de la saison 2025-2026, l’avant-centre congolais Beny Namboka s’est affirmé comme l’une des révélations offensives majeures de l’Illicocash Ligue 1.",
-          "needs_translation": true
+          "title": "Congo: Abonado al gol, este Diable Rouge llama a la puerta de Claude Le Roy",
+          "summary": "Durante la temporada 2025-2026, el delantero congoleño Beny Namboka se consolidó como una de las grandes revelaciones ofensivas de la Illicocash Ligue 1 y apunta a la selección de Claude Le Roy.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Congo : abonné aux buts, ce Diable Rouge tape à la porte de Claude Le Roy",
-          "summary": "Au cours de la saison 2025-2026, l’avant-centre congolais Beny Namboka s’est affirmé comme l’une des révélations offensives majeures de l’Illicocash Ligue 1.",
-          "needs_translation": true
+          "title": "الكونغو: مهاجم متألق يطرق أبواب منتخب كلود لوروا",
+          "summary": "برز المهاجم الكونغولي بيني نامبوكا كأحد أهم الاكتشافات الهجومية في دوري إيليكوكاش ليغ 1 خلال موسم 2025-2026، ليعزز فرصه في الانضمام إلى تشكيلة المدرب كلود لوروا.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/afrique-football/congo-abonne-aux-buts-ce-diable-rouge-tape-a-la-porte-de-claude-le-roy/",
@@ -1236,7 +1328,12 @@
           "url": "https://africatopsports.com/afrique-football/congo-abonne-aux-buts-ce-diable-rouge-tape-a-la-porte-de-claude-le-roy/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "bb6b683e8aa4",
@@ -1338,29 +1435,34 @@
       "summary": "Real Madrid empfängt am 3. Spieltag der spanischen Liga den FC Málaga.",
       "i18n": {
         "de": {
-          "title": "Jetzt live - Real Madrid gegen den FC Málaga",
+          "title": "Jetzt live: Real Madrid gegen den FC Málaga",
           "summary": "Real Madrid empfängt am 3. Spieltag der spanischen Liga den FC Málaga.",
-          "needs_translation": false
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Jetzt live - Real Madrid gegen den FC Málaga",
-          "summary": "Real Madrid empfängt am 3. Spieltag der spanischen Liga den FC Málaga.",
-          "needs_translation": true
+          "title": "Live now: Real Madrid vs FC Málaga",
+          "summary": "Real Madrid host FC Málaga on matchday 3 of the Spanish Liga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Jetzt live - Real Madrid gegen den FC Málaga",
-          "summary": "Real Madrid empfängt am 3. Spieltag der spanischen Liga den FC Málaga.",
-          "needs_translation": true
+          "title": "En direct : Real Madrid contre le FC Málaga",
+          "summary": "Le Real Madrid accueille le FC Málaga pour le compte de la 3e journée de Liga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Jetzt live - Real Madrid gegen den FC Málaga",
-          "summary": "Real Madrid empfängt am 3. Spieltag der spanischen Liga den FC Málaga.",
-          "needs_translation": true
+          "title": "En directo: Real Madrid contra el FC Málaga",
+          "summary": "El Real Madrid recibe al FC Málaga en la 3.ª jornada de la Liga española.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Jetzt live - Real Madrid gegen den FC Málaga",
-          "summary": "Real Madrid empfängt am 3. Spieltag der spanischen Liga den FC Málaga.",
-          "needs_translation": true
+          "title": "مباشر الآن: ريال مدريد ضد نادي ملقة",
+          "summary": "يستضيف ريال مدريد نظيره ملقة في الجولة الثالثة من الدوري الإسباني.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/spanien-primera-division/ma12187840/real-madrid_malaga-cf/liveticker",
@@ -1388,7 +1490,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/directo-real-madrid-malaga-cf-133781448?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0e698ed334d5",
@@ -1544,28 +1651,33 @@
       "i18n": {
         "de": {
           "title": "2. Bundesliga: Hannover schlägt Darmstadt dank zwei Handspielen",
-          "summary": "Hannover 96 hat nach dem Null-Punkte-Start auch in Darmstadt wieder nicht überzeugt. Es brauchte zwei Aussetzer der \"Lilien\"-Defensive für die ersten Punkte.",
-          "needs_translation": false
+          "summary": "Nach einem Null-Punkte-Start hat Hannover 96 in Darmstadt die ersten Saisonpunkte geholt. Zwei Handspiele in der Defensive der Gastgeber ermöglichten den Erfolg.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "2. Bundesliga: Hannover schlägt Darmstadt dank zwei Handspielen",
-          "summary": "Hannover 96 hat nach dem Null-Punkte-Start auch in Darmstadt wieder nicht überzeugt. Es brauchte zwei Aussetzer der \"Lilien\"-Defensive für die ersten Punkte.",
-          "needs_translation": true
+          "title": "2. Bundesliga: Hannover beat Darmstadt thanks to two handballs",
+          "summary": "Following a zero-point start to the season, Hannover 96 secured their first points at Darmstadt, capitalizing on two defensive handballs from the hosts.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "2. Bundesliga: Hannover schlägt Darmstadt dank zwei Handspielen",
-          "summary": "Hannover 96 hat nach dem Null-Punkte-Start auch in Darmstadt wieder nicht überzeugt. Es brauchte zwei Aussetzer der \"Lilien\"-Defensive für die ersten Punkte.",
-          "needs_translation": true
+          "title": "2. Bundesliga : Hannover bat Darmstadt grâce à deux mains",
+          "summary": "Après un début de saison sans le moindre point, Hannover 96 a décroché ses premiers points à Darmstadt, profitant de deux mains défensives adverses.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "2. Bundesliga: Hannover schlägt Darmstadt dank zwei Handspielen",
-          "summary": "Hannover 96 hat nach dem Null-Punkte-Start auch in Darmstadt wieder nicht überzeugt. Es brauchte zwei Aussetzer der \"Lilien\"-Defensive für die ersten Punkte.",
-          "needs_translation": true
+          "title": "2. Bundesliga: Hannover vence a Darmstadt gracias a dos manos",
+          "summary": "Tras un inicio de temporada sin puntos, Hannover 96 sumó sus primeros puntos en Darmstadt aprovechando dos manos cometidas por la defensa local.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "2. Bundesliga: Hannover schlägt Darmstadt dank zwei Handspielen",
-          "summary": "Hannover 96 hat nach dem Null-Punkte-Start auch in Darmstadt wieder nicht überzeugt. Es brauchte zwei Aussetzer der \"Lilien\"-Defensive für die ersten Punkte.",
-          "needs_translation": true
+          "title": "دوري الدرجة الثانية الألماني: هانوفر يهزم دارمشتات بفضل لمستي يد",
+          "summary": "حصد هانوفر 96 أولى نقاطه هذا الموسم بتغلبه على دارمشتات في دوري الدرجة الثانية الألماني، مستفيداً من لمستي يد وخطأين في دفاع أصحاب الأرض.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga2/zwei-darmstaedter-handspiele-sorgen-fuer-hannovers-erste-punkte,spielbericht-sv-darmstadt-hannover-96-102.html",
@@ -1593,7 +1705,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga2/zwei-darmstaedter-handspiele-sorgen-fuer-hannovers-erste-punkte,spielbericht-sv-darmstadt-hannover-96-102.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "88728e6a7d82",
@@ -1602,23 +1719,27 @@
       "i18n": {
         "es": {
           "title": "La llegada de Gabriel Jesús no descarta el interés por Julián para el futuro",
-          "summary": "La llegada de Gabriel Jesús , esperado en Barcelona este mismo lunes para pasar la revisión médica como paso previa a su fichaje por el Barça, no implica que el club azulgrana deje de estar interesado en Julián Álvarez para el futuro.",
-          "needs_translation": false
+          "summary": "Gabriel Jesús pasa este lunes la revisión médica previa a su fichaje por el Barça. Su incorporación no descarta el interés del club en Julián Álvarez a futuro.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "La llegada de Gabriel Jesús no descarta el interés por Julián para el futuro",
-          "summary": "La llegada de Gabriel Jesús , esperado en Barcelona este mismo lunes para pasar la revisión médica como paso previa a su fichaje por el Barça, no implica que el club azulgrana deje de estar interesado en Julián Álvarez para el futuro.",
-          "needs_translation": true
+          "title": "The arrival of Gabriel Jesús does not rule out future interest in Julián",
+          "summary": "Gabriel Jesús is scheduled for a medical this Monday ahead of joining Barça. His signing will not rule out future interest in Julián Álvarez.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La llegada de Gabriel Jesús no descarta el interés por Julián para el futuro",
-          "summary": "La llegada de Gabriel Jesús , esperado en Barcelona este mismo lunes para pasar la revisión médica como paso previa a su fichaje por el Barça, no implica que el club azulgrana deje de estar interesado en Julián Álvarez para el futuro.",
-          "needs_translation": true
+          "title": "L'arrivée de Gabriel Jesús n'exclut pas l'intérêt pour Julián à l'avenir",
+          "summary": "Gabriel Jesús passe sa visite médicale ce lundi avant de signer au Barça. Son arrivée n'écarte pas l'intérêt futur du club blaugrana pour Julián Álvarez.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "La llegada de Gabriel Jesús no descarta el interés por Julián para el futuro",
-          "summary": "La llegada de Gabriel Jesús , esperado en Barcelona este mismo lunes para pasar la revisión médica como paso previa a su fichaje por el Barça, no implica que el club azulgrana deje de estar interesado en Julián Álvarez para el futuro.",
-          "needs_translation": true
+          "title": "وصول غابرييل جيسوس لا يلغي اهتمام برشلونة بضم جوليان ألفاريز مستقبلاً",
+          "summary": "يخضع غابرييل جيسوس للفحص الطبي يوم الإثنين تمهيداً لانتقاله إلى برشلونة، في حين يواصل النادي الكتالوني اهتمامه بضم جوليان ألفاريز مستقبلاً.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260830/1004221289/llegada-gabriel-jesus-no-descarta-interes-julian-futuro.html",
@@ -1640,7 +1761,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260830/1004221289/llegada-gabriel-jesus-no-descarta-interes-julian-futuro.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "583c130ed593",
@@ -1649,23 +1775,27 @@
       "i18n": {
         "es": {
           "title": "El Barça vuelve a escena con Van Asten y sin Gemma Font",
-          "summary": "El Barça Femení vuelve esta tarde a la competición oficial con el objetivo de iniciar con buen pie el camino hacia un nuevo título de Liga, sería el octavo de forma consecutiva.",
-          "needs_translation": false
+          "summary": "El Barça Femení retoma la competición en la Liga con el objetivo de conquistar su octavo título consecutivo, contando con Van Asten y con la ausencia de Gemma Font.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Barça vuelve a escena con Van Asten y sin Gemma Font",
-          "summary": "El Barça Femení vuelve esta tarde a la competición oficial con el objetivo de iniciar con buen pie el camino hacia un nuevo título de Liga, sería el octavo de forma consecutiva.",
-          "needs_translation": true
+          "title": "Barça return to action with Van Asten and without Gemma Font",
+          "summary": "Barça Femení return to official competition in Liga aiming to secure an eighth consecutive league title, featuring Van Asten and without Gemma Font.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El Barça vuelve a escena con Van Asten y sin Gemma Font",
-          "summary": "El Barça Femení vuelve esta tarde a la competición oficial con el objetivo de iniciar con buen pie el camino hacia un nuevo título de Liga, sería el octavo de forma consecutiva.",
-          "needs_translation": true
+          "title": "Le Barça de retour avec Van Asten et sans Gemma Font",
+          "summary": "Le Barça Femení reprend la compétition en Liga avec l'objectif de remporter un huitième titre consécutif, avec la présence de Van Asten et l'absence de Gemma Font.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Barça vuelve a escena con Van Asten y sin Gemma Font",
-          "summary": "El Barça Femení vuelve esta tarde a la competición oficial con el objetivo de iniciar con buen pie el camino hacia un nuevo título de Liga, sería el octavo de forma consecutiva.",
-          "needs_translation": true
+          "title": "سيدات برشلونة يعدن للمنافسة بحضور فان أستين وغياب خيما فونت",
+          "summary": "يعود فريق برشلونة للسيدات إلى المنافسات الرسمية في الدوري الإسباني سعياً لتحقيق لقبه الثامن على التوالي، بتواجد فان أستين وغياب الحارسة خيما فونت.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260830/1004221291/barca-vuelve-escena-asten-gemma-font.html",
@@ -1687,7 +1817,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260830/1004221291/barca-vuelve-escena-asten-gemma-font.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "446811bf94a1",
@@ -1748,23 +1883,27 @@
       "i18n": {
         "es": {
           "title": "Horario y dónde ver por televisión el Real Madrid - Málaga CF",
-          "summary": "Tras repetir alineación ante Espanyol y Real Sociedad, Mourinho ha introducido cambios en el once para jugar esta tarde (17.00 horas) frente al Málaga en el Bernabéu . El entrenador del Real Madrid introduce hasta cinco cambios en el once inicial de esta tarde.",
-          "needs_translation": false
+          "summary": "Mourinho introduce hasta cinco cambios en la alineación del Real Madrid para enfrentarse esta tarde al Málaga CF en el Bernabéu a las 17:00 horas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Horario y dónde ver por televisión el Real Madrid - Málaga CF",
-          "summary": "Tras repetir alineación ante Espanyol y Real Sociedad, Mourinho ha introducido cambios en el once para jugar esta tarde (17.00 horas) frente al Málaga en el Bernabéu . El entrenador del Real Madrid introduce hasta cinco cambios en el once inicial de esta tarde.",
-          "needs_translation": true
+          "title": "Kick-off time and TV channel for Real Madrid vs Málaga CF",
+          "summary": "Mourinho has made up to five changes to Real Madrid's starting line-up to face Málaga CF this afternoon (17:00) at the Bernabéu.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Horario y dónde ver por televisión el Real Madrid - Málaga CF",
-          "summary": "Tras repetir alineación ante Espanyol y Real Sociedad, Mourinho ha introducido cambios en el once para jugar esta tarde (17.00 horas) frente al Málaga en el Bernabéu . El entrenador del Real Madrid introduce hasta cinco cambios en el once inicial de esta tarde.",
-          "needs_translation": true
+          "title": "Horaires et diffusion TV du match Real Madrid - Málaga CF",
+          "summary": "Mourinho effectue jusqu'à cinq changements dans le onze de départ du Real Madrid pour affronter Málaga CF cet après-midi (17h00) au Bernabéu.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Horario y dónde ver por televisión el Real Madrid - Málaga CF",
-          "summary": "Tras repetir alineación ante Espanyol y Real Sociedad, Mourinho ha introducido cambios en el once para jugar esta tarde (17.00 horas) frente al Málaga en el Bernabéu . El entrenador del Real Madrid introduce hasta cinco cambios en el once inicial de esta tarde.",
-          "needs_translation": true
+          "title": "موعد والقنوات الناقلة لمباراة ريال مدريد ومالقا",
+          "summary": "أجرى المدرب مورينيو خمسة تغييرات على التشكيلة الأساسية لريال مدريد لمواجهة مالقا مساء اليوم في تمام الساعة 17:00 على ملعب برنابيو.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260830/1004221292/novedades-once-real-madrid-malaga.html",
@@ -1798,7 +1937,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/horario-ver-television-real-madrid-133753921?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "68476cc5e877",
@@ -1965,24 +2109,28 @@
       "summary": "Absent de l'entraînement depuis plusieurs jours, Julian Alvarez a mis fin à sa pause dimanche, en participant à la séance collective de l'Atlético de Madrid. L'Argentin, malheureux, souhaite toujours rejoindre le FC Barcelone avant la fin du mercato.",
       "i18n": {
         "fr": {
-          "title": "Liga : Julian Alvarez de retour à l’entraînement avec l’Atlético de Madrid",
-          "summary": "Absent de l'entraînement depuis plusieurs jours, Julian Alvarez a mis fin à sa pause dimanche, en participant à la séance collective de l'Atlético de Madrid. L'Argentin, malheureux, souhaite toujours rejoindre le FC Barcelone avant la fin du mercato.",
-          "needs_translation": false
+          "title": "Liga : Julian Alvarez de retour à l'entraînement avec l'Atlético de Madrid",
+          "summary": "Après plusieurs jours d'absence, Julian Alvarez a réintégré l'entraînement collectif avec l'Atlético de Madrid ce dimanche. L'attaquant argentin souhaite toutefois toujours rejoindre le FC Barcelone avant la clôture du mercato.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Liga : Julian Alvarez de retour à l’entraînement avec l’Atlético de Madrid",
-          "summary": "Absent de l'entraînement depuis plusieurs jours, Julian Alvarez a mis fin à sa pause dimanche, en participant à la séance collective de l'Atlético de Madrid. L'Argentin, malheureux, souhaite toujours rejoindre le FC Barcelone avant la fin du mercato.",
-          "needs_translation": true
+          "title": "Liga: Julian Alvarez returns to training with Atlético de Madrid",
+          "summary": "Following a multi-day absence, Julian Alvarez rejoined Atlético de Madrid group training on Sunday. The Argentine forward still wishes to secure a transfer to FC Barcelone before the market closes.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Liga : Julian Alvarez de retour à l’entraînement avec l’Atlético de Madrid",
-          "summary": "Absent de l'entraînement depuis plusieurs jours, Julian Alvarez a mis fin à sa pause dimanche, en participant à la séance collective de l'Atlético de Madrid. L'Argentin, malheureux, souhaite toujours rejoindre le FC Barcelone avant la fin du mercato.",
-          "needs_translation": true
+          "title": "Liga: Julian Alvarez vuelve a los entrenamientos con el Atlético de Madrid",
+          "summary": "Tras varios días ausente, Julian Alvarez regresó este domingo a la sesión grupal del Atlético de Madrid. El atacante argentino mantiene su deseo de fichar por el FC Barcelone antes del cierre del mercado.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Liga : Julian Alvarez de retour à l’entraînement avec l’Atlético de Madrid",
-          "summary": "Absent de l'entraînement depuis plusieurs jours, Julian Alvarez a mis fin à sa pause dimanche, en participant à la séance collective de l'Atlético de Madrid. L'Argentin, malheureux, souhaite toujours rejoindre le FC Barcelone avant la fin du mercato.",
-          "needs_translation": true
+          "title": "الدوري الإسباني: جوليان ألفاريز يعود إلى تدريبات أتلتيكو مدريد",
+          "summary": "عاد جوليان ألفاريز إلى التدريبات الجماعية مع أتلتيكو مدريد يوم الأحد بعد غياب دام أياماً، في حين لا يزال المهاجم الأرجنتيني يأمل بالانتقال إلى برشلونة قبل إغلاق الميركاتو.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Convoite-par-le-fc-barcelone-julian-alvarez-a-repris-l-entrainement-avec-l-atletico-de-madrid-apres-plusieurs-jours-d-absence/1714692#at_medium=RSS_feeds",
@@ -2010,7 +2158,12 @@
           "url": "https://www.lefigaro.fr/sports/football/espagne/liga-julian-alvarez-de-retour-a-l-entrainement-avec-l-atletico-de-madrid-20260830"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "419198a40355",
@@ -2117,29 +2270,34 @@
       "summary": "In den ersten zwei Spielen unter Trainer-Rückkehrer José Mourinho feierte Real Madrid zwei Siege. Am 3.",
       "i18n": {
         "de": {
-          "title": "LIVE! Drittes Spiel unter Mourinho: Gewinnt Real auch gegen Malaga?",
-          "summary": "In den ersten zwei Spielen unter Trainer-Rückkehrer José Mourinho feierte Real Madrid zwei Siege. Am 3.",
-          "needs_translation": false
+          "title": "Drittes Spiel unter Mourinho: Real Madrid trifft auf Malaga",
+          "summary": "Real Madrid hat die ersten zwei Spiele unter Trainer José Mourinho gewonnen und bestreitet nun seine dritte Partie gegen Malaga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "LIVE! Drittes Spiel unter Mourinho: Gewinnt Real auch gegen Malaga?",
-          "summary": "In den ersten zwei Spielen unter Trainer-Rückkehrer José Mourinho feierte Real Madrid zwei Siege. Am 3.",
-          "needs_translation": true
+          "title": "Third match under Mourinho: Real Madrid face Malaga",
+          "summary": "Real Madrid won their first two games under returning coach José Mourinho and are now set to play their third match against Malaga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "LIVE! Drittes Spiel unter Mourinho: Gewinnt Real auch gegen Malaga?",
-          "summary": "In den ersten zwei Spielen unter Trainer-Rückkehrer José Mourinho feierte Real Madrid zwei Siege. Am 3.",
-          "needs_translation": true
+          "title": "Troisième match sous Mourinho : Real Madrid affronte Malaga",
+          "summary": "Real Madrid a remporté ses deux premières rencontres sous les ordres de José Mourinho et dispute son troisième match face à Malaga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "LIVE! Drittes Spiel unter Mourinho: Gewinnt Real auch gegen Malaga?",
-          "summary": "In den ersten zwei Spielen unter Trainer-Rückkehrer José Mourinho feierte Real Madrid zwei Siege. Am 3.",
-          "needs_translation": true
+          "title": "Tercer partido con Mourinho: Real Madrid se enfrenta al Malaga",
+          "summary": "Real Madrid ha ganado sus dos primeros encuentros con el técnico José Mourinho y afronta su tercer partido ante el Malaga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "LIVE! Drittes Spiel unter Mourinho: Gewinnt Real auch gegen Malaga?",
-          "summary": "In den ersten zwei Spielen unter Trainer-Rückkehrer José Mourinho feierte Real Madrid zwei Siege. Am 3.",
-          "needs_translation": true
+          "title": "المباراة الثالثة بقيادة مورينيو: ريال مدريد يواجه مالقا",
+          "summary": "حقق ريال مدريد الفوز في أول مباراتين له تحت قيادة المدرب العائد جوزيه مورينيو، ويخوض مباراته الثالثة أمام مالقا.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/real-madrid-gegen-malaga-2026-la-liga-5223820/spielbericht#omrss",
@@ -2161,7 +2319,12 @@
           "url": "https://www.kicker.de/real-madrid-gegen-malaga-2026-la-liga-5223820/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e7fe79e807d9",
@@ -2307,7 +2470,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/ckg8x0ex8gno?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "eac07b87de94",
@@ -2354,7 +2522,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Nice-avec-axel-witsel-et-nathan-ngoumou-titulaires-elye-wahi-sur-le-banc-face-au-paris-fc-en-ligue-1/1714686#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "20daf3791436",
@@ -2363,23 +2536,27 @@
       "i18n": {
         "es": {
           "title": "Revolución en el Chelsea",
-          "summary": "El guardameta argentino Emiliano 'Dibu' Martínez será titular este domingo contra el Brighton & Hove Albion después de que se confirmara esta mañana su fichaje por el Chelsea , mientras que Robert Sánchez , que no ha entrado en la convocatoria, busca equipo.",
-          "needs_translation": false
+          "summary": "Tras confirmarse su fichaje por el Chelsea, Emiliano 'Dibu' Martínez será titular este domingo ante el Brighton & Hove Albion. Fuera de la convocatoria, Robert Sánchez busca equipo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Revolución en el Chelsea",
-          "summary": "El guardameta argentino Emiliano 'Dibu' Martínez será titular este domingo contra el Brighton & Hove Albion después de que se confirmara esta mañana su fichaje por el Chelsea , mientras que Robert Sánchez , que no ha entrado en la convocatoria, busca equipo.",
-          "needs_translation": true
+          "title": "Revolution at Chelsea",
+          "summary": "Following his confirmed transfer to Chelsea, Emiliano 'Dibu' Martínez will start this Sunday against Brighton & Hove Albion. Left out of the squad, Robert Sánchez is seeking a new club.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Revolución en el Chelsea",
-          "summary": "El guardameta argentino Emiliano 'Dibu' Martínez será titular este domingo contra el Brighton & Hove Albion después de que se confirmara esta mañana su fichaje por el Chelsea , mientras que Robert Sánchez , que no ha entrado en la convocatoria, busca equipo.",
-          "needs_translation": true
+          "title": "Révolution à Chelsea",
+          "summary": "Tout juste recruté par Chelsea, Emiliano 'Dibu' Martínez sera titulaire ce dimanche contre Brighton & Hove Albion. Non convoqué, Robert Sánchez cherche un point de chute.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Revolución en el Chelsea",
-          "summary": "El guardameta argentino Emiliano 'Dibu' Martínez será titular este domingo contra el Brighton & Hove Albion después de que se confirmara esta mañana su fichaje por el Chelsea , mientras que Robert Sánchez , que no ha entrado en la convocatoria, busca equipo.",
-          "needs_translation": true
+          "title": "ثورة في تشيلسي",
+          "summary": "سيبدأ الحارس الأرجنتيني إيميليانو مارتينيز أساسياً هذا الأحد ضد برايتون أند هوف ألبيون بعد انضمامه إلى تشيلسي، بينما يبحث روبرت سانشيز عن نادٍ جديد بعد استبعاده.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260830/1004221275/revolucion-chelsea-dibu-titular-llegar-robert-sanchez-busca-equipo-enzo-fernandez-vez-fuera.html",
@@ -2401,7 +2578,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260830/1004221275/revolucion-chelsea-dibu-titular-llegar-robert-sanchez-busca-equipo-enzo-fernandez-vez-fuera.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     }
   ]
 }
