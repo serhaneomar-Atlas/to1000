@@ -17,26 +17,27 @@
       "i18n": {
         "fr": {
           "title": "Ligue 1 : première défaite pour l’OM de Genesio, insipide face à Monaco qui s’installe en tête",
-          "summary": "L’ASM a dominé le choc contre l’OM (2-0), ce dimanche, en clôture de la 2e journée de la Ligue 1.",
-          "needs_translation": false
+          "summary": "Monaco s'est imposé 2-0 contre l’OM ce dimanche en clôture de la 2e journée de Ligue 1, s'emparant ainsi de la tête du championnat.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Ligue 1: first defeat for OM of Genesio, insipid against Monaco which settles in the lead",
-          "summary": "ASM dominated the clash against OM (2-0), this Sunday, at the end of the 2nd day of Ligue 1.",
+          "title": "Ligue 1: First defeat for OM de Genesio, lacklustre against Monaco who take top spot",
+          "summary": "Monaco defeated OM 2-0 on Sunday in the final fixture of Ligue 1 round 2 to move to the top of the table.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ligue 1: primera derrota para el OM de Genesio, insípido ante el Mónaco que se instala en cabeza",
-          "summary": "El ASM dominó el choque contra el OM (2-0), este domingo, al cierre de la segunda jornada de la Ligue 1.",
+          "title": "Ligue 1: primera derrota para el OM de Genesio, insípido ante un Monaco que se coloca líder",
+          "summary": "Monaco venció 2-0 a OM este domingo en el cierre de la 2.ª jornada de la Ligue 1 y se colocó en lo más alto de la clasificación.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "دوري الدرجة الأولى: أول هزيمة لأوم أوف جينيسيو، غير مشوق ضد موناكو التي تستقر في الصدارة",
-          "summary": "هيمنت ASM على الاشتباك ضد OM (2-0)، هذا الأحد، في نهاية اليوم الثاني من دوري الدرجة الأولى.",
+          "title": "الدوري الفرنسي: أول هزيمة لأولمبيك مارسيليا بقيادة جينيسيو أمام موناكو الذي ينفرد بالصدارة",
+          "summary": "تغلب موناكو على أولمبيك مارسيليا بهدفين دون رد، يوم الأحد، في ختام الجولة الثانية من الدوري الفرنسي ليعتلي صدارة جدول الترتيب.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-1/ligue-1-pas-question-d-etre-inquiet-pour-l-om-dedramatise-genesio-apres-la-defaite-a-monaco-20260830",
@@ -64,7 +65,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-1/ligue-1-premiere-defaite-pour-l-om-de-genesio-insipide-a-monaco-20260830"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4dc2c7b7b156",
@@ -73,26 +79,27 @@
       "i18n": {
         "es": {
           "title": "La receta de Mourinho: rotaciones y gestión",
-          "summary": "El Real Madrid pasó el primer partido de la temporada con dificultad, salvado por Carlos Espí, y caminó con viento a favor y superioridad en el estadio Bernabéu. En la segunda mitad ante la Real Sociedad y los 90 minutos contra el Málaga.",
-          "needs_translation": false
+          "summary": "Tras un inicio de temporada difícil donde fue salvado por Carlos Espí, el Real Madrid impuso su superioridad en el Bernabéu en la segunda mitad ante la Real Sociedad y frente al Málaga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "Mourinho's recipe: rotations and management",
-          "summary": "Real Madrid spent the first game of the season with difficulty, saved by Carlos Espí, and walked with a downwind and superiority in the Bernabéu stadium. In the second half against Real Sociedad and the 90 minutes against Málaga.",
+          "summary": "After a difficult start to the season salvaged by Carlos Espí, Real Madrid dominated at the Bernabéu in the second half against Real Sociedad and throughout the clash with Málaga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La recette de Mourinho : rotations et gestion",
-          "summary": "Le Real Madrid a passé le premier match de la saison avec difficulté, sauvé par Carlos Espí, et a marché avec le vent en sa faveur et sa supériorité au stade Bernabéu. En seconde mi-temps contre la Real Sociedad et les 90 minutes contre Malaga.",
+          "title": "La recette de Mourinho : rotations et gestion",
+          "summary": "Après une entame de saison difficile sauvée par Carlos Espí, le Real Madrid a affirmé sa supériorité au Bernabéu lors de la seconde période contre la Real Sociedad et face à Málaga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "وصفة مورينيو: التناوب والإدارة",
-          "summary": "قضى ريال مدريد المباراة الأولى من الموسم بصعوبة، أنقذها كارلوس إسبي، وسار في اتجاه الريح والتفوق في ملعب برنابيو. في الشوط الثاني ضد ريال سوسيداد و 90 دقيقة ضد مالقة.",
+          "title": "وصفة مورينيو: المداورة وإدارة الفريق",
+          "summary": "بعد بداية موسم صعبة أنقذها كارلوس إسبي، فرض ريال مدريد تفوقه في ملعب البرنابيو خلال الشوط الثاني أمام ريال سوسيداد وطوال مواجهة ملقا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260831/1004221540/receta-mourinho-rotaciones-gestion.html",
@@ -114,7 +121,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260831/1004221540/receta-mourinho-rotaciones-gestion.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "082ff62a5012",
@@ -173,26 +185,27 @@
       "i18n": {
         "es": {
           "title": "\"Vale, perfecto. Cancelo Penalti\"",
-          "summary": "Pese a la contundente victoria 4-0 del Real Madrid al Málaga , el encuentro también necesitó de la intervención del VAR .",
-          "needs_translation": false
+          "summary": "Pese a la victoria por 4-0 del Real Madrid sobre el Málaga, el encuentro requirió la intervención del VAR para anular un penalti.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "\"Okay, perfect. Cancelo Penalti\"",
-          "summary": "Despite Real Madrid's resounding 4-0 victory over Málaga , the match also required the intervention of the VAR .",
+          "title": "\"Okay, perfect. I cancel the penalty\"",
+          "summary": "Despite Real Madrid's 4-0 victory over Málaga, the match required VAR intervention to overturn a penalty.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "\"D'accord, parfait. Cancelo Penalti\"",
-          "summary": "Malgré la victoire écrasante 4-0 du Real Madrid à Malaga , la rencontre a également nécessité l'intervention du VAR .",
+          "title": "« D'accord, parfait. J'annule le penalty »",
+          "summary": "Malgré la large victoire 4-0 du Real Madrid face à Málaga, la rencontre a nécessité l'intervention de la VAR pour annuler un penalty.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"حسنًا، رائع. كانسيلو بينالتي\"",
-          "summary": "على الرغم من فوز ريال مدريد المدوي 4-0 على مالقة ، إلا أن المباراة تطلبت أيضًا تدخل VAR .",
+          "title": "«حسناً، ممتاز. ألغي ركلة الجزاء»",
+          "summary": "رغم فوز ريال مدريد بنتيجة 4-0 على مالاغا، شهدت المباراة تدخل تقنية الفيديو المساعد لإلغاء ركلة جزاء.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260831/1004221536/vale-perfecto-cancelo-penalti.html",
@@ -214,7 +227,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260831/1004221536/vale-perfecto-cancelo-penalti.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "43aa01ca84c8",
@@ -223,26 +241,27 @@
       "i18n": {
         "es": {
           "title": "Gabriel Jesus y el reto azulgrana del '9' brasileño",
-          "summary": "El FC Barcelona incorporará a Gabriel Jesus (29 años) para apuntalar la plantilla y el atacante ampliará la historia de delanteros centros brasileños que han vestido de azulgrana.",
-          "needs_translation": false
+          "summary": "El FC Barcelona incorporará al delantero Gabriel Jesus (29 años) para reforzar su plantilla y continuar la tradición de atacantes brasileños en el club.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Gabriel Jesus and the Barça challenge of the Brazilian '9'",
-          "summary": "FC Barcelona will incorporate Gabriel Jesus (29 years old) to shore up the squad and the attacker will expand the history of Brazilian centre-forwards who have worn blaugrana.",
+          "title": "Gabriel Jesus and the Blaugrana challenge of the Brazilian '9'",
+          "summary": "FC Barcelona are set to sign 29-year-old forward Gabriel Jesus to bolster their squad, adding to the club's history of Brazilian central strikers.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Gabriel Jesus et le défi blaugrana du '9' brésilien",
-          "summary": "Le FC Barcelone intégrera Gabriel Jesus (29 ans) pour soutenir l'effectif et l'attaquant élargira l'histoire des avant-centres brésiliens qui se sont habillés en blaugrana.",
+          "title": "Gabriel Jesus et le défi blaugrana du « 9 » brésilien",
+          "summary": "Le FC Barcelona va recruter l'attaquant brésilien Gabriel Jesus (29 ans) afin de renforcer son effectif et prolonger la lignée des avant-centres auriverdes au club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "غابرييل يسوع وتحدي برشلونة للبرازيلي '9'",
-          "summary": "سيضم نادي برشلونة غابرييل جيسوس (29 عامًا) لدعم الفريق وسيوسع المهاجم تاريخ مهاجمين المنتصف البرازيليين الذين ارتدوا بلوجرانا.",
+          "title": "غابرييل خيسوس وتحدي الرقم 9 البرازيلي في برشلونة",
+          "summary": "يستعد نادي برشلونة للتعاقد مع المهاجم البرازيلي غابرييل خيسوس (29 عاماً) لتعزيز خط هجومه ومواصلة مسيرة المهاجمين البرازيليين في النادي الكتالوني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221526/gabriel-jesus-reto-azulgrana-9-brasileno.html",
@@ -264,7 +283,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221526/gabriel-jesus-reto-azulgrana-9-brasileno.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e022a553ca6d",
@@ -273,26 +297,27 @@
       "i18n": {
         "es": {
           "title": "El pasaporte que truncó el fichaje de Gabriel Jesus por el Real Madrid",
-          "summary": "Verano de 2022, Gabriel Jesus quería irse del Manchester City y fue ofrecido a varios equipos. Entre ellos, el Atlético y el Real Madri d.",
-          "needs_translation": false
+          "summary": "En el verano de 2022, Gabriel Jesus quería salir del Manchester City y fue ofrecido al Atlético y al Real Madrid, pero un problema con el pasaporte impidió su traspaso al club blanco.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The passport that truncated the signing of Gabriel Jesus for Real Madrid",
-          "summary": "Summer 2022, Gabriel Jesus wanted to leave Manchester City and was offered to several teams. Among them, Atletico and Real Madri d.",
+          "title": "The passport issue that thwarted Gabriel Jesus's transfer to Real Madrid",
+          "summary": "In the summer of 2022, Gabriel Jesus wanted to leave Manchester City and was offered to Atlético and Real Madrid, but a passport issue prevented his transfer to the Spanish club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le passeport qui a tronqué le transfert de Gabriel Jesus au Real Madrid",
-          "summary": "Été 2022, Gabriel Jesus voulait quitter Manchester City et a été offert à plusieurs équipes. Parmi eux, l'Atlético et le Real Madri d.",
+          "title": "Le passeport qui a fait capoter le transfert de Gabriel Jesus au Real Madrid",
+          "summary": "À l'été 2022, Gabriel Jesus souhaitait quitter Manchester City et a été proposé à l'Atlético et au Real Madrid, mais un problème de passeport a empêché sa signature chez les Merengues.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "جواز السفر الذي قطع توقيع غابرييل جيسوس لريال مدريد",
-          "summary": "في صيف 2022، أراد غابرييل جيسوس مغادرة مانشستر سيتي وتم عرضه على العديد من الفرق. من بينهم، أتلتيكو وريال مادري.",
+          "title": "جواز السفر الذي أفسد انتقال غابرييل جيسوس إلى ريال مدريد",
+          "summary": "في صيف 2022، رغب غابرييل جيسوس في مغادرة مانشستر سيتي وعُرض على أتلتيكو مدريد وريال مدريد، قبل أن تتعثر الصفقة مع النادي الملكي بسبب أزمة جواز السفر.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260831/1004221537/pasaporte-trunco-fichaje-gabriel-jesus-real-madrid.html",
@@ -314,7 +339,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260831/1004221537/pasaporte-trunco-fichaje-gabriel-jesus-real-madrid.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6d7dc2bf023e",
@@ -322,33 +352,54 @@
       "summary": "Am Ende machte es Manchester United deutlich gegen Ipswich Town. Das zwischenzeitliche 2:1 löste allerdings Kontroversen aus, nachdem Harry Maguire zuvor ein Handspiel begangen hatte.",
       "i18n": {
         "de": {
-          "title": "Maguire-Handspiel im Vorfeld: Warum ManUniteds zweiter Treffer trotzdem zählte",
-          "summary": "Am Ende machte es Manchester United deutlich gegen Ipswich Town. Das zwischenzeitliche 2:1 löste allerdings Kontroversen aus, nachdem Harry Maguire zuvor ein Handspiel begangen hatte.",
-          "needs_translation": false
+          "title": "ManUnited schlägt Ipswich trotz Handspiel-Kontroverse um Maguire",
+          "summary": "Manchester United hat sich gegen Ipswich Town durchgesetzt, während das zwischenzeitliche 2:1 nach einem Handspiel von Harry Maguire für Diskussionen sorgte.",
+          "body": [
+            "Obwohl die Red Devils die Partie letztlich klar für sich entschieden, stand der zweite Treffer im Mittelpunkt der Debatten. Trotz eines vorangegangenen Handspiels des englischen Verteidigers erkannten die Unparteiischen das Tor an und brachten United damit auf die Siegerstraße."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Maguire Handball Ahead: Why ManUnited's Second Hit Still Counted",
-          "summary": "In the end, Manchester United made it clear against Ipswich Town. However, the interim 2:1 sparked controversy after Harry Maguire had previously committed a handball.",
+          "title": "Man United beat Ipswich despite Maguire handball controversy",
+          "summary": "Manchester United secured a win against Ipswich Town, though their go-ahead goal for 2-1 sparked debate following a handball by Harry Maguire.",
+          "body": [
+            "Although the Red Devils eventually sealed a comfortable victory, the second goal dominated the post-match talk. Despite an earlier handball by the English defender, the officials allowed the goal to stand, steering United firmly toward victory."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Jeu de main Maguire en amont : pourquoi le deuxième coup de ManUnited a quand même compté",
-          "summary": "En fin de compte, Manchester United l'a clairement fait contre Ipswich Town. Cependant, l'intervalle de 2:1 a suscité la controverse après que Harry Maguire ait déjà commis un jeu de main.",
+          "title": "Manchester United bat Ipswich malgré une polémique sur une main de Maguire",
+          "summary": "Manchester United a pris le dessus sur Ipswich Town, mais le but du 2-1 accordé après une main de Harry Maguire a fait polémique.",
+          "body": [
+            "Même si les Red Devils ont fini par sceller un succès net, le deuxième but s'est retrouvé au cœur des contestations. Malgré la main préalable du défenseur anglais, le corps arbitral a validé la réalisation, ouvrant grand la voie de la victoire aux Mancuniens."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Juego de manos de Maguire por adelantado: por qué el segundo gol de ManUnited contó de todos modos",
-          "summary": "Al final, el Manchester United lo dejó claro contra el Ipswich Town. Sin embargo, el 2-1 interino provocó controversia después de que Harry Maguire cometiera previamente un juego de manos.",
+          "title": "El Manchester United vence al Ipswich en medio de la polémica con Maguire",
+          "summary": "El Manchester United se impuso al Ipswich Town en un duelo donde el 2-1 provisional generó gran controversia por una mano de Harry Maguire.",
+          "body": [
+            "Aunque los Red Devils terminaron llevándose el triunfo con claridad, el segundo tanto centró todos los debates. Pese a la mano previa del defensa inglés, los colegiados dieron por válido el gol que encarriló la victoria del United."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Maguire Handball Ahead: Why ManUnited's second hit still counted",
-          "summary": "في النهاية، أوضح مانشستر يونايتد الأمر أمام إيبسويتش تاون. ومع ذلك، أثارت النتيجة المؤقتة 2:1 الجدل بعد أن ارتكب هاري ماغواير سابقًا كرة يد.",
+          "title": "مانشستر يونايتد يهزم إيبسويتش تاون وسط جدل حول لمسة يد ماغواير",
+          "summary": "تغلب مانشستر يونايتد على إيبسويتش تاون في مباراة أثار خلالها هدف التقدم 2-1 جدلًا واسعًا بسبب لمسة يد على هاري ماغواير.",
+          "body": [
+            "ورغم أن الشياطين الحمر حسموا المواجهة بانتصار صريح، إلا أن الهدف الثاني تصدر المشهد والنقاشات؛ إذ أقر حكام اللقاء صحة الهدف رغم لمسة اليد السابقة للمدافع الإنجليزي، ليفتح ذلك طريق الفوز أمام يونايتد."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.kicker.de/maguire-handspiel-im-vorfeld-warum-manuniteds-zweiter-treffer-trotzdem-zaehlte-1248350/artikel#omrss",
@@ -370,7 +421,20 @@
           "url": "https://www.kicker.de/maguire-handspiel-im-vorfeld-warum-manuniteds-zweiter-treffer-trotzdem-zaehlte-1248350/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-31T11:39:10+00:00"
+        }
+      }
     },
     {
       "id": "5cfd3c4cec3a",
@@ -379,26 +443,27 @@
       "i18n": {
         "es": {
           "title": "Revuelo en el PSG con Lucas Digne",
-          "summary": "Lucas Digne no ha empezado con buen pie su primera temporada en el PSG .",
-          "needs_translation": false
+          "summary": "Lucas Digne ha tenido un inicio complicado en su primera temporada con el PSG.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "PSG stir with Lucas Digne",
-          "summary": "Lucas Digne has not started his first season at PSG on the right foot.",
+          "title": "Stir at PSG over Lucas Digne",
+          "summary": "Lucas Digne has experienced a difficult start to his debut season at PSG.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Coup de tonnerre au PSG avec Lucas Digne",
-          "summary": "Lucas Digne n'a pas démarré du bon pied sa première saison au PSG .",
+          "title": "Remue-ménage au PSG avec Lucas Digne",
+          "summary": "Lucas Digne connaît des débuts difficiles pour sa première saison sous les couleurs du PSG.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تحريك PSG مع Lucas Digne",
-          "summary": "لم يبدأ لوكاس دين موسمه الأول في باريس سان جيرمان بالقدم اليمنى.",
+          "title": "جدل في باريس سان جيرمان بسبب لوكاس ديني",
+          "summary": "يمر لوكاس ديني ببداية صعبة ومعقدة خلال موسمه الأول مع نادي باريس سان جيرمان.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/ligue-1/20260831/1004221528/revuelo-psg-lucas-digne.html",
@@ -420,7 +485,12 @@
           "url": "https://www.mundodeportivo.com/futbol/ligue-1/20260831/1004221528/revuelo-psg-lucas-digne.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "cfa2719cee78",
@@ -476,7 +546,12 @@
           "url": "https://www.kicker.de/grosses-grosses-lob-terzic-nach-erstem-sieg-mit-bilbao-erleichtert-1248374/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "cd604cac2116",
@@ -532,7 +607,12 @@
           "url": "https://www.kicker.de/zeitzeugen-und-ki-konietzkas-verlorenes-tor-wird-sichtbar-gemacht-1246881/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8e20286c95ad",
@@ -541,26 +621,27 @@
       "i18n": {
         "es": {
           "title": "El Barça aún no renuncia al central del futuro que avala Flick",
-          "summary": "A menos de 48 horas para que cierre el mercado de fichajes (concluye este martes a las 00:00 horas) el Barça sigue peleando para reforzarse con el central del futuro que avala Hansi Flick .",
-          "needs_translation": false
+          "summary": "A menos de 48 horas para el cierre del mercado de fichajes, el Barça sigue trabajando para incorporar a un defensa central avalado por Hansi Flick.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Barça has not yet given up on the central defender of the future endorsed by Flick",
-          "summary": "Less than 48 hours before the transfer market closes (it ends this Tuesday at 00:00 hours) Barça continues to fight to strengthen itself with the central defender of the future endorsed by Hansi Flick .",
+          "title": "Barça have not given up on the future centre-back backed by Flick",
+          "summary": "With under 48 hours left before the transfer window closes, Barça are still pushing to sign a promising centre-back endorsed by Hansi Flick.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le Barça ne renonce pas encore au central du futur que soutient Flick",
-          "summary": "À moins de 48 heures de la clôture du marché des transferts (qui se termine ce mardi à 00h00), le Barça continue de se battre pour se renforcer avec le central du futur que Hansi Flick approuve.",
+          "title": "Le Barça ne renonce pas encore au défenseur central d'avenir validé par Flick",
+          "summary": "À moins de 48 heures de la fermeture du mercato, le Barça s'active toujours pour recruter un défenseur central prometteur recommandé par Hansi Flick.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "لم يتخل برشلونة بعد عن المدافع المركزي عن المستقبل الذي أقره فليك",
-          "summary": "قبل أقل من 48 ساعة من إغلاق سوق الانتقالات (ينتهي هذا الثلاثاء الساعة 00:00) يواصل برشلونة الكفاح لتعزيز نفسه مع المدافع المركزي عن المستقبل الذي أقره هانسي فليك .",
+          "title": "برشلونة لا يستسلم بشأن التعاقد مع مدافع المستقبل المفضل لدى فليك",
+          "summary": "يواصل برشلونة مساعيه لضم مدافع واعد يحظى بتأييد المدرب هانسي فليك، وذلك قبل أقل من 48 ساعة على إغلاق سوق الانتقالات.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221487/barca-aun-no-renuncia-central-futuro-avala-flick.html",
@@ -582,7 +663,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221487/barca-aun-no-renuncia-central-futuro-avala-flick.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "94d676d917ea",
@@ -591,26 +677,27 @@
       "i18n": {
         "es": {
           "title": "Oficial: Benzema rescinde su contrato con Al-Hilal y es agente libre",
-          "summary": "Karim Benzema y el Al-Hilal han rescindido el contrato del delantero francés, que se marcha medio año después de llegar y que ahora debe tomar una decisión importante sobre su futuro.",
-          "needs_translation": false
+          "summary": "Karim Benzema y Al-Hilal han rescindido su contrato de mutuo acuerdo seis meses después de su llegada. El delantero francés es ahora agente libre.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Officer: Benzema terminates his contract with Al-Hilal and is a free agent",
-          "summary": "Karim Benzema and Al-Hilal have terminated the contract of the French striker, who is leaving half a year after arriving and who must now make an important decision about his future.",
+          "title": "Official: Benzema terminates his contract with Al-Hilal and becomes a free agent",
+          "summary": "Karim Benzema and Al-Hilal have mutually agreed to terminate the French striker's contract six months after his arrival, making him a free agent.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Officiel : Benzema résilie son contrat avec Al-Hilal et est agent libre",
-          "summary": "Karim Benzema et Al-Hilal ont résilié le contrat de l'attaquant français, qui part six mois après son arrivée et qui doit maintenant prendre une décision importante sur son avenir.",
+          "title": "Officiel : Benzema résilie son contrat avec Al-Hilal et se retrouve libre",
+          "summary": "Karim Benzema a résilié son contrat avec Al-Hilal six mois seulement après son arrivée. L'attaquant français est désormais libre de tout engagement.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الضابط: بنزيمة ينهي عقده مع الهلال وهو وكيل حر",
-          "summary": "أنهى كريم بنزيمة والهلال عقد المهاجم الفرنسي الذي سيغادر بعد نصف عام من وصوله والذي يجب عليه الآن اتخاذ قرار مهم بشأن مستقبله.",
+          "title": "رسمياً: بنزيما يفسخ عقده مع الهلال ويصبح لاعباً حراً",
+          "summary": "فسخ المهاجم الفرنسي كريم بنزيما عقده مع نادي الهلال بعد ستة أشهر فقط من انضمامه، ليصبح لاعباً حراً في سوق الانتقالات.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/internacional/20260831/1004221511/oficial-benzema-rescinde-contrato-hilal-agente-libre.html",
@@ -632,7 +719,12 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20260831/1004221511/oficial-benzema-rescinde-contrato-hilal-agente-libre.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6bf0281faaf5",
@@ -641,23 +733,27 @@
       "i18n": {
         "es": {
           "title": "Árbitro debutante en el Spotify Camp Nou para el Barça-Rayo",
-          "summary": "Es realmente curioso los datos que acompañan al colegiado que pitará esta noche (21.30 horas/DAZN) en el Spotify Camp Nou el duelo del FC Barcelona ante el Rayo Vallecano . Se trata del colegiado afincado en el colegio extremeño, Francisco José Hernández Maeso .",
-          "needs_translation": false
+          "summary": "Francisco José Hernández Maeso dirigirá por primera vez un partido en el Spotify Camp Nou en el encuentro entre el FC Barcelona y el Rayo Vallecano.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Árbitro debutante en el Spotify Camp Nou para el Barça-Rayo",
-          "summary": "Es realmente curioso los datos que acompañan al colegiado que pitará esta noche (21.30 horas/DAZN) en el Spotify Camp Nou el duelo del FC Barcelona ante el Rayo Vallecano . Se trata del colegiado afincado en el colegio extremeño, Francisco José Hernández Maeso .",
-          "needs_translation": true
+          "title": "Debut referee at Spotify Camp Nou for Barça-Rayo",
+          "summary": "Francisco José Hernández Maeso will officiate for the first time at the Spotify Camp Nou in the clash between FC Barcelona and Rayo Vallecano.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Árbitro debutante en el Spotify Camp Nou para el Barça-Rayo",
-          "summary": "Es realmente curioso los datos que acompañan al colegiado que pitará esta noche (21.30 horas/DAZN) en el Spotify Camp Nou el duelo del FC Barcelona ante el Rayo Vallecano . Se trata del colegiado afincado en el colegio extremeño, Francisco José Hernández Maeso .",
-          "needs_translation": true
+          "title": "Un arbitre débutant au Spotify Camp Nou pour Barça-Rayo",
+          "summary": "Francisco José Hernández Maeso arbitrera pour la première fois au Spotify Camp Nou lors du match entre le FC Barcelona et le Rayo Vallecano.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Árbitro debutante en el Spotify Camp Nou para el Barça-Rayo",
-          "summary": "Es realmente curioso los datos que acompañan al colegiado que pitará esta noche (21.30 horas/DAZN) en el Spotify Camp Nou el duelo del FC Barcelona ante el Rayo Vallecano . Se trata del colegiado afincado en el colegio extremeño, Francisco José Hernández Maeso .",
-          "needs_translation": true
+          "title": "حكم يدير مباراته الأولى في سبوتيفاي كامب نو لمواجهة برشلونة ورايو فاييكانو",
+          "summary": "يقود الحكم فرانسيسكو خوسيه هيرنانديز مايسو أول مباراة له في ملعب سبوتيفاي كامب نو خلال مواجهة برشلونة ورايو فاييكانو.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221508/arbitro-debutante-spotify-camp-nou-barca-rayo.html",
@@ -679,7 +775,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221508/arbitro-debutante-spotify-camp-nou-barca-rayo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "06dfdb7c9aca",
@@ -735,23 +836,27 @@
       "i18n": {
         "es": {
           "title": "El Teruel quiere plantar cara al Real Madrid Castilla",
-          "summary": "El Real Madrid Castilla debuta esta noche (21.15 horas) en la Liga enfrentándose en el Estadio de Pinilla ante el equipo local, el Teruel. Es un duelo entre dos equipos con muchas caras nuevas en esta Primera Federación.",
-          "needs_translation": false
+          "summary": "El Real Madrid Castilla debuta esta noche (21:15) en Primera Federación visitando al Teruel en el Estadio de Pinilla, en un encuentro marcado por la renovación de ambas plantillas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Teruel quiere plantar cara al Real Madrid Castilla",
-          "summary": "El Real Madrid Castilla debuta esta noche (21.15 horas) en la Liga enfrentándose en el Estadio de Pinilla ante el equipo local, el Teruel. Es un duelo entre dos equipos con muchas caras nuevas en esta Primera Federación.",
-          "needs_translation": true
+          "title": "Teruel look to stand up to Real Madrid Castilla",
+          "summary": "Real Madrid Castilla make their Primera Federación debut tonight at 21:15 against Teruel at the Estadio de Pinilla, with both squads featuring numerous new faces.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El Teruel quiere plantar cara al Real Madrid Castilla",
-          "summary": "El Real Madrid Castilla debuta esta noche (21.15 horas) en la Liga enfrentándose en el Estadio de Pinilla ante el equipo local, el Teruel. Es un duelo entre dos equipos con muchas caras nuevas en esta Primera Federación.",
-          "needs_translation": true
+          "title": "Le Teruel veut tenir tête au Real Madrid Castilla",
+          "summary": "Le Real Madrid Castilla fait ses débuts ce soir à 21h15 face au Teruel au Estadio de Pinilla, dans une rencontre de Primera Federación opposant deux effectifs largement renouvelés.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Teruel quiere plantar cara al Real Madrid Castilla",
-          "summary": "El Real Madrid Castilla debuta esta noche (21.15 horas) en la Liga enfrentándose en el Estadio de Pinilla ante el equipo local, el Teruel. Es un duelo entre dos equipos con muchas caras nuevas en esta Primera Federación.",
-          "needs_translation": true
+          "title": "تيرويل يسعى للصمود أمام ريال مدريد كاستيا",
+          "summary": "يستهل ريال مدريد كاستيا مشواره الليلة في الدوري بمواجهة مضيفه تيرويل على ملعب بينيا، في لقاء يشهد حضور العديد من الوجوه الجديدة في صفوف الفريقين.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260831/1004221294/real-madrid-castilla-estrena-liga-teruel.html",
@@ -779,7 +884,12 @@
           "url": "https://www.mundodeportivo.com/futbol/futbol-catala/20260831/1004221478/teruel-quiere-plantar-cara-real-madrid-castilla.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2b8b0983c850",
@@ -788,23 +898,27 @@
       "i18n": {
         "es": {
           "title": "Dani Carvajal, un fichaje de lujo sin fecha de caducidad",
-          "summary": "Mañana a las 23:59 acaba el mercado estival de fichajes para los clubs de Primera y Segunda división. A partir de ese momento los equipos no podrán inscribir futbolistas hasta el año 2027.",
-          "needs_translation": false
+          "summary": "El mercado estival de fichajes finaliza mañana a las 23:59 para los clubes de Primera y Segunda división. Desde ese momento, los equipos no podrán inscribir nuevos futbolistas hasta 2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Dani Carvajal, un fichaje de lujo sin fecha de caducidad",
-          "summary": "Mañana a las 23:59 acaba el mercado estival de fichajes para los clubs de Primera y Segunda división. A partir de ese momento los equipos no podrán inscribir futbolistas hasta el año 2027.",
-          "needs_translation": true
+          "title": "Dani Carvajal, a luxury signing with no expiration date",
+          "summary": "The summer transfer window closes tomorrow at 23:59 for Primera and Segunda clubs. After that deadline, teams will not be able to register any players until 2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Dani Carvajal, un fichaje de lujo sin fecha de caducidad",
-          "summary": "Mañana a las 23:59 acaba el mercado estival de fichajes para los clubs de Primera y Segunda división. A partir de ese momento los equipos no podrán inscribir futbolistas hasta el año 2027.",
-          "needs_translation": true
+          "title": "Dani Carvajal, une recrue de luxe sans date d'expiration",
+          "summary": "Le mercato estival se clôture demain à 23h59 pour les clubs de Primera et Segunda. Après cette échéance, les équipes ne pourront plus inscrire de joueurs jusqu'en 2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Dani Carvajal, un fichaje de lujo sin fecha de caducidad",
-          "summary": "Mañana a las 23:59 acaba el mercado estival de fichajes para los clubs de Primera y Segunda división. A partir de ese momento los equipos no podrán inscribir futbolistas hasta el año 2027.",
-          "needs_translation": true
+          "title": "داني كارفاخال، صفقة فاخرة بلا تاريخ انتهاء",
+          "summary": "يُغلق سوق الانتقالات الصيفي لأندية الدرجتين الأولى والثانية في إسبانيا غدًا عند الساعة 23:59، ولن تتمكن الفرق بعد ذلك من تسجيل أي لاعب حتى عام 2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260831/1004221499/dani-carvajal-fichaje-lujo-fecha-caducidad.html",
@@ -826,7 +940,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260831/1004221499/dani-carvajal-fichaje-lujo-fecha-caducidad.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "92bbc1bb06a8",
@@ -981,23 +1100,27 @@
       "i18n": {
         "es": {
           "title": "No era una rabieta, Athletic",
-          "summary": "Terzic llevó a cabo en Balaídos una rotación masiva. Sólo cuatro de los titulares del pasado jueves frente al Barça repitieron ayer en el once rojiblanco: Unai Simón, el gran destacado en el Camp Nou, Laporte, Sancet e Iñaki Williams.",
-          "needs_translation": false
+          "summary": "Terzic aplicó una rotación masiva en Balaídos frente a su anterior once ante el Barça. Sólo Unai Simón, Laporte, Sancet e Iñaki Williams repitieron como titulares.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "No era una rabieta, Athletic",
-          "summary": "Terzic llevó a cabo en Balaídos una rotación masiva. Sólo cuatro de los titulares del pasado jueves frente al Barça repitieron ayer en el once rojiblanco: Unai Simón, el gran destacado en el Camp Nou, Laporte, Sancet e Iñaki Williams.",
-          "needs_translation": true
+          "title": "It wasn't a tantrum, Athletic",
+          "summary": "Terzic made massive squad rotations at Balaídos. Only four starters from the match against Barça remained in the starting lineup: Unai Simón, Laporte, Sancet, and Iñaki Williams.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "No era una rabieta, Athletic",
-          "summary": "Terzic llevó a cabo en Balaídos una rotación masiva. Sólo cuatro de los titulares del pasado jueves frente al Barça repitieron ayer en el once rojiblanco: Unai Simón, el gran destacado en el Camp Nou, Laporte, Sancet e Iñaki Williams.",
-          "needs_translation": true
+          "title": "Ce n'était pas un coup de tête, Athletic",
+          "summary": "Terzic a procédé à une large rotation d'effectif à Balaídos. Seuls quatre titulaires du match contre le Barça ont débuté : Unai Simón, Laporte, Sancet et Iñaki Williams.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "No era una rabieta, Athletic",
-          "summary": "Terzic llevó a cabo en Balaídos una rotación masiva. Sólo cuatro de los titulares del pasado jueves frente al Barça repitieron ayer en el once rojiblanco: Unai Simón, el gran destacado en el Camp Nou, Laporte, Sancet e Iñaki Williams.",
-          "needs_translation": true
+          "title": "لم تكن مجرد نوبة غضب، أتلتيك",
+          "summary": "أجرى تيرزيتش تدويرًا واسعًا في تشكيلة فريقه في بالايدوس، حيث احتفظ بأربعة لاعبين أساسيين فقط من مواجهة برشلونة: أوناي سيمون ولابورت وسانسيت وإينياكي ويليامز.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260831/1004221485/no-rabieta-athletic.html",
@@ -1019,7 +1142,12 @@
           "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260831/1004221485/no-rabieta-athletic.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f5f15f9c80c8",
@@ -1028,23 +1156,27 @@
       "i18n": {
         "es": {
           "title": "\"Rosalia ha estado en muchos momentos de mi carrera\"",
-          "summary": "Alexia Putellas (32) y el London City Lionesses debutan el próximo viernes en la WSL, ante el Manchester United.",
-          "needs_translation": false
+          "summary": "Alexia Putellas y London City Lionesses debutarán el próximo viernes en la WSL frente a Manchester United.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "\"Rosalia ha estado en muchos momentos de mi carrera\"",
-          "summary": "Alexia Putellas (32) y el London City Lionesses debutan el próximo viernes en la WSL, ante el Manchester United.",
-          "needs_translation": true
+          "title": "\"Rosalia has been there at many moments in my career\"",
+          "summary": "Alexia Putellas and London City Lionesses will make their WSL debut next Friday against Manchester United.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "\"Rosalia ha estado en muchos momentos de mi carrera\"",
-          "summary": "Alexia Putellas (32) y el London City Lionesses debutan el próximo viernes en la WSL, ante el Manchester United.",
-          "needs_translation": true
+          "title": "« Rosalia a été présente à de nombreux moments de ma carrière »",
+          "summary": "Alexia Putellas et London City Lionesses feront leurs débuts en WSL vendredi prochain face à Manchester United.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"Rosalia ha estado en muchos momentos de mi carrera\"",
-          "summary": "Alexia Putellas (32) y el London City Lionesses debutan el próximo viernes en la WSL, ante el Manchester United.",
-          "needs_translation": true
+          "title": "\"روزاليا كانت حاضرة في محطات كثيرة من مسيرتي\"",
+          "summary": "تستهل أليكسيا بوتياس مشوارها مع فريق لندن سيتي لايونيسز في الدوري الإنجليزي الممتاز للسيدات الجمعة المقبل بمواجهة مانشستر يونايتد.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/femenino/20260831/1004221210/rosalia-momentos-mi-carrera.html",
@@ -1066,7 +1198,12 @@
           "url": "https://www.mundodeportivo.com/futbol/femenino/20260831/1004221210/rosalia-momentos-mi-carrera.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3ebbf9bb6b79",
@@ -1122,23 +1259,27 @@
       "i18n": {
         "es": {
           "title": "Sacudir la sombra de Haaland",
-          "summary": "G abriel Jesus (29 años) se marchó del City el mismo junio que Haaland y Julián Alvarez llegaron a Manchester.",
-          "needs_translation": false
+          "summary": "Gabriel Jesus dejó el City en el mismo mes de junio en que Haaland y Julián Alvarez llegaron a Manchester.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Sacudir la sombra de Haaland",
-          "summary": "G abriel Jesus (29 años) se marchó del City el mismo junio que Haaland y Julián Alvarez llegaron a Manchester.",
-          "needs_translation": true
+          "title": "Shaking off the shadow of Haaland",
+          "summary": "Gabriel Jesus left City in the exact same month of June that Haaland and Julián Alvarez arrived in Manchester.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Sacudir la sombra de Haaland",
-          "summary": "G abriel Jesus (29 años) se marchó del City el mismo junio que Haaland y Julián Alvarez llegaron a Manchester.",
-          "needs_translation": true
+          "title": "Secouer l'ombre de Haaland",
+          "summary": "Gabriel Jesus a quitté City au cours du même mois de juin qui a vu Haaland et Julián Alvarez arriver à Manchester.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Sacudir la sombra de Haaland",
-          "summary": "G abriel Jesus (29 años) se marchó del City el mismo junio que Haaland y Julián Alvarez llegaron a Manchester.",
-          "needs_translation": true
+          "title": "الخروج من ظل هالاند",
+          "summary": "غادر غابرييل جيسوس صفوف مانشستر سيتي في نفس الشهر الذي وصل فيه إرلينغ هالاند وجوليان ألفاريز إلى مانشستر.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221475/sacudir-sombra-haaland.html",
@@ -1160,7 +1301,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221475/sacudir-sombra-haaland.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c894febde0e2",
@@ -1169,23 +1315,27 @@
       "i18n": {
         "es": {
           "title": "Julián Álvarez, una historia difícil de explicar",
-          "summary": "En el mundo del fútbol también suceden cosas que no tienen una explicación lógica o que, si la tienen, parece increíble encontrarla.",
-          "needs_translation": false
+          "summary": "La trayectoria de Julián Álvarez refleja situaciones atípicas e inexplicables dentro del fútbol profesional.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Julián Álvarez, una historia difícil de explicar",
-          "summary": "En el mundo del fútbol también suceden cosas que no tienen una explicación lógica o que, si la tienen, parece increíble encontrarla.",
-          "needs_translation": true
+          "title": "Julián Álvarez, a story difficult to explain",
+          "summary": "The career trajectory of Julián Álvarez highlights atypical and hard-to-explain situations in professional football.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Julián Álvarez, una historia difícil de explicar",
-          "summary": "En el mundo del fútbol también suceden cosas que no tienen una explicación lógica o que, si la tienen, parece increíble encontrarla.",
-          "needs_translation": true
+          "title": "Julián Álvarez, une histoire difficile à expliquer",
+          "summary": "La trajectoire de Julián Álvarez illustre des situations atypiques et difficiles à expliquer dans le football.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Julián Álvarez, una historia difícil de explicar",
-          "summary": "En el mundo del fútbol también suceden cosas que no tienen una explicación lógica o que, si la tienen, parece increíble encontrarla.",
-          "needs_translation": true
+          "title": "خوليان ألفاريز، مسيرة يصعب تفسيرها",
+          "summary": "تسلط مسيرة خوليان ألفاريز الضوء على أحداث غير مألوفة يصعب إيجاد تفسير منطقي لها في عالم كرة القدم.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221390/julian-alvarez-historia-dificil-explicar.html",
@@ -1207,7 +1357,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221390/julian-alvarez-historia-dificil-explicar.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "47def7130914",
@@ -1215,24 +1370,28 @@
       "summary": "La Masia se ha convertido este verano en una interesante vía para generar ingresos sin perder cierto control sobre algunos de sus jóvenes talentos.",
       "i18n": {
         "es": {
-          "title": "La Masia deja un pastizal en ingresos en este 2026",
-          "summary": "La Masia se ha convertido este verano en una interesante vía para generar ingresos sin perder cierto control sobre algunos de sus jóvenes talentos.",
-          "needs_translation": false
+          "title": "La Masia deja importantes ingresos en este 2026",
+          "summary": "La Masia se ha convertido este verano en una notable fuente de ingresos para el club, permitiéndole obtener beneficios sin perder el control de sus jóvenes talentos.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "La Masia deja un pastizal en ingresos en este 2026",
-          "summary": "La Masia se ha convertido este verano en una interesante vía para generar ingresos sin perder cierto control sobre algunos de sus jóvenes talentos.",
-          "needs_translation": true
+          "title": "La Masia generates major revenue in 2026",
+          "summary": "La Masia has become a key source of revenue this summer, enabling the club to generate significant income while retaining control over its young talents.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La Masia deja un pastizal en ingresos en este 2026",
-          "summary": "La Masia se ha convertido este verano en una interesante vía para generar ingresos sin perder cierto control sobre algunos de sus jóvenes talentos.",
-          "needs_translation": true
+          "title": "La Masia génère d'importants revenus en 2026",
+          "summary": "Cet été, La Masia s'est imposée comme une source majeure de revenus pour le club, lui permettant d'engranger des fonds tout en gardant le contrôle sur ses jeunes talents.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "La Masia deja un pastizal en ingresos en este 2026",
-          "summary": "La Masia se ha convertido este verano en una interesante vía para generar ingresos sin perder cierto control sobre algunos de sus jóvenes talentos.",
-          "needs_translation": true
+          "title": "لا ماسيا تدر إيرادات ضخمة في عام 2026",
+          "summary": "أصبحت أكاديمية لا ماسيا مصدرا هاما لجني الإيرادات هذا الصيف، مما أتاح للنادي تحقيق مكاسب مالية مع الاحتفاظ بالسيطرة على مستقبل مواهبه الشابة.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221191/masia-deja-pastizal-ingresos.html",
@@ -1254,7 +1413,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221191/masia-deja-pastizal-ingresos.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "95571100ff58",
@@ -1263,23 +1427,27 @@
       "i18n": {
         "en": {
           "title": "Quickfire Quiz 191: Can you answer 10 questions in 90 seconds?",
-          "summary": "Tackle these 10 football trivia questions about Diego Maradona, CAF nicknames, EFL owners, and more!",
-          "needs_translation": false
+          "summary": "The 191st Quickfire Quiz challenges participants to answer 10 football trivia questions in 90 seconds, covering topics such as Diego Maradona, CAF nicknames, and EFL club owners.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Quickfire Quiz 191: Can you answer 10 questions in 90 seconds?",
-          "summary": "Tackle these 10 football trivia questions about Diego Maradona, CAF nicknames, EFL owners, and more!",
-          "needs_translation": true
+          "title": "Quickfire Quiz 191 : pouvez-vous répondre à 10 questions en 90 secondes ?",
+          "summary": "La 191e édition du Quickfire Quiz propose 10 questions sur le football à résoudre en 90 secondes, abordant notamment Diego Maradona, les surnoms de la CAF et les propriétaires de clubs de l'EFL.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Quickfire Quiz 191: Can you answer 10 questions in 90 seconds?",
-          "summary": "Tackle these 10 football trivia questions about Diego Maradona, CAF nicknames, EFL owners, and more!",
-          "needs_translation": true
+          "title": "Quickfire Quiz 191: ¿Puedes responder 10 preguntas en 90 segundos?",
+          "summary": "La edición 191 del Quickfire Quiz reúne 10 preguntas de fútbol para responder en 90 segundos, sobre temas como Diego Maradona, apodos de la CAF y propietarios de clubes de la EFL.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Quickfire Quiz 191: Can you answer 10 questions in 90 seconds?",
-          "summary": "Tackle these 10 football trivia questions about Diego Maradona, CAF nicknames, EFL owners, and more!",
-          "needs_translation": true
+          "title": "مسابقة سريعة 191: هل يمكنك الإجابة عن 10 أسئلة في 90 ثانية؟",
+          "summary": "تتضمن النسخة 191 من الاختبار السريع 10 أسئلة في الثقافة الكروية للإجابة عنها خلال 90 ثانية، تشمل دييغو مارادونا، ألقاب منتخبات الكاف، وملاك أندية دوري كرة القدم الإنجليزي.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-191",
@@ -1301,7 +1469,12 @@
           "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-191"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "1e06386a78db",
@@ -1408,24 +1581,28 @@
       "summary": "A pesar de ser solo la tercera jornada de LaLiga , el duelo entre los dos grandes del fútbol español ya está servido desde el inicio. El Madrid goleó ayer al Málaga en el Santiago Bernabéu (4-0) y durmió líder.",
       "i18n": {
         "es": {
-          "title": "El Barça, a recuperar el liderato ante un Rayo que aún no conoce la victoria",
-          "summary": "A pesar de ser solo la tercera jornada de LaLiga , el duelo entre los dos grandes del fútbol español ya está servido desde el inicio. El Madrid goleó ayer al Málaga en el Santiago Bernabéu (4-0) y durmió líder.",
-          "needs_translation": false
+          "title": "El Barça busca recuperar el liderato ante un Rayo que aún no conoce la victoria",
+          "summary": "Tras la victoria 4-0 de Madrid ante Málaga en el Santiago Bernabéu, que lo colocó líder provisional de LaLiga en la tercera jornada, Barça intentará recuperar la cima frente a Rayo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Barça, a recuperar el liderato ante un Rayo que aún no conoce la victoria",
-          "summary": "A pesar de ser solo la tercera jornada de LaLiga , el duelo entre los dos grandes del fútbol español ya está servido desde el inicio. El Madrid goleó ayer al Málaga en el Santiago Bernabéu (4-0) y durmió líder.",
-          "needs_translation": true
+          "title": "Barça seek to reclaim top spot against winless Rayo",
+          "summary": "Following Madrid's 4-0 win over Málaga at the Santiago Bernabéu in LaLiga matchday 3, Barça aim to reclaim the lead against a Rayo side still searching for their first win.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El Barça, a recuperar el liderato ante un Rayo que aún no conoce la victoria",
-          "summary": "A pesar de ser solo la tercera jornada de LaLiga , el duelo entre los dos grandes del fútbol español ya está servido desde el inicio. El Madrid goleó ayer al Málaga en el Santiago Bernabéu (4-0) y durmió líder.",
-          "needs_translation": true
+          "title": "Le Barça vise la tête face à Rayo qui ne connaît pas encore la victoire",
+          "summary": "Après la victoire 4-0 de Madrid contre Málaga au Santiago Bernabéu lors de la 3e journée de LaLiga, Barça doit s'imposer face à Rayo pour reprendre la tête du championnat.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Barça, a recuperar el liderato ante un Rayo que aún no conoce la victoria",
-          "summary": "A pesar de ser solo la tercera jornada de LaLiga , el duelo entre los dos grandes del fútbol español ya está servido desde el inicio. El Madrid goleó ayer al Málaga en el Santiago Bernabéu (4-0) y durmió líder.",
-          "needs_translation": true
+          "title": "برشلونة يسعى لاستعادة الصدارة أمام رايو الباحث عن فوزه الأول",
+          "summary": "يسعى برشلونة لاستعادة صدارة الدوري الإسباني في الجولة الثالثة أمام رايو، وذلك بعد فوز ريال مدريد على مالقا بنتيجة 4-0 في سانتياغو برنابيو واعتلائه القمة مؤقتاً.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221479/barca-recuperar-liderato-rayo-aun-no-conoce-victoria.html",
@@ -1447,7 +1624,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221479/barca-recuperar-liderato-rayo-aun-no-conoce-victoria.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "247794de66c8",
@@ -1456,23 +1638,27 @@
       "i18n": {
         "es": {
           "title": "El posible once del Barça ante el Rayo Vallecano",
-          "summary": "Mientras se oficializa el fichaje de Gabriel Jesus , que hoy llega a Barcelona y podría asistir ya al estadio a ver el duelo de su nuevo equipo, Flick mantendrá hoy ante el Rayo Vallecano (21:30 horas) prácticamente el mismo once que venció al Athletic (2-0) el pasado jueves,…",
-          "needs_translation": false
+          "summary": "Flick mantendrá ante el Rayo Vallecano prácticamente el mismo once que venció al Athletic (2-0), mientras Gabriel Jesus llega a Barcelona para sellar su fichaje.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El posible once del Barça ante el Rayo Vallecano",
-          "summary": "Mientras se oficializa el fichaje de Gabriel Jesus , que hoy llega a Barcelona y podría asistir ya al estadio a ver el duelo de su nuevo equipo, Flick mantendrá hoy ante el Rayo Vallecano (21:30 horas) prácticamente el mismo once que venció al Athletic (2-0) el pasado jueves,…",
-          "needs_translation": true
+          "title": "Barça's predicted lineup against Rayo Vallecano",
+          "summary": "Flick is expected to field virtually the same lineup against Rayo Vallecano that beat Athletic (2-0), while Gabriel Jesus arrives in Barcelona to complete his signing.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El posible once del Barça ante el Rayo Vallecano",
-          "summary": "Mientras se oficializa el fichaje de Gabriel Jesus , que hoy llega a Barcelona y podría asistir ya al estadio a ver el duelo de su nuevo equipo, Flick mantendrá hoy ante el Rayo Vallecano (21:30 horas) prácticamente el mismo once que venció al Athletic (2-0) el pasado jueves,…",
-          "needs_translation": true
+          "title": "Le onze probable du Barça face au Rayo Vallecano",
+          "summary": "Flick devrait reconduire face au Rayo Vallecano le même onze que lors de la victoire contre l'Athletic (2-0), tandis que Gabriel Jesus arrive à Barcelona pour signer.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El posible once del Barça ante el Rayo Vallecano",
-          "summary": "Mientras se oficializa el fichaje de Gabriel Jesus , que hoy llega a Barcelona y podría asistir ya al estadio a ver el duelo de su nuevo equipo, Flick mantendrá hoy ante el Rayo Vallecano (21:30 horas) prácticamente el mismo once que venció al Athletic (2-0) el pasado jueves,…",
-          "needs_translation": true
+          "title": "التشكيلة المتوقعة لبرشلونة أمام رايو فايكانو",
+          "summary": "يتجه فليك للاعتماد أمام رايو فايكانو على التشكيلة ذاتها التي فازت على أتلتيك بيلباو (2-0)، تزامناً مع وصول غابرييل جيسوس إلى برشلونة لإتمام صفقة انتقاله.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221483/posible-once-barca-rayo-vallecano.html",
@@ -1494,7 +1680,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221483/posible-once-barca-rayo-vallecano.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "42209c784b42",
@@ -1550,23 +1741,27 @@
       "i18n": {
         "fr": {
           "title": "Sans successeur à Robert Lewandowski ni à Ferran Torres, pourquoi le Barça n'est pas inquiet",
-          "summary": "Après les départs de Robert Lewandowski et Ferran Torres, le Barça, opposé ce lundi (21h30) au Rayo Vallecano, n'a pas enregistré l'arrivée d'un grand attaquant cet été. Pourtant, il ne s'affole pas.",
-          "needs_translation": false
+          "summary": "Malgré les départs de Robert Lewandowski et Ferran Torres sans recrutement d'un attaquant majeur cet été, le Barça aborde son match contre le Rayo Vallecano sans inquiétude.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Sans successeur à Robert Lewandowski ni à Ferran Torres, pourquoi le Barça n'est pas inquiet",
-          "summary": "Après les départs de Robert Lewandowski et Ferran Torres, le Barça, opposé ce lundi (21h30) au Rayo Vallecano, n'a pas enregistré l'arrivée d'un grand attaquant cet été. Pourtant, il ne s'affole pas.",
-          "needs_translation": true
+          "title": "Without a successor to Robert Lewandowski or Ferran Torres, why Barça is not worried",
+          "summary": "Despite the departures of Robert Lewandowski and Ferran Torres without signing a top striker this summer, Barça remains calm ahead of facing Rayo Vallecano on Monday.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Sans successeur à Robert Lewandowski ni à Ferran Torres, pourquoi le Barça n'est pas inquiet",
-          "summary": "Après les départs de Robert Lewandowski et Ferran Torres, le Barça, opposé ce lundi (21h30) au Rayo Vallecano, n'a pas enregistré l'arrivée d'un grand attaquant cet été. Pourtant, il ne s'affole pas.",
-          "needs_translation": true
+          "title": "Sin sucesor para Robert Lewandowski ni Ferran Torres, por qué el Barça no está preocupado",
+          "summary": "A pesar de las salidas de Robert Lewandowski y Ferran Torres sin fichar a un gran delantero este verano, el Barça no se alarma antes de enfrentarse al Rayo Vallecano.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Sans successeur à Robert Lewandowski ni à Ferran Torres, pourquoi le Barça n'est pas inquiet",
-          "summary": "Après les départs de Robert Lewandowski et Ferran Torres, le Barça, opposé ce lundi (21h30) au Rayo Vallecano, n'a pas enregistré l'arrivée d'un grand attaquant cet été. Pourtant, il ne s'affole pas.",
-          "needs_translation": true
+          "title": "دون بديل لروبرت ليفاندوفسكي وفيران توريس، لماذا لا يشعر برشلونة بالقلق",
+          "summary": "رغم رحيل روبرت ليفاندوفسكي وفيران توريس وعدم التعاقد مع مهاجم بارز هذا الصيف، لا يشعر برشلونة بالقلق قبل مواجهة رايو فايكانو يوم الإثنين.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Article/Sans-successeur-a-robert-lewandowski-ni-a-ferran-torres-pourquoi-le-barca-n-est-pas-inquiet/1714769#at_medium=RSS_feeds",
@@ -1588,7 +1783,12 @@
           "url": "https://www.lequipe.fr/Football/Article/Sans-successeur-a-robert-lewandowski-ni-a-ferran-torres-pourquoi-le-barca-n-est-pas-inquiet/1714769#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8efac305cc5c",
@@ -1750,23 +1950,27 @@
       "i18n": {
         "es": {
           "title": "Raphinha y Fermín, a por un reto inédito desde Messi",
-          "summary": "A falta de ‘9’ hasta que firme Gabriel Jesus , muy buenos son los goles de Raphinha y Fermín López . Ambos encabezan la tabla de realizadores del Barça tras haber anotado un doblete por barba en el 0-5 de Elche y ver puerta cada uno en el 2-0 al Athletic .",
-          "needs_translation": false
+          "summary": "Raphinha y Fermín López lideran la tabla de goleadores del Barça tras firmar sendos dobletes ante el Elche (0-5) y marcar un tanto cada uno frente al Athletic (2-0).",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Raphinha y Fermín, a por un reto inédito desde Messi",
-          "summary": "A falta de ‘9’ hasta que firme Gabriel Jesus , muy buenos son los goles de Raphinha y Fermín López . Ambos encabezan la tabla de realizadores del Barça tras haber anotado un doblete por barba en el 0-5 de Elche y ver puerta cada uno en el 2-0 al Athletic .",
-          "needs_translation": true
+          "title": "Raphinha and Fermín aim for a feat unseen since Messi",
+          "summary": "Raphinha and Fermín López lead Barça's scoring charts after each scoring a brace against Elche (0-5) and a goal each against Athletic (2-0).",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Raphinha y Fermín, a por un reto inédito desde Messi",
-          "summary": "A falta de ‘9’ hasta que firme Gabriel Jesus , muy buenos son los goles de Raphinha y Fermín López . Ambos encabezan la tabla de realizadores del Barça tras haber anotado un doblete por barba en el 0-5 de Elche y ver puerta cada uno en el 2-0 al Athletic .",
-          "needs_translation": true
+          "title": "Raphinha et Fermín visent un défi inédit depuis Messi",
+          "summary": "Raphinha et Fermín López dominent le classement des buteurs du Barça après avoir inscrit chacun un doublé contre Elche (0-5) et un but face à Athletic (2-0).",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Raphinha y Fermín, a por un reto inédito desde Messi",
-          "summary": "A falta de ‘9’ hasta que firme Gabriel Jesus , muy buenos son los goles de Raphinha y Fermín López . Ambos encabezan la tabla de realizadores del Barça tras haber anotado un doblete por barba en el 0-5 de Elche y ver puerta cada uno en el 2-0 al Athletic .",
-          "needs_translation": true
+          "title": "رافينيا وفيرمين يسعيان لتحقيق إنجاز غير مسبوق منذ ميسي",
+          "summary": "يتصدر رافينيا وفيرمين لوبيز قائمة هدافي برشلونة بعد أن سجل كل منهما ثنائية أمام إلتشي (0-5) وهدفاً في شباك أتلتيك بيلباو (2-0).",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221287/raphinha-fermin-reto-inedito-messi.html",
@@ -1788,7 +1992,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221287/raphinha-fermin-reto-inedito-messi.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3583df2641a4",
@@ -1797,23 +2006,27 @@
       "i18n": {
         "es": {
           "title": "Los 57 goles de Iniesta, de Copa a Copa",
-          "summary": "Andrés Iniesta firmó un total de 57 goles en partidos oficiales con la camiseta del Barça . Entre el primero y el último pasaron más de 14 años.",
-          "needs_translation": false
+          "summary": "Andrés Iniesta marcó un total de 57 goles en partidos oficiales con el Barça. Entre su primer y último tanto transcurrieron más de 14 años.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Los 57 goles de Iniesta, de Copa a Copa",
-          "summary": "Andrés Iniesta firmó un total de 57 goles en partidos oficiales con la camiseta del Barça . Entre el primero y el último pasaron más de 14 años.",
-          "needs_translation": true
+          "title": "Iniesta's 57 goals, from Copa to Copa",
+          "summary": "Andrés Iniesta scored a total of 57 official goals for Barça, spanning more than 14 years between his first and last.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Los 57 goles de Iniesta, de Copa a Copa",
-          "summary": "Andrés Iniesta firmó un total de 57 goles en partidos oficiales con la camiseta del Barça . Entre el primero y el último pasaron más de 14 años.",
-          "needs_translation": true
+          "title": "Les 57 buts d'Iniesta, de Copa en Copa",
+          "summary": "Andrés Iniesta a inscrit 57 buts en matches officiels avec le Barça. Plus de 14 ans se sont écoulés entre sa première et sa dernière réalisation.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Los 57 goles de Iniesta, de Copa a Copa",
-          "summary": "Andrés Iniesta firmó un total de 57 goles en partidos oficiales con la camiseta del Barça . Entre el primero y el último pasaron más de 14 años.",
-          "needs_translation": true
+          "title": "أهداف إنييستا الـ57، من الكأس إلى الكأس",
+          "summary": "سجل أندريس إنييستا ما مجموعه 57 هدفاً رسمياً بقميص برشلونة، حيث امتدت الفترة بين هدفه الأول والأخير لأكثر من 14 عاماً.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/barca-goles/20260831/1004221125/57-goles-iniesta-copa-copa.html",
@@ -1835,7 +2048,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/barca-goles/20260831/1004221125/57-goles-iniesta-copa-copa.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e4c7f09af42f",
@@ -1844,23 +2062,27 @@
       "i18n": {
         "es": {
           "title": "Las claves del Barça-Rayo Vallecano, por Lobo Carrasco",
-          "summary": "1.",
-          "needs_translation": false
+          "summary": "Lobo Carrasco analiza y detalla las principales claves tácticas del encuentro entre el Barça y el Rayo Vallecano.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Las claves del Barça-Rayo Vallecano, por Lobo Carrasco",
-          "summary": "1.",
-          "needs_translation": true
+          "title": "The keys to Barça-Rayo Vallecano, by Lobo Carrasco",
+          "summary": "Lobo Carrasco provides his tactical analysis and outlines the key factors for the match between Barça and Rayo Vallecano.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Las claves del Barça-Rayo Vallecano, por Lobo Carrasco",
-          "summary": "1.",
-          "needs_translation": true
+          "title": "Les clés du match Barça-Rayo Vallecano, par Lobo Carrasco",
+          "summary": "Lobo Carrasco livre son analyse et détaille les clés tactiques majeures de la rencontre entre le Barça et Rayo Vallecano.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Las claves del Barça-Rayo Vallecano, por Lobo Carrasco",
-          "summary": "1.",
-          "needs_translation": true
+          "title": "مفاتيح مباراة برشلونة ضد رايو فايكانو بقلم لوبو كاراسكو",
+          "summary": "يقدم لوبو كاراسكو تحليله الفني وأبرز المفاتيح التكتيكية لمواجهة برشلونة أمام رايو فايكانو.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221326/claves-barca-rayo-vallecano-lobo-carrasco.html",
@@ -1882,7 +2104,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260831/1004221326/claves-barca-rayo-vallecano-lobo-carrasco.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "aa791356fb3d",
@@ -1938,23 +2165,27 @@
       "i18n": {
         "en": {
           "title": "Can Chelsea win the league with three at the back? Given's verdict",
-          "summary": "Match of the Day pundit Shay Given praises Chelsea's flying wing-backs, backing Xabi Alonso's side to win the Premier League title using a three-at-the-back system.",
-          "needs_translation": false
+          "summary": "Pundit Shay Given believes Chelsea can win the Premier League title using a three-at-the-back system, praising the performance of the team's wing-backs.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Can Chelsea win the league with three at the back? Given's verdict",
-          "summary": "Match of the Day pundit Shay Given praises Chelsea's flying wing-backs, backing Xabi Alonso's side to win the Premier League title using a three-at-the-back system.",
-          "needs_translation": true
+          "title": "Chelsea peut-il remporter le titre avec une défense à trois ? L'avis de Given",
+          "summary": "Le consultant Shay Given estime que Chelsea peut remporter la Premier League en s'appuyant sur une défense à trois et l'apport de ses pistons.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Can Chelsea win the league with three at the back? Given's verdict",
-          "summary": "Match of the Day pundit Shay Given praises Chelsea's flying wing-backs, backing Xabi Alonso's side to win the Premier League title using a three-at-the-back system.",
-          "needs_translation": true
+          "title": "¿Puede el Chelsea ganar la liga con una defensa de tres? El veredicto de Given",
+          "summary": "El analista Shay Given considera que el Chelsea puede ganar el título de la Premier League con su sistema de tres centrales y carrileros ofensivos.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Can Chelsea win the league with three at the back? Given's verdict",
-          "summary": "Match of the Day pundit Shay Given praises Chelsea's flying wing-backs, backing Xabi Alonso's side to win the Premier League title using a three-at-the-back system.",
-          "needs_translation": true
+          "title": "هل يستطيع تشيلسي الفوز بالدوري بثلاثة مدافعين؟ رأي غيفن",
+          "summary": "يرى المحلل شاي غيفن أن تشيلسي قادر على التتويج بلقب الدوري الإنجليزي الممتاز عبر اللعب بثلاثة مدافعين في الخط الخلفي، مشيداً بالمستوى المميز للأظهرة.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/videos/cwyz17d1vy9o?at_medium=RSS&at_campaign=rss",
@@ -1976,7 +2207,12 @@
           "url": "https://www.bbc.co.uk/sport/football/videos/cwyz17d1vy9o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "fd921c4c212c",
@@ -1985,23 +2221,27 @@
       "i18n": {
         "en": {
           "title": "MOTD pundits debate controversial own goal in Man Utd victory",
-          "summary": "Match of the Day pundits Ellen White and Shay Given discuss the refereeing controversy at Old Trafford whereby a loophole allowed a Harry Maguire handball to stand as a Jacob Greaves own goal.",
-          "needs_translation": false
+          "summary": "Match of the Day pundits Ellen White and Shay Given analyzed a refereeing loophole that allowed a Harry Maguire handball to stand as a Jacob Greaves own goal at Old Trafford.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "MOTD pundits debate controversial own goal in Man Utd victory",
-          "summary": "Match of the Day pundits Ellen White and Shay Given discuss the refereeing controversy at Old Trafford whereby a loophole allowed a Harry Maguire handball to stand as a Jacob Greaves own goal.",
-          "needs_translation": true
+          "title": "Les consultants de MOTD débattent d'un but contre son camp controversé lors de la victoire de Man Utd",
+          "summary": "Dans Match of the Day, Ellen White et Shay Given ont analysé une faille réglementaire ayant permis de valider une main de Harry Maguire comme but contre son camp de Jacob Greaves à Old Trafford.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "MOTD pundits debate controversial own goal in Man Utd victory",
-          "summary": "Match of the Day pundits Ellen White and Shay Given discuss the refereeing controversy at Old Trafford whereby a loophole allowed a Harry Maguire handball to stand as a Jacob Greaves own goal.",
-          "needs_translation": true
+          "title": "Los analistas de MOTD debaten el polémico gol en propia puerta en la victoria de Man Utd",
+          "summary": "En Match of the Day, Ellen White y Shay Given analizaron un vacío reglamentario que permitió validar una mano de Harry Maguire como gol en propia puerta de Jacob Greaves en Old Trafford.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "MOTD pundits debate controversial own goal in Man Utd victory",
-          "summary": "Match of the Day pundits Ellen White and Shay Given discuss the refereeing controversy at Old Trafford whereby a loophole allowed a Harry Maguire handball to stand as a Jacob Greaves own goal.",
-          "needs_translation": true
+          "title": "محللو \"ماتش أوف ذا داي\" يناقشون هدفاً عكسياً مثيراً للجدل في فوز مانشستر يونايتد",
+          "summary": "ناقش المحللان إلين وايت وشاي غيفن في برنامج \"ماتش أوف ذا داي\" ثغرة تحكيمية في أولد ترافورد سمحت باحتساب لمسة يد لهاري ماغواير كهدف عكسي سجله جاكوب غريفز.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/videos/cp93xrk5k5xo?at_medium=RSS&at_campaign=rss",
@@ -2023,7 +2263,12 @@
           "url": "https://www.bbc.co.uk/sport/football/videos/cp93xrk5k5xo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "887090811766",
@@ -2083,24 +2328,48 @@
       "summary": "Dans une vidéo révélée ce dimanche soir par Ligue 1+, l'arbitre de Lille-PSG (2-2) Eric Wattellier a expliqué sa gestion du temps additionnel, alors que Paris a égalisé à la 90e + 5, au-delà des trois minutes initiales.",
       "i18n": {
         "fr": {
-          "title": "Les explications en direct de l'arbitre de Lille-PSG sur le temps additionnel rallongé : « Il y a eu un but, donc on en rajoute »",
-          "summary": "Dans une vidéo révélée ce dimanche soir par Ligue 1+, l'arbitre de Lille-PSG (2-2) Eric Wattellier a expliqué sa gestion du temps additionnel, alors que Paris a égalisé à la 90e + 5, au-delà des trois minutes initiales.",
-          "needs_translation": false
+          "title": "Lille-PSG : l'arbitre Eric Wattellier justifie le temps additionnel rallongé",
+          "summary": "L'arbitre Eric Wattellier a justifié les minutes supplémentaires accordées lors de Lille-PSG, expliquant avoir prolongé le jeu après un but parisien.",
+          "body": [
+            "Dans des images captées par sa caméra embarquée et diffusées par Ligue 1+, l'arbitre de la rencontre est revenu sur ce dénouement vivement contesté par les Dogues. Alors que le quatrième arbitre avait initialement annoncé trois minutes de temps additionnel, Marquinhos a finalement arraché l'égalisation (2-2) à la 95e minute.",
+            "Au coup de sifflet final, Eric Wattellier a détaillé son décompte auprès du joueur lillois Dilane Bakwa : le but inscrit par Vitinha à l'entame du temps additionnel a justifié l'ajout d'une minute de jeu effectif, portant le total à quatre minutes au minimum. Pendant ces arrêts de jeu, l'officiel avait aussi prévenu le gardien Berke Özer qu'il prolongerait la partie s'il tardait à se relever."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Les explications en direct de l'arbitre de Lille-PSG sur le temps additionnel rallongé : « Il y a eu un but, donc on en rajoute »",
-          "summary": "Dans une vidéo révélée ce dimanche soir par Ligue 1+, l'arbitre de Lille-PSG (2-2) Eric Wattellier a expliqué sa gestion du temps additionnel, alors que Paris a égalisé à la 90e + 5, au-delà des trois minutes initiales.",
-          "needs_translation": true
+          "title": "Lille-PSG: Referee Eric Wattellier explains extended stoppage time",
+          "summary": "Referee Eric Wattellier has justified the extra stoppage time added during Lille-PSG, explaining that he granted an additional minute following a Paris goal.",
+          "body": [
+            "Footage from his body camera broadcast on Ligue 1+ showed the match referee explaining the controversial finish disputed by the Dogues. While the fourth official had initially signaled three minutes of added time, Marquinhos snatched a late equalizer (2-2) in the 95th minute.",
+            "After the final whistle, the referee clarified his timekeeping to Lille player Dilane Bakwa: Vitinha's goal at the very start of stoppage time prompted an extra minute of effective play, taking the minimum to four minutes. During added time, Eric Wattellier had also warned Lille goalkeeper Berke Özer that he would extend the match further if he stayed on the ground."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Les explications en direct de l'arbitre de Lille-PSG sur le temps additionnel rallongé : « Il y a eu un but, donc on en rajoute »",
-          "summary": "Dans une vidéo révélée ce dimanche soir par Ligue 1+, l'arbitre de Lille-PSG (2-2) Eric Wattellier a expliqué sa gestion du temps additionnel, alors que Paris a égalisé à la 90e + 5, au-delà des trois minutes initiales.",
-          "needs_translation": true
+          "title": "Lille-PSG: el árbitro Eric Wattellier justifica el tiempo añadido extra",
+          "summary": "El colegiado Eric Wattellier justificó los minutos adicionales concedidos en el Lille-PSG, explicando que añadió un minuto más tras un tanto parisino.",
+          "body": [
+            "A través de imágenes de su cámara corporal emitidas por Ligue 1+, el árbitro del encuentro abordó el polémico desenlace reclamado por los Dogues. Pese a que el cuarto árbitro había señalado inicialmente tres minutos de descuento, Marquinhos firmó el empate (2-2) en el minuto 95.",
+            "Tras el pitido final, Eric Wattellier detalló su cuenta al jugador de Lille Dilane Bakwa: el gol anotado por Vitinha al inicio del tiempo añadido obligó a sumar un minuto extra de juego efectivo, elevando el descuento a un mínimo de cuatro minutos. Durante esa prolongación, el colegiado también advirtió al guardameta Berke Özer de que alargaría el partido si perdía tiempo en el suelo."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Les explications en direct de l'arbitre de Lille-PSG sur le temps additionnel rallongé : « Il y a eu un but, donc on en rajoute »",
-          "summary": "Dans une vidéo révélée ce dimanche soir par Ligue 1+, l'arbitre de Lille-PSG (2-2) Eric Wattellier a expliqué sa gestion du temps additionnel, alors que Paris a égalisé à la 90e + 5, au-delà des trois minutes initiales.",
-          "needs_translation": true
+          "title": "ليل ضد باريس سان جيرمان: الحكم إريك فاتلييه يبرر تمديد الوقت بدل الضائع",
+          "summary": "برر الحكم إريك فاتلييه تمديد الوقت بدل الضائع في قمة ليل وباريس سان جيرمان، موضحاً أنه أضاف دقيقة إضافية بعد هدف للفريق الباريسي.",
+          "body": [
+            "في لقطات سجلتها الكاميرا المثبتة على قميصه وبثتها منصة الدوري الفرنسي، كشف حكم اللقاء تفاصيل اللحظات الأخيرة المثيرة للجدل التي احتج عليها لاعبو ليل. فبينما احتسب الحكم الرابع ثلاث دقائق كوقت بدل ضائع، نجح ماركينيوس في خطف هدف التعادل (2-2) في الدقيقة 95.",
+            "وعقب صافرة النهاية، أوضح الحكم حساباته للاعب ليل ديلان باكوا، مشيراً إلى أن هدف فيتينيا في بداية الوقت المحتسب بدلاً من الضائع استوجب إضافة دقيقة لعب فعلية، ليرتفع الإجمالي إلى أربع دقائق كحد أدنى. كما حذر إريك فاتلييه حارس ليل بيركي أوزير خلال تلك الدقائق بأنه سيمدد الوقت أكثر إذا واصل السقوط على الأرض لإهدار الوقت."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Les-explications-en-direct-de-l-arbitre-de-lille-psg-sur-le-temps-additionnel-rallonge-il-y-a-eu-un-but-donc-on-en-rajoute/1714889#at_medium=RSS_feeds",
@@ -2122,7 +2391,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Les-explications-en-direct-de-l-arbitre-de-lille-psg-sur-le-temps-additionnel-rallonge-il-y-a-eu-un-but-donc-on-en-rajoute/1714889#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-08-31T11:39:12+00:00"
+        }
+      }
     },
     {
       "id": "ac2bc67ae942",
@@ -2131,26 +2413,27 @@
       "i18n": {
         "es": {
           "title": "Arbeloa, furioso: \"Ni luchamos, no corrimos, un nivel técnico muy bajo\"",
-          "summary": "Álvaro Arbeloa no ha empezado con buen pie su singladura por la Premier League al frente del Fulham y, tras dos jornadas disputadas, sigue sin estrenar el casillero de puntos.",
-          "needs_translation": false
+          "summary": "Álvaro Arbeloa criticó con dureza la actitud y el rendimiento de su equipo tras sumar dos derrotas en las dos primeras jornadas de la Premier League al frente del Fulham.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Arbeloa, furious: \"We did not fight, we did not run, a very low technical level\"",
-          "summary": "Álvaro Arbeloa has not made a good start to his Premier League career at the helm of Fulham and, after two days played, he still hasn't released the points box.",
+          "title": "Arbeloa furious: \"We didn't fight, we didn't run, very low technical level\"",
+          "summary": "Álvaro Arbeloa strongly criticized Fulham's attitude and performance after remaining without a single point following the first two matchdays of the Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Arbeloa, furieux : « Nous ne nous sommes pas battus, nous n'avons pas couru, un niveau technique très bas »",
-          "summary": "Álvaro Arbeloa n'a pas commencé du bon pied son parcours en Premier League à la tête de Fulham et, après deux journées disputées, il n'a toujours pas ouvert le casier à points.",
+          "title": "Arbeloa furieux : « Nous ne nous sommes pas battus, nous n'avons pas couru, un niveau technique très bas »",
+          "summary": "Álvaro Arbeloa a vivement critiqué la prestation et l'engagement de son équipe, Fulham restant sans le moindre point après deux journées de Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "اربيلوا، غاضب: \"لم نقاتل، لم نركض، مستوى تقني منخفض جدا\"",
-          "summary": "لم يبدأ ألفارو أربيلوا بداية جيدة في مسيرته في الدوري الممتاز على رأس فولهام، وبعد يومين من اللعب، لم يفرج بعد عن صندوق النقاط.",
+          "title": "أربيلوا غاضب: \"لم نقاتل ولم نركض، والمستوى الفني كان متدنيًا للغاية\"",
+          "summary": "انتقد المدرب ألفارو أربيلوا أداء لاعبيه بشدة، بعد فشل فولهام في حصد أي نقطة خلال أول جولتين من منافسات الدوري الإنجليزي الممتاز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260831/1004221452/arbeloa.html",
@@ -2172,7 +2455,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260831/1004221452/arbeloa.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "714fd78b43c5",
