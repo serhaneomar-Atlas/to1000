@@ -1,1515 +1,621 @@
 {
-  "genere_le": "2026-08-30T11:40:58+00:00",
-  "articles": 48,
-  "score": 60.9,
-  "defauts_total": 248,
+  "genere_le": "2026-08-31T13:17:02+00:00",
+  "articles": 45,
+  "score": 84.0,
+  "defauts_total": 99,
   "par_type": {
-    "non_enrichi": 192,
-    "latin_en_arabe": 36,
-    "nom_perdu": 20
+    "non_enrichi": 68,
+    "nom_perdu": 16,
+    "latin_en_arabe": 15
   },
   "par_langue": {
-    "ar": 84,
-    "en": 55,
-    "es": 55,
-    "fr": 54
+    "ar": 32,
+    "fr": 23,
+    "en": 22,
+    "es": 22
   },
   "couverture": {
-    "enrichis": 0,
-    "enrichis_pct": 0.0,
-    "source_lu_en_entier": 0,
-    "avec_developpement": 0,
-    "juges_fond": 0,
-    "note_fond_moyenne": null
+    "enrichis": 28,
+    "enrichis_pct": 62.2,
+    "source_lu_en_entier": 1,
+    "avec_developpement": 2,
+    "juges_fond": 2,
+    "note_fond_moyenne": 10.0
   },
   "defauts": [
     {
-      "id": "785e8c475616",
+      "id": "082ff62a5012",
       "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "785e8c475616",
-      "lang": "en",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "785e8c475616",
+      "id": "082ff62a5012",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "082ff62a5012",
       "lang": "es",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "785e8c475616",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Source"
-    },
-    {
-      "id": "785e8c475616",
+      "id": "082ff62a5012",
       "lang": "ar",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "fc540a9c8e88",
+      "id": "c71aec53bf44",
       "lang": "fr",
       "type": "nom_perdu",
-      "detail": "noms propres absents : Partidos de HOY, VIVO Con, Europa"
+      "detail": "noms propres absents : CAN, Vale, Cancelo Penalti, Pese"
     },
     {
-      "id": "fc540a9c8e88",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "fc540a9c8e88",
+      "id": "c71aec53bf44",
       "lang": "en",
       "type": "nom_perdu",
-      "detail": "noms propres absents : Partidos de HOY, VIVO Con, Europa"
+      "detail": "noms propres absents : Vale, Cancelo Penalti, Pese"
     },
     {
-      "id": "fc540a9c8e88",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "fc540a9c8e88",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "fc540a9c8e88",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "bcbd764cab62",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "bcbd764cab62",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "bcbd764cab62",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "bcbd764cab62",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Ciutat, Esportiva, DAZN"
-    },
-    {
-      "id": "bcbd764cab62",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "68476cc5e877",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "68476cc5e877",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "68476cc5e877",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "68476cc5e877",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "330a91ffb85c",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "330a91ffb85c",
-      "lang": "en",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Ligue, Champions UEFA, Étallées, Lire"
-    },
-    {
-      "id": "330a91ffb85c",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "330a91ffb85c",
-      "lang": "es",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Ligue, Champions UEFA, Étallées, Lire"
-    },
-    {
-      "id": "330a91ffb85c",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "330a91ffb85c",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "484ece4bc90e",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "484ece4bc90e",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "484ece4bc90e",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "484ece4bc90e",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "4baccaf29b98",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "4baccaf29b98",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "4baccaf29b98",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "4baccaf29b98",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "4af06ea6aa23",
+      "id": "6d7dc2bf023e",
       "lang": "fr",
       "type": "nom_perdu",
-      "detail": "noms propres absents : Barcelona, Isi Palazón El, FC Barcelona"
+      "detail": "noms propres absents : ManUnited, Handspiel-Kontroverse, Handspiel von Harry Maguire, Diskussionen"
     },
     {
-      "id": "4af06ea6aa23",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "4af06ea6aa23",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "4af06ea6aa23",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "4af06ea6aa23",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Rayo, Isi, Palazón, DAZN"
-    },
-    {
-      "id": "4af06ea6aa23",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "91b8b4f7911b",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "91b8b4f7911b",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "91b8b4f7911b",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "91b8b4f7911b",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : CAN"
-    },
-    {
-      "id": "91b8b4f7911b",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "feeb7e46d769",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "feeb7e46d769",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "feeb7e46d769",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "feeb7e46d769",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "f99f6ad0b51c",
-      "lang": "fr",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Inter, Waren, Klare Analyse, Transferziele Dass, Hürde Dortmund"
-    },
-    {
-      "id": "f99f6ad0b51c",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "f99f6ad0b51c",
+      "id": "6d7dc2bf023e",
       "lang": "en",
       "type": "nom_perdu",
-      "detail": "noms propres absents : Inter, Waren, Klare Analyse, Transferziele Dass, Hürde Dortmund"
+      "detail": "noms propres absents : ManUnited, Handspiel-Kontroverse, Maguire Manchester United, Handspiel von Harry Maguire, Diskussionen"
     },
     {
-      "id": "f99f6ad0b51c",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "f99f6ad0b51c",
+      "id": "6d7dc2bf023e",
       "lang": "es",
       "type": "nom_perdu",
-      "detail": "noms propres absents : Inter, Waren, Klare Analyse, Transferziele Dass, Hürde Dortmund"
+      "detail": "noms propres absents : ManUnited, Handspiel-Kontroverse, Maguire Manchester United, Handspiel von Harry Maguire, Diskussionen"
     },
     {
-      "id": "f99f6ad0b51c",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "f99f6ad0b51c",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : HSV"
-    },
-    {
-      "id": "f99f6ad0b51c",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "c68616d0e2a6",
+      "id": "cfa2719cee78",
       "lang": "fr",
       "type": "nom_perdu",
-      "detail": "noms propres absents : Nuevo, Jordi Cruyff El, Ajax de Amsterdam, Míchel Sánchez"
+      "detail": "noms propres absents : Großes, Sieg, Im Spiel, Partie, Trainer"
     },
     {
-      "id": "c68616d0e2a6",
+      "id": "cfa2719cee78",
       "lang": "fr",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "c68616d0e2a6",
+      "id": "cfa2719cee78",
       "lang": "en",
       "type": "nom_perdu",
-      "detail": "noms propres absents : Nuevo, Jordi Cruyff El, Ajax de Amsterdam"
+      "detail": "noms propres absents : Großes, Sieg, Im Spiel, Saison, Partie"
     },
     {
-      "id": "c68616d0e2a6",
+      "id": "cfa2719cee78",
       "lang": "en",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "c68616d0e2a6",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "c68616d0e2a6",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "d03bac771bd5",
-      "lang": "fr",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Napoli, Leihe, FCH Wer, Gespräch"
-    },
-    {
-      "id": "d03bac771bd5",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "d03bac771bd5",
-      "lang": "en",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Leihe, FCH Wer, Gespräch"
-    },
-    {
-      "id": "d03bac771bd5",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "d03bac771bd5",
+      "id": "cfa2719cee78",
       "lang": "es",
       "type": "nom_perdu",
-      "detail": "noms propres absents : Martinez, Leihe, FCH Wer, Gespräch"
+      "detail": "noms propres absents : Athletic Bilbao, Großes, Sieg, Im Spiel, Saison"
     },
     {
-      "id": "d03bac771bd5",
+      "id": "cfa2719cee78",
       "lang": "es",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "d03bac771bd5",
+      "id": "cfa2719cee78",
       "lang": "ar",
       "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Woltemade, FCH"
+      "detail": "mots restés en alphabet latin : BVB"
     },
     {
-      "id": "d03bac771bd5",
+      "id": "cfa2719cee78",
       "lang": "ar",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "5c2930a2af8f",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "5c2930a2af8f",
-      "lang": "en",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Éliminatoires CAN, Diables Rouges, République, Coupe, Afrique"
-    },
-    {
-      "id": "5c2930a2af8f",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "5c2930a2af8f",
-      "lang": "es",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Éliminatoires CAN, Diables Rouges, République, Coupe, Afrique"
-    },
-    {
-      "id": "5c2930a2af8f",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "5c2930a2af8f",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : CAN"
-    },
-    {
-      "id": "5c2930a2af8f",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "9e0c2ee92d83",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "9e0c2ee92d83",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "9e0c2ee92d83",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "9e0c2ee92d83",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "45e80b4aefb1",
+      "id": "cd604cac2116",
       "lang": "fr",
       "type": "nom_perdu",
-      "detail": "noms propres absents : Wechsel, Tor Weltmeister Emiliano, Schlussmann"
+      "detail": "noms propres absents : Zeitzeugen, Konietzkas, Bundesliga-Geschichte, Anekdote, Foto"
     },
     {
-      "id": "45e80b4aefb1",
+      "id": "cd604cac2116",
       "lang": "fr",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "45e80b4aefb1",
+      "id": "cd604cac2116",
       "lang": "en",
       "type": "nom_perdu",
-      "detail": "noms propres absents : Wechsel, Tor Weltmeister Emiliano, Schlussmann, FC Chelsea"
+      "detail": "noms propres absents : Zeitzeugen, Konietzkas, Bundesliga-Geschichte, Anekdote, Foto"
     },
     {
-      "id": "45e80b4aefb1",
+      "id": "cd604cac2116",
       "lang": "en",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "45e80b4aefb1",
+      "id": "cd604cac2116",
       "lang": "es",
       "type": "nom_perdu",
-      "detail": "noms propres absents : Wechsel, Martinez, Tor Weltmeister Emiliano, Schlussmann, FC Chelsea"
+      "detail": "noms propres absents : Zeitzeugen, Konietzkas, Bundesliga-Geschichte, Anekdote, Bewegtbildaufnahme"
     },
     {
-      "id": "45e80b4aefb1",
+      "id": "cd604cac2116",
       "lang": "es",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "45e80b4aefb1",
+      "id": "cd604cac2116",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : BVB"
+    },
+    {
+      "id": "cd604cac2116",
       "lang": "ar",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "1048e2f96d05",
+      "id": "06dfdb7c9aca",
       "lang": "fr",
       "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "1048e2f96d05",
+      "id": "06dfdb7c9aca",
       "lang": "en",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "1048e2f96d05",
+      "id": "06dfdb7c9aca",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "06dfdb7c9aca",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : International, japonais, façonné, par, légende, brésilienne, Zico, Ayase, Ueda, "
+    },
+    {
+      "id": "06dfdb7c9aca",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "92bbc1bb06a8",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "92bbc1bb06a8",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "92bbc1bb06a8",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "92bbc1bb06a8",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : Ein, fabelhafter, Spieler, Doppelpacker, Brunner, blüht, Monaco, auf, Zum, Start"
+    },
+    {
+      "id": "92bbc1bb06a8",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "5d8e000c9a96",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "5d8e000c9a96",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "5d8e000c9a96",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "5d8e000c9a96",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : not, good, relationship, deal, for, money, Emery, Villa, Chelsea, moves, Unai, i"
+    },
+    {
+      "id": "5d8e000c9a96",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "e2b33a68d13d",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "e2b33a68d13d",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "e2b33a68d13d",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "e2b33a68d13d",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : Los, jugadores, del, Ceuta, vuelven, detener, partido, volvieron, repetir, gesto"
+    },
+    {
+      "id": "e2b33a68d13d",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "3ebbf9bb6b79",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "3ebbf9bb6b79",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "3ebbf9bb6b79",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "3ebbf9bb6b79",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : Huijsen, gana, Mourinho, Dean, está, respondiendo, confianza, que, depositado, J"
+    },
+    {
+      "id": "3ebbf9bb6b79",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "1e06386a78db",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "1e06386a78db",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "1e06386a78db",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "1e06386a78db",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : Deutsche, Teams, Europapokal, Wann, stehen, englische, Wochen, Neun, noch, diese"
+    },
+    {
+      "id": "1e06386a78db",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "64475570044b",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "64475570044b",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "64475570044b",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "64475570044b",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : River, Ponzio, estrena, con, una, victoria, importante, sabe, muy, bien, qué, pa"
+    },
+    {
+      "id": "64475570044b",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "42209c784b42",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "42209c784b42",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "42209c784b42",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "42209c784b42",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : faut, réveille, Lucas, Digne, connaît, des, débuts, compliqués, pour, deuxième, "
+    },
+    {
+      "id": "42209c784b42",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "8efac305cc5c",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "8efac305cc5c",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "8efac305cc5c",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "8efac305cc5c",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : Avec, Kylian, Mbappé, Jude, Bellingham, Real, Madrid, version, José, Mourinho, t"
+    },
+    {
+      "id": "8efac305cc5c",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "c3301874b2b3",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "c3301874b2b3",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "c3301874b2b3",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "c3301874b2b3",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : Ligue, récital, Paris, Brunner, face, propulse, Monaco, tête, Auteur, ses, deux,"
+    },
+    {
+      "id": "c3301874b2b3",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "444c8126d969",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "444c8126d969",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "444c8126d969",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "444c8126d969",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : Wydad, les, tensions, autour, Ziyech, intensifient, avant, début, saison, Des, s"
+    },
+    {
+      "id": "444c8126d969",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "aa791356fb3d",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "aa791356fb3d",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "aa791356fb3d",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "aa791356fb3d",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : Michel, Platini, estime, que, Gianni, Infantino, doit, partir, présidence, FIFA,"
+    },
+    {
+      "id": "aa791356fb3d",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "3c36744d0f15",
+      "lang": "fr",
+      "type": "nom_perdu",
+      "detail": "noms propres absents : CAN, Can Chelsea, Given's, Pundit Shay Given"
+    },
+    {
+      "id": "3c36744d0f15",
       "lang": "es",
       "type": "nom_perdu",
-      "detail": "noms propres absents : Martinez, Emiliano Martinez's, Premier League’s"
+      "detail": "noms propres absents : CAN, Can Chelsea, Given's, Pundit Shay Given"
     },
     {
-      "id": "1048e2f96d05",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "1048e2f96d05",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "cb14c4717821",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "cb14c4717821",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "cb14c4717821",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "cb14c4717821",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "23b1a00aea71",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "23b1a00aea71",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "23b1a00aea71",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "23b1a00aea71",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "96b2caecb3e5",
+      "id": "887090811766",
       "lang": "fr",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "96b2caecb3e5",
+      "id": "887090811766",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "887090811766",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "887090811766",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : Freiburg, gewinnt, die, Conference, League, Der, überzeugt, auf, vielen, Ebenen,"
+    },
+    {
+      "id": "887090811766",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "714fd78b43c5",
+      "lang": "fr",
+      "type": "nom_perdu",
+      "detail": "noms propres absents : Augsburgs Kade, Klopps Zettel Unter, Augen von Jürgen Klopp, Fehlstart, FC Augsburg"
+    },
+    {
+      "id": "714fd78b43c5",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "714fd78b43c5",
+      "lang": "en",
+      "type": "nom_perdu",
+      "detail": "noms propres absents : Augsburgs Kade, Klopps Zettel Unter, Augen von Jürgen Klopp, Fehlstart, Erfreulich"
+    },
+    {
+      "id": "714fd78b43c5",
       "lang": "en",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "96b2caecb3e5",
+      "id": "714fd78b43c5",
       "lang": "es",
       "type": "nom_perdu",
-      "detail": "noms propres absents : Foot, Inter Miami L’argentin, Montréal"
+      "detail": "noms propres absents : Augsburgs Kade, Klopps Zettel Unter, Augen von Jürgen Klopp, Fehlstart, Erfreulich"
     },
     {
-      "id": "96b2caecb3e5",
+      "id": "714fd78b43c5",
       "lang": "es",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "96b2caecb3e5",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : MLS"
-    },
-    {
-      "id": "96b2caecb3e5",
+      "id": "714fd78b43c5",
       "lang": "ar",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "3532c4664925",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "3532c4664925",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "3532c4664925",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "3532c4664925",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : liberación, Lookman, ciudad, talismán, partido, que, Atlético, Madrid, disputó, "
-    },
-    {
-      "id": "3532c4664925",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "1223fec533ff",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "1223fec533ff",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "1223fec533ff",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "1223fec533ff",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Después, decidir, dejar, Barça, rompí, salía, calle, Alexia, Putellas, cambió, e"
-    },
-    {
-      "id": "1223fec533ff",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "75280af04d96",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "75280af04d96",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "75280af04d96",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "75280af04d96",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Borussia, Dortmund, besiegt, den, HSV, nach, Blitzstart, Zum, Bundesliga, Auftak"
-    },
-    {
-      "id": "75280af04d96",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "8dad235cdc89",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "8dad235cdc89",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "8dad235cdc89",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "8dad235cdc89",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Soportar, aquello, Madrid, fue, muy, duro, nivel, psicológico, pude, más, Tuve, "
-    },
-    {
-      "id": "8dad235cdc89",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "3f659c75b37a",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "3f659c75b37a",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "3f659c75b37a",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "3f659c75b37a",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Ligue, Nous, méritions, gagner, contre, Havre, assure, coach, lyonnais, Fonseca,"
-    },
-    {
-      "id": "3f659c75b37a",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "664d06d89fb3",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "664d06d89fb3",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "664d06d89fb3",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "664d06d89fb3",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : plan, que, Flick, Barça, tienen, reservado, Pesquer, Jordi, años, irá, del, cant"
-    },
-    {
-      "id": "664d06d89fb3",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "5a52b5106dde",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "5a52b5106dde",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "5a52b5106dde",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "5a52b5106dde",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Athletic, viaja, Vigo, con, Yuri, Johaneko, presencia, principal, novedad, convo"
-    },
-    {
-      "id": "5a52b5106dde",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "770e607c182f",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "770e607c182f",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "770e607c182f",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "770e607c182f",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Renaud, Ripart, buteur, face, Lorient, rugit, encore, après, des, années, galère"
-    },
-    {
-      "id": "770e607c182f",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "b409e0c14876",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "b409e0c14876",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "b409e0c14876",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "b409e0c14876",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : faut, faire, des, examens, demain, matin, entré, depuis, dix, minutes, latéral, "
-    },
-    {
-      "id": "b409e0c14876",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "1bbd53f2d0c3",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "1bbd53f2d0c3",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "1bbd53f2d0c3",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "1bbd53f2d0c3",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Tout, été, est, passé, toujours, même, point, Spalletti, alarme, pour, Thuram, r"
-    },
-    {
-      "id": "1bbd53f2d0c3",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "6e643fbe1b57",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "6e643fbe1b57",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "6e643fbe1b57",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "6e643fbe1b57",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Barcola, the, grasshopper, who, has, overcome, setbacks, Liverpool, agree, deal,"
-    },
-    {
-      "id": "6e643fbe1b57",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "4fbca1aead1f",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "4fbca1aead1f",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "4fbca1aead1f",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "4fbca1aead1f",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Manchester, City, puede, superar, récord, del, Barça, con, Frenkie, Jong, que, p"
-    },
-    {
-      "id": "4fbca1aead1f",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "5a9cbe30e29b",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "5a9cbe30e29b",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "5a9cbe30e29b",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "5a9cbe30e29b",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Titularisé, pour, première, fois, depuis, trois, mois, sifflé, puis, sorti, sous"
-    },
-    {
-      "id": "5a9cbe30e29b",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "0059e92b3fc4",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "0059e92b3fc4",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "0059e92b3fc4",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "0059e92b3fc4",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Celui, qui, vient, Juve, doit, avoir, une, grande, fierté, porter, maillot, piqu"
-    },
-    {
-      "id": "0059e92b3fc4",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "8293af25bb55",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "8293af25bb55",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "8293af25bb55",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "8293af25bb55",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Lewandowski, rettet, das, Remis, Chicago, Seattle, doppelt, Rückstand, Fire, lie"
-    },
-    {
-      "id": "8293af25bb55",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "7c909d9ac6ce",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "7c909d9ac6ce",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "7c909d9ac6ce",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "7c909d9ac6ce",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Tor, Geste, Pfiffe, Reitz, und, die, krasse, Punktlandung, gegen, Klub, Gladbach"
-    },
-    {
-      "id": "7c909d9ac6ce",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "04948851513f",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "04948851513f",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "04948851513f",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "04948851513f",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Antonio, helps, young, Ghanaians, chase, Premier, League, dreams, Former, West, "
-    },
-    {
-      "id": "04948851513f",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "d0343ad587b9",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "d0343ad587b9",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "d0343ad587b9",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "d0343ad587b9",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Nico, González, sale, con, Juventus, aleja, aún, más, del, Atlético, asunto, est"
-    },
-    {
-      "id": "d0343ad587b9",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "d22d80f44632",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "d22d80f44632",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "d22d80f44632",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "d22d80f44632",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Quadruplé, pour, Lionel, Messi, Antoine, Griezmann, Robert, Lewandowski, Thomas,"
-    },
-    {
-      "id": "d22d80f44632",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "b055148a7fe0",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "b055148a7fe0",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "b055148a7fe0",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "b055148a7fe0",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : América, afloja, sigue, líder, México, brasileño, Ícaro, Conceição, uruguayo, Br"
-    },
-    {
-      "id": "b055148a7fe0",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "8c76473acaee",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "8c76473acaee",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "8c76473acaee",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "8c76473acaee",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Amine, Ouazzani, une, recrue, pour, Angers, déjà, décisive, face, Auxerre, avant"
-    },
-    {
-      "id": "8c76473acaee",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "71c7aa1f2ff9",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "71c7aa1f2ff9",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "71c7aa1f2ff9",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "71c7aa1f2ff9",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Ligue, Cela, être, beaucoup, mieux, comment, Paris, veut, rapidement, séduire, B"
-    },
-    {
-      "id": "71c7aa1f2ff9",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "d9db26aae541",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "d9db26aae541",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "d9db26aae541",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "d9db26aae541",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : liquidation, judiciaire, Ligue, ans, Novak, Djokovic, capital, multipropriété, C"
-    },
-    {
-      "id": "d9db26aae541",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "5fea4443107c",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "5fea4443107c",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "5fea4443107c",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "5fea4443107c",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Messi, hay, palabras, para, describir, semejante, belleza, futbolística, Leo, su"
-    },
-    {
-      "id": "5fea4443107c",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "9e1a2a7e2391",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "9e1a2a7e2391",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "9e1a2a7e2391",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "9e1a2a7e2391",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Barça, multiusos, para, soñar, falta, saber, acabará, llegando, unando, que, cub"
-    },
-    {
-      "id": "9e1a2a7e2391",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "25ff7a92c807",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "25ff7a92c807",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "25ff7a92c807",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "25ff7a92c807",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Derbi, Real, Madrid, Atleti, para, empezar, Liga, Moeve, Hoy, domingo, arranca, "
-    },
-    {
-      "id": "25ff7a92c807",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "4fb0a1117877",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "4fb0a1117877",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "4fb0a1117877",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "4fb0a1117877",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Ligue, avec, Charlie, Cresswell, Rennes, trouvé, son, totem, défensif, Hôte, Man"
-    },
-    {
-      "id": "4fb0a1117877",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "ba95eb70aa6f",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "ba95eb70aa6f",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "ba95eb70aa6f",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "ba95eb70aa6f",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Así, sido, descomunal, golazo, Messi, Leo, marcado, hace, unas, horas, espectacu"
-    },
-    {
-      "id": "ba95eb70aa6f",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     }
   ]
 }
