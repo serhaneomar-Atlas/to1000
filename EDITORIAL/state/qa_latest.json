@@ -1,9 +1,15 @@
 {
-  "genere_le": "2026-08-31T13:17:02+00:00",
+  "genere_le": "2026-09-01T11:26:55+00:00",
   "pages_verifiees": 33,
-  "erreurs": 2,
+  "erreurs": 3,
   "alertes": 0,
   "entrees": [
+    {
+      "niveau": "erreur",
+      "famille": "fraicheur",
+      "ou": "stats.json",
+      "quoi": "donnée vieille de 3j (max 3 days, 0:00:00) — la synchro ne tourne probablement plus"
+    },
     {
       "niveau": "erreur",
       "famille": "coherence",
