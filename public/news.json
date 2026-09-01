@@ -341,26 +341,27 @@
       "i18n": {
         "es": {
           "title": "El joven de River que sufrió una grave lesión y recibió un lindo gesto de sus compañeros",
-          "summary": "Luego de volver a sufrir una rotura del ligamento cruzado anterior, Giorgio Costantini fue homenajeado por el plantel de la Reserva y, además, realizó un posteo en sus redes sociales.",
-          "needs_translation": false
+          "summary": "Tras sufrir una nueva rotura del ligamento cruzado anterior, Giorgio Costantini, futbolista de la Reserva de River, recibió un homenaje de apoyo por parte de sus compañeros de equipo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The young man from River who suffered a serious injury and received a nice gesture from his classmates",
-          "summary": "After suffering a rupture of the anterior cruciate ligament again, Giorgio Costantini was honoured by the Reserve staff and, in addition, made a post on his social networks.",
+          "title": "The young River player who suffered a serious injury and received a touching gesture from his teammates",
+          "summary": "After suffering another anterior cruciate ligament tear, River Reserva player Giorgio Costantini received a supportive tribute from his teammates.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le jeune homme de River qui a subi une grave blessure et a reçu un joli geste de ses camarades",
-          "summary": "Après avoir subi à nouveau une rupture du ligament croisé antérieur, Giorgio Costantini a été honoré par l'équipe de la Réserve et a également posté un message sur ses réseaux sociaux.",
+          "title": "Le jeune joueur de River victime d'une grave blessure et soutenu par ses coéquipiers",
+          "summary": "Victime d'une nouvelle rupture du ligament croisé antérieur, le joueur de la Reserva de River, Giorgio Costantini, a reçu un hommage de soutien de la part de ses coéquipiers.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الشاب من ريفر الذي تعرض لإصابة خطيرة وتلقى لفتة لطيفة من زملائه",
-          "summary": "بعد أن عانى من تمزق الرباط الصليبي الأمامي مرة أخرى، تم تكريم جورجيو كوستانتيني من قبل موظفي الاحتياطي، وبالإضافة إلى ذلك، نشر منشورًا على شبكاته الاجتماعية.",
+          "title": "لاعب ريفر بليت الشاب يتعرض لإصابة خطيرة ويتلقى لفتة طيبة من زملائه",
+          "summary": "تلقى لاعب رديف ريفر بليت جورجيو كوستانتيني دعماً وتكريماً من زملائه في الفريق، وذلك إثر تعرضه لإصابة جديدة بتمزق في الرباط الصليبي الأمامي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-homenaje-costantini-reserva-jugadores-lesion_0_LCIdSzs065.html",
@@ -382,7 +383,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-homenaje-costantini-reserva-jugadores-lesion_0_LCIdSzs065.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "05e3f4bbd10d",
@@ -640,27 +646,44 @@
       "summary": "Le contrat de Renato Sanches au PSG, qui courait jusqu'en 2027, a été résilié. Le milieu de terrain international portugais se retrouve libre, à 29 ans.",
       "i18n": {
         "fr": {
-          "title": "Transferts : le contrat de Renato Sanches au PSG a été résilié",
-          "summary": "Le contrat de Renato Sanches au PSG, qui courait jusqu'en 2027, a été résilié. Le milieu de terrain international portugais se retrouve libre, à 29 ans.",
-          "needs_translation": false
+          "title": "Le PSG et Renato Sanches résilient leur contrat",
+          "summary": "Le Paris Saint-Germain a résilié mardi le contrat de Renato Sanches, libérant le milieu international portugais qui était engagé jusqu'en 2027.",
+          "body": [
+            "Arrivé de Lille en 2022, le joueur de 29 ans n'aura disputé qu'une seule saison sous le maillot parisien avant d'enchaîner les prêts à l'AS Rome, à Benfica puis au Panathinaïkos, où il a disputé 21 rencontres l'an dernier. Freiné par des blessures récurrentes, le champion d'Europe 2016 se retrouve désormais libre."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Transfers: Renato Sanches' contract with PSG has been terminated",
-          "summary": "Renato Sanches' contract with PSG, which ran until 2027, was terminated. The Portuguese international midfielder is free at 29.",
+          "title": "Paris Saint-Germain and Renato Sanches terminate contract",
+          "summary": "Paris Saint-Germain terminated Renato Sanches' contract on Tuesday, releasing the 29-year-old Portuguese international midfielder from his deal that ran until 2027.",
+          "body": [
+            "Arriving from Lille in 2022, he played only one season in Paris before successive loan spells at AS Roma, Benfica, and Panathinaikos, where he made 21 appearances last season. Plagued by recurring injuries, the Euro 2016 champion is now a free agent."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Traspasos: se rescindió el contrato de Renato Sanches con el PSG",
-          "summary": "El contrato de Renato Sanches con el PSG, que duraba hasta 2027, ha sido rescindido. El centrocampista internacional portugués queda libre a los 29 años.",
+          "title": "El Paris Saint-Germain y Renato Sanches rescinden su contrato",
+          "summary": "El Paris Saint-Germain rescindió este martes el contrato de Renato Sanches, liberando al centrocampista internacional portugués de su vinculación hasta 2027.",
+          "body": [
+            "Llegado desde Lille en 2022, el futbolista de 29 años solo disputó una temporada en París antes de encadenar cesiones en AS Roma, Benfica y Panathinaikos, donde jugó 21 partidos la pasada campaña. Lastrado por problemas físicos, el campeón de la Eurocopa 2016 queda libre."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "التحويلات: تم إنهاء عقد ريناتو سانشيز مع PSG",
-          "summary": "تم إنهاء عقد ريناتو سانشيز مع PSG، والذي استمر حتى عام 2027. لاعب خط الوسط الدولي البرتغالي حر في 29.",
+          "title": "باريس سان جيرمان يفسخ عقد ريناتو سانشيز",
+          "summary": "فسخ نادي باريس سان جيرمان يوم الثلاثاء عقد لاعبه ريناتو سانشيز، ليصبح لاعب الوسط الدولي البرتغالي حراً بعد إنهاء ارتباطه الذي كان يمتد حتى 2027.",
+          "body": [
+            "وانضم اللاعب البالغ 29 عاماً من ليل في 2022، ولم يشارك سوى موسم واحد مع الفريق الباريسي قبل إعارته إلى روما وبنفيكا وباناثينايكوس، حيث خاض 21 مباراة الموسم الماضي. وأصبح بطل يورو 2016 حراً بعد أن عطلت الإصابات المتكررة مسيرته."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Transferts-le-contrat-de-renato-sanches-au-psg-a-ete-resilie/1715345#at_medium=RSS_feeds",
@@ -682,7 +705,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Transferts-le-contrat-de-renato-sanches-au-psg-a-ete-resilie/1715345#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-01T22:50:34+00:00"
+        }
+      }
     },
     {
       "id": "9069feba6662",
@@ -691,26 +727,27 @@
       "i18n": {
         "fr": {
           "title": "Manchester City officialise l'arrivée de l'ancien Marseillais Iliman Ndiaye en provenance d'Everton",
-          "summary": "D'abord annoncé en partance pour Tottenham, Iliman Ndiaye a finalement officiellement rejoint Manchester City ce mardi soir, contre environ 75 millions d'euros.",
-          "needs_translation": false
+          "summary": "Manchester City a officialisé l'arrivée d'Iliman Ndiaye en provenance d'Everton pour environ 75 millions d'euros, malgré des rumeurs initiales l'annonçant à Tottenham.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Manchester City announces the arrival of former Marseillais Iliman Ndiaye from Everton",
-          "summary": "First announced leaving for Tottenham, Iliman Ndiaye finally officially joined Manchester City this Tuesday evening, against about 75 million euros.",
+          "title": "Manchester City officially announce the signing of former Marseille player Iliman Ndiaye from Everton",
+          "summary": "Manchester City have officially completed the signing of Iliman Ndiaye from Everton for around €75 million, despite initial reports linking him with a move to Tottenham.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Manchester City oficializa la llegada del ex marsellés Iliman Ndiaye procedente del Everton",
-          "summary": "Anunciado inicialmente en salida hacia Tottenham, Iliman Ndiaye finalmente se unió oficialmente al Manchester City este martes por la noche, por unos 75 millones de euros.",
+          "title": "Manchester City oficializa la llegada del exmarsellés Iliman Ndiaye procedente de Everton",
+          "summary": "Manchester City ha oficializado el fichaje de Iliman Ndiaye procedente de Everton por unos 75 millones de euros, a pesar del interés inicial de Tottenham.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مانشستر سيتي يعلن وصول مارسيليا إليمان ندياي السابق من إيفرتون",
-          "summary": "أعلن إليمان ندياي لأول مرة مغادرته إلى توتنهام، وانضم أخيرًا رسميًا إلى مانشستر سيتي مساء الثلاثاء، مقابل حوالي 75 مليون يورو.",
+          "title": "مانشستر سيتي يعلن رسمياً تعاقده مع لاعب مارسيليا السابق إليمان ندياي قادماً من إيفرتون",
+          "summary": "أعلن مانشستر سيتي رسمياً تعاقده مع إليمان ندياي قادماً من إيفرتون في صفقة بلغت قيمتها نحو 75 مليون يورو، بعدما كان قريباً من الانضمام إلى توتنهام.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Manchester-city-officialise-l-arrivee-de-l-ancien-marseillais-iliman-ndiaye-en-provenance-d-everton/1715343#at_medium=RSS_feeds",
@@ -732,7 +769,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Manchester-city-officialise-l-arrivee-de-l-ancien-marseillais-iliman-ndiaye-en-provenance-d-everton/1715343#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4e361452417d",
@@ -896,27 +938,48 @@
       "summary": "Malgré un contretemps, Monaco et Everton continuent de négocier la possible arrivée de l'attaquant américain de l'ASM en Premier League. Mais l'affaire se révèle compliquée.",
       "i18n": {
         "fr": {
-          "title": "Après un imbroglio autour de Folarin Balogun, Monaco et Everton discutent toujours mais l'accord semble compromis",
-          "summary": "Malgré un contretemps, Monaco et Everton continuent de négocier la possible arrivée de l'attaquant américain de l'ASM en Premier League. Mais l'affaire se révèle compliquée.",
-          "needs_translation": false
+          "title": "Mercato : le transfert de Folarin Balogun à Everton très compromis",
+          "summary": "Le départ de Folarin Balogun vers Everton est grandement menacé après des examens médicaux non concluants en raison de douleurs au genou.",
+          "body": [
+            "Les deux clubs poursuivent leurs échanges dans l'urgence, mais l'opération coince. Si Monaco estimait que l'état physique de son attaquant de 25 ans ne remettait pas en cause l'accord, les Toffees ne partagent pas cet optimisme après la visite médicale.",
+            "Alors que le mercato hivernal ferme ses portes à minuit en Angleterre ce mardi, la direction d'Everton a déjà activé un plan de secours et cible le joueur de Manchester United, Joshua Zirkzee."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "After an imbroglio around Folarin Balogun, Monaco and Everton are still discussing but the agreement seems compromised",
-          "summary": "Despite a setback, Monaco and Everton continue to negotiate the possible arrival of the American striker of the ASM in the Premier League. But the case turns out to be complicated.",
+          "title": "Transfer deadline: Folarin Balogun's move to Everton on the brink of collapse",
+          "summary": "Folarin Balogun's proposed switch to Everton is in serious jeopardy after inconclusive medical checks flagged knee concerns.",
+          "body": [
+            "Both clubs remain in urgent discussions, but the deal has hit a major roadblock. While Monaco maintained that the 25-year-old striker's fitness would not derail the transfer, the Toffees do not share that optimism following the medical tests.",
+            "With the winter transfer window closing at midnight in England this Tuesday, Everton's board has already triggered a backup plan, targeting Manchester United forward Joshua Zirkzee."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Después de un embrollo en torno a Folarin Balogun, Mónaco y Everton siguen discutiendo, pero el acuerdo parece comprometido",
-          "summary": "A pesar de un contratiempo, Mónaco y Everton continúan negociando la posible llegada del delantero estadounidense del ASM a la Premier League. Pero el asunto resulta complicado.",
+          "title": "Mercado: El fichaje de Folarin Balogun por el Everton, en la cuerda floja",
+          "summary": "La salida de Folarin Balogun rumbo a Everton corre serio peligro tras un reconocimiento médico no concluyente por problemas en la rodilla.",
+          "body": [
+            "Ambos clubes siguen negociando a contrarreloj, pero la operación está atascada. Si Monaco consideraba que el estado físico de su delantero de 25 años no ponía en riesgo el acuerdo, los Toffees no comparten ese optimismo tras las pruebas médicas.",
+            "Con el mercado invernal cerrando a medianoche este martes en Inglaterra, la directiva de Everton ya ha activado su plan B y apunta al delantero de Manchester United, Joshua Zirkzee."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "بعد صراع حول فولارين بالوجون، لا تزال موناكو وإيفرتون تناقشان ولكن يبدو أن الاتفاق قد تعرض للخطر",
-          "summary": "على الرغم من الانتكاسة، يواصل موناكو وإيفرتون التفاوض على احتمال وصول المهاجم الأمريكي في الدوري الممتاز. لكن اتضح أن القضية معقدة.",
+          "title": "الميركاتو: تعثر صفقة انتقال فولارين بالوغون إلى إيفرتون",
+          "summary": "باتت صفقة انتقال فولارين بالوغون إلى إيفرتون مهددة بالانهيار بعد فحوصات طبية غير مطمئنة بسبب آلام في الركبة.",
+          "body": [
+            "يواصل الناديان محادثاتهما بشكل عاجل، غير أن الصفقة تواجه تعقيدات بالغة. ورغم تأكيد موناكو أن الحالة البدنية لمهاجمه صاحب الـ25 عاماً لا تلغي الاتفاق، إلا أن التوفيز لا يشاطرونه هذا التفاؤل بعد الكشف الطبي.",
+            "ومع اقتراب إغلاق سوق الانتقالات الشتوية في إنجلترا منتصف ليل الثلاثاء، لجأت إدارة إيفرتون سريعاً إلى خطة بديلة، مستهدفة التعاقد مع مهاجم مانشستر يونايتد جوشوا زيركزي."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Apres-un-imbroglio-autour-de-folarin-balogun-monaco-et-everton-discutent-toujours-mais-l-accord-semble-compromis/1715337#at_medium=RSS_feeds",
@@ -938,7 +1001,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Apres-un-imbroglio-autour-de-folarin-balogun-monaco-et-everton-discutent-toujours-mais-l-accord-semble-compromis/1715337#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-01T22:50:37+00:00"
+        }
+      }
     },
     {
       "id": "5606f6811023",
@@ -946,27 +1022,48 @@
       "summary": "Dans les dernières heures du mercato, Monaco négocie l'arrivée sous forme de prêt du milieu de terrain de Nice de 26 ans, qui se dirigeait dans un premier temps vers Al-Ittihad, en Arabie saoudite.",
       "i18n": {
         "fr": {
-          "title": "Mercato : Monaco négocie le prêt de Hicham Boudaoui (Nice) en joker",
-          "summary": "Dans les dernières heures du mercato, Monaco négocie l'arrivée sous forme de prêt du milieu de terrain de Nice de 26 ans, qui se dirigeait dans un premier temps vers Al-Ittihad, en Arabie saoudite.",
-          "needs_translation": false
+          "title": "Monaco négocie l'arrivée en joker d'Hicham Boudaoui",
+          "summary": "L'AS Monaco discute avec Nice pour faire venir en prêt le milieu international algérien Hicham Boudaoui sous le statut de joker.",
+          "body": [
+            "Initialement pressenti pour rejoindre Al-Ittihad en Arabie saoudite, le joueur de 26 ans pourrait finalement rester sur la Côte d'Azur. L'opération porterait sur un prêt avec option d'achat, conditionné à une prolongation préalable d'une saison de son contrat avec les Aiglons, qui court actuellement jusqu'en 2027.",
+            "Cette offensive de dernière minute s'inscrit dans un marché agité pour les deux formations du Sud-Est, l'OGC Nice ayant par ailleurs bouclé les signatures de Niels Nkounkou et Abdelhak Ben Idder."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Mercato: Monaco negotiates the loan of Hicham Boudaoui (Nice) in wildcard",
-          "summary": "In the final hours of the transfer window, Monaco negotiated the arrival as a loan of the 26-year-old Nice midfielder, who was initially heading for Al-Ittihad, Saudi Arabia.",
+          "title": "AS Monaco in talks over joker move for Hicham Boudaoui",
+          "summary": "AS Monaco are in discussions with Nice to sign Algerian international midfielder Hicham Boudaoui on loan under the joker transfer rule.",
+          "body": [
+            "Initially expected to head to Saudi side Al-Ittihad, the 26-year-old could ultimately remain on the Côte d'Azur. The deal would be a loan with an option to buy, contingent on the player first signing a one-year contract extension with Nice, where his current deal runs until 2027.",
+            "This late swoop comes amid a frantic transfer window for both southern clubs, with OGC Nice having also wrapped up the signings of Niels Nkounkou and Abdelhak Ben Idder."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Mercado: Mónaco negocia el préstamo de Hicham Boudaoui (Niza) como comodín",
-          "summary": "En las últimas horas del mercado, Mónaco está negociando la llegada en forma de préstamo del centrocampista del Niza de 26 años, que inicialmente se dirigía a Al-Ittihad, en Arabia Saudita.",
+          "title": "El AS Monaco negocia la llegada como comodín de Hicham Boudaoui",
+          "summary": "El AS Monaco negocia con el Nice la cesión del centrocampista internacional argelino Hicham Boudaoui bajo la figura del comodín.",
+          "body": [
+            "Aunque en un principio apuntaba al Al-Ittihad de Arabia Saudí, el futbolista de 26 años podría quedarse finalmente en la Côte d'Azur. La operación consistiría en una cesión con opción de compra, supeditada a una renovación previa de una temporada de su contrato con los Aiglons, que finaliza en 2027.",
+            "Esta ofensiva de última hora se produce en un mercado muy movido para ambos clubes, en el que el OGC Nice también ha cerrado las incorporaciones de Niels Nkounkou y Abdelhak Ben Idder."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ميركاتو: موناكو تتفاوض على قرض هشام بوداوي (نيس) بأحرف البدل",
-          "summary": "في الساعات الأخيرة من فترة الانتقالات، تفاوضت موناكو على الوصول كقرض للاعب خط وسط نيس البالغ من العمر 26 عامًا، والذي كان متجهًا في البداية إلى الاتحاد، المملكة العربية السعودية.",
+          "title": "موناكو يفاوض لضم الجزائري هشام بوداوي كجوكر",
+          "summary": "فتح نادي موناكو باب المفاوضات مع نيس لضم لاعب الوسط الدولي الجزائري هشام بوداوي على سبيل الإعارة ضمن صفقة «جوكر».",
+          "body": [
+            "بعدما كان قريباً من الانضمام إلى الاتحاد السعودي، قد ينتهي المطاف باللاعب البالغ 26 عاماً بالبقاء في الكوت دازور. وتتجه الصفقة لتكون إعارة مع خيار الشراء، بشرط تمديد عقده لموسم إضافي مع نيس، علماً بأن ارتباطه الحالي يمتد حتى عام 2027.",
+            "تأتي هذه الخطوة في اللحظات الأخيرة وسط حراك قوي في الميركاتو لكلا الناديين، بعدما حسم نيس أيضاً تعاقده مع نيلز نكونكو وعبد الحق بن يدر."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Mercato-monaco-negocie-le-pret-de-hicham-boudaoui-nice-en-joker/1715335#at_medium=RSS_feeds",
@@ -988,7 +1085,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Mercato-monaco-negocie-le-pret-de-hicham-boudaoui-nice-en-joker/1715335#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-01T22:50:39+00:00"
+        }
+      }
     },
     {
       "id": "d248aa3244cc",
@@ -1047,26 +1157,27 @@
       "i18n": {
         "en": {
           "title": "Chelsea goalkeeper Sanchez joins Como on loan",
-          "summary": "Chelsea goalkeeper Robert Sanchez joins Como on a season-long loan after losing his starting spot to new arrival Emi Martinez.",
-          "needs_translation": false
+          "summary": "Chelsea goalkeeper Robert Sanchez has joined Como on a season-long loan after losing his starting spot to new signing Emi Martinez.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le gardien de Chelsea Sanchez rejoint Como en prêt",
-          "summary": "Le gardien de Chelsea Robert Sanchez rejoint Côme pour un prêt de saison après avoir perdu sa place de départ face à la nouvelle arrivée Emi Martinez.",
+          "title": "Le gardien de Chelsea Sanchez prêté à Como",
+          "summary": "Le gardien de Chelsea Robert Sanchez rejoint Como en prêt d'une saison après avoir perdu sa place de titulaire au profit de la nouvelle recrue Emi Martinez.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El portero del Chelsea Sánchez se une a Como cedido",
-          "summary": "El portero del Chelsea, Robert Sánchez, se une a Como en un préstamo de toda la temporada después de perder su puesto de titular ante la recién llegada Emi Martínez.",
+          "title": "El portero del Chelsea Sanchez se marcha cedido al Como",
+          "summary": "El portero del Chelsea Robert Sanchez jugará cedido una temporada en el Como tras perder la titularidad frente al nuevo fichaje Emi Martinez.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "حارس مرمى تشيلسي سانشيز ينضم إلى كومو على سبيل الإعارة",
-          "summary": "حارس مرمى تشيلسي روبرت سانشيز ينضم إلى كومو على سبيل الإعارة لمدة موسم بعد أن خسر نقطة انطلاقه أمام الوافد الجديد إيمي مارتينيز.",
+          "title": "حارس تشيلسي سانشيز ينضم إلى كومو على سبيل الإعارة",
+          "summary": "انتقل حارس مرمى تشيلسي روبرت سانشيز إلى كومو معاراً لموسم كامل، وذلك بعد فقدانه مركزه الأساسي لصالح الوافد الجديد إيمي مارتينيز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/ce3r0yww04ro?at_medium=RSS&at_campaign=rss",
@@ -1088,7 +1199,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/ce3r0yww04ro?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "aa27bb66364a",
@@ -1097,26 +1213,27 @@
       "i18n": {
         "fr": {
           "title": "Coupe du monde U17 : L’Ouganda face à la Corée du Sud, tout le programme du premier tour des Cubs",
-          "summary": "L’Ouganda va disputer la Coupe du monde U17, pour la première fois de son histoire. Les Cubs héritent d’un groupe B avec l’Equateur, la Corée du Sud et la Nouvelle-Calédonie.",
-          "needs_translation": false
+          "summary": "Pour sa première participation à la Coupe du Monde U17, L’Ouganda évoluera dans le groupe B aux côtés de l'Equateur, de la Corée du Sud et de la Nouvelle-Calédonie.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "U17 World Cup: Uganda vs. South Korea, the entire program of the Cubs' first round",
-          "summary": "Uganda will play in the U17 World Cup, for the first time in its history. The Cubs inherit a Group B with Ecuador, South Korea and New Caledonia.",
+          "title": "U17 World Cup: L’Ouganda to face South Korea, full group stage schedule for the Cubs",
+          "summary": "For their first-ever U17 World Cup appearance, L’Ouganda was drawn into Group B alongside Equateur, South Korea, and Nouvelle-Calédonie.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Copa Mundial Sub-17: Uganda contra Corea del Sur, todo el programa de la primera ronda de los Cachorros",
-          "summary": "Uganda disputará la Copa del Mundo Sub-17, por primera vez en su historia. Los Cubs heredan un grupo B con Ecuador, Corea del Sur y Nueva Caledonia.",
+          "title": "Mundial Sub-17: L’Ouganda se enfrentará a Corea del Sur, todo el programa de la primera fase de los Cubs",
+          "summary": "En su primera participación histórica en el Mundial Sub-17, L’Ouganda quedó encuadrada en el Grupo B junto a Equateur, Corea del Sur y Nouvelle-Calédonie.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كأس العالم تحت 17 سنة: أوغندا ضد كوريا الجنوبية، البرنامج الكامل للجولة الأولى للأشبال",
-          "summary": "ستلعب أوغندا في كأس العالم تحت 17 سنة، لأول مرة في تاريخها. يرث الأشبال المجموعة ب مع الإكوادور وكوريا الجنوبية وكاليدونيا الجديدة.",
+          "title": "كأس العالم تحت 17 عاماً: أوغندا تواجه كوريا الجنوبية، البرنامج الكامل لدور المجموعات",
+          "summary": "تشارك أوغندا للمرة الأولى في تاريخها بكأس العالم تحت 17 عاماً، حيث أوقعتها القرعة في المجموعة الثانية إلى جانب الإكوادور، كوريا الجنوبية، وكاليدونيا الجديدة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football/coupe-du-monde-u17-louganda-face-a-la-coree-du-sud-tout-le-programme-du-premier-tour-des-cubs/",
@@ -1138,7 +1255,12 @@
           "url": "https://africatopsports.com/football/coupe-du-monde-u17-louganda-face-a-la-coree-du-sud-tout-le-programme-du-premier-tour-des-cubs/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "da3286dece91",
@@ -1146,27 +1268,44 @@
       "summary": "DÉCRYPTAGE – Le championnat de France s’est globalement déplumé afin de renflouer des caisses désespérément vides lors du marché des transferts.",
       "i18n": {
         "fr": {
-          "title": "Sous perfusion anglaise, un PSG record, l’OM muet… Ce qu’il faut retenir du mercato des clubs de Ligue 1",
-          "summary": "DÉCRYPTAGE – Le championnat de France s’est globalement déplumé afin de renflouer des caisses désespérément vides lors du marché des transferts.",
-          "needs_translation": false
+          "title": "Mercato : les clubs de Ligue 1 vendent pour 1,3 milliard d'euros",
+          "summary": "Les clubs de Ligue 1 ont cédé pour près de 1,3 milliard d'euros de joueurs durant le mercato estival.",
+          "body": [
+            "Face à l'effondrement des droits TV et à des finances dans le rouge, les clubs français ont limité leurs emplettes à 600 millions d'euros selon Transfermarkt. Une balance largement excédentaire obtenue au détriment de la compétitivité sportive, les formations de l'élite ayant dû sacrifier nombre de leurs cadres pour équilibrer leurs comptes."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Under English infusion, a record PSG, the silent OM... What to remember from the market of Ligue 1 clubs",
-          "summary": "DECODING – The French championship has generally plummeted in order to bail out desperately empty crates during the transfer market.",
+          "title": "Transfer window: Ligue 1 clubs bring in €1.3bn from player sales",
+          "summary": "Ligue 1 clubs generated nearly €1.3 billion from player departures during the summer transfer window.",
+          "body": [
+            "Hit hard by a sharp drop in broadcasting revenue and mounting financial strain, French clubs limited their spending to €600 million, according to Transfermarkt. While this leaves a heavily positive balance, it comes at the expense of on-pitch competitiveness, forcing teams to cash in on key assets to balance the books."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Bajo perfusión inglesa, un PSG récord, el OM mudo… Lo que hay que recordar del mercado de fichajes de los clubes de la Ligue 1",
-          "summary": "DESCIFRADO – El campeonato de Francia se ha desplazado globalmente para reflotar cajas desesperadamente vacías durante el mercado de transferencias.",
+          "title": "Mercado de fichajes: los clubes de Ligue 1 ingresan 1.300 millones de euros en ventas",
+          "summary": "Los clubes de Ligue 1 recaudaron cerca de 1.300 millones de euros en traspasos durante la ventana estival.",
+          "body": [
+            "Golpeados por la drástica caída de los ingresos televisivos y una delicada situación financiera, los conjuntos galos limitaron su gasto a 600 millones de euros, según Transfermarkt. Este holgado superávit pasa factura a la competitividad del campeonato, obligado a desprenderse de sus principales figuras para cuadrar balances."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "تحت التسريب الإنجليزي، سجل PSG، OM الصامت... ما يجب تذكره من سوق أندية Ligue 1",
-          "summary": "فك التشفير – تراجعت البطولة الفرنسية بشكل عام من أجل إنقاذ الصناديق الفارغة بشكل يائس خلال سوق الانتقالات.",
+          "title": "الميركاتو: أندية الدوري الفرنسي تجني 1.3 مليار يورو من بيع اللاعبين",
+          "summary": "حصدت أندية الدوري الفرنسي ما يقارب 1.3 مليار يورو من مبيعات اللاعبين خلال سوق الانتقالات الصيفية.",
+          "body": [
+            "في ظل التراجع الحاد في عائدات البث التلفزيوني والأزمة المالية الخانقة، قيدت الأندية الفرنسية نفقاتها عند 600 مليون يورو وفقاً لموقع ترانسفير ماركت. وجاء هذا الفائض المالي الكبير على حساب التنافسية الرياضية، بعدما اضطرت فرق المسابقة إلى التخلي عن أبرز ركائزها لضبط ميزانياتها."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/transferts/mercato-sous-perfusion-anglaise-la-ligue-1-a-encore-bricole-cet-ete-20260901",
@@ -1188,7 +1327,20 @@
           "url": "https://www.lefigaro.fr/sports/football/transferts/mercato-sous-perfusion-anglaise-la-ligue-1-a-encore-bricole-cet-ete-20260901"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-01T22:50:42+00:00"
+        }
+      }
     },
     {
       "id": "b36fedb285fb",
@@ -1197,31 +1349,33 @@
       "i18n": {
         "de": {
           "title": "Liveblog zum Deadline Day: Leipzig und Schalke verpflichten WM-Fahrer",
-          "summary": "Seit 20 Uhr ist das Sommer-Transferfenster geschlossen. Hier gibt es alle aktuellen Meldungen zur Bundesliga im Liveblog.",
-          "needs_translation": false
+          "summary": "Das Sommer-Transferfenster ist seit 20 Uhr geschlossen. Am Deadline Day haben unter anderem Leipzig und Schalke WM-Teilnehmer verpflichtet.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Live blog for Deadline Day: Leipzig and Schalke engage World Championship drivers",
-          "summary": "The summer transfer window has been closed since 8 pm. Here you can find all the latest news about the Bundesliga in the live blog.",
+          "title": "Deadline Day Liveblog: Leipzig and Schalke sign World Cup players",
+          "summary": "The summer transfer window closed at 20:00. On Deadline Day, clubs including Leipzig and Schalke completed signings of World Cup participants.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Liveblog du Deadline Day : Leipzig et Schalke engagent des coureurs de la Coupe du Monde",
-          "summary": "La fenêtre de transfert d'été est fermée depuis 20 heures. Vous trouverez ici toutes les dernières nouvelles sur la Bundesliga sur le blog en direct.",
+          "title": "Liveblog du Deadline Day : Leipzig et Schalke recrutent des mondialistes",
+          "summary": "Le mercato estival est clos depuis 20h. Lors du Deadline Day, Leipzig et Schalke ont notamment recruté des joueurs ayant disputé la Coupe du monde.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Blog en vivo para el día de la fecha límite: Leipzig y Schalke contratan a pilotos de la Copa del Mundo",
-          "summary": "Seit 20 Uhr ist das Sommer-Transferfenster geschlossen. Hier gibt es alle aktuellen Meldungen zur Bundesliga im Liveblog.",
+          "title": "Liveblog del Deadline Day: Leipzig y Schalke fichan a mundialistas",
+          "summary": "El mercado de fichajes de verano cerró a las 20:00. Durante el Deadline Day, Leipzig y Schalke incorporaron a futbolistas mundialistas.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Liveblog zum Deadline Day: Leipzig und Schalke verpflichten WM-Fahrer",
-          "summary": "Seit 20 Uhr ist das Sommer-Transferfenster geschlossen. Hier gibt es alle aktuellen Meldungen zur Bundesliga im Liveblog.",
-          "needs_translation": true
+          "title": "متابعة حية لليوم الأخير من الميركاتو: لايبزيغ وشالكه يضمان لاعبين موندياليين",
+          "summary": "أُغلق سوق الانتقالات الصيفية في تمام الساعة 20:00. وشهد اليوم الأخير تعاقد ناديي لايبزيغ وشالكه مع لاعبين شاركوا في كأس العالم.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga/leipzig-und-schalke-verpflichten-wm-fahrer-sosa-nach-koeln,liveblog-transferende-100.html",
@@ -1243,7 +1397,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/leipzig-und-schalke-verpflichten-wm-fahrer-sosa-nach-koeln,liveblog-transferende-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3b5e464b3413",
@@ -1356,23 +1515,27 @@
       "i18n": {
         "es": {
           "title": "Robert Sánchez llega cedido al Como de Cesc",
-          "summary": "El Como de Cesc Fàbregas ha anunciado la incorporación de Robert Sánchez en calidad de cedido hasta final de temporada. El portero internacional español de 28 años se quedó sin hueco en el Chelsea tras el fichaje del Dibu Martínez y recalará en el equipo italiano este curso.",
-          "needs_translation": false
+          "summary": "El Como de Cesc Fàbregas ha cerrado la cesión de Robert Sánchez hasta final de temporada. El guardameta español de 28 años llega procedente del Chelsea tras el fichaje de Dibu Martínez.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Robert Sánchez llega cedido al Como de Cesc",
-          "summary": "El Como de Cesc Fàbregas ha anunciado la incorporación de Robert Sánchez en calidad de cedido hasta final de temporada. El portero internacional español de 28 años se quedó sin hueco en el Chelsea tras el fichaje del Dibu Martínez y recalará en el equipo italiano este curso.",
-          "needs_translation": true
+          "title": "Robert Sánchez arrives on loan at Cesc's Como",
+          "summary": "Cesc Fàbregas's Como have completed the loan signing of 28-year-old Spanish goalkeeper Robert Sánchez until the end of the season from Chelsea following the arrival of Dibu Martínez.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Robert Sánchez llega cedido al Como de Cesc",
-          "summary": "El Como de Cesc Fàbregas ha anunciado la incorporación de Robert Sánchez en calidad de cedido hasta final de temporada. El portero internacional español de 28 años se quedó sin hueco en el Chelsea tras el fichaje del Dibu Martínez y recalará en el equipo italiano este curso.",
-          "needs_translation": true
+          "title": "Robert Sánchez arrive en prêt au Como de Cesc",
+          "summary": "Le Como de Cesc Fàbregas a officialisé le prêt jusqu'à la fin de la saison de Robert Sánchez. Le gardien espagnol de 28 ans quitte Chelsea suite à l'arrivée de Dibu Martínez.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Robert Sánchez llega cedido al Como de Cesc",
-          "summary": "El Como de Cesc Fàbregas ha anunciado la incorporación de Robert Sánchez en calidad de cedido hasta final de temporada. El portero internacional español de 28 años se quedó sin hueco en el Chelsea tras el fichaje del Dibu Martínez y recalará en el equipo italiano este curso.",
-          "needs_translation": true
+          "title": "روبرت سانشيز ينتقل إلى كومو بقيادة سيسك فابريغاس على سبيل الإعارة",
+          "summary": "أعلن نادي كومو بقيادة سيسك فابريغاس ضم حارس المرمى الدولي الإسباني روبرت سانشيز على سبيل الإعارة حتى نهاية الموسم، قادماً من تشيلسي عقب تعاقد الأخير مع ديبو مارتينيز.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/internacional/20260901/1004222297/robert-sanchez-llega-cedido-cesc.html",
@@ -1394,7 +1557,12 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20260901/1004222297/robert-sanchez-llega-cedido-cesc.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "be5ad2dc1f61",
@@ -1554,23 +1722,27 @@
       "i18n": {
         "es": {
           "title": "Oficial | El CD Castellón incorpora al mediocentro Matías Orozco, cedido por el Brighton",
-          "summary": "Ya es oficial. El CD Castellón incorpora al mediocentro Matías Orozco.",
-          "needs_translation": false
+          "summary": "El CD Castellón ha hecho oficial la incorporación del centrocampista Matías Orozco, quien llega en calidad de cedido procedente del Brighton.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Oficial | El CD Castellón incorpora al mediocentro Matías Orozco, cedido por el Brighton",
-          "summary": "Ya es oficial. El CD Castellón incorpora al mediocentro Matías Orozco.",
-          "needs_translation": true
+          "title": "Official | CD Castellón sign midfielder Matías Orozco on loan from Brighton",
+          "summary": "CD Castellón have officially announced the signing of midfielder Matías Orozco on a loan deal from Brighton.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Oficial | El CD Castellón incorpora al mediocentro Matías Orozco, cedido por el Brighton",
-          "summary": "Ya es oficial. El CD Castellón incorpora al mediocentro Matías Orozco.",
-          "needs_translation": true
+          "title": "Officiel | Le CD Castellón recrute le milieu Matías Orozco, prêté par Brighton",
+          "summary": "Le CD Castellón a officialisé l'arrivée du milieu de terrain Matías Orozco, prêté par le club anglais de Brighton.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Oficial | El CD Castellón incorpora al mediocentro Matías Orozco, cedido por el Brighton",
-          "summary": "Ya es oficial. El CD Castellón incorpora al mediocentro Matías Orozco.",
-          "needs_translation": true
+          "title": "رسمياً | سي دي كاستيون يضم لاعب الوسط ماتياس أوروزكو معاراً من برايتون",
+          "summary": "أعلن نادي سي دي كاستيون رسمياً عن تعاقده مع لاعب خط الوسط ماتياس أوروزكو، قادماً على سبيل الإعارة من نادي برايتون.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/oficial-cd-castellon-incorpora-mediocentro-133854972?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -1592,7 +1764,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/oficial-cd-castellon-incorpora-mediocentro-133854972?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d5a621d982ee",
@@ -1600,24 +1777,28 @@
       "summary": "Mientras apura las gestiones para cerrar las cesiones de José María Giménez y Marc Casadó, el Deportivo trabaja en la salida de los futbolistas con los que no cuenta y finalmente ha cuajado la salida de Eric Puerto al Penafiel.",
       "i18n": {
         "es": {
-          "title": "Eric Puerto se va el Penafiel",
-          "summary": "Mientras apura las gestiones para cerrar las cesiones de José María Giménez y Marc Casadó, el Deportivo trabaja en la salida de los futbolistas con los que no cuenta y finalmente ha cuajado la salida de Eric Puerto al Penafiel.",
-          "needs_translation": false
+          "title": "Eric Puerto se va al Penafiel",
+          "summary": "El Deportivo ha cerrado la salida de Eric Puerto rumbo al Penafiel, mientras avanza en las cesiones de José María Giménez y Marc Casadó.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Eric Puerto se va el Penafiel",
-          "summary": "Mientras apura las gestiones para cerrar las cesiones de José María Giménez y Marc Casadó, el Deportivo trabaja en la salida de los futbolistas con los que no cuenta y finalmente ha cuajado la salida de Eric Puerto al Penafiel.",
-          "needs_translation": true
+          "title": "Eric Puerto joins Penafiel",
+          "summary": "Deportivo have finalized the departure of Eric Puerto to Penafiel, while continuing negotiations to secure loans for José María Giménez and Marc Casadó.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Eric Puerto se va el Penafiel",
-          "summary": "Mientras apura las gestiones para cerrar las cesiones de José María Giménez y Marc Casadó, el Deportivo trabaja en la salida de los futbolistas con los que no cuenta y finalmente ha cuajado la salida de Eric Puerto al Penafiel.",
-          "needs_translation": true
+          "title": "Eric Puerto rejoint Penafiel",
+          "summary": "Le Deportivo a acté le départ d'Eric Puerto vers Penafiel, tout en finalisant les arrivées en prêt de José María Giménez et Marc Casadó.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Eric Puerto se va el Penafiel",
-          "summary": "Mientras apura las gestiones para cerrar las cesiones de José María Giménez y Marc Casadó, el Deportivo trabaja en la salida de los futbolistas con los que no cuenta y finalmente ha cuajado la salida de Eric Puerto al Penafiel.",
-          "needs_translation": true
+          "title": "إريك بويرتو ينتقل إلى بينافيل",
+          "summary": "أتم نادي ديبورتيفو صفقة رحيل لاعبه إريك بويرتو إلى نادي بينافيل، بينما يواصل مساعيه لحسم استعارة خوسيه ماريا خيمينيز ومارك كاسادو.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/eric-puerto-penafiel-133854980?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -1639,7 +1820,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/eric-puerto-penafiel-133854980?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a98f78bde4c6",
@@ -1789,23 +1975,27 @@
       "i18n": {
         "en": {
           "title": "'Not bothered I am plan B' - Jesus joins Barcelona",
-          "summary": "Barcelona have completed the signing of Gabriel Jesus on a permanent deal.",
-          "needs_translation": false
+          "summary": "Barcelona have completed the permanent signing of Gabriel Jesus.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "'Not bothered I am plan B' - Jesus joins Barcelona",
-          "summary": "Barcelona have completed the signing of Gabriel Jesus on a permanent deal.",
-          "needs_translation": true
+          "title": "« Pas dérangé d'être le plan B » - Jesus rejoint Barcelona",
+          "summary": "Barcelona a officialisé le transfert définitif de l'attaquant Gabriel Jesus.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "'Not bothered I am plan B' - Jesus joins Barcelona",
-          "summary": "Barcelona have completed the signing of Gabriel Jesus on a permanent deal.",
-          "needs_translation": true
+          "title": "«No me molesta ser el plan B»: Jesus se une al Barcelona",
+          "summary": "El Barcelona ha completado el fichaje definitivo del delantero Gabriel Jesus.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "'Not bothered I am plan B' - Jesus joins Barcelona",
-          "summary": "Barcelona have completed the signing of Gabriel Jesus on a permanent deal.",
-          "needs_translation": true
+          "title": "«لا يزعجني أن أكون الخيار البديل» - جيسوس ينضم إلى برشلونة",
+          "summary": "أكمل نادي برشلونة إجراءات التعاقد بصفة نهائية مع المهاجم غابرييل جيسوس.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cx2zpx27l91o?at_medium=RSS&at_campaign=rss",
@@ -1827,7 +2017,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cx2zpx27l91o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d54204d44cf0",
@@ -1836,23 +2031,27 @@
       "i18n": {
         "es": {
           "title": "El Dortmund ficha del Arsenal un refuerzo de urgencia",
-          "summary": "El Borussia Dortmund recibió el sábado un durísimo golpe con la grava lesión de rodilla sufrida por el extremo griego Giannis Konstantelias, que se había estrenado con muy buena nota tras llegar del PAOK Salónica , y hoy ha anunciado un refuerzo de urgencia para cubrir tan…",
-          "needs_translation": false
+          "summary": "Tras la grave lesión de rodilla del extremo griego Giannis Konstantelias, el Borussia Dortmund ha anunciado un fichaje de urgencia procedente del Arsenal para suplir su baja.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Dortmund ficha del Arsenal un refuerzo de urgencia",
-          "summary": "El Borussia Dortmund recibió el sábado un durísimo golpe con la grava lesión de rodilla sufrida por el extremo griego Giannis Konstantelias, que se había estrenado con muy buena nota tras llegar del PAOK Salónica , y hoy ha anunciado un refuerzo de urgencia para cubrir tan…",
-          "needs_translation": true
+          "title": "Dortmund sign emergency reinforcement from Arsenal",
+          "summary": "Following a severe knee injury sustained by Greek winger Giannis Konstantelias, Borussia Dortmund have announced an emergency signing from Arsenal to cover his absence.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El Dortmund ficha del Arsenal un refuerzo de urgencia",
-          "summary": "El Borussia Dortmund recibió el sábado un durísimo golpe con la grava lesión de rodilla sufrida por el extremo griego Giannis Konstantelias, que se había estrenado con muy buena nota tras llegar del PAOK Salónica , y hoy ha anunciado un refuerzo de urgencia para cubrir tan…",
-          "needs_translation": true
+          "title": "Dortmund recrute un renfort d'urgence à Arsenal",
+          "summary": "Après la grave blessure au genou de l'ailier grec Giannis Konstantelias, Borussia Dortmund a annoncé l'arrivée d'un renfort d'urgence en provenance d'Arsenal pour combler son absence.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Dortmund ficha del Arsenal un refuerzo de urgencia",
-          "summary": "El Borussia Dortmund recibió el sábado un durísimo golpe con la grava lesión de rodilla sufrida por el extremo griego Giannis Konstantelias, que se había estrenado con muy buena nota tras llegar del PAOK Salónica , y hoy ha anunciado un refuerzo de urgencia para cubrir tan…",
-          "needs_translation": true
+          "title": "دورتموند يتعاقد مع صفقة طوارئ من أرسنال",
+          "summary": "أعلن بوروسيا دورتموند ضم صفقة طوارئ من أرسنال لتعويض غياب الجناح اليوناني يانيس كونستانتيلياس إثر تعرضه لإصابة خطيرة في الركبة.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fichajes/oficial/20260901/1004222289/dortmund-ficha-arsenal-refuerzo-urgencia.html",
@@ -1874,7 +2073,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fichajes/oficial/20260901/1004222289/dortmund-ficha-arsenal-refuerzo-urgencia.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e2c9958ca243",
@@ -1921,7 +2125,12 @@
           "url": "https://africatopsports.com/football/coupe-du-monde-u17-le-programme-de-legypte-avec-un-derby-contre-le-qatar/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b0a8e20d7312",
@@ -2024,23 +2233,27 @@
       "i18n": {
         "es": {
           "title": "El ex culé Alan Godoy ya tiene equipo",
-          "summary": "Alan Godoy , delantero centro de 23 años que se desvinculó recientemente del contrato que le unía al FC Barcelona hasta el 30 de junio de 2027, cerró en este primer día de septiembre su fichaje por otro club.",
-          "needs_translation": false
+          "summary": "El delantero de 23 años Alan Godoy ha fichado por un nuevo club tras rescindir recientemente su contrato con el FC Barcelona, que expiraba en junio de 2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El ex culé Alan Godoy ya tiene equipo",
-          "summary": "Alan Godoy , delantero centro de 23 años que se desvinculó recientemente del contrato que le unía al FC Barcelona hasta el 30 de junio de 2027, cerró en este primer día de septiembre su fichaje por otro club.",
-          "needs_translation": true
+          "title": "Former Barça player Alan Godoy finds a new club",
+          "summary": "The 23-year-old striker Alan Godoy has joined a new club after recently terminating his contract with FC Barcelona, which ran until June 2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El ex culé Alan Godoy ya tiene equipo",
-          "summary": "Alan Godoy , delantero centro de 23 años que se desvinculó recientemente del contrato que le unía al FC Barcelona hasta el 30 de junio de 2027, cerró en este primer día de septiembre su fichaje por otro club.",
-          "needs_translation": true
+          "title": "L'ancien joueur du Barça Alan Godoy a trouvé un nouveau club",
+          "summary": "L'attaquant de 23 ans Alan Godoy s'est engagé avec un nouveau club après avoir résilié son contrat avec le FC Barcelona, qui courait jusqu'en juin 2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El ex culé Alan Godoy ya tiene equipo",
-          "summary": "Alan Godoy , delantero centro de 23 años que se desvinculó recientemente del contrato que le unía al FC Barcelona hasta el 30 de junio de 2027, cerró en este primer día de septiembre su fichaje por otro club.",
-          "needs_translation": true
+          "title": "لاعب برشلونة السابق ألان غودوي يجد فريقاً جديداً",
+          "summary": "انضم المهاجم ألان غودوي، البالغ من العمر 23 عاماً، إلى نادٍ جديد بعد فسخ عقده مؤخراً مع برشلونة، والذي كان يمتد حتى يونيو 2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222284/ex-cule-alan-godoy-equipo.html",
@@ -2062,7 +2275,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260901/1004222284/ex-cule-alan-godoy-equipo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4766585e0919",
@@ -2071,23 +2289,27 @@
       "i18n": {
         "es": {
           "title": "Elliott: “Ojalá clasificarnos para Europa, el Valencia se lo merece”",
-          "summary": "Harvey Elliott l lega a Mestalla con ilusión y ambición. El mediapunta inglés, que llega cedido por el Liverpool hasta final de temporada, tiene claro cuál es su objetivo en Mestalla : ayudar al equipo a crecer y pelear por regresar a Europa .",
-          "needs_translation": false
+          "summary": "Cedido por el Liverpool hasta final de temporada, el mediapunta inglés Harvey Elliott llegó a Mestalla con el objetivo de ayudar al Valencia a clasificarse para competiciones europeas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Elliott: “Ojalá clasificarnos para Europa, el Valencia se lo merece”",
-          "summary": "Harvey Elliott l lega a Mestalla con ilusión y ambición. El mediapunta inglés, que llega cedido por el Liverpool hasta final de temporada, tiene claro cuál es su objetivo en Mestalla : ayudar al equipo a crecer y pelear por regresar a Europa .",
-          "needs_translation": true
+          "title": "Elliott: \"Hopefully we qualify for Europe, Valencia deserve it\"",
+          "summary": "On loan from Liverpool until the end of the season, English attacking midfielder Harvey Elliott joined Mestalla aiming to help Valencia secure European qualification.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Elliott: “Ojalá clasificarnos para Europa, el Valencia se lo merece”",
-          "summary": "Harvey Elliott l lega a Mestalla con ilusión y ambición. El mediapunta inglés, que llega cedido por el Liverpool hasta final de temporada, tiene claro cuál es su objetivo en Mestalla : ayudar al equipo a crecer y pelear por regresar a Europa .",
-          "needs_translation": true
+          "title": "Elliott : « J'espère que nous nous qualifierons pour l'Europe, Valencia le mérite »",
+          "summary": "Prêté par Liverpool jusqu'à la fin de la saison, le milieu offensif anglais Harvey Elliott a rejoint Mestalla avec l'objectif d'aider Valencia à se qualifier pour l'Europe.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Elliott: “Ojalá clasificarnos para Europa, el Valencia se lo merece”",
-          "summary": "Harvey Elliott l lega a Mestalla con ilusión y ambición. El mediapunta inglés, que llega cedido por el Liverpool hasta final de temporada, tiene claro cuál es su objetivo en Mestalla : ayudar al equipo a crecer y pelear por regresar a Europa .",
-          "needs_translation": true
+          "title": "إليوت: \"أتمنى أن نتأهل إلى أوروبا، فالنسيا يستحق ذلك\"",
+          "summary": "انضم لاعب الوسط الهجومي الإنجليزي هارفي إليوت إلى فالنسيا معاراً من ليفربول حتى نهاية الموسم، مؤكداً أن هدفه في ميستايا هو مساعدة الفريق على العودة للمسابقات الأوروبية.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/valencia/20260901/1004222288/elliott-ojala-clasificarnos-europa-valencia-merece.html",
@@ -2109,7 +2331,12 @@
           "url": "https://www.mundodeportivo.com/futbol/valencia/20260901/1004222288/elliott-ojala-clasificarnos-europa-valencia-merece.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5825e1569c93",
@@ -2170,23 +2397,27 @@
       "i18n": {
         "fr": {
           "title": "Transferts : Jonathan David prêté par la Juventus à l'Atlético de Madrid",
-          "summary": "Jonathan David, l'attaquant international canadien, a été prêté ce mardi par la Juventus à l'Atlético de Madrid.",
-          "needs_translation": false
+          "summary": "L'attaquant international canadien Jonathan David a été prêté ce mardi par la Juventus à l'Atlético de Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Transferts : Jonathan David prêté par la Juventus à l'Atlético de Madrid",
-          "summary": "Jonathan David, l'attaquant international canadien, a été prêté ce mardi par la Juventus à l'Atlético de Madrid.",
-          "needs_translation": true
+          "title": "Transfers: Jonathan David loaned by Juventus to Atlético de Madrid",
+          "summary": "Canadian international forward Jonathan David has joined Atlético de Madrid on loan from Juventus this Tuesday.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Transferts : Jonathan David prêté par la Juventus à l'Atlético de Madrid",
-          "summary": "Jonathan David, l'attaquant international canadien, a été prêté ce mardi par la Juventus à l'Atlético de Madrid.",
-          "needs_translation": true
+          "title": "Fichajes: Jonathan David cedido por la Juventus al Atlético de Madrid",
+          "summary": "El delantero internacional canadiense Jonathan David ha sido cedido este martes por la Juventus al Atlético de Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Transferts : Jonathan David prêté par la Juventus à l'Atlético de Madrid",
-          "summary": "Jonathan David, l'attaquant international canadien, a été prêté ce mardi par la Juventus à l'Atlético de Madrid.",
-          "needs_translation": true
+          "title": "سوق الانتقالات: جوناثان ديفيد ينتقل معاراً من يوفنتوس إلى أتلتيكو مدريد",
+          "summary": "انتقل المهاجم الدولي الكندي جوناثان ديفيد هذا الثلاثاء من نادي يوفنتوس إلى أتلتيكو مدريد على سبيل الإعارة.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Transferts-jonathan-david-prete-par-la-juventus-a-l-atletico-de-madrid/1715318#at_medium=RSS_feeds",
@@ -2214,7 +2445,12 @@
           "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260901/1004222220/oficial-jonathan-david-nuevo-futbolista-atletico-madrid.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9a423eeaddfb",
@@ -2270,23 +2506,27 @@
       "i18n": {
         "es": {
           "title": "El Liverpool ficha al joven portero Brughmans",
-          "summary": "Las últimas horas del mercado de fichajes están siendo movidas en Anfield . Ayer el Liverpool rompía el mercado con el ansiado fichaje de Bradley Barcola (23 años) procedente del PSG por 125 millones de euros más 20 en variables.",
-          "needs_translation": false
+          "summary": "En las últimas horas del mercado, el Liverpool cerró la incorporación del joven guardameta Brughmans tras fichar a Bradley Barcola procedente del PSG por 125 millones de euros más 20 en variables.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Liverpool ficha al joven portero Brughmans",
-          "summary": "Las últimas horas del mercado de fichajes están siendo movidas en Anfield . Ayer el Liverpool rompía el mercado con el ansiado fichaje de Bradley Barcola (23 años) procedente del PSG por 125 millones de euros más 20 en variables.",
-          "needs_translation": true
+          "title": "Liverpool sign young goalkeeper Brughmans",
+          "summary": "In the final hours of the transfer window, Liverpool signed young goalkeeper Brughmans, following the acquisition of Bradley Barcola from PSG for €125 million plus €20 million in add-ons.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El Liverpool ficha al joven portero Brughmans",
-          "summary": "Las últimas horas del mercado de fichajes están siendo movidas en Anfield . Ayer el Liverpool rompía el mercado con el ansiado fichaje de Bradley Barcola (23 años) procedente del PSG por 125 millones de euros más 20 en variables.",
-          "needs_translation": true
+          "title": "Liverpool recrute le jeune gardien Brughmans",
+          "summary": "Dans les dernières heures du mercato, Liverpool s'est attaché les services du jeune gardien Brughmans après avoir recruté Bradley Barcola du PSG pour 125 millions d'euros plus 20 millions de bonus.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Liverpool ficha al joven portero Brughmans",
-          "summary": "Las últimas horas del mercado de fichajes están siendo movidas en Anfield . Ayer el Liverpool rompía el mercado con el ansiado fichaje de Bradley Barcola (23 años) procedente del PSG por 125 millones de euros más 20 en variables.",
-          "needs_translation": true
+          "title": "ليفربول يتعاقد مع الحارس الشاب بروغمانز",
+          "summary": "في الساعات الأخيرة من سوق الانتقالات، تعاقد ليفربول مع الحارس الشاب بروغمانز، بعد ضمه برادلي باركولا من باريس سان جيرمان مقابل 125 مليون يورو بالإضافة إلى 20 مليوناً كمتغيرات.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fichajes/oficial/20260901/1004222279/liverpool-ficha-joven-portero-brughmans.html",
@@ -2308,7 +2548,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fichajes/oficial/20260901/1004222279/liverpool-ficha-joven-portero-brughmans.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "18fc0015d6da",
@@ -2363,24 +2608,28 @@
       "summary": "Le Raja Casablanca va disputer la Coupe CAF, cette saison. Le club marocain connaît bien cette compétition, qu’il a remportée à 3 reprises.",
       "i18n": {
         "fr": {
-          "title": "Coupe CAF : Le Raja Casablanca retrouve « sa » compétition",
-          "summary": "Le Raja Casablanca va disputer la Coupe CAF, cette saison. Le club marocain connaît bien cette compétition, qu’il a remportée à 3 reprises.",
-          "needs_translation": false
+          "title": "Coupe CAF : Le Raja Casablanca retrouve sa compétition",
+          "summary": "Le Raja Casablanca disputera la Coupe CAF cette saison. Le club marocain a déjà remporté ce trophée à trois reprises.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Coupe CAF : Le Raja Casablanca retrouve « sa » compétition",
-          "summary": "Le Raja Casablanca va disputer la Coupe CAF, cette saison. Le club marocain connaît bien cette compétition, qu’il a remportée à 3 reprises.",
-          "needs_translation": true
+          "title": "Coupe CAF: Raja Casablanca returns to 'its' competition",
+          "summary": "Raja Casablanca will compete in the Coupe CAF this season. The Moroccan club has already won the tournament three times.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Coupe CAF : Le Raja Casablanca retrouve « sa » compétition",
-          "summary": "Le Raja Casablanca va disputer la Coupe CAF, cette saison. Le club marocain connaît bien cette compétition, qu’il a remportée à 3 reprises.",
-          "needs_translation": true
+          "title": "Coupe CAF: El Raja Casablanca se reencuentra con «su» competición",
+          "summary": "El Raja Casablanca disputará la Coupe CAF esta temporada. El club marroquí ya ha conquistado este torneo en tres ocasiones.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Coupe CAF : Le Raja Casablanca retrouve « sa » compétition",
-          "summary": "Le Raja Casablanca va disputer la Coupe CAF, cette saison. Le club marocain connaît bien cette compétition, qu’il a remportée à 3 reprises.",
-          "needs_translation": true
+          "title": "كأس الكونفيدرالية الأفريقية: الرجاء البيضاوي يعود إلى بطولته المفضلة",
+          "summary": "يشارك الرجاء البيضاوي في كأس الكونفيدرالية الأفريقية هذا الموسم. وسبق للنادي المغربي التتويج بلقب هذه المسابقة ثلاث مرات.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football/coupe-caf-le-raja-casablanca-retrouve-sa-competition/",
@@ -2402,7 +2651,12 @@
           "url": "https://africatopsports.com/football/coupe-caf-le-raja-casablanca-retrouve-sa-competition/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     }
   ]
 }
