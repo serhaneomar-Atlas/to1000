@@ -64,7 +64,12 @@
           "url": "https://www.kicker.de/transferticker-953155/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8bfebf2b6c7d",
@@ -231,7 +236,17 @@
           "url": "https://www.lefigaro.fr/sports/football/transferts/mercato-sous-perfusion-anglaise-la-ligue-1-a-encore-bricole-cet-ete-20260901"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-02T11:08:20+00:00"
+        }
+      }
     },
     {
       "id": "d8faa4c9e233",
@@ -239,27 +254,44 @@
       "summary": "DÉCRYPTAGE - Le club de la capitale a réalisé un mercato record dans le sens des départs, c’est un fait. Quid du niveau de l’effectif qui reste à la disposition de Luis Enrique ?",
       "i18n": {
         "fr": {
-          "title": "Moins de profondeur mais plus d’options : le PSG sort-il renforcé du mercato ?",
-          "summary": "DÉCRYPTAGE - Le club de la capitale a réalisé un mercato record dans le sens des départs, c’est un fait. Quid du niveau de l’effectif qui reste à la disposition de Luis Enrique ?",
-          "needs_translation": false
+          "title": "Mercato : le PSG bat son record avec près de 400 M€ de ventes",
+          "summary": "Le Paris Saint-Germain a bouclé un mercato estival historique en récoltant près de 400 millions d'euros grâce aux ventes de joueurs.",
+          "body": [
+            "En incluant les bonus, ce montant inédit sous l'ère QSI illustre la nouvelle méthode de gestion du club de la capitale. La direction parisienne, portée par l'alignement entre Nasser Al-Khelaïfi, Luis Campos et Luis Enrique, privilégie désormais des opérations financières maîtrisées plutôt que de subir la pression des agents ou du marché."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Less depth but more options: does PSG emerge strengthened from the transfer window?",
-          "summary": "DECODING - The club of the capital has achieved a record transfer in the direction of departures, it is a fact. What about the level of the workforce that remains at the disposal of Luis Enrique?",
+          "title": "Transfer window: PSG smash sales record with nearly €400m",
+          "summary": "Paris Saint-Germain have wrapped up a record-breaking summer window after generating almost €400 million through player departures.",
+          "body": [
+            "Including add-ons, this unprecedented total under the QSI era highlights the French champions' revamped transfer strategy. Backed by total alignment between Nasser Al-Khelaïfi, Luis Campos and Luis Enrique, the Parisian hierarchy now favors controlled financial dealings over bowing to agent and market pressures."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Menos profundidad pero más opciones: ¿el PSG sale fortalecido del mercado?",
-          "summary": "DESCIFRAMIENTO - El club de la capital ha realizado un mercado de fichajes récord en la dirección de las salidas, es un hecho. ¿Cuál es el nivel de efectivos que quedan a disposición de Luis Enrique?",
+          "title": "Mercado: el PSG bate su récord con casi 400 millones en ventas",
+          "summary": "El Paris Saint-Germain culminó una ventana estival histórica tras ingresar cerca de 400 millones de euros en traspasos de jugadores.",
+          "body": [
+            "Bonus incluidos, este registro inédito en la era QSI refleja la nueva política de gestión del club de la capital. Respaldada por la sintonía absoluta entre Nasser Al-Khelaïfi, Luis Campos y Luis Enrique, la cúpula parisina prioriza ahora las operaciones financieras medidas frente al pulso de los agentes o los vaivenes del mercado."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "عمق أقل ولكن المزيد من الخيارات: هل تظهر PSG معززة من نافذة النقل ؟",
-          "summary": "فك التشفير - حقق نادي العاصمة انتقالًا قياسيًا في اتجاه المغادرين، إنها حقيقة. ماذا عن مستوى القوى العاملة التي لا تزال تحت تصرف لويس إنريكي ؟",
+          "title": "سوق الانتقالات: باريس سان جيرمان يحطم رقمه القياسي بمبيعات تقارب 400 مليون يورو",
+          "summary": "اختتم باريس سان جيرمان ميركاتو صيفياً تاريخياً بعدما جنى قرابة 400 مليون يورو من بيع عقود لاعبيه.",
+          "body": [
+            "ومع احتساب المكافآت والحوافز، يجسد هذا الرقم غير المسبوق في حقبة شركة قطر للاستثمارات الرياضية النهج الإداري الجديد لنادي العاصمة؛ حيث باتت الإدارة الباريسية، في ظل التناغم التام بين ناصر الخليفي ولويس كامبوس ولويس إنريكي، تفضل إبرام صفقات مالية محكمة بدلاً من الرضوخ لضغوط الوكلاء وتقلبات السوق."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/transferts/moins-de-profondeur-mais-plus-d-options-le-psg-sort-il-renforce-du-mercato-20260902",
@@ -281,7 +313,20 @@
           "url": "https://www.lefigaro.fr/sports/football/transferts/moins-de-profondeur-mais-plus-d-options-le-psg-sort-il-renforce-du-mercato-20260902"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-02T11:08:24+00:00"
+        }
+      }
     },
     {
       "id": "027f2b8fbf56",
@@ -290,26 +335,27 @@
       "i18n": {
         "fr": {
           "title": "Mercato : l'OM réalise une vente tardive avec Quinten Timber à Crystal Palace",
-          "summary": "Arrivé à l'OM en janvier contre un peu moins de 5 M€, Quinten Timber est déjà revendu. Le Néerlandais s'engage avec Crystal Palace contre 20 M€, quittant Marseille en toute fin de mercato.",
-          "needs_translation": false
+          "summary": "Arrivé à Marseille en janvier pour un peu moins de 5 M€, Quinten Timber est transféré à Crystal Palace contre 20 M€.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mercato: OM makes a late sale with Quinten Timber at Crystal Palace",
-          "summary": "Arriving at OM in January for just under €5 million, Quinten Timber is already resold. The Dutchman signed with Crystal Palace for €20 million, leaving Marseille at the end of the transfer window.",
+          "title": "Mercato: OM complete late sale of Quinten Timber to Crystal Palace",
+          "summary": "After joining Marseille in January for just under €5m, Quinten Timber has signed with Crystal Palace in a €20m deal.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Mercado: OM realiza una venta tardía con Quinten Timber en Crystal Palace",
-          "summary": "Quinten Timber, que llegó al OM en enero por poco menos de 5 millones de €, ya está en venta. El holandés se compromete con Crystal Palace por 20 millones de €, saliendo de Marsella al final de la ventana de transferencia.",
+          "title": "Mercato: el OM concreta la venta tardía de Quinten Timber a Crystal Palace",
+          "summary": "Tras llegar a Marseille en enero por algo menos de 5 M€, Quinten Timber se marcha traspasado a Crystal Palace por 20 M€.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ميركاتو: OM تقوم ببيع متأخر مع Quinten Timber في Crystal Palace",
-          "summary": "عند وصولها إلى OM في يناير مقابل أقل بقليل من 5 ملايينيورو، تم إعادة بيع Quinten Timber بالفعل. وقع الهولندي مع كريستال بالاس مقابل 20 مليونيورو، وغادر مرسيليا في نهاية فترة الانتقالات.",
+          "title": "سوق الانتقالات: مارسيليا يبيع كوينتن تيمبر إلى كريستال بالاس",
+          "summary": "انتقل الهولندي كوينتن تيمبر من مارسيليا إلى كريستال بالاس مقابل 20 مليون يورو، بعد أشهر قليلة من انضمامه للنادي الفرنسي مقابل 5 ملايين يورو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Mercato-crystal-palace-officialise-l-arrivee-de-quinten-timber-en-provenance-de-l-om-pour-20-m-et-8364/1715392#at_medium=RSS_feeds",
@@ -349,7 +395,12 @@
           "url": "https://www.lefigaro.fr/sports/football/transferts/mercato-l-om-realise-une-vente-tardive-avec-quinten-timber-a-crystal-palace-20260902"
         }
       ],
-      "source_count": 4
+      "source_count": 4,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3b5c62424aa6",
@@ -458,26 +509,27 @@
       "i18n": {
         "es": {
           "title": "El traspaso de Álvaro Cortés al Royal Antwerp belga dejará un pellizco en el Real Zaragoza",
-          "summary": "El FC Barcelona hizo oficial anoche antes de la finalización del mercado de fichajes el traspaso de Álvaro Cortés al Royal Antwerp de Amberes.",
-          "needs_translation": false
+          "summary": "El FC Barcelona oficializó el traspaso de Álvaro Cortés al Royal Antwerp de Amberes antes del cierre del mercado de fichajes. La operación reportará beneficios económicos al Real Zaragoza.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The transfer of Álvaro Cortés to the Belgian Royal Antwerp will leave a pinch in Real Zaragoza",
-          "summary": "FC Barcelona made the transfer of Álvaro Cortés to Antwerp's Royal Antwerp official last night before the end of the transfer market.",
+          "title": "Álvaro Cortés' transfer to Belgian side Royal Antwerp will leave a windfall for Real Zaragoza",
+          "summary": "FC Barcelona officially announced the transfer of Álvaro Cortés to Royal Antwerp before the transfer deadline. The deal will yield financial benefits for Real Zaragoza.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le transfert d'Álvaro Cortés au Royal Antwerp belge laissera un pincement au Real Zaragoza",
-          "summary": "Le FC Barcelone a officialisé hier soir avant la fin du marché des transferts le transfert d'Álvaro Cortés au Royal Antwerp d'Anvers.",
+          "title": "Le transfert d'Álvaro Cortés au Royal Antwerp belge rapportera une somme au Real Zaragoza",
+          "summary": "Le FC Barcelona a officialisé le transfert d'Álvaro Cortés au Royal Antwerp avant la clôture du mercato. Cette opération permettra au Real Zaragoza de toucher une compensation financière.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "نقل ألفارو كورتيس إلى رويال أنتويرب البلجيكي سيترك ضغطة في ريال سرقسطة",
-          "summary": "قام نادي برشلونة بنقل ألفارو كورتيس إلى مسؤول رويال أنتويرب في أنتويرب الليلة الماضية قبل نهاية سوق الانتقالات.",
+          "title": "انتقال ألفارو كورتيس إلى رويال أنتويرب البلجيكي سينعش خزينة ريال سرقسطة",
+          "summary": "أعلن نادي برشلونة رسميًا انتقال ألفارو كورتيس إلى رويال أنتويرب قبل إغلاق سوق الانتقالات، في صفقة ستمنح عائدًا ماليًا لنادي ريال سرقسطة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/traspaso-alvaro-cortes-royal-antwerp-133862958?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -499,7 +551,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/traspaso-alvaro-cortes-royal-antwerp-133862958?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0cc29e3265ed",
@@ -557,27 +614,28 @@
       "summary": "Victoria Pelova cambió este verano el Arsenal por el Tottenham . Es decir, dejó el club 'gunner' para irse a un conocido rival londinense, algo que le costó contar a sus ex compañeras, según desvela la internacional neerlandesa, de 27 años, en una entrevista en 'The Guardian'.",
       "i18n": {
         "es": {
-          "title": "\"Tenía mucho miedo de contarles a mis compañeras que venía aquí\"",
-          "summary": "Victoria Pelova cambió este verano el Arsenal por el Tottenham . Es decir, dejó el club 'gunner' para irse a un conocido rival londinense, algo que le costó contar a sus ex compañeras, según desvela la internacional neerlandesa, de 27 años, en una entrevista en 'The Guardian'.",
-          "needs_translation": false
+          "title": "«Tenía mucho miedo de contarles a mis compañeras que venía aquí»",
+          "summary": "Victoria Pelova reveló en una entrevista en The Guardian que temió comunicar a sus compañeras de Arsenal su traspaso a Tottenham, su rival londinense.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "\"I was very afraid to tell my colleagues that I was coming here\"",
-          "summary": "Victoria Pelova traded Arsenal for Tottenham this summer. That is, she left the 'gunner' club to go to a well-known London rival, something that she had a hard time telling her former teammates, according to the Dutch international, 27, in an interview with 'The Guardian'.",
+          "title": "\"I was really scared to tell my teammates that I was coming here\"",
+          "summary": "Victoria Pelova revealed to The Guardian that she was afraid to inform her Arsenal teammates about her summer transfer to London rivals Tottenham.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "« J'avais très peur de dire à mes collègues que je venais ici »",
-          "summary": "Victoria Pelova a échangé cet été Arsenal contre Tottenham . C'est-à-dire qu'elle a quitté le club « gunner » pour rejoindre un rival londonien bien connu, ce qu'elle a eu du mal à dire à ses anciennes coéquipières, selon ce que révèle l'internationale néerlandaise, âgée de 27 ans, dans une interview au « Guardian ».",
+          "title": "« J'avais très peur de dire à mes coéquipières que je venais ici »",
+          "summary": "Dans un entretien à The Guardian, Victoria Pelova a confié avoir craint d'annoncer à ses coéquipières d'Arsenal son transfert estival vers Tottenham, le rival londonien.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"كنت خائفًا جدًا من إخبار زملائي أنني قادم إلى هنا\"",
-          "summary": "قايضت فيكتوريا بيلوفا آرسنال مقابل توتنهام هذا الصيف. أي أنها غادرت نادي \"المدفعية\" للذهاب إلى منافس معروف في لندن، وهو أمر واجهت صعوبة في إخبار زملائها السابقين، وفقًا لما ذكره الدولي الهولندي، 27 عامًا، في مقابلة مع \"الغارديان\".",
+          "title": "«كنت خائفة للغاية من إخبار زميلاتي بأنني قادمة إلى هنا»",
+          "summary": "كشفت الهولندية فيكتوريا بيلوفا في مقابلة مع صحيفة ذا غارديان عن خوفها من إبلاغ زميلاتها في أرسنال بقرار انتقالها هذا الصيف إلى الغريم اللندني توتنهام.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/femenino/20260902/1004222449/tenia-miedo-contarles-mis-companeras-veia.html",
@@ -599,7 +657,12 @@
           "url": "https://www.mundodeportivo.com/futbol/femenino/20260902/1004222449/tenia-miedo-contarles-mis-companeras-veia.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "26d7e25246d8",
@@ -607,27 +670,28 @@
       "summary": "El Real Madrid se ha gastado 225 millones de euros este verano en fichajes, que pueden llegar a ser 245. Una gran cantidad que ha quedado compensada por la venta de canteranos del club blanco que ha supuesto más de 200 millones de euros .",
       "i18n": {
         "es": {
-          "title": "\"Es discutible sacar pecho por los millones que sacas por tu cantera\"",
-          "summary": "El Real Madrid se ha gastado 225 millones de euros este verano en fichajes, que pueden llegar a ser 245. Una gran cantidad que ha quedado compensada por la venta de canteranos del club blanco que ha supuesto más de 200 millones de euros .",
-          "needs_translation": false
+          "title": "«Es discutible sacar pecho por los millones que sacas por tu cantera»",
+          "summary": "El Real Madrid ha gastado entre 225 y 245 millones de euros en fichajes este verano, compensados con más de 200 millones obtenidos mediante la venta de canteranos.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "\"It is debatable to breastfeed for the millions you take out for your quarry\"",
-          "summary": "Real Madrid has spent 225 million euros this summer on signings, which can be as much as 245. A large amount that has been compensated by the sale of players from the white club that has cost more than 200 million euros .",
+          "title": "\"It is debatable to boast about the millions made from your academy\"",
+          "summary": "Real Madrid spent between €225 million and €245 million on signings this summer, largely offset by generating over €200 million from the sale of academy players.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "\"Il est discutable de prendre sa poitrine pour les millions que vous prenez dans votre carrière\"",
-          "summary": "Le Real Madrid a dépensé 225 millions d'euros cet été en transferts, qui peuvent atteindre 245 millions d'euros. Une somme importante qui a été compensée par la vente des chanteurs du club blanc qui a représenté plus de 200 millions d'euros .",
+          "title": "« C'est discutable de se vanter des millions tirés du centre de formation »",
+          "summary": "Le Real Madrid a dépensé entre 225 et 245 millions d'euros en transferts cet été, compensés par plus de 200 millions d'euros générés par la vente de jeunes formés au club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"من المثير للجدل الرضاعة الطبيعية للملايين التي تخرجها لمحجرك\"",
-          "summary": "أنفق ريال مدريد 225 مليون يورو هذا الصيف على التعاقدات، والتي يمكن أن تصل إلى 245. مبلغ كبير تم تعويضه ببيع لاعبين من النادي الأبيض كلف أكثر من 200 مليون يورو .",
+          "title": "«التباهي بالملايين التي تجنيها من أكاديميتك أمر قابل للنقاش»",
+          "summary": "أنفق ريال مدريد ما بين 225 و245 مليون يورو على التعاقدات هذا الصيف، معوضاً ذلك بجني أكثر من 200 مليون يورو من بيع لاعبي أكاديميته.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260902/1004222447/discutible-sacar-pecho-millones-sacas-cantera.html",
@@ -649,7 +713,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260902/1004222447/discutible-sacar-pecho-millones-sacas-cantera.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8786566b0432",
@@ -858,26 +927,27 @@
       "i18n": {
         "en": {
           "title": "Are Arsenal taking a risk in not signing a world-class forward?",
-          "summary": "Arsenal have been busy in the transfer market as they look to defend their Premier League title, but do they lack a world class striker still?",
-          "needs_translation": false
+          "summary": "Arsenal have been active in the transfer window to defend their Premier League title, though questions remain over their choice not to sign an elite striker.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Arsenal prend-il un risque en ne signant pas un attaquant de classe mondiale ?",
-          "summary": "Arsenal a été occupé sur le marché des transferts alors qu'ils cherchent à défendre leur titre de Premier League, mais manquent-ils encore d'un attaquant de classe mondiale ?",
+          "title": "Arsenal prend-il un risque en ne recrutant pas un attaquant de classe mondiale ?",
+          "summary": "Actif durant le mercato pour défendre son titre en Premier League, Arsenal suscite des interrogations pour ne pas avoir recruté d'attaquant de premier plan.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "¿El Arsenal está corriendo el riesgo de no firmar a un delantero de clase mundial?",
-          "summary": "El Arsenal ha estado ocupado en el mercado de fichajes mientras busca defender su título de la Premier League, pero ¿todavía carece de un delantero de clase mundial?",
+          "title": "¿Está asumiendo Arsenal un riesgo al no fichar a un delantero de clase mundial?",
+          "summary": "Pese a su actividad en el mercado de fichajes para defender su título de Premier League, Arsenal genera dudas al no incorporar a un delantero centro de primer nivel.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هل يخاطر أرسنال بعدم التعاقد مع مهاجم من الطراز العالمي ؟",
-          "summary": "كان أرسنال مشغولاً في سوق الانتقالات بينما يتطلع للدفاع عن لقبه في الدوري الإنجليزي الممتاز، لكن هل لا يزال يفتقر إلى مهاجم من الطراز العالمي ؟",
+          "title": "هل يخاطر أرسنال بعدم التعاقد مع مهاجم من طراز عالمي؟",
+          "summary": "نشط أرسنال في سوق الانتقالات بهدف الدفاع عن لقبه في الدوري الإنجليزي الممتاز، وسط تساؤلات بشأن عدم ضمه مهاجمًا من الطراز الرفيع.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/c783x812dk5o?at_medium=RSS&at_campaign=rss",
@@ -899,7 +969,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/c783x812dk5o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "38051db62681",
@@ -908,26 +983,27 @@
       "i18n": {
         "es": {
           "title": "Llamativo mensaje de Giménez tras concretarse su fichaje por el Deportivo",
-          "summary": "La nueva temporada, entre el paso del tiempo, las lesiones y los últimos refuerzos, han hecho prescindible en el Atlético de Madrid a José María Giménez , capital en la última década, hasta el punto de que el club rojiblanco rechazó una millonaria oferta del Manchester City…",
-          "needs_translation": false
+          "summary": "Tras perder protagonismo en el Atlético de Madrid debido a las lesiones y los nuevos refuerzos, José María Giménez concretó su salida rumbo al Deportivo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "A striking message from Giménez after his signing for Deportivo",
-          "summary": "The new season, between the passage of time, injuries and the latest reinforcements, have made José María Giménez, capital in the last decade, dispensable at Atlético de Madrid, to the point that the red and white club rejected a millionaire offer from Manchester City...",
+          "title": "Striking message from Giménez after completing his transfer to Deportivo",
+          "summary": "Having become expendable at Atlético de Madrid due to injuries and new signings, José María Giménez has finalized his move to Deportivo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Message frappant de Giménez après sa signature au Deportivo",
-          "summary": "La nouvelle saison, entre le passage du temps, les blessures et les derniers renforts, ont rendu inutile à l'Atlético de Madrid José María Giménez , capitale de la dernière décennie, au point que le club rouge et blanc a rejeté une offre millionnaire de Manchester City...",
+          "title": "Message frappant de Giménez après l'officialisation de son transfert au Deportivo",
+          "summary": "Devenu dispensable à l'Atlético de Madrid en raison de blessures et de nouveaux renforts, José María Giménez s'est engagé avec le Deportivo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "رسالة مذهلة من خيمينيز بعد توقيعه مع ديبورتيفو",
-          "summary": "الموسم الجديد، بين مرور الوقت والإصابات وأحدث التعزيزات، جعل خوسيه ماريا خيمينيز، العاصمة في العقد الماضي، قابلة للاستغناء عنها في أتلتيكو مدريد، لدرجة أن النادي الأحمر والأبيض رفض عرض مليونير من مانشستر سيتي...",
+          "title": "رسالة لافتة من خيمينيز بعد حسم انتقاله إلى ديبورتيفو",
+          "summary": "انتقل المدافع خوسيه ماريا خيمينيز إلى ديبورتيفو، بعد خروجه من حسابات أتلتيكو مدريد إثر تكرار الإصابات وقدوم تعاقدات جديدة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260902/1004222436/llamativo-mensaje-gimenez-concretarse-fichaje-deportivo.html",
@@ -949,7 +1025,12 @@
           "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260902/1004222436/llamativo-mensaje-gimenez-concretarse-fichaje-deportivo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "fa4f4f05c459",
@@ -958,26 +1039,27 @@
       "i18n": {
         "es": {
           "title": "Más cartas sin marcar",
-          "summary": "Con la llegada de Gabriel Jesus (29 años), Hansi Flick cierra una delantera más nutrida y más polivalente que la de la temporada pasada.",
-          "needs_translation": false
+          "summary": "Con la llegada de Gabriel Jesus (29 años), Hansi Flick completa una delantera más amplia y polivalente que la de la temporada pasada.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "More unmarked cards",
-          "summary": "With the arrival of Gabriel Jesus (29 years old), Hansi Flick closes a bigger and more versatile front than last season.",
+          "title": "More cards to play",
+          "summary": "With the arrival of Gabriel Jesus (29), Hansi Flick completes a deeper and more versatile attacking line than last season.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Plus de cartes non marquées",
-          "summary": "Avec l'arrivée de Gabriel Jesus (29 ans), Hansi Flick ferme une devant plus nourrie et plus polyvalente que celle de la saison dernière.",
+          "title": "Plus de cartes en main",
+          "summary": "Avec l'arrivée de Gabriel Jesus (29 ans), Hansi Flick finalise une ligne d'attaque plus fournie et polyvalente que celle de la saison dernière.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "المزيد من البطاقات غير المميزة",
-          "summary": "مع وصول غابرييل يسوع (29 عامًا)، يغلق هانسي فليك جبهة أكبر وأكثر تنوعًا من الموسم الماضي.",
+          "title": "أوراق هجومية إضافية",
+          "summary": "مع انضمام غابرييل جيسوس (29 عاماً)، يعزز المدرب هانزي فليك خط هجومه بخيارات أكثر عدداً وتنوعاً مقارنة بالموسم الماضي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222195/cartas-marcar.html",
@@ -999,7 +1081,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222195/cartas-marcar.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b68bb7b635ac",
@@ -1007,27 +1094,28 @@
       "summary": "20 names. One simple question.",
       "i18n": {
         "en": {
-          "title": "Quiz! Did these players ever make a Champions League appearance?",
-          "summary": "20 names. One simple question.",
-          "needs_translation": false
+          "title": "Quiz: Did these players ever make a Champions League appearance?",
+          "summary": "This quiz tests whether 20 selected players have ever made an appearance in the Champions League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Quiz ! Ces joueurs ont-ils déjà fait une apparition en Ligue des champions ?",
-          "summary": "20 noms. Une simple question.",
+          "title": "Quiz : Ces joueurs ont-ils déjà disputé la Champions League ?",
+          "summary": "Ce quiz propose de déterminer si 20 joueurs sélectionnés ont déjà disputé au moins un match de Champions League au cours de leur carrière.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "¡Cuestionario! ¿Estos jugadores alguna vez hicieron una aparición en la Liga de Campeones?",
-          "summary": "20 nombres. Una simple pregunta.",
+          "title": "Quiz: ¿Jugaron alguna vez estos futbolistas en la Champions League?",
+          "summary": "Este cuestionario propone determinar si 20 futbolistas seleccionados llegaron a disputar al menos un partido en la Champions League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "اختبار! هل ظهر هؤلاء اللاعبون في دوري أبطال أوروبا ؟",
-          "summary": "20 اسما. سؤال واحد بسيط.",
+          "title": "اختبار: هل شارك هؤلاء اللاعبون في دوري أبطال أوروبا من قبل؟",
+          "summary": "يتضمن هذا الاختبار قائمة تضم 20 لاعباً لتحديد ما إذا كانوا قد خاضوا أي مباراة في دوري أبطال أوروبا خلال مسيرتهم الكروية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.fourfourtwo.com/quiz/quiz-did-these-players-ever-make-a-champions-league-appearance",
@@ -1049,7 +1137,12 @@
           "url": "https://www.fourfourtwo.com/quiz/quiz-did-these-players-ever-make-a-champions-league-appearance"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e8944698cf3b",
@@ -1107,25 +1200,48 @@
       "summary": "Privilégié par Monaco aux dépens de celui de Lamine Camara vers Chelsea, le transfert de Folarin Balogun à Everton n'aura pas lieu. L'attaquant américain a décidé de partir du centre d'entraînement après une dernière renégociation infructueuse avec les Toffees.",
       "i18n": {
         "fr": {
-          "title": "Mercato : Folarin Balogun n'ira finalement pas à Everton",
-          "summary": "Privilégié par Monaco aux dépens de celui de Lamine Camara vers Chelsea, le transfert de Folarin Balogun à Everton n'aura pas lieu. L'attaquant américain a décidé de partir du centre d'entraînement après une dernière renégociation infructueuse avec les Toffees.",
-          "needs_translation": false
+          "title": "Mercato : le transfert de Folarin Balogun à Everton a capoté",
+          "summary": "L'attaquant monégasque Folarin Balogun ne rejoindra pas Everton après l'échec des ultimes négociations contractuelles avec le club anglais.",
+          "body": [
+            "Alors que son départ semblait en très bonne voie, l'international américain de 25 ans a quitté le centre d'entraînement face à ce désaccord de dernière minute. Si la piste anglaise se referme, un départ reste envisageable vers des pays où le marché demeure ouvert, comme la Turquie ou l'Arabie saoudite.",
+            "Ce revirement complique les plans de l'AS Monaco. Le club de la Principauté avait choisi de privilégier la vente de son attaquant plutôt que celle de Lamine Camara, dont le transfert à Chelsea avait finalement été mis en suspens."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Mercato: Folarin Balogun will finally not go to Everton",
-          "summary": "Privilégié par Monaco aux dépens de celui de Lamine Camara vers Chelsea, le transfert de Folarin Balogun à Everton n'aura pas lieu. L'attaquant américain a décidé de partir du centre d'entraînement après une dernière renégociation infructueuse avec les Toffees.",
+          "title": "Transfer Market: Folarin Balogun move to Everton collapses",
+          "summary": "Monaco forward Folarin Balogun will not be joining Everton following the breakdown of last-minute contract talks with the English side.",
+          "body": [
+            "Everything seemed on track for his departure, but the 25-year-old US international left the training ground after a late disagreement over terms. While the Premier League door has shut, an exit remains possible to destinations where the window is still open, such as Turkey or Saudi Arabia.",
+            "This twist complicates matters for AS Monaco. The Principality outfit had opted to cash in on their striker rather than Lamine Camara, whose move to Chelsea was ultimately put on hold."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Mercato : Folarin Balogun n'ira finalement pas à Everton",
-          "summary": "Privilégié par Monaco aux dépens de celui de Lamine Camara vers Chelsea, le transfert de Folarin Balogun à Everton n'aura pas lieu. L'attaquant américain a décidé de partir du centre d'entraînement après une dernière renégociation infructueuse avec les Toffees.",
-          "needs_translation": true
+          "title": "Mercato: se cae el traspaso de Folarin Balogun al Everton",
+          "summary": "El delantero del AS Monaco Folarin Balogun no fichará por el Everton tras romperse a última hora las negociaciones contractuales con el conjunto inglés.",
+          "body": [
+            "Cuando su salida parecía totalmente encarrilada, el internacional estadounidense de 25 años abandonó el centro de entrenamiento ante este desacuerdo de última hora. Cerrada la vía inglesa, aún cabe una salida hacia ligas cuyo mercado sigue abierto, como Turquía o Arabia Saudí.",
+            "Este giro inesperado trastoca los planes del AS Monaco. El club del Principado había preferido priorizar la venta de su atacante antes que la de Lamine Camara, cuyo traspaso al Chelsea había quedado finalmente en suspenso."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Mercato : Folarin Balogun n'ira finalement pas à Everton",
-          "summary": "Privilégié par Monaco aux dépens de celui de Lamine Camara vers Chelsea, le transfert de Folarin Balogun à Everton n'aura pas lieu. L'attaquant américain a décidé de partir du centre d'entraînement après une dernière renégociation infructueuse avec les Toffees.",
-          "needs_translation": true
+          "title": "سوق الانتقالات: انهيار صفقة انتقال فولارين بالوغون إلى إيفرتون",
+          "summary": "لن ينضم مهاجم موناكو فولارين بالوغون إلى إيفرتون بعد فشل المفاوضات النهائية بشأن بنود عقده مع النادي الإنجليزي.",
+          "body": [
+            "بعدما كان رحيله في طريقه للاكتمال، غادر الدولي الأمريكي البالغ من العمر 25 عاماً مركز التدريبات إثر خلاف في اللحظات الأخيرة. ومع إغلاق الباب الإنجليزي، يبقى خياره متاحاً للرحيل نحو دوريات لا تزال سوق الانتقالات فيها مفتوحة، مثل تركيا أو المملكة العربية السعودية.",
+            "ويعقّد هذا التحول المفاجئ حسابات موناكو، إذ فضّل نادي الإمارة بيع مهاجمه عوضاً عن التفريط في لامين كامارا، الذي عُلّقت صفقة انتقاله إلى تشيلسي في نهاية المطاف."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Mercato-folarin-balogun-n-ira-finalement-pas-a-everton/1715399#at_medium=RSS_feeds",
@@ -1153,7 +1269,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Mercato-avec-le-transfert-de-folarin-balogun-a-everton-finalement-en-cours-celui-de-lamine-camara-vers-chelsea-annule-par-monaco/1715383#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-02T11:08:28+00:00"
+        }
+      }
     },
     {
       "id": "81c916c5b9f7",
@@ -1200,7 +1329,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Malick-fofana-finalement-a-sunderland-quinten-timber-a-palace-et-maitland-niles-engage-a-everton-ce-que-vous-avez-rate-du-mercato-durant-la-nuit/1715396#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6ecb6d73cd61",
@@ -1209,28 +1343,33 @@
       "i18n": {
         "de": {
           "title": "Von Chelsea zu Manchester City - Enzo Fernandez stellt Ablöse-Rekord ein",
-          "summary": "Das Land der Transfer-Superlative hat einen neuen Superlativ: Gemeinsam mit Alexander Isak ist Enzo Fernandez nun der teuerste Spieler der Premier League, er geht zu Manchester City.",
-          "needs_translation": false
+          "summary": "Enzo Fernandez wechselt von Chelsea zu Manchester City. Damit stellt er den Transferrekord der Premier League ein und teilt sich den Status des teuersten Spielers mit Alexander Isak.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Von Chelsea zu Manchester City - Enzo Fernandez stellt Ablöse-Rekord ein",
-          "summary": "Das Land der Transfer-Superlative hat einen neuen Superlativ: Gemeinsam mit Alexander Isak ist Enzo Fernandez nun der teuerste Spieler der Premier League, er geht zu Manchester City.",
-          "needs_translation": true
+          "title": "From Chelsea to Manchester City - Enzo Fernandez equals transfer record",
+          "summary": "Enzo Fernandez is moving from Chelsea to Manchester City. The move equals the Premier League transfer record, making him the joint-most expensive player in the league alongside Alexander Isak.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Von Chelsea zu Manchester City - Enzo Fernandez stellt Ablöse-Rekord ein",
-          "summary": "Das Land der Transfer-Superlative hat einen neuen Superlativ: Gemeinsam mit Alexander Isak ist Enzo Fernandez nun der teuerste Spieler der Premier League, er geht zu Manchester City.",
-          "needs_translation": true
+          "title": "De Chelsea à Manchester City - Enzo Fernandez égale le record de transfert",
+          "summary": "Enzo Fernandez quitte Chelsea pour rejoindre Manchester City. Il égale le record du transfert le plus cher de la Premier League, partageant ce statut avec Alexander Isak.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Von Chelsea zu Manchester City - Enzo Fernandez stellt Ablöse-Rekord ein",
-          "summary": "Das Land der Transfer-Superlative hat einen neuen Superlativ: Gemeinsam mit Alexander Isak ist Enzo Fernandez nun der teuerste Spieler der Premier League, er geht zu Manchester City.",
-          "needs_translation": true
+          "title": "Del Chelsea al Manchester City - Enzo Fernandez iguala el récord de traspaso",
+          "summary": "Enzo Fernandez deja el Chelsea para fichar por el Manchester City. Con este movimiento iguala el récord de traspaso de la Premier League, compartiendo el puesto de jugador más caro con Alexander Isak.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Von Chelsea zu Manchester City - Enzo Fernandez stellt Ablöse-Rekord ein",
-          "summary": "Das Land der Transfer-Superlative hat einen neuen Superlativ: Gemeinsam mit Alexander Isak ist Enzo Fernandez nun der teuerste Spieler der Premier League, er geht zu Manchester City.",
-          "needs_translation": true
+          "title": "من تشيلسي إلى مانشستر سيتي - إنزو فرنانديز يعادل الرقم القياسي لصفقات الانتقال",
+          "summary": "انتقل إنزو فرنانديز من تشيلسي إلى مانشستر سيتي، ليعادل الرقم القياسي لأغلى صفقة انتقال في تاريخ الدوري الإنجليزي الممتاز بالتساوي مع ألكسندر إيزاك.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/premier-league/transfer-saga-vorbei-fernandez-stellt-abloese-rekord-ein,enzo-fernandez-manchester-city-fc-chelsea-100.html",
@@ -1252,7 +1391,12 @@
           "url": "https://www.sportschau.de/fussball/premier-league/transfer-saga-vorbei-fernandez-stellt-abloese-rekord-ein,enzo-fernandez-manchester-city-fc-chelsea-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3799cc9739d4",
@@ -1261,28 +1405,33 @@
       "i18n": {
         "de": {
           "title": "Rückkehr unter Klopp? Ter Stegen berichtet von \"tollem Gespräch\"",
-          "summary": "Welche Rolle Marc ter Stegen beim Neuanfang der Nationalmannschaft spielen wird, ist noch unklar. Bei Ajax Amsterdam ist er momentan Stammkeeper - und berichtet nun von einem ersten Austausch mit Jürgen Klopp.",
-          "needs_translation": false
+          "summary": "Marc ter Stegen, derzeit Stammkeeper bei Ajax Amsterdam, hat von einem ersten positiven Austausch mit Jürgen Klopp über seine Rolle beim Neuanfang der Nationalmannschaft berichtet.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Rückkehr unter Klopp? Ter Stegen berichtet von \"tollem Gespräch\"",
-          "summary": "Welche Rolle Marc ter Stegen beim Neuanfang der Nationalmannschaft spielen wird, ist noch unklar. Bei Ajax Amsterdam ist er momentan Stammkeeper - und berichtet nun von einem ersten Austausch mit Jürgen Klopp.",
-          "needs_translation": true
+          "title": "Return under Klopp? Ter Stegen reports \"great conversation\"",
+          "summary": "Currently the starting goalkeeper at Ajax Amsterdam, Marc ter Stegen reported having a positive initial discussion with Jürgen Klopp regarding his role in the national team.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Rückkehr unter Klopp? Ter Stegen berichtet von \"tollem Gespräch\"",
-          "summary": "Welche Rolle Marc ter Stegen beim Neuanfang der Nationalmannschaft spielen wird, ist noch unklar. Bei Ajax Amsterdam ist er momentan Stammkeeper - und berichtet nun von einem ersten Austausch mit Jürgen Klopp.",
-          "needs_translation": true
+          "title": "Retour sous Klopp ? Ter Stegen évoque une « excellente discussion »",
+          "summary": "Actuellement gardien titulaire à Ajax Amsterdam, Marc ter Stegen a fait part d'un premier échange positif avec Jürgen Klopp concernant son rôle au sein de la sélection.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Rückkehr unter Klopp? Ter Stegen berichtet von \"tollem Gespräch\"",
-          "summary": "Welche Rolle Marc ter Stegen beim Neuanfang der Nationalmannschaft spielen wird, ist noch unklar. Bei Ajax Amsterdam ist er momentan Stammkeeper - und berichtet nun von einem ersten Austausch mit Jürgen Klopp.",
-          "needs_translation": true
+          "title": "¿Regreso con Klopp? Ter Stegen habla de una \"gran conversación\"",
+          "summary": "Marc ter Stegen, actual portero titular del Ajax Amsterdam, reveló haber mantenido una primera conversación positiva con Jürgen Klopp sobre su papel en la selección.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Rückkehr unter Klopp? Ter Stegen berichtet von \"tollem Gespräch\"",
-          "summary": "Welche Rolle Marc ter Stegen beim Neuanfang der Nationalmannschaft spielen wird, ist noch unklar. Bei Ajax Amsterdam ist er momentan Stammkeeper - und berichtet nun von einem ersten Austausch mit Jürgen Klopp.",
-          "needs_translation": true
+          "title": "عودة تحت قيادة كلوب؟ تير شتيغن يتحدث عن \"محادثة رائعة\"",
+          "summary": "كشف مارك تير شتيغن، حارس المرمى الأساسي حالياً في أياكس أمستردام، عن محادثة أولية إيجابية مع يورغن كلوب بشأن دوره في المرحلة الجديدة للمنتخب الألماني.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/rueckkehr-unter-klopp-ter-stegen-berichtet-von-tollem-gespraech-1248924/artikel#omrss",
@@ -1304,7 +1453,12 @@
           "url": "https://www.kicker.de/rueckkehr-unter-klopp-ter-stegen-berichtet-von-tollem-gespraech-1248924/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "da7bd6b2eb82",
@@ -1313,23 +1467,27 @@
       "i18n": {
         "en": {
           "title": "Have title contenders done enough in transfer window to challenge Arsenal?",
-          "summary": "As the transfer window closes for the summer, chief football writer Phil McNulty asks if Arsenal's rivals have done enough to challenge the champions?",
-          "needs_translation": false
+          "summary": "Following the close of the summer transfer window, Phil McNulty analyzes whether rivals have strengthened sufficiently to challenge Arsenal for the title.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Have title contenders done enough in transfer window to challenge Arsenal?",
-          "summary": "As the transfer window closes for the summer, chief football writer Phil McNulty asks if Arsenal's rivals have done enough to challenge the champions?",
-          "needs_translation": true
+          "title": "Les prétendants au titre en ont-ils fait assez lors du mercato pour défier Arsenal ?",
+          "summary": "À la clôture du mercato estival, Phil McNulty analyse si les rivaux d'Arsenal se sont suffisamment renforcés pour disputer le titre aux champions.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Have title contenders done enough in transfer window to challenge Arsenal?",
-          "summary": "As the transfer window closes for the summer, chief football writer Phil McNulty asks if Arsenal's rivals have done enough to challenge the champions?",
-          "needs_translation": true
+          "title": "¿Han hecho suficiente los aspirantes al título en el mercado para desafiar a Arsenal?",
+          "summary": "Tras el cierre del mercado de fichajes estival, Phil McNulty analiza si los rivales de Arsenal se han reforzado lo suficiente para disputarle el campeonato.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Have title contenders done enough in transfer window to challenge Arsenal?",
-          "summary": "As the transfer window closes for the summer, chief football writer Phil McNulty asks if Arsenal's rivals have done enough to challenge the champions?",
-          "needs_translation": true
+          "title": "هل فعل المنافسون على اللقب ما يكفي في سوق الانتقالات لتحدي أرسنال؟",
+          "summary": "مع إغلاق سوق الانتقالات الصيفية، يحلل الصحفي فيل ماكنولتي ما إذا كان منافسو أرسنال قد دعموا صفوفهم بما يكفي لمنافسته على اللقب.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/c804y5e1333o?at_medium=RSS&at_campaign=rss",
@@ -1351,7 +1509,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/c804y5e1333o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d983bf47e6bf",
@@ -1360,23 +1523,27 @@
       "i18n": {
         "en": {
           "title": "Erling Haaland won’t win the Golden Boot this season, and Joao Pedro is the reason why",
-          "summary": "The Norwegian has dominated the Golden Boot rankings since his Manchester City debut, but this is Joao Pedro’s season",
-          "needs_translation": false
+          "summary": "After dominating the Golden Boot race since arriving at Manchester City, Erling Haaland faces strong competition from Joao Pedro this season.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Erling Haaland won’t win the Golden Boot this season, and Joao Pedro is the reason why",
-          "summary": "The Norwegian has dominated the Golden Boot rankings since his Manchester City debut, but this is Joao Pedro’s season",
-          "needs_translation": true
+          "title": "Erling Haaland ne remportera pas le Golden Boot cette saison, et Joao Pedro en est la raison",
+          "summary": "Après avoir dominé le classement du Golden Boot depuis ses débuts à Manchester City, Erling Haaland voit cette saison Joao Pedro s'imposer comme un rival majeur.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Erling Haaland won’t win the Golden Boot this season, and Joao Pedro is the reason why",
-          "summary": "The Norwegian has dominated the Golden Boot rankings since his Manchester City debut, but this is Joao Pedro’s season",
-          "needs_translation": true
+          "title": "Erling Haaland no ganará la Golden Boot esta temporada, y Joao Pedro es la razón",
+          "summary": "Tras dominar la lucha por la Golden Boot desde su llegada al Manchester City, Erling Haaland afronta esta temporada la fuerte competencia de Joao Pedro.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Erling Haaland won’t win the Golden Boot this season, and Joao Pedro is the reason why",
-          "summary": "The Norwegian has dominated the Golden Boot rankings since his Manchester City debut, but this is Joao Pedro’s season",
-          "needs_translation": true
+          "title": "إرلينغ هالاند لن يفوز بالحذاء الذهبي هذا الموسم وجواو بيدرو هو السبب",
+          "summary": "بعد هيمنته على سباق الحذاء الذهبي منذ انضمامه إلى مانشستر سيتي، يواجه النرويجي إرلينغ هالاند منافسة شرسة من جواو بيدرو هذا الموسم.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why",
@@ -1398,7 +1565,12 @@
           "url": "https://www.fourfourtwo.com/person/player/erling-haaland-wont-win-the-golden-boot-this-season-and-joao-pedro-is-why"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ef4b1697298a",
@@ -1641,24 +1813,28 @@
       "summary": "En medio de todos los traspasos de última hora en la Premier League durante la jornada de cierre del mercado este martes, una operación importante parece haberse frustrado.",
       "i18n": {
         "es": {
-          "title": "El fichaje del protagonista del Mundial, dinamitado en el último suspiro",
-          "summary": "En medio de todos los traspasos de última hora en la Premier League durante la jornada de cierre del mercado este martes, una operación importante parece haberse frustrado.",
-          "needs_translation": false
+          "title": "El fichaje del protagonista del Mundial, frustrado en el último suspiro",
+          "summary": "Durante el cierre del mercado de la Premier League este martes, una operación destacada que involucraba a una de las figuras del Mundial se cayó a última hora.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El fichaje del protagonista del Mundial, dinamitado en el último suspiro",
-          "summary": "En medio de todos los traspasos de última hora en la Premier League durante la jornada de cierre del mercado este martes, una operación importante parece haberse frustrado.",
-          "needs_translation": true
+          "title": "World Cup star's transfer collapses at the death",
+          "summary": "During Premier League transfer deadline day on Tuesday, a major deal involving a key World Cup player fell through at the last minute.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El fichaje del protagonista del Mundial, dinamitado en el último suspiro",
-          "summary": "En medio de todos los traspasos de última hora en la Premier League durante la jornada de cierre del mercado este martes, una operación importante parece haberse frustrado.",
-          "needs_translation": true
+          "title": "Le transfert du protagoniste du Mondial capote au dernier moment",
+          "summary": "Lors de la dernière journée du mercato en Premier League ce mardi, une opération majeure impliquant une figure du Mondial a finalement échoué.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El fichaje del protagonista del Mundial, dinamitado en el último suspiro",
-          "summary": "En medio de todos los traspasos de última hora en la Premier League durante la jornada de cierre del mercado este martes, una operación importante parece haberse frustrado.",
-          "needs_translation": true
+          "title": "تعثر صفقة نجم كأس العالم في اللحظات الأخيرة",
+          "summary": "فشلت صفقة انتقال كبرى لأحد أبرز نجوم كأس العالم في اللحظات الأخيرة خلال اليوم الختامي لسوق الانتقالات في الدوري الإنجليزي الممتاز يوم الثلاثاء.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fichajes/20260902/1004222403/fichaje-protagonista-mundial-dinamitado-ultimo-suspiro.html",
@@ -1680,7 +1856,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fichajes/20260902/1004222403/fichaje-protagonista-mundial-dinamitado-ultimo-suspiro.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "677e5f70b6a6",
@@ -1779,7 +1960,12 @@
           "url": "https://www.kicker.de/wer-uebertraegt-vfl-osnabrueck-gegen-bayern-muenchen-heute-live-im-free-tv-stream-1248724/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "197786c3e44d",
@@ -1788,23 +1974,27 @@
       "i18n": {
         "es": {
           "title": "Decolandia en el Barça",
-          "summary": "Cerrado el mercado de verano, los elogios para Deco son unánimes. Hay consenso que la plantilla del Barça es mejor que la de la temporada pasada y que, además, el director deportivo se ha sacado algunos conejos de la chistera que ningún periodista vio venir.",
-          "needs_translation": false
+          "summary": "Tras el cierre del mercado de verano, la labor de Deco como director deportivo del Barça recibe elogios unánimes por haber reforzado la plantilla con operaciones imprevistas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Decolandia en el Barça",
-          "summary": "Cerrado el mercado de verano, los elogios para Deco son unánimes. Hay consenso que la plantilla del Barça es mejor que la de la temporada pasada y que, además, el director deportivo se ha sacado algunos conejos de la chistera que ningún periodista vio venir.",
-          "needs_translation": true
+          "title": "Decolandia at Barça",
+          "summary": "Following the close of the summer transfer window, Deco has received unanimous praise as Barça sporting director for improving the squad with unexpected signings.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Decolandia en el Barça",
-          "summary": "Cerrado el mercado de verano, los elogios para Deco son unánimes. Hay consenso que la plantilla del Barça es mejor que la de la temporada pasada y que, además, el director deportivo se ha sacado algunos conejos de la chistera que ningún periodista vio venir.",
-          "needs_translation": true
+          "title": "Decolandia au Barça",
+          "summary": "À la clôture du mercato estival, le travail de Deco à la direction sportive du Barça fait l'unanimité pour avoir amélioré l'effectif avec des recrues inattendues.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Decolandia en el Barça",
-          "summary": "Cerrado el mercado de verano, los elogios para Deco son unánimes. Hay consenso que la plantilla del Barça es mejor que la de la temporada pasada y que, además, el director deportivo se ha sacado algunos conejos de la chistera que ningún periodista vio venir.",
-          "needs_translation": true
+          "title": "ديكولانديا في برشلونة",
+          "summary": "مع إغلاق سوق الانتقالات الصيفية، نال ديكو إشادة واسعة لنجاحه كمدير رياضي في تحسين تشكيلة برشلونة وإبرام صفقات غير متوقعة.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222320/decolandia-barca.html",
@@ -1826,7 +2016,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222320/decolandia-barca.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "193cd5a7ad5a",
@@ -1873,7 +2068,12 @@
           "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-193"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6ef350becbf1",
@@ -1929,23 +2129,27 @@
       "i18n": {
         "es": {
           "title": "Barça Atlètic y Sabadell, a por la Copa Catalunya",
-          "summary": "La Nova Creu Alta de Sabadell acoge hoy (20.30 h., Esport3) la final de la Copa Catalunya 2026 que enfrentará al CE Sabadell, flamante equipo de Segunda División, y al Barça Atlètic , de Segunda RFEF.",
-          "needs_translation": false
+          "summary": "Barça Atlètic y Sabadell disputan hoy en el estadio Nova Creu Alta la final de la Copa Catalunya 2026.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Barça Atlètic y Sabadell, a por la Copa Catalunya",
-          "summary": "La Nova Creu Alta de Sabadell acoge hoy (20.30 h., Esport3) la final de la Copa Catalunya 2026 que enfrentará al CE Sabadell, flamante equipo de Segunda División, y al Barça Atlètic , de Segunda RFEF.",
-          "needs_translation": true
+          "title": "Barça Atlètic and Sabadell battle for the Copa Catalunya",
+          "summary": "Barça Atlètic and Sabadell face each other today at the Nova Creu Alta in the 2026 Copa Catalunya final.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Barça Atlètic y Sabadell, a por la Copa Catalunya",
-          "summary": "La Nova Creu Alta de Sabadell acoge hoy (20.30 h., Esport3) la final de la Copa Catalunya 2026 que enfrentará al CE Sabadell, flamante equipo de Segunda División, y al Barça Atlètic , de Segunda RFEF.",
-          "needs_translation": true
+          "title": "Barça Atlètic et Sabadell visent la Copa Catalunya",
+          "summary": "Le Barça Atlètic affronte Sabadell ce soir au stade Nova Creu Alta en finale de la Copa Catalunya 2026.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Barça Atlètic y Sabadell, a por la Copa Catalunya",
-          "summary": "La Nova Creu Alta de Sabadell acoge hoy (20.30 h., Esport3) la final de la Copa Catalunya 2026 que enfrentará al CE Sabadell, flamante equipo de Segunda División, y al Barça Atlètic , de Segunda RFEF.",
-          "needs_translation": true
+          "title": "برشلونة أتلتيك وساباديل يتنافسان على لقب كأس كتالونيا",
+          "summary": "يلتقي برشلونة أتلتيك مع ساباديل اليوم على ملعب نوفا كرو ألتا في المباراة النهائية لبطولة كأس كتالونيا 2026.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222376/barca-atletic-sabadell-copa-catalunya.html",
@@ -1967,7 +2171,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222376/barca-atletic-sabadell-copa-catalunya.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4c582b808e59",
@@ -1976,23 +2185,27 @@
       "i18n": {
         "es": {
           "title": "Gabriel Jesus encaja en la idea de juego de Flick",
-          "summary": "El Barça sigue lanzado en LaLiga y sumó una nueva victoria ante el Rayo Vallecano en un encuentro en el que volvió a demostrar la fortaleza del conjunto azulgrana con varios condicionantes.",
-          "needs_translation": false
+          "summary": "El FC Barcelona sumó una nueva victoria en LaLiga ante el Rayo Vallecano, mientras Gabriel Jesus encaja en los planes tácticos del técnico Hansi Flick.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Gabriel Jesus encaja en la idea de juego de Flick",
-          "summary": "El Barça sigue lanzado en LaLiga y sumó una nueva victoria ante el Rayo Vallecano en un encuentro en el que volvió a demostrar la fortaleza del conjunto azulgrana con varios condicionantes.",
-          "needs_translation": true
+          "title": "Gabriel Jesus fits Flick's style of play",
+          "summary": "FC Barcelona continued their strong LaLiga form with a win over Rayo Vallecano, as Gabriel Jesus aligns with Flick's tactical plans.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Gabriel Jesus encaja en la idea de juego de Flick",
-          "summary": "El Barça sigue lanzado en LaLiga y sumó una nueva victoria ante el Rayo Vallecano en un encuentro en el que volvió a demostrar la fortaleza del conjunto azulgrana con varios condicionantes.",
-          "needs_translation": true
+          "title": "Gabriel Jesus correspond à l'idée de jeu de Flick",
+          "summary": "Le FC Barcelone poursuit sa série victorieuse en LaLiga contre le Rayo Vallecano, tandis que le profil de Gabriel Jesus s'intègre aux plans de Flick.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Gabriel Jesus encaja en la idea de juego de Flick",
-          "summary": "El Barça sigue lanzado en LaLiga y sumó una nueva victoria ante el Rayo Vallecano en un encuentro en el que volvió a demostrar la fortaleza del conjunto azulgrana con varios condicionantes.",
-          "needs_translation": true
+          "title": "غابرييل جيسوس يناسب أسلوب لعب فليك",
+          "summary": "واصل برشلونة مسيرته القوية في الدوري الإسباني بفوز جديد على رايو فايكانو، في حين يناسب غابرييل جيسوس الخطط الفنية للمدرب هانز فليك.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222257/espart-bernal-futuro-barca-buenas-manos.html",
@@ -2014,7 +2227,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222257/espart-bernal-futuro-barca-buenas-manos.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "68c7112fb96b",
@@ -2023,23 +2241,27 @@
       "i18n": {
         "es": {
           "title": "La presión mueve al Barça",
-          "summary": "A pesar de que el Barça de Flick ha tenido el vértigo y la línea defensiva muy avanzada como signos de identidad, el vehículo que ha permitido esa personalidad ha sido la presión alta. Sin ella, no habría podido existir la verticalidad ni la trampa del fuera de juego.",
-          "needs_translation": false
+          "summary": "La presión alta es el elemento clave del Barça de Flick, ya que hace posible tanto su estilo vertical como la eficacia de su línea defensiva adelantada.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "La presión mueve al Barça",
-          "summary": "A pesar de que el Barça de Flick ha tenido el vértigo y la línea defensiva muy avanzada como signos de identidad, el vehículo que ha permitido esa personalidad ha sido la presión alta. Sin ella, no habría podido existir la verticalidad ni la trampa del fuera de juego.",
-          "needs_translation": true
+          "title": "Pressing drives Barça",
+          "summary": "High pressing is the cornerstone of Flick's Barça, enabling both their vertical style of play and their advanced defensive line.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La presión mueve al Barça",
-          "summary": "A pesar de que el Barça de Flick ha tenido el vértigo y la línea defensiva muy avanzada como signos de identidad, el vehículo que ha permitido esa personalidad ha sido la presión alta. Sin ella, no habría podido existir la verticalidad ni la trampa del fuera de juego.",
-          "needs_translation": true
+          "title": "Le pressing moteur du Barça",
+          "summary": "Le pressing haut constitue la clé de voûte du Barça de Flick, permettant à l'équipe de développer son jeu vertical et d'appliquer sa ligne défensive avancée.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "La presión mueve al Barça",
-          "summary": "A pesar de que el Barça de Flick ha tenido el vértigo y la línea defensiva muy avanzada como signos de identidad, el vehículo que ha permitido esa personalidad ha sido la presión alta. Sin ella, no habría podido existir la verticalidad ni la trampa del fuera de juego.",
-          "needs_translation": true
+          "title": "الضغط العالي محرك برشلونة",
+          "summary": "يمثل الضغط العالي الركيزة الأساسية في أسلوب برشلونة تحت قيادة فليك، إذ يسمح للفريق باللعب المباشر وتطبيق مصيدة التسلل عبر خط دفاع متقدم.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222300/presion-mueve-barca.html",
@@ -2061,7 +2283,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222300/presion-mueve-barca.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3bb0f1bd1ada",
@@ -2164,26 +2391,27 @@
       "i18n": {
         "es": {
           "title": "La millonaria Copa Brasil: el Mineiro de Domínguez semifinalista y 19 millones de dólares al campeón",
-          "summary": "Atlético Mineiro eliminó a Cruzeiro en un clásico apasionante y espera rival. Los dos finalistas van a la Libertadores 2027.",
-          "needs_translation": false
+          "summary": "Atlético Mineiro avanzó a las semifinales de la Copa Brasil tras eliminar a Cruzeiro. El campeón del torneo recibirá 19 millones de dólares y ambos finalistas clasificarán a la Libertadores 2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The millionaire Copa Brasil: Mineiro de Dominguez semi-finalist and 19 million dollars to the champion",
-          "summary": "Atlético Mineiro eliminated Cruzeiro in an exciting classic and expects a rival. The two finalists go to the Libertadores 2027.",
+          "title": "The lucrative Copa Brasil: Domínguez's Mineiro reach semi-finals with $19 million for the champion",
+          "summary": "Atlético Mineiro eliminated Cruzeiro to qualify for the Copa Brasil semi-finals. The tournament winner will earn $19 million, with both finalists securing berths in the 2027 Libertadores.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La millionnaire Copa Brasil : le Mineiro de Domínguez demi-finaliste et 19 millions de dollars au champion",
-          "summary": "L'Atlético Mineiro a éliminé Cruzeiro dans un classique passionnant et attend son rival. Les deux finalistes vont à la Libertadores 2027.",
+          "title": "La lucrative Copa Brasil : le Mineiro de Domínguez en demi-finales et 19 millions de dollars pour le champion",
+          "summary": "Atlético Mineiro a éliminé Cruzeiro pour atteindre les demi-finales de la Copa Brasil. Le vainqueur touchera 19 millions de dollars et les deux finalistes se qualifieront pour la Libertadores 2027.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "المليونير كوبا البرازيل: مينيرو دي دومينغيز في الدور نصف النهائي و 19 مليون دولار للبطل",
-          "summary": "قام أتلتيكو مينيرو بالقضاء على كروزيرو بطريقة كلاسيكية مثيرة ويتوقع منافسا له. المتسابقان النهائيان يذهبان إلى ليبرتادوريس 2027.",
+          "title": "كأس البرازيل المليونية: مينيرو بقيادة دومينغيز إلى نصف النهائي و19 مليون دولار للبطل",
+          "summary": "تأهل أتلتيكو مينيرو إلى نصف نهائي كأس البرازيل بعد إقصائه غريمه كروزيرو. سيحصل البطل على 19 مليون دولار، بينما يضمن طرفا النهائي التأهل إلى كأس ليبرتادوريس 2027.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/america/copa-brasil-2026-revanchas-cuartos-clasicos-millonaria_0_7N9sq5udcI.html",
@@ -2205,7 +2433,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/america/copa-brasil-2026-revanchas-cuartos-clasicos-millonaria_0_7N9sq5udcI.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "130720b9dfab",
@@ -2214,26 +2447,27 @@
       "i18n": {
         "es": {
           "title": "Vélez llegó a Córdoba: firmas y Ronaldo Martínez listo para ser titular vs. Boca",
-          "summary": "El Fortín ya está en la sede de los octavos de final de Copa Argentina. Un vuelo demorado y el 11 que piensa Guillermo.",
-          "needs_translation": false
+          "summary": "Vélez ya se encuentra en Córdoba para disputar los octavos de final de la Copa Argentina ante Boca. Ronaldo Martínez apunta a ser titular en el once de Guillermo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Vélez arrived in Córdoba: signatures and Ronaldo Martínez ready to be headline vs. Boca",
-          "summary": "El Fortín is already at the venue of the round of 16 of the Copa Argentina. A delayed flight and the 11th that Guillermo thinks.",
+          "title": "Vélez arrive in Córdoba: autographs and Ronaldo Martínez set to start vs. Boca",
+          "summary": "Vélez have arrived in Córdoba for their Copa Argentina round of 16 clash against Boca. Ronaldo Martínez is expected to start in Guillermo's lineup.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Vélez est arrivé à Córdoba : les signatures et Ronaldo Martínez prêt à être titulaire contre Boca",
-          "summary": "Le Fortín est déjà au siège des huitièmes de finale de la Coupe d'Argentine. Un vol retardé et le 11 que pense Guillermo.",
+          "title": "Vélez est arrivé à Córdoba : autographes et Ronaldo Martínez prêt à être titulaire contre Boca",
+          "summary": "Vélez est arrivé à Córdoba pour affronter Boca en huitièmes de finale de la Copa Argentina. Ronaldo Martínez est pressenti pour débuter dans le onze de Guillermo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "وصل فيليز إلى قرطبة: التوقيعات ورونالدو مارتينيز على استعداد ليكون العنوان الرئيسي مقابل بوكا",
-          "summary": "El Fortín موجود بالفعل في مكان دور الـ 16 من كأس الأرجنتين. رحلة متأخرة والحادية عشرة التي يعتقدها غيليرمو.",
+          "title": "فيليز يصل إلى كوردوبا: توقيعات ورونالدو مارتينيز جاهز للبدء أساسياً ضد بوكا",
+          "summary": "وصل فيليز إلى كوردوبا لخوض ثمن نهائي كأس الأرجنتين ضد بوكا جونيورز، حيث يتجه المدرب غييرمو للاعتماد على رونالدو مارتينيز أساسياً.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/velez/velez-llego-cordoba-copa-argentina-vs-boca-ronaldo-martinez-titular-11-guillermo_0_HVrxKnqM19.html",
@@ -2261,7 +2495,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/boca-equipo-paredes-dudas-todas-lineas-velez-copa-argentina_0_hrOVqf51sE.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "871cfd8fac6f",
@@ -2270,26 +2509,27 @@
       "i18n": {
         "es": {
           "title": "Tras el retiro de Messi, ¿cuál será el futuro de los otros generales de la Selección?",
-          "summary": "¿Quién tomará el liderazgo en la nueva era de la Selección? Con Messi, Otamendi y Di María fuera, el futuro del equipo depende de decisiones clave en Ezeiza.",
-          "needs_translation": false
+          "summary": "Tras la salida de referentes como Messi, Otamendi y Di María, la Selección argentina inicia un recambio generacional cuyo nuevo liderazgo se definirá en Ezeiza.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "After Messi's retirement, what will be the future of the other generals of the National Team?",
-          "summary": "Who will take the lead in the new era of the Selection? With Messi, Otamendi and Di Maria out, the team's future depends on key decisions at Ezeiza.",
+          "title": "After Messi's retirement, what will be the future of the Selección's other leaders?",
+          "summary": "Following the departures of Messi, Otamendi, and Di María, the Argentina national team faces a leadership transition shaped by key decisions at Ezeiza.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Après la retraite de Messi, quel sera l'avenir des autres généraux de la Sélection ?",
-          "summary": "Qui prendra le leadership dans la nouvelle ère de la Sélection ? Avec Messi, Otamendi et Di Maria à l'extérieur, l'avenir de l'équipe dépend de décisions clés chez Ezeiza.",
+          "title": "Après la retraite de Messi, quel avenir pour les autres cadres de la Selección ?",
+          "summary": "Avec les départs de Messi, Otamendi et Di María, l'Argentine prépare une transition de son leadership qui dépendra de décisions majeures à Ezeiza.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "بعد تقاعد ميسي، ماذا سيكون مستقبل الجنرالات الآخرين في المنتخب الوطني ؟",
-          "summary": "من سيأخذ زمام المبادرة في العصر الجديد للاختيار ؟ مع خروج ميسي وأوتامندي ودي ماريا، يعتمد مستقبل الفريق على القرارات الرئيسية في إيزيزا.",
+          "title": "بعد اعتزال ميسي، ما مستقبل بقية قادة المنتخب الأرجنتيني؟",
+          "summary": "يستعد منتخب الأرجنتين لمرحلة انتقالية لتحديد هوية قادته الجدد بعد رحيل ميسي وأوتاميندي ودي ماريا، في انتظار قرارات حاسمة في إيزيزا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/seleccion/traselretirodemessicualseraelfuturodelosotrosgeneralesdelaseleccion_0_WAcLhxj2JV.html",
@@ -2311,7 +2551,12 @@
           "url": "https://www.ole.com.ar/seleccion/traselretirodemessicualseraelfuturodelosotrosgeneralesdelaseleccion_0_WAcLhxj2JV.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2a967dc6d206",
@@ -2369,27 +2614,28 @@
       "summary": "Un delantero que fue bautizado en honor a Román fue anunciado como refuerzo del Sunderland.",
       "i18n": {
         "es": {
-          "title": "Fichaje sorpresa en Inglaterra: ¿quién es el Juan Riquelme que jugará en la Premier League?",
-          "summary": "Un delantero que fue bautizado en honor a Román fue anunciado como refuerzo del Sunderland.",
-          "needs_translation": false
+          "title": "Fichaje sorpresa en Inglaterra: quién es Juan Riquelme, el nuevo jugador del Sunderland",
+          "summary": "El Sunderland anunció la incorporación de un delantero llamado Juan Riquelme, bautizado así en homenaje a Román.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Surprise signing in England: who is the Juan Riquelme who will play in the Premier League?",
-          "summary": "A striker who was christened in honour of Roman was announced as a reinforcement for Sunderland.",
+          "title": "Surprise signing in England: who is the Juan Riquelme joining Sunderland?",
+          "summary": "Sunderland have announced the signing of a forward named Juan Riquelme in honor of Román.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Transfert surprise en Angleterre : qui est le Juan Riquelme qui jouera en Premier League ?",
-          "summary": "Un attaquant qui a été baptisé en l'honneur de Román a été annoncé comme un renfort de Sunderland.",
+          "title": "Signature surprise en Angleterre : qui est Juan Riquelme, le renfort de Sunderland ?",
+          "summary": "Sunderland a officialisé le recrutement d'un attaquant prénommé Juan Riquelme en hommage à Román.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "توقيع مفاجئ في إنجلترا: من هو خوان ريكيلمي الذي سيلعب في الدوري الإنجليزي الممتاز ؟",
-          "summary": "تم الإعلان عن المهاجم الذي تم تعميده تكريما لرومان كتعزيز لسندرلاند.",
+          "title": "صفقة مفاجئة في إنجلترا: من هو خوان ريكيلمي الذي سيلعب في الدوري الإنجليزي الممتاز؟",
+          "summary": "أعلن نادي سندرلاند تعاقده مع مهاجم سُمي خوان ريكيلمي تكريماً للنجم رومان.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/inglaterra/fichaje-sorpresa-inglaterra-riquelme-jugara-premier-league_0_JTFd3SkFPQ.html",
@@ -2411,7 +2657,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/inglaterra/fichaje-sorpresa-inglaterra-riquelme-jugara-premier-league_0_JTFd3SkFPQ.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4e361452417d",
