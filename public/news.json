@@ -294,7 +294,12 @@
           "url": "https://africatopsports.com/afrique-football/rdc-la-pose-des-sieges-passe-a-la-vitesse-superieure-au-stade-des-martyrs/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "48c8138e94c1",
@@ -452,33 +457,34 @@
       "summary": "Chema wechselte vom VfB Stuttgart zu Brighton & Hove Albion. Bei seiner Vorstellung bedankte sich der Spanier bei den Schwaben und reagiert auf Vergleiche mit Landsmann Rodri.",
       "i18n": {
         "de": {
-          "title": "Chema: \"Bin Stuttgart extrem dankbar\"",
-          "summary": "Chema wechselte vom VfB Stuttgart zu Brighton & Hove Albion. Bei seiner Vorstellung bedankte sich der Spanier bei den Schwaben und reagiert auf Vergleiche mit Landsmann Rodri.",
-          "needs_translation": false
+          "title": "Chema: „Bin Stuttgart extrem dankbar“",
+          "summary": "Nach seinem Wechsel vom VfB Stuttgart zu Brighton & Hove Albion hat sich Chema bei seinem Ex-Klub bedankt. Zudem äußerte sich der Spanier zu Vergleichen mit Landsmann Rodri.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Chema: \"I am extremely grateful to Stuttgart\"",
-          "summary": "Chema moved from VfB Stuttgart to Brighton & Hove Albion. At his presentation, the Spaniard thanked the Swabians and responded to comparisons with compatriot Rodri.",
+          "title": "Chema: \"Extremely grateful to Stuttgart\"",
+          "summary": "Following his transfer from VfB Stuttgart to Brighton & Hove Albion, Chema expressed his gratitude to his former club and addressed comparisons with his compatriot Rodri.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Chema : « Je suis extrêmement reconnaissant envers Stuttgart »",
-          "summary": "Chema est passé du VfB Stuttgart à Brighton & Hove Albion. Lors de sa présentation, l'Espagnol a remercié les Souabes et a réagi aux comparaisons avec son compatriote Rodri.",
+          "title": "Chema : « Je suis extrêmement reconnaissant envers Stuttgart »",
+          "summary": "Transféré du VfB Stuttgart à Brighton & Hove Albion, Chema a remercié son ancien club lors de sa présentation et a réagi aux comparaisons avec son compatriote Rodri.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Chema: \"Estoy extremadamente agradecido a Stuttgart\"",
-          "summary": "Chema pasó del VfB Stuttgart a Brighton & Hove Albion. En su presentación, el español agradeció a los suabos y respondió a las comparaciones con su compatriota Rodri.",
+          "title": "Chema: «Estoy sumamente agradecido a Stuttgart»",
+          "summary": "Tras fichar por Brighton & Hove Albion procedente de VfB Stuttgart, Chema agradeció a su antiguo club durante su presentación y abordó las comparaciones con su compatriota Rodri.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تشيما: \"أنا ممتن للغاية لشتوتغارت\"",
-          "summary": "انتقل تشيما من VfB Stuttgart إلى Brighton & Hove Albion. في عرضه التقديمي، شكر الإسباني شعب سواب ورد على المقارنات مع مواطنه رودري.",
+          "title": "تشيما: «ممتن للغاية لشتوتغارت»",
+          "summary": "وجّه الإسباني تشيما الشكر لناديه السابق في إف بي شتوتغارت خلال تقديمه لاعباً جديداً في برايتون أند هوف ألبيون، وتناول المقارنات بينه وبين مواطنه رودري.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/chema-bin-stuttgart-extrem-dankbar-1249234/video#omrss",
@@ -500,7 +506,12 @@
           "url": "https://www.kicker.de/chema-bin-stuttgart-extrem-dankbar-1249234/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c4c941947267",
@@ -550,7 +561,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/L-argentine-va-celebrer-lionel-messi-a-la-10e-minute-de-chaque-match-de-la-prochaine-journee/1715603#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0b29307f9880",
@@ -558,27 +574,48 @@
       "summary": "Les clubs de Ligue 1 et Ligue 2 peuvent bien recruter après la clôture du mercato, mais selon un cadre très strict. La règle des jokers leur permet en effet d'inscrire un nouveau joueur entre septembre et décembre.",
       "i18n": {
         "fr": {
-          "title": "Comment fonctionnent les jokers, qui permettent aux clubs de Ligue 1 de recruter après la période de mercato ?",
-          "summary": "Les clubs de Ligue 1 et Ligue 2 peuvent bien recruter après la clôture du mercato, mais selon un cadre très strict. La règle des jokers leur permet en effet d'inscrire un nouveau joueur entre septembre et décembre.",
-          "needs_translation": false
+          "title": "Mercato : le fonctionnement de la règle du joker en Ligue 1 et Ligue 2",
+          "summary": "Les clubs de Ligue 1 et de Ligue 2 peuvent encore signer un joueur issu d'une formation française jusqu'en décembre grâce à la règle du joker.",
+          "body": [
+            "Fixée par l'article 213 des règlements administratifs de la Ligue de football professionnel, cette dérogation permet à chaque formation d'enregistrer un unique renfort en dehors de la fenêtre estivale. Une contrainte s'impose : l'élément recruté doit obligatoirement être déjà sous contrat dans une équipe française. Ce droit s'éteint totalement pour la seconde moitié de l'exercice.",
+            "Ce cadre réglementaire explique les mouvements officialisés au lendemain de la fermeture du marché. Lyon a ainsi pu boucler l'arrivée de Keito Nakamura depuis Reims, tandis que Brest s'est attaché les services de Giovani Versini en provenance de Pau."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "How do wildcards work, which allow Ligue 1 clubs to recruit after the transfer window?",
-          "summary": "Ligue 1 and Ligue 2 clubs can recruit well after the close of the transfer window, but according to a very strict framework. The wildcard rule allows them to register a new player between September and December.",
+          "title": "Transfers: How the joker rule works in Ligue 1 and Ligue 2",
+          "summary": "Ligue 1 and Ligue 2 clubs can still sign one player from a French side until December, thanks to the league's joker rule.",
+          "body": [
+            "Governed by Article 213 of the Ligue de football professionnel regulations, this exception allows each club to register a single recruit outside the summer window. A key restriction applies: the player must already be under contract with a French team. This mechanism expires completely ahead of the second half of the season.",
+            "The rule explains several deals finalized just after the deadline. Lyon secured the signing of Keito Nakamura from Reims, while Brest brought in Giovani Versini from Pau."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "¿Cómo funcionan los comodines, que permiten a los clubes de la Ligue 1 reclutar después de la ventana de transferencia?",
-          "summary": "Los clubes de Ligue 1 y Ligue 2 pueden reclutar después del cierre del mercado de fichajes, pero bajo un marco muy estricto. La regla de los comodines les permite inscribir a un nuevo jugador entre septiembre y diciembre.",
+          "title": "Mercado: cómo funciona la regla del comodín en Ligue 1 y Ligue 2",
+          "summary": "Los clubes de Ligue 1 y Ligue 2 todavía pueden incorporar a un futbolista de un equipo francés hasta diciembre gracias a la norma del comodín.",
+          "body": [
+            "Regulada por el artículo 213 del reglamento administrativo de la Ligue de football professionnel, esta excepción permite a cada club inscribir a un único refuerzo fuera del mercado estival. Hay una condición ineludible: el futbolista debe tener contrato con un conjunto francés. La opción expira definitivamente para la segunda vuelta.",
+            "Este marco normativo aclara las operaciones cerradas justo después de la fecha límite. Lyon pudo atar la llegada de Keito Nakamura procedente de Reims, mientras que Brest cerró la incorporación de Giovani Versini desde Pau."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "كيف تعمل أحرف البدل، والتي تسمح لأندية Ligue 1 بالتجنيد بعد فترة الانتقالات ؟",
-          "summary": "يمكن لنوادي الدرجة الأولى والثانية التجنيد بشكل جيد بعد إغلاق نافذة الانتقالات، ولكن وفقًا لإطار عمل صارم للغاية. تسمح قاعدة البدل لهم بتسجيل لاعب جديد بين سبتمبر وديسمبر.",
+          "title": "سوق الانتقالات: كيف تعمل قاعدة الجوكر في الدوري الفرنسي؟",
+          "summary": "تستطيع أندية الدوري الفرنسي بقسميه الأول والثاني ضم لاعب واحد من نادٍ محلي حتى ديسمبر، بالاعتماد على ما يُعرف بقاعدة \"الجوكر\".",
+          "body": [
+            "وفقاً للمادة 213 من لوائح رابطة الدوري الفرنسي للمحترفين، يتيح هذا الاستثناء لكل فريق تسجيل صفقة وحيدة خارج فترة الانتقالات الصيفية. ويشترط القانون قيداً واضحاً: يجب أن يكون اللاعب مرتبطاً بعقد مع نادٍ فرنسي آخر، مع إلغاء هذه الصلاحية نهائياً في النصف الثاني من الموسم.",
+            "يفسر هذا الإطار القانوني الصفقات المعلنة غداة إغلاق السوق؛ حيث أتم ليون تعاقده مع كيتو ناكامورا قادماً من ريمس، في حين استقدم بريست اللاعب جوفاني فيرسيني من صفوف بو."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Comment-fonctionnent-les-jokers-qui-permettent-aux-clubs-de-ligue-1-de-recruter-apres-la-periode-de-mercato/1715598#at_medium=RSS_feeds",
@@ -600,7 +637,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Comment-fonctionnent-les-jokers-qui-permettent-aux-clubs-de-ligue-1-de-recruter-apres-la-periode-de-mercato/1715598#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-02T21:45:19+00:00"
+        }
+      }
     },
     {
       "id": "433ac5d25fcc",
@@ -765,26 +815,27 @@
       "i18n": {
         "fr": {
           "title": "France : qui est ce jeune attaquant d’origine congolaise qui brille à Monaco ?",
-          "summary": "Âgé de 20 ans, Paris Brunner réalise un début de saison remarquable sous les couleurs de l’AS Monaco.",
-          "needs_translation": false
+          "summary": "Âgé de 20 ans, l'attaquant d'origine congolaise Paris Brunner réalise un début de saison remarqué sous les couleurs de l'AS Monaco.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "France: who is this young attacker of Congolese origin who shines in Monaco?",
-          "summary": "At the age of 20, Paris Brunner had a remarkable start to the season under the colours of AS Monaco.",
+          "title": "France: Who is this young forward of Congolese descent shining at Monaco?",
+          "summary": "Twenty-year-old forward of Congolese descent Paris Brunner is having a strong start to the season with AS Monaco in France.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Francia: ¿quién es este joven delantero de origen congoleño que brilla en Mónaco?",
-          "summary": "Paris Brunner, de 20 años, está realizando un inicio de temporada notable con los colores del AS Monaco.",
+          "title": "Francia: ¿quién es este joven delantero de origen congoleño que brilla en Monaco?",
+          "summary": "El delantero de 20 años de origen congoleño, Paris Brunner, está completando un destacado inicio de temporada con el AS Monaco en France.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "فرنسا: من هو هذا المهاجم الشاب من أصل كونغولي الذي يتألق في موناكو ؟",
-          "summary": "في سن العشرين، كان لباريس برونر بداية رائعة للموسم تحت ألوان إيه إس موناكو.",
+          "title": "فرنسا: من هو المهاجم الشاب ذو الأصول الكونغولية المتألق في موناكو؟",
+          "summary": "يقدم المهاجم ذو الأصول الكونغولية باريس برونر، البالغ من العمر 20 عاماً، بداية موسم مميزة في صفوف نادي موناكو الفرنسي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football-europe/france-qui-est-ce-jeune-attaquant-dorigine-congolaise-qui-brille-a-monaco/",
@@ -806,7 +857,12 @@
           "url": "https://africatopsports.com/football-europe/france-qui-est-ce-jeune-attaquant-dorigine-congolaise-qui-brille-a-monaco/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6ab5383ab1fc",
@@ -814,27 +870,44 @@
       "summary": "Interrogé sur les pressions exercées par l'UEFA sur Gianni Infantino et la FIFA, Samuel Eto'o dénonce un débat « biaisé » et pointe le fossé financier qui sépare les fédérations africaines de leurs homologues européens.",
       "i18n": {
         "fr": {
-          "title": "Samuel Eto'o sur les différences entre pays africains et européens : « Si nous avions un budget de 20 ou 40 M$ par an, nous aurions eu des Mbappé, des Tchouaméni »",
-          "summary": "Interrogé sur les pressions exercées par l'UEFA sur Gianni Infantino et la FIFA, Samuel Eto'o dénonce un débat « biaisé » et pointe le fossé financier qui sépare les fédérations africaines de leurs homologues européens.",
-          "needs_translation": false
+          "title": "Eto'o dénonce le fossé financier entre l'Afrique et l'Europe",
+          "summary": "Samuel Eto'o fustige le poids excessif accordé à l'UEFA face à la FIFA et pointe l'immense écart budgétaire avec le continent africain.",
+          "body": [
+            "Dans un entretien paru ce lundi, le président de la Fédération camerounaise refuse de voir l'Europe dominer les débats mondiaux. Selon lui, avec un budget annuel de 20 à 40 millions de dollars, le football africain aurait pu faire éclore et retenir des talents du calibre de Kylian Mbappé ou Aurélien Tchouaméni."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Samuel Eto'o on the differences between African and European countries: \"If we had a budget of 20 or 40 M$ per year, we would have had Mbappé, Tchouaméni\"",
-          "summary": "Asked about the pressure exerted by UEFA on Gianni Infantino and FIFA, Samuel Eto'o denounced a \"biased\" debate and pointed to the financial gap that separates African federations from their European counterparts.",
+          "title": "Eto'o slams financial gap between Africa and Europe",
+          "summary": "Samuel Eto'o has hit out at UEFA's disproportionate influence over FIFA, highlighting the vast budgetary chasm separating Africa from the European continent.",
+          "body": [
+            "In an interview published this Monday, the Cameroonian federation president dismissed the idea of an all-powerful European bloc. He argued that with an annual budget of 20 to 40 million dollars, African nations could have developed and retained generational talents of the caliber of Kylian Mbappé or Aurélien Tchouaméni."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Samuel Eto 'o sobre las diferencias entre países africanos y europeos: “Si tuviéramos un presupuesto de 20 o 40 millones de $ al año, tendríamos Mbappé, Chuaméni”",
-          "summary": "Interrogado sobre las presiones ejercidas por la UEFA sobre Gianni Infantino y la FIFA, Samuel Eto 'o denuncia un debate \"sesgado\" y señala la brecha financiera que separa a las federaciones africanas de sus homólogas europeas.",
+          "title": "Eto'o denuncia la brecha económica entre África y Europa",
+          "summary": "Samuel Eto'o carga contra el peso desmedido de la UEFA frente a la FIFA y señala la enorme disparidad presupuestaria con el continente africano.",
+          "body": [
+            "En una entrevista publicada este lunes, el presidente de la Federación camerunesa rechazó el dominio hegemónico europeo sobre el fútbol mundial. Según él, con un presupuesto anual de 20 a 40 millones de dólares, los países africanos habrían podido desarrollar y retener a talentos de la talla de Kylian Mbappé o Aurélien Tchouaméni."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "صموئيل إيتو حول الاختلافات بين الدول الأفريقية والأوروبية: \"لو كانت لدينا ميزانية قدرها 20 أو 40 مليوندولار سنويًا، لكان لدينا مبابي وتشواميني\"",
-          "summary": "وردا على سؤال حول الضغط الذي يمارسه الاتحاد الأوروبي لكرة القدم على جياني إنفانتينو والفيفا، ندد صموئيل إيتو بالنقاش \"المتحيز\" وأشار إلى الفجوة المالية التي تفصل الاتحادات الأفريقية عن نظيراتها الأوروبية.",
+          "title": "إيتو يندد بالفجوة المالية بين إفريقيا وأوروبا",
+          "summary": "شن صامويل إيتو هجوماً لاذعاً على النفوذ المفرط الممنوح للاتحاد الأوروبي لكرة القدم أمام الفيفا، مسلطاً الضوء على الفارق المالي الشاسع مع القارة السمراء.",
+          "body": [
+            "في مقابلة نُشرت الإثنين، رفض رئيس الاتحاد الكاميروني لكرة القدم هيمنة أوروبا المطلقة على شؤون اللعبة. وأكد إيتو أنه لو توفرت للمنتخبات الإفريقية ميزانية سنوية بين 20 و40 مليون دولار، لتمكنت من صقل والاحتفاظ بنجوم من طراز كيليان مبابي أو أوريليان تشواميني."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Samuel-eto-o-sur-les-differences-entre-pays-africains-et-europeens-si-nous-avions-un-budget-de-20-ou-40-m-par-an-nous-aurions-eu-des-mbappe-des-tchouameni/1715548#at_medium=RSS_feeds",
@@ -856,7 +929,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Samuel-eto-o-sur-les-differences-entre-pays-africains-et-europeens-si-nous-avions-un-budget-de-20-ou-40-m-par-an-nous-aurions-eu-des-mbappe-des-tchouameni/1715548#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-02T21:45:23+00:00"
+        }
+      }
     },
     {
       "id": "a7c7e36e41a4",
@@ -864,27 +950,28 @@
       "summary": "El DT se impuso en los siete partidos que dirigió a Boca en este torneo, nunca llegó ni a los penales y hasta la diferencia de gol es impresionante. Ante Vélez, va por más...",
       "i18n": {
         "es": {
-          "title": "Aurabarrena: la tremenda marca ganadora del Vasco en Copa Argentina",
-          "summary": "El DT se impuso en los siete partidos que dirigió a Boca en este torneo, nunca llegó ni a los penales y hasta la diferencia de gol es impresionante. Ante Vélez, va por más...",
-          "needs_translation": false
+          "title": "Aurabarrena: el impresionante registro ganador del Vasco en Copa Argentina",
+          "summary": "El Vasco Aurabarrena acumula siete victorias en siete partidos dirigidos con Boca en la Copa Argentina sin recurrir a los penales. Buscará extender su racha ante Vélez.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Aurabarrena: Vasco's tremendous winning brand in Copa Argentina",
-          "summary": "The coach prevailed in the seven games he managed Boca in this tournament, he never reached the penalties and even the goal difference is impressive. Before Vélez, he goes for more...",
+          "title": "Aurabarrena: Vasco's impressive winning streak in Copa Argentina",
+          "summary": "Aurabarrena has won all seven matches managed with Boca in the Copa Argentina without requiring penalties. He will look to extend this run against Vélez.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Aurabarrena : l'énorme marque gagnante du Vasco en Coupe d'Argentine",
-          "summary": "Le DT s'est imposé dans les sept matchs qu'il a menés à Boca dans ce tournoi, il n'est jamais arrivé aux tirs au but et même la différence de but est impressionnante. Ante Vélez, c'est plus...",
+          "title": "Aurabarrena : l'impressionnante série victorieuse d'El Vasco en Copa Argentina",
+          "summary": "Aurabarrena a remporté les sept matches qu'il a dirigés avec Boca en Copa Argentina sans disputer de tirs au but. Il tentera de poursuivre cette série face à Vélez.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أورابارينا: علامة فاسكو التجارية الفائزة في كأس الأرجنتين",
-          "summary": "فاز المدرب في المباريات السبع التي أدار فيها بوكا في هذه البطولة، ولم يصل أبدا إلى ركلات الترجيح وحتى فارق الأهداف مثير للإعجاب. قبل فيليز، يذهب لأكثر من ذلك...",
+          "title": "أورابارينا: سجل الانتصارات المميز لـ فاسكو في كأس الأرجنتين",
+          "summary": "فاز المدرب أورابارينا بجميع المباريات السبع التي قاد فيها بوكا في كأس الأرجنتين دون اللجوء إلى ركلات الترجيح، ويسعى لمواصلة السلسلة أمام فيليز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/rodolfoarruabarrena-bocajuniors-velez-copaargentina-xeneize-sarmientodejunin-octavosdefinal-marioalbertokempes_0_3i9ZE9ebuf.html",
@@ -906,7 +993,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/rodolfoarruabarrena-bocajuniors-velez-copaargentina-xeneize-sarmientodejunin-octavosdefinal-marioalbertokempes_0_3i9ZE9ebuf.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e65cd80a55d3",
@@ -1162,24 +1254,48 @@
       "summary": "Le PSG a éliminé l'Eintracht Francfort (5-1 a.p., 1-1 à l'aller) en troisième tour préliminaire de la Ligue des champions féminine. Le club de la capitale disputera donc la phase de ligue.",
       "i18n": {
         "fr": {
-          "title": "Vainqueur en prolongation face à Francfort, le PSG disputera bien la phase de ligue de la Ligue des champions",
-          "summary": "Le PSG a éliminé l'Eintracht Francfort (5-1 a.p., 1-1 à l'aller) en troisième tour préliminaire de la Ligue des champions féminine. Le club de la capitale disputera donc la phase de ligue.",
-          "needs_translation": false
+          "title": "Ligue des champions féminine : le PSG écarte Francfort en prolongation",
+          "summary": "Le Paris Saint-Germain s'est qualifié pour la phase de ligue de la Ligue des champions en dominant l'Eintracht Francfort après prolongation (5-1).",
+          "body": [
+            "Accrochées durant le temps réglementaire après l'égalisation de Rebecka Blomqvist (76e) en réponse à l'ouverture du score de Merveille Kanjinga (36e), les Parisiennes ont fait la différence en prolongation face à des Allemandes réduites à dix depuis l'expulsion de Hayley Raso (66e). À l'aller, les deux équipes s'étaient quittées sur un nul (1-1).",
+            "Kanjinga s'est offert un doublé dès l'entame de la prolongation (95e), avant que la capitaine Sakina Karchaoui ne creuse l'écart puis transforme un penalty. Rasheedat Ajibade a parachevé le festival offensif dans le temps additionnel, offrant au club de la capitale sa treizième participation à la C1 pour l'ultime match d'Elisa De Almeida avant son transfert à Arsenal."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Vainqueur en prolongation face à Francfort, le PSG disputera bien la phase de ligue de la Ligue des champions",
-          "summary": "Le PSG a éliminé l'Eintracht Francfort (5-1 a.p., 1-1 à l'aller) en troisième tour préliminaire de la Ligue des champions féminine. Le club de la capitale disputera donc la phase de ligue.",
-          "needs_translation": true
+          "title": "Women's Champions League: PSG overcome Frankfurt in extra time",
+          "summary": "Paris Saint-Germain secured their spot in the Women's Champions League group phase with an emphatic 5-1 extra-time victory over Eintracht Frankfurt.",
+          "body": [
+            "Held in check during regulation time after Rebecka Blomqvist (76') cancelled out Merveille Kanjinga's opener (36'), the Parisiennes pulled clear in extra time against an Eintracht Frankfurt side down to ten players following Hayley Raso's dismissal in the 66th minute. The sides had drawn 1-1 in the first leg.",
+            "Kanjinga struck again early in extra time (95') to complete her brace before captain Sakina Karchaoui scored twice, including a penalty. Rasheedat Ajibade rounded off the rout in stoppage time, punching the club's ticket to a thirteenth Champions League campaign in Elisa De Almeida's farewell match ahead of her move to Arsenal."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Vainqueur en prolongation face à Francfort, le PSG disputera bien la phase de ligue de la Ligue des champions",
-          "summary": "Le PSG a éliminé l'Eintracht Francfort (5-1 a.p., 1-1 à l'aller) en troisième tour préliminaire de la Ligue des champions féminine. Le club de la capitale disputera donc la phase de ligue.",
-          "needs_translation": true
+          "title": "Champions femenina: el PSG supera al Eintracht Frankfurt en la prórroga",
+          "summary": "El Paris Saint-Germain selló su billete a la fase de liga de la Champions femenina tras superar al Eintracht Frankfurt en la prórroga (5-1).",
+          "body": [
+            "Frenadas en los noventa minutos por el tanto de Rebecka Blomqvist (76') tras el gol inicial de Merveille Kanjinga (36'), las parisinas decantaron la eliminatoria en el tiempo extra ante un Eintracht Frankfurt con diez por la expulsión de Hayley Raso (66'). La ida había concluido 1-1.",
+            "Kanjinga firmó su doblete al inicio de la prórroga (95') antes de que la capitana Sakina Karchaoui marcara dos dianas seguidas, una de ellas de penalti. Rasheedat Ajibade rubricó la goleada en el descuento para certificar la decimotercera presencia continental del club, en la despedida de Elisa De Almeida antes de recalar en Arsenal."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Vainqueur en prolongation face à Francfort, le PSG disputera bien la phase de ligue de la Ligue des champions",
-          "summary": "Le PSG a éliminé l'Eintracht Francfort (5-1 a.p., 1-1 à l'aller) en troisième tour préliminaire de la Ligue des champions féminine. Le club de la capitale disputera donc la phase de ligue.",
-          "needs_translation": true
+          "title": "دوري أبطال أوروبا للسيدات: باريس سان جيرمان يتأهل على حساب فرانكفورت",
+          "summary": "بلغ باريس سان جيرمان مرحلة الدوري في دوري أبطال أوروبا للسيدات بعد فوزه المثير على آينتراخت فرانكفورت بخمسة أهداف لواحد بعد التمديد.",
+          "body": [
+            "بعد التعادل ذهابا بهدف لمثله وانتهاء الوقت الأصلي إيابا بهدف لمثله إثر رد ريبيكا بلومكفيست في الدقيقة السادسة والسبعين على هدف ميرفاي كانجينجا، صنعت الباريسيات الفارق في الشوطين الإضافيين أمام فريق ألماني لعب بعشر لاعبات منذ طرد هايلي راسو في الدقيقة السادسة والستين.",
+            "وعادت كانجينجا لتسجل هدفها الشخصي الثاني مع بداية التمديد، قبل أن تضيف القائدة سكينة قرشاوي هدفين متتاليين أحدهما من ركلة جزاء. واختتمت رشيدات أجيبادي الخماسية في الوقت بدل الضائع، لتضمن لنادي العاصمة مشاركته الثالثة عشرة في البطولة، في ختام مشوار المدافعة إليسا دي ألميدا قبل انتقالها إلى أرسنال."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Vainqueur-en-prolongation-face-a-francfort-le-psg-disputera-bien-la-phase-de-ligue-de-la-ligue-des-champions/1715588#at_medium=RSS_feeds",
@@ -1201,7 +1317,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Vainqueur-en-prolongation-face-a-francfort-le-psg-disputera-bien-la-phase-de-ligue-de-la-ligue-des-champions/1715588#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-02T21:45:25+00:00"
+        }
+      }
     },
     {
       "id": "a08f65d87481",
@@ -1300,7 +1429,12 @@
           "url": "https://africatopsports.com/afrique-football/elim-can-2027-guinee-le-syli-national-retrouve-enfin-le-stade-du-28-septembre/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "bc93b3615556",
@@ -1441,7 +1575,12 @@
           "url": "https://africatopsports.com/football/coupe-du-monde-u17-le-programme-de-la-cote-divoire-dans-le-groupe-e/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4c5ce55a7ab9",
@@ -1635,7 +1774,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222640/jesse-bisiwu-estrella-lista-barca-atletic-final-copa-catalunya.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3da3a2730911",
@@ -1845,24 +1989,28 @@
       "summary": "Northern Ireland manager Michael O'Neill says that he is \"certainly hopeful\" that the Irish Football Association can move forward with plans to have a National Training Centre open by 2028.",
       "i18n": {
         "en": {
-          "title": "Northern Ireland boss O'Neill 'hopeful' training centre plans progress",
-          "summary": "Northern Ireland manager Michael O'Neill says that he is \"certainly hopeful\" that the Irish Football Association can move forward with plans to have a National Training Centre open by 2028.",
-          "needs_translation": false
+          "title": "Northern Ireland manager O'Neill hopeful training centre plans advance",
+          "summary": "Northern Ireland manager Michael O'Neill is hopeful that the Irish Football Association will progress plans to open a National Training Centre by 2028.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Northern Ireland boss O'Neill 'hopeful' training centre plans progress",
-          "summary": "Northern Ireland manager Michael O'Neill says that he is \"certainly hopeful\" that the Irish Football Association can move forward with plans to have a National Training Centre open by 2028.",
-          "needs_translation": true
+          "title": "Le sélectionneur de Northern Ireland O'Neill espère voir avancer le projet de centre d'entraînement",
+          "summary": "Le sélectionneur de Northern Ireland Michael O'Neill a bon espoir que l'Irish Football Association avance dans son projet d'ouvrir un National Training Centre d'ici 2028.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Northern Ireland boss O'Neill 'hopeful' training centre plans progress",
-          "summary": "Northern Ireland manager Michael O'Neill says that he is \"certainly hopeful\" that the Irish Football Association can move forward with plans to have a National Training Centre open by 2028.",
-          "needs_translation": true
+          "title": "El seleccionador de Northern Ireland O'Neill confía en que avance el centro de entrenamiento",
+          "summary": "El seleccionador de Northern Ireland Michael O'Neill confía en que la Irish Football Association avance en sus planes para inaugurar un National Training Centre hacia 2028.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Northern Ireland boss O'Neill 'hopeful' training centre plans progress",
-          "summary": "Northern Ireland manager Michael O'Neill says that he is \"certainly hopeful\" that the Irish Football Association can move forward with plans to have a National Training Centre open by 2028.",
-          "needs_translation": true
+          "title": "مدرب أيرلندا الشمالية أونيل يأمل في إحراز تقدم بشأن مركز التدريب",
+          "summary": "أعرب مايكل أونيل مدرب أيرلندا الشمالية عن أمله في أن يحرز الاتحاد الأيرلندي لكرة القدم تقدمًا في خطط افتتاح مركز تدريب وطني بحلول عام 2028.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cq8jyw0zdn8o?at_medium=RSS&at_campaign=rss",
@@ -1884,7 +2032,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cq8jyw0zdn8o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "41279274c063",
@@ -1892,24 +2045,28 @@
       "summary": "Ya viene siendo habitual, en las últimas temporadas, que el Real Madrid ‘robe’ jugadores al Atlético de Madrid, de su cantera.",
       "i18n": {
         "es": {
-          "title": "De despedirse del Atlético con una emotiva carta, tras 11 años en la cantera, a fichar por el Real Madrid",
-          "summary": "Ya viene siendo habitual, en las últimas temporadas, que el Real Madrid ‘robe’ jugadores al Atlético de Madrid, de su cantera.",
-          "needs_translation": false
+          "title": "De despedirse del Atlético de Madrid con una carta emotiva tras 11 años en la cantera a fichar por el Real Madrid",
+          "summary": "Un futbolista de la cantera del Atlético de Madrid se marcha tras 11 años para fichar por el Real Madrid. El movimiento prolonga la tendencia reciente de traspasos de juveniles entre ambos clubes madrileños.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "De despedirse del Atlético con una emotiva carta, tras 11 años en la cantera, a fichar por el Real Madrid",
-          "summary": "Ya viene siendo habitual, en las últimas temporadas, que el Real Madrid ‘robe’ jugadores al Atlético de Madrid, de su cantera.",
-          "needs_translation": true
+          "title": "From an emotional farewell to Atlético de Madrid after 11 years in the academy to signing for Real Madrid",
+          "summary": "A youth player has left Atlético de Madrid after 11 years in the academy to sign with Real Madrid. The move reflects an ongoing trend of academy transfers between the Madrid rivals.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "De despedirse del Atlético con una emotiva carta, tras 11 años en la cantera, a fichar por el Real Madrid",
-          "summary": "Ya viene siendo habitual, en las últimas temporadas, que el Real Madrid ‘robe’ jugadores al Atlético de Madrid, de su cantera.",
-          "needs_translation": true
+          "title": "Après 11 ans au centre de formation et des adieux émouvants à l'Atlético de Madrid, il signe au Real Madrid",
+          "summary": "Après 11 ans passés au centre de formation de l'Atlético de Madrid, un jeune joueur rejoint le Real Madrid. Ce transfert confirme la tendance récente de départs de jeunes talents entre les deux clubs rivaux.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "De despedirse del Atlético con una emotiva carta, tras 11 años en la cantera, a fichar por el Real Madrid",
-          "summary": "Ya viene siendo habitual, en las últimas temporadas, que el Real Madrid ‘robe’ jugadores al Atlético de Madrid, de su cantera.",
-          "needs_translation": true
+          "title": "بعد وداع أتلتيكو مدريد إثر 11 عاما في الأكاديمية، ينتقل إلى صفوف ريال مدريد",
+          "summary": "انتقل لاعب شاب إلى صفوف ريال مدريد بعد 11 عاماً قضاها في أكاديمية أتلتيكو مدريد، في استمرار لظاهرة انتقال المواهب الواعدة بين الغريمين الإسبانيين في المواسم الأخيرة.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260902/1004222736/despedirse-atletico-emotiva-carta-11-anos-cantera-fichar-real-madrid.html",
@@ -1931,7 +2088,12 @@
           "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260902/1004222736/despedirse-atletico-emotiva-carta-11-anos-cantera-fichar-real-madrid.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b09ffecf42c8",
@@ -2086,23 +2248,27 @@
       "i18n": {
         "es": {
           "title": "Alerta máxima en el Barça con la afición del Feyenoord",
-          "summary": "En el FC Barcelona extremarán precauciones para recibir a los aficionados del Feyenoord , próximo rival en Champions League que visitará el Spotify Camp Nou este próximo miércoles (18.45 horas).",
-          "needs_translation": false
+          "summary": "El FC Barcelona reforzará las medidas de seguridad para la visita de los aficionados del Feyenoord este miércoles al Spotify Camp Nou, en partido de Champions League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Alerta máxima en el Barça con la afición del Feyenoord",
-          "summary": "En el FC Barcelona extremarán precauciones para recibir a los aficionados del Feyenoord , próximo rival en Champions League que visitará el Spotify Camp Nou este próximo miércoles (18.45 horas).",
-          "needs_translation": true
+          "title": "High alert at Barça regarding Feyenoord supporters",
+          "summary": "FC Barcelona will reinforce security measures for the arrival of Feyenoord fans at Spotify Camp Nou this Wednesday in the Champions League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Alerta máxima en el Barça con la afición del Feyenoord",
-          "summary": "En el FC Barcelona extremarán precauciones para recibir a los aficionados del Feyenoord , próximo rival en Champions League que visitará el Spotify Camp Nou este próximo miércoles (18.45 horas).",
-          "needs_translation": true
+          "title": "Alerte maximale au Barça concernant les supporters de Feyenoord",
+          "summary": "Le FC Barcelona renforcera ses mesures de sécurité lors de la venue des supporters de Feyenoord au Spotify Camp Nou ce mercredi, dans le cadre de la Champions League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Alerta máxima en el Barça con la afición del Feyenoord",
-          "summary": "En el FC Barcelona extremarán precauciones para recibir a los aficionados del Feyenoord , próximo rival en Champions League que visitará el Spotify Camp Nou este próximo miércoles (18.45 horas).",
-          "needs_translation": true
+          "title": "تأهب أمني مشدد في برشلونة تحسباً لجماهير فاينورد",
+          "summary": "يعتزم نادي برشلونة تشديد الإجراءات الأمنية لاستقبال جماهير فاينورد على ملعب سبوتيفاي كامب نو، يوم الأربعاء المقبل في دوري أبطال أوروبا.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222716/alerta-maxima-barca-aficion-feyenoord.html",
@@ -2124,7 +2290,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260902/1004222716/alerta-maxima-barca-aficion-feyenoord.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3381fcd302ae",
@@ -2277,26 +2448,27 @@
       "i18n": {
         "es": {
           "title": "Acuerdo de última hora para la salida de Ounahi",
-          "summary": "El futuro de Azzedine Ounahi ha dado un giro definitivo.",
-          "needs_translation": false
+          "summary": "Se ha alcanzado un acuerdo de última hora para concretar la salida de Azzedine Ounahi, resolviendo de forma definitiva su futuro.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Last minute agreement for departure from Ounahi",
-          "summary": "Azzedine Ounahi's future has taken a definite turn.",
+          "title": "Last-minute agreement for Ounahi's departure",
+          "summary": "A last-minute agreement has been reached to finalize the departure of Azzedine Ounahi, definitively resolving his future.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Accord de dernière minute pour le départ d'Ounahi",
-          "summary": "L'avenir d'Azzedine Ounahi a pris un tournant définitif.",
+          "summary": "Un accord de dernière minute a été trouvé pour finaliser le départ d'Azzedine Ounahi, scellant ainsi définitivement son avenir.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "اتفاقية اللحظة الأخيرة للمغادرة من أوناهي",
-          "summary": "اتخذ مستقبل عز الدين أوناهي منعطفاً واضحاً.",
+          "title": "اتفاق في اللحظات الأخيرة على رحيل أوناحي",
+          "summary": "تم التوصل إلى اتفاق في الساعات الأخيرة لحسم رحيل عز الدين أوناحي، ليتقرر مستقبله بشكل نهائي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/girona-fc/20260902/1004222713/acuerdo-ultima-hora-salida-ounahi.html",
@@ -2318,7 +2490,12 @@
           "url": "https://www.mundodeportivo.com/futbol/girona-fc/20260902/1004222713/acuerdo-ultima-hora-salida-ounahi.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4feb1221f68b",
