@@ -73,26 +73,27 @@
       "i18n": {
         "en": {
           "title": "How do European squad lists work?",
-          "summary": "Our Ask Me Anything team explain the rules that teams have to stick to when selecting their Champions League, Europa League and Conference League squads.",
-          "needs_translation": false
+          "summary": "An explanation of the registration rules and restrictions clubs must follow when selecting their squads for the Champions League, Europa League and Conference League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Comment fonctionnent les listes d'équipes européennes ?",
-          "summary": "Notre équipe Ask Me Anything explique les règles que les équipes doivent respecter lors de la sélection de leurs équipes de Champions League, Europa League et Conference League.",
+          "title": "Comment fonctionnent les listes d'effectifs pour les compétitions européennes ?",
+          "summary": "Explication des règles d'inscription obligatoires pour les clubs composant leur effectif en Champions League, Europa League et Conference League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "¿Cómo funcionan las listas de plantillas europeas?",
-          "summary": "Nuestro equipo de Ask Me Anything explica las reglas que los equipos deben cumplir al seleccionar sus equipos de la Liga de Campeones, la Liga Europa y la Liga de la Conferencia.",
+          "title": "¿Cómo funcionan las listas de las plantillas europeas?",
+          "summary": "Explicación de los criterios y las normas de inscripción que deben cumplir los clubes al confeccionar sus plantillas para la Champions League, la Europa League y la Conference League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كيف تعمل قوائم المنتخبات الأوروبية ؟",
-          "summary": "يشرح فريق اسألني أي شيء القواعد التي يجب على الفرق الالتزام بها عند اختيار فرق دوري أبطال أوروبا والدوري الأوروبي ودوري المؤتمرات.",
+          "title": "كيف تعمل قوائم الفرق في البطولات الأوروبية؟",
+          "summary": "توضيح للقواعد والمعايير التي يجب على الأندية الالتزام بها لتسجيل قوائم لاعبيها في دوري أبطال أوروبا والدوري الأوروبي ودوري المؤتمر الأوروبي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cwyz65nkre2o?at_medium=RSS&at_campaign=rss",
@@ -114,7 +115,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cwyz65nkre2o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "48e8275bb035",
@@ -428,27 +434,28 @@
       "summary": "Tras su frustrado pase al Barcelona, el Araña se quedó trabajando después del entrenamiento junto al Cuti Romero. El objetivo de Simeone es recuperar a su figura.",
       "i18n": {
         "es": {
-          "title": "El mercado ya fue: Julián Álvarez hizo doble turno y vuelve al ruedo con el Atlético de Madrid",
-          "summary": "Tras su frustrado pase al Barcelona, el Araña se quedó trabajando después del entrenamiento junto al Cuti Romero. El objetivo de Simeone es recuperar a su figura.",
-          "needs_translation": false
+          "title": "Julián Álvarez hace doble turno y se enfoca en el Atlético de Madrid tras el mercado",
+          "summary": "Tras frustrarse su fichaje por el Barcelona, Julián Álvarez realizó una sesión adicional de entrenamiento junto a Cuti Romero. Simeone busca recuperar la mejor versión de su delantero en el Atlético de Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The market was already there: Julián Álvarez took a double turn and returned to the ring with Atlético de Madrid",
-          "summary": "After his frustrated move to Barcelona, Araña remained working after training alongside Cuti Romero. Simeone's goal is to get her figure back.",
+          "title": "Julián Álvarez completes double training session to refocus on Atlético de Madrid",
+          "summary": "Following his collapsed move to Barcelona, Julián Álvarez put in extra training work alongside Cuti Romero. Simeone aims to get the forward back to his best form for Atlético de Madrid.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le marché était déjà là : Julián Álvarez a fait un double tour et retourne à l'arène avec l'Atlético de Madrid",
-          "summary": "Après son passage frustré à Barcelone, Araña est resté au travail après l'entraînement avec Cuti Romero. L'objectif de Simeone est de retrouver sa silhouette.",
+          "title": "Julián Álvarez effectue une double séance et se recentre sur l'Atlético de Madrid",
+          "summary": "Après son transfert avorté au Barcelona, Julián Álvarez s'est entraîné en séance supplémentaire aux côtés de Cuti Romero. Simeone souhaite rapidement relancer l'attaquant au sein de l'Atlético de Madrid.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كان السوق موجودًا بالفعل: أخذ جوليان ألفاريز منعطفًا مزدوجًا وعاد إلى الحلبة مع أتلتيكو مدريد",
-          "summary": "بعد انتقاله المحبط إلى برشلونة، ظل أرانيا يعمل بعد التدريب جنبا إلى جنب مع كوتي روميرو. هدف سيميوني هو استعادة قوامها.",
+          "title": "خوليان ألفاريز يخوض تدريبات مضاعفة ويركز على أتلتيكو مدريد بعد إغلاق الميركاتو",
+          "summary": "بعد تعثر انتقاله إلى برشلونة، خاض خوليان ألفاريز حصة تدريبية إضافية رفقة كوتي روميرو، حيث يسعى سيميوني لاستعادة أفضل مستويات مهاجمه في أتلتيكو مدريد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/espana/julian-alvarez-doble-turno-vuelve-atletico-madrid-figura-simeone_0_yQmwpdiENw.html",
@@ -470,7 +477,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/espana/julian-alvarez-doble-turno-vuelve-atletico-madrid-figura-simeone_0_yQmwpdiENw.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "04dd02415659",
@@ -479,26 +491,27 @@
       "i18n": {
         "fr": {
           "title": "«Ils ont fait un travail incroyable» : Luis Enrique salue le «mercato exceptionnel» réalisé par la direction sportive du PSG",
-          "summary": "Le coach du PSG a fait un point lors d'une conférence de presse ce 3 septembre sur plusieurs sujets à la veille de la réception de Monaco. Il est notamment revenu sur le mercato qui s'est achevé en début de semaine.",
-          "needs_translation": false
+          "summary": "En conférence de presse avant la réception de Monaco, l'entraîneur du PSG Luis Enrique a félicité sa direction sportive, qualifiant le récent mercato estival d'exceptionnel.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "\"They did an incredible job\": Luis Enrique salutes the \"exceptional market\" carried out by the PSG sports management",
-          "summary": "The PSG coach gave an update during a press conference on 3 September on several topics on the eve of Monaco's reception. In particular, he returned to the transfer window that ended earlier this week.",
+          "title": "'They did an incredible job': Luis Enrique praises PSG's sporting management for 'exceptional transfer window'",
+          "summary": "Ahead of facing Monaco, PSG coach Luis Enrique praised his club's sporting management during a press conference, describing their summer transfer window as exceptional.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "“Han hecho un trabajo increíble”: Luis Enrique saluda el “excepcional mercado de fichajes” realizado por la dirección deportiva del PSG",
-          "summary": "El entrenador del PSG hizo un balance en una conferencia de prensa el 3 de septiembre sobre varios temas en la víspera de la recepción de Mónaco. En particular, volvió al mercado de fichajes que se cerró a principios de esta semana.",
+          "title": "«Hicieron un trabajo increíble»: Luis Enrique elogia el «mercado excepcional» de la dirección deportiva del PSG",
+          "summary": "En rueda de prensa previa al duelo frente al Monaco, el entrenador del PSG Luis Enrique elogió la labor de su dirección deportiva, calificando de excepcional el mercado de fichajes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"لقد قاموا بعمل لا يصدق \": لويس إنريكي يحيي\" السوق الاستثنائي \"الذي تقوم به الإدارة الرياضية في باريس سان جيرمان",
-          "summary": "قدم مدرب باريس سان جيرمان تحديثًا خلال مؤتمر صحفي في 3 سبتمبر حول العديد من الموضوعات عشية استقبال موناكو. على وجه الخصوص، عاد إلى فترة الانتقالات التي انتهت في وقت سابق من هذا الأسبوع.",
+          "title": "«قاموا بعمل رائع»: لويس إنريكي يشيد بالميركاتو «الاستثنائي» لإدارة باريس سان جيرمان",
+          "summary": "أشاد مدرب باريس سان جيرمان لويس إنريكي، في مؤتمر صحفي قبيل مواجهة موناكو، بجهود الإدارة الرياضية لناديه، واصفاً سوق الانتقالات الصيفية بالاستثنائي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://video.lefigaro.fr/figaro/sports/football/ligue-1/ils-ont-fait-un-travail-incroyable-luis-enrique-salue-le-mercato-exceptionnel-realise-par-la-direction-sportive-du-psg-20260903",
@@ -520,7 +533,12 @@
           "url": "https://video.lefigaro.fr/figaro/sports/football/ligue-1/ils-ont-fait-un-travail-incroyable-luis-enrique-salue-le-mercato-exceptionnel-realise-par-la-direction-sportive-du-psg-20260903"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "87820676018f",
@@ -529,26 +547,27 @@
       "i18n": {
         "fr": {
           "title": "Quand Zidane devance deux légendes italiennes selon un ancien grand dirigeant de la Juve",
-          "summary": "Dans un entretien accordé à La Stampa, Antonio Giraudo, ancien dirigeant e la Juve de […] Source",
-          "needs_translation": false
+          "summary": "Dans un entretien accordé au quotidien La Stampa, l'ancien dirigeant de la Juve Antonio Giraudo a placé Zidane devant deux légendes du football italien.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "When Zidane overtakes two Italian legends according to a former great Juve leader",
-          "summary": "In an interview with La Stampa, Antonio Giraudo, former leader of […] Source",
+          "title": "When Zidane outranks two Italian legends according to a former top Juve executive",
+          "summary": "In an interview with La Stampa, former Juve executive Antonio Giraudo ranked Zidane ahead of two Italian football legends.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Cuando Zidane supera a dos leyendas italianas según un antiguo gran dirigente de la Juventus",
-          "summary": "En una entrevista concedida a La Stampa, Antonio Giraudo, antiguo dirigente de la Juventus de […] Fuente",
+          "title": "Cuando Zidane supera a dos leyendas italianas según un exalto cargo de la Juve",
+          "summary": "En una entrevista concedida a La Stampa, el exdirigente de la Juve Antonio Giraudo situó a Zidane por delante de dos leyendas del fútbol italiano.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "عندما يتفوق زيدان على أسطورتين إيطاليتين وفقًا لزعيم يوفنتوس العظيم السابق",
-          "summary": "في مقابلة مع لا ستامبا، أنطونيو جيرودو، الزعيم السابق لـ [...] Source",
+          "title": "عندما يتفوق زيدان على أسطورتين إيطاليتين برأي مسؤول سابق في يوفنتوس",
+          "summary": "في مقابلة مع صحيفة لا ستامبا، فضّل المدير السابق لنادي يوفنتوس، أنتونيو جيرودو، النجم الفرنسي زيدان على أسطورتين في تاريخ كرة القدم الإيطالية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.calciomio.fr/quand-zidane-devance-deux-legendes-italiennes-selon-un-ancien-grand-dirigeant-de-la-juve-id-179636",
@@ -570,7 +589,12 @@
           "url": "https://www.calciomio.fr/quand-zidane-devance-deux-legendes-italiennes-selon-un-ancien-grand-dirigeant-de-la-juve-id-179636"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "92f7e6d5cf85",
@@ -620,7 +644,12 @@
           "url": "https://www.calciomio.fr/je-vois-litalie-parmi-les-dix-meilleures-selections-du-monde-id-179645"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "cbcf6391492a",
@@ -628,27 +657,28 @@
       "summary": "Todas las competiciones masculinas y femeninas se detendrán para brindar un minuto de aplausos Leer",
       "i18n": {
         "es": {
-          "title": "Messi recibirá homenaje ¡en todos los partidos de Argentina!",
-          "summary": "Todas las competiciones masculinas y femeninas se detendrán para brindar un minuto de aplausos Leer",
-          "needs_translation": false
+          "title": "Messi recibirá un homenaje en todos los partidos de Argentina",
+          "summary": "Todas las competiciones de fútbol masculino y femenino en Argentina se detendrán brevemente para brindar un minuto de aplausos en homenaje a Messi.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Messi will be honoured at every match in Argentina!",
-          "summary": "All men's and women's competitions will stop to provide a minute of applause Read",
+          "title": "Messi to receive tribute in all matches across Argentina",
+          "summary": "All men's and women's football competitions in Argentina will be paused to hold a minute of applause in tribute to Messi.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Messi recevra un hommage dans tous les matchs d'Argentine !",
-          "summary": "Toutes les compétitions masculines et féminines s'arrêteront pour une minute d'applaudissements Lire",
+          "title": "Messi recevra un hommage lors de tous les matches en Argentina",
+          "summary": "Toutes les compétitions masculines et féminines en Argentina s'interrompront pour accorder une minute d'applaudissements en hommage à Messi.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "سيتم تكريم ميسي في كل مباراة في الأرجنتين!",
-          "summary": "ستتوقف جميع مسابقات الرجال والسيدات لتقديم دقيقة من التصفيق قراءة",
+          "title": "تكريم ميسي في جميع مباريات كرة القدم في الأرجنتين",
+          "summary": "ستتوقف جميع مسابقات كرة القدم للرجال والسيدات في الأرجنتين لتخصيص دقيقة تصفيق تكريماً لميسي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.marca.com/futbol/2026/09/03/messi-recibira-homenaje-todos-partidos-argentina.html",
@@ -670,7 +700,12 @@
           "url": "https://www.marca.com/futbol/2026/09/03/messi-recibira-homenaje-todos-partidos-argentina.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "125feec30460",
@@ -679,26 +714,27 @@
       "i18n": {
         "es": {
           "title": "Ya hay árbitro para el Betis-Real Madrid",
-          "summary": "La Real Federación Española de Fútbol ha anunciado al equipo arbitral para el encuentro de mañana, viernes entre Betis y Real Madrid (21.00 horas/Mocistar). El colegiado principal será Alejandro Hernández, mientras que en el VAR estará Javier Iglesias.",
-          "needs_translation": false
+          "summary": "La Real Federación Española de Fútbol designó a Alejandro Hernández como árbitro principal para el partido del viernes entre Betis y Real Madrid. Javier Iglesias estará al frente del VAR.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "There is already a referee for Betis-Real Madrid",
-          "summary": "The Royal Spanish Football Federation has announced the refereeing team for tomorrow's match between Betis and Real Madrid (9.00 pm/Mocistar). The main member will be Alejandro Hernández, while Javier Iglesias will be in the var.",
+          "title": "Referee appointed for Betis-Real Madrid",
+          "summary": "The Real Federación Española de Fútbol has appointed Alejandro Hernández as the referee for Friday's match between Betis and Real Madrid, with Javier Iglesias in charge of VAR.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Il y a déjà un arbitre pour Le Real Betis-Real Madrid",
-          "summary": "La Fédération Royale Espagnole de Football a annoncé l'équipe arbitrale pour la rencontre de demain, vendredi entre Le Real Betis et le Real Madrid (21h00/Mocistar). Le collège principal sera Alejandro Hernández, tandis que dans le Var, il y aura Javier Iglesias.",
+          "title": "L'arbitre de la rencontre Betis-Real Madrid est désigné",
+          "summary": "La Real Federación Española de Fútbol a nommé Alejandro Hernández pour diriger le match de vendredi entre Le Real Betis et le Real Madrid. Javier Iglesias sera chargé de l'assistance vidéo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يوجد بالفعل حكم لبيتيس ريال مدريد",
-          "summary": "أعلن الاتحاد الملكي الإسباني لكرة القدم عن فريق التحكيم لمباراة الغد بين بيتيس وريال مدريد (9:00 مساءً/موسيستار). سيكون العضو الرئيسي هو أليخاندرو هيرنانديز، بينما سيكون خافيير إغليسياس في VAR.",
+          "title": "تحديد حكم مباراة ريال بيتيس وريال مدريد",
+          "summary": "أعلن الاتحاد الإسباني لكرة القدم تعيين أليخاندرو هيرنانديز حكماً رئيسياً لمواجهة الجمعة بين ريال بيتيس وريال مدريد، بينما سيتولى خافيير إغليسياس إدارة تقنية حكم الفيديو المساعد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260903/1004222942/hay-arbitro-betis-real-madrid.html",
@@ -720,7 +756,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260903/1004222942/hay-arbitro-betis-real-madrid.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ba336cd2fcb3",
@@ -929,26 +970,27 @@
       "i18n": {
         "es": {
           "title": "River, hoy EN VIVO: sigue la búsqueda de un central, cómo está Moreno y más noticias del jueves 3 de septiembre",
-          "summary": "Mientras Leo Ponzio planifica el choque frente a Independiente Rivadavia, en las oficinas del Monumental continúan activos y le apuntan a Francisco Álvarez.",
-          "needs_translation": false
+          "summary": "Mientras Leo Ponzio planifica el partido frente a Independiente Rivadavia, River busca fichar al central Francisco Álvarez.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "River, LIVE today: follow the search for a power station, how is Moreno and more news from Thursday, September 3",
-          "summary": "While Leo Ponzio plans the clash in front of Independiente Rivadavia, the Monumental offices are still active and point the finger at Francisco Álvarez.",
+          "title": "River, today LIVE: search for a centre-back continues, Moreno update and more news from Thursday, September 3",
+          "summary": "As Leo Ponzio prepares for the clash against Independiente Rivadavia, River are actively targeting defender Francisco Álvarez.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "River, aujourd'hui EN DIRECT : continuez la recherche d'un central, comment va Moreno et d'autres nouvelles du jeudi 3 septembre",
-          "summary": "Alors que Leo Ponzio planifie le choc face à Independiente Rivadavia, les bureaux du Monumental restent actifs et visent Francisco Álvarez.",
+          "title": "River, aujourd'hui EN DIRECT : la quête d'un défenseur central continue, des nouvelles de Moreno et les infos de ce jeudi 3 septembre",
+          "summary": "Alors que Leo Ponzio prépare le match face à Independiente Rivadavia, les dirigeants de River ciblent le défenseur Francisco Álvarez.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "River, live today: Follow the search for a power station, how is Moreno and more news from Thursday, September 3",
-          "summary": "Mientras Leo Ponzio planifica el choque frente a Independiente Rivadavia, en las oficinas del Monumental continúan activos y le apuntan a Francisco Álvarez.",
+          "title": "ريفر بليت، اليوم مباشر: استمرار البحث عن مدافع، تطورات حالة مورينو وأخبار أخرى ليوم الخميس 3 سبتمبر",
+          "summary": "بينما يستعد ليو بونزيو لمواجهة إنديبندينتي ريفادافيا، تسعى إدارة ريفر بليت للتعاقد مع المدافع فرانسيسكو ألفاريز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-vivo-jueves-3-septiembre-ponzio-independiente-rivadavia_0_HXmMmZGNoI.html",
@@ -970,7 +1012,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-vivo-jueves-3-septiembre-ponzio-independiente-rivadavia_0_HXmMmZGNoI.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f40dfa282d79",
@@ -1158,7 +1205,12 @@
           "url": "https://africatopsports.com/football/coupe-du-monde-u17-le-cameroun-veut-passer-au-second-tour-tout-son-programme-du-premier-tour/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "aadc8b40b0cb",
@@ -1266,23 +1318,27 @@
       "i18n": {
         "es": {
           "title": "El Betis da 'ventaja' al Real Madrid en su partido del viernes",
-          "summary": "Jose Mourinho ha dado la lista de convocados para el encuentro que el Real Madrid juega mañana, viernes, ante el Betis en La Cartuja (21.00 horas/Movistar). Un encuentro correspondiente a la cuarta jornada del campeonato liguero.",
-          "needs_translation": false
+          "summary": "Jose Mourinho anunció la lista de convocados del Real Madrid para enfrentarse este viernes al Betis en Cartuja, en partido correspondiente a la cuarta jornada de Liga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Betis da 'ventaja' al Real Madrid en su partido del viernes",
-          "summary": "Jose Mourinho ha dado la lista de convocados para el encuentro que el Real Madrid juega mañana, viernes, ante el Betis en La Cartuja (21.00 horas/Movistar). Un encuentro correspondiente a la cuarta jornada del campeonato liguero.",
-          "needs_translation": true
+          "title": "Betis gives Real Madrid an 'advantage' in Friday's match",
+          "summary": "Jose Mourinho has announced the Real Madrid squad for Friday's match against Betis at Cartuja, corresponding to matchday four of the league season.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El Betis da 'ventaja' al Real Madrid en su partido del viernes",
-          "summary": "Jose Mourinho ha dado la lista de convocados para el encuentro que el Real Madrid juega mañana, viernes, ante el Betis en La Cartuja (21.00 horas/Movistar). Un encuentro correspondiente a la cuarta jornada del campeonato liguero.",
-          "needs_translation": true
+          "title": "Le Real Betis donne un « avantage » au Real Madrid pour son match de vendredi",
+          "summary": "Jose Mourinho a communiqué le groupe du Real Madrid pour affronter Le Real Betis ce vendredi à Cartuja, dans le cadre de la quatrième journée de championnat.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Betis da 'ventaja' al Real Madrid en su partido del viernes",
-          "summary": "Jose Mourinho ha dado la lista de convocados para el encuentro que el Real Madrid juega mañana, viernes, ante el Betis en La Cartuja (21.00 horas/Movistar). Un encuentro correspondiente a la cuarta jornada del campeonato liguero.",
-          "needs_translation": true
+          "title": "بيتيس يمنح «أفضلية» لريال مدريد في مباراة الجمعة",
+          "summary": "أعلن جوزيه مورينيو قائمة ريال مدريد لمواجهة بيتيس يوم الجمعة على ملعب لا كارتوخا، وذلك لحساب الجولة الرابعة من منافسات الدوري.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260903/1004222919/convocatoria-real-madrid-betis.html",
@@ -1316,7 +1372,12 @@
           "url": "https://www.mundodeportivo.com/futbol/betis/20260903/1004222864/betis-da-ventaja-real-madrid-partido-viernes.html"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3ba773621576",
@@ -1418,24 +1479,28 @@
       "summary": "Interrogé sur la condition physique de Bradley Barcola, l'entraîneur de Liverpool Andoni Iraola a laissé entendre jeudi que l'international français pourrait jouer dès vendredi contre Ipswich (21 heures) en Premier League.",
       "i18n": {
         "fr": {
-          "title": "Premier League : Bradley Barcola déjà prêt pour ses grands débuts avec Liverpool ?",
-          "summary": "Interrogé sur la condition physique de Bradley Barcola, l'entraîneur de Liverpool Andoni Iraola a laissé entendre jeudi que l'international français pourrait jouer dès vendredi contre Ipswich (21 heures) en Premier League.",
-          "needs_translation": false
+          "title": "Premier League : Bradley Barcola déjà prêt pour ses débuts avec Liverpool ?",
+          "summary": "L'entraîneur de Liverpool Andoni Iraola a indiqué que Bradley Barcola pourrait disputer son premier match dès ce vendredi contre Ipswich en Premier League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Premier League : Bradley Barcola déjà prêt pour ses grands débuts avec Liverpool ?",
-          "summary": "Interrogé sur la condition physique de Bradley Barcola, l'entraîneur de Liverpool Andoni Iraola a laissé entendre jeudi que l'international français pourrait jouer dès vendredi contre Ipswich (21 heures) en Premier League.",
-          "needs_translation": true
+          "title": "Premier League: Bradley Barcola already ready for his Liverpool debut?",
+          "summary": "Liverpool manager Andoni Iraola indicated that Bradley Barcola could make his debut this Friday against Ipswich in the Premier League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Premier League : Bradley Barcola déjà prêt pour ses grands débuts avec Liverpool ?",
-          "summary": "Interrogé sur la condition physique de Bradley Barcola, l'entraîneur de Liverpool Andoni Iraola a laissé entendre jeudi que l'international français pourrait jouer dès vendredi contre Ipswich (21 heures) en Premier League.",
-          "needs_translation": true
+          "title": "Premier League: ¿Bradley Barcola ya está listo para debutar con el Liverpool?",
+          "summary": "El entrenador del Liverpool Andoni Iraola indicó que Bradley Barcola podría hacer su debut este viernes contra el Ipswich en la Premier League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Premier League : Bradley Barcola déjà prêt pour ses grands débuts avec Liverpool ?",
-          "summary": "Interrogé sur la condition physique de Bradley Barcola, l'entraîneur de Liverpool Andoni Iraola a laissé entendre jeudi que l'international français pourrait jouer dès vendredi contre Ipswich (21 heures) en Premier League.",
-          "needs_translation": true
+          "title": "الدوري الإنجليزي الممتاز: هل برادلي باركولا جاهز لخوض بدايته مع ليفربول؟",
+          "summary": "أشار مدرب ليفربول أندوني إيراولا إلى إمكانية مشاركة الدولي الفرنسي برادلي باركولا يوم الجمعة ضد إيبسويتش في الدوري الإنجليزي الممتاز.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Bradley-barcola-pourrait-lancer-son-aventure-avec-liverpool-des-vendredi-contre-ipswich-en-premier-league/1715706#at_medium=RSS_feeds",
@@ -1463,7 +1528,12 @@
           "url": "https://www.lefigaro.fr/sports/football/angleterre/premier-leage-bradley-barcola-deja-pret-pour-ses-grands-debuts-avec-liverpool-20260903"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "35259926ba1a",
@@ -1510,7 +1580,12 @@
           "url": "https://fr.hespress.com/486920-argentine-le-football-sarretera-a-la-10e-minute-pour-rendre-hommage-a-messi.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "476a7fdc5ea0",
@@ -1894,24 +1969,28 @@
       "summary": "Le tirage au sort des qualifications de la CAN U17, zone UFOA-B, garçons et filles, va débuter dans quelques instants à Ouagadougou. Les sélections connaîtront bientôt leurs adversaires.",
       "i18n": {
         "fr": {
-          "title": "Qualifications CAN U17 : Le Tirage UFOA B dans quelques instants",
-          "summary": "Le tirage au sort des qualifications de la CAN U17, zone UFOA-B, garçons et filles, va débuter dans quelques instants à Ouagadougou. Les sélections connaîtront bientôt leurs adversaires.",
-          "needs_translation": false
+          "title": "Qualifications CAN U17 : Le tirage de la zone UFOA-B dans quelques instants",
+          "summary": "Le tirage au sort des Qualifications CAN U17 de la zone UFOA-B, pour les sélections masculines et féminines, se tient à Ouagadougou afin de déterminer les groupes du tournoi.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Qualifications CAN U17 : Le Tirage UFOA B dans quelques instants",
-          "summary": "Le tirage au sort des qualifications de la CAN U17, zone UFOA-B, garçons et filles, va débuter dans quelques instants à Ouagadougou. Les sélections connaîtront bientôt leurs adversaires.",
-          "needs_translation": true
+          "title": "Qualifications CAN U17: UFOA-B draw starting shortly",
+          "summary": "The draw for the Qualifications CAN U17 UFOA-B zone, covering both boys and girls tournaments, takes place in Ouagadougou to determine the upcoming group matchups.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Qualifications CAN U17 : Le Tirage UFOA B dans quelques instants",
-          "summary": "Le tirage au sort des qualifications de la CAN U17, zone UFOA-B, garçons et filles, va débuter dans quelques instants à Ouagadougou. Les sélections connaîtront bientôt leurs adversaires.",
-          "needs_translation": true
+          "title": "Qualifications CAN U17: El sorteo de la UFOA-B en unos instantes",
+          "summary": "El sorteo de las Qualifications CAN U17 para la zona UFOA-B, en categorías masculina y femenina, se celebra en Ouagadougou para definir la composición de los grupos.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Qualifications CAN U17 : Le Tirage UFOA B dans quelques instants",
-          "summary": "Le tirage au sort des qualifications de la CAN U17, zone UFOA-B, garçons et filles, va débuter dans quelques instants à Ouagadougou. Les sélections connaîtront bientôt leurs adversaires.",
-          "needs_translation": true
+          "title": "تصفيات كأس أمم إفريقيا تحت 17 سنة: قرعة منطقة غرب إفريقيا ب بعد قليل",
+          "summary": "تُسحب في واغادوغو قرعة تصفيات كأس أمم إفريقيا تحت 17 سنة لمنطقة اتحاد غرب إفريقيا (ب) لفئتي الفتيان والفتيات، لتحديد مواجهات المنتخبات المشاركة.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football/%f0%9d%97%a4%f0%9d%97%a8%f0%9d%97%94%f0%9d%97%9f%f0%9d%97%9c%f0%9d%97%99%f0%9d%97%9c%f0%9d%97%96%f0%9d%97%94%f0%9d%97%a7%f0%9d%97%9c%f0%9d%97%a2%f0%9d%97%a1%f0%9d%97%a6-%f0%9d%97%96%f0%9d%97%94/",
@@ -1933,7 +2012,12 @@
           "url": "https://africatopsports.com/football/%f0%9d%97%a4%f0%9d%97%a8%f0%9d%97%94%f0%9d%97%9f%f0%9d%97%9c%f0%9d%97%99%f0%9d%97%9c%f0%9d%97%96%f0%9d%97%94%f0%9d%97%a7%f0%9d%97%9c%f0%9d%97%a2%f0%9d%97%a1%f0%9d%97%a6-%f0%9d%97%96%f0%9d%97%94/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4bf47ce413ea",
@@ -2318,23 +2402,27 @@
       "i18n": {
         "es": {
           "title": "Visita muy especial en Valdebebas",
-          "summary": "El entrenamiento del Real Madrid en Valdebebas ha tenido una visita muy especial.",
-          "needs_translation": false
+          "summary": "La sesión de entrenamiento del Real Madrid en la ciudad deportiva de Valdebebas contó con una visita especial.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Visita muy especial en Valdebebas",
-          "summary": "El entrenamiento del Real Madrid en Valdebebas ha tenido una visita muy especial.",
-          "needs_translation": true
+          "title": "A very special visit in Valdebebas",
+          "summary": "Real Madrid received a special guest during their training session at Valdebebas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Visita muy especial en Valdebebas",
-          "summary": "El entrenamiento del Real Madrid en Valdebebas ha tenido una visita muy especial.",
-          "needs_translation": true
+          "title": "Visite très spéciale à Valdebebas",
+          "summary": "La séance d'entraînement du Real Madrid à Valdebebas a été marquée par une visite spéciale.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Visita muy especial en Valdebebas",
-          "summary": "El entrenamiento del Real Madrid en Valdebebas ha tenido una visita muy especial.",
-          "needs_translation": true
+          "title": "زيارة خاصة جداً في فالديبيباس",
+          "summary": "شهدت الحصة التدريبية لنادي ريال مدريد في مجمع فالديبيباس حضور زائر خاص للفريق.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260903/1004222890/visita-especial-valdebebas.html",
@@ -2356,7 +2444,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260903/1004222890/visita-especial-valdebebas.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6bbc837183d3",
