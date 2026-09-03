@@ -217,26 +217,27 @@
       "i18n": {
         "en": {
           "title": "Man City sign England goalkeeper Moorhouse on loan",
-          "summary": "Manchester City sign England goalkeeper Anna Moorhouse on a short-term loan from Orlando Pride.",
-          "needs_translation": false
+          "summary": "Manchester City have signed England goalkeeper Anna Moorhouse on a short-term loan from Orlando Pride.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Man City signe le gardien de but anglais Moorhouse en prêt",
-          "summary": "La gardienne de but de Manchester City, Anna Moorhouse, signe un prêt à court terme d'Orlando Pride.",
+          "title": "Man City recrute en prêt la gardienne d'England Moorhouse",
+          "summary": "Manchester City a engagé la gardienne d'England Anna Moorhouse dans le cadre d'un prêt de courte durée en provenance d'Orlando Pride.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El City ficha al portero inglés Moorhouse a préstamo",
-          "summary": "El Manchester City ficha a la portera inglesa Anna Moorhouse en un préstamo a corto plazo del Orlando Pride.",
+          "title": "Man City ficha como cedida a la portera de England Moorhouse",
+          "summary": "Manchester City ha cerrado la cesión a corto plazo de la portera de England Anna Moorhouse, procedente de Orlando Pride.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مانشستر سيتي يوقع مع حارس مرمى إنجلترا مورهاوس على سبيل الإعارة",
-          "summary": "مانشستر سيتي يوقع مع حارس مرمى إنجلترا آنا مورهاوس على قرض قصير الأجل من أورلاندو برايد.",
+          "title": "مانشستر سيتي يتعاقد مع حارسة مرمى إنجلترا مورهوس على سبيل الإعارة",
+          "summary": "أعلن مانشستر سيتي تعاقده مع حارسة مرمى منتخب إنجلترا آنا مورهوس على سبيل الإعارة قصيرة الأمد قادمة من أورلاندو برايد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/c5yep5d6qnno?at_medium=RSS&at_campaign=rss",
@@ -258,7 +259,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/c5yep5d6qnno?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a6797964d00b",
@@ -267,32 +273,33 @@
       "i18n": {
         "de": {
           "title": "Magdeburg gewinnt Schlagerspiel gegen die Füchse",
-          "summary": "Schon am zweiten Spieltag kam es in der Handball-Bundesliga zum Duell zwischen Meister und Vizemeister: Im Ostderby wollten sich die Füchse Berlin für die jüngste Pleite im nationalen Supercup revanchieren - das misslang, vielmehr jubelte wieder der SCM.",
-          "needs_translation": false
+          "summary": "Am zweiten Spieltag der Handball-Bundesliga hat Meister SC Magdeburg das Ostderby gegen Vizemeister Füchse Berlin gewonnen. Berlin verpasste damit die Revanche für die vorangegangene Niederlage im Supercup.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Magdeburg wins Schlager game against the Foxes",
-          "summary": "Already on the second day of the match, there was a duel between champion and runner-up in the handball Bundesliga: In the Ostderby, the foxes Berlin wanted to return the favor for the recent bankruptcy in the national Supercup - which failed, but the SCM cheered again.",
+          "title": "Magdeburg wins marquee clash against Füchse Berlin",
+          "summary": "On matchday two of the Handball-Bundesliga, champions Magdeburg defeated runners-up Füchse Berlin in the eastern derby. Berlin thus failed to avenge their recent Supercup defeat.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Magdeburg remporte le match contre les renards",
-          "summary": "Dès la deuxième journée, il y a eu un duel entre le champion et le vice-champion en Bundesliga de handball : dans le derby de l'Est, les renards de Berlin voulaient se venger de la récente faillite de la Supercoupe nationale - cela a échoué, mais le SCM a de nouveau applaudi.",
+          "title": "Magdeburg remporte le choc face aux Füchse Berlin",
+          "summary": "Lors de la 2e journée de Handball-Bundesliga, le champion Magdeburg a battu son dauphin Füchse Berlin dans le derby de l'Est. Les Berlinois n'ont pas réussi à prendre leur revanche après le Supercup.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Magdeburgo gana el partido de bateo contra los zorros",
-          "summary": "Ya en la segunda jornada hubo un duelo entre el campeón y el subcampeón en la Bundesliga de balonmano: en el derbi oriental, los Fuchs Berlin querían vengarse por la reciente quiebra en la Supercopa nacional, lo que fracasó, más bien volvió a alegrar al SCM.",
+          "title": "Magdeburg gana el duelo decisivo ante Füchse Berlin",
+          "summary": "En la segunda jornada de la Handball-Bundesliga, el campeón Magdeburg derrotó al subcampeón Füchse Berlin en el derbi del este. El conjunto berlinés no pudo tomarse la revancha de la Supercup.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ماغديبرغ يفوز بمباراة شلاغر ضد الثعالب",
-          "summary": "بالفعل في اليوم الثاني من المباراة، كانت هناك مبارزة بين البطل والوصيف في الدوري الألماني لكرة اليد: في Ostderby، أراد الثعالب برلين رد الجميل للإفلاس الأخير في كأس السوبر الوطني - الذي فشل، لكن SCM هتف مرة أخرى.",
+          "title": "ماغديبورغ يفوز بمباراة القمة أمام فوكسه برلين",
+          "summary": "تغلب حامل اللقب ماغديبورغ على وصيفه فوكسه برلين في ديربي الشرق ضمن الجولة الثانية من الدوري الألماني لكرة اليد، ليفشل فريق العاصمة في الثأر من خسارته في كأس السوبر.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/magdeburg-gewinnt-schlagerspiel-gegen-die-fuechse-1249362/artikel#omrss",
@@ -314,7 +321,12 @@
           "url": "https://www.kicker.de/magdeburg-gewinnt-schlagerspiel-gegen-die-fuechse-1249362/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e9adf752b806",
@@ -573,26 +585,27 @@
       "i18n": {
         "es": {
           "title": "Locura por Boca en Mendoza: la ovación para Paredes y la actitud de Villa antes de entrar",
-          "summary": "Tras dejar en el camino a Vélez en Copa Argentina, el plantel xeneize viajó directamente de Córdoba a la ciudad donde enfrentará al Lobo mendocino. Mirá las fotos y los videos...",
-          "needs_translation": false
+          "summary": "Tras eliminar a Vélez en la Copa Argentina, el plantel de Boca viajó directamente desde Córdoba a Mendoza para su próximo partido ante Lobo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mouth madness in Mendoza: the ovation for Paredes and Villa's attitude before entering",
-          "summary": "After dropping Vélez off at the Copa Argentina, the xeneize squad traveled directly from Córdoba to the city where they will face the Lobo from Mendoza. Check out the photos and videos...",
+          "title": "Frenzy for Boca in Mendoza: ovation for Paredes and Villa's attitude before entering",
+          "summary": "Following their Copa Argentina victory over Vélez, the Boca squad traveled from Córdoba to Mendoza to face Lobo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Folie de Boca à Mendoza : l'ovation pour Paredes et l'attitude de Villa avant d'entrer",
-          "summary": "Après avoir quitté Vélez en Coupe d'Argentine, l'équipe xeneize a voyagé directement de Cordoue à la ville où elle affrontera le Loup de Mendoza. Regardez les photos et les vidéos...",
+          "title": "Folie pour Boca à Mendoza : l'ovation pour Paredes et l'attitude de Villa avant d'entrer",
+          "summary": "Après avoir éliminé Vélez en Copa Argentina, l'effectif de Boca a voyagé de Córdoba à Mendoza pour affronter Lobo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "جنون الفم في ميندوزا: التصفيق لموقف باريديس وفيلا قبل الدخول",
-          "summary": "بعد إنزال فيليز في كأس الأرجنتين، سافر فريق زينيز مباشرة من قرطبة إلى المدينة حيث سيواجهون لوبو من ميندوزا. ألقِ نظرة على الصور ومقاطع الفيديو...",
+          "title": "استقبال حاشد لبوكا في ميندوزا: تحية لباريديس وتصرف فيلا قبل الدخول",
+          "summary": "بعد إقصاء فيليز من كأس الأرجنتين، سافرت بعثة بوكا جونيورز مباشرة من كوردوبا إلى ميندوزا لمواجهة فريق لوبو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/locura-boca-mendoza-ovacion-paredes-actitud-villa-entrar_0_JwXTHXgRNX.html",
@@ -614,7 +627,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/locura-boca-mendoza-ovacion-paredes-actitud-villa-entrar_0_JwXTHXgRNX.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0a36e035598a",
@@ -823,26 +841,27 @@
       "i18n": {
         "es": {
           "title": "Empiezan las etapas de montaña para Mou y en su radar aparece un gregario inesperado",
-          "summary": "La vuelta de José Mourinho al Real Madrid -que no la ciclista que se disputa estos días en nuestro país- está siendo plácida. Tres partidos, tres victorias: todo carreteras llanas y sin piedras.",
-          "needs_translation": false
+          "summary": "El regreso de José Mourinho al Real Madrid comienza de forma plácida tras sumar tres victorias en sus tres primeros partidos disputados.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The mountain stages begin for Mou and an unexpected gregarious appears on his radar",
-          "summary": "José Mourinho's return to Real Madrid - which is not the cyclist that is being played in our country these days - is being placid. Three matches, three victories: all flat roads and no stones.",
+          "title": "The mountain stages begin for Mou as an unexpected helper appears on his radar",
+          "summary": "José Mourinho's return to Real Madrid has started smoothly, securing three wins from his first three matches.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Les étapes de montagne commencent pour Mou et un grégaire inattendu apparaît sur son radar",
-          "summary": "Le retour de José Mourinho au Real Madrid - qui n'est pas la cycliste qui se dispute ces jours-ci dans notre pays - est placide. Trois matchs, trois victoires : toutes des routes plates et sans pierres.",
+          "title": "Les étapes de montagne commencent pour Mou et un équipier inattendu apparaît sur son radar",
+          "summary": "Le retour de José Mourinho au Real Madrid débute sans encombre avec un bilan parfait de trois victoires en trois matchs.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تبدأ المراحل الجبلية لمو ويظهر قطيعي غير متوقع على راداره",
-          "summary": "عودة خوسيه مورينيو إلى ريال مدريد - وهو ليس الدراج الذي يلعب في بلدنا هذه الأيام - هادئة. ثلاث مباريات، ثلاثة انتصارات: كلها طرق مسطحة وبدون أحجار.",
+          "title": "المراحل الصعبة تبدأ لمورينيو ومساعد غير متوقع يظهر في حساباته",
+          "summary": "انطلقت عودة جوزيه مورينيو إلى ريال مدريد بنجاح بعد تحقيقه الفوز في مبارياته الثلاث الأولى دون أي تعثر.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260903/1004223084/empiezan-etapas-montana-mou-radar-aparece-gregario-inesperado.html",
@@ -864,7 +883,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260903/1004223084/empiezan-etapas-montana-mou-radar-aparece-gregario-inesperado.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "03e0fe93ff80",
@@ -872,27 +896,48 @@
       "summary": "Après s'être concentrés sur les ventes lors du mercato, les dirigeants de l'OM poursuivent la cure d'austérité en négociant avec leurs joueurs pour remodeler leurs revenus.",
       "i18n": {
         "fr": {
-          "title": "Cure d'austérité et été sans recrue : l'OM s'attaque désormais aux salaires",
-          "summary": "Après s'être concentrés sur les ventes lors du mercato, les dirigeants de l'OM poursuivent la cure d'austérité en négociant avec leurs joueurs pour remodeler leurs revenus.",
-          "needs_translation": false
+          "title": "OM : la direction négocie pour réduire les salaires",
+          "summary": "Après un mercato sans la moindre recrue, l'Olympique de Marseille négocie avec ses joueurs pour revoir leurs salaires à la baisse.",
+          "body": [
+            "Mis sous pression par la DNCG depuis juin pour réduire sa masse salariale, le club phocéen a d'abord vendu plusieurs gros salaires cet été.",
+            "La direction poursuit désormais cette cure d'austérité en cherchant à remodeler les contrats des joueurs restants."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Austerity cure and no recruits: OM is now tackling wages",
-          "summary": "After focusing on sales during the transfer window, OM leaders are pursuing the austerity cure by negotiating with their players to reshape their revenues.",
+          "title": "Marseille in talks with squad over wage cuts",
+          "summary": "After ending the summer transfer window without a single signing, Olympique de Marseille have opened talks with their players to reduce wages.",
+          "body": [
+            "Pressured by French financial watchdog DNCG to slash payroll costs since June, the club focused on offloading top earners this summer.",
+            "Marseille are now extending their austerity drive by seeking to renegotiate the contracts of the remaining squad members."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Cura de austeridad y verano sin reclutas: OM ahora ataca los salarios",
-          "summary": "Después de haberse centrado en las ventas durante el mercado, los dirigentes del OM prosiguen la cura de austeridad negociando con sus jugadores para remodelar sus ingresos.",
+          "title": "El Olympique de Marseille negocia rebajas salariales con su plantilla",
+          "summary": "Tras cerrar el mercado estival sin ningún fichaje, el Olympique de Marseille negocia con sus futbolistas una reducción de sus sueldos.",
+          "body": [
+            "Presionada por la DNCG desde junio para rebajar su masa salarial, la directiva marsellesa se deshizo primero de varios de sus jugadores mejor pagados.",
+            "El club continúa ahora este plan de austeridad con el objetivo de retocar los contratos de los futbolistas que permanecen en el equipo."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "علاج التقشف وعدم وجود مجندين: OM تتعامل الآن مع الأجور",
-          "summary": "بعد التركيز على المبيعات خلال فترة الانتقالات، يسعى قادة OM إلى علاج التقشف من خلال التفاوض مع لاعبيهم لإعادة تشكيل إيراداتهم.",
+          "title": "أولمبيك مارسيليا يفاوض لاعبيه لتخفيض رواتبهم",
+          "summary": "بعدما أنهى سوق الانتقالات الصيفية دون أي تعاقد، فتح أولمبيك مارسيليا مفاوضات مع لاعبيه لتعديل عقودهم وتخفيض رواتبهم.",
+          "body": [
+            "تحت ضغط هيئة الرقابة المالية منذ يونيو الماضي لخفض كتلة الأجور، ركز مسؤولو النادي الفرنسي أولاً على بيع أصحاب الرواتب المرتفعة هذا الصيف.",
+            "وتواصل إدارة النادي سياستها التقشفية حالياً عبر محاولة إعادة هيكلة عقود العناصر المتبقية في الفريق لتخفيف الأعباء المالية."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Article/Cure-d-austerite-et-ete-sans-recrue-l-om-s-attaque-desormais-aux-salaires/1715862#at_medium=RSS_feeds",
@@ -914,7 +959,20 @@
           "url": "https://www.lequipe.fr/Football/Article/Cure-d-austerite-et-ete-sans-recrue-l-om-s-attaque-desormais-aux-salaires/1715862#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-03T20:55:26+00:00"
+        }
+      }
     },
     {
       "id": "c20fa231dfce",
@@ -1015,7 +1073,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/La-nouvelle-pelouse-du-parc-des-princes-a-fiere-allure-avant-psg-monaco/1715860#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "88eb2be5d836",
@@ -1156,7 +1219,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260903/1004223081/barca-feyenoord-cierra-mercado-fichando-arsenal.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7cf5b33ae6ea",
@@ -1165,23 +1233,27 @@
       "i18n": {
         "es": {
           "title": "Elena Fort explica el porqué de la Asamblea telemática",
-          "summary": "Elena Fort, vicepresidenta institucional del FC Barcelona, explicó tras la reunión ordinaria de la junta directiva azulgrana celebrada este jueves los motivos que han llevado a la convocatoria de la Asamblea General Ordinaria para el sábado 19 de septiembre (09.30 h.) con un…",
-          "needs_translation": false
+          "summary": "Elena Fort, vicepresidenta institucional del FC Barcelona, detalló los motivos por los que la próxima Asamblea General Ordinaria se celebrará de manera telemática el sábado 19 de septiembre.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Elena Fort explica el porqué de la Asamblea telemática",
-          "summary": "Elena Fort, vicepresidenta institucional del FC Barcelona, explicó tras la reunión ordinaria de la junta directiva azulgrana celebrada este jueves los motivos que han llevado a la convocatoria de la Asamblea General Ordinaria para el sábado 19 de septiembre (09.30 h.) con un…",
-          "needs_translation": true
+          "title": "Elena Fort explains the reasons for the virtual Assembly",
+          "summary": "FC Barcelona institutional vice president Elena Fort explained the decision to hold the upcoming Asamblea General Ordinaria virtually on Saturday, September 19.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Elena Fort explica el porqué de la Asamblea telemática",
-          "summary": "Elena Fort, vicepresidenta institucional del FC Barcelona, explicó tras la reunión ordinaria de la junta directiva azulgrana celebrada este jueves los motivos que han llevado a la convocatoria de la Asamblea General Ordinaria para el sábado 19 de septiembre (09.30 h.) con un…",
-          "needs_translation": true
+          "title": "Elena Fort explique les raisons de la tenue de l'Assemblée à distance",
+          "summary": "Elena Fort, vice-présidente institutionnelle du FC Barcelona, a justifié le choix d'organiser la prochaine Asamblea General Ordinaria en format virtuel le samedi 19 septembre.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Elena Fort explica el porqué de la Asamblea telemática",
-          "summary": "Elena Fort, vicepresidenta institucional del FC Barcelona, explicó tras la reunión ordinaria de la junta directiva azulgrana celebrada este jueves los motivos que han llevado a la convocatoria de la Asamblea General Ordinaria para el sábado 19 de septiembre (09.30 h.) con un…",
-          "needs_translation": true
+          "title": "إيلينا فورت توضح أسباب عقد الجمعية العمومية عن بُعد",
+          "summary": "أوضحت إيلينا فورت، نائبة رئيس برشلونة للشؤون المؤسسية، أسباب عقد الجمعية العمومية العادية للنادي عبر تقنية الاتصال المرئي، والمقررة يوم السبت 19 سبتمبر.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260903/1004223088/elena-fort-explica-asamblea-telematica.html",
@@ -1203,7 +1275,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260903/1004223088/elena-fort-explica-asamblea-telematica.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6507ae8dc3af",
@@ -1259,23 +1336,27 @@
       "i18n": {
         "fr": {
           "title": "Al-Ittihad négocie avec Sunderland pour Chemsdine Talbi",
-          "summary": "Le club saoudien d’Al-Ittihad a entamé des discussions avec Sunderland pour s’attacher les services de l’international marocain Chemsdine Talbi. Le jeune attaquant de 21 ans ne figure pas dans la liste européenne du club anglais, alors que son avenir reste incertain.",
-          "needs_translation": false
+          "summary": "Al-Ittihad a ouvert des discussions avec Sunderland pour recruter l'attaquant international marocain Chemsdine Talbi (21 ans), actuellement écarté de la liste européenne du club anglais.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Al-Ittihad négocie avec Sunderland pour Chemsdine Talbi",
-          "summary": "Le club saoudien d’Al-Ittihad a entamé des discussions avec Sunderland pour s’attacher les services de l’international marocain Chemsdine Talbi. Le jeune attaquant de 21 ans ne figure pas dans la liste européenne du club anglais, alors que son avenir reste incertain.",
-          "needs_translation": true
+          "title": "Al-Ittihad in talks with Sunderland for Chemsdine Talbi",
+          "summary": "Saudi club Al-Ittihad have opened talks with Sunderland to sign 21-year-old Moroccan international forward Chemsdine Talbi, who was left out of the English club's European squad.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Al-Ittihad négocie avec Sunderland pour Chemsdine Talbi",
-          "summary": "Le club saoudien d’Al-Ittihad a entamé des discussions avec Sunderland pour s’attacher les services de l’international marocain Chemsdine Talbi. Le jeune attaquant de 21 ans ne figure pas dans la liste européenne du club anglais, alors que son avenir reste incertain.",
-          "needs_translation": true
+          "title": "Al-Ittihad negocia con el Sunderland por Chemsdine Talbi",
+          "summary": "Al-Ittihad ha iniciado conversaciones con el Sunderland para fichar al delantero internacional marroquí Chemsdine Talbi (21 años), quien no figura en la lista europea del conjunto inglés.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Al-Ittihad négocie avec Sunderland pour Chemsdine Talbi",
-          "summary": "Le club saoudien d’Al-Ittihad a entamé des discussions avec Sunderland pour s’attacher les services de l’international marocain Chemsdine Talbi. Le jeune attaquant de 21 ans ne figure pas dans la liste européenne du club anglais, alors que son avenir reste incertain.",
-          "needs_translation": true
+          "title": "الاتحاد يفاوض سندرلاند لضم شمس الدين طالبي",
+          "summary": "بدأ نادي الاتحاد السعودي محادثات مع سندرلاند الإنجليزي للتعاقد مع المهاجم الدولي المغربي شمس الدين طالبي (21 عاماً)، في ظل استبعاده من القائمة الأوروبية لناديه.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://fr.hespress.com/486948-al-ittihad-negocie-avec-sunderland-pour-chemsdine-talbi.html",
@@ -1297,7 +1378,12 @@
           "url": "https://fr.hespress.com/486948-al-ittihad-negocie-avec-sunderland-pour-chemsdine-talbi.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "dc83eab333b1",
@@ -1682,23 +1768,27 @@
       "i18n": {
         "es": {
           "title": "Entradas a la venta para la exposición 'Iniesta Experience: (El Juego Interior)'",
-          "summary": "Andrés Iniesta tendrá su propia exposición en Barcelona. Iniesta Experience: El Juego Interior llegará a finales de septiembre al edificio del antiguo cine IMAX del Port Vell, donde podrá visitarse hasta enero de 2027.",
-          "needs_translation": false
+          "summary": "Andrés Iniesta tendrá su propia exposición en Barcelona. Iniesta Experience: Juego Interior se inaugurará a finales de septiembre en el antiguo cine IMAX del Port Vell y estará abierta hasta enero de 2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Entradas a la venta para la exposición 'Iniesta Experience: (El Juego Interior)'",
-          "summary": "Andrés Iniesta tendrá su propia exposición en Barcelona. Iniesta Experience: El Juego Interior llegará a finales de septiembre al edificio del antiguo cine IMAX del Port Vell, donde podrá visitarse hasta enero de 2027.",
-          "needs_translation": true
+          "title": "Tickets on sale for the exhibition 'Iniesta Experience: (El Juego Interior)'",
+          "summary": "Andrés Iniesta will have his own exhibition in Barcelona. Iniesta Experience: Juego Interior opens in late September at the former IMAX del Port Vell cinema and will run until January 2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Entradas a la venta para la exposición 'Iniesta Experience: (El Juego Interior)'",
-          "summary": "Andrés Iniesta tendrá su propia exposición en Barcelona. Iniesta Experience: El Juego Interior llegará a finales de septiembre al edificio del antiguo cine IMAX del Port Vell, donde podrá visitarse hasta enero de 2027.",
-          "needs_translation": true
+          "title": "Billets en vente pour l'exposition « Iniesta Experience: (El Juego Interior) »",
+          "summary": "Andrés Iniesta aura sa propre exposition à Barcelona. Iniesta Experience: Juego Interior ouvrira fin septembre dans l'ancien cinéma IMAX del Port Vell et restera accessible jusqu'en janvier 2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Entradas a la venta para la exposición 'Iniesta Experience: (El Juego Interior)'",
-          "summary": "Andrés Iniesta tendrá su propia exposición en Barcelona. Iniesta Experience: El Juego Interior llegará a finales de septiembre al edificio del antiguo cine IMAX del Port Vell, donde podrá visitarse hasta enero de 2027.",
-          "needs_translation": true
+          "title": "طرح تذاكر معرض \"تجربة إنييستا: اللعب الداخلي\" للبيع",
+          "summary": "يحتضن مبنى سينما آيماكس القديم في بورت فيل بمدينة برشلونة معرضاً خاصاً بالنجم أندريس إنييستا، يفتتح نهاية سبتمبر ويستمر حتى يناير 2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/andres-iniesta-tendra-propia-exposicion-133927082?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -1726,7 +1816,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260903/1004222997/entradas-venta-exposicion-iniesta-experience-juego-interior.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0e3ed011fed9",
@@ -1735,28 +1830,33 @@
       "i18n": {
         "de": {
           "title": "Raketenstart: Nehmen Hertha und Nürnberg Kurs auf die Bundesliga?",
-          "summary": "Nach drei Bundesliga-Spieltagen stehen sowohl die Hertha, als auch Nürnberg an der Spitze der 2. Bundesliga-Tabelle.",
-          "needs_translation": false
+          "summary": "Nach drei Spieltagen stehen Hertha und Nürnberg gemeinsam an der Spitze der 2. Bundesliga-Tabelle.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Raketenstart: Nehmen Hertha und Nürnberg Kurs auf die Bundesliga?",
-          "summary": "Nach drei Bundesliga-Spieltagen stehen sowohl die Hertha, als auch Nürnberg an der Spitze der 2. Bundesliga-Tabelle.",
-          "needs_translation": true
+          "title": "Rocket start: Are Hertha and Nürnberg heading for the Bundesliga?",
+          "summary": "After three matchdays, Hertha and Nürnberg lead the 2. Bundesliga table.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Raketenstart: Nehmen Hertha und Nürnberg Kurs auf die Bundesliga?",
-          "summary": "Nach drei Bundesliga-Spieltagen stehen sowohl die Hertha, als auch Nürnberg an der Spitze der 2. Bundesliga-Tabelle.",
-          "needs_translation": true
+          "title": "Départ canon : Hertha et Nürnberg mettent-ils le cap sur la Bundesliga ?",
+          "summary": "Après trois journées, Hertha et Nürnberg occupent la tête du classement de 2. Bundesliga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Raketenstart: Nehmen Hertha und Nürnberg Kurs auf die Bundesliga?",
-          "summary": "Nach drei Bundesliga-Spieltagen stehen sowohl die Hertha, als auch Nürnberg an der Spitze der 2. Bundesliga-Tabelle.",
-          "needs_translation": true
+          "title": "Arranque meteórico: ¿Ponen Hertha y Nürnberg rumbo a la Bundesliga?",
+          "summary": "Tras tres jornadas disputadas, Hertha y Nürnberg lideran la tabla de la 2. Bundesliga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Raketenstart: Nehmen Hertha und Nürnberg Kurs auf die Bundesliga?",
-          "summary": "Nach drei Bundesliga-Spieltagen stehen sowohl die Hertha, als auch Nürnberg an der Spitze der 2. Bundesliga-Tabelle.",
-          "needs_translation": true
+          "title": "انطلاقة قوية: هل يحدد هرتا ونورنبرغ مسارهما نحو البوندسليغا؟",
+          "summary": "يتصدر هرتا ونورنبرغ جدول ترتيب دوري الدرجة الثانية الألماني بعد مرور ثلاث جولات.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/audio/hertha-und-nuernberg-nehmen-nach-raketenstart-kurs-auf-die-bundesliga,audio-bl2--bme--der-raketenstart-von-hertha-und-nuernberg-100.html",
@@ -1778,7 +1878,12 @@
           "url": "https://www.sportschau.de/audio/hertha-und-nuernberg-nehmen-nach-raketenstart-kurs-auf-die-bundesliga,audio-bl2--bme--der-raketenstart-von-hertha-und-nuernberg-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5229b7b9ceb6",
@@ -1837,23 +1942,27 @@
       "i18n": {
         "es": {
           "title": "Toulouse - Lille, en directo | Ligue 1",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Ligue 1 que enfrenta al Toulouse contra el Lille correspondiente a Jornada 3.",
-          "needs_translation": false
+          "summary": "Toulouse y Lille se enfrentan en directo en el partido correspondiente a la Jornada 3 de la Ligue 1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Toulouse - Lille, en directo | Ligue 1",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Ligue 1 que enfrenta al Toulouse contra el Lille correspondiente a Jornada 3.",
-          "needs_translation": true
+          "title": "Toulouse - Lille, live | Ligue 1",
+          "summary": "Toulouse face Lille live in their Ligue 1 matchday 3 fixture.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Toulouse - Lille, en directo | Ligue 1",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Ligue 1 que enfrenta al Toulouse contra el Lille correspondiente a Jornada 3.",
-          "needs_translation": true
+          "title": "Toulouse - Lille, en direct | Ligue 1",
+          "summary": "Toulouse affronte Lille en direct dans le cadre de la 3e journée de Ligue 1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Toulouse - Lille, en directo | Ligue 1",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Ligue 1 que enfrenta al Toulouse contra el Lille correspondiente a Jornada 3.",
-          "needs_translation": true
+          "title": "تولوز - ليل، بث مباشر | الدوري الفرنسي",
+          "summary": "يلتقي تولوز مع ليل في بث مباشر ضمن منافسات الجولة الثالثة من الدوري الفرنسي.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/ligue-1/20260903/1004221136/toulouse-lille-directo-ligue-1.html",
@@ -1875,7 +1984,12 @@
           "url": "https://www.mundodeportivo.com/futbol/ligue-1/20260903/1004221136/toulouse-lille-directo-ligue-1.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "08c3db20bf33",
@@ -1884,23 +1998,27 @@
       "i18n": {
         "es": {
           "title": "El Arsenal bate su récord: Martinelli, su venta más cara",
-          "summary": "El Arsenal confirmó este jueves el traspaso del brasileño Gabriel Martinelli al Al Hilal de Arabia Saudí por 65 millones de euros, la venta más cara de la historia de los 'Gunners'.",
-          "needs_translation": false
+          "summary": "El Arsenal confirmó el traspaso de Gabriel Martinelli al Al Hilal de Arabia Saudí por 65 millones de euros. La operación se convierte en la venta más cara en la historia del club.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Arsenal bate su récord: Martinelli, su venta más cara",
-          "summary": "El Arsenal confirmó este jueves el traspaso del brasileño Gabriel Martinelli al Al Hilal de Arabia Saudí por 65 millones de euros, la venta más cara de la historia de los 'Gunners'.",
-          "needs_translation": true
+          "title": "Arsenal break club record: Martinelli becomes their most expensive sale",
+          "summary": "Arsenal have confirmed the transfer of Gabriel Martinelli to Al Hilal in Arabia Saudí for 65 million euros. The deal is the most expensive sale in the club's history.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El Arsenal bate su récord: Martinelli, su venta más cara",
-          "summary": "El Arsenal confirmó este jueves el traspaso del brasileño Gabriel Martinelli al Al Hilal de Arabia Saudí por 65 millones de euros, la venta más cara de la historia de los 'Gunners'.",
-          "needs_translation": true
+          "title": "Arsenal bat son record : Martinelli devient sa plus grosse vente",
+          "summary": "Arsenal a confirmé le transfert de Gabriel Martinelli à Al Hilal en Arabia Saudí pour 65 millions d'euros. Il s'agit de la vente la plus chère de l'histoire du club.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Arsenal bate su récord: Martinelli, su venta más cara",
-          "summary": "El Arsenal confirmó este jueves el traspaso del brasileño Gabriel Martinelli al Al Hilal de Arabia Saudí por 65 millones de euros, la venta más cara de la historia de los 'Gunners'.",
-          "needs_translation": true
+          "title": "أرسنال يحطم رقمه القياسي: مارتينيلي الصفقة الأغلى في تاريخ النادي",
+          "summary": "أعلن أرسنال انتقال البرازيلي غابرييل مارتينيلي إلى الهلال السعودي مقابل 65 مليون يورو، في أغلى صفقة بيع يشهدها تاريخ النادي الإنجليزي.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fichajes/oficial/20260903/1004223065/arsenal-bate-record-martinelli-venta-cara-historia.html",
@@ -1922,7 +2040,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fichajes/oficial/20260903/1004223065/arsenal-bate-record-martinelli-venta-cara-historia.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "19d86dc1f5b2",
@@ -2033,26 +2156,27 @@
       "i18n": {
         "fr": {
           "title": "Nasreddine Nabi réclame 320 millions de centimes au Raja Casablanca",
-          "summary": "Le différend entre Nasreddine Nabi et le Raja de Casablanca pourrait désormais être tranché sur le terrain juridique.",
-          "needs_translation": false
+          "summary": "Le litige financier opposant Nasreddine Nabi au Raja de Casablanca, à qui il réclame 320 millions de centimes, pourrait désormais se régler devant la justice.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Nasreddine Nabi claims 320 million cents from Raja Casablanca",
-          "summary": "The dispute between Nasreddine Nabi and Raja de Casablanca could now be settled on legal grounds.",
+          "title": "Nasreddine Nabi claims 320 million centimes from Raja Casablanca",
+          "summary": "The financial dispute between Nasreddine Nabi and Raja Casablanca, from whom he claims 320 million centimes, could now be settled through legal channels.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
           "title": "Nasreddine Nabi reclama 320 millones de céntimos al Raja Casablanca",
-          "summary": "La disputa entre Nasreddine Nabi y el Raja de Casablanca ahora podría resolverse en el terreno legal.",
+          "summary": "El litigio financiero entre Nasreddine Nabi y el Raja Casablanca, a quien exige 320 millones de céntimos, podría resolverse por la vía judicial.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "نصر الدين نبي يطالب بمبلغ 320 مليون سنت من رجاء الدار البيضاء",
-          "summary": "يمكن الآن تسوية النزاع بين نصر الدين النبي وراجا الدار البيضاء على أسس قانونية.",
+          "title": "نصر الدين نابي يطالب الرجاء البيضاوي بـ320 مليون سنتيم",
+          "summary": "يتجه النزاع المالي بين المدرب نصر الدين نابي ونادي الرجاء البيضاوي إلى القضاء، حيث يطالب الأخير بسداد 320 مليون سنتيم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://fr.hespress.com/486971-nasreddine-nabi-reclame-320-millions-de-centimes-au-raja-casablanca.html",
@@ -2074,7 +2198,12 @@
           "url": "https://fr.hespress.com/486971-nasreddine-nabi-reclame-320-millions-de-centimes-au-raja-casablanca.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "17ee97a111c9",
