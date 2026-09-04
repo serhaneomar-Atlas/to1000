@@ -108,7 +108,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-plate-franco-mastantuono-boca-florentina_0_LJQPjnul62.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ae1a2221ba41",
@@ -117,26 +122,27 @@
       "i18n": {
         "fr": {
           "title": "Les notes de PSG-Monaco : Hradecky héroïque, Doué peu inspiré, Paris se rate encore",
-          "summary": "Qui a brillé, qui s’est raté ? Découvrez les notes attribuées aux joueurs parisiens et monégasques ce vendredi, au Parc des Princes.",
-          "needs_translation": false
+          "summary": "Vendredi au Parc des Princes, Paris a une nouvelle fois trébuché face à Monaco. Le gardien Hradecky a livré une prestation décisive tandis que Doué a peiné à s'illustrer.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "PSG-Monaco's notes: heroic Hradecky, uninspired Gifted, Paris still misses",
-          "summary": "Who shone, who failed? Discover the scores awarded to Parisian and Monegasque players this Friday at the Parc des Princes.",
+          "title": "PSG-Monaco player ratings: Hradecky heroic, Doué uninspired, Paris slips up again",
+          "summary": "Paris faltered again on Friday at the Parc des Princes against Monaco, held back by a strong performance from Hradecky while Doué failed to make an impact.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Las notas del PSG-Monaco: Hradecky heroico, dotado poco inspirado, París sigue fallando",
-          "summary": "¿Quién ha brillado, quién ha fallado? Descubra las notas atribuidas a los jugadores parisinos y monegascos este viernes, en el Parque de los Príncipes.",
+          "title": "Las notas del PSG-Monaco: Hradecky heroico, Doué poco inspirado, Paris tropieza de nuevo",
+          "summary": "Paris volvió a tropezar este viernes en el Parc des Princes frente a Monaco, frenado por una destacada actuación de Hradecky y un Doué poco acertado.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ملاحظات باريس سان جيرمان- موناكو: هراديكي البطولي، الموهوب غير الملهم، باريس لا تزال مفقودة",
-          "summary": "من أشرق، من فشل ؟ اكتشف النتائج التي تم منحها للاعبين الباريسيين وموناكو يوم الجمعة في بارك دي برينس.",
+          "title": "تقييم مباراة باريس سان جيرمان وموناكو: هراديكي يتألق ودوي يتعثر وباريس يخفق مجدداً",
+          "summary": "تعثر باريس سان جيرمان مجدداً هذا الجمعة على ملعب حديقة الأمراء أمام موناكو، في مواجهة شهدت تألقاً كبيراً لحارس المرمى هراديكي وظهوراً باهتاً للمهاجم دوي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-1/les-notes-de-psg-monaco-hradecky-heroique-doue-peu-inspire-paris-se-rate-encore-20260904",
@@ -158,7 +164,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-1/les-notes-de-psg-monaco-hradecky-heroique-doue-peu-inspire-paris-se-rate-encore-20260904"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2715dd9073c2",
@@ -376,7 +387,12 @@
           "url": "https://www.lefigaro.fr/sports/football/angleterre/premier-league-avec-les-grands-debuts-de-barcola-liverpool-decroche-un-premier-succes-cette-saison-20260904"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "1eeed398831c",
@@ -1099,23 +1115,27 @@
       "i18n": {
         "es": {
           "title": "Así está la lucha por no descender en la Liga Profesional",
-          "summary": "Al final de la temporada perderán la categoría dos equipos: uno por la tabla de promedios y el otro por la anual. Mirá cómo viene la mano en cada caso.",
-          "needs_translation": false
+          "summary": "Dos equipos perderán la categoría al final de la temporada en la Liga Profesional: uno a través de la tabla de promedios y otro por la tabla anual.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Así está la lucha por no descender en la Liga Profesional",
-          "summary": "Al final de la temporada perderán la categoría dos equipos: uno por la tabla de promedios y el otro por la anual. Mirá cómo viene la mano en cada caso.",
-          "needs_translation": true
+          "title": "The relegation battle in the Liga Profesional",
+          "summary": "Two teams will be relegated at the end of the Liga Profesional season: one through the points average table and the other via the annual standings.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Así está la lucha por no descender en la Liga Profesional",
-          "summary": "Al final de la temporada perderán la categoría dos equipos: uno por la tabla de promedios y el otro por la anual. Mirá cómo viene la mano en cada caso.",
-          "needs_translation": true
+          "title": "La lutte pour le maintien en Liga Profesional",
+          "summary": "Deux clubs seront relégués à la fin de la saison en Liga Profesional : l'un via le classement des moyennes et l'autre via la table annuelle.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Así está la lucha por no descender en la Liga Profesional",
-          "summary": "Al final de la temporada perderán la categoría dos equipos: uno por la tabla de promedios y el otro por la anual. Mirá cómo viene la mano en cada caso.",
-          "needs_translation": true
+          "title": "صراع تفادي الهبوط في الدوري الأرجنتيني للمحترفين",
+          "summary": "سيهبط فريقان مع نهاية الموسم في الدوري الأرجنتيني للمحترفين، أحدهما عبر جدول المعدل التراكمي والآخر من خلال الترتيب السنوي العام.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-primera/tablas-descenso-anual-promedios-fecha-8_0_soBKuYSCNo.html",
@@ -1137,7 +1157,12 @@
           "url": "https://www.ole.com.ar/futbol-primera/tablas-descenso-anual-promedios-fecha-8_0_soBKuYSCNo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "438a3433ada3",
@@ -1527,23 +1552,27 @@
       "i18n": {
         "en": {
           "title": "FA to canvass England players in World Cup review",
-          "summary": "The Football Association's review into England's World Cup campaign will canvass the opinions of players involved in the tournament.",
-          "needs_translation": false
+          "summary": "The Football Association's review into England's World Cup campaign will gather feedback directly from the players who took part in the tournament.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "FA to canvass England players in World Cup review",
-          "summary": "The Football Association's review into England's World Cup campaign will canvass the opinions of players involved in the tournament.",
-          "needs_translation": true
+          "title": "La FA va sonder les joueurs de England dans son bilan de la World Cup",
+          "summary": "Le bilan mené par la Football Association sur le parcours de England lors de la World Cup recueillera les avis des joueurs ayant disputé le tournoi.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "FA to canvass England players in World Cup review",
-          "summary": "The Football Association's review into England's World Cup campaign will canvass the opinions of players involved in the tournament.",
-          "needs_translation": true
+          "title": "La FA consultará a los jugadores de England en su balance de la World Cup",
+          "summary": "La revisión de la Football Association sobre la actuación de England en la World Cup incluirá las opiniones de los jugadores que participaron en el torneo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "FA to canvass England players in World Cup review",
-          "summary": "The Football Association's review into England's World Cup campaign will canvass the opinions of players involved in the tournament.",
-          "needs_translation": true
+          "title": "الاتحاد الإنجليزي يستطلع آراء لاعبي إنجلترا لتقييم المشاركة في كأس العالم",
+          "summary": "يتضمن التقييم الذي يجريه الاتحاد الإنجليزي لكرة القدم لمسيرة منتخب إنجلترا في كأس العالم استطلاع آراء اللاعبين الذين شاركوا في البطولة.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/clyr1ly8z4xo?at_medium=RSS&at_campaign=rss",
@@ -1565,7 +1594,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/clyr1ly8z4xo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2c1342826f9c",
@@ -1574,23 +1608,27 @@
       "i18n": {
         "es": {
           "title": "El motivo por el que no se repitió el penalti a favor del Real Madrid ante el Betis",
-          "summary": "El madridismo pidió repetir el penalti que Álvaro Valles detuvo a Mbappé en el tramo final del Betis-Real Madrid de este viernes.",
-          "needs_translation": false
+          "summary": "El entorno del Real Madrid reclamó la repetición del penalti que Álvaro Valles detuvo a Mbappé en los minutos finales del partido contra el Betis.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El motivo por el que no se repitió el penalti a favor del Real Madrid ante el Betis",
-          "summary": "El madridismo pidió repetir el penalti que Álvaro Valles detuvo a Mbappé en el tramo final del Betis-Real Madrid de este viernes.",
-          "needs_translation": true
+          "title": "The reason why Real Madrid's penalty against Betis was not retaken",
+          "summary": "Real Madrid fans demanded a retake after Álvaro Valles saved a late penalty from Mbappé in Friday's match against Betis.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El motivo por el que no se repitió el penalti a favor del Real Madrid ante el Betis",
-          "summary": "El madridismo pidió repetir el penalti que Álvaro Valles detuvo a Mbappé en el tramo final del Betis-Real Madrid de este viernes.",
-          "needs_translation": true
+          "title": "La raison pour laquelle le penalty en faveur du Real Madrid face au Betis n'a pas été retiré",
+          "summary": "Les supporters du Real Madrid ont réclamé de faire rejouer le penalty arrêté par Álvaro Valles face à Mbappé en toute fin de match contre Le Real Betis.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El motivo por el que no se repitió el penalti a favor del Real Madrid ante el Betis",
-          "summary": "El madridismo pidió repetir el penalti que Álvaro Valles detuvo a Mbappé en el tramo final del Betis-Real Madrid de este viernes.",
-          "needs_translation": true
+          "title": "سبب عدم إعادة ركلة جزاء ريال مدريد أمام بيتيس",
+          "summary": "طالبت جماهير ريال مدريد بإعادة ركلة الجزاء التي تصدى لها الحارس ألفارو فاليس أمام مبابي في الدقائق الأخيرة من المباراة ضد بيتيس.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260904/1004223448/motivo-no-repitio-penalti-favor-real-madrid-betis.html",
@@ -1612,7 +1650,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260904/1004223448/motivo-no-repitio-penalti-favor-real-madrid-betis.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c2001297427f",
@@ -1621,23 +1664,27 @@
       "i18n": {
         "fr": {
           "title": "Ligue 1 : Luis Enrique prolonge au PSG jusqu'en 2030",
-          "summary": "L’entraîneur Luis Enrique a prolongé son contrat avec le Paris Saint-Germain jusqu’en 2030 après trois saisons marquées par deux sacres européens pour le club parisien, a annoncé le PSG vendredi.",
-          "needs_translation": false
+          "summary": "L’entraîneur Luis Enrique a prolongé son contrat avec le Paris Saint-Germain jusqu'en 2030, après avoir remporté deux titres européens en trois saisons sur le banc parisien.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Ligue 1 : Luis Enrique prolonge au PSG jusqu'en 2030",
-          "summary": "L’entraîneur Luis Enrique a prolongé son contrat avec le Paris Saint-Germain jusqu’en 2030 après trois saisons marquées par deux sacres européens pour le club parisien, a annoncé le PSG vendredi.",
-          "needs_translation": true
+          "title": "Ligue 1: Luis Enrique extends at PSG until 2030",
+          "summary": "Paris Saint-Germain have announced that coach Luis Enrique has extended his contract until 2030, following three seasons marked by two European titles.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ligue 1 : Luis Enrique prolonge au PSG jusqu'en 2030",
-          "summary": "L’entraîneur Luis Enrique a prolongé son contrat avec le Paris Saint-Germain jusqu’en 2030 après trois saisons marquées par deux sacres européens pour le club parisien, a annoncé le PSG vendredi.",
-          "needs_translation": true
+          "title": "Ligue 1: Luis Enrique renueva con el PSG hasta 2030",
+          "summary": "El Paris Saint-Germain anunció la renovación del contrato de Luis Enrique hasta 2030, tras tres temporadas en las que logró dos títulos europeos al frente del equipo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Ligue 1 : Luis Enrique prolonge au PSG jusqu'en 2030",
-          "summary": "L’entraîneur Luis Enrique a prolongé son contrat avec le Paris Saint-Germain jusqu’en 2030 après trois saisons marquées par deux sacres européens pour le club parisien, a annoncé le PSG vendredi.",
-          "needs_translation": true
+          "title": "الدوري الفرنسي: لويس إنريكي يمدد عقده مع باريس سان جيرمان حتى 2030",
+          "summary": "أعلن نادي باريس سان جيرمان تمديد عقد مدربه لويس إنريكي حتى عام 2030، بعد ثلاثة مواسم قاد خلالها الفريق لتحقيق لقبين أوروبيين.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://fr.hespress.com/487163-ligue-1-luis-enrique-prolonge-au-psg-jusquen-2030.html",
@@ -1659,7 +1706,12 @@
           "url": "https://fr.hespress.com/487163-ligue-1-luis-enrique-prolonge-au-psg-jusquen-2030.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "935c212848d4",
@@ -1805,7 +1857,12 @@
           "url": "https://africatopsports.com/football/five-african-players-set-to-make-a-big-impact-at-the-2026-fifa-world-cup/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a5c586436d87",
@@ -1955,23 +2012,27 @@
       "i18n": {
         "fr": {
           "title": "L’Académie Mohammed VI exporte ses pépites et confirme son statut de vivier d’élite",
-          "summary": "De l’Ajax Amsterdam à Anderlecht, en passant par la Liga et les championnats français, les talents formés à l’Académie Mohammed VI ont animé le mercato estival 2026.",
-          "needs_translation": false
+          "summary": "Les talents formés à L’Académie Mohammed VI ont animé le mercato estival 2026, rejoignant notamment l'Ajax Amsterdam, Anderlecht, la Liga et les championnats français.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "L’Académie Mohammed VI exporte ses pépites et confirme son statut de vivier d’élite",
-          "summary": "De l’Ajax Amsterdam à Anderlecht, en passant par la Liga et les championnats français, les talents formés à l’Académie Mohammed VI ont animé le mercato estival 2026.",
-          "needs_translation": true
+          "title": "L’Académie Mohammed VI exports its talents and confirms elite breeding ground status",
+          "summary": "Talents developed at L’Académie Mohammed VI shaped the 2026 summer transfer window, securing moves to Ajax Amsterdam, Anderlecht, Liga, and French clubs.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "L’Académie Mohammed VI exporte ses pépites et confirme son statut de vivier d’élite",
-          "summary": "De l’Ajax Amsterdam à Anderlecht, en passant par la Liga et les championnats français, les talents formés à l’Académie Mohammed VI ont animé le mercato estival 2026.",
-          "needs_translation": true
+          "title": "L’Académie Mohammed VI exporta sus joyas y confirma su estatus de cantera de élite",
+          "summary": "Los futbolistas formados en L’Académie Mohammed VI protagonizaron el mercado estival de 2026, con traspasos a la Liga, torneos franceses, Ajax Amsterdam y Anderlecht.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "L’Académie Mohammed VI exporte ses pépites et confirme son statut de vivier d’élite",
-          "summary": "De l’Ajax Amsterdam à Anderlecht, en passant par la Liga et les championnats français, les talents formés à l’Académie Mohammed VI ont animé le mercato estival 2026.",
-          "needs_translation": true
+          "title": "أكاديمية محمد السادس تصدر مواهبها وتؤكد مكانتها كمنجم نخبوي للمواهب",
+          "summary": "شهد سوق الانتقالات الصيفي لعام 2026 نشاطاً بارزاً لخريجي أكاديمية محمد السادس، بانتقالهم إلى أياكس أمستردام، وأندرلخت، وأندية الدوري الإسباني والبطولات الفرنسية.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://fr.hespress.com/487095-lacademie-mohammed-vi-exporte-ses-pepites-et-confirme-son-statut-de-vivier-delite.html",
@@ -1993,7 +2054,12 @@
           "url": "https://fr.hespress.com/487095-lacademie-mohammed-vi-exporte-ses-pepites-et-confirme-son-statut-de-vivier-delite.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "56f83e0cb051",
@@ -2002,23 +2068,27 @@
       "i18n": {
         "es": {
           "title": "1-0: Tropiezo del Real Madrid ante el Betis",
-          "summary": "En La Cartuja y ante el Betis. Ahí es donde acabó la racha del Real Madrid de Mourinho.",
-          "needs_translation": false
+          "summary": "El Real Madrid de Mourinho cayó 1-0 frente al Betis en La Cartuja, resultado que puso fin a su racha.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "1-0: Tropiezo del Real Madrid ante el Betis",
-          "summary": "En La Cartuja y ante el Betis. Ahí es donde acabó la racha del Real Madrid de Mourinho.",
-          "needs_translation": true
+          "title": "1-0: Real Madrid stumble against Betis",
+          "summary": "Mourinho's Real Madrid lost 1-0 against Betis at La Cartuja, putting an end to their positive run.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "1-0: Tropiezo del Real Madrid ante el Betis",
-          "summary": "En La Cartuja y ante el Betis. Ahí es donde acabó la racha del Real Madrid de Mourinho.",
-          "needs_translation": true
+          "title": "1-0 : Faux pas du Real Madrid face au Betis",
+          "summary": "Le Real Madrid de Mourinho s'est incliné 1-0 face au Betis à La Cartuja, mettant fin à sa série de résultats positifs.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "1-0: Tropiezo del Real Madrid ante el Betis",
-          "summary": "En La Cartuja y ante el Betis. Ahí es donde acabó la racha del Real Madrid de Mourinho.",
-          "needs_translation": true
+          "title": "1-0: تعثر ريال مدريد أمام بيتيس",
+          "summary": "خسر ريال مدريد بقيادة مورينيو أمام بيتيس بنتيجة 1-0 على ملعب لا كارتوخا، لتتوقف سلسلة نتائجه الإيجابية.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260904/1004223445/tropiezo-real-madrid-betis.html",
@@ -2040,7 +2110,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260904/1004223445/tropiezo-real-madrid-betis.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ec5e603a3444",
