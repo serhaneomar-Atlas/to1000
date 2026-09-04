@@ -16,27 +16,28 @@
       "summary": "Le Paris Saint-Germain retrouve le Parc des Princes ce vendredi soir lors de la 3e journée. Le champion de France vise une première victoire pour lancer sa saison de Ligue 1.",
       "i18n": {
         "fr": {
-          "title": "EN DIRECT - PSG-Monaco : stupeur au Parc des Princes, Paris concède l’égalisation",
-          "summary": "Le Paris Saint-Germain retrouve le Parc des Princes ce vendredi soir lors de la 3e journée. Le champion de France vise une première victoire pour lancer sa saison de Ligue 1.",
-          "needs_translation": false
+          "title": "DIRECT - PSG-Monaco : stupeur au Parc des Princes, Paris concède l'égalisation",
+          "summary": "Lors de la 3e journée de Ligue 1 au Parc des Princes, Paris Saint-Germain a concédé l'égalisation face à Monaco alors que le champion de France cherchait sa première victoire de la saison.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "LIVE - PSG-Monaco: amazement at the Parc des Princes, Paris concedes the equalization",
-          "summary": "Paris Saint-Germain will return to the Parc des Princes this Friday evening on day 3. The French champion is aiming for a first victory to kick off his Ligue 1 season.",
+          "title": "DIRECT - PSG-Monaco: Shock at the Parc des Princes as Paris concede equaliser",
+          "summary": "During matchday 3 of Ligue 1 at the Parc des Princes, Paris Saint-Germain conceded an equaliser against Monaco while searching for their first league victory of the season.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "EN DIRECTO - PSG-Monaco: estupor en el Parque de los Príncipes, París concede la igualación",
-          "summary": "El Paris Saint-Germain regresa al Parque de los Príncipes este viernes por la noche en la tercera jornada. El campeón de Francia aspira a una primera victoria para lanzar su temporada de Ligue 1.",
+          "title": "DIRECTO - PSG-Monaco: sorpresa en el Parc des Princes, Paris concede el empate",
+          "summary": "En la 3.ª jornada de Ligue 1 en el Parc des Princes, Paris Saint-Germain concedió el empate ante Monaco cuando buscaba su primera victoria de la temporada.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباشر - باريس سان جيرمان- موناكو: دهشة في حديقة الأمراء، باريس تعترف بالمعادلة",
-          "summary": "سيعود باريس سان جيرمان إلى حديقة الأمراء مساء الجمعة في اليوم الثالث. يهدف بطل فرنسا إلى تحقيق أول انتصار لبدء موسمه في دوري الدرجة الأولى.",
+          "title": "مباشر - باريس سان جيرمان وموناكو: صدمة في حديقة الأمراء، باريس يستقبل هدف التعادل",
+          "summary": "في الجولة الثالثة من الدوري الفرنسي على ملعب حديقة الأمراء، استقبل باريس سان جيرمان هدف التعادل أمام موناكو بينما كان يبحث عن فوزه الأول هذا الموسم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/live/ligue-1/2026/2640583/paris-sg-monaco",
@@ -58,7 +59,12 @@
           "url": "https://www.lefigaro.fr/sports/football/live/ligue-1/2026/2640583/paris-sg-monaco"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b2a385ff537a",
@@ -116,27 +122,28 @@
       "summary": "Primer episodio de polémica arbitral en la temporada del Real Madrid. Con 0-0 en el marcador ante el Real Betis, Hernández Hernández le ha perdonado la segunda amarilla a Arda Güler en el arranque de la segunda parte.",
       "i18n": {
         "es": {
-          "title": "¡Segunda amarilla perdonada a Güler!",
-          "summary": "Primer episodio de polémica arbitral en la temporada del Real Madrid. Con 0-0 en el marcador ante el Real Betis, Hernández Hernández le ha perdonado la segunda amarilla a Arda Güler en el arranque de la segunda parte.",
-          "needs_translation": false
+          "title": "Segunda amarilla perdonada a Güler",
+          "summary": "Con 0-0 ante el Real Betis al inicio de la segunda parte, el árbitro Hernández Hernández evitó mostrar la segunda tarjeta amarilla a Arda Güler.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Second yellow pardon to Güler!",
-          "summary": "First episode of refereeing controversy in the Real Madrid season. With 0-0 on the scoreboard against Real Betis, Hernández Hernández has forgiven the second yellow to Arda Güler at the start of the second part.",
+          "title": "Second yellow card spared for Güler",
+          "summary": "With the score tied at 0-0 against Real Betis early in the second half, referee Hernández Hernández spared Real Madrid midfielder Arda Güler a second yellow card.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Deuxième jaune pardonnée à Güler !",
-          "summary": "Premier épisode de polémique arbitrale dans la saison du Real Madrid. Avec 0-0 au score face au Real Betis, Hernández Hernández a pardonné la deuxième jaune à Arda Güler au début de la deuxième période.",
+          "title": "Deuxième carton jaune épargné à Güler",
+          "summary": "À 0-0 face au Real Betis en début de seconde période, l'arbitre Hernández Hernández n'a pas infligé de deuxième carton jaune à Arda Güler pour le Real Madrid.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "العفو الأصفر الثاني لغولر!",
-          "summary": "الحلقة الأولى من جدل التحكيم في موسم ريال مدريد. مع 0-0 على لوحة النتائج ضد ريال بيتيس، هيرنانديز هيرنانديز قد غفر الصفراء الثانية لأردا غولر في بداية الجزء الثاني.",
+          "title": "الحكم يتغاضى عن إنذار ثان لأردا غولر",
+          "summary": "تجنب الحكم هيرنانديز هيرنانديز إشهار البطاقة الصفراء الثانية في وجه لاعب ريال مدريد أردا غولر مطلع الشوط الثاني، أثناء التعادل السلبي أمام ريال بيتيس.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260904/1004223432/segunda-amarilla-perdonada-gueler.html",
@@ -158,7 +165,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260904/1004223432/segunda-amarilla-perdonada-gueler.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c61a4c9999f1",
@@ -208,7 +220,12 @@
           "url": "https://www.lefigaro.fr/sports/football/live/liga/2026/2650794/betis-real-madrid"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e67e2ea71334",
@@ -329,32 +346,33 @@
       "i18n": {
         "de": {
           "title": "Schroers über geplatzten Wechsel: \"War ein kleiner Rückschlag\"",
-          "summary": "Dass Aachens Mika Schroers gerne den Weg in die 2. Bundesliga gegangen wäre, galt als offenes Geheimnis.",
-          "needs_translation": false
+          "summary": "Mika Schroers von Alemannia Aachen bezeichnete seinen geplatzten Wechsel in die 2. Bundesliga als kleinen Rückschlag. Sein Wunsch nach dem Schritt in die zweite Liga galt bereits als offenes Geheimnis.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Schroers on the burst change: \"It was a small setback\"",
-          "summary": "The fact that Aachen's Mika Schroers would have liked to have made it to the 2nd Bundesliga was considered an open secret.",
+          "title": "Schroers on failed transfer: \"It was a minor setback\"",
+          "summary": "Mika Schroers of Alemannia Aachen described his collapsed move to the 2. Bundesliga as a minor setback. The player's desire to step up to the second tier was already an open secret.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Schroers sur le changement échoué : \"Était un petit revers\"",
-          "summary": "Le fait que Mika Schroers d'Aix-la-Chapelle aurait volontiers pris le chemin de la 2e Bundesliga était considéré comme un secret de polichinelle.",
+          "title": "Schroers sur son transfert avorté : « C'était un petit coup dur »",
+          "summary": "Mika Schroers, joueur d'Alemannia Aachen, a qualifié son transfert avorté vers la 2. Bundesliga de petit coup dur. Son souhait de rejoindre la deuxième division allemande était déjà un secret de polichinelle.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Schroers sobre la ruptura del cambio: \"Fue un pequeño revés\"",
-          "summary": "El hecho de que al Aachen Mika Schroers le hubiera gustado llegar a la segunda división de la Bundesliga se consideraba un secreto a voces.",
+          "title": "Schroers sobre su fichaje frustrado: «Fue un pequeño revés»",
+          "summary": "Mika Schroers, jugador de Alemannia Aachen, calificó de pequeño revés su frustrado traspaso a la 2. Bundesliga. Su deseo de ascender a la segunda división alemana era ya un secreto a voces.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "شرورز على تغيير الانفجار: \"لقد كانت نكسة صغيرة\"",
-          "summary": "حقيقة أن ميكا شرورز من آخن كانت ترغب في الوصول إلى الدوري الألماني الثاني كانت تعتبر سرا مفتوحا.",
+          "title": "شرورز عن صفقة انتقاله الفاشلة: \"كانت انتكاسة صغيرة\"",
+          "summary": "وصف ميكا شرورز، لاعب ألمانيا آخن، فشل انتقاله إلى دوري الدرجة الثانية الألماني بالانتكاسة الصغيرة، حيث كانت رغبته في خوض هذه التجربة معروفة للجميع.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/schroers-ueber-geplatzten-wechsel-war-ein-kleiner-rueckschlag-1249795/artikel#omrss",
@@ -376,7 +394,12 @@
           "url": "https://www.kicker.de/schroers-ueber-geplatzten-wechsel-war-ein-kleiner-rueckschlag-1249795/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7143e91b4f92",
@@ -497,26 +520,27 @@
       "i18n": {
         "es": {
           "title": "Empezaron los homenajes a Messi en el Clausura",
-          "summary": "Los planteles de Sarmiento y Estudianteas (RC) lucieron remeras especiales y frenaron las acciones al minuto 10 para aplaudir al capitán campeón del mundo en las canchas de todo el país.",
-          "needs_translation": false
+          "summary": "Los planteles de Sarmiento y Estudianteas lucieron camisetas especiales y detuvieron el juego en el minuto 10 para homenajear al capitán argentino Messi.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Tributes to Messi began at the Clausura",
-          "summary": "The Sarmiento and Estudianteas (RC) teams wore special t-shirts and stopped the actions in the 10th minute to applaud the world champion captain on courts across the country.",
+          "title": "Tributes to Messi have begun in the Clausura",
+          "summary": "Sarmiento and Estudianteas players wore commemorative shirts and paused play at the 10th minute to applaud world champion captain Messi.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Les hommages à Messi ont commencé à la clôture",
-          "summary": "Les équipes de Sarmiento et Estudianteas (RC) portaient des tee-shirts spéciaux et ont ralenti les actions à la minute 10 pour applaudir le capitaine champion du monde sur les courts de tout le pays.",
+          "title": "Les hommages à Messi ont débuté dans le Clausura",
+          "summary": "Les effectifs de Sarmiento et Estudianteas ont porté des maillots spéciaux et interrompu le jeu à la 10e minute pour applaudir Messi, capitaine champion du monde.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "بدأت تحية ميسي في كلوسورا",
-          "summary": "ارتدى فريقا سارمينتو واستوديانتياس قمصانًا خاصة وأوقفا الإجراءات في الدقيقة العاشرة للإشادة بقائد بطل العالم في الملاعب في جميع أنحاء البلاد.",
+          "title": "بدء تكريم ميسي في بطولة كلاوسورا",
+          "summary": "ارتدى لاعبو سارمينتو وإستوديانتيس قمصاناً خاصة وأوقفوا اللعب في الدقيقة العاشرة للتصفيق لقائد منتخب الأرجنتين ميسي بطل العالم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-primera/empezaron-homenajes-messi-clausra_0_DOhQOKI4IT.html",
@@ -538,7 +562,12 @@
           "url": "https://www.ole.com.ar/futbol-primera/empezaron-homenajes-messi-clausra_0_DOhQOKI4IT.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5ecb0364ed6c",
@@ -788,7 +817,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/francia/luis-enrique-bicampeon-champions-renovo-psg_0_PYaYP8jFBt.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "dbbf0bbd8861",
@@ -888,7 +922,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260904/1004223419/natan-bartra-salvan-palos-doble-ocasion-mbappe.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b94f7b2e385f",
@@ -997,30 +1036,33 @@
       "i18n": {
         "de": {
           "title": "Jetzt live - Real trifft das Tor gegen Betis nicht",
-          "summary": "Real Madrid hat unter Coach José Mourinho alle drei Partien in La Liga gewonnen. Holen die Königlichen bei Betis Sevilla Sieg Nummer vier?",
-          "needs_translation": false
+          "summary": "Real Madrid hat die ersten drei Ligaspiele unter Coach José Mourinho gewonnen und strebt bei Betis Sevilla den vierten Sieg in Folge an.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Live now - Real does not score the goal against Betis",
-          "summary": "Real Madrid have won all three matches in La Liga under coach José Mourinho. Will the royals get victory number four at Betis Sevilla?",
+          "title": "Live now - Real fail to score against Betis",
+          "summary": "Real Madrid have won their first three La Liga matches under Coach José Mourinho and are targeting a fourth consecutive victory against Betis Sevilla.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "En direct maintenant - Le Real ne marque pas le but contre les Betis",
-          "summary": "Real Madrid hat unter Coach José Mourinho alle drei Partien in La Liga gewonnen. Holen die Königlichen bei Betis Sevilla Sieg Nummer vier?",
+          "title": "En direct - Le Real ne trouve pas la faille contre Le Real Betis",
+          "summary": "Vainqueur de ses trois premiers matchs de La Liga sous la direction de Coach José Mourinho, Real Madrid vise une quatrième victoire consécutive face au Betis Sevilla.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Jetzt live - Real trifft das Tor gegen Betis nicht",
-          "summary": "Real Madrid hat unter Coach José Mourinho alle drei Partien in La Liga gewonnen. Holen die Königlichen bei Betis Sevilla Sieg Nummer vier?",
-          "needs_translation": true
+          "title": "En directo - El Real no acierta ante el Betis",
+          "summary": "El Real Madrid ha ganado sus tres partidos de La Liga con Coach José Mourinho y busca su cuarta victoria consecutiva en el campo del Betis Sevilla.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Jetzt live - Real trifft das Tor gegen Betis nicht",
-          "summary": "Real Madrid hat unter Coach José Mourinho alle drei Partien in La Liga gewonnen. Holen die Königlichen bei Betis Sevilla Sieg Nummer vier?",
-          "needs_translation": true
+          "title": "مباشر الآن - ريال مدريد يعجز عن التسجيل أمام بيتيس",
+          "summary": "حقق ريال مدريد العلامة الكاملة بالفوز في أول ثلاث مباريات له في الدوري الإسباني تحت قيادة المدرب جوزيه مورينيو، ويسعى لحصد انتصاره الرابع توالياً أمام ريال بيتيس.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/spanien-primera-division/ma12187852/betis-sevilla_real-madrid/liveticker",
@@ -1042,7 +1084,12 @@
           "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/spanien-primera-division/ma12187852/betis-sevilla_real-madrid/liveticker"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2d121ad80f32",
@@ -1098,23 +1145,27 @@
       "i18n": {
         "es": {
           "title": "Los dos jugadores que podría perder Boca para enfrentar a Racing en la Copa Argentina",
-          "summary": "El cruce de cuartos quedaría pautado para el 27 de septiembre, en plena fecha FIFA, y Arruabarrena corre riesgo de no contar con dos piezas importantes de su equipo.",
-          "needs_translation": false
+          "summary": "El cruce de cuartos de final de la Copa Argentina entre Boca y Racing se disputaría el 27 de septiembre en plena fecha FIFA. Arruabarrena podría perder a dos piezas clave.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Los dos jugadores que podría perder Boca para enfrentar a Racing en la Copa Argentina",
-          "summary": "El cruce de cuartos quedaría pautado para el 27 de septiembre, en plena fecha FIFA, y Arruabarrena corre riesgo de no contar con dos piezas importantes de su equipo.",
-          "needs_translation": true
+          "title": "The two players Boca could lose to face Racing in the Copa Argentina",
+          "summary": "The Copa Argentina quarter-final between Boca and Racing is expected on September 27 during the FIFA international break, potentially depriving Arruabarrena of two key players.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Los dos jugadores que podría perder Boca para enfrentar a Racing en la Copa Argentina",
-          "summary": "El cruce de cuartos quedaría pautado para el 27 de septiembre, en plena fecha FIFA, y Arruabarrena corre riesgo de no contar con dos piezas importantes de su equipo.",
-          "needs_translation": true
+          "title": "Les deux joueurs que Boca pourrait perdre face à Racing en Copa Argentina",
+          "summary": "Le quart de finale de Copa Argentina entre Boca et Racing devrait se tenir le 27 septembre en pleine trêve FIFA, privant potentiellement Arruabarrena de deux éléments clés.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Los dos jugadores que podría perder Boca para enfrentar a Racing en la Copa Argentina",
-          "summary": "El cruce de cuartos quedaría pautado para el 27 de septiembre, en plena fecha FIFA, y Arruabarrena corre riesgo de no contar con dos piezas importantes de su equipo.",
-          "needs_translation": true
+          "title": "لاعبان قد يفقدهما بوكا أمام راسينغ في كأس الأرجنتين",
+          "summary": "من المتوقع إقامة ربع نهائي كأس الأرجنتين بين بوكا وراسينغ في 27 سبتمبر خلال فترة التوقف الدولي التابعة للفيفا، ما قد يحرم المدرب أروابارينا من لاعبين أساسيين.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/fecha-confirmada-copa-argentina-boca-racing-miguel-merentiel-alvaro-montero_0_BLt4fUFvXG.html",
@@ -1136,7 +1187,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/fecha-confirmada-copa-argentina-boca-racing-miguel-merentiel-alvaro-montero_0_BLt4fUFvXG.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a748afe69533",
@@ -1188,7 +1244,12 @@
           "url": "https://www.kicker.de/hradecky-muss-hinter-sich-greifen-marquinhos-bringt-psg-in-fuehrung-1249801/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "35b2db046d73",
@@ -1431,24 +1492,28 @@
       "summary": "Le Zamalek SC a remporté 2-1 son match de ce soir face à l’AS Port après la première rencontre de la double confrontation du premier tour préliminaire de la Ligue des champions de la CAF.",
       "i18n": {
         "fr": {
-          "title": "Ligue des champions CAF : Zamalek dompte l’AS du Port à la pause (2-0)",
-          "summary": "Le Zamalek SC a remporté 2-1 son match de ce soir face à l’AS Port après la première rencontre de la double confrontation du premier tour préliminaire de la Ligue des champions de la CAF.",
-          "needs_translation": false
+          "title": "Ligue des champions CAF : Zamalek dompte l’AS Port à la pause (2-0)",
+          "summary": "Le Zamalek SC s'est imposé 2-1 face à l'AS Port lors du match aller du premier tour préliminaire de la Ligue des champions de la CAF.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Ligue des champions CAF : Zamalek dompte l’AS du Port à la pause (2-0)",
-          "summary": "Le Zamalek SC a remporté 2-1 son match de ce soir face à l’AS Port après la première rencontre de la double confrontation du premier tour préliminaire de la Ligue des champions de la CAF.",
-          "needs_translation": true
+          "title": "CAF Champions League: Zamalek tame AS Port at the break (2-0)",
+          "summary": "Zamalek SC defeated AS Port 2-1 in the first leg of the CAF Champions League first preliminary round.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ligue des champions CAF : Zamalek dompte l’AS du Port à la pause (2-0)",
-          "summary": "Le Zamalek SC a remporté 2-1 son match de ce soir face à l’AS Port après la première rencontre de la double confrontation du premier tour préliminaire de la Ligue des champions de la CAF.",
-          "needs_translation": true
+          "title": "Liga de Campeones CAF: Zamalek domina a AS Port al descanso (2-0)",
+          "summary": "Zamalek SC se impuso por 2-1 a AS Port en el partido de ida de la primera ronda previa de la Liga de Campeones de la CAF.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Ligue des champions CAF : Zamalek dompte l’AS du Port à la pause (2-0)",
-          "summary": "Le Zamalek SC a remporté 2-1 son match de ce soir face à l’AS Port après la première rencontre de la double confrontation du premier tour préliminaire de la Ligue des champions de la CAF.",
-          "needs_translation": true
+          "title": "دوري أبطال إفريقيا: الزمالك يتقدم على إيه إس بورت في الشوط الأول (2-0)",
+          "summary": "فاز الزمالك بنتيجة 2-1 على إيه إس بورت في ذهاب الدور التمهيدي الأول من دوري أبطال إفريقيا.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football/ligue-des-champions-caf-zamalek-tient-le-match-aller-contre-as-du-port-taco-2-1/",
@@ -1476,7 +1541,12 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-caf-zamalek-dompte-las-du-port-a-la-pause-2-0/"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "923e3d256784",
@@ -2025,7 +2095,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260904/1004221470/ipswich-town-liverpool-directo-premier-league.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "70229c0fb3f5",
@@ -2178,7 +2253,12 @@
           "url": "https://www.mundodeportivo.com/futbol/ligue-1/20260904/1004221461/lyon-auxerre-directo-ligue-1.html"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9237b73a2690",
@@ -2331,23 +2411,27 @@
       "i18n": {
         "fr": {
           "title": "Guillaume Hoarau dévoile ses habitudes de consultant : « Je lis Victor Hugo pour travailler la diction »",
-          "summary": "L'ancien attaquant Guillaume Hoarau, aujourd'hui consultant pour Ligue 1+, explique ce qu'il a mis pour place pour se sentir à l'aise dans sa nouvelle profession.",
-          "needs_translation": false
+          "summary": "L'ancien attaquant Guillaume Hoarau, désormais consultant pour Ligue 1+, a confié lire des textes de Victor Hugo afin de perfectionner sa diction pour ses interventions télévisées.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Guillaume Hoarau dévoile ses habitudes de consultant : « Je lis Victor Hugo pour travailler la diction »",
-          "summary": "L'ancien attaquant Guillaume Hoarau, aujourd'hui consultant pour Ligue 1+, explique ce qu'il a mis pour place pour se sentir à l'aise dans sa nouvelle profession.",
-          "needs_translation": true
+          "title": "Guillaume Hoarau reveals his pundit habits: \"I read Victor Hugo to work on diction\"",
+          "summary": "Former striker Guillaume Hoarau, now a pundit for Ligue 1+, revealed that he reads Victor Hugo to improve his diction for his television appearances.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Guillaume Hoarau dévoile ses habitudes de consultant : « Je lis Victor Hugo pour travailler la diction »",
-          "summary": "L'ancien attaquant Guillaume Hoarau, aujourd'hui consultant pour Ligue 1+, explique ce qu'il a mis pour place pour se sentir à l'aise dans sa nouvelle profession.",
-          "needs_translation": true
+          "title": "Guillaume Hoarau revela sus hábitos como comentarista: «Leo a Victor Hugo para trabajar la dicción»",
+          "summary": "El exdelantero Guillaume Hoarau, actual comentarista de Ligue 1+, explicó que lee obras de Victor Hugo para mejorar su dicción durante sus apariciones televisivas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Guillaume Hoarau dévoile ses habitudes de consultant : « Je lis Victor Hugo pour travailler la diction »",
-          "summary": "L'ancien attaquant Guillaume Hoarau, aujourd'hui consultant pour Ligue 1+, explique ce qu'il a mis pour place pour se sentir à l'aise dans sa nouvelle profession.",
-          "needs_translation": true
+          "title": "غيوم هوارو يكشف عن عاداته كمحلل: \"أقرأ لفيكتور هوغو لتحسين النطق\"",
+          "summary": "كشف المهاجم السابق غيوم هوارو، الذي يعمل حالياً محللاً لمباريات الدوري الفرنسي، أنه يقرأ أعمال فيكتور هوغو لتحسين إلقائه ومخارج حروفه أثناء ظهوره التلفزيوني.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Guillaume-hoarau-devoile-ses-habitudes-de-consultant-je-lis-victor-hugo-pour-travailler-la-diction/1715993#at_medium=RSS_feeds",
@@ -2369,7 +2453,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Guillaume-hoarau-devoile-ses-habitudes-de-consultant-je-lis-victor-hugo-pour-travailler-la-diction/1715993#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     }
   ]
 }
