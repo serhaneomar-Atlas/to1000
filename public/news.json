@@ -182,7 +182,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga2/vfl-wolfsburg-gegen-energie-cottbus,audiostream-vfl-wolfsburg-gegen-energie-cottbus-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ca3cecb43bad",
@@ -232,7 +237,12 @@
           "url": "https://www.calciomio.fr/jai-partage-dix-ans-de-ma-vie-avec-lui-son-successeur-emu-trente-ans-de-maison-nerazzurra-effaces-et-le-vrai-motif-de-la-rupture-a-linter-reste-flou-id-179689"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4a9e91a55f9d",
@@ -282,7 +292,12 @@
           "url": "https://www.calciomio.fr/plus-de-300-millions-depenses-et-un-impot-a-20-la-super-lig-vide-la-serie-a-de-ses-stars-et-le-dernier-arrive-a-deja-tout-fait-basculer-des-son-entree-id-179688"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "75c5f7c45b11",
@@ -496,33 +511,34 @@
       "summary": "Am 3. Spieltag der Frauen-Bundesliga treffen die HSV-Frauen auf RB Leipzig.",
       "i18n": {
         "de": {
-          "title": "Jetzt live - Hamburg gegen Leipzig im Duell der Sieglosen",
-          "summary": "Am 3. Spieltag der Frauen-Bundesliga treffen die HSV-Frauen auf RB Leipzig.",
-          "needs_translation": false
+          "title": "Jetzt live: Hamburg gegen Leipzig im Duell der Sieglosen",
+          "summary": "Am 3. Spieltag der Frauen-Bundesliga treffen die HSV-Frauen auf RB Leipzig. Beide Teams suchen nach ihrem ersten Sieg der laufenden Saison.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Live now - Hamburg vs Leipzig in the duel of the Victoryless",
-          "summary": "On the 3rd matchday of the Women's Bundesliga, the HSV women meet RB Leipzig.",
+          "title": "Live now: Hamburg vs Leipzig in clash of winless sides",
+          "summary": "On matchday 3 of the Frauen-Bundesliga, HSV-Frauen face RB Leipzig. Both sides are searching for their first win of the season.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Maintenant en direct - Hambourg contre Leipzig dans le duel des vainqueurs",
-          "summary": "Lors de la 3e journée de la Bundesliga féminine, les femmes du HSV affronteront le RB Leipzig.",
+          "title": "En direct : Hamburg contre Leipzig dans le duel des équipes sans victoire",
+          "summary": "Lors de la 3e journée de Frauen-Bundesliga, les HSV-Frauen affrontent RB Leipzig. Les deux équipes sont en quête de leur première victoire cette saison.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ahora en vivo - Hamburgo contra Leipzig en el duelo de los sin victoria",
-          "summary": "En la tercera jornada de la Bundesliga femenina, las mujeres del HSV se enfrentarán al RB Leipzig.",
+          "title": "En directo: Hamburg contra Leipzig en el duelo de los equipos sin victorias",
+          "summary": "En la jornada 3 de la Frauen-Bundesliga, las HSV-Frauen se enfrentan a RB Leipzig. Ambos conjuntos buscan su primera victoria de la temporada.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباشر الآن - هامبورغ ضد لايبزيغ في مبارزة عديمي النصر",
-          "summary": "في المباراة الثالثة من الدوري الألماني للسيدات، تلتقي نساء HSV مع RB Leipzig.",
+          "title": "مباشر: هامبورغ ضد لايبزيغ في مواجهة للبحث عن الفوز الأول",
+          "summary": "يلتقي فريق سيدات هامبورغ مع نظيره آر بي لايبزيغ في الجولة الثالثة من الدوري الألماني للسيدات، حيث يبحث الفريقان عن أول انتصار لهما هذا الموسم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/deutschland-bundesliga-frauen/ma12306115/hamburger-sv_rb-leipzig/liveticker",
@@ -544,7 +560,12 @@
           "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/deutschland-bundesliga-frauen/ma12306115/hamburger-sv_rb-leipzig/liveticker"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "cfa2fb3c61f1",
@@ -609,26 +630,27 @@
       "i18n": {
         "fr": {
           "title": "Ligue des Champions CAF : où suivre le match Club Africain vs Djoliba AC ?",
-          "summary": "Pour suivre cette affiche très attendue du premier tour préliminaire aller de la Ligue des Champions CAF, entre le Club Africain et Djoliba AC, la chaîne nationale tunisienne Watania 1 Lire l'article The post Ligue des Champions CAF : où suivre le match Club Africain vs Djoliba…",
-          "needs_translation": false
+          "summary": "Le match aller du premier tour préliminaire de la Ligue des Champions CAF opposant le Club Africain à Djoliba AC est retransmis par la chaîne nationale tunisienne Watania 1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "CAF Champions League: where to watch the Club Africain vs Djoliba AC match?",
-          "summary": "To follow this highly anticipated poster of the first preliminary round of the CAF Champions League, between Club Africain and Djoliba AC, the Tunisian national channel Watania 1 Read the article The post CAF Champions League: where to watch the match Club Africain vs Djoliba...",
+          "title": "CAF Champions League: Where to watch Club Africain vs Djoliba AC?",
+          "summary": "The CAF Champions League first preliminary round first-leg match between Club Africain and Djoliba AC is broadcast live on Tunisian national television channel Watania 1.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Liga de Campeones CAF: ¿dónde seguir el partido Club Africano vs Djoliba AC?",
-          "summary": "Para seguir este cartel tan esperado de la primera ronda preliminar de ida de la Liga de Campeones CAF, entre el Club Africano y Djoliba AC, la cadena nacional tunecina Watania 1 Leer el artículo The post Liga de Campeones CAF: dónde seguir el partido Club Africano vs Djoliba…",
+          "title": "Liga de Campeones de la CAF: ¿dónde ver el Club Africain vs Djoliba AC?",
+          "summary": "El partido de ida de la primera ronda preliminar de la Liga de Campeones de la CAF entre Club Africain y Djoliba AC se emite en directo por el canal nacional tunecino Watania 1.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "دوري أبطال أفريقيا: أين تشاهد مباراة النادي الأفريقي ضد دجوليبا ؟",
-          "summary": "لمتابعة هذا الملصق المرتقب للجولة التمهيدية الأولى لدوري أبطال أفريقيا، بين النادي الأفريقي ودجوليبا إيه سي، القناة الوطنية التونسية 1 اقرأ المقال دوري أبطال أفريقيا بعد المباراة: أين تشاهد مباراة النادي الأفريقي ضد دجوليبا...",
+          "title": "دوري أبطال إفريقيا: أين يمكن متابعة مباراة النادي الإفريقي ضد جوليبا؟",
+          "summary": "تُنقل مباراة ذهاب الدور التمهيدي الأول من دوري أبطال إفريقيا بين النادي الإفريقي وجوليبا المالي عبر القناة الوطنية التونسية الأولى.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/caf/ligue-des-champions-caf-ou-suivre-le-match-club-africain-vs-djoliba-ac/",
@@ -656,7 +678,12 @@
           "url": "https://africatopsports.com/caf/ligue-des-champions-caf-le-club-africain-defie-le-djoliba-ac-ce-soir/"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "40587be834f6",
@@ -665,26 +692,27 @@
       "i18n": {
         "es": {
           "title": "Un errático Take Kubo preocupa en Anoeta pero Matarazzo tiene paciencia",
-          "summary": "Take Kubo no ha arrancado la temporada con el brillo ni la brillantez eléctrica que deslumbró a Anoeta.",
-          "needs_translation": false
+          "summary": "El irregular inicio de temporada de Take Kubo genera preocupación en Anoeta. Sin embargo, Matarazzo mantiene la paciencia con el rendimiento del atacante.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "An erratic Take Kubo worries in Anoeta but Matarazzo has patience",
-          "summary": "Take Kubo hasn't kicked off the season with the sparkle and electric brilliance that dazzled Anoeta.",
+          "title": "An erratic Take Kubo worries Anoeta, but Matarazzo remains patient",
+          "summary": "Take Kubo's inconsistent start to the season has caused concern at Anoeta. However, Matarazzo remains patient with the Japanese attacker.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Un Take Kubo erratique inquiète Anoeta mais Matarazzo a de la patience",
-          "summary": "Take Kubo n'a pas commencé la saison avec l'éclat et la brillance électrique qui ont ébloui Anoeta.",
+          "title": "Un Take Kubo irrégulier inquiète à Anoeta, mais Matarazzo reste patient",
+          "summary": "Le début de saison hésitant de Take Kubo suscite l'inquiétude à Anoeta. Malgré ce manque d'éclat, Matarazzo continue de faire preuve de patience.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "عدم انتظام تناول كوبو يقلق في أنويتا لكن ماتارازو لديه صبر",
-          "summary": "خذ كوبو لم يبدأ الموسم مع التألق والتألق الكهربائي الذي أبهر أنويتا.",
+          "title": "تراجع مستوى تاكي كوبو يقلق أنويتا لكن ماتاراتزو يتحلى بالصبر",
+          "summary": "أثارت البداية المتواضعة للياباني تاكي كوبو هذا الموسم قلقا في أنويتا، في حين يواصل ماتاراتزو التحلي بالصبر تجاه اللاعب.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260905/1004223321/erratico-take-kubo-preocupa-anoeta-matarazzo-paciencia.html",
@@ -706,7 +734,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260905/1004223321/erratico-take-kubo-preocupa-anoeta-matarazzo-paciencia.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0565f35328b0",
@@ -956,7 +989,12 @@
           "url": "https://africatopsports.com/football/ufoa-b-feminin-edo-queens-et-ampem-darkoa-se-disputent-le-titre-et-une-place-en-ligue-des-champions-caf/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e354e54eefc2",
@@ -1070,23 +1108,27 @@
       "i18n": {
         "es": {
           "title": "Llega otra pareja de brasileños del gol al Barça",
-          "summary": "Casi todos los futbolistas brasileños que a lo largo de la historia han defendido los colores azul y grana del FC Barcelona coincidieron a su llegada en explicar la elección del club catalán como destino en el éxito de sus predecesores.",
-          "needs_translation": false
+          "summary": "Casi todos los futbolistas brasileños que han jugado en el FC Barcelona atribuyen su llegada al club al éxito histórico de sus predecesores.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Llega otra pareja de brasileños del gol al Barça",
-          "summary": "Casi todos los futbolistas brasileños que a lo largo de la historia han defendido los colores azul y grana del FC Barcelona coincidieron a su llegada en explicar la elección del club catalán como destino en el éxito de sus predecesores.",
-          "needs_translation": true
+          "title": "Another Brazilian goalscoring duo arrives at Barça",
+          "summary": "Most Brazilian players who have played for FC Barcelona have attributed their decision to join the club to the success of their predecessors.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Llega otra pareja de brasileños del gol al Barça",
-          "summary": "Casi todos los futbolistas brasileños que a lo largo de la historia han defendido los colores azul y grana del FC Barcelona coincidieron a su llegada en explicar la elección del club catalán como destino en el éxito de sus predecesores.",
-          "needs_translation": true
+          "title": "Un nouveau duo brésilien de buteurs arrive au Barça",
+          "summary": "La plupart des joueurs brésiliens ayant rejoint le FC Barcelona expliquent leur choix par la réussite historique de leurs prédécesseurs au sein du club catalan.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Llega otra pareja de brasileños del gol al Barça",
-          "summary": "Casi todos los futbolistas brasileños que a lo largo de la historia han defendido los colores azul y grana del FC Barcelona coincidieron a su llegada en explicar la elección del club catalán como destino en el éxito de sus predecesores.",
-          "needs_translation": true
+          "title": "وصول ثنائي برازيلي هداف جديد إلى برشلونة",
+          "summary": "يعزو معظم اللاعبين البرازيليين الذين دافعوا عن قميص برشلونة عبر التاريخ اختيارهم للنادي الكتالوني إلى نجاحات مواطنيهم السابقين.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260905/1004223525/llega-pareja-brasilenos-gol-barca.html",
@@ -1108,7 +1150,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260905/1004223525/llega-pareja-brasilenos-gol-barca.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "890a19bbe7a7",
@@ -1782,7 +1829,12 @@
           "url": "https://www.kicker.de/mourinho-nach-pleite-betis-hat-den-jackpot-geknackt-1249851/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "10f8446382de",
@@ -1979,23 +2031,27 @@
       "i18n": {
         "es": {
           "title": "34 grados a la hora del Valencia-Barça",
-          "summary": "Los partidos de este inicio de la Liga 2026-27 no sólo tienen como protagonistas a los principales actores del tinglado, los futbolistas, también hay que tener muy en cuenta el histórico verano de calor que se está viviendo en la península ibérica.",
-          "needs_translation": false
+          "summary": "El arranque de la Liga 2026-27 está condicionado por una ola de calor histórica en la península ibérica, con previsiones de 34 grados para el Valencia-Barça.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "34 grados a la hora del Valencia-Barça",
-          "summary": "Los partidos de este inicio de la Liga 2026-27 no sólo tienen como protagonistas a los principales actores del tinglado, los futbolistas, también hay que tener muy en cuenta el histórico verano de calor que se está viviendo en la península ibérica.",
-          "needs_translation": true
+          "title": "34 degrees at kick-off for Valencia-Barça",
+          "summary": "The start of the 2026-27 Liga campaign faces severe heat across the Iberian Peninsula, with temperatures set to hit 34 degrees for Valencia-Barça.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "34 grados a la hora del Valencia-Barça",
-          "summary": "Los partidos de este inicio de la Liga 2026-27 no sólo tienen como protagonistas a los principales actores del tinglado, los futbolistas, también hay que tener muy en cuenta el histórico verano de calor que se está viviendo en la península ibérica.",
-          "needs_translation": true
+          "title": "34 degrés à l'heure du Valencia-Barça",
+          "summary": "Le début de la Liga 2026-27 est perturbé par une vague de chaleur historique dans la péninsule ibérique, avec 34 degrés attendus pour le choc Valencia-Barça.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "34 grados a la hora del Valencia-Barça",
-          "summary": "Los partidos de este inicio de la Liga 2026-27 no sólo tienen como protagonistas a los principales actores del tinglado, los futbolistas, también hay que tener muy en cuenta el histórico verano de calor que se está viviendo en la península ibérica.",
-          "needs_translation": true
+          "title": "34 درجة مئوية خلال مواجهة فالنسيا وبرشلونة",
+          "summary": "يتأثر انطلاق الدوري الإسباني لموسم 2026-2027 بموجة حر تاريخية في شبه الجزيرة الإيبيرية، مع وصول درجات الحرارة إلى 34 مئوية خلال لقاء فالنسيا وبرشلونة.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260905/1004223520/34o-hora-valencia-barca.html",
@@ -2017,7 +2073,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260905/1004223520/34o-hora-valencia-barca.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5cb4b24929e6",
@@ -2073,23 +2134,27 @@
       "i18n": {
         "fr": {
           "title": "Buteur dès son tout premier match chez les pros et déjà inscrit sur la liste de la Ligue des champions : à 18 ans, ce gaucher rappelle Dimarco à toute l’Inter",
-          "summary": "L’Inter a trouvé sa nouvelle pépite. Mattia Marello, 18 ans, arrière gauche de l’Under 23 […] Source",
-          "needs_translation": false
+          "summary": "Mattia Marello, arrière gauche de 18 ans de l'équipe Under de l'Inter, a marqué dès ses débuts chez les professionnels. Il figure déjà sur la liste du club pour la Ligue des champions.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Buteur dès son tout premier match chez les pros et déjà inscrit sur la liste de la Ligue des champions : à 18 ans, ce gaucher rappelle Dimarco à toute l’Inter",
-          "summary": "L’Inter a trouvé sa nouvelle pépite. Mattia Marello, 18 ans, arrière gauche de l’Under 23 […] Source",
-          "needs_translation": true
+          "title": "Scorer in his very first pro match and on the Champions League list: at 18, this left-footer reminds Inter of Dimarco",
+          "summary": "Inter Under 23 left-back Mattia Marello, 18, scored on his professional debut. The youngster has also been included in the club's Champions League squad.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Buteur dès son tout premier match chez les pros et déjà inscrit sur la liste de la Ligue des champions : à 18 ans, ce gaucher rappelle Dimarco à toute l’Inter",
-          "summary": "L’Inter a trouvé sa nouvelle pépite. Mattia Marello, 18 ans, arrière gauche de l’Under 23 […] Source",
-          "needs_translation": true
+          "title": "Goleador en su primer partido profesional e inscrito en la Champions League: a sus 18 años, este zurdo recuerda a Dimarco en el Inter",
+          "summary": "Mattia Marello, lateral izquierdo de 18 años del equipo Under 23 del Inter, marcó en su debut profesional. El jugador ya ha sido inscrito en la lista para la Champions League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Buteur dès son tout premier match chez les pros et déjà inscrit sur la liste de la Ligue des champions : à 18 ans, ce gaucher rappelle Dimarco à toute l’Inter",
-          "summary": "L’Inter a trouvé sa nouvelle pépite. Mattia Marello, 18 ans, arrière gauche de l’Under 23 […] Source",
-          "needs_translation": true
+          "title": "هداف منذ مباراته الاحترافية الأولى ومقيد في دوري أبطال أوروبا: في سن 18 عاماً، هذا الظهير يذكر إنتر بدي ماركو",
+          "summary": "سجل ماتيا ماريلو، الظهير الأيسر البالغ 18 عاماً في فريق إنتر، هدفاً في أول ظهور احترافي له، وتم قيده بالفعل في قائمة النادي لخوض دوري أبطال أوروبا.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.calciomio.fr/buteur-des-son-tout-premier-match-chez-les-pros-et-deja-inscrit-sur-la-liste-de-la-ligue-des-champions-a-18-ans-ce-gaucher-rappelle-dimarco-a-toute-linter-id-179693",
@@ -2111,7 +2176,12 @@
           "url": "https://www.calciomio.fr/buteur-des-son-tout-premier-match-chez-les-pros-et-deja-inscrit-sur-la-liste-de-la-ligue-des-champions-a-18-ans-ce-gaucher-rappelle-dimarco-a-toute-linter-id-179693"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6f47acb8a000",
@@ -2205,7 +2275,12 @@
           "url": "https://www.fourfourtwo.com/transfer/chelsea-had-a-good-transfer-window-but-have-left-themselves-short-in-a-key-position-clinton-morrison-assesses-the-most-dramatic-transfer-deadline-day-in-years"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "673d0dcda519",
@@ -2257,7 +2332,12 @@
           "url": "https://www.sportschau.de/live-und-ergebnisse/konferenz/ac3571/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3dcce776bbbf",
@@ -2266,23 +2346,27 @@
       "i18n": {
         "es": {
           "title": "Así está redactada la primera tarjeta amarilla de Mourinho en LaLiga",
-          "summary": "El polémico Betis- Real Madrid del viernes en el Estadio de la Cartuja, además de las acciones polémicas en los instantes finales de encuentro, nos dejó minutos ante s la primera amonestación de José Mourinho en su regreso a LaLiga española.",
-          "needs_translation": false
+          "summary": "José Mourinho recibió su primera tarjeta amarilla tras su regreso a LaLiga durante el encuentro entre el Betis y el Real Madrid en el Estadio de la Cartuja.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Así está redactada la primera tarjeta amarilla de Mourinho en LaLiga",
-          "summary": "El polémico Betis- Real Madrid del viernes en el Estadio de la Cartuja, además de las acciones polémicas en los instantes finales de encuentro, nos dejó minutos ante s la primera amonestación de José Mourinho en su regreso a LaLiga española.",
-          "needs_translation": true
+          "title": "How Mourinho's first yellow card in LaLiga was recorded",
+          "summary": "José Mourinho received his first yellow card since returning to LaLiga during the match between Betis and Real Madrid at the Estadio de la Cartuja.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Así está redactada la primera tarjeta amarilla de Mourinho en LaLiga",
-          "summary": "El polémico Betis- Real Madrid del viernes en el Estadio de la Cartuja, además de las acciones polémicas en los instantes finales de encuentro, nos dejó minutos ante s la primera amonestación de José Mourinho en su regreso a LaLiga española.",
-          "needs_translation": true
+          "title": "Voici comment est rédigé le premier carton jaune de Mourinho en LaLiga",
+          "summary": "José Mourinho a écopé de son premier carton jaune depuis son retour en LaLiga lors du match entre Le Real Betis et le Real Madrid disputé à l'Estadio de la Cartuja.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Así está redactada la primera tarjeta amarilla de Mourinho en LaLiga",
-          "summary": "El polémico Betis- Real Madrid del viernes en el Estadio de la Cartuja, además de las acciones polémicas en los instantes finales de encuentro, nos dejó minutos ante s la primera amonestación de José Mourinho en su regreso a LaLiga española.",
-          "needs_translation": true
+          "title": "تفاصيل تقرير أول بطاقة صفراء لمورينيو في الدوري الإسباني",
+          "summary": "تلقى المدرب جوزيه مورينيو أول بطاقة صفراء له منذ عودته إلى الدوري الإسباني، وذلك خلال مواجهة ريال بيتيس وريال مدريد على ملعب لا كارتوخا.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/20260905/1004223503/asi-redactada-primera-tarjeta-amarilla-mourinho-laliga.html",
@@ -2304,7 +2388,12 @@
           "url": "https://www.mundodeportivo.com/futbol/20260905/1004223503/asi-redactada-primera-tarjeta-amarilla-mourinho-laliga.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5239e834c5a7",
