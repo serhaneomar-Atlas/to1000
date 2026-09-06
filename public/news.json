@@ -17,32 +17,33 @@
       "i18n": {
         "de": {
           "title": "Live hören: Eintracht Frankfurt gegen FC Augsburg - Bundesliga",
-          "summary": "2. Spieltag: Anpfiff des Spiels ist am 06.09.2026 um 17:30 Uhr.",
-          "needs_translation": false
+          "summary": "Eintracht Frankfurt trifft am 2. Spieltag der Bundesliga auf den FC Augsburg. Der Anpfiff der Partie erfolgt am 06.09.2026 um 17:30 Uhr.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "Listen live: Eintracht Frankfurt vs FC Augsburg - Bundesliga",
-          "summary": "Matchday 2: The match kicks off on 06.09.2026 at 17:30.",
+          "summary": "Eintracht Frankfurt face FC Augsburg on matchday 2 of the Bundesliga. The match kicks off on September 6, 2026, at 17:30.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Écouter en direct : Eintracht Francfort contre FC Augsburg - Bundesliga",
-          "summary": "2e journée : le coup d'envoi du match est donné le 06/09/2026 à 17h30.",
+          "title": "Écouter en direct : Eintracht Frankfurt contre FC Augsburg - Bundesliga",
+          "summary": "Eintracht Frankfurt affronte le FC Augsburg dans le cadre de la 2e journée de Bundesliga. Le coup d'envoi est programmé le 6 septembre 2026 à 17h30.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Escuchar en directo: Eintracht Frankfurt vs FC Augsburg - Bundesliga",
-          "summary": "2ª jornada: El pitido inicial del partido es el 06/09/2026 a las 17:30 h.",
+          "title": "Escuchar en directo: Eintracht Frankfurt contra FC Augsburg - Bundesliga",
+          "summary": "El Eintracht Frankfurt se enfrenta al FC Augsburg en la 2.ª jornada de la Bundesliga. El inicio del encuentro está fijado para el 6 de septiembre de 2026 a las 17:30.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "استمع مباشرة: آينتراخت فرانكفورت ضد إف سي أوغسبورغ - الدوري الألماني",
-          "summary": "يوم المباراة 2: تنطلق المباراة في 06.09.2026 الساعة 17:30.",
+          "title": "استمع مباشرة: آينتراخت فرانكفورت ضد أوغسبورغ - الدوري الألماني",
+          "summary": "يلتقي آينتراخت فرانكفورت مع أوغسبورغ في الجولة الثانية من الدوري الألماني، وتنطلق المباراة يوم 6 سبتمبر 2026 في تمام الساعة 17:30.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga/eintracht-frankfurt-gegen-fc-augsburg,audiostream-eintracht-frankfurt-gegen-fc-augsburg-108.html",
@@ -70,7 +71,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/hamburger-sv-gegen-1-fsv-mainz-05,audiostream-hamburger-sv-gegen-1-fsv-mainz-05-102.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ab0c2b8529f0",
@@ -344,7 +350,12 @@
           "url": "https://www.lefigaro.fr/sports/football/angleterre/arsenal-chelsea-le-derby-qui-peut-rebattre-les-cartes-a-londres-20260906"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "022e40276714",
@@ -444,7 +455,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-plate-independiente-rivadavia-torneo-clausura-ponzio-monumental_0_mGtzA2fpmo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ccf7cf1a147c",
@@ -700,7 +716,12 @@
           "url": "https://africatopsports.com/football/coupe-du-monde-feminine-u20-ou-suivre-en-direct-le-match-japon-vs-nouvelle-zelande/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "beef052fb315",
@@ -756,7 +777,12 @@
           "url": "https://www.kicker.de/wiegert-warnt-aufsteiger-der-naechste-dicke-brocken-1250179/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "74407493e45f",
@@ -906,7 +932,12 @@
           "url": "https://africatopsports.com/football/coupe-du-monde-feminine-u20-japon-vs-nouvelle-zelande-historiques-des-confrontations/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "891acfa9594b",
@@ -965,26 +996,27 @@
       "i18n": {
         "es": {
           "title": "Mou, al borde de su primera crisis",
-          "summary": "Pronto, muy pronto, han comenzado los problemas en el Real Madrid (es decir, las derrotas) y lo cierto es que lejos de tranquilizarse el panorama para los de Mourinho en los próximos días, la realidad es que se complica con el estreno el próximo martes de la Champions, la…",
-          "needs_translation": false
+          "summary": "El Real Madrid afronta un inicio de temporada complicado tras cosechar sus primeras derrotas. La presión aumenta sobre Mourinho ante el inminente debut del equipo en la Champions el próximo martes.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mou, on the verge of its first crisis",
-          "summary": "Soon, very soon, the problems have begun at Real Madrid (that is, the defeats) and the truth is that far from reassuring the panorama for those of Mourinho in the coming days, the reality is that it is complicated by the premiere next Tuesday of the Champions League, the...",
+          "title": "Mou on the brink of his first crisis",
+          "summary": "Real Madrid are facing early trouble following their first defeats of the season. Pressure is mounting on Mourinho just ahead of the team's Champions League debut next Tuesday.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Mou, au bord de sa première crise",
-          "summary": "Bientôt, très bientôt, les problèmes ont commencé au Real Madrid (c'est-à-dire les défaites) et la vérité est que loin de rassurer le panorama pour ceux de Mourinho dans les prochains jours, la réalité est que cela se complique avec la première mardi prochain de la Ligue des Champions, la...",
+          "title": "Mou au bord de sa première crise",
+          "summary": "Le Real Madrid traverse des difficultés précoces après avoir concédé ses premières défaites. La situation met Mourinho sous pression juste avant les débuts de son équipe en Champions mardi prochain.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "وزارة الشئون الاجتماعية، على شفا أزمتها الأولى",
-          "summary": "قريبا، قريبا جدا، بدأت المشاكل في ريال مدريد (أي الهزائم) والحقيقة هي أنه بعيدا عن طمأنة البانوراما لأولئك من مورينيو في الأيام المقبلة، والحقيقة هي أن الأمر معقد بسبب العرض الأول يوم الثلاثاء المقبل من دوري أبطال أوروبا، و...",
+          "title": "مورينيو على حافة أزمته الأولى",
+          "summary": "يعاني ريال مدريد من تعثر مبكر بعد تعرضه للهزائم، مما يضع المدرب مورينيو تحت ضغوط متزايدة قبيل انطلاق مشوار الفريق في دوري أبطال أوروبا يوم الثلاثاء المقبل.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260906/1004223879/mou-borde-primera-crisis.html",
@@ -1006,7 +1038,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260906/1004223879/mou-borde-primera-crisis.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "78f3e0162456",
@@ -1056,7 +1093,12 @@
           "url": "https://africatopsports.com/football/coupe-du-monde-feminine-u20-france-coree-du-sud-les-bleuettes-veulent-reaffirmer-leur-statut/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "725e0ad6ae73",
@@ -1105,7 +1147,12 @@
           "url": "https://africatopsports.com/football/coupe-du-monde-feminine-u20-equateur-ghana-les-black-princesses-entrent-en-scene/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "995ea8818feb",
@@ -1114,23 +1161,27 @@
       "i18n": {
         "fr": {
           "title": "Ligue des champions CAF : Colombe Sportive – Stade Malien, jour de match aller",
-          "summary": "L'équipe camerounaise de la Colombe Sportive du Dja-et-Lobo reçoit les Maliens du Stade Malien lors du premier tour préliminaire de la Ligue des champions de la CAF.",
-          "needs_translation": false
+          "summary": "La Colombe Sportive du Dja-et-Lobo accueille le Stade Malien lors du match aller du premier tour préliminaire de la Ligue des champions de la CAF.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Ligue des champions CAF : Colombe Sportive – Stade Malien, jour de match aller",
-          "summary": "L'équipe camerounaise de la Colombe Sportive du Dja-et-Lobo reçoit les Maliens du Stade Malien lors du premier tour préliminaire de la Ligue des champions de la CAF.",
-          "needs_translation": true
+          "title": "CAF Champions League: Colombe Sportive – Stade Malien, first leg matchday",
+          "summary": "Cameroon's Colombe Sportive du Dja-et-Lobo hosts Mali's Stade Malien in the first leg of the CAF Champions League first preliminary round.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ligue des champions CAF : Colombe Sportive – Stade Malien, jour de match aller",
-          "summary": "L'équipe camerounaise de la Colombe Sportive du Dja-et-Lobo reçoit les Maliens du Stade Malien lors du premier tour préliminaire de la Ligue des champions de la CAF.",
-          "needs_translation": true
+          "title": "Liga de Campeones de la CAF: Colombe Sportive – Stade Malien, día de partido de ida",
+          "summary": "El equipo camerunés Colombe Sportive del Dja-et-Lobo recibe al Stade Malien en la ida de la primera ronda preliminar de la Liga de Campeones de la CAF.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Ligue des champions CAF : Colombe Sportive – Stade Malien, jour de match aller",
-          "summary": "L'équipe camerounaise de la Colombe Sportive du Dja-et-Lobo reçoit les Maliens du Stade Malien lors du premier tour préliminaire de la Ligue des champions de la CAF.",
-          "needs_translation": true
+          "title": "دوري أبطال إفريقيا: كولومب سبورتيف – الملعب المالي، يوم مباراة الذهاب",
+          "summary": "يستضيف نادي كولومب سبورتيف دو جا إي لوبو الكاميروني فريق الملعب المالي في مباراة ذهاب الدور التمهيدي الأول لدوري أبطال إفريقيا.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football/ligue-des-champions-caf-colombe-sportive-stade-malien-jour-de-match-aller/",
@@ -1158,7 +1209,12 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-caf-ou-suivre-colombe-sportive-stade-malien-en-direct/"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "080ea1eb393a",
@@ -1205,7 +1261,12 @@
           "url": "https://africatopsports.com/football/coupe-du-monde-feminine-u20-ou-suivre-equateur-ghana-en-direct/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "56b6ae67d44f",
@@ -1398,7 +1459,12 @@
           "url": "https://www.kicker.de/paderborn-zeigt-fortschritte-kettemanns-hoffnungsschimmer-fuer-die-zukunft-1250146/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ab4de7acbe8b",
@@ -1595,23 +1661,27 @@
       "i18n": {
         "es": {
           "title": "Esperando a Julián: \"De momento, va a estar todo el año con nosotros, le necesitamos\"",
-          "summary": "El partido de la cuarta jornada de LaLiga del Atlético de Madrid ante el Athletic Club devolvió este pasado sábado 5 de agosto, a la competición a Julián Alvarez.",
-          "needs_translation": false
+          "summary": "Julián Alvarez regresó a la competición con el Atlético de Madrid frente al Athletic Club en la cuarta jornada de LaLiga. El club confirmó que cuenta con él para toda la temporada.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Esperando a Julián: \"De momento, va a estar todo el año con nosotros, le necesitamos\"",
-          "summary": "El partido de la cuarta jornada de LaLiga del Atlético de Madrid ante el Athletic Club devolvió este pasado sábado 5 de agosto, a la competición a Julián Alvarez.",
-          "needs_translation": true
+          "title": "Waiting for Julián: \"For now, he's going to be with us all year, we need him\"",
+          "summary": "Julián Alvarez returned to competition for Atlético de Madrid against Athletic Club in matchday 4 of LaLiga, with the club confirming he remains an essential part of the squad for the season.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Esperando a Julián: \"De momento, va a estar todo el año con nosotros, le necesitamos\"",
-          "summary": "El partido de la cuarta jornada de LaLiga del Atlético de Madrid ante el Athletic Club devolvió este pasado sábado 5 de agosto, a la competición a Julián Alvarez.",
-          "needs_translation": true
+          "title": "En attendant Julián : « Pour le moment, il va rester toute l'année avec nous, nous avons besoin de lui »",
+          "summary": "Julián Alvarez a fait son retour à la compétition avec l'Atlético de Madrid contre l'Athletic Club lors de la 4e journée de LaLiga. Le club compte sur sa présence pour toute la saison.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Esperando a Julián: \"De momento, va a estar todo el año con nosotros, le necesitamos\"",
-          "summary": "El partido de la cuarta jornada de LaLiga del Atlético de Madrid ante el Athletic Club devolvió este pasado sábado 5 de agosto, a la competición a Julián Alvarez.",
-          "needs_translation": true
+          "title": "في انتظار خوليان: \"حالياً، سيبقى معنا طوال العام، نحن بحاجة إليه\"",
+          "summary": "عقد خوليان ألفاريز عودته للمنافسات مع أتلتيكو مدريد أمام أتلتيك بيلباو في الجولة الرابعة من الدوري الإسباني، مع تأكيد النادي استمراره طوال الموسم لحاجته لخدماته.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260906/1004223882/esperando-julian-momento-ano-le-necesitamos.html",
@@ -1633,7 +1703,12 @@
           "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260906/1004223882/esperando-julian-momento-ano-le-necesitamos.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "1f8dd33adc7c",
@@ -1642,23 +1717,27 @@
       "i18n": {
         "es": {
           "title": "Partidos de HOY, domingo 6 de septiembre: agenda, horario y por dónde ver fútbol EN VIVO",
-          "summary": "Se juega el clásico rosarino entre Central y Newell's; River, Independiente y Racing salen a la cancha en el Torneo Clausura, sigue la actividad en las principales ligas de Europa y mucho más. ¡Mirá!",
-          "needs_translation": false
+          "summary": "El clásico rosarino entre Central y Newell's encabeza la jornada de fútbol, que incluye la presentación de River, Independiente y Racing en el Torneo Clausura y actividad en Europa.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Partidos de HOY, domingo 6 de septiembre: agenda, horario y por dónde ver fútbol EN VIVO",
-          "summary": "Se juega el clásico rosarino entre Central y Newell's; River, Independiente y Racing salen a la cancha en el Torneo Clausura, sigue la actividad en las principales ligas de Europa y mucho más. ¡Mirá!",
-          "needs_translation": true
+          "title": "TODAY's matches, Sunday, September 6: schedule, times, and where to watch football LIVE",
+          "summary": "The Rosario derby between Central and Newell's headlines Sunday's fixtures, alongside Torneo Clausura matches for River, Independiente, and Racing, as well as league action across Europa.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Partidos de HOY, domingo 6 de septiembre: agenda, horario y por dónde ver fútbol EN VIVO",
-          "summary": "Se juega el clásico rosarino entre Central y Newell's; River, Independiente y Racing salen a la cancha en el Torneo Clausura, sigue la actividad en las principales ligas de Europa y mucho más. ¡Mirá!",
-          "needs_translation": true
+          "title": "Matchs d'aujourd'hui, dimanche 6 septembre : programme, horaires et diffusion en direct",
+          "summary": "Le derby de Rosario oppose Central à Newell's ce dimanche. River, Independiente et Racing disputent également leurs rencontres en Torneo Clausura, en parallèle des championnats en Europa.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Partidos de HOY, domingo 6 de septiembre: agenda, horario y por dónde ver fútbol EN VIVO",
-          "summary": "Se juega el clásico rosarino entre Central y Newell's; River, Independiente y Racing salen a la cancha en el Torneo Clausura, sigue la actividad en las principales ligas de Europa y mucho más. ¡Mirá!",
-          "needs_translation": true
+          "title": "مباريات اليوم الأحد 6 سبتمبر: جدول المواعيد والقنوات الناقلة للبث المباشر",
+          "summary": "يشهد اليوم ديربي روساريو بين روساريو سنترال ونيولز أولد بويز، إلى جانب مواجهات ريفر بليت وإنديبندينتي وراسينغ في الدوري الأرجنتيني واستمرار المنافسات في مختلف الملاعب الأوروبية.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/agenda-deportiva/partidos-hoy-domingo-6-septiembre-horario-ver-futbol-vivo-tv-online-formaciones_0_J7vPs2Uv2m.html",
@@ -1680,7 +1759,12 @@
           "url": "https://www.ole.com.ar/agenda-deportiva/partidos-hoy-domingo-6-septiembre-horario-ver-futbol-vivo-tv-online-formaciones_0_J7vPs2Uv2m.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c8aa60adac9c",
@@ -1736,23 +1820,27 @@
       "i18n": {
         "fr": {
           "title": "Foot : Luka Modric n'en a pas fini avec la Croatie",
-          "summary": "Le capitaine croate Luka Modric, qui fêtera ses 41 ans ce mercredi, poursuivra son aventure avec la sélection nationale malgré les spéculations sur une éventuelle retraite internationale après la Coupe du monde.",
-          "needs_translation": false
+          "summary": "Le capitaine Luka Modric continuera de représenter la Croatie malgré les rumeurs de retraite internationale à l'approche de ses 41 ans.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Foot : Luka Modric n'en a pas fini avec la Croatie",
-          "summary": "Le capitaine croate Luka Modric, qui fêtera ses 41 ans ce mercredi, poursuivra son aventure avec la sélection nationale malgré les spéculations sur une éventuelle retraite internationale après la Coupe du monde.",
-          "needs_translation": true
+          "title": "Football: Luka Modric is not done with Croatia",
+          "summary": "Croatia captain Luka Modric will continue playing for the national team despite retirement speculation as he approaches his 41st birthday.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Foot : Luka Modric n'en a pas fini avec la Croatie",
-          "summary": "Le capitaine croate Luka Modric, qui fêtera ses 41 ans ce mercredi, poursuivra son aventure avec la sélection nationale malgré les spéculations sur une éventuelle retraite internationale après la Coupe du monde.",
-          "needs_translation": true
+          "title": "Fútbol: Luka Modric no ha terminado con Croacia",
+          "summary": "El capitán Luka Modric continuará defendiendo a la selección de Croacia a sus casi 41 años, disipando los rumores de una retirada internacional.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Foot : Luka Modric n'en a pas fini avec la Croatie",
-          "summary": "Le capitaine croate Luka Modric, qui fêtera ses 41 ans ce mercredi, poursuivra son aventure avec la sélection nationale malgré les spéculations sur une éventuelle retraite internationale après la Coupe du monde.",
-          "needs_translation": true
+          "title": "كرة القدم: لوكا مودريتش لم ينهِ مسيرته مع كرواتيا بعد",
+          "summary": "سيواصل قائد منتخب كرواتيا لوكا مودريتش مسيرته الدولية رغم التكهنات باعتزاله، وذلك مع اقترابه من بلوغ عامه الـ41.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/La-retraite-internationale-attendra-luka-modric-est-toujours-disponible-pour-jouer-avec-la-croatie/1716427#at_medium=RSS_feeds",
@@ -1780,7 +1868,12 @@
           "url": "https://www.lefigaro.fr/sports/football/foot-luka-modric-n-en-a-pas-fini-avec-la-croatie-20260906"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "000302c6f843",
@@ -1832,7 +1925,12 @@
           "url": "https://www.kicker.de/warum-bayerns-gegner-genau-gleich-klingen-und-das-etwas-gutes-ist-1250131/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a78cff9b8ce4",
@@ -1879,7 +1977,12 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20260906/1004223874/reto-psg-luis-enrique-desafio-unico.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2464dad5428b",
@@ -1987,23 +2090,27 @@
       "i18n": {
         "fr": {
           "title": "Antoine Griezmann encore décisif avec Orlando, Breel Embolo frustre l'Inter Miami",
-          "summary": "Antoine Griezmann a marqué le seul but de la victoire d'Orlando contre San Diego (1-0). Auteur de quatre buts lors de ses trois derniers matches, il ne s'arrête plus.",
-          "needs_translation": false
+          "summary": "Antoine Griezmann a inscrit l'unique but de la victoire d'Orlando face à San Diego (1-0). L'attaquant français totalise désormais quatre buts lors de ses trois dernières rencontres.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Antoine Griezmann encore décisif avec Orlando, Breel Embolo frustre l'Inter Miami",
-          "summary": "Antoine Griezmann a marqué le seul but de la victoire d'Orlando contre San Diego (1-0). Auteur de quatre buts lors de ses trois derniers matches, il ne s'arrête plus.",
-          "needs_translation": true
+          "title": "Antoine Griezmann decisive again for Orlando, Breel Embolo frustrates Inter Miami",
+          "summary": "Antoine Griezmann scored the only goal in Orlando's 1-0 victory over San Diego. The forward has now found the net four times in his last three matches.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Antoine Griezmann encore décisif avec Orlando, Breel Embolo frustre l'Inter Miami",
-          "summary": "Antoine Griezmann a marqué le seul but de la victoire d'Orlando contre San Diego (1-0). Auteur de quatre buts lors de ses trois derniers matches, il ne s'arrête plus.",
-          "needs_translation": true
+          "title": "Antoine Griezmann vuelve a ser decisivo con Orlando, Breel Embolo frustra a Inter Miami",
+          "summary": "Antoine Griezmann anotó el único gol del triunfo de Orlando ante San Diego (1-0). El delantero suma cuatro tantos en sus últimos tres partidos.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Antoine Griezmann encore décisif avec Orlando, Breel Embolo frustre l'Inter Miami",
-          "summary": "Antoine Griezmann a marqué le seul but de la victoire d'Orlando contre San Diego (1-0). Auteur de quatre buts lors de ses trois derniers matches, il ne s'arrête plus.",
-          "needs_translation": true
+          "title": "أنطوان غريزمان يواصل التألق مع أورلاندو وبريل إمبولو يحبط إنتر ميامي",
+          "summary": "سجل أنطوان غريزمان هدف الفوز الوحيد لأورلاندو أمام سان دييغو (1-0). ورفع المهاجم الفرنسي رصيده إلى أربعة أهداف في آخر ثلاث مباريات.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Antoine-griezmann-poursuit-sa-serie-en-mls-deja-auteur-de-quatre-buts/1716561#at_medium=RSS_feeds",
@@ -2025,7 +2132,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Antoine-griezmann-poursuit-sa-serie-en-mls-deja-auteur-de-quatre-buts/1716561#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ba6ee619b220",
@@ -2221,7 +2333,12 @@
           "url": "https://www.lefigaro.fr/sports/rugby/top-14/je-vais-me-battre-pour-aller-a-la-coupe-du-monde-avant-d-affronter-toulouse-le-rochelais-gregory-alldritt-affiche-sa-determination-20260906"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2830d7dcfea8",
@@ -2268,7 +2385,12 @@
           "url": "https://www.mundodeportivo.com/futbol/betis/20260906/1004223852/asociacion-transparencia-democracia-deporte-denuncia-youtuber-inaki-angulo-insultos-xenofobos-hector-bellerin.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d588c385b316",
@@ -2456,7 +2578,12 @@
           "url": "https://www.calciomio.fr/on-ne-peut-pas-prendre-trois-buts-en-une-demi-heure-le-napoli-dallegri-secroule-a-san-siro-ou-linter-a-tout-renverse-dans-les-arrets-de-jeu-id-179723"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "099e5031d6d3",
