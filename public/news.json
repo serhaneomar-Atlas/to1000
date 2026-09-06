@@ -16,33 +16,34 @@
       "summary": "In der Serie A ist gleich am 3. Spieltag Spannung geboten.",
       "i18n": {
         "de": {
-          "title": "LIVE! Der Pfosten verhindert die Juve-Führung - Woltemade noch auf der Bank",
-          "summary": "In der Serie A ist gleich am 3. Spieltag Spannung geboten.",
-          "needs_translation": false
+          "title": "Der Pfosten verhindert die Führung von Juventus - Woltemade zunächst auf der Bank",
+          "summary": "Am 3. Spieltag der Serie A verhinderte das Aluminium die Führung für Juventus. Nick Woltemade begann die Partie auf der Ersatzbank.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "LIVE! The Post Prevents Juve Leadership - Woltemade Still on the Bench",
-          "summary": "In Serie A, there is excitement on Matchday 3.",
+          "title": "The post denies Juventus the lead - Woltemade on the bench",
+          "summary": "On Matchday 3 of Serie A, the woodwork prevented Juventus from taking the lead. Nick Woltemade started the match on the bench.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "LIVE ! Le poteau empêche le leadership de la Juve - Woltemade toujours sur le banc",
-          "summary": "En Serie A, la tension est de mise dès la 3ème journée.",
+          "title": "Le poteau prive la Juventus de l'ouverture du score, Woltemade sur le banc",
+          "summary": "Lors de la 3e journée de Serie A, le poteau a empêché la Juventus de prendre l'avantage. Nick Woltemade a débuté la rencontre sur le banc.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "¡EN VIVO! El poste impide el liderato de la Juve - Woltemade todavía en el banquillo",
-          "summary": "En la Serie A, la emoción está garantizada desde la tercera jornada.",
+          "title": "El poste evita la ventaja de la Juventus y Woltemade inicia en el banquillo",
+          "summary": "En la jornada 3 de la Serie A, el poste evitó el gol de la Juventus. Nick Woltemade comenzó el encuentro entre los suplentes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباشر! The Post Prevents Juve Leadership - Woltemade Still on the Bench",
-          "summary": "في دوري الدرجة الأولى الإيطالي، هناك إثارة في المباراة 3.",
+          "title": "القائم يحرم يوفنتوس من التقدم وفولتماده على مقاعد البدلاء",
+          "summary": "حرم القائم فريق يوفنتوس من افتتاح التسجيل في الجولة الثالثة من الدوري الإيطالي، بينما جلس اللاعب فولتماده على مقاعد البدلاء.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/juventus-gegen-milan-2026-serie-a-5204340/spielbericht#omrss",
@@ -64,7 +65,12 @@
           "url": "https://www.kicker.de/juventus-gegen-milan-2026-serie-a-5204340/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a3713dadd89c",
@@ -220,7 +226,12 @@
           "url": "https://www.kicker.de/vogel-vergleicht-den-fch-mit-atletico-madrid-1250342/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "52e2dda31f04",
@@ -532,7 +543,12 @@
           "url": "https://www.bbc.co.uk/iplayer/episode/l0058t4t?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b210b3474b99",
@@ -690,27 +706,28 @@
       "summary": "El capitán de Boca fue al banco ante Gimnasia, pero no sumó minutos. Después del partido, el Vasco contó cómo lo ve de cara al partido de la Sudamericana.",
       "i18n": {
         "es": {
-          "title": "Qué dijo Arruabarrena sobre la recuperación de Paredes: ¿juega con San Pablo?",
-          "summary": "El capitán de Boca fue al banco ante Gimnasia, pero no sumó minutos. Después del partido, el Vasco contó cómo lo ve de cara al partido de la Sudamericana.",
-          "needs_translation": false
+          "title": "Qué dijo Arruabarrena sobre la recuperación de Paredes y su presencia ante San Pablo",
+          "summary": "Tras dejar a Paredes en el banco ante Gimnasia sin minutos, Arruabarrena evaluó la evolución física del capitán de Boca de cara al partido de Sudamericana contra San Pablo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "What Arruabarrena said about the recovery of Paredes: does he play with San Pablo?",
-          "summary": "The captain of Boca went to the bench against Gimnasia, but did not add minutes. After the match, the Basque told how he sees him facing the South American game.",
+          "title": "What Arruabarrena said about Paredes' recovery ahead of San Pablo clash",
+          "summary": "After Boca captain Paredes remained an unused substitute against Gimnasia, Arruabarrena assessed the midfielder's condition ahead of their Sudamericana fixture against San Pablo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Qu'a dit Arruabarrena à propos de la récupération de Paredes : joue-t-il avec San Pablo ?",
-          "summary": "Le capitaine de Boca est allé sur le banc devant Gimnasia, mais il n'a pas ajouté de minutes. Après le match, le Basque a raconté comment il le voyait face au match sud-américain.",
+          "title": "Ce qu'a dit Arruabarrena sur la récupération de Paredes avant d'affronter San Pablo",
+          "summary": "Resté sur le banc sans entrer en jeu contre Gimnasia, le capitaine de Boca, Paredes, a vu son état physique évalué par Arruabarrena en vue du match de Sudamericana contre San Pablo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ماذا قال أروابارينا عن تعافي باريديس: هل يلعب مع سان بابلو ؟",
-          "summary": "ذهب قائد بوكا إلى مقاعد البدلاء ضد جيمناسيا، لكنه لم يضيف دقائق. بعد المباراة، روى الباسك كيف يراه يواجه مباراة أمريكا الجنوبية.",
+          "title": "ماذا قال أروابارينا عن تعافي باريديس وموقفه من مواجهة ساو باولو",
+          "summary": "بعد جلوس قائد بوكا جونيورز باريديس بديلاً أمام خيمناسيا دون مشاركة، قيّم المدرب أروابارينا جاهزيته البدنية قبل خوض مباراة سودامريكانا أمام ساو باولو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/leandro-paredes-lesion-partido-boca-san-pablo-copa-sudamericana-dijo-vasco-arruabarrena_0_O5XtjuU2SP.html",
@@ -732,7 +749,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/leandro-paredes-lesion-partido-boca-san-pablo-copa-sudamericana-dijo-vasco-arruabarrena_0_O5XtjuU2SP.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ed8c162c8acc",
@@ -741,26 +763,27 @@
       "i18n": {
         "es": {
           "title": "4-5: Remontada incompleta del Barça en el Palau",
-          "summary": "La Supercopa de España de fútbol sala se le escapó al Barcelona en el Palau Blaugrana pese a que en el segundo tiempo llegó a equilibrar un marcador con dos goles de desventaja.",
-          "needs_translation": false
+          "summary": "El Barça cayó 4-5 en el Palau Blaugrana y perdió La Supercopa de España de fútbol sala, a pesar de haber remontado dos goles de desventaja en la segunda mitad.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "4-5: Barça's incomplete comeback at the Palau",
-          "summary": "The Spanish futsal Super Cup eluded Barcelona at the Palau Blaugrana despite the fact that in the second half he managed to balance a score with two goals down.",
+          "title": "4-5: Incomplete Remontada for Barça at the Palau",
+          "summary": "Barça lost 4-5 at the Palau Blaugrana and missed out on La Supercopa de España de fútbol sala, despite erasing a two-goal deficit in the second half.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "4-5 : Remontée incomplète du Barça au Palau",
-          "summary": "La Supercoupe d'Espagne de futsal a échappé à Barcelone au Palau Blaugrana bien qu'en deuxième période, il ait réussi à équilibrer un score avec deux buts de retard.",
+          "title": "4-5 : Remontada incomplète du Barça au Palau",
+          "summary": "Le Barça s'est incliné 4-5 au Palau Blaugrana et a perdu La Supercopa de España de futsal, malgré avoir comblé un retard de deux buts en seconde période.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "4-5: عودة برشلونة غير المكتملة إلى بالاو",
-          "summary": "أفلت كأس السوبر الإسباني لكرة الصالات من برشلونة في بالاو بلوجرانا على الرغم من حقيقة أنه في الشوط الثاني تمكن من موازنة النتيجة مع هدفين أسفل.",
+          "title": "4-5: ريمونتادا غير مكتملة لبرشلونة في البالاو",
+          "summary": "خسر برشلونة بنتيجة 4-5 في بالاو بلوغرانا ليُفرّط في كأس السوبر الإسباني لكرة الصالات، رغم تعديله النتيجة في الشوط الثاني بعد التأخر بفارق هدفين.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260906/1004224081/remontada-incompleta-barca-palau.html",
@@ -782,7 +805,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260906/1004224081/remontada-incompleta-barca-palau.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "38bfb63f519d",
@@ -1003,26 +1031,27 @@
       "i18n": {
         "es": {
           "title": "2-0: El Castellón se aúpa al liderato ante un Albacete que sigue a cero",
-          "summary": "El Castellón se impuso en una gran segunda parte al Albacete , en un partido en el que los manchegos tuvieron oportunidades para adelantarse en el marcador pero perdonaron ante el conjunto local, que se posiciona como líder en solitario de la Liga Hypermotion .",
-          "needs_translation": false
+          "summary": "El Castellón se impuso por 2-0 al Albacete tras una gran segunda parte y se colocó como líder en solitario de la Liga Hypermotion.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "2-0: Castellón joins the lead against an Albacete that remains at zero",
-          "summary": "Castellón beat Albacete in a great second half, in a match in which the Manchegos had opportunities to advance on the scoreboard but forgave the local team, which is positioned as a solo leader of the Hypermotion League.",
+          "title": "2-0: Castellón climb to the top against an Albacete side still without a point",
+          "summary": "Castellón beat Albacete 2-0 following a strong second half to take sole possession of top spot in the Liga Hypermotion.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "2-0 : Castellón prend la tête face à Albacete qui suit à zéro",
-          "summary": "Castellón s'est imposé dans une grande deuxième partie face à Albacete , dans un match où les Manchegos ont eu l'occasion de prendre de l'avance sur le score mais ont pardonné à l'équipe locale, qui se positionne en tant que leader solitaire de la Ligue Hypermotion .",
+          "title": "2-0 : Castellón s'empare de la tête face à Albacete, toujours sans le moindre point",
+          "summary": "Grâce à une solide seconde période, Castellón s'est imposé 2-0 contre Albacete et s'est installé seul aux commandes de la Liga Hypermotion.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "2-0: ينضم كاستيلون إلى الصدارة ضد الباسيتي الذي لا يزال عند الصفر",
-          "summary": "فاز كاستيلون على الباسيتي في الشوط الثاني الرائع، في مباراة كان لدى مانشيغوس فيها فرص للتقدم على لوحة النتائج لكنه غفر للفريق المحلي، الذي تم وضعه كقائد منفرد لدوري Hypermotion .",
+          "title": "2-0: كاستيلون ينفرد بالصدارة أمام ألباسيتي المتعثر",
+          "summary": "تغلب كاستيلون على ألباسيتي بنتيجة 2-0 بفضل شوط ثانٍ مميز، لينفرد بصدارة دوري الدرجة الثانية الإسباني (لا ليغا هايبرموشن).",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/liga-segunda-division/20260906/1004224078/2-0-castellon-aupa-liderato-albacete-sigue-cero.html",
@@ -1044,7 +1073,12 @@
           "url": "https://www.mundodeportivo.com/futbol/liga-segunda-division/20260906/1004224078/2-0-castellon-aupa-liderato-albacete-sigue-cero.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 4,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4fd8ac482a52",
@@ -1053,26 +1087,27 @@
       "i18n": {
         "es": {
           "title": "El Elversberg pisa fuerte en su debut en la Bundesliga",
-          "summary": "El equipo más pequeño de la Bundesliga puede convertirse en la gran sensación de la temporada.",
-          "needs_translation": false
+          "summary": "El Elversberg debuta en la Bundesliga presentándose como una posible revelación de la temporada, pese a ser el club más modesto de la categoría.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Elversberg Treads Strong in Bundesliga Debut",
-          "summary": "The smallest team in the Bundesliga can become the big sensation of the season.",
+          "title": "Elversberg make a strong start on their Bundesliga debut",
+          "summary": "Despite being the smallest club in the Bundesliga, Elversberg have enjoyed an impressive debut and could establish themselves as the surprise package of the season.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Elversberg frappe fort lors de ses débuts en Bundesliga",
-          "summary": "La plus petite équipe de Bundesliga peut devenir la grande sensation de la saison.",
+          "title": "Elversberg frappe fort pour ses débuts en Bundesliga",
+          "summary": "Plus modeste club de Bundesliga, Elversberg réussit son entrée en matière et pourrait s'affirmer comme la révélation de la saison.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Elversberg Treads قوية في أول ظهور لها في الدوري الألماني",
-          "summary": "El equipo más pequeño de la Bundesliga puede convertirse en la gran sensación de la temporada.",
+          "title": "إلفرسبرغ يستهل مشواره بقوة في ظهوره الأول بالدوري الألماني",
+          "summary": "استهل نادي إلفرسبرغ، أصغر أندية الدوري الألماني، مشاركته الأولى بقوة، وسط توقعات بإمكانية بروزه كمفاجأة الموسم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/bundesliga/20260906/1004224058/elversberg.html",
@@ -1094,7 +1129,12 @@
           "url": "https://www.mundodeportivo.com/futbol/bundesliga/20260906/1004224058/elversberg.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "40d168bc0526",
@@ -1150,23 +1190,27 @@
       "i18n": {
         "es": {
           "title": "La crónica del Castellón-Albacete: Líderes y contentos (2-0)",
-          "summary": "Un gol de Camara, otro de Suero y otra portería a cero. El debut de Matías Orozco y una victoria albinegra.",
-          "needs_translation": false
+          "summary": "Castellón se impuso 2-0 al Albacete con goles de Camara y Suero, manteniendo su portería a cero para consolidar el liderato. El partido también dejó el debut de Matías Orozco.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "La crónica del Castellón-Albacete: Líderes y contentos (2-0)",
-          "summary": "Un gol de Camara, otro de Suero y otra portería a cero. El debut de Matías Orozco y una victoria albinegra.",
-          "needs_translation": true
+          "title": "Castellón-Albacete report: Leaders and satisfied (2-0)",
+          "summary": "Castellón defeated Albacete 2-0 with goals from Camara and Suero, keeping a clean sheet to consolidate the top spot. Matías Orozco also made his debut in the victory.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La crónica del Castellón-Albacete: Líderes y contentos (2-0)",
-          "summary": "Un gol de Camara, otro de Suero y otra portería a cero. El debut de Matías Orozco y una victoria albinegra.",
-          "needs_translation": true
+          "title": "Chronique du Castellón-Albacete : Leaders et satisfaits (2-0)",
+          "summary": "Castellón s'est imposé 2-0 face à Albacete grâce à des buts de Camara et Suero, préservant sa cage inviolée pour conforter sa place de leader. Matías Orozco a disputé ses premières minutes.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "La crónica del Castellón-Albacete: Líderes y contentos (2-0)",
-          "summary": "Un gol de Camara, otro de Suero y otra portería a cero. El debut de Matías Orozco y una victoria albinegra.",
-          "needs_translation": true
+          "title": "تقرير مباراة كاستيون وألباسيتي: في الصدارة بارتياح (2-0)",
+          "summary": "فاز كاستيون على ألباسيتي بهدفين دون رد أحرزهما كامارا وسويرو ليحافظ على نظافة شباكه وصدارة الترتيب، في لقاء شهد الظهور الأول للاعب ماتياس أوروزكو.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/cronica-castellon-albacete-lideres-contentos-134013682?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -1188,7 +1232,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/cronica-castellon-albacete-lideres-contentos-134013682?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f4fa7cd194ae",
@@ -1282,7 +1331,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260906/1004224076/xabi-alonso-perder-chelsea-duele.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "22bf6e5a149a",
@@ -1546,23 +1600,27 @@
       "i18n": {
         "en": {
           "title": "New contenders emerge on WSL return - but Man City start strong",
-          "summary": "The Women’s Super League returned this weekend and with it a host of new signings, improved squads and unexpected results.",
-          "needs_translation": false
+          "summary": "The Women’s Super League resumed this weekend with strengthened squads and surprising results, while Man City opened their campaign with a strong performance.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "New contenders emerge on WSL return - but Man City start strong",
-          "summary": "The Women’s Super League returned this weekend and with it a host of new signings, improved squads and unexpected results.",
-          "needs_translation": true
+          "title": "De nouveaux prétendants émergent pour le retour de la WSL, mais Man City démarre fort",
+          "summary": "La Women’s Super League a repris ce week-end avec des effectifs renforcés et des résultats inattendus, tandis que Man City a débuté sa saison avec solidité.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "New contenders emerge on WSL return - but Man City start strong",
-          "summary": "The Women’s Super League returned this weekend and with it a host of new signings, improved squads and unexpected results.",
-          "needs_translation": true
+          "title": "Surgen nuevos aspirantes en el regreso de la WSL, pero Man City empieza con fuerza",
+          "summary": "La Women’s Super League volvió este fin de semana con plantillas reforzadas y marcadores inesperados, mientras que Man City inició su campaña con un firme desempeño.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "New contenders emerge on WSL return - but Man City start strong",
-          "summary": "The Women’s Super League returned this weekend and with it a host of new signings, improved squads and unexpected results.",
-          "needs_translation": true
+          "title": "منافسات جدد يظهرن مع عودة دوري السوبر للسيدات - لكن مانشستر سيتي يبدأ بقوة",
+          "summary": "استُؤنف دوري السوبر للسيدات نهاية هذا الأسبوع وسط صفقات جديدة ونتائج غير متوقعة، في حين حقق فريق مانشستر سيتي انطلاقة قوية للموسم.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cj9x3wlg11po?at_medium=RSS&at_campaign=rss",
@@ -1584,7 +1642,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cj9x3wlg11po?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "02c7649dce3f",
@@ -1739,23 +1802,27 @@
       "i18n": {
         "es": {
           "title": "Volvió a ganar un challenger, subió 91 puestos y le dio una nueva copa al tenis argentino",
-          "summary": "El challenger 2 de Porto tuvo sabor a revancha para Facundo Mena, quien venía de perder una final una semana atrás y volvió a gritar campeón en la categoría después de dos años.",
-          "needs_translation": false
+          "summary": "Facundo Mena se consagró campeón del Challenger 2 de Porto tras dos años sin títulos en la categoría. Con este triunfo, el tenista argentino escaló 91 posiciones en el ranking.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Volvió a ganar un challenger, subió 91 puestos y le dio una nueva copa al tenis argentino",
-          "summary": "El challenger 2 de Porto tuvo sabor a revancha para Facundo Mena, quien venía de perder una final una semana atrás y volvió a gritar campeón en la categoría después de dos años.",
-          "needs_translation": true
+          "title": "He won a Challenger again, climbed 91 spots and gave Argentine tennis a new title",
+          "summary": "Facundo Mena won the Porto Challenger 2, securing his first title in the category in two years. The victory lifts the Argentine 91 places in the world rankings.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Volvió a ganar un challenger, subió 91 puestos y le dio una nueva copa al tenis argentino",
-          "summary": "El challenger 2 de Porto tuvo sabor a revancha para Facundo Mena, quien venía de perder una final una semana atrás y volvió a gritar campeón en la categoría después de dos años.",
-          "needs_translation": true
+          "title": "Il renoue avec la victoire en Challenger, grimpe de 91 places et offre un nouveau trophée au tennis argentin",
+          "summary": "Facundo Mena a remporté le Challenger 2 de Porto, décrochant son premier trophée dans la catégorie depuis deux ans. Ce sacre permet à l'Argentin de progresser de 91 places au classement.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Volvió a ganar un challenger, subió 91 puestos y le dio una nueva copa al tenis argentino",
-          "summary": "El challenger 2 de Porto tuvo sabor a revancha para Facundo Mena, quien venía de perder una final una semana atrás y volvió a gritar campeón en la categoría después de dos años.",
-          "needs_translation": true
+          "title": "يتوج بلقب تشالنجر مجدداً ويصعد 91 مركزاً ويهدي التنس الأرجنتيني لقباً جديداً",
+          "summary": "توج الأرجنتيني فاكوندو مينا بلقب بطولة بورتو 2 لفئة تشالنجر، محققاً لقبه الأول في هذه الفئة منذ عامين، ليصعد 91 مركزاً في التصنيف العالمي.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/tenis/volvio-ganar-challenger-subio-91-puestos-dio-nueva-copa-tenis-argentino-facundo-mena-portugal-porto-2_0_JpJdttJMzu.html",
@@ -1777,7 +1844,12 @@
           "url": "https://www.ole.com.ar/tenis/volvio-ganar-challenger-subio-91-puestos-dio-nueva-copa-tenis-argentino-facundo-mena-portugal-porto-2_0_JpJdttJMzu.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0d9e056726b6",
@@ -2214,23 +2286,27 @@
       "i18n": {
         "fr": {
           "title": "Ligue des champions CAF : nul entre Colombe Sportive et Stade Malien à l’aller",
-          "summary": "La Colombe Sportive et le Stade Malien se neutralisent sur un score de 0-0 au terme de ce premier tour préliminaire de la Ligue des champions de la CAF ce dimanche au Stade Ahmadou Ahidjo de Yaoundé.",
-          "needs_translation": false
+          "summary": "Colombe Sportive et Stade Malien se sont neutralisés (0-0) au Stade Ahmadou Ahidjo de Yaoundé, lors du match aller du premier tour préliminaire de la Ligue des champions de la CAF.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Ligue des champions CAF : nul entre Colombe Sportive et Stade Malien à l’aller",
-          "summary": "La Colombe Sportive et le Stade Malien se neutralisent sur un score de 0-0 au terme de ce premier tour préliminaire de la Ligue des champions de la CAF ce dimanche au Stade Ahmadou Ahidjo de Yaoundé.",
-          "needs_translation": true
+          "title": "CAF Champions League: Draw between Colombe Sportive and Stade Malien in first leg",
+          "summary": "Colombe Sportive and Stade Malien drew 0-0 at the Stade Ahmadou Ahidjo in Yaoundé during the first leg of the CAF Champions League first preliminary round.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ligue des champions CAF : nul entre Colombe Sportive et Stade Malien à l’aller",
-          "summary": "La Colombe Sportive et le Stade Malien se neutralisent sur un score de 0-0 au terme de ce premier tour préliminaire de la Ligue des champions de la CAF ce dimanche au Stade Ahmadou Ahidjo de Yaoundé.",
-          "needs_translation": true
+          "title": "Liga de Campeones de la CAF: empate entre Colombe Sportive y Stade Malien en la ida",
+          "summary": "Colombe Sportive y Stade Malien empataron 0-0 en el Stade Ahmadou Ahidjo de Yaoundé, en el partido de ida de la primera ronda preliminar de la Liga de Campeones de la CAF.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Ligue des champions CAF : nul entre Colombe Sportive et Stade Malien à l’aller",
-          "summary": "La Colombe Sportive et le Stade Malien se neutralisent sur un score de 0-0 au terme de ce premier tour préliminaire de la Ligue des champions de la CAF ce dimanche au Stade Ahmadou Ahidjo de Yaoundé.",
-          "needs_translation": true
+          "title": "دوري أبطال إفريقيا: تعادل سلبي بين كولومب سبورتيف والملعب المالي ذهاباً",
+          "summary": "تعادل كولومب سبورتيف مع الملعب المالي بنتيجة 0-0 على ملعب أحمدو أهيدجو في ياوندي، لحساب ذهاب الدور التمهيدي الأول من دوري أبطال إفريقيا.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football/ligue-des-champions-caf-nul-entre-colombe-sportive-et-stade-malien-a-laller/",
@@ -2252,7 +2328,12 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-caf-nul-entre-colombe-sportive-et-stade-malien-a-laller/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d2cf7bea4df5",
