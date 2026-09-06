@@ -167,26 +167,27 @@
       "i18n": {
         "es": {
           "title": "El día que Berti perdió una final histórica contra River",
-          "summary": "El actual entrenador de Independiente Rivadavia tiene un antecedente especial frente al Millonario.",
-          "needs_translation": false
+          "summary": "El actual entrenador de Independiente Rivadavia, Berti, cuenta con un antecedente especial frente a River tras haber perdido una histórica final contra el Millonario.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "The day Berti lost a historic final against River",
-          "summary": "The current coach of Independiente Rivadavia has a special background compared to the Millionaire.",
+          "summary": "Current Independiente Rivadavia coach Berti shares a notable history against River, having previously lost a historic final to the Millonario.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Le jour où Berti a perdu une finale historique contre River",
-          "summary": "L'entraîneur actuel d'Independiente Rivadavia a un antécédent spécial face au Millionnaire.",
+          "summary": "L'actuel entraîneur d'Independiente Rivadavia, Berti, possède un passif marquant face à River après avoir perdu une finale historique contre le Millonario.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "اليوم الذي خسر فيه بيرتي نهائيًا تاريخيًا ضد ريفر",
-          "summary": "يتمتع المدرب الحالي لـ Independiente Rivadavia بخلفية خاصة مقارنة بالمليونير.",
+          "title": "اليوم الذي خسر فيه بيرتي نهائياً تاريخياً أمام ريفر",
+          "summary": "يمتلك مدرب إنديبندينتي ريفادافيا الحالي، بيرتي، ماضياً خاصاً في مواجهاته ضد ريفر بليت بعدما خسر أمامه نهائياً تاريخياً سابقاً.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-plate-alfredo-berti-final-copa-libertadores-1996_0_1h8k1gleWm.html",
@@ -208,7 +209,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-plate-alfredo-berti-final-copa-libertadores-1996_0_1h8k1gleWm.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "86d6b6ff6e35",
@@ -217,26 +223,27 @@
       "i18n": {
         "fr": {
           "title": "Besiktas s'offre le derby contre Fenerbahçe grâce à un but de Dusan Vlahovic",
-          "summary": "Besiktas a remporté samedi l'un des derbies d'Istanbul sur le terrain de Fenerbahçe (2-1) à l'occasion de la 4e journée du Championnat turc. Le futur adversaire de l'OM en Ligue Europa s'est notamment imposé grâce à un but de Dusan Vlahovic.",
-          "needs_translation": false
+          "summary": "Besiktas s'est imposé 2-1 sur le terrain de Fenerbahçe lors de la 4e journée du Championnat turc, notamment grâce à une réalisation de Dusan Vlahovic.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Besiktas offers himself the derby against Fenerbahçe thanks to a goal from Dusan Vlahovic",
-          "summary": "Besiktas won on Saturday one of the Istanbul derbies on the field of Fenerbahçe (2-1) on the occasion of the 4th day of the Turkish Championship. OM's future opponent in the Europa League won thanks to a goal from Dusan Vlahovic.",
+          "title": "Besiktas win derby against Fenerbahçe thanks to Dusan Vlahovic goal",
+          "summary": "Besiktas secured a 2-1 away victory over Fenerbahçe on matchday 4 of the Turkish league, notably thanks to a goal from Dusan Vlahovic.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Besiktas gana el derbi contra el Fenerbahçe gracias a un gol de Dusan Vlahovic",
-          "summary": "Besiktas ganó el sábado uno de los derbis de Estambul en el campo del Fenerbahçe (2-1) con motivo de la 4ª jornada del Campeonato turco. El futuro rival del OM en la Europa League se impuso gracias a un gol de Dusan Vlahovic.",
+          "title": "Besiktas se lleva el derbi ante Fenerbahçe gracias a un gol de Dusan Vlahovic",
+          "summary": "Besiktas venció 2-1 a domicilio a Fenerbahçe en la 4.ª jornada del campeonato turco, impulsado por un gol de Dusan Vlahovic.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "بشكتاش يقدم لنفسه الدربي ضد فنربخش بفضل هدف من دوسان فلاهوفيتش",
-          "summary": "فاز بشكتاش يوم السبت بأحد ديربيات إسطنبول في ملعب فنربخشة (2-1) بمناسبة اليوم الرابع من البطولة التركية. فاز خصم أوم المستقبلي في الدوري الأوروبي بفضل هدف من دوسان فلاهوفيتش.",
+          "title": "بشكتاش يحسم الديربي أمام فنربخشة بفضل هدف دوشان فلاهوفيتش",
+          "summary": "تغلب بشكتاش على مضيفه فنربخشة بنتيجة 2-1 في الجولة الرابعة من الدوري التركي، بفضل هدف سجله دوشان فلاهوفيتش.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Besiktas-s-offre-le-derby-contre-fenerbahce-grace-a-un-but-de-dusan-vlahovic/1716525#at_medium=RSS_feeds",
@@ -258,7 +265,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Besiktas-s-offre-le-derby-contre-fenerbahce-grace-a-un-but-de-dusan-vlahovic/1716525#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6e1575f0c182",
@@ -267,26 +279,27 @@
       "i18n": {
         "es": {
           "title": "Arruabarrena tras el empate de Boca en Mendoza: \"La sensación es que perdemos dos puntos\"",
-          "summary": "El Vasco lamentó la igualdad sobre el final, analizó el rendimiento del equipo, explicó las variantes y ya puso la mira en San Pablo por la Sudamericana.",
-          "needs_translation": false
+          "summary": "Tras conceder el empate en el final en Mendoza, Arruabarrena lamentó perder dos puntos y ya se enfoca en el cruce ante San Pablo por la Sudamericana.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Arruabarrena after Boca's draw in Mendoza: \"The feeling is that we lose two points\"",
-          "summary": "The Basque lamented the equality at the end, analysed the team's performance, explained the variants and already set his sights on Sao Paulo for the South American.",
+          "title": "Arruabarrena after Boca's draw in Mendoza: \"The feeling is that we lost two points\"",
+          "summary": "Following Boca's late draw in Mendoza, Arruabarrena lamented dropping two points and shifted his focus toward the upcoming Sudamericana clash against San Pablo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Ruabarrena après le match nul de Boca à Mendoza : « Le sentiment est que nous perdons deux points »",
-          "summary": "Le Vasco a regretté l'égalité sur la fin, a analysé les performances de l'équipe, a expliqué les variantes et s'est déjà tourné vers São Paulo pour l'Amérique du Sud.",
+          "title": "Arruabarrena après le nul de Boca à Mendoza : « Le sentiment est que nous perdons deux points »",
+          "summary": "Après le match nul concédé en fin de match à Mendoza, Arruabarrena a regretté la perte de deux points pour Boca et se tourne déjà vers le duel face à San Pablo en Sudamericana.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Arruabarrena بعد تعادل بوكا في ميندوزا: \"الشعور هو أننا نفقد نقطتين\"",
-          "summary": "أعرب الباسك عن أسفه للمساواة في النهاية، وحلل أداء الفريق، وشرح المتغيرات ووضع بالفعل نصب عينيه ساو باولو لأمريكا الجنوبية.",
+          "title": "أروابارينا بعد تعادل بوكا في ميندوزا: \"نشعر بأننا خسرنا نقطتين\"",
+          "summary": "أبدى أروابارينا مدرب بوكا أسفه بعد استقبال هدف التعادل في الدقائق الأخيرة في ميندوزا، معتبراً أن الفريق أهدر نقطتين، وموجهاً تركيزه لمواجهة ساو باولو في سودأمريكانا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/rodolfo-arruabarrena-declaraciones-empate-boca-gimansia-mendoza_0_8uXeGWTUaU.html",
@@ -308,7 +321,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/rodolfo-arruabarrena-declaraciones-empate-boca-gimansia-mendoza_0_8uXeGWTUaU.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7f9e3227edc5",
@@ -367,26 +385,27 @@
       "i18n": {
         "es": {
           "title": "Portada MD Bizkaia-Araba de hoy domingo",
-          "summary": "El Athletic se impuso ayer con claridad al Atlético Madrid con un arranque de segundo tiempo espectacular. Los leones marcaron dos tantos en sus dos primeras llegadas a portería tras el descanso.",
-          "needs_translation": false
+          "summary": "El Athletic se impuso con claridad al Atlético Madrid tras anotar dos goles en el arranque de la segunda mitad.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Home MD Bizkaia-Araba today Sunday",
-          "summary": "Athletic clearly beat Atletico Madrid yesterday with a spectacular second-half start. The lions scored two goals in their first two goal arrivals after the break.",
+          "title": "Portada MD Bizkaia-Araba for this Sunday",
+          "summary": "Athletic secured a clear victory over Atlético Madrid by scoring two goals at the start of the second half.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Couverture MD Bizkaia-Araba d'aujourd' hui dimanche",
-          "summary": "L'Athletic s'est clairement imposé hier face à l'Atlético Madrid avec un début de seconde période spectaculaire. Les lions ont marqué deux buts lors de leurs deux premières arrivées au but après la pause.",
+          "title": "Portada MD Bizkaia-Araba de ce dimanche",
+          "summary": "Athletic s'est nettement imposé face à l'Atlético Madrid grâce à deux buts marqués dès le début de la seconde période.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الصفحة الرئيسية MD Bizkaia - Araba اليوم الأحد",
-          "summary": "من الواضح أن أتلتيكو مدريد فاز على أتلتيكو مدريد أمس ببداية مذهلة في الشوط الثاني. سجل الأسود هدفين في أول هدفين وصلوا بعد الاستراحة.",
+          "title": "غلاف إم دي بيسكايا-أرابا لهذا الأحد",
+          "summary": "فاز أتلتيك بيلباو بوضوح على أتلتيكو مدريد بعد تسجيل هدفين مع انطلاق الشوط الثاني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260906/1004223796/portada-md-bizkaia-araba-hoy-domingo.html",
@@ -408,7 +427,12 @@
           "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260906/1004223796/portada-md-bizkaia-araba-hoy-domingo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2c58290c8303",
@@ -875,7 +899,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-1/ligue-1-premier-succes-pour-brest-le-mans-accroche-nice-20260905"
         }
       ],
-      "source_count": 4
+      "source_count": 4,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "34a4bf629e3c",
@@ -884,26 +913,27 @@
       "i18n": {
         "es": {
           "title": "Esteban Fernández: el pibe del River Camp que le arruinó la victoria a Boca",
-          "summary": "El surgido de la cantera del Millonario convirtió el 1-1 definitivo para Gimnasia de Mendoza.",
-          "needs_translation": false
+          "summary": "Formado en el River Camp, Esteban Fernández marcó el gol del empate 1-1 definitivo para Gimnasia de Mendoza frente a Boca.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Esteban Fernández: the kid from River Camp who ruined Boca's victory",
-          "summary": "The emergence of the Millionaire's quarry made the final 1-1 for Gimnasia de Mendoza.",
+          "title": "Esteban Fernández: The River Camp youngster who ruined Boca's victory",
+          "summary": "Formed at River Camp, Esteban Fernández scored the 1-1 equalizer for Gimnasia de Mendoza against Boca.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Esteban Fernández : le pibe du River Camp qui a ruiné la victoire de Boca",
-          "summary": "Celui issu de la carrière du Millionnaire a transformé le 1-1 définitif pour Gimnasia de Mendoza.",
+          "title": "Esteban Fernández : le jeune du River Camp qui a gâché la victoire de Boca",
+          "summary": "Formé au River Camp, Esteban Fernández a inscrit le but de l'égalisation 1-1 pour Gimnasia de Mendoza face à Boca.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "إستيبان فرنانديز: الطفل من ريفر كامب الذي أفسد انتصار بوكا",
-          "summary": "ظهور محجر المليونير جعل النهائي 1-1 لجيمناسيا دي ميندوزا.",
+          "title": "إستيبان فرنانديز: ناشئ ريفر كامب الذي حرم بوكا من الفوز",
+          "summary": "سجل إستيبان فرنانديز، خريج أكاديمية ريفر بليت، هدف التعادل 1-1 لفريقه خيمناسيا دي ميندوزا في شباك بوكا جونيورز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-plate-esteban-fernandez-boca_0_P7y2F6wl4u.html",
@@ -925,7 +955,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-plate-esteban-fernandez-boca_0_P7y2F6wl4u.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f0b30fb87c8c",
@@ -934,26 +969,27 @@
       "i18n": {
         "fr": {
           "title": "Les notes de Le Havre-Brest : Ludovic Ajorque, le cauchemar de Junior Mwanga",
-          "summary": "Ludovic Ajorque a été impliqué sur les deux buts ayant permis à Brest de s'imposer au Havre (2-1), samedi, lors de la 3e journée de Ligue 1.",
-          "needs_translation": false
+          "summary": "Impliqué sur les deux buts brestois, Ludovic Ajorque a permis à Brest de s'imposer 2-1 au Havre lors de la 3e journée de Ligue 1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The notes of Le Havre-Brest: Ludovic Ajorque, Junior Mwanga's nightmare",
-          "summary": "Ludovic Ajorque was involved in the two goals that allowed Brest to win at Le Havre (2-1) on Saturday, during the third day of Ligue 1.",
+          "title": "Le Havre-Brest player ratings: Ludovic Ajorque, Junior Mwanga's nightmare",
+          "summary": "Involved in both goals, Ludovic Ajorque led Brest to a 2-1 away victory against Le Havre on matchday 3 of Ligue 1.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Las notas de Le Havre-Brest: Ludovic Ajorque, la pesadilla de Junior Mwanga",
-          "summary": "Ludovic Ajorque estuvo implicado en los dos goles que permitieron a Brest imponerse en Le Havre (2-1), el sábado, en la tercera jornada de la Ligue 1.",
+          "title": "Las notas del Le Havre-Brest: Ludovic Ajorque, la pesadilla de Junior Mwanga",
+          "summary": "Ludovic Ajorque participó en los dos goles que dieron el triunfo a Brest por 2-1 ante Le Havre en la jornada 3 de Ligue 1.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ملاحظات Le Havre - Brest: Ludovic Ajorque، كابوس Junior Mwanga",
-          "summary": "شارك لودوفيك أجوركي في الهدفين اللذين سمحا لبريست بالفوز على لو هافر (2-1) يوم السبت، خلال اليوم الثالث من دوري الدرجة الأولى.",
+          "title": "تقييمات مباراة لو هافر وبريست: لودوفيك أجورك، كابوس جونيور موانغا",
+          "summary": "قاد لودوفيك أجورك فريقه بريست للفوز على لو هافر بنتيجة 2-1 بعد مساهمته في هدفي اللقاء، ضمن الجولة الثالثة من الدوري الفرنسي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Article/Les-notes-de-le-havre-brest-ludovic-ajorque-le-cauchemar-de-junior-mwanga/1716511#at_medium=RSS_feeds",
@@ -975,7 +1011,12 @@
           "url": "https://www.lequipe.fr/Football/Article/Les-notes-de-le-havre-brest-ludovic-ajorque-le-cauchemar-de-junior-mwanga/1716511#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5e64d5a0d5a2",
@@ -983,27 +1024,28 @@
       "summary": "La première manche du premier tour préliminaire de la Ligue des champions CAF s’est poursuivie ce samedi avec douze rencontres au programme.",
       "i18n": {
         "fr": {
-          "title": "Ligue des Champions CAF : le Club Africain s’impose face au Djoliba AC !",
-          "summary": "La première manche du premier tour préliminaire de la Ligue des champions CAF s’est poursuivie ce samedi avec douze rencontres au programme.",
-          "needs_translation": false
+          "title": "Ligue des Champions CAF : le Club Africain s’impose face au Djoliba AC",
+          "summary": "Le Club Africain s'est imposé face au Djoliba AC lors du match aller du premier tour préliminaire de la Ligue des Champions CAF, disputé ce samedi parmi douze rencontres au programme.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "CAF Champions League: Club Africain wins against Djoliba AC!",
-          "summary": "The first round of the first preliminary round of the CAF Champions League continued on Saturday with twelve matches on the programme.",
+          "title": "Ligue des Champions CAF: Club Africain defeats Djoliba AC",
+          "summary": "Club Africain defeated Djoliba AC in the first leg of the first preliminary round of the Ligue des Champions CAF, as twelve matches took place this Saturday.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Liga de Campeones CAF: ¡el Club Africano se impone ante el Djoliba AC!",
-          "summary": "La primera ronda de la primera ronda preliminar de la Liga de Campeones CAF continuó este sábado con doce partidos en el programa.",
+          "title": "Ligue des Champions CAF: el Club Africain se impone al Djoliba AC",
+          "summary": "El Club Africain venció al Djoliba AC en el partido de ida de la primera ronda preliminar de la Ligue des Champions CAF, disputado este sábado junto a otros once encuentros.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "دوري أبطال أفريقيا: النادي الأفريقي يفوز على نادي دجوليبا!",
-          "summary": "استمرت الجولة الأولى من الجولة التمهيدية الأولى لدوري أبطال أفريقيا يوم السبت مع اثنتي عشرة مباراة على البرنامج.",
+          "title": "دوري أبطال إفريقيا: النادي الإفريقي يفوز على دجوليبا",
+          "summary": "تغلب النادي الإفريقي على نادي دجوليبا في ذهاب الدور التمهيدي الأول من دوري أبطال إفريقيا، في يوم شهد إجراء اثنتي عشرة مباراة ضمن منافسات البطولة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football/ligue-des-champions-caf-al-hilal-club-africain-simposent-les-resultats-de-samedi/",
@@ -1031,7 +1073,12 @@
           "url": "https://africatopsports.com/caf/ligue-des-champions-caf-le-club-africain-simpose-face-au-djoliba-ac/"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "1b490226347c",
@@ -1243,23 +1290,27 @@
       "i18n": {
         "es": {
           "title": "Todos los partidos de este sábado: el Sant Andreu estrena el casillero de victorias",
-          "summary": "El Sant Andreu logró su primera victoria en Primera Federación contra el también recién ascendido Águilas.",
-          "needs_translation": false
+          "summary": "El Sant Andreu consiguió su primera victoria en Primera Federación tras imponerse al también recién ascendido Águilas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Todos los partidos de este sábado: el Sant Andreu estrena el casillero de victorias",
-          "summary": "El Sant Andreu logró su primera victoria en Primera Federación contra el también recién ascendido Águilas.",
-          "needs_translation": true
+          "title": "All this Saturday's matches: Sant Andreu claim their first win",
+          "summary": "Sant Andreu secured their first victory in Primera Federación by defeating fellow newly promoted side Águilas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Todos los partidos de este sábado: el Sant Andreu estrena el casillero de victorias",
-          "summary": "El Sant Andreu logró su primera victoria en Primera Federación contra el también recién ascendido Águilas.",
-          "needs_translation": true
+          "title": "Tous les matches de ce samedi : Sant Andreu ouvre son compteur de victoires",
+          "summary": "Sant Andreu a décroché son premier succès en Primera Federación en s'imposant face à Águilas, également promu cette saison.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Todos los partidos de este sábado: el Sant Andreu estrena el casillero de victorias",
-          "summary": "El Sant Andreu logró su primera victoria en Primera Federación contra el también recién ascendido Águilas.",
-          "needs_translation": true
+          "title": "مباريات هذا السبت: سانت أندريو يفتتح رصيده من الانتصارات",
+          "summary": "حقق سانت أندريو فوزه الأول في بريميرا فيديراسيون بتغلبه على أغيلاس، الصاعد حديثاً هو الآخر.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/futbol-catala/20260905/1004223775/todos-partidos-sabado-sant-andreu-estrena-casillero-victorias.html",
@@ -1281,7 +1332,12 @@
           "url": "https://www.mundodeportivo.com/futbol/futbol-catala/20260905/1004223775/todos-partidos-sabado-sant-andreu-estrena-casillero-victorias.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b36c559ac3d4",
@@ -1536,32 +1592,33 @@
       "i18n": {
         "de": {
           "title": "Bundesliga: Schalke 04 lässt den FC Bayern verzweifeln",
-          "summary": "Ein 0:0, das sich wie ein Sieg anfühlt: Schalke 04 hat dem FC Bayern Paroli geboten und sich mit einer beherzten Leistung einen Punkt erkämpft.",
-          "needs_translation": false
+          "summary": "Schalke 04 hat sich in der Bundesliga ein 0:0 gegen den FC Bayern erkämpft und mit einer engagierten Defensivleistung einen Punkt gesichert.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Bundesliga: Schalke 04 leaves FC Bayern in despair",
-          "summary": "A 0:0 that feels like a win: Schalke 04 has stood up to FC Bayern and fought for a point with a courageous performance.",
+          "title": "Bundesliga: Schalke 04 frustrates FC Bayern",
+          "summary": "Schalke 04 held FC Bayern to a 0-0 draw in the Bundesliga, earning a hard-fought point with a determined performance.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Bundesliga : Schalke 04 désespère le FC Bayern",
-          "summary": "Un 0-0 qui ressemble à une victoire : Schalke 04 a défié le FC Bayern et a conquis un point avec une performance courageuse.",
+          "title": "Bundesliga : Schalke 04 fait déjouer le FC Bayern",
+          "summary": "En Bundesliga, Schalke 04 a tenu tête au FC Bayern en obtenant un match nul 0-0 au terme d'une solide prestation collective.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Bundesliga: el Schalke 04 deja desesperado al Bayern",
-          "summary": "Un 0-0 que se siente como una victoria: el Schalke 04 se ha enfrentado al FC Bayern y ha ganado un punto con una actuación valiente.",
+          "title": "Bundesliga: Schalke 04 desespera al FC Bayern",
+          "summary": "En la Bundesliga, Schalke 04 empató 0-0 contra el FC Bayern tras una sólida actuación defensiva que le permitió sumar un punto.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الدوري الألماني: شالكه 04 يترك بايرن ميونيخ في حالة من اليأس",
-          "summary": "A 0:0 يبدو وكأنه فوز: وقف شالكه 04 في وجه نادي بايرن وقاتل من أجل نقطة بأداء شجاع.",
+          "title": "الدوري الألماني: شالكه 04 يحبط بايرن ميونخ",
+          "summary": "فرض شالكه 04 التعادل السلبي دون أهداف على بايرن ميونخ في الدوري الألماني، ليحصد نقطة ثمينة بفضل أداء دفاعي قوي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga/leidenschaft-pur-schalkes-aufsteiger-stoppen-die-bayern,spielbericht-schalke-04-bayern-muenchen-100.html",
@@ -1589,7 +1646,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/leidenschaft-pur-schalkes-aufsteiger-stoppen-die-bayern,spielbericht-schalke-04-bayern-muenchen-100.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2141bde47616",
@@ -1754,26 +1816,27 @@
       "i18n": {
         "fr": {
           "title": "Hamari Traoré aligné à gauche de la défense du Paris FC face à l'OM ?",
-          "summary": "Avec la blessure du Brésilien Otavio, le Malien Hamari Traoré pourrait être aligné à gauche de la défense du Paris FC pour le déplacement à Marseille, dimanche soir, en clôture de la 3e journée de Ligue 1.",
-          "needs_translation": false
+          "summary": "En raison de la blessure d'Otavio, Hamari Traoré pourrait être titularisé au poste de latéral gauche avec le Paris FC face à Marseille en Ligue 1.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Hamari Traoré lined up to the left of Paris FC's defence against OM?",
-          "summary": "With the injury of the Brazilian Otavio, the Malian Hamari Traoré could be lined up to the left of the defense of Paris FC for the trip to Marseille, Sunday night, at the end of the 3rd day of Ligue 1.",
+          "title": "Hamari Traoré to start at left-back for Paris FC against Marseille?",
+          "summary": "Following an injury to Otavio, Hamari Traoré could start at left-back for Paris FC against Marseille on Sunday in Ligue 1.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "¿Hamari Traoré alineado a la izquierda de la defensa del Paris FC frente al OM?",
-          "summary": "Con la lesión del brasileño Otavio, el maliense Hamari Traoré podría estar alineado a la izquierda de la defensa del París FC para el desplazamiento a Marsella, el domingo por la noche, al cierre de la tercera jornada de la Ligue 1.",
+          "title": "¿Hamari Traoré como lateral izquierdo del Paris FC ante el Marseille?",
+          "summary": "Debido a la lesión de Otavio, Hamari Traoré podría ser titular en el lateral izquierdo del Paris FC frente a Marseille en la Ligue 1.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "اصطف هاماري تراوري إلى يسار دفاع نادي باريس ضد أوم ؟",
-          "summary": "مع إصابة البرازيلي أوتافيو، يمكن أن يصطف مالي هاماري تراوري إلى يسار دفاع باريس للرحلة إلى مرسيليا، ليلة الأحد، في نهاية اليوم الثالث من دوري الدرجة الأولى.",
+          "title": "هل يشارك هماري تراوري كظهير أيسر مع باريس إف سي أمام مارسيليا؟",
+          "summary": "بسبب إصابة البرازيلي أوتافيو، قد يشارك المالي هماري تراوري كظهير أيسر في تشكيلة باريس إف سي أمام مارسيليا في ختام الجولة الثالثة من الدوري الفرنسي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Hamari-traore-aligne-a-gauche-de-la-defense-du-paris-fc-face-a-l-om/1716449#at_medium=RSS_feeds",
@@ -1795,7 +1858,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Hamari-traore-aligne-a-gauche-de-la-defense-du-paris-fc-face-a-l-om/1716449#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "fe0c10fa9c4b",
@@ -1948,7 +2016,12 @@
           "url": "https://www.kicker.de/gummersbach-gegen-melsungen-2026-handball-bundesliga-5213768/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9c3e89fc7d8c",
@@ -1956,27 +2029,28 @@
       "summary": "Goleada del Barça al Huesca para dar inicio a la liga. Nil Vicens, de inicio, abrió el marcador al irse por velocidad.",
       "i18n": {
         "es": {
-          "title": "Se pone en marcha la División de Honor juvenil. Goleadas de Barça y Espanyol",
-          "summary": "Goleada del Barça al Huesca para dar inicio a la liga. Nil Vicens, de inicio, abrió el marcador al irse por velocidad.",
-          "needs_translation": false
+          "title": "Se pone en marcha la División de Honor juvenil: goleadas de Barça y Espanyol",
+          "summary": "El Barça y el Espanyol arrancaron la División de Honor juvenil con sendas goleadas. En el triunfo blaugrana ante el Huesca, Nil Vicens abrió el marcador con una acción en velocidad.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The Youth Honor Division is launched. Barça and Espanyol Thrashing",
-          "summary": "Barça's thrashing of Huesca to start the league. Nil Vicens, starting, opened the scoreboard when he left for speed.",
+          "title": "División de Honor kicks off: big wins for Barça and Espanyol",
+          "summary": "Barça and Espanyol kicked off the División de Honor campaign with heavy victories. Nil Vicens opened the scoring early with a run of pace in Barça's rout of Huesca.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La Division d'Honneur des Jeunes est mise en place. Buts du Barça et de l'Espanyol",
-          "summary": "Défaite du Barça à Huesca pour lancer la ligue. Nil Vicens, au départ, a ouvert le score en partant par vitesse.",
+          "title": "Lancement de la División de Honor jeunes : cartons du Barça et de l'Espanyol",
+          "summary": "Le Barça et l'Espanyol ont débuté la saison de División de Honor par de larges victoires. Lors du succès face à Huesca, Nil Vicens a ouvert le score pour les Catalans.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تم إطلاق قسم شرف الشباب. سحق برشلونة وإسبانيول",
-          "summary": "ضرب برشلونة لهويسكا لبدء الدوري. بدأ نيل فيسينس بفتح لوحة النتائج عندما غادر للسرعة.",
+          "title": "انطلاق دوري الشرف للشباب: انتصارات عريضة لبرشلونة وإسبانيول",
+          "summary": "افتتح برشلونة وإسبانيول منافسات دوري الشرف للشباب بفوزين عريضين. وتغلب برشلونة بنتيجة كبيرة على هويسكا في لقاء افتتح فيه نيل فيسينس التسجيل مبكراً.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/futbol-catala/20260905/1004223763/pone-marcha-division-honor-juvenil-goleadas-barca-espanyol.html",
@@ -1998,7 +2072,12 @@
           "url": "https://www.mundodeportivo.com/futbol/futbol-catala/20260905/1004223763/pone-marcha-division-honor-juvenil-goleadas-barca-espanyol.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "15f2ff88dc4e",
@@ -2213,23 +2292,27 @@
       "i18n": {
         "es": {
           "title": "El Bayern Múnich se estrella ante un héroe inesperado",
-          "summary": "¿Recuerdan a Karius? Sí, aquel portero que fue el triste protagonista de una final de Champions League entre el Real Madrid y el Liverpool .",
-          "needs_translation": false
+          "summary": "El Bayern Múnich tropezó ante un guardameta decisivo que evoca la figura de Karius, exportero de Liverpool en la final de Champions League frente al Real Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Bayern Múnich se estrella ante un héroe inesperado",
-          "summary": "¿Recuerdan a Karius? Sí, aquel portero que fue el triste protagonista de una final de Champions League entre el Real Madrid y el Liverpool .",
-          "needs_translation": true
+          "title": "Bayern Múnich stumbles against an unexpected hero",
+          "summary": "Bayern Múnich was halted by an unexpected goalkeeping display, evoking memories of Karius for Liverpool in the Champions League final against Real Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El Bayern Múnich se estrella ante un héroe inesperado",
-          "summary": "¿Recuerdan a Karius? Sí, aquel portero que fue el triste protagonista de una final de Champions League entre el Real Madrid y el Liverpool .",
-          "needs_translation": true
+          "title": "Le Bayern Múnich bute sur un héros inattendu",
+          "summary": "Le Bayern Múnich a buté sur une performance inattendue rappelant Karius, le gardien de Liverpool lors de la finale de Champions League contre le Real Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Bayern Múnich se estrella ante un héroe inesperado",
-          "summary": "¿Recuerdan a Karius? Sí, aquel portero que fue el triste protagonista de una final de Champions League entre el Real Madrid y el Liverpool .",
-          "needs_translation": true
+          "title": "بايرن ميونخ يتعثر أمام بطل غير متوقع",
+          "summary": "تعثر بايرن ميونخ أمام حارس مرمى أعاد للأذهان كاريوس، حارس ليفربول السابق في نهائي دوري أبطال أوروبا ضد ريال مدريد.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/bundesliga/20260905/1004223752/bayern-munich-estrella-heroe-inesperado.html",
@@ -2251,7 +2334,12 @@
           "url": "https://www.mundodeportivo.com/futbol/bundesliga/20260905/1004223752/bayern-munich-estrella-heroe-inesperado.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b18a586c8759",
