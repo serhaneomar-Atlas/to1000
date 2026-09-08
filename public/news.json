@@ -16,27 +16,28 @@
       "summary": "El equipo colombiano, que eliminó a River en octavos, recibe a los cariocas. Uno de ellos jugará contra el ganador de la serie entre el Xeneize y San Pablo.",
       "i18n": {
         "es": {
-          "title": "Ojo acá, Boca: Independiente Santa Fe se mide con Vasco y uno podría ser su rival en semis",
-          "summary": "El equipo colombiano, que eliminó a River en octavos, recibe a los cariocas. Uno de ellos jugará contra el ganador de la serie entre el Xeneize y San Pablo.",
-          "needs_translation": false
+          "title": "Independiente Santa Fe enfrenta a Vasco por un lugar en semifinales",
+          "summary": "Independiente Santa Fe recibe a Vasco tras eliminar a River en octavos de final. El vencedor de esta serie se medirá en semifinales con el ganador del cruce entre Boca y San Pablo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Eye here, Boca: Independiente Santa Fe meets Vasco and you could be his rival in semis",
-          "summary": "The Colombian team, which eliminated River in the round of 16, receives the Cariocas. One of them will play against the winner of the series between Xeneize and São Paulo.",
+          "title": "Independiente Santa Fe face Vasco for a spot in the semifinals",
+          "summary": "Independiente Santa Fe host Vasco after eliminating River in the round of 16. The winner will advance to the semifinals against either Boca or San Pablo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Attention ici, Boca : Independiente Santa Fe se mesure avec Vasco et on pourrait être son rival en demi",
-          "summary": "L'équipe colombienne, qui a éliminé River en huitièmes, reçoit les Cariocas. L'un d'eux jouera contre le vainqueur de la série entre Xeneize et São Paulo.",
+          "title": "Independiente Santa Fe affronte Vasco pour une place en demi-finales",
+          "summary": "Après avoir éliminé River en huitièmes de finale, Independiente Santa Fe reçoit Vasco. Le qualifié affrontera en demi-finales le vainqueur du duel opposant Boca à San Pablo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "العين هنا، بوكا: إنديبندينتي سانتا في يلتقي فاسكو ويمكنك أن تكون منافسه في نصف النهائي",
-          "summary": "الفريق الكولومبي، الذي قضى على ريفر في دور الـ 16، يستقبل كاريوكاس. سيلعب أحدهم ضد الفائز في السلسلة بين Xeneize وساو باولو.",
+          "title": "إندبندينتي سانتا في يواجه فاسكو لتحديد منافس بوكا المحتمل في نصف النهائي",
+          "summary": "يستضيف إندبندينتي سانتا في، الذي أقصى ريفر بليت من ثمن النهائي، فريق فاسكو. وسيلتقي الفائز من هذه المواجهة في نصف النهائي مع المتأهل من لقاء بوكا وسان باولو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/sudamericana/independiente-santa-fe-vasco-partido-sudamericana-ida-cuartos_0_t14mZ67fCj.html",
@@ -58,7 +59,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/sudamericana/independiente-santa-fe-vasco-partido-sudamericana-ida-cuartos_0_t14mZ67fCj.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a7c9a9ba83af",
@@ -259,26 +265,27 @@
       "i18n": {
         "es": {
           "title": "Fluminense vs. Platense, hoy EN VIVO por la Copa Libertadores: formaciones confirmadas, horario y por dónde ver",
-          "summary": "El Calamar se enfrenta ante el Flu en el Maracaná, por la ida de los cuartos de final. Seguilo en Olé.",
-          "needs_translation": false
+          "summary": "Platense visita a Fluminense en el Maracaná para disputar el partido de ida de los cuartos de final de la Copa Libertadores.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Fluminense vs. Platense, LIVE today for the Copa Libertadores: confirmed formations, schedule and where to see",
-          "summary": "Squid faces Flu in the Maracana, for the first leg of the quarterfinals. Follow him in Olé.",
+          "title": "Fluminense vs. Platense LIVE in Copa Libertadores: confirmed lineups, schedule and where to watch",
+          "summary": "Platense faces Fluminense at the Maracaná in the first leg of the Copa Libertadores quarter-finals.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Fluminense vs Platense, aujourd'hui EN DIRECT pour LA Copa Libertadores : formations confirmées, horaires et lieux à voir",
-          "summary": "Le Calamar affronte le Flu dans le Maracana, pour l'aller des quarts de finale. Suivez-le sur Olé.",
+          "title": "Fluminense - Platense EN VIVO en Copa Libertadores : compositions confirmées, horaire et diffusion",
+          "summary": "Platense affronte Fluminense au Maracaná dans le cadre du quart de finale aller de la Copa Libertadores.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "فلومينينس مقابل بلاتينس، عيش اليوم لكأس ليبرتادوريس: التشكيلات المؤكدة والجدول الزمني وأين ترى",
-          "summary": "يواجه الحبار الإنفلونزا في ماراكانا، في مباراة الذهاب من ربع النهائي. اتبعه في أولي.",
+          "title": "فلومينينسي ضد بلاتينسي بث مباشر في كوبا ليبرتادوريس: التشكيلتان الأساسيتان والموعد والقنوات الناقلة",
+          "summary": "يحل بلاتينسي ضيفاً على فلومينينسي في ملعب ماراكانا، ضمن ذهاب الدور ربع النهائي من بطولة كوبا ليبرتادوريس.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/libertadores/fluminense-vs-platense-vivo-copa-libertadores-hora-ver-tv-online-formaciones_0_dworVK6Gbi.html",
@@ -300,7 +307,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/libertadores/fluminense-vs-platense-vivo-copa-libertadores-hora-ver-tv-online-formaciones_0_dworVK6Gbi.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "39463a5ff15c",
@@ -489,26 +501,27 @@
       "i18n": {
         "es": {
           "title": "Liverpool vs. Atlético Madrid, por la Champions League: hora, cómo ver y probables formaciones",
-          "summary": "Los Reds de Alexis Mac Allister reciben al Colchonero de Simeone y su legión argentina en el inicio de la fase de liga de la Orejona. Los detalles.",
-          "needs_translation": false
+          "summary": "Liverpool recibe a Atlético Madrid en el inicio de la fase de liga de la Champions League. El equipo de Alexis Mac Allister se enfrenta al conjunto dirigido por Simeone.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Liverpool vs. Atlético Madrid, for the Champions League: time, how to watch and likely formations",
-          "summary": "The Reds of Alexis Mac Allister receive the Colchonero of Simeone and his Argentine legion at the beginning of the league phase of the Orejona. Details.",
+          "title": "Liverpool vs. Atlético Madrid in the Champions League: kick-off time, how to watch and predicted lineups",
+          "summary": "Liverpool host Atlético Madrid in their Champions League league phase opener. Alexis Mac Allister and the Reds face Simeone's side at Anfield.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Liverpool vs Atlético Madrid, pour la Ligue des Champions : heure, comment voir et formations probables",
-          "summary": "Les Reds d'Alexis Mac Allister reçoivent le Colchonero de Simeone et sa légion argentine au début de la phase de championnat de l'Orejona. Les détails.",
+          "title": "Liverpool - Atlético Madrid en Champions League : horaire, diffusion et compositions probables",
+          "summary": "Liverpool accueille Atlético Madrid lors de la première journée de la phase de ligue de la Champions League. La formation d'Alexis Mac Allister affronte l'équipe de Simeone.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ليفربول ضد أتلتيكو مدريد، لدوري أبطال أوروبا: الوقت، وكيفية المشاهدة والتشكيلات المحتملة",
-          "summary": "يستقبل الريدز أليكسيس ماك أليستر كولشونيرو سيميوني وفيلقه الأرجنتيني في بداية مرحلة الدوري في أوريجونا. التفاصيل.",
+          "title": "ليفربول ضد أتلتيكو مدريد في دوري أبطال أوروبا: الموعد والقنوات الناقلة والتشكيلات المتوقعة",
+          "summary": "يستضيف ليفربول نظيره أتلتيكو مدريد في افتتاح مرحلة الدوري لمسابقة دوري أبطال أوروبا، حيث يواجه رفاق أليكسيس ماك أليستر كتيبة المدرب دييغو سيميوني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/champions/liverpool-vs-atletico-madrid-champions-league-hora-ver-tv-online-formaciones_0_uUJqqfXiLW.html",
@@ -530,7 +543,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/champions/liverpool-vs-atletico-madrid-champions-league-hora-ver-tv-online-formaciones_0_uUJqqfXiLW.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e7bb3a6d1c4d",
@@ -719,26 +737,27 @@
       "i18n": {
         "es": {
           "title": "Berlanga y la polémica con Boca: \"La consecuencia es la pérdida del partido\"",
-          "summary": "El presidente de Vélez ratificó la postura institucional del club sobre el conflicto con el Xeneize por la Copa Argentina. \"Pretendemos la clasificación\", agregó Balestrini, secretario del club.",
-          "needs_translation": false
+          "summary": "El presidente de Vélez, Berlanga, y el secretario Balestrini ratificaron su postura institucional frente a Boca en la Copa Argentina, exigiendo la pérdida del partido del rival y la clasificación.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "Berlanga and the controversy with Boca: \"The consequence is the loss of the match\"",
-          "summary": "The president of Vélez ratified the club's institutional position on the conflict with Xeneize for the Argentine Cup. \"We aim for qualification,\" added Balestrini, the club's secretary.",
+          "summary": "Vélez president Berlanga and club secretary Balestrini reaffirmed their stance regarding the Copa Argentina dispute with Boca, demanding a forfeit defeat for their opponents and their own qualification.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Berlanga et la polémique avec Boca : « La conséquence est la perte du match »",
-          "summary": "Le président de Vélez a confirmé la position institutionnelle du club sur le conflit avec le Xeneize pour la Coupe d'Argentine. « Nous visons la qualification », a ajouté Balestrini, secrétaire du club.",
+          "title": "Berlanga et la polémique avec Boca : « La conséquence est la perte du match »",
+          "summary": "Le président de Vélez, Berlanga, et le secrétaire Balestrini ont réaffirmé leur position face à Boca en Copa Argentina, exigeant la qualification et la défaite sur tapis vert de leur adversaire.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "بيرلانغا والجدل مع بوكا: \"النتيجة هي خسارة المباراة\"",
-          "summary": "صادق رئيس فيليز على الموقف المؤسسي للنادي بشأن الصراع مع زينيز لكأس الأرجنتين. وأضاف باليستريني، سكرتير النادي: \"نحن نهدف إلى التأهل\".",
+          "title": "بيرلانغا والجدل مع بوكا: \"العقوبة هي خسارة المباراة\"",
+          "summary": "أكد رئيس نادي فيليز بيرلانغا وأمين السر باليستريني الموقف الرسمي تجاه النزاع مع بوكا في كأس الأرجنتين، مطالبين باعتبار المنافس خاسراً للمباراة وتأهل فريقهما.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/velez/copa-argentina-velez-fabian-berlanga-boca-clasificacion-cuartos-final_0_Ah4TTrCgLL.html",
@@ -760,7 +779,12 @@
           "url": "https://www.ole.com.ar/velez/copa-argentina-velez-fabian-berlanga-boca-clasificacion-cuartos-final_0_Ah4TTrCgLL.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ea360af1c011",
@@ -1025,23 +1049,27 @@
       "i18n": {
         "es": {
           "title": "Los árbitros de la novena fecha del Torneo Clausura",
-          "summary": "La Liga Profesional anunció quiénes serán los encargados de impartir justicia en los próximos partidos del certamen.",
-          "needs_translation": false
+          "summary": "La Liga Profesional anunció las designaciones arbitrales para los partidos correspondientes a la novena fecha del Torneo Clausura.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Los árbitros de la novena fecha del Torneo Clausura",
-          "summary": "La Liga Profesional anunció quiénes serán los encargados de impartir justicia en los próximos partidos del certamen.",
-          "needs_translation": true
+          "title": "Match officials for matchday 9 of the Torneo Clausura",
+          "summary": "La Liga Profesional has announced the referee appointments for the upcoming fixtures of matchday 9 in the Torneo Clausura.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Los árbitros de la novena fecha del Torneo Clausura",
-          "summary": "La Liga Profesional anunció quiénes serán los encargados de impartir justicia en los próximos partidos del certamen.",
-          "needs_translation": true
+          "title": "Les arbitres de la neuvième journée du Torneo Clausura",
+          "summary": "La Liga Profesional a dévoilé les désignations arbitrales pour les rencontres de la neuvième journée du Torneo Clausura.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Los árbitros de la novena fecha del Torneo Clausura",
-          "summary": "La Liga Profesional anunció quiénes serán los encargados de impartir justicia en los próximos partidos del certamen.",
-          "needs_translation": true
+          "title": "حكام الجولة التاسعة من تورنيو كلاوسورا",
+          "summary": "أعلنت رابطة الدوري للمحترفين عن الطواقم التحكيمية المكلّفة بإدارة مباريات الجولة التاسعة من بطولة تورنيو كلاوسورا.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-primera/torneo-clausura-fecha-arbitros-hora-partidos_0_YH7AQWhQXt.html",
@@ -1063,7 +1091,12 @@
           "url": "https://www.ole.com.ar/futbol-primera/torneo-clausura-fecha-arbitros-hora-partidos_0_YH7AQWhQXt.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b5a30f08ff36",
@@ -1413,23 +1446,27 @@
       "i18n": {
         "fr": {
           "title": "« Il est en train de marcher sur la Serie A » : l’incroyable retour en grâce d’un international italien",
-          "summary": "Comme le raconte le Corriere dello Sport, Davide Frattesi est en train de marcher sur […] Source",
-          "needs_translation": false
+          "summary": "Selon le Corriere dello Sport, le milieu italien de l'Inter Davide Frattesi brille particulièrement en Serie A grâce à un impressionnant regain de forme.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "« Il est en train de marcher sur la Serie A » : l’incroyable retour en grâce d’un international italien",
-          "summary": "Comme le raconte le Corriere dello Sport, Davide Frattesi est en train de marcher sur […] Source",
-          "needs_translation": true
+          "title": "'He is dominating Serie A': the incredible resurgence of an Italian international",
+          "summary": "According to Corriere dello Sport, Inter and Italy midfielder Davide Frattesi is currently dominating in Serie A amid a remarkable return to form.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "« Il est en train de marcher sur la Serie A » : l’incroyable retour en grâce d’un international italien",
-          "summary": "Comme le raconte le Corriere dello Sport, Davide Frattesi est en train de marcher sur […] Source",
-          "needs_translation": true
+          "title": "«Está arrasando en la Serie A»: el increíble resurgimiento de un internacional italiano",
+          "summary": "Según el Corriere dello Sport, el centrocampista internacional de la Inter Davide Frattesi está brillando en la Serie A gracias a su gran momento de forma.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "« Il est en train de marcher sur la Serie A » : l’incroyable retour en grâce d’un international italien",
-          "summary": "Comme le raconte le Corriere dello Sport, Davide Frattesi est en train de marcher sur […] Source",
-          "needs_translation": true
+          "title": "\"إنه يفرض هيمنته على الدوري الإيطالي\": العودة القوية لنجم دولي إيطالي",
+          "summary": "أفادت صحيفة كورييري ديلو سبورت بأن الدولي الإيطالي ولاعب إنتر دافيدي فراتيسي يفرض هيمنته في الدوري الإيطالي بفضل مستوياته المميزة مؤخراً.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.calciomio.fr/il-est-en-train-de-marcher-sur-la-serie-a-lincroyable-retour-en-grace-dun-international-italien-id-179794",
@@ -1451,7 +1488,12 @@
           "url": "https://www.calciomio.fr/il-est-en-train-de-marcher-sur-la-serie-a-lincroyable-retour-en-grace-dun-international-italien-id-179794"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "875cc8ee0ac0",
@@ -1601,23 +1643,27 @@
       "i18n": {
         "es": {
           "title": "El Atlético no olvida a Diogo Jota",
-          "summary": "El Atlético de Madrid no se olvida de Diogo Jota .",
-          "needs_translation": false
+          "summary": "El Atlético de Madrid sigue interesado en Diogo Jota y mantiene al delantero en sus planes a futuro.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Atlético no olvida a Diogo Jota",
-          "summary": "El Atlético de Madrid no se olvida de Diogo Jota .",
-          "needs_translation": true
+          "title": "Atlético de Madrid have not forgotten Diogo Jota",
+          "summary": "Atlético de Madrid remain interested in Diogo Jota and continue to keep the forward on their radar.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El Atlético no olvida a Diogo Jota",
-          "summary": "El Atlético de Madrid no se olvida de Diogo Jota .",
-          "needs_translation": true
+          "title": "L'Atlético de Madrid n'oublie pas Diogo Jota",
+          "summary": "L'Atlético de Madrid conserve un intérêt marqué pour Diogo Jota et continue de suivre attentivement sa situation.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Atlético no olvida a Diogo Jota",
-          "summary": "El Atlético de Madrid no se olvida de Diogo Jota .",
-          "needs_translation": true
+          "title": "أتلتيكو مدريد لم ينس ديوغو جوتا",
+          "summary": "يواصل أتلتيكو مدريد اهتمامه بالبرتغالي ديوغو جوتا ويضعه ضمن حساباته المستقبلية.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260908/1004224977/atletico-no-olvida-diogo-jota.html",
@@ -1639,7 +1685,12 @@
           "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260908/1004224977/atletico-no-olvida-diogo-jota.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e055b55c97b6",
@@ -1985,7 +2036,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Finalistes-de-la-ligue-des-champions-ol-lyonnes-et-le-fc-barcelone-bien-partis-pour-se-disputer-le-ballon-d-or-feminin/1717257#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "232632f1ec23",
@@ -2079,7 +2135,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260908/1004224966/top-10-balon-oro.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "dc44e4045c9a",
@@ -2088,28 +2149,33 @@
       "i18n": {
         "de": {
           "title": "Woltemades Trainer vergleicht ihn mit einem Pferd",
-          "summary": "Seit einigen Tagen spielt Deutschlands Nationalstürmer Nick Woltemade in Italien bei Juventus Turin. Sein neuer Trainer bringt einen interessanten Vergleich ins Spiel.",
-          "needs_translation": false
+          "summary": "Der neue Trainer von Deutschlands Nationalstürmer Nick Woltemade bei Juventus Turin in Italien hat den Neuzugang mit einem Pferd verglichen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Woltemades Trainer vergleicht ihn mit einem Pferd",
-          "summary": "Seit einigen Tagen spielt Deutschlands Nationalstürmer Nick Woltemade in Italien bei Juventus Turin. Sein neuer Trainer bringt einen interessanten Vergleich ins Spiel.",
-          "needs_translation": true
+          "title": "Woltemade's coach compares him to a horse",
+          "summary": "Germany international striker Nick Woltemade recently joined Juventus Turin in Italy, where his new coach compared him to a horse.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Woltemades Trainer vergleicht ihn mit einem Pferd",
-          "summary": "Seit einigen Tagen spielt Deutschlands Nationalstürmer Nick Woltemade in Italien bei Juventus Turin. Sein neuer Trainer bringt einen interessanten Vergleich ins Spiel.",
-          "needs_translation": true
+          "title": "L'entraîneur de Woltemade le compare à un cheval",
+          "summary": "Récemment arrivé à Juventus Turin en Italie, l'attaquant international allemand Nick Woltemade a été comparé à un cheval par son nouvel entraîneur.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Woltemades Trainer vergleicht ihn mit einem Pferd",
-          "summary": "Seit einigen Tagen spielt Deutschlands Nationalstürmer Nick Woltemade in Italien bei Juventus Turin. Sein neuer Trainer bringt einen interessanten Vergleich ins Spiel.",
-          "needs_translation": true
+          "title": "El entrenador de Woltemade lo compara con un caballo",
+          "summary": "El delantero internacional alemán Nick Woltemade, recién llegado a Juventus Turin en Italia, ha sido comparado con un caballo por su nuevo entrenador.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Woltemades Trainer vergleicht ihn mit einem Pferd",
-          "summary": "Seit einigen Tagen spielt Deutschlands Nationalstürmer Nick Woltemade in Italien bei Juventus Turin. Sein neuer Trainer bringt einen interessanten Vergleich ins Spiel.",
-          "needs_translation": true
+          "title": "مدرب فولتماده يشبهه بالحصان",
+          "summary": "شبّه مدرب يوفنتوس الإيطالي المهاجم الدولي الألماني نيك فولتماده بالحصان، وذلك عقب انضمامه حديثاً إلى صفوف الفريق.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/woltemades-trainer-vergleicht-ihn-mit-einem-pferd-1250924/artikel#omrss",
@@ -2131,7 +2197,12 @@
           "url": "https://www.kicker.de/woltemades-trainer-vergleicht-ihn-mit-einem-pferd-1250924/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f8482d5c9775",
@@ -2178,7 +2249,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/josep-pedrerol-incendia-chiringuito-pedri-134085202?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e7f27dcea2a0",
