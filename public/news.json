@@ -626,26 +626,27 @@
       "i18n": {
         "es": {
           "title": "Iñigo Pérez: \"Tenemos la opción de volver a empezar\"",
-          "summary": "Iñigo Pérez , entrenador del Villarreal , afirmó este lunes, en la previa de su estreno en la fase liga de la Champìons 2026-27, contra el Borussia Dortmund en el Signal Iduna Park, que su equipo debe intentar “abstraerse de lo que sucedió el pasado año y hace dos días”, en…",
-          "needs_translation": false
+          "summary": "En la previa del debut de Villarreal frente al Borussia Dortmund en el Signal Iduna Park por la Champìons, el técnico Iñigo Pérez instó a dejar atrás el pasado reciente y comenzar de cero.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Iñigo Pérez: \"We have the option to start over\"",
-          "summary": "Iñigo Pérez , Villarreal coach, said on Monday, in the run-up to its premiere in the league phase of the 2026-27 Champions League, against Borussia Dortmund at Signal Iduna Park, that his team must try to \"abstract from what happened last year and two days ago\", in...",
+          "title": "Iñigo Pérez: \"We have the chance to start fresh\"",
+          "summary": "Ahead of Villarreal's Champìons match against Borussia Dortmund at Signal Iduna Park, manager Iñigo Pérez stated that his squad must move past recent results and seize the opportunity to start anew.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Iñigo Pérez : « Nous avons la possibilité de recommencer »",
-          "summary": "Iñigo Pérez , entraîneur de Villarreal , a déclaré lundi, en prélude à ses débuts en Ligue des champions 2026-27, contre le Borussia Dortmund au Signal Iduna Park, que son équipe devait essayer de « faire abstraction de ce qui s'est passé l'année dernière et il y a deux jours », à...",
+          "title": "Iñigo Pérez : « Nous avons l'occasion de repartir de zéro »",
+          "summary": "Avant l'entrée en lice de Villarreal face au Borussia Dortmund au Signal Iduna Park en Champìons, Iñigo Pérez a exhorté son équipe à oublier les récents revers pour prendre un nouveau départ.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "إينيغو بيريز: \"لدينا خيار البدء من جديد\"",
-          "summary": "قال إنيغو بيريز ، مدرب فياريال، يوم الاثنين، في الفترة التي سبقت عرضه الأول في مرحلة الدوري من دوري أبطال أوروبا 2026-2027، ضد بوروسيا دورتموند في Signal Iduna Park، أن فريقه يجب أن يحاول \"التجريد مما حدث العام الماضي وقبل يومين\"، في...",
+          "title": "إينيغو بيريز: \"لدينا فرصة للبدء من جديد\"",
+          "summary": "قبل مواجهة بوروسيا دورتموند على ملعب سيغنال إيدونا بارك في دوري أبطال أوروبا، أكد إينيغو بيريز مدرب فياريال ضرورة تناسي النتائج السابقة والتركيز على بداية جديدة للفريق.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/villarreal/20260907/1004224497/inigo-perez.html",
@@ -667,7 +668,12 @@
           "url": "https://www.mundodeportivo.com/futbol/villarreal/20260907/1004224497/inigo-perez.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a3f55ad66f95",
@@ -880,27 +886,44 @@
       "summary": "Interrogé sur son travail défensif au Real Madrid, en comparaison à celui d’Ousmane Dembélé et Raphinha, l’attaquant français a développé sa réponse dans un espagnol impeccable.",
       "i18n": {
         "fr": {
-          "title": "«Je pourrais jouer les idiots...» : Mbappé, titillé par une comparaison avec Dembélé, répond à un journaliste espagnol",
-          "summary": "Interrogé sur son travail défensif au Real Madrid, en comparaison à celui d’Ousmane Dembélé et Raphinha, l’attaquant français a développé sa réponse dans un espagnol impeccable.",
-          "needs_translation": false
+          "title": "Real Madrid : Mbappé recadre un journaliste sur son repli défensif",
+          "summary": "Kylian Mbappé a sèchement recadré un journaliste espagnol qui comparait son investissement défensif au Real Madrid à celui d'Ousmane Dembélé et Raphinha.",
+          "body": [
+            "Interrogé avant le duel de Ligue des champions face à l'Inter Milan, le Français a rappelé qu'il empilait plus de buts que ses homologues. S'il admet que le vestiaire madrilène doit progresser sans le ballon pour concéder moins d'occasions, l'attaquant refuse les comparaisons et met en avant son impact offensif unique."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "\"I could play dumb...\": Mbappé, tickled by a comparison with Dembélé, answers a Spanish journalist",
-          "summary": "Asked about his defensive work at Real Madrid, compared to that of Ousmane Dembélé and Raphinha, the French striker developed his answer in impeccable Spanish.",
+          "title": "Real Madrid: Mbappé hits back at reporter over defensive work rate",
+          "summary": "Kylian Mbappé gave a blunt response to a Spanish reporter comparing his defensive efforts at Real Madrid with those of Ousmane Dembélé and Raphinha.",
+          "body": [
+            "Speaking before the Champions League meeting with Inter Milan, the forward pointed out that he scores far more goals than either winger. While admitting Real Madrid must improve collectively to concede fewer goals, the Frenchman dismissed the comparison and highlighted his distinct offensive contribution."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "\"Podría jugar a los idiotas...\": Mbappé, titilado por una comparación con Dembélé, responde a un periodista español",
-          "summary": "Interrogado sobre su trabajo defensivo en el Real Madrid, en comparación con el de Ousmane Dembélé y Raphinha, el delantero francés desarrolló su respuesta en un español impecable.",
+          "title": "Real Madrid: Mbappé frena a un periodista por su implicación defensiva",
+          "summary": "Kylian Mbappé respondió con contundencia a un periodista español que comparó su trabajo defensivo en el Real Madrid con el de Ousmane Dembélé y Raphinha.",
+          "body": [
+            "Antes de medirse al Inter Milan en Champions League, el delantero recordó que él marca muchos más goles que ambos jugadores. Aunque reconoció que todo el equipo debe mejorar sin balón para encajar menos, el francés rechazó las comparaciones y defendió su desequilibrio en ataque."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "\"يمكنني أن ألعب دور الغبي... \": يجيب مبابي، مدغدغًا بمقارنة مع ديمبيلي، صحفيًا إسبانيًا",
-          "summary": "Interrogé sur son travail défensif au Real Madrid, en comparaison à celui d’Ousmane Dembélé et Raphinha, l’attaquant français a développé sa réponse dans un espagnol impeccable.",
+          "title": "ريال مدريد: مبابي يوجه رداً حازماً لصحفي بشأن واجباته الدفاعية",
+          "summary": "وجّه كيليان مبابي رداً حازماً إلى صحفي إسباني حاول مقارنة مجهوده الدفاعي في ريال مدريد بما يقدمه عثمان ديمبيلي ورافينيا.",
+          "body": [
+            "قبل مواجهة إنتر ميلان في دوري أبطال أوروبا، رد المهاجم الفرنسي بأنه يسجل أهدافاً أكثر من الاسمين المذكورين. ورغم اعترافه بحاجة ريال مدريد للتطور جماعياً لتقليص الأهداف المستقبلة، رفض مبابي عقد مقارنات ظالمة، مؤكداً بصمته الهجومية الخاصة على أرض الملعب."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/je-pourrais-jouer-les-idiots-mbappe-titille-par-une-comparaison-avec-dembele-repond-a-un-journaliste-espagnol-20260907",
@@ -922,7 +945,20 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/je-pourrais-jouer-les-idiots-mbappe-titille-par-une-comparaison-avec-dembele-repond-a-un-journaliste-espagnol-20260907"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-08T10:03:48+00:00"
+        }
+      }
     },
     {
       "id": "d92c9b984a12",
@@ -1034,23 +1070,27 @@
       "i18n": {
         "es": {
           "title": "Mbappé elige a sus Balones de Oro favoritos y ningunea a dos leyendas del Madrid",
-          "summary": "Kylian Mbappé está siendo, con permiso de José Mourinho , el gran protagonista del día en el Real Madrid .",
-          "needs_translation": false
+          "summary": "Kylian Mbappé acapara la atención en el Real Madrid junto a José Mourinho, tras revelar sus elecciones de los mejores ganadores del Balón de Oro.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mbappé elige a sus Balones de Oro favoritos y ningunea a dos leyendas del Madrid",
-          "summary": "Kylian Mbappé está siendo, con permiso de José Mourinho , el gran protagonista del día en el Real Madrid .",
-          "needs_translation": true
+          "title": "Mbappé picks his favorite Ballon d'Or winners and snubs two Real Madrid legends",
+          "summary": "Kylian Mbappé is taking center stage at Real Madrid alongside José Mourinho after naming his favorite Ballon d'Or winners.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Mbappé elige a sus Balones de Oro favoritos y ningunea a dos leyendas del Madrid",
-          "summary": "Kylian Mbappé está siendo, con permiso de José Mourinho , el gran protagonista del día en el Real Madrid .",
-          "needs_translation": true
+          "title": "Mbappé choisit ses Ballons d'Or favoris et ignore deux légendes du Real Madrid",
+          "summary": "Kylian Mbappé partage l'actualité au Real Madrid avec José Mourinho après avoir désigné ses lauréats favoris du Ballon d'Or.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Mbappé elige a sus Balones de Oro favoritos y ningunea a dos leyendas del Madrid",
-          "summary": "Kylian Mbappé está siendo, con permiso de José Mourinho , el gran protagonista del día en el Real Madrid .",
-          "needs_translation": true
+          "title": "مبابي يختار المتوجين المفضلين لديه بالكرة الذهبية ويتجاهل أسطورتين من ريال مدريد",
+          "summary": "يتصدر كيليان مبابي المشهد الإعلامي في ريال مدريد إلى جانب جوزيه مورينيو بعد الكشف عن خياراته المفضلة للفائزين بالكرة الذهبية.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260907/1004224491/mbappe-elige-balones-oro-favoritos-ningunea-dos-leyendas-madrid.html",
@@ -1138,28 +1178,33 @@
       "i18n": {
         "de": {
           "title": "Freigang trifft, Doorsoun verschießt: Frankfurt siegt bei Union",
-          "summary": "Das Montagsspiel der Frauen-Bundesliga geht an Eintracht Frankfurt. Die Gäste nehmen die drei Punkte dank eines Treffers von Laura Freigang mit an den Main, Sara Doorsoun vergab derweil einen Elfmeter.",
-          "needs_translation": false
+          "summary": "Eintracht Frankfurt gewinnt das Montagsspiel der Frauen-Bundesliga bei Union durch ein Tor von Laura Freigang. Sara Doorsoun vergab zudem einen Elfmeter für die Gäste.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Freigang trifft, Doorsoun verschießt: Frankfurt siegt bei Union",
-          "summary": "Das Montagsspiel der Frauen-Bundesliga geht an Eintracht Frankfurt. Die Gäste nehmen die drei Punkte dank eines Treffers von Laura Freigang mit an den Main, Sara Doorsoun vergab derweil einen Elfmeter.",
-          "needs_translation": true
+          "title": "Freigang scores, Doorsoun misses: Frankfurt win at Union",
+          "summary": "Eintracht Frankfurt secured a Frauen-Bundesliga victory away at Union thanks to a goal from Laura Freigang. Sara Doorsoun also missed a penalty for the visitors.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Freigang trifft, Doorsoun verschießt: Frankfurt siegt bei Union",
-          "summary": "Das Montagsspiel der Frauen-Bundesliga geht an Eintracht Frankfurt. Die Gäste nehmen die drei Punkte dank eines Treffers von Laura Freigang mit an den Main, Sara Doorsoun vergab derweil einen Elfmeter.",
-          "needs_translation": true
+          "title": "Freigang marque, Doorsoun manque un penalty : Frankfurt s'impose chez Union",
+          "summary": "Eintracht Frankfurt s'est imposé sur le terrain d'Union en Frauen-Bundesliga grâce à un but de Laura Freigang. Sara Doorsoun a quant à elle manqué un penalty.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Freigang trifft, Doorsoun verschießt: Frankfurt siegt bei Union",
-          "summary": "Das Montagsspiel der Frauen-Bundesliga geht an Eintracht Frankfurt. Die Gäste nehmen die drei Punkte dank eines Treffers von Laura Freigang mit an den Main, Sara Doorsoun vergab derweil einen Elfmeter.",
-          "needs_translation": true
+          "title": "Freigang marca, Doorsoun falla: Frankfurt vence a Union",
+          "summary": "Eintracht Frankfurt se impuso a domicilio ante Union en la Frauen-Bundesliga gracias a un tanto de Laura Freigang. Sara Doorsoun falló un penalti para las visitantes.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Freigang trifft, Doorsoun verschießt: Frankfurt siegt bei Union",
-          "summary": "Das Montagsspiel der Frauen-Bundesliga geht an Eintracht Frankfurt. Die Gäste nehmen die drei Punkte dank eines Treffers von Laura Freigang mit an den Main, Sara Doorsoun vergab derweil einen Elfmeter.",
-          "needs_translation": true
+          "title": "فرايغانغ تسجل ودورسون تهدر: فرانكفورت يفوز على أونيون",
+          "summary": "فازت سيدات آينتراخت فرانكفورت على مضيفتهن أونيون في الدوري الألماني للسيدات بهدف سجلته لاورا فرايغانغ، في مباراة شهدت إهدار زميلتها سارة دورسون لركلة جزاء.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/freigang-trifft-doorsoun-verschiesst-frankfurt-siegt-bei-union-1250681/video#omrss",
@@ -1548,7 +1593,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260907/1004224480/lautaro-sobre-julian-atravesando-no-facil-decision-club.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a8a1d8d87066",
@@ -1662,23 +1712,27 @@
       "i18n": {
         "fr": {
           "title": "Ligue des champions : PSG, machine à cash, Kylian Mbappé… 10 questions pour une édition qui fait (toujours) saliver la planète football",
-          "summary": "DÉCRYPTAGE - La nouvelle édition de la C1 promet enjeux XXL, spectacles à foison et batailles homériques. Avec une équipe à abattre sur le Vieux Continent : le Paris SG.",
-          "needs_translation": false
+          "summary": "La nouvelle édition de la Ligue des champions s'ouvre avec d'importants enjeux financiers et sportifs, désignant Paris SG comme l'équipe à battre sur le Vieux Continent.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Ligue des champions : PSG, machine à cash, Kylian Mbappé… 10 questions pour une édition qui fait (toujours) saliver la planète football",
-          "summary": "DÉCRYPTAGE - La nouvelle édition de la C1 promet enjeux XXL, spectacles à foison et batailles homériques. Avec une équipe à abattre sur le Vieux Continent : le Paris SG.",
-          "needs_translation": true
+          "title": "Champions League: PSG, cash machine, Kylian Mbappé… 10 questions for an edition that (still) makes the football world salivate",
+          "summary": "The new edition of the Champions League kicks off with major sporting and financial stakes, marking Paris SG as the team to beat in Europe.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ligue des champions : PSG, machine à cash, Kylian Mbappé… 10 questions pour une édition qui fait (toujours) saliver la planète football",
-          "summary": "DÉCRYPTAGE - La nouvelle édition de la C1 promet enjeux XXL, spectacles à foison et batailles homériques. Avec une équipe à abattre sur le Vieux Continent : le Paris SG.",
-          "needs_translation": true
+          "title": "Liga de Campeones: PSG, máquina de dinero, Kylian Mbappé… 10 preguntas para una edición que (todavía) hace salivar al planeta fútbol",
+          "summary": "La nueva edición de la Liga de Campeones arranca con grandes desafíos económicos y deportivos, situando a Paris SG como el rival a batir en Europa.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Ligue des champions : PSG, machine à cash, Kylian Mbappé… 10 questions pour une édition qui fait (toujours) saliver la planète football",
-          "summary": "DÉCRYPTAGE - La nouvelle édition de la C1 promet enjeux XXL, spectacles à foison et batailles homériques. Avec une équipe à abattre sur le Vieux Continent : le Paris SG.",
-          "needs_translation": true
+          "title": "دوري أبطال أوروبا: باريس سان جيرمان، آلة الأموال، كيليان مبابي... 10 أسئلة لنسخة لا تزال تشعل حماس عالم كرة القدم",
+          "summary": "تنطلق النسخة الجديدة من دوري أبطال أوروبا برهانات رياضية ومالية كبرى، حيث يبرز باريس سان جيرمان كالفريق الأبرز والمستهدف للإطاحة به في القارة العجوز.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/ligue-des-champions-psg-machine-a-cash-kylian-mbappe-10-questions-pour-une-edition-qui-fait-toujours-saliver-la-planete-football-20260907",
@@ -1700,7 +1754,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/ligue-des-champions-psg-machine-a-cash-kylian-mbappe-10-questions-pour-une-edition-qui-fait-toujours-saliver-la-planete-football-20260907"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5181295ede81",
@@ -2039,23 +2098,27 @@
       "i18n": {
         "es": {
           "title": "Chivu: \"Mourinho es una persona especial\"",
-          "summary": "El rumano Cristian Chivu , entrenador del Inter de Milán , destacó que el portugués José Mourinho , quien fue su técnico durante dos temporadas, entre 2008 y 2010, y este martes su rival en el banquillo del Real Madrid, es “una persona especial” que tuvo “la suerte de…",
-          "needs_translation": false
+          "summary": "Cristian Chivu, entrenador del Inter de Milán, elogió a José Mourinho y lo calificó de \"persona especial\" antes de enfrentarse a su Real Madrid, tras haber sido dirigido por él entre 2008 y 2010.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Chivu: \"Mourinho es una persona especial\"",
-          "summary": "El rumano Cristian Chivu , entrenador del Inter de Milán , destacó que el portugués José Mourinho , quien fue su técnico durante dos temporadas, entre 2008 y 2010, y este martes su rival en el banquillo del Real Madrid, es “una persona especial” que tuvo “la suerte de…",
-          "needs_translation": true
+          "title": "Chivu: \"Mourinho is a special person\"",
+          "summary": "Inter de Milán coach Cristian Chivu praised José Mourinho as \"a special person\" ahead of facing his Real Madrid, having previously played under the Portuguese tactician between 2008 and 2010.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Chivu: \"Mourinho es una persona especial\"",
-          "summary": "El rumano Cristian Chivu , entrenador del Inter de Milán , destacó que el portugués José Mourinho , quien fue su técnico durante dos temporadas, entre 2008 y 2010, y este martes su rival en el banquillo del Real Madrid, es “una persona especial” que tuvo “la suerte de…",
-          "needs_translation": true
+          "title": "Chivu : « Mourinho est une personne spéciale »",
+          "summary": "Cristian Chivu, entraîneur de l'Inter de Milán, a qualifié José Mourinho de « personne spéciale » avant d'affronter son Real Madrid, après avoir évolué sous ses ordres entre 2008 et 2010.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Chivu: \"Mourinho es una persona especial\"",
-          "summary": "El rumano Cristian Chivu , entrenador del Inter de Milán , destacó que el portugués José Mourinho , quien fue su técnico durante dos temporadas, entre 2008 y 2010, y este martes su rival en el banquillo del Real Madrid, es “una persona especial” que tuvo “la suerte de…",
-          "needs_translation": true
+          "title": "تشيفو: \"مورينيو شخص مميز\"",
+          "summary": "أشاد كريستيان تشيفو، مدرب إنتر ميلان، بالبرتغالي جوزيه مورينيو واصفاً إياه بأنه \"شخص مميز\"، وذلك قبل مواجهة ريال مدريد بعدما لعب تحت قيادته بين عامي 2008 و2010.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260907/1004224466/chivu-mourinho-persona-especial.html",
@@ -2077,7 +2140,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260907/1004224466/chivu-mourinho-persona-especial.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "992c21f26954",
