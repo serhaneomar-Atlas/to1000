@@ -348,7 +348,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 2,
+        "quality": 3,
         "source_read": "skipped"
       }
     },
@@ -1325,26 +1325,27 @@
       "i18n": {
         "es": {
           "title": "Chivu: \"No me voy enfadado\"",
-          "summary": "Cristian Chivu, entrenador del Inter de Milán, quiso poner en valor la actuación de su equipo tras la derrota contra el Real Madrid en el Santiago Bernabéu en la primera jornada de la fase liga.",
-          "needs_translation": false
+          "summary": "Cristian Chivu, entrenador del Inter de Milán, valoró positivamente el rendimiento de su equipo a pesar de la derrota ante el Real Madrid en el Santiago Bernabéu en la primera jornada de la fase liga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "Chivu: \"I'm not leaving angry\"",
-          "summary": "Cristian Chivu, coach of Inter Milan, wanted to highlight the performance of his team after the defeat against Real Madrid at the Santiago Bernabéu on the first day of the league phase.",
+          "summary": "Inter de Milán coach Cristian Chivu praised his team's performance despite their defeat against Real Madrid at the Santiago Bernabéu on matchday one of the league phase.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Chivu : « Je ne pars pas en colère »",
-          "summary": "Cristian Chivu, entraîneur de l'Inter Milan, a voulu mettre en valeur la performance de son équipe après la défaite contre le Real Madrid au Santiago Bernabéu lors de la première journée de la phase de championnat.",
+          "title": "Chivu : « Je ne pars pas en colère »",
+          "summary": "L'entraîneur de l'Inter de Milán, Cristian Chivu, a souligné la prestation positive de son équipe malgré la défaite face au Real Madrid au Santiago Bernabéu lors de la première journée de la phase de ligue.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تشيفو: \"لن أغادر غاضبًا\"",
-          "summary": "أراد كريستيان تشيفو، مدرب إنتر ميلان، تسليط الضوء على أداء فريقه بعد الهزيمة ضد ريال مدريد في سانتياغو برنابيو في اليوم الأول من مرحلة الدوري.",
+          "title": "كيفو: «لست غاضباً»",
+          "summary": "أشاد مدرب إنتر ميلان كريستيان كيفو بأداء فريقه رغم الهزيمة أمام ريال مدريد في سانتياغو برنابيو، لحساب الجولة الأولى من مرحلة الدوري.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260909/1004225046/chivu-no-me-enfadado.html",
@@ -1366,7 +1367,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260909/1004225046/chivu-no-me-enfadado.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b081d57b8922",
@@ -1867,28 +1873,33 @@
       "i18n": {
         "de": {
           "title": "\"Hoffen, dass es nichts Ernsthaftes ist\": Weitere Untersuchungen bei Karetsas",
-          "summary": "Es lief die 23. Minute beim Champions-League-Auftakt von Borussia Dortmund, als sich Konstantinos Karetsas auf den Boden setzte und wenig später mit einer Trage vom Platz abtransportiert werden musste.",
-          "needs_translation": false
+          "summary": "Konstantinos Karetsas musste beim Champions-League-Auftakt von Borussia Dortmund in der 23. Minute verletzt auf einer Trage vom Platz transportiert werden. Weitere medizinische Untersuchungen stehen an.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "\"Hoffen, dass es nichts Ernsthaftes ist\": Weitere Untersuchungen bei Karetsas",
-          "summary": "Es lief die 23. Minute beim Champions-League-Auftakt von Borussia Dortmund, als sich Konstantinos Karetsas auf den Boden setzte und wenig später mit einer Trage vom Platz abtransportiert werden musste.",
-          "needs_translation": true
+          "title": "\"Hoping it is nothing serious\": Further tests for Karetsas",
+          "summary": "Konstantinos Karetsas was stretchered off in the 23rd minute during Borussia Dortmund's Champions League opener. The player will undergo further medical examinations.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "\"Hoffen, dass es nichts Ernsthaftes ist\": Weitere Untersuchungen bei Karetsas",
-          "summary": "Es lief die 23. Minute beim Champions-League-Auftakt von Borussia Dortmund, als sich Konstantinos Karetsas auf den Boden setzte und wenig später mit einer Trage vom Platz abtransportiert werden musste.",
-          "needs_translation": true
+          "title": "« En espérant que ce ne soit rien de grave » : examens complémentaires pour Karetsas",
+          "summary": "Lors du premier match de Borussia Dortmund en Ligue des champions, Konstantinos Karetsas a été évacué sur une civière dès la 23e minute. Le joueur passera des examens complémentaires.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "\"Hoffen, dass es nichts Ernsthaftes ist\": Weitere Untersuchungen bei Karetsas",
-          "summary": "Es lief die 23. Minute beim Champions-League-Auftakt von Borussia Dortmund, als sich Konstantinos Karetsas auf den Boden setzte und wenig später mit einer Trage vom Platz abtransportiert werden musste.",
-          "needs_translation": true
+          "title": "\"Esperamos que no sea nada grave\": más pruebas para Karetsas",
+          "summary": "Konstantinos Karetsas fue retirado en camilla en el minuto 23 del estreno de Borussia Dortmund en la Champions League. Se someterá a pruebas médicas adicionales para evaluar su lesión.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"Hoffen, dass es nichts Ernsthaftes ist\": Weitere Untersuchungen bei Karetsas",
-          "summary": "Es lief die 23. Minute beim Champions-League-Auftakt von Borussia Dortmund, als sich Konstantinos Karetsas auf den Boden setzte und wenig später mit einer Trage vom Platz abtransportiert werden musste.",
-          "needs_translation": true
+          "title": "\"نأمل ألا تكون إصابة خطيرة\": فحوصات طبية إضافية لكاريتساس",
+          "summary": "غادر كونستانتينوس كاريتساس مباراة بوروسيا دورتموند الافتتاحية في دوري أبطال أوروبا على نقالة في الدقيقة 23 بسبب الإصابة. ومن المقرر أن يخضع اللاعب لفحوصات إضافية لتحديد حجمها.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/hoffen-dass-es-nichts-ernsthaftes-ist-weitere-untersuchungen-bei-karetsas-1250930/artikel#omrss",
@@ -1910,7 +1921,12 @@
           "url": "https://www.kicker.de/hoffen-dass-es-nichts-ernsthaftes-ist-weitere-untersuchungen-bei-karetsas-1250930/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0f434b32c557",
@@ -2399,23 +2415,27 @@
       "i18n": {
         "es": {
           "title": "Lille - Betis, en imágenes",
-          "summary": "El Lille recibió al Real Betis en el Estadio Pierre Mauroy para disputar el primer partido de la liga de la Champions League",
-          "needs_translation": false
+          "summary": "Lille y Real Betis se enfrentaron en el Estadio Pierre Mauroy en la primera jornada de la fase de liga de la Champions League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Lille - Betis, en imágenes",
-          "summary": "El Lille recibió al Real Betis en el Estadio Pierre Mauroy para disputar el primer partido de la liga de la Champions League",
-          "needs_translation": true
+          "title": "Lille vs Betis in pictures",
+          "summary": "Lille hosted Real Betis at the Estadio Pierre Mauroy for their opening matchday in the Champions League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Lille - Betis, en imágenes",
-          "summary": "El Lille recibió al Real Betis en el Estadio Pierre Mauroy para disputar el primer partido de la liga de la Champions League",
-          "needs_translation": true
+          "title": "Lille - Betis en images",
+          "summary": "Lille a accueilli Real Betis au Estadio Pierre Mauroy lors de la première journée de la phase de ligue de la Champions League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Lille - Betis, en imágenes",
-          "summary": "El Lille recibió al Real Betis en el Estadio Pierre Mauroy para disputar el primer partido de la liga de la Champions League",
-          "needs_translation": true
+          "title": "مباراة ليل وبيتيس في صور",
+          "summary": "استضاف ليل نظيره ريال بيتيس على ملعب بيير موروا في افتتاح مباريات مرحلة الدوري ضمن دوري أبطال أوروبا.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/champions-league/20260908/1004224996/lille-betis-imagenes.html",
@@ -2437,7 +2457,12 @@
           "url": "https://www.mundodeportivo.com/futbol/champions-league/20260908/1004224996/lille-betis-imagenes.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a7c9a9ba83af",
