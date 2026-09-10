@@ -1,20 +1,14 @@
 {
-  "genere_le": "2026-09-09T11:04:12+00:00",
+  "genere_le": "2026-09-10T11:00:23+00:00",
   "pages_verifiees": 33,
-  "erreurs": 3,
+  "erreurs": 2,
   "alertes": 0,
   "entrees": [
     {
       "niveau": "erreur",
-      "famille": "fraicheur",
-      "ou": "stats.json",
-      "quoi": "donnée vieille de 3j (max 3 days, 0:00:00) — la synchro ne tourne probablement plus"
-    },
-    {
-      "niveau": "erreur",
       "famille": "coherence",
       "ou": "goals-data.json",
-      "quoi": "967 buts en base, le plus haut est n°967, mais le compteur affiche 978 — 11 but(s) sans fiche"
+      "quoi": "967 buts en base, le plus haut est n°967, mais le compteur affiche 979 — 12 but(s) sans fiche"
     },
     {
       "niveau": "erreur",
