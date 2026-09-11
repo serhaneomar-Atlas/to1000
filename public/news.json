@@ -67,26 +67,27 @@
       "i18n": {
         "en": {
           "title": "Hull winger Thomas unhurt after car crash",
-          "summary": "Premier League winger Sorba Thomas's Land Rover overturns on Millhouse Woods Lane in Cottingham.",
-          "needs_translation": false
+          "summary": "Hull winger Sorba Thomas escaped uninjured after his Land Rover overturned on Millhouse Woods Lane in Cottingham.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Ailier de coque Thomas indemne après un accident de voiture",
-          "summary": "L'ailier de Premier League Sorba Thomas's Land Rover se renverse sur Millhouse Woods Lane à Cottingham.",
+          "title": "L'ailier de Hull Thomas indemne après un accident de voiture",
+          "summary": "L'ailier de Hull Sorba Thomas est indemne après le tonneau de son Land Rover sur Millhouse Woods Lane à Cottingham.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El extremo del casco Thomas sale ileso después de un accidente automovilístico",
-          "summary": "El Land Rover del extremo de la Premier League Sorba Thomas vuelca en Millhouse Woods Lane en Cottingham.",
+          "title": "El extremo de Hull Thomas resulta ileso tras un accidente de coche",
+          "summary": "El extremo de Hull Sorba Thomas salió ileso tras volcar su Land Rover en Millhouse Woods Lane, en Cottingham.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "جناح هال توماس لم يصب بأذى بعد حادث سيارة",
-          "summary": "جناح الدوري الممتاز سوربا توماس لاند روفر ينقلب على ميلهاوس وودز لين في كوتينغهام.",
+          "title": "جناح هال توماس ينجو دون إصابات بعد حادث سير",
+          "summary": "نجا جناح هال سوربا توماس دون إصابات إثر انقلاب سيارته من طراز لاند روفر في طريق ميلهاوس وودز لين في كوتينغهام.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/news/articles/cn8m2p4dmjro?at_medium=RSS&at_campaign=rss",
@@ -108,7 +109,12 @@
           "url": "https://www.bbc.co.uk/news/articles/cn8m2p4dmjro?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6453984ad072",
@@ -526,7 +532,12 @@
           "url": "https://www.calciomio.fr/un-gardien-et-un-ailier-en-moins-une-infirmerie-qui-deborde-apres-la-gifle-recue-contre-arsenal-le-napoli-dallegri-senfonce-et-lheritage-de-conte-se-fissure-deja-id-179850"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "43792cdaf303",
@@ -744,7 +755,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/javier-gomez-director-general-laliga-134181159?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ce251d5eeb87",
@@ -915,26 +931,27 @@
       "i18n": {
         "es": {
           "title": "La reconquista de Vinicius empieza con su 'némesis'",
-          "summary": "Que Vinicius es uno de los jugadores que, en los últimos días, divide al madridismo es algo claro y manifiesto.",
-          "needs_translation": false
+          "summary": "Vinicius divide la opinión entre los aficionados del Real Madrid en los últimos días, mientras afronta el reto de reconquistar el apoyo del madridismo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Vinicius' reconquest begins with his' nemesis'",
-          "summary": "That Vinicius is one of the players who, in recent days, divides Madridismo is something clear and manifest.",
+          "title": "Vinicius's reconquest begins with his 'nemesis'",
+          "summary": "Vinicius has divided opinion among Real Madrid supporters in recent days as he works to win back the fans' backing.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La reconquête de Vinicius commence avec son « ennemi juré »",
-          "summary": "Que Vinicius soit l'un des joueurs qui, ces derniers jours, divise le Madridismo est une chose claire et manifeste.",
+          "title": "La reconquête de Vinicius commence avec son « némésis »",
+          "summary": "Vinicius suscite des divisions parmi les supporters du Real Madrid ces derniers jours, au moment où il cherche à reconquérir le public madrilène.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تبدأ إعادة غزو فينيسيوس بـ \"عدوه\"",
-          "summary": "أن فينيسيوس هو واحد من اللاعبين الذين، في الأيام الأخيرة، يقسم مدريد هو شيء واضح وواضح.",
+          "title": "رحلة فينيسيوس لاستعادة ثقة الجماهير تبدأ أمام «عقدته»",
+          "summary": "يثير فينيسيوس حالة من الانقسام بين جماهير ريال مدريد في الأيام الأخيرة، حيث يسعى اللاعب لاستعادة دعم مشجعي النادي الملكي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260911/1004225816/reconquista-vinicius-empieza-nemesis.html",
@@ -956,7 +973,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260911/1004225816/reconquista-vinicius-empieza-nemesis.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "cc4e25dfbe57",
@@ -1164,7 +1186,12 @@
           "url": "https://www.sportschau.de/regional/br/br-nuernbergs-traumstart-starker-club-oder-leichte-gegner-102.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "caa060461b5a",
@@ -1220,28 +1247,33 @@
       "i18n": {
         "de": {
           "title": "Prömels Rückkehr: Ein Insider im Außendienst",
-          "summary": "Vier Monate nach seinem Abschied aus Hoffenheim kehrt der nach Stuttgart abgewanderte Grischa Prömel mit dem VfB zur TSG zurück. Diesmal als Gegner.",
-          "needs_translation": false
+          "summary": "Vier Monate nach seinem Wechsel von Hoffenheim zum VfB Stuttgart kehrt Grischa Prömel mit den Schwaben als Gegner zur TSG zurück.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Prömels Rückkehr: Ein Insider im Außendienst",
-          "summary": "Vier Monate nach seinem Abschied aus Hoffenheim kehrt der nach Stuttgart abgewanderte Grischa Prömel mit dem VfB zur TSG zurück. Diesmal als Gegner.",
-          "needs_translation": true
+          "title": "Prömel's return: An insider on away duty",
+          "summary": "Four months after leaving Hoffenheim for VfB Stuttgart, Grischa Prömel returns to face his former club as an opponent.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Prömels Rückkehr: Ein Insider im Außendienst",
-          "summary": "Vier Monate nach seinem Abschied aus Hoffenheim kehrt der nach Stuttgart abgewanderte Grischa Prömel mit dem VfB zur TSG zurück. Diesmal als Gegner.",
-          "needs_translation": true
+          "title": "Le retour de Prömel : un infiltré en déplacement",
+          "summary": "Quatre mois après son départ de Hoffenheim pour le VfB Stuttgart, Grischa Prömel retrouve son ancien club en tant qu'adversaire.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Prömels Rückkehr: Ein Insider im Außendienst",
-          "summary": "Vier Monate nach seinem Abschied aus Hoffenheim kehrt der nach Stuttgart abgewanderte Grischa Prömel mit dem VfB zur TSG zurück. Diesmal als Gegner.",
-          "needs_translation": true
+          "title": "El regreso de Prömel: un infiltrado a domicilio",
+          "summary": "Cuatro meses después de dejar Hoffenheim para fichar por VfB Stuttgart, Grischa Prömel regresa como rival para medirse a su antiguo club.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Prömels Rückkehr: Ein Insider im Außendienst",
-          "summary": "Vier Monate nach seinem Abschied aus Hoffenheim kehrt der nach Stuttgart abgewanderte Grischa Prömel mit dem VfB zur TSG zurück. Diesmal als Gegner.",
-          "needs_translation": true
+          "title": "عودة بروميل: عارف بالبيت القديم في مهمة خارجية",
+          "summary": "يعود غريشا بروميل لمواجهة فريقه السابق هوفنهايم كخصم بقميص شتوتغارت، بعد مرور أربعة أشهر على رحيله.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/proemels-rueckkehr-ein-insider-im-aussendienst-1251483/artikel#omrss",
@@ -1263,7 +1295,12 @@
           "url": "https://www.kicker.de/proemels-rueckkehr-ein-insider-im-aussendienst-1251483/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "1a7b87393f87",
@@ -1362,7 +1399,12 @@
           "url": "https://fr.hespress.com/488007-lions-de-latlas-plusieurs-absences-et-quatre-nouveaux-visages-attendus-dans-la-prochaine-liste.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "46ddd070fe8d",
@@ -1465,23 +1507,27 @@
       "i18n": {
         "es": {
           "title": "Al Real Madrid le sale un rival inesperado",
-          "summary": "Más allá de los 19 equipos con los que el Real Madrid tendrá que pelear esta temporada si quiere ganar LaLiga y los otros ocho, de momento, con los que tendrá que hacer lo propio en la Champions , al conjunto blanco le ha salido un nuevo ‘rival’: el Santiago Bernabéu.",
-          "needs_translation": false
+          "summary": "Además de sus rivales en LaLiga y la Champions, el Real Madrid afronta un desafío inesperado esta temporada: el Santiago Bernabéu.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Al Real Madrid le sale un rival inesperado",
-          "summary": "Más allá de los 19 equipos con los que el Real Madrid tendrá que pelear esta temporada si quiere ganar LaLiga y los otros ocho, de momento, con los que tendrá que hacer lo propio en la Champions , al conjunto blanco le ha salido un nuevo ‘rival’: el Santiago Bernabéu.",
-          "needs_translation": true
+          "title": "Real Madrid faces an unexpected rival",
+          "summary": "Alongside its opponents in LaLiga and the Champions, Real Madrid faces an unexpected obstacle this season: the Santiago Bernabéu.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Al Real Madrid le sale un rival inesperado",
-          "summary": "Más allá de los 19 equipos con los que el Real Madrid tendrá que pelear esta temporada si quiere ganar LaLiga y los otros ocho, de momento, con los que tendrá que hacer lo propio en la Champions , al conjunto blanco le ha salido un nuevo ‘rival’: el Santiago Bernabéu.",
-          "needs_translation": true
+          "title": "Un rival inattendu pour le Real Madrid",
+          "summary": "En plus de ses adversaires en LaLiga et en Champions, le Real Madrid doit composer cette saison avec un obstacle inattendu : le Santiago Bernabéu.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Al Real Madrid le sale un rival inesperado",
-          "summary": "Más allá de los 19 equipos con los que el Real Madrid tendrá que pelear esta temporada si quiere ganar LaLiga y los otros ocho, de momento, con los que tendrá que hacer lo propio en la Champions , al conjunto blanco le ha salido un nuevo ‘rival’: el Santiago Bernabéu.",
-          "needs_translation": true
+          "title": "منافس غير متوقع يواجه ريال مدريد",
+          "summary": "إلى جانب منافسيه في الدوري الإسباني ودوري أبطال أوروبا، يواجه ريال مدريد تحدياً غير متوقع هذا الموسم يتمثل في ملعبه سانتياغو برنابيو.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260911/1004225815/real-madrid-le-sale-rival-inesperado.html",
@@ -1503,7 +1549,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260911/1004225815/real-madrid-le-sale-rival-inesperado.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "48ae6586d83d",
@@ -1512,23 +1563,27 @@
       "i18n": {
         "es": {
           "title": "Ilusión de Laporta en la Diada: \"Somos candidatos a todo\"",
-          "summary": "Como marca la tradición en la Diada Nacional de Catalunya , que se celebra este 11 de septiembre, el presidente Joan Laporta encabezó la representación del FC Barcelona en la ofrenda floral al Monument de Rafael Casanovas .",
-          "needs_translation": false
+          "summary": "Durante la tradicional ofrenda floral al Monument de Rafael Casanovas por la Diada Nacional de Catalunya, el presidente del FC Barcelona, Joan Laporta, afirmó que el equipo aspira a competir por todos los títulos.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Ilusión de Laporta en la Diada: \"Somos candidatos a todo\"",
-          "summary": "Como marca la tradición en la Diada Nacional de Catalunya , que se celebra este 11 de septiembre, el presidente Joan Laporta encabezó la representación del FC Barcelona en la ofrenda floral al Monument de Rafael Casanovas .",
-          "needs_translation": true
+          "title": "Laporta's optimism on the Diada: \"We are contenders for everything\"",
+          "summary": "Leading the FC Barcelona delegation at the Monument de Rafael Casanovas for the Diada Nacional de Catalunya, club president Joan Laporta declared that the team is competing to win every title.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Ilusión de Laporta en la Diada: \"Somos candidatos a todo\"",
-          "summary": "Como marca la tradición en la Diada Nacional de Catalunya , que se celebra este 11 de septiembre, el presidente Joan Laporta encabezó la representación del FC Barcelona en la ofrenda floral al Monument de Rafael Casanovas .",
-          "needs_translation": true
+          "title": "L'optimisme de Laporta lors de la Diada : « Nous sommes candidats à tout »",
+          "summary": "À l'occasion de l'offrande florale au Monument de Rafael Casanovas pour la Diada Nacional de Catalunya, le président du FC Barcelona, Joan Laporta, a affirmé que son club visait tous les titres cette saison.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Ilusión de Laporta en la Diada: \"Somos candidatos a todo\"",
-          "summary": "Como marca la tradición en la Diada Nacional de Catalunya , que se celebra este 11 de septiembre, el presidente Joan Laporta encabezó la representación del FC Barcelona en la ofrenda floral al Monument de Rafael Casanovas .",
-          "needs_translation": true
+          "title": "تفاؤل لابورتا في يوم ديادا: \"نحن مرشحون لكل الألقاب\"",
+          "summary": "خلال مراسم وضع إكليل الزهور أمام نصب رافائيل كازانوفا في العيد الوطني لكتالونيا، قاد رئيس برشلونة جوان لابورتا وفد النادي، مؤكداً قدرة الفريق على المنافسة على كافة الألقاب.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260911/1004225880/ilusion-laporta-diada-candidatos.html",
@@ -1550,7 +1605,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260911/1004225880/ilusion-laporta-diada-candidatos.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "453fdba32167",
@@ -1655,24 +1715,28 @@
       "summary": "Former Manchester United striker Dion Dublin has revealed his latest venture: building and managing property portfolios for professional footballers",
       "i18n": {
         "en": {
-          "title": "‘Footballers give me hundreds of thousands of pounds to buy houses for them’ Homes Under the Hammer TV star and ex-Manchester United striker Dion Dublin reveals Wrexham project",
-          "summary": "Former Manchester United striker Dion Dublin has revealed his latest venture: building and managing property portfolios for professional footballers",
-          "needs_translation": false
+          "title": "‘Footballers give me hundreds of thousands of pounds to buy houses for them’ – Homes Under the Hammer TV star and ex-Manchester United striker Dion Dublin reveals Wrexham project",
+          "summary": "Former Manchester United striker and television presenter Dion Dublin has revealed a new venture managing and building property portfolios for professional footballers, including a project in Wrexham.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "‘Footballers give me hundreds of thousands of pounds to buy houses for them’ Homes Under the Hammer TV star and ex-Manchester United striker Dion Dublin reveals Wrexham project",
-          "summary": "Former Manchester United striker Dion Dublin has revealed his latest venture: building and managing property portfolios for professional footballers",
-          "needs_translation": true
+          "title": "« Des Footballers me confient des centaines de milliers de livres pour leur acheter des maisons » : Dion Dublin, vedette de Homes Under the Hammer TV et ancien de Manchester United, dévoile un projet à Wrexham",
+          "summary": "L'ancien attaquant de Manchester United et présentateur télévisé Dion Dublin a révélé son nouveau projet : constituer et gérer des portefeuilles immobiliers pour des footballeurs professionnels, notamment à Wrexham.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "‘Footballers give me hundreds of thousands of pounds to buy houses for them’ Homes Under the Hammer TV star and ex-Manchester United striker Dion Dublin reveals Wrexham project",
-          "summary": "Former Manchester United striker Dion Dublin has revealed his latest venture: building and managing property portfolios for professional footballers",
-          "needs_translation": true
+          "title": "«Los Footballers me dan cientos de miles de libras para comprarles casas»: Dion Dublin, estrella de Homes Under the Hammer TV y exdelantero de Manchester United, revela un proyecto en Wrexham",
+          "summary": "El exdelantero de Manchester United y presentador Dion Dublin ha revelado su nuevo negocio dedicado a crear y gestionar carteras inmobiliarias para futbolistas profesionales, con un proyecto en Wrexham.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "‘Footballers give me hundreds of thousands of pounds to buy houses for them’ Homes Under the Hammer TV star and ex-Manchester United striker Dion Dublin reveals Wrexham project",
-          "summary": "Former Manchester United striker Dion Dublin has revealed his latest venture: building and managing property portfolios for professional footballers",
-          "needs_translation": true
+          "title": "\"لاعبو كرة القدم يمنحونني مئات آلاف الجنيهات لشراء منازل لهم\".. ديون دبلن مهاجم مانشستر يونايتد السابق يكشف عن مشروع في ريكسهام",
+          "summary": "كشف مهاجم مانشستر يونايتد السابق ومقدم البرامج التلفزيونية ديون دبلن عن مشروعه الجديد، المتمثل في إدارة وبناء محافظ عقارية لصالح لاعبي كرة قدم محترفين، بما في ذلك مشروع في ريكسهام.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.fourfourtwo.com/person/footballers-give-me-hundreds-of-thousands-of-pounds-to-buy-houses-for-them-homes-under-the-hammer-tv-star-and-ex-manchester-united-striker-dion-dublin-reveals-wrexham-project",
@@ -1694,7 +1758,12 @@
           "url": "https://www.fourfourtwo.com/person/footballers-give-me-hundreds-of-thousands-of-pounds-to-buy-houses-for-them-homes-under-the-hammer-tv-star-and-ex-manchester-united-striker-dion-dublin-reveals-wrexham-project"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "da4032e638d5",
@@ -1982,7 +2051,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/depor-abanca-recibe-real-madrid-134175325?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4356315928b8",
@@ -1991,23 +2065,27 @@
       "i18n": {
         "es": {
           "title": "Las parejas de Flick",
-          "summary": "La tercera temporada con Hansi Flick en los banquillos ha empezado con un Barcelona intratable. La voracidad goleadora ha llevado al equipo a marcar cinco tantos en cuatro de los cinco encuentros disputados.",
-          "needs_translation": false
+          "summary": "Hansi Flick ha iniciado su tercera temporada al frente del Barcelona con una gran efectividad ofensiva, tras anotar cinco goles en cuatro de sus primeros cinco partidos disputados.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Las parejas de Flick",
-          "summary": "La tercera temporada con Hansi Flick en los banquillos ha empezado con un Barcelona intratable. La voracidad goleadora ha llevado al equipo a marcar cinco tantos en cuatro de los cinco encuentros disputados.",
-          "needs_translation": true
+          "title": "Flick's pairings",
+          "summary": "Hansi Flick has begun his third season as Barcelona coach with high attacking output, seeing his team score five goals in four of their first five matches.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Las parejas de Flick",
-          "summary": "La tercera temporada con Hansi Flick en los banquillos ha empezado con un Barcelona intratable. La voracidad goleadora ha llevado al equipo a marcar cinco tantos en cuatro de los cinco encuentros disputados.",
-          "needs_translation": true
+          "title": "Les duos de Flick",
+          "summary": "Hansi Flick a entamé sa troisième saison sur le banc d'un Barcelona très prolifique, auteur de cinq buts lors de quatre de ses cinq premières rencontres.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Las parejas de Flick",
-          "summary": "La tercera temporada con Hansi Flick en los banquillos ha empezado con un Barcelona intratable. La voracidad goleadora ha llevado al equipo a marcar cinco tantos en cuatro de los cinco encuentros disputados.",
-          "needs_translation": true
+          "title": "ثنائيات فليك",
+          "summary": "استهل هانزي فليك موسمه الثالث التدريبي مع برشلونة بفاعلية هجومية كبيرة، حيث سجل الفريق خمسة أهداف في أربع من أول خمس مباريات خاضها.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260911/1004225865/parejas-flick.html",
@@ -2029,7 +2107,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260911/1004225865/parejas-flick.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "43bf2d684461",
@@ -2038,23 +2121,27 @@
       "i18n": {
         "en": {
           "title": "Friday Football Quiz, episode 132: Can you get 20 correct answers?",
-          "summary": "You've got this: Ney problem",
-          "needs_translation": false
+          "summary": "The 132nd edition of the Friday Football Quiz challenges participants to achieve a score of 20 correct answers.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Friday Football Quiz, episode 132: Can you get 20 correct answers?",
-          "summary": "You've got this: Ney problem",
-          "needs_translation": true
+          "title": "Friday Football Quiz, épisode 132 : pouvez-vous obtenir 20 bonnes réponses ?",
+          "summary": "La 132e édition du Friday Football Quiz met les participants au défi de trouver 20 bonnes réponses.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Friday Football Quiz, episode 132: Can you get 20 correct answers?",
-          "summary": "You've got this: Ney problem",
-          "needs_translation": true
+          "title": "Friday Football Quiz, episodio 132: ¿puedes conseguir 20 respuestas correctas?",
+          "summary": "La edición 132 del Friday Football Quiz reta a los participantes a alcanzar 20 respuestas correctas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Friday Football Quiz, episode 132: Can you get 20 correct answers?",
-          "summary": "You've got this: Ney problem",
-          "needs_translation": true
+          "title": "مسابقة كرة القدم ليوم الجمعة، الحلقة 132: هل يمكنك تحقيق 20 إجابة صحيحة؟",
+          "summary": "تتحدى الحلقة رقم 132 من مسابقة كرة القدم ليوم الجمعة المشاركين للإجابة بشكل صحيح على 20 سؤالاً.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.fourfourtwo.com/quiz/friday-football-quiz-110926",
@@ -2076,7 +2163,12 @@
           "url": "https://www.fourfourtwo.com/quiz/friday-football-quiz-110926"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ad46af1ae766",
@@ -2123,7 +2215,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Repechage-tardif-recrutement-accelere-refonte-du-staff-l-ete-anime-de-lens/1717685#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "867923a72d05",
@@ -2179,23 +2276,27 @@
       "i18n": {
         "fr": {
           "title": "Ligue des champions CAF : Le programme complet des matchs retour ce vendredi",
-          "summary": "La plus grande compétition des clubs africains se poursuit ce vendredi 11 septembre 2026 avec les matchs retour du premier tour préliminaire The post Ligue des champions CAF : Le programme complet des matchs retour ce vendredi appeared first on Africa Top Sports .",
-          "needs_translation": false
+          "summary": "Les matchs retour du premier tour préliminaire de la Ligue des champions CAF se disputent ce vendredi 11 septembre 2026.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Ligue des champions CAF : Le programme complet des matchs retour ce vendredi",
-          "summary": "La plus grande compétition des clubs africains se poursuit ce vendredi 11 septembre 2026 avec les matchs retour du premier tour préliminaire The post Ligue des champions CAF : Le programme complet des matchs retour ce vendredi appeared first on Africa Top Sports .",
-          "needs_translation": true
+          "title": "CAF Champions League: Full schedule of second leg matches this Friday",
+          "summary": "The second leg fixtures of the CAF Champions League first preliminary round take place this Friday, 11 September 2026.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ligue des champions CAF : Le programme complet des matchs retour ce vendredi",
-          "summary": "La plus grande compétition des clubs africains se poursuit ce vendredi 11 septembre 2026 avec les matchs retour du premier tour préliminaire The post Ligue des champions CAF : Le programme complet des matchs retour ce vendredi appeared first on Africa Top Sports .",
-          "needs_translation": true
+          "title": "Liga de Campeones de la CAF: El programa completo de los partidos de vuelta este viernes",
+          "summary": "Los partidos de vuelta de la primera ronda preliminar de la Liga de Campeones de la CAF se disputan este viernes 11 de septiembre de 2026.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Ligue des champions CAF : Le programme complet des matchs retour ce vendredi",
-          "summary": "La plus grande compétition des clubs africains se poursuit ce vendredi 11 septembre 2026 avec les matchs retour du premier tour préliminaire The post Ligue des champions CAF : Le programme complet des matchs retour ce vendredi appeared first on Africa Top Sports .",
-          "needs_translation": true
+          "title": "دوري أبطال إفريقيا: البرنامج الكامل لمباريات الإياب هذا الجمعة",
+          "summary": "تُقام مباريات الإياب من الدور التمهيدي الأول لمسابقة دوري أبطال إفريقيا هذا الجمعة 11 سبتمبر 2026.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football/ligue-des-champions-caf-le-programme-complet-des-matchs-retour-ce-vendredi/",
@@ -2217,7 +2318,12 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-caf-le-programme-complet-des-matchs-retour-ce-vendredi/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "671dbbe5695e",
@@ -2329,23 +2435,27 @@
       "i18n": {
         "en": {
           "title": "Is triple Chelsea attack worth it? FPL gameweek four dilemmas",
-          "summary": "BBC Sport FPL expert Holly Shand looks at some of the biggest dilemmas facing FPL managers heading into gameweek four, including whether to captain Erling Haaland or a Chelsea player.",
-          "needs_translation": false
+          "summary": "BBC Sport FPL expert Holly Shand analyses key dilemmas ahead of gameweek four, notably whether to captain Erling Haaland or invest heavily in Chelsea attackers.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Is triple Chelsea attack worth it? FPL gameweek four dilemmas",
-          "summary": "BBC Sport FPL expert Holly Shand looks at some of the biggest dilemmas facing FPL managers heading into gameweek four, including whether to captain Erling Haaland or a Chelsea player.",
-          "needs_translation": true
+          "title": "Une triple attaque de Chelsea en vaut-elle la peine ? Les dilemmes de la 4e journée de FPL",
+          "summary": "Holly Shand, experte BBC Sport FPL, analyse les dilemmes de la quatrième journée, notamment le choix de confier le brassard à Erling Haaland ou à un joueur de Chelsea.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Is triple Chelsea attack worth it? FPL gameweek four dilemmas",
-          "summary": "BBC Sport FPL expert Holly Shand looks at some of the biggest dilemmas facing FPL managers heading into gameweek four, including whether to captain Erling Haaland or a Chelsea player.",
-          "needs_translation": true
+          "title": "¿Vale la pena el triple ataque de Chelsea? Dilemas de la jornada cuatro de FPL",
+          "summary": "Holly Shand, experta de BBC Sport FPL, repasa los principales dilemas de la jornada cuatro, entre ellos elegir como capitán a Erling Haaland o a un jugador de Chelsea.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Is triple Chelsea attack worth it? FPL gameweek four dilemmas",
-          "summary": "BBC Sport FPL expert Holly Shand looks at some of the biggest dilemmas facing FPL managers heading into gameweek four, including whether to captain Erling Haaland or a Chelsea player.",
-          "needs_translation": true
+          "title": "هل يستحق هجوم تشيلسي الثلاثي الاعتماد عليه؟ خيارات الجولة الرابعة في فانتازي الدوري الإنجليزي",
+          "summary": "تستعرض هولي شاند، خبيرة بي بي سي سبورت في فانتازي الدوري الإنجليزي، أبرز خيارات الجولة الرابعة، وخاصة منح شارة القيادة للنرويجي إرلينغ هالاند أو لأحد مهاجمي تشيلسي.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cgmrz1kdm93o?at_medium=RSS&at_campaign=rss",
@@ -2367,7 +2477,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cgmrz1kdm93o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "fdcda876aad7",
