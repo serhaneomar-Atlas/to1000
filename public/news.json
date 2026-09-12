@@ -70,7 +70,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/1-fc-koeln-gegen-werder-bremen,audiostream-1-fc-koeln-gegen-werder-bremen-106.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8b6b46afff68",
@@ -79,32 +84,33 @@
       "i18n": {
         "de": {
           "title": "Magdeburg sorgt für erste Niederlage des FCK",
-          "summary": "Der 1. FC Magdeburg fügt dem 1.",
-          "needs_translation": false
+          "summary": "Der 1. FC Magdeburg hat dem FCK die erste Saisonniederlage zugefügt.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Magdeburg ensures the first defeat of the FCK",
-          "summary": "1. FC Magdeburg joins the 1.",
+          "title": "Magdeburg inflicts first defeat on FCK",
+          "summary": "1. FC Magdeburg handed FCK their first defeat of the season.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Magdebourg assure la première défaite du FCK",
-          "summary": "Le 1er FC Magdebourg ajoute au 1er",
+          "title": "Magdeburg inflige sa première défaite au FCK",
+          "summary": "Le 1. FC Magdeburg a infligé au FCK sa toute première défaite de la saison.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Magdeburgo asegura la primera derrota del FCK",
-          "summary": "El 1. FC Magdeburg añade al 1.",
+          "title": "Magdeburg inflige la primera derrota al FCK",
+          "summary": "El 1. FC Magdeburg infligió al FCK su primera derrota de la temporada.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ماغديبورغ يضمن أول هزيمة ل FCK",
-          "summary": "1. ينضم FC Magdeburg إلى 1.",
+          "title": "ماغديبورغ يلحق الهزيمة الأولى بكايزرسلاوترن",
+          "summary": "ألحق نادي ماغديبورغ أول هزيمة بفريق كايزرسلاوترن هذا الموسم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga2/magdeburg-sorgt-fuer-erste-niederlage-des-fck,spielbericht-magdeburg-kaiserslautern-102.html",
@@ -126,7 +132,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga2/magdeburg-sorgt-fuer-erste-niederlage-des-fck,spielbericht-magdeburg-kaiserslautern-102.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "18e04550f242",
@@ -218,7 +229,12 @@
           "url": "https://www.mundodeportivo.com/futbol/bundesliga/20260912/1004224341/mainz-05-eintracht-frankfurt-directo-bundesliga.html"
         }
       ],
-      "source_count": 7
+      "source_count": 7,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0138b9df9774",
@@ -330,7 +346,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/1-fsv-mainz-05-gegen-eintracht-frankfurt,audiostream-1-fsv-mainz-05-gegen-eintracht-frankfurt-108.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ed67831a25a9",
@@ -386,7 +407,12 @@
           "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/deutschland-bundesliga/ma12193915/1-fc-koeln_werder-bremen/liveticker"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ead46cfa4387",
@@ -442,7 +468,12 @@
           "url": "https://www.sportschau.de/live-und-ergebnisse/konferenz/ac3604/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c84494643ba0",
@@ -498,7 +529,12 @@
           "url": "https://www.kicker.de/liverpool-gegen-fulham-2026-premier-league-5213306/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2c8890f81570",
@@ -575,26 +611,27 @@
       "i18n": {
         "es": {
           "title": "Aston Villa - Nottingham Forest, en directo | Premier League",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Premier League que enfrenta al Aston Villa contra el Nottingham Forest correspondiente a Jornada 4.",
-          "needs_translation": false
+          "summary": "Aston Villa y Nottingham Forest se enfrentan en el partido correspondiente a la jornada 4 de la Premier League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Aston Villa - Nottingham Forest, live | Premier League",
-          "summary": "Good afternoon and welcome to the live narration of the Premier League football match between Aston Villa and Nottingham Forest on Matchday 4.",
+          "title": "Aston Villa vs Nottingham Forest live | Premier League",
+          "summary": "Aston Villa take on Nottingham Forest in matchday 4 of the Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Aston Villa - Nottingham Forest, en direct | Premier League",
-          "summary": "Bonsoir et bienvenue au récit, en direct, du match de football de Premier League qui oppose Aston Villa à Nottingham Forest correspondant à la 4ème journée.",
+          "summary": "Aston Villa affronte Nottingham Forest dans le cadre de la 4e journée de Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "أستون فيلا - غابة نوتنغهام، مباشر | الدوري الممتاز",
-          "summary": "مساء الخير ومرحبا بكم في السرد المباشر لمباراة كرة القدم في الدوري الممتاز بين أستون فيلا ونوتنغهام فورست في يوم المباراة 4.",
+          "title": "أستون فيلا ضد نوتينغهام فورست، البث المباشر | الدوري الإنجليزي الممتاز",
+          "summary": "يلتقي أستون فيلا مع نوتينغهام فورست ضمن مواجهات الجولة الرابعة من منافسات الدوري الإنجليزي الممتاز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260912/1004224362/aston-villa-nottingham-forest-directo-premier-league.html",
@@ -616,7 +653,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260912/1004224362/aston-villa-nottingham-forest-directo-premier-league.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "1fdb8407654b",
@@ -625,26 +667,27 @@
       "i18n": {
         "es": {
           "title": "19 goles del Barça al Málaga en 1952",
-          "summary": "El año 1952 fue más que brillante para el Barça a nivel goleador: sumó nada menos que 122 en 36 partidos, una media de casi 3,5 cada 90 minutos. Se los repartieron entre 14 jugadores, con Ladislao Kubala (29) y César Rodríguez (26) a la cabeza.",
-          "needs_translation": false
+          "summary": "En 1952, el Barça anotó 122 goles en 36 partidos repartidos entre 14 jugadores. Ladislao Kubala, con 29 tantos, y César Rodríguez, con 26, lideraron la tabla anotadora.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "19 goals scored by Barça at Málaga in 1952",
-          "summary": "1952 was more than brilliant for Barça at the scoring level: he scored 122 goals in 36 games, an average of almost 3.5 every 90 minutes. They were divided among 14 players, with Ladislao Kubala (29) and César Rodríguez (26) at the head.",
+          "title": "19 goals by Barça against Málaga in 1952",
+          "summary": "In 1952, Barça scored 122 goals in 36 matches across 14 different players. Ladislao Kubala with 29 goals and César Rodríguez with 26 led the team's scoring charts.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "19 buts du Barça à Malaga en 1952",
-          "summary": "L'année 1952 a été plus que brillante pour le Barça au niveau des buteurs : pas moins de 122 en 36 matches, une moyenne de près de 3,5 toutes les 90 minutes. Ils ont été répartis entre 14 joueurs, Ladislao Kubala (29 ans) et César Rodriguez (26 ans) en tête.",
+          "title": "19 buts du Barça face à Málaga en 1952",
+          "summary": "En 1952, le Barça a inscrit 122 buts en 36 matches grâce à 14 joueurs. Ladislao Kubala (29 buts) et César Rodríguez (26 buts) ont terminé meilleurs buteurs.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "19 هدفا سجلها برشلونة في مالقة عام 1952",
-          "summary": "كان عام 1952 أكثر من رائع لبرشلونة على مستوى التسجيل: فقد سجل 122 هدفا في 36 مباراة، بمعدل 3.5 تقريبا كل 90 دقيقة. تم تقسيمهم بين 14 لاعبا، مع لاديسلاو كوبالا (29) وسيزار رودريغيز (26) على رأسهم.",
+          "title": "19 هدفاً لبرشلونة في شباك مالاغا عام 1952",
+          "summary": "سجل برشلونة 122 هدفاً في 36 مباراة خلال عام 1952 عبر 14 لاعباً مختلفاً. وتصدر قائمة الهدافين لاديسلاو كوبالا بـ29 هدفاً وسيزار رودريغيز بـ26 هدفاً.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/barca-goles/20260912/1004226316/19-goles-barca-malaga-1952.html",
@@ -666,7 +709,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/barca-goles/20260912/1004226316/19-goles-barca-malaga-1952.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4096e95aada3",
@@ -881,26 +929,27 @@
       "i18n": {
         "es": {
           "title": "El tierno video que subió Neymar tras ser maquillado por su hija",
-          "summary": "El 10 del Santos compartió un lindo momento con la nena y lo subió a sus redes sociales, donde causó furor entre sus seguidores mientras se recupera de una lesión.",
-          "needs_translation": false
+          "summary": "Mientras se recupera de una lesión, Neymar compartió un video en sus redes sociales en el que su hija le aplica maquillaje.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The tender video that Neymar uploaded after being made up by his daughter",
-          "summary": "On the 10th, Santos shared a nice moment with the girl and uploaded it to his social networks, where it caused a furor among his followers while he recovers from an injury.",
+          "title": "The touching video Neymar posted after being made up by his daughter",
+          "summary": "While recovering from an injury, Neymar shared a video on his social media accounts showing his daughter applying makeup to his face.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La tendre vidéo que Neymar a postée après avoir été maquillé par sa fille",
-          "summary": "Le 10 du Santos a partagé un bon moment avec la fille et l'a téléchargé sur ses réseaux sociaux, où il a provoqué la fureur de ses partisans alors qu'il se remettait d'une blessure.",
+          "title": "La tendre vidéo publiée par Neymar après avoir été maquillé par sa fille",
+          "summary": "En phase de convalescence après une blessure, Neymar a partagé sur ses réseaux sociaux une vidéo où sa fille le maquille.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الفيديو الرقيق الذي رفعه نيمار بعد أن اختلقته ابنته",
-          "summary": "في اليوم العاشر، شارك سانتوس لحظة لطيفة مع الفتاة وقام بتحميلها على شبكاته الاجتماعية، حيث تسببت في ضجة بين أتباعه أثناء تعافيه من الإصابة.",
+          "title": "فيديو لطيف ينشره نيمار بعد أن وضعت له ابنته مساحيق التجميل",
+          "summary": "نشر نيمار مقطع فيديو عبر حساباته على مواقع التواصل الاجتماعي تظهر فيه ابنته وهي تضع له مساحيق التجميل، وذلك أثناء فترة تعافيه من الإصابة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/fuera-de-juego/neymar-hija-maquillaje-video_0_l0E7y9LYH4.html",
@@ -922,7 +971,12 @@
           "url": "https://www.ole.com.ar/fuera-de-juego/neymar-hija-maquillaje-video_0_l0E7y9LYH4.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "db82167a6859",
@@ -1043,26 +1097,27 @@
       "i18n": {
         "es": {
           "title": "Genoa - Frosinone, en directo | Serie A",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Serie A que enfrenta al Genoa contra el Frosinone correspondiente a Jornada 4.",
-          "needs_translation": false
+          "summary": "Genoa y Frosinone se enfrentan en el partido correspondiente a la Jornada 4 de la Serie A.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "Genoa - Frosinone, live | Serie A",
-          "summary": "Good afternoon and welcome to the live narration of the Serie A football match between Genoa and Frosinone corresponding to Matchday 4.",
+          "summary": "Genoa face Frosinone in matchday 4 of Serie A.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Gênes - Frosinone, en direct | Serie A",
-          "summary": "Bonsoir et bienvenue au récit, en direct, du match de football de Serie A qui oppose le Genoa au Frosinone correspondant à la Journée 4.",
+          "title": "Genoa - Frosinone, en direct | Serie A",
+          "summary": "Le Genoa affronte Frosinone dans le cadre de la 4e journée de Serie A.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "جنوة - فروزينوني، مباشر | دوري الدرجة الأولى الإيطالي",
-          "summary": "مساء الخير ومرحبا بكم في السرد المباشر لمباراة الدوري الإيطالي لكرة القدم بين جنوى وفروزينوني المقابلة ليوم المباراة 4.",
+          "title": "مباشر | جنوى - فروزينوني | الدوري الإيطالي",
+          "summary": "يلتقي جنوى مع فروزينوني في مواجهة تجمع الفريقين لحساب الجولة الرابعة من الدوري الإيطالي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/serie-a/20260912/1004224377/genoa-frosinone-directo-serie.html",
@@ -1084,7 +1139,12 @@
           "url": "https://www.mundodeportivo.com/futbol/serie-a/20260912/1004224377/genoa-frosinone-directo-serie.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "da43cd2d7b31",
@@ -1092,27 +1152,28 @@
       "summary": "Coppell led the Eagles to a third-place Division One finish in 1991",
       "i18n": {
         "en": {
-          "title": "“Ian Wright joining Arsenal was a real body blow for Crystal Palace – we could have been one of the big boys had he stayed at Selhurst Park!” Steve Coppell on his sliding doors moment in management",
-          "summary": "Coppell led the Eagles to a third-place Division One finish in 1991",
-          "needs_translation": false
+          "title": "“Ian Wright joining Arsenal was a real body blow for Crystal Palace – we could have been one of the big boys had he stayed at Selhurst Park” – Steve Coppell",
+          "summary": "Steve Coppell believes Crystal Palace could have established themselves among England's elite had Ian Wright not left for Arsenal. Coppell led the Eagles to third place in Division One in 1991.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "« Ian Wright rejoignant Arsenal a été un véritable coup dur pour Crystal Palace – nous aurions pu être l'un des grands garçons s'il était resté à Selhurst Park ! » Steve Coppell sur son moment de portes coulissantes dans la gestion",
-          "summary": "Coppell a mené les Eagles à la troisième place de la première division en 1991",
+          "title": "« Le départ d'Ian Wright à Arsenal a été un vrai coup dur pour Crystal Palace » – Steve Coppell",
+          "summary": "Steve Coppell estime que Crystal Palace aurait pu s'installer durablement parmi les cadors anglais si Ian Wright n'était pas parti à Arsenal. L'entraîneur avait mené les Eagles à la troisième place de Division One en 1991.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "\"Ian Wright se unió al Arsenal fue un verdadero golpe para Crystal Palace: ¡podríamos haber sido uno de los grandes si se hubiera quedado en Selhurst Park!\" Steve Coppell en su momento de puertas correderas en la gestión",
-          "summary": "Coppell llevó a los Eagles a un tercer puesto en la División Uno en 1991",
+          "title": "“La marcha de Ian Wright a Arsenal fue un duro golpe para Crystal Palace” – Steve Coppell",
+          "summary": "Steve Coppell afirmó que Crystal Palace pudo haberse consolidado entre los grandes si Ian Wright no hubiera fichado por Arsenal. El técnico guio a los Eagles al tercer puesto de la Division One en 1991.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"كان انضمام إيان رايت إلى آرسنال ضربة حقيقية لكريستال بالاس – كان من الممكن أن نكون أحد الأولاد الكبار لو بقي في سيلهورست بارك!\" ستيف كوبيل على أبوابه المنزلقة لحظة في الإدارة",
-          "summary": "قاد كوبيل النسور إلى المركز الثالث في القسم الأول في عام 1991",
+          "title": "ستيف كوبيل: انتقال إيان رايت إلى أرسنال كان ضربة قوية لكريستال بالاس",
+          "summary": "أكد ستيف كوبيل أن كريستال بالاس كان قادراً على البقاء بين كبار أندية إنجلترا لولا رحيل إيان رايت إلى أرسنال، مذكراً بقيادته الفريق للمركز الثالث في دوري الدرجة الأولى عام 1991.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.fourfourtwo.com/person/ian-wright-joining-arsenal-was-a-real-body-blow-for-crystal-palace-we-could-have-been-one-of-the-big-boys-had-he-stayed-at-selhurst-park-steve-coppell-on-his-sliding-doors-moment-in-management",
@@ -1134,7 +1195,12 @@
           "url": "https://www.fourfourtwo.com/person/ian-wright-joining-arsenal-was-a-real-body-blow-for-crystal-palace-we-could-have-been-one-of-the-big-boys-had-he-stayed-at-selhurst-park-steve-coppell-on-his-sliding-doors-moment-in-management"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5a01e6e78c0e",
@@ -1292,23 +1358,27 @@
       "i18n": {
         "fr": {
           "title": "Le tirage fixe les derniers obstacles avant la ligue européenne",
-          "summary": "Neuf confrontations détermineront les dernières places en phase de ligue, avec notamment Ajax–Real Madrid, Chelsea–Real Sociedad et Francfort–PSG The post Le tirage fixe les derniers obstacles avant la ligue européenne appeared first on Africa Top Sports .",
-          "needs_translation": false
+          "summary": "Neuf confrontations détermineront les dernières places pour la phase de ligue, avec notamment Ajax–Real Madrid, Chelsea–Real Sociedad et Francfort–PSG.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Le tirage fixe les derniers obstacles avant la ligue européenne",
-          "summary": "Neuf confrontations détermineront les dernières places en phase de ligue, avec notamment Ajax–Real Madrid, Chelsea–Real Sociedad et Francfort–PSG The post Le tirage fixe les derniers obstacles avant la ligue européenne appeared first on Africa Top Sports .",
-          "needs_translation": true
+          "title": "The draw sets the final obstacles before the European league",
+          "summary": "Nine ties will decide the final spots for the league phase, featuring notable clashes such as Ajax against Real Madrid, Chelsea against Real Sociedad, and Francfort against PSG.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Le tirage fixe les derniers obstacles avant la ligue européenne",
-          "summary": "Neuf confrontations détermineront les dernières places en phase de ligue, avec notamment Ajax–Real Madrid, Chelsea–Real Sociedad et Francfort–PSG The post Le tirage fixe les derniers obstacles avant la ligue européenne appeared first on Africa Top Sports .",
-          "needs_translation": true
+          "title": "El sorteo fija los últimos obstáculos antes de la liga europea",
+          "summary": "Nueve eliminatorias decidirán los últimos billetes para la fase de liga, destacando duelos como Ajax–Real Madrid, Chelsea–Real Sociedad y Francfort–PSG.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Le tirage fixe les derniers obstacles avant la ligue européenne",
-          "summary": "Neuf confrontations détermineront les dernières places en phase de ligue, avec notamment Ajax–Real Madrid, Chelsea–Real Sociedad et Francfort–PSG The post Le tirage fixe les derniers obstacles avant la ligue européenne appeared first on Africa Top Sports .",
-          "needs_translation": true
+          "title": "القرعة تحدد العقبات الأخيرة قبل مرحلة الدوري الأوروبي",
+          "summary": "ستحسم تسع مواجهات البطاقات الأخيرة المؤهلة إلى مرحلة الدوري، وأبرزها قمم أياكس ضد ريال مدريد، وتشيلسي ضد ريال سوسيداد، وفرانكفورت ضد باريس سان جيرمان.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football/le-tirage-fixe-les-derniers-obstacles-avant-la-ligue-europeenne/",
@@ -1330,7 +1400,12 @@
           "url": "https://africatopsports.com/football/le-tirage-fixe-les-derniers-obstacles-avant-la-ligue-europeenne/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "81566b511d02",
@@ -1339,23 +1414,27 @@
       "i18n": {
         "es": {
           "title": "La plantilla del Levante lucirá una camiseta de apoyo a Ceuta en la previa del partido",
-          "summary": "La plantilla del Levante saltará al terreno de juego, antes del inicio del partido del domingo ante el Barcelona en el Ciutat de València, correspondiente a la quinta jornada de LaLiga EA Sports, con una camiseta de apoyo a Ceuta, informaron fuentes del club valenciano.",
-          "needs_translation": false
+          "summary": "Los jugadores del Levante saltarán al Ciutat de València con una camiseta de apoyo a Ceuta antes de enfrentarse al Barcelona, en la quinta jornada de LaLiga EA Sports.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "La plantilla del Levante lucirá una camiseta de apoyo a Ceuta en la previa del partido",
-          "summary": "La plantilla del Levante saltará al terreno de juego, antes del inicio del partido del domingo ante el Barcelona en el Ciutat de València, correspondiente a la quinta jornada de LaLiga EA Sports, con una camiseta de apoyo a Ceuta, informaron fuentes del club valenciano.",
-          "needs_translation": true
+          "title": "Levante squad to wear shirt in support of Ceuta ahead of the match",
+          "summary": "Levante players will take to the pitch at the Ciutat de València wearing shirts in support of Ceuta before their matchday 5 LaLiga EA Sports clash against Barcelona.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La plantilla del Levante lucirá una camiseta de apoyo a Ceuta en la previa del partido",
-          "summary": "La plantilla del Levante saltará al terreno de juego, antes del inicio del partido del domingo ante el Barcelona en el Ciutat de València, correspondiente a la quinta jornada de LaLiga EA Sports, con una camiseta de apoyo a Ceuta, informaron fuentes del club valenciano.",
-          "needs_translation": true
+          "title": "L'effectif de Levante portera un maillot de soutien à Ceuta avant le match",
+          "summary": "Les joueurs de Levante entreront sur la pelouse du Ciutat de València avec un maillot de soutien à Ceuta avant d'affronter Barcelona, lors de la 5e journée de LaLiga EA Sports.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "La plantilla del Levante lucirá una camiseta de apoyo a Ceuta en la previa del partido",
-          "summary": "La plantilla del Levante saltará al terreno de juego, antes del inicio del partido del domingo ante el Barcelona en el Ciutat de València, correspondiente a la quinta jornada de LaLiga EA Sports, con una camiseta de apoyo a Ceuta, informaron fuentes del club valenciano.",
-          "needs_translation": true
+          "title": "لاعبو ليفانتي يرتدون قميصاً تضامنياً مع سبتة قبل انطلاق المباراة",
+          "summary": "سيرتدي لاعبو ليفانتي قمصاناً لدعم سبتة قبيل مواجهة برشلونة على ملعب سيوداد دي فالنسيا، ضمن منافسات الجولة الخامسة من الدوري الإسباني.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/plantilla-levante-lucira-camiseta-apoyo-134213496?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -1383,7 +1462,12 @@
           "url": "https://www.mundodeportivo.com/futbol/levante/20260912/1004226292/camiseta-apoyo-ceuta-ciutat-valencia-homenaje-campeones-mundo.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "fa1268893557",
@@ -1392,23 +1476,27 @@
       "i18n": {
         "es": {
           "title": "Bisiwu, refuerzo de lujo para el Barça Atlètic",
-          "summary": "El Barça Atlètic jugará este domingo (12.00 horas/Esport3, YouTube FCB) contra la UD Logroñés Promesas y tendrá el refuerzo de Jesse Bisiwu .",
-          "needs_translation": false
+          "summary": "Jesse Bisiwu reforzará al Barça Atlètic en su partido de este domingo contra la UD Logroñés Promesas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Bisiwu, refuerzo de lujo para el Barça Atlètic",
-          "summary": "El Barça Atlètic jugará este domingo (12.00 horas/Esport3, YouTube FCB) contra la UD Logroñés Promesas y tendrá el refuerzo de Jesse Bisiwu .",
-          "needs_translation": true
+          "title": "Bisiwu, key reinforcement for Barça Atlètic",
+          "summary": "Jesse Bisiwu will reinforce Barça Atlètic for this Sunday's match against UD Logroñés Promesas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Bisiwu, refuerzo de lujo para el Barça Atlètic",
-          "summary": "El Barça Atlètic jugará este domingo (12.00 horas/Esport3, YouTube FCB) contra la UD Logroñés Promesas y tendrá el refuerzo de Jesse Bisiwu .",
-          "needs_translation": true
+          "title": "Bisiwu, renfort de choix pour le Barça Atlètic",
+          "summary": "Jesse Bisiwu renforce Barça Atlètic pour la rencontre de ce dimanche face à la UD Logroñés Promesas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Bisiwu, refuerzo de lujo para el Barça Atlètic",
-          "summary": "El Barça Atlètic jugará este domingo (12.00 horas/Esport3, YouTube FCB) contra la UD Logroñés Promesas y tendrá el refuerzo de Jesse Bisiwu .",
-          "needs_translation": true
+          "title": "بيسيوو، تعزيز مميز لبرشلونة أتلتيك",
+          "summary": "يدعم جيسي بيسيوو صفوف برشلونة أتلتيك في مواجهته المقررة هذا الأحد أمام يو دي لوغرونييس بروميساس.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226298/bisiwu-refuerzo-lujo-barca-atletic.html",
@@ -1430,7 +1518,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226298/bisiwu-refuerzo-lujo-barca-atletic.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9c75c7018d20",
@@ -1539,23 +1632,27 @@
       "i18n": {
         "es": {
           "title": "\"El Levante está muy bien estructurado y sabe jugar en ataque\"",
-          "summary": "El Levante espera al Barcelona en la quinta jornada de LaLiga. Es uno de los equipos que han empezado bien la campaña y su entrenador ha advertido que saldrán con voluntad de ganar al líder.",
-          "needs_translation": false
+          "summary": "En la quinta jornada de LaLiga, el Levante recibe al líder Barcelona. Tras su buen inicio de temporada, su entrenador advirtió que saldrán con la firme intención de ganar.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "\"El Levante está muy bien estructurado y sabe jugar en ataque\"",
-          "summary": "El Levante espera al Barcelona en la quinta jornada de LaLiga. Es uno de los equipos que han empezado bien la campaña y su entrenador ha advertido que saldrán con voluntad de ganar al líder.",
-          "needs_translation": true
+          "title": "\"Levante are very well structured and know how to attack\"",
+          "summary": "Levante host league leaders Barcelona in the fifth round of LaLiga. Following a strong start to the campaign, their coach stated they will play to win.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "\"El Levante está muy bien estructurado y sabe jugar en ataque\"",
-          "summary": "El Levante espera al Barcelona en la quinta jornada de LaLiga. Es uno de los equipos que han empezado bien la campaña y su entrenador ha advertido que saldrán con voluntad de ganar al líder.",
-          "needs_translation": true
+          "title": "« Levante est très bien structuré et sait attaquer »",
+          "summary": "Pour la cinquième journée de LaLiga, Levante reçoit le leader, Barcelona. Fort de son bon début de saison, l'entraîneur a prévenu que son équipe jouerait pour s'imposer.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"El Levante está muy bien estructurado y sabe jugar en ataque\"",
-          "summary": "El Levante espera al Barcelona en la quinta jornada de LaLiga. Es uno de los equipos que han empezado bien la campaña y su entrenador ha advertido que saldrán con voluntad de ganar al líder.",
-          "needs_translation": true
+          "title": "\"ليفانتي منظم للغاية ويعرف كيف يهاجم\"",
+          "summary": "يستضيف ليفانتي متصدر الدوري الإسباني برشلونة في الجولة الخامسة من لا ليغا. وأكد مدرب أصحاب الأرض عزم فريقه على تحقيق الفوز مواصلةً لبدايته القوية هذا الموسم.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226264/levante-estructurado-jugar-ataque.html",
@@ -1577,7 +1674,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226264/levante-estructurado-jugar-ataque.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "df312b7b185d",
@@ -1633,23 +1735,27 @@
       "i18n": {
         "es": {
           "title": "Flick devuelve los elogios de Cesc",
-          "summary": "Hansi Flick devolvió los elogios de Cesc Fàbregas , quien había manifestado que \"este Barça da miedo\". Flick afirmó, en la previa del Levante-Barça, que \"también estoy admirado de cómo lo está haciendo Cesc en su equipo.",
-          "needs_translation": false
+          "summary": "En la previa del Levante-Barça, Hansi Flick elogió la labor de Cesc Fàbregas al frente de su equipo, respondiendo a las declaraciones en las que el catalán afirmó que el Barça «da miedo».",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Flick devuelve los elogios de Cesc",
-          "summary": "Hansi Flick devolvió los elogios de Cesc Fàbregas , quien había manifestado que \"este Barça da miedo\". Flick afirmó, en la previa del Levante-Barça, que \"también estoy admirado de cómo lo está haciendo Cesc en su equipo.",
-          "needs_translation": true
+          "title": "Flick returns Cesc's praise",
+          "summary": "Ahead of Levante-Barça, Hansi Flick praised Cesc Fàbregas for his managerial work, responding to the former midfielder's comment that this Barça team is scary.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Flick devuelve los elogios de Cesc",
-          "summary": "Hansi Flick devolvió los elogios de Cesc Fàbregas , quien había manifestado que \"este Barça da miedo\". Flick afirmó, en la previa del Levante-Barça, que \"también estoy admirado de cómo lo está haciendo Cesc en su equipo.",
-          "needs_translation": true
+          "title": "Flick répond aux éloges de Cesc",
+          "summary": "Avant Levante-Barça, Hansi Flick a salué le travail accompli par Cesc Fàbregas avec son équipe, répondant aux compliments de l'ancien milieu qui affirmait que ce Barça « fait peur ».",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Flick devuelve los elogios de Cesc",
-          "summary": "Hansi Flick devolvió los elogios de Cesc Fàbregas , quien había manifestado que \"este Barça da miedo\". Flick afirmó, en la previa del Levante-Barça, que \"también estoy admirado de cómo lo está haciendo Cesc en su equipo.",
-          "needs_translation": true
+          "title": "فليك يرد على إشادة سيسك",
+          "summary": "رد هانزي فليك، مدرب برشلونة، على إشادة سيسك فابريغاس قبل مواجهة ليفانتي، معرباً عن إعجابه بالعمل والنتائج التي يقدمها المدرب الإسباني مع فريقه.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226289/flick-devuelve-elogios-cesc.html",
@@ -1671,7 +1777,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260912/1004226289/flick-devuelve-elogios-cesc.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8602775867ca",
@@ -1821,23 +1932,27 @@
       "i18n": {
         "es": {
           "title": "Messi y una final anticipada en la MLS",
-          "summary": "Leo juega este sábado un partido con aroma a definición: a las 20.30, el Inter Miami recibe al líder Nashville en el Nu Stadium, con la imperiosa necesidad de recortarle puntos. ¿El Kily González?",
-          "needs_translation": false
+          "summary": "Inter Miami recibe este sábado a las 20:30 al líder Nashville en el Nu Stadium. El equipo de Leo Messi necesita ganar para reducir la distancia en la MLS.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Messi y una final anticipada en la MLS",
-          "summary": "Leo juega este sábado un partido con aroma a definición: a las 20.30, el Inter Miami recibe al líder Nashville en el Nu Stadium, con la imperiosa necesidad de recortarle puntos. ¿El Kily González?",
-          "needs_translation": true
+          "title": "Messi and an early final in MLS",
+          "summary": "Inter Miami host league leaders Nashville this Saturday at 20:30 at Nu Stadium. Leo Messi's side urgently need a win to close the points gap in MLS.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Messi y una final anticipada en la MLS",
-          "summary": "Leo juega este sábado un partido con aroma a definición: a las 20.30, el Inter Miami recibe al líder Nashville en el Nu Stadium, con la imperiosa necesidad de recortarle puntos. ¿El Kily González?",
-          "needs_translation": true
+          "title": "Messi et une finale avant l'heure en MLS",
+          "summary": "Ce samedi à 20h30 au Nu Stadium, Inter Miami reçoit le leader Nashville en MLS. L'équipe de Leo Messi doit impérativement s'imposer pour réduire l'écart de points.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Messi y una final anticipada en la MLS",
-          "summary": "Leo juega este sábado un partido con aroma a definición: a las 20.30, el Inter Miami recibe al líder Nashville en el Nu Stadium, con la imperiosa necesidad de recortarle puntos. ¿El Kily González?",
-          "needs_translation": true
+          "title": "ميسي ونهائي مبكر في الدوري الأمريكي",
+          "summary": "يستضيف إنتر ميامي متصدر الترتيب ناشفيل هذا السبت على ملعب نو ستاديوم في الدوري الأمريكي. ويسعى فريق ليونيل ميسي لتحقيق الفوز لتقليص فارق النقاط مع المتصدر.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/america/anuncio-previa-inter-miami-vs-nashville-messi-titular-mls-fecha-25-fase-regular-2026_0_s7hCmEI41o.html",
@@ -1859,7 +1974,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/america/anuncio-previa-inter-miami-vs-nashville-messi-titular-mls-fecha-25-fase-regular-2026_0_s7hCmEI41o.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f078d2addcec",
@@ -1868,23 +1988,27 @@
       "i18n": {
         "es": {
           "title": "El Málaga busca a 'su Aubameyang'",
-          "summary": "Sin ningún tipo de duda, la gran sorpresa de este inicio de temporada 2026-27 está siendo el resurgir de Pierre-Emerick Aubameyang .",
-          "needs_translation": false
+          "summary": "Tras el resurgir de Pierre-Emerick Aubameyang en el inicio de la temporada 2026-27, el Málaga rastrea el mercado en busca de un perfil ofensivo similar.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Málaga busca a 'su Aubameyang'",
-          "summary": "Sin ningún tipo de duda, la gran sorpresa de este inicio de temporada 2026-27 está siendo el resurgir de Pierre-Emerick Aubameyang .",
-          "needs_translation": true
+          "title": "Málaga searches for 'its Aubameyang'",
+          "summary": "Following the resurgence of Pierre-Emerick Aubameyang at the start of the 2026-27 season, Málaga is looking to sign a forward with a similar profile.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El Málaga busca a 'su Aubameyang'",
-          "summary": "Sin ningún tipo de duda, la gran sorpresa de este inicio de temporada 2026-27 está siendo el resurgir de Pierre-Emerick Aubameyang .",
-          "needs_translation": true
+          "title": "Le Málaga cherche « son Aubameyang »",
+          "summary": "Inspiré par le renouveau de Pierre-Emerick Aubameyang au début de la saison 2026-27, le Málaga recherche un attaquant au profil similaire.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Málaga busca a 'su Aubameyang'",
-          "summary": "Sin ningún tipo de duda, la gran sorpresa de este inicio de temporada 2026-27 está siendo el resurgir de Pierre-Emerick Aubameyang .",
-          "needs_translation": true
+          "title": "مالاغا يبحث عن \"أوباميانغ الخاص به\"",
+          "summary": "يسعى نادي مالاغا إلى ضم مهاجم بملف مشابه، وذلك في ظل التألق اللافت للمهاجم بيير-إيميريك أوباميانغ في مطلع موسم 2026-2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fichajes/20260912/1004226265/malaga-busca-aubameyang.html",
@@ -1906,7 +2030,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fichajes/20260912/1004226265/malaga-busca-aubameyang.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4bb4da531774",
@@ -2005,7 +2134,12 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-caf-ou-suivre-rahimo-fc-mas-de-fes-en-direct/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "83a1f6ba9a9f",
@@ -2099,7 +2233,12 @@
           "url": "https://www.calciomio.fr/il-a-montre-peu-de-confiance-dans-lequipe-et-peu-de-conviction-dans-le-projet-paratici-enterre-grosso-et-un-prete-du-real-madrid-de-19-ans-ecrit-deja-lhistoire-de-la-fiorentina-id-179878"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9e63ed8f9ee5",
@@ -2108,23 +2247,27 @@
       "i18n": {
         "fr": {
           "title": "Newcastle et Aston Villa à l’affût pour Yassir Zabiri",
-          "summary": "Les performances de Yassir Zabiri commencent à attirer les regards au-delà des frontières espagnoles.",
-          "needs_translation": false
+          "summary": "Les performances en Espagne de Yassir Zabiri attirent l'attention en Angleterre, où Newcastle et Aston Villa suivent de près le joueur.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Newcastle et Aston Villa à l’affût pour Yassir Zabiri",
-          "summary": "Les performances de Yassir Zabiri commencent à attirer les regards au-delà des frontières espagnoles.",
-          "needs_translation": true
+          "title": "Newcastle and Aston Villa on Alert for Yassir Zabiri",
+          "summary": "Yassir Zabiri's performances in Spain have caught the attention of Premier League clubs Newcastle and Aston Villa.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Newcastle et Aston Villa à l’affût pour Yassir Zabiri",
-          "summary": "Les performances de Yassir Zabiri commencent à attirer les regards au-delà des frontières espagnoles.",
-          "needs_translation": true
+          "title": "Newcastle y Aston Villa, al acecho de Yassir Zabiri",
+          "summary": "Las actuaciones de Yassir Zabiri en el fútbol español han llamado la atención en Inglaterra, donde Newcastle y Aston Villa siguen de cerca al jugador.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Newcastle et Aston Villa à l’affût pour Yassir Zabiri",
-          "summary": "Les performances de Yassir Zabiri commencent à attirer les regards au-delà des frontières espagnoles.",
-          "needs_translation": true
+          "title": "نيوكاسل وأستون فيلا يترقبان ياسر زبيري",
+          "summary": "تجذب مستويات ياسر زبيري في إسبانيا اهتمام ناديي نيوكاسل وأستون فيلا الإنجليزيين تمهيداً لضمه.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://fr.hespress.com/488118-newcastle-et-aston-villa-a-laffut-pour-yassir-zabiri.html",
@@ -2146,7 +2289,12 @@
           "url": "https://fr.hespress.com/488118-newcastle-et-aston-villa-a-laffut-pour-yassir-zabiri.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c40efe8e02c9",
@@ -2201,24 +2349,28 @@
       "summary": "Como cada temporada, el Bayern de Múnich será el rival a batir de la Bundesliga.",
       "i18n": {
         "es": {
-          "title": "\"Errores innecesarios o \"vulnerabilidad\": las 'debilidades' de los jugadores del Bayern",
-          "summary": "Como cada temporada, el Bayern de Múnich será el rival a batir de la Bundesliga.",
-          "needs_translation": false
+          "title": "\"Errores innecesarios\" o \"vulnerabilidad\": las 'debilidades' de los jugadores del Bayern",
+          "summary": "El Bayern de Múnich se perfila una temporada más como el rival a batir en la Bundesliga, pese a los análisis que señalan vulnerabilidades y fallos evitables en su plantilla.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "\"Errores innecesarios o \"vulnerabilidad\": las 'debilidades' de los jugadores del Bayern",
-          "summary": "Como cada temporada, el Bayern de Múnich será el rival a batir de la Bundesliga.",
-          "needs_translation": true
+          "title": "\"Unnecessary mistakes\" or \"vulnerability\": the weaknesses of Bayern players",
+          "summary": "Bayern de Múnich remains the team to beat in the Bundesliga this season, despite scrutiny over player vulnerabilities and avoidable mistakes.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "\"Errores innecesarios o \"vulnerabilidad\": las 'debilidades' de los jugadores del Bayern",
-          "summary": "Como cada temporada, el Bayern de Múnich será el rival a batir de la Bundesliga.",
-          "needs_translation": true
+          "title": "« Erreurs évitables » ou « vulnérabilité » : les faiblesses des joueurs du Bayern",
+          "summary": "Comme chaque saison, le Bayern de Múnich reste l'équipe à battre en Bundesliga, malgré des faiblesses pointées au sein de son effectif, notamment des erreurs évitables.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"Errores innecesarios o \"vulnerabilidad\": las 'debilidades' de los jugadores del Bayern",
-          "summary": "Como cada temporada, el Bayern de Múnich será el rival a batir de la Bundesliga.",
-          "needs_translation": true
+          "title": "\"أخطاء غير مبررة\" أو \"هشاشة\": نقاط ضعف لاعبي بايرن ميونخ",
+          "summary": "يظل بايرن ميونخ الفريق الأبرز في الدوري الألماني هذا الموسم، على الرغم من الإشارة إلى نقاط ضعف في صفوفه تشمل الهشاشة والأخطاء غير المبررة.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/bundesliga/20260912/1004226257/errores-innecesarios-no-aguanta-intensidad-vulnerable-debilidades-schalke-vio-jugadores-bayern.html",
@@ -2240,7 +2392,12 @@
           "url": "https://www.mundodeportivo.com/futbol/bundesliga/20260912/1004226257/errores-innecesarios-no-aguanta-intensidad-vulnerable-debilidades-schalke-vio-jugadores-bayern.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d146a75b7bb1",
@@ -2292,7 +2449,12 @@
           "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/deutschland-2-bundesliga/ma12194224/fc-st-pauli_vfl-wolfsburg/liveticker"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b681c06811be",
