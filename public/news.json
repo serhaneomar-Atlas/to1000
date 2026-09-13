@@ -459,26 +459,27 @@
       "i18n": {
         "es": {
           "title": "Mourinho: \"Fue un partido de 45 minutos\"",
-          "summary": "Después de volver a la senda de la victoria en Liga, José Mourinho confirmó en rueda de prensa lo que todo el mundo vio sobre el césped: que el Real Madrid bajó revoluciones cuando se vio con el partido ganado.",
-          "needs_translation": false
+          "summary": "Tras reencontrarse con la victoria en Liga, José Mourinho confirmó en rueda de prensa que el Real Madrid redujo su intensidad una vez encarrilado el triunfo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "Mourinho: \"It was a 45-minute match\"",
-          "summary": "After returning to the path of victory in La Liga, José Mourinho confirmed at a press conference what everyone saw on the pitch: that Real Madrid slowed down when they saw the game won.",
+          "summary": "Following Real Madrid's return to winning ways in Liga, José Mourinho confirmed in a press conference that his team eased off once the match was secured.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Mourinho : « C'était un match de 45 minutes »",
-          "summary": "Après être revenu sur le chemin de la victoire en Liga, José Mourinho a confirmé en conférence de presse ce que tout le monde a vu sur la pelouse : que le Real Madrid a baissé les révolutions quand il a vu le match gagné.",
+          "title": "Mourinho : « C'était un match de 45 minutes »",
+          "summary": "Après la victoire du Real Madrid en Liga, José Mourinho a confirmé en conférence de presse que son équipe avait baissé de rythme une fois le match acquis.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مورينيو: \"كانت مباراة مدتها 45 دقيقة\"",
-          "summary": "بعد عودته إلى طريق النصر في الدوري الإسباني، أكد خوسيه مورينيو في مؤتمر صحفي ما رآه الجميع على أرض الملعب: أن ريال مدريد تباطأ عندما رأى المباراة تفوز.",
+          "title": "مورينيو: \"كانت مباراة من 45 دقيقة\"",
+          "summary": "أكد جوزيه مورينيو مدرب ريال مدريد عقب العودة للانتصارات في الدوري الإسباني أن فريقه خفض من نسقه وإيقاعه بمجرد حسم نتيجة المباراة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260912/1004226514/mourinho-partido-45-minutos.html",
@@ -500,7 +501,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260912/1004226514/mourinho-partido-45-minutos.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "30aedffd1c86",
@@ -605,7 +611,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/c2e0mzdwmkko?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0ba6c5d24794",
@@ -1032,25 +1043,27 @@
       "i18n": {
         "es": {
           "title": "Así queda la clasificación tras el triunfo del Real Madrid ante el Rayo",
-          "summary": "El Real Madrid recibió al Rayo Vallecano en el Estadio Santiago Bernabéu para disputar un partido de la jornada 5 de LaLiga EA Sports .",
-          "needs_translation": false
+          "summary": "El Real Madrid se impuso al Rayo Vallecano en el Estadio Santiago Bernabéu durante la jornada 5 de LaLiga EA Sports, modificando la tabla de posiciones.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "This is how the classification is after Real Madrid's victory over Rayo",
-          "summary": "Real Madrid hosted Rayo Vallecano at the Santiago Bernabéu Stadium to play a match from matchday 5 of LaLiga EA Sports .",
+          "title": "How the standings look after Real Madrid's win against Rayo",
+          "summary": "Real Madrid defeated Rayo Vallecano at the Estadio Santiago Bernabéu in matchday 5 of LaLiga EA Sports, impacting the league standings.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Voici le classement après la victoire du Real Madrid contre le Rayo",
-          "summary": "El Real Madrid recibió al Rayo Vallecano en el Estadio Santiago Bernabéu para disputar un partido de la jornada 5 de LaLiga EA Sports .",
+          "title": "Le classement après la victoire du Real Madrid face au Rayo",
+          "summary": "Le Real Madrid a battu le Rayo Vallecano au Estadio Santiago Bernabéu lors de la 5e journée de LaLiga EA Sports, faisant évoluer le classement.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Así queda la clasificación tras el triunfo del Real Madrid ante el Rayo",
-          "summary": "El Real Madrid recibió al Rayo Vallecano en el Estadio Santiago Bernabéu para disputar un partido de la jornada 5 de LaLiga EA Sports .",
-          "needs_translation": true
+          "title": "ترتيب الدوري بعد فوز ريال مدريد على رايو فايكانو",
+          "summary": "فاز ريال مدريد على ضيفه رايو فايكانو في ملعب سانتياغو برنابيو ضمن الجولة الخامسة من الدوري الإسباني، ليعدل موقعه في جدول الترتيب.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/laliga/20260912/1004226503/real-madrid-rayo-vallecano-imagenes.html",
@@ -1090,7 +1103,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260912/1004226398/asi-queda-clasificacion.html"
         }
       ],
-      "source_count": 4
+      "source_count": 4,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8e81d555ba8e",
@@ -1205,28 +1223,33 @@
       "i18n": {
         "de": {
           "title": "Arsenal bleibt auch in Sunderland makellos",
-          "summary": "Der FC Arsenal ist in der Premier League nicht zu stoppen. Auch beim AFC Sunderland ging der amtierende englische Meister als Sieger vom Platz.",
-          "needs_translation": false
+          "summary": "Der FC Arsenal hat in der Premier League auch beim AFC Sunderland gewonnen. Der amtierende Meister setzte damit seine Serie fort.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Arsenal bleibt auch in Sunderland makellos",
-          "summary": "Der FC Arsenal ist in der Premier League nicht zu stoppen. Auch beim AFC Sunderland ging der amtierende englische Meister als Sieger vom Platz.",
-          "needs_translation": true
+          "title": "Arsenal remain flawless at Sunderland",
+          "summary": "FC Arsenal secured another Premier League victory away at AFC Sunderland. The reigning English champions continue their flawless run.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Arsenal bleibt auch in Sunderland makellos",
-          "summary": "Der FC Arsenal ist in der Premier League nicht zu stoppen. Auch beim AFC Sunderland ging der amtierende englische Meister als Sieger vom Platz.",
-          "needs_translation": true
+          "title": "Arsenal reste impeccable à Sunderland",
+          "summary": "Le FC Arsenal s'est imposé sur le terrain de l'AFC Sunderland en Premier League. Le champion d'Angleterre en titre poursuit ainsi sa série de victoires.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Arsenal bleibt auch in Sunderland makellos",
-          "summary": "Der FC Arsenal ist in der Premier League nicht zu stoppen. Auch beim AFC Sunderland ging der amtierende englische Meister als Sieger vom Platz.",
-          "needs_translation": true
+          "title": "Arsenal se mantiene impecable en Sunderland",
+          "summary": "El FC Arsenal se impuso como visitante al AFC Sunderland en la Premier League. El vigente campeón inglés continúa con su paso perfecto.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Arsenal bleibt auch in Sunderland makellos",
-          "summary": "Der FC Arsenal ist in der Premier League nicht zu stoppen. Auch beim AFC Sunderland ging der amtierende englische Meister als Sieger vom Platz.",
-          "needs_translation": true
+          "title": "أرسنال يواصل مسيرته المثالية بالفوز على سندرلاند",
+          "summary": "حقق نادي أرسنال الفوز خارج ملعبه أمام نادي سندرلاند في الدوري الإنجليزي الممتاز. وواصل بطل إنجلترا بذلك سلسلة نتائجه المثالية.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/premier-league/arsenal-setzt-sich-auch-in-sunderland-durch,spielbericht-afc-sunderland-fc-arsenal-100.html",
@@ -1248,7 +1271,12 @@
           "url": "https://www.sportschau.de/fussball/premier-league/arsenal-setzt-sich-auch-in-sunderland-durch,spielbericht-afc-sunderland-fc-arsenal-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0d9233b3b21e",
@@ -1355,7 +1383,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 3,
         "source_read": "skipped"
       }
     },
@@ -1848,7 +1876,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cvgydkv0yxdo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6ff00cc805d7",
@@ -2199,34 +2232,54 @@
       "summary": "Real Madrid lässt gegen Rayo Vallecano gar nichts anbrennen. Das 3:0 durch Jude Bellingham gibt es hier im Video.",
       "i18n": {
         "de": {
-          "title": "Real macht's deutlich: Bellingham veredelt Vinicius Juniors Assist",
-          "summary": "Real Madrid setzt sich souverän gegen Rayo Vallecano durch. Jude Bellingham erzielte nach Vorlage von Vinicius Junior den Treffer zum 3:0.",
+          "title": "Real Madrid schlägt Rayo Vallecano souverän – Bellingham trifft zum 3:0",
+          "summary": "Real Madrid hat einen souveränen Sieg gegen Rayo Vallecano gefeiert, bei dem Jude Bellingham nach Vorlage von Vinicius Junior zum 3:0 traf.",
+          "body": [
+            "Die Königlichen ließen gegen den Stadtrivalen nichts anbrennen. Nach einer präzisen Vorarbeit des brasilianischen Flügelstürmers verwandelte der englische Mittelfeldstar sicher zum 3:0 und sorgte damit frühzeitig für klare Verhältnisse im Duell."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-edi"
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Real Madrid make it clear: Bellingham converts Vinicius Junior assist",
-          "summary": "Real Madrid secured a comfortable win against Rayo Vallecano. Jude Bellingham scored to make it 3-0 following an assist from Vinicius Junior.",
+          "title": "Real Madrid cruise past Rayo Vallecano as Bellingham seals 3-0 win",
+          "summary": "Real Madrid secured a comfortable victory over Rayo Vallecano, with Jude Bellingham scoring to make it 3-0 following an assist from Vinicius Junior.",
+          "body": [
+            "The hosts dictated tempo throughout the Madrid clash. Bellingham linked up seamlessly with the Brazilian winger before finishing decisively, placing the result beyond doubt and capping off a commanding collective display."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-edi"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Le Real Madrid s'impose nettement : Bellingham bonifie la passe décisive de Vinicius Junior",
-          "summary": "Le Real Madrid s'est imposé avec autorité face au Rayo Vallecano. Jude Bellingham a inscrit le but du 3-0 sur une passe décisive de Vinicius Junior.",
+          "title": "Le Real Madrid surclasse le Rayo Vallecano, Bellingham scelle le 3-0",
+          "summary": "Le Real Madrid s'est imposé avec maîtrise face au Rayo Vallecano, Jude Bellingham signant le but du 3-0 sur une passe de Vinicius Junior.",
+          "body": [
+            "Les Merengues ont contrôlé les débats face à leur voisin madrilène sans jamais être inquiétés. Servi par l'ailier brésilien, le milieu anglais s'est chargé d'alourdir la marque à 3-0 pour concrétiser la nette supériorité de son équipe."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-edi"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "El Real Madrid no perdona: Bellingham aprovecha la asistencia de Vinicius Junior",
-          "summary": "El Real Madrid superó con claridad al Rayo Vallecano. Jude Bellingham marcó el tanto del 3-0 tras una asistencia de Vinicius Junior.",
+          "title": "El Real Madrid supera al Rayo con gol de Bellingham a pase de Vinicius",
+          "summary": "El Real Madrid firmó un triunfo solvente ante el Rayo Vallecano, rubricado con un gol de Jude Bellingham a pase de Vinicius Junior para el 3-0.",
+          "body": [
+            "El conjunto blanco impuso su autoridad a lo largo del choque vecinal. La conexión entre el atacante brasileño y el centrocampista inglés desarticuló la zaga franjirroja para sellar el 3-0 y asegurar una victoria plácida."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-edi"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ريال مدريد يحسمها بثقة: بيلينغهام يسجل بعد تمريرة حاسمة من فينيسيوس جونيور",
-          "summary": "حقق ريال مدريد فوزاً مريحاً أمام رايو فايكانو، حيث أحرز جود بيلينغهام الهدف الثالث (3-0) مستفيداً من تمريرة حاسمة لزميله فينيسيوس جونيور.",
+          "title": "ريال مدريد يتفوق على رايو فايكانو بهدف بيلينغهام بعد تمريرة فينيسيوس",
+          "summary": "حقق ريال مدريد فوزاً مريحاً على حساب رايو فايكانو، في مواجهة شهدت تسجيل جود بيلينغهام هدفاً رفع النتيجة إلى 3-0 بصناعة من فينيسيوس جونيور.",
+          "body": [
+            "أحكم النادي الملكي قبضته على مجريات الديربي دون عناء يُذكر. وجاء الهدف الثالث بعد عمل هجومي متقن هيأ من خلاله الجناح البرازيلي الكرة لزميله الإنجليزي، الذي أودعها الشباك مؤكداً التفوق الأبيض الصريح."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-edi"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.kicker.de/real-macht-s-deutlich-bellingham-veredelt-vinicius-juniors-assist-1252120/video#omrss",
@@ -2250,9 +2303,17 @@
       ],
       "source_count": 1,
       "editorial": {
-        "publish": false,
-        "quality": 2,
-        "source_read": "skipped"
+        "publish": true,
+        "quality": 7,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-13T00:13:40+00:00"
+        }
       }
     },
     {
