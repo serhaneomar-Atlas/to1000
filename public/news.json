@@ -270,7 +270,12 @@
           "url": "https://www.kicker.de/levante-gegen-barcelona-2026-la-liga-5223836/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "aa241dec4efe",
@@ -326,7 +331,12 @@
           "url": "https://www.kicker.de/coventry-gegen-brighton-2026-premier-league-5213303/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5d62b20b1a54",
@@ -874,7 +884,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-refuerzos-millones-goles-almada-andrada-correa-borre-beltran_0_SuhSCC70O0.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7c4a066b7ce1",
@@ -930,7 +945,12 @@
           "url": "https://www.kicker.de/manunited-gegen-mancity-2026-premier-league-5213307/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2723e373e33c",
@@ -939,26 +959,27 @@
       "i18n": {
         "es": {
           "title": "Lamine-Raphinha, sociedad ilimitada también en el 0-2 al Levante",
-          "summary": "El Barça vuela y dos de sus flechas tienen nombre y apellido: Raphinha y Lamine Yamal .",
-          "needs_translation": false
+          "summary": "El Barça se impuso por 0-2 al Levante con una destacada actuación ofensiva de Lamine Yamal y Raphinha.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Lamine-Raphinha, unlimited company also in the 0-2 to Levante",
-          "summary": "Barça flies and two of its arrows have a name and surname: Raphinha and Lamine Yamal .",
+          "title": "Lamine-Raphinha, an unlimited partnership also in the 0-2 win over Levante",
+          "summary": "El Barça secured a 0-2 victory over Levante, led by the decisive attacking duo of Lamine Yamal and Raphinha.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Lamine-Raphinha, société illimitée également au 0-2 au Levant",
-          "summary": "Le Barça vole et deux de ses flèches ont un nom et un prénom : Raphinha et Lamine Yamal .",
+          "title": "Lamine-Raphinha, association illimitée également dans le 0-2 contre Levante",
+          "summary": "El Barça s'est imposé 0-2 face à Levante grâce à la performance décisive de son duo offensif composé de Lamine Yamal et Raphinha.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Lamine - Raphinha، شركة غير محدودة أيضًا في 0-2 إلى ليفانتي",
-          "summary": "يطير برشلونة واثنان من أسهمه لهما اسم ولقب: رافينها ولامين يامال .",
+          "title": "لامين-رافينيا، شراكة غير محدودة تتألق أيضاً في الفوز 0-2 على ليفانتي",
+          "summary": "فاز برشلونة على ليفانتي بهدفين دون مقابل، بفضل تألق الثنائي الهجومي المكون من لامين يامال ورافينيا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260913/1004226720/lamine-raphinha-sociedad-ilimitada-0-2-levante.html",
@@ -980,7 +1001,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260913/1004226720/lamine-raphinha-sociedad-ilimitada-0-2-levante.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2a8d5cdbe67f",
@@ -1041,7 +1067,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/bayern-ohne-kimmich-und-diaz-gegen-elversberg,spielbericht-sv-elversberg-bayern-muenchen-100.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7435217e8fe6",
@@ -1050,28 +1081,33 @@
       "i18n": {
         "de": {
           "title": "Jetzt live - Levante gegen Barcelona",
-          "summary": "In der spanischen La Liga gastiert der FC Barcelona bei UD Levante und kann mit einem Sieg seine Tabellenführung festigen.",
-          "needs_translation": false
+          "summary": "In der La Liga gastiert der FC Barcelona bei UD Levante. Mit einem Sieg können die Katalanen ihre Tabellenführung festigen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Jetzt live - Levante gegen Barcelona",
-          "summary": "In der spanischen La Liga gastiert der FC Barcelona bei UD Levante und kann mit einem Sieg seine Tabellenführung festigen.",
-          "needs_translation": true
+          "title": "Live now - Levante vs Barcelona",
+          "summary": "FC Barcelona travel to face UD Levante in La Liga. A victory would allow the league leaders to strengthen their position at the top of the table.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Jetzt live - Levante gegen Barcelona",
-          "summary": "In der spanischen La Liga gastiert der FC Barcelona bei UD Levante und kann mit einem Sieg seine Tabellenführung festigen.",
-          "needs_translation": true
+          "title": "En direct - Levante contre Barcelona",
+          "summary": "En La Liga, le FC Barcelona se déplace chez UD Levante. Les Blaugranas ont l'occasion de consolider leur place de leader en cas de victoire.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Jetzt live - Levante gegen Barcelona",
-          "summary": "In der spanischen La Liga gastiert der FC Barcelona bei UD Levante und kann mit einem Sieg seine Tabellenführung festigen.",
-          "needs_translation": true
+          "title": "En directo - Levante contra Barcelona",
+          "summary": "El FC Barcelona visita a UD Levante en La Liga. Una victoria permitiría al conjunto blaugrana consolidar su liderato en la clasificación.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Jetzt live - Levante gegen Barcelona",
-          "summary": "In der spanischen La Liga gastiert der FC Barcelona bei UD Levante und kann mit einem Sieg seine Tabellenführung festigen.",
-          "needs_translation": true
+          "title": "مباشر الآن - ليفانتي ضد برشلونة",
+          "summary": "يحل برشلونة ضيفاً على ليفانتي ضمن منافسات الدوري الإسباني. ويسعى الفريق الكتالوني لتحقيق الفوز لتعزيز صدارته لجدول الترتيب.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/spanien-primera-division/ma12187939/levante-ud_fc-barcelona/liveticker",
@@ -1093,7 +1129,12 @@
           "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/spanien-primera-division/ma12187939/levante-ud_fc-barcelona/liveticker"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "daf818200dc1",
@@ -1102,23 +1143,27 @@
       "i18n": {
         "es": {
           "title": "Lo nunca visto: el 0-1 de Espart, en el minuto 5 tras 79 pases del Barça y 0 del Levante",
-          "summary": "Xavi Espart sigue quemando etapas anticipadamente.",
-          "needs_translation": false
+          "summary": "Xavi Espart abrió el marcador para el Barça frente al Levante en el minuto 5 tras una posesión ininterrumpida de 79 pases sin que el rival tocara el balón.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Lo nunca visto: el 0-1 de Espart, en el minuto 5 tras 79 pases del Barça y 0 del Levante",
-          "summary": "Xavi Espart sigue quemando etapas anticipadamente.",
-          "needs_translation": true
+          "title": "Never seen before: Espart's 0-1 in the 5th minute after 79 passes from Barça and 0 from Levante",
+          "summary": "Xavi Espart opened the scoring for Barça against Levante in the fifth minute following a 79-pass sequence without the opposing side touching the ball.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Lo nunca visto: el 0-1 de Espart, en el minuto 5 tras 79 pases del Barça y 0 del Levante",
-          "summary": "Xavi Espart sigue quemando etapas anticipadamente.",
-          "needs_translation": true
+          "title": "Du jamais-vu : le 0-1 d'Espart à la 5e minute après 79 passes du Barça et 0 de Levante",
+          "summary": "Xavi Espart a ouvert le score pour le Barça contre Levante à la 5e minute, concluant une séquence de 79 passes consécutives sans la moindre touche adverse.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Lo nunca visto: el 0-1 de Espart, en el minuto 5 tras 79 pases del Barça y 0 del Levante",
-          "summary": "Xavi Espart sigue quemando etapas anticipadamente.",
-          "needs_translation": true
+          "title": "مشهد غير مسبوق: هدف إسبارت في الدقيقة الخامسة بعد 79 تمريرة لبرشلونة وتمريرة صفرية لليفانتي",
+          "summary": "افتتح تشافي إسبارت التسجيل لصالح برشلونة أمام ليفانتي في الدقيقة الخامسة، وجاء الهدف بعد سلسلة من 79 تمريرة متواصلة دون أن يلمس الخصم الكرة.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260913/1004226715/espart-estrena-goleador-rapido-lahm.html",
@@ -1140,7 +1185,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260913/1004226715/espart-estrena-goleador-rapido-lahm.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "502660760ce5",
@@ -1196,23 +1246,27 @@
       "i18n": {
         "es": {
           "title": "El Levante y todo su estadio homenajean a los ocho campeones del mundo del Barça",
-          "summary": "Los ocho campeones del mundo del FC Barcelona recibieron un nuevo homenaje a domicilio.",
-          "needs_translation": false
+          "summary": "Los ocho campeones del mundo del FC Barcelona recibieron un homenaje en el estadio del Levante.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Levante y todo su estadio homenajean a los ocho campeones del mundo del Barça",
-          "summary": "Los ocho campeones del mundo del FC Barcelona recibieron un nuevo homenaje a domicilio.",
-          "needs_translation": true
+          "title": "Levante and their entire stadium pay tribute to Barça's eight world champions",
+          "summary": "FC Barcelona's eight world champions received a tribute away from home at Levante's stadium.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El Levante y todo su estadio homenajean a los ocho campeones del mundo del Barça",
-          "summary": "Los ocho campeones del mundo del FC Barcelona recibieron un nuevo homenaje a domicilio.",
-          "needs_translation": true
+          "title": "Le Levante et tout son stade rendent hommage aux huit champions du monde du Barça",
+          "summary": "Les huit champions du monde du FC Barcelona ont reçu un nouvel hommage sur la pelouse de Levante.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Levante y todo su estadio homenajean a los ocho campeones del mundo del Barça",
-          "summary": "Los ocho campeones del mundo del FC Barcelona recibieron un nuevo homenaje a domicilio.",
-          "needs_translation": true
+          "title": "ليفانتي وجماهير ملعبه يكرمون أبطال العالم الثمانية في برشلونة",
+          "summary": "حظي أبطال العالم الثمانية في صفوف برشلونة بتكريم في معقل نادي ليفانتي.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260913/1004226707/levante-estadio-homenajean-ocho-campeones-mundo-barca.html",
@@ -1240,7 +1294,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260913/1004226708/levante-estadio-homenajean-ocho-campeones-mundo-barca.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "269aaffa102c",
@@ -1391,7 +1450,12 @@
           "url": "https://www.kicker.de/doppelpack-inklusive-traumtor-neil-wird-zum-derbyheld-in-glasgow-1252324/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "918a4c1d569f",
@@ -1495,27 +1559,32 @@
         "de": {
           "title": "Jetzt live - Frankfurt gegen Hoffenheim",
           "summary": "In der Frauen-Bundesliga empfängt Eintracht Frankfurt die TSG Hoffenheim.",
-          "needs_translation": false
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Jetzt live - Frankfurt gegen Hoffenheim",
-          "summary": "In der Frauen-Bundesliga empfängt Eintracht Frankfurt die TSG Hoffenheim.",
-          "needs_translation": true
+          "title": "Live now: Frankfurt vs Hoffenheim",
+          "summary": "Eintracht Frankfurt host TSG Hoffenheim in the Frauen-Bundesliga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Jetzt live - Frankfurt gegen Hoffenheim",
-          "summary": "In der Frauen-Bundesliga empfängt Eintracht Frankfurt die TSG Hoffenheim.",
-          "needs_translation": true
+          "title": "En direct : Frankfurt contre Hoffenheim",
+          "summary": "Eintracht Frankfurt reçoit TSG Hoffenheim dans le cadre de la Frauen-Bundesliga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Jetzt live - Frankfurt gegen Hoffenheim",
-          "summary": "In der Frauen-Bundesliga empfängt Eintracht Frankfurt die TSG Hoffenheim.",
-          "needs_translation": true
+          "title": "En directo: Frankfurt contra Hoffenheim",
+          "summary": "Eintracht Frankfurt recibe a TSG Hoffenheim en la Frauen-Bundesliga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Jetzt live - Frankfurt gegen Hoffenheim",
-          "summary": "In der Frauen-Bundesliga empfängt Eintracht Frankfurt die TSG Hoffenheim.",
-          "needs_translation": true
+          "title": "مباشر الآن: فرانكفورت ضد هوفنهايم",
+          "summary": "يستضيف فريق آينتراخت فرانكفورت نظيره هوفنهايم ضمن منافسات الدوري الألماني للسيدات.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/deutschland-bundesliga-frauen/ma12306139/eintracht-frankfurt_tsg-hoffenheim/liveticker",
@@ -1537,7 +1606,12 @@
           "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/deutschland-bundesliga-frauen/ma12306139/eintracht-frankfurt_tsg-hoffenheim/liveticker"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ac6e09560659",
@@ -1781,23 +1855,27 @@
       "i18n": {
         "en": {
           "title": "Rangers v Aberdeen & Edinburgh derby in League Cup semis",
-          "summary": "Rangers have been drawn against Aberdeen in the semi-finals of the Premier Sports Cup, while rivals Heart of Midlothian and Hibernian will face off in the other tie at Hampden Park.",
-          "needs_translation": false
+          "summary": "Rangers will face Aberdeen in the semi-finals of the Premier Sports Cup, while Heart of Midlothian and Hibernian meet in the Edinburgh derby at Hampden Park.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Rangers v Aberdeen & Edinburgh derby in League Cup semis",
-          "summary": "Rangers have been drawn against Aberdeen in the semi-finals of the Premier Sports Cup, while rivals Heart of Midlothian and Hibernian will face off in the other tie at Hampden Park.",
-          "needs_translation": true
+          "title": "Rangers - Aberdeen et derby d'Edinburgh en demi-finales de League Cup",
+          "summary": "Rangers affrontera Aberdeen en demi-finales de la Premier Sports Cup, tandis que Heart of Midlothian et Hibernian s'affronteront lors du derby d'Edinburgh à Hampden Park.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Rangers v Aberdeen & Edinburgh derby in League Cup semis",
-          "summary": "Rangers have been drawn against Aberdeen in the semi-finals of the Premier Sports Cup, while rivals Heart of Midlothian and Hibernian will face off in the other tie at Hampden Park.",
-          "needs_translation": true
+          "title": "Rangers contra Aberdeen y derbi de Edinburgh en semifinales de League Cup",
+          "summary": "Rangers se medirá a Aberdeen en las semifinales de la Premier Sports Cup, mientras que Heart of Midlothian y Hibernian disputarán el derbi de Edinburgh en Hampden Park.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Rangers v Aberdeen & Edinburgh derby in League Cup semis",
-          "summary": "Rangers have been drawn against Aberdeen in the semi-finals of the Premier Sports Cup, while rivals Heart of Midlothian and Hibernian will face off in the other tie at Hampden Park.",
-          "needs_translation": true
+          "title": "رينجرز يواجه أبردين وديربي إدنبرة في نصف نهائي كأس الرابطة",
+          "summary": "أسفرت قرعة نصف نهائي كأس بريمير سبورتس عن مواجهة رينجرز ضد أبردين، بينما يلتقي هارت أوف ميدلوثيان مع هيبرنيان في ديربي إدنبرة على ملعب هامبدن بارك.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/c8e3yere7l4o?at_medium=RSS&at_campaign=rss",
@@ -1819,7 +1897,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/c8e3yere7l4o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 4,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "58dbf50fc1dd",
@@ -2007,7 +2090,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260913/1004226677/sandro-rosell-ii-memorial-tito-vilanova-figueres.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b034000bb3e5",
@@ -2016,23 +2104,27 @@
       "i18n": {
         "es": {
           "title": "RB Leipzig - Hamburger SV, en directo | Bundesliga",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Bundesliga que enfrenta al RB Leipzig contra el Hamburger SV correspondiente a Jornada 3.",
-          "needs_translation": false
+          "summary": "RB Leipzig y Hamburger SV se enfrentan en el partido correspondiente a la Jornada 3 de la Bundesliga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "RB Leipzig - Hamburger SV, en directo | Bundesliga",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Bundesliga que enfrenta al RB Leipzig contra el Hamburger SV correspondiente a Jornada 3.",
-          "needs_translation": true
+          "title": "RB Leipzig vs Hamburger SV live | Bundesliga",
+          "summary": "RB Leipzig face Hamburger SV in Matchday 3 of the Bundesliga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "RB Leipzig - Hamburger SV, en directo | Bundesliga",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Bundesliga que enfrenta al RB Leipzig contra el Hamburger SV correspondiente a Jornada 3.",
-          "needs_translation": true
+          "title": "RB Leipzig - Hamburger SV en direct | Bundesliga",
+          "summary": "Le RB Leipzig affronte le Hamburger SV dans le cadre de la 3e journée de Bundesliga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "RB Leipzig - Hamburger SV, en directo | Bundesliga",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Bundesliga que enfrenta al RB Leipzig contra el Hamburger SV correspondiente a Jornada 3.",
-          "needs_translation": true
+          "title": "مباشر: آر بي لايبزيغ ضد هامبورغ | الدوري الألماني",
+          "summary": "يلتقي آر بي لايبزيغ مع هامبورغ ضمن منافسات الجولة الثالثة من الدوري الألماني.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/bundesliga/20260913/1004224810/rb-leipzig-hamburger-sv-directo-bundesliga.html",
@@ -2054,7 +2146,12 @@
           "url": "https://www.mundodeportivo.com/futbol/bundesliga/20260913/1004224810/rb-leipzig-hamburger-sv-directo-bundesliga.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "cd97fd0ddda7",
@@ -2251,23 +2348,27 @@
       "i18n": {
         "es": {
           "title": "Coventry City - Brighton and Hove Albion, en directo | Premier League",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Premier League que enfrenta al Coventry City contra el Brighton and Hove Albion correspondiente a Jornada 4.",
-          "needs_translation": false
+          "summary": "Sigue en directo el partido entre Coventry City y Brighton and Hove Albion, correspondiente a la jornada 4 de la Premier League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Coventry City - Brighton and Hove Albion, en directo | Premier League",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Premier League que enfrenta al Coventry City contra el Brighton and Hove Albion correspondiente a Jornada 4.",
-          "needs_translation": true
+          "title": "Coventry City vs Brighton and Hove Albion live | Premier League",
+          "summary": "Live coverage of the Premier League fixture between Coventry City and Brighton and Hove Albion for matchday 4.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Coventry City - Brighton and Hove Albion, en directo | Premier League",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Premier League que enfrenta al Coventry City contra el Brighton and Hove Albion correspondiente a Jornada 4.",
-          "needs_translation": true
+          "title": "Coventry City - Brighton and Hove Albion en direct | Premier League",
+          "summary": "Suivi en direct du match opposant Coventry City à Brighton and Hove Albion, comptant pour la 4e journée de Premier League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Coventry City - Brighton and Hove Albion, en directo | Premier League",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Premier League que enfrenta al Coventry City contra el Brighton and Hove Albion correspondiente a Jornada 4.",
-          "needs_translation": true
+          "title": "مباشر: كوفنتري سيتي ضد برايتون أند هوف ألبيون | الدوري الإنجليزي الممتاز",
+          "summary": "متابعة مباشرة لمباراة كوفنتري سيتي وبرايتون أند هوف ألبيون ضمن منافسات الجولة الرابعة من الدوري الإنجليزي الممتاز.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260913/1004224822/coventry-city-brighton-and-hove-albion-directo-premier-league.html",
@@ -2289,7 +2390,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260913/1004224822/coventry-city-brighton-and-hove-albion-directo-premier-league.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     }
   ]
 }
