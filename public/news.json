@@ -64,7 +64,12 @@
           "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/deutschland-bundesliga-frauen/ma12306160/bayer-leverkusen_bayern-muenchen/liveticker"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d4d45435c8e8",
@@ -170,7 +175,12 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20260914/1004227220/inesperada-friccion-dembele-mbappe-balon-oro-nunca-he-dicho-mu.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b23c9bbaf3ea",
@@ -270,7 +280,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260914/1004227185/bellingham-desvela-topicos-plantilla-blanca-divertido-comilon-padre-grupo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8427be100f71",
@@ -534,27 +549,44 @@
       "summary": "Une incertitude demeure autour d’Achraf Hakimi à l’approche du déplacement du PSG à Marseille. Touché dimanche à Brest, le défenseur marocain a dû quitter le terrain à la 39e minute.",
       "i18n": {
         "fr": {
-          "title": "PSG : Achraf Hakimi sous surveillance avant Marseille",
-          "summary": "Une incertitude demeure autour d’Achraf Hakimi à l’approche du déplacement du PSG à Marseille. Touché dimanche à Brest, le défenseur marocain a dû quitter le terrain à la 39e minute.",
-          "needs_translation": false
+          "title": "PSG : Achraf Hakimi très incertain pour le choc à Marseille",
+          "summary": "Achraf Hakimi reste très incertain pour le déplacement du Paris Saint-Germain à Marseille après sa blessure survenue dimanche face à Brest.",
+          "body": [
+            "Le latéral marocain n'a pas pu terminer la première période en Bretagne. Remplacé dès la 39e minute après avoir été touché, le défenseur parisien demeure sous surveillance médicale à l'approche du clasico."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "PSG: Achraf Hakimi under surveillance before Marseille",
-          "summary": "An uncertainty remains around Achraf Hakimi in the run-up to PSG's move to Marseille. Touched Sunday in Brest, the Moroccan defender had to leave the field in the 39th minute.",
+          "title": "PSG: Achraf Hakimi a major doubt for Marseille clash",
+          "summary": "Achraf Hakimi is a major doubt for Paris Saint-Germain's trip to Marseille after picking up an injury against Brest on Sunday.",
+          "body": [
+            "The Moroccan full-back could not complete the first half in Brittany. Substituted in the 39th minute after taking a knock, the defender remains under close medical observation ahead of the upcoming clash."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "PSG: Achraf Hakimi bajo vigilancia antes de Marsella",
-          "summary": "Sigue habiendo incertidumbre en torno a Achraf Hakimi a medida que se acerca la visita del PSG a Marsella. Golpeado el domingo en Brest, el defensa marroquí tuvo que abandonar el terreno de juego en el minuto 39.",
+          "title": "PSG: Achraf Hakimi es seria duda para visitar a Marseille",
+          "summary": "Achraf Hakimi es seria duda para la visita del Paris Saint-Germain a Marseille tras lesionarse este domingo en el partido frente al Brest.",
+          "body": [
+            "El lateral marroquí no pudo completar la primera mitad en Bretaña. Sustituido en el minuto 39 tras recibir un golpe, el defensor parisino queda bajo observación médica a pocos días del gran duelo."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "PSG: أشرف حكيمي تحت المراقبة أمام مرسيليا",
-          "summary": "لا يزال هناك عدم يقين حول أشرف الحكيمي في الفترة التي سبقت انتقال باريس سان جيرمان إلى مرسيليا. يوم الأحد في بريست، اضطر المدافع المغربي إلى مغادرة الملعب في الدقيقة 39.",
+          "title": "باريس سان جيرمان: شكوك حول جاهزية أشرف حكيمي لمواجهة مارسيليا",
+          "summary": "تحوم شكوك قوية حول جاهزية أشرف حكيمي مع باريس سان جيرمان قبل مواجهة مارسيليا، بعد إصابته يوم الأحد خلال لقاء بريست.",
+          "body": [
+            "ولم يستطع الظهير الأيمن المغربي إكمال الشوط الأول، إذ اضطر للخروج في الدقيقة التاسعة والثلاثين بعد تعرضه لكدمة، ليبقى تحت المراقبة الطبية قبل القمة المرتقبة."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/football/psg-achraf-hakimi-sous-surveillance-avant-marseille/",
@@ -576,7 +608,20 @@
           "url": "https://africatopsports.com/football/psg-achraf-hakimi-sous-surveillance-avant-marseille/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-14T19:21:18+00:00"
+        }
+      }
     },
     {
       "id": "1a0b792fb699",
@@ -585,26 +630,27 @@
       "i18n": {
         "es": {
           "title": "Torino - Roma, en directo | Serie A",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Serie A que enfrenta al Torino contra el Roma correspondiente a Jornada 4.",
-          "needs_translation": false
+          "summary": "El Torino y la Roma se enfrentan en el partido correspondiente a la cuarta jornada de la Serie A.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Torino - Rome, live | Serie A",
-          "summary": "Good afternoon and welcome to the live narration of the Serie A football match between Torino and Roma on Matchday 4.",
+          "title": "Torino vs Roma, live | Serie A",
+          "summary": "Torino face Roma in Matchday 4 of Serie A.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Turin - Rome, en direct | Serie A",
-          "summary": "Bonsoir et bienvenue au récit, en direct, du match de football de Serie A qui oppose le Torino au Roma correspondant à la Journée 4.",
+          "title": "Torino - Roma, en direct | Serie A",
+          "summary": "Le Torino affronte la Roma dans le cadre de la 4e journée de Serie A.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تورينو - روما، مباشر | دوري الدرجة الأولى الإيطالي",
-          "summary": "مساء الخير ومرحبا بكم في السرد المباشر لمباراة الدوري الإيطالي لكرة القدم بين تورينو وروما في يوم المباراة 4.",
+          "title": "مباشر | تورينو - روما | الدوري الإيطالي",
+          "summary": "يلتقي تورينو مع روما في إطار منافسات الجولة الرابعة من الدوري الإيطالي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/serie-a/20260914/1004225451/torino-roma-directo-serie.html",
@@ -632,7 +678,12 @@
           "url": "https://www.mundodeportivo.com/futbol/serie-a/20260914/1004225448/parma-directo-serie.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c6d19f1c3b73",
@@ -753,26 +804,27 @@
       "i18n": {
         "es": {
           "title": "El registro en el que Lamine Yamal iguala a Leo Messi",
-          "summary": "De dos en dos, y marco porque me toca. Lamine Yamal parece versionar a su antojo el juego de ‘La Oca’ en su espectacular arranque de temporada.",
-          "needs_translation": false
+          "summary": "Lamine Yamal iguala un registro de Leo Messi tras su destacado inicio de temporada con el FC Barcelona, acumulando participaciones de gol de dos en dos.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "The record in which Lamine Yamal equals Leo Messi",
-          "summary": "Two by two, and I frame because it's my turn. Lamine Yamal seems to cover the game of ‘The Goose‘ at will in its spectacular start to the season.",
+          "summary": "Lamine Yamal has equaled a record set by Leo Messi following his impressive start to the season with FC Barcelona, consistently producing goal contributions in pairs.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le registre dans lequel Lamine Yamal égale Leo Messi",
-          "summary": "Deux par deux, et je marque parce que c'est mon tour. Lamine Yamal semble revisiter à sa guise le jeu de « La Oca » dans son spectaculaire début de saison.",
+          "title": "Le record sur lequel Lamine Yamal égale Leo Messi",
+          "summary": "Auteur d'un début de saison prolifique avec le FC Barcelona, Lamine Yamal égale un record de Leo Messi en enchaînant les actions décisives par deux.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "السجل الذي يساوي فيه الأمين يامال ليو ميسي",
-          "summary": "اثنان تلو الآخر، وأنا أؤطر لأنه دوري. يبدو أن لامين يامال يغطي لعبة \"الأوزة\" في بدايتها المذهلة للموسم.",
+          "title": "الرقم القياسي الذي عادل فيه لامين يامال إنجاز ليونيل ميسي",
+          "summary": "عادل لامين يامال رقماً قياسياً لليونيل ميسي بفضل انطلاقته التهديفية القوية هذا الموسم مع برشلونة وتسجيله المساهمات التهديفية تباعاً بمعدل ثنائيات.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260914/1004227171/lamine-yamal-iguala-leo-messi.html",
@@ -794,7 +846,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260914/1004227171/lamine-yamal-iguala-leo-messi.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c507df70b6cb",
@@ -803,26 +860,27 @@
       "i18n": {
         "es": {
           "title": "Jon Ansotegi lidera a una renovada Real en el estreno de la Premier League International Cup",
-          "summary": "La cantera de Zubieta vuelve a cruzarse con las mejores academias del fútbol europeo. La Real Sociedad arranca este martes su andadura en la Premier League International Cup midiéndose al Aston Villa a partir de las 20:00 en la ciudad deportiva de Bodymoor Heath .",
-          "needs_translation": false
+          "summary": "El equipo filial de la Real Sociedad, dirigido por Jon Ansotegi, debuta este martes en la Premier League International Cup visitando al Aston Villa en Bodymoor Heath.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Jon Ansotegi Leads a Renewed Real at Premier League International Cup Premiere",
-          "summary": "The Zubieta youth academy once again crosses paths with the best academies in European football. Real Sociedad starts its run in the Premier League International Cup on Tuesday against Aston Villa from 20:00 in the sports city of Bodymoor Heath .",
+          "title": "Jon Ansotegi leads a revamped Real Sociedad in their Premier League International Cup opener",
+          "summary": "Real Sociedad's reserve team, led by Jon Ansotegi, opens its Premier League International Cup campaign this Tuesday against Aston Villa at Bodymoor Heath.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Jon Ansotegi mène un Real renouvelé lors de la première de la Premier League International Cup",
-          "summary": "La carrière de Zubieta croise à nouveau les meilleures académies du football européen. La Real Sociedad débute ce mardi son parcours en Premier League International Cup en affrontant Aston Villa à partir de 20h00 dans la ville sportive de Bodymoor Heath .",
+          "title": "Jon Ansotegi mène une Real Sociedad renouvelée pour ses débuts en Premier League International Cup",
+          "summary": "L'équipe réserve de la Real Sociedad, dirigée par Jon Ansotegi, débute sa campagne de Premier League International Cup ce mardi face à Aston Villa à Bodymoor Heath.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "جون أنسوتيجي يقود ريال مدريد متجدد في العرض الأول لكأس الدوري الممتاز الدولي",
-          "summary": "تتقاطع أكاديمية زبيطة للشباب مرة أخرى مع أفضل الأكاديميات في كرة القدم الأوروبية. يبدأ ريال سوسيداد مسيرته في كأس الدوري الإنجليزي الممتاز يوم الثلاثاء ضد أستون فيلا من الساعة 20:00 في المدينة الرياضية بوديمور هيث .",
+          "title": "جون أنسوتيغي يقود ريال سوسيداد في افتتاح كأس الدوري الإنجليزي الدولية",
+          "summary": "يستهل رديف ريال سوسيداد، بقيادة مدربه جون أنسوتيغي، مشواره في كأس الدوري الإنجليزي الممتاز الدولية بمواجهة أستون فيلا هذا الثلاثاء في مجمع بوديمور هيث.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260914/1004227170/jon-ansotegi-lidera-renovada-real-estreno-premier-league-international-cup.html",
@@ -844,7 +902,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260914/1004227170/jon-ansotegi-lidera-renovada-real-estreno-premier-league-international-cup.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7801d8c03967",
@@ -909,26 +972,27 @@
       "i18n": {
         "es": {
           "title": "Racing en crisis: reunión clave con Vojvoda para definir su futuro",
-          "summary": "La dirigencia mantendrá esta tarde un cónclave con el técnico, muy debilitado por el pésimo momento deportivo. Le darían \"apoyo\", pero con margen hasta Boca en dos semanas.",
-          "needs_translation": false
+          "summary": "La directiva de Racing se reunirá esta tarde con Vojvoda para evaluar su continuidad tras los malos resultados. Se espera que reciba respaldo, aunque con un plazo límite condicionado al partido ante Boca en dos semanas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Racing in crisis: key meeting with Vojvoda to define its future",
-          "summary": "The management will hold a conclave with the coach this afternoon, very weakened by the bad sporting moment. They would give him \"support\", but with margin until Boca in two weeks.",
+          "title": "Racing in crisis: key meeting with Vojvoda to decide his future",
+          "summary": "Racing's board will meet with Vojvoda today to address his future amid a sporting slump. The club is set to back him temporarily, granting him time until the Boca match in two weeks.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Racing en crise : rencontre clé avec Vojvoda pour définir son avenir",
-          "summary": "La direction tiendra cet après-midi un conclave avec le technicien, très affaibli par le mauvais moment sportif. Ils lui donneraient du « soutien », mais avec une marge jusqu'à Boca dans deux semaines.",
+          "title": "Racing en crise : réunion clé avec Vojvoda pour sceller son avenir",
+          "summary": "La direction de Racing s'entretient aujourd'hui avec Vojvoda pour décider de son futur après de mauvais résultats. Il devrait bénéficier d'un sursis temporaire jusqu'au choc face à Boca dans deux semaines.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "السباق في أزمة: اجتماع رئيسي مع فويفودا لتحديد مستقبلها",
-          "summary": "ستعقد الإدارة اجتماعًا سريًا مع المدرب بعد ظهر اليوم، الذي أضعفته بشدة اللحظة الرياضية السيئة. سيقدمون له \"الدعم\"، ولكن مع هامش حتى بوكا في غضون أسبوعين.",
+          "title": "راسينغ في أزمة: اجتماع حاسم مع فويفودا لتحديد مستقبله",
+          "summary": "تعقد إدارة راسينغ اجتماعاً مع المدرب فويفودا لمناقشة مستقبله بعد تراجع النتائج. ومن المنتظر تجديد الثقة به مؤقتاً مع منحه مهلة أخيرة حتى مواجهة بوكا بعد أسبوعين.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-primera/racing-milito-vojvoda-torneo-clausura-coudet_0_N5Zb7AsOkJ.html",
@@ -950,7 +1014,12 @@
           "url": "https://www.ole.com.ar/futbol-primera/racing-milito-vojvoda-torneo-clausura-coudet_0_N5Zb7AsOkJ.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "23e37a6c8f4d",
@@ -958,27 +1027,48 @@
       "summary": "La cour d'appel de Paris vient de condamner le joueur à verser 60 000 euros à son ancien club pour les saisies conservatoires qu'il avait fait opérer sur les comptes en banque du PSG, au printemps 2025.",
       "i18n": {
         "fr": {
-          "title": "Conflit avec Mbappé : le PSG obtient une maigre consolation en justice",
-          "summary": "La cour d'appel de Paris vient de condamner le joueur à verser 60 000 euros à son ancien club pour les saisies conservatoires qu'il avait fait opérer sur les comptes en banque du PSG, au printemps 2025.",
-          "needs_translation": false
+          "title": "Kylian Mbappé condamné à verser 60 000 euros au Paris Saint-Germain",
+          "summary": "La cour d'appel de Paris a condamné Kylian Mbappé à verser 60 000 euros au Paris Saint-Germain pour des saisies bancaires conservatoires injustifiées.",
+          "body": [
+            "Au printemps 2025, les avocats de l'attaquant tricolore avaient fait bloquer des fonds sur les comptes bancaires du club parisien à son insu. Cette démarche visait à garantir le paiement de ses créances avant toute décision sur le fond, mais les juges ont estimé que la situation financière de l'entreprise ne justifiait pas une telle mesure d'urgence.",
+            "Ce bras de fer judiciaire découle des 60 millions d'euros de primes et de bonus réclamés par le joueur après son départ au Real Madrid à l'été 2024. Malgré l'intervention de la LFP, le conflit s'est envenimé jusqu'à la saisine du conseil de prud'hommes."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Conflict with Mbappé: PSG gets little consolation in court",
-          "summary": "The Paris Court of Appeal has just sentenced the player to pay 60,000 euros to his former club for the precautionary seizures he had made on PSG's bank accounts in the spring of 2025.",
+          "title": "Kylian Mbappé ordered to pay €60,000 to Paris Saint-Germain by court",
+          "summary": "The Paris Court of Appeal has ordered Kylian Mbappé to pay €60,000 to Paris Saint-Germain over unjustified conservatory bank freezes.",
+          "body": [
+            "In spring 2025, lawyers representing the France forward froze funds in the Parisian club's bank accounts without prior notice. The move was meant to guarantee payment of the sums he claims before any ruling on the merits, but the court ruled that the club's financial health did not warrant such emergency action.",
+            "The legal standoff stems from €60 million in unpaid wages and bonuses claimed by the player following his transfer to Real Madrid in the summer of 2024. Despite mediation efforts by the LFP, the clash escalated and is now heading before an employment tribunal."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Conflicto con Mbappé: el PSG obtiene un escaso consuelo en los tribunales",
-          "summary": "El Tribunal de Apelación de París acaba de condenar al jugador a pagar 60.000 euros a su antiguo club por las ejecuciones preventivas que había realizado en las cuentas bancarias del PSG en la primavera de 2025.",
+          "title": "Kylian Mbappé, condenado a pagar 60 000 euros al Paris Saint-Germain",
+          "summary": "El Tribunal de Apelación de París ha condenado a Kylian Mbappé a abonar 60 000 euros al Paris Saint-Germain por embargos bancarios preventivos injustificados.",
+          "body": [
+            "En la primavera de 2025, los abogados del delantero galo congelaron fondos de las cuentas bancarias del club parisino a sus espaldas. La maniobra buscaba asegurar el cobro de sus cantidades adeudadas antes de que se dictara sentencia sobre el fondo, pero los magistrados concluyeron que la solvencia de la entidad no justificaba tal medida cautelar.",
+            "Este pulso judicial surge a raíz de los 60 millones de euros en primas y salarios que reclama el atacante tras marcharse al Real Madrid en el verano de 2024. Pese a la mediación de la LFP, el litigio subió de tono hasta acabar en manos de la justicia laboral francesa."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "الصراع مع مبابي: يحصل PSG على القليل من العزاء في المحكمة",
-          "summary": "حكمت محكمة الاستئناف في باريس للتو على اللاعب بدفع 60،000 يورو لناديه السابق بسبب عمليات الحجز الاحترازية التي قام بها على الحسابات المصرفية لـ PSG في ربيع عام 2025.",
+          "title": "محكمة باريس تلزم كيليان مبابي بدفع 60 ألف يورو لباريس سان جيرمان",
+          "summary": "قضت محكمة الاستئناف في باريس بتغريم كيليان مبابي 60 ألف يورو لصالح باريس سان جيرمان، على خلفية حجوزات تحفظية غير مبررة على الحسابات البنكية للنادي.",
+          "body": [
+            "كان محامو قائد منتخب فرنسا قد جمدوا في ربيع 2025 مبالغ من الحسابات المصرفية للنادي الباريسي دون علمه المسبق، بهدف تأمين مستحقاته المالية قبل صدور حكم في جوهر القضية، غير أن القضاة رأوا أن الوضع المالي للمؤسسة لم يكن يستدعي اللجوء إلى مثل هذا الإجراء الاحترازي المستعجل.",
+            "يعود هذا النزاع القضائي المحتدم إلى مطالبة اللاعب بـ 60 مليون يورو تشمل مكافآت ورواتب متأخرة بعد انتقاله إلى ريال مدريد في صيف 2024. ورغم وساطة رابطة الدوري الفرنسي للمحترفين، تصاعدت حدة الخلاف لتصل إلى أروقة المحاكم العمالية."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Conflit-avec-mbappe-le-psg-obtient-une-maigre-consolation-en-justice/1718719#at_medium=RSS_feeds",
@@ -1000,7 +1090,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Conflit-avec-mbappe-le-psg-obtient-une-maigre-consolation-en-justice/1718719#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-14T19:21:21+00:00"
+        }
+      }
     },
     {
       "id": "06767e5daf78",
@@ -1062,23 +1165,27 @@
       "i18n": {
         "es": {
           "title": "El Centro de Patrimonio Histórico refuerza la conservación de la memoria del Real Madrid",
-          "summary": "El Centro de Patrimonio Histórico del Real Madrid está gestionado por la Fundación Real Madrid y durante la temporada 2025-26 continuó desarrollando una importante labor de conservación, catalogación y difusión del legado histórico del club blanco.",
-          "needs_translation": false
+          "summary": "Gestionado por la Fundación Real Madrid, el Centro de Patrimonio Histórico continuó durante la temporada 2025-26 sus labores de conservación, catalogación y difusión del legado del club blanco.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Centro de Patrimonio Histórico refuerza la conservación de la memoria del Real Madrid",
-          "summary": "El Centro de Patrimonio Histórico del Real Madrid está gestionado por la Fundación Real Madrid y durante la temporada 2025-26 continuó desarrollando una importante labor de conservación, catalogación y difusión del legado histórico del club blanco.",
-          "needs_translation": true
+          "title": "The Centro de Patrimonio Histórico strengthens the preservation of Real Madrid's memory",
+          "summary": "Managed by the Fundación Real Madrid, the Centro de Patrimonio Histórico continued preserving, cataloguing, and promoting the club's historical heritage during the 2025-26 season.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El Centro de Patrimonio Histórico refuerza la conservación de la memoria del Real Madrid",
-          "summary": "El Centro de Patrimonio Histórico del Real Madrid está gestionado por la Fundación Real Madrid y durante la temporada 2025-26 continuó desarrollando una importante labor de conservación, catalogación y difusión del legado histórico del club blanco.",
-          "needs_translation": true
+          "title": "Le Centro de Patrimonio Histórico renforce la préservation de la mémoire du Real Madrid",
+          "summary": "Géré par la Fundación Real Madrid, le Centro de Patrimonio Histórico a poursuivi durant la saison 2025-26 la conservation, le catalogage et la diffusion du patrimoine historique du club.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Centro de Patrimonio Histórico refuerza la conservación de la memoria del Real Madrid",
-          "summary": "El Centro de Patrimonio Histórico del Real Madrid está gestionado por la Fundación Real Madrid y durante la temporada 2025-26 continuó desarrollando una importante labor de conservación, catalogación y difusión del legado histórico del club blanco.",
-          "needs_translation": true
+          "title": "مركز التراث التاريخي يعزز الحفاظ على ذاكرة ريال مدريد",
+          "summary": "واصل مركز التراث التاريخي التابع لمؤسسة ريال مدريد، خلال موسم 2025-2026، مهام حفظ وفهرسة ونشر الإرث التاريخي للنادي الملكي.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260914/1004227059/centro-patrimonio-historico-refuerza-conservacion-memoria-real-madrid.html",
@@ -1100,7 +1207,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260914/1004227059/centro-patrimonio-historico-refuerza-conservacion-memoria-real-madrid.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5c6e22a529ee",
@@ -1156,23 +1268,27 @@
       "i18n": {
         "en": {
           "title": "Maldini driving licence suspended after car crash",
-          "summary": "Italy international Daniel Maldini has his driving licence suspended following a car crash in Milan.",
-          "needs_translation": false
+          "summary": "Italy international Daniel Maldini has had his driving licence suspended following a car crash in Milan.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Maldini driving licence suspended after car crash",
-          "summary": "Italy international Daniel Maldini has his driving licence suspended following a car crash in Milan.",
-          "needs_translation": true
+          "title": "Le permis de conduire de Maldini suspendu après un accident de la route",
+          "summary": "L'international avec l'Italy Daniel Maldini a vu son permis de conduire être suspendu après un accident de la route survenu à Milan.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Maldini driving licence suspended after car crash",
-          "summary": "Italy international Daniel Maldini has his driving licence suspended following a car crash in Milan.",
-          "needs_translation": true
+          "title": "Retiran el carné de conducir a Maldini tras un accidente de tráfico",
+          "summary": "Al internacional con Italy Daniel Maldini se le ha retirado el carné de conducir tras sufrir un accidente de tráfico en Milan.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Maldini driving licence suspended after car crash",
-          "summary": "Italy international Daniel Maldini has his driving licence suspended following a car crash in Milan.",
-          "needs_translation": true
+          "title": "سحب رخصة قيادة مالديني بعد حادث سير",
+          "summary": "تم تعليق رخصة قيادة الدولي الإيطالي دانييل مالديني بعد تعرضه لحادث سير في مدينة ميلانو.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/c9gk5ezz5l4ko?at_medium=RSS&at_campaign=rss",
@@ -1194,7 +1310,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/c9gk5ezz5l4ko?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "bc086984f892",
@@ -1241,7 +1362,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cqwyzxx96wnwo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7b3f3831b425",
@@ -1293,7 +1419,12 @@
           "url": "https://www.kicker.de/liverpool-kader-zu-klein-iraola-sieht-es-anders-1252707/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9deb85667aa5",
@@ -1387,7 +1518,12 @@
           "url": "https://www.lefigaro.fr/sports/rugby/xv-de-france/xv-de-france-plages-de-repos-choix-surprenants-fabien-galthie-a-etabli-sa-liste-des-33-joueurs-proteges-avant-le-prochain-mondial-20260914"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "597c7f02a724",
@@ -1537,23 +1673,27 @@
       "i18n": {
         "es": {
           "title": "Adrián Niño, un regreso providencial",
-          "summary": "Adrián Niño tuvo un estreno de lo más providencial en Primera División.",
-          "needs_translation": false
+          "summary": "Adrián Niño firmó un debut decisivo en Primera División.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Adrián Niño, un regreso providencial",
-          "summary": "Adrián Niño tuvo un estreno de lo más providencial en Primera División.",
-          "needs_translation": true
+          "title": "Adrián Niño, a providential return",
+          "summary": "Adrián Niño made a decisive debut in Primera División.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Adrián Niño, un regreso providencial",
-          "summary": "Adrián Niño tuvo un estreno de lo más providencial en Primera División.",
-          "needs_translation": true
+          "title": "Adrián Niño, un retour providentiel",
+          "summary": "Adrián Niño a signé des débuts décisifs en Primera División.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Adrián Niño, un regreso providencial",
-          "summary": "Adrián Niño tuvo un estreno de lo más providencial en Primera División.",
-          "needs_translation": true
+          "title": "أدريان نينيو، عودة حاسمة",
+          "summary": "سجل أدريان نينيو ظهوراً أول حاسماً في الدوري الإسباني.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/malaga/20260914/1004227140/adrian-nino-regreso-providencial.html",
@@ -1575,7 +1715,12 @@
           "url": "https://www.mundodeportivo.com/futbol/malaga/20260914/1004227140/adrian-nino-regreso-providencial.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "901759b7c9fe",
@@ -1763,7 +1908,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260914/1004227054/linda-caicedo-premiada.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f3b74d5ec051",
@@ -1819,23 +1969,27 @@
       "i18n": {
         "es": {
           "title": "La decisión de la Juventus sobre Spalletti",
-          "summary": "La Juventus sufrió el pasado domingo un duro golpe al perder en el terreno del Sassuolo (3-2), derrota que dejó al equipo blanquinegro octavo en la tabla de la Serie A.",
-          "needs_translation": false
+          "summary": "La Juventus cayó a la octava posición de la Serie A tras perder 3-2 en el campo de Sassuolo el pasado domingo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "La decisión de la Juventus sobre Spalletti",
-          "summary": "La Juventus sufrió el pasado domingo un duro golpe al perder en el terreno del Sassuolo (3-2), derrota que dejó al equipo blanquinegro octavo en la tabla de la Serie A.",
-          "needs_translation": true
+          "title": "Juventus' decision regarding Spalletti",
+          "summary": "Juventus dropped to eighth place in Serie A following a 3-2 defeat away at Sassuolo last Sunday.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La decisión de la Juventus sobre Spalletti",
-          "summary": "La Juventus sufrió el pasado domingo un duro golpe al perder en el terreno del Sassuolo (3-2), derrota que dejó al equipo blanquinegro octavo en la tabla de la Serie A.",
-          "needs_translation": true
+          "title": "La décision de la Juventus concernant Spalletti",
+          "summary": "Battue 3-2 sur le terrain de Sassuolo dimanche dernier, la Juventus se retrouve à la huitième place de Serie A.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "La decisión de la Juventus sobre Spalletti",
-          "summary": "La Juventus sufrió el pasado domingo un duro golpe al perder en el terreno del Sassuolo (3-2), derrota que dejó al equipo blanquinegro octavo en la tabla de la Serie A.",
-          "needs_translation": true
+          "title": "قرار يوفنتوس بشأن سباليتي",
+          "summary": "تراجع يوفنتوس إلى المركز الثامن في جدول ترتيب الدوري الإيطالي بعد خسارته أمام ساسولو بنتيجة 3-2 يوم الأحد الماضي.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fichajes/20260914/1004227096/decision-juventus-sobre-spalletti.html",
@@ -1857,7 +2011,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fichajes/20260914/1004227096/decision-juventus-sobre-spalletti.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ab016ecf1d3a",
@@ -1866,23 +2025,27 @@
       "i18n": {
         "es": {
           "title": "Unai Emery volverá al Sánchez-Pizjuán",
-          "summary": "Unai Emery regresa al Ramón Sánchez-Pizjuán.",
-          "needs_translation": false
+          "summary": "El entrenador Unai Emery regresará al Ramón Sánchez-Pizjuán.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Unai Emery volverá al Sánchez-Pizjuán",
-          "summary": "Unai Emery regresa al Ramón Sánchez-Pizjuán.",
-          "needs_translation": true
+          "title": "Unai Emery to return to Sánchez-Pizjuán",
+          "summary": "Manager Unai Emery is set to return to Ramón Sánchez-Pizjuán.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Unai Emery volverá al Sánchez-Pizjuán",
-          "summary": "Unai Emery regresa al Ramón Sánchez-Pizjuán.",
-          "needs_translation": true
+          "title": "Unai Emery va revenir à Sánchez-Pizjuán",
+          "summary": "L'entraîneur Unai Emery s'apprête à faire son retour au stade Ramón Sánchez-Pizjuán.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Unai Emery volverá al Sánchez-Pizjuán",
-          "summary": "Unai Emery regresa al Ramón Sánchez-Pizjuán.",
-          "needs_translation": true
+          "title": "أوناي إيمري يعود إلى سانشيز بيزخوان",
+          "summary": "يستعد المدرب أوناي إيمري للعودة إلى ملعب رامون سانشيز بيزخوان.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/sevilla/20260914/1004227094/unai-emery-volvera-sanchez-pizjuan.html",
@@ -1904,7 +2067,12 @@
           "url": "https://www.mundodeportivo.com/futbol/sevilla/20260914/1004227094/unai-emery-volvera-sanchez-pizjuan.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d0068adf8c77",
@@ -2023,23 +2191,27 @@
       "i18n": {
         "es": {
           "title": "\"Me gustaron más las palabras de Lamine que las de Mbappé\"",
-          "summary": "El Balón de Oro 2026 se está convirtiendo desde hace unos días en un debate en el que participan abiertamente los propios candidatos.",
-          "needs_translation": false
+          "summary": "El Balón de Oro 2026 genera un creciente debate público en el que participan activamente los propios futbolistas candidatos, entre ellos Lamine y Mbappé.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "\"Me gustaron más las palabras de Lamine que las de Mbappé\"",
-          "summary": "El Balón de Oro 2026 se está convirtiendo desde hace unos días en un debate en el que participan abiertamente los propios candidatos.",
-          "needs_translation": true
+          "title": "\"I liked Lamine's words more than Mbappé's\"",
+          "summary": "The race for the 2026 Balón d'Or has sparked an open debate involving the candidates themselves, including Lamine and Mbappé.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "\"Me gustaron más las palabras de Lamine que las de Mbappé\"",
-          "summary": "El Balón de Oro 2026 se está convirtiendo desde hace unos días en un debate en el que participan abiertamente los propios candidatos.",
-          "needs_translation": true
+          "title": "« J'ai préféré les mots de Lamine à ceux de Mbappé »",
+          "summary": "Le débat autour du Balón d'Or 2026 s'intensifie alors que les prétendants au trophée, dont Lamine et Mbappé, s'expriment désormais ouvertement.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"Me gustaron más las palabras de Lamine que las de Mbappé\"",
-          "summary": "El Balón de Oro 2026 se está convirtiendo desde hace unos días en un debate en el que participan abiertamente los propios candidatos.",
-          "needs_translation": true
+          "title": "\"أعجبتني تصريحات لامين أكثر من تصريحات مبابي\"",
+          "summary": "تحول سباق الكرة الذهبية لعام 2026 إلى نقاش مفتوح يشارك فيه المرشحون للتتويج بالجائزة عبر تصريحات علنية.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260914/1004227076/me-gustaron-palabras-lamine-mbappe.html",
@@ -2061,7 +2233,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260914/1004227076/me-gustaron-palabras-lamine-mbappe.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2842e6ddc264",
@@ -2108,7 +2285,12 @@
           "url": "https://www.fourfourtwo.com/team/frank-lampard-is-safe-despite-coventry-citys-horror-start-doug-king-knows-better-than-to-lose-his-nerve"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5f6813d59cb9",
@@ -2164,23 +2346,27 @@
       "i18n": {
         "es": {
           "title": "Primeros contactos para la renovación de Gerard Martín",
-          "summary": "El FC Barcelona comienza ya a preparar el camino de la renovación de Gerard Martín .",
-          "needs_translation": false
+          "summary": "El FC Barcelona ha iniciado los primeros contactos para preparar la renovación de Gerard Martín.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Primeros contactos para la renovación de Gerard Martín",
-          "summary": "El FC Barcelona comienza ya a preparar el camino de la renovación de Gerard Martín .",
-          "needs_translation": true
+          "title": "First contacts for Gerard Martín's renewal",
+          "summary": "FC Barcelona have initiated initial talks to prepare the contract renewal of Gerard Martín.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Primeros contactos para la renovación de Gerard Martín",
-          "summary": "El FC Barcelona comienza ya a preparar el camino de la renovación de Gerard Martín .",
-          "needs_translation": true
+          "title": "Premiers contacts pour la prolongation de Gerard Martín",
+          "summary": "Le FC Barcelona a entamé les premières démarches en vue de prolonger le contrat de Gerard Martín.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Primeros contactos para la renovación de Gerard Martín",
-          "summary": "El FC Barcelona comienza ya a preparar el camino de la renovación de Gerard Martín .",
-          "needs_translation": true
+          "title": "أولى المحادثات لتجديد عقد جيرارد مارتين",
+          "summary": "بدأ نادي برشلونة خطواته الأولى ومحادثاته الأولية تمهيداً لتجديد عقد جيرارد مارتين.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260914/1004227069/primeros-contactos-renovacion-gerard-martin.html",
@@ -2202,7 +2388,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260914/1004227069/primeros-contactos-renovacion-gerard-martin.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "727ea75d0393",
@@ -2358,23 +2549,27 @@
       "i18n": {
         "es": {
           "title": "Llega a Barcelona el gol de Zabiri, la revelación de la Liga",
-          "summary": "Yassir Zabiri , la gran revelación de este inicio de Liga en Primera División gracias a sus cinco goles para el Racing de Santander , llega este miércoles a Barcelona, la ciudad que una vez dijo que colmaría sus sueños futbolísticos.",
-          "needs_translation": false
+          "summary": "Yassir Zabiri, revelación del inicio de Primera División con cinco goles en el Racing de Santander, llega este miércoles a Barcelona.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Llega a Barcelona el gol de Zabiri, la revelación de la Liga",
-          "summary": "Yassir Zabiri , la gran revelación de este inicio de Liga en Primera División gracias a sus cinco goles para el Racing de Santander , llega este miércoles a Barcelona, la ciudad que una vez dijo que colmaría sus sueños futbolísticos.",
-          "needs_translation": true
+          "title": "Zabiri's goals, the revelation of the Liga, arrive in Barcelona",
+          "summary": "Yassir Zabiri, the breakout player in Primera División with five goals for Racing de Santander, arrives this Wednesday in Barcelona.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Llega a Barcelona el gol de Zabiri, la revelación de la Liga",
-          "summary": "Yassir Zabiri , la gran revelación de este inicio de Liga en Primera División gracias a sus cinco goles para el Racing de Santander , llega este miércoles a Barcelona, la ciudad que una vez dijo que colmaría sus sueños futbolísticos.",
-          "needs_translation": true
+          "title": "Les buts de Zabiri, révélation de la Liga, arrivent à Barcelona",
+          "summary": "Auteur de cinq buts avec Racing de Santander en ce début de Primera División, la révélation Yassir Zabiri arrive ce mercredi à Barcelona.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Llega a Barcelona el gol de Zabiri, la revelación de la Liga",
-          "summary": "Yassir Zabiri , la gran revelación de este inicio de Liga en Primera División gracias a sus cinco goles para el Racing de Santander , llega este miércoles a Barcelona, la ciudad que una vez dijo que colmaría sus sueños futbolísticos.",
-          "needs_translation": true
+          "title": "أهداف زبيري، مفاجأة الدوري، تصل إلى برشلونة",
+          "summary": "يصل ياسر زبيري، مفاجأة بداية الدوري الإسباني بتسجيله خمسة أهداف مع راسينغ سانتاندير، هذا الأربعاء إلى برشلونة.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260914/1004227050/llega-barcelona-gol-zabiri-revelacion-liga.html",
@@ -2396,7 +2591,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260914/1004227050/llega-barcelona-gol-zabiri-revelacion-liga.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6b6a39b0bb92",
