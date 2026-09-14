@@ -64,7 +64,12 @@
           "url": "https://www.kicker.de/karl-entschuldigt-sich-fuer-jubel-geste-das-sind-emotionen-1252502/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "71dccf6454f1",
@@ -272,27 +277,48 @@
       "summary": "Quelconque depuis le début de saison, le Russe Matveï Safonov a été essentiel dans le succès validant le premier clean-sheet du PSG à Brest (1-0), ce dimanche. De quoi faire taire les critiques ?",
       "i18n": {
         "fr": {
-          "title": "« Le doute ? Qu'est-ce que c'est ? » : après un début de saison délicat, le gardien du PSG Matvei Safonov brille à Brest",
-          "summary": "Quelconque depuis le début de saison, le Russe Matveï Safonov a été essentiel dans le succès validant le premier clean-sheet du PSG à Brest (1-0), ce dimanche. De quoi faire taire les critiques ?",
-          "needs_translation": false
+          "title": "PSG : décisif à Brest, Matveï Safonov fait taire les doutes",
+          "summary": "Matveï Safonov a préservé le premier clean-sheet de la saison du PSG à Brest (1-0), répondant aux critiques nées de ses récentes sorties.",
+          "body": [
+            "Contesté après des prestations mitigées et une statistique alarmante de neuf buts encaissés sur neuf tirs subis, le portier russe voyait l'ombre de Lucas Chevalier planer sur sa place de titulaire. Luis Enrique a pourtant balayé toute remise en cause ce dimanche, assurant n'avoir aucun doute sur son dernier rempart.",
+            "Sur le terrain, Safonov a immédiatement donné raison à son entraîneur. Malgré quelques hésitations dans les airs, il s'est montré décisif à la 57e minute grâce à une manchette spectaculaire sur une tête de Kamory Doumbia, sécurisant ce succès étriqué en terre bretonne."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "\"Doubt? What is it?\": after a delicate start to the season, PSG goalkeeper Matvei Safonov shines in Brest",
-          "summary": "Whatever the beginning of the season, Russian Matvei Safonov was essential in the success of PSG's first clean sheet in Brest (1-0) on Sunday. Enough to silence the critics?",
+          "title": "PSG: Decisive at Brest, Matveï Safonov silences critics",
+          "summary": "Matveï Safonov secured PSG's first clean sheet of the season at Brest (1-0), answering the mounting criticism over his recent performances.",
+          "body": [
+            "Under fire after mixed displays and a worrying stat of nine goals conceded from nine shots on target, the Russian keeper had seen the shadow of Lucas Chevalier loom over his starting spot. Luis Enrique brushed aside any debate on Sunday, insisting he has complete faith in his shot-stopper.",
+            "Safonov backed up his manager's words on the pitch. Despite a few shaky moments in the air, he proved vital in the 57th minute with a stunning reflex save to deny a header from Kamory Doumbia, sealing a hard-fought victory in Brittany."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "\"¿La duda? ¿Qué es?\": después de un comienzo de temporada delicado, el portero del PSG Matvei Safonov brilla en Brest",
-          "summary": "Cualquiera que haya sido desde el comienzo de la temporada, el ruso Matvéi Safonov ha sido esencial en el éxito que validó el primer clean-sheet del PSG en Brest (1-0), este domingo. ¿Para qué silenciar a los críticos?",
+          "title": "PSG: Decisivo en Brest, Matveï Safonov disipa las dudas",
+          "summary": "Matveï Safonov firmó la primera portería a cero de la temporada del PSG en Brest (1-0) y respondió sobre el césped a las críticas recientes.",
+          "body": [
+            "Cuestionado por actuaciones irregulares y una estadística demoledora de nueve goles encajados en nueve tiros recibidos, el arquero ruso veía amenazada su titularidad ante la sombra de Lucas Chevalier. Sin embargo, Luis Enrique zanjó cualquier debate este domingo y ratificó su plena confianza en su guardameta.",
+            "Safonov tardó poco en darle la razón. Pese a ciertas dudas en el juego aéreo, resultó providencial en el minuto 57 con un manotazo espectacular ante un cabezazo de Kamory Doumbia, asegurando un trabajado triunfo a domicilio."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "\"شك ؟ ما هو ؟\": بعد بداية حساسة للموسم، يتألق حارس مرمى سان جيرمان ماتفي سافونوف في بريست",
-          "summary": "مهما كانت بداية الموسم، كان الروسي ماتفي سافونوف ضروريا في نجاح أول شباك نظيفة لفريق باريس سان جيرمان في بريست (1-0) يوم الأحد. ما يكفي لإسكات النقاد ؟",
+          "title": "باريس سان جيرمان: سافونوف يتألق في بريست ويسكت المشككين",
+          "summary": "حافظ ماتفي سافونوف على نظافة شباك باريس سان جيرمان للمرة الأولى هذا الموسم خلال الفوز على بريست (1-0)، ليرد بقوة على الانتقادات التي طالته مؤخراً.",
+          "body": [
+            "واجه الحارس الروسي انتقادات لاذعة بعد عروض متذبذبة ورقم مقلق باهتزاز شباكه بتسعة أهداف من تسع تسديدات فقط، وسط تزايد الحديث عن أحقية لوكاس شيفالييه باللعب أساسياً. غير أن المدرب لويس إنريكي قطع الشك باليقين يوم الأحد، مؤكداً ثقته المطلقة في حاميه الأخير.",
+            "وعلى أرضية الملعب، أثبت سافونوف صحة رهان مدربه. فرغم بعض التردد في الكرات العالية، ظهر الحارس في أبهى صورة عند الدقيقة 57 بتصدٍ إعجازي أبعد به رأسية كاموري دومبيا، ليمنح فريقه فوزاً ثميناً وشاقاً خارج الديار."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/-le-doute-qu-est-ce-que-c-est-apres-un-debut-de-saison-delicat-le-gardien-du-psg-matvei-safonov-brille-a-brest/1718619#at_medium=RSS_feeds",
@@ -314,7 +340,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/-le-doute-qu-est-ce-que-c-est-apres-un-debut-de-saison-delicat-le-gardien-du-psg-matvei-safonov-brille-a-brest/1718619#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-14T07:01:53+00:00"
+        }
+      }
     },
     {
       "id": "94da6102c81b",
@@ -364,7 +403,12 @@
           "url": "https://www.ole.com.ar/futbol-primera/tabla-anual-clasificacion-copas-libertadores-sudamericana-descenso-puntero-boca-river_0_muHRN2UZGC.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "25fdaf378a78",
@@ -373,26 +417,27 @@
       "i18n": {
         "es": {
           "title": "El bisturí del Sporting: Los rojiblancos vuelven a la casilla de salida",
-          "summary": "Si hay una imagen que puede resumir lo visto en El Molinón en el partido en el que el Sporting recibía a un recién ascendido como el Eldense, es la de Guille Rosas buscando y no encontrando a un compañero en un saque de banda cuando quedaban pocos segundos para el final del…",
-          "needs_translation": false
+          "summary": "El Sporting tropezó en El Molinón frente al recién ascendido Eldense, firmando una gris actuación marcada por la falta de ideas hasta los instantes finales.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Sporting's scalpel: The rojiblancos return to the starting square",
-          "summary": "If there is one image that can sum up what was seen in El Molinón in the match in which Sporting received a newly promoted player like Eldense, it is that of Guille Rosas looking for and not finding a teammate in a throw-in with a few seconds left until the end of...",
+          "title": "Sporting's dissection: The red and whites back to square one",
+          "summary": "Sporting stumbled at El Molinón against newly promoted Eldense, delivering a flat performance highlighted by a clear lack of options in the closing seconds.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le scalpel du Sporting : les rouges et blancs retournent à la case départ",
-          "summary": "S'il y a une image qui peut résumer ce qui a été vu à El Molinón dans le match où le Sporting recevait un nouveau promu comme Eldense, c'est celle de Guille Rosas cherchant et ne trouvant pas un partenaire dans une remise en jeu alors qu'il ne restait que quelques secondes avant la fin du...",
+          "title": "Le scalpel du Sporting : Les Rouge et Blanc de retour à la case départ",
+          "summary": "Le Sporting a calé à El Molinón face au promu Eldense, livrant une prestation terne illustrée par un manque criant de solutions dans les dernières secondes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مشرط سبورتنج: الروجيبلانكوس يعودون إلى ساحة البداية",
-          "summary": "إذا كانت هناك صورة واحدة يمكن أن تلخص ما شوهد في El Molinón في المباراة التي استقبل فيها Sporting لاعبًا تمت ترقيته حديثًا مثل Eldense، فهي صورة Guille Rosas يبحث عن زميل له في الفريق ولا يجده في رمية مع بقاء بضع ثوانٍ حتى نهاية...",
+          "title": "مشرحة سبورتينغ: الفريق يعود إلى نقطة البداية",
+          "summary": "تعثر سبورتينغ على ملعب إل مولينون أمام إلدينسي الصاعد حديثاً، في لقاء شهد غياب الحلول الهجومية للفريق حتى الثواني الأخيرة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sport.es/es/noticias/futbol/bisturi-sporting-rojiblancos-vuelven-casilla-134253470?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol",
@@ -414,7 +459,12 @@
           "url": "https://www.sport.es/es/noticias/futbol/bisturi-sporting-rojiblancos-vuelven-casilla-134253470?utm_source=rss-noticias&utm_medium=feed&utm_campaign=futbol"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2f60a01f7857",
@@ -473,26 +523,27 @@
       "i18n": {
         "es": {
           "title": "Colapinto hoy es la bandera",
-          "summary": "Sin Messi en la Selección, no hay quien provoque tanto impacto en el mundo deportivo internacional como Franco.",
-          "needs_translation": false
+          "summary": "En ausencia de Messi con la Selección, Franco Colapinto se posiciona como el deportista argentino con mayor impacto en la escena internacional.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Colapinto today is the flag",
-          "summary": "Without Messi in the national team, there is no one who makes as much impact on the international sports world as Franco.",
+          "title": "Colapinto is today's standard-bearer",
+          "summary": "In the absence of Messi from the Selección, Franco Colapinto has emerged as the Argentine athlete making the greatest international impact.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Colapinto est aujourd'hui le drapeau",
-          "summary": "Sans Messi en sélection, il n'y a personne qui ait autant d'impact dans le monde sportif international que Franco.",
+          "title": "Colapinto est aujourd'hui l'étendard",
+          "summary": "En l'absence de Messi avec la Selección, Franco Colapinto s'impose comme le sportif argentin ayant le plus d'impact sur la scène internationale.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كولابينتو اليوم هو العلم",
-          "summary": "بدون ميسي في المنتخب الوطني، لا يوجد أحد له تأثير كبير على عالم الرياضة الدولي مثل فرانكو.",
+          "title": "كولابينتو يحمل الراية اليوم",
+          "summary": "في ظل غياب ميسي عن منتخب الأرجنتين، بات فرانكو كولابينتو الرياضي الأرجنتيني الأكثر تأثيراً على الساحة الرياضية الدولية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/opinion/colapinto-franco-formula1-bandera-argentina_0_okcZDXJce4.html",
@@ -514,7 +565,12 @@
           "url": "https://www.ole.com.ar/opinion/colapinto-franco-formula1-bandera-argentina_0_okcZDXJce4.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "86cce3f76a6c",
@@ -572,27 +628,48 @@
       "summary": "Le Raja Casablanca connaît désormais son adversaire au deuxième tour préliminaire de la Coupe de la Confédération africaine de football (CAF). Il s’agit du club nigérian d’El Kanemi Warriors, qui a validé son billet pour ce tour après avoir éliminé Odiibo, de Guinée-Bissau.",
       "i18n": {
         "fr": {
-          "title": "Coupe de la CAF : Le Raja affrontera El Kanemi Warriors au prochain tour",
-          "summary": "Le Raja Casablanca connaît désormais son adversaire au deuxième tour préliminaire de la Coupe de la Confédération africaine de football (CAF). Il s’agit du club nigérian d’El Kanemi Warriors, qui a validé son billet pour ce tour après avoir éliminé Odiibo, de Guinée-Bissau.",
-          "needs_translation": false
+          "title": "Coupe de la CAF : le Raja et l'AS FAR connaissent leurs adversaires",
+          "summary": "Le Raja Casablanca défiera les Nigérians d'El Kanemi Warriors au deuxième tour préliminaire de la Coupe de la CAF, tandis que l'AS FAR affrontera Korhogo.",
+          "body": [
+            "Exemptés du premier tour, les Verts croiseront la route d'El Kanemi Warriors, vainqueur du club bissau-guinéen d'Odiibo (3-0, 0-1). Le match aller se jouera entre le 16 et le 18 octobre, avant une manche retour fixée du 23 au 25 octobre.",
+            "L'AS FAR entamera également son aventure continentale à cette étape face aux Ivoiriens de Korhogo. L'équipe ivoirienne a validé sa qualification en écartant les Tchadiens de l'AS PSI grâce à un succès 2-0 au retour, après un nul 2-2 à l'aller."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "CAF Cup: Raja will face El Kanemi Warriors in the next round",
-          "summary": "Raja Casablanca now knows their opponent in the second preliminary round of the Confederation of African Football (CAF) Cup. This is the Nigerian club of El Kanemi Warriors, who validated their ticket for this round after eliminating Odiibo, from Guinea-Bissau.",
+          "title": "CAF Confederation Cup: Raja and AS FAR discover preliminary round opponents",
+          "summary": "Raja Casablanca will battle Nigerian side El Kanemi Warriors in the second preliminary round of the CAF Confederation Cup, while AS FAR take on Korhogo.",
+          "body": [
+            "Handed a bye in the opening round, Raja face Nigerian outfit El Kanemi Warriors, who eliminated Guinea-Bissau's Odiibo (3-0, 0-1). The first leg will take place between October 16 and 18, with the return fixture set for October 23-25.",
+            "AS FAR also begin their continental campaign at this stage against Ivorian club Korhogo. The Ivorians booked their spot by dispatching Chadian side AS PSI with a 2-0 second-leg win following a 2-2 draw in the opener."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Copa de la CAF: El Raja se enfrentará a El Kanemi Warriors en la próxima ronda",
-          "summary": "El Raja Casablanca ya conoce a su rival en la segunda ronda preliminar de la Copa de la Confederación Africana de Fútbol (CAF). Se trata del club nigeriano El Kanemi Warriors, que validó su billete para esta ronda tras eliminar a Odiibo, de Guinea-Bissau.",
+          "title": "Copa Confederación de la CAF: Raja y AS FAR ya conocen a sus rivales",
+          "summary": "Raja Casablanca se medirá a los nigerianos de El Kanemi Warriors en la segunda ronda preliminar de la Copa Confederación, mientras que AS FAR chocará contra Korhogo.",
+          "body": [
+            "Exentos de disputar la primera fase, los marroquíes chocarán con la escuadra nigeriana de El Kanemi Warriors, que dejó en el camino a los bisauguineanos de Odiibo (3-0, 0-1). La ida se disputará entre el 16 et el 18 de octubre, y la vuelta quedó programada del 23 al 25 de octubre.",
+            "AS FAR también iniciará su periplo continental en esta eliminatoria frente a los marfileños de Korhogo. El cuadro de Costa de Marfil selló su billete tras superar a los chadianos de AS PSI con un 2-0 en la vuelta, tras el 2-2 del choque de ida."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "كأس الاتحاد الأفريقي: رجا سيواجه محاربي الكنيمي في الجولة القادمة",
-          "summary": "يعرف رجا الدار البيضاء الآن خصمه في الجولة التمهيدية الثانية لكأس الاتحاد الأفريقي لكرة القدم (CAF). هذا هو النادي النيجيري لمحاربي الكنيمي، الذي صادق على تذكرته لهذه الجولة بعد القضاء على أوديبو، من غينيا بيساو.",
+          "title": "كأس الكونفدرالية الأفريقية: الرجاء والجيش الملكي يتعرفان على منافسيهما",
+          "summary": "يواجه الرجاء الرياضي فريق إيل كانيمي ووريرز النيجيري في الدور التمهيدي الثاني من كأس الكونفدرالية الأفريقية، بينما يصطدم الجيش الملكي بنظيره كورهوغو.",
+          "body": [
+            "بعد إعفائه من خوض الدور التمهيدي الأول، يستهل الرجاء مشواره القاري بملاقاة إيل كانيمي ووريرز النيجيري، المتأهل على حساب أوديبو من غينيا بيساو بنتيجتي (3-0 و0-1). وتُجرى مواجهة الذهاب بين 16 و18 أكتوبر، على أن يُلعب لقاء الإياب ما بين 23 و25 من الشهر ذاته.",
+            "من جانبه، يبدأ الجيش الملكي مغامرته القارية من الدور نفسه أمام كورهوغو الإيفواري. وحسم الفريق الإيفواري بطاقة التأهل عقب تجاوزه عقبة أس بي إس آي التشادي بالفوز عليه إياباً 2-0، بعدما انتهت موقعة الذهاب بالتعادل 2-2."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://fr.hespress.com/488222-coupe-de-la-caf-le-raja-affrontera-el-kanemi-warriors-au-prochain-tour.html",
@@ -614,7 +691,20 @@
           "url": "https://fr.hespress.com/488222-coupe-de-la-caf-le-raja-affrontera-el-kanemi-warriors-au-prochain-tour.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-14T07:01:55+00:00"
+        }
+      }
     },
     {
       "id": "2dced0690502",
@@ -722,27 +812,48 @@
       "summary": "Lors d'une interview donnée à Movistar Plus Deportes, Lamine Yamal a largement évoqué le Ballon d'Or, ainsi que l'un de ses plus gros concurrents, Kylian Mbappé, qu'il n'a pas manqué de complimenter.",
       "i18n": {
         "fr": {
-          "title": "« Mbappé et moi sommes les deux meilleurs du monde » : Lamine Yamal encense son concurrent mais se voit favori pour le Ballon d'Or",
-          "summary": "Lors d'une interview donnée à Movistar Plus Deportes, Lamine Yamal a largement évoqué le Ballon d'Or, ainsi que l'un de ses plus gros concurrents, Kylian Mbappé, qu'il n'a pas manqué de complimenter.",
-          "needs_translation": false
+          "title": "Ballon d'Or : Lamine Yamal s'estime favori devant Kylian Mbappé",
+          "summary": "Lamine Yamal a affirmé mériter le Ballon d'Or devant Kylian Mbappé, tout en plaçant le Madrilène à son niveau au sommet de la planète football.",
+          "body": [
+            "Interrogé par Movistar Plus Deportes, le jeune attaquant du FC Barcelone a salué son rival du Real Madrid, assurant que tous deux forment le duo de référence sur le terrain. L'Espagnol s'est toutefois désigné comme le prétendant le plus légitime pour la récompense décernée le 26 octobre, mettant en avant les trophées glanés la saison dernière.",
+            "Sur les pelouses espagnoles, le duel entre les deux joueurs reste particulièrement serré. Après son doublé contre Levante (4-2), le numéro 10 barcelonais trône en tête des buteurs de la Liga à égalité avec son coéquipier Raphinha, Sergio Camello et Kylian Mbappé."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "\"Mbappé and I are the two best in the world\": Lamine Yamal praises his competitor but sees himself as a favourite for the Ballon d 'Or",
-          "summary": "In an interview with Movistar Plus Deportes, Lamine Yamal spoke extensively about the Ballon d 'Or, as well as one of its biggest competitors, Kylian Mbappé, whom he did not fail to compliment.",
+          "title": "Ballon d'Or: Lamine Yamal sees himself ahead of Kylian Mbappé in race",
+          "summary": "Lamine Yamal believes he deserves the Ballon d'Or ahead of Kylian Mbappé, while acknowledging the Real Madrid forward shares the summit of world football with him.",
+          "body": [
+            "Speaking to Movistar Plus Deportes, the young FC Barcelona winger praised his Real Madrid counterpart, stressing that the pair currently set the standard at the highest level. The Spain international nevertheless backed himself as the rightful recipient of the trophy on October 26, pointing to his silverware from last season.",
+            "In domestic action, the battle between both superstars remains just as fierce. Following his brace against Levante (4-2), the Catalan number 10 sits atop the Liga scoring charts alongside teammate Raphinha, Sergio Camello and Kylian Mbappé."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "\"Mbappé y yo somos los dos mejores del mundo\": Lamine Yamal elogia a su competidor pero se ve como favorito para el Balón de Oro",
-          "summary": "En una entrevista con Movistar Plus Deportes, Lamine Yamal habló extensamente del Balón de Oro, así como de uno de sus mayores competidores, Kylian Mbappé, a quien no dejó de felicitar.",
+          "title": "Balón de Oro: Lamine Yamal se ve favorito por delante de Kylian Mbappé",
+          "summary": "Lamine Yamal aseguró merecer el Balón de Oro por delante de Kylian Mbappé, aunque situó al delantero del Real Madrid a su misma altura en la cúspide mundial.",
+          "body": [
+            "En declaraciones a Movistar Plus Deportes, el atacante del FC Barcelona elogió a su rival blanco y afirmó que ambos marcan el paso en la élite. El internacional español se postuló como el aspirante con más méritos para alzarse con el galardón el 26 de octubre, respaldado por los títulos que conquistó el curso pasado.",
+            "El pulso entre ambos también arde en los terrenos de juego. Tras firmar un doblete frente al Levante (4-2), el diez azulgrana lidera la tabla de goleadores de LaLiga empatado con su compañero Raphinha, Sergio Camello y Kylian Mbappé."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "\"مبابي وأنا الأفضل في العالم \": يشيد الأمين يامال بمنافسه لكنه يرى نفسه مفضلاً للكرة الذهبية",
-          "summary": "في مقابلة مع Movistar Plus Deportes، تحدث لامين يامال بشكل مكثف عن الكرة الذهبية، بالإضافة إلى أحد أكبر منافسيها، كيليان مبابي، الذي لم يفشل في مدحه.",
+          "title": "الكرة الذهبية: لامين يامال يرى نفسه الأحق بالجائزة أمام كيليان مبابي",
+          "summary": "أكد لامين يامال أنه يستحق التتويج بالكرة الذهبية على حساب كيليان مبابي، معتبراً في الوقت ذاته أن نجم ريال مدريد يقاسمه قمة كرة القدم العالمية حالياً.",
+          "body": [
+            "وفي تصريحات لشبكة موفيستار بلس ديبورتيس، أشاد مهاجم برشلونة الشاب بمنافسه في ريال مدريد، موضحاً أنهما يشكلان الثنائي الأبرز على الساحة. ورغم ذلك، رشح الدولي الإسباني نفسه ليكون الأوفر حظاً لنيل الجائزة المقررة في 26 أكتوبر، مستنداً إلى الألقاب التي حققها في الموسم الماضي.",
+            "وعلى الملاعب الإسبانية، تشتعل المنافسة التهديفية بين النجمين؛ فبعد ثنائيته في شباك ليفانتي (4-2)، اعتلى صاحب القميص رقم 10 في النادي الكتالوني صدارة هدافي الدوري الإسباني، متساوياً مع زميله رافينيا وسيرخيو كاميلو وكيليان مبابي."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/-mbappe-et-moi-sommes-les-deux-meilleurs-du-monde-lamine-yamal-encense-son-concurrent-mais-se-voit-favori-pour-le-ballon-d-or/1718607#at_medium=RSS_feeds",
@@ -764,7 +875,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/-mbappe-et-moi-sommes-les-deux-meilleurs-du-monde-lamine-yamal-encense-son-concurrent-mais-se-voit-favori-pour-le-ballon-d-or/1718607#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 8,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-14T07:01:57+00:00"
+        }
+      }
     },
     {
       "id": "f19cbae709fb",
@@ -1433,32 +1557,33 @@
       "i18n": {
         "de": {
           "title": "2. Bundesliga: Hannover kann Nürnberg nicht stoppen",
-          "summary": "Auch Hannover hat gegen den Club das Nachsehen. Mit einer couragierten Leistung sammelt Kloses Team die nächsten drei Punkte und bleibt oben dabei.",
-          "needs_translation": false
+          "summary": "Nürnberg hat sich gegen Hannover durchgesetzt und drei weitere Punkte gesichert. Die Mannschaft von Miroslav Klose bleibt damit im oberen Tabellenbereich der 2. Bundesliga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "2nd Bundesliga: Hanover cannot stop Nuremberg",
-          "summary": "Hanover is also losing out to the club. With a courageous performance, Klose's team collects the next three points and stays at the top.",
+          "title": "2. Bundesliga: Hannover cannot stop Nürnberg",
+          "summary": "Nürnberg defeated Hannover in the 2. Bundesliga to claim all three points. Miroslav Klose's team keeps pace with the league leaders.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "2. Bundesliga : Hanovre ne peut pas arrêter Nuremberg",
-          "summary": "Hanovre a également des regrets envers le club. Avec une performance courageuse, l'équipe de Klose accumule les trois points suivants et reste au sommet.",
+          "title": "2. Bundesliga : Hannover ne peut pas stopper Nürnberg",
+          "summary": "Nürnberg s'est imposé face à Hannover en 2. Bundesliga. Cette victoire permet à l'équipe de Miroslav Klose d'empocher trois points et de rester au contact du haut de tableau.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Bundesliga 2: Hannover no puede detener a Núremberg",
-          "summary": "Hannover también tiene una desventaja contra el club. Con una actuación valiente, el equipo de Kloses acumula los siguientes tres puntos y se mantiene en la cima.",
+          "title": "2. Bundesliga: Hannover no puede frenar a Nürnberg",
+          "summary": "Nürnberg superó a Hannover y sumó tres puntos en la 2. Bundesliga. El conjunto dirigido por Miroslav Klose se mantiene en la parte alta de la clasificación.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الدوري الألماني الثاني: لا يمكن لهانوفر إيقاف نورمبرغ",
-          "summary": "كما أن هانوفر تخسر أمام النادي. مع أداء شجاع، يجمع فريق كلوز النقاط الثلاث التالية ويبقى في القمة.",
+          "title": "دوري الدرجة الثانية الألماني: هانوفر يعجز عن إيقاف نورنبرغ",
+          "summary": "تغلب نورنبرغ على هانوفر ليحصد ثلاث نقاط ثمينة في دوري الدرجة الثانية الألماني، مواصلًا المنافسة في المراكز المتقدمة تحت قيادة المدرب ميروسلاف كلوزه.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga2/offensivpower-pur-nuernberg-schickt-96-nach-hause,video-zweite-bundesliga-fc-nuernberg-hannover-highlights-100.html",
@@ -1480,7 +1605,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga2/offensivpower-pur-nuernberg-schickt-96-nach-hause,video-zweite-bundesliga-fc-nuernberg-hannover-highlights-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "aa9f2f99f874",
@@ -1657,32 +1787,33 @@
       "i18n": {
         "de": {
           "title": "2. Bundesliga: Aufsteiger Cottbus lässt Karlsruhe abblitzen",
-          "summary": "Energie Cottbus schlägt den Karlsruher SC deutlich mit 3:0. Für den Aufsteiger ist es der erste Auswärtserfolg der Saison.",
-          "needs_translation": false
+          "summary": "Energie Cottbus gewinnt deutlich mit 3:0 bei Karlsruher SC und feiert damit den ersten Auswärtserfolg der Saison.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "2. Bundesliga: Cottbus promoted, Karlsruhe bounces back",
-          "summary": "Energie Cottbus beats Karlsruher SC 3-0. For the newcomer, it's his first away win of the season.",
+          "title": "2. Bundesliga: Promoted Cottbus brush aside Karlsruhe",
+          "summary": "Energie Cottbus claimed a clear 3-0 victory over Karlsruher SC, securing their first away win of the season.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "2. Bundesliga : l'ascension de Cottbus fait chuter Karlsruhe",
-          "summary": "Energie Cottbus bat clairement le Karlsruher SC 3:0. Pour le promu, c'est le premier succès à l'extérieur de la saison.",
+          "title": "2. Bundesliga : Le promu Cottbus surclasse Karlsruhe",
+          "summary": "Energie Cottbus s'est nettement imposé 3-0 face à Karlsruher SC. Le promu signe à Karlsruhe son premier succès à l'extérieur de la saison.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Bundesliga 2: el recién ascendido Cottbus destroza Karlsruhe",
-          "summary": "Energie Cottbus supera claramente al SC de Karlsruhe por 3-0. Para el recién ascendido es el primer éxito fuera de casa de la temporada.",
+          "title": "2. Bundesliga: El recién ascendido Cottbus golea a Karlsruhe",
+          "summary": "Energie Cottbus venció con claridad por 3-0 a Karlsruher SC, consiguiendo así su primer triunfo como visitante de la temporada.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "2. الدوري الألماني: تمت ترقية كوتبوس، وارتد كارلسروه مرة أخرى",
-          "summary": "إنرجي كوتبوس تتفوق على كارلسروهر 3-0. بالنسبة للوافد الجديد، إنه أول فوز له خارج أرضه هذا الموسم.",
+          "title": "دوري الدرجة الثانية الألماني: الصاعد كوتبوس يهزم كارلسروه",
+          "summary": "فاز إنيرجي كوتبوس بثلاثية نظيفة على مضيفه كارلسروه، محققاً فوزه الأول خارج ملعبه هذا الموسم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga2/aufsteiger-cottbus-laesst-karlsruhe-abblitzen,video-zweite-bundesliga-karlsruher-sc-energie-cottbus-highlights-100.html",
@@ -1704,7 +1835,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga2/aufsteiger-cottbus-laesst-karlsruhe-abblitzen,video-zweite-bundesliga-karlsruher-sc-energie-cottbus-highlights-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "38d2df70f6d9",
@@ -1760,7 +1896,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga2/dresden-nutzt-braunschweigs-standardschwaeche-aus,video-zweite-bundesliga-eintracht-braunschweig-dynamo-dresden-highlights-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5c955f1b4852",
@@ -1822,28 +1963,33 @@
       "i18n": {
         "de": {
           "title": "2. Bundesliga: Magdeburg lässt Kaiserslautern keine Chance",
-          "summary": "Der 1. FC Magdeburg feiert einen 3:0-Sieg gegen den bis dato ungeschlagenen 1.",
-          "needs_translation": false
+          "summary": "Der 1. FC Magdeburg hat sich in der 2. Bundesliga mit 3:0 gegen das bis dahin ungeschlagene Kaiserslautern durchgesetzt.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "2. Bundesliga: Magdeburg lässt Kaiserslautern keine Chance",
-          "summary": "Der 1. FC Magdeburg feiert einen 3:0-Sieg gegen den bis dato ungeschlagenen 1.",
-          "needs_translation": true
+          "title": "2. Bundesliga: Magdeburg leave Kaiserslautern no chance",
+          "summary": "1. FC Magdeburg secured a 3-0 victory over previously unbeaten Kaiserslautern in the 2. Bundesliga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "2. Bundesliga: Magdeburg lässt Kaiserslautern keine Chance",
-          "summary": "Der 1. FC Magdeburg feiert einen 3:0-Sieg gegen den bis dato ungeschlagenen 1.",
-          "needs_translation": true
+          "title": "2. Bundesliga : Magdeburg ne laisse aucune chance à Kaiserslautern",
+          "summary": "Le 1. FC Magdeburg s'est imposé 3-0 face à Kaiserslautern, qui concède sa première défaite de la saison en 2. Bundesliga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "2. Bundesliga: Magdeburg lässt Kaiserslautern keine Chance",
-          "summary": "Der 1. FC Magdeburg feiert einen 3:0-Sieg gegen den bis dato ungeschlagenen 1.",
-          "needs_translation": true
+          "title": "2. Bundesliga: Magdeburg no da opción a Kaiserslautern",
+          "summary": "El 1. FC Magdeburg se impuso por 3-0 ante Kaiserslautern, que perdió su condición de invicto en la 2. Bundesliga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "2. Bundesliga: Magdeburg lässt Kaiserslautern keine Chance",
-          "summary": "Der 1. FC Magdeburg feiert einen 3:0-Sieg gegen den bis dato ungeschlagenen 1.",
-          "needs_translation": true
+          "title": "دوري الدرجة الثانية الألماني: ماغديبورغ يتفوق بوضوح على كايزرسلاوترن",
+          "summary": "حقق نادي ماغديبورغ الفوز بثلاثية نظيفة أمام ضيفه كايزرسلاوترن، ملحقاً به الهزيمة الأولى هذا الموسم ضمن منافسات دوري الدرجة الثانية الألماني.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga2/magdeburg-dominiert-kaiserslautern-nach-belieben,video-zweite-bundesliga-fc-magdeburg-fc-kaiserslautern-highlights-100.html",
@@ -1865,7 +2011,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga2/magdeburg-dominiert-kaiserslautern-nach-belieben,video-zweite-bundesliga-fc-magdeburg-fc-kaiserslautern-highlights-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "75d43bd6c549",
