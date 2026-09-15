@@ -167,26 +167,27 @@
       "i18n": {
         "es": {
           "title": "El hombre que dijo 'no' al Madrid",
-          "summary": "No es fácil decirle ‘no’ al Madrid. Rodri lo hizo.",
-          "needs_translation": false
+          "summary": "Rodri rechazó una propuesta para fichar por el Real Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "The man who said 'no' to Madrid",
-          "summary": "It is not easy to say ‘no’ to Madrid. Rodri did.",
+          "summary": "Rodri turned down an offer to join Real Madrid.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "L'homme qui a dit non à Madrid",
-          "summary": "Il n'est pas facile de dire « non » à Madrid. Rodri l'a fait.",
+          "title": "L'homme qui a dit « non » au Madrid",
+          "summary": "Rodri a refusé une proposition pour rejoindre le Real Madrid.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الرجل الذي قال \"لا\" لمدريد",
-          "summary": "ليس من السهل أن تقول \"لا\" لمدريد. رودري فعل ذلك.",
+          "title": "الرجل الذي قال «لا» لريال مدريد",
+          "summary": "رفض رودري عرضاً للانتقال إلى ريال مدريد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260915/1004227284/hombre-dijo-no-madrid.html",
@@ -208,7 +209,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260915/1004227284/hombre-dijo-no-madrid.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d9a0d9b4bed3",
@@ -258,7 +264,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/-je-le-meriterais-pour-tout-ce-que-j-ai-gagne-d-abord-discrets-lamine-yamal-et-le-barca-passent-a-l-offensive-dans-la-campagne-pour-le-ballon-d-or-2026/1718704#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "cc6dadd34a99",
@@ -308,7 +319,12 @@
           "url": "https://www.ole.com.ar/futbol-primera/playoffs-clausura-fecha-9-clasificados_0_7DSimaTf3c.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9062e8e44643",
@@ -317,26 +333,27 @@
       "i18n": {
         "es": {
           "title": "Por qué no creo en el Balón de Oro",
-          "summary": "En pleno cruce de declaraciones sobre el Balón de Oro, a mí me apetece más centrarme en el fútbol y lo que veo sobre el terreno de juego, con un Barcelona que nos hace disfrutar en este inicio de temporada. La gente tendría que olvidarse un poco de esto del Balón de Oro.",
-          "needs_translation": false
+          "summary": "Frente al debate en torno al Balón de Oro, el autor aboga por centrarse en el fútbol sobre el terreno de juego y destacar el buen inicio de temporada del Barcelona.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Why I Don't Believe in the Ballon d 'Or",
-          "summary": "At the crossroads of statements about the Ballon d 'Or, I want to focus more on football and what I see on the pitch, with a Barcelona that makes us enjoy this start of the season. People would have to forget about this Ballon d 'Or thing a little bit.",
+          "title": "Why I don't believe in the Balón de Oro",
+          "summary": "Amid ongoing debates surrounding the Balón de Oro, the author calls for focusing on on-pitch football and highlighting Barcelona's strong start to the season.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Pourquoi je ne crois pas au Ballon d'Or",
-          "summary": "Au milieu des déclarations sur le Ballon d'Or, j'ai plus envie de me concentrer sur le football et ce que je vois sur le terrain, avec un Barcelone qui nous fait profiter de ce début de saison. Les gens devraient oublier un peu ce Ballon d'Or.",
+          "title": "Pourquoi je ne crois pas au Balón de Oro",
+          "summary": "Face aux débats entourant le Balón de Oro, l'auteur appelle à se focaliser sur le jeu et sur le début de saison réussi de Barcelona.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "لماذا لا أؤمن بالكرة الذهبية",
-          "summary": "في مفترق طرق التصريحات حول الكرة الذهبية، أريد أن أركز أكثر على كرة القدم وما أراه على أرض الملعب، مع برشلونة الذي يجعلنا نستمتع بهذه البداية من الموسم. سيتعين على الناس أن ينسوا أمر الكرة الذهبية هذا قليلاً.",
+          "title": "لماذا لا أؤمن بجائزة الكرة الذهبية",
+          "summary": "وسط الجدل الدائر حول الكرة الذهبية، دعا الكاتب إلى التركيز على كرة القدم داخل الملعب والإشادة ببداية برشلونة القوية هذا الموسم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260915/1004227274/no-creo-balon-oro.html",
@@ -358,7 +375,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260915/1004227274/no-creo-balon-oro.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "eb8b810eeaa3",
@@ -458,7 +480,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260915/1004227053/uefa-decide-hoy-final-champions-2029-spotify-camp-nou-wembley.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4f49e2abee23",
@@ -467,26 +494,27 @@
       "i18n": {
         "es": {
           "title": "Troglio luego del empate: \"Les gusta más ver al Manchester City\"",
-          "summary": "El técnico de Banfield explicó la situación del Taladro tras igualar contra Barracas Central.",
-          "needs_translation": false
+          "summary": "Tras el empate de Banfield ante Barracas Central, el entrenador Troglio analizó el presente de su equipo y se refirió al estilo de juego ante las críticas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Troglio after the draw: \"They like to see Manchester City better\"",
-          "summary": "The Banfield technician explained the situation of the Drill after drawing against Barracas Central.",
+          "title": "Troglio after the draw: \"They prefer watching Manchester City\"",
+          "summary": "Following Banfield's draw against Barracas Central, manager Troglio addressed the team's current form and responded to criticism over their playing style.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Troglio après le match nul : « Ils préfèrent voir Manchester City »",
-          "summary": "Le technicien de Banfield a expliqué la situation de la Perceuse après avoir égalisé contre Barracas Central.",
+          "title": "Troglio après le match nul : « Ils préfèrent regarder Manchester City »",
+          "summary": "Après le match nul de Banfield face à Barracas Central, l'entraîneur Troglio s'est exprimé sur la situation sportive de son équipe.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تروجليو بعد القرعة: \"إنهم يحبون رؤية مانشستر سيتي بشكل أفضل\"",
-          "summary": "شرح فني بانفيلد وضع الحفر بعد السحب ضد باراكاس سنترال.",
+          "title": "تروغليو بعد التعادل: \"يفضلون مشاهدة مانشستر سيتي\"",
+          "summary": "عقب تعادل بانفيلد أمام باراكاس سنترال، حلل المدرب تروغليو وضعية فريقه ودافع عن أسلوب لعبه في مواجهة الانتقادات.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/banfield/pedrotroglio-banfield-barracascentral-manchestercity-taladro_0_hJSbe8bNFQ.html",
@@ -508,7 +536,12 @@
           "url": "https://www.ole.com.ar/banfield/pedrotroglio-banfield-barracascentral-manchestercity-taladro_0_hJSbe8bNFQ.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "dfe122778473",
@@ -567,26 +600,27 @@
       "i18n": {
         "es": {
           "title": "El Vascopero: Arruabarrena, su regreso al Morumbí de la gloria y la chance de recuperar la historia",
-          "summary": "Luego de 26 años, el DT vuelve al estadio donde fue campeón de América. Allí, buscará contagiar aquella mística para que su Boca se pueda meter en la semi de la Sudamericana...",
-          "needs_translation": false
+          "summary": "Arruabarrena regresa al Morumbí tras 26 años de consagrarse campeón de América, con el objetivo de clasificar a Boca a las semifinales de la Sudamericana.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Vascopero: Arruabarrena, his return to the Morumbí of glory and the chance to recover history",
-          "summary": "After 26 years, the DT returns to the stadium where he was champion of America. There, he will try to infect that mystique so that his Mouth can get into the semi of the South American...",
+          "title": "Vascopero: Arruabarrena, his return to the Morumbí of glory and the chance to reclaim history",
+          "summary": "Twenty-six years after becoming champion of América there, Arruabarrena returns to the Morumbí aiming to guide Boca into the semifinals of the Sudamericana.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le Vascopero : Arruabarrena, son retour au Morumbí de la gloire et la chance de récupérer l'histoire",
-          "summary": "Après 26 ans, le DT retourne au stade où il a été champion d'Amérique. Là, il cherchera à propager cette mystique afin que sa bouche puisse entrer dans la semi de l'Amérique du Sud...",
+          "title": "Vascopero : Arruabarrena, son retour au Morumbí de la gloire et l'occasion de renouer avec l'histoire",
+          "summary": "Vingt-six ans après y avoir été sacré champion d'América, Arruabarrena retourne au Morumbí pour tenter de qualifier Boca en demi-finales de la Sudamericana.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Vascopero: Arruabarrena، وعودته إلى مورومبي المجد وفرصة لاستعادة التاريخ",
-          "summary": "بعد 26 عامًا، عاد دي تي إلى الملعب حيث كان بطل أمريكا. هناك، سيحاول إصابة هذا الغموض حتى يتمكن فمه من الوصول إلى شبه أمريكا الجنوبية...",
+          "title": "فاسكوبيرو: أروابارينا وعودته إلى مورومبي المجد وفرصة استعادة التاريخ",
+          "summary": "يعود المدرب أروابارينا إلى ملعب مورومبي بعد 26 عاماً من تتويجه بطلاً لأمريكا الجنوبية، ساعياً لقيادة بوكا جونيورز إلى نصف نهائي بطولة سودأمريكانا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/vascoarruabarrena-boca-sanpablo-carlosbianchi-copasudamericana-palmeiras-copalibertadores-morumbi_0_qMBGBZjrLb.html",
@@ -608,7 +642,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/vascoarruabarrena-boca-sanpablo-carlosbianchi-copasudamericana-palmeiras-copalibertadores-morumbi_0_qMBGBZjrLb.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "de68d205d59d",
@@ -658,7 +697,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/boca-sanpablo-rodolfoarruabarrena-copasudamericana-morumbi-bombonera-miguelmerentiel_0_ziyGFUpt9g.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4414eee2d5e2",
@@ -908,7 +952,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260915/1004227285/rodri-da-claves-eleccion-barca-no-madrid.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "291fc19cf696",
@@ -1081,7 +1130,17 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260914/1004227304/lamine-yamal-obsesionado-ganar-champions-bueno.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-15T06:39:57+00:00"
+        }
+      }
     },
     {
       "id": "3037fa80e48f",
@@ -1090,26 +1149,27 @@
       "i18n": {
         "en": {
           "title": "Leeds inflict heavy defeat on Newcastle to climb to third",
-          "summary": "Dominic Calvert-Lewin stars as Leeds United go third in the Premier League with a superb performance to inflict a heavy 4-1 defeat on Newcastle United at Elland Road.",
-          "needs_translation": false
+          "summary": "Leeds United moved up to third in the Premier League after securing a 4-1 victory over Newcastle United at Elland Road, led by Dominic Calvert-Lewin.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Leeds inflige une lourde défaite à Newcastle pour grimper à la troisième place",
-          "summary": "Dominic Calvert-Lewin joue le rôle de Leeds United en troisième position de la Premier League avec une superbe performance pour infliger une lourde défaite 4-1 à Newcastle United à Elland Road.",
+          "title": "Leeds inflige une lourde défaite à Newcastle et monte à la troisième place",
+          "summary": "Leeds United s'est hissé à la troisième place de Premier League après s'être imposé 4-1 face à Newcastle United à Elland Road, emmené par Dominic Calvert-Lewin.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El Leeds inflige una dura derrota al Newcastle para subir al tercer puesto",
-          "summary": "Dominic Calvert-Lewin protagoniza la tercera posición del Leeds United en la Premier League con una magnífica actuación para infligir una dura derrota por 4-1 al Newcastle United en Elland Road.",
+          "title": "Leeds inflige una dura derrota a Newcastle y escala a la tercera posición",
+          "summary": "Leeds United se colocó en la tercera posición de la Premier League tras golear 4-1 a Newcastle United en Elland Road, con una actuación destacada de Dominic Calvert-Lewin.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ألحق ليدز هزيمة ثقيلة بنيوكاسل ليصعد إلى المركز الثالث",
-          "summary": "يلعب دومينيك كالفرت- لوين دور ليدز يونايتد في المركز الثالث في الدوري الممتاز بأداء رائع لإلحاق هزيمة ثقيلة 4-1 على نيوكاسل يونايتد في طريق إيلاند.",
+          "title": "ليدز يلحق هزيمة ثقيلة بنيوكاسل ويصعد إلى المركز الثالث",
+          "summary": "صعد ليدز يونايتد إلى المركز الثالث في الدوري الإنجليزي الممتاز بعد فوزه بنتيجة 4-1 على نيوكاسل يونايتد في إيلاند رود، بفضل تألق دومينيك كالفيرت-لوين.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/videos/c8d3el7mvypo?at_medium=RSS&at_campaign=rss",
@@ -1131,7 +1191,12 @@
           "url": "https://www.bbc.co.uk/sport/football/videos/c8d3el7mvypo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7a36d1b17de3",
@@ -1140,26 +1205,27 @@
       "i18n": {
         "es": {
           "title": "5-3: El Inter reacciona a tiempo tras una doble desventaja",
-          "summary": "Cinco goles marcados y tres encajados. Por seguir hablando de números, cuatro victorias en cuatro jornadas.",
-          "needs_translation": false
+          "summary": "Tras remontar una doble desventaja, el Inter se impuso por 5-3 y sumó su cuarta victoria en cuatro jornadas disputadas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "5-3: Inter react in time after a double disadvantage",
-          "summary": "Five goals scored and three conceded. To continue talking about numbers, four victories in four days.",
+          "title": "5-3: Inter react in time after two-goal deficit",
+          "summary": "Inter overcame a two-goal deficit to secure a 5-3 victory, maintaining a perfect record of four wins in four matches.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "5-3 : L'Inter réagit à temps après un double désavantage",
-          "summary": "Cinq buts marqués et trois encaissés. Pour continuer à parler de chiffres, quatre victoires en quatre journées.",
+          "title": "5-3 : L'Inter réagit à temps après avoir été mené de deux buts",
+          "summary": "Mené de deux buts, l'Inter a renversé le score pour s'imposer 5-3, signant ainsi sa quatrième victoire en quatre journées.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "5-3: التفاعل في الوقت المناسب بعد عيب مزدوج",
-          "summary": "تم تسجيل خمسة أهداف وتلقي ثلاثة أهداف. للاستمرار في الحديث عن الأرقام، أربعة انتصارات في أربعة أيام.",
+          "title": "5-3: إنتر ينتفض في الوقت المناسب بعد التأخر بهدفين",
+          "summary": "قلب إنتر تأخره بهدفين ليفوز بنتيجة 5-3، محققاً انتصاره الرابع في أربع جولات.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/serie-a/20260914/1004227299/inter-reacciona-doble-susto.html",
@@ -1181,7 +1247,12 @@
           "url": "https://www.mundodeportivo.com/futbol/serie-a/20260914/1004227299/inter-reacciona-doble-susto.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8257210cb145",
@@ -1281,7 +1352,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cdr76rvylv1o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b754790aa307",
@@ -1387,7 +1463,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Premier-league-newcastle-coule-a-leeds-qui-s-invite-sur-le-podium/1718818#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c6707df4ac03",
@@ -1608,7 +1689,17 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Encore-une-remontee-menee-2-0-l-inter-milan-s-impose-contre-l-udinese-avec-un-but-de-marcus-thuram/1718809#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-15T06:39:59+00:00"
+        }
+      }
     },
     {
       "id": "590fff169163",
@@ -1770,7 +1861,12 @@
           "url": "https://www.sportschau.de/fussball/nationalmannschaft/wer-fuer-klopps-riesenkader-infrage-kommt,dfb-klopp-kader-104.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f62fbac5d9c2",
@@ -1829,26 +1925,27 @@
       "i18n": {
         "es": {
           "title": "El Real Madrid planea un 'fichaje' para el último título que le falta en sus vitrinas",
-          "summary": "Un poco antes de que el primer equipo del Real Madrid se mida al Atlético en el derbi del próximo domingo 19 de septiembre a las 16:15, la sección juvenil también tendrá un importante duelo.",
-          "needs_translation": false
+          "summary": "Antes del derbi entre el Real Madrid y el Atlético del domingo 19 de septiembre a las 16:15, la sección juvenil disputará también un duelo clave.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Real Madrid plans a 'signing' for the last title that is missing in their showcases",
-          "summary": "Shortly before Real Madrid's first team face Atletico in the derby on Sunday 19 September at 16:15, the youth section will also have an important duel.",
+          "title": "Real Madrid plans a 'signing' for the last title missing from its trophy cabinet",
+          "summary": "Before the first-team derby between Real Madrid and Atlético on Sunday, September 19 at 16:15, the youth side will also contest an important clash.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le Real Madrid planifie un « transfert » pour le dernier titre qui lui manque dans ses vitrines",
-          "summary": "Un peu avant que la première équipe du Real Madrid ne rencontre l'Atlético lors du derby du dimanche 19 septembre prochain à 16h15, la section des jeunes aura également un duel important.",
+          "title": "Le Real Madrid prépare une « recrue » pour le dernier titre manquant à son palmarès",
+          "summary": "Avant le derby opposant le Real Madrid à l'Atlético le dimanche 19 septembre à 16 h 15, l'équipe des jeunes disputera également une rencontre décisive.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يخطط ريال مدريد \"للتوقيع\" على اللقب الأخير المفقود في عروضه",
-          "summary": "قبل وقت قصير من مواجهة فريق ريال مدريد الأول لأتلتيكو في ديربي يوم الأحد 19 سبتمبر الساعة 16:15، سيخوض قسم الشباب أيضًا مبارزة مهمة.",
+          "title": "ريال مدريد يخطط لـ\"صفقة\" من أجل اللقب الأخير الغائب عن خزائنه",
+          "summary": "قبل مباراة ديربي الفريق الأول بين ريال مدريد وأتلتيكو المقررة يوم الأحد 19 سبتمبر في تمام الساعة 16:15، سيخوض فريق الشباب مواجهة حاسمة بدوره.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260914/1004227251/real-madrid-planea-fichaje-ultimo-titulo-le-falta-vitrinas-depende-mourinho.html",
@@ -1870,7 +1967,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260914/1004227251/real-madrid-planea-fichaje-ultimo-titulo-le-falta-vitrinas-depende-mourinho.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a82db92fae1c",
@@ -1929,26 +2031,27 @@
       "i18n": {
         "es": {
           "title": "Gordon desvela a RAC1 las palabras que ya domina en catalán",
-          "summary": "Anthony Gordon pronunció en una entrevista para RAC1 las primeras palabras que ya domina en catalán.",
-          "needs_translation": false
+          "summary": "En una entrevista concedida a RAC1, Anthony Gordon pronunció las primeras palabras que ya domina en lengua catalana.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Gordon reveals to RAC1 the words he already speaks in Catalan",
-          "summary": "Anthony Gordon pronounced in an interview for RAC1 the first words he already mastered in Catalan.",
+          "title": "Gordon reveals to RAC1 the words he already knows in Catalan",
+          "summary": "In an interview with RAC1, Anthony Gordon shared the first words he has already mastered in Catalan.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Gordon dévoile à RAC1 les mots qu'il maîtrise déjà en catalan",
-          "summary": "Anthony Gordon a prononcé dans une interview pour RAC1 les premiers mots qu'il maîtrise déjà en catalan.",
+          "title": "Gordon révèle à RAC1 les mots qu'il maîtrise déjà en catalan",
+          "summary": "Lors d'un entretien accordé à RAC1, Anthony Gordon a prononcé les premiers mots qu'il maîtrise déjà en catalan.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يكشف جوردون لـ RAC1 الكلمات التي يتحدث بها بالفعل باللغة الكاتالونية",
-          "summary": "أعلن أنطوني جوردون في مقابلة مع RAC1 أول كلمات يتقنها بالفعل باللغة الكاتالونية.",
+          "title": "جوردون يكشف لإذاعة \"راك 1\" عن الكلمات التي يتقنها بالكتالونية",
+          "summary": "كشف أنتوني جوردون خلال مقابلة مع إذاعة \"راك 1\" عن الكلمات الأولى التي بات يتقن التحدث بها باللغة الكتالونية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260914/1004227270/gordon-desvela-rac1-palabras-domina-catalan.html",
@@ -1970,7 +2073,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260914/1004227270/gordon-desvela-rac1-palabras-domina-catalan.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b23c9bbaf3ea",
@@ -2188,7 +2296,12 @@
           "url": "https://www.kicker.de/offiziell-hannover-stellt-trainer-titz-frei-boldt-erkennt-negative-muster-1252266/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 4,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0372d8abccdb",
@@ -2300,7 +2413,12 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20260914/1004227267/loco-dato-punteria-ferran-presume-psg-jugar-facil.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "aade14f1f131",
@@ -2309,32 +2427,33 @@
       "i18n": {
         "de": {
           "title": "Alara eiskalt: Bayern jubelt über späten Siegtreffer",
-          "summary": "Ein später Treffer von Jokerin Alara sorgte für den Sieg des FC Bayern München bei Bayer Leverkusen. Die Highlights der Partie gibt es hier im Video.",
-          "needs_translation": false
+          "summary": "Ein spätes Tor der eingewechselten Alara hat FC Bayern München zum Auswärtssieg bei Bayer Leverkusen geführt.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Alara ice-cold: Bavaria cheers on late victory goals",
-          "summary": "A later goal by Jokerin Alara ensured FC Bayern Munich's victory at Bayer Leverkusen. The highlights of the game can be found here in the video.",
+          "title": "Alara ice-cold: Bayern celebrate late winning goal",
+          "summary": "A late goal from substitute Alara secured a victory for FC Bayern München away against Bayer Leverkusen.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Alara glacée : le Bayern se réjouit de la victoire tardive",
-          "summary": "Un but ultérieur du joker Alara a assuré la victoire du FC Bayern Munich au Bayer Leverkusen. Les temps forts de la partie se trouvent ici dans la vidéo.",
+          "title": "Alara intraitable : Bayern jubile après un but vainqueur tardif",
+          "summary": "Un but tardif de la remplaçante Alara a permis à FC Bayern München de s'imposer sur la pelouse de Bayer Leverkusen.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Alara con frío: el Bayern celebra el gol de la victoria tardía",
-          "summary": "Un gol posterior de Jokerin Alara aseguró la victoria del Bayern de Múnich ante el Bayer Leverkusen. Los aspectos más destacados del partido se pueden ver aquí en el vídeo.",
+          "title": "Alara de sangre fría: Bayern celebra un tardío gol de la victoria",
+          "summary": "Un gol tardío de la suplente Alara dio la victoria a FC Bayern München a domicilio frente a Bayer Leverkusen.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ألارا آيس بارد: بافاريا تهتف لأهداف الفوز المتأخر",
-          "summary": "هدف لاحق لجوكرين ألارا ضمن فوز بايرن ميونيخ على باير ليفركوزن. يمكن العثور على النقاط البارزة في اللعبة هنا في الفيديو.",
+          "title": "ألارا ببرود أعصاب: بايرن يحتفل بهدف الفوز المتأخر",
+          "summary": "سجلت البديلة ألارا هدفاً متأخراً قادت به بايرن ميونخ إلى تحقيق الفوز خارج أرضه على حساب باير ليفركوزن.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/alara-eiskalt-bayern-jubelt-ueber-spaeten-siegtreffer-1252739/video#omrss",
@@ -2356,7 +2475,12 @@
           "url": "https://www.kicker.de/alara-eiskalt-bayern-jubelt-ueber-spaeten-siegtreffer-1252739/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b1372f9f9273",
@@ -2415,26 +2539,27 @@
       "i18n": {
         "es": {
           "title": "El Como de Cesc ya no sorprende a nadie pero sigue creciendo a base de triunfos",
-          "summary": "El Como de Cesc Fàbregas ya es un equipo de culto. Su apuesta por ser protagonista mediante el balón no está reñido con que sus futbolistas se arremanguen cuando toca en los partidos.",
-          "needs_translation": false
+          "summary": "El Como de Cesc Fàbregas afianza su crecimiento competitivo gracias a sus victorias, combinando un estilo de posesión con sacrificio defensivo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Cesc's Como no longer surprises anyone but continues to grow based on triumphs",
-          "summary": "The Como of Cesc Fàbregas is already a cult team. His commitment to being a protagonist through the ball is not at odds with his players rolling up their sleeves when he plays in matches.",
+          "title": "Cesc's Como surprises no one anymore but keeps growing through victories",
+          "summary": "Managed by Cesc Fàbregas, Como continues its steady growth through victories by combining possession-based football with defensive work rate.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le Côme de Cesc ne surprend plus personne mais continue de croître grâce aux triomphes",
-          "summary": "Le Côme de Cesc Fàbregas est déjà une équipe culte. Son pari d'être protagoniste à travers le ballon n'est pas incompatible avec le fait que ses joueurs se retroussent les manches quand il joue dans les matchs.",
+          "title": "Le Como de Cesc ne surprend plus personne mais continue de grandir grâce aux victoires",
+          "summary": "Dirigé par Cesc Fàbregas, Como poursuit sa progression grâce à ses victoires en alliant jeu de possession et combativité sur le terrain.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كومو سيسك لم تعد تفاجئ أي شخص ولكنها تستمر في النمو على أساس الانتصارات",
-          "summary": "كومو من سيسك فابريغاس هو بالفعل فريق عبادة. التزامه بأن يكون بطل الرواية من خلال الكرة لا يتعارض مع لاعبيه الذين يشمرون عن سواعدهم عندما يلعب في المباريات.",
+          "title": "كومو بقيادة سيسك لم يعد يفاجئ أحدا لكنه يواصل التطور عبر الانتصارات",
+          "summary": "يواصل نادي كومو تقدمه تحت قيادة مدربه سيسك فابريغاس عبر تحقيق الانتصارات، جامعاً بين أسلوب الاستحواذ على الكرة والجهد الدفاعي الجماعي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/serie-a/20260914/1004227266/cesc-no-sorprende-sigue-creciendo-base-triunfos.html",
@@ -2456,7 +2581,12 @@
           "url": "https://www.mundodeportivo.com/futbol/serie-a/20260914/1004227266/cesc-no-sorprende-sigue-creciendo-base-triunfos.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "21c4b6ded70d",
@@ -2465,26 +2595,27 @@
       "i18n": {
         "es": {
           "title": "Kiko Casilla: \"Nadie puede criticar cómo está rindiendo Courtois\"",
-          "summary": "El exguardameta del Real Madrid y del Elche analiza en Marcador el momento de ambos equipos, defiende el rendimiento de Courtois y destaca el récord de Soria con el Getafe Leer",
-          "needs_translation": false
+          "summary": "Kiko Casilla, exportero del Real Madrid y del Elche, analizó en Marcador la situación de ambos equipos, defendió el rendimiento de Courtois y destacó el récord de Soria con el Getafe.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Kiko Casilla: \"No one can criticize how Courtois is performing\"",
-          "summary": "The former goalkeeper of Real Madrid and Elche analyzes the moment of both teams in the Scoreboard, defends the performance of Courtois and highlights Soria's record with Getafe",
+          "title": "Kiko Casilla: \"Nobody can criticize Courtois' performance\"",
+          "summary": "Former Real Madrid and Elche goalkeeper Kiko Casilla defended Courtois' form on Marcador, while assessing both clubs' current situations and highlighting Soria's record with Getafe.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Kiko Casilla : « Personne ne peut critiquer la performance de Courtois »",
-          "summary": "L'ancien gardien du Real Madrid et d'Elche analyse le moment des deux équipes sur le tableau d'affichage, défend les performances de Courtois et souligne le record de Soria avec Getafe Lire",
+          "title": "Kiko Casilla : « Personne ne peut critiquer le niveau de Courtois »",
+          "summary": "L'ancien gardien du Real Madrid et d'Elche, Kiko Casilla, a analysé l'actualité des deux clubs dans Marcador, défendant le rendement de Courtois et soulignant le record de Soria avec Getafe.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "كيكو كاسيلا: \"لا يمكن لأحد أن ينتقد أداء كورتوا\"",
-          "summary": "يحلل حارس المرمى السابق لريال مدريد وإلتشي لحظة كلا الفريقين في لوحة النتائج، ويدافع عن أداء كورتوا ويسلط الضوء على سجل سوريا مع خيتافي",
+          "title": "كيكو كاسيا: \"لا أحد يمكنه انتقاد مستوى كورتوا\"",
+          "summary": "دافع حارس ريال مدريد وإلتشي السابق، كيكو كاسيا، عن أداء كورتوا عبر برنامج ماركادور، كما حلل وضع الناديين وأشاد بالرقم القياسي الذي حققه سوريا مع خيتافي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.marca.com/radio/2026/09/14/kiko-casilla-nadie-criticar-rindiendo-courtois.html",
@@ -2506,7 +2637,12 @@
           "url": "https://www.marca.com/radio/2026/09/14/kiko-casilla-nadie-criticar-rindiendo-courtois.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     }
   ]
 }
