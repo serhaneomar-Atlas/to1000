@@ -67,26 +67,27 @@
       "i18n": {
         "es": {
           "title": "Una deuda que asusta",
-          "summary": "He repasado a fondo la auditoría sobre el momento económico del Barça que Crowe ha realizado y que se cerró el pasado 30 de junio. Explicamos a continuación los detalles que llaman la atención.",
-          "needs_translation": false
+          "summary": "La auditoría económica del Barça realizada por Crowe al cierre del 30 de junio analiza la preocupante situación financiera del club y desvela detalles clave sobre su deuda.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "A debt that scares",
-          "summary": "I have thoroughly reviewed the audit on the economic moment of Barça that Crowe has carried out and that was closed on June 30. Here are the attention-grabbing details.",
+          "title": "A Frightening Debt",
+          "summary": "Crowe's financial audit of Barça, concluded on June 30, highlights striking details and alarming figures regarding the club's current debt and economic situation.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Une dette qui fait peur",
-          "summary": "J'ai examiné en profondeur l'audit sur le moment économique du Barça que Crowe a réalisé et qui a été clôturé le 30 juin dernier. Nous expliquons ci-dessous les détails qui attirent l'attention.",
+          "summary": "L'audit économique du Barça réalisé par Crowe et clos au 30 juin met en lumière des détails préoccupants concernant la dette et la situation financière du club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "دين يخيف",
-          "summary": "لقد راجعت بدقة التدقيق على اللحظة الاقتصادية لبرشلونة التي قام بها كرو والتي تم إغلاقها في 30 يونيو. فيما يلي التفاصيل التي تجذب الانتباه.",
+          "title": "ديون مقلقة",
+          "summary": "كشف تدقيق مالي أجرته شركة كرو في 30 يونيو حول الوضع الاقتصادي لنادي برشلونة عن تفاصيل مقلقة تخص حجم ديون النادي وأزمته المالية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260916/1004227581/deuda-asusta.html",
@@ -108,7 +109,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260916/1004227581/deuda-asusta.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "692b6add156b",
@@ -258,7 +264,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/sudamericana/boca-hoy-vs-san-pablo-copa-sudamericana-hora-juega-ver-tv-online-formaciones-mam-minuto_0_jZ1cbVdOj4.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "40c68c3dab48",
@@ -267,26 +278,27 @@
       "i18n": {
         "es": {
           "title": "Estudiantes, la única esperanza argentina en la Copa Libertadores: la posible formación ante Corinthians para llegar a semifinales",
-          "summary": "Con Platense eliminado, el Pincha viajó a Brasil en busca de meterse en el Top 4. La ida fue 1-1 y este miércoles se define en San Pablo.",
-          "needs_translation": false
+          "summary": "Tras la eliminación de Platense, Estudiantes visita a Corinthians en San Pablo este miércoles para buscar el pase a semifinales de la Copa Libertadores. La serie en Brasil se define tras el 1-1 de la ida.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Students, Argentina's only hope in the Copa Libertadores: the possible formation against Corinthians to reach the semifinals",
-          "summary": "With Platense eliminated, the Pincha traveled to Brazil in search of getting into the Top 4. The first leg was 1-1 and this Wednesday is defined in São Paulo.",
+          "title": "Estudiantes, Argentina's only hope in the Copa Libertadores: potential lineup against Corinthians to reach the semifinals",
+          "summary": "Following Platense's exit, Estudiantes visits Corinthians in San Pablo this Wednesday aiming for the Copa Libertadores semifinals. The tie heads to Brasil level after a 1-1 draw in the first leg.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Étudiants, le seul espoir argentin dans la Copa Libertadores : la possible formation contre les Corinthians pour atteindre les demi-finales",
-          "summary": "Avec Platense éliminé, le Pincha s'est rendu au Brésil à la recherche d'une place dans le Top 4. L'aller s'est déroulé 1-1 et ce mercredi, il est défini à São Paulo.",
+          "title": "Estudiantes, unique espoir argentin en Copa Libertadores : la composition probable face à Corinthians pour atteindre les demi-finales",
+          "summary": "Après l'élimination de Platense, Estudiantes affronte Corinthians ce mercredi à San Pablo en quart de finale retour de Copa Libertadores. La qualification se joue au Brasil après le match nul 1-1 à l'aller.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الطلاب، أمل الأرجنتين الوحيد في كأس ليبرتادوريس: التشكيل المحتمل ضد كورنثيانز للوصول إلى الدور قبل النهائي",
-          "summary": "مع القضاء على بلاتنس، سافر بينشا إلى البرازيل بحثًا عن الوصول إلى المراكز الأربعة الأولى. مباراة الذهاب كانت 1-1 وهذا الأربعاء تم تحديده في ساو باولو.",
+          "title": "إستوديانتيس، الأمل الأرجنتيني الوحيد في كوبا ليبرتادوريس: التشكيلة المحتملة ضد كورينثيانز لبلوغ نصف النهائي",
+          "summary": "يحل إستوديانتيس ضيفاً على كورينثيانز في ساو باولو هذا الأربعاء لحسم التأهل إلى نصف نهائي كوبا ليبرتادوريس، بعد التعادل 1-1 ذهاباً وخروج بلاتينسي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/libertadores/posible-formacion-estudiantes-vs-corinthians-revancha-cuartos-final-copa-libertadores-busca-semifinal_0_X6IFm5iTPu.html",
@@ -308,7 +320,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/libertadores/posible-formacion-estudiantes-vs-corinthians-revancha-cuartos-final-copa-libertadores-busca-semifinal_0_X6IFm5iTPu.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a895989abcfb",
@@ -358,7 +375,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/c8ly49lv3vx1o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "fb22c0314b89",
@@ -523,26 +545,27 @@
       "i18n": {
         "es": {
           "title": "A este paso, 25 millones de euros se van a quedar cortos",
-          "summary": "Ya lo dijo Manolo González en la previa de la visita del RCD Espanyol a Butarque. \" Si Roberto consigue esta media de goles, y es el potencial real que tiene, el año que viene estará en el Manchester City.",
-          "needs_translation": false
+          "summary": "Antes de la visita del RCD Espanyol a Butarque, Manolo González afirmó que si Roberto mantiene su promedio goleador, el próximo año jugará en el Manchester City.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "At this rate, 25 million euros will fall short",
-          "summary": "Manolo González already said it in the run-up to RCD Espanyol's visit to Butarque. \" If Roberto gets this average number of goals, and it is the real potential he has, next year he will be at Manchester City.",
+          "summary": "Ahead of RCD Espanyol's visit to Butarque, Manolo González stated that if Roberto maintains his scoring average, he will be at Manchester City next year.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "À ce stade, 25 millions d'euros vont manquer",
-          "summary": "Manolo González l'a déjà dit avant la visite du RCD Espanyol à Butarque. \" Si Roberto obtient cette moyenne de buts, et c'est le potentiel réel qu'il a, il sera à Manchester City l'année prochaine.",
+          "title": "À ce rythme, 25 millions d'euros ne suffiront pas",
+          "summary": "Avant le match du RCD Espanyol à Butarque, Manolo González a affirmé que si Roberto maintient sa moyenne de buts, il rejoindra Manchester City l'an prochain.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "وبهذا المعدل، فإن 25 مليون يورو ستنخفض",
-          "summary": "قال مانولو غونزاليس ذلك بالفعل في الفترة التي سبقت زيارة التجمع الكونغولي من أجل الديمقراطية إسبانيول إلى بوتارك. \" إذا حصل روبرتو على هذا العدد المتوسط من الأهداف، وهذه هي الإمكانات الحقيقية التي لديه، في العام المقبل سيكون في مانشستر سيتي.",
+          "title": "بهذا المعدل، 25 مليون يورو لن تكون كافية",
+          "summary": "صرح مانولو غونزاليس، مدرب إسبانيول، قبل مواجهة بوتاركي، بأن روبرتو سينتقل إلى مانشستر سيتي العام المقبل إذا حافظ على معدله التهديفي الحالي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/rcd-espanyol/20260916/1004227749/paso-25-millones-euros-quedar-cortos.html",
@@ -564,7 +587,12 @@
           "url": "https://www.mundodeportivo.com/futbol/rcd-espanyol/20260916/1004227749/paso-25-millones-euros-quedar-cortos.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2700b52bcd40",
@@ -623,26 +651,27 @@
       "i18n": {
         "es": {
           "title": "Así queda la clasificación de LaLiga tras el sufrido triunfo del Real Madrid en Elche",
-          "summary": "El Elche recibió al Real Madrid en el Estadio Manuel Martínez Valero para disputar un partido de la jornada 6 de LaLiga EA Sports.",
-          "needs_translation": false
+          "summary": "El Real Madrid logró una trabajada victoria frente al Elche en el Estadio Manuel Martínez Valero en la jornada 6 de LaLiga EA Sports, con impacto directo en la tabla.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "This is how LaLiga ranks after Real Madrid's long-suffering victory in Elche",
-          "summary": "Elche hosted Real Madrid at the Manuel Martínez Valero Stadium to play a match from matchday 6 of LaLiga EA Sports.",
+          "title": "How the LaLiga table looks after Real Madrid's hard-fought win at Elche",
+          "summary": "Real Madrid secured a hard-fought victory away at Elche at the Estadio Manuel Martínez Valero in matchday 6 of LaLiga EA Sports, impacting the league standings.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Voici le classement de LaLiga après le triomphe du Real Madrid à Elche",
-          "summary": "Elche a accueilli le Real Madrid au stade Manuel Martínez Valero pour disputer un match de la 6e journée de LaLiga EA Sports.",
+          "title": "Le classement de LaLiga après la victoire difficile du Real Madrid à Elche",
+          "summary": "Le Real Madrid s'est imposé dans la douleur face à Elche au Estadio Manuel Martínez Valero lors de la 6e journée de LaLiga EA Sports, faisant évoluer le classement.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هذه هي الطريقة التي يصنف بها لاليغا بعد فوز ريال مدريد الذي عانى طويلاً في إلتشي",
-          "summary": "استضاف إلتشي ريال مدريد في ملعب مانويل مارتينيز فاليرو للعب مباراة من يوم المباراة 6 من الدوري الاسباني.",
+          "title": "ترتيب الدوري الإسباني بعد فوز ريال مدريد الصعب على إلتشي",
+          "summary": "حقق ريال مدريد فوزاً شاقاً أمام إلتشي على ملعب مانويل مارتينيز فاليرو ضمن الجولة السادسة من الدوري الإسباني، ليعدل موقعه في جدول الترتيب.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/laliga/20260916/1004227806/elche-real-madrid-imagenes.html",
@@ -676,7 +705,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260915/1004227723/asi-queda-clasificacion-laliga-sufrido-triunfo-real-madrid-elche.html"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5424a525955d",
@@ -735,26 +769,27 @@
       "i18n": {
         "es": {
           "title": "El 'Espídifen' de Mourinho",
-          "summary": "Ya se imaginaba José Mourinho , sentado en el banquillo del Martínez Valero , cómo iba a ser el camino de vuelta a casa si el Real Madrid pinchaba en Elche y, sobre todo, cómo iban a ser los días previos al derbi frente al Atlético de Madrid del próximo domingo que abrocha esta…",
-          "needs_translation": false
+          "summary": "José Mourinho afrontaba la visita del Real Madrid al Martínez Valero ante el Elche consciente del impacto de un tropiezo antes del derbi frente al Atlético de Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "Mourinho's 'Espídifen'",
-          "summary": "José Mourinho , sitting on the bench of Martínez Valero , already imagined what the road back home would be like if Real Madrid played in Elche and, above all, what the days before the derby against Atlético de Madrid next Sunday were going to be like.",
+          "summary": "On the Martínez Valero bench, José Mourinho weighed the consequences of a Real Madrid slip-up against Elche ahead of the derby against Atlético de Madrid.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "L'Espídifen de Mourinho",
-          "summary": "José Mourinho , assis sur le banc de Martínez Valero , imaginait déjà à quoi ressemblerait le chemin du retour si le Real Madrid piquait à Elche et, surtout, à quoi ressembleraient les jours précédant le derby contre l'Atlético de Madrid dimanche prochain qui ferme cette...",
+          "title": "L'« Espídifen » de Mourinho",
+          "summary": "Sur le banc du Martínez Valero, José Mourinho mesurait l'impact d'un faux pas du Real Madrid face à Elche avant le derby contre l'Atlético de Madrid.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "\"إسبيدفين\" لمورينيو",
-          "summary": "خوسيه مورينيو ، يجلس على مقعد مارتينيز فاليرو ، تخيل بالفعل ما سيكون عليه الطريق إلى الوطن إذا لعب ريال مدريد في إلتشي، وقبل كل شيء، ما ستكون عليه الأيام قبل ديربي ضد أتلتيكو مدريد يوم الأحد المقبل.",
+          "title": "«إسبيديفين» مورينيو",
+          "summary": "استشعر المدرب جوزيه مورينيو في ملعب مارتينيز فاليرو خطورة تعثر ريال مدريد أمام إلتشي قبل مواجهة الديربي ضد أتلتيكو مدريد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260915/1004227750/espidifen-mourinho.html",
@@ -776,7 +811,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260915/1004227750/espidifen-mourinho.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d725c43eeeec",
@@ -885,26 +925,27 @@
       "i18n": {
         "es": {
           "title": "Míchel explica la inesperada suplencia de Ter Stegen en la manita del Ajax",
-          "summary": "El Ajax de Míchel recuperó el partido de Eredivisie que tenía pendiente y lo hizo goleando al Willem II (5-1). Este resultado les sitúa en cuarta posición con 13 puntos, a tres de PSV y AZ, que tienen 16 unidades.",
-          "needs_translation": false
+          "summary": "El Ajax goleó 5-1 al Willem II en su partido pendiente de Eredivisie. La victoria sitúa al equipo de Míchel en la cuarta plaza con 13 puntos, a tres de PSV y AZ.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Míchel explains the unexpected replacement of Ter Stegen in the little hand of Ajax",
-          "summary": "Ajax de Míchel recovered the pending Eredivisie match and thrashed Willem II (5-1). This result puts them in fourth position with 13 points, three of PSV and AZ, who have 16 units.",
+          "title": "Míchel explains Ter Stegen's unexpected benching in Ajax's rout",
+          "summary": "Ajax thrashed Willem II 5-1 in their rescheduled Eredivisie fixture. The win moves Míchel's team up to fourth place with 13 points, three behind PSV and AZ.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Míchel explique la suppléance inattendue de Ter Stegen dans la petite main de l'Ajax",
-          "summary": "L'Ajax de Michel a récupéré le match d'Eredivisie en attente et l'a fait en battant Willem II (5-1). Ce résultat les place en quatrième position avec 13 points, à trois points de PSV et AZ, qui comptent 16 unités.",
+          "title": "Míchel explique la mise sur le banc inattendue de Ter Stegen lors du carton de l'Ajax",
+          "summary": "L'Ajax a écrasé Willem II (5-1) lors de son match en retard d'Eredivisie. Cette victoire place l'équipe de Míchel à la quatrième place avec 13 points, à trois longueurs du PSV et de l'AZ.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "يشرح ميشيل الاستبدال غير المتوقع لتير ستيغن في يد أياكس الصغيرة",
-          "summary": "استعاد أياكس دي ميشيل مباراة الدوري الإسباني المعلقة وسحق فيليم الثاني (5-1). هذه النتيجة تضعهم في المركز الرابع برصيد 13 نقطة، ثلاثة من PSV و AZ، الذين لديهم 16 وحدة.",
+          "title": "ميتشيل يوضح سبب بقاء تير شتيغن المفاجئ على مقاعد البدلاء في خماسية أياكس",
+          "summary": "اكتسح أياكس ضيفه فيلم تو بنتيجة 5-1 في مباراة مؤجلة من الدوري الهولندي. وصعد الفريق بهذا الفوز إلى المركز الرابع برصيد 13 نقطة، بفارق ثلاث نقاط عن المتصدرين.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/internacional/20260915/1004227753/michel-explica-suplencia-ter-stegen-manita-ajax.html",
@@ -926,7 +967,12 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20260915/1004227753/michel-explica-suplencia-ter-stegen-manita-ajax.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5cd52083c713",
@@ -1150,7 +1196,12 @@
           "url": "https://www.lefigaro.fr/sports/football/foot-sans-lionel-messi-l-argentine-ouvrira-sa-nouvelle-ere-le-30-septembre-20260915"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "efb3265007d3",
@@ -1415,26 +1466,27 @@
       "i18n": {
         "fr": {
           "title": "Nouvelle défaite pour Roberto De Zerbi et Tottenham, éliminés en 16es de finale de la League Cup par Liverpool",
-          "summary": "Sans Bradley Barcola au coup d'envoi, Liverpool a éliminé le Tottenham de Roberto de Zerbi (3-1), ce mardi soir, au 3e tour de la Coupe de la Ligue anglaise. L'entraîneur italien des Spurs est de plus en plus sur la sellette.",
-          "needs_translation": false
+          "summary": "Liverpool a éliminé Tottenham (3-1) au 3e tour de la League Cup ce mardi soir. Cette défaite fragilise encore davantage la position de Roberto De Zerbi sur le banc des Spurs.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Another defeat for Roberto De Zerbi and Tottenham, eliminated in the round of 16 of the League Cup by Liverpool",
-          "summary": "Without Bradley Barcola at the start, Liverpool eliminated Roberto de Zerbi's Tottenham (3-1) on Tuesday night, in the 3rd round of the English League Cup. The Spurs' Italian coach is increasingly in the spotlight.",
+          "title": "New defeat for Roberto De Zerbi and Tottenham, eliminated from the League Cup by Liverpool",
+          "summary": "Liverpool eliminated Roberto De Zerbi's Tottenham (3-1) in the third round of the League Cup on Tuesday. The Italian manager faces growing pressure on the Spurs bench.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Nueva derrota para Roberto De Zerbi y Tottenham, eliminados en dieciseisavos de final de la League Cup por Liverpool",
-          "summary": "Sin Bradley Barcola en el saque inicial, el Liverpool eliminó al Tottenham de Roberto de Zerbi (3-1), este martes por la noche, en la tercera ronda de la Copa de la Liga inglesa. El entrenador italiano de los Spurs está cada vez más en el banquillo.",
+          "title": "Nueva derrota para Roberto De Zerbi y Tottenham, eliminados de la League Cup por Liverpool",
+          "summary": "Liverpool eliminó al Tottenham de Roberto De Zerbi (3-1) este martes en la tercera ronda de la League Cup. El técnico italiano de los Spurs queda en una posición muy delicada.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هزيمة أخرى لروبرتو دي زيربي وتوتنهام، الذي هزم في دور الـ 16 من كأس الرابطة من قبل ليفربول",
-          "summary": "Sans Bradley Barcola au coup d'envoi, Liverpool a éliminé le Tottenham de Roberto de Zerbi (3-1), ce mardi soir, au 3e tour de la Coupe de la Ligue anglaise. L'entraîneur italien des Spurs est de plus en plus sur la sellette.",
+          "title": "هزيمة جديدة لروبرتو دي زيربي وتوتنهام بالخروج من كأس الرابطة أمام ليفربول",
+          "summary": "ودع توتنهام بقيادة مدربه روبرتو دي زيربي بطولة كأس الرابطة الإنجليزية عقب الخسارة أمام ليفربول (3-1) في الدور الثالث، لتتزايد الضغوط على المدير الفني الإيطالي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Nouvelle-defaite-pour-roberto-de-zerbi-et-tottenham-elimines-en-16es-de-finale-de-la-league-cup-par-liverpool/1719011#at_medium=RSS_feeds",
@@ -1456,7 +1508,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Nouvelle-defaite-pour-roberto-de-zerbi-et-tottenham-elimines-en-16es-de-finale-de-la-league-cup-par-liverpool/1719011#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c02e5fd01e3d",
@@ -1465,28 +1522,33 @@
       "i18n": {
         "de": {
           "title": "Bekommt Bayern bald den alten Davies?",
-          "summary": "Hinter Alphonso Davies liegen schwierige eineinhalb Jahre. Endlich gesund und fit, gibt es erste zarte Anzeichen, dass der Kanadier langsam der Alte wird und damit jemand, den der FC Bayern dringend benötigt.",
-          "needs_translation": false
+          "summary": "Nach anderthalb schwierigen Jahren ist Alphonso Davies wieder fit. Erste Anzeichen deuten darauf hin, dass der Kanadier zu seiner Bestform für den FC Bayern zurückfindet.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Bekommt Bayern bald den alten Davies?",
-          "summary": "Hinter Alphonso Davies liegen schwierige eineinhalb Jahre. Endlich gesund und fit, gibt es erste zarte Anzeichen, dass der Kanadier langsam der Alte wird und damit jemand, den der FC Bayern dringend benötigt.",
-          "needs_translation": true
+          "title": "Will Bayern soon get the old Davies back?",
+          "summary": "After a difficult eighteen months, Alphonso Davies is fit again. Early signs indicate the Canadian is returning to his best form, providing a major boost for FC Bayern.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Bekommt Bayern bald den alten Davies?",
-          "summary": "Hinter Alphonso Davies liegen schwierige eineinhalb Jahre. Endlich gesund und fit, gibt es erste zarte Anzeichen, dass der Kanadier langsam der Alte wird und damit jemand, den der FC Bayern dringend benötigt.",
-          "needs_translation": true
+          "title": "Le FC Bayern retrouvera-t-il bientôt le grand Davies ?",
+          "summary": "Après un an et demi difficile, Alphonso Davies est de nouveau apte et en forme. Le Canadien montre les premiers signes d'un retour à son meilleur niveau avec le FC Bayern.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Bekommt Bayern bald den alten Davies?",
-          "summary": "Hinter Alphonso Davies liegen schwierige eineinhalb Jahre. Endlich gesund und fit, gibt es erste zarte Anzeichen, dass der Kanadier langsam der Alte wird und damit jemand, den der FC Bayern dringend benötigt.",
-          "needs_translation": true
+          "title": "¿Recuperará pronto el Bayern al Davies de siempre?",
+          "summary": "Tras un año y medio complicado, Alphonso Davies vuelve a estar en forma. Todo apunta a que el canadiense recupera su mejor versión, algo muy necesario para el FC Bayern.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Bekommt Bayern bald den alten Davies?",
-          "summary": "Hinter Alphonso Davies liegen schwierige eineinhalb Jahre. Endlich gesund und fit, gibt es erste zarte Anzeichen, dass der Kanadier langsam der Alte wird und damit jemand, den der FC Bayern dringend benötigt.",
-          "needs_translation": true
+          "title": "هل يستعيد بايرن ميونخ مستواه المعهود مع ديفيز قريباً؟",
+          "summary": "بعد عام ونصف من الصعوبات، استعاد ألفونسو ديفيز جاهزيته البدنية والطبية. وبدأت تظهر مؤشرات أولية على اقتراب الظهير الكندي من استعادة أفضل مستوياته، وهو ما يحتاجه بايرن ميونخ حالياً.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/bekommt-bayern-bald-den-alten-davies-1252894/artikel#omrss",
@@ -1508,7 +1570,12 @@
           "url": "https://www.kicker.de/bekommt-bayern-bald-den-alten-davies-1252894/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2097ef3e49a7",
@@ -1649,7 +1716,12 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20260915/1004227734/confirmado-habra-ultima-vez-messi-camiseta-argentina.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b57f5f18bee9",
@@ -1748,7 +1820,12 @@
           "url": "https://www.kicker.de/brandt-laesst-gegenspieler-aussteigen-ajax-siegt-souveraen-ohne-ter-stegen-1253073/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2fea86069bb8",
@@ -1842,7 +1919,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260915/1004227718/umtiti-ironiza-sobre-debate-mbappe-dembele-balon-oro-nunca-vi-messi-hablar-asi.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7b8cfcea6137",
@@ -1889,7 +1971,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cqzezjn3wzjpo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0656d7d24b23",
@@ -1898,23 +1985,27 @@
       "i18n": {
         "es": {
           "title": "Gol anulado a Mbappé por fuera de juego",
-          "summary": "Continúa el rodillo ofensivo del Real Madrid ante el Elche que, cada vez que tiene el balón, se va directo a portería.",
-          "needs_translation": false
+          "summary": "Un gol de Mbappé fue anulado por posición adelantada frente al Elche, en un encuentro dominado ofensivamente por el Real Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Gol anulado a Mbappé por fuera de juego",
-          "summary": "Continúa el rodillo ofensivo del Real Madrid ante el Elche que, cada vez que tiene el balón, se va directo a portería.",
-          "needs_translation": true
+          "title": "Mbappé goal disallowed for offside",
+          "summary": "Mbappé had a goal ruled out for offside as Real Madrid maintained their offensive pressure against Elche.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Gol anulado a Mbappé por fuera de juego",
-          "summary": "Continúa el rodillo ofensivo del Real Madrid ante el Elche que, cada vez que tiene el balón, se va directo a portería.",
-          "needs_translation": true
+          "title": "But refusé à Mbappé pour hors-jeu",
+          "summary": "Un but a été refusé à Mbappé pour un hors-jeu face à Elche, dans une rencontre marquée par la domination offensive de Real Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Gol anulado a Mbappé por fuera de juego",
-          "summary": "Continúa el rodillo ofensivo del Real Madrid ante el Elche que, cada vez que tiene el balón, se va directo a portería.",
-          "needs_translation": true
+          "title": "إلغاء هدف لمبابي بداعي التسلل",
+          "summary": "أُلغي هدف سجله مبابي بداعي التسلل أمام إلتشي، في ظل سيطرة هجومية متواصلة من ريال مدريد.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260915/1004227725/gol-anulado-mbappe-fuera-juego.html",
@@ -1936,7 +2027,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260915/1004227725/gol-anulado-mbappe-fuera-juego.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c54aedf923b2",
@@ -2030,7 +2126,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260915/1004227716/mbappe-segundo-pase-diomande.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8e82e3167ddd",
@@ -2039,23 +2140,27 @@
       "i18n": {
         "es": {
           "title": "Goleada muy dura para la Real en el estreno de la Premier League International Cup (5-1)",
-          "summary": "La Real Sociedad fue goleada de manera muy dura y abultada en la primera jornada de la nueva edición de la Premier League International Cup.",
-          "needs_translation": false
+          "summary": "La Real Sociedad cayó derrotada por 5-1 frente a su rival en la primera jornada de la nueva edición de la Premier League International Cup.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Goleada muy dura para la Real en el estreno de la Premier League International Cup (5-1)",
-          "summary": "La Real Sociedad fue goleada de manera muy dura y abultada en la primera jornada de la nueva edición de la Premier League International Cup.",
-          "needs_translation": true
+          "title": "Heavy defeat for Real Sociedad in Premier League International Cup opener (5-1)",
+          "summary": "Real Sociedad suffered a heavy 5-1 defeat on the opening matchday of the new Premier League International Cup campaign.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Goleada muy dura para la Real en el estreno de la Premier League International Cup (5-1)",
-          "summary": "La Real Sociedad fue goleada de manera muy dura y abultada en la primera jornada de la nueva edición de la Premier League International Cup.",
-          "needs_translation": true
+          "title": "Lourde défaite pour la Real Sociedad lors de ses débuts en Premier League International Cup (5-1)",
+          "summary": "La Real Sociedad s'est inclinée sur le lourd score de 5-1 lors de la première journée de la nouvelle édition de la Premier League International Cup.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Goleada muy dura para la Real en el estreno de la Premier League International Cup (5-1)",
-          "summary": "La Real Sociedad fue goleada de manera muy dura y abultada en la primera jornada de la nueva edición de la Premier League International Cup.",
-          "needs_translation": true
+          "title": "هزيمة ثقيلة لريال سوسيداد في افتتاح كأس الدوري الإنجليزي الممتاز الدولية (5-1)",
+          "summary": "تلقى ريال سوسيداد خسارة قاسية بنتيجة 5-1 في الجولة الأولى من النسخة الجديدة لكأس الدوري الإنجليزي الممتاز الدولية.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260915/1004227712/goleada-dura-real-estreno-premier-league-international-cup-5-1.html",
@@ -2077,7 +2182,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260915/1004227712/goleada-dura-real-estreno-premier-league-international-cup-5-1.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "74617e4a241c",
@@ -2086,28 +2196,33 @@
       "i18n": {
         "de": {
           "title": "Behrens startet durch - und bald zu Klopp?",
-          "summary": "3,5 Millionen Euro investierte der FC Augsburg vor der Saison in Linksverteidiger Hennes Behrens. Gut angelegtes Geld, wie die ersten Saisonwochen zeigen.",
-          "needs_translation": false
+          "summary": "Der FC Augsburg zahlte vor der Saison 3,5 Millionen Euro für Linksverteidiger Hennes Behrens. Seine starken Leistungen in den ersten Saisonwochen bestätigen den gelungenen Transfer.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Behrens startet durch - und bald zu Klopp?",
-          "summary": "3,5 Millionen Euro investierte der FC Augsburg vor der Saison in Linksverteidiger Hennes Behrens. Gut angelegtes Geld, wie die ersten Saisonwochen zeigen.",
-          "needs_translation": true
+          "title": "Behrens takes off - and soon off to Klopp?",
+          "summary": "FC Augsburg invested 3.5 million euros ahead of the season in left-back Hennes Behrens. His strong performances in the opening weeks are already proving the investment a success.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Behrens startet durch - und bald zu Klopp?",
-          "summary": "3,5 Millionen Euro investierte der FC Augsburg vor der Saison in Linksverteidiger Hennes Behrens. Gut angelegtes Geld, wie die ersten Saisonwochen zeigen.",
-          "needs_translation": true
+          "title": "Behrens s'envole - et bientôt chez Klopp ?",
+          "summary": "Le FC Augsburg a investi 3,5 millions d'euros avant la saison pour recruter le latéral gauche Hennes Behrens. Ses performances des premières semaines confirment déjà la réussite de ce transfert.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Behrens startet durch - und bald zu Klopp?",
-          "summary": "3,5 Millionen Euro investierte der FC Augsburg vor der Saison in Linksverteidiger Hennes Behrens. Gut angelegtes Geld, wie die ersten Saisonwochen zeigen.",
-          "needs_translation": true
+          "title": "Behrens despega, ¿y pronto con Klopp?",
+          "summary": "El FC Augsburg invirtió 3,5 millones de euros antes de la temporada en el lateral izquierdo Hennes Behrens. El rendimiento del jugador en las primeras semanas ya confirma el acierto del fichaje.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Behrens startet durch - und bald zu Klopp?",
-          "summary": "3,5 Millionen Euro investierte der FC Augsburg vor der Saison in Linksverteidiger Hennes Behrens. Gut angelegtes Geld, wie die ersten Saisonwochen zeigen.",
-          "needs_translation": true
+          "title": "بيرينس يتألق - وهل ينتقل قريباً إلى كلوب؟",
+          "summary": "استثمر نادي أوغسبورغ 3.5 ملايين يورو قبل انطلاق الموسم للتعاقد مع الظهير الأيسر هينيس بيرينس، الذي أثبت نجاح الصفقة بمستوياته القوية في الأسابيع الأولى.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.kicker.de/behrens-startet-durch-und-bald-zu-klopp-1253033/artikel#omrss",
@@ -2129,7 +2244,12 @@
           "url": "https://www.kicker.de/behrens-startet-durch-und-bald-zu-klopp-1253033/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "318cd6e05043",
@@ -2232,23 +2352,27 @@
       "i18n": {
         "fr": {
           "title": "La Juventus serait-elle devenue une machine à éteindre les talents ?",
-          "summary": "Comme le raconte Tuttosport, une théorie commence à circuler dans les rangs de la Juventus […] Source",
-          "needs_translation": false
+          "summary": "Selon Tuttosport, des interrogations émergent autour de la Juventus concernant ses difficultés récurrentes à développer et valoriser ses talents.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "La Juventus serait-elle devenue une machine à éteindre les talents ?",
-          "summary": "Comme le raconte Tuttosport, une théorie commence à circuler dans les rangs de la Juventus […] Source",
-          "needs_translation": true
+          "title": "Has Juventus become a machine that extinguishes talent?",
+          "summary": "According to Tuttosport, concerns are growing around Juventus regarding the club's difficulties in developing and getting the best out of its talents.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "La Juventus serait-elle devenue une machine à éteindre les talents ?",
-          "summary": "Comme le raconte Tuttosport, une théorie commence à circuler dans les rangs de la Juventus […] Source",
-          "needs_translation": true
+          "title": "¿Se ha convertido la Juventus en una máquina de apagar talentos?",
+          "summary": "Según Tuttosport, en el entorno de la Juventus surgen dudas ante las crecientes dificultades del club para desarrollar y potenciar a sus talentos.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "La Juventus serait-elle devenue une machine à éteindre les talents ?",
-          "summary": "Comme le raconte Tuttosport, une théorie commence à circuler dans les rangs de la Juventus […] Source",
-          "needs_translation": true
+          "title": "هل تحول يوفنتوس إلى آلة لإحباط المواهب؟",
+          "summary": "وفقاً لصحيفة توتوسبورت، تتصاعد التساؤلات داخل يوفنتوس بشأن الصعوبات المتكررة التي يواجهها النادي في تطوير مواهبه والاستفادة من إمكاناتهم.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.calciomio.fr/la-juventus-serait-elle-devenue-une-machine-a-eteindre-les-talents-id-179978",
@@ -2270,7 +2394,12 @@
           "url": "https://www.calciomio.fr/la-juventus-serait-elle-devenue-une-machine-a-eteindre-les-talents-id-179978"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "09acb08c2485",
