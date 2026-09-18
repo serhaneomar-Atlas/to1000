@@ -70,7 +70,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga2/vfl-wolfsburg-gegen-sv-darmstadt-98,audiostream-vfl-wolfsburg-gegen-sv-darmstadt-98-102.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "633eb52155db",
@@ -120,7 +125,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/vasco-vasco-curiosa-locura-vive-brasil-semifinal-boca_0_ml2je7aTgb.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5a2692758405",
@@ -129,26 +139,27 @@
       "i18n": {
         "es": {
           "title": "Brentford - Chelsea, en directo | Premier League",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Premier League que enfrenta al Brentford contra el Chelsea correspondiente a Jornada 5.",
-          "needs_translation": false
+          "summary": "Brentford y Chelsea se enfrentan en el partido correspondiente a la Jornada 5 de la Premier League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Brentford - Chelsea, live | Premier League",
-          "summary": "Good afternoon and welcome to the live narration of the Premier League football match between Brentford and Chelsea on Matchday 5.",
+          "title": "Brentford vs Chelsea live | Premier League",
+          "summary": "Brentford face Chelsea in their Matchday 5 Premier League fixture.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Brentford - Chelsea, en direct | Premier League",
-          "summary": "Bonsoir et bienvenue au récit, en direct, du match de football de Premier League qui oppose Brentford à Chelsea correspondant à la 5ème journée.",
+          "summary": "Brentford et Chelsea s'affrontent dans le cadre de la 5e journée de Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "برينتفورد - تشيلسي، مباشر | الدوري الممتاز",
-          "summary": "مساء الخير ومرحبا بكم في السرد المباشر لمباراة الدوري الممتاز لكرة القدم بين برينتفورد وتشيلسي يوم المباراة 5.",
+          "title": "مباراة برينتفورد وتشيلسي مباشرة | الدوري الإنجليزي الممتاز",
+          "summary": "يلتقي برينتفورد مع نظيره تشيلسي في إطار منافسات الجولة الخامسة من الدوري الإنجليزي الممتاز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260918/1004226915/brentford-chelsea-directo-premier-league.html",
@@ -182,7 +193,12 @@
           "url": "https://www.mundodeportivo.com/futbol/ligue-1/20260918/1004226909/as-monaco-lens-directo-ligue-1.html"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ce5622256c61",
@@ -191,26 +207,27 @@
       "i18n": {
         "es": {
           "title": "Quiénes son las joyas de Vélez por las que River se aseguró una prioridad de negociación",
-          "summary": "El acuerdo con Vélez por la transferencia de Tobías Andrada incluye un ítem especial.",
-          "needs_translation": false
+          "summary": "El acuerdo alcanzado entre River y Vélez por el traspaso de Tobías Andrada incluye una cláusula que otorga una prioridad de negociación por otras promesas del club.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Who are the jewels of Vélez for which River secured a negotiating priority",
-          "summary": "The agreement with Vélez for the transfer of Tobías Andrada includes a special item.",
+          "title": "Who are the Vélez gems for whom River secured a negotiation priority",
+          "summary": "The transfer agreement between River and Vélez for Tobías Andrada includes a clause granting priority negotiation rights for other young prospects from the club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Qui sont les joyaux de Vélez pour lesquels River s'est assuré une priorité de négociation",
-          "summary": "L'accord avec Vélez pour le transfert de Tobías Andrada comprend un élément spécial.",
+          "title": "Qui sont les pépites de Vélez pour lesquelles River s'est assuré une priorité de négociation",
+          "summary": "L'accord conclu entre River et Vélez pour le transfert de Tobías Andrada intègre une clause de priorité de négociation sur d'autres jeunes talents du club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "من هم جواهر فيليز التي ضمن لها ريفر أولوية تفاوضية",
-          "summary": "يتضمن الاتفاق مع فيليز لنقل توبياس أندرادا بندًا خاصًا.",
+          "title": "مواهب فيليز الذين ضمن ريفر بليت أولوية التفاوض للتعاقد معهم",
+          "summary": "تضمن اتفاق انتقال توبياس أندرادا من فيليز إلى ريفر بليت بنداً خاصاً يمنح الأخير أولوية التفاوض لضم مواهب شابة أخرى من النادي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-plate-velez-simon-prima-thiago-villalba-prioridad-negociacion_0_0TBCGlHPb2.html",
@@ -232,7 +249,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-plate-velez-simon-prima-thiago-villalba-prioridad-negociacion_0_0TBCGlHPb2.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "00a4f6b3d63d",
@@ -438,7 +460,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Zinedine-zidane-fait-confiance-a-mbappe-pour-ses-debuts-en-tant-que-selectionneur-des-bleus-oui-kylian-sera-mon-capitaine/1719591#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c68191c386e2",
@@ -597,26 +624,27 @@
       "i18n": {
         "es": {
           "title": "Armá tu 11 de River para recibir a Huracán por la fecha 10 del Clausura",
-          "summary": "En Olé te invitamos a que seas Leonardo Ponzio por un rato. ¿Cuál sería tu equipo para que el CARP siga de racha ante el Globo?",
-          "needs_translation": false
+          "summary": "River recibe a Huracán en la décima fecha del Torneo Clausura. Olé invita a los hinchas a definir su alineación ideal para el encuentro.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Arm your River 11 to welcome the Hurricane for the 10th Closing Date",
-          "summary": "At Olé we invite you to be Leonardo Ponzio for a while. What would be your team to keep the CARP on track against the Globe?",
+          "title": "Build your River starting XI to host Huracán for matchday 10 of the Clausura",
+          "summary": "River hosts Huracán on matchday 10 of the Clausura tournament. Olé is inviting fans to choose their preferred starting lineup for the fixture.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Armez votre 11 de River pour recevoir Huracán pour la date 10 de la clôture",
-          "summary": "Chez Olé, nous vous invitons à être Leonardo Ponzio pendant un moment. Quelle serait votre équipe pour que le CARP continue de battre le Globe ?",
+          "title": "Composez votre onze de River pour affronter Huracán lors de la 10e journée du Clausura",
+          "summary": "River accueille Huracán pour la 10e journée du tournoi Clausura. Olé invite les supporters à désigner leur équipe type pour cette rencontre.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "جهز نهرك 11 للترحيب بالإعصار في تاريخ الإغلاق العاشر",
-          "summary": "في أولي، ندعوك لتكون ليوناردو بونزيو لفترة من الوقت. ماذا سيكون فريقك لإبقاء الشبوط على المسار الصحيح ضد الكرة الأرضية ؟",
+          "title": "اختر تشكيلة ريفر بليت الأساسية لمواجهة هوراكان في الجولة العاشرة من الكلاوسورا",
+          "summary": "يستقبل ريفر بليت نظيره هوراكان ضمن الجولة العاشرة من بطولة الكلاوسورا، وسط دعوة الجماهير لاختيار التشكيلة الأساسية المثالية للمباراة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/arma-11-river-huracan-torneoclausura-fecha10-ponzio-formacion_0_y0rdcKH1m8.html",
@@ -638,7 +666,12 @@
           "url": "https://www.ole.com.ar/river-plate/arma-11-river-huracan-torneoclausura-fecha10-ponzio-formacion_0_y0rdcKH1m8.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d2d3a75d1f0b",
@@ -647,26 +680,27 @@
       "i18n": {
         "fr": {
           "title": "Avant la réception de Troyes, Angers est en quête de spontanéité et d'efficacité devant",
-          "summary": "Angers reçoit le promu Troyes à l'occasion de la 5e journée de Ligue 1, ce samedi (20h45). Son entraîneur, Stéphane Gilli, espère plus d'efficacité offensive de la part de ses joueurs.",
-          "needs_translation": false
+          "summary": "Pour la 5e journée de Ligue 1 ce samedi, Angers reçoit le promu Troyes. L'entraîneur Stéphane Gilli réclame davantage d'efficacité et de spontanéité offensive à ses joueurs.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Before the reception of Troyes, Angers was looking for spontaneity and efficiency in front of",
-          "summary": "Angers receives the promoted Troyes on the occasion of the 5th day of Ligue 1, this Saturday (20:45). His coach, Stéphane Gilli, hopes for more offensive efficiency from his players.",
+          "title": "Ahead of hosting Troyes, Angers seeks spontaneity and attacking efficiency",
+          "summary": "Angers hosts promoted side Troyes this Saturday for matchday 5 of Ligue 1. Manager Stéphane Gilli expects more attacking efficiency and spontaneity from his players.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Antes de la recepción de Troyes, Angers busca espontaneidad y eficacia ante",
-          "summary": "Angers recibe al promovido Troyes con motivo de la 5ª jornada de Ligue 1, este sábado (20:45). Su entrenador, Stéphane Gilli, espera más eficacia ofensiva por parte de sus jugadores.",
+          "title": "Antes de recibir a Troyes, Angers busca espontaneidad y eficacia ofensiva",
+          "summary": "Angers recibe al recién ascendido Troyes este sábado en la 5.ª jornada de la Ligue 1. El técnico Stéphane Gilli espera mayor eficacia ofensiva de sus jugadores.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "قبل استقبال تروا، كان أنجيه يبحث عن العفوية والكفاءة أمام",
-          "summary": "يستقبل أنجرز طروادة المروجة بمناسبة اليوم الخامس من دوري الدرجة الأولى، هذا السبت (20:45). مدربه، ستيفان جيلي، يأمل في المزيد من الكفاءة الهجومية من لاعبيه.",
+          "title": "قبل استضافة تروا، أنجيه يبحث عن التلقائية والفعالية الهجومية",
+          "summary": "يستقبل أنجيه الصاعد حديثاً تروا هذا السبت في الجولة الخامسة من الدوري الفرنسي. وينتظر المدرب ستيفان جيلي فعالية هجومية أكبر من لاعبيه.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Avant-la-reception-de-troyes-le-sco-en-quete-de-spontaneite-et-d-efficacite-devant/1719630#at_medium=RSS_feeds",
@@ -688,7 +722,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Avant-la-reception-de-troyes-le-sco-en-quete-de-spontaneite-et-d-efficacite-devant/1719630#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4d6c407055d9",
@@ -738,7 +777,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228827/asamblea-historica-terminar-nuevo-spotify-camp-nou.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7ac41dacd3e1",
@@ -747,26 +791,27 @@
       "i18n": {
         "fr": {
           "title": "Ghana : Carlos Queiroz dévoile sa liste avec des retours majeurs",
-          "summary": "Pour ce rassemblement, le technicien portugais enregistre les retours très attendus de Mohammed Kudus et d’Alexander Djiku, absents lors de la dernière Coupe du monde.",
-          "needs_translation": false
+          "summary": "Pour le prochain rassemblement du Ghana, Carlos Queiroz a convoqué Mohammed Kudus et Alexander Djiku, absents lors de la dernière Coupe du Monde.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Ghana: Carlos Queiroz unveils his list with major feedback",
-          "summary": "For this gathering, the Portuguese technician recorded the highly anticipated feedback of Mohammed Kudus and Alexander Djiku, who were absent during the last World Cup.",
+          "title": "Ghana: Carlos Queiroz reveals squad with major returns",
+          "summary": "For the upcoming international break, Ghana coach Carlos Queiroz has recalled Mohammed Kudus and Alexander Djiku, who missed the last Coupe du Monde.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ghana: Carlos Queiroz desvela su lista con importantes retornos",
-          "summary": "Para esta reunión, el técnico portugués registra los muy esperados retornos de Mohammed Kudus y Alexander Djiku, ausentes en la última Copa del Mundo.",
+          "title": "Ghana: Carlos Queiroz anuncia su convocatoria con regresos destacados",
+          "summary": "Para la próxima concentración de Ghana, Carlos Queiroz ha convocado a Mohammed Kudus y Alexander Djiku, ausentes en la última Coupe du Monde.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "غانا: كارلوس كيروز يكشف عن قائمته مع ردود الفعل الرئيسية",
-          "summary": "لهذا التجمع، سجل الفني البرتغالي ردود الفعل المرتقبة للغاية من محمد كودوس وألكسندر دجيكو، الذين كانوا غائبين خلال كأس العالم الأخيرة.",
+          "title": "غانا: كارلوس كيروش يعلن قائمته بعودة أسماء بارزة",
+          "summary": "استدعى مدرب غانا كارلوس كيروش الثنائي محمد قدوس وألكسندر دجيكو إلى صفوف المنتخب، بعد غيابهما عن كأس العالم الأخيرة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/afrique-football/ghana-carlos-queiroz-devoile-sa-liste-avec-des-retours-majeurs/",
@@ -788,7 +833,12 @@
           "url": "https://africatopsports.com/afrique-football/ghana-carlos-queiroz-devoile-sa-liste-avec-des-retours-majeurs/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7606ef97e81c",
@@ -903,26 +953,27 @@
       "i18n": {
         "es": {
           "title": "Bayern Múnich - Unión Berlín, en directo | Bundesliga",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Bundesliga que enfrenta al Bayern Múnich contra el Unión Berlín correspondiente a Jornada 4.",
-          "needs_translation": false
+          "summary": "El Bayern Múnich se enfrenta a Unión Berlín en el partido correspondiente a la Jornada 4 de la Bundesliga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Bayern Munich - Union Berlin, live | Bundesliga",
-          "summary": "Good afternoon and welcome to the live narration of the Bundesliga football match between Bayern Munich and Union Berlin on Matchday 4.",
+          "title": "Bayern Múnich - Unión Berlín, live | Bundesliga",
+          "summary": "Bayern Múnich face Unión Berlín in their match for Jornada 4 of the Bundesliga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Bayern Munich - Union Berlin, en direct | Bundesliga",
-          "summary": "Bonsoir et bienvenue au récit, en direct, du match de football de la Bundesliga qui oppose le Bayern Munich à l'Union Berlin correspondant à la 4ème journée.",
+          "title": "Bayern Múnich - Unión Berlín, en direct | Bundesliga",
+          "summary": "Le Bayern Múnich affronte Unión Berlín dans le cadre de la Jornada 4 de Bundesliga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "بايرن ميونيخ - يونيون برلين، مباشر | الدوري الألماني",
-          "summary": "مساء الخير ومرحبا بكم في السرد المباشر لمباراة كرة القدم في الدوري الألماني بين بايرن ميونيخ واتحاد برلين في المباراة الرابعة.",
+          "title": "بايرن ميونخ - يونيون برلين، مباشر | الدوري الألماني",
+          "summary": "يلتقي بايرن ميونخ مع يونيون برلين ضمن منافسات الجولة الرابعة من الدوري الألماني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/bundesliga/20260918/1004226903/bayern-munich-union-berlin-directo-bundesliga.html",
@@ -944,7 +995,12 @@
           "url": "https://www.mundodeportivo.com/futbol/bundesliga/20260918/1004226903/bayern-munich-union-berlin-directo-bundesliga.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "923dbbbc2fca",
@@ -1000,7 +1056,12 @@
           "url": "https://www.kicker.de/live-bayern-empfaengt-kriselndes-union-musiala-in-der-startelf-1253513/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0780c809197f",
@@ -1009,26 +1070,27 @@
       "i18n": {
         "es": {
           "title": "Cuti Romero palpitó el clásico contra el Real Madrid: \"No les podés dejar ni un metro\"",
-          "summary": "El defensor del Atlético se mostró entusiasmado de cara al gran partido que tendrá en la séptima fecha de La Liga y destacó el potencial de sus próximos rivales.",
-          "needs_translation": false
+          "summary": "En la previa del derbi de la séptima fecha de Liga, el defensor del Atlético Cuti Romero advirtió sobre el peligro del Real Madrid y remarcó la importancia de no concederles espacios.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Cuti Romero palpitated the classic against Real Madrid: \"You can't leave them even a meter\"",
-          "summary": "The Atletico defender was enthusiastic about the big game he will have in the seventh round of La Liga and highlighted the potential of his next rivals.",
+          "title": "Cuti Romero previews clash against Real Madrid: \"You can't give them an inch\"",
+          "summary": "Ahead of the matchday seven Liga derby, Atlético defender Cuti Romero highlighted the attacking threat of Real Madrid, warning that his team cannot afford to give them any space.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Cuti Romero a palpité le classique contre le Real Madrid : \"Vous ne pouvez pas leur laisser un mètre\"",
-          "summary": "Le défenseur de l'Atlético s'est montré enthousiaste face au grand match qu'il disputera lors de la septième journée de Liga et a souligné le potentiel de ses prochains rivaux.",
+          "title": "Cuti Romero évoque le choc contre le Real Madrid : « Il ne faut pas leur laisser un seul mètre »",
+          "summary": "Avant le derby de la septième journée de Liga, le défenseur de l'Atlético Cuti Romero a souligné la menace du Real Madrid, affirmant qu'il était impossible de leur laisser le moindre espace.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "خبط كوتي روميرو الكلاسيكي ضد ريال مدريد: \"لا يمكنك تركهم ولو لمتر واحد\"",
-          "summary": "كان مدافع أتلتيكو متحمسًا للمباراة الكبيرة التي سيخوضها في الجولة السابعة من الدوري الإسباني وسلط الضوء على إمكانات منافسيه القادمين.",
+          "title": "كوتي روميرو قبل مواجهة ريال مدريد: \"لا يمكنك ترك أي مساحة لهم\"",
+          "summary": "قبل ديربي الجولة السابعة من الدوري الإسباني، حذر مدافع أتلتيكو كوتي روميرو من خطورة ريال مدريد، مؤكداً ضرورة عدم منح لاعبي المنافس أي مساحات للتحرك.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/espana/cristian-romero-atletico-madrid-clasico-real-liga_0_7xDdQoqwEY.html",
@@ -1050,7 +1112,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/espana/cristian-romero-atletico-madrid-clasico-real-liga_0_7xDdQoqwEY.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8b37a3948393",
@@ -1059,26 +1126,27 @@
       "i18n": {
         "fr": {
           "title": "Lorient : Noah Mbamba très incertain pour le déplacement au Mans en Ligue 1",
-          "summary": "Très en vue à Lens, puis contre Toulouse, le jeune milieu de terrain de Lorient Noah Mbamba (21 ans) est incertain pour le déplacement des Merlus au Mans, samedi en Ligue 1 (20h45).",
-          "needs_translation": false
+          "summary": "Le milieu de terrain de Lorient Noah Mbamba (21 ans) est très incertain pour le match de Ligue 1 contre Mans samedi, après avoir débuté face à Lens et Toulouse.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Lorient: Noah Mbamba very uncertain for the trip to Le Mans in Ligue 1",
-          "summary": "High-profile in Lens, then against Toulouse, the young midfielder of Lorient Noah Mbamba (21 years old) is uncertain for the move of the Merlus to Le Mans, Saturday in Ligue 1 (20:45).",
+          "title": "Lorient: Noah Mbamba highly doubtful for trip to Mans in Ligue 1",
+          "summary": "Lorient midfielder Noah Mbamba is a major doubt for Saturday's Ligue 1 clash against Mans. The 21-year-old had recently featured prominently against Lens and Toulouse.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Lorient: Noah Mbamba muy incierto para viajar a Le Mans en la Ligue 1",
-          "summary": "Muy destacado en Lens y luego contra Toulouse, el joven centrocampista de Lorient Noah Mbamba (21 años) es incierto para el desplazamiento de los Merlus a Le Mans, el sábado en la Ligue 1 (20:45).",
+          "title": "Lorient: Noah Mbamba, seria duda para la visita a Mans en Ligue 1",
+          "summary": "El centrocampista de Lorient Noah Mbamba (21 años) es seria duda para el partido de Ligue 1 de este sábado ante Mans, tras destacar frente a Lens y Toulouse.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Lorient: Noah Mbamba غير مؤكد للغاية للرحلة إلى Le Mans في Ligue 1",
-          "summary": "رفيعة المستوى في عدسة، ثم ضد تولوز، لاعب خط الوسط الشاب لورينت نوح مبامبا (21 عاما) غير متأكد من انتقال ميرلوس إلى لومان، السبت في دوري الدرجة الأولى (20:45).",
+          "title": "لوريان: شكوك كبيرة حول مشاركة نواه مبامبا أمام لومان في الدوري الفرنسي",
+          "summary": "تحوم شكوك كبيرة حول جاهزية لاعب وسط لوريان نواه مبامبا (21 عاماً) لمواجهة لومان السبت في الدوري الفرنسي، بعد ظهوره البارز مؤخراً أمام لانس وتولوز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Lorient-noah-mbamba-tres-incertain-pour-le-deplacement-au-mans-en-ligue-1/1719624#at_medium=RSS_feeds",
@@ -1100,7 +1168,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Lorient-noah-mbamba-tres-incertain-pour-le-deplacement-au-mans-en-ligue-1/1719624#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "68288317c150",
@@ -1197,7 +1270,12 @@
           "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260918/1004228815/simeone-mourinho-12-anos.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d30c1a324d4d",
@@ -1343,7 +1421,12 @@
           "url": "https://www.kicker.de/auf-den-spuren-tabakovics-jetzt-ist-lidberg-gefordert-1253876/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "92a0e3917880",
@@ -1390,7 +1473,12 @@
           "url": "https://www.lefigaro.fr/sports/football/equipe-de-france/en-direct-equipe-de-france-zidane-va-devoiler-sa-premiere-liste-qui-sera-appele-chez-les-bleus-20260918"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "543c580b77d9",
@@ -1484,7 +1572,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/jorginho-ole-trafico-milanesas-riquelme-delgado-traverso-pronostico-boca-vasco_0_5iml23TJ8P.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0463fcbacaa2",
@@ -1493,23 +1586,27 @@
       "i18n": {
         "es": {
           "title": "Luis García Plaza avisa sobre \"un Barça increíble\"",
-          "summary": "\"El Barça da miedo”, “es un equipo increíble”, “no gana, arrasa”. Son frases que ha pronunciado Luis García Plaza , entrenador del Sevilla FC , en vísperas de recibir en el Ramón Sánchez Pizjuán al campeón y líder de la Liga.",
-          "needs_translation": false
+          "summary": "El entrenador del Sevilla FC, Luis García Plaza, destacó el gran nivel del Barça antes de recibir al líder de la Liga en el Ramón Sánchez Pizjuán.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Luis García Plaza avisa sobre \"un Barça increíble\"",
-          "summary": "\"El Barça da miedo”, “es un equipo increíble”, “no gana, arrasa”. Son frases que ha pronunciado Luis García Plaza , entrenador del Sevilla FC , en vísperas de recibir en el Ramón Sánchez Pizjuán al campeón y líder de la Liga.",
-          "needs_translation": true
+          "title": "Luis García Plaza warns of an \"incredible Barça\"",
+          "summary": "Sevilla FC coach Luis García Plaza praised the dominant form of Barça ahead of hosting the Liga leaders at the Ramón Sánchez Pizjuán.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Luis García Plaza avisa sobre \"un Barça increíble\"",
-          "summary": "\"El Barça da miedo”, “es un equipo increíble”, “no gana, arrasa”. Son frases que ha pronunciado Luis García Plaza , entrenador del Sevilla FC , en vísperas de recibir en el Ramón Sánchez Pizjuán al campeón y líder de la Liga.",
-          "needs_translation": true
+          "title": "Luis García Plaza met en garde contre « un Barça incroyable »",
+          "summary": "L'entraîneur du Sevilla FC, Luis García Plaza, a loué la forme impressionnante du Barça avant d'accueillir le leader de la Liga au Ramón Sánchez Pizjuán.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Luis García Plaza avisa sobre \"un Barça increíble\"",
-          "summary": "\"El Barça da miedo”, “es un equipo increíble”, “no gana, arrasa”. Son frases que ha pronunciado Luis García Plaza , entrenador del Sevilla FC , en vísperas de recibir en el Ramón Sánchez Pizjuán al campeón y líder de la Liga.",
-          "needs_translation": true
+          "title": "لويس غارسيا بلازا يحذر من \"برشلونة المذهل\"",
+          "summary": "أشاد مدرب إشبيلية، لويس غارسيا بلازا، بالمستوى القوي لفريق برشلونة قبل استضافة متصدر الدوري الإسباني على ملعب رامون سانشيز بيزخوان.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228816/luis-garcia-plaza-avisa-sobre-barca-increible.html",
@@ -1531,7 +1628,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228816/luis-garcia-plaza-avisa-sobre-barca-increible.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "23c16157fabc",
@@ -1672,7 +1774,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Zinedine-zidane-le-selectionneur-des-bleus-ne-veut-pas-trancher-au-sujet-du-ballon-d-or-sincerement-il-n-y-aura-pas-de-discussion/1719604#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d2e9ae5127b8",
@@ -1681,23 +1788,27 @@
       "i18n": {
         "es": {
           "title": "El 'baby crack' JJ Gabriel, en Barcelona",
-          "summary": "Joseph Junior Andreou Gabriel , más conocido -sobre todo desde hace unas semanas- como JJ Gabriel es el nuevo 'baby crack' que se está dejando ver como pieza de mercado entre los grandes del fútbol europeo.",
-          "needs_translation": false
+          "summary": "El joven talento Joseph Junior Andreou Gabriel, conocido como JJ Gabriel, se encuentra en Barcelona mientras atrae el interés de varios de los grandes clubes del fútbol europeo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El 'baby crack' JJ Gabriel, en Barcelona",
-          "summary": "Joseph Junior Andreou Gabriel , más conocido -sobre todo desde hace unas semanas- como JJ Gabriel es el nuevo 'baby crack' que se está dejando ver como pieza de mercado entre los grandes del fútbol europeo.",
-          "needs_translation": true
+          "title": "Young talent JJ Gabriel in Barcelona",
+          "summary": "Joseph Junior Andreou Gabriel, known as JJ Gabriel, is in Barcelona as he attracts the interest of Europe's top clubs in the transfer market.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El 'baby crack' JJ Gabriel, en Barcelona",
-          "summary": "Joseph Junior Andreou Gabriel , más conocido -sobre todo desde hace unas semanas- como JJ Gabriel es el nuevo 'baby crack' que se está dejando ver como pieza de mercado entre los grandes del fútbol europeo.",
-          "needs_translation": true
+          "title": "Le jeune espoir JJ Gabriel à Barcelona",
+          "summary": "Joseph Junior Andreou Gabriel, plus connu sous le nom de JJ Gabriel, se trouve à Barcelona et attire l'intérêt des plus grands clubs européens sur le marché.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El 'baby crack' JJ Gabriel, en Barcelona",
-          "summary": "Joseph Junior Andreou Gabriel , más conocido -sobre todo desde hace unas semanas- como JJ Gabriel es el nuevo 'baby crack' que se está dejando ver como pieza de mercado entre los grandes del fútbol europeo.",
-          "needs_translation": true
+          "title": "الموهبة الشابة جاي جاي غابرييل في برشلونة",
+          "summary": "يتواجد الموهبة الصاعدة جوزيف جونيور أندريو غابرييل، المعروف باسم جاي جاي غابرييل، في برشلونة وسط اهتمام متزايد من كبرى الأندية الأوروبية بالتعاقد معه.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228811/baby-crack-jj-gabriel-barcelona.html",
@@ -1719,7 +1830,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228811/baby-crack-jj-gabriel-barcelona.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d1003b2e71a0",
@@ -1775,23 +1891,27 @@
       "i18n": {
         "fr": {
           "title": "Zinédine Zidane explique l'absence d'Aurélien Tchouaméni de sa première liste des Bleus : « Il était préférable qu'il reste à Madrid »",
-          "summary": "Le nouveau sélectionneur des Bleus, Zinédine Zidane, n'a pas retenu le milieu de terrain du Real Madrid Aurélien Tchouaméni dans sa première liste.",
-          "needs_translation": false
+          "summary": "Le nouveau sélectionneur de l'équipe de France, Zinédine Zidane, n'a pas retenu le milieu du Real Madrid Aurélien Tchouaméni dans sa première liste, estimant préférable qu'il reste à Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Zinédine Zidane explique l'absence d'Aurélien Tchouaméni de sa première liste des Bleus : « Il était préférable qu'il reste à Madrid »",
-          "summary": "Le nouveau sélectionneur des Bleus, Zinédine Zidane, n'a pas retenu le milieu de terrain du Real Madrid Aurélien Tchouaméni dans sa première liste.",
-          "needs_translation": true
+          "title": "Zinédine Zidane explains Aurélien Tchouaméni's absence from his first Bleus squad: \"It was preferable for him to stay in Madrid\"",
+          "summary": "New France head coach Zinédine Zidane left Real Madrid midfielder Aurélien Tchouaméni out of his first squad, stating it was better for him to remain in Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Zinédine Zidane explique l'absence d'Aurélien Tchouaméni de sa première liste des Bleus : « Il était préférable qu'il reste à Madrid »",
-          "summary": "Le nouveau sélectionneur des Bleus, Zinédine Zidane, n'a pas retenu le milieu de terrain du Real Madrid Aurélien Tchouaméni dans sa première liste.",
-          "needs_translation": true
+          "title": "Zinédine Zidane explica la ausencia de Aurélien Tchouaméni en su primera lista de los Bleus: «Era preferible que se quedara en Madrid»",
+          "summary": "El nuevo seleccionador de Francia, Zinédine Zidane, no incluyó al centrocampista del Real Madrid Aurélien Tchouaméni en su primera convocatoria, considerando preferible que se quedara en Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Zinédine Zidane explique l'absence d'Aurélien Tchouaméni de sa première liste des Bleus : « Il était préférable qu'il reste à Madrid »",
-          "summary": "Le nouveau sélectionneur des Bleus, Zinédine Zidane, n'a pas retenu le milieu de terrain du Real Madrid Aurélien Tchouaméni dans sa première liste.",
-          "needs_translation": true
+          "title": "زين الدين زيدان يوضح سبب غياب أوريلين تشواميني عن قائمته الأولى لمنتخب فرنسا: «كان من الأفضل بقاؤه في مدريد»",
+          "summary": "استبعد مدرب منتخب فرنسا الجديد زين الدين زيدان لاعب وسط ريال مدريد أوريلين تشواميني من قائمته الأولى، مفضلاً بقاءه في مدريد.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Zinedine-zidane-explique-l-absence-d-aurelien-tchouameni-de-sa-premiere-liste-des-bleus-il-etait-preferable-qu-il-reste-a-madrid/1719600#at_medium=RSS_feeds",
@@ -1813,7 +1933,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Zinedine-zidane-explique-l-absence-d-aurelien-tchouameni-de-sa-premiere-liste-des-bleus-il-etait-preferable-qu-il-reste-a-madrid/1719600#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0a9e0489fec6",
@@ -1821,24 +1946,28 @@
       "summary": "Zinédine Zidane a dévoilé ce vendredi 18 septembre sa première liste depuis sa nomination comme sélectionneur de l’équipe de France.",
       "i18n": {
         "fr": {
-          "title": "Équipe de France: Zidane donne son avis sur un potentiel retour de Benzema",
-          "summary": "Zinédine Zidane a dévoilé ce vendredi 18 septembre sa première liste depuis sa nomination comme sélectionneur de l’équipe de France.",
-          "needs_translation": false
+          "title": "Équipe de France : Zidane donne son avis sur un potentiel retour de Benzema",
+          "summary": "Zinédine Zidane a communiqué ce vendredi sa première liste de joueurs retenus depuis sa nomination comme sélectionneur de l'Équipe de France.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Équipe de France: Zidane donne son avis sur un potentiel retour de Benzema",
-          "summary": "Zinédine Zidane a dévoilé ce vendredi 18 septembre sa première liste depuis sa nomination comme sélectionneur de l’équipe de France.",
-          "needs_translation": true
+          "title": "Équipe de France: Zidane gives his opinion on a potential return of Benzema",
+          "summary": "Zinédine Zidane announced this Friday his first squad list since his appointment as head coach of Équipe de France.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Équipe de France: Zidane donne son avis sur un potentiel retour de Benzema",
-          "summary": "Zinédine Zidane a dévoilé ce vendredi 18 septembre sa première liste depuis sa nomination comme sélectionneur de l’équipe de France.",
-          "needs_translation": true
+          "title": "Équipe de France: Zidane da su opinión sobre un posible regreso de Benzema",
+          "summary": "Zinédine Zidane anunció este viernes su primera convocatoria desde su nombramiento como seleccionador de Équipe de France.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Équipe de France: Zidane donne son avis sur un potentiel retour de Benzema",
-          "summary": "Zinédine Zidane a dévoilé ce vendredi 18 septembre sa première liste depuis sa nomination comme sélectionneur de l’équipe de France.",
-          "needs_translation": true
+          "title": "منتخب فرنسا: زيدان يبدي رأيه في عودة محتملة لبنزيما",
+          "summary": "أعلن زين الدين زيدان يوم الجمعة عن قائمته الأولى منذ تعيينه مديراً فنياً لمنتخب فرنسا.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://video.lefigaro.fr/figaro/sports/football/ligue-des-nations/equipe-de-france-zidane-donne-son-avis-sur-un-potentiel-retour-de-benzema-20260918",
@@ -1860,7 +1989,12 @@
           "url": "https://video.lefigaro.fr/figaro/sports/football/ligue-des-nations/equipe-de-france-zidane-donne-son-avis-sur-un-potentiel-retour-de-benzema-20260918"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "59c9eaf3d9b7",
@@ -1907,7 +2041,12 @@
           "url": "https://www.mundodeportivo.com/futbol/uefa-nations-league/20260918/1004228797/zidane.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "81f8bc78b1bd",
@@ -1954,7 +2093,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260918/1004228787/quejas-arbitrales-belletti-pasaron-desapercibidas.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3f68aa170b1e",
@@ -2160,7 +2304,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/crl69549wzro?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7081106d7c9a",
@@ -2306,7 +2455,12 @@
           "url": "https://www.kicker.de/iraola-verteidigt-wirtz-er-sollte-wie-jeder-andere-auch-beurteilt-werden-1253969/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "494fcdb5e5a8",
@@ -2358,7 +2512,12 @@
           "url": "https://www.sportschau.de/fussball/nationsleague/cristiano-ronaldo-in-portugals-kader-berufen,cristiano-ronaldo-portugal-108.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     }
   ]
 }
