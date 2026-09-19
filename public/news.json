@@ -197,32 +197,33 @@
       "i18n": {
         "de": {
           "title": "Ab 20.30 Uhr live - Brisantes Duell zwischen Dynamo und Hertha",
-          "summary": "Im Topspiel der 2. Bundesliga ist Spitzenreiter Hertha bei Dynamo Dresden zu Gast, die noch nach Stabilität suchen.",
-          "needs_translation": false
+          "summary": "Im Topspiel der 2. Bundesliga gastiert Spitzenreiter Hertha bei Dynamo Dresden, die weiterhin nach Stabilität suchen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Live from 8.30 pm - explosive duel between Dynamo and Hertha",
-          "summary": "In the top game of the 2nd Bundesliga, leader Hertha is a guest at Dynamo Dresden, who are still looking for stability.",
+          "title": "Live from 8:30 PM - Tense clash between Dynamo and Hertha",
+          "summary": "In the 2. Bundesliga match of the round, league leaders Hertha visit Dynamo Dresden, who are still seeking stability.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "En direct à partir de 20h30 - Duel explosif entre Dynamo et Hertha",
-          "summary": "Dans le meilleur match de la 2ème Bundesliga, le leader Hertha est l'invité du Dynamo Dresde, qui est toujours à la recherche de stabilité.",
+          "title": "En direct dès 20h30 - Duel explosif entre Dynamo et Hertha",
+          "summary": "Pour le choc de 2. Bundesliga, le leader Hertha se déplace sur la pelouse de Dynamo Dresden, en quête de régularité.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "A partir de las 20.30 horas en directo - Duelo explosivo entre Dynamo y Hertha",
-          "summary": "En el partido cumbre de la 2. Bundesliga, el líder Hertha es invitado por el Dynamo Dresden, que todavía está buscando estabilidad.",
+          "title": "En directo a partir de las 20:30 - Intenso duelo entre Dynamo y Hertha",
+          "summary": "En el partido de la jornada de la 2. Bundesliga, el líder Hertha visita a Dynamo Dresden, que aún busca estabilidad.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباشر من الساعة 8:30 مساءً - مبارزة متفجرة بين دينامو وهيرثا",
-          "summary": "في أفضل مباراة في الدوري الألماني الثاني، القائد هيرتا ضيف في دينامو دريسدن، الذي لا يزال يبحث عن الاستقرار.",
+          "title": "مباشر ابتداءً من 20:30 - مواجهة حاسمة بين دينامو وهيرتا",
+          "summary": "يحل المتصدر هيرتا ضيفاً على دينامو دريسدن، الذي لا يزال يبحث عن استقراره، في قمة دوري الدرجة الثانية الألماني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/deutschland-2-bundesliga/ma12194494/dynamo-dresden_hertha-bsc/liveticker",
@@ -244,7 +245,12 @@
           "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/deutschland-2-bundesliga/ma12194494/dynamo-dresden_hertha-bsc/liveticker"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f3eaf1a02701",
@@ -600,7 +606,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/A-angers-selon-le-nombre-d-absents-un-plan-a-et-un-plan-b-pour-occuper-la-treve-internationale/1719603#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "39af61b639bd",
@@ -815,26 +826,27 @@
       "i18n": {
         "es": {
           "title": "No descartan fichar a Messi pero avisan: \"No es el momento de presionar, no corresponde\"",
-          "summary": "Leo Messi (39) siempre ha declarado su amor por Newell's y Newell's nunca ha escondido que sueña con el regreso del delantero al club que le vio dar sus primeros pasos futbolísticos.",
-          "needs_translation": false
+          "summary": "Newell's mantiene el sueño de repatriar a Leo Messi y no descarta su fichaje, aunque advierte de que no es el momento de presionarle.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "They do not rule out signing Messi but warn: \"This is not the time to press, it does not correspond\"",
-          "summary": "Leo Messi (39) has always declared his love for Newell's and Newell's has never hidden that he dreams of the striker's return to the club that saw him take his first footballing steps.",
+          "title": "They do not rule out signing Messi but warn: \"It is not the time to put pressure\"",
+          "summary": "Newell's has not ruled out signing Leo Messi and continues to dream of his return, though the club cautions that it is not the right time to pressure him.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Ils n'excluent pas de signer Messi mais préviennent : « Ce n'est pas le moment de faire pression, ce n'est pas le moment »",
-          "summary": "Leo Messi (39 ans) a toujours déclaré son amour pour Newell's et Newell's n'a jamais caché qu'il rêvait du retour de l'attaquant au club qui l'a vu faire ses premiers pas footballistiques.",
+          "title": "Ils n'écartent pas de recruter Messi mais préviennent : « Ce n'est pas le moment de mettre la pression »",
+          "summary": "Newell's n'écarte pas la possibilité de recruter Leo Messi et rêve de son retour, mais tempère en affirmant qu'il ne convient pas de lui mettre la pression.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "لا يستبعدون توقيع ميسي لكنهم يحذرون: \"هذا ليس وقت الضغط، إنه لا يتوافق\"",
-          "summary": "لطالما أعلن ليو ميسي (39 عامًا) عن حبه لنيويلز ولم يخف نيويلز أبدًا أنه يحلم بعودة المهاجم إلى النادي الذي رآه يخطو خطواته الكروية الأولى.",
+          "title": "لا يستبعدون التعاقد مع ميسي لكنهم يحذرون: \"ليس الوقت المناسب للضغط\"",
+          "summary": "لا يستبعد نادي نيولز أولد بويز إمكانية التعاقد مع ليو ميسي ويحلم بعودته، لكنه يشدد على أنه ليس الوقت المناسب لممارسة أي ضغط على اللاعب.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/internacional/major-league-soccer/20260919/1004228941/no-descartan-fichar-messi-avisan-no-momento-presionar-no-corresponde.html",
@@ -856,7 +868,12 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/major-league-soccer/20260919/1004228941/no-descartan-fichar-messi-avisan-no-momento-presionar-no-corresponde.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c4f9b1bdbedf",
@@ -1068,7 +1085,12 @@
           "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260919/1004228937/kang-in-lee-coleccionista-mvps-mira-primer-gran-derbi.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "bdbbc007e068",
@@ -1076,27 +1098,28 @@
       "summary": "🎤 Dounia Mesli — Journaliste sportive, correspondante zone mixte et créatrice de contenu.",
       "i18n": {
         "fr": {
-          "title": "⚽️ 5 matchs du PSG, 5 scores — Défi supporter par Dounia Mesli",
-          "summary": "🎤 Dounia Mesli — Journaliste sportive, correspondante zone mixte et créatrice de contenu.",
-          "needs_translation": false
+          "title": "5 matchs du PSG, 5 scores — Défi supporter par Dounia Mesli",
+          "summary": "La Journaliste sportive Dounia Mesli lance un Défi aux supporters autour des scores de cinq matchs disputés par le PSG.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "⚽️ 5 PSG matches, 5 scores — Challenge supporter by Dounia Mesli",
-          "summary": "🎤 Dounia Mesli — Sports journalist, mixed zone correspondent and content creator.",
+          "title": "5 PSG matches, 5 scores — Supporter Défi by Dounia Mesli",
+          "summary": "Sports Journaliste Dounia Mesli presents a supporter Défi testing fans on the scores of five PSG matches.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "⚽️ 5 partidos del PSG, 5 resultados — Desafío de apoyo por Dounia Mesli",
-          "summary": "🎤 Dounia Mesli — Periodista deportiva, corresponsal de zona mixta y creadora de contenido.",
+          "title": "5 partidos del PSG, 5 resultados — Défi para aficionados por Dounia Mesli",
+          "summary": "La Journaliste deportiva Dounia Mesli presenta un Défi para aficionados centrado en acertar los marcadores de cinco partidos del PSG.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "⚽️ 5 مباريات PSG، 5 نتائج — مؤيدة التحدي من قبل دنيا مسلي",
-          "summary": "🎤 دنيا مسلي — صحفية رياضية ومراسلة منطقة مختلطة ومنشئة محتوى.",
+          "title": "5 مباريات لباريس سان جيرمان، 5 نتائج — تحدي المشجعين مع دنيا مسلي",
+          "summary": "أطلقت الصحفية الرياضية دنيا مسلي تحدياً لمشجعي باريس سان جيرمان يتمحور حول استرجاع نتائج خمس مباريات للنادي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/videos/5-matchs-psg-5-scores-defi-supporter-dounia-mesli/",
@@ -1118,7 +1141,12 @@
           "url": "https://africatopsports.com/videos/5-matchs-psg-5-scores-defi-supporter-dounia-mesli/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "13cc28f10404",
@@ -1227,23 +1255,27 @@
       "i18n": {
         "fr": {
           "title": "« Un mercato 10 sur 10 » : six joueurs testés en cinq matches au poste de meneur, et Cardinale arrive à San Siro avec une idée en tête",
-          "summary": "Le Milan AC traverse une période trouble. Après un début de saison encourageant contre le […] Source",
-          "needs_translation": false
+          "summary": "En difficulté après son début de saison, le Milan AC a déjà aligné six joueurs différents au poste de meneur en cinq rencontres. Le propriétaire Cardinale se rend à San Siro pour clarifier la situation.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "« Un mercato 10 sur 10 » : six joueurs testés en cinq matches au poste de meneur, et Cardinale arrive à San Siro avec une idée en tête",
-          "summary": "Le Milan AC traverse une période trouble. Après un début de saison encourageant contre le […] Source",
-          "needs_translation": true
+          "title": "\"A 10 out of 10 transfer window\": six players tested in five matches as playmaker, and Cardinale arrives at San Siro with an idea in mind",
+          "summary": "Facing a troubled run, Milan AC has used six different players as playmakers in just five matches. Owner Cardinale is visiting San Siro with clear plans to address the squad's situation.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "« Un mercato 10 sur 10 » : six joueurs testés en cinq matches au poste de meneur, et Cardinale arrive à San Siro avec une idée en tête",
-          "summary": "Le Milan AC traverse une période trouble. Après un début de saison encourageant contre le […] Source",
-          "needs_translation": true
+          "title": "«Un mercado de 10 sobre 10»: seis jugadores probados en cinco partidos como mediapunta, y Cardinale llega a San Siro con una idea en mente",
+          "summary": "En un periodo convulso, el Milan AC ha alineado a seis futbolistas distintos como mediapuntas en cinco partidos. El propietario Cardinale se desplaza a San Siro con un plan para reconducir el rumbo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "« Un mercato 10 sur 10 » : six joueurs testés en cinq matches au poste de meneur, et Cardinale arrive à San Siro avec une idée en tête",
-          "summary": "Le Milan AC traverse une période trouble. Après un début de saison encourageant contre le […] Source",
-          "needs_translation": true
+          "title": "«ميركاتو بدرجة 10 من 10»: تجربة ستة لاعبين في خمس مباريات كصانعي ألعاب، وكاردينالي يصل إلى سان سيرو بفكرة محددة",
+          "summary": "يمر نادي ميلان بفترة صعبة حيث جرب ستة لاعبين في مركز صانع الألعاب خلال خمس مباريات فقط. ويتجه المالك كاردينالي إلى سان سيرو لمتابعة وضع الفريق وحسم خياراته.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.calciomio.fr/un-mercato-10-sur-10-six-joueurs-testes-en-cinq-matches-au-poste-de-meneur-et-cardinale-arrive-a-san-siro-avec-une-idee-en-tete-id-180071",
@@ -1265,7 +1297,12 @@
           "url": "https://www.calciomio.fr/un-mercato-10-sur-10-six-joueurs-testes-en-cinq-matches-au-poste-de-meneur-et-cardinale-arrive-a-san-siro-avec-une-idee-en-tete-id-180071"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5689e569c104",
@@ -1273,24 +1310,28 @@
       "summary": "Ya lo intentó el Real Madrid durante el pasado verano, pero al Atlético de Madrid le causó risa, igual que en el caso de la tentativa del FC Barcelona . Y de momento, no parece que vaya a suceder en un futuro próximo.",
       "i18n": {
         "es": {
-          "title": "Guti confiesa a qué jugador del Atlético le gustaría ver en el Real Madrid",
-          "summary": "Ya lo intentó el Real Madrid durante el pasado verano, pero al Atlético de Madrid le causó risa, igual que en el caso de la tentativa del FC Barcelona . Y de momento, no parece que vaya a suceder en un futuro próximo.",
-          "needs_translation": false
+          "title": "Guti confiesa a qué jugador del Atlético de Madrid le gustaría ver en el Real Madrid",
+          "summary": "El Real Madrid y el FC Barcelona ya intentaron fichar al futbolista el pasado verano, pero el Atlético de Madrid descartó ambas tentativas y su salida parece improbable a corto plazo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Guti confiesa a qué jugador del Atlético le gustaría ver en el Real Madrid",
-          "summary": "Ya lo intentó el Real Madrid durante el pasado verano, pero al Atlético de Madrid le causó risa, igual que en el caso de la tentativa del FC Barcelona . Y de momento, no parece que vaya a suceder en un futuro próximo.",
-          "needs_translation": true
+          "title": "Guti reveals which Atlético de Madrid player he would like to see at Real Madrid",
+          "summary": "Real Madrid and FC Barcelona both attempted to sign the player last summer, but Atlético de Madrid dismissed the approaches, making a transfer unlikely in the near future.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Guti confiesa a qué jugador del Atlético le gustaría ver en el Real Madrid",
-          "summary": "Ya lo intentó el Real Madrid durante el pasado verano, pero al Atlético de Madrid le causó risa, igual que en el caso de la tentativa del FC Barcelona . Y de momento, no parece que vaya a suceder en un futuro próximo.",
-          "needs_translation": true
+          "title": "Guti révèle quel joueur de l'Atlético de Madrid il aimerait voir au Real Madrid",
+          "summary": "Le Real Madrid et le FC Barcelona ont tenté de recruter ce joueur l'été dernier, mais l'Atlético de Madrid a repoussé leurs approches et un transfert reste exclu à court terme.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Guti confiesa a qué jugador del Atlético le gustaría ver en el Real Madrid",
-          "summary": "Ya lo intentó el Real Madrid durante el pasado verano, pero al Atlético de Madrid le causó risa, igual que en el caso de la tentativa del FC Barcelona . Y de momento, no parece que vaya a suceder en un futuro próximo.",
-          "needs_translation": true
+          "title": "غوتي يكشف عن لاعب أتلتيكو مدريد الذي يود رؤيته في ريال مدريد",
+          "summary": "حاول ريال مدريد وبرشلونة ضم اللاعب خلال الصيف الماضي، لكن أتلتيكو مدريد رفض المساعي بشكل قاطع، ولا يبدو أن انتقاله وارد في المستقبل القريب.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260919/1004228933/guti-confiesa-jugador-atletico-le-gustaria-ver-real-madrid.html",
@@ -1312,7 +1353,12 @@
           "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260919/1004228933/guti-confiesa-jugador-atletico-le-gustaria-ver-real-madrid.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5a60ce389631",
@@ -1321,23 +1367,27 @@
       "i18n": {
         "fr": {
           "title": "« Je veux le voir comme arrière gauche, c’est un choix fort » : pour sa toute première liste, Zidane snobe Thuram et lance un joueur de l’Inter à un poste inattendu",
-          "summary": "Zinedine Zidane a dévoilé mercredi sa première liste de convocations en tant que sélectionneur de […] Source",
-          "needs_translation": false
+          "summary": "Pour sa première liste en tant que sélectionneur, Zinedine Zidane a écarté Thuram et a choisi d'aligner un joueur de l'Inter au poste d'arrière gauche.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "« Je veux le voir comme arrière gauche, c’est un choix fort » : pour sa toute première liste, Zidane snobe Thuram et lance un joueur de l’Inter à un poste inattendu",
-          "summary": "Zinedine Zidane a dévoilé mercredi sa première liste de convocations en tant que sélectionneur de […] Source",
-          "needs_translation": true
+          "title": "'I want to see him as a left-back, it's a bold choice': for his very first squad list, Zidane snubs Thuram and launches an Inter player in an unexpected position",
+          "summary": "In his first squad list as head coach, Zinedine Zidane left out Thuram and opted to field an Inter player at left-back.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "« Je veux le voir comme arrière gauche, c’est un choix fort » : pour sa toute première liste, Zidane snobe Thuram et lance un joueur de l’Inter à un poste inattendu",
-          "summary": "Zinedine Zidane a dévoilé mercredi sa première liste de convocations en tant que sélectionneur de […] Source",
-          "needs_translation": true
+          "title": "«Quiero verlo como lateral izquierdo, es una decisión fuerte»: en su primera lista, Zidane prescinde de Thuram y sitúa a un jugador del Inter en una posición inesperada",
+          "summary": "En su primera convocatoria como seleccionador, Zinedine Zidane descartó a Thuram y decidió ubicar a un jugador del Inter como lateral izquierdo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "« Je veux le voir comme arrière gauche, c’est un choix fort » : pour sa toute première liste, Zidane snobe Thuram et lance un joueur de l’Inter à un poste inattendu",
-          "summary": "Zinedine Zidane a dévoilé mercredi sa première liste de convocations en tant que sélectionneur de […] Source",
-          "needs_translation": true
+          "title": "«أريد رؤيته كظهير أيسر، إنه خيار جريء»: في أول قائمة له، زيدان يستبعد تورام ويوظف لاعباً من إنتر في مركز غير متوقع",
+          "summary": "استبعد زين الدين زيدان المهاجم تورام من أول قائمة له كمدرب، وقرر توظيف لاعب من إنتر ميلان في مركز الظهير الأيسر.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.calciomio.fr/je-veux-le-voir-comme-arriere-gauche-cest-un-choix-fort-pour-sa-toute-premiere-liste-zidane-snobe-thuram-et-lance-un-joueur-de-linter-a-un-poste-inattendu-id-180075",
@@ -1359,7 +1409,12 @@
           "url": "https://www.calciomio.fr/je-veux-le-voir-comme-arriere-gauche-cest-un-choix-fort-pour-sa-toute-premiere-liste-zidane-snobe-thuram-et-lance-un-joueur-de-linter-a-un-poste-inattendu-id-180075"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "bc4e4fb9826a",
@@ -1826,23 +1881,27 @@
       "i18n": {
         "es": {
           "title": "El probable once del Barça contra el Sevilla",
-          "summary": "El portero polaco Wojciech Szczesny (36 años) apunta a ser el guardameta titular del Barça hoy (21.00 horas/Movistar LaLiga) en el Sánchez Pizjuán de Sevilla debido a las molestias de Joan Garcia en la rodilla derecha.",
-          "needs_translation": false
+          "summary": "Wojciech Szczesny apunta a ser titular en la portería del Barça ante Sevilla en el Sánchez Pizjuán, debido a molestias de Joan Garcia en la rodilla derecha.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El probable once del Barça contra el Sevilla",
-          "summary": "El portero polaco Wojciech Szczesny (36 años) apunta a ser el guardameta titular del Barça hoy (21.00 horas/Movistar LaLiga) en el Sánchez Pizjuán de Sevilla debido a las molestias de Joan Garcia en la rodilla derecha.",
-          "needs_translation": true
+          "title": "Barça's probable line-up against Sevilla",
+          "summary": "Wojciech Szczesny is expected to start in goal for Barça against Sevilla at the Sánchez Pizjuán, following Joan Garcia's right knee discomfort.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El probable once del Barça contra el Sevilla",
-          "summary": "El portero polaco Wojciech Szczesny (36 años) apunta a ser el guardameta titular del Barça hoy (21.00 horas/Movistar LaLiga) en el Sánchez Pizjuán de Sevilla debido a las molestias de Joan Garcia en la rodilla derecha.",
-          "needs_translation": true
+          "title": "Le onze probable du Barça contre Sevilla",
+          "summary": "Wojciech Szczesny devrait être titularisé dans les buts du Barça face à Sevilla au Sánchez Pizjuán, en raison de gênes au genou droit de Joan Garcia.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El probable once del Barça contra el Sevilla",
-          "summary": "El portero polaco Wojciech Szczesny (36 años) apunta a ser el guardameta titular del Barça hoy (21.00 horas/Movistar LaLiga) en el Sánchez Pizjuán de Sevilla debido a las molestias de Joan Garcia en la rodilla derecha.",
-          "needs_translation": true
+          "title": "التشكيلة المحتملة لبرشلونة أمام إشبيلية",
+          "summary": "يتجه البولندي فويتشيك تشيزني لبدء مباراة برشلونة ضد إشبيلية كحارس أساسي على ملعب سانشيز بيزخوان، مستفيداً من انزعاجات جوان غارسيا في ركبته اليمنى.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004228915/probable-once-barca-sevilla.html",
@@ -1864,7 +1923,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260919/1004228915/probable-once-barca-sevilla.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "02a2c9f5087c",
@@ -2052,7 +2116,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cm3wjl29qp4go?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "98e2ab267312",
@@ -2099,7 +2168,12 @@
           "url": "https://www.mundodeportivo.com/futbol/balon-oro/20260919/1004228909/dembele-desvela-balon-oro-mejor-mundo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "87bc88c2143d",
@@ -2108,23 +2182,27 @@
       "i18n": {
         "es": {
           "title": "Mourinho, con su once de gala en el Metropolitano",
-          "summary": "Siete partidos oficiales lleva ya José Mourinho en el banquillo del Real Madrid y, por unas cosas o por otras, hasta ahora no ha podido juntar a los que se considera que son los once jugadores clave de la plantilla.",
-          "needs_translation": false
+          "summary": "Tras siete partidos oficiales al frente del Real Madrid, José Mourinho podrá alinear por primera vez a su once titular de gala en el Metropolitano.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mourinho, con su once de gala en el Metropolitano",
-          "summary": "Siete partidos oficiales lleva ya José Mourinho en el banquillo del Real Madrid y, por unas cosas o por otras, hasta ahora no ha podido juntar a los que se considera que son los once jugadores clave de la plantilla.",
-          "needs_translation": true
+          "title": "Mourinho with his gala starting eleven at the Metropolitano",
+          "summary": "After seven official matches in charge of Real Madrid, José Mourinho is set to field his ideal starting eleven for the first time at the Metropolitano.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Mourinho, con su once de gala en el Metropolitano",
-          "summary": "Siete partidos oficiales lleva ya José Mourinho en el banquillo del Real Madrid y, por unas cosas o por otras, hasta ahora no ha podido juntar a los que se considera que son los once jugadores clave de la plantilla.",
-          "needs_translation": true
+          "title": "Mourinho avec son onze de gala au Metropolitano",
+          "summary": "Après sept matches officiels sur le banc du Real Madrid, José Mourinho va pouvoir aligner son onze type pour la première fois au Metropolitano.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Mourinho, con su once de gala en el Metropolitano",
-          "summary": "Siete partidos oficiales lleva ya José Mourinho en el banquillo del Real Madrid y, por unas cosas o por otras, hasta ahora no ha podido juntar a los que se considera que son los once jugadores clave de la plantilla.",
-          "needs_translation": true
+          "title": "مورينيو بتشكيلته المثالية في المتروبوليتانو",
+          "summary": "بعد سبع مباريات رسمية مع ريال مدريد، يتمكن جوزيه مورينيو أخيراً من الدفع بتشكيلته الأساسية المثالية في ملعب المتروبوليتانو.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260919/1004228749/mourinho-once-gala-metropolitano.html",
@@ -2146,7 +2224,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260919/1004228749/mourinho-once-gala-metropolitano.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4f8e10b16d67",
@@ -2287,7 +2370,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/c6ly7vg8n7geo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "fc74e6b91016",
@@ -2343,23 +2431,27 @@
       "i18n": {
         "fr": {
           "title": "« Il est capable de tout car il sait tout faire » : Spalletti a rangé son quatuor offensif à la Juve, et le retour d’un absent change tout avant l’Atalanta",
-          "summary": "Face au NEC Nimègue en Ligue Europa, la Juventus a retrouvé un visage plus équilibré. […] Source",
-          "needs_translation": false
+          "summary": "Face au NEC Nimègue en Ligue Europa, la Juventus a affiché un profil plus équilibré avant d'affronter l'Atalanta.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "« Il est capable de tout car il sait tout faire » : Spalletti a rangé son quatuor offensif à la Juve, et le retour d’un absent change tout avant l’Atalanta",
-          "summary": "Face au NEC Nimègue en Ligue Europa, la Juventus a retrouvé un visage plus équilibré. […] Source",
-          "needs_translation": true
+          "title": "'He is capable of anything because he can do everything': Spalletti shelved his attacking quartet at Juve, and the return of an absentee changes everything ahead of Atalanta",
+          "summary": "Juventus displayed a more balanced lineup against NEC Nimègue in the Ligue Europa ahead of their upcoming clash with Atalanta.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "« Il est capable de tout car il sait tout faire » : Spalletti a rangé son quatuor offensif à la Juve, et le retour d’un absent change tout avant l’Atalanta",
-          "summary": "Face au NEC Nimègue en Ligue Europa, la Juventus a retrouvé un visage plus équilibré. […] Source",
-          "needs_translation": true
+          "title": "«Es capaz de todo porque sabe hacer de todo»: Spalletti guardó su cuarteto ofensivo en la Juve y el regreso de un ausente lo cambia todo antes de la Atalanta",
+          "summary": "La Juventus mostró una versión más equilibrada frente al NEC Nimègue en la Ligue Europa antes de medirse a la Atalanta.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "« Il est capable de tout car il sait tout faire » : Spalletti a rangé son quatuor offensif à la Juve, et le retour d’un absent change tout avant l’Atalanta",
-          "summary": "Face au NEC Nimègue en Ligue Europa, la Juventus a retrouvé un visage plus équilibré. […] Source",
-          "needs_translation": true
+          "title": "«قادر على كل شيء لأنه يجيد كل شيء»: سباليتي يعيد ضبط رباعيه الهجومي في يوفنتوس وعودة غائب تغير كل الحسابات قبل أتالانتا",
+          "summary": "استعاد يوفنتوس توازنه الدفاعي والهجومي أمام إن إي سي نيميخن في الدوري الأوروبي، وذلك قبل مواجهته المرتقبة ضد أتالانتا.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.calciomio.fr/il-est-capable-de-tout-car-il-sait-tout-faire-spalletti-a-range-son-quatuor-offensif-a-la-juve-et-le-retour-dun-absent-change-tout-avant-latalanta-id-180070",
@@ -2381,7 +2473,12 @@
           "url": "https://www.calciomio.fr/il-est-capable-de-tout-car-il-sait-tout-faire-spalletti-a-range-son-quatuor-offensif-a-la-juve-et-le-retour-dun-absent-change-tout-avant-latalanta-id-180070"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     }
   ]
 }
