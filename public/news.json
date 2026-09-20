@@ -70,7 +70,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/fc-schalke-04-gegen-sv-07-elversberg,audiostream-fc-schalke-04-gegen-sv-07-elversberg-106.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8ee87e2c80fc",
@@ -252,33 +257,34 @@
       "summary": "Atletico empfängt den Stadtrivalen Real Madrid am 7. Spieltag in La Liga.",
       "i18n": {
         "de": {
-          "title": "Jetzt live - Atletico empfängt Real im Madrid-Derby",
-          "summary": "Atletico empfängt den Stadtrivalen Real Madrid am 7. Spieltag in La Liga.",
-          "needs_translation": false
+          "title": "Jetzt live: Atletico empfängt Real Madrid im Madrid-Derby",
+          "summary": "Atletico trifft am 7. Spieltag der La Liga auf den Stadtrivalen Real Madrid.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Live now - Atletico receives Real Madrid derby",
-          "summary": "Atletico will host city rivals Real Madrid on matchday 7 in La Liga.",
+          "title": "Live now: Atletico host Real Madrid in Madrid derby",
+          "summary": "Atletico host city rivals Real Madrid on matchday 7 of La Liga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Maintenant en direct - L'Atlético reçoit le Real dans le derby de Madrid",
-          "summary": "L'Atlético reçoit le rival de la ville, le Real Madrid, lors de la 7e journée de La Liga.",
+          "title": "En direct : Atletico accueille Real Madrid dans le derby madrilène",
+          "summary": "Atletico reçoit son rival local Real Madrid à l'occasion de la 7e journée de La Liga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ahora en directo - El Atlético recibe al Real en el derbi de Madrid",
-          "summary": "El Atlético recibirá al rival de la ciudad, el Real Madrid, en La Liga en la séptima jornada.",
+          "title": "En directo: Atletico recibe a Real Madrid en el derbi madrileño",
+          "summary": "Atletico se enfrenta a su vecino Real Madrid en la jornada 7 de La Liga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مباشر الآن - أتلتيكو يتلقى ديربي ريال مدريد",
-          "summary": "سيستضيف أتلتيكو منافسيه في المدينة ريال مدريد في يوم المباراة 7 في الدوري الإسباني.",
+          "title": "بث مباشر: أتلتيكو مدريد يستضيف ريال مدريد في ديربي العاصمة",
+          "summary": "يستضيف أتلتيكو مدريد غريمه التقليدي ريال مدريد ضمن منافسات الجولة السابعة من الدوري الإسباني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/spanien-primera-division/ma12187975/atletico-madrid_real-madrid/liveticker",
@@ -300,7 +306,12 @@
           "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/spanien-primera-division/ma12187975/atletico-madrid_real-madrid/liveticker"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a7a6879896c1",
@@ -545,26 +556,27 @@
       "i18n": {
         "fr": {
           "title": "Premier League : en vidéo, le joli but de Rayan Cherki face à Sunderland",
-          "summary": "Le milieu de terrain tricolore a inscrit son 3e but de la saison ce dimanche, en première période face à Sunderland.",
-          "needs_translation": false
+          "summary": "Rayan Cherki a inscrit son troisième but de la saison ce dimanche en première période face à Sunderland en Premier League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Premier League: on video, Rayan Cherki's pretty goal against Sunderland",
-          "summary": "The French midfielder scored his third goal of the season this Sunday, in the first half against Sunderland.",
+          "title": "Premier League: Rayan Cherki's goal against Sunderland on video",
+          "summary": "French midfielder Rayan Cherki scored his third goal of the season in the first half against Sunderland this Sunday in the Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Premier League: en vídeo, el bonito gol de Rayan Cherki ante el Sunderland",
-          "summary": "El centrocampista tricolor anotó su tercer gol de la temporada este domingo, en la primera parte contra el Sunderland.",
+          "title": "Premier League: en vídeo, el gol de Rayan Cherki ante el Sunderland",
+          "summary": "Rayan Cherki anotó este domingo en la primera parte su tercer gol de la temporada contra Sunderland en la Premier League.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الدوري الممتاز: بالفيديو، هدف ريان شيركي الجميل ضد سندرلاند",
-          "summary": "سجل لاعب الوسط الفرنسي هدفه الثالث هذا الموسم يوم الأحد، في الشوط الأول ضد سندرلاند.",
+          "title": "الدوري الإنجليزي الممتاز: بالفيديو، هدف ريان شرقي أمام سندرلاند",
+          "summary": "سجل لاعب الوسط الفرنسي ريان شرقي هدفه الثالث هذا الموسم في الشوط الأول أمام سندرلاند، يوم الأحد، ضمن منافسات الدوري الإنجليزي الممتاز.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/angleterre/premier-league-en-video-le-joli-but-de-rayan-cherki-face-a-sunderland-20260920",
@@ -586,7 +598,12 @@
           "url": "https://www.lefigaro.fr/sports/football/angleterre/premier-league-en-video-le-joli-but-de-rayan-cherki-face-a-sunderland-20260920"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "da5ad5ae93ec",
@@ -701,26 +718,27 @@
       "i18n": {
         "fr": {
           "title": "Elim. CAN 2027 : Djene Dakonam incertain contre le Burundi",
-          "summary": "Djene Dakonam sera-t-il présent lors de la première journée des éliminatoires de la CAN 2027 ? Le capitaine des Eperviers du Togo a quitté la pelouse dès la 65è minute.",
-          "needs_translation": false
+          "summary": "Sorti à la 65e minute de jeu, le capitaine des Eperviers du Togo, Djene Dakonam, est incertain face au Burundi pour la première journée des éliminatoires de la CAN 2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Elim. can 2027: Djene Dakonam uncertain against Burundi",
-          "summary": "Will Djene Dakonam be present on the first day of the 2027 AFCON qualifiers? The captain of the Togo Sparrowhawks left the lawn in the 65th minute.",
+          "title": "CAN 2027 Qualifiers: Djene Dakonam doubtful against Burundi",
+          "summary": "After leaving the pitch in the 65th minute, Togo captain Djene Dakonam is in doubt for the opening match of the CAN 2027 qualifiers against Burundi.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Elim. Can 2027: Djene Dakonam incierto contra Burundi",
-          "summary": "¿Djene Dakonam estará presente en la primera jornada de las eliminatorias de la CAN 2027? El capitán de los Eperviers de Togo abandonó el césped en el minuto 65.",
+          "title": "Clasificación CAN 2027: Djene Dakonam, duda contra Burundi",
+          "summary": "El capitán de Togo, Djene Dakonam, fue sustituido en el minuto 65 y es duda para la primera jornada de los clasificatorios de la CAN 2027 ante Burundi.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "إيليم. كان 2027: جين داكونام غير مؤكد ضد بوروندي",
-          "summary": "هل سيكون جين داكونام حاضرًا في اليوم الأول من تصفيات كأس الأمم الأفريقية 2027 ؟ غادر قائد فريق توغو سبارو هوك العشب في الدقيقة 65.",
+          "title": "تصفيات كأس أمم إفريقيا 2027: الشكوك تحوم حول مشاركة دجيني داكونام أمام بوروندي",
+          "summary": "غادر قائد منتخب توغو دجيني داكونام أرض الملعب في الدقيقة 65، لتحوم الشكوك حول جاهزيته لمواجهة بوروندي في الجولة الأولى من تصفيات كأس أمم إفريقيا 2027.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football/togo-djene-dakonam-incertain-contre-le-burundi/",
@@ -742,7 +760,12 @@
           "url": "https://africatopsports.com/football/togo-djene-dakonam-incertain-contre-le-burundi/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4dd9a8ee15ce",
@@ -798,7 +821,12 @@
           "url": "https://www.kicker.de/mancity-gegen-sunderland-2026-premier-league-5213316/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f23aef94f592",
@@ -912,27 +940,28 @@
       "summary": "El europibe que había llegado a Núñez con la firma de una cláusula de 100 millones de euros empezó a brillar en Deportivo Táchira de Venezuela.",
       "i18n": {
         "es": {
-          "title": "El borrado en River que convirtió su primer gol en su nuevo club",
-          "summary": "El europibe que había llegado a Núñez con la firma de una cláusula de 100 millones de euros empezó a brillar en Deportivo Táchira de Venezuela.",
-          "needs_translation": false
+          "title": "El descartado por River que anotó su primer gol en su nuevo club",
+          "summary": "El joven futbolista europeo que llegó a River con una cláusula de 100 millones de euros anotó su primer gol con Deportivo Táchira en Venezuela.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The erasure at River that turned his first goal into his new club",
-          "summary": "The Europibe that had arrived in Núñez with the signing of a clause of 100 million euros began to shine in Deportivo Táchira de Venezuela.",
+          "title": "Player cast aside by River scores first goal for new club",
+          "summary": "The young European prospect once signed by River with a 100 million Euro buyout clause scored his first goal for Deportivo Táchira in Venezuela.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "L'effacement à River qui a transformé son premier but en son nouveau club",
-          "summary": "L'Europibe qui était arrivée à Nuñez avec la signature d'une clause de 100 millions d'euros a commencé à briller au Deportivo Táchira du Venezuela.",
+          "title": "Écarté par River, il inscrit son premier but dans son nouveau club",
+          "summary": "Le jeune joueur venu d'Europe, jadis signé à River avec une clause de 100 millions d'euros, a inscrit son premier but avec Deportivo Táchira au Venezuela.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "المحو في ريفر الذي حول هدفه الأول إلى ناديه الجديد",
-          "summary": "بدأ اليوروبيبي الذي وصل إلى نونيز بالتوقيع على بند بقيمة 100 مليون يورو في التألق في ديبورتيفو تاشيرا دي فنزويلا.",
+          "title": "لاعب مستبعد من ريفر بليت يسجل هدفه الأول مع ناديه الجديد",
+          "summary": "سجل اللاعب الشاب الذي انضم سابقاً إلى ريفر بليت بشرط جزائي قدره 100 مليون يورو، هدفه الأول مع ناديه الجديد ديبورتيفو تاتشيرا في فنزويلا.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-woiski-tachira-borrado-europibe_0_W7jdIgqs5W.html",
@@ -954,7 +983,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-woiski-tachira-borrado-europibe_0_W7jdIgqs5W.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "506600a0a6e0",
@@ -1166,7 +1200,12 @@
           "url": "https://www.kicker.de/atl-madrid-gegen-real-madrid-2026-la-liga-5223854/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f30b0c93708e",
@@ -1175,26 +1214,27 @@
       "i18n": {
         "es": {
           "title": "Julián, suplente en el derbi",
-          "summary": "El Atlético de Madrid ya tiene once para medirse al Real Madrid en el primer derbi del curso entre los dos grandes de la capital, que se disputa este domingo en el Metropolitano.",
-          "needs_translation": false
+          "summary": "Julián arrancará como suplente en el Atlético de Madrid para enfrentarse al Real Madrid este domingo en el Metropolitano.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Julian, substitute in the derby",
-          "summary": "Atlético de Madrid already has eleven to face Real Madrid in the first derby of the course between the two greats of the capital, which is played this Sunday in the Metropolitan.",
+          "title": "Julián on the bench for the derby",
+          "summary": "Julián starts on the bench for Atlético de Madrid against Real Madrid this Sunday at the Metropolitano.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Julian, remplaçant dans le derby",
-          "summary": "L'Atlético de Madrid en a déjà onze pour affronter le Real Madrid dans le premier derby de la saison entre les deux grands de la capitale, qui se dispute ce dimanche au Metropolitano.",
+          "title": "Julián remplaçant pour le derby",
+          "summary": "Julián débutera sur le banc de l'Atlético de Madrid face au Real Madrid, ce dimanche au Metropolitano.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "جوليان، استبدل في سباق الديربي",
-          "summary": "أمام أتلتيكو مدريد بالفعل أحد عشر مباراة لمواجهة ريال مدريد في أول ديربي من الدورة بين عظماء العاصمة، والتي ستقام يوم الأحد في المتروبوليتان.",
+          "title": "خوليان على مقاعد البدلاء في الديربي",
+          "summary": "يبدأ خوليان على مقاعد بدلاء أتلتيكو مدريد لمواجهة ريال مدريد هذا الأحد في ديربي العاصمة على ملعب ميتروبوليتانو.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260920/1004229388/atletico-once-derbi-julian-suplente.html",
@@ -1216,7 +1256,12 @@
           "url": "https://www.mundodeportivo.com/futbol/atletico-madrid/20260920/1004229388/atletico-once-derbi-julian-suplente.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7c88e0ee0743",
@@ -1271,7 +1316,12 @@
           "url": "https://www.lefigaro.fr/sports/football/italie/serie-a-naples-freine-par-la-fiorentina-20260920"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "18a958e860fb",
@@ -1530,23 +1580,27 @@
       "i18n": {
         "es": {
           "title": "La materia pendiente que Boca necesita completar para consolidarse arriba en las tablas",
-          "summary": "El equipo del Vasco Arruabarrena buscará ganar en el Gasómetro para seguir de cerca la pelea por el campeonato. Cómo quedaría su situación si suma de a tres.",
-          "needs_translation": false
+          "summary": "El Boca de Vasco Arruabarrena buscará una victoria en el Gasómetro para mantenerse firme en la pelea por el campeonato.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "La materia pendiente que Boca necesita completar para consolidarse arriba en las tablas",
-          "summary": "El equipo del Vasco Arruabarrena buscará ganar en el Gasómetro para seguir de cerca la pelea por el campeonato. Cómo quedaría su situación si suma de a tres.",
-          "needs_translation": true
+          "title": "The unfinished business Boca must settle to consolidate their place at the top",
+          "summary": "Vasco Arruabarrena's Boca side will seek a victory at the Gasómetro to stay firmly in contention for the league title.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La materia pendiente que Boca necesita completar para consolidarse arriba en las tablas",
-          "summary": "El equipo del Vasco Arruabarrena buscará ganar en el Gasómetro para seguir de cerca la pelea por el campeonato. Cómo quedaría su situación si suma de a tres.",
-          "needs_translation": true
+          "title": "Le défi que Boca doit relever pour s'installer en tête du classement",
+          "summary": "L'équipe de Boca dirigée par Vasco Arruabarrena vise un succès au Gasómetro afin de rester au contact dans la course au titre.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "La materia pendiente que Boca necesita completar para consolidarse arriba en las tablas",
-          "summary": "El equipo del Vasco Arruabarrena buscará ganar en el Gasómetro para seguir de cerca la pelea por el campeonato. Cómo quedaría su situación si suma de a tres.",
-          "needs_translation": true
+          "title": "التحدي الذي يحتاج بوكا لتجاوزه لترسيخ موقعه في صدارة الترتيب",
+          "summary": "يسعى فريق بوكا جونيورز بقيادة المدرب فاسكو أروبارينا إلى تحقيق الفوز في ملعب الغاسوميترو لمواصلة الصراع على لقب البطولة.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/materia-pendiente-boca-sanlorenzo-seisdeseis-equipo-arruabarrena_0_zXrBxXXWga.html",
@@ -1568,7 +1622,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/materia-pendiente-boca-sanlorenzo-seisdeseis-equipo-arruabarrena_0_zXrBxXXWga.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "615b4f9828a9",
@@ -1677,23 +1736,27 @@
       "i18n": {
         "fr": {
           "title": "Ballon d’or : «L’équipe est au-dessus de tout», Harry Kane confirme sa place parmi les prétendants mais reste tourné vers le collectif",
-          "summary": "À l’approche de la clôture des votes pour le Ballon d’or, Harry Kane a affiché son esprit collectif sur Téléfoot, sans cacher ses envies de remporter la prestigieuse distinction.",
-          "needs_translation": false
+          "summary": "Sur Téléfoot, Harry Kane a affirmé ses ambitions pour le Ballon d’or tout en rappelant que les succès collectifs restent sa priorité.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Ballon d’or : «L’équipe est au-dessus de tout», Harry Kane confirme sa place parmi les prétendants mais reste tourné vers le collectif",
-          "summary": "À l’approche de la clôture des votes pour le Ballon d’or, Harry Kane a affiché son esprit collectif sur Téléfoot, sans cacher ses envies de remporter la prestigieuse distinction.",
-          "needs_translation": true
+          "title": "Ballon d'Or: \"The team is above all else\", Harry Kane confirms contender status while focusing on the collective",
+          "summary": "Speaking on Téléfoot, Harry Kane expressed his ambition to win the Ballon d'Or while emphasizing that team success remains his main priority.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ballon d’or : «L’équipe est au-dessus de tout», Harry Kane confirme sa place parmi les prétendants mais reste tourné vers le collectif",
-          "summary": "À l’approche de la clôture des votes pour le Ballon d’or, Harry Kane a affiché son esprit collectif sur Téléfoot, sans cacher ses envies de remporter la prestigieuse distinction.",
-          "needs_translation": true
+          "title": "Ballon d'Or: «El equipo está por encima de todo», Harry Kane confirma su candidatura pero prioriza el colectivo",
+          "summary": "En declaraciones a Téléfoot, Harry Kane reconoció su deseo de ganar el Ballon d'Or, aunque recalcó que los éxitos colectivos siguen siendo su prioridad.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Ballon d’or : «L’équipe est au-dessus de tout», Harry Kane confirme sa place parmi les prétendants mais reste tourné vers le collectif",
-          "summary": "À l’approche de la clôture des votes pour le Ballon d’or, Harry Kane a affiché son esprit collectif sur Téléfoot, sans cacher ses envies de remporter la prestigieuse distinction.",
-          "needs_translation": true
+          "title": "الكرة الذهبية: «الفريق فوق كل شيء»، هاري كين يؤكد ترشحه لكنه يركز على الأداء الجماعي",
+          "summary": "أكد هاري كين في تصريحات لبرنامج تيليفوت طموحه للفوز بجائزة الكرة الذهبية، مشدداً على أن مصلحة الفريق والبطولات الجماعية تظل أولويته القصوى.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ballon-d-or-l-equipe-est-au-dessus-de-tout-harry-kane-confirme-sa-place-parmi-les-pretendants-mais-reste-tourne-vers-le-collectif-20260920",
@@ -1715,7 +1778,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ballon-d-or-l-equipe-est-au-dessus-de-tout-harry-kane-confirme-sa-place-parmi-les-pretendants-mais-reste-tourne-vers-le-collectif-20260920"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "939d17143dc4",
@@ -1724,23 +1792,27 @@
       "i18n": {
         "es": {
           "title": "Confesó que el rival les ofreció plata para hacerse expulsar y luego lo desmintió: el caso que sacude a Cienciano",
-          "summary": "Tras perder la serie de Copa Sudamericana ante City Torque, un futbolista del elenco peruano aseguró que el presidente del otro club intentó sobornarlos. Horas más tarde, dio marcha atrás.",
-          "needs_translation": false
+          "summary": "Tras ser eliminado de la Copa Sudamericana ante City Torque, un futbolista de Cienciano afirmó que el presidente rival intentó sobornarlos para provocar expulsiones, aunque se retractó horas después.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Confesó que el rival les ofreció plata para hacerse expulsar y luego lo desmintió: el caso que sacude a Cienciano",
-          "summary": "Tras perder la serie de Copa Sudamericana ante City Torque, un futbolista del elenco peruano aseguró que el presidente del otro club intentó sobornarlos. Horas más tarde, dio marcha atrás.",
-          "needs_translation": true
+          "title": "He confessed the opponent offered money to get sent off and then retracted: the case shaking Cienciano",
+          "summary": "Following Cienciano's elimination from the Copa Sudamericana against City Torque, a player claimed the rival president offered bribes to induce red cards, before retracting his accusations hours later.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Confesó que el rival les ofreció plata para hacerse expulsar y luego lo desmintió: el caso que sacude a Cienciano",
-          "summary": "Tras perder la serie de Copa Sudamericana ante City Torque, un futbolista del elenco peruano aseguró que el presidente del otro club intentó sobornarlos. Horas más tarde, dio marcha atrás.",
-          "needs_translation": true
+          "title": "Il affirme que le rival a proposé de l'argent pour se faire expulser avant de démentir : l'affaire qui secoue Cienciano",
+          "summary": "Éliminé de la Copa Sudamericana par City Torque, un joueur de Cienciano a affirmé que le président adverse avait tenté de les corrompre pour obtenir des expulsions, avant de se rétracter quelques heures plus tard.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Confesó que el rival les ofreció plata para hacerse expulsar y luego lo desmintió: el caso que sacude a Cienciano",
-          "summary": "Tras perder la serie de Copa Sudamericana ante City Torque, un futbolista del elenco peruano aseguró que el presidente del otro club intentó sobornarlos. Horas más tarde, dio marcha atrás.",
-          "needs_translation": true
+          "title": "زعم أن المنافس عرض رشوة لنيل بطاقات حمراء ثم تراجع: قضية تثير الجدل في سينسيانو",
+          "summary": "عقب الإقصاء من كوبا سودأمريكانا أمام سيتي توركي، ادعى لاعب من سينسيانو أن رئيس النادي المنافس حاول رشوتهم للتعرض للطرد، قبل أن يتراجع عن تصريحاته بعد ساعات.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/america/cienciano-montevideo-city-torque-presidente-expulsiones-arreglo-partidos-santiago-arias_0_Tj1eo2zNvd.html",
@@ -1762,7 +1834,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/america/cienciano-montevideo-city-torque-presidente-expulsiones-arreglo-partidos-santiago-arias_0_Tj1eo2zNvd.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "dea4996b3064",
@@ -1817,24 +1894,28 @@
       "summary": "Evitando apuntar directamente contra la actuación del juez del partido, el entrenador de la T deslizó picante: \"Entiendo todo. Me callo la boca, me hago el boludo y no digo más nada\".",
       "i18n": {
         "es": {
-          "title": "De Felippe, filoso contra el arbitraje en la caída ante Instituto: \"Herrera es un crack\"",
-          "summary": "Evitando apuntar directamente contra la actuación del juez del partido, el entrenador de la T deslizó picante: \"Entiendo todo. Me callo la boca, me hago el boludo y no digo más nada\".",
-          "needs_translation": false
+          "title": "De Felippe, irónico con el arbitraje tras la derrota ante Instituto: \"Herrera es un crack\"",
+          "summary": "Tras la caída frente a Instituto, De Felippe criticó con ironía la actuación del árbitro Herrera y prefirió contener sus declaraciones para evitar mayores polémicas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "De Felippe, filoso contra el arbitraje en la caída ante Instituto: \"Herrera es un crack\"",
-          "summary": "Evitando apuntar directamente contra la actuación del juez del partido, el entrenador de la T deslizó picante: \"Entiendo todo. Me callo la boca, me hago el boludo y no digo más nada\".",
-          "needs_translation": true
+          "title": "De Felippe sarcastic about refereeing in defeat to Instituto: \"Herrera is a star\"",
+          "summary": "Following the loss against Instituto, De Felippe ironically criticized referee Herrera's performance and chose to hold his tongue to avoid further controversy.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "De Felippe, filoso contra el arbitraje en la caída ante Instituto: \"Herrera es un crack\"",
-          "summary": "Evitando apuntar directamente contra la actuación del juez del partido, el entrenador de la T deslizó picante: \"Entiendo todo. Me callo la boca, me hago el boludo y no digo más nada\".",
-          "needs_translation": true
+          "title": "De Felippe ironise sur l'arbitrage après la défaite contre Instituto : « Herrera est un crack »",
+          "summary": "Après la défaite face à Instituto, De Felippe a fustigé avec ironie l'arbitrage de Herrera, choisissant de modérer ses propos pour ne pas créer davantage de controverse.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "De Felippe, filoso contra el arbitraje en la caída ante Instituto: \"Herrera es un crack\"",
-          "summary": "Evitando apuntar directamente contra la actuación del juez del partido, el entrenador de la T deslizó picante: \"Entiendo todo. Me callo la boca, me hago el boludo y no digo más nada\".",
-          "needs_translation": true
+          "title": "دي فيليبي يسخر من التحكيم بعد الهزيمة أمام إنسيتوتو: \"هيريرا عبقري\"",
+          "summary": "انتقد المدرب دي فيليبي أداء الحكم هيريرا بسخرية لاذعة عقب الخسارة أمام إنسيتوتو، مفضلاً التزام الصمت لتفادي إثارة المزيد من الجدل.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/talleres/defelippe-talleres-instituto-arbitraje-herrera_0_2QlCyaoZum.html",
@@ -1856,7 +1937,12 @@
           "url": "https://www.ole.com.ar/talleres/defelippe-talleres-instituto-arbitraje-herrera_0_2QlCyaoZum.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "72021cf01239",
@@ -1959,23 +2045,27 @@
       "i18n": {
         "es": {
           "title": "El Barça espió a Gabriel Rajkovic, el '9' que bate récords de Haaland",
-          "summary": "El FC Barcelona no pierde de vista a los jóvenes talentos que van despuntando alrededor del mundo.",
-          "needs_translation": false
+          "summary": "El FC Barcelona sigue de cerca al joven delantero Gabriel Rajkovic, quien destaca por batir registros goleadores previamente alcanzados por Haaland.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El Barça espió a Gabriel Rajkovic, el '9' que bate récords de Haaland",
-          "summary": "El FC Barcelona no pierde de vista a los jóvenes talentos que van despuntando alrededor del mundo.",
-          "needs_translation": true
+          "title": "Barça scouted Gabriel Rajkovic, the number 9 breaking Haaland records",
+          "summary": "FC Barcelona is monitoring young striker Gabriel Rajkovic, who has been breaking goalscoring records previously set by Haaland.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El Barça espió a Gabriel Rajkovic, el '9' que bate récords de Haaland",
-          "summary": "El FC Barcelona no pierde de vista a los jóvenes talentos que van despuntando alrededor del mundo.",
-          "needs_translation": true
+          "title": "Le Barça a supervisé Gabriel Rajkovic, le 9 qui bat des records de Haaland",
+          "summary": "Le FC Barcelona surveille le jeune attaquant Gabriel Rajkovic, dont les performances battent les records de précocité établis par Haaland.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El Barça espió a Gabriel Rajkovic, el '9' que bate récords de Haaland",
-          "summary": "El FC Barcelona no pierde de vista a los jóvenes talentos que van despuntando alrededor del mundo.",
-          "needs_translation": true
+          "title": "برشلونة يراقب غابرييل رايكوفيتش، المهاجم الذي يحطم أرقام هالاند القياسية",
+          "summary": "يتابع نادي برشلونة المهاجم الشاب غابرييل رايكوفيتش، الذي لفت الأنظار بتحطيمه للأرقام القياسية التهديفية التي حققها هالاند في بداياته.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260920/1004229374/barca-espio-gabriel-rajkovic-9-bate-records-haaland.html",
@@ -1997,7 +2087,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260920/1004229374/barca-espio-gabriel-rajkovic-9-bate-records-haaland.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5fa6f34878cc",
@@ -2100,23 +2195,27 @@
       "i18n": {
         "fr": {
           "title": "CAN 2027 : ces stars africaines qui manqueront les éliminatoires",
-          "summary": "Les éliminatoires de la CAN 2027 se joueront sans plusieurs joueurs qui ont marqué le football africain ces dernières années.",
-          "needs_translation": false
+          "summary": "Plusieurs figures majeures du football continental de ces dernières années seront absentes des éliminatoires de la CAN 2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "CAN 2027 : ces stars africaines qui manqueront les éliminatoires",
-          "summary": "Les éliminatoires de la CAN 2027 se joueront sans plusieurs joueurs qui ont marqué le football africain ces dernières années.",
-          "needs_translation": true
+          "title": "CAN 2027: African stars set to miss the qualifiers",
+          "summary": "Several prominent players who shaped African football in recent years will be absent from the CAN 2027 qualifying campaign.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "CAN 2027 : ces stars africaines qui manqueront les éliminatoires",
-          "summary": "Les éliminatoires de la CAN 2027 se joueront sans plusieurs joueurs qui ont marqué le football africain ces dernières années.",
-          "needs_translation": true
+          "title": "CAN 2027: las estrellas africanas que se perderán los clasificatorios",
+          "summary": "Varias figuras destacadas del fútbol africano de los últimos años se perderán la fase de clasificación para la CAN 2027.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "CAN 2027 : ces stars africaines qui manqueront les éliminatoires",
-          "summary": "Les éliminatoires de la CAN 2027 se joueront sans plusieurs joueurs qui ont marqué le football africain ces dernières années.",
-          "needs_translation": true
+          "title": "كأس أمم إفريقيا 2027: نجوم أفارقة يغيبون عن التصفيات",
+          "summary": "تُقام تصفيات كأس أمم إفريقيا 2027 في غياب عدد من أبرز نجوم القارة الذين تألقوا خلال السنوات الأخيرة.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football/can-2027-ces-stars-africaines-qui-manqueront-les-eliminatoires/",
@@ -2138,7 +2237,12 @@
           "url": "https://africatopsports.com/football/can-2027-ces-stars-africaines-qui-manqueront-les-eliminatoires/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "1d3968dc6ff1",
@@ -2293,23 +2397,27 @@
       "i18n": {
         "es": {
           "title": "Leeds United - Crystal Palace, en directo | Premier League",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Premier League que enfrenta al Leeds United contra el Crystal Palace correspondiente a Jornada 5.",
-          "needs_translation": false
+          "summary": "Seguimiento en directo del partido entre Leeds United y Crystal Palace, correspondiente a la jornada 5 de la Premier League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Leeds United - Crystal Palace, en directo | Premier League",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Premier League que enfrenta al Leeds United contra el Crystal Palace correspondiente a Jornada 5.",
-          "needs_translation": true
+          "title": "Leeds United vs Crystal Palace live | Premier League",
+          "summary": "Live coverage of the Premier League Matchday 5 clash between Leeds United and Crystal Palace.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Leeds United - Crystal Palace, en directo | Premier League",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Premier League que enfrenta al Leeds United contra el Crystal Palace correspondiente a Jornada 5.",
-          "needs_translation": true
+          "title": "Leeds United - Crystal Palace en direct | Premier League",
+          "summary": "Suivi en direct de la rencontre opposant Leeds United à Crystal Palace pour le compte de la 5e journée de Premier League.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Leeds United - Crystal Palace, en directo | Premier League",
-          "summary": "Buenas tardes y bienvenidos a la narración, en directo, del partido de fútbol de la Premier League que enfrenta al Leeds United contra el Crystal Palace correspondiente a Jornada 5.",
-          "needs_translation": true
+          "title": "مباراة ليدز يونايتد وكريستال بالاس مباشرة | الدوري الإنجليزي الممتاز",
+          "summary": "تغطية مباشرة لمباراة ليدز يونايتد أمام كريستال بالاس ضمن منافسات الجولة الخامسة من الدوري الإنجليزي الممتاز.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260920/1004227567/leeds-united-crystal-palace-directo-premier-league.html",
@@ -2331,7 +2439,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260920/1004227567/leeds-united-crystal-palace-directo-premier-league.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "48764ddfc810",
@@ -2387,23 +2500,27 @@
       "i18n": {
         "es": {
           "title": "Sorpresa con el posible nuevo destino de Sergio Rico: uno de los más grandes de Europa",
-          "summary": "Durísimo golpe para el portero Kamil Grabara que, menos de un mes después de su llegada a la Juve se ha lesionado de gravedad de la rodilla derecha. Y también para su club, que tendrá ahora que buscar a un nuevo guardameta que acompañe a Guglielmo Vicario, también recién fichado.",
-          "needs_translation": false
+          "summary": "Tras la grave lesión de rodilla de Kamil Grabara a menos de un mes de llegar a la Juve, el club busca un portero para acompañar a Guglielmo Vicario, situando a Sergio Rico como opción.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Sorpresa con el posible nuevo destino de Sergio Rico: uno de los más grandes de Europa",
-          "summary": "Durísimo golpe para el portero Kamil Grabara que, menos de un mes después de su llegada a la Juve se ha lesionado de gravedad de la rodilla derecha. Y también para su club, que tendrá ahora que buscar a un nuevo guardameta que acompañe a Guglielmo Vicario, también recién fichado.",
-          "needs_translation": true
+          "title": "Surprise over Sergio Rico's potential new destination: one of Europe's biggest clubs",
+          "summary": "Following Kamil Grabara's severe knee injury less than a month after joining Juve, the club is searching for a new goalkeeper to support Guglielmo Vicario, with Sergio Rico emerging as an option.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Sorpresa con el posible nuevo destino de Sergio Rico: uno de los más grandes de Europa",
-          "summary": "Durísimo golpe para el portero Kamil Grabara que, menos de un mes después de su llegada a la Juve se ha lesionado de gravedad de la rodilla derecha. Y también para su club, que tendrá ahora que buscar a un nuevo guardameta que acompañe a Guglielmo Vicario, también recién fichado.",
-          "needs_translation": true
+          "title": "Surprise concernant la possible nouvelle destination de Sergio Rico : l'un des plus grands d'Europe",
+          "summary": "Moins d'un mois après son arrivée à la Juve, Kamil Grabara s'est grièvement blessé au genou droit. Le club cherche désormais un gardien pour épauler Guglielmo Vicario, et Sergio Rico est envisagé.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Sorpresa con el posible nuevo destino de Sergio Rico: uno de los más grandes de Europa",
-          "summary": "Durísimo golpe para el portero Kamil Grabara que, menos de un mes después de su llegada a la Juve se ha lesionado de gravedad de la rodilla derecha. Y también para su club, que tendrá ahora que buscar a un nuevo guardameta que acompañe a Guglielmo Vicario, también recién fichado.",
-          "needs_translation": true
+          "title": "مفاجأة بشأن الوجهة المحتملة للحارس سيرخيو ريكو: أحد كبار أوروبا",
+          "summary": "تعرض كاميل غرابارا لإصابة خطيرة في الركبة بعد أقل من شهر على انضمامه إلى يوفنتوس. ويبحث النادي الإيطالي الآن عن حارس مرمى جديد لمساندة غولييلمو فيكاريو، ويبرز سيرخيو ريكو كخيار محتمل.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fichajes/20260920/1004229373/sorpresa-posible-nuevo-destino-sergio-rico-grandes-europa.html",
@@ -2425,7 +2542,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fichajes/20260920/1004229373/sorpresa-posible-nuevo-destino-sergio-rico-grandes-europa.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "30550ff7fb0a",
@@ -2433,24 +2555,44 @@
       "summary": "L’affaire fait suite à un signalement d’Anticor concernant son rôle dans l’attribution des droits télé de la Ligue 1 en 2024. Sa défense conteste des accusations « sans fondement ».",
       "i18n": {
         "fr": {
-          "title": "Droits télé de la Ligue 1 : Nasser Al-Khelaïfi visé par une enquête pour prise illégale d’intérêts",
-          "summary": "L’affaire fait suite à un signalement d’Anticor concernant son rôle dans l’attribution des droits télé de la Ligue 1 en 2024. Sa défense conteste des accusations « sans fondement ».",
-          "needs_translation": false
+          "title": "Droits TV : Nasser Al-Khelaïfi visé par une enquête pour prise illégale d'intérêts",
+          "summary": "Nasser Al-Khelaïfi est visé par une enquête pour prise illégale d'intérêts liée à l'attribution des droits télévisés de la Ligue 1 en 2024.",
+          "body": [
+            "Les investigations font suite à un signalement de l'association anticorruption Anticor, qui met en cause son rôle dans les négociations de diffusion du championnat. Les avocats du président du Paris Saint-Germain contestent fermement ces allégations, les qualifiant d'accusations « sans fondement »."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Droits télé de la Ligue 1 : Nasser Al-Khelaïfi visé par une enquête pour prise illégale d’intérêts",
-          "summary": "L’affaire fait suite à un signalement d’Anticor concernant son rôle dans l’attribution des droits télé de la Ligue 1 en 2024. Sa défense conteste des accusations « sans fondement ».",
-          "needs_translation": true
+          "title": "Ligue 1 TV Rights: Nasser Al-Khelaïfi facing conflict-of-interest probe",
+          "summary": "French prosecutors are investigating Nasser Al-Khelaïfi over a suspected conflict of interest in the awarding of Ligue 1 television rights in 2024.",
+          "body": [
+            "The inquiry stems from a report filed by anti-corruption group Anticor, which scrutinised the Paris Saint-Germain president's role during the domestic broadcast talks. His legal team strongly rejected the claims, dismissing the allegations as entirely \"baseless\"."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Droits télé de la Ligue 1 : Nasser Al-Khelaïfi visé par une enquête pour prise illégale d’intérêts",
-          "summary": "L’affaire fait suite à un signalement d’Anticor concernant son rôle dans l’attribution des droits télé de la Ligue 1 en 2024. Sa défense conteste des accusations « sans fondement ».",
-          "needs_translation": true
+          "title": "Derechos de TV: Nasser Al-Khelaïfi, investigado por conflicto de intereses",
+          "summary": "La justicia francesa investiga a Nasser Al-Khelaïfi por presunto conflicto de intereses en la adjudicación de los derechos de televisión de la Ligue 1 en 2024.",
+          "body": [
+            "Las pesquisas responden a una denuncia presentada por la asociación Anticor, que cuestiona el papel del presidente del PSG en las negociaciones para la retransmisión del torneo. Su defensa legal rechazó con rotundidad los señalamientos, tachando las acusaciones de «sin fundamento»."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Droits télé de la Ligue 1 : Nasser Al-Khelaïfi visé par une enquête pour prise illégale d’intérêts",
-          "summary": "L’affaire fait suite à un signalement d’Anticor concernant son rôle dans l’attribution des droits télé de la Ligue 1 en 2024. Sa défense conteste des accusations « sans fondement ».",
-          "needs_translation": true
+          "title": "حقوق البث التلفزيوني: فتح تحقيق بحق ناصر الخليفي بتهمة تضارب المصالح",
+          "summary": "يخضع ناصر الخليفي لتحقيق قضائي في فرنسا بشبهة تضارب المصالح، على خلفية منح حقوق البث التلفزيوني لمباريات الدوري الفرنسي لعام 2024.",
+          "body": [
+            "وجاء فتح الملف إثر بلاغ قدمته جمعية \"أنتيكور\" لمكافحة الفساد، تشكك فيه في دور رئيس باريس سان جيرمان خلال المفاوضات. في المقابل، نفت هيئة الدفاع عن المسؤول القطري هذه الادعاءات، ووصفت الاتهامات بأنها \"لا أساس لها من الصحة\"."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lemonde.fr/societe/article/2026/09/20/droits-tele-de-la-ligue-1-nasser-al-khelaifi-vise-par-une-enquete-pour-prise-illegale-d-interets_6778374_3224.html",
@@ -2472,7 +2614,20 @@
           "url": "https://www.lemonde.fr/societe/article/2026/09/20/droits-tele-de-la-ligue-1-nasser-al-khelaifi-vise-par-une-enquete-pour-prise-illegale-d-interets_6778374_3224.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 8,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-20T17:40:52+00:00"
+        }
+      }
     },
     {
       "id": "83c4ddf776ad",
