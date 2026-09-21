@@ -58,7 +58,12 @@
           "url": "https://www.calciomio.fr/il-faudrait-melanger-mbappe-ronaldo-et-totti-pour-le-retrouver-orphelin-de-superga-a-six-ans-la-legende-de-linter-na-toujours-aucun-heritier-en-serie-a-id-180156"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b28a9843c40e",
@@ -116,27 +121,48 @@
       "summary": "Vainqueurs de Lille dimanche (2-1), les Niçois ont mis fin à 326 jours sans victoire à domicile en Ligue 1. Ils en ont profité pour sortir de la zone rouge et pour emmener un public qui ne demandait que ça.",
       "i18n": {
         "fr": {
-          "title": "Du jeu, de l'ambiance, la fin d'une série négative de près d'un an : c'était un soir de grande Allianz pour Nice",
-          "summary": "Vainqueurs de Lille dimanche (2-1), les Niçois ont mis fin à 326 jours sans victoire à domicile en Ligue 1. Ils en ont profité pour sortir de la zone rouge et pour emmener un public qui ne demandait que ça.",
-          "needs_translation": false
+          "title": "Nice bat Lille et stoppe 326 jours de disette à domicile",
+          "summary": "L'OGC Nice a battu Lille dimanche (2-1) pour signer sa première victoire à domicile en Ligue 1 depuis près d'un an.",
+          "body": [
+            "Ce résultat met un terme à une disette de 326 jours sans succès devant le public de l'Allianz Riviera.",
+            "Grâce à ces trois points précieux, les Aiglons sortent également de la zone de relégation."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "The game, the atmosphere, the end of a negative series of nearly a year: it was a night of great Allianz for Nice",
-          "summary": "Winners of Lille on Sunday (2-1), the Nice have ended 326 days without a win at home in Ligue 1. They took the opportunity to get out of the red zone and take an audience who only asked for that.",
+          "title": "Nice beat Lille to end 326-day home winless run",
+          "summary": "OGC Nice defeated Lille on Sunday to seal their first Ligue 1 home win in nearly a full year.",
+          "body": [
+            "The 2-1 victory brought an end to a painful 326-day drought in front of their home supporters.",
+            "Crucially, the result also lifts the Riviera club out of the relegation zone."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Juego, ambiente, el final de una serie negativa de casi un año: fue una noche de gran Allianz para Niza",
-          "summary": "Ganadores del Lille el domingo (2-1), los Niza pusieron fin a 326 días sin ganar en casa en la Ligue 1. Aprovecharon para salir de la zona roja y llevar a un público que solo pedía eso.",
+          "title": "El OGC Nice bate al Lille y pone fin a 326 días de sequía en casa",
+          "summary": "El OGC Nice superó este domingo al Lille para firmar su primera victoria como local en la Ligue 1 en casi un año.",
+          "body": [
+            "El 2-1 definitivo puso fin a una larga sequía de 326 días sin ganar ante su público.",
+            "Con este triunfo balsámico, el conjunto de la Costa Azul logra además abandonar los puestos de descenso."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "اللعبة، الجو، نهاية سلسلة سلبية استمرت ما يقرب من عام: كانت ليلة رائعة لـ Allianz لـ Nice",
-          "summary": "الفائز في ليل يوم الأحد (2-1)، أنهى نيس 326 يومًا دون فوز على أرضه في دوري الدرجة الأولى. انتهزوا الفرصة للخروج من المنطقة الحمراء وأخذ جمهور طلب ذلك فقط.",
+          "title": "نيس يهزم ليل وينهي 326 يوما من الصيام على أرضه",
+          "summary": "تغلب نيس على ضيفه ليل يوم الأحد ليحقق أول فوز له على ملعبه في الدوري الفرنسي منذ قرابة عام.",
+          "body": [
+            "وضع هذا الانتصار بنتيجة 2-1 حدا لغياب عن الانتصارات استمر 326 يوما أمام أنصاره.",
+            "ومكنت هذه النقاط الثلاث الفريق من مغادرة مراكز الهبوط في جدول الترتيب."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Article/Premiere-victoire-de-la-saison-et-premier-succes-a-domicile-en-l1-depuis-pres-d-un-an-le-beau-dimanche-des-nicois-contre-lille/1720189#at_medium=RSS_feeds",
@@ -158,7 +184,20 @@
           "url": "https://www.lequipe.fr/Football/Article/Premiere-victoire-de-la-saison-et-premier-succes-a-domicile-en-l1-depuis-pres-d-un-an-le-beau-dimanche-des-nicois-contre-lille/1720189#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-21T07:05:16+00:00"
+        }
+      }
     },
     {
       "id": "8bcf7096e936",
@@ -167,26 +206,27 @@
       "i18n": {
         "es": {
           "title": "El grifo infinito",
-          "summary": "No podemos caer en la trampa de normalizarlo. Es una tentación por la dimensión del jugador a pesar de su juventud y porque nos pesa en la memoria haber compartido paso a paso el viaje de Messi , el mejor futbolista de la historia.",
-          "needs_translation": false
+          "summary": "El texto advierte sobre no normalizar el rendimiento excepcional de un joven futbolista, recordando el impacto histórico vivido durante la carrera de Messi.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The Infinite Faucet",
-          "summary": "We can't fall into the trap of normalizing it. It is a temptation because of the dimension of the player despite his youth and because we are saddened in our memory to have shared step by step the journey of Messi , the best footballer in history.",
+          "title": "The infinite tap",
+          "summary": "The text warns against normalizing the extraordinary level of a young footballer, drawing a comparison to the historical journey witnessed with Messi.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Le robinet infini",
-          "summary": "Nous ne pouvons pas tomber dans le piège de la normalisation. C'est une tentation en raison de la taille du joueur malgré sa jeunesse et parce que nous regrettons dans notre mémoire d'avoir partagé pas à pas le voyage de Messi , le meilleur footballeur de l'histoire.",
+          "summary": "Le texte met en garde contre la banalisation des performances d'un jeune joueur, rappelant le précédent historique vécu tout au long de la carrière de Messi.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
           "title": "الصنبور اللانهائي",
-          "summary": "لا يمكننا الوقوع في فخ تطبيعه. إنه إغراء بسبب بعد اللاعب على الرغم من شبابه ولأننا نشعر بالحزن في ذاكرتنا لمشاركتنا خطوة بخطوة رحلة ميسي ، أفضل لاعب كرة قدم في التاريخ.",
+          "summary": "يحذر المقال من اعتبار تألق لاعب شاب أمراً اعتيادياً، مذكراً بالمسيرة الاستثنائية التي عاشها الجمهور مع ميسي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260921/1004229580/grifo-infinito.html",
@@ -208,7 +248,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260921/1004229580/grifo-infinito.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "79f72ef1f49f",
@@ -420,7 +465,12 @@
           "url": "https://www.kicker.de/europas-supercups-paris-dreht-auf-milan-zittert-laprovittola-schockt-barca-1254739/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "56fc115ffa8d",
@@ -585,26 +635,27 @@
       "i18n": {
         "es": {
           "title": "Esquivel, el lateral que quiso Gallardo para River, clavó un golazo en el Brasileirao",
-          "summary": "En el partido entre Athletico Paranaense y Bahía, el marcador de punta argentino rompió el cero con un lindo zurdazo contra el ángulo.",
-          "needs_translation": false
+          "summary": "El lateral argentino Esquivel, pretendido por Gallardo para River, abrió el marcador con un remate al ángulo en el duelo del Brasileirao entre Athletico Paranaense y Bahía.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Esquivel, the side that Gallardo wanted for River, hit a goal at Brasileirao",
-          "summary": "In the match between Athletico Paranaense and Bahia, the Argentine leading scorer broke the zero with a nice left-handed shot against the angle.",
+          "title": "Esquivel, the full-back Gallardo wanted for River, scored a stunner in the Brasileirao",
+          "summary": "Argentine full-back Esquivel, previously wanted by Gallardo at River, opened the scoring with a strike into the top corner during Athletico Paranaense's Brasileirao match against Bahía.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Esquivel, le latéral que Gallardo voulait pour River, a frappé un but au Brésil",
-          "summary": "Dans le match entre l'Athletico Paranaense et Bahia, le marqueur de pointe argentin a cassé le zéro avec un joli coup de gaucher contre l'angle.",
+          "title": "Esquivel, le latéral ciblé par Gallardo pour River, a marqué un superbe but en Brasileirao",
+          "summary": "Le latéral argentin Esquivel, ciblé par Gallardo pour River, a ouvert le score d'une frappe dans la lucarne lors du match de Brasileirao entre Athletico Paranaense et Bahía.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "إسكيفيل، الجانب الذي أراده غالاردو لنهر، سجل هدفًا في برازيلييراو",
-          "summary": "في المباراة بين أتلتيكو باراناينسي وباهيا، كسر الهداف الأرجنتيني المتصدر الصفر بتسديدة لطيفة باليد اليسرى ضد الزاوية.",
+          "title": "إسكيفيل، الظهير الذي أراده غاياردو في ريفر بليت، يسجل هدفاً رائعاً في الدوري البرازيلي",
+          "summary": "افتتح الظهير الأرجنتيني إسكيفيل، المطلوب سابقاً من غاياردو في ريفر بليت، التسجيل بتسديدة في زاوية المرمى خلال مباراة أتلتيكو باراناينسي وباهيا في الدوري البرازيلي.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/america/lucas-esquivel-river-athletico-paranaense-golazo-marcelo-gallardo_0_IQSOY1c7yx.html",
@@ -626,7 +677,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/america/lucas-esquivel-river-athletico-paranaense-golazo-marcelo-gallardo_0_IQSOY1c7yx.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "966066561f3b",
@@ -685,26 +741,27 @@
       "i18n": {
         "es": {
           "title": "Con una sorpresa del fútbol argentino y dos habituales, la lista de Gustavo Alfaro en Paraguay",
-          "summary": "El Lechuga citó a 28 futbolistas para los encuentros ante Bolivia y Colombia. Uno de la Liga Profesional fue llamado por primera vez.",
-          "needs_translation": false
+          "summary": "Gustavo Alfaro convocó a 28 jugadores en Paraguay para enfrentar a Bolivia y Colombia, con una primera citación para un futbolista de la Liga Profesional.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "With a surprise from Argentine football and two regulars, Gustavo Alfaro's list in Paraguay",
-          "summary": "Lechuga summoned 28 players for the matches against Bolivia and Colombia. One from the Professional League was called in for the first time.",
+          "title": "With a surprise from Argentine football and two regulars, Gustavo Alfaro's Paraguay squad",
+          "summary": "Gustavo Alfaro called up 28 players for Paraguay ahead of matches against Bolivia and Colombia, including a maiden call-up for a Liga Profesional footballer.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Avec une surprise du football argentin et deux habituelles, la liste de Gustavo Alfaro au Paraguay",
-          "summary": "La laitue a convoqué 28 footballeurs pour les rencontres contre la Bolivie et la Colombie. Un membre de la Ligue professionnelle a été appelé pour la première fois.",
+          "title": "Avec une surprise du football argentin et deux habitués, la liste de Gustavo Alfaro avec Paraguay",
+          "summary": "Le sélectionneur Gustavo Alfaro a retenu 28 joueurs avec Paraguay pour affronter Bolivia et Colombia, incluant une première convocation pour un élément de Liga Profesional.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "مع مفاجأة من كرة القدم الأرجنتينية واثنين من النظاميين، قائمة غوستافو ألفارو في باراغواي",
-          "summary": "استدعى ليتشوغا 28 لاعبا للمباريات ضد بوليفيا وكولومبيا. تم استدعاء واحد من دوري المحترفين لأول مرة.",
+          "title": "قائمة غوستافو ألفارو مع باراغواي تضم مفاجأة من الدوري الأرجنتيني ولاعبين معتادين",
+          "summary": "استدعى المدرب غوستافو ألفارو 28 لاعباً لمنتخب باراغواي لمواجهتي بوليفيا وكولومبيا، وشهدت القائمة توجيه أول دعوة للاعب ينشط في الدوري الأرجنتيني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/america/jugadores-futbol-argentino-lista-gustavo-alfaro-paraguay_0_t8A70eSMRi.html",
@@ -726,7 +783,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/america/jugadores-futbol-argentino-lista-gustavo-alfaro-paraguay_0_t8A70eSMRi.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "de02302cbbc2",
@@ -885,26 +947,27 @@
       "i18n": {
         "fr": {
           "title": "Ferran Torres encore décisif avec le PSG malgré son statut de remplaçant contre l'OM : « Ce n'est pas important de savoir si tu débutes ou pas »",
-          "summary": "Ferran Torres, l'attaquant du PSG, auteur de l'ouverture du score à Marseille, dimanche (2-1), assure qu'il n'était pas déçu d'avoir débuté sur le banc.",
-          "needs_translation": false
+          "summary": "Auteur de l'ouverture du score lors de la victoire du PSG à Marseille (2-1), Ferran Torres a dédramatisé sa présence sur le banc au coup d'envoi, affirmant que débuter remplaçant ne posait aucun problème.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Ferran Torres still decisive with PSG despite his status as a substitute against OM: \"It doesn't matter if you start or not\"",
-          "summary": "Ferran Torres, the PSG striker who opened the scoring in Marseille on Sunday (2-1), said he was not disappointed to have started on the bench.",
+          "title": "Ferran Torres decisive again for PSG despite substitute role against OM: \"It doesn't matter whether you start or not\"",
+          "summary": "After opening the scoring in PSG's 2-1 victory against Marseille, Ferran Torres downplayed starting on the bench, stating that not being in the initial lineup was not an issue.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Ferran Torres sigue siendo decisivo con el PSG a pesar de su condición de suplente contra el OM: \"No importa si comienzas o no\"",
-          "summary": "Ferran Torres, delantero del PSG, autor de la apertura del marcador en Marsella el domingo (2-1), asegura que no estaba decepcionado por haber comenzado en el banquillo.",
+          "title": "Ferran Torres vuelve a ser decisivo con el PSG pese a su suplencia ante el OM: «No importa si eres titular o no»",
+          "summary": "Autor del primer gol en la victoria del PSG frente al Marseille (2-1), Ferran Torres restó importancia a su suplencia y aseguró no estar decepcionado por haber comenzado el partido en el banquillo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "لا يزال فيران توريس حاسمًا مع PSG على الرغم من وضعه كبديل ضد OM: \"لا يهم إذا بدأت أم لا\"",
-          "summary": "قال فيران توريس، مهاجم باريس سان جيرمان الذي افتتح التسجيل في مرسيليا يوم الأحد (2-1)، إنه لم يشعر بخيبة أمل لأنه بدأ على مقاعد البدلاء.",
+          "title": "فيران توريس حاسم مجدداً مع باريس سان جيرمان رغم جلوسه بديلاً أمام مارسيليا: «المهم ليس أن تبدأ أساسياً أم لا»",
+          "summary": "قلل فيران توريس من أهمية جلوسه على مقاعد البدلاء بعدما افتتح التسجيل في فوز باريس سان جيرمان على مارسيليا بنتيجة (2-1)، مؤكداً عدم شعوره بأي إحباط.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Ferran-torres-encore-decisif-avec-le-psg-malgre-son-statut-de-remplacant-contre-l-om-ce-n-est-pas-important-de-savoir-si-tu-debutes-ou-pas/1720241#at_medium=RSS_feeds",
@@ -926,7 +989,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Ferran-torres-encore-decisif-avec-le-psg-malgre-son-statut-de-remplacant-contre-l-om-ce-n-est-pas-important-de-savoir-si-tu-debutes-ou-pas/1720241#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "80d805eb97ae",
@@ -985,26 +1053,27 @@
       "i18n": {
         "es": {
           "title": "Portada de MD Bizkaia-Araba de hoy lunes",
-          "summary": "El Athletic se va al primer parón de la Liga con sensaciones encontradas. Los leones vienen de sumar dos empates consecutivos en San Mamés.",
-          "needs_translation": false
+          "summary": "El Athletic llega al primer parón de la Liga con sensaciones encontradas tras cosechar dos empates consecutivos en San Mamés.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Cover of MD Bizkaia-Araba today Monday",
-          "summary": "Athletic goes to the first stoppage of the League with mixed feelings. The lions come from adding two consecutive draws in San Mamés.",
+          "title": "MD Bizkaia-Araba front page for this Monday",
+          "summary": "Athletic head into the first Liga break with mixed feelings after recording two consecutive draws at San Mamés.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Couverture de MD Bizkaia-Araba d'aujourd' hui lundi",
-          "summary": "L'Athletic va à la première pause de la Liga avec des sensations mitigées. Les lions viennent d'ajouter deux nuls consécutifs à San Mamés.",
+          "title": "Une de MD Bizkaia-Araba de ce lundi",
+          "summary": "L'Athletic aborde la première trêve de la Liga sur un bilan mitigé, après avoir concédé deux matches nuls consécutifs à San Mamés.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "غلاف MD Bizkaia - Araba اليوم الاثنين",
-          "summary": "رياضي يذهب إلى أول توقف للدوري بمشاعر مختلطة. تأتي الأسود من إضافة قرعتين متتاليتين في سان ماميس.",
+          "title": "غلاف موندو ديبورتيفو بيسكايا-أرابا لهذا الإثنين",
+          "summary": "يدخل أتلتيك بيلباو أول توقف في الدوري الإسباني بمشاعر متباينة، وذلك عقب تسجيله تعادلين متتاليين على ملعب سان ماميس.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260921/1004229589/portada-md-bizkaia-araba-hoy-lunes.html",
@@ -1026,7 +1095,12 @@
           "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20260921/1004229589/portada-md-bizkaia-araba-hoy-lunes.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "37c535a2c6cd",
@@ -1126,7 +1200,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Bruno-genesio-entraineur-de-l-om-battu-par-le-psg-ce-n-est-pas-une-defaite-honorable-qui-va-me-satisfaire/1720228#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c605600eb5fd",
@@ -1297,32 +1376,33 @@
       "i18n": {
         "de": {
           "title": "Paderborn überrascht Hoffenheim",
-          "summary": "Der SC Paderborn 07 hat für eine Überraschung in der Bundesliga gesorgt und gegen die TSG 1899 Hoffenheim seinen ersten Saisonsieg eingefahren.",
-          "needs_translation": false
+          "summary": "Der SC Paderborn 07 hat gegen die TSG 1899 Hoffenheim seinen ersten Saisonsieg in der Bundesliga eingefahren.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Paderborn surprises Hoffenheim",
-          "summary": "SC Paderborn 07 caused a surprise in the Bundesliga and clinched its first victory of the season against TSG 1899 Hoffenheim.",
+          "title": "Paderborn surprise Hoffenheim",
+          "summary": "SC Paderborn 07 secured their first Bundesliga victory of the season with a win against TSG 1899 Hoffenheim.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
           "title": "Paderborn surprend Hoffenheim",
-          "summary": "Le SC Paderborn 07 a fait une surprise en Bundesliga et a remporté sa première victoire de la saison contre le TSG 1899 Hoffenheim.",
+          "summary": "Le SC Paderborn 07 a décroché sa première victoire de la saison en Bundesliga en s'imposant face à la TSG 1899 Hoffenheim.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Paderborn sorprende al Hoffenheim",
-          "summary": "El SC Paderborn 07 causó una sorpresa en la Bundesliga y consiguió su primera victoria de la temporada contra el TSG 1899 Hoffenheim.",
+          "title": "Paderborn sorprende a Hoffenheim",
+          "summary": "El SC Paderborn 07 logró su primera victoria de la temporada en la Bundesliga tras imponerse al TSG 1899 Hoffenheim.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "بادربورن مفاجآت هوفنهايم",
-          "summary": "تسبب نادي بادربورن 07 في مفاجأة في الدوري الألماني وانتزع أول انتصار له في الموسم ضد TSG 1899 هوفنهايم.",
+          "title": "بادربورن يفاجئ هوفنهايم",
+          "summary": "حقق نادي بادربورن 07 فوزه الأول هذا الموسم في الدوري الألماني بعد تغلبه على هوفنهايم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga/paderborn-ueberrascht-hoffenheim,video-bundesliga-sc-paderborn-tsg-1899-hoffenheim-zusammenfassung-100.html",
@@ -1344,7 +1424,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/paderborn-ueberrascht-hoffenheim,video-bundesliga-sc-paderborn-tsg-1899-hoffenheim-zusammenfassung-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d3c5efa28b87",
@@ -1353,32 +1438,33 @@
       "i18n": {
         "de": {
           "title": "Gladbach verliert auch unter Lichte gegen Mainz",
-          "summary": "Borussia Mönchengladbach hat in der Fußball-Bundesliga auch unter Interimstrainer Jan-Moritz Lichte eine Niederlage kassiert. Gegen den 1.",
-          "needs_translation": false
+          "summary": "Borussia Mönchengladbach hat in der Fußball-Bundesliga auch unter Interimstrainer Jan-Moritz Lichte eine Niederlage gegen Mainz hinnehmen müssen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Gladbach also loses to Mainz under the lights",
-          "summary": "Borussia Mönchengladbach has also suffered a defeat in the Bundesliga under interim coach Jan-Moritz Lichte.",
+          "title": "Gladbach lose to Mainz under Lichte as well",
+          "summary": "Borussia Mönchengladbach suffered another Bundesliga defeat against Mainz under interim coach Jan-Moritz Lichte.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Gladbach perd aussi sous la lumière contre Mayence",
-          "summary": "Le Borussia Mönchengladbach a également essuyé une défaite en Bundesliga sous l'entraîneur intérimaire Jan-Moritz Lichte. Contre le 1er",
+          "title": "Gladbach s'incline aussi sous Lichte contre Mainz",
+          "summary": "En Bundesliga, Borussia Mönchengladbach a concédé une nouvelle défaite face à Mainz sous la direction de l'entraîneur intérimaire Jan-Moritz Lichte.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Gladbach también pierde a la luz contra Mainz",
-          "summary": "Borussia Mönchengladbach también sufrió una derrota en la Bundesliga de fútbol bajo el entrenador interino Jan-Moritz Lichte. Contra el 1.",
+          "title": "Gladbach también pierde ante Mainz con Lichte",
+          "summary": "El Borussia Mönchengladbach sufrió una derrota en la Bundesliga frente a Mainz, en el estreno de Jan-Moritz Lichte como entrenador interino.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "جلادباخ يخسر أيضا أمام ماينز تحت الأضواء",
-          "summary": "كما عانى بوروسيا مونشنغلادباخ من هزيمة في البوندسليغا تحت قيادة المدرب المؤقت يان موريتز ليخته.",
+          "title": "غلادباخ يخسر أمام ماينتس بقيادة ليشته",
+          "summary": "تلقى بوروسيا مونشنغلادباخ هزيمة جديدة في الدوري الألماني أمام ماينتس، وذلك تحت قيادة المدرب المؤقت يان-موريتز ليشته.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga/wieder-vier-gegentore-gladbach-verliert-auch-unter-lichte,spielbericht-borussia-moenchengladbach-mainz-05-100.html",
@@ -1400,7 +1486,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/wieder-vier-gegentore-gladbach-verliert-auch-unter-lichte,spielbericht-borussia-moenchengladbach-mainz-05-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "020cc35f2ab0",
@@ -1408,33 +1499,54 @@
       "summary": "Borussia Dortmunds Lauf geht weiter. Auch im Topspiel beim VfB Stuttgart hält sich der BVB schadlos und steht plötzlich auf Platz eins.",
       "i18n": {
         "de": {
-          "title": "Beiers goldenes Tor entscheidet Topspiel in Stuttgart",
-          "summary": "Borussia Dortmunds Lauf geht weiter. Auch im Topspiel beim VfB Stuttgart hält sich der BVB schadlos und steht plötzlich auf Platz eins.",
-          "needs_translation": false
+          "title": "Beier schießt Dortmund in Stuttgart an die Tabellenspitze",
+          "summary": "Borussia Dortmund erobert mit einem Auswärtssieg beim VfB Stuttgart dank des goldenen Tores von Maximilian Beier den ersten Tabellenplatz.",
+          "body": [
+            "Der BVB setzt seine Erfolgsserie auch im Duell mit den Schwaben fort. Ein einziger Treffer von Beier reichte den Dortmundern, um sich im Topspiel schadlos zu halten. Mit dem Auswärtserfolg zieht das Team plötzlich an die Spitze des Klassements und baut seinen aktuellen Lauf weiter aus."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Beier's golden goal decides top game in Stuttgart",
-          "summary": "Borussia Dortmund's run continues. Even in the top game at VfB Stuttgart, BVB remains harmless and is suddenly in first place.",
+          "title": "Beier strikes in Stuttgart to send Borussia Dortmund top",
+          "summary": "Borussia Dortmund climbed to the summit of the table with a hard-fought away win at VfB Stuttgart, secured by a solitary goal from Maximilian Beier.",
+          "body": [
+            "BVB extended their fine run of form with victory against the Swabians. A single strike from Beier proved enough for the Dortmund side to claim maximum points from a fiercely contested clash, propelling the visitors to the top of the standings and underlining their momentum."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Le but d'or de Beier décide du meilleur match à Stuttgart",
-          "summary": "Borussia Dortmunds Lauf geht weiter. Auch im Topspiel beim VfB Stuttgart hält sich der BVB schadlos und steht plötzlich auf Platz eins.",
+          "title": "Beier propulse Borussia Dortmund au sommet à Stuttgart",
+          "summary": "Borussia Dortmund s'empare de la tête du classement grâce à une victoire capitale sur le terrain du VfB Stuttgart, scellée par l'unique but de Maximilian Beier.",
+          "body": [
+            "Le BVB confirme sa superbe série en domptant les Souabes. Une seule réalisation de Beier a suffi aux Borussiens pour faire la différence dans ce choc. Ce succès précieux à l'extérieur permet aux hommes de Dortmund de s'installer au sommet du championnat et de prolonger leur belle dynamique."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "El gol de oro de Beier decide el mejor partido en Stuttgart",
-          "summary": "La carrera del Borussia Dortmund continúa. Incluso en el partido más importante en el VfB Stuttgart, el BVB se mantiene indemne y de repente ocupa el primer lugar.",
+          "title": "Beier catapulta a Borussia Dortmund al liderato en Stuttgart",
+          "summary": "Borussia Dortmund asaltó la cima de la tabla tras imponerse a domicilio al VfB Stuttgart gracias al solitario tanto de Maximilian Beier.",
+          "body": [
+            "El BVB da continuidad a su racha triunfal tras salir airoso de su visita al feudo suabo. La solitaria diana de Beier bastó a los de Dortmund para resolver un choque de altos vuelos. Tres puntos de oro a domicilio que aúpan al equipo a lo más alto de la clasificación y confirman su excelente momento."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "هدف باير الذهبي يقرر أفضل مباراة في شتوتغارت",
-          "summary": "تستمر مسيرة بوروسيا دورتموند. حتى في المباراة الأولى في VfB شتوتغارت، لا يزال BVB غير ضار وفجأة في المركز الأول.",
+          "title": "باير يقود بوروسيا دورتموند إلى الصدارة على حساب شتوتغارت",
+          "summary": "اعتلى بوروسيا دورتموند صدارة جدول الترتيب عقب فوزه الثمين خارج قواعده أمام شتوتغارت بفضل الهدف الوحيد الذي سجله ماكسيميليان باير.",
+          "body": [
+            "واصل بوروسيا دورتموند سلسلة نتائجه الإيجابية بتغلبه على شتوتغارت في قمة الجولة. وكان هدف باير كافياً ليخرج الفريق فائزاً من المواجهة الصعبة، ليقفز فجأة إلى المركز الأول في سباق الدوري ويحافظ على سجله الخالي من الهزائم في هذه الفترة."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga/beiers-goldenes-tor-entscheidet-topspiel-in-stuttgart,video-bundesliga-vfb-stuttgart-borussia-dortmund-zusammenfassung-102.html",
@@ -1456,7 +1568,20 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/beiers-goldenes-tor-entscheidet-topspiel-in-stuttgart,video-bundesliga-vfb-stuttgart-borussia-dortmund-zusammenfassung-102.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-21T07:05:19+00:00"
+        }
+      }
     },
     {
       "id": "e2676b6d69c6",
@@ -1465,32 +1590,33 @@
       "i18n": {
         "de": {
           "title": "Zoma Nürnbergs Sieggarant in Karlsruhe",
-          "summary": "Der 1. FC Nürnberg bleibt in der 2.",
-          "needs_translation": false
+          "summary": "Zoma hat den 1. FC Nürnberg zum Sieg in Karlsruhe geführt und dem Team wichtige Punkte in der 2. Bundesliga gesichert.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Zoma Nürnberg's guarantee of victory in Karlsruhe",
-          "summary": "1. FC Nürnberg remains in the 2nd",
+          "title": "Zoma seals Nürnberg's victory in Karlsruhe",
+          "summary": "Zoma led 1. FC Nürnberg to an away victory in Karlsruhe, securing vital points for the club in the 2. Bundesliga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Zoma Nürnbergs Sieggarant à Karlsruhe",
-          "summary": "Le 1er FC Nuremberg reste dans la 2ème",
+          "title": "Zoma offre la victoire à Nürnberg à Karlsruhe",
+          "summary": "Zoma a assuré la victoire du 1. FC Nürnberg sur le terrain de Karlsruhe, permettant au club de poursuivre sa marche en 2. Bundesliga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El garante de la victoria de Zoma Nürnberg en Karlsruhe",
-          "summary": "El primer FC Nürnberg permanecerá en la segunda",
+          "title": "Zoma asegura la victoria de Nürnberg en Karlsruhe",
+          "summary": "Zoma lideró el triunfo del 1. FC Nürnberg a domicilio en Karlsruhe para sumar puntos clave en la 2. Bundesliga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ضمان زوما نورنبرغ للفوز في كارلسروه",
-          "summary": "1. يبقى FC Nürnberg في المركز الثاني",
+          "title": "زوما يقود نورنبرغ للفوز في كارلسروه",
+          "summary": "قاد زوما فريقه نورنبرغ لتحقيق الانتصار خارج ملعبه أمام كارلسروه لمواصلة مشواره في دوري الدرجة الثانية الألماني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga2/zoma-nuernbergs-sieggarant-in-karlsruhe,video-zweite-bundesliga-karlsruher-sc-1-fc-nuernberg-zusammenfassung-100.html",
@@ -1512,7 +1638,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga2/zoma-nuernbergs-sieggarant-in-karlsruhe,video-zweite-bundesliga-karlsruher-sc-1-fc-nuernberg-zusammenfassung-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "22b1ff266cd3",
@@ -1521,32 +1652,33 @@
       "i18n": {
         "de": {
           "title": "Magdeburg erkämpft Remis in Fürth",
-          "summary": "In der 2. Bundesliga treffen der FC Magdeburg und die SpVgg Greuther Fürth schon in den ersten 20 Minuten der Partie.",
-          "needs_translation": false
+          "summary": "In der 2. Bundesliga trennten sich der FC Magdeburg und die SpVgg Greuther Fürth mit einem Unentschieden. Beide Treffer fielen bereits in den ersten 20 Minuten.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Magdeburg wins draw in Fürth",
-          "summary": "In the 2nd Bundesliga, FC Magdeburg and SpVgg Greuther Fürth meet in the first 20 minutes of the game.",
+          "title": "Magdeburg battles to a draw in Fürth",
+          "summary": "In the 2. Bundesliga, FC Magdeburg and SpVgg Greuther Fürth shared the points. Both sides scored inside the opening 20 minutes of the match.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Magdebourg remporte le match nul à Fürth",
-          "summary": "En 2e Bundesliga, le FC Magdebourg et le SpVgg Greuther Fürth marquent déjà dans les 20 premières minutes du match.",
+          "title": "Magdeburg arrache le match nul à Fürth",
+          "summary": "En 2. Bundesliga, le FC Magdeburg et la SpVgg Greuther Fürth se sont neutralisés. Les deux formations ont trouvé le chemin des filets dès les vingt premières minutes.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Magdeburgo gana tablas en Fürth",
-          "summary": "En la Bundesliga 2, el FC Magdeburg y el SpVgg Greuther Fürth marcarán en los primeros 20 minutos del partido.",
+          "title": "Magdeburg rescata un empate en Fürth",
+          "summary": "En la 2. Bundesliga, el FC Magdeburg y la SpVgg Greuther Fürth firmaron las tablas. Ambos equipos anotaron durante los primeros veinte minutos del encuentro.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "ماغديبرغ يفوز بالتعادل في فورث",
-          "summary": "في الدوري الألماني الثاني، يلتقي ماغديبرغ و SpVgg Greuther Fürth في أول 20 دقيقة من المباراة.",
+          "title": "ماغديبورغ يقتنص التعادل أمام غرويتر فورث",
+          "summary": "تعادل إف سي ماغديبورغ مع غرويتر فورث في دوري الدرجة الثانية الألماني. وشهدت المباراة تسجيل الفريقين لهدفيهما خلال أول عشرين دقيقة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga2/magdeburg-erkaempft-remis-in-fuerth,video-zweite-bundesliga-greuther-fuerth-sc-magdeburg-zusammenfassunfg-100.html",
@@ -1568,7 +1700,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga2/magdeburg-erkaempft-remis-in-fuerth,video-zweite-bundesliga-greuther-fuerth-sc-magdeburg-zusammenfassunfg-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "623d176c6d96",
@@ -1624,7 +1761,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/hsv-trifft-und-siegt-gegen-ineffiziente-koelner,video-bundesliga-hamburger-sv-1-fc-koeln-zusammenfassung-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "de48766d3be1",
@@ -1633,32 +1775,33 @@
       "i18n": {
         "de": {
           "title": "Herthas Traum-Bilanz hält auch in Dresden",
-          "summary": "Hertha BSC bleibt makelloser Spitzenreiter in der 2. Fußball-Bundesliga.",
-          "needs_translation": false
+          "summary": "Hertha BSC bleibt nach der Partie in Dresden weiterhin makelloser Spitzenreiter der 2. Bundesliga.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Hertha's dream balance sheet also holds in Dresden",
-          "summary": "Hertha BSC remains an impeccable frontrunner in the 2. Bundesliga.",
+          "title": "Hertha BSC maintain perfect record in Dresden",
+          "summary": "Hertha BSC continued their flawless run in Dresden to stay clear at the top of the 2. Bundesliga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le bilan de rêve d'Hertha tient également à Dresde",
-          "summary": "Hertha BSC reste un leader impeccable dans la 2ème Bundesliga de football.",
+          "title": "Le bilan parfait de Hertha BSC se maintient à Dresden",
+          "summary": "Hertha BSC préserve son parcours sans faute à Dresden et conserve la tête de la 2. Bundesliga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "El balance de los sueños de Hertha también se mantiene en Dresde",
-          "summary": "El Hertha BSC sigue siendo el líder impecable de la 2ª Bundesliga de fútbol.",
+          "title": "El balance perfecto de Hertha BSC se mantiene en Dresden",
+          "summary": "Hertha BSC prolongó su pleno de victorias en Dresden y continúa como líder impecable de la 2. Bundesliga.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "الميزانية العمومية لأحلام هيرثا موجودة أيضًا في دريسدن",
-          "summary": "لا يزال Hertha BSC متصدرًا لا تشوبه شائبة في 2. الدوري الألماني.",
+          "title": "هيرتا برلين يواصل مسيرته المثالية في دريسدن",
+          "summary": "حافظ نادي هيرتا برلين على سجله المثالي بعد مباراته في دريسدن، ليواصل انفراده بصدارة دوري الدرجة الثانية الألماني.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga2/herthas-traum-bilanz-haelt-auch-in-dresden,video-zweite-bundesliga-dynamo-dresden-hertha-bsc-berlin-zusammenfassung-100.html",
@@ -1680,7 +1823,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga2/herthas-traum-bilanz-haelt-auch-in-dresden,video-zweite-bundesliga-dynamo-dresden-hertha-bsc-berlin-zusammenfassung-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "91339467a8cd",
@@ -2025,31 +2173,33 @@
       "i18n": {
         "de": {
           "title": "Yardimci erlöst Lautern in Braunschweig",
-          "summary": "Der 1. FC Kaiserslautern gewinnt dank eines Ex-Braunschweigers in der 2.",
-          "needs_translation": false
+          "summary": "Der 1. FC Kaiserslautern gewinnt in Braunschweig dank eines Treffers des ehemaligen Braunschweigers Yardimci.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Yardimci redeems Lautern in Braunschweig",
-          "summary": "Thanks to an ex-Braunschweiger, the 1st FC Kaiserslautern wins in the 2nd",
+          "title": "Yardimci delivers for Lautern in Braunschweig",
+          "summary": "1. FC Kaiserslautern earned a victory at Braunschweig courtesy of a goal from former Braunschweig player Yardimci.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Yardimci rachète Lautern à Brunswick",
-          "summary": "Le 1er FC Kaiserslautern gagne grâce à un ancien de Brunswick dans la 2ème",
+          "title": "Yardimci délivre Lautern à Braunschweig",
+          "summary": "Le 1. FC Kaiserslautern s'impose sur le terrain de Braunschweig grâce à un but de l'ancien joueur local Yardimci.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Yardimci redime a Lautern en Brunswick",
-          "summary": "Der 1. FC Kaiserslautern gewinnt dank eines Ex-Braunschweigers in der 2.",
+          "title": "Yardimci da la victoria a Lautern en Braunschweig",
+          "summary": "El 1. FC Kaiserslautern venció a domicilio ante Braunschweig gracias a un gol del exjugador local Yardimci.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Yardimci erlöst Lautern in Braunschweig",
-          "summary": "Der 1. FC Kaiserslautern gewinnt dank eines Ex-Braunschweigers in der 2.",
-          "needs_translation": true
+          "title": "يارديمجي يقود كايزرسلاوترن للفوز في براونشفايغ",
+          "summary": "حقق كايزرسلاوترن الفوز خارج ملعبه أمام براونشفايغ بفضل هدف سجله لاعب براونشفايغ السابق يارديمجي.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga2/yardimci-erloest-lautern-in-braunschweig,video-zweite-bundesliga-1-fc-kaiserslautern-eintracht-braunschweig-zusammenfassung-102.html",
@@ -2071,7 +2221,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga2/yardimci-erloest-lautern-in-braunschweig,video-zweite-bundesliga-1-fc-kaiserslautern-eintracht-braunschweig-zusammenfassung-102.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3649d2daeda4",
@@ -2080,28 +2235,33 @@
       "i18n": {
         "de": {
           "title": "Kiel bleibt gegen Osnabrück sieglos",
-          "summary": "In der 2. Bundesliga hat Holstein Kiel trotz Führung gegen den VfL Osnabrück erneut nicht gewonnen.",
-          "needs_translation": false
+          "summary": "Holstein Kiel hat in der 2. Bundesliga trotz Führung erneut nicht gegen den VfL Osnabrück gewonnen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Kiel bleibt gegen Osnabrück sieglos",
-          "summary": "In der 2. Bundesliga hat Holstein Kiel trotz Führung gegen den VfL Osnabrück erneut nicht gewonnen.",
-          "needs_translation": true
+          "title": "Kiel remains winless against Osnabrück",
+          "summary": "In the 2. Bundesliga, Holstein Kiel once again failed to secure a victory against VfL Osnabrück despite taking the lead.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Kiel bleibt gegen Osnabrück sieglos",
-          "summary": "In der 2. Bundesliga hat Holstein Kiel trotz Führung gegen den VfL Osnabrück erneut nicht gewonnen.",
-          "needs_translation": true
+          "title": "Kiel reste sans victoire face à Osnabrück",
+          "summary": "En 2. Bundesliga, Holstein Kiel n'a pas réussi à s'imposer face au VfL Osnabrück malgré avoir pris les devants.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Kiel bleibt gegen Osnabrück sieglos",
-          "summary": "In der 2. Bundesliga hat Holstein Kiel trotz Führung gegen den VfL Osnabrück erneut nicht gewonnen.",
-          "needs_translation": true
+          "title": "Kiel sigue sin ganar ante Osnabrück",
+          "summary": "En la 2. Bundesliga, Holstein Kiel no pudo vencer al VfL Osnabrück a pesar de haberse adelantado en el marcador.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Kiel bleibt gegen Osnabrück sieglos",
-          "summary": "In der 2. Bundesliga hat Holstein Kiel trotz Führung gegen den VfL Osnabrück erneut nicht gewonnen.",
-          "needs_translation": true
+          "title": "كيل يواصل صيامه عن الانتصارات أمام أوسنابروك",
+          "summary": "فشل هولشتاين كيل مجدداً في تحقيق الفوز أمام فيه إف إل أوسنابروك في دوري الدرجة الثانية الألماني، على الرغم من تقدمه في النتيجة.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga2/kiel-bleibt-gegen-osnabrueck-sieglos,video-zweite-bundesliga-holstein-kiel-vfl-osnabrueck-zusammenfassung-100.html",
@@ -2123,7 +2283,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga2/kiel-bleibt-gegen-osnabrueck-sieglos,video-zweite-bundesliga-holstein-kiel-vfl-osnabrueck-zusammenfassung-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "73a165adf095",
@@ -2132,28 +2297,33 @@
       "i18n": {
         "de": {
           "title": "Kein Sieger beim Aufsteiger-Duell auf Schalke",
-          "summary": "Trotz zahlreicher und bester Chancen auf beiden Seiten konnten weder der FC Schalke 04 noch die SV Elversberg einen Torerfolg im Vergleich der zwei Bundesliga-Aufsteiger feiern.",
-          "needs_translation": false
+          "summary": "Trotz zahlreicher hochkarätiger Chancen auf beiden Seiten trennten sich der FC Schalke 04 und die SV Elversberg im Duell der beiden Aufsteiger torlos unentschieden.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Kein Sieger beim Aufsteiger-Duell auf Schalke",
-          "summary": "Trotz zahlreicher und bester Chancen auf beiden Seiten konnten weder der FC Schalke 04 noch die SV Elversberg einen Torerfolg im Vergleich der zwei Bundesliga-Aufsteiger feiern.",
-          "needs_translation": true
+          "title": "No winner in promoted sides' duel at Schalke",
+          "summary": "Despite numerous clear chances for both sides, FC Schalke 04 and SV Elversberg settled for a goalless draw in their clash.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Kein Sieger beim Aufsteiger-Duell auf Schalke",
-          "summary": "Trotz zahlreicher und bester Chancen auf beiden Seiten konnten weder der FC Schalke 04 noch die SV Elversberg einen Torerfolg im Vergleich der zwei Bundesliga-Aufsteiger feiern.",
-          "needs_translation": true
+          "title": "Pas de vainqueur dans le duel de promus à Schalke",
+          "summary": "Malgré de nombreuses occasions franches de part et d'autre, le FC Schalke 04 et la SV Elversberg se sont neutralisés sur un score nul et vierge.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Kein Sieger beim Aufsteiger-Duell auf Schalke",
-          "summary": "Trotz zahlreicher und bester Chancen auf beiden Seiten konnten weder der FC Schalke 04 noch die SV Elversberg einen Torerfolg im Vergleich der zwei Bundesliga-Aufsteiger feiern.",
-          "needs_translation": true
+          "title": "Sin vencedor en el duelo de ascendidos en Schalke",
+          "summary": "Pese a contar con numerosas ocasiones claras en ambas porterías, FC Schalke 04 y SV Elversberg empataron sin goles en su enfrentamiento.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Kein Sieger beim Aufsteiger-Duell auf Schalke",
-          "summary": "Trotz zahlreicher und bester Chancen auf beiden Seiten konnten weder der FC Schalke 04 noch die SV Elversberg einen Torerfolg im Vergleich der zwei Bundesliga-Aufsteiger feiern.",
-          "needs_translation": true
+          "title": "لا فائز في مواجهة الصاعدين على أرض شالكه",
+          "summary": "تعادل نادي شالكه 04 مع إلفرسبيرغ بدون أهداف في مواجهة الصاعدين، رغم الفرص الكثيرة والخطيرة التي أتيحت لكلا الفريقين.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga/kein-sieger-beim-aufsteiger-duell-auf-schalke,video-bundesliga-fc-schalke-04-sv-elversberg-zusammenfassung-100.html",
@@ -2175,7 +2345,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/kein-sieger-beim-aufsteiger-duell-auf-schalke,video-bundesliga-fc-schalke-04-sv-elversberg-zusammenfassung-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "cec493f0aaf6",
