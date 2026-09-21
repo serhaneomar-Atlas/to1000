@@ -276,7 +276,12 @@
           "url": "https://www.kicker.de/da-entsteht-eine-tolle-chemie-vechta-uebersteht-die-knochenmuehle-1254836/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "685e0c379b6d",
@@ -482,7 +487,12 @@
           "url": "https://africatopsports.com/football/elim-can-2027-carlos-queiroz-selectionneur-ghana-nous-avons-un-objectif-immediat-qui-exige-toute-notre-concentration/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "061f4b85fe3f",
@@ -682,7 +692,12 @@
           "url": "https://www.calciomio.fr/si-la-var-nintervient-pas-sur-un-episode-pareil-autant-labolir-battu-a-turin-sarri-explose-pour-un-maillot-tenu-sur-deux-metres-dans-la-surface-de-la-juve-id-180154"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "82c9bdf8d55d",
@@ -690,27 +705,44 @@
       "summary": "Absent lors du Classique remporté par le PSG à Marseille (2-1) en raison de sa blessure, Achraf Hakimi a tout de même été convoqué par le Maroc. Luis Enrique assure faire confiance au latéral parisien et ne souhaite prendre aucun risque avec sa santé.",
       "i18n": {
         "fr": {
-          "title": "PSG : Luis Enrique rassure sur Hakimi avant son rassemblement avec le Maroc",
-          "summary": "Absent lors du Classique remporté par le PSG à Marseille (2-1) en raison de sa blessure, Achraf Hakimi a tout de même été convoqué par le Maroc. Luis Enrique assure faire confiance au latéral parisien et ne souhaite prendre aucun risque avec sa santé.",
-          "needs_translation": false
+          "title": "PSG : Luis Enrique valide le départ en sélection d'Achraf Hakimi",
+          "summary": "Blessé et forfait contre Marseille, Achraf Hakimi rejoint le rassemblement du Maroc avec l'accord de Luis Enrique, sans pour autant disputer le prochain match international.",
+          "body": [
+            "Victime d'une blessure à la cuisse droite, le latéral parisien a manqué le succès au Vélodrome (2-1) mais figure bien dans la liste des Lions de l'Atlas pour les éliminatoires de la CAN 2027. Luis Enrique assure maintenir un dialogue constant avec l'encadrement marocain afin de préserver la santé de son joueur et gérer sa reprise sans précipitation."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "PSG: Luis Enrique reassures on Hakimi before his gathering with Morocco",
-          "summary": "Absent during the Classic won by PSG in Marseille (2-1) due to his injury, Achraf Hakimi was still summoned by Morocco. Luis Enrique says he trusts the Parisian side and does not want to take any risks with his health.",
+          "title": "PSG: Luis Enrique clears Achraf Hakimi to join Morocco squad",
+          "summary": "Injured and ruled out against Marseille, Achraf Hakimi has joined the Morocco camp with Luis Enrique's blessing, though he will miss their upcoming international fixture.",
+          "body": [
+            "Sidelined by a right thigh injury, the Paris full-back missed the 2-1 win at the Vélodrome but was still summoned by the Atlas Lions for the CAN 2027 qualifiers. Luis Enrique stressed that dialogue with Morocco's staff remains open to monitor his recovery and avoid taking any unnecessary risks."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "PSG: Luis Enrique tranquiliza a Hakimi antes de su reunión con Marruecos",
-          "summary": "Ausente en el Clásico ganado por el PSG en Marsella (2-1) debido a su lesión, Achraf Hakimi fue convocado por Marruecos. Luis Enrique asegura que confía en el lateral parisino y no quiere correr ningún riesgo con su salud.",
+          "title": "PSG: Luis Enrique autoriza el viaje de Hakimi con Marruecos",
+          "summary": "Lesionado y baja ante Marseille, Achraf Hakimi acude a la concentración de Marruecos con el aval de Luis Enrique, aunque no jugará el próximo partido internacional.",
+          "body": [
+            "Afectado por una molestia en el muslo derecho, el lateral parisino se perdió la victoria en el Vélodrome (2-1), pero fue convocado por los Leones del Atlas para los clasificatorios de la CAN 2027. Luis Enrique subrayó que mantiene comunicación directa con el cuerpo técnico marroquí para priorizar la salud del futbolista y evitar riesgos."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "باريس سان جيرمان: لويس إنريكي يطمئن الحكيمي قبل اجتماعه مع المغرب",
-          "summary": "تغيب خلال الكلاسيك الذي فاز به باريس سان جيرمان في مرسيليا (2-1) بسبب إصابته، وكان أشرف الحكيمي لا يزال يستدعيه المغرب. يقول لويس إنريكي إنه يثق في الجانب الباريسي ولا يريد المخاطرة بصحته.",
+          "title": "باريس سان جيرمان: إنريكي يوافق على انضمام حكيمي لمنتخب المغرب",
+          "summary": "رغم إصابته وغيابه عن مواجهة مارسيليا، انضم أشرف حكيمي إلى معسكر منتخب المغرب بموافقة لويس إنريكي، دون أن يخوض المباراة الدولية المقبلة.",
+          "body": [
+            "وكان الظهير الأيمن لباريس سان جيرمان، الذي يعاني من إصابة في الفخذ، قد غاب عن الفوز في فيلودروم (2-1)، غير أنه انضم لقائمة أسود الأطلس لتصفيات كأس أمم إفريقيا 2027. وأكد إنريكي استمرار التنسيق مع الجهاز الفني لمنتخب المغرب لحماية اللاعب ومتابعة تعافيه دون أي مخاطرة."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://fr.hespress.com/489183-psg-luis-enrique-rassure-sur-hakimi-avant-son-rassemblement-avec-le-maroc.html",
@@ -732,7 +764,20 @@
           "url": "https://fr.hespress.com/489183-psg-luis-enrique-rassure-sur-hakimi-avant-son-rassemblement-avec-le-maroc.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-21T14:33:51+00:00"
+        }
+      }
     },
     {
       "id": "3ad392d4c661",
@@ -841,25 +886,27 @@
       "i18n": {
         "es": {
           "title": "Luka Sucic: \"Sueño con ganar la Europa League con la Real Sociedad\"",
-          "summary": "Luka Sucic (Linz, 2002) está siendo, sin lugar a dudas, una de las figuras más importantes de la Real Sociedad en este inicio de campaña.",
-          "needs_translation": false
+          "summary": "Luka Sucic, figura destacada de la Real Sociedad en el inicio de la temporada, afirmó que sueña con ganar la Europa League con el club vasco.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "Luka Sucic: \"I dream of winning the Europa League with Real Sociedad\"",
-          "summary": "Luka Sucic (Linz, 2002) is undoubtedly one of the most important figures of the Royal Society at the start of the campaign.",
+          "summary": "Luka Sucic, one of Real Sociedad's standout performers at the start of the season, stated that he dreams of winning the Europa League with the club.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Luka Sucic : « Je rêve de gagner l'Europa League avec la Real Sociedad »",
-          "summary": "Luka Sucic (Linz, 2002) est sans aucun doute l'une des figures les plus importantes de la Real Sociedad en ce début de campagne.",
+          "title": "Luka Sucic : « Je rêve de gagner l'Europa League avec la Real Sociedad »",
+          "summary": "Luka Sucic, joueur clé du début de saison de la Real Sociedad, a affirmé qu'il rêvait de remporter l'Europa League avec le club basque.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Luka Sucic: \"Sueño con ganar la Europa League con la Real Sociedad\"",
-          "summary": "Luka Sucic (Linz, 2002) está siendo, sin lugar a dudas, una de las figuras más importantes de la Real Sociedad en este inicio de campaña.",
-          "needs_translation": true
+          "title": "لوكا سوتشيتش: \"أحلم بالفوز بالدوري الأوروبي مع ريال سوسيداد\"",
+          "summary": "أكد لوكا سوتشيتش، أحد أبرز لاعبي ريال سوسيداد في بداية الموسم، أنه يحلم بالتتويج بلقب الدوري الأوروبي مع النادي الإسباني.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260921/1004229631/luka-sucic-sueno-ganar-europa-league-real-sociedad.html",
@@ -881,7 +928,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20260921/1004229631/luka-sucic-sueno-ganar-europa-league-real-sociedad.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f0e6f54dae6c",
@@ -1779,7 +1831,12 @@
           "url": "https://africatopsports.com/football/elim-can-2027-de-rassurantes-nouvelles-autour-de-djene-dakonam-togo/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "45111755cb97",
@@ -1887,24 +1944,44 @@
       "summary": "Luis Enrique a modifié son organisation défensive sur la pelouse du Vélodrome, dimanche (2-1), ce qui a notamment permis de voir Nuno Mendes plus à l'avant. Mais le dispositif n'a pas réglé tous les problèmes parisiens.",
       "i18n": {
         "fr": {
-          "title": "Tactique : face à l'OM, Luis Enrique a changé les habitudes de pressing du PSG",
-          "summary": "Luis Enrique a modifié son organisation défensive sur la pelouse du Vélodrome, dimanche (2-1), ce qui a notamment permis de voir Nuno Mendes plus à l'avant. Mais le dispositif n'a pas réglé tous les problèmes parisiens.",
-          "needs_translation": false
+          "title": "OM-PSG : Luis Enrique a revu son pressing au Vélodrome",
+          "summary": "Luis Enrique a modifié le pressing du Paris Saint-Germain dimanche face à l'OM, sans parvenir à gommer tous les problèmes parisiens.",
+          "body": [
+            "Au Vélodrome (2-1), l'entraîneur espagnol a notamment repositionné Nuno Mendes plus haut grâce à une nouvelle structure défensive. Cet ajustement tactique n'a cependant pas suffi à corriger l'ensemble des difficultés rencontrées par son équipe."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Tactique : face à l'OM, Luis Enrique a changé les habitudes de pressing du PSG",
-          "summary": "Luis Enrique a modifié son organisation défensive sur la pelouse du Vélodrome, dimanche (2-1), ce qui a notamment permis de voir Nuno Mendes plus à l'avant. Mais le dispositif n'a pas réglé tous les problèmes parisiens.",
-          "needs_translation": true
+          "title": "OM-PSG: Luis Enrique reshuffled his pressing setup at the Vélodrome",
+          "summary": "Luis Enrique tweaked Paris Saint-Germain's pressing setup against OM on Sunday, though it failed to solve every problem for his side.",
+          "body": [
+            "At the Vélodrome (2-1), the Spanish coach pushed Nuno Mendes further forward through an altered defensive framework. Yet that tactical adjustment did not eliminate all the vulnerabilities shown by the Parisians during the match."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Tactique : face à l'OM, Luis Enrique a changé les habitudes de pressing du PSG",
-          "summary": "Luis Enrique a modifié son organisation défensive sur la pelouse du Vélodrome, dimanche (2-1), ce qui a notamment permis de voir Nuno Mendes plus à l'avant. Mais le dispositif n'a pas réglé tous les problèmes parisiens.",
-          "needs_translation": true
+          "title": "OM-PSG: Luis Enrique modificó su presión en el Vélodrome",
+          "summary": "Luis Enrique modificó la presión del Paris Saint-Germain este domingo ante el OM, sin lograr corregir todos los problemas de su equipo.",
+          "body": [
+            "En el Vélodrome (2-1), el técnico español adelantó la posición de Nuno Mendes gracias a una renovada estructura defensiva. La variante táctica, sin embargo, no bastó para solucionar las carencias mostradas por los parisinos."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Tactique : face à l'OM, Luis Enrique a changé les habitudes de pressing du PSG",
-          "summary": "Luis Enrique a modifié son organisation défensive sur la pelouse du Vélodrome, dimanche (2-1), ce qui a notamment permis de voir Nuno Mendes plus à l'avant. Mais le dispositif n'a pas réglé tous les problèmes parisiens.",
-          "needs_translation": true
+          "title": "مارسيليا ضد باريس سان جيرمان: إنريكي يغير خطة الضغط في فيلودروم",
+          "summary": "عدل لويس إنريكي أسلوب ضغط باريس سان جيرمان الأحد أمام أولمبيك مارسيليا، دون أن ينجح في حل جميع مشكلات فريقه.",
+          "body": [
+            "على أرضية ملعب فيلودروم (2-1)، أتاح النهج الدفاعي الجديد للمدرب الإسباني الدفع بنونو مينديز إلى موقع هجومي متقدم. ورغم هذا التعديل التكتيكي، لم يتخلص الفريق الباريسي من كل الثغرات التي عانى منها خلال اللقاء."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Article/Tactique-face-a-l-om-luis-enrique-a-change-les-habitudes-de-pressing-du-psg/1720252#at_medium=RSS_feeds",
@@ -1926,7 +2003,20 @@
           "url": "https://www.lequipe.fr/Football/Article/Tactique-face-a-l-om-luis-enrique-a-change-les-habitudes-de-pressing-du-psg/1720252#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-21T14:33:58+00:00"
+        }
+      }
     },
     {
       "id": "11781ddf82a2",
@@ -1935,23 +2025,27 @@
       "i18n": {
         "es": {
           "title": "El mensaje de Courtois tras el derbi",
-          "summary": "Ningún jugador del Real Madrid atendió a los medios de comunicación tras la derrota en el Metropolitano ante el Atlético de Madrid (2-1) . A pesar de eso, Courtois sí que se pronunció sobre ese encuentro.",
-          "needs_translation": false
+          "summary": "Ningún jugador del Real Madrid atendió a los medios tras la derrota por 2-1 ante el Atlético de Madrid en el Metropolitano. Sin embargo, Courtois sí se pronunció sobre el encuentro.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El mensaje de Courtois tras el derbi",
-          "summary": "Ningún jugador del Real Madrid atendió a los medios de comunicación tras la derrota en el Metropolitano ante el Atlético de Madrid (2-1) . A pesar de eso, Courtois sí que se pronunció sobre ese encuentro.",
-          "needs_translation": true
+          "title": "Courtois' message after the derby",
+          "summary": "No Real Madrid player spoke to the media following the 2-1 defeat against Atlético de Madrid at the Metropolitano. However, Courtois did comment on the match.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El mensaje de Courtois tras el derbi",
-          "summary": "Ningún jugador del Real Madrid atendió a los medios de comunicación tras la derrota en el Metropolitano ante el Atlético de Madrid (2-1) . A pesar de eso, Courtois sí que se pronunció sobre ese encuentro.",
-          "needs_translation": true
+          "title": "Le message de Courtois après le derby",
+          "summary": "Aucun joueur du Real Madrid ne s'est exprimé devant les médias après la défaite 2-1 contre l'Atlético de Madrid au Metropolitano. Courtois s'est néanmoins exprimé sur la rencontre.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El mensaje de Courtois tras el derbi",
-          "summary": "Ningún jugador del Real Madrid atendió a los medios de comunicación tras la derrota en el Metropolitano ante el Atlético de Madrid (2-1) . A pesar de eso, Courtois sí que se pronunció sobre ese encuentro.",
-          "needs_translation": true
+          "title": "رسالة كورتوا بعد الديربي",
+          "summary": "لم يُدلِ أي لاعب من ريال مدريد بتصريحات إعلامية عقب الخسارة بنتيجة 2-1 أمام أتلتيكو مدريد في ميتروبوليتانو، باستثناء حارس المرمى كورتوا الذي علّق على المواجهة.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260921/1004229641/mensaje-courtois-derbi.html",
@@ -1973,7 +2067,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260921/1004229641/mensaje-courtois-derbi.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "85e2001dc347",
@@ -2029,23 +2128,27 @@
       "i18n": {
         "es": {
           "title": "El árbitro revisó la entrada de Cuti Romero por confusión de identidad",
-          "summary": "Miguel Ángel Ortiz, árbitro del derbi entre el Atlético de Madrid y el Real Madrid en el estadio Metropolitano, revisó este domingo la entrada de Cristian ‘Cuti’ Romero a Jude Bellingham por “confusión de identidad”, no por si era tarjeta roja, y expulsó a Dean Huijsen p orque…",
-          "needs_translation": false
+          "summary": "En el derbi entre el Atlético de Madrid y el Real Madrid en el Metropolitano, Miguel Ángel Ortiz revisó la falta de Cuti Romero sobre Jude Bellingham por confusión de identidad y expulsó a Dean Huijsen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "El árbitro revisó la entrada de Cuti Romero por confusión de identidad",
-          "summary": "Miguel Ángel Ortiz, árbitro del derbi entre el Atlético de Madrid y el Real Madrid en el estadio Metropolitano, revisó este domingo la entrada de Cristian ‘Cuti’ Romero a Jude Bellingham por “confusión de identidad”, no por si era tarjeta roja, y expulsó a Dean Huijsen p orque…",
-          "needs_translation": true
+          "title": "The referee reviewed Cuti Romero's tackle due to mistaken identity",
+          "summary": "During the derby between Atlético de Madrid and Real Madrid at the Metropolitano, referee Miguel Ángel Ortiz reviewed Cuti Romero's tackle on Jude Bellingham for mistaken identity, ultimately sending off Dean Huijsen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "El árbitro revisó la entrada de Cuti Romero por confusión de identidad",
-          "summary": "Miguel Ángel Ortiz, árbitro del derbi entre el Atlético de Madrid y el Real Madrid en el estadio Metropolitano, revisó este domingo la entrada de Cristian ‘Cuti’ Romero a Jude Bellingham por “confusión de identidad”, no por si era tarjeta roja, y expulsó a Dean Huijsen p orque…",
-          "needs_translation": true
+          "title": "L'arbitre a revu le tacle de Cuti Romero pour confusion d'identité",
+          "summary": "Lors du derby entre l'Atlético de Madrid et le Real Madrid au Metropolitano, Miguel Ángel Ortiz a réexaminé le tacle de Cuti Romero sur Jude Bellingham pour confusion d'identité, puis a expulsé Dean Huijsen.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "El árbitro revisó la entrada de Cuti Romero por confusión de identidad",
-          "summary": "Miguel Ángel Ortiz, árbitro del derbi entre el Atlético de Madrid y el Real Madrid en el estadio Metropolitano, revisó este domingo la entrada de Cristian ‘Cuti’ Romero a Jude Bellingham por “confusión de identidad”, no por si era tarjeta roja, y expulsó a Dean Huijsen p orque…",
-          "needs_translation": true
+          "title": "الحكم يراجع تدخّل كوتي روميرو بسبب التباس في الهوية",
+          "summary": "راجع الحكم ميغيل أنخيل أورتيز تدخل كوتي روميرو على جود بيلينغهام بداعي الالتباس في تحديد الهوية خلال ديربي أتلتيكو مدريد وريال مدريد في ملعب ميتروبوليتانو، وطرد دين هويسين.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260921/1004229637/arbitro-reviso-entrada-cuti-romero-confusion-identidad-no-roja.html",
@@ -2067,7 +2170,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260921/1004229637/arbitro-reviso-entrada-cuti-romero-confusion-identidad-no-roja.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "28d59abe939f",
@@ -2075,24 +2183,44 @@
       "summary": "Revenus aux alentours de 2h30 du matin de Marseille après leur match au Vélodrome dimanche soir, les joueurs du PSG ont été chaudement accueillis par leurs supporters à l'aéroport pour célébrer la victoire sur le rival.",
       "i18n": {
         "fr": {
-          "title": "Un sacré accueil : les joueurs du PSG ont été reçus avec des chants et des fumigènes à leur retour à Paris dans la nuit",
-          "summary": "Revenus aux alentours de 2h30 du matin de Marseille après leur match au Vélodrome dimanche soir, les joueurs du PSG ont été chaudement accueillis par leurs supporters à l'aéroport pour célébrer la victoire sur le rival.",
-          "needs_translation": false
+          "title": "Accueil enflammé pour le PSG à son retour de Marseille",
+          "summary": "Les supporters du Paris Saint-Germain ont fêté leurs joueurs au milieu de la nuit à l'aéroport après le succès glané à Marseille.",
+          "body": [
+            "Posé vers 2h30 du matin après le choc disputé dimanche soir au Vélodrome, l'effectif parisien a retrouvé un groupe de fans venu donner de la voix. Chants et fumigènes ont illuminé la nuit pour célébrer cette victoire face au rival olympien."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Un sacré accueil : les joueurs du PSG ont été reçus avec des chants et des fumigènes à leur retour à Paris dans la nuit",
-          "summary": "Revenus aux alentours de 2h30 du matin de Marseille après leur match au Vélodrome dimanche soir, les joueurs du PSG ont été chaudement accueillis par leurs supporters à l'aéroport pour célébrer la victoire sur le rival.",
-          "needs_translation": true
+          "title": "Fiery airport welcome for PSG after victory in Marseille",
+          "summary": "Paris Saint-Germain supporters turned out in the middle of the night at the airport to celebrate their squad following the win in Marseille.",
+          "body": [
+            "Touching down around 2:30 a.m. after Sunday night's clash at the Vélodrome, the Parisian squad was greeted by a crowd of vocal fans. Flares and chants lit up the night to celebrate the derby triumph over their arch-rivals."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Un sacré accueil : les joueurs du PSG ont été reçus avec des chants et des fumigènes à leur retour à Paris dans la nuit",
-          "summary": "Revenus aux alentours de 2h30 du matin de Marseille après leur match au Vélodrome dimanche soir, les joueurs du PSG ont été chaudement accueillis par leurs supporters à l'aéroport pour célébrer la victoire sur le rival.",
-          "needs_translation": true
+          "title": "Recibimiento por todo lo alto para el PSG tras asaltar Marseille",
+          "summary": "La hinchada del Paris Saint-Germain esperó a su equipo de madrugada en el aeropuerto para festejar la victoria lograda en Marseille.",
+          "body": [
+            "Tras aterrizar sobre las 2:30 de la madrugada después del duelo del domingo en el Vélodrome, el plantel parisino fue recibido por un grupo de aficionados entregados. Cánticos y bengalas iluminaron la noche para celebrar el triunfo frente al eterno rival."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Un sacré accueil : les joueurs du PSG ont été reçus avec des chants et des fumigènes à leur retour à Paris dans la nuit",
-          "summary": "Revenus aux alentours de 2h30 du matin de Marseille après leur match au Vélodrome dimanche soir, les joueurs du PSG ont été chaudement accueillis par leurs supporters à l'aéroport pour célébrer la victoire sur le rival.",
-          "needs_translation": true
+          "title": "استقبال حاشد للاعبي باريس سان جيرمان بعد العودة من مارسيليا",
+          "summary": "احتشدت جماهير باريس سان جيرمان في المطار في منتصف الليل للاحتفال بلاعبيها إثر الفوز الثمين في مارسيليا.",
+          "body": [
+            "وفور هبوط الطائرة قرابة الساعة 2:30 فجراً بعد قمة ليلة الأحد على ملعب فيلودروم، وجد لاعبو العاصمة في استقبالهم جمعاً من الأنصار المتحمسين. وأشعلت الهتافات والألعاب النارية أجواء الليل احتفاءً بالانتصار على الغريم التقليدي."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Un-sacre-accueil-les-joueurs-du-psg-ont-ete-recus-avec-des-chants-et-des-fumigenes-a-leur-retour-a-paris-dans-la-nuit/1720249#at_medium=RSS_feeds",
@@ -2114,7 +2242,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Un-sacre-accueil-les-joueurs-du-psg-ont-ete-recus-avec-des-chants-et-des-fumigenes-a-leur-retour-a-paris-dans-la-nuit/1720249#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-21T14:34:00+00:00"
+        }
+      }
     },
     {
       "id": "a9d499f0e7f9",
@@ -2123,23 +2264,27 @@
       "i18n": {
         "fr": {
           "title": "Yankuba Minteh : Liverpool de retour à la charge pour le milieu gambien ?",
-          "summary": "Après avoir vu son transfert échouer durant le dernier mercato estival, Liverpool pourrait de nouveau tenter sa chance pour Yankuba Minteh.",
-          "needs_translation": false
+          "summary": "Après l'échec de son transfert l'été dernier, Liverpool pourrait relancer les négociations pour recruter le milieu gambien Yankuba Minteh.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Yankuba Minteh : Liverpool de retour à la charge pour le milieu gambien ?",
-          "summary": "Après avoir vu son transfert échouer durant le dernier mercato estival, Liverpool pourrait de nouveau tenter sa chance pour Yankuba Minteh.",
-          "needs_translation": true
+          "title": "Yankuba Minteh: Liverpool back in pursuit of the Gambian midfielder?",
+          "summary": "Following an unsuccessful move last summer, Liverpool could make a fresh attempt to sign Gambian midfielder Yankuba Minteh.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Yankuba Minteh : Liverpool de retour à la charge pour le milieu gambien ?",
-          "summary": "Après avoir vu son transfert échouer durant le dernier mercato estival, Liverpool pourrait de nouveau tenter sa chance pour Yankuba Minteh.",
-          "needs_translation": true
+          "title": "Yankuba Minteh: ¿Liverpool vuelve a la carga por el centrocampista gambiano?",
+          "summary": "Tras frustrarse su fichaje el pasado verano, Liverpool podría intentar de nuevo la contratación del centrocampista gambiano Yankuba Minteh.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Yankuba Minteh : Liverpool de retour à la charge pour le milieu gambien ?",
-          "summary": "Après avoir vu son transfert échouer durant le dernier mercato estival, Liverpool pourrait de nouveau tenter sa chance pour Yankuba Minteh.",
-          "needs_translation": true
+          "title": "يانكوبا مينتيه: هل يجدد ليفربول اهتمامه بضم لاعب الوسط الغامبي؟",
+          "summary": "قد يجدد ليفربول محاولاته للتعاقد مع لاعب الوسط الغامبي يانكوبا مينتيه، بعد فشل إتمام صفقته في سوق الانتقالات الصيفية الماضية.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football-europe/yankuba-minteh-liverpool-de-retour-a-la-charge-pour-le-milieu-gambien/",
@@ -2161,7 +2306,12 @@
           "url": "https://africatopsports.com/football-europe/yankuba-minteh-liverpool-de-retour-a-la-charge-pour-le-milieu-gambien/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "68a44728c7e2",
@@ -2216,24 +2366,28 @@
       "summary": "El Real Madrid cayó ayer (2-1) en el derbi madrileño contra el Atlético de Madrid .",
       "i18n": {
         "es": {
-          "title": "Álvaro Benito, muy tajante sobre el problema del Real Madrid: \"La reflexión es mucho más profunda\"",
-          "summary": "El Real Madrid cayó ayer (2-1) en el derbi madrileño contra el Atlético de Madrid .",
-          "needs_translation": false
+          "title": "Álvaro Benito, tajante sobre el problema del Real Madrid: \"La reflexión es mucho más profunda\"",
+          "summary": "Tras la derrota del Real Madrid por 2-1 ante el Atlético de Madrid en el derbi madrileño, Álvaro Benito señaló que los problemas del equipo requieren un análisis mucho más profundo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Álvaro Benito, muy tajante sobre el problema del Real Madrid: \"La reflexión es mucho más profunda\"",
-          "summary": "El Real Madrid cayó ayer (2-1) en el derbi madrileño contra el Atlético de Madrid .",
-          "needs_translation": true
+          "title": "Álvaro Benito blunt on Real Madrid's problem: \"The reflection is much deeper\"",
+          "summary": "Following Real Madrid's 2-1 defeat against Atlético de Madrid in the Madrid derby, Álvaro Benito stated that the team's underlying issues require a much deeper reflection.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Álvaro Benito, muy tajante sobre el problema del Real Madrid: \"La reflexión es mucho más profunda\"",
-          "summary": "El Real Madrid cayó ayer (2-1) en el derbi madrileño contra el Atlético de Madrid .",
-          "needs_translation": true
+          "title": "Álvaro Benito catégorique sur le problème du Real Madrid : « La réflexion est bien plus profonde »",
+          "summary": "Après la défaite du Real Madrid 2-1 face à l'Atlético de Madrid dans le derby madrilène, Álvaro Benito a estimé que les problèmes de l'équipe nécessitaient une analyse bien plus profonde.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Álvaro Benito, muy tajante sobre el problema del Real Madrid: \"La reflexión es mucho más profunda\"",
-          "summary": "El Real Madrid cayó ayer (2-1) en el derbi madrileño contra el Atlético de Madrid .",
-          "needs_translation": true
+          "title": "ألفارو بينيتو حاسم بشأن مشكلة ريال مدريد: \"المراجعة أعمق بكثير\"",
+          "summary": "عقب خسارة ريال مدريد أمام أتلتيكو مدريد بنتيجة 2-1 في ديربي العاصمة، صرح ألفارو بينيتو بأن أزمة الفريق تتطلب تحليلاً ومراجعة أعمق بكثير.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/laliga/20260921/1004229630/alvaro-benito-tajante-sobre-verdadero-problema-real-madrid-reflexion-profunda.html",
@@ -2255,7 +2409,12 @@
           "url": "https://www.mundodeportivo.com/futbol/laliga/20260921/1004229630/alvaro-benito-tajante-sobre-verdadero-problema-real-madrid-reflexion-profunda.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5202283d3bcf",
@@ -2302,7 +2461,12 @@
           "url": "https://africatopsports.com/afrique-football/elim-can-2027-la-billetterie-algerie-zambie-ouvre-ce-lundi/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     }
   ]
 }
