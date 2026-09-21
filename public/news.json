@@ -216,27 +216,44 @@
       "summary": "Le PSG a décidé de maintenir l'exclusion des Parias Cohortis, groupe de supporters du Collectif Ultras Paris. Ils n'auront plus accès à la tribune Auteuil du Parc des Princes et ne pourront plus suivre le club lors des déplacements.",
       "i18n": {
         "fr": {
-          "title": "Les Parias Cohortis, groupe d'ultras du PSG, définitivement exclus du Parc",
-          "summary": "Le PSG a décidé de maintenir l'exclusion des Parias Cohortis, groupe de supporters du Collectif Ultras Paris. Ils n'auront plus accès à la tribune Auteuil du Parc des Princes et ne pourront plus suivre le club lors des déplacements.",
-          "needs_translation": false
+          "title": "PSG : exclusion définitive pour le groupe d'ultras Parias Cohortis",
+          "summary": "Le Paris Saint-Germain a acté l'exclusion définitive des Parias Cohortis, affiliés au Collectif Ultras Paris, désormais bannis du Parc des Princes.",
+          "body": [
+            "La direction parisienne a choisi de maintenir la sanction visant cette composante du CUP. La mesure prive directement ses membres de la tribune Auteuil et leur interdit également d'accompagner l'équipe lors des déplacements."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "The Parias Cohortis, a group of PSG ultras, permanently excluded from the Park",
-          "summary": "PSG has decided to uphold the ban on the Parias Cohortis, a supporters&#39; group within the Collectif Ultras Paris. They will no longer have access to the Auteuil stand at the Parc des Princes and will be barred from traveling to away matches.",
+          "title": "PSG: Parias Cohortis ultras permanently banned",
+          "summary": "Paris Saint-Germain have confirmed the permanent exclusion of Parias Cohortis, affiliated with the Collectif Ultras Paris, who are now banned from the Parc des Princes.",
+          "body": [
+            "Club management decided to uphold the ban targeting this CUP branch. The measure bars members from the Auteuil stand and forbids them from attending away matches."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Les Parias Cohortis, grupo de ultras del PSG, definitivamente excluidos del Parque",
-          "summary": "El PSG ha decidido mantener la prohibición impuesta a las Cohortes Parias, un grupo de aficionados perteneciente al Collectif Ultras Paris. Ya no tendrán acceso a la tribuna Auteuil del Parque de los Príncipes y se les prohibirá viajar a los partidos fuera de casa.",
+          "title": "El PSG expulsa de forma definitiva a los ultras de Parias Cohortis",
+          "summary": "El Paris Saint-Germain ha ratificado la expulsión definitiva de Parias Cohortis, facción integrada en el Collectif Ultras Paris, que no volverá al Parc des Princes.",
+          "body": [
+            "La directiva parisina optó por mantener el castigo aplicado a esta rama del CUP. La sanción aparta a sus miembros de la grada Auteuil y les prohíbe desplazarse con el equipo en los partidos fuera de casa."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "تم استبعاد Parias Cohortis، وهي مجموعة من ألتراس PSG، بشكل دائم من الحديقة",
-          "summary": "قرر PSG الحفاظ على استبعاد Parias Cohortis، وهي مجموعة من مؤيدي Collectif Ultras Paris. لن يتمكنوا بعد الآن من الوصول إلى منصة Auteuil في Parc des Princes ولن يتمكنوا بعد الآن من متابعة النادي عند السفر.",
+          "title": "باريس سان جيرمان يستبعد مجموعة باريا كوهورتيس نهائياً",
+          "summary": "أقر نادي باريس سان جيرمان الاستبعاد النهائي لمجموعة باريا كوهورتيس التابعة لرابطة كوليكتيف ألتراس باريس، مانعاً أعضاءها من دخول ملعب بارك دي برانس.",
+          "body": [
+            "وقررت إدارة النادي تثبيت العقوبة المفروضة على هذه الفئة، ما يحرم أفرادها من مدرج أوتوي، إلى جانب منعهم من مرافقة الفريق خلال المباريات الخارجية."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Les-parias-cohortis-groupe-d-ultras-du-psg-definitivement-exclus-du-parc/1720433#at_medium=RSS_feeds",
@@ -258,7 +275,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Les-parias-cohortis-groupe-d-ultras-du-psg-definitivement-exclus-du-parc/1720433#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-21T23:12:19+00:00"
+        }
+      }
     },
     {
       "id": "ed60e3924e7e",
@@ -358,7 +388,12 @@
           "url": "https://africatopsports.com/football/argentine-messi-a-49-buts-de-ronaldo-avant-le-match-contre-le-burkina-faso-et-le-benin/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "1a42e6a9eec8",
@@ -366,27 +401,28 @@
       "summary": "Le président de la FIFA, Gianni Infantino, se dit ouvert à des discussions sur les réformes au sein de l'instance dirigeante du football mondial. The post FIFA : Infantino envoie une lettre au 211 Fédérations appeared first on Africa Top Sports .",
       "i18n": {
         "fr": {
-          "title": "FIFA : Infantino envoie une lettre au 211 Fédérations",
-          "summary": "Le président de la FIFA, Gianni Infantino, se dit ouvert à des discussions sur les réformes au sein de l'instance dirigeante du football mondial. The post FIFA : Infantino envoie une lettre au 211 Fédérations appeared first on Africa Top Sports .",
-          "needs_translation": false
+          "title": "FIFA : Infantino envoie une lettre aux 211 fédérations",
+          "summary": "Le président de la FIFA, Gianni Infantino, a adressé une lettre aux 211 fédérations membres pour se dire ouvert à des discussions sur des réformes de l'instance mondiale.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "FIFA: Infantino sends a letter to 211 Federations",
-          "summary": "FIFA President Gianni Infantino says he is open to discussions on reforms within the world football governing body. The post FIFA: Infantino sends a letter to 211 Federations appeared first on Africa Top Sports .",
+          "title": "FIFA: Infantino sends letter to 211 federations",
+          "summary": "FIFA president Gianni Infantino has sent a letter to the 211 member associations, expressing openness to discussions on reforms within world football's governing body.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "FIFA: Infantino envía una carta al 211 Federaciones",
-          "summary": "El presidente de la FIFA, Gianni Infantino, se declara abierto a las discusiones sobre las reformas en el seno del organismo rector del fútbol mundial. The post FIFA: Infantino envía una carta al 211 Federaciones appeared first on Africa Top Sports .",
+          "title": "FIFA: Infantino envía una carta a las 211 federaciones",
+          "summary": "El presidente de la FIFA, Gianni Infantino, envió una carta a las 211 asociaciones miembro manifestando su disposición a dialogar sobre reformas en el organismo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "FIFA: إنفانتينو يرسل خطابًا إلى 211 اتحادًا",
-          "summary": "أعلن رئيس الاتحاد الدولي لكرة القدم (فيفا)، جياني إنفانتينو، استعداده لمناقشة الإصلاحات داخل الهيئة الإدارية لكرة القدم العالمية. نُشر هذا الخبر لأول مرة على موقع &quot;أفريكا توب سبورتس&quot;.",
+          "title": "الفيفا: إنفانتينو يوجه رسالة إلى 211 اتحاداً",
+          "summary": "وجه رئيس الاتحاد الدولي لكرة القدم (فيفا)، جياني إنفانتينو، رسالة إلى الاتحادات الـ211 الأعضاء، مبدياً استعداده لمناقشة إصلاحات داخل الهيئة الحاكمة لكرة القدم العالمية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://africatopsports.com/football/fifa-infantino-envoie-une-lettre-au-211-federations/",
@@ -408,7 +444,12 @@
           "url": "https://africatopsports.com/football/fifa-infantino-envoie-une-lettre-au-211-federations/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5e531bd18f7d",
@@ -467,26 +508,27 @@
       "i18n": {
         "fr": {
           "title": "FIFA : Gianni Infantino propose aux fédérations membres une consultation pour réformer la gouvernance de l’instance",
-          "summary": "Compte tenu de la crise que connaît la fédération internationale, son président souhaite impliquer largement les acteurs du football mondial dans la réflexion sur l’avenir de l’organisation.",
-          "needs_translation": false
+          "summary": "Face à la crise que traverse la FIFA, Gianni Infantino souhaite lancer une vaste consultation auprès des fédérations membres afin de réformer la gouvernance de l'organisation.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "FIFA: Gianni Infantino offers member federations a consultation to reform the governance of the body",
-          "summary": "Given the crisis facing the international federation, its president wishes to broadly involve the actors of world football in the reflection on the future of the organization.",
+          "title": "FIFA: Gianni Infantino proposes consultation with member associations to reform governance",
+          "summary": "In response to the crisis within FIFA, Gianni Infantino has proposed a consultation with member associations to reform the governing body's governance.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "FIFA: Gianni Infantino propone a las federaciones miembro una consulta para reformar la gobernanza de la instancia",
-          "summary": "Dada la crisis que atraviesa la federación internacional, su presidente desea involucrar ampliamente a los actores del fútbol mundial en la reflexión sobre el futuro de la organización.",
+          "title": "FIFA: Gianni Infantino propone a las federaciones miembro una consulta para reformar la gobernanza",
+          "summary": "Ante la crisis que atraviesa la FIFA, Gianni Infantino ha propuesto una consulta a las federaciones miembro para reformar la gobernanza del organismo.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "FIFA: جياني إنفانتينو يقدم للاتحادات الأعضاء استشارة لإصلاح حوكمة الهيئة",
-          "summary": "بالنظر إلى الأزمة التي تواجه الاتحاد الدولي، يرغب رئيسه في إشراك الجهات الفاعلة في كرة القدم العالمية على نطاق واسع في التفكير في مستقبل المنظمة.",
+          "title": "فيفا: جياني إنفانتينو يقترح استشارة الاتحادات الأعضاء لإصلاح حوكمة الهيئة",
+          "summary": "على خلفية الأزمة التي يمر بها الاتحاد الدولي لكرة القدم، اقترح رئيسه جياني إنفانتينو إطلاق مشاورات مع الاتحادات الأعضاء لإصلاح حوكمة المنظمة ورسم مستقبلها.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lemonde.fr/sport/article/2026/09/21/fifa-gianni-infantino-propose-aux-federations-membres-une-consultation-pour-reformer-la-gouvernance-de-l-instance_6779343_3242.html",
@@ -508,7 +550,12 @@
           "url": "https://www.lemonde.fr/sport/article/2026/09/21/fifa-gianni-infantino-propose-aux-federations-membres-une-consultation-pour-reformer-la-gouvernance-de-l-instance_6779343_3242.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "98e7aec85f87",
@@ -566,27 +613,48 @@
       "summary": "Javier Tebas se refirió a toda la polémica arbitral que tuvo lugar en el derbi del Metropolitano y criticó la campaña del Real Madrid contra los colegiados.",
       "i18n": {
         "es": {
-          "title": "Tebas, contundente con las quejas del Madrid: \"No perdió el derbi por esas jugadas\"",
-          "summary": "Javier Tebas se refirió a toda la polémica arbitral que tuvo lugar en el derbi del Metropolitano y criticó la campaña del Real Madrid contra los colegiados.",
-          "needs_translation": false
+          "title": "Tebas carga contra las protestas del Real Madrid tras el derbi",
+          "summary": "Javier Tebas rechazó las quejas del Real Madrid por el arbitraje del derbi y denunció la presión de su televisión oficial contra los colegiados.",
+          "body": [
+            "El presidente de LaLiga descartó que el conjunto blanco cayera en el Metropolitano por las decisiones polémicas. Al analizar las acciones reclamadas, Tebas defendió que la entrada de Cuti Romero sobre Jude Bellingham no merecía expulsión porque tocó antes el balón, mientras que admitió que la falta de Kang-in Lee a Fede Valverde fue una jugada tan rápida que admitía ambas interpretaciones.",
+            "El mandatario aprovechó el episodio para arremeter contra la postura pública de la entidad madridista y sus vídeos hacia los árbitros. Recordó que LaLiga ya denunció la conducta de Real Madrid TV y calificó esa campaña mediática como un método cruel e injusto para condicionar al estamento arbitral."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Thebes, blunt with Madrid's complaints: \"He didn't lose the derby because of those plays\"",
-          "summary": "Javier Tebas referred to all the refereeing controversy that took place in the Metropolitan derby and criticized Real Madrid's campaign against the referees.",
+          "title": "Tebas hits out at Real Madrid complaints following derby defeat",
+          "summary": "Javier Tebas dismissed Real Madrid's grievances over the derby officiating and slammed the club's official channel for putting pressure on referees.",
+          "body": [
+            "The LaLiga president rejected the idea that refereeing decisions cost Real Madrid the match at the Metropolitano. Breaking down the disputed incidents, Tebas argued that Cuti Romero's challenge on Jude Bellingham was not a red card as he got the ball first, while conceding that Kang-in Lee's foul on Fede Valverde was fast-paced enough to justify either call.",
+            "The league chief went on to attack the Spanish giants' public stance and their recurring video attacks on match officials. He pointed out that LaLiga had already filed a complaint over Real Madrid TV's broadcasts, branding the campaign a cruel and unfair attempt to intimidate referees."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Thèbes, catégorique avec les plaintes du Madrid : « Il n'a pas perdu le derby à cause de ces coups »",
-          "summary": "Javier Tebas s'est référé à toute la controverse arbitrale qui a eu lieu dans le derby du Metropolitano et a critiqué la campagne du Real Madrid contre les collégiens.",
+          "title": "Tebas fustige la colère du Real Madrid après le derby",
+          "summary": "Javier Tebas a balayé les réclamations arbitrales du Real Madrid après le derby, dénonçant au passage la pression exercée par la chaîne officielle du club sur les arbitres.",
+          "body": [
+            "Le président de LaLiga refuse d'imputer la défaite des Merengues au Metropolitano à l'arbitrage. Revenant sur les actions contestées, Tebas a jugé que le tacle de Cuti Romero sur Jude Bellingham ne méritait pas d'expulsion puisqu'il touche d'abord le ballon, tout en reconnaissant que la faute de Kang-in Lee sur Fede Valverde s'est jouée à une vitesse telle que les deux décisions s'entendaient.",
+            "Le dirigeant a saisi l'occasion pour s'en prendre frontalement à la communication madrilène et à ses vidéos ciblant les arbitres. Il a rappelé que LaLiga avait déjà porté plainte contre les pratiques de Real Madrid TV, qualifiant cette campagne de manœuvre cruelle et injuste visant à déstabiliser le corps arbitral."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "طيبة، صريحة مع شكاوى مدريد: \"لم يخسر الدربي بسبب تلك المسرحيات\"",
-          "summary": "أشار خافيير تيباس إلى كل الجدل الحكمي الذي حدث في ديربي المتروبوليتان وانتقد حملة ريال مدريد ضد الحكام.",
+          "title": "تيباس يهاجم احتجاجات ريال مدريد بعد الديربي",
+          "summary": "رفض خافيير تيباس شكاوى ريال مدريد من التحكيم في الديربي، منددًا بالضغوط التي تمارسها القناة الرسمية للنادي على الحكام.",
+          "body": [
+            "استبعد رئيس رابطة الدوري الإسباني أن تكون القرارات الجدلية وراء سقوط الملكي في ملعب ميتروبوليتانو. وخلال تحليله للكرات المثيرة للجدل، أكد تيباس أن تدخّل كوتي روميرو على جود بيلينغهام لم يكن يستحق الطرد للمسه الكرة أولًا، في حين اعترف بأن مخالفة كانغ إن لي ضد فيدي فالفيردي حدثت بسرعة فائقة تجعل اللقطة قابلة للتأويلين.",
+            "واستغل المسؤول الواقعة ليشن هجومًا حادًا على الخطاب العلني لإدارة ريال مدريد ومقاطع الفيديو التي تستهدف قضاة الملاعب، مذكّرًا بأن الرابطة قدّمت بالفعل شكوى ضد سلوك قناة ريال مدريد ومصفًا تلك الحملة بالأسلوب القاسي وغير العادل للضغط على طواقم التحكيم."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260921/1004229933/tebas-contundente-quejas-madrid-no-perdio-derbi-jugadas.html",
@@ -608,7 +676,20 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260921/1004229933/tebas-contundente-quejas-madrid-no-perdio-derbi-jugadas.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-21T23:12:21+00:00"
+        }
+      }
     },
     {
       "id": "2218f1dee10c",
@@ -617,26 +698,27 @@
       "i18n": {
         "es": {
           "title": "El desafío que Arruabarrena le planteó a Lautaro Blanco, uno de sus intocables en Boca",
-          "summary": "El Vasco destacó el crecimiento del lateral izquierdo, reveló el trabajo especial que hacen con él y le puso una nueva meta para seguir creciendo en el 11 del Xeneize.",
-          "needs_translation": false
+          "summary": "Arruabarrena elogió la evolución de Lautaro Blanco en Boca, reveló los trabajos específicos que realiza con el lateral izquierdo y le fijó un nuevo objetivo para seguir consolidándose como titular.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The challenge that Arruabarrena posed to Lautaro Blanco, one of his untouchables in Boca",
-          "summary": "The Vasco highlighted the growth of the left back, revealed the special work they do with him and set a new goal to continue growing in the 11th of Xeneize.",
+          "title": "The challenge Arruabarrena set for Lautaro Blanco, one of his untouchables at Boca",
+          "summary": "Arruabarrena praised the development of left-back Lautaro Blanco at Boca, detailing specific training work done with him and setting a new objective to continue his growth in the starting lineup.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le défi qu'Arruabarrena a lancé à Lautaro Blanco, l'un de ses intouchables à Boca",
-          "summary": "Le Vasco a souligné la croissance du latéral gauche, a révélé le travail spécial qu'ils font avec lui et lui a fixé un nouvel objectif pour continuer à grandir dans le 11 du Xeneize.",
+          "title": "Le défi lancé par Arruabarrena à Lautaro Blanco, l'un de ses intouchables à Boca",
+          "summary": "Arruabarrena a salué la progression de Lautaro Blanco à Boca, détaillant le travail spécifique mené avec le latéral gauche et lui fixant un nouvel objectif pour continuer de s'imposer comme titulaire.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "التحدي الذي فرضه أروبارينا على لوتارو بلانكو، أحد المنبوذين في بوكا",
-          "summary": "سلط فاسكو الضوء على نمو الظهير الأيسر، وكشف عن العمل الخاص الذي يقومون به معه ووضع هدفًا جديدًا لمواصلة النمو في الحادي عشر من زينيز.",
+          "title": "التحدي الذي وضعه أروابارينا أمام لاوتارو بلانكو، أحد ركائز بوكا جونيورز",
+          "summary": "أشاد أروابارينا بتطور الظهير الأيسر لاوتارو بلانكو في بوكا جونيورز، كاشفاً عن خضوعه لتدريبات خاصة ومحدداً له هدفاً جديداً لمواصلة تعزيز مكانته في التشكيلة الأساسية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/lautaro-blanco-desafio-rodolfo-arruabarrena-gol-boca_0_nPt7MwUHAK.html",
@@ -658,7 +740,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/lautaro-blanco-desafio-rodolfo-arruabarrena-gol-boca_0_nPt7MwUHAK.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "1c0da823b620",
@@ -767,26 +854,27 @@
       "i18n": {
         "fr": {
           "title": "Après le début de saison en Ligue 1, quels sont les tops et flops du mercato, club par club ?",
-          "summary": "Il est difficile de juger après seulement cinq matches maximum, sachant que certaines d'entre elles sont arrivées en fin de mercato et en comptent logiquement moins. Mais depuis le début de saison, des recrues ont déjà donné satisfaction.",
-          "needs_translation": false
+          "summary": "Après au maximum cinq journées de Ligue 1, un premier bilan évalue les réussites et les échecs du mercato estival pour chaque club, malgré des temps de jeu encore inégaux.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "After the start of the season in Ligue 1, what are the tops and flops of the market, club by club?",
-          "summary": "It is difficult to judge after only five matches maximum, knowing that some of them have reached the end of the transfer window and logically count less. But since the beginning of the season, recruits have already given satisfaction.",
+          "title": "After the start of the Ligue 1 season, who are the transfer hits and flops, club by club?",
+          "summary": "After up to five Ligue 1 matchdays, an initial assessment reviews the hits and flops of the summer transfer window club by club, despite varying playing time among new signings.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Después del comienzo de la temporada en la Ligue 1, ¿cuáles son los tops y los flops del mercado, club por club?",
-          "summary": "Es difícil juzgar después de solo cinco partidos como máximo, sabiendo que algunos de ellos han llegado al final de la ventana de transferencia y, lógicamente, cuentan menos. Pero desde el comienzo de la temporada, los reclutas ya han dado satisfacción.",
+          "title": "Tras el inicio de temporada en la Ligue 1, ¿cuáles son los aciertos y fracasos del mercado, club por club?",
+          "summary": "Tras un máximo de cinco jornadas de Ligue 1, un primer balance analiza los fichajes más destacados y los que decepcionan en cada club, pese al dispar rodaje de los recién llegados.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "بعد بداية الموسم في دوري الدرجة الأولى الفرنسي، ما هي قمم وأخفاق السوق، نادي تلو الآخر ؟",
-          "summary": "من الصعب الحكم بعد خمس مباريات فقط كحد أقصى، مع العلم أن بعضها قد وصل إلى نهاية فترة الانتقالات والعد المنطقي أقل. ولكن منذ بداية الموسم، أعطى المجندون بالفعل الرضا.",
+          "title": "بعد انطلاق الموسم في الدوري الفرنسي، من أبرز الصفقات الناجحة والفاشلة في الميركاتو لكل نادٍ؟",
+          "summary": "بعد مرور خمس جولات كحد أقصى من الدوري الفرنسي، يقدم تقرير أولي تقييماً لمردود صفقات الميركاتو الصيفي لكل نادٍ، على الرغم من تفاوت دقائق اللعب بين الوافدين الجدد.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Apres-le-debut-de-saison-en-ligue-1-quels-sont-les-tops-et-flops-du-mercato-club-par-club/1720411#at_medium=RSS_feeds",
@@ -808,7 +896,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Apres-le-debut-de-saison-en-ligue-1-quels-sont-les-tops-et-flops-du-mercato-club-par-club/1720411#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3db8595197d5",
@@ -908,7 +1001,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260921/1004229918/alexander-isak-reivindica.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "011bf497a3df",
@@ -956,7 +1054,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260921/1004229916/desolador-dato-deja-ridiculo-madrid-mou.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3558dda9ef18",
@@ -1011,29 +1114,54 @@
       "summary": "Fünf Jahre lang war der am Samstag verstorbene Peter Hermann Assistent von Jupp Heynckes. Mit bewegenden Worten nimmt der Triple-Trainer des FC Bayern im kicker Abschied von seinem Weggefährten und gibt sehr persönliche Einblicke in ihre Beziehung.",
       "i18n": {
         "de": {
-          "title": "\"Brüder im Geiste\": Heynckes' berührende Worte für verstorbenen Freund Hermann",
-          "summary": "Fünf Jahre lang war der am Samstag verstorbene Peter Hermann Assistent von Jupp Heynckes. Mit bewegenden Worten nimmt der Triple-Trainer des FC Bayern im kicker Abschied von seinem Weggefährten und gibt sehr persönliche Einblicke in ihre Beziehung.",
-          "needs_translation": false
+          "title": "Heynckes trauert um Weggefährten Peter Hermann",
+          "summary": "Nach dem Tod seines langjährigen Co-Trainers Peter Hermann nimmt Jupp Heynckes mit tief bewegenden Worten Abschied von seinem engen Vertrauten.",
+          "body": [
+            "Fünf Jahre lang arbeiteten beide eng zusammen, unter anderem beim historischen Triple des FC Bayern. Im Fachmagazin kicker erinnert sich Heynckes nun an den am Samstag verstorbenen Fußballlehrer, bezeichnet ihn als Seelenverwandten und schildert die außergewöhnlich persönliche Bindung, die weit über das Sportliche hinausreichte."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "\"Brüder im Geiste\": Heynckes' berührende Worte für verstorbenen Freund Hermann",
-          "summary": "Fünf Jahre lang war der am Samstag verstorbene Peter Hermann Assistent von Jupp Heynckes. Mit bewegenden Worten nimmt der Triple-Trainer des FC Bayern im kicker Abschied von seinem Weggefährten und gibt sehr persönliche Einblicke in ihre Beziehung.",
-          "needs_translation": true
+          "title": "Heynckes mourns passing of trusted assistant Peter Hermann",
+          "summary": "Following the death of his long-time assistant Peter Hermann, Jupp Heynckes has paid an emotional tribute to his closest confidant.",
+          "body": [
+            "The pair worked side by side for five years, highlighted by FC Bayern's historic treble-winning campaign. Speaking to kicker magazine, Heynckes looked back warmly on the coach who passed away on Saturday, describing him as a soulmate and detailing a profound personal bond that extended far beyond football."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "\"Brüder im Geiste\": Heynckes' berührende Worte für verstorbenen Freund Hermann",
-          "summary": "Fünf Jahre lang war der am Samstag verstorbene Peter Hermann Assistent von Jupp Heynckes. Mit bewegenden Worten nimmt der Triple-Trainer des FC Bayern im kicker Abschied von seinem Weggefährten und gibt sehr persönliche Einblicke in ihre Beziehung.",
-          "needs_translation": true
+          "title": "Heynckes pleure la disparition de Peter Hermann",
+          "summary": "Après la disparition de son adjoint historique Peter Hermann, Jupp Heynckes a rendu un hommage poignant à son plus proche confident.",
+          "body": [
+            "Complices durant cinq ans sur le banc, couronnés par le triplé mémorable du FC Bayern, les deux techniciens partageaient une relation hors norme. Dans le magazine kicker, Heynckes est revenu sur le souvenir de son comparse décédé samedi, le qualifiant d'âme sœur et rappelant l'intensité d'une amitié bâtie bien au-delà du rectangle vert."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "\"Brüder im Geiste\": Heynckes' berührende Worte für verstorbenen Freund Hermann",
-          "summary": "Fünf Jahre lang war der am Samstag verstorbene Peter Hermann Assistent von Jupp Heynckes. Mit bewegenden Worten nimmt der Triple-Trainer des FC Bayern im kicker Abschied von seinem Weggefährten und gibt sehr persönliche Einblicke in ihre Beziehung.",
-          "needs_translation": true
+          "title": "Heynckes llora la muerte de su fiel escudero Peter Hermann",
+          "summary": "Tras el fallecimiento de su eterno segundo Peter Hermann, Jupp Heynckes despidió con palabras cargadas de emoción a su hombre de máxima confianza.",
+          "body": [
+            "Ambos trabajaron codo a codo durante cinco años, alcanzando la gloria con el histórico triplete del FC Bayern. En declaraciones a la revista kicker, Heynckes recordó con cariño al técnico fallecido el sábado, a quien calificó de alma gemela, subrayando una sintonía humana que iba mucho más allá de los banquillos."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "\"Brüder im Geiste\": Heynckes' berührende Worte für verstorbenen Freund Hermann",
-          "summary": "Fünf Jahre lang war der am Samstag verstorbene Peter Hermann Assistent von Jupp Heynckes. Mit bewegenden Worten nimmt der Triple-Trainer des FC Bayern im kicker Abschied von seinem Weggefährten und gibt sehr persönliche Einblicke in ihre Beziehung.",
-          "needs_translation": true
+          "title": "هاينكس يودع رفيق دربه الراحل بيتر هيرمان بكلمات مؤثرة",
+          "summary": "ودع يوب هاينكس مساعده التاريخي ورجل ثقته الأول بيتر هيرمان بكلمات تفيض حزناً وتأثراً، عقب رحيل الأخير عن عالمنا.",
+          "body": [
+            "تشارك الرجلان العمل سوياً لخمسة أعوام سطرا خلالها المجد بالثلاثية التاريخية مع بايرن ميونخ. واستعاد هاينكس عبر مجلة كيكر ذكرياته مع المدرب الذي غيبه الموت يوم السبت، واصفاً إياه بتوأم روحه، ومسلطاً الضوء على رباط إنساني عميق تجاوز بكثير حدود المستطيل الأخضر."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.kicker.de/brueder-im-geiste-heynckes-beruehrende-worte-fuer-verstorbenen-freund-hermann-1254923/artikel#omrss",
@@ -1055,7 +1183,20 @@
           "url": "https://www.kicker.de/brueder-im-geiste-heynckes-beruehrende-worte-fuer-verstorbenen-freund-hermann-1254923/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-21T23:12:23+00:00"
+        }
+      }
     },
     {
       "id": "33d555708cd5",
@@ -1248,7 +1389,12 @@
           "url": "https://www.kicker.de/xxl-laenderspielpause-diese-spieler-stellen-die-18-bundesligisten-ab-1253574/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a4a5cf97e2db",
@@ -1257,28 +1403,33 @@
       "i18n": {
         "de": {
           "title": "Frauen-Bundesliga: Bremen und Stuttgart spielen unentschieden",
-          "summary": "Die Bremer Fußballerinnen sind knapp an ihrem vierten Saisonsieg vorbeigeschrammt. Obwohl Mei Shimada Werder in Führung brachte, mimte der VfB noch den Spielverderber.",
-          "needs_translation": false
+          "summary": "In der Frauen-Bundesliga verpasste Werder Bremen knapp den vierten Saisonsieg. Trotz der Führung durch Mei Shimada glich Stuttgart noch zum Unentschieden aus.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Frauen-Bundesliga: Bremen und Stuttgart spielen unentschieden",
-          "summary": "Die Bremer Fußballerinnen sind knapp an ihrem vierten Saisonsieg vorbeigeschrammt. Obwohl Mei Shimada Werder in Führung brachte, mimte der VfB noch den Spielverderber.",
-          "needs_translation": true
+          "title": "Frauen-Bundesliga: Bremen and Stuttgart draw",
+          "summary": "In the Frauen-Bundesliga, Werder Bremen narrowly missed out on their fourth win of the season. Despite Mei Shimada giving Werder the lead, Stuttgart equalized to secure a draw.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Frauen-Bundesliga: Bremen und Stuttgart spielen unentschieden",
-          "summary": "Die Bremer Fußballerinnen sind knapp an ihrem vierten Saisonsieg vorbeigeschrammt. Obwohl Mei Shimada Werder in Führung brachte, mimte der VfB noch den Spielverderber.",
-          "needs_translation": true
+          "title": "Frauen-Bundesliga : Bremen et Stuttgart font match nul",
+          "summary": "En Frauen-Bundesliga, Werder Bremen a manqué de peu sa quatrième victoire de la saison. Malgré l'ouverture du score de Mei Shimada pour Werder, Stuttgart a égalisé pour décrocher le nul.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Frauen-Bundesliga: Bremen und Stuttgart spielen unentschieden",
-          "summary": "Die Bremer Fußballerinnen sind knapp an ihrem vierten Saisonsieg vorbeigeschrammt. Obwohl Mei Shimada Werder in Führung brachte, mimte der VfB noch den Spielverderber.",
-          "needs_translation": true
+          "title": "Frauen-Bundesliga: Bremen y Stuttgart empatan",
+          "summary": "En la Frauen-Bundesliga, Werder Bremen rozó su cuarta victoria de la temporada. Pese al gol inicial de Mei Shimada para Werder, Stuttgart logró empatar el encuentro.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Frauen-Bundesliga: Bremen und Stuttgart spielen unentschieden",
-          "summary": "Die Bremer Fußballerinnen sind knapp an ihrem vierten Saisonsieg vorbeigeschrammt. Obwohl Mei Shimada Werder in Führung brachte, mimte der VfB noch den Spielverderber.",
-          "needs_translation": true
+          "title": "الدوري الألماني للسيدات: تعادل بين بريمن وشتوتغارت",
+          "summary": "فرطت لاعبات فيردر بريمن في فوزهن الرابع هذا الموسم في الدوري الألماني للسيدات بعد التعادل مع شتوتغارت. ورغم تقدم بريمن بهدف مي شيمادا، نجح شتوتغارت في إدراك التعادل.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.sportschau.de/regional/rb/rb-11-gegen-stuttgart-ein-shimada-tor-reicht-werder-nicht-zum-sieg-100.html",
@@ -1300,7 +1451,12 @@
           "url": "https://www.sportschau.de/regional/rb/rb-11-gegen-stuttgart-ein-shimada-tor-reicht-werder-nicht-zum-sieg-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2cf5a27a9874",
@@ -1446,7 +1602,12 @@
           "url": "https://www.sportschau.de/regional/br/br-hunger-auf-mehr-fcb-frauen-mit-gier-in-die-champions-league-102.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "80b4cc8cb9c7",
@@ -1799,23 +1960,27 @@
       "i18n": {
         "fr": {
           "title": "Barça : Manchester United prépare une offre XXL pour Fermin Lopez",
-          "summary": "… L’article Barça : Manchester United prépare une offre XXL pour Fermin Lopez est apparu en premier sur 100% Sport .",
-          "needs_translation": false
+          "summary": "Manchester United prépare une offre financière importante pour recruter le milieu de terrain du Barça, Fermin Lopez.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Barça : Manchester United prépare une offre XXL pour Fermin Lopez",
-          "summary": "… L’article Barça : Manchester United prépare une offre XXL pour Fermin Lopez est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "Barça: Manchester United prepare huge bid for Fermin Lopez",
+          "summary": "Manchester United are preparing a major transfer offer to sign Barça midfielder Fermin Lopez.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Barça : Manchester United prépare une offre XXL pour Fermin Lopez",
-          "summary": "… L’article Barça : Manchester United prépare une offre XXL pour Fermin Lopez est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "Barça: Manchester United prepara una oferta XXL por Fermin Lopez",
+          "summary": "Manchester United prepara una gran oferta para fichar al centrocampista del Barça, Fermin Lopez.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Barça : Manchester United prépare une offre XXL pour Fermin Lopez",
-          "summary": "… L’article Barça : Manchester United prépare une offre XXL pour Fermin Lopez est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "برشلونة: مانشستر يونايتد يجهز عرضاً ضخماً للتعاقد مع فيرمين لوبيز",
+          "summary": "يستعد نادي مانشستر يونايتد لتقديم عرض مالي كبير لضم لاعب وسط برشلونة الشاب فيرمين لوبيز.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequotidiendusport.fr/barca-manchester-united-offre-150-me-fermin-lopez/",
@@ -1837,7 +2002,12 @@
           "url": "https://www.lequotidiendusport.fr/barca-manchester-united-offre-150-me-fermin-lopez/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "29a196392f17",
@@ -1983,7 +2153,12 @@
           "url": "https://www.sportschau.de/fussball/nationalmannschaft/klopp-beim-casting-mit-etlichen-optionen,dfb-herzogenaurach-klopp-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e715a2b44b09",
@@ -1992,23 +2167,27 @@
       "i18n": {
         "fr": {
           "title": "PSG : Ferran Torres raconte la bataille remportée contre l’OM",
-          "summary": "… L’article PSG : Ferran Torres raconte la bataille remportée contre l’OM est apparu en premier sur 100% Sport .",
-          "needs_translation": false
+          "summary": "Ferran Torres est revenu sur le match disputé et la victoire obtenue face à l'OM.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "PSG : Ferran Torres raconte la bataille remportée contre l’OM",
-          "summary": "… L’article PSG : Ferran Torres raconte la bataille remportée contre l’OM est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "PSG: Ferran Torres recounts the battle won against OM",
+          "summary": "Ferran Torres reflected on the hard-fought victory secured against OM.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "PSG : Ferran Torres raconte la bataille remportée contre l’OM",
-          "summary": "… L’article PSG : Ferran Torres raconte la bataille remportée contre l’OM est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "PSG: Ferran Torres relata la batalla ganada contra el OM",
+          "summary": "Ferran Torres repasó el reñido triunfo conseguido frente al OM.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "PSG : Ferran Torres raconte la bataille remportée contre l’OM",
-          "summary": "… L’article PSG : Ferran Torres raconte la bataille remportée contre l’OM est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "باريس سان جيرمان: فيران توريس يروي تفاصيل الفوز في المواجهة ضد أولمبيك مارسيليا",
+          "summary": "تحدث فيران توريس عن المواجهة الصعبة التي حسمها فريقه بالفوز أمام أولمبيك مارسيليا.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequotidiendusport.fr/psg-ferran-torres-victoire-om/",
@@ -2030,7 +2209,12 @@
           "url": "https://www.lequotidiendusport.fr/psg-ferran-torres-victoire-om/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "08656b119a81",
@@ -2039,23 +2223,27 @@
       "i18n": {
         "fr": {
           "title": "OM : Bruno Genesio laisse planer le doute sur son avenir",
-          "summary": "… L’article OM : Bruno Genesio laisse planer le doute sur son avenir est apparu en premier sur 100% Sport .",
-          "needs_translation": false
+          "summary": "Bruno Genesio entretient l'incertitude quant à son avenir concernant une éventuelle arrivée à l'OM.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "OM : Bruno Genesio laisse planer le doute sur son avenir",
-          "summary": "… L’article OM : Bruno Genesio laisse planer le doute sur son avenir est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "OM: Bruno Genesio leaves doubt hanging over his future",
+          "summary": "Bruno Genesio has left his future uncertain amid speculation linking him to OM.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "OM : Bruno Genesio laisse planer le doute sur son avenir",
-          "summary": "… L’article OM : Bruno Genesio laisse planer le doute sur son avenir est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "OM: Bruno Genesio deja en el aire su futuro",
+          "summary": "Bruno Genesio mantiene abierta la incógnita sobre su futuro ante las especulaciones que lo sitúan en el OM.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "OM : Bruno Genesio laisse planer le doute sur son avenir",
-          "summary": "… L’article OM : Bruno Genesio laisse planer le doute sur son avenir est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "أولمبيك مارسيليا: برونو جينيسيو يثير الشكوك حول مستقبله",
+          "summary": "أبقى المدرب برونو جينيسيو الغموض حول مستقبله في ظل التكهنات التي تربطه بتولي تدريب أولمبيك مارسيليا.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequotidiendusport.fr/om-bruno-genesio-discussions-direction/",
@@ -2077,7 +2265,12 @@
           "url": "https://www.lequotidiendusport.fr/om-bruno-genesio-discussions-direction/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "7a07c2389d81",
@@ -2086,23 +2279,27 @@
       "i18n": {
         "fr": {
           "title": "PSG : Kvaratskhelia sous pression après son match contre l’OM",
-          "summary": "… L’article PSG : Kvaratskhelia sous pression après son match contre l’OM est apparu en premier sur 100% Sport .",
-          "needs_translation": false
+          "summary": "Kvaratskhelia se retrouve sous pression au PSG à la suite de sa prestation livrée lors du match face à l’OM.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "PSG : Kvaratskhelia sous pression après son match contre l’OM",
-          "summary": "… L’article PSG : Kvaratskhelia sous pression après son match contre l’OM est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "PSG: Kvaratskhelia under pressure after match against OM",
+          "summary": "Kvaratskhelia is facing mounting pressure at PSG following his performance in the match against OM.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "PSG : Kvaratskhelia sous pression après son match contre l’OM",
-          "summary": "… L’article PSG : Kvaratskhelia sous pression après son match contre l’OM est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "PSG: Kvaratskhelia bajo presión tras su partido contra el OM",
+          "summary": "Kvaratskhelia afronta un momento de presión en el PSG tras su actuación en el partido contra el OM.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "PSG : Kvaratskhelia sous pression après son match contre l’OM",
-          "summary": "… L’article PSG : Kvaratskhelia sous pression après son match contre l’OM est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "باريس سان جيرمان: كفاراتسخيليا تحت الضغط بعد مباراته ضد أولمبيك مارسيليا",
+          "summary": "يواجه كفاراتسخيليا ضغوطات متزايدة في باريس سان جيرمان عقب ظهوره في المباراة أمام أولمبيك مارسيليا.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequotidiendusport.fr/psg-kvaratskhelia-critique-prestation-om/",
@@ -2124,7 +2321,12 @@
           "url": "https://www.lequotidiendusport.fr/psg-kvaratskhelia-critique-prestation-om/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "12efad523e77",
@@ -2133,23 +2335,27 @@
       "i18n": {
         "fr": {
           "title": "Mbappé dément toute tension avec Ousmane Dembélé",
-          "summary": "… L’article Mbappé dément toute tension avec Ousmane Dembélé est apparu en premier sur 100% Sport .",
-          "needs_translation": false
+          "summary": "Mbappé a publiquement démenti toute tension ou mésentente avec Ousmane Dembélé.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Mbappé dément toute tension avec Ousmane Dembélé",
-          "summary": "… L’article Mbappé dément toute tension avec Ousmane Dembélé est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "Mbappé denies any tension with Ousmane Dembélé",
+          "summary": "Mbappé has denied any reports of tension or conflict with Ousmane Dembélé.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Mbappé dément toute tension avec Ousmane Dembélé",
-          "summary": "… L’article Mbappé dément toute tension avec Ousmane Dembélé est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "Mbappé desmiente cualquier tensión con Ousmane Dembélé",
+          "summary": "Mbappé ha desmentido cualquier rumor de tensión o conflicto con Ousmane Dembélé.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Mbappé dément toute tension avec Ousmane Dembélé",
-          "summary": "… L’article Mbappé dément toute tension avec Ousmane Dembélé est apparu en premier sur 100% Sport .",
-          "needs_translation": true
+          "title": "مبابي ينفي وجود أي توتر مع عثمان ديمبيلي",
+          "summary": "نفى كيليان مبابي وجود أي خلاف أو توتر في علاقته مع زميله عثمان ديمبيلي.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequotidiendusport.fr/mbappe-dement-tensions-ousmane-dembele/",
@@ -2171,7 +2377,12 @@
           "url": "https://www.lequotidiendusport.fr/mbappe-dement-tensions-ousmane-dembele/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4a4073be4f40",
@@ -2368,23 +2579,27 @@
       "i18n": {
         "es": {
           "title": "Arbeloa, como Mourinho: \"Lo sabía\"",
-          "summary": "José Mourinho mostró su cara de siempre cuando tras perder el derbi contra el Atlético se quejó del arbitraje en rueda de prensa y mostró una impresión con dos imágenes de dos acciones que según él eran merecedoras de roja, y el que fue su antecesor en el banquillo del Real…",
-          "needs_translation": false
+          "summary": "Tras la derrota en el derbi contra el Atlético, José Mourinho criticó el arbitraje en rueda de prensa mostrando imágenes de dos acciones que, según él, merecían tarjeta roja.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Arbeloa, como Mourinho: \"Lo sabía\"",
-          "summary": "José Mourinho mostró su cara de siempre cuando tras perder el derbi contra el Atlético se quejó del arbitraje en rueda de prensa y mostró una impresión con dos imágenes de dos acciones que según él eran merecedoras de roja, y el que fue su antecesor en el banquillo del Real…",
-          "needs_translation": true
+          "title": "Arbeloa, like Mourinho: \"I knew it\"",
+          "summary": "Following the derby defeat against Atlético, José Mourinho criticized the refereeing in his press conference, presenting printed images of two incidents he believed deserved red cards.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Arbeloa, como Mourinho: \"Lo sabía\"",
-          "summary": "José Mourinho mostró su cara de siempre cuando tras perder el derbi contra el Atlético se quejó del arbitraje en rueda de prensa y mostró una impresión con dos imágenes de dos acciones que según él eran merecedoras de roja, y el que fue su antecesor en el banquillo del Real…",
-          "needs_translation": true
+          "title": "Arbeloa, comme Mourinho : « Je le savais »",
+          "summary": "Après la défaite lors du derby contre l'Atlético, José Mourinho a contesté l'arbitrage en conférence de presse, présentant des photos de deux actions méritant un carton rouge selon lui.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Arbeloa, como Mourinho: \"Lo sabía\"",
-          "summary": "José Mourinho mostró su cara de siempre cuando tras perder el derbi contra el Atlético se quejó del arbitraje en rueda de prensa y mostró una impresión con dos imágenes de dos acciones que según él eran merecedoras de roja, y el que fue su antecesor en el banquillo del Real…",
-          "needs_translation": true
+          "title": "أربيلوا على طريقة مورينيو: \"كنت أعلم ذلك\"",
+          "summary": "احتج خوسيه مورينيو على التحكيم عقب الهزيمة في الديربي أمام أتلتيكو، مستعرضاً في المؤتمر الصحفي صوراً لحالتين اعتبر أنهما كانتا تستوجبان بطاقتين حمراوين.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20260921/1004229859/arbeloa-mourinho-sabia.html",
@@ -2406,7 +2621,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20260921/1004229859/arbeloa-mourinho-sabia.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e81600d6ec18",
