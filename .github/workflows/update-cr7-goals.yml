@@ -28,6 +28,7 @@ on:
 # ─── PERMISSIONS ───────────────────────────────────────────────────────────
 permissions:
   contents: write
+  actions: write  # permet le workflow_dispatch du rafraîchissement News
 
 # Un seul run à la fois : évite les push concurrents avec soi-même.
 # stats-sync.yml (quotidien) garde son propre groupe mais pushe rarement au
@@ -54,6 +55,11 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
+      - name: Mémoriser le compteur avant vérification
+        id: before
+        run: |
+          python -c "import json; print('goals=' + str(json.load(open('public/stats.json'))['goals']))" >> "$GITHUB_OUTPUT"
+
       - name: Sync CR7 goals & matches from ESPN
         env:
           FORCE_GOALS: ${{ github.event.inputs.force_goals }}
@@ -73,10 +79,30 @@ jobs:
           else
             GOALS=$(python -c "import json; d=json.load(open('public/stats.json')); print(d['goals'])")
             git commit -m "⚽ CR7 at ${GOALS} goals — auto-update $(date -u '+%Y-%m-%d %H:%M UTC')"
-            git pull --rebase origin main || true
+            # ci_push gère fetch/rebase/retry et échoue franchement si le push
+            # ne passe pas ; ne jamais masquer un échec avant le dispatch News.
             bash scripts/ci_push.sh main
             echo "✅ Pushed updated stats.json — CR7 now at ${GOALS} goals"
             echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Rafraîchir les nouvelles après une hausse confirmée
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FORCE_GOALS: ${{ github.event.inputs.force_goals }}
+          GOALS_BEFORE: ${{ steps.before.outputs.goals }}
+        run: |
+          GOALS_AFTER=$(python -c "import json; print(json.load(open('public/stats.json'))['goals'])")
+          if [ -n "$FORCE_GOALS" ]; then
+            echo "::notice::Correction manuelle du compteur : aucune dépêche automatique"
+          elif [ "$GOALS_AFTER" -gt "$GOALS_BEFORE" ]; then
+            # GITHUB_TOKEN ne réactive pas les workflows via push, mais
+            # workflow_dispatch est explicitement permis par GitHub.
+            gh workflow run news-sync.yml --ref main -f cause=confirmed_goal
+            echo "::notice::Fil News relancé après hausse vérifiée : $GOALS_BEFORE → $GOALS_AFTER"
+          else
+            echo "::notice::Pas de nouveau but crédité : aucune relance News"
           fi
 
       - name: Deploy to Cloudflare Pages
