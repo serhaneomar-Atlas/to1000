@@ -398,7 +398,7 @@ NON_FOOTBALL_BLOB = [
     "vuelta a espana", "vuelta a españa", "giro d'italia",
     "grand prix", "moto gp", "super bowl", "wnba", "nascar", "formule 1", "formula 1",
     "six nations", "tournoi des six nations", "coupe davis", "davis cup",
-    "diamond league",
+    "diamond league", "fiba", "nba g league", "basketball", "basket-ball",
 ]
 
 # Player surnames that collide with common FR/ES/PT/EN words. Only count them as a
