@@ -26,11 +26,13 @@ def _goal(event_id="g1", is_cr7=True, period=2, raw_text="Cristiano Ronaldo (Por
     )
 
 
-def _match(goals, date_iso="2026-07-02T23:00Z", finished=True, in_progress=False):
+def _match(goals, date_iso="2026-07-02T23:00Z", finished=True, in_progress=False,
+           score_home=None, score_away=0):
     return MatchSummary(
         event_id="401999999", date_iso=date_iso, competition="FIFA World Cup",
         home_team="Portugal", away_team="Croatia", home_team_id="482",
-        away_team_id="449", score_home=1, score_away=0, venue="BMO Field",
+        away_team_id="449", score_home=len(goals) if score_home is None else score_home,
+        score_away=score_away, venue="BMO Field",
         status="STATUS_FULL_TIME" if finished else "STATUS_IN_PROGRESS",
         is_finished=finished, is_in_progress=in_progress, goals=goals,
         league_slug="fifa.world",
@@ -78,6 +80,9 @@ class TestSyncGoals(unittest.TestCase):
     def setUp(self):
         self._orig_today = update_stats_v2.find_team_match_today_cr7
         self._orig_last = update_stats_v2.find_last_match_cr7
+        self._orig_now = update_stats_v2._now_iso
+        self.now = "2026-07-02T23:00:00Z"
+        update_stats_v2._now_iso = lambda: self.now
         self.stats = {
             "goals": 975, "remaining": 25, "target": 1000,
             "goal_sync_baseline": BASELINE,
@@ -89,17 +94,87 @@ class TestSyncGoals(unittest.TestCase):
     def tearDown(self):
         update_stats_v2.find_team_match_today_cr7 = self._orig_today
         update_stats_v2.find_last_match_cr7 = self._orig_last
+        update_stats_v2._now_iso = self._orig_now
 
-    def test_incremente_le_compteur_sur_un_nouveau_but_en_live(self):
+    def test_incremente_le_compteur_apres_deux_releves_live(self):
         match = _match([_goal(event_id="live-1")], finished=False, in_progress=True)
         update_stats_v2.find_team_match_today_cr7 = lambda: match
-        changed = sync_goals(self.stats)
-        self.assertTrue(changed)
+        self.assertTrue(sync_goals(self.stats))  # premier relevé : en attente
+        self.assertEqual(self.stats["goals"], 975)
+        self.now = "2026-07-02T23:01:01Z"
+        self.assertTrue(sync_goals(self.stats))  # deuxième relevé stable
         self.assertEqual(self.stats["goals"], 976)
         self.assertEqual(self.stats["remaining"], 24)
         self.assertIn("live-1", self.stats["processed_goal_event_ids"])
         self.assertEqual(self.stats["last_goal_date"], "2026-07-02")
         self.assertEqual(self.stats["last_goal_opponent"], "Croatia")
+
+    def test_var_provisoire_score_incoherent_jamais_credite(self):
+        felix = _goal(event_id="felix", is_cr7=False)
+        ronaldo = _goal(event_id="var")
+        match = _match([felix, ronaldo], score_home=1,
+                       finished=False, in_progress=True)
+        update_stats_v2.find_team_match_today_cr7 = lambda: match
+        self.assertFalse(sync_goals(self.stats))
+        self.now = "2026-07-02T23:05:00Z"
+        self.assertFalse(sync_goals(self.stats))
+        self.assertEqual(self.stats["goals"], 975)
+        self.assertNotIn("var", self.stats.get("processed_goal_event_ids", []))
+
+    def test_var_annule_avant_confirmation(self):
+        felix = _goal(event_id="felix", is_cr7=False)
+        ronaldo = _goal(event_id="var")
+        match = _match([felix, ronaldo], finished=False, in_progress=True)
+        update_stats_v2.find_team_match_today_cr7 = lambda: match
+        self.assertTrue(sync_goals(self.stats))
+        self.assertEqual(self.stats["goals"], 975)
+        match.goals = [felix]
+        match.score_home = 1
+        self.now = "2026-07-02T23:01:01Z"
+        self.assertTrue(sync_goals(self.stats))
+        self.assertEqual(self.stats["goals"], 975)
+        self.assertFalse(self.stats["goal_sync_matches"])
+
+    def test_retracte_un_but_credite_puis_annule(self):
+        felix = _goal(event_id="felix", is_cr7=False)
+        ronaldo = _goal(event_id="var")
+        match = _match([felix, ronaldo], finished=False, in_progress=True)
+        update_stats_v2.find_team_match_today_cr7 = lambda: match
+        sync_goals(self.stats)
+        self.now = "2026-07-02T23:01:01Z"
+        sync_goals(self.stats)
+        self.assertEqual(self.stats["goals"], 976)
+        match.goals = [felix]
+        match.score_home = 1
+        self.now = "2026-07-02T23:02:02Z"
+        self.assertTrue(sync_goals(self.stats))  # première absence
+        self.assertEqual(self.stats["goals"], 976)
+        self.now = "2026-07-02T23:03:03Z"
+        self.assertTrue(sync_goals(self.stats))  # absence confirmée
+        self.assertEqual(self.stats["goals"], 975)
+        self.assertEqual(self.stats["remaining"], 25)
+        self.assertNotIn("var", self.stats["processed_goal_event_ids"])
+        self.assertEqual(self.stats["last_goal_opponent"], "Uzbekistan")
+
+    def test_retracte_aussitot_si_source_marque_but_annule(self):
+        ronaldo = _goal(event_id="var")
+        match = _match([ronaldo], finished=False, in_progress=True)
+        update_stats_v2.find_team_match_today_cr7 = lambda: match
+        sync_goals(self.stats)
+        self.now = "2026-07-02T23:01:01Z"
+        sync_goals(self.stats)
+        self.assertEqual(self.stats["goals"], 976)
+        match.goals = [_goal(event_id="var", raw_text="Goal disallowed - offside")]
+        match.score_home = 0
+        self.assertTrue(sync_goals(self.stats))
+        self.assertEqual(self.stats["goals"], 975)
+
+    def test_score_absent_ne_declenche_rien(self):
+        match = _match([_goal(event_id="x")])
+        match.score_home = None
+        update_stats_v2.find_team_match_today_cr7 = lambda: match
+        self.assertFalse(sync_goals(self.stats))
+        self.assertEqual(self.stats["goals"], 975)
 
     def test_deux_buts_dans_le_meme_match(self):
         match = _match([_goal(event_id="a"), _goal(event_id="b")])
@@ -188,3 +263,4 @@ class TestPenaltyScored(unittest.TestCase):
     def test_but_normal_toujours_detecte(self):
         from lib.espn_client import _key_event_to_goal
         self.assertIsNotNone(_key_event_to_goal(self._ev("Goal"), "m1"))
+
