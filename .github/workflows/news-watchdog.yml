@@ -20,17 +20,24 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
-
       - name: Vérifier fil du dépôt et fil réellement servi
         id: check
         continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          set -o pipefail
-          python scripts/news_health.py 2>&1 | tee "$RUNNER_TEMP/news-health.log"
+          set -euo pipefail
+          {
+            mkdir -p scripts public
+            # Charger uniquement les deux fichiers nécessaires depuis le commit contrôlé.
+            for path in scripts/news_health.py public/news.json; do
+              gh api -H "Accept: application/vnd.github+json" \
+                "repos/${GITHUB_REPOSITORY}/contents/${path}?ref=${GITHUB_SHA}" \
+                --jq '.content' | base64 --decode > "$path"
+              test -s "$path"
+            done
+            python3 scripts/news_health.py
+          } 2>&1 | tee "$RUNNER_TEMP/news-health.log"
 
       - name: Ouvrir une alerte unique si le fil est figé
         if: steps.check.outcome == 'failure'
