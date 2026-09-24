@@ -2,6 +2,18 @@
 Auteur : ChatGPT / Atlas — 24 septembre 2026
 Statut : diagnostic fondé sur le code, le flux public et les journaux de production. Première réparation déployée par PR43 ; complément de contrôle préparé. Pas une validation générale de la rédaction.
 
+
+## Point de reprise final — preuves nouvelles à lire en premier
+- PR44 fusionnée : https://github.com/serhaneomar-Atlas/to1000/pull/44 ; révision ffe6283b8968ee47165258a27e7fcac652bf2c5e. Les changements de tri, plafond et RSS sont intégrés.
+- Contrôle complet : **211 tests réussis, 3 sous-tests réussis**, run https://github.com/serhaneomar-Atlas/to1000/actions/runs/36068526858 . Le score éditorial 61,6/100 reste sous le seuil interne70 ; ce score heuristique n'est pas une mesure de véracité. Un job global réussi ne valide donc pas la qualité.
+- Vérification visuelle en production FR/EN/AR : absence de cartes étrangères en repli ; lors du contrôle,19cartes FR,4EN et0AR. Le vide arabe est un défaut de production restant, pas un succès éditorial.
+- **Cause désormais prouvée : réponses Gemini tronquées.** Run https://github.com/serhaneomar-Atlas/to1000/actions/runs/36067568345 , job107862950679 : répétitions de finish=MAX_TOKENS, modèle réellement retourné gemini-3.8-flash, surtout au tri plafonné à200tokens ; aussi aux stades900/2200. Première passe49appels,30échecs, aucun candidat sémantique. Rejeu après conflit :50appels,46échecs, aucun candidat. Aucun texte privé ou clé lu.
+- La documentation officielle explique que maxOutputTokens inclut la réflexion et peut couper la réponse : https://ai.google.dev/gemini-api/docs/generate-content/thinking . Le code laisse le niveau de réflexion par défaut. **Lien causal précis avec les tokens de réflexion à confirmer par usageMetadata**, non enregistré actuellement. Tester une réflexion réduite adaptée au modèle, sortie JSON et plafonds par étape, sans augmenter aveuglément les appels. Ne pas accepter une réponse tronquée.
+- Autre défaut à traiter : le rejeu après conflit n'était PAS gratuit, contrairement au commentaire du workflow. Il a répété des appels. Le plafond de50 est par processus ; il faut partager le budget sur tout le job, ou rendre le rejeu strictement cache-only. La présente passe n'a pas réparé ce point.
+- Deux workflows partagent une file ne conservant qu'une exécution en attente : l'enrichissement36068526813 a été annulé tandis que news-sync36068526889 attendait. Ne pas confondre fusion du correctif et exécution réussie de sa nouvelle rédaction. Revoir les déclencheurs qui se concurrencent, préserver l'exécution active.
+- Prochain travail concret Claude : reproduire1article complet dans un essai borné, corriger cette configuration, contrôler les4langues et les faits, puis seulement élargir le lot. Ensuite vérifier Make et livrer les5prototypes. Aucune session Claude n'a été lancée dans cette passe.
+- Quota Codex observé en fin de passe :84% consommés,16% restants hebdomadaires ; aucun achat ni reset. Cette relève est destinée à éviter une interruption sans contexte.
+
 ## Complément de contrôle — 24 septembre, après déploiement
 - PR43 fusionnée : https://github.com/serhaneomar-Atlas/to1000/pull/43 ; déploiement réussi : https://github.com/serhaneomar-Atlas/to1000/actions/runs/36067568389 . Le garde de langue est servi publiquement. Ne pas confondre ce résultat et une rédaction multilingue rétablie.
 - Cache examiné : 925 verdicts edtv8, dont 896 refus et 29 acceptations. Plusieurs motifs opposent la mémoire du modèle au média sur des affiliations actuelles ; cela ne constitue pas une vérification factuelle. Le complément recentre le tri sur la pertinence mondiale, fournit la date actuelle et invalide les anciens verdicts. Il ne garantit pas la véracité des médias.
