@@ -1,4 +1,4 @@
-name: News sync (toutes les 2 h)
+name: News sync (fraîcheur et but confirmé)
 
 # Why: aggrège les news foot/CR7, rafraîchit news.json, et déploie sur Cloudflare
 # quand le contenu change. Fréquence réduite à 2 h pour rester sous les 2000 min
@@ -7,12 +7,18 @@ name: News sync (toutes les 2 h)
 
 on:
   schedule:
-    - cron: "0 * * * *"   # toutes les heures (repo public = minutes illimitées)
-  workflow_dispatch:          # allow manual trigger from the Actions tab
+    - cron: "7 * * * *"   # minute décalée : la minute 0 subit davantage de retards Actions
+  workflow_dispatch:
+    inputs:
+      cause:
+        description: 'manual ou confirmed_goal après validation du compteur'
+        required: false
+        type: string
   push:                       # re-run + republish quand le pipeline news change
     branches: [main]
     paths:
       - 'scripts/news_aggregator.py'
+      - 'scripts/news_health.py'
       - 'scripts/translator.py'
       - 'scripts/editorial.py'
       - '.github/workflows/news-sync.yml'
@@ -162,11 +168,15 @@ jobs:
       # the previous commit push will trigger the deploy automatically and this
       # step becomes a redundant no-op (still cheap, ~2s skip).
       - name: Deploy to Cloudflare Pages
-        if: steps.diff.outputs.changed == 'true' && env.CLOUDFLARE_API_TOKEN != ''
+        if: steps.diff.outputs.changed == 'true'
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "::warning::Cloudflare non configuré : vérifier que l'intégration Git publie le commit"
+            exit 0
+          fi
           bash scripts/prune_deploy_assets.sh
           npx wrangler@latest pages deploy public/ \
             --project-name to1000 \

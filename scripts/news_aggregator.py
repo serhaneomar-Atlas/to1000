@@ -192,9 +192,20 @@ def load_custom_items(path=None) -> list:
         raw = _json.loads(p.read_text(encoding="utf-8"))
     except Exception:
         return []
-    now = datetime.now(timezone.utc).isoformat()
-    return [it for it in raw
-            if it.get("id") and (it.get("expires_at") or "9999") > now]
+    now = datetime.now(timezone.utc)
+    result = []
+    for it in raw if isinstance(raw, list) else []:
+        if not isinstance(it, dict) or not it.get("id"):
+            continue
+        try:
+            pub = datetime.fromisoformat(it["published_at"].replace("Z", "+00:00"))
+            expiry = datetime.fromisoformat(it["expires_at"].replace("Z", "+00:00"))
+        except (KeyError, TypeError, ValueError, AttributeError):
+            continue
+        # Une annonce sans date/expiration valable ne peut pas rester en Une.
+        if valid_news_date(pub, now) and expiry.tzinfo and expiry > now:
+            result.append(it)
+    return result
 
 
 def recency_sort_key(it: dict) -> tuple:
@@ -202,6 +213,15 @@ def recency_sort_key(it: dict) -> tuple:
     score d'importance en départage. Fix 2026-07-02 (demande Omar) — l'ancien
     tri CR7/score/sources faisait passer du J-2 devant les news du jour."""
     return (it.get("published_at") or "", it.get("score", 0))
+
+
+def valid_news_date(pub: Optional[datetime], now: Optional[datetime] = None) -> bool:
+    """Ne jamais dater du moment de collecte un article RSS non daté ou futur."""
+    if pub is None or pub.tzinfo is None:
+        return False
+    now = now or datetime.now(timezone.utc)
+    age = (now - pub.astimezone(timezone.utc)).total_seconds()
+    return -600 <= age <= MAX_AGE_HOURS * 3600
 
 
 def parse_date(entry) -> Optional[datetime]:
@@ -520,7 +540,7 @@ def main() -> int:
     raw_items: list[dict] = []
     stats_fetched = 0
     stats_failed = 0
-    cutoff = datetime.now(timezone.utc).timestamp() - MAX_AGE_HOURS * 3600
+    fetched_at = datetime.now(timezone.utc)
 
     # Prefetch concurrent (ajout Cowork 2026-07-03) — les fetch RSS sequentiels
     # depassaient le cap 45s du sandbox. ThreadPool = temps ~= le flux le plus lent.
@@ -549,14 +569,12 @@ def main() -> int:
             if not title or not link:
                 continue
 
-            # Date filter
+            # Sans date source fiable, l'article pourrait être ancien : ne pas
+            # le faire passer pour une nouveauté en lui donnant l'heure du run.
             pub = parse_date(entry)
-            if pub:
-                if pub.timestamp() < cutoff:
-                    continue
-                pub_iso = pub.isoformat().replace("+00:00", "Z")
-            else:
-                pub_iso = now_iso()
+            if not valid_news_date(pub, fetched_at):
+                continue
+            pub_iso = pub.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
 
             # Skip if obviously clickbait
             if is_clickbait(title, drop_patterns):
@@ -598,6 +616,9 @@ def main() -> int:
         log(f"  → kept {count} relevant items", verbose)
 
     log(f"Total relevant items: {len(raw_items)} from {stats_fetched} feeds ({stats_failed} failed)", verbose)
+    if stats_fetched == 0:
+        log("ERREUR : aucun flux accessible ; news.json existant préservé", True)
+        return 1
 
     # ─── Clustering ──────────────────────────────────────────────────────────
     # Greedy: sort by weight desc + recency desc, then merge similar.
@@ -874,6 +895,7 @@ def main() -> int:
             "raw_items": len(raw_items),
             "clusters": len(clusters),
             "published": len(final_items),
+            "newest_item_at": max((it.get("published_at", "") for it in final_items), default=None),
             "cr7_count": sum(1 for it in final_items if it["kind"] == "cr7"),
         },
         "items": final_items,

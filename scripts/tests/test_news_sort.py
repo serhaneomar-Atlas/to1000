@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import sys
 import unittest
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 SCRIPTS_DIR = Path(__file__).resolve().parent.parent
@@ -46,13 +47,30 @@ class TestCustomItems(unittest.TestCase):
     def test_expiration_et_id_requis(self):
         import json, tempfile
         from news_aggregator import load_custom_items
+        now = datetime.now(timezone.utc)
+        date = now.isoformat()
+        expiry = (now + timedelta(days=1)).isoformat()
         with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as f:
-            json.dump([{"id": "vieux", "expires_at": "2020-01-01T00:00:00Z"},
-                       {"id": "valide", "expires_at": "2999-01-01T00:00:00Z"},
-                       {"expires_at": "2999-01-01T00:00:00Z"}], f)
+            json.dump([{"id": "vieux", "published_at": date, "expires_at": "2020-01-01T00:00:00Z"},
+                       {"id": "valide", "published_at": date, "expires_at": expiry},
+                       {"id": "sans-date", "expires_at": expiry},
+                       {"published_at": date, "expires_at": expiry}], f)
             p = f.name
         self.assertEqual([i["id"] for i in load_custom_items(p)], ["valide"])
 
     def test_fichier_absent_ne_casse_rien(self):
         from news_aggregator import load_custom_items
         self.assertEqual(load_custom_items("/chemin/inexistant.json"), [])
+
+
+class TestDateFiable(unittest.TestCase):
+    def test_article_sans_date_refuse(self):
+        from news_aggregator import valid_news_date
+        self.assertFalse(valid_news_date(None, datetime.now(timezone.utc)))
+
+    def test_article_ancien_ou_futur_refuse(self):
+        from news_aggregator import valid_news_date
+        now = datetime(2026, 9, 24, 20, tzinfo=timezone.utc)
+        self.assertFalse(valid_news_date(now - timedelta(days=4), now))
+        self.assertFalse(valid_news_date(now + timedelta(hours=1), now))
+        self.assertTrue(valid_news_date(now - timedelta(minutes=5), now))

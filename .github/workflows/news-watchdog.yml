@@ -1,0 +1,60 @@
+name: Surveillance indépendante du fil News
+
+# Un contrôle séparé détecte aussi les runs news-sync absents : un pipeline qui
+# ne démarre plus ne peut pas s'alerter lui-même. GitHub peut retarder le cron.
+on:
+  schedule:
+    - cron: "11,41 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: news-watchdog
+  cancel-in-progress: false
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Vérifier fil du dépôt et fil réellement servi
+        id: check
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          python scripts/news_health.py 2>&1 | tee "$RUNNER_TEMP/news-health.log"
+
+      - name: Ouvrir une alerte unique si le fil est figé
+        if: steps.check.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="[to1000] News figées ou non publiées"
+          number=$(gh issue list --state open --limit 100 --json number,title --jq '.[] | select(.title=="[to1000] News figées ou non publiées") | .number' | head -n 1)
+          if [ -z "$number" ]; then
+            gh issue create --title "$title" --body-file "$RUNNER_TEMP/news-health.log"
+          else
+            echo "::warning::Alerte News déjà ouverte : #$number"
+          fi
+
+      - name: Clore l'alerte après retour vérifié
+        if: steps.check.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          number=$(gh issue list --state open --limit 100 --json number,title --jq '.[] | select(.title=="[to1000] News figées ou non publiées") | .number' | head -n 1)
+          if [ -n "$number" ]; then
+            gh issue close "$number" --comment "Le contrôle du dépôt et du site est revenu au vert."
+          fi
+
+      - name: Signaler l'échec du contrôle dans Actions
+        if: steps.check.outcome == 'failure'
+        run: exit 1
