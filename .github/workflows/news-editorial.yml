@@ -65,6 +65,7 @@ jobs:
         run: |
           python scripts/news_to_html.py
           python scripts/prerender_news.py
+          python scripts/rss_generator.py
 
       - name: Détecter un changement
         id: diff
@@ -86,7 +87,7 @@ jobs:
         run: |
           git config user.name "to1000-editorial-bot"
           git config user.email "to1000-editorial-bot@users.noreply.github.com"
-          for f in public/news.json public/news.html public/translations_cache.json public/news/ EDITORIAL/state/semantic_audit.jsonl; do
+          for f in public/news.json public/news.html public/rss.xml public/rss-ar.xml public/rss-en.xml public/rss-es.xml public/translations_cache.json public/news/ EDITORIAL/state/semantic_audit.jsonl; do
             git add "$f" 2>/dev/null || true
           done
           if git diff --cached --quiet; then
@@ -109,7 +110,8 @@ jobs:
           python scripts/audit_semantique.py || true
           python scripts/news_to_html.py || true
           python scripts/prerender_news.py || true
-          for f in public/news.json public/news.html public/translations_cache.json public/news/ EDITORIAL/state/semantic_audit.jsonl; do
+          python scripts/rss_generator.py || true
+          for f in public/news.json public/news.html public/rss.xml public/rss-ar.xml public/rss-en.xml public/rss-es.xml public/translations_cache.json public/news/ EDITORIAL/state/semantic_audit.jsonl; do
             git add "$f" 2>/dev/null || true
           done
           if git diff --cached --quiet; then

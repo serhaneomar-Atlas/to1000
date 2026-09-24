@@ -23,18 +23,21 @@ ITEM = {
         "es": {"title": "Ronaldo marca de nuevo", "summary": "CR7 anota su gol 975."},
     },
 }
+ITEM["primary_source"] = {"lang": "en"}
+for entry in ITEM["i18n"].values():
+    entry["engine"] = "gemini-editor"
 
 
 class TestTraduction(unittest.TestCase):
     def test_titre_arabe(self):
         self.assertEqual(tr(ITEM, "ar", "title"), "رونالدو يسجل من جديد")
 
-    def test_fallback_fr_si_langue_absente(self):
+    def test_pas_de_fr_si_arabe_absent(self):
         item = {"i18n": {"fr": {"summary": "Résumé FR"}}, "summary": "src"}
-        self.assertEqual(tr(item, "ar", "summary"), "Résumé FR")
+        self.assertEqual(tr(item, "ar", "summary"), "")
 
-    def test_fallback_source_en_dernier(self):
-        self.assertEqual(tr({"title": "Plain"}, "ar", "title"), "Plain")
+    def test_pas_de_source_etrangere_en_repli(self):
+        self.assertEqual(tr({"title": "Plain"}, "ar", "title"), "")
 
 
 class TestCaptionArabe(unittest.TestCase):
@@ -80,8 +83,10 @@ class TestFiltreLangue(unittest.TestCase):
 
     def test_en_traduit_inclus(self):
         from rss_generator import lang_ok
-        item = {"title": "Ronaldo marca de nuevo",
-                "i18n": {"en": {"title": "Ronaldo scores again"}}}
+        item = {"title": "Ronaldo marca de nuevo", "summary": "Un gol.",
+                "primary_source": {"lang": "es"},
+                "i18n": {"en": {"title": "Ronaldo scores again",
+                "summary": "One goal.", "engine": "gemini-editor"}}}
         self.assertTrue(lang_ok(item, "en"))
 
     def test_en_passthrough_espagnol_exclu(self):
@@ -94,11 +99,12 @@ class TestFiltreLangue(unittest.TestCase):
         from rss_generator import lang_ok
         self.assertFalse(lang_ok({"title": "x", "i18n": {"fr": {"title": "y"}}}, "en"))
 
-    def test_fr_toujours_inclus(self):
+    def test_fr_incomplet_exclu(self):
         from rss_generator import lang_ok
-        self.assertTrue(lang_ok({"title": "x"}, "fr"))
+        self.assertFalse(lang_ok({"title": "x"}, "fr"))
 
     def test_ar_reste_sur_le_filtre_ecriture(self):
         from rss_generator import lang_ok
-        self.assertTrue(lang_ok({"i18n": {"ar": {"title": "رونالدو يسجل"}}}, "ar"))
+        self.assertTrue(lang_ok(ITEM, "ar"))
+        self.assertFalse(lang_ok({"i18n": {"ar": {"title": "رونالدو يسجل"}}}, "ar"))
         self.assertFalse(lang_ok({"i18n": {"ar": {"title": "No está acabado"}}}, "ar"))

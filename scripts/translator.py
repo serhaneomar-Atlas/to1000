@@ -139,6 +139,11 @@ class Translator:
         # (sinon la plupart des items perdent le rédacteur en chef et retombent
         # sur MyMemory). Le backoff cale aussi le débit sous la limite.
         for attempt in range(4):
+            limit = getattr(self, "max_gemini_calls", None)
+            if limit is not None and self._calls_gemini >= limit:
+                log("Budget d’appels atteint — arrêt sans nouvelle requête")
+                return None
+            self._calls_gemini += 1
             try:
                 with urlopen(req, timeout=REQUEST_TIMEOUT) as resp:
                     payload = json.loads(resp.read().decode("utf-8"))
@@ -152,7 +157,6 @@ class Translator:
             except (URLError, TimeoutError, json.JSONDecodeError):
                 self._failures += 1
                 return None
-            self._calls_gemini += 1
             time.sleep(RATE_LIMIT_SLEEP)
             try:
                 candidates = payload.get("candidates") or []
