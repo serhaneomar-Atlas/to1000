@@ -50,39 +50,88 @@ def save_stats(stats: dict) -> None:
         json.dump(stats, f, indent=2, ensure_ascii=False)
 
 
-def select_new_cr7_goals(goals, processed_ids: set, match_date_iso: str, baseline_iso: str) -> list:
-    """Filtre les buts d'un match à créditer au compteur.
+LIVE_CONFIRMATION_SECONDS = 60
+RETRACTION_CONFIRMATION_SECONDS = 60
+_UNCONFIRMED_MARKERS = (
+    "offside", "hors-jeu", "hors jeu", "disallowed", "annul",
+    "overturned", "no goal", "goal cancelled", "goal canceled",
+    "pending var", "var review", "under review",
+)
 
-    Garde-fous (fix 2026-07-01, remplace le goal_watcher_v2 jamais commité) :
-      - anti-doublon par event_id ESPN (ledger processed_goal_event_ids)
-      - baseline : un match antérieur à goal_sync_baseline est ignoré en bloc
-        (ses buts ont été comptés à la main avant l'activation de la sync)
-      - séance de tirs au but (period >= 5) : ne compte pas comme but officiel
-      - but contre son camp : exclu
+
+def _unconfirmed_goal(goal) -> bool:
+    """Un événement marqué annulé ou encore soumis à la VAR n'est pas un but."""
+    text = (goal.raw_text or "").casefold()
+    return any(marker in text for marker in _UNCONFIRMED_MARKERS)
+
+
+def _official_goal_events(detail) -> list | None:
+    """N'accepte les événements que si les deux totaux ESPN concordent au score.
+
+    Un keyEvent provisoire peut paraître comme un but avant que la VAR tranche.
+    Si la liste et le score ne concordent pas, on attend le prochain relevé au
+    lieu de deviner quel événement est officiel.
     """
+    if detail.score_home is None or detail.score_away is None:
+        return None
+    if str(detail.home_team_id) not in CR7_TEAM_IDS and str(detail.away_team_id) not in CR7_TEAM_IDS:
+        return None
+    home = (detail.home_team or "").strip().casefold()
+    away = (detail.away_team or "").strip().casefold()
+    if not home or not away:
+        return None
+    official = []
+    seen = set()
+    counts = {home: 0, away: 0}
+    for goal in detail.goals:
+        if goal.period >= 5 or _unconfirmed_goal(goal):
+            continue
+        team = (goal.team_name or "").strip().casefold()
+        if team not in counts:
+            return None
+        if goal.event_id and goal.event_id in seen:
+            continue
+        if goal.event_id:
+            seen.add(goal.event_id)
+        counts[team] += 1
+        official.append(goal)
+    if counts[home] != detail.score_home or counts[away] != detail.score_away:
+        return None
+    return official
+
+
+def _seconds_since(first_iso: str, now_iso: str) -> float:
+    try:
+        first = datetime.fromisoformat(first_iso.replace("Z", "+00:00"))
+        now = datetime.fromisoformat(now_iso.replace("Z", "+00:00"))
+        return max(0.0, (now - first).total_seconds())
+    except (AttributeError, TypeError, ValueError):
+        return 0.0
+
+
+def select_new_cr7_goals(goals, processed_ids: set, match_date_iso: str, baseline_iso: str) -> list:
+    """Filtre les buts CR7 non comptés, après validation séparée du score."""
     if not match_date_iso or not baseline_iso or match_date_iso < baseline_iso:
         return []
     out = []
-    for g in goals:
-        if not g.is_cr7 or not g.event_id:
+    for goal in goals:
+        if not goal.is_cr7 or not goal.event_id or goal.event_id in processed_ids:
             continue
-        if g.event_id in processed_ids:
+        if goal.period >= 5 or _unconfirmed_goal(goal):
             continue
-        if g.period >= 5:
+        if "own goal" in (goal.raw_text or "").casefold():
             continue
-        if "own goal" in (g.raw_text or "").lower():
-            continue
-        out.append(g)
+        out.append(goal)
     return out
 
 
 def sync_goals(stats: dict) -> bool:
-    """Crédite au compteur les nouveaux buts de CR7 détectés sur ESPN.
+    """Crédite les buts confirmés et retire ceux ensuite annulés par ESPN.
 
-    Regarde d'abord le match du jour (live ou fini) pour l'incrément quasi
-    temps réel via le workflow */10 min, sinon le dernier match terminé
-    (filet de sécurité du run quotidien). Le ledger vit DANS stats.json pour
-    être commité/déployé atomiquement avec le compteur.
+    En direct, deux observations concordantes espacées d'au moins une minute
+    évitent d'ajouter le but provisoire affiché avant la décision VAR. Le
+    compteur ne peut être réconcilié que pour les événements enregistrés dans
+    goal_sync_matches; l'ancien ledger sans ID de match reste historique.
     """
     baseline = stats.get("goal_sync_baseline")
     if not baseline:
@@ -91,36 +140,118 @@ def sync_goals(stats: dict) -> bool:
     detail = None
     try:
         detail = find_team_match_today_cr7()
-    except Exception as e:
-        print(f"  ⚠ sync_goals: fetch match du jour échoué: {e}")
+    except Exception as exc:
+        print(f"  ⚠ sync_goals: fetch match du jour échoué: {exc}")
     if detail is None:
         try:
             last = find_last_match_cr7()
             if last and last.event_id:
                 detail = get_match_summary(last.event_id, getattr(last, "league_slug", None) or "ksa.1")
-        except Exception as e:
-            print(f"  ⚠ sync_goals: fetch dernier match échoué: {e}")
+        except Exception as exc:
+            print(f"  ⚠ sync_goals: fetch dernier match échoué: {exc}")
     if not detail or not (detail.is_finished or detail.is_in_progress):
         return False
-
-    processed = list(stats.get("processed_goal_event_ids") or [])
-    new_goals = select_new_cr7_goals(detail.goals, set(processed), detail.date_iso, baseline)
-    if not new_goals:
+    match_id = str(detail.event_id or "")
+    if not match_id or not detail.date_iso or detail.date_iso < baseline:
         return False
 
-    for g in new_goals:
-        stats["goals"] = stats.get("goals", 0) + 1
-        processed.append(g.event_id)
-        print(f"  ⚽ BUT CR7 #{stats['goals']} crédité ! {g.minute} vs "
-              f"{detail.away_team if str(detail.home_team_id) in CR7_TEAM_IDS else detail.home_team} "
-              f"(event {g.event_id})")
-    stats["remaining"] = TARGET_GOALS - stats["goals"]
-    stats["processed_goal_event_ids"] = processed[-100:]
+    official = _official_goal_events(detail)
+    if official is None:
+        print(f"  ⚠ sync_goals: score et événements incohérents pour le match {match_id}; attente ESPN")
+        return False
+
+    states = dict(stats.get("goal_sync_matches") or {})
+    previous = dict(states.get(match_id) or {})
+    credited = list(previous.get("credited_event_ids") or [])
+    pending = dict(previous.get("pending") or {})
+    missing = dict(previous.get("missing") or {})
+    prior_last_goal = previous.get("prior_last_goal")
+    processed = list(stats.get("processed_goal_event_ids") or [])
+    now = _now_iso()
+    official_ids = {goal.event_id for goal in official if goal.is_cr7 and goal.event_id}
+    explicit_rejections = {
+        goal.event_id for goal in detail.goals
+        if goal.is_cr7 and goal.event_id and _unconfirmed_goal(goal)
+    }
     is_home = str(detail.home_team_id) in CR7_TEAM_IDS
-    stats["last_goal_date"] = (detail.date_iso or "")[:10]
-    stats["last_goal_opponent"] = detail.away_team if is_home else detail.home_team
-    stats["last_goal_competition"] = detail.competition
-    return True
+    opponent = detail.away_team if is_home else detail.home_team
+    count_changed = False
+
+    for event_id in credited[:]:
+        if event_id in official_ids:
+            missing.pop(event_id, None)
+            continue
+        first_missing = missing.get(event_id)
+        if event_id not in explicit_rejections and not detail.is_finished:
+            if first_missing is None:
+                missing[event_id] = now
+                continue
+            if _seconds_since(first_missing, now) < RETRACTION_CONFIRMATION_SECONDS:
+                continue
+        credited.remove(event_id)
+        missing.pop(event_id, None)
+        processed = [item for item in processed if item != event_id]
+        stats["goals"] = stats.get("goals", 0) - 1
+        count_changed = True
+        print(f"  ⚠ but CR7 {event_id} retiré après annulation/correction ESPN")
+
+    candidates = select_new_cr7_goals(
+        official, set(processed) | set(credited), detail.date_iso, baseline
+    )
+    candidate_ids = {goal.event_id for goal in candidates}
+    for event_id in list(pending):
+        if event_id not in candidate_ids:
+            del pending[event_id]
+    for goal in candidates:
+        if not detail.is_finished:
+            first_seen = pending.get(goal.event_id)
+            if first_seen is None:
+                pending[goal.event_id] = now
+                continue
+            if _seconds_since(first_seen, now) < LIVE_CONFIRMATION_SECONDS:
+                continue
+        if not credited and prior_last_goal is None:
+            prior_last_goal = {
+                key: stats.get(key) for key in (
+                    "last_goal_date", "last_goal_opponent", "last_goal_competition"
+                )
+            }
+        credited.append(goal.event_id)
+        processed.append(goal.event_id)
+        pending.pop(goal.event_id, None)
+        stats["goals"] = stats.get("goals", 0) + 1
+        stats["last_goal_date"] = detail.date_iso[:10]
+        stats["last_goal_opponent"] = opponent
+        stats["last_goal_competition"] = detail.competition
+        count_changed = True
+        print(f"  ⚽ BUT CR7 #{stats['goals']} confirmé : {goal.minute} vs "
+              f"{opponent} (event {goal.event_id})")
+
+    if count_changed:
+        stats["remaining"] = TARGET_GOALS - stats["goals"]
+        if not credited and prior_last_goal and (
+            stats.get("last_goal_date") == detail.date_iso[:10]
+            and stats.get("last_goal_opponent") == opponent
+        ):
+            stats.update(prior_last_goal)
+
+    state = {
+        "date_iso": detail.date_iso,
+        "credited_event_ids": credited,
+        "pending": pending,
+        "missing": missing,
+        "prior_last_goal": prior_last_goal,
+    }
+    if credited or pending or missing:
+        states[match_id] = state
+    else:
+        states.pop(match_id, None)
+    state_changed = states != (stats.get("goal_sync_matches") or {})
+    if state_changed:
+        stats["goal_sync_matches"] = states
+    if count_changed or state_changed:
+        stats["processed_goal_event_ids"] = processed[-100:]
+    return count_changed or state_changed
 
 
 def refresh_last_match(stats: dict) -> bool:
@@ -137,7 +268,7 @@ def refresh_last_match(stats: dict) -> bool:
         return False
     is_home = str(detail.home_team_id) in CR7_TEAM_IDS
     opp = detail.away_team if is_home else detail.home_team
-    cr7_goals = [g for g in detail.goals if g.is_cr7]
+    cr7_goals = [g for g in (_official_goal_events(detail) or []) if g.is_cr7]
     cr7_scored = bool(cr7_goals)
     cr7_minute = cr7_goals[-1].minute_int if cr7_goals else None
 
@@ -349,3 +480,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+
