@@ -763,7 +763,7 @@
       <div class="match-copy">
         <p class="kicker reveal" data-i18n="m_kicker">Prochain rendez-vous</p>
         <h2 class="reveal d1" data-i18n-html="m_title">Chaque match <span class="gold">compte double</span></h2>
-        <p class="reveal d2" data-i18n="m_desc">Le Portugal défie la Colombie pour une place au tour suivant. Chaque match du Mondial 2026 peut rapprocher Cristiano Ronaldo du cap mythique des 1000 buts — et nous le couvrons but par but, minute par minute.</p>
+        <p class="reveal d2" data-i18n="m_desc">Chaque rencontre peut rapprocher Cristiano Ronaldo du cap des 1000 buts — avec son club comme avec sa sélection. Résultat du dernier match, date du prochain : nous suivons les deux, but par but, minute par minute.</p>
         <div class="lastmatch reveal d2" id="lastmatch" hidden>
           <p class="lm-kicker" data-i18n="lm_kicker">Dernier match</p>
           <p class="lm-line"><span class="lm-teams"></span> <span class="lm-score"></span></p>
@@ -1028,7 +1028,7 @@
   function t(k){var d=I18N[LANG]||I18N.en; return d[k]!=null?d[k]:(I18N.en[k]!=null?I18N.en[k]:k);}
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 
-  var TEAM_FLAGS={portugal:'pt',colombie:'co',colombia:'co',france:'fr','brésil':'br',bresil:'br',brazil:'br',argentine:'ar',argentina:'ar',espagne:'es',spain:'es','españa':'es',allemagne:'de',germany:'de',angleterre:'gb-eng',england:'gb-eng',maroc:'ma',morocco:'ma','états-unis':'us','etats-unis':'us',usa:'us','united states':'us','pays-bas':'nl',netherlands:'nl',belgique:'be',belgium:'be',uruguay:'uy',suisse:'ch',switzerland:'ch',croatie:'hr',croatia:'hr',italie:'it',italy:'it',mexique:'mx',mexico:'mx',canada:'ca',japon:'jp',japan:'jp',"corée du sud":'kr','south korea':'kr','sénégal':'sn',senegal:'sn',"côte d'ivoire":'ci','ivory coast':'ci','ouzbékistan':'uz',uzbekistan:'uz','rd congo':'cd','dr congo':'cd',ghana:'gh',nigeria:'ng',cameroun:'cm',cameroon:'cm','arabie saoudite':'sa','saudi arabia':'sa',qatar:'qa',australie:'au',australia:'au'};
+  var TEAM_FLAGS={portugal:'pt',wales:'gb-wls','pays de galles':'gb-wls',colombie:'co',colombia:'co',france:'fr','brésil':'br',bresil:'br',brazil:'br',argentine:'ar',argentina:'ar',espagne:'es',spain:'es','españa':'es',allemagne:'de',germany:'de',angleterre:'gb-eng',england:'gb-eng',maroc:'ma',morocco:'ma','états-unis':'us','etats-unis':'us',usa:'us','united states':'us','pays-bas':'nl',netherlands:'nl',belgique:'be',belgium:'be',uruguay:'uy',suisse:'ch',switzerland:'ch',croatie:'hr',croatia:'hr',italie:'it',italy:'it',mexique:'mx',mexico:'mx',canada:'ca',japon:'jp',japan:'jp',"corée du sud":'kr','south korea':'kr','sénégal':'sn',senegal:'sn',"côte d'ivoire":'ci','ivory coast':'ci','ouzbékistan':'uz',uzbekistan:'uz','rd congo':'cd','dr congo':'cd',ghana:'gh',nigeria:'ng',cameroun:'cm',cameroon:'cm','arabie saoudite':'sa','saudi arabia':'sa',qatar:'qa',australie:'au',australia:'au'};
   function setFlag(el,team){if(!el)return;var iso=TEAM_FLAGS[(team||'').toLowerCase().trim()];if(iso){el.style.backgroundImage="url('https://flagcdn.com/w160/"+iso+".png')";el.textContent='';el.classList.add('crest-flag');el.setAttribute('role','img');el.setAttribute('aria-label',team);}else{el.classList.remove('crest-flag');el.style.backgroundImage='';el.textContent=(team||'').slice(0,2).toUpperCase();}}
   (function(){var hb=document.getElementById('hamb'),mm=document.getElementById('mobileMenu');if(!hb||!mm)return;
     function setOpen(open){if(open){mm.removeAttribute('hidden');hb.setAttribute('aria-expanded','true');}else{mm.setAttribute('hidden','');hb.setAttribute('aria-expanded','false');}}
@@ -1181,7 +1181,11 @@
     return null;
   }
   function renderNews(){
-    if(!NEWS)return; var items=(NEWS.items||[]).slice(0,6), grid=document.querySelector('.news-grid'); if(!grid||!items.length)return;
+    if(!NEWS)return; var all=NEWS.items||[], items=all.slice(0,6), grid=document.querySelector('.news-grid'); if(!grid||!items.length)return;
+    // Le match de Ronaldo doit rester visible parmi les six cartes si une nouvelle
+    // information CR7 récente est disponible, même lors d'un afflux d'autres sports.
+    var recentCr7=all.find(function(it){return it.kind==='cr7'&&Date.now()-Date.parse(it.published_at)<86400000&&Date.parse(it.published_at)<=Date.now();});
+    if(recentCr7&&items.indexOf(recentCr7)<0)items[items.length-1]=recentCr7;
     grid.innerHTML=items.map(function(it){
       var L=pickNewsL(it,LANG)||{};
       var tr=L.title||it.title||'';
@@ -1210,9 +1214,29 @@
   document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.lang-sw button'); if(b)setLang(b.getAttribute('data-l'));});
 
   applyStatic();
-  var bust='?_='+Math.floor(Date.now()/60000);
-  fetch('/stats.json'+bust).then(function(r){return r.json();}).then(function(s){STATS=s;renderStats();}).catch(function(e){console.warn('stats',e);});
-  fetch('/news.json'+bust).then(function(r){return r.json();}).then(function(n){NEWS=n;renderNews();}).catch(function(e){console.warn('news',e);});
+  // Un onglet ouvert doit recevoir les buts confirmés et les nouvelles sans rechargement manuel.
+  // Le cache-buster évite de relire une ancienne copie des fichiers publiés par Cloudflare.
+  var loadingStats=false, loadingNews=false;
+  function refreshStats(){
+    if(loadingStats)return; loadingStats=true;
+    fetch('/stats.json?_='+Date.now(),{cache:'no-store'})
+      .then(function(r){if(!r.ok)throw new Error('stats '+r.status);return r.json();})
+      .then(function(s){if(typeof s.goals!=='number')throw new Error('stats invalides');STATS=s;renderStats();})
+      .catch(function(e){console.warn('stats',e);})
+      .finally(function(){loadingStats=false;});
+  }
+  function refreshNews(){
+    if(loadingNews)return; loadingNews=true;
+    fetch('/news.json?_='+Date.now(),{cache:'no-store'})
+      .then(function(r){if(!r.ok)throw new Error('news '+r.status);return r.json();})
+      .then(function(n){if(!Array.isArray(n.items))throw new Error('news invalides');NEWS=n;renderNews();})
+      .catch(function(e){console.warn('news',e);})
+      .finally(function(){loadingNews=false;});
+  }
+  function refreshVisible(){if(document.hidden)return;refreshStats();refreshNews();}
+  refreshVisible();
+  setInterval(refreshVisible,30000);
+  document.addEventListener('visibilitychange',refreshVisible);
 })();
 </script>
 
