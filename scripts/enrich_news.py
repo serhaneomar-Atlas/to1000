@@ -89,6 +89,7 @@ def main():
     items = data.get("items", [])
 
     tr = Translator(cache_path=CACHE)
+    tr.max_gemini_calls = BATCH
     if not tr.gemini_enabled:
         print("[enrich] GEMINI_API_KEY absente — pas d'enrichissement (news-sync publie quand même)")
         return 1

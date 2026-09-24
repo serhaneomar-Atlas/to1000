@@ -1,6 +1,15 @@
 # to1000 — Diagnostic éditorial et mandat Claude
 Auteur : ChatGPT / Atlas — 24 septembre 2026
-Statut : diagnostic fondé sur le code, le flux public et un journal de production ; correctif testé localement. Pas une validation générale de la rédaction.
+Statut : diagnostic fondé sur le code, le flux public et les journaux de production. Première réparation déployée par PR43 ; complément de contrôle préparé. Pas une validation générale de la rédaction.
+
+## Complément de contrôle — 24 septembre, après déploiement
+- PR43 fusionnée : https://github.com/serhaneomar-Atlas/to1000/pull/43 ; déploiement réussi : https://github.com/serhaneomar-Atlas/to1000/actions/runs/36067568389 . Le garde de langue est servi publiquement. Ne pas confondre ce résultat et une rédaction multilingue rétablie.
+- Cache examiné : 925 verdicts edtv8, dont 896 refus et 29 acceptations. Plusieurs motifs opposent la mémoire du modèle au média sur des affiliations actuelles ; cela ne constitue pas une vérification factuelle. Le complément recentre le tri sur la pertinence mondiale, fournit la date actuelle et invalide les anciens verdicts. Il ne garantit pas la véracité des médias.
+- Rédaction Claude du blog : run36064229787, étape « Token Claude absent — blog en pause (pas un echec) ». Les étapes Claude et publication sont sautées malgré un statut global réussi. Connexion à rétablir par le propriétaire, sans communiquer de secret dans une conversation.
+- RSS : les flux AR/EN/ES étaient générés mais non enregistrés par news-sync ; news-editorial ne les régénérait pas après enrichissement. Le complément corrige ces deux chemins. Make et la livraison sociale restent non vérifiés ; aucune publication sociale lancée.
+- Le complément borne les requêtes Gemini réelles, reprises sur erreur incluses, au budget existant de50 par exécution. Pas d'augmentation du budget.
+- Contrôle complet initial : 201 tests réussis,9échecs. Huit anciens tests exigeaient ou supposaient des replis désormais interdits ; ils sont adaptés avec des cas positifs complets et des refus explicites. Le neuvième cherchait littéralement « set -o pipefail » alors que le workflow utilisait « set -euo pipefail », équivalent : écriture explicitée, sans changement de protection. Les66tests ciblés locaux passent après correction ; attendre le contrôle complet distant du complément.
+- Les archives anciennes, les menus de la page article, la qualité des extraits natifs, la diversité des sources et les faits des traductions restent à contrôler. Le tri lexical ne remplace pas une relecture éditoriale.
 
 ## Ce qui est prouvé
 - Le flux de 21:37:58 UTC contient 48 nouvelles. Aucune entrée FR/EN/ES/AR ne porte un moteur Gemini/rédaction : les entrées sont MyMemory ou sans moteur.
@@ -82,4 +91,3 @@ Vérifier les extensions déjà présentes dans Claude avant toute installation.
 - https://www.cafonline.com/ : source officielle pour football africain, pas étalon journalistique indépendant.
 - https://www.bbc.com/sport/football : à consulter dans le navigateur ; lecture web automatisée bloquée ici.
 Ces références ne prouvent ni leur performance commerciale ni une hausse future de notre audience. Tester les choix avec Omar et mesurer ensuite le retour des lecteurs.
-

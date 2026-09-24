@@ -69,6 +69,15 @@ class LocaleTests(unittest.TestCase):
         with patch.object(translator,"urlopen",return_value=Response()),patch.object(translator.time,"sleep"):
             self.assertIsNone(t._call_gemini("system","user"))
         self.assertEqual(t._failures,1)
+    def test_retry_budget_counts_failed_requests(self):
+        from urllib.error import HTTPError
+        t=Translator(); t.gemini_enabled=True; t.api_key="test-key"; t.max_gemini_calls=2
+        with patch.object(translator,"urlopen",side_effect=HTTPError("https://example.test",429,"rate",{},None)) as request,patch.object(translator.time,"sleep"):
+            self.assertIsNone(t._call_gemini("system","user"))
+            self.assertIsNone(t._call_gemini("system","user"))
+        self.assertEqual(request.call_count,2)
+        self.assertEqual(t.stats()["gemini_calls"],2)
+
     def test_node_python_contract_parity(self):
         cases=[item()]
         for f in ("title","summary"):
@@ -81,4 +90,3 @@ class LocaleTests(unittest.TestCase):
         self.assertEqual(json.loads(result.stdout),[[publishable(i,l) for l in PENDING] for i in cases])
 
 if __name__=="__main__": unittest.main()
-
