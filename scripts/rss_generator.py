@@ -221,7 +221,7 @@ def main() -> int:
                 f"""    <item>
       <title>{esc(tr(it, lang, "title"))}</title>
       <link>{esc(link)}</link>
-      <guid isPermaLink="true">{esc(link)}</guid>
+      <guid isPermaLink="true">{esc(SITE + "/news/" + str(it.get("id")))}</guid>
       <pubDate>{rfc822(it.get('published_at', ''))}</pubDate>
       <description>{esc(social_caption(it, lang))}</description>{encl}
     </item>"""
