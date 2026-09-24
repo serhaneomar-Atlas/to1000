@@ -65,18 +65,8 @@ def _traiter(it: dict, tr: Translator) -> tuple[bool, bool, bool]:
             it["i18n"] = merged
             modified = True
     elif review is not None and not review.get("publish"):
-        # Le rédacteur en chef écarte l'article de la Une — mais il reste
-        # dans le fil. Le laisser en traduction MyMemory mot-à-mot, c'est
-        # publier « Royal Madrid » : on lui donne au moins une traduction
-        # Gemini propre (un appel, pas la chaîne complète).
+        # Rejet éditorial : ne pas financer une traduction de remplissage.
         ecarte = True
-        if _engine(it) not in ("gemini-edi", "gemini-editor"):
-            pack = tr.editorialize_pair(title, summary, src, targets)
-            if pack:
-                merged = {**(it.get("i18n") or {}), **pack}
-                if merged != it.get("i18n"):
-                    it["i18n"] = merged
-                    modified = True
 
     if review is not None:
         ed_prev = it.get("editorial") or {}
@@ -88,7 +78,7 @@ def _traiter(it: dict, tr: Translator) -> tuple[bool, bool, bool]:
             it["editorial"] = ed
             modified = True
 
-    return tr._calls_gemini > before, modified, ecarte
+    return tr._calls_gemini - before, modified, ecarte
 
 
 def main():
@@ -101,7 +91,7 @@ def main():
     tr = Translator(cache_path=CACHE)
     if not tr.gemini_enabled:
         print("[enrich] GEMINI_API_KEY absente — pas d'enrichissement (news-sync publie quand même)")
-        return 0
+        return 1
 
     # On parcourt TOUS les articles : le cache dédoublonne — un hit est
     # gratuit (idempotent), un miss = 1 appel Gemini. Le budget porte sur les
@@ -123,7 +113,7 @@ def main():
             print(f"::warning::[enrich] item {it.get('id')} en échec ({e!r}) — sauté")
             continue
         if made_call:
-            new_calls += 1
+            new_calls += int(made_call)
         if modified:
             touched += 1
         if ecarte:
@@ -139,6 +129,11 @@ def main():
         data["items"] = items
         NEWS.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
+    from news_locale import publishable
+    coverage = {l: sum(publishable(it, l) for it in items) for l in SITE_LANGS}
+    print(f"[enrich] articles disponibles par langue: {coverage}")
+    if items and any(n == 0 for n in coverage.values()):
+        print("::warning::[enrich] langue sans article disponible — la rédaction n’est pas opérationnelle")
     if plantes:
         print(f"::warning::[enrich] {plantes} item(s) sautés sur exception")
     print(f"[enrich] {touched} maj / {rejected} écartés / {new_calls} appels Gemini "

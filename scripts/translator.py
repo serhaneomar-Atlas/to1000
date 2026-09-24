@@ -22,6 +22,7 @@ import sys
 import time
 from pathlib import Path
 from typing import Optional
+from news_locale import publishable
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
@@ -155,10 +156,15 @@ class Translator:
             time.sleep(RATE_LIMIT_SLEEP)
             try:
                 candidates = payload.get("candidates") or []
-                if not candidates:
+                candidate = candidates[0] if candidates else {}
+                reason = candidate.get("finishReason") or "NO_CANDIDATE"
+                parts = candidate.get("content", {}).get("parts", [])
+                text = "".join(p.get("text", "") for p in parts if not p.get("thought")).strip()
+                if reason != "STOP" or not text:
+                    self._failures += 1
+                    log(f"Gemini réponse inutilisable: finish={reason}, texte={bool(text)}, model={payload.get('modelVersion', GEMINI_MODEL)}")
                     return None
-                parts = candidates[0].get("content", {}).get("parts", [])
-                return parts[0].get("text", "").strip() if parts else None
+                return text
             except (KeyError, IndexError, AttributeError):
                 return None
         return None
@@ -247,7 +253,8 @@ class Translator:
         cache_key = "edi4:" + hash_key(title + "|" + summary[:200], src, ",".join(langs))
         if self.cache:
             cached = self.cache.get(cache_key)
-            if cached:
+            if cached and all(publishable({"title": title, "summary": summary,
+                    "primary_source": {"lang": src}, "i18n": cached}, l) for l in langs):
                 self._cache_hits += 1
                 return cached
         names = ", ".join(f'"{l}" ({LANG_NAMES.get(l, l)})' for l in langs)
@@ -275,9 +282,9 @@ class Translator:
             e = parsed.get(l) or {}
             t = str(e.get("title", "")).strip()[:300]
             s = str(e.get("summary", "")).strip()[:600]
-            if t or s:
-                out[l] = {"title": repair_calques(t or title, l),
-                          "summary": repair_calques(s or summary, l),
+            if t and s:
+                out[l] = {"title": repair_calques(t, l),
+                          "summary": repair_calques(s, l),
                           "needs_translation": False, "engine": "gemini-edi"}
         if len(out) < len(langs):   # incomplete → let caller fall back
             return None
@@ -300,7 +307,7 @@ class Translator:
             cache_key = hash_key(title + "|" + summary[:200], src, dst)
             if self.cache:
                 cached = self.cache.get(cache_key)
-                if cached:
+                if cached and cached.get("title") and cached.get("summary") and not cached.get("needs_translation") and cached.get("title") != title and cached.get("summary") != summary:
                     self._cache_hits += 1
                     # Les entrées mises en cache AVANT une nouvelle règle de
                     # réparation resserviraient l'erreur à chaque refresh
@@ -330,10 +337,10 @@ class Translator:
                 user = json.dumps({"title": title, "summary": summary[:600]}, ensure_ascii=False)
                 raw = self._call_gemini(system, user)
                 parsed = self._parse_json_block(raw) if raw else None
-                if parsed and parsed.get("title"):
+                if parsed and parsed.get("title") and (not summary or parsed.get("summary")):
                     translated = {
                         "title": str(parsed.get("title", title)).strip()[:300],
-                        "summary": str(parsed.get("summary", summary)).strip()[:600],
+                        "summary": str(parsed.get("summary", "")).strip()[:600],
                         "needs_translation": False,
                         "engine": "gemini",
                     }
@@ -342,10 +349,10 @@ class Translator:
             if translated is None and self.mymemory_enabled:
                 t_title = self._call_mymemory(title, src, dst)
                 t_summary = self._call_mymemory(summary[:500], src, dst) if summary else ""
-                if t_title:
+                if t_title and (not summary or t_summary):
                     translated = {
                         "title": t_title[:300],
-                        "summary": (t_summary or summary)[:600],
+                        "summary": (t_summary or "")[:600],
                         "needs_translation": False,
                         "engine": "mymemory",
                     }

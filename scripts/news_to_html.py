@@ -86,37 +86,12 @@ def best_image(item: dict) -> str | None:
     return item.get("image_url") or item.get("image") or None
 
 
-# Moteurs dont la sortie est montrable : la chaîne éditoriale complète, son
-# raccourci, et la traduction Gemini avec glossaire. MyMemory traduit mot à
-# mot (« أول قبطان لبرجة », « première capitaine … et Aitana et Graham
-# entrent ») : ce brouillon sert de matière première, jamais d'affichage.
-# `redaction` = articles écrits par la rédaction To1000 (custom_news.json) —
-# du travail humain validé, jamais à masquer.
-ENGINES_AFFICHABLES = {"gemini-editor", "gemini-edi", "gemini", "redaction"}
-
-
-def publishable(item: dict, lang: str) -> bool:
-    """La version `lang` peut-elle être montrée à un lecteur ?"""
-    e = (item.get("i18n") or {}).get(lang) or {}
-    if not (e.get("title") or e.get("summary")):
-        return False
-    src = ((item.get("primary_source") or {}).get("lang") or "")[:2].lower()
-    if lang == src:
-        return True                      # texte original de la source
-    return (not e.get("needs_translation")
-            and e.get("engine") in ENGINES_AFFICHABLES)
-
+from news_locale import publishable, PENDING
 
 def best_title(item: dict, lang: str = "fr") -> str:
-    if lang == "fr":
-        if publishable(item, "fr"):
-            return (item.get("title_fr")
-                    or (item.get("i18n", {}).get("fr") or {}).get("title")
-                    or item.get("title") or "Sans titre")
-        # Brouillon machine → texte original de la source, jamais le mot-à-mot.
-        return item.get("title") or "Sans titre"
-    return item.get("title") or "Untitled"
-
+    if publishable(item, lang):
+        return item["i18n"][lang]["title"]
+    return PENDING.get(lang, PENDING["fr"])[0]
 
 # Le fil agrège de l'espagnol, de l'anglais, de l'arabe, de l'allemand, du
 # portugais… Écrire « texte original (anglais) » en dur était faux dans la
@@ -142,20 +117,16 @@ def body_parts(item: dict, lang: str = "fr") -> tuple[str, list]:
     non encore enrichi renvoie une liste vide — la page se rend alors comme
     avant, avec le seul lead.
     """
-    entry = (item.get("i18n", {}) or {}).get(lang) or {}
+    entry = ((item.get("i18n", {}) or {}).get(lang) or {}) if publishable(item, lang) else {}
     parts = [str(p).strip() for p in (entry.get("body") or []) if str(p).strip()]
     fmt = entry.get("format") or "brief"
     return (fmt if fmt in ("brief", "deep", "bullets") else "brief"), parts
 
 
 def best_summary(item: dict, lang: str = "fr") -> str:
-    if lang == "fr":
-        if publishable(item, "fr"):
-            return (item.get("summary_fr")
-                    or (item.get("i18n", {}).get("fr") or {}).get("summary")
-                    or item.get("summary") or "")
-        return item.get("summary") or ""
-    return item.get("summary") or ""
+    if publishable(item, lang):
+        return item["i18n"][lang]["summary"]
+    return PENDING.get(lang, PENDING["fr"])[1]
 
 
 def parse_date(s: str | None) -> datetime | None:
@@ -282,8 +253,8 @@ def render_article(item: dict, all_items: list | None = None) -> str:
             # Jamais de brouillon machine à l'écran : la langue non prête
             # affiche le texte ORIGINAL de la source (dir=auto côté client).
             _i18n_payload[_l] = {
-                "title": item.get("title") or "",
-                "summary": item.get("summary") or "",
+                "title": PENDING[_l][0],
+                "summary": PENDING[_l][1],
                 "body": [], "format": "brief", "fallback": True,
             }
             continue
@@ -332,10 +303,11 @@ def render_article(item: dict, all_items: list | None = None) -> str:
             body_html += "".join(f"<p>{h(p)}</p>" for p in _parts)
     body_html += "</div>"
 
-    if summary_en and summary_en != summary_fr:
+    source_summary = item.get("summary") or ""
+    if source_summary and source_summary != summary_fr:
         _lang = source_lang_label(item)
         _label = f"Voir le texte original ({_lang})" if _lang else "Voir le texte original"
-        body_html += f"<details class=\"original\"><summary id=\"art-orig-label\">{h(_label)}</summary><p>{h(summary_en)}</p></details>"
+        body_html += f"<details class=\"original\"><summary id=\"art-orig-label\">{h(_label)}</summary><p>{h(source_summary)}</p></details>"
 
     # JSON-LD NewsArticle (enriched)
     ld = {
@@ -390,7 +362,7 @@ def render_article(item: dict, all_items: list | None = None) -> str:
         )
 
     # Related ARTICLES on our site (keyword overlap) + generic nav fallback
-    _rel = find_related(item, all_items or [], 4)
+    _rel = find_related(item, [it for it in (all_items or []) if publishable(it, "fr")], 4)
     if _rel:
         _cards = "".join(
             f'<a class="rel-card" href="/news/{(ri.get("slug") or ri.get("id"))}.html">'
@@ -544,7 +516,7 @@ h1 {{ font-size: clamp(1.6rem, 4.5vw, 2.6rem); font-weight: 900; line-height: 1.
   function apply(l){{
     var e=D.i18n[l];if(!e)return;
     var H=document.documentElement;H.lang=l;H.dir=(l==='ar')?'rtl':'ltr';
-    if(e.fallback)H.dir='ltr';
+
     var t=document.getElementById('art-title');if(t&&e.title){{t.textContent=e.title;t.setAttribute('dir','auto');}}
     var ld=document.getElementById('art-lead');if(ld&&e.summary){{ld.textContent=e.summary;ld.setAttribute('dir','auto');}}
     var dev=document.getElementById('art-dev');
@@ -553,23 +525,24 @@ h1 {{ font-size: clamp(1.6rem, 4.5vw, 2.6rem); font-weight: 900; line-height: 1.
         dev.innerHTML=(e.format==='bullets')
           ?'<ul class="essentiel">'+e.body.map(function(p){{return '<li>'+esc(p)+'</li>';}}).join('')+'</ul>'
           :e.body.map(function(p){{return '<p>'+esc(p)+'</p>';}}).join('');
-      }}else if(l!=='fr'){{dev.innerHTML='';}}
+      }}else{{dev.innerHTML='';}}
     }}
     var ui=D.ui[l]||D.ui.fr;
     var ol=document.getElementById('art-orig-label');
     if(ol){{var n=ui.ln[D.src_lang];ol.textContent=ui.orig+(n?' ('+n+')':'');}}
+    var rb=document.querySelector('.related');if(rb)rb.hidden=l!=='fr';
     var rel=document.querySelector('.related h2');if(rel)rel.textContent=ui.related;
     document.title=(e.title||document.title.split(' | ')[0])+' | To1000.com';
   }}
   var LANG=detect();
-  if(LANG!=='fr')apply(LANG);
+  apply(LANG);
   // Mini-sélecteur : changer de langue sans repasser par /news.
   var nav=document.querySelector('.nav .links');
   if(nav){{SUP.forEach(function(l){{
     var a=document.createElement('a');a.href='#';a.textContent=l.toUpperCase();a.setAttribute('data-lang',l);
     a.style.cssText='font-size:0.8rem'+(l===LANG?';color:#f2c14e':'');
     a.onclick=function(ev){{ev.preventDefault();try{{localStorage.setItem('to1000_lang',l);}}catch(e){{}}
-      if(l==='fr'){{location.reload();}}else{{LANG=l;apply(l);
+      {{LANG=l;apply(l);
         nav.querySelectorAll('a[data-lang]').forEach(function(x){{x.style.color=x.getAttribute('data-lang')===l?'#f2c14e':'';}});}}
     }};nav.appendChild(a);
   }});}}

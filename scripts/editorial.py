@@ -14,6 +14,7 @@ travaille sur l'extrait RSS — mais le modèle le sait et n'invente rien.
 import json
 import re
 import sys
+from news_locale import publishable
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -95,14 +96,20 @@ def chief_editor_review(translator, title: str, summary: str, src: str,
     cache_key = "edtv8:" + translator_hash(title, summary, src, langs) if getattr(translator, "cache", None) else None
     if cache_key and translator.cache:
         cached = translator.cache.get(cache_key)
-        if cached:
+        if cached and (cached.get("publish") is False or
+                       all(publishable({"title": title, "summary": summary,
+                           "primary_source": {"lang": src},
+                           "i18n": cached.get("i18n") or {}}, l) for l in langs)):
             return cached
     if not getattr(translator, "gemini_enabled", False):
         return None
 
     def _stage(system, user, max_tokens=900):
         raw = translator._call_gemini(system, user, max_tokens=max_tokens)
-        return translator._parse_json_block(raw) if raw else None
+        parsed = translator._parse_json_block(raw) if raw else None
+        if parsed is None:
+            print(f"::warning::[editorial] JSON absent/invalide au stade {system[:60]!r}; plafond={max_tokens}")
+        return parsed
 
     def _memo(out):
         if cache_key and translator.cache:
@@ -160,7 +167,7 @@ def chief_editor_review(translator, title: str, summary: str, src: str,
         "(90-200 mots au total)\n"
         "   • \"bullets\" — plusieurs faits distincts, récap, liste → 3 à 5 puces "
         "(12-25 mots chacune)\n"
-        "   Dans le doute, prends le format PLUS long : mieux vaut garder une "
+        "   Dans le doute, prends le format le plus court qui conserve les faits : mieux vaut garder une "
         "information que la perdre.\n"
         "3. Écris, dans la LANGUE SOURCE de l'article :\n"
         "   • title   : percutant, fidèle, ≤ 80 caractères\n"
@@ -248,16 +255,16 @@ def chief_editor_review(translator, title: str, summary: str, src: str,
     final = valid.get("i18n") if valid.get("publish") else None
     if final:
         for l in langs:
-            e = (final.get(l) or trad.get(l) or {})
+            e = (final.get(l) or {})
             t = str(e.get("title", "")).strip()[:300]
             lead = str(e.get("lead", "")).strip()[:600]
             parts = [str(p).strip()[:800] for p in (e.get("body") or []) if str(p).strip()]
-            if t or lead:
+            if t and lead:
                 i18n[l] = {
-                    "title": t or title,
+                    "title": t,
                     # `summary` reste le champ historique (cartes, RSS, OG) : on y
                     # met le lead pour ne casser aucun consommateur en aval.
-                    "summary": lead or summary,
+                    "summary": lead,
                     "body": parts,
                     "format": fmt,
                     "needs_translation": False,

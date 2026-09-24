@@ -43,12 +43,11 @@ def card(it):
         title = L.get("title") or it.get("title") or ""
         summ = L.get("summary") or it.get("summary") or ""
     else:
-        title = it.get("title") or ""
-        summ = it.get("summary") or ""
+        return ""
     ps = it.get("primary_source") or {}
     sname = (ps.get("flag", "") + " " if ps.get("flag") else "") + (ps.get("name") or "Football")
     sc = int(it.get("source_count") or len(it.get("sources") or []) or 1)
-    cred = (f'<span class="verif">✓</span>Vérifié · {sc} sources' if sc > 1 else esc(sname))
+    cred = (f'<span class="verif"></span>{sc} sources' if sc > 1 else esc(sname))
     img = it.get("image_url") if safe_url(it.get("image_url")) != "#" else PLACEHOLDER
     kind = '<span class="kindtag">CR7</span>' if it.get("kind") == "cr7" else ""
     return (
@@ -63,7 +62,8 @@ def card(it):
 
 def main():
     data = json.loads(NEWS.read_text(encoding="utf-8"))
-    items = (data.get("items") or [])[:50]
+    from news_locale import publishable
+    items = [it for it in (data.get("items") or []) if publishable(it, "fr")][:50]
     cards = "\n".join(card(it) for it in items)
     page = PAGE.read_text(encoding="utf-8")
     new_grid = f'<div class="news-grid" id="grid">\n{cards}\n</div>'
