@@ -66,27 +66,28 @@
       "summary": "Deux listes distinctes échafaudées, seize nouveaux joueurs appelés, un discours engagé : Jürgen Klopp a déjà marqué les esprits avant même son premier match à la tête de l'Allemagne face aux Pays-Bas, ce jeudi soir (20h45, en direct sur L'Équipe live foot).",
       "i18n": {
         "fr": {
-          "title": "Ligue des nations : «Nous avons des talents exceptionnels», lance Jürgen Klopp, nouveau sélectionneur de l’Allemagne",
-          "summary": "Deux listes distinctes échafaudées, seize nouveaux joueurs appelés, un discours engagé : Jürgen Klopp a déjà marqué les esprits avant même son premier match à la tête de l'Allemagne face aux Pays-Bas, ce jeudi soir (20h45, en direct sur L'Équipe live foot).",
-          "needs_translation": false
+          "title": "Nations League : « Nous avons des talents exceptionnels », lance Jürgen Klopp, nouveau sélectionneur de l'Allemagne",
+          "summary": "Avant son premier match avec l'Allemagne contre les Pays-Bas en Nations League, le nouveau sélectionneur Jürgen Klopp a convoqué seize nouveaux joueurs et salué le vivier exceptionnel à sa disposition.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Nations League: \"We have exceptional talents,\" says Jürgen Klopp, new coach of Germany",
-          "summary": "Two separate lists scaffolded, sixteen new players called, a committed speech: Jürgen Klopp has already made his mark even before his first match at the head of Germany against the Netherlands, this Thursday evening (20:45, live on L 'Équipe live football).",
+          "title": "Nations League: \"We have exceptional talent,\" says Jürgen Klopp, new Germany coach",
+          "summary": "Ahead of his debut with Germany against the Pays-Bas in the Nations League, new manager Jürgen Klopp called up sixteen new players and praised the exceptional talent at his disposal.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "es": {
-          "title": "Liga de las Naciones: \"Tenemos talentos excepcionales\", lanza Jürgen Klopp, nuevo seleccionador de Alemania",
-          "summary": "Dos listas separadas anudadas, dieciséis nuevos jugadores convocados, un discurso comprometido: Jürgen Klopp ya ha marcado las mentes incluso antes de su primer partido al frente de Alemania contra los Países Bajos, este jueves por la noche (20:45, en directo por L 'Équipe live foot).",
+          "title": "Liga de Naciones: «Tenemos un talento excepcional», asegura Jürgen Klopp, nuevo seleccionador de Alemania",
+          "summary": "Antes de su debut al frente de Alemania frente a los Pays-Bas en la Liga de Naciones, el nuevo seleccionador Jürgen Klopp convocó a dieciséis caras nuevas y destacó el gran nivel del plantel.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "دوري الأمم: \"لدينا مواهب استثنائية\"، كما يقول يورغن كلوب، المدرب الجديد لألمانيا",
-          "summary": "قائمتان منفصلتان، ستة عشر لاعبًا جديدًا، خطابًا ملتزمًا: وضع يورغن كلوب بالفعل بصمته حتى قبل مباراته الأولى على رأس ألمانيا ضد هولندا، مساء الخميس (20:45، مباشرة على L 'Équipe بث مباشر لكرة القدم).",
+          "title": "دوري الأمم الأوروبية: «نمتلك مواهب استثنائية»، هكذا صرح يورغن كلوب، مدرب ألمانيا الجديد",
+          "summary": "استدعى يورغن كلوب، المدير الفني الجديد لمنتخب ألمانيا، ستة عشر لاعباً جديداً مشيداً بجودة المواهب المتاحة، وذلك قبل مباراته الأولى أمام هولندا في دوري الأمم الأوروبية.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Deux-listes-au-lieu-d-une-seize-novices-et-un-discours-engage-nouveau-selectionneur-de-l-allemagne-jurgen-klopp-marque-deja-les-esprits/1720761#at_medium=RSS_feeds",
@@ -114,7 +115,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-des-nations/ligue-des-nations-nous-avons-des-talents-exceptionnels-lance-juergen-klopp-nouveau-selectionneur-de-l-allemagne-20260923"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "05157a1b9fd7",
@@ -223,26 +229,27 @@
       "i18n": {
         "es": {
           "title": "New Era tampoco es lo que era",
-          "summary": "A 24 horas de que empezase la Asamblea de Compromisarios, el Barça lanzó un comunicado anunciando un importante acuerdo con Telefónica , como nuevo “partner” oficial, para abastecer los servicios de conectividad del Camp Nou durante cinco años. El mejor socio posible.",
-          "needs_translation": false
+          "summary": "A 24 horas de la Asamblea de Compromisarios, el Barça anunció un acuerdo de patrocinio de cinco años con Telefónica para gestionar la conectividad del Camp Nou.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "New Era isn't what it used to be either",
-          "summary": "24 hours before the start of the Assembly of Committees, Barça released a statement announcing an important agreement with Telefónica , as the new official \"partner\", to supply the connectivity services of the Camp Nou for five years. The best possible partner.",
+          "title": "New Era is not what it used to be either",
+          "summary": "Ahead of the Asamblea de Compromisarios, Barça announced a five-year partnership with Telefónica to provide connectivity services at Camp Nou.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "New Era n'est pas non plus ce qu'il était",
-          "summary": "24 heures après le début de l'Assemblée des Engagements, le Barça a publié un communiqué annonçant un accord important avec Telefónica , en tant que nouveau « partenaire » officiel, pour fournir les services de connectivité du Camp Nou pendant cinq ans. Le meilleur partenaire possible.",
+          "title": "New Era n'est plus ce qu'elle était",
+          "summary": "À 24 heures de son Asamblea de Compromisarios, le Barça a annoncé un partenariat de cinq ans avec Telefónica pour assurer les services de connectivité du Camp Nou.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "العصر الجديد لم يعد كما كان من قبل",
-          "summary": "قبل 24 ساعة من بدء جمعية اللجان، أصدر برشلونة بيانًا يعلن فيه عن اتفاقية مهمة مع Telefónica ، بصفتها \"الشريك\" الرسمي الجديد، لتوفير خدمات الاتصال في Camp Nou لمدة خمس سنوات. أفضل شريك ممكن.",
+          "title": "نيو إيرا لم تعد كما كانت أيضاً",
+          "summary": "أعلن نادي برشلونة، قبل 24 ساعة من انعقاد الجمعية العمومية، عن اتفاقية شراكة لمدة خمس سنوات مع شركة تليفونيكا لتزويد ملعب كامب نو بخدمات الاتصال.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230628/new-tampoco.html",
@@ -264,7 +271,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260924/1004230628/new-tampoco.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b4c3ce45ebd3",
@@ -273,26 +285,27 @@
       "i18n": {
         "es": {
           "title": "Llegó el día: se venden las entradas para la despedida de Messi",
-          "summary": "El expendio de tickets para el Last Dance de Leo se realiza este jueves. Acá, cómo conseguirlos.",
-          "needs_translation": false
+          "summary": "Las entradas para el Last Dance de despedida de Leo Messi se ponen a la venta este jueves.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The day has come: tickets for Messi's farewell are on sale",
-          "summary": "Ticket sales for Leo's Last Dance take place this Thursday. Here's how to get them.",
+          "title": "The day has arrived: tickets go on sale for Messi's farewell",
+          "summary": "Tickets for Leo Messi's farewell Last Dance go on sale this Thursday.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Le jour est arrivé : les billets pour les adieux de Messi sont vendus",
-          "summary": "La vente de billets pour le Last Dance de Leo a lieu ce jeudi. Voici comment les obtenir.",
+          "title": "Le grand jour est arrivé : ouverture de la billetterie pour les adieux de Messi",
+          "summary": "Les billets pour le Last Dance d'adieu de Leo Messi sont mis en vente ce jeudi.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "لقد حان اليوم: تذاكر وداع ميسي معروضة للبيع",
-          "summary": "ستقام مبيعات تذاكر الرقصة الأخيرة لليو يوم الخميس. وإليك كيفية الحصول عليها.",
+          "title": "حان الموعد: طرح تذاكر مباراة وداع ميسي للبيع",
+          "summary": "تنطلق عملية بيع تذاكر مباراة الرقصة الأخيرة لوداع النجم الأرجنتيني ليونيل ميسي هذا الخميس.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/seleccion/llego-dia-venta-entradas-despedida-lionelmessi-seleccionargentina-benin_0_RhiAoVsXzc.html",
@@ -314,7 +327,12 @@
           "url": "https://www.ole.com.ar/seleccion/llego-dia-venta-entradas-despedida-lionelmessi-seleccionargentina-benin_0_RhiAoVsXzc.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d718762781b0",
@@ -514,7 +532,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260924/1004230661/apagon-duelo-sant-andreu-real-madrid-castilla.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "534de0dd3bfc",
@@ -573,26 +596,27 @@
       "i18n": {
         "es": {
           "title": "Pajor: \"Graham es la mejor del mundo\"",
-          "summary": "El vestuario del Barcelona celebró el triunfo en la Champions con una felicidad medida, conscientes de que el camino es larguísimo y la temporada no ha hecho más que comenzar. “Hemos marcado cinco goles, hemos ganado merecidamente.",
-          "needs_translation": false
+          "summary": "Tras la victoria de Barcelona en la Champions por cinco goles, el vestuario celebró con prudencia, mientras Pajor elogió a Graham considerándola la mejor del mundo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "Pajor: \"Graham is the best in the world\"",
-          "summary": "The Barcelona dressing room celebrated the triumph in the Champions League with measured happiness, aware that the road is very long and the season has only just begun. \"We have scored five goals, we have deservedly won.",
+          "summary": "Following Barcelona's five-goal victory in the Champions League, the squad celebrated with restraint, while Pajor hailed Graham as the best player in the world.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Pajor : « Graham est la meilleure au monde »",
-          "summary": "Les vestiaires de Barcelone ont célébré la victoire en Ligue des Champions avec un bonheur mesuré, conscients que le chemin est très long et que la saison ne fait que commencer. « Nous avons marqué cinq buts, nous avons gagné à juste titre.",
+          "title": "Pajor : « Graham est la meilleure du monde »",
+          "summary": "Après la victoire de Barcelona en Champions avec cinq buts marqués, le vestiaire a fêté ce succès avec retenue, tandis que Pajor a désigné Graham comme la meilleure du monde.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "باجور: \"غراهام هو الأفضل في العالم\"",
-          "summary": "احتفلت غرفة خلع الملابس في برشلونة بالانتصار في دوري أبطال أوروبا بسعادة محسوبة، مدركة أن الطريق طويل جدا وأن الموسم قد بدأ للتو. \"لقد سجلنا خمسة أهداف، وفازنا بجدارة.",
+          "title": "بايور: \"غراهام هي الأفضل في العالم\"",
+          "summary": "احتفلت لاعبات برشلونة بحذر عقب فوز مستحق بخمسة أهداف في دوري أبطال أوروبا، في حين أشادت بايور بزميلتها غراهام واعتبرتها الأفضل في العالم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260923/1004230652/pajor-graham-mejor-mundo.html",
@@ -614,7 +638,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260923/1004230652/pajor-graham-mejor-mundo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "69a3d88bbb8e",
@@ -623,26 +652,27 @@
       "i18n": {
         "es": {
           "title": "Ter Stegen y Xavi, reencuentro de amigos: \"Es una persona importante en mi vida\"",
-          "summary": "Este jueves arranca una nueva edición de la Nations League y en el Países Bajos vs Alemania (20.45 horas) arranca una nueva etapa para las dos selecciones, que estrenan entrenador. Xavi Hernández y Jurgen Klopp , casi nada.",
-          "needs_translation": false
+          "summary": "El partido de Nations League entre Países Bajos y Alemania marca una nueva etapa con el debut de Xavi Hernández y Jurgen Klopp al frente de ambas selecciones.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
           "title": "Ter Stegen and Xavi, reunion of friends: \"He is an important person in my life\"",
-          "summary": "This Thursday starts a new edition of the Nations League and in the Netherlands vs Germany (8.45 pm) starts a new stage for the two national teams, which premiere coach. Xavi Hernández and Jurgen Klopp , almost nothing.",
+          "summary": "The Nations League match between Países Bajos and Alemania marks the beginning of a new era with Xavi Hernández and Jurgen Klopp debuting as national team managers.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Ter Stegen et Xavi, retrouvailles d'amis : « C'est une personne importante dans ma vie »",
-          "summary": "Une nouvelle édition de la Nations League commence ce jeudi et aux Pays-Bas contre l'Allemagne (20h45), une nouvelle étape commence pour les deux équipes, qui font leurs débuts d'entraîneur. Xavi Hernandez et Jurgen Klopp , presque rien.",
+          "title": "Ter Stegen et Xavi, retrouvailles entre amis : « C'est une personne importante dans ma vie »",
+          "summary": "Le match de Nations League entre Países Bajos et Alemania marque le début d'une nouvelle ère avec les débuts de Xavi Hernández et Jurgen Klopp sur les bancs.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "تير ستيجن وتشافي، لم شمل الأصدقاء: \"إنه شخص مهم في حياتي\"",
-          "summary": "تبدأ يوم الخميس نسخة جديدة من دوري الأمم وفي هولندا مقابل ألمانيا (الساعة 8.45 مساءً) تبدأ مرحلة جديدة للمنتخبين الوطنيين، اللذين يقدمان العرض الأول للمدرب. تشافي هيرنانديز ويورغن كلوب ، لا شيء تقريبًا.",
+          "title": "تير شتيغن وتشافي، لقاء أصدقاء: \"إنه شخص مهم في حياتي\"",
+          "summary": "تنطلق مرحلة جديدة في دوري الأمم الأوروبية بمواجهة هولندا وألمانيا، التي تشهد الظهور الأول للمدربين تشافي هيرنانديز ويورغن كلوب على رأس المنتخبين.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/uefa-nations-league/20260923/1004230651/ter-stegen-xavi-reencuentro-amigos-persona-importante-mi-vida.html",
@@ -664,7 +694,12 @@
           "url": "https://www.mundodeportivo.com/futbol/uefa-nations-league/20260923/1004230651/ter-stegen-xavi-reencuentro-amigos-persona-importante-mi-vida.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9418afbfe653",
@@ -873,26 +908,27 @@
       "i18n": {
         "es": {
           "title": "1-1: Sant Andreu y Castilla se reparten el premio",
-          "summary": "En un Can Dragó lleno hasta la bandera, el Sant Andreu firmó las tablas contra el Real Madrid Castilla , en un buen partido de ambos.",
-          "needs_translation": false
+          "summary": "Sant Andreu y Real Madrid Castilla empataron 1-1 en un Can Dragó con las gradas llenas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "1-1: Sant Andreu and Castilla share the prize",
-          "summary": "In a Can Dragó full to the brim, Sant Andreu signed the draw against Real Madrid Castilla , in a good match for both.",
+          "title": "1-1: Sant Andreu and Castilla share the spoils",
+          "summary": "Sant Andreu and Real Madrid Castilla drew 1-1 in front of a capacity crowd at Can Dragó.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "1-1 : Sant Andreu et Castille se partagent le prix",
-          "summary": "Dans un Can Dragó rempli jusqu'au drapeau, Sant Andreu a signé les tableaux contre le Real Madrid Castilla , dans un bon match des deux.",
+          "title": "1-1 : Sant Andreu et Castilla se partagent les points",
+          "summary": "Sant Andreu et Real Madrid Castilla se sont neutralisés (1-1) devant des tribunes combles à Can Dragó.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "1-1: يتقاسم سانت أندريو وكاستيلا الجائزة",
-          "summary": "في كان دراغو ممتلئ حتى الحافة، وقع سانت أندريو التعادل ضد ريال مدريد كاستيا ، في مباراة جيدة لكليهما.",
+          "title": "1-1: سانت أندريو وكاستيا يتقاسمان النقاط",
+          "summary": "تعادل سانت أندريو مع ريال مدريد كاستيا بنتيجة 1-1 في ملعب كان دراغو المكتظ بالجماهير.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/futbol-catala/20260923/1004230645/sant-andreu-castilla-reparten-premio.html",
@@ -914,7 +950,12 @@
           "url": "https://www.mundodeportivo.com/futbol/futbol-catala/20260923/1004230645/sant-andreu-castilla-reparten-premio.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "278aee9a5895",
@@ -973,26 +1014,27 @@
       "i18n": {
         "es": {
           "title": "1-1: El Castilla sigue sin poder encontrarse",
-          "summary": "Un pobre punto sumó el Real Madrid Castilla (1-1) en el Narcís Sala, hogar del UE Sant Andreu , y sigue alargando su irregular inicio de curso. Son ya cinco partidos los que han jugado los de Julián de Lerma y solo han ganado uno.",
-          "needs_translation": false
+          "summary": "El Real Madrid Castilla empató 1-1 ante el UE Sant Andreu en el Narcís Sala. El equipo de Julián de Lerma prolonga su inicio irregular con solo una victoria en cinco jornadas.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "1-1: Castile still cannot be found",
-          "summary": "A poor point added Real Madrid Castilla (1-1) in Narcís Sala, home of UE Sant Andreu , and continues to lengthen its irregular start to the course. There have already been five matches played by Julian de Lerma and they have only won one.",
+          "title": "1-1: Castilla still struggling to find their form",
+          "summary": "Real Madrid Castilla drew 1-1 away against UE Sant Andreu at the Narcís Sala. Julián de Lerma's side has recorded just one victory in five matches this season.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "1-1 : Le Castilla ne peut toujours pas se rencontrer",
-          "summary": "Un mauvais point a été ajouté par le Real Madrid Castilla (1-1) au Narcís Sala, domicile de l'UE Sant Andreu , et continue de prolonger son début de cours irrégulier. Les joueurs de Julián de Lerma ont déjà joué cinq matchs et n'en ont gagné qu'un seul.",
+          "title": "1-1 : Le Castilla peine toujours à trouver son rythme",
+          "summary": "Le Real Madrid Castilla a fait match nul 1-1 sur le terrain de l'UE Sant Andreu, au Narcís Sala. L'équipe de Julián de Lerma ne compte qu'une seule victoire en cinq matchs.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "1-1: لا يزال من غير الممكن العثور على قشتالة",
-          "summary": "أضافت نقطة ضعيفة ريال مدريد كاستيا (1-1) في نارسيس سالا، موطن يو إي سانت أندريو ، ويستمر في إطالة بدايته غير المنتظمة للمسار. كانت هناك بالفعل خمس مباريات لعبها جوليان دي ليرما وفازوا بمباراة واحدة فقط.",
+          "title": "1-1: كاستيا يواصل تعثره",
+          "summary": "تعادل ريال مدريد كاستيا 1-1 أمام مضيفه سانت أندريو على ملعب نارسيس سالا. وحقق فريق المدرب خوليان دي ليرما فوزاً واحداً فقط خلال خمس مباريات خاضها هذا الموسم.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260923/1004230643/castilla-sigue-encontrarse.html",
@@ -1014,7 +1056,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260923/1004230643/castilla-sigue-encontrarse.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "19c54d35757d",
@@ -1076,7 +1123,12 @@
           "url": "https://www.sportschau.de/fussball/nationsleague/traumstart-in-amsterdam-klopp-legt-ausgerechnet-gegen-die-elftal-los,vorbericht-deutschland-niederlande-100.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "327f1f7b8f06",
@@ -1447,26 +1499,27 @@
       "i18n": {
         "es": {
           "title": "Así cambiará la selección francesa con Zidane",
-          "summary": "Táctica, estilo de juego, posicionamiento de Kylian Mbappé y diversidad de la plantilla.",
-          "needs_translation": false
+          "summary": "El proyecto de Zidane al frente de Francia implicaría ajustes tácticos, un nuevo estilo de juego y cambios en el posicionamiento de Kylian Mbappé dentro de la plantilla.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "This is how the French national team will change with Zidane",
-          "summary": "Tactics, style of play, positioning of Kylian Mbappé and diversity of the squad.",
+          "title": "How the French national team will change with Zidane",
+          "summary": "Zidane's arrival at the helm of France would bring tactical adjustments, a revamped playing style, and a redefined role for Kylian Mbappé within the squad.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "C'est ainsi que la sélection française changera avec Zidane",
-          "summary": "Tactique, style de jeu, positionnement de Kylian Mbappé et diversité de l'effectif.",
+          "title": "Comment l'équipe de France changera avec Zidane",
+          "summary": "L'arrivée de Zidane à la tête des Bleus entraînerait des ajustements tactiques, une évolution du style de jeu et une redéfinition du rôle de Kylian Mbappé.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "هكذا سيتغير المنتخب الوطني الفرنسي مع زيدان",
-          "summary": "التكتيكات، وأسلوب اللعب، وتمركز كيليان مبابي وتنوع الفريق.",
+          "title": "هكذا سيتغير المنتخب الفرنسي مع زيدان",
+          "summary": "تشمل خطط تولي زيدان تدريب منتخب فرنسا تعديلات تكتيكية، وتطويراً لأسلوب اللعب، وإعادة توظيف لمركز كيليان مبابي وتنوع التشكيلة.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/uefa-nations-league/20260923/1004230620/asi-cambiara-seleccion-francesa-zidane.html",
@@ -1488,7 +1541,12 @@
           "url": "https://www.mundodeportivo.com/futbol/uefa-nations-league/20260923/1004230620/asi-cambiara-seleccion-francesa-zidane.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9a005dfa5461",
@@ -1638,7 +1696,12 @@
           "url": "https://www.mundodeportivo.com/futbol/uefa-nations-league/20260923/1004230621/klopp-no-prometo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ffb8187cf19e",
