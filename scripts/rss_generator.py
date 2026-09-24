@@ -169,28 +169,14 @@ def has_arabic(text: str) -> bool:
 
 
 def lang_ok(item: dict, lang: str) -> bool:
-    """Un item n'entre dans un flux traduit que si sa traduction est réelle.
-    Le pipeline stocke le texte SOURCE en passthrough tant que Gemini n'a pas
-    enrichi : sans ce filtre, rss-en/es publieraient de l'espagnol, etc.
-      - fr : flux historique, toujours inclus (fallback assumé)
-      - ar : détection d'écriture arabe (fiable)
-      - en/es : la traduction existe ET diffère du titre source (l'écriture
-        latine ne distingue pas les langues entre elles)"""
-    if lang == "fr":
-        return True
-    title = ((item.get("i18n") or {}).get(lang) or {}).get("title") or ""
-    if lang == "ar":
-        return has_arabic(title)
-    return bool(title) and title != (item.get("title") or "")
+    from news_locale import publishable
+    return publishable(item, lang)
 
 
 def tr(item: dict, lang: str, field: str) -> str:
-    """Champ traduit avec cascade : langue demandée → FR → texte source."""
-    i18n = item.get("i18n", {}) or {}
-    v = (i18n.get(lang) or {}).get(field)
-    if not v and lang != "fr":
-        v = (i18n.get("fr") or {}).get(field)
-    return v or item.get(f"{field}_fr") or item.get(field, "")
+    if not lang_ok(item, lang):
+        return ""
+    return ((item.get("i18n") or {}).get(lang) or {}).get(field) or ""
 
 
 def social_caption(item: dict, lang: str = "fr") -> str:
@@ -228,14 +214,14 @@ def main() -> int:
         for it in items:
             if not lang_ok(it, lang):
                 continue
-            link = f"{SITE}/news/{it.get('id')}"
+            link = f"{SITE}/news/{it.get('id')}.html?lang={lang}"
             img = cards.get(it.get("id")) or it.get("image_url", "")
             encl = f'\n      <enclosure url="{esc(img)}" type="image/jpeg"/>' if img else ""
             parts.append(
                 f"""    <item>
       <title>{esc(tr(it, lang, "title"))}</title>
       <link>{esc(link)}</link>
-      <guid isPermaLink="true">{esc(link)}</guid>
+      <guid isPermaLink="true">{esc(SITE + "/news/" + str(it.get("id")))}</guid>
       <pubDate>{rfc822(it.get('published_at', ''))}</pubDate>
       <description>{esc(social_caption(it, lang))}</description>{encl}
     </item>"""

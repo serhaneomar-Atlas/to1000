@@ -2,7 +2,8 @@
 <html lang="fr">
 <head>
   <!-- Google Analytics GA4 -->
-  <script src="/consent.js"></script>
+  <script src="/locale-news.js"></script>
+<script src="/consent.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4V8Y6C38VN"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -1176,12 +1177,11 @@
   // qui montrait encore « أول قبطان » après la correction de /news.
   var NEWS_ENGINES_OK={'gemini-editor':1,'gemini-edi':1,'gemini':1,'redaction':1};
   function pickNewsL(it,l){
-    var e=(it.i18n||{})[l]||null,src=(((it.primary_source||{}).lang)||'').slice(0,2);
-    if(e&&(e.title||e.summary)&&(l===src||(!e.needs_translation&&NEWS_ENGINES_OK[e.engine])))return e;
-    return null;
+    return To1000Locale.pick(it,l);
   }
   function renderNews(){
-    if(!NEWS)return; var all=NEWS.items||[], items=all.slice(0,6), grid=document.querySelector('.news-grid'); if(!grid||!items.length)return;
+    if(!NEWS)return; var all=(NEWS.items||[]).filter(function(it){return !!pickNewsL(it,LANG);}), items=all.slice(0,6), grid=document.querySelector('.news-grid'); if(!grid)return;
+    if(!items.length){grid.innerHTML='<p>'+esc(To1000Locale.pending[LANG][2])+'</p>';return;}
     // Le match de Ronaldo doit rester visible parmi les six cartes si une nouvelle
     // information CR7 récente est disponible, même lors d'un afflux d'autres sports.
     var recentCr7=all.find(function(it){return it.kind==='cr7'&&Date.now()-Date.parse(it.published_at)<86400000&&Date.parse(it.published_at)<=Date.now();});
@@ -1195,14 +1195,14 @@
       var more=sc>1?(' +'+(sc-1)):'';
       var img=it.image_url||'/images/mockups/stadium-night.jpg';
       var kind=it.kind==='cr7'?'<span class="kindtag">CR7</span>':'';
-      return '<a class="card in" href="/news/'+esc(it.id)+'.html">'
+      return '<a class="card in" href="/news/'+esc(it.id)+'.html?lang='+LANG+'">'
         +'<span class="thumb" style="background-image:url(\''+String(img).replace(/\x27/g,'%27')+'\')" aria-hidden="true">'+kind+'</span>'
         +'<span class="body">'
           +'<span class="cat">'+esc(sname)+'</span>'
           +'<h4>'+esc(tr)+'</h4>'
           +(sum?'<span class="sum">'+esc(sum)+'</span>':'')
           +'<span class="meta">'
-            +'<span class="src"><span class="verif">✓</span>'+t('news_verified')+esc(more)+'</span>'
+            +'<span class="src">'+esc(sname)+esc(more)+'</span>'
             +'<time datetime="'+esc(it.published_at)+'">'+relTime(it.published_at)+'</time>'
           +'</span>'
           +'<span class="orig">'+t('news_orig')+'</span>'

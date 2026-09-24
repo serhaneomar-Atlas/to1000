@@ -134,11 +134,11 @@ jobs:
                strictement rien de plus.
             1. Lis EDITORIAL/STYLE_GUIDE.md pour la charte (ton, longueur, marque CR7, etc.).
             2. Lis EDITORIAL/roles/JOURNALISTE_CR7.md, JOURNALISTE_MAROC.md ou JOURNALISTE_PORTUGAL.md selon le sujet.
-            3. Rédige un article ORIGINAL en français (600-900 mots) :
-               - H1 percutant avec mot-clé en tête
-               - Lead 50-80 mots qui répond à qui-quoi-quand-où
-               - 3-4 sections H2
-               - Conclusion + lien vers source
+            3. Rédige une brève ORIGINALE en français (40-130 mots ; 180 maximum si plusieurs faits essentiels) :
+               - H1 factuel qui donne l’information, sans suspense
+               - Donne directement qui, quoi, quand ; les chiffres seulement s’ils sont sourcés
+               - Un ou deux paragraphes ou quelques puces selon les faits ; pas de sections forcées
+               - Liens vers les sources ; pas de conclusion de remplissage
                - PAS d'invention de chiffres, citations, scores
             4. Génère un fichier HTML COMPLET dans `public/blog/$(date +%Y%m%d)-{slug}.html`
                - Slug basé sur le titre, kebab-case

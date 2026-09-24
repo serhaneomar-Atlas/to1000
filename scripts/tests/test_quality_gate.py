@@ -63,9 +63,9 @@ def test_needs_translation_bloque_meme_un_moteur_accepte():
     assert not publishable(it, "fr")
 
 
-def test_le_titre_affiche_retombe_sur_l_original_pas_le_mot_a_mot():
+def test_le_titre_affiche_annonce_la_langue_indisponible():
     it = _item()
-    assert best_title(it) == "Patri, primera capitana del Barça y entran Aitana y Graham"
+    assert best_title(it) == "Version française indisponible"
     assert "première capitaine" not in best_title(it)
     assert "mot à mot" not in best_summary(it)
 
