@@ -413,7 +413,7 @@
       "source_count": 2,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
@@ -424,26 +424,27 @@
       "i18n": {
         "es": {
           "title": "El técnico que eligieron Lionel Messi y Luis Suárez para Deportivo LSM",
-          "summary": "El club anunció que Alvaro Apolito, de 37 años, tendrá su primera experiencia como entrenador principal en el equipo que les pertenece al argentino y al uruguayo.",
-          "needs_translation": false
+          "summary": "Deportivo LSM anunció la designación de Alvaro Apolito, de 37 años, como su nuevo entrenador principal, marcando su primera experiencia en el cargo.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "The coach chosen by Lionel Messi and Luis Suárez for Deportivo LSM",
-          "summary": "The club announced that Alvaro Apolito, 37, will have his first experience as head coach in the team that belongs to the Argentine and Uruguayan.",
+          "title": "The manager chosen by Lionel Messi and Luis Suárez for Deportivo LSM",
+          "summary": "Deportivo LSM announced the appointment of 37-year-old Alvaro Apolito as head coach, marking his first experience in the role at the club owned by Lionel Messi and Luis Suárez.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "L'entraîneur qui a choisi Lionel Messi et Luis Suarez pour le Deportivo LSM",
-          "summary": "Le club a annoncé qu'Alvaro Apolito, 37 ans, aura sa première expérience en tant qu'entraîneur principal dans l'équipe qui appartient à l'Argentin et à l'Uruguayen.",
+          "title": "L'entraîneur choisi par Lionel Messi et Luis Suárez pour Deportivo LSM",
+          "summary": "Deportivo LSM a officialisé la nomination d'Alvaro Apolito, 37 ans, comme nouvel entraîneur principal. Il s'agit de sa première expérience à ce poste.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "المدرب الذي اختاره ليونيل ميسي ولويس سواريز لديبورتيفو LSM",
-          "summary": "وأعلن النادي أن ألفارو أبوليتو، 37 عاما، سيخوض تجربته الأولى كمدرب رئيسي في الفريق الذي ينتمي إليه الأرجنتيني والأوروغواياني.",
+          "title": "المدرب الذي اختاره ليونيل ميسي ولويس سواريز لنادي ديبورتيفو إل إس إم",
+          "summary": "أعلن نادي ديبورتيفو إل إس إم تعيين ألفارو أبوليتو (37 عاماً) مدرباً للفريق، في أول تجربة له كمدير فني مع النادي المملوك للنجمين.",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/messi/deportivolsm-luissuarez-alvaroapolito-primerac_0_ki3RTOEpnp.html",
@@ -465,7 +466,12 @@
           "url": "https://www.ole.com.ar/messi/deportivolsm-luissuarez-alvaroapolito-primerac_0_ki3RTOEpnp.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8a2d21a00951",
@@ -1144,7 +1150,12 @@
           "url": "https://www.mundodeportivo.com/futbol/uefa-nations-league/20260924/1004230899/xavi-deja-cosas-claras-primer-once-klopp-confia-adeyemi.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c2b5f2459e3b",
@@ -1153,23 +1164,27 @@
       "i18n": {
         "es": {
           "title": "Peligro conocido: lo quiso Riquelme para Boca y Vasco lo anotó para semifinales",
-          "summary": "El club brasileño incorporó dos futbolistas que inscribirá en la lista de la Copa Sudamericana para el cruce contra el Xeneize por un lugar en la final.",
-          "needs_translation": false
+          "summary": "Vasco inscribió a dos refuerzos en la Copa Sudamericana para disputar las semifinales ante Boca, incluido un futbolista previamente pretendido por Riquelme.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Peligro conocido: lo quiso Riquelme para Boca y Vasco lo anotó para semifinales",
-          "summary": "El club brasileño incorporó dos futbolistas que inscribirá en la lista de la Copa Sudamericana para el cruce contra el Xeneize por un lugar en la final.",
-          "needs_translation": true
+          "title": "A familiar threat: Riquelme wanted him for Boca and Vasco registered him for the semifinals",
+          "summary": "Vasco registered two new signings for the Copa Sudamericana semifinals against Boca, including a player previously targeted by Riquelme.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Peligro conocido: lo quiso Riquelme para Boca y Vasco lo anotó para semifinales",
-          "summary": "El club brasileño incorporó dos futbolistas que inscribirá en la lista de la Copa Sudamericana para el cruce contra el Xeneize por un lugar en la final.",
-          "needs_translation": true
+          "title": "Un danger bien connu : Riquelme le voulait pour Boca et Vasco l'inscrit pour les demi-finales",
+          "summary": "Vasco a inscrit deux recrues pour les demi-finales de Copa Sudamericana face à Boca, dont un joueur ciblé auparavant par Riquelme.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Peligro conocido: lo quiso Riquelme para Boca y Vasco lo anotó para semifinales",
-          "summary": "El club brasileño incorporó dos futbolistas que inscribirá en la lista de la Copa Sudamericana para el cruce contra el Xeneize por un lugar en la final.",
-          "needs_translation": true
+          "title": "خطر مألوف: أراده ريكيلمي لبوكا وفاسكو يقيده لنصف النهائي",
+          "summary": "قيد نادي فاسكو البرازيلي لاعبين جديدين في قائمته لبطولة كوبا سودأمريكانا قبل مواجهة بوكا جونيورز في نصف النهائي، أحدهما كان هدفاً سابقاً لريكيلمي.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/quiso-riquelme-boca-quedo-habilitado-refuerzo-vasco-semifinales_0_XanofDaqM2.html",
@@ -1191,7 +1206,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/quiso-riquelme-boca-quedo-habilitado-refuerzo-vasco-semifinales_0_XanofDaqM2.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "071b76e58fa9",
@@ -1342,7 +1362,12 @@
           "url": "https://www.mundodeportivo.com/futbol/uefa-nations-league/20260924/1004230886/zidane-da-ultima-hora-sobre-mbappe.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "97d4bb0a32fd",
@@ -1868,23 +1893,27 @@
       "i18n": {
         "es": {
           "title": "Cae lesionado el primer jugador del Real Madrid por el 'Virus FIFA'",
-          "summary": "Apenas han comenzado los partidos de selecciones en este parón de dos semanas y el Real Madrid ya ha contabilizado a su primer jugador lesionado.",
-          "needs_translation": false
+          "summary": "Apenas iniciado el parón de selecciones de dos semanas, el Real Madrid ya ha registrado la lesión de su primer futbolista convocado con su equipo nacional.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "Cae lesionado el primer jugador del Real Madrid por el 'Virus FIFA'",
-          "summary": "Apenas han comenzado los partidos de selecciones en este parón de dos semanas y el Real Madrid ya ha contabilizado a su primer jugador lesionado.",
-          "needs_translation": true
+          "title": "First Real Madrid player injured due to the 'FIFA virus'",
+          "summary": "Just as the two-week international break gets underway, Real Madrid has already recorded its first injury among its national team players.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "Cae lesionado el primer jugador del Real Madrid por el 'Virus FIFA'",
-          "summary": "Apenas han comenzado los partidos de selecciones en este parón de dos semanas y el Real Madrid ya ha contabilizado a su primer jugador lesionado.",
-          "needs_translation": true
+          "title": "Un premier joueur du Real Madrid blessé par le « virus FIFA »",
+          "summary": "Dès le début de la trêve internationale de deux semaines, le Real Madrid enregistre déjà la blessure d'un premier joueur retenu en sélection.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "Cae lesionado el primer jugador del Real Madrid por el 'Virus FIFA'",
-          "summary": "Apenas han comenzado los partidos de selecciones en este parón de dos semanas y el Real Madrid ya ha contabilizado a su primer jugador lesionado.",
-          "needs_translation": true
+          "title": "أول لاعب في ريال مدريد يتعرض للإصابة بسبب «فيروس فيفا»",
+          "summary": "مع بداية فترة التوقف الدولي التي تمتد لأسبوعين، سجل ريال مدريد أول إصابة في صفوف لاعبيه المشاركين مع منتخباتهم الوطنية.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260924/1004230872/cae-lesionado-primer-jugador-real-madrid-virus-fifa.html",
@@ -1906,7 +1935,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260924/1004230872/cae-lesionado-primer-jugador-real-madrid-virus-fifa.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5be89b35428e",
@@ -2380,23 +2414,27 @@
       "i18n": {
         "es": {
           "title": "La maldición del Deportivo: el recambio natural de Aubameyang, a quirófano también",
-          "summary": "La suerte no se está alineando con el Deportivo de A Coruña en la última semana. Más bien todo lo contrario.",
-          "needs_translation": false
+          "summary": "El Deportivo de A Coruña suma un nuevo contratiempo médico tras confirmarse que el recambio natural de Aubameyang también deberá ser operado.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "en": {
-          "title": "La maldición del Deportivo: el recambio natural de Aubameyang, a quirófano también",
-          "summary": "La suerte no se está alineando con el Deportivo de A Coruña en la última semana. Más bien todo lo contrario.",
-          "needs_translation": true
+          "title": "Deportivo's curse: Aubameyang's natural replacement also heads to surgery",
+          "summary": "Deportivo have suffered another injury blow as Aubameyang's natural replacement is also set to undergo surgery.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "fr": {
-          "title": "La maldición del Deportivo: el recambio natural de Aubameyang, a quirófano también",
-          "summary": "La suerte no se está alineando con el Deportivo de A Coruña en la última semana. Más bien todo lo contrario.",
-          "needs_translation": true
+          "title": "La malédiction du Deportivo : le remplaçant naturel d'Aubameyang passe lui aussi sur le billard",
+          "summary": "Le Deportivo connaît un nouveau coup dur cette semaine avec le passage obligatoire par la case opération pour le remplaçant naturel d'Aubameyang.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         },
         "ar": {
-          "title": "La maldición del Deportivo: el recambio natural de Aubameyang, a quirófano también",
-          "summary": "La suerte no se está alineando con el Deportivo de A Coruña en la última semana. Más bien todo lo contrario.",
-          "needs_translation": true
+          "title": "لعنة ديبورتيفو: البديل الطبيعي لأوباميانغ يخضع لعملية جراحية أيضاً",
+          "summary": "تلقى نادي ديبورتيفو لا كورونيا ضربة جديدة بعد تأكد خضوع البديل الطبيعي للمهاجم أوباميانغ لعملية جراحية، مما يفاقم أزمة الإصابات في الفريق.",
+          "needs_translation": false,
+          "engine": "gemini-edi"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/deportivo-coruna/20260924/1004230849/maldicion-deportivo-recambio-natural-aubameyang-quirofano.html",
@@ -2418,7 +2456,12 @@
           "url": "https://www.mundodeportivo.com/futbol/deportivo-coruna/20260924/1004230849/maldicion-deportivo-recambio-natural-aubameyang-quirofano.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "735654844b3e",
@@ -2472,7 +2515,7 @@
       "source_count": 1,
       "editorial": {
         "publish": false,
-        "quality": 1,
+        "quality": 2,
         "source_read": "skipped"
       }
     },
