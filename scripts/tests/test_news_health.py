@@ -1,7 +1,10 @@
 """Tests du contrôle de fraîcheur, sans réseau ni secret."""
+import sys
 import unittest
+from pathlib import Path
 from datetime import datetime, timedelta, timezone
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from news_health import evaluate
 
 
