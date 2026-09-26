@@ -697,27 +697,44 @@
       "summary": "Manchester City, reconnu coupable d'infractions financières selon « The Athletic », pourrait écoper de lourdes sanctions, dont un retrait des titres remportés sur la période concernée (de 2009 à 2018).",
       "i18n": {
         "fr": {
-          "title": "Manchester City accusé de violations des règles financières de la Premier League",
-          "summary": "Manchester City, reconnu coupable d'infractions financières selon « The Athletic », pourrait écoper de lourdes sanctions, dont un retrait des titres remportés sur la période concernée (de 2009 à 2018).",
-          "needs_translation": false
+          "title": "Manchester City menacé de perdre ses titres après des infractions financières",
+          "summary": "Manchester City risque de lourdes sanctions sportives après avoir enfreint les règles financières de la Premier League entre 2009 et 2018.",
+          "body": [
+            "Selon les révélations de The Athletic, le club mancunien a été jugé coupable de manquements financiers répétés sur près d'une décennie. Parmi les sanctions potentielles envisagées, l'équipe pourrait notamment se voir retirer les trophées glanés au cours de cette période."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Manchester City accused of violations of Premier League financial rules",
-          "summary": "Manchester City, convicted of financial offences according to \"The Athletic\", could face heavy penalties, including a withdrawal of titles won over the period concerned (from 2009 to 2018).",
+          "title": "Manchester City risk being stripped of titles over financial breaches",
+          "summary": "Manchester City face severe sporting sanctions after breaching Premier League financial regulations between 2009 and 2018.",
+          "body": [
+            "According to revelations from The Athletic, the Manchester club has been found guilty of repeated financial breaches spanning nearly a decade. Among the potential sanctions under consideration, the team could notably be stripped of the trophies lifted during that period."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Manchester City acusado de violar las reglas financieras de la Premier League",
-          "summary": "El Manchester City, declarado culpable de delitos financieros según \"The Athletic\", podría ser objeto de fuertes sanciones, incluida la retirada de los títulos obtenidos durante el período en cuestión (de 2009 a 2018).",
+          "title": "Manchester City se arriesga a perder sus títulos por infracciones financieras",
+          "summary": "Manchester City se expone a duras sanciones deportivas tras haber vulnerado las normas financieras de la Premier League entre 2009 y 2018.",
+          "body": [
+            "Según desvela The Athletic, el club mancuniano ha sido considerado culpable de reiteradas irregularidades financieras a lo largo de casi una década. Entre los posibles castigos que se barajan, el equipo podría verse despojado de los títulos conquistados durante ese periodo."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "مانشستر سيتي متهم بانتهاك القواعد المالية للدوري الإنجليزي الممتاز",
-          "summary": "قد يواجه مانشستر سيتي، المدان بارتكاب جرائم مالية وفقًا لـ \"الرياضي\"، عقوبات شديدة، بما في ذلك سحب الألقاب التي فاز بها خلال الفترة المعنية (من 2009 إلى 2018).",
+          "title": "مانشستر سيتي مهدد بتجريده من ألقابه بسبب خروقات مالية",
+          "summary": "يواجه مانشستر سيتي خطر التعرض لعقوبات رياضية مغلظة إثر انتهاكه اللوائح المالية للدوري الإنجليزي الممتاز بين عامي 2009 و2018.",
+          "body": [
+            "وفقاً لما كشفته صحيفة ذا أثلتيك، ثبُتت إدانة النادي بارتكاب مخالفات مالية متكررة امتدت لقرابة عقد من الزمن. ومن بين العقوبات المحتملة قيد الدراسة، تجريد الفريق من الكؤوس والألقاب التي حصدها خلال تلك الفترة."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/A-quoi-ressemblerait-le-palmares-de-la-premier-league-si-4-des-8-titres-de-manchester-city-lui-etaient-enleves-pour-cause-d-infractions-financieres/1721401#at_medium=RSS_feeds",
@@ -745,7 +762,20 @@
           "url": "https://fr.hespress.com/489967-manchester-city-accuse-de-violations-des-regles-financieres-de-la-premier-league.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-26T14:47:59+00:00"
+        }
+      }
     },
     {
       "id": "40ce00e93995",
@@ -1155,24 +1185,44 @@
       "summary": "Trois comités de pilotage auront lieu en octobre pour les trois sites, alors qu’une décision est attendue à l’automne.",
       "i18n": {
         "fr": {
-          "title": "PSG : Paris, Massy, Poissy… Les dates à garder en tête pour le projet de stade",
-          "summary": "Trois comités de pilotage auront lieu en octobre pour les trois sites, alors qu’une décision est attendue à l’automne.",
-          "needs_translation": false
+          "title": "Nouveau stade du PSG : les comités de pilotage programmés en octobre",
+          "summary": "Le Paris Saint-Germain réunira trois comités de pilotage en octobre pour faire avancer le dossier de son futur stade entre Poissy, Massy et Paris.",
+          "body": [
+            "Les réunions débuteront avec Poissy le 13 octobre au soir, avant l'examen du site de Massy le 16 dans l'après-midi. La date pour Paris doit encore être calée. Ces sessions serviront à évaluer les études de préfaisabilité entre une construction ex nihilo et la rénovation agrandie du Parc des Princes, le choix définitif restant attendu à l'automne 2026."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "PSG : Paris, Massy, Poissy… Les dates à garder en tête pour le projet de stade",
-          "summary": "Trois comités de pilotage auront lieu en octobre pour les trois sites, alors qu’une décision est attendue à l’automne.",
-          "needs_translation": true
+          "title": "PSG's new stadium: steering committees set for October",
+          "summary": "Paris Saint-Germain will convene three steering committee meetings in October to advance plans for their future stadium across Poissy, Massy and Paris.",
+          "body": [
+            "Talks kick off with Poissy on the evening of October 13, followed by Massy on the afternoon of October 16, while the date for Paris is yet to be settled. These sessions will evaluate pre-feasibility studies comparing a brand-new venue against an expanded Parc des Princes, with a final decision still earmarked for autumn 2026."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "PSG : Paris, Massy, Poissy… Les dates à garder en tête pour le projet de stade",
-          "summary": "Trois comités de pilotage auront lieu en octobre pour les trois sites, alors qu’une décision est attendue à l’automne.",
-          "needs_translation": true
+          "title": "Nuevo estadio del PSG: los comités de seguimiento se reunirán en octubre",
+          "summary": "El Paris Saint-Germain convocará tres comités de seguimiento en octubre para acelerar el proyecto de su futuro estadio entre Poissy, Massy y Paris.",
+          "body": [
+            "Las reuniones comenzarán con la opción de Poissy la tarde-noche del 13 de octubre, antes de analizar Massy el 16 por la tarde. La fecha para Paris sigue pendiente de fijación. Estas sesiones servirán para evaluar los informes preliminares de viabilidad entre levantar un recinto de cero o reformar y ampliar el Parc des Princes, con la decisión final aún prevista para el otoño de 2026."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "PSG : Paris, Massy, Poissy… Les dates à garder en tête pour le projet de stade",
-          "summary": "Trois comités de pilotage auront lieu en octobre pour les trois sites, alors qu’une décision est attendue à l’automne.",
-          "needs_translation": true
+          "title": "ملعب باريس سان جيرمان الجديد: لجان التسيير تجتمع في أكتوبر",
+          "summary": "يعقد باريس سان جيرمان ثلاث لجان تسيير خلال شهر أكتوبر لدفع ملف ملعبه المستقبلي بين بواسي وماسي وباريس.",
+          "body": [
+            "تنطلق الاجتماعات ببحث ملف بواسي مساء يوم 13 أكتوبر، قبل دراسة خيار ماسي بعد ظهر يوم 16، في حين لم يُحدد بعد موعد الجلسة الخاصة بالعاصمة باريس. وستُخصص هذه اللقاءات لتقييم دراسات الجدوى الأولية للمفاضلة بين بناء ملعب جديد بالكامل أو توسيع وتحديث بارك دي برانس، علماً أن القرار النهائي مرتقب في خريف 2026."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-1/psg-paris-massy-poissy-les-dates-a-garder-en-tete-pour-le-projet-de-stade-20260926",
@@ -1194,7 +1244,20 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-1/psg-paris-massy-poissy-les-dates-a-garder-en-tete-pour-le-projet-de-stade-20260926"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-26T14:48:01+00:00"
+        }
+      }
     },
     {
       "id": "385ecb578a10",
