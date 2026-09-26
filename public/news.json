@@ -1139,27 +1139,44 @@
       "summary": "Visiblement touché au genou gauche après son but contre la Turquie, Kylian Mbappé, l'attaquant et capitaine de l'équipe de France, a quitté prématurément le terrain ce vendredi soir à Izmit.",
       "i18n": {
         "fr": {
-          "title": "Kylian Mbappé se blesse au genou gauche en marquant lors de Turquie-France",
-          "summary": "Visiblement touché au genou gauche après son but contre la Turquie, Kylian Mbappé, l'attaquant et capitaine de l'équipe de France, a quitté prématurément le terrain ce vendredi soir à Izmit.",
-          "needs_translation": false
+          "title": "Bleus : Kylian Mbappé blessé au genou gauche face à la Turquie",
+          "summary": "Kylian Mbappé a quitté prématurément la pelouse ce vendredi soir à Izmit, touché au genou gauche après avoir marqué contre la Turquie.",
+          "body": [
+            "Capitaine et attaquant des Bleus, le joueur s'est blessé sur l'action de son but. Incapable de poursuivre la rencontre, il a dû céder sa place dans la foulée."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Kylian Mbappé injures his left knee while scoring at Turkey-France",
-          "summary": "Visibly hit in the left knee after his goal against Turkey, Kylian Mbappé, the striker and captain of the French team, left the field prematurely this Friday night in Izmit.",
+          "title": "France: Kylian Mbappé suffers left knee injury against Turkey",
+          "summary": "Kylian Mbappé was forced off early on Friday night in Izmit with a left knee injury suffered while scoring against Turkey.",
+          "body": [
+            "The France captain and striker was visibly hurt right after finding the net. Unable to continue, he had to leave the pitch shortly after his goal."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Kylian Mbappé se lesiona en la rodilla izquierda al marcar en la Turquía-Francia",
-          "summary": "Visiblemente lesionado en la rodilla izquierda después de su gol contra Turquía, Kylian Mbappé, el delantero y capitán de la selección francesa, abandonó prematuramente el terreno de juego este viernes por la noche en Izmit.",
+          "title": "Francia: Kylian Mbappé, lesionado en la rodilla izquierda ante Turquía",
+          "summary": "Kylian Mbappé abandonó antes de tiempo el terreno de juego este viernes en Izmit, tras dañarse la rodilla izquierda al marcar frente a Turquía.",
+          "body": [
+            "El capitán y delantero de la selección francesa sintió dolor justo después de anotar su tanto. Incapaz de continuar el encuentro, tuvo que retirarse de inmediato."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "كيليان مبابي يصيب ركبته اليسرى أثناء تسجيله في تركيا- فرنسا",
-          "summary": "من الواضح أنه أصيب في الركبة اليسرى بعد هدفه ضد تركيا، كيليان مبابي، المهاجم وقائد الفريق الفرنسي، غادر الملعب قبل الأوان مساء الجمعة في إزميت.",
+          "title": "فرنسا: إصابة كيليان مبابي في الركبة اليسرى أمام تركيا",
+          "summary": "غادر كيليان مبابي أرضية الملعب مبكراً مساء الجمعة في إزميت، إثر إصابة في ركبته اليسرى تعرض لها أثناء تسجيله هدفاً ضد تركيا.",
+          "body": [
+            "وتعرض قائد ومهاجم منتخب فرنسا للإصابة فور هز الشباك في هذه المواجهة، مما منعه من استكمال اللقاء واضطره للخروج مباشرة."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Kylian-mbappe-se-blesse-au-genou-gauche-en-marquant-lors-de-turquie-france/1721265#at_medium=RSS_feeds",
@@ -1193,7 +1210,22 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-des-nations/turquie-france-en-video-l-ouverture-du-score-de-kylian-mbappe-qui-se-blesse-sur-le-coup-20260925"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": true,
+        "quality": 8,
+        "source_read": "rss",
+        "semantique": {
+          "note": 7.0,
+          "central_restitue": true,
+          "manque": [
+            "Remplacement par Désiré Doué à la 59e minute dans le cadre de la Ligue des nations"
+          ],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-26T05:33:16+00:00"
+        }
+      }
     },
     {
       "id": "c99dd8e6413f",
