@@ -67,27 +67,44 @@
       "summary": "Dans un communiqué, l'Algérie a annoncé, ce samedi, que son sélectionneur, Brahim Hemdani, avait pris la décision de renvoyer avec effet immédiat Rayan Aït-Nouri du rassemblement des Fennecs. Le comportement du joueur serait en cause.",
       "i18n": {
         "fr": {
-          "title": "Rayan Aït-Nouri renvoyé du stage de l'Algérie par son sélectionneur Brahim Hemdani",
-          "summary": "Dans un communiqué, l'Algérie a annoncé, ce samedi, que son sélectionneur, Brahim Hemdani, avait pris la décision de renvoyer avec effet immédiat Rayan Aït-Nouri du rassemblement des Fennecs. Le comportement du joueur serait en cause.",
-          "needs_translation": false
+          "title": "Algérie : Rayan Aït-Nouri exclu du rassemblement par Brahim Hemdani",
+          "summary": "Le sélectionneur de l'Algérie Brahim Hemdani a exclu Rayan Aït-Nouri du rassemblement national ce samedi, invoquant un problème de comportement.",
+          "body": [
+            "L'éviction prend effet immédiatement, comme l'a précisé la sélection algérienne dans un communiqué officiel ce samedi. L'attitude du défenseur durant le stage des Fennecs a motivé cette décision ferme de l'encadrement technique."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Rayan Aït-Nouri dismissed from the Algeria internship by his coach Brahim Hemdani",
-          "summary": "In a statement, Algeria announced on Saturday that its coach, Brahim Hemdani, had taken the decision to dismiss Rayan Aït-Nouri from the Fennecs rally with immediate effect. The player's behavior would be in question.",
+          "title": "Algeria: Rayan Aït-Nouri dismissed from national camp by Brahim Hemdani",
+          "summary": "Algeria manager Brahim Hemdani dismissed Rayan Aït-Nouri from the national team camp on Saturday, citing behavioral issues.",
+          "body": [
+            "The decision takes immediate effect, as confirmed by the national team in an official statement on Saturday. The player's conduct during the training camp prompted the managerial staff to enforce the disciplinary sanction."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Rayan Aït-Nouri despedido del campamento de Argelia por su seleccionador Brahim Hemdani",
-          "summary": "En un comunicado, Argelia anunció, este sábado, que su seleccionador, Brahim Hemdani, había tomado la decisión de expulsar con efecto inmediato a Rayan Aït-Nouri de la reunión de los Fennecs. Se cuestionaría el comportamiento del jugador.",
+          "title": "Argelia: Brahim Hemdani aparta a Rayan Aït-Nouri de la concentración",
+          "summary": "El seleccionador de Argelia Brahim Hemdani expulsó este sábado a Rayan Aït-Nouri de la concentración nacional tras constatar problemas de conducta.",
+          "body": [
+            "La medida tiene efecto inmediato, según confirmó la selección argelina a través de un comunicado este sábado. La actitud del defensa durante la concentración precipitó la decisión disciplinaria del cuerpo técnico."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "فصل ريان آيت نوري من التدريب الجزائري من قبل مدربه إبراهيم حمداني",
-          "summary": "في بيان، أعلنت الجزائر يوم السبت أن مدربها، إبراهيم حمداني، اتخذ قرار إقالة ريان آيت نوري من رالي الفنكس بأثر فوري. سيكون سلوك اللاعب موضع تساؤل.",
+          "title": "الجزائر: إبراهيم حمداني يستبعد ريان آيت نوري من معسكر المنتخب",
+          "summary": "قرر مدرب منتخب الجزائر إبراهيم حمداني استبعاد ريان آيت نوري من معسكر المنتخب الوطني هذا السبت، بداعي سوء السلوك.",
+          "body": [
+            "يدخل هذا القرار حيز التنفيذ فوراً وفق ما أكده بيان رسمي للمنتخب الجزائري صدر اليوم السبت. وجاء تصرف اللاعب خلال فترة التدريب ليدفع الطاقم الفني إلى اتخاذ هذا الإجراء الانضباطي الحاسم."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Rayan-ait-nouri-renvoye-du-stage-de-l-algerie-par-son-selectionneur-brahim-hemdani/1721412#at_medium=RSS_feeds",
@@ -115,7 +132,20 @@
           "url": "https://www.lefigaro.fr/sports/football/foot-apres-un-clash-avec-son-selectionneur-brahim-hemdani-rayan-ait-nouri-renvoye-du-stage-de-l-algerie-20260926"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-26T21:38:43+00:00"
+        }
+      }
     },
     {
       "id": "1bba4a2d8526",
