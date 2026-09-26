@@ -789,7 +789,12 @@
           "url": "https://www.lequotidiendusport.fr/ballon-d-or-rodri-laisse-terrain-parler/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a4d4ed1c916d",
@@ -1722,7 +1727,12 @@
           "url": "https://www.kicker.de/der-vermeintliche-siegtreffer-alles-rund-um-den-videobeweis-im-nordderby-1256224/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3996babfe5ea",
@@ -1730,24 +1740,44 @@
       "summary": "Le capitaine français s’est blessé, vendredi, en inscrivant l’unique but de la victoire des Bleus face aux Turcs, et a regagné son club. Samedi, le Real Madrid a confirmé sa blessure, sans préciser la durée de l’absence de sa star.",
       "i18n": {
         "fr": {
-          "title": "Kylian Mbappé souffre d’une « hyperextension du genou gauche » après sa blessure lors de Turquie-France",
-          "summary": "Le capitaine français s’est blessé, vendredi, en inscrivant l’unique but de la victoire des Bleus face aux Turcs, et a regagné son club. Samedi, le Real Madrid a confirmé sa blessure, sans préciser la durée de l’absence de sa star.",
-          "needs_translation": false
+          "title": "Kylian Mbappé touché au genou gauche avec les Bleus",
+          "summary": "Le Real Madrid a confirmé l'hyperextension du genou gauche de Kylian Mbappé, blessé vendredi lors du match de l'équipe de France face à la Turquie.",
+          "body": [
+            "Auteur de l'unique but de la victoire tricolore, le capitaine des Bleus s'est blessé sur cette action avant de regagner la capitale espagnole. Le club madrilène n'a en revanche précisé aucune durée d'indisponibilité pour son attaquant."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Kylian Mbappé souffre d’une « hyperextension du genou gauche » après sa blessure lors de Turquie-France",
-          "summary": "Le capitaine français s’est blessé, vendredi, en inscrivant l’unique but de la victoire des Bleus face aux Turcs, et a regagné son club. Samedi, le Real Madrid a confirmé sa blessure, sans préciser la durée de l’absence de sa star.",
-          "needs_translation": true
+          "title": "Kylian Mbappé suffers left knee injury on international duty with France",
+          "summary": "Real Madrid have confirmed that Kylian Mbappé sustained a hyperextension of his left knee while playing for France against Turkey on Friday.",
+          "body": [
+            "The French captain was hurt while scoring the only goal of the match and has already returned to his club. Real Madrid have not specified how long the forward will be sidelined."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Kylian Mbappé souffre d’une « hyperextension du genou gauche » après sa blessure lors de Turquie-France",
-          "summary": "Le capitaine français s’est blessé, vendredi, en inscrivant l’unique but de la victoire des Bleus face aux Turcs, et a regagné son club. Samedi, le Real Madrid a confirmé sa blessure, sans préciser la durée de l’absence de sa star.",
-          "needs_translation": true
+          "title": "Kylian Mbappé sufre una hiperextensión en la rodilla izquierda con Francia",
+          "summary": "El Real Madrid ha confirmado una hiperextensión en la rodilla izquierda de Kylian Mbappé, lesionado este viernes con la selección francesa ante Turquía.",
+          "body": [
+            "El capitán galo se lesionó al marcar el único gol del triunfo de Les Bleus y regresó de inmediato a España. La entidad blanca no ha precisado el tiempo de baja del delantero."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Kylian Mbappé souffre d’une « hyperextension du genou gauche » après sa blessure lors de Turquie-France",
-          "summary": "Le capitaine français s’est blessé, vendredi, en inscrivant l’unique but de la victoire des Bleus face aux Turcs, et a regagné son club. Samedi, le Real Madrid a confirmé sa blessure, sans préciser la durée de l’absence de sa star.",
-          "needs_translation": true
+          "title": "إصابة كيليان مبابي في الركبة اليسرى مع منتخب فرنسا",
+          "summary": "أكد ريال مدريد إصابة نجمه كيليان مبابي بفرط بسط في الركبة اليسرى، تعرض لها يوم الجمعة خلال مواجهة منتخب فرنسا أمام تركيا.",
+          "body": [
+            "وأصيب قائد الديوك أثناء تسجيله هدف الفوز الوحيد لبلاده قبل أن يعود إلى إسبانيا، فيما لم يحدد النادي الملكي مدة غياب مهاجمه عن الملاعب."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lemonde.fr/sport/article/2026/09/26/kylian-mbappe-souffre-d-une-hyperextension-du-genou-gauche-apres-sa-blessure-lors-de-turquie-france_6783508_3242.html",
@@ -1781,7 +1811,20 @@
           "url": "https://www.lemonde.fr/sport/live/2026/09/25/en-direct-turquie-france-suivez-la-1-journee-de-la-ligue-des-nations-de-football_6782618_3242.html"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": true,
+        "quality": 8,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-26T23:59:24+00:00"
+        }
+      }
     },
     {
       "id": "3126a042ba99",
@@ -1854,7 +1897,17 @@
           "url": "https://www.lefigaro.fr/sports/football/foot-apres-un-clash-avec-son-selectionneur-brahim-hemdani-rayan-ait-nouri-renvoye-du-stage-de-l-algerie-20260926"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-26T23:59:28+00:00"
+        }
+      }
     },
     {
       "id": "1bba4a2d8526",
