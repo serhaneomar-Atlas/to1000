@@ -1261,7 +1261,12 @@
           "url": "https://www.calciomio.fr/il-vaut-mieux-un-mauvais-mensonge-quune-belle-verite-sans-banc-depuis-son-depart-du-napoli-il-fait-toujours-trembler-toute-la-serie-a-id-180475"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "cee825571a98",
@@ -1363,24 +1368,44 @@
       "summary": "Joao Felix (26) ha expresado, en una entrevista en el diario AS, su deseo de volver al fútbol europeo y los buenos recuerdos que guarda del FC Barcelona. El centrocampista del Al-Nassr, ex del Atlético y del Barça, dice, además, que nunca hubiera ido al Real Madrid.",
       "i18n": {
         "es": {
-          "title": "\"¿Ir al Real Madrid? ¡Hubiera sido el mayor traidor del fútbol! El Barça fue un sueño\"",
-          "summary": "Joao Felix (26) ha expresado, en una entrevista en el diario AS, su deseo de volver al fútbol europeo y los buenos recuerdos que guarda del FC Barcelona. El centrocampista del Al-Nassr, ex del Atlético y del Barça, dice, además, que nunca hubiera ido al Real Madrid.",
-          "needs_translation": false
+          "title": "João Félix descarta al Real Madrid y planea su vuelta a Europa",
+          "summary": "El atacante luso del Al-Nassr aspira a regresar al fútbol europeo tras recordar con orgullo su etapa en el FC Barcelona.",
+          "body": [
+            "En declaraciones al diario AS, el portugués aseguró que recalar en el Real Madrid tras militar en el Atlético y en el Barça le habría convertido en «el mayor traidor del fútbol». Pese a cerrar su cesión como culé sin títulos, Félix remarcó la satisfacción de cumplir el sueño familiar de vestir la camiseta barcelonista."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "\"¿Ir al Real Madrid? ¡Hubiera sido el mayor traidor del fútbol! El Barça fue un sueño\"",
-          "summary": "Joao Felix (26) ha expresado, en una entrevista en el diario AS, su deseo de volver al fútbol europeo y los buenos recuerdos que guarda del FC Barcelona. El centrocampista del Al-Nassr, ex del Atlético y del Barça, dice, además, que nunca hubiera ido al Real Madrid.",
-          "needs_translation": true
+          "title": "João Félix rules out Real Madrid move and eyes European return",
+          "summary": "The Portuguese Al-Nassr forward aims to head back to Europe, looking back with pride on his time at FC Barcelona.",
+          "body": [
+            "Speaking to Spanish outlet AS, the Portuguese international claimed that joining Real Madrid after spells with Atlético and Barça would have branded him \"football's biggest traitor.\" Despite finishing his loan stint with the culés without silverware, Félix underscored the joy of fulfilling a family dream by wearing the FC Barcelona shirt."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "\"¿Ir al Real Madrid? ¡Hubiera sido el mayor traidor del fútbol! El Barça fue un sueño\"",
-          "summary": "Joao Felix (26) ha expresado, en una entrevista en el diario AS, su deseo de volver al fútbol europeo y los buenos recuerdos que guarda del FC Barcelona. El centrocampista del Al-Nassr, ex del Atlético y del Barça, dice, además, que nunca hubiera ido al Real Madrid.",
-          "needs_translation": true
+          "title": "João Félix écarte le Real Madrid et prépare son retour en Europe",
+          "summary": "L'attaquant portugais d'Al-Nassr vise un retour sur le Vieux Continent après être revenu avec fierté sur son passage au FC Barcelona.",
+          "body": [
+            "Dans les colonnes du quotidien AS, l'international portugais a affirmé que signer au Real Madrid après avoir défendu les couleurs de l'Atlético puis du Barça aurait fait de lui « le plus grand traître du football ». Même si son prêt en Catalogne s'est achevé sans le moindre trophée, Félix a insisté sur le bonheur d'avoir exaucé un rêve familial en portant le maillot blaugrana."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "\"¿Ir al Real Madrid? ¡Hubiera sido el mayor traidor del fútbol! El Barça fue un sueño\"",
-          "summary": "Joao Felix (26) ha expresado, en una entrevista en el diario AS, su deseo de volver al fútbol europeo y los buenos recuerdos que guarda del FC Barcelona. El centrocampista del Al-Nassr, ex del Atlético y del Barça, dice, además, que nunca hubiera ido al Real Madrid.",
-          "needs_translation": true
+          "title": "جواو فيليكس يستبعد الانتقال إلى ريال مدريد ويخطط للعودة إلى أوروبا",
+          "summary": "يتطلع المهاجم البرتغالي لنادي النصر إلى العودة لمنافسات الكرة الأوروبية، مستحضراً باعتزاز تجربته السابقة مع نادي برشلونة.",
+          "body": [
+            "وفي تصريحات لصحيفة آس، أكد الدولي البرتغالي أن الانتقال إلى ريال مدريد بعد اللعب في صفوف أتلتيكو مدريد ثم برشلونة كان سيجعله «أكبر خائن في تاريخ كرة القدم». ورغم انتهاء فترة إعارته للفريق الكتالوني دون حصد أي لقب، شدد فيليكس على فخره بتحقيق حلم عائلي بارتداء قميص البلوغرانا."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/internacional/20260927/1004231729/real-madrid-hubiera-sido-mayor-traidor-futbol-barca-sueno.html",
@@ -1402,7 +1427,20 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20260927/1004231729/real-madrid-hubiera-sido-mayor-traidor-futbol-barca-sueno.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-27T15:42:46+00:00"
+        }
+      }
     },
     {
       "id": "ae8d27af8bd3",
