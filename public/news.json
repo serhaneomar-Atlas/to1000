@@ -771,7 +771,12 @@
           "url": "https://africatopsports.com/football/elim-can-2027-cap-vert-rwanda-les-compos-probables-des-deux-equipes/"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "12d66d50a152",
@@ -842,7 +847,17 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20260928/1004232343/rodrygo-da-nuevo-paso-recuperacion.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-29T07:37:57+00:00"
+        }
+      }
     },
     {
       "id": "9b4c8a9217f3",
@@ -1654,7 +1669,12 @@
           "url": "https://www.lequotidiendusport.fr/equipe-de-france-pierre-menes-defend-kylian-mbappe/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "39f9ae77fc23",
@@ -2184,24 +2204,44 @@
       "summary": "Libre depuis son départ de Botafogo, en juin, le Brésilien Neto (37 ans) regagne l'Italie et la Juventus pour être gardien numéro 2 du club piémontais jusqu'à la fin de la saison.",
       "i18n": {
         "fr": {
-          "title": "Mercato : la Juventus rappelle son ancien gardien brésilien Neto, sans contrat à 37 ans",
-          "summary": "Libre depuis son départ de Botafogo, en juin, le Brésilien Neto (37 ans) regagne l'Italie et la Juventus pour être gardien numéro 2 du club piémontais jusqu'à la fin de la saison.",
-          "needs_translation": false
+          "title": "Mercato : Neto revient à la Juventus comme gardien numéro deux",
+          "summary": "La Juventus engage son ancien portier Neto jusqu'à la fin de la saison pour occuper le rôle de doublure dans les cages piémontaises.",
+          "body": [
+            "Sans club depuis son départ de Botafogo en juin dernier, le gardien brésilien de 37 ans arrive libre pour renforcer l'effectif turinois."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Mercato : la Juventus rappelle son ancien gardien brésilien Neto, sans contrat à 37 ans",
-          "summary": "Libre depuis son départ de Botafogo, en juin, le Brésilien Neto (37 ans) regagne l'Italie et la Juventus pour être gardien numéro 2 du club piémontais jusqu'à la fin de la saison.",
-          "needs_translation": true
+          "title": "Transfer news: Neto returns to Juventus as backup goalkeeper",
+          "summary": "Juventus have signed their former goalkeeper Neto until the end of the season to serve as the team's number two.",
+          "body": [
+            "A free agent since leaving Botafogo last June, the 37-year-old Brazilian returns to Italy to provide cover between the posts in Turin."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Mercato : la Juventus rappelle son ancien gardien brésilien Neto, sans contrat à 37 ans",
-          "summary": "Libre depuis son départ de Botafogo, en juin, le Brésilien Neto (37 ans) regagne l'Italie et la Juventus pour être gardien numéro 2 du club piémontais jusqu'à la fin de la saison.",
-          "needs_translation": true
+          "title": "Mercado: Neto regresa a la Juventus como portero suplente",
+          "summary": "La Juventus ha fichado a su exportero Neto hasta el final de la temporada para asumir el rol de suplente bajo palos.",
+          "body": [
+            "Libre tras su salida de Botafogo el pasado mes de junio, el guardameta brasileño de 37 años regresa a Italia para completar la plantilla turinesa."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Mercato : la Juventus rappelle son ancien gardien brésilien Neto, sans contrat à 37 ans",
-          "summary": "Libre depuis son départ de Botafogo, en juin, le Brésilien Neto (37 ans) regagne l'Italie et la Juventus pour être gardien numéro 2 du club piémontais jusqu'à la fin de la saison.",
-          "needs_translation": true
+          "title": "سوق الانتقالات: نيتو يعود إلى يوفنتوس حارساً بديلاً",
+          "summary": "تعاقد نادي يوفنتوس مع حارسه السابق نيتو حتى نهاية الموسم ليتولى دور الحارس الثاني في الفريق الإيطالي.",
+          "body": [
+            "وكان الحارس البرازيلي البالغ 37 عاماً دون فريق منذ رحيله عن بوتافوغو في يونيو الماضي، قبل أن يعود إلى تورينو في صفقة انتقال حر."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Mercato-la-juventus-rappelle-son-ancien-gardien-bresilien-neto-sans-contrat-a-37-ans/1721920#at_medium=RSS_feeds",
@@ -2223,7 +2263,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Mercato-la-juventus-rappelle-son-ancien-gardien-bresilien-neto-sans-contrat-a-37-ans/1721920#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-29T07:38:00+00:00"
+        }
+      }
     },
     {
       "id": "a908af25e3b8",
