@@ -115,7 +115,12 @@
           "url": "https://www.kicker.de/schlaflose-naechte-wemby-kaempft-immer-noch-mit-finals-niederlage-1256836/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d775dc18daee",
@@ -221,7 +226,12 @@
           "url": "https://africatopsports.com/football/elim-can-2027-le-maroc-veut-enchainer-face-au-lesotho/"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d991c2602c49",
@@ -535,27 +545,44 @@
       "summary": "Battu par la Côte d’Ivoire (2-0) lors de la première journée, le Ghana retrouve la compétition ce mardi avec la réception de la Gambie.",
       "i18n": {
         "fr": {
-          "title": "Elim CAN 2027 : le Ghana doit réagir contre la Gambie",
-          "summary": "Battu par la Côte d’Ivoire (2-0) lors de la première journée, le Ghana retrouve la compétition ce mardi avec la réception de la Gambie.",
-          "needs_translation": false
+          "title": "Éliminatoires CAN 2027 : le Ghana sous pression face à la Gambie",
+          "summary": "Le Ghana accueille la Gambie ce mardi avec l'obligation de se relancer dans les éliminatoires de la CAN 2027.",
+          "body": [
+            "Les Black Stars doivent réagir après leur faux départ. Battus 2-0 par la Côte d'Ivoire lors de la première journée, les Ghanéens retrouvent leur public avec la nécessité d'effacer ce revers pour lancer enfin leur campagne qualificative."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Elim can 2027: Ghana must react against Gambia",
-          "summary": "Beaten by Côte d 'Ivoire (2-0) on the first day, Ghana returned to the competition on Tuesday with the reception of Gambia.",
+          "title": "AFCON 2027 qualifiers: Ghana under pressure against Gambia",
+          "summary": "Ghana host Gambia this Tuesday under heavy pressure to get their AFCON 2027 qualifying campaign back on track.",
+          "body": [
+            "The Black Stars must issue an immediate response after a disappointing start. Beaten 2-0 by Côte d'Ivoire on matchday one, Ghana return home with no room for error, determined to erase that opening defeat."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Elim Can 2027: Ghana debe reaccionar contra Gambia",
-          "summary": "Derrotado por Costa de Marfil (2-0) en la primera jornada, Ghana vuelve a la competición este martes con la recepción de Gambia.",
+          "title": "Clasificación CAN 2027: Ghana, bajo presión ante Gambia",
+          "summary": "Ghana recibe este martes a Gambia con la obligación inaplazable de reaccionar en la fase clasificatoria de la CAN 2027.",
+          "body": [
+            "Los Black Stars necesitan corregir el rumbo de inmediato tras su tropiezo inicial. Superados 2-0 por Côte d'Ivoire en la primera jornada, los ghaneses afrontan este segundo choque en casa urgidos de sumar para no complicarse el camino."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "إيليم كان 2027: يجب أن تتفاعل غانا ضد غامبيا",
-          "summary": "بعد هزيمة كوت ديفوار (2-0) في اليوم الأول، عادت غانا إلى المنافسة يوم الثلاثاء مع استقبال غامبيا.",
+          "title": "تصفيات كأس أمم إفريقيا 2027: غانا تحت الضغط أمام غامبيا",
+          "summary": "يستضيف منتخب غانا نظيره الغامبي هذا الثلاثاء، وعينه على تصحيح المسار والعودة إلى سكة الانتصارات ضمن تصفيات كأس أمم إفريقيا 2027.",
+          "body": [
+            "يتعين على المنتخب الغاني تدارك الموقف سريعاً بعد بدايته المتعثرة. فبعد الخسارة بهدفين دون رد أمام كوت ديفوار في الجولة الأولى، يخوض الفريق هذه المواجهة على أرضه بهدف محو آثار السقوط وتحقيق فوزه الأول في التصفيات."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/football/elim-can-2027-le-ghana-doit-reagir-contre-la-gambie/",
@@ -577,7 +604,20 @@
           "url": "https://africatopsports.com/football/elim-can-2027-le-ghana-doit-reagir-contre-la-gambie/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-29T14:25:23+00:00"
+        }
+      }
     },
     {
       "id": "936adab3fba2",
