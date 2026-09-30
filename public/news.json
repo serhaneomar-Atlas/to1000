@@ -783,7 +783,12 @@
           "url": "https://www.fourfourtwo.com/quiz/quickfire-quiz-214"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a085b1fa90d6",
@@ -933,7 +938,12 @@
           "url": "https://www.kicker.de/boston-gegen-ny-rangers-2026-nhl-5244133/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "588fb10d04aa",
@@ -941,24 +951,44 @@
       "summary": "La révélation des infractions financières commises par le club mancunien a suscité de violentes critiques à son encontre, ainsi que des appels à des sanctions exemplaires.",
       "i18n": {
         "fr": {
-          "title": "Reconnu coupable de 114 infractions financières, Manchester City de plus en plus isolé et ciblé de toutes parts",
-          "summary": "La révélation des infractions financières commises par le club mancunien a suscité de violentes critiques à son encontre, ainsi que des appels à des sanctions exemplaires.",
-          "needs_translation": false
+          "title": "Manchester City : 114 infractions financières et une pluie de critiques",
+          "summary": "Reconnu coupable de 114 infractions financières, Manchester City affronte une vague d'indignation et des demandes pressantes de sanctions exemplaires.",
+          "body": [
+            "La mise au jour de ces multiples manquements isole désormais le club mancunien, pris pour cible par de virulentes attaques. Face à l'ampleur du dossier, les appels se multiplient pour réclamer des mesures disciplinaires d'une sévérité inédite."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Reconnu coupable de 114 infractions financières, Manchester City de plus en plus isolé et ciblé de toutes parts",
-          "summary": "La révélation des infractions financières commises par le club mancunien a suscité de violentes critiques à son encontre, ainsi que des appels à des sanctions exemplaires.",
-          "needs_translation": true
+          "title": "Manchester City: 114 financial breaches trigger fierce backlash",
+          "summary": "Found guilty of 114 financial breaches, Manchester City face a wave of outrage and mounting calls for exemplary sanctions.",
+          "body": [
+            "The confirmation of these widespread violations leaves the Manchester club increasingly isolated under heavy fire. Rivals and observers are now pressing for severe disciplinary action to match the scale of the findings."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Reconnu coupable de 114 infractions financières, Manchester City de plus en plus isolé et ciblé de toutes parts",
-          "summary": "La révélation des infractions financières commises par le club mancunien a suscité de violentes critiques à son encontre, ainsi que des appels à des sanctions exemplaires.",
-          "needs_translation": true
+          "title": "Manchester City: 114 infracciones financieras y un aluvión de críticas",
+          "summary": "Declarado culpable de 114 infracciones financieras, Manchester City afronta una oleada de indignación y firmes peticiones de un castigo ejemplar.",
+          "body": [
+            "La gravedad de estas irregularidades aísla a la entidad mancuniana, blanco de durísimos ataques. Ante la magnitud del caso, arrecian las presiones para imponer sanciones disciplinarias drásticas al club inglés."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Reconnu coupable de 114 infractions financières, Manchester City de plus en plus isolé et ciblé de toutes parts",
-          "summary": "La révélation des infractions financières commises par le club mancunien a suscité de violentes critiques à son encontre, ainsi que des appels à des sanctions exemplaires.",
-          "needs_translation": true
+          "title": "مانشستر سيتي: 114 مخالفة مالية وعاصفة من الانتقادات",
+          "summary": "يواجه مانشستر سيتي موجة غضب عارمة ومطالبات حاشدة بفرض عقوبات رادعة، بعد ثبوت إدانته بارتكاب 114 مخالفة مالية.",
+          "body": [
+            "تسببت هذه الخروقات في عزل النادي الإنجليزي الذي وجد نفسه محاصراً بهجوم حاد من كل جانب، وسط تصاعد الضغوط لفرض إجراءات انضباطية صارمة تتناسب مع حجم التجاوزات المكتشفة."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Article/Reconnu-coupable-de-114-infractions-financieres-manchester-city-de-plus-en-plus-isole-et-cible-de-toutes-parts/1722235#at_medium=RSS_feeds",
@@ -980,7 +1010,20 @@
           "url": "https://www.lequipe.fr/Football/Article/Reconnu-coupable-de-114-infractions-financieres-manchester-city-de-plus-en-plus-isole-et-cible-de-toutes-parts/1722235#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-09-30T08:37:53+00:00"
+        }
+      }
     },
     {
       "id": "6820a315eb67",
@@ -1168,7 +1211,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20260930/1004232765/lamine-yamal-vacuno-livakovic.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4daf1a819a05",
@@ -1621,7 +1669,7 @@
           ],
           "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-editor"
+          "engine": "retire-par-audit"
         },
         "en": {
           "title": "Lamine Yamal shines as Spain cruise past Croatia in Nations League",
@@ -1631,7 +1679,7 @@
           ],
           "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-editor"
+          "engine": "retire-par-audit"
         },
         "es": {
           "title": "Lamine Yamal lidera la goleada de España ante Croacia en la Nations League",
@@ -1641,7 +1689,7 @@
           ],
           "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-editor"
+          "engine": "retire-par-audit"
         },
         "ar": {
           "title": "لامين يامال يقود إسبانيا لاكتساح كرواتيا في دوري الأمم الأوروبية",
@@ -1651,7 +1699,7 @@
           ],
           "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-editor"
+          "engine": "retire-par-audit"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Un-double-et-une-passe-decisive-contre-la-croatie-devoir-accompli-avec-l-espagne-pour-lamine-yamal/1722252#at_medium=RSS_feeds",
@@ -1685,7 +1733,19 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Video-encore-un-but-apres-moins-de-deux-minutes-pour-lamine-yamal-avec-l-espagne/1722209#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "semantique": {
+          "note": 8.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [
+            "Lamine Yamal est qualifié de « prodige de 19 ans », alors qu'il est né en juillet 2007 (il a 17 ans en 2024/2025)."
+          ],
+          "retire": true,
+          "ts": "2026-09-30T08:37:57+00:00"
+        }
+      }
     },
     {
       "id": "e4e905cf0142",
