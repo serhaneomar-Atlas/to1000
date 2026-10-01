@@ -805,7 +805,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261001/1004232954/brilli-brilli.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "de92a44d0242",
@@ -1201,7 +1206,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261001/1004233027/lamine-gordon-entradas-clasico.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "110fe9b85164",
@@ -1209,24 +1219,44 @@
       "summary": "Lilian Thuram, l'ancien joueur de l'équipe de France, engagé dans la lutte contre le racisme et l'extrême droite, rejoint les prises de parole de Teddy Riner et de Kylian Mbappé sur ce sujet. Il explique les raisons qui le poussent à refuser de se taire.",
       "i18n": {
         "fr": {
-          "title": "Engagé dans la lutte contre l'extrême droite, Lilian Thuram raconte ce qui le pousse à poursuivre son combat : « Riner, Mbappé ou moi, on doit être des lanceurs d'alerte »",
-          "summary": "Lilian Thuram, l'ancien joueur de l'équipe de France, engagé dans la lutte contre le racisme et l'extrême droite, rejoint les prises de parole de Teddy Riner et de Kylian Mbappé sur ce sujet. Il explique les raisons qui le poussent à refuser de se taire.",
-          "needs_translation": false
+          "title": "Lilian Thuram appelle les sportifs à devenir des lanceurs d'alerte",
+          "summary": "Lilian Thuram soutient les prises de position de Kylian Mbappé et Teddy Riner face à la montée de l'extrême droite.",
+          "body": [
+            "Fidèle à son combat contre le racisme, le champion du monde 1998 affirme la nécessité pour les figures majeures du sport de s'exprimer publiquement. L'ancien défenseur des Bleus explique pourquoi il refuse le silence et revendique ce rôle de vigie citoyenne partagé avec les nouvelles générations d'athlètes."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Engagé dans la lutte contre l'extrême droite, Lilian Thuram raconte ce qui le pousse à poursuivre son combat : « Riner, Mbappé ou moi, on doit être des lanceurs d'alerte »",
-          "summary": "Lilian Thuram, l'ancien joueur de l'équipe de France, engagé dans la lutte contre le racisme et l'extrême droite, rejoint les prises de parole de Teddy Riner et de Kylian Mbappé sur ce sujet. Il explique les raisons qui le poussent à refuser de se taire.",
-          "needs_translation": true
+          "title": "Lilian Thuram urges top athletes to speak out as watchdogs",
+          "summary": "Lilian Thuram has backed the outspoken stances of Kylian Mbappé and Teddy Riner against the rise of the far right.",
+          "body": [
+            "True to his long-standing fight against racism, the 1998 World Cup winner insists that high-profile sports figures must make their voices heard. The former France defender explained why staying silent is not an option, embracing this watchdog role alongside a new generation of athletes."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Engagé dans la lutte contre l'extrême droite, Lilian Thuram raconte ce qui le pousse à poursuivre son combat : « Riner, Mbappé ou moi, on doit être des lanceurs d'alerte »",
-          "summary": "Lilian Thuram, l'ancien joueur de l'équipe de France, engagé dans la lutte contre le racisme et l'extrême droite, rejoint les prises de parole de Teddy Riner et de Kylian Mbappé sur ce sujet. Il explique les raisons qui le poussent à refuser de se taire.",
-          "needs_translation": true
+          "title": "Lilian Thuram pide a los deportistas dar la voz de alarma",
+          "summary": "Lilian Thuram respalda las declaraciones de Kylian Mbappé y Teddy Riner frente al avance de la extrema derecha.",
+          "body": [
+            "Fiel a su lucha contra el racismo, el campeón del mundo de 1998 defiende que las grandes figuras del deporte deben pronunciarse públicamente. El exdefensa de la selección francesa expuso los motivos que le impiden guardar silencio y reivindicó este papel de alerta ciudadana, compartido con las nuevas generaciones de deportistas."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Engagé dans la lutte contre l'extrême droite, Lilian Thuram raconte ce qui le pousse à poursuivre son combat : « Riner, Mbappé ou moi, on doit être des lanceurs d'alerte »",
-          "summary": "Lilian Thuram, l'ancien joueur de l'équipe de France, engagé dans la lutte contre le racisme et l'extrême droite, rejoint les prises de parole de Teddy Riner et de Kylian Mbappé sur ce sujet. Il explique les raisons qui le poussent à refuser de se taire.",
-          "needs_translation": true
+          "title": "ليليان تورام يدعو الرياضيين إلى لعب دور صفارات الإنذار",
+          "summary": "أعلن ليليان تورام دعمه الصريح لمواقف كيليان مبابي وتيدي رينر في مواجهة صعود اليمين المتطرف.",
+          "body": [
+            "وفاءً لمسيرته في مناهضة العنصرية، أكد بطل مونديال 1998 ضرورة خروج كبار نجوم الرياضة عن صمتهم والتعبير عن مواقفهم علناً. وأوضح المدافع السابق لمنتخب فرنسا الدوافع التي تمنعه من التزام الصمت، متمسكاً بهذا الدور التوعوي المشترك مع الأجيال الجديدة من الرياضيين."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Article/Engage-dans-la-lutte-contre-l-extreme-droite-lilian-thuram-raconte-ce-qui-le-pousse-a-poursuivre-son-combat-riner-mbappe-ou-moi-on-doit-etre-des-lanceurs-d-alerte/1722450#at_medium=RSS_feeds",
@@ -1248,7 +1278,20 @@
           "url": "https://www.lequipe.fr/Football/Article/Engage-dans-la-lutte-contre-l-extreme-droite-lilian-thuram-raconte-ce-qui-le-pousse-a-poursuivre-son-combat-riner-mbappe-ou-moi-on-doit-etre-des-lanceurs-d-alerte/1722450#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-01T05:59:49+00:00"
+        }
+      }
     },
     {
       "id": "ee5f9b0744c3",
@@ -1851,7 +1894,17 @@
           "url": "https://www.mundodeportivo.com/futbol/america/20261001/1004233186/messi-doctor-honoris-causa.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-01T05:59:53+00:00"
+        }
+      }
     },
     {
       "id": "5a8e5ae9eb11",
@@ -2007,7 +2060,12 @@
           "url": "https://www.kicker.de/im-video-serie-des-sc-magdeburg-haelt-gegen-angstgegner-1257373/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8db13b9ea6ac",
