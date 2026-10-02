@@ -159,7 +159,12 @@
           "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20261002/1004233550/hora-habituales-athletic.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "355ae2bb6d27",
@@ -609,7 +614,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/secciones/20261002/1004233558/xavi-pascual-nielsen-dejan-barca-mundial-clubs.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b43cae368982",
@@ -1059,7 +1069,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261002/1004233416/mayssa-nuestra-estrella.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "db851325622e",
@@ -1466,7 +1481,19 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Apres-mohamed-sanhadji-un-ancien-commandant-de-crs-aurait-ete-mis-en-examen/1722752#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 8.0,
+          "central_restitue": true,
+          "manque": [
+            "Le chef de mise en examen principal mentionné par la source (poursuivi notamment pour corruption)"
+          ],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-02T09:04:35+00:00"
+        }
+      }
     },
     {
       "id": "5bc2fa36bce7",
@@ -1677,27 +1704,44 @@
       "summary": "Pas convoquée en équipe de France pour la rencontre face à la Lettonie, Naomie Feller a mis Louvain au supplice, jeudi soir en Ligue des champions (5-0), en étant impliquée sur quatre des cinq buts parisiens.",
       "i18n": {
         "fr": {
-          "title": "Sous les yeux de Laurent Bonadei, Naomie Feller répond à sa non-sélection par une démonstration contre Louvain",
-          "summary": "Pas convoquée en équipe de France pour la rencontre face à la Lettonie, Naomie Feller a mis Louvain au supplice, jeudi soir en Ligue des champions (5-0), en étant impliquée sur quatre des cinq buts parisiens.",
-          "needs_translation": false
+          "title": "Non retenue chez les Bleues, Naomie Feller flambe avec le PSG contre Louvain",
+          "summary": "Écartée du rassemblement des Bleues contre la Lettonie, Naomie Feller a porté le Paris Saint-Germain vers un large succès contre Louvain en Ligue des champions.",
+          "body": [
+            "Présent en tribune, le sélectionneur Laurent Bonadei a vu l'attaquante parisienne dominer la rencontre de jeudi soir remportée 5-0. Décisive du début à la fin, la joueuse a directement participé à quatre des cinq réalisations de son équipe face aux Belges."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Under the eyes of Laurent Bonadei, Naomie Feller responds to her non-selection with a demonstration against Leuven",
-          "summary": "Not called up to the French team for the match against Latvia, Naomie Feller tortured Louvain on Thursday night in the Champions League (5-0), by being involved in four of the five Parisian goals.",
+          "title": "Naomie Feller stars for PSG in Champions League after France squad snub",
+          "summary": "Left out of the France squad to face Latvia, Naomie Feller spearheaded Paris Saint-Germain to a comprehensive Champions League win over Louvain.",
+          "body": [
+            "Watching from the stands, France coach Laurent Bonadei saw the forward dominate Thursday's 5-0 victory. Decisive throughout, Feller was directly involved in four of her side's five goals against the Belgian outfit."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Bajo los ojos de Laurent Bonadei, Naomie Feller responde a su no selección con una demostración contra Lovaina",
-          "summary": "No convocada por la selección francesa para el partido contra Letonia, Naomie Feller puso a Lovaina en el suplicio, el jueves por la noche en la Liga de Campeones (5-0), al estar involucrada en cuatro de los cinco goles de París.",
+          "title": "Naomie Feller brilla con el PSG en Champions tras su descarte con Francia",
+          "summary": "Descartada de la convocatoria de Francia ante Letonia, Naomie Feller guio al Paris Saint-Germain hacia un amplio triunfo frente al Louvain en Champions.",
+          "body": [
+            "Presente en la grada, el seleccionador Laurent Bonadei presenció la exhibición de la delantera en la victoria por 5-0 del jueves. Decisiva en todo momento, participó directamente en cuatro de los cinco goles ante el cuadro belga."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "تحت أعين لوران بونادي، ترد نعومي فيلر على عدم اختيارها بمظاهرة ضد لوفين",
-          "summary": "لم يتم استدعاؤها للفريق الفرنسي للمباراة ضد لاتفيا، عذب نعومي فيلر لوفان ليلة الخميس في دوري أبطال أوروبا (5-0)، من خلال المشاركة في أربعة من الأهداف الباريسية الخمسة.",
+          "title": "ناومي فيلر تتألق مع باريس سان جيرمان بعد استبعادها من منتخب فرنسا",
+          "summary": "بعد استبعادها من قائمة منتخب فرنسا لمواجهة لاتفيا، قادت ناومي فيلر باريس سان جيرمان لفوز عريض على لوفان في دوري أبطال أوروبا.",
+          "body": [
+            "وتابع مدرب فرنسا لوران بونادي من المدرجات تألق المهاجمة الباريسية في اللقاء الذي انتهى بنتيجة 5-0 مساء الخميس، حيث شاركت بشكل مباشر في أربعة من أهداف فريقها الخمسة ضد الفريق البلجيكي."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Sous-les-yeux-de-laurent-bonadei-naomie-feller-repond-a-sa-non-selection-par-une-demonstration-contre-louvain/1722747#at_medium=RSS_feeds",
@@ -1719,7 +1763,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Sous-les-yeux-de-laurent-bonadei-naomie-feller-repond-a-sa-non-selection-par-une-demonstration-contre-louvain/1722747#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-02T09:04:38+00:00"
+        }
+      }
     },
     {
       "id": "1d5815a3e08a",
@@ -2245,7 +2302,17 @@
           "url": "https://www.bbc.co.uk/sport/football/videos/cmj4j4zyrg90o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-02T09:04:41+00:00"
+        }
+      }
     },
     {
       "id": "7224ab1d3f42",
