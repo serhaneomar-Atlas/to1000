@@ -1171,7 +1171,12 @@
           "url": "https://video.lefigaro.fr/figaro/sports/toujours-invaincu-en-chine-novak-djokovic-a-fini-par-battre-le-104-e-mondial-apres-avoir-ete-mene-20261002"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c5e49106a537",
@@ -1273,24 +1278,44 @@
       "summary": "Anis Hadj Moussa a déclaré forfait pour le match de la sélection algérienne en raison d'une blessure, a annoncé la Fédération algérienne de football via ses canaux officiels. L'attaquant du Feyenoord était déjà sur le banc par précaution lors du match précédent.",
       "i18n": {
         "fr": {
-          "title": "Algérie : Anis Hadj Moussa, plus de peur que de mal",
-          "summary": "Anis Hadj Moussa a déclaré forfait pour le match de la sélection algérienne en raison d'une blessure, a annoncé la Fédération algérienne de football via ses canaux officiels. L'attaquant du Feyenoord était déjà sur le banc par précaution lors du match précédent.",
-          "needs_translation": false
+          "title": "Algérie : blessé, Anis Hadj Moussa déclare forfait",
+          "summary": "Blessé, l'attaquant Anis Hadj Moussa déclare forfait pour la prochaine rencontre de l'Algérie, a annoncé la Fédération algérienne de football.",
+          "body": [
+            "L'ailier de Feyenoord avait déjà été ménagé lors du match précédent, qu'il avait passé sur le banc de touche par précaution."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Algérie : Anis Hadj Moussa, plus de peur que de mal",
-          "summary": "Anis Hadj Moussa a déclaré forfait pour le match de la sélection algérienne en raison d'une blessure, a annoncé la Fédération algérienne de football via ses canaux officiels. L'attaquant du Feyenoord était déjà sur le banc par précaution lors du match précédent.",
-          "needs_translation": true
+          "title": "Algeria: Anis Hadj Moussa ruled out through injury",
+          "summary": "Injured forward Anis Hadj Moussa has been ruled out of Algeria's upcoming match, the Algerian Football Federation announced.",
+          "body": [
+            "The Feyenoord winger had already been rested as a precaution during the previous game, watching from the bench."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Algérie : Anis Hadj Moussa, plus de peur que de mal",
-          "summary": "Anis Hadj Moussa a déclaré forfait pour le match de la sélection algérienne en raison d'une blessure, a annoncé la Fédération algérienne de football via ses canaux officiels. L'attaquant du Feyenoord était déjà sur le banc par précaution lors du match précédent.",
-          "needs_translation": true
+          "title": "Argelia: Anis Hadj Moussa, baja por lesión",
+          "summary": "Lesionado, el delantero Anis Hadj Moussa causa baja para el próximo partido de Argelia, según anunció la Federación Argelina de Fútbol.",
+          "body": [
+            "El extremo de Feyenoord ya había sido reservado por precaución durante el último encuentro, en el que se quedó en el banquillo."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Algérie : Anis Hadj Moussa, plus de peur que de mal",
-          "summary": "Anis Hadj Moussa a déclaré forfait pour le match de la sélection algérienne en raison d'une blessure, a annoncé la Fédération algérienne de football via ses canaux officiels. L'attaquant du Feyenoord était déjà sur le banc par précaution lors du match précédent.",
-          "needs_translation": true
+          "title": "الجزائر: الإصابة تبعد أنيس حاج موسى",
+          "summary": "أعلن الاتحاد الجزائري لكرة القدم غياب المهاجم أنيس حاج موسى عن اللقاء المقبل لمنتخب الجزائر بداعي الإصابة.",
+          "body": [
+            "وكان جناح فينورد قد جلس على مقاعد البدلاء كإجراء احترازي خلال المباراة الماضية لمحاربي الصحراء."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/maghreb/algerie-anis-hadj-moussa-plus-de-peur-que-de-mal/",
@@ -1312,7 +1337,20 @@
           "url": "https://africatopsports.com/maghreb/algerie-anis-hadj-moussa-plus-de-peur-que-de-mal/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-02T20:47:03+00:00"
+        }
+      }
     },
     {
       "id": "60d231e90396",
