@@ -747,33 +747,54 @@
       "summary": "Der Fall Manchester City geht ins nächste Kapitel: Wie erwartet haben die Citizens fristgerecht Berufung eingelegt und das Urteil der Premier League angefochten.",
       "i18n": {
         "de": {
-          "title": "\"Wesentliche Fehler\": Manchester City geht in Berufung",
-          "summary": "Der Fall Manchester City geht ins nächste Kapitel: Wie erwartet haben die Citizens fristgerecht Berufung eingelegt und das Urteil der Premier League angefochten.",
-          "needs_translation": false
+          "title": "Manchester City legt Berufung gegen Premier-League-Urteil ein",
+          "summary": "Manchester City ficht die jüngste Entscheidung der Premier League offiziell an und hat fristgerecht Rechtsmittel gegen das Urteil eingelegt.",
+          "body": [
+            "Der Klub eröffnet damit das nächste juristische Kapitel im Konflikt mit der englischen Liga. Wie erwartet stützen sich die Citizens bei ihrer Beschwerde auf wesentliche Fehler im bisherigen Verfahren."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "'Significant Mistakes': Manchester City Appeals",
-          "summary": "The Manchester City case moves on to the next chapter: as expected, the Citizens appealed on time and challenged the Premier League ruling.",
+          "title": "Manchester City appeal Premier League ruling",
+          "summary": "Manchester City have officially challenged the Premier League's latest ruling, lodging an appeal against the decision within the prescribed deadline.",
+          "body": [
+            "The move opens the next legal chapter in the dispute between the club and the English league. As anticipated, the Citizens base their challenge on what they describe as significant procedural errors."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "\"Erreurs essentielles\" : Manchester City fait appel",
-          "summary": "L'affaire Manchester City passe au chapitre suivant : comme prévu, les citoyens ont fait appel dans les délais et ont contesté le jugement de la Premier League.",
+          "title": "Manchester City fait appel de la décision de la Premier League",
+          "summary": "Manchester City conteste officiellement le récent verdict de la Premier League et a déposé un recours dans les délais impartis.",
+          "body": [
+            "Le club ouvre ainsi un nouveau chapitre judiciaire dans son bras de fer avec la ligue anglaise. Comme attendu, les Citizens justifient leur démarche en invoquant des vices de procédure majeurs dans la sentence arbitrale."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "\"Errores esenciales\": el Manchester City apelará",
-          "summary": "El caso del Manchester City pasa al siguiente capítulo: como era de esperar, los ciudadanos han apelado a tiempo y han apelado el veredicto de la Premier League.",
+          "title": "Manchester City apela la resolución de la Premier League",
+          "summary": "Manchester City impugna formalmente la reciente resolución de la Premier League y ha presentado su recurso dentro del plazo previsto.",
+          "body": [
+            "El club abre así un nuevo capítulo judicial en su contencioso con la competición inglesa. Tal como se esperaba, los Citizens basan su recurso en supuestos defectos sustanciales detectados en el procedimiento arbitral."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "\"أخطاء كبيرة \": نداءات مانشستر سيتي",
-          "summary": "تنتقل قضية مانشستر سيتي إلى الفصل التالي: كما هو متوقع، استأنف المواطنون في الوقت المحدد وطعنوا في حكم الدوري الإنجليزي الممتاز.",
+          "title": "مانشستر سيتي يستأنف ضد قرار رابطة الدوري الإنجليزي الممتاز",
+          "summary": "طعن مانشستر سيتي رسمياً في قرار رابطة الدوري الإنجليزي الممتاز الأخير، مقدماً استئنافه ضد الحكم ضمن المهلة القانونية المحددة.",
+          "body": [
+            "يفتح النادي بذلك فصلاً قضائياً جديداً في نزاعه مع رابطة الدوري. واستند سيتيزنز في مذكرته، كما كان متوقعاً، إلى وجود أخطاء جوهرية شابت الإجراءات التحكيمية السابقة."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.kicker.de/wesentliche-fehler-manchester-city-geht-in-berufung-1257818/artikel#omrss",
@@ -795,7 +816,20 @@
           "url": "https://www.kicker.de/wesentliche-fehler-manchester-city-geht-in-berufung-1257818/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-02T15:51:38+00:00"
+        }
+      }
     },
     {
       "id": "907d6d588600",
@@ -1575,7 +1609,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Une-balle-envoyee-a-cote-de-spectateurs-en-terrasse-le-drole-de-coup-frappe-par-gareth-bale-en-ecosse-droit-vers-un-restaurant/1722788#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "22c565ba50ff",
