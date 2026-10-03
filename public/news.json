@@ -459,7 +459,12 @@
           "url": "https://www.lefigaro.fr/sports/equitation/prix-de-l-arc-de-triomphe-16-pretendants-au-sacre-mondial-du-galop-mickael-barzalona-et-daryz-en-quete-de-double-20261003"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4d0acc8f229e",
@@ -829,27 +834,44 @@
       "summary": "Profitant de la trêve internationale, l'OM a accueilli ce samedi Montpellier à Martigues pour un match amical, soldé par une défaite face au club de Ligue 2 (0-1). De nombreux cadres étaient absents côté marseillais, et Bruno Genesio en a profité pour lancer plusieurs jeunes.",
       "i18n": {
         "fr": {
-          "title": "En l'absence de nombreux joueurs, l'OM s'incline en match amical face à Montpellier",
-          "summary": "Profitant de la trêve internationale, l'OM a accueilli ce samedi Montpellier à Martigues pour un match amical, soldé par une défaite face au club de Ligue 2 (0-1). De nombreux cadres étaient absents côté marseillais, et Bruno Genesio en a profité pour lancer plusieurs jeunes.",
-          "needs_translation": false
+          "title": "Amical : l'Olympique de Marseille s'incline face à Montpellier à Martigues",
+          "summary": "L'Olympique de Marseille s'est incliné un but à zéro face à Montpellier ce samedi lors d'une rencontre amicale disputée à Martigues.",
+          "body": [
+            "Privé de nombreux cadres durant cette trêve internationale, le club phocéen a cédé contre la formation de Ligue 2. Ce rendez-vous a notamment permis à Bruno Genesio d'offrir du temps de jeu à plusieurs jeunes pour pallier les absences au sein de son groupe."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "In the absence of many players, OM lost in a friendly match against Montpellier",
-          "summary": "Taking advantage of the international truce, OM hosted Montpellier in Martigues on Saturday for a friendly match, resulting in a defeat against Ligue 2 club (0-1). Many executives were absent on the Marseille side, and Bruno Genesio took the opportunity to launch several young people.",
+          "title": "Friendly: Olympique de Marseille fall to Montpellier in Martigues",
+          "summary": "Olympique de Marseille suffered a 1-0 defeat against Montpellier this Saturday in a friendly match played in Martigues.",
+          "body": [
+            "Deprived of several regulars during this international break, the French side came up short against the Ligue 2 outfit. The clash allowed Bruno Genesio to give valuable minutes to several youngsters to compensate for the squad's absentees."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "En ausencia de muchos jugadores, el OM se inclina en un partido amistoso contra el Montpellier",
-          "summary": "Aprovechando la tregua internacional, el OM recibió este sábado al Montpellier en Martigues para un partido amistoso, que terminó con una derrota ante el club de la Ligue 2 (0-1). Muchos ejecutivos estaban ausentes del lado marsellés, y Bruno Genesio aprovechó la oportunidad para lanzar a varios jóvenes.",
+          "title": "Amistoso: el Olympique de Marseille cae ante el Montpellier en Martigues",
+          "summary": "El Olympique de Marseille cayó 1-0 frente al Montpellier este sábado en un partido amistoso disputado en Martigues.",
+          "body": [
+            "Mermado por la ausencia de numerosos titulares durante este parón internacional, el conjunto marsellés cedió ante el cuadro de Ligue 2. El duelo sirvió para que Bruno Genesio repartiera minutos entre varios jóvenes y compensara así las bajas de su plantilla."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "في غياب العديد من اللاعبين، خسر OM في مباراة ودية ضد مونبلييه",
-          "summary": "مستفيدة من الهدنة الدولية، استضافت أوم مونبلييه في مارتيج يوم السبت لمباراة ودية، مما أدى إلى هزيمة ضد نادي الدوري 2 (0-1). كان العديد من المديرين التنفيذيين غائبين عن جانب مرسيليا، واغتنم برونو جينيسيو الفرصة لإطلاق العديد من الشباب.",
+          "title": "ودياً: أولمبيك مارسيليا يتعثر أمام مونبلييه في مارتيغ",
+          "summary": "خسر أولمبيك مارسيليا بهدف دون رد أمام مونبلييه، هذا السبت، في مواجهة ودية أقيمت بمدينة مارتيغ.",
+          "body": [
+            "وفي ظل غياب العديد من الركائز الأساسية خلال فترة التوقف الدولي، تعثر فريق الجنوب أمام نادي دوري الدرجة الثانية الفرنسي. ومثلت المباراة فرصة للمدرب برونو جينيسيو لمنح دقائق لعب لعدة عناصر شابة لتعويض النواقص في صفوف مجموعته."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/En-l-absence-de-nombreux-joueurs-l-om-s-incline-en-match-amical-face-a-montpellier/1723198#at_medium=RSS_feeds",
@@ -871,7 +893,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/En-l-absence-de-nombreux-joueurs-l-om-s-incline-en-match-amical-face-a-montpellier/1723198#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 9.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-03T22:11:07+00:00"
+        }
+      }
     },
     {
       "id": "c1e2c3878cfe",
