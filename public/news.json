@@ -577,7 +577,12 @@
           "url": "https://www.ole.com.ar/basquet/regatas-instituto-liganacional-faustoruesga_0_fd3T3kXjeC.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9c5017f01f74",
@@ -1268,24 +1273,44 @@
       "summary": "Les avocats du pirate informatique Rui Pinto, à l'origine des révélations des « Football Leaks » sur le foot-business qui ont notamment permis de mettre au jour les infractions financières imputées à Manchester City, ont dénoncé vendredi la fin du programme de protection…",
       "i18n": {
         "fr": {
-          "title": "Football Leaks : les avocats du hacker Rui Pinto dénoncent la fin de son programme de protection",
-          "summary": "Les avocats du pirate informatique Rui Pinto, à l'origine des révélations des « Football Leaks » sur le foot-business qui ont notamment permis de mettre au jour les infractions financières imputées à Manchester City, ont dénoncé vendredi la fin du programme de protection…",
-          "needs_translation": false
+          "title": "Football Leaks : les avocats de Rui Pinto contestent la fin de sa protection",
+          "summary": "La défense de Rui Pinto conteste la décision d'interrompre le programme de protection accordé au hacker portugais à l'origine des révélations des Football Leaks.",
+          "body": [
+            "Le pirate informatique ne bénéficie plus du dispositif sécuritaire qui l'entourait. Ses conseils ont vivement dénoncé vendredi cet arrêt, rappelant l'impact déterminant de ses divulgations sur les coulisses financières du football mondial, notamment les infractions reprochées aux dirigeants de Manchester City."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Football Leaks : les avocats du hacker Rui Pinto dénoncent la fin de son programme de protection",
-          "summary": "Les avocats du pirate informatique Rui Pinto, à l'origine des révélations des « Football Leaks » sur le foot-business qui ont notamment permis de mettre au jour les infractions financières imputées à Manchester City, ont dénoncé vendredi la fin du programme de protection…",
-          "needs_translation": true
+          "title": "Football Leaks: Rui Pinto's lawyers challenge removal of witness protection",
+          "summary": "Rui Pinto's legal team is contesting the decision to terminate the protection programme granted to the Portuguese hacker behind the Football Leaks revelations.",
+          "body": [
+            "The whistleblower no longer benefits from the security detail previously assigned to him. On Friday, his lawyers firmly condemned the withdrawal, underscoring the crucial role his disclosures played in exposing the financial underbelly of world football, including the alleged breaches involving Manchester City executives."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Football Leaks : les avocats du hacker Rui Pinto dénoncent la fin de son programme de protection",
-          "summary": "Les avocats du pirate informatique Rui Pinto, à l'origine des révélations des « Football Leaks » sur le foot-business qui ont notamment permis de mettre au jour les infractions financières imputées à Manchester City, ont dénoncé vendredi la fin du programme de protection…",
-          "needs_translation": true
+          "title": "Football Leaks: los abogados de Rui Pinto impugnan el fin de su protección",
+          "summary": "La defensa de Rui Pinto ha recurrido la decisión de retirar el programa de protección otorgado al pirata informático portugués que destapó los Football Leaks.",
+          "body": [
+            "El informático portugués ya no cuenta con el dispositivo de seguridad policial que lo custodiaba. Sus letrados denunciaron con dureza este viernes dicha retirada, recordando el impacto decisivo de sus revelaciones sobre los entresijos financieros del fútbol internacional, en particular sobre las supuestas irregularidades imputadas a la cúpula de Manchester City."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Football Leaks : les avocats du hacker Rui Pinto dénoncent la fin de son programme de protection",
-          "summary": "Les avocats du pirate informatique Rui Pinto, à l'origine des révélations des « Football Leaks » sur le foot-business qui ont notamment permis de mettre au jour les infractions financières imputées à Manchester City, ont dénoncé vendredi la fin du programme de protection…",
-          "needs_translation": true
+          "title": "تسريبات فوتبول ليكس: محامو روي بينتو يطعنون في قرار رفع الحماية عنه",
+          "summary": "طعن فريق الدفاع عن روي بينتو في قرار إلغاء برنامج الحماية الذي كان يستفيد منه القرصان الإلكتروني البرتغالي صاحب تسريبات \"فوتبول ليكس\".",
+          "body": [
+            "لم يعد المخترق البرتغالي خاضعاً للإجراءات الأمنية التي كانت مخصصة لحمايته، وهو ما استنكره محاموه بشدة يوم الجمعة، مذكرين بالدور الحاسم لتسريباته في فضح الكواليس المالية لكرة القدم العالمية، وعلى رأسها المخالفات المنسوبة لإدارة مانشستر سيتي."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Football-leaks-les-avocats-du-hacker-rui-pinto-denoncent-la-fin-de-son-programme-de-protection/1723061#at_medium=RSS_feeds",
@@ -1307,7 +1332,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Football-leaks-les-avocats-du-hacker-rui-pinto-denoncent-la-fin-de-son-programme-de-protection/1723061#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-03T15:17:46+00:00"
+        }
+      }
     },
     {
       "id": "24188cb0b255",
@@ -2251,7 +2289,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261003/1004234001/barca-atento-lateral-coste-cero.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4743282cb0d9",
