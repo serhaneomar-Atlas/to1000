@@ -729,27 +729,44 @@
       "summary": "Luton Town manager Jack Wilshere shares his love for coaching and explains how Arsenal boss Mikel Arteta influnced his style.",
       "i18n": {
         "en": {
-          "title": "Arteta helped me understand the game - Wilshere",
-          "summary": "Luton Town manager Jack Wilshere shares his love for coaching and explains how Arsenal boss Mikel Arteta influnced his style.",
-          "needs_translation": false
+          "title": "Arteta Transformed How I See the Game, Says Wilshere",
+          "summary": "Jack Wilshere has credited Arsenal manager Mikel Arteta with reshaping his tactical outlook and inspiring his methods in the dugout.",
+          "body": [
+            "Discussing his passion for management, the Luton Town boss explained how Arteta helped him grasp football on a deeper level, directly influencing the approach he now takes on the training pitch."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Arteta m'a aidé à comprendre le jeu - Wilshere",
-          "summary": "Jack Wilshere, directeur de Luton Town, partage son amour pour le coaching et explique comment le patron d'Arsenal, Mikel Arteta, a influencé son style.",
+          "title": "Arteta a transformé ma vision du jeu, confie Wilshere",
+          "summary": "Jack Wilshere a salué l'influence de Mikel Arteta sur sa conception tactique et ses méthodes d'entraîneur.",
+          "body": [
+            "Évoquant sa passion pour le banc, le manager de Luton Town a expliqué que le coach d'Arsenal lui avait permis de mieux comprendre le jeu, inspirant directement les principes qu'il applique aujourd'hui."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Arteta me ayudó a entender el juego - Wilshere",
-          "summary": "El gerente de Luton Town, Jack Wilshere, comparte su amor por el entrenamiento y explica cómo el jefe del Arsenal, Mikel Arteta, influyó en su estilo.",
+          "title": "Arteta transformó mi visión del juego, asegura Wilshere",
+          "summary": "Jack Wilshere destacó la influencia de Mikel Arteta en su visión táctica y en sus métodos como entrenador.",
+          "body": [
+            "Al hablar de su pasión por los banquillos, el preparador de Luton Town explicó cómo el técnico de Arsenal le ayudó a entender mejor el fútbol, moldeando directamente su estilo actual."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ساعدتني أرتيتا على فهم اللعبة - ويلشير",
-          "summary": "يشارك جاك ويلشير، مدير لوتون تاون، حبه للتدريب ويشرح كيف أثر مدرب أرسنال ميكيل أرتيتا على أسلوبه.",
+          "title": "ويلشير: أرتيتا غير فهمي لكرة القدم وألهم أسلوبي",
+          "summary": "أشاد جاك ويلشير بالمدرب ميكيل أرتيتا، مؤكداً أن المدير الفني لأرسنال كان له دور حاسم في فهمه للعبة وصياغة أسلوبه التدريبي.",
+          "body": [
+            "وتحدث مدرب لوتون تاون عن شغفه بمجال التدريب، موضحاً كيف أثر أرتيتا بشكل مباشر في فلسفته الكروية والطرق التي يطبقها حالياً مع فريقه."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/videos/cq20v0p5xp8eo?at_medium=RSS&at_campaign=rss",
@@ -771,7 +788,20 @@
           "url": "https://www.bbc.co.uk/sport/football/videos/cq20v0p5xp8eo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-03T11:41:05+00:00"
+        }
+      }
     },
     {
       "id": "667229ddd07c",
@@ -1163,7 +1193,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261003/1004233949/entiendo-raphinha.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "09bb2e57f189",
@@ -1257,7 +1292,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261003/1004233737/benjamin-kuegel.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "1d4ef9e7562d",
