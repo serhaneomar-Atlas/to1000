@@ -1312,7 +1312,12 @@
           "url": "https://www.lequotidiendusport.fr/argentine-numero-10-lionel-messi-ne-peut-pas-etre-retire/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b846391c81be",
@@ -2089,27 +2094,48 @@
       "summary": "Après le retrait de la plainte de Kylian Mbappé, les juges d’instruction ont rendu un non-lieu dans l’enquête visant le PSG pour harcèlement moral. Le club était notamment mis en cause pour avoir placé l’attaquant dans le « loft », à l’été 2023.",
       "i18n": {
         "fr": {
-          "title": "Affaire Mbappe/PSG: non-lieu dans l’enquête pour harcèlement moral",
-          "summary": "Après le retrait de la plainte de Kylian Mbappé, les juges d’instruction ont rendu un non-lieu dans l’enquête visant le PSG pour harcèlement moral. Le club était notamment mis en cause pour avoir placé l’attaquant dans le « loft », à l’été 2023.",
-          "needs_translation": false
+          "title": "Harcèlement moral : non-lieu pour le PSG après le retrait de Kylian Mbappé",
+          "summary": "La justice a prononcé un non-lieu dans l'enquête pour harcèlement moral visant le Paris Saint-Germain, après le désistement de Kylian Mbappé.",
+          "body": [
+            "Les juges d’instruction ont formellement clos les poursuites engagées contre le club parisien.",
+            "L'enquête examinait les conditions de mise à l'écart de l'attaquant, relégué dans le groupe des lofteurs à l'été 2023."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Mbappe/PSG case: dismissal in the investigation for moral harassment",
-          "summary": "After the withdrawal of Kylian Mbappé's complaint, the investigating judges dismissed the investigation against the PSG for moral harassment. In particular, the club was accused of having placed the striker in the \"loft\" in the summer of 2023.",
+          "title": "Harassment case: Charges dropped against PSG after Mbappé withdraws claim",
+          "summary": "French judges have dismissed the moral harassment investigation against Paris Saint-Germain following the withdrawal of Kylian Mbappé's legal complaint.",
+          "body": [
+            "Investigating magistrates formally closed proceedings against the French club.",
+            "The inquiry focused on the conditions surrounding the star forward's exclusion, when he was banished to the exile squad during the summer of 2023."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Caso Mbappe/PSG: sobreseimiento en la investigación por acoso moral",
-          "summary": "Tras la retirada de la denuncia de Kylian Mbappé, los jueces de instrucción desestimaron la investigación contra el PSG por acoso moral. El club estaba en entredicho por haber colocado al atacante en el \"loft\" en el verano de 2023.",
+          "title": "Acoso moral: sobreseimiento para el PSG tras la retirada de Kylian Mbappé",
+          "summary": "La justicia francesa ha archivado la causa por presunto acoso moral contra el Paris Saint-Germain tras retirar Kylian Mbappé su denuncia inicial.",
+          "body": [
+            "Los jueces de instrucción cerraron formalmente las actuaciones contra la entidad parisina.",
+            "Las pesquisas investigaban las condiciones del castigo impuesto al atacante, relegado al grupo de los descartes durante el verano de 2023."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "قضية مبابي/باريس سان جيرمان: الفصل في التحقيق بسبب التحرش الأخلاقي",
-          "summary": "بعد سحب شكوى كيليان مبابي، رفض قضاة التحقيق التحقيق ضد PSG بسبب المضايقة الأخلاقية. على وجه الخصوص، تم اتهام النادي بوضع المهاجم في \"الدور العلوي\" في صيف عام 2023.",
+          "title": "مضايقات معنوية: حفظ التحقيق ضد باريس سان جيرمان بعد سحب مبابي شكواه",
+          "summary": "أسدل القضاء الفرنسي الستار على التحقيق في قضية المضايقات المعنوية ضد باريس سان جيرمان، إثر تنازل كيليان مبابي رسمياً عن شكواه.",
+          "body": [
+            "أنهى قضاة التحقيق رسمياً الملاحقات القضائية الموجهة ضد نادي العاصمة الفرنسية.",
+            "وتركزت التحريات على ظروف استبعاد المهاجم وتجميده ضمن مجموعة اللاعبين غير المرغوب فيهم خلال صيف 2023."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://video.lefigaro.fr/figaro/sports/affaire-mbappe-psg-non-lieu-dans-l-enquete-pour-harcelement-moral-20261002",
@@ -2131,7 +2157,20 @@
           "url": "https://video.lefigaro.fr/figaro/sports/affaire-mbappe-psg-non-lieu-dans-l-enquete-pour-harcelement-moral-20261002"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 8,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-03T05:48:33+00:00"
+        }
+      }
     },
     {
       "id": "bb87e1c7b784",
