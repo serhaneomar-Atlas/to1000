@@ -1579,7 +1579,17 @@
           "url": "https://www.lequipe.fr/Football/Actualites/-c-est-la-premiere-fois-que-j-ai-honte-apres-un-match-luka-modric-partage-sa-frustration-apres-le-naufrage-croate-contre-l-angleterre/1723265#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-04T12:55:10+00:00"
+        }
+      }
     },
     {
       "id": "863aacca2abf",
@@ -1629,7 +1639,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261004/1004234295/lio-noia-barca-aire.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b0d5fe52b2b6",
@@ -2097,7 +2112,12 @@
           "url": "https://www.mundodeportivo.com/futbol/futbol-catala/20261003/1004234284/can-gibert-quart-vencen-abrir-jornada-3-grupo-1-primera-catalana.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f4a52dff4a02",
@@ -2155,27 +2175,44 @@
       "summary": "Le Wydad Casablanca s’est imposé sur la pelouse du Difaa El Jadida par 2 buts à 0, en match de la 2è journée de la Botola Pro D1 « Inwi », disputé samedi au stade El Abdi. Oussama Zemraoui (27e) et Silvère Ganvoula (59e) ont signé les buts de la victoire des Rouges.",
       "i18n": {
         "fr": {
-          "title": "Botola Pro: le Wydad se relance avec une victoire contre le Difaa El Jadida",
-          "summary": "Le Wydad Casablanca s’est imposé sur la pelouse du Difaa El Jadida par 2 buts à 0, en match de la 2è journée de la Botola Pro D1 « Inwi », disputé samedi au stade El Abdi. Oussama Zemraoui (27e) et Silvère Ganvoula (59e) ont signé les buts de la victoire des Rouges.",
-          "needs_translation": false
+          "title": "Botola Pro : Le Wydad réagit et s'impose face au Difaâ El Jadida",
+          "summary": "Le Wydad Casablanca a décroché sa première victoire de la saison en s'imposant deux à zéro sur la pelouse du Difaâ El Jadida samedi.",
+          "body": [
+            "Au stade El Abdi, Oussama Zemraoui a débloqué la rencontre à la 27e minute avant que Silvère Ganvoula ne double la mise peu avant l'heure de jeu. Ce succès relance les Rouges, désormais huitièmes après leur faux pas inaugural. En face, les locaux ont fini à dix suite à l'expulsion de Zakaria Oubraim et restent englués à la dernière place."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Botola Pro: Wydad revives with a victory against Difaa El Jadida",
-          "summary": "Wydad Casablanca won on the pitch of Difaa El Jadida by 2 goals to 0, in the match of the 2nd day of the Botola Pro D1 \"Inwi\", played Saturday at the El Abdi stadium. Oussama Zemraoui (27th) and Silvère Ganvoula (59th) scored the goals for the Reds' victory.",
+          "title": "Botola Pro: Wydad bounce back with win over Difaâ El Jadida",
+          "summary": "Wydad Casablanca claimed their first win of the season on Saturday with a 2-0 victory away at Difaâ El Jadida.",
+          "body": [
+            "At the Abdi stadium, Oussama Zemraoui opened the scoring on 27 minutes before Silvère Ganvoula doubled the lead shortly before the hour mark. The win lifts the Rouges to eighth place following their opening-day slip-up, while the hosts finished with ten men after Zakaria Oubraim was sent off and remain rooted to the bottom of the table."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Botola Pro: el Wydad se recupera con una victoria contra el Difaa El Jadida",
-          "summary": "El Wydad Casablanca se impuso en el césped del Difaa El Jadida por 2 goles a 0, en el partido de la segunda jornada de la Botola Pro D1 \"Inwi\", disputado el sábado en el estadio El Abdi. Osama Zemraoui (27 ') y Silvère Ganvoula (59') firmaron los goles de la victoria de los Rojos.",
+          "title": "Botola Pro: Wydad reacciona y se impone al Difaâ El Jadida",
+          "summary": "Wydad Casablanca estrenó su casillero de victorias esta temporada al imponerse este sábado por 0-2 en el feudo de Difaâ El Jadida.",
+          "body": [
+            "En el estadio Abdi, Oussama Zemraoui desatascó el partido en el minuto 27 y Silvère Ganvoula firmó el segundo poco antes de la hora de juego. El triunfo mete de nuevo en carrera a los Rouges, que suben a la octava plaza tras el tropiezo inicial, mientras que el cuadro local terminó con diez tras la expulsión de Zakaria Oubraim y sigue colista."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "بوتولا برو: وداد ينتعش بفوزه على ديفاء الجديدة",
-          "summary": "فاز وداد الدار البيضاء على ملعب ديفاء الجديدة بهدفين مقابل صفر، في مباراة اليوم الثاني لبطولة بوتولا برو د1 \"إينوي\"، التي أقيمت السبت على ملعب العبدي. سجل أسامة زمراوي (27) وسيلفير غانفولا (59) أهداف فوز الريدز.",
+          "title": "البطولة الاحترافية: الوداد يستعيد توازنه بثنائية في شباك الدفاع الحسني الجديدي",
+          "summary": "حقق الوداد الرياضي انتصاره الأول هذا الموسم بعد تغلبه بهدفين دون رد على مضيفه الدفاع الحسني الجديدي يوم السبت.",
+          "body": [
+            "وعلى أرضية ملعب العبدي، افتتح أسامة زمراوي التسجيل في الدقيقة 27، قبل أن يعزز سيلفير غانفولا النتيجة بالهدف الثاني قبل مرور ساعة من اللعب. فوز يعيد الروح إلى «الحمر» الذين صعدوا إلى المركز الثامن بعد تعثر الجولة الافتتاحية، في حين أكمل أصحاب الأرض المواجهة بعشرة لاعبين إثر طرد زكرياء أوبريم ليتجمد رصيدهم في المركز الأخير."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://fr.hespress.com/491012-botola-pro-le-wydad-se-relance-avec-une-victoire-contre-le-difaa-el-jadida.html",
@@ -2197,7 +2234,20 @@
           "url": "https://fr.hespress.com/491012-botola-pro-le-wydad-se-relance-avec-une-victoire-contre-le-difaa-el-jadida.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-04T12:55:12+00:00"
+        }
+      }
     },
     {
       "id": "ecacba068edc",
