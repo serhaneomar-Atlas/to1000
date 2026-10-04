@@ -483,7 +483,12 @@
           "url": "https://video.lefigaro.fr/figaro/sports/rallye-oliver-solberg-voit-le-titre-mondial-lui-echapper-apres-une-sortie-de-route-20261004"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "dcd3e8b85cf7",
@@ -1092,7 +1097,12 @@
           "url": "https://africatopsports.com/football/can-u20-une-video-de-hors-jeu-non-compris-devient-virale/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c7e2f38f513c",
@@ -1771,7 +1781,12 @@
           "url": "https://www.kicker.de/bayern-gegen-oldenburg-2026-bbl-5254010/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "187bc5ffdfca",
@@ -1779,29 +1794,59 @@
       "summary": "Die \"Wölfinnen\" gingen im Nordduell durch ein umstrittenes Tor in Führung. Der Siegtreffer fiel dann erst in der Schlussphase.",
       "i18n": {
         "de": {
-          "title": "Frauen-Bundesliga: VfL Wolfsburg feiert knappen Sieg gegen den HSV",
-          "summary": "Die \"Wölfinnen\" gingen im Nordduell durch ein umstrittenes Tor in Führung. Der Siegtreffer fiel dann erst in der Schlussphase.",
-          "needs_translation": false
+          "title": "Frauen-Bundesliga: Wolfsburg schlägt den HSV dank spätem Jokertor",
+          "summary": "Der VfL Wolfsburg hat das Nordduell gegen den Hamburger SV dank eines späten Siegtreffers mit 2:1 gewonnen und springt auf den zweiten Tabellenplatz.",
+          "body": [
+            "Das Führungstor von Ella Peddemors unmittelbar vor dem Pausenpfiff sorgte für heftige Diskussionen: Die Wolfsburgerin lenkte den Ball mit dem linken Unterarm weiter, ehe Schiedsrichterin Nadine Westerhoff die umstrittene Szene ohne Torlinientechnik oder VAR als Treffer wertete. Hamburg schlug direkt nach dem Seitenwechsel durch Camilla Linberg zurück und schnupperte sogar an der Führung, ehe Camilla Küver in höchster Not auf der Linie rettete.",
+            "Zehn Minuten vor Schluss erlöste schließlich die eingewechselte Anny Kerim-Lindland die Gastgeberinnen, als sie eine Vorlage von Kessya Bussy aus kurzer Distanz zum 2:1 verwertete. Für zusätzliche Freude bei den Niedersächsinnen sorgte Svenja Huth, die in ihrem 350. Bundesligaspiel auf Platz drei der ewigen Bestenliste vorrückte."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Frauen-Bundesliga: VfL Wolfsburg feiert knappen Sieg gegen den HSV",
-          "summary": "Die \"Wölfinnen\" gingen im Nordduell durch ein umstrittenes Tor in Führung. Der Siegtreffer fiel dann erst in der Schlussphase.",
-          "needs_translation": true
+          "title": "Frauen-Bundesliga: Wolfsburg edge HSV thanks to late substitute winner",
+          "summary": "VfL Wolfsburg claimed a 2-1 victory over Hamburger SV in the Nordduell courtesy of a late decider, climbing to second place in the table.",
+          "body": [
+            "Ella Peddemors broke the deadlock right on the stroke of halftime amid intense controversy, deflecting the ball in with her left forearm before referee Nadine Westerhoff awarded the goal without VAR or goal-line technology available. Hamburg responded immediately after the break through Camilla Linberg and came close to leading, denied only by a desperate goal-line clearance from Camilla Küver.",
+            "Ten minutes from time, substitute Anny Kerim-Lindland settled the contest, turning in a cross from Kessya Bussy from close range to make it 2-1. There was another milestone for the hosts as Svenja Huth made her 350th appearance in the Frauen-Bundesliga, climbing to third on the all-time list."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Frauen-Bundesliga: VfL Wolfsburg feiert knappen Sieg gegen den HSV",
-          "summary": "Die \"Wölfinnen\" gingen im Nordduell durch ein umstrittenes Tor in Führung. Der Siegtreffer fiel dann erst in der Schlussphase.",
-          "needs_translation": true
+          "title": "Frauen-Bundesliga : Wolfsburg bat le HSV grâce à un but tardif (2-1)",
+          "summary": "Le VfL Wolfsburg s'est adjugé le Nordduell face au Hamburger SV (2-1) grâce à une réalisation tardive et s'empare de la deuxième place au classement.",
+          "body": [
+            "L'ouverture du score signée Ella Peddemors juste avant la pause a déclenché une vive polémique : la joueuse de Wolfsburg a dévié le cuir de l'avant-bras gauche, avant que l'arbitre Nadine Westerhoff n'accorde le but sans assistance vidéo ni technologie sur la ligne. Le Hamburger SV a répliqué d'entrée de seconde période par Camilla Linberg et a même frôlé l'avantage, jusqu'au sauvetage désespéré de Camilla Küver sur sa ligne.",
+            "À dix minutes du terme, la remplaçante Anny Kerim-Lindland a délivré les siennes en convertissant à bout portant un service de Kessya Bussy pour le 2-1. Autre motif de satisfaction pour le club de Basse-Saxe : Svenja Huth disputait son 350e match en Frauen-Bundesliga, s'installant ainsi au troisième rang historique de la compétition."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Frauen-Bundesliga: VfL Wolfsburg feiert knappen Sieg gegen den HSV",
-          "summary": "Die \"Wölfinnen\" gingen im Nordduell durch ein umstrittenes Tor in Führung. Der Siegtreffer fiel dann erst in der Schlussphase.",
-          "needs_translation": true
+          "title": "Frauen-Bundesliga: Wolfsburg supera al HSV con un gol postrero (2-1)",
+          "summary": "El VfL Wolfsburg se llevó el Nordduell ante el Hamburger SV por 2-1 con un tanto postrero y asalta la segunda plaza de la clasificación.",
+          "body": [
+            "El gol inicial de Ella Peddemors al filo del descanso desató la polémica: la jugadora de Wolfsburg desvió el esférico con el antebrazo izquierdo antes de que la colegiada Nadine Westerhoff concediese el tanto, sin VAR ni tecnología de línea de gol disponibles. El cuadro hanseático reaccionó nada más reanudarse el choque por medio de Camilla Linberg e incluso rozó la remontada, evitada únicamente por una salvada providencial de Camilla Küver sobre la línea.",
+            "A diez minutos de la conclusión, la recién ingresada Anny Kerim-Lindland dio el triunfo a las locales al empujar a bocajarro un servicio de Kessya Bussy para poner el 2-1 definitivo. La alegría en el conjunto sajón la completó Svenja Huth, quien en su encuentro 350 en la Frauen-Bundesliga escaló hasta el tercer puesto histórico de apariciones."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Frauen-Bundesliga: VfL Wolfsburg feiert knappen Sieg gegen den HSV",
-          "summary": "Die \"Wölfinnen\" gingen im Nordduell durch ein umstrittenes Tor in Führung. Der Siegtreffer fiel dann erst in der Schlussphase.",
-          "needs_translation": true
+          "title": "الدوري الألماني للسيدات: فولفسبورغ يهزم هامبورغ بهدف متأخر للبديلة (2-1)",
+          "summary": "حسم فولفسبورغ ديربي الشمال أمام هامبورغ بالفوز عليه بنتيجة 2-1 بفضل هدف متأخر، ليقفز إلى المركز الثاني في جدول الترتيب.",
+          "body": [
+            "أثار هدف التقدم الذي سجلته إيلا بيديمورس قبل صافرة نهاية الشوط الأول مباشرة جدلاً عارماً، بعدما حوّلت لاعبة فولفسبورغ الكرة بساعدها الأيسر داخل الشباك، قبل أن تقر الحكمة نادين فيسترهوف بصحة الهدف في غياب تقنية حكم الفيديو المساعد وتكنولوجيا خط المرمى. ورد هامبورغ سريعاً بعد الاستراحة عبر كاميلا لينبرغ وكان قريباً من التقدم، لولا تدخل بطولي من كاميلا كوفر التي أنقذت الكرة من على خط المرمى.",
+            "وقبل عشر دقائق من صافرة النهاية، حسمت البديلة آني كيريم-ليندلاند اللقاء لصالح صاحبات الأرض حين استغلت تمريرة حاسمة من كيسيا بوسي وأودعتها الشباك من مسافة قريبة معلنة الهدف الثاني. وتضاعفت فرحة الفريق بالمخضرمة سفينيا هوث، التي خاضت مباراتها رقم 350 في الدوري لتصعد إلى المركز الثالث في قائمة الأكثر مشاركة عبر تاريخ المسابقة."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.sportschau.de/regional/ndr/ein-sieg-mit-viel-dusel-vfl-frauen-schlagen-hsv,wolfsburg-hsv-106.html",
@@ -1823,7 +1868,20 @@
           "url": "https://www.sportschau.de/regional/ndr/ein-sieg-mit-viel-dusel-vfl-frauen-schlagen-hsv,wolfsburg-hsv-106.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-04T20:30:42+00:00"
+        }
+      }
     },
     {
       "id": "35c2e0edfc71",
