@@ -579,33 +579,54 @@
       "summary": "Der Clasico elektrisiert - auch im Frauen-Fußball. Am Sonntag setze es für Real Madrid um ein deutsches Trio eine herbe 0:7-Klatsche.",
       "i18n": {
         "de": {
-          "title": "Deutsches Trio geht beim 0:7 unter: Entfesseltes Barcelona sorgt für Real-Debakel",
-          "summary": "Der Clasico elektrisiert - auch im Frauen-Fußball. Am Sonntag setze es für Real Madrid um ein deutsches Trio eine herbe 0:7-Klatsche.",
-          "needs_translation": false
+          "title": "Frauen-Clásico: Barcelona deklassiert Real Madrid mit 7:0",
+          "summary": "Der FC Barcelona hat Real Madrid am Sonntag im Clásico des Frauenfußballs mit einer herben 7:0-Abreibung überrollt.",
+          "body": [
+            "Das Prestigeduell endete für die Madrileninnen in einem Debakel. Bei der deutlichen Niederlage gegen die entfesselten Katalaninnen stand auch ein deutsches Trio aufseiten von Real Madrid chancenlos auf dem Platz."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "German trio sinks at 0:7: Unleashed Barcelona causes real debacle",
-          "summary": "The Clasico is electrifying - even in women's football. On Sunday, it was a tough 0-7 clap for Real Madrid for a Germantrio.",
+          "title": "Women's Clásico: Barcelona dismantle Real Madrid 7-0",
+          "summary": "FC Barcelona blew Real Madrid away on Sunday, dishing out a ruthless 7-0 thrashing in the women's Clásico.",
+          "body": [
+            "The high-profile clash turned into an unmitigated disaster for the Madrid outfit. Facing a rampant Catalan side, Real Madrid's German trio proved entirely powerless out on the pitch."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Le trio allemand tombe à 0:7 : Barcelone déchaînée assure une débâcle réelle",
-          "summary": "Le Clasico électrise - même dans le football féminin. Dimanche, un trio allemand a lancé un rude coup de poing de 0: 7 pour le Real Madrid.",
+          "title": "Clásico féminin : Barcelone humilie le Real Madrid 7-0",
+          "summary": "Le FC Barcelona a écrasé le Real Madrid ce dimanche en lui infligeant une sévère défaite 7-0 lors du Clásico féminin.",
+          "body": [
+            "Le duel de prestige a rapidement tourné au calvaire pour les Madrilènes. Totalement dépassé par des Catalanes intenables, le trio allemand aligné par le Real Madrid n'a jamais pu exister sur la pelouse."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "El trío alemán se hunde en el 0:7: Barcelona desencadenada causa debacle real",
-          "summary": "El Clásico electrifica, también en el fútbol femenino. El domingo, el Real Madrid se enfrentará a un trío alemán con una contundente palmada de 7-0.",
+          "title": "Clásico femenino: el Barcelona aplasta al Real Madrid con un 7-0",
+          "summary": "El FC Barcelona arrolló al Real Madrid este domingo tras endosarle un sonrojante 7-0 en el Clásico del fútbol femenino.",
+          "body": [
+            "El esperado duelo se convirtió en una pesadilla absoluta para las madridistas. Arrollado por unas catalanas desatadas, el trío alemán de la plantilla blanca apenas pudo oponer resistencia sobre el césped."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "الثلاثي الألماني يغوص في الساعة 0:7: إطلاق العنان لبرشلونة يسبب كارثة حقيقية",
-          "summary": "الكلاسيكو مثير - حتى في كرة القدم النسائية. يوم الأحد، كان تصفيقا صعبا 0-7 لريال مدريد لثلاثي ألماني.",
+          "title": "كلاسيكو السيدات: برشلونة يكتسح ريال مدريد بسباعية نظيفة",
+          "summary": "ألحق فريق برشلونة هزيمة مذلة بغريمه ريال مدريد يوم الأحد، بعدما اكتسحه بنتيجة 7-0 في كلاسيكو كرة القدم النسائية.",
+          "body": [
+            "تحولت المواجهة المرتقبة إلى نكسة قاسية للنادي الملكي، حيث انهار الفريق أمام لاعبات برشلونة، في حين عجز الثلاثي الألماني في صفوف ريال مدريد عن تجنب الهزيمة الثقيلة."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.kicker.de/barcelona-gegen-real-madrid-2026-primera-division-femenina-5225437/spielbericht#omrss",
@@ -627,7 +648,20 @@
           "url": "https://www.kicker.de/barcelona-gegen-real-madrid-2026-primera-division-femenina-5225437/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-04T23:39:42+00:00"
+        }
+      }
     },
     {
       "id": "73f2d04d87d9",
@@ -1345,7 +1379,17 @@
           "url": "https://www.sportschau.de/regional/ndr/ein-sieg-mit-viel-dusel-vfl-frauen-schlagen-hsv,wolfsburg-hsv-106.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-04T23:39:45+00:00"
+        }
+      }
     },
     {
       "id": "ea0d94a84e7a",
@@ -1588,24 +1632,44 @@
       "summary": "El FC Barcelona ha firmado una exhibición antológica en el Spotify Camp Nou tras golear por 7-0 al Real Madrid en una demostración absoluta de autoridad y superioridad colectiva.",
       "i18n": {
         "es": {
-          "title": "Barça - Real Madrid, en directo: Clásico de la Liga F en el Spotify Camp Nou",
-          "summary": "El FC Barcelona ha firmado una exhibición antológica en el Spotify Camp Nou tras golear por 7-0 al Real Madrid en una demostración absoluta de autoridad y superioridad colectiva.",
-          "needs_translation": false
+          "title": "El Barça arrolla al Real Madrid con un histórico 7-0 en el Clásico",
+          "summary": "El FC Barcelona arrolló al Real Madrid con un contundente 7-0 en el Spotify Camp Nou, impulsado por cuatro goles de Claudia Pina.",
+          "body": [
+            "El conjunto azulgrana sentenció el Clásico femenino por la vía rápida al llegar al descanso con una ventaja de cinco tantos gracias a la exhibición de Pina. Graham Hansen, Ewa Pajor y Sydney Schertenleib completaron la goleada, en una cita festiva que también contó con el regreso a los terrenos de juego de Aitana Bonmatí."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Barça - Real Madrid, en directo: Clásico de la Liga F en el Spotify Camp Nou",
-          "summary": "El FC Barcelona ha firmado una exhibición antológica en el Spotify Camp Nou tras golear por 7-0 al Real Madrid en una demostración absoluta de autoridad y superioridad colectiva.",
-          "needs_translation": true
+          "title": "Barça dismantle Real Madrid with historic 7-0 Clásico rout",
+          "summary": "FC Barcelona swept Real Madrid aside with an emphatic 7-0 victory at Spotify Camp Nou, driven by a four-goal masterclass from Claudia Pina.",
+          "body": [
+            "The Blaugrana put the Clásico to bed before the break, racing into a five-goal lead behind Pina's clinic. Graham Hansen, Ewa Pajor and Sydney Schertenleib completed the rout on a festive evening that also featured Aitana Bonmatí's return to action."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Barça - Real Madrid, en directo: Clásico de la Liga F en el Spotify Camp Nou",
-          "summary": "El FC Barcelona ha firmado una exhibición antológica en el Spotify Camp Nou tras golear por 7-0 al Real Madrid en una demostración absoluta de autoridad y superioridad colectiva.",
-          "needs_translation": true
+          "title": "Le Barça écrase le Real Madrid 7-0 dans un Clásico historique",
+          "summary": "Le FC Barcelona a surclassé le Real Madrid sur le score sans appel de 7-0 au Spotify Camp Nou, porté par un quadruplé éclatant de Claudia Pina.",
+          "body": [
+            "Les Blaugranas ont plié ce Clásico dès la première période en regagnant les vestiaires avec cinq buts d'avance sous l'impulsion d'une Pina intenable. Graham Hansen, Ewa Pajor et Sydney Schertenleib ont parachevé la démonstration, lors d'une fête également marquée par le retour au jeu d'Aitana Bonmatí."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Barça - Real Madrid, en directo: Clásico de la Liga F en el Spotify Camp Nou",
-          "summary": "El FC Barcelona ha firmado una exhibición antológica en el Spotify Camp Nou tras golear por 7-0 al Real Madrid en una demostración absoluta de autoridad y superioridad colectiva.",
-          "needs_translation": true
+          "title": "برشلونة يسحق ريال مدريد بسباعية تاريخية في الكلاسيكو",
+          "summary": "اكتسح نادي برشلونة غريمه ريال مدريد بنتيجة كاسحة 7-0 على أرضية سبوتيفاي كامب نو، بفضل سوبر هاتريك بتوقيع الهدافة كلاوديا بينا.",
+          "body": [
+            "وحسمت سيدات البلوغرانا موقعة الكلاسيكو من الشوط الأول بتقدم كاسح بخماسية نظيفة عقب عرض استثنائي من بينا، لتكمل بعدها غراهام هانسن وإيفا باجور وسيدني شيرتينليب مهرجان الأهداف، وسط ليلة احتفالية شهدت أيضاً عودة النجمة أيتانا بونماتي إلى الملاعب."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/femenino/liga-f/20261004/1004234534/fc-barcelona-real-madrid-imagenes-destacadas-clasico-camp-nou.html",
@@ -1633,7 +1697,20 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261004/1004234252/barca-real-madrid-directo-clasico-liga-f-spotify-camp-nou.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-04T23:39:48+00:00"
+        }
+      }
     },
     {
       "id": "e11f4aaa3072",
