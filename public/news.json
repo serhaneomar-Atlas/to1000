@@ -1161,7 +1161,12 @@
           "url": "https://africatopsports.com/football/coupe-du-monde-2026-cela-ne-pouvait-arriver-quaux-etats-unis/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 0,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "614b4315f2a8",
@@ -1441,7 +1446,17 @@
           "url": "https://www.kicker.de/barcelona-gegen-real-madrid-2026-primera-division-femenina-5225437/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-05T02:28:04+00:00"
+        }
+      }
     },
     {
       "id": "73f2d04d87d9",
@@ -1888,24 +1903,44 @@
       "summary": "Sorti dès la 10e minute de jeu face au pays de Galles ce dimanche soir, visiblement touché musculairement, Pierre-Emile Höjbjerg pourrait s'ajouter à la longue liste de blessés de l'OM.",
       "i18n": {
         "fr": {
-          "title": "L'hécatombe se poursuit pour l'OM : Pierre-Emile Höjbjerg sort sur blessure lors de pays de Galles-Danemark",
-          "summary": "Sorti dès la 10e minute de jeu face au pays de Galles ce dimanche soir, visiblement touché musculairement, Pierre-Emile Höjbjerg pourrait s'ajouter à la longue liste de blessés de l'OM.",
-          "needs_translation": false
+          "title": "OM : Pierre-Emile Højbjerg sort sur blessure avec le Danemark",
+          "summary": "Le milieu marseillais Pierre-Emile Højbjerg a quitté la pelouse sur blessure dès l'entame du match entre le Danemark et le pays de Galles.",
+          "body": [
+            "Touché musculairement après seulement dix minutes de jeu ce dimanche soir face aux Gallois, l'international danois a dû céder sa place. Ce nouveau pépin physique vient alourdir l'infirmerie de l'Olympique de Marseille, déjà bien remplie ces dernières semaines."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "L'hécatombe se poursuit pour l'OM : Pierre-Emile Höjbjerg sort sur blessure lors de pays de Galles-Danemark",
-          "summary": "Sorti dès la 10e minute de jeu face au pays de Galles ce dimanche soir, visiblement touché musculairement, Pierre-Emile Höjbjerg pourrait s'ajouter à la longue liste de blessés de l'OM.",
-          "needs_translation": true
+          "title": "Marseille: Pierre-Emile Højbjerg forced off injured for Denmark",
+          "summary": "Marseille midfielder Pierre-Emile Højbjerg was forced off with an injury early in Denmark's clash against Wales on Sunday evening.",
+          "body": [
+            "Suffering an apparent muscle injury just ten minutes into the match, the Danish international had to be replaced prematurely. This setback threatens to add another key name to Olympique de Marseille's already crowded injury list."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "L'hécatombe se poursuit pour l'OM : Pierre-Emile Höjbjerg sort sur blessure lors de pays de Galles-Danemark",
-          "summary": "Sorti dès la 10e minute de jeu face au pays de Galles ce dimanche soir, visiblement touché musculairement, Pierre-Emile Höjbjerg pourrait s'ajouter à la longue liste de blessés de l'OM.",
-          "needs_translation": true
+          "title": "Marsella: Pierre-Emile Højbjerg se marcha lesionado con Dinamarca",
+          "summary": "El centrocampista marsellés Pierre-Emile Højbjerg abandonó el césped lesionado en los primeros compases del duelo entre Dinamarca y Gales.",
+          "body": [
+            "Con molestias musculares a los diez minutos de juego este domingo frente al combinado galés, el internacional danés tuvo que dejar su sitio. Un duro contratiempo para el Olympique de Marseille, ya castigado por una plaga de ausencias en sus filas."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "L'hécatombe se poursuit pour l'OM : Pierre-Emile Höjbjerg sort sur blessure lors de pays de Galles-Danemark",
-          "summary": "Sorti dès la 10e minute de jeu face au pays de Galles ce dimanche soir, visiblement touché musculairement, Pierre-Emile Höjbjerg pourrait s'ajouter à la longue liste de blessés de l'OM.",
-          "needs_translation": true
+          "title": "أولمبيك مارسيليا: إصابة بيير-إميل هويبيرغ وخروجه مع منتخب الدنمارك",
+          "summary": "غادر متوسط ميدان أولمبيك مارسيليا بيير-إميل هويبيرغ أرضية الملعب مصاباً في الدقائق الأولى من مواجهة الدنمارك وويلز.",
+          "body": [
+            "تعرض الدولي الدنماركي لإصابة عضلية بعد مرور عشر دقائق فقط من لقاء مساء الأحد أمام ويلز، ليضطر إلى ترك مكانه مبكراً. وتمثل هذه النكسة ضربة جديدة لنادي أولمبيك مارسيليا، الذي يعاني بالفعل من كثرة الغيابات في صفوفه."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/L-hecatombe-se-poursuit-pour-l-om-pierre-emile-hojbjerg-sort-sur-blessure-lors-de-pays-de-galles-danemark/1723423#at_medium=RSS_feeds",
@@ -1927,7 +1962,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/L-hecatombe-se-poursuit-pour-l-om-pierre-emile-hojbjerg-sort-sur-blessure-lors-de-pays-de-galles-danemark/1723423#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-05T02:28:06+00:00"
+        }
+      }
     },
     {
       "id": "187bc5ffdfca",
@@ -2009,7 +2057,17 @@
           "url": "https://www.sportschau.de/regional/ndr/ein-sieg-mit-viel-dusel-vfl-frauen-schlagen-hsv,wolfsburg-hsv-106.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-05T02:28:10+00:00"
+        }
+      }
     },
     {
       "id": "ea0d94a84e7a",
