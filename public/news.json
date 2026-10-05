@@ -727,7 +727,12 @@
           "url": "https://video.lefigaro.fr/figaro/sports/atp-500-de-pekin-djokovic-en-finale-apres-la-disqualification-de-medvedev-20261005"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "47ee6ab514ee",
@@ -1290,7 +1295,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261005/1004234777/semana-vinicius.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "270120dca92a",
@@ -1538,24 +1548,44 @@
       "summary": "El Real Madrid completó este lunes su primer entrenamiento de la semana sin Kylian Mbappé , que continúa con su proceso de recuperación junto a Asencio , Konaté , Mendy , Valverde y Rodrygo .",
       "i18n": {
         "es": {
-          "title": "El Real Madrid vuelve a los entrenamientos sin Mbappé",
-          "summary": "El Real Madrid completó este lunes su primer entrenamiento de la semana sin Kylian Mbappé , que continúa con su proceso de recuperación junto a Asencio , Konaté , Mendy , Valverde y Rodrygo .",
-          "needs_translation": false
+          "title": "Mbappé sigue al margen en la vuelta a los entrenamientos del Real Madrid",
+          "summary": "Kylian Mbappé causó baja este lunes en la primera sesión semanal del Real Madrid para continuar con su puesta a punto.",
+          "body": [
+            "El delantero galo no se entrenó con el grupo y realizó trabajo de recuperación al margen. No fue el único ausente en la plantilla blanca: Asencio, Konaté, Mendy, Valverde y Rodrygo tampoco se ejercitaron con normalidad y continúan con sus respectivos procesos médicos."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "El Real Madrid vuelve a los entrenamientos sin Mbappé",
-          "summary": "El Real Madrid completó este lunes su primer entrenamiento de la semana sin Kylian Mbappé , que continúa con su proceso de recuperación junto a Asencio , Konaté , Mendy , Valverde y Rodrygo .",
-          "needs_translation": true
+          "title": "Mbappé remains sidelined as Real Madrid return to training",
+          "summary": "Kylian Mbappé missed Real Madrid's first session of the week on Monday as he continues his recovery programme.",
+          "body": [
+            "The French forward worked away from the group rather than joining full team drills. He was not the only absentee: Asencio, Konaté, Mendy, Valverde and Rodrygo also remained sidelined to focus on their respective medical recoveries."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "El Real Madrid vuelve a los entrenamientos sin Mbappé",
-          "summary": "El Real Madrid completó este lunes su primer entrenamiento de la semana sin Kylian Mbappé , que continúa con su proceso de recuperación junto a Asencio , Konaté , Mendy , Valverde y Rodrygo .",
-          "needs_translation": true
+          "title": "Mbappé toujours absent pour la reprise du Real Madrid",
+          "summary": "Kylian Mbappé a manqué la première séance de la semaine du Real Madrid, ce lundi, pour poursuivre ses soins.",
+          "body": [
+            "L'attaquant tricolore ne s'est pas entraîné avec le groupe et s'est contenté d'un travail individuel en marge du collectif. Même constat pour plusieurs de ses coéquipiers : Asencio, Konaté, Mendy, Valverde et Rodrygo sont également restés à l'écart pour poursuivre leur protocole de reprise."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "El Real Madrid vuelve a los entrenamientos sin Mbappé",
-          "summary": "El Real Madrid completó este lunes su primer entrenamiento de la semana sin Kylian Mbappé , que continúa con su proceso de recuperación junto a Asencio , Konaté , Mendy , Valverde y Rodrygo .",
-          "needs_translation": true
+          "title": "مبابي يواصل الغياب مع استئناف ريال مدريد تدريباته",
+          "summary": "غاب كيليان مبابي، اليوم الإثنين، عن الحصة التدريبية الأولى لريال مدريد هذا الأسبوع لمواصلة برنامجه التأهيلي.",
+          "body": [
+            "ولم يشارك المهاجم الفرنسي في المران الجماعي، مكتفياً بأداء تدريبات منفردة للتعافي. كما واصل كل من أسينسيو، وكوناتي، وميندي، وفالفيردي، ورودريغو الغياب عن التدريبات الاعتيادية لمتابعة برامجهم العلاجية والتأهيلية."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261005/1004234825/real-madrid-vuelve-trabajo-mbappe.html",
@@ -1583,7 +1613,20 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261005/1004234798/real-madrid-vuelve-entrenamientos-mbappe.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-05T18:54:46+00:00"
+        }
+      }
     },
     {
       "id": "626ad6277e7f",
@@ -2147,7 +2190,12 @@
           "url": "https://www.fourfourtwo.com/person/will-cristiano-ronaldo-get-a-portugal-send-off"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "95f142924775",
