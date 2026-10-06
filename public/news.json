@@ -59,7 +59,12 @@
           "url": "https://www.ole.com.ar/seleccion/messi-seleccion-argentina-despedida-trivia-preguntas_0_54j6s2ubOY.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0823408b4621",
@@ -1074,24 +1079,44 @@
       "summary": "Victime d'une nouvelle blessure à la cheville droite, Alexis Saelemaekers pourrait être éloigné des terrains jusqu'en 2027. Le milieu offensif belge de l'AC Milan devrait subir une nouvelle intervention chirurgicale.",
       "i18n": {
         "fr": {
-          "title": "Alexis Saelemaekers indisponible jusqu'en 2027 avec l'AC Milan",
-          "summary": "Victime d'une nouvelle blessure à la cheville droite, Alexis Saelemaekers pourrait être éloigné des terrains jusqu'en 2027. Le milieu offensif belge de l'AC Milan devrait subir une nouvelle intervention chirurgicale.",
-          "needs_translation": false
+          "title": "AC Milan : Alexis Saelemaekers pourrait être absent jusqu'en 2027",
+          "summary": "De nouveau touché à la cheville droite, le milieu offensif de l'AC Milan Alexis Saelemaekers pourrait être éloigné des terrains jusqu'en 2027.",
+          "body": [
+            "L'international belge doit subir une nouvelle intervention chirurgicale. Cette rechute articulaire contraindrait le joueur milanais à une convalescence particulièrement longue."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Alexis Saelemaekers indisponible jusqu'en 2027 avec l'AC Milan",
-          "summary": "Victime d'une nouvelle blessure à la cheville droite, Alexis Saelemaekers pourrait être éloigné des terrains jusqu'en 2027. Le milieu offensif belge de l'AC Milan devrait subir une nouvelle intervention chirurgicale.",
-          "needs_translation": true
+          "title": "AC Milan: Alexis Saelemaekers could be sidelined until 2027",
+          "summary": "Struck by another right ankle injury, AC Milan attacking midfielder Alexis Saelemaekers faces the prospect of being sidelined until 2027.",
+          "body": [
+            "The Belgian international is expected to undergo another surgical procedure. This setback on his ankle would force the player into an unusually prolonged recovery period."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Alexis Saelemaekers indisponible jusqu'en 2027 avec l'AC Milan",
-          "summary": "Victime d'une nouvelle blessure à la cheville droite, Alexis Saelemaekers pourrait être éloigné des terrains jusqu'en 2027. Le milieu offensif belge de l'AC Milan devrait subir une nouvelle intervention chirurgicale.",
-          "needs_translation": true
+          "title": "AC Milan: Alexis Saelemaekers podría ser baja hasta 2027",
+          "summary": "Víctima de una nueva lesión en el tobillo derecho, el mediapunta del AC Milan Alexis Saelemaekers podría permanecer apartado del campo hasta 2027.",
+          "body": [
+            "El internacional belga tendrá que someterse a otra intervención quirúrgica en la articulación. El procedimiento dejará al futbolista milanista ante un proceso de rehabilitación excepcionalmente largo."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Alexis Saelemaekers indisponible jusqu'en 2027 avec l'AC Milan",
-          "summary": "Victime d'une nouvelle blessure à la cheville droite, Alexis Saelemaekers pourrait être éloigné des terrains jusqu'en 2027. Le milieu offensif belge de l'AC Milan devrait subir une nouvelle intervention chirurgicale.",
-          "needs_translation": true
+          "title": "ميلان: شبح الغياب حتى 2027 يهدد أليكسيس سايليمايكرس",
+          "summary": "يواجه لاعب وسط إيه سي ميلان أليكسيس سايليمايكرس خطر الغياب عن الملاعب حتى عام 2027 بعد إصابة جديدة في الكاحل الأيمن.",
+          "body": [
+            "ومن المتوقع أن يخضع الدولي البلجيكي لتدخل جراحي جديد في المفصل، ما يفرض عليه فترة تعافٍ طويلة ستبعده طويلاً عن الفريق الإيطالي."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Alexis-saelemaekers-indisponible-jusqu-en-2027-avec-l-ac-milan/1723651#at_medium=RSS_feeds",
@@ -1119,7 +1144,20 @@
           "url": "https://www.lefigaro.fr/sports/football/italie/serie-a-l-ac-milan-prive-jusqu-en-2027-d-alexis-saelemaekers-20261005"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-06T00:51:47+00:00"
+        }
+      }
     },
     {
       "id": "e82e201c986c",
@@ -1421,7 +1459,12 @@
           "url": "https://www.lequotidiendusport.fr/ismael-kone-grave-blessure-mondial/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a9502f6da26b",
@@ -1515,7 +1558,12 @@
           "url": "https://www.lequotidiendusport.fr/mohamed-tijani-maillot-messi-benin-argentine/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c96521418fa0",
@@ -2089,7 +2137,12 @@
           "url": "https://www.mundodeportivo.com/futbol/serie-a/20261005/1004235010/duro-golpe-milan-baja-2027.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "44beab27c701",
