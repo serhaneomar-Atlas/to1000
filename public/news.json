@@ -279,27 +279,44 @@
       "summary": "Lionel Messi ya está en el Estadio Monumental para disputar su partido de despedida con la selección argentina.",
       "i18n": {
         "es": {
-          "title": "Messi, entre lágrimas antes de su despedida con Argentina",
-          "summary": "Lionel Messi ya está en el Estadio Monumental para disputar su partido de despedida con la selección argentina.",
-          "needs_translation": false
+          "title": "Messi rompe a llorar antes de su despedida con Argentina",
+          "summary": "Lionel Messi no pudo contener el llanto dentro del autobús camino al Monumental para disputar su partido de despedida con la selección argentina.",
+          "body": [
+            "Las cámaras captaron al capitán albiceleste secándose las lágrimas con un pañuelo durante el trayecto previo al encuentro. El choque sirve como homenaje para poner el broche definitivo a su trayectoria con la camiseta nacional, arropado por una afición volcada en el estadio antes del inicio de la cita."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Messi, in tears before his farewell with Argentina",
-          "summary": "Lionel Messi is already at the Estadio Monumental to play his farewell match with the Argentine national team.",
+          "title": "Messi breaks down in tears ahead of Argentina farewell",
+          "summary": "Lionel Messi could not hold back tears on the team bus heading to the Monumental for his farewell match with the Argentina national team.",
+          "body": [
+            "Cameras caught the Albiceleste captain wiping away tears with a tissue during the journey to the stadium. The match serves as a tribute to cap off his career with the national team, backed by an emotional crowd filling the stands ahead of kickoff."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Messi, en larmes avant ses adieux à l'Argentine",
-          "summary": "Lionel Messi est déjà au Stade Monumental pour disputer son match d'adieu avec l'équipe nationale argentine.",
+          "title": "Messi en larmes avant ses adieux avec l'Argentine",
+          "summary": "Lionel Messi n'a pu retenir ses larmes à bord du car menant au Monumental, où il dispute son match d'adieu avec la sélection argentine.",
+          "body": [
+            "Les caméras ont capté le capitaine de l'Albiceleste essuyant ses larmes avec un mouchoir durant le trajet. Cette rencontre rend hommage au capitaine pour clore définitivement son aventure sous le maillot national, porté par un public ému massé dans le stade avant le coup d'envoi."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ميسي يبكي قبل وداعه للأرجنتين",
-          "summary": "ليونيل ميسي موجود بالفعل في ملعب مونومنتال للعب مباراة الوداع مع المنتخب الأرجنتيني.",
+          "title": "ميسي ينهمر في البكاء قبل مباراة وداعه مع منتخب الأرجنتين",
+          "summary": "لم يتمالك ليونيل ميسي دموعه داخل حافلة الفريق في الطريق إلى ملعب المونومنتال لخوض مباراة وداعه مع منتخب الأرجنتين.",
+          "body": [
+            "التقطت الكاميرات قائد الألبيسيليستي وهو يجفف دموعه بمنديل أثناء توجه الحافلة إلى الملعب. وتأتي المواجهة كتكريم ليسدل الستار رسميًا على مسيرته بقميص المنتخب الوطني، وسط مدرجات محتشدة تهتف باسمه قبل صافرة البداية."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/internacional/20261007/1004235612/messi-lagrimas-despedida-argentina.html",
@@ -321,7 +338,20 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20261007/1004235612/messi-lagrimas-despedida-argentina.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-06T23:54:12+00:00"
+        }
+      }
     },
     {
       "id": "89034b01529c",
@@ -933,7 +963,12 @@
           "url": "https://www.marca.com/futbol/opinion/2026/10/06/messi-mas-grande-perdon.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9ff9722f1b99",
