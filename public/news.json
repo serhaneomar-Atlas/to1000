@@ -559,7 +559,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261007/1004235371/cuesta-octubre.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b547d1a1789a",
@@ -1212,24 +1217,44 @@
       "summary": "Après avoir égalé le record de sélections de Peter Shilton, Harry Kane a été encensé par Jude Bellingham, ce mardi soir, à Wembley.",
       "i18n": {
         "fr": {
-          "title": "Jude Bellingham chante les louanges d'Harry Kane : « C'est le meilleur joueur anglais à n'avoir jamais porté ce maillot »",
-          "summary": "Après avoir égalé le record de sélections de Peter Shilton, Harry Kane a été encensé par Jude Bellingham, ce mardi soir, à Wembley.",
-          "needs_translation": false
+          "title": "Angleterre : Bellingham encense Kane après son record de sélections",
+          "summary": "Jude Bellingham a désigné Harry Kane comme le plus grand joueur de l'histoire anglaise, mardi soir à Wembley, après qu'il a égalé le record de Peter Shilton.",
+          "body": [
+            "L'attaquant des Three Lions a rejoint le gardien légendaire au sommet des apparitions sous le maillot national. Dans la foulée, le milieu de terrain a rendu un hommage appuyé à son capitaine."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Jude Bellingham chante les louanges d'Harry Kane : « C'est le meilleur joueur anglais à n'avoir jamais porté ce maillot »",
-          "summary": "Après avoir égalé le record de sélections de Peter Shilton, Harry Kane a été encensé par Jude Bellingham, ce mardi soir, à Wembley.",
-          "needs_translation": true
+          "title": "England: Bellingham hails Kane as greatest ever after record cap",
+          "summary": "Jude Bellingham labelled Harry Kane the greatest English player of all time on Tuesday night at Wembley, after the striker equalled Peter Shilton's caps record.",
+          "body": [
+            "The England captain matched the former goalkeeper at the top of the national team's all-time appearances chart. Bellingham praised his skipper right after the milestone match in London."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Jude Bellingham chante les louanges d'Harry Kane : « C'est le meilleur joueur anglais à n'avoir jamais porté ce maillot »",
-          "summary": "Après avoir égalé le record de sélections de Peter Shilton, Harry Kane a été encensé par Jude Bellingham, ce mardi soir, à Wembley.",
-          "needs_translation": true
+          "title": "Inglaterra: Bellingham elogia a Kane tras igualar el récord de Shilton",
+          "summary": "Jude Bellingham calificó a Harry Kane como el mejor futbolista inglés de la historia este martes en Wembley, tras igualar el récord de internacionalidades de Peter Shilton.",
+          "body": [
+            "El delantero alcanzó al mítico guardameta en lo más alto del ranking histórico de partidos con los Three Lions. Tras el encuentro en Londres, el centrocampista no escatimó elogios hacia su capitán."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Jude Bellingham chante les louanges d'Harry Kane : « C'est le meilleur joueur anglais à n'avoir jamais porté ce maillot »",
-          "summary": "Après avoir égalé le record de sélections de Peter Shilton, Harry Kane a été encensé par Jude Bellingham, ce mardi soir, à Wembley.",
-          "needs_translation": true
+          "title": "إنجلترا: جود بيلينغهام يشيد بهاري كين بعد معادلته رقم بيتر شيلتون",
+          "summary": "وصف جود بيلينغهام زميله هاري كين بأنه أعظم لاعب في تاريخ إنجلترا، مساء الثلاثاء في ويمبلي، بعد معادلته الرقم القياسي لعدد المباريات الدولية المسجل باسم بيتر شيلتون.",
+          "body": [
+            "وعادل مهاجم منتخب الأسود الثلاثة رقم الحارس التاريخي في صدارة الأكثر تمثيلاً للمنتخب الوطني. وعقب المواجهة في لندن، كال لاعب الوسط المديح لقائده معتبراً إياه الأفضل على الإطلاق."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Jude-bellingham-chante-les-louanges-d-harry-kane-c-est-le-meilleur-joueur-anglais-a-n-avoir-jamais-porte-ce-maillot/1723895#at_medium=RSS_feeds",
@@ -1251,7 +1276,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Jude-bellingham-chante-les-louanges-d-harry-kane-c-est-le-meilleur-joueur-anglais-a-n-avoir-jamais-porte-ce-maillot/1723895#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-07T06:02:23+00:00"
+        }
+      }
     },
     {
       "id": "fe36a6015e2a",
@@ -1318,7 +1356,17 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20261007/1004235612/messi-lagrimas-despedida-argentina.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-07T06:02:29+00:00"
+        }
+      }
     },
     {
       "id": "4cb6e4fa23d0",
@@ -1730,7 +1778,12 @@
           "url": "https://www.marca.com/futbol/opinion/2026/10/06/messi-mas-grande-perdon.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9ff9722f1b99",
