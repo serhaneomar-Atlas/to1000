@@ -933,7 +933,12 @@
           "url": "https://www.kicker.de/freiburger-trio-und-dfb-zukunft-die-groessten-rating-gewinner-in-fc-27-1259390/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4680ba707afb",
@@ -1270,24 +1275,44 @@
       "summary": "Invité de l'émission « Détective Mathoux » de Canal+, Serge Aurier a notamment été interrogé sur l'épisode du live Periscope durant lequel il avait insulté plusieurs coéquipiers et son entraîneur au PSG.",
       "i18n": {
         "fr": {
-          "title": "Foot : dix ans après avoir traité de «fiotte» Laurent Blanc, Serge Aurier présente ses excuses",
-          "summary": "Invité de l'émission « Détective Mathoux » de Canal+, Serge Aurier a notamment été interrogé sur l'épisode du live Periscope durant lequel il avait insulté plusieurs coéquipiers et son entraîneur au PSG.",
-          "needs_translation": false
+          "title": "Serge Aurier présente ses excuses à Laurent Blanc",
+          "summary": "Dix ans après ses dérapages lors d'un live Periscope, Serge Aurier a présenté ses excuses à son ancien entraîneur Laurent Blanc.",
+          "body": [
+            "Invité de l'émission « Détective Mathoux » sur Canal+, le défenseur est revenu sur la polémique qui a marqué son aventure au Paris Saint-Germain. Lors de cette vidéo en direct, l'ancien latéral parisien s'en était pris verbalement à son technicien ainsi qu'à plusieurs de ses coéquipiers."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Foot : dix ans après avoir traité de «fiotte» Laurent Blanc, Serge Aurier présente ses excuses",
-          "summary": "Invité de l'émission « Détective Mathoux » de Canal+, Serge Aurier a notamment été interrogé sur l'épisode du live Periscope durant lequel il avait insulté plusieurs coéquipiers et son entraîneur au PSG.",
-          "needs_translation": true
+          "title": "Serge Aurier apologises to Laurent Blanc",
+          "summary": "Ten years after his insults on a live Periscope stream, Serge Aurier has offered his apologies to Laurent Blanc.",
+          "body": [
+            "Appearing on the Canal+ show 'Détective Mathoux', the defender revisited the major controversy of his spell at Paris Saint-Germain. During that live video, the former Paris full-back launched verbal attacks against his then manager and several dressing-room teammates."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Foot : dix ans après avoir traité de «fiotte» Laurent Blanc, Serge Aurier présente ses excuses",
-          "summary": "Invité de l'émission « Détective Mathoux » de Canal+, Serge Aurier a notamment été interrogé sur l'épisode du live Periscope durant lequel il avait insulté plusieurs coéquipiers et son entraîneur au PSG.",
-          "needs_translation": true
+          "title": "Serge Aurier pide disculpas a Laurent Blanc",
+          "summary": "Diez años después de sus insultos en un directo de Periscope, Serge Aurier ha pedido perdón a Laurent Blanc.",
+          "body": [
+            "A su paso por el programa « Détective Mathoux » de Canal+, el defensa recordó la sonada polémica que marcó su etapa en el Paris Saint-Germain. En aquella emisión en vivo, el exlateral parisino cargó duramente contra el que era su entrenador y contra varios compañeros de vestuario."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Foot : dix ans après avoir traité de «fiotte» Laurent Blanc, Serge Aurier présente ses excuses",
-          "summary": "Invité de l'émission « Détective Mathoux » de Canal+, Serge Aurier a notamment été interrogé sur l'épisode du live Periscope durant lequel il avait insulté plusieurs coéquipiers et son entraîneur au PSG.",
-          "needs_translation": true
+          "title": "سيرج أورييه يعتذر لمدربه السابق لوران بلان",
+          "summary": "قدم سيرج أورييه اعتذاره للمدرب لوران بلان، بعد عشر سنوات من الإساءات التي وجهها إليه عبر بث مباشر على تطبيق بيريسكوب.",
+          "body": [
+            "وخلال ظهوره في برنامج «ديتيكتيف ماتو» عبر قناة كنال بلوس، تطرق المدافع إلى القضية الشائكة التي شابت فترته مع باريس سان جيرمان؛ إذ كان الظهير الأيمن السابق لفريق العاصمة قد شن هجوماً لاذعاً على مدربه آنذاك وعلى عدد من زملائه في غرفة تبديل الملابس."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Medias/Actualites/-je-n-en-pensais-pas-un-mot-les-excuses-scenarisees-de-serge-aurier-a-laurent-blanc-dix-ans-apres-ses-insultes-sur-periscope/1724340#at_medium=RSS_feeds",
@@ -1315,7 +1340,20 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-1/foot-dix-ans-apres-avoir-traite-de-fiotte-laurent-blanc-serge-aurier-presente-ses-excuses-20261009"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-09T19:06:07+00:00"
+        }
+      }
     },
     {
       "id": "2ebe39f008ee",
