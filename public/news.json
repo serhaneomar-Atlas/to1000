@@ -215,7 +215,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261010/1004237070/1x1-barca-getafe-descanso.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "fbc2eca4f5ec",
@@ -1554,24 +1559,44 @@
       "summary": "Ce samedi après-midi, Chelsea a aisément dominé Bournemouth à domicile (5-1), dans le cadre de la 6e journée de Premier League. Grâce à ce succès, les Blues grimpent à la 5e place, tandis que Brighton reste 3e, après sa victoire à Sunderland (2-0).",
       "i18n": {
         "fr": {
-          "title": "Chelsea surclasse Bournemouth, Brighton reste sur le podium de la Premier League après sa victoire à Sunderland",
-          "summary": "Ce samedi après-midi, Chelsea a aisément dominé Bournemouth à domicile (5-1), dans le cadre de la 6e journée de Premier League. Grâce à ce succès, les Blues grimpent à la 5e place, tandis que Brighton reste 3e, après sa victoire à Sunderland (2-0).",
-          "needs_translation": false
+          "title": "Chelsea écrase Bournemouth, Brighton reste sur le podium",
+          "summary": "Chelsea a nettement dominé Bournemouth (5-1) pour grimper au cinquième rang de Premier League, pendant que Brighton conservait sa place sur le podium.",
+          "body": [
+            "Lors de cette 6e journée, les Blues ont déroulé à domicile face aux Cherries pour s'installer dans le top 5. Brighton préserve pour sa part sa troisième position au classement après s'être imposé 2-0 sur le terrain de Sunderland."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Chelsea surclasse Bournemouth, Brighton reste sur le podium de la Premier League après sa victoire à Sunderland",
-          "summary": "Ce samedi après-midi, Chelsea a aisément dominé Bournemouth à domicile (5-1), dans le cadre de la 6e journée de Premier League. Grâce à ce succès, les Blues grimpent à la 5e place, tandis que Brighton reste 3e, après sa victoire à Sunderland (2-0).",
-          "needs_translation": true
+          "title": "Chelsea crush Bournemouth as Brighton keep pace on the podium",
+          "summary": "Chelsea powered past Bournemouth 5-1 to move up to fifth in the Premier League, while Brighton held onto third place after winning at Sunderland.",
+          "body": [
+            "On matchday 6, the Blues produced a dominant home display against the Cherries to break into the top five. Brighton, meanwhile, cemented their spot on the podium with a clean 2-0 victory on the road at Sunderland."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Chelsea surclasse Bournemouth, Brighton reste sur le podium de la Premier League après sa victoire à Sunderland",
-          "summary": "Ce samedi après-midi, Chelsea a aisément dominé Bournemouth à domicile (5-1), dans le cadre de la 6e journée de Premier League. Grâce à ce succès, les Blues grimpent à la 5e place, tandis que Brighton reste 3e, après sa victoire à Sunderland (2-0).",
-          "needs_translation": true
+          "title": "Chelsea arrolla a Bournemouth y Brighton retiene el podio",
+          "summary": "Chelsea superó con claridad a Bournemouth (5-1) para escalar al quinto puesto de la Premier League, mientras que Brighton mantuvo su lugar en el podio.",
+          "body": [
+            "En la 6.ª jornada, los Blues firmaron una exhibición en casa frente a los Cherries para meterse en el top 5. Por su parte, Brighton afianzó su tercera plaza gracias a un solvente triunfo a domicilio (2-0) ante Sunderland."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Chelsea surclasse Bournemouth, Brighton reste sur le podium de la Premier League après sa victoire à Sunderland",
-          "summary": "Ce samedi après-midi, Chelsea a aisément dominé Bournemouth à domicile (5-1), dans le cadre de la 6e journée de Premier League. Grâce à ce succès, les Blues grimpent à la 5e place, tandis que Brighton reste 3e, après sa victoire à Sunderland (2-0).",
-          "needs_translation": true
+          "title": "تشيلسي يكتسح بورنموث وبرايتون يحافظ على مركزه الثالث",
+          "summary": "اكتسح تشيلسي ضيفه بورنموث بنتيجة 5-1 ليصعد إلى المركز الخامس في الدوري الإنجليزي الممتاز، بينما حافظ برايتون على تواجده في المرتبة الثالثة.",
+          "body": [
+            "لحساب الجولة السادسة، حقق النادي اللندني فوزاً عريضاً على ملعبه ليدخل ضمن المراكز الخمسة الأولى. وفي المقابل، عزز برايتون موقعه في المركز الثالث إثر تغلبه خارج قواعده على سندرلاند بهدفين دون رد."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Chelsea-surclasse-bournemouth-brighton-reste-sur-le-podium-de-la-premier-league-apres-sa-victoire-a-sunderland/1724757#at_medium=RSS_feeds",
@@ -1593,7 +1618,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Chelsea-surclasse-bournemouth-brighton-reste-sur-le-podium-de-la-premier-league-apres-sa-victoire-a-sunderland/1724757#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-10T20:08:07+00:00"
+        }
+      }
     },
     {
       "id": "5e5adf7b879b",
@@ -1709,7 +1747,12 @@
           "url": "https://www.mundodeportivo.com/futbol/ligue-1/20261010/1004235120/lille-le-havre-directo-ligue-1.html"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c1f48602867e",
@@ -1855,7 +1898,12 @@
           "url": "https://www.kicker.de/chemnitz-gegen-bayern-2026-bbl-5254023/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "81c0c841b689",
