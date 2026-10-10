@@ -159,7 +159,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261010/1004236717/viene-gordo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2b83c14fc1b3",
@@ -659,7 +664,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261010/1004236674/posible-once-barca-getafe.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d64c7fa1dbc3",
@@ -759,7 +769,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261010/1004236622/importancia-mediocentro.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "1597f57c4ed7",
@@ -1346,24 +1361,44 @@
       "summary": "Pour le deuxième match de leur nouvel entraîneur, Yannick Cahuzac, les Sang et Or se sont imposés (2-1), vendredi soir à domicile, grâce à des buts de Florian Sotoca et Matthieu Udol, tous deux idéalement servis par Florian Thauvin, avant une réduction de l’écart de Khalis Merah.",
       "i18n": {
         "fr": {
-          "title": "Lens inflige à l’Olympique lyonnais sa première défaite de la saison en Ligue 1",
-          "summary": "Pour le deuxième match de leur nouvel entraîneur, Yannick Cahuzac, les Sang et Or se sont imposés (2-1), vendredi soir à domicile, grâce à des buts de Florian Sotoca et Matthieu Udol, tous deux idéalement servis par Florian Thauvin, avant une réduction de l’écart de Khalis Merah.",
-          "needs_translation": false
+          "title": "Ligue 1 : Lens fait chuter Lyon pour la première fois de la saison",
+          "summary": "Le RC Lens a infligé à l’Olympique Lyonnais son premier revers de la saison en s'imposant 2-1 à domicile vendredi soir.",
+          "body": [
+            "Pour la deuxième rencontre dirigée par leur nouvel entraîneur Yannick Cahuzac, les Sang et Or ont fait la différence grâce à Florian Sotoca et Matthieu Udol, tous deux servis par Florian Thauvin. Khalis Merah a ensuite réduit l’écart pour l'Olympique Lyonnais, sans parvenir à empêcher la défaite des siens."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Lens inflige à l’Olympique lyonnais sa première défaite de la saison en Ligue 1",
-          "summary": "Pour le deuxième match de leur nouvel entraîneur, Yannick Cahuzac, les Sang et Or se sont imposés (2-1), vendredi soir à domicile, grâce à des buts de Florian Sotoca et Matthieu Udol, tous deux idéalement servis par Florian Thauvin, avant une réduction de l’écart de Khalis Merah.",
-          "needs_translation": true
+          "title": "Ligue 1: Lens hand Lyon their first defeat of the season",
+          "summary": "RC Lens dealt Olympique Lyonnais their first loss of the season with a 2-1 home victory on Friday night.",
+          "body": [
+            "In their second match under new manager Yannick Cahuzac, the Sang et Or made the difference through Florian Sotoca and Matthieu Udol, both set up by Florian Thauvin. Khalis Merah pulled one back for Olympique Lyonnais, but could not prevent his side from falling short."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Lens inflige à l’Olympique lyonnais sa première défaite de la saison en Ligue 1",
-          "summary": "Pour le deuxième match de leur nouvel entraîneur, Yannick Cahuzac, les Sang et Or se sont imposés (2-1), vendredi soir à domicile, grâce à des buts de Florian Sotoca et Matthieu Udol, tous deux idéalement servis par Florian Thauvin, avant une réduction de l’écart de Khalis Merah.",
-          "needs_translation": true
+          "title": "Ligue 1: Lens propina a Lyon su primera derrota de la temporada",
+          "summary": "El RC Lens infligió al Olympique Lyonnais su primer tropiezo del curso al vencer por 2-1 en casa este viernes por la noche.",
+          "body": [
+            "En el segundo encuentro bajo las órdenes de su nuevo entrenador Yannick Cahuzac, los Sang et Or se llevaron la victoria gracias a Florian Sotoca y Matthieu Udol, ambos asistidos por Florian Thauvin. Khalis Merah recortó distancias para el Olympique Lyonnais, sin evitar la caída de los suyos."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Lens inflige à l’Olympique lyonnais sa première défaite de la saison en Ligue 1",
-          "summary": "Pour le deuxième match de leur nouvel entraîneur, Yannick Cahuzac, les Sang et Or se sont imposés (2-1), vendredi soir à domicile, grâce à des buts de Florian Sotoca et Matthieu Udol, tous deux idéalement servis par Florian Thauvin, avant une réduction de l’écart de Khalis Merah.",
-          "needs_translation": true
+          "title": "الدوري الفرنسي: لانس يلحق بليون هزيمته الأولى هذا الموسم",
+          "summary": "ألحق لانس بضيفه أولمبيك ليون أول خسارة له هذا الموسم بعدما تغلب عليه بنتيجة 2-1 مساء الجمعة.",
+          "body": [
+            "وفي مباراتهم الثانية تحت قيادة المدرب الجديد يانيك كاهوزاك، حسم أصحاب الأرض المواجهة بفضل فلوريان سوتوكا وماتيو أودول بعد تمريرتين حاسمتين من فلوريان توفان، قبل أن يقلص خاليس مراح الفارق لأولمبيك ليون دون أن ينجح في تجنيب فريقه الهزيمة."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lemonde.fr/sport/article/2026/10/10/lens-inflige-a-l-olympique-lyonnais-sa-premiere-defaite-de-la-saison-en-ligue-1_6790703_3242.html",
@@ -1385,7 +1420,20 @@
           "url": "https://www.lemonde.fr/sport/article/2026/10/10/lens-inflige-a-l-olympique-lyonnais-sa-premiere-defaite-de-la-saison-en-ligue-1_6790703_3242.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-10T09:54:18+00:00"
+        }
+      }
     },
     {
       "id": "b202e53cf6fa",
@@ -1499,27 +1547,48 @@
       "summary": "En quête de points et en infériorité numérique en fin de match, les Nordistes se sont imposés, ce vendredi, face aux Rhodaniens (2-1), en ouverture de la sixième journée.",
       "i18n": {
         "fr": {
-          "title": "Ligue 1 : première réussie à Bollaert pour Cahuzac, Lens inflige à Lyon sa première défaite de la saison",
-          "summary": "En quête de points et en infériorité numérique en fin de match, les Nordistes se sont imposés, ce vendredi, face aux Rhodaniens (2-1), en ouverture de la sixième journée.",
-          "needs_translation": false
+          "title": "Ligue 1 : Lens fait tomber Lyon et offre un premier succès à Yannick Cahuzac",
+          "summary": "Le RC Lens a infligé à l'Olympique Lyonnais sa première défaite de la saison (2-1), vendredi à Bollaert, en ouverture de la 6e journée.",
+          "body": [
+            "Après cinq sorties sans le moindre succès en championnat, les Sang et Or ont parfaitement réagi sous les ordres de leur nouvel entraîneur. Titularisé pour la première fois cette saison, Florian Sotoca a débloqué la situation d'un superbe enchaînement poitrine-reprise du droit (36e), servi par Florian Thauvin. Déjà passeur sur l'ouverture du score, l'ancien Marseillais a remis ça sur coup franc en trouvant la tête de Matthieu Udol (76e), exclu dans la foulée.",
+            "Réduits à dix, les Artésiens ont vu Khalis Merah réduire l'écart (85e), mais ont tenu le coup jusqu'au bout. Privé de Loïs Openda, contraint de sortir sur blessure, l'OL laisse filer l'occasion de prendre les commandes à Monaco. Lens grimpe provisoirement à la 7e place avant de replonger dans la Ligue des champions face au Sporting Portugal."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Ligue 1: successful first in Bollaert for Cahuzac, Lens inflicts Lyon its first defeat of the season",
-          "summary": "In search of points and outnumbered at the end of the game, the Northerners won, this Friday, against the Rhodanians (2-1), in the opening of the sixth day.",
+          "title": "Ligue 1: Lens down Lyon to hand Yannick Cahuzac his first win",
+          "summary": "RC Lens handed Olympique Lyonnais their first defeat of the season with a 2-1 victory at Bollaert on Friday to kick off matchday 6.",
+          "body": [
+            "Winless after five league outings, the Sang et Or mounted the perfect response under their new manager. Making his first start of the campaign, Florian Sotoca broke the deadlock with a brilliant chest control and right-footed volley (36'), set up by Florian Thauvin. The former Marseillais playmaker struck again from a free-kick, whipping in a delivery headed home by Matthieu Udol (76'), who was sent off just moments later.",
+            "Down to ten men, the Artésiens conceded a late strike from Khalis Merah (85') but held firm until the final whistle. With Loïs Openda forced off through injury, OL missed the chance to leapfrog Monaco at the summit. Lens provisionally climb to seventh place ahead of their Champions League clash against Sporting Portugal."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Ligue 1: primera victoria en Bollaert para Cahuzac, Lens inflige al Lyon su primera derrota de la temporada",
-          "summary": "En busca de puntos y en inferioridad numérica al final del partido, los Nordistas se impusieron, este viernes, a los Rhodanianos (2-1), en la apertura de la sexta jornada.",
+          "title": "Ligue 1: Lens tumba a Lyon y estrena el casillero de Yannick Cahuzac",
+          "summary": "El RC Lens infligió al Olympique Lyonnais su primera derrota de la temporada (2-1) este viernes en Bollaert, en el arranque de la sexta jornada.",
+          "body": [
+            "Tras cinco jornadas sin ganar en liga, los Sang et Or reaccionaron con carácter a las órdenes de su nuevo técnico. En su primera titularidad del curso, Florian Sotoca abrió el marcador con un gran control orientado con el pecho y volea con la diestra (36'), asistido por Florian Thauvin. Con una asistencia ya en su cuenta, el ex Marseillais repitió a balón parado al servir una falta que cabeceó a la red Matthieu Udol (76'), expulsado poco después.",
+            "En inferioridad numérica, los Artésiens encajaron el tanto de Khalis Merah (85'), pero resistieron el asedio hasta el pitido final. Privado de Loïs Openda, sustituido por lesión, el OL desperdició la ocasión de arrebatarle el liderato a Monaco. Lens sube provisionalmente al séptimo puesto antes de medirse en Champions League al Sporting Portugal."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري الدرجة الأولى: ناجح لأول مرة في بولارت لكاهوزاك، لينس يلحق ليون هزيمته الأولى في الموسم",
-          "summary": "بحثا عن النقاط وتفوقا عدديا في نهاية المباراة، فاز الشماليون، يوم الجمعة، على الرودانيين (2-1)، في افتتاح اليوم السادس.",
+          "title": "الدوري الفرنسي: لانس يُسقط ليون ويمنح يانيك كاهوزاك فوزه الأول",
+          "summary": "ألحق لانس الهزيمة الأولى هذا الموسم بضيفه أولمبيك ليون وتغلب عليه بنتيجة 2-1، مساء الجمعة على ملعب بولار، في افتتاح الجولة السادسة من الدوري الفرنسي.",
+          "body": [
+            "بعد خمس مباريات متتالية دون أي انتصار في البطولة المحلية، استعاد لانس توازنه تحت قيادة مدربه الجديد. وفي أول مشاركة له كأساسي هذا الموسم، افتتح فلوريان سوتوكا التسجيل بعدما روض الكرة بصدره وسددها بيمناه داخل الشباك (الدقيقة 36) إثر تمريرة متقنة من فلوريان توفان. وواصل لاعب مرسيليا الأسبق تألقه وصنع الهدف الثاني من ركلة حرة تابعها ماتيو أودول برأسه في المرمى (الدقيقة 76)، قبل أن يُطرد الأخير بعد دقائق معدودة بالبطاقة الحمراء.",
+            "ورغم النقص العددي واستقبال هدف تقليص الفارق عبر خاليس ميراح (الدقيقة 85)، صمد أصحاب الأرض حتى صافرة النهاية. وفي ظل إصابة هدافه البلجيكي لويس أوبيندا وخروجه المبكر، أهدر ليون فرصة انتزاع الصدارة من موناكو، بينما ارتقى لانس مؤقتاً إلى المركز السابع قبل استئناف مشواره في دوري أبطال أوروبا بمواجهة سبورتينغ لشبونة."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-1/ligue-1-premiere-reussie-a-bollaert-pour-cahuzac-lens-inflige-a-lyon-sa-premiere-defaite-de-la-saison-20261009",
@@ -1547,7 +1616,20 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-1/ligue-1-on-peut-regretter-notre-premiere-mi-temps-reconnait-tolisso-apres-la-defaite-de-lyon-a-lens-20261009"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-10T09:54:22+00:00"
+        }
+      }
     },
     {
       "id": "949256a2b0c7",
