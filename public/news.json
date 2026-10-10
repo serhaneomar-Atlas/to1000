@@ -830,7 +830,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261010/1004237153/vinicius-asunto-peliagudo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6f07d42f71fd",
@@ -1172,24 +1177,44 @@
       "summary": "Rejointe au score avant l'heure de jeu par Le Mans, l'équipe de Luis Enrique a réagi dès l'arrivée sur la pelouse des cadres habituels pour obtenir sa troisième victoire d'affilée en L1 (3-1).",
       "i18n": {
         "fr": {
-          "title": "Un PSG remanié vient à bout du Mans grâce à l'entrée des habituels titulaires",
-          "summary": "Rejointe au score avant l'heure de jeu par Le Mans, l'équipe de Luis Enrique a réagi dès l'arrivée sur la pelouse des cadres habituels pour obtenir sa troisième victoire d'affilée en L1 (3-1).",
-          "needs_translation": false
+          "title": "Ligue 1 : Le PSG s'impose face au Mans grâce à ses titulaires (3-1)",
+          "summary": "Le Paris Saint-Germain a battu Le Mans 3-1 pour enchaîner un troisième succès de rang en Ligue 1, grâce au renfort de ses titulaires.",
+          "body": [
+            "Rejointe avant l'heure de jeu, l'équipe remaniée de Luis Enrique a vite réagi à l'entrée de ses cadres habituels pour reprendre l'avantage et sceller la rencontre."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "retire-par-audit"
         },
         "en": {
-          "title": "Un PSG remanié vient à bout du Mans grâce à l'entrée des habituels titulaires",
-          "summary": "Rejointe au score avant l'heure de jeu par Le Mans, l'équipe de Luis Enrique a réagi dès l'arrivée sur la pelouse des cadres habituels pour obtenir sa troisième victoire d'affilée en L1 (3-1).",
-          "needs_translation": true
+          "title": "Ligue 1: Paris Saint-Germain beat Le Mans 3-1 thanks to regular starters",
+          "summary": "Paris Saint-Germain defeated Le Mans 3-1 to secure a third straight Ligue 1 win, turning to their usual starters to seal the result.",
+          "body": [
+            "Pegged back before the hour mark, Luis Enrique's rotated side found the breakthrough once key regulars came off the bench to restore the lead."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "retire-par-audit"
         },
         "es": {
-          "title": "Un PSG remanié vient à bout du Mans grâce à l'entrée des habituels titulaires",
-          "summary": "Rejointe au score avant l'heure de jeu par Le Mans, l'équipe de Luis Enrique a réagi dès l'arrivée sur la pelouse des cadres habituels pour obtenir sa troisième victoire d'affilée en L1 (3-1).",
-          "needs_translation": true
+          "title": "Ligue 1: El PSG doblega a Le Mans impulsado por sus titulares (3-1)",
+          "summary": "El Paris Saint-Germain superó 3-1 a Le Mans y sumó su tercera victoria seguida en Ligue 1 tras recurrir a sus futbolistas habituales.",
+          "body": [
+            "Empatado antes de cumplirse la hora de juego, el equipo alternativo de Luis Enrique resolvió el choque en cuanto sus titulares habituales saltaron al césped."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "retire-par-audit"
         },
         "ar": {
-          "title": "Un PSG remanié vient à bout du Mans grâce à l'entrée des habituels titulaires",
-          "summary": "Rejointe au score avant l'heure de jeu par Le Mans, l'équipe de Luis Enrique a réagi dès l'arrivée sur la pelouse des cadres habituels pour obtenir sa troisième victoire d'affilée en L1 (3-1).",
-          "needs_translation": true
+          "title": "الدوري الفرنسي: باريس سان جيرمان يهزم لومان 3-1 بفضل لاعبيه الأساسيين",
+          "summary": "تغلب باريس سان جيرمان على لومان 3-1 محققاً فوزه الثالث توالياً في الدوري الفرنسي، بعد استعانته بركائزه الأساسية لحسم المواجهة.",
+          "body": [
+            "واجه تشكيل لويس إنريكي المعدل صعوبة بعد استقبال هدف التعادل قبل انقضاء ساعة من اللعب، قبل أن تمنح مشاركة الأساسيين التفوق لنادي العاصمة."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "retire-par-audit"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Un-psg-remanie-vient-a-bout-du-mans-grace-a-l-entree-des-habituels-titulaires/1724852#at_medium=RSS_feeds",
@@ -1211,7 +1236,23 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Un-psg-remanie-vient-a-bout-du-mans-grace-a-l-entree-des-habituels-titulaires/1724852#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 6.0,
+          "central_restitue": true,
+          "manque": [
+            "Nom des buteurs (Beraldo, Kvaratskhelia, Akliouche pour Paris ; Mafouta pour Le Mans)",
+            "Remontée provisoire du PSG à la 5e place de Ligue 1"
+          ],
+          "erreurs": [],
+          "retire": true,
+          "ts": "2026-10-10T23:37:14+00:00"
+        }
+      }
     },
     {
       "id": "030653be0fce",
@@ -1550,7 +1591,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261010/1004237139/1x1-getafe-barcelona.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "462690fc94d5",
@@ -1644,7 +1690,12 @@
           "url": "https://www.ole.com.ar/futbol-primera/river-vs-estudiantes-rc-vivo-torneo-clausura-dia-hora-ver-tv-online-formaciones_0_cYy4QdqNGi.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "66799c47fafb",
