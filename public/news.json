@@ -789,7 +789,12 @@
           "url": "https://www.sportschau.de/fussball/die-sportschau-am-freitag-in-voller-laenge,sportschau-am-samstag-re-live-1010-100.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "948c387f30fd",
@@ -1545,29 +1550,54 @@
       "summary": "Der Hamburger SV nimmt drei Punkte aus Hoffenheim mit. In einer hart umkämpften Partie fiel die Entscheidung zum 3:2 für den HSV erst in der Nachspielzeit.",
       "i18n": {
         "de": {
-          "title": "Bundesliga: Muheims Last-Minute-Tor krönt HSV-Comeback",
-          "summary": "Der Hamburger SV nimmt drei Punkte aus Hoffenheim mit. In einer hart umkämpften Partie fiel die Entscheidung zum 3:2 für den HSV erst in der Nachspielzeit.",
-          "needs_translation": false
+          "title": "Muheim schießt HSV in der Nachspielzeit zum 3:2-Sieg in Hoffenheim",
+          "summary": "Der Hamburger SV hat dank eines späten Treffers von Miro Muheim einen umkämpften 3:2-Erfolg bei der TSG Hoffenheim gefeiert.",
+          "body": [
+            "In einer hart umkämpften Bundesliga-Partie krönte der HSV seine Aufholjagd in den Schlussminuten. Der Treffer zum 3:2 fiel erst in der Nachspielzeit und brachte den Gästen drei wichtige Auswärtspunkte ein."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Bundesliga: Muheims Last-Minute-Tor krönt HSV-Comeback",
-          "summary": "Der Hamburger SV nimmt drei Punkte aus Hoffenheim mit. In einer hart umkämpften Partie fiel die Entscheidung zum 3:2 für den HSV erst in der Nachspielzeit.",
-          "needs_translation": true
+          "title": "Muheim strikes late as Hamburger SV snatch 3-2 victory at Hoffenheim",
+          "summary": "Hamburger SV secured a hard-fought 3-2 victory at Hoffenheim thanks to a stoppage-time winner from Miro Muheim.",
+          "body": [
+            "The visitors completed their late comeback in a fiercely contested Bundesliga encounter. Muheim struck in the dying moments to cap the turnaround and seal all three points on the road."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Bundesliga: Muheims Last-Minute-Tor krönt HSV-Comeback",
-          "summary": "Der Hamburger SV nimmt drei Punkte aus Hoffenheim mit. In einer hart umkämpften Partie fiel die Entscheidung zum 3:2 für den HSV erst in der Nachspielzeit.",
-          "needs_translation": true
+          "title": "Muheim offre la victoire sur le fil au Hamburger SV à Hoffenheim (3-2)",
+          "summary": "Le Hamburger SV s'est imposé sur le terrain de Hoffenheim (3-2) grâce à un but décisif de Miro Muheim inscrit dans le temps additionnel.",
+          "body": [
+            "Au terme d'une rencontre âprement disputée, les visiteurs ont couronné leur retour dans les ultimes instants. Ce succès arraché au bout du suspense permet au club hanséatique de repartir avec trois points précieux."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Bundesliga: Muheims Last-Minute-Tor krönt HSV-Comeback",
-          "summary": "Der Hamburger SV nimmt drei Punkte aus Hoffenheim mit. In einer hart umkämpften Partie fiel die Entscheidung zum 3:2 für den HSV erst in der Nachspielzeit.",
-          "needs_translation": true
+          "title": "Muheim da la victoria al Hamburger SV en el descuento ante Hoffenheim (2-3)",
+          "summary": "El Hamburger SV se impuso por 2-3 en el campo del Hoffenheim gracias a un gol postrero de Miro Muheim en el tiempo añadido.",
+          "body": [
+            "En un encuentro muy disputado, los visitantes culminaron su remontada en los compases finales. El tanto decisivo en la prolongación aseguró tres valiosos puntos a domicilio."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Bundesliga: Muheims Last-Minute-Tor krönt HSV-Comeback",
-          "summary": "Der Hamburger SV nimmt drei Punkte aus Hoffenheim mit. In einer hart umkämpften Partie fiel die Entscheidung zum 3:2 für den HSV erst in der Nachspielzeit.",
-          "needs_translation": true
+          "title": "موهايم يخطف فوزاً قاتلاً لهامبورغ أمام هوفنهايم (3-2)",
+          "summary": "حقق هامبورغ فوزاً مثيراً على مضيفه هوفنهايم بنتيجة 3-2، بفضل هدف متأخر أحرزه ميرو موهايم في الوقت بدل الضائع.",
+          "body": [
+            "وشهدت المواجهة القوية انتفاضة متأخرة للضيوف الذين قلبوا الطاولة في اللحظات الأخيرة. وجاء هدف الحسم في الوقت المحتسب بدلاً من الضائع ليمنح هامبورغ ثلاث نقاط ثمينة خارج أرضه."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga/muheims-last-minute-tor-kroent-hsv-comeback,video-bundesliga-tsg-1899-hoffenheim-hamburger-sv-100.html",
@@ -1589,7 +1619,20 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/muheims-last-minute-tor-kroent-hsv-comeback,video-bundesliga-tsg-1899-hoffenheim-hamburger-sv-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-11T23:43:14+00:00"
+        }
+      }
     },
     {
       "id": "fa0d7e0c8f74",
@@ -1782,7 +1825,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/muss-urbig-statt-neuer-ins-bayern-tor,bundesliga-update-rueckblick-spieltag-fuenf-106.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "bb0e53f98525",
@@ -1984,24 +2032,44 @@
       "summary": "Humilié à Lyon avant la trêve (0-4), Rennes s'est vengé contre Auxerre lors de la 6e journée de Ligue 1 pour se hisser sur le podium avec des ressources offensives : Estéban Lepaul a signé un bijou, Boulaye Dia un doublé et Bryan Reynolds deux passes décisives.",
       "i18n": {
         "fr": {
-          "title": "Lepaul, Dia, Reynolds... Rennes ne manque pas de ressources offensivement",
-          "summary": "Humilié à Lyon avant la trêve (0-4), Rennes s'est vengé contre Auxerre lors de la 6e journée de Ligue 1 pour se hisser sur le podium avec des ressources offensives : Estéban Lepaul a signé un bijou, Boulaye Dia un doublé et Bryan Reynolds deux passes décisives.",
-          "needs_translation": false
+          "title": "Rennes rebondit face à Auxerre et grimpe sur le podium",
+          "summary": "Le Stade Rennais a réagi après sa claque lyonnaise en dominant Auxerre lors de la sixième journée de Ligue 1 pour s'installer sur le podium.",
+          "body": [
+            "Lourdement battus à Lyon avant la trêve (0-4), les Bretons ont affiché une grande efficacité offensive. Boulaye Dia a inscrit un doublé, parfaitement servi par Bryan Reynolds, auteur de deux passes décisives, tandis qu'Estéban Lepaul a marqué d'une frappe splendide pour parachever ce net redressement."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Lepaul, Dia, Reynolds... Rennes ne manque pas de ressources offensivement",
-          "summary": "Humilié à Lyon avant la trêve (0-4), Rennes s'est vengé contre Auxerre lors de la 6e journée de Ligue 1 pour se hisser sur le podium avec des ressources offensives : Estéban Lepaul a signé un bijou, Boulaye Dia un doublé et Bryan Reynolds deux passes décisives.",
-          "needs_translation": true
+          "title": "Rennes bounce back against Auxerre to climb into top three",
+          "summary": "Stade Rennais responded emphatically to their heavy defeat at Lyon by beating Auxerre on Ligue 1 matchday six to move onto the podium.",
+          "body": [
+            "Crushed 4-0 at Lyon before the international break, the Bretons showed ruthless efficiency in attack. Boulaye Dia struck twice, set up on both occasions by Bryan Reynolds, before Estéban Lepaul wrapped up a convincing victory with a stunning strike."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Lepaul, Dia, Reynolds... Rennes ne manque pas de ressources offensivement",
-          "summary": "Humilié à Lyon avant la trêve (0-4), Rennes s'est vengé contre Auxerre lors de la 6e journée de Ligue 1 pour se hisser sur le podium avec des ressources offensives : Estéban Lepaul a signé un bijou, Boulaye Dia un doublé et Bryan Reynolds deux passes décisives.",
-          "needs_translation": true
+          "title": "Rennes se recupera ante Auxerre y se sube al podio",
+          "summary": "Stade Rennais reaccionó tras el duro golpe sufrido en Lyon y superó a Auxerre en la sexta jornada de la Ligue 1 para meterse entre los tres primeros.",
+          "body": [
+            "Tras caer con contundencia en Lyon antes del parón (0-4), el conjunto bretón exhibió una pegada demoledora. Boulaye Dia firmó un doblete a pase de Bryan Reynolds por partida doble, mientras que Estéban Lepaul rubricó la recuperación con un disparo soberbio."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Lepaul, Dia, Reynolds... Rennes ne manque pas de ressources offensivement",
-          "summary": "Humilié à Lyon avant la trêve (0-4), Rennes s'est vengé contre Auxerre lors de la 6e journée de Ligue 1 pour se hisser sur le podium avec des ressources offensives : Estéban Lepaul a signé un bijou, Boulaye Dia un doublé et Bryan Reynolds deux passes décisives.",
-          "needs_translation": true
+          "title": "رين يستعيد توازنه أمام أوكسير ويرتقي إلى المركز الثالث",
+          "summary": "استعاد ستاد رين عافيته بعد السقوط المدوي أمام ليون وتغلب على أوكسير في الجولة السادسة من الدوري الفرنسي ليقتحم المراكز الثلاثة الأولى.",
+          "body": [
+            "وعقب الهزيمة القاسية في ليون قبل فترة التوقف الدولي (0-4)، أظهر لاعبو رين فاعلية هجومية حاسمة، حيث أحرز بولاي ديا ثنائية بفضل تمريرتين حاسمتين من برايان رينولدز، قبل أن يختتم إستيبان لوبول هذه العودة القوية بتسديدة رائعة."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Avec-esteban-lepaul-boulaye-dia-ou-bryan-reynolds-buteurs-et-passeur-decisif-rennes-ne-manque-pas-de-ressources-a-l-avant/1725077#at_medium=RSS_feeds",
@@ -2023,7 +2091,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Avec-esteban-lepaul-boulaye-dia-ou-bryan-reynolds-buteurs-et-passeur-decisif-rennes-ne-manque-pas-de-ressources-a-l-avant/1725077#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-11T23:43:18+00:00"
+        }
+      }
     },
     {
       "id": "aee0ae5288f8",
