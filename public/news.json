@@ -67,27 +67,44 @@
       "summary": "El fútbol regresó al Bernabéu tras el parón de selecciones y volvió también el pobre juego del equipo blanco. Un gol de Diomande le dio el triunfo al Real Madrid ante el Villarreal en un partido en el que los blancos se quedaron con 10 jugadores.",
       "i18n": {
         "es": {
-          "title": "El Real Madrid ganó al Villarreal entre quejas arbitrales y poco fútbol",
-          "summary": "El fútbol regresó al Bernabéu tras el parón de selecciones y volvió también el pobre juego del equipo blanco. Un gol de Diomande le dio el triunfo al Real Madrid ante el Villarreal en un partido en el que los blancos se quedaron con 10 jugadores.",
-          "needs_translation": false
+          "title": "Victoria del Real Madrid ante el Villarreal en el Santiago Bernabéu",
+          "summary": "El Real Madrid superó al Villarreal en el Santiago Bernabéu en un duelo correspondiente a la octava jornada de LaLiga.",
+          "body": [
+            "El choque en el feudo blanco ofreció poco brillo futbolístico y estuvo marcado por la polémica arbitral. Los blancos amarraron los tres puntos en una cita donde la tensión y las quejas hacia el colegiado condicionaron el desarrollo del juego."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Real Madrid beat Villarreal amid refereeing complaints and little football",
-          "summary": "Football returned to the Bernabéu after the stoppage of selections and the poor game of the white team also returned. A goal from Diomande gave Real Madrid the win against Villarreal in a game in which the Whites were left with 10 players.",
+          "title": "Real Madrid edge past Villarreal at the Santiago Bernabéu",
+          "summary": "Real Madrid defeated Villarreal at the Santiago Bernabéu in their matchday 8 clash in LaLiga.",
+          "body": [
+            "The encounter in the Spanish capital offered little sparkle and was overshadowed by controversy over refereeing decisions. Los Blancos still managed to take all three points from a tense game shaped by protests against the officiating."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Le Real Madrid a battu Villarreal entre plaintes arbitrales et peu de football",
-          "summary": "Le football est revenu au Bernabéu après la trêve et le mauvais jeu de l'équipe blanche est également revenu. Un but de Diomande a donné la victoire au Real Madrid contre Villarreal lors d'un match où les Blancs ont pris 10 joueurs.",
+          "title": "Le Real Madrid s'impose face à Villarreal au Santiago Bernabéu",
+          "summary": "Le Real Madrid a battu Villarreal au Santiago Bernabéu à l'occasion de la 8e journée de LaLiga.",
+          "body": [
+            "L'affiche dans l'antre madrilène a manqué de rythme et a surtout été marquée par la contestation des décisions arbitrales. Les Merengues ont néanmoins assuré l'essentiel en prenant les trois points dans une rencontre hachée par les tensions."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "فاز ريال مدريد على فياريال وسط شكاوى التحكيم وكرة القدم الصغيرة",
-          "summary": "عادت كرة القدم إلى البرنابيو بعد توقف الاختيارات كما عادت المباراة السيئة للفريق الأبيض. هدف من ديوماندي أعطى ريال مدريد الفوز على فياريال في مباراة ترك فيها البيض مع 10 لاعبين.",
+          "title": "ريال مدريد يتجاوز فياريال في سانتياغو برنابيو",
+          "summary": "تغلب ريال مدريد على فياريال في سانتياغو برنابيو لحساب الجولة الثامنة من الدوري الإسباني.",
+          "body": [
+            "المواجهة في معقل النادي الملكي افتقرت للبريق الكروي وخيم عليها الجدل حول القرارات التحكيمية. ورغم ذلك، حصد الميرينغي النقاط الثلاث في لقاء طغت عليه التوترات والاعتراضات المتكررة على صافرة الحكم."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/laliga/20261011/1004237397/real-madrid-villarreal-fotos-duelo-bernabeu.html",
@@ -115,7 +132,20 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261011/1004237360/real-madrid-gano-villarreal-quejas-arbitrales-poco-futbol.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-11T15:43:28+00:00"
+        }
+      }
     },
     {
       "id": "770a417e4a87",
@@ -751,7 +781,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261011/1004237352/mourinho-arte-no-hablar.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b066f9f27676",
@@ -1075,7 +1110,12 @@
           "url": "https://www.mundodeportivo.com/futbol/serie-a/20261011/1004235397/roma-directo-serie.html"
         }
       ],
-      "source_count": 4
+      "source_count": 4,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8fbd19ae698a",
@@ -1797,7 +1837,12 @@
           "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/deutschland-bundesliga/ma12194167/1-fc-koeln_borussia-moenchengladbach/liveticker"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e9746fe1e2ba",
