@@ -36,7 +36,11 @@ AFC_CUP = "afc.cup"   # AFC Champions League Two (ex AFC Cup)
 # Ordre = priorité de tie-break. SPL d'abord car saison régulière, AFC ensuite.
 # Fix 2026-05-16 : ajout AFC_CUP suite à la finale Al Nassr vs Gamba Osaka qui
 # n'était pas captée. Si CR7 joue un jour CWC ou amicaux il faudra étendre.
-AL_NASSR_LEAGUES = [SAUDI_PL, AFC_CUP]
+AFC_ELITE = "afc.champions"   # AFC Champions League Elite (vérifié ESPN 2026-10-12)
+KINGS_CUP = "ksa.kings.cup"   # Coupe du Roi saoudienne (vérifié ESPN 2026-10-12)
+# Fix 2026-10-12 : Al Nassr joue la Ligue des champions AFC ELITE (afc.champions),
+# pas la « Two » (afc.cup). Le but n° 981 (Neftchi, 12/10) n'a jamais été vu.
+AL_NASSR_LEAGUES = [SAUDI_PL, AFC_ELITE, AFC_CUP, KINGS_CUP]
 AL_NASSR_ID = 817
 CR7_ATHLETE_ID = 22774
 TARGET_GOALS = 1000
