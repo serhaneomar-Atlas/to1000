@@ -2256,24 +2256,44 @@
       "summary": "L'ancien défenseur français François Modesto a été nommé, ce dimanche soir, directeur du football du Genoa. À 48 ans, il a occupé des fonctions similaires à Monza et à la Juventus ces dernières années.",
       "i18n": {
         "fr": {
-          "title": "Serie A : François Modesto rebondit au Genoa après son départ de la Juventus",
-          "summary": "L'ancien défenseur français François Modesto a été nommé, ce dimanche soir, directeur du football du Genoa. À 48 ans, il a occupé des fonctions similaires à Monza et à la Juventus ces dernières années.",
-          "needs_translation": false
+          "title": "François Modesto désigné directeur du football du Genoa",
+          "summary": "Le Genoa a officialisé dimanche soir la nomination du Français François Modesto au poste de directeur du football.",
+          "body": [
+            "À 48 ans, l'ancien défenseur poursuit sa carrière de dirigeant dans le championnat italien. Il prend les commandes du secteur sportif génois après avoir exercé des fonctions similaires ces dernières saisons, d'abord à Monza puis plus récemment à la Juventus."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Serie A : François Modesto rebondit au Genoa après son départ de la Juventus",
-          "summary": "L'ancien défenseur français François Modesto a été nommé, ce dimanche soir, directeur du football du Genoa. À 48 ans, il a occupé des fonctions similaires à Monza et à la Juventus ces dernières années.",
-          "needs_translation": true
+          "title": "François Modesto appointed Genoa director of football",
+          "summary": "Genoa announced on Sunday evening the appointment of Frenchman François Modesto as their new director of football.",
+          "body": [
+            "At 48, the former defender continues his executive career in Italian football. He takes charge of Genoa's sporting operations after holding similar roles in recent seasons, first at Monza and most recently at Juventus."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Serie A : François Modesto rebondit au Genoa après son départ de la Juventus",
-          "summary": "L'ancien défenseur français François Modesto a été nommé, ce dimanche soir, directeur du football du Genoa. À 48 ans, il a occupé des fonctions similaires à Monza et à la Juventus ces dernières années.",
-          "needs_translation": true
+          "title": "François Modesto, nuevo director de fútbol del Genoa",
+          "summary": "El Genoa oficializó este domingo por la noche la llegada del francés François Modesto como nuevo director de fútbol.",
+          "body": [
+            "A sus 48 años, el exdefensa continúa su trayectoria en los despachos de la Serie A. Llega para liderar la parcela deportiva tras desempeñar funciones similares en las últimas temporadas, primero en Monza y más recientemente en la Juventus."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Serie A : François Modesto rebondit au Genoa après son départ de la Juventus",
-          "summary": "L'ancien défenseur français François Modesto a été nommé, ce dimanche soir, directeur du football du Genoa. À 48 ans, il a occupé des fonctions similaires à Monza et à la Juventus ces dernières années.",
-          "needs_translation": true
+          "title": "فرانسوا موديستو مديراً رياضياً لنادي جنوى",
+          "summary": "أعلن نادي جنوى مساء الأحد رسمياً تعيين الفرنسي فرانسوا موديستو في منصب مدير كرة القدم.",
+          "body": [
+            "يواصل المدافع السابق، البالغ من العمر 48 عاماً، مسيرته الإدارية في الدوري الإيطالي، حيث يتولى الإشراف على القطاع الرياضي في النادي بعدما شغل مناصب مماثلة في المواسم الأخيرة، أولاً مع مونزا ثم مؤخراً داخل أسوار يوفنتوس."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Trois-mois-apres-son-depart-de-la-juventus-francois-modesto-rebondit-comme-directeur-du-football-au-genoa/1725089#at_medium=RSS_feeds",
@@ -2301,7 +2321,20 @@
           "url": "https://www.lefigaro.fr/sports/football/italie/serie-a-francois-modesto-rebondit-au-genoa-apres-son-depart-de-la-juventus-20261011"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-12T09:52:17+00:00"
+        }
+      }
     },
     {
       "id": "781a37355afd",
@@ -2509,7 +2542,17 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Avec-esteban-lepaul-boulaye-dia-ou-bryan-reynolds-buteurs-et-passeur-decisif-rennes-ne-manque-pas-de-ressources-a-l-avant/1725077#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-12T09:52:24+00:00"
+        }
+      }
     }
   ]
 }
