@@ -1083,7 +1083,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga2/st-pauli-nutzt-karlsruher-schwaechen,video-zweite-bundesliga-fc-st-pauli-karlsruher-sc-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "60a6cea0909d",
@@ -1145,7 +1150,12 @@
           "url": "https://www.sportschau.de/fussball/die-sportschau-am-freitag-in-voller-laenge,sportschau-am-samstag-re-live-1010-100.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "948c387f30fd",
@@ -1377,33 +1387,54 @@
       "summary": "Im Verfolgerduell zwischen Heidenheim und Kaiserslautern gibt es keinen Sieger. Beide Teams bleiben ohne Treffer und müssen sich mit einem Punkt zufriedengeben.",
       "i18n": {
         "de": {
-          "title": "2. Bundesliga: Heidenheim und Kaiserslautern teilen die Punkte",
-          "summary": "Im Verfolgerduell zwischen Heidenheim und Kaiserslautern gibt es keinen Sieger. Beide Teams bleiben ohne Treffer und müssen sich mit einem Punkt zufriedengeben.",
-          "needs_translation": false
+          "title": "2. Bundesliga: Nullnummer zwischen Heidenheim und Kaiserslautern",
+          "summary": "Der 1. FC Heidenheim und der 1. FC Kaiserslautern haben sich im Verfolgerduell der 2. Bundesliga mit einem torlosen Unentschieden getrennt.",
+          "body": [
+            "Keine der beiden Mannschaften konnte die gegnerische Abwehr überwinden. Nach einer ereignisarmen Partie im oberen Tabellendrittel müssen sich Heidenheim und Kaiserslautern jeweils mit einem Punkt zufriedengeben."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "2nd Bundesliga: Heidenheim and Kaiserslautern share the points",
-          "summary": "There is no winner in the pursuit duel between Heidenheim and Kaiserslautern. Both teams remain without a goal and have to settle for one point.",
+          "title": "2. Bundesliga: Goalless draw between Heidenheim and Kaiserslautern",
+          "summary": "1. FC Heidenheim and 1. FC Kaiserslautern shared the points in a 0-0 draw during their 2. Bundesliga promotion-race clash.",
+          "body": [
+            "Neither side managed to find the net throughout the contest. Both Heidenheim and Kaiserslautern had to settle for a single point each at the final whistle."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "2. Bundesliga : Heidenheim et Kaiserslautern partagent les points",
-          "summary": "Dans le duel de poursuivants entre Heidenheim et Kaiserslautern, il n'y a pas de vainqueur. Les deux équipes restent sans résultat et doivent se contenter d'un point.",
+          "title": "2. Bundesliga : score vierge entre Heidenheim et Kaiserslautern",
+          "summary": "Le 1. FC Heidenheim et le 1. FC Kaiserslautern se sont quittés sur un match nul 0-0 lors de ce duel de poursuivants en 2. Bundesliga.",
+          "body": [
+            "Aucune des deux formations n'a réussi à trouver la faille dans cette confrontation du haut de tableau. Heidenheim et Kaiserslautern repartent dos à dos avec un seul point au compteur."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "2. Bundesliga: Heidenheim y Kaiserslautern comparten los puntos",
-          "summary": "En el duelo de perseguidores entre Heidenheim y Kaiserslautern no hay ganador. Ambos equipos se quedan sin gol y deben conformarse con un punto.",
+          "title": "2. Bundesliga: Tablas sin goles entre Heidenheim y Kaiserslautern",
+          "summary": "El 1. FC Heidenheim y el 1. FC Kaiserslautern firmaron un empate 0-0 en su duelo directo en la zona alta de la 2. Bundesliga.",
+          "body": [
+            "Ninguno de los dos conjuntos logró perforar la portería rival a lo largo del encuentro. Heidenheim y Kaiserslautern tuvieron que conformarse con sumar un único punto tras el pitido final."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "الدوري الألماني الثاني: هايدنهايم وكايزرسلاوترن يتشاركان النقاط",
-          "summary": "لا يوجد فائز في مبارزة السعي بين هايدنهايم وكايزرسلاوترن. لا يزال كلا الفريقين بدون هدف ويتعين عليهما الاكتفاء بنقطة واحدة.",
+          "title": "الدرجة الثانية الألمانية: تعادل سلبي بين هايدنهايم وكايزرسلاوترن",
+          "summary": "افترق إف سي هايدنهايم وإف سي كايزرسلاوترن على وقع تعادل سلبي دون أهداف، في مواجهة جمعتهما ضمن منافسات دوري الدرجة الثانية الألماني.",
+          "body": [
+            "عجز الطرفان عن هز الشباك طوال دقائق اللقاء، ليكتفي كل من هايدنهايم وكايزرسلاوترن بحصد نقطة وحيدة لكل منهما عند صافرة النهاية."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga2/heidenheim-und-kaiserslautern-teilen-die-punkte,video-zweite-bundesliga-1-fc-heidenheim-1-fc-kaiserslautern-100.html",
@@ -1425,7 +1456,20 @@
           "url": "https://www.sportschau.de/fussball/bundesliga2/heidenheim-und-kaiserslautern-teilen-die-punkte,video-zweite-bundesliga-1-fc-heidenheim-1-fc-kaiserslautern-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-12T02:45:37+00:00"
+        }
+      }
     },
     {
       "id": "3530f75a7483",
@@ -1996,7 +2040,17 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/muheims-last-minute-tor-kroent-hsv-comeback,video-bundesliga-tsg-1899-hoffenheim-hamburger-sv-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-12T02:45:42+00:00"
+        }
+      }
     },
     {
       "id": "fa0d7e0c8f74",
@@ -2189,7 +2243,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/muss-urbig-statt-neuer-ins-bayern-tor,bundesliga-update-rueckblick-spieltag-fuenf-106.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "bb0e53f98525",
