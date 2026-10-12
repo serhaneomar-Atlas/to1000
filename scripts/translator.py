@@ -39,7 +39,13 @@ except ImportError:  # exécution hors arborescence scripts/ → dégradation do
 # Alias "latest" maintenu par Google → pointe toujours sur le dernier flash,
 # ne déprécie jamais (gemini-2.0-flash a disparu et cassait le pipeline).
 # Surchargeable par variable d'env GEMINI_MODEL si besoin de figer une version.
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-flash-latest")
+# Fix 2026-10-12 : l'alias « gemini-flash-latest » a basculé sur gemini-3.8-flash,
+# qui « réfléchit » avant de répondre. Ces jetons de réflexion comptent dans
+# maxOutputTokens (doc Google « thinking ») : avec 500 jetons, 47 appels sur 50
+# finissaient en MAX_TOKENS → repli MyMemory → traductions rejetées par le contrat
+# de langue → pages EN/ES/AR vides. On fige le modèle et on laisse de la marge.
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.8-flash")
+THINKING_HEADROOM_TOKENS = int(os.environ.get("GEMINI_THINKING_HEADROOM", "6000"))
 GEMINI_URL_TMPL = (
     "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}"
 )
@@ -126,7 +132,7 @@ class Translator:
             "systemInstruction": {"parts": [{"text": system}]},
             "contents": [{"role": "user", "parts": [{"text": user}]}],
             "generationConfig": {
-                "temperature": 0.3, "maxOutputTokens": max_tokens,
+                "temperature": 0.3, "maxOutputTokens": max_tokens + THINKING_HEADROOM_TOKENS,
                 "responseMimeType": "application/json",
             },
         }).encode("utf-8")
