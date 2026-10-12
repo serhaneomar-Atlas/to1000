@@ -455,6 +455,7 @@
   .lastmatch{margin:18px 0 6px;padding:14px 16px;border:1px solid rgba(242,193,78,.28);
     border-radius:10px;background:rgba(255,255,255,.05);max-width:520px}
   .lastmatch[hidden]{display:none}
+  .fixture[hidden]{display:none}
   .lm-kicker{margin:0 0 6px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;
     color:#f2c14e;font-weight:700}
   .lm-line{margin:0;font-size:17px;font-weight:600;color:#f3f6f9}
@@ -743,7 +744,7 @@
     <div class="bg" role="img" aria-label="Pelouse de stade sous les projecteurs"></div>
     <div class="scrim" aria-hidden="true"></div>
     <div class="inner match-grid">
-      <div class="fixture reveal">
+      <div class="fixture reveal" id="fixture" hidden>
         <div class="head">
           <span class="comp" data-i18n="m_comp">UEFA Nations League</span>
           <span class="when">24 sept · 20:45</span>
@@ -784,7 +785,7 @@
     <div class="scrim" aria-hidden="true"></div>
     <div class="inner">
       <p class="kicker reveal" data-i18n="p_kicker">Le parcours</p>
-      <h2 class="reveal d1" id="parcours-title" style="font-size:clamp(34px,6vw,72px)" data-i18n-html="p_title">Six clubs. <span style="color:var(--gold)">Une légende.</span></h2>
+      <h2 class="reveal d1" id="parcours-title" style="font-size:clamp(34px,6vw,72px)" data-i18n-html="p_title">Cinq clubs et le Portugal. <span style="color:var(--gold)">Une légende.</span></h2>
       <div class="eras">
         <div class="era reveal d1"><span class="yr">2002</span><span class="club">Sporting<small data-i18n="era_sporting">Lisbonne · les débuts</small></span><span class="goals">5<span data-i18n="goals_unit">buts</span></span></div>
         <div class="era reveal d1"><span class="yr">2003</span><span class="club">Man United<small data-i18n="era_manu">Premier League · le sacre</small></span><span class="goals">145<span data-i18n="goals_unit">buts</span></span></div>
@@ -955,7 +956,7 @@
       m_kicker:"Prochain rendez-vous",lm_kicker:"Dernier match",lm_scored:"Ronaldo a marqué",m_title:'Chaque match <span class="gold">compte double</span>',
       m_desc:"Chaque rencontre peut rapprocher Cristiano Ronaldo du cap des 1000 buts — avec son club comme avec sa sélection. Résultat du dernier match, date du prochain : nous suivons les deux, but par but, minute par minute.",
       m_btn1:"Suivre le compteur",m_btn2:"Toute l’actu Mondial",
-      p_kicker:"Le parcours",p_title:'Six clubs. <span style="color:var(--gold)">Une légende.</span>',
+      p_kicker:"Le parcours",p_title:'Cinq clubs et le Portugal. <span style="color:var(--gold)">Une légende.</span>',
       era_sporting:"Lisbonne · les débuts",era_manu:"Premier League · le sacre",era_real:"Liga · l’ère galactique",era_juve:"Serie A · l’Italie",era_nassr:"Saudi Pro League · aujourd’hui",era_por:"Sélection · record mondial",
       d_kicker:"Les chiffres & l’actu",d_title:'Tout le football, <span style="color:var(--gold)">une obsession</span>',
       stat_career:"Buts en carrière",stat_ballon:"Ballons d’Or",stat_goal:"L’objectif",stat_ratio:"Ratio buts / match",
@@ -973,7 +974,7 @@
       m_kicker:"Next fixture",lm_kicker:"Last match",lm_scored:"Ronaldo scored",m_title:'Every match <span class="gold">counts twice</span>',
       m_desc:"Every fixture can move Cristiano Ronaldo closer to 1000 career goals — for club and for country. Last result, next kick-off: we track both, goal by goal, minute by minute.",
       m_btn1:"Follow the counter",m_btn2:"All World Cup news",
-      p_kicker:"The journey",p_title:'Six clubs. <span style="color:var(--gold)">One legend.</span>',
+      p_kicker:"The journey",p_title:'Five clubs and Portugal. <span style="color:var(--gold)">One legend.</span>',
       era_sporting:"Lisbon · the beginning",era_manu:"Premier League · the rise",era_real:"La Liga · the galactic era",era_juve:"Serie A · Italy",era_nassr:"Saudi Pro League · today",era_por:"National team · world record",
       d_kicker:"Numbers & news",d_title:'All of football, <span style="color:var(--gold)">one obsession</span>',
       stat_career:"Career goals",stat_ballon:"Ballon d’Or awards",stat_goal:"The target",stat_ratio:"Goals per match",
@@ -991,7 +992,7 @@
       m_kicker:"Próxima cita",lm_kicker:"Último partido",lm_scored:"Ronaldo marcó",m_title:'Cada partido <span class="gold">cuenta doble</span>',
       m_desc:"Cada partido puede acercar a Cristiano Ronaldo a los 1000 goles — con su club y con su selección. Resultado del último, fecha del próximo: seguimos ambos, gol a gol, minuto a minuto.",
       m_btn1:"Seguir el contador",m_btn2:"Toda la actualidad del Mundial",
-      p_kicker:"La trayectoria",p_title:'Seis clubes. <span style="color:var(--gold)">Una leyenda.</span>',
+      p_kicker:"La trayectoria",p_title:'Cinco clubes y Portugal. <span style="color:var(--gold)">Una leyenda.</span>',
       era_sporting:"Lisboa · los inicios",era_manu:"Premier League · la consagración",era_real:"La Liga · la era galáctica",era_juve:"Serie A · Italia",era_nassr:"Saudi Pro League · hoy",era_por:"Selección · récord mundial",
       d_kicker:"Cifras y noticias",d_title:'Todo el fútbol, <span style="color:var(--gold)">una obsesión</span>',
       stat_career:"Goles de carrera",stat_ballon:"Balones de Oro",stat_goal:"El objetivo",stat_ratio:"Goles por partido",
@@ -1009,7 +1010,7 @@
       m_kicker:"الموعد القادم",lm_kicker:"المباراة الأخيرة",lm_scored:"رونالدو سجّل",m_title:'كل مباراة <span class="gold">تُحتسب مرّتين</span>',
       m_desc:"كل مباراة قد تقرّب كريستيانو رونالدو من حاجز الألف هدف — مع ناديه ومع منتخبه. نتيجة المباراة الأخيرة وموعد القادمة: نتابع الاثنتين، هدفاً بهدف، دقيقة بدقيقة.",
       m_btn1:"تابع العدّاد",m_btn2:"كل أخبار المونديال",
-      p_kicker:"المسيرة",p_title:'ستة أندية. <span style="color:var(--gold)">أسطورة واحدة.</span>',
+      p_kicker:"المسيرة",p_title:'خمسة أندية والبرتغال. <span style="color:var(--gold)">أسطورة واحدة.</span>',
       era_sporting:"لشبونة · البداية",era_manu:"البريمييرليغ · التتويج",era_real:"الليغا · حقبة الغالاكتيكوس",era_juve:"الدوري الإيطالي · إيطاليا",era_nassr:"الدوري السعودي · الحاضر",era_por:"المنتخب · رقم قياسي عالمي",
       d_kicker:"الأرقام والأخبار",d_title:'كل كرة القدم، <span style="color:var(--gold)">هوسٌ واحد</span>',
       stat_career:"أهداف المسيرة",stat_ballon:"الكرات الذهبية",stat_goal:"الهدف",stat_ratio:"معدّل الأهداف لكل مباراة",
@@ -1132,6 +1133,10 @@
     // jour côté serveur). L'ancien repli « matchs de Coupe du monde » datait
     // du Mondial : tous finis → return silencieux → carte figée sur un match
     // de juin. C'est ce bloc qui affichait encore Colombie–Portugal en août.
+    var fx=document.getElementById('fixture');
+    // Fix 2026-10-12 : sans prochain match connu, on masque la carte au lieu
+    // d'afficher un match passé figé dans le HTML (Portugal–Galles du 24/09).
+    if(fx)fx.hidden=!(m&&m.home_team);
     if(m&&m.home_team){
       var names=document.querySelectorAll('#match .vs .team .name'), crests=document.querySelectorAll('#match .vs .team .crest');
       if(names.length===2){names[0].textContent=teamName(m.home_team);names[1].textContent=teamName(m.away_team);setFlag(crests[0],m.home_team);setFlag(crests[1],m.away_team);}
