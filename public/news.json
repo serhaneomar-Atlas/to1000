@@ -65,7 +65,12 @@
           "url": "https://africatopsports.com/afrique-football/senegal/ligue-des-champions-uefa-villarreal-naples-pape-gueye-dans-le-onze-probable/"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8dff7c0de19e",
@@ -127,7 +132,12 @@
           "url": "https://africatopsports.com/football-europe/ligue-des-champions-uefa-latletico-de-madrid-accueille-manchester-united/"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0d39b2170066",
@@ -135,27 +145,44 @@
       "summary": "Arrivé en janvier 2025 sur le banc de Dortmund, Niko Kovac a paraphé un nouveau contrat avec le club allemand. Le Croate est maintenant lié avec le club de la Ruhr jusqu'en 2029.",
       "i18n": {
         "fr": {
-          "title": "Ancien entraîneur de Monaco, Niko Kovac prolonge à Dortmund jusqu'en 2029",
-          "summary": "Arrivé en janvier 2025 sur le banc de Dortmund, Niko Kovac a paraphé un nouveau contrat avec le club allemand. Le Croate est maintenant lié avec le club de la Ruhr jusqu'en 2029.",
-          "needs_translation": false
+          "title": "Niko Kovac prolonge au Borussia Dortmund jusqu'en 2029",
+          "summary": "Le Borussia Dortmund a officialisé la prolongation de contrat de son entraîneur croate Niko Kovac, désormais lié au club jusqu'en 2029.",
+          "body": [
+            "Arrivé sur le banc de Dortmund en janvier 2025, l'ancien entraîneur de l'AS Monaco s'inscrit dans la durée avec la formation de la Ruhr en paraphant ce nouvel accord."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Former Monaco coach Niko Kovac extends to Dortmund until 2029",
-          "summary": "Arriving in January 2025 on the bench of Dortmund, Niko Kovac initialed a new contract with the German club. The Croatian is now linked with the Ruhr club until 2029.",
+          "title": "Niko Kovac extends Borussia Dortmund contract until 2029",
+          "summary": "Borussia Dortmund have officially confirmed a contract extension for head coach Niko Kovac, keeping the Croatian tactician at the club until 2029.",
+          "body": [
+            "In charge since January 2025, the former AS Monaco manager has committed his long-term future to the German side after putting pen to paper on the new deal."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Ex entrenador del Mónaco, Niko Kovac renueva en el Dortmund hasta 2029",
-          "summary": "Niko Kovac, que llegó al banquillo del Dortmund en enero de 2025, ha firmado un nuevo contrato con el club alemán. El croata está ahora vinculado con el club del Ruhr hasta 2029.",
+          "title": "Niko Kovac renueva con el Borussia Dortmund hasta 2029",
+          "summary": "El Borussia Dortmund anunció la ampliación de contrato de su entrenador Niko Kovac, quien permanecerá al frente del equipo alemán hasta 2029.",
+          "body": [
+            "Llegado al banquillo en enero de 2025, el extécnico del AS Monaco consolida su continuidad en el club de la Ruhr tras rubricar su nuevo acuerdo."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "مدرب موناكو السابق نيكو كوفاك يمتد إلى دورتموند حتى عام 2029",
-          "summary": "عند وصوله في يناير 2025 على مقاعد البدلاء في دورتموند، وقع نيكو كوفاك بالأحرف الأولى عقدًا جديدًا مع النادي الألماني. يرتبط اللاعب الكرواتي الآن بنادي الرور حتى عام 2029.",
+          "title": "نيكو كوفاتش يمدد عقده مع بوروسيا دورتموند حتى 2029",
+          "summary": "أعلن نادي بوروسيا دورتموند تمديد عقد مدربه الكرواتي نيكو كوفاتش ليستمر على رأس القيادة الفنية للفريق الألماني حتى عام 2029.",
+          "body": [
+            "وكان مدرب موناكو السابق قد استلم مهام تدريب الفريق في يناير 2025، قبل أن يوقع عقده الجديد الذي يربطه طويلاً بنادي الرور."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Ancien-entraineur-de-monaco-niko-kovac-prolonge-a-dortmund-jusqu-en-2029/1725397#at_medium=RSS_feeds",
@@ -189,7 +216,20 @@
           "url": "https://www.lefigaro.fr/flash-actu/bundesliga-niko-kovac-continue-l-aventure-sur-le-banc-de-dortmund-jusqu-en-2029-20261013"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-13T17:18:41+00:00"
+        }
+      }
     },
     {
       "id": "57dafeb772bf",
@@ -253,27 +293,48 @@
       "summary": "Luis Enrique retrouve Ousmane Dembélé et Nuno Mendes pour affronter les Skyblues, mercredi, à l’Etihad Stadium.",
       "i18n": {
         "fr": {
-          "title": "Ligue des champions : le PSG (presque) au complet face à Manchester City",
-          "summary": "Luis Enrique retrouve Ousmane Dembélé et Nuno Mendes pour affronter les Skyblues, mercredi, à l’Etihad Stadium.",
-          "needs_translation": false
+          "title": "Ligue des champions : Dembélé et Mendes de retour avec le PSG à Manchester",
+          "summary": "Le Paris Saint-Germain voyage à Manchester avec Ousmane Dembélé et Nuno Mendes pour défier Manchester City lors de la deuxième journée de Ligue des champions.",
+          "body": [
+            "Préservés lors du match contre Le Mans (3-1), l'ailier français et le latéral portugais réintègrent le groupe de Luis Enrique pour ce déplacement à l'Etihad Stadium. Seuls Senny Mayulu, blessé avec les Espoirs, et Alessandro Grandoni manquent à l'appel.",
+            "Les deux clubs ont remporté leur premier match européen, Paris face au Slovan Bratislava (6-1) et City à Porto (0-2). Cette neuvième confrontation est la première depuis le succès parisien 4-2 en janvier 2025, sur la route de leur titre continental."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Champions League: PSG (almost) in full against Manchester City",
-          "summary": "Luis Enrique reunites with Ousmane Dembélé and Nuno Mendes to face the Skyblues on Wednesday at Etihad Stadium.",
+          "title": "Champions League: Dembélé and Mendes back for PSG at Manchester City",
+          "summary": "Paris Saint-Germain travel to Manchester with Ousmane Dembélé and Nuno Mendes in their ranks to face Manchester City on matchday two of the Champions League.",
+          "body": [
+            "Rested during the 3-1 win over Le Mans, the French winger and Portuguese full-back return to Luis Enrique's squad for the trip to the Etihad Stadium. Only Senny Mayulu, injured on duty with France Under-21s, and Alessandro Grandoni miss out.",
+            "Both teams won their European openers, PSG cruising past Slovan Bratislava (6-1) while City won at Porto (0-2). This will be their ninth meeting, the first since Paris's 4-2 victory in January 2025 on their way to lifting the trophy."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Liga de Campeones: el PSG (casi) al completo contra el Manchester City",
-          "summary": "Luis Enrique se reúne con Ousmane Dembélé y Nuno Mendes para enfrentarse a los Skyblues el miércoles en el Etihad Stadium.",
+          "title": "Champions League: Dembélé y Mendes regresan con el PSG ante el Manchester City",
+          "summary": "El Paris Saint-Germain viaja a Manchester con Ousmane Dembélé y Nuno Mendes para desafiar a Manchester City en la segunda jornada de la Champions League.",
+          "body": [
+            "Reservados en la victoria ante Le Mans (3-1), el extremo francés y el lateral portugués vuelven a la convocatoria de Luis Enrique para visitar el Etihad Stadium. Solo causan baja Senny Mayulu, lesionado con la selección sub-21, y Alessandro Grandoni.",
+            "Ambos clubes ganaron en su estreno: el PSG goleó al Slovan Bratislava (6-1) y el City venció en Porto (0-2). Es su noveno duelo oficial y el primero desde el triunfo parisino por 4-2 en enero de 2025, meses antes de conquistar Europa."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري أبطال أوروبا: PSG (تقريبًا) بالكامل ضد مانشستر سيتي",
-          "summary": "يجتمع لويس إنريكي مع عثمان ديمبيلي ونونو مينديز لمواجهة سكاي بلو يوم الأربعاء في استاد الاتحاد.",
+          "title": "دوري أبطال أوروبا: عودة ديمبيلي ومينديز إلى باريس سان جيرمان أمام مانشستر سيتي",
+          "summary": "يسافر باريس سان جيرمان إلى مانشستر مدعوماً بعودة عثمان ديمبيلي ونونو مينديز لمواجهة مانشستر سيتي في الجولة الثانية من دوري أبطال أوروبا.",
+          "body": [
+            "بعد إراحتهما في الفوز على لومان (3-1)، عاد الجناح الفرنسي والظهير البرتغالي إلى قائمة المدرب لويس إنريكي لرحلة ملعب الاتحاد. ويغيب فقط سيني مايولو بسبب إصابته مع منتخب الشباب، إلى جانب أليساندرو غراندوني.",
+            "واستهل الفريقان مشوارهما بفوزين، حيث اكتسح باريس نظيره سلوفان براتيسلافا (6-1) بينما تفوق سيتي في بورتو (0-2). وتعد هذه المواجهة التاسعة بين الناديين، والأولى منذ فوز الفريق الفرنسي 4-2 في يناير 2025 قبل تتويجه القاري."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/ligue-des-champions-le-psg-presque-au-complet-face-a-manchester-city-20261013",
@@ -295,7 +356,20 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/ligue-des-champions-le-psg-presque-au-complet-face-a-manchester-city-20261013"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-13T17:18:44+00:00"
+        }
+      }
     },
     {
       "id": "ccc4d14f172b",
@@ -303,33 +377,54 @@
       "summary": "Nach seinem Vertragsende bei Real Madrid war Daniel Carvajal auf der Suche nach einem neuen Verein - und hat diesen nun gefunden. Der 34-Jährige kehrt in La Liga zurück und unterschreibt beim FC Getafe.",
       "i18n": {
         "de": {
-          "title": "La Liga erteilt grünes Licht: Carvajal unterschreibt in Getafe",
-          "summary": "Nach seinem Vertragsende bei Real Madrid war Daniel Carvajal auf der Suche nach einem neuen Verein - und hat diesen nun gefunden. Der 34-Jährige kehrt in La Liga zurück und unterschreibt beim FC Getafe.",
-          "needs_translation": false
+          "title": "Grünes Licht von La Liga: Carvajal unterschreibt bei Getafe",
+          "summary": "Daniel Carvajal wechselt nach seinem Abschied von Real Madrid zum FC Getafe, nachdem die spanische Liga dem Transfer grünes Licht erteilt hat.",
+          "body": [
+            "Nach dem Auslaufen seines Vertrags beim spanischen Rekordmeister suchte der 34-Jährige nach einer neuen Herausforderung. Mit der nun erteilten Spielberechtigung durch den Ligaverband setzt Carvajal seine Karriere beim Nachbarn aus dem Madrider Süden fort."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "La Liga gives green light: Carvajal signs in Getafe",
-          "summary": "After his contract with Real Madrid ended, Daniel Carvajal was looking for a new club - and has now found it. The 34-year-old returns to La Liga and signs with FC Getafe.",
+          "title": "La Liga gives green light: Carvajal signs for Getafe",
+          "summary": "Daniel Carvajal has signed for Getafe after leaving Real Madrid, following official approval granted by the Spanish league.",
+          "body": [
+            "Without a club since his contract expired with Real Madrid, the 34-year-old right-back found his new destination in the southern suburbs of Madrid. With La Liga validating the paperwork, he remains in Spain's top flight."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "La Liga donne son feu vert : Carvajal signe à Getafe",
-          "summary": "Après la fin de son contrat avec le Real Madrid, Daniel Carvajal était à la recherche d'un nouveau club - et l'a maintenant trouvé. L'homme de 34 ans revient à La Liga et signe avec le FC Getafe.",
+          "title": "Feu vert de La Liga : Carvajal s'engage avec Getafe",
+          "summary": "Libre après son départ du Real Madrid, Daniel Carvajal rejoint Getafe après le feu vert officiel accordé par la ligue espagnole.",
+          "body": [
+            "En fin de contrat chez les Merengues, l'expérimenté latéral de 34 ans cherchait un nouveau point de chute. L'aval de La Liga ayant été acté, Carvajal reste dans la banlieue madrilène et poursuivra sa carrière dans l'élite espagnole."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "La Liga da luz verde: Carvajal firma en Getafe",
-          "summary": "Después de su contrato con el Real Madrid, Daniel Carvajal estaba buscando un nuevo club, y ahora lo ha encontrado. El jugador de 34 años regresa a La Liga y firma con el FC Getafe.",
+          "title": "Luz verde de LaLiga: Carvajal firma por el Getafe",
+          "summary": "Daniel Carvajal se convierte en nuevo jugador del Getafe tras cerrar su etapa en el Real Madrid y recibir el visto bueno de la patronal.",
+          "body": [
+            "El lateral de 34 años se encontraba libre de contrato tras despedirse del conjunto blanco. Una vez validada la operación por los estamentos de la competición, Carvajal seguirá compitiendo en la máxima categoría del fútbol español."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "الدوري الإسباني يعطي الضوء الأخضر: لافتات كارفاخال في خيتافي",
-          "summary": "بعد انتهاء عقده مع ريال مدريد، كان دانيال كارفاخال يبحث عن نادي جديد - وقد وجده الآن. يعود اللاعب البالغ من العمر 34 عامًا إلى الدوري الإسباني ويوقع مع نادي خيتافي.",
+          "title": "الليغا تمنح الضوء الأخضر: كارفاخال يوقع لخيتافي",
+          "summary": "انتقل داني كارفاخال إلى نادي خيتافي بعد نهاية مشواره مع ريال مدريد، إثر مصادقة رابطة الدوري الإسباني رسميًا على الصفقة.",
+          "body": [
+            "وبات المدافع البالغ من العمر 34 عامًا حرًا منذ نهاية عقده مع النادي الملكي، قبل أن يحسم وجهته بالبقاء في العاصمة الإسبانية بعد استكمال جميع الإجراءات القانونية المعتمدة لدى رابطة الدوري."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.kicker.de/la-liga-erteilt-gruenes-licht-carvajal-unterschreibt-in-getafe-1260787/artikel#omrss",
@@ -351,7 +446,20 @@
           "url": "https://www.kicker.de/la-liga-erteilt-gruenes-licht-carvajal-unterschreibt-in-getafe-1260787/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-13T17:18:48+00:00"
+        }
+      }
     },
     {
       "id": "19e4a5cb0b28",
@@ -401,7 +509,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261013/1004238134/nueva-sorprendente-habilidad-bellingham.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ced17ac27d3b",
@@ -409,27 +522,44 @@
       "summary": "Un arrêté préfectoral publié ce mardi interdit aux supporters de l'Olympiakos de circuler ou de stationner dans six arrondissements de Marseille, de mercredi à vendredi, et d'accéder au Vélodrome pour le match contre l'OM, jeudi en Ligue Europa (21 heures).",
       "i18n": {
         "fr": {
-          "title": "Deux jours avant OM-Olympiakos, les supporters du club grec interdits au Vélodrome et dans le centre de Marseille",
-          "summary": "Un arrêté préfectoral publié ce mardi interdit aux supporters de l'Olympiakos de circuler ou de stationner dans six arrondissements de Marseille, de mercredi à vendredi, et d'accéder au Vélodrome pour le match contre l'OM, jeudi en Ligue Europa (21 heures).",
-          "needs_translation": false
+          "title": "OM-Olympiakos : les supporters grecs interdits de stade et de centre-ville",
+          "summary": "La préfecture interdit le déplacement des supporters de l'Olympiakos à Marseille et leur accès au Vélodrome pour le match de Ligue Europa contre l'OM.",
+          "body": [
+            "L'arrêté officiel, publié ce mardi, proscrit toute circulation ou stationnement des fans du club grec dans six arrondissements marseillais du mercredi au vendredi. Cette décision administrative prive les visiteurs de tribunes pour ce choc européen programmé jeudi à 21 heures."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Two days before OM-Olympiakos, Greek club supporters banned at the Velodrome and in the center of Marseille",
-          "summary": "A prefectural decree published on Tuesday prohibits Olympiakos fans from circulating or parking in six arrondissements of Marseille, from Wednesday to Friday, and from accessing the Velodrome for the match against OM, Thursday in the Europa League (9 p.m.).",
+          "title": "OM-Olympiakos: Greek fans barred from stadium and Marseille centre",
+          "summary": "Local authorities have banned Olympiakos supporters from travelling to Marseille and entering the Vélodrome for Thursday's Europa League clash against OM.",
+          "body": [
+            "A police decree published on Tuesday prohibits Greek supporters from moving through or parking in six Marseille districts from Wednesday to Friday. Visiting fans will therefore have no access to the stadium for the match scheduled Thursday at 21:00."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Dos días antes de OM-Olympiakos, los aficionados del club griego prohibidos en el Velódromo y en el centro de Marsella",
-          "summary": "Un decreto de la prefectura publicado este martes prohíbe a los aficionados del Olympiakos circular o estacionar en seis distritos de Marsella, de miércoles a viernes, y acceder al Velódromo para el partido contra el OM, el jueves en la Europa League (21:00).",
+          "title": "OM-Olympiakos: hinchas griegos vetados del estadio y del centro",
+          "summary": "La prefectura prohíbe el desplazamiento de aficionados de Olympiakos a Marseille y su entrada al Vélodrome para la cita de Europa League frente al OM.",
+          "body": [
+            "El decreto publicado este martes prohíbe la circulación y el estacionamiento de seguidores helenos en seis distritos de la ciudad entre el miércoles y el viernes. No habrá grada visitante para este choque europeo programado el jueves a las 21:00."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "قبل يومين من OM - Olympiakos، تم حظر مشجعي النادي اليوناني في Velodrome وفي وسط مرسيليا",
-          "summary": "يحظر مرسوم محافظات نشر يوم الثلاثاء على مشجعي أولمبياكوس التنقل أو وقوف السيارات في ست دوائر في مرسيليا، من الأربعاء إلى الجمعة، ومن الوصول إلى Velodrome للمباراة ضد OM، الخميس في الدوري الأوروبي (9 مساءً).",
+          "title": "مارسيليا ضد أولمبياكوس: منع الجماهير اليونانية من دخول الملعب والمدينة",
+          "summary": "قررت السلطات الفرنسية حظر تنقل جماهير أولمبياكوس إلى مارسيليا ومنعهم من دخول ملعب فيلودروم لمواجهة الدوري الأوروبي ضد أولمبيك مارسيليا.",
+          "body": [
+            "يحظر القرار الصادر يوم الثلاثاء تحرك أو تواجد مشجعي الفريق اليوناني في ست دوائر بمدينة مارسيليا من الأربعاء إلى الجمعة. بموجب هذا الإجراء الإداري، ستُغلق مدرجات الضيوف تماماً خلال اللقاء المقرر مساء الخميس عند الساعة التاسعة."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Deux-jours-avant-om-olympiakos-les-supporters-du-club-grec-interdits-au-velodrome-et-dans-le-centre-de-marseille/1725387#at_medium=RSS_feeds",
@@ -451,7 +581,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Deux-jours-avant-om-olympiakos-les-supporters-du-club-grec-interdits-au-velodrome-et-dans-le-centre-de-marseille/1725387#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-13T17:18:51+00:00"
+        }
+      }
     },
     {
       "id": "e6fa668735b7",
@@ -501,7 +644,12 @@
           "url": "https://africatopsports.com/afrique-football/mali/treve-internationale-le-mali-enchaine-les-victoires-et-confirme-ses-ambitions/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "45ae6ad0b318",
@@ -615,27 +763,44 @@
       "summary": "C'est au Vélodrome, en octobre 2020, que Ferran Torres est devenu un avant-centre possible aux yeux de Pep Guardiola. Une évolution qui restera la trace principale de son passage oubliable à Manchester City.",
       "i18n": {
         "fr": {
-          "title": "Il y a six ans à Marseille, Pep Guardiola faisait découvrir à Ferran Torres son potentiel d'avant-centre",
-          "summary": "C'est au Vélodrome, en octobre 2020, que Ferran Torres est devenu un avant-centre possible aux yeux de Pep Guardiola. Une évolution qui restera la trace principale de son passage oubliable à Manchester City.",
-          "needs_translation": false
+          "title": "Manchester City : Ferran Torres en avant-centre, une idée née à Marseille",
+          "summary": "Pep Guardiola a initié la reconversion de Ferran Torres au poste d'avant-centre lors d'une rencontre au Vélodrome en octobre 2020.",
+          "body": [
+            "Cette trouvaille tactique sur la pelouse marseillaise reste le principal héritage de l'Espagnol à Manchester City. Malgré un passage globalement discret en Angleterre, ce repositionnement axial a redéfini durablement son profil offensif."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Six years ago in Marseille, Pep Guardiola made Ferran Torres discover his potential as a centre-forward",
-          "summary": "It was at the Velodrome, in October 2020, that Ferran Torres became a possible centre-forward in the eyes of Pep Guardiola. An evolution that will remain the main trace of his unforgettable time in Manchester City.",
+          "title": "Manchester City: Ferran Torres as a central striker was born in Marseille",
+          "summary": "Pep Guardiola initiated Ferran Torres' repositioning as a central striker during a match at the Vélodrome in October 2020.",
+          "body": [
+            "That tactical experiment on French soil remains the Spaniard's primary legacy at Manchester City. While his stint with the English club proved largely forgettable, this shift into the box permanently reshaped his profile."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Hace seis años en Marsella, Pep Guardiola hizo descubrir a Ferran Torres su potencial como delantero centro",
-          "summary": "Fue en el Velódromo, en octubre de 2020, que Ferran Torres se convirtió en un posible centro delantero a los ojos de Pep Guardiola. Una evolución que seguirá siendo el rastro principal de su paso por el Manchester City.",
+          "title": "Manchester City: el rol de Ferran Torres como '9' se forjó en Marsella",
+          "summary": "Pep Guardiola empezó a utilizar a Ferran Torres como delantero centro durante un partido disputado en el Vélodrome en octubre de 2020.",
+          "body": [
+            "Aquel ensayo táctico en el feudo de Marseille sigue siendo el legado más visible del atacante en Manchester City. Pese a su discreto paso por Inglaterra, ese movimiento hacia el área redefinió su carrera."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "قبل ست سنوات في مرسيليا، جعل بيب غوارديولا فيران توريس يكتشف إمكاناته كمهاجم مركزي",
-          "summary": "في ملعب فيلودروم، في أكتوبر 2020، أصبح فيران توريس مهاجم مركزي محتمل في نظر بيب غوارديولا. تطور سيبقى الأثر الرئيسي لوقته الذي لا ينسى في مانشستر سيتي.",
+          "title": "مانشستر سيتي: غوارديولا اكتشف قدرات فيران توريس الهجومية في مارسيليا",
+          "summary": "بدأ بيب غوارديولا توظيف فيران توريس في مركز قلب الهجوم خلال مباراة أقيمت على ملعب فيلودروم في أكتوبر 2020.",
+          "body": [
+            "شكّلت هذه التجربة التكتيكية الأثر الأبرز للاعب الإسباني خلال فترته غير اللافتة مع مانشستر سيتي، حيث أعاد هذا التغيير في التمركز صياغة مسيرته الهجومية لاحقاً."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Article/Il-y-a-six-ans-a-marseille-pep-guardiola-innovait-et-faisait-decouvrir-a-ferran-torres-qu-il-pouvait-devenir-avant-centre/1725320#at_medium=RSS_feeds",
@@ -657,7 +822,20 @@
           "url": "https://www.lequipe.fr/Football/Article/Il-y-a-six-ans-a-marseille-pep-guardiola-innovait-et-faisait-decouvrir-a-ferran-torres-qu-il-pouvait-devenir-avant-centre/1725320#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 4,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-13T17:18:54+00:00"
+        }
+      }
     },
     {
       "id": "cf00a6748680",
@@ -707,7 +885,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261013/1004238119/espectacular-gol-olimpico-fermin-entrenamiento.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9417ec410523",
@@ -715,27 +898,48 @@
       "summary": "Dernier de Serie A avec zéro point après six journées, le club a décidé de limoger Giovanni Stroppa, pourtant artisan de sa remontée dans l’élite.",
       "i18n": {
         "fr": {
-          "title": "Serie A : la lanterne rouge Venise se sépare déjà de son entraîneur après six défaites en championnat",
-          "summary": "Dernier de Serie A avec zéro point après six journées, le club a décidé de limoger Giovanni Stroppa, pourtant artisan de sa remontée dans l’élite.",
-          "needs_translation": false
+          "title": "Venise limoge son entraîneur Giovanni Stroppa",
+          "summary": "Lanterne rouge de Serie A avec six défaites en six matches, Venise a officialisé ce mardi le limogeage de son entraîneur Giovanni Stroppa.",
+          "body": [
+            "Artisan de la remontée immédiate des Vénitiens parmi l'élite la saison passée, le technicien italien paie un début de championnat catastrophique. Le revers concédé lundi à Bergame (3-1) a scellé son sort, laissant le club sans le moindre point au compteur et avec la pire défense d'Italie, plombée par 16 buts encaissés.",
+            "La formation détenue par un fonds américain devient déjà la quatrième à changer de banc en Serie A cette saison. Stroppa rejoint ainsi Fabio Grosso (Fiorentina), Domenico Tedesco (Bologne) et Carlos Cuesta (Parme), tous débarqués lors des cinq premières journées."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Serie A: the Venice red lantern is already parting ways with its coach after six defeats in the league",
-          "summary": "Last in Serie A with zero points after six days, the club has decided to sack Giovanni Stroppa, despite being responsible for his return to the elite.",
+          "title": "Venezia sack manager Giovanni Stroppa",
+          "summary": "Bottom of Serie A with zero points after six consecutive defeats, promoted side Venezia officially sacked head coach Giovanni Stroppa on Tuesday.",
+          "body": [
+            "Having guided the club straight back to the top flight last season, the Italian manager paid the price for a disastrous start. Monday's 3-1 defeat in Bergamo sealed his fate, leaving the team without a point and with the league's worst defence after conceding 16 goals.",
+            "The American-owned club are already the fourth team to change managers in Serie A this season. Stroppa follows Fabio Grosso (Fiorentina), Domenico Tedesco (Bologna) and Carlos Cuesta (Parma), who were all dismissed during the first five rounds."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Serie A: la linterna roja Venecia ya se separa de su entrenador después de seis derrotas en el campeonato",
-          "summary": "Último de la Serie A con cero puntos después de seis jornadas, el club decidió despedir a Giovanni Stroppa, a pesar de ser el artífice de su ascenso a la élite.",
+          "title": "El Venezia destituye a su técnico Giovanni Stroppa",
+          "summary": "Colista de la Serie A con seis derrotas en seis jornadas, el Venezia hizo oficial este martes la destitución de su técnico Giovanni Stroppa.",
+          "body": [
+            "Artífice del ascenso inmediato a la máxima categoría la pasada campaña, el entrenador italiano pagó un arranque liguero catastrófico. La derrota del lunes en Bérgamo (3-1) sentenció su salida, dejando al equipo con cero puntos y con la peor defensa del campeonato tras encajar 16 goles.",
+            "La entidad, en manos de un fondo estadounidense, es ya el cuarto club en cambiar de banquillo en la Serie A esta temporada. Stroppa sigue los pasos de Fabio Grosso (Fiorentina), Domenico Tedesco (Bolonia) y Carlos Cuesta (Parma), todos cesados en las primeras cinco fechas."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "الدوري الإيطالي: فانوس البندقية الأحمر ينفصل بالفعل عن مدربه بعد ست هزائم في الدوري",
-          "summary": "في المركز الأخير في الدوري الإيطالي برصيد صفر نقطة بعد ستة أيام، قرر النادي إقالة جيوفاني ستروبا، على الرغم من كونه مسؤولا عن عودته إلى النخبة.",
+          "title": "فينيزيا يقيل مدربه جوفاني ستروبا",
+          "summary": "أعلن نادي فينيزيا رسمياً يوم الثلاثاء إقالة مدربه جوفاني ستروبا، بعدما تذيل جدول ترتيب الدوري الإيطالي بست هزائم في ست مباريات.",
+          "body": [
+            "دفع المدرب الإيطالي ثمن البداية الكارثية، رغم قيادته الفريق للصعود المباشر إلى دوري الأضواء الموسم الماضي. وحسمت الخسارة في بيرغامو (3-1) يوم الإثنين مصيره، ليبقى النادي برصيد خالٍ من النقاط وبأسوأ دفاع في المسابقة بعد تلقيه 16 هدفاً.",
+            "وبات النادي المملوك لصندوق أمريكي رابع فريق يبدل مدربه في الدوري الإيطالي هذا الموسم، ليلتحق ستروبا بفابيو غروسو (فيورنتينا)، ودومينيكو تيديسكو (بولونيا)، وكارلوس كويستا (بارما)، الذين أقيلوا جميعاً خلال الجولات الخمس الأولى."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/italie/serie-a-la-lanterne-rouge-venise-se-separe-deja-de-son-entraineur-apres-six-defaites-en-championnat-20261013",
@@ -757,7 +961,20 @@
           "url": "https://www.lefigaro.fr/sports/football/italie/serie-a-la-lanterne-rouge-venise-se-separe-deja-de-son-entraineur-apres-six-defaites-en-championnat-20261013"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-13T17:18:59+00:00"
+        }
+      }
     },
     {
       "id": "d3c8e60fb224",
@@ -765,27 +982,48 @@
       "summary": "El Real Betis recibe este miércoles al Porto en La Cartuja , en la segunda jornada de la Champions League, con el objetivo de sumar su segundo triunfo europeo.",
       "i18n": {
         "es": {
-          "title": "El Betis sonríe ante la racha del Porto contra equipos españoles",
-          "summary": "El Real Betis recibe este miércoles al Porto en La Cartuja , en la segunda jornada de la Champions League, con el objetivo de sumar su segundo triunfo europeo.",
-          "needs_translation": false
+          "title": "Champions: el Betis busca el pleno ante un Porto con malos números en España",
+          "summary": "El Real Betis recibe al Porto en La Cartuja en busca de su segundo triunfo en Champions frente a un rival lastrado por sus visitas a España.",
+          "body": [
+            "El conjunto de Manuel Pellegrini llega en racha tras vencer a domicilio al Lille (2-3) y golear a Osasuna por 5-2. Enfrente, los hombres de Francesco Farioli necesitan sumar tras caer en casa ante el Manchester City por 0-2, pese a acumular cuatro triunfos en el campeonato portugués.",
+            "Para este primer duelo europeo entre ambos clubes, la estadística juega a favor de los verdiblancos: el Porto ha perdido cuatro de sus cinco últimos cruces contra conjuntos de LaLiga, y su única victoria en suelo español en ese lapso data del curso 2014/15 frente al Athletic Club."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Betis smile at Porto's streak against Spanish teams",
-          "summary": "Real Betis hosts Porto at La Cartuja on Wednesday, the second day of the Champions League, with the aim of adding their second European triumph.",
+          "title": "Champions League: Real Betis host Porto looking to extend perfect start",
+          "summary": "Real Betis host Porto at La Cartuja targeting a second straight Champions League victory against opponents struggling for form when facing Spanish opposition.",
+          "body": [
+            "Manuel Pellegrini's side arrive on a high after edging Lille 3-2 and sweeping aside Osasuna 5-2. Meanwhile, Francesco Farioli's men need points following an opening 2-0 defeat to Manchester City, despite winning four of their last five domestic outings.",
+            "In the first ever European meeting between the two clubs, recent history favors Betis: Porto have lost four of their last five matches against LaLiga clubs, with their only win in Spain over that span coming against Athletic Club in 2014/15."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Le Real Betis sourit face à la série de Porto contre des équipes espagnoles",
-          "summary": "Le Real Betis reçoit Porto ce mercredi à La Cartuja , lors de la deuxième journée de la Ligue des champions, dans le but de remporter sa deuxième victoire européenne.",
+          "title": "Champions : Le Real Betis vise la passe de deux face à un Porto friable en Espagne",
+          "summary": "Le Real Betis accueille Porto à La Cartuja pour enchaîner une deuxième victoire en Ligue des champions face à un rival en échec face aux clubs espagnols.",
+          "body": [
+            "L'équipe de Manuel Pellegrini surfe sur sa dynamique après son succès à Lille (2-3) et son carton 5-2 contre Osasuna. En face, les hommes de Francesco Farioli doivent réagir après leur revers 0-2 face à Manchester City, malgré quatre victoires récentes en championnat portugais.",
+            "Pour cette première confrontation européenne entre les deux clubs, les chiffres penchent pour les Andalous : Porto a perdu quatre de ses cinq derniers matches contre des formations de LaLiga, son seul succès en Espagne remontant à la saison 2014/15 face à l'Athletic Club."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ابتسامة بيتيس في خط بورتو ضد الفرق الإسبانية",
-          "summary": "يستضيف ريال بيتيس بورتو في لا كارتوجا يوم الأربعاء، اليوم الثاني من دوري أبطال أوروبا، بهدف إضافة انتصاره الأوروبي الثاني.",
+          "title": "دوري الأبطال: ريال بيتيس يستهدف فوزه الثاني أمام بورتو المتعثر في إسبانيا",
+          "summary": "يستضيف ريال بيتيس نظيره بورتو في لا كارتوخا بحثاً عن انتصاره الثاني في دوري أبطال أوروبا أمام منافس خسر أربعاً من آخر خمس مواجهات له ضد الأندية الإسبانية.",
+          "body": [
+            "يدخل فريق مانويل بيليغريني اللقاء بعد فوزه خارج أرضه على ليل 3-2 واكتساح أوساسونا 5-2. في المقابل، يحتاج رجال فرانشيسكو فاريولي للتعويض عقب الخسارة أمام مانشستر سيتي بهدفين دون رد في الجولة الافتتاحية، رغم تحقيقهم أربعة انتصارات في الدوري البرتغالي.",
+            "وفي أول مواجهة قارية تجمع الفريقين، تصب الأرقام في صالح بيتيس، إذ خسر بورتو أربعاً من آخر خمس مباريات ضد أندية لا ليغا، ويعود فوزه الوحيد في إسبانيا خلال هذه الفترة إلى موسم 2014-2015 أمام أتلتيك بيلباو."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/betis/20261013/1004238125/betis-sonrie-racha-porto-equipos-espanoles.html",
@@ -807,7 +1045,12 @@
           "url": "https://www.mundodeportivo.com/futbol/betis/20261013/1004238125/betis-sonrie-racha-porto-equipos-espanoles.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full"
+      }
     },
     {
       "id": "59566cd32c42",
@@ -857,7 +1100,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261013/1004238120/laporta-pasa-madrid-barca-equipo-mejor-futbol-mundo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b77dbb3ee0bc",
@@ -907,7 +1155,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261013/1004238113/dybala-gueler-talento-lineas.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f23a148ac2d1",
