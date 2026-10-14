@@ -65,7 +65,12 @@
           "url": "https://www.kicker.de/live-fet-fehlen-nur-zentimeter-glueck-fuer-den-bvb-1260513/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ef80a248adc1",
@@ -115,7 +120,12 @@
           "url": "https://www.lefigaro.fr/sports/football/live/ligue-des-champions/2026/2685401/as-roma-real-madrid"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "17af19e33b44",
@@ -165,7 +175,12 @@
           "url": "https://www.lefigaro.fr/sports/football/live/ligue-des-champions/2026/2685402/man-city-paris-sg"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "52f01113241c",
@@ -215,7 +230,12 @@
           "url": "https://africatopsports.com/football-europe/ligue-des-champions-uefa-le-feyenoord-simpose-face-a-come/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 4,
+        "source_read": "rss"
+      }
     },
     {
       "id": "9c177b428c85",
@@ -223,27 +243,48 @@
       "summary": "L’attaquant français dispute ce mercredi son 100e match de Ligue des champions sur le terrain de l’AS Roma.",
       "i18n": {
         "fr": {
-          "title": "Ligue des champions : Kylian Mbappé fête son 100e match dans la compétition, un record de précocité",
-          "summary": "L’attaquant français dispute ce mercredi son 100e match de Ligue des champions sur le terrain de l’AS Roma.",
-          "needs_translation": false
+          "title": "Kylian Mbappé devient le plus jeune joueur à disputer 100 matches de C1",
+          "summary": "Titulaire avec le Real Madrid contre l'AS Rome, Kylian Mbappé est devenu mercredi le plus jeune joueur de l'histoire à atteindre 100 apparitions en Ligue des champions.",
+          "body": [
+            "Âgé de 27 ans et 298 jours, l'attaquant français s'empare du record de précocité détenu par Lionel Messi. L'Argentin avait franchi ce cap à 28 ans et 84 jours avec le FC Barcelone en septembre 2015, déjà face au club romain.",
+            "Avant cette centième rencontre, Mbappé cumulait 71 buts — ce qui le place au cinquième rang de l'histoire de la compétition — et 28 passes décisives sous les maillots de l'AS Monaco, du Paris SG et du Real Madrid. Le champion du monde 2018 n'a en revanche jamais soulevé le trophée, battu en finale lors de l'édition 2020 avec Paris."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Champions League: Kylian Mbappé celebrates his 100th match in the competition, a record of precocity",
-          "summary": "The French striker is playing his 100th Champions League match on the pitch of AS Roma on Wednesday.",
+          "title": "Kylian Mbappé becomes youngest player to make 100 Champions League appearances",
+          "summary": "Starting for Real Madrid against AS Roma, Kylian Mbappé became the youngest player in Champions League history to reach 100 appearances on Wednesday.",
+          "body": [
+            "At 27 years and 298 days old, the French forward broke the milestone record previously held by Lionel Messi. The Argentine reached his century at 28 years and 84 days for Barcelona in September 2015, also facing the Italian side.",
+            "Ahead of this 100th match, Mbappé had tallied 71 goals — ranking fifth on the competition's all-time scoring charts — and 28 assists across spells with Monaco, Paris Saint-Germain and Real Madrid. The 2018 World Cup winner has yet to lift the continental trophy, falling in the 2020 final with Paris."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Liga de Campeones: Kylian Mbappé celebra su partido número 100 en la competición, un récord de precocidad",
-          "summary": "El delantero francés disputa este miércoles su partido número 100 de la Liga de Campeones en el campo de la AS Roma.",
+          "title": "Mbappé, el más joven de la historia en alcanzar 100 partidos en Champions",
+          "summary": "Titular con el Real Madrid ante la AS Roma, Kylian Mbappé se convirtió este miércoles en el futbolista más joven en disputar 100 partidos en la Liga de Campeones.",
+          "body": [
+            "A sus 27 años y 298 días, el delantero galo arrebató el registro de precocidad a Lionel Messi. El argentino había alcanzado el centenar con 28 años y 84 días vistiendo la camiseta del FC Barcelona en septiembre de 2015, curiosamente también frente al conjunto romano.",
+            "Antes de saltar al césped en Roma, Mbappé sumaba 71 dianas —quinto máximo goleador histórico del torneo— y 28 asistencias repartidas entre Monaco, Paris Saint-Germain y Real Madrid. Al campeón del mundo en 2018 todavía le falta levantar la Orejona, tras quedarse a las puertas en la final de 2020 con el club parisino."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري أبطال أوروبا: كيليان مبابي يحتفل بمباراته المائة في المسابقة، وهو رقم قياسي من السرعة المبكرة",
-          "summary": "يخوض المهاجم الفرنسي مباراته رقم 100 في دوري أبطال أوروبا على ملعب روما يوم الأربعاء.",
+          "title": "كيليان مبابي يصبح أصغر لاعب يخوض 100 مباراة في دوري أبطال أوروبا",
+          "summary": "بمشاركته أساسياً مع ريال مدريد أمام روما، أصبح كيليان مبابي الأربعاء أصغر لاعب في تاريخ دوري أبطال أوروبا يخوض 100 مباراة في المسابقة القارية.",
+          "body": [
+            "وبعمر 27 عاماً و298 يوماً، حطم المهاجم الفرنسي الرقم القياسي لليونيل ميسي، الذي بلغ مباراته المئوية في سن 28 عاماً و84 يوماً مع برشلونة في سبتمبر 2015، وضد النادي الإيطالي نفسه.",
+            "وقبل هذه المواجهة، جمع مبابي 71 هدفاً — ليحتل المركز الخامس في قائمة الهدافين التاريخيين للبطولة — إضافة إلى 28 تمريرة حاسمة بقمصان موناكو وباريس سان جيرمان وريال مدريد. ورغم هذه الأرقام، لم يتوج بطل العالم 2018 باللقب بعد، مكتفياً بمركز الوصيف في نهائي 2020 مع باريس."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/ligue-des-champions-kylian-mbappe-fete-son-100e-match-dans-la-competition-un-record-de-precocite-20261014",
@@ -265,7 +306,20 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/ligue-des-champions-kylian-mbappe-fete-son-100e-match-dans-la-competition-un-record-de-precocite-20261014"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-14T20:51:50+00:00"
+        }
+      }
     },
     {
       "id": "cb8de228f070",
@@ -321,7 +375,12 @@
           "url": "https://www.kicker.de/live-vagnoman-hat-ersten-gefaehrlichen-abschluss-topduelle-in-rom-und-manchester-1260519/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "249a044bb51f",
@@ -329,27 +388,44 @@
       "summary": "Le Niger a réussi son entrée en matière dans les éliminatoires de la CAN U17 de la zone UFOA-B 2026 en s’imposant face au Nigeria (2-1), ce mercredi à Ouagadougou.",
       "i18n": {
         "fr": {
-          "title": "UFOA-B U17 : le Niger surprend le Nigeria pour son entrée en lice",
-          "summary": "Le Niger a réussi son entrée en matière dans les éliminatoires de la CAN U17 de la zone UFOA-B 2026 en s’imposant face au Nigeria (2-1), ce mercredi à Ouagadougou.",
-          "needs_translation": false
+          "title": "UFOA-B U17 : le Niger s'offre le Nigeria d'entrée",
+          "summary": "Le Niger a battu le Nigeria deux buts à un mercredi à Ouagadougou, signant des débuts parfaits aux éliminatoires de la CAN U17.",
+          "body": [
+            "Pour leur entrée en lice dans ce tournoi de la zone UFOA-B 2026 disputé au Burkina Faso, les jeunes Nigériens ont créé la surprise face aux Golden Eaglets. Ce succès inaugural lance idéalement leur course vers la phase finale continentale."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "UFOA-B U17: Niger surprises Nigeria for its entry into the competition",
-          "summary": "Niger successfully entered the qualifiers of the U17 can of the UFOA-B zone 2026 by defeating Nigeria (2-1), this Wednesday in Ouagadougou.",
+          "title": "WAFU-B U17: Niger stun Nigeria in qualifying opener",
+          "summary": "Niger edged past Nigeria 2-1 on Wednesday in Ouagadougou, kicking off their Under-17 Africa Cup of Nations qualifying campaign with an upset.",
+          "body": [
+            "In their opening fixture of the 2026 WAFU-B tournament held in Burkina Faso, the young Menas took all three points against their regional rivals, securing an ideal start in the race for continental qualification."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "UFOA-B U17: Níger sorprende a Nigeria en su debut",
-          "summary": "Níger logró su entrada en las eliminatorias de la CAN U17 de la zona UFOA-B 2026 al imponerse a Nigeria (2-1), este miércoles en Uagadugú.",
+          "title": "UFOA-B sub-17: Níger sorprende a Nigeria en el arranque",
+          "summary": "Níger venció 2-1 a Nigeria este miércoles en Uagadugú y rubricó un estreno inmejorable en la fase previa de la Copa África sub-17.",
+          "body": [
+            "En su debut dentro de este torneo clasificatorio de la zona UFOA-B disputado en Burkina Faso, el combinado nigerino dio la sorpresa ante los nigerianos y sumó tres puntos clave en la carrera hacia la fase final."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "UFOA - B U17: النيجر تفاجئ نيجيريا بدخولها المسابقة",
-          "summary": "دخلت النيجر بنجاح تصفيات U17 CAN لمنطقة UFOA - B 2026 بفوزها على نيجيريا (2-1)، هذا الأربعاء في واغادوغو.",
+          "title": "تصفيات غرب إفريقيا دون 17 عاما: النيجر تفاجئ نيجيريا",
+          "summary": "حققت النيجر فوزا ثمينا على نيجيريا بهدفين لهدف، الأربعاء في واغادوغو، مستهلة مشوارها في تصفيات كأس أمم إفريقيا دون 17 عاما بأفضل طريقة.",
+          "body": [
+            "وفي أولى مواجهات الفريقين بالبطولة التأهيلية لمنطقة اتحاد غرب إفريقيا (ب) 2026 المقامة في بوركينا فاسو، فرض صغار النيجر تفوقهم ليحصدوا ثلاث نقاط ثمينة تعزز حظوظهم نحو التأهل القاري."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/football/ufoa-b-u17-le-niger-surprend-le-nigeria-pour-son-entree-en-lice/",
@@ -371,7 +447,20 @@
           "url": "https://africatopsports.com/football/ufoa-b-u17-le-niger-surprend-le-nigeria-pour-son-entree-en-lice/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-14T20:51:55+00:00"
+        }
+      }
     },
     {
       "id": "405e8013c615",
@@ -421,7 +510,12 @@
           "url": "https://www.lefigaro.fr/sports/handball/hand-paris-enchaine-et-se-qualifie-pour-le-tour-principal-de-la-ligue-des-champions-20261014"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "eb8a956f2ef1",
@@ -429,27 +523,44 @@
       "summary": "Liverpool remporte les 3 points de la 2è journée de Ligue des champions contre le LASK.",
       "i18n": {
         "fr": {
-          "title": "Ligue des champions UEFA : Liverpool bat le LASK grâce à un triplé de Bradley Barcola",
-          "summary": "Liverpool remporte les 3 points de la 2è journée de Ligue des champions contre le LASK.",
-          "needs_translation": false
+          "title": "Ligue des champions : triplé de Barcola, Liverpool domine le LASK",
+          "summary": "Porté par un triplé de Bradley Barcola, Liverpool s'est imposé face au LASK lors de la deuxième journée de Ligue des champions.",
+          "body": [
+            "Cette victoire permet aux Reds d'empocher les trois points de la deuxième journée de la compétition européenne."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "UEFA Champions League: Liverpool beat LASK with a hat-trick from Bradley Barcola",
-          "summary": "Liverpool won the 3 points of the 2nd day of the Champions League against LASK.",
+          "title": "Champions League: Barcola hat-trick guides Liverpool past LASK",
+          "summary": "Bradley Barcola scored a hat-trick to lead Liverpool to victory over LASK on the second matchday of the Champions League.",
+          "body": [
+            "The victory secures all three points for the English club in their second outing of the European campaign."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Liga de Campeones de la UEFA: Liverpool vence al LASK con un triplete de Bradley Barcola",
-          "summary": "Liverpool gana los 3 puntos de la segunda jornada de la Liga de Campeones contra Lask.",
+          "title": "Champions League: triplete de Barcola y triunfo de Liverpool ante LASK",
+          "summary": "Con un triplete de Bradley Barcola, Liverpool superó a LASK en la segunda jornada de la fase de grupos de la Champions League.",
+          "body": [
+            "El triunfo permite al conjunto inglés sumar los tres puntos en juego en su segundo compromiso del torneo continental."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري أبطال أوروبا: فاز ليفربول على لاسك بثلاثية من برادلي باركولا",
-          "summary": "فاز ليفربول بالنقاط الثلاث في اليوم الثاني من دوري أبطال أوروبا ضد لاسك.",
+          "title": "دوري أبطال أوروبا: ثلاثية باركولا تقود ليفربول للفوز على لاسك",
+          "summary": "قاد برادلي باركولا فريقه ليفربول إلى الفوز على لاسك بثلاثية شخصية، ضمن منافسات الجولة الثانية من دوري أبطال أوروبا.",
+          "body": [
+            "وحصد الفريق الإنجليزي بهذا الفوز النقاط الثلاث كاملة في ثاني مواجهاته ضمن البطولة القارية."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/football-europe/ligue-des-champions-uefa-liverpool-bat-le-lask-grace-a-un-triple-de-bradley-barcola/",
@@ -471,7 +582,20 @@
           "url": "https://africatopsports.com/football-europe/ligue-des-champions-uefa-liverpool-bat-le-lask-grace-a-un-triple-de-bradley-barcola/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-14T20:52:00+00:00"
+        }
+      }
     },
     {
       "id": "5898890fbf53",
@@ -535,27 +659,44 @@
       "summary": "Dans un match fou, Liverpool s'est largement sur la pelouse du Linz ASK (6-3), grâce notamment au triplé de Bradley Barcola, et a poursuivi son sans-faute dans cette Ligue des champions. De son côté, Feyenoord a signé sa première victoire dans cette C1 en s'offrant Côme (3-2).",
       "i18n": {
         "fr": {
-          "title": "Ligue des champions : Barcola et Liverpool rayonnent, Côme tombe au Feyenoord",
-          "summary": "Dans un match fou, Liverpool s'est largement sur la pelouse du Linz ASK (6-3), grâce notamment au triplé de Bradley Barcola, et a poursuivi son sans-faute dans cette Ligue des champions. De son côté, Feyenoord a signé sa première victoire dans cette C1 en s'offrant Côme (3-2).",
-          "needs_translation": false
+          "title": "Ligue des champions : festival pour Liverpool, premier succès du Feyenoord",
+          "summary": "Porté par un triplé de Bradley Barcola, Liverpool a surclassé Linz ASK (6-3) pour poursuivre son sans-faute en Ligue des champions.",
+          "body": [
+            "Au terme d'une rencontre prolifique en Autriche, les Reds ont signé un large succès pour enchaîner dans cette C1. De son côté, Feyenoord Rotterdam a décroché sa première victoire de la compétition en s'imposant sur sa pelouse face à Côme (3-2)."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Champions League: Barcola and Liverpool shine, Como falls to Feyenoord",
-          "summary": "In a crazy match, Liverpool was largely on the pitch of the Linz ASK (6-3), thanks in particular to the hat-trick of Bradley Barcola, and continued its flawlessness in this Champions League. For his part, Feyenoord signed his first victory in this C1 by giving himself Como (3-2).",
+          "title": "Champions League: Liverpool run riot, maiden win for Feyenoord",
+          "summary": "Powered by a Bradley Barcola hat-trick, Liverpool swept past Linz ASK (6-3) to maintain their flawless run in the Champions League.",
+          "body": [
+            "After a high-scoring encounter in Austria, the Reds secured a commanding victory to stay perfect in Europe. Meanwhile, Feyenoord Rotterdam bagged their first win of the campaign by edging Como 3-2 on home soil."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Liga de Campeones: Barcola y Liverpool brillan, Como cae en el Feyenoord",
-          "summary": "En un partido loco, el Liverpool se sentó en el césped del Linz ASK (6-3), gracias en particular al triplete de Bradley Barcola, y continuó su impecable actuación en esta Liga de Campeones. Por su parte, Feyenoord consiguió su primera victoria en esta C1 al ganar a Como (3-2).",
+          "title": "Champions League: festival de Liverpool y primer triunfo de Feyenoord",
+          "summary": "Impulsado por un triplete de Bradley Barcola, Liverpool arrolló a Linz ASK (6-3) para mantener su pleno de victorias en la Champions League.",
+          "body": [
+            "Tras un duelo repleto de goles en Austria, los Reds sellaron una goleada incontestable para extender su racha. Por su parte, Feyenoord Rotterdam logró su primera victoria en el torneo al imponerse en casa a Como (3-2)."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري أبطال أوروبا: باركولا وليفربول يتألقان، كومو تسقط أمام فاينورد",
-          "summary": "في مباراة مجنونة، كان ليفربول إلى حد كبير في ملعب لينز أسك (6-3)، وذلك بفضل هاتريك برادلي باركولا على وجه الخصوص، واستمر بلا عيوب في دوري أبطال أوروبا هذا. من جانبه، وقع فينورد أول انتصار له في هذا C1 من خلال منح نفسه كومو (3-2).",
+          "title": "دوري أبطال أوروبا: مهرجان أهداف لليفربول وفوز أول لفينورد",
+          "summary": "بفضل هاتريك من برادلي باركولا، اكتسح ليفربول نظيره لاسك لينتس (6-3) ليواصل مسيرته المثالية بالعلامة الكاملة في دوري أبطال أوروبا.",
+          "body": [
+            "بعد مواجهة غزيرة بالأهداف في النمسا، حقق الريدز فوزاً عريضاً ليعززوا انطلاقتهم القوية بالبطولة القارية. ومن جهته، انتزع فينورد روتردام انتصاره الأول في المسابقة بتغلبه على أرضه أمام كومو (3-2)."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Bradley-barcola-et-liverpool-s-amusent-sur-la-pelouse-de-linz-feyenoord-s-offre-come-et-debloque-son-compteur-en-ligue-des-champions/1735799#at_medium=RSS_feeds",
@@ -595,7 +736,20 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/ligue-des-champions-barcola-et-liverpool-rayonnent-come-tombe-au-feyenoord-20261014"
         }
       ],
-      "source_count": 4
+      "source_count": 4,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-14T20:52:04+00:00"
+        }
+      }
     },
     {
       "id": "57c79dfcdd79",
@@ -645,7 +799,12 @@
           "url": "https://fr.hespress.com/492290-can-futsal-2026-chaaraoui-dans-le-cinq-majeur-face-a-la-zambie.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "1b8d821bacd1",
@@ -751,7 +910,12 @@
           "url": "https://www.sportschau.de/fussball/championsleague/champions-league-die-konferenz,audiostream-champions-league-die-konferenz-182.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e167956b7a38",
@@ -807,7 +971,12 @@
           "url": "https://www.sportschau.de/fussball/championsleague/fk-bod-glimt-gegen-borussia-dortmund,audiostream-fk-bod-glimt-gegen-borussia-dortmund-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a23617cd5691",
@@ -863,7 +1032,12 @@
           "url": "https://www.sportschau.de/fussball/championsleague/slovan-bratislava-gegen-vfb-stuttgart,audiostream-slovan-bratislava-gegen-vfb-stuttgart-102.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "89ba4b46919c",
@@ -913,7 +1087,12 @@
           "url": "https://africatopsports.com/football-europe/ligue-des-champions-uefa-les-compositions-officielles-du-match-manchester-city-vs-psg/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3daf76210ef5",
@@ -963,7 +1142,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20261014/1004238828/real-toma-contacto-den-dreef-ensayo-previo-batalla-europea.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b6d456502c3f",
@@ -971,27 +1155,48 @@
       "summary": "Vinicius ha sido castigado con cuatro partidos de sanción por el Comité de Disciplina por su expulsión ante el Villarreal y sus posteriores quejas al colegiado.",
       "i18n": {
         "es": {
-          "title": "La primera reacción de Mourinho a la sanción de Vinicius",
-          "summary": "Vinicius ha sido castigado con cuatro partidos de sanción por el Comité de Disciplina por su expulsión ante el Villarreal y sus posteriores quejas al colegiado.",
-          "needs_translation": false
+          "title": "Mourinho estalla por el momento elegido para sancionar a Vinicius",
+          "summary": "José Mourinho criticó al Comité de Disciplina por anunciar la sanción de cuatro partidos a Vinicius apenas dos horas antes de un partido clave del Real Madrid.",
+          "body": [
+            "En declaraciones a Movistar, el técnico portugués se preguntó por qué la resolución no se conoció por la mañana o al día siguiente. Consideró incomprensible perturbar la concentración de un equipo español justo antes de un duelo de semejante trascendencia.",
+            "El castigo federativo responde a la expulsión del delantero brasileño frente al Villarreal y a sus protestas posteriores al colegiado. Sin Vinicius ante Sevilla, Barcelona, Racing y Valencia, el Real Madrid recurrirá para intentar rebajar la sanción en al menos un partido."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Mourinho's first reaction to Vinicius's sanction",
-          "summary": "Vinicius has been punished with four sanction matches by the Disciplinary Committee for his expulsion against Villarreal and his subsequent complaints to the club.",
+          "title": "Mourinho hits out at timing of Vinicius ban",
+          "summary": "José Mourinho slammed the Comité de Disciplina for announcing Vinicius's four-match suspension barely two hours before a crucial match for Real Madrid.",
+          "body": [
+            "Speaking on Movistar, the Portuguese coach questioned why the committee did not release the ruling earlier that morning or the following day. In his view, disrupting the focus of a Spanish club right before a major fixture makes no sense.",
+            "The ban follows the Brazilian forward's sending-off against Villarreal and his subsequent protests towards the referee. Ruled out against Sevilla, Barcelona, Racing and Valencia, Real Madrid plan to appeal to try to shave off one match from the penalty."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "La première réaction de Mourinho à la sanction de Vinicius",
-          "summary": "Vinicius a été puni de quatre matches de sanction par le Comité de discipline pour son expulsion devant Villarreal et ses plaintes ultérieures au collège.",
+          "title": "Mourinho fustige le timing de la suspension de Vinicius",
+          "summary": "José Mourinho a fustigé le Comité de Disciplina pour avoir officialisé la suspension de quatre matches de Vinicius deux heures seulement avant un rendez-vous crucial du Real Madrid.",
+          "body": [
+            "Au micro de Movistar, le technicien portugais s'est interrogé sur les motifs qui ont poussé l'instance à communiquer à ce moment précis, plutôt que le matin même ou le lendemain. Selon lui, perturber un club espagnol juste avant une rencontre majeure n'a aucun sens.",
+            "Cette sanction fait suite à l'expulsion de l'attaquant brésilien contre Villarreal et à ses contestations envers l'arbitre. Privé de son joueur face à Sevilla, Barcelona, Racing et Valencia, le Real Madrid va faire appel pour essayer de réduire la suspension d'un match."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "أول رد فعل لمورينيو على عقوبة فينيسيوس",
-          "summary": "عوقب فينيسيوس بأربع مباريات جزائية من قبل اللجنة التأديبية لطرده ضد فياريال وشكاواه اللاحقة للنادي.",
+          "title": "مورينيو ينتقد توقيت إيقاف فينيسيوس",
+          "summary": "انتقد جوزيه مورينيو إعلان لجنة الانضباط إيقاف فينيسيوس جونيور لأربع مباريات قبل ساعتين فقط من خوض ريال مدريد مباراة مهمة.",
+          "body": [
+            "وتساءل المدرب البرتغالي عبر شبكة موفيستار عن سبب تأخر صدور القرار إلى هذا التوقيت بدلاً من إعلانه صباحاً أو في اليوم التالي، معتبراً أن تشتيت تركيز نادٍ إسباني قبيل مواجهة حاسمة أمر غير مفهوم.",
+            "وجاءت العقوبة عقب طرد المهاجم البرازيلي أمام فياريال واحتجاجه على الحكم، ليغيب عن لقاءات إشبيلية وبرشلونة وراسينغ وفالنسيا، بينما يستعد ريال مدريد للطعن في القرار لتقليص العقوبة مباراة واحدة."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261014/1004238826/primera-reaccion-mourinho-sancion-vinicius.html",
@@ -1013,7 +1218,20 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261014/1004238826/primera-reaccion-mourinho-sancion-vinicius.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-14T20:52:07+00:00"
+        }
+      }
     },
     {
       "id": "978cd9cef951",
@@ -1021,26 +1239,48 @@
       "summary": "Después del durísimo golpe que sufrió el pasado domingo al perder por 0-3 contra el Manchester City en Anfield, el Liverpool vivió este miércoles una tarde plácida al lograr una goleada por 3-6 en casa del LASK , en partido correspondiente a la segunda jornada de Champions.",
       "i18n": {
         "es": {
-          "title": "3-6: Araujo marca y Barcola se libera con un 'hat trick' en la goleada del Liverpool",
-          "summary": "Después del durísimo golpe que sufrió el pasado domingo al perder por 0-3 contra el Manchester City en Anfield, el Liverpool vivió este miércoles una tarde plácida al lograr una goleada por 3-6 en casa del LASK , en partido correspondiente a la segunda jornada de Champions.",
-          "needs_translation": false
+          "title": "El Liverpool arrolla al LASK con triplete de Barcola y estreno de Araujo",
+          "summary": "El Liverpool superó con un contundente 3-6 al LASK en Linz, impulsado por tres dianas de Bradley Barcola y el estreno goleador de Ronald Araujo.",
+          "body": [
+            "El central uruguayo, titular en el eje de la zaga ante la suplencia de Van Dijk, abrió la cuenta de cabeza tras un córner servido por Tsimikas. La tarde sirvió además de desahogo para Barcola: el extremo galo, bajo la lupa tras su millonario traspaso estival, firmó un triplete asistido sucesivamente por Koumas, Wirtz y Frimpong, quien además anotó el cuarto tanto 'red'.",
+            "Lewis Koumas completó el festival del equipo de Andoni Iraola. Pese al abultado marcador, el conjunto austríaco sacó orgullo en su estreno histórico como local en la competición y recortó distancias mediante Ljubicic y un doblete de Flecker, todos nacidos de las botas de Dibango. El triunfo afianza al Liverpool con pleno de victorias en dos jornadas de Champions."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "3-6: Araujo makes the mark and Barcola frees himself with a hat trick in Liverpool's win",
-          "summary": "After the very hard blow he suffered last Sunday when he lost 0-3 to Manchester City at Anfield, Liverpool lived a placid afternoon on Wednesday when they scored a 3-6 win at LASK , in a match corresponding to the second round of Champions League.",
+          "title": "Liverpool overpower LASK behind Barcola hat-trick and Araujo milestone",
+          "summary": "Liverpool stormed to a resounding 3-6 victory against LASK in Linz, spearheaded by a Bradley Barcola hat-trick and Ronald Araujo's maiden strike for the club.",
+          "body": [
+            "Starting in central defense with Virgil van Dijk rested on the bench, the Uruguayan international opened the scoring with a towering header from a Kostas Tsimikas corner. The night offered vindication for Barcola: under heavy scrutiny following his €125m summer move, the French winger delivered a clinical treble with assists from Lewis Koumas, Florian Wirtz, and Jeremie Frimpong, who also netted Liverpool's fourth.",
+            "Koumas added a fifth for Andoni Iraola's side. Despite the deficit, the Austrian hosts showed spirit in their historic home debut at this level, pulling goals back through Robert Ljubicic and a Florian Flecker brace, all set up by Yvan Dibango. The win keeps Liverpool perfect with two victories from two Champions League matches."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "3-6 : Araujo marque et Barcola se libère avec un 'hat trick' dans le but de Liverpool",
-          "summary": "Après le coup très dur qu'il a subi dimanche dernier en perdant 0-3 contre Manchester City à Anfield, Liverpool a vécu ce mercredi une après-midi paisible en marquant une victoire 3-6 à domicile du LASK , lors du match correspondant à la deuxième journée de Ligue des champions.",
+          "title": "Liverpool écrase le LASK avec un triplé de Barcola et un premier but pour Araujo",
+          "summary": "Liverpool s'est imposé 3-6 sur la pelouse du LASK, porté par un triplé libérateur de Bradley Barcola et le premier but sous ses nouvelles couleurs de Ronald Araujo.",
+          "body": [
+            "Titulaire en défense centrale pendant que Van Dijk soufflait sur le banc, l'Uruguayen prêté par Barcelone a débloqué la partie d'un coup de tête sur un corner de Tsimikas. La soirée a aussi permis à Barcola d'évacuer la pression : sous le feu des critiques après son transfert à 125 millions d'euros, l'ailier français s'est offert un triplé grâce à Koumas, Wirtz et Frimpong, ce dernier signant également le quatrième but des Reds.",
+            "Lewis Koumas a parachevé le festival offensif des hommes d'Andoni Iraola. Malgré l'écart, la formation autrichienne a réagi pour son baptême à domicile dans l'épreuve avec un but de Ljubicic et un doublé de Flecker, tous servis par Dibango. Liverpool enchaîne un deuxième succès en deux journées européennes."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "3-6: Araujo marca y Barcola se libera con un 'hat trick' en la goleada del Liverpool",
-          "summary": "Después del durísimo golpe que sufrió el pasado domingo al perder por 0-3 contra el Manchester City en Anfield, el Liverpool vivió este miércoles una tarde plácida al lograr una goleada por 3-6 en casa del LASK , en partido correspondiente a la segunda jornada de Champions.",
-          "needs_translation": true
+          "title": "ليفربول يكتسح لاسك بهاتريك باركولا وهدف أول لأراوخو",
+          "summary": "حقق ليفربول فوزاً عريضاً بنتيجة 3-6 على مضيفه لاسك في لينتس، بفضل ثلاثية من برادلي باركولا وأول أهداف رونالد أراوخو بقميص الفريق.",
+          "body": [
+            "وافتتح المدافع الأوروغوياني، الذي شارك أساسياً في قلب الدفاع في ظل جلوس فان دايك على مقاعد البدلاء، التسجيل بضربة رأس إثر ركلة ركنية نفذها تسيميكاس. وكانت الأمسية متنفساً مثالياً لباركولا، إذ رد الجناح الفرنسي على الانتقادات التي لاحقته عقب انتقاله الصيفي الضخم بتسجيل ثلاثة أهداف بعد تمريرات من كوماس وفيرتز وفريمبونغ، الذي تكفل بنفسه بإحراز الهدف الرابع.",
+            "واختتم الشاب لويس كوماس مهرجان أهداف كتيبة المدرب أندوني إيراولا. ورغم قسوة الهزيمة، أظهر الفريق النمساوي شجاعة كبيرة في أول ظهور تاريخي له على أرضه في المسابقة، مقلصاً الفارق عبر ليوبيتشيتش وثنائية من فليكر، وجاءت الأهداف الثلاثة كلها بصناعة ديبانغو. وبذلك رفع ليفربول رصيده إلى انتصارين من مباراتين في دوري أبطال أوروبا."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/champions-league/20261014/1004238822/liverpool.html",
@@ -1062,7 +1302,20 @@
           "url": "https://www.mundodeportivo.com/futbol/champions-league/20261014/1004238822/liverpool.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-14T20:52:11+00:00"
+        }
+      }
     },
     {
       "id": "e59f9b968ccc",
@@ -1070,24 +1323,44 @@
       "summary": "Le gardien italien de Manchester City Gianluigi Donnarumma, vainqueur de la Ligue des champions avec le PSG en 2025, a été ovationné par le kop parisien à son entrée sur la pelouse de l'Etihad Stadium ce mercredi soir, avant City-PSG (21 heures).",
       "i18n": {
         "fr": {
-          "title": "Manchester City - PSG : Gianluigi Donnarumma salué par le kop parisien",
-          "summary": "Le gardien italien de Manchester City Gianluigi Donnarumma, vainqueur de la Ligue des champions avec le PSG en 2025, a été ovationné par le kop parisien à son entrée sur la pelouse de l'Etihad Stadium ce mercredi soir, avant City-PSG (21 heures).",
-          "needs_translation": false
+          "title": "Donnarumma ovationné par les supporters parisiens à l'Etihad",
+          "summary": "Gianluigi Donnarumma a reçu un accueil chaleureux des supporters parisiens lors de son entrée sur la pelouse de Manchester City ce mercredi soir.",
+          "body": [
+            "Le gardien italien retrouvait son ancienne équipe avant le coup d'envoi programmé à 21 heures. Désormais sous le maillot de Manchester City, il avait remporté la Ligue des champions en 2025 avec le club de la capitale, un souvenir intact pour les supporters ayant fait le déplacement en Angleterre."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Manchester City - PSG : Gianluigi Donnarumma salué par le kop parisien",
-          "summary": "Le gardien italien de Manchester City Gianluigi Donnarumma, vainqueur de la Ligue des champions avec le PSG en 2025, a été ovationné par le kop parisien à son entrée sur la pelouse de l'Etihad Stadium ce mercredi soir, avant City-PSG (21 heures).",
-          "needs_translation": true
+          "title": "Donnarumma receives warm ovation from Paris fans at the Etihad",
+          "summary": "Gianluigi Donnarumma received a warm welcome from visiting Paris supporters as he walked out onto the Manchester City pitch on Wednesday night.",
+          "body": [
+            "The Italian goalkeeper faced his former side ahead of the 21:00 kick-off. Now playing for Manchester City, he notably won the Champions League with PSG in 2025, a memory clearly cherished by the travelling French fans."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Manchester City - PSG : Gianluigi Donnarumma salué par le kop parisien",
-          "summary": "Le gardien italien de Manchester City Gianluigi Donnarumma, vainqueur de la Ligue des champions avec le PSG en 2025, a été ovationné par le kop parisien à son entrée sur la pelouse de l'Etihad Stadium ce mercredi soir, avant City-PSG (21 heures).",
-          "needs_translation": true
+          "title": "Donnarumma ovacionado por los hinchas parisinos en el Etihad",
+          "summary": "Gianluigi Donnarumma recibió una calurosa acogida por parte de la afición parisina al pisar el césped del Manchester City este miércoles por la noche.",
+          "body": [
+            "El guardameta italiano se reencontró con su antiguo club antes del pitido inicial de las 21:00 horas. Ahora en las filas del Manchester City, conquistó la Liga de Campeones en 2025 con el cuadro galo, un recuerdo intacto para los aficionados desplazados a Inglaterra."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Manchester City - PSG : Gianluigi Donnarumma salué par le kop parisien",
-          "summary": "Le gardien italien de Manchester City Gianluigi Donnarumma, vainqueur de la Ligue des champions avec le PSG en 2025, a été ovationné par le kop parisien à son entrée sur la pelouse de l'Etihad Stadium ce mercredi soir, avant City-PSG (21 heures).",
-          "needs_translation": true
+          "title": "تحية حارة من جماهير باريس لدوناروما في ملعب الاتحاد",
+          "summary": "حظي جانلويجي دوناروما باستقبال حار من جماهير فريقه السابق باريس سان جيرمان لحظة نزوله إلى أرضية ملعب مانشستر سيتي مساء الأربعاء.",
+          "body": [
+            "التقى حارس المرمى الإيطالي بفريقه السابق قبل صافرة البداية المقررة في الساعة التاسعة مساءً. وتوج الحارس الحالي لمانشستر سيتي بلقب دوري أبطال أوروبا عام 2025 مع نادي العاصمة الفرنسية، وهي ذكرى بقيت حاضرة لدى مشجعي الفريق الباريسي في إنجلترا."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Manchester-city-psg-gianluigi-donnarumma-salue-par-le-kop-parisien/1735796#at_medium=RSS_feeds",
@@ -1109,7 +1382,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Manchester-city-psg-gianluigi-donnarumma-salue-par-le-kop-parisien/1735796#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss"
+      }
     },
     {
       "id": "523ccd6fa3e7",
@@ -1162,7 +1440,12 @@
           "url": "https://africatopsports.com/football-europe/ligue-des-champions-uefa-ezaalzouli-titulaire-les-compositions-de-real-betis-vs-porto/"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d4bb1713efcc",
