@@ -171,7 +171,12 @@
           "url": "https://www.sportschau.de/regional/swr/swr-tsg-hoffenheim-im-auswaertsspiel-soll-es-raus-aus-der-krise-gehen-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d57fe45c12f5",
@@ -179,27 +184,52 @@
       "summary": "On their return to Etihad Stadium Manchester City put on a show of defiance - even in the face of a PSG masterclass, writes Phil McNulty.",
       "i18n": {
         "en": {
-          "title": "Guardiola's return, Man City's defiance - and a game of glorious chaos",
-          "summary": "On their return to Etihad Stadium Manchester City put on a show of defiance - even in the face of a PSG masterclass, writes Phil McNulty.",
-          "needs_translation": false
+          "title": "PSG Spoil Guardiola Return With 4-2 Thriller at Defiant Man City",
+          "summary": "Paris Saint-Germain swept aside a defiant Manchester City 4-2 at the Etihad Stadium, spoiling Pep Guardiola's high-profile return to his former club.",
+          "body": [
+            "In City's first home fixture since being found guilty of Premier League financial breaches, the club staged an unapologetic show of unity. Guardiola sat in the directors' box directly behind chairman Khaldoon Al Mubarak and chief executive Ferran Soriano, publicly backing his former employers while fans unveiled mosaics and set off pre-match pyrotechnics.",
+            "Once the match kicked off, Luis Enrique's European champions swiftly punctured the mood with a brutal first-half display. Goals from Désiré Doué, Ousmane Dembélé and Vitinha tore City apart, establishing a commanding 3-0 cushion before the interval and leaving Enzo Maresca's side chasing shadows.",
+            "Maresca responded with three changes at the break, sparking a spirited rally capped by an Erling Haaland strike. Maghnes Akliouche punished a Gianluigi Donnarumma blunder to keep PSG clear, but City's relentless second-half pressure salvaged pride and earned a warm ovation at full-time."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Le retour de Guardiola, le défi de Man City - et un jeu de chaos glorieux",
-          "summary": "À leur retour au stade Etihad, Manchester City a fait preuve de défi - même face à une masterclass du PSG, écrit Phil McNulty.",
+          "title": "Le PSG gâche le retour de Guardiola en dominant un Man City frondeur (4-2)",
+          "summary": "Le Paris Saint-Germain s'est imposé 4-2 sur la pelouse de Manchester City à l'Etihad Stadium, gâchant le retour très attendu de Pep Guardiola chez les Citizens.",
+          "body": [
+            "Pour leur premier match à domicile depuis le verdict de culpabilité lié aux infractions financières en Premier League, les Citizens ont affiché une unité sans faille. Pep Guardiola a pris place dans la tribune présidentielle, juste derrière le président Khaldoon Al Mubarak et le directeur général Ferran Soriano, apportant un soutien sans réserve à ses anciens dirigeants pendant que les supporters déployaient tifos et fumigènes d'avant-match.",
+            "Dès le coup d'envoi, les hommes de Luis Enrique ont rapidement douché l'ambiance grâce à un premier acte impitoyable. Des réalisations signées Désiré Doué, Ousmane Dembélé et Vitinha ont démantelé la défense mancunienne, portant la marque à 3-0 avant la pause face aux troupes d'Enzo Maresca totalement dépassées.",
+            "Enzo Maresca a procédé à trois remplacements au retour des vestiaires, initiant une nette révolte concrétisée par un but d'Erling Haaland. Maghnes Akliouche a profité d'une bourde de Gianluigi Donnarumma pour maintenir l'écart parisien, mais la pression constante de City a sauvé l'honneur et arraché les applaudissements du public au coup de sifflet final."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "El regreso de Guardiola, el desafío del City y un juego de caos glorioso",
-          "summary": "A su regreso al Etihad Stadium, el Manchester City hizo una demostración de desafío, incluso frente a una clase magistral del PSG, escribe Phil McNulty.",
+          "title": "El PSG amarga el regreso de Guardiola al someter a un Man City desafiante (4-2)",
+          "summary": "El Paris Saint-Germain arrolló 4-2 al Manchester City en el Etihad Stadium y eclipsó el mediático regreso de Pep Guardiola a su antiguo feudo.",
+          "body": [
+            "En su primer duelo en casa tras ser declarado culpable de infracciones financieras en la Premier League, el club exhibió una postura de absoluta rebeldía y unidad. Pep Guardiola se ubicó en el palco presidencial justo detrás del presidente Khaldoon Al Mubarak y del director ejecutivo Ferran Soriano, respaldando a sus antiguos mandatarios mientras la grada exhibía mosaicos y pirotecnia previa al choque.",
+            "Nada más rodar el balón, el bloque de Luis Enrique destrozó el ambiente con una primera mitad aplastante. Los tantos de Désiré Doué, Ousmane Dembélé y Vitinha desarmaron por completo al Manchester City para sellar un 3-0 demoledor al descanso y dejar al once de Enzo Maresca persiguiendo sombras.",
+            "Enzo Maresca agitó el banquillo con un triple cambio en el intermedio, desatando una brava reacción coronada por una diana de Erling Haaland. Maghnes Akliouche castigó un grave error de Gianluigi Donnarumma para mantener la ventaja gala, pero el empuje local en el tramo final rescató el orgullo citizen y se llevó una sonora ovación."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "عودة جوارديولا وتحدي مانشستر سيتي - ولعبة الفوضى المجيدة",
-          "summary": "عند عودتهم إلى استاد الاتحاد، أظهر مانشستر سيتي تحديًا - حتى في مواجهة أحد أساتذة باريس سان جيرمان، يكتب فيل ماكنولتي.",
+          "title": "باريس سان جيرمان يفسد عودة غوارديولا ويسقط مانشستر سيتي بنتيجة 4-2",
+          "summary": "تغلب باريس سان جيرمان على مانشستر سيتي بنتيجة 4-2 في استاد الاتحاد، ليفسد العودة المرتقبة لمدربه السابق بيب غوارديولا وسط أجواء حماسية وتحدٍ كبير من أصحاب الأرض.",
+          "body": [
+            "في أول مباراة يخوضها الفريق على ملعبه منذ إدانته بانتهاك القواعد المالية للدوري الإنجليزي الممتاز، أظهر النادي تماسكاً وتحدياً لافتين. وجلس غوارديولا في المقصورة الرئيسية خلف رئيس مجلس الإدارة خلدون المبارك والرئيس التنفيذي فيران سوريانو معلناً دعمه الكامل لإدارته السابقة، بينما رسمت الجماهير تيفو ضخماً وأشعلت الألعاب النارية قبل البداية.",
+            "ومع انطلاق صافرة البداية، سرعان ما بدد بطل أوروبا بقيادة لويس إنريكي تلك الاحتفالات بشوط أول كاسح؛ إذ مزقت أهداف ديزيري دوي وعثمان ديمبيلي وفيتينيا صفوف مانشستر سيتي، ليحسم الضيوف تقدماً عريضاً بثلاثية نظيفة قبل الاستراحة ويتركوا تشكيلة إنزو ماريسكا عاجزة تماماً عن المجاراة.",
+            "تدخل ماريسكا بثلاثة تبديلات دفعة واحدة مطلع الشوط الثاني ليصنع انتفاضة توجها إرلينغ هالاند بهدف تقليص الفارق. واستغل مغناس أكليوش هفوة قاتلة من الحارس جانلويجي دوناروما ليحافظ للنادي الباريسي على أسبقيته، غير أن ضغط سيتي المتواصل حتى اللحظات الأخيرة أنقذ كبرياء الفريق ونال تحية جماهيره مع إطلاق صافرة النهاية."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cqp8gyv8le87o?at_medium=RSS&at_campaign=rss",
@@ -221,7 +251,20 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cqp8gyv8le87o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-14T23:38:17+00:00"
+        }
+      }
     },
     {
       "id": "39f3d0928023",
@@ -229,27 +272,48 @@
       "summary": "Nicolas Jackson continues his fine goalscoring form as Aston Villa record an impressive Champions League win.",
       "i18n": {
         "en": {
-          "title": "Jackson steps up again as Aston Villa revival continues",
-          "summary": "Nicolas Jackson continues his fine goalscoring form as Aston Villa record an impressive Champions League win.",
-          "needs_translation": false
+          "title": "Aston Villa crush Fenerbahce 6-0 in record European victory",
+          "summary": "Aston Villa secured the biggest European victory in their history by thrashing Fenerbahce 6-0 at Villa Park to collect their first home win this season.",
+          "body": [
+            "Nicolas Jackson led the charge with a first-half brace, taking his tally to five goals this term, while Johan Manzambi, Ross Barkley twice and Tammy Abraham completed the rout. The dominant display ended a frustrating run of three winless home matches and puts Unai Emery's squad in prime position to reach the Champions League knockout phase.",
+            "The result provided swift validation for Emery's revamped group following a turbulent summer that brought ten new signings, including £65m arrival Jackson to replace Ollie Watkins. Having lost just once in their last seven outings, Villa now turn their attention to Saturday's Premier League trip to Newcastle."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Jackson redouble d'efforts alors que le renouveau d'Aston Villa se poursuit",
-          "summary": "Nicolas Jackson poursuit sa belle forme de buteur alors qu'Aston Villa enregistre une impressionnante victoire en Ligue des champions.",
+          "title": "Aston Villa écrase Fenerbahce 6-0, plus large succès européen de son histoire",
+          "summary": "Aston Villa a signé la plus large victoire européenne de son histoire en surclassant Fenerbahce 6-0 à Villa Park, décrochant au passage son premier succès à domicile de la saison.",
+          "body": [
+            "Nicolas Jackson a montré la voie avec un doublé avant la pause, portant son total à cinq réalisations cette saison, avant que Johan Manzambi, Ross Barkley par deux fois et Tammy Abraham ne corsent l'addition. Cette démonstration met fin à une série de trois matches sans succès sur leur pelouse et place l'équipe d'Unai Emery dans une posture idéale pour rallier la phase à élimination directe de la Champions League.",
+            "Ce festival valide d'emblée la reconstruction menée par Emery après un été mouvementé marqué par dix recrues, dont l'arrivée de Jackson pour 65 millions de livres afin de pallier le départ d'Ollie Watkins. Avec un seul revers sur leurs sept dernières sorties, Aston Villa bascule désormais sur son déplacement à Newcastle, samedi en Premier League."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Jackson vuelve a dar un paso adelante mientras continúa el renacimiento de Aston Villa",
-          "summary": "Nicolas Jackson continúa su buena forma goleadora mientras el Aston Villa registra una impresionante victoria en la Liga de Campeones.",
+          "title": "Aston Villa arrolla 6-0 a Fenerbahce y firma su mayor goleada en Europa",
+          "summary": "Aston Villa logró la victoria europea más abultada de su historia al golear 6-0 a Fenerbahce en Villa Park, sellando además su primer triunfo del curso como local.",
+          "body": [
+            "Nicolas Jackson comandó el festival con un doblete en el primer tiempo para sumar cinco dianas esta campaña, mientras que Johan Manzambi, Ross Barkley por partida doble y Tammy Abraham redondearon la paliza. Esta exhibición entierra una racha de tres encuentros sin ganar ante su público y deja a los pupilos de Unai Emery muy bien perfilados para acceder a los cruces de la Champions League.",
+            "El festín refrenda de inmediato la apuesta de Emery tras un verano agitado con diez caras nuevas, entre ellas la llegada de Jackson por 65 millones de libras en relevo de Ollie Watkins. Con una sola derrota en sus últimos siete compromisos, Aston Villa pone ya el foco en su visita del sábado a Newcastle en la Premier League."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "يتقدم جاكسون مرة أخرى مع استمرار إحياء أستون فيلا",
-          "summary": "يواصل نيكولاس جاكسون مستواه التهديفي الرائع حيث سجل أستون فيلا فوزًا مثيرًا للإعجاب في دوري أبطال أوروبا.",
+          "title": "أستون فيلا يكتسح فنربخشة 6-0 في فوز تاريخي هو الأكبر أوروبياً",
+          "summary": "حقق أستون فيلا أكبر انتصار أوروبي في تاريخه بعدما سحق ضيفه فنربخشة بنتيجة 6-0 على ملعب فيلا بارك، مسجلاً فوزه الأول على أرضه هذا الموسم.",
+          "body": [
+            "قاد نيكولاس جاكسون مهرجان الأهداف بتسجيله ثنائية في الشوط الأول، رافعاً رصيده إلى خمسة أهداف هذا الموسم، قبل أن يكمل كل من يوهان مانزامبي وروس باركلي بهدفين وتامي أبراهام سداسية أصحاب الأرض. وأنهى هذا العرض القوي سلسلة من ثلاث مباريات متتالية دون فوز في الديار، ليضع كتيبة المدرب أوناي إيمري في موقع مثالي لبلوغ الأدوار الإقصائية من دوري أبطال أوروبا.",
+            "ومنحت هذه النتيجة العريضة دفعة سريعة لتشكيلة إيمري المجددة عقب سوق انتقالات صيفية عاصفة شهدت ضم عشرة لاعبين جدد، يتقدمهم جاكسون القادم مقابل 65 مليون جنيه إسترليني لتعويض رحيل أولي واتكينز. وبعد تلقيه خسارة وحيدة في آخر سبع مباريات، يوجه أستون فيلا أنظاره نحو مواجهة السبت ضد نيوكاسل في الدوري الإنجليزي الممتاز."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/c370pnwz0gw2o?at_medium=RSS&at_campaign=rss",
@@ -271,7 +335,20 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/c370pnwz0gw2o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-14T23:38:20+00:00"
+        }
+      }
     },
     {
       "id": "bf9ab9a09259",
@@ -279,27 +356,44 @@
       "summary": "Al entrenador del Manchester City, Enzo Maresca, le quedó una sensación agridulce tras el partido de Champions League ante el PSG en el Etihad Stadium. Tras ir perdiendo al descanso por 0-3, su equipo reaccionó y, según su opinión, mereció más que el 2-4 final.",
       "i18n": {
         "es": {
-          "title": "Maresca: \"Luis Enrique dijo al final que tuvieron bastante suerte\"",
-          "summary": "Al entrenador del Manchester City, Enzo Maresca, le quedó una sensación agridulce tras el partido de Champions League ante el PSG en el Etihad Stadium. Tras ir perdiendo al descanso por 0-3, su equipo reaccionó y, según su opinión, mereció más que el 2-4 final.",
-          "needs_translation": false
+          "title": "Maresca lamenta la caída ante el PSG y desvela la confesión de Luis Enrique",
+          "summary": "Enzo Maresca lamentó la derrota del Manchester City por 2-4 ante el PSG y aseguró que los suyos merecieron mucho más.",
+          "body": [
+            "Tras marcharse al descanso con un contundente 0-3 provocado por dos tantos casi consecutivos, el conjunto inglés ajustó la presión y generó numerosas ocasiones durante el segundo tiempo. Maresca consideró insuficiente el marcador definitivo y desveló que el propio Luis Enrique reconoció al término del choque en el Etihad Stadium que el cuadro parisino tuvo bastante suerte."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Maresca: \"Luis Enrique said at the end that they were quite lucky\"",
-          "summary": "Manchester City manager Enzo Maresca was left with a bittersweet feeling after the Champions League match against PSG at Etihad Stadium. After losing at the break by 0-3, his team reacted and, in his opinion, deserved more than the 2-4 final.",
+          "title": "Maresca laments defeat to PSG and reveals Luis Enrique confession",
+          "summary": "Enzo Maresca rued Manchester City's 2-4 defeat against PSG, insisting his side deserved a far better outcome.",
+          "body": [
+            "Facing a 0-3 deficit at half-time after conceding two quickfire goals, the English side adjusted their press and created a flurry of chances in the second half. Maresca felt the final scoreline failed to reflect the game and revealed that Luis Enrique himself conceded at full-time at the Etihad Stadium that the Parisians were quite fortunate."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Maresca : « Luis Enrique a dit à la fin qu'ils avaient eu beaucoup de chance »",
-          "summary": "L'entraîneur de Manchester City, Enzo Maresca, a ressenti une sensation aigre-douce après le match de Ligue des champions contre le PSG à l'Etihad Stadium. Après avoir perdu à la pause 0-3, son équipe a réagi et, selon lui, méritait mieux que le 2-4 final.",
+          "title": "Maresca regrette le revers contre le PSG et révèle les aveux de Luis Enrique",
+          "summary": "Battu 2-4 par le PSG, Enzo Maresca a déploré le résultat pour Manchester City, affirmant que ses joueurs méritaient nettement mieux.",
+          "body": [
+            "Menés 0-3 à la pause après deux buts coup sur coup, les Anglais ont réajusté leur pressing et multiplié les assauts lors du second acte. Maresca a jugé l'écart final trompeur et a révélé que Luis Enrique lui-même avait reconnu, au coup de sifflet final à l'Etihad Stadium, que le club parisien avait bénéficié d'une sacrée dose de réussite."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ماريسكا: \"قال لويس إنريكي في النهاية إنهم كانوا محظوظين للغاية\"",
-          "summary": "شعر إنزو ماريسكا، مدرب مانشستر سيتي، بشعور حلو ومر بعد مباراة دوري أبطال أوروبا ضد باريس سان جيرمان في استاد الاتحاد. بعد خسارته في الاستراحة بنتيجة 0-3، كان رد فعل فريقه، وفي رأيه، استحق أكثر من النهائي 2-4.",
+          "title": "ماريسكا يتحسر على السقوط أمام سان جيرمان ويكشف اعتراف لويس إنريكي",
+          "summary": "تحسر إنزو ماريسكا على هزيمة مانشستر سيتي بنتيجة 2-4 أمام باريس سان جيرمان، مؤكداً أن فريقه كان يستحق الخروج بنتيجة أفضل بكثير.",
+          "body": [
+            "وبعد التوجه إلى غرف الملابس بتأخر ثقيل استقر عند 0-3 إثر هدفين متتاليين تقريباً، عدّل الفريق الإنجليزي أسلوب الضغط وصنع فرصاً بالجملة خلال الشوط الثاني. واعتبر ماريسكا أن النتيجة النهائية غير منصفة، كاشفاً أن لويس إنريكي اعترف له شخصياً عقب نهاية اللقاء في ملعب الاتحاد بأن النادي الباريسي حالفه حظ وفير للغاية."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/champions-league/20261015/1004238891/maresca.html",
@@ -321,7 +415,20 @@
           "url": "https://www.mundodeportivo.com/futbol/champions-league/20261015/1004238891/maresca.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-14T23:38:23+00:00"
+        }
+      }
     },
     {
       "id": "b666f52aee4a",
@@ -379,27 +486,48 @@
       "summary": "À l'Etihad Stadium, Paris s'impose lors de la 2e journée de la phase de ligue malgré le doublé d'Erling Haaland. L’article Le PSG frappe trois fois en première période et bat Manchester City 4-2 est apparu en premier sur 100% Sport .",
       "i18n": {
         "fr": {
-          "title": "Le PSG frappe trois fois en première période et bat Manchester City 4-2",
-          "summary": "À l'Etihad Stadium, Paris s'impose lors de la 2e journée de la phase de ligue malgré le doublé d'Erling Haaland. L’article Le PSG frappe trois fois en première période et bat Manchester City 4-2 est apparu en premier sur 100% Sport .",
-          "needs_translation": false
+          "title": "Le PSG fait chuter Manchester City à l'Etihad Stadium (4-2)",
+          "summary": "Le Paris Saint-Germain a dominé Manchester City 4-2 en Ligue des champions grâce à une première période tonitruante conclue avec trois buts d'avance.",
+          "body": [
+            "Le festival offensif parisien s'est dessiné dès l'entame avec l'ouverture du score de Désiré Doué à la 13e minute, immédiatement passeur pour Ousmane Dembélé (15e), avant la réalisation de Vitinha. Malgré un doublé d'Erling Haaland en seconde période, Maghnes Akliouche a maintenu l'écart pour les hommes de Luis Enrique, qui ont même manqué un penalty par Ferrán Torres à la 90e minute.",
+            "Bousculé par l'équipe d'Enzo Maresca (27 tirs subis et 54 % de possession), Paris a fait preuve d'un réalisme clinique pour signer un cinquième succès consécutif toutes compétitions confondues. Cette défaite stoppe la série de cinq victoires de City, déjà battu sur ce score identique de 4-2 par le PSG en janvier dernier."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "PSG hit three times in the first period and beat Manchester City 4-2",
-          "summary": "At Etihad Stadium, Paris won on the second day of the league phase despite Erling Haaland's double. The article PSG hit three times in the first period and beat Manchester City 4-2 appeared first on 100% Sport .",
+          "title": "Paris Saint-Germain stun Manchester City 4-2 at Etihad Stadium",
+          "summary": "Paris Saint-Germain swept past Manchester City 4-2 in the Champions League on the back of a blistering first-half display that built a three-goal cushion.",
+          "body": [
+            "The visitors took control early as Désiré Doué opened the scoring in the 13th minute before setting up Ousmane Dembélé two minutes later, followed by a third from Vitinha. Despite Erling Haaland's second-half brace, Maghnes Akliouche kept Luis Enrique's side comfortably ahead, even after Ferrán Torres failed to convert a 90th-minute penalty.",
+            "Under pressure from Enzo Maresca's side, who registered 27 attempts and held 54% possession, Paris showed ruthless efficiency to seal their fifth consecutive victory in all competitions. The defeat halts City's five-game winning streak and mirrors their 4-2 loss to the French side back in January."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "El PSG batea tres veces en el primer tiempo y vence al Manchester City por 4-2",
-          "summary": "En el Etihad Stadium, París se impone en la segunda jornada de la fase de liga a pesar del doblete de Erling Haaland. El artículo El PSG bateó tres veces en la primera parte y derrotó al Manchester City por 4-2 apareció primero en 100% Sport .",
+          "title": "El Paris Saint-Germain tumba a Manchester City en el Etihad Stadium (4-2)",
+          "summary": "El Paris Saint-Germain venció 4-2 a Manchester City en la Champions League gracias a una primera mitad demoledora que culminó con tres tantos de ventaja.",
+          "body": [
+            "El vendaval parisino comenzó pronto: Désiré Doué abrió el marcador en el minuto 13 y asistió a Ousmane Dembélé en el 15', antes del tanto de Vitinha. Pese al doblete de Erling Haaland en la segunda mitad, Maghnes Akliouche mantuvo la ventaja del equipo de Luis Enrique, que incluso falló un penalti por medio de Ferrán Torres en el minuto 90.",
+            "Asediado por el conjunto de Enzo Maresca, que acumuló 27 remates y un 54 % de posesión, Paris impuso su contundencia para sellar su quinto triunfo consecutivo entre todas las competiciones. El tropiezo frena la racha de cinco victorias de City, que ya había caído con este idéntico 4-2 ante los parisinos el pasado enero."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ضرب باريس سان جيرمان ثلاث مرات في الفترة الأولى وفاز على مانشستر سيتي 4-2",
-          "summary": "في استاد الاتحاد، فاز باريس في اليوم الثاني من مرحلة الدوري على الرغم من ضعف إيرلينغ هالاند. ضرب مقال باريس سان جيرمان ثلاث مرات في الفترة الأولى وفاز على مانشستر سيتي 4-2 وظهر لأول مرة في 100 ٪ سبورت .",
+          "title": "باريس سان جيرمان يسقط مانشستر سيتي برباعية في دوري أبطال أوروبا",
+          "summary": "تغلب باريس سان جيرمان على مضيفه مانشستر سيتي بنتيجة 4-2 في دوري أبطال أوروبا، مستفيداً من شوط أول مذهل أنهاه متقدماً بثلاثية نظيفة.",
+          "body": [
+            "افتتح ديزيري دوي التسجيل في الدقيقة 13 قبل أن يمرر كرة الهدف الثاني لعثمان ديمبيلي بعد دقيقتين، ثم عزز فيتينيا التقدم بالهدف الثالث. ورغم ثنائية إرلينغ هالاند في الشوط الثاني، وسع ماغنيس أكليوش الفارق مجدداً لكتيبة لويس إنريكي، التي أهدر لها فيران توريس ركلة جزاء في الدقيقة 90.",
+            "ورغم ضغط مانشستر سيتي بقيادة إنزو ماريسكا باستحواذ بلغ 54% و27 تسديدة، حافظ باريس على فاعليته ليحقق انتصاره الخامس توالياً في مختلف البطولات. وتوقف هذه الهزيمة سلسلة انتصارات سيتي، مكررة نتيجة لقاء الفريقين الأخير حين فاز الباريسيون بنتيجة 4-2 أيضاً في يناير الماضي."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequotidiendusport.fr/le-psg-frappe-trois-fois-en-premiere-periode-et-bat-manchester-city-4-2/",
@@ -421,7 +549,20 @@
           "url": "https://www.lequotidiendusport.fr/le-psg-frappe-trois-fois-en-premiere-periode-et-bat-manchester-city-4-2/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-14T23:38:27+00:00"
+        }
+      }
     },
     {
       "id": "f9be4a61f301",
@@ -471,7 +612,12 @@
           "url": "https://www.ole.com.ar/futbol-primera/river-sarmiento-mejoresmomentos-videos-torneoclausura-fecha11_0_RYJuR1WIY1.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f945b7477ede",
@@ -529,27 +675,48 @@
       "summary": "Vinicius f ue protagonista antes del partido de la Roma por la sanción de cuatro partidos en LaLiga. Lo fue durante el partido por su mala actuación y lo fue después cuando habló ante los medios.",
       "i18n": {
         "es": {
-          "title": "Vinicius rompe su silencio: \"Al final, la tarjeta siempre es para mí\"",
-          "summary": "Vinicius f ue protagonista antes del partido de la Roma por la sanción de cuatro partidos en LaLiga. Lo fue durante el partido por su mala actuación y lo fue después cuando habló ante los medios.",
-          "needs_translation": false
+          "title": "Vinicius estalla tras conocer su sanción de cuatro partidos en LaLiga",
+          "summary": "Vinicius Júnior criticó con dureza su sanción de cuatro partidos en LaLiga y cargó contra el criterio arbitral tras el encuentro frente a la Roma.",
+          "body": [
+            "El delantero brasileño conoció el castigo nada más llegar al estadio, en un momento que consideró inoportuno ante una regla que afirma desconocer. Vinicius reclamó mayor protección arbitral para los futbolistas desequilibrantes como Lamine Yamal o Julián Álvarez, quejándose de recibir cientos de faltas mientras las amonestaciones acaban recayendo sobre él.",
+            "El atacante también reconoció su enfado al ser sustituido y admitió que atraviesa un bajón mientras compañeros como Endrick aportan frescura al equipo. Pese a los pitos de la grada, que atribuyó a sus galones de capitán y veteranía, el brasileño recordó que supera el centenar de goles de blanco y confía en volver pronto a su mejor nivel."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Vinicius breaks his silence: \"In the end, the card is always for me\"",
-          "summary": "Vinicius was the protagonist before the Roma match for the sanction of four matches in LaLiga. He was during the match for his bad performance and he was afterwards when he spoke to the media.",
+          "title": "Vinicius hits out at four-match LaLiga ban and refereeing",
+          "summary": "Vinicius Júnior criticized his four-match ban in LaLiga and hit out at refereeing criteria following Real Madrid's clash against Roma.",
+          "body": [
+            "The Brazilian forward learned of his league suspension upon arriving at the stadium, calling the timing unacceptable and claiming players were never briefed on the rule. Vinicius urged referees to protect attackers like Lamine Yamal and Julián Álvarez, pointing out that despite suffering countless fouls, he is routinely the one booked.",
+            "Substituted during the game, Vinicius admitted his frustration and recognized he is far from his best form, praising the impact of teammates like Endrick. Addressed by whistles from the stands, the winger argued his senior role and status as captain make him an easy target, while reminding fans he has already scored over a hundred goals for Real Madrid."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Vinicius rompt son silence : « Au final, la carte est toujours pour moi »",
-          "summary": "Vinicius était le protagoniste avant le match de la Roma en raison de la sanction de quatre matchs en Liga. Il l'a été pendant le match en raison de sa mauvaise performance et il l'a été plus tard lorsqu'il a parlé aux médias.",
+          "title": "Vinicius furieux après sa suspension de quatre matches en LaLiga",
+          "summary": "Vinicius Júnior a fustigé sa suspension de quatre matches en LaLiga et ciblé l'arbitrage dans la foulée de la rencontre contre l'AS Rome.",
+          "body": [
+            "L'attaquant brésilien a appris sa sanction dès son arrivée au stade, un timing jugé inopportun face à un règlement dont il affirme ignorer les contours. Vinicius a réclamé une protection accrue des arbitres envers les créateurs comme Lamine Yamal ou Julián Álvarez, dénonçant un paradoxe : il subit une multitude de fautes, mais récolte régulièrement les cartons.",
+            "Le joueur a aussi reconnu sa frustration lors de son remplacement et admis son manque de forme, saluant au passage l'impact d'Endrick. Face aux sifflets du public madrilène, qu'il lie à son statut d'ancien et de capitaine, l'ailier a rappelé ses plus de cent buts inscrits pour le Real Madrid et promis de vite retrouver son niveau."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "فينيسيوس يكسر صمته: \"في النهاية، البطاقة دائمًا لي\"",
-          "summary": "كان فينيسيوس بطل الرواية قبل مباراة روما لمعاقبة أربع مباريات في لاليغا. كان خلال المباراة بسبب أدائه السيئ وكان بعد ذلك عندما تحدث إلى وسائل الإعلام.",
+          "title": "فينيسيوس يهاجم التحكيم بعد إيقافه لأربع مباريات في الدوري الإسباني",
+          "summary": "انتقد فينيسيوس جونيور بشدة قرار إيقافه لأربع مباريات في الدوري الإسباني، وهاجم معايير التحكيم عقب نهاية مواجهة ريال مدريد ضد روما.",
+          "body": [
+            "وعلم المهاجم البرازيلي بالعقوبة فور وصوله إلى الملعب، معتبراً التوقيت غير مناسب ومؤكداً جهله بالقاعدة المستحدثة. وطالب فينيسيوس الحكام بحماية صانعي الفارق مثل لامين يامال وخوليان ألفاريز، مبدياً دهشته من تعرضه لمئات الأخطاء بينما تنتهي القرارات بإشهار البطاقات في وجهه هو شخصياً.",
+            "واعترف اللاعب أيضاً بغضبه عقب استبداله في اللقاء، مقراً بتراجع مستواه في وقت تصنع فيه أسماء كإندريك الفارق. ورغم الصافرات التي وجهتها له الجماهير، والتي فسرها بكونه أحد قادة الفريق وأقدم عناصره، شدد البرازيلي على أنه تجاوز حاجز مئة هدف مع ريال مدريد وسيستعيد بريقه سريعاً."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261015/1004238919/vinicius-rompe-silencio-final-tarjeta-siempre-mi.html",
@@ -571,7 +738,20 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261015/1004238919/vinicius-rompe-silencio-final-tarjeta-siempre-mi.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-14T23:38:32+00:00"
+        }
+      }
     },
     {
       "id": "f1f847f78923",
@@ -627,7 +807,12 @@
           "url": "https://www.kicker.de/vfb-vor-reds-real-und-bayern-situation-die-es-zu-geniessen-gilt-1261528/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "239dcd7801db",
@@ -677,7 +862,12 @@
           "url": "https://www.ole.com.ar/mls/inter-miami/lionel-messi-inter-miami-new-york-city-mls_0_xzxPwH8Ff9.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "43700168be07",
@@ -685,27 +875,44 @@
       "summary": "Pauvre dans le jeu, mené jusqu'à la 85e minute par l'AS Rome en Ligue des champions, le Real Madrid est finalement parvenu à s'imposer (4-3) dans un style que son entraîneur, José Mourinho, ne reniera jamais.",
       "i18n": {
         "fr": {
-          "title": "Naufragés puis renversants, le Real typiquement mourinhesque contre l'AS Rome : « Nous avons eu une révolte organisée »",
-          "summary": "Pauvre dans le jeu, mené jusqu'à la 85e minute par l'AS Rome en Ligue des champions, le Real Madrid est finalement parvenu à s'imposer (4-3) dans un style que son entraîneur, José Mourinho, ne reniera jamais.",
-          "needs_translation": false
+          "title": "Ligue des champions : Le Real Madrid renverse l'AS Rome (4-3)",
+          "summary": "Mené jusqu'à la 85e minute, le Real Madrid a renversé l'AS Rome (4-3) au bout du suspense en Ligue des champions.",
+          "body": [
+            "En grande difficulté et pauvres dans le jeu, les Madrilènes semblaient promis à la défaite avant de tout faire basculer dans les derniers instants. Fidèle au caractère inculqué par José Mourinho, le Real a arraché la victoire au courage, une issue qualifiée de « révolte organisée » par le technicien portugais."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Shipwrecked and then stunning, the typically Murinhesque Real against AS Rome: \"We had an organized revolt\"",
-          "summary": "Poor in the game, led until the 85th minute by AS Rome in the Champions League, Real Madrid finally managed to win (4-3) in a style that their coach, José Mourinho, will never deny.",
+          "title": "Champions League: Real Madrid stage late comeback against AS Roma (4-3)",
+          "summary": "Trailing with five minutes left, Real Madrid pulled off a dramatic late turnaround to beat AS Roma 4-3 in the Champions League.",
+          "body": [
+            "Struggling for inspiration and outplayed for long periods, the Spanish giants appeared destined for defeat before flipping the script from the 85th minute. Embodying José Mourinho's trademark grit, Real Madrid fought back to snatch victory, an escape the Portuguese manager dubbed an \"organized revolt.\""
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Náufragos y luego sobrecogedores, el Real típicamente murinhesco contra la AS Roma: \"Tuvimos una revuelta organizada\"",
-          "summary": "Pobre en el juego, liderado hasta el minuto 85 por la Roma en la Liga de Campeones, el Real Madrid finalmente logró imponerse (4-3) en un estilo que su entrenador, José Mourinho, nunca renegará.",
+          "title": "Champions League: El Real Madrid remonta ante la AS Roma (4-3)",
+          "summary": "A remolque hasta el minuto 85, el Real Madrid firmó una remontada agónica ante la AS Roma (4-3) en la Champions League.",
+          "body": [
+            "Sin brillo y contra las cuerdas, el conjunto blanco parecía sentenciado antes de cambiar el guion en el tramo final. Fiel al carácter competitivo de José Mourinho, el equipo tiró de casta para asegurar un triunfo heroico, calificado por el propio técnico portugués como una «revuelta organizada»."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "تحطمت السفينة ثم صدمت، ريال مورينيسك النموذجي ضد روما: \"كان لدينا ثورة منظمة\"",
-          "summary": "ضعيف في المباراة، قاد حتى الدقيقة 85 من قبل روما في دوري أبطال أوروبا، تمكن ريال مدريد أخيرا من الفوز (4-3) بأسلوب لن ينكره مدربه، خوسيه مورينيو، أبدا.",
+          "title": "دوري أبطال أوروبا: ريال مدريد يقلب الطاولة على روما (4-3)",
+          "summary": "بعدما كان متأخراً حتى الدقيقة 85، انتزع ريال مدريد فوزاً مثيراً أمام روما بنتيجة (4-3) ضمن منافسات دوري أبطال أوروبا.",
+          "body": [
+            "ورغم الأداء الباهت والمعاناة الكبيرة في صناعة اللعب، انتفض النادي الملكي في اللحظات الأخيرة ليقلب تأخره إلى انتصار ثمين. وبفضل الروح القتالية المعروفة عن فرق جوزيه مورينيو، حسم الفريق اللقاء بعزيمة لافتة، في سيناريو وصفه المدرب البرتغالي بأنه «تمرد منظَّم»."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Article/Naufrages-puis-renversants-le-real-typiquement-mourinhesque-contre-l-as-rome-nous-avons-eu-une-revolte-organisee/1735866#at_medium=RSS_feeds",
@@ -727,7 +934,20 @@
           "url": "https://www.lequipe.fr/Football/Article/Naufrages-puis-renversants-le-real-typiquement-mourinhesque-contre-l-as-rome-nous-avons-eu-une-revolte-organisee/1735866#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-14T23:38:35+00:00"
+        }
+      }
     },
     {
       "id": "38d6d4b5416b",
@@ -785,27 +1005,44 @@
       "summary": "Vinicius, le Brésilien du Real Madrid, n'était pas très heureux de son remplacement, encore une fois, mais il est venu en zone mixte, ce mercredi après la victoire des siens sur la pelouse de l'AS Rome (4-3), pour éteindre le feu.",
       "i18n": {
         "fr": {
-          "title": "Les notes d'AS Rome - Real Madrid : les naufrages de Balerdi et Vinicius",
-          "summary": "Vinicius, le Brésilien du Real Madrid, n'était pas très heureux de son remplacement, encore une fois, mais il est venu en zone mixte, ce mercredi après la victoire des siens sur la pelouse de l'AS Rome (4-3), pour éteindre le feu.",
-          "needs_translation": false
+          "title": "AS Rome - Real Madrid : Vinicius calme le jeu après sa sortie",
+          "summary": "Remplacé et visiblement frustré lors du succès du Real Madrid face à l'AS Rome (4-3), Vinicius s'est présenté en zone mixte pour apaiser la situation.",
+          "body": [
+            "L'attaquant brésilien n'a pas caché sa contrariété de devoir céder sa place une nouvelle fois en cours de match. Malgré son agacement initial, l'ailier madrilène a tenu à s'exprimer devant les journalistes afin d'éteindre tout début de polémique."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "The notes of AS Rome - Real Madrid: the shipwrecks of Balerdi and Vinicius",
-          "summary": "Vinicius, the Brazilian of Real Madrid, was not very happy about his replacement, once again, but he came to the mixed zone, this Wednesday after the victory of his own on the lawn of AS Rome (4-3), to extinguish the fire.",
+          "title": "AS Roma vs Real Madrid: Vinicius plays down substitution frustration",
+          "summary": "Substituted and visibly annoyed during Real Madrid's 4-3 victory over AS Roma, Vinicius fronted up in the mixed zone to defuse the situation.",
+          "body": [
+            "The Brazilian forward was clearly unhappy at being taken off once again during the match. Despite showing his frustration, the Madrid winger made a point of speaking to reporters afterwards to extinguish any brewing controversy."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Las notas de AS Roma - Real Madrid: los naufragios de Balerdi y Vinicius",
-          "summary": "Vinicius, el brasileño del Real Madrid, no estaba muy contento con su reemplazo, una vez más, pero llegó a la zona mixta, este miércoles después de la victoria de los suyos en el césped de la AS Roma (4-3), para apagar el fuego.",
+          "title": "AS Roma - Real Madrid: Vinicius rebaja la tensión tras ser sustituido",
+          "summary": "Sustituido y visiblemente molesto durante la victoria del Real Madrid ante la AS Roma (4-3), Vinicius dio la cara en la zona mixta para zanjar la polémica.",
+          "body": [
+            "Al atacante brasileño no le agradó tener que dejar el terreno de juego una vez más. Pese a su enfado inicial, el extremo blanco acudió ante los medios de comunicación tras el encuentro para apagar el fuego y calmar los ánimos."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ملاحظات AS Rome - Real Madrid: حطام سفينة Balerdi و Vinicius",
-          "summary": "فينيسيوس، البرازيلي لريال مدريد، لم يكن سعيدًا جدًا باستبداله، مرة أخرى، لكنه جاء إلى المنطقة المختلطة، هذا الأربعاء بعد انتصاره على حديقة روما (4-3)، لإخماد الحريق.",
+          "title": "روما ضد ريال مدريد: فينيسيوس يهدئ الأجواء بعد استبداله",
+          "summary": "بعد استبداله وبداية الغضب واضحة عليه خلال فوز ريال مدريد على روما (4-3)، حرص فينيسيوس على الظهور بالمنطقة المختلطة لتهدئة الأجواء.",
+          "body": [
+            "لم يُخفِ المهاجم البرازيلي استياءه من مغادرة الملعب مجدداً أثناء اللقاء. ورغم انزعاجه الأولي، تعمد جناح النادي الملكي التحدث للصحفيين بعد صافرة النهاية لإخماد أي جدل مبكر."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Vinicius-apres-la-victoire-du-real-madrid-sur-la-pelouse-de-l-as-rome-je-vais-recommencer-a-marquer/1735861#at_medium=RSS_feeds",
@@ -833,7 +1070,12 @@
           "url": "https://www.lequipe.fr/Football/Article/Les-notes-d-as-rome-real-madrid-les-naufrages-de-balerdi-et-vinicius/1735844#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss"
+      }
     },
     {
       "id": "95e0f6202272",
