@@ -59,7 +59,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/boca-vasco-cambios-sorpresas-once-equipo_0_mOmqIyv1Bg.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "13771461e254",
@@ -109,7 +114,12 @@
           "url": "https://www.ole.com.ar/basquet/bahia-blanca-vez-elite-liga-nacional-basquet-femenina-41-anos-despues-nuevo-capitulo_0_cge2k8XOtb.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8c086d280b51",
@@ -117,27 +127,48 @@
       "summary": "La visita del Porto a Sevilla para medirse al Real Betis en la Champions League dejó un grave episodio de violencia fuera del terreno de juego.",
       "i18n": {
         "es": {
-          "title": "Detenidos dos ultras del Porto por agredir a un vigilante en La Cartuja y romperle la mandíbula",
-          "summary": "La visita del Porto a Sevilla para medirse al Real Betis en la Champions League dejó un grave episodio de violencia fuera del terreno de juego.",
-          "needs_translation": false
+          "title": "Detenidos dos ultras del Porto por fracturar la mandíbula a un vigilante",
+          "summary": "La Policía Nacional detuvo a dos aficionados radicales del Porto tras agredir brutalmente a un vigilante de seguridad en el estadio de La Cartuja.",
+          "body": [
+            "Los incidentes ocurrieron en los tornos de acceso antes del partido de Champions League frente al Real Betis. Uno de los ultras intentó colarse y, cuando el empleado fue tras él, otro seguidor le asestó un puñetazo que lo dejó inconsciente en el suelo, donde le propinaron varias patadas que le causaron la fractura de mandíbula.",
+            "La rápida intervención policial permitió reducir y arrestar a los dos agresores antes de ponerlos a disposición judicial."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Two Porto ultras arrested for assaulting a watchman in La Cartuja and breaking his jaw",
-          "summary": "Porto's visit to Sevilla to face Real Betis in the Champions League left a serious episode of violence off the pitch.",
+          "title": "Two Porto ultras arrested after security guard's jaw fractured in Seville",
+          "summary": "Spanish police arrested two radical Porto supporters following a violent assault on a security guard at Seville's La Cartuja stadium.",
+          "body": [
+            "The clash erupted at the turnstiles ahead of the Champions League tie against Real Betis. One visiting fan forced his way past the gates, prompting a guard to give chase before a second supporter knocked the worker unconscious with a punch to the face.",
+            "While lying defenceless on the ground, the guard was kicked repeatedly and suffered a fractured jaw. Officers intervened swiftly to subdue both suspects and place them in judicial custody."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Deux ultras du Porto arrêtés pour avoir agressé un vigile à La Cartuja et lui avoir cassé la mâchoire",
-          "summary": "La visite de Porto à Séville pour affronter le Real Betis en Ligue des champions a laissé un grave épisode de violence en dehors du terrain.",
+          "title": "Deux ultras de Porto interpellés pour avoir fracturé la mâchoire d'un vigile",
+          "summary": "La police espagnole a arrêté deux supporters radicaux de Porto après la violente agression d'un agent de sécurité au stade de La Cartuja.",
+          "body": [
+            "Les faits se sont produits aux tourniquets du stade sévillan avant le match de Ligue des champions face au Real Betis. Un supporter a tenté d'entrer en force, entraînant l'intervention d'un vigile qu'un second ultra a aussitôt assommé d'un violent coup de poing.",
+            "Inconsciente au sol, la victime a ensuite reçu des coups de pied qui lui ont fracturé la mâchoire, avant que les forces de l'ordre ne neutralisent les deux agresseurs pour les présenter à la justice."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ألقي القبض على اثنين من ألتراس بورتو بتهمة الاعتداء على حارس في لا كارتوجا وكسر فكه",
-          "summary": "تركت زيارة بورتو إلى إشبيلية لمواجهة ريال بيتيس في دوري أبطال أوروبا حلقة خطيرة من العنف خارج الملعب.",
+          "title": "توقيف مشجعين من ألتراس بورتو بعد كسر فك حارس أمن في إشبيلية",
+          "summary": "ألقت الشرطة الإسبانية القبض على مشجعين متعصبين لنادي بورتو البرتغالي إثر اعتداء عنيف على حارس أمن في ملعب لا كارتوخا.",
+          "body": [
+            "وقعت الحادثة عند بوابات الدخول قبل انطلاق مباراة دوري أبطال أوروبا أمام ريال بيتيس، حيث حاول أحد المشجعين اقتحام البوابات الدوارة عنوة، وعندما لاحقه الحارس باغته مشجع آخر بلكمة قوية أفقدته الوعي فوراً.",
+            "واصل المعتدون ركل الحارس وهو ملقى بلا حراك على الأرض مما تسبب في كسر فكه، قبل أن يتدخل رجال الشرطة لشل حركة المهاجمين وإحالتهما إلى القضاء."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/betis/20261016/1004239637/detenidos-dos-ultras-porto-agredir-vigilante-cartuja-romperle-mandibula.html",
@@ -159,7 +190,20 @@
           "url": "https://www.mundodeportivo.com/futbol/betis/20261016/1004239637/detenidos-dos-ultras-porto-agredir-vigilante-cartuja-romperle-mandibula.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-16T21:51:46+00:00"
+        }
+      }
     },
     {
       "id": "ce96016ed51c",
@@ -167,27 +211,44 @@
       "summary": "Probant vainqueur ce vendredi soir (3-0) en ouverture de la 7e journée de Ligue 1, Toulouse a infligé sa première défaite à domicile au promu manceau, grâce à des buts de Jacen Russell-Rowe, Aron Dönnum et Casper Tengstedt. Le Téfécé séduit et se donne de l'air au classement.",
       "i18n": {
         "fr": {
-          "title": "Toulouse s'amuse sur la pelouse du Mans et se donne de l'air en Ligue 1",
-          "summary": "Probant vainqueur ce vendredi soir (3-0) en ouverture de la 7e journée de Ligue 1, Toulouse a infligé sa première défaite à domicile au promu manceau, grâce à des buts de Jacen Russell-Rowe, Aron Dönnum et Casper Tengstedt. Le Téfécé séduit et se donne de l'air au classement.",
-          "needs_translation": false
+          "title": "Ligue 1 : Toulouse surclasse Le Mans (3-0)",
+          "summary": "Toulouse a nettement dominé Le Mans (3-0) vendredi en ouverture de la 7e journée de Ligue 1 pour se donner de l'air au classement.",
+          "body": [
+            "En déplacement chez le promu manceau, qui concède sa première défaite à domicile de la saison, les Toulousains ont fait la différence grâce aux buts de Jacen Russell-Rowe, Aron Dönnum et Casper Tengstedt. Cette victoire nette et séduisante permet au Téfécé de respirer au tableau."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Toulouse has fun on the lawn of Le Mans and gets some fresh air in Ligue 1",
-          "summary": "Probably the winner this Friday evening (3-0) in the opening of the 7th day of Ligue 1, Toulouse inflicted its first defeat at home on the promoted player, thanks to goals from Jacen Russell-Rowe, Aron Dönnum and Casper Tengstedt. Tefécé seduces and gives itself air in the ranking.",
+          "title": "Ligue 1: Toulouse ease past Le Mans (3-0)",
+          "summary": "Toulouse secured a convincing 3-0 victory at Le Mans on Friday in the Ligue 1 round 7 opener to gain breathing room in the standings.",
+          "body": [
+            "Visiting the promoted hosts, who suffered their first home loss of the campaign, Toulouse took control through goals from Jacen Russell-Rowe, Aron Dönnum and Casper Tengstedt. An attractive performance that lifts Téfécé away from trouble."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Toulouse se divierte en el césped de Le Mans y se divierte en la Ligue 1",
-          "summary": "Probando ganar este viernes por la noche (3-0) en la apertura de la séptima jornada de la Ligue 1, Toulouse infligió su primera derrota en casa al promovido manceau, gracias a los goles de Jacen Russell-Rowe, Aron Dönnum y Casper Tengstedt. El Tefécé seduce y da aire a la clasificación.",
+          "title": "Ligue 1: Toulouse se impone con autoridad a Le Mans (3-0)",
+          "summary": "Toulouse venció con holgura a Le Mans (3-0) este viernes en la apertura de la 7.ª jornada de la Ligue 1 para tomar aire en la clasificación.",
+          "body": [
+            "En el campo del recién ascendido, que encajó su primera derrota de la temporada como local, el equipo visitante resolvió el duelo con tantos de Jacen Russell-Rowe, Aron Dönnum y Casper Tengstedt. Un triunfo convincente que da margen al Téfécé en la tabla."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "تستمتع تولوز في حديقة لومان وتحصل على بعض الهواء النقي في دوري الدرجة الأولى",
-          "summary": "ربما يكون الفائز مساء الجمعة (3-0) في افتتاح اليوم السابع من دوري الدرجة الأولى، ألحق تولوز أول هزيمة له على أرضه على اللاعب المرقى، وذلك بفضل أهداف جاسين راسل راو، آرون دونوم وكاسبر تنغستيدت. يغوي Tefécé ويعطي نفسه الهواء في الترتيب.",
+          "title": "الدوري الفرنسي: تولوز يفوز على لومان بثلاثية نظيفة",
+          "summary": "تفوق تولوز بثلاثية نظيفة (3-0) على مضيفه لومان، مساء الجمعة، في افتتاح الجولة السابعة من الدوري الفرنسي، ليمنح نفسه متنفساً ثميناً في جدول الترتيب.",
+          "body": [
+            "وعلى أرض الصاعد حديثاً، الذي تجرع خسارته الأولى هذا الموسم في ملعبه، حسم لاعبو تولوز المواجهة بأهداف جايسن راسل-رو وآرون دونوم وكاسبر تينغستيد، ليحصد الفريق فوزاً مقنعاً ومستحقاً."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Toulouse-s-amuse-sur-la-pelouse-du-mans-et-se-donne-de-l-air-en-ligue-1/1736370#at_medium=RSS_feeds",
@@ -209,7 +270,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Toulouse-s-amuse-sur-la-pelouse-du-mans-et-se-donne-de-l-air-en-ligue-1/1736370#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-16T21:51:49+00:00"
+        }
+      }
     },
     {
       "id": "9e32556a5f69",
@@ -217,27 +291,44 @@
       "summary": "En el arranque de la fecha 7 del torneo italiano, se produjo uno de los goles más inesperados del fin de semana. Mirá el video.",
       "i18n": {
         "es": {
-          "title": "Serie A: el insólito blooper de Sassuolo que Frosinone transformó en gol",
-          "summary": "En el arranque de la fecha 7 del torneo italiano, se produjo uno de los goles más inesperados del fin de semana. Mirá el video.",
-          "needs_translation": false
+          "title": "Un insólito error defensivo del Sassuolo regala el 3-1 al Frosinone",
+          "summary": "Antonio Raimondo aprovechó una grave descoordinación entre Cas Odenthal y el arquero Muric para marcar el tercer tanto del Frosinone frente al Sassuolo.",
+          "body": [
+            "El desajuste ocurrió a los 29 minutos en el estadio Benito Stirpe. Tras un saque largo del guardameta local Palmisani, Odenthal intentó ceder de cabeza hacia su portería, pero el envío quedó demasiado corto. Ante la tardía salida de Muric fuera del área, el delantero rival controló el balón suelto y definió a placer sin oposición."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Serie A: Sassuolo's unusual blooper that Frosinone transformed into a goal",
-          "summary": "At the start of date 7 of the Italian tournament, one of the most unexpected goals of the weekend occurred. Watch the video.",
+          "title": "Bizarre Sassuolo defensive blunder gifts Frosinone a 3-1 lead",
+          "summary": "Antonio Raimondo pounced on a disastrous mix-up between Cas Odenthal and goalkeeper Muric to score Frosinone's third goal against Sassuolo.",
+          "body": [
+            "The mistake unfolded in the 29th minute at the Benito Stirpe stadium. Following a long clearance from home keeper Palmisani, Odenthal attempted a headed back-pass that fell critically short. With Muric hesitant and stranded outside his box, the striker seized the loose ball and casually rolled it into an unguarded net."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Serie A : l'insolite blooper de Sassuolo que Frosinone a transformé en but",
-          "summary": "Au début de la 7e journée du tournoi italien, l'un des buts les plus inattendus du week-end a eu lieu. Regardez la vidéo.",
+          "title": "Une bourde défensive monumentale de Sassuolo offre le 3-1 à Frosinone",
+          "summary": "Antonio Raimondo a profité d'une énorme mésentente entre Cas Odenthal et son gardien Muric pour inscrire le troisième but de Frosinone face à Sassuolo.",
+          "body": [
+            "L'erreur s'est produite à la 29e minute au stade Benito Stirpe. Sur un long dégagement du portier adverse Palmisani, Odenthal a tenté une remise de la tête en retrait, mais sa passe est restée bien trop courte. Face à la sortie à contretemps de Muric hors de sa surface, l'attaquant a récupéré le cuir pour conclure tranquillement dans le but vide."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري الدرجة الأولى الإيطالي: بلوبر ساسولو غير العادي الذي حوله فروزينوني إلى هدف",
-          "summary": "في بداية التاريخ 7 من البطولة الإيطالية، حدث أحد أكثر الأهداف غير المتوقعة في عطلة نهاية الأسبوع. شاهدوا الفيديو.",
+          "title": "خطأ دفاعي فادح من ساسولو يهدي فروزينوني التقدم بنتيجة 3-1",
+          "summary": "استغل أنتونيو رايموندو ارتباكاً كارثياً بين كاس أودينثال وحارس المرمى موريتش ليسجل الهدف الثالث لفريق فروزينوني أمام ساسولو.",
+          "body": [
+            "شهد ملعب بينيتو ستيربي هذه الهفوة في الدقيقة 29؛ فإثر تمريرة طولية من حارس أصحاب الأرض بالميساني، حاول أودينثال إعادة الكرة برأسه إلى مرماه، لكنها جاءت قصيرة للغاية. ومع خروج موريتش المتأخر خارج منطقة الجزاء، انقض المهاجم على الكرة وسددها بكل أريحية في الشباك الخالية."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/italia/insolito-error-defensivo-sassuolo-gol-frosinone-seriea-italia-video_0_41NPjprSw6.html",
@@ -259,7 +350,20 @@
           "url": "https://www.ole.com.ar/futbol-internacional/italia/insolito-error-defensivo-sassuolo-gol-frosinone-seriea-italia-video_0_41NPjprSw6.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 4,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-16T21:51:54+00:00"
+        }
+      }
     },
     {
       "id": "f833af39e29b",
@@ -267,33 +371,59 @@
       "summary": "Der Auswärtsknoten bei den Bundesliga-Frauen von RB Leipzig ist geplatzt. Beim SC Freiburg siegten die Sächsinnen am Ende klar.",
       "i18n": {
         "de": {
-          "title": "Bundesliga (F): RB Leipzig feiert Überzahlsieg beim SC Freiburg",
-          "summary": "Der Auswärtsknoten bei den Bundesliga-Frauen von RB Leipzig ist geplatzt. Beim SC Freiburg siegten die Sächsinnen am Ende klar.",
-          "needs_translation": false
+          "title": "Bundesliga (F): RB Leipzig feiert ersten Auswärtssieg beim SC Freiburg",
+          "summary": "Die Fußballerinnen von RB Leipzig haben mit einem deutlichen 3:0 beim SC Freiburg ihren ersten Auswärtserfolg der laufenden Bundesliga-Saison gefeiert.",
+          "body": [
+            "Nach einer Notbremse von Freiburgs Julia Stierli agierten die Gäste bereits ab der 18. Minute in Überzahl. Alieke Tuin brach schließlich in der 68. Minute den Bann, ehe Nikée van Dijk per Doppelpack (78., 84.) den Deckel draufmachte.",
+            "Leipzig kontrollierte das Geschehen mit 30:8 Torschüssen sowie 62 Prozent Ballbesitz klar und kletterte am siebten Spieltag vorübergehend auf Rang fünf."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Bundesliga (F): RB Leipzig celebrates victory over SC Freiburg",
-          "summary": "The away knot in the Bundesliga women's team of RB Leipzig has burst. At SC Freiburg, the Saxons clearly won in the end.",
+          "title": "Frauen-Bundesliga: RB Leipzig claim first away win at SC Freiburg",
+          "summary": "RB Leipzig cruised to an emphatic 3-0 victory at SC Freiburg to seal their first away win of the Bundesliga campaign.",
+          "body": [
+            "Jonas Stephan's side held a player advantage from the 18th minute after SC Freiburg defender Julia Stierli was sent off for a professional foul. Alieke Tuin broke the deadlock in the 68th minute, before a late brace from Nikée van Dijk sealed the three points.",
+            "Leipzig dominated proceedings with 30 shots to Freiburg's 8, provisionally climbing to fifth place in the table with their third win in seven matches."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Bundesliga (F) : Le RB Leipzig célèbre sa victoire en nombre au SC Freiburg",
-          "summary": "Le nœud extérieur des femmes de Bundesliga du RB Leipzig a éclaté. Au SC Fribourg, les Saxonnes ont clairement gagné à la fin.",
+          "title": "Bundesliga (F) : Premier succès à l'extérieur du RB Leipzig au SC Freiburg",
+          "summary": "Les joueuses du RB Leipzig se sont largement imposées 3-0 sur la pelouse du SC Freiburg, signant leur première victoire en déplacement cette saison.",
+          "body": [
+            "L'expulsion directe de Julia Stierli dès la 18e minute pour une faute en dernier défenseur a vite fait basculer la rencontre. Alieke Tuin a débloqué la situation à la 68e minute, avant qu'un doublé express de Nikée van Dijk (78e, 84e) ne scelle le résultat.",
+            "Grâce à cette nette domination statistique, marquée par 30 tirs à 8, le club saxon grimpe provisoirement à la cinquième place du classement."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Bundesliga (F): El RB Leipzig celebra su victoria sobre el SC Freiburg",
-          "summary": "El nudo visitante de las mujeres de la Bundesliga del RB Leipzig ha estallado. En el SC Friburgo, las sajonas ganaron claramente al final.",
+          "title": "Bundesliga (F): Primer triunfo a domicilio del RB Leipzig ante el SC Freiburg",
+          "summary": "El RB Leipzig femenino sumó su primer triunfo como visitante de la temporada en la Bundesliga tras imponerse con autoridad por 0-3 al SC Freiburg.",
+          "body": [
+            "La expulsión con roja directa de Julia Stierli en el minuto 18 por una falta como última defensora allanó el camino a las visitantes. Alieke Tuin abrió el marcador en el 68 y Nikée van Dijk firmó un doblete en el tramo final (78, 84) para sentenciar la contienda.",
+            "Con un balance aplastante de 30 disparos a 8 y el 62 % de la posesión, el conjunto sajón sube de forma provisional a la quinta posición de la tabla."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Bundesliga (F): RB Leipzig تحتفل بالفوز على SC Freiburg",
-          "summary": "انفجرت العقدة البعيدة في فريق لايبزيغ للسيدات في الدوري الألماني. في نادي فرايبورغ، فاز السكسونيون بوضوح في النهاية.",
+          "title": "الدوري الألماني للسيدات: لايبزيغ يحقق فوزه الأول خارج أرضه على فرايبورغ",
+          "summary": "حققت سيدات آر بي لايبزيغ فوزاً عريضاً بنتيجة 3-0 على مضيفهن فرايبورغ، ليحصدن أول انتصار لهن خارج الديار هذا الموسم في الدوري الألماني.",
+          "body": [
+            "لعبت تشكيلة المدرب يوناس شتيفان بنقص عددي للمنافس منذ الدقيقة 18 عقب طرد مدافعة فرايبورغ جوليا شتيرلي لمنعها انفراداً صريحاً. وافتتحت أليكي توين التسجيل في الدقيقة 68، قبل أن تؤكد نيكي فان ديك التفوق بهدفين متتاليين.",
+            "وفرضت لاعبات لايبزيغ هيمنة واضحة طوال اللقاء بواقع 30 تسديدة مقابل 8 فقط للمضيفات، ليرتقي الفريق مؤقتاً إلى المركز الخامس في الترتيب."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.sportschau.de/regional/mdr/frauen-bundesliga-sc-freiburg-rb-leipzig-frauen,bericht-rbl-scf-100.html",
@@ -315,7 +445,20 @@
           "url": "https://www.sportschau.de/regional/mdr/frauen-bundesliga-sc-freiburg-rb-leipzig-frauen,bericht-rbl-scf-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-16T21:51:59+00:00"
+        }
+      }
     },
     {
       "id": "8da818fda4da",
@@ -323,27 +466,44 @@
       "summary": "Absent durant tout le début de saison de Ligue 1 après avoir perdu sa mère durant l'été, le Toulousain Aron Dönnum a marqué pour son grand retour comme titulaire, ce vendredi au Mans lors de la 7e journée. Il a célébré son but avec toute son équipe.",
       "i18n": {
         "fr": {
-          "title": "La célébration émouvante d'Aron Dönnum, buteur pour son retour comme titulaire avec Toulouse après une longue absence à cause d'un deuil",
-          "summary": "Absent durant tout le début de saison de Ligue 1 après avoir perdu sa mère durant l'été, le Toulousain Aron Dönnum a marqué pour son grand retour comme titulaire, ce vendredi au Mans lors de la 7e journée. Il a célébré son but avec toute son équipe.",
-          "needs_translation": false
+          "title": "Toulouse : buteur pour son retour, Aron Dönnum fêté par toute son équipe",
+          "summary": "Aron Dönnum a marqué vendredi pour sa première titularisation de la saison avec Toulouse, célébrant cette réalisation entouré de tous ses coéquipiers.",
+          "body": [
+            "Éloigné des pelouses depuis le coup d'envoi de la Ligue 1 après la disparition de sa mère durant l'été, le joueur toulousain retrouvait une place dans le onze de départ lors de la 7e journée disputée au Mans. Sitôt le ballon au fond des filets, l'ensemble du groupe s'est réuni autour de lui."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "The moving celebration of Aron Dönnum, scorer for his return as a starter with Toulouse after a long absence due to mourning",
-          "summary": "Absent throughout the beginning of the Ligue 1 season after losing his mother during the summer, the Toulousain Aron Dönnum scored for his great return as starter, this Friday at Le Mans during the 7th day. He celebrated his goal with his entire team.",
+          "title": "Toulouse: Aron Dönnum scores on return, mobbed by teammates",
+          "summary": "Aron Dönnum found the net on Friday in his first start of the season for Toulouse, celebrating the goal surrounded by all his teammates.",
+          "body": [
+            "Sidelined since the kickoff of the Ligue 1 campaign following the loss of his mother over the summer, the Toulouse attacker returned to the starting lineup for matchday 7 in Le Mans. The moment the ball crossed the line, the entire squad rushed over to embrace him."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "La emotiva celebración de Aron Dönnum, goleador en su regreso como titular con Toulouse tras una larga ausencia por duelo",
-          "summary": "Ausente durante toda la temporada de Ligue 1 después de perder a su madre durante el verano, el Toulousain Aron Dönnum marcó para su gran regreso como titular, este viernes en Le Mans en la séptima jornada. Celebró su gol con todo su equipo.",
+          "title": "Toulouse: Aron Dönnum marca en su regreso y recibe el apoyo de todo el equipo",
+          "summary": "Aron Dönnum anotó este viernes en su primera titularidad de la temporada con Toulouse, celebrando el tanto arropado por todos sus compañeros.",
+          "body": [
+            "Alejado del césped desde el inicio de la Ligue 1 tras el fallecimiento de su madre durante el verano, el jugador de Toulouse volvió al once titular en la 7ª jornada disputada en Le Mans. Nada más entrar el balón en la portería, toda la plantilla se fundió en un emotivo abrazo a su alrededor."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "الاحتفال المؤثر لآرون دونوم، هداف عودته كبداية مع تولوز بعد غياب طويل بسبب الحداد",
-          "summary": "تغيب طوال بداية موسم دوري الدرجة الأولى بعد فقدان والدته خلال الصيف، وسجل تولوسين آرون دونوم لعودته العظيمة كبداية، يوم الجمعة في لومان خلال اليوم السابع. احتفل بهدفه مع فريقه بأكمله.",
+          "title": "تولوز: آرون دونوم يسجل في لقاء العودة ويحظى باحتفال مؤثر من زملائه",
+          "summary": "سجل آرون دونوم هدفاً يوم الجمعة في أول ظهور له بالتشكيلة الأساسية هذا الموسم مع تولوز، ليحتفل بإنجازه محاطاً بجميع زملائه في الفريق.",
+          "body": [
+            "وكان اللاعب قد غاب عن الملاعب منذ انطلاق الدوري الفرنسي إثر وفاة والدته خلال الصيف، قبل أن يعود إلى التشكيلة الأساسية في الجولة السابعة التي أقيمت في لومان. وفور معانقة الكرة الشباك، ركض لاعبو الفريق بأكملهم للالتفاف حوله في مشهد تضامني لافت."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/La-celebration-emouvante-d-aron-donnum-buteur-pour-son-retour-comme-titulaire-avec-toulouse-apres-une-longue-absence-a-cause-d-un-deuil/1736367#at_medium=RSS_feeds",
@@ -365,7 +525,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/La-celebration-emouvante-d-aron-donnum-buteur-pour-son-retour-comme-titulaire-avec-toulouse-apres-une-longue-absence-a-cause-d-un-deuil/1736367#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-16T21:52:03+00:00"
+        }
+      }
     },
     {
       "id": "1437f4ae7881",
@@ -373,27 +546,48 @@
       "summary": "El alemán ex Borussia Dortmund fue la figura del triunfo de Los Angeles Galaxy ante Portland Timbers.",
       "i18n": {
         "es": {
-          "title": "El festejo viral de Marco Reus en la MLS: ¿a quién imitó?",
-          "summary": "El alemán ex Borussia Dortmund fue la figura del triunfo de Los Angeles Galaxy ante Portland Timbers.",
-          "needs_translation": false
+          "title": "Marco Reus guía el triunfo de LA Galaxy y celebra al estilo Goku",
+          "summary": "Marco Reus lideró la victoria de LA Galaxy por 2-0 frente a Portland Timbers con un gol y una asistencia decisiva.",
+          "body": [
+            "En el Dignity Health Sports Park, el volante germano abrió el marcador a los 17 minutos tras una asistencia de Robert Taylor y, en el 80, botó la falta que Justin Haak mandó a la red de cabeza para sentenciar el 2-0. Su impacto fue total para afianzar el rumbo del conjunto angelino hacia los playoffs de la MLS.",
+            "Más allá de su rendimiento deportivo, el ex de Borussia Dortmund acaparó los focos con su celebración: imitó la técnica de teletransportación de Goku, guiño que compartió en Instagram bajo el lema «Goku estaría orgulloso». La escena trajo a la memoria sus festejos en Alemania, sobre todo cuando se disfrazó de Batman con Pierre-Emerick Aubameyang como Robin ante Schalke en 2015."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Marco Reus's viral celebration in MLS: who did he imitate?",
-          "summary": "The German ex Borussia Dortmund was the figurehead of the Los Angeles Galaxy's triumph against the Portland Timbers.",
+          "title": "Marco Reus powers LA Galaxy past Timbers with a Goku celebration",
+          "summary": "Marco Reus starred with a goal and an assist to lead LA Galaxy to a 2-0 victory over Portland Timbers.",
+          "body": [
+            "At Dignity Health Sports Park, the German playmaker broke the deadlock in the 17th minute off a Robert Taylor setup, then delivered the 80th-minute free kick that Justin Haak headed home to seal the 2-0 win. His performance provided a major boost to the Los Angeles side in their push toward the MLS playoffs.",
+            "Beyond his impact on the pitch, the former Borussia Dortmund talisman stole the spotlight by channeling Goku's instant transmission technique to celebrate his strike, later posting on Instagram that \"Goku would be proud.\" The scene recalled his iconic routines in Germany, most notably dressing up as Batman alongside Pierre-Emerick Aubameyang as Robin against Schalke in 2015."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "La fête virale de Marco Reus en MLS : qui a-t-il imité ?",
-          "summary": "L'Allemand ex-Borussia Dortmund a été la figure du triomphe du Los Angeles Galaxy face aux Portland Timbers.",
+          "title": "Marco Reus porte LA Galaxy et célèbre à la manière de Goku",
+          "summary": "Marco Reus a guidé LA Galaxy vers un succès 2-0 face à Portland Timbers en signant un but et une passe décisive.",
+          "body": [
+            "Au Dignity Health Sports Park, l'Allemand a débloqué la rencontre dès la 17e minute sur un service de Robert Taylor, avant de déposer à la 80e un coup franc sur la tête de Justin Haak pour le 2-0. Un apport déterminant pour le club californien dans sa course aux play-offs de MLS.",
+            "Auteur d'un match plein, l'ancien meneur de Borussia Dortmund a aussi fait le spectacle lors de son but en reproduisant le geste de téléportation de Goku, avant de publier sur Instagram un « Goku serait fier ». Un clin d'œil qui rappelle ses célébrations en Allemagne, notamment son duo Batman et Robin formé avec Pierre-Emerick Aubameyang contre Schalke en 2015."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "احتفال ماركو ريوس الفيروسي في MLS: من قام بتقليد ؟",
-          "summary": "كان بوروسيا دورتموند الألماني السابق هو الرئيس الصوري لانتصار لوس أنجلوس جالاكسي على بورتلاند تيمبرز.",
+          "title": "ماركو رويس يقود لوس أنجلوس غالاكسي للفوز ويحتفل بطريقة غوكو",
+          "summary": "قاد ماركو رويس فريقه لوس أنجلوس غالاكسي للفوز على بورتلاند تمبرز بنتيجة 2-0، بعدما سجل هدفاً وقدم تمريرة حاسمة.",
+          "body": [
+            "على أرضية ملعب ديغنيتي هيلث سبورتس بارك، افتتح صانع الألعاب الألماني التسجيل في الدقيقة 17 إثر تمريرة من روبرت تايلور، قبل أن ينفذ ركلة حرة متقنة في الدقيقة 80 حولها جاستن هاك برأسه إلى الشباك. منحت مساهمة رويس دفعة مهمة لفريقه في سباق التأهل إلى الأدوار الإقصائية ضمن الدوري الأمريكي.",
+            "ولم يقتصر تألق نجم بوروسيا دورتموند السابق على الجانب الفني، بل خطف الأنظار باحتفاله بعد الهدف عبر تقليد حركة الانتقال الآني لشخصية غوكو، ثم نشر اللقطة عبر إنستغرام معلقاً: «غوكو سيكون فخوراً». وأعاد المشهد إلى الأذهان احتفالاته السابقة في ألمانيا، ولا سيما ظهوره بقناع باتمان إلى جانب بيير-إيميريك أوباميانغ في دور روبن أمام شالكه عام 2015."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/mls/marco-reus-lagalaxy-portlandtimbers-mls-pierre-emerick-aubameyang_0_MB0yBMPjzN.html",
@@ -415,7 +609,20 @@
           "url": "https://www.ole.com.ar/futbol-internacional/mls/marco-reus-lagalaxy-portlandtimbers-mls-pierre-emerick-aubameyang_0_MB0yBMPjzN.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-16T21:52:08+00:00"
+        }
+      }
     },
     {
       "id": "19cb24015fdf",
@@ -473,27 +680,44 @@
       "summary": "Les Étalons U17 poursuivent leur parcours dans le tournoi qualificatif de la CAN U17.",
       "i18n": {
         "fr": {
-          "title": "UFOA-B U17 : les Étalons décrochent leur ticket pour les demi-finales",
-          "summary": "Les Étalons U17 poursuivent leur parcours dans le tournoi qualificatif de la CAN U17.",
-          "needs_translation": false
+          "title": "Tournoi UFOA-B U17 : les Étalons filent en demi-finales",
+          "summary": "Les Étalons U17 ont validé leur qualification pour les demi-finales du tournoi UFOA-B, qualificatif pour la prochaine Coupe d'Afrique des nations de la catégorie.",
+          "body": [
+            "La sélection burkinabè poursuit son aventure dans cette phase régionale. En intégrant le dernier carré, les jeunes Étalons franchissent une étape décisive pour décrocher leur billet pour la phase finale de la CAN U17."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "UFOA-B U17: the Stallions win their ticket to the semi-finals",
-          "summary": "The U17 Stallions continue their journey in the U17 AFCON qualifying tournament.",
+          "title": "WAFU-B U17 Tournament: Burkina Faso seal semi-final spot",
+          "summary": "Burkina Faso's U17 team secured qualification for the semi-finals of the WAFU-B tournament, which serves as a qualifier for the upcoming U17 Africa Cup of Nations.",
+          "body": [
+            "The young Stallions keep their campaign alive in the regional tournament. Reaching the final four puts the Burkinabe side in a prime position to book their ticket for the continental finals."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "UFOA-B U17: los Sementales consiguen su boleto a las semifinales",
-          "summary": "Los Sementales U17 continúan su recorrido en el torneo clasificatorio de la CAN U17.",
+          "title": "Torneo UFOA-B sub-17: Burkina Faso se mete en semifinales",
+          "summary": "Los Étalons sub-17 sellaron su clasificación a las semifinales del torneo de la UFOA-B, clasificatorio para la próxima Copa Africana de Naciones de la categoría.",
+          "body": [
+            "El combinado juvenil burkinés continúa su andadura en la cita regional. Con este pase al cuadro de semifinales, la selección da un paso clave en busca de su billete a la fase final continental."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "UFOA - B U17: يفوز فريق ستاليونز بتذكرتهم إلى الدور نصف النهائي",
-          "summary": "يواصل فريق U17 Stallions رحلته في بطولة تصفيات كأس الأمم الأفريقية تحت 17 سنة.",
+          "title": "بطولة غرب إفريقيا دون 17 عاماً: بوركينا فاسو إلى نصف النهائي",
+          "summary": "حجز منتخب بوركينا فاسو للناشئين بطاقة التأهل إلى نصف نهائي بطولة اتحاد غرب إفريقيا، المؤهلة إلى نهائيات كأس أمم إفريقيا تحت 17 عاماً.",
+          "body": [
+            "يواصل المنتخب البوركيني مشواره بنجاح في المنافسة الإقليمية. وببلوغ المربع الذهبي، يقطع صغار الخيول خطوة حاسمة نحو اقتناص مقعد في المحفل القاري المقبل."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/football/ufoa-b-u17-les-etalons-decrochent-leur-ticket-pour-les-demi-finales/",
@@ -515,7 +739,12 @@
           "url": "https://africatopsports.com/football/ufoa-b-u17-les-etalons-decrochent-leur-ticket-pour-les-demi-finales/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "rss"
+      }
     },
     {
       "id": "7acff9e0dc78",
@@ -523,27 +752,48 @@
       "summary": "El astro brasileño le dedicó una historia en sus redes sociales al joven crack español, y dejó en claro qué opina de su actualidad.",
       "i18n": {
         "es": {
-          "title": "Neymar eligió a su candidato para el Balón de Oro y se rindió ante Lamine Yamal: \"El mejor del mundo\"",
-          "summary": "El astro brasileño le dedicó una historia en sus redes sociales al joven crack español, y dejó en claro qué opina de su actualidad.",
-          "needs_translation": false
+          "title": "Neymar elige a Lamine Yamal como su candidato al Balón de Oro",
+          "summary": "Neymar respaldó públicamente a Lamine Yamal como el mejor futbolista del mundo a solo diez días de la entrega del Balón de Oro 2026.",
+          "body": [
+            "El delantero de Santos compartió en Instagram una comparativa estadística de Sofascore entre su campaña 2017/18 con PSG y el inicio de la temporada 2026/27 de Lamine con Barcelona. El brasileño sumó su veredicto con una frase categórica: «El mejor del mundo».",
+            "La votación de los cien periodistas seleccionados por France Football ya concluyó. La gala para premiar al vencedor de la temporada 2025/26 se celebrará el lunes 26 de octubre en el London Palladium Theatre de Londres, sede inédita que marcará el 70° aniversario del trofeo."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Neymar chose his candidate for the Ballon d 'Or and surrendered to Lamine Yamal: \"The best in the world\"",
-          "summary": "The Brazilian star dedicated a story on his social networks to the young Spanish crack, and made it clear what he thinks of his current situation.",
+          "title": "Neymar backs Lamine Yamal to win the Ballon d'Or",
+          "summary": "Just ten days before the 2026 Ballon d'Or ceremony, Neymar has declared Barcelona forward Lamine Yamal the best footballer in the world.",
+          "body": [
+            "The Santos forward shared an infographic from Sofascore on Instagram comparing his 2017/18 campaign at PSG with Yamal's first ten games of 2026/27 for Barcelona. Over the graphic, the Brazilian added his clear verdict: \"The best in the world\".",
+            "Voting among the 100 journalists selected by France Football is officially closed. The gala honouring the 2025/26 season will take place on Monday, October 26 at the London Palladium Theatre in London, marking the 70th anniversary of the award."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Neymar a choisi son candidat pour le Ballon d'Or et s'est rendu devant Lamine Yamal : « Le meilleur du monde »",
-          "summary": "La star brésilienne a consacré une histoire sur ses réseaux sociaux au jeune crack espagnol, et a clairement indiqué ce qu'elle pensait de son actualité.",
+          "title": "Neymar plébiscite Lamine Yamal pour le Ballon d'Or",
+          "summary": "À dix jours de la remise du Ballon d'Or 2026, Neymar a désigné Lamine Yamal comme le meilleur joueur de la planète.",
+          "body": [
+            "L'attaquant de Santos a partagé sur Instagram une infographie statistique de Sofascore comparant son exercice 2017/18 au PSG aux débuts de saison de Yamal avec Barcelona en 2026/27. Le Brésilien a tranché en ajoutant un commentaire sans détour : « Le meilleur du monde ».",
+            "Le scrutin des cent journalistes désignés par France Football est désormais clos. La cérémonie consacrant la saison 2025/26 se tiendra le lundi 26 octobre au London Palladium Theatre à Londres, marquant le 70e anniversaire du trophée."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "اختار نيمار مرشحه للكرة الذهبية واستسلم لأمين يامال: \"الأفضل في العالم\"",
-          "summary": "خصص النجم البرازيلي قصة على شبكاته الاجتماعية للشق الإسباني الشاب، وأوضح ما يفكر فيه عن وضعه الحالي.",
+          "title": "نيمار يختار لامين يامال للتتويج بالكرة الذهبية",
+          "summary": "أعلن نيمار دعمه للاعب لامين يامال معتبراً إياه الأفضل في العالم، قبل عشرة أيام من تسليم جائزة الكرة الذهبية لعام 2026.",
+          "body": [
+            "ونشر مهاجم سانتوس عبر حسابه في إنستغرام إحصائية لمنصة سوفاسكور قارنت بين أرقامه مع باريس سان جيرمان في موسم 2017-2018 وبداية يامال مع برشلونة في موسم 2026-2027. وعلّق النجم البرازيلي قائلاً: «الأفضل في العالم».",
+            "وانتهت مهلة التصويت للصحفيين المئة المعتمدين من مجلة فرانس فوتبول. وسيقام حفل اختيار بطل موسم 2025-2026 يوم الإثنين 26 أكتوبر في مسرح لندن بالاديوم في لندن، بمناسبة الذكرى السبعين للجائزة."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/tremendo-elogio-neymar-lamine-yamal-balon-oro-mejor-jugador-mundo_0_oSydV9zSXq.html",
@@ -565,7 +815,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/tremendo-elogio-neymar-lamine-yamal-balon-oro-mejor-jugador-mundo_0_oSydV9zSXq.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full"
+      }
     },
     {
       "id": "e3b49b53db79",
@@ -615,7 +870,12 @@
           "url": "https://www.ole.com.ar/agenda-deportiva/partidos-hoy-jueves-16_0_K4mgv1TXhT.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "59c23a271f6f",
@@ -673,27 +933,44 @@
       "summary": "OL Lyonnes, qui s'en va défier le PSG ce samedi (21 heures) lors du choc au sommet de l'Arkema Première Ligue, devra faire sans Johanna Rytting Kaneryd et Caroline Weir, blessées.",
       "i18n": {
         "fr": {
-          "title": "OL Lyonnes sans Johanna Rytting Kaneryd ni Caroline Weir pour le choc d'Arkema Première Ligue contre le PSG",
-          "summary": "OL Lyonnes, qui s'en va défier le PSG ce samedi (21 heures) lors du choc au sommet de l'Arkema Première Ligue, devra faire sans Johanna Rytting Kaneryd et Caroline Weir, blessées.",
-          "needs_translation": false
+          "title": "OL : Johanna Rytting Kaneryd et Caroline Weir forfait contre le PSG",
+          "summary": "L'Olympique Lyonnais se déplacera sur le terrain du Paris Saint-Germain sans Johanna Rytting Kaneryd ni Caroline Weir, toutes deux blessées.",
+          "body": [
+            "Ce choc au sommet de l'Arkema Première Ligue est programmé ce samedi à 21 heures face aux Parisiennes. Pour cette affiche capitale du championnat, les Lyonnaises devront donc composer sans ces deux atouts majeurs au coup d'envoi."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "OL Lyonnes without Johanna Rytting Kaneryd or Caroline Weir for Arkema Premier League clash against PSG",
-          "summary": "OL Lyonnes, who will challenge PSG this Saturday (9 p.m.) during the clash at the top of the Arkema Premier League, will have to do without Johanna Rytting Kaneryd and Caroline Weir, injured.",
+          "title": "OL: Johanna Rytting Kaneryd and Caroline Weir ruled out against PSG",
+          "summary": "Olympique Lyonnais will travel to face Paris Saint-Germain without injured duo Johanna Rytting Kaneryd and Caroline Weir.",
+          "body": [
+            "This top-of-the-table Arkema Première Ligue clash kicks off this Saturday at 21:00 against the Parisiennes. For this crucial league showdown, the Lyonnaises will have to manage without both key players on enemy territory."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "OL Lyonnes sin Johanna Rytting Kaneryd ni Caroline Weir por el choque de Arkema Premier League contra el PSG",
-          "summary": "OL Lyonnes, que se enfrentará al PSG este sábado (21:00) durante el choque en la cima de la Arkema Premier League, tendrá que hacer sin Johanna Rytting Kaneryd y Caroline Weir, lesionadas.",
+          "title": "OL: Johanna Rytting Kaneryd y Caroline Weir, bajas ante el PSG",
+          "summary": "El Olympique Lyonnais visitará el feudo del Paris Saint-Germain sin Johanna Rytting Kaneryd ni Caroline Weir, ambas en la enfermería.",
+          "body": [
+            "El duelo en la cumbre de la Arkema Première Ligue está fijado para este sábado a las 21:00 frente a las Parisiennes. Para este choque clave en la lucha por el título, las Lyonnaises tendrán que reinventarse sin dos de sus piezas fundamentales."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "OL Lyonnes بدون Johanna Rytting Kaneryd أو Caroline Weir للاشتباك في Arkema Premier League ضد PSG",
-          "summary": "سيتعين على أول ليون، الذي سيتحدى باريس سان جيرمان يوم السبت (9 مساءً) خلال الاشتباك على قمة دوري أركيما الممتاز، الاستغناء عن إصابة جوانا ريتنغ كانيريد وكارولين وير.",
+          "title": "أولمبيك ليون: غياب يوهانا ريتينغ كانيريد وكارولين وير أمام باريس سان جيرمان",
+          "summary": "يحل أولمبيك ليون ضيفاً على باريس سان جيرمان محروماً من خدمات الثنائي يوهانا ريتينغ كانيريد وكارولين وير بسبب الإصابة.",
+          "body": [
+            "تنطلق قمة الدوري الفرنسي للسيدات هذا السبت عند الساعة 21:00 أمام الباريسيات. وفي هذه المواجهة الحاسمة في سباق الصدارة، ستضطر لاعبات ليون لخوض اللقاء خارج الديار دون هاتين الركيزتين الأساسيتين."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Ol-lyonnes-sans-johanna-rytting-kaneryd-ni-caroline-weir-pour-le-choc-d-arkema-premiere-ligue-contre-le-psg/1736360#at_medium=RSS_feeds",
@@ -715,7 +992,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Ol-lyonnes-sans-johanna-rytting-kaneryd-ni-caroline-weir-pour-le-choc-d-arkema-premiere-ligue-contre-le-psg/1736360#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss"
+      }
     },
     {
       "id": "020c20c94ae7",
@@ -765,7 +1047,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261016/1004239621/palau-poner-pie-pep-guardiola.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3805bfaa94c4",
@@ -821,7 +1108,12 @@
           "url": "https://www.kicker.de/besiktas-gegen-bayern-2026-euroleague-5249982/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "05f9b163a8de",
