@@ -67,27 +67,48 @@
       "summary": "A Álvaro Arbeloa no le están yendo bien las cosas en Inglaterra. Su fichaje por el Fulham no está siendo lo que se esperaba y desde hace ya un tiempo que el ex entrenador del Real Madrid está en la cuerda floja.",
       "i18n": {
         "es": {
-          "title": "The Telegraph: Hay 'rajones' de Arbeloa en el vestuario del Fulham que hacen filtraciones a la prensa",
-          "summary": "A Álvaro Arbeloa no le están yendo bien las cosas en Inglaterra. Su fichaje por el Fulham no está siendo lo que se esperaba y desde hace ya un tiempo que el ex entrenador del Real Madrid está en la cuerda floja.",
-          "needs_translation": false
+          "title": "Tensión en el Fulham: vestuario y directiva cuestionan a Arbeloa",
+          "summary": "Álvaro Arbeloa afronta una crisis severa en el Fulham, colista de la Premier League con apenas dos puntos, cuestionado tanto por la directiva como por sus jugadores.",
+          "body": [
+            "Según publica The Telegraph, varios dirigentes del club londinense consideran un error su contratación y dudan de que tenga la experiencia necesaria para competir en la élite inglesa.",
+            "El malestar también sacude al vestuario. Varios futbolistas han filtrado a la prensa sus quejas por un planteamiento táctico demasiado ofensivo que desprotege la zaga y cuesta goles en los minutos finales. Además, la plantilla califica sus entrenamientos de calidad sensiblemente inferior a los de su predecesor, Marco Silva."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "The Telegraph: There are 'slits' of Arbeloa in the Fulham dressing room leaking to the press",
-          "summary": "Alvaro Arbeloa is not doing well in England. His signing for Fulham is not what was expected and for some time now the former Real Madrid coach has been on the tightrope.",
+          "title": "Turmoil at Fulham: dressing room and board turn on Arbeloa",
+          "summary": "Fulham sit bottom of the Premier League with two points, leaving Álvaro Arbeloa under heavy fire from both the board and his own dressing room.",
+          "body": [
+            "According to The Telegraph, several club executives already view his appointment as a mistake, questioning whether the Spaniard has the experience needed for the English top flight.",
+            "The discontent extends to the squad, with players leaking grievances to the press. They criticise an overly attacking approach that leaves the defence exposed to late goals, and consider his training sessions significantly inferior in quality to those of former manager Marco Silva."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "The Telegraph : Il y a des « rajones » d'Arbeloa dans le vestiaire de Fulham qui font des fuites à la presse",
-          "summary": "Álvaro Arbeloa ne va pas bien en Angleterre. Son transfert à Fulham n'est pas ce à quoi on s'attendait et depuis un certain temps, l'ancien entraîneur du Real Madrid est sur la corde raide.",
+          "title": "Crise à Fulham : vestiaire et direction se retournent contre Arbeloa",
+          "summary": "Dernier de Premier League avec deux points, Fulham s'enfonce dans la crise et Álvaro Arbeloa se retrouve déjà contesté par ses dirigeants comme par ses joueurs.",
+          "body": [
+            "D'après The Telegraph, plusieurs dirigeants du club londonien qualifient sa nomination d'erreur et doutent de son expérience pour diriger dans l'élite anglaise.",
+            "La fracture touche aussi le vestiaire. Des joueurs font fuiter dans la presse leurs griefs contre une approche trop offensive qui fragilise la défense et coûte des points dans les dernières minutes. Le groupe juge également ses séances d'entraînement très en dessous de celles dispensées par son prédécesseur, Marco Silva."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "التلغراف: هناك \"شقوق\" لأربيلوا في غرفة خلع الملابس في فولهام تتسرب إلى الصحافة",
-          "summary": "ألفارو أربيلوا ليس على ما يرام في إنجلترا. توقيعه مع فولهام ليس ما كان متوقعا، ولبعض الوقت الآن كان مدرب ريال مدريد السابق على الحبل المشدود.",
+          "title": "أزمة في فولهام: غرفة الملابس والإدارة تنقلبان على أربيلوا",
+          "summary": "يقبع فولهام في قاع الدوري الإنجليزي بنقطتين فقط، ليجد مدربه ألفارو أربيلوا نفسه تحت وطأة انتقادات حادة من الإدارة وغرفة الملابس معاً.",
+          "body": [
+            "وكشفت صحيفة ذا تليغراف أن عدداً من مسؤولي النادي اللندني يرون أن التعاقد معه كان خطأ، ولديهم شكوك حول امتلاكه الخبرة الكافية للتدريب في النخبة الإنجليزية.",
+            "وامتد الاستياء إلى اللاعبين الذين سربوا للصحافة تذمرهم من أسلوب هجومي مفرط يضعف الدفاع ويكلف الفريق أهدافاً متأخرة. كما اعتبر عناصر الفريق أن جودة التدريبات الحالية أقل بكثير مقارنة بما كان يقدمه سلفه ماركو سيلفا."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20261016/1004239341/the-telegraph-hay-jugadores-filtran-prensa-entrenamientos-arbeloa-no-gustan.html",
@@ -109,7 +130,20 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20261016/1004239341/the-telegraph-hay-jugadores-filtran-prensa-entrenamientos-arbeloa-no-gustan.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-16T09:27:30+00:00"
+        }
+      }
     },
     {
       "id": "683160b31074",
@@ -117,27 +151,48 @@
       "summary": "Nuevo tuit de Javier Tebas, presidente de LaLiga, sobre el Real Madrid. Un mensaje nacido a raíz de una información del medio El Debate en el que habla sobre las quejas del Real Madrid sobre los horarios de LaLiga, especialmente por el del Valencia el 7 de noviembre.",
       "i18n": {
         "es": {
-          "title": "\"La dirección del Real Madrid dirige una orquesta de portaCOCES y Real Madrid TV lleva la voz cantante\"",
-          "summary": "Nuevo tuit de Javier Tebas, presidente de LaLiga, sobre el Real Madrid. Un mensaje nacido a raíz de una información del medio El Debate en el que habla sobre las quejas del Real Madrid sobre los horarios de LaLiga, especialmente por el del Valencia el 7 de noviembre.",
-          "needs_translation": false
+          "title": "Tebas acusa al Real Madrid de emplear métodos de propaganda goebbelsianos",
+          "summary": "Javier Tebas cargó contra la cúpula del Real Madrid, a la que acusó de presionar a periodistas y emplear tácticas de propaganda para victimizarse.",
+          "body": [
+            "A través de un extenso mensaje motivado por las quejas del club blanco sobre los horarios ligueros, el presidente de LaLiga comparó el relato de la entidad con las técnicas de Joseph Goebbels. Tebas señaló a Real Madrid TV y a determinados redactores afines como piezas de una maquinaria dedicada a construir un enemigo y alimentar sospechas arbitrales, al tiempo que denunció presiones actuales de altos ejecutivos de Valdebebas a medios de comunicación para forzar despidos.",
+            "Respecto al calendario, Tebas desmintió cualquier persecución institucional y aseguró que el Real Madrid lidera el número de modificaciones de fecha y hora concedidas por la patronal. Entre estas concesiones, recordó los ajustes aprobados expresamente para compatibilizar la competición con los conciertos y espectáculos que acoge el Santiago Bernabéu."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "\"The management of Real Madrid conducts an orchestra of portaCOCES and Real Madrid TV takes the lead\"",
-          "summary": "New tweet from Javier Tebas, president of LaLiga, about Real Madrid. A message born from an information from the El Debate media in which he talks about Real Madrid's complaints about LaLiga's schedules, especially that of Valencia on November 7.",
+          "title": "Tebas accuses Real Madrid of using Goebbels-style propaganda tactics",
+          "summary": "LaLiga president Javier Tebas has launched a scathing attack on Real Madrid's hierarchy, accusing the club of intimidating journalists and relying on victimhood propaganda.",
+          "body": [
+            "Responding to the club's complaints over league kickoff times, the LaLiga chief compared Real Madrid's messaging strategy to the propaganda methods of Joseph Goebbels. Tebas singled out Real Madrid TV and sympathetic journalists as cogs in a machine designed to invent enemies and fuel referee conspiracies, while alleging that senior executives from Valdebebas lean on media outlets to get reporters fired.",
+            "On the fixture list, Tebas dismissed any institutional bias, pointing out that Real Madrid have received more rescheduled dates and times from the league than any other club. Among these accommodations, he highlighted schedule changes granted specifically to fit around concerts and entertainment events at the Santiago Bernabéu."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "\"La direction du Real Madrid dirige un orchestre de portaCOCES et Real Madrid TV porte la voix chantante\"",
-          "summary": "Nouveau tweet de Javier Tebas, président de LaLiga, sur le Real Madrid. Un message né d'une information du média El Debate dans lequel il parle des plaintes du Real Madrid concernant les horaires de LaLiga, en particulier celui de Valence le 7 novembre.",
+          "title": "Tebas accuse le Real Madrid de méthodes inspirées de Goebbels",
+          "summary": "Javier Tebas s'en prend violemment aux dirigeants du Real Madrid, les accusant d'intimider des journalistes et de manier la propagande pour se poser en victimes.",
+          "body": [
+            "Dans un long message motivé par les plaintes des Merengues sur les horaires du championnat, le président de LaLiga a comparé la communication du club aux méthodes de Joseph Goebbels. Tebas a pointé du doigt Real Madrid TV et plusieurs plumes complaisantes, rouages selon lui d'un système conçu pour fabriquer un ennemi et entretenir la défiance envers les arbitres. Il a aussi dénoncé des pressions directes de hauts dirigeants de Valdebebas sur des rédactions pour pousser des journalistes vers la sortie.",
+            "Concernant le calendrier, Tebas balaye tout complot institutionnel : le Real Madrid est même le club qui a obtenu le plus d'aménagements de dates et d'horaires auprès de la ligue. Le dirigeant a notamment cité les dérogations accordées sur mesure pour permettre la tenue de concerts et de spectacles au Santiago Bernabéu."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "\"إدارة ريال مدريد تجري أوركسترا PortaCOCES وريال مدريد TV يأخذ زمام المبادرة\"",
-          "summary": "تغريدة جديدة من خافيير تيباس، رئيس لاليغا، عن ريال مدريد. رسالة نابعة من معلومة من إعلام المناظرة يتحدث فيها عن شكاوى ريال مدريد حول جداول لاليجا، خاصة تلك الخاصة بفالنسيا في 7 نوفمبر/تشرين الثاني.",
+          "title": "تيباس يتهم ريال مدريد باتباع أساليب دعاية مستوحاة من غوبلز",
+          "summary": "شن رئيس رابطة الدوري الإسباني، خافيير تيباس، هجوماً لاذعاً على إدارة ريال مدريد، متهماً إياها بممارسة ضغوط على الصحفيين وانتهاج أساليب دعائية لادعاء المظلومية.",
+          "body": [
+            "وفي منشور مطول رداً على شكاوى النادي الملكي بشأن مواعيد المباريات، شبّه رئيس الرابطة الخطاب الإعلامي لريال مدريد بأساليب جوزيف غوبلز. واعتبر تيباس أن قناة ريال مدريد وبعض الإعلاميين المقربين يمثلون أدوات في منظومة تسعى لاختلاق عدو وهمي وتغذية الشكوك حول التحكيم، كاشفاً عن ضغوط يمارسها كبار المسؤولين في فالديباس على وسائل إعلام لإقالة صحفيين.",
+            "وفيما يخص جدول المباريات، نفى تيباس وجود أي استهداف ضد النادي، مؤكداً أن ريال مدريد يتصدر قائمة الأندية التي استفادت من تعديل مواعيد مبارياتها من قِبل الرابطة. وذكّر بالتسهيلات الاستثنائية التي مُنحت للملكي ليتسنى تنظيم الحفلات الغنائية والفعاليات في ملعب سانتياغو برنابيو."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261016/1004239346/tebas-direccion-real-madrid-dirige-orquesta-portacoces-real-madrid-tv-lleva-voz-cantante.html",
@@ -159,7 +214,20 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261016/1004239346/tebas-direccion-real-madrid-dirige-orquesta-portacoces-real-madrid-tv-lleva-voz-cantante.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-16T09:27:36+00:00"
+        }
+      }
     },
     {
       "id": "7d0f8acf8ebc",
@@ -167,27 +235,48 @@
       "summary": "How Brighton's Fabian Hurzeler has gone from Germany's fifth tier to being reportedly of interest to Manchester United.",
       "i18n": {
         "en": {
-          "title": "The rapid rise of a former art dealer to Europe's hottest young manager",
-          "summary": "How Brighton's Fabian Hurzeler has gone from Germany's fifth tier to being reportedly of interest to Manchester United.",
-          "needs_translation": false
+          "title": "How Fabian Hurzeler turned boos into third place at Brighton",
+          "summary": "Eight months after Brighton supporters demanded his sacking, Fabian Hurzeler has guided the Seagulls to third in the Premier League ahead of Sunday's clash with Crystal Palace.",
+          "body": [
+            "A home defeat to Crystal Palace in February left Brighton 14th with just one victory in 12 league fixtures, sparking chants calling for Fabian Hurzeler's dismissal. The club held firm, and the German manager has answered with 11 wins across his last 18 top-flight matches, including victories over Arsenal and Aston Villa, backed by a £150m summer rebuild and a contract extension.",
+            "The 31-year-old, who once sold art to fund his coaching start at fifth-tier Pipinsried before leading St Pauli to the Bundesliga, saved his job by adapting. He relied on an experienced core to halt the slump, pivoted to an intense pressing setup, and now finds himself linked with clubs like Manchester United as European qualification beckons."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "L'ascension rapide d'un ancien marchand d'art au rang de jeune manager le plus en vue d'Europe",
-          "summary": "Comment Fabian Hurzeler de Brighton est passé du cinquième niveau de l'Allemagne à être apparemment d'intérêt pour Manchester United.",
+          "title": "Comment Fabian Hurzeler a transformé la bronca en podium à Brighton",
+          "summary": "Huit mois après avoir vu les supporters réclamer sa tête, Fabian Hurzeler hisse Brighton à la 3e place de Premier League avant d'affronter Crystal Palace ce dimanche.",
+          "body": [
+            "Un revers à domicile contre Crystal Palace en février avait relégué Brighton au 14e rang après une seule victoire en 12 matches, déclenchant des chants hostiles réclamant le départ du technicien. Les dirigeants ont maintenu leur confiance : l'entraîneur allemand a répliqué avec 11 victoires sur ses 18 dernières sorties en championnat, terrassant Arsenal et Aston Villa, le tout conforté par un mercato estival à 150 millions de livres et un nouveau contrat.",
+            "Le coach de 31 ans, qui vendait autrefois des tableaux pour financer ses débuts à Pipinsried en cinquième division avant de hisser St Pauli en Bundesliga, s'en est sorti en changeant de méthode. En s'appuyant sur ses cadres d'expérience pour stopper l'hémorragie et en imposant un pressing asphyxiant, il voit désormais son nom circuler du côté de Manchester United, pendant que Brighton vise l'Europe."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "El rápido ascenso de un ex marchante de arte al joven gerente más popular de Europa",
-          "summary": "Cómo Fabian Hurzeler de Brighton ha pasado del quinto nivel de Alemania a ser supuestamente de interés para el Manchester United.",
+          "title": "Cómo Fabian Hurzeler llevó a Brighton al podio tras rozar el despido",
+          "summary": "Ocho meses después de que la afición pidiera su despido, Fabian Hurzeler tiene a Brighton tercero en la Premier League antes de recibir este domingo a Crystal Palace.",
+          "body": [
+            "La derrota en casa frente a Crystal Palace en febrero dejó a Brighton decimocuarto con un solo triunfo en 12 jornadas, desatando cánticos que exigían la destitución del técnico. La directiva mantuvo la calma y el preparador alemán respondió con 11 victorias en sus últimos 18 partidos ligueros, batiendo a Arsenal y Aston Villa tras una inversión estival de 150 millones de libras y su renovación contractual.",
+            "El técnico de 31 años, que vendía cuadros para costear sus inicios en quinta división con Pipinsried antes de ascender a St Pauli a la Bundesliga, salvó su puesto adaptándose. Recurrió a un núcleo veterano para cortar la sangría, impuso una presión asfixiante y ahora suena para el banquillo de Manchester United mientras afianza a las Gaviotas en puestos europeos."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "الصعود السريع لتاجر أعمال فنية سابق إلى أفضل مدير فني شاب في أوروبا",
-          "summary": "كيف انتقل لاعب برايتون فابيان هورزيلر من الدرجة الخامسة في ألمانيا إلى كونه مثيرا للاهتمام لمانشستر يونايتد.",
+          "title": "كيف حوّل فابيان هورزلر صيحات الاستهجان إلى المركز الثالث مع برايتون؟",
+          "summary": "بعد ثمانية أشهر من مطالبة الجماهير بإقالته، قاد فابيان هورزلر برايتون للمركز الثالث في الدوري الإنجليزي الممتاز، وذلك قبل مواجهة كريستال بالاس يوم الأحد.",
+          "body": [
+            "تسببت الخسارة على أرضه أمام كريستال بالاس في فبراير الماضي بتراجع برايتون للمركز الرابع عشر بعد فوز يتيم في 12 مباراة، لتهتف المدرجات برحيل المدرب. لكن الإدارة تمسكت به، ليرد المدير الفني الألماني بتحقيق 11 انتصاراً في آخر 18 مواجهة بالدوري، مسقطاً أرسنال وأستون فيلا، ومدعوماً بإنفاق صيفي بلغ 150 مليون جنيه إسترليني وتمديد عقده.",
+            "وكان المدرب البالغ 31 عاماً، والذي عمل سابقاً ببيع اللوحات الفنية لتمويل بداياته التدريبية في الدرجة الخامسة مع بيبينسريد قبل قيادة سانت باولي إلى البوندسليغا، قد غيّر أسلوبه لإنقاذ منصبه. واعتمد هورزلر على عناصر الخبرة لتجاوز الأزمة مطبقاً ضغطاً شرساً، ليرتبط اسمه بمانشستر يونايتد بينما ينافس برايتون على بطاقة أوروبية."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cmde8l07569no?at_medium=RSS&at_campaign=rss",
@@ -209,7 +298,20 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cmde8l07569no?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-16T09:27:43+00:00"
+        }
+      }
     },
     {
       "id": "8de1fd280f69",
@@ -217,27 +319,48 @@
       "summary": "Felix Tainta , representante de Nico Williams , ha puesto luz a la negociación que derivó en la renovación de su jugador por el Athletic hasta 2035 en el podcast ‘Los Fulanos’ .",
       "i18n": {
         "es": {
-          "title": "El agente de Nico Williams reconoce que no se fue al Barça porque no tenía seguridad de ser inscrito",
-          "summary": "Felix Tainta , representante de Nico Williams , ha puesto luz a la negociación que derivó en la renovación de su jugador por el Athletic hasta 2035 en el podcast ‘Los Fulanos’ .",
-          "needs_translation": false
+          "title": "Nico Williams descartó al Barça por la falta de garantías para su inscripción",
+          "summary": "Félix Tainta reveló que Nico Williams frenó su traspaso al Barcelona porque la entidad catalana no le garantizaba la inscripción en LaLiga.",
+          "body": [
+            "El representante del extremo explicó en el pódcast 'Los Fulanos' que no podían arriesgarse a que el futbolista se quedara sin competir por los problemas de control financiero del club azulgrana. Tainta avisó al Barça de que no asumirían esa incertidumbre, cerrando la puerta pese al interés de otros clubes como Arsenal, Bayern Múnich, Liverpool y PSG.",
+            "Aunque Nico Williams contemplaba una salida consciente de que el Athletic difícilmente ganará la Champions League o LaLiga, la falta de certezas decantó la balanza. El jugador priorizó tener minutos y renovó con el conjunto bilbaíno hasta 2035."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Nico Williams' agent acknowledges that he did not go to Barça because he was not sure if he was registered",
-          "summary": "Felix Tainta , representative of Nico Williams , has shed light on the negotiation that led to the renewal of his player by Athletic until 2035 on the ‘Los Fulanos’ podcast.",
+          "title": "Nico Williams turned down Barça over lack of registration guarantees",
+          "summary": "Félix Tainta revealed Nico Williams halted his move to Barcelona because the Catalan club could not guarantee his registration in LaLiga.",
+          "body": [
+            "Speaking on the 'Los Fulanos' podcast, the winger's agent explained they refused to risk the player sitting in the stands due to Barcelona's financial troubles. Tainta warned the club he would not take that gamble, despite parallel interest from Arsenal, Bayern Munich, Liverpool, and PSG.",
+            "While the Spanish forward considered leaving, aware of the Athletic ceiling regarding Champions League and league title bids, the absence of guarantees settled the matter. Nico Williams chose regular playing time and extended with the Bilbao side until 2035."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "L'agent de Nico Williams reconnaît qu'il n'est pas allé au Barça parce qu'il n'était pas sûr d'être inscrit",
-          "summary": "Felix Tainta , représentant de Nico Williams , a mis en lumière la négociation qui a abouti au renouvellement de son joueur par l'Athletic jusqu'en 2035 dans le podcast ‘Los Fulanos’ .",
+          "title": "Nico Williams a recalé le Barça faute de garanties sur son inscription",
+          "summary": "Félix Tainta a révélé que Nico Williams a renoncé au Barça car le club catalan ne pouvait pas lui garantir son inscription auprès de LaLiga.",
+          "body": [
+            "L'agent de l'ailier espagnol a expliqué dans le podcast 'Los Fulanos' qu'il refusait de voir son joueur privé de terrain en raison des contraintes financières catalanes. Tainta a signifié aux dirigeants barcelonais qu'il ne prendrait aucun risque, alors qu'Arsenal, le Bayern Munich, Liverpool et le PSG s'étaient également positionnés.",
+            "Même si l'international songeait à partir pour viser la Ligue des champions ou un titre majeur, le flou administratif a bloqué l'opération. Nico Williams a préféré sécuriser son temps de jeu et s'engager avec l'Athletic jusqu'en 2035."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "يقر وكيل نيكو ويليامز بأنه لم يذهب إلى برشلونة لأنه لم يكن متأكدًا مما إذا كان مسجلاً",
-          "summary": "ألقى فيليكس تاينتا، ممثل نيكو ويليامز ، الضوء على المفاوضات التي أدت إلى تجديد لاعبه من قبل أتلتيك حتى عام 2035 على بودكاست \"Los Fulanos\" .",
+          "title": "نيكو ويليامز رفض برشلونة بسبب غياب ضمانات القيد",
+          "summary": "كشف فيليكس تاينتا أن نيكو ويليامز أوقف انتقاله إلى برشلونة بعدما عجز النادي الكتالوني عن ضمان تسجيله رسمياً في الدوري الإسباني.",
+          "body": [
+            "وأوضح وكيل أعمال الجناح الدولي عبر بودكاست 'لوس فولانوس' أنه رفض المجازفة بجلوس اللاعب في المدرجات بسبب القيود المالية لبرشلونة. تاينتا أبلغ إدارة النادي الكتالوني برفضه التام لهذه الشكوك، رغم تلقيه عروضاً أخرى من أرسنال، بايرن ميونخ، ليفربول وباريس سان جيرمان.",
+            "ورغم رغبة نيكو ويليامز في المغادرة للمنافسة على دوري أبطال أوروبا والدوري، فإن انعدام الضمانات حسم موقفه. وفضل اللاعب الحفاظ على استمرارية مشاركته في المباريات عبر تجديد عقده مع أتلتيك بلباو حتى عام 2035."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20261016/1004239340/agente-nico-williams-reconoce-no-barca-no-tenia-seguridad-inscrito.html",
@@ -265,7 +388,20 @@
           "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/agente-nico-williams-reconoce-no-barca-no-tenia-seguridad-inscrito.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-16T09:27:49+00:00"
+        }
+      }
     },
     {
       "id": "d9e9bef7a608",
@@ -321,7 +457,12 @@
           "url": "https://www.sportschau.de/regional/rb/rb-partylaune-statt-katerstimmung-darum-laeuft-es-bei-werder-so-gut-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ea2c28623404",
@@ -329,27 +470,48 @@
       "summary": "En su primera temporada en el banquillo del Ajax, Michel González trata de acercar al equipo neerlandés (5º) al liderato de la Eredivisie. El ex entrenador del Girona tiene adeptos y detractores, pero si hay algo que se le está criticando es su falta de conocimiento del idioma.",
       "i18n": {
         "es": {
-          "title": "De Boer se mofa de Michel en el Ajax: \"Da vergüenza ajena\"",
-          "summary": "En su primera temporada en el banquillo del Ajax, Michel González trata de acercar al equipo neerlandés (5º) al liderato de la Eredivisie. El ex entrenador del Girona tiene adeptos y detractores, pero si hay algo que se le está criticando es su falta de conocimiento del idioma.",
-          "needs_translation": false
+          "title": "De Boer y Alderweireld cargan contra Míchel por su inglés en el Ajax",
+          "summary": "Frank de Boer y Toby Alderweireld cuestionaron con dureza la capacidad de comunicación de Míchel González tras la derrota europea del Ajax.",
+          "body": [
+            "La caída por 2-1 frente al Hajduk Split en la Conference League dejó al técnico madrileño en el punto de mira de ambos exfutbolistas en Ziggo Sport. Alderweireld dudó sobre cómo transmite sus ideas al vestuario sin dominar el idioma y descartó que un intérprete sirva para contagiar pasión, mientras De Boer fue aún más tajante al calificar de bochornoso el esfuerzo del técnico al explicarse ante los micrófonos.",
+            "El exdefensa neerlandés también criticó las decisiones tácticas del técnico con el equipo de Ámsterdam, quinto en la Eredivisie. Censuró en particular la entrada en la segunda parte del joven lateral Jofre Torrents, de 19 años, en un ambiente tan hostil, señalando que habría preferido recurrir a Owen Wijndal."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "De Boer mocks Michel at Ajax: \"It's embarrassing for others\"",
-          "summary": "In his first season on the Ajax bench, Michel González tries to bring the Dutch team (5th) closer to the lead of the Eredivisie. The former Girona coach has supporters and detractors, but if there is something that is being criticized it is his lack of knowledge of the language.",
+          "title": "De Boer and Alderweireld slam Míchel over English skills at Ajax",
+          "summary": "Frank de Boer and Toby Alderweireld harshly questioned Míchel González's ability to communicate following Ajax's European defeat.",
+          "body": [
+            "The 2-1 defeat against Hajduk Split in the Conference League put the Madrid-born coach squarely in the crosshairs of both former players on Ziggo Sport. Alderweireld questioned how he can get his ideas across to the dressing room without speaking the language, dismissing the idea that an interpreter could convey any passion. De Boer went further, branding the coach's post-match interview outright embarrassing to watch.",
+            "The former Dutch defender also criticized the manager's tactical decisions at the Amsterdam outfit, currently fifth in the Eredivisie. In particular, he questioned bringing on 19-year-old left-back Jofre Torrents for his debut in such a hostile environment, insisting he would have turned to Owen Wijndal instead."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "De Boer se moque de Michel à l'Ajax : « Honte à autrui »",
-          "summary": "Pour sa première saison sur le banc de l'Ajax, Michel Gonzalez tente de rapprocher l'équipe néerlandaise (5e) de la tête de l'Eredivisie. L'ancien entraîneur de Girona a des adeptes et des détracteurs, mais s'il y a quelque chose qui lui est reproché, c'est son manque de connaissance de la langue.",
+          "title": "Ajax : De Boer et Alderweireld taclent Míchel pour son niveau d'anglais",
+          "summary": "Frank de Boer et Toby Alderweireld ont vivement critiqué la communication de Míchel González après le revers européen de l'Ajax.",
+          "body": [
+            "Le revers 2-1 concédé face au Hajduk Split en Conference League a valu au technicien madrilène un feu nourri sur le plateau de Ziggo Sport. Alderweireld s'est interrogé sur sa façon de transmettre ses consignes au vestiaire sans maîtriser la langue, balayant l'idée qu'un interprète puisse transmettre la moindre passion. De Boer s'est montré encore plus cinglant en qualifiant de gênante la prestation du coach face aux micros.",
+            "L'ancien défenseur néerlandais a également pointé du doigt les choix du coach du club d'Amsterdam, cinquième d'Eredivisie. Il a notamment fustigé l'entrée en jeu en seconde période du jeune latéral de 19 ans Jofre Torrents dans une atmosphère aussi hostile, estimant qu'il aurait fallu faire appel à Owen Wijndal."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دي بوير يسخر من ميشيل في أياكس: \"إنه محرج للآخرين\"",
-          "summary": "في موسمه الأول على مقاعد البدلاء أياكس، يحاول ميشيل غونزاليز جعل الفريق الهولندي (الخامس) أقرب إلى صدارة الدوري الهولندي. لدى مدرب جيرونا السابق مؤيدين ومنتقدين، ولكن إذا كان هناك شيء يتم انتقاده فهو افتقاره إلى معرفة اللغة.",
+          "title": "دي بور وألدرفيريلد يهاجمان ميتشيل بسبب لغته الإنجليزية في أياكس",
+          "summary": "شن فرانك دي بور وتوبي ألدرفيريلد هجوماً لاذعاً على قدرات ميتشيل غونزاليس في التواصل، وذلك عقب هزيمة أياكس أوروبياً.",
+          "body": [
+            "وضعت الخسارة بنتيجة 2-1 أمام هايدوك سبليت في دوري المؤتمر الأوروبي المدرب الإسباني في مرمى انتقادات الثنائي عبر شبكة زيغو سبورت. وأبدى ألدرفيريلد شكوكه حول كيفية إيصال أفكاره للاعبي غرفة الملابس دون إتقان اللغة، مستبعداً جدوى الاستعانة بمترجم لنقل الحماس، بينما كان دي بور أكثر حدة حين اعتبر الاستماع لمحاولات المدرب في التعبير عن نفسه أمراً مخجلاً.",
+            "كما انتقد المدافع الهولندي السابق خيارات مدرب نادي أمستردام، الذي يحتل المركز الخامس في الدوري الهولندي. وخص بالذكر إقحام الظهير الشاب جوفري تورينتس صاحب الـ19 عاماً بديلاً في الشوط الثاني وسط أجواء مشحونة، مؤكداً أنه كان يفضل الاعتماد على أوين فايندال."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/internacional/20261016/1004239336/boer-mofa-michel-ajax-da-vergueenza-ajena.html",
@@ -371,7 +533,20 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20261016/1004239336/boer-mofa-michel-ajax-da-vergueenza-ajena.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-16T09:27:53+00:00"
+        }
+      }
     },
     {
       "id": "c02f5a8b233f",
@@ -379,33 +554,59 @@
       "summary": "Anzeige, Hausdurchsuchung und Polizeigroßeinsatz: Kurz vor dem kleinen Stadtderby zwischen dem FC Bayern und dem TSV 1860 München kocht der jahrzehntealte Münchner Fußball-Zoff wieder hoch – auch wegen eines Banners bei der Meisterfeier.",
       "i18n": {
         "de": {
-          "title": "Anzeige vom FC Bayern: Wegen Schmähplakat - Anzeige und Hausdurchsuchung für 1860-Fan",
-          "summary": "Anzeige, Hausdurchsuchung und Polizeigroßeinsatz: Kurz vor dem kleinen Stadtderby zwischen dem FC Bayern und dem TSV 1860 München kocht der jahrzehntealte Münchner Fußball-Zoff wieder hoch – auch wegen eines Banners bei der Meisterfeier.",
-          "needs_translation": false
+          "title": "Schmähplakat: FC Bayern zeigt 1860-Fan an – Hausdurchsuchung vor Derby",
+          "summary": "Der FC Bayern hat nach einer Banner-Aktion bei der Meisterfeier Strafanzeige wegen Beleidigung erstattet und damit eine Hausdurchsuchung bei einem Anhänger von 1860 München ausgelöst.",
+          "body": [
+            "Obwohl Präsident Herbert Hainer zunächst auf juristische Schritte verzichten wollte, schaltete die FC-Bayern-AG nun doch die Staatsanwaltschaft ein. Auslöser war ein provokantes Transparent mit verfremdetem Bayern-Wappen, das Münchner Löwen-Fans im Mai auf dem Marienplatz präsentiert hatten. Der Rekordmeister begründet die Anzeige mit dem Schutz seines Vereinslogos. Bei einem verdächtigten 1860-Fan fand laut Medienberichten bereits eine Razzia zur Beweissicherung statt.",
+            "Dessen Anwalt Sebastian Wagner hält das Vorgehen für ungerechtfertigt: Die kollektive Beleidigung eines gesamten Vereins sei strafrechtlich nicht verfolgbar, da kein eingrenzbarer Personenkreis attackiert worden sei. Die juristische Fehde heizt das ohnehin brisante Münchner Stadtderby in der Regionalliga Bayern weiter an. Für das Duell der FCB-Amateure gegen die Löwen im Grünwalder Stadion plant die Münchner Polizei einen Großeinsatz mit Hundertschaften, Reiterstaffel und Unterstützungskommando."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Advertisement from FC Bayern: For defamation poster - Advertisement and house search for 1860 fan",
-          "summary": "Advertisement, house search and large-scale police deployment: Shortly before the small city derby between FC Bayern and TSV 1860 Munich, the decades-old Munich football scandal is boiling up again – also because of a banner at the championship celebration.",
+          "title": "FC Bayern report 1860 fan over banner, sparking police raid before derby",
+          "summary": "FC Bayern have filed a criminal complaint for defamation over an offensive banner displayed during their title celebrations, triggering a police raid on the home of an 1860 Munich supporter.",
+          "body": [
+            "Although club president Herbert Hainer initially opted against legal action, the FC Bayern board ultimately referred the matter to public prosecutors. The dispute stems from a provocative banner featuring a distorted Bayern crest, unveiled on the Marienplatz by 1860 fans back in May. The German heavyweights justified their complaint as necessary protection of their official club emblem. Local reports confirm that police have already searched the suspect's residence to secure evidence.",
+            "Defense attorney Sebastian Wagner contends the search was completely unwarranted, arguing that collective insults aimed at a club as a whole cannot be prosecuted under criminal law when no individual is specifically targeted. The legal clash further inflames an already fierce Munich derby in the Regionalliga Bayern. For the reserve team's clash against the Lions at the Grünwalder Stadion, Munich police have mobilized hundreds of officers, mounted units, and tactical response teams."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Annonce du FC Bayern : Affiche de diffamation - Annonce et perquisition pour les fans de 1860",
-          "summary": "Annonce, perquisition et grande intervention de la police : juste avant le petit derby de la ville entre le FC Bayern et le TSV 1860 Munich, le match de football de Munich, vieux de plusieurs décennies, refait surface – également à cause d'une bannière lors de la fête des champions.",
+          "title": "Banderole : plainte du FC Bayern et perquisition chez un fan de 1860",
+          "summary": "Après le déploiement d'une banderole hostile lors des festivités du titre, le FC Bayern a porté plainte pour injure, provoquant la perquisition du domicile d'un supporter du 1860 Munich.",
+          "body": [
+            "Alors que le président Herbert Hainer semblait d'abord écarter toute poursuite judiciaire, la direction du FC Bayern a finalement saisi le parquet. À l'origine de l'affaire : une banderole provocatrice détournant les armoiries bavaroises, brandie en mai sur la Marienplatz par des supporters des Lions. Le club le plus titré d'Allemagne justifie sa démarche par la protection de son blason. Selon plusieurs médias locaux, une perquisition a déjà été menée chez un suspect afin de saisir des preuves.",
+            "Son avocat Sebastian Wagner dénonce une procédure abusive : l'injure visant un club dans son ensemble ne saurait être pénalement caractérisée en l'absence de personnes nommément visées. Ce différend judiciaire jette de l'huile sur le feu avant un derby munichois sous très haute tension en Regionalliga Bayern. Pour ce choc entre la réserve bavaroise et les Lions au Grünwalder Stadion, la police de Munich déploie un dispositif massif comprenant plusieurs compagnies, la brigade équestre et les unités d'intervention rapide."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Anuncio del FC Bayern: debido a un cartel difamatorio: anuncio y registro de la casa para los fanáticos de 1860",
-          "summary": "Anuncio, registro de casas y gran despliegue policial: justo antes del pequeño derbi de la ciudad entre el FC Bayern y el TSV 1860 Munich, el Zoff de fútbol de Múnich de décadas de antigüedad vuelve a hervir, también debido a una pancarta en la celebración del campeonato.",
+          "title": "Pancarta: el Bayern denuncia a un fan del 1860 y la policía registra su casa",
+          "summary": "El FC Bayern ha denunciado por injurias a un hincha del 1860 Munich tras exhibir una pancarta en la fiesta del título, provocando el registro policial de su casa.",
+          "body": [
+            "Pese a que el presidente Herbert Hainer descartó inicialmente acudir a los tribunales, la cúpula del FC Bayern decidió finalmente llevar el caso ante la fiscalía. La polémica responde a una pancarta provocadora con el escudo del club manipulado, exhibida en mayo en la Marienplatz por hinchas de los Leones. El gigante bávaro argumenta la necesidad de proteger sus marcas y símbolos oficiales. Según informan medios locales, la policía ya intervino el domicilio del sospechoso para asegurar pruebas.",
+            "Su abogado defensor Sebastian Wagner tilda la actuación de injustificada: sostiene que el delito de injurias a una entidad colectiva no tiene encaje penal al no haber personas individualizadas. Este conflicto judicial eleva todavía más la tensión de cara al derbi munichés de la Regionalliga Bayern. Para el duelo entre el filial bávaro y los Leones en el Grünwalder Stadion, la policía de Múnich ha preparado un fuerte dispositivo con cientos de agentes antidisturbios, policía montada y unidades especiales."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "إعلان من نادي بايرن: للملصق التشهيري - إعلان والبحث عن منزل لعشاق 1860",
-          "summary": "الإعلان والبحث عن المنازل ونشر الشرطة على نطاق واسع: قبل وقت قصير من ديربي المدينة الصغيرة بين بايرن ميونيخ و تي إس في 1860 ميونيخ، بدأت فضيحة كرة القدم في ميونيخ منذ عقود تتصاعد مرة أخرى – أيضًا بسبب لافتة في احتفال البطولة.",
+          "title": "لافتة مسيئة: بايرن ميونخ يقاضي مشجعاً لميونخ 1860 ومداهمة منزله قبل الديربي",
+          "summary": "تقدم بايرن ميونخ بشكوى جنائية بتهمة الإهانة إثر رفع لافتة مسيئة خلال احتفالات اللقب، ما أسفر عن مداهمة الشرطة لمنزل مشجع لنادي ميونخ 1860.",
+          "body": [
+            "رغم تحفظ الرئيس هربرت هاينر في البداية على اتخاذ إجراءات قانونية، قررت إدارة بايرن ميونخ اللجوء رسمياً إلى النيابة العامة. وتعود الواقعة إلى شهر مايو الماضي، حين رفعت جماهير نادي ميونخ 1860 لافتة مستفزة تتضمن شعاراً مشوهاً للعملاق البافاري في ساحة مارينبلاتز. وبرر النادي تحركه بضرورة حماية علامته وهوية شعاره، وأكدت تقارير إعلامية تنفيذ الشرطة مداهمة لمنزل المشتبه به للتحفظ على الأدلة.",
+            "من جهته، اعتبر المحامي سيباستيان فاغنر الإجراء غير مبرر قانونياً، موضحاً أن الإساءة الموجهة لكيان رياضي كامل لا تشكل جريمة جنائية يعاقب عليها القانون طالما لم تستهدف أشخاصاً محددين. ويأتي هذا التصعيد القضائي ليزيد من حدة التوتر قبل ديربي المدينة المرتقب في دوري الدرجة الرابعة البافاري، حيث تستعد شرطة ميونخ لتأمين مواجهة رديف البايرن ضد ميونخ 1860 على ملعب غرونفالدر بحشد مئات العناصر من قوات مكافحة الشغب وفرق الخيالة ووحدات التدخل السريع."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.sportschau.de/regional/br/br-wegen-schmaehplakat-anzeige-und-hausdurchsuchung-fuer-1860-fan-102.html",
@@ -427,7 +628,20 @@
           "url": "https://www.sportschau.de/regional/br/br-wegen-schmaehplakat-anzeige-und-hausdurchsuchung-fuer-1860-fan-102.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-16T09:27:58+00:00"
+        }
+      }
     },
     {
       "id": "38db0effd381",
@@ -435,27 +649,48 @@
       "summary": "El Valencia recibe al Athletic con la imperiosa necesidad de ganar o al menos sumar un punto para evitar un fiasco histórico. El equipo che acumula tres derrotas consecutivas en su estadio de Mestalla, Betis (0-1), Barça (0-5) y Real Sociedad (2-3).",
       "i18n": {
         "es": {
-          "title": "El Valencia trata de evitar ante el Athletic un fiasco histórico",
-          "summary": "El Valencia recibe al Athletic con la imperiosa necesidad de ganar o al menos sumar un punto para evitar un fiasco histórico. El equipo che acumula tres derrotas consecutivas en su estadio de Mestalla, Betis (0-1), Barça (0-5) y Real Sociedad (2-3).",
-          "needs_translation": false
+          "title": "El Valencia se asoma a un récord negativo histórico en Mestalla",
+          "summary": "El Valencia necesita puntuar ante el Athletic Club para evitar encadenar cuatro derrotas consecutivas como local en una misma temporada liguera.",
+          "body": [
+            "Los tropiezos ante Betis (0-1), Barcelona (0-5) y Real Sociedad (2-3) han dejado al conjunto che al borde de un registro inédito. El club solo enlazó cuatro derrotas seguidas en casa a caballo entre los cursos 2015-16 y 2016-17, pero jamás lo ha hecho dentro de una misma Liga, donde apenas suma un punto de doce posibles.",
+            "El duelo marca el estreno de Javier Aguirre en Mestalla. El técnico mexicano llega condicionado por las bajas confirmadas de Sadiq Umar y Dimitri Foulquier, además de mantener en duda a Luis Rioja y al central José Copete tras siete meses de inactividad por una lesión de rodilla."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Valencia try to avoid a historic fiasco against Athletic",
-          "summary": "Valencia welcome Athletic with the urgent need to win or at least score a point to avoid a historic fiasco. The team that accumulates three consecutive defeats in its Mestalla stadium, Betis (0-1), Barça (0-5) and Real Sociedad (2-3).",
+          "title": "Valencia on the brink of an unwanted historic low at Mestalla",
+          "summary": "Valencia need at least a point against Athletic Club to avoid suffering four consecutive home league defeats in a single season for the first time.",
+          "body": [
+            "Defeats against Betis (0-1), Barcelona (0-5), and Real Sociedad (2-3) have left the hosts on the verge of an unprecedented slump. The club previously endured four straight home losses only across two seasons (2015-16 and 2016-17), never within a single campaign, having taken just one point from twelve on home soil.",
+            "The match also marks Javier Aguirre's home debut in the Mestalla dugout. The Mexican manager must cope without the injured Sadiq Umar and Dimitri Foulquier, while Luis Rioja and centre-back José Copete, sidelined for seven months with a knee injury, remain doubts."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Valence tente d'éviter un fiasco historique face à l'Athletic",
-          "summary": "Valence reçoit l'Athletic avec l'impérieuse nécessité de gagner ou au moins d'ajouter un point pour éviter un fiasco historique. L'équipe qui accumule trois défaites consécutives dans son stade de Mestalla, Betis (0-1), Barça (0-5) et Real Sociedad (2-3).",
+          "title": "Valencia au bord d'une série noire inédite à Mestalla",
+          "summary": "Valencia doit impérativement prendre des points face à l'Athletic Club pour éviter d'aligner quatre revers consécutifs à domicile sur une même saison.",
+          "body": [
+            "Les revers face au Betis (0-1), à Barcelona (0-5) et à la Real Sociedad (2-3) placent l'équipe face à une première infamante. Le club n'a concédé quatre défaites de rang chez lui qu'à cheval sur les exercices 2015-16 et 2016-17, jamais au cours d'un même championnat, où il ne compte qu'un point pris sur douze possibles.",
+            "Cette affiche marque aussi les débuts de Javier Aguirre sur le banc de Mestalla. L'entraîneur mexicain est privé de Sadiq Umar et de Dimitri Foulquier, tous deux forfaits, tandis que Luis Rioja et José Copete, éloigné des terrains depuis sept mois pour une blessure au genou, restent incertains."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "تحاول فالنسيا تجنب الفشل التاريخي ضد الرياضيين",
-          "summary": "ترحب فالنسيا بأتلتيك مع الحاجة الملحة للفوز أو على الأقل تسجيل نقطة لتجنب الفشل التاريخي. الفريق الذي حقق ثلاث هزائم متتالية في ملعب ميستالا، بيتيس (0-1)، برشلونة (0-5) وريال سوسيداد (2-3).",
+          "title": "فالنسيا يواجه شبح سابقة سلبية تاريخية في ميستايا",
+          "summary": "يحتاج فالنسيا إلى الخروج بنتيجة إيجابية أمام أتلتيك كلوب لتفادي تجرع أربع هزائم متتالية على أرضه في موسم واحد بالدوري.",
+          "body": [
+            "وضعت الهزائم أمام بيتيس (0-1) وبرشلونة (0-5) وريال سوسيداد (2-3) أصحاب الأرض على حافة رقم سلبي غير مسبوق. لم يسبق للنادي أن خسر أربع مباريات متتالية بملعبه خلال موسم واحد، إذ حدث ذلك فقط بالتداخل بين موسمي 2015-2016 و2016-2017، علماً بأنه حصد نقطة يتيمة من أصل 12 ممكنة في ملعبه هذا الموسم.",
+            "تشهد المواجهة أيضاً الظهور الأول للمدرب المكسيكي خافيير أغيري في ميستايا. يدخل أغيري اللقاء محروماً من خدمات المصابين صادق عمر وديميتري فولكييه، إلى جانب الشكوك التي تحوم حول جاهزية لويس ريوخا والمدافع خوسيه كوبيتي الغائب منذ سبعة أشهر بسبب إصابة في الركبة."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20261016/1004239218/valencia-trata-evitar-athletic-fiasco-historico.html",
@@ -477,7 +712,12 @@
           "url": "https://www.mundodeportivo.com/futbol/athletic-bilbao/20261016/1004239218/valencia-trata-evitar-athletic-fiasco-historico.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full"
+      }
     },
     {
       "id": "370fbe97d0f0",
@@ -524,7 +764,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261016/1004239274/yan-diomande-presenta-candidatura-elecciones-mourinho.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "99c0cd43e155",
@@ -571,7 +816,12 @@
           "url": "https://www.fourfourtwo.com/team/why-does-everyone-hate-arsenal"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c2edbd4056cd",
@@ -618,7 +868,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/ckj0lrjzjgqno?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d75b1f4e90e6",
@@ -626,29 +881,54 @@
       "summary": "Nach übereinstimmenden spanischen Medienberichten rückt mit Bernd Reichart wohl bald ein deutscher Manager in die Führungsebene von Real Madrid auf.",
       "i18n": {
         "de": {
-          "title": "Steigt ein Deutscher in die Chefetage von Real Madrid auf?",
-          "summary": "Nach übereinstimmenden spanischen Medienberichten rückt mit Bernd Reichart wohl bald ein deutscher Manager in die Führungsebene von Real Madrid auf.",
-          "needs_translation": false
+          "title": "Real Madrid: Bernd Reichart vor Wechsel in Führungsetage",
+          "summary": "Der deutsche Manager Bernd Reichart steht übereinstimmenden spanischen Medienberichten zufolge vor einem Wechsel in die Führungsetage von Real Madrid.",
+          "body": [
+            "Wann die Personalie offiziell verkündet wird und welche konkreten Aufgabenbereiche Reichart bei den Königlichen übernehmen soll, geht aus den ersten Meldungen noch nicht hervor."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Steigt ein Deutscher in die Chefetage von Real Madrid auf?",
-          "summary": "Nach übereinstimmenden spanischen Medienberichten rückt mit Bernd Reichart wohl bald ein deutscher Manager in die Führungsebene von Real Madrid auf.",
-          "needs_translation": true
+          "title": "Real Madrid: German executive Bernd Reichart set to join top management",
+          "summary": "German executive Bernd Reichart is poised to join the leadership hierarchy at Real Madrid, according to reports in the Spanish media.",
+          "body": [
+            "The reports indicate an imminent move to the club's upper management, though the exact timeline and scope of Reichart's responsibilities remain unconfirmed."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Steigt ein Deutscher in die Chefetage von Real Madrid auf?",
-          "summary": "Nach übereinstimmenden spanischen Medienberichten rückt mit Bernd Reichart wohl bald ein deutscher Manager in die Führungsebene von Real Madrid auf.",
-          "needs_translation": true
+          "title": "Real Madrid : l'Allemand Bernd Reichart en route vers l'état-major",
+          "summary": "Selon des informations concordantes de la presse espagnole, le dirigeant allemand Bernd Reichart s'apprête à intégrer la direction du Real Madrid.",
+          "body": [
+            "L'officialisation de son arrivée et le périmètre exact de ses futures responsabilités chez les Merengues restent à préciser."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Steigt ein Deutscher in die Chefetage von Real Madrid auf?",
-          "summary": "Nach übereinstimmenden spanischen Medienberichten rückt mit Bernd Reichart wohl bald ein deutscher Manager in die Führungsebene von Real Madrid auf.",
-          "needs_translation": true
+          "title": "Bernd Reichart, a un paso de la cúpula de Real Madrid",
+          "summary": "El ejecutivo alemán Bernd Reichart está muy cerca de incorporarse a la cúpula directiva de Real Madrid, según coinciden varios medios españoles.",
+          "body": [
+            "Por el momento, los primeros reportes no detallan la fecha en la que se oficializará su nombramiento ni las funciones específicas que asumirá en el club blanco."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Steigt ein Deutscher in die Chefetage von Real Madrid auf?",
-          "summary": "Nach übereinstimmenden spanischen Medienberichten rückt mit Bernd Reichart wohl bald ein deutscher Manager in die Führungsebene von Real Madrid auf.",
-          "needs_translation": true
+          "title": "الألماني بيرند رايخارت يقترب من الانضمام لإدارة ريال مدريد",
+          "summary": "أفادت تقارير صحفية إسبانية متطابقة بأن الإداري الألماني بيرند رايخارت بات على وشك الانضمام إلى الإدارة العليا لنادي ريال مدريد.",
+          "body": [
+            "ولم تكشف التقارير حتى الآن عن موعد الإعلان الرسمي لهذا التعيين أو المهام المحددة التي سيتولاها رايخارت داخل النادي الملكي."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.kicker.de/steigt-ein-deutscher-in-die-chefetage-von-real-madrid-auf-1261882/artikel#omrss",
@@ -670,7 +950,12 @@
           "url": "https://www.kicker.de/steigt-ein-deutscher-in-die-chefetage-von-real-madrid-auf-1261882/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss"
+      }
     },
     {
       "id": "70ebfb4e9a7b",
@@ -678,24 +963,44 @@
       "summary": "Lanterne rouge avec 2 points, Le Havre n'a toujours pas connu le succès en Ligue 1 en six rencontres. Si le club normand n'a pas été récompensé durant les rencontres, il paye aussi certaines limites offensives.",
       "i18n": {
         "fr": {
-          "title": "Beaucoup de tirs mais peu d'occasions et de réalisme : les raisons statistiques de la dernière place sévère du Havre après six journées de Ligue 1",
-          "summary": "Lanterne rouge avec 2 points, Le Havre n'a toujours pas connu le succès en Ligue 1 en six rencontres. Si le club normand n'a pas été récompensé durant les rencontres, il paye aussi certaines limites offensives.",
-          "needs_translation": false
+          "title": "Ligue 1 : Le Havre lanterne rouge malgré son volume de frappes",
+          "summary": "Dernier de Ligue 1 avec seulement deux points après six journées, Le Havre cherche toujours sa première victoire de la saison.",
+          "body": [
+            "La situation comptable du club normand s'explique en partie par ses carences dans le dernier geste. Si les Havrais tentent souvent leur chance au but, ce volume de tirs ne se traduit pas en occasions franches. Pénalisés par ce manque d'efficacité offensive, ils restent scotchés en bas de tableau malgré des prestations parfois mal payées."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Beaucoup de tirs mais peu d'occasions et de réalisme : les raisons statistiques de la dernière place sévère du Havre après six journées de Ligue 1",
-          "summary": "Lanterne rouge avec 2 points, Le Havre n'a toujours pas connu le succès en Ligue 1 en six rencontres. Si le club normand n'a pas été récompensé durant les rencontres, il paye aussi certaines limites offensives.",
-          "needs_translation": true
+          "title": "Ligue 1: Le Havre bottom of the pile despite high shot volume",
+          "summary": "Sitting bottom of Ligue 1 with just two points after six matches, Le Havre are still chasing their first win of the campaign.",
+          "body": [
+            "The Normandy side's struggles stem largely from a lack of bite in the final third. While the Havrais pull the trigger often, that volume of shots rarely produces clear-cut openings. Hurt by their blunt attack, they stay rooted to the foot of the table despite some displays that arguably deserved more."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Beaucoup de tirs mais peu d'occasions et de réalisme : les raisons statistiques de la dernière place sévère du Havre après six journées de Ligue 1",
-          "summary": "Lanterne rouge avec 2 points, Le Havre n'a toujours pas connu le succès en Ligue 1 en six rencontres. Si le club normand n'a pas été récompensé durant les rencontres, il paye aussi certaines limites offensives.",
-          "needs_translation": true
+          "title": "Ligue 1: Le Havre es colista a pesar de su volumen de remates",
+          "summary": "Colista de la Ligue 1 con apenas dos puntos tras seis jornadas, Le Havre sigue a la caza de su primera victoria del curso.",
+          "body": [
+            "La delicada situación del club normando se explica sobre todo por su falta de colmillo en el área rival. Aunque los Havrais prueban fortuna con frecuencia, esa insistencia no suele traducirse en peligro real. Lastrados por su escasa puntería, siguen anclados en el fondo de la clasificación a pesar de haber firmado partidos que merecieron mejor premio."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Beaucoup de tirs mais peu d'occasions et de réalisme : les raisons statistiques de la dernière place sévère du Havre après six journées de Ligue 1",
-          "summary": "Lanterne rouge avec 2 points, Le Havre n'a toujours pas connu le succès en Ligue 1 en six rencontres. Si le club normand n'a pas été récompensé durant les rencontres, il paye aussi certaines limites offensives.",
-          "needs_translation": true
+          "title": "الدوري الفرنسي: لوهافر يتذيل الترتيب رغم غزارة تسديداته",
+          "summary": "يقبع لوهافر في قاع ترتيب الدوري الفرنسي برصيد نقطتين فقط بعد ست جولات، وما زال يبحث عن انتصاره الأول هذا الموسم.",
+          "body": [
+            "تعود الوضعية الصعبة لنادي لوهافر أساساً إلى غياب الحسم في اللمسة الأخيرة؛ فرغم كثرة محاولات لاعبيه على المرمى، لا يتحول هذا السيل من التسديدات إلى فرص محققة. وبسبب هذا العقم الهجومي، يظل الفريق عالقاً في ذيل الترتيب على الرغم من تقديمه عروضاً كانت تستحق حصاداً أفضل."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Article/Beaucoup-de-tirs-mais-peu-d-occasions-et-de-realisme-les-raisons-statistiques-de-la-derniere-place-severe-du-havre-apres-six-journees-de-ligue-1/1736000#at_medium=RSS_feeds",
@@ -717,7 +1022,12 @@
           "url": "https://www.lequipe.fr/Football/Article/Beaucoup-de-tirs-mais-peu-d-occasions-et-de-realisme-les-raisons-statistiques-de-la-derniere-place-severe-du-havre-apres-six-journees-de-ligue-1/1736000#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss"
+      }
     },
     {
       "id": "ae64879c3869",
@@ -725,24 +1035,48 @@
       "summary": "La Juve s’est imposée 2-1 sur le terrain du Celta Vigo jeudi soir, lors de […] Source",
       "i18n": {
         "fr": {
-          "title": "« Il ferait mieux d’être en colère contre lui-même » : coups de poing sur le banc et départ direct aux vestiaires à Vigo, Spalletti ne protège pas son ailier portugais",
-          "summary": "La Juve s’est imposée 2-1 sur le terrain du Celta Vigo jeudi soir, lors de […] Source",
-          "needs_translation": false
+          "title": "Francisco Conceição recadré par Luciano Spalletti après son coup de sang",
+          "summary": "Remplacé lors du succès de la Juventus à Vigo, Francisco Conceição a laissé éclater sa colère sur le banc avant d'être tancé par Luciano Spalletti.",
+          "body": [
+            "Sorti à la 64e minute lors de la victoire turinoise face au Celta Vigo (2-1), l'ailier portugais a frappé le banc de touche du poing avant de filer brièvement aux vestiaires. S'il a ensuite minimisé son geste en affirmant être seulement parti changer de maillot, son entraîneur n'a pas laissé passer l'attitude de son joueur en conférence de presse.",
+            "Luciano Spalletti a publiquement invité Conceição à être plutôt en colère contre lui-même, promettant une explication de texte si un tel comportement se confirmait. Le technicien italien a également pointé du doigt la fébrilité actuelle de Teun Koopmeiners avant la réception de la Lazio dimanche."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "« Il ferait mieux d’être en colère contre lui-même » : coups de poing sur le banc et départ direct aux vestiaires à Vigo, Spalletti ne protège pas son ailier portugais",
-          "summary": "La Juve s’est imposée 2-1 sur le terrain du Celta Vigo jeudi soir, lors de […] Source",
-          "needs_translation": true
+          "title": "Francisco Conceição reprimanded by Spalletti after touchline tantrum",
+          "summary": "Substituted during Juventus's victory in Vigo, Francisco Conceição vented his frustration on the bench before receiving a public dressing-down from Luciano Spalletti.",
+          "body": [
+            "Taken off in the 64th minute of the Bianconeri's 2-1 win over Celta Vigo, the Portuguese winger punched the dugout in frustration before heading straight down the tunnel. While he later downplayed the incident, claiming he only went to change his shirt, his manager was in no mood to overlook the reaction in his post-match press conference.",
+            "Luciano Spalletti publicly urged Conceição to channel his anger toward his own performance, warning that words would be exchanged if such behaviour was repeated. The Italian tactician also highlighted Teun Koopmeiners's current dip in confidence ahead of Sunday's clash with Lazio."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "« Il ferait mieux d’être en colère contre lui-même » : coups de poing sur le banc et départ direct aux vestiaires à Vigo, Spalletti ne protège pas son ailier portugais",
-          "summary": "La Juve s’est imposée 2-1 sur le terrain du Celta Vigo jeudi soir, lors de […] Source",
-          "needs_translation": true
+          "title": "Spalletti reprende a Francisco Conceição tras su enfado en el banquillo",
+          "summary": "Sustituido en la victoria de la Juventus en Vigo, Francisco Conceição estalló de rabia en el banquillo y terminó recibiendo un toque de atención de Luciano Spalletti.",
+          "body": [
+            "Relevado en el minuto 64 del triunfo turinés frente al Celta Vigo (2-1), el extremo portugués golpeó con rabia el banquillo antes de marcharse al vestuario. Aunque luego intentó restar importancia al gesto asegurando que solo fue a cambiarse de camiseta, su técnico no pasó por alto el desplante en sala de prensa.",
+            "Luciano Spalletti aconsejó públicamente a Conceição enfadarse consigo mismo y avisó de que pediría explicaciones si se repetía esa actitud. El preparador italiano también subrayó las dudas que transmite Teun Koopmeiners antes de recibir el domingo a la Lazio."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "« Il ferait mieux d’être en colère contre lui-même » : coups de poing sur le banc et départ direct aux vestiaires à Vigo, Spalletti ne protège pas son ailier portugais",
-          "summary": "La Juve s’est imposée 2-1 sur le terrain du Celta Vigo jeudi soir, lors de […] Source",
-          "needs_translation": true
+          "title": "لوتشيانو سباليتي يوبخ فرانشيسكو كونسيساو بعد نوبة غضب في فيغو",
+          "summary": "صب فرانشيسكو كونسيساو جام غضبه على مقاعد البدلاء إثر استبداله في فوز يوفنتوس في فيغو، ليتلقى تحذيراً علنياً شديد اللهجة من مدربه لوتشيانو سباليتي.",
+          "body": [
+            "غادر الجناح البرتغالي الملعب في الدقيقة 64 خلال فوز السيدة العجوز على سيلتا فيغو بنتيجة 2-1، فوجه لكمة قوية إلى مقاعد البدلاء قبل التوجه سريعاً إلى غرف الملابس. ورغم محاولته التقليل من شأن الواقعة بادعاء ذهابه لتبديل قميصه فقط، لم يدع المدير الفني الأمر يمر مرور الكرام في المؤتمر الصحفي.",
+            "ودعا لوتشيانو سباليتي لاعبه إلى توجيه غضبه نحو مستواه الشخصي بدلاً من الاعتراض، متوعداً بحساب حاسم إذا تكرر هذا السلوك. كما انتقد المدرب الإيطالي تراجع ثقة الهولندي تيون كوبماينرز قبل مواجهة لاتسيو المرتقبة يوم الأحد."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.calciomio.fr/il-ferait-mieux-detre-en-colere-contre-lui-meme-coups-de-poing-sur-le-banc-et-depart-direct-aux-vestiaires-a-vigo-spalletti-ne-protege-pas-son-ailier-portugais-id-181071",
@@ -764,7 +1098,12 @@
           "url": "https://www.calciomio.fr/il-ferait-mieux-detre-en-colere-contre-lui-meme-coups-de-poing-sur-le-banc-et-depart-direct-aux-vestiaires-a-vigo-spalletti-ne-protege-pas-son-ailier-portugais-id-181071"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full"
+      }
     },
     {
       "id": "c28eec929e4c",
