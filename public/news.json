@@ -65,7 +65,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga2/wolfsburg-gewinnt-rasantes-chancen-festival-gegen-heidenheim,spielbericht-vfl-wolfsburg-heidenheim-102.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ef8f7dc4c134",
@@ -177,7 +182,12 @@
           "url": "https://www.sportschau.de/live-und-ergebnisse/konferenz/ac3903/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b4792e76ea96",
@@ -283,7 +293,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/inglaterra/brentford-liverpool-premierleague-envivo-alexismacallister-minuto-minuto-resumen_0_dgGtmb2ZPp.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "148d8467ab50",
@@ -291,33 +306,59 @@
       "summary": "Die Eintracht verschafft sich mit dem Arbeitssieg gegen Köln ein bisschen Ruhe, ist in dieser Form aber kein Kandidat fürs erste Tabellendrittel. Während Robin Koch überzeugt, schmort Can Uzun auf der Bank.",
       "i18n": {
         "de": {
-          "title": "Hütters Eintracht-Entscheidungen gehen auf",
-          "summary": "Die Eintracht verschafft sich mit dem Arbeitssieg gegen Köln ein bisschen Ruhe, ist in dieser Form aber kein Kandidat fürs erste Tabellendrittel. Während Robin Koch überzeugt, schmort Can Uzun auf der Bank.",
-          "needs_translation": false
+          "title": "Eintracht Frankfurt: Hütters Personalentscheidungen greifen gegen Köln",
+          "summary": "Mit einem hart erkämpften 1:0-Heimsieg gegen den 1. FC Köln hat Eintracht Frankfurt die sportliche Krise vorerst abgewendet.",
+          "body": [
+            "Der knappe Erfolg durch das fünfte Saisontor von Younes Ebnoutalib belohnte vor allem den Kurs von Trainer Adi Hütter. Der Coach stellte wieder auf eine Viererkette um und fand defensive Stabilität, auch wenn die Hessen spielerisch viel schuldig blieben. Gegen harmlose Kölner reichten Einsatzwillen und mannschaftliche Geschlossenheit, um nach unruhigen Wochen durchzuatmen.",
+            "Im Mittelpunkt stand Kapitän Robin Koch, der nach seiner umstrittenen Auswechslung in Leipzig stark unter Druck gestanden hatte. Der Innenverteidiger gewann 92 Prozent seiner Zweikämpfe und verdiente sich ein Sonderlob von Hütter. Einen Denkzettel erhielt dagegen Can Uzun: Der Spielmacher saß 90 Minuten auf der Bank, weil der Trainer in einem reinen Kampfspiel auf die größere Laufbereitschaft von Farès Chaibi setzte."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Hütter's Eintracht decisions are successful",
-          "summary": "With the work victory against Cologne, Eintracht gains a bit of calm, but in this form is not a candidate for the first third of the table. While Robin Koch convinces, Can Uzun stews on the bench.",
+          "title": "Eintracht Frankfurt: Adi Hütter's bold calls pay off against 1. FC Köln",
+          "summary": "A hard-fought 1-0 home win over 1. FC Köln has seen Eintracht Frankfurt stave off a brewing crisis for now.",
+          "body": [
+            "The narrow win, secured by Younes Ebnoutalib's fifth goal of the campaign, vindicated the approach of coach Adi Hütter. Reverting to a back four brought much-needed defensive stability, even if the Hesse side offered little creative spark. Against a toothless Kölner outfit, relentless grit and team unity were enough to exhale after weeks of turbulence.",
+            "Captain Robin Koch took centre stage under intense scrutiny following his controversial substitution in Leipzig. The centre-back won 92 percent of his duels to earn special praise from Adi Hütter. Can Uzun, by contrast, was left on the outside looking in: the playmaker spent all 90 minutes on the bench, with the manager prioritising the relentless running of Farès Chaibi in a bruising scrap."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Les décisions de concorde de Hütter se concrétisent",
-          "summary": "La concorde se calme un peu avec la victoire du travail contre Cologne, mais sous cette forme, elle n'est pas candidate pour le premier tiers du tableau. Alors que Robin Koch convainc, Can Uzun mijote sur le banc.",
+          "title": "Eintracht : les choix d'Adi Hütter portent leurs fruits face au 1. FC Köln",
+          "summary": "Grâce à une victoire 1-0 arrachée à domicile face au 1. FC Köln, Eintracht Frankfurt s'offre un bol d'air et repousse la crise.",
+          "body": [
+            "Cette courte victoire, scellée par le cinquième but de la saison de Younes Ebnoutalib, valide le cap fixé par l'entraîneur Adi Hütter. Repassé à une défense à quatre, le technicien a retrouvé de la solidité derrière, même si les joueurs de Hesse ont manqué d'inspiration dans le jeu. Face à des Kölner inoffensifs, l'engagement et la cohésion collective ont suffi pour souffler après des semaines agitées.",
+            "Attendu au tournant après son remplacement polémique à Leipzig, le capitaine Robin Koch a répondu présent. Le défenseur central a remporté 92 pour cent de ses duels et a récolté les éloges d'Adi Hütter. En revanche, Can Uzun a reçu un avertissement sans frais : le meneur de jeu a passé 90 minutes sur le banc, l'entraîneur préférant miser sur l'abattage de Farès Chaibi dans une rencontre âpre et physique."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Las decisiones de Hütters Eintracht surgen",
-          "summary": "El Eintracht obtiene un poco de tranquilidad con la victoria laboral contra Colonia, pero de esta forma no es un candidato para el primer tercio de la tabla. Mientras Robin convence a Koch, Can Uzun arde en el banco.",
+          "title": "Eintracht Frankfurt: las decisiones de Adi Hütter funcionan ante el 1. FC Köln",
+          "summary": "Con un sufrido triunfo por 1-0 en casa ante el 1. FC Köln, Eintracht Frankfurt frena por ahora su crisis deportiva.",
+          "body": [
+            "La ajustada victoria, firmada con el quinto gol del curso de Younes Ebnoutalib, premió la apuesta del técnico Adi Hütter. El entrenador regresó a la defensa de cuatro y recuperó solidez atrás, aunque a los de Hesse les faltó brillo con el balón. Ante un 1. FC Köln inofensivo, la entrega y la cohesión bastaron para respirar tranquilos tras semanas convulsas.",
+            "El gran foco apuntaba al capitán Robin Koch, cuestionado tras su polémica sustitución en Leipzig. El central se impuso en el 92 por ciento de sus duelos y se ganó el elogio explícito de Adi Hütter. El aviso fue para Can Uzun: el mediapunta vio los 90 minutos desde el banquillo, ya que el técnico prefirió la capacidad de trabajo de Farès Chaibi en un duelo netamente físico."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "قرارات Hütter's Eintracht ناجحة",
-          "summary": "مع انتصار العمل ضد كولونيا، يكتسب أينتراخت القليل من الهدوء، ولكن في هذا الشكل ليس مرشحًا للثلث الأول من الجدول. بينما يقنع روبن كوخ، يطبخ كان أوزون على المقعد.",
+          "title": "آينتراخت فرانكفورت: خيارات أدي هوتر تؤتي ثمارها أمام كولن",
+          "summary": "تنفس آينتراخت فرانكفورت الصعداء وتفادى أزمته الرياضية مؤقتاً بعد فوز شاق على أرضه بهدف دون رد أمام نادي كولن.",
+          "body": [
+            "الفوز الصعب، الذي جاء بفضل الهدف الخامس هذا الموسم للمهاجم يونس إبنوطالب، كافأ بالدرجة الأولى نهج المدرب أدي هوتر. المدير الفني عاد للاعتماد على خط دفاع رباعي ليمنح تشكيلته الصلابة المنشودة، رغم افتقار الفريق للحلول الهجومية. وفي مواجهة خصم متواضع الفاعلية، كان الانضباط والروح القتالية كافيين لاستعادة التوازن بعد أسابيع عصيبة.",
+            "وتركزت الأنظار على قائد الفريق روبن كوخ، الذي واجه ضغوطاً بالغة بعد استبداله المثير للجدل في لايبزيغ؛ حيث كسب قلب الدفاع 92 بالمئة من صراعاته الثنائية ونال إشادة خاصة من أدي هوتر. في المقابل، تلقى جان أوزون رسالة واضحة بجلوسه طوال 90 دقيقة على مقاعد البدلاء، إذ فضل المدرب الاعتماد على المجهود البدني والركض المتواصل لفارس شايبي في معركة اتسمت بالالتحامات البدنية."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.sportschau.de/regional/hr/hr-koch-uzun-system-huetters-eintracht-entscheidungen-gehen-auf-100.html",
@@ -339,7 +380,20 @@
           "url": "https://www.sportschau.de/regional/hr/hr-koch-uzun-system-huetters-eintracht-entscheidungen-gehen-auf-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-17T16:37:28+00:00"
+        }
+      }
     },
     {
       "id": "cbaeb79b91e5",
@@ -395,7 +449,12 @@
           "url": "https://www.kicker.de/live-sve-erhoeht-nach-fca-ecke-karius-direkt-unter-beschuss-1261742/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b5d7ecf3ed2d",
@@ -445,7 +504,12 @@
           "url": "https://www.ole.com.ar/futbol-primera/belgrano-vs-river-partido-torneo-clausura-2026-dia-horario-tv-arbitro_0_z8XM4CGGFj.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "69166503febf",
@@ -453,27 +517,48 @@
       "summary": "A cinco meses de aquella definición, el Millonario modificó más de medio equipo y de entrenador, mientras que el Pirata mantiene la base del equipo campeón.",
       "i18n": {
         "es": {
-          "title": "Enorme diferencia: cuánto cambiaron River y Belgrano desde la final del Apertura",
-          "summary": "A cinco meses de aquella definición, el Millonario modificó más de medio equipo y de entrenador, mientras que el Pirata mantiene la base del equipo campeón.",
-          "needs_translation": false
+          "title": "River y Belgrano se reencuentran en el Kempes con realidades opuestas",
+          "summary": "River Plate y Belgrano vuelven a cruzarse en Córdoba cinco meses después de la final del Apertura, marcados por dos proyectos con rumbos contrapuestos.",
+          "body": [
+            "River afronta el choque inmerso en una profunda metamorfosis. Tras la salida de Eduardo Coudet y la asunción interina de Leonardo Ponzio, el equipo presentará al menos seis variantes respecto al once de la final. La delantera cambió por completo con las ventas de Facundo Colidio al Vasco da Gama y Joaquín Freitas al Flamengo, Fabricio Bustos dejó el club y refuerzos de jerarquía como Nicolás Otamendi, Thiago Almada, Ángel Correa y Sebastián Driussi asoman como titulares.",
+            "Belgrano eligió el camino opuesto y apostó por sostener la base que conquistó el título. Figuras como Thiago Cardozo, Adrián Spörle, Lucas Zelarayán y Lucas Passerini permanecen firmes en la estructura titular, complementados por las incorporaciones de Lisandro López y Franco Vázquez, en un plantel que priorizó blindar a sus juveniles antes que desarmar su identidad."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Huge difference: how much River and Belgrano have changed since the end of the Opening",
-          "summary": "Five months after that definition, the Millionaire modified more than half a team and coach, while the Pirate maintains the base of the champion team.",
+          "title": "River and Belgrano meet again at the Kempes on contrasting trajectories",
+          "summary": "River Plate and Belgrano lock horns in Córdoba five months on from the Apertura final, guided by two wildly contrasting visions.",
+          "body": [
+            "River Plate head into the clash in the middle of a massive overhaul. Following Eduardo Coudet's departure and Leonardo Ponzio taking interim charge, the side are set to feature at least six changes from the final's starting lineup. The attack has been completely revamped after Facundo Colidio joined Vasco da Gama and Joaquín Freitas left for Flamengo, Fabricio Bustos moved on, and marquee arrivals Nicolás Otamendi, Thiago Almada, Ángel Correa and Sebastián Driussi are pushing to start.",
+            "Belgrano took the opposite path, banking on the core that lifted the silverware. Pillars like Thiago Cardozo, Adrián Spörle, Lucas Zelarayán and Lucas Passerini remain untouched in the starting XI, bolstered by the additions of Lisandro López and Franco Vázquez for a squad keen on securing their youth prospects rather than altering their identity."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Énorme différence : à quel point River et Belgrano ont-ils changé depuis la fin de l'ouverture",
-          "summary": "Cinq mois après cette définition, le Millionnaire a modifié plus de la moitié de l'équipe et de l'entraîneur, tandis que le Pirate maintient la base de l'équipe championne.",
+          "title": "River et Belgrano se retrouvent au Kempes dans des dynamiques opposées",
+          "summary": "River Plate et Belgrano s'affrontent de nouveau à Córdoba cinq mois après la finale de l'Apertura, portés par deux projets aux trajectoires diamétralement opposées.",
+          "body": [
+            "River Plate aborde ce rendez-vous en pleine mutation. Après le départ d'Eduardo Coudet et l'intronisation provisoire de Leonardo Ponzio, l'équipe devrait compter au moins six changements par rapport au onze de la finale. L'attaque a été totalement remodelée avec les départs de Facundo Colidio vers Vasco da Gama et de Joaquín Freitas à Flamengo, Fabricio Bustos est parti, tandis que Nicolás Otamendi, Thiago Almada, Ángel Correa et Sebastián Driussi postulent d'entrée.",
+            "Belgrano a pris le contre-pied en misant sur la stabilité des champions en titre. Les cadres Thiago Cardozo, Adrián Spörle, Lucas Zelarayán et Lucas Passerini restent indéboulonnables, désormais épaulés par les renforts de Lisandro López et Franco Vázquez, au sein d'un groupe qui a préféré verrouiller ses pépites plutôt que bousculer son identité de jeu."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "اختلاف كبير: كم تغير النهر وبلغرانو منذ نهاية الافتتاح",
-          "summary": "بعد خمسة أشهر من هذا التعريف، قام المليونير بتعديل أكثر من نصف فريق ومدرب، بينما حافظ القراصنة على قاعدة الفريق البطل.",
+          "title": "ريفر بليت وبيلغرانو وجهاً لوجه في الكيمبس بواقعين متناقضين",
+          "summary": "يعود ريفر بليت وبيلغرانو للصدام مجدداً في كوردوبا بعد خمسة أشهر من نهائي الأبيرتورا، في مواجهة تجمع مشروعين يسيران في اتجاهين متعاكسين تماماً.",
+          "body": [
+            "يدخل ريفر بليت اللقاء وسط ثورة تغيير شاملة. فبعد رحيل إدواردو كوديه وتولي ليوناردو بونزيو المهمة مؤقتاً، يتجه الفريق لإجراء ستة تعديلات على الأقل مقارنة بتشكيلة النهائي. خط الهجوم تبدل بالكامل إثر بيع فاكوندو كوليديو إلى فاسكو دا غاما وخواكين فريتاس إلى فلامنغو، بينما غادر فابريسيو بوستوس النادي، في حين تبرز صفقات ثقيلة كالأساسي نيكولاس أوتاميندي وتياغو ألمادا وأنخيل كوريا وسيباستيان دريوسي في التشكيل المنتظر.",
+            "في المقابل، اختار بيلغرانو مساراً مغايراً راهن فيه على استقرار الركائز التي توجت باللقب. حافظ الحارس تياغو كاردوزو ومعه أدريان سبورلي ولوكاس زيلارايان ولوكاس باسيريني على مواقعهم في التشكيلة الأساسية، مع تعزيز الصفوف بالوافدين ليساندرو لوبيز وفرانكو فازكيز، داخل قائمة فضلت حماية مواهبها الشابة على المساس بهويتها الفنية."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-plate-belgrano-cordoba-final-apertura_0_PRrDCqnIBb.html",
@@ -495,7 +580,20 @@
           "url": "https://www.ole.com.ar/river-plate/river-plate-belgrano-cordoba-final-apertura_0_PRrDCqnIBb.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-17T16:37:31+00:00"
+        }
+      }
     },
     {
       "id": "de60b074aba2",
@@ -503,27 +601,48 @@
       "summary": "Le gardien de Chelsea a dû sortir sur une civière après un choc avec le défenseur d’Everton Jarrad Branthwaite.",
       "i18n": {
         "fr": {
-          "title": "Premier League : Emiliano Martinez blessé dans un choc impressionnant",
-          "summary": "Le gardien de Chelsea a dû sortir sur une civière après un choc avec le défenseur d’Everton Jarrad Branthwaite.",
-          "needs_translation": false
+          "title": "Premier League : Emiliano Martinez sort sur civière face à Everton",
+          "summary": "Emiliano Martinez a quitté la pelouse sur civière samedi lors du match de Chelsea contre Everton, après une violente collision avec le défenseur Jarrad Branthwaite.",
+          "body": [
+            "L'incident s'est produit à la 66e minute alors que Chelsea menait 1-0 lors de cette 7e journée. En tentant de repousser un coup franc, le gardien argentin a heurté de plein fouet le joueur adverse.",
+            "Pris en charge pendant près de dix minutes par les soigneurs sur le terrain, Martinez a ensuite été évacué, laissant sa place dans la cage londonienne au Belge Mike Penders."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Premier League: Emiliano Martinez injured in impressive shock",
-          "summary": "The Chelsea goalkeeper had to get out on a stretcher after a collision with Everton defender Jarrad Branthwaite.",
+          "title": "Premier League: Emiliano Martinez stretchered off against Everton",
+          "summary": "Emiliano Martinez was stretchered off on Saturday during Chelsea's Premier League clash with Everton following a heavy collision with defender Jarrad Branthwaite.",
+          "body": [
+            "The incident occurred in the 66th minute while Chelsea led 1-0 on matchday 7. Attempting to punch away a free kick, the Argentine goalkeeper collided forcefully with the opposing centre-back.",
+            "Medical staff tended to him for nearly ten minutes on the pitch before carrying him off on a stretcher. Belgian goalkeeper Mike Penders came on to replace him for the remainder of the match."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Premier League: Emiliano Martínez lesionado en un impresionante choque",
-          "summary": "El portero del Chelsea tuvo que salir en camilla tras un choque con el defensa del Everton Jarrad Branthwaite.",
+          "title": "Premier League: Emiliano Martínez se retira en camilla ante el Everton",
+          "summary": "Emiliano Martínez abandonó el césped en camilla este sábado durante el duelo entre Chelsea y Everton, tras un violento impacto con el central Jarrad Branthwaite.",
+          "body": [
+            "La jugada ocurrió en el minuto 66, en plena 7ª jornada, cuando el conjunto londinense ganaba 1-0. Al intentar despejar una falta, el guardameta argentino chocó de lleno con el zaguero rival.",
+            "Tras casi diez minutos de atención médica sobre el césped, Martínez fue evacuado en camilla y dejó su lugar en la portería al belga Mike Penders."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "الدوري الإنجليزي الممتاز: إصابة إيميليانو مارتينيز في صدمة مثيرة للإعجاب",
-          "summary": "اضطر حارس مرمى تشيلسي إلى الخروج على نقالة بعد تصادمه مع مدافع إيفرتون جاراد برانثويت.",
+          "title": "الدوري الإنجليزي: إيميليانو مارتينيز يغادر على نقالة أمام إيفرتون",
+          "summary": "غادر الأرجنتيني إيميليانو مارتينيز الملعب محمولاً على نقالة السبت خلال لقاء تشيلسي وإيفرتون، إثر اصطدام عنيف مع المدافع جاراد برانثويت.",
+          "body": [
+            "ووقع الحادث في الدقيقة 66 من الجولة السابعة حين كان فريقه متقدماً بهدف دون رد، حيث حاول الحارس إبعاد ركلة حرة فاصطدم بقوة بمدافع الخصم.",
+            "وتلقى مارتينيز العلاج لنحو عشر دقائق على أرضية الملعب قبل إخلائه، ليدخل الحارس البلجيكي مايك بيندرز بديلاً له حتى نهاية المواجهة."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/angleterre/premier-league-emiliano-martinez-blesse-dans-un-choc-impressionnant-20261017",
@@ -545,7 +664,20 @@
           "url": "https://www.lefigaro.fr/sports/football/angleterre/premier-league-emiliano-martinez-blesse-dans-un-choc-impressionnant-20261017"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-17T16:37:35+00:00"
+        }
+      }
     },
     {
       "id": "3d0ffb75c226",
@@ -601,7 +733,12 @@
           "url": "https://www.kicker.de/live-liverpool-zu-gast-bei-brentford-bleibt-mancity-in-der-liga-makellos-1261900/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "527a93975a60",
@@ -609,27 +746,44 @@
       "summary": "Touché à la suite d'une sortie sur un coup de pied arrêté, le gardien argentin de Chelsea, Emiliano Martinez, a été évacué sur civière puis remplacé par Mike Penders.",
       "i18n": {
         "fr": {
-          "title": "Emiliano Martinez évacué sur civière lors d'Everton-Chelsea",
-          "summary": "Touché à la suite d'une sortie sur un coup de pied arrêté, le gardien argentin de Chelsea, Emiliano Martinez, a été évacué sur civière puis remplacé par Mike Penders.",
-          "needs_translation": false
+          "title": "Emiliano Martinez sort sur civière contre Everton",
+          "summary": "Le gardien de Chelsea Emiliano Martinez a quitté la pelouse d'Everton sur une civière après un choc sur coup de pied arrêté.",
+          "body": [
+            "L'international argentin s'est blessé lors d'une intervention aérienne durant la rencontre face aux Toffees. Incapable de reprendre sa place dans le but des Blues, le portier a immédiatement cédé sa place à Mike Penders pour terminer la partie."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Emiliano Martinez evacuated on stretcher during Everton-Chelsea",
-          "summary": "Hit following a kickout, Argentine Chelsea goalkeeper Emiliano Martinez was evacuated on a stretcher and then replaced by Mike Penders.",
+          "title": "Emiliano Martinez stretchered off against Everton",
+          "summary": "Chelsea goalkeeper Emiliano Martinez was stretchered off at Everton following a heavy collision from a set piece.",
+          "body": [
+            "The Argentina international picked up an injury during an aerial duel against the Toffees. Unable to carry on in goal for the Blues, he was replaced immediately by Mike Penders to finish the match."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Emiliano Martínez evacuado en camilla durante el Everton-Chelsea",
-          "summary": "El portero argentino del Chelsea, Emiliano Martínez, recibió un disparo tras una salida en una patada y fue evacuado en camilla y sustituido por Mike Penders.",
+          "title": "Emiliano Martinez se retira en camilla contra Everton",
+          "summary": "El portero de Chelsea Emiliano Martinez abandonó en camilla el césped de Everton tras un fuerte choque en una jugada a balón parado.",
+          "body": [
+            "El internacional argentino se lesionó en un duelo aéreo durante el choque ante los Toffees. Incapaz de seguir bajo palos con los Blues, dejó su lugar inmediatamente a Mike Penders para disputar el tramo final."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "تم إخلاء إيميليانو مارتينيز على نقالة خلال إيفرتون- تشيلسي",
-          "summary": "بعد ضربة قاضية، تم إخلاء حارس مرمى تشيلسي الأرجنتيني إيميليانو مارتينيز على نقالة ثم تم استبداله بمايك بيندرز.",
+          "title": "إصابة إيميليانو مارتينيز ونقله على محفة أمام إيفرتون",
+          "summary": "غادر حارس مرمى تشيلسي إيميليانو مارتينيز أرضية ملعب إيفرتون على محفة إثر التحام قوي خلال ركلة ثابتة.",
+          "body": [
+            "وتعرض الدولي الأرجنتيني للإصابة أثناء ارتقاء هوائي خلال المواجهة ضد التوفيز، حيث تعذر عليه مواصلة حماية عرين البلوز ليترك مكانه فورا للحارس مايك بيندرز حتى صافرة النهاية."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Emiliano-martinez-evacue-sur-civiere-lors-d-everton-chelsea/1736462#at_medium=RSS_feeds",
@@ -651,7 +805,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Emiliano-martinez-evacue-sur-civiere-lors-d-everton-chelsea/1736462#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-17T16:37:38+00:00"
+        }
+      }
     },
     {
       "id": "4bec393dd774",
@@ -769,7 +936,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/fc-schalke-04-gegen-1-fsv-mainz-05,audiostream-fc-schalke-04-gegen-1-fsv-mainz-05-102.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e8a360c3087a",
@@ -831,7 +1003,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/sv-07-elversberg-gegen-fc-augsburg,audiostream-sv-07-elversberg-gegen-fc-augsburg-100.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9422ca60aeae",
@@ -887,7 +1064,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/6-spieltag-die-konferenz,audiostream-6-spieltag-die-konferenz-140.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "100daa89057d",
@@ -895,27 +1077,44 @@
       "summary": "Les Young Africans SC mènent logiquement à la mi-temps de leur match face au CFFA. L'unique but de la rencontre a été inscrit à la 39e minute par l'attaquant sénégalais Cheikh Ibrahima Touré.",
       "i18n": {
         "fr": {
-          "title": "Ligue des Champions CAF : Cheikh Ibrahima Touré permet aux Young Africans de mener contre le CFFFA (mi-temps)",
-          "summary": "Les Young Africans SC mènent logiquement à la mi-temps de leur match face au CFFA. L'unique but de la rencontre a été inscrit à la 39e minute par l'attaquant sénégalais Cheikh Ibrahima Touré.",
-          "needs_translation": false
+          "title": "LDC CAF : Cheikh Ibrahima Touré lance les Young Africans contre le CFFA",
+          "summary": "Cheikh Ibrahima Touré a permis aux Young Africans de mener à la pause face au CFFA en Ligue des champions CAF.",
+          "body": [
+            "L'attaquant sénégalais a débloqué la situation à la 39e minute de jeu dans cette affiche continentale. Auteur du seul but de la première période, il permet aux Young Africans SC de regagner les vestiaires avec un avantage logique au score."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "CAF Champions League: Cheikh Ibrahima Touré allows Young Africans to lead against CFFFA (half-time)",
-          "summary": "The Young Africans SC logically lead at half-time of their match against the CFFA. The only goal of the match was scored in the 39th minute by Senegalese striker Cheikh Ibrahima Touré.",
+          "title": "CAF CL: Cheikh Ibrahima Touré puts Young Africans ahead against CFFA",
+          "summary": "Cheikh Ibrahima Touré gave Young Africans a half-time lead against CFFA in the CAF Champions League.",
+          "body": [
+            "The Senegalese forward broke the deadlock in the 39th minute of this continental clash. As the sole scorer in the opening period, he sent Young Africans SC into the break with a well-deserved advantage."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Liga de Campeones CAF: Cheikh Ibrahima Touré permite a los Young Africans liderar contra el CFFFA (medio tiempo)",
-          "summary": "Los Young Africans SC conducen lógicamente al descanso de su partido contra el CFFA. El único gol del encuentro fue anotado en el minuto 39 por el delantero senegalés Cheikh Ibrahima Touré.",
+          "title": "Champions CAF: Cheikh Ibrahima Touré adelanta a Young Africans ante CFFA",
+          "summary": "Cheikh Ibrahima Touré dio ventaja a Young Africans al descanso frente a CFFA en la Liga de Campeones de la CAF.",
+          "body": [
+            "El delantero senegalés abrió el marcador en el minuto 39 de este choque continental. Autor del único tanto del primer acto, permitió a Young Africans SC enfilar los vestuarios con una ventaja merecida."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري أبطال أفريقيا: الشيخ إبراهيم توري يسمح للشباب الأفريقي بالقيادة ضد CFFFA (الشوط الأول)",
-          "summary": "تتقدم شابة أفريقيا منطقيا في الشوط الأول من مباراتها ضد الاتحاد الإفريقي لكرة القدم. تم تسجيل الهدف الوحيد للمباراة في الدقيقة 39 من قبل المهاجم السنغالي الشيخ إبراهيم توري.",
+          "title": "دوري أبطال إفريقيا: توريه يمنح يانغ أفريكانز التقدم أمام سي إف إف إيه",
+          "summary": "منح شيخ إبراهيما توريه فريق يانغ أفريكانز التقدم مع نهاية الشوط الأول أمام سي إف إف إيه في دوري أبطال إفريقيا.",
+          "body": [
+            "وفك المهاجم السنغالي شفرة الدفاع عند الدقيقة 39 من عمر هذه المواجهة القارية. وكان صاحب الهدف الوحيد في الشوط الأول، ليمنح يانغ أفريكانز أفضلية مستحقة قبل العودة إلى غرف الملابس."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/football/ligue-des-champions-caf-cheikh-ibrahima-toure-permet-aux-young-africans-de-mener-contre-le-cfffa-mi-temps/",
@@ -937,7 +1136,20 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-caf-cheikh-ibrahima-toure-permet-aux-young-africans-de-mener-contre-le-cfffa-mi-temps/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 4,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-17T16:37:43+00:00"
+        }
+      }
     },
     {
       "id": "e51447a04659",
@@ -1005,7 +1217,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20261017/1004237826/everton-chelsea-directo-premier-league.html"
         }
       ],
-      "source_count": 4
+      "source_count": 4,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0951ec66213c",
@@ -1063,33 +1280,59 @@
       "summary": "Der 1. FC Kaiserslautern gewinnt gegen Bochum und hält in der 2.",
       "i18n": {
         "de": {
-          "title": "FCK schickt VfL Bochum tiefer in den Keller",
-          "summary": "Der 1. FC Kaiserslautern gewinnt gegen Bochum und hält in der 2.",
-          "needs_translation": false
+          "title": "2:0 gegen Bochum: Kaiserslautern bleibt oben dran",
+          "summary": "Der 1. FC Kaiserslautern hat den VfL Bochum mit 2:0 besiegt und hält in der 2. Bundesliga direkten Anschluss an die Aufstiegsplätze.",
+          "body": [
+            "Debütant Milos Lukovic brachte die Pfälzer nach einer halben Stunde in Führung, ehe Semih Sahin per umstrittenem Foulelfmeter für die Entscheidung sorgte. Kaiserslautern blieb damit auch im vierten Heimspiel der Saison ohne Gegentor und bescherte Trainer Torsten Lieberknecht in dessen 500. Zweitligapartie als Spieler und Coach den nächsten Erfolg. Aus den vergangenen drei Begegnungen holte der FCK sieben Punkte und schloss punktgleich zum Tabellendritten auf.",
+            "Für Bochum verschärft sich die Lage im Keller drastisch. Mit nur fünf Saisontoren stellt die Mannschaft von Uwe Rösler den harmlosesten Angriff der Liga und steht nur zwei Zähler vor dem Tabellenende. Trotz optischer Spielanteile erarbeiteten sich die Gäste kaum Chancen; die einzige echte Gelegenheit vergab Jarne Steuckers kurz vor dem Abpfiff freistehend per Kopf."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "FCK sends VfL Bochum deeper into the cellar",
-          "summary": "1. FC Kaiserslautern wins against Bochum and holds in the 2nd",
+          "title": "2-0 over Bochum: Kaiserslautern stay firmly in promotion hunt",
+          "summary": "1. FC Kaiserslautern claimed a 2-0 victory over VfL Bochum to keep the heat on the automatic promotion spots in the 2. Bundesliga.",
+          "body": [
+            "Debut-making striker Milos Lukovic handed the hosts the breakthrough on the half-hour mark before Semih Sahin sealed the points from a contentious spot-kick. The clean sheet preserves Kaiserslautern's perfect defensive home record after four league outings and capped a milestone afternoon for Torsten Lieberknecht, winning his 500th match in the division across his spells as player and coach. Seven points from their last three matches lift them level with third place.",
+            "The defeat plunges VfL Bochum deeper into trouble at the wrong end of the table. Uwe Rösler's men carry the division's bluntness record with a paltry five goals all campaign, leaving them perched just two points clear of bottom spot. Plenty of sterile possession yielded next to nothing in front of goal, with Jarne Steuckers squandering their sole clear-cut chance via a mistimed free header late on."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "FCK envoie le VfL Bochum plus profondément dans la cave",
-          "summary": "Le 1er FC Kaiserslautern gagne contre Bochum et s'arrête au 2e",
+          "title": "2-0 contre Bochum : Kaiserslautern ne lâche rien en haut de tableau",
+          "summary": "Vainqueur 2-0 du VfL Bochum, le 1. FC Kaiserslautern s'accroche au bon wagon en 2. Bundesliga et reste au contact direct des places de promotion.",
+          "body": [
+            "Pour ses grands débuts, Milos Lukovic a placé les siens devant à la demi-heure de jeu, avant que Semih Sahin ne plie la rencontre sur un penalty très contesté. Toujours imperméable à domicile après quatre réceptions cette saison, Kaiserslautern a fêté dignement la 500e de son entraîneur Torsten Lieberknecht en deuxième division, cumulée comme joueur et technicien. Invaincus depuis trois matches avec sept points engrangés, les locaux rejoignent la troisième place au classement.",
+            "Côté VfL Bochum, la crise couve dans la zone rouge. Pire attaque du championnat avec seulement cinq buts marqués, la formation d'Uwe Rösler n'a plus que deux points d'avance sur la lanterne rouge. Malgré une possession stérile, les visiteurs ne se sont pratiquement rien créé d'autre qu'une tête complètement manquée par Jarne Steuckers dans les tout derniers instants."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "FCK envía al VfL Bochum más profundo al sótano",
-          "summary": "El 1er FC Kaiserslautern gana al Bochum y se mantiene en la 2da.",
+          "title": "2-0 ante el Bochum: el Kaiserslautern aprieta en la zona alta",
+          "summary": "El 1. FC Kaiserslautern se impuso por 2-0 al VfL Bochum y no se despega de la lucha por el ascenso en la 2. Bundesliga.",
+          "body": [
+            "El debutante Milos Lukovic adelantó a los locales a la media hora y Semih Sahin sentenció después al convertir un penalti muy discutido. El Kaiserslautern firma así su cuarto partido liguero consecutivo en casa sin encajar y regala un triunfo clave a su técnico Torsten Lieberknecht en su encuentro 500 en la categoría de plata entre su etapa como jugador y entrenador. Siete puntos de nueve posibles aúpan al club a la altura del tercer clasificado.",
+            "En el VfL Bochum saltan las alarmas por la permanencia. Con cinco míseras dianas, el cuadro dirigido por Uwe Rösler es el ataque menos productivo del campeonato y navega con apenas dos puntos de margen sobre el farolillo rojo. Tuvieron el balón, pero sin veneno: la única opción real la desperdició Jarne Steuckers en el tramo final con un cabezazo franco que se marchó fuera."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ترسل FCK VfL Bochum إلى عمق القبو",
-          "summary": "1. يفوز FC Kaiserslautern على Bochum ويصمد في المركز الثاني",
+          "title": "كايزرسلاوترن يهزم بوخوم بهدفين دون رد ويواصل مطاردة الصدارة",
+          "summary": "تغلب كايزرسلاوترن على ضيفه بوخوم بنتيجة 2-0، ليواصل تشديد الخناق على مراكز الصعود المباشر في دوري الدرجة الثانية الألماني.",
+          "body": [
+            "افتتح الوافد الجديد ميلوش لوكوفيتش التسجيل لأصحاب الأرض بعد نصف ساعة من صافرة البداية، قبل أن يحسم سميح شاهين المواجهة بهدف ثانٍ من ركلة جزاء مثيرة للجدل. وحافظ كايزرسلاوترن على نظافة شباكه للمباراة الرابعة توالياً على ملعبه هذا الموسم، مهدياً مدربه تورستن ليبركنيشت انتصاراً ثميناً في مباراته رقم 500 في المسابقة كلاعب ومدير فني. ورفع الفريق رصيده بعد حصد سبع نقاط في آخر ثلاث جولات، ليتساوى نقطياً مع صاحب المركز الثالث.",
+            "في المقابل، تأزمت وضعية بوخوم في صراع تفادي الهبوط؛ إذ يعاني فريق المدرب أوفه روسلر من عقم هجومي واضح جعله الأضعف تهديفياً في الدوري بخمسة أهداف فقط، ليبقى على بُعد نقطتين من قاع الترتيب. ولم تشفع السيطرة العقيمة للضيوف في صناعة الخطورة، باستثناء فرصة وحيدة مهدرة أطاح بها يارني ستوكيرز برأسية غير متقنة وهو في وضعية مريحة قبل صافرة النهاية."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga2/fck-schickt-vfl-bochum-tiefer-in-keller,spielbericht-kaiserslautern-vfl-bochum-100.html",
@@ -1111,7 +1354,20 @@
           "url": "https://www.sportschau.de/fussball/bundesliga2/fck-schickt-vfl-bochum-tiefer-in-keller,spielbericht-kaiserslautern-vfl-bochum-100.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 3,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-17T16:37:48+00:00"
+        }
+      }
     },
     {
       "id": "75c3f2921ff7",
@@ -1119,26 +1375,48 @@
       "summary": "La joya xeneize se expresó después de su golazo para la remontada ante Talleres en la Bombonera.",
       "i18n": {
         "es": {
-          "title": "Las disculpas de Flores a la gente de Boca y a su novia por un video \"extrafutbolístico\"",
-          "summary": "La joya xeneize se expresó después de su golazo para la remontada ante Talleres en la Bombonera.",
-          "needs_translation": false
+          "title": "Flores pide perdón a los hinchas de Boca y a su novia por un video viral",
+          "summary": "Luego de marcar el gol del triunfo ante Talleres, Flores se disculpó públicamente con los hinchas de Boca y con su pareja tras viralizarse un video en plena concentración.",
+          "body": [
+            "La difusión en redes sociales de una charla con una mujer a través de una aplicación, grabada durante la concentración del plantel, obligó al juvenil a dar explicaciones tras sellar el 2-1 definitivo. Flores reconoció que se trató de un error extrafutbolístico, aseguró que el tema ya se debatió internamente con el plantel y prometió que no volverá a ocurrir, tras haberle dedicado el festejo a su novia dibujando una C y un corazón.",
+            "Su rápida irrupción en el primer equipo ya mantenía atento a Rodolfo Arruabarrena. El técnico de Boca ya le había llamado la atención anteriormente por un tatuaje y también pidió a sus representantes evaluar una mudanza más cercana al predio del club, con el fin de evitarle viajes diarios de hora y media."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Flores' apology to the people of Boca and his girlfriend for an \"extra football\" video",
-          "summary": "The xeneize jewel was expressed after his goal for the comeback against Talleres in the Bombonera.",
+          "title": "Boca's Flores apologises to fans and girlfriend over viral video",
+          "summary": "Fresh from netting the winner against Talleres, Flores issued a public apology to Boca supporters and his partner after a hotel room video went viral.",
+          "body": [
+            "A leaked video showing the youngster chatting to a woman on an app while in the team camp prompted him to address the matter directly after sealing a 2-1 win. Flores admitted the incident was unprofessional, confirmed it had been discussed with his teammates, and vowed it would not happen again—having earlier dedicated his goal to his girlfriend by flashing a 'C' and a heart gesture.",
+            "His sudden emergence had already kept manager Rodolfo Arruabarrena on alert. The Boca coach previously reprimanded him over a tattoo and publicly suggested his agents find him accommodation closer to the training ground to eliminate a 90-minute commute."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Les excuses de Flores aux habitants de Boca et à sa petite amie pour une vidéo « extra-futbolistique »",
-          "summary": "Le bijou xeneize s'est exprimé après son but pour la remontée devant Talleres à la Bombonera.",
+          "title": "Boca : Flores s'excuse auprès des supporters et de sa compagne",
+          "summary": "Buteur décisif face à Talleres, Flores s'est excusé publiquement auprès des supporters de Boca et de sa compagne après la fuite d'une vidéo enregistrée en pleine mise au vert.",
+          "body": [
+            "La diffusion sur les réseaux sociaux d'un échange vidéo avec une femme via une application a poussé le jeune joueur à s'expliquer dès le coup de sifflet final, après avoir inscrit le but du 2-1. Flores a reconnu une erreur extra-sportive, affirmé que la situation avait été réglée dans le vestiaire et promis que cela ne se reproduirait plus, lui qui venait de dédier sa réalisation à sa compagne d'un geste en forme de cœur.",
+            "L'ascension rapide de l'attaquant inquiétait déjà Rodolfo Arruabarrena quant à sa gestion de la notoriété. L'entraîneur de Boca l'avait déjà recadré pour un tatouage et avait invité ses agents à chercher un logement plus proche du centre d'entraînement afin d'écourter son trajet quotidien d'une heure et demie."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Las disculpas de Flores a la gente de Boca y a su novia por un video \"extrafutbolístico\"",
-          "summary": "La joya xeneize se expresó después de su golazo para la remontada ante Talleres en la Bombonera.",
-          "needs_translation": true
+          "title": "فلوريس يعتذر لجماهير بوكا ورفيقته بعد انتشار مقطع فيديو مسرب",
+          "summary": "عقب تسجيله هدف الفوز أمام تاليريس، قدم فلوريس اعتذاراً علنياً لجماهير بوكا جونيورز ورفيقته إثر تداول مقطع فيديو التُقط له داخل معسكر الفريق.",
+          "body": [
+            "أجبر تسريب محادثة مصورة عبر تطبيق مع فتاة أثناء وجوده في المعسكر، المهاجم الشاب على الخروج بتوضيحات بعد قيادة فريقه للفوز 2-1. واعترف فلوريس بالخطأ غير اللائق، مؤكداً معالجة القضية داخلياً مع زملائه وتعهده بعدم تكرارها، بعدما أهدى هدفه لرفيقته راسماً حرف اسمها وقلباً بيديه.",
+            "وكان بزوغ نجم اللاعب السريع قد أثار مسبقاً حذر المدرب رودولفو أروابارينا، الذي وبخه في وقت سابق بسبب وشم، وطالب وكلاءه بالبحث عن سكن قريب من مقر تدريبات بوكا للتخلص من مشقة التنقل اليومي التي تستغرق ساعة ونصف."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/disculpas-flores-gente-boca-video-extrafutbolistico_0_YjlFPyHwZh.html",
@@ -1160,7 +1438,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/disculpas-flores-gente-boca-video-extrafutbolistico_0_YjlFPyHwZh.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full"
+      }
     },
     {
       "id": "f42c27777027",
