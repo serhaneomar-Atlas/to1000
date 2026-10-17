@@ -59,7 +59,12 @@
           "url": "https://www.lefigaro.fr/sports/football/live/ligue-1/2026/2640620/strasbourg-paris-sg"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2807cfac3494",
@@ -67,27 +72,44 @@
       "summary": "L’AS FAR de Rabat et le CO Korhogo se neutralisent (0-0) à la mi-temps de leur match aller du deuxième tour préliminaire de la Coupe de la Confédération CAF.",
       "i18n": {
         "fr": {
-          "title": "Coupe CAF : l’AS FAR et le CO Korhogo dos à dos à la pause",
-          "summary": "L’AS FAR de Rabat et le CO Korhogo se neutralisent (0-0) à la mi-temps de leur match aller du deuxième tour préliminaire de la Coupe de la Confédération CAF.",
-          "needs_translation": false
+          "title": "Coupe CAF : l'AS FAR et le CO Korhogo dos à dos à la mi-temps",
+          "summary": "L'AS FAR de Rabat et le CO Korhogo sont rentrés aux vestiaires sans marquer lors de leur manche aller continentale.",
+          "body": [
+            "Cette rencontre entre Marocains et Ivoiriens compte pour le deuxième tour préliminaire de la Coupe de la Confédération. Malgré quarante-cinq premières minutes engagées, aucune des deux formations n'a trouvé l'ouverture, regagnant la pause sur un score nul et vierge (0-0)."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "CAF cut: AS FAR and CO Korhogo back to back at break",
-          "summary": "AS FAR de Rabat and CO Korhogo neutralize each other (0-0) at the half-time of their first leg of the second preliminary round of the CAF Confederation Cup.",
+          "title": "CAF Cup: AS FAR and CO Korhogo goalless at the break",
+          "summary": "Moroccan side AS FAR and CO Korhogo were locked in a goalless stalemate at half-time in their continental first leg.",
+          "body": [
+            "The fixture marks the first leg of the CAF Confederation Cup second preliminary round. Neither side managed to break the deadlock during the opening 45 minutes, heading down the tunnel at 0-0."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Corte CAF: AS FAR y CO Korhogo de espaldas al descanso",
-          "summary": "El AS FAR de Rabat y el CO Korhogo se neutralizan (0-0) en el descanso de su partido de ida de la segunda ronda preliminar de la Copa de la Confederación CAF.",
+          "title": "Copa CAF: AS FAR y CO Korhogo empatan sin goles al descanso",
+          "summary": "El AS FAR de Rabat y el CO Korhogo firmaron tablas sin goles al descanso de su eliminatoria continental.",
+          "body": [
+            "El choque corresponde a la ida de la segunda ronda preliminar de la Copa Confederación de la CAF. Ninguno de los dos contendientes logró inaugurar el marcador en los primeros 45 minutos, marchándose al túnel de vestuarios con el 0-0 inicial."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "CAF CUT: حتى الآن و CO Korhogo مرة أخرى إلى الوراء في استراحة",
-          "summary": "حتى الآن الرباط و CO Korhogo تحييد بعضها البعض (0-0) في الشوط الأول من الجولة الأولى من الجولة التمهيدية الثانية من كأس الاتحاد الأفريقي.",
+          "title": "كأس الكونفدرالية: تعادل سلبي بين الجيش الملكي وكورهوغو في الشوط الأول",
+          "summary": "خيم التعادل دون أهداف على مجريات الشوط الأول بين الجيش الملكي وكورهوغو في ذهاب الدور التمهيدي الثاني للمسابقة القارية.",
+          "body": [
+            "تندرج المواجهة ضمن منافسات كأس الكونفدرالية الإفريقية لكرة القدم. وعجز الطرفان عن هز الشباك طوال الدقائق الخمس والأربعين الأولى، ليدخلا الاستراحة بنتيجة البياض (0-0)."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/football/coupe-caf-las-far-et-le-co-korhogo-dos-a-dos-a-la-pause/",
@@ -109,7 +131,20 @@
           "url": "https://africatopsports.com/football/coupe-caf-las-far-et-le-co-korhogo-dos-a-dos-a-la-pause/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 4,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-17T19:01:25+00:00"
+        }
+      }
     },
     {
       "id": "7106db8e5c78",
@@ -117,33 +152,54 @@
       "summary": "Topspiel in La Liga: Der Dritte Betis Sevilla empfängt den bisher noch makellosen FC Barcelona. Die Katalanen konnten alle bisherigen Pflichtspiele in dieser Saison für sich entscheiden.",
       "i18n": {
         "de": {
-          "title": "LIVE! Lamine Yamal verzückt - Gomez gleich für Real Betis aus",
-          "summary": "Topspiel in La Liga: Der Dritte Betis Sevilla empfängt den bisher noch makellosen FC Barcelona. Die Katalanen konnten alle bisherigen Pflichtspiele in dieser Saison für sich entscheiden.",
-          "needs_translation": false
+          "title": "La Liga: Gomez kontert FC Barcelona im Spitzenspiel gegen Real Betis",
+          "summary": "Real Betis empfängt den FC Barcelona zum Topduell der Primera División und gleicht durch Gomez nach einer Gala von Lamine Yamal aus.",
+          "body": [
+            "Der Tabellendritte aus Sevilla fordert den bisher makellosen FC Barcelona heraus. Die Katalanen reisten mit einer perfekten Bilanz an, nachdem sie in dieser laufenden Saison ausnahmslos alle bisherigen Pflichtspiele für sich entscheiden konnten. Im hochklassigen Ligaduell setzte Lamine Yamal die ersten Glanzpunkte, ehe Gomez für die andalusischen Gastgeber zum zwischenzeitlichen Gleichstand traf."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "LIVE! Lamine Yamal enchanted - Gomez equal to Real Betis",
-          "summary": "Top game in La Liga: The third Betis Sevilla receives the previously flawless FC Barcelona. The Catalans were able to win all previous competitive games this season.",
+          "title": "La Liga: Gomez answers for Real Betis in high-voltage FC Barcelona clash",
+          "summary": "Real Betis host FC Barcelona in a heavyweight Primera División showdown, with Gomez leveling the score after an inspired display from Lamine Yamal.",
+          "body": [
+            "Third in the table, the outfit from Sevilla went toe-to-toe with an unblemished FC Barcelona side arriving with a 100% record across all competitions this season. In a pulsating league battle, Lamine Yamal delivered early moments of brilliance before Gomez struck to bring the Andalusian hosts back on level terms."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "LIVE ! Lamine Yamal enchantée - Gomez égal au Real Betis",
-          "summary": "Match de haut niveau dans La Liga : le troisième Betis Sevilla reçoit le FC Barcelone encore impeccable à ce jour. Les Catalans ont remporté tous les matches de compétition jusqu'à présent cette saison.",
+          "title": "La Liga : Gomez réplique pour le Real Betis face au FC Barcelona",
+          "summary": "Le Real Betis accueille le FC Barcelona dans le choc au sommet de la Primera División et égalise par Gomez après un festival de Lamine Yamal.",
+          "body": [
+            "Le troisième de Liga, venu de Sevilla, défie un FC Barcelona jusqu'ici intouchable. Les Catalans se sont présentés avec un bilan immaculé, vainqueurs de toutes leurs rencontres officielles disputées cette saison. Dans ce duel de haut vol, Lamine Yamal a d'abord fait des étincelles avant que Gomez ne remette les hôtes andalous à égalité."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "LIVE! Lamine Yamal encantado - Gómez igual para el Real Betis",
-          "summary": "Gran partido en La Liga: el tercer Betis Sevilla recibe al impecable FC Barcelona. Los catalanes han ganado todos los partidos oficiales de esta temporada.",
+          "title": "La Liga: Gomez responde al FC Barcelona en el partidazo ante el Real Betis",
+          "summary": "El Real Betis recibe al FC Barcelona en el gran duelo de Primera División e iguala por medio de Gomez tras un recital de Lamine Yamal.",
+          "body": [
+            "El tercer clasificado, llegado desde Sevilla, reta a un FC Barcelona intratable. El cuadro catalán aterrizó con un pleno absoluto tras haber ganado todos sus partidos oficiales disputados esta temporada. En un choque de altísimo nivel, Lamine Yamal encendió la mecha con su magia antes de que Gomez firmara el empate provisional para el conjunto andaluz."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "مباشر! لامين يامال مسحور - غوميز يساوي ريال بيتيس",
-          "summary": "أفضل مباراة في الدوري الإسباني: يستقبل بيتيس إشبيلية الثالث نادي برشلونة الذي لا تشوبه شائبة سابقًا. تمكن الكاتالونيون من الفوز بجميع المباريات التنافسية السابقة هذا الموسم.",
+          "title": "الدوري الإسباني: غوميز يعادل النتيجة لريال بيتيس أمام برشلونة",
+          "summary": "ريال بيتيس يستضيف برشلونة في قمة الدوري الإسباني وغوميز يدرك التعادل بعد ليلة ساحرة من لامين يامال.",
+          "body": [
+            "تحدى صاحب المركز الثالث في إشبيلية فريق برشلونة صاحب السجل الخالي من أي عثرة، إذ دخل الكتالونيون اللقاء بالعلامة الكاملة بعدما حسموا جميع مبارياتهم الرسمية هذا الموسم. وفي قمة كروية مشتعلة، خطف لامين يامال الأضواء بلمساته المبهرة، قبل أن يسجل غوميز هدف التعادل لأصحاب الأرض الأندلسيين."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.kicker.de/betis-gegen-barcelona-2026-la-liga-5223873/spielbericht#omrss",
@@ -165,7 +221,20 @@
           "url": "https://www.kicker.de/betis-gegen-barcelona-2026-la-liga-5223873/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-17T19:01:31+00:00"
+        }
+      }
     },
     {
       "id": "f2bda003fdb7",
@@ -221,7 +290,12 @@
           "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/deutschland-bundesliga/ma12194206/bayern-muenchen_rb-leipzig/liveticker"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ff96602eb38a",
@@ -229,27 +303,48 @@
       "summary": "Lucas Passerini es el goleador de Belgrano en el semestre y se presenta como una gran amenaza para el equipo de Ponzio, que viene dejando dudas atrás.",
       "i18n": {
         "es": {
-          "title": "El \"Haaland sudamericano\" que quiso Boca y buscará darle otro golpe a River",
-          "summary": "Lucas Passerini es el goleador de Belgrano en el semestre y se presenta como una gran amenaza para el equipo de Ponzio, que viene dejando dudas atrás.",
-          "needs_translation": false
+          "title": "Lucas Passerini, la gran carta de gol de Belgrano para medirse con River",
+          "summary": "Lucas Passerini encabeza el ataque de Belgrano frente a River tras un mercado de pases donde Boca intentó llevárselo sin éxito.",
+          "body": [
+            "Con tres tantos en el semestre convertidos de zurda, derecha y penal, el atacante de 32 años se consolidó como la principal referencia de área para Ricardo Zielinski. Su rendimiento motivó al presidente Luis Artime a calificarlo como el «Haaland sudamericano» para blindarlo e inflar su cotización ante el interés xeneize en julio.",
+            "El exgoleador de Palestino y Cruz Azul, que acumula 23 gritos en 89 presentaciones con la camiseta celeste, buscará explotar las debilidades defensivas de un rival que apenas mantuvo el arco invicto en uno de sus últimos ocho compromisos."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "The \"South American Haaland\" that Boca wanted and will seek to give River another blow",
-          "summary": "Lucas Passerini is Belgrano's scorer in the semester and presents himself as a great threat to the Ponzio team, which has been leaving doubts behind.",
+          "title": "Lucas Passerini: Belgrano's primary goal threat to take on River",
+          "summary": "Lucas Passerini spearheads Belgrano's attack against River following a transfer window in which Boca failed to lure him away.",
+          "body": [
+            "With three goals this term — scored with his left foot, right foot and from the penalty spot — the 32-year-old forward has established himself as Ricardo Zielinski's focal point in the box. His form prompted club president Luis Artime to label him the \"South American Haaland\" in an effort to tie him down and drive up his asking price amid Boca's interest in July.",
+            "The former Palestino and Cruz Azul striker, who boasts 23 goals in 89 appearances for Belgrano, will look to capitalize on the defensive frailties of an opponent with just one clean sheet in their last eight matches."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Le « Haaland sud-américain » que Boca a voulu et cherchera à donner un autre coup à River",
-          "summary": "Lucas Passerini est le buteur de Belgrano dans le semestre et se présente comme une grande menace pour l'équipe de Ponzio, qui laisse des doutes derrière elle.",
+          "title": "Lucas Passerini, le fer de lance de Belgrano pour défier River",
+          "summary": "Lucas Passerini mène l'attaque de Belgrano face à River, après un mercato où Boca a tenté sans succès de s'attacher ses services.",
+          "body": [
+            "Auteur de trois buts ce semestre — du gauche, du droit et sur penalty —, l'avant-centre de 32 ans s'est imposé comme le point d'ancrage offensif de Ricardo Zielinski. Ses prestations ont poussé le président Luis Artime à le surnommer le « Haaland sud-américain », une manière de blinder son contrat et de faire grimper sa valeur face à l'intérêt xeneize en juillet.",
+            "L'ancien buteur de Palestino et Cruz Azul, qui compte 23 réalisations en 89 matches sous le maillot celeste, tentera d'exploiter les failles défensives d'un adversaire qui n'a réussi qu'une seule clean sheet sur ses huit dernières sorties."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "\"هالاند أمريكا الجنوبية\" التي أرادها بوكا وستسعى لإعطاء ريفر ضربة أخرى",
-          "summary": "لوكاس باسيريني هو هداف بلغرانو في الفصل الدراسي ويقدم نفسه على أنه تهديد كبير لفريق بونزيو، الذي ترك الشكوك وراءه.",
+          "title": "لوكاس باسيريني.. سلاح بيلغرانو الهجومي لإسقاط ريفر",
+          "summary": "يقود لوكاس باسيريني هجوم بيلغرانو أمام ريفر بعد ميركاتو شهد محاولات غير ناجحة من بوكا لضمه.",
+          "body": [
+            "ثلاثة أهداف سجلها هذا النصف من الموسم بالقدمين اليسرى واليمنى ومن ركلة جزاء، جعلت المهاجم صاحب الـ32 عاماً الخيار الأول في صندوق العمليات لدى المدرب ريكاردو زيلينسكي. تألق دفع رئيس النادي لويس أرتيمي إلى تلقيبه بـ«هالاند أمريكا الجنوبية» لتحصينه ورفع قيمته السوقية أمام اهتمام بوكا في يوليو.",
+            "ويعول هداف بالستينو وكروز أزول السابق، صاحب الـ23 هدفاً في 89 مباراة مع الفريق السماوي، على استغلال الثغرات الدفاعية لمنافس لم يخرج بشباك نظيفة سوى مرة واحدة في آخر ثماني مباريات."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-plate-lucas-passerini-belgrano-goles-asistencias_0_yV99AhiGnw.html",
@@ -271,7 +366,20 @@
           "url": "https://www.ole.com.ar/river-plate/river-plate-lucas-passerini-belgrano-goles-asistencias_0_yV99AhiGnw.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-17T19:01:34+00:00"
+        }
+      }
     },
     {
       "id": "9148625a449a",
@@ -321,7 +429,12 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-caf-le-fc-san-pedro-et-le-fc-nouadhibou-a-egalite-a-la-pause/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "79e0d6b0c64a",
@@ -329,27 +442,44 @@
       "summary": "Andoni Iraola Liverpool's demanding schedule is putting his players in a \"delicate situation\" after Dominik Szoboszlai was forced off with a first-half injury during their 2-1 victory at Brentford.",
       "i18n": {
         "en": {
-          "title": "Liverpool players in 'delicate' situation with 'demanding' schedule - Iraola",
-          "summary": "Andoni Iraola Liverpool's demanding schedule is putting his players in a \"delicate situation\" after Dominik Szoboszlai was forced off with a first-half injury during their 2-1 victory at Brentford.",
-          "needs_translation": false
+          "title": "Iraola: Szoboszlai injury shows Liverpool's 'delicate' schedule",
+          "summary": "Dominik Szoboszlai suffered a first-half injury during Liverpool's 2-1 win at Brentford, an issue Andoni Iraola warned highlights a demanding fixture schedule.",
+          "body": [
+            "The Hungarian midfielder was forced off before the break in west London. Iraola noted the relentless calendar is putting Liverpool players in a \"delicate situation\", even as the visitors held on to claim three points."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Les joueurs de Liverpool en situation « délicate » avec un calendrier « exigeant » - Iraola",
-          "summary": "Le calendrier exigeant d'Andoni Iraola Liverpool met ses joueurs dans une « situation délicate » après que Dominik Szoboszlai ait été contraint de partir avec une blessure en première mi-temps lors de leur victoire 2-1 à Brentford.",
+          "title": "Blessure de Szoboszlai : Iraola pointe le calendrier de Liverpool",
+          "summary": "Sorti sur blessure lors de la victoire de Liverpool à Brentford (2-1), Dominik Szoboszlai illustre la situation délicate des Reds selon Andoni Iraola.",
+          "body": [
+            "Le milieu hongrois a dû céder sa place avant la mi-temps. Pour Andoni Iraola, cet enchaînement infernal de matches place l'effectif des Reds dans une position critique, malgré le succès ramené de l'extérieur."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Jugadores del Liverpool en situación 'delicada' con calendario 'exigente' - Iraola",
-          "summary": "Andoni Iraola El exigente calendario del Liverpool está poniendo a sus jugadores en una \"situación delicada\" después de que Dominik Szoboszlai se viera obligado a retirarse por una lesión en la primera mitad durante su victoria por 2-1 en Brentford.",
+          "title": "Iraola señala el desgaste de Liverpool tras la lesión de Szoboszlai",
+          "summary": "La lesión de Dominik Szoboszlai en el triunfo de Liverpool por 1-2 ante Brentford refleja la delicada situación del equipo, según advirtió Andoni Iraola.",
+          "body": [
+            "El centrocampista húngaro tuvo que retirarse antes del descanso. Iraola subrayó que el exigente calendario somete a los futbolistas a un desgaste extremo, a pesar de haber sumado los tres puntos a domicilio."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "لاعبو ليفربول في وضع \"حساس\" مع جدول \"متطلب\" - إيرولا",
-          "summary": "جدول أندوني إيراولا ليفربول المتطلب يضع لاعبيه في \"وضع حساس\" بعد أن أجبر دومينيك زوبوشلاي على الخروج بإصابة في الشوط الأول خلال فوزه 2-1 على برينتفورد.",
+          "title": "إيراولا يحذر من إجهاد لاعبي ليفربول بعد إصابة سوبوسلاي",
+          "summary": "تعرض دومينيك سوبوسلاي لإصابة خلال فوز ليفربول على برينتفورد بنتيجة 2-1، في انتكاسة اعتبر أندوني إيراولا أنها تجسد الوضع الدقيق بسبب ضغط المباريات.",
+          "body": [
+            "واضطر لاعب الوسط المجري لمغادرة الملعب خلال الشوط الأول. وأكد إيراولا أن الجدول المزدحم يضع عناصر ليفربول في موقف معقد، رغم نجاحهم في اقتناص نقاط اللقاء كاملة خارج أرضهم."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/videos/ckgelqlz37w3o?at_medium=RSS&at_campaign=rss",
@@ -371,7 +501,20 @@
           "url": "https://www.bbc.co.uk/sport/football/videos/ckgelqlz37w3o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-17T19:01:40+00:00"
+        }
+      }
     },
     {
       "id": "f8b6e4cae422",
@@ -379,27 +522,44 @@
       "summary": "La RS Berkane mène 2-0 face à Star Sport Academy à la mi-temps du match aller du deuxième tour préliminaire de la Ligue des champions de la CAF.",
       "i18n": {
         "fr": {
-          "title": "Ligue des champions CAF : Lamlioui signe un doublé, Berkane mène 2-0 à la pause",
-          "summary": "La RS Berkane mène 2-0 face à Star Sport Academy à la mi-temps du match aller du deuxième tour préliminaire de la Ligue des champions de la CAF.",
-          "needs_translation": false
+          "title": "Ligue des champions CAF : Berkane fait le trou à la pause grâce à Lamlioui",
+          "summary": "Portée par un doublé de Lamlioui, la RS Berkane mène 2-0 contre Star Sport Academy à la mi-temps de la Ligue des champions CAF.",
+          "body": [
+            "Cette manche aller du deuxième tour préliminaire a rapidement tourné à l'avantage du club marocain. Grâce aux deux réalisations de son attaquant dans le premier acte, la formation de Berkane a pris une nette option avant d'aborder la seconde période face à Star Sport Academy."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "CAF Champions League: Lamlioui signs a double, Berkane leads 2-0 on break",
-          "summary": "RS Berkane leads 2-0 against Star Sport Academy at half-time of the first leg of the second preliminary round of the CAF Champions League.",
+          "title": "CAF Champions League: Berkane take command at the break thanks to Lamlioui",
+          "summary": "Powered by a Lamlioui brace, RS Berkane lead Star Sport Academy 2-0 at half-time in the CAF Champions League.",
+          "body": [
+            "This second preliminary round first leg quickly tilted in favor of RS Berkane. Thanks to the two goals scored in the first act, the Moroccan club took firm control before heading into the second half against Star Sport Academy."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Liga de Campeones CAF: Lamlioui firma un doblete, Berkane lleva 2-0 al descanso",
-          "summary": "La RS Berkane lidera 2-0 ante la Star Sport Academy en el descanso del partido de ida de la segunda ronda preliminar de la Liga de Campeones de la CAF.",
+          "title": "Champions CAF: Berkane se impone al descanso con doblete de Lamlioui",
+          "summary": "Con un doblete de Lamlioui, RS Berkane gana 2-0 a Star Sport Academy al descanso de la ida en la Liga de Campeones de la CAF.",
+          "body": [
+            "Este duelo del segundo asalto preliminar se decantó con rapidez para el conjunto marroquí. Con dos tantos en el primer tiempo, RS Berkane encarriló el choque antes del regreso de vestuarios ante Star Sport Academy."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري أبطال أفريقيا: اللمليوي يوقع عقدًا مزدوجًا، وبركان يتقدم 2-0 في استراحة",
-          "summary": "يتقدم RS Berkane 2-0 ضد أكاديمية ستار سبورت في الشوط الأول من الجولة التمهيدية الثانية لدوري أبطال أفريقيا.",
+          "title": "دوري أبطال إفريقيا: نهضة بركان يتقدم بثنائية لمليوي في الشوط الأول",
+          "summary": "بفضل ثنائية لمليوي، يتقدم نهضة بركان على ستار سبورت أكاديمي بهدفين دون رد مع نهاية الشوط الأول في دوري أبطال إفريقيا.",
+          "body": [
+            "مالت كفة ذهاب الدور التمهيدي الثاني سريعاً لمصلحة الفريق المغربي. وسجل لمليوي هدفي الشوط الأول ليمنح نهضة بركان أسبقية واضحة ومريحة قبل خوض نصف المباراة الثاني أمام ستار سبورت أكاديمي."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/football/ligue-des-champions-caf-lamlioui-signe-un-double-berkane-mene-2-0-a-la-pause/",
@@ -421,7 +581,20 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-caf-lamlioui-signe-un-double-berkane-mene-2-0-a-la-pause/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-17T19:01:45+00:00"
+        }
+      }
     },
     {
       "id": "c8ac2d444655",
@@ -521,7 +694,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20261017/1004239908/enzo-maresca-supera-pep-guardiola-bate-record-historico.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "36f7b0347ded",
@@ -529,27 +707,48 @@
       "summary": "Fue 3-2 para los Ciudadanos, que se recuperaron rápidamente tras el golpe sufrido en la Champions.",
       "i18n": {
         "es": {
-          "title": "Con un doblete de Haaland y un rato de Enzo Fernández, el City le ganó al Ipswich de Palacios y sigue con puntaje ideal en la Premier",
-          "summary": "Fue 3-2 para los Ciudadanos, que se recuperaron rápidamente tras el golpe sufrido en la Champions.",
-          "needs_translation": false
+          "title": "El Manchester City supera al Ipswich con doblete de Haaland y mantiene el pleno",
+          "summary": "El Manchester City venció 3-2 a un combativo Ipswich con dos tantos de Erling Haaland y sumó su séptimo triunfo consecutivo en la Premier League.",
+          "body": [
+            "Phil Foden abrió el marcador a los 19 minutos, pero Daizen Maeda igualó de inmediato para la visita. Entonces emergió Haaland, quien desniveló el encuentro a los 34 y 69 minutos para alcanzar 12 festejos en 10 partidos en la temporada, aunque encendió las alarmas al retirarse con molestias físicas tras recibir un pisotón.",
+            "Zian Flemming acortó distancias en el tiempo de descuento para el conjunto de Palacios, que completó los noventa minutos. En el cuadro ciudadano, Enzo Fernández disputó casi todo el segundo tiempo tras reemplazar a Mateo Kovacic a los 50 minutos, asegurando tres puntos vitales antes de recibir al AEK de Atenas en el plano europeo."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "With a double from Haaland and some time from Enzo Fernández, City beat Ipswich de Palacios and continue to score ideally in the Premier League",
-          "summary": "It was 3-2 for the Ciudadanos, who recovered quickly after the blow suffered in the Champions League.",
+          "title": "Manchester City edge Ipswich with Haaland brace to stay perfect",
+          "summary": "Manchester City held off a spirited Ipswich side 3-2 thanks to a brace from Erling Haaland, securing their seventh consecutive victory in the Premier League.",
+          "body": [
+            "Phil Foden broke the deadlock in the 19th minute, but Daizen Maeda hit back immediately for the visitors. Haaland then took charge, striking in the 34th and 69th minutes to take his tally to 12 goals in 10 games this season, though he sparked injury concerns when he hobbled off after taking a stamp.",
+            "Zian Flemming pulled one back in stoppage time for Palacios' side, who played the full ninety minutes. For the Citizens, Enzo Fernández featured for most of the second half after replacing Mateo Kovacic in the 50th minute, locking down three vital points before hosting AEK Athens in European action."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Avec un doublé de Haaland et un temps d'Enzo Fernández, City a battu l'Ipswich de Palacios et continue avec un score idéal en Premier League.",
-          "summary": "C'était 3-2 pour les Citizens, qui se sont rapidement rétablis après le coup porté en Ligue des champions.",
+          "title": "Manchester City vient à bout d'Ipswich grâce à un doublé de Haaland et reste parfait",
+          "summary": "Vainqueur 3-2 d'une accrocheuse équipe d'Ipswich grâce à deux réalisations d'Erling Haaland, Manchester City a enchaîné une septième victoire de rang en Premier League.",
+          "body": [
+            "Phil Foden a ouvert le score à la 19e minute, mais Daizen Maeda a répliqué dans la foulée pour les visiteurs. C'est alors que Haaland a fait basculer la rencontre aux 34e et 69e minutes, portant son total à 12 buts en 10 matches cette saison, avant de susciter l'inquiétude en cédant sa place après un coup reçu sur le pied.",
+            "Zian Flemming a réduit l'écart dans le temps additionnel pour la formation de Palacios, aligné durant l'intégralité des 90 minutes. Côté mancunien, Enzo Fernández a disputé l'essentiel de la seconde période après avoir remplacé Mateo Kovacic à la 50e minute, scellant trois points précieux avant d'accueillir l'AEK Athènes sur la scène européenne."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "مع ضعف من هالاند وبعض الوقت من إنزو فرنانديز، فاز سيتي على إيبسويتش دي بالاسيوس واستمر في التسجيل بشكل مثالي في الدوري الممتاز",
-          "summary": "كانت النتيجة 3-2 لثيودادانوس، الذي تعافى بسرعة بعد الضربة التي عانى منها في دوري أبطال أوروبا.",
+          "title": "مانشستر سيتي يتخطى إيبسويتش بثنائية هالاند ويواصل انطلاقته المثالية",
+          "summary": "تغلب مانشستر سيتي بنتيجة 3-2 على إيبسويتش العنيد بفضل هدفين من إرلينغ هالاند، محققاً انتصاره السابع توالياً في الدوري الإنجليزي الممتاز.",
+          "body": [
+            "افتتح فيل فودين التسجيل في الدقيقة 19، غير أن دايزن مايدا أدرك التعادل سريعاً للضيوف. وتكفل هالاند بحسم الموقعة بهدفين في الدقيقتين 34 و69 رافعاً رصيده إلى 12 هدفاً في 10 مباريات هذا الموسم، قبل أن يثير القلق بمغادرته الميدان متأثراً بآلام بعد تعرضه لدهس قوي.",
+            "وقلص زيان فليمينغ الفارق في الوقت بدل الضائع لفريق بالاسيوس، الذي خاض الدقائق التسعين كاملة. وفي صفوف السيتيزنز، لعب إنزو فرنانديز معظم مجريات الشوط الثاني بعدما حل بديلاً لماتيو كوفاسيتش في الدقيقة 50، ليحصد الفريق ثلاث نقاط ثمينة قبل استضافة أيك أثينا على الصعيد القاري."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/inglaterra/city-premier-inglaterra-ipwsich-doblete-haaland_0_cRX6ovNujd.html",
@@ -571,7 +770,20 @@
           "url": "https://www.ole.com.ar/futbol-internacional/inglaterra/city-premier-inglaterra-ipwsich-doblete-haaland_0_cRX6ovNujd.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-17T19:01:52+00:00"
+        }
+      }
     },
     {
       "id": "9de7f09a952f",
@@ -627,7 +839,12 @@
           "url": "https://www.kicker.de/live-leipzig-ueberfordert-kanes-langer-ball-leitet-2-0-ein-1261678/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3a987a23a506",
@@ -635,27 +852,48 @@
       "summary": "Ya lo hace en cada partido. El martes en Turquía fue decisivo con dos asistencias, pero Lamine Yamal , 19 años, ha tardado 10 minutos en marcar uno de sus mejores goles en La Cartuja para abrir el marcador ante el Betis.",
       "i18n": {
         "es": {
-          "title": "Obra de arte de Lamine en Sevilla",
-          "summary": "Ya lo hace en cada partido. El martes en Turquía fue decisivo con dos asistencias, pero Lamine Yamal , 19 años, ha tardado 10 minutos en marcar uno de sus mejores goles en La Cartuja para abrir el marcador ante el Betis.",
-          "needs_translation": false
+          "title": "Golazo memorable de Lamine Yamal para abrir el marcador ante el Betis",
+          "summary": "Lamine Yamal adelantó al Barcelona ante el Betis en La Cartuja con una genialidad individual a los diez minutos de juego.",
+          "body": [
+            "Tras asociarse con Koundé desde campo propio, el atacante azulgrana desbordó a Facundo Bernal con un taconazo por detrás de la pierna y clavó un zurdazo con rosca desde el vértice del área. La maniobra asombró al estadio y desató el festejo efusivo de Hansi Flick.",
+            "La diana supuso el octavo tanto del extremo en el campeonato liguero. En lo que va de curso, el canterano añade otra anotación en Champions League y suma nueve asistencias entre el torneo doméstico y Europa."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Lamine's artwork in Seville",
-          "summary": "He already does it in every game. On Tuesday in Turkey he was decisive with two assists, but Lamine Yamal , 19, has taken 10 minutes to score one of his best goals at La Cartuja to open the scoring against Betis.",
+          "title": "Lamine Yamal scores memorable stunner to open the scoring against Betis",
+          "summary": "Lamine Yamal fired Barcelona ahead against Betis at La Cartuja with a moment of individual brilliance just ten minutes into the match.",
+          "body": [
+            "Starting deep in his own half with a one-two alongside Koundé, the teenage winger bypassed Facundo Bernal with a slick behind-the-leg backheel before curling a left-footed strike home from the edge of the area. The strike drew gasps across the stadium and exuberant praise from Hansi Flick.",
+            "The effort marked Yamal's eighth league goal of the season. The academy graduate also boasts a Champions League strike alongside nine assists spread across domestic and continental fixtures."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Oeuvre d'art de Lamine à Séville",
-          "summary": "Il le fait déjà à chaque match. Mardi en Turquie a été décisif avec deux passes décisives, mais Lamine Yamal , 19 ans, a mis 10 minutes pour marquer l'un de ses meilleurs buts à La Cartuja pour ouvrir le score contre Le Real Betis.",
+          "title": "Le bijou mémorable de Lamine Yamal pour ouvrir le score face au Betis",
+          "summary": "Lamine Yamal a donné l'avantage au FC Barcelona contre Le Real Betis à La Cartuja d'un coup de génie individuel dès la dixième minute.",
+          "body": [
+            "Parti de son propre camp sur un double une-deux avec Koundé, l'ailier catalan a effacé Facundo Bernal d'une talonnade derrière la jambe d'appui avant d'enrouler une frappe pure du gauche depuis l'angle de la surface. Une inspiration qui a bluffé le public et fait exulter Hansi Flick.",
+            "Ce chef-d'œuvre porte à huit unités le bilan du joueur de 19 ans en Liga cette saison. Le jeune international compte également un but en Ligue des champions et neuf passes décisives toutes compétitions confondues."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "أعمال لامين الفنية في إشبيلية",
-          "summary": "إنه يفعل ذلك بالفعل في كل مباراة. يوم الثلاثاء في تركيا كان حاسما مع اثنين من تمريرات حاسمة، ولكن الأمين يامال (19 عاما) استغرق 10 دقائق لتسجيل واحد من أفضل أهدافه في لا كارتوجا لفتح التسجيل ضد بيتيس.",
+          "title": "هدف رائع من لامين جمال يفتتح به التسجيل أمام بيتيس",
+          "summary": "منح لامين جمال التقدم لصالح برشلونة أمام بيتيس على ملعب لا كارتوخا بعد مرور عشر دقائق فقط إثر لمحة فردية ساحرة.",
+          "body": [
+            "انطلق المهاجم الشاب من منتصف ملعبه وتبادل الكرة مع زميله كوندي، ثم راوغ فاكوندو برنال بلمسة كعب ماكرة من خلف قدمه قبل أن يرسل تسديدة يسارية لولبية سكنت الشباك من زاوية منطقة الجزاء. اللقطة أبهرت الحاضرين في المدرجات ولاقت احتفالاً حاراً من المدرب هانزي فليك.",
+            "ورفع هذا الهدف رصيد اللاعب إلى ثمانية أهداف في الدوري الإسباني هذا الموسم، إلى جانب هدف في دوري أبطال أوروبا وتسع تمريرات حاسمة بين المسابقات المحلية والقارية."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261017/1004239909/obra-arte-lamine-sevilla.html",
@@ -677,7 +915,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261017/1004239909/obra-arte-lamine-sevilla.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 8,
+        "source_read": "full"
+      }
     },
     {
       "id": "31853623fa94",
@@ -735,33 +978,54 @@
       "summary": "Marcus Thuram war bei seinem Treffer gegen Bologna in einer anderen Etage unterwegs als die Defensive. Seinen Treffer gibt es hier im Video.",
       "i18n": {
         "de": {
-          "title": "Thuram schraubt sich hoch und trifft: Inter gelingt der Ausgleich",
-          "summary": "Marcus Thuram war bei seinem Treffer gegen Bologna in einer anderen Etage unterwegs als die Defensive. Seinen Treffer gibt es hier im Video.",
-          "needs_translation": false
+          "title": "Kopfball-Ausgleich: Thuram trifft für Inter gegen Bologna",
+          "summary": "Marcus Thuram hat Inter Mailand mit einem wuchtigen Kopfballtreffer gegen den FC Bologna zum Ausgleich verholfen.",
+          "body": [
+            "Der französische Stürmer schraubte sich im Strafraum hoch über die gegnerische Abwehr und verwandelte sicher. Das Tor ist in den Video-Highlights zu sehen."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Thuram screws himself up and hits: Inter succeeds in balancing",
-          "summary": "Marcus Thuram was on a different floor than the defensive when he scored against Bologna. His hit is here in the video.",
+          "title": "Bullet header: Thuram strikes for Inter against Bologna",
+          "summary": "Marcus Thuram pulled Inter level against Bologna with a commanding header after rising well above the visitors' defense.",
+          "body": [
+            "The French striker dominated his duel in the penalty box to power the ball home and put Milan back in the match. The goal can be seen in the video highlights."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Thuram se relève et rencontre : Inter parvient à compenser",
-          "summary": "Marcus Thuram était à un autre étage que la défensive lors de son coup contre Bologne. Sa correspondance se trouve ici dans la vidéo.",
+          "title": "Égalisation de la tête : Thuram frappe pour l'Inter face à Bologna",
+          "summary": "Grâce à une puissante détente dans la surface, Marcus Thuram a permis à l'Inter d'égaliser de la tête face à Bologna.",
+          "body": [
+            "L'attaquant français a pris le dessus sur la défense pour propulser le ballon au fond des filets et remettre les Milanais à hauteur. Le but est à revoir en vidéo."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Thuram se enrosca y da en el blanco: el Inter logra el equilibrio",
-          "summary": "Marcus Thuram estaba en una planta diferente a la defensiva en su gol contra Bolonia. Su coincidencia está aquí en el vídeo.",
+          "title": "Testarazo y empate: Thuram marca para el Inter ante el Bologna",
+          "summary": "Marcus Thuram devolvió las tablas al marcador para el Inter con un imponente cabezazo ante el Bologna tras imponerse en el aire.",
+          "body": [
+            "El delantero francés se elevó con potencia en el área para batir a la defensa visitante y firmar el empate. El gol está disponible en vídeo."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "يفسد ثورام نفسه ويضرب: ينجح الإنتر في الموازنة",
-          "summary": "كان ماركوس ثورام في طابق مختلف عن الدفاع عندما سجل ضد بولونيا. ضربته هنا في الفيديو.",
+          "title": "رأسية متقنة: تورام يمنح إنتر التعادل أمام بولونيا",
+          "summary": "أدرك المهاجم ماركوس تورام التعادل لصالح إنتر ميلان أمام بولونيا بضربة رأس متقنة بعد ارتقاء مميز داخل منطقة الجزاء.",
+          "body": [
+            "وتفوق اللاعب الفرنسي في الهواء على مدافعي المنافس ليودع الكرة في الشباك ويعيد فريقه إلى المباراة. الهدف متاح للمشاهدة عبر مقطع الفيديو."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.kicker.de/thuram-schraubt-sich-hoch-und-trifft-inter-gelingt-der-ausgleich-1262348/video#omrss",
@@ -783,7 +1047,12 @@
           "url": "https://www.kicker.de/thuram-schraubt-sich-hoch-und-trifft-inter-gelingt-der-ausgleich-1262348/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "rss"
+      }
     },
     {
       "id": "2873036ee976",
@@ -791,33 +1060,54 @@
       "summary": "Lamine Yamal ist weiterhin nicht zu stoppen und legte im Trikot von Barcelona den nächsten sehenswerten Treffer nach. Das Tor gibt es hier im Video.",
       "i18n": {
         "de": {
-          "title": "Ihm gelingt einfach alles: Nächstes Traumtor von Lamine Yamal für Barca",
-          "summary": "Lamine Yamal ist weiterhin nicht zu stoppen und legte im Trikot von Barcelona den nächsten sehenswerten Treffer nach. Das Tor gibt es hier im Video.",
-          "needs_translation": false
+          "title": "Nächstes Traumtor: Lamine Yamal glänzt erneut für Barça",
+          "summary": "Lamine Yamal setzt seinen Lauf beim FC Barcelona fort und erzielt den nächsten sehenswerten Treffer für die Katalanen.",
+          "body": [
+            "Das spanische Talent glänzt weiter im Trikot von Barcelona und beweist mit einer weiteren Aktion seine Topform. Das Video des Tores zeigt die Leichtigkeit, mit der Yamal die gegnerische Abwehr derzeit vor Probleme stellt."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "He succeeds in everything: Next dream goal from Lamine Yamal for Barca",
-          "summary": "Lamine Yamal is still unstoppable and scored the next worthwhile goal in the Barcelona jersey. The gate is here in the video.",
+          "title": "Another wondergoal: Lamine Yamal shines again for Barça",
+          "summary": "Lamine Yamal continues his impressive form for FC Barcelona, producing another eye-catching strike for the Catalan club.",
+          "body": [
+            "The Spanish youngster continues to impress in the Barcelona shirt, showcasing his touch with another decisive finish. Video footage of the goal captures the ease with which Yamal is currently troubling opposing defences."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Il réussit tout : le prochain but de rêve de Lamine Yamal pour le Barça",
-          "summary": "Lamine Yamal est toujours inarrêtable et a marqué le prochain but digne d'être vu dans le maillot de Barcelone. La porte se trouve ici dans la vidéo.",
+          "title": "Nouveau bijou : Lamine Yamal s'illustre encore avec le Barça",
+          "summary": "Lamine Yamal poursuit sa série avec le FC Barcelona en signant une nouvelle réalisation remarquable sous les couleurs catalanes.",
+          "body": [
+            "L'attaquant espagnol confirme son excellente forme sous le maillot catalan avec un geste décisif plein de maîtrise. L'action du but, disponible en vidéo, illustre l'aisance avec laquelle Yamal bouscule actuellement les défenses adverses."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Lo consigue todo: el próximo gol de ensueño de Lamine Yamal para el Barça",
-          "summary": "Lamine Yamal sigue siendo imparable y marcó el siguiente gol digno de ver con la camiseta del Barcelona. La puerta está aquí en el vídeo.",
+          "title": "Nuevo golazo: Lamine Yamal vuelve a brillar con el Barça",
+          "summary": "Lamine Yamal prolonga su gran momento en el FC Barcelona y firma otro gol de bella factura con el conjunto catalán.",
+          "body": [
+            "El atacante español sigue destacando con la camiseta azulgrana y ratifica su estado de gracia con una maniobra precisa. La secuencia del tanto, disponible en vídeo, muestra la soltura con la que Yamal supera a las defensas rivales."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "نجح في كل شيء: هدف الحلم التالي من لامين يامال لبرشلونة",
-          "summary": "لا يزال لامين يامال لا يمكن إيقافه وسجل الهدف التالي الجدير بالاهتمام في قميص برشلونة. البوابة هنا في الفيديو.",
+          "title": "هدف رائع جديد: لامين يامال يواصل التوهج مع برشلونة",
+          "summary": "واصل النجم الواعد لامين يامال تألقه اللافت مع نادي برشلونة، بعدما سجل هدفاً مذهلاً جديداً بقميص الفريق الكتالوني.",
+          "body": [
+            "ويؤكد المهاجم الإسباني الشاب جاهزيته العالية بلمحة فنية متقنة داخل شباك المنافس. وتُظهر لقطات الفيديو السلاسة الكبيرة التي يتعامل بها يامال مع المدافعين خلال الفترة الحالية."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.kicker.de/ihm-gelingt-einfach-alles-naechstes-traumtor-von-lamine-yamal-fuer-barca-1262347/video#omrss",
@@ -839,7 +1129,12 @@
           "url": "https://www.kicker.de/ihm-gelingt-einfach-alles-naechstes-traumtor-von-lamine-yamal-fuer-barca-1262347/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 4,
+        "source_read": "rss"
+      }
     },
     {
       "id": "fbcdc9e563ac",
