@@ -65,7 +65,12 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-caf-la-composition-de-lesperance-tunis-contre-al-swehly/"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "06081684b5d0",
@@ -73,27 +78,52 @@
       "summary": "Le multiplex de la 7e journée de Ligue 1 a vu le Paris FC venir à bout du Stade Rennais (4-3), Monaco s’incliner sur la pelouse de Lorient (1-0) et Auxerre s’imposer solidement contre le HAC (1-3).",
       "i18n": {
         "fr": {
-          "title": "Ligue 1 : le PFC remporte un match dingue contre Rennes, Monaco se rate à Lorient, Auxerre autoritaire au Havre",
-          "summary": "Le multiplex de la 7e journée de Ligue 1 a vu le Paris FC venir à bout du Stade Rennais (4-3), Monaco s’incliner sur la pelouse de Lorient (1-0) et Auxerre s’imposer solidement contre le HAC (1-3).",
-          "needs_translation": false
+          "title": "Ligue 1 : Monaco chute à Lorient, festival du Paris FC",
+          "summary": "L'AS Monaco a concédé sa première défaite de la saison à Lorient (1-0), manquant l'opportunité de reprendre la tête de la Ligue 1.",
+          "body": [
+            "Surpris au Moustoir sur un penalty de Noah Cadiou concédé par Nazinho à l'heure de jeu, les hommes de Filipe Luis ont buté sur un bloc lorientais hermétique.",
+            "À Jean-Bouin, le Paris FC s'est hissé sur le podium après un duel spectaculaire contre Rennes (4-3) ponctué de quatre penalties, dont un triplé d'Estéban Lepaul pour les Bretons.",
+            "Les doublés de Maxime Lopez et Lassine Sinayoko ont scellé le succès parisien dans le temps additionnel, tandis qu'Auxerre est allé s'imposer avec autorité au Havre (1-3)."
+          ],
+          "format": "bullets",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Ligue 1: the PFC wins a crazy match against Rennes, Monaco misses in Lorient, Authoritarian Auxerre in Le Havre",
-          "summary": "The multiplex of the 7th day of Ligue 1 saw Paris FC defeat the Stade Rennais (4-3), Monaco lose on the lawn of Lorient (1-0) and Auxerre win solidly against the HAC (1-3).",
+          "title": "Ligue 1: Monaco slip at Lorient, Paris FC edge Rennes 4-3",
+          "summary": "AS Monaco suffered their first defeat of the season at Lorient (1-0), squandering the chance to reclaim top spot in Ligue 1.",
+          "body": [
+            "Undone at the Moustoir by a second-half Noah Cadiou penalty, Filipe Luis's side failed to find a way past a resolute home defence.",
+            "At Jean-Bouin, Paris FC climbed onto the podium following a dramatic 4-3 win over Rennes, an encounter featuring four penalties including an Estéban Lepaul spot-kick hat-trick.",
+            "Braces from Maxime Lopez and Lassine Sinayoko carried the hosts over the line, while Auxerre rounded off the afternoon with a 3-1 victory at Le Havre."
+          ],
+          "format": "bullets",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Ligue 1: el PFC gana un partido loco contra el Rennes, Mónaco se pierde en Lorient, Auxerre autoritario en Le Havre",
-          "summary": "El múltiplex de la séptima jornada de la Ligue 1 vio al Paris FC derrotar al Stade Rennais (4-3), al Mónaco caer en el césped de Lorient (1-0) y al Auxerre imponerse firmemente contra el hac (1-3).",
+          "title": "Ligue 1: Monaco tropieza en Lorient, Paris FC tumba a Rennes",
+          "summary": "El AS Monaco encajó su primera derrota liguera en Lorient (1-0) y dejó escapar la oportunidad de recuperar el liderato del campeonato francés.",
+          "body": [
+            "Un penalti transformado por Noah Cadiou tras la reanudación castigó al conjunto de Filipe Luis, incapaz de superar el ordenado repliegue del Moustoir.",
+            "En Jean-Bouin, el Paris FC se aupó a los puestos de honor tras superar 4-3 a Rennes en un cruce eléctrico con cuatro penaltis y triplete de Estéban Lepaul.",
+            "Los dobletes de Maxime Lopez y Lassine Sinayoko dieron la victoria a los parisinos, mientras que Auxerre firmó un contundente triunfo a domicilio frente a Le Havre (1-3)."
+          ],
+          "format": "bullets",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري الدرجة الأولى: يفوز PFC بمباراة مجنونة ضد رين، وتفتقد موناكو في لوريان، أوكسير الاستبدادي في لو هافر",
-          "summary": "شهد تعدد الإرسال في اليوم السابع من دوري الدرجة الأولى الفرنسي فوز باريس على ستاد رينيه (4-3)، وخسارة موناكو على عشب لورينت (1-0) وفوز أوكسير بقوة ضد HAC (1-3).",
+          "title": "الدوري الفرنسي: موناكو يسقط أمام لوريان وباريس يتفوق على رين",
+          "summary": "تجرع موناكو خسارته الأولى هذا الموسم أمام لوريان بهدف دون رد، مهدراً فرصة الانقضاض على صدارة الدوري الفرنسي لكرة القدم.",
+          "body": [
+            "سجل نوا كاديو هدف اللقاء الوحيد من ركلة جزاء في الدقيقة 61، في حين عجز لاعبو المدرب فيليبي لويس عن تفكيك التنظيم الدفاعي الصلب لأصحاب الأرض.",
+            "وارتقى باريس أف سي إلى المركز الثالث بفوزه المثير على رين (4-3) في لقاء شهد احتساب أربع ركلات جزاء، منها ثلاثية للمهاجم إستيبان لوبول.",
+            "وحسمت ثنائيتا مكسيم لوبيز ولاسين سينايوكو المواجهة لمصلحة أصحاب الأرض بالوقت القاتل، بينما حقق أوكسير انتصاراً صريحاً خارج قواعده أمام لوهافر (3-1)."
+          ],
+          "format": "bullets",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-1/ligue-1-monaco-se-rate-a-lorient-auxerre-autoritaire-au-havre-le-pfc-remporte-un-match-dingue-contre-rennes-20261018",
@@ -121,7 +151,20 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-1/en-direct-multiplex-ligue-1-monaco-veut-reprendre-les-commandes-le-paris-fc-vise-le-podium-20261018"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-18T18:47:22+00:00"
+        }
+      }
     },
     {
       "id": "010a2c7a6ad2",
@@ -171,7 +214,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261018/1004240250/once-titular-real-madrid-sevilla-muchas-sorpresas.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "45e02507efaa",
@@ -221,7 +269,12 @@
           "url": "https://www.calciomio.fr/un-amour-visceral-pour-litalie-mais-aussi-une-immense-desillusion-avec-la-nazionale-un-choc-de-serie-a-pas-comme-les-autres-id-181127"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "569fe4892b2e",
@@ -295,7 +348,12 @@
           "url": "https://www.mundodeportivo.com/futbol/ligue-1/20261018/1004238485/lorient-as-monaco-directo-ligue-1.html"
         }
       ],
-      "source_count": 5
+      "source_count": 5,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "54f74b08a32e",
@@ -303,27 +361,44 @@
       "summary": "Hoffenheim s'est donné de l'air au classement en s'imposant sur la pelouse de la lanterne rouge (2-1), le Borussia M'Gladbach, dimanche pour la 6e journée de Bundesliga. Le 14e du Championnat allemand recevra l'OL jeudi (21 heures) en Ligue Europa.",
       "i18n": {
         "fr": {
-          "title": "Avant de recevoir l'OL en Ligue Europa, l'agressif Hoffenheim s'impose à 'Gladbach",
-          "summary": "Hoffenheim s'est donné de l'air au classement en s'imposant sur la pelouse de la lanterne rouge (2-1), le Borussia M'Gladbach, dimanche pour la 6e journée de Bundesliga. Le 14e du Championnat allemand recevra l'OL jeudi (21 heures) en Ligue Europa.",
-          "needs_translation": false
+          "title": "Hoffenheim s'impose à Mönchengladbach avant de recevoir l'OL",
+          "summary": "Hoffenheim a décroché un succès précieux (2-1) sur le terrain de Mönchengladbach dimanche, à quatre jours de son duel européen contre Lyon.",
+          "body": [
+            "Ce résultat obtenu lors de la 6e journée de Bundesliga permet au quatorzième du classement de respirer face à la lanterne rouge. Les joueurs allemands enchaîneront dès jeudi à 21 heures avec la réception de l'OL en Ligue Europa."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Before receiving OL in the Europa League, the aggressive Hoffenheim won in Gladbach",
-          "summary": "Hoffenheim gave himself some air in the standings by winning on the lawn of the red lantern (2-1), the Borussia M'Gladbach, on Sunday for the 6th day of the Bundesliga. The 14th in the German Championship will host OL on Thursday (9 p.m.) in the Europa League.",
+          "title": "Hoffenheim claim victory at Mönchengladbach ahead of Lyon clash",
+          "summary": "Hoffenheim secured a crucial 2-1 away win at Mönchengladbach on Sunday, just four days before hosting Lyon in European action.",
+          "body": [
+            "This matchday 6 Bundesliga win offers much-needed breathing space to the 14th-placed side against the division's basement club. The German outfit will be back in action this Thursday at 21:00 when they host Lyon in the Europa League."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Antes de recibir al OL en la Europa League, el agresivo Hoffenheim se impone en 'Gladbach",
-          "summary": "Hoffenheim se dio el aire en la clasificación al imponerse en el césped de la linterna roja (2-1), el Borussia M'Gladbach, el domingo en la 6ª jornada de la Bundesliga. El 14º del campeonato alemán recibirá al OL el jueves (21:00) en la Europa League.",
+          "title": "Hoffenheim asalta Mönchengladbach antes de medirse a Lyon",
+          "summary": "Hoffenheim firmó una valiosa victoria a domicilio (1-2) frente a Mönchengladbach este domingo, a apenas cuatro días de su cita europea ante Lyon.",
+          "body": [
+            "Este triunfo en la sexta fecha de la Bundesliga da un respiro al decimocuarto clasificado ante el colista. El conjunto germano jugará de nuevo el jueves a las 21:00 horas al recibir a Lyon en la Liga Europa."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "قبل تلقي OL في الدوري الأوروبي، فاز هوفنهايم العدواني في جلادباخ",
-          "summary": "أعطى هوفنهايم نفسه بعض الهواء في الترتيب من خلال الفوز على حديقة الفانوس الأحمر (2-1)، بوروسيا مغلادباخ، يوم الأحد لليوم السادس من الدوري الألماني. يستضيف الرابع عشر في البطولة الألمانية OL يوم الخميس (9 مساءً) في الدوري الأوروبي.",
+          "title": "هوفنهايم يتفوق على مونشنغلادباخ قبل مواجهة أولمبيك ليون",
+          "summary": "حقق هوفنهايم فوزاً ثميناً بنتيجة 2-1 على أرض مضيفه مونشنغلادباخ يوم الأحد، قبل أربعة أيام من اختباره القاري المرتقب أمام أولمبيك ليون.",
+          "body": [
+            "ومنحت نقاط هذه المواجهة لحساب الجولة السادسة من الدوري الألماني جرعة أكسجين لصاحب المركز الرابع عشر أمام متذيل الترتيب، في انتظار استضافته لأولمبيك ليون يوم الخميس عند الساعة 21:00 في الدوري الأوروبي."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Avant-de-recevoir-l-ol-en-ligue-europa-l-agressif-hoffenheim-s-impose-a-gladbach/1736777#at_medium=RSS_feeds",
@@ -345,7 +420,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Avant-de-recevoir-l-ol-en-ligue-europa-l-agressif-hoffenheim-s-impose-a-gladbach/1736777#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-18T18:47:25+00:00"
+        }
+      }
     },
     {
       "id": "7040116a70c8",
@@ -353,27 +441,44 @@
       "summary": "Alors que le Paris FC et Rennes se neutralisaient dimanche lors de la 7e journée de Ligue 1, Lassine Sinayoko a redonné, d'une bicyclette, l'avantage aux locaux, qui l'ont finalement emporté (4-3) à la dernière seconde.",
       "i18n": {
         "fr": {
-          "title": "La jolie bicyclette de Lassine Sinayoko avec le Paris FC face à Rennes en vidéo",
-          "summary": "Alors que le Paris FC et Rennes se neutralisaient dimanche lors de la 7e journée de Ligue 1, Lassine Sinayoko a redonné, d'une bicyclette, l'avantage aux locaux, qui l'ont finalement emporté (4-3) à la dernière seconde.",
-          "needs_translation": false
+          "title": "Lassine Sinayoko régale le Paris FC d'un retourné face à Rennes",
+          "summary": "Lassine Sinayoko a fait chavirer la rencontre d'un retourné acrobatique lors de la victoire renversante du Paris FC contre Rennes dimanche en Ligue 1.",
+          "body": [
+            "Alors que les deux formations étaient dos à dos lors de cette 7e journée, l'attaquant a redonné l'avantage aux siens d'un geste splendide. Les Parisiens l'ont finalement emporté 4-3 à l'ultime seconde."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Lassine Sinayoko's pretty bicycle with Paris FC facing Rennes on video",
-          "summary": "While Paris FC and Rennes neutralized themselves on Sunday during the 7th day of Ligue 1, Lassine Sinayoko gave back the advantage to the locals, who finally won (4-3) at the last second.",
+          "title": "Sinayoko's stunning bicycle kick powers Paris FC past Rennes in 4-3 thriller",
+          "summary": "Lassine Sinayoko pulled off a sensational bicycle kick as Paris FC edged Rennes in a seven-goal Ligue 1 thriller on Sunday.",
+          "body": [
+            "With the sides level during this frantic Matchday 7 clash, the forward restored the hosts' lead with his acrobatic strike before Paris FC sealed the 4-3 victory in the dying seconds."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "La bonita bicicleta de Lassine Sinayoko con el Paris FC frente al Rennes en vídeo",
-          "summary": "Mientras que el París FC y el Rennes se neutralizaban el domingo en la séptima jornada de la Ligue 1, Lassine Sinayoko devolvió, con una bicicleta, la ventaja a los locales, que finalmente ganaron (4-3) en el último segundo.",
+          "title": "Lassine Sinayoko deleita al Paris FC con una chilena ante el Rennes",
+          "summary": "Lassine Sinayoko firmó un golazo de chilena en la electrizante victoria del Paris FC frente al Rennes este domingo en la Ligue 1.",
+          "body": [
+            "Con el marcador empatado en esta 7.ª jornada, el delantero devolvió la ventaja a los locales con su remate acrobático, antes de que el Paris FC sellara el 4-3 en el último segundo."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دراجة لاسين سينايوكو الجميلة مع مواجهة باريس لنادي رين على الفيديو",
-          "summary": "بينما قام نادي باريس ورين بتحييد أنفسهم يوم الأحد خلال اليوم السابع من دوري الدرجة الأولى، أعاد لاسين سينايوكو الأفضلية للسكان المحليين، الذين فازوا أخيرًا (4-3) في الثانية الأخيرة.",
+          "title": "مقصية رائعة من لاسين سينايوكو تمنح باريس إف سي الفوز على رين",
+          "summary": "سجل لاسين سينايوكو هدفاً رائعاً من ضربة مقصية قاد به باريس إف سي للفوز على رين بنتيجة 4-3، الأحد، في الدوري الفرنسي.",
+          "body": [
+            "وبينما كان الفريقان متعادلين في الجولة السابعة، أعاد المهاجم التقدم لأصحاب الأرض بحركته البهلوانية، قبل أن يحسم فريقه اللقاء المثير في الثانية الأخيرة."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/La-jolie-bicyclette-de-lassine-sinayoko-avec-le-paris-fc-face-a-rennes-en-video/1736774#at_medium=RSS_feeds",
@@ -395,7 +500,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/La-jolie-bicyclette-de-lassine-sinayoko-avec-le-paris-fc-face-a-rennes-en-video/1736774#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-18T18:47:29+00:00"
+        }
+      }
     },
     {
       "id": "c805f75de521",
@@ -403,27 +521,48 @@
       "summary": "El futbolista de la Selección Argentina fue protagonista en el duelo ante Fiorentina y estiró su buena racha con el Como en lo que va de la temporada.",
       "i18n": {
         "es": {
-          "title": "El gran registro de Nico Paz en la vigente Serie A",
-          "summary": "El futbolista de la Selección Argentina fue protagonista en el duelo ante Fiorentina y estiró su buena racha con el Como en lo que va de la temporada.",
-          "needs_translation": false
+          "title": "Nico Paz brilla con el Como y afianza sus números en la Serie A",
+          "summary": "El mediocampista argentino Nico Paz firmó un gol y una asistencia ante la Fiorentina para alcanzar seis participaciones directas de gol en el torneo italiano.",
+          "body": [
+            "Con esta actuación frente al conjunto viola, el volante del Como acumula dos tantos y cuatro pases de gol en nueve compromisos ligueros. Su técnico, Cesc Fàbregas, elogió el volumen ofensivo generado por el equipo tras el encuentro, aunque advirtió sobre la fragilidad defensiva en las acciones a balón parado.",
+            "Este presente en el fútbol italiano respalda su lugar en la consideración de Lionel Scaloni. Con la camiseta albiceleste registra cuatro goles y dos asistencias en 14 partidos disputados, perfilándose como opción para los duelos de noviembre ante Uruguay en Buenos Aires y Costa Rica en Córdoba."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Nico Paz's great record in the current Serie A",
-          "summary": "The Argentine national team player was the protagonist in the match against Fiorentina and stretched his good streak with Como so far this season.",
+          "title": "Nico Paz shines for Como and boosts his Serie A numbers",
+          "summary": "Argentine midfielder Nico Paz bagged a goal and an assist against Fiorentina to reach six direct goal contributions in the Italian top flight.",
+          "body": [
+            "Following this standout display against the Viola, the Como playmaker boasts two goals and four assists in nine league outings. Head coach Cesc Fàbregas praised his team's attacking output after the final whistle, though he warned of lingering defensive frailties on set-pieces.",
+            "His current form in Italian football strengthens his standing under Lionel Scaloni. Having registered four goals and two assists in 14 caps for the Albiceleste, Paz strengthens his claim ahead of November's clashes with Uruguay and Costa Rica."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Le grand record de Nico Paz dans la série A en cours",
-          "summary": "Le footballeur de la sélection argentine a été le protagoniste du duel contre la Fiorentina et a prolongé sa bonne série avec le Côme jusqu'à la fin de la saison.",
+          "title": "Nico Paz régale avec Como et soigne ses statistiques en Serie A",
+          "summary": "Auteur d'un but et d'une passe décisive face à la Fiorentina, le milieu argentin Nico Paz totalise désormais six contributions offensives en championnat d'Italie.",
+          "body": [
+            "Grâce à cette prestation contre la Viola, le meneur de jeu de Como compte deux buts et quatre passes décisives en neuf rencontres de Serie A. Au coup de sifflet final, son entraîneur Cesc Fàbregas a salué le volume d'occasions créées, tout en regrettant les errements défensifs sur coups de pied arrêtés.",
+            "Cette forme en club renforce son statut auprès du sélectionneur Lionel Scaloni. Déjà auteur de quatre buts et deux passes en 14 sélections avec l'Albiceleste, Paz postule pour les rendez-vous de novembre face à l'Uruguay et au Costa Rica."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "سجل نيكو باز الرائع في دوري الدرجة الأولى الإيطالي الحالي",
-          "summary": "كان لاعب المنتخب الوطني الأرجنتيني بطل الرواية في المباراة ضد فيورنتينا ومدد مسيرته الجيدة مع كومو حتى الآن هذا الموسم.",
+          "title": "نيكو باز يتألق مع كومو ويعزز أرقامه في الدوري الإيطالي",
+          "summary": "سجل لاعب الوسط الأرجنتيني نيكو باز هدفاً وصنع آخر أمام فيورنتينا، ليصل إلى ست مساهمات تهديفية مباشرة في الدوري الإيطالي.",
+          "body": [
+            "ورفع صانع ألعاب كومو رصيده بعد هذا الأداء أمام الفيولا إلى هدفين وأربع تمريرات حاسمة في تسع مباريات بالدوري. وأشاد مدربه سيسك فابريغاس بالفاعلية الهجومية التي قدمها الفريق بعد اللقاء، محذراً في المقابل من الهفوات الدفاعية المتكررة في الكرات الثابتة.",
+            "ويعزز هذا الحضور القوي في إيطاليا مكانة باز في حسابات المدرب ليونيل سكالوني؛ حيث يملك أربعة أهداف وتمريرتين حاسمتين في 14 مباراة بقميص الألبيسيليستي، ليفرض نفسه بقوة ضمن خيارات التشكيلة لمواجهتي نوفمبر أمام أوروغواي وكوستاريكا."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/italia/nico-paz-registro-seleccion-argentina-serie_0_oSKjtB5zbH.html",
@@ -445,7 +584,20 @@
           "url": "https://www.ole.com.ar/futbol-internacional/italia/nico-paz-registro-seleccion-argentina-serie_0_oSKjtB5zbH.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-18T18:47:33+00:00"
+        }
+      }
     },
     {
       "id": "f372884a4aa6",
@@ -503,33 +655,54 @@
       "summary": "Der FC Arsenal feiert vor dem Champions-League-Kracher gegen den FC Bayern einen Arbeitssieg bei Nottingham Forest, der in der Schlussphase durchaus glücklich zustande kam.",
       "i18n": {
         "de": {
-          "title": "Vor Bayern-Gastspiel: Glückliches Arsenal gewinnt mit einzigem Schuss aufs Tor",
-          "summary": "Der FC Arsenal feiert vor dem Champions-League-Kracher gegen den FC Bayern einen Arbeitssieg bei Nottingham Forest, der in der Schlussphase durchaus glücklich zustande kam.",
-          "needs_translation": false
+          "title": "Arsenal siegt glücklich bei Nottingham Forest vor Bayern-Duell",
+          "summary": "Der FC Arsenal hat sich kurz vor dem Champions-League-Duell gegen den FC Bayern zu einem schmeichelhaften Arbeitssieg bei Nottingham Forest gezittert.",
+          "body": [
+            "Die Londoner setzten sich dank ihres einzigen Torschusses der gesamten Partie durch. In einer turbulenten Schlussphase retteten die Gunners den knappen Vorsprung über die Zeit, ehe nun das Aufeinandertreffen mit den Münchnern in der Königsklasse ansteht."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "In front of Bayern guest game: Lucky Arsenal wins with a single shot on goal",
-          "summary": "Before the Champions League smash against FC Bayern, FC Arsenal celebrated a working victory at Nottingham Forest, which came about quite happily in the final phase.",
+          "title": "Arsenal snatch lucky win at Nottingham Forest ahead of FC Bayern clash",
+          "summary": "Arsenal ground out a fortunate victory away to Nottingham Forest, surviving late drama right before their Champions League showdown with FC Bayern.",
+          "body": [
+            "The Gunners secured all three points with their solitary shot on target across the entire ninety minutes. After withstanding fierce late pressure, Mikel Arteta's side sealed the result before turning their focus to the Bavarians."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Avant le match d'invité du Bayern : Arsenal chanceux gagne avec un seul tir au but",
-          "summary": "Le FC Arsenal célèbre une victoire de travail à Nottingham Forest avant le choc de la Ligue des champions contre le FC Bayern, qui s'est déroulé tout à fait heureusement dans la phase finale.",
+          "title": "Arsenal s'impose sur le fil à Nottingham Forest avant le choc contre le Bayern",
+          "summary": "À quelques jours de son choc européen face au FC Bayern, Arsenal a signé un succès minimaliste et heureux sur le terrain de Nottingham Forest.",
+          "body": [
+            "Les Gunners ont fait la différence sur leur unique tir cadré de la rencontre. Bousculés dans une fin de match irrespirable, les Londoniens ont préservé l'essentiel avant de retrouver les Bavarois sur la scène continentale."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Antes de la visita del Bayern: el Arsenal afortunado gana con un solo disparo a puerta",
-          "summary": "El FC Arsenal celebra una victoria laboral en Nottingham Forest antes de la pelea de la Liga de Campeones contra el FC Bayern, que tuvo lugar muy felizmente en la fase final.",
+          "title": "Arsenal saca un triunfo sufrido en Nottingham Forest antes de medirse al Bayern",
+          "summary": "Arsenal firmó una victoria de puro oficio y muy afortunada en el campo de Nottingham Forest, a las puertas de su cita ante el FC Bayern.",
+          "body": [
+            "Al cuadro londinense le bastó su único remate a portería de todo el encuentro para llevarse el botín. Tras resistir un asedio agónico en el tramo final, los Gunners amarraron tres puntos de oro antes de pensar en la Champions League."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "أمام مباراة ضيف بايرن: أرسنال المحظوظ يفوز بتسديدة واحدة على المرمى",
-          "summary": "قبل تحطيم دوري أبطال أوروبا ضد نادي بايرن، احتفل نادي أرسنال بفوز عملي في نوتنغهام فورست، والذي جاء بسعادة تامة في المرحلة النهائية.",
+          "title": "أرسنال يخطف فوزا شاقا من نوتنغهام فورست قبل مواجهة بايرن ميونخ",
+          "summary": "حقق نادي أرسنال فوزا صعبا ومحظوظا أمام نوتنغهام فورست، وذلك قبل صدامه المرتقب ضد بايرن ميونخ في دوري أبطال أوروبا.",
+          "body": [
+            "وحسم الفريق اللندني اللقاء بتسديدته الوحيدة المركزة على المرمى طوال الدقائق التسعين. وصمد لاعبو المدفعجية في وجه ضغط هجومي شرس خلال اللحظات الأخيرة، ليخرجوا بالنقاط الثلاث قبل الموعد القاري المنتظر."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.kicker.de/nottingham-gegen-arsenal-2026-premier-league-5213338/spielbericht#omrss",
@@ -551,7 +724,20 @@
           "url": "https://www.kicker.de/nottingham-gegen-arsenal-2026-premier-league-5213338/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-18T18:47:37+00:00"
+        }
+      }
     },
     {
       "id": "c037e55f732c",
@@ -559,27 +745,44 @@
       "summary": "Arsenal s'est imposé difficilement à Nottingham (1-0) grâce à une belle frappe de Madueke entré après la pause. Les Gunners, deuxièmes, reviennent à trois points de Manchester City.",
       "i18n": {
         "fr": {
-          "title": "Arsenal s'en sort bien et s'impose à Nottingham en Premier League",
-          "summary": "Arsenal s'est imposé difficilement à Nottingham (1-0) grâce à une belle frappe de Madueke entré après la pause. Les Gunners, deuxièmes, reviennent à trois points de Manchester City.",
-          "needs_translation": false
+          "title": "Arsenal s'impose à Nottingham et recolle à Manchester City",
+          "summary": "Arsenal a décroché un court succès sur la pelouse de Nottingham Forest (1-0) grâce à un but décisif de Madueke.",
+          "body": [
+            "Entré en jeu après la pause, Madueke a débloqué la rencontre d'une belle frappe pour offrir la victoire aux Gunners. Ce succès dans la douleur permet au club londonien, deuxième du classement, de revenir à trois longueurs du leader, Manchester City."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Arsenal do well and win at Nottingham in the Premier League",
-          "summary": "Arsenal won hard in Nottingham (1-0) thanks to a nice hit from Madueke who entered after the break. The Gunners, second, are three points behind Manchester City.",
+          "title": "Arsenal edge past Nottingham Forest to close gap on Manchester City",
+          "summary": "Arsenal secured a hard-fought 1-0 victory at Nottingham Forest courtesy of a decisive strike from Madueke.",
+          "body": [
+            "Brought on after the break, Madueke broke the deadlock with a fine finish to deliver all three points to the Gunners. This gritty win allows the second-placed London club to move within three points of table-toppers Manchester City."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "El Arsenal lo está haciendo bien y se impone al Nottingham en la Premier League",
-          "summary": "El Arsenal se impuso con dificultad al Nottingham (1-0) gracias a un buen disparo de Madueke que entró después del descanso. Los Gunners, segundos, se sitúan a tres puntos del Manchester City.",
+          "title": "Arsenal asalta Nottingham y mete presión a Manchester City",
+          "summary": "Arsenal firmó un trabajado triunfo a domicilio ante Nottingham Forest (0-1) con un gol decisivo de Madueke.",
+          "body": [
+            "Tras entrar desde el banquillo en el descanso, Madueke desatascó el partido con un potente disparo. Esta victoria permite a los Gunners, segundos en la tabla, colocarse a tres puntos del líder, Manchester City."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "أداء أرسنال جيد والفوز في نوتنغهام في الدوري الممتاز",
-          "summary": "فاز آرسنال بقوة في نوتنغهام (1-0) بفضل ضربة لطيفة من مادوكي الذي دخل بعد الاستراحة. المدفع، ثانيا، متأخرا بثلاث نقاط عن مانشستر سيتي.",
+          "title": "أرسنال يتجاوز نوتنغهام فورست ويضيق الخناق على مانشستر سيتي",
+          "summary": "حقق أرسنال فوزاً شاقاً خارج دياره أمام نوتنغهام فورست بنتيجة 1-0، بفضل هدف حاسم حمل توقيع مادويكي.",
+          "body": [
+            "ونجح مادويكي، الذي دخل بديلاً بعد الاستراحة، في فك شفرة اللقاء بتسديدة متقنة أهدت النقاط الثلاث للمدفعجية. وبهذا الانتصار الثمين، قلص النادي اللندني صاحب المركز الثاني الفارق مع المتصدر مانشستر سيتي إلى ثلاث نقاط."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Arsenal-s-en-sort-bien-et-s-impose-a-nottingham-en-premier-league/1736769#at_medium=RSS_feeds",
@@ -601,7 +804,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Arsenal-s-en-sort-bien-et-s-impose-a-nottingham-en-premier-league/1736769#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-18T18:47:40+00:00"
+        }
+      }
     },
     {
       "id": "4726feb9ee76",
@@ -657,7 +873,12 @@
           "url": "https://www.kicker.de/traumtore-der-kleinen-bayern-die-derby-highlights-im-video-1262766/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b3f358faf0cd",
@@ -665,33 +886,54 @@
       "summary": "Nottingham Forest und der FC Arsenal haben den Spieltag in der Premier League mit einem schwachen Spiel beschlossen. Immerhin fiel ein Tor.",
       "i18n": {
         "de": {
-          "title": "Arsenal erzielt spät den Siegtreffer gegen Nottingham",
-          "summary": "Nottingham Forest und der FC Arsenal haben den Spieltag in der Premier League mit einem schwachen Spiel beschlossen. Immerhin fiel ein Tor.",
-          "needs_translation": false
+          "title": "Arsenal zittert sich dank Madueke zum Auswärtssieg bei Nottingham Forest",
+          "summary": "Noni Madueke hat den FC Arsenal mit einem späten Treffer zu einem hart erkämpften 1:0-Auswärtserfolg bei Nottingham Forest geschossen.",
+          "body": [
+            "Nach einer weitgehend chancenarmen Partie erlöste Madueke die Gunners in der 80. Minute mit einem abgefälschten Schuss von der Sechzehnerkante. In der turbulenten Schlussphase retteten die Londoner den knappen Vorsprung nur mit Mühe: Chris Wood, Murillo und Liam Delap vergaben beste Ausgleichschancen für das Team von Oliver Glasner. Vor dem Champions-League-Duell bei Bayern München entführt Arsenal damit glückliche drei Zähler."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Arsenal scored the winning goal against Nottingham late",
-          "summary": "Nottingham Forest and Arsenal FC have concluded the matchday in the Premier League with a weak game. After all, a goal fell.",
+          "title": "Arsenal scrape past Nottingham Forest thanks to late Madueke strike",
+          "summary": "Noni Madueke struck late to give Arsenal a hard-fought 1-0 Premier League victory away to Nottingham Forest on Sunday.",
+          "body": [
+            "Following a cagey contest with few clear openings, Madueke broke the deadlock in the 80th minute with a deflected effort from the edge of the area. Arsenal then survived a frantic finish as Chris Wood, Murillo and Liam Delap all spurned golden chances to level for Oliver Glasner's side. Ahead of Wednesday's Champions League trip to Bayern München, Mikel Arteta's men leave Nottingham with a fortunate win."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Arsenal marque tardivement le but de la victoire contre Nottingham",
-          "summary": "Nottingham Forest et le FC Arsenal ont terminé la journée en Premier League avec un match faible. Après tout, un but est tombé.",
+          "title": "Arsenal s'impose dans la douleur à Nottingham Forest grâce à Madueke",
+          "summary": "Noni Madueke a offert la victoire à Arsenal d'une frappe tardive, scellant un court succès 1-0 sur la pelouse de Nottingham Forest.",
+          "body": [
+            "Après un duel longtemps fermé et stérile, Madueke a débloqué la situation à la 80e minute d'un tir dévié à l'entrée de la surface. Les Londoniens ont ensuite tremblé jusqu'au bout face aux assauts de Nottingham, Chris Wood, Murillo et Liam Delap gâchant trois balles d'égalisation pour les hommes d'Oliver Glasner. Avant son déplacement chez Bayern München en Ligue des champions, Arsenal empoche trois points précieux mais très heureux."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Arsenal marca tarde el gol de la victoria contra Nottingham",
-          "summary": "Nottingham Forest y el Arsenal FC han decidido la jornada de la Premier League con un partido débil. Después de todo, cayó un gol.",
+          "title": "Arsenal sufre para vencer a Nottingham Forest con gol de Madueke",
+          "summary": "Noni Madueke dio la victoria al Arsenal con un tanto tardío en un trabajado triunfo por 0-1 a domicilio frente a Nottingham Forest.",
+          "body": [
+            "Tras un duelo áspero y con pocas ocasiones, Madueke desatascó el partido en el minuto 80 con un disparo desviado desde la frontal del área. El tramo final fue de máxima tensión para los londinenses: Chris Wood, Murillo y Liam Delap perdonaron tres opciones claras para igualar el choque para los pupilos de Oliver Glasner. Antes de visitar a Bayern München en la Liga de Campeones, Arsenal amarra tres puntos de oro."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "سجل أرسنال هدف الفوز ضد نوتنغهام في وقت متأخر",
-          "summary": "اختتم نوتنغهام فورست وآرسنال المباراة في الدوري الإنجليزي الممتاز بمباراة ضعيفة. بعد كل شيء، سقط هدف.",
+          "title": "أرسنال يفلت بفوز شاق على نوتينغهام فورست بفضل مادويكي",
+          "summary": "قاد نوني مادويكي فريقه أرسنال إلى فوز ثمين وصعب خارج الديار على حساب نوتينغهام فورست بهدف دون رد في الدوري الإنجليزي.",
+          "body": [
+            "بعد مواجهة مغلقة وشحيحة الفرص، نجح البديل مادويكي في فك شفرة اللقاء عند الدقيقة 80 بتسديدة غيرت اتجاهها من مشارف منطقة الجزاء. وصمد أرسنال بصعوبة بالغة في الدقائق الأخيرة أمام هجمات أصحاب الأرض، بعدما أهدر كريس وود وموريلو وليام ديلاب فرصاً محققة للتعادل لفريق المدرب أوليفر غلاسنر، ليعود المدفعجية بثلاث نقاط ثمينة قبل مواجهة بايرن ميونخ في دوري أبطال أوروبا."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/england-premier-league/ma12153352/nottingham-forest_arsenal-fc/liveticker",
@@ -713,7 +955,12 @@
           "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/england-premier-league/ma12153352/nottingham-forest_arsenal-fc/liveticker"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full"
+      }
     },
     {
       "id": "2d251e672c78",
@@ -721,27 +968,48 @@
       "summary": "Presionado por el triunfo del Manchester City el sábado contra el Ipswich Town (3-2), que le permitió ponerse con seis puntos más que el Arsenal , al campeón de la Premier le costó muchísimo este domingo decidir el partido contra el Nottingham Forest en el City Ground.",
       "i18n": {
         "es": {
-          "title": "Madueke resuelve la papeleta al Arsenal antes del Bayern",
-          "summary": "Presionado por el triunfo del Manchester City el sábado contra el Ipswich Town (3-2), que le permitió ponerse con seis puntos más que el Arsenal , al campeón de la Premier le costó muchísimo este domingo decidir el partido contra el Nottingham Forest en el City Ground.",
-          "needs_translation": false
+          "title": "Madueke rescata al Arsenal ante el Forest antes de viajar a Múnich",
+          "summary": "Un solitario gol de Noni Madueke dio la victoria al Arsenal (0-1) ante el Nottingham Forest para seguir a tres puntos del líder Manchester City.",
+          "body": [
+            "El equipo de Mikel Arteta ofreció una versión muy espesa en el City Ground, incapaz de superar el orden táctico planteado por Oliver Glasner. La solución llegó desde el banquillo tras el descanso: Madueke sustituyó a Eberechi Eze y resolvió el choque tras una bicicleta cuyo remate acabó desviado por un defensa. Fue el único disparo a portería de los Gunners en todo el compromiso.",
+            "Los londinenses tuvieron que resistir el empuje final del Nottingham Forest, que rozó el empate con ocasiones de Chris Wood, Murillo y un remate final de Liam Delap salvado al límite por Ezri Konsa. El triunfo mantiene al Arsenal en la persecución directa del City antes de visitar al Bayern en la Liga de Campeones, mientras condena al cuadro local a los puestos de descenso."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Madueke resolves the ballot to Arsenal before Bayern",
-          "summary": "Pressed by Manchester City's win on Saturday against Ipswich Town (3-2), which allowed him to get six points more than Arsenal , the Premier League champion had a very hard time this Sunday deciding the match against Nottingham Forest at the City Ground.",
+          "title": "Madueke rescues Arsenal at Nottingham Forest ahead of Bayern clash",
+          "summary": "A solitary strike from Noni Madueke earned Arsenal a 0-1 win at Nottingham Forest, keeping them three points behind Premier League leaders Manchester City.",
+          "body": [
+            "Mikel Arteta's side produced a sluggish display at the City Ground, struggling to break down the disciplined setup arranged by Oliver Glasner. Relief came from the bench after the restart: Madueke replaced Eberechi Eze and settled the contest after a neat stepover led to a deflected finish. It proved to be the Gunners' only shot on target across the entire ninety minutes.",
+            "The London side were forced to weather a late siege from Forest, who came close to an equalizer through Chris Wood, Murillo and a stoppage-time effort from Liam Delap scrambled away by Ezri Konsa. The hard-fought win keeps Arsenal in direct pursuit of City before facing Bayern in the Champions League, while leaving the hosts in the drop zone."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Madueke résout le ticket pour Arsenal avant le Bayern",
-          "summary": "Pressé par la victoire de Manchester City samedi contre Ipswich Town (3-2), qui lui a permis de marquer six points de plus qu'Arsenal , le champion de Premier League a eu beaucoup de mal ce dimanche à décider du match contre Nottingham Forest à City Ground.",
+          "title": "Madueke délivre Arsenal chez Nottingham Forest avant le Bayern",
+          "summary": "Un unique but de Noni Madueke a permis à Arsenal de battre Nottingham Forest (0-1) pour rester à trois points du leader, Manchester City.",
+          "body": [
+            "Les hommes de Mikel Arteta ont affiché un visage particulièrement poussif au City Ground, incapables de fissurer le bloc rigoureux mis en place par Oliver Glasner. La clé est venue du banc après le repos : Madueke a relayé Eberechi Eze avant de faire la décision sur un passement de jambes suivi d'une frappe déviée par un défenseur. Ce fut le seul et unique tir cadré des Gunners de toute la partie.",
+            "Les Londoniens ont ensuite fait le dos rond face aux assauts de Nottingham Forest, passé tout près d'égaliser sur des tentatives de Chris Wood, Murillo et un ultime tir de Liam Delap repoussé sur sa ligne par Ezri Konsa. Ce succès maintient Arsenal au contact de Manchester City avant de défier le Bayern en Ligue des champions, tout en laissant les locaux dans la zone rouge."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "يحل مادوكي الاقتراع إلى آرسنال قبل بايرن",
-          "summary": "بضغط من فوز مانشستر سيتي يوم السبت على إيبسويتش تاون (3-2)، والذي سمح له بالحصول على ست نقاط أكثر من آرسنال ، واجه بطل الدوري الممتاز وقتًا عصيبًا للغاية يوم الأحد في تحديد المباراة ضد نوتنغهام فورست في سيتي جراوند.",
+          "title": "مادويكي ينقذ أرسنال أمام نوتنغهام فورست قبل مواجهة بايرن",
+          "summary": "قاد نوني مادويكي فريقه أرسنال إلى فوز ثمين بنتيجة 0-1 على نوتنغهام فورست، ليواصل مطاردة المتصدر مانشستر سيتي بفارق ثلاث نقاط.",
+          "body": [
+            "قدّم فريق المدرب ميكيل أرتيتا أداءً باهتاً على أرضية سيتي غراوند واصطدم بانضباط تكتيكي صارم فرضه أوليفر غلاسنر. وجاء الحسم من مقاعد البدلاء مع انطلاق الشوط الثاني، حين عوّض مادويكي زميله إيبريتشي إيزي وهز الشباك بكرة غيّر المدافع مسارها، في التسديدة الوحيدة المؤطرة للمدفعجية طيلة اللقاء.",
+            "وعانى الفريق اللندني في الدقائق الأخيرة تحت ضغط نوتنغهام فورست، بعدما لاحت لأصحاب الأرض فرص محققة للتعديل عبر كريس وود وموريلو، تلتها محاولة في الرمق الأخير من ليام ديلاب أنقذها إزري كونسا بصعوبة. ويحافظ هذا الانتصار على موقع أرسنال في سباق القمة قبل ملاقاة بايرن في دوري أبطال أوروبا، بينما يتأزم موقف المضيف داخل منطقة الهبوط."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20261018/1004240282/madueke-resuelve-papeleta-arsenal-bayern.html",
@@ -763,7 +1031,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20261018/1004240282/madueke-resuelve-papeleta-arsenal-bayern.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full"
+      }
     },
     {
       "id": "f07db8e6275a",
@@ -821,33 +1094,59 @@
       "summary": "Sechster Spieltag, sechste Niederlage: Im Duell der Bundesliga-Schlusslichter hat die TSG Hoffenheim dafür gesorgt, dass Borussia Mönchengladbach weiter punktlos bleibt.",
       "i18n": {
         "de": {
-          "title": "Hoffenheim befeuert Borussia Mönchengladbachs Abstiegsangst",
-          "summary": "Sechster Spieltag, sechste Niederlage: Im Duell der Bundesliga-Schlusslichter hat die TSG Hoffenheim dafür gesorgt, dass Borussia Mönchengladbach weiter punktlos bleibt.",
-          "needs_translation": false
+          "title": "Sechste Pleite im sechsten Spiel: Gladbach taumelt historisch",
+          "summary": "Mit dem 1:2 gegen Hoffenheim hat Borussia Mönchengladbach die sechste Niederlage im sechsten Saisonspiel kassiert und bleibt historisch schwach ohne jeden Punkt.",
+          "body": [
+            "Bambasé Conté brachte die Gäste früh in Führung, ehe das 17-jährige Talent Wael Mohya kurz nach der Pause für die Borussia ausglich. Die Hoffnung währte jedoch nur fünf Minuten: Nach einem heftigen Zusammenprall zwischen Kevin Diks und Oliver Baumann verweigerte der Schiedsrichter den Gladbachern einen Strafstoß, ehe Alexander Prass den anschließenden Gegenstoß zur erneuten TSG-Führung vollendete.",
+            "Für Trainer Alexander Blessin missglückte damit auch die Heimpremiere gründlich. Als erst vierter Klub der Bundesliga-Geschichte steht Gladbach nach sechs Spieltagen ohne Zähler da und droht am Freitag in Stuttgart mit einer siebten Pleite den alleinigen Minusrekord aufzustellen. Hoffenheim kletterte durch den Befreiungsschlag dagegen von Rang 17 auf Platz 14."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Hoffenheim fuels Borussia Mönchengladbach's fear of relegation",
-          "summary": "Sixth matchday, sixth defeat: In the Bundesliga finals, TSG Hoffenheim ensured that Borussia Mönchengladbach remained pointless.",
+          "title": "Six defeats in six matches: Gladbach in historic freefall",
+          "summary": "A 2-1 home defeat against Hoffenheim condemned Borussia Mönchengladbach to their sixth straight loss in six Bundesliga games, leaving them bottom with zero points.",
+          "body": [
+            "Bambasé Conté gave the visitors an early lead, but 17-year-old Wael Mohya leveled for Borussia shortly after the restart. The relief lasted just five minutes: following a collision between Kevin Diks and Oliver Baumann, the referee waved away Gladbach's penalty claims before Alexander Prass finished off the counter-attack to restore TSG's advantage.",
+            "Coach Alexander Blessin's home debut ended in total disappointment. Gladbach are only the fourth club in Bundesliga history to sit on zero points after six matchdays, and a seventh consecutive defeat on Friday in Stuttgart would set an all-time league low. In contrast, this vital victory lifted Hoffenheim from 17th up to 14th."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Hoffenheim alimente la peur de la descente du Borussia Mönchengladbach",
-          "summary": "Sixième journée, sixième défaite : dans le duel final de Bundesliga, le TSG Hoffenheim a veillé à ce que le Borussia Mönchengladbach reste sans points.",
+          "title": "Sixième défaite en six matches : crise historique à Mönchengladbach",
+          "summary": "Battu 1-2 par Hoffenheim, Borussia Mönchengladbach a concédé sa sixième défaite en autant de journées de Bundesliga et reste lanterne rouge sans le moindre point au compteur.",
+          "body": [
+            "Bambasé Conté a rapidement ouvert le score pour les visiteurs, avant que le jeune Wael Mohya, 17 ans, n'égalise pour le Borussia au retour des vestiaires. L'embellie n'a duré que cinq minutes : après un choc violent entre Kevin Diks et Oliver Baumann, l'arbitre a refusé un penalty aux locaux, avant qu'Alexander Prass ne conclue le contre éclair pour redonner l'avantage à Hoffenheim.",
+            "Une première à domicile complètement manquée pour l'entraîneur Alexander Blessin. Gladbach devient seulement le quatrième club de l'histoire de la Bundesliga à afficher un zéro pointé après six journées, et risque d'établir un triste record absolu en cas de septième revers vendredi à Stuttgart. Hoffenheim s'offre un bol d'air en grimpant de la 17e à la 14e place."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Hoffenheim alimenta el miedo al descenso del Borussia Mönchengladbach",
-          "summary": "Sexta jornada, sexta derrota: en el duelo de las últimas luces de la Bundesliga, el TSG Hoffenheim se ha asegurado de que el Borussia Mönchengladbach siga sin puntos.",
+          "title": "Sexta derrota en seis jornadas: el Gladbach se hunde en una crisis histórica",
+          "summary": "Tras caer 1-2 frente a Hoffenheim, Borussia Mönchengladbach encajó su sexta derrota en seis partidos de Bundesliga y continúa en el fondo de la tabla con cero puntos.",
+          "body": [
+            "Bambasé Conté puso en ventaja a los visitantes en los primeros compases, aunque el joven Wael Mohya, de 17 años, firmó las tablas para el Borussia al inicio de la segunda mitad. La alegría duró apenas cinco minutos: tras un fuerte choque entre Kevin Diks y Oliver Baumann, el colegiado no señaló penalti a favor de Gladbach y Alexander Prass culminó el contragolpe para devolver la ventaja a Hoffenheim.",
+            "Un estreno amargo en casa para el entrenador Alexander Blessin. Gladbach es apenas el cuarto equipo en la historia de la Bundesliga sin estrenar su casillero tras seis jornadas y, si cae este viernes en Stuttgart, firmará en solitario el peor arranque de todos los tiempos. Hoffenheim toma aire y escala de la 17.ª a la 14.ª posición."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "تغذي هوفنهايم خوف بوروسيا مونشنغلادباخ من الهبوط",
-          "summary": "يوم المباراة السادس، الهزيمة السادسة: في نهائيات الدوري الألماني، ضمن هوفنهايم بقاء بوروسيا مونشنغلادباخ بلا جدوى.",
+          "title": "الهزيمة السادسة في 6 مباريات: مونشنغلادباخ يغرق في أزمة تاريخية",
+          "summary": "تلقى بوروسيا مونشنغلادباخ خسارته السادسة توالياً بعد سقوطه على أرضه أمام هوفنهايم بنتيجة 1-2، ليظل بلا أي نقطة في أسوأ انطلاقة له عبر تاريخه في الدوري الألماني.",
+          "body": [
+            "افتتح بامباسي كونتي التسجيل مبكراً لمصلحة الضيوف، قبل أن يدرك الواعد وائل محيا (17 عاماً) التعادل لأصحاب الأرض مع انطلاق الشوط الثاني. لكن الأمل لم يصمد سوى خمس دقائق؛ فإثر التحام قوي بين كيفن ديكس وحارس المرمى أوليفر باومان رفض الحكم احتساب ركلة جزاء لمصلحة غلادباخ، ليرتد الهجوم سريعاً ويحرز ألكسندر براس هدف التقدم لهوفنهايم.",
+            "ولم ينجح المدرب ألكسندر بليسين في تدارك الموقف خلال ظهوره الأول على ملعبه. وأصبح غلادباخ رابع نادٍ فقط في تاريخ الدوري الألماني يخرج برصيد خالٍ من النقاط بعد ست جولات، وبات مهدداً بالانفراد برقم قياسي سلبي تاريخي إذا تجرع الهزيمة السابعة يوم الجمعة أمام شتوتغارت. في المقابل، تنفس هوفنهايم الصعداء بعدما قفز من المركز السابع عشر إلى المركز الرابع عشر."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.sportschau.de/fussball/bundesliga/hoffenheim-befeuert-gladbachs-abstiegsangst,spielbericht-borussia-moenchengladbach-tsg-hoffenheim-112.html",
@@ -869,7 +1168,12 @@
           "url": "https://www.sportschau.de/fussball/bundesliga/hoffenheim-befeuert-gladbachs-abstiegsangst,spielbericht-borussia-moenchengladbach-tsg-hoffenheim-112.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full"
+      }
     },
     {
       "id": "3eb447199645",
