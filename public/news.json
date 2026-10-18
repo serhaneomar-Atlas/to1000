@@ -59,7 +59,12 @@
           "url": "https://www.lefigaro.fr/sports/football/live/liga/2026/2650849/real-madrid-fc-seville"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6782f02adbbb",
@@ -109,7 +114,12 @@
           "url": "https://www.lefigaro.fr/sports/football/live/ligue-1/2026/2640618/lyon-nice"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "804a53379bfb",
@@ -159,7 +169,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261018/1004238479/real-madrid-sevilla-directo-sigue-partido-laliga-ea-sports-vivo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d01d3edc6667",
@@ -167,27 +182,56 @@
       "summary": "Sergio Ramos could make a surprise return to football in Madrid, Bournemouth put a high price on Alex Scott, and Florian Wirtz is staying at Liverpool.",
       "i18n": {
         "en": {
-          "title": "Ramos could make La Liga return - Monday's gossip",
-          "summary": "Sergio Ramos could make a surprise return to football in Madrid, Bournemouth put a high price on Alex Scott, and Florian Wirtz is staying at Liverpool.",
-          "needs_translation": false
+          "title": "Transfer Gossip: Ramos linked with Getafe, Scott valued at £100m",
+          "summary": "Free agent Sergio Ramos could make an unexpected La Liga return with Getafe, while Bournemouth demand over £100m for midfielder Alex Scott.",
+          "body": [
+            "Getafe are exploring a shock deal to bring 40-year-old former Real Madrid captain Sergio Ramos back to the Spanish capital.",
+            "Bournemouth have slapped a valuation exceeding £100m on 23-year-old midfielder Alex Scott amid interest from Liverpool and Chelsea.",
+            "Florian Wirtz plans to stay at Liverpool despite reports linking Chelsea and his former Bayer Leverkusen manager Xabi Alonso.",
+            "Barcelona and Real Madrid are set to rival Liverpool in the race to sign Stuttgart's 20-year-old defender Finn Jeltsch."
+          ],
+          "format": "bullets",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Ramos pourrait faire son retour en Liga - Les ragots de lundi",
-          "summary": "Sergio Ramos pourrait faire un retour surprise au football à Madrid, Bournemouth a mis un prix élevé sur Alex Scott et Florian Wirtz séjourne à Liverpool.",
+          "title": "Mercato : Sergio Ramos vers Getafe, Alex Scott évalué à 100 M£",
+          "summary": "Libre de tout contrat, Sergio Ramos pourrait faire un retour surprise en Liga à Getafe, tandis que Bournemouth réclame plus de 100 millions de livres pour Alex Scott.",
+          "body": [
+            "Getafe étudie un coup retentissant pour ramener dans la capitale l'ancien capitaine du Real Madrid Sergio Ramos, âgé de 40 ans.",
+            "Bournemouth réclame plus de 100 millions de livres pour son milieu de 23 ans Alex Scott, courtisé par Chelsea et Liverpool.",
+            "Florian Wirtz compte rester à Liverpool malgré l'intérêt supposé de Chelsea, dirigé par son ancien entraîneur Xabi Alonso.",
+            "Barcelona et Real Madrid s'intéressent au défenseur de Stuttgart Finn Jeltsch, 20 ans, également visé par Liverpool."
+          ],
+          "format": "bullets",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Ramos podría volver a la Liga: chismes del lunes",
-          "summary": "Sergio Ramos podría hacer un regreso sorpresa al fútbol en Madrid, Bournemouth puso un alto precio a Alex Scott y Florian Wirtz se queda en el Liverpool.",
+          "title": "Mercado: Sergio Ramos apunta a Getafe y Scott tasado en más de 100 M£",
+          "summary": "Libre de contrato, Sergio Ramos podría protagonizar un regreso sorpresa a LaLiga con Getafe, mientras Bournemouth pide más de 100 millones de libras por Alex Scott.",
+          "body": [
+            "Getafe estudia el fichaje del excapitán de Real Madrid Sergio Ramos, de 40 años, para devolverlo a la capital española.",
+            "Bournemouth tasa a su centrocampista de 23 años Alex Scott en más de 100 millones de libras ante el interés de Chelsea y Liverpool.",
+            "Florian Wirtz prevé quedarse en Liverpool pese al supuesto interés de Chelsea y de su extécnico en Bayer Leverkusen, Xabi Alonso.",
+            "Barcelona y Real Madrid siguen los pasos del defensa de Stuttgart Finn Jeltsch, de 20 años, también pretendido por Liverpool."
+          ],
+          "format": "bullets",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "راموس يمكن أن يجعل الدوري الإسباني يعود - ثرثرة يوم الاثنين",
-          "summary": "قد يعود سيرجيو راموس بشكل مفاجئ إلى كرة القدم في مدريد، ويضع بورنموث سعرًا مرتفعًا على أليكس سكوت، ويبقى فلوريان ويرتز في ليفربول.",
+          "title": "سوق الانتقالات: راموس يقترب من خيتافي وبورنموث يطلب 100 مليون لبيع سكوت",
+          "summary": "قد يسجل سيرخيو راموس، الحر من أي عقد، عودة مفاجئة لخيتافي بينما يطلب بورنموث أكثر من 100 مليون جنيه إسترليني لبيع أليكس سكوت.",
+          "body": [
+            "يدرس نادي خيتافي التعاقد مع القائد السابق لريال مدريد سيرخيو راموس، البالغ من العمر 40 عامًا، لإعادته إلى العاصمة الإسبانية.",
+            "حدد بورنموث سعر بيع لاعب وسطه الشاب أليكس سكوت بأكثر من 100 مليون جنيه إسترليني في ظل اهتمام تشيلسي وليفربول.",
+            "ينوي فلوريان فيرتز الاستمرار في ليفربول رغم أنباء اهتمام تشيلسي ومدربه السابق في باير ليفركوزن تشابي ألونسو.",
+            "يواجه برشلونة وريال مدريد منافسة من ليفربول لضم مدافع شتوتغارت البالغ 20 عامًا فين يلتش."
+          ],
+          "format": "bullets",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/ckjrw11dv5xjo?at_medium=RSS&at_campaign=rss",
@@ -209,7 +253,20 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/ckjrw11dv5xjo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-18T21:11:14+00:00"
+        }
+      }
     },
     {
       "id": "5d0555fe119c",
@@ -217,27 +274,44 @@
       "summary": "L’ASEC Mimosas a obtenu un match nul (1-1) sur la pelouse du MAS de Fès, ce dimanche au Maroc, lors du match aller du deuxième tour préliminaire de la Ligue Lire l'article The post Ligue des champions CAF : Bamba Souhalio, 16 ans, sauve l’ASEC à Fès appeared first on Africa Top…",
       "i18n": {
         "fr": {
-          "title": "Ligue des champions CAF : Bamba Souhalio, 16 ans, sauve l’ASEC à Fès",
-          "summary": "L’ASEC Mimosas a obtenu un match nul (1-1) sur la pelouse du MAS de Fès, ce dimanche au Maroc, lors du match aller du deuxième tour préliminaire de la Ligue Lire l'article The post Ligue des champions CAF : Bamba Souhalio, 16 ans, sauve l’ASEC à Fès appeared first on Africa Top…",
-          "needs_translation": false
+          "title": "Ligue des champions CAF : Bamba Souhalio, 16 ans, sauve l'ASEC à Fès",
+          "summary": "À seulement 16 ans, Bamba Souhalio a permis à l'ASEC Mimosas d'obtenir un précieux nul (1-1) chez le MAS de Fès en Ligue des champions CAF.",
+          "body": [
+            "Le club ivoirien a tenu en échec les Marocains ce dimanche lors du match aller du deuxième tour préliminaire, prenant une option avant la manche retour."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "CAF Champions League: Bamba Souhalio, 16, saves ASEC in Fez",
-          "summary": "ASEC Mimosas got a draw (1-1) on the lawn of MAS DE Fez, this Sunday in Morocco, during the first leg of the second preliminary round of the League Read the article The post CAF Champions League: Bamba Souhalio, 16, saves ASEC in Fez appeared first on Africa Top...",
+          "title": "CAF Champions League: 16-year-old Bamba Souhalio rescues ASEC at Fès",
+          "summary": "At just 16 years old, Bamba Souhalio secured a vital 1-1 draw for ASEC Mimosas away to MAS de Fès in CAF Champions League action.",
+          "body": [
+            "The Ivorian side held their Moroccan hosts this Sunday in the first leg of the second preliminary round, securing a crucial away result ahead of the return leg."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Liga de Campeones CAF: Bamba Souhalio, de 16 años, salva al ASEC en Fez",
-          "summary": "El ASEC Mimosas consiguió un empate (1-1) en el césped del MAS de Fez, este domingo en Marruecos, durante el partido de ida de la segunda ronda preliminar de la Liga Leer el artículo The post Liga de Campeones CAF: Bamba Souhalio, de 16 años, salva al ASEC en Fez appeared first on Africa Top…",
+          "title": "Champions CAF: Bamba Souhalio, de 16 años, rescata a ASEC Mimosas",
+          "summary": "Con apenas 16 años, Bamba Souhalio permitió a ASEC Mimosas empatar 1-1 en su visita a MAS de Fès por la Liga de Campeones africana.",
+          "body": [
+            "El cuadro marfileño firmó las tablas este domingo en Marruecos durante la ida de la segunda ronda preliminar, logrando una valiosa igualdad para la revancha."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري أبطال أفريقيا: بامبا سوهاليو، 16 عامًا، ينقذ أسيك في فاس",
-          "summary": "حصل أسيك ميموزاس على تعادل (1-1) على عشب ماس دي فاس، هذا الأحد في المغرب، خلال المرحلة الأولى من الجولة التمهيدية الثانية للدوري اقرأ المقال ما بعد دوري أبطال أفريقيا: بامبا سوهاليو، 16 عامًا، ينقذ أسيك في فاس ظهر أولاً على قمة إفريقيا...",
+          "title": "دوري أبطال إفريقيا: الفتى بامبا سوهاليو ينقذ أسيك ميموزا في فاس",
+          "summary": "أهدى الواعد بامبا سوهاليو، البالغ 16 عاماً، فريقه أسيك ميموزا تعادلاً ثميناً بنتيجة 1-1 أمام المغرب الفاسي في دوري أبطال إفريقيا.",
+          "body": [
+            "عاد النادي الإيفواري بنتيجة إيجابية من ميدان منافسه المغربي هذا الأحد في ذهاب الدور التمهيدي الثاني، ليكتسب أفضلية مهمة قبل استضافة لقاء الإياب."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/football/ligue-des-champions-caf-bamba-souhalio-16-ans-sauve-lasec-a-fes/",
@@ -259,7 +333,20 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-caf-bamba-souhalio-16-ans-sauve-lasec-a-fes/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-18T21:11:19+00:00"
+        }
+      }
     },
     {
       "id": "5fb930adfb74",
@@ -267,27 +354,48 @@
       "summary": "Delgado es titular en el equipo del Vasco Arruabarrena y uno de los preferidos de los hinchas. Los detalles.",
       "i18n": {
         "es": {
-          "title": "Milton 2030: Boca anunció el nuevo contrato de una de sus figuras",
-          "summary": "Delgado es titular en el equipo del Vasco Arruabarrena y uno de los preferidos de los hinchas. Los detalles.",
-          "needs_translation": false
+          "title": "Boca blinda a Milton Delgado hasta diciembre de 2030",
+          "summary": "Milton Delgado firmó la extensión de su contrato con Boca Juniors hasta diciembre de 2030, acompañada por una sustancial mejora salarial.",
+          "body": [
+            "El volante selló el acuerdo junto al director deportivo Marcelo Delgado. La nueva firma estira por dos años el vínculo previo, que expiraba a fines de 2028, y eleva una cláusula de rescisión fijada antes en 15 millones de dólares, la cual subía a 20 sobre el cierre de cada libro de pases.",
+            "Consolidado como socio de Leandro Paredes en la medular y con mayor peso en ataque, el canterano resolvió meses de negociaciones con la institución. Tras certificar la continuidad de Delgado, la directiva xeneize planea actualizar los contratos de Tomás Aranda y Leonel Flores para blindarlos ante el interés exterior."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Milton 2030: Boca announced the new contract of one of its figures",
-          "summary": "Delgado is a starter in the Vasco Arruabarrena team and a fan favourite. Details.",
+          "title": "Boca Juniors secure Milton Delgado on new deal until December 2030",
+          "summary": "Milton Delgado has put pen to paper on a contract extension with Boca Juniors through to December 2030, landing a significant pay rise in the process.",
+          "body": [
+            "The midfielder finalised the deal alongside sporting director Marcelo Delgado. The renewal adds two years to his previous contract, which was due to run out in late 2028, while bumping up a release clause that previously stood at $15 million and climbed to $20 million as the transfer window neared its close.",
+            "Now firmly established alongside Leandro Paredes in midfield and offering far more threat in the final third, the academy graduate capped off months of talks. With Delgado's future secured, the Boca Juniors hierarchy now aims to tie down Tomás Aranda and Leonel Flores to stave off outside interest."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Milton 2030 : Boca annonce le nouveau contrat d'une de ses figures",
-          "summary": "Delgado est titulaire dans l'équipe du Vasco Arruabarrena et l'un des favoris des fans. Les détails.",
+          "title": "Boca Juniors blinde Milton Delgado jusqu'en décembre 2030",
+          "summary": "Milton Delgado a paraphé une prolongation de contrat avec Boca Juniors jusqu'en décembre 2030, assortie d'une nette revalorisation salariale.",
+          "body": [
+            "Le milieu de terrain a scellé l'accord en présence du directeur sportif Marcelo Delgado. Le nouveau bail prolonge de deux ans l'engagement précédent, qui expirait fin 2028, tout en rehaussant une clause libératoire jusque-là fixée à 15 millions de dollars (et portée à 20 millions en fin de mercato).",
+            "Devenu le compère de Leandro Paredes dans l'entrejeu et de plus en plus actif offensivement, le produit du centre de formation met un terme à de longues négociations. Après avoir blindé Delgado, l'état-major du club entend revaloriser les contrats de Tomás Aranda et Leonel Flores afin d'éloigner les prétendants."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ميلتون 2030: أعلنت بوكا عن العقد الجديد لأحد أرقامها",
-          "summary": "ديلغادو هو المبتدئ في فريق فاسكو أروبارينا والمفضل لدى المعجبين. التفاصيل.",
+          "title": "بوكا جونيورز يحصن ميلتون ديلغادو حتى ديسمبر 2030",
+          "summary": "وقّع ميلتون ديلغادو على تمديد عقده مع بوكا جونيورز حتى ديسمبر 2030، مع تحسين مالي كبير في راتبه.",
+          "body": [
+            "أبرم لاعب الوسط الاتفاق الجديد رفقة المدير الرياضي مارسيلو ديلغادو. ويضيف العقد عامين إضافيين إلى ارتباطه السابق الذي كان ينتهي أواخر 2028، كما رفع قيمة الشرط الجزائي التي كانت محددة بـ 15 مليون دولار وتصل تلقائياً إلى 20 مليوناً مع اقتراب إغلاق سوق الانتقالات.",
+            "بعدما فرض نفسه شريكاً لـ لياندرو باريديس في خط الوسط وبحضور هجومي أكبر، أنهى خريج الأكاديمية أشهراً من المفاوضات مع ناديه. وعقب حسم بقاء ديلغادو، تتجه بوصلة الإدارة الآن نحو تحسين عقدي توماس أراندا وليونيل فلوريس لتحصينهما ضد أطماع الأندية الخارجية."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/miltondelgado-boca-bocapredio-contrato-marcelodelgado-leandroparedes-clausuladerescision_0_iigiYt29yd.html",
@@ -309,7 +417,20 @@
           "url": "https://www.ole.com.ar/boca-juniors/miltondelgado-boca-bocapredio-contrato-marcelodelgado-leandroparedes-clausuladerescision_0_iigiYt29yd.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-18T21:11:22+00:00"
+        }
+      }
     },
     {
       "id": "888c41296f84",
@@ -359,7 +480,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261018/1004240330/gueler-esquiva-expulsion-celebra-golazo-adelantar-madrid.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "169a86ea7f76",
@@ -417,27 +543,44 @@
       "summary": "Kike Salas ha mostrado su indignación con el arbitraje del encuentro entre el Real Madrid y el Sevilla , en el que el conjunto blanco vencía por 2-0 gracias a los goles de Arda Güler y Kylian Mbappé.",
       "i18n": {
         "es": {
-          "title": "Kike Salas: “Es una expulsión clara”",
-          "summary": "Kike Salas ha mostrado su indignación con el arbitraje del encuentro entre el Real Madrid y el Sevilla , en el que el conjunto blanco vencía por 2-0 gracias a los goles de Arda Güler y Kylian Mbappé.",
-          "needs_translation": false
+          "title": "Kike Salas denuncia una expulsión perdonada a Arda Güler",
+          "summary": "El central sevillista Kike Salas criticó duramente la inacción del VAR tras un presunto codazo de Arda Güler a Peque antes del primer gol del Real Madrid.",
+          "body": [
+            "Tras caer 2-0 en el Bernabéu, con goles del propio Güler y de Kylian Mbappé, el defensa lamentó que no se revisara la agresión. Salas recalcó que la acción merecía tarjeta roja directa y que ese fallo arbitral condicionó el desenlace del choque."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Kike Salas: \"It's a clear expulsion\"",
-          "summary": "Kike Salas has shown his indignation with the refereeing of the match between Real Madrid and Sevilla , in which the white team won 2-0 thanks to the goals of Arda Güler and Kylian Mbappé.",
+          "title": "Kike Salas claims Arda Güler escaped a clear red card",
+          "summary": "Sevilla centre-back Kike Salas criticised the VAR's inaction over an elbow from Arda Güler on Peque shortly before the Turkish midfielder opened the scoring for Real Madrid.",
+          "body": [
+            "Following the 2-0 defeat sealed by Güler and Kylian Mbappé, the defender lamented that the incident went unreviewed. Salas insisted the blow warranted an immediate red card and proved decisive in swinging the match."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Kike Salas : « C'est une expulsion claire »",
-          "summary": "Kike Salas a montré son indignation avec l'arbitrage de la rencontre entre le Real Madrid et Séville , dans laquelle l'équipe blanche a gagné 2-0 grâce aux buts d'Arda Güler et Kylian Mbappé.",
+          "title": "Kike Salas dénonce une expulsion oubliée pour Arda Güler",
+          "summary": "Le défenseur de Sevilla Kike Salas a fustigé l'inaction de la VAR après un coup de coude d'Arda Güler sur Peque précédant l'ouverture du score du Real Madrid.",
+          "body": [
+            "Battu 2-0 après des réalisations de Güler et Kylian Mbappé, le joueur andalou a déploré l'absence d'intervention vidéo sur ce geste litigieux. Selon lui, le milieu turc méritait une expulsion directe qui aurait changé le scénario de la rencontre."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "كيكي سالاس: \"إنه طرد واضح\"",
-          "summary": "أظهر كيكي سالاس سخطه من التحكيم في المباراة بين ريال مدريد وإشبيلية ، والتي فاز فيها الفريق الأبيض 2-0 بفضل هدفي أردا غولر وكيليان مبابي.",
+          "title": "كيكي سالاس ينتقد عدم طرد أردا غولر",
+          "summary": "شن مدافع إشبيلية كيكي سالاس هجوما لاذعا على التحكيم لتجاهل ضربة بالمرفق وجهها أردا غولر إلى بيكي قبل تسجيل الهدف الأول لنادي ريال مدريد.",
+          "body": [
+            "وعقب الخسارة 2-0 بهدفي غولر وكيليان مبابي، عبر المدافع عن استيائه لعدم تدخل حكم الفيديو المساعد لمراجعة اللقطة. وأكد سالاس أن الاعتداء كان يستوجب بطاقة حمراء مباشرة غيرت مجرى اللقاء بالكامل."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261018/1004240340/kike-salas-expulsion-clara.html",
@@ -459,7 +602,20 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261018/1004240340/kike-salas-expulsion-clara.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-18T21:11:26+00:00"
+        }
+      }
     },
     {
       "id": "bddae40cac23",
@@ -467,27 +623,44 @@
       "summary": "Le Horoya AC a assuré l’essentiel face à Al Merreikh.",
       "i18n": {
         "fr": {
-          "title": "Ligue des champions CAF : le Horoya AC domine Al Merreikh et aborde le retour avec confianc",
-          "summary": "Le Horoya AC a assuré l’essentiel face à Al Merreikh.",
-          "needs_translation": false
+          "title": "Ligue des champions CAF : le Horoya AC domine Al Merreikh",
+          "summary": "Le Horoya AC a pris le dessus sur Al Merreikh en Ligue des champions de la CAF, s'offrant un précieux avantage avant la manche retour.",
+          "body": [
+            "Le club guinéen a assuré l'essentiel lors de ce rendez-vous continental. Cette victoire lui permet d'aborder le match retour dans une position favorable pour poursuivre sa route en Ligue des champions."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "CAF Champions League: Horoya AC dominates Al Merreikh and tackles the comeback with confidence",
-          "summary": "The Horoya AC ensured the essential against Al Merreikh.",
+          "title": "CAF Champions League: Horoya AC take advantage against Al Merreikh",
+          "summary": "Horoya AC edged past Al Merreikh in the CAF Champions League, securing a vital advantage ahead of the decisive second leg.",
+          "body": [
+            "The Guinean outfit delivered when it mattered most in this continental tie. The result leaves Horoya in a strong position before the return fixture as they bid to advance."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Liga de Campeones CAF: Horoya AC domina a Al Merreikh y aborda el regreso con confianza",
-          "summary": "El Horoya AC aseguró lo esencial ante Al Merreikh.",
+          "title": "Champions CAF: Horoya AC toma ventaja ante Al Merreikh",
+          "summary": "Horoya AC se impuso a Al Merreikh en la Liga de Campeones de la CAF y cobró una valiosa ventaja de cara a la vuelta.",
+          "body": [
+            "El conjunto guineano cumplió con el objetivo en este duelo continental. El resultado le permite encarar el choque definitivo con tranquilidad y la eliminatoria encarrilada."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري أبطال أفريقيا: هورويا إيه سي تهيمن على المريخ وتعالج العودة بثقة",
-          "summary": "ضمنت شركة Horoya AC الأساسيات ضد Al Merreikh.",
+          "title": "دوري أبطال إفريقيا: هورويا يتفوق على المريخ السوداني",
+          "summary": "فاز هورويا كوناكري على المريخ في دوري أبطال إفريقيا، محققاً أفضلية ثمينة قبل خوض مباراة الإياب القارية المرتقبة.",
+          "body": [
+            "حقق النادي الغيني الأهم في هذه المواجهة القارية. ويمنحه هذا التفوق أريحية مهمة قبل لقاء الحسم في جولة الإياب لمواصلة مشواره في البطولة."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/afrique-football/ligue-des-champions-caf-le-horoya-ac-domine-al-merreikh-et-aborde-le-retour-avec-confianc/",
@@ -509,7 +682,20 @@
           "url": "https://africatopsports.com/afrique-football/ligue-des-champions-caf-le-horoya-ac-domine-al-merreikh-et-aborde-le-retour-avec-confianc/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 4,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-18T21:11:30+00:00"
+        }
+      }
     },
     {
       "id": "02803d4c859a",
@@ -517,27 +703,44 @@
       "summary": "Le club libyen Swehly SC a pris une option sur la qualification en s’imposant face à l’Espérance sportive de Tunis (1-0), ce dimanche à Misrata, lors du match aller du Lire l'article The post Ligue des champions CAF : Swehly SC fait tomber l’Espérance de Tunis appeared first on…",
       "i18n": {
         "fr": {
-          "title": "Ligue des champions CAF : Swehly SC fait tomber l’Espérance de Tunis",
-          "summary": "Le club libyen Swehly SC a pris une option sur la qualification en s’imposant face à l’Espérance sportive de Tunis (1-0), ce dimanche à Misrata, lors du match aller du Lire l'article The post Ligue des champions CAF : Swehly SC fait tomber l’Espérance de Tunis appeared first on…",
-          "needs_translation": false
+          "title": "Ligue des champions CAF : Swehly SC surprend l'Espérance de Tunis",
+          "summary": "Le club libyen d'Al-Swehly a dominé l'Espérance de Tunis un but à zéro, dimanche, en match aller de Ligue des champions de la CAF.",
+          "body": [
+            "Devant son public à Misrata, la formation libyenne s'offre une courte mais précieuse victoire face au cador tunisien. Ce succès sur la plus petite des marges permet à Swehly SC de prendre un léger avantage comptable avant la manche retour décisive pour la qualification."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "CAF Champions League: Swehly SC takes down Esperance de Tunis",
-          "summary": "The Libyan club Swehly SC took an option on the qualification by winning against Esperance Sport de Tunis (1-0), this Sunday in Misrata, during the first leg of the The post CAF Champions League: Swehly SC brought down Esperance de Tunis appeared first on...",
+          "title": "CAF Champions League: Swehly SC stun Espérance de Tunis",
+          "summary": "Libyan side Al-Swehly edged Espérance de Tunis 1-0 on Sunday in their CAF Champions League first-leg encounter.",
+          "body": [
+            "Backed by their home crowd in Misrata, the Libyan outfit claimed a narrow yet vital victory over the Tunisian heavyweights. The 1-0 win gives Swehly SC a slender advantage ahead of the decisive return leg."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Liga de Campeones CAF: Swehly SC hace caer a la Esperance de Túnez",
-          "summary": "El club libio Swehly SC tomó una opción en la clasificación al vencer al Esperance Sport de Túnez (1-0), este domingo en Misrata, durante el partido de ida del Leer el artículo The post Liga de Campeones CAF: Swehly SC derrotó al Esperance de Túnez appeared first on…",
+          "title": "Liga de Campeones CAF: Swehly SC sorprende a Espérance de Tunis",
+          "summary": "El conjunto libio Al-Swehly se impuso este domingo por 1-0 a Espérance de Tunis en el choque de ida de la Liga de Campeones de la CAF.",
+          "body": [
+            "Arropado por su afición en Misrata, el cuadro libio firmó un triunfo ajustado pero crucial ante el gigante tunecino. Esta victoria por la mínima permite a Swehly SC tomar una ligera ventaja antes del decisivo duelo de vuelta."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري أبطال أفريقيا: Swehly SC يطيح بـ Esperance de Tunis",
-          "summary": "اتخذ نادي السويحلي الليبي خيارًا في التصفيات بالفوز على Esperance Sport de Tunis (1-0)، هذا الأحد في مصراتة، خلال المحطة الأولى من دوري أبطال إفريقيا: أسقطت Swehly SC Esperance de Tunis ظهرت لأول مرة في...",
+          "title": "دوري أبطال إفريقيا: السويحلي يفاجئ الترجي التونسي",
+          "summary": "تغلب نادي السويحلي الليبي على الترجي التونسي بهدف دون رد، يوم الأحد، في ذهاب دوري أبطال إفريقيا.",
+          "body": [
+            "وأمام جماهيره في مصراتة، خطف الفريق الليبي انتصاراً ثميناً وصعباً أمام العملاق التونسي. ويمنح هذا الفوز بالحد الأدنى نادي السويحلي أسبقية طفيفة قبل لقاء الإياب الحاسم لتحديد المتأهل."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/football/ligue-des-champions-caf-swehly-sc-fait-tomber-lesperance-de-tunis/",
@@ -559,7 +762,20 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-caf-swehly-sc-fait-tomber-lesperance-de-tunis/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-18T21:11:35+00:00"
+        }
+      }
     },
     {
       "id": "f2e48af59829",
@@ -567,27 +783,44 @@
       "summary": "Sous pression face au FC Barcelone, le Real Madrid peut compter sur un Kylian Mbappé inspiré. Face à Séville, le Français a inscrit un but somptueux, à retrouver en vidéo.",
       "i18n": {
         "fr": {
-          "title": "Liga : en vidéo, le but somptueux de Kylian Mbappé qui permet au Real Madrid de prendre les devants face à Séville",
-          "summary": "Sous pression face au FC Barcelone, le Real Madrid peut compter sur un Kylian Mbappé inspiré. Face à Séville, le Français a inscrit un but somptueux, à retrouver en vidéo.",
-          "needs_translation": false
+          "title": "Real Madrid : le bijou de Kylian Mbappé face à Séville",
+          "summary": "Kylian Mbappé a donné l'avantage au Real Madrid face à Séville grâce à un geste de grande classe lors de la 9e journée de Liga.",
+          "body": [
+            "Lancé par une talonnade inspirée de Jude Bellingham consécutive à une passe de Diomandé, l'attaquant français a effacé le gardien andalou d'une roulette avant de marquer dans le but vide. Une ouverture du score capitale pour les Madrilènes, contraints de l'emporter pour suivre le rythme imposé par le FC Barcelone."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Liga: in video, Kylian Mbappé's sumptuous goal that allows Real Madrid to take the lead against Seville",
-          "summary": "Under pressure against FC Barcelona, Real Madrid can count on an inspired Kylian Mbappé. Facing Seville, the Frenchman scored a sumptuous goal, to be found on video.",
+          "title": "Real Madrid: Kylian Mbappé scores stunning goal against Sevilla",
+          "summary": "Kylian Mbappé fired Real Madrid ahead against Sevilla with a moment of brilliance during Sunday's matchday nine Liga clash.",
+          "body": [
+            "Played in by a Jude Bellingham backheel flick following a pass from Diomandé, the French forward rounded the Andalusian goalkeeper with a slick roulette before rolling the ball into an empty net. The breakthrough gives crucial breathing room to Madrid, who must win to stay on FC Barcelona's heels."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Liga: en vídeo, el gol suntuoso de Kylian Mbappé que permite al Real Madrid tomar la delantera ante el Sevilla",
-          "summary": "Bajo presión ante el FC Barcelona, el Real Madrid puede contar con un Kylian Mbappé inspirado. Frente al Sevilla, el francés marcó un gol suntuoso, que se puede ver en el vídeo.",
+          "title": "Real Madrid: golazo de Kylian Mbappé ante el Sevilla",
+          "summary": "Kylian Mbappé adelantó al Real Madrid frente al Sevilla con una genialidad en la novena jornada de LaLiga.",
+          "body": [
+            "Habilitado por un taconazo de Jude Bellingham tras una entrega de Diomandé, el delantero francés sorteó al portero con una ruleta antes de empujar el balón a la red vacía. Un tanto crucial para los blancos, obligados a ganar para no ceder terreno frente al FC Barcelona."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "الدوري الإسباني: في الفيديو، هدف كيليان مبابي الفخم الذي يسمح لريال مدريد بأخذ زمام المبادرة ضد إشبيلية",
-          "summary": "تحت الضغط ضد نادي برشلونة، يمكن لريال مدريد الاعتماد على كيليان مبابي الملهم. في مواجهة إشبيلية، سجل الفرنسي هدفًا فخمًا، يمكن العثور عليه في الفيديو.",
+          "title": "ريال مدريد: هدف رائع من كيليان مبابي أمام إشبيلية",
+          "summary": "منح كيليان مبابي التقدم لريال مدريد أمام إشبيلية بهدف استعراضي مميز، الأحد، لحساب الجولة التاسعة من الدوري الإسباني.",
+          "body": [
+            "فبعد تمريرة بالكعب من جود بيلينغهام إثر كرة من ديوماندي، تجاوز المهاجم الفرنسي الحارس بحركة فنية بارعة قبل أن يسكن الكرة الشباك الخالية. ويعد هذا الهدف ثمينا للنادي الملكي، المطالب بالانتصار للبقاء على مقربة من المتصدر برشلونة."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/espagne/liga-en-video-le-but-somptueux-de-kylian-mbappe-qui-permet-au-real-madrid-de-prendre-les-devants-face-a-seville-20261018",
@@ -609,7 +842,12 @@
           "url": "https://www.lefigaro.fr/sports/football/espagne/liga-en-video-le-but-somptueux-de-kylian-mbappe-qui-permet-au-real-madrid-de-prendre-les-devants-face-a-seville-20261018"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full"
+      }
     },
     {
       "id": "9bb4cce4cdc3",
@@ -617,27 +855,48 @@
       "summary": "Noni Madueke may not have the role he wants at Arsenal but his winning goal against Nottingham Forest showed why he is one of Mikel Arteta's valued players.",
       "i18n": {
         "en": {
-          "title": "Madueke's 'anger and conviction' shows he's more than a 'finisher'",
-          "summary": "Noni Madueke may not have the role he wants at Arsenal but his winning goal against Nottingham Forest showed why he is one of Mikel Arteta's valued players.",
-          "needs_translation": false
+          "title": "Madueke shines off the bench as Arsenal edge Nottingham Forest",
+          "summary": "Noni Madueke came off the bench to score an 80th-minute winner against Nottingham Forest, securing crucial points in Arsenal's Premier League title defence.",
+          "body": [
+            "The 24-year-old entered at half-time and found the net with a deflected strike on his weaker right foot. With regular winger Christos Tzolis sidelined by a hamstring injury, Madueke has capitalized on his opening across three successive fixtures, having previously started against Leeds and set up a goal against Lille in the Champions League.",
+            "Mikel Arteta praised the forward for showing renewed anger and conviction, while emphasizing his strong standing inside the dressing room. The manager frames his substitutes as \"finishers,\" an approach underlined by output: Arsenal replacements have contributed to 26 Premier League goals since the start of last season, the highest tally in the division."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "La « colère et la conviction » de Madueke montrent qu'il est plus qu'un « finisseur »",
-          "summary": "Noni Madueke n'a peut-être pas le rôle qu'il veut à Arsenal, mais son but gagnant contre Nottingham Forest a montré pourquoi il est l'un des joueurs appréciés de Mikel Arteta.",
+          "title": "Madueke sort du banc et délivre Arsenal face à Nottingham Forest",
+          "summary": "Entré après la pause, Noni Madueke a signé le but de la victoire à la 80e minute contre Nottingham Forest, offrant trois points cruciaux à Arsenal.",
+          "body": [
+            "Lancé dès la reprise, l'ailier de 24 ans a fait la différence d'un tir dévié de son mauvais pied, le droit. Profitant de la blessure aux ischio-jambiers de Christos Tzolis, Madueke enchaîne une troisième sortie convaincante après sa titularisation contre Leeds et sa passe décisive face à Lille en Champions League.",
+            "Mikel Arteta a mis en avant la hargne et la détermination de son joueur, tout en saluant sa cote de popularité dans le vestiaire. L'entraîneur qualifie volontiers ses remplaçants de « finisseurs », une méthode payante : le banc d'Arsenal a pesé sur 26 buts en Premier League depuis le début de la saison passée, plus que n'importe quelle autre équipe."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "La \"ira y convicción\" de Madueke muestra que es más que un \"finalista\"",
-          "summary": "Noni Madueke puede no tener el papel que quiere en el Arsenal, pero su gol ganador contra el Nottingham Forest demostró por qué es uno de los jugadores más valiosos de Mikel Arteta.",
+          "title": "Madueke desatasca a Arsenal desde el banquillo ante Nottingham Forest",
+          "summary": "Noni Madueke anotó en el minuto 80 tras salir desde el banquillo para batir a Nottingham Forest y dar tres puntos de oro a Arsenal.",
+          "body": [
+            "El atacante de 24 años ingresó tras el descanso y resolvió el choque con un derechazo desviado con su pierna menos hábil. Ante la baja por lesión muscular de Christos Tzolis, Madueke encadena tres partidos determinantes, tras ser titular contra Leeds y repartir una asistencia frente a Lille en la Champions League.",
+            "Mikel Arteta ensalzó la garra y la convicción del extremo, destacando su peso dentro del vestuario. El técnico define a sus suplentes como «rematadores», una fórmula refrendada por los datos: los recambios de Arsenal han generado 26 goles en la Premier League desde el inicio de la pasada campaña, el registro más alto del campeonato."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "يُظهر \"غضب واقتناع\" مادوكي أنه أكثر من مجرد \"مُنهي\"",
-          "summary": "قد لا يكون لدى نوني مادوكي الدور الذي يريده في آرسنال ولكن هدفه الفائز ضد نوتنغهام فورست أظهر لماذا هو واحد من لاعبي ميكيل أرتيتا القيمين.",
+          "title": "مادويكي ينزل بديلاً ويقود أرسنال لتخطي نوتنغهام فورست",
+          "summary": "خطف نوني مادويكي هدف الفوز الثمين في الدقيقة 80 أمام نوتنغهام فورست إثر دخوله بديلاً، ليمنح أرسنال نقاطاً حاسمة في صراعه للحفاظ على لقب الدوري الإنجليزي الممتاز.",
+          "body": [
+            "ودخل المهاجم البالغ 24 عاماً مع انطلاق الشوط الثاني، ليهز الشباك بتسديدة غيرت مسارها بقدمه اليمنى الضعيفة. ومستفيداً من غياب الجناح الأساسي كريستوس تزوليس بسبب إصابة عضلية، واصل مادويكي تألقه للمباراة الثالثة توالياً، بعدما شارك أساسياً أمام ليدز وصنع هدفاً في شباك ليل بدوري أبطال أوروبا.",
+            "وأشاد ميكيل أرتيتا بالروح العالية والإصرار اللذين أظهرهما اللاعب، مؤكداً مكانته المميزة داخل غرفة الملابس. ويطلق مدرب أرسنال على بديليه وصف «الحاسمين»، وهي فلسفة تعكسها الأرقام الميدانية؛ إذ ساهم بدلاء الفريق في تسجيل 26 هدفاً في الدوري الإنجليزي الممتاز منذ بداية الموسم الماضي، وهو الرقم الأعلى بين جميع الأندية."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/c3qjnyw8qe4do?at_medium=RSS&at_campaign=rss",
@@ -659,7 +918,12 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/c3qjnyw8qe4do?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full"
+      }
     },
     {
       "id": "9139a3c38f16",
@@ -667,27 +931,44 @@
       "summary": "Fue un golazo el que Mbappé hizo para poner el 2-0, pero en el comienzo de la jugada en el Real Madrid - Sevilla , perfectamente pudo ser anulado por una falta previa que los jugadores del Sevilla pidieron al colegiado después de que el francés batiera a Vlachodimos .",
       "i18n": {
         "es": {
-          "title": "El Sevilla pide una falta en el gol de Mbappé",
-          "summary": "Fue un golazo el que Mbappé hizo para poner el 2-0, pero en el comienzo de la jugada en el Real Madrid - Sevilla , perfectamente pudo ser anulado por una falta previa que los jugadores del Sevilla pidieron al colegiado después de que el francés batiera a Vlachodimos .",
-          "needs_translation": false
+          "title": "Polémica por una posible falta previa en el gol de Mbappé ante el Sevilla",
+          "summary": "El Sevilla protestó una presunta falta de Bellingham sobre Fofana en el inicio de la jugada del segundo tanto del Real Madrid, obra de Kylian Mbappé.",
+          "body": [
+            "Antes de que el delantero francés batiera a Vlachodimos para el 2-0, los futbolistas andaluces reclamaron al colegiado un contacto no señalado en la medular. El tanto terminó subiendo al marcador en un duelo con discusión arbitral, pues los visitantes también lamentaron que Arda Güler no fuera expulsado minutos antes de abrir el marcador."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Sevilla calls for a foul on Mbappé's goal",
-          "summary": "It was a goal that Mbappé made to make it 2-0, but at the beginning of the play at Real Madrid - Sevilla , it could perfectly well have been cancelled by a previous foul that the Sevilla players asked the collegiate after the Frenchman beat Vlachodimos .",
+          "title": "Controversy over potential foul in buildup to Mbappé goal against Sevilla",
+          "summary": "Sevilla protested an alleged foul by Bellingham on Fofana in the buildup to Kylian Mbappé's strike, which doubled Real Madrid's lead.",
+          "body": [
+            "Before the French forward beat Vlachodimos to make it 2-0, the Andalusian side appealed for an uncalled contact in midfield. The goal stood despite the protests on a contentious night of officiating, with the visitors also frustrated that Arda Güler avoided a red card just minutes before breaking the deadlock."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Séville demande une faute au but de Mbappé",
-          "summary": "C'était un but que Mbappé a fait pour mettre 2-0, mais au début du match au Real Madrid - Séville , il a parfaitement pu être annulé pour une faute antérieure que les joueurs de Séville ont demandée au collégial après que le Français ait battu Vlachodimos .",
+          "title": "Polémique sur une faute préalable au but de Mbappé contre Sevilla",
+          "summary": "Sevilla a contesté une faute présumée de Bellingham sur Fofana au départ de l'action menant au deuxième but du Real Madrid, signé Kylian Mbappé.",
+          "body": [
+            "Avant que l'attaquant français ne trompe Vlachodimos pour le 2-0, les Andalous ont réclamé une faute non sifflée au milieu de terrain. Le but a finalement été validé au terme d'une soirée agitée pour l'arbitrage, les visiteurs ayant déjà protesté contre la non-exclusion d'Arda Güler quelques minutes avant l'ouverture du score."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "إشبيلية تدعو إلى ارتكاب خطأ في هدف مبابي",
-          "summary": "كان الهدف الذي أحرزه مبابي هو 2-0، ولكن في بداية اللعب في ريال مدريد - إشبيلية ، كان من الممكن أن يتم إلغاؤه بسبب خطأ سابق طلبه لاعبو إشبيلية من الفريق بعد فوز الفرنسي على فلاشوديموس .",
+          "title": "جدل تحكيمي حول خطأ محتمل قبل هدف مبابي في شباك إشبيلية",
+          "summary": "احتج إشبيلية على خطأ غير محتسب ارتكبه بيلينغهام ضد فوفانا في بداية الهجمة التي أسفرت عن الهدف الثاني لريال مدريد بتوقيع كيليان مبابي.",
+          "body": [
+            "وقبل أن يهز المهاجم الفرنسي شباك فلاتشوديموس معلناً النتيجة 2-0، طالب لاعبو الفريق الأندلسي الحكم باحتساب مخالفة في خط الوسط. واحتُسب الهدف في مواجهة حفلت بالجدل التحكيمي، بعدما أعرب الضيوف أيضاً عن استيائهم من عدم طرد أردا غولر قبل دقائق من افتتاحه التسجيل."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261018/1004240333/sevilla-pide-falta-gol-mbappe.html",
@@ -709,7 +990,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261018/1004240333/sevilla-pide-falta-gol-mbappe.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full"
+      }
     },
     {
       "id": "58dead07ffe5",
@@ -759,7 +1045,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-sociedad/20261018/1004240129/matarazzo-repite-formula-preparacion-europa-league.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "04a95cfe2a75",
@@ -767,33 +1058,54 @@
       "summary": "Kylian Mbappé traf für Real Madrid gegen den FC Sevilla zum 2:0. Den Treffer gibt es hier im Video.",
       "i18n": {
         "de": {
-          "title": "\"Einfach nur Wahnsinn\": Genialer Mbappé erhöht für Real",
-          "summary": "Kylian Mbappé traf für Real Madrid gegen den FC Sevilla zum 2:0. Den Treffer gibt es hier im Video.",
-          "needs_translation": false
+          "title": "Mbappé glänzt: Franzose erhöht für Real Madrid gegen Sevilla",
+          "summary": "Kylian Mbappé hat die Führung von Real Madrid im Duell gegen den FC Sevilla auf 2:0 ausgebaut.",
+          "body": [
+            "Der französische Angreifer setzte sich entscheidend durch und baute den Vorsprung der Madrilenen gegen die Andalusier aus. Das sehenswerte Tor zum 2:0 ist direkt im Video zu sehen."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "\"Just insanity\": ingenious Mbappé raises for Real",
-          "summary": "Kylian Mbappé scored for Real Madrid against FC Sevilla 2-0. The hit is here in the video.",
+          "title": "Mbappé shines: Frenchman doubles Real Madrid lead against Sevilla",
+          "summary": "Kylian Mbappé doubled the lead for Real Madrid to make it 2-0 against Sevilla FC.",
+          "body": [
+            "The French forward gave Madrid breathing space by slotting home their second goal against the Andalusian side. The 2-0 strike is available to watch here on video."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "« Juste de la folie » : un Mbappé génial rehaussé pour le Real",
-          "summary": "Kylian Mbappé a marqué pour le Real Madrid contre le FC Séville 2-0. Le résultat se trouve ici dans la vidéo.",
+          "title": "Mbappé décisif : le Français fait le break pour le Real Madrid",
+          "summary": "Kylian Mbappé a porté l'avance du Real Madrid à 2-0 lors de la rencontre face au Sevilla FC.",
+          "body": [
+            "L'attaquant français a fait le break face aux Andalous pour donner deux longueurs d'avance aux siens. Le but du 2:0 et les images de l'action sont à retrouver en vidéo ci-dessous."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "\"Simplemente una locura\": ingenioso Mbappé aumentado para el Real",
-          "summary": "Kylian Mbappé marcó 2-0 para el Real Madrid contra el Sevilla FC. El resultado está aquí en el vídeo.",
+          "title": "Mbappé marca el 2-0 de Real Madrid ante Sevilla FC",
+          "summary": "Kylian Mbappé anotó el 2-0 para ampliar la ventaja de Real Madrid ante el Sevilla FC.",
+          "body": [
+            "El atacante francés firmó el segundo tanto madridista frente al cuadro andaluz para consolidar el marcador. La acción del 2-0 puede verse íntegramente en el vídeo adjunto."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "\"مجرد جنون \": يرفع مبابي العبقري لريال مدريد",
-          "summary": "سجل كيليان مبابي لصالح ريال مدريد ضد إشبيلية 2-0. الضربة هنا في الفيديو.",
+          "title": "مبابي يتألق ويعزز تقدم ريال مدريد أمام إشبيلية",
+          "summary": "عزز كيليان مبابي تقدم ريال مدريد أمام إشبيلية بتسجيله الهدف الثاني لتصبح النتيجة هدفين دون رد.",
+          "body": [
+            "سجل المهاجم الفرنسي الهدف الثاني للنادي الملكي ليمنح فريقه أسبقية مريحة أمام الفريق الأندلسي. لقطة الهدف الثاني متاحة كاملة عبر مقطع الفيديو المرفق."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.kicker.de/einfach-nur-wahnsinn-genialer-mbapp-erhoeht-fuer-real-1262822/video#omrss",
@@ -815,7 +1127,12 @@
           "url": "https://www.kicker.de/einfach-nur-wahnsinn-genialer-mbapp-erhoeht-fuer-real-1262822/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 4,
+        "source_read": "rss"
+      }
     },
     {
       "id": "8d8194cdc010",
