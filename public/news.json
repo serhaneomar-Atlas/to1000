@@ -59,7 +59,12 @@
           "url": "https://www.lefigaro.fr/sports/football/live/ligue-1/2026/2640613/angers-marseille"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "744c4ce7b515",
@@ -127,7 +132,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20261018/1004238244/bournemouth-sunderland-directo-premier-league.html"
         }
       ],
-      "source_count": 4
+      "source_count": 4,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "42a9cfe386b5",
@@ -201,7 +211,12 @@
           "url": "https://www.mundodeportivo.com/futbol/ligue-1/20261018/1004238238/angers-marsella-directo-ligue-1.html"
         }
       ],
-      "source_count": 5
+      "source_count": 5,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "1345b93406da",
@@ -209,27 +224,48 @@
       "summary": "Touché à la cuisse gauche samedi, lors de la victoire à Strasbourg, le latéral portugais manquera le choc face au FC Barcelone, mardi, et sera absent pour plusieurs semaines.",
       "i18n": {
         "fr": {
-          "title": "PSG-Barça : énorme coup dur pour les Parisiens avec le forfait de Nuno Mendes",
-          "summary": "Touché à la cuisse gauche samedi, lors de la victoire à Strasbourg, le latéral portugais manquera le choc face au FC Barcelone, mardi, et sera absent pour plusieurs semaines.",
-          "needs_translation": false
+          "title": "PSG : Nuno Mendes blessé à la cuisse et forfait contre le Barça",
+          "summary": "Victime d'une lésion à la cuisse gauche contre Strasbourg, Nuno Mendes manquera la réception du FC Barcelone mardi en Ligue des champions.",
+          "body": [
+            "Le Paris Saint-Germain a officialisé dimanche l'indisponibilité de son latéral pour les prochaines semaines. Entré en jeu samedi lors de la victoire en Alsace (1-3), l'international portugais avait filé directement au vestiaire avant le coup de sifflet final, contredisant l'optimisme mesuré de Luis Enrique.",
+            "Ce forfait prive les Parisiens d'un atout face à Lamine Yamal. Pour composer son flanc gauche mardi lors de la troisième journée européenne, Luis Enrique devra choisir entre Lucas Hernandez et Lucas Digne, ou faire reculer Warren Zaïre-Emery."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "PSG-Barça: huge blow for Parisians with Nuno Mendes' package",
-          "summary": "Hit in the left thigh on Saturday, during the victory in Strasbourg, the Portuguese side will miss the clash against FC Barcelona on Tuesday, and will be absent for several weeks.",
+          "title": "PSG: Nuno Mendes out of Barça clash with thigh injury",
+          "summary": "Sidelined by a left thigh problem picked up against Strasbourg, Nuno Mendes will miss the Champions League clash at home to FC Barcelona on Tuesday.",
+          "body": [
+            "Paris Saint-Germain ruled their Portuguese left-back out for several weeks on Sunday. Introduced from the bench during Saturday's 3-1 win in Alsace, the defender headed straight down the tunnel before the final whistle, defying Luis Enrique's initial optimism.",
+            "The injury deprives PSG of their primary defensive option against Lamine Yamal. For Tuesday's matchday three fixture, the Spanish coach is expected to weigh up Lucas Hernandez and Lucas Digne, or rely on Warren Zaïre-Emery."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "PSG-Barça: gran golpe para los parisinos con la baja de Nuno Mendes",
-          "summary": "Golpeado en el muslo izquierdo el sábado, durante la victoria en Estrasburgo, el lateral portugués se perderá el choque contra el FC Barcelona el martes y estará ausente durante varias semanas.",
+          "title": "PSG: Nuno Mendes, lesionado en el muslo y baja frente al Barça",
+          "summary": "Víctima de una lesión en el muslo izquierdo frente a Strasbourg, Nuno Mendes se perderá la cita de este martes en la Champions League ante el FC Barcelona.",
+          "body": [
+            "El Paris Saint-Germain confirmó este domingo que su lateral zurdo estará fuera de los terrenos de juego durante las próximas semanas. El luso saltó al campo el sábado en la victoria en Alsace (1-3), pero se retiró directo al vestuario antes del final.",
+            "Esta ausencia deja a los parisinos sin su marcador habitual ante Lamine Yamal. Para ocupar el costado zurdo este martes en la tercera jornada, Luis Enrique manejará las opciones de Lucas Hernandez y Lucas Digne, sin descartar a Warren Zaïre-Emery."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "باريس سان جيرمان- برشلونة: ضربة كبيرة للباريسيين مع حزمة نونو مينديز",
-          "summary": "ضرب في الفخذ الأيسر يوم السبت، خلال الانتصار في ستراسبورغ، سيغيب الفريق البرتغالي عن المواجهة ضد برشلونة يوم الثلاثاء، وسيغيب لعدة أسابيع.",
+          "title": "باريس سان جيرمان: إصابة نونو مينديز في الفخذ وغيابه أمام برشلونة",
+          "summary": "تعرض نونو مينديز لإصابة في الفخذ الأيسر أمام ستراسبورغ، ليتأكد غيابه عن مواجهة برشلونة المقررة الثلاثاء في دوري أبطال أوروبا.",
+          "body": [
+            "أعلن باريس سان جيرمان يوم الأحد غياب ظهيره الأيسر لعدة أسابيع مقبلة. وكان الدولي البرتغالي قد دخل بديلاً يوم السبت خلال الفوز في ألزاس بنتيجة 3-1، قبل أن يتوجه مباشرة إلى غرفة تبديل الملابس قبل نهاية اللقاء.",
+            "ويحرم هذا الغياب الفريق الباريسي من مدافعه المعتاد لمواجهة لامين يامال. ولشغل الرواق الأيسر يوم الثلاثاء في الجولة الثالثة، يفاضل لويس إنريكي بين لوكاس هيرنانديز ولوكاس ديني، مع إمكانية اللجوء إلى وارن زائير-إيمري."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/psg-barca-enorme-coup-dur-pour-les-parisiens-avec-le-forfait-de-nuno-mendes-20261018",
@@ -251,7 +287,20 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/psg-barca-enorme-coup-dur-pour-les-parisiens-avec-le-forfait-de-nuno-mendes-20261018"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 8,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-18T16:00:52+00:00"
+        }
+      }
     },
     {
       "id": "23efb92a7563",
@@ -315,27 +364,48 @@
       "summary": "Según pudo saber Olé, el arquero de la Selección Argentina y el Chelsea regresó a su casa a horas de ser intervenido y comenzará su recuperación.",
       "i18n": {
         "es": {
-          "title": "Buenas noticias: Dibu Martínez fue dado de alta tras ser operado por una fractura de mandíbula",
-          "summary": "Según pudo saber Olé, el arquero de la Selección Argentina y el Chelsea regresó a su casa a horas de ser intervenido y comenzará su recuperación.",
-          "needs_translation": false
+          "title": "Dibu Martínez recibe el alta médica tras ser operado de la mandíbula",
+          "summary": "Dibu Martínez ya dejó el hospital tras pasar por el quirófano por una fractura de mandíbula y confía en volver a las canchas en un mes.",
+          "body": [
+            "El golpe se produjo en el minuto 75 del partido ante Everton en la Premier League. Al salir a cortar un centro de puños, el arquero colisionó con Jarrad Branthwaite, quedó tendido sobre el césped y debió retirarse en camilla, reemplazado por Mike Penders.",
+            "Los estudios confirmaron la fractura y obligaron a operarlo con rapidez en Inglaterra. Ya descansando en su casa, el guardameta agradeció los mensajes de apoyo recibidos en redes sociales y apunta a estar disponible en unas cuatro semanas."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Good news: Dibu Martínez was discharged after being operated on for a fractured jaw",
-          "summary": "According to Olé, the goalkeeper of the Argentine National Team and Chelsea returned home hours after being intervened and will begin his recovery.",
+          "title": "Dibu Martínez discharged from hospital following jaw surgery",
+          "summary": "Dibu Martínez has been discharged from hospital following surgery on a fractured jaw, with the goalkeeper targeting a return to action in a month.",
+          "body": [
+            "The injury occurred in the 75th minute of the Premier League clash against Everton. While attempting to punch clear a cross, the keeper collided with Jarrad Branthwaite, went down on the pitch and was stretchered off, replaced by Mike Penders.",
+            "Scans confirmed the fracture and prompted urgent surgery in England. Now recovering at home, the shot-stopper thanked fans on social media for their support and hopes to be back in contention in about four weeks."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Bonne nouvelle : Dibu Martínez a été libéré après avoir été opéré d'une fracture de la mâchoire",
-          "summary": "Comme Olé a pu le savoir, le gardien de but de la sélection argentine et Chelsea est rentré chez lui quelques heures après avoir été opéré et commencera sa récupération.",
+          "title": "Dibu Martínez sort de l'hôpital après son opération de la mâchoire",
+          "summary": "Opéré d'une fracture de la mâchoire, Dibu Martínez a quitté l'hôpital et vise un retour à la compétition d'ici un mois.",
+          "body": [
+            "Le choc s'est produit à la 75e minute du match face à Everton en Premier League. Sorti boxer un centre, le portier a percuté Jarrad Branthwaite de plein fouet avant de rester au sol, évacué sur civière et suppléé par Mike Penders.",
+            "Les examens ont révélé une fracture imposant une intervention chirurgicale rapide en Angleterre. Désormais rentré chez lui, le gardien a remercié ses supporters sur les réseaux sociaux et espère reprendre l'entraînement d'ici quatre semaines."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "أخبار جيدة: تم تسريح ديبو مارتينيز بعد إجراء عملية جراحية لكسر في الفك",
-          "summary": "وفقا لأولي، عاد حارس مرمى المنتخب الأرجنتيني وتشيلسي إلى ديارهم بعد ساعات من تدخله وسيبدأ تعافيه.",
+          "title": "ديبو مارتينيز يغادر المستشفى بعد خضوعه لجراحة في الفك",
+          "summary": "غادر حارس المرمى ديبو مارتينيز المستشفى إثر خضوعه لعملية جراحية ناجحة لعلاج كسر في الفك، واضعاً نصب عينيه العودة إلى الملاعب خلال شهر واحد.",
+          "body": [
+            "وجاءت الإصابة في الدقيقة 75 من المواجهة أمام إيفرتون في الدوري الإنجليزي الممتاز؛ فعند محاولته إبعاد كرة عرضية بقبضتيه، اصطدم بـ جاراد برانثويت وسقط متألماً على العشب، ليغادر الملعب على حمالة ويترك مكانه للحارس مايك بيندرز.",
+            "وأكدت الفحوصات الطبية وجود كسر استلزم تدخلاً جراحياً عاجلاً في إنجلترا. وفور عودته إلى منزله، وجّه الحارس الأرجنتيني رسالة شكر عبر منصات التواصل الاجتماعي على الدعم الجماهيري الكبير، مؤكداً تطلعه للعودة إلى حراسة المرمى خلال قرابة أربعة أسابيع."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/inglaterra/dibu-martinez-alta-medica-fractura-operacion-seleccion-chelsea_0_9b43RM8UE9.html",
@@ -357,7 +427,20 @@
           "url": "https://www.ole.com.ar/futbol-internacional/inglaterra/dibu-martinez-alta-medica-fractura-operacion-seleccion-chelsea_0_9b43RM8UE9.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-18T16:00:56+00:00"
+        }
+      }
     },
     {
       "id": "4be572738243",
@@ -365,27 +448,48 @@
       "summary": "Pere Romeu , técnico del Barça femenino , concentró todo su mensaje en el análisis futbolístico tras encajar la primera derrota en 350 días en la Liga F, precisamente ante el mismo rival, la Real Sociedad que protagonizó la anterior.",
       "i18n": {
         "es": {
-          "title": "Pere Romeu: \"Esto nos servirá para corregir cosas\"",
-          "summary": "Pere Romeu , técnico del Barça femenino , concentró todo su mensaje en el análisis futbolístico tras encajar la primera derrota en 350 días en la Liga F, precisamente ante el mismo rival, la Real Sociedad que protagonizó la anterior.",
-          "needs_translation": false
+          "title": "La Real Sociedad tumba al Barça y corta su racha de 350 días sin perder",
+          "summary": "La Real Sociedad derrotó 2-1 al FC Barcelona y puso fin a una racha invicta de 350 días del conjunto azulgrana en la Liga.",
+          "body": [
+            "El conjunto donostiarra ya había sido el último verdugo liguero del Barça hace casi un año. Pese a la anulación de un penalti a favor de las catalanas tras la intervención del videoarbitraje, Pere Romeu evitó excusas y asumió los desajustes de su equipo. El técnico lamentó la falta de puntería ante la guardameta rival y los problemas para frenar a campo abierto las transiciones de Cecilia, Ainhoa y Nerea, además de recordar el desgaste tras el parón de selecciones.",
+            "En el banquillo local, Gorka Álvarez celebró el impacto anímico del triunfo más allá de los tres puntos. La Real Sociedad encadena así tres victorias consecutivas tras imponerse al Valencia (0-1) y al Hearts escocés (4-0) en competición europea."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Pere Romeu: \"This will help us to correct things\"",
-          "summary": "Pere Romeu , coach of women's Barça, concentrated all his message on football analysis after conceding the first defeat in 350 days in League F, precisely against the same opponent, Real Sociedad, who starred in the previous one.",
+          "title": "Real Sociedad stun FC Barcelona to snap 350-day unbeaten streak",
+          "summary": "Real Sociedad defeated FC Barcelona 2-1, ending the Blaugrana's 350-day unbeaten run in the Liga.",
+          "body": [
+            "Real Sociedad were also the last side to beat Barça in the league almost a year ago. Despite having a penalty overturned following a VAR review, Pere Romeu made no excuses. The manager lamented his team's lack of clinical finishing against an inspired goalkeeper and acknowledged their struggles to contain fast breakaways from the hosts' wingers, while also noting the challenge of returning from an international window.",
+            "In the home dugout, Gorka Álvarez hailed the psychological boost of toppling the league leaders. The victory marks a third straight win for Real Sociedad, following recent triumphs over Valencia (1-0) and Scottish side Hearts (4-0) in European play."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Pere Romeu : « Cela nous aidera à corriger les choses »",
-          "summary": "Pere Romeu , l'entraîneur du Barça féminin , a concentré tout son message sur l'analyse du football après avoir encaissé la première défaite en 350 jours en Liga F, précisément devant le même rival, la Real Sociedad qui a joué le premier rôle.",
+          "title": "La Real Sociedad fait chuter le Barça et met fin à 350 jours d'invincibilité",
+          "summary": "La Real Sociedad a battu le FC Barcelona 2-1, mettant un terme à 350 jours sans défaite pour les Blaugranas en Liga.",
+          "body": [
+            "Le club basque avait déjà été le dernier à faire tomber le Barça en championnat il y a près d'un an. Malgré un penalty retiré aux Catalanes après consultation de la vidéo, Pere Romeu n'a cherché aucun prétexte. L'entraîneur a regretté le manque d'efficacité devant la gardienne adverse et concédé les difficultés à contenir les contre-attaques rapides des ailières adverses, tout en rappelant la complexité d'enchaîner juste après la trêve internationale.",
+            "Côté basque, Gorka Álvarez s'est félicité d'un succès majeur pour le moral. La Real Sociedad signe une troisième victoire de rang toutes compétitions confondues, après ses succès face à Valencia (0-1) et contre Hearts (4-0) en Coupe d'Europe."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "بير روميو: \"سيساعدنا هذا على تصحيح الأمور\"",
-          "summary": "ركز بير روميو ، مدرب برشلونة للسيدات ، كل رسالته على تحليل كرة القدم بعد الاعتراف بأول هزيمة في 350 يوما في دوري الدرجة الأولى، على وجه التحديد ضد الخصم نفسه، ريال سوسيداد، الذي لعب دور البطولة في المباراة السابقة.",
+          "title": "ريال سوسيداد يسقط برشلونة وينهي مسيرة 350 يوماً بلا هزيمة",
+          "summary": "فاز ريال سوسيداد على برشلونة بنتيجة 2-1، ليضع حداً لسلسلة خالية من الهزائم دامت 350 يوماً للفريق الكتالوني في بطولة الدوري.",
+          "body": [
+            "وكان النادي الباسكي هو نفسه آخر من ألحق الهزيمة ببرشلونة في الدوري قبل نحو عام. ورغم إلغاء ركلة جزاء لصالح الفريق الكتالوني بعد تدخل تقنية التحكيم بالفيديو، رفض المدرب بيري روميو البحث عن أعذار، مقراً بضعف الفعالية الهجومية أمام تألق حارسة المرمى وصعوبة إيقاف الهجمات المرتدة السريعة للمنافس، إلى جانب الإرهاق عقب فترة التوقف الدولي.",
+            "في المقابل، احتفى غوركا ألفاريز مدرب ريال سوسيداد بالمكسب المعنوي الكبير للفوز، حيث حقق فريقه انتصاره الثالث توالياً بعد تغلبه على فالنسيا بهدف دون رد وعلى هارتس برباعية نظيفة في المنافسات الأوروبية."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261018/1004240212/pere-romeu-esto-servira-corregir-cosas.html",
@@ -407,7 +511,20 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261018/1004240212/pere-romeu-esto-servira-corregir-cosas.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-18T16:01:00+00:00"
+        }
+      }
     },
     {
       "id": "97883b9e18a5",
@@ -515,27 +632,48 @@
       "summary": "Hansi Flick, técnico del FC Barcelona, buscará sacarse la espina frente a Luis Enrique en el duelo de la tercera jornada de la fase liga de la Champions de este martes (21 h./Movistar +) en el Parque de los Príncipes .",
       "i18n": {
         "es": {
-          "title": "Flick, a sacarse la espina ante Luis Enrique",
-          "summary": "Hansi Flick, técnico del FC Barcelona, buscará sacarse la espina frente a Luis Enrique en el duelo de la tercera jornada de la fase liga de la Champions de este martes (21 h./Movistar +) en el Parque de los Príncipes .",
-          "needs_translation": false
+          "title": "Flick desafía a Luis Enrique en París con el liderato europeo en juego",
+          "summary": "Hansi Flick persigue su primer triunfo ante Luis Enrique en la visita del FC Barcelona al Paris Saint-Germain en la tercera jornada de Champions.",
+          "body": [
+            "Ambos conjuntos llegan a la cita empatados a seis puntos en lo más alto de la tabla. Para el técnico alemán, asaltar el Parque de los Príncipes supone resolver una cuenta pendiente: acumula un empate y una derrota en sus dos enfrentamientos directos contra el preparador asturiano.",
+            "El primer precedente ocurrió en la fase de grupos del Mundial de Catar 2022, donde la España de Luis Enrique y la Alemania de Flick empataron 1-1 con dianas de Álvaro Morata y Niclas Füllkrug. El curso pasado, ya en sus clubes actuales, el cuadro parisino remontó en Montjuïc el tanto inicial de Ferran Torres gracias a Senny Mayulu y a un gol sobre la bocina de Gonçalo Ramos para sellar el 1-2."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Flick, to take his thorn out before Luis Enrique",
-          "summary": "FC Barcelona coach Hansi Flick will be looking to get rid of Luis Enrique in the match of the third round of the Champions League on Tuesday (9pm)./Movistar +) in the Parc des Princes .",
+          "title": "Flick takes on Luis Enrique in Paris with top spot in Champions League at stake",
+          "summary": "Hansi Flick is chasing his first win over Luis Enrique as FC Barcelona visit Paris Saint-Germain on matchday three of the Champions League.",
+          "body": [
+            "Both teams head into the encounter locked on six points at the summit of the table. For the German coach, victory at the Parc des Princes would settle a personal score after recording one draw and one loss in two previous meetings with the Spanish manager.",
+            "Their first clash took place at the 2022 World Cup in Qatar, where Luis Enrique's Spain drew 1-1 against Flick's Germany following goals from Álvaro Morata and Niclas Füllkrug. Last season, Paris Saint-Germain claimed a 1-2 win at Montjuïc, overturning an opener from Ferran Torres through Senny Mayulu and a stoppage-time strike by Gonçalo Ramos."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Flick, pour enlever l'épine devant Luis Enrique",
-          "summary": "Hansi Flick, entraîneur du FC Barcelone, cherchera à se défaire de Luis Enrique lors du duel de la troisième journée de la phase de championnat de la Ligue des champions ce mardi (21 h./Movistar +) au Parc des Princes .",
+          "title": "Flick défie Luis Enrique à Paris avec la tête de la Ligue des champions en jeu",
+          "summary": "Hansi Flick vise un premier succès face à Luis Enrique lors du déplacement du FC Barcelone sur la pelouse du Paris Saint-Germain en Ligue des champions.",
+          "body": [
+            "Les deux clubs abordent cette troisième journée à égalité avec six points au sommet de la phase de ligue. L'entraîneur allemand dispute une revanche personnelle face au technicien espagnol, contre qui il ne compte qu'un nul et une défaite.",
+            "Leur première confrontation remonte au Mondial 2022 au Qatar, conclue sur un 1-1 entre l'Espagne et l'Allemagne grâce aux buts d'Álvaro Morata et Niclas Füllkrug. La saison passée, le Paris Saint-Germain s'était imposé 1-2 à Montjuïc face au Barça en effaçant l'ouverture du score de Ferran Torres par Senny Mayulu puis Gonçalo Ramos dans les derniers instants."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "فليك، لإخراج شوكته قبل لويس إنريكي",
-          "summary": "يتطلع هانزي فليك مدرب نادي برشلونة للتخلص من لويس إنريكي في مباراة الجولة الثالثة من دوري أبطال أوروبا يوم الثلاثاء (9 مساءً)./Movistar +) في حديقة الأمراء .",
+          "title": "فليك يتحدى لويس إنريكي في باريس وصدارة دوري أبطال أوروبا على المحك",
+          "summary": "يبحث هانزي فليك عن انتصاره الأول أمام لويس إنريكي حين يحل برشلونة ضيفاً على باريس سان جيرمان في الجولة الثالثة من دوري أبطال أوروبا.",
+          "body": [
+            "يدخل الفريقان المواجهة برصيد متساوٍ يبلغ ست نقاط في صدارة الترتيب. وتمثل المباراة فرصة للمدرب الألماني لرد اعتباره أمام نظيره الإسباني، بعدما اكتفى بتعادل وهزيمة في مواجهتيهما السابقتين.",
+            "وكان اللقاء الأول بينهما في كأس العالم قطر 2022، حين تعادلت إسبانيا وألمانيا بنتيجة 1-1 بهدفي ألفارو موراتا ونيكلاس فولكروغ. أما المواجهة الثانية فجاءت الموسم الماضي في مونتجويك، حيث حسم باريس سان جيرمان اللقاء بنتيجة 1-2 بعدما قلب تأخره بهدف فيران توريس بفضل هدفي سيني مايولو وغونسالو راموس."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261018/1004240210/flick-sacarse-espina-luis-enrique.html",
@@ -557,7 +695,20 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261018/1004240210/flick-sacarse-espina-luis-enrique.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 4,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-18T16:01:05+00:00"
+        }
+      }
     },
     {
       "id": "cd532bb0e645",
@@ -565,27 +716,48 @@
       "summary": "El plantel se entrenó este domingo en Ezeiza y ya está listo para ir a Brasil a buscar la final de la Sudamericana.",
       "i18n": {
         "es": {
-          "title": "Tras la práctica, Boca viaja a Río: la decisión del Vasco que alimenta la ilusión",
-          "summary": "El plantel se entrenó este domingo en Ezeiza y ya está listo para ir a Brasil a buscar la final de la Sudamericana.",
-          "needs_translation": false
+          "title": "Boca viaja con plantel completo en busca de la final de la Sudamericana",
+          "summary": "Rodolfo Arruabarrena convocó a todo el plantel de Boca para viajar este domingo a Río de Janeiro y revertir la serie ante Vasco da Gama.",
+          "body": [
+            "El traslado se adelantó dos días respecto al cronograma habitual de la delegación. Luego de la práctica matutina en Ezeiza, el grupo completo partió rumbo a Barra de Tijuca con el objetivo de fortalecer la unión del grupo tras la caída sufrida en la Bombonera.",
+            "El plantel trabajará este lunes en las instalaciones de Flamengo, donde el cuerpo técnico terminará de definir una formación que contempla la situación de Leandro Paredes. El martes, en el Maracaná, Boca se jugará el pase al partido decisivo del certamen continental."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "After the practice, Boca travels to Rio: the Basque decision that feeds the illusion",
-          "summary": "The squad trained this Sunday in Ezeiza and is now ready to go to Brazil to look for the South American final.",
+          "title": "Boca travel to Rio with full squad eyeing Sudamericana final",
+          "summary": "Rodolfo Arruabarrena has called up the entire Boca squad to travel to Río de Janeiro this Sunday and overturn the tie against Vasco da Gama.",
+          "body": [
+            "The trip was brought forward two days ahead of the original schedule. Following a morning session in Ezeiza, the full squad set off for Barra de Tijuca to regroup and build team spirit after the defeat suffered at the Bombonera.",
+            "The squad will train this Monday at Flamengo facilities, where the coaching staff will finalize a starting lineup that hinges on Leandro Paredes. On Tuesday at the Maracaná, Boca will play for a spot in the continental final."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Après la pratique, Boca se rend à Rio : la décision du Vasco qui alimente l'illusion",
-          "summary": "L'équipe s'est entraînée ce dimanche à Ezeiza et est maintenant prête à aller au Brésil pour la finale sud-américaine.",
+          "title": "Boca au grand complet à Rio pour viser la finale de la Sudamericana",
+          "summary": "Rodolfo Arruabarrena a convoqué tout le groupe de Boca pour rejoindre Río de Janeiro ce dimanche et tenter de renverser la vapeur face à Vasco da Gama.",
+          "body": [
+            "Le déplacement a été avancé de deux jours par rapport au programme habituel. Après la séance matinale à Ezeiza, l'ensemble du groupe a mis le cap sur Barra de Tijuca afin de resserrer les rangs après le revers concédé à la Bombonera.",
+            "L'équipe s'entraînera ce lundi dans les installations de Flamengo, où le staff technique tranchera la composition de départ tout en surveillant la situation de Leandro Paredes. Mardi, au Maracaná, Boca disputera sa qualification pour la grande finale du tournoi continental."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "بعد هذه الممارسة، يسافر بوكا إلى ريو: قرار الباسك الذي يغذي الوهم",
-          "summary": "تدرب الفريق يوم الأحد في إيزيزا وهو الآن جاهز للذهاب إلى البرازيل للبحث عن نهائي أمريكا الجنوبية.",
+          "title": "بوكا يسافر إلى ريو دي جانيرو بصفوف مكتملة بحثاً عن نهائي سودأمريكانا",
+          "summary": "استدعى رودولفو أروابارينا كامل قائمة بوكا للسفر هذا الأحد إلى ريو دي جانيرو، سعياً لقلب الطاولة أمام فاسكو دا غاما.",
+          "body": [
+            "تم تقديم موعد السفر يومين عن الجدول الزمني المعتاد للبعثة. وبعد نهاية الحصة التدريبية الصباحية في إيزيزا، غادرت المجموعة بأكملها نحو بارا دا تيجوكا لتعزيز التلاحم بعد الهزيمة التي تجرعها الفريق في لا بومبونيرا.",
+            "سيخوض الفريق حصة تدريبية هذا الإثنين في منشآت فلامنغو، حيث يحسم الجهاز الفني التشكيلة الأساسية مع مراعاة الحالة البدنية للاعب لياندرو باريديس. ويوم الثلاثاء على ملعب ماراكانا، يخوض بوكا موقعة مصيرية لانتزاع بطاقة التأهل إلى نهائي البطولة القارية."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/boca-viaje-rio-janeiro-semifinal-copa-sudamericana_0_tP4TkgEdUa.html",
@@ -607,7 +779,20 @@
           "url": "https://www.ole.com.ar/boca-juniors/boca-viaje-rio-janeiro-semifinal-copa-sudamericana_0_tP4TkgEdUa.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 4,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-18T16:01:09+00:00"
+        }
+      }
     },
     {
       "id": "cddd8a1650f9",
@@ -615,27 +800,44 @@
       "summary": "Très proche de concéder sa première défaite de la saison, Marseille a arraché in extremis le match nul contre Fleury (2-2) et reste invaincu en Arkema Première Ligue.",
       "i18n": {
         "fr": {
-          "title": "Les Marseillaises arrachent le nul au buzzer face à Fleury et restent invaincues",
-          "summary": "Très proche de concéder sa première défaite de la saison, Marseille a arraché in extremis le match nul contre Fleury (2-2) et reste invaincu en Arkema Première Ligue.",
-          "needs_translation": false
+          "title": "Marseille arrache le nul face à Fleury (2-2) et reste invaincu",
+          "summary": "L'Olympique de Marseille a arraché l'égalisation au bout du suspense face à Fleury (2-2) pour préserver son invincibilité en Arkema Première Ligue.",
+          "body": [
+            "Tout près de concéder leur premier revers de la saison, les Marseillaises ont trouvé les ressources pour recoller sur le gong face aux Franciliennes."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "The Marseillaises snatch the draw from the buzzer against Fleury and remain undefeated",
-          "summary": "Very close to conceding his first defeat of the season, Marseille snatched in extremis the draw against Fleury (2-2) and remains unbeaten in the Arkema Premier League.",
+          "title": "Marseille snatch late 2-2 draw with Fleury to stay unbeaten",
+          "summary": "Olympique de Marseille salvaged a dramatic late 2-2 draw against Fleury to maintain their unbeaten record in the Arkema Première Ligue.",
+          "body": [
+            "On the brink of suffering their first defeat of the season, the Marseillaises struck at the death to claim a point against their Parisian opponents."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Las marsellesas arrebatan el empate al zumbador frente a Fleury y permanecen invictas",
-          "summary": "Muy cerca de conceder su primera derrota de la temporada, Marsella arrebató in extremis el empate contra Fleury (2-2) y permanece invicto en Arkema Premier League.",
+          "title": "El Marseille rescata un empate ante el Fleury (2-2) y sigue invicto",
+          "summary": "El Olympique de Marseille salvó un empate agónico ante el Fleury (2-2) para mantener su condición de invicto en la Arkema Première Ligue.",
+          "body": [
+            "A punto de sufrir su primer tropiezo de la temporada, las marsellesas reaccionaron sobre la bocina para evitar la derrota frente al conjunto parisino."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "يسحب المارسيليز القرعة من الجرس ضد فلوري ويبقون دون هزيمة",
-          "summary": "على مقربة جدا من تلقي هزيمته الأولى في الموسم، انتزع مرسيليا في أقصى الحدود التعادل ضد فلوري (2-2) ولا يزال دون هزيمة في الدوري الممتاز أركيما.",
+          "title": "أولمبيك مارسيليا يتعادل مع فلوري 2-2 ويحافظ على سجله دون هزيمة",
+          "summary": "انتزع فريق أولمبيك مارسيليا تعادلاً مثيراً في الأنفاس الأخيرة أمام فلوري (2-2) ليحافظ على سجله خالياً من الهزائم في الدوري الفرنسي للسيدات.",
+          "body": [
+            "وكانت لاعبات مارسيليا على بعد خطوات من تجرع أول هزيمة لهن هذا الموسم، قبل أن ينجحن في معادلة النتيجة مع صافرة النهاية أمام الفريق الباريسي."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Les-marseillaises-arrachent-le-nul-au-buzzer-face-a-fleury-et-restent-invaincues/1736713#at_medium=RSS_feeds",
@@ -657,7 +859,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Les-marseillaises-arrachent-le-nul-au-buzzer-face-a-fleury-et-restent-invaincues/1736713#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-18T16:01:12+00:00"
+        }
+      }
     },
     {
       "id": "c264cf756126",
@@ -665,27 +880,48 @@
       "summary": "A la llegada del FC Barcelona a la Ciutat esportiva de Sant Joan Despí, Eric Garcia , Jules Koundé y Gerard Martín están siendo sometidos a pruebas médicas para determinar el alcance de las molestias con las que acabaron el Betis-Barça.",
       "i18n": {
         "es": {
-          "title": "Pruebas a Eric, Koundé y Gerard Martín",
-          "summary": "A la llegada del FC Barcelona a la Ciutat esportiva de Sant Joan Despí, Eric Garcia , Jules Koundé y Gerard Martín están siendo sometidos a pruebas médicas para determinar el alcance de las molestias con las que acabaron el Betis-Barça.",
-          "needs_translation": false
+          "title": "Koundé y Eric Garcia, bajas confirmadas del Barça ante el Paris Saint-Germain",
+          "summary": "El FC Barcelona pierde a Jules Koundé y Eric Garcia para la visita al Paris Saint-Germain tras lesionarse ambos durante el partido contra el Betis.",
+          "body": [
+            "Eric Garcia sufrió una lesión muscular en el recto anterior del muslo derecho y permanecerá apartado entre tres y cuatro semanas. Este percance, además de apartarle de la cita en París, le impedirá disputar el Clásico del próximo domingo frente al Real Madrid.",
+            "Jules Koundé acabó el duelo liguero con un esguince en el tobillo izquierdo que lo descarta frente a los franceses y lo sitúa como seria duda para medirse a los blancos. En cambio, Gerard Martín sólo padece una inflamación en el pie y viajará previsiblemente con el equipo si la evolución en las próximas horas resulta favorable."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Testing Eric, Koundé and Gerard Martín",
-          "summary": "Upon FC Barcelona's arrival at the Ciutat Esportiva de Sant Joan Despí, Eric Garcia , Jules Koundé and Gerard Martín are undergoing medical tests to determine the extent of the discomfort they end up with at Betis-Barça.",
+          "title": "Koundé and Eric Garcia ruled out for Barça ahead of Paris Saint-Germain clash",
+          "summary": "FC Barcelona will travel to Paris Saint-Germain without Jules Koundé and Eric Garcia after both picked up injuries in the match against Betis.",
+          "body": [
+            "Eric Garcia sustained a rectus femoris injury in his right thigh and faces three to four weeks on the sidelines. The blow rules him out of the clash in Paris and also sidelines him for next Sunday's Clásico against Real Madrid.",
+            "Jules Koundé finished the league fixture with a sprained left ankle, ruling him out against the French side and making him a serious doubt to face Los Blancos. Meanwhile, Gerard Martín is only nursing foot inflammation and is expected to travel with the squad if his condition improves over the coming hours."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Tests d'Eric, Koundé et Gérard Martin",
-          "summary": "À l'arrivée du FC Barcelone dans la ville sportive de Sant Joan Despí, Eric Garcia , Jules Koundé et Gerard Martín subissent des tests médicaux pour déterminer l'ampleur des désagréments avec lesquels Le Real Betis-Barça s'est terminé.",
+          "title": "Koundé et Eric Garcia forfaits avec le Barça face au Paris Saint-Germain",
+          "summary": "Le FC Barcelona devra composer sans Jules Koundé ni Eric Garcia pour son déplacement face au Paris Saint-Germain, tous deux blessés lors de la rencontre contre Le Real Betis.",
+          "body": [
+            "Eric Garcia souffre d'une lésion au droit fémoral de la cuisse droite et sera indisponible entre trois et quatre semaines. Ce coup d'arrêt le prive du voyage à Paris et lui fera également manquer le Clásico de dimanche prochain face au Real Madrid.",
+            "Jules Koundé a quant à lui terminé le match de championnat avec une entorse à la cheville gauche : forfait contre les Parisiens, l'international français reste très incertain pour défier les Merengues. En revanche, Gerard Martín ne présente qu'une simple inflammation au pied et devrait intégrer le groupe si l'évolution est favorable dans les prochaines heures."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "اختبار إريك وكوندي وجيرارد مارتن",
-          "summary": "عند وصول نادي برشلونة إلى Ciutat Esportiva de Sant Joan Despí، يخضع إريك غارسيا وجول كوندي وجيرار مارتن لاختبارات طبية لتحديد مدى الانزعاج الذي ينتهون به في بيتيس- بارسا.",
+          "title": "غياب مؤكد لكوندي وإريك غارسيا عن برشلونة أمام باريس سان جيرمان",
+          "summary": "تلقى برشلونة ضربة موجعة بتأكد غياب جول كوندي وإريك غارسيا عن مواجهة باريس سان جيرمان، بعد إصابتهما في لقاء بيتيس الأخير.",
+          "body": [
+            "تعرض إريك غارسيا لإصابة عضلية في العضلة المستقيمة الفخذية لساقه اليمنى ستبعده عن الملاعب من ثلاثة إلى أربعة أسابيع، ليغيب رسمياً عن مواجهة باريس وموقعة الكلاسيكو المرتقبة الأحد المقبل ضد ريال مدريد.",
+            "أما جول كوندي فأنهى مواجهة الدوري بالتواء في كاحله الأيسر، ما يبعده عن لقاء الفريق الفرنسي ويضع شكوكاً كبيرة حول جاهزيته لمواجهة الملكي. وفي المقابل، لا يعاني جيرارد مارتين سوى من التهاب طفيف في القدم، ومن المتوقع أن يسافر مع البعثة في حال تطورت حالته إيجابياً خلال الساعات المقبلة."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261018/1004240207/pruebas-eric-kounde-gerard-martin.html",
@@ -707,7 +943,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261018/1004240207/pruebas-eric-kounde-gerard-martin.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full"
+      }
     },
     {
       "id": "1cd16c9d95f5",
@@ -757,7 +998,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261018/1004240208/dan-descartado-nuno-mendes-barca-digne-debera-frenar-lamine-yamal.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "145fe67500e6",
@@ -857,7 +1103,12 @@
           "url": "https://www.ole.com.ar/futbol-primera/belgrano-vs-river-torneo-clausura-vivo-hora-ver-tv-online-formaciones_0_8rsTaozzKf.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "233d42c3e7ee",
@@ -865,27 +1116,48 @@
       "summary": "El defensor del Atlético de Madrid se resintió durante el partido ante Espanyol en La Liga y estará de baja, en principio, por diez días. ¿Qué partidos se perderá?",
       "i18n": {
         "es": {
-          "title": "Otro lesionado de Selección: Cuti Romero, afuera por una molestia en el aductor",
-          "summary": "El defensor del Atlético de Madrid se resintió durante el partido ante Espanyol en La Liga y estará de baja, en principio, por diez días. ¿Qué partidos se perderá?",
-          "needs_translation": false
+          "title": "Cuti Romero y Dibu Martínez suman nuevas bajas para la Selección Argentina",
+          "summary": "Cristian Romero sufrió una molestia muscular con el Atlético de Madrid, mientras Emiliano Martínez fue operado de la mandíbula tras chocar en la Premier League.",
+          "body": [
+            "El defensor central pidió el cambio ante Espanyol por una dolencia en el aductor que le demandará cerca de diez días de recuperación. El zaguero se perderá el cruce de Champions League frente a Stuttgart y el duelo liguero ante Deportivo La Coruña, con la mira puesta en reaparecer contra Levante o Bayern Munich.",
+            "El panorama es más complejo para el arquero del Chelsea, quien chocó con Jarrad Branthwaite durante el triunfo parcial ante Everton y pasó de urgencia por el quirófano en Inglaterra. Aunque la cirugía resultó exitosa, el marplatense quedó descartado para la doble fecha FIFA de noviembre frente a Uruguay y Costa Rica."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Other Selection Injured: Cuti Romero, outside due to discomfort in the adductor",
-          "summary": "The Atletico Madrid defender suffered during the match against Espanyol in La Liga and will be out, in principle, for ten days. Which matches will you miss?",
+          "title": "Cuti Romero and Emiliano Martínez add to Argentina injury list",
+          "summary": "Cristian Romero suffered an adductor injury with Atlético de Madrid, while Emiliano Martínez underwent jaw surgery following a collision in the Premier League.",
+          "body": [
+            "The centre-back asked to be substituted against Espanyol and faces around ten days on the sidelines. He will miss the Champions League tie against Stuttgart and a league match with Deportivo La Coruña, aiming for a comeback against Levante or Bayern Munich.",
+            "Chelsea's goalkeeper suffered a more severe setback after colliding with Jarrad Branthwaite against Everton, requiring emergency jaw surgery in England. The successful operation still rules him out of Argentina's November fixtures against Uruguay and Costa Rica."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Un autre blessé de la sélection : Cuti Romero, à l'extérieur en raison d'une gêne dans l'adducteur",
-          "summary": "Le défenseur de l'Atlético de Madrid a souffert pendant le match contre l'Espanyol en Liga et sera absent, en principe, pendant dix jours. Quels matchs manquerez-vous ?",
+          "title": "Cuti Romero et Emiliano Martínez blessés, coup dur pour l'Argentine",
+          "summary": "Cristian Romero s'est blessé aux adducteurs avec l'Atlético de Madrid, tandis qu'Emiliano Martínez a été opéré de la mâchoire après un choc en Premier League.",
+          "body": [
+            "Le défenseur central a demandé le changement face à Espanyol en raison d'une gêne à l'adducteur qui nécessitera dix jours de repos. Il manquera le match de Champions League contre Stuttgart ainsi que la rencontre face à Deportivo La Coruña, espérant rejouer contre Levante ou Bayern Munich.",
+            "Le gardien de Chelsea a quant à lui été percuté par Jarrad Branthwaite lors du duel contre Everton avant d'être opéré d'urgence de la mâchoire. Si l'intervention chirurgicale a réussi, il est d'ores et déjà forfait pour la fenêtre FIFA de novembre face à l'Uruguay et au Costa Rica."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "إصابات اختيار أخرى: كوتي روميرو، في الخارج بسبب عدم الراحة في المقربة",
-          "summary": "عانى مدافع أتلتيكو مدريد خلال المباراة ضد إسبانيول في الدوري الإسباني وسيغيب، من حيث المبدأ، لمدة عشرة أيام. ما هي المباريات التي ستفوتك ؟",
+          "title": "إصابة كوتي روميرو وإيميليانو مارتينيز تربك صفوف الأرجنتين",
+          "summary": "تعرض كريستيان روميرو لإصابة عضلية مع أتلتيكو مدريد، بينما خضع الحارس إيميليانو مارتينيز لجراحة في الفك إثر اصطدام قوي في الدوري الإنجليزي الممتاز.",
+          "body": [
+            "طلب قلب الدفاع استبداله أمام إسبانيول إثر آلام في العضلة الضامة ستبعده لنحو عشرة أيام. وسيغيب عن لقاء شتوتغارت في دوري أبطال أوروبا ومواجهة ديبورتيفو لا كورونيا بالدوري الإسباني، على أن يستهدف العودة ضد ليفانتي أو بايرن ميونخ.",
+            "تعرض حارس مرمى تشيلسي لإصابة أكثر خطورة بعد التحام مع جاراد برانثويت أمام إيفرتون، استدعى جراحة عاجلة في الفك بإنجلترا. ورغم نجاح العملية، تأكد غيابه عن مباراتي أوروغواي وكوستاريكا خلال التوقف الدولي في نوفمبر."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/espana/cuti-romero-atletico-madrid-lesion-seleccion-argentina_0_BiFUfUxAI7.html",
@@ -907,7 +1179,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/espana/cuti-romero-atletico-madrid-lesion-seleccion-argentina_0_BiFUfUxAI7.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full"
+      }
     },
     {
       "id": "b364d9d253c3",
