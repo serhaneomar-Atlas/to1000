@@ -1,0 +1,51 @@
+name: Match watch (suivi des buts en direct)
+
+# Ajouté 2026-10-20. GitHub saute la plupart des crons « toutes les 5 min » de
+# update-cr7-goals.yml : un but pouvait rester invisible des heures. Ce guetteur
+# est lancé souvent ; s'il trouve un match de Ronaldo en cours ou dans les 5 h,
+# il reste actif jusqu'à la fin du match et déclenche update-cr7-goals.yml
+# (workflow_dispatch, jamais sauté) à chaque but et à la fin. Sinon il s'arrête
+# en quelques secondes. Dépôt public : minutes Actions gratuites.
+
+on:
+  schedule:
+    - cron: "19,49 * * * *"   # deux chances par heure (minutes décalées)
+  workflow_run:
+    workflows:
+      - "News sync (fraîcheur et but confirmé)"
+      - "News editorial (enrichissement Gemini, découplé)"
+      - "CR7 stats sync (daily)"
+    types: [completed]
+  workflow_dispatch:
+
+# Un seul guetteur actif : les lancements suivants attendent, puis constatent
+# que le match est fini et s'arrêtent aussitôt.
+concurrency:
+  group: match-watch
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  actions: write   # déclencher update-cr7-goals.yml
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: scripts
+          sparse-checkout-cone-mode: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install requests
+
+      - name: Guetter le match
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/match_watch.py

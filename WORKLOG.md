@@ -5,6 +5,13 @@
 
 ---
 
+### [2026-10-20 ~18:50 UTC] — Claude (cloud) — **Suivi des buts en direct fiabilisé + « Prochain match » réparé + IndexNow rebranché**
+- **Constat (Al Nassr–Neom, en direct)** : `update-cr7-goals.yml` (cron « toutes les 5 min ») ne passait qu'~6 fois/jour — GitHub saute ces crons. Dernier passage 07:29 UTC, rien pendant le match.
+- **Nouveau `match-watch.yml` + `scripts/match_watch.py`** : lancé 2×/h + à la fin de news-sync / news-editorial / stats-sync. Match en cours ou dans les 5 h → reste actif, interroge ESPN toutes les 90 s, déclenche `update-cr7-goals.yml` par workflow_dispatch (jamais sauté) à chaque but de CR7 (+4 et +10 min) et à la fin (+10 min). Sinon s'arrête en secondes. Concurrence : 1 guetteur à la fois. Dépôt public → minutes gratuites.
+- **« Prochain match à confirmer » en pleine saison** : `get_team_schedule` n'appelait pas `?fixture=true` → ESPN ne renvoyait que le passé. Fusion passé + à venir ; `find_last_match` exclut désormais un match en cours (sinon score partiel affiché).
+- **IndexNow** : `indexnow-ping.yml` attendait « News sync (every 30 min) », workflow renommé → plus déclenché après les news. Nom corrigé.
+- Tests : 20 fichiers, résultats identiques avant/après (2 fichiers sans test, préexistant). Dry-run du guetteur OK sur le match en cours.
+
 ### [2026-07-06 ~23:30 UTC] — Claude Code (WSL) — **Chaîne éditoriale v4 en 4 étapes (demande Omar) + pivot post-élimination complet**
 - **`editorial.py` refondu** (`887e7f3d`) : 1) **Rédacteur en chef (tri)** — mérite publication ? (rejet = 1 seul appel) → 2) **Expert en rédaction** — résume L'INFORMATION CENTRALE, pas n'importe quel paragraphe → 3) **Expert en traduction** — transcréation native (interdit mot-à-mot, translittérations AR standards) → 4) **Rédacteur en chef (validation finale)** — corrige ou rejette avant publication. Cache bumpé **edtv4** → ré-enrichissement complet en 2-3 passes (*/30) sous le coupe-circuit 600 s. 6 tests dédiés (64 verts au total). Vigie posée sur la 1re passe pour échantillonner la qualité.
 - **Soirée Portugal–Espagne (0-1, Merino 90e+1)** : compos publiées ~1 h avant (Ronaldo titulaire), rapport FT 4 langues, **hommage « OBRIGADO » (6 Mondiaux · 2006-2026 · 11 buts, carte-photo)**. Pivot de langage post-élimination sur la home : bloc « Prochain rendez-vous » bascule sur le **prochain match de la CdM** (fallback data.json), m_foot/m_desc intemporels dans les 4 langues + texte statique SEO (« Ronaldo titulaire attendu » éradiqué, vérifié 0 occurrence).

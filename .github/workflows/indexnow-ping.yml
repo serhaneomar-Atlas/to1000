@@ -6,7 +6,7 @@ name: IndexNow ping (after deploy)
 
 on:
   workflow_run:
-    workflows: ["News sync (every 30 min)", "CR7 stats sync (daily)"]
+    workflows: ["News sync (fraîcheur et but confirmé)", "CR7 stats sync (daily)"]
     types: [completed]
   workflow_dispatch:
 

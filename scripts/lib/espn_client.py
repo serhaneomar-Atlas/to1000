@@ -24,7 +24,7 @@ from __future__ import annotations
 
 import time
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from typing import Any
 import requests
 
@@ -242,16 +242,30 @@ def get_today_scoreboard(league: str = SAUDI_PL) -> list[MatchSummary]:
 def get_team_schedule(team_id: int = AL_NASSR_ID, league: str = SAUDI_PL) -> list[MatchSummary]:
     """Calendrier complet de l'équipe (passé + futur)."""
     # /site.web.api.espn.com expose le schedule détaillé ; l'autre host renvoie une variante moins riche
-    data = _get(f"{ESPN_BASE_ALT}/{league}/teams/{team_id}/schedule")
+    # Fix 2026-10-20 : sans `?fixture=true`, ESPN ne renvoie que les matchs DÉJÀ
+    # joués → find_next_match ne trouvait rien et le site affichait « Prochain
+    # match à confirmer » en pleine saison. On fusionne passé + à venir.
     league_name = league
     out: list[MatchSummary] = []
-    for ev in data.get("events", []):
-        comp = (ev.get("competitions") or [{}])[0]
-        # La ligue propre à l'event est plus précise (Coupe, AFC, etc.)
-        ev_league = ev.get("league", {}).get("name") or league_name
-        out.append(_competition_to_summary(
-            comp, ev.get("status", {}), ev.get("date", ""), ev_league
-        ))
+    seen: set[str] = set()
+    for suffix in ("", "?fixture=true"):
+        try:
+            data = _get(f"{ESPN_BASE_ALT}/{league}/teams/{team_id}/schedule{suffix}")
+        except Exception:
+            if suffix:
+                continue   # le calendrier à venir est un bonus : ne pas perdre le passé
+            raise
+        for ev in data.get("events", []):
+            key = str(ev.get("id") or "")
+            if key and key in seen:
+                continue
+            seen.add(key)
+            comp = (ev.get("competitions") or [{}])[0]
+            # La ligue propre à l'event est plus précise (Coupe, AFC, etc.)
+            ev_league = ev.get("league", {}).get("name") or league_name
+            out.append(_competition_to_summary(
+                comp, ev.get("status", {}), ev.get("date", ""), ev_league
+            ))
     return out
 
 
@@ -314,7 +328,15 @@ def find_last_match(team_id: int = AL_NASSR_ID, league: str | None = None) -> Ma
     leagues = [league] if league else AL_NASSR_LEAGUES
     schedule = _aggregate_schedule(team_id, leagues)
     now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
-    past = [m for m in schedule if m.date_iso and m.date_iso < now]
+    # Fix 2026-10-20 : le calendrier inclut désormais les matchs à venir ET en
+    # cours. Un match commencé n'est pas « terminé » : on l'exclut tant qu'ESPN
+    # ne le marque pas fini (ou 4 h après le coup d'envoi, filet de sécurité).
+    cutoff = (datetime.now(timezone.utc) - timedelta(hours=4)).isoformat().replace("+00:00", "Z")
+    past = [
+        m for m in schedule
+        if m.date_iso and m.date_iso < now and not m.is_in_progress
+        and (m.is_finished or m.date_iso < cutoff)
+    ]
     if not past:
         return None
     past.sort(key=lambda m: m.date_iso)
