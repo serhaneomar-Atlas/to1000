@@ -332,6 +332,20 @@ def find_last_match(team_id: int = AL_NASSR_ID, league: str | None = None) -> Ma
     # cours. Un match commencé n'est pas « terminé » : on l'exclut tant qu'ESPN
     # ne le marque pas fini (ou 4 h après le coup d'envoi, filet de sécurité).
     cutoff = (datetime.now(timezone.utc) - timedelta(hours=4)).isoformat().replace("+00:00", "Z")
+    # Le calendrier « à venir » d'ESPN ne met pas à jour le statut (vide après
+    # le coup de sifflet). Pour les matchs commencés depuis moins de 4 h, on lit
+    # le statut réel dans le détail du match (1 appel par match concerné).
+    for i, m in enumerate(schedule):
+        if (m.date_iso and cutoff <= m.date_iso < now
+                and not m.is_finished and not m.is_in_progress and m.event_id):
+            try:
+                d = get_match_summary(m.event_id, m.league_slug or SAUDI_PL)
+            except Exception:
+                d = None
+            if d is not None:
+                d.league_slug = d.league_slug or m.league_slug
+                d.competition = d.competition or m.competition
+                schedule[i] = d
     past = [
         m for m in schedule
         if m.date_iso and m.date_iso < now and not m.is_in_progress
