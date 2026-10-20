@@ -59,7 +59,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/saojanuario-vascodagama-riodejaneiro-boca-maracana-copasudamericana-robertodinamite-romario_0_QLBYsCKH2e.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f64609862f89",
@@ -115,7 +120,12 @@
           "url": "https://www.kicker.de/live-sabah-mit-erster-ballbesitzphase-bvb-mit-chukwuemeka-und-fabio-silva-1263106/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "d0d697991bbc",
@@ -123,27 +133,44 @@
       "summary": "Avant son match de Liga à Elche (3-2), le défenseur du Real Madrid, Ibrahima Konaté, n'a pas voulu rendre visible un t-shirt de soutien à la population de Ceuta, enclave espagnole au coeur d'une crise migratoire avec le Maroc.",
       "i18n": {
         "fr": {
-          "title": "«Je n’avais pas vraiment compris ce qui était écrit» : Ibrahima Konaté revient sur la polémique du tee-shirt de Ceuta",
-          "summary": "Avant son match de Liga à Elche (3-2), le défenseur du Real Madrid, Ibrahima Konaté, n'a pas voulu rendre visible un t-shirt de soutien à la population de Ceuta, enclave espagnole au coeur d'une crise migratoire avec le Maroc.",
-          "needs_translation": false
+          "title": "Polémique du t-shirt sur Ceuta : Ibrahima Konaté s'explique",
+          "summary": "Ibrahima Konaté a justifié son refus de montrer un t-shirt de soutien à Ceuta avant Elche en affirmant n'avoir pas saisi le texte inscrit.",
+          "body": [
+            "Avant le match de Liga remporté 3-2 par le Real Madrid à Elche, le défenseur n'avait pas souhaité rendre visible ce message envers l'enclave espagnole, au cœur d'une crise migratoire avec le Maroc."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "\"I didn't really understand what was written\": Ibrahima Konaté returns to the controversy over Ceuta's T-shirt",
-          "summary": "Before his Liga match in Elche (3-2), Real Madrid defender Ibrahima Konaté did not want to make visible a T-shirt in support of the population of Ceuta, a Spanish enclave at the heart of a migration crisis with Morocco.",
+          "title": "Ceuta t-shirt controversy: Ibrahima Konaté explains his stance",
+          "summary": "Ibrahima Konaté clarified why he chose not to display a Ceuta solidarity t-shirt before facing Elche, claiming he did not understand the printed text.",
+          "body": [
+            "Ahead of Real Madrid's 3-2 Liga win at Elche, the defender concealed the message supporting the Spanish enclave, which is currently gripped by a migration crisis with Morocco."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "“Realmente no entendí lo que estaba escrito”: Ibrahima Konaté habla sobre la polémica de la camiseta de Ceuta",
-          "summary": "Antes de su partido de Liga en Elche (3-2), el defensa del Real Madrid, Ibrahima Konaté, no quiso hacer visible una camiseta de apoyo a la población de Ceuta, enclave español en medio de una crisis migratoria con Marruecos.",
+          "title": "Polémica por la camiseta de Ceuta: Ibrahima Konaté ofrece sus explicaciones",
+          "summary": "Ibrahima Konaté justificó su negativa a mostrar una camiseta de apoyo a Ceuta antes de medirse al Elche alegando que no comprendió el lema impreso.",
+          "body": [
+            "Antes del triunfo del Real Madrid por 3-2 en Elche en Liga, el central optó por no hacer visible el mensaje hacia el enclave español, inmerso en una crisis migratoria con Marruecos."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "\"لم أفهم حقًا ما كُتب\": يعود إبراهيم كوناتي إلى الجدل الدائر حول قميص سبتة",
-          "summary": "قبل مباراته في الدوري الإسباني في إلتشي (3-2)، لم يرغب مدافع ريال مدريد إبراهيما كوناتي في إظهار قميص لدعم سكان سبتة، وهي جيب إسباني في قلب أزمة الهجرة مع المغرب.",
+          "title": "جدل قميص سبتة: إبراهيما كوناتي يوضح موقفه",
+          "summary": "برر إبراهيما كوناتي رفضه إظهار قميص تضامني مع سبتة قبل مواجهة إلتشي، مؤكداً أنه لم يفهم العبارة المكتوبة عليه.",
+          "body": [
+            "قبل فوز ريال مدريد بنتيجة 3-2 على إلتشي في الدوري الإسباني، فضّل المدافع إخفاء رسالة الدعم للجيب الإسباني، الذي يشهد أزمة هجرة مع المغرب."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Ibrahima-konate-revient-sur-la-polemique-du-tee-shirt-en-soutien-a-ceuta-je-pense-que-beaucoup-de-gens-se-trouvent-dans-la-meme-situation-que-moi/1737232#at_medium=RSS_feeds",
@@ -177,7 +204,20 @@
           "url": "https://video.lefigaro.fr/figaro/sports/football/ligue-des-champions/je-n-avais-pas-vraiment-compris-ce-qui-etait-ecrit-ibrahima-konate-revient-sur-la-polemique-du-tee-shirt-de-ceuta-20261020"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-20T19:23:11+00:00"
+        }
+      }
     },
     {
       "id": "ae949f76fe2b",
@@ -185,27 +225,48 @@
       "summary": "El Sporting de Braga ha estallado contra el arbitraje tras perder ayer por 1-2 ante el Gil Vicente.",
       "i18n": {
         "es": {
-          "title": "\"¿Dónde está el VAR? ¡Qué vergüenza!\": estalla el Braga por el pie ensangrentado de Pau Víctor",
-          "summary": "El Sporting de Braga ha estallado contra el arbitraje tras perder ayer por 1-2 ante el Gil Vicente.",
-          "needs_translation": false
+          "title": "Indignación en Braga por el arbitraje y cese de Carlos Vicens",
+          "summary": "El Sporting de Braga cargó contra el arbitraje tras caer 1-2 ante el Gil Vicente, un tropiezo que precipitó la destitución fulminante de Carlos Vicens.",
+          "body": [
+            "Alexandre Carvalho, director de comunicación del club, difundió en redes la fotografía del tobillo ensangrentado de Pau Víctor previo al 1-1, sumada a un penalti reclamado sobre Ricardo Horta. El propio delantero catalán, autor del único tanto local, exigió explicaciones oficiales por la inacción del VAR.",
+            "La derrota le costó el puesto a Carlos Vicens. Franclim Carvalho asume el banquillo de un equipo estancado en la novena plaza con 9 puntos, a 15 del líder Porto y tocado por el reciente 3-0 encajado ante el Copenhague en la Conference League."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "“Where's the var? What a shame!\": the Braga explodes because of Pau Víctor's bloody foot",
-          "summary": "Sporting de Braga have exploded against refereeing after losing 1-2 to Gil Vicente yesterday.",
+          "title": "Refereeing fury in Braga as Carlos Vicens is sacked",
+          "summary": "Sporting de Braga lashed out at the officiating after their 1-2 defeat to Gil Vicente, a setback that triggered the immediate sacking of Carlos Vicens.",
+          "body": [
+            "Alexandre Carvalho, the club's communications director, shared an image on social media of Pau Víctor's bloodied ankle prior to the visitors' equaliser, alongside a waved-off penalty claim on Ricardo Horta. The Catalan striker, who scored Braga's only goal, demanded answers over the VAR's failure to intervene.",
+            "The defeat proved fatal for Carlos Vicens. Franclim Carvalho takes charge of a squad sitting ninth with just nine points, fifteen behind leaders Porto and reeling from an opening 3-0 loss to Copenhagen in the Conference League."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "\"Où est la VaR ? Quelle honte ! » : la Braga éclate sur le pied ensanglanté de Pau Victor",
-          "summary": "Le Sporting de Braga a éclaté contre l'arbitrage après avoir perdu hier 1-2 contre Gil Vicente.",
+          "title": "Arbitrage contesté et limogeage de Carlos Vicens : tempête à Braga",
+          "summary": "Le Sporting de Braga a fustigé l'arbitrage après son revers 1-2 contre Gil Vicente, une défaite qui a précipité le limogeage immédiat de Carlos Vicens.",
+          "body": [
+            "Alexandre Carvalho, directeur de la communication du club, a diffusé sur les réseaux sociaux le cliché de la cheville ensanglantée de Pau Víctor juste avant l'égalisation adverse, tout en dénonçant un penalty oublié sur Ricardo Horta. L'attaquant catalan, unique buteur des siens, a exigé des explications face au silence du VAR.",
+            "Cette contre-performance a scellé le sort de Carlos Vicens. Franclim Carvalho reprend les rênes d'un groupe englué au neuvième rang avec neuf points, déjà relégué à quinze longueurs de Porto et sonné par sa défaite 3-0 face à Copenhague en Conference League."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "\"أين هو VAR ؟ يا له من عار! \": تنفجر براغا بسبب قدم باو فيكتور الدموية",
-          "summary": "انفجر سبورتنج دي براغا أمام التحكيم بعد خسارته 1-2 أمام جيل فيسنتي أمس.",
+          "title": "غضب عارم من التحكيم في براغا وإقالة فورية للمدرب كارلوس فيسينس",
+          "summary": "شن سبورتينغ براغا هجوماً حاداً على التحكيم بعد سقوطه 1-2 أمام جيل فيسنتي، في هزيمة عجلت بإقالة المدرب كارلوس فيسينس فوراً.",
+          "body": [
+            "ونشر ألكسندر كارفاليو، مدير التواصل بالنادي، صورة عبر وسائل التواصل لكاحل باو فيكتور مضرجاً بالدماء قبل هدف التعادل، إلى جانب لقطة للمطالبة بركلة جزاء لصالح ريكاردو هورتا. وطالب المهاجم الكتالوني، صاحب هدف فريقه الوحيد، بتوضيحات رسمية إزاء غياب تدخل تقنية الفيديو.",
+            "ودفع كارلوس فيسينس ثمن هذه الخسارة بإقالته من منصبه. وتولى فرانكليم كارفاليو تدريب الفريق المتعثر في المركز التاسع بتسع نقاط، متأخراً بفارق 15 نقطة عن بورتو المتصدر، ومثقلاً بخسارته الأخيرة 3-0 أمام كوبنهاغن في دوري المؤتمر الأوروبي."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/internacional/20261020/1004241153/var-vergueenza-estalla-braga-pie-ensangrentado-pau-victor.html",
@@ -227,7 +288,20 @@
           "url": "https://www.mundodeportivo.com/futbol/internacional/20261020/1004241153/var-vergueenza-estalla-braga-pie-ensangrentado-pau-victor.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-20T19:23:15+00:00"
+        }
+      }
     },
     {
       "id": "8ac71ccbb2d2",
@@ -235,27 +309,48 @@
       "summary": "RÉCIT – En termes de sécurité, le club de la capitale prépare aussi sereinement que possible la réception du FC Barcelone ce mardi soir (21 heures), au Parc des Princes.",
       "i18n": {
         "fr": {
-          "title": "Violences du 17 octobre : comment le PSG a préparé le choc face au Barça sur le terrain de la sécurité",
-          "summary": "RÉCIT – En termes de sécurité, le club de la capitale prépare aussi sereinement que possible la réception du FC Barcelone ce mardi soir (21 heures), au Parc des Princes.",
-          "needs_translation": false
+          "title": "PSG-Barça : le match de Ligue des champions maintenu malgré les violences",
+          "summary": "Le ministre de l'Intérieur Laurent Nuñez a confirmé le maintien du choc PSG-Barcelone ce mardi soir au Parc des Princes.",
+          "body": [
+            "Réunie à Matignon autour de Sébastien Lecornu, la cellule interministérielle de crise a écarté tout report de cette rencontre européenne.",
+            "Les autorités ont jugé les effectifs policiers suffisants pour assurer la sécurité du stade, malgré leur forte mobilisation face aux récents pillages."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Violence on 17 October: how PSG prepared the shock against Barça on the security front",
-          "summary": "STORY – In terms of security, the capital's club is preparing as serenely as possible for the reception of FC Barcelona this Tuesday evening (9pm), at the Parc des Princes.",
+          "title": "PSG vs Barcelona to go ahead despite security concerns",
+          "summary": "French Interior Minister Laurent Nuñez confirmed that the Champions League match between PSG and Barcelona will go ahead on Tuesday.",
+          "body": [
+            "Following an interministerial crisis meeting at Matignon with Prime Minister Sébastien Lecornu, authorities ruled out postponing the Parc des Princes fixture.",
+            "Police resources were deemed sufficient to secure the clash, despite heavy mobilization against recent looting and street violence."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Violencia del 17 de octubre: cómo el PSG preparó el choque contra el Barça en el terreno de la seguridad",
-          "summary": "HISTORIA – En términos de seguridad, el club de la capital prepara con la mayor serenidad posible la recepción del FC Barcelona este martes por la noche (21:00), en el Parque de los Príncipes.",
+          "title": "El PSG-Barcelona se jugará según lo previsto pese a los disturbios",
+          "summary": "El ministro del Interior Laurent Nuñez confirmó que el duelo de Liga de Campeones entre PSG y Barcelona se disputará este martes.",
+          "body": [
+            "Reunido en Matignon junto al primer ministro Sébastien Lecornu, el comité interministerial de crisis descartó aplazar el partido en el Parque de los Príncipes.",
+            "Las autoridades consideraron suficientes los efectivos policiales disponibles, pese a su gran despliegue frente a los recientes saqueos y disturbios."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "العنف في 17 أكتوبر: كيف أعدت باريس سان جيرمان الصدمة ضد برشلونة على الجبهة الأمنية",
-          "summary": "القصة – فيما يتعلق بالأمن، يستعد نادي العاصمة بهدوء قدر الإمكان لاستقبال نادي برشلونة مساء الثلاثاء (9 مساءً)، في بارك دي برينس.",
+          "title": "قمة باريس سان جيرمان وبرشلونة في موعدها رغم أعمال العنف الأخيرة",
+          "summary": "أكد وزير الداخلية لوران نونيز إقامة مباراة باريس سان جيرمان وبرشلونة في دوري أبطال أوروبا مساء الثلاثاء على ملعب بارك دي برانس.",
+          "body": [
+            "واستبعدت خلية الأزمة الوزارية المشتركة، عقب اجتماعها في ماتينيون بحضور رئيس الوزراء سيباستيان لوكورنو، أي تأجيل للمواجهة القارية.",
+            "واعتبرت السلطات جاهزية قوات الأمن كافية لتأمين اللقاء، رغم استنفارها المكثف للتعامل مع أعمال الشغب وعمليات النهب الأخيرة."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/violences-17-octobre-comment-le-psg-a-prepare-le-choc-face-au-barca-sur-le-terrain-de-la-securite-20261020",
@@ -277,7 +372,20 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/violences-17-octobre-comment-le-psg-a-prepare-le-choc-face-au-barca-sur-le-terrain-de-la-securite-20261020"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-20T19:23:19+00:00"
+        }
+      }
     },
     {
       "id": "9ff382708162",
@@ -285,27 +393,56 @@
       "summary": "El segundo entrenador del Bayern, Aaeron Danks, que estuvo en la conferencia de prensa previa al partido de Champions League contra el Arsenal debido a la ausencia por enfermedad de Vincent Kompany, habló de la baja por sanción de Michael Olise y su posible sustituto y admitió…",
       "i18n": {
         "es": {
-          "title": "Kompany no comparece ante la prensa y peligra ante el Arsenal",
-          "summary": "El segundo entrenador del Bayern, Aaeron Danks, que estuvo en la conferencia de prensa previa al partido de Champions League contra el Arsenal debido a la ausencia por enfermedad de Vincent Kompany, habló de la baja por sanción de Michael Olise y su posible sustituto y admitió…",
-          "needs_translation": false
+          "title": "El Bayern acumula dudas de peso antes de recibir al Arsenal",
+          "summary": "El Bayern de Múnich afronta el choque de Champions contra el Arsenal condicionado por la enfermedad de Vincent Kompany y varias incógnitas en su once.",
+          "body": [
+            "El técnico Vincent Kompany padece un virus que le impidió acudir ante la prensa y mantiene en duda su presencia en el banquillo.",
+            "Michael Olise causará baja por sanción tras su expulsión ante el Viking; el canterano Lennart Karl figura entre sus posibles sustitutos.",
+            "Joshua Kimmich se ausentó de la última sesión preparatoria por razones personales y el cuerpo técnico no garantiza su participación.",
+            "Manuel Neuer regresó a los entrenamientos tras superar unas molestias en el pie, aunque aún no se ha decidido si jugará."
+          ],
+          "format": "bullets",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Kompany does not appear before the press and is in danger before Arsenal",
-          "summary": "The second coach of Bayern, Aaeron Danks, who was at the press conference prior to the Champions League match against Arsenal due to Vincent Kompany's absence due to illness, spoke of the sanctioning of Michael Olise and his possible substitute and admitted...",
+          "title": "Bayern hit with major doubts ahead of Arsenal clash",
+          "summary": "Bayern Munich enter their Champions League clash against Arsenal troubled by Vincent Kompany's illness and a series of major doubts across their starting lineup.",
+          "body": [
+            "Manager Vincent Kompany missed the pre-match press conference due to a virus, leaving his presence in the dugout in serious question.",
+            "Michael Olise is suspended following his red card against Viking, with youth product Lennart Karl among the candidates to replace him.",
+            "Joshua Kimmich sat out the final training session for personal reasons, and the coaching staff cannot confirm his availability.",
+            "Manuel Neuer returned to training after foot trouble, but the club have not yet decided whether he will start in goal."
+          ],
+          "format": "bullets",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Kompany ne comparaît pas devant la presse et est en danger face à Arsenal",
-          "summary": "Le deuxième entraîneur du Bayern, Aaeron Danks, qui était en conférence de presse avant le match de Ligue des champions contre Arsenal en raison de l'absence pour maladie de Vincent Kompany, a parlé du congé pour sanction de Michael Olise et de son éventuel remplaçant et a admis...",
+          "title": "Le Bayern plombé par les doutes avant d'accueillir Arsenal",
+          "summary": "Le Bayern Munich aborde son choc de Ligue des champions face à Arsenal diminué par la maladie de Vincent Kompany et plusieurs incertitudes dans son onze.",
+          "body": [
+            "Touché par un virus, Vincent Kompany a manqué la conférence de presse et sa présence sur le banc face aux Gunners reste très incertaine.",
+            "Exclu contre le Viking, Michael Olise est suspendu ; le jeune Lennart Karl fait partie des options évoquées pour le suppléer.",
+            "Absent du dernier entraînement pour des raisons personnelles, Joshua Kimmich n'est pas encore assuré de pouvoir tenir son rang.",
+            "Manuel Neuer a repris l'entraînement après une gêne au pied, mais le staff bavarois n'a pas encore tranché sur sa titularisation."
+          ],
+          "format": "bullets",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "لا تظهر كومباني أمام الصحافة وهي في خطر أمام أرسنال",
-          "summary": "تحدث المدرب الثاني لبايرن، آيرون دانكس، الذي كان في المؤتمر الصحفي قبل مباراة دوري أبطال أوروبا ضد آرسنال بسبب غياب فينسنت كومباني بسبب المرض، عن معاقبة مايكل أوليسي وبديله المحتمل واعترف...",
+          "title": "بايرن ميونخ محاصر بالشكوك قبل قمة أرسنال",
+          "summary": "يدخل بايرن ميونخ مواجهته المرتقبة في دوري أبطال أوروبا أمام أرسنال وسط ظروف معقدة، بعد وعكة مدربه فينسنت كومباني وتعدد الغيابات في تشكيلته الأساسية.",
+          "body": [
+            "تعرض المدرب فينسنت كومباني لوعكة فيروسية حرمته من حضور المؤتمر الصحفي، لتبقى مشاركته على مقاعد البدلاء محل شك كبير.",
+            "يغيب مايكل أوليز بسبب الإيقاف إثر طرده أمام فايكنغ، فيما يبرز الواعد لينارت كارل ضمن البدلاء المحتملين.",
+            "تغيب جوشوا كيميش عن الحصة التدريبية الأخيرة لأسباب شخصية، ولم يحسم الطاقم الفني بعد موقفه من المشاركة.",
+            "استأنف الحارس مانويل نوير التدريبات بعد تعافيه من آلام في القدم، دون اتخاذ قرار نهائي بشأن خوضه اللقاء."
+          ],
+          "format": "bullets",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/champions-league/20261020/1004241152/kompany-no-comparece-prensa-no-arsenal.html",
@@ -327,7 +464,20 @@
           "url": "https://www.mundodeportivo.com/futbol/champions-league/20261020/1004241152/kompany-no-comparece-prensa-no-arsenal.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-20T19:23:24+00:00"
+        }
+      }
     },
     {
       "id": "bb01c5eef75e",
@@ -377,7 +527,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-plate-gesto-tobias-andrada-pirata_0_8Yc4RhySsN.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f4504987c8be",
@@ -385,33 +540,54 @@
       "summary": "Zwischen 2011 und 2013 lief Teemu Pukki für den FC Schalke 04 in der Bundesliga auf. Nun beendet der 36-jährige Finne zum Jahresende seine Karriere.",
       "i18n": {
         "de": {
-          "title": "\"An der Zeit, Abschied zu nehmen\": Ex-Schalker Pukki beendet seine Karriere",
-          "summary": "Zwischen 2011 und 2013 lief Teemu Pukki für den FC Schalke 04 in der Bundesliga auf. Nun beendet der 36-jährige Finne zum Jahresende seine Karriere.",
-          "needs_translation": false
+          "title": "Teemu Pukki beendet zum Jahresende seine Karriere",
+          "summary": "Der frühere Schalke-Angreifer Teemu Pukki beendet zum Jahresende seine Karriere und verabschiedet sich im Alter von 36 Jahren vom Profifußball.",
+          "body": [
+            "Der finnische Stürmer erklärte, es sei nun an der Zeit für den Abschied. In Deutschland stand Pukki zwischen 2011 und 2013 beim FC Schalke 04 in der Bundesliga unter Vertrag."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "'It's time to say goodbye': Ex-malker Pukki ends his career",
-          "summary": "Between 2011 and 2013, Teemu Pukki played for FC Schalke 04 in the Bundesliga. Now the 36-year-old Finn is ending his career at the end of the year.",
+          "title": "Former Schalke striker Teemu Pukki to retire at end of year",
+          "summary": "Former FC Schalke 04 forward Teemu Pukki has announced he will end his playing career at the end of the year, aged 36.",
+          "body": [
+            "The Finnish striker explained that the time had come to say goodbye. Pukki notably represented FC Schalke 04 in the Bundesliga between 2011 and 2013."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "« Il est temps de dire au revoir » : l'ex-Schalker Pukki met fin à sa carrière",
-          "summary": "Entre 2011 et 2013, Teemu Pukki a joué pour le FC Schalke 04 en Bundesliga. Le Finlandais de 36 ans met fin à sa carrière à la fin de l'année.",
+          "title": "Teemu Pukki prendra sa retraite à la fin de l'année",
+          "summary": "L'ancien attaquant de Schalke 04 Teemu Pukki a annoncé qu'il mettrait un terme à sa carrière à la fin de l'année, à 36 ans.",
+          "body": [
+            "L'international finlandais a estimé qu'il était temps de faire ses adieux. En Allemagne, Pukki s'était notamment fait connaître sous les couleurs du FC Schalke 04, disputant la Bundesliga entre 2011 et 2013."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "\"Es hora de decir adiós\": el ex Schalker Pukki pone fin a su carrera",
-          "summary": "Entre 2011 y 2013, Teemu Pukki jugó para el FC Schalke 04 en la Bundesliga. Ahora, el finlandés de 36 años pone fin a su carrera a finales de año.",
+          "title": "Teemu Pukki anuncia su retirada a finales de año",
+          "summary": "El exdelantero del FC Schalke 04 Teemu Pukki colgará las botas a finales de año y cerrará su trayectoria deportiva a los 36 años.",
+          "body": [
+            "El atacante finlandés aseguró que ha llegado el momento de decir adiós. En el fútbol alemán, Pukki militó en las filas del FC Schalke 04 en la Bundesliga entre 2011 y 2013."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "\"حان وقت الوداع \": ينهي بوكي حياته المهنية",
-          "summary": "بين عامي 2011 و 2013، لعب تيمو بوكي لنادي شالكه 04 في الدوري الألماني. الآن الفنلندي البالغ من العمر 36 عاما ينهي مسيرته المهنية في نهاية العام.",
+          "title": "الفنلندي تيمو بوكي يعلن اعتزاله كرة القدم نهاية العام",
+          "summary": "أعلن المهاجم الفنلندي السابق لنادي شالكه 04 تيمو بوكي، اليوم، أنه سيعتزل كرة القدم نهائياً مع نهاية العام الحالي عن عمر يناهز 36 عاماً.",
+          "body": [
+            "وأوضح المهاجم الفنلندي أن وقت الوداع قد حان، بعد مسيرة شملت ظهوره في الدوري الألماني بقميص نادي شالكه 04 بين عامي 2011 و2013."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.kicker.de/an-der-zeit-abschied-zu-nehmen-ex-schalker-pukki-beendet-seine-karriere-1263359/artikel#omrss",
@@ -433,7 +609,20 @@
           "url": "https://www.kicker.de/an-der-zeit-abschied-zu-nehmen-ex-schalker-pukki-beendet-seine-karriere-1263359/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-20T19:23:27+00:00"
+        }
+      }
     },
     {
       "id": "01bfa63493a6",
@@ -497,27 +686,44 @@
       "summary": "Touché par un virus ces derniers jours et encore affaibli, Vincent Kompany espère être sur le banc pour la rencontre de Ligue des champions contre Arsenal, mercredi soir (21 heures). Le doute persiste malgré tout car le Belge a dû se reposer totalement ce mardi.",
       "i18n": {
         "fr": {
-          "title": "Toujours malade, Vincent Kompany a raté l'entraînement et la conférence de presse à la veille de Bayern Munich-Arsenal",
-          "summary": "Touché par un virus ces derniers jours et encore affaibli, Vincent Kompany espère être sur le banc pour la rencontre de Ligue des champions contre Arsenal, mercredi soir (21 heures). Le doute persiste malgré tout car le Belge a dû se reposer totalement ce mardi.",
-          "needs_translation": false
+          "title": "Bayern : malade, Vincent Kompany reste incertain avant d'affronter Arsenal",
+          "summary": "Affaibli par un virus, l'entraîneur du Bayern Munich Vincent Kompany a manqué l'entraînement mardi avant le choc de Ligue des champions face à Arsenal.",
+          "body": [
+            "Le technicien belge a également renoncé à la conférence de presse d'avant-match pour observer un repos complet ce mardi. S'il espère toujours pouvoir diriger son équipe depuis le banc mercredi soir à 21 heures, le doute persiste quant à son rétablissement à temps."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Still ill, Vincent Kompany missed the training and press conference on the eve of Bayern Munich-Arsenal",
-          "summary": "Touched by a virus in recent days and still weakened, Vincent Kompany hopes to be on the bench for the Champions League match against Arsenal on Wednesday evening (9 p.m.). The doubt persists despite everything because the Belgian had to rest completely on Tuesday.",
+          "title": "Bayern: Vincent Kompany doubtful for Arsenal clash due to illness",
+          "summary": "Struck down by a virus, Bayern Munich manager Vincent Kompany missed training on Tuesday ahead of the Champions League showdown against Arsenal.",
+          "body": [
+            "The Belgian tactician also skipped the pre-match press conference to observe complete rest on Tuesday. While he still hopes to take his place in the dugout on Wednesday night at 21:00, doubts remain over whether he will recover in time."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Todavía enfermo, Vincent Kompany se perdió el entrenamiento y la conferencia de prensa en la víspera del Bayern Munich-Arsenal",
-          "summary": "Afectado por un virus en los últimos días y aún debilitado, Vincent Kompany espera estar en el banquillo para el partido de la Liga de Campeones contra el Arsenal el miércoles por la noche (21:00). La duda persiste a pesar de todo porque el belga tuvo que descansar totalmente este martes.",
+          "title": "Bayern: Vincent Kompany es duda ante el Arsenal por enfermedad",
+          "summary": "Debilitado por un virus, el entrenador del Bayern Múnich Vincent Kompany se perdió el entrenamiento del martes antes del choque de Liga de Campeones frente al Arsenal.",
+          "body": [
+            "El técnico belga tampoco compareció en la rueda de prensa previa para guardar reposo total este martes. Aunque confía en sentarse en el banquillo el miércoles a las 21:00, su presencia sigue en el aire a la espera de su recuperación."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "لا يزال فينسنت كومباني مريضًا، وغاب عن التدريب والمؤتمر الصحفي عشية بايرن ميونيخ - أرسينال",
-          "summary": "تأثر فينسنت كومباني بفيروس في الأيام الأخيرة ولا يزال ضعيفًا، ويأمل أن يكون على مقاعد البدلاء لمباراة دوري أبطال أوروبا ضد آرسنال مساء الأربعاء (9 مساءً). لا يزال الشك قائما على الرغم من كل شيء لأن البلجيكي كان عليه أن يرتاح تماما يوم الثلاثاء.",
+          "title": "بايرن ميونخ: الشكوك تحوم حول تواجد فينسنت كومباني أمام أرسنال بسبب المرض",
+          "summary": "غاب مدرب بايرن ميونخ فينسنت كومباني عن تدريبات الفريق يوم الثلاثاء إثر إصابته بفيروس، وذلك قبل الموقعة المرتقبة أمام أرسنال في دوري أبطال أوروبا.",
+          "body": [
+            "كما اعتذر المدرب البلجيكي عن عدم حضور المؤتمر الصحفي الخاص باللقاء للخلود إلى راحة تامة يوم الثلاثاء. ورغم تمسكه بأمل قيادة فريقه من دكة البدلاء مساء الأربعاء عند الساعة 21:00، فإن الشكوك لا تزال قائمة بشأن تعافيه في الوقت المناسب."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Toujours-malade-vincent-kompany-a-rate-l-entrainement-et-la-conference-de-presse-a-la-veille-de-bayern-munich-arsenal/1737279#at_medium=RSS_feeds",
@@ -539,7 +745,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Toujours-malade-vincent-kompany-a-rate-l-entrainement-et-la-conference-de-presse-a-la-veille-de-bayern-munich-arsenal/1737279#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-20T19:23:31+00:00"
+        }
+      }
     },
     {
       "id": "a25c76f86f7e",
@@ -547,27 +766,48 @@
       "summary": "Pese a que la Superliga, aquel 'mega proyecto' de nueva competición entre los mejores clubes de Europa que diseñó con fracaso rotundo el presidente del Real Madrid , Florentino Pérez , el asunto sigue coleando.",
       "i18n": {
         "es": {
-          "title": "El Real Madrid pide ahora a seis clubes ingleses su parte del dinero por la Superliga fallida",
-          "summary": "Pese a que la Superliga, aquel 'mega proyecto' de nueva competición entre los mejores clubes de Europa que diseñó con fracaso rotundo el presidente del Real Madrid , Florentino Pérez , el asunto sigue coleando.",
-          "needs_translation": false
+          "title": "El Real Madrid exige 80 millones a los seis clubes ingleses de la Superliga",
+          "summary": "Florentino Pérez reclama 80 millones de euros a los seis equipos ingleses que abandonaron prematuramente el proyecto inicial de la Superliga.",
+          "body": [
+            "Según desvela The Athletic, la exigencia económica se dirige a Chelsea, Arsenal, Manchester City, Manchester United, Tottenham y Liverpool por romper el pacto fundacional apenas días después de firmarlo. En caso de cobrarse, estos fondos no ingresarán directamente en las arcas del club blanco, sino que se destinarán a A22 Sports, la sociedad promotora del torneo que quedó prácticamente desactivado tras las salidas posteriores de Juventus y Barcelona.",
+            "El movimiento coincide con la reestructuración interna del Real Madrid, que acaba de incorporar a Bernd Reichart, antiguo director general de la propia A22 Sports, como nuevo responsable de sus actividades económicas."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Real Madrid are now asking six English clubs for their share of the money for the failed Super League",
-          "summary": "Despite the fact that the Superliga, that 'mega project' of new competition between the best clubs in Europe that the president of Real Madrid , Florentino Pérez, designed with resounding failure, the matter continues to rage.",
+          "title": "Real Madrid demand €80m from six English Superliga defectors",
+          "summary": "Florentino Pérez is seeking €80 million from the six English clubs that pulled out of the original Superliga breakaway.",
+          "body": [
+            "According to The Athletic, the financial claim targets Chelsea, Arsenal, Manchester City, Manchester United, Tottenham, and Liverpool for walking away from the founding agreement just days after putting pen to paper. If recovered, the money will bypass the Spanish giant's direct accounts and head instead to A22 Sports, the promotional firm behind the project that largely stalled after subsequent withdrawals by Juventus and Barcelona.",
+            "The move comes amid an internal reshuffle at Real Madrid, who have just hired former A22 Sports chief executive Bernd Reichart to oversee the club's commercial operations."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Le Real Madrid demande maintenant à six clubs anglais leur part de l'argent pour la Superliga échouée",
-          "summary": "Bien que la Superliga, ce « méga projet » de nouvelle compétition entre les meilleurs clubs d'Europe conçu avec un échec retentissant par le président du Real Madrid , Florentino Pérez , la question continue de se poser.",
+          "title": "Le Real Madrid réclame 80 millions d'euros aux six clubs anglais de la Superliga",
+          "summary": "Florentino Pérez réclame 80 millions d'euros aux six cadors anglais ayant fait capoter le lancement initial de la Superliga.",
+          "body": [
+            "Selon les informations de The Athletic, cette réclamation financière vise Chelsea, Arsenal, Manchester City, Manchester United, Tottenham et Liverpool pour avoir rompu l'accord fondateur quelques jours seulement après sa signature. En cas de recouvrement, ces sommes n'iront pas directement dans les caisses de la Maison Blanche, mais reviendront à A22 Sports, la structure promotrice du tournoi resté au point mort après les retraits ultérieurs de la Juventus et de Barcelona.",
+            "Cette offensive coïncide avec la réorganisation interne du Real Madrid, qui vient d'introniser Bernd Reichart, l'ancien directeur général d'A22 Sports, aux commandes de sa division économique."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "يطلب ريال مدريد الآن من ستة أندية إنجليزية حصتها من أموال الدوري الممتاز الفاشل",
-          "summary": "على الرغم من حقيقة أن Superliga، ذلك \"المشروع الضخم\" للمنافسة الجديدة بين أفضل الأندية في أوروبا التي صممها رئيس ريال مدريد ، فلورنتينو بيريز، بفشل مدوي، فإن الأمر لا يزال محتدما.",
+          "title": "ريال مدريد يطالب أندية إنجلترا الستة بـ 80 مليون يورو بسبب السوبر ليغ",
+          "summary": "يطالب فلورنتينو بيريز الأندية الإنجليزية الستة التي انسحبت مبكراً من مشروع السوبر ليغ بتعويضات تبلغ 80 مليون يورو.",
+          "body": [
+            "وفقاً لما كشفته صحيفة ذا أثلتيك، تستهدف هذه المطالبة المالية أندية تشيلسي وأرسنال ومانشستر سيتي ومانشستر يونايتد وتوتنهام وليفربول، بدعوى الإخلال بميثاق التأسيس بعد أيام قليلة فقط من توقيعه. وفي حال تحصيل تلك الأموال، فلن تذهب مباشرة إلى خزائن النادي الملكي، بل ستضخ في شركة إيه 22 سبورتس المروجة للبطولة، التي تجمدت عملياً عقب انسحاب يوفنتوس وبرشلونة في وقت لاحق.",
+            "وتتزامن هذه الخطوة مع إعادة ترتيب البيت الداخلي في ريال مدريد، بعدما عيّن النادي بيرند رايتشارت، المدير العام السابق لشركة إيه 22 سبورتس، مسؤولاً جديداً عن قطاعه الاقتصادي."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261020/1004241148/real-madrid-pide-seis-clubes-ingleses-parte-dinero-superliga-fallida.html",
@@ -589,7 +829,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261020/1004241148/real-madrid-pide-seis-clubes-ingleses-parte-dinero-superliga-fallida.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full"
+      }
     },
     {
       "id": "e8cf62fbff11",
@@ -639,7 +884,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/boca-equipo-paredes-plantel-arruabarrena-brasil-rio-maracana-hotel-reunion_0_37GXuFZGTZ.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "84fd128af7f5",
@@ -689,7 +939,12 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-uefa-avec-nguessan-et-ayaosi-les-compos-de-fenerbahce-slavia-prague/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f13d8c989aae",
@@ -801,7 +1056,12 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Les-traumatismes-craniens-au-coeur-des-preoccupations-medicales/1737276#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "90e382f9cf50",
@@ -907,7 +1167,12 @@
           "url": "https://www.mundodeportivo.com/futbol/balon-oro/20261020/1004241123/balon-oro-historia-nueva-batalla-messi-cristiano.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "9df0eae3f838",
@@ -915,27 +1180,44 @@
       "summary": "La nueva segunda equipación del FC Barcelona para la temporada 2027-28 comienza ya a circular por las redes sociales.",
       "i18n": {
         "es": {
-          "title": "El Barça prepara una camiseta al estilo Lakers para el curso que viene",
-          "summary": "La nueva segunda equipación del FC Barcelona para la temporada 2027-28 comienza ya a circular por las redes sociales.",
-          "needs_translation": false
+          "title": "El Barça lucirá los colores de los Lakers en la temporada 2027-28",
+          "summary": "El portal Footy Headlines ha filtrado que la segunda equipación del FC Barcelona para el curso 2027-28 será amarilla con detalles lilas.",
+          "body": [
+            "La indumentaria rinde tributo a Los Angeles Lakers de Kobe Bryant mediante un diseño sobrio que todavía no es definitivo. Esta propuesta dará continuidad a la exitosa línea comercial del club azulgrana vinculada a la leyenda de la NBA, tras el lanzamiento previo del modelo dorado y de la versión negra con tonos morados."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Barça prepares a Lakers-style shirt for the coming season",
-          "summary": "FC Barcelona's new second kit for the 2027-28 season is now circulating on social media.",
+          "title": "Barça to wear Lakers colors in the 2027-28 season",
+          "summary": "Footy Headlines has leaked that FC Barcelona's away kit for the 2027-28 campaign will be yellow with purple detailing.",
+          "body": [
+            "The shirt pays tribute to Kobe Bryant and the Los Angeles Lakers with an understated design that is not yet final. The move builds on the Catalan club's successful commercial line tied to the NBA legend, following earlier releases of a gold kit and a black shirt with purple accents."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Le Barça prépare un maillot de style Lakers pour le cours à venir",
-          "summary": "Le nouveau deuxième maillot du FC Barcelone pour la saison 2027-28 commence déjà à circuler sur les réseaux sociaux.",
+          "title": "Le Barça arborera les couleurs des Lakers lors de la saison 2027-2028",
+          "summary": "D'après les révélations du site Footy Headlines, le maillot extérieur du FC Barcelona pour la saison 2027-2028 sera jaune avec des finitions violettes.",
+          "body": [
+            "La tunique rend hommage aux Los Angeles Lakers de Kobe Bryant à travers un design épuré qui reste à finaliser. Le club blaugrana poursuit ainsi sa série lucrative associée à la légende de la NBA, après les sorties successives d'un modèle doré puis d'une version noire nuancée de violet."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "برشلونة يعد قميصًا على طراز الليكرز للموسم المقبل",
-          "summary": "يتم الآن تداول المجموعة الثانية الجديدة لنادي برشلونة لموسم 2027-2028 على وسائل التواصل الاجتماعي.",
+          "title": "برشلونة يرتدي ألوان ليكرز في موسم 2027-2028",
+          "summary": "كشف موقع فوتي هيدلاينز أن القميص الاحتياطي لنادي برشلونة لموسم 2027-2028 سيكون باللون الأصفر مع تفاصيل باللون البنفسجي.",
+          "body": [
+            "يحمل القميص لمسة تكريمية لفريق لوس أنجلوس ليكرز وأسطورته كوبي براينت بتصميم كلاسيكي لم يُعتمد نهائيًا بعد. ويستكمل النادي الكتالوني بهذا الطرح خطه التجاري الناجح المرتبط بنجم دوري كرة السلة الأمريكي للمحترفين، بعد طرح قميص ذهبي وآخر أسود بلمسات أرجوانية."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261020/1004241139/barca-prepara-camiseta-estilo-lakers-curso-viene.html",
@@ -957,7 +1239,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261020/1004241139/barca-prepara-camiseta-estilo-lakers-curso-viene.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full"
+      }
     },
     {
       "id": "f1fe370532ff",
@@ -1004,7 +1291,12 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-uefa-sabah-baku-dortmund-les-compos-officielles/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c24b3e1cbce4",
