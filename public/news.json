@@ -59,7 +59,12 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-naples-bodo-glimt-compositions-probables-avec-zambo-anguissa-sur-le-bancz/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "42f2f2145328",
@@ -115,7 +120,12 @@
           "url": "https://www.kicker.de/mutmacher-fuer-den-vfb-atleticos-juengste-bilanz-in-deutschland-ist-erschreckend-1261933/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3b88ae97e7be",
@@ -165,7 +175,12 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-naples-face-au-piege-de-bodo-glimt/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "51a4560494a9",
@@ -221,7 +236,12 @@
           "url": "https://www.kicker.de/das-grosse-power-ranking-lebrons-76ers-abgeschlagen-spurs-muessen-weiter-warten-1262914/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ac9bdca28368",
@@ -229,27 +249,56 @@
       "summary": "La troisième journée de la phase de ligue de la Ligue des champions 2026-2027 propose plusieurs affiches très attendues, dont le choc entre le Paris Saint-Germain et le FC Barcelone, ainsi que la rencontre entre Liverpool et Villarreal.",
       "i18n": {
         "fr": {
-          "title": "Ligue des champions : le PSG défie le Barça, Liverpool accueille Villarreal",
-          "summary": "La troisième journée de la phase de ligue de la Ligue des champions 2026-2027 propose plusieurs affiches très attendues, dont le choc entre le Paris Saint-Germain et le FC Barcelone, ainsi que la rencontre entre Liverpool et Villarreal.",
-          "needs_translation": false
+          "title": "Ligue des champions : choc au sommet entre le PSG et le Barça",
+          "summary": "Le Paris Saint-Germain accueille le FC Barcelone ce mercredi pour le choc d'une troisième journée européenne où Liverpool et Manchester City jouent gros.",
+          "body": [
+            "PSG - FC Barcelone : À Paris, deux attaques en pleine forme s'affrontent après deux cartons initiaux, avec les retrouvailles de Luis Enrique et Ousmane Dembélé face aux Catalans de Lamine Yamal.",
+            "Liverpool - Villarreal : Forts de deux victoires initiales, les Reds comptent 15 succès sur leurs 16 derniers matches à domicile en poules face à un rival qui ne les a jamais battus.",
+            "Manchester City - AEK Athènes : Tombés à Paris, les Citizens s'en remettent à Erling Haaland, fort de 61 buts en 60 rencontres européennes, pour se reprendre.",
+            "Dortmund et Atlético de Madrid : Surprise par Bodø/Glimt, l'équipe allemande se déplace chez Sabah, tandis que les Madrilènes défient Stuttgart après leur revers inaugural à Anfield."
+          ],
+          "format": "bullets",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Champions League: PSG challenges Barça, Liverpool welcomes Villarreal",
-          "summary": "The third day of the Champions League phase 2026-2027 features several highly anticipated posters, including the clash between Paris Saint-Germain and FC Barcelona, as well as the meeting between Liverpool and Villarreal.",
+          "title": "Champions League: Blockbuster clash between PSG and Barcelona",
+          "summary": "Paris Saint-Germain host FC Barcelona this Wednesday in the standout tie of matchday three, with Liverpool and Manchester City also facing high stakes.",
+          "body": [
+            "PSG vs FC Barcelona: Two sides boasting flawless records collide in Paris, featuring Luis Enrique and Ousmane Dembélé up against their former club and an in-form Lamine Yamal.",
+            "Liverpool vs Villarreal: Boasting two opening wins, the Reds have won 15 of their last 16 home group fixtures and face an opponent that has never beaten them.",
+            "Manchester City vs AEK Athens: Beaten in Paris, the Citizens rely on Erling Haaland, boasting 61 goals in 60 European games, to return to winning ways.",
+            "Dortmund and Atlético de Madrid: Stunned by Bodø/Glimt, the German side travel to Sabah, while Atlético visit Stuttgart looking to rebound from their loss at Anfield."
+          ],
+          "format": "bullets",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Liga de Campeones: PSG desafía al Barça, Liverpool recibe al Villarreal",
-          "summary": "La tercera jornada de la fase de liga de la Liga de Campeones 2026-2027 ofrece varios carteles muy esperados, incluido el choque entre el Paris Saint-Germain y el FC Barcelona, así como el partido entre el Liverpool y el Villarreal.",
+          "title": "Champions League: Duelo en la cumbre entre el PSG y el Barça",
+          "summary": "El Paris Saint-Germain recibe al FC Barcelona este miércoles en el gran choque de la tercera jornada europea, donde Liverpool y Manchester City se juegan mucho.",
+          "body": [
+            "PSG - FC Barcelona: Dos equipos con pleno de triunfos tras sendas goleadas se miden en París, con el reencuentro de Luis Enrique y Ousmane Dembélé ante el equipo de Lamine Yamal.",
+            "Liverpool - Villarreal: Con dos victorias en dos partidos, los Reds acumulan 15 triunfos en sus últimos 16 duelos de fase regular en Anfield ante un rival que jamás los ha vencido.",
+            "Manchester City - AEK Atenas: Tras caer en París, los Citizens confían en Erling Haaland, autor de 61 goles en 60 duelos de Champions, para reaccionar.",
+            "Dortmund y Atlético de Madrid: Tras la sorpresa ante el Bodø/Glimt, el cuadro alemán visita al Sabah, mientras el Atlético desafía al Stuttgart en busca de puntos."
+          ],
+          "format": "bullets",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري أبطال أوروبا: باريس سان جيرمان يتحدى برشلونة، ليفربول يرحب بفياريال",
-          "summary": "يتميز اليوم الثالث من مرحلة دوري أبطال أوروبا 2026-2027 بالعديد من الملصقات المرتقبة للغاية، بما في ذلك الاشتباك بين باريس سان جيرمان ونادي برشلونة، بالإضافة إلى اللقاء بين ليفربول وفياريال.",
+          "title": "دوري أبطال أوروبا: قمة نارية بين باريس سان جيرمان وبرشلونة",
+          "summary": "يستضيف باريس سان جيرمان نادي برشلونة هذا الأربعاء في قمة الجولة الثالثة من دوري أبطال أوروبا، في ليلة يدخلها ليفربول ومانشستر سيتي تحت ضغط كبير.",
+          "body": [
+            "باريس سان جيرمان - برشلونة: قمة باريسية بين فريقين حققا انطلاقة هجومية كاسحة، تشهد مواجهة لويس إنريكي وعثمان ديمبيلي لناديهما السابق أمام تألق الشاب لامين يامال.",
+            "ليفربول - فياريال: يبحث الريدز في أنفيلد عن انتصار ثالث توالياً، معولين على سجل يشمل 15 فوزاً في آخر 16 مباراة بملعبهم أمام خصم لم يهزمهم قط.",
+            "مانشستر سيتي - أيك أثينا: بعد السقوط في باريس، يعول بطل إنجلترا على إرلينغ هالاند، صاحب 61 هدفاً في 60 مباراة قارية، لتصحيح المسار.",
+            "دورتموند وأتلتيكو مدريد: بعد سقوطه المفاجئ أمام بودو/غليمت، يحل الفريق الألماني ضيفاً على صباح، بينما يحل أتلتيكو مدريد ضيفاً ثقيلاً على شتوتغارت."
+          ],
+          "format": "bullets",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://fr.hespress.com/493216-ligue-des-champions-le-psg-defie-le-barca-liverpool-accueille-villarreal.html",
@@ -271,7 +320,20 @@
           "url": "https://fr.hespress.com/493216-ligue-des-champions-le-psg-defie-le-barca-liverpool-accueille-villarreal.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 4,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-20T15:14:00+00:00"
+        }
+      }
     },
     {
       "id": "4912bc93f4da",
@@ -279,27 +341,44 @@
       "summary": "Un affrontement PSG-Barça rimera pour toujours avec Remontada. Mais depuis cette soirée de mars 2017, Franciliens et Catalans se sont affrontés à cinq reprises, dans des matches qui ont souvent tourné à l'avantage du double champion d'Europe en titre.",
       "i18n": {
         "fr": {
-          "title": "Triplé de Mbappé, masterclass de Navas, Gonçalo Ramos en supersub... Le PSG a pris sa revanche sur le Barça depuis la Remontada",
-          "summary": "Un affrontement PSG-Barça rimera pour toujours avec Remontada. Mais depuis cette soirée de mars 2017, Franciliens et Catalans se sont affrontés à cinq reprises, dans des matches qui ont souvent tourné à l'avantage du double champion d'Europe en titre.",
-          "needs_translation": false
+          "title": "Depuis la Remontada, le Paris Saint-Germain a inversé la tendance face au Barça",
+          "summary": "Le Paris Saint-Germain a pris l'ascendant sur le FC Barcelone lors de leurs cinq confrontations disputées depuis le traumatisme de mars 2017.",
+          "body": [
+            "Marquées par le triplé de Kylian Mbappé, les parades de Keylor Navas ou les entrées décisives de Gonçalo Ramos, ces retrouvailles ont régulièrement tourné à l'avantage des Parisiens, atténuant le souvenir de la désillusion barcelonaise."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Tripled by Mbappé, masterclass of Navas, Gonçalo Ramos in a supersub... PSG has taken revenge on Barça since the Remontada",
-          "summary": "A PSG-Barça clash will forever rhyme with Remontada. But since that evening in March 2017, Ile-de-France and Catalonia have faced each other five times, in matches that have often turned to the advantage of the two-time reigning European champion.",
+          "title": "Since the Remontada, PSG have turned the tables on Barcelona",
+          "summary": "Paris Saint-Germain have held the upper hand over FC Barcelona across their five meetings since the heartbreak of March 2017.",
+          "body": [
+            "Driven by Kylian Mbappé's hat-trick, crucial stops from Keylor Navas, and decisive cameos by Gonçalo Ramos, these clashes have repeatedly favoured the Parisians, softening the sting of that historic collapse."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Triplete de Mbappé, masterclass de Navas, Gonçalo Ramos en supersub… El PSG se vengó del Barça desde la Remontada",
-          "summary": "Un enfrentamiento PSG-Barça rimará para siempre con Remontada. Pero desde esa noche de marzo de 2017, los franceses y los catalanes se han enfrentado en cinco ocasiones, en partidos que a menudo han ido en beneficio del vigente doble campeón de Europa.",
+          "title": "Desde la Remontada, el PSG ha cambiado el guion ante el Barcelona",
+          "summary": "El Paris Saint-Germain le ha ganado la partida al FC Barcelona en los cinco enfrentamientos disputados tras el trauma de marzo de 2017.",
+          "body": [
+            "Con el triplete de Kylian Mbappé, las intervenciones de Keylor Navas y los goles de Gonçalo Ramos saliendo del banquillo, estos duelos han sonreído casi siempre a los parisinos, enterrando el fantasma de aquella debacle."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "تضاعف ثلاث مرات من قبل مبابي، أستاذ نافاس، غونسالو راموس في فرقة فرعية... انتقم باريس سان جيرمان من برشلونة منذ ريمونتادا",
-          "summary": "سوف يتناغم الاشتباك بين باريس سان جيرمان وبارسا إلى الأبد مع ريمونتادا. ولكن منذ ذلك المساء في مارس 2017، واجه إيل دو فرانس وكاتالونيا بعضهما البعض خمس مرات، في المباريات التي تحولت في كثير من الأحيان لصالح بطل أوروبا مرتين.",
+          "title": "منذ الريمونتادا.. باريس سان جيرمان يقلب الطاولة على برشلونة",
+          "summary": "فرض باريس سان جيرمان تفوقه على نادي برشلونة خلال المواجهات الخمس التي جمعت الفريقين منذ صدمة مارس 2017.",
+          "body": [
+            "بين ثلاثية كيليان مبابي وتصديات كيلور نافاس وأهداف غونسالو راموس كبديل حاسم، مالت الكفة بانتظام لصالح الباريسيين، ليمحوا تدريجيا مرارة تلك الهزيمة التاريخية."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Triple-de-mbappe-masterclass-de-navas-goncalo-ramos-en-supersub-le-psg-a-pris-sa-revanche-sur-le-barca-depuis-la-remontada/1737189#at_medium=RSS_feeds",
@@ -321,7 +400,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Triple-de-mbappe-masterclass-de-navas-goncalo-ramos-en-supersub-le-psg-a-pris-sa-revanche-sur-le-barca-depuis-la-remontada/1737189#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-20T15:14:03+00:00"
+        }
+      }
     },
     {
       "id": "a2a1a66e43c1",
@@ -329,27 +421,44 @@
       "summary": "La Fédération burkinabè de football a publié le classement officiel de la Ligue 1, saison régulière 2026-2027, à l’issue de la 5e journée.",
       "i18n": {
         "fr": {
-          "title": "Fasofoot Ligue 1 : Rahimo FC en tête après la 5e journée",
-          "summary": "La Fédération burkinabè de football a publié le classement officiel de la Ligue 1, saison régulière 2026-2027, à l’issue de la 5e journée.",
-          "needs_translation": false
+          "title": "Fasofoot Ligue 1 : Rahimo FC s'empare des commandes",
+          "summary": "Rahimo FC prend la tête de la Fasofoot Ligue 1 au terme de la cinquième journée du championnat 2026-2027.",
+          "body": [
+            "La Fédération burkinabè de football a officialisé le classement de la saison régulière, entérinant l'accession du club au sommet de l'élite nationale."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Fasofoot Ligue 1: Rahimo FC in the lead after the 5th day",
-          "summary": "The Burkina Faso Football Federation published the official classification of Ligue 1, regular season 2026-2027, at the end of the 5th day.",
+          "title": "Fasofoot Ligue 1: Rahimo FC take top spot",
+          "summary": "Rahimo FC have moved to the top of Fasofoot Ligue 1 following the fifth round of the 2026-2027 season.",
+          "body": [
+            "The Burkinabe Football Federation published the official regular season standings, confirming the club's position at the summit of the domestic top flight."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Fasofoot Ligue 1: Rahimo FC a la cabeza después de la 5ª jornada",
-          "summary": "La Federación de Fútbol de Burkina Faso ha publicado la clasificación oficial de la Ligue 1, temporada regular 2026-2027, al final de la 5ª jornada.",
+          "title": "Fasofoot Ligue 1: Rahimo FC asalta el liderato",
+          "summary": "Rahimo FC toma el mando de la Fasofoot Ligue 1 tras la disputa de la quinta jornada de la temporada 2026-2027.",
+          "body": [
+            "La Federación Burkinesa de Fútbol publicó la tabla oficial de la fase regular, confirmando al equipo en lo más alto del campeonato nacional."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "Fasofoot Ligue 1: Rahimo FC في الصدارة بعد اليوم الخامس",
-          "summary": "نشر اتحاد بوركينا فاسو لكرة القدم التصنيف الرسمي للدوري 1، الموسم العادي 2026-2027، في نهاية اليوم الخامس.",
+          "title": "دوري فاسوفوت: راهيمو يتصدر الترتيب بعد الجولة الخامسة",
+          "summary": "ارتقى نادي راهيمو إلى صدارة دوري فاسوفوت للدرجة الأولى عقب اختتام منافسات الجولة الخامسة لموسم 2026-2027.",
+          "body": [
+            "نشر اتحاد بوركينا فاسو لكرة القدم جدول الترتيب الرسمي للبطولة الوطنية، مؤكداً اعتلاء النادي قمة الترتيب في هذه المرحلة من الموسم المنتظم."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/football/fasofoot-ligue-1-rahimo-fc-en-tete-apres-la-5e-journee/",
@@ -371,7 +480,20 @@
           "url": "https://africatopsports.com/football/fasofoot-ligue-1-rahimo-fc-en-tete-apres-la-5e-journee/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-20T15:14:08+00:00"
+        }
+      }
     },
     {
       "id": "c6dc938f91d4",
@@ -379,27 +501,44 @@
       "summary": "L’AS Roma accueille le Slovan Bratislava ce mardi 20 octobre 2026, pour la troisième journée de la phase de ligue de la Ligue des champions.",
       "i18n": {
         "fr": {
-          "title": "Ligue des champions UEFA / AS Roma – Slovan Bratislava : Yaya Touré à l’épreuve",
-          "summary": "L’AS Roma accueille le Slovan Bratislava ce mardi 20 octobre 2026, pour la troisième journée de la phase de ligue de la Ligue des champions.",
-          "needs_translation": false
+          "title": "Ligue des champions : l’AS Roma accueille le Slovan Bratislava",
+          "summary": "L’AS Roma reçoit le Slovan Bratislava ce mardi 20 octobre 2026 lors de la troisième journée de la phase de ligue de Ligue des champions.",
+          "body": [
+            "Cette affiche européenne met notamment Yaya Touré à l'épreuve face au club slovaque, sur la pelouse du club romain."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "UEFA Champions League/ AS Roma – Slovan Bratislava: Yaya Touré to the test",
-          "summary": "AS Roma welcomes Slovan Bratislava this Tuesday, October 20, 2026, for the third day of the Champions League phase.",
+          "title": "Champions League: AS Roma host Slovan Bratislava",
+          "summary": "AS Roma host Slovan Bratislava this Tuesday, 20 October 2026, on Matchday 3 of the Champions League league phase.",
+          "body": [
+            "The European clash puts Yaya Touré to the test against the Slovakian side on Italian soil."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Liga de Campeones UEFA / AS Roma – Slovan Bratislava: Yaya Touré a prueba",
-          "summary": "La AS Roma acoge al Slovan Bratislava este martes 20 de octubre de 2026, para la tercera jornada de la fase de Liga de Campeones.",
+          "title": "Champions League: la AS Roma recibe al Slovan Bratislava",
+          "summary": "La AS Roma recibe al Slovan Bratislava este martes 20 de octubre de 2026 en la tercera jornada de la fase de liga de Champions League.",
+          "body": [
+            "El choque europeo pondrá a prueba a Yaya Touré frente al conjunto eslovaco en el feudo romano."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري أبطال أوروبا/ روما – سلوفينيا براتيسلافا: يايا توريه إلى الاختبار",
-          "summary": "روما ترحب بسلوفان براتيسلافا هذا الثلاثاء، 20 أكتوبر 2026، لليوم الثالث من مرحلة دوري أبطال أوروبا.",
+          "title": "دوري أبطال أوروبا: روما يستضيف سلوفان براتيسلافا",
+          "summary": "يستضيف نادي روما الإيطالي نظيره سلوفان براتيسلافا، الثلاثاء 20 أكتوبر 2026، ضمن الجولة الثالثة من مرحلة الدوري لدوري أبطال أوروبا.",
+          "body": [
+            "تضع هذه المواجهة القارية يايا توريه في اختبار حقيقي أمام الفريق السلوفاكي على ملعب نادي العاصمة الإيطالية."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/football/ligue-des-champions-uefa-as-roma-slovan-bratislava-ou-suivre-le-match-en-direct/",
@@ -427,7 +566,20 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-uefa-as-roma-slovan-bratislava-yaya-toure-a-lepreuve/"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": true,
+        "quality": 4,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-20T15:14:15+00:00"
+        }
+      }
     },
     {
       "id": "08ec9e1c91c9",
@@ -435,27 +587,56 @@
       "summary": "Ibrahima Konaté fue elegido por el departamento de prensa del Real Madrid para acudir a la sala de prensa a repasar la actualidad del club en la previa del duelo ante el RB Leipzig, antiguo club del francés.",
       "i18n": {
         "es": {
-          "title": "Konaté: \"No entendí muy bien toda la polémica que hubo con lo de Ceuta\"",
-          "summary": "Ibrahima Konaté fue elegido por el departamento de prensa del Real Madrid para acudir a la sala de prensa a repasar la actualidad del club en la previa del duelo ante el RB Leipzig, antiguo club del francés.",
-          "needs_translation": false
+          "title": "Konaté repasa la polémica de Ceuta y la actualidad del Real Madrid",
+          "summary": "Ibrahima Konaté repasó la actualidad del Real Madrid antes de medirse al Leipzig y analizó la polémica de Ceuta, los árbitros y la figura de Mourinho.",
+          "body": [
+            "Sobre Ceuta, el central afirmó no haber entendido el lema de la camiseta y evitó la polémica: con padres africanos, dice comprender el sufrimiento, pero prefiere centrarse en el balón.",
+            "Respecto a los arbitrajes y el caso Negreira, admitió haber leído sobre el tema y lamentó la falta de fortuna del equipo con las decisiones arbitrales en este inicio de curso.",
+            "De cara a la visita del RB Leipzig, su exequipo, pidió aparcar el Clásico para no despistarse en la Champions League.",
+            "Alabó además la figura de José Mourinho, de quien destacó un aura imponente y el respeto unánime que genera en la plantilla."
+          ],
+          "format": "bullets",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Konaté: \"I did not understand very well all the controversy that there was with Ceuta\"",
-          "summary": "Ibrahima Konaté was chosen by the Real Madrid press department to go to the press room to review the club's news in the run-up to the match against RB Leipzig, the Frenchman's former club.",
+          "title": "Konaté addresses Ceuta controversy and Real Madrid headlines",
+          "summary": "Ahead of facing RB Leipzig, Ibrahima Konaté addressed current affairs at Real Madrid, discussing the Ceuta controversy, refereeing, and manager José Mourinho.",
+          "body": [
+            "Regarding Ceuta, the defender explained he did not understand the slogan on the shirt, noting his African roots while choosing to tune out the media noise to focus on football.",
+            "On officiating and the Negreira case, he acknowledged reading about the controversy and felt Real Madrid had lacked luck with refereeing decisions early this season.",
+            "Ahead of facing his former club RB Leipzig, he urged his teammates to set the Clásico aside and target victory in the Champions League.",
+            "He also praised José Mourinho, highlighting the manager's imposing aura and the universal respect he commands across the squad."
+          ],
+          "format": "bullets",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Konaté : « Je n'ai pas très bien compris toute la controverse qu'il y a eu avec Ceuta »",
-          "summary": "Ibrahima Konaté a été choisi par le service de presse du Real Madrid pour se rendre dans la salle de presse afin de passer en revue l'actualité du club avant le match contre le RB Leipzig, ancien club du Français.",
+          "title": "Konaté revient sur la polémique de Ceuta et le Real Madrid",
+          "summary": "Avant d'affronter le RB Leipzig, Ibrahima Konaté a balayé l'actualité du Real Madrid, s'exprimant sur l'affaire de Ceuta, l'arbitrage et José Mourinho.",
+          "body": [
+            "Sur l'épisode de Ceuta, le défenseur a expliqué n'avoir pas compris le message inscrit sur le maillot, tout en rappelant ses origines africaines et sa volonté de fuir le tumulte médiatique.",
+            "Interrogé sur le dossier Negreira et les arbitres, il a reconnu s'être informé tout en déplorant un manque de réussite avec le corps arbitral cette saison.",
+            "Face au RB Leipzig, son ancien club, le Français exhorte le vestiaire à oublier le Clásico pour se concentrer sur la Ligue des champions.",
+            "Il a également salué l'autorité naturelle de José Mourinho, soulignant l'aura impressionnante et le respect que le technicien inspire au groupe."
+          ],
+          "format": "bullets",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "كوناتي: \"لم أفهم جيدًا كل الجدل الذي دار مع سبتة\"",
-          "summary": "تم اختيار إبراهيما كوناتي من قبل قسم الصحافة في ريال مدريد للذهاب إلى غرفة الصحافة لمراجعة أخبار النادي في الفترة التي تسبق المباراة ضد آر بي لايبزيغ، النادي الفرنسي السابق.",
+          "title": "كوناتي يعلق على جدل سبتة ومستجدات ريال مدريد",
+          "summary": "استعرض إبراهيما كوناتي مستجدات ريال مدريد قبل مواجهة آر بي لايبزيغ، متطرقاً إلى الجدل المثار حول سبتة، وقضايا التحكيم، وتأثير جوزيه مورينيو.",
+          "body": [
+            "بشأن سبتة، أوضح المدافع أنه لم يفهم العبارة المكتوبة على القميص، مشيراً إلى أصول والديه الإفريقية ومفضلاً الابتعاد عن الضجيج الإعلامي للتركيز على كرة القدم.",
+            "وحول التحكيم وقضية نيغريرا، أقر باطلاعه على الموضوع معتبراً أن الفريق لم يحالفه الحظ مع الحكام منذ بداية الموسم.",
+            "وقبل لقاء فريقه السابق آر بي لايبزيغ، دعا إلى تأجيل الحديث عن الكلاسيكو والتركيز الكامل على مواجهة دوري أبطال أوروبا.",
+            "كما أشاد بالمدرب جوزيه مورينيو، مؤكداً أنه يملك هيبة استثنائية ويحظى باحترام الجميع داخل غرفة تبديل الملابس."
+          ],
+          "format": "bullets",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261020/1004240987/konate-no-entendi-toda-polemica-hubo-ceuta.html",
@@ -477,7 +658,20 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261020/1004240987/konate-no-entendi-toda-polemica-hubo-ceuta.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-20T15:14:23+00:00"
+        }
+      }
     },
     {
       "id": "2a802686e890",
@@ -485,27 +679,48 @@
       "summary": "El presidente del Sevilla, José María del Nido Carrasco, ha viajado a Madrid para reunirse en la sede de la Real Federación Española de Fútbol (RFEF) con los responsables del Comité Técnico de Árbitros (CTA), al que el club andaluz ya solicitó este lunes el audio completo de la…",
       "i18n": {
         "es": {
-          "title": "El presidente del Sevilla viaja a Madrid para reunirse con los árbitros",
-          "summary": "El presidente del Sevilla, José María del Nido Carrasco, ha viajado a Madrid para reunirse en la sede de la Real Federación Española de Fútbol (RFEF) con los responsables del Comité Técnico de Árbitros (CTA), al que el club andaluz ya solicitó este lunes el audio completo de la…",
-          "needs_translation": false
+          "title": "Del Nido Carrasco pide explicaciones al CTA por el arbitraje en el Bernabéu",
+          "summary": "El presidente del Sevilla se desplazó a Las Rozas para reunirse con los responsables arbitrales tras la derrota liguera frente al Real Madrid.",
+          "body": [
+            "José María del Nido Carrasco acudió a la sede de la RFEF para exigir explicaciones y solicitar los audios íntegros de la sala VOR. La entidad hispalense protesta por dos acciones puntuales: una agresión sin balón de Arda Güler sobre Peque y una falta previa de Konaté a Robbie Ure en la jugada del segundo tanto blanco.",
+            "El malestar creció además por la gestión televisiva de las repeticiones en el Santiago Bernabéu. El responsable de realización de LaLiga, Sergio Carranza, reconoció públicamente que la unidad móvil descartó emitir las imágenes del codazo del turco por una decisión editorial, al constatar que el colegiado no intervendría."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Sevilla president travels to Madrid to meet with referees",
-          "summary": "The president of Seville, José María del Nido Carrasco, has traveled to Madrid to meet at the headquarters of the Royal Spanish Football Federation (RFEF) with those responsible for the Technical Committee of Referees (CTA), to which the Andalusian club already requested on Monday the complete audio of the...",
+          "title": "Del Nido Carrasco demands answers from referee chiefs over Bernabéu clash",
+          "summary": "Sevilla's president traveled to Las Rozas to confront refereeing chiefs following their league defeat to Real Madrid.",
+          "body": [
+            "José María del Nido Carrasco visited RFEF headquarters to demand explanations and request the full audio recordings from the VOR room. The Andalusian outfit is protesting two specific moments: an off-the-ball strike by Arda Güler on Peque and a prior foul by Konaté on Robbie Ure in the buildup to the home side's second goal.",
+            "Tensions escalated over the broadcast handling of replays inside the Santiago Bernabéu. LaLiga broadcast director Sergio Carranza publicly admitted that the production truck chose not to air footage of the Turkish midfielder's elbow as an editorial decision, having confirmed the referee would not step in."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Le président de Séville se rend à Madrid pour rencontrer les arbitres",
-          "summary": "Le président de Séville, José María del Nido Carrasco, s'est rendu à Madrid pour rencontrer au siège de la Fédération royale espagnole de football (RFEF) les responsables du Comité technique des arbitres (CTA), auquel le club andalou a déjà demandé lundi l'audio complet de la...",
+          "title": "Arbitrage au Bernabéu : Del Nido Carrasco demande des comptes au CTA",
+          "summary": "Le président du Sevilla FC s'est rendu à Las Rozas pour s'entretenir avec les patrons de l'arbitrage après la défaite face au Real Madrid.",
+          "body": [
+            "José María del Nido Carrasco s'est rendu au siège de la RFEF pour réclamer des explications et l'intégralité des audios de la salle VOR. Le club andalou conteste deux décisions précises : une agression sans ballon d'Arda Güler sur Peque et une faute préalable de Konaté sur Robbie Ure amenant le deuxième but madrilène.",
+            "La colère est encore montée d'un cran face à la gestion des ralentis au Santiago Bernabéu. Le responsable de la réalisation pour LaLiga, Sergio Carranza, a reconnu publiquement que le car régie avait délibérément écarté les images du coup de coude du Turc par choix éditorial, constatant que l'arbitre n'allait pas intervenir."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "رئيس إشبيلية يسافر إلى مدريد للقاء الحكام",
-          "summary": "سافر رئيس إشبيلية، خوسيه ماريا ديل نيدو كاراسكو، إلى مدريد للاجتماع في مقر الاتحاد الملكي الإسباني لكرة القدم (RFEF) مع المسؤولين عن اللجنة الفنية للحكام (CTA)، والتي طلب النادي الأندلسي بالفعل يوم الاثنين التسجيل الصوتي الكامل لـ...",
+          "title": "ديل نيدو كاراسكو يطالب لجنة الحكام بتوضيحات بشأن التحكيم في البرنابيو",
+          "summary": "توجه رئيس نادي إشبيلية إلى مقر التحكيم في لاس روزاس للاجتماع بمسؤولي الحكام، عقب الهزيمة في الدوري أمام ريال مدريد.",
+          "body": [
+            "زار خوسيه ماريا ديل نيدو كاراسكو مقر الاتحاد الإسباني لكرة القدم للمطالبة بتفسيرات والحصول على التسجيلات الصوتية الكاملة لغرفة تقنية الفيديو. ويحتج النادي الأندلسي على لقطتين: اعتداء بدون كرة من أردا غولر على بيكي، وخطأ سابق ارتكبه كوناتي ضد روبي يور في لقطة الهدف الثاني للفريق الملكي.",
+            "وتفاقم الغضب بسبب طريقة إدارة الإعادات التلفزيونية في ملعب سانتياغو برنابيو. واعترف مدير الإخراج في رابطة الدوري الإسباني، سيرخيو كارانزا، علنا بأن حافلة البث استبعدت عرض لقطة ضربة الكوع التي ارتكبها اللاعب التركي بقرار تحريري، بعدما تبين أن الحكم لن يتدخل."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/sevilla/20261020/1004240985/presidente-sevilla-viaja-madrid-reunirse-arbitros.html",
@@ -527,7 +742,20 @@
           "url": "https://www.mundodeportivo.com/futbol/sevilla/20261020/1004240985/presidente-sevilla-viaja-madrid-reunirse-arbitros.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-20T15:14:27+00:00"
+        }
+      }
     },
     {
       "id": "789f350ad813",
@@ -535,40 +763,40 @@
       "summary": "Le président Joan Laporta a acté la rupture totale des relations entre le FC Barcelone et le Real Madrid avant le Clasico prévu dimanche soir.",
       "i18n": {
         "fr": {
-          "title": "Joan Laporta acte la rupture entre le FC Barcelone et le Real Madrid",
-          "summary": "Le président Joan Laporta a acté la rupture totale des relations entre le FC Barcelone et le Real Madrid avant le Clasico prévu dimanche soir.",
+          "title": "FC Barcelone - Real Madrid : Laporta acte la rupture avant le Clasico",
+          "summary": "Le président blaugrana Joan Laporta a officialisé la rupture totale des relations avec le Real Madrid à l'approche du Clasico prévu dimanche soir.",
           "body": [
-            "« Nos relations n'existent plus, c'est un affrontement maintenant », a lancé le dirigeant catalan avant le duel de 21 heures. Joan Laporta a vivement critiqué le recrutement madrilène, pointant les difficultés sportives rencontrées par la Casa Blanca depuis l'arrivée de Kylian Mbappé à l'été 2024."
+            "À quelques heures du choc programmé ce dimanche, le patron catalan consomme la rupture institutionnelle avec le rival madrilène. Un choix fort qui gèle tout lien officiel entre les deux géants espagnols avant leurs retrouvailles sur le terrain."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "en": {
-          "title": "Joan Laporta confirms total rift between FC Barcelona and Real Madrid",
-          "summary": "FC Barcelona president Joan Laporta declared that relations with Real Madrid are completely broken ahead of Sunday night's Clasico.",
+          "title": "FC Barcelona vs Real Madrid: Laporta cuts ties ahead of Clasico",
+          "summary": "Blaugrana president Joan Laporta has confirmed a complete breakdown in relations with Real Madrid ahead of Sunday night's Clasico.",
           "body": [
-            "\"Our relations no longer exist, it is a confrontation now,\" the Catalan president said ahead of the 9 p.m. clash. Laporta also criticized Madrid's transfer strategy, pointing out their struggles on the pitch since Kylian Mbappé joined in the summer of 2024."
+            "Just hours before Sunday's showdown, the Catalan chief made a clean institutional break with his Madrid rivals. The move suspends all official ties between both Spanish powerhouses right before they face off on the pitch."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "es": {
-          "title": "Joan Laporta da por rotas las relaciones entre FC Barcelona y Real Madrid",
-          "summary": "El presidente Joan Laporta dio por rotas las relaciones entre el FC Barcelona y el Real Madrid antes del Clásico de este domingo.",
+          "title": "FC Barcelona - Real Madrid: Laporta escenifica la ruptura antes del Clásico",
+          "summary": "El presidente blaugrana Joan Laporta ha hecho oficial la ruptura total de relaciones con el Real Madrid antes del Clásico de este domingo.",
           "body": [
-            "«Nuestras relaciones ya no existen, ahora es un enfrentamiento», afirmó el dirigente catalán antes del choque de las 21:00 horas. Laporta cargó contra la planificación deportiva de su rival, señalando las dificultades del equipo blanco sobre el césped desde la llegada de Kylian Mbappé en el verano de 2024."
+            "A pocas horas del choque dominical, el mandatario catalán formaliza el distanciamiento institucional con su eterno rival. Una decisión tajante que congela los vínculos oficiales entre ambos clubes antes de verse las caras en el terreno de juego."
           ],
           "format": "brief",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "ar": {
-          "title": "خوان لابورتا يعلن القطيعة بين برشلونة وريال مدريد قبل الكلاسيكو",
-          "summary": "أعلن رئيس نادي برشلونة خوان لابورتا انقطاع العلاقات تماماً مع ريال مدريد قبل الكلاسيكو المرتقب مساء الأحد.",
+          "title": "برشلونة - ريال مدريد: جوان لابورتا يعلن القطيعة قبل الكلاسيكو",
+          "summary": "أعلن رئيس نادي برشلونة جوان لابورتا قطع العلاقات المؤسسية تماما مع غريمه ريال مدريد قبل موقعة الكلاسيكو المقررة مساء الأحد.",
           "body": [
-            "وقال رئيس النادي الكتالوني قبل المواجهة المقررة في الساعة التاسعة مساء إن علاقات الناديين لم تعد موجودة وباتت في مرحلة مواجهة مباشرة. وانتقد لابورتا سياسة التعاقدات لدى الغريم، مشيراً إلى الصعوبات الرياضية التي يواجهها النادي الملكي منذ قدوم كيليان مبابي في صيف 2024."
+            "قبل ساعات قليلة من قمة الأحد، قرر رئيس النادي الكتالوني إنهاء كل الروابط الرسمية مع الفريق المدريدي. قرار يعكس وصول الخلافات بين عملاقي الكرة الإسبانية إلى طريق مسدود قبل مواجهتهما المباشرة."
           ],
           "format": "brief",
           "needs_translation": false,
@@ -606,7 +834,12 @@
           "url": "https://www.lefigaro.fr/sports/football/espagne/liga-plus-d-un-coq-dans-un-meme-poulailler-ca-ne-peut-pas-fonctionner-joan-laporta-tacle-l-integration-de-kylian-mbappe-au-real-madrid-20261020"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss"
+      }
     },
     {
       "id": "9f52180c1ccc",
@@ -614,27 +847,44 @@
       "summary": "Erik ten Hag (Haaksbergen, 1970) ha vuelto a hablar de su etapa en el Manchester United dejando varias declaraciones relevantes, entre ellas algunas sobre Frenkie de Jong .",
       "i18n": {
         "es": {
-          "title": "Ten Hag se confiesa sobre el frustrado fichaje de Frenkie de Jong",
-          "summary": "Erik ten Hag (Haaksbergen, 1970) ha vuelto a hablar de su etapa en el Manchester United dejando varias declaraciones relevantes, entre ellas algunas sobre Frenkie de Jong .",
-          "needs_translation": false
+          "title": "Ten Hag desvela cómo intentó fichar a Frenkie de Jong para el Manchester United",
+          "summary": "Erik ten Hag reconoció que Frenkie de Jong era su prioridad absoluta para liderar la medular del Manchester United en 2022.",
+          "body": [
+            "En una entrevista concedida a The Athletic, el técnico neerlandés explicó que organizó reuniones junto a los directivos Richard Arnold y John Murtough para persuadir al futbolista del FC Barcelona. Ten Hag, quien ya lo había dirigido en el Ajax, consideraba al mediocentro una pieza indispensable para edificar su proyecto en Old Trafford, aunque las negociaciones terminaron sin éxito."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Ten Hag confesses about the frustrated signing of Frenkie de Jong",
-          "summary": "Erik ten Hag (Haaksbergen, 1970) has returned to talk about his time at Manchester United, leaving several relevant statements, including some about Frenkie de Jong .",
+          "title": "Ten Hag reveals how he tried to sign Frenkie de Jong for Manchester United",
+          "summary": "Erik ten Hag admitted that Frenkie de Jong was his absolute priority to run Manchester United's midfield in 2022.",
+          "body": [
+            "In an interview with The Athletic, the Dutch manager explained how he set up meetings alongside directors Richard Arnold and John Murtough to convince the FC Barcelona midfielder. Ten Hag, who had already coached him at Ajax, considered the playmaker an essential cornerstone for his long-term rebuild at Old Trafford, though talks ultimately failed."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Ten Hag avoue le transfert frustré de Frenkie de Jong",
-          "summary": "Erik ten Hag (Haaksbergen, 1970) a de nouveau parlé de son passage à Manchester United en laissant plusieurs déclarations pertinentes, dont certaines sur Frenkie de Jong .",
+          "title": "Ten Hag raconte comment il a tenté d'attirer Frenkie de Jong à Manchester United",
+          "summary": "Erik ten Hag a reconnu que Frenkie de Jong constituait sa priorité absolue pour prendre les commandes de l'entrejeu de Manchester United en 2022.",
+          "body": [
+            "Dans un entretien accordé à The Athletic, le technicien néerlandais a expliqué avoir organisé des réunions aux côtés des dirigeants Richard Arnold et John Murtough afin de convaincre le milieu du FC Barcelona. Ten Hag, qui l'avait déjà dirigé à l'Ajax, voyait en lui la pièce maîtresse pour bâtir son projet à Old Trafford, mais les pourparlers n'ont jamais abouti."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "عشرة حجاج يعترفون بالتوقيع المحبط لفرينكي دي يونغ",
-          "summary": "عاد إريك تن هاغ (هاكسبرغن، 1970) للحديث عن وقته في مانشستر يونايتد، تاركًا العديد من التصريحات ذات الصلة، بما في ذلك بعض التصريحات عن فرنكي دي يونغ .",
+          "title": "تين هاغ يكشف كواليس محاولته ضم فرينكي دي يونغ إلى مانشستر يونايتد",
+          "summary": "اعترف إريك تين هاغ بأن فرينكي دي يونغ كان أولويته المطلقة لقيادة خط وسط مانشستر يونايتد في صيف 2022.",
+          "body": [
+            "وفي مقابلة مع ذي أثلتيك، كشف المدرب الهولندي أنه نظم اجتماعات مشتركة رفقة الإداريين ريتشارد أرنولد وجون مورتو لإقناع لاعب برشلونة بالانتقال. وكان تين هاغ، الذي أشرف عليه سابقاً في أياكس، يعتبر لاعب الوسط ركيزة لا غنى عنها لبناء مشروعه في أولد ترافورد، إلا أن المفاوضات لم تكلل بالنجاح."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/20261020/1004240967/ten-hag-confiesa-sobre-jong-haber-sido-importante-construir-equipo.html",
@@ -656,7 +906,12 @@
           "url": "https://www.mundodeportivo.com/futbol/20261020/1004240967/ten-hag-confiesa-sobre-jong-haber-sido-importante-construir-equipo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full"
+      }
     },
     {
       "id": "ac8c08a48da4",
@@ -712,7 +967,12 @@
           "url": "https://www.kicker.de/sabah-gegen-dortmund-2026-uefa-youth-league-5264935/spielbericht#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "40aff8337380",
@@ -720,27 +980,44 @@
       "summary": "Independientemente de que estemos inmersos en semana de Champion y de que haya un Real Madrid - RB Leipzig muy importante para los intereses del conjunto blanco, desde la televisión oficial del club continúan con su acoso y derribo contra el estamento arbitral español.",
       "i18n": {
         "es": {
-          "title": "Real Madrid TV: \"Los jugadores del Barça son los nuevos árbitros\"",
-          "summary": "Independientemente de que estemos inmersos en semana de Champion y de que haya un Real Madrid - RB Leipzig muy importante para los intereses del conjunto blanco, desde la televisión oficial del club continúan con su acoso y derribo contra el estamento arbitral español.",
-          "needs_translation": false
+          "title": "Real Madrid TV acusa al Barça de condicionar las decisiones del VAR",
+          "summary": "La televisión oficial blanca criticó con dureza las protestas azulgranas en Sevilla y aseguró que los futbolistas culés ejercen como nuevos colegiados.",
+          "body": [
+            "Durante la emisión previa a la jornada europea, el canal del club blanco cargó contra Ricardo de Burgos Bengoetxea por atender los reclamos de Pedri y Lamine Yamal en el Benito Villamarín. La tertulia denunció un doble rasero arbitral y caldeó el ambiente de cara al fin de semana, advirtiendo de que el equipo jugará contra diecisiete colegiados."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Real Madrid TV: \"Barça players are the new referees\"",
-          "summary": "Regardless of the fact that we are immersed in Champion week and that there is a Real Madrid - RB Leipzig very important for the interests of the white team, from the official television of the club they continue with their harassment and knockdown against the Spanish refereeing staff.",
+          "title": "Real Madrid TV accuses Barça of influencing VAR decisions",
+          "summary": "The official club channel launched a fierce attack on Barcelona's protests at Betis, claiming rival players are effectively acting as match referees.",
+          "body": [
+            "During its pre-Champions League broadcast, Real Madrid TV took aim at Ricardo de Burgos Bengoetxea for reviewing a handball after complaints from Pedri and Lamine Yamal. The panel slammed an officiating double standard, warning that Real Madrid will face seventeen referees this Sunday against Barcelona."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Real Madrid TV : « Les joueurs du Barça sont les nouveaux arbitres »",
-          "summary": "Indépendamment du fait que nous soyons immergés dans la semaine du Champion et qu'il y ait un Real Madrid - RB Leipzig très important pour les intérêts de l'équipe blanche, depuis la télévision officielle du club, ils continuent leur harcèlement et leur démolition contre l'establishment arbitral espagnol.",
+          "title": "Real Madrid TV accuse le Barça d'influencer le VAR",
+          "summary": "La chaîne officielle madrilène a fustigé les protestations catalanes contre Le Real Betis, affirmant que les joueurs du Barça se comportent désormais en arbitres.",
+          "body": [
+            "Lors de son émission d'avant-match européen, le média du club a ciblé Ricardo de Burgos Bengoetxea pour avoir cédé aux réclamations de Pedri et Lamine Yamal. Les consultants ont dénoncé un deux poids, deux mesures arbitral avant le week-end, affirmant que le Real Madrid affrontera dix-sept arbitres face à Barcelone."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "تلفزيون ريال مدريد: \"لاعبو برشلونة هم الحكام الجدد\"",
-          "summary": "بغض النظر عن حقيقة أننا منغمسون في أسبوع الأبطال وأن هناك ريال مدريد - آر بي لايبزيغ مهم جدا لمصالح الفريق الأبيض، من التلفزيون الرسمي للنادي يواصلون مضايقتهم وضربهم لفريق التحكيم الإسباني.",
+          "title": "قناة ريال مدريد تتهم برشلونة بالتحكم في قرارات تقنية الفيديو",
+          "summary": "شنت القناة الرسمية للنادي الملكي هجوماً حاداً على احتجاجات لاعبي برشلونة أمام بيتيس، معتبرة أن عناصر الفريق الكتالوني باتوا يتحكمون في قرارات التحكيم.",
+          "body": [
+            "وانتقدت القناة الحكم ريكاردو دي بورغوس بينغوتشيا لاستجابته لمطالب بيدري ولامين جمال بمراجعة تقنية الفيديو في ملعب بينيتو فيامارين. واعتبر برنامج القناة أن برشلونة يحظى بمعاملة تفضيلية، محذراً من أن ريال مدريد سيواجه الأحد المقبل سبعة عشر حكماً على أرض الملعب."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261020/1004240974/rmtv-jugadores-barca-son-nuevos-arbitros.html",
@@ -762,7 +1039,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261020/1004240974/rmtv-jugadores-barca-son-nuevos-arbitros.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full"
+      }
     },
     {
       "id": "646ac568899f",
@@ -868,7 +1150,12 @@
           "url": "https://www.mundodeportivo.com/futbol/betis/20261020/1004240968/parrott-apunta-titular-deossa-ruibal-opositan-puesto-cucho.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 3,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6c2d1ee13f35",
@@ -918,7 +1205,12 @@
           "url": "https://africatopsports.com/football-europe/ligue-des-champions-uefa-fenerbahce-slavia-prague-les-compos-probables/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "90b81c2adc0d",
@@ -968,7 +1260,12 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20261020/1004240945/decepciono-equipo-me-decepciono-mi-habiamos-planeado.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f3ac8764c4fe",
