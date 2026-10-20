@@ -59,7 +59,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/en-direct-multiplex-ligue-des-champions-barcola-et-liverpool-visent-la-passe-de-trois-manchester-city-doit-se-rattraper-apres-le-psg-20261020"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "1b806db8161c",
@@ -159,7 +164,12 @@
           "url": "https://www.lefigaro.fr/sports/football/live/ligue-des-champions/2026/2685411/paris-sg-barcelone"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "3d3dc97c448b",
@@ -215,7 +225,12 @@
           "url": "https://www.kicker.de/live-glatt-rot-atletico-jetzt-in-unterzahl-wirtz-trifft-als-joker-bittere-psg-pillen-1263110/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b66dd9ddcb6f",
@@ -279,27 +294,56 @@
       "summary": "Manchester United targeting Lewis Hall and Adrien Truffert, Real Madrid remain interested in Riccardo Calafiori, Liverpool and Arsenal both keen on Xavi Espart, plus more.",
       "i18n": {
         "en": {
-          "title": "Man Utd revisit deal for Hall - Wednesday gossip",
-          "summary": "Manchester United targeting Lewis Hall and Adrien Truffert, Real Madrid remain interested in Riccardo Calafiori, Liverpool and Arsenal both keen on Xavi Espart, plus more.",
-          "needs_translation": false
+          "title": "Man Utd plan defensive overhaul while Real Madrid monitor Calafiori",
+          "summary": "Manchester United are plotting a major summer defensive rebuild, targeting Newcastle's Lewis Hall while Lisandro Martinez prepares to leave Old Trafford.",
+          "body": [
+            "Real Madrid continue to track Arsenal defender Riccardo Calafiori, though the Premier League club will demand an extraordinary bid.",
+            "Liverpool and Arsenal are monitoring Barcelona prospect Xavi Espart, who is protected by an £84m release clause.",
+            "Newcastle are lining up a summer move for AC Milan centre-back Fikayo Tomori as he approaches free agency.",
+            "Arsenal have set their sights on Club Brugge forward Nicolo Tresoldi, with the 22-year-old valued at £42m for a January transfer."
+          ],
+          "format": "bullets",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Man Utd revisite l'accord pour Hall - ragots du mercredi",
-          "summary": "Manchester United ciblant Lewis Hall et Adrien Truffert, le Real Madrid reste intéressé par Riccardo Calafiori, Liverpool et Arsenal sont tous deux intéressés par Xavi Espart, et plus encore.",
+          "title": "Man Utd prépare sa refonte défensive, Real Madrid lorgne Calafiori",
+          "summary": "Manchester United planifie un grand chantier défensif estival en ciblant Lewis Hall, tandis que le défenseur Lisandro Martinez s'apprête à quitter Old Trafford.",
+          "body": [
+            "Real Madrid garde un œil sur le défenseur d'Arsenal Riccardo Calafiori, mais les Londoniens exigeront une offre colossale.",
+            "Liverpool et Arsenal surveillent le jeune joueur de Barcelona Xavi Espart, protégé par une clause libératoire supérieure à 84 millions de livres.",
+            "Newcastle prépare une offensive estivale pour attirer le défenseur d'AC Milan Fikayo Tomori, libre en fin de saison.",
+            "Arsenal vise pour le mois de janvier l'attaquant de Club Brugge Nicolo Tresoldi, estimé à 42 millions de livres."
+          ],
+          "format": "bullets",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Man Utd vuelve a visitar el acuerdo para el Salón - Chismes del miércoles",
-          "summary": "El Manchester United apunta a Lewis Hall y Adrien Truffert, el Real Madrid sigue interesado en Riccardo Calafiori, el Liverpool y el Arsenal, ambos interesados en Xavi Espart, y más.",
+          "title": "Man Utd planea una revolución defensiva y Real Madrid sigue a Calafiori",
+          "summary": "Manchester United diseña una profunda reestructuración defensiva estival con Lewis Hall en la mira, mientras Lisandro Martinez prepara su salida de Old Trafford.",
+          "body": [
+            "Real Madrid mantiene su interés por Riccardo Calafiori, aunque Arsenal exigirá una oferta extraordinaria para traspasar al italiano.",
+            "Liverpool y Arsenal siguen al joven talento de Barcelona Xavi Espart, blindado por una cláusula de rescisión superior a los 84 millones de libras.",
+            "Newcastle prepara una propuesta estival por el central de AC Milan Fikayo Tomori, que quedará libre a final de temporada.",
+            "Arsenal busca incorporar en enero al delantero de Club Brugge Nicolo Tresoldi, cotizado en 42 millones de libras."
+          ],
+          "format": "bullets",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "مانشستر يونايتد يعيد النظر في صفقة هول - ثرثرة الأربعاء",
-          "summary": "مانشستر يونايتد الذي يستهدف لويس هول وأدريان تروفيرت، لا يزال ريال مدريد مهتمًا بريكاردو كالافيوري وليفربول وأرسنال وكلاهما حريص على تشافي إسبارت، بالإضافة إلى المزيد.",
+          "title": "مانشستر يونايتد يخطط لثورة دفاعية وريال مدريد يراقب كالافيوري",
+          "summary": "يخطط مانشستر يونايتد لإعادة بناء دفاعه الصيف المقبل مستهدفاً لويس هول، في وقت يتأهب فيه المدافع ليساندرو مارتينيز للرحيل عن أولد ترافورد.",
+          "body": [
+            "يواصل ريال مدريد متابعة مدافع أرسنال ريكاردو كالافيوري، لكن النادي الإنجليزي لن يفرط فيه إلا مقابل عرض مالي ضخم.",
+            "يراقب ليفربول وأرسنال موهبة برشلونة الشابة تشافي إسبارت، المحمي بشرط جزائي يتجاوز 84 مليون جنيه إسترليني.",
+            "يجهز نيوكاسل تحركاً صيفياً لضم مدافع إيه سي ميلان فيكايو توموري عندما يصبح لاعباً حراً في الصيف.",
+            "يستهدف أرسنال التعاقد في يناير مع مهاجم كلوب بروج نيكولو تريسولدي، البالغ من العمر 22 عاماً والمقدر سعره بنحو 42 مليون جنيه إسترليني."
+          ],
+          "format": "bullets",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/ck62yq0rd0vvo?at_medium=RSS&at_campaign=rss",
@@ -321,7 +365,20 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/ck62yq0rd0vvo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 9.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-20T22:50:46+00:00"
+        }
+      }
     },
     {
       "id": "eba09ffa345a",
@@ -329,27 +386,44 @@
       "summary": "Le PSG a réussi à bloquer beaucoup d'actions du Barça dans son propre camp, mardi soir lors de la première mi-temps du choc de Ligue des champions. Comme sur le but de Désiré Doué, qui permet aux Parisiens de mener (1-0) à la pause.",
       "i18n": {
         "fr": {
-          "title": "15 récupérations dans le camp du Barça, un but : le très efficace pressing du PSG en première période",
-          "summary": "Le PSG a réussi à bloquer beaucoup d'actions du Barça dans son propre camp, mardi soir lors de la première mi-temps du choc de Ligue des champions. Comme sur le but de Désiré Doué, qui permet aux Parisiens de mener (1-0) à la pause.",
-          "needs_translation": false
+          "title": "Le pressing du PSG étouffe le Barça à la pause",
+          "summary": "Porté par un pressing étouffant, le Paris Saint-Germain mène 1-0 face à Barcelone à la pause grâce à un but de Désiré Doué.",
+          "body": [
+            "Les Parisiens ont asphyxié la relance catalane dès les premières minutes de ce choc de Ligue des champions. Ce harcèlement haut a permis de récupérer quinze ballons dans le camp adverse durant le premier acte, dont celui ayant mené à l'ouverture du score."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "15 recoveries in the Barça camp, one goal: the very effective pressing of PSG in the first period",
-          "summary": "PSG managed to block a lot of Barça's actions in their own camp on Tuesday night during the first half of the Champions League clash. As on the goal of Désiré Doué, which allows the Parisians to lead (1-0) at the break.",
+          "title": "PSG's relentless press rattles Barça at the break",
+          "summary": "Driven by an intense high press, Paris Saint-Germain lead 1-0 against Barcelona at half-time courtesy of a Désiré Doué strike.",
+          "body": [
+            "The Parisians disrupted the Catalan side's build-up play throughout the opening period of this Champions League clash. That pressure yielded fifteen recoveries in the opposition half, directly triggering the sequence for Doué's opener."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "15 recuperaciones en el campo del Barça, un objetivo: la muy eficaz presión del PSG en el primer tiempo",
-          "summary": "El PSG logró bloquear muchas de las acciones del Barça en su propio campo, el martes por la noche durante la primera mitad del choque de la Liga de Campeones. Como en el gol de Désiré Doué, que permite a los parisinos llevar (1-0) al descanso.",
+          "title": "La asfixiante presión del PSG ahoga al Barça al descanso",
+          "summary": "Impulsado por una asfixiante presión alta, el Paris Saint-Germain vence 1-0 al Barcelona al descanso gracias a un gol de Désiré Doué.",
+          "body": [
+            "El conjunto parisino neutralizó la salida de balón catalana desde el inicio de este choque de Champions. Ese acoso en bloque alto permitió recuperar quince balones en campo rival durante la primera mitad, incluido el que propició el tanto de Doué."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "15 حالة شفاء في مخيم برشلونة، هدف واحد: الضغط الفعال للغاية لـ PSG في الفترة الأولى",
-          "summary": "تمكن باريس سان جيرمان من منع الكثير من تصرفات برشلونة في معسكره ليلة الثلاثاء خلال الشوط الأول من اشتباك دوري أبطال أوروبا. كما هو الحال في هدف ديزيريه دوي، الذي يسمح للباريسيين بقيادة (1-0) في الاستراحة.",
+          "title": "ضغط باريس سان جيرمان الخانق يربك برشلونة في الشوط الأول",
+          "summary": "بفضل ضغط هجومي شرس، تقدم باريس سان جيرمان بهدف دون رد أمام برشلونة في استراحة الشوطين بتوقيع ديزيريه دويه.",
+          "body": [
+            "شل الباريسيون محاولات بناء اللعب لدى الفريق الكتالوني منذ انطلاق هذه القمة في دوري أبطال أوروبا. وأسفر هذا النهج عن استرجاع خمس عشرة كرة في مناطق المنافس خلال النصف الأول، قادت إحداها إلى هدف التقدم."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/15-recuperations-dans-le-camp-du-barca-un-but-le-tres-efficace-pressing-du-psg-en-premiere-periode/1737344#at_medium=RSS_feeds",
@@ -371,7 +445,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/15-recuperations-dans-le-camp-du-barca-un-but-le-tres-efficace-pressing-du-psg-en-premiere-periode/1737344#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-20T22:50:51+00:00"
+        }
+      }
     },
     {
       "id": "570be2e56be8",
@@ -379,27 +466,44 @@
       "summary": "L’AEK Athens retourne aux vestiaires avec 2 buts de retard, face à Manchester City.",
       "i18n": {
         "fr": {
-          "title": "Ligue des champions UEFA : Anderson et Foden lancent la soirée de Manchester City",
-          "summary": "L’AEK Athens retourne aux vestiaires avec 2 buts de retard, face à Manchester City.",
-          "needs_translation": false
+          "title": "Ligue des champions : City mène 2-0 à la pause face à l'AEK Athènes",
+          "summary": "Manchester City a regagné les vestiaires avec deux buts d'avance face à l'AEK Athènes lors de cette rencontre de Ligue des champions.",
+          "body": [
+            "Anderson et Foden ont lancé les débats pour le club mancunien, contraignant l'équipe grecque à courir après le score en seconde période."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "UEFA Champions League: Anderson and Foden kick off Manchester City night",
-          "summary": "AEK Athens returns to the locker room 2 goals behind Manchester City.",
+          "title": "Champions League: Man City lead AEK Athens by two at the break",
+          "summary": "Manchester City opened up a two-goal cushion against AEK Athens before the interval in their Champions League clash.",
+          "body": [
+            "Anderson and Foden put the English side firmly on track during the first half, leaving the Greek visitors with two goals to pull back."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Liga de Campeones de la UEFA: Anderson y Foden lanzan la noche del Manchester City",
-          "summary": "El AEK Athens vuelve a los vestuarios con 2 goles de retraso, frente al Manchester City.",
+          "title": "Champions League: El City manda 2-0 al descanso ante el AEK Atenas",
+          "summary": "El Manchester City se marchó al descanso con dos tantos de ventaja frente al AEK Atenas en la Champions League.",
+          "body": [
+            "Anderson y Foden encarrilaron el choque para los locales, obligando al cuadro heleno a buscar una remontada de dos goles en la segunda mitad."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري أبطال أوروبا: أندرسون وفودين ينطلقان ليلة مانشستر سيتي",
-          "summary": "AEK أثينا تعود إلى غرفة خلع الملابس بهدفين خلف مانشستر سيتي.",
+          "title": "دوري أبطال أوروبا: مانشستر سيتي يتقدم بهدفين على أيك أثينا",
+          "summary": "أنهى مانشستر سيتي الشوط الأول متقدماً بفارق هدفين أمام أيك أثينا في مواجهة دوري أبطال أوروبا.",
+          "body": [
+            "ومنح أندرسون وفودين الأفضلية للنادي الإنجليزي قبل الاستراحة، ليدخل لاعبو الفريق اليوناني غرف تبديل الملابس متأخرين بهدفين."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/football-europe/ligue-des-champions-uefa/ligue-des-champions-uefa-manchester-city-mene-malgre-un-mauvais-debut-de-match-mi-temps/",
@@ -427,7 +531,20 @@
           "url": "https://africatopsports.com/football-europe/ligue-des-champions-uefa/ligue-des-champions-uefa-anderson-et-foden-lancent-la-soiree-de-manchester-city/"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-20T22:50:55+00:00"
+        }
+      }
     },
     {
       "id": "6d855d194922",
@@ -483,7 +600,12 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-anguissa-titulaire-pour-naples-bodo-glimt-les-compositions-officielles/"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6b6ed54dbe10",
@@ -491,27 +613,44 @@
       "summary": "Doue abrió el marcador para el conjunto parisino después de una pelota perdida por la joya española. Barcelona reaccionó inmediatamente, pero Fermín López desperdició una ocasión clarísima para igualar el encuentro.",
       "i18n": {
         "es": {
-          "title": "El PSG golpeó primero por un error de Lamine Yamal",
-          "summary": "Doue abrió el marcador para el conjunto parisino después de una pelota perdida por la joya española. Barcelona reaccionó inmediatamente, pero Fermín López desperdició una ocasión clarísima para igualar el encuentro.",
-          "needs_translation": false
+          "title": "El PSG castiga un error de Lamine Yamal y se adelanta al Barcelona",
+          "summary": "Doue adelantó al PSG tras aprovechar una pérdida de balón de Lamine Yamal en el duelo frente al Barcelona.",
+          "body": [
+            "La reacción azulgrana fue inmediata tras el golpe, pero Fermín López desperdició una ocasión inmejorable para devolver las tablas al marcador."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "PSG hit first due to an error by Lamine Yamal",
-          "summary": "Doue opened the scoreboard for the Parisian outfit after a lost ball for the Spanish jewel. Barcelona reacted immediately, but Fermín López wasted a very clear opportunity to match the match.",
+          "title": "PSG punish Lamine Yamal error to take early lead against Barcelona",
+          "summary": "Doue opened the scoring for PSG after capitalizing on a costly turnover by Lamine Yamal against Barcelona.",
+          "body": [
+            "The reaction came instantly, but Fermín López squandered a golden chance to bring the sides level."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Le PSG a frappé le premier à cause d'une erreur de Lamine Yamal",
-          "summary": "Doue a ouvert le score pour l'équipe parisienne après une balle perdue par le bijou espagnol. Barcelone réagit immédiatement, mais Fermín López gâcha une occasion très claire pour égaler la rencontre.",
+          "title": "Le PSG punit une erreur de Lamine Yamal et marque face au Barcelona",
+          "summary": "Doue a ouvert le score pour le PSG en profitant d'une perte de balle de Lamine Yamal face au Barcelona.",
+          "body": [
+            "La réplique catalane ne s'est pas fait attendre, mais Fermín López a manqué une occasion nette d'égaliser dans la foulée."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ضرب PSG أولاً بسبب خطأ من قبل Lamine Yamal",
-          "summary": "فتح دو لوحة النتائج للزي الباريسي بعد خسارة الكرة للجوهرة الإسبانية. رد برشلونة على الفور، لكن فيرمين لوبيز أهدر فرصة واضحة جدا لمطابقة المباراة.",
+          "title": "باريس سان جيرمان يستغل خطأ لامين يامال ويتقدم على برشلونة",
+          "summary": "افتتح دوي التسجيل لصالح باريس سان جيرمان مستغلاً فقدان لامين يامال للكرة في المواجهة ضد برشلونة.",
+          "body": [
+            "جاء رد الفريق الكتالوني سريعاً عقب الهدف، إلا أن فيرمين لوبيز أهدر فرصة محققة لا تعوض لإعادة المباراة إلى نقطة البداية."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/champions/psg-barcelona-lamineyamal-desiredoue-ferminlopez_0_iqD0mW17hm.html",
@@ -533,7 +672,20 @@
           "url": "https://www.ole.com.ar/futbol-internacional/champions/psg-barcelona-lamineyamal-desiredoue-ferminlopez_0_iqD0mW17hm.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-20T22:50:58+00:00"
+        }
+      }
     },
     {
       "id": "335f8ac6cfca",
@@ -541,27 +693,44 @@
       "summary": "Buteur quelques minutes avant la mi-temps, Désiré Doué a marqué l'unique réalisation de la première période de PSG-FC Barcelone, mardi soir en Ligue des champions. Servi par Joao Neves, il a sanctionné un ballon égaré par Lamine Yamal.",
       "i18n": {
         "fr": {
-          "title": "L'ouverture du score de Désiré Doué sur une perte de balle de Lamine Yamal lors de PSG-Barcelone en vidéo",
-          "summary": "Buteur quelques minutes avant la mi-temps, Désiré Doué a marqué l'unique réalisation de la première période de PSG-FC Barcelone, mardi soir en Ligue des champions. Servi par Joao Neves, il a sanctionné un ballon égaré par Lamine Yamal.",
-          "needs_translation": false
+          "title": "Désiré Doué ouvre le score pour le PSG face à Barcelone",
+          "summary": "Désiré Doué a donné l'avantage au PSG face au FC Barcelone juste avant la mi-temps, mardi soir en Ligue des champions.",
+          "body": [
+            "Cette unique réalisation de la première période est née d'un ballon égaré par Lamine Yamal. Servi dans la foulée par João Neves, l'attaquant parisien a immédiatement sanctionné l'erreur adverse."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "The opening of Désiré Doué's score on a loss of ball by Lamine Yamal during PSG-Barcelona on video",
-          "summary": "A few minutes before halftime, Désiré Doué scored the only goal of the first period of PSG-FC Barcelona, Tuesday night in the Champions League. Served by Joao Neves, he sanctioned a strayed balloon by Lamine Yamal.",
+          "title": "Désiré Doué opens the scoring for PSG against FC Barcelona",
+          "summary": "Désiré Doué put PSG ahead against FC Barcelona right before half-time on Tuesday night in Champions League action.",
+          "body": [
+            "The opening half's solitary goal stemmed straight from a giveaway by Lamine Yamal. Set up immediately by João Neves, the Parisian forward punished the mistake to break the deadlock."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "La apertura del marcador de Désiré Doué sobre una pérdida de pelota de Lamine Yamal durante el PSG-Barcelona en vídeo",
-          "summary": "Goleador unos minutos antes del descanso, Désiré Doué marcó el único gol de la primera parte del PSG-FC Barcelona, el martes por la noche en la Liga de Campeones. Servido por Joao Neves, sancionó un globo perdido por Lamine Yamal.",
+          "title": "Désiré Doué abre el marcador para el PSG ante el FC Barcelona",
+          "summary": "Désiré Doué adelantó al PSG frente al FC Barcelona al borde del descanso, este martes por la noche en la Champions League.",
+          "body": [
+            "El único tanto del primer acto llegó tras una pérdida de Lamine Yamal. Asistido al instante por João Neves, el atacante parisino no perdonó y castigó el error rival."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "افتتاح درجة ديزيريه دوي على خسارة الكرة من قبل لامين يامال خلال باريس سان جيرمان- برشلونة على الفيديو",
-          "summary": "قبل بضع دقائق من نهاية الشوط الأول، سجل ديزيريه دوي الهدف الوحيد في الفترة الأولى من نادي برشلونة، ليلة الثلاثاء في دوري أبطال أوروبا. خدم من قبل جواو نيفيس، وعاقب بالون ضال من قبل لامين يامال.",
+          "title": "ديزيري دوي يفتتح التسجيل لباريس سان جيرمان أمام برشلونة",
+          "summary": "منح ديزيري دوي التقدم لباريس سان جيرمان أمام برشلونة قبيل نهاية الشوط الأول، مساء الثلاثاء، في دوري أبطال أوروبا.",
+          "body": [
+            "وجاء الهدف الوحيد في الشوط الأول إثر كرة فقدها لامين يامال. ومرر جواو نيفيز الكرة سريعا إلى المهاجم الباريسي الذي عاقب المنافس على خطئه مباشرة."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/L-ouverture-du-score-de-desire-doue-sur-une-perte-de-balle-de-lamine-yamal-lors-de-psg-barcelone-en-video/1737342#at_medium=RSS_feeds",
@@ -583,7 +752,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/L-ouverture-du-score-de-desire-doue-sur-une-perte-de-balle-de-lamine-yamal-lors-de-psg-barcelone-en-video/1737342#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-20T22:51:03+00:00"
+        }
+      }
     },
     {
       "id": "1445fa4f2f2c",
@@ -591,27 +773,44 @@
       "summary": "L’AS Roma mène 2-0 face au Slovan Bratislava à la mi-temps de leur rencontre comptant pour la troisième journée de la phase de ligue de la Ligue des champions.",
       "i18n": {
         "fr": {
-          "title": "Ligue des champions UEFA : la Roma mène 2-0 face au Slovan de Yaya Touré",
-          "summary": "L’AS Roma mène 2-0 face au Slovan Bratislava à la mi-temps de leur rencontre comptant pour la troisième journée de la phase de ligue de la Ligue des champions.",
-          "needs_translation": false
+          "title": "Ligue des champions : l'AS Roma mène 2-0 à la pause face au Slovan",
+          "summary": "L'AS Roma mène 2-0 face au Slovan Bratislava à la mi-temps de leur match comptant pour la Ligue des champions.",
+          "body": [
+            "Pour le compte de la troisième journée de la phase de ligue, le club italien a fait la différence dès les quarante-cinq premières minutes. Les Romains regagnent le vestiaire avec deux buts d'avance face au Slovan de Yaya Touré."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "UEFA Champions League: Roma leads 2-0 against Yaya Touré's Slovan",
-          "summary": "AS Roma leads 2-0 against Slovan Bratislava at half-time of their match counting for the third day of the Champions League phase.",
+          "title": "Champions League: AS Roma lead 2-0 at half-time against Slovan",
+          "summary": "AS Roma hold a 2-0 lead over Slovan Bratislava at half-time in their Champions League clash.",
+          "body": [
+            "Playing in the third round of the league phase, the Italian side took control before the interval. Roma head into the dressing room with a two-goal advantage over Yaya Touré's Slovan."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Liga de Campeones de la UEFA: Roma vence 2-0 al Slovan de Yaya Touré",
-          "summary": "La AS Roma lidera 2-0 ante el Slovan Bratislava en el descanso de su encuentro correspondiente a la tercera jornada de la fase de liga de la Liga de Campeones.",
+          "title": "Champions League: la Roma manda 2-0 al descanso ante el Slovan",
+          "summary": "La AS Roma se marcha 2-0 arriba al descanso frente al Slovan Bratislava en la Champions League.",
+          "body": [
+            "En la tercera jornada de la fase de liga, el cuadro italiano tomó el mando durante el primer tiempo. Los romanos enfilan los vestuarios con dos goles de ventaja ante el Slovan de Yaya Touré."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري أبطال أوروبا: روما يتقدم 2-0 ضد سلوفان يايا توري",
-          "summary": "يتقدم روما 2-0 ضد سلوفان براتيسلافا في الشوط الأول من مباراته لليوم الثالث من مرحلة دوري أبطال أوروبا.",
+          "title": "دوري أبطال أوروبا: روما يتقدم 2-0 على سلوفان براتيسلافا في الشوط الأول",
+          "summary": "أنهى روما الإيطالي الشوط الأول متقدماً بنتيجة 2-0 أمام سلوفان براتيسلافا في الجولة الثالثة من دوري أبطال أوروبا.",
+          "body": [
+            "فرض نادي العاصمة الإيطالية سيطرته خلال النصف الأول من اللقاء لحساب الجولة الثالثة من مرحلة الدوري. ويدخل ذئاب روما الاستراحة بأسبقية هدفين دون مقابل أمام فريق سلوفان المرتبط بيايا توريه."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/football/ligue-des-champions-uefa-la-roma-mene-2-0-face-au-slovan-de-yaya-toure/",
@@ -633,7 +832,20 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-uefa-la-roma-mene-2-0-face-au-slovan-de-yaya-toure/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 4,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-20T22:51:08+00:00"
+        }
+      }
     },
     {
       "id": "ac9bdca28368",
@@ -641,52 +853,52 @@
       "summary": "Le Paris Saint-Germain accueille le FC Barcelone ce mercredi pour le choc d'une troisième journée européenne où Liverpool et Manchester City jouent gros.",
       "i18n": {
         "fr": {
-          "title": "Ligue des champions : choc au sommet entre le PSG et le Barça",
-          "summary": "Le Paris Saint-Germain accueille le FC Barcelone ce mercredi pour le choc d'une troisième journée européenne où Liverpool et Manchester City jouent gros.",
+          "title": "Ligue des champions : PSG - Barça en vedette de la 3e journée",
+          "summary": "Le Paris Saint-Germain et le FC Barcelone s'affrontent mercredi à Paris lors d'un choc au sommet entre deux équipes victorieuses de leurs deux premiers matches.",
           "body": [
-            "PSG - FC Barcelone : À Paris, deux attaques en pleine forme s'affrontent après deux cartons initiaux, avec les retrouvailles de Luis Enrique et Ousmane Dembélé face aux Catalans de Lamine Yamal.",
-            "Liverpool - Villarreal : Forts de deux victoires initiales, les Reds comptent 15 succès sur leurs 16 derniers matches à domicile en poules face à un rival qui ne les a jamais battus.",
-            "Manchester City - AEK Athènes : Tombés à Paris, les Citizens s'en remettent à Erling Haaland, fort de 61 buts en 60 rencontres européennes, pour se reprendre.",
-            "Dortmund et Atlético de Madrid : Surprise par Bodø/Glimt, l'équipe allemande se déplace chez Sabah, tandis que les Madrilènes défient Stuttgart après leur revers inaugural à Anfield."
+            "Paris Saint-Germain - FC Barcelone : Les Parisiens sortent de succès contre Slovan Bratislava et Manchester City, tandis que les Catalans ont dominé Feyenoord et Galatasaray. Retrouvailles pour Luis Enrique et Ousmane Dembélé, face à un Lamine Yamal décisif cinq fois lors de ses deux dernières sorties.",
+            "Liverpool - Villarreal : Forts de leurs victoires contre l'Atlético de Madrid et le LASK, les Reds visent la passe de trois à Anfield, où ils comptent 15 victoires sur leurs 16 derniers matches à ce stade face à un club qui ne les a jamais battus en C1.",
+            "Manchester City - AEK Athènes : Battus par le PSG, les Mancuniens doivent réagir à domicile. Ils compteront sur Erling Haaland, auteur de 61 buts en 60 rencontres dans la compétition.",
+            "Sabah - Borussia Dortmund : Surpris à domicile par Bodø/Glimt lors de la précédente journée, le club allemand dispute un déplacement impératif pour se relancer."
           ],
           "format": "bullets",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "en": {
-          "title": "Champions League: Blockbuster clash between PSG and Barcelona",
-          "summary": "Paris Saint-Germain host FC Barcelona this Wednesday in the standout tie of matchday three, with Liverpool and Manchester City also facing high stakes.",
+          "title": "Champions League: PSG host Barcelona in Matchday 3 blockbuster",
+          "summary": "Paris Saint-Germain and FC Barcelona clash in Paris on Wednesday as two heavyweights put their perfect two-match winning records on the line.",
           "body": [
-            "PSG vs FC Barcelona: Two sides boasting flawless records collide in Paris, featuring Luis Enrique and Ousmane Dembélé up against their former club and an in-form Lamine Yamal.",
-            "Liverpool vs Villarreal: Boasting two opening wins, the Reds have won 15 of their last 16 home group fixtures and face an opponent that has never beaten them.",
-            "Manchester City vs AEK Athens: Beaten in Paris, the Citizens rely on Erling Haaland, boasting 61 goals in 60 European games, to return to winning ways.",
-            "Dortmund and Atlético de Madrid: Stunned by Bodø/Glimt, the German side travel to Sabah, while Atlético visit Stuttgart looking to rebound from their loss at Anfield."
+            "Paris Saint-Germain - FC Barcelona: The Parisians enter after wins over Slovan Bratislava and Manchester City, while Barça swept past Feyenoord and Galatasaray. Luis Enrique and Ousmane Dembélé face their former club, up against in-form Lamine Yamal.",
+            "Liverpool - Villarreal: Following wins over Atlético de Madrid and LASK, the Reds target three straight at Anfield, where they boast 15 victories in their last 16 home group-stage fixtures against an opponent that has never beaten them in the competition.",
+            "Manchester City - AEK Athens: Downed by PSG last time out, the English champions seek a home response behind Erling Haaland, who boasts a historic tally of 61 goals in 60 Champions League matches.",
+            "Sabah - Borussia Dortmund: Stunned by Bodø/Glimt on Matchday 2, the German side travel east needing a swift rebound to steady their campaign."
           ],
           "format": "bullets",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "es": {
-          "title": "Champions League: Duelo en la cumbre entre el PSG y el Barça",
-          "summary": "El Paris Saint-Germain recibe al FC Barcelona este miércoles en el gran choque de la tercera jornada europea, donde Liverpool y Manchester City se juegan mucho.",
+          "title": "Champions League: PSG - Barça, duelo estelar de la 3.ª jornada",
+          "summary": "Paris Saint-Germain y FC Barcelona se miden este miércoles en París en un choque en la cumbre entre dos equipos con pleno de victorias.",
           "body": [
-            "PSG - FC Barcelona: Dos equipos con pleno de triunfos tras sendas goleadas se miden en París, con el reencuentro de Luis Enrique y Ousmane Dembélé ante el equipo de Lamine Yamal.",
-            "Liverpool - Villarreal: Con dos victorias en dos partidos, los Reds acumulan 15 triunfos en sus últimos 16 duelos de fase regular en Anfield ante un rival que jamás los ha vencido.",
-            "Manchester City - AEK Atenas: Tras caer en París, los Citizens confían en Erling Haaland, autor de 61 goles en 60 duelos de Champions, para reaccionar.",
-            "Dortmund y Atlético de Madrid: Tras la sorpresa ante el Bodø/Glimt, el cuadro alemán visita al Sabah, mientras el Atlético desafía al Stuttgart en busca de puntos."
+            "Paris Saint-Germain - FC Barcelona: El conjunto parisino llega tras doblegar a Slovan Bratislava y Manchester City, mientras que los azulgranas superaron con holgura a Feyenoord y Galatasaray. Cita especial para Luis Enrique y Ousmane Dembélé ante un Lamine Yamal en racha.",
+            "Liverpool - Villarreal: Con triunfos ante Atlético de Madrid y LASK, los Reds buscan el pleno en Anfield, fortín donde acumulan 15 victorias en sus últimos 16 duelos en esta fase y ante un rival que nunca les ha ganado en la competición.",
+            "Manchester City - AEK Atenas: Tras caer en París, los de Mánchester quieren rehacerse al amparo de Erling Haaland, quien suma un registro histórico de 61 goles en 60 partidos de Champions League.",
+            "Sabah - Borussia Dortmund: Sorprendido por Bodø/Glimt en la jornada anterior, el conjunto germano afronta una salida obligada a sumar de tres para no complicarse."
           ],
           "format": "bullets",
           "needs_translation": false,
           "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري أبطال أوروبا: قمة نارية بين باريس سان جيرمان وبرشلونة",
-          "summary": "يستضيف باريس سان جيرمان نادي برشلونة هذا الأربعاء في قمة الجولة الثالثة من دوري أبطال أوروبا، في ليلة يدخلها ليفربول ومانشستر سيتي تحت ضغط كبير.",
+          "title": "دوري أبطال أوروبا: قمة باريس سان جيرمان وبرشلونة تتصدر الجولة الثالثة",
+          "summary": "يلتقي باريس سان جيرمان مع برشلونة الأربعاء في باريس ضمن قمة مرتقبة تجمع فريقين حقق كل منهما انتصارين في أول جولتين من المسابقة.",
           "body": [
-            "باريس سان جيرمان - برشلونة: قمة باريسية بين فريقين حققا انطلاقة هجومية كاسحة، تشهد مواجهة لويس إنريكي وعثمان ديمبيلي لناديهما السابق أمام تألق الشاب لامين يامال.",
-            "ليفربول - فياريال: يبحث الريدز في أنفيلد عن انتصار ثالث توالياً، معولين على سجل يشمل 15 فوزاً في آخر 16 مباراة بملعبهم أمام خصم لم يهزمهم قط.",
-            "مانشستر سيتي - أيك أثينا: بعد السقوط في باريس، يعول بطل إنجلترا على إرلينغ هالاند، صاحب 61 هدفاً في 60 مباراة قارية، لتصحيح المسار.",
-            "دورتموند وأتلتيكو مدريد: بعد سقوطه المفاجئ أمام بودو/غليمت، يحل الفريق الألماني ضيفاً على صباح، بينما يحل أتلتيكو مدريد ضيفاً ثقيلاً على شتوتغارت."
+            "باريس سان جيرمان - برشلونة: حصد النادي الباريسي العلامة الكاملة أمام سلوفان براتيسلافا ومانشستر سيتي، بينما اكتسح برشلونة كلاً من فينورد وغلطة سراي. تشهد المواجهة لقاءً خاصاً للويس إنريكي وعثمان ديمبيلي أمام ناديهما السابق، في مواجهة لامين يامال المتألق في الآونة الأخيرة.",
+            "ليفربول - فياريال: بعد فوزه على أتلتيكو مدريد ولاسك، يستهدف ليفربول مواصلة مسيرته في أنفيلد، حيث حقق 15 انتصاراً في آخر 16 مباراة له على أرضه في هذه المرحلة، أمام منافس لم يسبق له الفوز عليه في البطولة.",
+            "مانشستر سيتي - أيك أثينا: يسعى الفريق الإنجليزي لتدارك سقوطه أمام باريس سان جيرمان، معولاً على مهاجمه إيرلينغ هالاند صاحب الإنجاز التاريخي برصيد 61 هدفاً في 60 مباراة بالمسابقة القارية.",
+            "صباح - بوروسيا دورتموند: يحل الفريق الألماني ضيفاً على صباح بحثاً عن التعويض وتصحيح المسار، عقب هزيمته المفاجئة أمام بودو/غليمت في الجولة الثانية."
           ],
           "format": "bullets",
           "needs_translation": false,
@@ -718,7 +930,12 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-uefa-nul-spectaculaire-entre-liverpool-et-villarreal-a-la-pause/"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": true,
+        "quality": 4,
+        "source_read": "full"
+      }
     },
     {
       "id": "a3ef4a839f80",
@@ -726,27 +943,48 @@
       "summary": "Le Paris Saint-Germain mène 1-0 face au FC Barcelone à la mi-temps de leur confrontation au Parc des Princes, ce mardi 20 octobre 2026, dans le cadre de la 3e Lire l'article The post Ligue des champions UEFA : le PSG vire en tête à la pause face au Barça grâce à Désiré Doué…",
       "i18n": {
         "fr": {
-          "title": "Ligue des champions UEFA : le PSG vire en tête à la pause face au Barça grâce à Désiré Doué",
-          "summary": "Le Paris Saint-Germain mène 1-0 face au FC Barcelone à la mi-temps de leur confrontation au Parc des Princes, ce mardi 20 octobre 2026, dans le cadre de la 3e Lire l'article The post Ligue des champions UEFA : le PSG vire en tête à la pause face au Barça grâce à Désiré Doué…",
-          "needs_translation": false
+          "title": "Ligue des champions : le PSG devant le Barça à la pause grâce à Désiré Doué",
+          "summary": "Désiré Doué a permis au Paris Saint-Germain de mener 1-0 face au FC Barcelone à la pause sur la pelouse du Parc des Princes.",
+          "body": [
+            "Dans cette rencontre comptant pour la 3e journée de la compétition, les Parisiens regagnent les vestiaires avec un court avantage d'un but.",
+            "Le club de la capitale devra désormais préserver son avance en seconde période devant son public."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "UEFA Champions League: PSG takes the lead at the break against Barça thanks to Désiré Doué",
-          "summary": "Paris Saint-Germain leads 1-0 against FC Barcelona at half-time of their confrontation at the Parc des Princes, this Tuesday, October 20, 2026, as part of the 3rd Read the article The post UEFA Champions League: PSG takes the lead at the break against Barça thanks to Désiré Doué...",
+          "title": "Champions League: PSG lead Barça at the break thanks to Désiré Doué",
+          "summary": "Désiré Doué gave Paris Saint-Germain a 1-0 half-time lead against FC Barcelona during their matchday 3 clash at the Parc des Princes.",
+          "body": [
+            "The solitary strike leaves the French club ahead in this European fixture as both sides head down the tunnel.",
+            "The hosts will look to protect their slender advantage over the Catalan side throughout the second half."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Liga de Campeones de la UEFA: el PSG avanza al descanso frente al Barça gracias a Désiré Doué",
-          "summary": "El Paris Saint-Germain lidera 1-0 ante el FC Barcelona en el descanso de su enfrentamiento en el Parque de los Príncipes, este martes 20 de octubre de 2026, en el marco de la tercera lectura del artículo The post Liga de Campeones de la UEFA: el PSG avanza a la cabeza en el descanso frente al Barça gracias a Désiré Doué…",
+          "title": "Champions League: El PSG manda al descanso ante el Barça con gol de Désiré Doué",
+          "summary": "Désiré Doué adelantó al Paris Saint-Germain para llegar 1-0 al descanso frente al FC Barcelona en el Parc des Princes.",
+          "body": [
+            "En este duelo correspondiente a la 3.ª jornada de la competición europea, el conjunto parisino se marcha a vestuarios con una mínima renta.",
+            "Los locales intentarán defender esta ventaja durante el segundo tiempo ante sus aficionados."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري أبطال أوروبا UEFA: PSG يأخذ زمام المبادرة في الشوط الأول ضد برشلونة بفضل Désiré Doué",
-          "summary": "باريس سان جيرمان يتقدم 1-0 ضد نادي برشلونة في الشوط الأول من مواجهته في بارك دي برينس، يوم الثلاثاء 20 أكتوبر 2026، كجزء من الجزء الثالث اقرأ المقال التالي دوري أبطال أوروبا: باريس سان جيرمان يأخذ زمام المبادرة في الشوط الأول ضد برشلونة بفضل ديزيريه دويه...",
+          "title": "دوري أبطال أوروبا: باريس سان جيرمان يتقدم على برشلونة بهدف ديزيريه دويه",
+          "summary": "منح ديزيريه دويه فريقه باريس سان جيرمان التقدم بنتيجة 1-0 أمام برشلونة مع نهاية الشوط الأول في ملعب بارك دي برانس.",
+          "body": [
+            "وبهذا الهدف، أنهى الفريق الباريسي أول 45 دقيقة متقدما في مواجهة الجولة الثالثة من المسابقة القارية.",
+            "وسيسعى أصحاب الأرض للحفاظ على هذه الأسبقية خلال مجريات الشوط الثاني أمام جماهيرهم."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/football/ligue-des-champions-uefa-le-psg-vire-en-tete-a-la-pause-face-au-barca-grace-a-desire-doue/",
@@ -768,7 +1006,12 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-uefa-le-psg-vire-en-tete-a-la-pause-face-au-barca-grace-a-desire-doue/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "rss"
+      }
     },
     {
       "id": "4f22a587b080",
@@ -776,27 +1019,48 @@
       "summary": "Larges dominateurs, les champions d’Europe en titre ont ouvert le score grâce à Désiré Doué en première période contre les Catalans.",
       "i18n": {
         "fr": {
-          "title": "PSG-Barça : en vidéo, la frappe lumineuse de Doué qui offre l’avantage à Paris",
-          "summary": "Larges dominateurs, les champions d’Europe en titre ont ouvert le score grâce à Désiré Doué en première période contre les Catalans.",
-          "needs_translation": false
+          "title": "Le PSG fait plier le Barça dans un festival offensif au Parc",
+          "summary": "Le Paris Saint-Germain s'est imposé 4-2 contre le FC Barcelone au Parc des Princes au terme d'une fin de rencontre spectaculaire.",
+          "body": [
+            "Désiré Doué a d'abord récompensé la domination parisienne d'une frappe précise à la 37e minute, profitant d'une relance manquée de Lamine Yamal. Même si Esport a égalisé au retour des vestiaires, Lucas Hernandez a redonné l'avantage aux Parisiens d'un coup de tête à l'entame du dernier quart d'heure.",
+            "La fin de partie s'est alors emballée. Lamine Yamal a pensé relancer les Catalans en égalisant à la 79e minute, mais Vitinha puis Fabian Ruiz ont scellé le succès du club de la capitale en l'espace de quatre minutes."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "PSG-Barça: on video, the luminous strike of Doué which offers the advantage to Paris",
-          "summary": "Wide dominators, the defending European champions opened the scoring thanks to Désiré Doué in the first period against the Catalans.",
+          "title": "PSG down Barcelona in six-goal thriller at Parc des Princes",
+          "summary": "Paris Saint-Germain claimed a dramatic 4-2 victory over Barcelona at the Parc des Princes following a frantic, high-scoring finale.",
+          "body": [
+            "Désiré Doué rewarded early pressure with a clinical 37th-minute strike after pouncing on an errant clearance from Lamine Yamal. Although Esport leveled shortly after the restart, Lucas Hernandez restored the lead for the hosts with a header entering the final 15 minutes.",
+            "The contest then exploded into life. Lamine Yamal thought he had rescued Barcelona by making it 2-2 in the 79th minute, but Vitinha and Fabian Ruiz struck within four minutes to secure the win."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "PSG-Barça: en vídeo, el golpe luminoso de Doué que ofrece la ventaja a París",
-          "summary": "Grandes dominadores, los actuales campeones de Europa abrieron el marcador gracias a Désiré Doué en la primera parte contra los catalanes.",
+          "title": "El PSG tumba al Barça en un festival goleador en el Parque",
+          "summary": "El Paris Saint-Germain firmó un vibrante triunfo por 4-2 ante el FC Barcelona en el Parc des Princes tras un desenlace frenético.",
+          "body": [
+            "Désiré Doué adelantó a los locales en el minuto 37 con un remate certero tras castigar un mal despeje de Lamine Yamal. Aunque Esport igualó tras el descanso, Lucas Hernandez puso otra vez por delante a los parisinos con un cabezazo en el minuto 72.",
+            "El tramo final fue trepidante. Lamine Yamal firmó el 2-2 en el minuto 79, pero Vitinha y Fabian Ruiz sentenciaron el choque en apenas cuatro minutos."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "باريس سان جيرمان- بارسا: على الفيديو، إضراب مضيء من دوي الذي يوفر ميزة لباريس",
-          "summary": "على نطاق واسع، افتتح أبطال أوروبا المدافعون التسجيل بفضل ديزيريه دوي في الفترة الأولى ضد الكاتالونيين.",
+          "title": "باريس سان جيرمان يسقط برشلونة في مهرجان أهداف بحديقة الأمراء",
+          "summary": "حسم باريس سان جيرمان قمته أمام برشلونة بالفوز 4-2 على ملعب حديقة الأمراء بعد نهاية مجنونة حبست الأنفاس.",
+          "body": [
+            "افتتح ديزيريه دويه التسجيل في الدقيقة 37 بتسديدة متقنة مستغلاً هفوة في التشتيت من لامين يامال. ورغم أن إسبورت عادل النتيجة للضيوف مع بداية الشوط الثاني، أعاد لوكاس هيرنانديز التقدم لأصحاب الأرض برأسية في الدقيقة 72.",
+            "واشتعلت المواجهة في دقائقها الأخيرة، حيث أدرك لامين يامال التعادل لبرشلونة في الدقيقة 79، قبل أن يحسم فيتينيا ثم فابيان رويز الانتصار الباريسي بهدفين متتاليين في غضون أربع دقائق."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/psg-barca-en-video-la-frappe-lumineuse-de-doue-qui-offre-l-avantage-a-paris-20261020",
@@ -818,7 +1082,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/psg-barca-en-video-la-frappe-lumineuse-de-doue-qui-offre-l-avantage-a-paris-20261020"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full"
+      }
     },
     {
       "id": "ac490d059ce6",
@@ -886,7 +1155,12 @@
           "url": "https://africatopsports.com/football-europe/ligue-des-champions-uefa-les-compositions-officielles-du-match-stuttgart-vs-atletico-de-madrid/"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "a8f56a18dd57",
