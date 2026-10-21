@@ -59,7 +59,12 @@
           "url": "https://www.lefigaro.fr/sports/football/live/ligue-des-champions/2026/2685423/fc-bruges-lens"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "20068949f8af",
@@ -67,27 +72,48 @@
       "summary": "El ex capitán del CARP no se guardó nada y contó su vivencia durante lo sucedido con Micho en el segundo semestre de 2023.",
       "i18n": {
         "es": {
-          "title": "De Demichelis a Gallardo: la confesión de Enzo Pérez sobre su última etapa en River",
-          "summary": "El ex capitán del CARP no se guardó nada y contó su vivencia durante lo sucedido con Micho en el segundo semestre de 2023.",
-          "needs_translation": false
+          "title": "Enzo Pérez reveló detalles de su salida de River y su vuelta con Gallardo",
+          "summary": "Enzo Pérez rompió el silencio sobre su conflictiva salida de River Plate a fines de 2023 y admitió que sufrió junto a su familia.",
+          "body": [
+            "El mediocampista confesó en TyC Sports que padeció aquel final de ciclo marcado por el desgaste con Martín Demichelis y la filtración de charlas con la prensa. Pérez explicó que prefirió resolver las diferencias puertas adentro por respeto a la institución: «Hay cuestiones que me las guardé y me las voy a guardar. Más allá de todo eso, el club está por encima de todos».",
+            "Tras su paso por Estudiantes, una charla de tres horas con Marcelo Gallardo selló su vuelta a River Plate, guardada bajo siete llaves hasta la revisión médica. El mendocino también se refirió a la llegada del técnico a la selección de Ecuador, asegurando que no le sorprendió la decisión y reafirmando su gratitud eterna hacia él."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "From Demichelis to Gallardo: Enzo Pérez's confession about his last stage in River",
-          "summary": "The former CARP captain kept nothing to himself and told his story during what happened with Micho in the second half of 2023.",
+          "title": "Enzo Pérez reveals details of River Plate exit and return under Gallardo",
+          "summary": "Enzo Pérez has broken his silence on his turbulent departure from River Plate in late 2023, admitting the ordeal took a heavy toll on him and his family.",
+          "body": [
+            "Speaking to TyC Sports, the midfielder opened up about the strain that marred the end of his spell, driven by friction with Martín Demichelis and leaked internal talks to the press. Pérez stressed that he chose to settle those issues behind closed doors out of respect for the institution: \"There are things I kept to myself and will always keep to myself. Beyond all that, the club comes before anyone.\"",
+            "Following his stint at Estudiantes, a three-hour conversation with Marcelo Gallardo sealed his return to Núñez, shrouded in complete secrecy even within his family circle until his medical. The veteran midfielder also touched on Gallardo taking charge of Ecuador, noting the move came as no surprise and reiterating his eternal gratitude to the manager."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Demichelis à Gallardo : la confession d'Enzo Pérez sur sa dernière étape à River",
-          "summary": "L'ancien capitaine du CARP n'a rien gardé et a raconté son expérience lors de ce qui s'est passé avec Micho au second semestre 2023.",
+          "title": "Enzo Pérez revient sur son départ de River et son retour avec Gallardo",
+          "summary": "Enzo Pérez est sorti du silence au sujet de son départ houleux de River Plate fin 2023, confiant avoir traversé une période douloureuse aux côtés des siens.",
+          "body": [
+            "Au micro de TyC Sports, le milieu de terrain a confié avoir mal vécu cette fin d'aventure, plombée par des tensions avec Martín Demichelis et la fuite d'échanges confidentiels dans la presse. Pérez a rappelé avoir privilégié la discrétion par respect pour le club : « J'ai gardé des choses pour moi et je continuerai à les garder. Au-delà de tout cela, l'institution passe avant tout le monde. »",
+            "Après son passage à Estudiantes, une discussion de trois heures avec Marcelo Gallardo a scellé son retour à Núñez, maintenu secret jusqu'à la visite médicale. Le joueur est également revenu sur la nomination de Gallardo aux commandes de l'Équateur, affirmant ne pas être surpris par ce choix tout en renouvelant sa reconnaissance éternelle envers le technicien."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "من ديميشيليس إلى غالاردو: اعتراف إنزو بيريز عن مرحلته الأخيرة في ريفر",
-          "summary": "لم يحتفظ كابتن الشبوط السابق بشيء لنفسه وروى قصته خلال ما حدث مع ميتشو في النصف الثاني من عام 2023.",
+          "title": "إنزو بيريز يكشف كواليس رحيله عن ريفر بليت وعودته بطلب من غاياردو",
+          "summary": "كسر إنزو بيريز حاجز الصمت بشأن كواليس رحيله المثير للجدل عن ريفر بليت في أواخر عام 2023، معترفاً بأنه عاش فترة قاسية رفقة عائلته.",
+          "body": [
+            "واعترف لاعب الوسط عبر شاشة تي واي سي سبورتس بالمعاناة التي مر بها في نهاية تلك الحقبة، إثر تفاقم الخلافات مع المدرب مارتين ديميكيليس وتسريب المحادثات الداخلية للصحافة. وأكد بيريز أنه فضّل معالجة الأزمة في الغرف المغلقة احتراماً للكيان: «هناك أمور احتفظت بها لنفسي وسأواصل كتمانها. ومهما حدث، يبقى النادي فوق الجميع».",
+            "وبعد تجربته مع إستوديانتيس، حسمت محادثة استمرت ثلاث ساعات مع مارسيلو غاياردو عودته إلى ريفر بليت وسط تكتم عائلي مطبق حتى موعد الفحص الطبي. وعلق النجم الأرجنتيني أيضاً على تعيين غاياردو مدرباً لمنتخب الإكوادور، مشيراً إلى أن القرار لم يفاجئه ومؤكداً امتنانه الدائم للمدير الفني."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-enzo-perez-demichelis-gallardo-confesion_0_Et8Mo0OWLb.html",
@@ -109,7 +135,20 @@
           "url": "https://www.ole.com.ar/river-plate/river-enzo-perez-demichelis-gallardo-confesion_0_Et8Mo0OWLb.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T20:48:00+00:00"
+        }
+      }
     },
     {
       "id": "c730e96bc585",
@@ -117,27 +156,44 @@
       "summary": "El Clásico de este próximo domingo (21.00 horas/DAZN) en el Spotify Camp Nou promete emociones fuertes, con el regreso de José Mourinho a Barcelona como plato principal. Sin embargo, no habrá reencuentro entre los presidentes Joan Laporta y Florentino Pérez .",
       "i18n": {
         "es": {
-          "title": "No habrá reencuentro Laporta-Florentino en el Clásico",
-          "summary": "El Clásico de este próximo domingo (21.00 horas/DAZN) en el Spotify Camp Nou promete emociones fuertes, con el regreso de José Mourinho a Barcelona como plato principal. Sin embargo, no habrá reencuentro entre los presidentes Joan Laporta y Florentino Pérez .",
-          "needs_translation": false
+          "title": "Florentino Pérez no acudirá al Clásico en el Camp Nou",
+          "summary": "Florentino Pérez no viajará a Barcelona para presenciar el Clásico del Camp Nou ni se verá con su homólogo Joan Laporta.",
+          "body": [
+            "La ruptura institucional derivada del 'caso Negreira' deja de nuevo a ambos clubes sin la tradicional comida de directivas. El Real Madrid prevé enviar a algún vicepresidente al palco —el curso pasado solo acudió Pirri como presidente de honor—, mientras que el artista Tyler, The Creator sí presenciará el partido en directo."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "There will be no Laporta-Florentino reunion in the Classic",
-          "summary": "This Sunday's Classic (9.00 pm/DAZN) at Spotify Camp Nou promises strong emotions, with the return of José Mourinho to Barcelona as the main course. However, there will be no reunion between Presidents Joan Laporta and Florentino Pérez .",
+          "title": "Florentino Pérez will not attend the Clásico at Camp Nou",
+          "summary": "Florentino Pérez will not travel to Barcelona for Sunday's Clásico at Camp Nou and will not cross paths with Joan Laporta.",
+          "body": [
+            "Broken institutional relations sparked by the Negreira case mean the clubs will again skip their traditional pre-match lunch. While Real Madrid plan to send a vice president to the directors' box — last year only honorary president Pirri attended —, artist Tyler, The Creator will be in the stands."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Il n'y aura pas de retrouvailles Laporta-Florentine au Clasico",
-          "summary": "Le Clasico de ce dimanche prochain (21h00/DAZN) au Spotify Camp Nou promet des émotions fortes, avec le retour de José Mourinho à Barcelone comme plat principal. Cependant, il n'y aura pas de rencontre entre les présidents Joan Laporta et Florentino Pérez .",
+          "title": "Florentino Pérez n'ira pas au Clásico au Camp Nou",
+          "summary": "Florentino Pérez ne fera pas le déplacement à Barcelone pour assister au Clásico et ne croisera donc pas Joan Laporta au Camp Nou.",
+          "body": [
+            "Les relations institutionnelles rompues par l'affaire Negreira privent à nouveau les deux états-majors du traditionnel repas d'avant-match. Si le Real Madrid devrait envoyer un vice-président en tribune officielle — la saison dernière, seul le président d'honneur Pirri avait fait le voyage —, l'artiste Tyler, The Creator sera quant à lui bien présent."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "لن يكون هناك لم شمل لابورتا- فلورنتينو في الكلاسيكية",
-          "summary": "يوم الأحد الكلاسيكي (9:00 مساءً/DAZN) في Spotify Camp Nou يعد بمشاعر قوية، مع عودة خوسيه مورينيو إلى برشلونة كطبق رئيسي. ومع ذلك، لن يكون هناك لم شمل بين الرئيسين جوان لابورتا وفلورنتينو بيريز .",
+          "title": "فلورنتينو بيريز يغيب عن كلاسيكو كامب نو",
+          "summary": "قرر فلورنتينو بيريز عدم السفر إلى برشلونة لحضور الكلاسيكو، متفادياً أي لقاء مع رئيس نادي برشلونة خوان لابورتا.",
+          "body": [
+            "تسبب انقطاع العلاقات المؤسسية على خلفية قضية نيغريرا في إلغاء مأدبة الغداء التقليدية بين إدارتي الغريمين مجدداً. ويتوقع أن يكتفي ريال مدريد بإيفاد أحد نواب الرئيس إلى المنصة الشرفية — بعدما حضر الرئيس الشرفي بيري وحده الموسم الماضي —، بينما سيتابع المغني تايلر، ذا كرييتور اللقاء من المدرجات."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261021/1004241638/no-habra-reencuentro-laporta-florentino-clasico.html",
@@ -159,7 +215,20 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261021/1004241638/no-habra-reencuentro-laporta-florentino-clasico.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T20:48:05+00:00"
+        }
+      }
     },
     {
       "id": "4925372b4781",
@@ -167,27 +236,48 @@
       "summary": "Manchester United skipper Bruno Fernandes has blamed head coach Michael Carrick for the tactics that led to an embarrassing 4-1 defeat by Como in the Champions League.",
       "i18n": {
         "en": {
-          "title": "Fernandes rounds on Carrick after Man Utd humiliation",
-          "summary": "Manchester United skipper Bruno Fernandes has blamed head coach Michael Carrick for the tactics that led to an embarrassing 4-1 defeat by Como in the Champions League.",
-          "needs_translation": false
+          "title": "Fernandes questions Carrick tactics after Man Utd's 4-1 Como debacle",
+          "summary": "Bruno Fernandes publicly questioned Michael Carrick's tactics after Manchester United crashed to an embarrassing 4-1 Champions League defeat at Como.",
+          "body": [
+            "The United captain openly blamed the coaching staff's conservative setup, pointing out that dropping off rather than pressing high gifted Como the confidence to dictate play. Carrick quickly countered his midfielder's assessment, arguing that no tactical system works if players refuse to run forward and track back.",
+            "Carrick apologised directly to the 700 travelling fans while sidestepping questions regarding his job security. A late Joshua Zirkzee goal barely softened the blow, leaving United winless in seven matches across all competitions—their poorest run since Louis van Gaal was in charge in late 2015."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Fernandes rondes sur Carrick après l'humiliation de Man Utd",
-          "summary": "Le skipper de Manchester United Bruno Fernandes a blâmé l'entraîneur-chef Michael Carrick pour la tactique qui a conduit à une défaite embarrassante 4-1 de Côme en Ligue des champions.",
+          "title": "Fernandes fustige la tactique de Carrick après la déroute 4-1 de Man Utd à Como",
+          "summary": "Bruno Fernandes a ouvertement remis en cause les choix de Michael Carrick après la cuisante défaite de Manchester United face à Como (4-1) en Ligue des champions.",
+          "body": [
+            "Le capitaine des Red Devils a directement pointé du doigt l'approche trop prudente du staff, estimant qu'attendre bas au lieu de presser haut a offert à Como le contrôle total du tempo. Carrick a immédiatement répliqué aux propos de son milieu portugais, rappelant qu'aucun schéma ne tient la route si les joueurs ne fournissent pas les efforts nécessaires à la course et au repli défensif.",
+            "Le technicien anglais a présenté ses excuses aux 700 supporters ayant fait le déplacement, tout en esquivant le sujet de son avenir sur le banc. Le but tardif inscrit par Joshua Zirkzee n'a rien sauvé : Manchester United enchaîne un septième match sans victoire toutes compétitions confondues, sa pire série depuis l'époque de Louis van Gaal fin 2015."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Fernandes dispara a Carrick después de la humillación de Man Utd",
-          "summary": "El capitán del Manchester United, Bruno Fernandes, ha culpado al entrenador en jefe Michael Carrick por las tácticas que llevaron a una vergonzosa derrota por 4-1 ante Como en la Liga de Campeones.",
+          "title": "Fernandes cuestiona a Carrick tras la humillante derrota 4-1 ante Como",
+          "summary": "Bruno Fernandes cargó contra el planteamiento de Michael Carrick después de que Manchester United encajara un doloroso 4-1 ante Como en la Champions League.",
+          "body": [
+            "El capitán mancuniano señaló sin rodeos la cautela del cuerpo técnico, asegurando que replegarse atrás en lugar de presionar arriba dio alas a Como para adueñarse del partido. Carrick salió al paso de las críticas de su centrocampista y replicó que ninguna pizarra funciona si los futbolistas no se sacrifican en carrera ni repliegan con intensidad.",
+            "El entrenador pidió perdón a los 700 hinchas desplazados a Italia mientras esquivaba las preguntas sobre su continuidad. El tanto postrero de Joshua Zirkzee fue un consuelo estéril para un Manchester United que suma siete partidos sin ganar en todas las competiciones, su peor sequía desde la era de Louis van Gaal a finales de 2015."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "يقوم فرنانديز بجولة على كاريك بعد إذلال مانشستر يونايتد",
-          "summary": "ألقى قائد مانشستر يونايتد برونو فرنانديز باللوم على المدرب مايكل كاريك في التكتيكات التي أدت إلى هزيمة محرجة 4-1 أمام كومو في دوري أبطال أوروبا.",
+          "title": "فيرنانديز ينتقد تكتيك كاريك عقب سقوط مانشستر يونايتد المذل برباعية أمام كومو",
+          "summary": "وجّه برونو فيرنانديز انتقادات علنية لخيارات مدربه مايكل كاريك، بعد سقوط مانشستر يونايتد الكارثي بنتيجة 4-1 أمام كومو في دوري أبطال أوروبا.",
+          "body": [
+            "وحمّل قائد الشياطين الحمر النهج الحذر للجهاز الفني مسؤولية الهزيمة، موضحاً أن التراجع إلى الخلف بدلاً من الضغط العالي منح كومو الثقة لفرض إيقاعه على مجريات اللقاء. ورد كاريك سريعاً على تصريحات لاعب وسطه، مؤكداً أن أي رسم تكتيكي يفقد جدواه حين يعجز اللاعبون عن الركض هجوماً والتراجع دفاعاً.",
+            "وقدم كاريك اعتذاره لنحو 700 مشجع رافقوا الفريق إلى إيطاليا، متفادياً الرد على أسئلة حول مستقبله في منصبه. ولم يغير الهدف المتأخر الذي سجله جوشوا زيركزي شيئاً من واقع الأزمة، إذ بقي يونايتد بلا فوز للمباراة السابعة توالياً في مختلف المسابقات، في أسوأ سلسلة له منذ حقبة لويس فان غال أواخر عام 2015."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/cq74pjn80x4wo?at_medium=RSS&at_campaign=rss",
@@ -209,7 +299,20 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/cq74pjn80x4wo?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T20:48:09+00:00"
+        }
+      }
     },
     {
       "id": "ff0578610ec6",
@@ -265,7 +368,12 @@
           "url": "https://africatopsports.com/football-europe/ligue-des-champions-uefa-avec-catamo-et-doumbia-les-compositions-de-sporting-cp-lask/"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "68413de3d659",
@@ -273,27 +381,44 @@
       "summary": "À la mi-temps de cette rencontre de la phase de ligue de la Ligue des Champions, Aston Villa prend nettement le large et mène logiquement par 2 buts à 0 Lire l'article The post Ligue des Champions UEFA : passeur décisif, Ibrahim Mbaye met Aston Villa sur orbite à la mi-temps…",
       "i18n": {
         "fr": {
-          "title": "Ligue des Champions UEFA : passeur décisif, Ibrahim Mbaye met Aston Villa sur orbite à la mi-temps",
-          "summary": "À la mi-temps de cette rencontre de la phase de ligue de la Ligue des Champions, Aston Villa prend nettement le large et mène logiquement par 2 buts à 0 Lire l'article The post Ligue des Champions UEFA : passeur décisif, Ibrahim Mbaye met Aston Villa sur orbite à la mi-temps…",
-          "needs_translation": false
+          "title": "Ligue des champions : Ibrahim Mbaye et Aston Villa devant à la pause",
+          "summary": "Auteur d'une passe décisive, Ibrahim Mbaye a guidé Aston Villa vers un net avantage de 2-0 à la mi-temps.",
+          "body": [
+            "Dans ce match de la phase de ligue européenne, le club a nettement pris l'ascendant. Les deux réalisations inscrites avant l'entracte confirment la maîtrise affichée dès le coup d'envoi."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "UEFA Champions League: decisive passer, Ibrahim Mbaye puts Aston Villa into orbit at half-time",
-          "summary": "At half-time of this meeting of the Champions League phase, Aston Villa clearly takes off and logically leads by 2 goals to 0 Read the article The post UEFA Champions League: decisive passer, Ibrahim Mbaye puts Aston Villa in orbit at half-time...",
+          "title": "Champions League: Ibrahim Mbaye and Aston Villa lead at the break",
+          "summary": "Ibrahim Mbaye delivered an assist to help Aston Villa take a commanding 2-0 lead at half-time.",
+          "body": [
+            "In this Champions League clash, Aston Villa took firm control during the opening period. Their two-goal cushion reflects a dominant first half before heading into the interval."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Liga de Campeones de la UEFA: pasador decisivo, Ibrahim Mbaye pone al Aston Villa en órbita al medio tiempo",
-          "summary": "En el descanso de este encuentro de la fase de liga de la Liga de Campeones, el Aston Villa se aleja claramente y lleva lógicamente por 2 goles a 0 Leer el artículo The post Liga de Campeones de la UEFA: pasador decisivo, Ibrahim Mbaye pone al Aston Villa en órbita en el descanso…",
+          "title": "Champions League: Ibrahim Mbaye y Aston Villa mandan al descanso",
+          "summary": "Con una asistencia de Ibrahim Mbaye, Aston Villa construyó una cómoda ventaja de 2-0 al llegar al descanso.",
+          "body": [
+            "En este duelo de la fase de liga continental, el equipo impuso su ritmo durante los primeros 45 minutos. Los dos tantos anotados premian su control antes del paso por vestuarios."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري أبطال أوروبا: المهاجم الحاسم، إبراهيم مباي يضع أستون فيلا في المدار في الشوط الأول",
-          "summary": "في الشوط الأول من هذا الاجتماع من مرحلة دوري الأبطال، من الواضح أن أستون فيلا تقلع وتقود منطقيًا بهدفين إلى 0 اقرأ المقال دوري أبطال أوروبا بعد: المارة الحاسمة، يضع إبراهيم مباي أستون فيلا في المدار في الشوط الأول...",
+          "title": "دوري أبطال أوروبا: إبراهيم مباي يقود أستون فيلا للتقدم في الشوط الأول",
+          "summary": "صنع إبراهيم مباي هدفاً ليمنح أستون فيلا تقدماً مستحقاً بهدفين دون رد مع نهاية الشوط الأول.",
+          "body": [
+            "فرض الفريق سيطرته خلال هذه المواجهة ضمن مرحلة الدوري القاري، وترجم تفوقه الميداني بتسجيل هدفين قبل التوجه إلى استراحة ما بين الشوطين."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/football-europe/ligue-des-champions-uefa-passeur-decisif-ibrahim-mbaye-met-aston-villa-sur-orbite-a-la-mi-temps/",
@@ -315,7 +440,20 @@
           "url": "https://africatopsports.com/football-europe/ligue-des-champions-uefa-passeur-decisif-ibrahim-mbaye-met-aston-villa-sur-orbite-a-la-mi-temps/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 4,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T20:48:13+00:00"
+        }
+      }
     },
     {
       "id": "51383af34069",
@@ -365,7 +503,12 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-uefa-bernardo-silva-donne-lavantage-au-real-madrid-a-la-pause-face-a-leipzig/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 4,
+        "source_read": "rss"
+      }
     },
     {
       "id": "a49ae1b92712",
@@ -373,27 +516,44 @@
       "summary": "L’Inter Milan et le Shakhtar Donetsk se tiennent en respect à San Siro lors de la 3è journée de Ligue des champions UEFA.",
       "i18n": {
         "fr": {
-          "title": "Ligue des champions UEFA : L’Inter Milan et le Shakhtar Donetsk se neutralisent à la pause",
-          "summary": "L’Inter Milan et le Shakhtar Donetsk se tiennent en respect à San Siro lors de la 3è journée de Ligue des champions UEFA.",
-          "needs_translation": false
+          "title": "C1 : Score de parité à la pause entre l'Inter Milan et le Shakhtar Donetsk",
+          "summary": "L'Inter Milan et le Shakhtar Donetsk se sont neutralisés durant la première période de leur confrontation européenne disputée à San Siro.",
+          "body": [
+            "Opposées à l'occasion de la troisième journée de la Ligue des champions, les deux équipes ont rejoint les vestiaires dos à dos. Ni le club milanais ni la formation ukrainienne n'ont trouvé la faille au cours des quarante-cinq premières minutes."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "UEFA Champions League: Inter Milan and Shakhtar Donetsk neutralize at break",
-          "summary": "Inter Milan and Shakhtar Donetsk stand in respect in San Siro on the 3rd day of the UEFA Champions League.",
+          "title": "UCL: Inter Milan and Shakhtar Donetsk level at half-time",
+          "summary": "Inter Milan and Shakhtar Donetsk remained deadlocked at the break during their Champions League matchday three clash at San Siro.",
+          "body": [
+            "Both sides headed into the dressing rooms on level terms after a tight opening period. Neither the Italian hosts nor the Ukrainian visitors managed to find the breakthrough before the referee blew for half-time."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Liga de Campeones de la UEFA: el Inter de Milán y el Shakhtar Donetsk se neutralizan al descanso",
-          "summary": "El Inter de Milán y el Shakhtar Donetsk se muestran respetuosos en San Siro durante la tercera jornada de la Liga de Campeones de la UEFA.",
+          "title": "Champions: Tablas al descanso entre el Inter y el Shakhtar Donetsk",
+          "summary": "El Inter y el Shakhtar Donetsk se marcharon empatados a los vestuarios en la tercera jornada de la Liga de Campeones en San Siro.",
+          "body": [
+            "Ninguno de los dos conjuntos logró perforar la portería rival antes del descanso. Tras unos primeros cuarenta y cinco minutos muy disputados en Milán, la escuadra italiana y el cuadro ucraniano mantienen el marcador intacto."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري أبطال أوروبا: إنتر ميلان وشاختار دونيتسك يحيدان عند الاستراحة",
-          "summary": "إنتر ميلان وشاختار دونيتسك يقفان باحترام في سان سيرو في اليوم الثالث من دوري أبطال أوروبا.",
+          "title": "دوري أبطال أوروبا: تعادل سلبي بين إنتر ميلان وشاختار في الشوط الأول",
+          "summary": "انتهى الشوط الأول بين إنتر ميلان وشاختار دونيتسك بالتعادل على ملعب سان سيرو، ضمن الجولة الثالثة من دوري أبطال أوروبا.",
+          "body": [
+            "ودخل الفريقان غرف الملابس دون أهداف بعد خمس وأربعين دقيقة متكافئة، حيث عجز النادي الإيطالي وضيفه الأوكراني عن هز الشباك وصناعة الفارق قبل الاستراحة."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://africatopsports.com/football-europe/ligue-des-champions-uefa/ligue-des-champions-uefa-linter-milan-et-le-shakhtar-donetsk-se-neutralisent-a-la-pause/",
@@ -415,7 +575,20 @@
           "url": "https://africatopsports.com/football-europe/ligue-des-champions-uefa/ligue-des-champions-uefa-linter-milan-et-le-shakhtar-donetsk-se-neutralisent-a-la-pause/"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 3,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T20:48:17+00:00"
+        }
+      }
     },
     {
       "id": "7d80be556148",
@@ -423,27 +596,44 @@
       "summary": "Le match Club Bruges-Lens, ce mercredi soir en Ligue des champions, a été interrompu par des jets de fumigènes du parcage lensois.",
       "i18n": {
         "fr": {
-          "title": "Ligue des champions UEFA : le Club Bruges prend l’avantage face au RC Lens à la pause",
-          "summary": "Le match Club Bruges-Lens, ce mercredi soir en Ligue des champions, a été interrompu par des jets de fumigènes du parcage lensois.",
-          "needs_translation": false
+          "title": "Bruges mène contre Lens à la pause d'un match sous tension",
+          "summary": "Le Club Bruges mène face au RC Lens à la mi-temps d'un match de Ligue des champions perturbé en tribunes.",
+          "body": [
+            "L'affiche européenne de ce mercredi soir a été marquée par des incidents dans les travées. La rencontre a dû être interrompue après des jets de fumigènes depuis le parcage lensois, alors que la formation belge avait pris les devants au tableau d'affichage avant le repos."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "UEFA Champions League: Club Bruges takes advantage of RC Lens at break",
-          "summary": "The Club Bruges-Lens match, this Wednesday evening in the Champions League, was interrupted by smoke jets from the Lens parking lot.",
+          "title": "Club Bruges lead RC Lens at the break in high-tension clash",
+          "summary": "Club Bruges lead RC Lens at half-time in a Champions League tie marred by trouble in the stands.",
+          "body": [
+            "Wednesday night's European clash was overshadowed by incidents in the terraces. The match had to be suspended following pyrotechnics thrown from the RC Lens away end, with the Belgian side having already taken the lead before the interval."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Liga de Campeones de la UEFA: el Club Brujas gana al RC Lens en el descanso",
-          "summary": "El partido del Club Brujas-Lens, este miércoles por la noche en la Liga de Campeones, fue interrumpido por chorros de humo del parque de Lens.",
+          "title": "El Club Bruges manda ante el RC Lens al descanso de un duelo caliente",
+          "summary": "El Club Bruges se impone al RC Lens al término del primer tiempo en un duelo de Champions enturbiado en la grada.",
+          "body": [
+            "El compromiso europeo de este miércoles quedó marcado por incidentes en las tribunas. El partido se interrumpió por el lanzamiento de bengalas desde el sector del RC Lens, después de que el cuadro belga tomara ventaja en el marcador antes del entretiempo."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري أبطال أوروبا UEFA: نادي بروج يستفيد من عدسة RC في استراحة",
-          "summary": "توقفت مباراة نادي بروج- لينس، مساء الأربعاء في دوري أبطال أوروبا، بسبب الدخان المتصاعد من موقف سيارات لينس.",
+          "title": "كلوب بروج يتقدم على لانس في استراحة مواجهة مشحونة",
+          "summary": "كلوب بروج ينهي الشوط الأول متقدماً أمام لانس في مواجهة ضمن دوري أبطال أوروبا شابتها توترات في المدرجات.",
+          "body": [
+            "طغت أحداث الشغب في المدرجات على القمة الأوروبية مساء الأربعاء؛ إذ توقفت المباراة عقب إلقاء مقذوفات نارية من مدرج جماهير لانس، في وقت كان الفريق البلجيكي قد انتزع فيه الأسبقية على لوحة الأهداف قبل الاستراحة."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Le-match-de-ligue-des-champions-entre-le-club-bruges-et-lens-interrompu-par-des-jets-de-fumigenes-du-parcage-lensois/1737614#at_medium=RSS_feeds",
@@ -471,7 +661,20 @@
           "url": "https://africatopsports.com/football/ligue-des-champions-uefa-le-club-bruges-prend-lavantage-face-au-rc-lens-a-la-pause/"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T20:48:21+00:00"
+        }
+      }
     },
     {
       "id": "5ed6afd49373",
@@ -521,7 +724,12 @@
           "url": "https://www.lefigaro.fr/sports/football/live/ligue-des-champions/2026/2685421/real-madrid-rb-leipzig"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "ff12b1980b3f",
@@ -529,27 +737,48 @@
       "summary": "El pibe categoría 2008 ya llama la atención en el Cervecero por sus gambetas y su estilo provocador. En charla con Olé, habló de su fanatismo por Neymar y el sueño de llegar a Primera.",
       "i18n": {
         "es": {
-          "title": "La emotiva historia de Enzo Cejas: de vender en la calle y casi dejar el fútbol a brillar en la Reserva de Quilmes",
-          "summary": "El pibe categoría 2008 ya llama la atención en el Cervecero por sus gambetas y su estilo provocador. En charla con Olé, habló de su fanatismo por Neymar y el sueño de llegar a Primera.",
-          "needs_translation": false
+          "title": "Enzo Cejas: de la venta callejera a brillar en la Reserva de Quilmes",
+          "summary": "El volante Enzo Cejas deslumbra en la Reserva de Quilmes tras superar años de venta callejera y sacrificios familiares para buscar su debut profesional.",
+          "body": [
+            "A sus 18 años, el mediocampista estuvo cerca de colgar los botines por la falta de recursos económicos. Para subsistir, acompañaba a su madre en las ferias y en la calle, mientras ella juntaba dinero para comprarle el calzado de fútbol. Ese respaldo familiar evitó que abandonara los entrenamientos en los momentos más difíciles.",
+            "Con un estilo encarador inspirado en Neymar, sus gambetas en el uno contra uno encendieron el pedido de los hinchas cerveceros para que suba al plantel principal. Lejos de marearse con los elogios, Cejas mantiene una meta fija: conseguir su primer sueldo profesional para sacar a su mamá del barrio."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "The emotional story of Enzo Cejas: from selling on the street and almost leaving football to shining in the Quilmes Reserve",
-          "summary": "The 2008 category kid already draws attention at the Brewery for his gambetas and provocative style. In a chat with Olé, he talked about his fanaticism for Neymar and the dream of reaching Primera.",
+          "title": "Enzo Cejas: from street vending to shining in the Reserva de Quilmes",
+          "summary": "Midfielder Enzo Cejas is turning heads with the Reserva de Quilmes after enduring years of street vending and family hardship on his road to professional football.",
+          "body": [
+            "At 18, the midfielder nearly walked away from the game for good due to a lack of money. To get by, he worked alongside his mother at street markets while she scraped together funds to buy his football boots. That steadfast family support kept him going through his darkest days.",
+            "With a fearless, direct style modelled on Neymar, his flair in one-on-one situations has fans urging management to call him up to the senior squad. Far from getting carried away by the hype, Cejas has his eyes on one prize: earning his first professional wage to move his mother out of the neighborhood."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "L'histoire émouvante d'Enzo Cejas : vendre dans la rue et presque laisser le football briller dans la réserve de Quilmes",
-          "summary": "Le pibe catégorie 2008 attire déjà l'attention du Brasseur pour ses crevettes et son style provocateur. Dans une conversation avec Olé, il a parlé de son fanatisme pour Neymar et de son rêve d'atteindre Primera.",
+          "title": "Enzo Cejas : de la vente ambulante aux éclats avec la Reserva de Quilmes",
+          "summary": "Le milieu Enzo Cejas brille avec la Reserva de Quilmes après des années de vente de rue et de sacrifices familiaux dans l'espoir de passer pro.",
+          "body": [
+            "À 18 ans, le jeune joueur a pourtant failli raccrocher les crampons, faute de moyens. Pour subsister, il aidait sa mère sur les marchés et dans la rue, tandis qu'elle économisait chaque peso pour lui payer ses chaussures de football. Ce soutien sans faille lui a évité d'abandonner le terrain dans les périodes les plus rudes.",
+            "Inspiré par le jeu de percussion de Neymar, son sens de la provocation balle au pied pousse les supporters à réclamer son intégration en équipe première. Loin de s'enflammer face aux compliments, Cejas garde le cap : décrocher son premier contrat pour sortir sa mère du quartier."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "القصة العاطفية لإنزو سيجاس: من البيع في الشارع وكاد يترك كرة القدم إلى التألق في محمية كيلميس",
-          "summary": "يجذب طفل فئة 2008 الانتباه بالفعل في مصنع الجعة بسبب القمار وأسلوبه الاستفزازي. في محادثة مع أولي، تحدث عن تعصبه لنيمار وحلمه بالوصول إلى بريميرا.",
+          "title": "إنزو سيخاس: من البيع المتجول إلى التألق في رديف كيلمس",
+          "summary": "يبهر لاعب الوسط الشاب إنزو سيخاس المتابعين مع الفريق الرديف لنادي كيلمس، بعد سنوات قضاها بائعًا متجولاً وسط تضحيات عائلية كبرى في سبيل تحقيق ظهوره الاحترافي الأول.",
+          "body": [
+            "في سن الثامنة عشرة، كان لاعب الوسط قاب قوسين أو أدنى من اعتزال الكرة بسبب ضيق ذات اليد. ولكسب القوت، كان يرافق والدته للبيع في الأسواق والشوارع، بينما كانت تدخر المال لشراء حذاء كروي له. هذا السند العائلي هو ما حال دون تركه التدريبات في أصعب الأوقات.",
+            "بأسلوب هجومي جريء مستوحى من نيمار، أشعلت مراوغاته الفردية مطالب جماهير النادي لتصعيده إلى الفريق الأول. وبعيدًا عن التأثر ببريق الإشادات، يضع سيخاس هدفًا لا يحيد عنه: نيل أول راتب احترافي لنقل والدته بعيدًا عن أزقة الحي."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/quilmes/enzo-cejas-brilla-reserva-quilmes-vender-calle-dejar-futbol-river-neymar-gambeta_0_MbGHsYUgiS.html",
@@ -571,7 +800,12 @@
           "url": "https://www.ole.com.ar/quilmes/enzo-cejas-brilla-reserva-quilmes-vender-calle-dejar-futbol-river-neymar-gambeta_0_MbGHsYUgiS.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full"
+      }
     },
     {
       "id": "45fdc7e05d96",
@@ -579,27 +813,48 @@
       "summary": "Justo antes del descanso, cuando más duele, el Real Madrid se adelantó en el partido ante el Leipzig (1-0) gracias una jugada por banda derecha que la fortuna permitió que se convirtiera en gol de Bernardo Silva, el primero como madridista.",
       "i18n": {
         "es": {
-          "title": "Bernardo Silva se estrena como goleador merengue con una pizca de suerte",
-          "summary": "Justo antes del descanso, cuando más duele, el Real Madrid se adelantó en el partido ante el Leipzig (1-0) gracias una jugada por banda derecha que la fortuna permitió que se convirtiera en gol de Bernardo Silva, el primero como madridista.",
-          "needs_translation": false
+          "title": "Bernardo Silva se estrena como goleador blanco ante el Leipzig",
+          "summary": "Bernardo Silva anotó su primer gol con el Real Madrid frente al Leipzig para adelantar a su equipo al filo del descanso.",
+          "body": [
+            "El portugués aprovechó un balón muerto en el área tras un disparo de Güler a pase de Valverde para marcar a placer.",
+            "El tanto premió a los pupilos de Mourinho en un duelo donde el conjunto alemán generó más peligro, neutralizado una vez más por las intervenciones de Courtois bajo palos."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Bernardo Silva debuts as a merengue scorer with a dash of luck",
-          "summary": "Just before the break, when it hurts the most, Real Madrid advanced in the game against Leipzig (1-0) thanks to a play by the right wing that fortune allowed to become the goal of Bernardo Silva, the first as a Real Madrid player.",
+          "title": "Bernardo Silva opens Real Madrid account against Leipzig",
+          "summary": "Bernardo Silva scored his first goal for Real Madrid against Leipzig, putting his side ahead right on the stroke of half-time.",
+          "body": [
+            "The Portuguese playmaker pounced on a loose ball in the box after a Güler strike set up by Valverde to tap home.",
+            "The opener gave Mourinho's men the edge in a clash where the German side created the clearer chances, only to be repeatedly denied by Courtois."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Bernardo Silva débute en tant que buteur merengue avec un peu de chance",
-          "summary": "Juste avant la pause, au moment où cela fait le plus mal, le Real Madrid a pris de l'avance dans le match contre Leipzig (1-0) grâce à un coup droit que la fortune a permis de transformer en but de Bernardo Silva, le premier en tant que Madridista.",
+          "title": "Bernardo Silva ouvre son compteur avec le Real Madrid face à Leipzig",
+          "summary": "Bernardo Silva a inscrit son tout premier but sous les couleurs du Real Madrid face à Leipzig pour donner l'avantage aux siens juste avant la pause.",
+          "body": [
+            "Le Portugais a profité d'un ballon qui traînait dans la surface après une frappe de Güler sur un service de Valverde pour marquer à bout portant.",
+            "Cette ouverture du score a récompensé les hommes de Mourinho dans une rencontre où les Allemands se sont montrés les plus dangereux, mais systématiquement écœurés par les parades de Courtois."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "برناردو سيلفا لاول مرة كهداف ميرينغ مع اندفاعة من الحظ",
-          "summary": "قبل الاستراحة مباشرة، عندما كان الأمر أكثر إيلامًا، تقدم ريال مدريد في المباراة ضد لايبزيغ (1-0) بفضل اللعب من قبل الجناح الأيمن الذي سمح للثروة بأن تصبح هدف برناردو سيلفا، الأول كلاعب في ريال مدريد.",
+          "title": "برناردو سيلفا يفتتح سجله التهديفي مع ريال مدريد أمام لايبزيغ",
+          "summary": "سجل برناردو سيلفا هدفه الأول بقميص ريال مدريد في شباك لايبزيغ ليمنح فريقه التقدم قبيل نهاية الشوط الأول.",
+          "body": [
+            "واستغل اللاعب البرتغالي كرة حائرة داخل منطقة الجزاء إثر تسديدة من غولر بعد تمريرة فالفيردي ليودعها الشباك بسهولة.",
+            "ومنح هذا الهدف الأسبقية لكتيبة مورينيو في مواجهة كان فيها الفريق الألماني الطرف الأكثر تهديداً، لولا تصديات كورتوا الحاسمة."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261021/1004241634/bernardo-silva-estrena-goleador-merengue-pizca-suerte.html",
@@ -621,7 +876,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261021/1004241634/bernardo-silva-estrena-goleador-merengue-pizca-suerte.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full"
+      }
     },
     {
       "id": "0d4a820fc503",
@@ -670,7 +930,12 @@
           "url": "https://www.mundodeportivo.com/futbol/champions-league/20261021/1004239675/real-betis-feyenoord-directo-sigue-partido-champions-league-vivo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "c232b1a70499",
@@ -720,7 +985,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/europa-league/partidos-europa-league-fecha-3-fase-liga-argentinos_0_oEMBnlLdPW.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f778a82f679f",
@@ -776,7 +1046,12 @@
           "url": "https://www.sportschau.de/live-und-ergebnisse/fussball/uefa-champions-league/ma12517788/bayern-muenchen_arsenal-fc/liveticker"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "13ddc11569e2",
@@ -888,7 +1163,12 @@
           "url": "https://www.kicker.de/live-kanes-traumpass-leitet-ein-bernardo-silva-staubt-ab-1263140/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "0734c66f02eb",
@@ -938,7 +1218,12 @@
           "url": "https://www.mundodeportivo.com/futbol/real-madrid/20261021/1004239672/real-madrid-leipzig-directo-champions-league-futbol-jornada-3.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "348a4bc1d405",
