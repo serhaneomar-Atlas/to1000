@@ -65,7 +65,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/sudamericana/vasco-da-gama-vs-boca-copa-sudamericana-vivo-hora-ver-tv-online-formaciones_0_bK5QRH1dK3.html"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "4afaa0a7a084",
@@ -73,27 +78,44 @@
       "summary": "Le cas de l'attaquant parisien Khvitcha Kvaratskhelia, sorti à l'heure de jeu, suscitait dans la nuit de mardi à mercredi de grosses inquiétudes. Les premiers tests ne sont pas rassurants.",
       "i18n": {
         "fr": {
-          "title": "Suspicions de rupture des ligaments croisés pour Khvitcha Kvaratskhelia après PSG-Barcelone",
-          "summary": "Le cas de l'attaquant parisien Khvitcha Kvaratskhelia, sorti à l'heure de jeu, suscitait dans la nuit de mardi à mercredi de grosses inquiétudes. Les premiers tests ne sont pas rassurants.",
-          "needs_translation": false
+          "title": "Kvaratskhelia craint une rupture des ligaments croisés",
+          "summary": "Khvitcha Kvaratskhelia pourrait souffrir d'une rupture des ligaments croisés après sa sortie sur blessure face à Barcelone.",
+          "body": [
+            "Remplacé à l'heure de jeu lors du choc contre le Barça, l'attaquant du Paris Saint-Germain suscitait une vive inquiétude dans la nuit de mardi à mercredi. Les premiers examens médicaux n'ont pas apporté d'éléments rassurants."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Suspected cruciate ligament rupture for Khvitcha Kvaratskhelia after PSG-Barcelona",
-          "summary": "The case of the Parisian striker Khvitcha Kvaratskhelia, out at game time, raised big concerns in the night from Tuesday to Wednesday. The first tests are not reassuring.",
+          "title": "Kvaratskhelia feared to have suffered ACL tear",
+          "summary": "Khvitcha Kvaratskhelia could be facing an ACL tear after being forced off with an injury against Barcelona.",
+          "body": [
+            "Substituted around the hour mark, the Paris Saint-Germain forward sparked serious concern overnight between Tuesday and Wednesday. Initial medical tests have not provided any reassuring signs."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Sospechas de rotura de ligamentos cruzados para Khvitcha Kvaratskhelia después del PSG-Barcelona",
-          "summary": "El caso del delantero parisino Khvitcha Kvaratskhelia, que salió a tiempo, suscitaba gran preocupación en la noche del martes al miércoles. Las primeras pruebas no son tranquilizadoras.",
+          "title": "Kvaratskhelia teme una rotura de ligamentos cruzados",
+          "summary": "Khvitcha Kvaratskhelia podría sufrir una rotura de ligamentos cruzados tras retirarse lesionado en el partido frente al Barcelona.",
+          "body": [
+            "Sustituido en torno a la hora de juego, el atacante del Paris Saint-Germain despertó una gran preocupación durante la noche del martes al miércoles. Las primeras exploraciones no han resultado tranquilizadoras."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "يشتبه في تمزق الرباط الصليبي لـ Khvitcha Kvaratskhelia بعد PSG - Barcelona",
-          "summary": "أثارت قضية المهاجم الباريسي خفيتشا كفاراتشيليا، في وقت المباراة، مخاوف كبيرة في الليل من الثلاثاء إلى الأربعاء. الاختبارات الأولى ليست مطمئنة.",
+          "title": "مخاوف من إصابة كفاراتسخيليا بقطع في الرباط الصليبي",
+          "summary": "يُخشى تعرض خفيتشا كفاراتسخيليا لإصابة بقطع في الرباط الصليبي بعد خروجه مصاباً في مواجهة باريس سان جيرمان وبرشلونة.",
+          "body": [
+            "أثار استبدال المهاجم الباريسي بعد نحو ساعة من اللعب قلقاً بالغاً ليلة الثلاثاء إلى الأربعاء. ولم تأتِ الفحوصات الطبية الأولية بأي مؤشرات مطمئنة."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Suspicions-de-rupture-des-ligaments-croises-pour-khvitcha-kvaratskhelia-apres-psg-barcelone/1737395#at_medium=RSS_feeds",
@@ -115,7 +137,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Suspicions-de-rupture-des-ligaments-croises-pour-khvitcha-kvaratskhelia-apres-psg-barcelone/1737395#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T01:09:32+00:00"
+        }
+      }
     },
     {
       "id": "019789bb8220",
@@ -123,27 +158,44 @@
       "summary": "La seconde mi-temps entre le PSG et le FC Barcelone (4-2) a offert 9 minutes de pure folie au Parc des Princes, ce mardi, durant lesquelles trois buts ont été inscrits et où Paris a repris deux fois l'avantage.",
       "i18n": {
         "fr": {
-          "title": "Les notes du PSG contre le Barça : Hernandez dévore Yamal, Vitinha le virtuose et Doué le magicien",
-          "summary": "La seconde mi-temps entre le PSG et le FC Barcelone (4-2) a offert 9 minutes de pure folie au Parc des Princes, ce mardi, durant lesquelles trois buts ont été inscrits et où Paris a repris deux fois l'avantage.",
-          "needs_translation": false
+          "title": "PSG-Barça : Paris s'impose au terme d'un second acte renversant",
+          "summary": "Le Paris Saint-Germain a battu le FC Barcelone 4-2 au Parc des Princes ce mardi, au terme d'une seconde période spectaculaire.",
+          "body": [
+            "Durant neuf minutes de pure folie après la pause, trois réalisations ont enflammé la rencontre et permis à Paris de reprendre l'avantage à deux reprises. Le choc a également été marqué par le duel remporté par Hernandez face à Yamal, ainsi que par les prestations remarquées de Vitinha et Doué."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "PSG's notes against Barça: Hernandez devours Yamal, Vitinha the virtuoso and Gifted the magician",
-          "summary": "The second half between PSG and FC Barcelona (4-2) offered 9 minutes of pure madness at the Parc des Princes on Tuesday, during which three goals were scored and Paris regained the advantage twice.",
+          "title": "PSG 4-2 Barça: Paris prevail after breathless second half",
+          "summary": "Paris Saint-Germain defeated Barcelona 4-2 at the Parc des Princes on Tuesday, prevailing after a dramatic second half.",
+          "body": [
+            "A frantic nine-minute spell after the break produced three goals, with Paris fighting back to retake the lead twice. The clash also highlighted Hernandez's mastery over Yamal, alongside standout performances from Vitinha and Doué."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Las notas del PSG contra el Barça: Hernández devora a Yamal, Vitinha al virtuoso y Doe al mago",
-          "summary": "El segundo tiempo entre el PSG y el FC Barcelona (4-2) ofreció 9 minutos de pura locura en el Parque de los Príncipes este martes, durante los cuales se marcaron tres goles y París recuperó la ventaja dos veces.",
+          "title": "PSG-Barça: El Paris se impone tras una segunda parte de locura",
+          "summary": "El Paris Saint-Germain venció 4-2 al FC Barcelona este martes en el Parc des Princes tras una segunda parte espectacular.",
+          "body": [
+            "En apenas nueve minutos de locura tras el descanso, tres goles sacudieron el encuentro y permitieron al Paris retomar la ventaja en dos ocasiones. El choque estuvo marcado por el marcaje de Hernandez sobre Yamal y las actuaciones estelares de Vitinha y Doué."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ملاحظات باريس سان جيرمان ضد برشلونة: هيرنانديز يلتهم يامال وفيتينها الموهوب وموهوب الساحر",
-          "summary": "وقدم الشوط الثاني بين باريس سان جيرمان ونادي برشلونة (4-2) 9 دقائق من الجنون الخالص في بارك دي برينس يوم الثلاثاء، تم خلالها تسجيل ثلاثة أهداف واستعاد باريس الأفضلية مرتين.",
+          "title": "باريس سان جيرمان يهزم برشلونة 4-2 في قمة مثيرة",
+          "summary": "تغلب باريس سان جيرمان على برشلونة 4-2 في بارك دي برانس هذا الثلاثاء، إثر شوط ثانٍ حافل بالإثارة والتشويق.",
+          "body": [
+            "شهدت تسع دقائق مجنونة بعد الاستراحة تسجيل ثلاثة أهداف واستعادة باريس التقدم في مناسبتين. وتميزت المواجهة بتفوق هيرنانديز في مراقبة يامال، إلى جانب تألق لافت من فيتينيا ودوي."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Coup-de-tete-rageur-de-lucas-hernandez-egalisation-de-lamine-yamal-et-frappe-de-vitinha-9-minutes-de-folie-entre-le-psg-et-le-barca/1737361#at_medium=RSS_feeds",
@@ -171,7 +223,20 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/les-notes-du-psg-contre-le-barca-hernandez-devore-yamal-vitinha-le-virtuose-et-doue-le-magicien-20261020"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T01:09:37+00:00"
+        }
+      }
     },
     {
       "id": "840e5225971f",
@@ -179,27 +244,44 @@
       "summary": "La derrota del Barça ante el PSG (4-2) en el Parque de los Príncipes deja mucho que analizar. El equipo de Hansi Flick compitió durante buena parte del encuentro, pero acabó cediendo ante el empuje y la pegada del vigente campeón de Europa .",
       "i18n": {
         "es": {
-          "title": "¿Qué le pasó al Barça en París? Las claves de la derrota ante el PSG",
-          "summary": "La derrota del Barça ante el PSG (4-2) en el Parque de los Príncipes deja mucho que analizar. El equipo de Hansi Flick compitió durante buena parte del encuentro, pero acabó cediendo ante el empuje y la pegada del vigente campeón de Europa .",
-          "needs_translation": false
+          "title": "Primera derrota del Barça de Flick en París antes del Clásico",
+          "summary": "El FC Barcelona cayó 4-2 frente al Paris Saint-Germain en el Parque de los Príncipes, firmando su primer tropiezo del curso a las puertas del Clásico.",
+          "body": [
+            "Pese a competir durante amplios tramos del encuentro, el bloque de Hansi Flick terminó cediendo ante la contundencia del conjunto parisino. Los desajustes defensivos y el rendimiento de nombres como Joan Garcia, Xavi Espart y Lamine Yamal marcan el análisis de una derrota que exigirá una reacción inmediata frente al Real Madrid."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "What happened to Barça in Paris? The keys to the defeat against PSG",
-          "summary": "Barça's defeat to PSG (4-2) at Parc des Princes leaves much to be analysed. Hansi Flick's team competed for a good part of the match, but ended up giving in to the push and punch of the reigning European champion.",
+          "title": "First defeat for Flick's Barça in Paris ahead of El Clásico",
+          "summary": "FC Barcelona were beaten 4-2 by Paris Saint-Germain at the Parc des Princes, suffering their first loss of the season just days before taking on Real Madrid.",
+          "body": [
+            "Despite staying in the fight for large spells, Hansi Flick's side ultimately crumbled against Paris Saint-Germain's ruthless finishing. Defensive lapses and the outings of Joan Garcia, Xavi Espart, and Lamine Yamal take centre stage after a setback that demands an immediate response against Real Madrid."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Qu'est-il arrivé au Barça à Paris ? Les clés de la défaite face au PSG",
-          "summary": "La défaite du Barça face au PSG (4-2) au Parc des Princes laisse beaucoup à analyser. L'équipe de Hansi Flick a concouru pendant une bonne partie de la rencontre, mais a fini par céder à la poussée et à l'attaque du champion d'Europe en titre.",
+          "title": "Première défaite pour le Barça de Flick à Paris avant le Clásico",
+          "summary": "Battu 4-2 par le Paris Saint-Germain au Parc des Princes, le FC Barcelona concède son premier revers de la saison à quelques jours d'affronter le Real Madrid.",
+          "body": [
+            "Malgré de bonnes séquences dans le jeu, les hommes de Hansi Flick ont fini par plier face au réalisme parisien. Entre approximations défensives et prestations remarquées de Joan Garcia, Xavi Espart et Lamine Yamal, ce faux pas appelle un sursaut immédiat lors du grand rendez-vous face au rival madrilène."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "ماذا حدث لبرشلونة في باريس ؟ مفاتيح الهزيمة ضد باريس سان جيرمان",
-          "summary": "هزيمة برشلونة أمام باريس سان جيرمان (4-2) في بارك دي برينس يترك الكثير لتحليله. تنافس فريق هانسي فليك على جزء كبير من المباراة، ولكن انتهى به الأمر إلى الاستسلام لضغط ولكمة البطل الأوروبي الحاكم.",
+          "title": "أول هزيمة لبرشلونة تحت قيادة فليك في باريس قبل الكلاسيكو",
+          "summary": "سقط برشلونة بنتيجة 4-2 أمام باريس سان جيرمان على ملعب حديقة الأمراء، ليتجرع خسارته الأولى هذا الموسم قبيل أيام معدودة من مواجهة الكلاسيكو.",
+          "body": [
+            "ورغم الصمود وتقديم مردود تنافسي لفترات طويلة من اللقاء، استسلمت كتيبة المدرب هانزي فليك لفاعلية أصحاب الأرض الهجومية. وتضع الهفوات الدفاعية ومستويات عناصر شابة مثل جوان غارسيا وتشافي إسبارت ولامين يامال الفريق أمام ضرورة حتمية للتعويض السريع في مواجهة الغريم ريال مدريد."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261021/1004241328/le-paso-barca-paris-claves-derrota-psg.html",
@@ -221,7 +303,20 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261021/1004241328/le-paso-barca-paris-claves-derrota-psg.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T01:09:42+00:00"
+        }
+      }
     },
     {
       "id": "a3c22d20a2f1",
@@ -271,7 +366,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/champions/champions-league-argentinos-messi-aguero-crespo-alvarez-martinez-goles-maximos-goleadores_0_8EfqcuDSFU.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "74c74b754fbf",
@@ -279,27 +379,48 @@
       "summary": "It was goals galore again in the Champions League on Tuesday, with the competition setting a new record this season.",
       "i18n": {
         "en": {
-          "title": "No jeopardy but loads of fun - Champions League sets new goals record",
-          "summary": "It was goals galore again in the Champions League on Tuesday, with the competition setting a new record this season.",
-          "needs_translation": false
+          "title": "Champions League records historic scoring boom with 4.16 goals per game",
+          "summary": "The Champions League is averaging a record 4.16 goals per match this season, fueled by the tournament's expansive new league-phase format.",
+          "body": [
+            "With 187 goals already tallied, this campaign boasts the highest scoring rate in Champions League history and the third-highest across all European Cup editions, trailing only the 1955-56 and 1959-60 seasons. Matchday two set an all-time record with 78 goals across two days, following an opening round that yielded 69. Nine fixtures on Tuesday alone contributed another 40 strikes.",
+            "The goal frenzy coincides with the format shift introduced for 2024-25, which replaced the traditional group stage with a 36-team single table. Because 24 clubs survive the opening phase to reach either the last 16 or the play-offs, pundits note that reduced jeopardy allows sides to abandon conservative tactics and attack with freedom."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Pas de danger, mais beaucoup de plaisir - La Ligue des champions établit un nouveau record de buts",
-          "summary": "C'était à nouveau des buts à gogo en Ligue des champions mardi, la compétition établissant un nouveau record cette saison.",
+          "title": "Ligue des champions : festival offensif record à 4,16 buts par match",
+          "summary": "La Ligue des champions tourne au rythme record de 4,16 buts par match cette saison, portée par sa nouvelle phase de ligue à 36 clubs.",
+          "body": [
+            "Avec déjà 187 buts inscrits, cette édition affiche la meilleure efficacité offensive de l'histoire de la Ligue des champions et la troisième de toute l'histoire de la Coupe d'Europe, derrière les exercices 1955-56 et 1959-60. La deuxième journée a pulvérisé le record absolu avec 78 réalisations en deux soirées, après une première salve à 69 unités. Neuf rencontres disputées mardi ont pesé à elles seules 40 buts.",
+            "Cette avalanche offensive accompagne la refonte du format 2024-25, qui a remplacé les groupes traditionnels par un classement unique à 36 équipes. Puisque 24 clubs franchissent le cap pour rallier les huitièmes ou les barrages, la peur du faux pas s'estompe et incite les équipes à attaquer sans retenue."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Sin peligro pero con mucha diversión: la Liga de Campeones establece un nuevo récord de goles",
-          "summary": "Nuevamente hubo goles en abundancia en la Liga de Campeones el martes, con la competencia estableciendo un nuevo récord esta temporada.",
+          "title": "La Champions League desata un récord histórico de 4,16 goles por partido",
+          "summary": "La Champions League promedia un récord histórico de 4,16 goles por encuentro este curso, impulsada por el nuevo formato de fase de liga.",
+          "body": [
+            "Con 187 tantos anotados, el torneo registra el promedio anotador más alto en la historia de la Champions League y el tercero global de la Copa de Europa, solo por detrás de las campañas 1955-56 y 1959-60. La segunda jornada batió el récord absoluto con 78 dianas en dos días, tras un estreno de 69 tantos. Nueve duelos disputados el martes sumaron por sí solos otros 40 goles.",
+            "El festín coincide con el cambio de formato introducido en 2024-25, que sustituyó la clásica fase de grupos por una tabla única de 36 equipos. Como 24 clubes superan esta primera criba rumbo a octavos o a la repesca, los analistas señalan que el menor riesgo de eliminación anima a jugar sin ataduras defensivas."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "لا خطر ولكن الكثير من المرح - دوري أبطال أوروبا يسجل رقمًا قياسيًا جديدًا للأهداف",
-          "summary": "كانت الأهداف وفيرة مرة أخرى في دوري أبطال أوروبا يوم الثلاثاء، حيث سجلت المسابقة رقما قياسيا جديدا هذا الموسم.",
+          "title": "دوري أبطال أوروبا يحقق معدلا تهديفيا تاريخيا بـ 4.16 هدف في المباراة",
+          "summary": "يسجل دوري أبطال أوروبا معدلا قياسيا غير مسبوق بلغ 4.16 هدف في كل مباراة هذا الموسم، مستفيدا من نظام مرحلة الدوري الجديد.",
+          "body": [
+            "بـ 187 هدفا حتى الآن، تحقق هذه النسخة أعلى معدل تهديفي في تاريخ دوري أبطال أوروبا وثالث أعلى نسبة في تاريخ كأس أوروبا للأندية البطلة، خلف موسمي 1955-1956 و1959-1960. وحطمت الجولة الثانية الرقم القياسي على الإطلاق بـ 78 هدفا خلال يومين، بعد جولة افتتاحية شهدت 69 هدفا، بينما شهدت تسع مواجهات يوم الثلاثاء وحده تسجيل 40 هدفا.",
+            "تتزامن هذه الغزارة التهديفية مع تغيير نظام البطولة لموسم 2024-2025، حيث استبدل دور المجموعات المعتاد بمجموعة موحدة تضم 36 فريقا. وبما أن 24 ناديا يضمنون العبور نحو ثمن النهائي أو الملحق التأهيلي، يرى الفنيون أن تراجع مخاطر الخروج المبكر سمح للفرق بنبذ الحذر التكتيكي والاندفاع هجوميا بحرية كاملة."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.bbc.co.uk/sport/football/articles/ckg5je34l0q5o?at_medium=RSS&at_campaign=rss",
@@ -321,7 +442,20 @@
           "url": "https://www.bbc.co.uk/sport/football/articles/ckg5je34l0q5o?at_medium=RSS&at_campaign=rss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T01:09:46+00:00"
+        }
+      }
     },
     {
       "id": "13a8decfb926",
@@ -329,27 +463,48 @@
       "summary": "Tanto Daniel Zamora, juez central, como Jorge Baliño, VAR, no fueron incluidos en la próxima jornada del Clausura. Arasa estará en Independiente - Boca, Rey Hilfer en River - Racing y Tello en Banfield-Lanús.",
       "i18n": {
         "es": {
-          "title": "Árbitros de la fecha 14: Beligoy no puso a los responsables del escándalo en Junín",
-          "summary": "Tanto Daniel Zamora, juez central, como Jorge Baliño, VAR, no fueron incluidos en la próxima jornada del Clausura. Arasa estará en Independiente - Boca, Rey Hilfer en River - Racing y Tello en Banfield-Lanús.",
-          "needs_translation": false
+          "title": "Liga Profesional: castigo arbitral tras el polémico Sarmiento-Barracas",
+          "summary": "Federico Beligoy marginó a Daniel Zamora y Jorge Baliño de la fecha 14 de la Liga Profesional tras los fallos en Junín.",
+          "body": [
+            "La Dirección Nacional de Arbitraje apartó al juez principal y al responsable del VAR del choque entre el Verde y el Guapo. Zamora fue relegado a la Primera Nacional para dirigir Central Norte frente a Acassuso, mientras que Baliño directamente no recibió designación. Nicolás Lamolina, cuestionado en la categoría de ascenso, tampoco fue programado por segunda jornada seguida.",
+            "Para los compromisos más destacados del fin de semana, Nazareno Arasa impartirá justicia en Independiente-Boca, Leandro Rey Hilfer dirigirá River-Racing y Facundo Tello estará en el clásico Banfield-Lanús. Además, Andrés Merlos pitará el cruce entre Barracas Central y Estudiantes de Río Cuarto."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Referees of the date 14: Beligoy did not put those responsible for the scandal in Junín",
-          "summary": "Both Daniel Zamora, central judge, and Jorge Baliño, VAR, were not included in the next day of the Clausura. Arasa will be in Independiente - Boca, Rey Hilfer in River - Racing and Tello in Banfield-Lanús.",
+          "title": "Liga Profesional: referees dropped after Sarmiento-Barracas controversy",
+          "summary": "Federico Beligoy has dropped Daniel Zamora and Jorge Baliño from matchday 14 of the Liga Profesional following their disputed calls in Junín.",
+          "body": [
+            "The Dirección Nacional de Arbitraje sidelined both the center referee and the VAR official from the battle between Verde and Guapo. Zamora was demoted to the Primera Nacional to oversee Central Norte against Acassuso, while Baliño was denied any match assignment. Under heavy scrutiny in the second division, Nicolás Lamolina was also left off the schedule for the second straight week.",
+            "In the weekend's marquee fixtures, Nazareno Arasa will take charge of Independiente-Boca, Leandro Rey Hilfer will officiate River-Racing, and Facundo Tello will oversee the Banfield-Lanús derby. Meanwhile, Andrés Merlos will referee the clash between Barracas Central and Estudiantes de Río Cuarto."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Arbitres de la date 14 : Beligoy n'a pas mis les responsables du scandale à Junín",
-          "summary": "Daniel Zamora, juge central, et Jorge Baliño, VAR, n'ont pas été inclus dans la prochaine journée de clôture. Arasa sera à Independiente - Boca, Rey Hilfer à River - Racing et Tello à Banfield-Lanús.",
+          "title": "Liga Profesional : sanctions arbitrales après le sulfureux Sarmiento-Barracas",
+          "summary": "Federico Beligoy a écarté Daniel Zamora et Jorge Baliño de la 14e journée de la Liga Profesional après leurs décisions litigieuses à Junín.",
+          "body": [
+            "La Dirección Nacional de Arbitraje a sévi contre l'arbitre de champ et le responsable du VAR du match entre le Verde et le Guapo. Zamora a été rétrogradé en Primera Nacional pour arbitrer Central Norte face à Acassuso, tandis que Baliño n'a tout simplement reçu aucune désignation. Pris pour cible à l'échelon inférieur, Nicolás Lamolina est lui aussi laissé de côté pour la deuxième journée de suite.",
+            "Sur les grandes affiches du week-end, Nazareno Arasa sera au sifflet pour Independiente-Boca, Leandro Rey Hilfer dirigera River-Racing et Facundo Tello officiera lors du derby Banfield-Lanús. De son côté, Andrés Merlos arbitrera le duel entre Barracas Central et Estudiantes de Río Cuarto."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "حكام التاريخ 14: لم يضع بيليجوي المسؤولين عن الفضيحة في جونين",
-          "summary": "لم يتم تضمين كل من دانيال زامورا، القاضي المركزي، وخورخي بالينيو، فار، في اليوم التالي من كلوسورا. سيكون أراسا في إنديبندينتي - بوكا، وراي هيلفر في ريفر - ريسينغ وتيلو في بانفيلد- لانوس.",
+          "title": "الدوري الأرجنتيني: عقوبات تحكيمية بعد الجدل المثير في لقاء سارمينتو وباراكاس",
+          "summary": "قرر فيديريكو بيليغوي استبعاد الحكمين دانييل زامورا وخورخي بالينيو من الجولة 14 في الدوري الأرجنتيني للمحترفين عقب الأخطاء المؤثرة في خونين.",
+          "body": [
+            "قررت الإدارة الوطنية للتحكيم إبعاد حكم الساحة ومسؤول تقنية الفيديو عن مواجهة سارمينتو وباراكاس؛ حيث جرى تنزيل زامورا إلى دوري الدرجة الثانية لإدارة مباراة سنترال نورتي ضد أكاسوسو، في حين حُرم بالينيو تمامًا من أي تكليف تحكيمي. كما استمر غياب نيكولاس لامولينا عن التعيينات للجولة الثانية تواليًا بعد الانتقادات الحادة التي واجهها في دوري الدرجة الأدنى.",
+            "وبشأن قمم الجولة في عطلة نهاية الأسبوع، سيتولى نازارينو أراسا إدارة قمة إنديبندينتي وبوكا جونيورز، في حين يقود لياندرو ري هيلفر مواجهة ريفر بليت ضد راسينغ، ويضبط فاكوندو تيلو ديربي بانفيلد ولانوس. كما عُين أندريس ميرلوس حكمًا لمباراة باراكاس سنترال وإستوديانتيس دي ريو كوارتو."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/futbol-primera/federicobeligoy-danielzamora-jorgebalino-direccionnacionaldearbitraje-nazarenoarasa-leandroreyhilfer_0_COPj2htupB.html",
@@ -371,7 +526,20 @@
           "url": "https://www.ole.com.ar/futbol-primera/federicobeligoy-danielzamora-jorgebalino-direccionnacionaldearbitraje-nazarenoarasa-leandroreyhilfer_0_COPj2htupB.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T01:09:50+00:00"
+        }
+      }
     },
     {
       "id": "cc8877b99d80",
@@ -379,27 +547,48 @@
       "summary": "El Rojo necesita sacarse el miedo escénico que tiene en el Libertadores de América-Ricardo Enrique Bochini, donde lleva más de 80 días sin ganar. Los detalles.",
       "i18n": {
         "es": {
-          "title": "Independiente obligado y sin margen de error en Avellaneda: los números que preocupan antes de Boca",
-          "summary": "El Rojo necesita sacarse el miedo escénico que tiene en el Libertadores de América-Ricardo Enrique Bochini, donde lleva más de 80 días sin ganar. Los detalles.",
-          "needs_translation": false
+          "title": "Independiente se juega su futuro ante Boca arrastrando una crisis en Avellaneda",
+          "summary": "Independiente llega obligado a vencer a Boca en Avellaneda para no salir de los puestos de clasificación a los playoffs del Torneo Clausura.",
+          "body": [
+            "El triunfo de Newell’s dejó al Rojo al límite en la Zona A y con escasas probabilidades de alcanzar boletos internacionales. En un entorno tenso por los comicios presidenciales del 13 de diciembre, el plantel arrastra cinco presentaciones consecutivas sin ganar en su estadio, periodo en el que apenas anotó dos tantos y encajó nueve.",
+            "La última alegría en el Libertadores de América-Ricardo Enrique Bochini fue el 30 de julio frente a Newell’s, con Gustavo Quinteros como entrenador. Desde entonces pasaron más de 80 días y el equipo apenas sumó cinco de 18 puntos ante su gente, una cosecha del 27,78% que lo ubica como el tercer peor local del certamen, únicamente por delante de Platense y Atlético Tucumán."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Independent obliged and without margin of error in Avellaneda: the numbers that worry before Boca",
-          "summary": "El Rojo needs to shake off the stage fright he has at the Libertadores de América-Ricardo Enrique Bochini, where he has not won for more than 80 days. Details.",
+          "title": "Independiente face high-stakes Boca clash amid deep crisis in Avellaneda",
+          "summary": "Independiente must beat Boca in Avellaneda to avoid tumbling out of the Torneo Clausura playoff positions.",
+          "body": [
+            "Newell’s victory left el Rojo walking a tightrope in Zona A, with their hopes of continental qualification fading fast. Amid escalating tension ahead of the club's December 13 presidential vote, the squad is winless in five consecutive outings at home, scoring just twice while conceding nine.",
+            "Their last home win at the Libertadores de América-Ricardo Enrique Bochini dates back to July 30 against Newell’s, then managed by Gustavo Quinteros. Over 80 days later, they have taken just five of 18 available points in front of their fans—a 27.78% return that ranks them as the tournament's third-worst home side, above only Platense and Atlético Tucumán."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Indépendant obligé et sans marge d'erreur à Avellaneda : les chiffres qui inquiètent avant Boca",
-          "summary": "Le Rouge a besoin de se débarrasser de la peur scénique qu'il a au Libertadores de América-Ricardo Enrique Bochini, où il n'a pas gagné depuis plus de 80 jours. Les détails.",
+          "title": "Independiente joue son avenir face à Boca en pleine crise à Avellaneda",
+          "summary": "Independiente n'a plus le choix : une victoire contre Boca à Avellaneda s'impose pour rester dans les places qualificatives pour les play-offs du Torneo Clausura.",
+          "body": [
+            "Le succès de Newell’s a poussé le Rojo au bord de la rupture dans la Zona A, amenuisant ses chances de qualification continentale. Dans un climat lourd avant l'élection présidentielle du 13 décembre, le groupe reste sur cinq matchs sans victoire dans son stade, avec seulement deux buts marqués contre neuf concédés.",
+            "La dernière victoire au Libertadores de América-Ricardo Enrique Bochini remonte au 30 juillet face à Newell’s, sous la houlette de Gustavo Quinteros. Plus de 80 jours plus tard, le bilan est famélique : cinq points pris sur 18 possibles à domicile, soit un faible 27,78 % qui en fait le troisième pire bilan sur ses terres, devant seulement Platense et Atlético Tucumán."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "مستقل ملزم وبدون هامش خطأ في Avellaneda: الأرقام التي تقلق قبل Boca",
-          "summary": "يحتاج الروخو إلى التخلص من خوفه على خشبة المسرح في Libertadores de América - Ricardo Enrique Bochini، حيث لم يفز لأكثر من 80 يومًا. التفاصيل.",
+          "title": "إنديبندينتي يواجه بوكا في أفيانيدا وعينه على تفادي الخروج وسط أزمة خانقة",
+          "summary": "يدخل إنديبندينتي مواجهته أمام بوكا في أفيانيدا تحت ضغط حتمي لتحقيق الفوز، سعياً للحفاظ على مقعده في تصفيات بطولة كلاوسورا.",
+          "body": [
+            "تسبب انتصار نيولز أولد بويز في وضع \"الروخو\" بموقف بالغ الحرج ضمن المجموعة الأولى، مع تضاؤل فرصه في التأهل إلى المسابقات القارية. وفي ظل أجواء مشحونة تسبق الانتخابات الرئاسية المقررة في 13 ديسمبر، يمر الفريق بسلسلة سلبية امتدت لخمس مباريات متتالية دون فوز على أرضه، لم يسجل خلالها سوى هدفين بينما استقبلت شباكه تسعة أهداف.",
+            "ويعود آخر فوز للفريق على ملعب ليبرتادوريس دي أمريكا - ريكاردو إنريكي بوشيني إلى 30 يوليو الماضي أمام نيولز أولد بويز بقيادة المدرب غوستافو كينتيروس. ومنذ ذلك الوقت، مرت أكثر من 80 يوماً لم يجمع خلالها سوى خمس نقاط من أصل 18 نقطة ممكنة بين أنصاره، بنسبة نجاح متواضعة بلغت 27.78% جعلته ثالث أسوأ فريق على ملعبه في المسابقة، متفوقاً فقط على بلاتينسي وأتلتيكو توكومان."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/independiente/independiente-boca-torneoclausura-jadsonviera-racing_0_uZetBkoXTa.html",
@@ -421,7 +610,20 @@
           "url": "https://www.ole.com.ar/independiente/independiente-boca-torneoclausura-jadsonviera-racing_0_uZetBkoXTa.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T01:09:54+00:00"
+        }
+      }
     },
     {
       "id": "9de3d6416857",
@@ -635,27 +837,48 @@
       "summary": "Después de la victoria del PSG sobre el Barça, Luis Enrique no ocultó en ningún momento la exigencia y los aprietos que su equipo había pasado ante los azulgrana, aunque extrajo una conclusión positiva: “Vi al PSG como siempre” ante un rival, ‘su’ Barça que supo manejar…",
       "i18n": {
         "es": {
-          "title": "Lucho: \"No caeré en la trampa de pensar que somos mejores\"",
-          "summary": "Después de la victoria del PSG sobre el Barça, Luis Enrique no ocultó en ningún momento la exigencia y los aprietos que su equipo había pasado ante los azulgrana, aunque extrajo una conclusión positiva: “Vi al PSG como siempre” ante un rival, ‘su’ Barça que supo manejar…",
-          "needs_translation": false
+          "title": "Luis Enrique frena la euforia del PSG tras batir al Barça",
+          "summary": "Tras vencer al Barça, Luis Enrique frenó la euforia del PSG y advirtió del peligro de considerarse superiores tras superar un duelo de máxima exigencia.",
+          "body": [
+            "El técnico asturiano admitió que su equipo sufrió durante quince minutos en la segunda mitad frente a un Barça que llegaba lanzado con once victorias seguidas. Pese a que el 1-0 de Doué tranquilizó al grupo, Lucho remarcó que sería un error grave considerarse especiales o los mejores de Europa.",
+            "Asimismo, destacó el sacrificio defensivo de sus delanteros para frenar a Lamine Yamal, Dani Olmo y Fermín mediante la presión alta, reafirmando su afecto culé sin ocultar su satisfacción profesional con el PSG."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "I fight: “I won't fall into the trap of thinking we're better”",
-          "summary": "After the victory of PSG over Barça, Luis Enrique did not hide at any time the demands and the difficulties that his team had gone through against Barça, although he drew a positive conclusion: \"I saw PSG as always\" before a rival, ‘his‘ Barça that he knew how to handle...",
+          "title": "Luis Enrique dampens PSG euphoria after beating Barça",
+          "summary": "Following the victory over Barça, Luis Enrique moved quickly to cool PSG celebrations, warning against the trap of feeling superior after clearing a tough test.",
+          "body": [
+            "The coach admitted his side suffered for fifteen minutes during the second half against a Barça team that had won all eleven matches this season. While Doué's opener brought relief, Lucho insisted it would be a major mistake to believe they are special or the best.",
+            "He singled out the defensive work of his forwards to contain Lamine Yamal, Dani Olmo, and Fermín through constant pressing in the opposition half, reaffirming his culé affection while celebrating his success with PSG."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Lucho : « Je ne tomberai pas dans le piège de penser que nous sommes meilleurs »",
-          "summary": "Après la victoire du PSG sur le Barça, Luis Enrique n'a à aucun moment caché l'exigence et les difficultés que son équipe avait rencontrées face au Barça, bien qu'il ait tiré une conclusion positive : « J'ai vu le PSG comme toujours » face à un rival, « son » Barça qu'il a su gérer...",
+          "title": "Luis Enrique calme l'euphorie du PSG après avoir battu le Barça",
+          "summary": "Après la victoire face au Barça, Luis Enrique a tempéré l'enthousiasme du PSG, refusant de tomber dans le piège de se croire supérieur aux autres.",
+          "body": [
+            "L'entraîneur asturien a reconnu que son équipe avait souffert un quart d'heure en seconde période face à des Catalans forts de onze victoires en onze matches. Si l'ouverture du score de Doué a soulagé Paris, Lucho a prévenu qu'il serait insensé de se prendre pour les meilleurs.",
+            "Il a salué le repli de ses attaquants pour museler Lamine Yamal, Dani Olmo et Fermín grâce à un pressing haut, tout en réaffirmant son attachement au Barça sans masquer son plaisir d'avoir gagné avec le PSG."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "أقاتل: \"لن أقع في فخ الاعتقاد بأننا أفضل\"",
-          "summary": "بعد انتصار باريس سان جيرمان على برشلونة، لم يخف لويس إنريكي في أي وقت المطالب والصعوبات التي مر بها فريقه ضد برشلونة، على الرغم من أنه توصل إلى استنتاج إيجابي: \"رأيت باريس سان جيرمان كما هو الحال دائمًا\" أمام منافسه \"،\" برشلونة \"الذي كان يعرف كيفية التعامل معه...",
+          "title": "لويس إنريكي يهدئ حماس باريس سان جيرمان بعد إسقاط برشلونة",
+          "summary": "عقب التغلب على برشلونة، سارع لويس إنريكي إلى تهدئة الحماس في صفوف باريس سان جيرمان، محذراً من مغبة الوقوع في فخ الشعور بالأفضلية المطلقة.",
+          "body": [
+            "واعترف المدرب الإسباني بأن فريقه عانى لنحو ربع ساعة في الشوط الثاني أمام برشلونة، الذي خاض اللقاء برصيد أحد عشر فوزاً متتالياً. ورغم أن هدف دوي منح فريقه الأسبقية والهدوء، شدد لوتشو على أن الاعتقاد بأنهم الأفضل أو أنهم فريق استثنائي سيكون خطأً جسيماً.",
+            "وأشاد المدير الفني بالجهد الدفاعي لمهاجميه لتحييد خطورة لامين يامال وداني أولمو وفيرمين بالضغط العالي وافتكاك الكرات، مؤكداً في الوقت ذاته انتماءه لبرشلونة مع اعتزازه التام بقيادة باريس سان جيرمان للانتصار."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261021/1004241322/lucho-no-caere-trampa-pensar-mejores.html",
@@ -677,7 +900,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261021/1004241322/lucho-no-caere-trampa-pensar-mejores.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full"
+      }
     },
     {
       "id": "26d01ea151db",
@@ -727,7 +955,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261021/1004241320/ritmo-infernal.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "186a445bb36a",
@@ -735,33 +968,54 @@
       "summary": "Der VfB Stuttgart konnte gegen Atletico Madrid sportlich überzeugen, kam am Ende aber nicht über ein 1:1 hinaus. Die Hingabe der Fans wurde dabei nicht belohnt, erklärt kicker-Reporter Geroge Moissidis.",
       "i18n": {
         "de": {
-          "title": "\"Die stärkste Halbzeit der Saison\": VfB bringt sich um den Lohn",
-          "summary": "Der VfB Stuttgart konnte gegen Atletico Madrid sportlich überzeugen, kam am Ende aber nicht über ein 1:1 hinaus. Die Hingabe der Fans wurde dabei nicht belohnt, erklärt kicker-Reporter Geroge Moissidis.",
-          "needs_translation": false
+          "title": "VfB Stuttgart verpasst Sieg gegen Atlético Madrid trotz starker Leistung",
+          "summary": "Trotz einer sportlich überzeugenden Vorstellung hat sich der VfB Stuttgart gegen Atlético Madrid mit einem 1:1-Unentschieden begnügen müssen.",
+          "body": [
+            "Laut kicker-Reporter George Moissidis bot das Team gegen die Spanier phasenweise die stärkste Halbzeit der bisherigen Saison. Am Ende brachten sich die Schwaben jedoch um den verdienten Ertrag, wodurch auch die Hingabe der Fans auf den Rängen unbelohnt blieb."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "\"The strongest half of the season\": VfB loses the pay",
-          "summary": "VfB Stuttgart were able to impress against Atletico Madrid, but in the end did not go beyond a 1:1. The dedication of the fans was not rewarded, explains kicker reporter Geroge Moissidis.",
+          "title": "VfB Stuttgart held by Atlético Madrid despite impressive display",
+          "summary": "Despite a compelling performance, VfB Stuttgart had to settle for a 1-1 draw against Atlético Madrid.",
+          "body": [
+            "According to kicker reporter George Moissidis, the team delivered phases of their best football this season against the Spaniards. In the end, however, the Swabians cost themselves a deserved victory, leaving the passionate fans in the stands empty-handed."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "« La mi-temps la plus forte de la saison » : le VfB se prive de salaire",
-          "summary": "Le VfB Stuttgart a réussi à convaincre de manière sportive contre l'Atlético Madrid, mais n'a finalement pas dépassé 1:1. Le dévouement des fans n'a pas été récompensé, explique le journaliste de kicker Geroge Moissidis.",
+          "title": "Le VfB Stuttgart accroché par l'Atlético Madrid malgré une grosse prestation",
+          "summary": "Malgré une prestation très convaincante, le VfB Stuttgart a dû se contenter d'un match nul 1-1 face à l'Atlético Madrid.",
+          "body": [
+            "Selon le journaliste de kicker George Moissidis, l'équipe a livré par moments sa meilleure mi-temps de la saison face aux Espagnols. Mais les Souabes se sont finalement privés d'un succès mérité, laissant sans récompense la ferveur de leurs supporters en tribunes."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "\"La mitad más fuerte de la temporada\": el VfB se quita el sueldo",
-          "summary": "El VfB Stuttgart fue convincente contra el Atlético de Madrid, pero al final no superó el 1-1. La dedicación de los aficionados no fue recompensada, explica el reportero de kicker Geroge Moissidis.",
+          "title": "El VfB Stuttgart se queda sin premio ante el Atlético Madrid pese a su gran imagen",
+          "summary": "Pese a firmar una actuación muy convincente, el VfB Stuttgart tuvo que conformarse con un empate 1-1 ante el Atlético Madrid.",
+          "body": [
+            "Según el periodista de kicker George Moissidis, el equipo completó por momentos su mejor mitad de la temporada frente a los españoles. Sin embargo, los suabos acabaron tirando su merecida recompensa, dejando sin premio la entrega de su afición en la grada."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "\"أقوى نصف في الموسم \": يخسر VfB الراتب",
-          "summary": "كان شتوتغارت قادرا على التأثير ضد أتلتيكو مدريد، ولكن في النهاية لم يتجاوز 1:1. لم يكافأ تفاني المشجعين، كما يشرح مراسل كيكر غيروج مويسيديس.",
+          "title": "شتوتغارت يفرط في الفوز أمام أتلتيكو مدريد رغم تألقه",
+          "summary": "رغم تقديمه أداء مقنعاً للغاية، اكتفى نادي شتوتغارت بنتيجة التعادل 1-1 أمام ضيفه أتلتيكو مدريد.",
+          "body": [
+            "وفقاً لمراسل مجلة كيكر جورج مويسيديس، قدم الفريق في فترات من اللقاء أمام الإسبان أقوى شوط له هذا الموسم. غير أن لاعبي شتوتغارت أهدروا في النهاية مكافأة مستحقة، ليذهب الحماس الكبير لجماهيرهم في المدرجات دون جدوى."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.kicker.de/die-staerkste-halbzeit-der-saison-vfb-bringt-sich-um-den-lohn-1263535/video#omrss",
@@ -783,7 +1037,12 @@
           "url": "https://www.kicker.de/die-staerkste-halbzeit-der-saison-vfb-bringt-sich-um-den-lohn-1263535/video#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss"
+      }
     },
     {
       "id": "c3e3c4c48f29",
