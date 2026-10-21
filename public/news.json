@@ -165,7 +165,12 @@
           "url": "https://www.lefigaro.fr/sports/football/live/ligue-des-champions/2026/2685411/paris-sg-barcelone"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "019789bb8220",
@@ -173,44 +178,44 @@
       "summary": "Comme à Manchester la semaine dernière (4-2), Désiré Doué et Vitinha ont participé à doucher le Barça (4-2) mardi soir avec des buts dont ils ont le secret. Une bonne habitude dans les grands rendez-vous.",
       "i18n": {
         "fr": {
-          "title": "PSG-Barça : Paris s'impose au terme d'un second acte renversant",
-          "summary": "Le Paris Saint-Germain a battu le FC Barcelone 4-2 au Parc des Princes ce mardi, au terme d'une seconde période spectaculaire.",
+          "title": "Le PSG fait chuter le Barça 4-2 au terme d'une seconde période folle",
+          "summary": "Le Paris Saint-Germain a dominé le FC Barcelone 4-2 mardi au Parc des Princes, grâce à un second acte totalement fou.",
           "body": [
-            "Durant neuf minutes de pure folie après la pause, trois réalisations ont enflammé la rencontre et permis à Paris de reprendre l'avantage à deux reprises. Le choc a également été marqué par le duel remporté par Hernandez face à Yamal, ainsi que par les prestations remarquées de Vitinha et Doué."
+            "Opposés aux Catalans devant leur public, les Parisiens ont fait basculer la rencontre après la pause. Cette victoire nette au terme de quarante-cinq dernières minutes particulièrement animées permet au club de la capitale de s'offrir un succès de prestige face au Barça."
           ],
           "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-editor"
+          "engine": "retire-par-audit"
         },
         "en": {
-          "title": "PSG 4-2 Barça: Paris prevail after breathless second half",
-          "summary": "Paris Saint-Germain defeated Barcelona 4-2 at the Parc des Princes on Tuesday, prevailing after a dramatic second half.",
+          "title": "PSG down Barça 4-2 after wild second half",
+          "summary": "Paris Saint-Germain beat FC Barcelona 4-2 on Tuesday at the Parc des Princes, propelled by an electric second half.",
           "body": [
-            "A frantic nine-minute spell after the break produced three goals, with Paris fighting back to retake the lead twice. The clash also highlighted Hernandez's mastery over Yamal, alongside standout performances from Vitinha and Doué."
+            "Playing in front of their home crowd, the Parisian side turned the match around after the interval. The commanding win capped a breathless final 45 minutes to seal a statement victory against Barça."
           ],
           "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-editor"
+          "engine": "retire-par-audit"
         },
         "es": {
-          "title": "PSG-Barça: El Paris se impone tras una segunda parte de locura",
-          "summary": "El Paris Saint-Germain venció 4-2 al FC Barcelona este martes en el Parc des Princes tras una segunda parte espectacular.",
+          "title": "El PSG tumba al Barça 4-2 tras una segunda parte de locura",
+          "summary": "El Paris Saint-Germain se impuso al FC Barcelona por 4-2 este martes en el Parc des Princes, impulsado por un segundo acto frenético.",
           "body": [
-            "En apenas nueve minutos de locura tras el descanso, tres goles sacudieron el encuentro y permitieron al Paris retomar la ventaja en dos ocasiones. El choque estuvo marcado por el marcaje de Hernandez sobre Yamal y las actuaciones estelares de Vitinha y Doué."
+            "Ante su público frente al conjunto catalán, los parisinos decantaron el choque tras el descanso. Este rotundo triunfo tras unos últimos cuarenta y cinco minutos de máxima intensidad brinda al club galo una victoria de prestigio frente al Barça."
           ],
           "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-editor"
+          "engine": "retire-par-audit"
         },
         "ar": {
-          "title": "باريس سان جيرمان يهزم برشلونة 4-2 في قمة مثيرة",
-          "summary": "تغلب باريس سان جيرمان على برشلونة 4-2 في بارك دي برانس هذا الثلاثاء، إثر شوط ثانٍ حافل بالإثارة والتشويق.",
+          "title": "باريس سان جيرمان يسقط برشلونة 4-2 بعد شوط ثانٍ جنوني",
+          "summary": "تغلب باريس سان جيرمان على برشلونة بنتيجة 4-2 يوم الثلاثاء على ملعب حديقة الأمراء، بفضل شوط ثانٍ ناري ومثير.",
           "body": [
-            "شهدت تسع دقائق مجنونة بعد الاستراحة تسجيل ثلاثة أهداف واستعادة باريس التقدم في مناسبتين. وتميزت المواجهة بتفوق هيرنانديز في مراقبة يامال، إلى جانب تألق لافت من فيتينيا ودوي."
+            "وأمام جماهيرهم في مواجهة الفريق الكتالوني، قلب الباريسيون مجريات المباراة بعد الاستراحة، ليحسموا فوزاً مستحقاً عقب 45 دقيقة أخيرة مشتعلة، مسجلين انتصاراً ثميناً أمام برشلونة."
           ],
           "format": "brief",
           "needs_translation": false,
-          "engine": "gemini-editor"
+          "engine": "retire-par-audit"
         }
       },
       "url": "https://www.lequipe.fr/Football/Article/Desire-doue-et-vitinha-encore-decisifs-dans-le-succes-du-psg-face-au-barca-des-buts-qui-leur-ressemblent-tant/1737384#at_medium=RSS_feeds",
@@ -238,7 +243,25 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/les-notes-du-psg-contre-le-barca-hernandez-devore-yamal-vitinha-le-virtuose-et-doue-le-magicien-20261020"
         }
       ],
-      "source_count": 2
+      "source_count": 2,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 5.0,
+          "central_restitue": true,
+          "manque": [
+            "Les buts de Désiré Doué et Vitinha",
+            "Les performances individuelles soulignées (Hernandez face à Yamal)"
+          ],
+          "erreurs": [
+            "Détails inventés non présents dans la source concernant le scénario du match ('seconde période folle', bascule après la pause)"
+          ],
+          "retire": true,
+          "ts": "2026-10-21T06:11:50+00:00"
+        }
+      }
     },
     {
       "id": "d271eec5ddb8",
@@ -246,27 +269,48 @@
       "summary": "Les hommes de Luis Enrique l’ont emporté face au FC Barcelone ce mardi, au Parc des Princes, lors de la 3e journée de C1. Un nouveau chef d’oeuvre.œuvre",
       "i18n": {
         "fr": {
-          "title": "Ligue des champions : le PSG s’offre le Barça et marque (encore) les esprits",
-          "summary": "Les hommes de Luis Enrique l’ont emporté face au FC Barcelone ce mardi, au Parc des Princes, lors de la 3e journée de C1. Un nouveau chef d’oeuvre.œuvre",
-          "needs_translation": false
+          "title": "Ligue des champions : le PSG terrasse le Barça dans un choc spectaculaire (4-2)",
+          "summary": "Le Paris Saint-Germain a dominé le FC Barcelone 4-2 au Parc des Princes mardi lors de la troisième journée de Ligue des champions.",
+          "body": [
+            "Désiré Doué a ouvert la marque avant la pause, puis Lucas Hernandez a redonné l'avantage aux Parisiens d'un coup de tête après l'égalisation d'Espart. Rattrapé par un coup d'éclat de Lamine Yamal à dix minutes de la fin, Paris a aussitôt riposté d'un tir limpide de Vitinha, avant le break de Fabián Ruiz à la 86e minute.",
+            "Une semaine après leur succès 4-2 sur la pelouse de Manchester City, les champions d'Europe infligent aux Catalans leur premier revers après onze victoires d'affilée cette saison. Reste le coût physique : Ousmane Dembélé, Khvicha Kvaratskhelia et Marquinhos sont tous sortis sur blessure."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Champions League: PSG offers Barça and marks (again) the spirits",
-          "summary": "Luis Enrique's men won against FC Barcelona on Tuesday at the Parc des Princes, on Day 3 of C1. A new masterpiece.work",
+          "title": "Champions League: PSG down Barcelona 4-2 in pulsating Paris clash",
+          "summary": "Paris Saint-Germain defeated FC Barcelona 4-2 at the Parc des Princes on Tuesday during matchday three of the Champions League.",
+          "body": [
+            "Désiré Doué opened the scoring before the break, and Lucas Hernandez restored Paris's lead with a header after Espart equalised. Lamine Yamal brought Barcelona level again with ten minutes to go, but a thunderous strike from Vitinha and an 86th-minute clincher by Fabián Ruiz sealed the win.",
+            "A week after conquering Manchester City 4-2 away, Luis Enrique's squad ended Barcelona's perfect eleven-game winning start to the season. The victory came at a price, with Ousmane Dembélé, Khvicha Kvaratskhelia and Marquinhos all forced off through injury."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Liga de Campeones: el PSG se ofrece al Barça y marca (de nuevo) los espíritus",
-          "summary": "Los hombres de Luis Enrique se impusieron al FC Barcelona este martes, en el Parque de los Príncipes, en la tercera jornada de la Champions League. Una nueva obra maestra.obra",
+          "title": "Champions League: el PSG tumba al Barça en un festival ofensivo (4-2)",
+          "summary": "El Paris Saint-Germain derrotó 4-2 al FC Barcelona en el Parc des Princes este martes en la tercera jornada de la Champions League.",
+          "body": [
+            "Désiré Doué adelantó a los locales antes del descanso y Lucas Hernandez devolvió la ventaja con un testarazo tras el empate de Espart. Cuando Lamine Yamal volvió a equilibrar el marcador a diez minutos del cierre, un zapatazo de Vitinha y el tanto de Fabián Ruiz en el 86 sellaron la victoria parisina.",
+            "Siete días después de imponerse 4-2 al Manchester City, el cuadro de Luis Enrique corta la racha de once triunfos consecutivos del conjunto azulgrana esta temporada. El peaje llegó en la enfermería: Ousmane Dembélé, Khvicha Kvaratskhelia y Marquinhos se retiraron lesionados."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري أبطال أوروبا: باريس سان جيرمان يقدم برشلونة ويحدد (مرة أخرى) الأرواح",
-          "summary": "فاز رجال لويس إنريكي على نادي برشلونة يوم الثلاثاء في بارك دي برينس، في اليوم الثالث من C1. عمل فني جديد.",
+          "title": "دوري أبطال أوروبا: باريس سان جيرمان يسقط برشلونة 4-2 في قمة مثيرة",
+          "summary": "فاز باريس سان جيرمان على ضيفه برشلونة بنتيجة 4-2 في حديقة الأمراء ضمن الجولة الثالثة من مسابقة دوري أبطال أوروبا.",
+          "body": [
+            "افتتح ديزيريه دويه التسجيل قبل الاستراحة، وأعاد لوكاس هيرنانديز التقدم للفريق الباريسي برأسية بعد هدف التعادل لإسبارت. ورغم تعديل لامين يامال النتيجة بمهارة فردية قبل عشر دقائق من النهاية، رد باريس سريعاً بقذيفة من فيتينيا قبل أن يحسم فابيان رويز المواجهة في الدقيقة 86.",
+            "بعد أسبوع من التفوق على مانشستر سيتي بنتيجة 4-2، ألحقت كتيبة لويس إنريكي بالنادي الكتالوني خسارته الأولى هذا الموسم بعد سلسلة من أحد عشر انتصاراً متتالياً. ودفعت التشكيلة الباريسية ثمناً باهظاً بتعرض عثمان ديمبيلي وخفيتشا كفاراتسخيليا وماركينيوس للإصابة."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/irresistible-le-paris-sg-remporte-un-formidable-choc-face-a-barcelone-en-ligue-des-champions-20261020",
@@ -288,7 +332,20 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/irresistible-le-paris-sg-remporte-un-formidable-choc-face-a-barcelone-en-ligue-des-champions-20261020"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T06:11:55+00:00"
+        }
+      }
     },
     {
       "id": "ffaec88c1a0b",
@@ -338,7 +395,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/psg-barca-en-video-la-frappe-lumineuse-de-doue-qui-offre-l-avantage-a-paris-20261020"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "419c3ef15c11",
@@ -346,27 +408,44 @@
       "summary": "Après deux défaites, les Lillois doivent réagir pour ne pas diminuer fortement leur chance de se qualifier pour la suite de la Ligue des champions face à Galatasaray ce mercredi (18h45). Et pour empêcher la morosité de s'installer.",
       "i18n": {
         "fr": {
-          "title": "Crainte de nouveaux débordements, match à enjeu, retour de Victor Osimhen... Lille a des points à prendre face à Galatasaray, mais surtout des nuages à chasser",
-          "summary": "Après deux défaites, les Lillois doivent réagir pour ne pas diminuer fortement leur chance de se qualifier pour la suite de la Ligue des champions face à Galatasaray ce mercredi (18h45). Et pour empêcher la morosité de s'installer.",
-          "needs_translation": false
+          "title": "Lille sous pression face à Galatasaray en Ligue des champions",
+          "summary": "Lille affronte Galatasaray ce mercredi à 18h45 avec l'obligation de stopper sa série de revers pour rester dans la course en Ligue des champions.",
+          "body": [
+            "Sur deux défaites consécutives, le club nordiste joue gros pour préserver ses chances d'accès au tour suivant et dissiper les doutes sportifs. Le rendez-vous s'annonce particulièrement délicat, marqué par la crainte de débordements extrasportifs et les retrouvailles avec leur ancien attaquant Victor Osimhen."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Fear of new excesses, stakes match, return of Victor Osimhen... Lille has points to take against Galatasaray, but especially clouds to hunt",
-          "summary": "After two defeats, the Lillois must react so as not to greatly reduce their chance of qualifying for the rest of the Champions League against Galatasaray this Wednesday (18:45). And to prevent the gloom from settling in.",
+          "title": "Lille under heavy pressure against Galatasaray in Champions League",
+          "summary": "Lille host Galatasaray this Wednesday at 18:45, needing to halt a losing streak to keep their Champions League hopes alive.",
+          "body": [
+            "Coming off back-to-back defeats, the French side have everything to play for to preserve their knockout chances and silence mounting doubts. It looks set to be a tense clash, overshadowed by security fears off the pitch and a high-stakes reunion with former striker Victor Osimhen."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Temor a nuevos desbordamientos, partido en juego, regreso de Victor Osimhen... Lille tiene puntos que afrontar frente al Galatasaray, pero sobre todo nubes que expulsar",
-          "summary": "Después de dos derrotas, los Lille deben reaccionar para no disminuir drásticamente su oportunidad de clasificarse para la continuación de la Liga de Campeones contra el Galatasaray este miércoles (18:45). Y para evitar que se asiente la melancolía.",
+          "title": "Lille, bajo máxima presión ante Galatasaray en la Champions League",
+          "summary": "Lille se mide este miércoles (18:45) a Galatasaray con la urgencia de cortar su racha de derrotas para no descolgarse en la Champions League.",
+          "body": [
+            "Tras encadenar dos tropiezos seguidos, el conjunto galo se juega la vida para seguir aspirando a la siguiente ronda y disipar dudas deportivas. La cita se anticipa de máxima tensión, condicionada por el temor a altercados extradeportivos y el reencuentro con su exdelantero Victor Osimhen."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "الخوف من التجاوزات الجديدة، ومباراة الرهانات، وعودة فيكتور أوسيمن... لدى ليل نقاط لتأخذها ضد غلطة سراي، ولكن يجب اصطياد الغيوم بشكل خاص",
-          "summary": "بعد هزيمتين، يجب على ليلوا الرد حتى لا تقلل بشكل كبير من فرصتهم في التأهل لبقية دوري أبطال أوروبا ضد غلطة سراي هذا الأربعاء (18:45). ولمنع الكآبة من الاستقرار.",
+          "title": "ليل تحت ضغط شديد أمام غلطة سراي في دوري أبطال أوروبا",
+          "summary": "يواجه ليل نظيره غلطة سراي هذا الأربعاء في تمام الساعة 18:45، وسط حتمية إيقاف سلسلة هزائمه للبقاء في سباق دوري أبطال أوروبا.",
+          "body": [
+            "بعد تجرعه هزيمتين متتاليتين، يلعب النادي الفرنسي تحت رهان مصيري للحفاظ على آماله في بلوغ الدور المقبل وتبديد الشكوك الفنية. وتبدو المواجهة محفوفة بالمخاطر، في ظل مخاوف من اضطرابات خارج الملعب، وتجدد اللقاء مع مهاجمهم السابق فيكتور أوسيمين."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Article/Crainte-de-nouveaux-debordements-match-a-enjeu-retour-de-victor-osimhen-lille-a-des-points-a-prendre-face-a-galatasaray-mais-surtout-des-nuages-a-chasser/1737349#at_medium=RSS_feeds",
@@ -388,7 +467,20 @@
           "url": "https://www.lequipe.fr/Football/Article/Crainte-de-nouveaux-debordements-match-a-enjeu-retour-de-victor-osimhen-lille-a-des-points-a-prendre-face-a-galatasaray-mais-surtout-des-nuages-a-chasser/1737349#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T06:12:00+00:00"
+        }
+      }
     },
     {
       "id": "57941473a8ea",
@@ -446,27 +538,44 @@
       "summary": "LE SCAN SPORT - Lors de l’entrée sur la pelouse des joueurs, un tifo déployé par le groupe de supporters du PSG mardi soir contre le FC Barcelone n’a pas été apprécié par les dirigeants espagnols.",
       "i18n": {
         "fr": {
-          "title": "«Massacre à la parisienne» : le Barça mécontent du tifo des supporters du PSG… Signalement à venir à l’UEFA ?",
-          "summary": "LE SCAN SPORT - Lors de l’entrée sur la pelouse des joueurs, un tifo déployé par le groupe de supporters du PSG mardi soir contre le FC Barcelone n’a pas été apprécié par les dirigeants espagnols.",
-          "needs_translation": false
+          "title": "Tifo anti-Barça : les dirigeants catalans prêts à saisir l'UEFA",
+          "summary": "Le FC Barcelone envisage de signaler à l'UEFA le tifo sanglant déployé par les ultras du Paris Saint-Germain mardi soir au Parc des Princes.",
+          "body": [
+            "Avant la victoire parisienne (4-2), le Collectif Ultras Paris a déployé en tribune Auteuil une fresque inspirée du film « Massacre à la tronçonneuse », montrant le personnage Leatherface découper l'écusson catalan sous le slogan « Massacre à la parisienne ». Selon le quotidien Sport, l'état-major barcelonais juge cette scénographie agressive et s'apprête à porter réclamation auprès de l'instance européenne."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "\"Parisian Massacre\": Barça dissatisfied with the tifo of PSG supporters... Upcoming signal to UEFA?",
-          "summary": "The SPORTS SCAN - When entering the players' lawn, a tifo deployed by the PSG fan group on Tuesday night against FC Barcelona was not appreciated by the Spanish leaders.",
+          "title": "Anti-Barça tifo: Catalan chiefs ready to report incident to UEFA",
+          "summary": "FC Barcelona are considering reporting Paris Saint-Germain ultras to UEFA over the gory tifo unveiled Tuesday night at the Parc des Princes.",
+          "body": [
+            "Ahead of the Parisians' 4-2 victory, the Collectif Ultras Paris unfurled a banner in the Auteuil stand inspired by 'The Texas Chain Saw Massacre', depicting the character Leatherface slicing through the Catalan crest alongside the words 'Massacre à la parisienne'. According to daily newspaper Sport, the FC Barcelona board viewed the display as overtly aggressive and are preparing to file a formal complaint with European football's governing body."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "\"Masacre a la parisina\": el Barça descontento con el tifo de los aficionados del PSG...",
-          "summary": "EL ESCANEO DEPORTIVO - Durante la entrada en el césped de los jugadores, un tifo desplegado por el grupo de aficionados del PSG el martes por la noche contra el FC Barcelona no fue apreciado por los dirigentes españoles.",
+          "title": "Tifo anti-Barça: la directiva azulgrana valora denunciarlo ante la UEFA",
+          "summary": "El FC Barcelona estudia elevar una queja a la UEFA por el sangriento tifo exhibido por los ultras del Paris Saint-Germain este martes en el Parc des Princes.",
+          "body": [
+            "Antes del triunfo parisino (4-2), el Collectif Ultras Paris desplegó en el fondo Auteuil una lona inspirada en «La matanza de Texas», con el personaje Leatherface serrando el escudo blaugrana bajo el lema «Massacre à la parisienne». Según el diario Sport, la cúpula del FC Barcelona considera agresivo este montaje y ultima una protesta formal ante el organismo europeo."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "\"المجزرة الباريسية \": برشلونة غير راضٍ عن تيفو مؤيدي باريس سان جيرمان... الإشارة القادمة إلى الاتحاد الأوروبي لكرة القدم ؟",
-          "summary": "المسح الرياضي - عند دخول حديقة اللاعبين، لم يحظ التيفو الذي نشرته مجموعة مشجعي باريس سان جيرمان ليلة الثلاثاء ضد نادي برشلونة بتقدير من قبل القادة الإسبان.",
+          "title": "تيفو ضد برشلونة: الإدارة الكتالونية تستعد لتقديم شكوى لدى اليويفا",
+          "summary": "يدرس نادي برشلونة التقدم بشكوى رسمية إلى الاتحاد الأوروبي لكرة القدم بشأن «التيفو» الدموي الذي رفعته جماهير أولتراس باريس سان جيرمان مساء الثلاثاء في ملعب بارك دي برانس.",
+          "body": [
+            "وقبل فوز أصحاب الأرض (4-2)، رفعت رابطة كوليكتيف أولتراس باريس في مدرج أوتوي لوحة مستوحاة من فيلم «مجزرة منشار تكساس»، تُظهر شخصية ليذرفيس وهي تقطع شعار النادي الكتالوني تحت شعار «مجزرة على الطريقة الباريسية». وبحسب صحيفة سبورت، اعتبر مسؤولو برشلونة هذا المشهد عدوانياً ويستعدون لرفع شكوى رسمية إلى الهيئة القارية."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/massacre-a-la-parisienne-le-barca-mecontent-du-tifo-des-supporters-du-psg-signalement-a-venir-a-l-uefa-20261021",
@@ -488,7 +597,20 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/massacre-a-la-parisienne-le-barca-mecontent-du-tifo-des-supporters-du-psg-signalement-a-venir-a-l-uefa-20261021"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T06:12:05+00:00"
+        }
+      }
     },
     {
       "id": "b43cfc6fba52",
@@ -546,27 +668,44 @@
       "summary": "Minutos después de la victoria del Xeneize ante Vasco en el Maracaná, el presidente de AFA emitió sus felicitaciones mediante redes sociales.",
       "i18n": {
         "es": {
-          "title": "El mensaje de Chiqui Tapia para Boca finalista de la Sudamericana",
-          "summary": "Minutos después de la victoria del Xeneize ante Vasco en el Maracaná, el presidente de AFA emitió sus felicitaciones mediante redes sociales.",
-          "needs_translation": false
+          "title": "Tapia felicitó a Boca tras alcanzar la final de la Sudamericana",
+          "summary": "Claudio Tapia felicitó públicamente a Boca Juniors tras vencer 3-1 a Vasco en el Maracaná y sellar su clasificación a la final de la Copa Sudamericana.",
+          "body": [
+            "El presidente de la AFA dedicó un mensaje en redes sociales a Juan Román Riquelme, al plantel xeneize y a los hinchas tras la victoria en Río de Janeiro. Además de destacar la presencia del fútbol argentino en otra definición internacional, el dirigente les deseó el mayor de los éxitos para el duelo decisivo que se disputará en Barranquilla."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "The message of Chiqui Tapia for Boca finalist of the South American",
-          "summary": "Minutes after Xeneize's victory against Vasco at the Maracana, the AFA president issued his congratulations via social media.",
+          "title": "Claudio Tapia congratulates Boca Juniors on reaching Copa Sudamericana final",
+          "summary": "Claudio Tapia publicly congratulated Boca Juniors after their 3-1 victory over Vasco at the Maracaná booked their place in the Copa Sudamericana final.",
+          "body": [
+            "The AFA president posted a message on social media to Juan Román Riquelme, the squad, and the supporters following the win in Río de Janeiro. Beyond celebrating Argentine football's presence in another international final, the executive wished them the best of luck for the decisive clash in Barranquilla."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Le message de Chiqui Tapia pour Boca finaliste de la Sudamericana",
-          "summary": "Quelques minutes après la victoire du Xeneize contre Vasco au Maracana, le président de l'AFA a exprimé ses félicitations via les réseaux sociaux.",
+          "title": "Claudio Tapia salue la qualification de Boca en finale de la Sudamericana",
+          "summary": "Claudio Tapia a félicité publiquement Boca Juniors après son succès 3-1 face à Vasco au Maracaná, validant son billet pour la finale de la Copa Sudamericana.",
+          "body": [
+            "Le président de l'AFA a adressé un message sur les réseaux sociaux à Juan Román Riquelme, à l'effectif et aux supporters après cette victoire à Río de Janeiro. En plus de saluer la présence du football argentin dans une nouvelle finale continentale, le dirigeant a souhaité le meilleur au club pour le match pour le titre prévu à Barranquilla."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "رسالة تشيكي تابيا إلى المتأهلين لنهائيات بوكا في أمريكا الجنوبية",
-          "summary": "بعد دقائق من فوز زينيز على فاسكو في ماراكانا، أصدر رئيس الاتحاد الآسيوي لكرة القدم تهانيه عبر وسائل التواصل الاجتماعي.",
+          "title": "تابيا يهنئ بوكا جونيورز بعد التأهل إلى نهائي كوبا سودأمريكانا",
+          "summary": "وجّه كلاوديو تابيا تهنئة رسمية إلى بوكا جونيورز بعد فوزه على فاسكو بنتيجة 3-1 في ماراكانا، ليحجز بطاقة العبور إلى نهائي كوبا سودأمريكانا.",
+          "body": [
+            "ونشر رئيس الاتحاد الأرجنتيني رسالة عبر وسائل التواصل الاجتماعي أشاد فيها بخوان رومان ريكيلمي وقائمة الفريق والجماهير عقب الانتصار في ريو دي جانيرو، مثمناً الحضور المتجدد للكرة الأرجنتينية في المشهد الختامي القاري، ومتمنياً للفريق كامل التوفيق في الموقعة الحاسمة بمدينة بارانكيا."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/sudamericana/boca-finalista-sudamericana-mensaje-chiqui-tapia_0_KHhD3cin2B.html",
@@ -588,7 +727,20 @@
           "url": "https://www.ole.com.ar/futbol-internacional/sudamericana/boca-finalista-sudamericana-mensaje-chiqui-tapia_0_KHhD3cin2B.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T06:12:08+00:00"
+        }
+      }
     },
     {
       "id": "8ea7f45a4c11",
@@ -596,27 +748,48 @@
       "summary": "El capitán, a 11 días de haberse desgarrado, hizo el gol de la clasificación de un Boca de Arruabarrena que dio una muestra de carácter en el Maracaná.",
       "i18n": {
         "es": {
-          "title": "Paredes, el líder de los gestos",
-          "summary": "El capitán, a 11 días de haberse desgarrado, hizo el gol de la clasificación de un Boca de Arruabarrena que dio una muestra de carácter en el Maracaná.",
-          "needs_translation": false
+          "title": "Paredes mete a Boca en la final de la Copa Sudamericana",
+          "summary": "Leandro Paredes selló la clasificación de Boca a la final de la Copa Sudamericana con un gol agónico ante Vasco da Gama.",
+          "body": [
+            "Apenas once días después de sufrir un desgarro ante Instituto, el volante arriesgó su físico para ingresar en el Maracaná. Cuando el conjunto brasileño descontaba y amenazaba con llevar la serie a los penales, el número 5 sacó un derechazo a los 43 minutos del segundo tiempo para decretar el 3-1 definitivo.",
+            "El triunfo deposita a los dirigidos por Rodolfo Arruabarrena en la final continental en Barranquilla. Tras la eliminación tempranera en la Libertadores a principio de año, el equipo xeneize compite ahora en todos los frentes: lidera la tabla anual, disputa el Torneo Clausura y espera rival en semifinales de la Copa Argentina."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Walls, the leader of gestures",
-          "summary": "The captain, 11 days after having torn himself, scored the goal of the classification of a Boca de Arruabarrena that gave a show of character at the Maracanã.",
+          "title": "Paredes fires Boca into the Copa Sudamericana final",
+          "summary": "Leandro Paredes booked Boca a spot in the Copa Sudamericana final with a dramatic late strike against Vasco da Gama.",
+          "body": [
+            "Just eleven days after suffering a muscle tear against Instituto, the midfielder risked his fitness to step onto the pitch at the Maracaná. With the Brazilian side pulling one back and pushing to force penalties, the number 5 unleashed a lethal drive in the 43rd minute of the second half to seal a 3-1 win.",
+            "The victory sends Rodolfo Arruabarrena's men into the continental decider in Barranquilla. After an early exit from the Libertadores at the start of the year, Boca are fighting on all fronts: topping the annual aggregate table, contending for the Torneo Clausura, and awaiting a semi-final opponent in the Copa Argentina."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Paredes, le leader des gestes",
-          "summary": "Le capitaine, 11 jours après s'être déchiré, a marqué le but du classement d'un Boca de Arruabarrena qui a fait preuve de caractère au Maracana.",
+          "title": "Paredes propulse Boca en finale de la Copa Sudamericana",
+          "summary": "Leandro Paredes a scellé la qualification de Boca pour la finale de la Copa Sudamericana grâce à un but salvateur dans les derniers instants face à Vasco da Gama.",
+          "body": [
+            "À peine onze jours après une blessure musculaire subie face à Instituto, le milieu de terrain a serré les dents pour entrer en jeu au Maracaná. Alors que la formation brésilienne venait de réduire l'écart et menaçait d'arracher les tirs au but, le numéro 5 a décoché une frappe décisive à la 43e minute de la seconde période pour signer le 3-1.",
+            "Ce succès envoie les hommes de Rodolfo Arruabarrena disputer la finale continentale à Barranquilla. Après une élimination précoce en Libertadores au premier semestre, Boca joue sur tous les tableaux : leader du classement annuel, en course dans le Torneo Clausura et qualifié pour les demi-finales de la Copa Argentina."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "الجدران، قائد الإيماءات",
-          "summary": "وسجل الكابتن، بعد 11 يوما من تمزيق نفسه، هدف تصنيف بوكا دي أروبارينا الذي أعطى عرضا للشخصية في ماراكانا.",
+          "title": "باريديس يقود بوكا إلى نهائي كوبا سودأمريكانا",
+          "summary": "حسم لياندرو باريديس بطاقة تأهل بوكا إلى نهائي كوبا سودأمريكانا بهدف قاتل في شباك فاسكو دا غاما.",
+          "body": [
+            "بعد 11 يوماً فقط من إصابته بتمزق عضلي أمام إنستيتوتو، خاطر لاعب الوسط بجاهزيته البدنية للمشاركة على أرضية ملعب ماراكانا. وفي وقت قلص فيه الفريق البرازيلي الفارق واقترب من جر المواجهة إلى ركلات الترجيح، أطلق صاحب القميص رقم 5 تسديدة قوية في الدقيقة 43 من الشوط الثاني ليوقع على الفوز بنتيجة 3-1.",
+            "بهذا الانتصار، حجزت كتيبة المدرب رودولفو أروابارينا مقعدها في النهائي القاري بمدينة بارانكيا. وبعد الخروج المبكر من كأس ليبرتادوريس مطلع العام، يقاتل بوكا على كل الجبهات؛ حيث يعتلي صدارة الترتيب السنوي، وينافس في بطولة كلاوسورا، وينتظر منافسه في نصف نهائي كأس الأرجنتين."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/opinion/paredes-elliderdelosgestosdeboca_0_nrFqMBQQ7g.html",
@@ -638,7 +811,20 @@
           "url": "https://www.ole.com.ar/opinion/paredes-elliderdelosgestosdeboca_0_nrFqMBQQ7g.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T06:12:12+00:00"
+        }
+      }
     },
     {
       "id": "54bc43be1531",
@@ -702,27 +888,44 @@
       "summary": "Le double champion d’Europe a confirmé sa suprématie sur la scène continentale en dominant le Barça (4-2), mardi, en Ligue des champions. Un succès de prestige après une fin de rencontre assez folle.",
       "i18n": {
         "fr": {
-          "title": "PSG-Barcelone : Paris l’emporte au terme d’un match spectaculaire, grâce à la force de son milieu et à Lucas Hernandez en héros inattendu",
-          "summary": "Le double champion d’Europe a confirmé sa suprématie sur la scène continentale en dominant le Barça (4-2), mardi, en Ligue des champions. Un succès de prestige après une fin de rencontre assez folle.",
-          "needs_translation": false
+          "title": "Ligue des champions : le PSG domine le Barça au bout d'un match fou",
+          "summary": "Le Paris Saint-Germain a battu le FC Barcelone 4-2 mardi en Ligue des champions, au terme d'une fin de match spectaculaire.",
+          "body": [
+            "Portés par la maîtrise de leur milieu de terrain, les Parisiens ont confirmé leur statut continental grâce notamment à Lucas Hernandez, héros inattendu d'un dénouement palpitant."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "PSG-Barcelona: Paris wins after a spectacular match, thanks to the strength of its midfield and Lucas Hernandez as an unexpected hero",
-          "summary": "The two-time European champion confirmed his supremacy on the continental stage by dominating Barça (4-2) on Tuesday in the Champions League. A prestige success after a rather crazy end of the meeting.",
+          "title": "Champions League: PSG beat Barcelona 4-2 in wild thriller",
+          "summary": "Paris Saint-Germain defeated Barcelona 4-2 on Tuesday in the Champions League, sealing a high-profile win in a frantic finish.",
+          "body": [
+            "The French club imposed their authority through a commanding midfield display, with Lucas Hernandez emerging as the unexpected hero of a dramatic late surge."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "PSG-Barcelona: París gana después de un partido espectacular, gracias a la fuerza de su centrocampista y a Lucas Hernández como un héroe inesperado",
-          "summary": "El doble campeón de Europa confirmó su supremacía en la escena continental al dominar al Barça (4-2), el martes, en la Liga de Campeones. Un éxito de prestigio tras un final de encuentro bastante loco.",
+          "title": "Champions League: El PSG tumba al Barça en un partido loco",
+          "summary": "El Paris Saint-Germain derrotó 4-2 al FC Barcelona este martes en la Champions League tras un final de encuentro trepidante.",
+          "body": [
+            "Impulsado por el dominio en el centro del campo, el equipo parisino ratificó su fuerza europea con Lucas Hernandez como héroe inesperado en un cierre frenético."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "باريس سان جيرمان- برشلونة: فازت باريس بعد مباراة مذهلة، وذلك بفضل قوة خط الوسط ولوكاس هيرنانديز كبطل غير متوقع",
-          "summary": "أكد بطل أوروبا مرتين تفوقه على الساحة القارية من خلال الهيمنة على برشلونة (4-2) يوم الثلاثاء في دوري أبطال أوروبا. نجاح هيبة بعد نهاية مجنونة إلى حد ما للاجتماع.",
+          "title": "دوري أبطال أوروبا: باريس سان جيرمان يهزم برشلونة في لقاء مثير",
+          "summary": "تغلب باريس سان جيرمان على برشلونة بنتيجة 4-2 مساء الثلاثاء في دوري أبطال أوروبا، بعد نهاية نارية ومثيرة للقاء.",
+          "body": [
+            "وفرض الفريق الباريسي تفوقه القاري بفضل سيطرة خط وسطه وتألق لوكاس هيرنانديز، الذي تحول إلى بطل غير متوقع في الدقائق الحاسمة."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lemonde.fr/sport/article/2026/10/21/psg-barcelone-paris-l-emporte-au-terme-d-un-match-spectaculaire-grace-a-la-force-de-son-milieu-et-a-lucas-hernandez-en-heros-inattendu_6798117_3242.html",
@@ -744,7 +947,12 @@
           "url": "https://www.lemonde.fr/sport/article/2026/10/21/psg-barcelone-paris-l-emporte-au-terme-d-un-match-spectaculaire-grace-a-la-force-de-son-milieu-et-a-lucas-hernandez-en-heros-inattendu_6798117_3242.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 8,
+        "source_read": "rss"
+      }
     },
     {
       "id": "680028640a6f",
@@ -794,7 +1002,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/sudamericana/sudamericana-boca-vasco-triunfo-tapas-brasil_0_FVWL1qv8ug.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "e6d3604efc3b",
