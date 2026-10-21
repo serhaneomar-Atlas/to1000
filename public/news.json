@@ -59,7 +59,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-plate-amistoso-ferro-camp-driussi-resultado_0_tPxpWVI6xo.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "b2c7a46a561a",
@@ -67,27 +72,44 @@
       "summary": "DÉCRYPTAGE – Gravement blessé mardi, au Parc des Princes, contre le Barça, l’ailier géorgien ne reposera pas le pied sur un terrain avant plusieurs mois. Coup d’arrêt.",
       "i18n": {
         "fr": {
-          "title": "PSG : début de saison raté, ligament croisé… La saison noire de Khvicha Kvaratskhelia",
-          "summary": "DÉCRYPTAGE – Gravement blessé mardi, au Parc des Princes, contre le Barça, l’ailier géorgien ne reposera pas le pied sur un terrain avant plusieurs mois. Coup d’arrêt.",
-          "needs_translation": false
+          "title": "Kvaratskhelia victime d'une rupture du ligament croisé au PSG",
+          "summary": "Touché au genou face à Barcelone, Khvicha Kvaratskhelia souffre d'une rupture du ligament croisé antérieur et manquera plusieurs mois de compétition avec le Paris Saint-Germain.",
+          "body": [
+            "L'ailier géorgien s'est écroulé peu avant l'heure de jeu lors du succès parisien au Parc des Princes (4-2). Cette indisponibilité prolongée compromet fortement sa fin de saison et noircit le bilan médical de Luis Enrique, qui a également perdu Ousmane Dembélé et Marquinhos pour plusieurs semaines durant cette même rencontre."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "PSG: failed start to the season, cruciate ligament… Khvicha Kvaratskhelia's black season",
-          "summary": "DECODING – Seriously injured on Tuesday, at the Parc des Princes, against Barça, the Georgian winger will not rest his foot on a field for several months. Stop shot.",
+          "title": "Kvaratskhelia suffers torn ACL in major blow for Paris Saint-Germain",
+          "summary": "Khvicha Kvaratskhelia sustained a torn anterior cruciate ligament against Barcelona and is set to miss several months of action for Paris Saint-Germain.",
+          "body": [
+            "The Georgian winger went down just before the hour mark in Tuesday's 4-2 victory at the Parc des Princes. This lengthy layoff puts his season in serious jeopardy and worsens the injury toll for Luis Enrique, who also lost Ousmane Dembélé and Marquinhos for several weeks during the match."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "PSG: inicio de temporada fallido, ligamento cruzado… La temporada negra de Khvicha Kvaratskhelia",
-          "summary": "DESCIFRAMIENTO – Gravemente herido el martes, en el Parque de los Príncipes, contra el Barça, el extremo georgiano no descansará en un terreno hasta dentro de varios meses. Parada.",
+          "title": "Kvaratskhelia se rompe el ligamento cruzado con el Paris Saint-Germain",
+          "summary": "Khvicha Kvaratskhelia sufrió una rotura del ligamento cruzado anterior de la rodilla frente al Barcelona y estará varios meses de baja con el Paris Saint-Germain.",
+          "body": [
+            "El extremo georgiano cayó al suelo poco antes de la hora de partido durante el triunfo parisino en el Parc des Princes (4-2). Esta larga ausencia compromete su final de curso y complica los planes de Luis Enrique, que en el mismo choque también perdió a Ousmane Dembélé y Marquinhos para varias semanas."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "سان جيرمان: بداية فاشلة للموسم، الرباط الصليبي... الموسم الأسود لخفيشا كفاراتشيليا",
-          "summary": "فك التشفير – أصيب الجناح الجورجي بجروح خطيرة يوم الثلاثاء، في حديقة الأمراء، ضد برشلونة، ولن يضع قدمه على أرض الملعب لعدة أشهر. توقف عن إطلاق النار.",
+          "title": "كفاراتسخيليا يتعرض لقطع في الرباط الصليبي مع باريس سان جيرمان",
+          "summary": "تعرض خفيتشا كفاراتسخيليا لقطع في الرباط الصليبي الأمامي للركبة أمام برشلونة، ليغيب لعدة أشهر عن صفوف باريس سان جيرمان.",
+          "body": [
+            "وسقط الجناح الجورجي أرضاً قبل اكتمال ساعة من اللعب في فوز فريقه (4-2) على ملعب بارك دي برانس. وتهدد هذه الإصابة الطويلة موسمه بالكامل وتزيد من متاعب المدرب لويس إنريكي، الذي خسر أيضاً جهود عثمان ديمبيلي وماركينيوس لعدة أسابيع في المواجهة ذاتها."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/psg-debut-de-saison-rate-ligament-croise-la-saison-noire-de-khvicha-kvaratskhelia-20261021",
@@ -109,7 +131,20 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/psg-debut-de-saison-rate-ligament-croise-la-saison-noire-de-khvicha-kvaratskhelia-20261021"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T17:19:43+00:00"
+        }
+      }
     },
     {
       "id": "002d5eab3d52",
@@ -167,27 +202,48 @@
       "summary": "La LFP a lancé ce mercredi un appel d’offres pour les droits TV de la Ligue 1 concernant la période 2027-2032.",
       "i18n": {
         "fr": {
-          "title": "«Des marques d’intérêt concrètes» : la LFP lance officiellement un appel d’offres pour les droits TV de la Ligue 1",
-          "summary": "La LFP a lancé ce mercredi un appel d’offres pour les droits TV de la Ligue 1 concernant la période 2027-2032.",
-          "needs_translation": false
+          "title": "Droits TV : la LFP lance un appel d'offres anticipé pour 2027-2032",
+          "summary": "La Ligue de football professionnel a officialisé le lancement d'un appel d'offres pour les droits de diffusion de la Ligue 1 couvrant le cycle 2027-2032.",
+          "body": [
+            "La consultation se déroulera du 3 novembre au 7 décembre et pourra comporter un lot unique regroupant l'intégralité des rencontres. L'initiative, portée par le directeur général de LFP Médias Olivier Bramly, intervient avec deux ans d'avance sur le calendrier initial, alors que le contrat actuel courait jusqu'en 2029.",
+            "Vincent Labrune assure s'appuyer sur des « marques d'intérêt concrètes » et sur le lancement de Ligue 1+ pour négocier en position favorable, malgré la baisse récente des recettes télévisuelles. Les futurs acquéreurs pourront reprendre le signal de la plateforme de la Ligue ou concevoir leur propre chaîne, l'instance espérant attirer des géants du streaming comme Disney, Netflix ou Apple."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "\"Concrete signs of interest\": the LFP officially launches a call for tenders for the TV rights of Ligue 1",
-          "summary": "On Wednesday, the LFP launched a call for tenders for the TV rights of Ligue 1 for the period 2027-2032.",
+          "title": "TV Rights: LFP launches early tender for 2027-2032 cycle",
+          "summary": "The Ligue de Football Professionnel has officially launched an early tender for Ligue 1 broadcast rights covering the 2027-2032 cycle.",
+          "body": [
+            "The bidding process will run from November 3 to December 7 and could feature a single package covering all matches. Driven by LFP Médias CEO Olivier Bramly, the move comes two years ahead of schedule, with the current broadcast agreement running through 2029.",
+            "Vincent Labrune insists the league is negotiating from strength thanks to \"concrete interest\" and the rollout of Ligue 1+, despite the recent slump in television revenues. Successful bidders will have the option to carry the league's proprietary feed or produce their own dedicated channel, as executives aim to entice global streaming giants such as Disney, Netflix or Apple."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "\"Marcas de interés concretas\": la LFP lanza oficialmente una licitación para los derechos de televisión de la Ligue 1",
-          "summary": "La LFP ha lanzado este miércoles una licitación para los derechos de televisión de la Ligue 1 para el periodo 2027-2032.",
+          "title": "Derechos de TV: la LFP licita el ciclo 2027-2032 de forma anticipada",
+          "summary": "La Ligue de Football Professionnel ha oficializado el lanzamiento de una licitación por los derechos audiovisuales de la Ligue 1 para el ciclo 2027-2032.",
+          "body": [
+            "El concurso se desarrollará del 3 de noviembre al 7 de diciembre y podría incluir un lote único con la totalidad de los encuentros. La iniciativa, impulsada por el director general de LFP Médias Olivier Bramly, se adelanta dos años al calendario previsto, ya que el contrato actual concluía en 2029.",
+            "Vincent Labrune afirma contar con «muestras de interés concretas» y apoyarse en el lanzamiento de Ligue 1+ para negociar desde una postura ventajosa, pese a la reciente caída de los ingresos televisivos. Los adjudicatarios podrán retransmitir la señal de la plataforma de la liga o crear su propio canal, con el organismo buscando seducir a gigantes del streaming como Disney, Netflix o Apple."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "\"علامات الاهتمام الملموسة\": تطلق LFP رسميًا دعوة لتقديم مناقصات لحقوق البث التلفزيوني في Ligue 1",
-          "summary": "يوم الأربعاء، أطلقت LFP دعوة لتقديم مناقصات لحقوق البث التلفزيوني للدوري 1 للفترة 2027-2032.",
+          "title": "حقوق البث: رابطة الدوري الفرنسي تطرح مناقصة مبكرة للفترة 2027-2032",
+          "summary": "أعلنت رابطة كرة القدم للمحترفين في فرنسا رسمياً طرح مناقصة لبيع حقوق بث مباريات الدوري الفرنسي للمدة بين عامي 2027 و2032.",
+          "body": [
+            "تمتد فترة تلقي العروض من 3 نوفمبر حتى 7 ديسمبر، وقد تشتمل على حزمة موحدة وحيدة تضم جميع المواجهات. وتأتي هذه المبادرة، التي يقودها المدير العام لشركة إل إف بي ميديا أوليفييه براملي، قبل عامين من الموعد الأصلي، إذ ينتهي العقد الحالي في عام 2029.",
+            "وأكد فنسان لابرون استناد الرابطة إلى «اهتمام ملموس وجاد» وإلى إطلاق منصة ليغ 1 بلَس لخوض المفاوضات في موقع قوة، رغم التراجع الأخير في العائدات التلفزيونية. وسيكون بمقدور الفائزين بالحقوق إعادة بث إشارة منصة الرابطة أو إطلاق قناتهم التلفزيونية المستقلة، وسط آمال بجذب عمالقة البث التدفقي مثل ديزني ونتفليكس وآبل."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lefigaro.fr/sports/football/ligue-1/ligue-1-la-lfp-lance-officiellement-un-appel-d-offres-pour-les-droits-tv-20261021",
@@ -209,7 +265,20 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-1/ligue-1-la-lfp-lance-officiellement-un-appel-d-offres-pour-les-droits-tv-20261021"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T17:19:47+00:00"
+        }
+      }
     },
     {
       "id": "8d2cc901d55e",
@@ -265,7 +334,12 @@
           "url": "https://www.kicker.de/kretzschmar-videobeweis-kotzt-mich-diese-saison-ein-bisschen-an-1263692/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8988b7f745ba",
@@ -315,7 +389,12 @@
           "url": "https://www.fourfourtwo.com/team/why-the-united-strand-should-have-cut-his-hair-four-times-by-now"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8254d0f40a33",
@@ -323,27 +402,44 @@
       "summary": "La Policía Metropolitana de Londres , la Met Police , usará tecnología de reconocimiento facial para evitar que aficionados con antecedentes graves o en busca y captura asistan al Chelsea - Tottenham Spurs del próximo sábado en Stamford Bridge .",
       "i18n": {
         "es": {
-          "title": "La policía inglesa usará tecnología de reconocimiento facial en el Chelsea - Tottenham",
-          "summary": "La Policía Metropolitana de Londres , la Met Police , usará tecnología de reconocimiento facial para evitar que aficionados con antecedentes graves o en busca y captura asistan al Chelsea - Tottenham Spurs del próximo sábado en Stamford Bridge .",
-          "needs_translation": false
+          "title": "Reconocimiento facial en Stamford Bridge para el Chelsea - Tottenham",
+          "summary": "La Policía Metropolitana de Londres desplegará tecnología de reconocimiento facial este sábado en Stamford Bridge para el derbi entre Chelsea y Tottenham.",
+          "body": [
+            "Dos furgonetas equipadas operarán en los accesos al choque, catalogado de alto riesgo, para interceptar a prófugos de la justicia y aficionados con órdenes de prohibición en el fútbol. La Premier League apoya este programa piloto, que ya se probó en febrero durante un partido entre el Manchester United y el Everton."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "English police to use facial recognition technology at Chelsea - Tottenham",
-          "summary": "London's Metropolitan Police, the Met Police , will use facial recognition technology to prevent serious or wanted fans from attending next Saturday's Chelsea - Tottenham Spurs at Stamford Bridge .",
+          "title": "Facial recognition at Stamford Bridge for Chelsea vs Tottenham",
+          "summary": "The Metropolitan Police will deploy facial recognition technology this Saturday at Stamford Bridge for the derby between Chelsea and Tottenham.",
+          "body": [
+            "Two surveillance vans will monitor access routes to the high-risk fixture to detect wanted persons and supporters under football banning orders. The Premier League supports this pilot initiative, which was already trialled in February during a match between Manchester United and Everton."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "La police anglaise utilisera la technologie de reconnaissance faciale à Chelsea - Tottenham",
-          "summary": "La police métropolitaine de Londres , la Met Police , utilisera la technologie de reconnaissance faciale pour empêcher les fans ayant des antécédents graves ou recherchés et capturés d'assister au Chelsea - Tottenham Spurs samedi prochain à Stamford Bridge .",
+          "title": "Reconnaissance faciale à Stamford Bridge pour Chelsea - Tottenham",
+          "summary": "La police métropolitaine de Londres déploiera un dispositif de reconnaissance faciale ce samedi à Stamford Bridge lors du derby opposant Chelsea à Tottenham.",
+          "body": [
+            "Deux fourgons équipés surveilleront les abords de cette rencontre classée à haut risque afin de repérer les personnes recherchées et les supporters interdits de stade. La Premier League soutient ce projet pilote, déjà testé en février lors d'un match entre Manchester United et Everton."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "الشرطة الإنجليزية تستخدم تقنية التعرف على الوجه في تشيلسي - توتنهام",
-          "summary": "ستستخدم شرطة لندن الكبرى، شرطة العاصمة، تقنية التعرف على الوجه لمنع المشجعين الجادين أو المطلوبين من حضور تشيلسي - توتنهام سبيرز يوم السبت المقبل في ستامفورد بريدج .",
+          "title": "تقنية التعرف على الوجوه في ستامفورد بريدج لقمة تشيلسي وتوتنهام",
+          "summary": "تنشر شرطة لندن تقنية التعرف على الوجوه هذا السبت في ملعب ستامفورد بريدج خلال مباراة الديربي بين تشيلسي وتوتنهام.",
+          "body": [
+            "ستتمركز شاحنتان مجهزتان بهذا النظام في محيط الملعب المصنف عالي الخطورة لرصد المطلوبين للعدالة والمشجعين الخاضعين لقرارات حظر الملاعب. وتدعم رابطة الدوري الإنجليزي الممتاز هذا البرنامج التجريبي، الذي طُبق في فبراير الماضي خلال مواجهة بين مانشستر يونايتد وإيفرتون."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/premier-league/20261021/1004241518/policia-inglesa-usara-tecnologia-reconocimiento-facial-chelsea-tottenham.html",
@@ -365,7 +461,20 @@
           "url": "https://www.mundodeportivo.com/futbol/premier-league/20261021/1004241518/policia-inglesa-usara-tecnologia-reconocimiento-facial-chelsea-tottenham.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T17:19:52+00:00"
+        }
+      }
     },
     {
       "id": "86471ecd23bc",
@@ -415,7 +524,12 @@
           "url": "https://www.marca.com/futbol/2026/10/21/justicia-resuelve-chalet-xabi-alonso-cumple-parametros-normativa.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "1695a6e62ba6",
@@ -465,7 +579,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261021/1004241511/barca-lleva-siete-partidos-champions-encajando-tres-goles.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "80f579300514",
@@ -473,27 +592,48 @@
       "summary": "El argentino fue figura con un doblete en el 4-3 al Villarreal por la Champions League y también reveló la influencia de Andoni Iraola en ayudarlo a levantar el nivel como equipo.",
       "i18n": {
         "es": {
-          "title": "Alexis Mac Allister volvió a hablar de la decisión del Liverpool de no renovarle el contrato",
-          "summary": "El argentino fue figura con un doblete en el 4-3 al Villarreal por la Champions League y también reveló la influencia de Andoni Iraola en ayudarlo a levantar el nivel como equipo.",
-          "needs_translation": false
+          "title": "Alexis Mac Allister brilla en Champions y asume la postura de Liverpool",
+          "summary": "Alexis Mac Allister lideró con un doblete el triunfo 4-3 de Liverpool ante Villarreal y aceptó la decisión del club de no renovar su contrato.",
+          "body": [
+            "El volante argentino, con vínculo vigente hasta mediados de 2028, matizó sus quejas pasadas tras saber que la directiva no le ofrecerá una extensión, a diferencia de Dominik Szoboszlai y Ryan Gravenberch. Mac Allister reconoció que habló dominado por la emoción y asumió que los dirigentes tienen la potestad de tomar esas determinaciones, mientras suma tres goles en esta edición continental.",
+            "El pampeano también elogió el trabajo de Andoni Iraola en el banquillo de Anfield. Destacó que el técnico vasco corrigió los desajustes del curso anterior mediante un esquema de marcas individuales que exige máxima responsabilidad a cada futbolista sobre el césped."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Alexis Mac Allister spoke again about Liverpool's decision not to renew his contract",
-          "summary": "The Argentine was a figure with a double in the 4-3 to Villarreal for the Champions League and also revealed the influence of Andoni Iraola in helping him raise the level as a team.",
+          "title": "Mac Allister stars in Champions League and accepts Liverpool contract stance",
+          "summary": "Alexis Mac Allister struck twice in Liverpool's 4-3 win over Villarreal before accepting the club's decision not to offer him a contract extension.",
+          "body": [
+            "Under contract until mid-2028, the Argentina midfielder softened earlier comments about not being offered a renewal, unlike teammates Dominik Szoboszlai and Ryan Gravenberch. Mac Allister admitted he spoke out of raw emotion and acknowledged that the board makes the ultimate calls, while taking his tally to three goals in the competition this term.",
+            "The 27-year-old also praised Andoni Iraola's impact in the Anfield dugout. He credited the manager with fixing last season's collective shortcomings through a man-to-man pressing approach that demands direct personal responsibility from every player."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Alexis Mac Allister a de nouveau évoqué la décision de Liverpool de ne pas renouveler son contrat",
-          "summary": "L'Argentin était une figure avec un doublé 4-3 à Villarreal pour la Ligue des champions et a également révélé l'influence d'Andoni Iraola pour l'aider à élever le niveau en tant qu'équipe.",
+          "title": "Alexis Mac Allister brille en C1 et accepte le choix contractuel de Liverpool",
+          "summary": "Auteur d'un doublé lors du succès 4-3 de Liverpool contre Villarreal, Alexis Mac Allister a apaisé les tensions autour de son avenir contractuel chez les Reds.",
+          "body": [
+            "Lié au club jusqu'en 2028, le milieu argentin est revenu sur ses récents états d'âme après avoir appris qu'il ne recevrait pas de prolongation, contrairement à Dominik Szoboszlai et Ryan Gravenberch. Mac Allister a reconnu avoir réagi sous le coup de l'émotion et affirmé respecter le pouvoir de décision des dirigeants, lui qui compte désormais trois buts en Ligue des champions cette saison.",
+            "Le joueur de 27 ans a aussi souligné l'impact d'Andoni Iraola sur le banc d'Anfield. Selon lui, l'entraîneur espagnol a su corriger les dysfonctionnements du vestiaire grâce à un système de marquage individuel responsabilisant chaque joueur sur le terrain."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "تحدث أليكسيس ماك أليستر مرة أخرى عن قرار ليفربول بعدم تجديد عقده",
-          "summary": "كان الأرجنتيني رقمًا مزدوجًا في 4-3 أمام فياريال لدوري الأبطال وكشف أيضًا عن تأثير أندوني إيراولا في مساعدته على رفع المستوى كفريق.",
+          "title": "ماك أليستير يتألق في دوري الأبطال ويتقبل موقف ليفربول بشأن عقده",
+          "summary": "قاد أليكسيس ماك أليستير ليفربول للفوز على فياريال بنتيجة 4-3 بثنائية، قبل أن يتقبل قرار إدارة النادي بعدم تمديد عقده الحالي.",
+          "body": [
+            "ورغم أن عقده يمتد حتى منتصف عام 2028، تراجع لاعب الوسط الأرجنتيني عن نبرة الحزن السابقة بعد علمه بعدم نية الإدارة التجديد له، بعكس زميليه دومينيك سوبوسلاي ورايان خرافنبرخ. وأوضح ماك أليستير أن تصريحاته السابقة صدرت بدافع العاطفة وأن الإدارة تملك وحدها حق اتخاذ القرارات، في وقت يملك فيه ثلاثة أهداف بالبطولة القارية هذا الموسم.",
+            "كما أشاد اللاعب البالغ 27 عاماً بتأثير المدرب أندوني إيراولا داخل قلعة أنفيلد، مؤكداً أنه أصلح الخلل الذي طبع الموسم الماضي عبر خطة رقابة رجل لرجل تفرض مسؤولية شخصية ومباشرة على كل عنصر في الفريق."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/inglaterra/alexis-mac-allister-figura-doblete-liverpool-vs-villarreal-champions-league-extension-contrato-renovacion-andoni-iraola_0_spTebqb8W7.html",
@@ -515,7 +655,20 @@
           "url": "https://www.ole.com.ar/futbol-internacional/inglaterra/alexis-mac-allister-figura-doblete-liverpool-vs-villarreal-champions-league-extension-contrato-renovacion-andoni-iraola_0_spTebqb8W7.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 7,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T17:19:57+00:00"
+        }
+      }
     },
     {
       "id": "16d890f5d4b4",
@@ -571,7 +724,12 @@
           "url": "https://www.kicker.de/live-della-rovere-legt-fuer-die-bayern-nach-langsteiner-verkuerzt-fuer-rb-1263142/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2edf9e46882c",
@@ -629,33 +787,54 @@
       "summary": "Gegen Atletico Madrid liefert der VfB Stuttgart seine beste Saisonleistung ab - allerdings mit dem Makel, wieder zu viele Chancen nicht genutzt zu haben. Der Unterschied zu den vergangenen Saisons ist eklatant.",
       "i18n": {
         "de": {
-          "title": "Der ungewohnte Makel des VfB",
-          "summary": "Gegen Atletico Madrid liefert der VfB Stuttgart seine beste Saisonleistung ab - allerdings mit dem Makel, wieder zu viele Chancen nicht genutzt zu haben. Der Unterschied zu den vergangenen Saisons ist eklatant.",
-          "needs_translation": false
+          "title": "VfB Stuttgart hadert trotz Top-Spiel gegen Atlético mit Chancenverwertung",
+          "summary": "Gegen Atlético Madrid hat der VfB Stuttgart seine beste Saisonleistung gezeigt, hadert jedoch erneut mit zu vielen ungenutzten Torgelegenheiten.",
+          "body": [
+            "Das wiederholte Vergeben bester Möglichkeiten trübt die Darbietung gegen die Spanier spürbar. Dieser anhaltende Makel im Abschluss offenbart einen eklatanten Unterschied zu den vergangenen Spielzeiten, in denen sich die Schwaben vor dem gegnerischen Tor noch deutlich treffsicherer präsentierten."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "The unusual stain of the VfB",
-          "summary": "Against Atletico Madrid, VfB Stuttgart delivered its best performance of the season - albeit with the blemish of not taking advantage of too many chances again. The difference from previous seasons is striking.",
+          "title": "VfB Stuttgart rue wasted chances despite stellar display against Atlético",
+          "summary": "Despite delivering their best performance of the season against Atlético Madrid, VfB Stuttgart were left frustrated by another night of profligacy in front of goal.",
+          "body": [
+            "A persistent inability to convert clear-cut chances took the shine off an otherwise commanding display against the Spanish side. This recurring flaw marks a stark contrast to previous campaigns, when the German club proved far more lethal inside the box."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Le défaut inhabituel du VfB",
-          "summary": "Contre l'Atlético Madrid, le VfB Stuttgart livre sa meilleure performance de la saison - mais avec le défaut de ne pas avoir à nouveau saisi trop d'occasions. La différence par rapport aux saisons précédentes est flagrante.",
+          "title": "Le VfB Stuttgart frustré par son inefficacité face à l'Atlético Madrid",
+          "summary": "Auteur de sa meilleure prestation de la saison face à l'Atlético Madrid, le VfB Stuttgart a de nouveau péché par un manque criant d'efficacité.",
+          "body": [
+            "Ces opportunités franches gâchées à répétition viennent ternir la copie séduisante rendue face aux Espagnols. Ce déficit chronique dans le dernier geste tranche nettement avec les saisons précédentes, où la formation allemande se montrait bien plus chirurgicale devant le but."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "La mancha desconocida del VfB",
-          "summary": "Contra el Atlético de Madrid, el VfB Stuttgart ofrece su mejor rendimiento de la temporada, pero con la desventaja de no haber aprovechado demasiadas oportunidades. La diferencia con las temporadas anteriores es evidente.",
+          "title": "El VfB Stuttgart acusa su falta de gol tras un gran partido ante el Atlético",
+          "summary": "Pese a firmar su mejor actuación del curso frente al Atlético Madrid, el VfB Stuttgart volvió a pagar cara su falta de puntería.",
+          "body": [
+            "El reiterado perdón en las ocasiones más claras empañó una propuesta notable ante el conjunto español. Esta falta de acierto en la definición evidencia una brecha evidente respecto a las últimas temporadas, en las que el equipo alemán presumía de una pegada mucho mayor."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "وصمة عار غير عادية من VFB",
-          "summary": "ضد أتلتيكو مدريد، قدم VfB شتوتغارت أفضل أداء له هذا الموسم - وإن كان ذلك مع عيب عدم الاستفادة من الكثير من الفرص مرة أخرى. الفرق عن المواسم السابقة لافت للنظر.",
+          "title": "شتوتغارت يعاني من غياب الفعالية رغم عرضه القوي أمام أتلتيكو مدريد",
+          "summary": "رغم تقديمه أفضل أداء له هذا الموسم أمام أتلتيكو مدريد، خرج شتوتغارت بحسرة جديدة بعد إهداره سيلاً من الفرص المحققة للتسجيل.",
+          "body": [
+            "وألقى الإهدار المتواصل للفرص السانحة بظلاله على العرض المميز الذي قدمه الفريق أمام الخصم الإسباني. ويكشف هذا العقم الهجومي عن تراجع صارخ مقارنة بالمواسم السابقة، حين كان النادي الألماني أكثر حسماً وشراسة أمام شباك المنافسين."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.kicker.de/der-ungewohnte-makel-des-vfb-1263713/artikel#omrss",
@@ -677,7 +856,20 @@
           "url": "https://www.kicker.de/der-ungewohnte-makel-des-vfb-1263713/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T17:20:02+00:00"
+        }
+      }
     },
     {
       "id": "61e02380bdec",
@@ -685,27 +877,44 @@
       "summary": "Après un nul contre le Betis Séville (0-0) et un succès face à Arsenal (3-2), les Espoirs lillois, vainqueurs de Galatasaray (3-1) ce mercredi, ont enchaîné une troisième rencontre sans défaite en Youth League. Saad Boussadia s'est illustré avec un doublé.",
       "i18n": {
         "fr": {
-          "title": "Vainqueur de Galatasaray, le LOSC enchaîne en Youth League",
-          "summary": "Après un nul contre le Betis Séville (0-0) et un succès face à Arsenal (3-2), les Espoirs lillois, vainqueurs de Galatasaray (3-1) ce mercredi, ont enchaîné une troisième rencontre sans défaite en Youth League. Saad Boussadia s'est illustré avec un doublé.",
-          "needs_translation": false
+          "title": "Youth League : Lille domine Galatasaray et reste invaincu",
+          "summary": "Les Espoirs du LOSC ont battu Galatasaray (3-1) ce mercredi en Youth League, enchaînant un troisième match de rang sans défaite.",
+          "body": [
+            "Grand artisan de la victoire, Saad Boussadia s'est illustré en inscrivant un doublé. Les Lillois confirment leur entame réussie après leur nul contre le Betis Séville (0-0) et leur victoire face à Arsenal (3-2)."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Winner of Galatasaray, the LOSC moves on to the Youth League",
-          "summary": "After a draw against Betis Sevilla (0-0) and a success against Arsenal (3-2), the Lille hopefuls, winners of Galatasaray (3-1) on Wednesday, went on to a third match without defeat in the Youth League. Saad Boussadia stood out with a double.",
+          "title": "Youth League: Lille beat Galatasaray 3-1 to stay unbeaten",
+          "summary": "LOSC's youth team defeated Galatasaray 3-1 on Wednesday in the Youth League, extending their unbeaten European run to three matches.",
+          "body": [
+            "Saad Boussadia starred with a brace to seal the win. The French side continue their strong run, having previously drawn 0-0 with Real Betis and edged Arsenal 3-2."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Ganador del Galatasaray, el LOSC encadenado en la Youth League",
-          "summary": "Después de un empate contra el Betis Sevilla (0-0) y un triunfo contra el Arsenal (3-2), los Esperanzas del Lille, vencedores del Galatasaray (3-1) este miércoles, encadenaron un tercer encuentro sin derrota en la Youth League. Saad Boussadia se destacó con un doblete.",
+          "title": "Youth League: Lille supera a Galatasaray y sigue invicto",
+          "summary": "El equipo juvenil del LOSC venció a Galatasaray (3-1) este miércoles en la Youth League, encadenando tres partidos invicto en Europa.",
+          "body": [
+            "Saad Boussadia fue la gran figura al marcar un doblete. Los franceses confirman así su buen momento tras haber empatado frente al Real Betis (0-0) y derrotado al Arsenal (3-2)."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "الفائز في Galatasaray، ينتقل LOSC إلى دوري الشباب",
-          "summary": "بعد التعادل ضد بيتيس إشبيلية (0-0) والنجاح ضد آرسنال (3-2)، انتقل المتأملون ليل، الفائزون في غلطة سراي (3-1) يوم الأربعاء، إلى مباراة ثالثة دون هزيمة في دوري الشباب. تميّز سعد بوسعدية بشخصية مزدوجة.",
+          "title": "دوري الشباب: ليل يتخطى غلطة سراي ويحافظ على سجله دون هزيمة",
+          "summary": "تغلب شباب ليل على غلطة سراي (3-1) الأربعاء في دوري الشباب الأوروبي، مسجلين مباراتهم الثالثة توالياً دون أي هزيمة.",
+          "body": [
+            "وتألق سعد بوسعدية بتسجيله ثنائية قادت الفريق الفرنسي للفوز. ويؤكد ليل بدايته القوية بعد تعادله سلباً مع ريال بيتيس وفوزه المثير على أرسنال (3-2)."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Vainqueur-de-galatasaray-le-losc-enchaine-en-youth-league/1737486#at_medium=RSS_feeds",
@@ -727,7 +936,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Vainqueur-de-galatasaray-le-losc-enchaine-en-youth-league/1737486#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-21T17:20:05+00:00"
+        }
+      }
     },
     {
       "id": "1aded43e7302",
@@ -777,7 +999,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-plate-kevin-castano-atletico-mineiro-tendencia-redes-sudamericana_0_aFOQhwSO2d.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "5ef17901bd33",
@@ -785,27 +1012,44 @@
       "summary": "Desde el Flu se refirieron indirectamente a la caída del Gigante da Colina, recordando su victoria ante el CABJ en la final de la Libertadores 2023.",
       "i18n": {
         "es": {
-          "title": "La chicana de Fluminense a Vasco da Gama por la eliminación ante Boca, con un palito al Xeneize",
-          "summary": "Desde el Flu se refirieron indirectamente a la caída del Gigante da Colina, recordando su victoria ante el CABJ en la final de la Libertadores 2023.",
-          "needs_translation": false
+          "title": "Fluminense se burla de Vasco da Gama tras su eliminación ante Boca",
+          "summary": "Fluminense aprovechó la caída de Vasco da Gama frente a Boca en el Maracaná para burlarse de su clásico rival en redes sociales.",
+          "body": [
+            "Con una foto del festejo de John Kennedy en la final de la Libertadores 2023, el Flu presumió su consagración ante el conjunto argentino en ese mismo estadio. La publicación sirvió además como arenga de cara a la revancha de semifinales frente a Palmeiras, serie en la que el equipo carioca debe remontar una desventaja de 2-1."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Fluminense's chicane to Vasco da Gama for the elimination against Boca, with a Xeneize stick",
-          "summary": "From the Flu they indirectly referred to the fall of the Gigante da Colina, recalling their victory against the CABJ in the final of the Libertadores 2023.",
+          "title": "Fluminense mock Vasco da Gama following exit against Boca",
+          "summary": "Fluminense wasted no time trolling fierce rivals Vasco da Gama on social media after their Maracaná defeat against Boca.",
+          "body": [
+            "Posting a picture of John Kennedy celebrating in the 2023 Libertadores final, Flu flaunted their continental triumph over the Argentine side at that very venue. The post was also a rallying cry ahead of their semi-final second leg against Palmeiras, where the Rio club must overturn a 2-1 deficit."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "La chicana de Fluminense à Vasco da Gama pour l'élimination contre Boca, avec un bâton au Xeneize",
-          "summary": "Depuis le Flu, ils ont indirectement fait référence à la chute du Giant da Colina, rappelant sa victoire contre le CABJ en finale de la Libertadores 2023.",
+          "title": "Fluminense chambre Vasco da Gama après son élimination face à Boca",
+          "summary": "Fluminense a profité du revers de Vasco da Gama face à Boca au Maracaná pour chambrer son rival historique sur les réseaux sociaux.",
+          "body": [
+            "Photo de la célébration de John Kennedy lors de la finale de la Libertadores 2023 à l'appui, le Flu a rappelé son sacre conquis face au club argentin dans cette même enceinte. Le message fait également office de mobilisation avant la demi-finale retour contre Palmeiras, où les Cariocas doivent renverser un retard de 2-1."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "خدع فلومينينس إلى فاسكو دا غاما للقضاء على بوكا، بعصا زينيز",
-          "summary": "من الإنفلونزا، أشاروا بشكل غير مباشر إلى سقوط العملاق دا كولينا، مشيرين إلى فوزهم على CABJ في نهائي Libertadores 2023.",
+          "title": "فلومينينسي يسخر من فاسكو دا غاما بعد خروجه أمام بوكا",
+          "summary": "استغل فلومينينسي سقوط غريمه التقليدي فاسكو دا غاما أمام بوكا في ملعب ماراكانا ليسخر منه عبر مواقع التواصل الاجتماعي.",
+          "body": [
+            "واستحضر فلومينينسي صورة لاحتفال جون كينيدي في نهائي كوبا ليبرتادوريس 2023، متباهياً بلقبه القاري الذي حصده أمام النادي الأرجنتيني على أرضية الملعب ذاته. وجاء المنشور أيضاً لتحفيز الفريق قبل إياب نصف النهائي أمام بالميراس، حيث يتعين على النادي البرازيلي قلب تأخره بنتيجة 2-1."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/fluminense-chicana-vascodagama-palito-boca-maracana_0_AdUcyaEqRg.html",
@@ -827,7 +1071,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/fluminense-chicana-vascodagama-palito-boca-maracana_0_AdUcyaEqRg.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 4,
+        "source_read": "full"
+      }
     },
     {
       "id": "436d56a7a7af",
@@ -885,25 +1134,44 @@
       "summary": "El presidente xeneize festejó como uno más del plantel el triunfo en el Maracaná, luego de una previa que vivió con la adrenalina de otros tiempos.",
       "i18n": {
         "es": {
-          "title": "La felicidad de Riquelme en el vestuario de Boca, tras un viaje lleno de recuerdos gloriosos",
-          "summary": "El presidente xeneize festejó como uno más del plantel el triunfo en el Maracaná, luego de una previa que vivió con la adrenalina de otros tiempos.",
-          "needs_translation": false
+          "title": "Riquelme festejó la clasificación de Boca en el Maracaná",
+          "summary": "Juan Román Riquelme celebró en la intimidad del vestuario del Maracaná el pase de Boca a la final de la Copa Sudamericana.",
+          "body": [
+            "El presidente xeneize festejó con el plantel como un futbolista más tras sellar la clasificación en Río de Janeiro. Durante su estadía, repitió viejas costumbres heredadas de la era de Carlos Bianchi, con paseos nocturnos por Barra de Tijuca, y atendió con calma a hinchas y periodistas locales que le pidieron autógrafos antes de emprender el regreso a Buenos Aires."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Riquelme's happiness in the wardrobe of Boca, after a trip full of glorious memories",
-          "summary": "The president xeneize celebrated as one of the squad the triumph at the Maracanã, after a previous one that lived with the adrenaline of other times.",
+          "title": "Riquelme celebrates Boca qualification at the Maracaná",
+          "summary": "Juan Román Riquelme joined the dressing room celebrations at the Maracaná after Boca clinched their spot in the Copa Sudamericana final.",
+          "body": [
+            "The Boca president celebrated alongside the squad just like in his playing days after sealing qualification in Río de Janeiro. Throughout the trip, he revisited old habits from the Carlos Bianchi era, taking night walks through Barra de Tijuca and taking time to sign autographs for local fans and reporters before heading back to Buenos Aires."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "La felicidad de Riquelme en el vestuario de Boca, tras un viaje lleno de recuerdos gloriosos",
-          "summary": "El presidente xeneize festejó como uno más del plantel el triunfo en el Maracaná, luego de una previa que vivió con la adrenalina de otros tiempos.",
-          "needs_translation": true
+          "title": "Riquelme fête la qualification de Boca au Maracaná",
+          "summary": "Juan Román Riquelme a célébré dans l'intimité du vestiaire du Maracaná la qualification de Boca pour la finale de la Copa Sudamericana.",
+          "body": [
+            "Le président du club a exulté au milieu du groupe comme à ses plus belles heures sur le terrain après avoir validé le billet pour la finale à Río de Janeiro. Durant son séjour, il a renoué avec les habitudes de l'ère Carlos Bianchi, s'offrant des balades nocturnes à Barra de Tijuca et prenant le temps de signer des autographes aux supporters comme aux journalistes locaux avant de s'envoler pour Buenos Aires."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "La felicidad de Riquelme en el vestuario de Boca, tras un viaje lleno de recuerdos gloriosos",
-          "summary": "El presidente xeneize festejó como uno más del plantel el triunfo en el Maracaná, luego de una previa que vivió con la adrenalina de otros tiempos.",
-          "needs_translation": true
+          "title": "ريكيلمي يحتفل بتأهل بوكا في الماراكانا",
+          "summary": "احتفل خوان رومان ريكيلمي داخل غرفة تبديل الملابس في الماراكانا بعبور بوكا إلى نهائي كوبا سودأمريكانا.",
+          "body": [
+            "وعاش رئيس النادي أجواء الفرحة وسط اللاعبين وكأنه عنصر من الفريق بعد حسم التأهل في ريو دي جانيرو. واستعاد ريكيلمي خلال إقامته عادات قديمة تعود إلى حقبة كارلوس بيانكي، شملت جولات ليلية في بارا دي تيجوكا، كما استجاب برحابة صدر لطلبات التوقيعات من المشجعين والصحفيين المحليين قبل شد الرحال نحو بوينس آيرس."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/boca-juniors/boca-riquelme-equipo-maracanazo-triunfo-plantel-brasil_0_0XP2OJwgfF.html",
@@ -925,7 +1193,12 @@
           "url": "https://www.ole.com.ar/boca-juniors/boca-riquelme-equipo-maracanazo-triunfo-plantel-brasil_0_0XP2OJwgfF.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full"
+      }
     },
     {
       "id": "fa650f6de4c9",
@@ -977,7 +1250,12 @@
           "url": "https://www.kicker.de/wer-nimmt-es-mit-vinicius-junior-auf-1263062/artikel#omrss"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 2,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "6be51780eceb",
