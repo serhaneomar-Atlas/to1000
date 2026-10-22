@@ -59,7 +59,12 @@
           "url": "https://www.mundodeportivo.com/futbol/champions-league/20261022/1004241672/cesc-fabregas-rompe-baraja-champions.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "f27b435134e5",
@@ -159,7 +164,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261022/1004241629/elegir-camino.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "8aaaaa409986",
@@ -167,27 +177,44 @@
       "summary": "Yannick Cahuzac a encore modifié son onze dans les grandes largeurs ce mercredi lors de la défaite de son équipe sur la pelouse du Club Bruges (0-3).",
       "i18n": {
         "fr": {
-          "title": "Les limites du turnover mis en place par Yannick Cahuzac à Lens, de nouveau battu en Ligue des champions à Bruges",
-          "summary": "Yannick Cahuzac a encore modifié son onze dans les grandes largeurs ce mercredi lors de la défaite de son équipe sur la pelouse du Club Bruges (0-3).",
-          "needs_translation": false
+          "title": "Ligue des champions : Lens sombre à Bruges après un nouveau turnover",
+          "summary": "Lens a concédé un lourd revers sur le terrain de Club Bruges (0-3) ce mercredi en Ligue des champions.",
+          "body": [
+            "Pour cette rencontre, Yannick Cahuzac a une nouvelle fois largement remanié son onze de départ. Ce turnover s'est avéré fatal aux Lensois, nettement dominés par la formation belge."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "The limits of turnover set up by Yannick Cahuzac in Lens, again beaten in the Champions League in Bruges",
-          "summary": "Yannick Cahuzac again modified his eleven in the great widths this Wednesday during the defeat of his team on the lawn of Club Bruges (0-3).",
+          "title": "Champions League: Lens crumble at Club Bruges after heavy rotation",
+          "summary": "Lens suffered a painful 0-3 defeat away to Club Bruges this Wednesday in the Champions League.",
+          "body": [
+            "Manager Yannick Cahuzac once again heavily rotated his starting eleven for this European clash. The tactical gamble failed to pay off as the French side were comfortably swept aside in Belgium."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Los límites del turnover establecido por Yannick Cahuzac en Lens, de nuevo derrotado en la Liga de Campeones en Brujas",
-          "summary": "Yannick Cahuzac modificó de nuevo su once en las grandes anchuras este miércoles durante la derrota de su equipo en el césped del Club Brujas (0-3).",
+          "title": "Champions League: Lens cae ante Club Bruges tras una nueva rotación",
+          "summary": "Lens sufrió un duro castigo a domicilio frente a Club Bruges (0-3) este miércoles en la Champions League.",
+          "body": [
+            "Yannick Cahuzac volvió a modificar profundamente su once titular para esta cita continental. La apuesta por las rotaciones no funcionó y el conjunto francés se vio superado con claridad en Bélgica."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "حدود الدوران التي وضعها يانيك كاهوزاك في لينس، وتغلب عليها مرة أخرى في دوري أبطال أوروبا في بروج",
-          "summary": "قام يانيك كاهوزاك مرة أخرى بتعديل عرضه الأحد عشر في العروض الكبيرة هذا الأربعاء خلال هزيمة فريقه في حديقة نادي بروج (0-3).",
+          "title": "دوري أبطال أوروبا: لانس يتعثر أمام كلوب بروج بعد تدوير واسع",
+          "summary": "تجرع لانس خسارة ثقيلة خارج ملعبه أمام كلوب بروج بثلاثية نظيفة (0-3)، مساء الأربعاء، في دوري أبطال أوروبا.",
+          "body": [
+            "أجرى المدرب يانيك كاهوزاك تغييرات جذرية على تشكيلته الأساسية لمواجهة هذا الاستحقاق القاري. ولم تؤتِ هذه المداورة ثمارها، حيث تلقى الفريق الفرنسي هزيمة صريحة على الأراضي البلجيكية."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Article/Les-limites-du-turnover-mis-en-place-par-yannick-cahuzac-a-lens-de-nouveau-battu-en-ligue-des-champions-a-bruges/1737656#at_medium=RSS_feeds",
@@ -221,7 +248,20 @@
           "url": "https://www.lequipe.fr/Football/Actualites/Le-match-de-ligue-des-champions-entre-le-club-bruges-et-lens-interrompu-par-des-jets-de-fumigenes-du-parcage-lensois/1737614#at_medium=RSS_feeds"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "rss",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-22T07:43:05+00:00"
+        }
+      }
     },
     {
       "id": "67cd4f59de18",
@@ -279,27 +319,48 @@
       "summary": "Dani Olmo se lesionó en París . Antes de la media hora de un encuentro tremendamente físico tuvo que ser relevado por Fermín .",
       "i18n": {
         "es": {
-          "title": "Olmo había disputado todos los partidos del Barça de 2026",
-          "summary": "Dani Olmo se lesionó en París . Antes de la media hora de un encuentro tremendamente físico tuvo que ser relevado por Fermín .",
-          "needs_translation": false
+          "title": "Dani Olmo se lesiona en París y corta una racha de 44 partidos seguidos",
+          "summary": "Dani Olmo sufrió una lesión en el aductor izquierdo en París, justo el día en que cumplía 100 partidos oficiales con el Barça.",
+          "body": [
+            "El atacante de Terrassa tuvo que retirarse antes de la media hora de juego para dejar su sitio a Fermín López. El percance muscular, el primero que sufre en doce meses tras haber superado una dolencia en el sóleo, frenó su mejor momento físico desde que llegó al club.",
+            "El contratiempo rompe una serie de 44 encuentros consecutivos sobre el césped con la camiseta azulgrana durante 2026. Hansi Flick había recurrido a él en los 12 compromisos disputados esta temporada, un pleno competitivo que Olmo también extendió a la selección española antes de caer lesionado."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Olmo had played all 2026 Barça matches",
-          "summary": "Dani Olmo was injured in Paris . Before half an hour of a tremendously physical encounter he had to be relieved by Fermin .",
+          "title": "Dani Olmo injured in Paris, halting remarkable 44-match streak",
+          "summary": "Dani Olmo suffered a left adductor injury in Paris on the very night of his 100th official appearance for Barça.",
+          "body": [
+            "The Terrassa attacker was forced off before the half-hour mark, replaced by Fermín López. The muscle problem, his first in twelve months since a calf issue, abruptly ended his strongest physical run since joining the club.",
+            "The setback snaps an unbroken streak of 44 consecutive appearances on the pitch for the blaugrana side in 2026. Hansi Flick had fielded him in all 12 matches so far this season, a record Olmo also replicated for Spain before pulling up injured."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Olmo avait disputé tous les matchs du Barça de 2026",
-          "summary": "Dani Olmo s'est blessé à Paris . Avant la demi-heure d'une rencontre extrêmement physique, il a dû être relevé par Fermín .",
+          "title": "Dani Olmo se blesse à Paris et brise une série de 44 matchs consécutifs",
+          "summary": "Dani Olmo a été victime d'une blessure à l'adducteur gauche à Paris, le soir même de son 100e match officiel avec le Barça.",
+          "body": [
+            "L'attaquant de Terrassa a dû céder sa place à Fermín López avant la demi-heure de jeu. Ce pépin musculaire, le premier en douze mois après une alerte au soléaire, interrompt net sa meilleure période physique depuis son arrivée en Catalogne.",
+            "Ce coup d'arrêt brise une série de 44 apparitions d'affilée sous le maillot blaugrana en 2026. Hansi Flick l'avait aligné lors des 12 rencontres de la saison en cours, un sans-faute qu'Olmo prolongeait également en sélection espagnole avant de devoir renoncer."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "لعب أولمو جميع مباريات برشلونة لعام 2026",
-          "summary": "أصيب داني أولمو في باريس . قبل نصف ساعة من المواجهة الجسدية الهائلة، كان عليه أن يشعر بالارتياح من قبل فيرمين .",
+          "title": "إصابة داني أولمو في باريس توقف سلسلة من 44 مباراة متتالية",
+          "summary": "تعرض داني أولمو لإصابة في العضلة المقربة اليسرى في باريس، في ليلة احتفاله بخوض 100 مباراة رسمية بقميص برشلونة.",
+          "body": [
+            "واضطر مهاجم تيراسا إلى مغادرة الملعب قبل مرور نصف ساعة من اللقاء، تاركاً مكانه لزميله فيرمين لوبيز. وتعد هذه الإصابة العضلية الأولى له منذ 12 شهراً بعد تعافيه من مشكلة في الساق، لتنهي أفضل فتراته البدنية منذ وصوله إلى النادي.",
+            "وكسرت هذه الإصابة رقماً مميزاً بخوضه 44 مباراة متتالية بقميص البلوغرانا خلال عام 2026. وكان المدرب هانزي فليك قد اعتمد عليه في كافة مباريات الفريق الـ 12 هذا الموسم، وهو الحضور المتواصل الذي نقله أولمو إلى منتخب إسبانيا قبل توقفه الإجباري."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261022/1004241624/olmo-habia-disputado-todos-partidos-barca-2026.html",
@@ -321,7 +382,20 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261022/1004241624/olmo-habia-disputado-todos-partidos-barca-2026.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-22T07:43:09+00:00"
+        }
+      }
     },
     {
       "id": "c5e4c20dfe9f",
@@ -329,27 +403,48 @@
       "summary": "El pibe de la Selección la rompe en el Como, el equipo revelación de la Serie A y la Champions, donde le clavó un doblete al Manchester United.",
       "i18n": {
         "es": {
-          "title": "Ver a Nico Paz, el nuevo gran plan",
-          "summary": "El pibe de la Selección la rompe en el Como, el equipo revelación de la Serie A y la Champions, donde le clavó un doblete al Manchester United.",
-          "needs_translation": false
+          "title": "Nico Paz deslumbra con el Como y aplasta al Manchester United",
+          "summary": "Nicolás Paz brilló con dos goles y una asistencia en la contundente victoria 4-1 del Como sobre el Manchester United por la Champions League.",
+          "body": [
+            "Bajo la conducción táctica de Cesc Fàbregas, el mediapunta de 22 años se convirtió en la gran figura del conjunto italiano, donde acumula 23 goles y 22 asistencias en 85 encuentros tras clasificar al club a competiciones continentales.",
+            "El nivel del futbolista entusiasma a la selección argentina y reactiva el interés del Real Madrid, que cuenta con una cláusula de recompra fijada en 80 millones de euros."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "See Nico Paz, the new big plan",
-          "summary": "The boy of the National Team breaks it in Como, the revelation team of Serie A and the Champions League, where he nailed a double to Manchester United.",
+          "title": "Nico Paz dazzles for Como in demolition of Manchester United",
+          "summary": "Nicolás Paz struck twice and provided an assist as Como cruised to an emphatic 4-1 victory over Manchester United in the Champions League.",
+          "body": [
+            "Under the guidance of Cesc Fàbregas, the 22-year-old attacking midfielder has emerged as the standout star for the Italian side, tallying 23 goals and 22 assists in 85 appearances after securing European qualification.",
+            "His stellar form has drawn attention from the Argentina national team and reignited interest from Real Madrid, who retain an €80 million buy-back clause."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Voir Nico Paz, le nouveau grand plan",
-          "summary": "La pibe de la sélection la casse à Côme, l'équipe révélation de la Serie A et de la Ligue des Champions, où elle a cloué un doublé à Manchester United.",
+          "title": "Nico Paz régale avec Como et surclasse Manchester United",
+          "summary": "Nicolás Paz a signé un doublé et délivré une passe décisive lors de la démonstration de Como face à Manchester United (4-1) en Ligue des champions.",
+          "body": [
+            "Sous la houlette de Cesc Fàbregas, le milieu offensif de 22 ans s'est imposé comme le patron du club italien, où il affiche 23 buts et 22 passes décisives en 85 rencontres après avoir installé l'équipe en coupe d'Europe.",
+            "Ses prestations impressionnent l'Albiceleste et réveillent l'intérêt du Real Madrid, qui conserve une clause de rachat fixée à 80 millions d'euros."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "انظر نيكو باز، الخطة الكبيرة الجديدة",
-          "summary": "صبي المنتخب الوطني يكسرها في كومو، فريق الوحي من دوري الدرجة الأولى ودوري أبطال أوروبا، حيث حصل على شوط مزدوج لمانشستر يونايتد.",
+          "title": "نيكو باز يتألق مع كومو ويسحق مانشستر يونايتد",
+          "summary": "تألق نيكولاس باز بتسجيل ثنائية وصناعة هدف في فوز كومو العريض 4-1 على مانشستر يونايتد ضمن منافسات دوري أبطال أوروبا.",
+          "body": [
+            "وتحت القيادة الفنية للمدرب سيسك فابريغاس، تحول صانع الألعاب صاحب الـ22 عاماً إلى النجم الأول للفريق الإيطالي، رافعاً حصيلته إلى 23 هدفاً و22 تمريرة حاسمة خلال 85 مباراة، بعدما قاد النادي إلى المسابقات القارية.",
+            "ويثير هذا المستوى الاستثنائي اهتمام منتخب الأرجنتين، كما يعيد إشعال رغبة ريال مدريد، الذي يمتلك بنداً يتيح له إعادة شراء اللاعب مقابل 80 مليون يورو."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/opinion/veranicopazunnuevogranplan_0_oDeRJ2KAme.html",
@@ -371,7 +466,20 @@
           "url": "https://www.ole.com.ar/opinion/veranicopazunnuevogranplan_0_oDeRJ2KAme.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-22T07:43:16+00:00"
+        }
+      }
     },
     {
       "id": "5a6a02291d23",
@@ -379,27 +487,48 @@
       "summary": "El Verdao superó a Fluminense por penales y se transformó en el primer finalista. Acá, todos los detalles del partido decisivo.",
       "i18n": {
         "es": {
-          "title": "Atención Estudiantes: con Palmeiras clasificado, qué día y dónde se juega la final de la Copa Libertadores",
-          "summary": "El Verdao superó a Fluminense por penales y se transformó en el primer finalista. Acá, todos los detalles del partido decisivo.",
-          "needs_translation": false
+          "title": "Palmeiras jugará la final de la Copa Libertadores 2026 en el Centenario",
+          "summary": "Palmeiras eliminó por penales a Fluminense y aseguró su lugar en la final de la Copa Libertadores, programada para el 28 de noviembre en Montevideo.",
+          "body": [
+            "Pese a caer 1-0 como local en la revancha, el conjunto paulista sostuvo la paridad tras el 2-1 conseguido en la ida y selló su clasificación al imponerse 5-3 desde los doce pasos, con el arquero Carlos Miguel como figura. El Verdao buscará el título en el histórico Estadio Centenario de Montevideo, escenario con capacidad para más de 60.000 espectadores cuyo horario aún no fue fijado.",
+            "Su adversario saldrá del cruce entre Flamengo y Estudiantes de La Plata, que disputan la revancha este jueves en el Maracaná tras empatar 0-0 en la ida. El equipo de Alexander Medina intentará dar el golpe en Río de Janeiro frente al vigente campeón."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Attention Students: with Palmeiras classified, what day and where the final of the Copa Libertadores is played",
-          "summary": "El Verdao surpassed Fluminense in penalties and became the first finalist. Here, all the details of the decisive match.",
+          "title": "Palmeiras reach 2026 Copa Libertadores final at the Centenario",
+          "summary": "Palmeiras edged Fluminense on penalties to book their place in the Copa Libertadores final, scheduled for 28 November in Montevideo.",
+          "body": [
+            "Despite a 1-0 home loss in the second leg, the São Paulo side relied on their 2-1 first-leg victory to force penalties and prevail 5-3, with goalkeeper Carlos Miguel starring. Palmeiras will chase the trophy at Montevideo's historic Estadio Centenario, a 60,000-plus capacity ground with the kick-off time yet to be confirmed.",
+            "They will face either Flamengo or Estudiantes de La Plata, who meet this Thursday at the Maracaná following a goalless draw in the first leg. Alexander Medina's squad aims to pull off an upset in Rio de Janeiro against the reigning champions."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Attention Étudiants : avec Palmeiras classé, quel jour et où se joue la finale de la Copa Libertadores",
-          "summary": "Le Verdao a dépassé Fluminense au pénalty et est devenu le premier finaliste. Ici, tous les détails du match décisif.",
+          "title": "Palmeiras disputera la finale de la Copa Libertadores 2026 au Centenario",
+          "summary": "Palmeiras a éliminé Fluminense aux tirs au but pour s'offrir son ticket en finale de la Copa Libertadores, prévue le 28 novembre à Montevideo.",
+          "body": [
+            "Battu 1-0 à domicile en demi-finale retour, le club pauliste a fait fructifier son succès 2-1 de l'aller avant de s'imposer 5-3 aux tirs au but, bien aidé par son gardien Carlos Miguel. Palmeiras disputera le titre continental dans l'historique Estadio Centenario de Montevideo, une enceinte de plus de 60 000 places dont l'horaire reste à fixer.",
+            "Son adversaire sera Flamengo ou Estudiantes de La Plata, opposés ce jeudi au Maracaná après le 0-0 du match aller. La formation argentine d'Alexander Medina tentera de renverser le champion en titre à Rio de Janeiro."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "انتباه الطلاب: مع تصنيف بالميراس، ما هو اليوم وأين يتم لعب نهائي كأس ليبرتادوريس",
-          "summary": "وتجاوز فيرداو فلومينينس بركلات الترجيح وأصبح أول المتأهلين للنهائي. هنا، كل تفاصيل المباراة الحاسمة.",
+          "title": "بالميراس يتأهل إلى نهائي كوبا ليبرتادوريس 2026 على ملعب سنتيناريو",
+          "summary": "حجز بالميراس بطاقة العبور إلى نهائي كوبا ليبرتادوريس عقب إقصائه فلومينينسي بركلات الترجيح، ليضرب موعداً في النهائي المقرر يوم 28 نوفمبر في مونتيفيديو.",
+          "body": [
+            "ورغم خسارته 1-0 على ملعبه في لقاء الإياب، عادل الفريق البرازيلي الكفة بفضل تفوقه ذهاباً 2-1 قبل أن يحسم ركلات الترجيح بنتيجة 5-3 بفضل تألق حارسه كارلوس ميغيل. وسيلعب بالميراس على اللقب القاري في ملعب سنتيناريو التاريخي في أوروغواي، الذي يتسع لأكثر من 60 ألف متفرج، في انتظار تحديد توقيت اللقاء.",
+            "وسيلتقي الفريق البرازيلي في النهائي مع الفائز من مواجهة فلامنغو وإستوديانتيس دي لا بلاتا، اللذين يلتقيان مساء الخميس على ملعب ماراكانا بعد تعادلهما ذهاباً بلا أهداف. ويأمل المدرب ألكسندر ميدينا قيادة فريقه لإقصاء حامل اللقب في ريو دي جانيرو."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/libertadores/final-copa-libertadores-palmeiras-vs-flamengo-estudiantes-dia-hora-ver-tv-online_0_mkakAiczz7.html",
@@ -421,7 +550,20 @@
           "url": "https://www.ole.com.ar/futbol-internacional/libertadores/final-copa-libertadores-palmeiras-vs-flamengo-estudiantes-dia-hora-ver-tv-online_0_mkakAiczz7.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-22T07:43:20+00:00"
+        }
+      }
     },
     {
       "id": "5777a24152bb",
@@ -429,27 +571,48 @@
       "summary": "El entrenador portugués va por su tercera estrella en el torneo de la Conmebol.",
       "i18n": {
         "es": {
-          "title": "Abel Ferreira, el monstruo de la Copa Libertadores: llegó a su cuarta final con el Palmeiras",
-          "summary": "El entrenador portugués va por su tercera estrella en el torneo de la Conmebol.",
-          "needs_translation": false
+          "title": "Abel Ferreira clasifica a Palmeiras a su cuarta final de Copa Libertadores",
+          "summary": "Abel Ferreira metió a Palmeiras en su cuarta final de Copa Libertadores tras superar por penaltis a Fluminense en semifinales.",
+          "body": [
+            "El técnico portugués, al mando del club paulista desde finales de 2020, agranda su historial en la máxima competición continental: seis semifinales en siete participaciones. Campeón en 2020 y 2021 frente a Santos y Flamengo, Ferreira también guio al equipo a la final del año pasado, donde cayó contra el conjunto carioca.",
+            "Con Agustín Giay y Flaco López consolidados en el esquema titular, el elenco paulista espera rival para pelear por la gloria internacional, que saldrá del choque entre Flamengo y Estudiantes de La Plata."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Abel Ferreira, the monster of the Copa Libertadores: he reached his fourth final with Palmeiras",
-          "summary": "The Portuguese coach is going for his third star in the CONMEBOL tournament.",
+          "title": "Abel Ferreira steers Palmeiras into fourth Copa Libertadores final",
+          "summary": "Abel Ferreira led Palmeiras to their fourth Copa Libertadores final after overcoming Fluminense in a penalty shootout during their semi-final clash.",
+          "body": [
+            "In charge of the São Paulo side since late 2020, the Portuguese tactician extended his remarkable record in South America's top tournament to six semi-finals in seven campaigns. Champion in 2020 and 2021 against Santos and Flamengo, Ferreira also guided his side to last year's final, where they fell to the Rio giants.",
+            "With Agustín Giay and Flaco López established in the starting line-up, Palmeiras now await their final opponent, who will emerge from the clash between Flamengo and Estudiantes de La Plata."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Abel Ferreira, le monstre de la Copa Libertadores : il a atteint sa quatrième finale avec le Palmeiras",
-          "summary": "L'entraîneur portugais décroche sa troisième étoile dans le tournoi de la Conmebol.",
+          "title": "Abel Ferreira qualifie Palmeiras pour sa quatrième finale de Copa Libertadores",
+          "summary": "Abel Ferreira a guidé Palmeiras vers sa quatrième finale de Copa Libertadores après un succès aux tirs au but contre Fluminense en demi-finales.",
+          "body": [
+            "Aux commandes du club pauliste depuis fin 2020, le technicien portugais confirme sa régularité sud-américaine : six demi-finales disputées en sept participations. Déjà vainqueur de l'épreuve en 2020 et 2021 face à Santos puis Flamengo, Ferreira a également mené son équipe en finale l'an passé, butant sur les Cariocas.",
+            "Avec Agustín Giay et Flaco López installés dans le onze de départ, Palmeiras attend désormais son adversaire pour le titre continental, issu du duel entre Flamengo et Estudiantes de La Plata."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "أبيل فيريرا، وحش كأس ليبرتادوريس: وصل إلى نهائيه الرابع مع بالميراس",
-          "summary": "سيذهب المدرب البرتغالي لنجمه الثالث في بطولة الكونميبول.",
+          "title": "أبيل فيريرا يقود بالميراس إلى نهائي كوبا ليبرتادوريس للمرة الرابعة",
+          "summary": "بلغ بالميراس نهائي كوبا ليبرتادوريس للمرة الرابعة بقيادة مدربه البرتغالي أبيل فيريرا، بعد تفوقه بركلات الترجيح على فلومينينسي في نصف النهائي.",
+          "body": [
+            "وعزز المدرب البرتغالي، الذي يتولى قيادة الفريق البرازيلي منذ أواخر 2020، أرقامه في البطولة القارية بخوض نصف النهائي السادس خلال سبع نسخ. وتوج فيريرا باللقب عامي 2020 و2021 أمام سانتوس وفلامنغو، قبل بلوغ نهائي النسخة الماضية الذي خسره أمام النادي القادم من ريو دي جانيرو.",
+            "وبحضور أغوستين غياي وفلاكو لوبيز في التشكيل الأساسي، يترقب بالميراس هوية منافسه في النهائي، والذي سيتحدد عبر المواجهة بين فلامنغو وإستوديانتيس دي لا بلاتا."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/libertadores/abel-ferreira-copa-libertadores-final-palmeiras_0_MLC7Bu0auA.html",
@@ -471,7 +634,20 @@
           "url": "https://www.ole.com.ar/futbol-internacional/libertadores/abel-ferreira-copa-libertadores-final-palmeiras_0_MLC7Bu0auA.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 5,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-22T07:43:24+00:00"
+        }
+      }
     },
     {
       "id": "69cefea32f4d",
@@ -521,7 +697,12 @@
           "url": "https://www.mundodeportivo.com/futbol/fc-barcelona/20261022/1004241622/chendo-perejil-todas-salsas.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": false,
+        "quality": 1,
+        "source_read": "skipped"
+      }
     },
     {
       "id": "2b83fdd0804a",
@@ -529,27 +710,44 @@
       "summary": "Los jugadores del Pincha aterrizaron en Brasil y ya descansan a la espera de la revancha con Flamengo, por un lugar en la final de la Libertadores.",
       "i18n": {
         "es": {
-          "title": "Los hinchas de Estudiantes recibieron al plantel en Río: van por la final",
-          "summary": "Los jugadores del Pincha aterrizaron en Brasil y ya descansan a la espera de la revancha con Flamengo, por un lugar en la final de la Libertadores.",
-          "needs_translation": false
+          "title": "Estudiantes ya está en Río de Janeiro arropado por sus hinchas",
+          "summary": "El plantel de Estudiantes llegó a Río de Janeiro con el aliento de sus hinchas antes de medirse con Flamengo en el Maracaná.",
+          "body": [
+            "Los simpatizantes del Pincha aguardaron a la delegación en la puerta del hotel tras la cena para respaldar al equipo en su intento de meterse en la final de la Copa Libertadores. La previa en la ciudad brasileña estuvo marcada por la lluvia y una llamativa convivencia pacífica en las playas junto a hinchas de Boca que aún permanecían allí tras su partido ante Vasco da Gama."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Students fans welcomed the squad in Rio: they are going for the final",
-          "summary": "The Pincha players landed in Brazil and are already resting waiting for the rematch with Flamengo, for a place in the final of the Libertadores.",
+          "title": "Estudiantes land in Rio de Janeiro backed by travelling fans",
+          "summary": "The Estudiantes squad arrived in Rio de Janeiro to loud backing from their fans ahead of facing Flamengo at the Maracaná.",
+          "body": [
+            "Supporters of the Pincha waited outside the team hotel past dinner time to rally behind the squad in their bid to reach the Copa Libertadores final. The buildup in the Brazilian city was marked by rainy weather and a peaceful atmosphere on the beaches alongside Boca fans still lingering after their match against Vasco da Gama."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Les supporters des étudiants ont accueilli l'équipe à Rio : ils vont en finale",
-          "summary": "Les joueurs du Pincha ont atterri au Brésil et se reposent déjà en attendant la revanche avec Flamengo, pour une place en finale de la Libertadores.",
+          "title": "Estudiantes débarque à Rio de Janeiro porté par ses supporters",
+          "summary": "Le groupe d'Estudiantes est arrivé à Rio de Janeiro sous les chants de ses supporters avant de défier Flamengo au Maracaná.",
+          "body": [
+            "Les supporters du Pincha ont attendu la délégation devant l'hôtel après le dîner pour soutenir l'équipe dans sa quête d'une place en finale de Copa Libertadores. L'avant-match dans la cité brésilienne s'est déroulé sous la pluie, marqué par une cohabitation étonnamment paisible sur les plages avec des fans de Boca encore présents sur place."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "رحب مشجعو الطلاب بالفريق في ريو: إنهم ذاهبون إلى النهائي",
-          "summary": "هبط لاعبو بينشا في البرازيل ويستريحون بالفعل في انتظار إعادة المباراة مع فلامنغو، للحصول على مكان في نهائي ليبرتادوريس.",
+          "title": "إستوديانتيس يصل إلى ريو دي جانيرو وسط مؤازرة جماهيرية",
+          "summary": "وصلت بعثة إستوديانتيس إلى ريو دي جانيرو مدعومة بهتافات أنصارها قبل مواجهة فلامنغو المرتقبة على ملعب ماراكانا.",
+          "body": [
+            "احتشد مشجعو بينتشا أمام فندق الإقامة بعد العشاء لدعم اللاعبين سعياً لبلوغ نهائي كوبا ليبرتادوريس. وسادت المدينة البرازيلية أجواء ماطرة قبل اللقاء، تخللها تعايش سلمي لافت على الشواطئ مع جماهير بوكا التي بقيت هناك عقب مباراتها أمام فاسكو دا غاما."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/estudiantes/estudiantes-llegada-plantel-rio-janeiro-compartir-ciudad-boca_0_42iH9bKOB8.html",
@@ -571,7 +769,20 @@
           "url": "https://www.ole.com.ar/estudiantes/estudiantes-llegada-plantel-rio-janeiro-compartir-ciudad-boca_0_42iH9bKOB8.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full",
+        "semantique": {
+          "note": 10.0,
+          "central_restitue": true,
+          "manque": [],
+          "erreurs": [],
+          "retire": false,
+          "ts": "2026-10-22T07:43:28+00:00"
+        }
+      }
     },
     {
       "id": "c34f896e0451",
@@ -579,27 +790,48 @@
       "summary": "El DT del Atlético Mineiro palpitó el duelo por la Sudamericana ante el Xeneize, que será el 21 de noviembre en Barranquilla.",
       "i18n": {
         "es": {
-          "title": "Domínguez, antes de la final contra Boca: \"Tienen nuevo entrenador, se sienten mucho más fuertes y están en un buen momento\"",
-          "summary": "El DT del Atlético Mineiro palpitó el duelo por la Sudamericana ante el Xeneize, que será el 21 de noviembre en Barranquilla.",
-          "needs_translation": false
+          "title": "Domínguez palpitó la final de la Copa Sudamericana ante Boca Juniors",
+          "summary": "Tras clasificar a la final de la Copa Sudamericana, Eduardo Domínguez palpitó el cruce frente a Boca Juniors y destacó la renovación del equipo argentino.",
+          "body": [
+            "Pese a caer 2-0 ante Montevideo City Torque y avanzar gracias al 3-0 de la ida, el entrenador de Atlético Mineiro reconoció la jerarquía de su próximo rival. Domínguez advirtió sobre el presente del conjunto dirigido por Rodolfo Arruabarrena, en carrera por el torneo local y la Copa Argentina, aunque remarcó que la prioridad de su grupo pasa por el rendimiento propio.",
+            "El técnico postergará la preparación específica para la final del 21 de noviembre debido a la seguidilla de compromisos, que incluye el Brasileirao y las semifinales de la Copa de Brasil ante Gremio. El historial mano a mano lo respalda: ya eliminó a Boca Juniors dos veces consecutivas durante su ciclo en Estudiantes de La Plata."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Dominguez, before the final against Boca: \"They have a new coach, they feel much stronger and are in a good moment\"",
-          "summary": "Atlético Mineiro's coach palpitated the match for the Sudamericana against Xeneize, which will be on November 21 in Barranquilla.",
+          "title": "Domínguez looks ahead to Copa Sudamericana final clash with Boca Juniors",
+          "summary": "Fresh from securing a place in the Copa Sudamericana final, Eduardo Domínguez looked ahead to the showdown with Boca Juniors and praised the Argentine side's recent turnaround.",
+          "body": [
+            "Despite a 2-0 second-leg loss to Montevideo City Torque that sealed qualification thanks to a 3-0 first-leg win, Atlético Mineiro coach Eduardo Domínguez acknowledged the continental pedigree of Boca Juniors. He highlighted the momentum built under Rodolfo Arruabarrena, who has Boca competing on multiple fronts, while insisting his players must remain focused on their own game.",
+            "Domínguez will hold off on detailed preparations for the November 21 final to navigate a crowded schedule, including the Brasileirao and a Copa de Brasil semi-final against Gremio. Knockout history favours him: he eliminated Boca twice during his spell in charge of Estudiantes de La Plata."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Domínguez, avant la finale contre Boca : « Ils ont un nouvel entraîneur, ils se sentent beaucoup plus forts et ils sont dans un bon moment »",
-          "summary": "Le DT de l'Atlético Mineiro a palpité le duel pour l'Amérique du Sud contre le Xeneize, qui aura lieu le 21 novembre à Barranquilla.",
+          "title": "Domínguez se projette sur la finale de Copa Sudamericana face à Boca Juniors",
+          "summary": "Qualifié pour la finale de la Copa Sudamericana, Eduardo Domínguez s'est projeté sur le choc à venir contre Boca Juniors, saluant le renouveau de la formation argentine.",
+          "body": [
+            "Battu 2-0 par Montevideo City Torque mais qualifié grâce à son net succès 3-0 à l'aller, l'entraîneur d'Atlético Mineiro a souligné le statut continental de son futur adversaire. Domínguez se méfie de la dynamique imprimée par Rodolfo Arruabarrena, toujours en course en championnat et en coupe nationale, tout en rappelant que la priorité reste le niveau de jeu de son équipe.",
+            "Le technicien attendra avant de préparer le rendez-vous du 21 novembre, calendrier dense oblige entre le Brasileirao et la demi-finale de Copa de Brasil contre Gremio. L'historique récent des confrontations directes plaide pour lui : il a déjà éliminé Boca Juniors à deux reprises sur le banc d'Estudiantes de La Plata."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دومينغيز، قبل المباراة النهائية ضد بوكا: \"لديهم مدرب جديد، يشعرون بأنهم أقوى بكثير وهم في لحظة جيدة\"",
-          "summary": "خبط مدرب أتلتيكو مينيرو المباراة مع سودامريكانا ضد زينيز، والتي ستكون في 21 نوفمبر في بارانكويلا.",
+          "title": "دومينغيز يترقب نهائي كوبا سودأمريكانا أمام بوكا جونيورز",
+          "summary": "عقب حسم التأهل إلى نهائي كوبا سودأمريكانا، تحدث إدواردو دومينغيز عن المواجهة المرتقبة ضد بوكا جونيورز، مشيداً بالتطور الكبير في صفوف الفريق الأرجنتيني.",
+          "body": [
+            "رغم الخسارة بهدفين دون رد أمام مونتيفيديو سيتي توركي، وهي نتيجة كافية للعبور بفضل الفوز ذهاباً بثلاثية نظيفة، اعترف مدرب أتلتيكو مينيرو بالمكانة القارية لخصمه المقبل. وحذر دومينغيز من صحوة الفريق تحت قيادة رودولفو أروابارينا ومنافسته على لقبي الدوري وكأس الأرجنتين، مؤكداً أن تركيز تشكيلته ينصب بالكامل على أدائها الفردي والجماعي.",
+            "وسيؤجل المدرب التحضير لنهائي 21 نوفمبر بسبب ضغط المباريات في الدوري البرازيلي ومواجهة غريميو في نصف نهائي كأس البرازيل. وتصب أسبقية المواجهات المباشرة في صالحه، بعدما أطاح ببوكا جونيورز مرتين متتاليتين خلال إشرافه على إستوديانتيس دي لا بلاتا."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/sudamericana/dominguez-palpito-final-boca_0_p5oJosb31D.html",
@@ -621,7 +853,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/sudamericana/dominguez-palpito-final-boca_0_p5oJosb31D.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full"
+      }
     },
     {
       "id": "22b5e16f7232",
@@ -629,27 +866,48 @@
       "summary": "El portugués criticó las decisiones de su entrenador y éste devolvió con otro dardo en conferencia. Además, las palabras del recordado ex defensor sobre lo sucedido y sus flores para el 10 argentino.",
       "i18n": {
         "es": {
-          "title": "Siguen los tiros en el United: Bruno Fernandes contra Carrick post 1-4 vs. Como y la voz de un histórico como Ferdinand elogiando a Nico Paz",
-          "summary": "El portugués criticó las decisiones de su entrenador y éste devolvió con otro dardo en conferencia. Además, las palabras del recordado ex defensor sobre lo sucedido y sus flores para el 10 argentino.",
-          "needs_translation": false
+          "title": "Tensión en el Manchester United: cruce público entre Bruno Fernandes y Carrick",
+          "summary": "Bruno Fernandes y Michael Carrick ventilaron sus diferencias tácticas tras la dura goleada 4-1 sufrida por el Manchester United ante el Como.",
+          "body": [
+            "El capitán portugués cuestionó abiertamente el planteamiento conservador del cuerpo técnico y reclamó más valentía para presionar arriba. La respuesta del entrenador inglés fue inmediata: Carrick replicó en rueda de prensa que ningún esquema funciona si los futbolistas no se sacrifican corriendo hacia adelante y hacia atrás, antes de pedir disculpas a los hinchas que viajaron a Italia.",
+            "El tropiezo en Champions League, con doblete y asistencia de Nico Paz para el equipo de Cesc Fàbregas, estiró a siete partidos la racha sin victorias de los Diablos Rojos. El vestuario venía sacudido por las críticas de Lisandro Martínez sobre la falta de fichajes, en una campaña donde el club ya quedó fuera de la Copa de la Liga y marcha a 14 puntos del Manchester City."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "The shots continue at United: Bruno Fernandes against Carrick post 1-4 vs. Like and the voice of a historian like Ferdinand praising Nico Paz",
-          "summary": "The Portuguese criticized the decisions of his coach and he returned with another dart in conference. In addition, the words of the remembered former defender about what happened and his flowers for the Argentine 10.",
+          "title": "Tension at Manchester United: public clash between Bruno Fernandes and Carrick",
+          "summary": "Bruno Fernandes and Michael Carrick aired their tactical disagreements following Manchester United's painful 4-1 defeat away to Como.",
+          "body": [
+            "The Portuguese captain publicly criticized the coaching staff's cautious tactics, demanding more courage to press high up the pitch. Carrick struck back in his post-match press conference, stressing that no game plan works unless players commit to running both forwards and backwards, before apologizing to the fans who travelled to Italy.",
+            "The Champions League loss, featuring two goals and an assist from Nico Paz for Cesc Fàbregas's team, stretched United's winless streak to seven matches. The squad had already been rattled by Lisandro Martínez's outburst over lack of squad quality, with the team already knocked out of the League Cup and sitting 14 points adrift of Manchester City."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Les tirs continuent à United : Bruno Fernandes contre Carrick post 1-4 vs. Comme et la voix d'un historien comme Ferdinand faisant l'éloge de Nico Paz",
-          "summary": "Le Portugais a critiqué les décisions de son entraîneur et celui-ci est revenu avec une autre fléchette en conférence. En outre, les paroles de l'ancien défenseur du souvenir sur ce qui s'est passé et ses fleurs pour le 10 argentin.",
+          "title": "Tension à Manchester United : passe d'armes publique entre Fernandes et Carrick",
+          "summary": "Bruno Fernandes et Michael Carrick ont étalé leurs désaccords tactiques après la lourde défaite 4-1 concédée par Manchester United face à Como.",
+          "body": [
+            "Le capitaine portugais a ouvertement critiqué l'approche attentiste du staff, réclamant plus de cran au pressing haut. La réplique du manager anglais a fusé en conférence de presse : Carrick a rétorqué qu'aucun système n'est viable sans efforts de course vers l'avant et vers l'arrière, avant de présenter ses excuses aux supporters ayant fait le déplacement en Italie.",
+            "Ce revers en Ligue des champions, marqué par un doublé et une passe décisive de Nico Paz pour l'équipe de Cesc Fàbregas, porte à sept rencontres la série sans victoire des Red Devils. Le vestiaire était déjà sous pression après les propos polémiques de Lisandro Martínez sur le niveau de l'effectif, alors que United a déjà quitté la Coupe de la Ligue et compte 14 points de retard sur Manchester City."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "تستمر الطلقات في يونايتد: برونو فرنانديز ضد كاريك بعد 1-4 مقابل مثل وصوت مؤرخ مثل فرديناند يمدح نيكو باز",
-          "summary": "انتقد البرتغالي قرارات مدربه وعاد مع سهم آخر في المؤتمر. بالإضافة إلى ذلك، كلمات المدافع السابق الذي تم تذكره حول ما حدث وزهوره للأرجنتيني 10.",
+          "title": "توتر في مانشستر يونايتد: خلاف علني بين برونو فيرنانديز ومايكل كاريك",
+          "summary": "طفى الخلاف التكتيكي بين برونو فيرنانديز والمدرب مايكل كاريك إلى العلن عقب سقوط مانشستر يونايتد المدوي بنتيجة 4-1 أمام كومو.",
+          "body": [
+            "انتقد قائد الفريق البرتغالي بوضوح النهج الدفاعي الحذر للجهاز الفني، مطالبًا بمزيد من الشجاعة لتطبيق الضغط العالي. ولم يتأخر رد المدرب الإنجليزي؛ إذ صرح كاريك في المؤتمر الصحفي بأن أي خطة تفقد قيمتها إذا لم يركض اللاعبون ذهابًا وإيابًا، قبل أن يعتذر للجماهير التي سافرت إلى إيطاليا.",
+            "وجاءت الخسارة القاسية في دوري أبطال أوروبا، التي شهدت تسجيل نيكو باز هدفين وصناعته لآخر لصالح كتيبة سيسك فابريغاس، لتمدد سلسلة غياب الانتصارات لدى الشياطين الحمر إلى سبع مباريات. وتأتي هذه الأزمة في ظل توتر سابق أثاره ليساندرو مارتينيز بتشكيكه في جودة الفريق، بعد الخروج من كأس الرابطة والتأخر بفارق 14 نقطة عن مانشستر سيتي."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/futbol-internacional/champions/united-carrick-fernandes-champions-cruce-criticas-ferdinand_0_oNwKkeTK5G.html",
@@ -671,7 +929,12 @@
           "url": "https://www.ole.com.ar/futbol-internacional/champions/united-carrick-fernandes-champions-cruce-criticas-ferdinand_0_oNwKkeTK5G.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full"
+      }
     },
     {
       "id": "b637cb655f80",
@@ -679,27 +942,48 @@
       "summary": "El delantero de 19 años de origen nigeriano metió el gol del 1-1 contra Vélez y sumó su tercer grito en dos partidos desde que firmó su primer contrato profesional.",
       "i18n": {
         "es": {
-          "title": "El 9 de la Reserva de River volvió a convertir y se ilusiona con otra chance en Primera",
-          "summary": "El delantero de 19 años de origen nigeriano metió el gol del 1-1 contra Vélez y sumó su tercer grito en dos partidos desde que firmó su primer contrato profesional.",
-          "needs_translation": false
+          "title": "Jonathan Spiff no para de marcar en Reserva y pide pista en River",
+          "summary": "El atacante Jonathan Spiff anotó frente a Vélez su decimotercer tanto de 2026 y presiona por minutos en la Primera de River.",
+          "body": [
+            "Con su tanto en el 1-1 contra el Fortín por la fecha 14 del Torneo Proyección Clausura, el delantero de 19 años alcanzó siete festejos en doce apariciones durante este certamen. El conjunto dirigido por Diego Barrado dejó escapar la cima sobre el cierre, pero se mantiene a solo un punto de Vélez y Central, con el boleto a los playoffs prácticamente asegurado.",
+            "El futbolista de ascendencia nigeriana firmó hace dos semanas su vínculo profesional hasta diciembre de 2028, con una cláusula de rescisión de 100 millones de euros. Tras haber debutado en Primera durante la Copa Sudamericana bajo la conducción técnica de Eduardo Coudet, Spiff busca convencer a Leonardo Ponzio en medio de la sequía que atraviesan los delanteros titulares del plantel principal."
+          ],
+          "format": "deep",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "The River Reserve 9 converted again and is excited about another chance at Primera",
-          "summary": "The 19-year-old Nigerian striker scored the 1-1 goal against Vélez and added his third shout in two matches since signing his first professional contract.",
+          "title": "Jonathan Spiff shines for reserves and knocks on River's first-team door",
+          "summary": "Striker Jonathan Spiff bagged his 13th goal of 2026 against Vélez to step up his push for minutes with River's first team.",
+          "body": [
+            "His strike in the 1-1 draw against Vélez on matchday 14 of the Torneo Proyección Clausura took the 19-year-old forward to seven goals in twelve appearances this tournament. Diego Barrado's side conceded the top spot late on, yet they sit just one point behind Vélez and Central, with their playoff berth virtually locked up.",
+            "The Nigerian-heritage prospect recently signed his first professional contract through December 2028, complete with a 100 million euro release clause. Having already debuted for the senior side in the Copa Sudamericana under Eduardo Coudet, Spiff is now pushing to convince Leonardo Ponzio amid a prolonged dry spell among River's starting strikers."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "fr": {
-          "title": "Le 9 de la Réserve de la Rivière s'est reconverti et s'enthousiasme d'une autre chance en Première",
-          "summary": "L'attaquant de 19 ans d'origine nigériane a inscrit le but 1-1 contre Vélez et a ajouté son troisième cri en deux matches depuis qu'il a signé son premier contrat professionnel.",
+          "title": "Jonathan Spiff brille en réserve et frappe à la porte des pros à River",
+          "summary": "Auteur de son 13e but de l'année 2026 face à Vélez, l'attaquant Jonathan Spiff réclame du temps de jeu en équipe première de River.",
+          "body": [
+            "Buteur lors du match nul 1-1 contre Vélez pour la 14e journée du Torneo Proyección Clausura, le joueur de 19 ans compte désormais sept réalisations en douze apparitions dans cette compétition. Si la formation menée par Diego Barrado a laissé filer la première place dans les derniers instants, elle reste à un point de Vélez et de Central, avec la qualification pour la phase finale quasiment en poche.",
+            "L'attaquant d'origine nigériane a paraphé il y a deux semaines son premier contrat professionnel jusqu'en décembre 2028, assorti d'une clause libératoire de 100 millions d'euros. Lancé chez les professionnels en Copa Sudamericana sous Eduardo Coudet, Spiff entend séduire Leonardo Ponzio, profitant de la panne d'efficacité des attaquants titulaires de l'équipe fanion."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "تم تحويل محمية النهر 9 مرة أخرى وهي متحمسة لفرصة أخرى في بريميرا",
-          "summary": "سجل المهاجم النيجيري البالغ من العمر 19 عامًا هدف 1-1 ضد فيليز وأضاف ثالث صيحة له في مباراتين منذ توقيع أول عقد احترافي له.",
+          "title": "جوناثان سبيف يتألق مع الرديف ويطرق أبواب الفريق الأول لريفر بليت",
+          "summary": "سجل المهاجم الشاب جوناثان سبيف هدفه الثالث عشر في عام 2026 أمام فيليز، ليفرض نفسه بقوة على حسابات الفريق الأول لريفر بليت.",
+          "body": [
+            "بهدفه في التعادل 1-1 أمام فيليز سارسفيلد ضمن الجولة 14 من بطولة كلاوسورا لفرق الرديف، رفع المهاجم البالغ 19 عاماً رصيده إلى سبعة أهداف في 12 مباراة. ورغم ضياع الصدارة من تشكيلة المدرب دييغو بارادو في الدقائق الأخيرة، يبقى الفريق على بعد نقطة واحدة فقط من فيليز وسنترال، مع ضمان بطاقة التأهل إلى الأدوار الإقصائية بشكل شبه محسوم.",
+            "ووقع اللاعب ذو الأصول النيجيرية قبل أسبوعين عقده الاحترافي الممتد حتى ديسمبر 2028، بشرط جزائي يبلغ 100 مليون يورو. وبعدما سجل ظهوره الأول مع الفريق الأول في كوبا سودأمريكانا تحت قيادة إدواردو كوديه، يسعى سبيف الآن لإقناع المدرب ليوناردو بونزيو، مستغلاً الصيام التهديفي لمهاجمي القوام الأساسي."
+          ],
+          "format": "deep",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.ole.com.ar/river-plate/river-reserva-jonathanspiff-torneoproyeccionclausura-velez_0_1Ax8kYWL74.html",
@@ -721,7 +1005,12 @@
           "url": "https://www.ole.com.ar/river-plate/river-reserva-jonathanspiff-torneoproyeccionclausura-velez_0_1Ax8kYWL74.html"
         }
       ],
-      "source_count": 1
+      "source_count": 1,
+      "editorial": {
+        "publish": true,
+        "quality": 6,
+        "source_read": "full"
+      }
     },
     {
       "id": "b5bd85f29ad5",
@@ -729,27 +1018,44 @@
       "summary": "Le Real Madrid menait déjà 2-0 face à Leipzig quand Kylian Mbappé a ajouté son nom au tableau d'affichage, ce mercredi soir en Ligue des champions. Yan Diomandé l'a imité d'une magnifique reprise, sans célébrer par respect pour son ancien club, défait en Espagne (1-4).",
       "i18n": {
         "fr": {
-          "title": "Ligue des champions : Mbappé et Diomandé illuminent le Real Madrid face à Leipzig… avant de défier le Barça dans le Clasico",
-          "summary": "Le Real Madrid menait déjà 2-0 face à Leipzig quand Kylian Mbappé a ajouté son nom au tableau d'affichage, ce mercredi soir en Ligue des champions. Yan Diomandé l'a imité d'une magnifique reprise, sans célébrer par respect pour son ancien club, défait en Espagne (1-4).",
-          "needs_translation": false
+          "title": "Le Real Madrid surclasse Leipzig avec Mbappé et Diomandé",
+          "summary": "Le Real Madrid a nettement dominé Leipzig (4-1) en Ligue des champions grâce notamment à des réalisations signées Kylian Mbappé et Yan Diomandé.",
+          "body": [
+            "Après avoir rapidement pris deux buts d'avance face aux Allemands, les Madrilènes ont accentué leur domination par l'intermédiaire de l'attaquant français. Diomandé a ensuite conclu le festival offensif d'une reprise spectaculaire, choisissant de ne pas fêter son but face à son ancienne formation."
+          ],
+          "format": "brief",
+          "needs_translation": false,
+          "engine": "gemini-editor"
         },
         "en": {
-          "title": "Champions League: Mbappé and Diomandé illuminate Real Madrid against Leipzig... before challenging Barça in the Clasico",
-          "summary": "Real Madrid were already leading 2-0 against Leipzig when Kylian Mbappé added his name to the scoreboard on Wednesday night in the Champions League. Yan Diomandé imitated him with a magnificent recovery, without celebrating out of respect for his former club, defeated in Spain (1-4).",
+          "title": "Real Madrid outclass Leipzig with Mbappé and Diomandé on target",
+          "summary": "Real Madrid breezed past Leipzig with a commanding 4-1 Champions League victory, spurred on by goals from Kylian Mbappé and Yan Diomandé.",
+          "body": [
+            "After quickly racing into a two-goal lead against the Germans, the Spanish giants tightened their grip through the French forward. Diomandé then wrapped up the rout with a stunning strike, choosing not to celebrate against his former club."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "es": {
-          "title": "Liga de Campeones: Mbappé y Diomandé iluminan el Real Madrid ante el Leipzig… antes de desafiar al Barça en el Clásico",
-          "summary": "El Real Madrid ya ganaba 2-0 ante el Leipzig cuando Kylian Mbappé añadió su nombre al marcador, este miércoles por la noche en la Liga de Campeones. Yan Diomandé lo imitó con una magnífica recuperación, sin celebrar por respeto a su antiguo club, derrotado en España (1-4).",
+          "title": "El Real Madrid pasa por encima de Leipzig con Mbappé y Diomandé",
+          "summary": "El Real Madrid firmó una contundente victoria ante Leipzig (4-1) en la Champions League, impulsado por los tantos de Kylian Mbappé y Yan Diomandé.",
+          "body": [
+            "Tras tomar rápidamente una ventaja de dos goles ante el conjunto alemán, los blancos aumentaron su dominio por medio del atacante francés. Diomandé redondeó la goleada con un remate espectacular y prefirió no celebrar el tanto frente a su antiguo equipo."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         },
         "ar": {
-          "title": "دوري أبطال أوروبا: مبابي وديوماندي يضيئان ريال مدريد ضد لايبزيغ... قبل تحدي برشلونة في الكلاسيكو",
-          "summary": "كان ريال مدريد يتقدم 2-0 بالفعل ضد لايبزيغ عندما أضاف كيليان مبابي اسمه إلى لوحة النتائج ليلة الأربعاء في دوري أبطال أوروبا. قلده يان ديوماندي بتعافي رائع، دون أن يحتفل احتراما لناديه السابق، الذي هزم في إسبانيا (1-4).",
+          "title": "ريال مدريد يكتسح لايبزيغ بفضل مبابي وديوماندي",
+          "summary": "حقق ريال مدريد فوزاً عريضاً على لايبزيغ بنتيجة (4-1) في دوري أبطال أوروبا، بفضل هدفي كيليان مبابي ويان ديوماندي.",
+          "body": [
+            "وبعدما تقدم الملكي بهدفين مبكرين أمام الفريق الألماني، واصل تفوقه عبر المهاجم الفرنسي، قبل أن يختتم ديوماندي المهرجان التهديفي بتسديدة مباغتة رائعة، مفضلاً عدم الاحتفال احتراماً لفريقه السابق."
+          ],
+          "format": "brief",
           "needs_translation": false,
-          "engine": "mymemory"
+          "engine": "gemini-editor"
         }
       },
       "url": "https://www.lequipe.fr/Football/Actualites/Encore-un-but-pour-kylian-mbappe-la-realisation-de-l-attaquant-du-real-madrid-face-a-leipzig-en-ligue-des-champions-en-video/1737641#at_medium=RSS_feeds",
@@ -783,7 +1089,12 @@
           "url": "https://www.lefigaro.fr/sports/football/ligue-des-champions/ligue-des-champions-mbappe-illumine-le-real-madrid-qui-etrille-leipzig-avant-de-defier-le-barca-de-yamal-20261021"
         }
       ],
-      "source_count": 3
+      "source_count": 3,
+      "editorial": {
+        "publish": true,
+        "quality": 8,
+        "source_read": "rss"
+      }
     },
     {
       "id": "bbf8020ec002",
