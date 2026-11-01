@@ -1,19 +1,19 @@
 {
-  "genere_le": "2026-10-31T12:00:10+00:00",
-  "articles": 49,
-  "score": 60.9,
-  "defauts_total": 262,
+  "genere_le": "2026-11-01T13:00:18+00:00",
+  "articles": 50,
+  "score": 64.8,
+  "defauts_total": 240,
   "par_type": {
-    "non_enrichi": 192,
-    "nom_perdu": 36,
-    "latin_en_arabe": 29,
-    "calque": 5
+    "non_enrichi": 196,
+    "nom_perdu": 24,
+    "latin_en_arabe": 19,
+    "calque": 1
   },
   "par_langue": {
-    "ar": 77,
-    "fr": 63,
-    "es": 62,
-    "en": 60
+    "ar": 68,
+    "es": 58,
+    "fr": 57,
+    "en": 57
   },
   "couverture": {
     "enrichis": 1,
@@ -25,148 +25,772 @@
   },
   "defauts": [
     {
-      "id": "ddd43c79b572",
+      "id": "de10e9a42544",
       "lang": "fr",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "ddd43c79b572",
+      "id": "de10e9a42544",
       "lang": "en",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "ddd43c79b572",
-      "lang": "es",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Vicky Lopez, Comme, FC Barcelone"
-    },
-    {
-      "id": "ddd43c79b572",
+      "id": "de10e9a42544",
       "lang": "es",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "ddd43c79b572",
+      "id": "de10e9a42544",
       "lang": "ar",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "c2e7a030b588",
+      "id": "bb3ecfe49f0c",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "bb3ecfe49f0c",
+      "lang": "en",
+      "type": "nom_perdu",
+      "detail": "noms propres absents : Real Sociedad En, Sky Sports Alemania, Mónaco"
+    },
+    {
+      "id": "bb3ecfe49f0c",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "bb3ecfe49f0c",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "bb3ecfe49f0c",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : Txuri, Urdin"
+    },
+    {
+      "id": "bb3ecfe49f0c",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "142320ccc662",
+      "lang": "fr",
+      "type": "nom_perdu",
+      "detail": "noms propres absents : CAN, Racing de Santander El Real, Clásico"
+    },
+    {
+      "id": "142320ccc662",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "142320ccc662",
+      "lang": "en",
+      "type": "nom_perdu",
+      "detail": "noms propres absents : CAN, Racing de Santander El Real, Clásico"
+    },
+    {
+      "id": "142320ccc662",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "142320ccc662",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "142320ccc662",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "f149deed4ebc",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "f149deed4ebc",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "f149deed4ebc",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "f149deed4ebc",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "1cb8369d48aa",
+      "lang": "fr",
+      "type": "nom_perdu",
+      "detail": "noms propres absents : CAN, Pre-Match Poser, FourFourTwo's"
+    },
+    {
+      "id": "1cb8369d48aa",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "1cb8369d48aa",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "1cb8369d48aa",
+      "lang": "es",
+      "type": "nom_perdu",
+      "detail": "noms propres absents : CAN, Pre-Match Poser, FourFourTwo's"
+    },
+    {
+      "id": "1cb8369d48aa",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "1cb8369d48aa",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : FourFourTwo"
+    },
+    {
+      "id": "1cb8369d48aa",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "d1c140d90f03",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "d1c140d90f03",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "d1c140d90f03",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "d1c140d90f03",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "ff4765e79340",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "ff4765e79340",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "ff4765e79340",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "ff4765e79340",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : Angers"
+    },
+    {
+      "id": "ff4765e79340",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "e8e3da3ee221",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "e8e3da3ee221",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "e8e3da3ee221",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "e8e3da3ee221",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "1cc959318204",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "1cc959318204",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "1cc959318204",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "1cc959318204",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : Mamelodi, Sundowns"
+    },
+    {
+      "id": "1cc959318204",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "e689b639882c",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "e689b639882c",
+      "lang": "en",
+      "type": "nom_perdu",
+      "detail": "noms propres absents : Ligue, Caire, Egypte"
+    },
+    {
+      "id": "e689b639882c",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "e689b639882c",
+      "lang": "es",
+      "type": "nom_perdu",
+      "detail": "noms propres absents : Ligue, Caire, Egypte"
+    },
+    {
+      "id": "e689b639882c",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "e689b639882c",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "dc791be4ccd2",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "dc791be4ccd2",
+      "lang": "en",
+      "type": "nom_perdu",
+      "detail": "noms propres absents : Coupe du Monde, XV de France, J’ai"
+    },
+    {
+      "id": "dc791be4ccd2",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "dc791be4ccd2",
+      "lang": "es",
+      "type": "nom_perdu",
+      "detail": "noms propres absents : Coupe du Monde, XV de France, J’ai"
+    },
+    {
+      "id": "dc791be4ccd2",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "dc791be4ccd2",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "c3243472a854",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "c3243472a854",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "c3243472a854",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "c3243472a854",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "f2b10bc5b7ca",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "f2b10bc5b7ca",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "f2b10bc5b7ca",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "f2b10bc5b7ca",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "f90188050796",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "f90188050796",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "f90188050796",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "f90188050796",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "1d15ee405ed3",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "1d15ee405ed3",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "1d15ee405ed3",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "1d15ee405ed3",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "545c9408be4d",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "545c9408be4d",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "545c9408be4d",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "545c9408be4d",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "850a3ed05c37",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "850a3ed05c37",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "850a3ed05c37",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "850a3ed05c37",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "a0c89063bed1",
       "lang": "fr",
       "type": "calque",
       "detail": "nom propre traduit — attendu « Ballon d'Or »"
     },
     {
-      "id": "c2e7a030b588",
+      "id": "a0c89063bed1",
       "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "c2e7a030b588",
-      "lang": "en",
       "type": "nom_perdu",
-      "detail": "noms propres absents : Ballon d'Or, L'édition, Anglais Harry Kane"
+      "detail": "noms propres absents : Tras, Barcelona, Balón de Oro"
     },
     {
-      "id": "c2e7a030b588",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "c2e7a030b588",
-      "lang": "es",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Ballon d'Or, L'édition, Anglais Harry Kane"
-    },
-    {
-      "id": "c2e7a030b588",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "c2e7a030b588",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "1485cab79d08",
+      "id": "a0c89063bed1",
       "lang": "fr",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "1485cab79d08",
+      "id": "a0c89063bed1",
       "lang": "en",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "1485cab79d08",
+      "id": "a0c89063bed1",
       "lang": "es",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "1485cab79d08",
+      "id": "a0c89063bed1",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : Ballon, Koge, DAZN, Teledeporte"
+    },
+    {
+      "id": "a0c89063bed1",
       "lang": "ar",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "0e833e3281c3",
+      "id": "a7c703b17566",
       "lang": "fr",
       "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "0e833e3281c3",
+      "id": "a7c703b17566",
       "lang": "en",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "0e833e3281c3",
+      "id": "a7c703b17566",
       "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "0e833e3281c3",
-      "lang": "ar",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "5ab302d003f8",
+      "id": "a7c703b17566",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : difficulté, Stadium, Toulouse, sent, plus, aise, extérieur, avant, son, déplacem"
+    },
+    {
+      "id": "a7c703b17566",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "b19a1851770a",
       "lang": "fr",
       "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "5ab302d003f8",
+      "id": "b19a1851770a",
       "lang": "en",
       "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "5ab302d003f8",
+      "id": "b19a1851770a",
       "lang": "es",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "5ab302d003f8",
+      "id": "b19a1851770a",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : Wemby, Gala, rettet, die, Spurs, Grizzlies, bleiben, Team, der, Stunde, Victor, "
+    },
+    {
+      "id": "b19a1851770a",
       "lang": "ar",
       "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "39583404b09f",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "39583404b09f",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "39583404b09f",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "39583404b09f",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : extraño, negocio, del, Barça, con, Abde, Encaramado, parte, alta, clasificación,"
+    },
+    {
+      "id": "39583404b09f",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "8b260b566ecf",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "8b260b566ecf",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "8b260b566ecf",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "8b260b566ecf",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : Flick, salió, bien, revolución, con, Jong, Fariñas, Hansi, tenía, ante, partido,"
+    },
+    {
+      "id": "8b260b566ecf",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "b031b8358593",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "b031b8358593",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "b031b8358593",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "b031b8358593",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : Bradley, Barcola, Florian, Wirtz, Alexander, Isak, doivent, digérer, coût, leur,"
+    },
+    {
+      "id": "b031b8358593",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "1f00f6d18f8c",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "1f00f6d18f8c",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "1f00f6d18f8c",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "1f00f6d18f8c",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : evolución, Flick, celebración, desmedida, del, madridismo, tras, ganar, Camp, No"
+    },
+    {
+      "id": "1f00f6d18f8c",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "4de2f1af49dd",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "4de2f1af49dd",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "4de2f1af49dd",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "4de2f1af49dd",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : acceptait, nonchalance, des, jeunes, sans, prendre, pour, désintérêt, Les, joueu"
+    },
+    {
+      "id": "4de2f1af49dd",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "afc643deecf8",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "afc643deecf8",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "afc643deecf8",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "afc643deecf8",
+      "lang": "ar",
+      "type": "latin_en_arabe",
+      "detail": "mots restés en alphabet latin : Todavía, propósito, del, Clásico, grada, animación, pagado, los, platos, rotos, "
+    },
+    {
+      "id": "afc643deecf8",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
       "id": "6b5f32d1edc7",
@@ -205,1396 +829,640 @@
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "357d4abae4c5",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "357d4abae4c5",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "357d4abae4c5",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "357d4abae4c5",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "6ece1b55c620",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "6ece1b55c620",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "6ece1b55c620",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "6ece1b55c620",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "7bbe56dd9490",
+      "id": "94752bf446ae",
       "lang": "fr",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "7bbe56dd9490",
+      "id": "94752bf446ae",
       "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "7bbe56dd9490",
-      "lang": "es",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Nord Grâce, Dogues, Nice"
-    },
-    {
-      "id": "7bbe56dd9490",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "7bbe56dd9490",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "60509714cea7",
-      "lang": "fr",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "60509714cea7",
-      "lang": "en",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Ligue 1, L’entraineur, Nous"
-    },
-    {
-      "id": "60509714cea7",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "60509714cea7",
+      "id": "94752bf446ae",
       "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "60509714cea7",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "6947bbc92c91",
-      "lang": "fr",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "6947bbc92c91",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "6947bbc92c91",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "6947bbc92c91",
+      "id": "94752bf446ae",
       "lang": "ar",
       "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : LOSC"
+      "detail": "mots restés en alphabet latin : clasificación, las, copas, quiénes, están, zona, Libertadores, Sudamericana, med"
     },
     {
-      "id": "6947bbc92c91",
+      "id": "94752bf446ae",
       "lang": "ar",
       "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "468e67c1c481",
+      "id": "6620757ffe45",
       "lang": "fr",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "468e67c1c481",
+      "id": "6620757ffe45",
       "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "468e67c1c481",
-      "lang": "es",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Coupe du Monde, Emiliano Martinez, Argentine"
-    },
-    {
-      "id": "468e67c1c481",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "468e67c1c481",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "feb08ae30f21",
-      "lang": "fr",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "feb08ae30f21",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "feb08ae30f21",
+      "id": "6620757ffe45",
       "lang": "es",
       "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "feb08ae30f21",
+      "id": "6620757ffe45",
       "lang": "ar",
       "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Lille, Lens, Rescue, Giroud, Mbappé, fire, Thauvin, goes, out, The, tops, and, f"
+      "detail": "mots restés en alphabet latin : oro, morbo, las, historias, que, encienden, Boca, River, Siete, campeones, del, "
     },
     {
-      "id": "feb08ae30f21",
+      "id": "6620757ffe45",
       "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "06bc630846f7",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "06bc630846f7",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "06bc630846f7",
-      "lang": "es",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "06bc630846f7",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "2cc00798403d",
-      "lang": "fr",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Inter, Barcelona's Lopez, Saturday's, Barcelona's Fermin Lopez"
-    },
-    {
-      "id": "2cc00798403d",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "2cc00798403d",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "2cc00798403d",
-      "lang": "es",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Saturday's, Barcelona's Fermin Lopez, Lisandro Martinez"
-    },
-    {
-      "id": "2cc00798403d",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "2cc00798403d",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "2ddd7fdf9f07",
-      "lang": "fr",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Sportschau, Freitag, Länge Sehen Sie, Zusammenfassungen, DFB-Pokal"
-    },
-    {
-      "id": "2ddd7fdf9f07",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "2ddd7fdf9f07",
-      "lang": "en",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Sportschau, Freitag, Länge Sehen Sie, Zusammenfassungen, DFB-Pokal"
-    },
-    {
-      "id": "2ddd7fdf9f07",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "2ddd7fdf9f07",
-      "lang": "es",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Sportschau, Freitag, Länge Sehen Sie, Zusammenfassungen, DFB-Pokal"
-    },
-    {
-      "id": "2ddd7fdf9f07",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "2ddd7fdf9f07",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "2ec7d13920f3",
-      "lang": "fr",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Copa del Rey, Continúa, Primera Federación, Palamós El Sant"
-    },
-    {
-      "id": "2ec7d13920f3",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "2ec7d13920f3",
-      "lang": "en",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Continúa, Primera Federación, Palamós El Sant"
-    },
-    {
-      "id": "2ec7d13920f3",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "2ec7d13920f3",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "2ec7d13920f3",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "651477e3e950",
+      "id": "4eeaa5e15eb1",
       "lang": "fr",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "651477e3e950",
-      "lang": "en",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Première Ligue Même, Arkema Première Ligue, Phocéennes"
-    },
-    {
-      "id": "651477e3e950",
+      "id": "4eeaa5e15eb1",
       "lang": "en",
       "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "651477e3e950",
-      "lang": "es",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Olympique de Marseille, Marseillaises, Première Ligue Même, Arkema Première Ligue, Phocéennes"
-    },
-    {
-      "id": "651477e3e950",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "651477e3e950",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "d758554bed16",
-      "lang": "fr",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Primera Federación, Europa, Ibiza El Europa"
-    },
-    {
-      "id": "d758554bed16",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "d758554bed16",
-      "lang": "en",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Primera Federación, Europa, Ibiza El Europa"
-    },
-    {
-      "id": "d758554bed16",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "d758554bed16",
+      "id": "4eeaa5e15eb1",
       "lang": "es",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "d758554bed16",
+      "id": "4eeaa5e15eb1",
       "lang": "ar",
       "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Can, Misses"
+      "detail": "mots restés en alphabet latin : Conmebol, sancionó, Platense, con, una, fuerte, multa, económica, por, los, inci"
     },
     {
-      "id": "d758554bed16",
+      "id": "4eeaa5e15eb1",
       "lang": "ar",
       "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "f7fb9c278ed1",
-      "lang": "fr",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Glück, Nordderby, Frankreich, Schlussphase, Schlag"
-    },
-    {
-      "id": "f7fb9c278ed1",
+      "id": "104686e6ba7d",
       "lang": "fr",
       "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "f7fb9c278ed1",
-      "lang": "en",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Glück, Frankreich, Schlussphase, Olivier Giroud, Schlag"
-    },
-    {
-      "id": "f7fb9c278ed1",
+      "id": "104686e6ba7d",
       "lang": "en",
       "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "f7fb9c278ed1",
-      "lang": "es",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Glück, Nordderby, Frankreich, Schlussphase, Olivier Giroud"
-    },
-    {
-      "id": "f7fb9c278ed1",
+      "id": "104686e6ba7d",
       "lang": "es",
       "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "f7fb9c278ed1",
+      "id": "104686e6ba7d",
       "lang": "ar",
       "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Nordderby, OSC, Lille"
+      "detail": "mots restés en alphabet latin : Ter, Stegen, spät, zur, Stelle, Brandt, verletzt, Der, Ajax, Sieg, Video, Gegen,"
     },
     {
-      "id": "f7fb9c278ed1",
+      "id": "104686e6ba7d",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "eec92d98f736",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "eec92d98f736",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "eec92d98f736",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "eec92d98f736",
       "lang": "ar",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "2c13a9164526",
-      "lang": "fr",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : FCB-Leihe Zaragoza, Hereingabe, Villarreal Espanyol Barcelona, Vorarbeit, Bayern-Leihspieler Bryan Zaragoza"
-    },
-    {
-      "id": "2c13a9164526",
+      "id": "5097ee18de30",
       "lang": "fr",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "2c13a9164526",
-      "lang": "en",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : FCB-Leihe Zaragoza, Hereingabe, Vorarbeit, Bayern-Leihspieler Bryan Zaragoza"
-    },
-    {
-      "id": "2c13a9164526",
+      "id": "5097ee18de30",
       "lang": "en",
       "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "2c13a9164526",
+      "id": "5097ee18de30",
       "lang": "es",
       "type": "nom_perdu",
-      "detail": "noms propres absents : FCB-Leihe Zaragoza, Hereingabe, Villarreal Espanyol Barcelona, Vorarbeit, Bayern-Leihspieler Bryan Zaragoza"
+      "detail": "noms propres absents : Man City Match, Brighton's, Seagulls"
     },
     {
-      "id": "2c13a9164526",
+      "id": "5097ee18de30",
       "lang": "es",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "2c13a9164526",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : FCB"
-    },
-    {
-      "id": "2c13a9164526",
+      "id": "5097ee18de30",
       "lang": "ar",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "3b1d894504c5",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "3b1d894504c5",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "3b1d894504c5",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "3b1d894504c5",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "63e3f98ba096",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "63e3f98ba096",
-      "lang": "en",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Ligue, Viking FK Vainqueur, Championnat"
-    },
-    {
-      "id": "63e3f98ba096",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "63e3f98ba096",
-      "lang": "es",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Ligue, Viking FK Vainqueur, Championnat, LOSC"
-    },
-    {
-      "id": "63e3f98ba096",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "63e3f98ba096",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : LOSC"
-    },
-    {
-      "id": "63e3f98ba096",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "cd7cf425acbd",
+      "id": "c3d34ebd3dd4",
       "lang": "fr",
       "type": "nom_perdu",
-      "detail": "noms propres absents : Granada El Atlético, Madrid Femenino, Liga"
+      "detail": "noms propres absents : Has Martinez, Lisandro Martinez's, Manchester United's, Argentinian"
     },
     {
-      "id": "cd7cf425acbd",
+      "id": "c3d34ebd3dd4",
       "lang": "fr",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "cd7cf425acbd",
+      "id": "c3d34ebd3dd4",
       "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "cd7cf425acbd",
-      "lang": "es",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "cd7cf425acbd",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : DAZN, Ciudad, Deportiva, Granada"
-    },
-    {
-      "id": "cd7cf425acbd",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "2c9fb43e32bd",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "2c9fb43e32bd",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "2c9fb43e32bd",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "2c9fb43e32bd",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Galatasaray"
-    },
-    {
-      "id": "2c9fb43e32bd",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "43a59d0262f6",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "43a59d0262f6",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "43a59d0262f6",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "43a59d0262f6",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "f7230fe27109",
-      "lang": "fr",
-      "type": "calque",
-      "detail": "nom propre traduit — attendu « Ballon d'Or »"
-    },
-    {
-      "id": "f7230fe27109",
-      "lang": "fr",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Kane-Vorsprung, Olise-Fan, Ergebnisse, Or Schon, Ausrichter"
-    },
-    {
-      "id": "f7230fe27109",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "f7230fe27109",
-      "lang": "en",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Kane-Vorsprung, Olise-Fan, Ergebnisse, Or Schon, Ausrichter"
-    },
-    {
-      "id": "f7230fe27109",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "f7230fe27109",
+      "id": "c3d34ebd3dd4",
       "lang": "es",
       "type": "nom_perdu",
-      "detail": "noms propres absents : Kane-Vorsprung, Olise-Fan, Ergebnisse, Or Schon, Ausrichter"
+      "detail": "noms propres absents : Has Martinez, Match, Lisandro Martinez's, Manchester United's, Argentinian"
     },
     {
-      "id": "f7230fe27109",
+      "id": "c3d34ebd3dd4",
       "lang": "es",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "f7230fe27109",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Kane, Mbappé, Caribbean, Olise"
-    },
-    {
-      "id": "f7230fe27109",
+      "id": "c3d34ebd3dd4",
       "lang": "ar",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "b2078ab6dc78",
-      "lang": "fr",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Traumtor Campbell, Mainz Aufsteiger SV, Fußball-Bundesliga, FSV Mainz, Hälfte"
-    },
-    {
-      "id": "b2078ab6dc78",
+      "id": "3450988e5eb1",
       "lang": "fr",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "b2078ab6dc78",
-      "lang": "en",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Mainz Aufsteiger SV, Fußball-Bundesliga, Hälfte"
-    },
-    {
-      "id": "b2078ab6dc78",
+      "id": "3450988e5eb1",
       "lang": "en",
       "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "b2078ab6dc78",
-      "lang": "es",
-      "type": "nom_perdu",
-      "detail": "noms propres absents : Traumtor Campbell, Mainz Aufsteiger SV, Fußball-Bundesliga, Hälfte"
-    },
-    {
-      "id": "b2078ab6dc78",
+      "id": "3450988e5eb1",
       "lang": "es",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "b2078ab6dc78",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Traumtor, Campbell, Elversberg, FSV, Mainz"
-    },
-    {
-      "id": "b2078ab6dc78",
+      "id": "3450988e5eb1",
       "lang": "ar",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "4b6df327c0dc",
+      "id": "b4f5072fae60",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "b4f5072fae60",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "b4f5072fae60",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "b4f5072fae60",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "0d9a5942319c",
       "lang": "fr",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "4b6df327c0dc",
+      "id": "0d9a5942319c",
       "lang": "en",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "4b6df327c0dc",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "4b6df327c0dc",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "68b91d8bea75",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "68b91d8bea75",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "68b91d8bea75",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "68b91d8bea75",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Ligue, PSG"
-    },
-    {
-      "id": "68b91d8bea75",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "71058eda50df",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "71058eda50df",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "71058eda50df",
+      "id": "0d9a5942319c",
       "lang": "es",
       "type": "nom_perdu",
-      "detail": "noms propres absents : DÉCRYPTAGE, Découvrez, Paris-SG"
+      "detail": "noms propres absents : Alavés Malgré, Catalans, Espagne"
     },
     {
-      "id": "71058eda50df",
+      "id": "0d9a5942319c",
       "lang": "es",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "71058eda50df",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Havre, PSG, Hakimi, speed, Mach, Godts, HAC"
-    },
-    {
-      "id": "71058eda50df",
+      "id": "0d9a5942319c",
       "lang": "ar",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "58d3ddbe09fd",
+      "id": "f58a3bcbd17e",
       "lang": "fr",
       "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "58d3ddbe09fd",
+      "id": "f58a3bcbd17e",
       "lang": "en",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "58d3ddbe09fd",
+      "id": "f58a3bcbd17e",
       "lang": "es",
       "type": "non_enrichi",
-      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "58d3ddbe09fd",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : HAC"
-    },
-    {
-      "id": "58d3ddbe09fd",
+      "id": "f58a3bcbd17e",
       "lang": "ar",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "4a423cedfc9a",
+      "id": "2f5d6f192758",
       "lang": "fr",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "4a423cedfc9a",
+      "id": "2f5d6f192758",
       "lang": "en",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "4a423cedfc9a",
+      "id": "2f5d6f192758",
       "lang": "es",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "4a423cedfc9a",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : PSG"
-    },
-    {
-      "id": "4a423cedfc9a",
+      "id": "2f5d6f192758",
       "lang": "ar",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "ef20972e4889",
+      "id": "ef5625b1e00a",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "ef5625b1e00a",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "ef5625b1e00a",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "ef5625b1e00a",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "49377aa90053",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "49377aa90053",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "49377aa90053",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "49377aa90053",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "b879b0af002c",
       "lang": "fr",
       "type": "nom_perdu",
-      "detail": "noms propres absents : CAN, Can Robinson, McInnes' Rangers, Under-pressure Aberdeen, Saturday's"
+      "detail": "noms propres absents : Traum-Freistoß, Krönung, Milan-Sieg, Highlights, Video"
     },
     {
-      "id": "ef20972e4889",
+      "id": "b879b0af002c",
       "lang": "fr",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "ef20972e4889",
+      "id": "b879b0af002c",
       "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+      "type": "nom_perdu",
+      "detail": "noms propres absents : Traum-Freistoß, Krönung, Milan-Sieg, Partie"
     },
     {
-      "id": "ef20972e4889",
+      "id": "b879b0af002c",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "b879b0af002c",
       "lang": "es",
       "type": "nom_perdu",
-      "detail": "noms propres absents : CAN, Can Robinson, McInnes' Rangers, Under-pressure Aberdeen, Saturday's"
+      "detail": "noms propres absents : Traum-Freistoß, Krönung, Milan-Sieg, Highlights, Partie"
     },
     {
-      "id": "ef20972e4889",
+      "id": "b879b0af002c",
       "lang": "es",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "ef20972e4889",
+      "id": "b879b0af002c",
       "lang": "ar",
       "type": "non_enrichi",
       "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "2cb082ae3e92",
+      "id": "c9e0a4405f32",
       "lang": "fr",
-      "type": "calque",
-      "detail": "nom propre traduit — attendu « Ballon d'Or »"
+      "type": "nom_perdu",
+      "detail": "noms propres absents : Bei Kantersieg, Barca, Ränge Barcelona, Seele"
     },
     {
-      "id": "2cb082ae3e92",
+      "id": "c9e0a4405f32",
       "lang": "fr",
       "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "2cb082ae3e92",
+      "id": "c9e0a4405f32",
+      "lang": "en",
+      "type": "nom_perdu",
+      "detail": "noms propres absents : Bei Kantersieg, Ränge Barcelona, Seele"
+    },
+    {
+      "id": "c9e0a4405f32",
       "lang": "en",
       "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "2cb082ae3e92",
+      "id": "c9e0a4405f32",
+      "lang": "es",
+      "type": "nom_perdu",
+      "detail": "noms propres absents : Bei Kantersieg, Barca, Ränge Barcelona, Seele"
+    },
+    {
+      "id": "c9e0a4405f32",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "c9e0a4405f32",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "262eaa276cfe",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "262eaa276cfe",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "262eaa276cfe",
       "lang": "es",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "2cb082ae3e92",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : classé, les, Français, dans, histoire, Ballon, Platini, intouchable, prime, régu"
-    },
-    {
-      "id": "2cb082ae3e92",
+      "id": "262eaa276cfe",
       "lang": "ar",
       "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "c0a09355035e",
+      "id": "362b05dc829e",
       "lang": "fr",
       "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "c0a09355035e",
+      "id": "362b05dc829e",
       "lang": "en",
       "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "c0a09355035e",
+      "id": "362b05dc829e",
       "lang": "es",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "c0a09355035e",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Desvelados, los, votos, del, Balón, Oro, Kane, ganó, Mbappé, por, mínima, Lamine"
-    },
-    {
-      "id": "c0a09355035e",
+      "id": "362b05dc829e",
       "lang": "ar",
       "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "b7183108e521",
+      "id": "f178b6b568e0",
       "lang": "fr",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "b7183108e521",
+      "id": "f178b6b568e0",
       "lang": "en",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "b7183108e521",
+      "id": "f178b6b568e0",
       "lang": "es",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "b7183108e521",
+      "id": "f178b6b568e0",
       "lang": "ar",
       "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Fasofoot, Ligue, Focusport, renverse, RCK, après, avoir, été, mené, signé, une, "
+      "detail": "mots restés en alphabet latin : Bayern, Munich, accroché, par, Borussia, Dortmund, Harry, Kane, pas, vraiment, f"
     },
     {
-      "id": "b7183108e521",
+      "id": "f178b6b568e0",
       "lang": "ar",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "97afb1e76ddd",
+      "id": "e74b03fa77c5",
       "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "e74b03fa77c5",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "e74b03fa77c5",
+      "lang": "es",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "97afb1e76ddd",
+      "id": "e74b03fa77c5",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "86ee4bee04ff",
+      "lang": "fr",
+      "type": "nom_perdu",
+      "detail": "noms propres absents : Mailänder Derby, Erfolg, Spitzengruppe"
+    },
+    {
+      "id": "86ee4bee04ff",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "86ee4bee04ff",
+      "lang": "en",
+      "type": "nom_perdu",
+      "detail": "noms propres absents : Mailänder Derby, Erfolg, Spitzengruppe"
+    },
+    {
+      "id": "86ee4bee04ff",
+      "lang": "en",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "86ee4bee04ff",
+      "lang": "es",
+      "type": "nom_perdu",
+      "detail": "noms propres absents : Mailänder Derby, Erfolg, Spitzengruppe"
+    },
+    {
+      "id": "86ee4bee04ff",
+      "lang": "es",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "86ee4bee04ff",
+      "lang": "ar",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "dce56d6ad74b",
+      "lang": "fr",
+      "type": "non_enrichi",
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
+    },
+    {
+      "id": "dce56d6ad74b",
       "lang": "en",
       "type": "non_enrichi",
       "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "97afb1e76ddd",
+      "id": "dce56d6ad74b",
       "lang": "es",
       "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     },
     {
-      "id": "97afb1e76ddd",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Grâce, Achraf, Hakimi, intenable, PSG, impose, largement, Havre, restera, tête, "
-    },
-    {
-      "id": "97afb1e76ddd",
+      "id": "dce56d6ad74b",
       "lang": "ar",
       "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "8492a1eb7505",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "8492a1eb7505",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "8492a1eb7505",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "8492a1eb7505",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : reiteración, incidentes, grada, animación, conllevaba, riesgo, cierre, del, esta"
-    },
-    {
-      "id": "8492a1eb7505",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "1dc277c91d95",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "1dc277c91d95",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "1dc277c91d95",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "1dc277c91d95",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : victoires, tête, PSG, record, pour, Luis, Enrique, les, chiffres, marquants, ent"
-    },
-    {
-      "id": "1dc277c91d95",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "621515831e1b",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "621515831e1b",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "621515831e1b",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "621515831e1b",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Les, notes, Havre, PSG, chef, oeuvre, Hakimi, Avec, une, composition, remaniée, "
-    },
-    {
-      "id": "621515831e1b",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "8318e6429628",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "8318e6429628",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "8318e6429628",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "8318e6429628",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Elim, CAN, programme, des, Fennecs, Algérie, pour, mois, novembre, Pour, prochai"
-    },
-    {
-      "id": "8318e6429628",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "9b1674d30876",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "9b1674d30876",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "9b1674d30876",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "9b1674d30876",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Achraf, Hakimi, Marocain, PSG, marque, premier, triplé, carrière, était, grande,"
-    },
-    {
-      "id": "9b1674d30876",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "9aec760b9959",
-      "lang": "fr",
-      "type": "calque",
-      "detail": "nom propre traduit — attendu « Ballon d'Or »"
-    },
-    {
-      "id": "9aec760b9959",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "9aec760b9959",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "9aec760b9959",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "9aec760b9959",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Ballon, Mbappé, Dembélé, dessus, mêlée, dans, vote, français, Vincent, Garcia, r"
-    },
-    {
-      "id": "9aec760b9959",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "072c60c75563",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "072c60c75563",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "072c60c75563",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "072c60c75563",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : détail, des, votes, trophée, gardienne, saison, remporté, par, Espagnole, Cata, "
-    },
-    {
-      "id": "072c60c75563",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "15d7dd29c8fa",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "15d7dd29c8fa",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "15d7dd29c8fa",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "15d7dd29c8fa",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : PSG, signe, une, victoire, éclatante, sur, pelouse, Havre, Malgré, ouverture, sc"
-    },
-    {
-      "id": "15d7dd29c8fa",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "7358f42662fb",
-      "lang": "fr",
-      "type": "calque",
-      "detail": "nom propre traduit — attendu « Ballon d'Or »"
-    },
-    {
-      "id": "7358f42662fb",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "7358f42662fb",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "7358f42662fb",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "7358f42662fb",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : Ballon, Kylian, Mbappé, tête, vote, juré, paraguayen, Visé, cet, été, par, les, "
-    },
-    {
-      "id": "7358f42662fb",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "3f7dff55a519",
-      "lang": "fr",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "3f7dff55a519",
-      "lang": "en",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "3f7dff55a519",
-      "lang": "es",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
-    },
-    {
-      "id": "3f7dff55a519",
-      "lang": "ar",
-      "type": "latin_en_arabe",
-      "detail": "mots restés en alphabet latin : détail, des, votes, trophée, gardien, saison, remporté, par, Unai, Simon, joueur"
-    },
-    {
-      "id": "3f7dff55a519",
-      "lang": "ar",
-      "type": "non_enrichi",
-      "detail": "moteur « aucun » — traduction brute, pas de travail éditorial"
+      "detail": "moteur « mymemory » — traduction brute, pas de travail éditorial"
     }
   ]
 }
