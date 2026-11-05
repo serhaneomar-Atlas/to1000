@@ -20,7 +20,7 @@
   <meta name="robots" content="index, follow">
   <!-- Google Search Console : remplace le contenu par TON token (GSC > Ajouter une propriété > balise HTML) -->
   <meta name="google-site-verification" content="REMPLACER_PAR_TON_TOKEN_GSC">
-  <meta name="theme-color" content="#0B1A2E">
+  <meta name="theme-color" content="#f4f0e6">
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Cristiano Ronaldo Goal Tracker — Road to 1000 Goals | Live Countdown">
@@ -114,10 +114,10 @@
     "weight": "83 kg",
     "jobTitle": "Professional Footballer",
     "affiliation": [
-      { "@type": "SportsTeam", "name": "Al Nassr FC", "sport": "Football" },
-      { "@type": "SportsTeam", "name": "Portugal National Team", "sport": "Football" }
-    ],
-    "award": ["5x Ballon d'Or", "5x Champions League", "Euro 2016", "4x European Golden Shoe", "UEFA Nations League 2019"],
+      { "@type": "SportsTeam", "name": "Al Nassr FC", "sport": "Football" }
+      ],
+    "alumniOf": { "@type": "SportsTeam", "name": "Portugal National Team (2003–2026, 234 caps, 146 goals)", "sport": "Football" },
+    "award": ["5x Ballon d'Or", "5x Champions League", "Euro 2016", "4x European Golden Shoe", "UEFA Nations League 2019", "UEFA Nations League 2025"],
     "image": "https://to1000.com/og-image.png",
     "sameAs": [
       "https://en.wikipedia.org/wiki/Cristiano_Ronaldo",
@@ -195,7 +195,7 @@
         "name": "Which club has Ronaldo scored the most goals for?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Real Madrid, where Ronaldo scored 450 goals in 438 appearances between 2009 and 2018, making him the club's all-time top scorer. His second-highest club tally is at Al Nassr with 129+ goals since January 2023."
+          "text": "Real Madrid, where Ronaldo scored 450 goals in 438 appearances between 2009 and 2018, making him the club's all-time top scorer. His second-highest club tally is at Manchester United (145 goals over two spells), followed closely by Al Nassr since January 2023."
         }
       },
       {
@@ -203,7 +203,7 @@
         "name": "How many international goals has Cristiano Ronaldo scored?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Cristiano Ronaldo has scored 135+ goals for the Portuguese national team, making him the all-time top international goal scorer in football history. He surpassed Ali Daei's record of 109 goals in 2021."
+          "text": "Cristiano Ronaldo scored 146 goals in 234 matches for Portugal, both all-time records in men's international football. He passed Ali Daei's record of 109 goals on 1 September 2021 and announced his international retirement on 5 November 2026."
         }
       },
       {
@@ -224,10 +224,10 @@
       },
       {
         "@type": "Question",
-        "name": "Will Ronaldo play in the 2026 World Cup?",
+        "name": "Has Cristiano Ronaldo retired from international football?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, Cristiano Ronaldo is expected to be part of Portugal's squad for the 2026 FIFA World Cup in USA, Canada, and Mexico. At 41, he would be one of the oldest players in the tournament. He could potentially score his 1000th goal during the World Cup, making it a historic moment."
+          "text": "Yes. Cristiano Ronaldo announced his retirement from the Portugal national team on 5 November 2026, after 234 caps and 146 goals. He played six World Cups (2006–2026) and scored in all six. He continues his club career with Al Nassr, so his remaining goals towards 1000 will come at club level."
         }
       },
       {
@@ -272,753 +272,328 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://flagcdn.com">
-  <link rel="dns-prefetch" href="https://flagcdn.com">
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/edition.css?v=20261105">
   <style>
-  :root{
-    /* ESTÁDIO — cinematic broadcast palette */
-    --ink:#05070b;            /* deep stadium black */
-    --charcoal:#0d1118;       /* charcoal */
-    --steel:#161c26;          /* panel steel */
-    --floodlight:#f7e7a3;     /* white-gold floodlight */
-    --gold:#f2c14e;           /* broadcast gold accent */
-    --gold-hot:#ffd66b;       /* hot highlight */
-    --chalk:#eef2f6;          /* chalk white text */
-    --mute:#a8b2bf;           /* muted grotesk */
-    --line:rgba(247,231,163,.16);
-    --live:#ff3b30;           /* broadcast LIVE red */
-    --maxw:1180px;
+  /* ---- Accueil : la une ---- */
+  .une{display:grid;gap:22px;padding-top:26px;padding-bottom:30px}
+  .une .label{margin-bottom:14px}
+  .une .standfirst{margin-top:20px}
+  .une figure img{aspect-ratio:4/5;object-fit:cover;object-position:50% 12%}
+  @media (min-width:900px){
+    .une{grid-template-columns:1.3fr 1fr;gap:40px;align-items:end}
+    .une figure{border-left:1px solid var(--rule);padding-left:28px}
   }
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{
-    background:var(--ink);
-    color:var(--chalk);
-    font-family:'Hanken Grotesk',system-ui,sans-serif;
-    font-size:17px;line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-  }
-  h1,h2,h3,.cond{font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.01em;line-height:1.04;text-transform:uppercase}
-  .impact{font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.005em;line-height:.92}
-  a{color:inherit;text-decoration:none}
-  img{display:block;max-width:100%}
-  :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:3px}
+  @media (min-width:900px){html[dir="rtl"] .une figure{border-left:0;border-right:1px solid var(--rule);padding-left:0;padding-right:28px}}
+  .une .headline a{text-decoration:none}
+  .une .headline a:hover{text-decoration:underline;text-decoration-thickness:4px;text-underline-offset:8px;text-decoration-color:var(--red)}
 
-  /* scroll-snap container */
-  .scroller{
-    height:100vh;height:100dvh;overflow-y:scroll;
-    scroll-snap-type:y mandatory;
-    scroll-behavior:smooth;
-  }
-  section.frame{
-    position:relative;
-    min-height:100vh;min-height:100dvh;
-    scroll-snap-align:start;
-    display:flex;flex-direction:column;justify-content:center;
-    padding:120px clamp(20px,5vw,64px) 80px;
-    overflow:hidden;
-  }
-  .bg{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center;will-change:transform}
-  .scrim{position:absolute;inset:0;z-index:1}
+  /* ---- Le compteur ---- */
+  .count{display:grid;gap:18px;align-items:end;margin-bottom:26px}
+  .ch-count{display:flex;align-items:baseline;gap:6px;line-height:.8}
+  .ch-num{font-size:clamp(130px,26vw,300px)}
+  .ch-target{font-size:clamp(40px,7vw,84px);color:var(--ink-2)}
+  .ch-meta{font-family:var(--sans);font-stretch:75%;font-weight:800;font-size:clamp(30px,4vw,48px);line-height:1}
+  .ch-meta b{color:var(--red)}
+  .ch-foot{margin-top:10px}
+  .count .note{margin-top:14px;font-size:17px;max-width:44ch}
+  @media (min-width:900px){.count{grid-template-columns:auto 1fr;gap:48px}}
 
-  /* ---------- TOP BROADCAST BAR ---------- */
-  .topbar{
-    position:fixed;top:0;left:0;right:0;z-index:50;
-    display:flex;align-items:center;justify-content:space-between;
-    gap:18px;padding:14px clamp(16px,4vw,40px);
-    background:linear-gradient(180deg,rgba(5,7,11,.92),rgba(5,7,11,.55) 70%,transparent);
-    backdrop-filter:blur(6px);
-  }
-  .brand{display:flex;align-items:center;gap:12px}
-  .brand .logo{font-family:'Anton',sans-serif;font-size:24px;letter-spacing:.02em}
-  .brand .logo b{color:var(--gold)}
-  .brand .tag{display:none;font-size:11px;color:var(--mute);max-width:280px;border-left:1px solid var(--line);padding-left:12px;line-height:1.3;text-transform:none;letter-spacing:0}
-  nav.main{display:none;align-items:center;gap:6px}
-  nav.main a{
-    font-family:'Oswald',sans-serif;font-weight:500;font-size:13px;letter-spacing:.08em;
-    text-transform:uppercase;color:var(--mute);padding:8px 12px;border-radius:6px;transition:color .2s,background .2s;
-  }
-  nav.main a:hover{color:var(--chalk);background:rgba(247,231,163,.07)}
-  nav.main a.active{color:var(--ink);background:var(--gold)}
-  .livepill{
-    display:inline-flex;align-items:center;gap:8px;font-family:'Oswald',sans-serif;font-weight:600;
-    font-size:12px;letter-spacing:.14em;text-transform:uppercase;
-    color:var(--chalk);padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(0,0,0,.35);
-  }
-  .dot{width:8px;height:8px;border-radius:50%;background:var(--live);box-shadow:0 0 0 0 rgba(255,59,48,.6);animation:pulse 1.8s infinite}
-  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,59,48,.6)}70%{box-shadow:0 0 0 10px rgba(255,59,48,0)}100%{box-shadow:0 0 0 0 rgba(255,59,48,0)}}
-  @media(min-width:760px){.brand .tag{display:block}}
-  @media(min-width:1080px){nav.main{display:flex}}
+  .goalgrid{display:grid;grid-template-columns:repeat(40,1fr);gap:2px;padding:14px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+  @media (min-width:640px){.goalgrid{gap:3px}}
+  @media (min-width:1000px){.goalgrid{grid-template-columns:repeat(50,1fr);gap:4px}}
+  .goalgrid i{display:block;aspect-ratio:1;border-radius:50%;background:var(--ink)}
+  .goalgrid .g-portugal{background:var(--red)}
+  .goalgrid .g-nassr{background:#938d7d}
+  .goalgrid .g-todo{background:transparent;box-shadow:inset 0 0 0 1.5px var(--ink)}
+  .goalgrid .g-last{box-shadow:0 0 0 2px var(--paper),0 0 0 4px var(--ink)}
+  .legend{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:12px;list-style:none}
+  .legend li{display:flex;align-items:center;gap:8px;font-family:var(--sans);font-size:14px}
+  .legend i{width:12px;height:12px;border-radius:50%;background:var(--ink);flex:none}
+  .legend .lp i{background:var(--red)}
+  .legend .ln i{background:#938d7d}
+  .legend .lt i{background:transparent;box-shadow:inset 0 0 0 1.5px var(--ink)}
+  .legend b{font-weight:700}
+  html[dir="rtl"] .legend li,html[dir="rtl"] .legend{font-family:'Cairo',sans-serif}
 
-  /* ---------- FRAME 1: HERO ---------- */
-  #hero .bg{
-    background-image:url('/images/mockups/stadium-night.jpg');
-    animation:slowzoom 22s ease-out forwards;
-  }
-  @keyframes slowzoom{from{transform:scale(1.12)}to{transform:scale(1)}}
-  #hero .scrim{
-    background:
-      radial-gradient(120% 80% at 80% 18%,rgba(242,193,78,.12),transparent 55%),
-      linear-gradient(180deg,rgba(5,7,11,.42) 0%,rgba(5,7,11,.20) 35%,rgba(5,7,11,.86) 88%,var(--ink) 100%),
-      linear-gradient(90deg,rgba(5,7,11,.78) 0%,rgba(5,7,11,.25) 55%,transparent 100%);
-  }
-  .hero-inner{position:relative;z-index:2;max-width:var(--maxw);margin:0 auto;width:100%}
-  .eyebrow{
-    display:inline-flex;align-items:center;gap:10px;font-family:'Oswald',sans-serif;font-weight:500;
-    font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--floodlight);margin-bottom:22px;
-    opacity:0;animation:rise .8s .15s cubic-bezier(.16,1,.3,1) forwards;
-  }
-  .eyebrow::before{content:"";width:34px;height:1px;background:var(--gold)}
-  .hero-title{
-    font-size:clamp(44px,9.5vw,128px);color:var(--chalk);max-width:14ch;
-    text-shadow:0 4px 40px rgba(0,0,0,.6);
-  }
-  .hero-title .gold{color:var(--gold)}
-  .hero-title span{display:block;opacity:0;animation:rise .9s cubic-bezier(.16,1,.3,1) forwards}
-  .hero-title span:nth-child(1){animation-delay:.30s}
-  .hero-title span:nth-child(2){animation-delay:.42s}
-  .hero-sub{
-    margin-top:24px;max-width:48ch;color:var(--chalk);font-size:clamp(15px,1.7vw,19px);
-    opacity:0;animation:rise .9s .6s cubic-bezier(.16,1,.3,1) forwards;
-  }
-  @keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+  /* ---- Prochain / dernier match ---- */
+  .fixtures{display:grid;gap:0;border-top:1px solid var(--rule)}
+  .fx{padding:16px 0;border-bottom:1px solid var(--rule-soft)}
+  .fx .label{display:block;margin-bottom:8px}
+  .fx-line{font-family:var(--sans);font-stretch:75%;font-weight:800;font-size:clamp(26px,3.4vw,40px);line-height:1.05}
+  .fx-line .sc{font-variant-numeric:tabular-nums;margin-left:.3em}
+  .fx-line .sc.win{color:var(--green)}.fx-line .sc.loss{color:var(--red)}
+  .fx .meta{margin-top:6px}
+  .fx[hidden]{display:none}
+  @media (min-width:860px){.fixtures{grid-template-columns:1fr 1fr}.fx + .fx{border-left:1px solid var(--rule-soft);padding-left:24px}}
+  html[dir="rtl"] .fx + .fx{border-left:0;border-right:1px solid var(--rule-soft);padding-left:0;padding-right:24px}
 
-  /* ---------- SCORE BUG / LOWER-THIRD ---------- */
-  .scorebug{
-    position:relative;z-index:2;max-width:var(--maxw);margin:40px auto 0;width:100%;
-    display:flex;flex-wrap:wrap;align-items:stretch;gap:0;
-    border-radius:14px;overflow:hidden;
-    border:1px solid var(--line);
-    background:linear-gradient(180deg,rgba(13,17,24,.82),rgba(5,7,11,.92));
-    box-shadow:0 24px 70px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.05);
-    opacity:0;animation:bugin 1s .75s cubic-bezier(.16,1,.3,1) forwards;
-  }
-  @keyframes bugin{from{opacity:0;transform:translateY(34px) scale(.985)}to{opacity:1;transform:none}}
-  .bug-rail{
-    display:flex;flex-direction:column;justify-content:center;gap:6px;
-    padding:18px 22px;background:linear-gradient(180deg,var(--gold),#d99f2e);color:var(--ink);min-width:118px;
-  }
-  .bug-rail .lbl{font-family:'Oswald',sans-serif;font-weight:700;font-size:11px;letter-spacing:.18em}
-  .bug-rail .live{display:inline-flex;align-items:center;gap:7px;font-family:'Oswald',sans-serif;font-weight:700;font-size:13px;letter-spacing:.12em}
-  .bug-rail .live .dot{background:var(--ink);box-shadow:none;animation:blink 1.4s steps(1) infinite}
-  @keyframes blink{50%{opacity:.25}}
-  .bug-count{
-    flex:1 1 260px;display:flex;align-items:center;justify-content:center;gap:clamp(8px,2vw,20px);
-    padding:18px clamp(14px,3vw,30px);position:relative;
-  }
-  .bug-num{font-family:'Anton',sans-serif;font-size:clamp(56px,12vw,104px);line-height:.8;color:var(--chalk);text-shadow:0 0 32px rgba(247,231,163,.18)}
-  .bug-num.target{color:var(--mute);opacity:.55;font-size:clamp(34px,7vw,64px)}
-  .bug-slash{font-family:'Anton',sans-serif;font-size:clamp(30px,6vw,56px);color:var(--gold);opacity:.65}
-  .bug-meta{
-    display:flex;flex-direction:column;justify-content:center;gap:4px;
-    padding:18px 24px;border-left:1px solid var(--line);min-width:170px;
-  }
-  .bug-meta .big{font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(20px,3vw,28px);color:var(--gold-hot)}
-  .bug-meta .small{font-size:12.5px;color:var(--mute);text-transform:uppercase;letter-spacing:.08em;font-family:'Oswald',sans-serif}
-  .bug-progress{flex-basis:100%;height:6px;background:rgba(255,255,255,.06);position:relative}
-  .bug-progress i{position:absolute;left:0;top:0;bottom:0;width:0;background:linear-gradient(90deg,#d99f2e,var(--gold-hot));box-shadow:0 0 16px rgba(255,214,107,.5);animation:fill 1.8s 1.3s cubic-bezier(.16,1,.3,1) forwards}
-  @keyframes fill{to{width:97.5%}}
-  .bug-foot{
-    flex-basis:100%;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;
-    padding:11px 22px;background:rgba(0,0,0,.4);font-size:12.5px;color:var(--mute);
-    font-family:'Oswald',sans-serif;letter-spacing:.05em;text-transform:uppercase;
-  }
-  .bug-foot b{color:var(--chalk);font-weight:600}
+  /* ---- La fiche (parcours) ---- */
+  .record{width:100%;border-collapse:collapse;font-family:var(--sans);font-size:17px}
+  .record th{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);text-align:left;padding:8px 0;border-bottom:1px solid var(--rule)}
+  .record td{padding:12px 0;border-bottom:1px solid var(--rule-soft);vertical-align:baseline}
+  .record td:first-child{font-weight:700;font-size:19px}
+  .record td small{display:block;font-weight:400;font-size:13px;color:var(--ink-2)}
+  .record .yrs{color:var(--ink-2);font-variant-numeric:tabular-nums;white-space:nowrap;padding-right:12px}
+  .record .n,.record th.n{text-align:right;font-stretch:75%;font-weight:800;font-size:26px;font-variant-numeric:tabular-nums}
+  .record th.n{font-size:12px;font-weight:700}
+  .record tr.por td{color:var(--red)}
+  .record tr.por td small{color:var(--red)}
+  .record tfoot td{border-top:3px solid var(--rule);border-bottom:0;font-weight:800;padding-top:12px}
+  .record tfoot .n{font-size:34px}
+  html[dir="rtl"] .record th{text-align:right}
+  html[dir="rtl"] .record .n,html[dir="rtl"] .record th.n{text-align:left}
 
-  .scroll-hint{
-    position:absolute;left:50%;bottom:22px;transform:translateX(-50%);z-index:3;
-    display:flex;flex-direction:column;align-items:center;gap:7px;color:var(--mute);
-    font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.22em;text-transform:uppercase;
-    animation:bob 2.4s ease-in-out infinite;
+  /* ---- Actualités ---- */
+  .news-grid{display:grid;gap:0;border-top:1px solid var(--rule)}
+  .story{display:grid;grid-template-columns:96px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--rule-soft);text-decoration:none}
+  .story .ph{display:block;aspect-ratio:1;background:var(--paper-2) center/cover no-repeat}
+  .story h3{font-family:var(--serif);font-weight:600;font-size:19px;line-height:1.22}
+  .story:hover h3{text-decoration:underline;text-decoration-color:var(--red);text-underline-offset:3px}
+  .story .label{display:block;margin-bottom:5px;color:var(--red)}
+  .story .sum{display:none}
+  .story .meta{margin-top:6px}
+  .story.lead{grid-template-columns:1fr;gap:12px}
+  .story.lead .ph{aspect-ratio:16/9}
+  .story.lead h3{font-size:clamp(26px,3vw,36px);line-height:1.1}
+  .story.lead .sum{display:block;margin-top:8px;font-size:17px;color:var(--ink-2)}
+  @media (min-width:900px){
+    .news-grid{grid-template-columns:1.6fr 1fr 1fr;column-gap:28px}
+    .story.lead{grid-row:span 3;border-bottom:0}
+    .story{grid-template-columns:1fr;align-content:start}
+    .story .ph{aspect-ratio:16/10}
   }
-  .scroll-hint span{width:1px;height:30px;background:linear-gradient(var(--gold),transparent)}
-  @keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+  html[dir="rtl"] .story h3{font-family:'Cairo',sans-serif}
 
-  /* ---------- REVEAL ON SCROLL ---------- */
-  .reveal{opacity:0;transform:translateY(36px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
-  .reveal.in{opacity:1;transform:none}
-  .reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}.reveal.d4{transition-delay:.32s}
-
-  .kicker{font-family:'Oswald',sans-serif;font-weight:500;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--floodlight);margin-bottom:16px;display:flex;align-items:center;gap:12px}
-  .kicker::before{content:"";width:28px;height:1px;background:var(--gold)}
-  .inner{position:relative;z-index:2;max-width:var(--maxw);margin:0 auto;width:100%}
-
-  /* ---------- FRAME 2: NEXT MATCH ---------- */
-  #match .bg{background-image:url('/images/mockups/floodlights.jpg')}
-  #match .scrim{background:linear-gradient(180deg,var(--ink) 0%,rgba(5,7,11,.55) 22%,rgba(5,7,11,.55) 70%,var(--ink) 100%),linear-gradient(90deg,rgba(5,7,11,.85),transparent 70%)}
-  .match-grid{display:grid;grid-template-columns:1fr;gap:30px;align-items:center}
-  /* Dernier match — le pendant du « prochain rendez-vous ». Un visiteur qui
-     arrive après une rencontre cherche le résultat avant la date suivante ;
-     la donnée existait dans stats.json sans être affichée nulle part. */
-  .lastmatch{margin:18px 0 6px;padding:14px 16px;border:1px solid rgba(242,193,78,.28);
-    border-radius:10px;background:rgba(255,255,255,.05);max-width:520px}
-  .lastmatch[hidden]{display:none}
-  .fixture[hidden]{display:none}
-  .lm-kicker{margin:0 0 6px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;
-    color:#f2c14e;font-weight:700}
-  .lm-line{margin:0;font-size:17px;font-weight:600;color:#f3f6f9}
-  .lm-score{font-variant-numeric:tabular-nums}
-  .lm-score.win{color:#6fd79b}.lm-score.loss{color:#f0897b}.lm-score.draw{color:#eed07a}
-  .lm-meta{margin:5px 0 0;font-size:13px;color:#b6c0ca}
-  .fixture{
-    border:1px solid var(--line);border-radius:16px;overflow:hidden;
-    background:linear-gradient(180deg,rgba(13,17,24,.85),rgba(5,7,11,.9));
-    box-shadow:0 26px 60px rgba(0,0,0,.5);
-  }
-  .fixture .head{display:flex;align-items:center;justify-content:space-between;padding:14px 22px;background:linear-gradient(90deg,rgba(242,193,78,.16),transparent);border-bottom:1px solid var(--line)}
-  .fixture .head .comp{font-family:'Oswald',sans-serif;font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
-  .fixture .head .when{font-size:12.5px;color:var(--mute);font-family:'Oswald',sans-serif;letter-spacing:.08em;text-transform:uppercase}
-  .vs{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;padding:34px 22px}
-  .team{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center}
-  .crest{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;font-family:'Anton',sans-serif;font-size:24px;color:var(--ink);box-shadow:0 8px 24px rgba(0,0,0,.4)}
-  .crest.col{background:linear-gradient(135deg,#fcd116,#ce1126 60%,#003893)}
-  .crest.por{background:linear-gradient(135deg,#006600,#d40000)}
-  .team .name{font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(17px,2.4vw,22px);text-transform:uppercase;letter-spacing:.04em}
-  .vs .mid{font-family:'Anton',sans-serif;font-size:30px;color:var(--gold)}
-  .fixture .foot{padding:13px 22px;border-top:1px solid var(--line);font-size:13px;color:var(--mute);text-align:center;font-family:'Oswald',sans-serif;letter-spacing:.06em;text-transform:uppercase}
-  .match-copy h2{font-size:clamp(34px,5.5vw,68px);color:var(--chalk)}
-  .match-copy h2 .gold{color:var(--gold)}
-  .match-copy p{margin-top:18px;color:var(--chalk);max-width:46ch}
-  .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
-  .btn{
-    display:inline-flex;align-items:center;gap:10px;font-family:'Oswald',sans-serif;font-weight:600;font-size:14px;
-    letter-spacing:.1em;text-transform:uppercase;padding:14px 26px;border-radius:8px;transition:transform .2s,box-shadow .2s,background .2s;
-  }
-  .btn.gold{background:var(--gold);color:var(--ink);box-shadow:0 12px 30px rgba(242,193,78,.25)}
-  .btn.gold:hover{transform:translateY(-2px);box-shadow:0 16px 38px rgba(242,193,78,.4)}
-  .btn.ghost{border:1px solid var(--line);color:var(--chalk)}
-  .btn.ghost:hover{background:rgba(247,231,163,.08);transform:translateY(-2px)}
-  @media(min-width:900px){.match-grid{grid-template-columns:.95fr 1.05fr;gap:54px}}
-
-  /* ---------- FRAME 3: PARCOURS / ERAS ---------- */
-  #parcours{background:var(--charcoal)}
-  #parcours .bg{background-image:url('/images/cr7-hero-banner.jpg');background-position:center 22%;opacity:.32}
-  #parcours .scrim{background:linear-gradient(180deg,var(--ink),rgba(5,7,11,.7) 30%,rgba(5,7,11,.82) 70%,var(--ink))}
-  .eras{display:grid;grid-template-columns:1fr;gap:14px;margin-top:34px}
-  .era{
-    display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px;
-    padding:18px 20px;border:1px solid var(--line);border-radius:12px;
-    background:linear-gradient(90deg,rgba(13,17,24,.7),rgba(5,7,11,.5));
-    transition:border-color .3s,background .3s,transform .3s;
-  }
-  .era:hover{border-color:var(--gold);background:linear-gradient(90deg,rgba(242,193,78,.1),rgba(5,7,11,.5));transform:translateX(6px)}
-  .era .yr{font-family:'Anton',sans-serif;font-size:clamp(20px,3vw,28px);color:var(--gold);min-width:96px}
-  .era .club{font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(18px,2.6vw,26px);text-transform:uppercase;letter-spacing:.03em}
-  .era .club small{display:block;font-family:'Hanken Grotesk';font-weight:400;font-size:13px;text-transform:none;letter-spacing:0;color:var(--mute);margin-top:3px}
-  .era .goals{font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(15px,2vw,18px);color:var(--floodlight);text-align:right}
-  .era .goals span{display:block;font-size:11px;color:var(--mute);letter-spacing:.1em;text-transform:uppercase}
-  @media(min-width:780px){.eras{grid-template-columns:1fr 1fr}}
-
-  /* ---------- FRAME 4: STATS + NEWS ---------- */
-  #data{background:var(--ink)}
-  #data .bg{background-image:url('/images/mockups/crowd.jpg');opacity:.22}
-  #data .scrim{background:linear-gradient(180deg,var(--ink),rgba(5,7,11,.85))}
-  #data.frame{justify-content:flex-start;padding-top:130px}
-  .stats-row{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:30px}
-  .stat{padding:22px 18px;border:1px solid var(--line);border-radius:12px;background:linear-gradient(180deg,rgba(13,17,24,.7),rgba(5,7,11,.6))}
-  .stat .n{font-family:'Anton',sans-serif;font-size:clamp(34px,6vw,56px);color:var(--gold);line-height:.85}
-  .stat .t{margin-top:10px;font-size:13px;color:var(--mute);text-transform:uppercase;letter-spacing:.08em;font-family:'Oswald',sans-serif}
-  @media(min-width:760px){.stats-row{grid-template-columns:repeat(4,1fr)}}
-
-  .news-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-top:54px}
-  .news-head h3{font-size:clamp(22px,3.4vw,32px)}
-  .news-head a{font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);border-bottom:1px solid transparent;transition:border-color .2s}
-  .news-head a:hover{border-color:var(--gold)}
-  .news-promise{font-family:'Oswald',sans-serif;font-size:13px;color:var(--mute);margin-top:6px;letter-spacing:.01em}
-  .news-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:22px}
-  @media(min-width:680px){.news-grid{grid-template-columns:1fr 1fr}}
-  @media(min-width:1080px){.news-grid{grid-template-columns:1fr 1fr 1fr}}
-  .card{
-    display:flex;flex-direction:column;text-decoration:none;
-    border:1px solid var(--line);border-radius:14px;overflow:hidden;
-    background:linear-gradient(180deg,rgba(13,17,24,.72),rgba(5,7,11,.66));transition:border-color .3s,transform .3s}
-  .card:hover{border-color:var(--gold);transform:translateY(-4px)}
-  .card:hover .orig{color:var(--gold-hot)}
-  .card .thumb{width:100%;height:168px;background-size:cover;background-position:center;position:relative}
-  .card .thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(5,7,11,.8))}
-  .card .kindtag{position:absolute;left:11px;top:11px;z-index:2;font-family:'Oswald',sans-serif;font-weight:700;font-size:10px;letter-spacing:.12em;text-transform:uppercase;background:var(--gold);color:var(--ink);padding:3px 8px;border-radius:5px}
-  .card .body{display:flex;flex-direction:column;gap:9px;padding:14px 16px 13px;flex:1}
-  .card .body .cat{font-family:'Oswald',sans-serif;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
-  .card .body h4{font-family:'Oswald',sans-serif;font-weight:600;font-size:17px;line-height:1.22;text-transform:none;letter-spacing:0;color:var(--chalk)}
-  .card .body .sum{font-size:13.5px;line-height:1.5;color:#aeb8c4;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-  .card .meta{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:9px;border-top:1px solid var(--line)}
-  .card .src{display:inline-flex;align-items:center;gap:5px;font-family:'Oswald',sans-serif;font-size:11.5px;letter-spacing:.03em;color:var(--mute)}
-  .card .src .verif{color:#5fd38a;font-weight:700}
-  .card .body time{font-family:'Oswald',sans-serif;font-size:11.5px;color:var(--mute);white-space:nowrap}
-  .card .orig{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);transition:color .2s}
-  html[dir="rtl"] .card{text-align:right}
-
-  /* ---------- FOOTER ---------- */
-  footer{position:relative;z-index:2;border-top:1px solid var(--line);background:var(--charcoal);padding:48px clamp(20px,5vw,64px)}
-  .foot-inner{max-width:var(--maxw);margin:0 auto;display:grid;grid-template-columns:1fr;gap:26px}
-  .foot-brand .logo{font-family:'Anton',sans-serif;font-size:28px}
-  .foot-brand .logo b{color:var(--gold)}
-  .foot-brand p{margin-top:10px;color:var(--mute);font-size:13.5px;max-width:42ch}
-  .foot-nav{display:flex;flex-wrap:wrap;gap:8px 20px}
-  .foot-nav a{font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);transition:color .2s}
-  .foot-nav a:hover{color:var(--gold)}
-  .disclaimer{border-top:1px solid var(--line);margin-top:8px;padding-top:18px;color:var(--mute);font-size:12px;line-height:1.7}
-  .disclaimer a{color:var(--mute);text-decoration:underline;text-underline-offset:2px}
-  @media(min-width:780px){.foot-inner{grid-template-columns:1.4fr 1fr}}
-
-  /* ---------- HERO V2 : célébration + GRAND compteur (centerpiece) ---------- */
-  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-  #hero.frame{justify-content:center;padding-top:96px}
-  #hero .scrim{
-    background:
-      radial-gradient(85% 60% at 50% 26%,rgba(242,193,78,.14),transparent 62%),
-      linear-gradient(180deg,rgba(5,7,11,.55) 0%,rgba(5,7,11,.22) 30%,rgba(5,7,11,.82) 80%,var(--ink) 100%);
-  }
-  .hero-stack{position:relative;z-index:2;width:100%;max-width:var(--maxw);margin:0 auto;
-    display:flex;flex-direction:column;align-items:center;text-align:center}
-  .hero-eyebrow{display:inline-flex;align-items:center;gap:12px;font-family:'Oswald',sans-serif;font-weight:500;
-    font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--floodlight);margin-bottom:4px;
-    opacity:0;animation:rise .8s .1s cubic-bezier(.16,1,.3,1) forwards}
-  .hero-eyebrow::before,.hero-eyebrow::after{content:"";width:26px;height:1px;background:var(--gold);opacity:.7}
-  .celebration{margin:0;line-height:0;position:relative;
-    opacity:0;animation:rise 1s .2s cubic-bezier(.16,1,.3,1) forwards}
-  .celebration::before{content:"";position:absolute;left:50%;top:34%;transform:translate(-50%,-50%);
-    width:min(640px,88vw);height:min(640px,88vw);border-radius:50%;z-index:-1;
-    background:radial-gradient(circle,rgba(242,193,78,.20),transparent 60%)}
-  .celebration img{
-    height:clamp(270px,52vh,580px);width:auto;max-width:96vw;object-fit:contain;object-position:center bottom;
-    /* grade cinématographique : assombri + contraste pour fondre dans la nuit du stade */
-    filter:brightness(.9) contrast(1.12) saturate(1.05)
-           drop-shadow(0 18px 26px rgba(0,0,0,.55)) drop-shadow(0 2px 4px rgba(0,0,0,.5));
-  }
-  /* ombre de contact elliptique sous ses pieds — l'ancre dans le stade */
-  .celebration::after{content:"";position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);
-    width:54%;height:26px;z-index:-1;pointer-events:none;border-radius:50%;
-    background:radial-gradient(ellipse,rgba(0,0,0,.6),transparent 70%);filter:blur(4px)}
-  .counter-hero{position:relative;z-index:3;margin-top:clamp(-12px,-1vh,-4px);
-    display:flex;flex-direction:column;align-items:center;gap:9px;
-    opacity:0;animation:bugin 1s .55s cubic-bezier(.16,1,.3,1) forwards}
-  .counter-hero .live{display:inline-flex;align-items:center;gap:8px;font-family:'Oswald',sans-serif;font-weight:700;
-    font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);
-    padding:6px 15px;border:1px solid var(--line);border-radius:999px;background:rgba(5,7,11,.55)}
-  .counter-hero .live .dot{width:7px;height:7px;border-radius:50%;background:#ff3b30;box-shadow:0 0 10px #ff3b30;animation:blink 1.4s steps(1) infinite}
-  .ch-count{display:flex;align-items:baseline;justify-content:center;gap:clamp(6px,1.4vw,16px)}
-  .ch-num{font-family:'Anton',sans-serif;line-height:.8;color:var(--chalk);
-    font-size:clamp(98px,21vw,236px);text-shadow:0 0 64px rgba(247,231,163,.32),0 6px 30px rgba(0,0,0,.6)}
-  .ch-slash{font-family:'Anton',sans-serif;color:var(--gold);opacity:.7;font-size:clamp(40px,9vw,108px);line-height:.8}
-  .ch-target{font-family:'Anton',sans-serif;color:var(--mute);opacity:.6;font-size:clamp(40px,9vw,108px);line-height:.8}
-  .ch-meta{font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(17px,2.5vw,26px);color:var(--gold-hot);text-transform:uppercase;letter-spacing:.04em}
-  .ch-meta b{color:var(--chalk)}
-  .ch-bar{width:min(440px,82vw);height:6px;border-radius:3px;background:rgba(255,255,255,.08);overflow:hidden;margin-top:4px}
-  .ch-bar i{display:block;height:100%;width:0;border-radius:3px;background:linear-gradient(90deg,#d99f2e,var(--gold-hot));box-shadow:0 0 16px rgba(255,214,107,.55);animation:fill 1.8s 1.1s cubic-bezier(.16,1,.3,1) forwards}
-  .ch-foot{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--mute);margin-top:2px}
-  .ch-foot b{color:var(--chalk);font-weight:600}
-  @media(max-width:640px){
-    #hero.frame{padding-top:84px}
-    .celebration img{height:clamp(230px,44vh,380px)}
-    .counter-hero{margin-top:-14px}
-  }
-
-  /* ---------- REDUCED MOTION ---------- */
-  @media(prefers-reduced-motion:reduce){
-    *{animation:none !important;transition:none !important}
-    html,.scroller{scroll-behavior:auto}
-    .scroller{scroll-snap-type:none}
-    .reveal{opacity:1;transform:none}
-    #hero .bg{transform:none}
-    .bug-progress i{width:97.5%}
-    .scroll-hint{display:none}
-  }
-
-  /* ---------- i18n : sélecteur de langue + RTL ---------- */
-  .lang-sw{display:inline-flex;gap:2px;border:1px solid var(--line);border-radius:999px;padding:3px;background:rgba(0,0,0,.35)}
-  .lang-sw button{font-family:'Oswald',sans-serif;font-weight:600;font-size:11px;letter-spacing:.06em;color:var(--mute);background:none;border:0;cursor:pointer;padding:4px 9px;border-radius:999px;line-height:1}
-  .lang-sw button:hover{color:var(--chalk)}
-  .lang-sw button.active{background:var(--gold);color:var(--ink)}
-  .lang-sw button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
-  html[dir="rtl"] body{font-family:'Cairo',system-ui,sans-serif}
-  html[dir="rtl"] .match-copy,html[dir="rtl"] .news-head,html[dir="rtl"] .foot-brand,html[dir="rtl"] .inner>p.kicker{text-align:right}
-  html[dir="rtl"] .news-head{flex-direction:row-reverse}
-  html[dir="rtl"] .eras .era{direction:rtl}
-  @media(max-width:1079px){.lang-sw{padding:2px}.lang-sw button{padding:4px 7px;font-size:10.5px}}
-  /* mobile nav + flags + GOAT */
-  .topbar-right{display:flex;align-items:center;gap:10px}
-  .hamb{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:0;cursor:pointer;padding:8px 4px}
-  .hamb span{display:block;width:22px;height:2px;background:var(--chalk);border-radius:2px;transition:transform .25s,opacity .25s}
-  .hamb[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-  .hamb[aria-expanded="true"] span:nth-child(2){opacity:0}
-  .hamb[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-  .mobile-menu{position:fixed;top:58px;left:0;right:0;z-index:99;background:rgba(5,7,11,.98);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);display:flex;flex-direction:column;padding:6px 18px;box-shadow:0 18px 40px rgba(0,0,0,.5)}
-  .mobile-menu[hidden]{display:none}
-  .mobile-menu a{font-family:'Oswald',sans-serif;font-size:15px;letter-spacing:.05em;text-transform:uppercase;color:var(--chalk);text-decoration:none;padding:14px 4px;border-bottom:1px solid rgba(255,255,255,.07)}
-  .mobile-menu a:last-child{border-bottom:0}
-  .crest-flag{background-size:cover;background-position:center;border:2px solid rgba(255,255,255,.18)}
-  .goat-line{margin-top:9px;font-family:'Oswald',sans-serif;font-size:clamp(12px,1.5vw,15px);letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
-  .goat-line b{font-family:'Anton',sans-serif;font-weight:400;color:var(--gold);letter-spacing:.12em;margin-left:6px}
-  .goat-line b i{font-style:normal;color:var(--gold-hot);text-shadow:0 0 14px var(--gold-hot);animation:blink 1.6s steps(1) infinite}
-  @media(max-width:1079px){ .hamb{display:flex} }
-
-  /* ---------- NEWSLETTER (masquée tant que NEWSLETTER_FORM_ACTION n'est pas configurée — voir newsletter.js) ---------- */
-  .nl-section{border-top:1px solid var(--line);background:linear-gradient(180deg,rgba(13,17,24,.72),rgba(5,7,11,.66))}
+  /* ---- Newsletter (masquée tant que non configurée) ---- */
   .nl-section[hidden]{display:none}
-  .nl-inner{max-width:var(--maxw);margin:0 auto;padding:38px 22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px}
-  .nl-copy h3{font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(22px,3.4vw,30px);letter-spacing:.01em;color:var(--chalk)}
-  .nl-copy p{color:var(--mute);font-size:14px;line-height:1.6;margin-top:6px;max-width:52ch}
-  .nl-form{display:flex;flex-wrap:wrap;gap:10px}
-  .nl-form input[type=email]{font-family:'Hanken Grotesk',system-ui,sans-serif;font-size:15px;color:var(--chalk);background:rgba(0,0,0,.4);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:240px}
-  .nl-form input[type=email]::placeholder{color:var(--mute)}
-  .nl-form button{font-family:'Oswald',sans-serif;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);background:var(--gold);border:0;border-radius:10px;padding:12px 20px;cursor:pointer}
-  .nl-form button:hover{background:var(--gold-hot)}
-  .nl-ok{display:none;color:#5fd38a;font-family:'Oswald',sans-serif;font-size:14px}
-</style>
-<!-- PWA -->
+  .nl-inner{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px}
+  .nl-copy h3{font-family:var(--sans);font-stretch:75%;font-weight:800;font-size:28px}
+  .nl-form{display:flex;flex-wrap:wrap;gap:8px}
+  .nl-form input[type=email]{font:inherit;font-size:16px;padding:11px 12px;border:2px solid var(--ink);background:#fff;min-width:240px}
+  .nl-form button{font-family:var(--sans);font-weight:700;font-size:15px;padding:12px 18px;border:2px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer}
+  .nl-ok{display:none;color:var(--green);font-family:var(--sans)}
+  </style>
   <link rel="manifest" href="/manifest.json">
 </head>
 <body>
+<a class="skip" href="#compteur" data-i18n="skip">Aller au compteur</a>
 
-
-<!-- BROADCAST TOP BAR -->
-<header class="topbar">
-  <div class="brand">
-    <a href="#hero" class="logo" aria-label="TO1000.com accueil">TO<b>1000</b></a>
-    <span class="tag" data-i18n="brand_tag">Le hub du football · le compte à rebours du 1000e but de Cristiano Ronaldo</span>
-  </div>
-  <nav class="main" aria-label="Navigation principale">
-    <a href="#hero" class="active" data-i18n="nav_counter">Compteur</a>
-    <a href="/goals.html" data-i18n="nav_goals">Tous les buts</a>
-    <a href="#parcours" data-i18n="nav_journey">Parcours</a>
-    <a href="#match" data-i18n="nav_wc">Coupe du Monde</a>
-    <a href="#data" data-i18n="nav_stats">Stats</a>
-    <a href="/news.html" data-i18n="nav_news">News</a>
-  </nav>
-  <div class="topbar-right">
+<header>
+  <div class="wrap mast-top">
+    <span class="meta" id="today">Jeudi 5 novembre 2026</span>
     <div class="lang-sw" role="group" aria-label="Language"><button type="button" data-l="fr" aria-pressed="false">FR</button><button type="button" data-l="en" aria-pressed="false">EN</button><button type="button" data-l="es" aria-pressed="false">ES</button><button type="button" data-l="ar" aria-pressed="false">AR</button></div>
-    <span class="livepill"><span class="dot" aria-hidden="true"></span>Live · 985</span>
-    <button class="hamb" id="hamb" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
   </div>
+  <div class="wrap mast-name">
+    <a class="nameplate" href="/" aria-label="To1000.com, accueil">TO1000<span class="dot">.</span></a>
+    <p class="mast-tag" data-i18n="brand_tag">Le football, chaque jour. Et le compte à rebours du 1000e but de Cristiano Ronaldo.</p>
+    <a class="mast-count" href="#compteur"><b class="livepill">985</b><span data-i18n="count_lbl">buts sur 1000</span></a>
+  </div>
+  <nav class="wrap sections" aria-label="Rubriques">
+    <ul>
+      <li><a href="/" aria-current="page" data-i18n="nav_home">À la une</a></li>
+      <li><a href="/obrigado-cristiano/" class="hot" data-i18n="nav_tribute">Obrigado, Cristiano</a></li>
+      <li><a href="#compteur" data-i18n="nav_counter">Le compteur</a></li>
+      <li><a href="/goals.html" data-i18n="nav_goals">Tous les buts</a></li>
+      <li><a href="/news.html" data-i18n="nav_news">Actualités</a></li>
+      <li><a href="/coupe-du-monde/" data-i18n="nav_wc">Coupe du monde</a></li>
+      <li><a href="#parcours" data-i18n="nav_journey">Parcours</a></li>
+    </ul>
+  </nav>
 </header>
-<nav class="mobile-menu" id="mobileMenu" aria-label="Menu" hidden>
-  <a href="#hero" data-i18n="nav_counter">Compteur</a>
-  <a href="/goals.html" data-i18n="nav_goals">Tous les buts</a>
-  <a href="#parcours" data-i18n="nav_journey">Parcours</a>
-  <a href="#match" data-i18n="nav_wc">Coupe du Monde</a>
-  <a href="#data" data-i18n="nav_stats">Stats</a>
-  <a href="/news.html" data-i18n="nav_news">News</a>
-</nav>
 
-<main class="scroller" id="top">
+<div class="flash"><div class="wrap"><span class="label" data-i18n="flash_lbl">Édition spéciale</span><a href="/obrigado-cristiano/" data-i18n="flash_txt">Cristiano Ronaldo quitte la sélection portugaise : notre hommage →</a></div></div>
 
-  <!-- ============ FRAME 1 — HERO + SCORE BUG ============ -->
-  <section class="frame" id="hero" aria-labelledby="hero-title">
-    <div class="bg" role="img" aria-label="Stade illuminé par les projecteurs lors d'un soir de match"></div>
-    <div class="scrim" aria-hidden="true"></div>
+<main id="top">
+  <h1 class="sr-only" data-i18n="hero_h1">Compte à rebours vers le 1000e but de Cristiano Ronaldo</h1>
 
-    <div class="hero-stack">
-      <h1 id="hero-title" class="sr-only" data-i18n="hero_h1">Compte à rebours vers le 1000e but de Cristiano Ronaldo</h1>
-      <p class="hero-eyebrow" data-i18n="hero_eyebrow">Cristiano Ronaldo · vers l'histoire</p>
-
-      <!-- CÉLÉBRATION — SIUU détouré (fond supprimé), incrusté sur le stade -->
-      <figure class="celebration">
-        <img src="/images/mockups/siuu-cutout.png" alt="Cristiano Ronaldo célèbre le Siuu avec le Portugal">
+  <!-- ============ LA UNE — hommage (5 nov. 2026). À remplacer quand l'actu passera. ============ -->
+  <section id="hero" aria-labelledby="une-title">
+    <div class="wrap une">
+      <div>
+        <p class="label red" data-i18n="une_kicker">Sélection · 5 novembre 2026</p>
+        <h2 class="headline" id="une-title"><a href="/obrigado-cristiano/">Obrigado,<br><em>Cristiano.</em></a></h2>
+        <p class="standfirst" data-i18n="une_sf">Après 23 ans, 234 matches et 146 buts, Cristiano Ronaldo quitte la sélection portugaise. Il rend le maillot n°7 et garde un objectif : 1000.</p>
+        <div class="btn-row"><a class="btn" href="/obrigado-cristiano/" data-i18n="une_btn">Lire l'hommage</a><a class="btn line" href="#compteur" data-i18n="une_btn2">Où en est le compteur</a></div>
+      </div>
+      <figure class="photo">
+        <img src="/images/cr7-portugal.jpg" width="800" height="949" alt="Cristiano Ronaldo sous le maillot du Portugal" data-i18n-alt="une_alt" fetchpriority="high">
+        <figcaption data-i18n="une_cap">Coupe du monde 2022, Qatar. Photo : Wikimedia Commons.</figcaption>
       </figure>
-
-      <!-- GRAND COMPTEUR — centerpiece, sous la célébration, visible en premier -->
-      <div class="counter-hero" role="group" aria-live="polite" aria-label="Compteur live des buts en carrière de Cristiano Ronaldo">
-        <span class="live"><span class="dot" aria-hidden="true"></span><span data-i18n="hero_live">Live · Buts carrière</span></span>
-        <div class="ch-count">
-          <span class="ch-num impact" aria-label="985 buts">985</span>
-          <span class="ch-slash">/</span>
-          <span class="ch-target impact">1000</span>
-        </div>
-        <p class="ch-meta"><b>15 buts</b> avant l'histoire</p>
-        <div class="ch-bar" role="progressbar" aria-valuenow="985" aria-valuemin="0" aria-valuemax="1000" aria-label="Progression vers 1000 buts : 98,5 pour cent"><i></i></div>
-        <p class="ch-foot">Progression 98,5 % · Dernier but vs <b>Al Kholood</b> · Saudi Pro League</p>
-        <p class="goat-line" aria-label="The GOAT debate">THE <b>G.O.A.T.<i>?</i></b></p>
-      </div>
     </div>
-
-    <a href="#match" class="scroll-hint" aria-label="Faire défiler vers le prochain match">
-      <em style="font-style:normal" data-i18n="scroll">Défiler</em><span aria-hidden="true"></span>
-    </a>
-  </section>
-
-  <!-- ============ FRAME 2 — PROCHAIN MATCH ============ -->
-  <section class="frame" id="match" aria-labelledby="match-title">
-    <div class="bg" role="img" aria-label="Pelouse de stade sous les projecteurs"></div>
-    <div class="scrim" aria-hidden="true"></div>
-    <div class="inner match-grid">
-      <div class="fixture reveal" id="fixture" hidden>
-        <div class="head">
-          <span class="comp" data-i18n="m_comp">UEFA Nations League</span>
-          <span class="when">24 sept · 20:45</span>
-        </div>
-        <div class="vs">
-          <div class="team">
-            <span class="crest crest-flag" style="background-image:url('https://flagcdn.com/w160/pt.png')" role="img" aria-label="Portugal"></span>
-            <span class="name">Portugal</span>
-          </div>
-          <span class="mid impact">VS</span>
-          <div class="team">
-            <span class="crest crest-flag" style="background-image:url('https://flagcdn.com/w160/gb-wls.png')" role="img" aria-label="Pays de Galles"></span>
-            <span class="name">Pays de Galles</span>
-          </div>
-        </div>
-        <div class="foot" data-i18n="m_foot">Club et sélection : chaque rencontre de Cristiano Ronaldo, heure par heure, sur To1000</div>
-      </div>
-      <div class="match-copy">
-        <p class="kicker reveal" data-i18n="m_kicker">Prochain rendez-vous</p>
-        <h2 class="reveal d1" data-i18n-html="m_title">Chaque match <span class="gold">compte double</span></h2>
-        <p class="reveal d2" data-i18n="m_desc">Chaque rencontre peut rapprocher Cristiano Ronaldo du cap des 1000 buts — avec son club comme avec sa sélection. Résultat du dernier match, date du prochain : nous suivons les deux, but par but, minute par minute.</p>
-        <div class="lastmatch reveal d2" id="lastmatch" hidden>
-          <p class="lm-kicker" data-i18n="lm_kicker">Dernier match</p>
-          <p class="lm-line"><span class="lm-teams"></span> <span class="lm-score"></span></p>
-          <p class="lm-meta"></p>
-        </div>
-        <div class="cta-row reveal d3">
-          <a href="#hero" class="btn gold" data-i18n="m_btn1">Suivre le compteur</a>
-          <a href="/coupe-du-monde/" class="btn ghost" data-i18n="m_btn2">Toute l'actu Mondial</a>
-        </div>
+    <div class="wrap">
+      <div class="figures">
+        <div><span class="num">234</span><span class="label" data-i18n="f_caps">sélections, record mondial</span></div>
+        <div><span class="num">146</span><span class="label" data-i18n="f_goals">buts en sélection, record mondial</span></div>
+        <div><span class="num">3</span><span class="label" data-i18n="f_titles">titres : Euro 2016, Ligues des nations 2019 et 2025</span></div>
+        <div><span class="num">6</span><span class="label" data-i18n="f_wc">Coupes du monde, un but dans chacune</span></div>
       </div>
     </div>
   </section>
 
-  <!-- ============ FRAME 3 — PARCOURS / ERAS ============ -->
-  <section class="frame" id="parcours" aria-labelledby="parcours-title">
-    <div class="bg" role="img" aria-label="Montage photo de Cristiano Ronaldo"></div>
-    <div class="scrim" aria-hidden="true"></div>
-    <div class="inner">
-      <p class="kicker reveal" data-i18n="p_kicker">Le parcours</p>
-      <h2 class="reveal d1" id="parcours-title" style="font-size:clamp(34px,6vw,72px)" data-i18n-html="p_title">Cinq clubs et le Portugal. <span style="color:var(--gold)">Une légende.</span></h2>
-      <div class="eras">
-        <div class="era reveal d1"><span class="yr">2002</span><span class="club">Sporting<small data-i18n="era_sporting">Lisbonne · les débuts</small></span><span class="goals">5<span data-i18n="goals_unit">buts</span></span></div>
-        <div class="era reveal d1"><span class="yr">2003</span><span class="club">Man United<small data-i18n="era_manu">Premier League · le sacre</small></span><span class="goals">145<span data-i18n="goals_unit">buts</span></span></div>
-        <div class="era reveal d2"><span class="yr">2009</span><span class="club">Real Madrid<small data-i18n="era_real">Liga · l'ère galactique</small></span><span class="goals">450<span data-i18n="goals_unit">buts</span></span></div>
-        <div class="era reveal d2"><span class="yr">2018</span><span class="club">Juventus<small data-i18n="era_juve">Serie A · l'Italie</small></span><span class="goals">101<span data-i18n="goals_unit">buts</span></span></div>
-        <div class="era reveal d3"><span class="yr">2023</span><span class="club">Al Nassr<small data-i18n="era_nassr">Saudi Pro League · aujourd'hui</small></span><span class="goals">129<span data-i18n="goals_unit">buts</span></span></div>
-        <div class="era reveal d3"><span class="yr">2003</span><span class="club">Portugal<small data-i18n="era_por">Sélection · record mondial</small></span><span class="goals">145<span data-i18n="goals_unit">buts</span></span></div>
+  <!-- ============ LE COMPTEUR ============ -->
+  <section class="wrap sec" id="compteur" aria-labelledby="compteur-title">
+    <div class="sec-head"><h2 id="compteur-title" data-i18n="c_title">Le compteur</h2><a href="/goals.html" data-i18n="c_all">Les buts un par un →</a></div>
+    <div class="count" aria-live="polite">
+      <div class="ch-count"><span class="num ch-num" aria-label="985 buts">985</span><span class="num ch-target">/1000</span></div>
+      <div>
+        <p class="ch-meta">Il en reste <b>15</b>.</p>
+        <p class="meta ch-foot">Dernier but contre Al Kholood · Saudi Pro League</p>
+        <p class="note" data-i18n="c_note">Chaque point ci-dessous est un but. Depuis le 5 novembre, les 146 points rouges ne bougeront plus : les derniers buts viendront d'Al Nassr.</p>
+      </div>
+    </div>
+    <div class="goalgrid ch-bar" role="progressbar" aria-valuenow="985" aria-valuemin="0" aria-valuemax="1000" aria-label="985 buts sur 1000" id="goalgrid"></div>
+    <ul class="legend">
+      <li><i></i><span><b>701</b> <span data-i18n="lg_eu">en Europe (Sporting, Manchester United, Real Madrid, Juventus)</span></span></li>
+      <li class="lp"><i></i><span><b>146</b> <span data-i18n="lg_por">avec le Portugal, définitif</span></span></li>
+      <li class="ln"><i></i><span><b data-live="nassr">138</b> <span data-i18n="lg_nassr">avec Al Nassr, en cours</span></span></li>
+      <li class="lt"><i></i><span><b data-live="rem">15</b> <span data-i18n="lg_todo">à marquer</span></span></li>
+    </ul>
+  </section>
+
+  <!-- ============ LES MATCHES ============ -->
+  <section class="wrap sec" id="match" aria-labelledby="match-title">
+    <div class="sec-head"><h2 id="match-title" data-i18n="m_title">Les matches</h2><a href="/coupe-du-monde/" data-i18n="m_btn2">Coupe du monde →</a></div>
+    <div class="fixtures">
+      <div class="fx" id="fixture" hidden>
+        <span class="label red" data-i18n="m_kicker">Prochain match</span>
+        <p class="fx-line"><span class="fx-home">Al Nassr</span> – <span class="fx-away">Al Qadsiah</span></p>
+        <p class="meta"><span class="fx-comp">Saudi Pro League</span> · <span class="fx-when"></span></p>
+      </div>
+      <div class="fx" id="lastmatch" hidden>
+        <span class="label" data-i18n="lm_kicker">Dernier match</span>
+        <p class="fx-line"><span class="lm-teams"></span> <span class="sc lm-score"></span></p>
+        <p class="meta lm-meta"></p>
       </div>
     </div>
   </section>
 
-  <!-- ============ FRAME 4 — STATS + NEWS ============ -->
-  <section class="frame" id="data" aria-labelledby="data-title">
-    <div class="bg" role="img" aria-label="Foule de supporters dans les tribunes"></div>
-    <div class="scrim" aria-hidden="true"></div>
-    <div class="inner">
-      <p class="kicker reveal" data-i18n="d_kicker">Les chiffres & l'actu</p>
-      <h2 class="reveal d1" id="data-title" style="font-size:clamp(30px,5vw,58px)" data-i18n-html="d_title">Tout le football, <span style="color:var(--gold)">une obsession</span></h2>
+  <!-- ============ LA FICHE ============ -->
+  <section class="wrap sec" id="parcours" aria-labelledby="parcours-title">
+    <div class="sec-head"><h2 id="parcours-title" data-i18n="p_title">La fiche : cinq clubs et le Portugal</h2></div>
+    <table class="record">
+      <thead><tr><th data-i18n="th_team">Équipe</th><th data-i18n="th_years">Années</th><th class="n" data-i18n="th_goals">Buts</th></tr></thead>
+      <tbody>
+        <tr><td>Sporting CP<small data-i18n="era_sporting">Lisbonne, les débuts</small></td><td class="yrs">2002–03</td><td class="n">5</td></tr>
+        <tr><td>Manchester United<small data-i18n="era_manu">Premier League, deux passages</small></td><td class="yrs">2003–09 · 2021–22</td><td class="n">145</td></tr>
+        <tr><td>Real Madrid<small data-i18n="era_real">Meilleur buteur de l'histoire du club</small></td><td class="yrs">2009–18</td><td class="n">450</td></tr>
+        <tr><td>Juventus<small data-i18n="era_juve">Serie A</small></td><td class="yrs">2018–21</td><td class="n">101</td></tr>
+        <tr><td>Al Nassr<small data-i18n="era_nassr">Saudi Pro League, aujourd'hui</small></td><td class="yrs">2023–</td><td class="n" data-live="nassr">138</td></tr>
+        <tr class="por"><td>Portugal<small data-i18n="era_por">234 sélections · retraite le 5 nov. 2026</small></td><td class="yrs">2003–26</td><td class="n">146</td></tr>
+      </tbody>
+      <tfoot><tr><td colspan="2" data-i18n="th_total">Total</td><td class="n" data-live="goals">985</td></tr></tfoot>
+    </table>
+  </section>
 
-      <div class="stats-row">
-        <div class="stat reveal d1"><div class="n impact">985</div><div class="t" data-i18n="stat_career">Buts en carrière</div></div>
-        <div class="stat reveal d2"><div class="n impact">5</div><div class="t" data-i18n="stat_ballon">Ballons d'Or</div></div>
-        <div class="stat reveal d3"><div class="n impact">1000</div><div class="t" data-i18n="stat_goal">L'objectif</div></div>
-        <div class="stat reveal d4"><div class="n impact">0,74</div><div class="t" data-i18n="stat_ratio">Ratio buts / match</div></div>
-      </div>
-
-      <div class="news-head reveal d1">
-        <div><h3 data-i18n="news_h3">Dernières news football</h3>
-        <p class="news-promise" data-i18n="news_promise">On lit la presse pour vous — l’essentiel, sourcé, sans blabla.</p></div>
-        <a href="/news.html" data-i18n="news_all">Toutes les news →</a>
-      </div>
-      <div class="news-grid">
-        <a class="card reveal d1" href="#top">
-          <span class="thumb" style="background-image:url('/images/mockups/stadium-empty.jpg')" aria-hidden="true"></span>
-          <span class="body">
-            <span class="cat">Liga · Real Madrid</span>
-            <h4>Le Real Madrid valide sa préparation avant le choc de reprise</h4>
-            <time datetime="2026-06-26">Il y a 2 h</time>
-          </span>
-        </a>
-        <a class="card reveal d2" href="#top">
-          <span class="thumb" style="background-image:url('/images/mockups/floodlights.jpg')" aria-hidden="true"></span>
-          <span class="body">
-            <span class="cat">Ligue 1 · PSG</span>
-            <h4>Le PSG boucle un transfert XXL pour son entrejeu</h4>
-            <time datetime="2026-06-26">Il y a 4 h</time>
-          </span>
-        </a>
-        <a class="card reveal d1" href="#top">
-          <span class="thumb" style="background-image:url('/images/mockups/crowd.jpg')" aria-hidden="true"></span>
-          <span class="body">
-            <span class="cat">Mondial 2026</span>
-            <h4>Coupe du Monde : le tableau des huitièmes se dessine</h4>
-            <time datetime="2026-06-26">Il y a 6 h</time>
-          </span>
-        </a>
-        <a class="card reveal d2" href="#top">
-          <span class="thumb" style="background-image:url('/images/mockups/stadium-night.jpg')" aria-hidden="true"></span>
-          <span class="body">
-            <span class="cat">Portugal · CR</span>
-            <h4>Ronaldo à 15 buts du cap des 1000 : la route vers l'histoire</h4>
-            <time datetime="2026-06-26">Il y a 1 h</time>
-          </span>
-        </a>
-      </div>
-    </div>
+  <!-- ============ ACTUALITÉS ============ -->
+  <section class="wrap sec" id="data" aria-labelledby="data-title">
+    <div class="sec-head"><h2 id="data-title" data-i18n="news_h3">Actualités</h2><a href="/news.html" data-i18n="news_all">Toutes les actualités →</a></div>
+    <p class="meta" data-i18n="news_promise" style="margin:-12px 0 16px">On lit la presse pour vous : l'essentiel, sourcé, sans blabla.</p>
+    <div class="news-grid"></div>
   </section>
 
   <!-- ============ NEWSLETTER — masquée tant que window.NEWSLETTER_FORM_ACTION n'est pas configurée (voir newsletter.js) ============ -->
-  <section class="nl-section" id="newsletter" hidden aria-labelledby="nl-title">
+  <section class="nl-section wrap sec" id="newsletter" hidden aria-labelledby="nl-title">
     <div class="nl-inner">
       <div class="nl-copy">
-        <h3 id="nl-title" data-i18n="nl_title">⚽ Sois averti pour le 1000e but</h3>
-        <p data-i18n="nl_sub">Une alerte e-mail le jour J — et rien d'autre. Pas de spam, désinscription en un clic.</p>
+        <h3 id="nl-title" data-i18n="nl_title">Prévenez-moi pour le 1000e but</h3>
+        <p data-i18n="nl_sub">Un seul e-mail, le jour J. Pas de spam, désinscription en un clic.</p>
       </div>
       <form class="nl-form">
-        <input type="email" required autocomplete="email" placeholder="Ton adresse e-mail" data-i18n-ph="nl_ph" aria-label="E-mail">
+        <input type="email" required autocomplete="email" placeholder="Votre adresse e-mail" data-i18n-ph="nl_ph" aria-label="E-mail">
         <button type="submit" data-i18n="nl_btn">Me prévenir</button>
       </form>
-      <p class="nl-ok" role="status" data-i18n="nl_ok">Merci ! Vérifie ta boîte mail pour confirmer.</p>
+      <p class="nl-ok" role="status" data-i18n="nl_ok">Merci ! Vérifiez votre boîte mail pour confirmer.</p>
     </div>
   </section>
-
-  <!-- ============ FOOTER ============ -->
-  <footer>
-    <div class="foot-inner">
-      <div class="foot-brand">
-        <div class="logo">TO<b>1000</b>.com</div>
-        <p data-i18n="foot_brand">Le hub du football mondial et le compte à rebours live vers le 1000e but de Cristiano Ronaldo.</p>
-      </div>
-      <nav class="foot-nav" aria-label="Liens de pied de page">
-        <a href="#hero" data-i18n="nav_counter">Compteur</a>
-        <a href="#parcours" data-i18n="nav_journey">Parcours</a>
-        <a href="#match" data-i18n="nav_wc">Coupe du Monde</a>
-        <a href="#data" data-i18n="nav_stats">Stats</a>
-        <a href="#parcours" data-i18n="nav_records">Records</a>
-        <a href="/news.html" data-i18n="nav_news">News</a>
-        <a href="#data" data-i18n="nav_blog">Blog</a>
-        <a href="/about.html" data-i18n="nav_about">À propos</a>
-        <a href="/privacy.html" data-i18n="nav_privacy">Confidentialité</a>
-        <a href="/contact.html" data-i18n="nav_contact">Contact</a>
-      </nav>
-    </div>
-    <div class="foot-inner">
-      <p class="disclaimer" data-i18n-html="disclaimer">
-        Site de fans non officiel · Cristiano Ronaldo est une marque de Cristiano Ronaldo. Ce site n'est ni affilié, ni approuvé par le joueur, ses clubs ou la FIFA. Contenu éditorial à titre informatif.
-        <br>Photos : <a href="https://unsplash.com" rel="noopener">Unsplash</a>.
-      </p>
-    </div>
-  </footer>
 </main>
 
+<footer class="wrap foot">
+  <div class="foot-grid">
+    <a class="nameplate" href="/">TO1000<span class="dot">.</span></a>
+    <nav aria-label="Liens de pied de page">
+      <a href="/obrigado-cristiano/" data-i18n="nav_tribute">Obrigado, Cristiano</a>
+      <a href="#compteur" data-i18n="nav_counter">Le compteur</a>
+      <a href="/goals.html" data-i18n="nav_goals">Tous les buts</a>
+      <a href="/news.html" data-i18n="nav_news">Actualités</a>
+      <a href="/blog/" data-i18n="nav_blog">Blog</a>
+      <a href="/about.html" data-i18n="nav_about">À propos</a>
+      <a href="/privacy.html" data-i18n="nav_privacy">Confidentialité</a>
+      <a href="/contact.html" data-i18n="nav_contact">Contact</a>
+    </nav>
+  </div>
+  <p class="disclaimer" data-i18n-html="disclaimer">Site de fans non officiel · Cristiano Ronaldo est une marque de Cristiano Ronaldo. Ce site n'est ni affilié, ni approuvé par le joueur, ses clubs ou la FIFA. Contenu éditorial à titre informatif. Photos : Wikimedia Commons.</p>
+</footer>
+
+<script src="/js/goalgrid.js?v=20261105"></script>
 <script>
-  // Scroll-triggered reveals (per scroll container)
-  (function(){
-    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if(reduce){ document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('in')}); return; }
-    var root = document.querySelector('.scroller');
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target);} });
-    },{root:root,threshold:0.18});
-    document.querySelectorAll('.reveal').forEach(function(e){io.observe(e)});
-
-    // Subtle parallax on full-bleed backgrounds
-    var bgs = Array.prototype.slice.call(document.querySelectorAll('section.frame .bg'));
-    var ticking=false;
-    root.addEventListener('scroll',function(){
-      if(ticking) return; ticking=true;
-      requestAnimationFrame(function(){
-        bgs.forEach(function(bg){
-          var r = bg.parentElement.getBoundingClientRect();
-          var off = (r.top) * 0.06;
-          if(!bg.parentElement.id || bg.parentElement.id!=='hero'){
-            bg.style.transform = 'translateY('+ off.toFixed(1) +'px) scale(1.06)';
-          }
-        });
-        ticking=false;
-      });
-    },{passive:true});
-
-    // Nav active state on scroll
-    var navLinks = document.querySelectorAll('nav.main a');
-    var sections = document.querySelectorAll('section.frame');
-    var navIO = new IntersectionObserver(function(entries){
-      entries.forEach(function(en){
-        if(en.isIntersecting){
-          var id = en.target.id;
-          navLinks.forEach(function(a){
-            a.classList.toggle('active', a.getAttribute('href')==='#'+id);
-          });
-        }
-      });
-    },{root:root,threshold:0.5});
-    sections.forEach(function(s){navIO.observe(s)});
-  })();
-</script>
-
-<script>
-/* ===== i18n (FR/EN/ES/AR) + LIVE WIRING ===== */
+/* ===== i18n (FR/EN/ES/AR) + données live ===== */
 (function(){
   var I18N = {
-    fr:{brand_tag:"Le hub du football · le compte à rebours du 1000e but de Cristiano Ronaldo",
-      nav_counter:"Compteur",nav_journey:"Parcours",nav_wc:"Coupe du Monde",nav_stats:"Stats",nav_records:"Records",nav_news:"News",nav_blog:"Blog",
-      hero_eyebrow:"Cristiano Ronaldo · vers l’histoire",nav_goals:"Tous les buts",hero_live:"Live · Buts carrière",
-      hero_h1:"Compte à rebours vers le 1000e but de Cristiano Ronaldo",scroll:"Défiler",
-      goals_unit:"buts",rem_rest:"avant l’histoire",foot_prog:"Progression",foot_last:"Dernier but vs",live:"Live",
-      m_comp:"UEFA Nations League",m_foot:"Club et sélection : chaque rencontre de Cristiano Ronaldo, heure par heure, sur To1000",
-      m_kicker:"Prochain rendez-vous",lm_kicker:"Dernier match",lm_scored:"Ronaldo a marqué",m_title:'Chaque match <span class="gold">compte double</span>',
-      m_desc:"Chaque rencontre peut rapprocher Cristiano Ronaldo du cap des 1000 buts — avec son club comme avec sa sélection. Résultat du dernier match, date du prochain : nous suivons les deux, but par but, minute par minute.",
-      m_btn1:"Suivre le compteur",m_btn2:"Toute l’actu Mondial",
-      p_kicker:"Le parcours",p_title:'Cinq clubs et le Portugal. <span style="color:var(--gold)">Une légende.</span>',
-      era_sporting:"Lisbonne · les débuts",era_manu:"Premier League · le sacre",era_real:"Liga · l’ère galactique",era_juve:"Serie A · l’Italie",era_nassr:"Saudi Pro League · aujourd’hui",era_por:"Sélection · record mondial",
-      d_kicker:"Les chiffres & l’actu",d_title:'Tout le football, <span style="color:var(--gold)">une obsession</span>',
-      stat_career:"Buts en carrière",stat_ballon:"Ballons d’Or",stat_goal:"L’objectif",stat_ratio:"Ratio buts / match",
-      news_h3:"Dernières news football",news_all:"Toutes les news →",news_promise:"On lit la presse pour vous — l’essentiel, sourcé, sans blabla.",news_orig:"Lire l’article →",news_verified:"Vérifié",
-      foot_brand:"Le hub du football mondial et le compte à rebours live vers le 1000e but de Cristiano Ronaldo.",
-      nav_about:"À propos",nav_privacy:"Confidentialité",nav_contact:"Contact",
-      nl_title:"⚽ Sois averti pour le 1000e but",nl_sub:"Une alerte e-mail le jour J — et rien d'autre. Pas de spam, désinscription en un clic.",nl_ph:"Ton adresse e-mail",nl_btn:"Me prévenir",nl_ok:"Merci ! Vérifie ta boîte mail pour confirmer.",
-      disclaimer:'Site de fans non officiel · Cristiano Ronaldo est une marque de Cristiano Ronaldo. Ce site n’est ni affilié, ni approuvé par le joueur, ses clubs ou la FIFA. Contenu éditorial à titre informatif.<br>Photos : <a href="https://unsplash.com" rel="noopener">Unsplash</a> · Wikimedia Commons.'},
-    en:{brand_tag:"The football hub · the countdown to Cristiano Ronaldo’s 1000th goal",
-      nav_counter:"Counter",nav_journey:"Journey",nav_wc:"World Cup",nav_stats:"Stats",nav_records:"Records",nav_news:"News",nav_blog:"Blog",
-      hero_eyebrow:"Cristiano Ronaldo · toward history",nav_goals:"All goals",hero_live:"Live · Career goals",
-      hero_h1:"Countdown to Cristiano Ronaldo’s 1000th goal",scroll:"Scroll",
-      goals_unit:"goals",rem_rest:"from history",foot_prog:"Progress",foot_last:"Last goal vs",live:"Live",
-      m_comp:"UEFA Nations League",m_foot:"Club and country: every Cristiano Ronaldo fixture, hour by hour, on To1000",
-      m_kicker:"Next fixture",lm_kicker:"Last match",lm_scored:"Ronaldo scored",m_title:'Every match <span class="gold">counts twice</span>',
-      m_desc:"Every fixture can move Cristiano Ronaldo closer to 1000 career goals — for club and for country. Last result, next kick-off: we track both, goal by goal, minute by minute.",
-      m_btn1:"Follow the counter",m_btn2:"All World Cup news",
-      p_kicker:"The journey",p_title:'Five clubs and Portugal. <span style="color:var(--gold)">One legend.</span>',
-      era_sporting:"Lisbon · the beginning",era_manu:"Premier League · the rise",era_real:"La Liga · the galactic era",era_juve:"Serie A · Italy",era_nassr:"Saudi Pro League · today",era_por:"National team · world record",
-      d_kicker:"Numbers & news",d_title:'All of football, <span style="color:var(--gold)">one obsession</span>',
-      stat_career:"Career goals",stat_ballon:"Ballon d’Or awards",stat_goal:"The target",stat_ratio:"Goals per match",
-      news_h3:"Latest football news",news_all:"All news →",news_promise:"We read the press for you — the essentials, sourced, no fluff.",news_orig:"Read article →",news_verified:"Verified",
-      foot_brand:"The global football hub and the live countdown to Cristiano Ronaldo’s 1000th goal.",
-      nav_about:"About",nav_privacy:"Privacy",nav_contact:"Contact",
-      nl_title:"⚽ Get alerted for the 1000th goal",nl_sub:"One email alert on the big day — nothing else. No spam, one-click unsubscribe.",nl_ph:"Your email address",nl_btn:"Notify me",nl_ok:"Thanks! Check your inbox to confirm.",
-      disclaimer:'Unofficial fan site · Cristiano Ronaldo is a trademark of Cristiano Ronaldo. This site is not affiliated with or endorsed by the player, his clubs or FIFA. Editorial content for informational purposes.<br>Photos: <a href="https://unsplash.com" rel="noopener">Unsplash</a> · Wikimedia Commons.'},
-    es:{brand_tag:"El hub del fútbol · la cuenta atrás hacia el gol 1000 de Cristiano Ronaldo",
-      nav_counter:"Contador",nav_journey:"Trayectoria",nav_wc:"Mundial",nav_stats:"Estadísticas",nav_records:"Récords",nav_news:"Noticias",nav_blog:"Blog",
-      hero_eyebrow:"Cristiano Ronaldo · hacia la historia",nav_goals:"Todos los goles",hero_live:"En vivo · Goles de carrera",
-      hero_h1:"Cuenta atrás hacia el gol 1000 de Cristiano Ronaldo",scroll:"Desplázate",
-      goals_unit:"goles",rem_rest:"para la historia",foot_prog:"Progreso",foot_last:"Último gol vs",live:"En vivo",
-      m_comp:"UEFA Nations League",m_foot:"Club y selección: cada partido de Cristiano Ronaldo, hora a hora, en To1000",
-      m_kicker:"Próxima cita",lm_kicker:"Último partido",lm_scored:"Ronaldo marcó",m_title:'Cada partido <span class="gold">cuenta doble</span>',
-      m_desc:"Cada partido puede acercar a Cristiano Ronaldo a los 1000 goles — con su club y con su selección. Resultado del último, fecha del próximo: seguimos ambos, gol a gol, minuto a minuto.",
-      m_btn1:"Seguir el contador",m_btn2:"Toda la actualidad del Mundial",
-      p_kicker:"La trayectoria",p_title:'Cinco clubes y Portugal. <span style="color:var(--gold)">Una leyenda.</span>',
-      era_sporting:"Lisboa · los inicios",era_manu:"Premier League · la consagración",era_real:"La Liga · la era galáctica",era_juve:"Serie A · Italia",era_nassr:"Saudi Pro League · hoy",era_por:"Selección · récord mundial",
-      d_kicker:"Cifras y noticias",d_title:'Todo el fútbol, <span style="color:var(--gold)">una obsesión</span>',
-      stat_career:"Goles de carrera",stat_ballon:"Balones de Oro",stat_goal:"El objetivo",stat_ratio:"Goles por partido",
-      news_h3:"Últimas noticias de fútbol",news_all:"Todas las noticias →",news_promise:"Leemos la prensa por ti — lo esencial, con fuentes, sin relleno.",news_orig:"Leer artículo →",news_verified:"Verificado",
-      foot_brand:"El hub del fútbol mundial y la cuenta atrás en vivo hacia el gol 1000 de Cristiano Ronaldo.",
-      nav_about:"Quiénes somos",nav_privacy:"Privacidad",nav_contact:"Contacto",
-      nl_title:"⚽ Recibe la alerta del gol 1000",nl_sub:"Un solo aviso por e-mail el gran día — nada más. Sin spam, baja en un clic.",nl_ph:"Tu correo electrónico",nl_btn:"Avísame",nl_ok:"¡Gracias! Revisa tu correo para confirmar.",
-      disclaimer:'Sitio de fans no oficial · Cristiano Ronaldo es una marca de Cristiano Ronaldo. Este sitio no está afiliado ni respaldado por el jugador, sus clubes o la FIFA. Contenido editorial con fines informativos.<br>Fotos: <a href="https://unsplash.com" rel="noopener">Unsplash</a> · Wikimedia Commons.'},
-    ar:{brand_tag:"مركز كرة القدم · العد التنازلي نحو الهدف الألف لكريستيانو رونالدو",
-      nav_counter:"العدّاد",nav_journey:"المسيرة",nav_wc:"كأس العالم",nav_stats:"إحصائيات",nav_records:"الأرقام القياسية",nav_news:"الأخبار",nav_blog:"المدونة",
-      hero_eyebrow:"كريستيانو رونالدو · نحو التاريخ",nav_goals:"كل الأهداف",hero_live:"مباشر · أهداف المسيرة",
-      hero_h1:"العد التنازلي نحو الهدف الألف لكريستيانو رونالدو",scroll:"مرّر",
-      goals_unit:"هدف",rem_rest:"تفصله عن التاريخ",foot_prog:"التقدّم",foot_last:"آخر هدف ضد",live:"مباشر",
-      m_comp:"UEFA Nations League",m_foot:"النادي والمنتخب: كل مباراة لكريستيانو رونالدو، ساعة بساعة، على To1000",
-      m_kicker:"الموعد القادم",lm_kicker:"المباراة الأخيرة",lm_scored:"رونالدو سجّل",m_title:'كل مباراة <span class="gold">تُحتسب مرّتين</span>',
-      m_desc:"كل مباراة قد تقرّب كريستيانو رونالدو من حاجز الألف هدف — مع ناديه ومع منتخبه. نتيجة المباراة الأخيرة وموعد القادمة: نتابع الاثنتين، هدفاً بهدف، دقيقة بدقيقة.",
-      m_btn1:"تابع العدّاد",m_btn2:"كل أخبار المونديال",
-      p_kicker:"المسيرة",p_title:'خمسة أندية والبرتغال. <span style="color:var(--gold)">أسطورة واحدة.</span>',
-      era_sporting:"لشبونة · البداية",era_manu:"البريمييرليغ · التتويج",era_real:"الليغا · حقبة الغالاكتيكوس",era_juve:"الدوري الإيطالي · إيطاليا",era_nassr:"الدوري السعودي · الحاضر",era_por:"المنتخب · رقم قياسي عالمي",
-      d_kicker:"الأرقام والأخبار",d_title:'كل كرة القدم، <span style="color:var(--gold)">هوسٌ واحد</span>',
-      stat_career:"أهداف المسيرة",stat_ballon:"الكرات الذهبية",stat_goal:"الهدف",stat_ratio:"معدّل الأهداف لكل مباراة",
-      news_h3:"آخر أخبار كرة القدم",news_all:"كل الأخبار →",news_promise:"نقرأ الصحافة نيابةً عنك — الأساسي، موثّق، بلا حشو.",news_orig:"اقرأ المقال →",news_verified:"موثّق",
-      foot_brand:"مركز كرة القدم العالمي والعد التنازلي المباشر نحو الهدف الألف لكريستيانو رونالدو.",
-      nav_about:"من نحن",nav_privacy:"الخصوصية",nav_contact:"اتصل بنا",
-      nl_title:"⚽ كن أول من يعلم بالهدف الألف",nl_sub:"تنبيه واحد عبر البريد الإلكتروني يوم الحدث — لا أكثر. بلا إزعاج، وإلغاء الاشتراك بنقرة واحدة.",nl_ph:"بريدك الإلكتروني",nl_btn:"أعلمني",nl_ok:"شكراً! تحقق من بريدك لتأكيد الاشتراك.",
-      disclaimer:'موقع جماهيري غير رسمي · كريستيانو رونالدو علامة تجارية تخص كريستيانو رونالدو. هذا الموقع غير مرتبط باللاعب أو أنديته أو الفيفا ولا يحظى بموافقتهم. محتوى تحريري لأغراض إعلامية.<br>الصور: <a href="https://unsplash.com" rel="noopener">Unsplash</a> · Wikimedia Commons.'}
+    fr:{skip:"Aller au compteur",brand_tag:"Le football, chaque jour. Et le compte à rebours du 1000e but de Cristiano Ronaldo.",count_lbl:"buts sur 1000",
+      nav_home:"À la une",nav_tribute:"Obrigado, Cristiano",nav_counter:"Le compteur",nav_goals:"Tous les buts",nav_news:"Actualités",nav_wc:"Coupe du monde",nav_journey:"Parcours",nav_blog:"Blog",nav_about:"À propos",nav_privacy:"Confidentialité",nav_contact:"Contact",
+      flash_lbl:"Édition spéciale",flash_txt:"Cristiano Ronaldo quitte la sélection portugaise : notre hommage →",
+      hero_h1:"Compte à rebours vers le 1000e but de Cristiano Ronaldo",
+      une_kicker:"Sélection · 5 novembre 2026",une_sf:"Après 23 ans, 234 matches et 146 buts, Cristiano Ronaldo quitte la sélection portugaise. Il rend le maillot n°7 et garde un objectif : 1000.",
+      une_btn:"Lire l'hommage",une_btn2:"Où en est le compteur",une_alt:"Cristiano Ronaldo sous le maillot du Portugal",une_cap:"Coupe du monde 2022, Qatar. Photo : Wikimedia Commons.",
+      f_caps:"sélections, record mondial",f_goals:"buts en sélection, record mondial",f_titles:"titres : Euro 2016, Ligues des nations 2019 et 2025",f_wc:"Coupes du monde, un but dans chacune",
+      c_title:"Le compteur",c_all:"Les buts un par un →",c_note:"Chaque point ci-dessous est un but. Depuis le 5 novembre, les 146 points rouges ne bougeront plus : les derniers buts viendront d'Al Nassr.",
+      rem_line:"Il en reste <b>{n}</b>.",rem_one:"Plus qu'<b>un</b>.",rem_done:"<b>1000.</b> C'est fait.",last_goal:"Dernier but",vs:"contre",goals_unit:"buts",
+      lg_eu:"en Europe (Sporting, Manchester United, Real Madrid, Juventus)",lg_por:"avec le Portugal, définitif",lg_nassr:"avec Al Nassr, en cours",lg_todo:"à marquer",
+      m_title:"Les matches",m_btn2:"Coupe du monde →",m_kicker:"Prochain match",lm_kicker:"Dernier match",lm_scored:"Ronaldo a marqué",
+      p_title:"La fiche : cinq clubs et le Portugal",th_team:"Équipe",th_years:"Années",th_goals:"Buts",th_total:"Total",
+      era_sporting:"Lisbonne, les débuts",era_manu:"Premier League, deux passages",era_real:"Meilleur buteur de l'histoire du club",era_juve:"Serie A",era_nassr:"Saudi Pro League, aujourd'hui",era_por:"234 sélections · retraite le 5 nov. 2026",
+      news_h3:"Actualités",news_all:"Toutes les actualités →",news_promise:"On lit la presse pour vous : l'essentiel, sourcé, sans blabla.",
+      nl_title:"Prévenez-moi pour le 1000e but",nl_sub:"Un seul e-mail, le jour J. Pas de spam, désinscription en un clic.",nl_ph:"Votre adresse e-mail",nl_btn:"Me prévenir",nl_ok:"Merci ! Vérifiez votre boîte mail pour confirmer.",
+      disclaimer:"Site de fans non officiel · Cristiano Ronaldo est une marque de Cristiano Ronaldo. Ce site n'est ni affilié, ni approuvé par le joueur, ses clubs ou la FIFA. Contenu éditorial à titre informatif. Photos : Wikimedia Commons."},
+    en:{skip:"Skip to the counter",brand_tag:"Football, every day. And the countdown to Cristiano Ronaldo's 1000th goal.",count_lbl:"goals of 1000",
+      nav_home:"Front page",nav_tribute:"Obrigado, Cristiano",nav_counter:"The counter",nav_goals:"All goals",nav_news:"News",nav_wc:"World Cup",nav_journey:"Career",nav_blog:"Blog",nav_about:"About",nav_privacy:"Privacy",nav_contact:"Contact",
+      flash_lbl:"Special edition",flash_txt:"Cristiano Ronaldo retires from international football: our tribute →",
+      hero_h1:"Countdown to Cristiano Ronaldo's 1000th goal",
+      une_kicker:"National team · 5 November 2026",une_sf:"After 23 years, 234 matches and 146 goals, Cristiano Ronaldo leaves the Portugal team. He hands back the No. 7 shirt and keeps one target: 1000.",
+      une_btn:"Read the tribute",une_btn2:"Where the counter stands",une_alt:"Cristiano Ronaldo in Portugal's shirt",une_cap:"2022 World Cup, Qatar. Photo: Wikimedia Commons.",
+      f_caps:"caps, a world record",f_goals:"international goals, a world record",f_titles:"titles: Euro 2016, Nations League 2019 and 2025",f_wc:"World Cups, a goal in every one",
+      c_title:"The counter",c_all:"Every goal →",c_note:"Each dot below is a goal. Since 5 November the 146 red dots are final: the last goals will come for Al Nassr.",
+      rem_line:"<b>{n}</b> to go.",rem_one:"<b>One</b> to go.",rem_done:"<b>1000.</b> Done.",last_goal:"Last goal",vs:"vs",goals_unit:"goals",
+      lg_eu:"in Europe (Sporting, Manchester United, Real Madrid, Juventus)",lg_por:"for Portugal, final",lg_nassr:"for Al Nassr, ongoing",lg_todo:"to go",
+      m_title:"Fixtures",m_btn2:"World Cup →",m_kicker:"Next match",lm_kicker:"Last match",lm_scored:"Ronaldo scored",
+      p_title:"The record: five clubs and Portugal",th_team:"Team",th_years:"Years",th_goals:"Goals",th_total:"Total",
+      era_sporting:"Lisbon, the beginning",era_manu:"Premier League, two spells",era_real:"The club's all-time top scorer",era_juve:"Serie A",era_nassr:"Saudi Pro League, today",era_por:"234 caps · retired 5 Nov 2026",
+      news_h3:"News",news_all:"All news →",news_promise:"We read the press for you: the essentials, sourced, no fluff.",
+      nl_title:"Tell me when he hits 1000",nl_sub:"One email on the day. No spam, one-click unsubscribe.",nl_ph:"Your email address",nl_btn:"Notify me",nl_ok:"Thanks! Check your inbox to confirm.",
+      disclaimer:"Unofficial fan site · Cristiano Ronaldo is a trademark of Cristiano Ronaldo. This site is not affiliated with or endorsed by the player, his clubs or FIFA. Editorial content for information. Photos: Wikimedia Commons."},
+    es:{skip:"Ir al contador",brand_tag:"Fútbol, cada día. Y la cuenta atrás hacia el gol 1000 de Cristiano Ronaldo.",count_lbl:"goles de 1000",
+      nav_home:"Portada",nav_tribute:"Obrigado, Cristiano",nav_counter:"El contador",nav_goals:"Todos los goles",nav_news:"Noticias",nav_wc:"Mundial",nav_journey:"Trayectoria",nav_blog:"Blog",nav_about:"Quiénes somos",nav_privacy:"Privacidad",nav_contact:"Contacto",
+      flash_lbl:"Edición especial",flash_txt:"Cristiano Ronaldo deja la selección portuguesa: nuestro homenaje →",
+      hero_h1:"Cuenta atrás hacia el gol 1000 de Cristiano Ronaldo",
+      une_kicker:"Selección · 5 de noviembre de 2026",une_sf:"Tras 23 años, 234 partidos y 146 goles, Cristiano Ronaldo deja la selección portuguesa. Devuelve la camiseta n.º 7 y conserva un objetivo: 1000.",
+      une_btn:"Leer el homenaje",une_btn2:"Cómo va el contador",une_alt:"Cristiano Ronaldo con la camiseta de Portugal",une_cap:"Mundial 2022, Catar. Foto: Wikimedia Commons.",
+      f_caps:"partidos, récord mundial",f_goals:"goles con la selección, récord mundial",f_titles:"títulos: Euro 2016, Nations League 2019 y 2025",f_wc:"Mundiales, con gol en todos",
+      c_title:"El contador",c_all:"Gol a gol →",c_note:"Cada punto es un gol. Desde el 5 de noviembre, los 146 puntos rojos ya no se moverán: los últimos goles llegarán con el Al Nassr.",
+      rem_line:"Faltan <b>{n}</b>.",rem_one:"Falta <b>uno</b>.",rem_done:"<b>1000.</b> Hecho.",last_goal:"Último gol",vs:"ante",goals_unit:"goles",
+      lg_eu:"en Europa (Sporting, Manchester United, Real Madrid, Juventus)",lg_por:"con Portugal, definitivos",lg_nassr:"con el Al Nassr, en curso",lg_todo:"por marcar",
+      m_title:"Partidos",m_btn2:"Mundial →",m_kicker:"Próximo partido",lm_kicker:"Último partido",lm_scored:"Ronaldo marcó",
+      p_title:"La ficha: cinco clubes y Portugal",th_team:"Equipo",th_years:"Años",th_goals:"Goles",th_total:"Total",
+      era_sporting:"Lisboa, los inicios",era_manu:"Premier League, dos etapas",era_real:"Máximo goleador de la historia del club",era_juve:"Serie A",era_nassr:"Saudi Pro League, hoy",era_por:"234 partidos · retirado el 5 nov. 2026",
+      news_h3:"Noticias",news_all:"Todas las noticias →",news_promise:"Leemos la prensa por ti: lo esencial, con fuentes, sin relleno.",
+      nl_title:"Avísame del gol 1000",nl_sub:"Un solo correo, el gran día. Sin spam, baja en un clic.",nl_ph:"Tu correo electrónico",nl_btn:"Avísame",nl_ok:"¡Gracias! Revisa tu correo para confirmar.",
+      disclaimer:"Sitio de fans no oficial · Cristiano Ronaldo es una marca de Cristiano Ronaldo. Este sitio no está afiliado ni respaldado por el jugador, sus clubes o la FIFA. Contenido editorial informativo. Fotos: Wikimedia Commons."},
+    ar:{skip:"انتقل إلى العدّاد",brand_tag:"كرة القدم، كل يوم. والعد التنازلي نحو الهدف الألف لكريستيانو رونالدو.",count_lbl:"هدفاً من 1000",
+      nav_home:"الرئيسية",nav_tribute:"شكراً كريستيانو",nav_counter:"العدّاد",nav_goals:"كل الأهداف",nav_news:"الأخبار",nav_wc:"كأس العالم",nav_journey:"المسيرة",nav_blog:"المدونة",nav_about:"من نحن",nav_privacy:"الخصوصية",nav_contact:"اتصل بنا",
+      flash_lbl:"عدد خاص",flash_txt:"كريستيانو رونالدو يعتزل اللعب الدولي: تكريمنا ←",
+      hero_h1:"العد التنازلي نحو الهدف الألف لكريستيانو رونالدو",
+      une_kicker:"المنتخب · 5 نوفمبر 2026",une_sf:"بعد 23 عاماً و234 مباراة و146 هدفاً، يغادر كريستيانو رونالدو منتخب البرتغال. يعيد القميص رقم 7 ويحتفظ بهدف واحد: الألف.",
+      une_btn:"اقرأ التكريم",une_btn2:"أين وصل العدّاد",une_alt:"كريستيانو رونالدو بقميص البرتغال",une_cap:"كأس العالم 2022، قطر. الصورة: ويكيميديا كومنز.",
+      f_caps:"مباراة دولية، رقم قياسي عالمي",f_goals:"هدفاً دولياً، رقم قياسي عالمي",f_titles:"ألقاب: يورو 2016، دوري الأمم 2019 و2025",f_wc:"نسخ من كأس العالم، سجّل في كلّ منها",
+      c_title:"العدّاد",c_all:"الأهداف واحداً واحداً ←",c_note:"كل نقطة هنا هدف. منذ 5 نوفمبر، النقاط الحمراء الـ146 لن تتغيّر: الأهداف الأخيرة ستأتي مع النصر.",
+      rem_line:"تبقّى <b>{n}</b>.",rem_one:"تبقّى <b>هدف واحد</b>.",rem_done:"<b>1000.</b> تحقّق.",last_goal:"آخر هدف",vs:"ضد",goals_unit:"هدف",
+      lg_eu:"في أوروبا (سبورتينغ، مانشستر يونايتد، ريال مدريد، يوفنتوس)",lg_por:"مع البرتغال، نهائية",lg_nassr:"مع النصر، مستمرة",lg_todo:"متبقية",
+      m_title:"المباريات",m_btn2:"كأس العالم ←",m_kicker:"المباراة القادمة",lm_kicker:"المباراة الأخيرة",lm_scored:"رونالدو سجّل",
+      p_title:"البطاقة: خمسة أندية والبرتغال",th_team:"الفريق",th_years:"السنوات",th_goals:"الأهداف",th_total:"المجموع",
+      era_sporting:"لشبونة، البداية",era_manu:"البريمييرليغ، فترتان",era_real:"الهدّاف التاريخي للنادي",era_juve:"الدوري الإيطالي",era_nassr:"الدوري السعودي، الحاضر",era_por:"234 مباراة · اعتزل في 5 نوفمبر 2026",
+      news_h3:"الأخبار",news_all:"كل الأخبار ←",news_promise:"نقرأ الصحافة نيابةً عنك: الأساسي، موثّق، بلا حشو.",
+      nl_title:"أعلمني بالهدف الألف",nl_sub:"رسالة واحدة يوم الحدث. بلا إزعاج، وإلغاء الاشتراك بنقرة.",nl_ph:"بريدك الإلكتروني",nl_btn:"أعلمني",nl_ok:"شكراً! تحقّق من بريدك لتأكيد الاشتراك.",
+      disclaimer:"موقع جماهيري غير رسمي · كريستيانو رونالدو علامة تجارية تخص كريستيانو رونالدو. هذا الموقع غير مرتبط باللاعب أو أنديته أو الفيفا ولا يحظى بموافقتهم. محتوى تحريري لأغراض إعلامية. الصور: ويكيميديا كومنز."}
   };
   var SUP=['fr','en','es','ar'];
   function detect(){
@@ -1030,188 +605,104 @@
   function t(k){var d=I18N[LANG]||I18N.en; return d[k]!=null?d[k]:(I18N.en[k]!=null?I18N.en[k]:k);}
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 
-  var TEAM_FLAGS={portugal:'pt',wales:'gb-wls','pays de galles':'gb-wls',colombie:'co',colombia:'co',france:'fr','brésil':'br',bresil:'br',brazil:'br',argentine:'ar',argentina:'ar',espagne:'es',spain:'es','españa':'es',allemagne:'de',germany:'de',angleterre:'gb-eng',england:'gb-eng',maroc:'ma',morocco:'ma','états-unis':'us','etats-unis':'us',usa:'us','united states':'us','pays-bas':'nl',netherlands:'nl',belgique:'be',belgium:'be',uruguay:'uy',suisse:'ch',switzerland:'ch',croatie:'hr',croatia:'hr',italie:'it',italy:'it',mexique:'mx',mexico:'mx',canada:'ca',japon:'jp',japan:'jp',"corée du sud":'kr','south korea':'kr','sénégal':'sn',senegal:'sn',"côte d'ivoire":'ci','ivory coast':'ci','ouzbékistan':'uz',uzbekistan:'uz','rd congo':'cd','dr congo':'cd',ghana:'gh',nigeria:'ng',cameroun:'cm',cameroon:'cm','arabie saoudite':'sa','saudi arabia':'sa',qatar:'qa',australie:'au',australia:'au'};
-  function setFlag(el,team){if(!el)return;var iso=TEAM_FLAGS[(team||'').toLowerCase().trim()];if(iso){el.style.backgroundImage="url('https://flagcdn.com/w160/"+iso+".png')";el.textContent='';el.classList.add('crest-flag');el.setAttribute('role','img');el.setAttribute('aria-label',team);}else{el.classList.remove('crest-flag');el.style.backgroundImage='';el.textContent=(team||'').slice(0,2).toUpperCase();}}
-  (function(){var hb=document.getElementById('hamb'),mm=document.getElementById('mobileMenu');if(!hb||!mm)return;
-    function setOpen(open){if(open){mm.removeAttribute('hidden');hb.setAttribute('aria-expanded','true');}else{mm.setAttribute('hidden','');hb.setAttribute('aria-expanded','false');}}
-    hb.addEventListener('click',function(){setOpen(mm.hasAttribute('hidden'));});
-    mm.addEventListener('click',function(e){if(e.target.closest('a'))setOpen(false);});
-    document.addEventListener('keydown',function(e){if(e.key==='Escape')setOpen(false);});})();
   function applyStatic(){
     var H=document.documentElement; H.lang=LANG; H.dir=(LANG==='ar')?'rtl':'ltr';
     document.querySelectorAll('[data-i18n]').forEach(function(e){var v=t(e.getAttribute('data-i18n')); if(v!=null)e.textContent=v;});
     document.querySelectorAll('[data-i18n-html]').forEach(function(e){var v=t(e.getAttribute('data-i18n-html')); if(v!=null)e.innerHTML=v;});
     document.querySelectorAll('[data-i18n-ph]').forEach(function(e){var v=t(e.getAttribute('data-i18n-ph')); if(v!=null)e.setAttribute('placeholder',v);});
+    document.querySelectorAll('[data-i18n-alt]').forEach(function(e){var v=t(e.getAttribute('data-i18n-alt')); if(v!=null)e.setAttribute('alt',v);});
     document.querySelectorAll('.lang-sw button').forEach(function(b){var on=b.getAttribute('data-l')===LANG; b.classList.toggle('active',on); b.setAttribute('aria-pressed',on?'true':'false');});
+    var d=document.getElementById('today');
+    if(d){try{var s=new Date().toLocaleDateString(LANG,{weekday:'long',day:'numeric',month:'long',year:'numeric'});d.textContent=s.charAt(0).toUpperCase()+s.slice(1);}catch(e){}}
   }
   // Noms d'équipes tels qu'ESPN les livre (anglais) → localisation.
-  // en = tel quel ; toute équipe absente de la table s'affiche telle quelle,
-  // donc un adversaire inconnu ne casse jamais l'affichage. Les clubs
-  // saoudiens gardent leur forme latine en fr/en/es et prennent leur nom
-  // officiel en arabe.
+  // Toute équipe absente de la table s'affiche telle quelle.
   var TEAM_I18N={
-    'Portugal':{ar:'البرتغال'},
-    'Wales':{fr:'Pays de Galles',es:'Gales',ar:'ويلز'},
-    'Spain':{fr:'Espagne',es:'España',ar:'إسبانيا'},
-    'France':{es:'Francia',ar:'فرنسا'},
-    'Germany':{fr:'Allemagne',es:'Alemania',ar:'ألمانيا'},
-    'England':{fr:'Angleterre',es:'Inglaterra',ar:'إنجلترا'},
-    'Italy':{fr:'Italie',es:'Italia',ar:'إيطاليا'},
-    'Netherlands':{fr:'Pays-Bas',es:'Países Bajos',ar:'هولندا'},
-    'Belgium':{fr:'Belgique',es:'Bélgica',ar:'بلجيكا'},
-    'Croatia':{fr:'Croatie',es:'Croacia',ar:'كرواتيا'},
-    'Denmark':{fr:'Danemark',es:'Dinamarca',ar:'الدنمارك'},
-    'Switzerland':{fr:'Suisse',es:'Suiza',ar:'سويسرا'},
-    'Austria':{fr:'Autriche',es:'Austria',ar:'النمسا'},
-    'Poland':{fr:'Pologne',es:'Polonia',ar:'بولندا'},
-    'Sweden':{fr:'Suède',es:'Suecia',ar:'السويد'},
-    'Norway':{fr:'Norvège',es:'Noruega',ar:'النرويج'},
-    'Czechia':{fr:'Tchéquie',es:'Chequia',ar:'التشيك'},
-    'Scotland':{fr:'Écosse',es:'Escocia',ar:'اسكتلندا'},
-    'Republic of Ireland':{fr:'Irlande',es:'Irlanda',ar:'أيرلندا'},
-    'Ireland':{fr:'Irlande',es:'Irlanda',ar:'أيرلندا'},
-    'Turkey':{fr:'Turquie',es:'Turquía',ar:'تركيا'},
-    'Türkiye':{fr:'Turquie',es:'Turquía',ar:'تركيا'},
-    'Ukraine':{fr:'Ukraine',es:'Ucrania',ar:'أوكرانيا'},
-    'Serbia':{fr:'Serbie',es:'Serbia',ar:'صربيا'},
-    'Hungary':{fr:'Hongrie',es:'Hungría',ar:'المجر'},
-    'Greece':{fr:'Grèce',es:'Grecia',ar:'اليونان'},
-    'Slovakia':{fr:'Slovaquie',es:'Eslovaquia',ar:'سلوفاكيا'},
-    'Slovenia':{fr:'Slovénie',es:'Eslovenia',ar:'سلوفينيا'},
-    'Bosnia and Herzegovina':{fr:'Bosnie-Herzégovine',es:'Bosnia',ar:'البوسنة والهرسك'},
-    'Iceland':{fr:'Islande',es:'Islandia',ar:'آيسلندا'},
-    'Finland':{fr:'Finlande',es:'Finlandia',ar:'فنلندا'},
-    'Morocco':{fr:'Maroc',es:'Marruecos',ar:'المغرب'},
-    'Colombia':{fr:'Colombie',ar:'كولومبيا'},
-    'Armenia':{fr:'Arménie',es:'Armenia',ar:'أرمينيا'},
-    'Georgia':{fr:'Géorgie',es:'Georgia',ar:'جورجيا'},
-    'Luxembourg':{es:'Luxemburgo',ar:'لوكسمبورغ'},
-    'Al Nassr':{ar:'النصر'},
-    'Al Hilal':{ar:'الهلال'},
-    'Al Ittihad':{ar:'الاتحاد'},
-    'Al Ahli':{ar:'الأهلي'},
-    'Al Riyadh':{ar:'الرياض'},
-    'Al Fateh':{ar:'الفتح'},
-    'Al Shabab':{ar:'الشباب'},
-    'Al Taawoun':{ar:'التعاون'},
-    'Al Fayha':{ar:'الفيحاء'},
-    'Al Khaleej':{ar:'الخليج'},
-    'Al Ettifaq':{ar:'الاتفاق'},
-    'Al Qadsiah':{ar:'القادسية'},
-    'Al Okhdood':{ar:'الأخدود'},
-    'Al Raed':{ar:'الرائد'},
-    'Damac':{ar:'ضمك'},
-    'Al Kholood':{ar:'الخلود'},
-    'Al Hazem':{ar:'الحزم'},
-    'Al Wehda':{ar:'الوحدة'},
-    'Al Najma':{ar:'النجمة'},
-    'Neom':{ar:'نيوم'},
-    'NEOM':{ar:'نيوم'}
+    'Portugal':{ar:'البرتغال'},'Wales':{fr:'Pays de Galles',es:'Gales',ar:'ويلز'},'Spain':{fr:'Espagne',es:'España',ar:'إسبانيا'},
+    'France':{es:'Francia',ar:'فرنسا'},'Germany':{fr:'Allemagne',es:'Alemania',ar:'ألمانيا'},'England':{fr:'Angleterre',es:'Inglaterra',ar:'إنجلترا'},
+    'Italy':{fr:'Italie',es:'Italia',ar:'إيطاليا'},'Netherlands':{fr:'Pays-Bas',es:'Países Bajos',ar:'هولندا'},'Belgium':{fr:'Belgique',es:'Bélgica',ar:'بلجيكا'},
+    'Croatia':{fr:'Croatie',es:'Croacia',ar:'كرواتيا'},'Denmark':{fr:'Danemark',es:'Dinamarca',ar:'الدنمارك'},'Norway':{fr:'Norvège',es:'Noruega',ar:'النرويج'},
+    'Morocco':{fr:'Maroc',es:'Marruecos',ar:'المغرب'},'Colombia':{fr:'Colombie',ar:'كولومبيا'},
+    'Al Nassr':{ar:'النصر'},'Al Hilal':{ar:'الهلال'},'Al Ittihad':{ar:'الاتحاد'},'Al Ahli':{ar:'الأهلي'},'Al Riyadh':{ar:'الرياض'},
+    'Al Fateh':{ar:'الفتح'},'Al Shabab':{ar:'الشباب'},'Al Taawoun':{ar:'التعاون'},'Al Fayha':{ar:'الفيحاء'},'Al Khaleej':{ar:'الخليج'},
+    'Al Ettifaq':{ar:'الاتفاق'},'Al Qadsiah':{ar:'القادسية'},'Al Okhdood':{ar:'الأخدود'},'Al Raed':{ar:'الرائد'},'Damac':{ar:'ضمك'},
+    'Al Kholood':{ar:'الخلود'},'Al Hazem':{ar:'الحزم'},'Al Wehda':{ar:'الوحدة'},'Al Najma':{ar:'النجمة'},'Neom':{ar:'نيوم'},'NEOM':{ar:'نيوم'},
+    'Pakhtakor':{ar:'باختاكور'}
   };
   function teamName(n){if(!n)return n;var e=TEAM_I18N[n];return (e&&e[LANG])||n;}
-  // Compétitions : fr/en/es gardent le nom officiel (convention du site) ;
-  // l'arabe prend l'usage de la presse sportive arabe.
-  var COMP_AR={'Saudi Pro League':'الدوري السعودي للمحترفين',
-    'UEFA Nations League':'دوري الأمم الأوروبية',
-    'FIFA World Cup':'كأس العالم','Friendly':'مباراة ودية',
-    "King's Cup":'كأس الملك','Saudi Super Cup':'كأس السوبر السعودي',
-    'AFC Champions League Elite':'دوري أبطال آسيا للنخبة'};
+  var COMP_AR={'Saudi Pro League':'الدوري السعودي للمحترفين','UEFA Nations League':'دوري الأمم الأوروبية','FIFA World Cup':'كأس العالم','Friendly':'مباراة ودية',
+    "King's Cup":'كأس الملك','Saudi Super Cup':'كأس السوبر السعودي','AFC Champions League Elite':'دوري أبطال آسيا للنخبة'};
   function compName(c){if(!c)return c;return (LANG==='ar'&&COMP_AR[c])||c;}
+  // Une date seule (« 2026-10-29 ») est lue en UTC : on l'affiche en UTC,
+  // sinon un lecteur aux Amériques voit la veille.
+  function fmtDate(iso,opts){try{if(/^\d{4}-\d{2}-\d{2}$/.test(iso)){opts=Object.assign({timeZone:'UTC'},opts);}return new Date(iso).toLocaleDateString(LANG,opts);}catch(e){return '';}}
+
   function renderStats(){
     if(!STATS)return; var s=STATS, goals=s.goals, target=s.target||1000, rem=(s.remaining!=null?s.remaining:target-goals);
-    var pct=goals/target*100, sep=(LANG==='en'?'.':','), pctstr=pct.toFixed(1).replace('.',sep);
     document.querySelectorAll('.ch-num').forEach(function(e){e.textContent=goals;e.setAttribute('aria-label',goals+' '+t('goals_unit'));});
-    var meta=document.querySelector('.ch-meta'); if(meta)meta.innerHTML='<b>'+rem+' '+t('goals_unit')+'</b> '+t('rem_rest');
-    document.querySelectorAll('.ch-bar i').forEach(function(e){e.style.width=pct.toFixed(1)+'%';});
-    var bar=document.querySelector('.ch-bar'); if(bar)bar.setAttribute('aria-valuenow',goals);
+    var meta=document.querySelector('.ch-meta');
+    if(meta)meta.innerHTML=rem<=0?t('rem_done'):rem===1?t('rem_one'):t('rem_line').replace('{n}',rem);
+    var grid=document.getElementById('goalgrid');
+    if(grid&&window.To1000Grid){To1000Grid.render(grid,goals,target);grid.setAttribute('aria-label',goals+' / '+target);}
+    var parts=window.To1000Grid?To1000Grid.split(goals):[], nassr=parts.length?parts[parts.length-1].n:null;
+    document.querySelectorAll('[data-live="nassr"]').forEach(function(e){if(nassr!=null)e.textContent=nassr;});
+    document.querySelectorAll('[data-live="goals"]').forEach(function(e){e.textContent=goals;});
+    document.querySelectorAll('[data-live="rem"]').forEach(function(e){e.textContent=Math.max(0,rem);});
     var foot=document.querySelector('.ch-foot');
-    if(foot){var opp=s.last_goal_opponent?' · '+t('foot_last')+' <b>'+esc(teamName(s.last_goal_opponent))+'</b>'+(s.last_goal_competition?' · '+esc(compName(s.last_goal_competition)):''):''; foot.innerHTML=t('foot_prog')+' '+pctstr+' %'+opp;}
-    var st=document.querySelector('#data .stats-row .stat .n'); if(st)st.textContent=goals;
-    var pill=document.querySelector('.livepill'); if(pill)pill.innerHTML='<span class="dot" aria-hidden="true"></span>'+t('live')+' · '+goals;
-    var m=s.next_match;
-    // off_season / données absentes → on laisse la carte statique (tenue à
-    // jour côté serveur). L'ancien repli « matchs de Coupe du monde » datait
-    // du Mondial : tous finis → return silencieux → carte figée sur un match
-    // de juin. C'est ce bloc qui affichait encore Colombie–Portugal en août.
-    var fx=document.getElementById('fixture');
-    // Fix 2026-10-12 : sans prochain match connu, on masque la carte au lieu
-    // d'afficher un match passé figé dans le HTML (Portugal–Galles du 24/09).
-    if(fx)fx.hidden=!(m&&m.home_team);
-    if(m&&m.home_team){
-      var names=document.querySelectorAll('#match .vs .team .name'), crests=document.querySelectorAll('#match .vs .team .crest');
-      if(names.length===2){names[0].textContent=teamName(m.home_team);names[1].textContent=teamName(m.away_team);setFlag(crests[0],m.home_team);setFlag(crests[1],m.away_team);}
-      var comp=document.querySelector('#match .head .comp');
-      if(comp&&m.competition)comp.textContent=compName(m.competition);
-      var when=document.querySelector('#match .head .when');
-      if(when&&m.kickoff_utc){try{var d=new Date(m.kickoff_utc); when.textContent=d.toLocaleDateString(LANG,{day:'numeric',month:'long'})+' · '+d.toLocaleTimeString(LANG,{hour:'2-digit',minute:'2-digit'});}catch(e){}}
-      var fm=document.getElementById('fotmoblink');
-      if(m.fotmob_url){
-        if(!fm){fm=document.createElement('a');fm.id='fotmoblink';fm.rel='noopener';fm.target='_blank';
-          fm.style.cssText='display:inline-block;margin-top:12px;color:#f2c14e;border:1px solid #f2c14e;border-radius:6px;padding:7px 16px;text-decoration:none;font-weight:600;font-size:14px';
-          var host=document.querySelector('#match .vs'); if(host&&host.parentNode)host.parentNode.insertBefore(fm,host.nextSibling);}
-        fm.href=m.fotmob_url; fm.textContent='⚽ FotMob';
-      }else if(fm){fm.remove();}
+    if(foot&&s.last_goal_opponent){
+      var bits=[t('last_goal')+(s.last_goal_date?' · '+fmtDate(s.last_goal_date,{day:'numeric',month:'long',year:'numeric'}):''),t('vs')+' '+teamName(s.last_goal_opponent)];
+      if(s.last_goal_competition)bits.push(compName(s.last_goal_competition));
+      foot.textContent=bits.join(' · ');
+    }
+    document.querySelectorAll('.livepill').forEach(function(e){e.textContent=goals;});
+
+    var m=s.next_match, fx=document.getElementById('fixture');
+    if(fx){
+      fx.hidden=!(m&&m.home_team);
+      if(m&&m.home_team){
+        fx.querySelector('.fx-home').textContent=teamName(m.home_team);
+        fx.querySelector('.fx-away').textContent=teamName(m.away_team);
+        fx.querySelector('.fx-comp').textContent=compName(m.competition)||'';
+        var when=fx.querySelector('.fx-when');
+        if(m.kickoff_utc){try{var d=new Date(m.kickoff_utc);when.textContent=d.toLocaleDateString(LANG,{weekday:'long',day:'numeric',month:'long'})+', '+d.toLocaleTimeString(LANG,{hour:'2-digit',minute:'2-digit'});}catch(e){}}
+      }
     }
     renderLastMatch(s.last_match);
   }
-  // Le dernier résultat : présent dans stats.json depuis toujours, affiché
-  // nulle part. On ne montre le bloc que si le score est réellement connu —
-  // un cadre vide vaut moins que pas de cadre.
+  // On ne montre le dernier match que si le score est réellement connu.
   function renderLastMatch(lm){
     var box=document.getElementById('lastmatch'); if(!box)return;
     if(!lm||!lm.home_team||lm.score_home===null||lm.score_home===undefined){box.hidden=true;return;}
-    var teams=box.querySelector('.lm-teams'), score=box.querySelector('.lm-score'), meta=box.querySelector('.lm-meta');
-    if(teams)teams.textContent=teamName(lm.home_team)+' – '+teamName(lm.away_team);
-    if(score){
-      score.textContent=lm.score_home+'–'+lm.score_away;
-      score.className='lm-score '+(lm.result==='W'?'win':lm.result==='L'?'loss':'draw');
-    }
-    if(meta){
-      var bits=[];
-      if(lm.competition)bits.push(esc(compName(lm.competition)));
-      if(lm.date_iso){try{bits.push(new Date(lm.date_iso).toLocaleDateString(LANG,{day:'numeric',month:'long',year:'numeric'}));}catch(e){}}
-      if(lm.cr7_scored)bits.push(t('lm_scored')+(lm.cr7_minute?" ("+lm.cr7_minute+"')":''));
-      meta.textContent=bits.join(' · ');
-    }
+    box.querySelector('.lm-teams').textContent=teamName(lm.home_team)+' – '+teamName(lm.away_team);
+    var sc=box.querySelector('.lm-score'); sc.textContent=lm.score_home+'–'+lm.score_away;
+    sc.className='sc lm-score '+(lm.result==='W'?'win':lm.result==='L'?'loss':'draw');
+    var bits=[]; if(lm.competition)bits.push(compName(lm.competition));
+    if(lm.date_iso)bits.push(fmtDate(lm.date_iso,{day:'numeric',month:'long',year:'numeric'}));
+    if(lm.cr7_scored)bits.push(t('lm_scored')+(lm.cr7_minute?" ("+lm.cr7_minute+"')":''));
+    box.querySelector('.lm-meta').textContent=bits.join(' · ');
     box.hidden=false;
   }
   function relTime(iso){try{var diff=(new Date(iso).getTime()-Date.now())/1000,a=Math.abs(diff),rtf=new Intl.RelativeTimeFormat(LANG,{numeric:'auto'});
     if(a<3600)return rtf.format(Math.round(diff/60),'minute'); if(a<86400)return rtf.format(Math.round(diff/3600),'hour'); return rtf.format(Math.round(diff/86400),'day');}catch(e){return'';}}
-  // Même garde-fou qualité que /news : une traduction machine mot-à-mot ne
-  // doit JAMAIS atteindre le lecteur — la grille de la home était la fuite
-  // qui montrait encore « أول قبطان » après la correction de /news.
-  var NEWS_ENGINES_OK={'gemini-editor':1,'gemini-edi':1,'gemini':1,'redaction':1};
-  function pickNewsL(it,l){
-    return To1000Locale.pick(it,l);
-  }
+  // Même garde-fou qualité que /news : seule une version validée dans la
+  // langue du lecteur est affichée (To1000Locale.pick).
   function renderNews(){
-    if(!NEWS)return; var all=(NEWS.items||[]).filter(function(it){return !!pickNewsL(it,LANG);}), items=all.slice(0,6), grid=document.querySelector('.news-grid'); if(!grid)return;
-    if(!items.length){grid.innerHTML='<p>'+esc(To1000Locale.pending[LANG][2])+'</p>';return;}
-    // Le match de Ronaldo doit rester visible parmi les six cartes si une nouvelle
-    // information CR7 récente est disponible, même lors d'un afflux d'autres sports.
+    if(!NEWS)return; var grid=document.querySelector('.news-grid'); if(!grid)return;
+    var all=(NEWS.items||[]).filter(function(it){return !!To1000Locale.pick(it,LANG);}), items=all.slice(0,7);
+    if(!items.length){grid.innerHTML='<p class="meta" style="padding:16px 0">'+esc(To1000Locale.pending[LANG][2])+'</p>';return;}
+    // Une info CR7 récente reste visible même lors d'un afflux d'autres sujets.
     var recentCr7=all.find(function(it){return it.kind==='cr7'&&Date.now()-Date.parse(it.published_at)<86400000&&Date.parse(it.published_at)<=Date.now();});
     if(recentCr7&&items.indexOf(recentCr7)<0)items[items.length-1]=recentCr7;
-    grid.innerHTML=items.map(function(it){
-      var L=pickNewsL(it,LANG)||{};
-      var tr=L.title||it.title||'';
-      var sum=L.summary||it.summary||'';
-      var ps=it.primary_source||{}, sname=(ps.flag?ps.flag+' ':'')+(ps.name||'Football');
-      var sc=parseInt(it.source_count||(it.sources?it.sources.length:1),10)||1;
-      var more=sc>1?(' +'+(sc-1)):'';
+    grid.innerHTML=items.map(function(it,i){
+      var L=To1000Locale.pick(it,LANG)||{}, tr=L.title||it.title||'', sum=L.summary||it.summary||'';
+      var ps=it.primary_source||{}, sname=ps.name||'Football';
       var img=it.image_url||'/images/mockups/stadium-night.jpg';
-      var kind=it.kind==='cr7'?'<span class="kindtag">CR7</span>':'';
-      return '<a class="card in" href="/news/'+esc(it.id)+'.html?lang='+LANG+'">'
-        +'<span class="thumb" style="background-image:url(\''+String(img).replace(/\x27/g,'%27')+'\')" aria-hidden="true">'+kind+'</span>'
-        +'<span class="body">'
-          +'<span class="cat">'+esc(sname)+'</span>'
-          +'<h4>'+esc(tr)+'</h4>'
-          +(sum?'<span class="sum">'+esc(sum)+'</span>':'')
-          +'<span class="meta">'
-            +'<span class="src">'+esc(sname)+esc(more)+'</span>'
-            +'<time datetime="'+esc(it.published_at)+'">'+relTime(it.published_at)+'</time>'
-          +'</span>'
-          +'<span class="orig">'+t('news_orig')+'</span>'
-        +'</span></a>';
+      return '<a class="story'+(i===0?' lead':'')+'" href="/news/'+esc(it.id)+'.html?lang='+LANG+'">'
+        +'<span class="ph" style="background-image:url(\''+String(img).replace(/\x27/g,'%27')+'\')" aria-hidden="true"></span>'
+        +'<span><span class="label">'+esc(it.kind==='cr7'?'Cristiano Ronaldo':sname)+'</span>'
+        +'<h3>'+esc(tr)+'</h3>'
+        +(sum?'<span class="sum">'+esc(sum)+'</span>':'')
+        +'<span class="meta">'+esc(sname)+' · <time datetime="'+esc(it.published_at)+'">'+relTime(it.published_at)+'</time></span></span></a>';
     }).join('');
   }
   function applyAll(){applyStatic();renderStats();renderNews();}
@@ -1219,8 +710,8 @@
   document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.lang-sw button'); if(b)setLang(b.getAttribute('data-l'));});
 
   applyStatic();
-  // Un onglet ouvert doit recevoir les buts confirmés et les nouvelles sans rechargement manuel.
-  // Le cache-buster évite de relire une ancienne copie des fichiers publiés par Cloudflare.
+  if(window.To1000Grid){To1000Grid.render(document.getElementById('goalgrid'),985,1000);}
+  // Un onglet ouvert reçoit les buts confirmés et les nouvelles sans rechargement.
   var loadingStats=false, loadingNews=false;
   function refreshStats(){
     if(loadingStats)return; loadingStats=true;

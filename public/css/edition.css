@@ -1,0 +1,218 @@
+/* =========================================================================
+   edition.css — identité « journal du matin » de to1000.com (nov. 2026)
+
+   Idée : un quotidien sportif imprimé, pas un « dashboard » sombre.
+   Papier clair, encre noire, un seul rouge, des filets au lieu de cartes,
+   des chiffres en grotesque condensé, du texte en serif de presse.
+   Pas de dégradés, pas de halos, pas de coins arrondis, pas d'ombres.
+
+   Partagé par l'accueil et /obrigado-cristiano/. Fichier mis en cache
+   30 jours (_headers) : changer le ?v= dans les pages à chaque modif.
+   ========================================================================= */
+
+:root{
+  --paper:#f4f0e6;      /* papier journal */
+  --paper-2:#ebe5d6;    /* encart */
+  --ink:#151513;        /* encre */
+  --ink-2:#55534c;      /* légendes, méta */
+  --rule:#151513;
+  --rule-soft:#cfc7b4;
+  --red:#c8102e;        /* rouge Seleção, un seul accent */
+  --green:#0b5d36;      /* vert drapeau, usage minuscule */
+  --wrap:1240px;
+  --gut:16px;
+  --sans:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --serif:'Newsreader',Georgia,'Times New Roman',serif;
+}
+@media (min-width:700px){:root{--gut:28px}}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:var(--serif);font-size:18px;line-height:1.55;
+  font-optical-sizing:auto;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+html[dir="rtl"] body{font-family:'Cairo',system-ui,sans-serif}
+a{color:inherit}
+img{display:block;max-width:100%;height:auto}
+:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+/* caché par translate (pas left:-999px, qui crée un défilement horizontal en arabe) */
+.skip{position:absolute;top:0;inset-inline-start:8px;transform:translateY(-110%);background:var(--ink);color:var(--paper);padding:8px 12px;z-index:10}
+.skip:focus{transform:none}
+
+/* ---------- Petits libellés (rubriques, méta) ---------- */
+.label{
+  font-family:var(--sans);font-weight:700;font-size:12px;line-height:1.2;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--ink);
+}
+.label.red{color:var(--red)}
+.meta{font-family:var(--sans);font-size:13px;color:var(--ink-2);line-height:1.4}
+html[dir="rtl"] .label,html[dir="rtl"] .meta{font-family:'Cairo',sans-serif;letter-spacing:0}
+
+/* ---------- Bandeau du haut (date + langues) ---------- */
+.mast-top{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding-top:10px;padding-bottom:10px;border-bottom:1px solid var(--rule-soft);
+}
+.mast-top .meta{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lang-sw{display:inline-flex;gap:0;flex:none}
+.lang-sw button{
+  font-family:var(--sans);font-weight:600;font-size:12px;letter-spacing:.04em;
+  background:none;border:0;border-left:1px solid var(--rule-soft);color:var(--ink-2);
+  padding:3px 9px;cursor:pointer;line-height:1.2;
+}
+.lang-sw button:first-child{border-left:0}
+.lang-sw button:hover{color:var(--ink)}
+.lang-sw button.active{color:var(--ink);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px;text-decoration-color:var(--red)}
+
+/* ---------- Titre du journal ---------- */
+.mast-name{
+  display:grid;grid-template-columns:1fr auto;align-items:end;gap:6px 20px;
+  padding-top:14px;padding-bottom:12px;
+}
+.nameplate{
+  font-family:var(--sans);font-stretch:62%;font-weight:900;
+  font-size:clamp(54px,11vw,112px);line-height:.82;letter-spacing:-.015em;
+  text-decoration:none;color:var(--ink);
+}
+.nameplate .dot{color:var(--red)}
+.mast-tag{
+  grid-column:1/-1;font-family:var(--serif);font-style:italic;font-size:15px;color:var(--ink-2);max-width:56ch;
+}
+.mast-count{
+  font-family:var(--sans);text-decoration:none;text-align:right;line-height:1;
+  border-left:3px solid var(--red);padding:2px 0 2px 10px;
+}
+.mast-count b{display:block;font-stretch:62%;font-weight:800;font-size:clamp(30px,5vw,46px);letter-spacing:-.01em}
+.mast-count span{font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-2)}
+.mast-count{grid-row:1;grid-column:2}
+@media (min-width:860px){
+  .mast-name{grid-template-columns:auto 1fr auto;align-items:end}
+  .mast-count{grid-row:auto;grid-column:auto}
+  .mast-tag{grid-column:auto;align-self:end;padding-bottom:6px;border-left:1px solid var(--rule-soft);padding-left:18px}
+}
+html[dir="rtl"] .mast-count{text-align:left;border-left:0;border-right:3px solid var(--red);padding:2px 10px 2px 0}
+
+/* ---------- Rubriques (nav) — défilement horizontal sur mobile ---------- */
+.sections{border-top:3px solid var(--rule);border-bottom:1px solid var(--rule)}
+.sections ul{
+  list-style:none;display:flex;gap:0;overflow-x:auto;scrollbar-width:none;
+  -webkit-overflow-scrolling:touch;
+}
+.sections ul::-webkit-scrollbar{display:none}
+.sections a{
+  display:block;white-space:nowrap;text-decoration:none;
+  font-family:var(--sans);font-weight:600;font-size:14px;
+  padding:10px 14px 9px;border-right:1px solid var(--rule-soft);
+}
+.sections li:first-child a{padding-left:0}
+.sections a:hover{color:var(--red)}
+.sections a[aria-current="page"]{color:var(--red)}
+.sections a.hot{color:var(--red)}
+html[dir="rtl"] .sections a{border-right:0;border-left:1px solid var(--rule-soft)}
+html[dir="rtl"] .sections li:first-child a{padding-left:14px;padding-right:0}
+
+/* ---------- Bandeau édition spéciale ---------- */
+.flash{background:var(--red);color:#fff}
+.flash .wrap{display:flex;align-items:baseline;gap:14px;padding-top:9px;padding-bottom:9px;flex-wrap:wrap}
+.flash .label{color:#fff}
+.flash a{color:#fff;font-family:var(--sans);font-weight:600;font-size:15px;text-underline-offset:3px}
+
+/* ---------- Titres de section, filets ---------- */
+.sec{padding-top:34px;padding-bottom:34px}
+.sec-head{
+  display:flex;align-items:baseline;justify-content:space-between;gap:16px;
+  border-top:3px solid var(--rule);padding-top:8px;margin-bottom:22px;
+}
+.sec-head h2{
+  font-family:var(--sans);font-stretch:75%;font-weight:800;
+  font-size:clamp(26px,3.6vw,38px);line-height:1;letter-spacing:-.005em;
+}
+.sec-head a{font-family:var(--sans);font-weight:600;font-size:14px;color:var(--red);text-decoration:none;white-space:nowrap}
+.sec-head a:hover{text-decoration:underline}
+
+/* ---------- Typo éditoriale ---------- */
+.headline{
+  font-family:var(--serif);font-weight:600;font-optical-sizing:auto;
+  font-size:clamp(46px,8.4vw,118px);line-height:.94;letter-spacing:-.025em;
+}
+.headline em{font-style:italic;font-weight:500}
+html[dir="rtl"] .headline{font-family:'Cairo',sans-serif;font-weight:900;letter-spacing:0;line-height:1.15}
+.standfirst{font-family:var(--serif);font-size:clamp(19px,2vw,23px);line-height:1.42;max-width:38ch}
+.byline{margin-top:14px}
+.prose{max-width:66ch}
+.prose p + p{margin-top:1em}
+.prose h3{font-family:var(--sans);font-stretch:75%;font-weight:800;font-size:24px;line-height:1.1;margin:1.6em 0 .5em}
+.dropcap::first-letter{
+  float:left;font-family:var(--sans);font-stretch:62%;font-weight:900;
+  font-size:4.3em;line-height:.8;padding:.06em .08em 0 0;color:var(--red);
+}
+html[dir="rtl"] .dropcap::first-letter{float:right;padding:.06em 0 0 .08em}
+
+blockquote.pull{
+  border-top:3px solid var(--red);border-bottom:1px solid var(--rule);
+  padding:18px 0 16px;margin:28px 0;
+}
+blockquote.pull p{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(24px,3vw,34px);line-height:1.18;letter-spacing:-.01em}
+blockquote.pull footer{margin-top:10px}
+blockquote.pull .tr{display:block;margin-top:8px;font-style:normal;font-size:16px;color:var(--ink-2);font-family:var(--serif)}
+
+/* ---------- Chiffres ---------- */
+.num{font-family:var(--sans);font-stretch:62%;font-weight:900;line-height:.85;letter-spacing:-.02em;font-variant-numeric:tabular-nums lining-nums}
+.figures{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--rule)}
+.figures > div{padding:14px 14px 16px 0;border-bottom:1px solid var(--rule-soft)}
+.figures > div:nth-child(2n){padding-left:14px;border-left:1px solid var(--rule-soft)}
+.figures .num{font-size:clamp(48px,7vw,84px)}
+.figures .label{display:block;margin-top:8px;font-weight:600;text-transform:none;letter-spacing:0;font-size:14px;color:var(--ink-2)}
+@media (min-width:760px){
+  .figures{grid-template-columns:repeat(4,1fr)}
+  .figures > div{border-bottom:0;padding-left:16px;border-left:1px solid var(--rule-soft)}
+  .figures > div:first-child{padding-left:0;border-left:0}
+}
+html[dir="rtl"] .figures > div:nth-child(2n){padding-left:0;padding-right:14px;border-left:0;border-right:1px solid var(--rule-soft)}
+
+/* ---------- Photo + légende ---------- */
+figure.photo{margin:0}
+figure.photo img{width:100%;background:var(--paper-2)}
+figure.photo figcaption{margin-top:7px;font-family:var(--sans);font-size:12.5px;color:var(--ink-2);line-height:1.4}
+figure.photo figcaption b{color:var(--ink);font-weight:600}
+
+/* ---------- Boutons (sobres) ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:8px;text-decoration:none;cursor:pointer;
+  font-family:var(--sans);font-weight:700;font-size:15px;
+  padding:12px 18px;border:2px solid var(--ink);background:var(--ink);color:var(--paper);
+}
+.btn:hover{background:var(--red);border-color:var(--red)}
+.btn.line{background:transparent;color:var(--ink)}
+.btn.line:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+
+/* ---------- Pied de page ---------- */
+.foot{border-top:3px solid var(--rule);margin-top:20px;padding-top:22px;padding-bottom:40px}
+.foot-grid{display:grid;gap:18px}
+.foot .nameplate{font-size:44px}
+.foot nav{display:flex;flex-wrap:wrap;gap:6px 18px}
+.foot nav a{font-family:var(--sans);font-size:14px;text-decoration:none}
+.foot nav a:hover{color:var(--red);text-decoration:underline}
+.foot .disclaimer{font-family:var(--sans);font-size:12.5px;color:var(--ink-2);line-height:1.6;border-top:1px solid var(--rule-soft);padding-top:14px;margin-top:6px}
+.foot .disclaimer a{color:var(--ink-2)}
+@media (min-width:800px){.foot-grid{grid-template-columns:auto 1fr;align-items:end;gap:24px 40px}}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ---------- Bannière cookies (consent.js) aux couleurs du journal ----------
+   consent.js injecte son propre style sombre : on le surclasse ici, sur les
+   pages en nouvelle charte seulement. Accepter et Refuser ont le même poids
+   visuel (recommandation CNIL). */
+html body #t1k-consent{background:var(--paper);color:var(--ink);border:2px solid var(--ink);border-top:6px solid var(--red);border-radius:0;box-shadow:0 6px 0 rgba(21,21,19,.12);font-family:var(--sans)}
+html body #t1k-consent button{border-radius:0;border:2px solid var(--ink);background:var(--ink);color:var(--paper);font-family:var(--sans)}
+html body #t1k-consent button:hover{background:var(--red);border-color:var(--red)}
+html body #t1k-consent a{color:var(--ink-2)}
+html body #t1k-reopen{background:var(--paper);color:var(--ink-2);border:1px solid var(--rule-soft);border-radius:0;box-shadow:none}
+html body #t1k-reopen:hover{color:var(--ink);border-color:var(--ink)}

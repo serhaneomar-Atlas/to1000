@@ -5,6 +5,13 @@
 
 ---
 
+### [2026-11-05 ~16:00 UTC] — Claude Code (desktop) — **Hommage retraite internationale CR7 + refonte « journal » de l'accueil**
+- Fait : (1) Nouvelle page `/obrigado-cristiano/` (FR/EN/ES/AR) : 234 sélections, 146 buts, 12 dates, citation, contexte Jorge Jesus, vidéo X chargée au clic (RGPD), boutons de partage, image OG `images/og-obrigado-cristiano.jpg`. Faits recoupés : FPF, Reuters, ESPN, RMC, L'Équipe, Record. (2) Accueil refait : charte « journal du matin » (papier, encre, un rouge, filets ; Archivo + Newsreader) dans `css/edition.css` partagé. Fini le noir/or, halos, pastilles, scroll-snap. Compteur = grille de 1000 points (`js/goalgrid.js`), Portugal en rouge (146, figé), Al Nassr = total − 847. Fiche carrière en tableau. JSON-LD FAQ mis à jour (retraite, 146 buts). (3) `update_html_counts.py` : motifs pour la nouvelle structure + la page hommage ; `sitemap_generator.py` : URL ajoutée ; `_headers` : CSP dédiée à `/obrigado-cristiano/*` (platform.twitter.com).
+- État : vérifié en local (desktop, mobile 375, arabe RTL, vidéo, synchro simulée à 986). `qa_site.py` : 2 erreurs déjà présentes avant (goals-data.json à 967, jeton GSC).
+- Reste : `news.html`, `goals.html`, pages articles et Coupe du monde ont encore l'ancien design sombre.
+- Bâton → Omar (validation + mise en ligne)
+- Commit : branche `feat/hommage-cr7-selection`, non poussée
+
 ### [2026-10-20 ~18:50 UTC] — Claude (cloud) — **Suivi des buts en direct fiabilisé + « Prochain match » réparé + IndexNow rebranché**
 - **Constat (Al Nassr–Neom, en direct)** : `update-cr7-goals.yml` (cron « toutes les 5 min ») ne passait qu'~6 fois/jour — GitHub saute ces crons. Dernier passage 07:29 UTC, rien pendant le match.
 - **Nouveau `match-watch.yml` + `scripts/match_watch.py`** : lancé 2×/h + à la fin de news-sync / news-editorial / stats-sync. Match en cours ou dans les 5 h → reste actif, interroge ESPN toutes les 90 s, déclenche `update-cr7-goals.yml` par workflow_dispatch (jamais sauté) à chaque but de CR7 (+4 et +10 min) et à la fin (+10 min). Sinon s'arrête en secondes. Concurrence : 1 guetteur à la fois. Dépôt public → minutes gratuites.

@@ -26,6 +26,7 @@ SITE = "https://to1000.com"
 # Pages statiques principales — priorité 1.0 / 0.9
 HIGH_PRIORITY = [
     ("/",                          1.0, "daily"),
+    ("/obrigado-cristiano/",       1.0, "daily"),   # hommage retraite internationale (5 nov. 2026)
     # /world-cup/* : 301 vers /coupe-du-monde/ depuis 2026-07-02 (ne plus lister)
     ("/coupe-du-monde/",           1.0, "hourly"),
     ("/coupe-du-monde/matchs-du-jour/", 0.95, "hourly"),

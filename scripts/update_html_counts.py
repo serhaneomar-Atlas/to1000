@@ -83,6 +83,15 @@ def build_patterns(goals, remaining, month, year, stats=None):
         # — bug constaté le 28/08 : la home affichait « 977 · L'objectif ».
         (re.compile(r'class="n impact">(?!1000<)\d{3,4}<'), f'class="n impact">{g}<', "stat-tile"),
         (re.compile(r"<b>\d{1,3} buts</b> avant l"), f"<b>{r} buts</b> avant l", "meta-remaining-fr"),
+
+        # Refonte « journal » (nov. 2026) : bandeau, compteur, légende de la
+        # grille et fiche. Al Nassr = total − buts figés (Sporting 5, Portugal
+        # 146, Man United 145, Real 450, Juventus 101 = 847), comme goalgrid.js.
+        (re.compile(r'(<b class="livepill">)\d{3,4}(</b>)'), lambda m: f"{m.group(1)}{g}{m.group(2)}", "masthead-count"),
+        (re.compile(r"Il en reste <b>\d{1,3}</b>"), f"Il en reste <b>{r}</b>", "remaining-fr"),
+        (re.compile(r'(data-live="goals"[^>]*>)\d{3,4}(<)'), lambda m: f"{m.group(1)}{g}{m.group(2)}", "live-goals"),
+        (re.compile(r'(data-live="rem(?:aining)?"[^>]*>)\d{1,3}(<)'), lambda m: f"{m.group(1)}{r}{m.group(2)}", "live-remaining"),
+        (re.compile(r'(data-live="nassr"[^>]*>)\d{1,3}(<)'), lambda m: f"{m.group(1)}{max(0, int(g) - 847)}{m.group(2)}", "live-nassr"),
         (re.compile(r"Ronaldo à \d{1,3} buts du cap"), f"Ronaldo à {r} buts du cap", "faq-remaining-fr"),
 
         # i18n bundles 4 langues
@@ -246,7 +255,8 @@ def main():
 
     patterns = build_patterns(goals, remaining, month, year, stats)
 
-    targets = [PUBLIC_DIR / "index.html", PUBLIC_DIR / "goals.html"]
+    targets = [PUBLIC_DIR / "index.html", PUBLIC_DIR / "goals.html",
+               PUBLIC_DIR / "obrigado-cristiano" / "index.html"]
     blog_dir = PUBLIC_DIR / "blog"
     if blog_dir.exists():
         targets.extend(sorted(blog_dir.glob("*.html")))
