@@ -30,6 +30,7 @@ import argparse
 from pathlib import Path
 from datetime import datetime, timezone
 from html import escape as h
+from urllib.parse import quote
 
 SCRIPT_DIR = Path(__file__).parent
 PROJECT_DIR = SCRIPT_DIR.parent
@@ -163,12 +164,21 @@ def find_related(item: dict, all_items: list, n: int = 4) -> list:
     scored.sort(key=lambda x: -x[0])
     return [o for _, o in scored[:n]]
 
+# Liens de repli quand aucun article du fil ne partage de mots-clés.
+# Pas d'emoji, pas de compteur écrit en dur (« 975/1000 » restait figé dans
+# des milliers de pages) : le chiffre vivant est dans l'encart compteur.
+_NEWS = ("/news.html", "Toute l'actualité du football")
+_COUNTER = ("/#compteur", "Le compteur CR7")
+_GOALS = ("/goals.html", "Tous les buts de Cristiano Ronaldo")
+_WC = ("/coupe-du-monde/", "Coupe du monde 2026")
+_MAR = ("/coupe-du-monde/equipe/maroc/", "Le Maroc à la Coupe du monde")
+_POR = ("/coupe-du-monde/equipe/portugal/", "Le Portugal à la Coupe du monde")
 GENERIC_RELATED = {
-    "cr7":  '<a href="/goals.html">📊 Compteur CR7 (975/1000)</a> · <a href="/news.html">📰 Toute l\'actu foot</a> · <a href="/coupe-du-monde/equipe/portugal/">🇵🇹 Portugal WC 2026</a>',
-    "wc":   '<a href="/coupe-du-monde/">🌍 Hub Coupe du Monde 2026</a> · <a href="/news.html">📰 News</a> · <a href="/coupe-du-monde/equipe/maroc/">🇲🇦 Maroc</a>',
-    "maroc":'<a href="/coupe-du-monde/equipe/maroc/">🇲🇦 Page Maroc WC</a> · <a href="/news.html">📰 News</a> · <a href="/coupe-du-monde/">Hub WC</a>',
-    "portugal":'<a href="/coupe-du-monde/equipe/portugal/">🇵🇹 Page Portugal WC</a> · <a href="/goals.html">Compteur CR7</a> · <a href="/news.html">📰 News</a>',
-    "foot": '<a href="/news.html">📰 Toute l\'actu foot</a> · <a href="/coupe-du-monde/">🌍 Hub WC 2026</a> · <a href="/goals.html">Compteur CR7</a>',
+    "cr7": [_COUNTER, _GOALS, _NEWS],
+    "wc": [_WC, _MAR, _NEWS],
+    "maroc": [_MAR, _WC, _NEWS],
+    "portugal": [_POR, _COUNTER, _NEWS],
+    "foot": [_NEWS, _WC, _COUNTER],
 }
 
 NEWS_INDEX_REDIRECT = (
@@ -177,23 +187,301 @@ NEWS_INDEX_REDIRECT = (
     '<link rel="canonical" href="https://to1000.com/news">'
     '<meta name="robots" content="noindex"><title>News — To1000.com</title>'
     '<script>location.replace("/news")</script></head>'
-    '<body style="background:#05070b;color:#eef2f6;font-family:sans-serif;padding:2rem">'
-    'Redirection vers <a href="/news" style="color:#f2c14e">/news</a>…</body></html>'
+    '<body style="background:#f4f0e6;color:#151513;font-family:Georgia,serif;padding:2rem">'
+    'Redirection vers <a href="/news" style="color:#c8102e">/news</a>…</body></html>'
 )
+
+FONTS_URL = ("https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900"
+             "&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700"
+             "&family=Cairo:wght@400;700;900&display=swap")
+EDITION_CSS = "/css/edition.css?v=20261105"
+
+MONTHS_FR = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet",
+             "août", "septembre", "octobre", "novembre", "décembre"]
+DAYS_FR = ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"]
+
+
+def date_fr(d: datetime) -> str:
+    """« 5 novembre 2026 » sans dépendre de la locale du système.
+
+    strftime('%B') rendait « November » sur le runner Linux (locale C) et
+    '%-d' n'existe pas sous Windows : la date d'une page française dépendait
+    de la machine qui l'avait générée.
+    """
+    return f"{'1er' if d.day == 1 else d.day} {MONTHS_FR[d.month - 1]} {d.year}"
+
+
+_STATS_CACHE: dict = {}
+
+
+def site_counter() -> tuple[str, str]:
+    """(buts, restants) depuis public/stats.json, pour le rendu sans JS.
+
+    La page relit /stats.json au chargement : le chiffre gravé ici ne sert
+    qu'aux robots et aux lecteurs sans JavaScript.
+    """
+    if "v" not in _STATS_CACHE:
+        try:
+            s = json.loads((PROJECT_DIR / "public" / "stats.json").read_text(encoding="utf-8"))
+            g = int(s["goals"])
+            rem = int(s["remaining"]) if s.get("remaining") is not None else int(s.get("target") or 1000) - g
+            _STATS_CACHE["v"] = (str(g), str(max(0, rem)))
+        except Exception:
+            _STATS_CACHE["v"] = ("—", "—")
+    return _STATS_CACHE["v"]
+
+
+KIND_LABELS = {
+    "fr": {"cr7": "Cristiano Ronaldo", "wc": "Coupe du monde 2026", "maroc": "Maroc", "portugal": "Portugal", "foot": "Football"},
+    "en": {"cr7": "Cristiano Ronaldo", "wc": "World Cup 2026", "maroc": "Morocco", "portugal": "Portugal", "foot": "Football"},
+    "es": {"cr7": "Cristiano Ronaldo", "wc": "Mundial 2026", "maroc": "Marruecos", "portugal": "Portugal", "foot": "Fútbol"},
+    "ar": {"cr7": "كريستيانو رونالدو", "wc": "كأس العالم 2026", "maroc": "المغرب", "portugal": "البرتغال", "foot": "كرة القدم"},
+}
+
+# Textes d'interface de la page article, par langue. Le français est gravé
+# dans le HTML ; le script remplace les éléments [data-i18n] pour les autres.
+ARTICLE_UI = {
+    "fr": {
+        "orig": "Voir le texte original", "related": "À lire aussi", "src": "Source",
+        "ln": {"en": "anglais", "es": "espagnol", "fr": "français", "ar": "arabe",
+               "de": "allemand", "it": "italien", "pt": "portugais"},
+        "skip": "Aller à l'article",
+        "tag": "Le football, chaque jour. Et le compte à rebours du 1000e but de Cristiano Ronaldo.",
+        "count_lbl": "buts sur 1000",
+        "nav_home": "À la une", "nav_tribute": "Obrigado, Cristiano", "nav_counter": "Le compteur",
+        "nav_goals": "Tous les buts", "nav_news": "Actualités", "nav_wc": "Coupe du monde",
+        "nav_about": "À propos", "nav_privacy": "Confidentialité", "nav_contact": "Contact",
+        "by": "D'après", "photo": "Photo via",
+        "src_txt": "Ce texte résume un article publié par",
+        "read_orig": "Lire l'article original",
+        "share": "Partager", "copy": "Copier le lien", "copied": "Lien copié",
+        "cb_lbl": "Le compteur", "cb_goals": "buts en carrière pour Cristiano Ronaldo",
+        "cb_rem": "à marquer pour atteindre 1000", "cb_link": "Suivre le compteur →",
+        "disclaimer": "Site de fans non officiel, ni affilié ni approuvé par Cristiano Ronaldo, ses clubs ou la FIFA. Cet article est un résumé automatique d'une source externe, traduit et mis en forme par To1000.com ; le texte original appartient à son éditeur, cité et lié ci-dessus.",
+    },
+    "en": {
+        "orig": "View the original text", "related": "Also read", "src": "Source",
+        "ln": {"en": "English", "es": "Spanish", "fr": "French", "ar": "Arabic",
+               "de": "German", "it": "Italian", "pt": "Portuguese"},
+        "skip": "Skip to article",
+        "tag": "Football, every day. And the countdown to Cristiano Ronaldo's 1000th goal.",
+        "count_lbl": "goals of 1000",
+        "nav_home": "Front page", "nav_tribute": "Obrigado, Cristiano", "nav_counter": "The counter",
+        "nav_goals": "All goals", "nav_news": "News", "nav_wc": "World Cup",
+        "nav_about": "About", "nav_privacy": "Privacy", "nav_contact": "Contact",
+        "by": "Based on", "photo": "Photo via",
+        "src_txt": "This story summarises an article published by",
+        "read_orig": "Read the original article",
+        "share": "Share", "copy": "Copy link", "copied": "Link copied",
+        "cb_lbl": "The counter", "cb_goals": "career goals for Cristiano Ronaldo",
+        "cb_rem": "still needed to reach 1000", "cb_link": "Follow the counter →",
+        "disclaimer": "Unofficial fan site, not affiliated with or endorsed by Cristiano Ronaldo, his clubs or FIFA. This story is an automatic summary of an external source, translated and edited by To1000.com; the original text belongs to its publisher, credited and linked above.",
+    },
+    "es": {
+        "orig": "Ver el texto original", "related": "Leer también", "src": "Fuente",
+        "ln": {"en": "inglés", "es": "español", "fr": "francés", "ar": "árabe",
+               "de": "alemán", "it": "italiano", "pt": "portugués"},
+        "skip": "Ir al artículo",
+        "tag": "Fútbol, cada día. Y la cuenta atrás hacia el gol 1000 de Cristiano Ronaldo.",
+        "count_lbl": "goles de 1000",
+        "nav_home": "Portada", "nav_tribute": "Obrigado, Cristiano", "nav_counter": "El contador",
+        "nav_goals": "Todos los goles", "nav_news": "Noticias", "nav_wc": "Mundial",
+        "nav_about": "Quiénes somos", "nav_privacy": "Privacidad", "nav_contact": "Contacto",
+        "by": "Según", "photo": "Foto vía",
+        "src_txt": "Este texto resume un artículo publicado por",
+        "read_orig": "Leer el artículo original",
+        "share": "Compartir", "copy": "Copiar el enlace", "copied": "Enlace copiado",
+        "cb_lbl": "El contador", "cb_goals": "goles en la carrera de Cristiano Ronaldo",
+        "cb_rem": "le faltan para llegar a 1000", "cb_link": "Seguir el contador →",
+        "disclaimer": "Sitio de fans no oficial, sin afiliación ni respaldo de Cristiano Ronaldo, sus clubes o la FIFA. Esta noticia es un resumen automático de una fuente externa, traducido y editado por To1000.com; el texto original pertenece a su editor, citado y enlazado arriba.",
+    },
+    "ar": {
+        "orig": "عرض النص الأصلي", "related": "اقرأ أيضاً", "src": "المصدر",
+        "ln": {"en": "الإنجليزية", "es": "الإسبانية", "fr": "الفرنسية", "ar": "العربية",
+               "de": "الألمانية", "it": "الإيطالية", "pt": "البرتغالية"},
+        "skip": "انتقل إلى المقال",
+        "tag": "كرة القدم، كل يوم. والعد التنازلي نحو الهدف الألف لكريستيانو رونالدو.",
+        "count_lbl": "هدفاً من 1000",
+        "nav_home": "الرئيسية", "nav_tribute": "شكراً كريستيانو", "nav_counter": "العدّاد",
+        "nav_goals": "كل الأهداف", "nav_news": "الأخبار", "nav_wc": "كأس العالم",
+        "nav_about": "من نحن", "nav_privacy": "الخصوصية", "nav_contact": "اتصل بنا",
+        "by": "نقلاً عن", "photo": "الصورة عبر",
+        "src_txt": "يلخّص هذا النص مقالاً نشره",
+        "read_orig": "اقرأ المقال الأصلي",
+        "share": "مشاركة", "copy": "انسخ الرابط", "copied": "تم نسخ الرابط",
+        "cb_lbl": "العدّاد", "cb_goals": "هدفاً في مسيرة كريستيانو رونالدو",
+        "cb_rem": "هدفاً متبقياً لبلوغ الألف", "cb_link": "تابع العدّاد ←",
+        "disclaimer": "موقع جماهيري غير رسمي، غير مرتبط بكريستيانو رونالدو أو أنديته أو الفيفا ولا يحظى بموافقتهم. هذا الخبر ملخّص آلي لمصدر خارجي، ترجمه وحرّره To1000.com؛ النص الأصلي ملك لناشره المذكور أعلاه مع الرابط.",
+    },
+}
+for _l, _k in KIND_LABELS.items():
+    ARTICLE_UI[_l]["kinds"] = _k
+
+# CSS propre à la page article. Le socle (papier, encre, masthead, rubriques,
+# pied de page, .label/.meta/.standfirst/.prose/.btn/figure.photo) vient de
+# /css/edition.css, partagé avec l'accueil.
+ARTICLE_CSS = """
+.mast-name .nameplate{font-size:clamp(46px,7.4vw,78px)}
+.mast-tag{font-size:14px}
+.art-head{padding-top:26px;padding-bottom:22px;border-bottom:1px solid var(--rule)}
+.art-head .kicker{margin-bottom:12px}
+.art-title{
+  font-family:var(--sans);font-stretch:75%;font-weight:800;
+  font-size:clamp(34px,5.4vw,64px);line-height:1.02;letter-spacing:-.012em;
+  max-width:24ch;text-wrap:balance;overflow-wrap:break-word;
+}
+html[dir="rtl"] .art-title{font-family:'Cairo',sans-serif;font-weight:800;letter-spacing:0;line-height:1.3;font-size:clamp(30px,4.4vw,52px)}
+.art-head .standfirst{margin-top:18px;max-width:54ch}
+.art-head .byline{margin-top:16px}
+.byline b{color:var(--ink);font-weight:600}
+.art-grid{display:grid;gap:34px;padding-top:24px;padding-bottom:12px}
+.art-grid > *{min-width:0}
+@media (min-width:960px){
+  .art-grid{grid-template-columns:minmax(0,1fr) 320px;gap:56px}
+  .art-side{border-left:1px solid var(--rule-soft);padding-left:28px}
+  html[dir="rtl"] .art-side{border-left:0;padding-left:0;border-right:1px solid var(--rule-soft);padding-right:28px}
+}
+.art-main{max-width:760px}
+.art-main figure.photo{margin-bottom:24px}
+.art-main figure.photo img{aspect-ratio:3/2;object-fit:cover;object-position:50% 30%}
+.prose{font-size:19px;line-height:1.6}
+.prose:empty{display:none}
+.essentiel{list-style:square;padding-inline-start:1.1em}
+.essentiel li{margin-bottom:.6em}
+.essentiel li::marker{color:var(--red)}
+details.original{margin-top:28px;border-top:1px solid var(--rule-soft);border-bottom:1px solid var(--rule-soft)}
+details.original summary{
+  cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px;
+  font-family:var(--sans);font-weight:600;font-size:14px;padding:12px 0;
+}
+details.original summary::-webkit-details-marker{display:none}
+details.original summary::after{content:"+";font-weight:800;color:var(--red)}
+details.original[open] summary::after{content:"\\2013"}
+details.original p{padding-bottom:14px;font-size:17px;line-height:1.55;color:var(--ink-2)}
+.src-box{margin-top:30px;border-top:3px solid var(--rule);padding-top:10px}
+.src-line{margin-top:8px;font-family:var(--sans);font-size:15px;line-height:1.45}
+.src-line b{font-weight:700}
+.src-box .btn{margin-top:14px}
+.art-side > * + *{margin-top:30px}
+.box{border-top:3px solid var(--rule);padding-top:10px}
+.box > .label{margin-bottom:12px}
+.share{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.share a,.share button{
+  display:block;text-align:center;text-decoration:none;cursor:pointer;
+  font-family:var(--sans);font-weight:700;font-size:14px;padding:11px 8px;
+  border:2px solid var(--ink);background:transparent;color:var(--ink);
+}
+.share a:hover,.share button:hover{background:var(--ink);color:var(--paper)}
+.share .wide{grid-column:1/-1;background:var(--ink);color:var(--paper)}
+.share .wide:hover{background:var(--red);border-color:var(--red)}
+.cbox .pair{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--rule-soft)}
+.cbox .pair > div{padding:12px 12px 4px 0}
+.cbox .pair > div + div{padding-left:12px;border-left:1px solid var(--rule-soft)}
+html[dir="rtl"] .cbox .pair > div{padding:12px 0 4px 12px}
+html[dir="rtl"] .cbox .pair > div + div{padding-left:0;padding-right:12px;border-left:0;border-right:1px solid var(--rule-soft)}
+.cbox .num{font-size:56px;display:block}
+.cbox .pair div:last-child .num{color:var(--red)}
+.cbox .pair span:not(.num){display:block;margin-top:6px;font-family:var(--sans);font-size:13px;line-height:1.35;color:var(--ink-2)}
+.cbox a{display:inline-block;margin-top:12px;font-family:var(--sans);font-weight:600;font-size:14px;color:var(--red);text-decoration:none}
+.cbox a:hover{text-decoration:underline}
+.rel{list-style:none;border-top:1px solid var(--rule)}
+.rel li{border-bottom:1px solid var(--rule-soft)}
+.rel a{display:block;padding:11px 0 12px;text-decoration:none}
+.rel-t{display:block;font-family:var(--sans);font-stretch:87.5%;font-weight:700;font-size:17px;line-height:1.22}
+.rel a:hover .rel-t{color:var(--red);text-decoration:underline;text-underline-offset:3px}
+.rel-s{display:block;margin-top:4px}
+html[dir="rtl"] .rel-t{font-family:'Cairo',sans-serif}
+"""
+
+# Script de la page : langue (clé localStorage `to1000_lang`, ?lang=), chiffres
+# vivants (/stats.json), partage. __PAYLOAD__ est remplacé par les données.
+ARTICLE_JS = r"""(function(){
+  var D=__PAYLOAD__;
+  var SUP=['fr','en','es','ar'];
+  function detect(){var u=new URLSearchParams(location.search).get('lang');if(u&&SUP.indexOf(u)>=0)return u;try{var s=localStorage.getItem('to1000_lang');if(s&&SUP.indexOf(s)>=0)return s;}catch(e){}var n=(navigator.language||'fr').slice(0,2).toLowerCase();return SUP.indexOf(n)>=0?n:'fr';}
+  function esc(t){var d=document.createElement('div');d.textContent=t==null?'':t;return d.innerHTML;}
+  var LANG='fr',STATS=null;
+  function ui(){return D.ui[LANG]||D.ui.fr;}
+  function loc(){return LANG==='ar'?'ar-u-nu-latn':LANG;}
+  function pageUrl(){return D.url+(LANG!=='fr'?'?lang='+LANG:'');}
+  function renderDates(){
+    var td=document.getElementById('today');
+    if(td){try{var s=new Date().toLocaleDateString(loc(),{weekday:'long',day:'numeric',month:'long',year:'numeric'});td.textContent=s.charAt(0).toUpperCase()+s.slice(1);}catch(e){}}
+    var ad=document.getElementById('art-date');
+    if(ad&&D.pub){try{var d=new Date(D.pub);if(!isNaN(d)){ad.textContent=d.toLocaleDateString(loc(),{day:'numeric',month:'long',year:'numeric'})+(LANG==='ar'?'، ':', ')+d.toLocaleTimeString(loc(),{hour:'2-digit',minute:'2-digit'});}}catch(e){}}
+  }
+  function renderLive(){
+    if(!STATS)return;
+    var g=STATS.goals,rem=STATS.remaining!=null?STATS.remaining:(STATS.target||1000)-g;
+    document.querySelectorAll('[data-live="goals"]').forEach(function(x){x.textContent=g;});
+    document.querySelectorAll('[data-live="remaining"]').forEach(function(x){x.textContent=Math.max(0,rem);});
+  }
+  function bindShare(){
+    var e=D.i18n[LANG]||{},t=document.getElementById('art-title');
+    var txt=(!e.fallback&&e.title)||(t?t.textContent:document.title);
+    var u=encodeURIComponent(pageUrl()),m=encodeURIComponent(txt);
+    var links={whatsapp:'https://wa.me/?text='+m+'%20'+u,x:'https://x.com/intent/post?text='+m+'&url='+u,
+      facebook:'https://www.facebook.com/sharer/sharer.php?u='+u,telegram:'https://t.me/share/url?url='+u+'&text='+m};
+    document.querySelectorAll('[data-share] a[data-net]').forEach(function(a){var h=links[a.getAttribute('data-net')];if(h)a.href=h;});
+  }
+  function apply(l){
+    var e=D.i18n[l];if(!e)return;
+    LANG=l;
+    var H=document.documentElement;H.lang=l;H.dir=(l==='ar')?'rtl':'ltr';
+    var t=document.getElementById('art-title');if(t&&e.title){t.textContent=e.title;t.setAttribute('dir','auto');}
+    var ld=document.getElementById('art-lead');if(ld&&e.summary){ld.textContent=e.summary;ld.setAttribute('dir','auto');}
+    var dev=document.getElementById('art-dev');
+    if(dev){
+      if(e.body&&e.body.length){
+        dev.innerHTML=(e.format==='bullets')
+          ?'<ul class="essentiel">'+e.body.map(function(p){return '<li>'+esc(p)+'</li>';}).join('')+'</ul>'
+          :e.body.map(function(p){return '<p>'+esc(p)+'</p>';}).join('');
+        dev.setAttribute('dir','auto');
+      }else{dev.innerHTML='';}
+    }
+    var U=ui();
+    document.querySelectorAll('[data-i18n]').forEach(function(x){var v=U[x.getAttribute('data-i18n')];if(v!=null)x.textContent=v;});
+    var k=document.getElementById('art-kicker');if(k&&U.kinds&&U.kinds[D.kind])k.textContent=U.kinds[D.kind];
+    var ol=document.getElementById('art-orig-label');
+    if(ol){var n=U.ln[D.src_lang];ol.textContent=U.orig+(n?' ('+n+')':'');}
+    // Les titres « À lire aussi » n'existent qu'en français.
+    var rb=document.querySelector('.related');if(rb)rb.hidden=l!=='fr';
+    document.querySelectorAll('.lang-sw button').forEach(function(b){var on=b.getAttribute('data-l')===l;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on?'true':'false');});
+    document.title=(e.title||document.title.split(' | ')[0])+' | To1000.com';
+    renderDates();bindShare();renderLive();
+  }
+  LANG=detect();
+  apply(LANG);
+  fetch('/stats.json?_='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();})
+    .then(function(s){if(s&&typeof s.goals==='number'){STATS=s;renderLive();}}).catch(function(){});
+  document.addEventListener('click',function(ev){
+    var tg=ev.target;if(!tg||!tg.closest)return;
+    var b=tg.closest('.lang-sw button');
+    if(b){var nl=b.getAttribute('data-l');if(SUP.indexOf(nl)>=0&&nl!==LANG){try{localStorage.setItem('to1000_lang',nl);}catch(e){}apply(nl);}return;}
+    var c=tg.closest('[data-net="copy"]');
+    if(c){
+      var link=pageUrl();
+      var done=function(){c.textContent=ui().copied;setTimeout(function(){c.textContent=ui().copy;},2200);};
+      if(navigator.share&&matchMedia('(pointer:coarse)').matches){navigator.share({title:document.title,url:link}).catch(function(){});return;}
+      if(navigator.clipboard){navigator.clipboard.writeText(link).then(done,function(){prompt('',link);});}else{prompt('',link);}
+      return;
+    }
+    var a=tg.closest('[data-share] a[data-net]');
+    if(a&&typeof gtag==='function'){gtag('event','share',{method:a.getAttribute('data-net'),content_type:'article',item_id:D.id});}
+  });
+})();"""
 
 
 def render_article(item: dict, all_items: list | None = None) -> str:
     kind = classify_kind(item)
     title_fr = best_title(item, "fr")
     summary_fr = best_summary(item, "fr")
-    title_en = best_title(item, "en")
-    summary_en = best_summary(item, "en")
     img = best_image(item)
     pub = parse_date(item.get("published_at") or item.get("published"))
     pub_iso = pub.isoformat() if pub else datetime.now(timezone.utc).isoformat()
     mod = parse_date(item.get("updated_at") or item.get("fetched_at"))
     mod_iso = mod.isoformat() if mod else pub_iso
-    pub_human = pub.strftime("%-d %B %Y") if pub and sys.platform != "win32" else (pub.strftime("%d %B %Y") if pub else "")
+    pub_human = date_fr(pub) if pub else ""
     slug = item.get("slug") or item.get("id") or slugify(title_fr)
     url = f"{SITE}/news/{slug}"  # URL propre (Cloudflare sert {slug}.html)
     original_url = item.get("url") or ""
@@ -239,7 +527,9 @@ def render_article(item: dict, all_items: list | None = None) -> str:
     }[kind]
     keywords = h(kw_base + ", to1000.com")
 
+    # Valeur SEO (articleSection) inchangée ; le surtitre affiché est traduit.
     kind_label = {"cr7":"CR7","wc":"WC 2026","maroc":"MAROC","portugal":"PORTUGAL","foot":"FOOT"}[kind]
+    kicker_fr = KIND_LABELS["fr"][kind]
 
     # La page est rendue en français (canonique SEO), mais le lecteur qui
     # arrive depuis /news en arabe, espagnol ou anglais doit la lire dans SA
@@ -265,49 +555,40 @@ def render_article(item: dict, all_items: list | None = None) -> str:
             "format": _e.get("format") or "brief",
         }
     _src_l = ((item.get("primary_source") or {}).get("lang") or "")[:2].lower()
-    _ui = {
-        "fr": {"orig": "Voir le texte original", "related": "À lire aussi", "src": "Source",
-               "ln": {"en": "anglais", "es": "espagnol", "fr": "français", "ar": "arabe",
-                       "de": "allemand", "it": "italien", "pt": "portugais"}},
-        "en": {"orig": "View the original text", "related": "Also read", "src": "Source",
-               "ln": {"en": "English", "es": "Spanish", "fr": "French", "ar": "Arabic",
-                       "de": "German", "it": "Italian", "pt": "Portuguese"}},
-        "es": {"orig": "Ver el texto original", "related": "Leer también", "src": "Fuente",
-               "ln": {"en": "inglés", "es": "español", "fr": "francés", "ar": "árabe",
-                       "de": "alemán", "it": "italiano", "pt": "portugués"}},
-        "ar": {"orig": "عرض النص الأصلي", "related": "اقرأ أيضاً", "src": "المصدر",
-               "ln": {"en": "الإنجليزية", "es": "الإسبانية", "fr": "الفرنسية", "ar": "العربية",
-                       "de": "الألمانية", "it": "الإيطالية", "pt": "البرتغالية"}},
-    }
     # json.dumps puis neutralisation de </script> — un titre contenant cette
     # séquence casserait la page entière.
-    _payload_js = json.dumps({"i18n": _i18n_payload, "src_lang": _src_l, "ui": _ui},
+    _payload_js = json.dumps({"i18n": _i18n_payload, "src_lang": _src_l, "ui": ARTICLE_UI,
+                              "kind": kind, "url": url, "pub": pub_iso if pub else "",
+                              "id": item_id or slug},
                              ensure_ascii=False).replace("</", "<\\/")
+    script_js = ARTICLE_JS.replace("__PAYLOAD__", _payload_js, 1)
 
-    # Body (use English summary too if available, like a richer page)
-    body_html = ""
-    if summary_fr:
-        body_html += f"<p class=\"lead\" id=\"art-lead\">{h(summary_fr)}</p>"
+    # Chapô (lead) : sous le titre, comme dans un journal.
+    lead_html = f'<p class="standfirst" id="art-lead">{h(summary_fr)}</p>' if summary_fr else ""
 
     # Développement rédigé (2-3 paragraphes ou puces) quand le conseil de
     # rédaction l'a produit — c'est ce qui distingue une brève d'une carte.
     # Le conteneur a un id : le script de langue le re-rend dans la langue
     # choisie par le lecteur.
     _fmt, _parts = body_parts(item, "fr")
-    body_html += "<div id=\"art-dev\">"
+    dev_inner = ""
     if _parts:
         if _fmt == "bullets":
-            _lis = "".join(f"<li>{h(p)}</li>" for p in _parts)
-            body_html += f"<ul class=\"essentiel\">{_lis}</ul>"
+            dev_inner = '<ul class="essentiel">' + "".join(f"<li>{h(p)}</li>" for p in _parts) + "</ul>"
         else:
-            body_html += "".join(f"<p>{h(p)}</p>" for p in _parts)
-    body_html += "</div>"
+            dev_inner = "".join(f"<p>{h(p)}</p>" for p in _parts)
+    dev_html = f'<div class="prose" id="art-dev">{dev_inner}</div>'
 
+    original_html = ""
     source_summary = item.get("summary") or ""
     if source_summary and source_summary != summary_fr:
         _lang = source_lang_label(item)
         _label = f"Voir le texte original ({_lang})" if _lang else "Voir le texte original"
-        body_html += f"<details class=\"original\"><summary id=\"art-orig-label\">{h(_label)}</summary><p>{h(source_summary)}</p></details>"
+        _lang_attr = f' lang="{h(_src_l)}"' if _src_l else ""
+        original_html = (
+            f'<details class="original"><summary id="art-orig-label">{h(_label)}</summary>'
+            f'<p dir="auto"{_lang_attr}>{h(source_summary)}</p></details>'
+        )
 
     # JSON-LD NewsArticle (enriched)
     ld = {
@@ -343,36 +624,64 @@ def render_article(item: dict, all_items: list | None = None) -> str:
     }
     breadcrumb_json = json.dumps(breadcrumb, ensure_ascii=False, indent=2)
 
-    # Source link section
-    source_html = ""
-    if original_url:
-        source_html = (
-            f'<p class="source-link">📎 Source originale : '
-            f'<a href="{h(original_url)}" rel="noopener nofollow" target="_blank">{h(source)} →</a></p>'
-        )
+    # Encadré source : nom du média + lien vers l'article d'origine.
+    _orig_btn = (
+        f'<a class="btn line" href="{h(original_url)}" rel="noopener nofollow" target="_blank">'
+        f'<span data-i18n="read_orig">Lire l\'article original</span> <span aria-hidden="true">↗</span></a>'
+    ) if original_url else ""
+    source_html = (
+        f'<div class="src-box">'
+        f'<h2 class="label" data-i18n="src">Source</h2>'
+        f'<p class="src-line"><span data-i18n="src_txt">Ce texte résume un article publié par</span> <b><bdi>{h(source)}</bdi></b>.</p>'
+        f'{_orig_btn}</div>'
+    )
 
-    # Image hero (anti-CLS: dimensions + aspect-ratio, prioritised LCP)
+    # Photo pleine colonne, avec crédit (anti-CLS : dimensions + ratio fixe).
+    # Image servie par le média source : si elle disparaît, on retire la figure
+    # plutôt que d'afficher un cadre vide.
     hero_html = ""
     if img:
         hero_html = (
-            f'<figure class="hero-img">'
-            f'<img src="{h(img)}" alt="{h(title_fr)}" width="1200" height="630" '
-            f'style="aspect-ratio:1200/630" loading="eager" fetchpriority="high" decoding="async">'
+            f'<figure class="photo">'
+            f'<img src="{h(img)}" alt="{h(title_fr)}" width="1200" height="800" '
+            f'loading="eager" fetchpriority="high" decoding="async" referrerpolicy="no-referrer" '
+            f'onerror="var f=this.closest(\'figure\');if(f)f.remove();">'
+            f'<figcaption><span data-i18n="photo">Photo via</span> <bdi>{h(source)}</bdi></figcaption>'
             f'</figure>'
         )
 
     # Related ARTICLES on our site (keyword overlap) + generic nav fallback
     _rel = find_related(item, [it for it in (all_items or []) if publishable(it, "fr")], 4)
     if _rel:
-        _cards = "".join(
-            f'<a class="rel-card" href="/news/{(ri.get("slug") or ri.get("id"))}.html">'
+        _lis = "".join(
+            f'<li><a href="/news/{(ri.get("slug") or ri.get("id"))}.html">'
             f'<span class="rel-t">{h(best_title(ri, "fr"))}</span>'
-            f'<span class="rel-s">{h((ri.get("primary_source") or {}).get("name", "") if isinstance(ri.get("primary_source"), dict) else "")}</span>'
-            f'</a>' for ri in _rel
+            f'<span class="rel-s meta">{h((ri.get("primary_source") or {}).get("name", "") if isinstance(ri.get("primary_source"), dict) else "")}</span>'
+            f'</a></li>' for ri in _rel
         )
-        related = f'<div class="rel-grid">{_cards}</div>'
     else:
-        related = GENERIC_RELATED[kind]
+        _lis = "".join(
+            f'<li><a href="{href}"><span class="rel-t">{h(label)}</span></a></li>'
+            for href, label in GENERIC_RELATED[kind]
+        )
+    related = f'<ol class="rel">{_lis}</ol>'
+
+    goals_txt, rem_txt = site_counter()
+    disclaimer_fr = h(ARTICLE_UI["fr"]["disclaimer"])
+    _now = datetime.now(timezone.utc)
+    today_fr = f"{DAYS_FR[_now.weekday()]} {date_fr(_now)}"
+
+    # Partage : liens prêts sans JavaScript (le script les ajuste à la langue).
+    _qu, _qt = quote(url, safe=""), quote(title_fr, safe="")
+    share_html = (
+        '<div class="share" data-share>'
+        f'<a data-net="whatsapp" href="https://wa.me/?text={_qt}%20{_qu}" rel="noopener" target="_blank">WhatsApp</a>'
+        f'<a data-net="x" href="https://x.com/intent/post?text={_qt}&amp;url={_qu}" rel="noopener" target="_blank">X</a>'
+        f'<a data-net="facebook" href="https://www.facebook.com/sharer/sharer.php?u={_qu}" rel="noopener" target="_blank">Facebook</a>'
+        f'<a data-net="telegram" href="https://t.me/share/url?url={_qu}&amp;text={_qt}" rel="noopener" target="_blank">Telegram</a>'
+        '<button type="button" class="wide" data-net="copy" data-i18n="copy">Copier le lien</button>'
+        '</div>'
+    )
 
     return f"""<!DOCTYPE html>
 <html lang="fr">
@@ -389,15 +698,14 @@ def render_article(item: dict, all_items: list | None = None) -> str:
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="dns-prefetch" href="https://fonts.googleapis.com">
-<link rel="dns-prefetch" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link href="{FONTS_URL}" rel="stylesheet">
+<link rel="stylesheet" href="{EDITION_CSS}">
 <title>{h(title_fr)} | To1000.com</title>
 <meta name="description" content="{meta_desc}">
 <meta name="keywords" content="{keywords}">
 <meta name="author" content="To1000.com">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#05070b">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#f4f0e6">
 <meta property="og:type" content="article">
 <meta property="og:title" content="{h(title_fr)}">
 <meta property="og:description" content="{meta_desc}">
@@ -420,6 +728,7 @@ def render_article(item: dict, all_items: list | None = None) -> str:
 <meta name="twitter:image:alt" content="{h(title_fr)}">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="canonical" href="{url}">
 <link rel="alternate" hreflang="fr" href="{url}">
 <link rel="alternate" hreflang="x-default" href="{url}">
@@ -429,129 +738,79 @@ def render_article(item: dict, all_items: list | None = None) -> str:
 <script type="application/ld+json">
 {breadcrumb_json}
 </script>
-<style>
-* {{ box-sizing: border-box; margin: 0; padding: 0; }}
-body {{
-  background: #05070b; color: #eef2f6;
-  font-family: 'Hanken Grotesk', -apple-system, sans-serif;
-  line-height: 1.7;
-}}
-.nav {{
-  padding: 1rem 1.5rem; border-bottom: 1px solid #1d2530;
-  display: flex; justify-content: space-between; align-items: center;
-  position: sticky; top: 0; background: rgba(6,6,6,0.95); backdrop-filter: blur(10px); z-index: 100;
-  flex-wrap: wrap; gap: 0.5rem;
-}}
-.nav .logo {{font-family:'Anton',sans-serif; font-weight: 900; font-size: 1.2rem; letter-spacing: -0.02em; color: #fff; text-decoration: none; }}
-.nav .logo .accent {{ color: #f2c14e; }}
-.nav .links {{ display: flex; gap: 1rem; flex-wrap: wrap; }}
-.nav .links a {{ color: #aaa; text-decoration: none; font-size: 0.9rem; font-weight: 600; }}
-.nav .links a:hover {{ color: #f2c14e; }}
-article {{ max-width: 760px; margin: 2rem auto; padding: 0 1.5rem; }}
-.kind {{ display: inline-block; padding: 0.2rem 0.7rem; background: rgba(242,193,78,0.15); color: #f2c14e; border-radius: 4px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; }}
-.kind.maroc {{ background: rgba(193,39,45,0.15); color: #ff6b6b; }}
-.kind.portugal {{ background: rgba(0,102,0,0.15); color: #4caf50; }}
-.kind.wc {{ background: rgba(0,153,255,0.15); color: #4eb3ff; }}
-h1 {{ font-size: clamp(1.6rem, 4.5vw, 2.6rem); font-weight: 900; line-height: 1.2; margin: 1rem 0; letter-spacing: -0.02em; }}
-.meta {{ color: #9aa6b4; font-size: 0.85rem; margin-bottom: 1.5rem; display: flex; gap: 0.8rem; align-items: center; flex-wrap: wrap; }}
-.hero-img {{ margin: 0 0 1.5rem; }}
-.hero-img img {{ width: 100%; height: auto; border-radius: 10px; }}
-.lead {{ font-size: 1.1rem; color: #ddd; margin-bottom: 1rem; }}
-.essentiel {{ margin: 1.2rem 0; padding-left: 1.15rem; color: #d6dde5; }}
-[dir="rtl"] body, [dir="rtl"] article {{ font-family: 'Cairo', 'Hanken Grotesk', sans-serif; }}
-[dir="rtl"] .essentiel {{ padding-left: 0; padding-right: 1.15rem; }}
-.essentiel li {{ margin-bottom: 0.55rem; line-height: 1.6; }}
-.essentiel li::marker {{ color: #f2c14e; }}
-.original {{ background: #0d1118; border: 1px solid #1d2530; border-radius: 8px; padding: 1rem; margin: 1.5rem 0; }}
-.original summary {{ cursor: pointer; color: #f2c14e; font-weight: 700; }}
-.original p {{ margin-top: 0.6rem; color: #bbb; }}
-.source-link {{ color: #9aa6b4; font-size: 0.9rem; margin: 1.5rem 0; padding-top: 1rem; border-top: 1px solid #1d2530; }}
-.source-link a {{ color: #f2c14e; }}
-.related {{ background: linear-gradient(180deg, #0d1118 0%, #0a0d13 100%); border: 1px solid #1d2530; border-radius: 12px; padding: 1.2rem; margin: 2rem 0; }}
-.related h2 {{ font-size: 1rem; color: #f2c14e; margin-bottom: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; }}
-.related a {{ color: #ddd; text-decoration: none; }}
-.related a:hover {{ color: #f2c14e; }}
-.rel-grid {{ display:grid; grid-template-columns:1fr; gap:0.6rem; margin-top:0.5rem; }}
-@media(min-width:560px){{ .rel-grid {{ grid-template-columns:1fr 1fr; }} }}
-.rel-card {{ display:flex; flex-direction:column; gap:0.3rem; padding:0.7rem 0.85rem; border:1px solid #1d2530; border-radius:10px; background:#0d1118; text-decoration:none; transition:border-color .2s; }}
-.rel-card:hover {{ border-color:#f2c14e; }}
-.rel-t {{ color:#eaeaea; font-size:0.9rem; line-height:1.3; }}
-.rel-s {{ color:#9aa6b4; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.05em; }}
-.footer {{ border-top: 1px solid #1d2530; padding: 2rem 1.5rem; text-align: center; font-size: 0.85rem; color: #8a93a0; margin-top: 4rem; }}
-.footer a {{ color: #aaa; }}
-</style>
+<style>{ARTICLE_CSS}</style>
 </head>
 <body>
-<nav class="nav">
-  <a class="logo" href="/">To<span class="accent">1000</span>.com</a>
-  <div class="links">
-    <a href="/">Accueil</a>
-    <a href="/coupe-du-monde/">CDM 2026</a>
-    <a href="/coupe-du-monde/equipe/maroc/">🇲🇦 Maroc</a>
-    <a href="/coupe-du-monde/equipe/portugal/">🇵🇹 Portugal</a>
-    <a href="/goals.html">Compteur CR7</a>
+<a class="skip" href="#article" data-i18n="skip">Aller à l'article</a>
+<header>
+  <div class="wrap mast-top">
+    <span class="meta" id="today">{today_fr}</span>
+    <div class="lang-sw" role="group" aria-label="Langue / Language"><button type="button" data-l="fr" aria-pressed="true" class="active">FR</button><button type="button" data-l="en" aria-pressed="false">EN</button><button type="button" data-l="es" aria-pressed="false">ES</button><button type="button" data-l="ar" aria-pressed="false">AR</button></div>
   </div>
-</nav>
-<article>
-  <span class="kind {kind}">{kind_label}</span>
-  <h1 id="art-title">{h(title_fr)}</h1>
-  <div class="meta">
-    <span>📅 {h(pub_human or 'Récent')}</span>
-    <span>· Source : {h(source)}</span>
+  <div class="wrap mast-name">
+    <a class="nameplate" href="/" aria-label="To1000.com, accueil">TO1000<span class="dot">.</span></a>
+    <p class="mast-tag" data-i18n="tag">Le football, chaque jour. Et le compte à rebours du 1000e but de Cristiano Ronaldo.</p>
+    <a class="mast-count" href="/#compteur"><b data-live="goals">{goals_txt}</b><span data-i18n="count_lbl">buts sur 1000</span></a>
   </div>
-  {hero_html}
-  {body_html}
-  {source_html}
-  <div class="related">
-    <h2>À lire aussi</h2>
-    <p>{related}</p>
+  <nav class="wrap sections" aria-label="Rubriques">
+    <ul>
+      <li><a href="/" data-i18n="nav_home">À la une</a></li>
+      <li><a href="/obrigado-cristiano/" class="hot" data-i18n="nav_tribute">Obrigado, Cristiano</a></li>
+      <li><a href="/#compteur" data-i18n="nav_counter">Le compteur</a></li>
+      <li><a href="/goals.html" data-i18n="nav_goals">Tous les buts</a></li>
+      <li><a href="/news.html" aria-current="page" data-i18n="nav_news">Actualités</a></li>
+      <li><a href="/coupe-du-monde/" data-i18n="nav_wc">Coupe du monde</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="article">
+<article class="wrap">
+  <header class="art-head">
+    <p class="label red kicker" id="art-kicker">{h(kicker_fr)}</p>
+    <h1 class="art-title" id="art-title">{h(title_fr)}</h1>
+    {lead_html}
+    <p class="meta byline"><span data-i18n="by">D'après</span> <b><bdi>{h(source)}</bdi></b> · <time id="art-date" datetime="{pub_iso}">{h(pub_human or 'Récent')}</time></p>
+  </header>
+  <div class="art-grid">
+    <div class="art-main">
+      {hero_html}
+      {dev_html}
+      {original_html}
+      {source_html}
+    </div>
+    <aside class="art-side">
+      <section class="box">
+        <h2 class="label" data-i18n="share">Partager</h2>
+        {share_html}
+      </section>
+      <section class="box cbox">
+        <h2 class="label red" data-i18n="cb_lbl">Le compteur</h2>
+        <div class="pair">
+          <div><span class="num" data-live="goals">{goals_txt}</span><span data-i18n="cb_goals">buts en carrière pour Cristiano Ronaldo</span></div>
+          <div><span class="num" data-live="remaining">{rem_txt}</span><span data-i18n="cb_rem">à marquer pour atteindre 1000</span></div>
+        </div>
+        <a href="/#compteur" data-i18n="cb_link">Suivre le compteur →</a>
+      </section>
+      <section class="box related">
+        <h2 class="label" data-i18n="related">À lire aussi</h2>
+        {related}
+      </section>
+    </aside>
   </div>
 </article>
-<script>
-(function(){{
-  var D={_payload_js};
-  var SUP=['fr','en','es','ar'];
-  function detect(){{var u=new URLSearchParams(location.search).get('lang');if(u&&SUP.indexOf(u)>=0)return u;try{{var s=localStorage.getItem('to1000_lang');if(s&&SUP.indexOf(s)>=0)return s;}}catch(e){{}}var n=(navigator.language||'fr').slice(0,2).toLowerCase();return SUP.indexOf(n)>=0?n:'fr';}}
-  function esc(t){{var d=document.createElement('div');d.textContent=t==null?'':t;return d.innerHTML;}}
-  function apply(l){{
-    var e=D.i18n[l];if(!e)return;
-    var H=document.documentElement;H.lang=l;H.dir=(l==='ar')?'rtl':'ltr';
-
-    var t=document.getElementById('art-title');if(t&&e.title){{t.textContent=e.title;t.setAttribute('dir','auto');}}
-    var ld=document.getElementById('art-lead');if(ld&&e.summary){{ld.textContent=e.summary;ld.setAttribute('dir','auto');}}
-    var dev=document.getElementById('art-dev');
-    if(dev){{
-      if(e.body&&e.body.length){{
-        dev.innerHTML=(e.format==='bullets')
-          ?'<ul class="essentiel">'+e.body.map(function(p){{return '<li>'+esc(p)+'</li>';}}).join('')+'</ul>'
-          :e.body.map(function(p){{return '<p>'+esc(p)+'</p>';}}).join('');
-      }}else{{dev.innerHTML='';}}
-    }}
-    var ui=D.ui[l]||D.ui.fr;
-    var ol=document.getElementById('art-orig-label');
-    if(ol){{var n=ui.ln[D.src_lang];ol.textContent=ui.orig+(n?' ('+n+')':'');}}
-    var rb=document.querySelector('.related');if(rb)rb.hidden=l!=='fr';
-    var rel=document.querySelector('.related h2');if(rel)rel.textContent=ui.related;
-    document.title=(e.title||document.title.split(' | ')[0])+' | To1000.com';
-  }}
-  var LANG=detect();
-  apply(LANG);
-  // Mini-sélecteur : changer de langue sans repasser par /news.
-  var nav=document.querySelector('.nav .links');
-  if(nav){{SUP.forEach(function(l){{
-    var a=document.createElement('a');a.href='#';a.textContent=l.toUpperCase();a.setAttribute('data-lang',l);
-    a.style.cssText='font-size:0.8rem'+(l===LANG?';color:#f2c14e':'');
-    a.onclick=function(ev){{ev.preventDefault();try{{localStorage.setItem('to1000_lang',l);}}catch(e){{}}
-      {{LANG=l;apply(l);
-        nav.querySelectorAll('a[data-lang]').forEach(function(x){{x.style.color=x.getAttribute('data-lang')===l?'#f2c14e':'';}});}}
-    }};nav.appendChild(a);
-  }});}}
-}})();
-</script>
-<footer class="footer">
-  <p>To1000.com est un site de fans <strong>non officiel</strong>. Cet article est un résumé automatique d'une source externe, traduit et structuré pour l'indexation. Pour le contenu original, suivre le lien source ci-dessus.</p>
-  <p>© 2026 · <a href="/">Accueil</a> · <a href="/coupe-du-monde/">Hub WC</a> · <a href="/goals.html">Compteur CR7</a></p>
+</main>
+<footer class="wrap foot">
+  <div class="foot-grid">
+    <a class="nameplate" href="/" aria-label="To1000.com, accueil">TO1000<span class="dot">.</span></a>
+    <nav aria-label="Pied de page">
+      <a href="/" data-i18n="nav_home">À la une</a><a href="/news.html" data-i18n="nav_news">Actualités</a><a href="/goals.html" data-i18n="nav_goals">Tous les buts</a><a href="/coupe-du-monde/" data-i18n="nav_wc">Coupe du monde</a><a href="/about.html" data-i18n="nav_about">À propos</a><a href="/privacy.html" data-i18n="nav_privacy">Confidentialité</a><a href="/contact.html" data-i18n="nav_contact">Contact</a>
+    </nav>
+  </div>
+  <p class="disclaimer" data-i18n="disclaimer">{disclaimer_fr}</p>
 </footer>
+<script>
+{script_js}
+</script>
 </body>
 </html>
 """
