@@ -11,6 +11,12 @@ on:
     branches: [main]
     paths:
       - 'public/**'
+      # Les générateurs exécutés ci-dessous : un changement de modèle doit
+      # être redéployé même si aucun fichier public n'a bougé.
+      - 'scripts/news_to_html.py'
+      - 'scripts/prerender_news.py'
+      - 'scripts/news_locale.py'
+      - '.github/workflows/deploy.yml'
   workflow_dispatch:   # allow manual "Deploy now" from the Actions tab
 
 permissions:
@@ -40,9 +46,23 @@ jobs:
           fetch-depth: 1
 
       - name: Régénérer les articles et cartes avec le contrat de langue courant
+        # En cas d'échec, la fin du message part en annotation « ::error » :
+        # lisible sans connexion (API check-runs), alors que le journal
+        # complet exige d'être connecté à GitHub.
         run: |
-          python3 scripts/news_to_html.py
-          python3 scripts/prerender_news.py
+          python3 --version
+          run_step() {
+            name="$1"; shift
+            if ! "$@" > "/tmp/$name.log" 2>&1; then
+              cat "/tmp/$name.log"
+              msg=$(tail -c 1800 "/tmp/$name.log" | tr '\n' ' ' | tr -d '\r')
+              echo "::error title=$name a échoué::$msg"
+              exit 1
+            fi
+            cat "/tmp/$name.log"
+          }
+          run_step news_to_html python3 scripts/news_to_html.py
+          run_step prerender python3 scripts/prerender_news.py
 
       - name: Deploy to Cloudflare Pages
         env:
