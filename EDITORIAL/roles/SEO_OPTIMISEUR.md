@@ -56,8 +56,8 @@ python scripts/seo_audit.py --check-size
 import requests, json
 body = {
   "host": "to1000.com",
-  "key": "a7f3b91c4d8e4f2a9b6c1d5e8f0a3b7c",
-  "keyLocation": "https://to1000.com/a7f3b91c4d8e4f2a9b6c1d5e8f0a3b7c.txt",
+  "key": "f8f82a07b7534f4abc736cd183ff3cf4",
+  "keyLocation": "https://to1000.com/f8f82a07b7534f4abc736cd183ff3cf4.txt",
   "urlList": [
     "https://to1000.com/news/new-page-1.html",
     "https://to1000.com/news/new-page-2.html",
