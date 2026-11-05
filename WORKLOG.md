@@ -5,6 +5,13 @@
 
 ---
 
+### [2026-11-05 ~23:20 UTC] — Claude Code (desktop) — **Charte « journal » étendue à /news, /goals, /coupe-du-monde et aux articles**
+- Fait : news.html, goals.html (registre à filets), générateur wc_pages.py (154 pages), modèle d'article news_to_html.py (en-tête, chapô, encadré source, partage, compteur). edition.css : repli Cairo et filet RTL, pas d'italique en arabe ; lien passé en ?v=20261106 partout. deploy.yml : erreurs de régénération publiées en annotation (lisibles sans connexion) et redéploiement quand un générateur change. Clé IndexNow corrigée (f8f82a07…, l'ancienne a7f3… renvoyait 404).
+- État : en ligne et vérifié (accueil, /news, /goals, CdM, article courant). Un déploiement a échoué une fois sans cause trouvée (journal réservé aux comptes connectés), le suivant est passé.
+- Reste : les ~31 700 articles d'archive (public/news/*.html hors fil) gardent l'ancien modèle sombre : news_to_html.py ne régénère que les items de news.json. Il faudrait une migration dédiée.
+- Bâton → Omar (décision migration archive)
+- Commit : poussé sur main
+
 ### [2026-11-05 ~16:00 UTC] — Claude Code (desktop) — **Hommage retraite internationale CR7 + refonte « journal » de l'accueil**
 - Fait : (1) Nouvelle page `/obrigado-cristiano/` (FR/EN/ES/AR) : 234 sélections, 146 buts, 12 dates, citation, contexte Jorge Jesus, vidéo X chargée au clic (RGPD), boutons de partage, image OG `images/og-obrigado-cristiano.jpg`. Faits recoupés : FPF, Reuters, ESPN, RMC, L'Équipe, Record. (2) Accueil refait : charte « journal du matin » (papier, encre, un rouge, filets ; Archivo + Newsreader) dans `css/edition.css` partagé. Fini le noir/or, halos, pastilles, scroll-snap. Compteur = grille de 1000 points (`js/goalgrid.js`), Portugal en rouge (146, figé), Al Nassr = total − 847. Fiche carrière en tableau. JSON-LD FAQ mis à jour (retraite, 146 buts). (3) `update_html_counts.py` : motifs pour la nouvelle structure + la page hommage ; `sitemap_generator.py` : URL ajoutée ; `_headers` : CSP dédiée à `/obrigado-cristiano/*` (platform.twitter.com).
 - État : vérifié en local (desktop, mobile 375, arabe RTL, vidéo, synchro simulée à 986). `qa_site.py` : 2 erreurs déjà présentes avant (goals-data.json à 967, jeton GSC).
