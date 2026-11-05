@@ -45,7 +45,7 @@ def card(it):
     else:
         return ""
     ps = it.get("primary_source") or {}
-    sname = (ps.get("flag", "") + " " if ps.get("flag") else "") + (ps.get("name") or "Football")
+    sname = ps.get("name") or "Football"  # sans drapeau emoji : illisible sous Windows (lettres « MA », « FR »)
     sc = int(it.get("source_count") or len(it.get("sources") or []) or 1)
     cred = (f'<span class="verif"></span>{sc} sources' if sc > 1 else esc(sname))
     img = it.get("image_url") if safe_url(it.get("image_url")) != "#" else PLACEHOLDER

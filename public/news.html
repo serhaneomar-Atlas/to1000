@@ -90,171 +90,100 @@
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://flagcdn.com">
   <link rel="dns-prefetch" href="https://flagcdn.com">
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/edition.css?v=20261105">
   <style>
-  :root{
-    --ink:#05070b;--charcoal:#0d1118;--steel:#161c26;--floodlight:#f7e7a3;
-    --gold:#f2c14e;--gold-hot:#ffd66b;--chalk:#eef2f6;--mute:#9aa6b4;
-    --line:rgba(247,231,163,.16);--live:#ff3b30;--maxw:1180px;
+  /* ---- /news : la page « Actualités » du journal ---- */
+  .page-head{padding-top:26px;padding-bottom:18px;display:grid;gap:10px}
+  .page-head h1{font-family:var(--sans);font-stretch:62%;font-weight:900;font-size:clamp(52px,9vw,112px);line-height:.86;letter-spacing:-.015em}
+  .page-head h1 .b{font-family:var(--serif);font-stretch:100%;font-style:italic;font-weight:500;letter-spacing:-.02em}
+  .promise{font-family:var(--serif);font-size:clamp(18px,1.9vw,21px);line-height:1.45;max-width:58ch}
+  .credline{display:flex;flex-wrap:wrap;gap:4px 18px;font-family:var(--sans);font-size:13px;color:var(--ink-2)}
+  .credline b{color:var(--ink);font-weight:700}
+  .credline .v{color:var(--green);font-weight:700}
+  html[dir="rtl"] .page-head h1,html[dir="rtl"] .page-head h1 .b{font-family:'Cairo',sans-serif;font-weight:900;letter-spacing:0;line-height:1.1;font-style:normal}
+
+  /* filtres : une ligne de rubriques, pas des pastilles */
+  .filters{position:sticky;top:0;z-index:20;background:var(--paper);border-top:3px solid var(--rule);border-bottom:1px solid var(--rule)}
+  .filters .row{display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px;padding-top:10px;padding-bottom:10px}
+  .chip{font-family:var(--sans);font-weight:600;font-size:15px;color:var(--ink-2);background:none;border:0;padding:4px 0;cursor:pointer}
+  .chip:hover{color:var(--ink)}
+  .chip.active{color:var(--ink);text-decoration:underline;text-decoration-thickness:3px;text-decoration-color:var(--red);text-underline-offset:6px}
+  .search,.srcsel{font-family:var(--sans);font-size:15px;color:var(--ink);background:#fff;border:1px solid var(--ink);border-radius:0;padding:8px 10px}
+  .search{flex:1 1 180px;min-width:0}
+  .search::placeholder{color:var(--ink-2)}
+  .srcsel{cursor:pointer;max-width:100%}
+  .filters .count{font-family:var(--sans);font-size:13px;color:var(--ink-2);margin-inline-start:auto}
+
+  /* les actus : colonnes de journal séparées par des filets */
+  main{padding-top:6px;padding-bottom:40px}
+  .news-grid{display:grid;grid-template-columns:1fr}
+  .card{display:grid;grid-template-columns:104px 1fr;gap:14px;padding:18px 0;border-bottom:1px solid var(--rule-soft);text-decoration:none;color:var(--ink)}
+  .card .thumb{display:block;aspect-ratio:1;background:var(--paper-2) center/cover no-repeat;position:relative}
+  .card .kindtag{position:absolute;inset-inline-start:0;top:0;background:var(--red);color:#fff;font-family:var(--sans);font-weight:700;font-size:11px;padding:3px 6px}
+  .card .body{display:flex;flex-direction:column;gap:6px;min-width:0}
+  .card .cat{font-family:var(--sans);font-weight:700;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--red)}
+  .card h4{font-family:var(--serif);font-weight:600;font-size:19px;line-height:1.22}
+  .card:hover h4{text-decoration:underline;text-decoration-color:var(--red);text-underline-offset:3px}
+  .card .sum{display:none;font-size:16px;line-height:1.45;color:var(--ink-2);-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .card .meta{display:flex;gap:10px;font-family:var(--sans);font-size:12.5px;color:var(--ink-2)}
+  .card .meta .src::after{content:"·";margin-inline-start:10px}
+  .card .src .verif::before{content:"✓ ";color:var(--green);font-weight:700}
+  .card .orig{display:none}
+  .empty{grid-column:1/-1;padding:40px 0;font-family:var(--sans);color:var(--ink-2)}
+  @media (min-width:700px){
+    .news-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px}
+    .card{grid-template-columns:1fr;gap:10px;align-content:start}
+    .card .thumb{aspect-ratio:16/10}
+    .card .sum{display:-webkit-box}
+    .card:first-child{grid-column:1/-1;grid-template-columns:1.3fr 1fr;gap:28px;align-items:end}
+    .card:first-child h4{font-size:clamp(28px,3.4vw,42px);line-height:1.08;letter-spacing:-.01em}
   }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{font-family:'Hanken Grotesk',system-ui,sans-serif;background:var(--ink);color:var(--chalk);-webkit-font-smoothing:antialiased;min-height:100vh}
-  a{color:inherit}
-  .impact{font-family:'Anton',sans-serif;font-weight:400;letter-spacing:.01em}
-  :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:3px}
+  @media (min-width:1080px){.news-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+  html[dir="rtl"] .card h4{font-family:'Cairo',sans-serif;font-weight:700}
 
-  /* topbar */
-  .topbar{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;gap:14px;
-    padding:14px 22px;background:linear-gradient(180deg,rgba(5,7,11,.94),rgba(5,7,11,.7));backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-  .brand{display:flex;align-items:center;gap:12px}
-  .brand .logo{font-family:'Anton',sans-serif;font-size:24px;letter-spacing:.02em;text-decoration:none;color:var(--chalk)}
-  .brand .logo b{color:var(--gold)}
-  .brand .tag{display:none;font-size:11px;color:var(--mute);max-width:240px;border-left:1px solid var(--line);padding-left:12px;line-height:1.3}
-  nav.main{display:none;gap:5px}
-  nav.main a{font-family:'Oswald',sans-serif;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);text-decoration:none;padding:7px 11px;border-radius:8px}
-  nav.main a:hover{color:var(--chalk);background:rgba(247,231,163,.07)}
-  nav.main a.active{color:var(--ink);background:var(--gold)}
-  .right{display:flex;align-items:center;gap:10px}
-  .lang-sw{display:inline-flex;gap:2px;border:1px solid var(--line);border-radius:999px;padding:3px;background:rgba(0,0,0,.35)}
-  .lang-sw button{font-family:'Oswald',sans-serif;font-weight:600;font-size:11px;color:var(--mute);background:none;border:0;cursor:pointer;padding:4px 9px;border-radius:999px}
-  .lang-sw button:hover{color:var(--chalk)}
-  .lang-sw button.active{background:var(--gold);color:var(--ink)}
-  .livepill{display:inline-flex;align-items:center;gap:8px;font-family:'Oswald',sans-serif;font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--chalk);padding:7px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(0,0,0,.35);text-decoration:none}
-  .livepill .dot{width:7px;height:7px;border-radius:50%;background:var(--live);box-shadow:0 0 10px var(--live);animation:blink 1.4s steps(1) infinite}
-  @keyframes blink{50%{opacity:.25}}
-  @media(min-width:760px){.brand .tag{display:block}}
-  @media(min-width:1080px){nav.main{display:flex}}
-
-  /* header */
-  .head{position:relative;padding:118px 22px 26px;overflow:hidden}
-  .head .bg{position:absolute;inset:0;z-index:0;background:url('/images/mockups/stadium-night.jpg') center/cover;opacity:.22}
-  .head .scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(5,7,11,.7),rgba(5,7,11,.4) 40%,var(--ink))}
-  .head .inner{position:relative;z-index:2;max-width:var(--maxw);margin:0 auto}
-  .eyebrow{font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--floodlight);display:inline-flex;align-items:center;gap:10px}
-  .eyebrow::before{content:"";width:28px;height:1px;background:var(--gold)}
-  .head h1{font-size:clamp(40px,8vw,92px);line-height:.98;margin:10px 0 6px}
-  .head h1 .gold{color:var(--gold)}
-  .promise{font-family:'Oswald',sans-serif;font-size:clamp(15px,2vw,19px);color:var(--mute);max-width:60ch}
-  .credline{margin-top:14px;font-family:'Oswald',sans-serif;font-size:12.5px;letter-spacing:.04em;color:var(--mute);display:flex;flex-wrap:wrap;gap:8px 18px}
-  .credline b{color:var(--chalk)}
-  .credline .v{color:#5fd38a}
-
-  /* filter bar */
-  .filters{position:sticky;top:63px;z-index:40;background:rgba(5,7,11,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-  .filters .row{max-width:var(--maxw);margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:12px 22px}
-  .chip{font-family:'Oswald',sans-serif;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);background:none;border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer}
-  .chip:hover{color:var(--chalk)}
-  .chip.active{background:var(--gold);border-color:var(--gold);color:var(--ink);font-weight:700}
-  .search,.srcsel{font-family:'Hanken Grotesk',sans-serif;font-size:14px;color:var(--chalk);background:rgba(0,0,0,.4);border:1px solid var(--line);border-radius:10px;padding:8px 12px}
-  .search{flex:1;min-width:160px}
-  .search::placeholder{color:var(--mute)}
-  .srcsel{cursor:pointer}
-  .filters .count{font-family:'Oswald',sans-serif;font-size:12px;color:var(--mute);margin-left:auto}
-
-  /* grid + cards (reprend le style homepage) */
-  main{max-width:var(--maxw);margin:0 auto;padding:26px 22px 60px}
-  .news-grid{display:grid;grid-template-columns:1fr;gap:18px}
-  @media(min-width:640px){.news-grid{grid-template-columns:1fr 1fr}}
-  @media(min-width:1024px){.news-grid{grid-template-columns:1fr 1fr 1fr}}
-  .card{display:flex;flex-direction:column;text-decoration:none;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:linear-gradient(180deg,rgba(13,17,24,.72),rgba(5,7,11,.66));transition:border-color .3s,transform .3s}
-  .card:hover{border-color:var(--gold);transform:translateY(-4px)}
-  .card:hover .orig{color:var(--gold-hot)}
-  .card .thumb{width:100%;height:172px;background-size:cover;background-position:center;position:relative;background-color:var(--charcoal)}
-  .card .thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(5,7,11,.8))}
-  .card .kindtag{position:absolute;left:11px;top:11px;z-index:2;font-family:'Oswald',sans-serif;font-weight:700;font-size:10px;letter-spacing:.12em;text-transform:uppercase;background:var(--gold);color:var(--ink);padding:3px 8px;border-radius:5px}
-  .card .body{display:flex;flex-direction:column;gap:9px;padding:14px 16px 13px;flex:1}
-  .card .cat{font-family:'Oswald',sans-serif;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
-  .card h4{font-family:'Oswald',sans-serif;font-weight:600;font-size:17px;line-height:1.22;color:var(--chalk);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-  .card .sum{font-size:13.5px;line-height:1.5;color:#aeb8c4;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-  .card .meta{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:9px;border-top:1px solid var(--line)}
-  .card .src{display:inline-flex;align-items:center;gap:5px;font-family:'Oswald',sans-serif;font-size:11.5px;color:var(--mute)}
-  .card .src .verif{color:#5fd38a;font-weight:700}
-  .card time{font-family:'Oswald',sans-serif;font-size:11.5px;color:var(--mute);white-space:nowrap}
-  .card .orig{font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);transition:color .2s}
-  .empty{grid-column:1/-1;text-align:center;color:var(--mute);font-family:'Oswald',sans-serif;padding:50px 0}
-
-  footer{border-top:1px solid var(--line);background:var(--charcoal);padding:34px 22px}
-  .foot-inner{max-width:var(--maxw);margin:0 auto;display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px}
-  .foot-inner .logo{font-family:'Anton',sans-serif;font-size:22px}.foot-inner .logo b{color:var(--gold)}
-  .foot-nav{display:flex;flex-wrap:wrap;gap:6px 16px}
-  .foot-nav a{font-family:'Oswald',sans-serif;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);text-decoration:none}
-  .foot-nav a:hover{color:var(--gold)}
-  .disclaimer{max-width:var(--maxw);margin:18px auto 0;color:var(--mute);font-size:12px;line-height:1.7;border-top:1px solid var(--line);padding-top:16px}
-  .disclaimer a{color:var(--mute)}
-
-  html[dir="rtl"] .card,html[dir="rtl"] .head .inner{text-align:right}
-  html[dir="rtl"] .eyebrow::before{margin-left:10px}
-  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-    .hamb{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:0;cursor:pointer;padding:8px 4px}
-  .hamb span{display:block;width:22px;height:2px;background:var(--chalk);border-radius:2px;transition:transform .25s,opacity .25s}
-  .hamb[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-  .hamb[aria-expanded="true"] span:nth-child(2){opacity:0}
-  .hamb[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-  .mobile-menu{position:fixed;top:58px;left:0;right:0;z-index:99;background:rgba(5,7,11,.98);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);display:flex;flex-direction:column;padding:6px 18px;box-shadow:0 18px 40px rgba(0,0,0,.5)}
-  .mobile-menu[hidden]{display:none}
-  .mobile-menu a{font-family:'Oswald',sans-serif;font-size:15px;letter-spacing:.05em;text-transform:uppercase;color:var(--chalk);text-decoration:none;padding:14px 4px;border-bottom:1px solid rgba(255,255,255,.07)}
-  .mobile-menu a:last-child{border-bottom:0}
-  @media(max-width:1079px){ .hamb{display:flex} }
-
-  /* newsletter (masquée tant que NEWSLETTER_FORM_ACTION n'est pas configurée — voir newsletter.js) */
-  .nl-section{border-top:1px solid var(--line);background:linear-gradient(180deg,rgba(13,17,24,.72),rgba(5,7,11,.66))}
+  /* newsletter (masquée tant que non configurée) */
   .nl-section[hidden]{display:none}
-  .nl-inner{max-width:var(--maxw);margin:0 auto;padding:38px 22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px}
-  .nl-copy h3{font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(22px,3.4vw,30px);letter-spacing:.01em;color:var(--chalk)}
-  .nl-copy p{color:var(--mute);font-size:14px;line-height:1.6;margin-top:6px;max-width:52ch}
-  .nl-form{display:flex;flex-wrap:wrap;gap:10px}
-  .nl-form input[type=email]{font-family:'Hanken Grotesk',system-ui,sans-serif;font-size:15px;color:var(--chalk);background:rgba(0,0,0,.4);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:240px}
-  .nl-form input[type=email]::placeholder{color:var(--mute)}
-  .nl-form button{font-family:'Oswald',sans-serif;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);background:var(--gold);border:0;border-radius:10px;padding:12px 20px;cursor:pointer}
-  .nl-form button:hover{background:var(--gold-hot)}
-  .nl-ok{display:none;color:#5fd38a;font-family:'Oswald',sans-serif;font-size:14px}
-</style>
+  .nl-inner{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px;padding-top:24px;padding-bottom:24px;border-top:3px solid var(--rule)}
+  .nl-copy h3{font-family:var(--sans);font-stretch:75%;font-weight:800;font-size:28px}
+  .nl-form{display:flex;flex-wrap:wrap;gap:8px}
+  .nl-form input[type=email]{font:inherit;font-size:16px;padding:11px 12px;border:2px solid var(--ink);background:#fff;min-width:240px}
+  .nl-form button{font-family:var(--sans);font-weight:700;font-size:15px;padding:12px 18px;border:2px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer}
+  .nl-ok{display:none;color:var(--green);font-family:var(--sans)}
+  </style>
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand">
-      <a href="/" class="logo" aria-label="TO1000.com">TO<b>1000</b></a>
-      <span class="tag" data-i18n="brand_tag">Le hub du football · compte à rebours du 1000e but de CR7</span>
+  <a class="skip" href="#grid" data-i18n="skip">Aller aux actualités</a>
+  <header>
+    <div class="wrap mast-top">
+      <span class="meta" id="today"></span>
+      <div class="lang-sw" role="group" aria-label="Language"><button type="button" data-l="fr" aria-pressed="false">FR</button><button type="button" data-l="en" aria-pressed="false">EN</button><button type="button" data-l="es" aria-pressed="false">ES</button><button type="button" data-l="ar" aria-pressed="false">AR</button></div>
     </div>
-    <nav class="main" aria-label="Navigation principale">
-      <a href="/#hero" data-i18n="nav_counter">Compteur</a>
-      <a href="/goals.html" data-i18n="nav_goals">Tous les buts</a>
-      <a href="/#parcours" data-i18n="nav_journey">Parcours</a>
-      <a href="/#match" data-i18n="nav_wc">Coupe du Monde</a>
-      <a href="/#data" data-i18n="nav_stats">Stats</a>
-      <a href="/news.html" class="active" data-i18n="nav_news">News</a>
+    <div class="wrap mast-name">
+      <a class="nameplate" href="/" aria-label="To1000.com">TO1000<span class="dot">.</span></a>
+      <p class="mast-tag" data-i18n="brand_tag">Le football, chaque jour. Et le compte à rebours du 1000e but de Cristiano Ronaldo.</p>
+      <a class="mast-count" href="/#compteur"><b id="pill">985</b><span data-i18n="count_lbl">buts sur 1000</span></a>
+    </div>
+    <nav class="wrap sections" aria-label="Rubriques">
+      <ul>
+        <li><a href="/" data-i18n="nav_home">À la une</a></li>
+        <li><a href="/obrigado-cristiano/" class="hot" data-i18n="nav_tribute">Obrigado, Cristiano</a></li>
+        <li><a href="/#compteur" data-i18n="nav_counter">Le compteur</a></li>
+        <li><a href="/goals.html" data-i18n="nav_goals">Tous les buts</a></li>
+        <li><a href="/news.html" aria-current="page" data-i18n="nav_news">Actualités</a></li>
+        <li><a href="/coupe-du-monde/" data-i18n="nav_wc">Coupe du monde</a></li>
+      </ul>
     </nav>
-    <div class="right">
-      <div class="lang-sw" role="group" aria-label="Language">
-        <button type="button" data-l="fr" aria-pressed="false">FR</button><button type="button" data-l="en" aria-pressed="false">EN</button>
-        <button type="button" data-l="es" aria-pressed="false">ES</button><button type="button" data-l="ar" aria-pressed="false">AR</button>
-      </div>
-      <a class="livepill" href="/#hero"><span class="dot" aria-hidden="true"></span><span id="pill">Live · …</span></a>
-      <button class="hamb" id="hamb" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
-    </div>
   </header>
-  <nav class="mobile-menu" id="mobileMenu" aria-label="Menu" hidden>
-    <a href="/#hero" data-i18n="nav_counter">Compteur</a>
-    <a href="/goals.html" data-i18n="nav_goals">Tous les buts</a>
-    <a href="/#parcours" data-i18n="nav_journey">Parcours</a>
-    <a href="/#match" data-i18n="nav_wc">Coupe du Monde</a>
-    <a href="/#data" data-i18n="nav_stats">Stats</a>
-    <a href="/news.html" data-i18n="nav_news">News</a>
-  </nav>
 
-  <section class="head">
-    <div class="bg" aria-hidden="true"></div><div class="scrim" aria-hidden="true"></div>
-    <div class="inner">
-      <p class="eyebrow" data-i18n="news_eyebrow">To1000 · News</p>
-      <h1 class="impact"><span data-i18n="news_title_a">L'actu foot,</span> <span class="gold" data-i18n="news_title_b">droit au but.</span></h1>
-      <p class="promise" data-i18n="news_promise">On lit la presse pour vous — l'essentiel de chaque info, sourcé et vérifié, avec le lien vers l'article original. Pas de blabla, pas de clickbait.</p>
-      <p class="credline" id="credline"></p>
-    </div>
+  <section class="wrap page-head" aria-labelledby="news-h1">
+    <h1 id="news-h1"><span data-i18n="news_title_a">L'actu foot,</span> <span class="b" data-i18n="news_title_b">droit au but.</span></h1>
+    <p class="promise" data-i18n="news_promise">On lit la presse pour vous : l'essentiel de chaque info, sourcé et vérifié, avec le lien vers l'article original. Pas de blabla, pas de clickbait.</p>
+    <p class="credline" id="credline"></p>
   </section>
 
   <div class="filters">
-    <div class="row">
+    <div class="row wrap">
       <button class="chip active" data-filter="all" data-i18n="filter_all">Tout</button>
       <button class="chip" data-filter="cr7" data-i18n="filter_cr7">CR7 · Ronaldo</button>
       <select class="srcsel" id="srcsel" aria-label="Source"></select>
@@ -263,33 +192,33 @@
     </div>
   </div>
 
-  <main>
+  <main class="wrap">
     <div class="news-grid" id="grid">
-<a class="card" href="/news/2bfa7bbe3f6b.html"><span class="thumb" style="background-image:url('https://i.f1g.fr/media/cms/2991x1682_crop/2026/11/05/3693099946401083473ec5a12d557e972ae3676aa44a815ed4b2da0a66c633b2.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">🇫🇷 Le Figaro Sport</span><h4>EN DIRECT – Bayer Leverkusen-Marseille : d’une merveille de Gouiri, l’OM en passe de créer la sensation en Allemagne</h4><span class="sum">L’Olympique de Marseille se déplace à Leverkusen, ce jeudi, pour le compte de la 4e journée de Ligue Europa. Les Phocéens restent sur trois défaites dans la compétition.</span><span class="meta"><span class="src">🇫🇷 Le Figaro Sport</span><time datetime="2026-11-05T21:49:03Z">il y a 14 min</time></span><span class="orig">Lire l'article →</span></span></a>
-<a class="card" href="/news/98949636c2f3.html"><span class="thumb" style="background-image:url('https://i.f1g.fr/media/cms/3000x1688_crop/2026/11/05/75594f9060449ad49be0491a96b4c7acf741bfec185f6185872e14dd40328095.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">🇫🇷 Le Figaro Sport</span><h4>Ligue Europa : en vidéo, le but splendide d’Amine Gouiri qui illumine la soirée marseillaise à Leverkusen</h4><span class="sum">D’une frappe limpide en lucarne, l’attaquant algérien a ouvert le score en faveur de l’OM ce jeudi face au Bayer Leverkusen.</span><span class="meta"><span class="src">🇫🇷 Le Figaro Sport</span><time datetime="2026-11-05T21:48:14Z">il y a 15 min</time></span><span class="orig">Lire l'article →</span></span></a>
-<a class="card" href="/news/6d11449958bc.html"><span class="thumb" style="background-image:url('https://i.f1g.fr/media/cms/3000x1688_crop/2026/11/05/0243b7836afdba3606900c7b1cc06333ff82685ba902cf5d4606ebbf41093188.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">🇫🇷 Le Figaro Sport</span><h4>Hand : l’équipe de France débute poussivement sa saison face à la Roumanie</h4><span class="sum">Les Bleus ont disposé de la Roumanie ce jeudi pour lancer leur saison et les qualifications à l’Euro 2028.</span><span class="meta"><span class="src">🇫🇷 Le Figaro Sport</span><time datetime="2026-11-05T21:23:04Z">il y a 40 min</time></span><span class="orig">Lire l'article →</span></span></a>
-<a class="card" href="/news/9b2c78d1ccf6.html"><span class="thumb" style="background-image:url('https://medias.lequipe.fr/img-photo-jpg/jean-louis-leca-directeur-sportif-du-rc-lens-assume-son-choix-d-avoir-nomme-yannick-cahuzac-a-droite-sur-le-banc-malgre-la-deroute-contre-come-mercredi-c-mahoudeau-et-f-faugere-l-equipe/1500000002643364/0:0,1500:1000-828-552-75/7382d.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">🇫🇷 L&#x27;Équipe</span><h4>« Un dirigeant assume toujours ses choix » : au lendemain du fiasco de Lens contre Côme, Jean-Louis Leca soutient son entraîneur Yannick Cahuzac</h4><span class="sum">Au lendemain de la claque historique infligée par Côme en Ligue des champions (1-9), Jean-Louis Leca, le directeur sportif du RC Lens, assure ne pas regretter le changement d&#x27;entraîneur opéré à la mi-septembre, lorsque Yannick Cahuzac avait remplacé Dino Toppmöller.</span><span class="meta"><span class="src">🇫🇷 L&#x27;Équipe</span><time datetime="2026-11-05T21:10:59Z">il y a 52 min</time></span><span class="orig">Lire l'article →</span></span></a>
-<a class="card" href="/news/43c929b15912.html"><span class="thumb" style="background-image:url('https://medias.lequipe.fr/img-photo-jpg/olivier-letang-le-president-du-losc-a-mounic-l-equipe/1500000002643248/0:0,2000:1333-828-552-75/97204.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">🇫🇷 L&#x27;Équipe</span><h4>Ligue 1 : après ses critiques contre l’arbitrage, le président du Losc Olivier Létang suspendu quatre mois ferme</h4><span class="sum">INFO L&#x27;ÉQUIPE. La commission d&#x27;appel de la FFF a infligé une lourde sanction au président lillois, Olivier Létang, après un nouvel écart contre les arbitres de Lille-PSG (2-2) en début de saison.</span><span class="meta"><span class="src"><span class="verif"></span>3 sources</span><time datetime="2026-11-05T21:03:02Z">il y a 60 min</time></span><span class="orig">Lire l'article →</span></span></a>
-<a class="card" href="/news/bead6a49b30b.html"><span class="thumb" style="background-image:url('https://f2.hespress.com/wp-content/uploads/2026/11/tashima-fifa.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">🇲🇦 Hespress Sport</span><h4>FIFA : le Japonais Kohzo Tashima candidat à la présidence face à Gianni Infantino</h4><span class="sum">Le Japonais Kohzo Tashima, président d’honneur de la Fédération japonaise de football, a annoncé ce jeudi sa candidature à la présidence de la FIFA.</span><span class="meta"><span class="src"><span class="verif"></span>2 sources</span><time datetime="2026-11-05T20:59:17Z">il y a 1 h</time></span><span class="orig">Lire l'article →</span></span></a>
-<a class="card" href="/news/b0263f4fffd4.html"><span class="thumb" style="background-image:url('https://i.f1g.fr/media/cms/2995x1685_crop/2026/11/05/5a9414d02145a75ab7f6723178d65105c411a75d23e2368381c6e8d3cc083f33.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">🇫🇷 Le Figaro Sport</span><h4>Rolex Paris Masters : désillusion pour Arthur Fils, surclassé par Taylor Fritz en 8e de finale</h4><span class="sum">Le Français, numéro 7 mondial, n’a rien pu faire face à l’Américain Taylor Fritz en 8e de finale du Rolex Paris Masters ce jeudi (6-3, 6-4).</span><span class="meta"><span class="src">🇫🇷 Le Figaro Sport</span><time datetime="2026-11-05T20:13:07Z">il y a 2 h</time></span><span class="orig">Lire l'article →</span></span></a>
-<a class="card" href="/news/31e0daf37fb6.html"><span class="thumb" style="background-image:url('https://africatopsports.com/wp-content/uploads/2026/09/IMG_4488.jpeg')" aria-hidden="true"></span><span class="body"><span class="cat">🌍 Africa Top Sports</span><h4>Congo : Claude Le Roy face à la presse ce vendredi au siège de la FECOFOOT !</h4><span class="sum">Dans le cadre des préparatifs pour les éliminatoires de la Coupe d’Afrique des Nations (CAN 2027), la Fédération Congolaise de Football (FECOFOOT) a publié un communiqué officiel à l’intention de Lire l&#x27;article The post Congo : Claude Le Roy face à la presse ce vendredi au…</span><span class="meta"><span class="src">🌍 Africa Top Sports</span><time datetime="2026-11-05T20:12:48Z">il y a 2 h</time></span><span class="orig">Lire l'article →</span></span></a>
-<a class="card" href="/news/27daa7b49bc7.html"><span class="thumb" style="background-image:url('https://medias.lequipe.fr/img-photo-jpg/alexander-prass-a-ouvert-le-score-pour-hoffenheim-sur-la-pelouse-d-un-crystal-palace-encore-en-souffrance-jacques-feeney-offside/1500000002643328/3:30,1888:1287-828-552-75/e9110.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">🇫🇷 L&#x27;Équipe</span><h4>L&#x27;AC Milan tombe face à Ferencvaros, le Crystal Palace de Pierre Sage sauve les apparences face à Hoffenheim et Bournemouth enchaîne</h4><span class="sum">Bien aidé par une bévue de la doublure de Mike Maignan dans le but italien, Ferencvaros a enchaîné un quatrième succès en Ligue Europa face à l&#x27;AC Milan (2-0). Comme Bournemouth, coleader grâce à sa victoire chez le Sparta Prague (3-1).</span><span class="meta"><span class="src">🇫🇷 L&#x27;Équipe</span><time datetime="2026-11-05T20:01:36Z">il y a 2 h</time></span><span class="orig">Lire l'article →</span></span></a>
-<a class="card" href="/news/f057f5ccdc3e.html"><span class="thumb" style="background-image:url('https://medias.lequipe.fr/img-photo-jpg/igor-paixao-et-amine-gouiri-sont-titulaires-avec-l-om-contre-le-bayer-leverkusen-p-lahalle-l-equipe/1500000002643321/325:216,2000:1332-828-552-75/642ec.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">🇫🇷 L&#x27;Équipe</span><h4>La composition de l&#x27;OM sur la pelouse du Bayer Leverkusen en Ligue Europa : Paixao et Gouiri titulaires</h4><span class="sum">Bruno Genesio n&#x27;a fait que deux changements par rapport à l&#x27;équipe type qui a battu Toulouse (2-0), dimanche soir au Vélodrome. Petite nouveauté : Timothy Weah retrouve un poste d&#x27;ailier droit.</span><span class="meta"><span class="src">🇫🇷 L&#x27;Équipe</span><time datetime="2026-11-05T19:47:13Z">il y a 2 h</time></span><span class="orig">Lire l'article →</span></span></a>
-<a class="card" href="/news/4899267759fb.html"><span class="thumb" style="background-image:url('https://africatopsports.com/wp-content/uploads/2026/11/IMG_6728.jpeg')" aria-hidden="true"></span><span class="body"><span class="cat">🌍 Africa Top Sports</span><h4>Éliminatoires CAN 2027 : la Sierra Leone dévoile ses 25 guerriers pour défier la RDC !</h4><span class="sum">Le sélectionneur de la Sierra Leone, Didier Gomes Da Rosa, a rendu publique sa liste des 25 joueurs retenus pour disputer la double confrontation face aux Léopards de la RDC.</span><span class="meta"><span class="src">🌍 Africa Top Sports</span><time datetime="2026-11-05T19:06:05Z">il y a 3 h</time></span><span class="orig">Lire l'article →</span></span></a>
-<a class="card" href="/news/b7807bf28073.html"><span class="thumb" style="background-image:url('https://africatopsports.com/wp-content/uploads/2026/11/IMG_20261105_184646.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">🌍 Africa Top Sports</span><h4>Elim. CAN 2027 : Amir Abdou explique les raisons du retour d’Issoufou Dayo chez les Étalons</h4><span class="sum">Le sélectionneur du Burkina Faso, Amir Abdou, est revenu sur le retour d’Issoufou Dayo en équipe nationale pour les 3e et 4e journées des éliminatoires de la CAN 2027. Le Lire l&#x27;article The post Elim.</span><span class="meta"><span class="src">🌍 Africa Top Sports</span><time datetime="2026-11-05T18:48:07Z">il y a 3 h</time></span><span class="orig">Lire l'article →</span></span></a>
-<a class="card" href="/news/e11493865fbf.html"><span class="thumb" style="background-image:url('https://africatopsports.com/wp-content/uploads/2026/11/Comores.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">🌍 Africa Top Sports</span><h4>Elim CAN 2027 : La liste des Comores avec 5 retours pour affronter le Congo</h4><span class="sum">Hubert Velud a dévoilé une liste de 24 joueurs pour la double confrontation des Comores face à la République du Congo, dans le cadre des troisième et quatrième journées des Lire l&#x27;article The post Elim CAN 2027 : La liste des Comores avec 5 retours pour affronter le Congo…</span><span class="meta"><span class="src">🌍 Africa Top Sports</span><time datetime="2026-11-05T18:33:53Z">il y a 3 h</time></span><span class="orig">Lire l'article →</span></span></a>
-<a class="card" href="/news/258fedb61777.html"><span class="thumb" style="background-image:url('https://medias.lequipe.fr/img-photo-jpg/alphadjo-cisse-vient-d-etre-appele-en-equipe-d-italie-p-bona-ipp/1500000002643284/0:0,1766:1178-828-552-75/90017.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">🇫🇷 L&#x27;Équipe</span><h4>Italie : Roberto Mancini convoque 31 joueurs pour la Ligue des nations, première pour Alphadjo Cisse</h4><span class="sum">Le sélectionneur italien, Roberto Mancini, a publié ce jeudi sa liste pour les deux prochains matches de Ligue des nations, le 12 novembre à Milan contre les Bleus (20h45) puis le 15 novembre à Bruxelles contre la Belgique (20h45, sur la chaine L&#x27;Équipe).</span><span class="meta"><span class="src">🇫🇷 L&#x27;Équipe</span><time datetime="2026-11-05T18:31:10Z">il y a 4 h</time></span><span class="orig">Lire l'article →</span></span></a>
-<a class="card" href="/news/9e5b11f5e03a.html"><span class="thumb" style="background-image:url('https://africatopsports.com/wp-content/uploads/2026/11/IMG_20261105_182302.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">🌍 Africa Top Sports</span><h4>Élim CAN 2027 : Issoufou Dayo sort de sa retraite, Josué Tiendrébéogo et Sacha Banse de retour</h4><span class="sum">Le sélectionneur du Burkina Faso, Amir Abdou, a dévoilé sa liste pour les 3e et 4e journées des éliminatoires de la CAN 2027.</span><span class="meta"><span class="src">🌍 Africa Top Sports</span><time datetime="2026-11-05T18:29:59Z">il y a 4 h</time></span><span class="orig">Lire l'article →</span></span></a>
-<a class="card" href="/news/872329700ebf.html"><span class="thumb" style="background-image:url('https://africatopsports.com/wp-content/uploads/2026/11/IMG_20261105_181706.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">🌍 Africa Top Sports</span><h4>Éliminatoires CAN 2027 : La liste du Burkina Faso pour les 3e et 4e journées</h4><span class="sum">Le sélectionneur des Étalons du Burkina Faso, Amir Abdou, a dévoilé la liste des joueurs retenus pour les 3e et 4e journées des éliminatoires de la Coupe d’Afrique des nations Lire l&#x27;article The post Éliminatoires CAN 2027 : La liste du Burkina Faso pour les 3e et 4e journées…</span><span class="meta"><span class="src">🌍 Africa Top Sports</span><time datetime="2026-11-05T18:18:02Z">il y a 4 h</time></span><span class="orig">Lire l'article →</span></span></a>
-<a class="card" href="/news/e7b1425e277e.html"><span class="thumb" style="background-image:url('https://f2.hespress.com/wp-content/uploads/2026/11/U23.jpeg')" aria-hidden="true"></span><span class="body"><span class="cat">🇲🇦 Hespress Sport</span><h4>Élim CAN U23 : Jamel Aït Ben Idir convoque 25 joueurs pour les deux matchs face à l’Éthiopie</h4><span class="sum">Le sélectionneur de l’équipe nationale des moins de 23 ans (U23), Jamel Aït Ben Idir , a dévoilé la liste des 25 joueurs convoqués pour prendre part aux deux rencontres face à l’Éthiopie, dans le cadre du deuxième tour des éliminatoires de la Coupe d’Afrique des Nations U23.</span><span class="meta"><span class="src">🇲🇦 Hespress Sport</span><time datetime="2026-11-05T18:16:39Z">il y a 4 h</time></span><span class="orig">Lire l'article →</span></span></a>
-<a class="card" href="/news/26529f3b791a.html"><span class="thumb" style="background-image:url('https://medias.lequipe.fr/img-photo-jpg/-/1500000002643255/0:0,1500:1000-828-552-75/52737.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">🇫🇷 L&#x27;Équipe</span><h4>Podcast « Big 5 » - De Bruyne à Naples, le crépuscule d&#x27;un géant</h4><span class="sum">Kevin De Bruyne connaît une deuxième saison contrastée à Naples, à l&#x27;image de toute l&#x27;équipe, distancée en Serie A et en C1. Si l&#x27;ancien maestro de Manchester City reste capable de briller individuellement, il apporte moins au collectif que par le passé.</span><span class="meta"><span class="src">🇫🇷 L&#x27;Équipe</span><time datetime="2026-11-05T17:54:22Z">il y a 4 h</time></span><span class="orig">Lire l'article →</span></span></a>
-<a class="card" href="/news/575b5ad1e316.html"><span class="thumb" style="background-image:url('https://medias.lequipe.fr/img-photo-jpg/cristiano-ronaldo-a-marque-l-histoire-du-foot-de-selection-avec-des-chiffres-hors-norme-f-faugere-l-equipe/1500000002643247/0:0,2000:1333-828-552-75/d999d.jpg')" aria-hidden="true"><span class="kindtag">CR7</span></span><span class="body"><span class="cat">🇫🇷 L&#x27;Équipe</span><h4>La carrière internationale de Cristiano Ronaldo avec le Portugal en chiffres</h4><span class="sum">Ce jeudi, Cristiano Ronaldo a annoncé la fin de sa carrière internationale, un mois après le psychodrame avec le sélectionneur du Portugal Jorge Jesus. Retour en chiffres sur l&#x27;extraordinaire carrière du quintuple Ballon d&#x27;Or avec le pays lusitanien (2003-2026).</span><span class="meta"><span class="src"><span class="verif"></span>5 sources</span><time datetime="2026-11-05T17:51:06Z">il y a 4 h</time></span><span class="orig">Lire l'article →</span></span></a>
-<a class="card" href="/news/4e11473aed4f.html"><span class="thumb" style="background-image:url('https://i.f1g.fr/media/cms/orig/2026/11/05/88c1e6d5bdacd1a296e521ec99bc7c71a0658b43ce92c3faa21ad9b62d17bd9d.JPG')" aria-hidden="true"></span><span class="body"><span class="cat">🇫🇷 Le Figaro Sport</span><h4>Foot: un nouveau record mondial de cartons rouges battu au Brésil</h4><span class="sum">LE SCAN SPORT - Une rencontre entre deux jeunes équipes au Brésil a totalement dégénéré ce dimanche. Au total, 43 joueurs et huit membres des staffs ont été expulsés.</span><span class="meta"><span class="src"><span class="verif"></span>2 sources</span><time datetime="2026-11-05T17:47:39Z">il y a 4 h</time></span><span class="orig">Lire l'article →</span></span></a>
+<a class="card" href="/news/2bfa7bbe3f6b.html"><span class="thumb" style="background-image:url('https://i.f1g.fr/media/cms/2991x1682_crop/2026/11/05/3693099946401083473ec5a12d557e972ae3676aa44a815ed4b2da0a66c633b2.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">Le Figaro Sport</span><h4>EN DIRECT – Bayer Leverkusen-Marseille : d’une merveille de Gouiri, l’OM en passe de créer la sensation en Allemagne</h4><span class="sum">L’Olympique de Marseille se déplace à Leverkusen, ce jeudi, pour le compte de la 4e journée de Ligue Europa. Les Phocéens restent sur trois défaites dans la compétition.</span><span class="meta"><span class="src">Le Figaro Sport</span><time datetime="2026-11-05T21:49:03Z">il y a 1 h</time></span><span class="orig">Lire l'article →</span></span></a>
+<a class="card" href="/news/98949636c2f3.html"><span class="thumb" style="background-image:url('https://i.f1g.fr/media/cms/3000x1688_crop/2026/11/05/75594f9060449ad49be0491a96b4c7acf741bfec185f6185872e14dd40328095.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">Le Figaro Sport</span><h4>Ligue Europa : en vidéo, le but splendide d’Amine Gouiri qui illumine la soirée marseillaise à Leverkusen</h4><span class="sum">D’une frappe limpide en lucarne, l’attaquant algérien a ouvert le score en faveur de l’OM ce jeudi face au Bayer Leverkusen.</span><span class="meta"><span class="src">Le Figaro Sport</span><time datetime="2026-11-05T21:48:14Z">il y a 1 h</time></span><span class="orig">Lire l'article →</span></span></a>
+<a class="card" href="/news/6d11449958bc.html"><span class="thumb" style="background-image:url('https://i.f1g.fr/media/cms/3000x1688_crop/2026/11/05/0243b7836afdba3606900c7b1cc06333ff82685ba902cf5d4606ebbf41093188.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">Le Figaro Sport</span><h4>Hand : l’équipe de France débute poussivement sa saison face à la Roumanie</h4><span class="sum">Les Bleus ont disposé de la Roumanie ce jeudi pour lancer leur saison et les qualifications à l’Euro 2028.</span><span class="meta"><span class="src">Le Figaro Sport</span><time datetime="2026-11-05T21:23:04Z">il y a 1 h</time></span><span class="orig">Lire l'article →</span></span></a>
+<a class="card" href="/news/9b2c78d1ccf6.html"><span class="thumb" style="background-image:url('https://medias.lequipe.fr/img-photo-jpg/jean-louis-leca-directeur-sportif-du-rc-lens-assume-son-choix-d-avoir-nomme-yannick-cahuzac-a-droite-sur-le-banc-malgre-la-deroute-contre-come-mercredi-c-mahoudeau-et-f-faugere-l-equipe/1500000002643364/0:0,1500:1000-828-552-75/7382d.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">L&#x27;Équipe</span><h4>« Un dirigeant assume toujours ses choix » : au lendemain du fiasco de Lens contre Côme, Jean-Louis Leca soutient son entraîneur Yannick Cahuzac</h4><span class="sum">Au lendemain de la claque historique infligée par Côme en Ligue des champions (1-9), Jean-Louis Leca, le directeur sportif du RC Lens, assure ne pas regretter le changement d&#x27;entraîneur opéré à la mi-septembre, lorsque Yannick Cahuzac avait remplacé Dino Toppmöller.</span><span class="meta"><span class="src">L&#x27;Équipe</span><time datetime="2026-11-05T21:10:59Z">il y a 2 h</time></span><span class="orig">Lire l'article →</span></span></a>
+<a class="card" href="/news/43c929b15912.html"><span class="thumb" style="background-image:url('https://medias.lequipe.fr/img-photo-jpg/olivier-letang-le-president-du-losc-a-mounic-l-equipe/1500000002643248/0:0,2000:1333-828-552-75/97204.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">L&#x27;Équipe</span><h4>Ligue 1 : après ses critiques contre l’arbitrage, le président du Losc Olivier Létang suspendu quatre mois ferme</h4><span class="sum">INFO L&#x27;ÉQUIPE. La commission d&#x27;appel de la FFF a infligé une lourde sanction au président lillois, Olivier Létang, après un nouvel écart contre les arbitres de Lille-PSG (2-2) en début de saison.</span><span class="meta"><span class="src"><span class="verif"></span>3 sources</span><time datetime="2026-11-05T21:03:02Z">il y a 2 h</time></span><span class="orig">Lire l'article →</span></span></a>
+<a class="card" href="/news/bead6a49b30b.html"><span class="thumb" style="background-image:url('https://f2.hespress.com/wp-content/uploads/2026/11/tashima-fifa.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">Hespress Sport</span><h4>FIFA : le Japonais Kohzo Tashima candidat à la présidence face à Gianni Infantino</h4><span class="sum">Le Japonais Kohzo Tashima, président d’honneur de la Fédération japonaise de football, a annoncé ce jeudi sa candidature à la présidence de la FIFA.</span><span class="meta"><span class="src"><span class="verif"></span>2 sources</span><time datetime="2026-11-05T20:59:17Z">il y a 2 h</time></span><span class="orig">Lire l'article →</span></span></a>
+<a class="card" href="/news/b0263f4fffd4.html"><span class="thumb" style="background-image:url('https://i.f1g.fr/media/cms/2995x1685_crop/2026/11/05/5a9414d02145a75ab7f6723178d65105c411a75d23e2368381c6e8d3cc083f33.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">Le Figaro Sport</span><h4>Rolex Paris Masters : désillusion pour Arthur Fils, surclassé par Taylor Fritz en 8e de finale</h4><span class="sum">Le Français, numéro 7 mondial, n’a rien pu faire face à l’Américain Taylor Fritz en 8e de finale du Rolex Paris Masters ce jeudi (6-3, 6-4).</span><span class="meta"><span class="src">Le Figaro Sport</span><time datetime="2026-11-05T20:13:07Z">il y a 3 h</time></span><span class="orig">Lire l'article →</span></span></a>
+<a class="card" href="/news/31e0daf37fb6.html"><span class="thumb" style="background-image:url('https://africatopsports.com/wp-content/uploads/2026/09/IMG_4488.jpeg')" aria-hidden="true"></span><span class="body"><span class="cat">Africa Top Sports</span><h4>Congo : Claude Le Roy face à la presse ce vendredi au siège de la FECOFOOT !</h4><span class="sum">Dans le cadre des préparatifs pour les éliminatoires de la Coupe d’Afrique des Nations (CAN 2027), la Fédération Congolaise de Football (FECOFOOT) a publié un communiqué officiel à l’intention de Lire l&#x27;article The post Congo : Claude Le Roy face à la presse ce vendredi au…</span><span class="meta"><span class="src">Africa Top Sports</span><time datetime="2026-11-05T20:12:48Z">il y a 3 h</time></span><span class="orig">Lire l'article →</span></span></a>
+<a class="card" href="/news/27daa7b49bc7.html"><span class="thumb" style="background-image:url('https://medias.lequipe.fr/img-photo-jpg/alexander-prass-a-ouvert-le-score-pour-hoffenheim-sur-la-pelouse-d-un-crystal-palace-encore-en-souffrance-jacques-feeney-offside/1500000002643328/3:30,1888:1287-828-552-75/e9110.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">L&#x27;Équipe</span><h4>L&#x27;AC Milan tombe face à Ferencvaros, le Crystal Palace de Pierre Sage sauve les apparences face à Hoffenheim et Bournemouth enchaîne</h4><span class="sum">Bien aidé par une bévue de la doublure de Mike Maignan dans le but italien, Ferencvaros a enchaîné un quatrième succès en Ligue Europa face à l&#x27;AC Milan (2-0). Comme Bournemouth, coleader grâce à sa victoire chez le Sparta Prague (3-1).</span><span class="meta"><span class="src">L&#x27;Équipe</span><time datetime="2026-11-05T20:01:36Z">il y a 3 h</time></span><span class="orig">Lire l'article →</span></span></a>
+<a class="card" href="/news/f057f5ccdc3e.html"><span class="thumb" style="background-image:url('https://medias.lequipe.fr/img-photo-jpg/igor-paixao-et-amine-gouiri-sont-titulaires-avec-l-om-contre-le-bayer-leverkusen-p-lahalle-l-equipe/1500000002643321/325:216,2000:1332-828-552-75/642ec.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">L&#x27;Équipe</span><h4>La composition de l&#x27;OM sur la pelouse du Bayer Leverkusen en Ligue Europa : Paixao et Gouiri titulaires</h4><span class="sum">Bruno Genesio n&#x27;a fait que deux changements par rapport à l&#x27;équipe type qui a battu Toulouse (2-0), dimanche soir au Vélodrome. Petite nouveauté : Timothy Weah retrouve un poste d&#x27;ailier droit.</span><span class="meta"><span class="src">L&#x27;Équipe</span><time datetime="2026-11-05T19:47:13Z">il y a 3 h</time></span><span class="orig">Lire l'article →</span></span></a>
+<a class="card" href="/news/4899267759fb.html"><span class="thumb" style="background-image:url('https://africatopsports.com/wp-content/uploads/2026/11/IMG_6728.jpeg')" aria-hidden="true"></span><span class="body"><span class="cat">Africa Top Sports</span><h4>Éliminatoires CAN 2027 : la Sierra Leone dévoile ses 25 guerriers pour défier la RDC !</h4><span class="sum">Le sélectionneur de la Sierra Leone, Didier Gomes Da Rosa, a rendu publique sa liste des 25 joueurs retenus pour disputer la double confrontation face aux Léopards de la RDC.</span><span class="meta"><span class="src">Africa Top Sports</span><time datetime="2026-11-05T19:06:05Z">il y a 4 h</time></span><span class="orig">Lire l'article →</span></span></a>
+<a class="card" href="/news/b7807bf28073.html"><span class="thumb" style="background-image:url('https://africatopsports.com/wp-content/uploads/2026/11/IMG_20261105_184646.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">Africa Top Sports</span><h4>Elim. CAN 2027 : Amir Abdou explique les raisons du retour d’Issoufou Dayo chez les Étalons</h4><span class="sum">Le sélectionneur du Burkina Faso, Amir Abdou, est revenu sur le retour d’Issoufou Dayo en équipe nationale pour les 3e et 4e journées des éliminatoires de la CAN 2027. Le Lire l&#x27;article The post Elim.</span><span class="meta"><span class="src">Africa Top Sports</span><time datetime="2026-11-05T18:48:07Z">il y a 4 h</time></span><span class="orig">Lire l'article →</span></span></a>
+<a class="card" href="/news/e11493865fbf.html"><span class="thumb" style="background-image:url('https://africatopsports.com/wp-content/uploads/2026/11/Comores.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">Africa Top Sports</span><h4>Elim CAN 2027 : La liste des Comores avec 5 retours pour affronter le Congo</h4><span class="sum">Hubert Velud a dévoilé une liste de 24 joueurs pour la double confrontation des Comores face à la République du Congo, dans le cadre des troisième et quatrième journées des Lire l&#x27;article The post Elim CAN 2027 : La liste des Comores avec 5 retours pour affronter le Congo…</span><span class="meta"><span class="src">Africa Top Sports</span><time datetime="2026-11-05T18:33:53Z">il y a 4 h</time></span><span class="orig">Lire l'article →</span></span></a>
+<a class="card" href="/news/258fedb61777.html"><span class="thumb" style="background-image:url('https://medias.lequipe.fr/img-photo-jpg/alphadjo-cisse-vient-d-etre-appele-en-equipe-d-italie-p-bona-ipp/1500000002643284/0:0,1766:1178-828-552-75/90017.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">L&#x27;Équipe</span><h4>Italie : Roberto Mancini convoque 31 joueurs pour la Ligue des nations, première pour Alphadjo Cisse</h4><span class="sum">Le sélectionneur italien, Roberto Mancini, a publié ce jeudi sa liste pour les deux prochains matches de Ligue des nations, le 12 novembre à Milan contre les Bleus (20h45) puis le 15 novembre à Bruxelles contre la Belgique (20h45, sur la chaine L&#x27;Équipe).</span><span class="meta"><span class="src">L&#x27;Équipe</span><time datetime="2026-11-05T18:31:10Z">il y a 4 h</time></span><span class="orig">Lire l'article →</span></span></a>
+<a class="card" href="/news/9e5b11f5e03a.html"><span class="thumb" style="background-image:url('https://africatopsports.com/wp-content/uploads/2026/11/IMG_20261105_182302.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">Africa Top Sports</span><h4>Élim CAN 2027 : Issoufou Dayo sort de sa retraite, Josué Tiendrébéogo et Sacha Banse de retour</h4><span class="sum">Le sélectionneur du Burkina Faso, Amir Abdou, a dévoilé sa liste pour les 3e et 4e journées des éliminatoires de la CAN 2027.</span><span class="meta"><span class="src">Africa Top Sports</span><time datetime="2026-11-05T18:29:59Z">il y a 4 h</time></span><span class="orig">Lire l'article →</span></span></a>
+<a class="card" href="/news/872329700ebf.html"><span class="thumb" style="background-image:url('https://africatopsports.com/wp-content/uploads/2026/11/IMG_20261105_181706.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">Africa Top Sports</span><h4>Éliminatoires CAN 2027 : La liste du Burkina Faso pour les 3e et 4e journées</h4><span class="sum">Le sélectionneur des Étalons du Burkina Faso, Amir Abdou, a dévoilé la liste des joueurs retenus pour les 3e et 4e journées des éliminatoires de la Coupe d’Afrique des nations Lire l&#x27;article The post Éliminatoires CAN 2027 : La liste du Burkina Faso pour les 3e et 4e journées…</span><span class="meta"><span class="src">Africa Top Sports</span><time datetime="2026-11-05T18:18:02Z">il y a 5 h</time></span><span class="orig">Lire l'article →</span></span></a>
+<a class="card" href="/news/e7b1425e277e.html"><span class="thumb" style="background-image:url('https://f2.hespress.com/wp-content/uploads/2026/11/U23.jpeg')" aria-hidden="true"></span><span class="body"><span class="cat">Hespress Sport</span><h4>Élim CAN U23 : Jamel Aït Ben Idir convoque 25 joueurs pour les deux matchs face à l’Éthiopie</h4><span class="sum">Le sélectionneur de l’équipe nationale des moins de 23 ans (U23), Jamel Aït Ben Idir , a dévoilé la liste des 25 joueurs convoqués pour prendre part aux deux rencontres face à l’Éthiopie, dans le cadre du deuxième tour des éliminatoires de la Coupe d’Afrique des Nations U23.</span><span class="meta"><span class="src">Hespress Sport</span><time datetime="2026-11-05T18:16:39Z">il y a 5 h</time></span><span class="orig">Lire l'article →</span></span></a>
+<a class="card" href="/news/26529f3b791a.html"><span class="thumb" style="background-image:url('https://medias.lequipe.fr/img-photo-jpg/-/1500000002643255/0:0,1500:1000-828-552-75/52737.jpg')" aria-hidden="true"></span><span class="body"><span class="cat">L&#x27;Équipe</span><h4>Podcast « Big 5 » - De Bruyne à Naples, le crépuscule d&#x27;un géant</h4><span class="sum">Kevin De Bruyne connaît une deuxième saison contrastée à Naples, à l&#x27;image de toute l&#x27;équipe, distancée en Serie A et en C1. Si l&#x27;ancien maestro de Manchester City reste capable de briller individuellement, il apporte moins au collectif que par le passé.</span><span class="meta"><span class="src">L&#x27;Équipe</span><time datetime="2026-11-05T17:54:22Z">il y a 5 h</time></span><span class="orig">Lire l'article →</span></span></a>
+<a class="card" href="/news/575b5ad1e316.html"><span class="thumb" style="background-image:url('https://medias.lequipe.fr/img-photo-jpg/cristiano-ronaldo-a-marque-l-histoire-du-foot-de-selection-avec-des-chiffres-hors-norme-f-faugere-l-equipe/1500000002643247/0:0,2000:1333-828-552-75/d999d.jpg')" aria-hidden="true"><span class="kindtag">CR7</span></span><span class="body"><span class="cat">L&#x27;Équipe</span><h4>La carrière internationale de Cristiano Ronaldo avec le Portugal en chiffres</h4><span class="sum">Ce jeudi, Cristiano Ronaldo a annoncé la fin de sa carrière internationale, un mois après le psychodrame avec le sélectionneur du Portugal Jorge Jesus. Retour en chiffres sur l&#x27;extraordinaire carrière du quintuple Ballon d&#x27;Or avec le pays lusitanien (2003-2026).</span><span class="meta"><span class="src"><span class="verif"></span>5 sources</span><time datetime="2026-11-05T17:51:06Z">il y a 5 h</time></span><span class="orig">Lire l'article →</span></span></a>
+<a class="card" href="/news/4e11473aed4f.html"><span class="thumb" style="background-image:url('https://i.f1g.fr/media/cms/orig/2026/11/05/88c1e6d5bdacd1a296e521ec99bc7c71a0658b43ce92c3faa21ad9b62d17bd9d.JPG')" aria-hidden="true"></span><span class="body"><span class="cat">Le Figaro Sport</span><h4>Foot: un nouveau record mondial de cartons rouges battu au Brésil</h4><span class="sum">LE SCAN SPORT - Une rencontre entre deux jeunes équipes au Brésil a totalement dégénéré ce dimanche. Au total, 43 joueurs et huit membres des staffs ont été expulsés.</span><span class="meta"><span class="src"><span class="verif"></span>2 sources</span><time datetime="2026-11-05T17:47:39Z">il y a 5 h</time></span><span class="orig">Lire l'article →</span></span></a>
 </div>
   </main>
 
   <!-- NEWSLETTER — masquée tant que window.NEWSLETTER_FORM_ACTION n'est pas configurée (voir newsletter.js) -->
-  <section class="nl-section" id="newsletter" hidden aria-labelledby="nl-title">
+  <section class="nl-section wrap" id="newsletter" hidden aria-labelledby="nl-title">
     <div class="nl-inner">
       <div class="nl-copy">
         <h3 id="nl-title" data-i18n="nl_title">⚽ Sois averti pour le 1000e but</h3>
@@ -303,14 +232,14 @@
     </div>
   </section>
 
-  <footer>
-    <div class="foot-inner">
-      <div><div class="logo">TO<b>1000</b>.com</div></div>
-      <nav class="foot-nav" aria-label="Pied de page">
-        <a href="/#hero" data-i18n="nav_counter">Compteur</a>
-        <a href="/#parcours" data-i18n="nav_journey">Parcours</a>
-        <a href="/#data" data-i18n="nav_stats">Stats</a>
-        <a href="/news.html" data-i18n="nav_news">News</a>
+  <footer class="wrap foot">
+    <div class="foot-grid">
+      <a class="nameplate" href="/">TO1000<span class="dot">.</span></a>
+      <nav aria-label="Pied de page">
+        <a href="/obrigado-cristiano/" data-i18n="nav_tribute">Obrigado, Cristiano</a>
+        <a href="/#compteur" data-i18n="nav_counter">Le compteur</a>
+        <a href="/goals.html" data-i18n="nav_goals">Tous les buts</a>
+        <a href="/news.html" data-i18n="nav_news">Actualités</a>
         <a href="/about.html" data-i18n="nav_about">À propos</a>
         <a href="/privacy.html" data-i18n="nav_privacy">Confidentialité</a>
         <a href="/contact.html" data-i18n="nav_contact">Contact</a>
@@ -322,15 +251,15 @@
   <script>
   (function(){
     var I18N={
-      fr:{brand_tag:"Le hub du football · compte à rebours du 1000e but de CR7",nav_counter:"Compteur",nav_goals:"Tous les buts",nav_journey:"Parcours",nav_wc:"Coupe du Monde",nav_stats:"Stats",nav_news:"News",
+      fr:{skip:"Aller aux actualités",nav_home:"À la une",nav_tribute:"Obrigado, Cristiano",count_lbl:"buts sur 1000",brand_tag:"Le football, chaque jour. Et le compte à rebours du 1000e but de Cristiano Ronaldo.",nav_counter:"Le compteur",nav_goals:"Tous les buts",nav_journey:"Parcours",nav_wc:"Coupe du monde",nav_stats:"Stats",nav_news:"Actualités",
         news_eyebrow:"To1000 · News",news_title_a:"L'actu foot,",news_title_b:"droit au but.",
-        news_promise:"On lit la presse pour vous — l'essentiel de chaque info, sourcé et vérifié, avec le lien vers l'article original. Pas de blabla, pas de clickbait.",
+        news_promise:"On lit la presse pour vous : l'essentiel de chaque info, sourcé et vérifié, avec le lien vers l'article original. Pas de blabla, pas de clickbait.",
         filter_all:"Tout",filter_cr7:"CR7 · Ronaldo",search_ph:"Rechercher…",loading:"Chargement des actus…",
         news_verified:"Vérifié",news_orig:"Lire l'article →",all_sources:"Toutes les sources",results:"actus",updated:"mis à jour",sources_word:"sources",
         nav_about:"À propos",nav_privacy:"Confidentialité",nav_contact:"Contact",
         nl_title:"⚽ Sois averti pour le 1000e but",nl_sub:"Une alerte e-mail le jour J — et rien d'autre. Pas de spam, désinscription en un clic.",nl_ph:"Ton adresse e-mail",nl_btn:"Me prévenir",nl_ok:"Merci ! Vérifie ta boîte mail pour confirmer.",
         disclaimer:'Site de fans non officiel · Cristiano Ronaldo est une marque de Cristiano Ronaldo. Ce site n\'est ni affilié, ni approuvé par le joueur, ses clubs ou la FIFA. Contenu éditorial à titre informatif. Photos : <a href="https://unsplash.com" rel="noopener">Unsplash</a>.'},
-      en:{brand_tag:"The football hub · countdown to CR7's 1000th goal",nav_counter:"Counter",nav_goals:"All goals",nav_journey:"Journey",nav_wc:"World Cup",nav_stats:"Stats",nav_news:"News",
+      en:{skip:"Skip to news",nav_home:"Front page",nav_tribute:"Obrigado, Cristiano",count_lbl:"goals of 1000",brand_tag:"Football, every day. And the countdown to Cristiano Ronaldo's 1000th goal.",nav_counter:"The counter",nav_goals:"All goals",nav_journey:"Journey",nav_wc:"World Cup",nav_stats:"Stats",nav_news:"News",
         news_eyebrow:"To1000 · News",news_title_a:"Football news,",news_title_b:"straight to the point.",
         news_promise:"We read the press for you — the essentials of every story, sourced and verified, with a link to the original article. No fluff, no clickbait.",
         filter_all:"All",filter_cr7:"CR7 · Ronaldo",search_ph:"Search…",loading:"Loading news…",
@@ -338,7 +267,7 @@
         nav_about:"About",nav_privacy:"Privacy",nav_contact:"Contact",
         nl_title:"⚽ Get alerted for the 1000th goal",nl_sub:"One email alert on the big day — nothing else. No spam, one-click unsubscribe.",nl_ph:"Your email address",nl_btn:"Notify me",nl_ok:"Thanks! Check your inbox to confirm.",
         disclaimer:'Unofficial fan site · Cristiano Ronaldo is a trademark of Cristiano Ronaldo. This site is not affiliated with or endorsed by the player, his clubs or FIFA. Editorial content for informational purposes. Photos: <a href="https://unsplash.com" rel="noopener">Unsplash</a>.'},
-      es:{brand_tag:"El hub del fútbol · cuenta atrás hacia el gol 1000 de CR7",nav_counter:"Contador",nav_goals:"Todos los goles",nav_journey:"Trayectoria",nav_wc:"Mundial",nav_stats:"Estadísticas",nav_news:"Noticias",
+      es:{skip:"Ir a las noticias",nav_home:"Portada",nav_tribute:"Obrigado, Cristiano",count_lbl:"goles de 1000",brand_tag:"Fútbol, cada día. Y la cuenta atrás hacia el gol 1000 de Cristiano Ronaldo.",nav_counter:"El contador",nav_goals:"Todos los goles",nav_journey:"Trayectoria",nav_wc:"Mundial",nav_stats:"Estadísticas",nav_news:"Noticias",
         news_eyebrow:"To1000 · Noticias",news_title_a:"Fútbol,",news_title_b:"al grano.",
         news_promise:"Leemos la prensa por ti — lo esencial de cada noticia, con fuentes y verificado, con el enlace al artículo original. Sin relleno, sin clickbait.",
         filter_all:"Todo",filter_cr7:"CR7 · Ronaldo",search_ph:"Buscar…",loading:"Cargando noticias…",
@@ -346,7 +275,7 @@
         nav_about:"Quiénes somos",nav_privacy:"Privacidad",nav_contact:"Contacto",
         nl_title:"⚽ Recibe la alerta del gol 1000",nl_sub:"Un solo aviso por e-mail el gran día — nada más. Sin spam, baja en un clic.",nl_ph:"Tu correo electrónico",nl_btn:"Avísame",nl_ok:"¡Gracias! Revisa tu correo para confirmar.",
         disclaimer:'Sitio de fans no oficial · Cristiano Ronaldo es una marca de Cristiano Ronaldo. Este sitio no está afiliado ni respaldado por el jugador, sus clubes o la FIFA. Contenido editorial con fines informativos. Fotos: <a href="https://unsplash.com" rel="noopener">Unsplash</a>.'},
-      ar:{brand_tag:"مركز كرة القدم · العد التنازلي نحو هدف رونالدو الألف",nav_counter:"العدّاد",nav_goals:"كل الأهداف",nav_journey:"المسيرة",nav_wc:"كأس العالم",nav_stats:"إحصائيات",nav_news:"الأخبار",
+      ar:{skip:"انتقل إلى الأخبار",nav_home:"الرئيسية",nav_tribute:"شكراً كريستيانو",count_lbl:"هدفاً من 1000",brand_tag:"كرة القدم، كل يوم. والعد التنازلي نحو الهدف الألف لكريستيانو رونالدو.",nav_counter:"العدّاد",nav_goals:"كل الأهداف",nav_journey:"المسيرة",nav_wc:"كأس العالم",nav_stats:"إحصائيات",nav_news:"الأخبار",
         news_eyebrow:"To1000 · الأخبار",news_title_a:"أخبار الكرة،",news_title_b:"مباشرةً إلى المهم.",
         news_promise:"نقرأ الصحافة نيابةً عنك — جوهر كل خبر، موثّق ومُتحقَّق منه، مع رابط المقال الأصلي. بلا حشو وبلا إثارة.",
         filter_all:"الكل",filter_cr7:"CR7 · رونالدو",search_ph:"بحث…",loading:"جارٍ تحميل الأخبار…",
@@ -369,6 +298,7 @@
       document.querySelectorAll('[data-i18n-ph]').forEach(function(e){e.setAttribute('placeholder',t(e.getAttribute('data-i18n-ph')));});
       document.querySelectorAll('.lang-sw button').forEach(function(b){var on=b.getAttribute('data-l')===LANG;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on?'true':'false');});
       var sb=document.getElementById('search');if(sb)sb.setAttribute('aria-label',t('search_ph'));
+      var td=document.getElementById('today');if(td){try{var ds=new Date().toLocaleDateString(LANG,{weekday:'long',day:'numeric',month:'long',year:'numeric'});td.textContent=ds.charAt(0).toUpperCase()+ds.slice(1);}catch(e){}}
     }
     function safeUrl(u){ return /^https?:\/\//i.test(u||'')?u:'#'; }
     function cssUrl(u){ return String(u||'').replace(/['"()\s]/g, encodeURIComponent); }
@@ -380,7 +310,7 @@
   function pickL(it,l){return To1000Locale.pick(it,l);}
     function card(it){
       var L=pickL(it,LANG)||{},tr=L.title||it.title||'',sum=L.summary||it.summary||'';
-      var ps=it.primary_source||{},sname=(ps.flag?ps.flag+' ':'')+(ps.name||'Football');
+      var ps=it.primary_source||{},sname=ps.name||'Football';
       var sc=parseInt(it.source_count||(it.sources?it.sources.length:1),10)||1;
       // crédibilité honnête : on met la source en avant ; ✓ multi-sources seulement si réellement recoupé
       var cred=sc>1?(sc+' '+t('sources_word')):esc(sname);
@@ -435,7 +365,7 @@
     applyStatic();
     var bust='?_='+Math.floor(Date.now()/60000);
     fetch('/news.json'+bust).then(function(r){return r.json();}).then(function(n){NEWS=n;buildSources();credline();render();}).catch(function(e){document.getElementById('grid').innerHTML='<p class="empty">⚠︎</p>';console.warn(e);});
-    fetch('/stats.json'+bust).then(function(r){return r.json();}).then(function(s){var p=document.getElementById('pill');if(p)p.textContent='Live · '+s.goals;}).catch(function(){});
+    fetch('/stats.json'+bust).then(function(r){return r.json();}).then(function(s){var p=document.getElementById('pill');if(p)p.textContent=s.goals;}).catch(function(){});
   })();
   </script>
   <script>
