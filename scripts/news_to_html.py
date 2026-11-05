@@ -194,7 +194,7 @@ NEWS_INDEX_REDIRECT = (
 FONTS_URL = ("https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900"
              "&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700"
              "&family=Cairo:wght@400;700;900&display=swap")
-EDITION_CSS = "/css/edition.css?v=20261105"
+EDITION_CSS = "/css/edition.css?v=20261106"
 
 MONTHS_FR = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet",
              "août", "septembre", "octobre", "novembre", "décembre"]

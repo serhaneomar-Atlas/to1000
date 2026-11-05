@@ -43,7 +43,7 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
 # Charte « journal du matin » partagée (public/css/edition.css) + règles propres
 # à la section (wc.css). Changer CSS_V à chaque modif du CSS : /*.css est mis
 # en cache longtemps (_headers).
-CSS_V = "20261105"
+CSS_V = "20261106"
 STYLES = (f'<link rel="stylesheet" href="/css/edition.css?v={CSS_V}">'
           f'<link rel="stylesheet" href="/coupe-du-monde/wc.css?v={CSS_V}">')
 

@@ -273,7 +273,7 @@
   <link rel="dns-prefetch" href="https://fonts.googleapis.com">
   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/edition.css?v=20261105">
+  <link rel="stylesheet" href="/css/edition.css?v=20261106">
   <style>
   /* ---- Accueil : la une ---- */
   .une{display:grid;gap:22px;padding-top:26px;padding-bottom:30px}
@@ -412,7 +412,7 @@
     <div class="wrap une">
       <div>
         <p class="label red" data-i18n="une_kicker">Sélection · 5 novembre 2026</p>
-        <h2 class="headline" id="une-title"><a href="/obrigado-cristiano/">Obrigado,<br><em>Cristiano.</em></a></h2>
+        <h2 class="headline" id="une-title"><a href="/obrigado-cristiano/" data-i18n-html="une_h">Obrigado,<br><em>Cristiano.</em></a></h2>
         <p class="standfirst" data-i18n="une_sf">Après 23 ans, 234 matches et 146 buts, Cristiano Ronaldo quitte la sélection portugaise. Il rend le maillot n°7 et garde un objectif : 1000.</p>
         <div class="btn-row"><a class="btn" href="/obrigado-cristiano/" data-i18n="une_btn">Lire l'hommage</a><a class="btn line" href="#compteur" data-i18n="une_btn2">Où en est le compteur</a></div>
       </div>
@@ -530,7 +530,7 @@
 /* ===== i18n (FR/EN/ES/AR) + données live ===== */
 (function(){
   var I18N = {
-    fr:{skip:"Aller au compteur",brand_tag:"Le football, chaque jour. Et le compte à rebours du 1000e but de Cristiano Ronaldo.",count_lbl:"buts sur 1000",
+    fr:{une_h:'Obrigado,<br><em>Cristiano.</em>',skip:"Aller au compteur",brand_tag:"Le football, chaque jour. Et le compte à rebours du 1000e but de Cristiano Ronaldo.",count_lbl:"buts sur 1000",
       nav_home:"À la une",nav_tribute:"Obrigado, Cristiano",nav_counter:"Le compteur",nav_goals:"Tous les buts",nav_news:"Actualités",nav_wc:"Coupe du monde",nav_journey:"Parcours",nav_blog:"Blog",nav_about:"À propos",nav_privacy:"Confidentialité",nav_contact:"Contact",
       flash_lbl:"Édition spéciale",flash_txt:"Cristiano Ronaldo quitte la sélection portugaise : notre hommage →",
       hero_h1:"Compte à rebours vers le 1000e but de Cristiano Ronaldo",
@@ -546,7 +546,7 @@
       news_h3:"Actualités",news_all:"Toutes les actualités →",news_promise:"On lit la presse pour vous : l'essentiel, sourcé, sans blabla.",
       nl_title:"Prévenez-moi pour le 1000e but",nl_sub:"Un seul e-mail, le jour J. Pas de spam, désinscription en un clic.",nl_ph:"Votre adresse e-mail",nl_btn:"Me prévenir",nl_ok:"Merci ! Vérifiez votre boîte mail pour confirmer.",
       disclaimer:"Site de fans non officiel · Cristiano Ronaldo est une marque de Cristiano Ronaldo. Ce site n'est ni affilié, ni approuvé par le joueur, ses clubs ou la FIFA. Contenu éditorial à titre informatif. Photos : Wikimedia Commons."},
-    en:{skip:"Skip to the counter",brand_tag:"Football, every day. And the countdown to Cristiano Ronaldo's 1000th goal.",count_lbl:"goals of 1000",
+    en:{une_h:'Obrigado,<br><em>Cristiano.</em>',skip:"Skip to the counter",brand_tag:"Football, every day. And the countdown to Cristiano Ronaldo's 1000th goal.",count_lbl:"goals of 1000",
       nav_home:"Front page",nav_tribute:"Obrigado, Cristiano",nav_counter:"The counter",nav_goals:"All goals",nav_news:"News",nav_wc:"World Cup",nav_journey:"Career",nav_blog:"Blog",nav_about:"About",nav_privacy:"Privacy",nav_contact:"Contact",
       flash_lbl:"Special edition",flash_txt:"Cristiano Ronaldo retires from international football: our tribute →",
       hero_h1:"Countdown to Cristiano Ronaldo's 1000th goal",
@@ -562,7 +562,7 @@
       news_h3:"News",news_all:"All news →",news_promise:"We read the press for you: the essentials, sourced, no fluff.",
       nl_title:"Tell me when he hits 1000",nl_sub:"One email on the day. No spam, one-click unsubscribe.",nl_ph:"Your email address",nl_btn:"Notify me",nl_ok:"Thanks! Check your inbox to confirm.",
       disclaimer:"Unofficial fan site · Cristiano Ronaldo is a trademark of Cristiano Ronaldo. This site is not affiliated with or endorsed by the player, his clubs or FIFA. Editorial content for information. Photos: Wikimedia Commons."},
-    es:{skip:"Ir al contador",brand_tag:"Fútbol, cada día. Y la cuenta atrás hacia el gol 1000 de Cristiano Ronaldo.",count_lbl:"goles de 1000",
+    es:{une_h:'Obrigado,<br><em>Cristiano.</em>',skip:"Ir al contador",brand_tag:"Fútbol, cada día. Y la cuenta atrás hacia el gol 1000 de Cristiano Ronaldo.",count_lbl:"goles de 1000",
       nav_home:"Portada",nav_tribute:"Obrigado, Cristiano",nav_counter:"El contador",nav_goals:"Todos los goles",nav_news:"Noticias",nav_wc:"Mundial",nav_journey:"Trayectoria",nav_blog:"Blog",nav_about:"Quiénes somos",nav_privacy:"Privacidad",nav_contact:"Contacto",
       flash_lbl:"Edición especial",flash_txt:"Cristiano Ronaldo deja la selección portuguesa: nuestro homenaje →",
       hero_h1:"Cuenta atrás hacia el gol 1000 de Cristiano Ronaldo",
@@ -578,7 +578,7 @@
       news_h3:"Noticias",news_all:"Todas las noticias →",news_promise:"Leemos la prensa por ti: lo esencial, con fuentes, sin relleno.",
       nl_title:"Avísame del gol 1000",nl_sub:"Un solo correo, el gran día. Sin spam, baja en un clic.",nl_ph:"Tu correo electrónico",nl_btn:"Avísame",nl_ok:"¡Gracias! Revisa tu correo para confirmar.",
       disclaimer:"Sitio de fans no oficial · Cristiano Ronaldo es una marca de Cristiano Ronaldo. Este sitio no está afiliado ni respaldado por el jugador, sus clubes o la FIFA. Contenido editorial informativo. Fotos: Wikimedia Commons."},
-    ar:{skip:"انتقل إلى العدّاد",brand_tag:"كرة القدم، كل يوم. والعد التنازلي نحو الهدف الألف لكريستيانو رونالدو.",count_lbl:"هدفاً من 1000",
+    ar:{une_h:'شكراً،<br>كريستيانو.',skip:"انتقل إلى العدّاد",brand_tag:"كرة القدم، كل يوم. والعد التنازلي نحو الهدف الألف لكريستيانو رونالدو.",count_lbl:"هدفاً من 1000",
       nav_home:"الرئيسية",nav_tribute:"شكراً كريستيانو",nav_counter:"العدّاد",nav_goals:"كل الأهداف",nav_news:"الأخبار",nav_wc:"كأس العالم",nav_journey:"المسيرة",nav_blog:"المدونة",nav_about:"من نحن",nav_privacy:"الخصوصية",nav_contact:"اتصل بنا",
       flash_lbl:"عدد خاص",flash_txt:"كريستيانو رونالدو يعتزل اللعب الدولي: تكريمنا ←",
       hero_h1:"العد التنازلي نحو الهدف الألف لكريستيانو رونالدو",

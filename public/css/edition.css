@@ -216,3 +216,11 @@ html body #t1k-consent button:hover{background:var(--red);border-color:var(--red
 html body #t1k-consent a{color:var(--ink-2)}
 html body #t1k-reopen{background:var(--paper);color:var(--ink-2);border:1px solid var(--rule-soft);border-radius:0;box-shadow:none}
 html body #t1k-reopen:hover{color:var(--ink);border-color:var(--ink)}
+
+/* ---------- Arabe (RTL) ---------- */
+/* Les éléments en Archivo n'ont pas de glyphes arabes : Cairo en repli. */
+html[dir="rtl"]{--sans:'Archivo','Cairo',system-ui,sans-serif}
+/* Le filet de la devise passe à droite du titre en arabe. */
+@media (min-width:860px){html[dir="rtl"] .mast-tag{border-left:0;padding-left:0;border-right:1px solid var(--rule-soft);padding-right:18px}}
+/* Pas d'italique en arabe : l'écriture arabe ne se penche pas. */
+html[dir="rtl"] em,html[dir="rtl"] i,html[dir="rtl"] .mast-tag,html[dir="rtl"] .headline em{font-style:normal}
