@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""wc_pages.py — génère la section /coupe-du-monde/ (SEO statique, style ESTÁDIO).
+"""wc_pages.py — génère la section /coupe-du-monde/ (SEO statique, charte « journal du matin »).
 
 Pages générées :
   /coupe-du-monde/                       hub (calendrier par tour + 48 équipes)
@@ -37,8 +37,25 @@ GA = "G-4V8Y6C38VN"
 
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
          '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
-         '<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700'
-         '&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">')
+         '<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900'
+         '&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700'
+         '&family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">')
+# Charte « journal du matin » partagée (public/css/edition.css) + règles propres
+# à la section (wc.css). Changer CSS_V à chaque modif du CSS : /*.css est mis
+# en cache longtemps (_headers).
+CSS_V = "20261105"
+STYLES = (f'<link rel="stylesheet" href="/css/edition.css?v={CSS_V}">'
+          f'<link rel="stylesheet" href="/coupe-du-monde/wc.css?v={CSS_V}">')
+
+
+def cr7_goals() -> int | None:
+    """Compteur du bandeau : lu dans stats.json au moment de la génération
+    (puis rafraîchi côté client), pour que le texte serveur ne soit jamais vide."""
+    try:
+        return int(json.loads((PROJECT_DIR / "public" / "stats.json")
+                              .read_text(encoding="utf-8"))["goals"])
+    except Exception:
+        return None
 
 
 def flag(team: dict, size: int = 24) -> str:
@@ -54,6 +71,9 @@ def page(title: str, desc: str, path: str, body: str, jsonld: list[dict],
     url = f"{SITE}{path}"
     ld = "".join(f'<script type="application/ld+json">{json.dumps(d, ensure_ascii=False)}</script>'
                  for d in jsonld)
+    goals = cr7_goals()
+    count = (f'<a class="mast-count" href="/#compteur"><b id="mc-goals">{goals}</b>'
+             '<span>buts sur 1000</span></a>') if goals is not None else ""
     return f"""<!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -86,27 +106,53 @@ def page(title: str, desc: str, path: str, body: str, jsonld: list[dict],
 <meta name="twitter:title" content="{h(og_title or title)}">
 <meta name="twitter:description" content="{h(desc)}">
 <meta name="twitter:image" content="{SITE}/og-image.png">
+<meta name="theme-color" content="#f4f0e6">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="To1000 — Football News" href="/rss.xml">
 {FONTS}
-<link rel="stylesheet" href="/coupe-du-monde/wc.css">
+{STYLES}
 {ld}
 </head>
 <body>
-<header class="topbar">
-  <a class="brand" href="/">TO<span>1000</span></a>
-  <nav>
-    <a href="/">Accueil</a><a href="/news">News</a><a href="/goals">Buts CR7</a>
-    <a href="/coupe-du-monde/" class="on">Coupe du Monde</a>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header>
+  <div class="wrap mast-top">
+    <span class="meta" id="today">Coupe du Monde 2026</span>
+    <a class="meta mast-link" href="/coupe-du-monde/matchs-du-jour/">Matchs du jour</a>
+  </div>
+  <div class="wrap mast-name">
+    <a class="nameplate" href="/" aria-label="To1000.com, accueil">TO1000<span class="dot">.</span></a>
+    <p class="mast-tag">Le football, chaque jour. Et le compte à rebours du 1000e but de Cristiano Ronaldo.</p>
+    {count}
+  </div>
+  <nav class="wrap sections" aria-label="Rubriques">
+    <ul>
+      <li><a href="/">À la une</a></li>
+      <li><a href="/obrigado-cristiano/" class="hot">Obrigado, Cristiano</a></li>
+      <li><a href="/#compteur">Le compteur</a></li>
+      <li><a href="/goals.html">Tous les buts</a></li>
+      <li><a href="/news.html">Actualités</a></li>
+      <li><a href="/coupe-du-monde/" aria-current="page">Coupe du monde</a></li>
+    </ul>
   </nav>
 </header>
-<main>
+<main id="contenu" class="wrap wc">
 {body}
 </main>
-<footer class="foot">
-  <p><a href="/coupe-du-monde/">Coupe du Monde 2026</a> · <a href="/coupe-du-monde/matchs-du-jour/">Matchs du jour</a> · <a href="/news">Actu foot</a> · <a href="/goals">Compteur CR7</a></p>
-  <p class="mut">Fan site non officiel — non affilié à la FIFA ni aux fédérations. Données de matchs factuelles.
-  <a href="/about.html">À propos</a> · <a href="/privacy.html">Confidentialité</a> · <a href="/contact.html">Contact</a></p>
+<footer class="wrap foot">
+  <div class="foot-grid">
+    <a class="nameplate" href="/">TO1000<span class="dot">.</span></a>
+    <nav aria-label="Liens de pied de page">
+      <a href="/coupe-du-monde/">Coupe du Monde 2026</a>
+      <a href="/coupe-du-monde/matchs-du-jour/">Matchs du jour</a>
+      <a href="/news">Actu foot</a>
+      <a href="/goals">Compteur CR7</a>
+      <a href="/about.html">À propos</a>
+      <a href="/privacy.html">Confidentialité</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+  <p class="disclaimer">Fan site non officiel — non affilié à la FIFA ni aux fédérations. Données de matchs factuelles.</p>
 </footer>
 <script>
 // Heure locale du visiteur (progressif — le texte serveur reste en heure de l'Est)
@@ -118,6 +164,13 @@ document.querySelectorAll('time[data-utc]').forEach(function(t){{
     (el||t).textContent=s+' (votre heure)';
   }}catch(e){{}}
 }});
+// Bandeau : date du jour + compteur à jour (progressif, le texte serveur reste valable)
+(function(){{
+  var d=document.getElementById('today');
+  if(d){{try{{var s=new Date().toLocaleDateString('fr-FR',{{weekday:'long',day:'numeric',month:'long',year:'numeric'}});d.textContent=s.charAt(0).toUpperCase()+s.slice(1);}}catch(e){{}}}}
+  var b=document.getElementById('mc-goals');
+  if(b&&window.fetch){{fetch('/stats.json',{{cache:'no-store'}}).then(function(r){{return r.json();}}).then(function(j){{if(j&&typeof j.goals==='number')b.textContent=j.goals;}}).catch(function(){{}});}}
+}})();
 </script>
 </body>
 </html>
@@ -125,18 +178,26 @@ document.querySelectorAll('time[data-utc]').forEach(function(t){{
 
 
 def match_line(m: dict, link: bool = True) -> str:
-    """Ligne match réutilisable (hub, jour, équipe)."""
+    """Ligne match réutilisable (hub, jour, équipe) — colonne de résultats de journal."""
     ht, at = m["home"], m["away"]
-    score = (f'<b class="sc">{m["score_home"]}–{m["score_away"]}</b>'
-             if m["state"] == "finished" and m["score_home"] is not None
+    done = m["state"] == "finished" and m["score_home"] is not None
+    score = (f'<b class="sc">{m["score_home"]}–{m["score_away"]}</b>' if done
              else ('<b class="sc live">LIVE</b>' if m["state"] == "live"
                    else f'<span class="hr">{time_fr_et(m["date_iso"])} ET</span>'))
-    inner = (f'<span class="t">{flag(ht)} {h(ht["fr"])}</span>{score}'
-             f'<span class="t away">{h(at["fr"])} {flag(at)}</span>'
+    wh = wa = ""
+    if done and m["score_home"] != m["score_away"]:
+        wh, wa = (" w", "") if m["score_home"] > m["score_away"] else ("", " w")
+    inner = (f'<span class="teams"><span class="t{wh}">{flag(ht)}{h(ht["fr"])}</span>'
+             f'<span class="dash"> – </span>'
+             f'<span class="t{wa}">{flag(at)}{h(at["fr"])}</span></span>{score}'
              f'<span class="d">{date_fr_et(m["date_iso"])}</span>')
     if link and m.get("slug"):
         return f'<a class="mrow" href="/coupe-du-monde/match/{m["slug"]}/">{inner}</a>'
     return f'<div class="mrow">{inner}</div>'
+
+
+def match_list(ms) -> str:
+    return f'<div class="mlist">{"".join(match_line(m) for m in ms)}</div>'
 
 
 def sports_event_ld(m: dict) -> dict:
@@ -177,13 +238,13 @@ def render_match(m: dict, all_matches: list[dict]) -> str:
         desc = (f'Résultat {rl} : {ht["fr"]} {m["score_home"]}–{m["score_away"]} {at["fr"]}, '
                 f'le {dt} au {m["venue"] or "stade"}. '
                 + (m.get("status_note") or "Feuille de match, contexte et parcours des deux équipes."))
-        score_block = (f'<div class="scorebig">{m["score_home"]}<span>–</span>{m["score_away"]}</div>'
+        score_block = (f'<div class="scorebig num">{m["score_home"]}<span>–</span>{m["score_away"]}</div>'
                        + (f'<p class="note">{h(m["status_note"])}</p>' if m.get("status_note") else "")
                        + '<p class="mut">Match terminé</p>')
     elif m["state"] == "live":
         title = f'{vs} EN DIRECT ({rl}) — Coupe du Monde 2026'
         desc = f'{vs} en cours, {rl} de la Coupe du Monde 2026 au {m["venue"]}. Score en direct.'
-        score_block = (f'<div class="scorebig live">{m["score_home"] or 0}<span>–</span>{m["score_away"] or 0}</div>'
+        score_block = (f'<div class="scorebig num live">{m["score_home"] or 0}<span>–</span>{m["score_away"] or 0}</div>'
                        '<p class="mut">Match en cours</p>')
     else:
         title = f'{vs} : heure, stade et contexte ({rl}) — Coupe du Monde 2026'
@@ -198,7 +259,7 @@ def render_match(m: dict, all_matches: list[dict]) -> str:
         tid = m[team_key]["espn_id"]
         rows = [x for x in all_matches
                 if tid in (x["home"]["espn_id"], x["away"]["espn_id"]) and x["id"] != m["id"]]
-        return "".join(match_line(x) for x in rows[-4:])
+        return match_list(rows[-4:]) if rows else ""
 
     # matchs précédent / suivant dans le calendrier global (maillage)
     playable = [x for x in all_matches if x.get("slug")]
@@ -207,24 +268,26 @@ def render_match(m: dict, all_matches: list[dict]) -> str:
     next_m = playable[idx + 1] if idx is not None and idx + 1 < len(playable) else None
     pn = ""
     if prev_m:
-        pn += (f'<a href="/coupe-du-monde/match/{prev_m["slug"]}/">← Match précédent : '
-               f'{h(prev_m["home"]["fr"])}–{h(prev_m["away"]["fr"])}</a>')
+        pn += (f'<a class="prev" href="/coupe-du-monde/match/{prev_m["slug"]}/">← Match précédent : '
+               f'<b>{h(prev_m["home"]["fr"])}–{h(prev_m["away"]["fr"])}</b></a>')
     if next_m:
-        pn += (f'<a href="/coupe-du-monde/match/{next_m["slug"]}/">Match suivant : '
-               f'{h(next_m["home"]["fr"])}–{h(next_m["away"]["fr"])} →</a>')
+        pn += (f'<a class="next" href="/coupe-du-monde/match/{next_m["slug"]}/">Match suivant : '
+               f'<b>{h(next_m["home"]["fr"])}–{h(next_m["away"]["fr"])}</b> →</a>')
 
     body = f"""
-<p class="crumb"><a href="/coupe-du-monde/">Coupe du Monde 2026</a> › {h(rl)}</p>
-<h1>{flag(ht, 34)} {h(vs)} {flag(at, 34)}</h1>
-<p class="eyebrow">{h(rl)} · {h(dt)}</p>
+<p class="crumb meta"><a href="/coupe-du-monde/">Coupe du Monde 2026</a> › {h(rl)}</p>
+<div class="match-head">
+<p class="eyebrow label red">{h(rl)} · {h(dt)}</p>
+<h1 class="wc-title"><span class="tn">{flag(ht, 34)} {h(ht["fr"])}</span> – <span class="tn">{h(at["fr"])} {flag(at, 34)}</span></h1>
 {score_block}
-<p class="venue">🏟️ {h(where) if where else "Stade à confirmer"}</p>
+<p class="venue meta"><span class="label">Stade</span> {h(where) if where else "Stade à confirmer"}</p>
+</div>
 <div class="teams2">
   <section><h2><a href="/coupe-du-monde/equipe/{ht["slug"]}/">{flag(ht)} Parcours {'du ' if ht["fr"][0] not in 'AEÉIOU' else "de l'"}{h(ht["fr"])}</a></h2>{path_of("home") or '<p class="mut">Premier match du tournoi.</p>'}</section>
   <section><h2><a href="/coupe-du-monde/equipe/{at["slug"]}/">{flag(at)} Parcours {'du ' if at["fr"][0] not in 'AEÉIOU' else "de l'"}{h(at["fr"])}</a></h2>{path_of("away") or '<p class="mut">Premier match du tournoi.</p>'}</section>
 </div>
-<nav class="pn">{pn}</nav>
-<p class="backlinks"><a href="/coupe-du-monde/matchs-du-jour/">📅 Matchs du jour</a> · <a href="/coupe-du-monde/">Calendrier complet</a></p>
+<nav class="pn" aria-label="Matchs précédent et suivant">{pn}</nav>
+<p class="backlinks"><a href="/coupe-du-monde/matchs-du-jour/">Matchs du jour</a> · <a href="/coupe-du-monde/">Calendrier complet</a></p>
 """
     og = f'{vs} · {rl} · {dt}, {tm} ET'
     return page(title, desc, f'/coupe-du-monde/match/{m["slug"]}/', body,
@@ -247,12 +310,12 @@ def render_team(tid: str, t: dict, all_matches: list[dict]) -> str:
           "memberOf": {"@type": "SportsOrganization", "name": "FIFA World Cup 2026"},
           "url": f'{SITE}/coupe-du-monde/equipe/{t["slug"]}/'}
     body = f"""
-<p class="crumb"><a href="/coupe-du-monde/">Coupe du Monde 2026</a> › Équipes</p>
-<h1>{flag(t, 34)} {h(t["fr"])} — Coupe du Monde 2026</h1>
-{'<section><h2>Prochains matchs</h2>' + ''.join(match_line(m) for m in upcoming) + '</section>' if upcoming else ''}
-{'<section><h2>Résultats</h2>' + ''.join(match_line(m) for m in reversed(played)) + '</section>' if played else ''}
-{'' if alive or not played else '<p class="mut">Parcours terminé pour cette Coupe du Monde.</p>'}
-<p class="backlinks"><a href="/coupe-du-monde/matchs-du-jour/">📅 Matchs du jour</a> · <a href="/coupe-du-monde/">Toutes les équipes</a></p>
+<p class="crumb meta"><a href="/coupe-du-monde/">Coupe du Monde 2026</a> › Équipes</p>
+<h1 class="wc-title">{flag(t, 34)} {h(t["fr"])} — Coupe du Monde 2026</h1>
+{'<section class="wc-sec"><div class="sec-head"><h2>Prochains matchs</h2></div>' + match_list(upcoming) + '</section>' if upcoming else ''}
+{'<section class="wc-sec"><div class="sec-head"><h2>Résultats</h2></div>' + match_list(reversed(played)) + '</section>' if played else ''}
+{'' if alive or not played else '<p class="mut end">Parcours terminé pour cette Coupe du Monde.</p>'}
+<p class="backlinks"><a href="/coupe-du-monde/matchs-du-jour/">Matchs du jour</a> · <a href="/coupe-du-monde/">Toutes les équipes</a></p>
 """
     return page(title, desc, f'/coupe-du-monde/equipe/{t["slug"]}/', body, [ld])
 
@@ -268,13 +331,14 @@ def render_hub(all_matches: list[dict]) -> str:
         return sorted(rounds.items(),
                       key=lambda kv: ROUND_ORDER.index(kv[0]) if kv[0] in ROUND_ORDER else 99)
 
-    up_html = "".join(f'<section><h3>{h(round_label(r))}</h3>{"".join(match_line(m) for m in ms)}</section>'
+    up_html = "".join(f'<section class="round"><h3>{h(round_label(r))}</h3>{match_list(ms)}</section>'
                       for r, ms in by_round(upcoming))
-    res_html = "".join(f'<details{" open" if i == 0 else ""}><summary>{h(round_label(r))} ({len(ms)} matchs)</summary>'
-                       f'{"".join(match_line(m) for m in reversed(ms))}</details>'
+    res_html = "".join(f'<details{" open" if i == 0 else ""}><summary><span>{h(round_label(r))}</span> '
+                       f'<span class="n">{len(ms)} match{"s" if len(ms) > 1 else ""}</span></summary>'
+                       f'{match_list(reversed(ms))}</details>'
                        for i, (r, ms) in enumerate(reversed(by_round(finished))))
     teams_html = "".join(
-        f'<a href="/coupe-du-monde/equipe/{t["slug"]}/">{flag(t, 20)} {h(t["fr"])}</a>'
+        f'<li><a href="/coupe-du-monde/equipe/{t["slug"]}/">{flag(t, 20)}{h(t["fr"])}</a></li>'
         for t in sorted(TEAMS.values(), key=lambda x: x["fr"]))
 
     title = "Coupe du Monde 2026 : calendrier complet, résultats et équipes"
@@ -289,14 +353,19 @@ def render_hub(all_matches: list[dict]) -> str:
           "organizer": {"@type": "SportsOrganization", "name": "FIFA"},
           "url": f"{SITE}/coupe-du-monde/"}
     body = f"""
-<h1>Coupe du Monde 2026</h1>
-<p class="eyebrow">Calendrier, résultats et équipes — mis à jour chaque jour · <a href="/coupe-du-monde/matchs-du-jour/">Voir les matchs du jour →</a></p>
-<h2>Matchs à venir</h2>
+<div class="hub-head">
+<h1 class="wc-title">Coupe du Monde 2026</h1>
+<p class="eyebrow standfirst">Calendrier, résultats et équipes — mis à jour chaque jour · <a href="/coupe-du-monde/matchs-du-jour/">Voir les matchs du jour →</a></p>
+</div>
+<section class="wc-sec"><div class="sec-head"><h2>Matchs à venir</h2></div>
 {up_html or '<p class="mut">Tournoi terminé.</p>'}
-<h2>Résultats</h2>
+</section>
+<section class="wc-sec"><div class="sec-head"><h2>Résultats</h2></div>
 {res_html}
-<h2>Les 48 équipes</h2>
-<div class="teamgrid">{teams_html}</div>
+</section>
+<section class="wc-sec"><div class="sec-head"><h2>Les 48 équipes</h2></div>
+<ul class="teamgrid">{teams_html}</ul>
+</section>
 """
     return page(title, desc, "/coupe-du-monde/", body, [ld])
 
@@ -317,54 +386,137 @@ def render_today(all_matches: list[dict]) -> str:
     desc = (f"{desc_head} : heure du coup d'envoi (convertie à votre fuseau), stade et lien "
             "vers la fiche de chaque match. Page mise à jour tous les jours.")
     body = f"""
-<p class="crumb"><a href="/coupe-du-monde/">Coupe du Monde 2026</a> › Matchs du jour</p>
-<h1>Matchs du jour</h1>
-<p class="eyebrow">{h(heading)}</p>
-{''.join(match_line(m) for m in ms) or '<p class="mut">Calendrier à venir.</p>'}
+<p class="crumb meta"><a href="/coupe-du-monde/">Coupe du Monde 2026</a> › Matchs du jour</p>
+<h1 class="wc-title">Matchs du jour</h1>
+<p class="eyebrow standfirst">{h(heading)}</p>
+{match_list(ms) if ms else '<p class="mut">Calendrier à venir.</p>'}
 <p class="backlinks"><a href="/coupe-du-monde/">Calendrier complet et résultats →</a></p>
 """
     return page(title, desc, "/coupe-du-monde/matchs-du-jour/", body, [])
 
 
-CSS = """/* ESTÁDIO — section Coupe du Monde */
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-body{background:#05070b;color:#eef2f6;font-family:'Hanken Grotesk',system-ui,sans-serif;line-height:1.55}
-a{color:#f2c14e;text-decoration:none}a:hover{text-decoration:underline}
-.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;border-bottom:1px solid rgba(242,193,78,.25)}
-.brand{font-family:Anton,sans-serif;font-size:22px;color:#eef2f6;letter-spacing:.04em}.brand span{color:#f2c14e}
-.topbar nav a{margin-left:16px;color:#9aa6b4;font-family:Oswald,sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:.06em}
-.topbar nav a.on,.topbar nav a:hover{color:#f2c14e}
-main{max-width:860px;margin:0 auto;padding:28px 16px 60px}
-h1{font-family:Anton,sans-serif;font-size:clamp(28px,5vw,44px);letter-spacing:.02em;margin:8px 0;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-h2{font-family:Oswald,sans-serif;font-size:20px;text-transform:uppercase;letter-spacing:.06em;color:#f2c14e;margin:28px 0 10px}
-h3{font-family:Oswald,sans-serif;font-size:16px;color:#9aa6b4;text-transform:uppercase;margin:18px 0 8px}
-.eyebrow{color:#9aa6b4;margin-bottom:14px}.mut{color:#9aa6b4;font-size:14px}
-.crumb{font-size:13px;color:#9aa6b4;margin-bottom:6px}
-.flag{border-radius:3px;vertical-align:-3px}
-.mrow{display:grid;grid-template-columns:1fr auto 1fr auto;gap:10px;align-items:center;background:#0d1118;
- border:1px solid rgba(154,166,180,.15);border-radius:8px;padding:10px 14px;margin:6px 0;color:#eef2f6}
-.mrow:hover{border-color:#f2c14e}
-.mrow .t{display:flex;align-items:center;gap:8px;font-weight:600}.mrow .t.away{justify-content:flex-end}
-.mrow .sc{font-family:Oswald,sans-serif;font-size:18px;color:#f2c14e}.sc.live{color:#ff5a5a;animation:pulse 1.6s infinite}
-.mrow .hr{font-family:Oswald,sans-serif;color:#9aa6b4}
-.mrow .d{grid-column:1/-1;font-size:12.5px;color:#9aa6b4}
-@keyframes pulse{50%{opacity:.5}}
-.scorebig{font-family:Anton,sans-serif;font-size:64px;color:#f2c14e;margin:10px 0}.scorebig span{color:#9aa6b4;margin:0 10px}
-.scorebig.live{color:#ff5a5a}
-.ko time{font-family:Oswald,sans-serif;font-size:22px;color:#f2c14e}
-.venue{margin:10px 0 4px}
-.note{color:#9aa6b4;font-style:italic}
-.teams2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
-@media(max-width:640px){.teams2{grid-template-columns:1fr}}
-.teams2 h2{font-size:16px;margin:0 0 8px}
-.teamgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px}
-.teamgrid a{background:#0d1118;border:1px solid rgba(154,166,180,.15);border-radius:8px;padding:9px 12px;color:#eef2f6;display:flex;align-items:center;gap:8px;font-size:14px}
-.teamgrid a:hover{border-color:#f2c14e;text-decoration:none}
-details{margin:8px 0}summary{cursor:pointer;font-family:Oswald,sans-serif;color:#9aa6b4;text-transform:uppercase;font-size:15px;padding:6px 0}
-.pn{display:flex;justify-content:space-between;gap:12px;margin:26px 0 8px;font-size:14px;flex-wrap:wrap}
-.backlinks{margin-top:18px}
-.foot{border-top:1px solid rgba(154,166,180,.2);padding:22px 16px;text-align:center;font-size:13.5px;color:#9aa6b4}
-.foot p{margin:4px 0}
+CSS = """/* Section Coupe du Monde — charte « journal du matin » (nov. 2026).
+   Généré par scripts/wc_pages.py : ne pas éditer à la main.
+   La base (papier, encre, rouge, bandeau, rubriques, pied) vient de
+   /css/edition.css ; ici seulement ce qui est propre à la section :
+   colonnes de résultats, fiche de match, index des équipes. */
+.wc{padding-top:22px;padding-bottom:40px}
+.wc a{text-decoration-color:var(--red);text-underline-offset:3px}
+.crumb{margin-bottom:18px}
+.crumb a{color:var(--ink);text-decoration:none;font-weight:600}
+.crumb a:hover{color:var(--red);text-decoration:underline}
+.mut{font-family:var(--sans);font-size:14px;color:var(--ink-2);padding:12px 0}
+.mut.end{margin-top:4px}
+.flag{display:inline-block;width:auto;height:.72em;vertical-align:baseline;outline:1px solid rgba(21,21,19,.14);outline-offset:0}
+
+/* ---------- Titres de page ---------- */
+.wc-title{
+  font-family:var(--serif);font-weight:600;font-optical-sizing:auto;
+  font-size:clamp(38px,6.4vw,76px);line-height:.98;letter-spacing:-.02em;
+  overflow-wrap:break-word;
+}
+.wc-title .flag{height:.46em;vertical-align:.12em}
+.wc-title .tn{display:inline-block;max-width:100%}
+.eyebrow{margin-bottom:10px}
+.eyebrow.standfirst{margin:14px 0 0;max-width:52ch}
+.eyebrow.standfirst a{color:var(--red);font-family:var(--sans);font-weight:600;font-size:.82em;text-decoration:none;white-space:nowrap}
+.eyebrow.standfirst a:hover{text-decoration:underline}
+.hub-head{padding-top:16px;padding-bottom:6px}
+.wc-sec{padding-top:34px}
+.wc-sec .sec-head{margin-bottom:6px}
+.wc-sec .sec-head h2{font-size:clamp(26px,3.4vw,36px)}
+
+/* ---------- Colonne de résultats (une ligne = un match) ---------- */
+.mlist{display:grid;border-top:1px solid var(--rule)}
+@media (min-width:900px){
+  .mlist{grid-template-columns:1fr 1fr;column-gap:36px}
+  .teams2 .mlist,.match-col .mlist{grid-template-columns:1fr}
+}
+.mrow{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:14px;row-gap:1px;
+  align-items:baseline;padding:10px 0 9px;border-bottom:1px solid var(--rule-soft);
+  color:var(--ink);text-decoration:none;
+}
+.mrow .teams{font-family:var(--sans);font-stretch:87.5%;font-weight:500;font-size:17px;line-height:1.25;min-width:0}
+.mrow .t{white-space:nowrap}
+.mrow .t .flag{margin-inline-end:6px}
+.mrow .t.w{font-weight:800}
+.mrow .dash{color:var(--ink-2)}
+.mrow .sc,.mrow .hr{
+  font-family:var(--sans);font-stretch:75%;font-weight:800;font-size:24px;line-height:1;
+  font-variant-numeric:tabular-nums lining-nums;text-align:end;min-width:2.6ch;white-space:nowrap;
+}
+.mrow .hr{font-size:17px;font-weight:700;color:var(--ink-2)}
+.mrow .sc.live{color:var(--red);font-size:13px;font-stretch:100%;letter-spacing:.08em}
+.mrow .d{grid-column:1/-1;font-family:var(--sans);font-size:13px;color:var(--ink-2);line-height:1.35}
+a.mrow:hover .teams{text-decoration:underline;text-decoration-color:var(--red);text-decoration-thickness:2px;text-underline-offset:4px}
+a.mrow:hover .sc{color:var(--red)}
+
+/* ---------- Tours (hub) : dépliables, sans fioriture ---------- */
+.round h3{font-family:var(--sans);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:18px 0 8px}
+details{border-bottom:1px solid var(--rule)}
+details[open]{padding-bottom:22px}
+summary{
+  list-style:none;cursor:pointer;display:flex;align-items:baseline;gap:12px;
+  padding:14px 0 12px;font-family:var(--sans);font-stretch:75%;font-weight:800;font-size:24px;line-height:1.1;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";margin-inline-start:auto;font-stretch:100%;font-weight:600;font-size:22px;color:var(--red);line-height:1}
+details[open] > summary::after{content:"–"}
+summary .n{font-stretch:100%;font-weight:500;font-size:13px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+summary:hover > span:first-child{color:var(--red)}
+details .mlist{border-top:1px solid var(--rule)}
+
+/* ---------- Index des 48 équipes ---------- */
+.teamgrid{list-style:none;columns:2;column-gap:24px;border-top:1px solid var(--rule);padding-top:4px}
+@media (min-width:640px){.teamgrid{columns:3}}
+@media (min-width:980px){.teamgrid{columns:4;column-gap:36px}}
+.teamgrid li{break-inside:avoid;border-bottom:1px solid var(--rule-soft)}
+.teamgrid a{display:block;padding:9px 0 8px;font-family:var(--sans);font-weight:600;font-size:15px;line-height:1.3;text-decoration:none;color:var(--ink)}
+.teamgrid a .flag{margin-inline-end:8px;height:.8em}
+.teamgrid a:hover{color:var(--red);text-decoration:underline}
+
+/* ---------- Fiche de match ---------- */
+.match-head{padding-bottom:4px}
+.scorebig{
+  display:flex;align-items:center;gap:.12em;margin:18px 0 10px;
+  font-size:clamp(96px,22vw,200px);color:var(--ink);
+}
+.scorebig span{color:var(--ink-2);font-weight:500;font-size:.5em;line-height:1}
+.scorebig.live{color:var(--red)}
+.note{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--ink);max-width:60ch;margin-bottom:4px}
+.match-head .mut{padding:0 0 8px}
+.ko{margin:18px 0 8px}
+.ko time{display:block;font-family:var(--sans);font-stretch:75%;font-weight:800;font-size:clamp(26px,4vw,40px);line-height:1.05;font-variant-numeric:tabular-nums}
+.ko .mut{padding:6px 0 0}
+.venue{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;border-top:1px solid var(--rule-soft);padding-top:10px;margin-top:8px;font-size:15px;color:var(--ink)}
+.venue .label{color:var(--ink-2)}
+
+.teams2{display:grid;grid-template-columns:1fr;gap:0 40px;margin-top:30px}
+@media (min-width:760px){
+  .teams2{grid-template-columns:1fr 1fr}
+  .teams2 section + section{border-inline-start:1px solid var(--rule-soft);padding-inline-start:40px}
+}
+.teams2 section{padding-bottom:22px}
+.teams2 h2{font-family:var(--sans);font-stretch:75%;font-weight:800;font-size:clamp(22px,2.6vw,28px);line-height:1.05;border-top:3px solid var(--rule);padding:8px 0 10px}
+.teams2 h2 a{text-decoration:none;color:var(--ink)}
+.teams2 h2 a:hover{color:var(--red);text-decoration:underline}
+.teams2 h2 .flag{margin-inline-end:8px;height:.7em}
+
+.pn{display:grid;grid-template-columns:1fr;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-top:10px}
+.pn a{display:block;padding:12px 0;font-family:var(--sans);font-size:14px;color:var(--ink-2);text-decoration:none}
+.pn a b{color:var(--ink);font-weight:700}
+.pn a:hover b{color:var(--red);text-decoration:underline}
+.pn a + a{border-top:1px solid var(--rule-soft)}
+@media (min-width:640px){
+  .pn{grid-template-columns:1fr 1fr}
+  .pn a + a{border-top:0;border-inline-start:1px solid var(--rule-soft);padding-inline-start:18px}
+  .pn a.next{text-align:end}
+  .pn a.next:only-child{grid-column:2}
+}
+.backlinks{margin-top:22px;font-family:var(--sans);font-size:14px;color:var(--ink-2)}
+.backlinks a{color:var(--red);font-weight:600;text-decoration:none}
+.backlinks a:hover{text-decoration:underline}
 """
 
 
