@@ -5,6 +5,13 @@
 
 ---
 
+### [2026-11-06 ~18:30 UTC] — Claude Code (desktop) — **Archive migrée + cause de la panne de traduction trouvée**
+- Fait : 31 786 articles d'archive passés en charte « journal » (scripts/migrate_news_archive.py ; SEO recopié à l'identique, contrôle 400/400). translator.py : échecs Gemini publiés en annotation GitHub, délai 75 s, bascule de modèle sur 404.
+- Cause de la panne de traduction (depuis le 23/10) : **Gemini HTTP 402 « prepayment credits are depleted »**. Le crédit prépayé du projet AI Studio est épuisé → aucune traduction/rédaction → seuls les articles dans leur langue source s'affichent (0 en arabe).
+- Reste (Omar) : recharger le crédit Gemini (https://ai.studio/projects → Billing) ou mettre dans le secret GEMINI_API_KEY une clé d'un projet qui a du crédit. La rédaction reprend seule au run suivant (news-editorial, toutes les 30 min).
+- Bâton → Omar (facturation Gemini)
+- Commit : poussé sur main
+
 ### [2026-11-05 ~23:20 UTC] — Claude Code (desktop) — **Charte « journal » étendue à /news, /goals, /coupe-du-monde et aux articles**
 - Fait : news.html, goals.html (registre à filets), générateur wc_pages.py (154 pages), modèle d'article news_to_html.py (en-tête, chapô, encadré source, partage, compteur). edition.css : repli Cairo et filet RTL, pas d'italique en arabe ; lien passé en ?v=20261106 partout. deploy.yml : erreurs de régénération publiées en annotation (lisibles sans connexion) et redéploiement quand un générateur change. Clé IndexNow corrigée (f8f82a07…, l'ancienne a7f3… renvoyait 404).
 - État : en ligne et vérifié (accueil, /news, /goals, CdM, article courant). Un déploiement a échoué une fois sans cause trouvée (journal réservé aux comptes connectés), le suivant est passé.
