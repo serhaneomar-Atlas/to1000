@@ -13,15 +13,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="dns-prefetch" href="https://fonts.googleapis.com">
-<link rel="dns-prefetch" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/edition.css?v=20261106">
 <title>EN DIRECT, Argentine - Cap-Vert : suivez le seizième de finale de la Coupe du monde de football | To1000.com</title>
 <meta name="description" content="Les champions du monde en titre affrontent l’une des surprises de cette édition 2026, vendredi à Miami (Floride), pour une place en huitièmes de finale.">
 <meta name="keywords" content="Coupe du Monde 2026, World Cup 2026, FIFA, USA Canada Mexique, to1000.com">
 <meta name="author" content="To1000.com">
 <meta name="robots" content="index, follow">
-<meta name="theme-color" content="#05070b">
+<meta name="theme-color" content="#f4f0e6">
 <meta property="og:type" content="article">
 <meta property="og:title" content="EN DIRECT, Argentine - Cap-Vert : suivez le seizième de finale de la Coupe du monde de football">
 <meta property="og:description" content="Les champions du monde en titre affrontent l’une des surprises de cette édition 2026, vendredi à Miami (Floride), pour une place en huitièmes de finale.">
@@ -110,81 +109,222 @@
 }
 </script>
 <style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-  background: #05070b; color: #eef2f6;
-  font-family: 'Hanken Grotesk', -apple-system, sans-serif;
-  line-height: 1.7;
+.mast-name .nameplate{font-size:clamp(46px,7.4vw,78px)}
+.mast-tag{font-size:14px}
+.art-head{padding-top:26px;padding-bottom:22px;border-bottom:1px solid var(--rule)}
+.art-head .kicker{margin-bottom:12px}
+.art-title{
+  font-family:var(--sans);font-stretch:75%;font-weight:800;
+  font-size:clamp(34px,5.4vw,64px);line-height:1.02;letter-spacing:-.012em;
+  max-width:24ch;text-wrap:balance;overflow-wrap:break-word;
 }
-.nav {
-  padding: 1rem 1.5rem; border-bottom: 1px solid #1d2530;
-  display: flex; justify-content: space-between; align-items: center;
-  position: sticky; top: 0; background: rgba(6,6,6,0.95); backdrop-filter: blur(10px); z-index: 100;
-  flex-wrap: wrap; gap: 0.5rem;
+html[dir="rtl"] .art-title{font-family:'Cairo',sans-serif;font-weight:800;letter-spacing:0;line-height:1.3;font-size:clamp(30px,4.4vw,52px)}
+.art-head .standfirst{margin-top:18px;max-width:54ch}
+.art-head .byline{margin-top:16px}
+.byline b{color:var(--ink);font-weight:600}
+.art-grid{display:grid;gap:34px;padding-top:24px;padding-bottom:12px}
+.art-grid > *{min-width:0}
+@media (min-width:960px){
+  .art-grid{grid-template-columns:minmax(0,1fr) 320px;gap:56px}
+  .art-side{border-left:1px solid var(--rule-soft);padding-left:28px}
+  html[dir="rtl"] .art-side{border-left:0;padding-left:0;border-right:1px solid var(--rule-soft);padding-right:28px}
 }
-.nav .logo {font-family:'Anton',sans-serif; font-weight: 900; font-size: 1.2rem; letter-spacing: -0.02em; color: #fff; text-decoration: none; }
-.nav .logo .accent { color: #f2c14e; }
-.nav .links { display: flex; gap: 1rem; flex-wrap: wrap; }
-.nav .links a { color: #aaa; text-decoration: none; font-size: 0.9rem; font-weight: 600; }
-.nav .links a:hover { color: #f2c14e; }
-article { max-width: 760px; margin: 2rem auto; padding: 0 1.5rem; }
-.kind { display: inline-block; padding: 0.2rem 0.7rem; background: rgba(242,193,78,0.15); color: #f2c14e; border-radius: 4px; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; }
-.kind.maroc { background: rgba(193,39,45,0.15); color: #ff6b6b; }
-.kind.portugal { background: rgba(0,102,0,0.15); color: #4caf50; }
-.kind.wc { background: rgba(0,153,255,0.15); color: #4eb3ff; }
-h1 { font-size: clamp(1.6rem, 4.5vw, 2.6rem); font-weight: 900; line-height: 1.2; margin: 1rem 0; letter-spacing: -0.02em; }
-.meta { color: #9aa6b4; font-size: 0.85rem; margin-bottom: 1.5rem; display: flex; gap: 0.8rem; align-items: center; flex-wrap: wrap; }
-.hero-img { margin: 0 0 1.5rem; }
-.hero-img img { width: 100%; height: auto; border-radius: 10px; }
-.lead { font-size: 1.1rem; color: #ddd; margin-bottom: 1rem; }
-.original { background: #0d1118; border: 1px solid #1d2530; border-radius: 8px; padding: 1rem; margin: 1.5rem 0; }
-.original summary { cursor: pointer; color: #f2c14e; font-weight: 700; }
-.original p { margin-top: 0.6rem; color: #bbb; }
-.source-link { color: #9aa6b4; font-size: 0.9rem; margin: 1.5rem 0; padding-top: 1rem; border-top: 1px solid #1d2530; }
-.source-link a { color: #f2c14e; }
-.related { background: linear-gradient(180deg, #0d1118 0%, #0a0d13 100%); border: 1px solid #1d2530; border-radius: 12px; padding: 1.2rem; margin: 2rem 0; }
-.related h2 { font-size: 1rem; color: #f2c14e; margin-bottom: 0.6rem; text-transform: uppercase; letter-spacing: 0.05em; }
-.related a { color: #ddd; text-decoration: none; }
-.related a:hover { color: #f2c14e; }
-.rel-grid { display:grid; grid-template-columns:1fr; gap:0.6rem; margin-top:0.5rem; }
-@media(min-width:560px){ .rel-grid { grid-template-columns:1fr 1fr; } }
-.rel-card { display:flex; flex-direction:column; gap:0.3rem; padding:0.7rem 0.85rem; border:1px solid #1d2530; border-radius:10px; background:#0d1118; text-decoration:none; transition:border-color .2s; }
-.rel-card:hover { border-color:#f2c14e; }
-.rel-t { color:#eaeaea; font-size:0.9rem; line-height:1.3; }
-.rel-s { color:#9aa6b4; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.05em; }
-.footer { border-top: 1px solid #1d2530; padding: 2rem 1.5rem; text-align: center; font-size: 0.85rem; color: #8a93a0; margin-top: 4rem; }
-.footer a { color: #aaa; }
+.art-main{max-width:760px}
+.art-main figure.photo{margin-bottom:24px}
+.art-main figure.photo img{aspect-ratio:3/2;object-fit:cover;object-position:50% 30%}
+.prose{font-size:19px;line-height:1.6}
+.prose:empty{display:none}
+.essentiel{list-style:square;padding-inline-start:1.1em}
+.essentiel li{margin-bottom:.6em}
+.essentiel li::marker{color:var(--red)}
+details.original{margin-top:28px;border-top:1px solid var(--rule-soft);border-bottom:1px solid var(--rule-soft)}
+details.original summary{
+  cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px;
+  font-family:var(--sans);font-weight:600;font-size:14px;padding:12px 0;
+}
+details.original summary::-webkit-details-marker{display:none}
+details.original summary::after{content:"+";font-weight:800;color:var(--red)}
+details.original[open] summary::after{content:"\2013"}
+details.original p{padding-bottom:14px;font-size:17px;line-height:1.55;color:var(--ink-2)}
+.src-box{margin-top:30px;border-top:3px solid var(--rule);padding-top:10px}
+.src-line{margin-top:8px;font-family:var(--sans);font-size:15px;line-height:1.45}
+.src-line b{font-weight:700}
+.src-box .btn{margin-top:14px}
+.art-side > * + *{margin-top:30px}
+.box{border-top:3px solid var(--rule);padding-top:10px}
+.box > .label{margin-bottom:12px}
+.share{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.share a,.share button{
+  display:block;text-align:center;text-decoration:none;cursor:pointer;
+  font-family:var(--sans);font-weight:700;font-size:14px;padding:11px 8px;
+  border:2px solid var(--ink);background:transparent;color:var(--ink);
+}
+.share a:hover,.share button:hover{background:var(--ink);color:var(--paper)}
+.share .wide{grid-column:1/-1;background:var(--ink);color:var(--paper)}
+.share .wide:hover{background:var(--red);border-color:var(--red)}
+.cbox .pair{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--rule-soft)}
+.cbox .pair > div{padding:12px 12px 4px 0}
+.cbox .pair > div + div{padding-left:12px;border-left:1px solid var(--rule-soft)}
+html[dir="rtl"] .cbox .pair > div{padding:12px 0 4px 12px}
+html[dir="rtl"] .cbox .pair > div + div{padding-left:0;padding-right:12px;border-left:0;border-right:1px solid var(--rule-soft)}
+.cbox .num{font-size:56px;display:block}
+.cbox .pair div:last-child .num{color:var(--red)}
+.cbox .pair span:not(.num){display:block;margin-top:6px;font-family:var(--sans);font-size:13px;line-height:1.35;color:var(--ink-2)}
+.cbox a{display:inline-block;margin-top:12px;font-family:var(--sans);font-weight:600;font-size:14px;color:var(--red);text-decoration:none}
+.cbox a:hover{text-decoration:underline}
+.rel{list-style:none;border-top:1px solid var(--rule)}
+.rel li{border-bottom:1px solid var(--rule-soft)}
+.rel a{display:block;padding:11px 0 12px;text-decoration:none}
+.rel-t{display:block;font-family:var(--sans);font-stretch:87.5%;font-weight:700;font-size:17px;line-height:1.22}
+.rel a:hover .rel-t{color:var(--red);text-decoration:underline;text-underline-offset:3px}
+.rel-s{display:block;margin-top:4px}
+html[dir="rtl"] .rel-t{font-family:'Cairo',sans-serif}
 </style>
 </head>
 <body>
-<nav class="nav">
-  <a class="logo" href="/">To<span class="accent">1000</span>.com</a>
-  <div class="links">
-    <a href="/">Accueil</a>
-    <a href="/coupe-du-monde/">CDM 2026</a>
-    <a href="/coupe-du-monde/equipe/maroc/">🇲🇦 Maroc</a>
-    <a href="/coupe-du-monde/equipe/portugal/">🇵🇹 Portugal</a>
-    <a href="/goals.html">Compteur CR7</a>
+<a class="skip" href="#article" data-i18n="skip">Aller à l'article</a>
+<header>
+  <div class="wrap mast-top">
+    <span class="meta" id="today">Vendredi 6 novembre 2026</span>
+    <div class="lang-sw" role="group" aria-label="Langue / Language"><button type="button" data-l="fr" aria-pressed="true" class="active">FR</button><button type="button" data-l="en" aria-pressed="false">EN</button><button type="button" data-l="es" aria-pressed="false">ES</button><button type="button" data-l="ar" aria-pressed="false">AR</button></div>
   </div>
-</nav>
-<article>
-  <span class="kind wc">WC 2026</span>
-  <h1>EN DIRECT, Argentine - Cap-Vert : suivez le seizième de finale de la Coupe du monde de football</h1>
-  <div class="meta">
-    <span>📅 3 July 2026</span>
-    <span>· Source : Le Monde — Sport</span>
+  <div class="wrap mast-name">
+    <a class="nameplate" href="/" aria-label="To1000.com, accueil">TO1000<span class="dot">.</span></a>
+    <p class="mast-tag" data-i18n="tag">Le football, chaque jour. Et le compte à rebours du 1000e but de Cristiano Ronaldo.</p>
+    <a class="mast-count" href="/#compteur"><b data-live="goals">985</b><span data-i18n="count_lbl">buts sur 1000</span></a>
   </div>
-  <figure class="hero-img"><img src="https://img.lemde.fr/2026/06/28/501/0/4500/2250/644/322/60/0/7601175_ftp-1-raw5vsihfk1f-5470318-01-06.jpg" alt="EN DIRECT, Argentine - Cap-Vert : suivez le seizième de finale de la Coupe du monde de football" width="1200" height="630" style="aspect-ratio:1200/630" loading="eager" fetchpriority="high" decoding="async"></figure>
-  <p class="lead">Les champions du monde en titre affrontent l’une des surprises de cette édition 2026, vendredi à Miami (Floride), pour une place en huitièmes de finale.</p>
-  <p class="source-link">📎 Source originale : <a href="https://www.lemonde.fr/sport/live/2026/07/03/en-direct-argentine-cap-vert-suivez-le-seizieme-de-finale-de-la-coupe-du-monde-de-football_6720487_3242.html" rel="noopener nofollow" target="_blank">Le Monde — Sport →</a></p>
-  <div class="related">
-    <h2>À lire aussi</h2>
-    <p><div class="rel-grid"><a class="rel-card" href="/news/00e3db6aa558.html"><span class="rel-t">Coupe du monde 2026 : Argentine – Cap-Vert, les compositions officielles</span><span class="rel-s">Africa Top Sports</span></a><a class="rel-card" href="/news/71d48394af0f.html"><span class="rel-t">Coupe du monde 2026 : vainqueur aux tirs au but de l’Australie, l’Égypte s’offre une place en huitièmes de finale</span><span class="rel-s">Le Figaro Sport</span></a><a class="rel-card" href="/news/90d1d4f40f01.html"><span class="rel-t">Coupe du Monde 2026: Historique! L’Egypte sort l’Australie et file en huitièmes de finale</span><span class="rel-s">Africa Top Sports</span></a><a class="rel-card" href="/news/7af6676115d5.html"><span class="rel-t">L&#x27;Égypte en huitièmes !</span><span class="rel-s">L&#x27;Équipe</span></a></div></p>
+  <nav class="wrap sections" aria-label="Rubriques">
+    <ul>
+      <li><a href="/" data-i18n="nav_home">À la une</a></li>
+      <li><a href="/obrigado-cristiano/" class="hot" data-i18n="nav_tribute">Obrigado, Cristiano</a></li>
+      <li><a href="/#compteur" data-i18n="nav_counter">Le compteur</a></li>
+      <li><a href="/goals.html" data-i18n="nav_goals">Tous les buts</a></li>
+      <li><a href="/news.html" aria-current="page" data-i18n="nav_news">Actualités</a></li>
+      <li><a href="/coupe-du-monde/" data-i18n="nav_wc">Coupe du monde</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="article">
+<article class="wrap">
+  <header class="art-head">
+    <p class="label red kicker" id="art-kicker">Coupe du monde 2026</p>
+    <h1 class="art-title" id="art-title">EN DIRECT, Argentine - Cap-Vert : suivez le seizième de finale de la Coupe du monde de football</h1>
+    <p class="standfirst" id="art-lead">Les champions du monde en titre affrontent l’une des surprises de cette édition 2026, vendredi à Miami (Floride), pour une place en huitièmes de finale.</p>
+    <p class="meta byline"><span data-i18n="by">D'après</span> <b><bdi>Le Monde — Sport</bdi></b> · <time id="art-date" datetime="2026-07-03T20:00:06+00:00">3 juillet 2026</time></p>
+  </header>
+  <div class="art-grid">
+    <div class="art-main">
+      <figure class="photo"><img src="https://img.lemde.fr/2026/06/28/501/0/4500/2250/644/322/60/0/7601175_ftp-1-raw5vsihfk1f-5470318-01-06.jpg" alt="EN DIRECT, Argentine - Cap-Vert : suivez le seizième de finale de la Coupe du monde de football" width="1200" height="800" loading="eager" fetchpriority="high" decoding="async" referrerpolicy="no-referrer" onerror="var f=this.closest('figure');if(f)f.remove();"><figcaption><span data-i18n="photo">Photo via</span> <bdi>Le Monde — Sport</bdi></figcaption></figure>
+      <div class="prose" id="art-dev"></div>
+      
+      <div class="src-box"><h2 class="label" data-i18n="src">Source</h2><p class="src-line"><span data-i18n="src_txt">Ce texte résume un article publié par</span> <b><bdi>Le Monde — Sport</bdi></b>.</p><a class="btn line" href="https://www.lemonde.fr/sport/live/2026/07/03/en-direct-argentine-cap-vert-suivez-le-seizieme-de-finale-de-la-coupe-du-monde-de-football_6720487_3242.html" rel="noopener nofollow" target="_blank"><span data-i18n="read_orig">Lire l'article original</span> <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <aside class="art-side">
+      <section class="box">
+        <h2 class="label" data-i18n="share">Partager</h2>
+        <div class="share" data-share><a data-net="whatsapp" href="https://wa.me/?text=EN%20DIRECT%2C%20Argentine%20-%20Cap-Vert%20%3A%20suivez%20le%20seizi%C3%A8me%20de%20finale%20de%20la%20Coupe%20du%20monde%20de%20football%20https%3A%2F%2Fto1000.com%2Fnews%2F6f6447406f88" rel="noopener" target="_blank">WhatsApp</a><a data-net="x" href="https://x.com/intent/post?text=EN%20DIRECT%2C%20Argentine%20-%20Cap-Vert%20%3A%20suivez%20le%20seizi%C3%A8me%20de%20finale%20de%20la%20Coupe%20du%20monde%20de%20football&amp;url=https%3A%2F%2Fto1000.com%2Fnews%2F6f6447406f88" rel="noopener" target="_blank">X</a><a data-net="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fto1000.com%2Fnews%2F6f6447406f88" rel="noopener" target="_blank">Facebook</a><a data-net="telegram" href="https://t.me/share/url?url=https%3A%2F%2Fto1000.com%2Fnews%2F6f6447406f88&amp;text=EN%20DIRECT%2C%20Argentine%20-%20Cap-Vert%20%3A%20suivez%20le%20seizi%C3%A8me%20de%20finale%20de%20la%20Coupe%20du%20monde%20de%20football" rel="noopener" target="_blank">Telegram</a><button type="button" class="wide" data-net="copy" data-i18n="copy">Copier le lien</button></div>
+      </section>
+      <section class="box cbox">
+        <h2 class="label red" data-i18n="cb_lbl">Le compteur</h2>
+        <div class="pair">
+          <div><span class="num" data-live="goals">985</span><span data-i18n="cb_goals">buts en carrière pour Cristiano Ronaldo</span></div>
+          <div><span class="num" data-live="remaining">15</span><span data-i18n="cb_rem">à marquer pour atteindre 1000</span></div>
+        </div>
+        <a href="/#compteur" data-i18n="cb_link">Suivre le compteur →</a>
+      </section>
+      <section class="box related">
+        <h2 class="label" data-i18n="related">À lire aussi</h2>
+        <ol class="rel"><li><a href="/news/00e3db6aa558.html"><span class="rel-t">Coupe du monde 2026 : Argentine – Cap-Vert, les compositions officielles</span><span class="rel-s meta">Africa Top Sports</span></a></li><li><a href="/news/71d48394af0f.html"><span class="rel-t">Coupe du monde 2026 : vainqueur aux tirs au but de l’Australie, l’Égypte s’offre une place en huitièmes de finale</span><span class="rel-s meta">Le Figaro Sport</span></a></li><li><a href="/news/90d1d4f40f01.html"><span class="rel-t">Coupe du Monde 2026: Historique! L’Egypte sort l’Australie et file en huitièmes de finale</span><span class="rel-s meta">Africa Top Sports</span></a></li><li><a href="/news/7af6676115d5.html"><span class="rel-t">L&#x27;Égypte en huitièmes !</span><span class="rel-s meta">L&#x27;Équipe</span></a></li></ol>
+      </section>
+    </aside>
   </div>
 </article>
-<footer class="footer">
-  <p>To1000.com est un site de fans <strong>non officiel</strong>. Cet article est un résumé automatique d'une source externe, traduit et structuré pour l'indexation. Pour le contenu original, suivre le lien source ci-dessus.</p>
-  <p>© 2026 · <a href="/">Accueil</a> · <a href="/coupe-du-monde/">Hub WC</a> · <a href="/goals.html">Compteur CR7</a></p>
+</main>
+<footer class="wrap foot">
+  <div class="foot-grid">
+    <a class="nameplate" href="/" aria-label="To1000.com, accueil">TO1000<span class="dot">.</span></a>
+    <nav aria-label="Pied de page">
+      <a href="/" data-i18n="nav_home">À la une</a><a href="/news.html" data-i18n="nav_news">Actualités</a><a href="/goals.html" data-i18n="nav_goals">Tous les buts</a><a href="/coupe-du-monde/" data-i18n="nav_wc">Coupe du monde</a><a href="/about.html" data-i18n="nav_about">À propos</a><a href="/privacy.html" data-i18n="nav_privacy">Confidentialité</a><a href="/contact.html" data-i18n="nav_contact">Contact</a>
+    </nav>
+  </div>
+  <p class="disclaimer" data-i18n="disclaimer">Site de fans non officiel, ni affilié ni approuvé par Cristiano Ronaldo, ses clubs ou la FIFA. Cet article est un résumé automatique d&#x27;une source externe, traduit et mis en forme par To1000.com ; le texte original appartient à son éditeur, cité et lié ci-dessus.</p>
 </footer>
+<script>
+(function(){
+  var D={"i18n": {"fr": {"title": "EN DIRECT, Argentine - Cap-Vert : suivez le seizième de finale de la Coupe du monde de football", "summary": "Les champions du monde en titre affrontent l’une des surprises de cette édition 2026, vendredi à Miami (Floride), pour une place en huitièmes de finale.", "body": [], "format": "brief"}, "en": {"title": "English version unavailable", "summary": "This story is not yet available in English. You can read the original source.", "body": [], "format": "brief", "fallback": true}, "es": {"title": "Versión en español no disponible", "summary": "Esta noticia aún no está disponible en español. Puedes consultar la fuente original.", "body": [], "format": "brief", "fallback": true}, "ar": {"title": "النسخة العربية غير متاحة", "summary": "هذا الخبر غير متاح بالعربية بعد. يمكنك الاطلاع على المصدر الأصلي.", "body": [], "format": "brief", "fallback": true}}, "src_lang": "", "ui": {"fr": {"orig": "Voir le texte original", "related": "À lire aussi", "src": "Source", "ln": {"en": "anglais", "es": "espagnol", "fr": "français", "ar": "arabe", "de": "allemand", "it": "italien", "pt": "portugais"}, "skip": "Aller à l'article", "tag": "Le football, chaque jour. Et le compte à rebours du 1000e but de Cristiano Ronaldo.", "count_lbl": "buts sur 1000", "nav_home": "À la une", "nav_tribute": "Obrigado, Cristiano", "nav_counter": "Le compteur", "nav_goals": "Tous les buts", "nav_news": "Actualités", "nav_wc": "Coupe du monde", "nav_about": "À propos", "nav_privacy": "Confidentialité", "nav_contact": "Contact", "by": "D'après", "photo": "Photo via", "src_txt": "Ce texte résume un article publié par", "read_orig": "Lire l'article original", "share": "Partager", "copy": "Copier le lien", "copied": "Lien copié", "cb_lbl": "Le compteur", "cb_goals": "buts en carrière pour Cristiano Ronaldo", "cb_rem": "à marquer pour atteindre 1000", "cb_link": "Suivre le compteur →", "disclaimer": "Site de fans non officiel, ni affilié ni approuvé par Cristiano Ronaldo, ses clubs ou la FIFA. Cet article est un résumé automatique d'une source externe, traduit et mis en forme par To1000.com ; le texte original appartient à son éditeur, cité et lié ci-dessus.", "kinds": {"cr7": "Cristiano Ronaldo", "wc": "Coupe du monde 2026", "maroc": "Maroc", "portugal": "Portugal", "foot": "Football"}}, "en": {"orig": "View the original text", "related": "Also read", "src": "Source", "ln": {"en": "English", "es": "Spanish", "fr": "French", "ar": "Arabic", "de": "German", "it": "Italian", "pt": "Portuguese"}, "skip": "Skip to article", "tag": "Football, every day. And the countdown to Cristiano Ronaldo's 1000th goal.", "count_lbl": "goals of 1000", "nav_home": "Front page", "nav_tribute": "Obrigado, Cristiano", "nav_counter": "The counter", "nav_goals": "All goals", "nav_news": "News", "nav_wc": "World Cup", "nav_about": "About", "nav_privacy": "Privacy", "nav_contact": "Contact", "by": "Based on", "photo": "Photo via", "src_txt": "This story summarises an article published by", "read_orig": "Read the original article", "share": "Share", "copy": "Copy link", "copied": "Link copied", "cb_lbl": "The counter", "cb_goals": "career goals for Cristiano Ronaldo", "cb_rem": "still needed to reach 1000", "cb_link": "Follow the counter →", "disclaimer": "Unofficial fan site, not affiliated with or endorsed by Cristiano Ronaldo, his clubs or FIFA. This story is an automatic summary of an external source, translated and edited by To1000.com; the original text belongs to its publisher, credited and linked above.", "kinds": {"cr7": "Cristiano Ronaldo", "wc": "World Cup 2026", "maroc": "Morocco", "portugal": "Portugal", "foot": "Football"}}, "es": {"orig": "Ver el texto original", "related": "Leer también", "src": "Fuente", "ln": {"en": "inglés", "es": "español", "fr": "francés", "ar": "árabe", "de": "alemán", "it": "italiano", "pt": "portugués"}, "skip": "Ir al artículo", "tag": "Fútbol, cada día. Y la cuenta atrás hacia el gol 1000 de Cristiano Ronaldo.", "count_lbl": "goles de 1000", "nav_home": "Portada", "nav_tribute": "Obrigado, Cristiano", "nav_counter": "El contador", "nav_goals": "Todos los goles", "nav_news": "Noticias", "nav_wc": "Mundial", "nav_about": "Quiénes somos", "nav_privacy": "Privacidad", "nav_contact": "Contacto", "by": "Según", "photo": "Foto vía", "src_txt": "Este texto resume un artículo publicado por", "read_orig": "Leer el artículo original", "share": "Compartir", "copy": "Copiar el enlace", "copied": "Enlace copiado", "cb_lbl": "El contador", "cb_goals": "goles en la carrera de Cristiano Ronaldo", "cb_rem": "le faltan para llegar a 1000", "cb_link": "Seguir el contador →", "disclaimer": "Sitio de fans no oficial, sin afiliación ni respaldo de Cristiano Ronaldo, sus clubes o la FIFA. Esta noticia es un resumen automático de una fuente externa, traducido y editado por To1000.com; el texto original pertenece a su editor, citado y enlazado arriba.", "kinds": {"cr7": "Cristiano Ronaldo", "wc": "Mundial 2026", "maroc": "Marruecos", "portugal": "Portugal", "foot": "Fútbol"}}, "ar": {"orig": "عرض النص الأصلي", "related": "اقرأ أيضاً", "src": "المصدر", "ln": {"en": "الإنجليزية", "es": "الإسبانية", "fr": "الفرنسية", "ar": "العربية", "de": "الألمانية", "it": "الإيطالية", "pt": "البرتغالية"}, "skip": "انتقل إلى المقال", "tag": "كرة القدم، كل يوم. والعد التنازلي نحو الهدف الألف لكريستيانو رونالدو.", "count_lbl": "هدفاً من 1000", "nav_home": "الرئيسية", "nav_tribute": "شكراً كريستيانو", "nav_counter": "العدّاد", "nav_goals": "كل الأهداف", "nav_news": "الأخبار", "nav_wc": "كأس العالم", "nav_about": "من نحن", "nav_privacy": "الخصوصية", "nav_contact": "اتصل بنا", "by": "نقلاً عن", "photo": "الصورة عبر", "src_txt": "يلخّص هذا النص مقالاً نشره", "read_orig": "اقرأ المقال الأصلي", "share": "مشاركة", "copy": "انسخ الرابط", "copied": "تم نسخ الرابط", "cb_lbl": "العدّاد", "cb_goals": "هدفاً في مسيرة كريستيانو رونالدو", "cb_rem": "هدفاً متبقياً لبلوغ الألف", "cb_link": "تابع العدّاد ←", "disclaimer": "موقع جماهيري غير رسمي، غير مرتبط بكريستيانو رونالدو أو أنديته أو الفيفا ولا يحظى بموافقتهم. هذا الخبر ملخّص آلي لمصدر خارجي، ترجمه وحرّره To1000.com؛ النص الأصلي ملك لناشره المذكور أعلاه مع الرابط.", "kinds": {"cr7": "كريستيانو رونالدو", "wc": "كأس العالم 2026", "maroc": "المغرب", "portugal": "البرتغال", "foot": "كرة القدم"}}}, "kind": "wc", "url": "https://to1000.com/news/6f6447406f88", "pub": "2026-07-03T20:00:06+00:00", "id": "6f6447406f88"};
+  var SUP=['fr','en','es','ar'];
+  function detect(){var u=new URLSearchParams(location.search).get('lang');if(u&&SUP.indexOf(u)>=0)return u;try{var s=localStorage.getItem('to1000_lang');if(s&&SUP.indexOf(s)>=0)return s;}catch(e){}var n=(navigator.language||'fr').slice(0,2).toLowerCase();return SUP.indexOf(n)>=0?n:'fr';}
+  function esc(t){var d=document.createElement('div');d.textContent=t==null?'':t;return d.innerHTML;}
+  var LANG='fr',STATS=null;
+  function ui(){return D.ui[LANG]||D.ui.fr;}
+  function loc(){return LANG==='ar'?'ar-u-nu-latn':LANG;}
+  function pageUrl(){return D.url+(LANG!=='fr'?'?lang='+LANG:'');}
+  function renderDates(){
+    var td=document.getElementById('today');
+    if(td){try{var s=new Date().toLocaleDateString(loc(),{weekday:'long',day:'numeric',month:'long',year:'numeric'});td.textContent=s.charAt(0).toUpperCase()+s.slice(1);}catch(e){}}
+    var ad=document.getElementById('art-date');
+    if(ad&&D.pub){try{var d=new Date(D.pub);if(!isNaN(d)){ad.textContent=d.toLocaleDateString(loc(),{day:'numeric',month:'long',year:'numeric'})+(LANG==='ar'?'، ':', ')+d.toLocaleTimeString(loc(),{hour:'2-digit',minute:'2-digit'});}}catch(e){}}
+  }
+  function renderLive(){
+    if(!STATS)return;
+    var g=STATS.goals,rem=STATS.remaining!=null?STATS.remaining:(STATS.target||1000)-g;
+    document.querySelectorAll('[data-live="goals"]').forEach(function(x){x.textContent=g;});
+    document.querySelectorAll('[data-live="remaining"]').forEach(function(x){x.textContent=Math.max(0,rem);});
+  }
+  function bindShare(){
+    var e=D.i18n[LANG]||{},t=document.getElementById('art-title');
+    var txt=(!e.fallback&&e.title)||(t?t.textContent:document.title);
+    var u=encodeURIComponent(pageUrl()),m=encodeURIComponent(txt);
+    var links={whatsapp:'https://wa.me/?text='+m+'%20'+u,x:'https://x.com/intent/post?text='+m+'&url='+u,
+      facebook:'https://www.facebook.com/sharer/sharer.php?u='+u,telegram:'https://t.me/share/url?url='+u+'&text='+m};
+    document.querySelectorAll('[data-share] a[data-net]').forEach(function(a){var h=links[a.getAttribute('data-net')];if(h)a.href=h;});
+  }
+  function apply(l){
+    var e=D.i18n[l];if(!e)return;
+    LANG=l;
+    var H=document.documentElement;H.lang=l;H.dir=(l==='ar')?'rtl':'ltr';
+    var t=document.getElementById('art-title');if(t&&e.title){t.textContent=e.title;t.setAttribute('dir','auto');}
+    var ld=document.getElementById('art-lead');if(ld&&e.summary){ld.textContent=e.summary;ld.setAttribute('dir','auto');}
+    var dev=document.getElementById('art-dev');
+    if(dev){
+      if(e.body&&e.body.length){
+        dev.innerHTML=(e.format==='bullets')
+          ?'<ul class="essentiel">'+e.body.map(function(p){return '<li>'+esc(p)+'</li>';}).join('')+'</ul>'
+          :e.body.map(function(p){return '<p>'+esc(p)+'</p>';}).join('');
+        dev.setAttribute('dir','auto');
+      }else{dev.innerHTML='';}
+    }
+    var U=ui();
+    document.querySelectorAll('[data-i18n]').forEach(function(x){var v=U[x.getAttribute('data-i18n')];if(v!=null)x.textContent=v;});
+    var k=document.getElementById('art-kicker');if(k&&U.kinds&&U.kinds[D.kind])k.textContent=U.kinds[D.kind];
+    var ol=document.getElementById('art-orig-label');
+    if(ol){var n=U.ln[D.src_lang];ol.textContent=U.orig+(n?' ('+n+')':'');}
+    // Les titres « À lire aussi » n'existent qu'en français.
+    var rb=document.querySelector('.related');if(rb)rb.hidden=l!=='fr';
+    document.querySelectorAll('.lang-sw button').forEach(function(b){var on=b.getAttribute('data-l')===l;b.classList.toggle('active',on);b.setAttribute('aria-pressed',on?'true':'false');});
+    document.title=(e.title||document.title.split(' | ')[0])+' | To1000.com';
+    renderDates();bindShare();renderLive();
+  }
+  LANG=detect();
+  apply(LANG);
+  fetch('/stats.json?_='+Date.now(),{cache:'no-store'}).then(function(r){return r.json();})
+    .then(function(s){if(s&&typeof s.goals==='number'){STATS=s;renderLive();}}).catch(function(){});
+  document.addEventListener('click',function(ev){
+    var tg=ev.target;if(!tg||!tg.closest)return;
+    var b=tg.closest('.lang-sw button');
+    if(b){var nl=b.getAttribute('data-l');if(SUP.indexOf(nl)>=0&&nl!==LANG){try{localStorage.setItem('to1000_lang',nl);}catch(e){}apply(nl);}return;}
+    var c=tg.closest('[data-net="copy"]');
+    if(c){
+      var link=pageUrl();
+      var done=function(){c.textContent=ui().copied;setTimeout(function(){c.textContent=ui().copy;},2200);};
+      if(navigator.share&&matchMedia('(pointer:coarse)').matches){navigator.share({title:document.title,url:link}).catch(function(){});return;}
+      if(navigator.clipboard){navigator.clipboard.writeText(link).then(done,function(){prompt('',link);});}else{prompt('',link);}
+      return;
+    }
+    var a=tg.closest('[data-share] a[data-net]');
+    if(a&&typeof gtag==='function'){gtag('event','share',{method:a.getAttribute('data-net'),content_type:'article',item_id:D.id});}
+  });
+})();
+</script>
 </body>
 </html>
