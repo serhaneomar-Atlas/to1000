@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-05T22:03:01.767416+00:00",
+  "generated_at": "2026-11-06T02:26:33.032559+00:00",
   "snapshot": {
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "goals": 985,
     "remaining": 15,
     "pct_to_1000": 98.5,
-    "news_items": 49,
-    "news_sources": 9,
-    "cr7_items": 2,
-    "article_pages": 31835,
-    "sitemap_urls": 31951
+    "news_items": 48,
+    "news_sources": 8,
+    "cr7_items": 1,
+    "article_pages": 31873,
+    "sitemap_urls": 31999
   },
   "deltas": {
     "goals": {
@@ -23,18 +23,18 @@
       "dir": "down"
     },
     "news_sources": {
-      "abs": 0,
-      "pct": 0.0,
-      "dir": "flat"
+      "abs": -1,
+      "pct": -11.1,
+      "dir": "down"
     },
     "article_pages": {
-      "abs": 120,
-      "pct": 0.4,
+      "abs": 38,
+      "pct": 0.1,
       "dir": "up"
     },
     "sitemap_urls": {
-      "abs": 123,
-      "pct": 0.4,
+      "abs": 48,
+      "pct": 0.2,
       "dir": "up"
     }
   },
@@ -1096,6 +1096,14 @@
       "news_sources": 9,
       "article_pages": 31835,
       "sitemap_urls": 31951
+    },
+    {
+      "date": "2026-11-06",
+      "goals": 985,
+      "news_items": 48,
+      "news_sources": 8,
+      "article_pages": 31873,
+      "sitemap_urls": 31999
     }
   ],
   "traffic": {
@@ -1105,7 +1113,7 @@
   "seo": {
     "ga4": true,
     "search_console": false,
-    "sitemap_urls": 31951,
+    "sitemap_urls": 31999,
     "news_prerendered": true,
     "canonical_clean_urls": true,
     "robots_has_sitemap": true
@@ -1113,57 +1121,53 @@
   "source_breakdown": [
     {
       "label": "Mundo Deportivo",
-      "value": 12
+      "value": 17
     },
     {
       "label": "L'Équipe",
-      "value": 7
-    },
-    {
-      "label": "Africa Top Sports",
-      "value": 6
+      "value": 9
     },
     {
       "label": "Olé",
-      "value": 5
+      "value": 6
     },
     {
       "label": "Kicker",
       "value": 5
     },
     {
-      "label": "Le Figaro Sport",
-      "value": 5
-    },
-    {
-      "label": "Sportschau",
+      "label": "BBC Sport",
       "value": 4
     },
     {
-      "label": "BBC Sport",
-      "value": 3
+      "label": "Le Figaro Sport",
+      "value": 4
     },
     {
-      "label": "Hespress Sport",
+      "label": "Sportschau",
       "value": 2
+    },
+    {
+      "label": "Africa Top Sports",
+      "value": 1
     }
   ],
   "lang_breakdown": [
     {
-      "label": "fr",
-      "value": 20
+      "label": "es",
+      "value": 23
     },
     {
-      "label": "es",
-      "value": 17
+      "label": "fr",
+      "value": 14
     },
     {
       "label": "de",
-      "value": 9
+      "value": 7
     },
     {
       "label": "en",
-      "value": 3
+      "value": 4
     }
   ],
   "marketing_log": [
@@ -1211,11 +1215,11 @@
     }
   ],
   "news_meta": {
-    "generated_at": "2026-11-05T22:02:56.158916Z",
+    "generated_at": "2026-11-06T02:26:29.670340Z",
     "tagline": "Le foot, droit au but.",
-    "feeds_fetched": 18,
-    "feeds_failed": 13,
-    "published": 49,
+    "feeds_fetched": 17,
+    "feeds_failed": 14,
+    "published": 48,
     "filtered_offtopic": null
   }
 }
