@@ -5,6 +5,13 @@
 
 ---
 
+### [2026-11-06 ~20:00 UTC] — Claude Code (desktop) — **Traduction de secours par Claude (abonnement Max)**
+- Fait : workflow news-translate.yml (toutes les heures) + scripts/claude_translate.py (prepare / ingest / merge). Claude traduit les actus sans version fr/en/es/ar publiable, écarte les non-articles (directs, paris) ; chaque traduction est validée (longueurs, arabe en lettres arabes, pas de copie du source), rangée dans EDITORIAL/state/claude_translations.json et réappliquée par news-sync après chaque rafraîchissement. Moteur « redaction » (déjà accepté par le contrat de langue). 6 tests.
+- État : en attente du secret CLAUDE_CODE_OAUTH_TOKEN (absent du dépôt : il bloque aussi ai-editorial depuis mai). Sans lui, le workflow se met en pause proprement.
+- Reste (Omar) : `claude setup-token` dans un terminal, puis GitHub → Settings → Secrets and variables → Actions → New repository secret → CLAUDE_CODE_OAUTH_TOKEN.
+- Bâton → Omar (jeton)
+- Commit : poussé sur main
+
 ### [2026-11-06 ~18:30 UTC] — Claude Code (desktop) — **Archive migrée + cause de la panne de traduction trouvée**
 - Fait : 31 786 articles d'archive passés en charte « journal » (scripts/migrate_news_archive.py ; SEO recopié à l'identique, contrôle 400/400). translator.py : échecs Gemini publiés en annotation GitHub, délai 75 s, bascule de modèle sur 404.
 - Cause de la panne de traduction (depuis le 23/10) : **Gemini HTTP 402 « prepayment credits are depleted »**. Le crédit prépayé du projet AI Studio est épuisé → aucune traduction/rédaction → seuls les articles dans leur langue source s'affichent (0 en arabe).

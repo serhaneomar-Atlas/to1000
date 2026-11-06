@@ -73,6 +73,13 @@ jobs:
           EDITORIAL_CACHE_ONLY: "1"   # publication rapide : zéro Gemini live (news-editorial enrichit à part)
         run: python scripts/news_aggregator.py
 
+      # Le fil vient d'être reconstruit : on y repose les traductions faites par
+      # Claude (news-translate.yml), rangées dans EDITORIAL/state/. Sans cette
+      # étape, chaque rafraîchissement horaire les effacerait.
+      - name: Réappliquer les traductions Claude (magasin, sans appel)
+        continue-on-error: true
+        run: python scripts/claude_translate.py merge
+
       - name: Generate SEO HTML pages for each news item
         continue-on-error: true
         run: python scripts/news_to_html.py

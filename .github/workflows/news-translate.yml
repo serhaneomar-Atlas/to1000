@@ -1,0 +1,143 @@
+name: News translate (Claude, abonnement Max)
+
+# Pourquoi : depuis le 23/10/2026, Gemini refuse toutes les demandes (HTTP 402,
+# crédit prépayé épuisé). Plus aucune actu n'était traduite : chaque article
+# ne s'affichait que dans sa langue d'origine, et rien en arabe.
+# Ce workflow fait traduire par Claude, via le jeton de l'abonnement Max
+# (CLAUDE_CODE_OAUTH_TOKEN, généré par `claude setup-token`) : aucun crédit API
+# supplémentaire. scripts/claude_translate.py prépare le lot, valide le
+# résultat et le range dans EDITORIAL/state/claude_translations.json, que
+# news-sync réapplique après chaque rafraîchissement du fil.
+
+on:
+  schedule:
+    - cron: "23 * * * *"   # une fois par heure, hors minutes chargées
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/claude_translate.py'
+      - '.github/workflows/news-translate.yml'
+
+permissions:
+  contents: write
+  id-token: write
+
+concurrency:
+  group: news-pipeline      # jamais en même temps que news-sync / news-editorial
+  cancel-in-progress: false
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Jeton Claude absent — traduction en pause
+        if: env.CLAUDE_CODE_OAUTH_TOKEN == ''
+        run: |
+          echo "::warning::CLAUDE_CODE_OAUTH_TOKEN absent : aucune traduction ce run."
+          echo "::warning::Créer le jeton avec 'claude setup-token', puis GitHub > Settings > Secrets and variables > Actions > New repository secret."
+
+      - name: Préparer le lot (articles sans version fr/en/es/ar publiable)
+        id: prep
+        if: env.CLAUDE_CODE_OAUTH_TOKEN != ''
+        run: |
+          pip install feedparser >/dev/null
+          python scripts/claude_translate.py prepare --limit 15
+
+      - name: Claude traduit le lot
+        if: env.CLAUDE_CODE_OAUTH_TOKEN != '' && steps.prep.outputs.count != '0'
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_args: '--allowedTools Read,Write --max-turns 12'
+          prompt: |
+            Tu es le traducteur-rédacteur de to1000.com, un site d'actualité football
+            lu en français, anglais, espagnol et arabe.
+
+            1. Lis `.translate/todo.json`. Chaque article a : `title` et `summary` dans
+               sa langue d'origine (`src_lang`), et `missing` = les langues à produire
+               parmi fr, en, es, ar. `consignes_noms` liste les noms propres et la façon
+               de les écrire : suis-la à la lettre.
+            2. Écris `.translate/done.json`, et uniquement ce fichier, au format exact :
+               {"items": [{"id": "<id>", "i18n": {"fr": {"title": "...", "summary": "..."}, ...}}]}
+               avec une entrée pour CHAQUE langue de `missing`.
+            3. Si un article n'est pas une vraie information (direct minute par minute
+               « live », « comment regarder », paris/cotes, compositions probables,
+               publicité), ne le traduis pas et écris à la place :
+               {"id": "<id>", "skip": "<raison en 5 mots>"}
+
+            Règles :
+            - Fidélité absolue : les mêmes faits, chiffres et noms que le source.
+              N'ajoute rien, ne commente pas, n'invente aucun chiffre ni citation.
+            - Écris comme un journaliste de la langue cible, pas mot à mot :
+              titre ≤ 110 caractères qui donne l'information, résumé de 1 à 3 phrases.
+            - Les noms de clubs ne se traduisent pas (« Real Madrid », jamais « Royal
+              Madrid » ; « Girona », jamais « Gérone »).
+            - Français : typographie française (« », espace avant : ; ? !).
+            - Arabe : arabe standard de la presse sportive (قائد pour capitaine, pas
+              قبطان), noms propres translittérés en lettres arabes, aucun mot en
+              alphabet latin.
+            - Tics interdits : « il convient de noter », « force est de constater »,
+              « véritable », « incontournable », conclusions sur l'avenir.
+
+      - name: Valider et appliquer les traductions
+        id: apply
+        if: env.CLAUDE_CODE_OAUTH_TOKEN != '' && steps.prep.outputs.count != '0'
+        run: |
+          python scripts/claude_translate.py ingest
+          python scripts/news_to_html.py || true
+          python scripts/prerender_news.py || true
+          python scripts/rss_generator.py || true
+          if git diff --quiet -- public/news.json EDITORIAL/state/claude_translations.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit & push
+        if: steps.apply.outputs.changed == 'true'
+        run: |
+          git config user.name "to1000-translate-bot"
+          git config user.email "to1000-translate-bot@users.noreply.github.com"
+          paths="EDITORIAL/state/claude_translations.json public/news.json public/news.html public/rss.xml public/rss-ar.xml public/rss-en.xml public/rss-es.xml public/news/"
+          for f in $paths; do git add "$f" 2>/dev/null || true; done
+          git commit -m "chore(translate): traductions Claude [$(date -u +%Y-%m-%dT%H:%M)Z]"
+          if bash scripts/ci_push.sh main; then exit 0; fi
+          # Le fil a été rafraîchi pendant la traduction : on repart du fil frais
+          # et on y repose le magasin (le travail de Claude n'est pas perdu).
+          echo "::warning::conflit avec un refresh du fil — réapplication du magasin sur le fil frais"
+          cp EDITORIAL/state/claude_translations.json /tmp/store.json
+          git fetch origin main && git reset --hard origin/main
+          cp /tmp/store.json EDITORIAL/state/claude_translations.json
+          python scripts/claude_translate.py merge
+          python scripts/news_to_html.py || true
+          python scripts/prerender_news.py || true
+          python scripts/rss_generator.py || true
+          for f in $paths; do git add "$f" 2>/dev/null || true; done
+          git diff --cached --quiet && exit 0
+          git commit -m "chore(translate): traductions Claude [$(date -u +%Y-%m-%dT%H:%M)Z] (rejeu)"
+          bash scripts/ci_push.sh main
+
+      - name: Deploy to Cloudflare Pages
+        if: steps.apply.outputs.changed == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "::warning::Cloudflare non configuré"; exit 0
+          fi
+          bash scripts/prune_deploy_assets.sh
+          npx wrangler@latest pages deploy public/ --project-name to1000 --branch main --commit-dirty=true
