@@ -52,7 +52,26 @@ GEMINI_URL_TMPL = (
 MYMEMORY_URL = "https://api.mymemory.translated.net/get"
 MYMEMORY_EMAIL = os.environ.get("MYMEMORY_EMAIL", "").strip()
 
-REQUEST_TIMEOUT = 30
+# Fix 2026-11-06 : un modèle qui « réfléchit » dépasse souvent 30 s ; le
+# TimeoutError était avalé sans trace → rédaction muette depuis le 23/10.
+REQUEST_TIMEOUT = int(os.environ.get("GEMINI_TIMEOUT", "75"))
+# Si le modèle figé disparaît (404) ou est refusé (400 « model »), on bascule
+# sur l'alias stable de Google plutôt que de couper toute la rédaction.
+GEMINI_FALLBACK_MODEL = os.environ.get("GEMINI_FALLBACK_MODEL", "gemini-flash-latest")
+
+_WARNED: set = set()
+
+
+def gh_warn(kind: str, msg: str) -> None:
+    """Annotation GitHub Actions (lisible sans connexion), une fois par type.
+
+    Avant, les échecs Gemini n'allaient que dans stderr : le run était « vert »,
+    rien n'était traduit, et personne ne le voyait. Jamais la clé dans le texte.
+    """
+    if kind in _WARNED:
+        return
+    _WARNED.add(kind)
+    print(f"::warning title=Gemini {kind}::{msg[:400]}", flush=True)
 RATE_LIMIT_SLEEP = float(os.environ.get("GEMINI_RATE_SLEEP", "0.4"))  # palier PAYANT (haut débit) : plus besoin de brider
 MYMEMORY_RATE_SLEEP = 0.3
 
@@ -127,7 +146,8 @@ class Translator:
     def _call_gemini(self, system: str, user: str, max_tokens: int = 500) -> Optional[str]:
         if not self.gemini_enabled:
             return None
-        url = GEMINI_URL_TMPL.format(model=GEMINI_MODEL, key=self.api_key)
+        model = getattr(self, "model", GEMINI_MODEL)
+        url = GEMINI_URL_TMPL.format(model=model, key=self.api_key)
         body = json.dumps({
             "systemInstruction": {"parts": [{"text": system}]},
             "contents": [{"role": "user", "parts": [{"text": user}]}],
@@ -157,11 +177,30 @@ class Translator:
                 if e.code == 429 and attempt < 3:
                     time.sleep(8.0 * (attempt + 1))   # 8s, 16s, 24s
                     continue
+                try:
+                    detail = json.loads(e.read().decode("utf-8", "replace")).get("error", {}).get("message", "")
+                except Exception:
+                    detail = ""
+                detail = detail.replace(self.api_key, "***") if self.api_key else detail
+                # Modèle retiré/renommé : bascule une fois sur l'alias stable.
+                if (e.code == 404 or (e.code == 400 and "model" in detail.lower())) \
+                        and model != GEMINI_FALLBACK_MODEL:
+                    gh_warn(f"modèle {model} indisponible",
+                            f"HTTP {e.code} — {detail} → bascule sur {GEMINI_FALLBACK_MODEL}")
+                    self.model = GEMINI_FALLBACK_MODEL
+                    return self._call_gemini(system, user, max_tokens)
                 self._failures += 1
-                log(f"  → Gemini HTTPError {e.code}")
+                gh_warn(f"HTTP {e.code}", f"modèle {model} : {detail or e.reason}")
+                log(f"  → Gemini HTTPError {e.code} {detail}")
                 return None
-            except (URLError, TimeoutError, json.JSONDecodeError):
+            except (URLError, TimeoutError) as e:
                 self._failures += 1
+                gh_warn(type(e).__name__, f"modèle {model}, délai {REQUEST_TIMEOUT}s : {getattr(e, 'reason', e)}")
+                log(f"  → Gemini {type(e).__name__}: {e}")
+                return None
+            except json.JSONDecodeError:
+                self._failures += 1
+                gh_warn("réponse illisible", f"modèle {model} : corps non JSON")
                 return None
             time.sleep(RATE_LIMIT_SLEEP)
             try:
@@ -172,7 +211,13 @@ class Translator:
                 text = "".join(p.get("text", "") for p in parts if not p.get("thought")).strip()
                 if reason != "STOP" or not text:
                     self._failures += 1
-                    log(f"Gemini réponse inutilisable: finish={reason}, texte={bool(text)}, model={payload.get('modelVersion', GEMINI_MODEL)}")
+                    _usage = payload.get("usageMetadata") or {}
+                    gh_warn(f"fin {reason}",
+                            f"modèle {payload.get('modelVersion', model)} : texte={bool(text)}, "
+                            f"jetons réflexion={_usage.get('thoughtsTokenCount')}, "
+                            f"sortie={_usage.get('candidatesTokenCount')}, plafond={max_tokens + THINKING_HEADROOM_TOKENS}"
+                            + (f", blocage={payload.get('promptFeedback')}" if payload.get('promptFeedback') else ""))
+                    log(f"Gemini réponse inutilisable: finish={reason}, texte={bool(text)}, model={payload.get('modelVersion', model)}")
                     return None
                 return text
             except (KeyError, IndexError, AttributeError):
