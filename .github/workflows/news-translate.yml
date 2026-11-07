@@ -12,6 +12,11 @@ name: News translate (Claude, abonnement Max)
 on:
   schedule:
     - cron: "23 * * * *"   # une fois par heure, hors minutes chargées
+  # GitHub saute souvent les crons horaires : on traduit aussi dès que le fil
+  # vient d'être rafraîchi, c'est-à-dire quand de nouvelles actus arrivent.
+  workflow_run:
+    workflows: ["News sync (fraîcheur et but confirmé)"]
+    types: [completed]
   workflow_dispatch:
   push:
     branches: [main]
