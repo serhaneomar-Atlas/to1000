@@ -8,8 +8,8 @@
   "season_goals": 28,
   "season_matches": 31,
   "goals_per_90": 1.03,
-  "last_updated": "2026-11-10T00:33:31.322290Z",
-  "version": 71,
+  "last_updated": "2026-11-20T17:47:52.906070Z",
+  "version": 72,
   "goal_sync_baseline": "2026-07-02T01:46:36Z",
   "processed_goal_event_ids": [
     "49680272",
@@ -44,12 +44,12 @@
     "date_iso": "2026-11-02T13:45Z"
   },
   "next_match": {
-    "home_team": "Al Ahli",
-    "away_team": "Al Nassr",
-    "competition": "Saudi Pro League",
-    "kickoff_utc": "2026-11-20T17:30Z",
-    "venue": "King Abdullah Sports City",
-    "is_cr7_team_home": false,
+    "home_team": "Al Nassr",
+    "away_team": "Al Sadd",
+    "competition": "AFC Champions League Elite",
+    "kickoff_utc": "2026-11-24T18:15Z",
+    "venue": "Al-Awwal Park",
+    "is_cr7_team_home": true,
     "fotmob_url": ""
   },
   "goal_sync_matches": {
@@ -93,6 +93,15 @@
         "last_goal_opponent": "Neftchi Fergana",
         "last_goal_competition": "AFC Champions League Elite"
       }
+    },
+    "401900905": {
+      "date_iso": "2026-11-20T17:30Z",
+      "credited_event_ids": [],
+      "pending": {
+        "55408105": "2026-11-20T17:47:14.328458Z"
+      },
+      "missing": {},
+      "prior_last_goal": null
     }
   }
 }
