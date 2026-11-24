@@ -1,21 +1,21 @@
 {
-  "generated_at": "2026-11-24T10:58:00.844198+00:00",
+  "generated_at": "2026-11-24T18:45:12.449827+00:00",
   "snapshot": {
     "date": "2026-11-24",
-    "goals": 986,
-    "remaining": 14,
-    "pct_to_1000": 98.6,
+    "goals": 987,
+    "remaining": 13,
+    "pct_to_1000": 98.7,
     "news_items": 49,
-    "news_sources": 11,
-    "cr7_items": 1,
-    "article_pages": 34405,
-    "sitemap_urls": 34520
+    "news_sources": 12,
+    "cr7_items": 0,
+    "article_pages": 34454,
+    "sitemap_urls": 34569
   },
   "deltas": {
     "goals": {
-      "abs": 0,
-      "pct": 0.0,
-      "dir": "flat"
+      "abs": 1,
+      "pct": 0.1,
+      "dir": "up"
     },
     "news_items": {
       "abs": 0,
@@ -23,23 +23,31 @@
       "dir": "flat"
     },
     "news_sources": {
-      "abs": 0,
-      "pct": 0.0,
-      "dir": "flat"
+      "abs": 1,
+      "pct": 9.1,
+      "dir": "up"
     },
     "article_pages": {
-      "abs": 49,
-      "pct": 0.1,
+      "abs": 98,
+      "pct": 0.3,
       "dir": "up"
     },
     "sitemap_urls": {
-      "abs": 49,
-      "pct": 0.1,
+      "abs": 98,
+      "pct": 0.3,
       "dir": "up"
     }
   },
   "traffic_delta": null,
-  "alerts": [],
+  "alerts": [
+    {
+      "id": "cr7_goal:987",
+      "event": "cr7_goal",
+      "level": "info",
+      "title": "⚽ But CR7 — compteur à 987/1000",
+      "message": "+1 but(s). Plus que 13 avant l'histoire (98.7%)."
+    }
+  ],
   "history": [
     {
       "date": "2026-06-26",
@@ -1243,11 +1251,11 @@
     },
     {
       "date": "2026-11-24",
-      "goals": 986,
+      "goals": 987,
       "news_items": 49,
-      "news_sources": 11,
-      "article_pages": 34405,
-      "sitemap_urls": 34520
+      "news_sources": 12,
+      "article_pages": 34454,
+      "sitemap_urls": 34569
     }
   ],
   "traffic": {
@@ -1257,7 +1265,7 @@
   "seo": {
     "ga4": true,
     "search_console": false,
-    "sitemap_urls": 34520,
+    "sitemap_urls": 34569,
     "news_prerendered": true,
     "canonical_clean_urls": true,
     "robots_has_sitemap": true
@@ -1265,30 +1273,18 @@
   "source_breakdown": [
     {
       "label": "Mundo Deportivo",
-      "value": 14
+      "value": 15
+    },
+    {
+      "label": "Olé",
+      "value": 8
     },
     {
       "label": "Africa Top Sports",
       "value": 7
     },
     {
-      "label": "L'Équipe",
-      "value": 6
-    },
-    {
       "label": "Kicker",
-      "value": 5
-    },
-    {
-      "label": "Calciomio",
-      "value": 4
-    },
-    {
-      "label": "Olé",
-      "value": 4
-    },
-    {
-      "label": "Le Figaro Sport",
       "value": 3
     },
     {
@@ -1296,33 +1292,49 @@
       "value": 3
     },
     {
-      "label": "Hespress Sport",
-      "value": 1
+      "label": "FourFourTwo",
+      "value": 3
     },
     {
-      "label": "FourFourTwo",
-      "value": 1
+      "label": "L'Équipe",
+      "value": 2
+    },
+    {
+      "label": "Le Figaro Sport",
+      "value": 2
+    },
+    {
+      "label": "Le Monde — Sport",
+      "value": 2
+    },
+    {
+      "label": "Calciomio",
+      "value": 2
     },
     {
       "label": "Sportschau",
+      "value": 1
+    },
+    {
+      "label": "Hespress Sport",
       "value": 1
     }
   ],
   "lang_breakdown": [
     {
-      "label": "fr",
-      "value": 21
-    },
-    {
       "label": "es",
-      "value": 18
+      "value": 23
     },
     {
-      "label": "de",
-      "value": 6
+      "label": "fr",
+      "value": 16
     },
     {
       "label": "en",
+      "value": 6
+    },
+    {
+      "label": "de",
       "value": 4
     }
   ],
@@ -1371,7 +1383,7 @@
     }
   ],
   "news_meta": {
-    "generated_at": "2026-11-24T10:57:54.559042Z",
+    "generated_at": "2026-11-24T18:45:06.112447Z",
     "tagline": "Le foot, droit au but.",
     "feeds_fetched": 18,
     "feeds_failed": 13,
