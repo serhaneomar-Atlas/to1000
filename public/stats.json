@@ -1,15 +1,15 @@
 {
-  "goals": 986,
+  "goals": 987,
   "target": 1000,
-  "remaining": 14,
+  "remaining": 13,
   "last_goal_date": "2026-11-20",
   "last_goal_opponent": "Al Ahli",
   "last_goal_competition": "Saudi Pro League",
   "season_goals": 28,
   "season_matches": 31,
   "goals_per_90": 1.03,
-  "last_updated": "2026-11-24T18:31:57.820265Z",
-  "version": 76,
+  "last_updated": "2026-11-24T18:36:28.248910Z",
+  "version": 77,
   "goal_sync_baseline": "2026-07-02T01:46:36Z",
   "processed_goal_event_ids": [
     "49680272",
@@ -21,7 +21,8 @@
     "54470702",
     "54471081",
     "54471482",
-    "55408105"
+    "55408105",
+    "55621149"
   ],
   "milestone": {
     "label": "🏆 Saudi Pro League champion 2026",
@@ -39,7 +40,7 @@
     "is_cr7_team_home": false,
     "result": "L",
     "cr7_scored": true,
-    "cr7_goal_num": 986,
+    "cr7_goal_num": 987,
     "cr7_minute": 14,
     "fotmob_url": "",
     "date_iso": "2026-11-20T17:30Z"
@@ -110,12 +111,16 @@
     },
     "401912584": {
       "date_iso": "2026-11-24T18:15Z",
-      "credited_event_ids": [],
-      "pending": {
-        "55621149": "2026-11-24T18:31:19.019189Z"
-      },
+      "credited_event_ids": [
+        "55621149"
+      ],
+      "pending": {},
       "missing": {},
-      "prior_last_goal": null
+      "prior_last_goal": {
+        "last_goal_date": "2026-11-20",
+        "last_goal_opponent": "Al Ahli",
+        "last_goal_competition": "Saudi Pro League"
+      }
     }
   }
 }
